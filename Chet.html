@@ -32,46 +32,64 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 60px; /* Increased space between images and title */
             width: 100%;
-            max-width: 1000px;
-            margin-bottom: 20px;
+            max-width: 1200px;
+            margin-bottom: 40px;
             border-bottom: 3px solid #5d4037;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
+        }
+
+        /* Header Images now match the Sound Card format */
+        .header-card {
+            background: #d2b48c;
+            border: 3px solid #5d4037;
+            padding: 8px;
+            box-shadow: 6px 6px 0px #000;
         }
 
         .header-img {
-            width: 100px;
-            height: 100px;
+            width: 150px; /* Slightly larger than grid images for prominence */
+            height: 150px;
             object-fit: cover;
             object-position: top;
-            border: 2px solid #f0e68c;
-            border-radius: 50%;
-            box-shadow: 0 0 15px rgba(240, 230, 140, 0.3);
+            border: 1px solid #000;
+            display: block;
+        }
+
+        .header-text-box {
+            text-align: center;
         }
 
         h1 { 
-            font-size: clamp(2rem, 8vw, 3.5rem); 
+            font-size: clamp(2.5rem, 10vw, 5rem); 
             margin: 0; 
             color: #fff; 
-            text-shadow: 3px 3px #5d4037;
-            text-align: center;
-            letter-spacing: 2px;
+            text-shadow: 4px 4px #5d4037;
+            letter-spacing: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            color: #f0e68c;
+            margin-top: 10px;
+            text-transform: uppercase;
         }
 
         .stop-btn {
             background: #8b0000;
             color: white;
             border: none;
-            padding: 12px 30px;
+            padding: 15px 40px;
             cursor: pointer;
             font-family: inherit;
             font-weight: bold;
-            margin-bottom: 30px;
-            box-shadow: 4px 4px 0px #000;
+            margin-bottom: 40px;
+            box-shadow: 5px 5px 0px #000;
             text-transform: uppercase;
             position: sticky;
-            top: 10px;
+            top: 15px;
             z-index: 100;
         }
 
@@ -80,8 +98,8 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+            gap: 20px;
             max-width: 1400px;
             width: 100%;
         }
@@ -97,11 +115,11 @@
             transition: transform 0.1s;
         }
 
-        .sound-card:hover { transform: scale(1.03); }
+        .sound-card:hover { transform: scale(1.05); }
 
         .sound-card img {
             width: 100%;
-            height: 120px;
+            height: 125px;
             object-fit: cover;
             object-position: top;
             border: 1px solid #000;
@@ -111,26 +129,27 @@
         .sound-title {
             color: #000;
             font-weight: bold;
-            margin: 8px 0;
-            font-size: 0.65rem;
+            margin: 10px 0;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            min-height: 35px;
+            min-height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
         .btn {
             background: #5d4037;
             color: white;
             border: 1px solid #3e2723;
-            padding: 8px;
+            padding: 10px;
             width: 100%;
             cursor: pointer;
             font-family: inherit;
             font-weight: bold;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
         }
 
         .btn:active { background: #000; color: #f0e68c; }
@@ -141,12 +160,18 @@
     <a href="index.html" class="nav-back">← Back to Hub</a>
 
     <div class="header-container">
-        <img src="images/Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
-        <div style="text-align: center;">
-            <h1>CHET</h1>
-            <div style="font-size: 0.9rem; letter-spacing: 2px; color: #f0e68c;">BROTHERLY WORDS OF WISDOM</div>
+        <div class="header-card">
+            <img src="images/Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Chet Left">
         </div>
-        <img src="images/default.jpg" class="header-img" alt="Chet">
+        
+        <div class="header-text-box">
+            <h1>CHET</h1>
+            <div class="subtitle">Brotherly Words of Wisdom</div>
+        </div>
+
+        <div class="header-card">
+            <img src="images/Chet_In_Deep_S.jpg" class="header-img" alt="Chet Right">
+        </div>
     </div>
 
     <button class="stop-btn" onclick="stopAll()">STOP ALL SOUNDS</button>
@@ -154,8 +179,8 @@
     <div class="grid" id="soundboard"></div>
 
     <script>
-        // Filenames stay the same, the loop below will add the "images/" prefix
         const assets = [
+            // List includes all your Batch items (keeping original IDs)
             { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
             { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
             { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
@@ -224,9 +249,8 @@
         assets.forEach(item => {
             const card = document.createElement('div');
             card.className = 'sound-card';
-            // Added images/ prefix to the image source here
             card.innerHTML = `
-                <img src="images/${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='images/default.jpg'">
+                <img src="images/${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='images/Chet_In_Deep_S.jpg'">
                 <div class="sound-title">${item.title}</div>
                 <button class="btn" onclick="smartPlay('${item.id}', this)">Play</button>
             `;
@@ -236,7 +260,6 @@
         function smartPlay(id, btn) {
             const audio = new Audio();
             const originalText = btn.innerText;
-            
             audio.src = `wav/${id}.wav`;
             
             audio.play().catch(() => {
