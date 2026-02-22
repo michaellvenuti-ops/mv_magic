@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate Si Stebbins Vault</title>
+    <title>The Magician's Command Center</title>
     
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <style>
         :root {
             --primary: #e63946;
@@ -18,237 +15,163 @@
             --accent: #a8dadc;
         }
 
-        body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; line-height: 1.6; padding-bottom: 100px; }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background-color: var(--dark); 
+            color: var(--text-light); 
+            margin: 0; 
+            line-height: 1.6; 
+        }
         
         header { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&q=80&w=1200'); 
-            background-size: cover; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--primary); 
+            background: linear-gradient(rgba(11, 19, 43, 0.9), rgba(11, 19, 43, 0.9)), 
+                        url('https://images.unsplash.com/photo-1523031159170-982460773d74?auto=format&fit=crop&q=80&w=1200'); 
+            background-size: cover; 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-bottom: 4px solid var(--gold); 
         }
-        header h1 { font-size: 3rem; margin: 0; color: var(--primary); text-transform: uppercase; letter-spacing: 5px; }
-        header p { font-size: 1.2rem; color: var(--gold); margin-top: 10px; }
-
-        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         
-        .section-box { background: var(--card-bg); padding: 35px; border-radius: 15px; margin-bottom: 40px; border: 1px solid #3a506b; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h2 { color: var(--gold); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 25px; text-transform: uppercase; }
+        header h1 { 
+            font-size: 3.5rem; 
+            margin: 0; 
+            color: var(--gold); 
+            text-transform: uppercase; 
+            letter-spacing: 8px; 
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
 
-        .deck-view { display: flex; overflow-x: auto; gap: 12px; padding: 25px; background: rgba(0,0,0,0.4); border-radius: 15px; margin-bottom: 25px; perspective: 1000px; }
-        .card-3d { width: 70px; height: 100px; position: relative; transform-style: preserve-3d; transition: transform 0.5s; cursor: pointer; flex-shrink: 0; }
-        .card-3d:hover { transform: rotateY(180deg) translateY(-10px); }
-        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: bold; font-size: 1.1rem; border: 2px solid white; }
-        .card-front { background: white; color: black; transform: rotateY(180deg); }
-        .card-back { background: var(--primary); color: white; border: 2px solid var(--gold); background-image: radial-gradient(var(--gold) 0.5px, transparent 0); background-size: 8px 8px; }
-
-        .formula-box { background: #000; color: #00ff00; padding: 25px; border-radius: 10px; font-family: 'Courier New', monospace; border: 1px dashed #00ff00; margin: 15px 0; text-align: center; font-size: 1.3rem; }
+        .container { max-width: 1100px; margin: -50px auto 100px auto; padding: 20px; }
         
-        .btn { background: var(--primary); color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.3s; text-transform: uppercase; margin: 5px; }
-        .btn:hover { background: var(--gold); color: var(--dark); transform: scale(1.05); }
+        .nav-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
 
-        table { width: 100%; border-collapse: collapse; background: #0b132b; margin-top: 20px; }
-        th, td { border: 1px solid #3a506b; padding: 10px; text-align: center; }
-        th { background: var(--primary); color: white; }
-        .red-text { color: #ff4d4d; font-weight: bold; }
+        /* NAVIGATION CARD STYLING */
+        .portal-card { 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border-radius: 15px; 
+            border: 1px solid #3a506b; 
+            text-align: center;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        iframe { width: 100%; height: 280px; border-radius: 10px; border: 1px solid var(--primary); background: #000; }
-        
-        .poker-hand { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; text-align: center; border: 1px solid var(--gold); min-height: 100px; margin: 10px 0; }
-        .winner { border: 2px solid #0f0; box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); }
+        .portal-card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(230, 57, 70, 0.3);
+        }
 
-        .log-box { background: #000; color: #0f0; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin-top: 15px; border: 1px solid #0f0; }
+        .portal-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: 0.5s;
+        }
+
+        .portal-card:hover::before { left: 100%; }
+
+        .portal-card i { 
+            font-size: 3rem; 
+            color: var(--primary); 
+            margin-bottom: 20px; 
+            display: block;
+        }
+
+        .portal-card h2 { 
+            color: var(--gold); 
+            margin-bottom: 15px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .portal-card p { font-size: 0.95rem; color: var(--accent); }
+
+        .btn-visit {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* SYSTEM STATUS BAR */
+        .status-bar {
+            background: #000;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin-top: 50px;
+            border: 1px solid #0f0;
+            box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+
+        .status-dot {
+            height: 10px; width: 10px;
+            background-color: #0f0;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>The Ultimate Si Stebbins Vault</h1>
-    <p>Theory • Practical Lab • Performance</p>
+    <h1>The Library</h1>
+    <p>Secure Access to Arcanum Systems</p>
 </header>
 
 <div class="container">
+    <div class="nav-grid">
+        
+        <a href="Si_Stebbins_Vault.html" class="portal-card">
+            <h2>The Stebbins Vault</h2>
+            <p>Full cyclic stack simulator, prediction algorithms, and gambling finales.</p>
+            <span class="btn-visit">Enter Vault</span>
+        </a>
 
-    
-        <h2>1. The Ultimate Si Stebbins Vault <a href="Si_Stebbins_Vault.html" 1. The Ultimate Si Stebbins Vault</a></h2>
-    
-    <section class="section-box">
-        <h2>1. Setting Up the Engine</h2>
-        <p>This tutorial is the primary guide for beginners. It explains the 3♣ start and the suit rotation clearly. (If the video shows "Video Unavailable," ensure you are not on a restricted school or work network.)</p>
-        <div class="grid">
-            <iframe src="https://www.youtube.com/embed/mO24EejoV0g" title="Si Stebbins Setup Guide" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div style="display:flex; flex-direction:column; justify-content:center;">
-                <p><strong>The "CHaSeD" Sequence:</strong></p>
-                <ul>
-                    <li>1. <strong>C</strong>lubs (♣)</li>
-                    <li>2. <strong>H</strong>earts (♥)</li>
-                    <li>3. <strong>S</strong>pades (♠)</li>
-                    <li>4. <strong>D</strong>iamonds (♦)</li>
-                </ul>
-                <p>Add **3** to every value. J=11, Q=12, K=13. If you hit King (13), the next card is 3.</p>
-            </div>
-        </div>
-    </section>
+        <a href="Mnemonica_Training.html" class="portal-card">
+            <h2>Mnemonica Lab</h2>
+            <p>Memorized deck trainers and advanced location tools for the Tamariz stack.</p>
+            <span class="btn-visit">Access Lab</span>
+        </a>
 
-    <section class="section-box">
-        <h2>2. Mentalism Lab: Predicting the Chosen Card</h2>
-        <p>In a real trick, you would cut the deck where the spectator tells you, and look at the bottom card. That's your **Key Card**.</p>
-        <div style="background: rgba(168, 218, 220, 0.1); padding: 25px; border-radius: 10px; border: 1px solid var(--accent); text-align: center;">
-            <p id="predInstruct">Click "Simulate Cut" to see your Key Card.</p>
-            <div id="keyCardDisplay" style="font-size: 3.5rem; margin: 15px 0; min-height: 80px;">[ ? ]</div>
-            <button class="btn" onclick="simulateSelection()">Simulate Cut</button>
-            <button class="btn" onclick="revealPrediction()" id="revealBtn" style="display:none; background:var(--gold); color:black;">Show Selection</button>
-            <h3 id="predictionResult" style="color:var(--gold); margin-top:20px;"></h3>
-        </div>
-    </section>
+        <a href="Sleight_Database.html" class="portal-card">
+            <h2>Technique Archive</h2>
+            <p>Refined video library for Faros, False Shuffles, and Palming techniques.</p>
+            <span class="btn-visit">Open Archive</span>
+        </a>
 
-    <section class="section-box">
-        <h2>3. Virtual Stack Simulator</h2>
-        <p>Click any card to <strong>Cut the Deck</strong>. Observe how the cycle remains perfect.</p>
-        <div class="deck-view" id="deckContainer"></div>
-        <div style="text-align:center;">
-            <button class="btn" onclick="initStack()">Reset Stack</button>
-            <button class="btn" onclick="runGilbreth()">Apply Gilbreth</button>
-            <button class="btn" onclick="runOutFaro()">Apply Faro</button>
-        </div>
-        <div class="log-box" id="statusLog">Stack Initialized.</div>
-    </section>
+    </div>
 
-    <section class="section-box">
-        <h2>4. Gambling Finale: Poker Deal</h2>
-        <p>Perform 4 perfect Out-Faros. The "Mechanic" (Player 4) will always win.</p>
-        <div style="text-align:center; margin-bottom: 20px;">
-            <button class="btn" style="background:var(--gold); color:black;" onclick="autoFaro4Deal()">Run 4 Faros & Deal</button>
-        </div>
-        <div class="grid" id="pokerTable">
-            <div class="poker-hand" id="hand0"><h3>Player 1</h3><div class="h-cards"></div></div>
-            <div class="poker-hand" id="hand1"><h3>Player 2</h3><div class="h-cards"></div></div>
-            <div class="poker-hand" id="hand2"><h3>Player 3</h3><div class="h-cards"></div></div>
-            <div class="poker-hand winner" id="hand3"><h3>The Mechanic</h3><div class="h-cards"></div></div>
-        </div>
-    </section>
-
-    <section class="section-box">
-        <h2>5. Advanced Skills Training</h2>
-        <div class="grid">
-            <iframe src="https://www.youtube.com/embed/zhvjSAtxEhc" title="Gilbreth Shuffle"></iframe>
-            <iframe src="https://www.youtube.com/embed/VN93O2pvBJo" title="The ACAAN Routine"></iframe>
-            <iframe src="https://www.youtube.com/embed/N31U_8tGOPc" title="False Shuffling"></iframe>
-        </div>
-    </section>
-
-    <section class="section-box">
-        <h2>6. Dynamic Stack Cheat Sheet</h2>
-        <div style="overflow-x:auto;">
-            <table>
-                <thead><tr><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th></tr></thead>
-                <tbody id="cheatTableBody"></tbody>
-            </table>
-        </div>
-    </section>
-
+    <div class="status-bar">
+        <span class="status-dot"></span>
+        SYSTEM STATUS: ALL ARCHIVES ONLINE | USER: OPERATOR | YEAR: 2026
+    </div>
 </div>
 
-<script>
-    const suits = ['♣', '♥', '♠', '♦'];
-    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let deck = [];
-    let selectedIdx = -1;
-
-    function initStack() {
-        deck = [];
-        let v = 2; // Starts at 3
-        let s = 0; // Starts at Clubs
-        for (let i = 0; i < 52; i++) {
-            deck.push({ n: values[v], s: suits[s], isRed: (s===1 || s===3) });
-            v = (v + 3) % 13; 
-            s = (s + 1) % 4;
-        }
-        render();
-        updateStatus("Stack Reset to 3♣ start.");
-    }
-
-    function simulateSelection() {
-        selectedIdx = Math.floor(Math.random() * 51) + 1;
-        let key = deck[selectedIdx - 1]; // The Key Card is the one above
-        document.getElementById('keyCardDisplay').innerHTML = `<span style="color:${key.isRed ? '#e63946' : 'white'}">${key.n}${key.s}</span>`;
-        document.getElementById('predInstruct').innerText = "Key Card revealed. Their card is +3 value, next suit!";
-        document.getElementById('predictionResult').innerText = "";
-        document.getElementById('revealBtn').style.display = "inline-block";
-    }
-
-    function revealPrediction() {
-        let card = deck[selectedIdx];
-        document.getElementById('predictionResult').innerText = `Spectator's Card: ${card.n}${card.s}`;
-        document.getElementById('revealBtn').style.display = "none";
-    }
-
-    function cutDeck(idx) {
-        deck = [...deck.slice(idx + 1), ...deck.slice(0, idx + 1)];
-        render();
-        updateStatus("Deck Cut Applied.");
-    }
-
-    function runOutFaro() {
-        let p1 = deck.slice(0, 26), p2 = deck.slice(26), res = [];
-        for(let i=0; i<26; i++) { res.push(p1[i]); res.push(p2[i]); }
-        deck = res;
-        render();
-        updateStatus("Out-Faro Applied.");
-    }
-
-    function runGilbreth() {
-        let p1 = deck.slice(0, 26).reverse(), p2 = deck.slice(26), res = [];
-        while(p1.length || p2.length) {
-            if (Math.random() > 0.5 && p1.length) res.push(p1.pop());
-            else if (p2.length) res.push(p2.pop());
-            else if (p1.length) res.push(p1.pop());
-        }
-        deck = res;
-        render();
-        updateStatus("Gilbreth Shuffle Applied (Colors are now paired).");
-    }
-
-    function autoFaro4Deal() {
-        initStack();
-        for(let i=0; i<4; i++) {
-            let p1 = deck.slice(0, 26), p2 = deck.slice(26), res = [];
-            for(let j=0; j<26; j++) { res.push(p1[j]); res.push(p2[j]); }
-            deck = res;
-        }
-        const hands = [[], [], [], []];
-        for(let i=0; i<20; i++) hands[i % 4].push(deck[i]);
-        for(let i=0; i<4; i++) {
-            const hDiv = document.querySelector(`#hand${i} .h-cards`);
-            hDiv.innerHTML = hands[i].map(c => `<span style="color:${c.isRed ? '#e63946' : 'white'}; margin:2px;">${c.n}${c.s}</span>`).join(' | ');
-        }
-        render();
-        updateStatus("The Mechanic has been set up.");
-    }
-
-    function render() {
-        const container = document.getElementById('deckContainer');
-        const table = document.getElementById('cheatTableBody');
-        container.innerHTML = ''; table.innerHTML = '';
-        deck.forEach((c, i) => {
-            let el = document.createElement('div');
-            el.className = 'card-3d'; el.onclick = () => cutDeck(i);
-            el.innerHTML = `<div class="card-face card-back"></div><div class="card-face card-front" style="color:${c.isRed ? '#e63946' : 'black'}">${c.n}${c.s}</div>`;
-            container.appendChild(el);
-        });
-        for (let r = 0; r < 13; r++) {
-            let h = '<tr>';
-            for (let c = 0; c < 4; c++) {
-                let idx = r + (c * 13);
-                let card = deck[idx];
-                if (card) h += `<td>${idx+1}</td><td class="${card.isRed ? 'red-text' : ''}">${card.n}${card.s}</td>`;
-            }
-            table.innerHTML += h + '</tr>';
-        }
-    }
-
-    function updateStatus(m) { document.getElementById('statusLog').innerText = m; }
-    
-    initStack();
-</script>
-
 </body>
-</html>
+   
