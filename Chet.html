@@ -6,96 +6,115 @@
     <title>Chet's Soundboard</title>
     <style>
         body {
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: "Courier New", Courier, monospace;
-        }
-
-        /* The Scroll Container */
-        .parchment {
-            background-color: #d2b48c; /* Fallback tan color */
-            background-image: url('your-scroll-texture.jpg'); /* Link your background asset here */
-            background-size: cover;
-            width: 450px;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-            text-align: center;
-            position: relative;
-            border: 2px solid #5d4037;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .chet-photo {
-            width: 80%;
-            border: 5px solid #000;
-            margin-bottom: 20px;
-        }
-
-        .labels {
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 1px 1px 2px #000;
-            line-height: 1.4;
+            background-color: #0b0b0b;
+            color: #f0e68c;
+            font-family: 'Courier New', Courier, monospace;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 40px;
+            margin: 0;
         }
 
-        /* Mockup for the button/square */
-        .sound-btn {
-            width: 40px;
-            height: 40px;
-            background-color: #ccc;
-            border: 3px solid #666;
-            margin-top: 10px;
+        .header-area {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #5d4037;
+            padding-bottom: 20px;
+        }
+
+        h1 { font-size: 4rem; margin: 0; color: #fff; text-shadow: 3px 3px #5d4037; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .sound-card {
+            background: #d2b48c;
+            border: 3px solid #5d4037;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 8px 8px 0px #000;
+            transition: transform 0.1s;
+        }
+
+        .sound-card:hover { transform: scale(1.02); }
+
+        .sound-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+
+        .sound-title {
+            color: #000;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            background: #5d4037;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
             cursor: pointer;
-            box-shadow: inset 2px 2px 5px rgba(255,255,255,0.5);
+            font-family: inherit;
+            font-weight: bold;
         }
 
-        .sound-btn:active {
-            background-color: #999;
-            transform: translateY(2px);
-        }
+        .btn:active { background: #000; }
     </style>
 </head>
 <body>
 
-    <div class="parchment">
+    <div class="header-area">
         <h1>CHET</h1>
-        
-        <img src="chet-photo.jpg" alt="Chet" class="chet-photo">
-
-        <div class="labels">
-            <span>CHET's</span>
-            <span>Brotherly</span>
-            <span>Words of</span>
-            <span>Wisdom</span>
-            <span>Soundboard</span>
-            
-            <div class="sound-btn" onclick="playSound()"></div>
-            
-            <span style="margin-top: 10px;">Soundboard</span>
-        </div>
+        <p>BROTHERLY WORDS OF WISDOM</p>
     </div>
 
+    <div class="grid" id="soundboard">
+        </div>
+
     <script>
-        function playSound() {
-            console.log("Audio would play here!");
-            // Once you have your .mp3 or .wav files, we'll add the logic here.
+        const audioFiles = [
+            { id: "Snowing", title: "Accident Snowing Room", img: "Chet_Accident_Snowing_Room.jpg" },
+            { id: "Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
+            { id: "ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
+            { id: "Bra", title: "Bra On Head", img: "Chet_Bra_On_Head.jpg" },
+            { id: "Burp1", title: "Burp", img: "Chet_Burp.jpg" },
+            { id: "Burp2", title: "Burp 2", img: "Chet_Burp_2.jpg" }
+        ];
+
+        const container = document.getElementById('soundboard');
+
+        audioFiles.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'sound-card';
+            card.innerHTML = `
+                <img src="${item.img}" alt="${item.title}">
+                <div class="sound-title">${item.title}</div>
+                <button class="btn" onclick="play('${item.id}')">PLAY .WAV</button>
+            `;
+            container.appendChild(card);
+        });
+
+        function play(id) {
+            // Logic to play from the /wav folder
+            const sfx = new Audio(`wav/${id}.wav`);
+            sfx.play().catch(err => console.log("Check if file exists in /wav folder"));
         }
     </script>
-
 </body>
 </html>
