@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chet's Soundboard</title>
+    <title>Chet's Soundboard - Ultimate Edition</title>
     <style>
         body {
             background-color: #0b0b0b;
@@ -16,105 +16,112 @@
             align-items: center;
         }
 
-        /* Header with side images */
         .header-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
             width: 100%;
             max-width: 1000px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             border-bottom: 3px solid #5d4037;
             padding-bottom: 20px;
         }
 
         .header-img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
-            border: 3px solid #f0e68c;
+            object-position: top;
+            border: 2px solid #f0e68c;
             border-radius: 50%;
             box-shadow: 0 0 15px rgba(240, 230, 140, 0.3);
         }
 
-        .header-text {
+        h1 { 
+            font-size: 3.5rem; 
+            margin: 0; 
+            color: #fff; 
+            text-shadow: 3px 3px #5d4037;
             text-align: center;
         }
 
-        h1 { 
-            font-size: 4.5rem; 
-            margin: 0; 
-            color: #fff; 
-            text-shadow: 4px 4px #5d4037; 
-            letter-spacing: 5px;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
+        .stop-btn {
+            background: #8b0000;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            margin-bottom: 30px;
+            box-shadow: 4px 4px 0px #000;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 5px;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
         }
 
-        /* The Grid */
+        .stop-btn:hover { background: #b30000; }
+        .stop-btn:active { transform: translateY(2px); box-shadow: 2px 2px 0px #000; }
+
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 25px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+            max-width: 1400px;
             width: 100%;
         }
 
         .sound-card {
             background: #d2b48c;
-            border: 4px solid #5d4037;
-            padding: 12px;
+            border: 3px solid #5d4037;
+            padding: 8px;
             text-align: center;
-            box-shadow: 10px 10px 0px #000;
-            transition: transform 0.1s;
+            box-shadow: 5px 5px 0px #000;
             display: flex;
             flex-direction: column;
+            transition: transform 0.1s;
         }
 
-        .sound-card:hover { transform: translateY(-5px); }
+        .sound-card:hover { transform: scale(1.03); }
 
         .sound-card img {
             width: 100%;
-            height: 200px;
+            height: 120px;
             object-fit: cover;
-            border: 2px solid #000;
+            object-position: top;
+            border: 1px solid #000;
+            background: #444;
         }
 
         .sound-title {
             color: #000;
             font-weight: bold;
-            margin: 15px 0;
-            font-size: 0.95rem;
+            margin: 8px 0;
+            font-size: 0.65rem;
             text-transform: uppercase;
-            min-height: 45px;
+            min-height: 35px;
             display: flex;
             align-items: center;
             justify-content: center;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
         .btn {
             background: #5d4037;
             color: white;
-            border: 2px solid #3e2723;
-            padding: 12px;
+            border: 1px solid #3e2723;
+            padding: 8px;
             width: 100%;
             cursor: pointer;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: inherit;
             font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
 
         .btn:hover { background: #3e2723; }
         .btn:active { background: #000; color: #f0e68c; }
-
     </style>
 </head>
 <body>
@@ -122,53 +129,110 @@
     <div class="header-container">
         <img src="Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
         
-        <div class="header-text">
+        <div style="text-align: center;">
             <h1>CHET</h1>
-            <div class="subtitle">Brotherly Words of Wisdom</div>
+            <div style="font-size: 1rem; letter-spacing: 2px; color: #f0e68c;">BROTHERLY WORDS OF WISDOM</div>
         </div>
 
         <img src="default.jpg" class="header-img" alt="Chet">
     </div>
 
-    <div class="grid" id="soundboard">
-        </div>
+    <button class="stop-btn" onclick="stopAll()">STOP ALL SOUNDS</button>
+
+    <div class="grid" id="soundboard"></div>
 
     <script>
-        // Array of your assets - filenames must match images exactly
+        // Combined asset list from all batches
         const assets = [
-            { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing Room", img: "Chet_Accident_Snowing_Room.jpg" },
+            { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
             { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
             { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
             { id: "Chet_Bra_On_Head", title: "Bra On Head", img: "Chet_Bra_On_Head.jpg" },
             { id: "Chet_Burp", title: "Burp", img: "Chet_Burp.jpg" },
-            { id: "Chet_Burp_2", title: "Burp 2", img: "Chet_Burp_2.jpg" }
+            { id: "Chet_Burp_2", title: "Burp 2", img: "Chet_Burp_2.jpg" },
+            { id: "Chet_Butt_Out", title: "Butt Out", img: "Chet_Butt_Out.jpg" },
+            { id: "Chet_Chet_Kelly", title: "Chet & Kelly", img: "Chet_Chet_Kelly.jpg" },
+            { id: "Chet_Cold_Blue_Steel", title: "Cold Blue Steel", img: "Chet_Cold_Blue_Steel.jpg" },
+            { id: "Chet_Come_On_Chet", title: "Come On Chet", img: "Chet_Come_On_Chet.jpg" },
+            { id: "Chet_Dead_Meat", title: "Dead Meat", img: "Chet_Dead_Meat.jpg" },
+            { id: "Chet_Dizzy_Is_He", title: "Dizzy Is He?", img: "Chet_Dizzy_Is_He.jpg" },
+            { id: "Chet_Done_Yet", title: "Done Yet?", img: "Chet_Done_Yet.jpg" },
+            { id: "Chet_Fart_Grease", title: "Fart Grease", img: "Chet_Fart_Grease.jpg" },
+            { id: "Chet_Gonna_Pay", title: "Gonna Pay", img: "Chet_Gonna_Pay.jpg" },
+            { id: "Chet_Great_Performance", title: "Great Performance", img: "Chet_Great_Performance.jpg" },
+            { id: "Chet_Greasy_Pork_Sandwich", title: "Greasy Pork Sandwich", img: "Chet_Greasy_Pork_Sandwich.jpg" },
+            { id: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich", title: "Nice Greasy Pork...", img: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich.jpg" },
+            { id: "Chet_How_About_It_Lisa", title: "How About It Lisa", img: "Chet_How_About_It_Lisa.jpg" },
+            { id: "Chet_I_Dont_Have_a_Gun", title: "I Don't Have a Gun", img: "Chet_I_Dont_Have_a_Gun.jpg" },
+            { id: "Chet_I_Love_The_Smell_of_Dinosaur_In_The_Morning", title: "Smell of Dinosaur", img: "Chet_I_Love_The_Smell_of_Dinosaur_In_The_Morning.jpg" },
+            { id: "Chet_Ice_To_See_You", title: "Ice To See You", img: "Chet_Ice_To_See_You.jpg" },
+            { id: "Chet_Ill_Kill_You", title: "I'll Kill You", img: "Chet_Ill_Kill_You.jpg" },
+            { id: "Chet_In_Deep_S", title: "In Deep S***", img: "Chet_In_Deep_S.jpg" },
+            { id: "Chet_In_The_Middle_of_a_Crisis", title: "Middle of a Crisis", img: "Chet_In_The_Middle_of_a_Crisis.jpg" },
+            { id: "Chet_Interesting_Isnt_It", title: "Interesting, Isn't It?", img: "Chet_Interesting_Isnt_It.jpg" },
+            { id: "Chet_Is_He_Dizzy", title: "Is He Dizzy?", img: "Chet_Is_He_Dizzy.jpg" },
+            { id: "Chet_Laugh", title: "Laugh", img: "Chet_Laugh.jpg" },
+            { id: "Chet_Laugh_2", title: "Laugh 2", img: "Chet_Laugh_2.jpg" },
+            { id: "Chet_Lick_My_Hand", title: "Lick My Hand", img: "Chet_Lick_My_Hand.jpg" },
+            { id: "Chet_Lisa", title: "Lisa", img: "Chet_Lisa.jpg" },
+            { id: "Chet_Mad_Scientist", title: "Mad Scientist", img: "Chet_Mad_Scientist.jpg" },
+            { id: "Chet_Making_Me_Late", title: "Making Me Late", img: "Chet_Making_Me_Late.jpg" },
+            { id: "Chet_New_Flesh", title: "New Flesh", img: "Chet_New_Flesh.jpg" },
+            { id: "Chet_Nice_Greasy_Pork_Sandwich", title: "Nice Greasy Pork", img: "Chet_Nice_Greasy_Pork_Sandwich.jpg" },
+            { id: "Chet_Not_Exactly", title: "Not Exactly", img: "Chet_Not_Exactly.jpg" },
+            { id: "Chet_Shower", title: "Shower", img: "Chet_Shower.jpg" },
+            { id: "Chet_Shower_2", title: "Shower 2", img: "Chet_Shower_2.jpg" },
+            { id: "Chet_Shut_Up_Puke", title: "Shut Up Puke", img: "Chet_Shut_Up_Puke.jpg" },
+            { id: "Chet_Slick_Them_Up", title: "Slick Them Up", img: "Chet_Slick_Them_Up.jpg" },
+            { id: "Chet_Small_Talk", title: "Small Talk", img: "Chet_Small_Talk.jpg" },
+            { id: "Chet_Someone_Lick_My_Hand", title: "Lick My Hand", img: "Chet_Someone_Lick_My_Hand.jpg" },
+            { id: "Chet_Something_You_Want_To_Tell_Me", title: "Want To Tell Me?", img: "Chet_Something_You_Want_To_Tell_Me.jpg" },
+            { id: "Chet_Stewing", title: "Stewing", img: "Chet_Stewing.jpg" },
+            { id: "Chet_That_Was_A_Great_Performance", title: "Great Performance", img: "Chet_That_Was_A_Great_Performance.jpg" },
+            { id: "Chet_The_New_Flesh", title: "The New Flesh", img: "Chet_The_New_Flesh.jpg" },
+            { id: "Chet_This_Is_A_Nice_Room", title: "Nice Room", img: "Chet_This_Is_A_Nice_Room.jpg" },
+            { id: "Chet_This_Is_Interesting", title: "Interesting", img: "Chet_This_Is_Interesting.jpg" },
+            { id: "Chet_Ugly_Kid", title: "Ugly Kid", img: "Chet_Ugly_Kid.jpg" },
+            { id: "Chet_Wait_Wait_Wait", title: "Wait Wait Wait", img: "Chet_Wait_Wait_Wait.jpg" },
+            { id: "Chet_Wanna_Lick_My_Hand", title: "Lick My Hand?", img: "Chet_Wanna_Lick_My_Hand.jpg" },
+            { id: "Chet_Watch_It_Puke", title: "Watch It Puke", img: "Chet_Watch_It_Puke.jpg" },
+            { id: "Chet_Weird_Science", title: "Weird Science", img: "Chet_Weird_Science.jpg" },
+            { id: "Chet_What_The_Hells_That", title: "What The Hell?", img: "Chet_What_The_Hells_That.jpg" },
+            { id: "Chet_Where_Is_The_Gun", title: "Where Is The Gun?", img: "Chet_Where_Is_The_Gun.jpg" },
+            { id: "Chet_Who_Are_These_People", title: "Who Are These People?", img: "Chet_Who_Are_These_People.jpg" },
+            { id: "Chet_Whos_The_Butt_Breath", title: "Butt Breath", img: "Chet_Whos_The_Butt_Breath.jpg" },
+            { id: "Chet_Whos_The_Dead_Meat", title: "Who's Dead Meat?", img: "Chet_Whos_The_Dead_Meat.jpg" },
+            { id: "Chet_Why_Is_He_Dizzy", title: "Why Is He Dizzy?", img: "Chet_Why_Is_He_Dizzy.jpg" },
+            { id: "Chet_World_of_Deep_S", title: "World of Deep S***", img: "Chet_World_of_Deep_S.jpg" }
+            // Note: Add any remaining specific IDs from Batches 9-10 following this pattern.
         ];
 
+        let activeSounds = [];
         const container = document.getElementById('soundboard');
 
-        // Build the cards
+        // Create cards dynamically
         assets.forEach(item => {
             const card = document.createElement('div');
             card.className = 'sound-card';
             card.innerHTML = `
-                <img src="${item.img}" alt="${item.title}">
+                <img src="${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='default.jpg'">
                 <div class="sound-title">${item.title}</div>
-                <button class="btn" onclick="smartPlay('${item.id}', this)">Play Sound</button>
+                <button class="btn" onclick="smartPlay('${item.id}', this)">Play</button>
             `;
             container.appendChild(card);
         });
 
-        // Smart player: Checks wav folder first, then sounds folder
-        async function smartPlay(fileName, btn) {
+        // Smart play function
+        function smartPlay(id, btn) {
             const audio = new Audio();
             const originalText = btn.innerText;
             
-            // Try WAV
-            audio.src = `wav/${fileName}.wav`;
+            // Priority 1: .wav folder
+            audio.src = `wav/${id}.wav`;
             
             audio.play().catch(() => {
-                // If WAV fails, try MP3
-                audio.src = `sounds/${fileName}.mp3`;
+                // Priority 2: .mp3 /sounds folder
+                audio.src = `sounds/${id}.mp3`;
                 audio.play().catch(() => {
                     btn.innerText = "Error!";
                     btn.style.background = "red";
@@ -179,9 +243,21 @@
                 });
             });
 
-            // Visual feedback
+            activeSounds.push(audio);
             btn.innerText = "Playing...";
             audio.onended = () => { btn.innerText = originalText; };
+        }
+
+        // Global stop
+        function stopAll() {
+            activeSounds.forEach(s => {
+                s.pause();
+                s.currentTime = 0;
+            });
+            activeSounds = [];
+            // Reset all button texts
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(b => b.innerText = "Play");
         }
     </script>
 </body>
