@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chet's Soundboard</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        /* The Scroll Container */
+        .parchment {
+            background-color: #d2b48c; /* Fallback tan color */
+            background-image: url('your-scroll-texture.jpg'); /* Link your background asset here */
+            background-size: cover;
+            width: 450px;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            text-align: center;
+            position: relative;
+            border: 2px solid #5d4037;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .chet-photo {
+            width: 80%;
+            border: 5px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .labels {
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+            line-height: 1.4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Mockup for the button/square */
+        .sound-btn {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border: 3px solid #666;
+            margin-top: 10px;
+            cursor: pointer;
+            box-shadow: inset 2px 2px 5px rgba(255,255,255,0.5);
+        }
+
+        .sound-btn:active {
+            background-color: #999;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parchment">
+        <h1>CHET</h1>
+        
+        <img src="chet-photo.jpg" alt="Chet" class="chet-photo">
+
+        <div class="labels">
+            <span>CHET's</span>
+            <span>Brotherly</span>
+            <span>Words of</span>
+            <span>Wisdom</span>
+            <span>Soundboard</span>
+            
+            <div class="sound-btn" onclick="playSound()"></div>
+            
+            <span style="margin-top: 10px;">Soundboard</span>
+        </div>
+    </div>
+
+    <script>
+        function playSound() {
+            console.log("Audio would play here!");
+            // Once you have your .mp3 or .wav files, we'll add the logic here.
+        }
+    </script>
+
+</body>
+</html>
