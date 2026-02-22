@@ -7,14 +7,16 @@
     <style>
         :root { --primary: #e63946; --dark: #0b132b; --card-bg: #1c2541; --text-light: #f1faee; --gold: #ffb703; }
         body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; padding-bottom: 100px; }
-        header { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1516281730419-ce01440d3dd1?auto=format&fit=crop&q=80&w=1200'); background-size: cover; padding: 40px; text-align: center; border-bottom: 4px solid var(--gold); }
+        header { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1516281730419-ce01440d3dd1?auto=format&fit=crop&q=80&w=1200'); background-size: cover; padding: 60px 20px; text-align: center; border-bottom: 4px solid var(--gold); }
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        .section-box { background: var(--card-bg); padding: 30px; border-radius: 15px; margin-top: 30px; border: 1px solid #3a506b; }
-        h2 { color: var(--gold); border-left: 5px solid var(--primary); padding-left: 15px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-top: 20px; }
+        .section-box { background: var(--card-bg); padding: 35px; border-radius: 15px; margin-top: 30px; border: 1px solid #3a506b; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h2 { color: var(--gold); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 25px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .video-card { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; border: 1px solid #3a506b; transition: 0.3s; }
+        .video-card:hover { transform: translateY(-5px); border-color: var(--gold); }
         iframe { width: 100%; height: 200px; border-radius: 8px; border: none; background: #000; }
-        .video-card { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; border: 1px solid #444; }
-        .video-card h3 { margin-top: 10px; font-size: 1.1rem; color: var(--text-light); }
+        .video-card h3 { margin: 15px 0 5px 0; font-size: 1.1rem; color: var(--gold); }
+        .video-card p { font-size: 0.85rem; color: #a8dadc; margin: 0; }
         .back-link { display: inline-block; margin: 20px 0; color: var(--gold); text-decoration: none; font-weight: bold; }
     </style>
 </head>
@@ -29,33 +31,43 @@
     <a href="index.html" class="back-link">← Return to Library</a>
 
     <section class="section-box">
-        <h2>Foundational Shuffles</h2>
+        <h2>The Essentials</h2>
         <div class="grid">
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/vg3IpFJdu9w"></iframe>
-                <h3>The Perfect Out-Faro</h3>
+                <iframe src="https://www.youtube.com/embed/1vRshWcEwVs" allowfullscreen></iframe>
+                <h3>The Mechanic's Grip</h3>
+                <p>The foundation of all card handling.</p>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/N31U_8tGOPc"></iframe>
-                <h3>The Overhand False Shuffle</h3>
+                <iframe src="https://www.youtube.com/embed/nUfT-h8eMxs" allowfullscreen></iframe>
+                <h3>The Double Lift</h3>
+                <p>The most important sleight in card magic.</p>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/zhvjSAtxEhc"></iframe>
-                <h3>Riffle Shuffle Control</h3>
+                <iframe src="https://www.youtube.com/embed/fD3K20A865U" allowfullscreen></iframe>
+                <h3>Classic Pass Tutorial</h3>
+                <p>Advanced control for invisible shifts.</p>
             </div>
         </div>
     </section>
 
     <section class="section-box">
-        <h2>Controls & Switches</h2>
+        <h2>Forces & False Shuffles</h2>
         <div class="grid">
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-                <h3>Classic Pass (Slow Motion)</h3>
+                <iframe src="https://www.youtube.com/embed/zhvjSAtxEhc" allowfullscreen></iframe>
+                <h3>The Riffle Force</h3>
+                <p>How to make them take the card you want.</p>
             </div>
             <div class="video-card">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-                <h3>The Double Lift</h3>
+                <iframe src="https://www.youtube.com/embed/vg3IpFJdu9w" allowfullscreen></iframe>
+                <h3>The Faro Shuffle</h3>
+                <p>Perfectly interleaving the cards.</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/N31U_8tGOPc" allowfullscreen></iframe>
+                <h3>Zarrow Shuffle</h3>
+                <p>The ultimate table false shuffle.</p>
             </div>
         </div>
     </section>
