@@ -32,15 +32,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 60px; /* Increased space between images and title */
+            gap: clamp(20px, 5vw, 60px); 
             width: 100%;
             max-width: 1200px;
             margin-bottom: 40px;
             border-bottom: 3px solid #5d4037;
             padding-bottom: 30px;
+            flex-wrap: wrap; /* Allows stacking on small screens */
         }
 
-        /* Header Images now match the Sound Card format */
         .header-card {
             background: #d2b48c;
             border: 3px solid #5d4037;
@@ -49,7 +49,7 @@
         }
 
         .header-img {
-            width: 150px; /* Slightly larger than grid images for prominence */
+            width: 150px;
             height: 150px;
             object-fit: cover;
             object-position: top;
@@ -59,6 +59,7 @@
 
         .header-text-box {
             text-align: center;
+            min-width: 200px;
         }
 
         h1 { 
@@ -180,7 +181,7 @@
 
     <script>
         const assets = [
-            // List includes all your Batch items (keeping original IDs)
+            // Your full list of assets remains here
             { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
             { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
             { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
