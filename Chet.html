@@ -9,44 +9,79 @@
             background-color: #0b0b0b;
             color: #f0e68c;
             font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px;
-            margin: 0;
         }
 
-        .header-area {
-            text-align: center;
+        /* Header with side images */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
             margin-bottom: 40px;
-            border-bottom: 2px solid #5d4037;
+            border-bottom: 3px solid #5d4037;
             padding-bottom: 20px;
         }
 
-        h1 { font-size: 4rem; margin: 0; color: #fff; text-shadow: 3px 3px #5d4037; }
+        .header-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #f0e68c;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(240, 230, 140, 0.3);
+        }
 
+        .header-text {
+            text-align: center;
+        }
+
+        h1 { 
+            font-size: 4.5rem; 
+            margin: 0; 
+            color: #fff; 
+            text-shadow: 4px 4px #5d4037; 
+            letter-spacing: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        /* The Grid */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
             width: 100%;
         }
 
         .sound-card {
             background: #d2b48c;
-            border: 3px solid #5d4037;
-            padding: 10px;
+            border: 4px solid #5d4037;
+            padding: 12px;
             text-align: center;
-            box-shadow: 8px 8px 0px #000;
+            box-shadow: 10px 10px 0px #000;
             transition: transform 0.1s;
+            display: flex;
+            flex-direction: column;
         }
 
-        .sound-card:hover { transform: scale(1.02); }
+        .sound-card:hover { transform: translateY(-5px); }
 
         .sound-card img {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
             border: 2px solid #000;
         }
@@ -54,66 +89,99 @@
         .sound-title {
             color: #000;
             font-weight: bold;
-            margin: 10px 0;
-            font-size: 0.9rem;
+            margin: 15px 0;
+            font-size: 0.95rem;
             text-transform: uppercase;
-            min-height: 40px;
+            min-height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
+            line-height: 1.2;
         }
 
         .btn {
             background: #5d4037;
             color: white;
-            border: none;
-            padding: 10px;
+            border: 2px solid #3e2723;
+            padding: 12px;
             width: 100%;
             cursor: pointer;
-            font-family: inherit;
+            font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
         }
 
-        .btn:active { background: #000; }
+        .btn:hover { background: #3e2723; }
+        .btn:active { background: #000; color: #f0e68c; }
+
     </style>
 </head>
 <body>
 
-    <div class="header-area">
-        <h1>CHET</h1>
-        <p>BROTHERLY WORDS OF WISDOM</p>
+    <div class="header-container">
+        <img src="Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
+        
+        <div class="header-text">
+            <h1>CHET</h1>
+            <div class="subtitle">Brotherly Words of Wisdom</div>
+        </div>
+
+        <img src="default.jpg" class="header-img" alt="Chet">
     </div>
 
     <div class="grid" id="soundboard">
         </div>
 
     <script>
-        const audioFiles = [
-            { id: "Snowing", title: "Accident Snowing Room", img: "Chet_Accident_Snowing_Room.jpg" },
-            { id: "Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
-            { id: "ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
-            { id: "Bra", title: "Bra On Head", img: "Chet_Bra_On_Head.jpg" },
-            { id: "Burp1", title: "Burp", img: "Chet_Burp.jpg" },
-            { id: "Burp2", title: "Burp 2", img: "Chet_Burp_2.jpg" }
+        // Array of your assets - filenames must match images exactly
+        const assets = [
+            { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing Room", img: "Chet_Accident_Snowing_Room.jpg" },
+            { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
+            { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
+            { id: "Chet_Bra_On_Head", title: "Bra On Head", img: "Chet_Bra_On_Head.jpg" },
+            { id: "Chet_Burp", title: "Burp", img: "Chet_Burp.jpg" },
+            { id: "Chet_Burp_2", title: "Burp 2", img: "Chet_Burp_2.jpg" }
         ];
 
         const container = document.getElementById('soundboard');
 
-        audioFiles.forEach(item => {
+        // Build the cards
+        assets.forEach(item => {
             const card = document.createElement('div');
             card.className = 'sound-card';
             card.innerHTML = `
                 <img src="${item.img}" alt="${item.title}">
                 <div class="sound-title">${item.title}</div>
-                <button class="btn" onclick="play('${item.id}')">PLAY .WAV</button>
+                <button class="btn" onclick="smartPlay('${item.id}', this)">Play Sound</button>
             `;
             container.appendChild(card);
         });
 
-        function play(id) {
-            // Logic to play from the /wav folder
-            const sfx = new Audio(`wav/${id}.wav`);
-            sfx.play().catch(err => console.log("Check if file exists in /wav folder"));
+        // Smart player: Checks wav folder first, then sounds folder
+        async function smartPlay(fileName, btn) {
+            const audio = new Audio();
+            const originalText = btn.innerText;
+            
+            // Try WAV
+            audio.src = `wav/${fileName}.wav`;
+            
+            audio.play().catch(() => {
+                // If WAV fails, try MP3
+                audio.src = `sounds/${fileName}.mp3`;
+                audio.play().catch(() => {
+                    btn.innerText = "Error!";
+                    btn.style.background = "red";
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.style.background = "#5d4037";
+                    }, 2000);
+                });
+            });
+
+            // Visual feedback
+            btn.innerText = "Playing...";
+            audio.onended = () => { btn.innerText = originalText; };
         }
     </script>
 </body>
