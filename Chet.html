@@ -38,7 +38,7 @@
             margin-bottom: 40px;
             border-bottom: 3px solid #5d4037;
             padding-bottom: 30px;
-            flex-wrap: wrap; /* Allows stacking on small screens */
+            flex-wrap: wrap;
         }
 
         .header-card {
@@ -94,12 +94,9 @@
             z-index: 100;
         }
 
-        .stop-btn:hover { background: #b30000; }
-        .stop-btn:active { transform: translateY(2px); box-shadow: 2px 2px 0px #000; }
-
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
             gap: 20px;
             max-width: 1400px;
             width: 100%;
@@ -120,7 +117,7 @@
 
         .sound-card img {
             width: 100%;
-            height: 125px;
+            height: 130px;
             object-fit: cover;
             object-position: top;
             border: 1px solid #000;
@@ -131,9 +128,9 @@
             color: #000;
             font-weight: bold;
             margin: 10px 0;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
-            min-height: 40px;
+            min-height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -162,16 +159,14 @@
 
     <div class="header-container">
         <div class="header-card">
-            <img src="images/Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Chet Left">
+            <img src="images/Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Chet 1">
         </div>
-        
         <div class="header-text-box">
             <h1>CHET</h1>
             <div class="subtitle">Brotherly Words of Wisdom</div>
         </div>
-
         <div class="header-card">
-            <img src="images/Chet_In_Deep_S.jpg" class="header-img" alt="Chet Right">
+            <img src="images/Chet_In_Deep_S.jpg" class="header-img" alt="Chet 2">
         </div>
     </div>
 
@@ -180,80 +175,52 @@
     <div class="grid" id="soundboard"></div>
 
     <script>
-        const assets = [
-            // Your full list of assets remains here
-            { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
-            { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
-            { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
-            { id: "Chet_Bra_On_Head", title: "Bra On Head", img: "Chet_Bra_On_Head.jpg" },
-            { id: "Chet_Burp", title: "Burp", img: "Chet_Burp.jpg" },
-            { id: "Chet_Burp_2", title: "Burp 2", img: "Chet_Burp_2.jpg" },
-            { id: "Chet_Butt_Out", title: "Butt Out", img: "Chet_Butt_Out.jpg" },
-            { id: "Chet_Chet_Kelly", title: "Chet & Kelly", img: "Chet_Chet_Kelly.jpg" },
-            { id: "Chet_Cold_Blue_Steel", title: "Cold Blue Steel", img: "Chet_Cold_Blue_Steel.jpg" },
-            { id: "Chet_Come_On_Chet", title: "Come On Chet", img: "Chet_Come_On_Chet.jpg" },
-            { id: "Chet_Dead_Meat", title: "Dead Meat", img: "Chet_Dead_Meat.jpg" },
-            { id: "Chet_Dizzy_Is_He", title: "Dizzy Is He?", img: "Chet_Dizzy_Is_He.jpg" },
-            { id: "Chet_Done_Yet", title: "Done Yet?", img: "Chet_Done_Yet.jpg" },
-            { id: "Chet_Fart_Grease", title: "Fart Grease", img: "Chet_Fart_Grease.jpg" },
-            { id: "Chet_Gonna_Pay", title: "Gonna Pay", img: "Chet_Gonna_Pay.jpg" },
-            { id: "Chet_Great_Performance", title: "Great Performance", img: "Chet_Great_Performance.jpg" },
-            { id: "Chet_Greasy_Pork_Sandwich", title: "Greasy Pork", img: "Chet_Greasy_Pork_Sandwich.jpg" },
-            { id: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich", title: "Nice Greasy Pork...", img: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich.jpg" },
-            { id: "Chet_How_About_It_Lisa", title: "How About It Lisa", img: "Chet_How_About_It_Lisa.jpg" },
-            { id: "Chet_I_Dont_Have_a_Gun", title: "I Don't Have a Gun", img: "Chet_I_Dont_Have_a_Gun.jpg" },
-            { id: "Chet_I_Love_The_Smell_of_Dinosaur_In_The_Morning", title: "Smell of Dinosaur", img: "Chet_I_Love_The_Smell_of_Dinosaur_In_The_Morning.jpg" },
-            { id: "Chet_Ice_To_See_You", title: "Ice To See You", img: "Chet_Ice_To_See_You.jpg" },
-            { id: "Chet_Ill_Kill_You", title: "I'll Kill You", img: "Chet_Ill_Kill_You.jpg" },
-            { id: "Chet_In_Deep_S", title: "In Deep S***", img: "Chet_In_Deep_S.jpg" },
-            { id: "Chet_In_The_Middle_of_a_Crisis", title: "Middle of a Crisis", img: "Chet_In_The_Middle_of_a_Crisis.jpg" },
-            { id: "Chet_Interesting_Isnt_It", title: "Interesting, Isn't It?", img: "Chet_Interesting_Isnt_It.jpg" },
-            { id: "Chet_Is_He_Dizzy", title: "Is He Dizzy?", img: "Chet_Is_He_Dizzy.jpg" },
-            { id: "Chet_Laugh", title: "Laugh", img: "Chet_Laugh.jpg" },
-            { id: "Chet_Laugh_2", title: "Laugh 2", img: "Chet_Laugh_2.jpg" },
-            { id: "Chet_Lick_My_Hand", title: "Lick My Hand", img: "Chet_Lick_My_Hand.jpg" },
-            { id: "Chet_Lisa", title: "Lisa", img: "Chet_Lisa.jpg" },
-            { id: "Chet_Mad_Scientist", title: "Mad Scientist", img: "Chet_Mad_Scientist.jpg" },
-            { id: "Chet_Making_Me_Late", title: "Making Me Late", img: "Chet_Making_Me_Late.jpg" },
-            { id: "Chet_New_Flesh", title: "New Flesh", img: "Chet_New_Flesh.jpg" },
-            { id: "Chet_Nice_Greasy_Pork_Sandwich", title: "Nice Greasy Pork", img: "Chet_Nice_Greasy_Pork_Sandwich.jpg" },
-            { id: "Chet_Not_Exactly", title: "Not Exactly", img: "Chet_Not_Exactly.jpg" },
-            { id: "Chet_Shower", title: "Shower", img: "Chet_Shower.jpg" },
-            { id: "Chet_Shower_2", title: "Shower 2", img: "Chet_Shower_2.jpg" },
-            { id: "Chet_Shut_Up_Puke", title: "Shut Up Puke", img: "Chet_Shut_Up_Puke.jpg" },
-            { id: "Chet_Slick_Them_Up", title: "Slick Them Up", img: "Chet_Slick_Them_Up.jpg" },
-            { id: "Chet_Small_Talk", title: "Small Talk", img: "Chet_Small_Talk.jpg" },
-            { id: "Chet_Someone_Lick_My_Hand", title: "Lick My Hand", img: "Chet_Someone_Lick_My_Hand.jpg" },
-            { id: "Chet_Something_You_Want_To_Tell_Me", title: "Want To Tell Me?", img: "Chet_Something_You_Want_To_Tell_Me.jpg" },
-            { id: "Chet_Stewing", title: "Stewing", img: "Chet_Stewing.jpg" },
-            { id: "Chet_That_Was_A_Great_Performance", title: "Great Performance", img: "Chet_That_Was_A_Great_Performance.jpg" },
-            { id: "Chet_The_New_Flesh", title: "The New Flesh", img: "Chet_The_New_Flesh.jpg" },
-            { id: "Chet_This_Is_A_Nice_Room", title: "Nice Room", img: "Chet_This_Is_A_Nice_Room.jpg" },
-            { id: "Chet_This_Is_Interesting", title: "Interesting", img: "Chet_This_Is_Interesting.jpg" },
-            { id: "Chet_Ugly_Kid", title: "Ugly Kid", img: "Chet_Ugly_Kid.jpg" },
-            { id: "Chet_Wait_Wait_Wait", title: "Wait Wait Wait", img: "Chet_Wait_Wait_Wait.jpg" },
-            { id: "Chet_Wanna_Lick_My_Hand", title: "Lick My Hand?", img: "Chet_Wanna_Lick_My_Hand.jpg" },
-            { id: "Chet_Watch_It_Puke", title: "Watch It Puke", img: "Chet_Watch_It_Puke.jpg" },
-            { id: "Chet_Weird_Science", title: "Weird Science", img: "Chet_Weird_Science.jpg" },
-            { id: "Chet_What_The_Hells_That", title: "What The Hell?", img: "Chet_What_The_Hells_That.jpg" },
-            { id: "Chet_Where_Is_The_Gun", title: "Where Is The Gun?", img: "Chet_Where_Is_The_Gun.jpg" },
-            { id: "Chet_Who_Are_These_People", title: "Who Are These People?", img: "Chet_Who_Are_These_People.jpg" },
-            { id: "Chet_Whos_The_Butt_Breath", title: "Butt Breath", img: "Chet_Whos_The_Butt_Breath.jpg" },
-            { id: "Chet_Whos_The_Dead_Meat", title: "Who's Dead Meat?", img: "Chet_Whos_The_Dead_Meat.jpg" },
-            { id: "Chet_Why_Is_He_Dizzy", title: "Why Is He Dizzy?", img: "Chet_Why_Is_He_Dizzy.jpg" },
-            { id: "Chet_World_of_Deep_S", title: "World of Deep S***", img: "Chet_World_of_Deep_S.jpg" }
+        // Generated exactly from your provided file list
+        const rawFiles = [
+            "BO_on_Chets_Suite", "BO_on_Chets_Suite_2", "Bill_Paxton", 
+            "Chet_Accident_Snowing_Room", "Chet_Bimbo", "Chet_Bottom_of_This_ASAFP", 
+            "Chet_Bra_On_Head", "Chet_Burp", "Chet_Burp_2", "Chet_Butter_Your_Muffin", 
+            "Chet_Christ_Sakes_Cover_Yourself", "Chet_Disrespectful", "Chet_Donkey_Dicks_Morgue", 
+            "Chet_Elephant_Balls", "Chet_Family_Matter", "Chet_Feeling_Kind_of_Queasy", 
+            "Chet_Freeze", "Chet_Good_Morning_Turd_Brain", "Chet_Grandparents", 
+            "Chet_Gun_Knock_On_Head", "Chet_He_Pukes_You_Die", "Chet_Hi_Girls", 
+            "Chet_Hi_Nanny_Hi_Grampy", "Chet_How_Bout_Pork_AshTray", "Chet_Huh", 
+            "Chet_Hurt_Real_Bad", "Chet_I_like_your_panties", "Chet_Know_Time", 
+            "Chet_Laugh", "Chet_Laugh_2", "Chet_Lisa_Bullshit", "Chet_Monkey_Dick", 
+            "Chet_Moron", "Chet_Not_Joke", "Chet_Now_Make_Self_One_Dick_Weed", 
+            "Chet_Ok", "Chet_Pretend_Vomit", "Chet_Pull_One_Over", "Chet_Quit_Fooling_around", 
+            "Chet_Room_Ok_Won't_Kill_Promise", "Chet_See_You_Upstairs", "Chet_Severe_Behavioral_Disorder", 
+            "Chet_Shake_On_It", "Chet_Shit_Catches_Fly", "Chet_Sorry", "Chet_Sorry2", 
+            "Chet_Squirt_of_Piss", "Chet_Start_Talking_Little_Man", "Chet_Telling_Mom_and_Dad", 
+            "Chet_That_Little_Bastard", "Chet_That_Looks_Pretty_Good", "Chet_Theme_Gary_Chet_Asshole", 
+            "Chet_Theme_Music", "Chet_Those_Are_Womens_Underpants", "Chet_Time_To_Pay_Fiddler", 
+            "Chet_Turn_Me_Back_To_Normal", "Chet_Whales_dick", "Chet_What_A_Joke", 
+            "Chet_What_Hell_Going_On_Around_Here", "Chet_What_The_Hell", "Chet_What_The_Hell_2", 
+            "Chet_Where_Is_My_Brother", "Chet_Yo_Wyatt", "Chet_You_Die_She_Limps", 
+            "Chet_You_Spit_In_This", "Chet_Your_Dead_Meat_Pilgrim", "Chet_Youre_Stewed_butt-wad", 
+            "Chets_175_Dollars_Cash", "Chets_Hey_Big_Bros_For", "Chets_The_Boozehounds_Return", 
+            "Gary_Chet", "Gary_Chet_Asshole", "Gary_Mom_Combing_Hair", "Gary_Mom_Oh_Gary", 
+            "Gary_Never_Tossed_Off", "Gary_Thats_Her_Nose", "Gary_Wyatt_Chet", "Lisa_Bitch_Chet", 
+            "Lisa_Fear_of_Chet", "Lisa_Think_About_Chet", "Lisa_Wanker_Chet", "Lisa_talk_Chet", 
+            "Wyatt_Alright_Chet_Name_Your_Price", "Wyatt_Chet_College_Money", 
+            "Wyatt_Dont_Have_Bucks_Chet", "Wyatt_Dont_Smartmouth_me_Chet", 
+            "Wyatt_Gary_Nasty_Chet", "Wyatt_Know_Time_It_Is"
         ];
 
-        let activeSounds = [];
+        const activeSounds = [];
         const container = document.getElementById('soundboard');
 
-        assets.forEach(item => {
+        rawFiles.forEach(file => {
             const card = document.createElement('div');
             card.className = 'sound-card';
+            
+            // Clean title: Remove "Chet_", remove underscores, capitalize words
+            let cleanTitle = file.replace(/^Chet_/, '').replace(/_/g, ' ');
+            
             card.innerHTML = `
-                <img src="images/${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='images/Chet_In_Deep_S.jpg'">
-                <div class="sound-title">${item.title}</div>
-                <button class="btn" onclick="smartPlay('${item.id}', this)">Play</button>
+                <img src="images/${file}.jpg" alt="${cleanTitle}" loading="lazy" onerror="this.src='images/Chet_In_Deep_S.jpg'">
+                <div class="sound-title">${cleanTitle}</div>
+                <button class="btn" onclick="smartPlay('${file}', this)">Play</button>
             `;
             container.appendChild(card);
         });
@@ -261,17 +228,19 @@
         function smartPlay(id, btn) {
             const audio = new Audio();
             const originalText = btn.innerText;
+            
+            // Try WAV first, then MP3
             audio.src = `wav/${id}.wav`;
             
             audio.play().catch(() => {
                 audio.src = `sounds/${id}.mp3`;
                 audio.play().catch(() => {
                     btn.innerText = "Error!";
-                    btn.style.background = "red";
+                    btn.style.background = "#8b0000";
                     setTimeout(() => {
                         btn.innerText = originalText;
                         btn.style.background = "#5d4037";
-                    }, 2000);
+                    }, 1500);
                 });
             });
 
@@ -281,13 +250,9 @@
         }
 
         function stopAll() {
-            activeSounds.forEach(s => {
-                s.pause();
-                s.currentTime = 0;
-            });
-            activeSounds = [];
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(b => b.innerText = "Play");
+            activeSounds.forEach(s => { s.pause(); s.currentTime = 0; });
+            activeSounds.length = 0;
+            document.querySelectorAll('.btn').forEach(b => b.innerText = "Play");
         }
     </script>
 </body>
