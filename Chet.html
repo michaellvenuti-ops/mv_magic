@@ -16,7 +16,6 @@
             align-items: center;
         }
 
-        /* Navigation Link back to Hub */
         .nav-back {
             align-self: flex-start;
             margin-bottom: 20px;
@@ -25,6 +24,7 @@
             border: 1px solid #5d4037;
             padding: 5px 15px;
             font-size: 0.9rem;
+            text-transform: uppercase;
         }
         .nav-back:hover { background: #5d4037; color: white; }
 
@@ -56,6 +56,7 @@
             color: #fff; 
             text-shadow: 3px 3px #5d4037;
             text-align: center;
+            letter-spacing: 2px;
         }
 
         .stop-btn {
@@ -140,12 +141,12 @@
     <a href="index.html" class="nav-back">← Back to Hub</a>
 
     <div class="header-container">
-        <img src="Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
+        <img src="images/Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
         <div style="text-align: center;">
             <h1>CHET</h1>
             <div style="font-size: 0.9rem; letter-spacing: 2px; color: #f0e68c;">BROTHERLY WORDS OF WISDOM</div>
         </div>
-        <img src="default.jpg" class="header-img" alt="Chet">
+        <img src="images/default.jpg" class="header-img" alt="Chet">
     </div>
 
     <button class="stop-btn" onclick="stopAll()">STOP ALL SOUNDS</button>
@@ -153,8 +154,8 @@
     <div class="grid" id="soundboard"></div>
 
     <script>
+        // Filenames stay the same, the loop below will add the "images/" prefix
         const assets = [
-            // List all 10 batches here
             { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
             { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
             { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
@@ -223,8 +224,9 @@
         assets.forEach(item => {
             const card = document.createElement('div');
             card.className = 'sound-card';
+            // Added images/ prefix to the image source here
             card.innerHTML = `
-                <img src="${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='default.jpg'">
+                <img src="images/${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='images/default.jpg'">
                 <div class="sound-title">${item.title}</div>
                 <button class="btn" onclick="smartPlay('${item.id}', this)">Play</button>
             `;
