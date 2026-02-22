@@ -16,6 +16,18 @@
             align-items: center;
         }
 
+        /* Navigation Link back to Hub */
+        .nav-back {
+            align-self: flex-start;
+            margin-bottom: 20px;
+            color: #f0e68c;
+            text-decoration: none;
+            border: 1px solid #5d4037;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+        }
+        .nav-back:hover { background: #5d4037; color: white; }
+
         .header-container {
             display: flex;
             align-items: center;
@@ -39,7 +51,7 @@
         }
 
         h1 { 
-            font-size: 3.5rem; 
+            font-size: clamp(2rem, 8vw, 3.5rem); 
             margin: 0; 
             color: #fff; 
             text-shadow: 3px 3px #5d4037;
@@ -120,20 +132,19 @@
             font-size: 0.75rem;
         }
 
-        .btn:hover { background: #3e2723; }
         .btn:active { background: #000; color: #f0e68c; }
     </style>
 </head>
 <body>
 
+    <a href="index.html" class="nav-back">← Back to Hub</a>
+
     <div class="header-container">
         <img src="Chet_Bottom_of_This_ASAFP.jpg" class="header-img" alt="Bill Paxton">
-        
         <div style="text-align: center;">
             <h1>CHET</h1>
-            <div style="font-size: 1rem; letter-spacing: 2px; color: #f0e68c;">BROTHERLY WORDS OF WISDOM</div>
+            <div style="font-size: 0.9rem; letter-spacing: 2px; color: #f0e68c;">BROTHERLY WORDS OF WISDOM</div>
         </div>
-
         <img src="default.jpg" class="header-img" alt="Chet">
     </div>
 
@@ -142,8 +153,8 @@
     <div class="grid" id="soundboard"></div>
 
     <script>
-        // Combined asset list from all batches
         const assets = [
+            // List all 10 batches here
             { id: "Chet_Accident_Snowing_Room", title: "Accident Snowing", img: "Chet_Accident_Snowing_Room.jpg" },
             { id: "Chet_Bimbo", title: "Bimbo", img: "Chet_Bimbo.jpg" },
             { id: "Chet_Bottom_of_This_ASAFP", title: "Bottom of This ASAFP", img: "Chet_Bottom_of_This_ASAFP.jpg" },
@@ -160,7 +171,7 @@
             { id: "Chet_Fart_Grease", title: "Fart Grease", img: "Chet_Fart_Grease.jpg" },
             { id: "Chet_Gonna_Pay", title: "Gonna Pay", img: "Chet_Gonna_Pay.jpg" },
             { id: "Chet_Great_Performance", title: "Great Performance", img: "Chet_Great_Performance.jpg" },
-            { id: "Chet_Greasy_Pork_Sandwich", title: "Greasy Pork Sandwich", img: "Chet_Greasy_Pork_Sandwich.jpg" },
+            { id: "Chet_Greasy_Pork_Sandwich", title: "Greasy Pork", img: "Chet_Greasy_Pork_Sandwich.jpg" },
             { id: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich", title: "Nice Greasy Pork...", img: "Chet_How_About_a_Nice_Greasy_Pork_Sandwich.jpg" },
             { id: "Chet_How_About_It_Lisa", title: "How About It Lisa", img: "Chet_How_About_It_Lisa.jpg" },
             { id: "Chet_I_Dont_Have_a_Gun", title: "I Don't Have a Gun", img: "Chet_I_Dont_Have_a_Gun.jpg" },
@@ -204,13 +215,11 @@
             { id: "Chet_Whos_The_Dead_Meat", title: "Who's Dead Meat?", img: "Chet_Whos_The_Dead_Meat.jpg" },
             { id: "Chet_Why_Is_He_Dizzy", title: "Why Is He Dizzy?", img: "Chet_Why_Is_He_Dizzy.jpg" },
             { id: "Chet_World_of_Deep_S", title: "World of Deep S***", img: "Chet_World_of_Deep_S.jpg" }
-            // Note: Add any remaining specific IDs from Batches 9-10 following this pattern.
         ];
 
         let activeSounds = [];
         const container = document.getElementById('soundboard');
 
-        // Create cards dynamically
         assets.forEach(item => {
             const card = document.createElement('div');
             card.className = 'sound-card';
@@ -222,16 +231,13 @@
             container.appendChild(card);
         });
 
-        // Smart play function
         function smartPlay(id, btn) {
             const audio = new Audio();
             const originalText = btn.innerText;
             
-            // Priority 1: .wav folder
             audio.src = `wav/${id}.wav`;
             
             audio.play().catch(() => {
-                // Priority 2: .mp3 /sounds folder
                 audio.src = `sounds/${id}.mp3`;
                 audio.play().catch(() => {
                     btn.innerText = "Error!";
@@ -248,14 +254,12 @@
             audio.onended = () => { btn.innerText = originalText; };
         }
 
-        // Global stop
         function stopAll() {
             activeSounds.forEach(s => {
                 s.pause();
                 s.currentTime = 0;
             });
             activeSounds = [];
-            // Reset all button texts
             const buttons = document.querySelectorAll('.btn');
             buttons.forEach(b => b.innerText = "Play");
         }
