@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikola System Lab v1.7</title>
+    <title>Nikola System Lab v1.8</title>
     <style>
         :root {
             --primary: #5e548e; --dark: #0b132b; --card-bg: #1c2541;
@@ -15,129 +15,147 @@
         
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         h2.section-title { border-left: 5px solid var(--gold); padding-left: 15px; margin-top: 40px; color: var(--gold); text-transform: uppercase; }
-        .section-box { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #3a506b; }
+        .section-box { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #3a506b; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
 
-        /* THE SYSTEM DESCRIPTION (REPLACES VIDEO) */
-        .blueprint { border: 1px dashed var(--gold); padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; line-height: 1.8; }
-        .blueprint ul { margin: 15px 0; }
-        .blueprint li { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; }
+        /* BLUEPRINT */
+        .blueprint { border: 1px dashed var(--gold); padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; }
 
-        /* SIMULATOR & LOG */
+        /* SIMULATOR GRID */
         .sim-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
         @media (min-width: 900px) { .sim-grid { grid-template-columns: 1fr 300px; } }
 
-        .deck-scroll-wrapper { width: 100%; overflow-x: auto; padding: 20px 0; }
-        .deck-view { display: flex; gap: 12px; padding: 20px; background: rgba(0,0,0,0.5); border-radius: 10px; width: max-content; }
+        /* DECK VIEW SCROLL FIX */
+        .deck-scroll-wrapper { width: 100%; overflow-x: auto; padding: 20px 0; background: rgba(0,0,0,0.2); border-radius: 10px; }
+        .deck-view { display: flex; gap: 12px; padding: 20px; width: max-content; min-height: 120px; }
         
+        /* 3D CARDS */
         .card-3d { width: 65px; height: 95px; position: relative; transform-style: preserve-3d; transition: 0.4s; cursor: pointer; flex-shrink: 0; }
-        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: bold; border: 1px solid white; }
+        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: bold; border: 1px solid white; font-size: 1rem; }
         .card-front { background: white; color: black; transform: rotateY(180deg); }
         .card-back { background: var(--primary); color: white; border: 1px solid var(--gold); }
         .card-3d.flipped { transform: rotateY(180deg); }
 
-        .history-box { background: #000; color: #00ff41; padding: 15px; border-radius: 8px; font-family: monospace; height: 280px; overflow-y: auto; border: 1px solid #3a506b; font-size: 0.8rem; }
+        /* HISTORY */
+        .history-box { background: #000; color: #00ff41; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; height: 300px; overflow-y: auto; border: 1px solid #3a506b; font-size: 0.8rem; }
 
+        /* CONTROLS */
         .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-        .btn { padding: 12px 20px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; }
+        .btn { padding: 12px 20px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; transition: 0.2s; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
         .btn-main { background: var(--primary); color: white; }
+        .btn-gold { background: var(--gold); color: var(--dark); }
         .btn-shuffle { background: #2a9d8f; color: white; }
 
-        table { width: 100%; border-collapse: collapse; background: #070d1a; }
+        /* TABLE */
+        .table-wrapper { overflow-x: auto; width: 100%; }
+        table { width: 100%; border-collapse: collapse; background: #070d1a; min-width: 600px; }
         th, td { border: 1px solid #3a506b; padding: 10px; text-align: center; font-size: 0.85rem; }
+        th { background: #1b263b; color: var(--gold); }
         .red-text { color: #ff4d4d !important; }
+        .training-hidden { color: transparent !important; background: #111 !important; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>The Nikola Card System</h1>
-    <p>Forensic Analysis • Encyclopedia of Card Tricks (Pg. 385)</p>
+    <p>Interactive Training Suite • Encyclopedia of Card Tricks</p>
 </header>
 
 <div class="container">
 
-    <h2 class="section-title">1. System Blueprint & Description</h2>
+    <h2 class="section-title">1. System Description</h2>
     <div class="section-box">
         <div class="blueprint">
-            <strong>What is the Nikola System?</strong>
-            <p>Unlike Si Stebbins (mathematical) or Mnemonica (pure memory), the <strong>Nikola System</strong> is a "built-in miracle" stack. It was designed so that specific groups of cards are pre-arranged for massive stage effects while looking entirely random to the audience.</p>
+            <strong>Encyclopedia of Card Tricks (Pg. 385)</strong>
+            <p>The Nikola System is a "pre-arranged" stack designed for stage miracles. Unlike the Si Stebbins, it looks completely random but allows for:</p>
             <ul>
-                <li><strong>The Spelling Bee:</strong> The first 15 cards are specifically ordered so that common card names (like "Ace of Spades") can be spelled out, card by card, landing exactly on the selection.</li>
-                <li><strong>The Poker Deal:</strong> The stack contains a hidden "slug" that, when dealt in a specific number of hands, results in a Royal Flush in Spades for the performer.</li>
-                <li><strong>The Suit Production:</strong> By utilizing Faro shuffles (included in the engine below), you can separate the deck into full suits or colors in minutes.</li>
-                <li><strong>Weight of Cards:</strong> Like all stacks, if you know the card at the cut point, you know exactly how many cards were removed.</li>
+                <li><strong>Poker Demonstrations:</strong> Instant Royal Flushes.</li>
+                <li><strong>Spelling Bee:</strong> Spell cards directly from the stack.</li>
+                <li><strong>Faro Transformations:</strong> Specific shuffles unlock new suit orders.</li>
             </ul>
-            <p style="font-size: 0.85rem; opacity: 0.8;"><em>Note: Because this is a static system, it is highly vulnerable to shuffles—master the <strong>Faro Shuffles</strong> below to see how the order evolves.</em></p>
         </div>
     </div>
 
     <h2 class="section-title">2. Interactive Lab & Shuffles</h2>
     <div class="section-box">
         <div class="controls">
-            <button class="btn btn-main" style="background:#be9b7b; color:#0b132b" onclick="toggleTraining()">Peek Mode</button>
-            <button class="btn btn-main" onclick="resetStack()">Reset Nikola</button>
+            <button class="btn btn-gold" id="peekBtn" onclick="toggleTraining()">Toggle Peek Mode</button>
+            <button class="btn btn-main" onclick="resetStack()">Reset to Nikola</button>
             <button class="btn btn-shuffle" onclick="applyFaro(false)">Out-Faro</button>
             <button class="btn btn-shuffle" onclick="applyFaro(true)">In-Faro</button>
         </div>
 
         <div class="sim-grid">
             <div class="deck-scroll-wrapper">
-                <div class="deck-view" id="deckDisplay"></div>
+                <div id="deckDisplay" class="deck-view">
+                    </div>
             </div>
-            <div class="history-box" id="historyLog"></div>
+            <div class="history-box" id="historyLog">
+                <div>[SYSTEM] Awaiting input...</div>
+            </div>
         </div>
     </div>
 
-    <h2 class="section-title">3. Nikola Cheat Sheet</h2>
+    <h2 class="section-title">3. Nikola Reference Sheet</h2>
     <div class="section-box">
-        <table id="cheatSheet">
-            <thead>
-                <tr><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th></tr>
-            </thead>
-            <tbody id="sheetBody"></tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th></tr>
+                </thead>
+                <tbody id="sheetBody">
+                    </tbody>
+            </table>
+        </div>
     </div>
 
 </div>
 
 <script>
-    const nikolaStr = "6D,9C,10H,5S,QC,8D,AH,7S,4C,JH,2D,3S,QD,8C,3H,7D,9S,2C,4H,10D,AS,6C,9H,8S,JD,5C,7H,10S,KH,AC,2S,3D,AD,4S,7C,5H,6S,JS,8H,3C,2H,9D,5D,4D,10C,6H,KS,QH,QS,KC,JS,7C";
-    let deck = [];
-    let trainingMode = false;
+    // The Nikola Order from Encyclopedia
+    const nikolaData = "6D,9C,10H,5S,QC,8D,AH,7S,4C,JH,2D,3S,QD,8C,3H,7D,9S,2C,4H,10D,AS,6C,9H,8S,JD,5C,7H,10S,KH,AC,2S,3D,AD,4S,7C,5H,6S,JS,8H,3C,2H,9D,5D,4D,10C,6H,KS,QH,QS,KC,JS,7C";
+    
+    let currentDeck = [];
+    let isPeekMode = false;
 
-    function parseCard(str) {
-        str = str.trim().toUpperCase();
+    function parse(str) {
         let suit = str.slice(-1);
         let val = str.slice(0, -1);
         let suitSym = {'C':'♣','H':'♥','D':'♦','S':'♠'}[suit] || suit;
-        let isRed = (suit === 'H' || suit === 'D' || suit === '♥' || suit === '♦');
+        let isRed = (suit === 'H' || suit === 'D');
         return { name: val + suitSym, isRed: isRed };
     }
 
     function addLog(msg) {
         const log = document.getElementById('historyLog');
-        log.innerHTML = `<div>[${new Date().toLocaleTimeString([], {hour12:false})}] ${msg}</div>` + log.innerHTML;
+        const entry = document.createElement('div');
+        entry.style.borderBottom = "1px solid #222";
+        entry.style.padding = "2px 0";
+        entry.innerHTML = `[${new Date().toLocaleTimeString([], {hour12:false})}] ${msg}`;
+        log.prepend(entry);
     }
 
     function resetStack() {
-        deck = nikolaStr.split(',').map(parseCard);
-        addLog("SYSTEM: Nikola Stack Loaded");
+        currentDeck = nikolaData.split(',').map(parse);
+        addLog("STACK: Reset to Nikola Order");
         render();
     }
 
     function toggleTraining() {
-        trainingMode = !trainingMode;
-        addLog(trainingMode ? "PEEK MODE: ON" : "PEEK MODE: OFF");
+        isPeekMode = !isPeekMode;
+        document.getElementById('peekBtn').style.background = isPeekMode ? "#e63946" : "#be9b7b";
+        addLog(isPeekMode ? "MODE: Peek Enabled" : "MODE: Peek Disabled");
         render();
     }
 
     function applyFaro(isIn) {
-        let p1 = deck.slice(0, 26), p2 = deck.slice(26), res = [];
+        let p1 = currentDeck.slice(0, 26), p2 = currentDeck.slice(26), res = [];
         for (let i = 0; i < 26; i++) {
             if (isIn) res.push(p2[i], p1[i]);
             else res.push(p1[i], p2[i]);
         }
-        deck = res;
+        currentDeck = res;
         addLog(isIn ? "SHUFFLE: In-Faro" : "SHUFFLE: Out-Faro");
         render();
     }
@@ -145,19 +163,51 @@
     function render() {
         const display = document.getElementById('deckDisplay');
         const body = document.getElementById('sheetBody');
-        display.innerHTML = ''; body.innerHTML = '';
+        
+        if(!display || !body) return;
 
-        deck.forEach((card, i) => {
+        display.innerHTML = ''; 
+        body.innerHTML = '';
+
+        // Render Simulator
+        currentDeck.forEach((card, i) => {
             let container = document.createElement('div');
-            container.className = `card-3d`;
+            container.className = `card-3d ${!isPeekMode ? 'flipped' : ''}`;
             container.onclick = () => {
-                if(trainingMode) container.classList.toggle('flipped');
-                else { 
-                    deck = [...deck.slice(i+1), ...deck.slice(0,i+1)]; 
-                    addLog(`CUT: ${card.name} to bottom`);
-                    render(); 
+                if(isPeekMode) {
+                    container.classList.toggle('flipped');
+                } else {
+                    currentDeck = [...currentDeck.slice(i+1), ...currentDeck.slice(0,i+1)];
+                    addLog(`CUT: Card ${card.name} to bottom`);
+                    render();
                 }
             };
-            container.innerHTML = `<div class="card-face card-back">${i+1}</div>
-                                   <div class="card-face card-front ${card.isRed?'red-text':'black-text'}">${card.name}</div>`;
-            if(!trainingMode) container.
+            container.innerHTML = `
+                <div class="card-face card-back">${i+1}</div>
+                <div class="card-face card-front ${card.isRed?'red-text':''}" style="color: ${card.isRed?'red':'black'}">${card.name}</div>
+            `;
+            display.appendChild(container);
+        });
+
+        // Render Reference Table
+        for(let r=0; r<13; r++) {
+            let row = document.createElement('tr');
+            [0, 13, 26, 39].forEach(offset => {
+                let idx = r + offset;
+                if(idx < 52) {
+                    let card = currentDeck[idx];
+                    row.innerHTML += `
+                        <td>${idx+1}</td>
+                        <td class="${card.isRed?'red-text':''} ${isPeekMode?'training-hidden':''}">${card.name}</td>
+                    `;
+                }
+            });
+            body.appendChild(row);
+        }
+    }
+
+    // INITIAL LOAD
+    window.onload = resetStack;
+</script>
+</body>
+</html>
