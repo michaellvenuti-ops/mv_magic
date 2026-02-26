@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Particle Stack - Ultimate Master Vault v10.0</title>
+    <title>Particle Stack - Architect Edition v11.0</title>
     <style>
         :root {
             --primary: #7b2cbf; --dark: #0a0118; --card-bg: #10002b;
@@ -32,10 +32,9 @@
         .btn:hover { background: var(--gold); color: var(--dark); }
         .btn-gold { background: var(--gold); color: var(--dark); }
 
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 25px; }
-        .tool-panel { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid var(--accent); text-align: center; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .tool-panel { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid var(--accent); }
 
-        .poker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
         .poker-hand { padding: 12px; border-radius: 10px; border: 1px solid #333; background: #050010; }
         .winner-p1 { border: 2px solid var(--gold); box-shadow: 0 0 15px var(--gold); }
         
@@ -45,14 +44,17 @@
         .red-txt { color: var(--mate-glow); }
 
         .log-box { background: #000; color: var(--gold); padding: 10px; border-radius: 8px; font-family: monospace; height: 80px; overflow-y: auto; border: 1px solid var(--accent); font-size: 0.7rem; }
+        
+        .transition-guide { background: #1a1a2e; border: 1px solid var(--gold); padding: 15px; border-radius: 10px; font-size: 0.85rem; }
+        .base-loop { color: var(--gold); font-weight: bold; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header class="main-header">
-        <h1>Particle Master Vault v10.0</h1>
-        <p>Corrected NDO Transition & Full Oracle Suite</p>
+        <h1>Particle Master Vault v11.0</h1>
+        <p>Transition Logic & Poker Suite</p>
     </header>
 
     <div class="simulator-box">
@@ -70,32 +72,37 @@
     </div>
 
     <div class="tools-grid">
-        <div class="tool-panel">
-            <h2>Origin Control</h2>
-            <button class="btn btn-gold" onclick="setCorrectNDO()">Reset to NDO (H,C,D,S)</button>
-            <button class="btn" onclick="initStack()" style="margin-top:5px;">Reset to Particle</button>
+        <div class="tool-panel transition-guide">
+            <h2 style="margin-top:0;">Transition Coach</h2>
+            <p>1. <strong>Sort NDO</strong> into four suits, each following the loop:</p>
+            <div class="base-loop">Q-J-2-6-A-5-K-10-9-4-3-7-8</div>
+            <p>2. Perform <strong>2 Out-Faros</strong> to lock the stack.</p>
+            <button class="btn" onclick="setCorrectNDO()" style="width:100%;">Set Factory NDO</button>
+            <button class="btn btn-gold" onclick="initStack()" style="width:100%; margin-top:5px;">Jump to Final Stack</button>
         </div>
+
         <div class="tool-panel">
             <h2>Quantum Oracle</h2>
             <select id="locateVal"><option>A</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>J</option><option selected>Q</option><option>K</option></select>
             <select id="locateSuit"><option value="♣">♣</option><option value="♥">♥</option><option value="♠">♠</option><option value="♦">♦</option></select>
-            <button class="btn" onclick="locateCard()">Locate</button>
-            <div id="locationResult" style="color:var(--gold); font-weight:bold; margin-top:5px;">---</div>
+            <button class="btn" onclick="locateCard()">Find Position</button>
+            <div id="locationResult" style="color:var(--gold); font-weight:bold; margin-top:10px;">---</div>
         </div>
-        <div class="tool-panel">
+
+        <div class="tool-panel" style="text-align:center;">
             <h2>Clocking</h2>
-            <div id="missingCardDisplay" style="color:var(--mate-glow); font-weight:bold;">DECK COMPLETE</div>
-            <p style="font-size:0.7rem;">Click any card to "Steal" it.</p>
+            <div id="missingCardDisplay" style="color:var(--mate-glow); font-weight:bold; font-size:1.2rem; margin-bottom:10px;">DECK COMPLETE</div>
+            <p style="font-size:0.75rem;">Click any card in the view above to remove it from the sequence.</p>
         </div>
     </div>
 
     <div id="pokerArea" class="simulator-box" style="display:none; border-color:var(--gold);">
-        <h2>Poker Deal: Player 1 Victory</h2>
-        <div class="poker-grid" id="pokerTable"></div>
+        <h2>Poker Deal Result: Player 1</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px;" id="pokerTable"></div>
     </div>
 
     <div class="section-box">
-        <h2 style="color:var(--gold);">Dynamic Cheat Sheet</h2>
+        <h2 style="color:var(--gold);">Dynamic Reference Sheet</h2>
         <div style="overflow-x:auto;">
             <table>
                 <thead><tr><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th><th>#</th><th>Card</th></tr></thead>
@@ -129,20 +136,18 @@
     function setCorrectNDO() {
         currentDeck = [];
         const vals = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-        // Correct Bicycle Order: Hearts (A-K), Clubs (A-K), Diamonds (K-A), Spades (K-A)
         const suits = [
             {s: '♥', order: [...vals]},
             {s: '♣', order: [...vals]},
             {s: '♦', order: [...vals].reverse()},
             {s: '♠', order: [...vals].reverse()}
         ];
-
         suits.forEach(group => {
             group.order.forEach(v => {
                 currentDeck.push({ n: v, s: group.s, isRed: (group.s==='♥'||group.s==='♦'), id: v+group.s });
             });
         });
-        updateLog("NDO SET: Hearts A-K, Clubs A-K, Diamonds K-A, Spades K-A.");
+        updateLog("FACTORY NDO LOADED. Transition manually or via Faros.");
         render();
     }
 
@@ -187,7 +192,7 @@
         let targetId = document.getElementById('locateVal').value + document.getElementById('locateSuit').value;
         foundIdx = currentDeck.findIndex(c => c.id === targetId);
         if(foundIdx !== -1) {
-            document.getElementById('locationResult').innerText = `Position: ${foundIdx+1}`;
+            document.getElementById('locationResult').innerText = `At Position: ${foundIdx+1}`;
             render();
             document.getElementById('deckDisplay').children[foundIdx].scrollIntoView({ behavior: 'smooth', inline: 'center' });
         }
@@ -207,7 +212,7 @@
             div.innerHTML = `<strong>Player ${i+1}</strong><br>` + h.map(c => `<span class="${c.isRed?'red-txt':''}">${c.id}</span>`).join(' | ');
             table.appendChild(div);
         });
-        updateLog("POKER DEAL: Player 1 Victory.");
+        updateLog("DEALING POKER... PLAYER 1 WINS.");
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
@@ -224,7 +229,7 @@
                 if(currentDeck.length === 52) {
                     currentDeck.splice(i, 1);
                     document.getElementById('missingCardDisplay').innerText = `MISSING: ${c.id}`;
-                    updateLog(`STEAL: ${c.id}`);
+                    updateLog(`REMOVED: ${c.id}`);
                 } else {
                     currentDeck = [...currentDeck.slice(i+1), ...currentDeck.slice(0, i+1)];
                     updateLog("CUT.");
