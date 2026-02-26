@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Particle Vault v7.0 - Origin & Oracle</title>
+    <title>The Particle Stack - Final Master Suite</title>
     <style>
         :root {
             --primary: #7b2cbf; --dark: #0a0118; --card-bg: #10002b;
@@ -12,30 +12,38 @@
         }
 
         body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; padding-bottom: 100px; }
-        header { padding: 30px 20px; text-align: center; background: #10002b; border-bottom: 5px solid var(--gold); }
+        
+        /* HEADER PLACEMENT */
+        .main-header { padding: 40px 20px; text-align: center; background: #10002b; border-bottom: 5px solid var(--gold); margin-bottom: 30px; }
+        .main-header h1 { margin: 0; font-size: 2.5rem; color: var(--gold); text-transform: uppercase; letter-spacing: 4px; }
+        .main-header p { margin: 10px 0 0; font-style: italic; color: var(--text-light); }
+
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
         
-        .section-box { background: var(--card-bg); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid var(--accent); }
+        /* SIMULATOR BOX */
+        .simulator-box { background: var(--card-bg); padding: 30px; border-radius: 20px; border: 2px solid var(--primary); box-shadow: 0 0 30px rgba(123, 44, 191, 0.4); margin-bottom: 40px; }
+        
+        .section-box { background: rgba(255,255,255,0.03); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid var(--accent); }
         h2 { color: var(--gold); border-left: 5px solid var(--primary); padding-left: 15px; margin-bottom: 15px; text-transform: uppercase; font-size: 1.1rem; }
 
         /* DECK VISUALIZER */
-        .deck-view { display: flex; overflow-x: auto; gap: 8px; padding: 15px; background: rgba(0,0,0,0.5); border-radius: 12px; margin-bottom: 15px; min-height: 150px; align-items: center; }
+        .deck-view { display: flex; overflow-x: auto; gap: 8px; padding: 15px; background: rgba(0,0,0,0.5); border-radius: 12px; margin-bottom: 15px; min-height: 150px; align-items: center; border: 1px solid var(--accent); }
         .card-3d { width: 70px; height: 100px; position: relative; transform-style: preserve-3d; transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1); cursor: pointer; flex-shrink: 0; }
         .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: bold; border: 1px solid rgba(255,255,255,0.1); font-size: 1rem; }
         .card-front { background: white; color: black; transform: rotateY(180deg); }
-        .card-back { background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--gold); }
+        .card-back { background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--gold); border: 1px solid var(--gold); }
         .flipped { transform: rotateY(180deg); }
         .highlight { box-shadow: 0 0 25px var(--gold); border: 2px solid var(--gold); transform: translateY(-10px) rotateY(180deg) !important; }
 
         /* BUTTONS */
-        .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; justify-content: center; }
-        .btn { padding: 10px 15px; border-radius: 6px; border: 1px solid var(--gold); cursor: pointer; font-weight: bold; transition: 0.2s; background: var(--primary); color: white; font-size: 0.75rem; text-transform: uppercase; }
-        .btn:hover { background: var(--gold); color: var(--dark); }
+        .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; justify-content: center; }
+        .btn { padding: 12px 20px; border-radius: 6px; border: 1px solid var(--gold); cursor: pointer; font-weight: bold; transition: 0.2s; background: var(--primary); color: white; font-size: 0.8rem; text-transform: uppercase; }
+        .btn:hover { background: var(--gold); color: var(--dark); transform: scale(1.05); }
         .btn-gold { background: var(--gold); color: var(--dark); }
 
         /* TOOLS GRID */
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 20px; }
-        .tool-panel { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid var(--accent); }
+        .tool-panel { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid var(--accent); text-align: center; }
 
         /* TABLE */
         table { width: 100%; border-collapse: collapse; background: #050010; font-size: 0.75rem; }
@@ -43,46 +51,25 @@
         th { background: var(--primary); color: white; }
         .red-txt { color: var(--mate-glow); }
 
-        .log-box { background: #000; color: var(--gold); padding: 10px; border-radius: 8px; font-family: monospace; height: 80px; overflow-y: auto; border: 1px solid var(--accent); font-size: 0.7rem; }
+        .log-box { background: #000; color: var(--gold); padding: 10px; border-radius: 8px; font-family: monospace; height: 100px; overflow-y: auto; border: 1px solid var(--accent); font-size: 0.75rem; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>The Particle Grand Vault v7.0</h1>
-    <p>Complete Stack System, Locator, & Origin Transitions</p>
-</header>
-
 <div class="container">
+    
+    <header class="main-header">
+        <h1>The Particle Grand Vault v8.0</h1>
+        <p>Quantum Card Dynamics • Full Suite Integration</p>
+    </header>
 
-    <div class="tools-grid">
-        <div class="tool-panel">
-            <h2>1. Origin & Transition</h2>
-            <button class="btn btn-gold" onclick="setNDO()">Reset to NDO</button>
-            <p style="font-size:0.75rem; margin-top:10px;">New Deck Order (Factory Seal). Use the "Out-Faro" button below to see the transition.</p>
-            <div id="transitionTip" style="font-style:italic; color:var(--text-light); font-size:0.75rem;">Status: Sealed Deck</div>
-        </div>
-
-        <div class="tool-panel">
-            <h2>2. Quantum Oracle</h2>
-            <select id="locateVal"><option>A</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>J</option><option selected>Q</option><option>K</option></select>
-            <select id="locateSuit"><option value="♣">♣</option><option value="♥">♥</option><option value="♠">♠</option><option value="♦">♦</option></select>
-            <button class="btn" onclick="locateCard()">Find</button>
-            <span id="locationResult" style="margin-left:10px; color:var(--gold); font-weight:bold;">---</span>
-        </div>
-
-        <div class="tool-panel">
-            <h2>3. Clocking Engine</h2>
-            <div id="missingCardDisplay" style="color:var(--mate-glow); font-weight:bold; font-size:1.1rem;">DECK COMPLETE</div>
-            <button class="btn" onclick="initStack()" style="margin-top:5px; font-size:0.6rem;">Restore Particle Stack</button>
-        </div>
-    </div>
-
-    <div class="section-box">
+    <div class="simulator-box">
+        <h2>Virtual Stack Simulator</h2>
         <div class="controls">
-            <button class="btn" onclick="toggleFace()">Flip View</button>
-            <button class="btn" onclick="runOutFaro()">Out-Faro</button>
-            <button class="btn" onclick="runGilbreth()">Gilbreth</button>
+            <button class="btn btn-gold" onclick="toggleFace()">Flip View</button>
+            <button class="btn" onclick="runOutFaro()">Perfect Out-Faro</button>
+            <button class="btn" onclick="runInFaro()">Perfect In-Faro</button>
+            <button class="btn" onclick="runGilbreth()">Gilbreth Shuffle</button>
             <button class="btn" onclick="cutRandom()">Random Cut</button>
             <button class="btn" onclick="pokerSim()">4-Faro Poker Deal</button>
         </div>
@@ -90,9 +77,31 @@
         <div class="log-box" id="historyLog"></div>
     </div>
 
+    <div class="tools-grid">
+        <div class="tool-panel">
+            <h2>Origin & NDO</h2>
+            <button class="btn btn-gold" onclick="setNDO()">Reset to NDO</button>
+            <div id="transitionTip" style="font-style:italic; color:var(--text-light); font-size:0.75rem; margin-top:10px;">Status: Particle Stack Active</div>
+        </div>
+
+        <div class="tool-panel">
+            <h2>Quantum Oracle</h2>
+            <select id="locateVal"><option>A</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>J</option><option selected>Q</option><option>K</option></select>
+            <select id="locateSuit"><option value="♣">♣</option><option value="♥">♥</option><option value="♠">♠</option><option value="♦">♦</option></select>
+            <button class="btn" onclick="locateCard()">Locate</button>
+            <div id="locationResult" style="margin-top:5px; color:var(--gold); font-weight:bold;">---</div>
+        </div>
+
+        <div class="tool-panel">
+            <h2>Clocking Engine</h2>
+            <div id="missingCardDisplay" style="color:var(--mate-glow); font-weight:bold; margin-bottom:5px;">DECK COMPLETE</div>
+            <button class="btn" onclick="initStack()" style="font-size:0.6rem;">Restore Particle Stack</button>
+        </div>
+    </div>
+
     <div id="pokerArea" class="section-box" style="display:none; background: #000;">
-        <h2>Poker Deal Result</h2>
-        <div id="pokerTable" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; font-size:0.8rem;"></div>
+        <h2>Poker Deal Result (Mechanic Wins)</h2>
+        <div id="pokerTable" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px; font-size:0.8rem;"></div>
     </div>
 
     <div class="section-box">
@@ -138,8 +147,8 @@
                 currentDeck.push({ n: v, s: s, isRed: (s==='♦'||s==='♥'), id: v+s });
             });
         });
-        document.getElementById('transitionTip').innerText = "Status: NDO (Ready for 2-Faro Transition)";
-        updateLog("NEW DECK ORDER SET (Factory Order).");
+        document.getElementById('transitionTip').innerText = "Status: NDO (Factory Order)";
+        updateLog("NEW DECK ORDER SET.");
         render();
     }
 
@@ -150,7 +159,16 @@
         let p1 = currentDeck.slice(0, 26), p2 = currentDeck.slice(26), res = [];
         for(let i=0; i<26; i++) { res.push(p1[i]); res.push(p2[i]); }
         currentDeck = res;
-        updateLog("OUT-FARO applied.");
+        updateLog("PERFECT OUT-FARO applied.");
+        render();
+    }
+
+    function runInFaro() {
+        if(currentDeck.length < 52) return updateLog("ERROR: Deck incomplete.");
+        let p1 = currentDeck.slice(0, 26), p2 = currentDeck.slice(26), res = [];
+        for(let i=0; i<26; i++) { res.push(p2[i]); res.push(p1[i]); }
+        currentDeck = res;
+        updateLog("PERFECT IN-FARO applied.");
         render();
     }
 
@@ -161,7 +179,7 @@
             else if (p2.length) res.push(p2.pop());
             else if (p1.length) res.push(p1.pop());
         }
-        currentDeck = res; updateLog("GILBRETH SHUFFLE.");
+        currentDeck = res; updateLog("GILBRETH SHUFFLE APPLIED.");
         render();
     }
 
@@ -169,7 +187,7 @@
         let targetId = document.getElementById('locateVal').value + document.getElementById('locateSuit').value;
         foundIdx = currentDeck.findIndex(c => c.id === targetId);
         if(foundIdx !== -1) {
-            document.getElementById('locationResult').innerText = `Pos: ${foundIdx+1}`;
+            document.getElementById('locationResult').innerText = `At Position: ${foundIdx+1}`;
             render();
             document.getElementById('deckDisplay').children[foundIdx].scrollIntoView({ behavior: 'smooth', inline: 'center' });
         }
@@ -185,11 +203,13 @@
         for(let i=0; i<20; i++) hands[i%4].push(currentDeck[i]);
         hands.forEach((h, i) => {
             let div = document.createElement('div');
-            div.style.padding = '10px'; div.style.border = '1px solid #333';
-            div.innerHTML = `<strong>P${i+1}</strong><br>` + h.map(c => `<span class="${c.isRed?'red-txt':''}">${c.id}</span>`).join(' ');
+            div.style.padding = '10px'; div.style.border = '1px solid #7b2cbf'; div.style.borderRadius = '8px';
+            div.innerHTML = `<strong>Player ${i+1}</strong><br>` + h.map(c => `<span class="${c.isRed?'red-txt':''}">${c.id}</span>`).join(' | ');
+            if(i===3) div.style.borderColor = 'var(--gold)';
             table.appendChild(div);
         });
-        updateLog("POKER DEAL COMPLETE (4 Faros from Stack).");
+        updateLog("POKER DEAL: 4 Faros executed.");
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
     function render() {
@@ -205,10 +225,10 @@
                 if(currentDeck.length === 52) {
                     currentDeck.splice(i, 1);
                     document.getElementById('missingCardDisplay').innerText = `MISSING: ${c.id}`;
-                    updateLog(`STEAL: Removed ${c.id}`);
+                    updateLog(`REMOVED ${c.id}`);
                 } else {
                     currentDeck = [...currentDeck.slice(i+1), ...currentDeck.slice(0, i+1)];
-                    updateLog("CUT.");
+                    updateLog("CUT Applied.");
                 }
                 render();
             };
