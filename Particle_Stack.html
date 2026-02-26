@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Particle Stack Lab v2.0</title>
+    <style>
+        :root {
+            --primary: #240046; --dark: #0a0118; --card-bg: #10002b;
+            --text-light: #e0aaff; --gold: #7b2cbf; --accent: #3c096c;
+            --cyan: #00f5d4; --mate-highlight: #ff0054;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; padding-bottom: 50px; }
+        header { padding: 30px 20px; text-align: center; background: #10002b; border-bottom: 4px solid var(--gold); }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        h2.section-title { border-left: 5px solid var(--cyan); padding-left: 15px; margin-top: 40px; color: var(--cyan); text-transform: uppercase; letter-spacing: 2px; }
+        .section-box { background: var(--card-bg); padding: 25px; border-radius: 12px; margin-bottom: 25px; border: 1px solid var(--accent); box-shadow: 0 0 20px rgba(123, 44, 191, 0.3); }
+
+        .blueprint { border: 1px dashed var(--cyan); padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.9rem; }
+
+        .sim-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 900px) { .sim-grid { grid-template-columns: 1fr 300px; } }
+
+        .deck-scroll-wrapper { width: 100%; overflow-x: auto; padding: 20px 0; background: rgba(0,0,0,0.4); border-radius: 10px; border: 1px solid var(--accent); }
+        .deck-view { display: flex; gap: 12px; padding: 20px; width: max-content; min-height: 120px; }
+        
+        .card-3d { width: 65px; height: 95px; position: relative; transform-style: preserve-3d; transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; flex-shrink: 0; }
+        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-weight: bold; border: 1px solid rgba(255,255,255,0.2); font-size: 1rem; }
+        .card-front { background: white; color: black; transform: rotateY(180deg); }
+        .card-back { background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--cyan); border: 1px solid var(--gold); }
+        .card-3d.flipped { transform: rotateY(180deg); }
+        
+        .card-3d.is-mate .card-back { border: 3px solid var(--mate-highlight); box-shadow: 0 0 15px var(--mate-highlight); }
+
+        .history-box { background: #050010; color: var(--cyan); padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; height: 380px; overflow-y: auto; border: 1px solid var(--accent); font-size: 0.8rem; }
+
+        .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .btn { padding: 12px 20px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; transition: 0.3s; }
+        .btn-main { background: var(--gold); color: white; }
+        .btn-cyan { background: var(--cyan); color: var(--dark); }
+        .btn-mate { background: var(--mate-highlight); color: white; }
+
+        .table-wrapper { overflow-x: auto; width: 100%; }
+        table { width: 100%; border-collapse: collapse; background: #050010; min-width: 600px; }
+        th, td { border: 1px solid var(--accent); padding: 12px; text-align: center; font-size: 0.85rem; }
+        th { background: var(--primary); color: var(--cyan); }
+        .red-text { color: #ff0054 !important; }
+        .training-hidden { color: transparent !important; background: #1a0033 !important; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>THE PARTICLE STACK LAB v2.0</h1>
+    <p>Advanced Mathematical Card Dynamics</p>
+</header>
+
+<div class="container">
+
+    <div class="section-box">
+        <div class="controls">
+            <button class="btn btn-cyan" id="peekBtn" onclick="toggleTraining()">Reveal Identities</button>
+            <button class="btn btn-main" onclick="resetStack()">Reset Stack</button>
+            <button class="btn btn-mate" onclick="performFaro(false)">Perfect Out-Faro</button>
+            <button class="btn btn-mate" onclick="performFaro(true)">Perfect In-Faro</button>
+        </div>
+
+        <div class="sim-grid">
+            <div class="deck-scroll-wrapper">
+                <div id="deckDisplay" class="deck-view"></div>
+            </div>
+            <div class="history-box" id="historyLog">
+                <div>[SYSTEM] Particle Lab Ready.</div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Reference & Mate Map</h2>
+    <div class="section-box">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>Pos</th><th>Card</th><th>Pos</th><th>Card</th><th>Pos</th><th>Card</th><th>Pos</th><th>Card</th></tr>
+                </thead>
+                <tbody id="sheetBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    const baseSequence = ["Q", "J", "2", "6", "A", "5", "K", "10", "9", "4", "3", "7", "8"];
+    const suits = ["C", "H", "S", "D"];
+    let particleDataArr = [];
+    suits.forEach(s => baseSequence.forEach(v => particleDataArr.push(v + s)));
+
+    let currentDeck = [];
+    let isPeekMode = false;
+    let mateIndex = -1;
+
+    function parse(str) {
+        let suit = str.slice(-1);
+        let val = str.slice(0, -1);
+        let suitSym = {'C':'♣','H':'♥','D':'♦','S':'♠'}[suit] || suit;
+        let isRed = (suit === 'H' || suit === 'D');
+        return { name: val + suitSym, isRed: isRed };
+    }
+
+    function addLog(msg) {
+        const log = document.getElementById('historyLog');
+        const entry = document.createElement('div');
+        entry.style.borderBottom = "1px solid #1a0033";
+        entry.style.padding = "4px 0";
+        entry.innerHTML = `> ${msg}`;
+        log.prepend(entry);
+    }
+
+    function resetStack() {
+        currentDeck = particleDataArr.map(parse);
+        addLog("SYSTEM: Deck reset to Particle Sequence.");
+        mateIndex = -1;
+        render();
+    }
+
+    function toggleTraining() {
+        isPeekMode = !isPeekMode;
+        document.getElementById('peekBtn').innerText = isPeekMode ? "Hide Identities" : "Reveal Identities";
+        render();
+    }
+
+    function highlightMate(index) {
+        // In the Particle Stack, the mate is 26 cards away (52 / 2)
+        mateIndex = (index + 26) % 52;
+        addLog(`MATE FINDER: Card #${index+1} matches Card #${mateIndex+1}`);
+        render();
+    }
+
+    function performFaro(isInFaro) {
+        let topHalf = currentDeck.slice(0, 26);
+        let bottomHalf = currentDeck.slice(26);
+        let newDeck = [];
+
+        for (let i = 0; i < 26; i++) {
+            if (isInFaro) {
+                newDeck.push(bottomHalf[i]);
+                newDeck.push(topHalf[i]);
+            } else {
+                newDeck.push(topHalf[i]);
+                newDeck.push(bottomHalf[i]);
+            }
+        }
+        currentDeck = newDeck;
+        addLog(`SHUFFLE: Executed Perfect ${isInFaro ? 'In' : 'Out'}-Faro.`);
+        render();
+    }
+
+    function render() {
+        const display = document.getElementById('deckDisplay');
+        const body = document.getElementById('sheetBody');
+        display.innerHTML = ''; body.innerHTML = '';
+
+        currentDeck.forEach((card, i) => {
+            let container = document.createElement('div');
+            container.className = `card-3d ${!isPeekMode ? 'flipped' : ''} ${i === mateIndex ? 'is-mate' : ''}`;
+            container.onclick = () => {
+                if(!isPeekMode) {
+                    highlightMate(i);
+                }
+            };
+            container.innerHTML = `
+                <div class="card-face card-back">${i+1}</div>
+                <div class="card-face card-front" style="color: ${card.isRed?'red':'black'}">${card.name}</div>
+            `;
+            display.appendChild(container);
+        });
+
+        for(let r=0; r<13; r++) {
+            let row = document.createElement('tr');
+            [0, 13, 26, 39].forEach(offset => {
+                let idx = r + offset;
+                let card = currentDeck[idx];
+                row.innerHTML += `<td>${idx+1}</td><td class="${card.isRed?'red-text':''} ${isPeekMode?'':'training-hidden'}">${card.name}</td>`;
+            });
+            body.appendChild(row);
+        }
+    }
+
+    window.onload = resetStack;
+</script>
+</body>
+</html>
