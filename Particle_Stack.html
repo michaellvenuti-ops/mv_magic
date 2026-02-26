@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Particle Stack - Ultimate Master Vault</title>
+    <title>The Particle Stack - Ultimate Master Vault v10.0</title>
     <style>
         :root {
             --primary: #7b2cbf; --dark: #0a0118; --card-bg: #10002b;
@@ -14,11 +14,9 @@
         body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; padding-bottom: 100px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
         
-        /* HEADER */
         .main-header { padding: 30px 20px; text-align: center; background: #10002b; border-bottom: 5px solid var(--gold); margin-bottom: 20px; }
         .main-header h1 { margin: 0; font-size: 2.2rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; }
 
-        /* SIMULATOR */
         .simulator-box { background: var(--card-bg); padding: 25px; border-radius: 20px; border: 2px solid var(--primary); margin-bottom: 30px; box-shadow: 0 0 20px rgba(123, 44, 191, 0.3); }
         .deck-view { display: flex; overflow-x: auto; gap: 8px; padding: 15px; background: rgba(0,0,0,0.5); border-radius: 12px; margin-bottom: 15px; min-height: 140px; align-items: center; border: 1px solid var(--accent); }
         
@@ -29,17 +27,14 @@
         .flipped { transform: rotateY(180deg); }
         .highlight { box-shadow: 0 0 25px var(--gold); border: 2px solid var(--gold); transform: translateY(-10px) rotateY(180deg) !important; }
 
-        /* BUTTONS */
         .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; justify-content: center; }
         .btn { padding: 10px 16px; border-radius: 6px; border: 1px solid var(--gold); cursor: pointer; font-weight: bold; transition: 0.2s; background: var(--primary); color: white; font-size: 0.75rem; text-transform: uppercase; }
         .btn:hover { background: var(--gold); color: var(--dark); }
         .btn-gold { background: var(--gold); color: var(--dark); }
 
-        /* TOOLS GRID */
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 25px; }
         .tool-panel { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; border: 1px solid var(--accent); text-align: center; }
 
-        /* POKER & TABLES */
         .poker-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
         .poker-hand { padding: 12px; border-radius: 10px; border: 1px solid #333; background: #050010; }
         .winner-p1 { border: 2px solid var(--gold); box-shadow: 0 0 15px var(--gold); }
@@ -56,8 +51,8 @@
 
 <div class="container">
     <header class="main-header">
-        <h1>Particle Grand Vault v9.0</h1>
-        <p>The Unified Joshua Jay Stack System</p>
+        <h1>Particle Master Vault v10.0</h1>
+        <p>Corrected NDO Transition & Full Oracle Suite</p>
     </header>
 
     <div class="simulator-box">
@@ -77,7 +72,7 @@
     <div class="tools-grid">
         <div class="tool-panel">
             <h2>Origin Control</h2>
-            <button class="btn" onclick="setNDO()">Reset to NDO</button>
+            <button class="btn btn-gold" onclick="setCorrectNDO()">Reset to NDO (H,C,D,S)</button>
             <button class="btn" onclick="initStack()" style="margin-top:5px;">Reset to Particle</button>
         </div>
         <div class="tool-panel">
@@ -131,17 +126,23 @@
         render();
     }
 
-    function setNDO() {
+    function setCorrectNDO() {
         currentDeck = [];
-        const suits = ['♠','♦','♣','♥'];
-        const values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-        suits.forEach(s => {
-            let sortedVals = (s === '♠' || s === '♣') ? [...values] : [...values].reverse();
-            sortedVals.forEach(v => {
-                currentDeck.push({ n: v, s: s, isRed: (s==='♦'||s==='♥'), id: v+s });
+        const vals = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+        // Correct Bicycle Order: Hearts (A-K), Clubs (A-K), Diamonds (K-A), Spades (K-A)
+        const suits = [
+            {s: '♥', order: [...vals]},
+            {s: '♣', order: [...vals]},
+            {s: '♦', order: [...vals].reverse()},
+            {s: '♠', order: [...vals].reverse()}
+        ];
+
+        suits.forEach(group => {
+            group.order.forEach(v => {
+                currentDeck.push({ n: v, s: group.s, isRed: (group.s==='♥'||group.s==='♦'), id: v+group.s });
             });
         });
-        updateLog("NEW DECK ORDER SET.");
+        updateLog("NDO SET: Hearts A-K, Clubs A-K, Diamonds K-A, Spades K-A.");
         render();
     }
 
@@ -206,7 +207,7 @@
             div.innerHTML = `<strong>Player ${i+1}</strong><br>` + h.map(c => `<span class="${c.isRed?'red-txt':''}">${c.id}</span>`).join(' | ');
             table.appendChild(div);
         });
-        updateLog("POKER DEAL: Player 1 Wins.");
+        updateLog("POKER DEAL: Player 1 Victory.");
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 
