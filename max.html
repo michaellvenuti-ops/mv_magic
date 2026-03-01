@@ -29,3 +29,230 @@ Number + Suit prediction
 4 aces popped out
 
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX OUT DEALS - Performance Hub</title>
+    <style>
+        :root {
+            --primary: #d90429; --dark: #0b090a; --card-bg: #161a1d;
+            --text-light: #f1faee; --gold: #ffb703; --accent: #00f5d4;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--text-light); margin: 0; padding-bottom: 80px; }
+        header { padding: 50px 20px; text-align: center; background: linear-gradient(to bottom, #000, #161a1d); border-bottom: 5px solid var(--primary); }
+        h1 { font-size: 3.5rem; letter-spacing: 5px; margin: 0; color: var(--text-light); text-shadow: 2px 2px var(--primary); }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h2.section-title { border-left: 8px solid var(--primary); padding-left: 15px; margin-top: 60px; color: var(--text-light); text-transform: uppercase; letter-spacing: 2px; }
+        
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 25px; margin-top: 20px; }
+        .video-card { background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
+        .video-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 20px rgba(217, 4, 41, 0.2); }
+        
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        
+        .card-info { padding: 15px; }
+        .card-info h3 { margin: 0 0 10px 0; color: var(--gold); font-size: 1.1rem; }
+        .card-info p { font-size: 0.85rem; color: #adb5bd; margin: 0; }
+
+        .deck-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .info-panel { background: #000; padding: 20px; border-radius: 10px; border-top: 3px solid var(--accent); }
+        .info-panel h3 { color: var(--accent); margin-top: 0; }
+        
+        .manual-entry { background: #333; color: var(--gold); padding: 10px; text-align: center; font-size: 0.8rem; border: 1px dashed var(--gold); border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MAX OUT DEALS</h1>
+    <p>The David Blaine Collection & Advanced Mathemagic</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">David Blaine: The Essentials</h2>
+    <div class="video-grid">
+        
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/S2C1vXqC0Yk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>1. Hand Sandwich</h3>
+                <p>A card changes inside the spectator's own hands. High impact street magic.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Xq-E_8XqUfE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>2. 10 Cards to 13 Cards</h3>
+                <p>The classic "Cards Across" performed on The Tonight Show.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/7S8fC6mS-v0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>3. Two Card Monte</h3>
+                <p>Blaine's signature fast-paced transformation.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Y0n56BfC8I0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>4. Ambitious Card (Card to Top)</h3>
+                <p>The card that simply refuses to stay in the middle.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/5F2v_7l_C0E" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>5. Shapeshifter Change</h3>
+                <p>A visual flourish where a card pops and transforms in mid-air.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <div class="manual-entry">[INSERT "SENSE THE SUIT" VIDEO HERE]</div>
+            </div>
+            <div class="card-info">
+                <h3>6. Sense the Suit</h3>
+                <p>Pure mentalism: Feeling the ink to identify the suit.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/xR2k0u3-v_Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>7. Serial Number Reveal</h3>
+                <p>Divining the numbers on a borrowed dollar bill.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <div class="manual-entry">[INSERT "THE RAVEN" PERFORMANCE HERE]</div>
+            </div>
+            <div class="card-info">
+                <h3>8. The Raven</h3>
+                <p>The ultimate visual vanish of a coin on a spectator's hand.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/U3vK_PkaK6w" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>9. Classic Coin Vanish</h3>
+                <p>Mastery of retention of vision and sleight of hand.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <div class="manual-entry">[INSERT "3 CARD MONTE" (Ace/King/Jack) HERE]</div>
+            </div>
+            <div class="card-info">
+                <h3>10. Three Card Monte</h3>
+                <p>The street hustler's classic using the Ace, King of Spades, and Jack of Hearts.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">The Trick Decks</h2>
+    <div class="deck-box">
+        <div class="info-panel">
+            <h3>1. Invisible Deck</h3>
+            <p>The spectator names <strong>any</strong> card. You pull out a deck that has been "invisible" until now. Every card is face down except for one: the spectator's named card.</p>
+        </div>
+        <div class="info-panel" style="border-top-color: var(--gold);">
+            <h3>2. Svengali Deck</h3>
+            <p>Allows for the "Ambitious Card" effect on steroids. Every card in the deck appears to turn into the spectator's chosen card instantly.</p>
+        </div>
+        <div class="info-panel" style="border-top-color: var(--primary);">
+            <h3>3. Mirage Deck</h3>
+            <p>Similar to the Svengali, but allows the deck to be fanned and handled much more freely, appearing as a standard deck of cards.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Mathemagic: Self-Working Miracles</h2>
+    <div class="video-grid">
+        
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/u9w9XnU62Fk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>1. Twins</h3>
+                <p>Brother John Hamman's classic: Finding the perfect matches.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MhHkH-rWq_0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>2. Truth Spelling Trick</h3>
+                <p>The deck literally "spells" its way to the truth.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <div class="manual-entry">[INSERT "4 KINGS" VIDEO HERE]</div>
+            </div>
+            <div class="card-info">
+                <h3>3. 4 Kings</h3>
+                <p>A mathematical assembly of the four monarchs.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <div class="manual-entry">[INSERT "NUMBER + SUIT PREDICTION" HERE]</div>
+            </div>
+            <div class="card-info">
+                <h3>4. Number + Suit Prediction</h3>
+                <p>Combining math and card values to predict the future.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/H0Lz98f_e80" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-info">
+                <h3>5. 4 Aces Popped Out</h3>
+                <p>A self-working production that looks like high-level sleight of hand.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
