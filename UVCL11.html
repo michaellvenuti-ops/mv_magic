@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.7 - Specific NDO</title>
+    <title>Virtual Card Lab v6.8 - Color Swapped NDO</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -42,19 +42,6 @@
 </head>
 <body>
 
-<div id="help-modal">
-    <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.6</h2>
-        <ul>
-            <li><strong>Indexing:</strong> Pos 1 is top-left. Pos 52 is bottom-right.</li>
-            <li><strong>Faro OUT:</strong> Keeps Pos 1 and 52 in place.</li>
-            <li><strong>Faro IN:</strong> Moves card 1 into the second slot.</li>
-            <li><strong>Manual Swap:</strong> Click a card, then click another to exchange them.</li>
-        </ul>
-        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
-    </div>
-</div>
-
 <div id="sidebar">
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
@@ -92,7 +79,7 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.6</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.8</span></h1>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
@@ -100,7 +87,7 @@
         <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed 1/52)</button>
         <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Shift 1)</button>
         <button onclick="randomShuffle()">Shuffle</button>
-        <button class="reset-btn" onclick="resetTo('NDO')">NDO (Legacy Flow)</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO (H/C Top)</button>
         <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
         <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
         <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
@@ -176,7 +163,7 @@
     function texasHoldemCheck() {
         let p6Hole = [deck[11], deck[5]];
         if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        logMove(`Holdem P dealer: ${p6Hole.join(' ')}`);
+        logMove(`Holdem P6: ${p6Hole.join(' ')}`);
     }
 
     function pokerCheck() {
@@ -186,7 +173,7 @@
             let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
             p6.push(deck[idx]);
         }
-        logMove(`Draw P dealer: ${p6.join(' ')}`);
+        logMove(`Draw P6: ${p6.join(' ')}`);
     }
 
     function updateKeyCards() {
@@ -198,8 +185,9 @@
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
-            ['S','D'].forEach(s => values.forEach(v => deck.push(v+s)));
-            ['C','H'].forEach(s => [...values].reverse().forEach(v => deck.push(v+s)));
+            // Updated NDO: Hearts/Clubs (Top), Diamonds/Spades (Bottom)
+            ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
             deck = temp;
         } else if(type === 'STEBBINS') {
             let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
