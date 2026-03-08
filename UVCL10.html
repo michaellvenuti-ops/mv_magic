@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v5.7 - Logic Fixed</title>
+    <style>
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            --coach-purple: #9d4edd; --compare-blue: #0077b6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 100px; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        .history-entry { border-bottom: 1px solid #222; padding: 4px 0; }
+
+        #lab-main { flex-grow: 1; padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .help-btn { background: var(--gold); color: black; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+        
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 10px; margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+        
+        .card { 
+            background: white; color: black; border-radius: 6px; padding: 15px 5px; text-align: center; 
+            font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; user-select: none; 
+            box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
+        }
+        .card.red { color: #d90429; }
+        .card.selected { outline: 4px solid var(--gold); transform: translateY(-5px); z-index: 10; }
+        .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+        button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 10px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
+        button:hover { background: var(--accent); }
+        .reset-btn { border-color: var(--gold); color: var(--gold); }
+        .purple-btn { background: var(--coach-purple); border: none; margin-bottom: 5px; }
+        
+        #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: var(--panel); padding: 40px; border-radius: 15px; max-width: 600px; border: 2px solid var(--gold); line-height: 1.6; }
+
+        .coach-panel { background: #222; padding: 15px; border-radius: 8px; font-size: 0.75rem; margin-top: 10px; border: 1px solid var(--coach-purple); display: none; }
+        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; text-align: center; }
+        .compare-val { font-size: 1.1rem; color: var(--gold); font-weight: bold; padding: 5px; background: #333; border-radius: 4px; }
+        .cycle-box { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 10px; align-items: center; }
+        .cycle-step { background: #444; padding: 2px 5px; border-radius: 3px; color: var(--gold); font-weight: bold; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+
+<div id="help-modal">
+    <div class="modal-content">
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual</h2>
+        <ul>
+            <li><strong>Layout:</strong> Cards are displayed from Pos 52 (Top Left) to Pos 1 (Bottom Right).</li>
+            <li><strong>Faro OUT:</strong> The top and bottom cards stay in their original positions.</li>
+            <li><strong>Faro IN:</strong> The top card moves to the second position (Pos 51).</li>
+            <li><strong>Stack Coach:</strong> Select a card to see its exact movement and 8-shuffle path.</li>
+            <li><strong>Poker Test:</strong> Simulates a 6-player deal. Use <em>Bottom Deal</em> to force the bottom card to player 6.</li>
+        </ul>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
+    <div id="history" class="history-log"></div>
+    
+    <button class="purple-btn" onclick="toggleCoach()">🎓 Toggle Stack Coach</button>
+    <button class="purple-btn" style="background:var(--compare-blue)" onclick="pokerCheck()">🃏 6-Player Poker Test</button>
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; padding: 8px 0; color:var(--gold); font-weight:bold; font-size:0.75rem;">
+        <span>BOTTOM DEAL ENABLED</span>
+        <input type="checkbox" id="bottom-deal-toggle">
+    </div>
+
+    <div id="coach-info" class="coach-panel">
+        <div style="font-size: 0.85rem; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 10px;">
+            Card: <strong id="card-name" style="color:var(--gold)">--</strong> | Pos: <strong id="card-pos">--</strong>
+        </div>
+        <strong>Shuffle Comparison:</strong>
+        <div class="compare-grid">
+            <div><small>OUT-FARO</small><div id="out-dest" class="compare-val">--</div></div>
+            <div><small>IN-FARO</small><div id="in-dest" class="compare-val">--</div></div>
+        </div>
+        <div style="margin-top:15px; font-weight: bold;">8-Shuffle Out-Cycle:</div>
+        <div id="cycle-display" class="cycle-box"></div>
+    </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px;">
+        <button onclick="saveStack()" style="flex:1">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1">📂 Load</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <div class="header-bar">
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v5.7</span></h1>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
+    </div>
+    
+    <div id="deck" class="deck-display"></div>
+    
+    <div class="controls">
+        <button onclick="faroShuffle(true)">Faro OUT (Fixed Ends)</button>
+        <button onclick="faroShuffle(false)">Faro IN (Top Shifts)</button>
+        <button onclick="randomShuffle()">Shuffle</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO</button>
+        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
+    </div>
+</div>
+
+<script>
+    const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const sKeys = ['C','H','S','D'];
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = new Array(52);
+    let selectedIndex = null;
+    let coachActive = false;
+
+    const MNEMONICA_RAW = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+    const CHASED_VALS = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        for (let i = 51; i >= 0; i--) {
+            let card = deck[i];
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if(selectedIndex === i) div.classList.add('selected');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
+            div.onclick = () => selectCard(i);
+            container.appendChild(div);
+        }
+    }
+
+    function selectCard(i) {
+        if(coachActive) { analyzeCard(i); return; }
+        if(selectedIndex === null) { selectedIndex = i; } 
+        else {
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`Swap: ${deck[i]} <-> ${deck[selectedIndex]}`);
+            selectedIndex = null;
+        }
+        renderDeck();
+    }
+
+    function toggleCoach() {
+        coachActive = !coachActive;
+        document.getElementById('coach-info').style.display = coachActive ? 'block' : 'none';
+        logMove(coachActive ? "COACH: Active" : "COACH: Off");
+        renderDeck();
+    }
+
+    function analyzeCard(idx) {
+        const curPos = idx + 1;
+        document.getElementById('card-name').innerText = deck[idx];
+        document.getElementById('card-pos').innerText = curPos;
+        
+        let outD = curPos <= 26 ? (curPos * 2) - 1 : (curPos - 26) * 2;
+        let inD = curPos <= 26 ? (curPos * 2) : ((curPos - 26) * 2) - 1;
+        
+        document.getElementById('out-dest').innerText = outD;
+        document.getElementById('in-dest').innerText = inD;
+
+        let cycle = [];
+        let tempPos = curPos;
+        for(let s = 0; s < 9; s++) {
+            cycle.push(tempPos);
+            tempPos = tempPos <= 26 ? (tempPos * 2) - 1 : (tempPos - 26) * 2;
+        }
+        document.getElementById('cycle-display').innerHTML = cycle.map(p => `<div class="cycle-step">${p}</div>`).join('→');
+        selectedIndex = idx;
+        renderDeck();
+    }
+
+    function faroShuffle(isOut) {
+        let bot = deck.slice(0, 26);
+        let top = deck.slice(26, 52); 
+        let res = [];
+        for(let i = 0; i < 26; i++) {
+            if(isOut) { 
+                res.push(top[i]); 
+                res.push(bot[i]); 
+            } else { 
+                res.push(bot[i]); 
+                res.push(top[i]); 
+            }
+        }
+        deck = res;
+        logMove(isOut ? "Faro OUT (Fixed Ends)" : "Faro IN (Top Shifts)");
+        renderDeck();
+        if(coachActive && selectedIndex !== null) analyzeCard(selectedIndex);
+    }
+
+    function pokerCheck() {
+        let p6 = [];
+        const isBottom = document.getElementById('bottom-deal-toggle').checked;
+        for(let r = 0; r < 5; r++) {
+            if(r === 4 && isBottom) { p6.push(deck[0]); logMove("!! BOTTOM DEAL !!"); }
+            else { p6.push(deck[51 - (5 + (r * 6))]); }
+        }
+        logMove(`P6 Hand: ${p6.join(' ')}`);
+    }
+
+    function resetTo(type) {
+        let temp = [];
+        if(type === 'NDO') {
+            ['S','D'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
+            deck = temp;
+        } else if(type === 'STEBBINS') {
+            let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
+            deck = temp.reverse();
+        } else if(type === 'MNEMONICA') {
+            deck = [...MNEMONICA_RAW].reverse();
+        } else if(type === 'MY_ORDER') {
+            CHASED_VALS.forEach(v => sKeys.forEach(s => temp.push(v + s)));
+            deck = temp.reverse();
+        }
+        logMove(`RESET: ${type}`);
+        renderDeck();
+    }
+
+    function randomShuffle() {
+        for (let i = 51; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        logMove("Shuffle");
+        renderDeck();
+    }
+
+    function logMove(m) {
+        const h = document.getElementById('history');
+        const e = document.createElement('div');
+        e.className = 'history-entry';
+        e.innerText = `> ${m}`;
+        h.prepend(e);
+    }
+
+    function saveStack() { localStorage.setItem('userStack', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('userStack'); if(s){ deck = JSON.parse(s); renderDeck(); logMove("Loaded."); } }
+
+    window.onload = () => resetTo('NDO');
+</script>
+</body>
+</html>
