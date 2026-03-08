@@ -1,3 +1,37 @@
+!--
+This is a sophisticated request. I have added the Stack Verification Tool to the sidebar, which compares your current deck against 
+any of the standard stacks and highlights exactly which cards are "mis-indexed."
+
+For your poker stacking question, this is a classic "Card Shark" calculation. To get the Aces to the 6th, 12th, 18th, and 24th positions
+(dealing to the 6th player in a 6-handed game) using Faros, we have to look at the displacement math.
+
+The Poker Stack Logic
+If you start with the four Aces at the bottom of the deck (positions 49, 50, 51, 52):
+
+Perform 1 Out-Faro: The Aces move to positions 45, 47, 49, 51.
+
+Perform 2nd Out-Faro: The Aces move to positions 37, 41, 45, 49.
+
+Perform 3rd Out-Faro: The Aces move to positions 21, 29, 37, 45.
+
+To get them exactly to 6, 12, 18, 24, the most efficient way is a combination of a "Milk Build" or Cull and a Faro.
+
+The Secret Setup: Place the four Aces at positions 1, 2, 3, and 4 (top of the deck).
+
+Perform 1 In-Faro: They move to 2, 4, 6, 8.
+
+Perform 2nd In-Faro: They move to 4, 8, 12, 16.
+
+For a 6-player game: You actually want them at 6, 12, 18, 24. The Lab now includes a "Poker Dealer" simulation in the logs to help you test this!
+
+How to use the Poker Stacking Lab:
+Manual Setup: Go to a New Deck Order. Find the Aces and Swap them into the top positions (Index 1, 2, 3, 4).
+
+Practice Shuffling: Use the Faro IN or Faro OUT buttons.
+
+Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you what the "6th guy" would be holding. This lets you see exactly how the Aces drift through the deck with each shuffle!
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
