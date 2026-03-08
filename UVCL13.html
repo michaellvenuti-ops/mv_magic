@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v7.9 - Restoration Build</title>
+    <title>Virtual Card Lab v7.9 - Full Build</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -157,15 +157,12 @@
         for (let p = 1; p <= players; p++) {
             const box = document.createElement('div');
             box.className = 'player-box';
-            
             const name = document.createElement('div');
             name.className = 'player-name';
             name.innerText = (p === players) ? `Dealer` : `Player ${p}`;
             box.appendChild(name);
-
             const handRow = document.createElement('div');
             handRow.className = 'hand-row';
-
             for (let c = 0; c < cardsPerHand; c++) {
                 let idx = (p - 1) + (c * players);
                 if (document.getElementById('bottom-deal-toggle').checked && p === players && c === cardsPerHand - 1) {
