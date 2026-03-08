@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.9 - Color Density</title>
+    <title>Virtual Card Lab v7.1 - Presets</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -25,23 +25,26 @@
         .card { 
             background: white; color: black; border-radius: 6px; padding: 15px 5px; text-align: center; 
             font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; user-select: none; 
-            box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
+            box-shadow: var(--card-shadow); border: 2px solid #ccc; position: relative;
         }
         .card.red { color: #d90429; }
         .card.selected { outline: 4px solid var(--gold); transform: translateY(-5px); z-index: 10; box-shadow: 0 0 20px var(--gold); }
-        .card.is-key { border: 3px solid var(--gold); box-shadow: 0 0 15px var(--gold); }
+        .card.is-tracked { border: 3px solid var(--gold) !important; box-shadow: 0 0 15px var(--gold); transform: scale(1.05); z-index: 5; }
         .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
 
         .density-container { background: #222; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
-        .density-bar { height: 12px; width: 100%; background: #444; border-radius: 6px; display: flex; overflow: hidden; margin-top: 5px; border: 1px solid #555; }
+        .density-bar { height: 10px; width: 100%; background: #444; border-radius: 5px; display: flex; overflow: hidden; margin-top: 5px; border: 1px solid #555; }
         .bar-red { background: var(--accent); height: 100%; transition: width 0.3s; }
         .bar-black { background: #000; height: 100%; transition: width 0.3s; }
 
         .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
         button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 10px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
         button:hover { background: var(--accent); }
-        .reset-btn { border-color: var(--gold); color: var(--gold); }
-        .special-btn { background: var(--purple); border: none; font-size: 0.8rem; }
+        
+        .preset-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 10px; }
+        .preset-btn { background: #333; color: var(--gold); border: 1px solid #555; padding: 5px; font-size: 0.65rem; }
+        
+        #tracker-input { width: 100%; background: #000; color: #00f5d4; border: 1px solid var(--gold); padding: 8px; border-radius: 4px; margin-top: 5px; font-family: monospace; }
     </style>
 </head>
 <body>
@@ -50,14 +53,25 @@
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
     
-    <div class="density-container">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">TOP HALF COLOR (1-26)</label>
-        <div class="density-bar"><div id="top-red-bar" class="bar-red"></div><div id="top-black-bar" class="bar-black"></div></div>
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold); display:block; margin-top:10px;">BOTTOM HALF COLOR (27-52)</label>
-        <div class="density-bar"><div id="bot-red-bar" class="bar-red"></div><div id="bot-black-bar" class="bar-black"></div></div>
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px; border-left: 3px solid var(--gold);">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CARD TRACKER</label>
+        <input type="text" id="tracker-input" placeholder="e.g. AS, 4H, JD" oninput="renderDeck()">
+        
+        <div class="preset-grid">
+            <button class="preset-btn" onclick="applyPreset('ACES')">All Aces</button>
+            <button class="preset-btn" onclick="applyPreset('KINGS')">All Kings</button>
+            <button class="preset-btn" onclick="applyPreset('ROYALS')">All Royals</button>
+            <button class="preset-btn" onclick="applyPreset('CLEAR')">Clear All</button>
+        </div>
     </div>
 
-    <button class="special-btn" onclick="gilbrethShuffle()" style="background:var(--poker-blue); margin-bottom:10px;">🧬 Gilbreth Shuffle</button>
+    <div class="density-container">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">DENSITY (1-26 | 27-52)</label>
+        <div class="density-bar"><div id="top-red-bar" class="bar-red"></div><div id="top-black-bar" class="bar-black"></div></div>
+        <div class="density-bar" style="margin-top:10px;"><div id="bot-red-bar" class="bar-red"></div><div id="bot-black-bar" class="bar-black"></div></div>
+    </div>
+
+    <button style="background:var(--purple); color:white; margin-bottom:10px;" onclick="gilbrethShuffle()">🧬 Gilbreth Shuffle</button>
     
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CUT DECK</label>
@@ -66,76 +80,68 @@
             <button onclick="cutDeck()" style="flex:1; padding:5px;">Cut</button>
         </div>
     </div>
-    
-    <div style="margin: 5px 0; border-top: 1px solid #333; padding-top:10px;">
-        <button style="width:100%; margin-bottom:5px; background:var(--poker-blue)" onclick="pokerCheck()">🃏 6-Player Draw</button>
-        <button style="width:100%; background:var(--green)" onclick="texasHoldemCheck()">🌵 Texas Hold'em</button>
-    </div>
-
-    <div style="display:flex; justify-content:space-between; align-items:center; padding: 8px 0; color:var(--gold); font-weight:bold; font-size:0.75rem;">
-        <span>BOTTOM DEAL (Pos 52)</span>
-        <input type="checkbox" id="bottom-deal-toggle">
-    </div>
-
-    <div style="margin-top:auto; display:flex; gap:5px; padding-top:10px;">
-        <button onclick="saveStack()" style="flex:1">💾 Save</button>
-        <button onclick="loadStack()" style="flex:1">📂 Load</button>
-    </div>
 </div>
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.9</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.1</span></h1>
     </div>
     <div id="deck" class="deck-display"></div>
     <div class="controls">
         <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT</button>
         <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN</button>
         <button onclick="randomShuffle()">Shuffle</button>
-        <button class="reset-btn" onclick="resetTo('NDO')">NDO (H/C Top)</button>
-        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
-        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
-        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
+        <button onclick="resetTo('NDO')" style="border-color: var(--gold); color: var(--gold);">NDO (Classic)</button>
+        <button onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
     </div>
 </div>
 
 <script>
-    const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
-    const sKeys = ['C','H','S','D'];
+    const suits = ['H', 'C', 'D', 'S'];
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let deck = new Array(52);
+    let deck = [];
     let selectedIndex = null;
-
-    function updateDensity() {
-        const calculateHalf = (start, end) => {
-            let red = 0;
-            for(let i = start; i < end; i++) {
-                if(deck[i].includes('H') || deck[i].includes('D')) red++;
-            }
-            return (red / 26) * 100;
-        };
-        const topRed = calculateHalf(0, 26);
-        const botRed = calculateHalf(26, 52);
-        
-        document.getElementById('top-red-bar').style.width = topRed + '%';
-        document.getElementById('top-black-bar').style.width = (100 - topRed) + '%';
-        document.getElementById('bot-red-bar').style.width = botRed + '%';
-        document.getElementById('bot-black-bar').style.width = (100 - botRed) + '%';
-    }
 
     function renderDeck() {
         const container = document.getElementById('deck');
+        const trackerVal = document.getElementById('tracker-input').value.toUpperCase();
+        const trackedCards = trackerVal.split(',').map(s => s.trim()).filter(s => s.length > 0);
+        
         container.innerHTML = '';
-        for (let i = 0; i < 52; i++) {
-            let card = deck[i];
+        deck.forEach((card, i) => {
             const div = document.createElement('div');
             div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
-            if(selectedIndex === i) div.classList.add('selected');
-            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
+            if (trackedCards.includes(card)) div.classList.add('is-tracked');
+            if (selectedIndex === i) div.classList.add('selected');
+            
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
             div.onclick = () => handleManualSwap(i);
             container.appendChild(div);
-        }
+        });
         updateDensity();
+    }
+
+    function applyPreset(type) {
+        const input = document.getElementById('tracker-input');
+        if (type === 'ACES') input.value = "AH, AC, AD, AS";
+        if (type === 'KINGS') input.value = "KH, KC, KD, KS";
+        if (type === 'ROYALS') input.value = "JH, QH, KH, JC, QC, KC, JD, QD, KD, JS, QS, KS";
+        if (type === 'CLEAR') input.value = "";
+        renderDeck();
+    }
+
+    function updateDensity() {
+        const calcRed = (s, e) => {
+            let r = 0; for(let i=s; i<e; i++) if(deck[i].includes('H') || deck[i].includes('D')) r++;
+            return (r / 26) * 100;
+        };
+        const tR = calcRed(0, 26); const bR = calcRed(26, 52);
+        document.getElementById('top-red-bar').style.width = tR + '%';
+        document.getElementById('top-black-bar').style.width = (100 - tR) + '%';
+        document.getElementById('bot-red-bar').style.width = bR + '%';
+        document.getElementById('bot-black-bar').style.width = (100 - bR) + '%';
     }
 
     function handleManualSwap(i) {
@@ -168,22 +174,7 @@
     function gilbrethShuffle() {
         let top = deck.slice(0, 26).reverse(); let bot = deck.slice(26, 52); let res = [];
         for(let i = 0; i < 26; i++) { res.push(top[i]); res.push(bot[i]); }
-        deck = res; logMove("GILBRETH Shuffle"); renderDeck();
-    }
-
-    function texasHoldemCheck() {
-        let p6Hole = [deck[11], deck[5]];
-        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        logMove(`Holdem P6: ${p6Hole.join(' ')}`);
-    }
-
-    function pokerCheck() {
-        let p6 = []; const isBottom = document.getElementById('bottom-deal-toggle').checked;
-        for(let r = 0; r < 5; r++) {
-            let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
-            p6.push(deck[idx]);
-        }
-        logMove(`Draw P6: ${p6.join(' ')}`);
+        deck = res; logMove("GILBRETH"); renderDeck();
     }
 
     function resetTo(type) {
@@ -193,14 +184,11 @@
             ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
             deck = temp;
         } else if(type === 'STEBBINS') {
-            let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
+            let v = 2; const sK = ['C', 'H', 'S', 'D'];
+            for(let i=0; i<52; i++) { temp.push(values[v%13] + sK[i%4]); v += 3; }
             deck = temp;
         } else if(type === 'MNEMONICA') {
             deck = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
-        } else if(type === 'MY_ORDER') {
-            const vals = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
-            vals.forEach(v => sKeys.forEach(s => temp.push(v + s)));
-            deck = temp;
         }
         logMove(`RESET: ${type}`); renderDeck();
     }
@@ -218,9 +206,6 @@
         const e = document.createElement('div'); e.className = 'history-entry';
         e.innerText = `> ${m}`; h.prepend(e);
     }
-
-    function saveStack() { localStorage.setItem('userStack', JSON.stringify(deck)); logMove("Saved."); }
-    function loadStack() { const s = localStorage.getItem('userStack'); if(s){ deck = JSON.parse(s); renderDeck(); } }
 
     window.onload = () => resetTo('NDO');
 </script>
