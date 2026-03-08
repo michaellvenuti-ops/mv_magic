@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v8.6 - Blind Build</title>
+    <style>
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee;
+            --poker-blue: #0077b6; --felt: #0a2e1a;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 340px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 100px; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; font-size: 0.75rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        #lab-main { flex-grow: 1; padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column; }
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 8px; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+        .card { background: white; color: black; border-radius: 5px; padding: 10px 2px; text-align: center; font-weight: bold; font-size: 0.9rem; cursor: pointer; border: 1px solid #ccc; position: relative; transition: 0.2s; }
+        .card.red { color: var(--accent); }
+        .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
+        .card-index { position: absolute; top: 1px; left: 2px; font-size: 0.55rem; color: #777; }
+        button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 8px; cursor: pointer; font-size: 0.65rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+        button:hover { background: var(--accent); }
+        .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 10px 0; position: relative; }
+        .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 10px; font-size: 0.6rem; color: var(--gold); font-weight: bold; }
+        #poker-arena { margin-top: 25px; background: var(--felt); border: 5px solid #064420; border-radius: 15px; padding: 20px; box-shadow: inset 0 0 50px rgba(0,0,0,0.6); display: none; }
+        .player-box { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .hand-row { display: flex; gap: 8px; }
+        .table-card { width: 40px; height: 55px; background: white; color: black; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1rem; border: 1px solid #999; }
+        .table-card.red { color: var(--accent); }
+        .burn-tag { font-size: 0.5rem; color: #aaa; margin-top: 2px; text-align: center; }
+        .community-area { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px dashed var(--gold); margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div id="history" class="history-log"></div>
+    <button onclick="undoMove()" style="width:100%; border-color: var(--gold); color: var(--gold); margin-bottom: 15px;">↩ Undo Last Move</button>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:12px;">
+        <span style="font-size:0.65rem; color:var(--gold); display:block; margin-bottom:5px;">POKER SIMS</span>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
+            <button onclick="dealDraw(5)">5P Draw</button>
+            <button onclick="dealHoldem(5)">5P Hold'em</button>
+            <button onclick="dealDraw(6)">6P Draw</button>
+            <button onclick="dealHoldem(6)">6P Hold'em</button>
+        </div>
+    </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px;">
+        <button onclick="saveStack()" style="flex:1">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1">📂 Load</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <h1 style="color:var(--gold); font-size:1.4rem; margin:0 0 15px 0;">Virtual Card Lab v8.6</h1>
+    <div id="deck" class="deck-display"></div>
+    
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(115px, 1fr)); gap:8px;">
+        <div class="divider" data-label="REAL SHUFFLES"></div>
+        <button onclick="faroShuffle('OUT')">Faro OUT</button>
+        <button onclick="faroShuffle('IN')">Faro IN</button>
+        <button onclick="gilbrethShuffle()">Gilbreth</button>
+        <button onclick="randomShuffle()">Randomize</button>
+        
+        <div class="divider" data-label="FALSE WORK (BLIND)"></div>
+        <button onclick="falseShuffle('ZARROW')" style="color: #00f5d4;">Zarrow Shuffle</button>
+        <button onclick="falseShuffle('BLIND FARO')" style="color: #00f5d4;">Blind Faro</button>
+
+        <div class="divider" data-label="STACK PRESETS"></div>
+        <button onclick="resetTo('NDO')">NDO</button>
+        <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
+        <button onclick="resetTo('MY_STEBBINS')" style="color:var(--gold)">My Stebbin</button>
+        <button onclick="resetTo('PARTICLE')">Particle</button>
+        <button onclick="resetTo('MY_ORDER')">CHASED</button>
+    </div>
+
+    <div id="poker-arena">
+        <div id="poker-rows"></div>
+        <div id="community-cards" class="community-area" style="display:none;"></div>
+    </div>
+</div>
+
+<script>
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [];
+    let undoStack = [];
+    let selectedIndex = null;
+
+    function saveState() { undoStack.push([...deck]); if(undoStack.length > 30) undoStack.shift(); }
+    function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); renderDeck(); } }
+    function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
+
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        deck.forEach((card, i) => {
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if (selectedIndex === i) div.classList.add('selected');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
+            div.onclick = () => handleManualSwap(i);
+            container.appendChild(div);
+        });
+    }
+
+    function handleManualSwap(i) {
+        if (selectedIndex === null) { selectedIndex = i; renderDeck(); } 
+        else {
+            saveState();
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`Swap: ${deck[i]} ↔ ${deck[selectedIndex]}`);
+            selectedIndex = null; renderDeck();
+        }
+    }
+
+    // FALSE SHUFFLE LOGIC
+    function falseShuffle(type) {
+        logMove(`Performing ${type}...`);
+        const container = document.getElementById('deck');
+        container.style.opacity = "0.5";
+        // Simulate the time it takes to do a false shuffle
+        setTimeout(() => {
+            container.style.opacity = "1";
+            logMove(`${type} complete. Deck order maintained.`);
+            renderDeck();
+        }, 600);
+    }
+
+    function faroShuffle(type) {
+        saveState();
+        let top = deck.slice(0, 26), bot = deck.slice(26, 52), res = [];
+        for(let i=0; i<26; i++) {
+            if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); }
+            else { res.push(bot[i]); res.push(top[i]); }
+        }
+        deck = res; logMove(`Faro ${type}`); renderDeck();
+    }
+
+    function resetTo(type) {
+        saveState();
+        let temp = [];
+        if(type === 'NDO') {
+            ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
+        } else if(type === 'MY_STEBBINS') {
+            const suitCycle = ['C', 'H', 'S', 'D'];
+            let v = 2; for(let i=0; i<52; i++) { temp.push(values[v % 13] + suitCycle[i % 4]); v += 3; }
+        } else if(type === 'PARTICLE') {
+            temp = ["QC", "QH", "QS", "QD", "JC", "JH", "JS", "JD", "2C", "2H", "2S", "2D", "6C", "6H", "6S", "6D", "AC", "AH", "AS", "AD", "5C", "5H", "5S", "5D", "KC", "KH", "KS", "KD", "10C", "10H", "10S", "10D", "9C", "9H", "9S", "9D", "4C", "4H", "4S", "4D", "3C", "3H", "3S", "3D", "7C", "7H", "7S", "7D", "8C", "8H", "8S", "8D"];
+        }
+        deck = temp; logMove(`Reset: ${type}`); renderDeck();
+    }
+
+    function dealDraw(players) {
+        const arena = document.getElementById('poker-arena');
+        const rows = document.getElementById('poker-rows');
+        arena.style.display = 'block'; rows.innerHTML = '';
+        for (let p = 1; p <= players; p++) {
+            const box = document.createElement('div');
+            box.className = 'player-box';
+            box.innerHTML = `<div class="hand-info"><span style="color:var(--gold)">${p===players?'DEALER':'PLAYER '+p}</span></div><div class="hand-row"></div>`;
+            const handRow = box.querySelector('.hand-row');
+            for (let c = 0; c < 5; c++) {
+                let idx = (p-1) + (c*players);
+                const val = deck[idx];
+                const cDiv = document.createElement('div');
+                cDiv.className = `table-card ${val.includes('H') || val.includes('D') ? 'red' : ''}`;
+                cDiv.innerText = val.slice(0,-1) + suitSymbols[val.slice(-1)];
+                handRow.appendChild(cDiv);
+            }
+            rows.appendChild(box);
+        }
+    }
+
+    function saveStack() { localStorage.setItem('stackV86', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('stackV86'); if(s) { deck = JSON.parse(s); renderDeck(); } }
+    window.onload = () => resetTo('NDO');
+</script>
+</body>
+</html>
