@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v5.5 - Shuffle Comparison</title>
+    <title>Virtual Card Lab v5.6 - Precision Faro</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -17,7 +17,11 @@
         .history-log { flex-grow: 1; min-height: 100px; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
         .history-entry { border-bottom: 1px solid #222; padding: 4px 0; }
 
-        #lab-main { flex-grow: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
+        #lab-main { flex-grow: 1; padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
+        
+        .header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .help-btn { background: var(--gold); color: black; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+        
         .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 10px; margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
         
         .card { 
@@ -35,6 +39,10 @@
         .reset-btn { border-color: var(--gold); color: var(--gold); }
         .purple-btn { background: var(--coach-purple); border: none; margin-bottom: 5px; }
         
+        /* Modal Style */
+        #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: var(--panel); padding: 40px; border-radius: 15px; max-width: 600px; border: 2px solid var(--gold); line-height: 1.6; }
+
         .coach-panel { background: #222; padding: 15px; border-radius: 8px; font-size: 0.75rem; margin-top: 10px; border: 1px solid var(--coach-purple); display: none; }
         .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; text-align: center; }
         .compare-val { font-size: 1.1rem; color: var(--gold); font-weight: bold; padding: 5px; background: #333; border-radius: 4px; }
@@ -43,6 +51,20 @@
     </style>
 </head>
 <body>
+
+<div id="help-modal">
+    <div class="modal-content">
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual</h2>
+        <ul>
+            <li><strong>Layout:</strong> Cards are displayed from Pos 52 (Top Left) to Pos 1 (Bottom Right).</li>
+            <li><strong>Faro OUT:</strong> Anchors Pos 52 and Pos 1. Ideal for preserving stacks.</li>
+            <li><strong>Faro IN:</strong> Interleaves the top card into the 2nd position.</li>
+            <li><strong>Stack Coach:</strong> Click a card to see its Faro destination and 8-shuffle cycle.</li>
+            <li><strong>Poker Test:</strong> Simulates a 6-player deal. Toggle <em>Bottom Deal</em> to force the 5th card from the bottom of the deck.</li>
+        </ul>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
+    </div>
+</div>
 
 <div id="sidebar">
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
@@ -60,13 +82,11 @@
         <div style="font-size: 0.85rem; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 10px;">
             Card: <strong id="card-name" style="color:var(--gold)">--</strong> | Pos: <strong id="card-pos">--</strong>
         </div>
-        
         <strong>Shuffle Comparison:</strong>
         <div class="compare-grid">
             <div><small>OUT-FARO</small><div id="out-dest" class="compare-val">--</div></div>
             <div><small>IN-FARO</small><div id="in-dest" class="compare-val">--</div></div>
         </div>
-
         <div style="margin-top:15px; font-weight: bold;">8-Shuffle Out-Cycle:</div>
         <div id="cycle-display" class="cycle-box"></div>
     </div>
@@ -78,10 +98,16 @@
 </div>
 
 <div id="lab-main">
+    <div class="header-bar">
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v5.6</span></h1>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
+    </div>
+    
     <div id="deck" class="deck-display"></div>
+    
     <div class="controls">
-        <button onclick="faroShuffle(true)">Faro IN</button>
-        <button onclick="faroShuffle(false)">Faro OUT</button>
+        <button onclick="faroShuffle(false)">Faro OUT (Fixed Ends)</button>
+        <button onclick="faroShuffle(true)">Faro IN (Top Shifts)</button>
         <button onclick="randomShuffle()">Shuffle</button>
         <button class="reset-btn" onclick="resetTo('NDO')">NDO</button>
         <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
@@ -130,46 +156,50 @@
         coachActive = !coachActive;
         document.getElementById('coach-info').style.display = coachActive ? 'block' : 'none';
         logMove(coachActive ? "COACH: Active" : "COACH: Off");
-        selectedIndex = null;
         renderDeck();
     }
 
     function analyzeCard(idx) {
-        const cardName = deck[idx];
-        const curPos = idx + 1; // 1-based
-        document.getElementById('card-name').innerText = cardName;
+        const curPos = idx + 1;
+        document.getElementById('card-name').innerText = deck[idx];
         document.getElementById('card-pos').innerText = curPos;
         
-        // Single Step Comparisons (1-based math)
-        let outDest = curPos <= 26 ? (curPos * 2) - 1 : (curPos - 26) * 2;
-        let inDest = curPos <= 26 ? (curPos * 2) : ((curPos - 26) * 2) - 1;
+        // Out-Faro: (curPos*2)-1 if <=26 else (curPos-26)*2
+        let outD = curPos <= 26 ? (curPos * 2) - 1 : (curPos - 26) * 2;
+        // In-Faro: (curPos*2) if <=26 else ((curPos-26)*2)-1
+        let inD = curPos <= 26 ? (curPos * 2) : ((curPos - 26) * 2) - 1;
         
-        document.getElementById('out-dest').innerText = outDest;
-        document.getElementById('in-dest').innerText = inDest;
+        document.getElementById('out-dest').innerText = outD;
+        document.getElementById('in-dest').innerText = inD;
 
-        // Cycle Visualizer (Out-Faro 8 Step)
         let cycle = [];
         let tempPos = curPos;
         for(let s = 0; s < 9; s++) {
             cycle.push(tempPos);
             tempPos = tempPos <= 26 ? (tempPos * 2) - 1 : (tempPos - 26) * 2;
         }
-        document.getElementById('cycle-display').innerHTML = cycle.map((p, i) => `<div class="cycle-step" title="Shuffle ${i}">${p}</div>`).join('→');
-        
+        document.getElementById('cycle-display').innerHTML = cycle.map(p => `<div class="cycle-step">${p}</div>`).join('→');
         selectedIndex = idx;
         renderDeck();
     }
 
     function faroShuffle(isIn) {
-        let botHalf = deck.slice(0, 26);
-        let topHalf = deck.slice(26, 52); 
+        let bot = deck.slice(0, 26);
+        let top = deck.slice(26, 52); 
         let res = [];
         for(let i = 0; i < 26; i++) {
-            if(isIn) { res.push(botHalf[i]); res.push(topHalf[i]); }
-            else { res.push(topHalf[i]); res.push(botHalf[i]); }
+            if(isIn) { 
+                // In: Bot Card 1st (index 0), Top Card 2nd (index 0)
+                res.push(bot[i]); 
+                res.push(top[i]); 
+            } else { 
+                // Out: Top Card 1st, Bot Card 2nd
+                res.push(top[i]); 
+                res.push(bot[i]); 
+            }
         }
         deck = res;
-        logMove(isIn ? "Faro IN" : "Faro OUT");
+        logMove(isIn ? "Faro IN (Top Shifts)" : "Faro OUT (Ends Fixed)");
         renderDeck();
         if(coachActive && selectedIndex !== null) analyzeCard(selectedIndex);
     }
