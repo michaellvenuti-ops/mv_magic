@@ -217,7 +217,15 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
     function cutDeck() { saveState(); let mid = deck.splice(0, 26); deck.push(...mid); logMove("Cut Deck (26)"); renderDeck(); }
     function reverseDeck() { saveState(); deck.reverse(); logMove("Reverse Shuffle"); renderDeck(); }
     function randomShuffle() { saveState(); deck.sort(() => Math.random() - 0.5); logMove("Randomized"); renderDeck(); }
-
+    function gilbrethShuffle() {
+        saveState(); let top = deck.slice(0, 26).reverse(); let bot = deck.slice(26, 52); let res = [];
+        while(top.length || bot.length) {
+            if(Math.random() > 0.5 && top.length) res.push(top.pop());
+            else if(bot.length) res.push(bot.pop());
+            else if(top.length) res.push(top.pop());
+        }
+        deck = res; logMove("Gilbreth Shuffle"); renderDeck();
+    }
     function createCardUI(v) { let d = document.createElement('div'); d.className = `table-card ${v.includes('H')||v.includes('D')?'red':''}`; d.innerText = v.slice(0,-1)+suitSymbols[v.slice(-1)]; return d; }
 
     function dealDraw(p) {
