@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v7.9 - Integrated Poker Table</title>
+    <title>Virtual Card Lab v7.9 - Restoration Build</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -41,7 +41,6 @@
         }
         button:hover { background: var(--accent); border-color: var(--accent); }
         
-        /* THE POKER TABLE (Si Stebbins Style) */
         #poker-arena { 
             margin-top: 25px; background: var(--felt); border: 5px solid #064420; border-radius: 15px; 
             padding: 20px; box-shadow: inset 0 0 50px rgba(0,0,0,0.6); display: none;
@@ -169,12 +168,9 @@
 
             for (let c = 0; c < cardsPerHand; c++) {
                 let idx = (p - 1) + (c * players);
-                
-                // Bottom Deal Logic
                 if (document.getElementById('bottom-deal-toggle').checked && p === players && c === cardsPerHand - 1) {
                     idx = 51;
                 }
-
                 const cardVal = deck[idx];
                 const cardDiv = document.createElement('div');
                 cardDiv.className = `table-card ${cardVal.includes('H') || cardVal.includes('D') ? 'red' : ''}`;
