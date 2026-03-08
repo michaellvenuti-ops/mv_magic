@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v7.1 - Presets</title>
+    <title>Virtual Card Lab v7.2 - Full Feature Restore</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -56,11 +56,9 @@
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px; border-left: 3px solid var(--gold);">
         <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CARD TRACKER</label>
         <input type="text" id="tracker-input" placeholder="e.g. AS, 4H, JD" oninput="renderDeck()">
-        
         <div class="preset-grid">
             <button class="preset-btn" onclick="applyPreset('ACES')">All Aces</button>
-            <button class="preset-btn" onclick="applyPreset('KINGS')">All Kings</button>
-            <button class="preset-btn" onclick="applyPreset('ROYALS')">All Royals</button>
+            <button class="preset-btn" onclick="applyPreset('SPADE_ROYAL')">Spade Flush</button>
             <button class="preset-btn" onclick="applyPreset('CLEAR')">Clear All</button>
         </div>
     </div>
@@ -71,8 +69,16 @@
         <div class="density-bar" style="margin-top:10px;"><div id="bot-red-bar" class="bar-red"></div><div id="bot-black-bar" class="bar-black"></div></div>
     </div>
 
-    <button style="background:var(--purple); color:white; margin-bottom:10px;" onclick="gilbrethShuffle()">🧬 Gilbreth Shuffle</button>
-    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">POKER SIMS</label>
+        <button style="width:100%; margin-top:5px; background:var(--poker-blue)" onclick="pokerCheck()">🃏 6-Player Draw Deal</button>
+        <button style="width:100%; margin-top:5px; background:var(--green)" onclick="texasHoldemCheck()">🌵 Texas Hold'em Deal</button>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding-top:10px; color:var(--gold); font-weight:bold; font-size:0.7rem;">
+            <span>BOTTOM DEAL</span>
+            <input type="checkbox" id="bottom-deal-toggle">
+        </div>
+    </div>
+
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CUT DECK</label>
         <div style="display:flex; gap:5px; margin-top:5px;">
@@ -80,25 +86,31 @@
             <button onclick="cutDeck()" style="flex:1; padding:5px;">Cut</button>
         </div>
     </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px; padding-top:10px;">
+        <button onclick="saveStack()" style="flex:1; background:#333;">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1; background:#333;">📂 Load</button>
+    </div>
 </div>
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.1</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.2</span></h1>
     </div>
     <div id="deck" class="deck-display"></div>
     <div class="controls">
         <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT</button>
         <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN</button>
+        <button onclick="gilbrethShuffle()" style="background:var(--purple); color:white;">🧬 Gilbreth</button>
         <button onclick="randomShuffle()">Shuffle</button>
         <button onclick="resetTo('NDO')" style="border-color: var(--gold); color: var(--gold);">NDO (Classic)</button>
         <button onclick="resetTo('STEBBINS')">Si Stebbins</button>
         <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button onclick="resetTo('MY_ORDER')" style="background: #444;">My CHASED</button>
     </div>
 </div>
 
 <script>
-    const suits = ['H', 'C', 'D', 'S'];
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [];
@@ -115,7 +127,6 @@
             div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
             if (trackedCards.includes(card)) div.classList.add('is-tracked');
             if (selectedIndex === i) div.classList.add('selected');
-            
             div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
             div.onclick = () => handleManualSwap(i);
             container.appendChild(div);
@@ -126,8 +137,7 @@
     function applyPreset(type) {
         const input = document.getElementById('tracker-input');
         if (type === 'ACES') input.value = "AH, AC, AD, AS";
-        if (type === 'KINGS') input.value = "KH, KC, KD, KS";
-        if (type === 'ROYALS') input.value = "JH, QH, KH, JC, QC, KC, JD, QD, KD, JS, QS, KS";
+        if (type === 'SPADE_ROYAL') input.value = "10S, JS, QS, KS, AS";
         if (type === 'CLEAR') input.value = "";
         renderDeck();
     }
@@ -177,6 +187,21 @@
         deck = res; logMove("GILBRETH"); renderDeck();
     }
 
+    function texasHoldemCheck() {
+        let p6Hole = [deck[11], deck[5]];
+        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
+        logMove(`Holdem Dealer: ${p6Hole.join(' ')}`);
+    }
+
+    function pokerCheck() {
+        let p6 = []; const isBottom = document.getElementById('bottom-deal-toggle').checked;
+        for(let r = 0; r < 5; r++) {
+            let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
+            p6.push(deck[idx]);
+        }
+        logMove(`6P Draw Dealer: ${p6.join(' ')}`);
+    }
+
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
@@ -189,6 +214,11 @@
             deck = temp;
         } else if(type === 'MNEMONICA') {
             deck = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+        } else if(type === 'MY_ORDER') {
+            const vals = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+            const sk = ['C','H','S','D'];
+            vals.forEach(v => sk.forEach(s => temp.push(v + s)));
+            deck = temp;
         }
         logMove(`RESET: ${type}`); renderDeck();
     }
@@ -206,6 +236,9 @@
         const e = document.createElement('div'); e.className = 'history-entry';
         e.innerText = `> ${m}`; h.prepend(e);
     }
+
+    function saveStack() { localStorage.setItem('userStack', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('userStack'); if(s){ deck = JSON.parse(s); renderDeck(); } }
 
     window.onload = () => resetTo('NDO');
 </script>
