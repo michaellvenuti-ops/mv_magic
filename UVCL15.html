@@ -237,18 +237,10 @@ will be at position 12. This "buddy system" is what makes it "2x easier to memor
         } else if(type === 'MNEMONICA') {
             temp = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
         } else if(type === 'PARTICLE') {
-    // This is the specific 52-card sequence that satisfies 
-    // the "Mates are 2 cards away" property (e.g. Card 1 & 3 are mates)
-    temp = [
-        "JS","8H","JC","8S","5C","2D","5S","2H","10S","7H",
-        "10C","7S","4C","AD","4S","AH","KS","QH","KC","QS",
-        "9S","6H","9C","6S","3C","KD","3S","KH","QS","8C", // Note: QS/QC pairs
-        "QH","8S","5H","2S","5D","2C","10C","7S","10H","7C",
-        "4H","AC","4D","AS","KH","QD","KC","QS","9C","6S","9H","6C"
-    ];
-        } else if(type === 'MY_ORDER') {
             const vOrder = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
             vOrder.forEach(v => suitCycle.forEach(s => temp.push(v+s)));
+        } else if(type === 'MY_ORDER') {
+            temp = ["QC","JC","2C","6C","AC","5C","KC","10C","9C","4C","3C","7C","8C","QH","JH","2H","6H","AH","5H","KH","10H","9H","4H","3H","7H","8H","QS","JS","2S","6S","AS","5S","KS","10S","9S","4S","3S","7S","8S","QD","JD","2D","6D","AD","5D","KD","10D","9D","4D","3D","7D","8D"];
         }
         deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
