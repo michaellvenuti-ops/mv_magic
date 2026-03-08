@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v9.4</title>
+    <title>Virtual Card Lab v9.5</title>
     <style>
         :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
@@ -25,7 +25,6 @@
         .hand-row { display: flex; gap: 5px; margin-bottom: 10px; }
         .table-card { width: 35px; height: 50px; background: white; color: black; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; border: 1px solid #999; }
         .table-card.red { color: var(--accent); }
-        input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
     </style>
 </head>
 <body>
@@ -33,7 +32,7 @@
 <div id="sidebar">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
         <span style="font-size:0.6rem; color:var(--gold);">SESSION LOG</span>
-        <button onclick="document.getElementById('history').innerHTML=''" style="padding:2px 5px; font-size:0.5rem;">Clear Log</button>
+        <button onclick="document.getElementById('history').innerHTML=''" style="padding:2px 5px; font-size:0.5rem;">Clear</button>
     </div>
     <div id="history" class="history-log"></div>
     
@@ -50,17 +49,13 @@
             <button onclick="dealHoldem(6)">6P Hold'em</button>
             <button onclick="document.getElementById('poker-arena').style.display='none'">Clear Table</button>
         </div>
-        <label style="font-size:0.55rem; display:flex; align-items:center; margin-top:8px;">
-            <input type="checkbox" id="bottom-deal-toggle"> Bottom Deal (Dealer)
-        </label>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK VERIFICATION</span>
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">VERIFICATION</span>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
-            <button onclick="verifyAgainst('MNEMONICA')">Vs Mnemonica</button>
-            <button onclick="verifyAgainst('MY_ORDER')">Vs My Chased</button>
-            <button onclick="verifyAgainst('STEBBINS')">Vs Stebbins</button>
+            <button onclick="verifyAgainst('MNEMONICA')">Vs Mnem.</button>
+            <button onclick="verifyAgainst('MY_ORDER')">Vs Chased</button>
             <button onclick="errorCards=[] ; renderDeck();">Clear Marks</button>
         </div>
     </div>
@@ -73,7 +68,7 @@
 </div>
 
 <div id="lab-main">
-    <h1 style="color:var(--gold); font-size:1.2rem; margin:0 0 10px 0;">Virtual Card Lab v9.4</h1>
+    <h1 style="color:var(--gold); font-size:1.2rem; margin:0 0 10px 0;">Virtual Card Lab v9.5</h1>
     <div id="deck" class="deck-display"></div>
     
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap:6px;">
@@ -81,17 +76,19 @@
         <button onclick="faroShuffle('OUT')">Faro OUT</button>
         <button onclick="faroShuffle('IN')">Faro IN</button>
         <button onclick="gilbrethShuffle()">Gilbreth Shuffle</button>
-        <button onclick="reverseDeck()">Reverse Shuffle</button>
         <button onclick="cutDeck()">Cut Deck (26)</button>
+        <button onclick="randomShuffle()">Randomize</button>
         
-        <div class="divider" data-label="FALSE WORK (STACK PROTECTION)"></div>
+        <div class="divider" data-label="FALSE WORK"></div>
         <button onclick="falseShuffle('ZARROW')">Zarrow (Top/Bot Swap)</button>
-        <button onclick="falseShuffle('BLIND')">Blind Faro (Top 2 Center)</button>
+        <button onclick="falseShuffle('BLIND')">Blind Faro (Top 2 Mid)</button>
 
         <div class="divider" data-label="STACK PRESETS"></div>
         <button onclick="resetTo('NDO')">NDO</button>
         <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button onclick="resetTo('PARTICLE')">Particle</button>
         <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
+        <button onclick="resetTo('MY_STEBBINS')">My Stebbins</button>
         <button onclick="resetTo('MY_ORDER')" style="color:var(--gold)">MY CHASED</button>
     </div>
 
@@ -111,7 +108,6 @@
 
     function renderDeck() {
         const container = document.getElementById('deck');
-        const search = document.getElementById('search-input')?.value.toUpperCase() || "";
         container.innerHTML = '';
         deck.forEach((card, i) => {
             const div = document.createElement('div');
@@ -131,17 +127,16 @@
     }
 
     function gilbrethShuffle() {
-        saveState();
-        let top = deck.slice(0, 26).reverse(); 
-        let bot = deck.slice(26, 52);
-        let res = [];
+        saveState(); let top = deck.slice(0, 26).reverse(); let bot = deck.slice(26, 52); let res = [];
         while(top.length || bot.length) {
             if(Math.random() > 0.5 && top.length) res.push(top.pop());
             else if(bot.length) res.push(bot.pop());
             else if(top.length) res.push(top.pop());
         }
-        deck = res; logMove("Gilbreth Shuffle (Randomized Interlace)"); renderDeck();
+        deck = res; logMove("Gilbreth Shuffle"); renderDeck();
     }
+
+    function randomShuffle() { saveState(); deck.sort(() => Math.random() - 0.5); logMove("Randomized Deck"); renderDeck(); }
 
     function falseShuffle(type) {
         saveState();
@@ -151,7 +146,7 @@
             logMove("Zarrow: Top 2 ↔ Bot 2");
         } else {
             let tc = deck.splice(0, 2); deck.splice(24, 0, ...tc);
-            logMove("Blind Faro: Top 2 to 25/26");
+            logMove("Blind Faro: Top 2 to Middle");
         }
         renderDeck();
     }
@@ -160,7 +155,9 @@
         saveState(); let temp = [];
         if(type === 'NDO') { ['H','C'].forEach(s => values.forEach(v => temp.push(v+s))); ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s))); }
         else if(type === 'MNEMONICA') { temp = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"]; }
+        else if(type === 'PARTICLE') { temp = ["QC","QH","QS","QD","JC","JH","JS","JD","2C","2H","2S","2D","6C","6H","6S","6D","AC","AH","AS","AD","5C","5H","5S","5D","KC","KH","KS","KD","10C","10H","10S","10D","9C","9H","9S","9D","4C","4H","4S","4D","3C","3H","3S","3D","7C","7H","7S","7D","8C","8H","8S","8D"]; }
         else if(type === 'STEBBINS') { let v = 0; for(let i=0; i<52; i++) { temp.push(values[v % 13] + ['C','H','S','D'][i % 4]); v += 3; } }
+        else if(type === 'MY_STEBBINS') { let v = 2; for(let i=0; i<52; i++) { temp.push(values[v % 13] + ['C','H','S','D'][i % 4]); v += 3; } }
         else if(type === 'MY_ORDER') {
             const vOrder = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
             vOrder.forEach(v => ['C','H','S','D'].forEach(s => temp.push(v+s)));
@@ -169,44 +166,21 @@
     }
 
     function verifyAgainst(type) {
-        errorCards = [];
-        let original = [...deck]; resetTo(type); let target = [...deck]; deck = original;
+        errorCards = []; let current = [...deck]; resetTo(type); let target = [...deck]; deck = current;
         target.forEach((card, i) => { if(deck[i] !== card) errorCards.push(i); });
-        logMove(`Verified vs ${type}: ${errorCards.length} errors found.`);
-        renderDeck();
+        logMove(`Verified vs ${type}: ${errorCards.length} mismatches.`); renderDeck();
     }
 
     function pokerTest6() {
-        logMove("--- 6-Player Ace Test ---");
-        let p6Hand = [];
-        for(let c=0; c<5; c++) p6Hand.push(deck[5 + (c*6)]);
-        logMove(`P6 Hand: ${p6Hand.join(', ')}`);
-        let aces = p6Hand.filter(c => c.startsWith('A')).length;
-        logMove(`Aces found for P6: ${aces}`);
+        let p6Hand = []; for(let c=0; c<5; c++) p6Hand.push(deck[5 + (c*6)]);
+        logMove(`P6 Hand: ${p6Hand.join(', ')} (${p6Hand.filter(c => c.startsWith('A')).length} Aces)`);
     }
 
     function cutDeck() { saveState(); let top = deck.splice(0, 26); deck.push(...top); logMove("Cut Deck (26)"); renderDeck(); }
-    function reverseDeck() { saveState(); deck.reverse(); logMove("Reverse Shuffle"); renderDeck(); }
-
-    function createCardUI(v) { let d = document.createElement('div'); d.className = `table-card ${v.includes('H')||v.includes('D')?'red':''}`; d.innerText = v.slice(0,-1)+suitSymbols[v.slice(-1)]; return d; }
-
-    function dealDraw(p) {
-        const a = document.getElementById('poker-arena'); const r = document.getElementById('poker-rows'); a.style.display = 'block'; r.innerHTML = '';
-        for (let i = 1; i <= p; i++) {
-            let b = document.createElement('div'); b.className = 'player-box'; b.innerHTML = `<span style="color:var(--gold); font-size:0.6rem;">${i==p?'DEALER':'P'+i}</span><div class="hand-row"></div>`;
-            for (let c = 0; c < 5; c++) { 
-                let idx = (i-1) + (c*p);
-                if(document.getElementById('bottom-deal-toggle').checked && i==p && c==4) idx = 51;
-                b.querySelector('.hand-row').appendChild(createCardUI(deck[idx]));
-            }
-            r.appendChild(b);
-        }
-    }
-
-    function showHelp() { alert("Gilbreth Shuffle: Simulates a riffle after reversing one half. \nStack Verification: Compares current deck to a preset and highlights mis-indexed cards in red."); }
-    function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
-    function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
-    function saveStack() { localStorage.setItem('stackV94', JSON.stringify(deck)); logMove("Session Saved."); }
+    function exportStack() { prompt("Stack Data:", JSON.stringify(deck)); }
+    function importStack() { let d = prompt("Paste Data:"); if(d) { deck = JSON.parse(d); renderDeck(); } }
+    function saveStack() { localStorage.setItem('stackV95', JSON.stringify(deck)); logMove("Saved."); }
+    function showHelp() { alert("Zarrow/Blind Faro protect the 3-25 core. Verify marks errors in red."); }
 
     window.onload = () => resetTo('NDO');
 </script>
