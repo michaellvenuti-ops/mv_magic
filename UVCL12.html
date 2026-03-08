@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v7.2 - Full Feature Restore</title>
+    <title>Virtual Card Lab v7.5 - Stack Import & Export</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -32,6 +32,10 @@
         .card.is-tracked { border: 3px solid var(--gold) !important; box-shadow: 0 0 15px var(--gold); transform: scale(1.05); z-index: 5; }
         .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
 
+        #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: var(--panel); border: 2px solid var(--gold); padding: 30px; border-radius: 15px; max-width: 500px; color: var(--text); }
+        .help-btn { background: var(--gold); color: black; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+
         .density-container { background: #222; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
         .density-bar { height: 10px; width: 100%; background: #444; border-radius: 5px; display: flex; overflow: hidden; margin-top: 5px; border: 1px solid #555; }
         .bar-red { background: var(--accent); height: 100%; transition: width 0.3s; }
@@ -45,14 +49,30 @@
         .preset-btn { background: #333; color: var(--gold); border: 1px solid #555; padding: 5px; font-size: 0.65rem; }
         
         #tracker-input { width: 100%; background: #000; color: #00f5d4; border: 1px solid var(--gold); padding: 8px; border-radius: 4px; margin-top: 5px; font-family: monospace; }
+        .io-box { width: 100%; background: #000; color: var(--gold); border: 1px solid #444; padding: 8px; font-size: 0.7rem; border-radius: 4px; margin-top: 5px; font-family: monospace; resize: vertical; }
     </style>
 </head>
 <body>
+
+<div id="help-modal">
+    <div class="modal-content">
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v7.5</h2>
+        <ul style="line-height:1.6;">
+            <li><strong>Import/Export:</strong> Paste a stack to load it, or copy your current stack for external storage.</li>
+            <li><strong>UNDO:</strong> Reverts the last move.</li>
+            <li><strong>Presets:</strong> Instantly track Aces or the Spade Royal Flush.</li>
+            <li><strong>Bottom Deal:</strong> Toggles dealer position for Poker Sims.</li>
+        </ul>
+        <button class="help-btn" onclick="toggleHelp(false)">Close Manual</button>
+    </div>
+</div>
 
 <div id="sidebar">
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
     
+    <button onclick="undoMove()" style="width:100%; margin-bottom:10px; background:#444; color:var(--gold); border:1px solid var(--gold);">↩ Undo Last Move</button>
+
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px; border-left: 3px solid var(--gold);">
         <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CARD TRACKER</label>
         <input type="text" id="tracker-input" placeholder="e.g. AS, 4H, JD" oninput="renderDeck()">
@@ -64,26 +84,21 @@
     </div>
 
     <div class="density-container">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">DENSITY (1-26 | 27-52)</label>
-        <div class="density-bar"><div id="top-red-bar" class="bar-red"></div><div id="top-black-bar" class="bar-black"></div></div>
-        <div class="density-bar" style="margin-top:10px;"><div id="bot-red-bar" class="bar-red"></div><div id="bot-black-bar" class="bar-black"></div></div>
-    </div>
-
-    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">POKER SIMS</label>
-        <button style="width:100%; margin-top:5px; background:var(--poker-blue)" onclick="pokerCheck()">🃏 6-Player Draw Deal</button>
-        <button style="width:100%; margin-top:5px; background:var(--green)" onclick="texasHoldemCheck()">🌵 Texas Hold'em Deal</button>
-        <div style="display:flex; justify-content:space-between; align-items:center; padding-top:10px; color:var(--gold); font-weight:bold; font-size:0.7rem;">
-            <span>BOTTOM DEAL</span>
-            <input type="checkbox" id="bottom-deal-toggle">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">STACK I/O</label>
+        <textarea id="io-area" class="io-box" rows="2" placeholder="Paste stack here to import..."></textarea>
+        <div style="display:flex; gap:5px; margin-top:5px;">
+            <button style="flex:1; background:var(--green); font-size:0.6rem;" onclick="importStack()">📥 Import</button>
+            <button style="flex:1; background:var(--poker-blue); font-size:0.6rem;" onclick="exportStack()">📤 Export</button>
         </div>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CUT DECK</label>
-        <div style="display:flex; gap:5px; margin-top:5px;">
-            <input type="number" id="cut-input" value="1" style="width:50px; background:#000; color:white; border:1px solid #555;">
-            <button onclick="cutDeck()" style="flex:1; padding:5px;">Cut</button>
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">POKER SIMS</label>
+        <button style="width:100%; margin-top:5px; background:var(--accent)" onclick="pokerCheck()">🃏 6P Draw Deal</button>
+        <button style="width:100%; margin-top:5px; background:var(--purple)" onclick="texasHoldemCheck()">🌵 Hold'em Deal</button>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding-top:10px; color:var(--gold); font-weight:bold; font-size:0.7rem;">
+            <span>BOTTOM DEAL</span>
+            <input type="checkbox" id="bottom-deal-toggle">
         </div>
     </div>
 
@@ -95,7 +110,8 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.2</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.5</span></h1>
+        <button class="help-btn" onclick="toggleHelp(true)">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
     <div class="controls">
@@ -114,7 +130,45 @@
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [];
+    let undoStack = [];
     let selectedIndex = null;
+
+    function saveState() {
+        if (deck.length > 0) undoStack.push([...deck]);
+        if (undoStack.length > 20) undoStack.shift();
+    }
+
+    function undoMove() {
+        if (undoStack.length > 0) {
+            deck = undoStack.pop();
+            logMove("UNDO performed");
+            renderDeck();
+        }
+    }
+
+    function exportStack() {
+        const box = document.getElementById('io-area');
+        box.value = deck.join(', ');
+        box.select();
+        document.execCommand('copy');
+        logMove("Stack exported and copied");
+    }
+
+    function importStack() {
+        const val = document.getElementById('io-area').value;
+        if(!val) return;
+        const newDeck = val.split(',').map(s => s.trim().toUpperCase()).filter(s => s.length > 0);
+        if(newDeck.length === 52) {
+            saveState();
+            deck = newDeck;
+            renderDeck();
+            logMove("Custom stack imported");
+        } else {
+            alert("Invalid stack. Must be exactly 52 cards.");
+        }
+    }
+
+    function toggleHelp(show) { document.getElementById('help-modal').style.display = show ? 'flex' : 'none'; }
 
     function renderDeck() {
         const container = document.getElementById('deck');
@@ -134,14 +188,6 @@
         updateDensity();
     }
 
-    function applyPreset(type) {
-        const input = document.getElementById('tracker-input');
-        if (type === 'ACES') input.value = "AH, AC, AD, AS";
-        if (type === 'SPADE_ROYAL') input.value = "10S, JS, QS, KS, AS";
-        if (type === 'CLEAR') input.value = "";
-        renderDeck();
-    }
-
     function updateDensity() {
         const calcRed = (s, e) => {
             let r = 0; for(let i=s; i<e; i++) if(deck[i].includes('H') || deck[i].includes('D')) r++;
@@ -157,6 +203,7 @@
     function handleManualSwap(i) {
         if (selectedIndex === null) { selectedIndex = i; } 
         else {
+            saveState();
             [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
             logMove(`SWAP: ${deck[i]} ↔ ${deck[selectedIndex]}`);
             selectedIndex = null;
@@ -164,15 +211,8 @@
         renderDeck();
     }
 
-    function cutDeck() {
-        let n = parseInt(document.getElementById('cut-input').value);
-        if(isNaN(n) || n < 1 || n > 51) return;
-        deck = [...deck.slice(n), ...deck.slice(0, n)];
-        logMove(`Cut ${n} cards`);
-        renderDeck();
-    }
-
     function faroShuffle(type) {
+        saveState();
         let top = deck.slice(0, 26); let bot = deck.slice(26, 52); let res = [];
         for(let i = 0; i < 26; i++) {
             if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); }
@@ -182,15 +222,10 @@
     }
 
     function gilbrethShuffle() {
+        saveState();
         let top = deck.slice(0, 26).reverse(); let bot = deck.slice(26, 52); let res = [];
         for(let i = 0; i < 26; i++) { res.push(top[i]); res.push(bot[i]); }
         deck = res; logMove("GILBRETH"); renderDeck();
-    }
-
-    function texasHoldemCheck() {
-        let p6Hole = [deck[11], deck[5]];
-        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        logMove(`Holdem Dealer: ${p6Hole.join(' ')}`);
     }
 
     function pokerCheck() {
@@ -199,10 +234,25 @@
             let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
             p6.push(deck[idx]);
         }
-        logMove(`6P Draw Dealer: ${p6.join(' ')}`);
+        logMove(`6P Dealer: ${p6.join(' ')}`);
+    }
+
+    function texasHoldemCheck() {
+        let p6Hole = [deck[11], deck[5]];
+        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
+        logMove(`Holdem Dealer: ${p6Hole.join(' ')}`);
+    }
+
+    function applyPreset(type) {
+        const input = document.getElementById('tracker-input');
+        if (type === 'ACES') input.value = "AH, AC, AD, AS";
+        if (type === 'SPADE_ROYAL') input.value = "10S, JS, QS, KS, AS";
+        if (type === 'CLEAR') input.value = "";
+        renderDeck();
     }
 
     function resetTo(type) {
+        saveState();
         let temp = [];
         if(type === 'NDO') {
             ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
@@ -224,6 +274,7 @@
     }
 
     function randomShuffle() {
+        saveState();
         for (let i = 51; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [deck[i], deck[j]] = [deck[j], deck[i]];
