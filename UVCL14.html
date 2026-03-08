@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v8.2 - Pro Dealer</title>
+    <style>
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee;
+            --poker-blue: #0077b6; --felt: #0a2e1a;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 340px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 100px; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; font-size: 0.75rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        #lab-main { flex-grow: 1; padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column; }
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 8px; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+        .card { background: white; color: black; border-radius: 5px; padding: 10px 2px; text-align: center; font-weight: bold; font-size: 0.9rem; cursor: pointer; border: 1px solid #ccc; position: relative; transition: 0.2s; }
+        .card.red { color: var(--accent); }
+        .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
+        .card-index { position: absolute; top: 1px; left: 2px; font-size: 0.55rem; color: #777; }
+        button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 8px; cursor: pointer; font-size: 0.65rem; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+        button:hover { background: var(--accent); }
+        #poker-arena { margin-top: 25px; background: var(--felt); border: 5px solid #064420; border-radius: 15px; padding: 20px; box-shadow: inset 0 0 50px rgba(0,0,0,0.6); display: none; }
+        .player-box { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .hand-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+        .hand-rank { color: var(--gold); font-size: 0.65rem; font-weight: bold; background: rgba(0,0,0,0.4); padding: 2px 8px; border-radius: 10px; }
+        .hand-row { display: flex; gap: 8px; }
+        .table-card { width: 40px; height: 55px; background: white; color: black; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1rem; border: 1px solid #999; }
+        .table-card.red { color: var(--accent); }
+        .burn-tag { font-size: 0.5rem; color: #aaa; margin-top: 2px; text-align: center; }
+        .community-area { background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px dashed var(--gold); margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div id="history" class="history-log"></div>
+    <button onclick="undoMove()" style="width:100%; border-color: var(--gold); color: var(--gold); margin-bottom: 15px;">↩ Undo Last Move</button>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:12px;">
+        <span style="font-size:0.65rem; color:var(--gold); display:block; margin-bottom:5px;">POKER SIMS</span>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
+            <button onclick="dealDraw(4)">4P Draw</button>
+            <button onclick="dealHoldem(4)">4P Hold'em</button>
+            <button onclick="dealDraw(6)">6P Draw</button>
+            <button onclick="dealHoldem(6)">6P Hold'em</button>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; font-size:0.65rem;">
+            <span>BOTTOM DEAL (DEALER)</span>
+            <input type="checkbox" id="bottom-deal-toggle">
+        </div>
+    </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px;">
+        <button onclick="saveStack()" style="flex:1">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1">📂 Load</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h1 style="color:var(--gold); font-size:1.4rem; margin:0 0 15px 0;">Virtual Card Lab v8.2</h1>
+        <button onclick="document.getElementById('poker-arena').style.display='none'">Clear Table</button>
+    </div>
+    <div id="deck" class="deck-display"></div>
+    
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(115px, 1fr)); gap:8px;">
+        <button onclick="faroShuffle('OUT')">Faro OUT</button>
+        <button onclick="faroShuffle('IN')">Faro IN</button>
+        <button onclick="gilbrethShuffle()">Gilbreth</button>
+        <button onclick="randomShuffle()">Randomize</button>
+        <button onclick="resetTo('NDO')">NDO</button>
+        <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
+        <button onclick="resetTo('MY_STEBBINS')" style="color:var(--gold)">My Stebbin</button>
+        <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button onclick="resetTo('MY_ORDER')">CHASED</button>
+    </div>
+
+    <div id="poker-arena">
+        <div id="poker-rows"></div>
+        <div id="community-cards" class="community-area" style="display:none;"></div>
+    </div>
+</div>
+
+<script>
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [];
+    let undoStack = [];
+    let selectedIndex = null;
+
+    function saveState() { undoStack.push([...deck]); if(undoStack.length > 30) undoStack.shift(); }
+    function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); renderDeck(); } }
+
+    function logMove(msg) {
+        const h = document.getElementById('history');
+        const e = document.createElement('div');
+        e.innerText = `> ${msg}`; h.prepend(e);
+    }
+
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        deck.forEach((card, i) => {
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if (selectedIndex === i) div.classList.add('selected');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
+            div.onclick = () => handleManualSwap(i);
+            container.appendChild(div);
+        });
+    }
+
+    function handleManualSwap(i) {
+        if (selectedIndex === null) { selectedIndex = i; renderDeck(); } 
+        else {
+            saveState();
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`Swap: ${deck[i]} ↔ ${deck[selectedIndex]}`);
+            selectedIndex = null; renderDeck();
+        }
+    }
+
+    function createCardUI(val) {
+        const cDiv = document.createElement('div');
+        cDiv.className = `table-card ${val.includes('H') || val.includes('D') ? 'red' : ''}`;
+        cDiv.innerText = val.slice(0,-1) + suitSymbols[val.slice(-1)];
+        return cDiv;
+    }
+
+    function dealDraw(players) {
+        const arena = document.getElementById('poker-arena');
+        const rows = document.getElementById('poker-rows');
+        const comm = document.getElementById('community-cards');
+        arena.style.display = 'block'; comm.style.display = 'none'; rows.innerHTML = '';
+        logMove(`Deal: ${players}P Draw`);
+
+        for (let p = 1; p <= players; p++) {
+            const box = document.createElement('div');
+            box.className = 'player-box';
+            box.innerHTML = `<div class="hand-info"><span style="color:var(--gold)">${p===players?'DEALER':'PLAYER '+p}</span></div><div class="hand-row"></div>`;
+            const handRow = box.querySelector('.hand-row');
+            for (let c = 0; c < 5; c++) {
+                let idx = (p-1) + (c*players);
+                if(document.getElementById('bottom-deal-toggle').checked && p===players && c===4) idx = 51;
+                handRow.appendChild(createCardUI(deck[idx]));
+            }
+            rows.appendChild(box);
+        }
+    }
+
+    function dealHoldem(players) {
+        const arena = document.getElementById('poker-arena');
+        const rows = document.getElementById('poker-rows');
+        const comm = document.getElementById('community-cards');
+        arena.style.display = 'block'; comm.style.display = 'block'; 
+        rows.innerHTML = ''; comm.innerHTML = '<span style="color:var(--gold); font-size:0.7rem; display:block; margin-bottom:10px;">COMMUNITY & BURNS</span><div class="hand-row" id="comm-row"></div>';
+        const commRow = document.getElementById('comm-row');
+        logMove(`Deal: ${players}P Hold'em (Burn included)`);
+
+        // Deal Hole Cards
+        for (let p = 1; p <= players; p++) {
+            const box = document.createElement('div');
+            box.className = 'player-box';
+            box.innerHTML = `<div class="hand-info"><span style="color:var(--gold)">${p===players?'DEALER':'PLAYER '+p}</span></div><div class="hand-row"></div>`;
+            const handRow = box.querySelector('.hand-row');
+            for (let c = 0; c < 2; c++) {
+                let idx = (p-1) + (c*players);
+                if(document.getElementById('bottom-deal-toggle').checked && p===players && c===1) idx = 51;
+                handRow.appendChild(createCardUI(deck[idx]));
+            }
+            rows.appendChild(box);
+        }
+
+        // Logic for Burns and Community (Starting after Hole Cards)
+        let ptr = players * 2;
+        const layout = [
+            {type:'BURN', label:'B1'}, {type:'COMM', label:'F1'}, {type:'COMM', label:'F2'}, {type:'COMM', label:'F3'},
+            {type:'BURN', label:'B2'}, {type:'COMM', label:'TURN'},
+            {type:'BURN', label:'B3'}, {type:'COMM', label:'RIVER'}
+        ];
+
+        layout.forEach(item => {
+            const wrapper = document.createElement('div');
+            const card = createCardUI(deck[ptr++]);
+            if(item.type === 'BURN') card.style.opacity = "0.4";
+            wrapper.appendChild(card);
+            wrapper.innerHTML += `<div class="burn-tag">${item.label}</div>`;
+            commRow.appendChild(wrapper);
+        });
+    }
+
+    function faroShuffle(type) {
+        saveState();
+        let top = deck.slice(0, 26), bot = deck.slice(26, 52), res = [];
+        for(let i=0; i<26; i++) {
+            if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); }
+            else { res.push(bot[i]); res.push(top[i]); }
+        }
+        deck = res; logMove(`Faro ${type}`); renderDeck();
+    }
+
+    function gilbrethShuffle() {
+        saveState();
+        let top = deck.slice(0, 26).reverse(), bot = deck.slice(26, 52), res = [];
+        for(let i = 0; i < 26; i++) { res.push(top[i]); res.push(bot[i]); }
+        deck = res; logMove("Gilbreth Shuffle"); renderDeck();
+    }
+
+    function randomShuffle() { saveState(); for (let i = 51; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; } logMove("Randomized"); renderDeck(); }
+
+    function resetTo(type) {
+        saveState();
+        let temp = [];
+        const suitCycle = ['C', 'H', 'S', 'D'];
+        if(type === 'NDO') {
+            ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
+        } else if(type === 'STEBBINS') {
+            let v = 0; // Starts at Ace
+            for(let i=0; i<52; i++) { temp.push(values[v % 13] + suitCycle[i % 4]); v += 3; }
+        } else if(type === 'MY_STEBBINS') {
+            let v = 2; // Starts at 3 (index 2)
+            for(let i=0; i<52; i++) { temp.push(values[v % 13] + suitCycle[i % 4]); v += 3; }
+        } else if(type === 'MNEMONICA') {
+            temp = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+        } else if(type === 'MY_ORDER') {
+            const vOrder = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+            vOrder.forEach(v => suitCycle.forEach(s => temp.push(v+s)));
+        }
+        deck = temp; logMove(`Reset: ${type}`); renderDeck();
+    }
+
+    function saveStack() { localStorage.setItem('stackV82', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('stackV82'); if(s) { deck = JSON.parse(s); renderDeck(); } }
+
+    window.onload = () => resetTo('NDO');
+</script>
+</body>
+</html>
