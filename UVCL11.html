@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.4 - Top-Down Logic</title>
+    <title>Virtual Card Lab v6.5 - NDO Precision</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -44,12 +44,11 @@
 
 <div id="help-modal">
     <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.4</h2>
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.5</h2>
         <ul>
-            <li><strong>Indexing:</strong> Pos 1 = Top Left. Pos 52 = Bottom Right.</li>
-            <li><strong>NDO:</strong> AH is at Pos 1. AS is at Pos 52.</li>
-            <li><strong>Faro OUT:</strong> Keeps Pos 1 and Pos 52 fixed.</li>
-            <li><strong>Faro IN:</strong> Moves Pos 1 into Pos 2.</li>
+            <li><strong>Corrected NDO:</strong> AH→KH, AC→KC, AD→KD, AS→KS (modified for your specific end card request).</li>
+            <li><strong>Cut Deck:</strong> Enter a number to move that many cards from Top (Pos 1) to Bottom.</li>
+            <li><strong>Faro Logic:</strong> OUT keeps 1 & 52. IN moves 1 to 2.</li>
         </ul>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
     </div>
@@ -60,6 +59,14 @@
     <div id="history" class="history-log"></div>
     
     <button class="special-btn" onclick="gilbrethShuffle()" style="background:var(--poker-blue); margin-bottom:10px;">🧬 Gilbreth Shuffle</button>
+    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CUT DECK (Pos 1 to Bottom)</label>
+        <div style="display:flex; gap:5px; margin-top:5px;">
+            <input type="number" id="cut-input" value="1" style="width:50px; background:#000; color:white; border:1px solid #555;">
+            <button onclick="cutDeck()" style="flex:1; padding:5px;">Perform Cut</button>
+        </div>
+    </div>
     
     <div style="margin: 5px 0; border-top: 1px solid #333; padding-top:10px;">
         <button style="width:100%; margin-bottom:5px; background:var(--poker-blue)" onclick="pokerCheck()">🃏 6-Player Draw Deal</button>
@@ -84,7 +91,7 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.4</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.5</span></h1>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
@@ -92,7 +99,7 @@
         <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed 1/52)</button>
         <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Shift 1)</button>
         <button onclick="randomShuffle()">Shuffle</button>
-        <button class="reset-btn" onclick="resetTo('NDO')">NDO (AH -> AS)</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO (A-K Flow)</button>
         <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
         <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
         <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
@@ -110,7 +117,6 @@
     function renderDeck() {
         const container = document.getElementById('deck');
         container.innerHTML = '';
-        // Index 0 is now Top Left (Position 1), Index 51 is Bottom Right (Position 52)
         for (let i = 0; i < 52; i++) {
             let card = deck[i];
             const div = document.createElement('div');
@@ -124,15 +130,22 @@
     }
 
     function handleManualSwap(i) {
-        if (selectedIndex === null) {
-            selectedIndex = i;
-        } else {
-            const cardA = deck[selectedIndex];
-            const cardB = deck[i];
+        if (selectedIndex === null) { selectedIndex = i; } 
+        else {
+            const cardA = deck[selectedIndex]; const cardB = deck[i];
             [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
             logMove(`SWAP: ${cardA} ↔ ${cardB}`);
             selectedIndex = null;
         }
+        renderDeck();
+    }
+
+    function cutDeck() {
+        let n = parseInt(document.getElementById('cut-input').value);
+        if(isNaN(n) || n < 1 || n > 51) return;
+        let cutPart = deck.splice(0, n);
+        deck = [...deck, ...cutPart];
+        logMove(`Cut ${n} cards`);
         renderDeck();
     }
 
@@ -141,15 +154,8 @@
         let bottomHalf = deck.slice(26, 52); 
         let res = [];
         for(let i = 0; i < 26; i++) {
-            if(type === 'OUT') {
-                // Pos 1 and Pos 52 fixed
-                res.push(topHalf[i]); 
-                res.push(bottomHalf[i]);
-            } else {
-                // Pos 1 moves to Pos 2
-                res.push(bottomHalf[i]);
-                res.push(topHalf[i]);
-            }
+            if(type === 'OUT') { res.push(topHalf[i]); res.push(bottomHalf[i]); }
+            else { res.push(bottomHalf[i]); res.push(topHalf[i]); }
         }
         deck = res;
         logMove(`Faro ${type}`);
@@ -167,11 +173,9 @@
     }
 
     function texasHoldemCheck() {
-        // Top-down deal: 6 players, P1 is seat 1, P6 is dealer
-        let p6Hole = [deck[11], deck[5]]; // 12th and 6th cards for a 6-player deal
+        let p6Hole = [deck[11], deck[5]];
         if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        let flop = [deck[12], deck[13], deck[14]]; // After 12 hole cards
-        logMove(`Holdem P6: ${p6Hole.join(' ')} | Flop: [${flop.join(' ')}]`);
+        logMove(`Holdem P6: ${p6Hole.join(' ')}`);
     }
 
     function pokerCheck() {
@@ -193,7 +197,9 @@
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
-            ['H','C','D','S'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['H','C','D','S'].forEach(s => {
+                values.forEach(v => temp.push(v+s));
+            });
             deck = temp;
         } else if(type === 'STEBBINS') {
             let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
