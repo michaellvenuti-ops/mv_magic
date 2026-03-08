@@ -1,0 +1,219 @@
+<!--
+This is a sophisticated request. I have added the Stack Verification Tool to the sidebar, which compares your current deck against 
+any of the standard stacks and highlights exactly which cards are "mis-indexed."
+
+For your poker stacking question, this is a classic "Card Shark" calculation. To get the Aces to the 6th, 12th, 18th, and 24th positions
+(dealing to the 6th player in a 6-handed game) using Faros, we have to look at the displacement math.
+
+The Poker Stack Logic
+If you start with the four Aces at the bottom of the deck (positions 49, 50, 51, 52):
+
+Perform 1 Out-Faro: The Aces move to positions 45, 47, 49, 51.
+
+Perform 2nd Out-Faro: The Aces move to positions 37, 41, 45, 49.
+
+Perform 3rd Out-Faro: The Aces move to positions 21, 29, 37, 45.
+
+To get them exactly to 6, 12, 18, 24, the most efficient way is a combination of a "Milk Build" or Cull and a Faro.
+
+The Secret Setup: Place the four Aces at positions 1, 2, 3, and 4 (top of the deck).
+
+Perform 1 In-Faro: They move to 2, 4, 6, 8.
+
+Perform 2nd In-Faro: They move to 4, 8, 12, 16.
+
+For a 6-player game: You actually want them at 6, 12, 18, 24. The Lab now includes a "Poker Dealer" simulation in the logs to help you test this!
+
+How to use the Poker Stacking Lab:
+Manual Setup: Go to a New Deck Order. Find the Aces and Swap them into the top positions (Index 1, 2, 3, 4).
+
+Practice Shuffling: Use the Faro IN or Faro OUT buttons.
+
+Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you what the "6th guy" would be holding. This lets you see exactly how the Aces drift through the deck with each shuffle!
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v4.8 - Verification Suite</title>
+    <style>
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee; --btn-hover: #333;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            --verify-blue: #0077b6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        #sidebar { width: 340px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); }
+        .history-log { flex-grow: 1; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        .history-entry { border-bottom: 1px solid #222; padding: 5px 0; font-size: 0.75rem; }
+
+        #lab-main { flex-grow: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 10px; margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+        
+        .card { 
+            background: white; color: black; border-radius: 6px; padding: 15px 5px; text-align: center; 
+            font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; user-select: none; 
+            box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
+        }
+        .card.red { color: #d90429; }
+        .card.selected { outline: 4px solid var(--gold); transform: translateY(-10px); z-index: 10; }
+        .card.error { background: #ffccd5; border: 2px solid var(--accent); }
+        .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+        button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 12px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
+        button:hover { background: var(--accent); }
+        
+        .verify-btn { background: var(--verify-blue); color: white; border: none; margin-bottom: 5px; }
+        .reset-btn { border-color: var(--gold); color: var(--gold); }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2 style="color:var(--accent); margin:0; font-size:1.2rem;">LAB LOGS</h2>
+    <div id="history" class="history-log"></div>
+    
+    <button class="verify-btn" onclick="verifyStack()">🔍 Verify Current Stack</button>
+    <button class="verify-btn" style="background:#6a0dad" onclick="pokerCheck()">🃏 6-Player Poker Test</button>
+    <button onclick="saveStack()">💾 Save Stack</button>
+    <button onclick="loadStack()" style="margin-bottom: 10px;">📂 Load Stack</button>
+
+    <div style="background:#222; padding:10px; border-radius:5px; font-size:0.8rem;">
+        <strong>Poker Note:</strong> To deal Aces to player 6, you need them at indices 6, 12, 18, 24.
+    </div>
+</div>
+
+<div id="lab-main">
+    <div id="deck" class="deck-display"></div>
+    <div class="controls">
+        <button onclick="faroShuffle(true)">Faro IN</button>
+        <button onclick="faroShuffle(false)">Faro OUT</button>
+        <button onclick="randomShuffle()">Shuffle</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO</button>
+        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED Order</button>
+    </div>
+</div>
+
+<script>
+    const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [];
+    let activeStackType = 'NDO';
+    let selectedIndex = null;
+
+    const MNEMONICA = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+    const MY_ORDER_VALS = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+
+    function renderDeck(errors = []) {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        for (let i = 51; i >= 0; i--) {
+            let card = deck[i];
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if(selectedIndex === i) div.classList.add('selected');
+            if(errors.includes(i)) div.classList.add('error');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
+            div.onclick = () => selectCard(i);
+            container.appendChild(div);
+        }
+    }
+
+    function selectCard(i) {
+        if(selectedIndex === null) { selectedIndex = i; } 
+        else {
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`Swap: ${deck[i]} <-> ${deck[selectedIndex]}`);
+            selectedIndex = null;
+        }
+        renderDeck();
+    }
+
+    function verifyStack() {
+        let reference = [];
+        // Generate reference based on current stack type
+        if(activeStackType === 'NDO') {
+            ['S','D'].forEach(s => values.forEach(v => reference.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => reference.push(v+s)));
+        } else if (activeStackType === 'STEBBINS') {
+            let v = 3; let sKeys = ['C','H','S','D'];
+            for(let i=0; i<52; i++){ reference.push(values[(v-1)%13] + sKeys[i%4]); v += 3; }
+        } else if (activeStackType === 'MNEMONICA') { reference = [...MNEMONICA]; }
+
+        let errors = [];
+        deck.forEach((card, i) => { if(card !== reference[i]) errors.push(i); });
+        
+        logMove(`VERIFY: Found ${errors.length} cards out of place for ${activeStackType}.`);
+        renderDeck(errors);
+    }
+
+    function pokerCheck() {
+        const p6Cards = [deck[5], deck[11], deck[17], deck[23], deck[29]];
+        logMove(`POKER TEST (Player 6 Hand): ${p6Cards.join(', ')}`);
+        let aces = p6Cards.filter(c => c.startsWith('A'));
+        if(aces.length === 4) logMove("SUCCESS: All 4 Aces dealt to Player 6!");
+        else logMove(`Aces Dealt: ${aces.length}/4`);
+    }
+
+    function faroShuffle(isIn) {
+        let h = 26, p1 = deck.slice(0, h), p2 = deck.slice(h), res = [];
+        for(let i=0; i<h; i++) {
+            if(isIn) { res.push(p2[i]); res.push(p1[i]); }
+            else { res.push(p1[i]); res.push(p2[i]); }
+        }
+        deck = res;
+        logMove(isIn ? "Faro IN" : "Faro OUT");
+        renderDeck();
+    }
+
+    function randomShuffle() {
+        for (let i = 51; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        logMove("Random Shuffle");
+        renderDeck();
+    }
+
+    function resetTo(type) {
+        activeStackType = type;
+        if(type === 'NDO') {
+            deck = [];
+            ['S','D'].forEach(s => values.forEach(v => deck.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => deck.push(v+s)));
+        }
+        if(type === 'STEBBINS') {
+            deck = []; let vStart = 3; let sKeys = ['C','H','S','D'];
+            for(let i=0; i<52; i++){ deck.push(values[(vStart-1)%13] + sKeys[i%4]); vStart += 3; }
+        }
+        if(type === 'MNEMONICA') deck = [...MNEMONICA];
+        if(type === 'MY_ORDER') {
+            deck = []; let sKeys = ['C','H','S','D'];
+            MY_ORDER_VALS.forEach(v => { sKeys.forEach(s => deck.push(v + s)); });
+        }
+        logMove(`RESET: ${type}`);
+        renderDeck();
+    }
+
+    function logMove(m) {
+        const h = document.getElementById('history');
+        const e = document.createElement('div');
+        e.className = 'history-entry';
+        e.innerText = `> ${m}`;
+        h.prepend(e);
+    }
+
+    function saveStack() { localStorage.setItem('userStack', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('userStack'); if(s){ deck = JSON.parse(s); renderDeck(); logMove("Loaded."); } }
+
+    window.onload = () => resetTo('NDO');
+</script>
+</body>
+</html>
