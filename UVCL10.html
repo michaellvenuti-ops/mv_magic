@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.1 - Full Toolkit</title>
+    <title>Virtual Card Lab v6.2 - Manual Swap Restored</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -29,6 +29,7 @@
             box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
         }
         .card.red { color: #d90429; }
+        .card.selected { outline: 4px solid var(--gold); transform: translateY(-5px); z-index: 10; box-shadow: 0 0 20px var(--gold); }
         .card.is-key { border: 3px solid var(--gold); box-shadow: 0 0 15px var(--gold); }
         .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
 
@@ -37,22 +38,18 @@
         button:hover { background: var(--accent); }
         .reset-btn { border-color: var(--gold); color: var(--gold); }
         .special-btn { background: var(--purple); border: none; font-size: 0.8rem; }
-        
-        #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
-        .modal-content { background: var(--panel); padding: 40px; border-radius: 15px; max-width: 600px; border: 2px solid var(--gold); line-height: 1.6; }
     </style>
 </head>
 <body>
 
 <div id="help-modal">
     <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.1</h2>
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.2</h2>
         <ul>
-            <li><strong>NDO:</strong> Resets to standard New Deck Order (Clubs/Hearts down, Spades/Diamonds up).</li>
-            <li><strong>Gilbreth:</strong> Simulates a riffle of the top half into the reversed bottom half.</li>
-            <li><strong>Faro OUT:</strong> Top/Bottom cards stay at 52 and 1.</li>
-            <li><strong>Faro IN:</strong> Top card moves to Pos 51.</li>
-            <li><strong>Reveal Bottom:</strong> Flips the grid to show card 1 at the top-left.</li>
+            <li><strong>Manual Move:</strong> Click a card to select it, then click another to swap them.</li>
+            <li><strong>Gilbreth:</strong> Riffles the top half into the reversed bottom half.</li>
+            <li><strong>Faro OUT:</strong> Top and Bottom cards stay fixed.</li>
+            <li><strong>Faro IN:</strong> Top card shifts into second position.</li>
         </ul>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
     </div>
@@ -88,7 +85,7 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.1</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.2</span></h1>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
@@ -110,6 +107,7 @@
     let deck = new Array(52);
     let keyCards = [];
     let isReversed = false;
+    let selectedIndex = null;
 
     function renderDeck() {
         const container = document.getElementById('deck');
@@ -120,9 +118,24 @@
             const div = document.createElement('div');
             div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
             if(keyCards.includes(card)) div.classList.add('is-key');
+            if(selectedIndex === i) div.classList.add('selected');
             div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
+            div.onclick = () => handleManualSwap(i);
             container.appendChild(div);
         });
+    }
+
+    function handleManualSwap(i) {
+        if (selectedIndex === null) {
+            selectedIndex = i;
+        } else {
+            const cardA = deck[selectedIndex];
+            const cardB = deck[i];
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`SWAP: ${cardA} ↔ ${cardB}`);
+            selectedIndex = null;
+        }
+        renderDeck();
     }
 
     function toggleReveal() { isReversed = !isReversed; logMove(isReversed ? "REVEAL: Bottom-Up" : "REVEAL: Top-Down"); renderDeck(); }
@@ -141,13 +154,12 @@
     }
 
     function gilbrethShuffle() {
-        // Gilbreth: Reverse one half, then riffle (simulated with Faro OUT logic)
         let bottomHalf = deck.slice(0, 26).reverse();
         let topHalf = deck.slice(26, 52);
         let res = [];
         for(let i = 0; i < 26; i++) { res.push(bottomHalf[i]); res.push(topHalf[i]); }
         deck = res;
-        logMove("GILBRETH Shuffle Applied");
+        logMove("GILBRETH Shuffle");
         renderDeck();
     }
 
@@ -155,7 +167,7 @@
         let p6Hole = [deck[51 - 11], deck[51 - 5]];
         if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[0];
         let flop = [deck[51-13], deck[51-14], deck[51-15]];
-        logMove(`Holdem Dealer: ${p6Hole.join(' ')} | Flop: [${flop.join(' ')}]`);
+        logMove(`Holdem P6: ${p6Hole.join(' ')} | Flop: [${flop.join(' ')}]`);
     }
 
     function pokerCheck() {
