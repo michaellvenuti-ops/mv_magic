@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v5.2 - Reversed Data Logic</title>
+    <title>Virtual Card Lab v5.5 - Shuffle Comparison</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
             --gold: #ffb703; --text: #f1faee;
             --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            --coach-purple: #9d4edd; --compare-blue: #0077b6;
         }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
         
-        #sidebar { width: 340px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); }
-        .history-log { flex-grow: 1; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 100px; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
         .history-entry { border-bottom: 1px solid #222; padding: 4px 0; }
 
         #lab-main { flex-grow: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
@@ -32,6 +33,13 @@
         button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 10px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
         button:hover { background: var(--accent); }
         .reset-btn { border-color: var(--gold); color: var(--gold); }
+        .purple-btn { background: var(--coach-purple); border: none; margin-bottom: 5px; }
+        
+        .coach-panel { background: #222; padding: 15px; border-radius: 8px; font-size: 0.75rem; margin-top: 10px; border: 1px solid var(--coach-purple); display: none; }
+        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; text-align: center; }
+        .compare-val { font-size: 1.1rem; color: var(--gold); font-weight: bold; padding: 5px; background: #333; border-radius: 4px; }
+        .cycle-box { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 10px; align-items: center; }
+        .cycle-step { background: #444; padding: 2px 5px; border-radius: 3px; color: var(--gold); font-weight: bold; font-size: 0.7rem; }
     </style>
 </head>
 <body>
@@ -39,8 +47,34 @@
 <div id="sidebar">
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
-    <button onclick="saveStack()">💾 Save Current</button>
-    <button onclick="loadStack()" style="margin-top:5px;">📂 Load Saved</button>
+    
+    <button class="purple-btn" onclick="toggleCoach()">🎓 Toggle Stack Coach</button>
+    <button class="purple-btn" style="background:var(--compare-blue)" onclick="pokerCheck()">🃏 6-Player Poker Test</button>
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; padding: 8px 0; color:var(--gold); font-weight:bold; font-size:0.75rem;">
+        <span>BOTTOM DEAL ENABLED</span>
+        <input type="checkbox" id="bottom-deal-toggle">
+    </div>
+
+    <div id="coach-info" class="coach-panel">
+        <div style="font-size: 0.85rem; border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 10px;">
+            Card: <strong id="card-name" style="color:var(--gold)">--</strong> | Pos: <strong id="card-pos">--</strong>
+        </div>
+        
+        <strong>Shuffle Comparison:</strong>
+        <div class="compare-grid">
+            <div><small>OUT-FARO</small><div id="out-dest" class="compare-val">--</div></div>
+            <div><small>IN-FARO</small><div id="in-dest" class="compare-val">--</div></div>
+        </div>
+
+        <div style="margin-top:15px; font-weight: bold;">8-Shuffle Out-Cycle:</div>
+        <div id="cycle-display" class="cycle-box"></div>
+    </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px;">
+        <button onclick="saveStack()" style="flex:1">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1">📂 Load</button>
+    </div>
 </div>
 
 <div id="lab-main">
@@ -62,6 +96,7 @@
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = new Array(52);
     let selectedIndex = null;
+    let coachActive = false;
 
     const MNEMONICA_RAW = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
     const CHASED_VALS = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
@@ -69,7 +104,6 @@
     function renderDeck() {
         const container = document.getElementById('deck');
         container.innerHTML = '';
-        // View: Index 51 (Visual 52) to Index 0 (Visual 1)
         for (let i = 51; i >= 0; i--) {
             let card = deck[i];
             const div = document.createElement('div');
@@ -82,13 +116,72 @@
     }
 
     function selectCard(i) {
+        if(coachActive) { analyzeCard(i); return; }
         if(selectedIndex === null) { selectedIndex = i; } 
         else {
             [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
-            logMove(`Swap: pos ${selectedIndex+1} <-> ${i+1}`);
+            logMove(`Swap: ${deck[i]} <-> ${deck[selectedIndex]}`);
             selectedIndex = null;
         }
         renderDeck();
+    }
+
+    function toggleCoach() {
+        coachActive = !coachActive;
+        document.getElementById('coach-info').style.display = coachActive ? 'block' : 'none';
+        logMove(coachActive ? "COACH: Active" : "COACH: Off");
+        selectedIndex = null;
+        renderDeck();
+    }
+
+    function analyzeCard(idx) {
+        const cardName = deck[idx];
+        const curPos = idx + 1; // 1-based
+        document.getElementById('card-name').innerText = cardName;
+        document.getElementById('card-pos').innerText = curPos;
+        
+        // Single Step Comparisons (1-based math)
+        let outDest = curPos <= 26 ? (curPos * 2) - 1 : (curPos - 26) * 2;
+        let inDest = curPos <= 26 ? (curPos * 2) : ((curPos - 26) * 2) - 1;
+        
+        document.getElementById('out-dest').innerText = outDest;
+        document.getElementById('in-dest').innerText = inDest;
+
+        // Cycle Visualizer (Out-Faro 8 Step)
+        let cycle = [];
+        let tempPos = curPos;
+        for(let s = 0; s < 9; s++) {
+            cycle.push(tempPos);
+            tempPos = tempPos <= 26 ? (tempPos * 2) - 1 : (tempPos - 26) * 2;
+        }
+        document.getElementById('cycle-display').innerHTML = cycle.map((p, i) => `<div class="cycle-step" title="Shuffle ${i}">${p}</div>`).join('→');
+        
+        selectedIndex = idx;
+        renderDeck();
+    }
+
+    function faroShuffle(isIn) {
+        let botHalf = deck.slice(0, 26);
+        let topHalf = deck.slice(26, 52); 
+        let res = [];
+        for(let i = 0; i < 26; i++) {
+            if(isIn) { res.push(botHalf[i]); res.push(topHalf[i]); }
+            else { res.push(topHalf[i]); res.push(botHalf[i]); }
+        }
+        deck = res;
+        logMove(isIn ? "Faro IN" : "Faro OUT");
+        renderDeck();
+        if(coachActive && selectedIndex !== null) analyzeCard(selectedIndex);
+    }
+
+    function pokerCheck() {
+        let p6 = [];
+        const isBottom = document.getElementById('bottom-deal-toggle').checked;
+        for(let r = 0; r < 5; r++) {
+            if(r === 4 && isBottom) { p6.push(deck[0]); logMove("!! BOTTOM DEAL !!"); }
+            else { p6.push(deck[51 - (5 + (r * 6))]); }
+        }
+        logMove(`P6 Hand: ${p6.join(' ')}`);
     }
 
     function resetTo(type) {
@@ -97,39 +190,16 @@
             ['S','D'].forEach(s => values.forEach(v => temp.push(v+s)));
             ['C','H'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
             deck = temp;
-        }
-        else if(type === 'STEBBINS') {
-            let vIdx = 2; // Starts at 3
-            for(let i=0; i<52; i++) {
-                temp.push(values[vIdx % 13] + sKeys[i % 4]);
-                vIdx += 3;
-            }
-            deck = temp.reverse(); // Now 3C is at index 51 (Visual 52)
-        }
-        else if(type === 'MNEMONICA') {
-            deck = [...MNEMONICA_RAW].reverse(); // Now 4C is index 51 (Visual 52)
-        }
-        else if(type === 'MY_ORDER') {
-            CHASED_VALS.forEach(v => {
-                sKeys.forEach(s => temp.push(v + s));
-            });
-            deck = temp.reverse(); // Now Q♣ is index 51 (Visual 52)
+        } else if(type === 'STEBBINS') {
+            let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
+            deck = temp.reverse();
+        } else if(type === 'MNEMONICA') {
+            deck = [...MNEMONICA_RAW].reverse();
+        } else if(type === 'MY_ORDER') {
+            CHASED_VALS.forEach(v => sKeys.forEach(s => temp.push(v + s)));
+            deck = temp.reverse();
         }
         logMove(`RESET: ${type}`);
-        renderDeck();
-    }
-
-    function faroShuffle(isIn) {
-        let h = 26;
-        let p1 = deck.slice(0, h);
-        let p2 = deck.slice(h);
-        let res = [];
-        for(let i=0; i<h; i++) {
-            if(isIn) { res.push(p1[i]); res.push(p2[i]); }
-            else { res.push(p2[i]); res.push(p1[i]); }
-        }
-        deck = res;
-        logMove(isIn ? "Faro IN" : "Faro OUT");
         renderDeck();
     }
 
