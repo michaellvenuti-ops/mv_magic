@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v6.3 - AH to AS Order</title>
+    <style>
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            --poker-blue: #0077b6; --green: #2b9348; --purple: #7209b7;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 80px; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.8rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        .history-entry { border-bottom: 1px solid #222; padding: 4px 0; }
 
+        #lab-main { flex-grow: 1; padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column; position: relative; }
+        .header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .help-btn { background: var(--gold); color: black; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
+        
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 10px; margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+
+        .card { 
+            background: white; color: black; border-radius: 6px; padding: 15px 5px; text-align: center; 
+            font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; user-select: none; 
+            box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
+        }
+        .card.red { color: #d90429; }
+        .card.selected { outline: 4px solid var(--gold); transform: translateY(-5px); z-index: 10; box-shadow: 0 0 20px var(--gold); }
+        .card.is-key { border: 3px solid var(--gold); box-shadow: 0 0 15px var(--gold); }
+        .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+        button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 10px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
+        button:hover { background: var(--accent); }
+        .reset-btn { border-color: var(--gold); color: var(--gold); }
+        .special-btn { background: var(--purple); border: none; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div id="help-modal">
+    <div class="modal-content">
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.3</h2>
+        <ul>
+            <li><strong>Bottom Deal:</strong> Forces Player 6 to take the card at Position 1.</li>
+            <li><strong>Indexing:</strong> Pos 1 is the Bottom card. Pos 52 is the Top card.</li>
+            <li><strong>NDO:</strong> Starts at AH (Pos 1) and ends at AS (Pos 52).</li>
+            <li><strong>Manual Swap:</strong> Click two cards to swap their positions.</li>
+        </ul>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
+    </div>
+</div>
+
+<div id="sidebar">
+    <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
+    <div id="history" class="history-log"></div>
+    
+    <button class="special-btn" onclick="toggleReveal()" style="margin-bottom:10px;">🔄 Toggle Reveal View</button>
+    <button class="special-btn" onclick="gilbrethShuffle()" style="background:var(--poker-blue); margin-bottom:10px;">🧬 Gilbreth Shuffle</button>
+    
+    <div style="margin: 5px 0; border-top: 1px solid #333; padding-top:10px;">
+        <button style="width:100%; margin-bottom:5px; background:var(--poker-blue)" onclick="pokerCheck()">🃏 6-Player Draw Deal</button>
+        <button style="width:100%; background:var(--green)" onclick="texasHoldemCheck()">🌵 Texas Hold'em Deal</button>
+    </div>
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; padding: 8px 0; color:var(--gold); font-weight:bold; font-size:0.75rem;">
+        <span>BOTTOM DEAL ENABLED</span>
+        <input type="checkbox" id="bottom-deal-toggle">
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-top:10px;">
+        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">TRACK CARDS</label>
+        <input type="text" id="key-card-input" placeholder="e.g. AS, 3C" oninput="updateKeyCards()" style="width:100%; background:#000; color:white; border:1px solid #555; padding:5px; margin-top:5px; border-radius:3px;">
+    </div>
+
+    <div style="margin-top:auto; display:flex; gap:5px; padding-top:10px;">
+        <button onclick="saveStack()" style="flex:1">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1">📂 Load</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <div class="header-bar">
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.3</span></h1>
+        <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
+    </div>
+    <div id="deck" class="deck-display"></div>
+    <div class="controls">
+        <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed Ends)</button>
+        <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Top Shifts)</button>
+        <button onclick="randomShuffle()">Shuffle</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO (AH to AS)</button>
+        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
+    </div>
+</div>
+
+<script>
+    const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const sKeys = ['C','H','S','D'];
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = new Array(52);
+    let keyCards = [];
+    let isReversed = false;
+    let selectedIndex = null;
+
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        // Same layout: Row 1 is cards 52 down to 40.
+        const order = isReversed ? Array.from({length: 52}, (_, i) => i) : Array.from({length: 52}, (_, i) => 51 - i);
+        order.forEach(i => {
+            let card = deck[i];
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if(keyCards.includes(card)) div.classList.add('is-key');
+            if(selectedIndex === i) div.classList.add('selected');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
+            div.onclick = () => handleManualSwap(i);
+            container.appendChild(div);
+        });
+    }
+
+    function handleManualSwap(i) {
+        if (selectedIndex === null) {
+            selectedIndex = i;
+        } else {
+            const cardA = deck[selectedIndex];
+            const cardB = deck[i];
+            [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+            logMove(`SWAP: ${cardA} ↔ ${cardB}`);
+            selectedIndex = null;
+        }
+        renderDeck();
+    }
+
+    function toggleReveal() { isReversed = !isReversed; logMove(isReversed ? "VIEW: Bottom-Up" : "VIEW: Top-Down"); renderDeck(); }
+
+    function faroShuffle(type) {
+        let bottomHalf = deck.slice(0, 26);
+        let topHalf = deck.slice(26, 52); 
+        let res = [];
+        for(let i = 0; i < 26; i++) {
+            if(type === 'OUT') { res.push(bottomHalf[i]); res.push(topHalf[i]); }
+            else { res.push(topHalf[i]); res.push(bottomHalf[i]); }
+        }
+        deck = res;
+        logMove(`Faro ${type}`);
+        renderDeck();
+    }
+
+    function gilbrethShuffle() {
+        let bottomHalf = deck.slice(0, 26).reverse();
+        let topHalf = deck.slice(26, 52);
+        let res = [];
+        for(let i = 0; i < 26; i++) { res.push(bottomHalf[i]); res.push(topHalf[i]); }
+        deck = res;
+        logMove("GILBRETH Shuffle");
+        renderDeck();
+    }
+
+    function texasHoldemCheck() {
+        let p6Hole = [deck[51 - 11], deck[51 - 5]];
+        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[0];
+        let flop = [deck[51-13], deck[51-14], deck[51-15]];
+        logMove(`Holdem P6: ${p6Hole.join(' ')} | Flop: [${flop.join(' ')}]`);
+    }
+
+    function pokerCheck() {
+        let p6 = [];
+        const isBottom = document.getElementById('bottom-deal-toggle').checked;
+        for(let r = 0; r < 5; r++) {
+            let idx = isBottom && r === 4 ? 0 : 51 - (5 + (r * 6));
+            p6.push(deck[idx]);
+        }
+        logMove(`Draw P6: ${p6.join(' ')}`);
+    }
+
+    function updateKeyCards() {
+        const val = document.getElementById('key-card-input').value.toUpperCase();
+        keyCards = val.split(',').map(s => s.trim());
+        renderDeck();
+    }
+
+    function resetTo(type) {
+        let temp = [];
+        if(type === 'NDO') {
+            // Updated NDO: AH (Pos 1) to AS (Pos 52)
+            ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['D','S'].forEach(s => values.forEach(v => temp.push(v+s)));
+            deck = temp;
+        } else if(type === 'STEBBINS') {
+            let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
+            deck = temp.reverse();
+        } else if(type === 'MNEMONICA') {
+            const raw = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+            deck = raw.reverse();
+        } else if(type === 'MY_ORDER') {
+            const vals = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+            vals.forEach(v => sKeys.forEach(s => temp.push(v + s)));
+            deck = temp.reverse();
+        }
+        logMove(`RESET: ${type}`);
+        renderDeck();
+    }
+
+    function randomShuffle() {
+        for (let i = 51; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        logMove("Shuffle");
+        renderDeck();
+    }
+
+    function logMove(m) {
+        const h = document.getElementById('history');
+        const e = document.createElement('div');
+        e.className = 'history-entry';
+        e.innerText = `> ${m}`;
+        h.prepend(e);
+    }
+
+    function saveStack() { localStorage.setItem('userStack', JSON.stringify(deck)); logMove("Saved."); }
+    function loadStack() { const s = localStorage.getItem('userStack'); if(s){ deck = JSON.parse(s); renderDeck(); } }
+
+    window.onload = () => resetTo('NDO');
+</script>
+</body>
+</html>
