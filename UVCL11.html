@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.3 - AH to AS Order</title>
+    <title>Virtual Card Lab v6.4 - Top-Down Logic</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -44,12 +44,12 @@
 
 <div id="help-modal">
     <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.3</h2>
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.4</h2>
         <ul>
-            <li><strong>Bottom Deal:</strong> Forces Player 6 to take the card at Position 1.</li>
-            <li><strong>Indexing:</strong> Pos 1 is the Bottom card. Pos 52 is the Top card.</li>
-            <li><strong>NDO:</strong> Starts at AH (Pos 1) and ends at AS (Pos 52).</li>
-            <li><strong>Manual Swap:</strong> Click two cards to swap their positions.</li>
+            <li><strong>Indexing:</strong> Pos 1 = Top Left. Pos 52 = Bottom Right.</li>
+            <li><strong>NDO:</strong> AH is at Pos 1. AS is at Pos 52.</li>
+            <li><strong>Faro OUT:</strong> Keeps Pos 1 and Pos 52 fixed.</li>
+            <li><strong>Faro IN:</strong> Moves Pos 1 into Pos 2.</li>
         </ul>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
     </div>
@@ -59,7 +59,6 @@
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
     
-    <button class="special-btn" onclick="toggleReveal()" style="margin-bottom:10px;">🔄 Toggle Reveal View</button>
     <button class="special-btn" onclick="gilbrethShuffle()" style="background:var(--poker-blue); margin-bottom:10px;">🧬 Gilbreth Shuffle</button>
     
     <div style="margin: 5px 0; border-top: 1px solid #333; padding-top:10px;">
@@ -68,13 +67,13 @@
     </div>
     
     <div style="display:flex; justify-content:space-between; align-items:center; padding: 8px 0; color:var(--gold); font-weight:bold; font-size:0.75rem;">
-        <span>BOTTOM DEAL ENABLED</span>
+        <span>BOTTOM DEAL (Pos 52)</span>
         <input type="checkbox" id="bottom-deal-toggle">
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-top:10px;">
         <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">TRACK CARDS</label>
-        <input type="text" id="key-card-input" placeholder="e.g. AS, 3C" oninput="updateKeyCards()" style="width:100%; background:#000; color:white; border:1px solid #555; padding:5px; margin-top:5px; border-radius:3px;">
+        <input type="text" id="key-card-input" placeholder="e.g. AH, AS" oninput="updateKeyCards()" style="width:100%; background:#000; color:white; border:1px solid #555; padding:5px; margin-top:5px; border-radius:3px;">
     </div>
 
     <div style="margin-top:auto; display:flex; gap:5px; padding-top:10px;">
@@ -85,15 +84,15 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.3</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.4</span></h1>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
     <div class="controls">
-        <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed Ends)</button>
-        <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Top Shifts)</button>
+        <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed 1/52)</button>
+        <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Shift 1)</button>
         <button onclick="randomShuffle()">Shuffle</button>
-        <button class="reset-btn" onclick="resetTo('NDO')">NDO (AH to AS)</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO (AH -> AS)</button>
         <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
         <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
         <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
@@ -106,15 +105,13 @@
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = new Array(52);
     let keyCards = [];
-    let isReversed = false;
     let selectedIndex = null;
 
     function renderDeck() {
         const container = document.getElementById('deck');
         container.innerHTML = '';
-        // Same layout: Row 1 is cards 52 down to 40.
-        const order = isReversed ? Array.from({length: 52}, (_, i) => i) : Array.from({length: 52}, (_, i) => 51 - i);
-        order.forEach(i => {
+        // Index 0 is now Top Left (Position 1), Index 51 is Bottom Right (Position 52)
+        for (let i = 0; i < 52; i++) {
             let card = deck[i];
             const div = document.createElement('div');
             div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
@@ -123,7 +120,7 @@
             div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suits[card.slice(-1)]}`;
             div.onclick = () => handleManualSwap(i);
             container.appendChild(div);
-        });
+        }
     }
 
     function handleManualSwap(i) {
@@ -139,15 +136,20 @@
         renderDeck();
     }
 
-    function toggleReveal() { isReversed = !isReversed; logMove(isReversed ? "VIEW: Bottom-Up" : "VIEW: Top-Down"); renderDeck(); }
-
     function faroShuffle(type) {
-        let bottomHalf = deck.slice(0, 26);
-        let topHalf = deck.slice(26, 52); 
+        let topHalf = deck.slice(0, 26);
+        let bottomHalf = deck.slice(26, 52); 
         let res = [];
         for(let i = 0; i < 26; i++) {
-            if(type === 'OUT') { res.push(bottomHalf[i]); res.push(topHalf[i]); }
-            else { res.push(topHalf[i]); res.push(bottomHalf[i]); }
+            if(type === 'OUT') {
+                // Pos 1 and Pos 52 fixed
+                res.push(topHalf[i]); 
+                res.push(bottomHalf[i]);
+            } else {
+                // Pos 1 moves to Pos 2
+                res.push(bottomHalf[i]);
+                res.push(topHalf[i]);
+            }
         }
         deck = res;
         logMove(`Faro ${type}`);
@@ -155,19 +157,20 @@
     }
 
     function gilbrethShuffle() {
-        let bottomHalf = deck.slice(0, 26).reverse();
-        let topHalf = deck.slice(26, 52);
+        let topHalf = deck.slice(0, 26).reverse();
+        let bottomHalf = deck.slice(26, 52);
         let res = [];
-        for(let i = 0; i < 26; i++) { res.push(bottomHalf[i]); res.push(topHalf[i]); }
+        for(let i = 0; i < 26; i++) { res.push(topHalf[i]); res.push(bottomHalf[i]); }
         deck = res;
         logMove("GILBRETH Shuffle");
         renderDeck();
     }
 
     function texasHoldemCheck() {
-        let p6Hole = [deck[51 - 11], deck[51 - 5]];
-        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[0];
-        let flop = [deck[51-13], deck[51-14], deck[51-15]];
+        // Top-down deal: 6 players, P1 is seat 1, P6 is dealer
+        let p6Hole = [deck[11], deck[5]]; // 12th and 6th cards for a 6-player deal
+        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
+        let flop = [deck[12], deck[13], deck[14]]; // After 12 hole cards
         logMove(`Holdem P6: ${p6Hole.join(' ')} | Flop: [${flop.join(' ')}]`);
     }
 
@@ -175,7 +178,7 @@
         let p6 = [];
         const isBottom = document.getElementById('bottom-deal-toggle').checked;
         for(let r = 0; r < 5; r++) {
-            let idx = isBottom && r === 4 ? 0 : 51 - (5 + (r * 6));
+            let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
             p6.push(deck[idx]);
         }
         logMove(`Draw P6: ${p6.join(' ')}`);
@@ -190,20 +193,17 @@
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
-            // Updated NDO: AH (Pos 1) to AS (Pos 52)
-            ['H','C'].forEach(s => values.forEach(v => temp.push(v+s)));
-            ['D','S'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['H','C','D','S'].forEach(s => values.forEach(v => temp.push(v+s)));
             deck = temp;
         } else if(type === 'STEBBINS') {
             let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
-            deck = temp.reverse();
+            deck = temp;
         } else if(type === 'MNEMONICA') {
-            const raw = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
-            deck = raw.reverse();
+            deck = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
         } else if(type === 'MY_ORDER') {
             const vals = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
             vals.forEach(v => sKeys.forEach(s => temp.push(v + s)));
-            deck = temp.reverse();
+            deck = temp;
         }
         logMove(`RESET: ${type}`);
         renderDeck();
