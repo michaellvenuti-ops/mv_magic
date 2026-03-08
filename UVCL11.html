@@ -198,9 +198,8 @@
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
-            // Your exact NDO logic:
-            ['S','D'].forEach(s => values.forEach(v => temp.push(v+s)));
-            ['C','H'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
+            ['S','D'].forEach(s => values.forEach(v => deck.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => deck.push(v+s)));
             deck = temp;
         } else if(type === 'STEBBINS') {
             let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
