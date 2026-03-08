@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v7.5 - Stack Import & Export</title>
+    <title>Virtual Card Lab v7.7 - Utilities Expanded</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
             --gold: #ffb703; --text: #f1faee;
             --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
             --poker-blue: #0077b6; --green: #2b9348; --purple: #7209b7;
+            --btn-bg: #2a2a2a; --btn-border: #444;
         }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
         
@@ -32,97 +33,99 @@
         .card.is-tracked { border: 3px solid var(--gold) !important; box-shadow: 0 0 15px var(--gold); transform: scale(1.05); z-index: 5; }
         .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
 
+        button { 
+            background: var(--btn-bg); color: var(--text); border: 1px solid var(--btn-border); 
+            padding: 10px; cursor: pointer; font-size: 0.7rem; text-transform: uppercase; 
+            font-weight: bold; border-radius: 4px; transition: all 0.2s;
+        }
+        button:hover { background: var(--accent); border-color: var(--accent); }
+        
         #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
         .modal-content { background: var(--panel); border: 2px solid var(--gold); padding: 30px; border-radius: 15px; max-width: 500px; color: var(--text); }
-        .help-btn { background: var(--gold); color: black; border: none; padding: 8px 15px; font-weight: bold; cursor: pointer; border-radius: 4px; }
 
-        .density-container { background: #222; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
-        .density-bar { height: 10px; width: 100%; background: #444; border-radius: 5px; display: flex; overflow: hidden; margin-top: 5px; border: 1px solid #555; }
-        .bar-red { background: var(--accent); height: 100%; transition: width 0.3s; }
-        .bar-black { background: #000; height: 100%; transition: width 0.3s; }
-
+        .section-label { font-size:0.7rem; font-weight:bold; color:var(--gold); display: block; margin-bottom: 5px; }
+        .io-box { width: 100%; background: #000; color: var(--gold); border: 1px solid #444; padding: 8px; font-size: 0.7rem; border-radius: 4px; margin-top: 5px; font-family: monospace; resize: vertical; box-sizing: border-box; }
         .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
-        button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 10px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; }
-        button:hover { background: var(--accent); }
-        
-        .preset-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 10px; }
-        .preset-btn { background: #333; color: var(--gold); border: 1px solid #555; padding: 5px; font-size: 0.65rem; }
-        
-        #tracker-input { width: 100%; background: #000; color: #00f5d4; border: 1px solid var(--gold); padding: 8px; border-radius: 4px; margin-top: 5px; font-family: monospace; }
-        .io-box { width: 100%; background: #000; color: var(--gold); border: 1px solid #444; padding: 8px; font-size: 0.7rem; border-radius: 4px; margin-top: 5px; font-family: monospace; resize: vertical; }
     </style>
 </head>
 <body>
 
 <div id="help-modal">
     <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v7.5</h2>
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v7.7</h2>
         <ul style="line-height:1.6;">
-            <li><strong>Import/Export:</strong> Paste a stack to load it, or copy your current stack for external storage.</li>
-            <li><strong>UNDO:</strong> Reverts the last move.</li>
-            <li><strong>Presets:</strong> Instantly track Aces or the Spade Royal Flush.</li>
-            <li><strong>Bottom Deal:</strong> Toggles dealer position for Poker Sims.</li>
+            <li><strong>Reverse Deck:</strong> Flips the entire sequence (1 becomes 52).</li>
+            <li><strong>Randomize:</strong> A full wash/shuffle of the deck.</li>
+            <li><strong>Bottom Deal:</strong> Influences the dealer's final card in Poker Sims.</li>
+            <li><strong>Undo:</strong> Step back through 20 moves of history.</li>
         </ul>
-        <button class="help-btn" onclick="toggleHelp(false)">Close Manual</button>
+        <button onclick="toggleHelp(false)">Close Manual</button>
     </div>
 </div>
 
 <div id="sidebar">
-    <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
+    <span class="section-label">LOGS</span>
     <div id="history" class="history-log"></div>
     
-    <button onclick="undoMove()" style="width:100%; margin-bottom:10px; background:#444; color:var(--gold); border:1px solid var(--gold);">↩ Undo Last Move</button>
+    <button onclick="undoMove()" style="width:100%; margin-bottom:10px; border-color: var(--gold); color: var(--gold);">↩ Undo Last Move</button>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px; border-left: 3px solid var(--gold);">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">CARD TRACKER</label>
+        <span class="section-label">CARD TRACKER</span>
         <input type="text" id="tracker-input" placeholder="e.g. AS, 4H, JD" oninput="renderDeck()">
-        <div class="preset-grid">
-            <button class="preset-btn" onclick="applyPreset('ACES')">All Aces</button>
-            <button class="preset-btn" onclick="applyPreset('SPADE_ROYAL')">Spade Flush</button>
-            <button class="preset-btn" onclick="applyPreset('CLEAR')">Clear All</button>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:5px; margin-top:5px;">
+            <button onclick="applyPreset('ACES')">Aces</button>
+            <button onclick="applyPreset('SPADE_ROYAL')">Spade</button>
+            <button onclick="applyPreset('CLEAR')">Clear</button>
         </div>
     </div>
 
-    <div class="density-container">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">STACK I/O</label>
-        <textarea id="io-area" class="io-box" rows="2" placeholder="Paste stack here to import..."></textarea>
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px;">
+        <span class="section-label">STACK I/O</span>
+        <textarea id="io-area" class="io-box" rows="2" placeholder="Paste stack..."></textarea>
         <div style="display:flex; gap:5px; margin-top:5px;">
-            <button style="flex:1; background:var(--green); font-size:0.6rem;" onclick="importStack()">📥 Import</button>
-            <button style="flex:1; background:var(--poker-blue); font-size:0.6rem;" onclick="exportStack()">📤 Export</button>
+            <button style="flex:1;" onclick="importStack()">Import</button>
+            <button style="flex:1;" onclick="exportStack()">Export</button>
         </div>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <label style="font-size:0.7rem; font-weight:bold; color:var(--gold)">POKER SIMS</label>
-        <button style="width:100%; margin-top:5px; background:var(--accent)" onclick="pokerCheck()">🃏 6P Draw Deal</button>
-        <button style="width:100%; margin-top:5px; background:var(--purple)" onclick="texasHoldemCheck()">🌵 Hold'em Deal</button>
+        <span class="section-label">POKER SIMS</span>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
+            <button onclick="pokerCheck(4)">4P Draw</button>
+            <button onclick="holdemCheck(4)">4P Hold'em</button>
+            <button onclick="pokerCheck(5)">5P Draw</button>
+            <button onclick="holdemCheck(5)">5P Hold'em</button>
+            <button onclick="pokerCheck(6)">6P Draw</button>
+            <button onclick="holdemCheck(6)">6P Hold'em</button>
+        </div>
         <div style="display:flex; justify-content:space-between; align-items:center; padding-top:10px; color:var(--gold); font-weight:bold; font-size:0.7rem;">
-            <span>BOTTOM DEAL</span>
+            <span>BOTTOM DEAL TOGGLE</span>
             <input type="checkbox" id="bottom-deal-toggle">
         </div>
     </div>
 
     <div style="margin-top:auto; display:flex; gap:5px; padding-top:10px;">
-        <button onclick="saveStack()" style="flex:1; background:#333;">💾 Save</button>
-        <button onclick="loadStack()" style="flex:1; background:#333;">📂 Load</button>
+        <button onclick="saveStack()" style="flex:1;">💾 Save</button>
+        <button onclick="loadStack()" style="flex:1;">📂 Load</button>
     </div>
 </div>
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.5</span></h1>
-        <button class="help-btn" onclick="toggleHelp(true)">❔ Help</button>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v7.7</span></h1>
+        <button onclick="toggleHelp(true)">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
     <div class="controls">
-        <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT</button>
-        <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN</button>
-        <button onclick="gilbrethShuffle()" style="background:var(--purple); color:white;">🧬 Gilbreth</button>
-        <button onclick="randomShuffle()">Shuffle</button>
-        <button onclick="resetTo('NDO')" style="border-color: var(--gold); color: var(--gold);">NDO (Classic)</button>
-        <button onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button onclick="faroShuffle('OUT')" style="border-bottom: 3px solid var(--gold)">Faro OUT</button>
+        <button onclick="faroShuffle('IN')" style="border-bottom: 3px solid var(--poker-blue)">Faro IN</button>
+        <button onclick="gilbrethShuffle()" style="border-bottom: 3px solid var(--purple)">🧬 Gilbreth</button>
+        <button onclick="randomShuffle()" style="background: #333;">🎲 Randomize</button>
+        <button onclick="reverseDeck()">↔ Reverse</button>
+        <button onclick="resetTo('NDO')" style="color: var(--gold);">NDO</button>
+        <button onclick="resetTo('STEBBINS')">Stebbins</button>
         <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
-        <button onclick="resetTo('MY_ORDER')" style="background: #444;">My CHASED</button>
+        <button onclick="resetTo('MY_ORDER')">CHASED</button>
     </div>
 </div>
 
@@ -151,7 +154,7 @@
         box.value = deck.join(', ');
         box.select();
         document.execCommand('copy');
-        logMove("Stack exported and copied");
+        logMove("Stack exported & copied");
     }
 
     function importStack() {
@@ -159,13 +162,41 @@
         if(!val) return;
         const newDeck = val.split(',').map(s => s.trim().toUpperCase()).filter(s => s.length > 0);
         if(newDeck.length === 52) {
-            saveState();
-            deck = newDeck;
-            renderDeck();
-            logMove("Custom stack imported");
-        } else {
-            alert("Invalid stack. Must be exactly 52 cards.");
+            saveState(); deck = newDeck; renderDeck(); logMove("Imported stack");
+        } else { alert("Must be exactly 52 cards."); }
+    }
+
+    function pokerCheck(players) {
+        let hand = [];
+        const isBottom = document.getElementById('bottom-deal-toggle').checked;
+        for(let r = 0; r < 5; r++) {
+            let idx = (isBottom && r === 4) ? 51 : ((players - 1) + (r * players));
+            hand.push(deck[idx]);
         }
+        logMove(`${players}P Draw Dealer: ${hand.join(' ')}`);
+    }
+
+    function holdemCheck(players) {
+        let hole = [deck[players*2 - 2], deck[players*2 - 1]];
+        if(document.getElementById('bottom-deal-toggle').checked) hole[1] = deck[51];
+        logMove(`${players}P Holdem Dealer: ${hole.join(' ')}`);
+    }
+
+    function reverseDeck() {
+        saveState();
+        deck.reverse();
+        logMove("Deck Reversed");
+        renderDeck();
+    }
+
+    function randomShuffle() {
+        saveState();
+        for (let i = 51; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        logMove("Full Randomization");
+        renderDeck();
     }
 
     function toggleHelp(show) { document.getElementById('help-modal').style.display = show ? 'flex' : 'none'; }
@@ -185,19 +216,6 @@
             div.onclick = () => handleManualSwap(i);
             container.appendChild(div);
         });
-        updateDensity();
-    }
-
-    function updateDensity() {
-        const calcRed = (s, e) => {
-            let r = 0; for(let i=s; i<e; i++) if(deck[i].includes('H') || deck[i].includes('D')) r++;
-            return (r / 26) * 100;
-        };
-        const tR = calcRed(0, 26); const bR = calcRed(26, 52);
-        document.getElementById('top-red-bar').style.width = tR + '%';
-        document.getElementById('top-black-bar').style.width = (100 - tR) + '%';
-        document.getElementById('bot-red-bar').style.width = bR + '%';
-        document.getElementById('bot-black-bar').style.width = (100 - bR) + '%';
     }
 
     function handleManualSwap(i) {
@@ -228,21 +246,6 @@
         deck = res; logMove("GILBRETH"); renderDeck();
     }
 
-    function pokerCheck() {
-        let p6 = []; const isBottom = document.getElementById('bottom-deal-toggle').checked;
-        for(let r = 0; r < 5; r++) {
-            let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
-            p6.push(deck[idx]);
-        }
-        logMove(`6P Dealer: ${p6.join(' ')}`);
-    }
-
-    function texasHoldemCheck() {
-        let p6Hole = [deck[11], deck[5]];
-        if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        logMove(`Holdem Dealer: ${p6Hole.join(' ')}`);
-    }
-
     function applyPreset(type) {
         const input = document.getElementById('tracker-input');
         if (type === 'ACES') input.value = "AH, AC, AD, AS";
@@ -271,15 +274,6 @@
             deck = temp;
         }
         logMove(`RESET: ${type}`); renderDeck();
-    }
-
-    function randomShuffle() {
-        saveState();
-        for (let i = 51; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [deck[i], deck[j]] = [deck[j], deck[i]];
-        }
-        logMove("Shuffle"); renderDeck();
     }
 
     function logMove(m) {
