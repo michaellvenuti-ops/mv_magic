@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v6.5 - NDO Precision</title>
+    <title>Virtual Card Lab v6.6 - Specific NDO</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
@@ -44,11 +44,12 @@
 
 <div id="help-modal">
     <div class="modal-content">
-        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.5</h2>
+        <h2 style="color:var(--gold); margin-top:0;">Lab Manual v6.6</h2>
         <ul>
-            <li><strong>Corrected NDO:</strong> AH→KH, AC→KC, AD→KD, AS→KS (modified for your specific end card request).</li>
-            <li><strong>Cut Deck:</strong> Enter a number to move that many cards from Top (Pos 1) to Bottom.</li>
-            <li><strong>Faro Logic:</strong> OUT keeps 1 & 52. IN moves 1 to 2.</li>
+            <li><strong>Indexing:</strong> Pos 1 is top-left. Pos 52 is bottom-right.</li>
+            <li><strong>Faro OUT:</strong> Keeps Pos 1 and 52 in place.</li>
+            <li><strong>Faro IN:</strong> Moves card 1 into the second slot.</li>
+            <li><strong>Manual Swap:</strong> Click a card, then click another to exchange them.</li>
         </ul>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='none'">Got it!</button>
     </div>
@@ -91,7 +92,7 @@
 
 <div id="lab-main">
     <div class="header-bar">
-        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.5</span></h1>
+        <h1 style="margin:0; font-size:1.5rem; color:var(--gold);">Virtual Card Lab <span style="font-size:0.8rem; color:#666;">v6.6</span></h1>
         <button class="help-btn" onclick="document.getElementById('help-modal').style.display='flex'">❔ Help</button>
     </div>
     <div id="deck" class="deck-display"></div>
@@ -99,7 +100,7 @@
         <button onclick="faroShuffle('OUT')" style="border-left: 5px solid var(--gold)">Faro OUT (Fixed 1/52)</button>
         <button onclick="faroShuffle('IN')" style="border-left: 5px solid var(--poker-blue)">Faro IN (Shift 1)</button>
         <button onclick="randomShuffle()">Shuffle</button>
-        <button class="reset-btn" onclick="resetTo('NDO')">NDO (A-K Flow)</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">NDO (Legacy Flow)</button>
         <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
         <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
         <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED</button>
@@ -175,7 +176,7 @@
     function texasHoldemCheck() {
         let p6Hole = [deck[11], deck[5]];
         if(document.getElementById('bottom-deal-toggle').checked) p6Hole[1] = deck[51];
-        logMove(`Holdem P6: ${p6Hole.join(' ')}`);
+        logMove(`Holdem P dealer: ${p6Hole.join(' ')}`);
     }
 
     function pokerCheck() {
@@ -185,7 +186,7 @@
             let idx = (isBottom && r === 4) ? 51 : (5 + (r * 6));
             p6.push(deck[idx]);
         }
-        logMove(`Draw P6: ${p6.join(' ')}`);
+        logMove(`Draw P dealer: ${p6.join(' ')}`);
     }
 
     function updateKeyCards() {
@@ -197,9 +198,9 @@
     function resetTo(type) {
         let temp = [];
         if(type === 'NDO') {
-            ['H','C','D','S'].forEach(s => {
-                values.forEach(v => temp.push(v+s));
-            });
+            // Your exact NDO logic:
+            ['S','D'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
             deck = temp;
         } else if(type === 'STEBBINS') {
             let v = 2; for(let i=0; i<52; i++) { temp.push(values[v%13] + sKeys[i%4]); v += 3; }
