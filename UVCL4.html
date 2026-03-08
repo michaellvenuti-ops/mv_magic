@@ -2,60 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Virtual Card Lab v5.0 - Persistent State</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v4.5 - Professional Suite</title>
     <style>
-        /* ... [Existing Styles from v4.0] ... */
-        :root { --gold: #ffb703; --accent: #d90429; }
-        .save-btn { background: var(--gold) !important; color: black !important; border: none !important; }
-        .save-btn:hover { background: #fff !important; }
+        :root {
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee; --btn-hover: #333;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            --save-green: #2a9d8f;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Sidebar */
+        #sidebar { width: 320px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 20px; box-shadow: 5px 0 15px rgba(0,0,0,0.5); }
+        .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .history-log { flex-grow: 1; background: #000; border: 1px solid #444; padding: 10px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 15px; }
+        .history-entry { border-bottom: 1px solid #222; padding: 5px 0; font-size: 0.8rem; }
+
+        /* Main Lab Area */
+        #lab-main { flex-grow: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; }
+        .search-container { margin-bottom: 20px; background: var(--panel); padding: 15px; border-radius: 8px; border: 1px solid #444; display: flex; gap: 10px; align-items: center; }
+        #search-input { flex-grow: 1; padding: 10px; background: #000; border: 1px solid var(--gold); color: white; border-radius: 4px; }
+
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 10px; margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid #333; }
+        
+        .card { 
+            background: white; color: black; border-radius: 6px; padding: 15px 5px; text-align: center; 
+            font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; user-select: none; 
+            box-shadow: var(--card-shadow); border: 1px solid #ccc; position: relative;
+        }
+        .card.red { color: #d90429; }
+        .card.selected { outline: 4px solid var(--gold); transform: translateY(-10px); z-index: 10; box-shadow: 0 10px 20px rgba(255,183,3,0.3); }
+        .card.highlight { background: var(--gold); transform: scale(1.1); z-index: 5; color: black !important; }
+        .card-index { position: absolute; top: 2px; left: 3px; font-size: 0.6rem; color: #666; }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+        button { background: #2a2a2a; color: var(--text); border: 1px solid #444; padding: 12px; cursor: pointer; font-size: 0.75rem; text-transform: uppercase; font-weight: bold; border-radius: 4px; transition: 0.2s; }
+        button:hover { background: var(--accent); color: white; border-color: white; }
+        
+        .reset-btn { border-color: var(--gold); color: var(--gold); }
+        .save-btn { background: var(--save-green); color: white; border: none; margin-bottom: 5px; }
+        .shuffle-btn { background: #4361ee; color: white; border: none; }
+        
+        .input-group { display: flex; gap: 5px; background: var(--panel); padding: 10px; border-radius: 8px; margin-top: 10px; border: 1px solid #333; }
+        input[type="number"] { background: #000; border: 1px solid #444; color: white; padding: 8px; border-radius: 4px; width: 60px; }
     </style>
 </head>
 <body>
-    <div class="controls">
-        <button class="save-btn" onclick="saveStackManual()">Save Snapshot</button>
-        <button onclick="loadSavedStack()">Restore Saved State</button>
+
+<div id="sidebar">
+    <div class="history-header">
+        <h2 style="color:var(--accent); margin:0; font-size:1.2rem;">LAB LOGS</h2>
+        <button onclick="clearHistory()" style="padding:2px 8px; font-size:0.6rem; background:transparent; border:1px solid #555; color:#888;">Clear</button>
     </div>
+    <div id="history" class="history-log"></div>
+    
+    <button class="save-btn" onclick="saveStack()">💾 Save Current Stack</button>
+    <button onclick="loadStack()" style="margin-bottom: 5px;">📂 Load Saved Stack</button>
+    <button class="shuffle-btn" onclick="randomShuffle()">🎲 Random Shuffle</button>
+
+    <div class="input-group">
+        <input type="number" id="cut-pos" value="1" min="1" max="52">
+        <button onclick="cutDeckManual()" style="flex-grow:1;">Cut Deck</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <div class="search-container">
+        <span style="color:var(--gold); font-weight:bold;">SEARCH:</span>
+        <input type="text" id="search-input" placeholder="Find Card (e.g. 3C, KH, 10S...)" onkeyup="searchCard()">
+        <button onclick="clearSearch()" style="background:transparent; border:none; color:var(--gold); cursor:pointer; font-weight:bold;">CLEAR</button>
+    </div>
+    
+    <div id="deck" class="deck-display"></div>
+
+    <div class="controls">
+        <button onclick="faroShuffle(true)">Faro IN</button>
+        <button onclick="faroShuffle(false)">Faro OUT</button>
+        <button onclick="gilbreath()">Gilbreath</button>
+        <button class="reset-btn" onclick="resetTo('NDO')">New Deck Order</button>
+        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins</button>
+        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED Order</button>
+    </div>
+</div>
 
 <script>
-    // --- PERSISTENCE LOGIC ---
-    function saveStackManual() {
-        localStorage.setItem('lab_custom_stack', JSON.stringify(deck));
-        logMove("Snapshot saved to browser memory.");
-        alert("Stack saved successfully!");
+    const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [];
+    let selectedIndex = null;
+
+    const MNEMONICA = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+    const MY_ORDER_VALS = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+
+    function getDisplay(cardStr) {
+        let s = cardStr.slice(-1);
+        let v = cardStr.slice(0, -1);
+        return v + suits[s];
     }
 
-    function loadSavedStack() {
-        let saved = localStorage.getItem('lab_custom_stack');
-        if (saved) {
-            deck = JSON.parse(saved);
-            logMove("Snapshot restored.");
-            renderDeck();
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        deck.forEach((card, i) => {
+            const isRed = card.includes('H') || card.includes('D');
+            const div = document.createElement('div');
+            div.className = `card ${isRed ? 'red' : ''}`;
+            if(selectedIndex === i) div.classList.add('selected');
+            div.innerHTML = `<span class="card-index">${i+1}</span>${getDisplay(card)}`;
+            div.onclick = () => selectCard(i);
+            container.appendChild(div);
+        });
+    }
+
+    function selectCard(i) {
+        if(selectedIndex === null) {
+            selectedIndex = i;
         } else {
-            alert("No saved stack found.");
+            let cardA = deck[selectedIndex];
+            let cardB = deck[i];
+            deck[selectedIndex] = cardB;
+            deck[i] = cardA;
+            logMove(`Swap: ${getDisplay(cardA)} <-> ${getDisplay(cardB)}`);
+            selectedIndex = null;
+        }
+        renderDeck();
+    }
+
+    function searchCard() {
+        const query = document.getElementById('search-input').value.toUpperCase();
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((cardDiv, i) => {
+            const cardName = deck[i].toUpperCase();
+            if (query && cardName.includes(query)) cardDiv.classList.add('highlight');
+            else cardDiv.classList.remove('highlight');
+        });
+    }
+
+    function clearSearch() {
+        document.getElementById('search-input').value = '';
+        searchCard();
+    }
+
+    function saveStack() {
+        localStorage.setItem('userStack', JSON.stringify(deck));
+        logMove("SYSTEM: Stack saved.");
+    }
+
+    function loadStack() {
+        const saved = localStorage.getItem('userStack');
+        if(saved) {
+            deck = JSON.parse(saved);
+            logMove("SYSTEM: Loaded custom stack.");
+            renderDeck();
         }
     }
 
-    // Auto-save on every move
+    function randomShuffle() {
+        for (let i = deck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+        logMove("SHUFFLE: Random mix applied.");
+        renderDeck();
+    }
+
     function logMove(msg) {
-        localStorage.setItem('lab_custom_stack', JSON.stringify(deck)); // Auto-sync
         const log = document.getElementById('history');
         const entry = document.createElement('div');
         entry.className = 'history-entry';
         entry.innerText = `> ${msg}`;
         log.prepend(entry);
     }
-    
-    // Update window.onload to try restoring previous session first
-    window.onload = () => {
-        let saved = localStorage.getItem('lab_custom_stack');
-        if(saved) {
-            deck = JSON.parse(saved);
-            renderDeck();
-            logMove("Restored session from last time.");
-        } else {
-            resetTo('NDO');
+
+    function clearHistory() { document.getElementById('history').innerHTML = ''; }
+
+    function faroShuffle(isIn) {
+        let half = deck.length / 2;
+        let p1 = deck.slice(0, half), p2 = deck.slice(half);
+        let newDeck = [];
+        for(let i=0; i<half; i++) {
+            if(isIn) { newDeck.push(p2[i]); newDeck.push(p1[i]); }
+            else { newDeck.push(p1[i]); newDeck.push(p2[i]); }
         }
-    };
+        deck = newDeck;
+        logMove(isIn ? "Faro IN" : "Faro OUT");
+        renderDeck();
+    }
+
+    function gilbreath() {
+        let half = 26;
+        let p1 = deck.slice(0, half).reverse();
+        let p2 = deck.slice(half);
+        let res = [];
+        for(let i=0; i<half; i++) { res.push(p1[i]); res.push(p2[i]); }
+        deck = res;
+        logMove("GILBREATH: Reversal + Riffle simulation");
+        renderDeck();
+    }
+
+    function cutDeckManual() {
+        let val = parseInt(document.getElementById('cut-pos').value);
+        if(!val || val < 1 || val > 52) return;
+        let cut = deck.splice(0, val);
+        deck = deck.concat(cut);
+        logMove(`Cut ${val} cards.`);
+        renderDeck();
+    }
+
+    function resetTo(type) {
+        if(type === 'NDO') {
+            deck = [];
+            ['S','D'].forEach(s => values.forEach(v => deck.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => deck.push(v+s)));
+        }
+        if(type === 'STEBBINS') {
+            deck = []; let currVal = 3; let sKeys = ['C','H','S','D'];
+            for(let i=0; i<52; i++){
+                let v = values[(currVal-1)%13];
+                deck.push(v + sKeys[i%4]);
+                currVal = (currVal + 3);
+            }
+        }
+        if(type === 'MNEMONICA') deck = [...MNEMONICA];
+        if(type === 'MY_ORDER') {
+            deck = []; let sKeys = ['C','H','S','D'];
+            MY_ORDER_VALS.forEach(v => { sKeys.forEach(s => deck.push(v + s)); });
+        }
+        logMove(`RESET: ${type}`);
+        renderDeck();
+    }
+
+    window.onload = () => { resetTo('NDO'); logMove("Lab v4.5 Active."); };
 </script>
 </body>
 </html>
