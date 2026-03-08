@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v5.1 - Fixed Stacks</title>
+    <title>Virtual Card Lab v5.2 - Reversed Data Logic</title>
     <style>
         :root {
             --bg: #050505; --panel: #1a1a1a; --accent: #d90429;
-            --gold: #ffb703; --text: #f1faee; --btn-hover: #333;
+            --gold: #ffb703; --text: #f1faee;
             --card-shadow: 0 4px 8px rgba(0,0,0,0.5);
         }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
@@ -39,11 +39,8 @@
 <div id="sidebar">
     <h2 style="color:var(--accent); margin:0; font-size:1.1rem;">LAB LOGS</h2>
     <div id="history" class="history-log"></div>
-    
-    <div style="margin-top:10px; display:flex; gap:5px;">
-        <button onclick="saveStack()" style="flex:1">💾 Save</button>
-        <button onclick="loadStack()" style="flex:1">📂 Load</button>
-    </div>
+    <button onclick="saveStack()">💾 Save Current</button>
+    <button onclick="loadStack()" style="margin-top:5px;">📂 Load Saved</button>
 </div>
 
 <div id="lab-main">
@@ -63,7 +60,7 @@
     const suits = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const sKeys = ['C','H','S','D'];
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let deck = [];
+    let deck = new Array(52);
     let selectedIndex = null;
 
     const MNEMONICA_RAW = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
@@ -72,7 +69,7 @@
     function renderDeck() {
         const container = document.getElementById('deck');
         container.innerHTML = '';
-        // View remains 51 (Top Left) down to 0 (Bottom Right)
+        // View: Index 51 (Visual 52) to Index 0 (Visual 1)
         for (let i = 51; i >= 0; i--) {
             let card = deck[i];
             const div = document.createElement('div');
@@ -88,17 +85,48 @@
         if(selectedIndex === null) { selectedIndex = i; } 
         else {
             [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
-            logMove(`Swap: ${deck[i]} <-> ${deck[selectedIndex]}`);
+            logMove(`Swap: pos ${selectedIndex+1} <-> ${i+1}`);
             selectedIndex = null;
         }
         renderDeck();
     }
 
+    function resetTo(type) {
+        let temp = [];
+        if(type === 'NDO') {
+            ['S','D'].forEach(s => values.forEach(v => temp.push(v+s)));
+            ['C','H'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s)));
+            deck = temp;
+        }
+        else if(type === 'STEBBINS') {
+            let vIdx = 2; // Starts at 3
+            for(let i=0; i<52; i++) {
+                temp.push(values[vIdx % 13] + sKeys[i % 4]);
+                vIdx += 3;
+            }
+            deck = temp.reverse(); // Now 3C is at index 51 (Visual 52)
+        }
+        else if(type === 'MNEMONICA') {
+            deck = [...MNEMONICA_RAW].reverse(); // Now 4C is index 51 (Visual 52)
+        }
+        else if(type === 'MY_ORDER') {
+            CHASED_VALS.forEach(v => {
+                sKeys.forEach(s => temp.push(v + s));
+            });
+            deck = temp.reverse(); // Now Q♣ is index 51 (Visual 52)
+        }
+        logMove(`RESET: ${type}`);
+        renderDeck();
+    }
+
     function faroShuffle(isIn) {
-        let h = 26, p1 = deck.slice(0, h), p2 = deck.slice(h), res = [];
+        let h = 26;
+        let p1 = deck.slice(0, h);
+        let p2 = deck.slice(h);
+        let res = [];
         for(let i=0; i<h; i++) {
-            if(isIn) { res.push(p2[i]); res.push(p1[i]); }
-            else { res.push(p1[i]); res.push(p2[i]); }
+            if(isIn) { res.push(p1[i]); res.push(p2[i]); }
+            else { res.push(p2[i]); res.push(p1[i]); }
         }
         deck = res;
         logMove(isIn ? "Faro IN" : "Faro OUT");
@@ -110,34 +138,7 @@
             const j = Math.floor(Math.random() * (i + 1));
             [deck[i], deck[j]] = [deck[j], deck[i]];
         }
-        logMove("Random Shuffle");
-        renderDeck();
-    }
-
-    function resetTo(type) {
-        if(type === 'NDO') {
-            deck = [];
-            ['S','D'].forEach(s => values.forEach(v => deck.push(v+s)));
-            ['C','H'].forEach(s => [...values].reverse().forEach(v => deck.push(v+s)));
-        }
-        if(type === 'STEBBINS') {
-            deck = [];
-            let vIdx = 2; // Starts at 3 (Index 2 in values array)
-            for(let i=0; i<52; i++) {
-                deck.push(values[vIdx % 13] + sKeys[i % 4]);
-                vIdx += 3;
-            }
-        }
-        if(type === 'MNEMONICA') {
-            deck = [...MNEMONICA_RAW]; // 4C is at [0], which renders at Pos 52
-        }
-        if(type === 'MY_ORDER') {
-            deck = [];
-            CHASED_VALS.forEach(v => {
-                sKeys.forEach(s => deck.push(v + s));
-            });
-        }
-        logMove(`RESET: ${type}`);
+        logMove("Shuffle");
         renderDeck();
     }
 
