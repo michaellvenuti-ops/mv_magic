@@ -182,12 +182,26 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         deck = res; logMove(`Faro ${type}`); renderDeck();
     }
 
-    function falseShuffle(type) {
-        saveState();
-        if(type === 'ZARROW') { let t2 = deck.splice(0,2); deck.push(...t2); logMove("Zarrow (Top 2 Slipped)"); }
-        else { let tc = deck.shift(); deck.splice(25, 0, tc); logMove("Blind Faro (Top to 26)"); }
-        renderDeck();
+ function falseShuffle(type) {
+    saveState();
+    if(type === 'ZARROW') {
+        // SWAP: Move top 2 to bottom, bottom 2 to top.
+        // This protects the 3-25 core.
+        let top2 = deck.splice(0, 2);
+        let bot2 = deck.splice(-2);
+        deck.unshift(...bot2);
+        deck.push(...top2);
+        logMove("Zarrow: Swapped Top 2 with Bottom 2 (Core 3-25 Safe)");
+    } 
+    else if(type === 'BLIND') {
+        // DISPLACE: Move top 2 to the middle (26/27)
+        // Keeps 3-25 in the same relative sequence.
+        let top2 = deck.splice(0, 2);
+        deck.splice(24, 0, ...top2); // Insert after the core
+        logMove("Blind Faro: Top 2 moved to Center (Core 3-25 Safe)");
     }
+    renderDeck();
+}
 
     function resetTo(type) {
         saveState(); let temp = [];
