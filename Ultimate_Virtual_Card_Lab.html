@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Card Lab - Professional Edition</title>
+    <style>
+        :root {
+            --bg: #0b090a; --panel: #161a1d; --accent: #d90429;
+            --gold: #ffb703; --text: #f1faee; --btn-hover: #a4161a;
+        }
+        body { font-family: 'Courier New', monospace; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Sidebar Styles */
+        #sidebar { width: 300px; background: var(--panel); border-right: 2px solid var(--accent); display: flex; flex-direction: column; padding: 20px; }
+        .history-log { flex-grow: 1; background: #000; border: 1px solid #333; padding: 10px; font-size: 0.85rem; overflow-y: auto; color: #00f5d4; }
+        .history-entry { border-bottom: 1px solid #222; padding: 5px 0; }
+
+        /* Main Lab Area */
+        #lab-main { flex-grow: 1; padding: 30px; overflow-y: auto; position: relative; }
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 8px; margin-bottom: 30px; background: #000; padding: 15px; border-radius: 8px; border: 1px solid var(--gold); }
+        .card { background: #fff; color: #000; border-radius: 4px; padding: 10px 2px; text-align: center; font-weight: bold; font-size: 0.9rem; cursor: pointer; transition: 0.2s; user-select: none; }
+        .card.red { color: #d90429; }
+        .card.selected { outline: 3px solid var(--gold); transform: translateY(-5px); }
+
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+        button { background: var(--panel); color: var(--text); border: 1px solid var(--accent); padding: 10px; cursor: pointer; font-size: 0.8rem; text-transform: uppercase; transition: 0.2s; }
+        button:hover { background: var(--btn-hover); border-color: #fff; }
+        .reset-btn { border-color: var(--gold); color: var(--gold); }
+        
+        .status-bar { margin-top: 20px; padding: 10px; background: #222; border-radius: 4px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2 style="color:var(--accent)">MOVE HISTORY</h2>
+    <div id="history" class="history-log">
+        <div class="history-entry">Lab Initialized...</div>
+    </div>
+    <div style="margin-top:20px;">
+        <input type="number" id="cut-pos" placeholder="Cut at pos (1-52)" style="width:70%; padding:5px;">
+        <button onclick="cutDeckManual()" style="width:25%; padding:5px;">Cut</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <h1 style="margin-top:0;">VIRTUAL CARD LAB <span style="color:var(--gold); font-size: 1rem;">v3.0</span></h1>
+    
+    <div id="deck" class="deck-display"></div>
+
+    <div class="controls">
+        <button onclick="faroShuffle(true)">Faro IN Shuffle</button>
+        <button onclick="faroShuffle(false)">Faro OUT Shuffle</button>
+        <button onclick="gilbreath()">Gilbreath Principle</button>
+        
+        <button class="reset-btn" onclick="resetTo('NDO')">New Deck Order</button>
+        <button class="reset-btn" onclick="resetTo('STEBBINS')">Si Stebbins (3C Top)</button>
+        <button class="reset-btn" onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button class="reset-btn" onclick="resetTo('PARTICLE')">Particle Stack</button>
+        <button class="reset-btn" onclick="resetTo('MY_ORDER')">My CHASED Order</button>
+    </div>
+
+    <div class="status-bar" id="status">Current Stack: New Deck Order</div>
+</div>
+
+<script>
+    const suits = ['C', 'H', 'S', 'D'];
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [];
+    let selectedIndex = null;
+
+    // --- STACK DATA ---
+    const MNEMONICA = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+    const PARTICLE = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"]; // Placeholder for latest Joshua Jay order
+    const MY_ORDER_VALS = ["Q","J","2","6","A","5","K","10","9","4","3","7","8"];
+
+    function createNDO() {
+        let d = [];
+        ['S','D'].forEach(s => values.forEach(v => d.push(v+s)));
+        ['C','H'].forEach(s => [...values].reverse().forEach(v => d.push(v+s)));
+        return d;
+    }
+
+    function createStebbins() {
+        let d = [];
+        let valMap = {"A":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,"10":10,"J":11,"Q":12,"K":13};
+        let revMap = Object.fromEntries(Object.entries(valMap).map(([k,v]) => [v,k]));
+        let currVal = 3; // Start with 3
+        let currSuitIdx = 0; // C, H, S, D
+        for(let i=0; i<52; i++){
+            d.push(revMap[currVal] + suits[currSuitIdx]);
+            currVal = (currVal + 3) > 13 ? (currVal + 3) - 13 : (currVal + 3);
+            currSuitIdx = (currSuitIdx + 1) % 4;
+        }
+        return d;
+    }
+
+    function createMyOrder() {
+        let d = [];
+        MY_ORDER_VALS.forEach(v => {
+            suits.forEach(s => d.push(v + s));
+        });
+        return d;
+    }
+
+    // --- CORE LOGIC ---
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        container.innerHTML = '';
+        deck.forEach((card, i) => {
+            const div = document.createElement('div');
+            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            if(selectedIndex === i) div.classList.add('selected');
+            div.innerText = card;
+            div.onclick = () => selectCard(i);
+            container.appendChild(div);
+        });
+    }
+
+    function selectCard(i) {
+        if(selectedIndex === null) {
+            selectedIndex = i;
+        } else {
+            let temp = deck[selectedIndex];
+            deck[selectedIndex] = deck[i];
+            deck[i] = temp;
+            logMove(`Manual Swap: ${deck[i]} <-> ${deck[selectedIndex]}`);
+            selectedIndex = null;
+        }
+        renderDeck();
+    }
+
+    function logMove(msg) {
+        const log = document.getElementById('history');
+        const entry = document.createElement('div');
+        entry.className = 'history-entry';
+        entry.innerText = `> ${msg}`;
+        log.prepend(entry);
+    }
+
+    function faroShuffle(isIn) {
+        let half = deck.length / 2;
+        let p1 = deck.slice(0, half);
+        let p2 = deck.slice(half);
+        let newDeck = [];
+        for(let i=0; i<half; i++) {
+            if(isIn) { newDeck.push(p2[i]); newDeck.push(p1[i]); }
+            else { newDeck.push(p1[i]); newDeck.push(p2[i]); }
+        }
+        deck = newDeck;
+        logMove(isIn ? "Faro IN" : "Faro OUT");
+        renderDeck();
+    }
+
+    function gilbreath() {
+        logMove("Gilbreath Principle Applied (Reverse top half & Riffle)");
+        let half = Math.floor(deck.length / 2);
+        let p1 = deck.slice(0, half).reverse();
+        let p2 = deck.slice(half);
+        // Simple alternating riffle to simulate principle
+        let newDeck = [];
+        for(let i=0; i<p2.length; i++) {
+            if(p1[i]) newDeck.push(p1[i]);
+            newDeck.push(p2[i]);
+        }
+        deck = newDeck;
+        renderDeck();
+    }
+
+    function cutDeckManual() {
+        let val = parseInt(document.getElementById('cut-pos').value);
+        if(!val || val < 1 || val > 52) return;
+        let cut = deck.splice(0, val);
+        deck = deck.concat(cut);
+        logMove(`Cut at ${val}`);
+        renderDeck();
+    }
+
+    function resetTo(type) {
+        if(type === 'NDO') deck = createNDO();
+        if(type === 'STEBBINS') deck = createStebbins();
+        if(type === 'MNEMONICA') deck = [...MNEMONICA];
+        if(type === 'PARTICLE') deck = [...PARTICLE];
+        if(type === 'MY_ORDER') deck = createMyOrder();
+        
+        document.getElementById('status').innerText = `Current Stack: ${type}`;
+        logMove(`Reset to ${type}`);
+        renderDeck();
+    }
+
+    // Init
+    deck = createNDO();
+    renderDeck();
+</script>
+</body>
+</html>
