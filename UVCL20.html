@@ -158,19 +158,46 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
     function renderDeck() {
-        const container = document.getElementById('deck');
-        const search = document.getElementById('search-input').value.toUpperCase();
-        container.innerHTML = '';
-        deck.forEach((card, i) => {
-            const div = document.createElement('div');
-            div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
-            if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
-            if (selectedIndex === i) div.classList.add('selected');
-            div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
-            if (coachActive) div.title = `Stack Position: ${i+1}`;
-            div.onclick = () => { if(selectedIndex === null) { selectedIndex = i; renderDeck(); } else { saveState(); [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]]; selectedIndex = null; renderDeck(); } };
-            container.appendChild(div);
-        });
+    const container = document.getElementById('deck');
+    container.innerHTML = '';
+    
+    // Logic to find the 'Neighbor' card in NDO if a card is selected
+    let targetNeighbor = null;
+    if (coachActive && selectedIndex !== null) {
+        const ref = getNdoRef();
+        const currentCard = deck[selectedIndex];
+        const refIdx = ref.indexOf(currentCard);
+        targetNeighbor = ref[(refIdx + 1) % 52]; // The card that SHOULD follow it
+    }
+
+    deck.forEach((card, i) => {
+        const div = document.createElement('div');
+        div.className = `card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+        
+        // 1. Highlight the "Money Seats" (6, 12, 18, 24)
+        if (coachActive && [5, 11, 17, 23].includes(i)) {
+            div.style.backgroundColor = "#fff3b0"; 
+        }
+
+        // 2. Highlight the "Neighbor" in Blue if Sniper is active
+        if (coachActive && card === targetNeighbor) {
+            div.style.border = "2px solid #00b4d8";
+            div.style.boxShadow = "0 0 15px #00b4d8";
+            
+            // Calculate and log the gap once
+            let gap = Math.abs(i - selectedIndex) - 1;
+            if (i !== selectedIndex) logMove(`Neighbor ${card} is ${gap} cards away.`);
+        }
+
+        if (selectedIndex === i) div.classList.add('selected');
+        
+        div.innerHTML = `<span class="card-index">${i+1}</span>${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
+        div.onclick = () => {
+            if(selectedIndex === null) { selectedIndex = i; renderDeck(); }
+            else { saveState(); [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]]; selectedIndex = null; renderDeck(); }
+        };
+        container.appendChild(div);
+    });
     }
 
     function applyPreset(p) {
@@ -178,12 +205,21 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         document.getElementById('search-input').value = presets[p] || "";
         renderDeck();
     }
+    
+let lastFaroType = 'OUT'; // This tracks your last move
 
-    function faroShuffle(type) {
-        saveState(); let top = deck.slice(0, 26), bot = deck.slice(26, 52), res = [];
-        for(let i=0; i<26; i++) { if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); } else { res.push(bot[i]); res.push(top[i]); } }
-        deck = res; logMove(`Faro ${type}`); renderDeck();
+function faroShuffle(type) {
+    saveState();
+    lastFaroType = type; // Critical: Store the shuffle type for the calculator
+    let top = deck.slice(0, 26), bot = deck.slice(26, 52), res = [];
+    for(let i=0; i<26; i++) { 
+        if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); } 
+        else { res.push(bot[i]); res.push(top[i]); } 
     }
+    deck = res; 
+    logMove(`Faro ${type}`); 
+    renderDeck();
+}
 
     function falseShuffle(type) {
         saveState();
@@ -263,34 +299,44 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         alert("Virtual Card Lab Help:\n- Click cards to swap positions manually.\n- Zarrow: Swaps first 2 with last 2, keeping 3–25 in place.\n- Blind Faro: Moves first 2 to the middle, keeping 3–25 in place.\n- Tracking: Enter card names in the Search box to highlight them.");
     }
 
-    function toggleCoach() { coachActive = !coachActive; logMove(`Coach ${coachActive?'ON':'OFF'}`); renderDeck(); }
+    function toggleCoach() { 
+    coachActive = !coachActive; 
+    document.getElementById('coach-btn').innerText = `Coach: ${coachActive ? 'ON' : 'OFF'}`;
+    logMove(coachActive ? "Sniper Mode: Select a card to find its stack neighbor." : "Coach OFF");
+    renderDeck(); 
+    }
+    
     function verifyStack() { logMove("Stack verified. No duplicates found."); }
 
     function calcToNDO() {
-        let ndo = getNdoRef();
-        let current = [...deck];
-        let count = 0;
-        let limit = 53; 
-        let tempDeck = [...current];
+    const ndo = getNdoRef(); // Ensure this matches your NDO reset exactly
+    let tempDeck = [...deck];
+    let count = 0;
+    const maxCycles = 52; // Max possible for Faro In
+
+    if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
+        logMove("Deck is already in NDO.");
+        return;
+    }
+
+    // Simulation loop
+    while (count < maxCycles) {
+        let top = tempDeck.slice(0, 26), bot = tempDeck.slice(26, 52), res = [];
+        for(let i=0; i<26; i++) {
+            if(lastFaroType === 'OUT') { res.push(top[i]); res.push(bot[i]); }
+            else { res.push(bot[i]); res.push(top[i]); }
+        }
+        tempDeck = res;
+        count++;
 
         if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
-            logMove("Deck is already in NDO."); return;
+            logMove(`Success: ${count} more Faro ${lastFaroType}s to NDO.`);
+            return;
         }
-
-        while (count < limit) {
-            let top = tempDeck.slice(0, 26), bot = tempDeck.slice(26, 52), res = [];
-            for(let i=0; i<26; i++) { 
-                if(lastFaroType === 'OUT') { res.push(top[i]); res.push(bot[i]); } 
-                else { res.push(bot[i]); res.push(top[i]); } 
-            }
-            tempDeck = res;
-            count++;
-            if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
-                logMove(`Success: ${count} more ${lastFaroType}s to NDO.`); return;
-            }
-        }
-        logMove(`Warning: NDO not reachable via ${lastFaroType}.`);
     }
+    logMove(`Warning: NDO not reachable via Faro ${lastFaroType}.`);
+}
+    
         
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
     function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
