@@ -270,13 +270,11 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         let ndo = getNdoRef();
         let current = [...deck];
         let count = 0;
-        let limit = 52; 
+        let limit = 53; 
         let tempDeck = [...current];
 
-        // Check if already NDO
         if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
-            logMove("Deck is already in NDO.");
-            return;
+            logMove("Deck is already in NDO."); return;
         }
 
         while (count < limit) {
@@ -288,14 +286,12 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
             tempDeck = res;
             count++;
             if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
-                logMove(`Success: ${count} more Faro ${lastFaroType}s to NDO.`);
-                return;
+                logMove(`Success: ${count} more ${lastFaroType}s to NDO.`); return;
             }
         }
-        logMove(`Warning: NDO not reachable via Faro ${lastFaroType} from here.`);
+        logMove(`Warning: NDO not reachable via ${lastFaroType}.`);
     }
-
-    
+        
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
     function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
     function saveStack() { localStorage.setItem('stackV92', JSON.stringify(deck)); logMove("Session Saved."); }
