@@ -265,7 +265,37 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
 
     function toggleCoach() { coachActive = !coachActive; logMove(`Coach ${coachActive?'ON':'OFF'}`); renderDeck(); }
     function verifyStack() { logMove("Stack verified. No duplicates found."); }
-    function calcToNDO() { logMove("Calculated: 8 Faro OUTs return to start."); }
+
+    function calcToNDO() {
+        let ndo = getNdoRef();
+        let current = [...deck];
+        let count = 0;
+        let limit = 52; 
+        let tempDeck = [...current];
+
+        // Check if already NDO
+        if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
+            logMove("Deck is already in NDO.");
+            return;
+        }
+
+        while (count < limit) {
+            let top = tempDeck.slice(0, 26), bot = tempDeck.slice(26, 52), res = [];
+            for(let i=0; i<26; i++) { 
+                if(lastFaroType === 'OUT') { res.push(top[i]); res.push(bot[i]); } 
+                else { res.push(bot[i]); res.push(top[i]); } 
+            }
+            tempDeck = res;
+            count++;
+            if (JSON.stringify(tempDeck) === JSON.stringify(ndo)) {
+                logMove(`Success: ${count} more Faro ${lastFaroType}s to NDO.`);
+                return;
+            }
+        }
+        logMove(`Warning: NDO not reachable via Faro ${lastFaroType} from here.`);
+    }
+
+    
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
     function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
     function saveStack() { localStorage.setItem('stackV92', JSON.stringify(deck)); logMove("Session Saved."); }
