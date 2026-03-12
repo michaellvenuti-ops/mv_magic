@@ -1,118 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>3D Unshuffled Lab</title>
+    <meta charset="UTF-8">
+    <title>3D Unshuffled Lab v1.0</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
-        body { margin: 0; background: #111; color: white; font-family: sans-serif; overflow: hidden; display: flex; }
-        #controls { width: 300px; padding: 20px; background: #222; z-index: 10; }
-        canvas#viewport { flex-grow: 1; }
-        #drawing-pad { border: 1px solid var(--gold); background: white; cursor: crosshair; }
-        .btn { background: #d90429; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; cursor: pointer; }
-        :root { --gold: #ffb703; }
+        body { margin: 0; background: #050505; color: white; font-family: 'Segoe UI', sans-serif; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 320px; background: #1a1a1a; padding: 20px; border-right: 2px solid #333; display: flex; flex-direction: column; gap: 15px; }
+        #canvas-container { flex-grow: 1; position: relative; cursor: grab; }
+        #drawing-pad { background: white; border: 2px solid #ffb703; cursor: crosshair; width: 100%; image-rendering: pixelated; }
+        .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        button { background: #333; color: white; border: 1px solid #555; padding: 10px; cursor: pointer; font-weight: bold; text-transform: uppercase; font-size: 0.7rem; }
+        button:hover { background: #d90429; }
+        .status { font-family: monospace; font-size: 0.75rem; color: #00f5d4; background: black; padding: 10px; border-radius: 5px; }
+        h3 { color: #ffb703; margin: 0; font-size: 1rem; }
     </style>
 </head>
 <body>
 
-<div id="controls">
-    <h3>3D Edge Lab</h3>
-    <p style="font-size: 0.8rem;">1. Write on the deck side below:</p>
+<div id="sidebar">
+    <h3>EDGE MARKING</h3>
+    <p style="font-size: 0.7rem; margin: 0;">Draw "UNSHUFFLED" or a pattern here:</p>
     <canvas id="drawing-pad" width="200" height="400"></canvas>
     
-    <button class="btn" onclick="applyWriting()">Apply to Deck</button>
-    <button class="btn" onclick="performFaro('OUT')" style="background: #0077b6;">Faro OUT</button>
-    <button class="btn" onclick="performFaro('IN')" style="background: #0096c7;">Faro IN</button>
-    <button class="btn" onclick="resetDeck()" style="background: #444;">Reset to NDO</button>
+    <div class="controls">
+        <button onclick="clearCanvas()">Clear Pad</button>
+        <button onclick="applyToDeck()" style="background: #ffb703; color: black;">Apply to Deck</button>
+    </div>
+
+    <div class="divider"></div>
     
-    <div id="status" style="margin-top:20px; color:var(--gold); font-family: monospace;"></div>
+    <h3>SHUFFLE ENGINE</h3>
+    <div class="controls">
+        <button onclick="faro('OUT')">Faro OUT</button>
+        <button onclick="faro('IN')">Faro IN</button>
+        <button onclick="resetNDO()" style="grid-column: span 2;">Reset to NDO</button>
+    </div>
+
+    <div id="log" class="status">System Ready...</div>
+    <p style="font-size: 0.6rem; color: #888;">* Use mouse to rotate deck in 3D space.</p>
 </div>
 
+<div id="canvas-container"></div>
+
 <script>
-    // --- THREE.JS SETUP ---
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth - 300) / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth - 300, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    let scene, camera, renderer, deckGroup;
+    let cards = [];
+    const cardHeight = 0.05;
+    const cardGap = 0.005;
 
-    const cards = [];
-    const deckGroup = new THREE.Group();
-    scene.add(deckGroup);
+    // --- DRAWING PAD LOGIC ---
+    const canvas = document.getElementById('drawing-pad');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
 
-    // --- DRAWING LOGIC ---
-    const drawPad = document.getElementById('drawing-pad');
-    const ctx = drawPad.getContext('2d');
-    let drawing = false;
+    canvas.addEventListener('mousedown', () => isDrawing = true);
+    window.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mousemove', draw);
 
-    drawPad.onmousedown = () => drawing = true;
-    drawPad.onmouseup = () => drawing = false;
-    drawPad.onmousemove = (e) => {
-        if (!drawing) return;
+    function draw(e) {
+        if (!isDrawing) return;
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
         ctx.fillStyle = "black";
         ctx.beginPath();
-        ctx.arc(e.offsetX, e.offsetY, 3, 0, Math.PI * 2);
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
         ctx.fill();
-    };
+    }
 
-    // Create 52 cards
-    function initDeck() {
+    function clearCanvas() { ctx.clearRect(0, 0, canvas.width, canvas.height); applyToDeck(); }
+
+    // --- THREE.JS 3D ENGINE ---
+    function init3D() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(45, (window.innerWidth - 320) / window.innerHeight, 0.1, 1000);
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth - 320, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        deckGroup = new THREE.Group();
+        scene.add(deckGroup);
+
+        createDeck();
+
+        camera.position.set(5, 2, 5);
+        camera.lookAt(0, 0, 0);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+        scene.add(ambientLight);
+        
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
+        dirLight.position.set(10, 10, 10);
+        scene.add(dirLight);
+
+        animate();
+    }
+
+    function createDeck() {
+        // Remove old cards
+        while(deckGroup.children.length > 0) deckGroup.remove(deckGroup.children[0]);
+        cards = [];
+
         for (let i = 0; i < 52; i++) {
-            const geometry = new THREE.BoxGeometry(2, 0.05, 3);
-            const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
-            const card = new THREE.Mesh(geometry, material);
-            card.position.y = (52 - i) * 0.06 - 1.5;
-            card.originalIndex = i;
+            // We use a separate canvas for each card edge to simulate the "Sharpie" slice
+            const cardGeo = new THREE.BoxGeometry(2.5, cardHeight, 3.5);
+            
+            // Materials: [Right, Left, Top (Edge), Bottom (Edge), Front (Face), Back]
+            const materials = [
+                new THREE.MeshStandardMaterial({ color: 0xffffff }), // Right
+                new THREE.MeshStandardMaterial({ color: 0xffffff }), // Left
+                new THREE.MeshStandardMaterial({ color: 0xffffff }), // Top Edge (The one we draw on)
+                new THREE.MeshStandardMaterial({ color: 0xffffff }), // Bottom Edge
+                new THREE.MeshStandardMaterial({ color: 0xeeeeee }), // Face
+                new THREE.MeshStandardMaterial({ color: 0xaa0000 })  // Back (Red Deck)
+            ];
+
+            const card = new THREE.Mesh(cardGeo, materials);
+            card.position.y = (52 - i) * (cardHeight + cardGap) - 1.5;
+            card.userData = { originalIndex: i };
             cards.push(card);
             deckGroup.add(card);
         }
     }
 
-    function applyWriting() {
-        // Here we would slice the canvas into 52 strips and 
-        // update the side-material of each card Mesh.
-        document.getElementById('status').innerText = "Edge Marks Applied!";
+    function applyToDeck() {
+        const fullImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const stripHeight = canvas.height / 52;
+
+        cards.forEach((card, i) => {
+            // Create a micro-canvas for this card's edge
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = canvas.width;
+            tempCanvas.height = stripHeight;
+            const tempCtx = tempCanvas.getContext('2d');
+
+            // Draw just the slice of the main canvas onto this card
+            tempCtx.putImageData(fullImageData, 0, -(i * stripHeight));
+            
+            const texture = new THREE.CanvasTexture(tempCanvas);
+            card.material[2].map = texture; // Apply to Top Edge
+            card.material[2].needsUpdate = true;
+        });
+        document.getElementById('log').innerText = "Edge Marks Applied!";
     }
 
-    // --- FARO ANIMATION ---
-    function performFaro(type) {
+    function faro(type) {
         let topHalf = cards.slice(0, 26);
         let botHalf = cards.slice(26, 52);
         let newOrder = [];
 
         for (let i = 0; i < 26; i++) {
             if (type === 'OUT') {
-                newOrder.push(topHalf[i]);
-                newOrder.push(botHalf[i]);
+                newOrder.push(topHalf[i]); newOrder.push(botHalf[i]);
             } else {
-                newOrder.push(botHalf[i]);
-                newOrder.push(topHalf[i]);
+                newOrder.push(botHalf[i]); newOrder.push(topHalf[i]);
             }
         }
 
-        // Animate cards to new positions
-        newOrder.forEach((card, index) => {
-            card.position.y = (52 - index) * 0.06 - 1.5;
+        cards = newOrder;
+        
+        // Animate positions
+        cards.forEach((card, index) => {
+            card.position.y = (52 - index) * (cardHeight + cardGap) - 1.5;
         });
-
-        cards.length = 0;
-        cards.push(...newOrder);
-        document.getElementById('status').innerText = `Shuffle: ${type}`;
+        
+        document.getElementById('log').innerText = `Faro ${type} Performed`;
     }
 
-    const light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(5, 5, 5);
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0x404040));
-    camera.position.z = 5;
+    function resetNDO() {
+        cards.sort((a, b) => b.userData.originalIndex - a.userData.originalIndex);
+        cards.reverse();
+        cards.forEach((card, index) => {
+            card.position.y = (52 - index) * (cardHeight + cardGap) - 1.5;
+        });
+        document.getElementById('log').innerText = "Reset to NDO";
+    }
 
     function animate() {
         requestAnimationFrame(animate);
-        deckGroup.rotation.y += 0.005; // Slow rotate to see the side
+        // Slowly rotate deck so user can see side
+        deckGroup.rotation.y += 0.002;
         renderer.render(scene, camera);
     }
 
-    initDeck();
-    animate();
+    // Interactive Rotation
+    let isMouseDown = false;
+    let mouseX = 0, mouseY = 0;
+    document.addEventListener('mousedown', () => isMouseDown = true);
+    document.addEventListener('mouseup', () => isMouseDown = false);
+    document.addEventListener('mousemove', (e) => {
+        if (!isMouseDown) return;
+        deckGroup.rotation.y += e.movementX * 0.01;
+        deckGroup.rotation.x += e.movementY * 0.01;
+    });
+
+    window.onload = init3D;
 </script>
 </body>
 </html>
