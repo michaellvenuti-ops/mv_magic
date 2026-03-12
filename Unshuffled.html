@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Unshuffled Lab</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 0; background: #111; color: white; font-family: sans-serif; overflow: hidden; display: flex; }
+        #controls { width: 300px; padding: 20px; background: #222; z-index: 10; }
+        canvas#viewport { flex-grow: 1; }
+        #drawing-pad { border: 1px solid var(--gold); background: white; cursor: crosshair; }
+        .btn { background: #d90429; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; cursor: pointer; }
+        :root { --gold: #ffb703; }
+    </style>
+</head>
+<body>
+
+<div id="controls">
+    <h3>3D Edge Lab</h3>
+    <p style="font-size: 0.8rem;">1. Write on the deck side below:</p>
+    <canvas id="drawing-pad" width="200" height="400"></canvas>
+    
+    <button class="btn" onclick="applyWriting()">Apply to Deck</button>
+    <button class="btn" onclick="performFaro('OUT')" style="background: #0077b6;">Faro OUT</button>
+    <button class="btn" onclick="performFaro('IN')" style="background: #0096c7;">Faro IN</button>
+    <button class="btn" onclick="resetDeck()" style="background: #444;">Reset to NDO</button>
+    
+    <div id="status" style="margin-top:20px; color:var(--gold); font-family: monospace;"></div>
+</div>
+
+<script>
+    // --- THREE.JS SETUP ---
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth - 300) / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth - 300, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const cards = [];
+    const deckGroup = new THREE.Group();
+    scene.add(deckGroup);
+
+    // --- DRAWING LOGIC ---
+    const drawPad = document.getElementById('drawing-pad');
+    const ctx = drawPad.getContext('2d');
+    let drawing = false;
+
+    drawPad.onmousedown = () => drawing = true;
+    drawPad.onmouseup = () => drawing = false;
+    drawPad.onmousemove = (e) => {
+        if (!drawing) return;
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(e.offsetX, e.offsetY, 3, 0, Math.PI * 2);
+        ctx.fill();
+    };
+
+    // Create 52 cards
+    function initDeck() {
+        for (let i = 0; i < 52; i++) {
+            const geometry = new THREE.BoxGeometry(2, 0.05, 3);
+            const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+            const card = new THREE.Mesh(geometry, material);
+            card.position.y = (52 - i) * 0.06 - 1.5;
+            card.originalIndex = i;
+            cards.push(card);
+            deckGroup.add(card);
+        }
+    }
+
+    function applyWriting() {
+        // Here we would slice the canvas into 52 strips and 
+        // update the side-material of each card Mesh.
+        document.getElementById('status').innerText = "Edge Marks Applied!";
+    }
+
+    // --- FARO ANIMATION ---
+    function performFaro(type) {
+        let topHalf = cards.slice(0, 26);
+        let botHalf = cards.slice(26, 52);
+        let newOrder = [];
+
+        for (let i = 0; i < 26; i++) {
+            if (type === 'OUT') {
+                newOrder.push(topHalf[i]);
+                newOrder.push(botHalf[i]);
+            } else {
+                newOrder.push(botHalf[i]);
+                newOrder.push(topHalf[i]);
+            }
+        }
+
+        // Animate cards to new positions
+        newOrder.forEach((card, index) => {
+            card.position.y = (52 - index) * 0.06 - 1.5;
+        });
+
+        cards.length = 0;
+        cards.push(...newOrder);
+        document.getElementById('status').innerText = `Shuffle: ${type}`;
+    }
+
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(5, 5, 5);
+    scene.add(light);
+    scene.add(new THREE.AmbientLight(0x404040));
+    camera.position.z = 5;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        deckGroup.rotation.y += 0.005; // Slow rotate to see the side
+        renderer.render(scene, camera);
+    }
+
+    initDeck();
+    animate();
+</script>
+</body>
+</html>
