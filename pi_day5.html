@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Pi Lab | Fix & Polish</title>
+    <style>
+        :root {
+            --judge-blue: #002347; --data-teal: #00f5d4; --pi-gold: #ffb703;
+            --alert-red: #ff4d4d; --bg: #f8f9fa;
+        }
+        body { margin: 0; background: var(--bg); color: #333; font-family: 'Inter', sans-serif; display: flex; }
+        
+        #sidebar { 
+            width: 380px; height: 100vh; background: var(--judge-blue); color: white; padding: 20px; 
+            box-sizing: border-box; position: fixed; overflow-y: auto; border-right: 4px solid var(--pi-gold); z-index: 1000;
+        }
+        .module-card { background: rgba(255,255,255,0.05); border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 3px solid var(--data-teal); }
+        h2, h4 { color: var(--pi-gold); text-transform: uppercase; margin: 0 0 10px 0; letter-spacing: 1px; }
+        
+        #timer-display { font-family: 'Courier New', monospace; font-size: 2.5rem; color: var(--data-teal); text-align: center; display: block; }
+        .stat-line { display: flex; justify-content: space-between; font-weight: bold; margin-top: 5px; color: var(--alert-red); }
+
+        .btn { width: 100%; padding: 10px; margin: 4px 0; border-radius: 4px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; text-transform: uppercase; font-size: 0.7rem; }
+        .btn-start { background: var(--data-teal); color: var(--judge-blue); }
+        .btn-method { background: #334e68; color: white; }
+        
+        #viewport { margin-left: 380px; padding: 40px; width: 100%; box-sizing: border-box; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
+        .card { background: white; border: 1px solid #ccc; height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; cursor: pointer; position: relative; }
+        .card.active-target { border: 3px solid var(--data-teal) !important; transform: scale(1.05); z-index: 10; box-shadow: 0 0 15px var(--data-teal); }
+        .card.revealed { background: #e0fffb; border-color: var(--data-teal); }
+        .card-val { font-weight: 900; font-size: 1.5rem; color: #eee; transition: 0.3s; pointer-events: none; }
+        .revealed .card-val { color: var(--judge-blue) !important; opacity: 1 !important; }
+        
+        body.ghost-active .card-val { opacity: 0; }
+        #method-box { background: #fff3cd; padding: 20px; border-radius: 8px; margin-bottom: 20px; color: #856404; display: none; border: 2px solid var(--pi-gold); font-size: 0.9rem; }
+    </style>
+</head>
+<body id="master-body">
+
+<div id="sidebar">
+    <h2>PI NATIONAL LAB</h2>
+
+    <div class="module-card">
+        <h4>Competition Tools</h4>
+        <span id="timer-display">0.00</span>
+        <div class="stat-line"><span>MISTAKES:</span> <span id="mistake-count">0</span></div>
+        <button class="btn btn-start" onclick="startRandomTest()">Random Recall Test</button>
+        <button class="btn btn-start" style="background:#ff9800" onclick="startChampionshipRun()">Visual 52-Run</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Methodology Hub</h4>
+        <button class="btn btn-method" onclick="runChunkingLesson()">1. Chunking Method (Demo)</button>
+        <button class="btn btn-method" onclick="showMethod('palace')">2. Memory Palace</button>
+        <button class="btn btn-method" onclick="showMethod('major')">3. Major System</button>
+        <button class="btn btn-method" onclick="showMethod('pao')">4. P.A.O. System</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Audio & Recorder</h4>
+        <button class="btn" style="background:var(--alert-red); color:white;" id="rec-btn" onclick="toggleRecording()">Record My Voice</button>
+        <div id="audio-container"></div>
+        <button class="btn" id="dl-btn" style="background:#4caf50; color:white; display:none;" onclick="downloadRecording()">Download Audio File</button>
+        <hr style="opacity:0.2; margin:10px 0;">
+        <button class="btn" style="background:#ffeb3b; color:black;" id="song-btn" onclick="togglePiSong()">Play Pi Melody (Song)</button>
+        <input type="range" id="speed-slider" min="0.5" max="2.5" step="0.1" value="1.0" style="width:100%">
+        <button class="btn" style="background:#00bcd4; color:white;" onclick="startDictationMode()">Dictation Mode</button>
+        <button class="btn" style="background:#795548; color:white;" onclick="speakCurrentCard()">Speak Block (Audio)</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Settings</h4>
+        <button class="btn" style="background:#607d8b; color:white;" id="ghost-btn" onclick="toggleGhostMode()">Ghost Mode: OFF</button>
+        <button class="btn" style="background:#9c27b0; color:white;" id="zen-toggle" onclick="toggleZenMode()">Enable Zen Mode</button>
+        <button class="btn" style="background:#334e68; color:white;" onclick="resetGrid()">Reset Lab View</button>
+    </div>
+</div>
+
+<div id="viewport">
+    <div id="method-box"></div>
+    <div class="grid" id="pi-grid"></div>
+</div>
+
+<script>
+    const piData = ["314", "159", "265", "358", "979", "323", "846", "264", "338", "327", "950", "288", "419", "716", "939", "937", "510", "582", "097", "494", "459", "230", "781", "640", "628", "620", "067", "982", "148", "086", "513", "282", "306", "647", "093", "844", "609", "550", "582", "231", "725", "359", "408", "128", "481", "117", "450", "284", "102", "701", "938", "521"];
+    let timer, startTime, activeIdx = null, runIdx = 0, mistakes = 0;
+    let isSongPlaying = false, zenInterval = null, isChampRun = false;
+    let mediaRecorder, audioChunks = [], recordedUrl = null;
+
+    function init() {
+        const grid = document.getElementById('pi-grid');
+        grid.innerHTML = '';
+        piData.forEach((val, i) => {
+            const card = document.createElement('div');
+            card.className = 'card'; card.id = `card-${i}`;
+            card.innerHTML = `<div style="font-size:0.7rem;position:absolute;top:5px;left:5px;color:#888;">#${i+1}</div><div class="card-val">${val}</div>`;
+            card.onclick = () => handleInput(i);
+            grid.appendChild(card);
+        });
+    }
+
+    // FIX: SPEAK BLOCK AUDIO
+    function speakCurrentCard() {
+        // Clear previous speech
+        window.speechSynthesis.cancel();
+        
+        let targetText = "";
+        if (activeIdx !== null) {
+            targetText = piData[activeIdx];
+        } else {
+            // If no active test, tell the user to pick one
+            const msg = new SpeechSynthesisUtterance("Please select a card or start a test first.");
+            window.speechSynthesis.speak(msg);
+            return;
+        }
+
+        const digits = targetText.split('').join(' ');
+        const utterance = new SpeechSynthesisUtterance(digits);
+        utterance.rate = 0.8; 
+        window.speechSynthesis.speak(utterance);
+    }
+
+    // FIX: ZEN MODE
+    function toggleZenMode() {
+        if (zenInterval) {
+            clearInterval(zenInterval);
+            zenInterval = null;
+            document.getElementById('zen-toggle').innerText = "Enable Zen Mode";
+            return;
+        }
+
+        resetGrid();
+        document.getElementById('zen-toggle').innerText = "Stop Zen";
+        let cur = 0;
+
+        function zenStep() {
+            if (cur >= 52 || !zenInterval) {
+                clearInterval(zenInterval);
+                return;
+            }
+            
+            // Clear previous highlights
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('active-target'));
+            
+            const card = document.getElementById(`card-${cur}`);
+            card.classList.add('active-target');
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Pause 1s (Thinking), then reveal, then wait 2s before next card
+            setTimeout(() => {
+                if(zenInterval) card.classList.add('revealed');
+            }, 1000);
+
+            cur++;
+        }
+
+        zenStep(); // Start immediately
+        zenInterval = setInterval(zenStep, 3000); 
+    }
+
+    function runChunkingLesson() {
+        resetGrid();
+        const box = document.getElementById('method-box');
+        box.style.display = 'block';
+        box.innerHTML = "<strong>Chunking Method:</strong> Breaking 156 digits into 52 three-digit blocks. <br><em>Demonstrating the first 10 blocks...</em>";
+        
+        let i = 0;
+        const interval = setInterval(() => {
+            if (i >= 10) { clearInterval(interval); return; }
+            highlightCard(i);
+            document.getElementById(`card-${i}`).classList.add('revealed');
+            const utt = new SpeechSynthesisUtterance(piData[i]);
+            window.speechSynthesis.speak(utt);
+            i++;
+        }, 1200);
+    }
+
+    function handleInput(i) {
+        const card = document.getElementById(`card-${i}`);
+        if (activeIdx === i) {
+            card.classList.add('revealed');
+            if (isChampRun) {
+                runIdx++;
+                if (runIdx < 52) { activeIdx = runIdx; highlightCard(runIdx); } 
+                else { finishRun(); }
+            } else { clearInterval(timer); activeIdx = null; }
+        } else if (activeIdx !== null) {
+            mistakes++;
+            document.getElementById('mistake-count').innerText = mistakes;
+            card.style.background = '#ffcccc';
+            setTimeout(() => card.style.background = '', 300);
+        } else {
+            // Manual click mode
+            activeIdx = i; // Make this the "Speakable" card
+            card.classList.toggle('revealed');
+        }
+    }
+
+    function highlightCard(idx) {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('active-target'));
+        const card = document.getElementById(`card-${idx}`);
+        if(card) {
+            card.classList.add('active-target');
+            card.scrollIntoView({behavior: 'smooth', block: 'center'});
+        }
+    }
+
+    /* RE-INITIALIZE OTHER FEATURES */
+    function startRandomTest() { resetGrid(); activeIdx = Math.floor(Math.random()*52); highlightCard(activeIdx); startClock(); }
+    function startChampionshipRun() { resetGrid(); isChampRun = true; runIdx = 0; activeIdx = 0; highlightCard(0); startClock(); }
+    function startDictationMode() { resetGrid(); activeIdx = Math.floor(Math.random()*52); const text = piData[activeIdx].split('').join(' '); const msg = new SpeechSynthesisUtterance(`Find block: ${text}`); msg.onend = () => startClock(); window.speechSynthesis.speak(msg); }
+    function togglePiSong() { if (isSongPlaying) { window.speechSynthesis.cancel(); isSongPlaying = false; document.getElementById('song-btn').innerText = "Play Pi Melody"; } else { isSongPlaying = true; document.getElementById('song-btn').innerText = "Stop Melody"; playSongStep(0); } }
+    function playSongStep(idx) { if (idx >= 50 || !isSongPlaying) return; const speed = document.getElementById('speed-slider').value; const utt = new SpeechSynthesisUtterance(piData[idx]); utt.pitch = 1 + (idx % 3) * 0.2; utt.rate = speed; utt.onend = () => setTimeout(() => playSongStep(idx + 1), 300 / speed); window.speechSynthesis.speak(utt); highlightCard(idx); }
+    async function toggleRecording() { const btn = document.getElementById('rec-btn'); if (mediaRecorder && mediaRecorder.state === "recording") { mediaRecorder.stop(); btn.innerText = "Record My Voice"; btn.style.background = "var(--alert-red)"; } else { const stream = await navigator.mediaDevices.getUserMedia({ audio: true }); mediaRecorder = new MediaRecorder(stream); audioChunks = []; mediaRecorder.ondataavailable = e => audioChunks.push(e.data); mediaRecorder.onstop = () => { const blob = new Blob(audioChunks, { type: 'audio/webm' }); recordedUrl = URL.createObjectURL(blob); document.getElementById('audio-container').innerHTML = `<audio controls src="${recordedUrl}"></audio>`; document.getElementById('dl-btn').style.display = 'block'; }; mediaRecorder.start(); btn.innerText = "STOP RECORDING"; btn.style.background = "black"; } }
+    function downloadRecording() { if (recordedUrl) { const a = document.createElement('a'); a.href = recordedUrl; a.download = `pi-recitation.webm`; a.click(); } }
+    function startClock() { startTime = Date.now(); timer = setInterval(() => { document.getElementById('timer-display').innerText = ((Date.now() - startTime)/1000).toFixed(2); }, 10); }
+    function toggleGhostMode() { document.getElementById('master-body').classList.toggle('ghost-active'); document.getElementById('ghost-btn').innerText = document.getElementById('master-body').classList.contains('ghost-active') ? "Ghost Mode: ON" : "Ghost Mode: OFF"; }
+    function resetGrid() { clearInterval(timer); if(zenInterval) clearInterval(zenInterval); zenInterval = null; isChampRun = false; isSongPlaying = false; window.speechSynthesis.cancel(); document.getElementById('timer-display').innerText = "0.00"; document.getElementById('mistake-count').innerText = "0"; mistakes = 0; document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed', 'active-target')); document.getElementById('zen-toggle').innerText = "Enable Zen Mode"; }
+    function showMethod(m) { const box = document.getElementById('method-box'); box.style.display = 'block'; const texts = { palace: "Visualizing rooms in a mental house.", major: "Numbers to consonant sounds.", pao: "Person-Action-Object films." }; box.innerHTML = `<strong>${texts[m]}</strong>`; }
+
+    init();
+</script>
+</body>
+</html>
