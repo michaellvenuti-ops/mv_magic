@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Pi Lab | Total Recall</title>
+    <style>
+        :root {
+            --judge-blue: #002347; --data-teal: #00f5d4; --pi-gold: #ffb703;
+            --alert-red: #ff4d4d; --pao-green: #2ec4b6; --bg: #f8f9fa;
+        }
+        body { margin: 0; background: var(--bg); color: #333; font-family: 'Inter', sans-serif; display: flex; }
+        
+        #sidebar { 
+            width: 380px; height: 100vh; background: var(--judge-blue); color: white; padding: 20px; 
+            box-sizing: border-box; position: fixed; overflow-y: auto; border-right: 4px solid var(--pi-gold); z-index: 1000;
+        }
+        .module-card { background: rgba(255,255,255,0.05); border-radius: 8px; padding: 15px; margin-bottom: 15px; border-left: 3px solid var(--data-teal); }
+        h2, h4 { color: var(--pi-gold); text-transform: uppercase; margin: 0 0 10px 0; letter-spacing: 1px; }
+        
+        #timer-display { font-family: 'Courier New', monospace; font-size: 2.2rem; color: var(--data-teal); text-align: center; display: block; }
+        .btn { width: 100%; padding: 10px; margin: 4px 0; border-radius: 4px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; text-transform: uppercase; font-size: 0.7rem; }
+        .btn-method { background: #334e68; color: white; }
+        
+        #viewport { margin-left: 380px; padding: 40px; width: 100%; box-sizing: border-box; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+        .card { background: white; border: 1px solid #ccc; height: 110px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; cursor: pointer; position: relative; }
+        .card.active-target { border: 3px solid var(--data-teal) !important; box-shadow: 0 0 15px var(--data-teal); }
+        .card.revealed { background: #e0fffb; border-color: var(--data-teal); }
+        
+        .card-val { font-weight: 900; font-size: 1.5rem; color: #eee; transition: 0.3s; pointer-events: none; }
+        .revealed .card-val { color: var(--judge-blue) !important; opacity: 1 !important; }
+        body.ghost-active .card-val { opacity: 0; }
+        
+        #method-box { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; color: #333; display: none; border: 3px solid var(--pi-gold); position: relative; }
+    </style>
+</head>
+<body id="master-body">
+
+<div id="sidebar">
+    <h2>PI NATIONAL LAB</h2>
+
+    <div class="module-card">
+        <h4>Methodology Hub</h4>
+        <button class="btn btn-method" onclick="runDemo('chunking')">Full Chunking Demo</button>
+        <button class="btn btn-method" onclick="runDemo('major')">Full Major System</button>
+        <button class="btn btn-method" style="background:var(--pao-green)" onclick="runPAOFull()">Full P.A.O. Movie</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Competition Tools</h4>
+        <span id="timer-display">0.00</span>
+        <button class="btn" style="background:var(--data-teal); color:black;" onclick="startChampionshipRun()">Visual 52-Run</button>
+        <button class="btn" style="background:var(--alert-red); color:white;" id="rec-btn" onclick="toggleRecording()">Record My Voice</button>
+        <div id="audio-container"></div>
+        <button class="btn" id="dl-btn" style="background:#4caf50; color:white; display:none;" onclick="downloadRecording()">Download Audio</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Audio Trainer</h4>
+        <button class="btn" style="background:#ffeb3b; color:black;" id="song-btn" onclick="togglePiSong()">Play Pi Melody</button>
+        <input type="range" id="speed-slider" min="0.5" max="2.5" step="0.1" value="1.0" style="width:100%">
+        <button class="btn" style="background:#795548; color:white;" onclick="speakCurrentCard()">Speak Block (Audio)</button>
+        <button class="btn" style="background:#00bcd4; color:white;" onclick="startDictationMode()">Dictation Mode</button>
+    </div>
+
+    <div class="module-card">
+        <h4>Settings</h4>
+        <button class="btn" style="background:#607d8b; color:white;" id="ghost-btn" onclick="toggleGhostMode()">Ghost Mode: OFF</button>
+        <button class="btn" style="background:#9c27b0; color:white;" id="zen-toggle" onclick="toggleZenMode()">Enable Zen Mode</button>
+        <button class="btn" style="background:#334e68; color:white;" onclick="resetGrid()">Reset Lab View</button>
+    </div>
+</div>
+
+<div id="viewport">
+    <div id="method-box"></div>
+    <div class="grid" id="pi-grid"></div>
+</div>
+
+<script>
+    const piData = ["314", "159", "265", "358", "979", "323", "846", "264", "338", "327", "950", "288", "419", "716", "939", "937", "510", "582", "097", "494", "459", "230", "781", "640", "628", "620", "067", "982", "148", "086", "513", "282", "306", "647", "093", "844", "609", "550", "582", "231", "725", "359", "408", "128", "481", "117", "450", "284", "102", "701", "938", "521"];
+    let activeIdx = null, zenInterval = null, timer, startTime, isSongPlaying = false, mediaRecorder, audioChunks = [], recordedUrl = null;
+
+    function init() {
+        const grid = document.getElementById('pi-grid');
+        grid.innerHTML = '';
+        piData.forEach((val, i) => {
+            const card = document.createElement('div');
+            card.className = 'card'; card.id = `card-${i}`;
+            card.innerHTML = `<div style="font-size:0.6rem;position:absolute;top:3px;left:5px;color:#999;">#${i+1}</div><div class="card-val">${val}</div>`;
+            card.onclick = () => handleInput(i);
+            grid.appendChild(card);
+        });
+    }
+
+    // NEW PAO LOGIC: 3 per scene
+    async function runPAOFull() {
+        resetGrid();
+        const box = document.getElementById('method-box'); box.style.display = 'block';
+        box.innerHTML = "<strong>PAO Movie Mode:</strong> Combining Einstein, Climbing, and Snake into one scene.";
+        
+        for(let i=0; i < 10; i++) {
+            const card = document.getElementById(`card-${i}`);
+            card.classList.add('revealed', 'active-target');
+            card.scrollIntoView({behavior:'smooth', block:'center'});
+            
+            const text = `Block ${i+1} represents Einstein climbing a giant snake. Person: Einstein. Action: Climbing. Object: Snake. Totaling digits 3 1 4, 1 5 9, and 2 6 5.`;
+            const utt = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utt);
+            await new Promise(r => utt.onend = r);
+            card.classList.remove('active-target');
+        }
+    }
+
+    function handleInput(i) {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('active-target'));
+        const card = document.getElementById(`card-${i}`);
+        card.classList.add('active-target', 'revealed');
+        activeIdx = i;
+    }
+
+    function toggleGhostMode() { 
+        document.getElementById('master-body').classList.toggle('ghost-active'); 
+        document.getElementById('ghost-btn').innerText = document.getElementById('master-body').classList.contains('ghost-active') ? "Ghost Mode: ON" : "Ghost Mode: OFF"; 
+    }
+
+    function toggleZenMode() {
+        if (zenInterval) { clearInterval(zenInterval); zenInterval = null; document.getElementById('zen-toggle').innerText = "Enable Zen Mode"; return; }
+        resetGrid(); document.getElementById('zen-toggle').innerText = "Stop Zen";
+        let cur = 0;
+        zenInterval = setInterval(() => {
+            if (cur >= 52) { clearInterval(zenInterval); return; }
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('active-target'));
+            const card = document.getElementById(`card-${cur}`);
+            card.classList.add('active-target'); card.scrollIntoView({behavior:'smooth', block:'center'});
+            setTimeout(() => card.classList.add('revealed'), 1000);
+            cur++;
+        }, 3000);
+    }
+
+    function speakCurrentCard() {
+        window.speechSynthesis.cancel();
+        if (activeIdx !== null) {
+            const utt = new SpeechSynthesisUtterance(piData[activeIdx].split('').join(' '));
+            window.speechSynthesis.speak(utt);
+        } else {
+            window.speechSynthesis.speak(new SpeechSynthesisUtterance("Please select a card first."));
+        }
+    }
+
+    async function toggleRecording() {
+        const btn = document.getElementById('rec-btn');
+        if (mediaRecorder && mediaRecorder.state === "recording") { mediaRecorder.stop(); btn.innerText = "Record My Voice"; btn.style.background = "var(--alert-red)"; } 
+        else {
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(stream); audioChunks = [];
+            mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+            mediaRecorder.onstop = () => {
+                const blob = new Blob(audioChunks, { type: 'audio/webm' });
+                recordedUrl = URL.createObjectURL(blob);
+                document.getElementById('audio-container').innerHTML = `<audio controls src="${recordedUrl}"></audio>`;
+                document.getElementById('dl-btn').style.display = 'block';
+            };
+            mediaRecorder.start(); btn.innerText = "STOP RECORDING"; btn.style.background = "black";
+        }
+    }
+
+    function downloadRecording() { const a = document.createElement('a'); a.href = recordedUrl; a.download = 'pi-recitation.webm'; a.click(); }
+    function resetGrid() { window.speechSynthesis.cancel(); clearInterval(zenInterval); zenInterval = null; document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed', 'active-target')); document.getElementById('method-box').style.display = 'none'; document.getElementById('zen-toggle').innerText = "Enable Zen Mode"; }
+    function startChampionshipRun() { resetGrid(); startTime = Date.now(); timer = setInterval(() => { document.getElementById('timer-display').innerText = ((Date.now() - startTime)/1000).toFixed(2); }, 10); }
+
+    init();
+</script>
+</body>
+</html>
