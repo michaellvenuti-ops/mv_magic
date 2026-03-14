@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>National Pi Lab | Restoration Suite</title>
+    <title>National Pi Lab | Archival Edition</title>
     <style>
         :root {
             --judge-blue: #002347; --data-teal: #00f5d4; --pi-gold: #ffb703;
@@ -23,7 +23,7 @@
         .btn { width: 100%; padding: 10px; margin: 4px 0; border-radius: 4px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; text-transform: uppercase; font-size: 0.7rem; }
         .btn-start { background: var(--data-teal); color: var(--judge-blue); }
         .btn-method { background: #334e68; color: white; }
-        .btn-comp { background: linear-gradient(45deg, #ff4d4d, #9c27b0); color: white; }
+        .btn-dl { background: #4caf50; color: white; display: none; margin-top: 10px; }
         
         #viewport { margin-left: 380px; padding: 40px; width: 100%; box-sizing: border-box; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
@@ -50,7 +50,6 @@
         <div class="stat-line"><span>MISTAKES:</span> <span id="mistake-count">0</span></div>
         <button class="btn btn-start" onclick="startRandomTest()">Random Recall Test</button>
         <button class="btn btn-start" style="background:#ff9800" onclick="startChampionshipRun()">Visual 52-Run</button>
-        <button class="btn btn-comp" onclick="startCompetitionMode()">Enter Competition Mode</button>
     </div>
 
     <div class="module-card">
@@ -65,6 +64,8 @@
         <h4>Audio & Recorder</h4>
         <button class="btn" style="background:var(--alert-red); color:white;" id="rec-btn" onclick="toggleRecording()">Record My Voice</button>
         <div id="audio-container"></div>
+        <button class="btn btn-dl" id="dl-btn" onclick="downloadRecording()">Download Audio File</button>
+        <hr style="opacity:0.2; margin:10px 0;">
         <button class="btn" style="background:#ffeb3b; color:black;" id="song-btn" onclick="togglePiSong()">Play Pi Melody (Song)</button>
         <input type="range" id="speed-slider" min="0.5" max="2.5" step="0.1" value="1.0" style="width:100%">
         <button class="btn" style="background:#00bcd4; color:white;" onclick="startDictationMode()">Dictation Mode</button>
@@ -88,7 +89,7 @@
     const piData = ["314", "159", "265", "358", "979", "323", "846", "264", "338", "327", "950", "288", "419", "716", "939", "937", "510", "582", "097", "494", "459", "230", "781", "640", "628", "620", "067", "982", "148", "086", "513", "282", "306", "647", "093", "844", "609", "550", "582", "231", "725", "359", "408", "128", "481", "117", "450", "284", "102", "701", "938", "521"];
     let timer, startTime, activeIdx = null, runIdx = 0, mistakes = 0;
     let isSongPlaying = false, zenInterval = null, isChampRun = false;
-    let mediaRecorder, audioChunks = [];
+    let mediaRecorder, audioChunks = [], recordedUrl = null;
 
     function init() {
         const grid = document.getElementById('pi-grid');
@@ -102,7 +103,6 @@
         });
     }
 
-    /* CORE LOGIC */
     function handleInput(i) {
         const card = document.getElementById(`card-${i}`);
         if (activeIdx === i) {
@@ -111,17 +111,13 @@
                 runIdx++;
                 if (runIdx < 52) { activeIdx = runIdx; highlightCard(runIdx); } 
                 else { finishRun(); }
-            } else {
-                clearInterval(timer); activeIdx = null;
-            }
+            } else { clearInterval(timer); activeIdx = null; }
         } else if (activeIdx !== null) {
             mistakes++;
             document.getElementById('mistake-count').innerText = mistakes;
             card.style.background = '#ffcccc';
             setTimeout(() => card.style.background = '', 300);
-        } else {
-            card.classList.toggle('revealed');
-        }
+        } else { card.classList.toggle('revealed'); }
     }
 
     function highlightCard(idx) {
@@ -131,7 +127,6 @@
         card.scrollIntoView({behavior: 'smooth', block: 'center'});
     }
 
-    /* MODES */
     function startRandomTest() { resetGrid(); activeIdx = Math.floor(Math.random()*52); highlightCard(activeIdx); startClock(); }
     function startChampionshipRun() { resetGrid(); isChampRun = true; runIdx = 0; activeIdx = 0; highlightCard(0); startClock(); }
     
@@ -139,11 +134,11 @@
         resetGrid(); activeIdx = Math.floor(Math.random()*52);
         const text = piData[activeIdx].split('').join(' ');
         const msg = new SpeechSynthesisUtterance(`Find block: ${text}`);
+        msg.rate = document.getElementById('speed-slider').value;
         msg.onend = () => startClock();
         window.speechSynthesis.speak(msg);
     }
 
-    /* AUDIO & SONG */
     function togglePiSong() {
         if (isSongPlaying) { window.speechSynthesis.cancel(); isSongPlaying = false; document.getElementById('song-btn').innerText = "Play Pi Melody"; }
         else { isSongPlaying = true; document.getElementById('song-btn').innerText = "Stop Melody"; playSongStep(0); }
@@ -158,7 +153,6 @@
         highlightCard(idx);
     }
 
-    /* VOICE RECORDER FIX */
     async function toggleRecording() {
         const btn = document.getElementById('rec-btn');
         if (mediaRecorder && mediaRecorder.state === "recording") {
@@ -170,27 +164,49 @@
             audioChunks = [];
             mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
             mediaRecorder.onstop = () => {
-                const blob = new Blob(audioChunks, { type: 'audio/mpeg' });
-                const url = URL.createObjectURL(blob);
-                const container = document.getElementById('audio-container');
-                container.innerHTML = `<audio controls src="${url}"></audio>`;
+                const blob = new Blob(audioChunks, { type: 'audio/webm' });
+                recordedUrl = URL.createObjectURL(blob);
+                document.getElementById('audio-container').innerHTML = `<audio controls src="${recordedUrl}"></audio>`;
+                document.getElementById('dl-btn').style.display = 'block';
             };
             mediaRecorder.start();
             btn.innerText = "STOP RECORDING"; btn.style.background = "black";
         }
     }
 
-    /* UTILS */
+    function downloadRecording() {
+        if (!recordedUrl) return;
+        const a = document.createElement('a');
+        a.href = recordedUrl;
+        a.download = `pi-recitation-${Date.now()}.webm`;
+        a.click();
+    }
+
     function startClock() { startTime = Date.now(); timer = setInterval(() => { document.getElementById('timer-display').innerText = ((Date.now() - startTime)/1000).toFixed(2); }, 10); }
     function toggleGhostMode() { document.getElementById('master-body').classList.toggle('ghost-active'); document.getElementById('ghost-btn').innerText = document.getElementById('master-body').classList.contains('ghost-active') ? "Ghost Mode: ON" : "Ghost Mode: OFF"; }
     function showMethod(m) { 
         const box = document.getElementById('method-box'); box.style.display = 'block';
-        const texts = { chunking: "Chunking: Breaking 156 digits into 52 three-digit blocks.", palace: "Palace: Placing blocks in rooms of a mental house.", major: "Major: Converting numbers to consonant sounds.", pao: "PAO: Person-Action-Object imagery." };
+        const texts = { chunking: "Chunking: 156 digits into 52 three-digit blocks.", palace: "Palace: Visualizing rooms in a mental house.", major: "Major: Numbers to consonant sounds.", pao: "PAO: Person-Action-Object films." };
         box.innerHTML = `<strong>${texts[m]}</strong>`;
     }
     function resetGrid() { clearInterval(timer); clearInterval(zenInterval); isChampRun = false; isSongPlaying = false; window.speechSynthesis.cancel(); document.getElementById('timer-display').innerText = "0.00"; document.getElementById('mistake-count').innerText = "0"; mistakes = 0; document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed', 'active-target')); }
     function speakCurrentCard() { if(activeIdx !== null) window.speechSynthesis.speak(new SpeechSynthesisUtterance(piData[activeIdx].split('').join(' '))); }
     
+    function toggleZenMode() {
+        if (zenInterval) { clearInterval(zenInterval); zenInterval = null; document.getElementById('zen-toggle').innerText = "Enable Zen Mode"; }
+        else {
+            resetGrid(); let cur = 0; document.getElementById('zen-toggle').innerText = "Stop Zen";
+            zenInterval = setInterval(() => {
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed', 'active-target'));
+                if (cur >= 52) { clearInterval(zenInterval); return; }
+                const card = document.getElementById(`card-${cur}`);
+                card.classList.add('active-target');
+                setTimeout(() => card.classList.add('revealed'), 1000);
+                cur++;
+            }, 3000);
+        }
+    }
+
     init();
 </script>
 </body>
