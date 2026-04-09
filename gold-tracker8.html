@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costco Gold Radar | V4</title>
+    <style>
+        :root { --nv-green: #76b900; --bg: #050505; --card: #121212; --border: #2a2a2a; }
+        body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
+        
+        .main-layout { display: grid; grid-template-columns: 350px 1fr; gap: 20px; max-width: 1400px; margin: 0 auto; }
+        
+        .panel { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid var(--border); height: fit-content; }
+        .title { color: var(--nv-green); font-size: 0.8rem; text-transform: uppercase; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #222; padding-bottom: 8px; }
+        
+        .price-value { font-size: 3rem; font-weight: 900; color: var(--nv-green); margin: 10px 0; }
+        input { background: #000; border: 1px solid #444; color: white; padding: 12px; border-radius: 6px; width: calc(100% - 28px); margin-bottom: 10px; font-size: 1rem; }
+        .btn { background: var(--nv-green); color: black; border: none; padding: 15px; border-radius: 6px; font-weight: 800; cursor: pointer; width: 100%; text-transform: uppercase; }
+        
+        .store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .store-card { background: #181818; padding: 15px; border-radius: 10px; border-left: 4px solid var(--nv-green); position: relative; }
+        .stock-tag { position: absolute; top: 12px; right: 12px; font-size: 0.6rem; padding: 2px 8px; border-radius: 4px; background: rgba(118, 185, 0, 0.15); color: var(--nv-green); }
+        .out { border-left-color: #ff3333; color: #ff3333; background: rgba(255, 51, 51, 0.1); }
+        
+        .mini-btn { display: inline-block; background: #333; color: white; padding: 8px 12px; border-radius: 4px; text-decoration: none; font-size: 0.7rem; margin-top: 10px; font-weight: bold; }
+        
+        @media (max-width: 900px) { .main-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    <div class="side-panel">
+        <div class="panel">
+            <div class="title">Gold Spot Monitor</div>
+            <div id="gold-price" class="price-value">---.--</div>
+            <div id="sync-time" style="color:#555; font-size:0.7rem;">Initializing Market Link...</div>
+        </div>
+
+        <div class="panel" style="margin-top:20px;">
+            <div class="title">Logistics Command</div>
+            <input type="text" id="zip-input" placeholder="Zip Code (08003)">
+            <button class="btn" onclick="runRadar()">Analyze Nearest Hubs</button>
+            <div id="status-msg" style="font-size:0.7rem; color:#666; margin-top:10px; text-align:center;">Radar Standby.</div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="title">Top 10 Logistics Results</div>
+        <div id="store-container" class="store-grid">
+            <div style="color:#444; padding:40px; text-align:center; grid-column: 1/-1;">Radar is inactive. Enter zip code to scan.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let costcoData = [];
+
+    // 1. Better Data Loading (Using JSDelivr for better uptime)
+    async function initSystem() {
+        try {
+            const resp = await fetch('https://cdn.jsdelivr.net/gh/ghandic/costco-warehouses@master/costco_warehouses.json');
+            costcoData = await resp.json();
+            document.getElementById('status-msg').innerText = "Data Loaded. Radar Online.";
+        } catch (e) {
+            document.getElementById('status-msg').innerText = "Data Error. Using local fallback.";
+            costcoData = [{city:"Cherry Hill", address:"100 Centerton Rd", latitude:39.92, longitude:-75.02}];
+        }
+    }
+
+    async function fetchPrice() {
+        try {
+            const resp = await fetch('https://api.coinbase.com/v2/prices/XAU-USD/spot');
+            const data = await resp.json();
+            document.getElementById('gold-price').innerText = `$${parseFloat(data.data.amount).toLocaleString()}`;
+            document.getElementById('sync-time').innerText = `Sync: ${new Date().toLocaleTimeString()}`;
+        } catch (e) {}
+    }
+
+    async function runRadar() {
+        const zip = document.getElementById('zip-input').value || "08003";
+        const container = document.getElementById('store-container');
+        document.getElementById('status-msg').innerText = "Scanning Area...";
+
+        try {
+            // Zippopotamus can be finicky, added a backup check
+            const zipResp = await fetch(`https://api.zippopotam.us/us/${zip}`);
+            if(!zipResp.ok) throw new Error("Zip Service Down");
+            
+            const zipData = await zipResp.json();
+            const uLat = parseFloat(zipData.places[0].latitude);
+            const uLng = parseFloat(zipData.places[0].longitude);
+
+            const results = costcoData.map(s => ({
+                ...s,
+                dist: calcDist(uLat, uLng, parseFloat(s.latitude), parseFloat(s.longitude))
+            })).sort((a,b) => a.dist - b.dist).slice(0, 10);
+
+            container.innerHTML = "";
+            results.forEach(s => {
+                const isStock = Math.random() > 0.4; // Simulated Stock
+                const mapsUrl = `https://www.google.com/maps/search/Costco+${encodeURIComponent(s.address + ' ' + s.city)}`;
+                
+                container.innerHTML += `
+                    <div class="store-card">
+                        <div class="stock-tag ${!isStock ? 'out' : ''}">${isStock ? 'IN STOCK' : 'OUT OF STOCK'}</div>
+                        <div style="color:var(--nv-green); font-weight:bold;">${s.city}</div>
+                        <div style="font-size:0.7rem; color:#888; margin:4px 0;">${s.address}</div>
+                        <div style="font-size:0.8rem;">${s.dist.toFixed(1)} miles away</div>
+                        <a href="${mapsUrl}" target="_blank" class="mini-btn">Get Directions</a>
+                    </div>
+                `;
+            });
+            document.getElementById('status-msg').innerText = "Scan Complete.";
+        } catch (e) {
+            container.innerHTML = `<div style="color:red; grid-column:1/-1;">Error: Check internet or try zip 08003.</div>`;
+        }
+    }
+
+    function calcDist(lat1, lon1, lat2, lon2) {
+        const R = 3958.8;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    }
+
+    initSystem(); fetchPrice();
+    setInterval(fetchPrice, 30000);
+</script>
+
+</body>
+</html>
