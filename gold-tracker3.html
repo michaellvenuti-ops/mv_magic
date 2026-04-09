@@ -1,0 +1,86 @@
+<script>
+    let globalCostcos = [];
+
+    // 1. Fetch the REAL list of Costcos from a public data source
+    async function loadGlobalCostcos() {
+        const resultDiv = document.getElementById('nearest-result');
+        try {
+            // Fetching a comprehensive Costco locations JSON
+            const response = await fetch('https://raw.githubusercontent.com/get-community/costco-locations/main/costco-locations.json');
+            const data = await response.json();
+            
+            // Map the data into a simple format our app understands
+            globalCostcos = data.map(store => ({
+                name: `${store.city}, ${store.state || store.country}`,
+                lat: parseFloat(store.latitude),
+                lng: parseFloat(store.longitude),
+                address: store.address
+            }));
+
+            console.log(`Loaded ${globalCostcos.length} global warehouses.`);
+        } catch (e) {
+            console.error("Failed to load global list, using backups.");
+            // Backup list in case the external data fails
+            globalCostcos = [{ name: "Cherry Hill, NJ", lat: 39.926, lng: -75.025 }];
+        }
+    }
+
+    async function fetchGoldPrice() {
+        try {
+            const resp = await fetch('https://api.coinbase.com/v2/prices/XAU-USD/spot');
+            const data = await resp.json();
+            document.getElementById('gold-price').innerText = `$${parseFloat(data.data.amount).toLocaleString()}`;
+        } catch (e) { document.getElementById('gold-price').innerText = "OFFLINE"; }
+    }
+
+    async function findNearestCostco() {
+        const zip = document.getElementById('zip-input').value;
+        const resultDiv = document.getElementById('nearest-result');
+        if (!zip) return;
+
+        resultDiv.innerText = "Analyzing global network...";
+
+        try {
+            const response = await fetch(`https://api.zippopotam.us/us/${zip}`);
+            if (!response.ok) throw new Error("Invalid Zip");
+            const data = await response.json();
+            const userLat = parseFloat(data.places[0].latitude);
+            const userLng = parseFloat(data.places[0].longitude);
+
+            let closest = null;
+            let minDistance = Infinity;
+
+            globalCostcos.forEach(store => {
+                const dist = calculateDistance(userLat, userLng, store.lat, store.lng);
+                if (dist < minDistance) {
+                    minDistance = dist;
+                    closest = store;
+                }
+            });
+
+            resultDiv.innerHTML = `
+                <div style="border-top: 1px solid #333; margin-top:10px; padding-top:10px;">
+                    <strong>Closest Warehouse:</strong><br>
+                    <span style="color:var(--nvidia-green)">${closest.name}</span><br>
+                    <small style="color:var(--text-gray)">${closest.address}</small><br>
+                    <strong>Distance:</strong> ${minDistance.toFixed(1)} miles
+                </div>`;
+        } catch (e) {
+            resultDiv.innerText = "Location not found. Check zip code.";
+        }
+    }
+
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+        const R = 3958.8; // Miles
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+    }
+
+    // Initialize the app
+    fetchGoldPrice();
+    loadGlobalCostcos();
+</script>
