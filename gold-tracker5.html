@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costco Gold Logistics | NV-V3</title>
+    <style>
+        :root { --nv-green: #76b900; --bg-black: #000000; --card-gray: #1a1a1a; --text-dim: #b3b3b3; }
+        body { background: var(--bg-black); color: white; font-family: 'Inter', sans-serif; display: flex; justify-content: center; padding: 20px; margin: 0; }
+        .dashboard { width: 100%; max-width: 500px; background: var(--card-gray); padding: 25px; border-radius: 16px; border-top: 5px solid var(--nv-green); box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
+        h1 { font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--nv-green); text-align: center; margin-bottom: 20px; }
+        .stat-card { background: #222; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #333; }
+        .value { font-size: 2.2rem; font-weight: 800; color: var(--nv-green); text-align: center; }
+        input { background: #000; border: 1px solid #444; color: white; padding: 12px; border-radius: 6px; width: calc(100% - 26px); margin-bottom: 10px; font-size: 1rem; }
+        .btn { background: var(--nv-green); color: black; border: none; padding: 14px; border-radius: 6px; font-weight: 700; cursor: pointer; width: 100%; text-transform: uppercase; }
+        .store-list { margin-top: 20px; }
+        .store-item { background: #111; padding: 15px; border-radius: 8px; margin-bottom: 12px; border-left: 3px solid #444; transition: 0.3s; }
+        .store-item:hover { border-left-color: var(--nv-green); background: #151515; }
+        .store-name { color: var(--nv-green); font-weight: bold; font-size: 1rem; }
+        .store-info { color: var(--text-dim); font-size: 0.8rem; margin: 4px 0; }
+        .action-row { display: flex; gap: 8px; margin-top: 10px; }
+        .mini-btn { flex: 1; padding: 8px; font-size: 0.7rem; border-radius: 4px; text-decoration: none; text-align: center; font-weight: bold; text-transform: uppercase; }
+        .btn-maps { background: #333; color: white; }
+        .btn-stock { background: var(--nv-green); color: black; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>Logistics Command Center</h1>
+    
+    <div class="stat-card">
+        <div style="color:var(--text-dim); font-size:0.7rem; text-align:center; margin-bottom:5px;">GLOBAL SPOT PRICE</div>
+        <div id="gold-price" class="value">---.--</div>
+    </div>
+
+    <div class="stat-card">
+        <input type="text" id="zip-input" placeholder="Enter Zip Code (e.g., 08003)">
+        <button class="btn" onclick="findTop10Stores()">Analyze Top 10 Warehouses</button>
+    </div>
+
+    <div id="results-container" class="store-list"></div>
+</div>
+
+<script>
+    let globalCostcos = [];
+
+    async function loadStores() {
+        try {
+            const response = await fetch('https://raw.githubusercontent.com/ghandic/costco-warehouses/master/costco_warehouses.json');
+            globalCostcos = await response.json();
+            console.log("Global data synchronized.");
+        } catch (e) { console.error("Data sync failed."); }
+    }
+
+    async function fetchGoldPrice() {
+        try {
+            const resp = await fetch('https://api.coinbase.com/v2/prices/XAU-USD/spot');
+            const data = await resp.json();
+            document.getElementById('gold-price').innerText = `$${parseFloat(data.data.amount).toLocaleString()}`;
+        } catch (e) { }
+    }
+
+    async function findTop10Stores() {
+        const zip = document.getElementById('zip-input').value;
+        const container = document.getElementById('results-container');
+        if (!zip) return;
+
+        container.innerHTML = "<p style='text-align:center; color:#666;'>Calculating nearest logistics hubs...</p>";
+
+        try {
+            const response = await fetch(`https://api.zippopotam.us/us/${zip}`);
+            if (!response.ok) throw new Error();
+            const data = await response.json();
+            const uLat = parseFloat(data.places[0].latitude);
+            const uLng = parseFloat(data.places[0].longitude);
+
+            // Calculate distance for ALL stores, then sort
+            const sorted = globalCostcos.map(store => {
+                const dist = calculateDistance(uLat, uLng, parseFloat(store.latitude), parseFloat(store.longitude));
+                return { ...store, dist };
+            }).sort((a, b) => a.dist - b.dist).slice(0, 10);
+
+            // Render top 10
+            container.innerHTML = "";
+            sorted.forEach(store => {
+                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.address + ' ' + store.city)}`;
+                const inventoryUrl = `https://www.costco.com/warehouse-locations?search=${zip}`; 
+
+                container.innerHTML += `
+                    <div class="store-item">
+                        <div class="store-name">Costco ${store.city}</div>
+                        <div class="store-info">${store.address}</div>
+                        <div style="font-size:0.75rem; color:#888;">${store.dist.toFixed(1)} miles away</div>
+                        <div class="action-row">
+                            <a href="${mapsUrl}" target="_blank" class="mini-btn btn-maps">Directions</a>
+                            <a href="${inventoryUrl}" target="_blank" class="mini-btn btn-stock">Check In-Store</a>
+                        </div>
+                    </div>
+                `;
+            });
+
+        } catch (e) {
+            container.innerHTML = "<p style='color:red; text-align:center;'>Invalid Zip. Try 08003.</p>";
+        }
+    }
+
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+        const R = 3958.8;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    }
+
+    fetchGoldPrice();
+    loadStores();
+</script>
+</body>
+</html>
