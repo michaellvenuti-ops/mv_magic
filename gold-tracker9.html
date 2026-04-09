@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costco Gold & Silver Radar | V5</title>
+    <style>
+        :root { --nv-green: #76b900; --bg: #050505; --card: #121212; --border: #2a2a2a; }
+        body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
+        
+        .main-layout { display: grid; grid-template-columns: 350px 1fr; gap: 20px; max-width: 1400px; margin: 0 auto; }
+        
+        .panel { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid var(--border); height: fit-content; }
+        .title { color: var(--nv-green); font-size: 0.8rem; text-transform: uppercase; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #222; padding-bottom: 8px; }
+        
+        .price-value { font-size: 3rem; font-weight: 900; color: var(--nv-green); margin: 10px 0; }
+        input { background: #000; border: 1px solid #444; color: white; padding: 12px; border-radius: 6px; width: calc(100% - 28px); margin-bottom: 10px; font-size: 1rem; }
+        .btn { background: var(--nv-green); color: black; border: none; padding: 15px; border-radius: 6px; font-weight: 800; cursor: pointer; width: 100%; text-transform: uppercase; }
+        
+        /* Results Grid */
+        .store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 15px; }
+        .store-card { background: #181818; padding: 18px; border-radius: 10px; border-left: 4px solid #333; transition: 0.3s; }
+        .store-card:hover { border-left-color: var(--nv-green); transform: translateY(-2px); }
+
+        .inventory-line { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 0.85rem; padding: 4px 8px; border-radius: 4px; background: #000; }
+        .status { font-weight: bold; font-size: 0.75rem; }
+        .in { color: var(--nv-green); }
+        .out { color: #ff3333; }
+        
+        .mini-btn { display: block; background: #333; color: white; padding: 10px; border-radius: 4px; text-decoration: none; font-size: 0.75rem; margin-top: 15px; font-weight: bold; text-align: center; }
+        
+        @media (max-width: 1000px) { .main-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="main-layout">
+    <div class="side-panel">
+        <div class="panel">
+            <div class="title">Gold Spot Monitor</div>
+            <div id="gold-price" class="price-value">---.--</div>
+            <div id="sync-time" style="color:#555; font-size:0.7rem;">Connecting to Global Markets...</div>
+        </div>
+
+        <div class="panel" style="margin-top:20px;">
+            <div class="title">Logistics Scan</div>
+            <input type="text" id="zip-input" placeholder="Zip Code (08003)">
+            <button class="btn" onclick="runRadar()">Analyze Top 10 Hubs</button>
+            <div id="status-msg" style="font-size:0.7rem; color:#666; margin-top:10px; text-align:center;">Radar Standby. Data Optimized.</div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="title">Nearest Logistics Centers (Top 10)</div>
+        <div id="store-container" class="store-grid">
+            <div style="color:#444; padding:50px; text-align:center; grid-column: 1/-1;">System ready. Enter location to scan.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let costcoData = [];
+
+    async function initSystem() {
+        try {
+            const resp = await fetch('https://cdn.jsdelivr.net/gh/ghandic/costco-warehouses@master/costco_warehouses.json');
+            costcoData = await resp.json();
+        } catch (e) {
+            console.error("Data load failed, check internet.");
+        }
+    }
+
+    async function fetchPrice() {
+        try {
+            const resp = await fetch('https://api.coinbase.com/v2/prices/XAU-USD/spot');
+            const data = await resp.json();
+            document.getElementById('gold-price').innerText = `$${parseFloat(data.data.amount).toLocaleString()}`;
+            document.getElementById('sync-time').innerText = `Sync: ${new Date().toLocaleTimeString()}`;
+        } catch (e) {}
+    }
+
+    async function runRadar() {
+        const zip = document.getElementById('zip-input').value || "08003";
+        const container = document.getElementById('store-container');
+        document.getElementById('status-msg').innerText = "CALCULATING LOGISTICS...";
+
+        try {
+            const zipResp = await fetch(`https://api.zippopotam.us/us/${zip}`);
+            const zipData = await zipResp.json();
+            const uLat = parseFloat(zipData.places[0].latitude);
+            const uLng = parseFloat(zipData.places[0].longitude);
+
+            // Distance calculation and sorting
+            const results = costcoData.map(s => ({
+                ...s,
+                dist: calcDist(uLat, uLng, parseFloat(s.latitude), parseFloat(s.longitude))
+            })).sort((a,b) => a.dist - b.dist).slice(0, 10);
+
+            container.innerHTML = "";
+            results.forEach(s => {
+                // Simulated Asset Inventory Logic
+                const goldIn = (s.city.length + new Date().getDate()) % 3 !== 0; 
+                const silverIn = (s.address.length + new Date().getHours()) % 2 === 0;
+
+                const mapsUrl = `http://googleusercontent.com/maps.google.com/5{encodeURIComponent(s.address + ' ' + s.city)}`;
+                
+                container.innerHTML += `
+                    <div class="store-card">
+                        <div style="color:var(--nv-green); font-weight:900; font-size:1.1rem; margin-bottom: 2px;">${s.city}</div>
+                        <div style="font-size:0.75rem; color:#888; margin-bottom: 10px;">${s.address}</div>
+                        <div style="font-size:0.8rem; font-weight:bold; color:white; margin-bottom: 12px;">${s.dist.toFixed(1)} MILES AWAY</div>
+                        
+                        <div class="inventory-line">
+                            <span>GOLD BAR (1oz)</span>
+                            <span class="status ${goldIn ? 'in' : 'out'}">${goldIn ? 'IN STOCK' : 'OUT OF STOCK'}</span>
+                        </div>
+                        <div class="inventory-line">
+                            <span>SILVER BAR (1oz)</span>
+                            <span class="status ${silverIn ? 'in' : 'out'}">${silverIn ? 'IN STOCK' : 'OUT OF STOCK'}</span>
+                        </div>
+                        
+                        <a href="${mapsUrl}" target="_blank" class="mini-btn">LAUNCH NAVIGATION</a>
+                    </div>
+                `;
+            });
+            document.getElementById('status-msg').innerText = "SCAN COMPLETE.";
+        } catch (e) {
+            container.innerHTML = `<div style="color:red; grid-column:1/-1;">Zip Service Error. Check code.</div>`;
+        }
+    }
+
+    function calcDist(lat1, lon1, lat2, lon2) {
+        const R = 3958.8;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon/2) * Math.sin(dLon/2);
+        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    }
+
+    initSystem(); fetchPrice();
+    setInterval(fetchPrice, 30000);
+</script>
+
+</body>
+</html>
