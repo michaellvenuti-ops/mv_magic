@@ -1,3 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costco Asset Tracker | V2</title>
+    <style>
+        :root { --nvidia-green: #76b900; --bg-dark: #000000; --card-bg: #1a1a1a; --text-gray: #b3b3b3; --text-light: #ffffff; }
+        body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .dashboard { width: 100%; max-width: 500px; background: var(--card-bg); padding: 2rem; border-radius: 12px; border-top: 4px solid var(--nvidia-green); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1 { font-size: 1.3rem; text-align: center; letter-spacing: 1px; margin-bottom: 1.5rem; color: var(--nvidia-green); }
+        .stat-card { background: #252525; padding: 1.2rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #333; }
+        .label { color: var(--text-gray); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 5px; }
+        .value { font-size: 1.8rem; font-weight: bold; color: var(--nvidia-green); }
+        input { background: #000; border: 1px solid #444; color: white; padding: 10px; border-radius: 4px; width: calc(100% - 22px); margin-bottom: 10px; font-size: 1rem; }
+        .btn { background-color: var(--nvidia-green); color: black; border: none; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
+        .btn:hover { background-color: #89d400; }
+        #nearest-result { margin-top: 10px; font-size: 0.9rem; color: #fff; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>Costco Precious Metals Monitor</h1>
+    
+    <div class="stat-card">
+        <div class="label">Gold Spot (USD/oz)</div>
+        <div id="gold-price" class="value">Loading...</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="label">Find Nearest Warehouse</div>
+        <input type="text" id="zip-input" placeholder="Enter Zip Code (e.g. 08003)">
+        <button class="btn" onclick="findNearestCostco()">LOCATE STORE</button>
+        <div id="nearest-result"></div>
+    </div>
+
+    <div class="stat-card">
+        <div class="label">Inventory Check</div>
+        <button class="btn" style="background:#444; color:white;" onclick="window.open('https://www.costco.com/.product.1768080.html', '_blank')">OPEN ITEM #1768080</button>
+    </div>
+</div>
+
 <script>
     let globalCostcos = [];
 
@@ -84,3 +127,8 @@
     fetchGoldPrice();
     loadGlobalCostcos();
 </script>
+
+</body>
+</html>
+
+
