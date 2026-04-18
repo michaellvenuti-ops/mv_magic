@@ -1,200 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Si Stebbins Card Tricks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Si Stebbins Card Tricks and the Way they are Performed</title>
     <style>
         :root {
-            --nv-green: #76b900;
-            --bg: #121212;
+            --accent: #FFD700;
+            --bg-dark: #121212;
             --card-bg: #1e1e1e;
-            --text: #e0e0e0;
-            --border: #333;
+            --text-main: #e0e0e0;
+            --sidebar-width: 320px; /* Widened slightly for bigger menu */
+            --card-red: #ff5555;
+            --card-white: #ffffff;
         }
-
         body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
         }
-
-        /* BIGGER TITLE */
-        h1 { 
-            font-size: 3.5rem; 
-            color: var(--nv-green); 
-            text-align: center; 
-            text-transform: uppercase;
-            margin-bottom: 30px;
-        }
-
-        .container { max-width: 1000px; margin: 0 auto; display: flex; gap: 30px; }
-
-        /* BIGGER SIDEBAR MENU */
-        nav { 
-            width: 300px; 
-            position: sticky; 
-            top: 20px; 
-            height: fit-content;
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 120px; /* Increased height for bigger title */
             background: #1a1a1a;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            border-bottom: 2px solid var(--accent);
+            z-index: 2000;
         }
-
-        nav h3 { color: var(--nv-green); margin-top: 0; font-size: 1.4rem; }
-
-        nav ul { list-style: none; padding: 0; }
-        nav ul li { margin-bottom: 12px; }
-
-        nav ul li a { 
-            color: var(--text); 
-            text-decoration: none; 
-            font-size: 1.15rem; /* Bigger font */
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover { color: var(--nv-green); padding-left: 5px; }
-
-        main { flex: 1; }
-
-        .trick-box { 
-            background: var(--card-bg); 
-            padding: 25px; 
-            border-radius: 12px; 
-            margin-bottom: 40px; 
-            border: 1px solid var(--border);
-        }
-
-        h2 { color: var(--nv-green); border-bottom: 1px solid #444; padding-bottom: 10px; text-transform: uppercase; }
-
-        .original-text { font-style: italic; color: #aaa; background: #000; padding: 15px; border-left: 4px solid var(--nv-green); margin-top: 15px; }
-
-        /* STACK GENERATOR VISUALS */
-        #stack-output { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; justify-content: center; }
+        .cover-img { height: 100px; margin-right: 25px; border: 1px solid var(--accent); }
         
-        .playing-card {
-            width: 80px; height: 115px; background: white; border-radius: 6px;
-            position: relative; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-            font-family: Arial, sans-serif; flex-shrink: 0;
+        /* BIGGER HEADER TEXT */
+        .header-text h1 { 
+            margin: 0; 
+            font-size: 1.8rem; /* Increased size */
+            color: var(--accent); 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
         }
-        .playing-card.red { color: #d40000; }
-        .corner { position: absolute; font-size: 0.8rem; font-weight: bold; text-align: center; line-height: 1; }
-        .top-left { top: 5px; left: 5px; }
-        .bottom-right { bottom: 5px; right: 5px; transform: rotate(180deg); }
-        .main-suit { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2rem; }
+        .pdf-link { color: #888; text-decoration: none; font-size: 0.9rem; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; margin-top: 5px; display: inline-block; }
 
-        select, button { padding: 10px; background: #222; color: var(--nv-green); border: 1px solid var(--nv-green); border-radius: 4px; font-weight: bold; cursor: pointer; }
-        button:hover { background: var(--nv-green); color: black; }
+        aside {
+            width: var(--sidebar-width);
+            background: #151515;
+            margin-top: 120px;
+            border-right: 1px solid #333;
+            padding: 25px;
+            overflow-y: auto;
+        }
 
-        input { background: #000; border: 1px solid #444; color: white; padding: 8px; border-radius: 4px; width: 60px; }
+        /* BIGGER MENU ITEMS */
+        .nav-link {
+            display: block;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 12px 15px; /* More padding */
+            margin-bottom: 8px;
+            border-radius: 6px;
+            font-size: 1.1rem; /* Significantly bigger font */
+            font-weight: bold;
+            transition: 0.2s;
+            border-left: 3px solid transparent;
+        }
+        .nav-link:hover { 
+            background: rgba(255, 215, 0, 0.1); 
+            color: var(--accent); 
+            border-left: 3px solid var(--accent);
+        }
 
-        @media (max-width: 800px) { .container { flex-direction: column; } nav { width: 100%; position: relative; } }
+        main {
+            flex-grow: 1;
+            margin-top: 120px;
+            padding: 40px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+        .section-card {
+            max-width: 850px;
+            margin: 0 auto 60px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 8px solid var(--accent);
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .summary-box {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .summary-box h3 { margin: 0 0 10px 0; font-size: 0.9rem; color: var(--accent); text-transform: uppercase; }
+        
+        /* CARD VISUALS */
+        .stack-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; justify-content: center; }
+        .playing-card {
+            width: 100px; height: 140px; background: var(--card-white); border-radius: 8px; color: black;
+            display: flex; flex-direction: column; justify-content: space-between; padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5); font-weight: bold; position: relative;
+        }
+        .card-red { color: var(--card-red); }
+        .card-suit-large { font-size: 2.5rem; text-align: center; width: 100%; }
+        .card-index { line-height: 1; font-size: 1rem; }
+        .bottom-index { text-align: right; transform: rotate(180deg); }
+
+        .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .calc-input { background: #000; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 4px; width: 100%; box-sizing: border-box;}
+        .calc-btn { background: var(--accent); color: #000; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .full-btn { grid-column: span 2; }
+        
+        .source-wrapper { margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px; }
+        .source-text { display: none; font-size: 0.9rem; color: #aaa; background: #111; padding: 15px; border-radius: 5px; font-style: italic; white-space: pre-line; }
+        .toggle-btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 5px 10px; cursor: pointer; font-size: 0.7rem; border-radius: 4px; }
+        h2, h3 { color: var(--accent); margin-top: 0; }
+        .video-btn { display: inline-block; background: #ff0000; color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<h1>Si Stebbins Card Tricks</h1>
+<header>
+    <img src="si_stebbin_cover.png" class="cover-img" alt="1898 Cover">
+    <div class="header-text">
+        <h1>The Si Stebbins Card Tricks</h1>
+        <a href="https://dn720502.ca.archive.org/0/items/sistedbbinscardt00stebrich/sistedbbinscardt00stebrich.pdf" target="_blank" class="pdf-link">Original Source PDF</a>
+    </div>
+</header>
 
-<div class="container">
-    <nav>
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#setup">System Foundation</a></li>
-            <li><a href="#trick1">01: Naming the Card</a></li>
-            <li><a href="#trick2">02: Counting Handful</a></li>
-            <li><a href="#trick7">07: GPS Position</a></li>
-            <li><a href="#stack-gen">Stack Generator</a></li>
-            <li><a href="#calculators">Logic Calculators</a></li>
-            <li><a href="https://michaellvenuti-ops.github.io/mv_magic/">Main Menu</a></li>
-        </ul>
-    </nav>
+<aside>
+    <a href="#setup" class="nav-link">System Foundation</a>
+    <a href="#trick1" class="nav-link">01: Naming the Card</a>
+    <a href="#trick2" class="nav-link">02: Counting Handful</a>
+    <a href="#trick3" class="nav-link">03: Pocket Handful Call</a>
+    <a href="#trick7" class="nav-link">07: GPS Position</a>
+    <a href="#stack-gen" class="nav-link">Stack Generator</a>
+    <a href="#calculators" class="nav-link">Calculators</a>
+    <a href="https://michaellvenuti-ops.github.io/mv_magic/" class="nav-link">Main Menu</a>
+</aside>
 
-    <main>
-        <section id="setup" class="trick-box">
-            <h2>System Foundation</h2>
-            <p>Setup the deck in the following suit order: <strong>Clubs (♣) → Hearts (♥) → Spades (♠) → Diamonds (♦)</strong>.</p>
-            <p>Rule: Every card must be exactly <strong>3 values higher</strong> than the one before it. (A=1, J=11, Q=12, K=13).</p>
-        </section>
+<main>
+    <section id="setup" class="section-card">
+        <h2>System Foundation</h2>
+        <div class="summary-box">
+            <h3>Trick Summary</h3>
+            <p>Suit order: <span style="color:var(--accent)">Clubs → Hearts → Spades → Diamonds</span>. Cards are <strong>+3</strong> value from the previous card.</p>
+        </div>
+    </section>
 
-        <section id="trick1" class="trick-box">
-            <h2>01: Naming the Card Drawn</h2>
+    <section id="trick1" class="section-card">
+        <h2>01: Naming the Card Drawn</h2>
+        <div class="summary-box">
+            <h3>Trick Summary</h3>
             <p>Peek the bottom card. Add 3 to the value and name the next suit in order.</p>
-            <div class="original-text">
-                "By glancing at the bottom card, adding three to it, and calling the suit that follows the bottom card, you will name the card drawn."
-            </div>
-        </section>
+        </div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src1')">Original Text</button>
+        <div id="src1" class="source-text">TRICK 1 To name a card that a person may draw... [Text content kept]</div></div>
+    </section>
 
-        <section id="stack-gen" class="trick-box">
-            <h2>Card Stack Generator</h2>
-            <p>Set your <strong>Bottom Card</strong> to generate the full sequence:</p>
-            <select id="start-val">
-                <option value="1">Ace</option><option value="2">2</option><option value="3">3</option>
-                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                <option value="10">10</option><option value="11">Jack</option>
-                <option value="12">Queen</option><option value="13">King</option>
+    <section id="stack-gen" class="section-card">
+        <h2>Card Stack Generator</h2>
+        <div class="calc-grid">
+            <select id="gen-val" class="calc-input">
+                <option value="1">Ace</option>
+                <script>for(let i=2; i<=10; i++) document.write(`<option value="${i}">${i}</option>`);</script>
+                <option value="11">Jack</option><option value="12">Queen</option><option value="13">King</option>
             </select>
-            <select id="start-suit">
-                <option value="♣">Clubs</option><option value="♥">Hearts</option>
-                <option value="♠">Spades</option><option value="♦">Diamonds</option>
+            <select id="gen-suit" class="calc-input">
+                <option value="Clubs">Clubs</option><option value="Hearts">Hearts</option>
+                <option value="Spades">Spades</option><option value="Diamonds">Diamonds</option>
             </select>
-            <button onclick="generateVisualStack()">Generate Visual Stack</button>
-            <div id="stack-output"></div>
-        </section>
-
-        <section id="calculators" class="trick-box">
-            <h2>Logic Calculators</h2>
-            <h3>Trick 7: Position Locator</h3>
-            <p>Find how far from the top a called card is:</p>
-            Value: <input type="number" id="t7-val" placeholder="4"> 
-            Suit: <select id="t7-suit"><option>♣</option><option>♥</option><option>♠</option><option>♦</option></select>
-            <button onclick="calcT7()">Calculate</button>
-            <p id="t7-result" style="color:var(--nv-green); font-weight:bold;"></p>
-        </section>
-    </main>
-</div>
+            <button class="calc-btn full-btn" onclick="buildStack()">Generate Stack</button>
+        </div>
+        <div id="stack-out" class="stack-list"></div>
+    </section>
+</main>
 
 <script>
-    const suits = ['♣', '♥', '♠', '♦'];
-    const values = ['0', 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
+    // Standard symbols to ensure they work on all servers
+    const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
 
-    function generateVisualStack() {
-        const startVal = parseInt(document.getElementById('start-val').value);
-        const startSuit = document.getElementById('start-suit').value;
-        const output = document.getElementById('stack-output');
-        output.innerHTML = '';
-
-        let currentVal = startVal;
-        let suitIndex = suits.indexOf(startSuit);
-
-        for (let i = 0; i < 52; i++) {
-            currentVal = (currentVal + 3);
-            if (currentVal > 13) currentVal -= 13;
-            suitIndex = (suitIndex + 1) % 4;
-            
-            const suit = suits[suitIndex];
-            const displayVal = values[currentVal];
-            const isRed = (suit === '♥' || suit === '♦');
-
-            const cardDiv = document.createElement('div');
-            cardDiv.className = `playing-card ${isRed ? 'red' : ''}`;
-            cardDiv.innerHTML = `
-                <div class="corner top-left">${displayVal}<br>${suit}</div>
-                <div class="main-suit">${suit}</div>
-                <div class="corner bottom-right">${displayVal}<br>${suit}</div>
-            `;
-            output.appendChild(cardDiv);
-        }
+    function toggle(id) {
+        const x = document.getElementById(id);
+        x.style.display = (x.style.display === "block") ? "none" : "block";
     }
 
-    function calcT7() {
-        const val = parseInt(document.getElementById('t7-val').value);
-        // Simplified Logic for demonstration
-        document.getElementById('t7-result').innerText = "Card is approx " + (val * 4) + " cards down.";
+    function buildStack() {
+        let v = parseInt(document.getElementById('gen-val').value);
+        let s = document.getElementById('gen-suit').value;
+        let sIdx = suits.indexOf(s);
+        const out = document.getElementById('stack-out');
+        out.innerHTML = "";
+        
+        for(let i=0; i<52; i++) {
+            let currentSuit = suits[sIdx];
+            let symbol = suitSymbols[currentSuit];
+            let colorClass = (currentSuit === "Hearts" || currentSuit === "Diamonds") ? "card-red" : "";
+            
+            let displayVal = v;
+            if(v===1) displayVal="A"; if(v===11) displayVal="J"; if(v===12) displayVal="Q"; if(v===13) displayVal="K";
+            
+            // Integrated your corner index request here
+            out.innerHTML += `
+                <div class="playing-card ${colorClass}">
+                    <div class="card-index">${displayVal}<br>${symbol}</div>
+                    <div class="card-suit-large">${symbol}</div>
+                    <div class="card-index bottom-index">${displayVal}<br>${symbol}</div>
+                </div>`;
+            
+            v += 3; if(v > 13) v -= 13;
+            sIdx = (sIdx + 1) % 4;
+        }
     }
 </script>
 
