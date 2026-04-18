@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Si Stebbins | Digital Card Lab</title>
+    <style>
+        :root {
+            --nv-green: #76b900;
+            --bg: #0b0b0b;
+            --card-bg: #1a1a1a;
+            --text: #e0e0e0;
+            --border: #333;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        /* BIGGER TITLES */
+        h1 { font-size: 3rem; color: var(--nv-green); text-transform: uppercase; margin-bottom: 10px; }
+        h2 { font-size: 2rem; color: var(--nv-green); text-transform: uppercase; margin-bottom: 20px; }
+        
+        /* BIGGER MENU */
+        .btn-group { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; 
+            margin-bottom: 40px; 
+            border-bottom: 2px solid var(--border); 
+            padding-bottom: 25px; 
+        }
+        
+        .nav-btn {
+            background: #222;
+            color: var(--nv-green);
+            border: 2px solid var(--nv-green);
+            padding: 15px 25px; /* Larger hit area */
+            cursor: pointer;
+            font-weight: 800; /* Bolder font */
+            text-transform: uppercase;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem; /* Larger text */
+            transition: all 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: var(--nv-green);
+            color: black;
+            box-shadow: 0 0 15px var(--nv-green);
+        }
+
+        /* Card Generator Section */
+        #stack-gen {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        select {
+            background: #000;
+            color: white;
+            border: 1px solid #444;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            background: var(--nv-green);
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* The Cards */
+        #stack-output {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+            justify-content: center;
+        }
+
+        .playing-card {
+            width: 120px;
+            height: 170px;
+            background: white;
+            border-radius: 8px;
+            position: relative;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            font-family: Arial, sans-serif;
+        }
+
+        .playing-card.red { color: #d40000; }
+
+        .corner {
+            position: absolute;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .top-left { top: 8px; left: 8px; }
+        .bottom-right { bottom: 8px; right: 8px; transform: rotate(180deg); }
+
+        .main-suit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.5rem;
+        }
+
+        section { margin-bottom: 50px; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="btn-group">
+        <a href="#setup" class="nav-btn">Foundation</a>
+        <a href="#trick1" class="nav-btn">Naming Cards</a>
+        <a href="#stack-gen" class="nav-btn">Stack Generator</a>
+        <a href="https://michaellvenuti-ops.github.io/mv_magic/" class="nav-btn">Home</a>
+    </div>
+
+    <h1>Si Stebbins System</h1>
+    <p>A mathematical master-class in card control.</p>
+
+    <section id="setup">
+        <h2>System Foundation</h2>
+        <p>Suit Order: <strong>Clubs (♣) &rarr; Hearts (♥) &rarr; Spades (♠) &rarr; Diamonds (♦)</strong></p>
+        <p>Calculation: Every card is exactly <strong>+3</strong> higher than the one before it.</p>
+    </section>
+
+    <section id="stack-gen">
+        <h2>Stack Generator</h2>
+        <p>Select the <strong>Bottom Card</strong> of your deck:</p>
+        
+        <select id="start-val">
+            <option value="1">Ace</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+            <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+            <option value="10">10</option><option value="11">Jack</option>
+            <option value="12">Queen</option><option value="13">King</option>
+        </select>
+
+        <select id="start-suit">
+            <option value="♣">Clubs</option>
+            <option value="♥">Hearts</option>
+            <option value="♠">Spades</option>
+            <option value="♦">Diamonds</option>
+        </select>
+
+        <button onclick="generateStack()">Generate Stack</button>
+
+        <div id="stack-output"></div>
+    </section>
+</div>
+
+<script>
+    const suits = ['♣', '♥', '♠', '♦'];
+    const values = ['0', 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+
+    function generateStack() {
+        const startVal = parseInt(document.getElementById('start-val').value);
+        const startSuit = document.getElementById('start-suit').value;
+        const output = document.getElementById('stack-output');
+        output.innerHTML = '';
+
+        let currentVal = startVal;
+        let suitIndex = suits.indexOf(startSuit);
+
+        for (let i = 0; i < 52; i++) {
+            currentVal = (currentVal + 3);
+            if (currentVal > 13) currentVal -= 13;
+            suitIndex = (suitIndex + 1) % 4;
+            
+            const suit = suits[suitIndex];
+            const displayVal = values[currentVal];
+            const isRed = (suit === '♥' || suit === '♦');
+
+            const cardDiv = document.createElement('div');
+            cardDiv.className = `playing-card ${isRed ? 'red' : ''}`;
+            cardDiv.innerHTML = `
+                <div class="corner top-left">${displayVal}<br>${suit}</div>
+                <div class="main-suit">${suit}</div>
+                <div class="corner bottom-right">${displayVal}<br>${suit}</div>
+            `;
+            output.appendChild(cardDiv);
+        }
+    }
+</script>
+
+</body>
+</html>
