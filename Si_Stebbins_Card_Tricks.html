@@ -406,7 +406,11 @@ First ask person to shuffle pack; then ask them to think of any number between 1
 
 <script>
     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
-    const suitSymbols = {"Clubs":"â™£", "Hearts":"â™¥", "Spades":"â™ ", "Diamonds":"â™¦"};
+    const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
+    function toggle(id) {
+        const x = document.getElementById(id);
+        x.style.display = (x.style.display === "block") ? "none" : "block";
+    } 
     let currentQ = {};
 
     function toggle(id) {
@@ -452,6 +456,27 @@ First ask person to shuffle pack; then ask them to think of any number between 1
                 </div>`;
             v += 3; if(v > 13) v -= 13;
             sIdx = (sIdx + 1) % 4;
+        }
+    }
+
+     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
+    const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
+    function toggle(id) {
+        const x = document.getElementById(id);
+        x.style.display = (x.style.display === "block") ? "none" : "block";
+    }
+    function buildStack() {
+        let v = parseInt(document.getElementById('gen-val').value);
+        let s = document.getElementById('gen-suit').value;
+        let sIdx = suits.indexOf(s);
+        const out = document.getElementById('stack-out');
+        out.innerHTML = "";
+        for(let i=0; i<52; i++) {
+            let sym = suitSymbols[suits[sIdx]];
+            let color = (suits[sIdx]==="Hearts" || suits[sIdx]==="Diamonds") ? "card-red" : "";
+            let disp = v; if(v===1) disp="A"; else if(v===11) disp="J"; else if(v===12) disp="Q"; else if(v===13) disp="K";
+            out.innerHTML += `<div class="playing-card ${color}"><div class="card-index">${disp}<br>${sym}</div><div class="card-suit-large">${sym}</div><div class="card-index bottom-index">${disp}<br>${sym}</div></div>`;
+            v += 3; if(v > 13) v -= 13; sIdx = (sIdx + 1) % 4;
         }
     }
 
