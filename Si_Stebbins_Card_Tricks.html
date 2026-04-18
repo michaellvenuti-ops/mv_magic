@@ -437,28 +437,6 @@ First ask person to shuffle pack; then ask them to think of any number between 1
         if(uVal === currentQ.val && uSuit === currentQ.suit) fb.innerHTML = "<span style='color:#0f0;'>Correct!</span>";
         else fb.innerHTML = `<span style='color:#f00;'>Wrong. It was ${currentQ.val} of ${currentQ.suit}.</span>`;
     }
-
-    function buildStack() {
-        let v = parseInt(document.getElementById('gen-val').value);
-        let s = document.getElementById('gen-suit').value;
-        let sIdx = suits.indexOf(s);
-        const out = document.getElementById('stack-out');
-        out.innerHTML = "";
-        for(let i=0; i<52; i++) {
-            let colorClass = (suits[sIdx] === "Hearts" || suits[sIdx] === "Diamonds") ? "card-red" : "";
-            let displayVal = v;
-            if(v===1) displayVal="A"; if(v===11) displayVal="J"; if(v===12) displayVal="Q"; if(v===13) displayVal="K";
-            out.innerHTML += `
-                <div class="playing-card ${colorClass}">
-                    <div>${displayVal}</div>
-                    <div class="card-suit-large">${suitSymbols[suits[sIdx]]}</div>
-                    <div style="text-align:right;">${displayVal}</div>
-                </div>`;
-            v += 3; if(v > 13) v -= 13;
-            sIdx = (sIdx + 1) % 4;
-        }
-    }
-
      const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
     const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
     function toggle(id) {
