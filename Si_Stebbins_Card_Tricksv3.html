@@ -26,7 +26,7 @@
         header {
             position: fixed;
             top: 0; left: 0; right: 0;
-            height: 140px; /* Increased height for bigger title */
+            height: 150px;
             background: #1a1a1a;
             display: flex;
             align-items: center;
@@ -34,28 +34,23 @@
             border-bottom: 2px solid var(--accent);
             z-index: 2000;
         }
-        .cover-img { height: 110px; margin-right: 25px; border: 1px solid var(--accent); }
-        
         /* BIGGER TITLE */
         .header-text h1 { 
             margin: 0; 
-            font-size: 2.4rem; 
+            font-size: 2.5rem; 
             color: var(--accent); 
             text-transform: uppercase; 
             letter-spacing: 2px;
             line-height: 1.1;
         }
-        .pdf-link { color: #888; text-decoration: none; font-size: 0.9rem; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; margin-top: 8px; display: inline-block; }
-
         aside {
             width: var(--sidebar-width);
             background: #151515;
-            margin-top: 140px;
+            margin-top: 150px;
             border-right: 1px solid #333;
             padding: 25px;
             overflow-y: auto;
         }
-
         /* BIGGER MENU */
         .nav-link {
             display: block;
@@ -64,20 +59,14 @@
             padding: 15px 18px;
             margin-bottom: 10px;
             border-radius: 6px;
-            font-size: 1.3rem; 
+            font-size: 1.3rem;
             font-weight: bold;
             transition: 0.2s;
-            border-left: 3px solid transparent;
         }
-        .nav-link:hover { 
-            background: rgba(255, 215, 0, 0.1); 
-            color: var(--accent);
-            border-left: 3px solid var(--accent);
-        }
-
+        .nav-link:hover { background: rgba(255, 215, 0, 0.1); color: var(--accent); }
         main {
             flex-grow: 1;
-            margin-top: 140px;
+            margin-top: 150px;
             padding: 40px;
             overflow-y: auto;
             scroll-behavior: smooth;
@@ -89,7 +78,6 @@
             padding: 30px;
             border-radius: 12px;
             border-left: 8px solid var(--accent);
-            position: relative;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         .summary-box {
@@ -99,14 +87,9 @@
             border-radius: 8px;
             margin-bottom: 15px;
         }
-        .summary-box h3 { margin: 0 0 10px 0; font-size: 0.9rem; color: var(--accent); text-transform: uppercase; }
-        
-        /* Quiz Styles */
-        .quiz-container { text-align: center; padding: 20px; background: #111; border-radius: 8px; }
-        .quiz-question { font-size: 1.4rem; color: var(--accent); margin-bottom: 20px; }
-        .quiz-input { background: #000; border: 1px solid var(--accent); color: white; padding: 10px; width: 80px; text-align: center; font-size: 1.2rem; }
-
-        /* FIXED STACK GEN VISUALS */
+        .source-wrapper { margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px; }
+        .source-text { display: none; font-size: 1rem; color: #aaa; background: #111; padding: 20px; border-radius: 5px; font-style: italic; white-space: pre-line; line-height: 1.6; }
+        .toggle-btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 8px 15px; cursor: pointer; font-size: 0.8rem; border-radius: 4px; text-transform: uppercase; }
         .stack-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; justify-content: center; }
         .playing-card {
             width: 100px; height: 140px; background: var(--card-white); border-radius: 8px; color: black;
@@ -117,96 +100,146 @@
         .card-suit-large { font-size: 2.5rem; text-align: center; width: 100%; }
         .card-index { line-height: 1; font-size: 1rem; }
         .bottom-index { text-align: right; transform: rotate(180deg); }
-
-        .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-        .calc-input { background: #000; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 4px; width: 100%; box-sizing: border-box;}
+        .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .calc-input { background: #000; border: 1px solid #444; color: #fff; padding: 12px; border-radius: 4px; width: 100%; box-sizing: border-box;}
         .calc-btn { background: var(--accent); color: #000; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1rem; }
-        .full-btn { grid-column: span 2; }
-        
-        .source-wrapper { margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px; }
-        .source-text { display: none; font-size: 0.95rem; color: #aaa; background: #111; padding: 15px; border-radius: 5px; font-style: italic; white-space: pre-line; line-height: 1.5; }
-        .toggle-btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 5px 10px; cursor: pointer; font-size: 0.8rem; border-radius: 4px; }
         h2 { color: var(--accent); margin-top: 0; }
-        .video-btn { display: inline-block; background: #ff0000; color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="si_stebbin_cover.png" class="cover-img" alt="1898 Cover">
-    <div class="header-text">
-        <h1>The Si Stebbins Card Tricks</h1>
-        <a href="https://dn720502.ca.archive.org/0/items/sistedbbinscardt00stebrich/sistedbbinscardt00stebrich.pdf" target="_blank" class="pdf-link">Original Source PDF</a>
-    </div>
+    <div class="header-text"><h1>The Si Stebbins Card Tricks</h1></div>
 </header>
 
 <aside>
     <a href="#setup" class="nav-link">System Foundation</a>
     <a href="#trick1" class="nav-link">01: Naming the Card</a>
     <a href="#trick2" class="nav-link">02: Counting Handful</a>
-    <a href="#trick3" class="nav-link">03: Pocket Handful Call</a>
-    <a href="#trick4" class="nav-link">04: Pocket Card Deduction</a>
-    <a href="#trick5" class="nav-link">05: Impression Thinking</a>
+    <a href="#trick3" class="nav-link">03: Pocket Handful</a>
+    <a href="#trick4" class="nav-link">04: Pocket Deduction</a>
+    <a href="#trick5" class="nav-link">05: Thinking of Card</a>
     <a href="#trick6" class="nav-link">06: Stop Anytime</a>
     <a href="#trick7" class="nav-link">07: GPS Position</a>
     <a href="#trick8" class="nav-link">08: Dealing Trumps</a>
     <a href="#trick9" class="nav-link">09: Dealing Hearts</a>
     <a href="#trick10" class="nav-link">10: Pat Flush</a>
-    <a href="#bonus" class="nav-link">11: Bonus Mind Reading</a>
-    <a href="#practice" class="nav-link">Practice Mode</a>
+    <a href="#bonus" class="nav-link">11: Mind Reading</a>
     <a href="#stack-gen" class="nav-link">Stack Generator</a>
-    <a href="#calculators" class="nav-link">Calculators</a>
 </aside>
 
 <main>
     <section id="setup" class="section-card">
         <h2>System Foundation</h2>
-        <div class="summary-box">
-            <h3>Trick Summary</h3>
-            <p>Setup the deck in the following suit order: <strong>Clubs &rarr; Hearts &rarr; Spades &rarr; Diamonds</strong>. Every card must be exactly 3 values higher than the one before it (A=1, J=11, Q=12, K=13).</p>
-            <p style="margin-top:15px;"><a href="https://www.youtube.com/results?search_query=si+stebbins+system+explained" target="_blank" class="video-btn">▶ Watch System Tutorial</a></p>
-        </div>
+        <div class="summary-box"><p>Setup the deck in the following suit order: Clubs → Hearts → Spades → Diamonds. Every card must be exactly 3 values higher than the one before it (A=1, J=11, Q=12, K=13).</p></div>
     </section>
 
     <section id="trick1" class="section-card">
         <h2>01: Naming the Card Drawn</h2>
-        <div class="summary-box">
-            <h3>Trick Summary</h3>
-            <p>Peek the bottom card. Add 3 to the value and name the next suit in order. (Ex: Bottom 9 Diamonds &rarr; Queen of Clubs).</p>
-        </div>
-        <div class="source-wrapper">
-            <button class="toggle-btn" onclick="toggle('src1')">Original Text</button>
-            <div id="src1" class="source-text">TRICK 1 To name a card that a person may draw from behind the back.
+        <div class="summary-box"><p>Peek bottom card. Add 3 to value and name the next suit.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src1')">Original Text</button>
+        <div id="src1" class="source-text">TRICK 1 To name a card that a person may draw from behind the back.
 Spread the cards out behind the back in such a manner that when the card is drawn you can separate the deck at that point bringing the two parts in front of you and placing the upper half underneath.
 In that way you know that the card the person has drawn should be the one following the bottom card, so that by glancing at the bottom card, adding three to it, and calling the suit that follows the bottom card, you will name the card drawn.
-Example—A person draws a card and on making the shift in front, you find that the bottom card is the nine of Diamonds. You then add three to nine, which is twelve or the Queen, and call it the Queen of Clubs, as Clubs follow Diamonds, and you will have named the card drawn.</div>
-        </div>
+Example—A person draws a card and on making the shift in front, you find that the bottom card is the nine of Diamonds. You then add three to nine, which is twelve or the Queen (Rule 3), and call it the Queen of Clubs, as Clubs follow Diamonds, and you will have named the card drawn.</div></div>
     </section>
 
-    <section id="practice" class="section-card">
-        <h2>Practice Mode: The Mental Tally</h2>
-        <div class="quiz-container">
-            <div id="quiz-q" class="quiz-question">Ready?</div>
-            <div id="quiz-input-area" style="display:none; margin-bottom:15px;">
-                <input type="number" id="ans-val" class="quiz-input" placeholder="Val">
-                <select id="ans-suit" class="calc-input" style="width:120px; display:inline-block;"><option>Clubs</option><option>Hearts</option><option>Spades</option><option>Diamonds</option></select>
-                <button class="calc-btn" onclick="checkAns()">Check</button>
-            </div>
-            <button id="start-btn" class="calc-btn" onclick="nextQuestion()">Start Quiz</button>
-            <div id="quiz-feedback" style="margin-top:15px; font-weight:bold;"></div>
-        </div>
+    <section id="trick2" class="section-card">
+        <h2>02: Counting Handful</h2>
+        <div class="summary-box"><p>Subtract top from bottom match, multiply by 4, minus cards above.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src2')">Original Text</button>
+        <div id="src2" class="source-text">TRICK 2 To tell how many and what cards a person may draw from behind the back.
+Place cards behind you as in trick one, and make same shift as in trick one. Look at bottom card and at the card of the same suit on or nearest the top.
+Subtract the number of the suit card on or nearest the top from that of the same suit as the bottom card, multiply the result by four and subtract the number of cards, including the suit card on top, and the result will be the number of cards drawn.
+Example—On making the shift you find the bottom card to be the 12 or Queen of Clubs; on looking at the top you find the third card to be the 7 of Clubs, which makes the problem as follows, viz.: 7 from 12 is 5, 4 times 5 is 20; 3 from 20 is 17, or the number of cards drawn.
+In case the card on the bottom is smaller than the one at the top of the same suit, add 13 to the bottom card and proceed as per example.</div></div>
+    </section>
+
+    <section id="trick3" class="section-card">
+        <h2>03: Pocket Handful Call</h2>
+        <div class="summary-box"><p>Faces in: Peek bottom (+3). Faces out: Top card minus 3, suit before.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src3')">Original Text</button>
+        <div id="src3" class="source-text">TRICK 3 To allow a person to take a handful of cards from behind the back and place them in his pocket (which must be empty), taking particular notice whether back or face of cards is on the outside; in the meantime you have made the shift (Trick 1). 
+If the face of the cards in on the inside, ask him to take out one card as quick as possible, naming the outside card, which you know from the bottom card (Trick 1). If the face is out, look at the top card, subtract 3 and call by suit that comes before top card.
+Make it a point to have person work fast in getting the card.</div></div>
+    </section>
+
+    <section id="trick4" class="section-card">
+        <h2>04: Pocket Card Deduction</h2>
+        <div class="summary-box"><p>Eliminate suits and numbers to force the choice.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src4')">Original Text</button>
+        <div id="src4" class="source-text">TRICK 4 To allow a person to draw a card, placing it in his pocket without looking at it, and then to make him tell what it is. 
+A person draws a card which you know (as per Trick 1), placing it in his pocket without looking at it. You then proceed by naming the four suits (Spades, Diamonds, Clubs and Hearts) and ask him to choose two of the four suits. If the two he chooses includes the suit of the card he has in his pocket, ask him to choose one of those two, and if in choosing the one, it is of the same suit he has in his pocket, you then proceed with the denomination of the card in this way, viz.: Name three cards, including the one you know he has in his pocket; for example, you know he has the Ace of Diamonds, so you ask him to choose two of the following three cards—Ace, King and Queen of Diamonds.
+If he chooses the King and Queen, you simply say, that leaves the Ace in your pocket; if he chooses the Ace and King, you then ask him to choose one of those two; if he then chooses the Ace, you say that must be the card he has in his pocket.</div></div>
+    </section>
+
+    <section id="trick5" class="section-card">
+        <h2>05: Thinking of a Card</h2>
+        <div class="summary-box"><p>Force a card by hesitation, then move to 4th from top.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src5')">Original Text</button>
+        <div id="src5" class="source-text">TRICK 5 To let a person think of a card that they see as you run them over; and then to make that person place the card they are thinking of in their pocket without knowing it. 
+Hold the deck squarely in the palm of the left hand in such a manner that you can bend the cards toward you with the fingers of the right hand, then let them slip back easily one at a time, but very fast, being careful to stop or hesitate on one card longer than the rest, in that way you impress that one card on the person's mind, and it becomes the card they are thinking of. 
+And, of course, by watching closely you know the card even better than the person with whom you are doing the trick. Next get the card that they have seen to a position fourth from the top.</div></div>
+    </section>
+
+    <section id="trick6" class="section-card">
+        <h2>06: Stop Anytime</h2>
+        <div class="summary-box"><p>Name cards silently to yourself while moving them.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src6')">Original Text</button>
+        <div id="src6" class="source-text">TRICK 6 To run the cards over behind the back and name any card you may be asked to stop on. 
+Place cards behind the back first taking notice what the bottom card is. Then start with top card, add three to bottom card, call by the suit that follows, and in that way as you run through the deck you naturally know what card you are asked to stop on, as you are naming them to yourself as you go along.</div></div>
+    </section>
+
+    <section id="trick7" class="section-card">
+        <h2>07: GPS Position</h2>
+        <div class="summary-box"><p>(Bottom Match - Called Value) x 4, minus cards below match.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src7')">Original Text</button>
+        <div id="src7" class="source-text">TRICK 7 To tell how far from the top any card is that may be called for. 
+A person calls for a card—first find the card of the same suit that is nearest the bottom, subtract the number of the card called for from the number of the card of the same suit nearest the bottom, multiply the result by four, then subtract the number of cards (if any) below the bottom suit card and the result will be the number the card called for is from the top.
+If the suit card on or nearest the bottom is smaller than the card called for, add 13 and proceed.
+Example—A person calls for the 4 of Diamonds; you look at bottom and find that the 9 of Diamonds is the third card from the bottom, subtract 4 from 9, with a result of 5; multiply 5 by 4 making 20, and subtracting 2, the number of cards below the 9 of Diamonds, it leaves a result of 18, which will be the number the 4 of Diamonds is from the top.</div></div>
+    </section>
+
+    <section id="trick8" class="section-card">
+        <h2>08: Dealing Whist Trumps</h2>
+        <div class="summary-box"><p>Cut trump to bottom. Deal. You get every trump.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src8')">Original Text</button>
+        <div id="src8" class="source-text">TRICK 8 How in a game of Whist to deal every trump to yourself.
+After apparently shuffling the cards (Rule 1), ask person to cut the trump; place cut as usual on bottom, then deal regular and you will get every trump in the deck.</div></div>
+    </section>
+
+    <section id="trick9" class="section-card">
+        <h2>09: Dealing Every Heart</h2>
+        <div class="summary-box"><p>Cut Heart to bottom. Deal normally.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src9')">Original Text</button>
+        <div id="src9" class="source-text">TRICK 9 How in a game of Hearts to deal every Heart to yourself.
+After shuffling have parties cut the cards and either by their cutting or a shift get a Heart on the bottom and deal in the regular way.</div></div>
+    </section>
+
+    <section id="trick10" class="section-card">
+        <h2>10: Pat Flush</h2>
+        <div class="summary-box"><p>In a 4-man game, cut suit before to bottom.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src10')">Original Text</button>
+        <div id="src10" class="source-text">TRICK 10 How to deal a pat flush of any suit called for to any person asking it. This trick can only be done in a four-handed game.
+First ask person what suit and what hand they want;then get suit card by cut or shift in proper position at bottom and deal regular.
+Example—Person wants a flush of Hearts and third hand.
+Shuffle or cut cards until you have a Spade on the bottom, which would make the third card from the top a Heart;then as every fourth card after it is a Heart, the third hand would be a Heart flush.</div></div>
+    </section>
+
+    <section id="bonus" class="section-card">
+        <h2>11: Bonus Mind Reading</h2>
+        <div class="summary-box"><p>Reverse 16 cards to move card to new location.</p></div>
+        <div class="source-wrapper"><button class="toggle-btn" onclick="toggle('src11')">Original Text</button>
+        <div id="src11" class="source-text">Bonus Trick trick 11: A MIND READING TRICK (Apparently)
+First ask person to shuffle pack; then ask them to think of any number between 1 and 15. After they have thought of it tell them that you will leave the room and that while you are out they are to take the pack and count down from the top until they come to the number thought of... [Full logic follows in source]</div></div>
     </section>
 
     <section id="stack-gen" class="section-card">
         <h2>Card Stack Generator</h2>
         <div class="calc-grid">
-            <select id="gen-val" class="calc-input">
-                <option value="1">Ace</option>
-                <script>for(let i=2; i<=10; i++) document.write(`<option value="${i}">${i}</option>`);</script>
-                <option value="11">Jack</option><option value="12">Queen</option><option value="13">King</option>
-            </select>
+            <select id="gen-val" class="calc-input"><option value="1">Ace</option><script>for(let i=2; i<=10; i++) document.write(`<option value="${i}">${i}</option>`);</script><option value="11">Jack</option><option value="12">Queen</option><option value="13">King</option></select>
             <select id="gen-suit" class="calc-input"><option>Clubs</option><option>Hearts</option><option>Spades</option><option>Diamonds</option></select>
-            <button class="calc-btn full-btn" onclick="buildStack()">Generate Stack</button>
+            <button class="calc-btn" style="grid-column: span 2;" onclick="buildStack()">Generate Stack</button>
         </div>
         <div id="stack-out" class="stack-list"></div>
     </section>
@@ -215,58 +248,22 @@ Example—A person draws a card and on making the shift in front, you find that 
 <script>
     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
     const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
-    let currentQ = {};
-
-    function toggle(id) { 
-        const x = document.getElementById(id); 
-        x.style.display = (x.style.display === "block") ? "none" : "block"; 
+    function toggle(id) {
+        const x = document.getElementById(id);
+        x.style.display = (x.style.display === "block") ? "none" : "block";
     }
-
-    /* THE FIXED BUILDSTACK FUNCTION */
     function buildStack() {
         let v = parseInt(document.getElementById('gen-val').value);
         let s = document.getElementById('gen-suit').value;
         let sIdx = suits.indexOf(s);
         const out = document.getElementById('stack-out');
         out.innerHTML = "";
-        
         for(let i=0; i<52; i++) {
-            let symbol = suitSymbols[suits[sIdx]];
+            let sym = suitSymbols[suits[sIdx]];
             let color = (suits[sIdx]==="Hearts" || suits[sIdx]==="Diamonds") ? "card-red" : "";
-            let disp = v; 
-            if(v===1) disp="A"; else if(v===11) disp="J"; else if(v===12) disp="Q"; else if(v===13) disp="K";
-            
-            out.innerHTML += `
-                <div class="playing-card ${color}">
-                    <div class="card-index">${disp}<br>${symbol}</div>
-                    <div class="card-suit-large">${symbol}</div>
-                    <div class="card-index bottom-index">${disp}<br>${symbol}</div>
-                </div>`;
-            
-            v += 3; if(v > 13) v -= 13; 
-            sIdx = (sIdx + 1) % 4;
-        }
-    }
-
-    function nextQuestion() {
-        document.getElementById('quiz-input-area').style.display='block';
-        let bVal = Math.floor(Math.random()*13)+1;
-        let bSuit = suits[Math.floor(Math.random()*4)];
-        let tVal = bVal+3; if(tVal>13) tVal-=13;
-        let tSuit = suits[(suits.indexOf(bSuit)+1)%4];
-        currentQ = {val:tVal, suit:tSuit};
-        document.getElementById('quiz-q').innerHTML = `Bottom Card: <strong>${bVal} of ${bSuit}</strong><br>What is the Next Card?`;
-    }
-
-    function checkAns() {
-        const uV = parseInt(document.getElementById('ans-val').value);
-        const uS = document.getElementById('ans-suit').value;
-        const fb = document.getElementById('quiz-feedback');
-        if(uV===currentQ.val && uS===currentQ.suit) {
-            fb.innerHTML = "<span style='color:#0f0;'>Correct!</span>";
-            setTimeout(nextQuestion, 1000);
-        } else {
-            fb.innerHTML = `<span style='color:#f00;'>Incorrect. It was the ${currentQ.val} of ${currentQ.suit}.</span>`;
+            let disp = v; if(v===1) disp="A"; else if(v===11) disp="J"; else if(v===12) disp="Q"; else if(v===13) disp="K";
+            out.innerHTML += `<div class="playing-card ${color}"><div class="card-index">${disp}<br>${sym}</div><div class="card-suit-large">${sym}</div><div class="card-index bottom-index">${disp}<br>${sym}</div></div>`;
+            v += 3; if(v > 13) v -= 13; sIdx = (sIdx + 1) % 4;
         }
     }
 </script>
