@@ -36,49 +36,7 @@
             border-bottom: 2px solid var(--accent);
             z-index: 2000;
         }
-        
-         /* BIGGER TITLE */
-        .header-text h1 { 
-            margin: 0; 
-            font-size: 2.5rem; 
-            color: var(--accent); 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-            line-height: 1.1;
-        }
 
-/* Ensure the card suit in the index is slightly smaller or properly spaced */
-        .card-index {
-            position: absolute;
-            font-size: 1.2rem;
-            font-weight: bold;
-            line-height: 1;
-            text-align: center;
-        }
-        .top-left { top: 5px; left: 5px; }
-        .bottom-right { bottom: 5px; right: 5px; transform: rotate(180deg); }
-        
-        .card {
-            width: 150px;
-            height: 210px;
-            background: white;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            position: relative;
-            display: inline-block;
-            margin: 10px;
-            color: black;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        }
-        .red { color: #ff0000; }
-        .suit-center {
-            font-size: 4rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
         .cover-img { height: 80px; margin-right: 20px; border: 1px solid var(--accent); }
         .header-text h1 { margin: 0; font-size: 1.1rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
         .pdf-link { color: #888; text-decoration: none; font-size: 0.8rem; border: 1px solid #444; padding: 4px 8px; border-radius: 4px; margin-right: 10px;}
@@ -406,11 +364,7 @@ First ask person to shuffle pack; then ask them to think of any number between 1
 
 <script>
     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
-    const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
-    function toggle(id) {
-        const x = document.getElementById(id);
-        x.style.display = (x.style.display === "block") ? "none" : "block";
-    } 
+    const suitSymbols = {"Clubs":"â™£", "Hearts":"â™¥", "Spades":"â™ ", "Diamonds":"â™¦"};
     let currentQ = {};
 
     function toggle(id) {
@@ -437,12 +391,7 @@ First ask person to shuffle pack; then ask them to think of any number between 1
         if(uVal === currentQ.val && uSuit === currentQ.suit) fb.innerHTML = "<span style='color:#0f0;'>Correct!</span>";
         else fb.innerHTML = `<span style='color:#f00;'>Wrong. It was ${currentQ.val} of ${currentQ.suit}.</span>`;
     }
-     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
-    const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
-    function toggle(id) {
-        const x = document.getElementById(id);
-        x.style.display = (x.style.display === "block") ? "none" : "block";
-    }
+
     function buildStack() {
         let v = parseInt(document.getElementById('gen-val').value);
         let s = document.getElementById('gen-suit').value;
@@ -450,11 +399,17 @@ First ask person to shuffle pack; then ask them to think of any number between 1
         const out = document.getElementById('stack-out');
         out.innerHTML = "";
         for(let i=0; i<52; i++) {
-            let sym = suitSymbols[suits[sIdx]];
-            let color = (suits[sIdx]==="Hearts" || suits[sIdx]==="Diamonds") ? "card-red" : "";
-            let disp = v; if(v===1) disp="A"; else if(v===11) disp="J"; else if(v===12) disp="Q"; else if(v===13) disp="K";
-            out.innerHTML += `<div class="playing-card ${color}"><div class="card-index">${disp}<br>${sym}</div><div class="card-suit-large">${sym}</div><div class="card-index bottom-index">${disp}<br>${sym}</div></div>`;
-            v += 3; if(v > 13) v -= 13; sIdx = (sIdx + 1) % 4;
+            let colorClass = (suits[sIdx] === "Hearts" || suits[sIdx] === "Diamonds") ? "card-red" : "";
+            let displayVal = v;
+            if(v===1) displayVal="A"; if(v===11) displayVal="J"; if(v===12) displayVal="Q"; if(v===13) displayVal="K";
+            out.innerHTML += `
+                <div class="playing-card ${colorClass}">
+                    <div>${displayVal}</div>
+                    <div class="card-suit-large">${suitSymbols[suits[sIdx]]}</div>
+                    <div style="text-align:right;">${displayVal}</div>
+                </div>`;
+            v += 3; if(v > 13) v -= 13;
+            sIdx = (sIdx + 1) % 4;
         }
     }
 
@@ -472,42 +427,6 @@ First ask person to shuffle pack; then ask them to think of any number between 1
         let bel = parseInt(document.getElementById('t7be').value) || 0;
         if(b < c) b += 13;
         document.getElementById('tool-res').innerText = "Position: " + (((b-c)*4)-bel);
-    }
-
-function renderStack(myStack) {
-    // 1. Get the container where the cards should appear
-    const container = document.getElementById('card-display-area');
-    
-    // 2. Clear the screen for a fresh render
-    container.innerHTML = ""; 
-    
-    // 3. Loop through your stack data
-    myStack.forEach(card => {
-        // CALLING THE FUNCTION HERE
-        const cardHTML = generateCardHTML(card.value, card.suit);
-        
-        // 4. Inject it into the DOM
-        container.innerHTML += cardHTML;
-    });
-}
-    
-    function generateCardHTML(value, suit) {
-        const isRed = (suit === '♥' || suit === '♦');
-        const colorClass = isRed ? 'red' : '';
-        
-        // Value for the index (e.g., "A", "10", "K")
-        // Now includes the suit symbol next to it
-        return `
-            <div class="card ${colorClass}">
-                <div class="card-index top-left">
-                    ${value}<br>${suit}
-                </div>
-                <div class="suit-center">${suit}</div>
-                <div class="card-index bottom-right">
-                    ${value}<br>${suit}
-                </div>
-            </div>
-        `;
     }
 </script>
 </body>
