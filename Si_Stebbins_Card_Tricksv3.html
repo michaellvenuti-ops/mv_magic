@@ -26,7 +26,7 @@
         header {
             position: fixed;
             top: 0; left: 0; right: 0;
-            height: 120px;
+            height: 140px; /* Increased height for bigger title */
             background: #1a1a1a;
             display: flex;
             align-items: center;
@@ -34,33 +34,50 @@
             border-bottom: 2px solid var(--accent);
             z-index: 2000;
         }
-        .header-text h1 { margin: 0; font-size: 1.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
-        .pdf-link { color: #888; text-decoration: none; font-size: 0.9rem; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; margin-top: 5px; display: inline-block; }
+        .cover-img { height: 110px; margin-right: 25px; border: 1px solid var(--accent); }
+        
+        /* BIGGER TITLE */
+        .header-text h1 { 
+            margin: 0; 
+            font-size: 2.4rem; 
+            color: var(--accent); 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+        .pdf-link { color: #888; text-decoration: none; font-size: 0.9rem; border: 1px solid #444; padding: 4px 12px; border-radius: 4px; margin-top: 8px; display: inline-block; }
 
         aside {
             width: var(--sidebar-width);
             background: #151515;
-            margin-top: 120px;
+            margin-top: 140px;
             border-right: 1px solid #333;
             padding: 25px;
             overflow-y: auto;
         }
+
+        /* BIGGER MENU */
         .nav-link {
             display: block;
             color: var(--text-main);
             text-decoration: none;
-            padding: 12px 15px;
-            margin-bottom: 8px;
+            padding: 15px 18px;
+            margin-bottom: 10px;
             border-radius: 6px;
-            font-size: 1.1rem;
+            font-size: 1.3rem; 
             font-weight: bold;
             transition: 0.2s;
+            border-left: 3px solid transparent;
         }
-        .nav-link:hover { background: rgba(255, 215, 0, 0.1); color: var(--accent); }
+        .nav-link:hover { 
+            background: rgba(255, 215, 0, 0.1); 
+            color: var(--accent);
+            border-left: 3px solid var(--accent);
+        }
 
         main {
             flex-grow: 1;
-            margin-top: 120px;
+            margin-top: 140px;
             padding: 40px;
             overflow-y: auto;
             scroll-behavior: smooth;
@@ -72,6 +89,7 @@
             padding: 30px;
             border-radius: 12px;
             border-left: 8px solid var(--accent);
+            position: relative;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         .summary-box {
@@ -82,12 +100,13 @@
             margin-bottom: 15px;
         }
         .summary-box h3 { margin: 0 0 10px 0; font-size: 0.9rem; color: var(--accent); text-transform: uppercase; }
-        .simple-expl { color: #88ccff; font-weight: bold; margin-bottom: 10px; font-family: sans-serif; }
+        
+        /* Quiz Styles */
+        .quiz-container { text-align: center; padding: 20px; background: #111; border-radius: 8px; }
+        .quiz-question { font-size: 1.4rem; color: var(--accent); margin-bottom: 20px; }
+        .quiz-input { background: #000; border: 1px solid var(--accent); color: white; padding: 10px; width: 80px; text-align: center; font-size: 1.2rem; }
 
-        .source-wrapper { margin-top: 15px; border-top: 1px dashed #444; padding-top: 10px; }
-        .source-text { display: none; font-size: 0.95rem; color: #aaa; background: #111; padding: 15px; border-radius: 5px; font-style: italic; line-height: 1.5; white-space: pre-line; }
-        .toggle-btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 8px 12px; cursor: pointer; font-size: 0.8rem; border-radius: 4px; text-transform: uppercase; }
-
+        /* FIXED STACK GEN VISUALS */
         .stack-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; justify-content: center; }
         .playing-card {
             width: 100px; height: 140px; background: var(--card-white); border-radius: 8px; color: black;
@@ -101,13 +120,20 @@
 
         .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
         .calc-input { background: #000; border: 1px solid #444; color: #fff; padding: 10px; border-radius: 4px; width: 100%; box-sizing: border-box;}
-        .calc-btn { background: var(--accent); color: #000; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .calc-btn { background: var(--accent); color: #000; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1rem; }
         .full-btn { grid-column: span 2; }
+        
+        .source-wrapper { margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px; }
+        .source-text { display: none; font-size: 0.95rem; color: #aaa; background: #111; padding: 15px; border-radius: 5px; font-style: italic; white-space: pre-line; line-height: 1.5; }
+        .toggle-btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 5px 10px; cursor: pointer; font-size: 0.8rem; border-radius: 4px; }
+        h2 { color: var(--accent); margin-top: 0; }
+        .video-btn { display: inline-block; background: #ff0000; color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="si_stebbin_cover.png" class="cover-img" alt="1898 Cover">
     <div class="header-text">
         <h1>The Si Stebbins Card Tricks</h1>
         <a href="https://dn720502.ca.archive.org/0/items/sistedbbinscardt00stebrich/sistedbbinscardt00stebrich.pdf" target="_blank" class="pdf-link">Original Source PDF</a>
@@ -118,15 +144,15 @@
     <a href="#setup" class="nav-link">System Foundation</a>
     <a href="#trick1" class="nav-link">01: Naming the Card</a>
     <a href="#trick2" class="nav-link">02: Counting Handful</a>
-    <a href="#trick3" class="nav-link">03: Pocket Handful</a>
-    <a href="#trick4" class="nav-link">04: Pocket Deduction</a>
-    <a href="#trick5" class="nav-link">05: Thinking of Card</a>
+    <a href="#trick3" class="nav-link">03: Pocket Handful Call</a>
+    <a href="#trick4" class="nav-link">04: Pocket Card Deduction</a>
+    <a href="#trick5" class="nav-link">05: Impression Thinking</a>
     <a href="#trick6" class="nav-link">06: Stop Anytime</a>
     <a href="#trick7" class="nav-link">07: GPS Position</a>
     <a href="#trick8" class="nav-link">08: Dealing Trumps</a>
     <a href="#trick9" class="nav-link">09: Dealing Hearts</a>
     <a href="#trick10" class="nav-link">10: Pat Flush</a>
-    <a href="#bonus" class="nav-link">11: Mind Reading</a>
+    <a href="#bonus" class="nav-link">11: Bonus Mind Reading</a>
     <a href="#practice" class="nav-link">Practice Mode</a>
     <a href="#stack-gen" class="nav-link">Stack Generator</a>
     <a href="#calculators" class="nav-link">Calculators</a>
@@ -136,61 +162,51 @@
     <section id="setup" class="section-card">
         <h2>System Foundation</h2>
         <div class="summary-box">
-            <div class="simple-expl">Simplified: Put your deck in this order: Clubs, Hearts, Spades, Diamonds. Each card is 3 numbers higher than the one before it.</div>
-            <p>Order: C → H → S → D. (Ex: Ace of Clubs, 4 of Hearts, 7 of Spades, 10 of Diamonds).</p>
+            <h3>Trick Summary</h3>
+            <p>Setup the deck in the following suit order: <strong>Clubs &rarr; Hearts &rarr; Spades &rarr; Diamonds</strong>. Every card must be exactly 3 values higher than the one before it (A=1, J=11, Q=12, K=13).</p>
+            <p style="margin-top:15px;"><a href="https://www.youtube.com/results?search_query=si+stebbins+system+explained" target="_blank" class="video-btn">▶ Watch System Tutorial</a></p>
         </div>
     </section>
 
     <section id="trick1" class="section-card">
         <h2>01: Naming the Card Drawn</h2>
         <div class="summary-box">
-            <div class="simple-expl">Simplified: Look at the bottom card. Add 3 to its value and move to the next suit in order. That is the card they picked!</div>
-            <p>Trick Summary: Peek bottom card. Add 3 and name the next suit.</p>
+            <h3>Trick Summary</h3>
+            <p>Peek the bottom card. Add 3 to the value and name the next suit in order. (Ex: Bottom 9 Diamonds &rarr; Queen of Clubs).</p>
         </div>
         <div class="source-wrapper">
             <button class="toggle-btn" onclick="toggle('src1')">Original Text</button>
             <div id="src1" class="source-text">TRICK 1 To name a card that a person may draw from behind the back.
-Spread the cards out behind the back... [Original Text Continued]</div>
+Spread the cards out behind the back in such a manner that when the card is drawn you can separate the deck at that point bringing the two parts in front of you and placing the upper half underneath.
+In that way you know that the card the person has drawn should be the one following the bottom card, so that by glancing at the bottom card, adding three to it, and calling the suit that follows the bottom card, you will name the card drawn.
+Example—A person draws a card and on making the shift in front, you find that the bottom card is the nine of Diamonds. You then add three to nine, which is twelve or the Queen, and call it the Queen of Clubs, as Clubs follow Diamonds, and you will have named the card drawn.</div>
         </div>
     </section>
 
-    <section id="trick2" class="section-card">
-        <h2>02: Counting Handful</h2>
-        <div class="summary-box">
-            <div class="simple-expl">Simplified: Subtract the top matching suit card from the bottom card. Multiply by 4, then subtract any cards left on top.</div>
-        </div>
-        <div class="source-wrapper">
-            <button class="toggle-btn" onclick="toggle('src2')">Original Text</button>
-            <div id="src2" class="source-text">TRICK 2 To tell how many and what cards a person may draw... [Original Text Restored]</div>
-        </div>
-    </section>
-
-    <section id="trick7" class="section-card">
-        <h2>07: GPS Position</h2>
-        <div class="summary-box">
-            <div class="simple-expl">Simplified: To find a card's spot, find the same suit at the bottom. Subtract the card they want from that bottom card. Multiply by 4.</div>
-        </div>
-        <div class="source-wrapper">
-            <button class="toggle-btn" onclick="toggle('src7')">Original Text</button>
-            <div id="src7" class="source-text">TRICK 7 To tell how far from the top any card is... [Original Text Restored]</div>
+    <section id="practice" class="section-card">
+        <h2>Practice Mode: The Mental Tally</h2>
+        <div class="quiz-container">
+            <div id="quiz-q" class="quiz-question">Ready?</div>
+            <div id="quiz-input-area" style="display:none; margin-bottom:15px;">
+                <input type="number" id="ans-val" class="quiz-input" placeholder="Val">
+                <select id="ans-suit" class="calc-input" style="width:120px; display:inline-block;"><option>Clubs</option><option>Hearts</option><option>Spades</option><option>Diamonds</option></select>
+                <button class="calc-btn" onclick="checkAns()">Check</button>
+            </div>
+            <button id="start-btn" class="calc-btn" onclick="nextQuestion()">Start Quiz</button>
+            <div id="quiz-feedback" style="margin-top:15px; font-weight:bold;"></div>
         </div>
     </section>
-
-    <section id="trick3" class="section-card"><h2>03: Pocket Handful Call</h2></section>
-    <section id="trick4" class="section-card"><h2>04: Pocket Card Deduction</h2></section>
-    <section id="trick5" class="section-card"><h2>05: Thinking of a Card</h2></section>
-    <section id="trick6" class="section-card"><h2>06: Stop Anytime</h2></section>
-    <section id="trick8" class="section-card"><h2>08: Dealing Trumps</h2></section>
-    <section id="trick9" class="section-card"><h2>09: Dealing Hearts</h2></section>
-    <section id="trick10" class="section-card"><h2>10: Pat Flush</h2></section>
-    <section id="bonus" class="section-card"><h2>11: Mind Reading</h2></section>
 
     <section id="stack-gen" class="section-card">
-        <h2>Visual Stack Generator</h2>
+        <h2>Card Stack Generator</h2>
         <div class="calc-grid">
-            <select id="gen-val" class="calc-input"><option value="1">Ace</option><script>for(let i=2; i<=10; i++) document.write(`<option value="${i}">${i}</option>`);</script><option value="11">Jack</option><option value="12">Queen</option><option value="13">King</option></select>
+            <select id="gen-val" class="calc-input">
+                <option value="1">Ace</option>
+                <script>for(let i=2; i<=10; i++) document.write(`<option value="${i}">${i}</option>`);</script>
+                <option value="11">Jack</option><option value="12">Queen</option><option value="13">King</option>
+            </select>
             <select id="gen-suit" class="calc-input"><option>Clubs</option><option>Hearts</option><option>Spades</option><option>Diamonds</option></select>
-            <button class="calc-btn full-btn" onclick="buildStack()">Generate Visual Stack</button>
+            <button class="calc-btn full-btn" onclick="buildStack()">Generate Stack</button>
         </div>
         <div id="stack-out" class="stack-list"></div>
     </section>
@@ -199,24 +215,58 @@ Spread the cards out behind the back... [Original Text Continued]</div>
 <script>
     const suits = ["Clubs", "Hearts", "Spades", "Diamonds"];
     const suitSymbols = {"Clubs":"♣", "Hearts":"♥", "Spades":"♠", "Diamonds":"♦"};
+    let currentQ = {};
 
-    function toggle(id) {
-        const x = document.getElementById(id);
-        x.style.display = (x.style.display === "block") ? "none" : "block";
+    function toggle(id) { 
+        const x = document.getElementById(id); 
+        x.style.display = (x.style.display === "block") ? "none" : "block"; 
     }
 
+    /* THE FIXED BUILDSTACK FUNCTION */
     function buildStack() {
         let v = parseInt(document.getElementById('gen-val').value);
         let s = document.getElementById('gen-suit').value;
         let sIdx = suits.indexOf(s);
         const out = document.getElementById('stack-out');
         out.innerHTML = "";
+        
         for(let i=0; i<52; i++) {
-            let sym = suitSymbols[suits[sIdx]];
+            let symbol = suitSymbols[suits[sIdx]];
             let color = (suits[sIdx]==="Hearts" || suits[sIdx]==="Diamonds") ? "card-red" : "";
-            let disp = v; if(v===1) disp="A"; if(v===11) disp="J"; if(v===12) disp="Q"; if(v===13) disp="K";
-            out.innerHTML += `<div class="playing-card ${color}"><div class="card-index">${disp}<br>${sym}</div><div class="card-suit-large">${sym}</div><div class="card-index bottom-index">${disp}<br>${sym}</div></div>`;
-            v += 3; if(v > 13) v -= 13; sIdx = (sIdx + 1) % 4;
+            let disp = v; 
+            if(v===1) disp="A"; else if(v===11) disp="J"; else if(v===12) disp="Q"; else if(v===13) disp="K";
+            
+            out.innerHTML += `
+                <div class="playing-card ${color}">
+                    <div class="card-index">${disp}<br>${symbol}</div>
+                    <div class="card-suit-large">${symbol}</div>
+                    <div class="card-index bottom-index">${disp}<br>${symbol}</div>
+                </div>`;
+            
+            v += 3; if(v > 13) v -= 13; 
+            sIdx = (sIdx + 1) % 4;
+        }
+    }
+
+    function nextQuestion() {
+        document.getElementById('quiz-input-area').style.display='block';
+        let bVal = Math.floor(Math.random()*13)+1;
+        let bSuit = suits[Math.floor(Math.random()*4)];
+        let tVal = bVal+3; if(tVal>13) tVal-=13;
+        let tSuit = suits[(suits.indexOf(bSuit)+1)%4];
+        currentQ = {val:tVal, suit:tSuit};
+        document.getElementById('quiz-q').innerHTML = `Bottom Card: <strong>${bVal} of ${bSuit}</strong><br>What is the Next Card?`;
+    }
+
+    function checkAns() {
+        const uV = parseInt(document.getElementById('ans-val').value);
+        const uS = document.getElementById('ans-suit').value;
+        const fb = document.getElementById('quiz-feedback');
+        if(uV===currentQ.val && uS===currentQ.suit) {
+            fb.innerHTML = "<span style='color:#0f0;'>Correct!</span>";
+            setTimeout(nextQuestion, 1000);
+        } else {
+            fb.innerHTML = `<span style='color:#f00;'>Incorrect. It was the ${currentQ.val} of ${currentQ.suit}.</span>`;
         }
     }
 </script>
