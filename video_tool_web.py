@@ -7,14 +7,14 @@ from PIL import Image
 import pytesseract
 import ocrmypdf
 
-# 1. Page Configuration & Styling
+# 1. Page Configuration & Styling (Clean Text Version)
 st.set_page_config(
     page_title="Autonomous Video to Searchable PDF Lab",
-    page_icon="ðŸ“„",
     layout="centered"
 )
 
-st.title("ðŸ“„ Video to Searchable PDF Lab")
+st.title("Video to Searchable PDF Lab")
+st.markdown("---")
 st.markdown("Convert presentation and lecture videos into clean, text-filtered, OCR-searchable documents.")
 
 # Helper function for text density scanning
@@ -37,8 +37,8 @@ def calculate_text_density(image_path):
     except Exception:
         return 0.0
 
-# 2. Sidebar / Control Panel Setup
-st.sidebar.header("âš™ï¸ Configuration Settings")
+# 2. Sidebar / Control Panel Setup (Clean Text Version)
+st.sidebar.header("Configuration Settings")
 
 threshold = st.sidebar.slider(
     "Frame Change Sensitivity", 
@@ -53,14 +53,14 @@ density_threshold = st.sidebar.slider(
     help="Keep a frame only if text covers at least this percentage of the layout footprint."
 )
 
-# 3. Core Processing Pipeline
-uploaded_file = st.file_uploader("1. Upload Your Presentation Video", type=["mp4", "avi", "mov", "mkv"])
+# 3. Core Processing Pipeline (Clean Text Version)
+uploaded_file = st.file_uploader("Upload Your Presentation Video", type=["mp4", "avi", "mov", "mkv"])
 
 if uploaded_file is not None:
     st.success("Video uploaded successfully to memory buffer!")
     
     # Action Trigger Button
-    if st.button("ðŸš€ Generate Searchable PDF", use_container_width=True):
+    if st.button("Generate Searchable PDF", use_container_width=True):
         
         # Setup temporary directories so we don't pollute local file spaces
         with tempfile.TemporaryDirectory() as tmp_dir:
@@ -76,7 +76,7 @@ if uploaded_file is not None:
             progress_bar = st.progress(0)
             
             # --- PHASE 1: EXTRACTION ---
-            status_log.info("ðŸŽ¬ Step 1: Opening video channel and tracking frame arrays...")
+            status_log.info("Step 1: Opening video channel and tracking frame arrays...")
             cam = cv2.VideoCapture(temp_video_path)
             success, frame = cam.read()
             
@@ -111,10 +111,10 @@ if uploaded_file is not None:
                     
             cam.release()
             progress_bar.progress(30)
-            status_log.info(f"ðŸ“¸ Phase Complete: Extracted {len(raw_paths)} unique visual frame baselines.")
+            status_log.info(f"Phase Complete: Extracted {len(raw_paths)} unique visual frame baselines.")
             
             # --- PHASE 2: DENSITY FILTERING ---
-            status_log.info(f"ðŸ” Step 2: Evaluating content footprint (Filtering frames under {density_threshold*100:.1f}% text)...")
+            status_log.info(f"Step 2: Evaluating content footprint (Filtering frames under {density_threshold*100:.1f}% text)...")
             filtered_paths = []
             
             for idx, path in enumerate(raw_paths):
@@ -126,7 +126,7 @@ if uploaded_file is not None:
                 filter_progress = 30 + int((idx / len(raw_paths)) * 30)
                 progress_bar.progress(filter_progress)
                 
-            status_log.info(f"ðŸŽ¯ Filter Complete: Kept {len(filtered_paths)} frames exceeding text requirements.")
+            status_log.info(f"Filter Complete: Kept {len(filtered_paths)} frames exceeding text requirements.")
             
             if not filtered_paths:
                 st.error("Error: All pages fell below your specified text density slider value.")
@@ -134,7 +134,7 @@ if uploaded_file is not None:
                 
             # --- PHASE 3: STITCH & OCR ---
             progress_bar.progress(65)
-            status_log.info("ðŸ“‚ Step 3: Binding remaining document arrays into temporary file storage...")
+            status_log.info("Step 3: Binding remaining document arrays into temporary file storage...")
             
             temp_pdf = os.path.join(tmp_dir, 'temp_raw_images.pdf')
             final_output_pdf = os.path.join(tmp_dir, 'final_searchable_presentation.pdf')
@@ -143,21 +143,21 @@ if uploaded_file is not None:
             images[0].save(temp_pdf, save_all=True, append_images=images[1:])
             
             progress_bar.progress(80)
-            status_log.info("ðŸ¤– Step 4: Compiling document layers into searchable text vectors via OCRmyPDF...")
+            status_log.info("Step 4: Compiling document layers into searchable text vectors via OCRmyPDF...")
             
             try:
                 ocrmypdf.ocr(temp_pdf, final_output_pdf, deskew=False)
                 progress_bar.progress(100)
-                status_log.success("ðŸŽ‰ Pipeline Successful! Your file is compiled and ready.")
+                status_log.success("Pipeline Successful! Your file is compiled and ready.")
                 
                 # Read the finished physical file binary to pass it to the web browser download button
                 with open(final_output_pdf, "rb") as pdf_file:
                     st.download_button(
-                        label="ðŸ“¥ Download Searchable PDF",
+                        label="Download Searchable PDF",
                         data=pdf_file.read(),
                         file_name="processed_presentation.pdf",
                         mime="application/pdf",
                         use_container_width=True
                     )
             except Exception as e:
-                st.error(f"OCR Exception Engine Trap: {str(e)}")
+                st.error(f"OCR Error encountered: {str(e)}")
