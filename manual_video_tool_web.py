@@ -9,12 +9,14 @@ import ocrmypdf
 st.set_page_config(page_title="Visual Video to PDF Lab", layout="wide")
 st.title("📸 Visual Video to Searchable PDF Lab (Manual Review)")
 
+# --- FIXED: PERSISTENT STATE MANAGEMENT ---
 if "raw_paths" not in st.session_state:
     st.session_state.raw_paths = []
-if "temp_dir" not in st.session_state:
-    st.session_state.temp_dir = None
+if "working_dir" not in st.session_state:
+    # Create a permanent workspace directory for this user session
+    st.session_state.working_dir = tempfile.mkdtemp()
 
-# Sidebar matching the updated control layouts
+# Sidebar Control Center
 with st.sidebar:
     st.header("Control Panel")
     uploaded_file = st.file_uploader("Source Video", type=["mp4", "avi", "mov", "mkv"],
@@ -27,16 +29,17 @@ with st.sidebar:
     
     extract_clicked = st.button("Step 1: Extract Unique Scenes", type="primary", disabled=not uploaded_file)
 
+# Step 1: Logic execution block
 if extract_clicked:
-    if st.session_state.temp_dir and os.path.exists(st.session_state.temp_dir):
-        shutil.rmtree(st.session_state.temp_dir)
-        
-    st.session_state.temp_dir = tempfile.mkdtemp()
-    out_dir = os.path.join(st.session_state.temp_dir, "extracted_frames")
+    # Clear out any stale files from previous video runs in this session
+    out_dir = os.path.join(st.session_state.working_dir, "extracted_frames")
+    if os.path.exists(out_dir):
+        shutil.rmtree(out_dir)
     os.makedirs(out_dir, exist_ok=True)
     
     with st.spinner("Processing frame stabilization pipeline..."):
-        video_path = os.path.join(st.session_state.temp_dir, "video.mp4")
+        # Stream file payload down to the persistent session directory
+        video_path = os.path.join(st.session_state.working_dir, "video.mp4")
         with open(video_path, "wb") as f:
             f.write(uploaded_file.read())
             
@@ -91,6 +94,7 @@ if extract_clicked:
             prev_gray = gray
         cam.release()
 
+# Step 2 & 3: Interactive Container (Now safely persists during checkbox toggles)
 if st.session_state.raw_paths:
     st.subheader("📋 Step 2: Review and Select Pages to Keep")
     st.info(f"Isolated {len(st.session_state.raw_paths)} unique slide states. Check the frames you wish to include:")
@@ -101,11 +105,13 @@ if st.session_state.raw_paths:
     for idx, path in enumerate(st.session_state.raw_paths):
         col_target = cols[idx % 4]
         with col_target:
-            img = Image.open(path)
-            st.image(img, use_column_width=True)
-            keep_page = st.checkbox(f"Keep Page {idx + 1}", value=True, key=f"chk_{path}")
-            if keep_page:
-                keep_list.append(path)
+            # Re-verify path exists before rendering to avoid internal crashes
+            if os.path.exists(path):
+                img = Image.open(path)
+                st.image(img, use_column_width=True)
+                keep_page = st.checkbox(f"Keep Page {idx + 1}", value=True, key=f"chk_{path}")
+                if keep_page:
+                    keep_list.append(path)
                 
     st.write("---")
     st.subheader("🚀 Step 3: Compile Selected Pages & OCR")
@@ -113,8 +119,8 @@ if st.session_state.raw_paths:
     if st.button("Compile Target Array", type="secondary", disabled=len(keep_list) == 0):
         try:
             with st.spinner("Stitching checked page arrays together and running Tesseract OCR..."):
-                temp_pdf = os.path.join(st.session_state.temp_dir, "temp_canvas.pdf")
-                final_pdf = os.path.join(st.session_state.temp_dir, "final_searchable.pdf")
+                temp_pdf = os.path.join(st.session_state.working_dir, "temp_canvas.pdf")
+                final_pdf = os.path.join(st.session_state.working_dir, "final_searchable.pdf")
                 
                 images = [Image.open(p).convert("RGB") for p in keep_list]
                 images[0].save(temp_pdf, save_all=True, append_images=images[1:])
