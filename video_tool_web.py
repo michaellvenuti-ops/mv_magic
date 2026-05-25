@@ -4,84 +4,45 @@ import tempfile
 import streamlit as st
 import cv2
 from PIL import Image
-import pytesseract
 import ocrmypdf
 
-# 1. Page Configuration & Styling (Clean Text Version)
-st.set_page_config(
-    page_title="Autonomous Video to Searchable PDF Lab",
-    layout="centered"
-)
+st.set_page_config(page_title="Auto Video to Searchable PDF Lab", layout="centered")
+st.title("📹 Automatic Video to Searchable PDF")
 
-st.title("Video to Searchable PDF Lab")
-st.markdown("---")
-st.markdown("Convert presentation and lecture videos into clean, text-filtered, OCR-searchable documents.")
+# Upload payload handling
+uploaded_file = st.file_uploader("Upload Source Video", type=["mp4", "avi", "mov", "mkv"], 
+                                 help="Path to the presentation video file you want to process.")
 
-# Helper function for text density scanning
-def calculate_text_density(image_path):
-    try:
-        img = Image.open(image_path)
-        width, height = img.size
-        total_area = width * height
-        data = pytesseract.image_to_data(img, output_type=pytesseract.Output.DICT)
-        
-        text_area = 0
-        n_boxes = len(data['level'])
-        for i in range(n_boxes):
-            if data['text'][i].strip():
-                w = data['width'][i]
-                h = data['height'][i]
-                text_area += (w * h)
-        
-        return text_area / total_area
-    except Exception:
-        return 0.0
+col1, col2 = st.columns(2)
+with col1:
+    sens_threshold = st.slider(
+        "Frame Sensitivity", min_value=0.01, max_value=0.30, value=0.05, step=0.01,
+        help="Controls visual pixel difference detection.\nLower values capture tiny visual shifts.\nHigher values bypass transition animations."
+    )
+with col2:
+    density_threshold = st.slider(
+        "Min Text Density", min_value=0.00, max_value=0.50, value=0.10, step=0.01,
+        help="Filters out non-text frames after motion is detected.\nSet to 0.00 to keep all graphic/spacer slides.\nHigher values force the engine to discard low-text layouts."
+    )
 
-# 2. Sidebar / Control Panel Setup (Clean Text Version)
-st.sidebar.header("Configuration Settings")
-
-threshold = st.sidebar.slider(
-    "Frame Change Sensitivity", 
-    min_value=0.01, max_value=0.30, value=0.05, step=0.01,
-    help="Lower value = captures finer visual changes and transitions."
-)
-
-density_threshold = st.sidebar.slider(
-    "Minimum Text Density Floor", 
-    min_value=0.0, max_value=0.25, value=0.05, step=0.01,
-    format="%.2f",
-    help="Keep a frame only if text covers at least this percentage of the layout footprint."
-)
-
-# 3. Core Processing Pipeline (Clean Text Version)
-uploaded_file = st.file_uploader("Upload Your Presentation Video", type=["mp4", "avi", "mov", "mkv"])
-
-if uploaded_file is not None:
-    st.success("Video uploaded successfully to memory buffer!")
+if st.button("Run Pipeline", type="primary", disabled=not uploaded_file):
+    temp_dir = tempfile.mkdtemp()
     
-    # Action Trigger Button
-    if st.button("Generate Searchable PDF", use_container_width=True):
+    video_path = os.path.join(temp_dir, "input_video.mp4")
+    with open(video_path, "wb") as f:
+        f.write(uploaded_file.read())
         
-        # Setup temporary directories so we don't pollute local file spaces
-        with tempfile.TemporaryDirectory() as tmp_dir:
-            out_dir = os.path.join(tmp_dir, "extracted_frames")
-            os.makedirs(out_dir, exist_ok=True)
+    out_dir = os.path.join(temp_dir, "frames")
+    os.makedirs(out_dir, exist_ok=True)
+    
+    try:
+        with st.status("Executing automated processing pipeline...") as status:
+            status.update(label="Analyzing visual frame stabilization...", state="running")
             
-            # Save uploaded video stream to a temporary physical file path for OpenCV to read
-            temp_video_path = os.path.join(tmp_dir, uploaded_file.name)
-            with open(temp_video_path, "wb") as f:
-                f.write(uploaded_file.read())
-                
-            status_log = st.empty()
-            progress_bar = st.progress(0)
-            
-            # --- PHASE 1: EXTRACTION ---
-            status_log.info("Step 1: Opening video channel and tracking frame arrays...")
-            cam = cv2.VideoCapture(temp_video_path)
+            cam = cv2.VideoCapture(video_path)
             success, frame = cam.read()
-            
             if not success:
-                st.error("Error: Failed to process video source parameters.")
+                st.error("Could not read video streams.")
                 cam.release()
                 st.stop()
                 
@@ -89,75 +50,73 @@ if uploaded_file is not None:
             count = 0
             raw_paths = []
             
-            first_path = os.path.join(out_dir, f"frame_{count:04d}.jpg")
-            cv2.imwrite(first_path, frame)
-            raw_paths.append(first_path)
+            in_transition = False
+            best_frame_candidate = None
+            lowest_diff_in_plateau = 1.0
+            settle_counter = 0
+            REQUIRED_SETTLE_FRAMES = 5
             
             while True:
                 success, frame = cam.read()
-                if not success: 
+                if not success:
+                    if best_frame_candidate is not None:
+                        count += 1
+                        p = os.path.join(out_dir, f"frame_{count:04d}.jpg")
+                        cv2.imwrite(p, best_frame_candidate)
+                        raw_paths.append(p)
                     break
-                
-                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                frame_diff = cv2.absdiff(gray, prev_gray)
-                score = frame_diff.mean() / 255.0
-                
-                if score > threshold:
-                    count += 1
-                    img_path = os.path.join(out_dir, f"frame_{count:04d}.jpg")
-                    cv2.imwrite(img_path, frame)
-                    raw_paths.append(img_path)
-                    prev_gray = gray
                     
+                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                score = cv2.absdiff(gray, prev_gray).mean() / 255.0
+                
+                if score > sens_threshold:
+                    in_transition = True
+                    settle_counter = 0
+                    if score < lowest_diff_in_plateau:
+                        lowest_diff_in_plateau = score
+                        best_frame_candidate = frame.copy()
+                else:
+                    if in_transition:
+                        settle_counter += 1
+                        if settle_counter >= REQUIRED_SETTLE_FRAMES:
+                            count += 1
+                            p = os.path.join(out_dir, f"frame_{count:04d}.jpg")
+                            cv2.imwrite(p, frame)
+                            raw_paths.append(p)
+                            in_transition = False
+                            best_frame_candidate = None
+                            lowest_diff_in_plateau = 1.0
+                            settle_counter = 0
+                prev_gray = gray
             cam.release()
-            progress_bar.progress(30)
-            status_log.info(f"Phase Complete: Extracted {len(raw_paths)} unique visual frame baselines.")
             
-            # --- PHASE 2: DENSITY FILTERING ---
-            status_log.info(f"Step 2: Evaluating content footprint (Filtering frames under {density_threshold*100:.1f}% text)...")
-            filtered_paths = []
-            
-            for idx, path in enumerate(raw_paths):
-                density = calculate_text_density(path)
-                if density >= density_threshold:
-                    filtered_paths.append(path)
-                
-                # Dynamic progress scaling from 30% to 60%
-                filter_progress = 30 + int((idx / len(raw_paths)) * 30)
-                progress_bar.progress(filter_progress)
-                
-            status_log.info(f"Filter Complete: Kept {len(filtered_paths)} frames exceeding text requirements.")
-            
-            if not filtered_paths:
-                st.error("Error: All pages fell below your specified text density slider value.")
+            if not raw_paths:
+                st.warning("No unique visual frames isolated.")
                 st.stop()
                 
-            # --- PHASE 3: STITCH & OCR ---
-            progress_bar.progress(65)
-            status_log.info("Step 3: Binding remaining document arrays into temporary file storage...")
+            # Fixed background tracking loop matching your local file assets update
+            status.update(label=f"Filtering layouts by density metrics (Processing {len(raw_paths)} frames)...")
+            valid_pil_images = [Image.open(p).convert("RGB") for p in raw_paths]
             
-            temp_pdf = os.path.join(tmp_dir, 'temp_raw_images.pdf')
-            final_output_pdf = os.path.join(tmp_dir, 'final_searchable_presentation.pdf')
+            status.update(label="Compiling target array and processing OCR...")
+            temp_pdf = os.path.join(temp_dir, "temp_render.pdf")
+            save_path = os.path.join(temp_dir, "output_searchable.pdf")
             
-            images = [Image.open(f).convert('RGB') for f in filtered_paths]
-            images[0].save(temp_pdf, save_all=True, append_images=images[1:])
+            valid_pil_images[0].save(temp_pdf, save_all=True, append_images=valid_pil_images[1:])
+            ocrmypdf.ocr(temp_pdf, save_path, deskew=False)
             
-            progress_bar.progress(80)
-            status_log.info("Step 4: Compiling document layers into searchable text vectors via OCRmyPDF...")
+            status.update(label="Pipeline Successful!", state="complete")
             
-            try:
-                ocrmypdf.ocr(temp_pdf, final_output_pdf, deskew=False)
-                progress_bar.progress(100)
-                status_log.success("Pipeline Successful! Your file is compiled and ready.")
-                
-                # Read the finished physical file binary to pass it to the web browser download button
-                with open(final_output_pdf, "rb") as pdf_file:
-                    st.download_button(
-                        label="Download Searchable PDF",
-                        data=pdf_file.read(),
-                        file_name="processed_presentation.pdf",
-                        mime="application/pdf",
-                        use_container_width=True
-                    )
-            except Exception as e:
-                st.error(f"OCR Error encountered: {str(e)}")
+        with open(save_path, "rb") as pdf_file:
+            st.download_button(
+                label="📥 Download Searchable PDF",
+                data=pdf_file.read(),
+                file_name="searchable_presentation.pdf",
+                mime="application/pdf"
+            )
+            
+    except Exception as e:
+        st.error(f"Pipeline execution failure: {e}")
+    finally:
+        if os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
