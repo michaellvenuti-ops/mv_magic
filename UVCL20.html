@@ -128,6 +128,10 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="gilbrethShuffle()">Gilbreth Shuffle</button>
         <button onclick="cutDeck()">Cut Deck (26)</button>
         <button onclick="randomShuffle()">Randomize</button>
+        <button onclick="shiftDeck('LEFT')">Shift Left</button>
+        <button onclick="shiftDeck('RIGHT')">Shift Right</button>
+
+
         
         <div class="divider" data-label="FALSE WORK (STACK PROTECTION)"></div>
         <button onclick="falseShuffle('ZARROW')">Zarrow (Top/Bot Swap)</button>
@@ -226,6 +230,24 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         }
         deck = res; logMove("Gilbreth Shuffle"); renderDeck();
     }
+    
+    function shiftDeck(direction) {
+    saveState();
+    if (direction === 'LEFT') {
+        // Moves the first card to the bottom
+        let card = deck.shift();
+        deck.push(card);
+        logMove("Shifted Left (1)");
+    } else {
+        // Moves the last card to the top
+        let card = deck.pop();
+        deck.unshift(card);
+        logMove("Shifted Right (1)");
+    }
+    renderDeck();
+}
+
+    
     function createCardUI(v) { let d = document.createElement('div'); d.className = `table-card ${v.includes('H')||v.includes('D')?'red':''}`; d.innerText = v.slice(0,-1)+suitSymbols[v.slice(-1)]; return d; }
 
     function dealDraw(p) {
