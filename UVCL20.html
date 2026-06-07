@@ -130,6 +130,8 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="randomShuffle()">Randomize</button>
         <button onclick="shiftDeck('LEFT')">Shift Left</button>
         <button onclick="shiftDeck('RIGHT')">Shift Right</button>
+        <button onclick="shiftDeck('reverseTop')">Reverse Top</button>
+        <button onclick="shiftDeck('reverseBottom')">Reverse Bottom</button>
 
 
 
@@ -297,6 +299,24 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         deck.unshift(card);
         logMove("Shifted Right (1)");
     }
+    renderDeck();
+    }
+
+ function reverseTop() {
+    saveState();
+    let top = deck.slice(0, 26).reverse();
+    let bot = deck.slice(26);
+    deck = [...top, ...bot];
+    logMove("Reverse Top 26");
+    renderDeck();
+}
+
+function reverseBottom() {
+    saveState();
+    let top = deck.slice(0, 26);
+    let bot = deck.slice(26).reverse();
+    deck = [...top, ...bot];
+    logMove("Reverse Bottom 26");
     renderDeck();
 }
 
