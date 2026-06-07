@@ -150,6 +150,8 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('ARONSON')">Aronson</button>
         <button onclick="resetTo('OSTERLIND')">Osterlind</button>
         <button onclick="resetTo('NIKOLA')">Nikola</button>
+        <button onclick="resetTo('EIGHT_KINGS')">Eight Kings</button>
+        <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
     </div>
 
     <div id="poker-arena">
@@ -236,6 +238,20 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
          // Note: Osterlind is usually a system (7-4-1), but you can add the common starting order
         temp = ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"];
          }
+        else if(type === 'EIGHT_KINGS') {
+         temp = ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D",
+          "JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD",
+          "6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D",
+          "AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD",
+          "4C","AH","6S","JD"];
+         }
+        else if(type === 'BORIS_WILD') {
+         temp = ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D",
+          "7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D",
+          "10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D",
+          "KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD",
+          "3C","2H","AS","KD"];
+        }
      deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
 
