@@ -146,7 +146,9 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
         <button onclick="resetTo('MY_STEBBINS')">My Stebbins</button>
         <button onclick="resetTo('MY_ORDER')" style="color:var(--gold)">MY CHASED</button>
-            <button onclick="resetTo('MEMORANDUM')">Memorandum</button>
+        <button onclick="resetTo('MEMORANDUM')">Memorandum</button>
+        <button onclick="resetTo('ARONSON')">Aronson</button>
+        <button onclick="resetTo('OSTERLIND')">Osterlind</button>
     </div>
 
     <div id="poker-arena">
@@ -219,10 +221,16 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         else if(type === 'MY_STEBBINS') { let v = 2; for(let i=0; i<52; i++) { temp.push(values[v % 13] + ['C','H','S','D'][i % 4]); v += 3; } }
         else if(type === 'MY_ORDER')  { temp = ["QC","JC","2C","5C","AC","6C","KC","10C","9C","4C","3C","7C","8C","QH","JH","2H","6H","AH","5H","KH","10H","9H","4H","3H","7H","8H","QS","JS","2S","6S","AS","5S","KS","10S","9S","4S","3S","7S","8S","QD","JD","2D","6D","AD","5D","KD","10D","9D","4D","3D","7D","8D"]; }
         else if(type === 'MEMORANDUM') { 
-    temp = ["4S", "7D", "4C", "2H", "8D", "3C", "7S", "5H", "9S", "KC", "2D", "JH", "3S", "8S", "6H", "10C", "5D", "KD", "2C", "3H", "8D", "5C", "KS", "JD", "8C", "10S", "KH", "JC", "7S", "10H", "AD", "4S", "7H", "4D", "AC", "9C", "JS", "QD", "7C", "QS", "10D", "6C", "AH", "9D", "6D", "5S", "QH", "3D", "QC", "8H", "6S", "AS"]; 
-    // ^ REPLACE THIS ARRAY WITH THE OFFICIAL MEMORANDUM ORDER
-}
-
+         temp = ["4S", "7D", "4C", "2H", "8D", "3C", "7S", "5H", "9S", "KC", "2D", "JH", "3S", "8S", "6H", "10C", "5D", "KD", "2C", "3H", "8D", "5C", "KS", "JD", "8C", "10S", "KH", "JC", "7S", "10H", "AD", "4S", "7H", "4D", "AC", "9C", "JS", "QD", "7C", "QS", "10D", "6C", "AH", "9D", "6D", "5S", "QH", "3D", "QC", "8H", "6S", "AS"]; 
+          // ^ REPLACE THIS ARRAY WITH THE OFFICIAL MEMORANDUM ORDER
+        }
+        else if(type === 'ARONSON') {
+            temp = ["JS", "2H", "4S", "AC", "8D", "3H", "7S", "KC", "5D", "9S", "4H", "2S", "QD", "10H", "8C", "6D", "AS", "5H", "QC", "3S", "8H", "6C", "AD", "5S", "QH", "9C", "6S", "AH", "JD", "4C", "7H", "10S", "KD", "7C", "3H", "9D", "6H", "KS", "2C", "JH", "7D", "10C", "4D", "3C", "8S", "5C", "QS", "9H", "2D", "JC", "10D", "KH"];
+        }
+        else if(type === 'OSTERLIND') {
+         // Note: Osterlind is usually a system (7-4-1), but you can add the common starting order
+         temp = ["8C", "4S", "JD", "3H", "7S", "KH", "2D", "9C", "6H", "AS", "5D", "QC", "10H", "2S", "8D", "3C", "JH", "4D", "9S", "7H", "KD", "5C", "10S", "6D", "AH", "QS", "2C", "8H", "3D", "JS", "7C", "KH", "5S", "9D", "4H", "AC", "10D", "6S", "QH", "2H", "8S", "3C", "JD", "7D", "KS", "5H", "9C", "4D", "10C", "6H", "AS", "QD"];
+        }
         deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
 
