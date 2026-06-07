@@ -429,29 +429,44 @@ function verifyStack() {
 }
 
 function calcToNDO() {
-    // Build NDO for comparison
     const values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-    let ndo = [];
-    ['H','C'].forEach(s => values.forEach(v => ndo.push(v+s)));
-    ['D','S'].forEach(s => [...values].reverse().forEach(v => ndo.push(v+s)));
+    let usNdo = [];
+    ['H','C'].forEach(s => values.forEach(v => usNdo.push(v+s)));
+    ['D','S'].forEach(s => [...values].reverse().forEach(v => usNdo.push(v+s)));
 
-    // Simulate out-faros and count
+    const targets = {
+        'US NDO':      usNdo,
+        'SPANISH NDO': ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"],
+        'FRENCH NDO':  ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
+        'MNEMONICA':   ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"],
+        'ARONSON':     ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"],
+        'NIKOLA':      ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"],
+        'EIGHT_KINGS': ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D","JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD","6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D","AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD","4C","AH","6S","JD"],
+        'BORIS_WILD':  ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D","7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D","10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D","KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD","3C","2H","AS","KD"],
+        'CURRENT':     [...deck],
+    };
+
     let test = [...deck];
+    let results = [];
+
     for (let i = 1; i <= 8; i++) {
         let top = test.slice(0, 26), bot = test.slice(26), res = [];
         for (let j = 0; j < 26; j++) { res.push(top[j]); res.push(bot[j]); }
         test = res;
-        if (test.every((c, idx) => c === deck[idx])) {
-            logMove(`↩ Cycles back to CURRENT order in ${i} out-faro(s)`);
-            return;
-        }
-        if (test.every((c, idx) => c === ndo[idx])) {
-            logMove(`↩ Reaches US NDO in ${i} out-faro(s)`);
-            return;
+        for (const [name, order] of Object.entries(targets)) {
+            if (test.every((c, idx) => c === order[idx])) {
+                results.push(`↩ Reaches ${name} in ${i} out-faro(s)`);
+            }
         }
     }
-    logMove(`↩ Does not reach NDO in 8 out-faros`);
+
+    if (results.length > 0) {
+        results.forEach(r => logMove(r));
+    } else {
+        logMove('↩ Does not reach any known order in 8 out-faros');
+    }
 }
+    
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
     function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
     function saveStack() { localStorage.setItem('stackV92', JSON.stringify(deck)); logMove("Session Saved."); }
