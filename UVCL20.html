@@ -149,6 +149,7 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('MEMORANDUM')">Memorandum</button>
         <button onclick="resetTo('ARONSON')">Aronson</button>
         <button onclick="resetTo('OSTERLIND')">Osterlind</button>
+        <button onclick="resetTo('NIKOLA')">Nikola</button>
     </div>
 
     <div id="poker-arena">
@@ -231,7 +232,11 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
          // Note: Osterlind is usually a system (7-4-1), but you can add the common starting order
          temp = ["8C", "4S", "JD", "3H", "7S", "KH", "2D", "9C", "6H", "AS", "5D", "QC", "10H", "2S", "8D", "3C", "JH", "4D", "9S", "7H", "KD", "5C", "10S", "6D", "AH", "QS", "2C", "8H", "3D", "JS", "7C", "KH", "5S", "9D", "4H", "AC", "10D", "6S", "QH", "2H", "8S", "3C", "JD", "7D", "KS", "5H", "9C", "4D", "10C", "6H", "AS", "QD"];
         }
-        deck = temp; logMove(`Reset: ${type}`); renderDeck();
+        else if(type === 'NIKOLA') {
+         // Note: Osterlind is usually a system (7-4-1), but you can add the common starting order
+        temp = ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"];
+         }
+     deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
 
     function cutDeck() { saveState(); let mid = deck.splice(0, 26); deck.push(...mid); logMove("Cut Deck (26)"); renderDeck(); }
