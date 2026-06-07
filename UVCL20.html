@@ -140,7 +140,7 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="falseShuffle('BLIND')">Blind Faro (Top 2 Center)</button>
 
         <div class="divider" data-label="STACK PRESETS"></div>
-        <button onclick="resetTo('NDO')">New Deck Order</button>
+        <button onclick="resetTo('NDO')">New Deck Order (NDO)</button>
         <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
         <button onclick="resetTo('PARTICLE')">Particle</button>
         <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
@@ -152,6 +152,8 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('NIKOLA')">Nikola</button>
         <button onclick="resetTo('EIGHT_KINGS')">Eight Kings</button>
         <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
+        <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
+
     </div>
 
     <div id="poker-arena">
@@ -251,6 +253,12 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
           "10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D",
           "KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD",
           "3C","2H","AS","KD"];
+        }
+        else if(type === 'SPANISH_NDO') {
+         temp = ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
+          "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+          "AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
+          "AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"];
         }
      deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
