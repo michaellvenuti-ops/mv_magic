@@ -155,6 +155,7 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
         <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
         <button onclick="resetTo('FRENCH_NDO')">French NDO</button>
+        <button onclick="resetTo('unequalFaroTop')">UnequalFaroTop 18</button>
 
 
     </div>
@@ -319,6 +320,20 @@ function reverseBottom() {
     renderDeck();
 }
 
+    function unequalFaroTop() {
+    saveState();
+    let top = deck.slice(0, 18);
+    let bot = deck.slice(18);
+    let res = [];
+    for(let i = 0; i < top.length; i++) {
+        res.push(bot[i]);
+        res.push(top[i]);
+    }
+    res = res.concat(bot.slice(18));
+    deck = res;
+    logMove("Unequal Faro Top 18");
+    renderDeck();
+   }
     
     function createCardUI(v) { let d = document.createElement('div'); d.className = `table-card ${v.includes('H')||v.includes('D')?'red':''}`; d.innerText = v.slice(0,-1)+suitSymbols[v.slice(-1)]; return d; }
 
