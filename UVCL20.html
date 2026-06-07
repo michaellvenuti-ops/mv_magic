@@ -153,6 +153,8 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('EIGHT_KINGS')">Eight Kings</button>
         <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
         <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
+        <button onclick="resetTo('FRENCH_NDO')">Spanish NDO</button>
+
 
     </div>
 
@@ -259,6 +261,12 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
           "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
           "AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
           "AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"];
+        }
+        else if(type === 'FRENCH_NDO') {
+         temp = ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS",
+          "KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH",
+          "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC",
+          "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"];
         }
      deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
