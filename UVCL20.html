@@ -156,7 +156,7 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
         <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
         <button onclick="resetTo('FRENCH_NDO')">French NDO</button>
-
+        <button onclick="resetTo('PARTICLE_NDO')">French NDO</button>
 
     </div>
 
@@ -273,6 +273,14 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
           "KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH",
           "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC",
           "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"];
+        }
+
+        else if(type === 'PARTICLE_NDO') {
+          temp = [["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH",
+                   "KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S",
+                   "2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D",
+                   "JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C",
+                   "4C","3C","2C","AC"];
         }
      deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
@@ -397,8 +405,8 @@ function verifyStack() {
     'SPANISH_NDO': ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"],
     'FRENCH_NDO':  ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
     'US_NDO':      ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"],
-    'Osterlind':   ["AS", "3S", "7D", "5H", "QC", "AC", "5S", "JH", "JC", "QD", "2D", "8C", "6S", "KH", "2H", "6D", "3D", "10S", "8D", "7C", "4S", "9D", "9C", "8H", "5D", "AD", "6H", "AH", "4D", "QS", "QH", "KC", "3C", "9H", "7S", "2S", "5C", "KD", "4H", "10C", "10D", "JS", "10H", "9S", "6C", "2C", "7H", "3H", "8S", "4C", "JD", "KS"]
-
+    'Osterlind':   ["AS", "3S", "7D", "5H", "QC", "AC", "5S", "JH", "JC", "QD", "2D", "8C", "6S", "KH", "2H", "6D", "3D", "10S", "8D", "7C", "4S", "9D", "9C", "8H", "5D", "AD", "6H", "AH", "4D", "QS", "QH", "KC", "3C", "9H", "7S", "2S", "5C", "KD", "4H", "10C", "10D", "JS", "10H", "9S", "6C", "2C", "7H", "3H", "8S", "4C", "JD", "KS"],
+    'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
     };
 
     // Check for duplicates first
@@ -452,6 +460,8 @@ function calcToNDO() {
         'EIGHT_KINGS': ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D","JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD","6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D","AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD","4C","AH","6S","JD"],
         'BORIS_WILD':  ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D","7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D","10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D","KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD","3C","2H","AS","KD"],
         'STARTING':    [...deck],  // dynamically captures where you are right now
+        'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
+
     };
 
     // Figure out what the starting order is named
