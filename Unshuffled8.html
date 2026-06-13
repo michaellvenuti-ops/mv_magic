@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D Card Lab v7.0 - Maximum Text & Flipped Face Fix</title>
+    <title>3D Card Lab v8.0 - Embedded Assets & Type-In Edition</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         :root { 
@@ -26,7 +26,6 @@
             box-sizing: border-box; 
         }
 
-        /* Premium Styled Card Grid */
         .grid-container { 
             display: grid; 
             grid-template-columns: repeat(4, 1fr); 
@@ -52,11 +51,9 @@
             align-items: center;
             gap: 2px;
         }
-        .grid-card.red { 
-            color: var(--accent); 
-        }
+        .grid-card.red { color: var(--accent); }
 
-        .pad-group { margin-bottom: 15px; }
+        .pad-group { margin-bottom: 15px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px; border: 1px solid #2c3b59; }
         .pad-label { font-size: 0.75rem; font-weight: bold; color: var(--gold); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px;}
         
         .sharpie-pad { 
@@ -64,12 +61,16 @@
             border: 2px solid #3a506b; 
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="3" cy="13" r="3" fill="black"/><line x1="3" y1="13" x2="13" y2="3" stroke="black" stroke-width="3" stroke-linecap="round"/></svg>') 2 14, crosshair; 
             width: 100%; 
-            height: 70px; 
+            height: 65px; 
             image-rendering: pixelated; 
             border-radius: 4px; 
             display: block; 
         }
         
+        .text-input-group { display: flex; gap: 4px; margin-top: 5px; }
+        .edge-input { flex-grow: 1; padding: 4px 8px; font-size: 0.8rem; border-radius: 4px; border: 1px solid #3a506b; background: #0b132b; color: white; }
+        .btn-input-apply { padding: 4px 8px; font-size: 0.75rem; background: #5bc0be; color: #0b132b; border: none; font-weight: bold; }
+
         #canvas-container { flex-grow: 1; position: relative; background: #050505; }
         
         button { background: #3a506b; color: white; border: 1px solid #5bc0be; padding: 10px; cursor: pointer; font-size: 0.75rem; font-weight: bold; border-radius: 4px; transition: 0.2s; text-align: center; }
@@ -91,23 +92,39 @@
     <div class="pad-group">
         <div class="pad-label">Front Long Edge</div>
         <canvas id="pad-front" class="sharpie-pad" width="600" height="120"></canvas>
+        <div class="text-input-group">
+            <input type="text" id="input-front" class="edge-input" placeholder="Type text for Front side...">
+            <button class="btn-input-apply" onclick="applyTypedText('front')">Apply</button>
+        </div>
     </div>
     <div class="pad-group">
         <div class="pad-label">Back Long Edge</div>
         <canvas id="pad-back" class="sharpie-pad" width="600" height="120"></canvas>
+        <div class="text-input-group">
+            <input type="text" id="input-back" class="edge-input" placeholder="Type text for Back side...">
+            <button class="btn-input-apply" onclick="applyTypedText('back')">Apply</button>
+        </div>
     </div>
     <div class="pad-group">
-        <div class="pad-label">Right Short Edge (Preloaded)</div>
+        <div class="pad-label">Right Short Edge</div>
         <canvas id="pad-right" class="sharpie-pad" width="400" height="120"></canvas>
+        <div class="text-input-group">
+            <input type="text" id="input-right" class="edge-input" value="MV MAGIC">
+            <button class="btn-input-apply" onclick="applyTypedText('right')">Apply</button>
+        </div>
     </div>
     <div class="pad-group">
-        <div class="pad-label">Left Short Edge (Preloaded)</div>
+        <div class="pad-label">Left Short Edge</div>
         <canvas id="pad-left" class="sharpie-pad" width="400" height="120"></canvas>
+        <div class="text-input-group">
+            <input type="text" id="input-left" class="edge-input" value="UNSHUFFLED">
+            <button class="btn-input-apply" onclick="applyTypedText('left')">Apply</button>
+        </div>
     </div>
 
     <div class="controls">
         <button onclick="clearAllCanvases()">Clear All Pads</button>
-        <button onclick="applyWriting()" style="background:var(--gold); color:#0b132b;">Apply to All Sides</button>
+        <button onclick="applyWriting()" style="background:var(--gold); color:#0b132b;">Apply Marks to 3D Deck</button>
     </div>
 
     <a href="https://www.youtube.com/watch?v=LlTF1Y4a888" target="_blank" style="text-decoration: none; margin-bottom: 20px; display: block;">
@@ -126,338 +143,5 @@
 <div id="canvas-container"></div>
 
 <script>
-    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
-    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    
-    let scene, camera, renderer, deckGroup, cards = [];
-    let deckData = []; 
-    let backTex; 
-    
-    const sides = {
-        right: { id: 'pad-right', ctx: null, canvas: null, matIndex: 0, defaultText: "MV MAGIC", fontSize: "115px" },
-        left: { id: 'pad-left', ctx: null, canvas: null, matIndex: 1, defaultText: "UNSHUFFLED", fontSize: "100px" },
-        front: { id: 'pad-front', ctx: null, canvas: null, matIndex: 2, defaultText: "", fontSize: "110px" },
-        back: { id: 'pad-back', ctx: null, canvas: null, matIndex: 3, defaultText: "", fontSize: "110px" }
-    };
-    
-    let isDrawing = false;
-    let activeCtx = null;
-    let activeCanvas = null;
-
-    function init() {
-        // Build 2D Input Windows
-        Object.keys(sides).forEach(key => {
-            const side = sides[key];
-            side.canvas = document.getElementById(side.id);
-            side.ctx = side.canvas.getContext('2d');
-            
-            side.ctx.fillStyle = "#ffffff";
-            side.ctx.fillRect(0, 0, side.canvas.width, side.canvas.height);
-            
-            side.ctx.strokeStyle = "#000000";
-            side.ctx.lineWidth = 7; 
-            side.ctx.lineCap = "round";
-            side.ctx.lineJoin = "round";
-
-            if (side.defaultText) {
-                side.ctx.fillStyle = "#000000";
-                side.ctx.font = `bold ${side.fontSize} 'Arial Black', sans-serif`;
-                side.ctx.textAlign = "center";
-                side.ctx.textBaseline = "middle";
-                
-                // Boosted scaling factor coordinates to achieve edge-to-edge ink coverage
-                side.ctx.fillText(side.defaultText, side.canvas.width / 2, side.canvas.height / 2 + 10, side.canvas.width - 10);
-            }
-
-            side.canvas.addEventListener('mousedown', (e) => startDraw(e, side.ctx, side.canvas));
-            side.canvas.addEventListener('mousemove', drawMove);
-        });
-        
-        window.addEventListener('mouseup', stopDraw);
-
-        // Build 3D Stage
-        const container = document.getElementById('canvas-container');
-        scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x050505);
-
-        camera = new THREE.PerspectiveCamera(35, container.clientWidth / container.clientHeight, 0.1, 1000);
-        renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        container.appendChild(renderer.domElement);
-
-        deckGroup = new THREE.Group();
-        scene.add(deckGroup);
-
-        camera.position.set(0, 4.5, 9.5);
-        camera.lookAt(0, 0, 0);
-
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
-        scene.add(ambientLight);
-        
-        const dirLight = new THREE.DirectionalLight(0xffffff, 0.35);
-        dirLight.position.set(5, 9, 6);
-        scene.add(dirLight);
-
-        generateBicycleBack();
-        resetToNDO();
-        animate();
-
-        window.addEventListener('resize', onWindowResize);
-    }
-
-    function startDraw(e, ctx, canvas) {
-        isDrawing = true;
-        activeCtx = ctx;
-        activeCanvas = canvas;
-        activeCtx.beginPath();
-        const rect = activeCanvas.getBoundingClientRect();
-        activeCtx.moveTo((e.clientX - rect.left) * (activeCanvas.width / rect.width), (e.clientY - rect.top) * (activeCanvas.height / rect.height));
-    }
-
-    function drawMove(e) {
-        if (!isDrawing || !activeCtx || !activeCanvas) return;
-        const rect = activeCanvas.getBoundingClientRect();
-        activeCtx.lineTo((e.clientX - rect.left) * (activeCanvas.width / rect.width), (e.clientY - rect.top) * (activeCanvas.height / rect.height));
-        activeCtx.stroke();
-    }
-
-    function stopDraw() { isDrawing = false; activeCtx = null; activeCanvas = null; }
-
-    function generateBicycleBack() {
-        const canvas = document.createElement('canvas');
-        canvas.width = 512; canvas.height = 712;
-        const ctx = canvas.getContext('2d');
-        
-        ctx.fillStyle = "#b11226"; ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 24; ctx.strokeRect(12, 12, canvas.width - 24, canvas.height - 24);
-        ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 4; ctx.strokeRect(36, 36, canvas.width - 72, canvas.height - 72);
-        
-        ctx.strokeStyle = "rgba(255,255,255,0.18)"; ctx.lineWidth = 3;
-        for (let i = 50; i < canvas.width - 50; i += 16) {
-            ctx.beginPath(); ctx.arc(canvas.width/2, canvas.height/2, i/1.3, 0, Math.PI*2); ctx.stroke();
-        }
-        ctx.fillStyle = "#ffffff"; ctx.beginPath(); ctx.arc(canvas.width/2, canvas.height/4, 35, 0, Math.PI*2); ctx.fill();
-        ctx.beginPath(); ctx.arc(canvas.width/2, (canvas.height/4)*3, 35, 0, Math.PI*2); ctx.fill();
-
-        backTex = new THREE.CanvasTexture(canvas);
-    }
-
-    // --- CORNER PIP GENERATION MATRIX FIX ---
-    function generateCardFaceTexture(cardCode) {
-        const canvas = document.createElement('canvas');
-        canvas.width = 256; canvas.height = 356;
-        const ctx = canvas.getContext('2d');
-
-        ctx.fillStyle = "#fafafa"; ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = "#e0e0e0"; ctx.lineWidth = 2; ctx.strokeRect(2, 2, canvas.width-4, canvas.height-4);
-
-        if (!cardCode) return new THREE.CanvasTexture(canvas);
-
-        const suit = cardCode.slice(-1);
-        const val = cardCode.slice(0, -1);
-        const isRed = (suit === 'H' || suit === 'D');
-        
-        // CRITICAL FIX: Mirror transform the context map canvas coordinate matrices 
-        // to match Three.js bottom mapping layouts completely.
-        ctx.translate(canvas.width, 0);
-        ctx.scale(-1, 1);
-
-        ctx.fillStyle = isRed ? "#e63946" : "#2b2d42";
-
-        // Draw Indices Corners
-        ctx.font = "bold 34px 'Segoe UI', sans-serif";
-        ctx.fillText(val, 20, 45);
-        ctx.font = "34px 'Segoe UI', sans-serif";
-        ctx.fillText(suitSymbols[suit], 20, 82);
-
-        // Center Pip Display
-        ctx.font = "124px 'Segoe UI', sans-serif";
-        ctx.textAlign = "center"; ctx.textBaseline = "middle";
-        ctx.fillText(suitSymbols[suit], canvas.width / 2, canvas.height / 2);
-
-        const tex = new THREE.CanvasTexture(canvas);
-        return tex;
-    }
-
-    function applyWriting() {
-        const totalCards = 52;
-
-        cards.forEach((mesh) => {
-            const initialPos = mesh.userData.initialIndex; 
-
-            Object.keys(sides).forEach(key => {
-                const side = sides[key];
-                const stripHeight = side.canvas.height / totalCards;
-
-                const sliceCanvas = document.createElement('canvas');
-                sliceCanvas.width = (key === 'front' || key === 'back') ? 512 : 256;
-                sliceCanvas.height = 32;
-                const sliceCtx = sliceCanvas.getContext('2d');
-
-                sliceCtx.drawImage(
-                    side.canvas,
-                    0, initialPos * stripHeight, side.canvas.width, stripHeight,
-                    0, 0, sliceCanvas.width, sliceCanvas.height
-                );
-
-                const dynamicTex = new THREE.CanvasTexture(sliceCanvas);
-                dynamicTex.minFilter = THREE.LinearFilter;
-
-                if (mesh.material[side.matIndex]) {
-                    mesh.material[side.matIndex].map = dynamicTex;
-                    mesh.material[side.matIndex].needsUpdate = true;
-                }
-            });
-        });
-        document.getElementById('status').innerText = "Ink mapping locked into card structures.";
-    }
-
-    function clearAllCanvases() {
-        Object.keys(sides).forEach(key => {
-            const side = sides[key];
-            side.ctx.fillStyle = "#ffffff";
-            side.ctx.fillRect(0, 0, side.canvas.width, side.canvas.height);
-        });
-        applyWriting();
-    }
-
-    function resetToNDO() {
-        deckData = [];
-        ['H','C'].forEach(s => values.forEach(v => deckData.push(v+s)));
-        ['D','S'].forEach(s => [...values].reverse().forEach(v => deckData.push(v+s)));
-        
-        while(deckGroup.children.length > 0) deckGroup.remove(deckGroup.children[0]);
-        cards = [];
-
-        deckData.forEach((val, i) => {
-            const geo = new THREE.BoxGeometry(3.6, 0.045, 4.8); 
-            
-            const mats = [
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 0: Right
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 1: Left
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 2: Front
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 3: Back
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 4: Face (Bottom)
-                new THREE.MeshStandardMaterial({color: 0xffffff})  // 5: Back (Top)
-            ];
-
-            const mesh = new THREE.Mesh(geo, mats);
-            mesh.position.set(0, (52 - i) * 0.05 - 1.3, 0);
-            
-            mesh.userData = { initialIndex: i, currentCardValue: val };
-            
-            cards.push(mesh);
-            deckGroup.add(mesh);
-        });
-
-        refreshFaceTextures();
-        setTimeout(applyWriting, 100);
-        updateGrid();
-        document.getElementById('status').innerText = "Deck reset to NDO.";
-    }
-
-    async function animateFaro(type) {
-        document.getElementById('status').innerText = `Running Faro ${type}...`;
-        
-        cards.forEach((m, i) => { m.position.x = (i < 26) ? -3.0 : 3.0; });
-        await new Promise(r => setTimeout(r, 450));
-
-        let topH = cards.slice(0, 26), botH = cards.slice(26, 52);
-        let topHData = deckData.slice(0, 26), botHData = deckData.slice(26, 52);
-        
-        cards = [];
-        deckData = [];
-        
-        for(let i=0; i<26; i++) {
-            if(type === 'OUT') {
-                cards.push(topH[i]); cards.push(botH[i]);
-                deckData.push(topHData[i]); deckData.push(botHData[i]);
-            } else {
-                cards.push(botH[i]); cards.push(topH[i]);
-                deckData.push(botHData[i]); deckData.push(topHData[i]);
-            }
-        }
-
-        cards.forEach((m, i) => {
-            m.position.x = 0;
-            m.position.y = (52 - i) * 0.05 - 1.3;
-            m.userData.currentCardValue = deckData[i]; 
-        });
-
-        refreshFaceTextures();
-        updateGrid();
-        document.getElementById('status').innerText = `Faro ${type} Complete.`;
-    }
-
-    function refreshFaceTextures() {
-        cards.forEach((mesh, i) => {
-            mesh.material[4] = new THREE.MeshStandardMaterial({color: 0xffffff});
-            mesh.material[5] = new THREE.MeshStandardMaterial({color: 0xffffff});
-
-            if (i === 0) {
-                mesh.material[5] = new THREE.MeshStandardMaterial({map: backTex});
-            }
-            if (i === 51) {
-                mesh.material[4] = new THREE.MeshStandardMaterial({map: generateCardFaceTexture(mesh.userData.currentCardValue)});
-            }
-            
-            mesh.material[4].needsUpdate = true;
-            mesh.material[5].needsUpdate = true;
-        });
-    }
-
-    function updateGrid() {
-        const grid = document.getElementById('uvcl-grid');
-        grid.innerHTML = '';
-        deckData.forEach(card => {
-            const suit = card.slice(-1);
-            const value = card.slice(0, -1);
-            const div = document.createElement('div');
-            div.className = `grid-card ${suit === 'H' || suit === 'D' ? 'red' : ''}`;
-            div.innerHTML = `<span>${value}</span><span>${suitSymbols[suit]}</span>`;
-            grid.appendChild(div);
-        });
-    }
-
-    function animate() {
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
-    }
-
-    function onWindowResize() {
-        const container = document.getElementById('canvas-container');
-        camera.aspect = container.clientWidth / container.clientHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-    }
-
-    // --- MOUSE CLICK ROTATION DRAG CONTROLS ---
-    let isDragging = false;
-    let previousMousePosition = { x: 0, y: 0 };
-
-    document.addEventListener('mousedown', (e) => {
-        if(e.clientX > 420) { 
-            isDragging = true;
-            previousMousePosition = { x: e.clientX, y: e.clientY };
-        }
-    });
-    
-    document.addEventListener('mouseup', () => isDragging = false);
-    document.addEventListener('mousemove', (e) => {
-        if(!isDragging) return;
-        
-        const deltaMove = {
-            x: e.clientX - previousMousePosition.x,
-            y: e.clientY - previousMousePosition.y
-        };
-        
-        deckGroup.rotation.y += deltaMove.x * 0.007;
-        deckGroup.rotation.x += deltaMove.y * 0.007;
-        
-        previousMousePosition = { x: e.clientX, y: e.clientY };
-    });
-
-    window.addEventListener('DOMContentLoaded', init);
-</script>
-</body>
-</html>
+    // Embedded Safe Base64 Data Texture String representing your uploaded Bicycle image
+    const bicycleBoxBase64 = "data:image/png;base64,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
