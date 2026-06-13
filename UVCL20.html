@@ -407,9 +407,9 @@ function reverseBottom() {
         });
     }
 
-    function showHelp() {
-        alert('==================================================
-        VIRTUAL CARD LAB (V20) - USER GUIDE
+   function showHelp() {
+    alert(`==================================================
+VIRTUAL CARD LAB (V20) - USER GUIDE
 ==================================================
 
 Welcome to the Virtual Card Lab! This environment is designed 
@@ -419,44 +419,31 @@ and sequencing in real time.
 --------------------------------------------------
 1. DECK MANIPULATION & SHUFFLES
 --------------------------------------------------
-• Faro Out / In Shuffles:
+- Faro Out / In Shuffles:
   Perfectly weaves the two halves of the deck together. 
   An 'Out' shuffle keeps the original top card on top. 
   An 'In' shuffle weaves the top card into the second position.
 
-• Cut Deck (Sidebar):
-  Located cleanly in the sidebar under the search tool. Enter 
-  any number from 1 to 51 into the input box and click "Cut" 
-  to instantly shift that exact number of cards from the top 
-  of the pack to the bottom.
+- Cut Deck (Sidebar):
+  Enter any number from 1 to 51 and click Cut to shift 
+  that exact number of cards from top to bottom.
 
-• Random Shuffle:
-  Uses the mathematically unbiased Fisher-Yates algorithm to 
-  instantly randomize the entire deck array, perfect for 
-  simulating real-world chaos or testing stack recovery.
-
-• Reset Deck:
-  Instantly restores the deck to its baseline starting 
-  configuration (e.g., New Deck Order or your default 
-  memorized stack layout).
+- Random Shuffle:
+  Uses Fisher-Yates algorithm to instantly randomize the deck.
 
 --------------------------------------------------
 2. TRACKING & POSITION SEARCH
 --------------------------------------------------
-• Search Track Box (Sidebar):
-  Type a specific card value or look up a position index to 
-  dynamically isolate and track where your key target cards 
-  travel after every single cut or shuffle action.
+- Search Track Box (Sidebar):
+  Type a card (e.g. AS, 4H) to highlight and track it 
+  through every shuffle and cut.
 
 --------------------------------------------------
-QUICK TIPS FOR STACK ANALYSIS:
+QUICK TIPS:
 --------------------------------------------------
-- Use the sidebar Cut tool to simulate a spectator cutting the 
-  cards before testing your stack routines.
-- Run consecutive Out-Faros to observe mathematical periodicities 
-  and check if your favorite custom configurations return to 
-  their original order as expected.');
-    }
+- Use the sidebar Cut tool to simulate a spectator cut.
+- Run consecutive Out-Faros to observe mathematical cycles.`);
+}
 
 function toggleCoach() {
     coachActive = !coachActive;
