@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D Card Lab v11.0 - Interactive 3D Shuffling & Full Faces</title>
+    <title>3D Card Lab v11.0 - Full Interactive Build</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         :root { 
@@ -126,13 +126,13 @@
     </div>
 
     <h3 style="color:var(--gold); margin-top: 5px; font-size:1rem;">FARO SHUFFLE CONTROLS</h3>
-    <div class="hint-text">💡 Tip: You can also click directly on the deck to shuffle!</div>
+    <div class="hint-text">💡 Tip: Click directly on the cards to separate and shuffle!</div>
     <div class="controls">
         <button onclick="animateFaro('OUT')">Faro OUT Shuffle</button>
         <button onclick="animateFaro('IN')">Faro IN Shuffle</button>
         <button onclick="resetToNDO()" style="grid-column: span 2; background: #222; border-color: #444;">Reset to New Deck Order</button>
     </div>
-    <div id="status" style="margin-top:5px; font-family:monospace; color:#00f5d4; font-size:0.8rem; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px;">Loading textures...</div>
+    <div id="status" style="margin-top:5px; font-family:monospace; color:#00f5d4; font-size:0.8rem; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px;">Initializing app...</div>
 </div>
 
 <div id="canvas-container"></div>
@@ -197,22 +197,37 @@
         const ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
         scene.add(ambientLight);
 
-        // Raycasting interaction setup
         raycaster = new THREE.Raycaster();
         mouse = new THREE.Vector2();
         container.addEventListener('click', onCanvasClick);
 
+        // SECURE CORS LOADER
         const textureLoader = new THREE.TextureLoader();
+        textureLoader.setCrossOrigin('anonymous');
+        
         textureLoader.load(
             'bicycle_image.PNG', 
             function(texture) {
                 bikeBoxTex = texture;
-                document.getElementById('status').innerText = "Bicycle design ready. Click deck to shuffle.";
+                document.getElementById('status').innerText = "System Ready. Interactive deck loaded.";
                 resetToNDO();
             },
             undefined,
             function(err) {
-                document.getElementById('status').innerText = "Asset missing. Click deck to shuffle.";
+                console.warn("Asset look up blocked or missing. Activating clean design safety mesh.");
+                
+                const fallbackCanvas = document.createElement('canvas');
+                fallbackCanvas.width = 256; fallbackCanvas.height = 356;
+                const fCtx = fallbackCanvas.getContext('2d');
+                fCtx.fillStyle = "#e63946"; 
+                fCtx.fillRect(0, 0, 256, 356);
+                fCtx.fillStyle = "#ffffff";
+                fCtx.font = "bold 28px sans-serif";
+                fCtx.textAlign = "center";
+                fCtx.fillText("BICYCLE", 128, 178);
+                
+                bikeBoxTex = new THREE.CanvasTexture(fallbackCanvas);
+                document.getElementById('status').innerText = "System Ready (Fallback Box Design).";
                 resetToNDO();
             }
         );
@@ -271,7 +286,6 @@
         activeCtx = null; activeCanvas = null; 
     }
 
-    // GENERATES DYNAMIC 2D CARD FACES FOR ALL 52 TEXTURE SLOTS
     function generateCardFaceTexture(cardCode) {
         const canvas = document.createElement('canvas');
         canvas.width = 256; canvas.height = 356;
@@ -290,13 +304,11 @@
         ctx.scale(-1, 1);
         ctx.fillStyle = isRed ? "#e63946" : "#2b2d42";
 
-        // Upper Index Pip
         ctx.font = "bold 34px 'Segoe UI', sans-serif";
         ctx.fillText(val, 18, 45);
         ctx.font = "34px 'Segoe UI', sans-serif";
         ctx.fillText(suitSymbols[suit], 18, 82);
 
-        // Center Pip Display
         ctx.font = "120px 'Segoe UI', sans-serif";
         ctx.textAlign = "center"; ctx.textBaseline = "middle";
         ctx.fillText(suitSymbols[suit], canvas.width / 2, canvas.height / 2);
@@ -361,4 +373,156 @@
         deckData.forEach((val, i) => {
             const geo = new THREE.BoxGeometry(3.6, 0.046, 4.8); 
             
-            const mats =
+            const mats = [
+                new THREE.MeshStandardMaterial({color: 0xffffff}), 
+                new THREE.MeshStandardMaterial({color: 0xffffff}), 
+                new THREE.MeshStandardMaterial({color: 0xffffff}), 
+                new THREE.MeshStandardMaterial({color: 0xffffff}), 
+                new THREE.MeshStandardMaterial({color: 0xffffff}), 
+                new THREE.MeshStandardMaterial({color: 0xffffff})  
+            ];
+
+            const mesh = new THREE.Mesh(geo, mats);
+            mesh.position.set(0, (52 - i) * 0.051 - 1.3, 0);
+            mesh.userData = { initialIndex: i, currentCardValue: val };
+            
+            cards.push(mesh);
+            deckGroup.add(mesh);
+        });
+
+        refreshAllCardTextures();
+        setTimeout(applyWriting, 100);
+        updateGrid();
+    }
+
+    function onCanvasClick(event) {
+        if (isShuffling) return;
+        const container = document.getElementById('canvas-container');
+        const rect = renderer.domElement.getBoundingClientRect();
+        
+        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(cards);
+
+        if (intersects.length > 0) {
+            const clickedMesh = intersects[0].object;
+            const clickedIndex = cards.indexOf(clickedMesh);
+            
+            if (clickedIndex < 26) {
+                animateFaro('OUT');
+            } else {
+                animateFaro('IN');
+            }
+        }
+    }
+
+    async function animateFaro(type) {
+        if (isShuffling) return;
+        isShuffling = true;
+        document.getElementById('status').innerText = `Running Faro ${type}...`;
+        
+        cards.forEach((m, i) => {
+            m.position.x = (i < 26) ? -2.6 : 2.6;
+        });
+        await new Promise(r => setTimeout(r, 400));
+
+        let topH = cards.slice(0, 26), botH = cards.slice(26, 52);
+        let topHData = deckData.slice(0, 26), botHData = deckData.slice(26, 52);
+        
+        cards = [];
+        deckData = [];
+        
+        for(let i=0; i<26; i++) {
+            if(type === 'OUT') {
+                cards.push(topH[i]); cards.push(botH[i]);
+                deckData.push(topHData[i]); deckData.push(botHData[i]);
+            } else {
+                cards.push(botH[i]); cards.push(topH[i]);
+                deckData.push(botHData[i]); deckData.push(topHData[i]);
+            }
+        }
+
+        cards.forEach((m, i) => {
+            m.position.x = 0;
+            m.position.y = (52 - i) * 0.051 - 1.3;
+            m.userData.currentCardValue = deckData[i]; 
+        });
+
+        refreshAllCardTextures();
+        updateGrid();
+        isShuffling = false;
+        document.getElementById('status').innerText = `Faro ${type} Complete.`;
+    }
+
+    function refreshAllCardTextures() {
+        cards.forEach((mesh, i) => {
+            mesh.material[4] = new THREE.MeshStandardMaterial({
+                map: generateCardFaceTexture(mesh.userData.currentCardValue)
+            });
+            mesh.material[4].needsUpdate = true;
+
+            if (i === 0 && bikeBoxTex) {
+                mesh.material[5] = new THREE.MeshStandardMaterial({map: bikeBoxTex});
+            } else {
+                mesh.material[5] = new THREE.MeshStandardMaterial({color: 0xffffff});
+            }
+            mesh.material[5].needsUpdate = true;
+        });
+    }
+
+    function updateGrid() {
+        const grid = document.getElementById('uvcl-grid');
+        grid.innerHTML = '';
+        deckData.forEach(card => {
+            const suit = card.slice(-1);
+            const value = card.slice(0, -1);
+            const div = document.createElement('div');
+            div.className = `grid-card ${suit === 'H' || suit === 'D' ? 'red' : ''}`;
+            div.innerHTML = `<span>${value}</span><span>${suitSymbols[suit]}</span>`;
+            grid.appendChild(div);
+        });
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+
+    function onWindowResize() {
+        const container = document.getElementById('canvas-container');
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+    }
+
+    let isDragging = false;
+    let previousMousePosition = { x: 0, y: 0 };
+
+    document.addEventListener('mousedown', (e) => {
+        if(e.clientX > 440) { 
+            isDragging = true;
+            previousMousePosition = { x: e.clientX, y: e.clientY };
+        }
+    });
+    
+    document.addEventListener('mouseup', () => isDragging = false);
+    document.addEventListener('mousemove', (e) => {
+        if(!isDragging) return;
+        
+        const deltaMove = {
+            x: e.clientX - previousMousePosition.x,
+            y: e.clientY - previousMousePosition.y
+        };
+        
+        deckGroup.rotation.y += deltaMove.x * 0.007;
+        deckGroup.rotation.x += deltaMove.y * 0.007;
+        
+        previousMousePosition = { x: e.clientX, y: e.clientY };
+    });
+
+    window.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
