@@ -133,7 +133,13 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="reverseTop()">Reverse Top 26</button>
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
-
+<div class="cut-control-container" style="margin: 10px 0;">
+  <label for="cutSlider">Cut Position: <span id="sliderValue">26</span></label><br>
+  
+  <input type="range" id="cutSlider" min="1" max="51" value="26" oninput="updateSliderLabel(this.value)">
+  
+  <button onclick="executeSliderCut()">Cut Deck</button>
+</div>
 
 
         
@@ -286,6 +292,27 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
     }
 
     function cutDeck() { saveState(); let mid = deck.splice(0, 26); deck.push(...mid); logMove("Cut Deck (26)"); renderDeck(); }
+    
+    // 1. This updates the "26" label text in real-time as the user drags the slider
+function updateSliderLabel(val) {
+    document.getElementById('sliderValue').innerText = val;
+}
+
+// 2. This reads the slider value and executes the cut math
+function executeSliderCut() {
+    // Get the current number from the slider
+    var cutPos = parseInt(document.getElementById('cutSlider').value);
+    
+    // Look at how your UVCL20 array is named (e.g., 'deck', 'currentStack', etc.)
+    // Slice the top portion and bottom portion, then concatenate them reversed
+    var topHalf = deck.slice(0, cutPos);
+    var bottomHalf = deck.slice(cutPos);
+    
+    deck = bottomHalf.concat(topHalf);
+    
+    // Refresh your UI display to show the newly cut stack
+    renderDeck(); // Update this to match your specific UI refresh function name
+}
     function reverseDeck() { saveState(); deck.reverse(); logMove("Reverse Shuffle"); renderDeck(); }
     function randomShuffle() { saveState(); deck.sort(() => Math.random() - 0.5); logMove("Randomized"); renderDeck(); }
     function gilbrethShuffle() {
