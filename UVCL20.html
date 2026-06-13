@@ -133,7 +133,6 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="reverseTop()">Reverse Top 26</button>
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
-        <button onclick="randomShuffle()">Random Shuffle</button>
 <div class="cut-control-container" style="margin: 10px 0; display: inline-block;">
   <label for="cutNumber">Cut at:</label>
   
@@ -350,25 +349,7 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
     logMove("Reverse Top 26");
     renderDeck();
 }
-
-    function randomShuffle() {
-    // Loop backward through the deck array
-    // NOTE: If your array in UVCL20 is named something other than 'deck' (e.g., 'currentStack'), 
-    // change the word 'deck' in the four places below to match it perfectly.
-    for (var i = deck.length - 1; i > 0; i--) {
-        // Pick a random index from 0 to i
-        var j = Math.floor(Math.random() * (i + 1));
-        
-        // Swap elements deck[i] and deck[j]
-        var temp = deck[i];
-        deck[i] = deck[j];
-        deck[j] = temp;
-    }
-
-    // Refresh your UI display to show the newly randomized deck
-    renderDeck(); // Change this to match your specific UI update function name if needed
-}
-
+    
 function reverseBottom() {
     saveState();
     let top = deck.slice(0, 26);
