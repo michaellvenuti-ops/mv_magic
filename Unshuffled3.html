@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D Card Lab v3.0 - Ultimate Unshuffled Edition</title>
+    <title>3D Card Lab v3.1 - Solid Build</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         :root { 
@@ -14,7 +14,6 @@
         }
         body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; display: flex; height: 100vh; overflow: hidden; }
         
-        /* Sidebar layout styling matching your custom theme */
         #sidebar { 
             width: 380px; 
             background: var(--panel); 
@@ -29,10 +28,8 @@
         .grid-card { background: white; color: black; font-size: 0.55rem; text-align: center; font-weight: bold; padding: 4px 0; border-radius: 2px; }
         .grid-card.red { color: var(--accent); }
 
-        /* Drawing Pad Styling mimicking a clean white table edge */
-        #drawing-pad { background: white; border: 2px solid var(--gold); cursor: crosshair; width: 100%; height: 120px; image-rendering: pixelated; border-radius: 4px; }
+        #drawing-pad { background: white; border: 2px solid var(--gold); cursor: crosshair; width: 100%; height: 120px; image-rendering: pixelated; border-radius: 4px; display: block; }
         
-        /* 3D Viewport frame */
         #canvas-container { flex-grow: 1; position: relative; background: #050505; }
         
         button { background: #3a506b; color: white; border: 1px solid #5bc0be; padding: 10px; cursor: pointer; font-size: 0.75rem; font-weight: bold; border-radius: 4px; transition: 0.2s; }
@@ -68,75 +65,59 @@
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let scene, camera, renderer, deckGroup, cards = [];
     let deckData = []; 
-    let cardMaterials = []; 
-
-    // --- INITIALIZATION ---
-    function init() {
-        scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x050505);
-
-        camera = new THREE.PerspectiveCamera(40, (window.innerWidth - 380) / window.innerHeight, 0.1, 1000);
-        renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth - 380, window.innerHeight);
-        document.getElementById('canvas-container').appendChild(renderer.domElement);
-
-        deckGroup = new THREE.Group();
-        scene.add(deckGroup);
-
-        // Position camera to look directly at the front long edge of the card deck
-        camera.position.set(0, 2.5, 6.5);
-        camera.lookAt(0, -0.3, 0);
-
-        // Balanced lighting to simulate a studio magic table environment
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
-        scene.add(ambientLight);
-        
-        const dirLight = new THREE.DirectionalLight(0xffffff, 0.6);
-        dirLight.position.set(2, 5, 4);
-        scene.add(dirLight);
-
-        resetToNDO();
-        animate();
-        setupDrawing();
-
-        window.addEventListener('resize', onWindowResize);
-    }
-
-    // --- UVCL GRID INDEX UPDATER ---
-    function updateGrid() {
-        const grid = document.getElementById('uvcl-grid');
-        grid.innerHTML = '';
-        deckData.forEach(card => {
-            const div = document.createElement('div');
-            div.className = `grid-card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
-            div.innerText = card.replace('10', '0'); 
-            grid.appendChild(div);
-        });
-    }
-
-    // --- 2D SHARPIE DRAWING CANVAS ---
     let pad, ctx, isDrawing = false;
-    function setupDrawing() {
+
+    // --- MAIN INITIALIZATION (Ensures DOM elements exist) ---
+    function init() {
+        // 1. Setup 2D Drawing Canvas Elements Safely
         pad = document.getElementById('drawing-pad');
         ctx = pad.getContext('2d');
-        
         ctx.strokeStyle = "#000000";
-        ctx.lineWidth = 4;
+        ctx.lineWidth = 5;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
-
-        let drawing = false;
 
         pad.addEventListener('mousedown', startDraw);
         pad.addEventListener('mousemove', drawMove);
         window.addEventListener('mouseup', stopDraw);
+
+        // 2. Setup Three.js 3D Engine Elements Safely
+        const container = document.getElementById('canvas-container');
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050505);
+
+        camera = new THREE.PerspectiveCamera(40, container.clientWidth / container.clientHeight, 0.1, 1000);
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        deckGroup = new THREE.Group();
+        scene.add(deckGroup);
+
+        camera.position.set(0, 2.5, 7.5);
+        camera.lookAt(0, -0.2, 0);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
+        scene.add(ambientLight);
+        
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.4);
+        dirLight.position.set(3, 6, 4);
+        scene.add(dirLight);
+
+        // 3. Populate Deck and Layout Grid
+        resetToNDO();
+        animate();
+
+        window.addEventListener('resize', onWindowResize);
     }
 
+    // --- SHARPIE ENGINE MOUSE TRACKING ---
     function startDraw(e) {
         isDrawing = true;
         ctx.beginPath();
         const rect = pad.getBoundingClientRect();
         ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+        drawMove(e);
     }
 
     function drawMove(e) {
@@ -150,37 +131,36 @@
         isDrawing = false;
     }
 
-    // --- CRITICAL FIX: MAP PROJECTIONS UNIFORMLY ONTO EDGES ---
+    // --- EDGE PROJECTION MATRIX ---
     function applyWriting() {
         const totalCards = 52;
         const stripHeight = pad.height / totalCards;
 
         cards.forEach((mesh, index) => {
             const sliceCanvas = document.createElement('canvas');
-            sliceCanvas.width = 512;  // Power of 2 width ensures crystal-clear rendering in WebGL
-            sliceCanvas.height = 16;
-            const sliceCtx = sliceCanvas.width ? sliceCanvas.getContext('2d') : null;
+            sliceCanvas.width = 512;  
+            sliceCanvas.height = 32;
+            const sliceCtx = sliceCanvas.getContext('2d');
 
-            // Fill background white to match a pristine premium card edge look
             sliceCtx.fillStyle = "#ffffff";
             sliceCtx.fillRect(0, 0, sliceCanvas.width, sliceCanvas.height);
 
-            // Extract the perfect proportional pixel slice corresponding to this card's physical position
             sliceCtx.drawImage(
                 pad,
-                0, index * stripHeight, pad.width, stripHeight, // Source slice bounds
-                0, 0, sliceCanvas.width, sliceCanvas.height    // Target map bounds
+                0, index * stripHeight, pad.width, stripHeight, 
+                0, 0, sliceCanvas.width, sliceCanvas.height    
             );
 
             const dynamicTex = new THREE.CanvasTexture(sliceCanvas);
             dynamicTex.minFilter = THREE.LinearFilter;
 
-            // Material Index 0 corresponds explicitly to the front long edge of BoxGeometry
-            mesh.material[0].map = dynamicTex;
-            mesh.material[0].needsUpdate = true;
+            if (mesh.material[0]) {
+                mesh.material[0].map = dynamicTex;
+                mesh.material[0].needsUpdate = true;
+            }
         });
 
-        document.getElementById('status').innerText = "Edge markings updated successfully.";
+        document.getElementById('status').innerText = "Edge markings applied to 3D meshes.";
     }
 
     function clearCanvas() { 
@@ -188,7 +168,7 @@
         applyWriting(); 
     }
 
-    // --- DYNAMIC CARD GENERATOR (BICYCLE LAYOUT AT DIMENSION) ---
+    // --- CORE STACK GENERATOR ---
     function resetToNDO() {
         deckData = [];
         ['H','C'].forEach(s => values.forEach(v => deckData.push(v+s)));
@@ -197,55 +177,47 @@
         while(deckGroup.children.length > 0) deckGroup.remove(deckGroup.children[0]);
         cards = [];
 
-        // Generates a traditional deep-crimson canvas texture for a premium card back appearance
+        // Dynamic Ornate Red Card Back Design
         const backCanvas = document.createElement('canvas');
         backCanvas.width = 256; backCanvas.height = 356;
         const bCtx = backCanvas.getContext('2d');
         bCtx.fillStyle = "#b11226"; bCtx.fillRect(0, 0, 256, 356);
         bCtx.strokeStyle = "#ffffff"; bCtx.lineWidth = 14; bCtx.strokeRect(0, 0, 256, 356);
-        bCtx.strokeStyle = "rgba(255,255,255,0.15)"; bCtx.lineWidth = 4;
-        for(let j=20; j<330; j+=15) { bCtx.strokeRect(j, j, 30, 30); } // Ornate placeholder back mesh pattern
+        bCtx.strokeStyle = "rgba(255,255,255,0.12)"; bCtx.lineWidth = 4;
+        for(let j=20; j<330; j+=15) { bCtx.strokeRect(j, j, 35, 35); }
         const backTex = new THREE.CanvasTexture(backCanvas);
 
         deckData.forEach((val, i) => {
-            // True aspect ratio proportions for a standard poker deck sizing
-            const geo = new THREE.BoxGeometry(3.0, 0.035, 4.2); 
+            const geo = new THREE.BoxGeometry(3.3, 0.04, 4.5); 
             
             const mats = [
-                new THREE.MeshStandardMaterial({color: 0xffffff}), // 0: Front Long Edge (Target side mapping)
+                new THREE.MeshStandardMaterial({color: 0xffffff}), // 0: Front Long Edge
                 new THREE.MeshStandardMaterial({color: 0xffffff}), // 1: Back Long Edge
                 new THREE.MeshStandardMaterial({color: 0xffffff}), // 2: Left Short Edge
                 new THREE.MeshStandardMaterial({color: 0xffffff}), // 3: Right Short Edge
                 new THREE.MeshStandardMaterial({color: 0xfafafa}), // 4: Card Face
-                new THREE.MeshStandardMaterial({map: backTex})     // 5: Card Back Layout
+                new THREE.MeshStandardMaterial({map: backTex})     // 5: Card Back
             ];
             
             const mesh = new THREE.Mesh(geo, mats);
-            // Stack up sequentially cleanly from base layers
-            mesh.position.set(0, (52 - i) * 0.04 - 1.0, 0);
-            mesh.userData = { originalIndex: i };
+            mesh.position.set(0, (52 - i) * 0.045 - 1.1, 0);
             
             cards.push(mesh);
             deckGroup.add(mesh);
         });
 
-        // Ensure current canvas marks apply immediately if present
-        applyWriting();
+        if(ctx) clearCanvas();
         updateGrid();
         document.getElementById('status').innerText = "Deck reset to NDO.";
     }
 
-    // --- ACCURATE INTERLEAVE FARO ANIMATION MATRIX ---
+    // --- PERFECT OUT/IN FARO MATRICES ---
     async function animateFaro(type) {
         document.getElementById('status').innerText = `Running Faro ${type}...`;
         
-        // Step 1: Visual animation pull out to split blocks
-        cards.forEach((m, i) => { 
-            m.position.x = (i < 26) ? -2.5 : 2.5; 
-        });
+        cards.forEach((m, i) => { m.position.x = (i < 26) ? -2.5 : 2.5; });
         await new Promise(r => setTimeout(r, 450));
 
-        // Step 2: Perfect structural indices array interleaving
         let topH = deckData.slice(0, 26), botH = deckData.slice(26, 52);
         let topM = cards.slice(0, 26), botM = cards.slice(26, 52);
         
@@ -260,14 +232,24 @@
             }
         }
 
-        // Step 3: Animate transition back together in place seamlessly
         cards.forEach((m, i) => {
             m.position.x = 0;
-            m.position.y = (52 - i) * 0.04 - 1.0;
+            m.position.y = (52 - i) * 0.045 - 1.1;
         });
 
         updateGrid();
         document.getElementById('status').innerText = `Faro ${type} Complete.`;
+    }
+
+    function updateGrid() {
+        const grid = document.getElementById('uvcl-grid');
+        grid.innerHTML = '';
+        deckData.forEach(card => {
+            const div = document.createElement('div');
+            div.className = `grid-card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            div.innerText = card.replace('10', '0'); 
+            grid.appendChild(div);
+        });
     }
 
     function animate() {
@@ -276,17 +258,18 @@
     }
 
     function onWindowResize() {
-        camera.aspect = (window.innerWidth - 380) / window.innerHeight;
+        const container = document.getElementById('canvas-container');
+        camera.aspect = container.clientWidth / container.clientHeight;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth - 380, window.innerHeight);
+        renderer.setSize(container.clientWidth, container.clientHeight);
     }
 
-    // --- DRAG TO VIEW ORBIT CAMERA RIG ---
+    // --- 3D VIEWPORT ROTATION DRAG CONTROLS ---
     let isDragging = false;
     let previousMousePosition = { x: 0, y: 0 };
 
     document.addEventListener('mousedown', (e) => {
-        if(e.clientX > 380) { // Keep dragging limited strictly to viewport context frames
+        if(e.clientX > 380) { 
             isDragging = true;
             previousMousePosition = { x: e.clientX, y: e.clientY };
         }
@@ -306,6 +289,9 @@
         
         previousMousePosition = { x: e.clientX, y: e.clientY };
     });
+
+    // Fire initialization ONLY when DOM structures are ready
+    window.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
 </html>
