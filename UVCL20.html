@@ -86,7 +86,13 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
             <button onclick="applyPreset('')">Clear</button>
         </div>
     </div>
-
+<div class="sidebar-section" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ccc;">
+  <label for="cutNumber" style="display: block; margin-bottom: 5px; font-weight: bold;">Cut Deck At:</label>
+  
+  <input type="number" id="cutNumber" min="1" max="51" value="26" style="width: 60px; padding: 5px; text-align: center;">
+  
+  <button onclick="executeBoxCut()" style="padding: 5px 10px; margin-left: 5px;">Cut</button>
+</div>
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">POKER SIMS</span>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
