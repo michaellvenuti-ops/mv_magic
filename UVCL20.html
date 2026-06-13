@@ -134,12 +134,12 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
         <button onclick="randomShuffle()">Random Shuffle</button>
-<div class="cut-control-container" style="margin: 10px 0;">
-  <label for="cutSlider">Cut Position: <span id="sliderValue">26</span></label><br>
+<div class="cut-control-container" style="margin: 10px 0; display: inline-block;">
+  <label for="cutNumber">Cut at:</label>
   
-  <input type="range" id="cutSlider" min="1" max="51" value="26" oninput="updateSliderLabel(this.value)">
+  <input type="number" id="cutNumber" min="1" max="51" value="26" style="width: 50px; text-align: center;">
   
-  <button onclick="executeSliderCut()">Cut Deck</button>
+  <button onclick="executeBoxCut()">Cut Deck</button>
 </div>
 
 
@@ -294,25 +294,25 @@ Test the Deal: Click 6-Player Poker Test. The sidebar will instantly tell you wh
 
     function cutDeck() { saveState(); let mid = deck.splice(0, 26); deck.push(...mid); logMove("Cut Deck (26)"); renderDeck(); }
     
-    // 1. This updates the "26" label text in real-time as the user drags the slider
-function updateSliderLabel(val) {
-    document.getElementById('sliderValue').innerText = val;
-}
-
-// 2. This reads the slider value and executes the cut math
-function executeSliderCut() {
-    // Get the current number from the slider
-    var cutPos = parseInt(document.getElementById('cutSlider').value);
+    function executeBoxCut() {
+    // 1. Grab the number directly from the new input box
+    var cutPos = parseInt(document.getElementById('cutNumber').value);
     
-    // Look at how your UVCL20 array is named (e.g., 'deck', 'currentStack', etc.)
-    // Slice the top portion and bottom portion, then concatenate them reversed
+    // 2. Add a safety check to make sure the input stays within deck boundaries
+    if (isNaN(cutPos) || cutPos < 1 || cutPos > 51) {
+        alert("Please enter a valid cut position between 1 and 51.");
+        return;
+    }
+    
+    // 3. Slice and swap the deck halves
+    // (Ensure 'deck' matches whatever your main array variable is named in UVCL20)
     var topHalf = deck.slice(0, cutPos);
     var bottomHalf = deck.slice(cutPos);
     
     deck = bottomHalf.concat(topHalf);
     
-    // Refresh your UI display to show the newly cut stack
-    renderDeck(); // Update this to match your specific UI refresh function name
+    // 4. Refresh your display
+    renderDeck(); // Change this to match your specific UI refresh function name if needed
 }
     function reverseDeck() { saveState(); deck.reverse(); logMove("Reverse Shuffle"); renderDeck(); }
     function randomShuffle() { saveState(); deck.sort(() => Math.random() - 0.5); logMove("Randomized"); renderDeck(); }
