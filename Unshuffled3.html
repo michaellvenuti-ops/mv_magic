@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Card Lab v2.0 - Unshuffled Edition</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        :root { --bg: #050505; --panel: #1a1a1a; --gold: #ffb703; --accent: #d90429; }
+        body { margin: 0; background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Sidebar & UVCL Grid */
+        #sidebar { width: 380px; background: var(--panel); padding: 15px; border-right: 2px solid #333; display: flex; flex-direction: column; overflow-y: auto; box-sizing: border-box; }
+        .grid-container { display: grid; grid-template-columns: repeat(13, 1fr); gap: 2px; margin-bottom: 15px; background: #000; padding: 5px; border-radius: 4px; }
+        .grid-card { background: white; color: black; font-size: 0.5rem; text-align: center; font-weight: bold; padding: 4px 0; border-radius: 2px; }
+        .grid-card.red { color: var(--accent); }
+
+        /* Drawing Pad */
+        #drawing-pad { background: white; border: 2px solid var(--gold); cursor: crosshair; width: 100%; height: 120px; image-rendering: pixelated; }
+        
+        /* 3D Viewport */
+        #canvas-container { flex-grow: 1; position: relative; }
+        
+        button { background: #333; color: white; border: 1px solid #555; padding: 8px; cursor: pointer; font-size: 0.7rem; font-weight: bold; transition: 0.2s; }
+        button:hover { background: var(--accent); }
+        .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h3 style="color:var(--gold); margin-top:0;">UVCL POSITIONS</h3>
+    <div id="uvcl-grid" class="grid-container"></div>
+
+    <h3 style="color:var(--gold);">SIDE MARKING (SHARPIE)</h3>
+    <canvas id="drawing-pad" width="400" height="100"></canvas>
+    <div class="controls">
+        <button onclick="clearCanvas()">Clear Pad</button>
+        <button onclick="applyWriting()" style="background:var(--gold); color:black;">Apply to Sides</button>
+    </div>
+
+    <h3 style="color:var(--gold);">SHUFFLE CONTROLS</h3>
+    <div class="controls">
+        <button onclick="animateFaro('OUT')">Faro OUT</button>
+        <button onclick="animateFaro('IN')">Faro IN</button>
+        <button onclick="resetToNDO()" style="grid-column: span 2;">Reset to NDO</button>
+    </div>
+    <div id="status" style="margin-top:10px; font-family:monospace; color:#00f5d4; font-size:0.8rem;">Ready...</div>
+</div>
+
+<div id="canvas-container"></div>
+
+<script>
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let scene, camera, renderer, deckGroup, cards = [];
+    let deckData = []; 
+
+    // --- INITIALIZATION ---
+    function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(45, (window.innerWidth - 380) / window.innerHeight, 0.1, 1000);
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth - 380, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        deckGroup = new THREE.Group();
+        scene.add(deckGroup);
+
+        camera.position.set(0, 4, 7);
+        camera.lookAt(0, 0, 0);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.9));
+        const pLight = new THREE.PointLight(0xffffff, 0.5);
+        pLight.position.set(5, 5, 5);
+        scene.add(pLight);
+
+        resetToNDO();
+        animate();
+        setupDrawing();
+
+        window.addEventListener('resize', onWindowResize);
+    }
+
+    // --- UVCL GRID UPDATE ---
+    function updateGrid() {
+        const grid = document.getElementById('uvcl-grid');
+        grid.innerHTML = '';
+        deckData.forEach(card => {
+            const div = document.createElement('div');
+            div.className = `grid-card ${card.includes('H') || card.includes('D') ? 'red' : ''}`;
+            div.innerText = card.replace('10', '0'); 
+            grid.appendChild(div);
+        });
+    }
+
+    // --- SHARPIE LOGIC ---
+    let pad, ctx, isDrawing = false;
+    function setupDrawing() {
+        pad = document.getElementById('drawing-pad');
+        ctx = pad.getContext('2d');
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 3;
+        ctx.lineCap = "round";
+
+        pad.onmousedown = (e) => {
+            isDrawing = true;
+            draw(e);
+        };
+        window.onmouseup = () => isDrawing = false;
+        pad.onmousemove = (e) => draw(e);
+    }
+
+    function draw(e) {
+        if (!isDrawing) return;
+        const rect = pad.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
+    function applyWriting() {
+        const stripHeight = pad.height / 52;
+
+        // Iterate through physical mesh spaces to project lines cleanly
+        cards.forEach((mesh, i) => {
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = pad.width;
+            tempCanvas.height = Math.max(2, Math.ceil(stripHeight)); 
+            const tempCtx = tempCanvas.getContext('2d');
+            
+            // Use standard drawImage to slice the main canvas buffer
+            tempCtx.drawImage(
+                pad, 
+                0, i * stripHeight, pad.width, stripHeight, // Source bounding box
+                0, 0, tempCanvas.width, tempCanvas.height   // Destination coordinates
+            );
+            
+            const tex = new THREE.CanvasTexture(tempCanvas);
+            tex.minFilter = THREE.LinearFilter;
+            
+            // Apply texture securely to the active front edge profile of the target box mesh
+            if (mesh.material[0]) {
+                mesh.material[0].map = tex; 
+                mesh.material[0].needsUpdate = true;
+            }
+        });
+        document.getElementById('status').innerText = "Marks projected to 3D deck edges.";
+    }
+
+    function clearCanvas() { 
+        ctx.clearRect(0, 0, pad.width, pad.height); 
+        applyWriting(); 
+    }
+
+    // --- CORE DECK LOGIC ---
+    function resetToNDO() {
+        deckData = [];
+        ['H','C'].forEach(s => values.forEach(v => deckData.push(v+s)));
+        ['D','S'].forEach(s => [...values].reverse().forEach(v => deckData.push(v+s)));
+        
+        while(deckGroup.children.length > 0) deckGroup.remove(deckGroup.children[0]);
+        cards = [];
+
+        const cardBack = new THREE.MeshStandardMaterial({ color: 0xb11226 }); 
+
+        deckData.forEach((val, i) => {
+            const geo = new THREE.BoxGeometry(3.5, 0.04, 2.5); // Card dimensions balanced
+            const mats = [
+                new THREE.MeshStandardMaterial({color: 0xffffff}), // Long Side (Visible front edge)
+                new THREE.MeshStandardMaterial({color: 0xffffff}), // Opposite Long Side
+                new THREE.MeshStandardMaterial({color: 0xffffff}), // Top Edge
+                new THREE.MeshStandardMaterial({color: 0xffffff}), // Bottom Edge
+                new THREE.MeshStandardMaterial({color: 0xf5f5f5}), // Face
+                cardBack.clone()                                   // Back
+            ];
+            
+            const mesh = new THREE.Mesh(geo, mats);
+            // Stack from bottom up smoothly
+            mesh.position.y = (52 - i) * 0.045 - 1.1;
+            mesh.userData = { originalID: i };
+            cards.push(mesh);
+            deckGroup.add(mesh);
+        });
+        updateGrid();
+    }
+
+    async function animateFaro(type) {
+        document.getElementById('status').innerText = "Processing Faro...";
+        
+        // Visual Split Left/Right
+        cards.forEach((m, i) => { 
+            m.position.x = (i < 26) ? -2.2 : 2.2; 
+        });
+        await new Promise(r => setTimeout(r, 400));
+
+        // Logical Array Calculations
+        let topH = deckData.slice(0, 26), botH = deckData.slice(26, 52);
+        let topM = cards.slice(0, 26), botM = cards.slice(26, 52);
+        
+        deckData = []; cards = [];
+        for(let i=0; i<26; i++) {
+            if(type === 'OUT') {
+                deckData.push(topH[i]); deckData.push(botH[i]);
+                cards.push(topM[i]); cards.push(botM[i]);
+            } else {
+                deckData.push(botH[i]); deckData.push(topH[i]);
+                cards.push(botM[i]); cards.push(topM[i]);
+            }
+        }
+
+        // Merge Back and Re-stack nicely
+        cards.forEach((m, i) => {
+            m.position.x = 0;
+            m.position.y = (52 - i) * 0.045 - 1.1;
+        });
+
+        updateGrid();
+        document.getElementById('status').innerText = `Faro ${type} Done`;
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+
+    function onWindowResize() {
+        camera.aspect = (window.innerWidth - 380) / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth - 380, window.innerHeight);
+    }
+
+    // Camera Orbit Rotation Control
+    let isClick = false;
+    let prevMouseX = 0, prevMouseY = 0;
+
+    document.addEventListener('mousedown', (e) => {
+        if(e.clientX > 380) { // Only rotate when dragging inside the canvas frame
+            isClick = true;
+            prevMouseX = e.clientX;
+            prevMouseY = e.clientY;
+        }
+    });
+    
+    document.addEventListener('mouseup', () => isClick = false);
+    document.addEventListener('mousemove', (e) => {
+        if(isClick) {
+            const deltaX = e.clientX - prevMouseX;
+            const deltaY = e.clientY - prevMouseY;
+            
+            deckGroup.rotation.y += deltaX * 0.01;
+            deckGroup.rotation.x += deltaY * 0.01;
+            
+            prevMouseX = e.clientX;
+            prevMouseY = e.clientY;
+        }
+    });
+
+    window.onload = init;
+</script>
+</body>
+</html>
