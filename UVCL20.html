@@ -408,42 +408,8 @@ function reverseBottom() {
     }
 
    function showHelp() {
-    alert(`==================================================
-VIRTUAL CARD LAB (V20) - USER GUIDE
-==================================================
-
-Welcome to the Virtual Card Lab! This environment is designed 
-to let you test, track, and analyze card stacks, shuffles, 
-and sequencing in real time. 
-
---------------------------------------------------
-1. DECK MANIPULATION & SHUFFLES
---------------------------------------------------
-- Faro Out / In Shuffles:
-  Perfectly weaves the two halves of the deck together. 
-  An 'Out' shuffle keeps the original top card on top. 
-  An 'In' shuffle weaves the top card into the second position.
-
-- Cut Deck (Sidebar):
-  Enter any number from 1 to 51 and click Cut to shift 
-  that exact number of cards from top to bottom.
-
-- Random Shuffle:
-  Uses Fisher-Yates algorithm to instantly randomize the deck.
-
---------------------------------------------------
-2. TRACKING & POSITION SEARCH
---------------------------------------------------
-- Search Track Box (Sidebar):
-  Type a card (e.g. AS, 4H) to highlight and track it 
-  through every shuffle and cut.
-
---------------------------------------------------
-QUICK TIPS:
---------------------------------------------------
-- Use the sidebar Cut tool to simulate a spectator cut.
-- Run consecutive Out-Faros to observe mathematical cycles.`);
-}
+    document.getElementById('help-modal').style.display = 'block';
+    }
 
 function toggleCoach() {
     coachActive = !coachActive;
@@ -564,5 +530,93 @@ function calcToNDO() {
 
     window.onload = () => resetTo('NDO');
 </script>
+
+<!-- HELP MODAL -->
+<div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
+    <div style="max-width:700px; margin:40px auto; background:var(--panel); border:1px solid var(--gold); border-radius:8px; padding:30px; color:var(--text); font-size:0.75rem; line-height:1.6;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+            <h2 style="color:var(--gold); margin:0;">Virtual Card Lab — User Guide</h2>
+            <button onclick="document.getElementById('help-modal').style.display='none'" style="font-size:1rem; padding:5px 12px;">✕</button>
+        </div>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS & SHUFFLES</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro OUT</td><td style="padding:6px 8px;">Perfect weave — top card stays on top (position 1). The gold standard for stack work. 8 consecutive Out-Faros returns any deck to its original order.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro IN</td><td style="padding:6px 8px;">Perfect weave — top card moves to position 2. Used for specific stack entry procedures.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Shuffle</td><td style="padding:6px 8px;">Reverses the entire 52-card deck end to end. Position 1 becomes 52, position 52 becomes 1.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Gilbreth Shuffle</td><td style="padding:6px 8px;">Reverses the top 26 cards then randomly interleaves them with the bottom 26. Looks like a real riffle shuffle while partially controlling the bottom half.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut Deck (26)</td><td style="padding:6px 8px;">Standard cut — moves the top 26 cards to the bottom. Equivalent to a spectator cutting the deck at center.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Randomize</td><td style="padding:6px 8px;">Uses the Fisher-Yates algorithm to fully randomize the deck. Use to simulate a real shuffled deck or test stack recovery.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Left</td><td style="padding:6px 8px;">Moves the top card to the bottom. One position shift left. Useful for fine-tuning stack position after a cut.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Right</td><td style="padding:6px 8px;">Moves the bottom card to the top. One position shift right.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Top 26</td><td style="padding:6px 8px;">Reverses only the top 26 cards. Bottom 26 remain untouched. Used in the Spanish NDO → Mnemonica faro procedure (Step 2).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Bottom 26</td><td style="padding:6px 8px;">Reverses only the bottom 26 cards. Top 26 remain untouched.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Unequal Faro Top 18</td><td style="padding:6px 8px;">Cuts the top 18 cards and out-faros them into the top of the remaining 34. Used in the Spanish NDO → Mnemonica faro procedure (Step 3). The remaining 16 bottom cards sit untouched beneath.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut at N</td><td style="padding:6px 8px;">Enter any number 1–51 and click Cut Deck to move exactly that many cards from top to bottom. Simulates a spectator cutting at any position.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FALSE WORK (STACK PROTECTION)</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Zarrow Shuffle</td><td style="padding:6px 8px;">Swaps the top 2 cards with the bottom 2 cards. Cards 3–50 in the middle remain completely undisturbed. Simulates the Zarrow false shuffle which appears to mix the deck while preserving the core stack.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Blind Faro</td><td style="padding:6px 8px;">Moves the top 2 cards to positions 25–26 (center). Simulates a false faro that appears to weave the deck but secretly relocates key cards to the middle.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK PRESETS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order (NDO)</td><td style="padding:6px 8px;">US Bicycle factory order: A→K Hearts, A→K Clubs, K→A Diamonds, K→A Spades.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">Spanish factory order: A→K in all four suits, CHaSeD suit order. Starting point for the Mnemonica faro entry procedure.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">European/Cartamundi factory order: K→A in all four suits. Common in Tally-Ho and European Bicycle decks.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Mnemonica</td><td style="padding:6px 8px;">Juan Tamariz's world-famous memorized stack. Appears completely random. The most widely used memdeck with the largest library of published effects.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aronson</td><td style="padding:6px 8px;">Simon Aronson's memorized stack. Engineered with built-in poker deals, spelling effects, and routines. Rival to Mnemonica in the English-speaking world.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Nikola</td><td style="padding:6px 8px;">Classic memorized stack by Louis Nikola. One of the earliest published memdeck systems.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Eight Kings</td><td style="padding:6px 8px;">Classic mnemonic stack using the phrase "Eight Kings Threatened To Save Nine Fair Ladies For One" to remember values. Suit rotates CHaSeD. One of the oldest known stacks.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Boris Wild</td><td style="padding:6px 8px;">Formula-based memorized deck by Boris Wild. Easiest memdeck to learn — values increment by 1 each group of 4, suits follow a fixed offset pattern.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Memorandum</td><td style="padding:6px 8px;">Woody Aragon's memorized stack. Published in his book of the same name.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Osterlind</td><td style="padding:6px 8px;">Richard Osterlind's Breakthrough Card System. A mathematical cyclical stack — values and suits follow a formula rather than rote memorization. Preferred by mentalists.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Classic Stebbins</td><td style="padding:6px 8px;">Si Stebbins system — values increase by 3 each card, suits rotate CHaSeD. Entirely formula-based, no memorization required. Oldest published mathematical stack.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My Stebbins</td><td style="padding:6px 8px;">Personal Stebbins variant starting at a different offset value.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My CHaSeD</td><td style="padding:6px 8px;">Your personal CHaSeD-ordered stack. Values grouped in sets of 4 by suit (C→H→S→D). Returns to original order in just 2 Out-Faros.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle</td><td style="padding:6px 8px;">Joshua Jay's modern memorized stack published in 2024. Stay-stack with mirror properties between top and bottom halves.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle NDO</td><td style="padding:6px 8px;">A custom new deck order variant used as a starting point for Particle stack procedures.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SEARCH & TRACK</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Search Box</td><td style="padding:6px 8px;">Type card names separated by commas (e.g. AS, 4H, KC) to highlight them in gold across the deck display. Updates live as you type.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aces</td><td style="padding:6px 8px;">Instantly tracks all four Aces across the deck.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Kings</td><td style="padding:6px 8px;">Instantly tracks all four Kings across the deck.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Royal ♠</td><td style="padding:6px 8px;">Tracks 10S, JS, QS, KS, AS — the Spade royal flush cards.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Clear</td><td style="padding:6px 8px;">Clears all tracking highlights.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK COACH</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Toggle Coach</td><td style="padding:6px 8px;">Shows the stack position number (1–52) as a tooltip when hovering over any card. Useful for drilling position recall during memorized deck practice.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Verify Stack</td><td style="padding:6px 8px;">Checks your current deck against all known stacks. Reports an exact match, a cut match (same stack cut to a different start point), or duplicate cards. Covers: Mnemonica, Aronson, Nikola, Eight Kings, Boris Wild, Memorandum, Particle, Osterlind, US NDO, Spanish NDO, French NDO, Particle NDO.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cycles to NDO</td><td style="padding:6px 8px;">Simulates up to 8 consecutive Out-Faros from your current deck state and reports how many faros are needed to reach any known stack order. Also detects if your deck cycles back to its own starting order (e.g. My CHaSeD returns in 2).</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">POKER SIMS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">4/5/6P Draw</td><td style="padding:6px 8px;">Deals 5-card draw hands to 4, 5, or 6 players from the current deck order. Dealer receives the last hand.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">4/5/6P Hold'em</td><td style="padding:6px 8px;">Deals 2-card hole hands to 4, 5, or 6 players plus 5 community cards (with burn cards shown at reduced opacity).</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Bottom Deal</td><td style="padding:6px 8px;">When checked, the dealer's final card is dealt from the bottom of the deck (position 52) instead of in sequence. Simulates a bottom deal move.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SESSION</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">↩ Undo</td><td style="padding:6px 8px;">Steps back one move. Stores up to 50 states.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Export</td><td style="padding:6px 8px;">Copies the current deck as a JSON array to your clipboard via a prompt box. Paste anywhere to save or share.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Import</td><td style="padding:6px 8px;">Paste a previously exported JSON array to restore a saved deck state.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Save Session</td><td style="padding:6px 8px;">Saves the current deck to browser local storage. Persists between page reloads on the same browser.</td></tr>
+        </table>
+
+        <div style="text-align:center; margin-top:20px;">
+            <button onclick="document.getElementById('help-modal').style.display='none'" style="padding:8px 30px; font-size:0.75rem; border-color:var(--gold); color:var(--gold);">CLOSE</button>
+        </div>
+    </div>
+</div>
+    
+    
 </body>
 </html>
