@@ -414,7 +414,54 @@ function reverseBottom() {
     }
 
     function showHelp() {
-        alert("Virtual Card Lab Help:\n- Click cards to swap positions manually.\n- Zarrow: Swaps first 2 with last 2, keeping 3–25 in place.\n- Blind Faro: Moves first 2 to the middle, keeping 3–25 in place.\n- Tracking: Enter card names in the Search box to highlight them.");
+        alert("==================================================
+        VIRTUAL CARD LAB (V20) - USER GUIDE
+==================================================
+
+Welcome to the Virtual Card Lab! This environment is designed 
+to let you test, track, and analyze card stacks, shuffles, 
+and sequencing in real time. 
+
+--------------------------------------------------
+1. DECK MANIPULATION & SHUFFLES
+--------------------------------------------------
+• Faro Out / In Shuffles:
+  Perfectly weaves the two halves of the deck together. 
+  An 'Out' shuffle keeps the original top card on top. 
+  An 'In' shuffle weaves the top card into the second position.
+
+• Cut Deck (Sidebar):
+  Located cleanly in the sidebar under the search tool. Enter 
+  any number from 1 to 51 into the input box and click "Cut" 
+  to instantly shift that exact number of cards from the top 
+  of the pack to the bottom.
+
+• Random Shuffle:
+  Uses the mathematically unbiased Fisher-Yates algorithm to 
+  instantly randomize the entire deck array, perfect for 
+  simulating real-world chaos or testing stack recovery.
+
+• Reset Deck:
+  Instantly restores the deck to its baseline starting 
+  configuration (e.g., New Deck Order or your default 
+  memorized stack layout).
+
+--------------------------------------------------
+2. TRACKING & POSITION SEARCH
+--------------------------------------------------
+• Search Track Box (Sidebar):
+  Type a specific card value or look up a position index to 
+  dynamically isolate and track where your key target cards 
+  travel after every single cut or shuffle action.
+
+--------------------------------------------------
+QUICK TIPS FOR STACK ANALYSIS:
+--------------------------------------------------
+- Use the sidebar Cut tool to simulate a spectator cutting the 
+  cards before testing your stack routines.
+- Run consecutive Out-Faros to observe mathematical periodicities 
+  and check if your favorite custom configurations return to 
+  their original order as expected.");
     }
 
 function toggleCoach() {
