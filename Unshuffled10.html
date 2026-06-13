@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Card Lab v11.0 - Interactive 3D Shuffling & Full Faces</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        :root { 
+            --bg: #0b132b; 
+            --panel: #1c2541; 
+            --gold: #ffb703; 
+            --accent: #e63946; 
+            --text: #f1faee;
+            --card-black: #2b2d42;
+        }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; display: flex; height: 100vh; overflow: hidden; }
+        
+        #sidebar { 
+            width: 440px; 
+            background: var(--panel); 
+            padding: 15px; 
+            border-right: 3px solid #3a506b; 
+            display: flex; 
+            flex-direction: column; 
+            overflow-y: auto; 
+            box-sizing: border-box; 
+        }
+
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 4px; 
+            margin-bottom: 15px; 
+            background: #0b132b; 
+            padding: 8px; 
+            border-radius: 6px; 
+            border: 1px solid #3a506b;
+        }
+        .grid-card { 
+            background: #ffffff; 
+            color: var(--card-black); 
+            font-size: 0.75rem; 
+            text-align: center; 
+            font-weight: 700; 
+            padding: 4px 0; 
+            border-radius: 4px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1px;
+        }
+        .grid-card.red { color: var(--accent); }
+
+        .pad-group { margin-bottom: 12px; background: rgba(0,0,0,0.15); padding: 8px; border-radius: 6px; border: 1px solid #2a3a5c; }
+        .pad-label { font-size: 0.75rem; font-weight: bold; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;}
+        
+        .input-row { display: flex; gap: 6px; margin-bottom: 6px; }
+        .text-input { flex-grow: 1; background: #0b132b; border: 1px solid #5bc0be; color: white; padding: 6px; font-size: 0.8rem; border-radius: 4px; }
+        .color-input { width: 35px; height: 31px; border: 1px solid #5bc0be; background: none; cursor: pointer; border-radius: 4px; padding: 0; }
+
+        .sharpie-pad { 
+            background: white; 
+            border: 1px solid #3a506b; 
+            width: 100%; 
+            height: 65px; 
+            border-radius: 4px; 
+            display: block; 
+        }
+        
+        #canvas-container { flex-grow: 1; position: relative; background: #050505; }
+        button { background: #3a506b; color: white; border: 1px solid #5bc0be; padding: 8px; cursor: pointer; font-size: 0.75rem; font-weight: bold; border-radius: 4px; transition: 0.2s; text-align: center; }
+        button:hover { background: var(--accent); color: white; }
+        .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; margin-bottom: 15px; }
+        
+        .hint-text { font-size: 0.75rem; color: #5bc0be; font-style: italic; margin-bottom: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h3 style="color:var(--gold); margin-top:0; font-size:1rem; letter-spacing: 1px;">UVCL STACK POSITIONS</h3>
+    <div id="uvcl-grid" class="grid-container"></div>
+
+    <h3 style="color:var(--gold); margin-top: 5px; font-size:1rem; letter-spacing: 1px;">EDGE MARKING LAB</h3>
+    
+    <div class="pad-group">
+        <div class="pad-label">Left Short Edge</div>
+        <div class="input-row">
+            <input type="text" id="input-left" class="text-input" value="UNSHUFFLED" oninput="handleTextInput('left')">
+            <input type="color" id="color-left" class="color-input" value="#000000" onchange="handleTextInput('left')">
+        </div>
+        <canvas id="pad-left" class="sharpie-pad" width="400" height="120"></canvas>
+    </div>
+
+    <div class="pad-group">
+        <div class="pad-label">Right Short Edge</div>
+        <div class="input-row">
+            <input type="text" id="input-right" class="text-input" value="MV MAGIC" oninput="handleTextInput('right')">
+            <input type="color" id="color-right" class="color-input" value="#000000" onchange="handleTextInput('right')">
+        </div>
+        <canvas id="pad-right" class="sharpie-pad" width="400" height="120"></canvas>
+    </div>
+
+    <div class="pad-group">
+        <div class="pad-label">Front Long Edge</div>
+        <div class="input-row">
+            <input type="text" id="input-front" class="text-input" value="" oninput="handleTextInput('front')">
+            <input type="color" id="color-front" class="color-input" value="#000000" onchange="handleTextInput('front')">
+        </div>
+        <canvas id="pad-front" class="sharpie-pad" width="600" height="120"></canvas>
+    </div>
+
+    <div class="pad-group">
+        <div class="pad-label">Back Long Edge</div>
+        <div class="input-row">
+            <input type="text" id="input-back" class="text-input" value="" oninput="handleTextInput('back')">
+            <input type="color" id="color-back" class="color-input" value="#000000" onchange="handleTextInput('back')">
+        </div>
+        <canvas id="pad-back" class="sharpie-pad" width="600" height="120"></canvas>
+    </div>
+
+    <div class="controls">
+        <button onclick="clearAllCanvases()">Clear All Pads</button>
+        <button onclick="applyWriting()" style="background:var(--gold); color:#0b132b;">Apply to All Sides</button>
+    </div>
+
+    <h3 style="color:var(--gold); margin-top: 5px; font-size:1rem;">FARO SHUFFLE CONTROLS</h3>
+    <div class="hint-text">💡 Tip: You can also click directly on the deck to shuffle!</div>
+    <div class="controls">
+        <button onclick="animateFaro('OUT')">Faro OUT Shuffle</button>
+        <button onclick="animateFaro('IN')">Faro IN Shuffle</button>
+        <button onclick="resetToNDO()" style="grid-column: span 2; background: #222; border-color: #444;">Reset to New Deck Order</button>
+    </div>
+    <div id="status" style="margin-top:5px; font-family:monospace; color:#00f5d4; font-size:0.8rem; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px;">Loading textures...</div>
+</div>
+
+<div id="canvas-container"></div>
+
+<script>
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    
+    let scene, camera, renderer, deckGroup, cards = [];
+    let deckData = []; 
+    let bikeBoxTex = null; 
+    let raycaster, mouse;
+    let isShuffling = false;
+    
+    const sides = {
+        left: { id: 'pad-left', inputId: 'input-left', colorId: 'color-left', ctx: null, canvas: null, matIndex: 1 },
+        right: { id: 'pad-right', inputId: 'input-right', colorId: 'color-right', ctx: null, canvas: null, matIndex: 0 },
+        front: { id: 'pad-front', inputId: 'input-front', colorId: 'color-front', ctx: null, canvas: null, matIndex: 2 },
+        back: { id: 'pad-back', inputId: 'input-back', colorId: 'color-back', ctx: null, canvas: null, matIndex: 3 }
+    };
+    
+    let isDrawing = false;
+    let activeCtx = null;
+    let activeCanvas = null;
+
+    function init() {
+        Object.keys(sides).forEach(key => {
+            const side = sides[key];
+            side.canvas = document.getElementById(side.id);
+            side.ctx = side.canvas.getContext('2d');
+            side.ctx.fillStyle = "#ffffff";
+            side.ctx.fillRect(0, 0, side.canvas.width, side.canvas.height);
+            side.ctx.strokeStyle = "#000000";
+            side.ctx.lineWidth = 7; 
+            side.ctx.lineCap = "round";
+            side.ctx.lineJoin = "round";
+
+            side.canvas.addEventListener('mousedown', (e) => startDraw(e, side.ctx, side.canvas));
+            side.canvas.addEventListener('mousemove', drawMove);
+        });
+        
+        window.addEventListener('mouseup', stopDraw);
+
+        handleTextInput('left');
+        handleTextInput('right');
+
+        const container = document.getElementById('canvas-container');
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050505);
+
+        camera = new THREE.PerspectiveCamera(34, container.clientWidth / container.clientHeight, 0.1, 1000);
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        deckGroup = new THREE.Group();
+        scene.add(deckGroup);
+
+        camera.position.set(0, 4.5, 9.5);
+        camera.lookAt(0, -0.1, 0);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
+        scene.add(ambientLight);
+
+        // Raycasting interaction setup
+        raycaster = new THREE.Raycaster();
+        mouse = new THREE.Vector2();
+        container.addEventListener('click', onCanvasClick);
+
+        const textureLoader = new THREE.TextureLoader();
+        textureLoader.load(
+            'bicycle_image.PNG', 
+            function(texture) {
+                bikeBoxTex = texture;
+                document.getElementById('status').innerText = "Bicycle design ready. Click deck to shuffle.";
+                resetToNDO();
+            },
+            undefined,
+            function(err) {
+                document.getElementById('status').innerText = "Asset missing. Click deck to shuffle.";
+                resetToNDO();
+            }
+        );
+
+        animate();
+        window.addEventListener('resize', onWindowResize);
+    }
+
+    function handleTextInput(sideKey) {
+        const side = sides[sideKey];
+        const text = document.getElementById(side.inputId).value;
+        const color = document.getElementById(side.colorId).value;
+
+        side.ctx.fillStyle = "#ffffff";
+        side.ctx.fillRect(0, 0, side.canvas.width, side.canvas.height);
+
+        if (text.trim() !== "") {
+            side.ctx.fillStyle = color;
+            side.ctx.textAlign = "center";
+            side.ctx.textBaseline = "middle";
+
+            let fontSize = sideKey === 'left' || sideKey === 'right' ? 115 : 125;
+            side.ctx.font = `bold ${fontSize}px 'Arial Black', sans-serif`;
+            
+            let metrics = side.ctx.measureText(text);
+            if (metrics.width > (side.canvas.width - 15)) {
+                fontSize = Math.floor(fontSize * ((side.canvas.width - 15) / metrics.width));
+                side.ctx.font = `bold ${fontSize}px 'Arial Black', sans-serif`;
+            }
+            side.ctx.fillText(text, side.canvas.width / 2, side.canvas.height / 2 + (fontSize * 0.06));
+        }
+
+        if (cards.length > 0) applyWriting();
+    }
+
+    function startDraw(e, ctx, canvas) {
+        isDrawing = true;
+        activeCtx = ctx;
+        activeCanvas = canvas;
+        activeCtx.beginPath();
+        const rect = activeCanvas.getBoundingClientRect();
+        const sideKey = Object.keys(sides).find(key => sides[key].id === canvas.id);
+        if(sideKey) activeCtx.strokeStyle = document.getElementById(sides[sideKey].colorId).value;
+        activeCtx.moveTo((e.clientX - rect.left) * (activeCanvas.width / rect.width), (e.clientY - rect.top) * (activeCanvas.height / rect.height));
+    }
+
+    function drawMove(e) {
+        if (!isDrawing || !activeCtx || !activeCanvas) return;
+        const rect = activeCanvas.getBoundingClientRect();
+        activeCtx.lineTo((e.clientX - rect.left) * (activeCanvas.width / rect.width), (e.clientY - rect.top) * (activeCanvas.height / rect.height));
+        activeCtx.stroke();
+    }
+
+    function stopDraw() { 
+        if (isDrawing) { isDrawing = false; applyWriting(); }
+        activeCtx = null; activeCanvas = null; 
+    }
+
+    // GENERATES DYNAMIC 2D CARD FACES FOR ALL 52 TEXTURE SLOTS
+    function generateCardFaceTexture(cardCode) {
+        const canvas = document.createElement('canvas');
+        canvas.width = 256; canvas.height = 356;
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = "#fafafa"; ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = "#d0d0d0"; ctx.lineWidth = 2; ctx.strokeRect(2, 2, canvas.width-4, canvas.height-4);
+
+        if (!cardCode) return new THREE.CanvasTexture(canvas);
+
+        const suit = cardCode.slice(-1);
+        const val = cardCode.slice(0, -1);
+        const isRed = (suit === 'H' || suit === 'D');
+        
+        ctx.translate(canvas.width, 0);
+        ctx.scale(-1, 1);
+        ctx.fillStyle = isRed ? "#e63946" : "#2b2d42";
+
+        // Upper Index Pip
+        ctx.font = "bold 34px 'Segoe UI', sans-serif";
+        ctx.fillText(val, 18, 45);
+        ctx.font = "34px 'Segoe UI', sans-serif";
+        ctx.fillText(suitSymbols[suit], 18, 82);
+
+        // Center Pip Display
+        ctx.font = "120px 'Segoe UI', sans-serif";
+        ctx.textAlign = "center"; ctx.textBaseline = "middle";
+        ctx.fillText(suitSymbols[suit], canvas.width / 2, canvas.height / 2);
+
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.minFilter = THREE.LinearFilter;
+        return texture;
+    }
+
+    function applyWriting() {
+        const totalCards = 52;
+
+        cards.forEach((mesh) => {
+            const initialPos = mesh.userData.initialIndex; 
+
+            Object.keys(sides).forEach(key => {
+                const side = sides[key];
+                const stripHeight = side.canvas.height / totalCards;
+
+                const sliceCanvas = document.createElement('canvas');
+                sliceCanvas.width = (key === 'front' || key === 'back') ? 512 : 256;
+                sliceCanvas.height = 32;
+                const sliceCtx = sliceCanvas.getContext('2d');
+
+                sliceCtx.drawImage(
+                    side.canvas,
+                    0, initialPos * stripHeight, side.canvas.width, stripHeight,
+                    0, 0, sliceCanvas.width, sliceCanvas.height
+                );
+
+                const dynamicTex = new THREE.CanvasTexture(sliceCanvas);
+                dynamicTex.minFilter = THREE.NearestFilter;
+                dynamicTex.magFilter = THREE.NearestFilter;
+
+                if (mesh.material[side.matIndex]) {
+                    mesh.material[side.matIndex].map = dynamicTex;
+                    mesh.material[side.matIndex].needsUpdate = true;
+                }
+            });
+        });
+    }
+
+    function clearAllCanvases() {
+        Object.keys(sides).forEach(key => {
+            const side = sides[key];
+            document.getElementById(side.inputId).value = "";
+            side.ctx.fillStyle = "#ffffff";
+            side.ctx.fillRect(0, 0, side.canvas.width, side.canvas.height);
+        });
+        applyWriting();
+        document.getElementById('status').innerText = "All edge inputs reset.";
+    }
+
+    function resetToNDO() {
+        deckData = [];
+        ['H','C'].forEach(s => values.forEach(v => deckData.push(v+s)));
+        ['D','S'].forEach(s => [...values].reverse().forEach(v => deckData.push(v+s)));
+        
+        while(deckGroup.children.length > 0) deckGroup.remove(deckGroup.children[0]);
+        cards = [];
+
+        deckData.forEach((val, i) => {
+            const geo = new THREE.BoxGeometry(3.6, 0.046, 4.8); 
+            
+            const mats =
