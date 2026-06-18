@@ -152,6 +152,7 @@ any of the standard stacks and highlights exactly which cards are "mis-indexed."
         <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
         <button onclick="resetTo('FRENCH_NDO')">French NDO</button>
         <button onclick="resetTo('PARTICLE_NDO')">Particle NDO</button>
+        <button onclick="resetTo('JOYAL')">Joyal</button>
     </div>
 
     <div id="poker-arena">
@@ -277,6 +278,7 @@ any of the standard stacks and highlights exactly which cards are "mis-indexed."
         else if(type === 'SPANISH_NDO') { temp = ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"]; }
         else if(type === 'FRENCH_NDO') { temp = ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"]; }
         else if(type === 'PARTICLE_NDO') { temp = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]; }
+        else if(type === 'JOYAL') { temp = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"]; }
         deck = temp; logMove(`Reset: ${type}`); renderDeck();
     }
 
@@ -395,7 +397,8 @@ any of the standard stacks and highlights exactly which cards are "mis-indexed."
             'FRENCH_NDO':   ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
             'US_NDO':       ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"],
             'OSTERLIND':    ["AS","3S","7D","5H","QC","AC","5S","JH","JC","QD","2D","8C","6S","KH","2H","6D","3D","10S","8D","7C","4S","9D","9C","8H","5D","AD","6H","AH","4D","QS","QH","KC","3C","9H","7S","2S","5C","KD","4H","10C","10D","JS","10H","9S","6C","2C","7H","3H","8S","4C","JD","KS"],
-            'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
+            'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
+            'JOYAL': ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"]
         };
         const dupes = deck.filter((c, i) => deck.indexOf(c) !== i);
         if (dupes.length > 0) { logMove(`⚠ DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
