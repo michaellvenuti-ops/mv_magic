@@ -10,33 +10,47 @@
         #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; }
         .history-log { flex-grow: 1; min-height: 120px; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; font-size: 0.7rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
         #lab-main { flex-grow: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
-        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 6px; margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
-        .card { background: white; color: black; border-radius: 4px; padding: 8px 0; text-align: center; font-weight: bold; font-size: 0.85rem; cursor: pointer; position: relative; transition: 0.2s; border: 1px solid #ccc; }
-        .card.red { color: var(--accent); }
+        
+        /* Dynamic Grid Layout to accommodate responsive sizing choices */
+        .deck-display { display: grid; gap: 6px; margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
+        .deck-display.size-small { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); }
+        .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); }
+        .deck-display.size-large { grid-template-columns: repeat(13, 1fr); }
+
+        /* Optimized for Custom Card Face Graphics */
+        .card { background: white; border-radius: 4px; cursor: pointer; position: relative; transition: 0.2s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
         .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
         .card.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
         
-        /* Dual Index Styling with High Layering Priority */
-        .card-index { position: absolute; font-size: 0.5rem; color: #888; z-index: 2; line-height: 1; }
-        .card-index.top-right { top: 2px; right: 4px; }
-        .card-index.bottom-left { bottom: 2px; left: 4px; }
-        
+        /* Floating Layer for Embedded Numbers (Dual Index Configuration) */
+        .card-index { position: absolute; color: #222; font-weight: bold; z-index: 5; background: rgba(255,255,255,0.8); padding: 1px 2px; border-radius: 2px; line-height: 1; font-family: sans-serif; }
+        .card-index.top-right { top: 2px; right: 2px; }
+        .card-index.bottom-left { bottom: 2px; left: 2px; }
+
+        /* Dynamic Font Sizing adjustments for indexes based on card scale */
+        .deck-display.size-small .card-index { font-size: 0.45rem; padding: 0px 2px; }
+        .deck-display.size-medium .card-index { font-size: 0.55rem; padding: 1px 2px; }
+        .deck-display.size-large .card-index { font-size: 0.65rem; padding: 1px 3px; }
+
+        .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
         button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 6px; cursor: pointer; font-size: 0.6rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
         button:hover { background: var(--accent); }
         .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 15px 0 10px 0; position: relative; }
         .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 8px; font-size: 0.55rem; color: var(--gold); }
         #poker-arena { margin-top: 20px; background: var(--felt); border: 4px solid #064420; border-radius: 12px; padding: 15px; display: none; }
         .hand-row { display: flex; gap: 5px; margin-bottom: 10px; }
-        .table-card { width: 35px; height: 50px; background: white; color: black; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; border: 1px solid #999; }
-        .table-card.red { color: var(--accent); }
+        
+        /* Table Cards for Poker Sims - Scaled up 2x from base 35x50 sizing */
+        .table-card { width: 70px; height: 100px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; border: 1px solid #999; overflow: hidden; }
+        .table-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
 
         /* PEEK MODE */
-        .card.face-down { background: #d90429; border: 2px solid #fff; cursor: pointer; color: transparent !important; }
-        .card.face-down .card-face-content { display: none; }
-        .card.face-down .card-back-svg { display: block; }
-        .card .card-back-svg { display: none; }
-        .card.face-down .card-index { color: transparent; }
+        .card.face-down { background: #d90429; border: 2px solid #fff; cursor: pointer; }
+        .card.face-down .card-img { display: none; }
+        .card.face-down .card-index { display: none; }
         .card.face-down.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
     </style>
 </head>
@@ -50,7 +64,7 @@
     <div id="history" class="history-log"></div>
     
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px; margin-bottom:10px;">
-        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold);">↩ Undo</button>
+        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold);">🃏 Undo</button>
         <button onclick="showHelp()" style="background:#444;">❓ HELP</button>
     </div>
 
@@ -60,7 +74,7 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
             <button onclick="applyPreset('ACES')">Aces</button>
             <button onclick="applyPreset('KINGS')">Kings</button>
-            <button onclick="applyPreset('SPADE_ROYAL')">Royal ♠</button>
+            <button onclick="applyPreset('SPADE_ROYAL')">Royal 👑</button>
             <button onclick="applyPreset('')">Clear</button>
         </div>
     </div>
@@ -95,14 +109,21 @@
 </div>
 
 <div id="lab-main">
-    <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap: wrap;">
         <h1 style="color:var(--gold); font-size:1.2rem; margin:0;">Virtual Card Lab v9.2</h1>
         <button id="peek-btn" onclick="togglePeek()" style="border-color:var(--gold); color:var(--gold); padding:4px 12px;">
-            👁 PEEK MODE: OFF
+            🃏 PEEK MODE: OFF
         </button>
+        
+        <div style="display:flex; gap:4px; align-items:center; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid #333;">
+            <span style="font-size:0.55rem; color:var(--gold); font-weight:bold; margin-right:4px; text-transform:uppercase;">Size:</span>
+            <button id="size-small-btn" onclick="changeCardSize('small')" style="padding:4px 8px; font-size:0.55rem;">Small</button>
+            <button id="size-medium-btn" onclick="changeCardSize('medium')" style="padding:4px 8px; font-size:0.55rem;">Medium</button>
+            <button id="size-large-btn" onclick="changeCardSize('large')" style="padding:4px 8px; font-size:0.55rem;">Large</button>
+        </div>
     </div>
 
-    <div id="deck" class="deck-display"></div>
+    <div id="deck" class="deck-display size-small"></div>
     
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap:6px;">
         <div class="divider" data-label="MECHANICS & SHUFFLES"></div>
@@ -127,7 +148,7 @@
                       style="cursor:pointer; background:#444; padding:2px 6px; border-radius:2px;
                              white-space:nowrap; color:white;"
                       onmouseover="this.style.background='var(--accent)'"
-                      onmouseout="this.style.background='#444'">✂ CUT</span>
+                      onmouseout="this.style.background='#444'">🧪 CUT</span>
             </div>
         </div>
 
@@ -169,49 +190,55 @@
     function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
+    function preloadCardImages() {
+        const suits = ['C', 'H', 'S', 'D'];
+        const valuesList = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+        suits.forEach(s => {
+            valuesList.forEach(v => {
+                const img = new Image();
+                img.src = `cards/${v}${s}.png`;
+            });
+        });
+    }
+
     function renderDeck() {
         const container = document.getElementById('deck');
         const search = document.getElementById('search-input').value.toUpperCase();
         container.innerHTML = '';
         deck.forEach((card, i) => {
             const div = document.createElement('div');
-            const isRed = card.includes('H') || card.includes('D');
 
             if (peekMode) {
                 div.className = 'card face-down';
             } else {
-                div.className = `card ${isRed ? 'red' : ''}`;
+                div.className = 'card';
             }
 
             if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
             if (selectedIndex === i) div.classList.add('selected');
 
-            // Generate dual indices: Upper Right and Lower Left
-            const indexHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
-            div.innerHTML = indexHTML;
+            // Position number dual layout rules (Top Right & Bottom Left corners)
+            div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
 
-            // Show card face only when not in peek mode
+            // Display graphic asset from /cards/ matching string notation
             if (!peekMode) {
-                div.innerHTML += `${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
+                div.innerHTML += `<img src="cards/${card}.png" class="card-img" alt="${card}">`;
             }
 
             if (coachActive && !peekMode) div.title = `Stack Position: ${i+1}`;
 
             div.onclick = () => {
                 if (peekMode) {
-                    // Peek: reveal card for 1 second then hide again
+                    // Peek mechanics: inject image temporarily for 1 second
                     div.classList.remove('face-down');
-                    div.innerHTML = `${indexHTML}${card.slice(0,-1)}${suitSymbols[card.slice(-1)]}`;
-                    if (isRed) div.style.color = 'var(--accent)';
-                    else div.style.color = 'black';
+                    div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span><img src="cards/${card}.png" class="card-img" alt="${card}">`;
                     setTimeout(() => {
                         div.classList.add('face-down');
-                        div.style.color = 'transparent';
-                        div.innerHTML = indexHTML;
+                        div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
                     }, 1000);
                     return;
                 }
-                // Normal swap mode
+                // Normal cell swap mode
                 if (selectedIndex === null) {
                     selectedIndex = i;
                     renderDeck();
@@ -226,15 +253,33 @@
         });
     }
 
-    // [Rest of script functions preserved unchanged...]
     function togglePeek() {
         peekMode = !peekMode;
         const btn = document.getElementById('peek-btn');
-        btn.innerText = `👁 PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
+        btn.innerText = `🃏 PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
         btn.style.borderColor = peekMode ? 'var(--accent)' : 'var(--gold)';
         btn.style.color = peekMode ? 'var(--accent)' : 'var(--gold)';
         logMove(`Peek Mode ${peekMode ? 'ON — click any card to reveal for 1 second' : 'OFF — cards visible'}`);
         renderDeck();
+    }
+
+    function changeCardSize(size) {
+        const container = document.getElementById('deck');
+        container.className = `deck-display size-${size}`;
+        
+        ['small', 'medium', 'large'].forEach(s => {
+            const btn = document.getElementById(`size-${s}-btn`);
+            if (btn) {
+                if (s === size) {
+                    btn.style.borderColor = 'var(--accent)';
+                    btn.style.color = 'var(--accent)';
+                } else {
+                    btn.style.borderColor = '';
+                    btn.style.color = '';
+                }
+            }
+        });
+        logMove(`Card size set to ${size.toUpperCase()}`);
     }
 
     function applyPreset(p) {
@@ -254,7 +299,7 @@
         if(type === 'ZARROW') {
             let t2 = deck.splice(0,2); let b2 = deck.splice(-2);
             deck.unshift(...b2); deck.push(...t2);
-            logMove("Zarrow: Top 2 ↔ Bot 2 (Core Safe)");
+            logMove("Zarrow: Top 2 ⇄ Bot 2 (Core Safe)");
         } else {
             let tc = deck.splice(0, 2); deck.splice(24, 0, ...tc);
             logMove("Blind Faro: Top 2 moved to Center");
@@ -335,8 +380,8 @@
 
     function createCardUI(v) {
         let d = document.createElement('div');
-        d.className = `table-card ${v.includes('H')||v.includes('D')?'red':''}`;
-        d.innerText = v.slice(0,-1)+suitSymbols[v.slice(-1)];
+        d.className = 'table-card';
+        d.innerHTML = `<img src="cards/${v}.png" alt="${v}">`;
         return d;
     }
 
@@ -405,18 +450,18 @@
         if (dupes.length > 0) { logMove(`⚠ DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
         let matched = false;
         for (const [name, order] of Object.entries(stacks)) {
-            if (deck.every((c, i) => c === order[i])) { logMove(`✔ MATCH: Current deck is ${name}`); matched = true; break; }
+            if (deck.every((c, i) => c === order[i])) { logMove(`🎉 MATCH: Current deck is ${name}`); matched = true; break; }
         }
         if (!matched) {
             for (const [name, order] of Object.entries(stacks)) {
                 for (let cut = 1; cut < 52; cut++) {
                     const rotated = [...order.slice(cut), ...order.slice(0, cut)];
-                    if (deck.every((c, i) => c === rotated[i])) { logMove(`✔ CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
+                    if (deck.every((c, i) => c === rotated[i])) { logMove(`🎉 CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
                 }
                 if (matched) break;
             }
         }
-        if (!matched) logMove('✘ No match found — custom or unknown order');
+        if (!matched) logMove('❓ No match found — custom or unknown order');
     }
 
     function calcToNDO() {
@@ -448,11 +493,11 @@
             for (let j = 0; j < 26; j++) { res.push(top[j]); res.push(bot[j]); }
             test = res;
             for (const [name, order] of Object.entries(targets)) {
-                if (test.every((c, idx) => c === order[idx])) results.push(`↩ Reaches ${name} in ${i} out-faro(s)`);
+                if (test.every((c, idx) => c === order[idx])) results.push(`🔮 Reaches ${name} in ${i} out-faro(s)`);
             }
         }
         if (results.length > 0) results.forEach(r => logMove(r));
-        else logMove('↩ Does not reach any known order in 8 out-faros');
+        else logMove('❓ Does not reach any known order in 8 out-faros');
     }
 
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
@@ -460,19 +505,23 @@
     function saveStack() { localStorage.setItem('stackV92', JSON.stringify(deck)); logMove("Session Saved."); }
     function loadStack() { let s = localStorage.getItem('stackV92'); if(s) { deck = JSON.parse(s); renderDeck(); } }
 
-    window.onload = () => resetTo('NDO');
+    window.onload = () => {
+        resetTo('NDO');
+        preloadCardImages();
+        changeCardSize('small'); // Synchronizes layout class and active state button highlighting
+    };
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
     <div style="max-width:700px; margin:40px auto; background:var(--panel); border:1px solid var(--gold); border-radius:8px; padding:30px; color:var(--text); font-size:0.75rem; line-height:1.6;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
             <h2 style="color:var(--gold); margin:0;">Virtual Card Lab — User Guide</h2>
-            <button onclick="document.getElementById('help-modal').style.display='none'" style="font-size:1rem; padding:5px 12px;">✕</button>
+            <button onclick="document.getElementById('help-modal').style.display='none'" style="font-size:1rem; padding:5px 12px;">❌</button>
         </div>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">PEEK MODE</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">👁 Peek Mode</td><td style="padding:6px 8px;">Flips all cards face down. Click any card to reveal it for 1 second then it hides again. Use this to drill stack memorization — test yourself by guessing each card before you click to reveal it. Toggle off to return to normal view.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">🃏 Peek Mode</td><td style="padding:6px 8px;">Flips all cards face down. Click any card to reveal it for 1 second then it hides again. Use this to drill stack memorization — test yourself by guessing each card before you click to reveal it. Toggle off to return to normal view.</td></tr>
         </table>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS & SHUFFLES</div>
@@ -485,10 +534,10 @@
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Randomize</td><td style="padding:6px 8px;">Fisher-Yates full randomization.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Left</td><td style="padding:6px 8px;">Moves the top card to the bottom.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Right</td><td style="padding:6px 8px;">Moves the bottom card to the top.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Top 26</td><td style="padding:6px 8px;">Reverses only the top 26 cards. Bottom 26 untouched. Used in Spanish NDO → Mnemonica procedure (Step 2).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Top 26</td><td style="padding:6px 8px;">Reverses only the top 26 cards. Bottom 26 untouched. Used in Spanish NDO ➔ Mnemonica procedure (Step 2).</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Bottom 26</td><td style="padding:6px 8px;">Reverses only the bottom 26 cards. Top 26 untouched.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Unequal Faro Top 18</td><td style="padding:6px 8px;">Cuts top 18 and out-faros them into the top of the remaining 34. Used in Spanish NDO → Mnemonica procedure (Step 3).</td></tr>
-            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut at N ✂</td><td style="padding:6px 8px;">Enter any number 1–51 and click ✂ CUT to move exactly that many cards from top to bottom.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Unequal Faro Top 18</td><td style="padding:6px 8px;">Cuts top 18 and out-faros them into the top of the remaining 34. Used in Spanish NDO ➔ Mnemonica procedure (Step 3).</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut at N 🧪</td><td style="padding:6px 8px;">Enter any number 1–51 and click 🧪 CUT to move exactly that many cards from top to bottom.</td></tr>
         </table>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FALSE WORK (STACK PROTECTION)</div>
@@ -499,9 +548,9 @@
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK PRESETS</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order</td><td style="padding:6px 8px;">US Bicycle factory order: A→K Hearts, A→K Clubs, K→A Diamonds, K→A Spades.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">A→K in all four suits, CHaSeD order. Starting point for Mnemonica faro entry.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">K→A in all four suits. Common in Tally-Ho and European Bicycle decks.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order</td><td style="padding:6px 8px;">US Bicycle factory order: A➔K Hearts, A➔K Clubs, K➔A Diamonds, K➔A Spades.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">A➔K in all four suits, CHaSeD order. Starting point for Mnemonica faro entry.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">K➔A in all four suits. Common in Tally-Ho and European Bicycle decks.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Mnemonica</td><td style="padding:6px 8px;">Juan Tamariz's world-famous memorized stack.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aronson</td><td style="padding:6px 8px;">Simon Aronson's memorized stack with built-in poker deals and spelling effects.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Nikola</td><td style="padding:6px 8px;">Classic memorized stack by Louis Nikola. One of the earliest published memdeck systems.</td></tr>
@@ -519,7 +568,7 @@
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SEARCH & TRACK</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Search Box</td><td style="padding:6px 8px;">Type card names separated by commas (e.g. AS, 4H) to highlight them in gold. Updates live.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aces / Kings / Royal ♠</td><td style="padding:6px 8px;">Quick-track preset groups of cards.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aces / Kings / Royal 👑</td><td style="padding:6px 8px;">Quick-track preset groups of cards.</td></tr>
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Clear</td><td style="padding:6px 8px;">Clears all tracking highlights.</td></tr>
         </table>
 
@@ -537,7 +586,7 @@
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Bottom Deal</td><td style="padding:6px 8px;">When checked, dealer's final card comes from position 52.</td></tr>
         </table>
 
-        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SESSION</div>
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:10px;">SESSION</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">↩ Undo</td><td style="padding:6px 8px;">Steps back one move. Stores up to 50 states.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Export</td><td style="padding:6px 8px;">Copies current deck as JSON to clipboard.</td></tr>
