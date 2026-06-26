@@ -7,47 +7,31 @@
 <style>
     :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
     
-    /* Force 100% height and remove scrolling from body */
-    body { 
-        font-family: 'Segoe UI', sans-serif; 
-        background: var(--bg); 
-        color: var(--text); 
-        margin: 0; 
-        display: flex; 
-        height: 100dvh; /* Dynamic viewport height for iOS */
-        overflow: hidden; 
-    }
-
-    #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; }
+    /* Use 100dvh to handle dynamic mobile bars correctly */
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100dvh; overflow: hidden; }
     
-    /* Make the lab main area take all remaining space and scroll internally */
-    #lab-main { 
-        flex: 1; 
-        padding: 10px; 
-        overflow-y: auto; 
-        display: flex; 
-        flex-direction: column; 
-    }
-
+    #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; flex-shrink: 0; }
+    
+    /* Lab Main is the primary container */
+    #lab-main { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; }
+    
+    /* Deck Area: Force it to take available space but allow scroll */
     .deck-display { 
-        display: grid; 
-        gap: 4px; 
-        padding: 5px; 
-        background: rgba(255,255,255,0.05); 
-        border-radius: 8px; 
-        border: 1px solid #333;
+        display: grid; gap: 4px; padding: 10px; background: rgba(255,255,255,0.05); 
+        border-radius: 8px; border: 1px solid #333; 
         grid-template-columns: repeat(13, 1fr); 
+        min-height: 150px; /* Ensures cards don't shrink to zero height */
     }
 
     .card { background: white; border-radius: 3px; cursor: pointer; position: relative; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    
-    /* MOBILE OVERRIDE - Critical for iPhone */
+
+    /* MOBILE OPTIMIZATION */
     @media (max-width: 767px) {
         body { flex-direction: column; }
-        #sidebar { width: 100%; height: 30vh; border-right: none; border-bottom: 2px solid #333; }
-        #lab-main { height: 70vh; padding: 5px; }
+        #sidebar { width: 100%; height: 25vh; border-right: none; border-bottom: 2px solid #333; }
+        #lab-main { height: 75vh; padding: 8px; }
         .deck-display { gap: 2px; }
-        button { padding: 4px; font-size: 0.5rem; }
+        button { padding: 8px 4px; font-size: 0.65rem; }
     }
 </style>
    
