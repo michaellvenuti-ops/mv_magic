@@ -97,11 +97,17 @@
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
         
         /* Ensure mobile flow works */
-       @media (max-width: 600px) {
-            /* This ensures the deck takes up at least 40% of the available screen height */
-            #deck { 
-                max-height: 40vh; 
-                overflow-y: auto; 
+    @media (max-width: 600px) {
+            #lab-main { padding: 10px; }
+            .deck-display { gap: 3px; padding: 5px; }
+            /* Force cards to stay visible and small on mobile */
+            .card { aspect-ratio: 5/7; }
+            
+            /* Compact button grid for mechanics */
+            .mechanics-grid { 
+                display: grid; 
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 4px; 
             }
         }
     </style>
