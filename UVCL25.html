@@ -5,35 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Card Lab v9.2</title>
     <style>
-    :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
-    
-    /* Use 100dvh to handle dynamic mobile bars correctly */
-    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100dvh; overflow: hidden; }
-    
-    #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; flex-shrink: 0; }
-    
-    /* Lab Main is the primary container */
-    #lab-main { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; }
-    
-    /* Deck Area: Force it to take available space but allow scroll */
-    .deck-display { 
-        display: grid; gap: 4px; padding: 10px; background: rgba(255,255,255,0.05); 
-        border-radius: 8px; border: 1px solid #333; 
-        grid-template-columns: repeat(13, 1fr); 
-        min-height: 150px; /* Ensures cards don't shrink to zero height */
-    }
+        :root { 
+            --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; 
+            /* Button Sizing Variables */
+            --pad-full: 8px 12px;
+            --pad-med: 6px 9px;
+            --pad-small: 6px 9px;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; flex-shrink: 0;}
+        .history-log { flex-grow: 1; min-height: 120px; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; font-size: 0.7rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        #lab-main { flex-grow: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0;}
+        
+        /* 13 Cards Per Row Grid with Responsive Scroll */
+        .deck-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        
+        .deck-display { 
+            display: grid; 
+            grid-template-columns: repeat(13, 1fr); 
+            gap: 4px; 
+            margin-bottom: 15px; 
+            padding: 10px; 
+            background: rgba(255,255,255,0.05); 
+            border-radius: 8px; 
+            border: 1px solid #333; 
+            min-width: 500px; /* Ensures cards don't crush into nothingness on iPhone */
+        }
 
-    .card { background: white; border-radius: 3px; cursor: pointer; position: relative; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        /* Container to enforce exact proportions */
+        .card-container {
+            width: 100%;
+            aspect-ratio: 5 / 7;
+            margin: 0 auto;
+        }
 
-    /* MOBILE OPTIMIZATION */
-    @media (max-width: 767px) {
-        body { flex-direction: column; }
-        #sidebar { width: 100%; height: 25vh; border-right: none; border-bottom: 2px solid #333; }
-        #lab-main { height: 75vh; padding: 8px; }
-        .deck-display { gap: 2px; }
-        button { padding: 8px 4px; font-size: 0.65rem; }
-    }
-</style>
+        /* Scaling rules based on user selection */
+        .deck-display.size-small .card-container { max-width: 45px; }
+        .deck-display.size-medium .card-container { max-width: 65px; }
+        .deck-display.size-large .card-container { max-width: 100%; }
+        
+        /* Standardized Card/Peek Size */
+        .card, .card.face-down { 
+            width: 100%;
+            height: 100%;
+            background: white; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            position: relative; 
+            transition: 0.2s; 
+            border: 1px solid #ccc; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
+        .card.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
+        
+        /* Peek Mode */
+        .card.face-down { background: #d90429; border: 2px solid #fff; color: transparent !important;}
+        .card.face-down .card-img, .card.face-down .card-index { display: none; }
+
+        .card-index { position: absolute; color: #222; font-weight: bold; z-index: 5; background: rgba(255,255,255,0.8); border-radius: 2px; line-height: 1; font-family: sans-serif; pointer-events: none;}
+        .card-index.top-right { top: 2px; right: 2px; }
+        .card-index.bottom-left { bottom: 2px; left: 2px; }
+        
+        /* Dynamic Index Sizing */
+        .deck-display.size-small .card-index { font-size: 0.4rem; padding: 0px 2px; }
+        .deck-display.size-medium .card-index { font-size: 0.5rem; padding: 1px 2px; }
+        .deck-display.size-large .card-index { font-size: 0.6rem; padding: 1px 3px; }
+
+        .card-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        /* Button Sizing Application */
+        button { background: #2a2a2a; color: white; border: 1px solid #444; padding: var(--pad-med); cursor: pointer; font-size: 0.6rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
+        
+        button:hover { background: var(--accent); }
+
+        .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 15px 0 10px 0; position: relative; }
+        .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 8px; font-size: 0.55rem; color: var(--gold); }
+        #poker-arena { margin-top: 20px; background: var(--felt); border: 4px solid #064420; border-radius: 12px; padding: 15px; display: none; }
+        .hand-row { display: flex; gap: 5px; margin-bottom: 10px; }
+        .table-card { width: 70px; height: 100px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; border: 1px solid #999; overflow: hidden; }
+        .table-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
+        
+        /* Ensure mobile flow works */
+        @media (max-width: 800px) {
+            body { flex-direction: column; }
+            #sidebar { width: 100%; height: 40vh; border-right: none; border-bottom: 2px solid #333;}
+            #lab-main { height: 60vh; }
+        }
+    </style>
 </head>
 <body>
 
