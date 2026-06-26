@@ -13,10 +13,13 @@
         
         /* Dynamic Grid Layout to accommodate responsive sizing choices */
         .deck-display { display: grid; gap: 6px; margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
-        .deck-display.size-small { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); }
-        .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); }
+        /* .deck-display.size-small { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); }
+        .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); } */
+        
+        .deck-display.size-small  { grid-template-columns: repeat(13, 1fr); }
+        .deck-display.size-medium { grid-template-columns: repeat(13, 1fr); }
         .deck-display.size-large { grid-template-columns: repeat(13, 1fr); }
-
+        
         /* Optimized for Custom Card Face Graphics */
         .card { background: white; border-radius: 4px; cursor: pointer; position: relative; transition: 0.2s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
         .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
