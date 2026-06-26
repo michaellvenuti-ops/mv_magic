@@ -97,10 +97,12 @@
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
         
         /* Ensure mobile flow works */
-        @media (max-width: 800px) {
-            body { flex-direction: column; height: 100dvh; } /* dvh forces iOS to respect the actual visible screen */
-            #sidebar { width: 100%; flex: 0 0 40%; height: auto; border-right: none; border-bottom: 2px solid #333; }
-            #lab-main { flex: 1 1 0; height: auto; overflow-y: auto; }
+       @media (max-width: 600px) {
+            /* This ensures the deck takes up at least 40% of the available screen height */
+            #deck { 
+                max-height: 40vh; 
+                overflow-y: auto; 
+            }
         }
     </style>
 </head>
