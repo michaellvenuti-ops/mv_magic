@@ -4,138 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Magician's Command Center</title>
+<style>
+    :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
     
-    <style>
-        :root {
-            --primary: #e63946;
-            --dark: #0b132b;
-            --card-bg: #1c2541;
-            --text-light: #f1faee;
-            --gold: #ffb703;
-            --accent: #a8dadc;
-        }
+    /* Force 100% height and remove scrolling from body */
+    body { 
+        font-family: 'Segoe UI', sans-serif; 
+        background: var(--bg); 
+        color: var(--text); 
+        margin: 0; 
+        display: flex; 
+        height: 100dvh; /* Dynamic viewport height for iOS */
+        overflow: hidden; 
+    }
 
-        body { 
-            font-family: 'Segoe UI', sans-serif; 
-            background-color: var(--dark); 
-            color: var(--text-light); 
-            margin: 0; 
-            line-height: 1.6; 
-        }
-        
-        header { 
-            background: linear-gradient(rgba(11, 19, 43, 0.9), rgba(11, 19, 43, 0.9)), 
-                        url('https://images.unsplash.com/photo-1523031159170-982460773d74?auto=format&fit=crop&q=80&w=1200'); 
-            background-size: cover; 
-            padding: 80px 20px; 
-            text-align: center; 
-            border-bottom: 4px solid var(--gold); 
-        }
-        
-        header h1 { 
-            font-size: 3.5rem; 
-            margin: 0; 
-            color: var(--gold); 
-            text-transform: uppercase; 
-            letter-spacing: 8px; 
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
+    #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; }
+    
+    /* Make the lab main area take all remaining space and scroll internally */
+    #lab-main { 
+        flex: 1; 
+        padding: 10px; 
+        overflow-y: auto; 
+        display: flex; 
+        flex-direction: column; 
+    }
 
-        .container { max-width: 1100px; margin: -50px auto 100px auto; padding: 20px; }
-        
-        .nav-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 30px; 
-        }
+    .deck-display { 
+        display: grid; 
+        gap: 4px; 
+        padding: 5px; 
+        background: rgba(255,255,255,0.05); 
+        border-radius: 8px; 
+        border: 1px solid #333;
+        grid-template-columns: repeat(13, 1fr); 
+    }
 
-        /* NAVIGATION CARD STYLING */
-        .portal-card { 
-            background: var(--card-bg); 
-            padding: 40px; 
-            border-radius: 15px; 
-            border: 1px solid #3a506b; 
-            text-align: center;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .portal-card:hover { 
-            transform: translateY(-10px); 
-            border-color: var(--primary);
-            box-shadow: 0 15px 40px rgba(230, 57, 70, 0.3);
-        }
-
-        .portal-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-            transition: 0.5s;
-        }
-
-        .portal-card:hover::before { left: 100%; }
-
-        .portal-card i { 
-            font-size: 3rem; 
-            color: var(--primary); 
-            margin-bottom: 20px; 
-            display: block;
-        }
-
-        .portal-card h2 { 
-            color: var(--gold); 
-            margin-bottom: 15px; 
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .portal-card p { font-size: 0.95rem; color: var(--accent); }
-
-        .btn-visit {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: var(--primary);
-            color: white;
-            border-radius: 5px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        /* SYSTEM STATUS BAR */
-        .status-bar {
-            background: #000;
-            color: #0f0;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            margin-top: 50px;
-            border: 1px solid #0f0;
-            box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
-        }
-
-        .status-dot {
-            height: 10px; width: 10px;
-            background-color: #0f0;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 10px;
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-    </style>
+    .card { background: white; border-radius: 3px; cursor: pointer; position: relative; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    
+    /* MOBILE OVERRIDE - Critical for iPhone */
+    @media (max-width: 767px) {
+        body { flex-direction: column; }
+        #sidebar { width: 100%; height: 30vh; border-right: none; border-bottom: 2px solid #333; }
+        #lab-main { height: 70vh; padding: 5px; }
+        .deck-display { gap: 2px; }
+        button { padding: 4px; font-size: 0.5rem; }
+    }
+</style>
+   
 </head>
 <body>
  
