@@ -55,6 +55,19 @@
         .card.face-down .card-img { display: none; }
         .card.face-down .card-index { display: none; }
         .card.face-down.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
+
+    .peek-num {
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    background: white; color: black; 
+    border-radius: 50%;
+    width: 20px; height: 20px; 
+    display: flex; align-items: center; 
+    justify-content: center; 
+    font-size: 10px; z-index: 5;
+    }
+    
     </style>
 </head>
 <body>
@@ -221,7 +234,13 @@
             } else {
                 div.className = 'card';
             }
-
+            
+if (peekMode) {
+    const num = document.createElement('div');
+    num.className = 'peek-num';
+    num.innerText = i + 1; 
+    div.appendChild(num);
+}
             if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
             if (selectedIndex === i) div.classList.add('selected');
 
