@@ -68,18 +68,17 @@
 }
 
 .peek-idx {
-    position: absolute !important; /* Removes it from the normal layout flow */
-    top: 30px; 
-    left: 5px;
-    font-size: 14px; 
+    position: absolute !important; 
+    top: 40px; left: 2px;
+    font-size: 10px; 
     font-weight: bold; 
     color: black;
-    z-index: 100; 
-    pointer-events: none; /* Allows you to click through the number */
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 2px 5px; 
-    border-radius: 4px;
-    margin: 0 !important; /* Ensures no extra margins push the layout */
+    z-index: 999; 
+    pointer-events: none; /* Crucial: ensures clicks go through to the card */
+    background: white; 
+    padding: 1px 3px; 
+    border-radius: 3px;
+    display: block !important; /* Forces it to ignore container layout */
 }
         
     </style>
