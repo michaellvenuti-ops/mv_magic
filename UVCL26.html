@@ -67,18 +67,19 @@
     pointer-events: none; /* Allows you to click through it */
 }
 
-        .peek-idx {
-    position: absolute;
-    top: 5px;
+.peek-idx {
+    position: absolute !important; /* Removes it from the normal layout flow */
+    top: 10px; 
     left: 5px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 14px; 
+    font-weight: bold; 
     color: black;
-    z-index: 100;
-    pointer-events: none;
-    background: white;
-    padding: 2px;
-    border-radius: 3px;
+    z-index: 100; 
+    pointer-events: none; /* Allows you to click through the number */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 2px 5px; 
+    border-radius: 4px;
+    margin: 0 !important; /* Ensures no extra margins push the layout */
 }
         
     </style>
