@@ -26,11 +26,11 @@
         
         .deck-display { 
             display: grid; 
-            grid-template-columns: repeat(13, 1fr); 
-            gap: 0px; 
-            margin-bottom: 15px; 
-            padding: 0px; 
-            background: rgba(255,255,255,0.05); 
+            grid-template-columns: repeat(13, 1fr); /* Maintains 13 cards */
+            gap: 0px !important;            /* Removes black space between cards */
+            padding: 0px !important;        /* Removes space around the deck */
+            margin: 0px !important;
+            background: none !important;    /* Removes background color gaps */
             border-radius: 8px; 
             border: 1px solid #333; 
             min-width: 500px; /* Ensures cards don't crush into nothingness on iPhone */
@@ -57,13 +57,15 @@
             cursor: pointer; 
             position: relative; 
             transition: 0.2s; 
-            border: 1px solid #ccc; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
             overflow: hidden; 
             padding: 0;
-            box-sizing: border-box;
+            border: 0.5px solid #333;       /* Defines the border instead of the gap */
+            box-sizing: border-box; 
+            margin: 0px !important;
+            aspect-ratio: 5/7;
         }
         .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
         .card.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
@@ -105,9 +107,13 @@
         
         /* Ensure the card container displays the value/suit as text */
         .card::after {
-            content: attr(data-card-label); /* Ensure your HTML has this attribute */
-            font-size: 0.6rem;
-            color: white;
+            content: attr(data-card-label); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 0.5rem; /* Tiny text for tiny cards */
+            color: #ccc;
         }
         
         /* Force vertical orientation for the app to allow natural scrolling */
