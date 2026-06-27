@@ -233,40 +233,63 @@
     }
 
     function renderDeck() {
-        const container = document.getElementById('deck');
-        const search = document.getElementById('search-input').value.toUpperCase();
-        container.innerHTML = '';
-deck.forEach((card, i) => {
-    const wrapper = document.createElement('div');
-    wrapper.className = 'card-container';
-    const div = document.createElement('div');
+    const container = document.getElementById('deck');
+    const search = document.getElementById('search-input').value.toUpperCase();
+    container.innerHTML = '';
     
-    // Set the class based on mode
-    div.className = peekMode ? 'card face-down' : 'card';
-    
-    // 1. Build the index spans (Standard indexing)
-    let content = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
-    
-    // 2. Add the mode-specific content
-    if (peekMode) {
-        content += `<div class="peek-idx">${i + 1}</div>`;
-    } else {
-        content += `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
-    }
-    
-    // 3. One single assignment prevents the split
-    div.innerHTML = content;
+    deck.forEach((card, i) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'card-container';
+        const div = document.createElement('div');
+        div.className = peekMode ? 'card face-down' : 'card';
+        
+        if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
+        if (selectedIndex === i) div.classList.add('selected');
+        if (coachActive && !peekMode) wrapper.title = `Stack Position: ${i+1}`;
 
-    // Apply tracking/selection logic
-    if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
-    if (selectedIndex === i) div.classList.add('selected');
-    if (coachActive && !peekMode) wrapper.title = `Stack Position: ${i+1}`;
+        // Build the content template string ONCE
+        // 1. Always add the corner indices
+        let content = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
+        
+        // 2. Add visual content
+        if (peekMode) {
+            content += `<div class="peek-idx">${i + 1}</div>`;
+        } else {
+            content += `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+        }
+        
+        div.innerHTML = content;
 
-    // ... (rest of your click/wrapper logic remains the same) ...
-    wrapper.appendChild(div);
-    container.appendChild(wrapper);
-});
-    }
+        // CLICK HANDLER
+        div.onclick = () => {
+            if (peekMode) {
+                // Reveal logic: rebuild innerHTML to show image
+                div.classList.remove('face-down');
+                div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span><img src="cards/${card}.png" class="card-img" alt="${card}">`;
+                
+                setTimeout(() => {
+                    // Hide back: rebuild innerHTML to show peek-idx
+                    div.classList.add('face-down');
+                    div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span><div class="peek-idx">${i + 1}</div>`;
+                }, 1000);
+                return;
+            }
+            // Swap logic
+            if (selectedIndex === null) {
+                selectedIndex = i;
+                renderDeck();
+            } else {
+                saveState();
+                [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+                selectedIndex = null;
+                renderDeck();
+            }
+        };
+
+        wrapper.appendChild(div);
+        container.appendChild(wrapper);
+    });
+}
 
     function togglePeek() {
         peekMode = !peekMode;
