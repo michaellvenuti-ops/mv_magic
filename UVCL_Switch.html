@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Card Lab Router</title>
+    <script>
+        // Check if the device is likely an iPhone
+        const isIPhone = /iPhone/i.test(navigator.userAgent);
+
+        if (isIPhone) {
+            // Redirect to the iPhone-optimized version
+            window.location.href = "UVCL21.html";
+        } else {
+            // Redirect to the Desktop/iPad version
+            window.location.href = "UVCL25.html";
+        }
+    </script>
+</head>
+<body>
+    <p>Loading your Card Lab...</p>
+</body>
+</html>
