@@ -5,59 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Card Lab v9.2</title>
     <style>
-    :root { --bg: #050505; --panel: #1a1a1a; --text: #f1faee; }
-    
-    /* 1. Fix the "Sliver" issue: Allow the page to scroll on mobile */
-    body { 
-        font-family: 'Segoe UI', sans-serif; 
-        background: var(--bg); 
-        color: var(--text); 
-        margin: 0; 
-        display: flex; 
-        height: 100dvh; /* Dynamic Height */
-        overflow-y: auto; /* Allow scrolling */
-        flex-direction: column;
-    }
-
-    /* 2. Fix the "Black Gaps": Target the Deck display */
-    .deck-display { 
-        display: grid; 
-        grid-template-columns: repeat(13, 1fr); /* 13 cards maintained */
-        gap: 0px !important;            /* Removes gap between cards */
-        padding: 0px !important;        /* Removes internal padding */
-        margin: 0px !important;         /* Removes margin */
-        background: transparent !important; /* Removes the container background color */
-        box-sizing: border-box;
-    }
-
-    /* 3. Card Styling: Force clean edges */
-    .card { 
-        border: 0.5px solid #333;       /* Thinner border */
-        box-sizing: border-box;         /* Keeps border inside width */
-        margin: 0px !important;
-        aspect-ratio: 5/7;
-        background: white;              /* Card color */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* 4. iPhone/Mobile Specifics */
-    @media (max-width: 767px) {
-        #sidebar { width: 100%; height: auto; }
-        #lab-main { flex: 1; padding: 5px; overflow-y: visible; }
+        :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 360px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 15px; overflow-y: auto; }
+        .history-log { flex-grow: 1; min-height: 120px; background: #000; border: 1px solid #444; padding: 10px; font-family: monospace; font-size: 0.7rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 10px; }
+        #lab-main { flex-grow: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
         
-        /* Disable images to match v21 style */
-        .card img { display: none !important; }
+        /* Dynamic Grid Layout to accommodate responsive sizing choices */
+        .deck-display { display: grid; gap: 6px; margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
+        /* .deck-display.size-small { grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); }
+        .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); } */
         
-        /* Show the text/label */
-        .card::after {
-            content: attr(data-card-label); 
-            font-size: 0.6rem;
-            color: #000;
-        }
-    }
-</style>
+        .deck-display.size-small  { grid-template-columns: repeat(13, 80px); }
+        .deck-display.size-medium { grid-template-columns: repeat(13, 90px); }
+        .deck-display.size-large { grid-template-columns: repeat(13, 1fr); }
+        
+        /* Optimized for Custom Card Face Graphics */
+        .card { background: white; border-radius: 4px; cursor: pointer; position: relative; transition: 0.2s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
+        .card.selected { outline: 3px solid var(--gold); transform: translateY(-3px); z-index: 10; }
+        .card.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
+        
+        /* Floating Layer for Embedded Numbers (Dual Index Configuration) */
+        .card-index { position: absolute; color: #222; font-weight: bold; z-index: 5; background: rgba(255,255,255,0.8); padding: 1px 2px; border-radius: 2px; line-height: 1; font-family: sans-serif; }
+        .card-index.top-right { top: 2px; right: 2px; }
+        .card-index.bottom-left { bottom: 2px; left: 2px; }
+
+        /* Dynamic Font Sizing adjustments for indexes based on card scale */
+        .deck-display.size-small .card-index { font-size: 0.45rem; padding: 0px 2px; }
+        .deck-display.size-medium .card-index { font-size: 0.55rem; padding: 1px 2px; }
+        .deck-display.size-large .card-index { font-size: 0.65rem; padding: 1px 3px; }
+
+        .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 6px; cursor: pointer; font-size: 0.6rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
+        button:hover { background: var(--accent); }
+        .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 15px 0 10px 0; position: relative; }
+        .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 8px; font-size: 0.55rem; color: var(--gold); }
+        #poker-arena { margin-top: 20px; background: var(--felt); border: 4px solid #064420; border-radius: 12px; padding: 15px; display: none; }
+        .hand-row { display: flex; gap: 5px; margin-bottom: 10px; }
+        
+        /* Table Cards for Poker Sims - Scaled up 2x from base 35x50 sizing */
+        .table-card { width: 70px; height: 100px; background: white; border-radius: 6px; display: flex; align-items: center; justify-content: center; border: 1px solid #999; overflow: hidden; }
+        .table-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
+        input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
+
+        /* PEEK MODE */
+        .card.face-down { background: #d90429; border: 2px solid #fff; cursor: pointer; }
+        .card.face-down .card-img { display: none; }
+        .card.face-down .card-index { display: none; }
+        .card.face-down.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
+    </style>
 </head>
 <body>
 
