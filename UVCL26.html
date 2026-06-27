@@ -261,9 +261,16 @@ if (peekMode) {
 
             // Position number dual layout rules (Top Right & Bottom Left corners)
             // div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
-            div.innerHTML = (peekMode ? '<div class="peek-idx">' + (i + 1) + '</div>' : '') + '<img src="cards/' + card + '.png" class="card-img" ... (rest of your image code) ... >';
+            //div.innerHTML = (peekMode ? '<div class="peek-idx">' + (i + 1) + '</div>' : '') + '<img src="cards/' + card + '.png" class="card-img" ... (rest of your image code) ... >';
+            div.innerHTML = `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+//if (peekMode) {
+  //  const idxLabel = document.createElement('div');
+    //idxLabel.className = 'peek-idx';
+    //idxLabel.innerText = i + 1;
+    //div.appendChild(idxLabel);
+//}
 
-if (peekMode) {
+            if (peekMode) {
     const idxLabel = document.createElement('div');
     idxLabel.className = 'peek-idx';
     idxLabel.innerText = i + 1;
