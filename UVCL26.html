@@ -56,17 +56,22 @@
         .card.face-down .card-index { display: none; }
         .card.face-down.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
 
-    .peek-num {
-    position: absolute; 
-    top: 50%; left: 50%; 
+.peek-num {
+    position: absolute !important; /* Force it to float inside the card */
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background: white; color: black; 
+    background: white !important; 
+    color: black !important; 
     border-radius: 50%;
-    width: 20px; height: 20px; 
-    display: flex; align-items: center; 
+    width: 25px; height: 25px; 
+    display: flex !important; 
+    align-items: center; 
     justify-content: center; 
-    font-size: 10px; z-index: 5;
-    }
+    font-size: 0.8rem; 
+    font-weight: bold;
+    z-index: 999; /* Force it to stay on top of everything */
+    border: 1px solid #000;
+}
     
     </style>
 </head>
@@ -227,18 +232,20 @@
             const wrapper = document.createElement('div');
             wrapper.className = 'card-container';
             
-            const div = document.createElement('div');
+const div = document.createElement('div');
 
-            if (peekMode) {
-                div.className = 'card face-down';
-            } else {
-                div.className = 'card';
-            }
-            
+// 1. YOUR EXISTING CLASS LOGIC
+if (peekMode) {
+    div.className = 'card face-down';
+} else {
+    div.className = 'card';
+}
+
+// 2. ADD THIS EXACT BLOCK HERE
 if (peekMode) {
     const num = document.createElement('div');
     num.className = 'peek-num';
-    num.innerText = i + 1; 
+    num.innerText = i + 1;
     div.appendChild(num);
 }
             if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
