@@ -279,8 +279,11 @@ if (peekMode) {
             
             // Display graphic asset from /cards/ matching string notation
             if (!peekMode) {
-                div.innerHTML += `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+                //div.innerHTML += `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+                 div.innerHTML = `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+
             }
+            
 
             if (coachActive && !peekMode) wrapper.title = `Stack Position: ${i+1}`;
 
