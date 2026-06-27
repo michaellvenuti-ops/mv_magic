@@ -27,9 +27,9 @@
         .deck-display { 
             display: grid; 
             grid-template-columns: repeat(13, 1fr); 
-            gap: 4px; 
+            gap: 0px; 
             margin-bottom: 15px; 
-            padding: 10px; 
+            padding: 0px; 
             background: rgba(255,255,255,0.05); 
             border-radius: 8px; 
             border: 1px solid #333; 
@@ -44,8 +44,8 @@
         }
 
         /* Scaling rules based on user selection */
-        .deck-display.size-small .card-container { max-width: 45px; }
-        .deck-display.size-medium .card-container { max-width: 65px; }
+        .deck-display.size-small .card-container { max-width: 65px; }
+        .deck-display.size-medium .card-container { max-width: 85px; }
         .deck-display.size-large .card-container { max-width: 100%; }
         
         /* Standardized Card/Peek Size */
@@ -78,7 +78,7 @@
         
         /* Dynamic Index Sizing */
         .deck-display.size-small .card-index { font-size: 0.4rem; padding: 0px 2px; }
-        .deck-display.size-medium .card-index { font-size: 0.5rem; padding: 1px 2px; }
+        .deck-display.size-medium .card-index { font-size: 0.5rem; padding: 0px 2px; }
         .deck-display.size-large .card-index { font-size: 0.6rem; padding: 1px 3px; }
 
         .card-img { width: 100%; height: 100%; object-fit: contain; display: block; }
@@ -96,12 +96,25 @@
         .table-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 5px; font-size: 0.7rem; border-radius: 3px; }
         
-        /* Ensure mobile flow works */
-        @media (max-width: 800px) {
-            body { flex-direction: column; }
-            #sidebar { width: 100%; height: 40vh; border-right: none; border-bottom: 2px solid #333;}
-            #lab-main { height: 60vh; }
+    /* 3. iPhone Override: Disable Images, Show Text/Logic */
+    @media (max-width: 767px) {
+        /* Hide images specifically on mobile */
+        .card img {
+            display: none !important;
         }
+        
+        /* Ensure the card container displays the value/suit as text */
+        .card::after {
+            content: attr(data-card-label); /* Ensure your HTML has this attribute */
+            font-size: 0.6rem;
+            color: white;
+        }
+        
+        /* Force vertical orientation for the app to allow natural scrolling */
+        body { flex-direction: column; }
+        #lab-main { order: 1; overflow-y: auto; }
+        #sidebar { order: 2; height: auto; }
+    }
     </style>
 </head>
 <body>
