@@ -57,20 +57,14 @@
         .card.face-down.is-tracked { border: 2.5px solid var(--gold) !important; box-shadow: 0 0 10px var(--gold); }
 
 .peek-num {
-    position: absolute !important; /* Force it to float inside the card */
+    position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background: white !important; 
-    color: black !important; 
-    border-radius: 50%;
-    width: 25px; height: 25px; 
-    display: flex !important; 
-    align-items: center; 
-    justify-content: center; 
-    font-size: 0.8rem; 
+    color: black;
+    font-size: 2rem; /* Big and readable */
     font-weight: bold;
-    z-index: 999; /* Force it to stay on top of everything */
-    border: 1px solid #000;
+    z-index: 20;
+    pointer-events: none; /* Allows you to click through it */
 }
     
     </style>
@@ -243,10 +237,10 @@ if (peekMode) {
 
 // 2. ADD THIS EXACT BLOCK HERE
 if (peekMode) {
-    const num = document.createElement('div');
-    num.className = 'peek-num';
-    num.innerText = i + 1;
-    div.appendChild(num);
+    const label = document.createElement('span');
+    label.className = 'peek-num';
+    label.innerText = i + 1;
+    div.appendChild(label);
 }
             if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
             if (selectedIndex === i) div.classList.add('selected');
