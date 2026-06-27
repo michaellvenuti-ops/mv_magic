@@ -66,7 +66,21 @@
     z-index: 20;
     pointer-events: none; /* Allows you to click through it */
 }
-    
+
+        .peek-idx {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    z-index: 100;
+    pointer-events: none;
+    background: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+        
     </style>
 </head>
 <body>
@@ -248,6 +262,13 @@ if (peekMode) {
             // Position number dual layout rules (Top Right & Bottom Left corners)
             div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
 
+if (peekMode) {
+    const idxLabel = document.createElement('div');
+    idxLabel.className = 'peek-idx';
+    idxLabel.innerText = i + 1;
+    div.appendChild(idxLabel);
+}
+            
             // Display graphic asset from /cards/ matching string notation
             if (!peekMode) {
                 div.innerHTML += `<img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
