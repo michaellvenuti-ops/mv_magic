@@ -260,7 +260,8 @@ if (peekMode) {
             if (selectedIndex === i) div.classList.add('selected');
 
             // Position number dual layout rules (Top Right & Bottom Left corners)
-            div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
+            // div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
+            div.innerHTML = (peekMode ? '<div class="peek-idx">' + (i + 1) + '</div>' : '') + '<img src="cards/' + card + '.png" class="card-img" ... (rest of your image code) ... >';
 
 if (peekMode) {
     const idxLabel = document.createElement('div');
@@ -280,11 +281,22 @@ if (peekMode) {
                 if (peekMode) {
                     // Peek mechanics: inject image temporarily for 1 second
                     div.classList.remove('face-down');
-                    div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span><img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
-                    setTimeout(() => {
-                        div.classList.add('face-down');
-                        div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
-                    }, 1000);
+                    //div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span><img src="cards/${card}.png" class="card-img" alt="${card}" onerror="this.style.display='none'; this.parentNode.innerHTML+='<span style=\\'color:black\\'>'+'${card}'+'</span>';">`;
+                    //setTimeout(() => {
+                   //     div.classList.add('face-down');
+                   //     div.innerHTML = `<span class="card-index top-right">${i+1}</span><span class="card-index bottom-left">${i+1}</span>`;
+                   // }, 1000);
+
+                    // For the flip (Peek mode):
+div.innerHTML = (peekMode ? '<div class="peek-idx">' + (i + 1) + '</div>' : '') + '<img src="cards/' + card + '.png" class="card-img" ... >';
+
+// For the setTimeout (Flipping back):
+setTimeout(() => {
+    div.classList.add('face-down');
+    // ADD THE INDEX BACK HERE TOO:
+    div.innerHTML = (peekMode ? '<div class="peek-idx">' + (i + 1) + '</div>' : '');
+}, 1000);
+                    
                     return;
                 }
                 // Normal cell swap mode
