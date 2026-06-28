@@ -131,9 +131,16 @@
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">Move the Top Card to any position using Faros</span>
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MOVE THE TOP CARD TO ANY POSITION USING FARO SHUFFLE</span>
         <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-        <button onclick="showFaroNav()" style="padding: var(--pad-small);">Faro Navigator</button>
+        <button onclick="showFaroNav()" style="padding: var(--pad-small);">FARO TOP CARD NAVIGATOR</button>
+        </div>
+    </div>
+    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">FARO CYCLES DEMO</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+        <button onclick="showFaroCycles()" style="padding: var(--pad-small);">Faro Cycles Demo</button>
         </div>
     </div>
     
@@ -252,6 +259,58 @@
 
     <!-- Status line -->
     <div id="faro-nav-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+</div>
+<!-- ============ PART 2: FARO CYCLES ARENA ============ -->
+<div id="faro-cycles-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Cycles Demo</span>
+        <button onclick="document.getElementById('faro-cycles-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
+    </div>
+
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:14px; line-height:1.6;">
+        Two of the most remarkable results in card mathematics:<br>
+        <span style="color:var(--gold);">8 consecutive Out-Faros</span> return any 52-card deck to its original order.<br>
+        <span style="color:var(--accent);">52 consecutive In-Faros</span> do the same &mdash; one shuffle for every card in the deck.
+    </div>
+
+    <!-- Mode selector -->
+    <div style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+        <button id="cycles-out-btn" onclick="initFaroCycles('OUT')"
+                style="border-color:var(--gold); color:var(--gold); flex:1;">
+            8 Out-Faros (8 steps)
+        </button>
+        <button id="cycles-in-btn" onclick="initFaroCycles('IN')"
+                style="border-color:var(--accent); color:var(--accent); flex:1;">
+            52 In-Faros (52 steps)
+        </button>
+    </div>
+
+    <!-- Snapshot of starting top card -->
+    <div id="cycles-top-card" style="font-size:0.6rem; color:#aaa; margin-bottom:10px;"></div>
+
+    <!-- Progress bar -->
+    <div style="background:#111; border-radius:4px; height:10px; margin-bottom:10px; overflow:hidden; display:none;" id="cycles-progress-wrap">
+        <div id="cycles-progress-bar" style="height:100%; width:0%; background:var(--gold); transition:width 0.2s;"></div>
+    </div>
+
+    <!-- Shuffle tiles -->
+    <div id="cycles-sequence" style="display:flex; gap:4px; flex-wrap:wrap; margin-bottom:12px;"></div>
+
+    <!-- Control buttons -->
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;" id="cycles-controls" style="display:none;">
+        <button onclick="faroCycleStep()" id="cycles-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="faroCycleRunAll()" id="cycles-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="faroCycleReset()" id="cycles-reset-btn" style="display:none; border-color:#888; color:#888;">&#8635; Reset</button>
+    </div>
+
+    <!-- Status -->
+    <div id="cycles-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+
+    <!-- Match callout -->
+    <div id="cycles-match" style="display:none; margin-top:12px; padding:10px; border:1px solid var(--gold);
+         border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;">
+    </div>
 </div>
 
 </div>
@@ -744,6 +803,140 @@ function faroNavReset() {
     document.getElementById('faro-nav-step-btn').style.display = 'none';
     document.getElementById('faro-nav-run-btn').style.display = 'none';
     document.getElementById('faro-nav-reset-btn').style.display = 'none';
+}
+// ---- FARO CYCLES DEMO ----
+let faroCycleMode = 'OUT';
+let faroCycleStep_idx = 0;
+let faroCycleTotalSteps = 0;
+let faroCycleStartDeck = [];
+
+function showFaroCycles() {
+    document.getElementById('faro-cycles-arena').style.display = 'block';
+    document.getElementById('faro-cycles-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Reset to clean state
+    document.getElementById('cycles-sequence').innerHTML = '';
+    document.getElementById('cycles-status').innerText = 'Choose Out-Faros (8 steps) or In-Faros (52 steps) to begin.';
+    document.getElementById('cycles-top-card').innerText = '';
+    document.getElementById('cycles-match').style.display = 'none';
+    document.getElementById('cycles-progress-wrap').style.display = 'none';
+    document.getElementById('cycles-step-btn').style.display = 'none';
+    document.getElementById('cycles-run-btn').style.display = 'none';
+    document.getElementById('cycles-reset-btn').style.display = 'none';
+}
+
+function initFaroCycles(mode) {
+    faroCycleMode = mode;
+    faroCycleStep_idx = 0;
+    faroCycleTotalSteps = mode === 'OUT' ? 8 : 52;
+    faroCycleStartDeck = [...deck];
+
+    // Highlight active mode button
+    document.getElementById('cycles-out-btn').style.background = mode === 'OUT' ? 'rgba(255,183,3,0.15)' : '';
+    document.getElementById('cycles-in-btn').style.background = mode === 'IN' ? 'rgba(217,4,41,0.15)' : '';
+
+    // Show starting top card
+    document.getElementById('cycles-top-card').innerHTML =
+        'Starting top card: <span style="color:var(--gold); font-weight:bold;">' + deck[0] + '</span> &mdash; watch it travel and return.';
+
+    // Build shuffle tiles
+    const sdiv = document.getElementById('cycles-sequence');
+    sdiv.innerHTML = '';
+    for (let i = 0; i < faroCycleTotalSteps; i++) {
+        const tile = document.createElement('div');
+        tile.id = 'cycle-tile-' + i;
+        tile.style.cssText = 'padding:4px 7px; border-radius:4px; font-size:0.55rem; font-weight:bold;'
+            + 'border:1px solid #333; background:#111; color:#444; text-align:center; min-width:32px;';
+        tile.innerHTML = '<div style="font-size:0.45rem; color:#444;">' + (i + 1) + '</div>' + mode;
+        sdiv.appendChild(tile);
+    }
+
+    // Progress bar
+    document.getElementById('cycles-progress-wrap').style.display = 'block';
+    document.getElementById('cycles-progress-bar').style.width = '0%';
+
+    // Show controls
+    document.getElementById('cycles-step-btn').style.display = 'inline-block';
+    document.getElementById('cycles-run-btn').style.display = 'inline-block';
+    document.getElementById('cycles-reset-btn').style.display = 'inline-block';
+    document.getElementById('cycles-match').style.display = 'none';
+
+    document.getElementById('cycles-status').innerText =
+        faroCycleTotalSteps + ' ' + mode + '-Faros needed. Step through or Run All.';
+}
+
+function faroCycleStep() {
+    if (faroCycleStep_idx >= faroCycleTotalSteps) return;
+
+    faroShuffle(faroCycleMode);  // uses existing faroShuffle()
+
+    // Light up the tile
+    const tile = document.getElementById('cycle-tile-' + faroCycleStep_idx);
+    if (tile) {
+        const color = faroCycleMode === 'OUT' ? 'var(--gold)' : 'var(--accent)';
+        const bg    = faroCycleMode === 'OUT' ? 'rgba(255,183,3,0.18)' : 'rgba(217,4,41,0.18)';
+        tile.style.borderColor = color;
+        tile.style.color = color;
+        tile.style.background = bg;
+    }
+
+    faroCycleStep_idx++;
+
+    // Update progress bar
+    const pct = (faroCycleStep_idx / faroCycleTotalSteps) * 100;
+    document.getElementById('cycles-progress-bar').style.width = pct + '%';
+
+    const remaining = faroCycleTotalSteps - faroCycleStep_idx;
+
+    if (remaining === 0) {
+        // Check if deck actually matches the starting deck
+        const restored = deck.every((c, i) => c === faroCycleStartDeck[i]);
+        document.getElementById('cycles-step-btn').style.display = 'none';
+        document.getElementById('cycles-run-btn').style.display = 'none';
+        document.getElementById('cycles-progress-bar').style.background = restored ? '#00c853' : 'var(--accent)';
+
+        const matchDiv = document.getElementById('cycles-match');
+        matchDiv.style.display = 'block';
+        if (restored) {
+            matchDiv.style.borderColor = 'var(--gold)';
+            matchDiv.style.color = 'var(--gold)';
+            matchDiv.innerHTML = '&#10003; Deck fully restored after '
+                + faroCycleTotalSteps + ' ' + faroCycleMode + '-Faros.<br>'
+                + '<span style="font-size:0.6rem; color:#aaa;">Every card is back in its original position.</span>';
+            document.getElementById('cycles-status').innerText = 'Complete! The deck is identical to when you started.';
+        } else {
+            matchDiv.innerHTML = '&#9888; Deck does not match starting order &mdash; check for an odd number of cards.';
+            document.getElementById('cycles-status').innerText = 'Sequence done but deck did not restore. Verify deck has exactly 52 cards.';
+        }
+    } else {
+        document.getElementById('cycles-status').innerText =
+            faroCycleMode + '-Faro #' + faroCycleStep_idx + ' done. ' + remaining + ' remaining.';
+    }
+}
+
+function faroCycleRunAll() {
+    while (faroCycleStep_idx < faroCycleTotalSteps) {
+        faroCycleStep();
+    }
+}
+
+function faroCycleReset() {
+    // Restore the deck to what it was when the demo started
+    saveState();
+    deck = [...faroCycleStartDeck];
+    renderDeck();
+    logMove('Faro Cycles: deck restored to starting position.');
+
+    faroCycleStep_idx = 0;
+    document.getElementById('cycles-sequence').innerHTML = '';
+    document.getElementById('cycles-status').innerText = 'Deck reset to starting order. Choose a mode to run again.';
+    document.getElementById('cycles-top-card').innerText = '';
+    document.getElementById('cycles-match').style.display = 'none';
+    document.getElementById('cycles-progress-wrap').style.display = 'none';
+    document.getElementById('cycles-step-btn').style.display = 'none';
+    document.getElementById('cycles-run-btn').style.display = 'none';
+    document.getElementById('cycles-reset-btn').style.display = 'none';
+    document.getElementById('cycles-out-btn').style.background = '';
+    document.getElementById('cycles-in-btn').style.background = '';
 }
 
 </script>
