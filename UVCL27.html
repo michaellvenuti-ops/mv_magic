@@ -217,6 +217,43 @@
         <div id="poker-rows"></div>
         <div id="community-cards" style="margin-top:10px; border-top:1px dashed var(--gold); padding-top:10px;"></div>
     </div>
+    <!-- ============ PART 2: FARO NAVIGATOR ARENA ============ -->
+<div id="faro-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Navigator &mdash; Move Top Card to Position N</span>
+        <button onclick="document.getElementById('faro-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
+    </div>
+
+    <!-- How it works blurb -->
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.5;">
+        Based on the binary method by S. Brent Morris. Subtract 1 from the target position,
+        convert to binary, then read each bit left-to-right: <span style="color:var(--gold);">1 = In-shuffle, 0 = Out-shuffle.</span>
+        The top card lands exactly at your target after the full sequence.
+    </div>
+
+    <!-- Input row -->
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+        <span style="font-size:0.6rem; color:var(--gold);">Target Position:</span>
+        <input type="number" id="faro-nav-target" min="2" max="52" value="40"
+               style="width:50px; background:#111; color:#00f5d4; border:1px solid #555;
+                      border-radius:3px; text-align:center; font-size:0.7rem; padding:4px;">
+        <button onclick="calcFaroNav()" style="border-color:var(--gold); color:var(--gold);">Calculate</button>
+        <button onclick="faroNavStep()" id="faro-nav-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="faroNavRunAll()" id="faro-nav-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="faroNavReset()" id="faro-nav-reset-btn" style="display:none; border-color:#888; color:#888;">Reset</button>
+    </div>
+
+    <!-- Binary breakdown display -->
+    <div id="faro-nav-breakdown" style="margin-bottom:14px;"></div>
+
+    <!-- Step-by-step shuffle sequence -->
+    <div id="faro-nav-sequence" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
+
+    <!-- Status line -->
+    <div id="faro-nav-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+</div>
+
 </div>
 
 <script>
@@ -596,42 +633,7 @@ setTimeout(() => {
         changeCardSize('small'); // Synchronizes layout class and active state button highlighting
     };
 
-    <!-- ============ PART 2: FARO NAVIGATOR ARENA ============ -->
-<div id="faro-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Navigator &mdash; Move Top Card to Position N</span>
-        <button onclick="document.getElementById('faro-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
-    </div>
-
-    <!-- How it works blurb -->
-    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.5;">
-        Based on the binary method by S. Brent Morris. Subtract 1 from the target position,
-        convert to binary, then read each bit left-to-right: <span style="color:var(--gold);">1 = In-shuffle, 0 = Out-shuffle.</span>
-        The top card lands exactly at your target after the full sequence.
-    </div>
-
-    <!-- Input row -->
-    <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
-        <span style="font-size:0.6rem; color:var(--gold);">Target Position:</span>
-        <input type="number" id="faro-nav-target" min="2" max="52" value="40"
-               style="width:50px; background:#111; color:#00f5d4; border:1px solid #555;
-                      border-radius:3px; text-align:center; font-size:0.7rem; padding:4px;">
-        <button onclick="calcFaroNav()" style="border-color:var(--gold); color:var(--gold);">Calculate</button>
-        <button onclick="faroNavStep()" id="faro-nav-step-btn" style="display:none;">&#9654; Step</button>
-        <button onclick="faroNavRunAll()" id="faro-nav-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
-        <button onclick="faroNavReset()" id="faro-nav-reset-btn" style="display:none; border-color:#888; color:#888;">Reset</button>
-    </div>
-
-    <!-- Binary breakdown display -->
-    <div id="faro-nav-breakdown" style="margin-bottom:14px;"></div>
-
-    <!-- Step-by-step shuffle sequence -->
-    <div id="faro-nav-sequence" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
-
-    <!-- Status line -->
-    <div id="faro-nav-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
-</div>
+   
 
 // ---- FARO NAVIGATOR ----
 let faroNavSeq = [];      // array of 'IN' or 'OUT'
