@@ -1011,9 +1011,11 @@ function faroCycleReset() {
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cycles to NDO</td><td style="padding:6px 8px;">Simulates up to 8 consecutive Out-Faros and reports whether any iteration reaches a known stack or NDO.</td></tr>
         </table>
 
-        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FARO NAVIGATOR</div>
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FARO NAVIGATOR &amp; CYCLES</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro Navigator</td><td style="padding:6px 8px;">Enter a target position (2&ndash;52) to calculate the exact sequence of In and Out shuffles needed to move the current top card there. Based on the binary method by S. Brent Morris: subtract 1 from the target, convert to binary, then read each bit as an In-shuffle (1) or Out-shuffle (0). Use Step or Run All to execute the sequence live on the deck.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro Navigator</td><td style="padding:6px 8px;">Enter a target position (2&ndash;52) to calculate the exact sequence of In and Out shuffles needed to move the current top card there. Based on the binary method by S. Brent Morris: subtract 1 from the target, convert to binary, then read each bit as an In-shuffle (1) or Out-shuffle (0). Use Step or Run All to execute the sequence live on the deck.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">8 Out-Faros</td><td style="padding:6px 8px;">One of the most remarkable results in card mathematics: 8 consecutive Out-Faros return any 52-card deck to its exact original order. Step through one shuffle at a time or Run All &mdash; the progress bar fills and a confirmation appears when every card is back in place.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">52 In-Faros</td><td style="padding:6px 8px;">The In-Faro equivalent: 52 consecutive In-Faros restore the deck &mdash; one shuffle for every card. The cycle length matches the deck size exactly, which feels almost impossibly poetic. Use Reset at any point to return the deck to its state when the demo started.</td></tr>
         </table>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">POKER SIMS</div>
@@ -1038,6 +1040,7 @@ function faroCycleReset() {
         </div>
     </div>
 </div>
+
 
 
 
