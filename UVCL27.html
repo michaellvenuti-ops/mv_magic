@@ -551,23 +551,24 @@ setTimeout(() => {
         logMove("Reverse Bottom 26"); renderDeck();
     }
 
-function unequalFaroTop() {
+function unequalFaroTopIn() {
     saveState();
     let top = deck.slice(0, 18);
-    let bot = deck.slice(18);
+    let bot = deck.slice(18); // This is the 34 cards remaining
     let res = [];
     
-    // Perform an Out-Faro weave: Start with the top card
+    // Perform an In-Faro weave: 
+    // Start with the first card of the BOTTOM packet (bot[0])
     for(let i = 0; i < top.length; i++) { 
-        res.push(top[i]); // Original top card stays on top
         res.push(bot[i]); 
+        res.push(top[i]); 
     }
     
-    // Append the remaining 16 cards from the bottom packet
-    res = res.concat(bot.slice(18));
+    // Append the remaining cards from the bottom packet
+    res = res.concat(bot.slice(top.length));
     
     deck = res; 
-    logMove("Unequal Faro Top 18"); 
+    logMove("Unequal Faro Top 18 (In-Weave)"); 
     renderDeck();
 }
 
