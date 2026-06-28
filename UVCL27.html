@@ -130,6 +130,13 @@
         </div>
     </div>
 
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">Move the Top Card to any position using Faros</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+        <button onclick="showFaroNav()" style="padding: var(--pad-small);">Faro Navigator</button>
+        </div>
+    </div>
+    
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
         <button onclick="exportStack()" style="padding: var(--pad-small);">📤 Export</button>
         <button onclick="importStack()" style="padding: var(--pad-small);">📥 Import</button>
@@ -588,6 +595,155 @@ setTimeout(() => {
         preloadCardImages();
         changeCardSize('small'); // Synchronizes layout class and active state button highlighting
     };
+
+    <!-- ============ PART 2: FARO NAVIGATOR ARENA ============ -->
+<div id="faro-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Navigator &mdash; Move Top Card to Position N</span>
+        <button onclick="document.getElementById('faro-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
+    </div>
+
+    <!-- How it works blurb -->
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.5;">
+        Based on the binary method by S. Brent Morris. Subtract 1 from the target position,
+        convert to binary, then read each bit left-to-right: <span style="color:var(--gold);">1 = In-shuffle, 0 = Out-shuffle.</span>
+        The top card lands exactly at your target after the full sequence.
+    </div>
+
+    <!-- Input row -->
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+        <span style="font-size:0.6rem; color:var(--gold);">Target Position:</span>
+        <input type="number" id="faro-nav-target" min="2" max="52" value="40"
+               style="width:50px; background:#111; color:#00f5d4; border:1px solid #555;
+                      border-radius:3px; text-align:center; font-size:0.7rem; padding:4px;">
+        <button onclick="calcFaroNav()" style="border-color:var(--gold); color:var(--gold);">Calculate</button>
+        <button onclick="faroNavStep()" id="faro-nav-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="faroNavRunAll()" id="faro-nav-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="faroNavReset()" id="faro-nav-reset-btn" style="display:none; border-color:#888; color:#888;">Reset</button>
+    </div>
+
+    <!-- Binary breakdown display -->
+    <div id="faro-nav-breakdown" style="margin-bottom:14px;"></div>
+
+    <!-- Step-by-step shuffle sequence -->
+    <div id="faro-nav-sequence" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
+
+    <!-- Status line -->
+    <div id="faro-nav-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+</div>
+
+// ---- FARO NAVIGATOR ----
+let faroNavSeq = [];      // array of 'IN' or 'OUT'
+let faroNavStep_idx = 0;  // current step pointer
+let faroNavTarget = 0;
+
+function showFaroNav() {
+    document.getElementById('faro-arena').style.display = 'block';
+    document.getElementById('faro-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    calcFaroNav();
+}
+
+function calcFaroNav() {
+    const target = parseInt(document.getElementById('faro-nav-target').value);
+    if (isNaN(target) || target < 2 || target > 52) {
+        document.getElementById('faro-nav-status').innerText = 'Enter a position from 2 to 52.';
+        return;
+    }
+    faroNavTarget = target;
+    faroNavStep_idx = 0;
+
+    // Binary method: (target - 1) in binary, each bit is IN(1) or OUT(0)
+    const n = target - 1;
+    const bits = n.toString(2).split('');  // MSB first
+    faroNavSeq = bits.map(b => b === '1' ? 'IN' : 'OUT');
+
+    // Render binary breakdown
+    const bdiv = document.getElementById('faro-nav-breakdown');
+    let html = '<div style="font-size:0.6rem; color:#aaa; margin-bottom:6px;">'
+             + 'Target &minus; 1 = ' + n + ' &nbsp;&rarr;&nbsp; binary: <span style="color:var(--gold); font-family:monospace; font-size:0.75rem;">' + n.toString(2) + '</span></div>';
+    html += '<div style="display:flex; gap:4px; flex-wrap:wrap;">';
+    // Powers of 2 header
+    const pow = Math.pow;
+    const bitLen = bits.length;
+    bits.forEach((b, i) => {
+        const power = bitLen - 1 - i;
+        const used = b === '1';
+        html += '<div style="text-align:center; min-width:38px;">'
+              + '<div style="font-size:0.5rem; color:#777;">2<sup>' + power + '</sup>=' + Math.pow(2, power) + '</div>'
+              + '<div style="font-size:1rem; font-weight:bold; color:' + (used ? 'var(--gold)' : '#555') + ';">' + b + '</div>'
+              + '<div style="font-size:0.55rem; color:' + (used ? 'var(--accent)' : '#444') + ';">' + (used ? 'IN' : 'OUT') + '</div>'
+              + '</div>';
+    });
+    html += '</div>';
+    bdiv.innerHTML = html;
+
+    // Render step tiles
+    const sdiv = document.getElementById('faro-nav-sequence');
+    sdiv.innerHTML = '';
+    faroNavSeq.forEach((s, i) => {
+        const tile = document.createElement('div');
+        tile.id = 'faro-tile-' + i;
+        tile.style.cssText = 'padding:6px 10px; border-radius:4px; font-size:0.65rem; font-weight:bold;'
+                           + 'border:1px solid #444; background:#1a1a1a; color:#555; text-align:center; min-width:44px;';
+        tile.innerHTML = '<div style="font-size:0.5rem; color:#555;">Step ' + (i+1) + '</div>' + s;
+        sdiv.appendChild(tile);
+    });
+
+    document.getElementById('faro-nav-step-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-run-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-reset-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-status').innerText =
+        faroNavSeq.length + ' shuffles needed. Press Step to execute one at a time, or Run All to complete the sequence.';
+}
+
+function faroNavStep() {
+    if (faroNavStep_idx >= faroNavSeq.length) {
+        document.getElementById('faro-nav-status').innerText =
+            'Sequence complete. Top card is now at position ' + faroNavTarget + '.';
+        return;
+    }
+    const type = faroNavSeq[faroNavStep_idx];
+    faroShuffle(type);  // calls your existing faroShuffle function
+
+    // Highlight the tile
+    const tile = document.getElementById('faro-tile-' + faroNavStep_idx);
+    if (tile) {
+        tile.style.background = type === 'IN' ? 'var(--accent)' : '#1a5c2a';
+        tile.style.color = 'white';
+        tile.style.borderColor = type === 'IN' ? 'var(--accent)' : 'var(--gold)';
+    }
+
+    faroNavStep_idx++;
+    const remaining = faroNavSeq.length - faroNavStep_idx;
+    if (remaining === 0) {
+        document.getElementById('faro-nav-status').innerText =
+            'Done! Top card is now at position ' + faroNavTarget + '.';
+        document.getElementById('faro-nav-step-btn').style.display = 'none';
+        document.getElementById('faro-nav-run-btn').style.display = 'none';
+    } else {
+        document.getElementById('faro-nav-status').innerText =
+            'Executed ' + type + '-shuffle. ' + remaining + ' step(s) remaining.';
+    }
+}
+
+function faroNavRunAll() {
+    while (faroNavStep_idx < faroNavSeq.length) {
+        faroNavStep();
+    }
+}
+
+function faroNavReset() {
+    faroNavStep_idx = 0;
+    faroNavSeq = [];
+    document.getElementById('faro-nav-breakdown').innerHTML = '';
+    document.getElementById('faro-nav-sequence').innerHTML = '';
+    document.getElementById('faro-nav-status').innerText = '';
+    document.getElementById('faro-nav-step-btn').style.display = 'none';
+    document.getElementById('faro-nav-run-btn').style.display = 'none';
+    document.getElementById('faro-nav-reset-btn').style.display = 'none';
+}
+
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
@@ -604,10 +760,10 @@ setTimeout(() => {
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Card Swap</td><td style="padding:6px 8px;">In normal view, click any card to select it (highlighted in gold), then click a second card to swap their positions. A quick way to manually adjust the stack order.</td></tr>
         </table>
 
-        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS & SHUFFLES</div>
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS &amp; SHUFFLES</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro OUT</td><td style="padding:6px 8px;">Perfect weave &mdash; top card stays at position 1. 8 consecutive Out-Faros returns any deck to its original order.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro IN</td><td style="padding:6px 8px;">Perfect weave &mdash; top card moves to position 2. Used for specific stack entry procedures.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro OUT</td><td style="padding:6px 8px;">Perfect weave &mdash; top card stays at position 1. 8 consecutive Out-Faros returns any deck to its original order. Used to cycle a memorized stack back to itself.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro IN</td><td style="padding:6px 8px;">Perfect weave &mdash; top card moves to position 2. Used in stack entry procedures and the binary Faro Navigator to precisely position any card.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Shuffle</td><td style="padding:6px 8px;">Reverses the entire 52-card deck end to end.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Gilbreth Shuffle</td><td style="padding:6px 8px;">Reverses the top 26 cards then randomly interleaves them with the bottom 26.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut Deck (26)</td><td style="padding:6px 8px;">Moves the top 26 cards to the bottom &mdash; a standard half-deck cut.</td></tr>
@@ -622,31 +778,31 @@ setTimeout(() => {
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FALSE WORK (STACK PROTECTION)</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Zarrow Shuffle</td><td style="padding:6px 8px;">Swaps the top 2 cards with the bottom 2. Cards in positions 3&ndash;50 remain completely undisturbed.</td></tr>
-            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Blind Faro</td><td style="padding:6px 8px;">Moves the top 2 cards to positions 25&ndash;26 (center of the deck).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Zarrow Shuffle</td><td style="padding:6px 8px;">Swaps the top 2 cards with the bottom 2. Cards in positions 3&ndash;50 remain completely undisturbed. Simulates a riffle shuffle while preserving the stack.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Blind Faro</td><td style="padding:6px 8px;">Moves the top 2 cards to positions 25&ndash;26 (center of the deck). Appears to lose cards in a shuffle while keeping them locatable.</td></tr>
         </table>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK PRESETS</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order (NDO)</td><td style="padding:6px 8px;">US Bicycle factory order: A&rarr;K Hearts, A&rarr;K Clubs, K&rarr;A Diamonds, K&rarr;A Spades.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">A&rarr;K in all four suits, CHaSeD order. Starting point for the Mnemonica faro entry procedure.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">K&rarr;A in all four suits. Common order in Tally-Ho and European Bicycle decks.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order (NDO)</td><td style="padding:6px 8px;">US Bicycle factory order: A&rarr;K Hearts, A&rarr;K Clubs, K&rarr;A Diamonds, K&rarr;A Spades. Essential baseline for faro math and stack entry procedures.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">A&rarr;K in all four suits, CHaSeD order. The starting point for the Mnemonica faro entry procedure &mdash; reach Mnemonica in 3 steps from here.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">K&rarr;A in all four suits. Common in Tally-Ho and European Bicycle decks. Useful when working with European cards out of the box.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle NDO</td><td style="padding:6px 8px;">Custom new deck order used as the starting point for Particle stack entry procedures.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Mnemonica</td><td style="padding:6px 8px;">Juan Tamariz's world-famous memorized stack.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aronson</td><td style="padding:6px 8px;">Simon Aronson's memorized stack with built-in poker deals and spelling effects.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Nikola</td><td style="padding:6px 8px;">Classic memorized stack by Louis Nikola. One of the earliest published memdeck systems.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Eight Kings</td><td style="padding:6px 8px;">Mnemonic cyclical stack &mdash; "Eight Kings Threatened To Save Nine Fair Ladies For One." Suits rotate CHaSeD.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Boris Wild</td><td style="padding:6px 8px;">Formula-based memdeck. One of the easiest to learn &mdash; values increment by 1 per group of 4 cards.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Memorandum</td><td style="padding:6px 8px;">Woody Aragon's memorized stack.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Osterlind</td><td style="padding:6px 8px;">Richard Osterlind's Breakthrough Card System &mdash; a mathematical cyclical stack favored by mentalists.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Classic Stebbins</td><td style="padding:6px 8px;">Values increase by 3 with each card, suits rotate CHaSeD. The oldest published mathematical stack.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My Stebbins</td><td style="padding:6px 8px;">Personal Stebbins variant starting at a different value offset.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My CHaSeD</td><td style="padding:6px 8px;">Personal CHaSeD stack grouped in sets of 4 by suit. Returns to its original order in 2 Out-Faros.</td></tr>
-            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle</td><td style="padding:6px 8px;">Joshua Jay's memorized stack. A stay-stack with top/bottom mirror properties.</td></tr>
-            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Joyal</td><td style="padding:6px 8px;">Denis Behr's Joyal memorized stack.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Mnemonica</td><td style="padding:6px 8px;">Juan Tamariz's world-famous memorized stack. Exceptionally rich in built-in effects &mdash; poker hands, spelling tricks, Si Stebbins-style math, and suit separation routines. The gold standard for serious memdeck work.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aronson</td><td style="padding:6px 8px;">Simon Aronson's memorized stack. Famous for its built-in poker deals, spelling effects, and the Stay Stack property. A favorite among card workers who focus on ACAAN-style effects.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Nikola</td><td style="padding:6px 8px;">Louis Nikola's classic memorized stack &mdash; one of the earliest published memdeck systems. Historically important and still fully functional for standard memdeck work.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Eight Kings</td><td style="padding:6px 8px;">Mnemonic cyclical stack using the phrase &ldquo;Eight Kings Threatened To Save Nine Fair Ladies For One.&rdquo; Suits rotate CHaSeD. Easy to memorize and reconstruct from memory on the fly. Great entry-level stack.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Boris Wild</td><td style="padding:6px 8px;">Formula-based memdeck &mdash; arguably the easiest to learn. Values increment by 1 per group of 4, suits rotate CHaSeD. Ideal for performers who want reliable position math without a full memorization commitment.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Memorandum</td><td style="padding:6px 8px;">Woody Aragon's memorized stack. Designed with a strong focus on natural-feeling poker and gambling demonstrations while maintaining full memdeck capabilities.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Osterlind</td><td style="padding:6px 8px;">Richard Osterlind's Breakthrough Card System. A mathematical cyclical stack preferred by mentalists &mdash; position of any card can be calculated instantly using a simple formula, no memorization required.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Classic Stebbins</td><td style="padding:6px 8px;">Values increase by 3 with each card, suits rotate CHaSeD. The oldest published mathematical stack. Instantly angle-vulnerable (pattern is visible to spectators) but excellent for learning stack math concepts.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My Stebbins</td><td style="padding:6px 8px;">Personal Stebbins variant starting at a different value offset. Retains the formula benefits with a slightly less predictable opening sequence.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My CHaSeD</td><td style="padding:6px 8px;">Personal CHaSeD stack grouped in sets of 4 by suit. Returns to its original order in exactly 2 Out-Faros &mdash; useful for resetting quickly in performance.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle</td><td style="padding:6px 8px;">Joshua Jay's memorized stack. A Stay Stack with top/bottom mirror symmetry &mdash; the top 26 and bottom 26 mirror each other in value and color, enabling a unique set of visual and mathematical effects.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Joyal</td><td style="padding:6px 8px;">The Joyal memorized stack. Known for strong poker hand demonstrations and a balanced suit distribution that supports both memdeck and gambling-style routines.</td></tr>
         </table>
 
-        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SEARCH & TRACK</div>
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SEARCH &amp; TRACK</div>
         <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Search Box</td><td style="padding:6px 8px;">Type comma-separated card names (e.g. AS, 4H) to highlight them in gold. Updates live as you type.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aces / Kings / Royal &#128081;</td><td style="padding:6px 8px;">Quick-select preset tracking groups. Royal &#128081; highlights 10S, JS, QS, KS, AS.</td></tr>
@@ -658,6 +814,11 @@ setTimeout(() => {
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Toggle Stack Coach</td><td style="padding:6px 8px;">Shows each card's position number (1&ndash;52) as a hover tooltip. Use for drilling position recall.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Verify Current Stack</td><td style="padding:6px 8px;">Checks the deck against all known stack orders. Reports an exact match, a cut match, duplicate cards, or unknown order.</td></tr>
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cycles to NDO</td><td style="padding:6px 8px;">Simulates up to 8 consecutive Out-Faros and reports whether any iteration reaches a known stack or NDO.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FARO NAVIGATOR</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro Navigator</td><td style="padding:6px 8px;">Enter a target position (2&ndash;52) to calculate the exact sequence of In and Out shuffles needed to move the current top card there. Based on the binary method by S. Brent Morris: subtract 1 from the target, convert to binary, then read each bit as an In-shuffle (1) or Out-shuffle (0). Use Step or Run All to execute the sequence live on the deck.</td></tr>
         </table>
 
         <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">POKER SIMS</div>
@@ -682,6 +843,7 @@ setTimeout(() => {
         </div>
     </div>
 </div>
+
 
 
 
