@@ -1242,7 +1242,7 @@ const ME_STEPS = [
             r.innerHTML = '<span style="color:var(--gold); font-size:0.75rem;">&#10003; Mnemonica (cut at '+cutMatch+')</span><br>The result is Mnemonica cut at position '+cutMatch+'. A single cut restores the canonical order.';
         } else {
             r.innerHTML = '<span style="color:#ffb703; font-size:0.75rem;">&#8505; Result is not Mnemonica.</span><br>'
-                +'The 3 perfect-faro steps produce a related but distinct order. Tamariz's published entry uses <em>imperfect</em> riffle shuffles, not perfect faros &mdash; this shows what the mathematically perfect version produces instead. Use Verify Stack to identify the resulting order.';
+                +'The 3 perfect-faro steps produce a related but distinct order. Tamariz\'s published entry uses <em>imperfect</em> riffle shuffles, not perfect faros &mdash; this shows what the mathematically perfect version produces instead. Use Verify Stack to identify the resulting order.';
         }
         document.getElementById('me-status').innerText = exact ? 'Exact Mnemonica!' : cutMatch>=0 ? 'Mnemonica cut match at '+cutMatch+'.' : 'Not Mnemonica - see result panel for explanation.';
     }}
