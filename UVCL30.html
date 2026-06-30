@@ -7,21 +7,21 @@
     <style>
         :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
 
-        /* â”€â”€ BASE LAYOUT â”€â”€ */
+        /*  BASE LAYOUT  */
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
         #sidebar { width: 300px; min-width: 220px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 12px; overflow-y: auto; flex-shrink: 0; }
         .history-log { flex-grow: 1; min-height: 80px; background: #000; border: 1px solid #444; padding: 8px; font-family: monospace; font-size: 0.65rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 8px; }
         #lab-main { flex-grow: 1; padding: 12px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
 
-        /* â”€â”€ DECK GRID â€” fluid 13 columns, cards scale with available space â”€â”€ */
+        /*  DECK GRID  fluid 13 columns, cards scale with available space  */
         .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; margin-bottom: 12px; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
 
-        /* Size overrides â€” use fixed px only on wide screens */
+        /* Size overrides  use fixed px only on wide screens */
         .deck-display.size-small  { grid-template-columns: repeat(13, 1fr); }
         .deck-display.size-medium { grid-template-columns: repeat(13, 1fr); }
         .deck-display.size-large  { grid-template-columns: repeat(13, 1fr); }
 
-        /* â”€â”€ CARD â”€â”€ */
+        /*  CARD  */
         .card { background: white; border-radius: 3px; cursor: pointer; position: relative; transition: 0.15s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
         .card.selected { outline: 2px solid var(--gold); transform: translateY(-2px); z-index: 10; }
         .card.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
@@ -31,12 +31,12 @@
         .card.text-card { font-weight: bold; font-size: clamp(0.4rem, 1.8vw, 0.9rem); text-align: center; flex-direction: column; background: white; color: black; padding: 2px; }
         .card.text-card.red { color: var(--accent); }
 
-        /* â”€â”€ CARD POSITION INDEX â”€â”€ */
+        /*  CARD POSITION INDEX  */
         .card-index { position: absolute; color: #222; font-weight: bold; z-index: 5; background: rgba(255,255,255,0.8); padding: 0 1px; border-radius: 2px; line-height: 1; font-family: sans-serif; font-size: clamp(0.35rem, 0.8vw, 0.55rem); }
         .card-index.top-right { top: 1px; right: 1px; }
         .card-index.bottom-left { bottom: 1px; left: 1px; }
 
-        /* â”€â”€ PEEK MODE â”€â”€ */
+        /*  PEEK MODE  */
         .card.face-down { background: #d90429; border: 2px solid #fff; cursor: pointer; }
         .card.face-down .card-img { display: none; }
         .card.face-down .card-index { display: none; }
@@ -44,15 +44,15 @@
         .peek-num { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: clamp(0.6rem, 2.5vw, 1.8rem); font-weight: bold; z-index: 20; pointer-events: none; }
         .peek-idx { position: absolute !important; top: 2px; right: 2px; font-size: clamp(0.3rem, 0.7vw, 0.5rem); font-weight: bold; color: black; z-index: 999; pointer-events: none; background: white; padding: 0 2px; border-radius: 2px; display: block !important; }
 
-        /* â”€â”€ BUTTONS â”€â”€ */
+        /*  BUTTONS  */
         button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 5px 4px; cursor: pointer; font-size: 0.55rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
         button:hover { background: var(--accent); }
 
-        /* â”€â”€ DIVIDERS â”€â”€ */
+        /*  DIVIDERS  */
         .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 12px 0 8px 0; position: relative; }
         .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 8px; font-size: 0.5rem; color: var(--gold); }
 
-        /* â”€â”€ POKER ARENA â”€â”€ */
+        /*  POKER ARENA  */
         #poker-arena { margin-top: 15px; background: var(--felt); border: 4px solid #064420; border-radius: 12px; padding: 12px; display: none; }
         .hand-row { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
         .table-card { width: clamp(35px, 5vw, 60px); height: clamp(50px, 7vw, 85px); background: white; border-radius: 5px; display: flex; align-items: center; justify-content: center; border: 1px solid #999; overflow: hidden; }
@@ -60,21 +60,21 @@
         .table-card.text-card { font-weight: bold; font-size: clamp(0.6rem, 1.5vw, 0.9rem); color: black; flex-direction: column; }
         .table-card.text-card.red { color: var(--accent); }
 
-        /* â”€â”€ INPUTS â”€â”€ */
+        /*  INPUTS  */
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 4px; font-size: 0.65rem; border-radius: 3px; }
 
         /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
            RESPONSIVE BREAKPOINTS
            â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-        /* iPad portrait (768px) â€” narrow sidebar, fluid cards */
+        /* iPad portrait (768px)  narrow sidebar, fluid cards */
         @media (max-width: 900px) {
             #sidebar { width: 240px; min-width: 200px; padding: 10px; }
             .history-log { min-height: 60px; font-size: 0.6rem; }
             button { font-size: 0.5rem; padding: 4px 3px; }
         }
 
-        /* iPhone / small phones â€” stack sidebar above main */
+        /* iPhone / small phones  stack sidebar above main */
         @media (max-width: 600px) {
             body { flex-direction: column; height: auto; overflow: auto; }
             #sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: 2px solid #333; padding: 10px; max-height: 40vh; overflow-y: auto; }
@@ -379,7 +379,7 @@
                 img.className = 'card-img';
                 img.alt = card;
                 img.onerror = function() {
-                    // PNG failed â€” render as text card instead
+                    // PNG failed  render as text card instead
                     div.classList.add('text-card');
                     if (isRed) div.classList.add('red');
                     div.innerHTML = '';
@@ -454,7 +454,7 @@
         btn.innerText = `ðŸƒ PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
         btn.style.borderColor = peekMode ? 'var(--accent)' : 'var(--gold)';
         btn.style.color = peekMode ? 'var(--accent)' : 'var(--gold)';
-        logMove(`Peek Mode ${peekMode ? 'ON â€” click any card to reveal for 1 second' : 'OFF â€” cards visible'}`);
+        logMove(`Peek Mode ${peekMode ? 'ON  click any card to reveal for 1 second' : 'OFF  cards visible'}`);
         renderDeck();
     }
 
@@ -678,7 +678,7 @@
                 if (matched) break;
             }
         }
-        if (!matched) logMove('❓ No match found â€” custom or unknown order');
+        if (!matched) logMove('❓ No match found  custom or unknown order');
     }
 
     function calcToNDO() {
@@ -1117,7 +1117,7 @@ const ME_STEPS = [
             r.innerHTML = '<span style="color:var(--gold); font-size:0.75rem;">&#10003; Mnemonica (cut at '+cutMatch+')</span><br>The result is Mnemonica cut at position '+cutMatch+'. A single cut restores the canonical order.';
         } else {
             r.innerHTML = '<span style="color:#ffb703; font-size:0.75rem;">&#8505; Result is not Mnemonica.</span><br>'
-                +'The 3 perfect-faro steps produce a related but distinct order. Tamariz's published entry uses <em>imperfect</em> riffle shuffles, not perfect faros &mdash; this shows what the mathematically perfect version produces instead. Use Verify Stack to identify the resulting order.';
+                +'The 3 perfect-faro steps produce a related but distinct order. Tamariz\'s published entry uses <em>imperfect</em> riffle shuffles, not perfect faros &mdash; this shows what the mathematically perfect version produces instead. Use Verify Stack to identify the resulting order.';
         }
         document.getElementById('me-status').innerText = exact ? 'Exact Mnemonica!' : cutMatch>=0 ? 'Mnemonica cut match at '+cutMatch+'.' : 'Not Mnemonica - see result panel for explanation.';
     }}
