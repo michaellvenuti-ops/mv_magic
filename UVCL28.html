@@ -98,8 +98,8 @@
     <div id="history" class="history-log"></div>
     
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px; margin-bottom:10px;">
-        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">ðŸƒ Undo</button>
-        <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">â“ HELP</button>
+        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">🃏  Undo</button>
+        <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">❓ HELP</button>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
@@ -108,7 +108,7 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
             <button onclick="applyPreset('ACES')" style="padding: var(--pad-small);">Aces</button>
             <button onclick="applyPreset('KINGS')" style="padding: var(--pad-small);">Kings</button>
-            <button onclick="applyPreset('SPADE_ROYAL')" style="padding: var(--pad-small);">Royal ðŸ‘‘</button>
+            <button onclick="applyPreset('SPADE_ROYAL')" style="padding: var(--pad-small);">Royal 👑</button>
             <button onclick="applyPreset('')" style="padding: var(--pad-small);">Clear</button>
         </div>
     </div>
@@ -150,9 +150,9 @@
     </div>
     
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
-        <button onclick="exportStack()" style="padding: var(--pad-small);">ðŸ“¤ Export</button>
-        <button onclick="importStack()" style="padding: var(--pad-small);">ðŸ“¥ Import</button>
-        <button onclick="saveStack()" style="grid-column: span 2; padding: var(--pad-small);">ðŸ’¾ Save Session</button>
+        <button onclick="exportStack()" style="padding: var(--pad-small);">📤 Export</button>
+        <button onclick="importStack()" style="padding: var(--pad-small);">📥 Import</button>
+        <button onclick="saveStack()" style="grid-column: span 2; padding: var(--pad-small);">💾 Save Session</button>
     </div>
 </div>
 
@@ -160,7 +160,7 @@
     <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap: wrap;">
         <h1 style="color:var(--gold); font-size:1.2rem; margin:0;">Virtual Card Lab v9.3</h1>
         <button id="peek-btn" onclick="togglePeek()" style="border-color:var(--gold); color:var(--gold); padding:var(--pad-full);">
-            ðŸƒ PEEK MODE: OFF
+            🃏 PEEK MODE: OFF
         </button>
         
         <div style="display:flex; gap:4px; align-items:center; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid #333;">
@@ -198,7 +198,7 @@
                       style="cursor:pointer; background:#444; padding:2px 6px; border-radius:2px;
                              white-space:nowrap; color:white;"
                       onmouseover="this.style.background='var(--accent)'"
-                      onmouseout="this.style.background='#444'">ðŸ§ª CUT</span>
+                      onmouseout="this.style.background='#444'">🧪 CUT</span>
             </div>
         </div>
 
@@ -321,7 +321,7 @@
 </div>
 
 <script>
-    const suitSymbols = {'C':'â™£', 'H':'â™¥', 'S':'â™ ', 'D':'â™¦'};
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [], undoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
 
@@ -651,18 +651,18 @@
         if (dupes.length > 0) { logMove(`âš  DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
         let matched = false;
         for (const [name, order] of Object.entries(stacks)) {
-            if (deck.every((c, i) => c === order[i])) { logMove(`ðŸŽ‰ MATCH: Current deck is ${name}`); matched = true; break; }
+            if (deck.every((c, i) => c === order[i])) { logMove(`🎉 MATCH: Current deck is ${name}`); matched = true; break; }
         }
         if (!matched) {
             for (const [name, order] of Object.entries(stacks)) {
                 for (let cut = 1; cut < 52; cut++) {
                     const rotated = [...order.slice(cut), ...order.slice(0, cut)];
-                    if (deck.every((c, i) => c === rotated[i])) { logMove(`ðŸŽ‰ CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
+                    if (deck.every((c, i) => c === rotated[i])) { logMove(`🎉 CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
                 }
                 if (matched) break;
             }
         }
-        if (!matched) logMove('â“ No match found â€” custom or unknown order');
+        if (!matched) logMove('❓ No match found â€” custom or unknown order');
     }
 
     function calcToNDO() {
@@ -694,11 +694,11 @@
             for (let j = 0; j < 26; j++) { res.push(top[j]); res.push(bot[j]); }
             test = res;
             for (const [name, order] of Object.entries(targets)) {
-                if (test.every((c, idx) => c === order[idx])) results.push(`ðŸ”® Reaches ${name} in ${i} out-faro(s)`);
+                if (test.every((c, idx) => c === order[idx])) results.push(`🔮 Reaches ${name} in ${i} out-faro(s)`);
             }
         }
         if (results.length > 0) results.forEach(r => logMove(r));
-        else logMove('â“ Does not reach any known order in 8 out-faros');
+        else logMove('❓ Does not reach any known order in 8 out-faros');
     }
 
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
