@@ -160,7 +160,7 @@
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MNEMONICA DEMOS</span>
         <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-            <button onclick="showMnemEntryDemo()" style="padding: var(--pad-small);">Spanish NDO &rarr; Mnemonica</button>
+            <button onclick="showMnemEntryDemo()" style="padding: var(--pad-small);">MNEMONICA NDO &rarr; Mnemonica</button>
             <button onclick="showMnemCycleDemo()" style="padding: var(--pad-small);">Mnemonica 8-Faro Cycle</button>
             <button onclick="showAronsonStayDemo()" style="padding: var(--pad-small);">Aronson Stay-Stack</button>
         </div>
@@ -1263,12 +1263,13 @@ function showMnemEntryDemo() {
     document.getElementById('mnem-entry-arena').style.display='block';
     document.getElementById('mnem-entry-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
     meStep_idx=0;
-    [0,1,2,3].forEach(i => { const t=document.getElementById('me-tile-'+i); t.style.background='#111'; t.style.borderColor='#444'; t.style.color='#555'; });
+    for(var i=0;i<ME_TOTAL_STEPS;i++){var t=document.getElementById('me-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
     document.getElementById('me-step-btn').style.display='none';
     document.getElementById('me-run-btn').style.display='none';
     document.getElementById('me-result').style.display='none';
-    document.getElementById('me-status').innerText='Click Load Spanish NDO to begin.';
+    document.getElementById('me-status').innerText='Click Load Mnemonica NDO to begin.';
 }
+
 function meInit() {
     saveState();
     deck = ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"];
