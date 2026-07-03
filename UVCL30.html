@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Card Lab v9.4</title>
+    <title>Virtual Card Lab v9.5</title>
     <style>
         :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
 
@@ -150,21 +151,19 @@
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MNEMONICA DEMOS</span>
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">PARTICLE STACK DEMOS</span>
         <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-            <button onclick="showNdoToMnemNdo()" style="padding: var(--pad-small);">NDO &rarr; Mnemonica NDO</button>
-            <button onclick="showMnemEntryDemo()" style="padding: var(--pad-small);">Mnemonica NDO &rarr; Mnemonica</button>
-            <button onclick="showMnemCycleDemo()" style="padding: var(--pad-small);">Mnemonica 8-Faro Cycle</button>
-            <button onclick="showAronsonStayDemo()" style="padding: var(--pad-small);">Aronson Stay-Stack</button>
+            <button onclick="showParticleEntry()" style="padding: var(--pad-small);">Particle NDO &rarr; Stack</button>
+            <button onclick="showParticleReturn()" style="padding: var(--pad-small);">Particle Stack &rarr; NDO</button>
         </div>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">PARTICLE STACK DEMOS</span>
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MNEMONICA DEMOS</span>
         <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-            <button onclick="showNdoToParticleNdo()" style="padding: var(--pad-small);">NDO &rarr; Particle NDO</button>
-            <button onclick="showParticleEntry()" style="padding: var(--pad-small);">Particle NDO &rarr; Stack</button>
-            <button onclick="showParticleReturn()" style="padding: var(--pad-small);">Particle Stack &rarr; NDO</button>
+            <button onclick="showMnemEntryDemo()" style="padding: var(--pad-small);">MNEMONICA NDO &rarr; Mnemonica</button>
+            <button onclick="showMnemCycleDemo()" style="padding: var(--pad-small);">Mnemonica 8-Faro Cycle</button>
+            <button onclick="showAronsonStayDemo()" style="padding: var(--pad-small);">Aronson Stay-Stack</button>
         </div>
     </div>
     
@@ -421,100 +420,6 @@
     <div id="me-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.65rem; color:#aaa; line-height:1.7;"></div>
 </div>
 
-<!-- ============ NDO -> MNEMONICA NDO ARENA ============ -->
-<div id="ndo-to-mnem-ndo-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">NDO &rarr; Mnemonica NDO &mdash; Tamariz Block Shuffle</span>
-        <button onclick="document.getElementById('ndo-to-mnem-ndo-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
-    </div>
-    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
-        Tamariz's procedure rearranges the 4 suit blocks from US NDO into Mnemonica NDO order using two face-up overhand shuffles. The deck stays face-up throughout &mdash; you are only moving suit blocks.
-    </div>
-    <!-- Block display: 4 columns showing suit blocks -->
-    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:8px; margin-bottom:14px;">
-        <div id="mn-block-0" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 1</div>
-            <div id="mn-block-0-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
-            <div id="mn-block-0-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="mn-block-1" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 2</div>
-            <div id="mn-block-1-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
-            <div id="mn-block-1-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="mn-block-2" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 3</div>
-            <div id="mn-block-2-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
-            <div id="mn-block-2-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="mn-block-3" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 4</div>
-            <div id="mn-block-3-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
-            <div id="mn-block-3-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
-        </div>
-    </div>
-    <!-- Step tiles -->
-    <div style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
-        <div id="mn-tile-0" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Run 13 Spades<br>(reverse)</div>
-        <div id="mn-tile-1" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Chop Diamonds<br>(set aside)</div>
-        <div id="mn-tile-2" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Run 13 Clubs<br>(reverse) + assemble</div>
-        <div id="mn-tile-3" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Verify</div>
-    </div>
-    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
-        <button onclick="mnInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load US NDO</button>
-        <button onclick="mnStep()" id="mn-step-btn" style="display:none;">&#9654; Step</button>
-        <button onclick="mnRunAll()" id="mn-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
-    </div>
-    <div id="mn-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
-    <div id="mn-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
-</div>
-
-<!-- ============ NDO -> PARTICLE NDO ARENA ============ -->
-<div id="ndo-to-particle-ndo-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">NDO &rarr; Particle NDO &mdash; 2-Step Block Procedure</span>
-        <button onclick="document.getElementById('ndo-to-particle-ndo-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
-    </div>
-    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
-        From US NDO: move the bottom 13 Spades up to position 14 (between Hearts and Clubs), then Reverse the bottom 26 cards. Two clean operations produce Particle NDO.
-    </div>
-    <!-- Block display -->
-    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:8px; margin-bottom:14px;">
-        <div id="pn-block-0" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 1</div>
-            <div id="pn-block-0-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
-            <div id="pn-block-0-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="pn-block-1" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 2</div>
-            <div id="pn-block-1-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
-            <div id="pn-block-1-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="pn-block-2" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 3</div>
-            <div id="pn-block-2-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
-            <div id="pn-block-2-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
-        </div>
-        <div id="pn-block-3" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
-            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 4</div>
-            <div id="pn-block-3-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
-            <div id="pn-block-3-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
-        </div>
-    </div>
-    <!-- Step tiles -->
-    <div style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
-        <div id="pn-tile-0" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Move Spades<br>to position 14</div>
-        <div id="pn-tile-1" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Reverse<br>Bottom 26</div>
-        <div id="pn-tile-2" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Verify</div>
-    </div>
-    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
-        <button onclick="pnInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load US NDO</button>
-        <button onclick="pnStep()" id="pn-step-btn" style="display:none;">&#9654; Step</button>
-        <button onclick="pnRunAll()" id="pn-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
-    </div>
-    <div id="pn-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
-    <div id="pn-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
-</div>
 
 
 <!-- ============ MNEMONICA 8-FARO CYCLE ARENA ============ -->
@@ -900,7 +805,7 @@
             'MNEMONICA_NDO': ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
         };
         const dupes = deck.filter((c, i) => deck.indexOf(c) !== i);
-        if (dupes.length > 0) { logMove(`âš  DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
+        if (dupes.length > 0) { logMove(`âš  DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
         let matched = false;
         for (const [name, order] of Object.entries(stacks)) {
             if (deck.every((c, i) => c === order[i])) { logMove(`🎉 MATCH: Current deck is ${name}`); matched = true; break; }
@@ -1559,292 +1464,6 @@ function asStep() {
 }
 function asRunAll() { while(asIdx<2) asStep(); }
 
-// ================================================================
-// NDO -> MNEMONICA NDO DEMO (Tamariz block shuffle)
-// ================================================================
-var mnStepIdx = 0;
-var MN_TOTAL = 4;
-var MN_STEP_NAMES = ['Run 13 Spades (reverse)','Chop Diamonds + Run 13 Clubs (reverse) + Assemble','','Verify'];
-
-function showNdoToMnemNdo() {
-    document.getElementById('ndo-to-mnem-ndo-arena').style.display='block';
-    document.getElementById('ndo-to-mnem-ndo-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
-    mnStepIdx=0;
-    for(var i=0;i<MN_TOTAL;i++){var t=document.getElementById('mn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
-    document.getElementById('mn-step-btn').style.display='none';
-    document.getElementById('mn-run-btn').style.display='none';
-    document.getElementById('mn-result').style.display='none';
-    document.getElementById('mn-status').innerText='Click Load US NDO to begin.';
-    mnClearBlocks();
-}
-
-function mnClearBlocks() {
-    for(var i=0;i<4;i++){
-        var lbl=document.getElementById('mn-block-'+i+'-label');
-        var cds=document.getElementById('mn-block-'+i+'-cards');
-        var blk=document.getElementById('mn-block-'+i);
-        if(lbl) lbl.innerHTML='';
-        if(cds) cds.innerHTML='';
-        if(blk) blk.style.borderColor='#333';
-    }
-}
-
-function mnShowBlocks(blocks, highlight) {
-    // blocks = array of {label, cards, color} for each of 4 columns
-    blocks.forEach(function(b,i){
-        var lbl=document.getElementById('mn-block-'+i+'-label');
-        var cds=document.getElementById('mn-block-'+i+'-cards');
-        var blk=document.getElementById('mn-block-'+i);
-        if(lbl) lbl.innerHTML=b.label;
-        if(cds) {
-            cds.innerHTML='';
-            b.cards.forEach(function(c){
-                var s=document.createElement('span');
-                s.style.display='block';
-                s.innerHTML=c;
-                cds.appendChild(s);
-            });
-        }
-        if(blk) blk.style.borderColor = (highlight===i) ? 'var(--gold)' : '#333';
-    });
-}
-
-function mnInit() {
-    saveState();
-    deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-            "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
-            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
-            "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"];
-    renderDeck(); logMove('Mnemonica NDO Demo: Loaded US NDO');
-    mnStepIdx=0;
-    for(var i=0;i<MN_TOTAL;i++){var t=document.getElementById('mn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
-    document.getElementById('mn-step-btn').style.display='inline-block';
-    document.getElementById('mn-run-btn').style.display='inline-block';
-    document.getElementById('mn-result').style.display='none';
-    // Show initial block structure
-    mnShowBlocks([
-        {label:'Hearts (A→K)', cards:['AH → KH']},
-        {label:'Clubs (A→K)', cards:['AC → KC']},
-        {label:'Diamonds (K→A)', cards:['KD → AD']},
-        {label:'Spades (K→A)', cards:['KS → AS']}
-    ], -1);
-    document.getElementById('mn-status').innerText='US NDO loaded. 4 suit blocks shown above. Step through the procedure.';
-}
-
-function mnDoStep(idx) {
-    var tile=document.getElementById('mn-tile-'+idx);
-    if(tile){tile.style.background='rgba(255,183,3,0.18)';tile.style.borderColor='var(--gold)';tile.style.color='var(--gold)';}
-
-    if (idx===0) {
-        // Step 1: Face-up overhand - run 13 Spades reversing them, throw balance on top
-        // Deck becomes (face-down top-to-bottom): [S reversed=AS..KS][H][C][D]
-        // Wait - in face-down terms after the shuffle:
-        // The spades were at bottom (KS..AS), running them reversed gives AS..KS
-        // Then balance (H,C,D) thrown on top of spades reversed
-        // Face-down result: [H][C][D][AS..KS] -> then balance on TOP means:
-        // balance goes above spades: face-down = [KD..AD (diamonds)][AC..KC (clubs)][AH..KH (hearts revd)]... 
-        // Actually in face-UP shuffle terms: face-up deck starts AS(face)...AH(back)
-        // Run 13 from face = take AS,2S..KS one by one -> reversed = KS..AS
-        // Throw balance on them: face-up result = [AD..KD rest...AH] + [KS..AS]
-        // Face-DOWN equivalent (flip): [AS..KS] + [KH..AH reversed? No...]
-        // Let me just execute the mathematical result we verified:
-        // After step 1 face-down: [AH..KH][AC..KC][KD..AD][AS..KS]
-        // Which in our array = Hearts + Clubs + Diamonds + Spades_reversed
-        saveState();
-        deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-                "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
-                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
-                "AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS"];
-        renderDeck(); logMove('Mnemonica NDO Demo: Step 1 - Ran Spades reversed');
-        mnShowBlocks([
-            {label:'Hearts (A→K)', cards:['AH → KH']},
-            {label:'Clubs (A→K)', cards:['AC → KC']},
-            {label:'Diamonds (K→A)', cards:['KD → AD']},
-            {label:'Spades REVERSED ✓', cards:['AS → KS']}
-        ], 3);
-        document.getElementById('mn-status').innerText='Step 1: Spades packet reversed (KS→AS becomes AS→KS) and placed at bottom.';
-    }
-    else if (idx===1) {
-        // Step 2+3: Chop diamonds (set aside), run clubs reversed onto diamonds,
-        // throw hearts+spades beneath. Final face-down:
-        // [AS..KS][AH..KH][KD..AD][KC..AC]
-        saveState();
-        deck = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
-                "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
-                "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
-        renderDeck(); logMove('Mnemonica NDO Demo: Steps 2+3 - Clubs reversed, blocks assembled');
-        mnShowBlocks([
-            {label:'Spades (A→K) ✓', cards:['AS → KS']},
-            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
-            {label:'Diamonds (K→A) ✓', cards:['KD → AD']},
-            {label:'Clubs REVERSED ✓', cards:['KC → AC']}
-        ], -1);
-        // Highlight all gold
-        for(var i=0;i<4;i++){var b=document.getElementById('mn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
-        document.getElementById('mn-status').innerText='Steps 2+3: Diamonds set aside, Clubs reversed onto Diamonds, balance thrown beneath. Assembly complete!';
-    }
-    else if (idx===2) {
-        // Tile already lit above - this step was combined into idx 1
-        // Skip - just mark done
-        document.getElementById('mn-status').innerText='Steps complete. Click Verify to confirm Mnemonica NDO.';
-    }
-    else if (idx===3) {
-        // Verify
-        var MNEM_NDO = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
-                        "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-                        "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
-                        "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
-        var match = deck.every(function(c,i){return c===MNEM_NDO[i];});
-        var r=document.getElementById('mn-result'); r.style.display='block';
-        r.innerHTML = match
-            ? '&#10003; Mnemonica NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO → Tamariz block shuffle = perfect Mnemonica NDO. Ready for the 8-step Mnemonica entry procedure.</span>'
-            : '&#9888; Not Mnemonica NDO. Check all steps were performed from US NDO.';
-        document.getElementById('mn-status').innerText = match ? 'Perfect Mnemonica NDO achieved!' : 'No match.';
-        document.getElementById('mn-step-btn').style.display='none';
-        document.getElementById('mn-run-btn').style.display='none';
-    }
-}
-
-var mnStepIdx = 0;
-function mnStep() {
-    if(mnStepIdx>=MN_TOTAL) return;
-    // Skip step 2 (combined into step 1 idx)
-    if(mnStepIdx===2){mnStepIdx++;} // auto-skip
-    mnDoStep(mnStepIdx);
-    mnStepIdx++;
-    if(mnStepIdx<MN_TOTAL){
-        document.getElementById('mn-status'); // status set inside mnDoStep
-    }
-}
-function mnRunAll(){
-    var delay=0;
-    for(var i=mnStepIdx;i<MN_TOTAL;i++){
-        (function(idx){setTimeout(function(){if(mnStepIdx!==idx)return;mnStep();},delay);})(i);
-        delay+=600;
-    }
-}
-
-// ================================================================
-// NDO -> PARTICLE NDO DEMO (2-step block procedure)
-// ================================================================
-var pnStepIdx = 0;
-var PN_TOTAL = 3;
-
-function showNdoToParticleNdo() {
-    document.getElementById('ndo-to-particle-ndo-arena').style.display='block';
-    document.getElementById('ndo-to-particle-ndo-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
-    pnStepIdx=0;
-    for(var i=0;i<PN_TOTAL;i++){var t=document.getElementById('pn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
-    document.getElementById('pn-step-btn').style.display='none';
-    document.getElementById('pn-run-btn').style.display='none';
-    document.getElementById('pn-result').style.display='none';
-    document.getElementById('pn-status').innerText='Click Load US NDO to begin.';
-    pnClearBlocks();
-}
-
-function pnClearBlocks(){
-    for(var i=0;i<4;i++){
-        var l=document.getElementById('pn-block-'+i+'-label');
-        var c=document.getElementById('pn-block-'+i+'-cards');
-        var b=document.getElementById('pn-block-'+i);
-        if(l)l.innerHTML=''; if(c)c.innerHTML=''; if(b)b.style.borderColor='#333';
-    }
-}
-
-function pnShowBlocks(blocks, highlights){
-    blocks.forEach(function(b,i){
-        var lbl=document.getElementById('pn-block-'+i+'-label');
-        var cds=document.getElementById('pn-block-'+i+'-cards');
-        var blk=document.getElementById('pn-block-'+i);
-        if(lbl)lbl.innerHTML=b.label;
-        if(cds){cds.innerHTML='';b.cards.forEach(function(c){var s=document.createElement('span');s.style.display='block';s.innerHTML=c;cds.appendChild(s);});}
-        if(blk)blk.style.borderColor=(highlights&&highlights.indexOf(i)>=0)?'var(--gold)':'#333';
-    });
-}
-
-function pnInit(){
-    saveState();
-    deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-            "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
-            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
-            "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"];
-    renderDeck(); logMove('Particle NDO Demo: Loaded US NDO');
-    pnStepIdx=0;
-    for(var i=0;i<PN_TOTAL;i++){var t=document.getElementById('pn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
-    document.getElementById('pn-step-btn').style.display='inline-block';
-    document.getElementById('pn-run-btn').style.display='inline-block';
-    document.getElementById('pn-result').style.display='none';
-    pnShowBlocks([
-        {label:'Hearts (A→K)', cards:['AH → KH']},
-        {label:'Clubs (A→K)', cards:['AC → KC']},
-        {label:'Diamonds (K→A)', cards:['KD → AD']},
-        {label:'Spades (K→A)', cards:['KS → AS']}
-    ], []);
-    document.getElementById('pn-status').innerText='US NDO loaded. Two operations convert to Particle NDO.';
-}
-
-function pnDoStep(idx){
-    var tile=document.getElementById('pn-tile-'+idx);
-    if(tile){tile.style.background='rgba(255,183,3,0.18)';tile.style.borderColor='var(--gold)';tile.style.color='var(--gold)';}
-    if(idx===0){
-        // Move bottom 13 (Spades) to position 14
-        saveState();
-        deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-                "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS",
-                "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
-                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"];
-        renderDeck(); logMove('Particle NDO Demo: Step 1 - Spades moved to position 14');
-        pnShowBlocks([
-            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
-            {label:'Spades (K→A) ✓', cards:['KS → AS']},
-            {label:'Clubs (A→K)', cards:['AC → KC']},
-            {label:'Diamonds (K→A)', cards:['KD → AD']}
-        ],[0,1]);
-        document.getElementById('pn-status').innerText='Step 1: Bottom 13 Spades moved up to position 14. Hearts and Spades are now the top 26.';
-    }
-    else if(idx===1){
-        // Reverse Bottom 26
-        reverseBottom();
-        logMove('Particle NDO Demo: Step 2 - Reversed Bottom 26');
-        pnShowBlocks([
-            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
-            {label:'Spades (K→A) ✓', cards:['KS → AS']},
-            {label:'Diamonds REVERSED ✓', cards:['AD → KD']},
-            {label:'Clubs REVERSED ✓', cards:['KC → AC']}
-        ],[0,1,2,3]);
-        for(var i=0;i<4;i++){var b=document.getElementById('pn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
-        document.getElementById('pn-status').innerText='Step 2: Bottom 26 reversed. Diamonds now A→K, Clubs now K→A. Click Verify!';
-    }
-    else if(idx===2){
-        var PART_NDO=["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
-                      "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS",
-                      "AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD",
-                      "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
-        var match=deck.every(function(c,i){return c===PART_NDO[i];});
-        var r=document.getElementById('pn-result'); r.style.display='block';
-        r.innerHTML=match
-            ?'&#10003; Particle NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO → Move Spades to pos 14 → Reverse Bottom 26 = perfect Particle NDO. Ready for the 2 Out-Faro entry.</span>'
-            :'&#9888; Not Particle NDO. Check steps were performed from US NDO.';
-        document.getElementById('pn-status').innerText=match?'Perfect Particle NDO achieved!':'No match.';
-        document.getElementById('pn-step-btn').style.display='none';
-        document.getElementById('pn-run-btn').style.display='none';
-    }
-}
-
-function pnStep(){
-    if(pnStepIdx>=PN_TOTAL)return;
-    pnDoStep(pnStepIdx);
-    pnStepIdx++;
-}
-function pnRunAll(){
-    var delay=0;
-    for(var i=pnStepIdx;i<PN_TOTAL;i++){
-        (function(idx){setTimeout(function(){if(pnStepIdx!==idx)return;pnStep();},delay);})(i);
-        delay+=600;
-    }
-}
-    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
