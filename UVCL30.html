@@ -401,13 +401,14 @@
         The result is Mnemonica order &mdash; or a cut of it requiring one final cut to align.
     </div>
     <div style="display:flex; gap:5px; margin-bottom:14px; flex-wrap:wrap;">
-        <div id="me-tile-0" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Faro OUT</div>
-        <div id="me-tile-1" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Faro OUT</div>
-        <div id="me-tile-2" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Faro OUT</div>
-        <div id="me-tile-3" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Faro OUT</div>
-        <div id="me-tile-4" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 5</div>Rev Top 26</div>
-        <div id="me-tile-5" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 6</div>Unequal Faro 18</div>
-        <div id="me-tile-6" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 7</div>Verify</div>
+        <div id="me-tile-0" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Faro OUT</div>
+        <div id="me-tile-1" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Faro OUT</div>
+        <div id="me-tile-2" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Faro OUT</div>
+        <div id="me-tile-3" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Faro OUT</div>
+        <div id="me-tile-4" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 5</div>Rev Top 26</div>
+        <div id="me-tile-5" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 6</div>Unequal Faro 18</div>
+        <div id="me-tile-6" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 7</div>Cut at 9&#x1F0A6;</div>
+        <div id="me-tile-7" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 8</div>Verify</div>
     </div>
     <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
         <button onclick="meInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Mnemonica NDO</button>
@@ -417,6 +418,7 @@
     <div id="me-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
     <div id="me-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.65rem; color:#aaa; line-height:1.7;"></div>
 </div>
+
 
 
 <!-- ============ MNEMONICA 8-FARO CYCLE ARENA ============ -->
@@ -1241,8 +1243,8 @@ function prCollect() {
 // MNEMONICA ENTRY DEMO (6-step procedure: 4 Out-Faros + RevTop26 + UnequalFaro18)
 // ================================================================
 let meStep_idx = 0;
-var ME_STEP_NAMES = ['Faro OUT #1','Faro OUT #2','Faro OUT #3','Faro OUT #4','Reverse Top 26','Unequal Faro 18','Verify'];
-var ME_TOTAL_STEPS = 7;
+var ME_STEP_NAMES = ['Faro OUT #1','Faro OUT #2','Faro OUT #3','Faro OUT #4','Reverse Top 26','Unequal Faro 18','Cut at 9 (9â™¦)','Verify'];
+var ME_TOTAL_STEPS = 8;
 
 function showMnemEntryDemo() {
     document.getElementById('mnem-entry-arena').style.display='block';
@@ -1279,27 +1281,25 @@ function meDoStep(idx) {
     else if (idx === 4) reverseTop();
     else if (idx === 5) unequalFaroTop();
     else if (idx === 6) {
+        // Cut at 9 â€” moves top 9 cards to bottom, bringing 9D to position 1
+        saveState();
+        deck = deck.slice(9).concat(deck.slice(0,9));
+        logMove('Mnemonica Demo: Cut at 9 (9â™¦ to bottom)');
+        renderDeck();
+        document.getElementById('me-status').innerText='Cut at 9 done â€” 9â™¦ moved to bottom. Now verify!';
+    }
+    else if (idx === 7) {
         // Verify step
         var MNEM = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
         var exact = deck.every(function(c,i){return c===MNEM[i];});
-        var cutMatch = -1;
-        if (!exact) {
-            for(var c=1;c<52;c++){
-                var rot=MNEM.slice(c).concat(MNEM.slice(0,c));
-                if(deck.every(function(x,i){return x===rot[i];})){cutMatch=c;break;}
-            }
-        }
         var r = document.getElementById('me-result');
         r.style.display='block';
         if (exact) {
-            r.innerHTML='<span style="color:var(--gold);font-size:0.75rem;">&#10003; Exact Mnemonica match!</span><br>4 Out-Faros + Reverse Top 26 + Unequal Faro Top 18 from Mnemonica NDO = perfect Mnemonica order.';
-            document.getElementById('me-status').innerText='Perfect Mnemonica achieved!';
-        } else if (cutMatch >= 0) {
-            r.innerHTML='<span style="color:var(--gold);font-size:0.75rem;">&#10003; Mnemonica cut match at position '+cutMatch+'!</span><br>The deck is in Mnemonica order starting from card '+cutMatch+'. One cut of '+cutMatch+' cards aligns it to canonical Mnemonica order. In performance this cut is undetectable.';
-            document.getElementById('me-status').innerText='Mnemonica cut match at position '+cutMatch+'. One cut completes the procedure.';
+            r.innerHTML='<span style="color:var(--gold);font-size:0.8rem;">&#10003; Exact Mnemonica match!</span><br><span style="font-size:0.6rem;color:#aaa;">Mnemonica NDO â†’ 4 Out-Faros â†’ Reverse Top 26 â†’ Unequal Faro Top 18 â†’ Cut at 9 = perfect Mnemonica order.</span>';
+            document.getElementById('me-status').innerText='Perfect Mnemonica! All 8 steps complete.';
         } else {
-            r.innerHTML='<span style="color:#ffb703;font-size:0.75rem;">&#8505; No Mnemonica match found.</span><br>Check that the deck started in Mnemonica NDO order and all 6 steps were performed correctly.';
-            document.getElementById('me-status').innerText='No match. Check starting order was Mnemonica NDO.';
+            r.innerHTML='<span style="color:#ffb703;font-size:0.75rem;">&#8505; No exact match.</span><br>Check all 8 steps were performed from Mnemonica NDO.';
+            document.getElementById('me-status').innerText='No match â€” check starting order was Mnemonica NDO.';
         }
         document.getElementById('me-step-btn').style.display='none';
         document.getElementById('me-run-btn').style.display='none';
