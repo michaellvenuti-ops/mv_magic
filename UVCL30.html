@@ -393,27 +393,31 @@
 <!-- ============ MNEMONICA ENTRY DEMO ARENA ============ -->
 <div id="mnem-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Spanish NDO &rarr; Mnemonica: 3-Step Entry Procedure</span>
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Mnemonica NDO &rarr; Mnemonica: 6-Step Entry Procedure</span>
         <button onclick="document.getElementById('mnem-entry-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
     </div>
     <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
-        This is the <span style="color:var(--gold);">Tamariz-inspired 3-step faro entry procedure</span> from Spanish CHaSeD NDO toward Mnemonica structure.
-        Note: Tamariz's actual published procedure uses imperfect riffle shuffles &mdash; this demo shows what the <em>perfect faro</em> version of those 3 operations produces, and uses Verify Stack to show where you land.
+        Starting from <span style="color:var(--gold);">Mnemonica NDO</span>, perform 4 Out-Faros, then Reverse Top 26, then Unequal Faro Top 18.
+        The result is Mnemonica order &mdash; or a cut of it requiring one final cut to align.
     </div>
-    <div style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
-        <div id="me-tile-0" style="flex:1; min-width:80px; padding:8px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.6rem; color:#555;"><div style="font-size:0.45rem; margin-bottom:3px;">STEP 1</div>Faro OUT</div>
-        <div id="me-tile-1" style="flex:1; min-width:80px; padding:8px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.6rem; color:#555;"><div style="font-size:0.45rem; margin-bottom:3px;">STEP 2</div>Reverse Top 26</div>
-        <div id="me-tile-2" style="flex:1; min-width:80px; padding:8px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.6rem; color:#555;"><div style="font-size:0.45rem; margin-bottom:3px;">STEP 3</div>Unequal Faro 18</div>
-        <div id="me-tile-3" style="flex:1; min-width:80px; padding:8px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.6rem; color:#555;"><div style="font-size:0.45rem; margin-bottom:3px;">STEP 4</div>Verify Stack</div>
+    <div style="display:flex; gap:5px; margin-bottom:14px; flex-wrap:wrap;">
+        <div id="me-tile-0" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Faro OUT</div>
+        <div id="me-tile-1" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Faro OUT</div>
+        <div id="me-tile-2" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Faro OUT</div>
+        <div id="me-tile-3" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Faro OUT</div>
+        <div id="me-tile-4" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 5</div>Rev Top 26</div>
+        <div id="me-tile-5" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 6</div>Unequal Faro 18</div>
+        <div id="me-tile-6" style="flex:1; min-width:60px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 7</div>Verify</div>
     </div>
     <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
-        <button onclick="meInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Spanish NDO</button>
+        <button onclick="meInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Mnemonica NDO</button>
         <button onclick="meStep()" id="me-step-btn" style="display:none;">&#9654; Step</button>
         <button onclick="meRunAll()" id="me-run-btn" style="display:none;">&#9654;&#9654; Run All Steps</button>
     </div>
     <div id="me-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
     <div id="me-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.65rem; color:#aaa; line-height:1.7;"></div>
 </div>
+
 
 <!-- ============ MNEMONICA 8-FARO CYCLE ARENA ============ -->
 <div id="mnem-cycle-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
@@ -1234,31 +1238,12 @@ function prCollect() {
 }
 
 // ================================================================
-// MNEMONICA ENTRY DEMO (3-step faro procedure)
+// MNEMONICA ENTRY DEMO (6-step procedure: 4 Out-Faros + RevTop26 + UnequalFaro18)
 // ================================================================
 let meStep_idx = 0;
-const ME_STEPS = [
-    { label:'Faro OUT', fn: () => faroShuffle('OUT') },
-    { label:'Reverse Top 26', fn: () => reverseTop() },
-    { label:'Unequal Faro Top 18', fn: () => unequalFaroTop() },
-    { label:'Verify Stack', fn: () => {
-        const MNEM = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
-        const exact = deck.every((c,i) => c===MNEM[i]);
-        let cutMatch = -1;
-        if (!exact) { for(let c=1;c<52;c++) { const rot=[...MNEM.slice(c),...MNEM.slice(0,c)]; if(deck.every((x,i)=>x===rot[i])){cutMatch=c;break;} } }
-        const r = document.getElementById('me-result');
-        r.style.display='block';
-        if (exact) {
-            r.innerHTML = '<span style="color:var(--gold); font-size:0.75rem;">&#10003; Exact Mnemonica match!</span><br>The 3-step perfect faro procedure reached Mnemonica from Spanish NDO.';
-        } else if (cutMatch >= 0) {
-            r.innerHTML = '<span style="color:var(--gold); font-size:0.75rem;">&#10003; Mnemonica (cut at '+cutMatch+')</span><br>The result is Mnemonica cut at position '+cutMatch+'. A single cut restores the canonical order.';
-       } else {
-    r.innerHTML = '<span style="color:#ffb703; font-size:0.75rem;">&#8505; Result is not Mnemonica.</span><br>'
-        + "The 3 perfect-faro steps produce a related but distinct order. Tamariz's published entry uses <em>imperfect</em> riffle shuffles, not perfect faros &mdash; this shows what the mathematically perfect version produces instead. Use Verify Stack to identify the resulting order.";
-      }
-            document.getElementById('me-status').innerText = exact ? 'Exact Mnemonica!' : cutMatch>=0 ? 'Mnemonica cut match at '+cutMatch+'.' : 'Not Mnemonica - see result panel for explanation.';
-    }}
-];
+var ME_STEP_NAMES = ['Faro OUT #1','Faro OUT #2','Faro OUT #3','Faro OUT #4','Reverse Top 26','Unequal Faro 18','Verify'];
+var ME_TOTAL_STEPS = 7;
+
 function showMnemEntryDemo() {
     document.getElementById('mnem-entry-arena').style.display='block';
     document.getElementById('mnem-entry-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
@@ -1272,29 +1257,84 @@ function showMnemEntryDemo() {
 
 function meInit() {
     saveState();
-    deck = ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"];
-    renderDeck(); logMove('Mnemonica Demo: Loaded Spanish NDO');
+    // Load Mnemonica NDO preset
+    deck = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
+            "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+            "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+    renderDeck(); logMove('Mnemonica Demo: Loaded Mnemonica NDO');
     meStep_idx=0;
-    [0,1,2,3].forEach(i => { const t=document.getElementById('me-tile-'+i); t.style.background='#111'; t.style.borderColor='#444'; t.style.color='#555'; });
+    for(var i=0;i<ME_TOTAL_STEPS;i++){var t=document.getElementById('me-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
     document.getElementById('me-step-btn').style.display='inline-block';
     document.getElementById('me-run-btn').style.display='inline-block';
     document.getElementById('me-result').style.display='none';
-    document.getElementById('me-status').innerText='Spanish NDO loaded. Step through the 3-step entry procedure.';
+    document.getElementById('me-status').innerText='Mnemonica NDO loaded. Step through all 6 operations to reach Mnemonica order.';
 }
-function meStep() {
-    if (meStep_idx >= ME_STEPS.length) return;
-    ME_STEPS[meStep_idx].fn();
-    const tile = document.getElementById('me-tile-'+meStep_idx);
-    tile.style.background='rgba(255,183,3,0.18)'; tile.style.borderColor='var(--gold)'; tile.style.color='var(--gold)';
-    meStep_idx++;
-    if (meStep_idx >= ME_STEPS.length) {
+
+function meDoStep(idx) {
+    if (idx === 0) faroShuffle('OUT');
+    else if (idx === 1) faroShuffle('OUT');
+    else if (idx === 2) faroShuffle('OUT');
+    else if (idx === 3) faroShuffle('OUT');
+    else if (idx === 4) reverseTop();
+    else if (idx === 5) unequalFaroTop();
+    else if (idx === 6) {
+        // Verify step
+        var MNEM = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+        var exact = deck.every(function(c,i){return c===MNEM[i];});
+        var cutMatch = -1;
+        if (!exact) {
+            for(var c=1;c<52;c++){
+                var rot=MNEM.slice(c).concat(MNEM.slice(0,c));
+                if(deck.every(function(x,i){return x===rot[i];})){cutMatch=c;break;}
+            }
+        }
+        var r = document.getElementById('me-result');
+        r.style.display='block';
+        if (exact) {
+            r.innerHTML='<span style="color:var(--gold);font-size:0.75rem;">&#10003; Exact Mnemonica match!</span><br>4 Out-Faros + Reverse Top 26 + Unequal Faro Top 18 from Mnemonica NDO = perfect Mnemonica order.';
+            document.getElementById('me-status').innerText='Perfect Mnemonica achieved!';
+        } else if (cutMatch >= 0) {
+            r.innerHTML='<span style="color:var(--gold);font-size:0.75rem;">&#10003; Mnemonica cut match at position '+cutMatch+'!</span><br>The deck is in Mnemonica order starting from card '+cutMatch+'. One cut of '+cutMatch+' cards aligns it to canonical Mnemonica order. In performance this cut is undetectable.';
+            document.getElementById('me-status').innerText='Mnemonica cut match at position '+cutMatch+'. One cut completes the procedure.';
+        } else {
+            r.innerHTML='<span style="color:#ffb703;font-size:0.75rem;">&#8505; No Mnemonica match found.</span><br>Check that the deck started in Mnemonica NDO order and all 6 steps were performed correctly.';
+            document.getElementById('me-status').innerText='No match. Check starting order was Mnemonica NDO.';
+        }
         document.getElementById('me-step-btn').style.display='none';
         document.getElementById('me-run-btn').style.display='none';
-    } else {
-        document.getElementById('me-status').innerText = 'Step '+(meStep_idx)+' done. Next: '+ME_STEPS[meStep_idx].label+'.';
+    }
+    var tile = document.getElementById('me-tile-'+idx);
+    if (tile) { tile.style.background='rgba(255,183,3,0.18)'; tile.style.borderColor='var(--gold)'; tile.style.color='var(--gold)'; }
+}
+
+function meStep() {
+    if (meStep_idx >= ME_TOTAL_STEPS) return;
+    meDoStep(meStep_idx);
+    meStep_idx++;
+    if (meStep_idx < ME_TOTAL_STEPS) {
+        document.getElementById('me-status').innerText = 'Step '+meStep_idx+' done. Next: '+ME_STEP_NAMES[meStep_idx]+'.';
     }
 }
-function meRunAll() { while (meStep_idx < ME_STEPS.length) meStep(); }
+
+function meRunAll() {
+    var delay = 0;
+    for (var i = meStep_idx; i < ME_TOTAL_STEPS; i++) {
+        (function(idx) {
+            setTimeout(function() {
+                if (meStep_idx !== idx) return;
+                meDoStep(idx);
+                meStep_idx++;
+                if (meStep_idx < ME_TOTAL_STEPS) {
+                    document.getElementById('me-status').innerText = 'Step '+meStep_idx+' done. Next: '+ME_STEP_NAMES[meStep_idx]+'.';
+                }
+            }, delay);
+        })(i);
+        delay += 450;
+    }
+}
+
+// 
 
 // ================================================================
 // MNEMONICA 8-FARO CYCLE DEMO
