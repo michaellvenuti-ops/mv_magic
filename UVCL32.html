@@ -63,9 +63,9 @@
         /*INPUTS*/
         input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 4px; font-size: 0.65rem; border-radius: 3px; }
 
-        /* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+        /*
            RESPONSIVE BREAKPOINTS
-           Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+        */
 
         /* iPad portrait (768px)â€ narrow sidebar, fluid cards */
         @media (max-width: 900px) {
@@ -98,8 +98,8 @@
     <div id="history" class="history-log"></div>
     
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px; margin-bottom:10px;">
-        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">ðŸƒ Undo</button>
-        <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">â“ HELP</button>
+        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">🃏 Undo</button>
+        <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">❓ HELP</button>
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
@@ -108,7 +108,7 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
             <button onclick="applyPreset('ACES')" style="padding: var(--pad-small);">Aces</button>
             <button onclick="applyPreset('KINGS')" style="padding: var(--pad-small);">Kings</button>
-            <button onclick="applyPreset('SPADE_ROYAL')" style="padding: var(--pad-small);">Royal ðŸ‘‘</button>
+            <button onclick="applyPreset('SPADE_ROYAL')" style="padding: var(--pad-small);">Royal  👑</button>
             <button onclick="applyPreset('')" style="padding: var(--pad-small);">Clear</button>
         </div>
     </div>
@@ -169,9 +169,9 @@
     </div>
     
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
-        <button onclick="exportStack()" style="padding: var(--pad-small);">ðŸ“¤ Export</button>
-        <button onclick="importStack()" style="padding: var(--pad-small);">ðŸ“¥ Import</button>
-        <button onclick="saveStack()" style="grid-column: span 2; padding: var(--pad-small);">ðŸ’¾ Save Session</button>
+        <button onclick="exportStack()" style="padding: var(--pad-small);">📤 Export</button>
+        <button onclick="importStack()" style="padding: var(--pad-small);">📥 Import</button>
+        <button onclick="saveStack()" style="grid-column: span 2; padding: var(--pad-small);">💾 Save Session</button>
     </div>
 </div>
 
@@ -179,7 +179,7 @@
     <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap: wrap;">
         <h1 style="color:var(--gold); font-size:1.2rem; margin:0;">Virtual Card Lab v9.4</h1>
         <button id="peek-btn" onclick="togglePeek()" style="border-color:var(--gold); color:var(--gold); padding:var(--pad-full);">
-            ðŸƒ PEEK MODE: OFF
+            🃏 PEEK MODE: OFF
         </button>
         
         <div style="display:flex; gap:4px; align-items:center; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid #333;">
@@ -217,7 +217,7 @@
                       style="cursor:pointer; background:#444; padding:2px 6px; border-radius:2px;
                              white-space:nowrap; color:white;"
                       onmouseover="this.style.background='var(--accent)'"
-                      onmouseout="this.style.background='#444'">ðŸ§ª CUT</span>
+                      onmouseout="this.style.background='#444'">🧪 CUT</span>
             </div>
         </div>
 
@@ -563,7 +563,8 @@
 </div>
 
 <script>
-    const suitSymbols = {'C':'â™£', 'H':'â™¥', 'S':'â™ ', 'D':'â™¦'};
+    
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [], undoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
 
@@ -677,7 +678,7 @@
         function togglePeek() {
         peekMode = !peekMode;
         const btn = document.getElementById('peek-btn');
-        btn.innerText = `ðŸƒ PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
+        btn.innerText = `🃏 PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
         btn.style.borderColor = peekMode ? 'var(--accent)' : 'var(--gold)';
         btn.style.color = peekMode ? 'var(--accent)' : 'var(--gold)';
         logMove(`Peek Mode ${peekMode ? 'ONâ€ click any card to reveal for 1 second' : 'OFFâ€ cards visible'}`);
@@ -900,21 +901,21 @@
             'MNEMONICA_NDO': ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
         };
         const dupes = deck.filter((c, i) => deck.indexOf(c) !== i);
-        if (dupes.length > 0) { logMove(`Ã¢Å¡Â  DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
+        if (dupes.length > 0) { logMove(`🎉 DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
         let matched = false;
         for (const [name, order] of Object.entries(stacks)) {
-            if (deck.every((c, i) => c === order[i])) { logMove(`ðŸŽ‰ MATCH: Current deck is ${name}`); matched = true; break; }
+            if (deck.every((c, i) => c === order[i])) { logMove(`🎉 MATCH: Current deck is ${name}`); matched = true; break; }
         }
         if (!matched) {
             for (const [name, order] of Object.entries(stacks)) {
                 for (let cut = 1; cut < 52; cut++) {
                     const rotated = [...order.slice(cut), ...order.slice(0, cut)];
-                    if (deck.every((c, i) => c === rotated[i])) { logMove(`ðŸŽ‰ CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
+                    if (deck.every((c, i) => c === rotated[i])) { logMove(`🎉 CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
                 }
                 if (matched) break;
             }
         }
-        if (!matched) logMove('â“ No match foundâ€ custom or unknown order');
+        if (!matched) logMove('❓ No match foundâ€ custom or unknown order');
     }
 
     function calcToNDO() {
@@ -947,11 +948,11 @@
             for (let j = 0; j < 26; j++) { res.push(top[j]); res.push(bot[j]); }
             test = res;
             for (const [name, order] of Object.entries(targets)) {
-                if (test.every((c, idx) => c === order[idx])) results.push(`Ã°Å¸â€Â® Reaches ${name} in ${i} out-faro(s)`);
+                if (test.every((c, idx) => c === order[idx])) results.push(`❓  Reaches ${name} in ${i} out-faro(s)`);
             }
         }
         if (results.length > 0) results.forEach(r => logMove(r));
-        else logMove('â“ Does not reach any known order in 8 out-faros');
+        else logMove('❓ Does not reach any known order in 8 out-faros');
     }
 
     function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
@@ -1380,7 +1381,7 @@ function meDoStep(idx) {
         // Cut at 9 Ã¢â‚¬â€ moves top 9 cards to bottom, bringing 9D to position 1
         saveState();
         deck = deck.slice(9).concat(deck.slice(0,9));
-        logMove('Mnemonica Demo: Cut at 9 (9Ã¢â„¢Â¦ to bottom)');
+        logMove('Mnemonica Demo: Cut at 9 ♦ to bottom)');
         renderDeck();
         document.getElementById('me-status').innerText='Cut at 9 done Ã¢â‚¬â€ 9Ã¢â„¢Â¦ moved to bottom. Now verify!';
     }
@@ -1391,7 +1392,7 @@ function meDoStep(idx) {
         var r = document.getElementById('me-result');
         r.style.display='block';
         if (exact) {
-            r.innerHTML='<span style="color:var(--gold);font-size:0.8rem;">&#10003; Exact Mnemonica match!</span><br><span style="font-size:0.6rem;color:#aaa;">Mnemonica NDO Ã¢â€ â€™ 4 Out-Faros Ã¢â€ â€™ Reverse Top 26 Ã¢â€ â€™ Unequal Faro Top 18 Ã¢â€ â€™ Cut at 9 = perfect Mnemonica order.</span>';
+            r.innerHTML='<span style="color:var(--gold);font-size:0.8rem;">&#10003; Exact Mnemonica match!</span><br><span style="font-size:0.6rem;color:#aaa;">Mnemonica NDO → 4 Out-Faros → Reverse Top 26 → U Unequal Faro Top 18  Cut at 9 ♦ = perfect Mnemonica order.</span>';
             document.getElementById('me-status').innerText='Perfect Mnemonica! All 8 steps complete.';
         } else {
             r.innerHTML='<span style="color:#ffb703;font-size:0.75rem;">&#8505; No exact match.</span><br>Check all 8 steps were performed from Mnemonica NDO.';
