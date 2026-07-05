@@ -231,6 +231,7 @@
         <button onclick="reverseTop()">Reverse Top 26</button>
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
+        <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card</button>
         <div style="display:contents;">
             <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
                 <span style="white-space:nowrap;">Cut at:</span>
@@ -244,7 +245,6 @@
                       onmouseout="this.style.background='#444'">🧪 CUT</span>
             </div>
         </div>
-        <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card</button>
 
         <div class="divider" data-label="NDO STACK PRESETS"></div>
         <button onclick="resetTo('NDO')">New Deck Order (NDO)</button>
