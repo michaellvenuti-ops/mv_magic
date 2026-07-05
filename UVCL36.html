@@ -2091,7 +2091,7 @@ function showJonah(num) {
         document.getElementById('jonah-desc').innerHTML =
             '<strong style="color:var(--gold);">Demo 1 &mdash; 9♠ on Top, Participant Dealt First:</strong><br>' +
             'Loads the Particle stack and extracts positions 20–30 (11 cards), removing the 7♥ to leave a clean 10-card bank. ' +
-            'The 9♠ sits at the top of the bank. Cards are dealt one at a time: <strong>User first, then Dealer.</strong> ' +
+            'The 9♠ sits at the top of the bank. Cards are dealt one at a time: <strong>Participant first, then Dealer.</strong> ' +
             'The 9♠ (card 1) goes straight to the User. ' +
             '<span style="color:#8B5CF6;">Whoever holds the 9♠ is doomed &mdash; the User loses.</span>';
         document.getElementById('jonah-p1-label').innerText = 'Participant ← deals first';
@@ -2118,7 +2118,10 @@ function jonahLoad() {
 
     // Build the 10-card bank: Particle pos 20-30, remove 7H
     var raw = JONAH_PARTICLE.slice(19, 30);
-    jonahBank = raw.filter(function(c){ return c !== '7H'; });
+    var filtered = raw.filter(function(c){ return c !== '7H'; });
+    var rest = filtered.filter(function(c){ return c !== '9C'; });
+    rest.sort(function(){ return Math.random() - 0.5; });
+    jonahBank = ['9C'].concat(rest);
 
     var workingBank;
     if (jonahDemoNum === 1) {
