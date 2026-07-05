@@ -1892,10 +1892,10 @@ function mnDoStep(idx) {
         renderDeck();
         logMove('Mnemonica NDO Demo: Step 3 - Clubs reversed onto Diamonds, balance thrown beneath');
         mnShowBlocks([
-            {label:'Spades (A→K) ✓, cards:['AS → KS']},
-            {label:'Hearts (A→K) ✓, cards:['AH → KH']},
-            {label:'Diamonds (K→A) ✓, cards:['KD → AD']},
-            {label:'Clubs REVERSED ✓, cards:['KC → AC']}
+            {label:'Spades (A→K) ✓', cards:['AS → KS']},
+            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
+            {label:'Diamonds (K→A) ✓', cards:['KD → AD']},
+            {label:'Clubs REVERSED ✓', cards:['KC → AC']}
         ], -1);
         for(var i=0;i<4;i++){var b=document.getElementById('mn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
         document.getElementById('mn-status').innerText='Step 3: Clubs reversed (AC→KC becomes KC→AC) onto Diamonds, Hearts+Spades thrown beneath. All 4 blocks in Mnemonica NDO order!';
