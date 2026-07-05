@@ -194,7 +194,8 @@
 
 <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
     <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK SOLVER</span>
-    <button onclick="showSolverDemo()" style="padding: var(--pad-small); width:100%;">Solver Arena</button>
+    <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+    <button onclick="showSolverDemo()"  style="padding: var(--pad-small);">Solver Arena</button>
 </div>
 
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
@@ -2394,10 +2395,11 @@ function toggleSolverUI() {
     const ui = document.getElementById('solver-ui');
     ui.style.display = ui.style.display === 'none' ? 'block' : 'none';
 }
-
+    
 function showSolverDemo() {
     document.getElementById('solver-arena').style.display = 'block';
     document.getElementById('solver-arena').scrollIntoView({behavior:'smooth', block:'nearest'});
+    document.getElementById('solver-tbody').innerHTML = '';
     document.getElementById('solver-status').innerText = 'Ready. Enter a target card and position.';
 }
 
