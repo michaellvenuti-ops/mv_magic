@@ -197,15 +197,19 @@
         <span>Stack Solver — Find Shuffle Sequences</span>
     </div>
     <div class="demo-description">
-        Input target cards and positions. The solver uses a BFS search to find the shortest sequence of 
-        <span>Faro In, Faro Out, or Cut</span> operations to reach your goal.
+        Input target cards and positions. The solver will calculate the shortest path of shuffles.
     </div>
-    <div class="solver-controls">
-        <input type="text" id="solve-card" placeholder="Card (e.g., AH)" style="background:#222; color:#fff; border:1px solid #444; padding:5px; margin:5px;">
-        <input type="number" id="solve-idx" placeholder="Target Index (0-51)" style="background:#222; color:#fff; border:1px solid #444; padding:5px; margin:5px;">
-        <button onclick="runSolver()" style="background:#d90429; color:white; border:none; padding:5px 15px; cursor:pointer;">RUN SOLVER</button>
+    
+    <div class="demo-buttons">
+        <button onclick="document.getElementById('solver-ui').style.display='block'">OPEN SOLVER</button>
     </div>
-    <div id="solver-status" style="margin-top:10px; font-size:0.75rem; color:#00f5d4; font-family:monospace;"></div>
+
+    <div id="solver-ui" style="display:none; margin-top:15px; border-top:1px solid #444; padding-top:15px;">
+        <input type="text" id="solve-card" placeholder="Card (e.g. AH)" style="width: 45%;">
+        <input type="number" id="solve-idx" placeholder="Index (0-51)" style="width: 45%;">
+        <button onclick="runSolver()" style="margin-top:10px; width: 100%;">FIND PATH</button>
+        <div id="solver-status" style="margin-top:10px; font-size:0.7rem; color:#00f5d4;"></div>
+    </div>
 </div>
 
 <!-- Button to trigger it (Place this in your sidebar/controls area) -->
@@ -2400,9 +2404,11 @@ async function runSolver() {
     const targetIdx = parseInt(document.getElementById('solve-idx').value);
     const status = document.getElementById('solver-status');
     
-    status.innerText = "Searching... (Limit: 8 moves)";
+    // Update the session log area (or target div)
+    const logArea = document.querySelector('.history-log'); 
     
-    // We use a broader queue and a depth limit of 8
+    status.innerText = "Searching...";
+    
     let queue = [{ d: [...deck], path: [] }];
     let visited = new Set();
     let limit = 8; 
@@ -2410,9 +2416,10 @@ async function runSolver() {
     while(queue.length > 0) {
         let { d, path } = queue.shift();
         
-        // Check if card is at the target index
         if(d[targetIdx] === card) {
-            status.innerText = "Path found: " + path.join(" -> ");
+            let result = "SOLVER FOUND: " + path.join(" -> ");
+            status.innerText = result;
+            if(logArea) logArea.innerHTML += `<br><span style="color:#ffb703;">${result}</span>`;
             return;
         }
         
