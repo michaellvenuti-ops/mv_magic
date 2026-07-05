@@ -192,23 +192,16 @@
         </div>
     </div>
 
-<div class="demo-section">
-    <div class="demo-header">
-        <span>Stack Solver — Find Shuffle Sequences</span>
-    </div>
-    <div class="demo-description">
-        Input target cards and positions. The solver will calculate the shortest path of shuffles.
+<div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK SOLVER DEMOS</span>
+    <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+        <button onclick="toggleSolverUI()" style="padding: var(--pad-small);">Open Solver</button>
     </div>
     
-    <div class="demo-buttons">
-        <button onclick="document.getElementById('solver-ui').style.display='block'">OPEN SOLVER</button>
-    </div>
-
-    <div id="solver-ui" style="display:none; margin-top:15px; border-top:1px solid #444; padding-top:15px;">
-        <input type="text" id="solve-card" placeholder="Card (e.g. AH)" style="width: 45%;">
-        <input type="number" id="solve-idx" placeholder="Index (0-51)" style="width: 45%;">
-        <button onclick="runSolver()" style="margin-top:10px; width: 100%;">FIND PATH</button>
-        <div id="solver-status" style="margin-top:10px; font-size:0.7rem; color:#00f5d4;"></div>
+    <div id="solver-ui" style="display:none; margin-top:10px; padding-top:10px; border-top:1px solid #444;">
+        <input type="text" id="solve-card" placeholder="Card (e.g. AH)" style="width: 100%; margin-bottom: 5px; background:#111; color:#fff; border:1px solid #333;">
+        <input type="number" id="solve-idx" placeholder="Target Index (0-51)" style="width: 100%; margin-bottom: 5px; background:#111; color:#fff; border:1px solid #333;">
+        <button onclick="runSolver()" style="padding: var(--pad-small); width: 100%; background:var(--gold); color:#000; font-weight:bold;">FIND PATH</button>
     </div>
 </div>
 
@@ -2399,27 +2392,28 @@ function runStackCompare() {
         '<span style="color:var(--accent);">&#9679; ' + mismatches + ' different</span>';
 }
 
+function toggleSolverUI() {
+    const ui = document.getElementById('solver-ui');
+    ui.style.display = ui.style.display === 'none' ? 'block' : 'none';
+}
+
 async function runSolver() {
     const card = document.getElementById('solve-card').value.trim();
     const targetIdx = parseInt(document.getElementById('solve-idx').value);
-    const status = document.getElementById('solver-status');
     
-    // Update the session log area (or target div)
-    const logArea = document.querySelector('.history-log'); 
-    
-    status.innerText = "Searching...";
+    // Assuming you have a standard log function, or you can write directly to an element
+    const logOutput = document.getElementById('session-log') || document.body;
     
     let queue = [{ d: [...deck], path: [] }];
     let visited = new Set();
-    let limit = 8; 
+    let limit = 7; // Depth limit
     
     while(queue.length > 0) {
         let { d, path } = queue.shift();
         
         if(d[targetIdx] === card) {
-            let result = "SOLVER FOUND: " + path.join(" -> ");
-            status.innerText = result;
-            if(logArea) logArea.innerHTML += `<br><span style="color:#ffb703;">${result}</span>`;
+            let result = "SOLVER SUCCESS: " + path.join(" -> ");
+            alert(result); // Or update your log div
             return;
         }
         
@@ -2439,7 +2433,7 @@ async function runSolver() {
             }
         }
     }
-    status.innerText = "No path found within depth limit.";
+    alert("No path found within depth limit.");
 }
 
 </script>
