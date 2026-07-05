@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Card Lab v9.4</title>
+    <style>
+        :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
+
+        /*BASE LAYOUT*/
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        #sidebar { width: 300px; min-width: 220px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 12px; overflow-y: auto; flex-shrink: 0; }
+        .history-log { flex-grow: 1; min-height: 80px; background: #000; border: 1px solid #444; padding: 8px; font-family: monospace; font-size: 0.65rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 8px; }
+        #lab-main { flex-grow: 1; padding: 12px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
+
+        /*DECK GRIDâ€ fluid 13 columns, cards scale with available space*/
+        .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; margin-bottom: 12px; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
+
+        /* Size overridesâ€ use fixed px only on wide screens */
+        .deck-display.size-small  { grid-template-columns: repeat(13, 1fr); }
+        .deck-display.size-medium { grid-template-columns: repeat(13, 1fr); }
+        .deck-display.size-large  { grid-template-columns: repeat(13, 1fr); }
+
+        /*CARD*/
+        .card { background: white; border-radius: 3px; cursor: pointer; position: relative; transition: 0.15s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
+        .card.selected { outline: 2px solid var(--gold); transform: translateY(-2px); z-index: 10; }
+        .card.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
+        .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* Text fallback card (used on iPhone / when PNG unavailable) */
+        .card.text-card { font-weight: bold; font-size: clamp(0.4rem, 1.8vw, 0.9rem); text-align: center; flex-direction: column; background: white; color: black; padding: 2px; }
+        .card.text-card.red { color: var(--accent); }
+
+        /*CARD POSITION INDEX*/
+        .card-index { position: absolute; color: #222; font-weight: bold; z-index: 5; background: rgba(255,255,255,0.8); padding: 0 1px; border-radius: 2px; line-height: 1; font-family: sans-serif; font-size: clamp(0.35rem, 0.8vw, 0.55rem); }
+        .card-index.top-right { top: 1px; right: 1px; }
+        .card-index.bottom-left { bottom: 1px; left: 1px; }
+
+        /*PEEK MODE*/
+        .card.face-down { background: #d90429; border: 2px solid #fff; cursor: pointer; }
+        .card.face-down .card-img { display: none; }
+        .card.face-down .card-index { display: none; }
+        .card.face-down.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
+        .peek-num { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: clamp(0.6rem, 2.5vw, 1.8rem); font-weight: bold; z-index: 20; pointer-events: none; }
+        .peek-idx { position: absolute !important; top: 2px; right: 2px; font-size: clamp(0.3rem, 0.7vw, 0.5rem); font-weight: bold; color: black; z-index: 999; pointer-events: none; background: white; padding: 0 2px; border-radius: 2px; display: block !important; }
+
+        /*BUTTONS*/
+        button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 5px 4px; cursor: pointer; font-size: 0.55rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
+        button:hover { background: var(--accent); }
+
+        /*DIVIDERS*/
+        .divider { grid-column: 1 / -1; height: 1px; background: #444; margin: 12px 0 8px 0; position: relative; }
+        .divider::after { content: attr(data-label); position: absolute; top: -8px; left: 10px; background: var(--bg); padding: 0 8px; font-size: 0.5rem; color: var(--gold); }
+
+        /*POKER ARENA*/
+        #poker-arena { margin-top: 15px; background: var(--felt); border: 4px solid var(--gold); border-radius: 12px; padding: 12px; display: none; }
+        .hand-row { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
+        .table-card { width: clamp(35px, 5vw, 60px); height: clamp(50px, 7vw, 85px); background: white; border-radius: 5px; display: flex; align-items: center; justify-content: center; border: 1px solid #999; overflow: hidden; }
+        .table-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .table-card.text-card { font-weight: bold; font-size: clamp(0.6rem, 1.5vw, 0.9rem); color: black; flex-direction: column; }
+        .table-card.text-card.red { color: var(--accent); }
+
+        /*INPUTS*/
+        input[type="text"] { background: #000; color: #00f5d4; border: 1px solid #444; padding: 4px; font-size: 0.65rem; border-radius: 3px; }
+
+        /*
+           RESPONSIVE BREAKPOINTS
+        */
+
+        /* iPad portrait (768px)â€ narrow sidebar, fluid cards */
+        @media (max-width: 900px) {
+            #sidebar { width: 240px; min-width: 200px; padding: 10px; }
+            .history-log { min-height: 60px; font-size: 0.6rem; }
+            button { font-size: 0.5rem; padding: 4px 3px; }
+        }
+
+        /* iPhone / small phonesâ€ stack sidebar above main */
+        @media (max-width: 600px) {
+            body { flex-direction: column; height: auto; overflow: auto; }
+            #sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: 2px solid #333; padding: 10px; max-height: 40vh; overflow-y: auto; }
+            #lab-main { padding: 8px; }
+            .history-log { min-height: 50px; max-height: 80px; }
+            .deck-display { gap: 2px; padding: 4px; }
+            .card-index { font-size: 0.3rem; }
+            .peek-num { font-size: clamp(0.5rem, 3vw, 1rem); }
+            button { font-size: 0.48rem; padding: 4px 2px; }
+            #lab-main h1 { font-size: 0.9rem !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+        <span style="font-size:0.6rem; color:var(--gold);">SESSION LOG</span>
+        <button onclick="document.getElementById('history').innerHTML=''" style="padding: var(--pad-small);">Clear Log</button>
+    </div>
+    <div id="history" class="history-log"></div>
+    
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px; margin-bottom:10px;">
+        <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">🃏 Undo</button>
+        <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">❓ HELP</button>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">SEARCH & TRACK</span>
+        <input type="text" id="search-input" placeholder="Search (e.g. AS, 4H)..." oninput="renderDeck()" style="width:100%; margin-bottom:5px;">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
+            <button onclick="applyPreset('ACES')" style="padding: var(--pad-small);">Aces</button>
+            <button onclick="applyPreset('KINGS')" style="padding: var(--pad-small);">Kings</button>
+            <button onclick="applyPreset('SPADE_ROYAL')" style="padding: var(--pad-small);">Royal 👑</button>
+            <button onclick="applyPreset('')" style="padding: var(--pad-small);">Clear</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">POKER SIMS</span>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4px;">
+            <button onclick="dealDraw(2)" style="padding: var(--pad-small);">2P Draw</button><button onclick="dealHoldem(2)" style="padding: var(--pad-small);">2P Hold'em</button>
+            <button onclick="dealDraw(3)" style="padding: var(--pad-small);">3P Draw</button><button onclick="dealHoldem(3)" style="padding: var(--pad-small);">3P Hold'em</button>
+            <button onclick="dealDraw(4)" style="padding: var(--pad-small);">4P Draw</button><button onclick="dealHoldem(4)" style="padding: var(--pad-small);">4P Hold'em</button>
+            <button onclick="dealDraw(5)" style="padding: var(--pad-small);">5P Draw</button><button onclick="dealHoldem(5)" style="padding: var(--pad-small);">5P Hold'em</button>
+            <button onclick="dealDraw(6)" style="padding: var(--pad-small);">6P Draw</button><button onclick="dealHoldem(6)" style="padding: var(--pad-small);">6P Hold'em</button>
+        </div>
+        <label style="font-size:0.55rem; display:flex; align-items:center; margin-top:8px;">
+            <input type="checkbox" id="bottom-deal-toggle"> Bottom Deal (Dealer)
+        </label>
+        <button onclick="document.getElementById('poker-arena').style.display='none'" style="width:100%; margin-top:5px; padding: var(--pad-small);">Clear Table</button>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:#8B5CF6; display:block; margin-bottom:5px;">&#9760; JONAH POKER DEMOS</span>
+        <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+            <button onclick="showJonah(1)" style="padding:var(--pad-small); border-color:#8B5CF6; color:#8B5CF6;">Demo 1: 9&#9827; on Top &rarr; User Loses</button>
+            <button onclick="showJonah(2)" style="padding:var(--pad-small); border-color:#8B5CF6; color:#8B5CF6;">Demo 2: 9&#9827; on Bottom &rarr; Dealer Loses</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">GILBREATH DEMOS</span>
+        <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+            <button onclick="showGilbreathDemo()" style="padding:var(--pad-small);">Gilbreath Shuffle Demo</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK COACH</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+            <button onclick="toggleCoach()" style="padding: var(--pad-small);">Toggle Stack Coach</button>
+            <button onclick="verifyStack()" style="padding: var(--pad-small);">Verify Current Stack</button>
+            <button onclick="calcToNDO()" style="padding: var(--pad-small);">Cycles to NDO</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MOVE THE TOP CARD TO ANY POSITION USING FARO SHUFFLE</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+        <button onclick="showFaroNav()" style="padding: var(--pad-small);">FARO TOP CARD NAVIGATOR</button>
+        </div>
+    </div>
+    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">FARO CYCLES DEMO</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+        <button onclick="showFaroCycles()" style="padding: var(--pad-small);">Faro Cycles Demo</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MNEMONICA DEMOS</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+            <button onclick="showNdoToMnemNdo()" style="padding: var(--pad-small);">NDO &rarr; Mnemonica NDO</button>
+            <button onclick="showMnemEntryDemo()" style="padding: var(--pad-small);">Mnemonica NDO &rarr; Mnemonica</button>
+            <button onclick="showMnemCycleDemo()" style="padding: var(--pad-small);">Mnemonica 8-Faro Cycle</button>
+            <button onclick="showAronsonStayDemo()" style="padding: var(--pad-small);">Aronson Stay-Stack</button>
+        </div>
+    </div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">PARTICLE STACK DEMOS</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+            <button onclick="showNdoToParticleNdo()" style="padding: var(--pad-small);">NDO &rarr; Particle NDO</button>
+            <button onclick="showParticleEntry()" style="padding: var(--pad-small);">Particle NDO &rarr; Stack</button>
+            <button onclick="showParticleReturn()" style="padding: var(--pad-small);">Particle Stack &rarr; NDO</button>
+        </div>
+    </div>
+    
+    <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
+        <button onclick="exportStack()" style="padding: var(--pad-small);">📤 Export</button>
+        <button onclick="importStack()" style="padding: var(--pad-small);">📥 Import</button>
+        <button onclick="saveStack()" style="grid-column: span 2; padding: var(--pad-small);">💾 Save Session</button>
+    </div>
+</div>
+
+<div id="lab-main">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px; flex-wrap: wrap;">
+        <h1 style="color:var(--gold); font-size:1.2rem; margin:0;">Virtual Card Lab v9.6</h1>
+        <button id="peek-btn" onclick="togglePeek()" style="border-color:var(--gold); color:var(--gold); padding:var(--pad-full);">
+            🃏 PEEK MODE: OFF
+        </button>
+        
+        <div style="display:flex; gap:4px; align-items:center; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid #333;">
+            <span style="font-size:0.55rem; color:var(--gold); font-weight:bold; margin-right:4px; text-transform:uppercase;">Size:</span>
+            <button id="size-small-btn" onclick="changeCardSize('small')" style="padding:var(--pad-small);">Small</button>
+            <button id="size-medium-btn" onclick="changeCardSize('medium')" style="padding:var(--pad-small);">Medium</button>
+            <button id="size-large-btn" onclick="changeCardSize('large')" style="padding:var(--pad-small);">Large</button>
+        </div>
+    </div>
+
+    <div class="deck-wrapper">
+        <div id="deck" class="deck-display size-small"></div>
+    </div>
+    
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap:6px;">
+        <div class="divider" data-label="MECHANICS & SHUFFLES"></div>
+        <button onclick="faroShuffle('OUT')">Faro OUT</button>
+        <button onclick="faroShuffle('IN')">Faro IN</button>
+        <button onclick="reverseDeck()">Reverse Shuffle</button>
+        <button onclick="gilbrethShuffle()">Gilbreth Shuffle</button>
+        <button onclick="cutDeck()">Cut Deck (26)</button>
+        <button onclick="randomShuffle()">Randomize</button>
+        <button onclick="shiftDeck('LEFT')">Shift Left</button>
+        <button onclick="shiftDeck('RIGHT')">Shift Right</button>
+        <button onclick="reverseTop()">Reverse Top 26</button>
+        <button onclick="reverseBottom()">Reverse Bottom 26</button>
+        <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
+        <div style="display:contents;">
+            <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
+                <span style="white-space:nowrap;">Cut at:</span>
+                <input type="number" id="cutNumber" min="1" max="51" value="26"
+                       style="width:36px; background:#111; color:#00f5d4; border:1px solid #555;
+                              border-radius:2px; text-align:center; font-size:0.6rem; padding:2px;">
+                <span onclick="executeBoxCut()"
+                      style="cursor:pointer; background:#444; padding:2px 6px; border-radius:2px;
+                             white-space:nowrap; color:white;"
+                      onmouseover="this.style.background='var(--accent)'"
+                      onmouseout="this.style.background='#444'">🧪 CUT</span>
+            </div>
+        </div>
+
+        <div class="divider" data-label="NDO STACK PRESETS"></div>
+        <button onclick="resetTo('NDO')">New Deck Order (NDO)</button>
+        <button onclick="resetTo('SPANISH_NDO')">Spanish NDO</button>
+        <button onclick="resetTo('FRENCH_NDO')">French NDO</button>
+        <button onclick="resetTo('PARTICLE_NDO')">Particle NDO</button>
+        <button onclick="resetTo('MNEMONICA_NDO')">Mnemonica NDO</button>
+
+        <div class="divider" data-label="MEM DECK STACKS"></div>
+        <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
+        <button onclick="resetTo('PARTICLE')">Particle</button>
+        <button onclick="resetTo('MY_ORDER')">My Chased</button>
+        <button onclick="resetTo('MEMORANDUM')">Memorandum</button>
+        <button onclick="resetTo('ARONSON')">Aronson</button>
+        <button onclick="resetTo('OSTERLIND')">Osterlind</button>
+        <button onclick="resetTo('NIKOLA')">Nikola</button>
+        <button onclick="resetTo('EIGHT_KINGS')">Eight Kings</button>
+        <button onclick="resetTo('BORIS_WILD')">Boris Wild</button>
+        <button onclick="resetTo('JOYAL')">Joyal</button>
+        <button onclick="resetTo('TETRA_RED')">Tetra Red</button>
+        
+        <div class="divider" data-label="MATHEMATICAL STACKS"></div>
+        <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
+        <button onclick="resetTo('MY_STEBBINS')">My Stebbins</button>
+        <button onclick="resetTo('STEBBINS4')">Stebbins +4</button>
+        <button onclick="resetTo('STEBBINS5')">Stebbins +5</button>
+        <button onclick="resetTo('LATIN_FORMULA')">Latin Formula</button>
+
+       <div class="divider" data-label="FALSE WORK (STACK PROTECTION)"></div>
+        <button onclick="falseShuffle('ZARROW')">Zarrow (Top/Bot Swap)</button>
+        <button onclick="falseShuffle('BLIND')">Blind Faro (Top 2 Center)</button>
+
+    </div>
+
+    <!-- ============ JONAH POKER ARENA ============ -->
+    <div id="jonah-arena" style="margin-top:20px; background:#0d001a; border:4px solid #8B5CF6; border-radius:12px; padding:15px; display:none;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="color:#8B5CF6; font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9760; Jonah Poker &mdash; The Cursed Card</span>
+            <button onclick="document.getElementById('jonah-arena').style.display='none'" style="padding:2px 10px; border-color:#8B5CF6; color:#8B5CF6;">&times;</button>
+        </div>
+
+        <!-- Demo description -->
+        <div id="jonah-desc" style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.7; padding:8px; background:rgba(139,92,246,0.08); border-radius:4px; border:1px solid #3d2060;"></div>
+
+        <!-- Step tiles -->
+        <div id="jonah-tiles" style="display:flex; gap:5px; margin-bottom:12px; flex-wrap:wrap;"></div>
+
+        <!-- Controls -->
+        <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+            <button onclick="jonahLoad()" id="jonah-load-btn" style="border-color:#8B5CF6; color:#8B5CF6; display:none;">&#8635; Load Particle Stack</button>
+            <button onclick="jonahDealStep()" id="jonah-step-btn" style="border-color:#8B5CF6; color:#8B5CF6; display:none;">&#9654; Deal Next Card</button>
+            <button onclick="jonahRunAll()" id="jonah-run-btn" style="border-color:#8B5CF6; color:#8B5CF6; display:none;">&#9654;&#9654; Deal All</button>
+            <button onclick="jonahReset()" id="jonah-reset-btn" style="border-color:#555; color:#888; display:none;">&#8635; Reset</button>
+        </div>
+
+        <!-- Status -->
+        <div id="jonah-status" style="font-size:0.65rem; color:#8B5CF6; min-height:1.4em; margin-bottom:10px;"></div>
+
+        <!-- Table -->
+        <div id="jonah-table" style="display:none;">
+            <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:10px;">
+                <div style="flex:1; min-width:120px;">
+                    <div id="jonah-p1-label" style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">USER</div>
+                    <div id="jonah-p1-hand" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+                </div>
+                <div style="flex:1; min-width:120px;">
+                    <div id="jonah-p2-label" style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">DEALER</div>
+                    <div id="jonah-p2-hand" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+                </div>
+            </div>
+            <div id="jonah-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid #8B5CF6; background:rgba(139,92,246,0.12); font-size:0.7rem; text-align:center; color:#8B5CF6; line-height:1.6;"></div>
+        </div>
+    </div>
+
+    <!-- ============ GILBREATH ARENA (placeholder) ============ -->
+    <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Gilbreath Shuffle Demo</span>
+            <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+        </div>
+        <div style="font-size:0.6rem; color:#aaa; line-height:1.7;">
+            Gilbreath demos coming soon. This section will demonstrate the Gilbreath Principle &mdash; after one Gilbreath riffle shuffle of a cycling-suit deck, every pair of cards contains one Red and one Black, and every group of 4 contains all 4 suits.
+        </div>
+    </div>
+
+    <div id="poker-arena">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Poker Simulation</span>
+            <button onclick="document.getElementById('poker-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+        </div>
+        <div id="poker-rows"></div>
+        <div id="community-cards" style="margin-top:10px; border-top:1px dashed var(--gold); padding-top:10px;"></div>
+    </div>
+    <!-- ============ PART 2: FARO NAVIGATOR ARENA ============ -->
+<div id="faro-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Navigator &mdash; Move Top Card to Position N</span>
+        <button onclick="document.getElementById('faro-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
+    </div>
+
+    <!-- How it works blurb -->
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.5;">
+        Based on the binary method by S. Brent Morris. Subtract 1 from the target position,
+        convert to binary, then read each bit left-to-right: <span style="color:var(--gold);">1 = In-shuffle, 0 = Out-shuffle.</span>
+        The top card lands exactly at your target after the full sequence.
+    </div>
+
+    <!-- Input row -->
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+        <span style="font-size:0.6rem; color:var(--gold);">Target Position:</span>
+        <input type="number" id="faro-nav-target" min="2" max="52" value="40"
+               style="width:50px; background:#111; color:#00f5d4; border:1px solid #555;
+                      border-radius:3px; text-align:center; font-size:0.7rem; padding:4px;">
+        <button onclick="calcFaroNav()" style="border-color:var(--gold); color:var(--gold);">Calculate</button>
+        <button onclick="faroNavStep()" id="faro-nav-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="faroNavRunAll()" id="faro-nav-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="faroNavReset()" id="faro-nav-reset-btn" style="display:none; border-color:#888; color:#888;">Reset</button>
+    </div>
+
+    <!-- Binary breakdown display -->
+    <div id="faro-nav-breakdown" style="margin-bottom:14px;"></div>
+
+    <!-- Step-by-step shuffle sequence -->
+    <div id="faro-nav-sequence" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
+
+    <!-- Status line -->
+    <div id="faro-nav-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+</div>
+<!-- ============ PART 2: FARO CYCLES ARENA ============ -->
+<div id="faro-cycles-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Faro Cycles Demo</span>
+        <button onclick="document.getElementById('faro-cycles-arena').style.display='none'" style="padding:2px 10px;">&times;</button>
+    </div>
+
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:14px; line-height:1.6;">
+        Two of the most remarkable results in card mathematics:<br>
+        <span style="color:var(--gold);">8 consecutive Out-Faros</span> return any 52-card deck to its original order.<br>
+        <span style="color:var(--accent);">52 consecutive In-Faros</span> do the same &mdash; one shuffle for every card in the deck.
+    </div>
+
+    <!-- Mode selector -->
+    <div style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+        <button id="cycles-out-btn" onclick="initFaroCycles('OUT')"
+                style="border-color:var(--gold); color:var(--gold); flex:1;">
+            8 Out-Faros (8 steps)
+        </button>
+        <button id="cycles-in-btn" onclick="initFaroCycles('IN')"
+                style="border-color:var(--accent); color:var(--accent); flex:1;">
+            52 In-Faros (52 steps)
+        </button>
+    </div>
+
+    <!-- Snapshot of starting top card -->
+    <div id="cycles-top-card" style="font-size:0.6rem; color:#aaa; margin-bottom:10px;"></div>
+
+    <!-- Progress bar -->
+    <div style="background:#111; border-radius:4px; height:10px; margin-bottom:10px; overflow:hidden; display:none;" id="cycles-progress-wrap">
+        <div id="cycles-progress-bar" style="height:100%; width:0%; background:var(--gold); transition:width 0.2s;"></div>
+    </div>
+
+    <!-- Shuffle tiles -->
+    <div id="cycles-sequence" style="display:flex; gap:4px; flex-wrap:wrap; margin-bottom:12px;"></div>
+
+    <!-- Control buttons -->
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;" id="cycles-controls" style="display:none;">
+        <button onclick="faroCycleStep()" id="cycles-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="faroCycleRunAll()" id="cycles-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="faroCycleReset()" id="cycles-reset-btn" style="display:none; border-color:#888; color:#888;">&#8635; Reset</button>
+    </div>
+
+    <!-- Status -->
+    <div id="cycles-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+
+    <!-- Match callout -->
+    <div id="cycles-match" style="display:none; margin-top:12px; padding:10px; border:1px solid var(--gold);
+         border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;">
+    </div>
+</div>
+
+
+
+<!-- ============ PARTICLE ENTRY ARENA ============ -->
+<div id="particle-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Particle Entry &mdash; NDO &rarr; Stack in 2 Out-Faros</span>
+        <button onclick="document.getElementById('particle-entry-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Starting from <span style="color:var(--gold);">Particle NDO</span>, exactly <span style="color:var(--gold);">2 Out-Faros</span> produce the complete Particle memorized stack. Step through each shuffle to watch the interleaving happen live.
+    </div>
+    <div style="display:flex; gap:10px; margin-bottom:14px;">
+        <div id="pe-tile-0" style="flex:1; padding:10px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.65rem; color:#555;"><div style="font-size:0.5rem; margin-bottom:4px;">STEP 1</div>Out-Faro #1</div>
+        <div id="pe-tile-1" style="flex:1; padding:10px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.65rem; color:#555;"><div style="font-size:0.5rem; margin-bottom:4px;">STEP 2</div>Out-Faro #2</div>
+    </div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="peInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Particle NDO</button>
+        <button onclick="peStep()" id="pe-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="peRunAll()" id="pe-run-btn" style="display:none;">&#9654;&#9654; Run Both</button>
+    </div>
+    <div id="pe-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="pe-match" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+<!-- ============ PARTICLE RETURN ARENA ============ -->
+<div id="particle-return-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Particle Return &mdash; Stack &rarr; NDO via 4-Pile Deal</span>
+        <button onclick="document.getElementById('particle-return-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Deal the Particle stack into <span style="color:var(--gold);">4 face-down piles</span> cycling card 1&rarr;2&rarr;3&rarr;4&rarr;1... Collect pile 1 then 2 then 3 then 4. Result is <span style="color:var(--gold);">Particle NDO</span>. Each pile will be a complete suit &mdash; the hidden structure of the stack revealed.
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; margin-bottom:14px;">
+        <div id="pr-pile-0" style="border:1px solid #333; border-radius:6px; padding:6px; min-height:60px; background:#111;"><div style="font-size:0.5rem; color:#e63946; text-align:center; margin-bottom:4px; font-weight:bold;">PILE 1<br><span style="font-size:0.45rem; color:#666;">Hearts</span></div><div id="pr-pile-0-cards" style="font-size:0.45rem; color:#e63946; text-align:center; line-height:1.8;"></div></div>
+        <div id="pr-pile-1" style="border:1px solid #333; border-radius:6px; padding:6px; min-height:60px; background:#111;"><div style="font-size:0.5rem; color:#aaa; text-align:center; margin-bottom:4px; font-weight:bold;">PILE 2<br><span style="font-size:0.45rem; color:#666;">Spades</span></div><div id="pr-pile-1-cards" style="font-size:0.45rem; color:#aaa; text-align:center; line-height:1.8;"></div></div>
+        <div id="pr-pile-2" style="border:1px solid #333; border-radius:6px; padding:6px; min-height:60px; background:#111;"><div style="font-size:0.5rem; color:#e63946; text-align:center; margin-bottom:4px; font-weight:bold;">PILE 3<br><span style="font-size:0.45rem; color:#666;">Diamonds</span></div><div id="pr-pile-2-cards" style="font-size:0.45rem; color:#e63946; text-align:center; line-height:1.8;"></div></div>
+        <div id="pr-pile-3" style="border:1px solid #333; border-radius:6px; padding:6px; min-height:60px; background:#111;"><div style="font-size:0.5rem; color:#aaa; text-align:center; margin-bottom:4px; font-weight:bold;">PILE 4<br><span style="font-size:0.45rem; color:#666;">Clubs</span></div><div id="pr-pile-3-cards" style="font-size:0.45rem; color:#aaa; text-align:center; line-height:1.8;"></div></div>
+    </div>
+    <div style="background:#111; border-radius:4px; height:8px; margin-bottom:10px; overflow:hidden; display:none;" id="pr-progress-wrap"><div id="pr-progress-bar" style="height:100%; width:0%; background:var(--gold); transition:width 0.05s;"></div></div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="prInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Particle Stack</button>
+        <button onclick="prDealOne()" id="pr-step-btn" style="display:none;">&#9654; Deal 1 Card</button>
+        <button onclick="prDealAll()" id="pr-run-btn" style="display:none;">&#9654;&#9654; Deal All</button>
+        <button onclick="prCollect()" id="pr-collect-btn" style="display:none; border-color:var(--gold); color:var(--gold);">&#10003; Collect Piles</button>
+    </div>
+    <div id="pr-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="pr-match" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+<!-- ============ MNEMONICA ENTRY DEMO ARENA ============ -->
+<div id="mnem-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Mnemonica NDO &rarr; Mnemonica: 6-Step Entry Procedure</span>
+        <button onclick="document.getElementById('mnem-entry-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Starting from <span style="color:var(--gold);">Mnemonica NDO</span>, perform 4 Out-Faros, then Reverse Top 26, then Unequal Faro Top 18.
+        The result is Mnemonica order &mdash; or a cut of it requiring one final cut to align.
+    </div>
+    <div style="display:flex; gap:5px; margin-bottom:14px; flex-wrap:wrap;">
+        <div id="me-tile-0" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Faro OUT</div>
+        <div id="me-tile-1" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Faro OUT</div>
+        <div id="me-tile-2" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Faro OUT</div>
+        <div id="me-tile-3" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Faro OUT</div>
+        <div id="me-tile-4" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 5</div>Rev Top 26</div>
+        <div id="me-tile-5" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 6</div>Unequal Faro 18</div>
+        <div id="me-tile-6" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 7</div>Cut at 9&#x1F0A6;</div>
+        <div id="me-tile-7" style="flex:1; min-width:55px; padding:7px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 8</div>Verify</div>
+    </div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="meInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Mnemonica NDO</button>
+        <button onclick="meStep()" id="me-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="meRunAll()" id="me-run-btn" style="display:none;">&#9654;&#9654; Run All Steps</button>
+    </div>
+    <div id="me-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="me-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.65rem; color:#aaa; line-height:1.7;"></div>
+</div>
+
+<!-- ============ NDO -> MNEMONICA NDO ARENA ============ -->
+<div id="ndo-to-mnem-ndo-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">NDO &rarr; Mnemonica NDO &mdash; Tamariz Block Shuffle</span>
+        <button onclick="document.getElementById('ndo-to-mnem-ndo-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Tamariz's procedure rearranges the 4 suit blocks from US NDO into Mnemonica NDO order using two face-up overhand shuffles. The deck stays face-up throughout &mdash; you are only moving suit blocks.
+    </div>
+    <!-- Block display: 4 columns showing suit blocks -->
+    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:8px; margin-bottom:14px;">
+        <div id="mn-block-0" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 1</div>
+            <div id="mn-block-0-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
+            <div id="mn-block-0-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="mn-block-1" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 2</div>
+            <div id="mn-block-1-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
+            <div id="mn-block-1-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="mn-block-2" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 3</div>
+            <div id="mn-block-2-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
+            <div id="mn-block-2-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="mn-block-3" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 4</div>
+            <div id="mn-block-3-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
+            <div id="mn-block-3-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
+        </div>
+    </div>
+    <!-- Step tiles -->
+    <div style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
+        <div id="mn-tile-0" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Run 13 Spades<br>(reverse)</div>
+        <div id="mn-tile-1" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Chop Diamonds<br>(set aside)</div>
+        <div id="mn-tile-2" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Run 13 Clubs<br>(reverse) + assemble</div>
+        <div id="mn-tile-3" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 4</div>Verify</div>
+    </div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="mnInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load US NDO</button>
+        <button onclick="mnStep()" id="mn-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="mnRunAll()" id="mn-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+    </div>
+    <div id="mn-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="mn-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+<!-- ============ NDO -> PARTICLE NDO ARENA ============ -->
+<div id="ndo-to-particle-ndo-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">NDO &rarr; Particle NDO &mdash; 2-Step Block Procedure</span>
+        <button onclick="document.getElementById('ndo-to-particle-ndo-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        From US NDO: move the bottom 13 Spades up to position 14 (between Hearts and Clubs), then Reverse the bottom 26 cards. Two clean operations produce Particle NDO.
+    </div>
+    <!-- Block display -->
+    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:8px; margin-bottom:14px;">
+        <div id="pn-block-0" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 1</div>
+            <div id="pn-block-0-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
+            <div id="pn-block-0-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="pn-block-1" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 2</div>
+            <div id="pn-block-1-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
+            <div id="pn-block-1-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="pn-block-2" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#e63946;">BLOCK 3</div>
+            <div id="pn-block-2-label" style="font-size:0.6rem; text-align:center; color:#e63946; font-weight:bold;"></div>
+            <div id="pn-block-2-cards" style="font-size:0.4rem; color:#e63946; text-align:center; line-height:1.6;"></div>
+        </div>
+        <div id="pn-block-3" style="border:1px solid #333; border-radius:6px; padding:6px; background:#111;">
+            <div style="font-size:0.5rem; text-align:center; margin-bottom:4px; font-weight:bold; color:#aaa;">BLOCK 4</div>
+            <div id="pn-block-3-label" style="font-size:0.6rem; text-align:center; color:#aaa; font-weight:bold;"></div>
+            <div id="pn-block-3-cards" style="font-size:0.4rem; color:#aaa; text-align:center; line-height:1.6;"></div>
+        </div>
+    </div>
+    <!-- Step tiles -->
+    <div style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
+        <div id="pn-tile-0" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 1</div>Move Spades<br>to position 14</div>
+        <div id="pn-tile-1" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 2</div>Reverse<br>Bottom 26</div>
+        <div id="pn-tile-2" style="flex:1; min-width:80px; padding:8px 4px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.55rem; color:#555;"><div style="font-size:0.4rem; margin-bottom:3px;">STEP 3</div>Verify</div>
+    </div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="pnInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load US NDO</button>
+        <button onclick="pnStep()" id="pn-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="pnRunAll()" id="pn-run-btn" style="display:none;">&#9654;&#9654; Run All</button>
+    </div>
+    <div id="pn-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="pn-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+
+<!-- ============ MNEMONICA 8-FARO CYCLE ARENA ============ -->
+<div id="mnem-cycle-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Mnemonica 8-Faro Cycle</span>
+        <button onclick="document.getElementById('mnem-cycle-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Like any 52-card deck, <span style="color:var(--gold);">Mnemonica returns to itself after exactly 8 Out-Faros</span>. This demo loads Mnemonica and steps through all 8 shuffles on the live deck, confirming the restoration.
+    </div>
+    <div style="background:#111; border-radius:4px; height:8px; margin-bottom:10px; overflow:hidden; display:none;" id="mc-progress-wrap"><div id="mc-progress-bar" style="height:100%; width:0%; background:var(--gold); transition:width 0.2s;"></div></div>
+    <div id="mc-tiles" style="display:flex; gap:4px; flex-wrap:wrap; margin-bottom:12px;"></div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="mcInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Mnemonica</button>
+        <button onclick="mcStep()" id="mc-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="mcRunAll()" id="mc-run-btn" style="display:none;">&#9654;&#9654; Run All 8</button>
+        <button onclick="mcReset()" id="mc-reset-btn" style="display:none; border-color:#888; color:#888;">&#8635; Reset</button>
+    </div>
+    <div id="mc-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="mc-match" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+<!-- ============ ARONSON STAY-STACK ARENA ============ -->
+<div id="aronson-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Aronson Stay-Stack Demo</span>
+        <button onclick="document.getElementById('aronson-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        The Aronson stack has a unique property: after <span style="color:var(--gold);">1 Out-Faro</span> it is still Aronson &mdash; just cut to a different starting position. This is the <span style="color:var(--gold);">Stay-Stack</span> property. This demo loads Aronson, performs one Out-Faro, then uses Verify Stack to confirm it is still Aronson (cut-equivalent).
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:14px;">
+        <div id="as-tile-0" style="flex:1; padding:10px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.65rem; color:#555;"><div style="font-size:0.5rem; margin-bottom:4px;">STEP 1</div>Faro OUT</div>
+        <div id="as-tile-1" style="flex:1; padding:10px; border-radius:6px; border:1px solid #444; background:#111; text-align:center; font-size:0.65rem; color:#555;"><div style="font-size:0.5rem; margin-bottom:4px;">STEP 2</div>Verify Stack</div>
+    </div>
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="asInit()" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Aronson</button>
+        <button onclick="asStep()" id="as-step-btn" style="display:none;">&#9654; Step</button>
+        <button onclick="asRunAll()" id="as-run-btn" style="display:none;">&#9654;&#9654; Run Both</button>
+    </div>
+    <div id="as-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div id="as-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
+</div>
+
+</div>
+
+<script>
+    
+    const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    let deck = [], undoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
+
+    function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift(); }
+    function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
+    function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
+
+    function preloadCardImages() {
+        const suits = ['C', 'H', 'S', 'D'];
+        const valuesList = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+        suits.forEach(s => {
+            valuesList.forEach(v => {
+                const img = new Image();
+                img.src = `cards/${v}${s}.png`;
+            });
+        });
+    }
+
+    function renderDeck() {
+        const container = document.getElementById('deck');
+        const search = document.getElementById('search-input').value.toUpperCase();
+        container.innerHTML = '';
+        deck.forEach((card, i) => {
+            const div = document.createElement('div');
+            const isRed = card.includes('H') || card.includes('D');
+
+            if (peekMode) {
+                div.className = 'card face-down';
+                // Position number centered on face-down card
+                const label = document.createElement('span');
+                label.className = 'peek-num';
+                label.innerText = i + 1;
+                div.appendChild(label);
+            } else {
+                div.className = 'card';
+                // Try PNG first; fall back to text card
+                const img = document.createElement('img');
+                img.src = 'cards/' + card + '.png';
+                img.className = 'card-img';
+                img.alt = card;
+                img.onerror = function() {
+                    // PNG failedâ€ render as text card instead
+                    div.classList.add('text-card');
+                    if (isRed) div.classList.add('red');
+                    div.innerHTML = '';
+                    const idx = document.createElement('span');
+                    idx.className = 'card-index top-right';
+                    idx.innerText = i + 1;
+                    div.appendChild(idx);
+                    const face = document.createElement('span');
+                    face.innerText = card.slice(0,-1) + suitSymbols[card.slice(-1)];
+                    div.appendChild(face);
+                };
+                div.appendChild(img);
+                // Position index overlay (top-right and bottom-left)
+                const idxTR = document.createElement('span');
+                idxTR.className = 'card-index top-right';
+                idxTR.innerText = i + 1;
+                div.appendChild(idxTR);
+                const idxBL = document.createElement('span');
+                idxBL.className = 'card-index bottom-left';
+                idxBL.innerText = i + 1;
+                div.appendChild(idxBL);
+            }
+
+            if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
+            if (selectedIndex === i) div.classList.add('selected');
+            if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
+
+            div.onclick = () => {
+                if (peekMode) {
+                    // Reveal card for 1 second
+                    div.classList.remove('face-down');
+                    div.innerHTML = '';
+                    const img = document.createElement('img');
+                    img.src = 'cards/' + card + '.png';
+                    img.className = 'card-img';
+                    img.alt = card;
+                    img.onerror = function() {
+                        div.classList.add('text-card');
+                        if (isRed) div.classList.add('red');
+                        div.innerHTML = card.slice(0,-1) + suitSymbols[card.slice(-1)];
+                    };
+                    div.appendChild(img);
+                    setTimeout(() => {
+                        div.classList.remove('text-card','red');
+                        div.classList.add('face-down');
+                        div.innerHTML = '';
+                        const label = document.createElement('span');
+                        label.className = 'peek-num';
+                        label.innerText = i + 1;
+                        div.appendChild(label);
+                    }, 1000);
+                    return;
+                }
+                // Normal swap mode
+                if (selectedIndex === null) {
+                    selectedIndex = i;
+                    renderDeck();
+                } else {
+                    saveState();
+                    [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+                    selectedIndex = null;
+                    renderDeck();
+                }
+            };
+            container.appendChild(div);
+        });
+    }
+
+        function togglePeek() {
+        peekMode = !peekMode;
+        const btn = document.getElementById('peek-btn');
+        btn.innerText = `🃏 PEEK MODE: ${peekMode ? 'ON' : 'OFF'}`;
+        btn.style.borderColor = peekMode ? 'var(--accent)' : 'var(--gold)';
+        btn.style.color = peekMode ? 'var(--accent)' : 'var(--gold)';
+        logMove(`Peek Mode ${peekMode ? 'ONâ€ click any card to reveal for 1 second' : 'OFFâ€ cards visible'}`);
+        renderDeck();
+    }
+
+    function changeCardSize(size) {
+        const container = document.getElementById('deck');
+        container.className = 'deck-display size-' + size;
+
+        // On wide screens, apply fixed px column widths for Small/Medium
+        // On narrow screens, all sizes stay fluid (1fr) via CSS
+        const screenW = window.innerWidth;
+        const sidebarW = screenW > 600 ? (screenW > 900 ? 300 : 240) : 0;
+        const padW = screenW > 600 ? 24 : 16;
+        const available = screenW - sidebarW - padW;
+
+        if (screenW > 900) {
+            // Desktop: use explicit px sizes
+            if (size === 'small')       container.style.gridTemplateColumns = 'repeat(13, ' + Math.floor((available - 12*4) / 13) + 'px)';
+            else if (size === 'medium') container.style.gridTemplateColumns = 'repeat(13, ' + Math.min(90, Math.floor((available - 12*4) / 13)) + 'px)';
+            else                        container.style.gridTemplateColumns = 'repeat(13, 1fr)';
+        } else {
+            // Tablet / phone: always fluid
+            container.style.gridTemplateColumns = 'repeat(13, 1fr)';
+        }
+
+        ['small', 'medium', 'large'].forEach(s => {
+            const btn = document.getElementById('size-' + s + '-btn');
+            if (btn) {
+                btn.style.borderColor = s === size ? 'var(--accent)' : '';
+                btn.style.color = s === size ? 'var(--accent)' : '';
+            }
+        });
+        logMove('Card size set to ' + size.toUpperCase());
+    }
+
+    function applyPreset(p) {
+        const presets = { 'ACES': "AH,AC,AD,AS", 'KINGS': "KH,KC,KD,KS", 'SPADE_ROYAL': "10S,JS,QS,KS,AS" };
+        document.getElementById('search-input').value = presets[p] || "";
+        renderDeck();
+    }
+
+    function faroShuffle(type) {
+        saveState(); let top = deck.slice(0, 26), bot = deck.slice(26, 52), res = [];
+        for(let i=0; i<26; i++) { if(type === 'OUT') { res.push(top[i]); res.push(bot[i]); } else { res.push(bot[i]); res.push(top[i]); } }
+        deck = res; logMove(`Faro ${type}`); renderDeck();
+    }
+
+    function falseShuffle(type) {
+        saveState();
+        if(type === 'ZARROW') {
+            let t2 = deck.splice(0,2); let b2 = deck.splice(-2);
+            deck.unshift(...b2); deck.push(...t2);
+            logMove("Zarrow: Top 2 Ã¢â€¡â€ž Bot 2 (Core Safe)");
+        } else {
+            let tc = deck.splice(0, 2); deck.splice(24, 0, ...tc);
+            logMove("Blind Faro: Top 2 moved to Center");
+        }
+        renderDeck();
+    }
+
+    function resetTo(type) {
+        saveState(); let temp = [];
+        if(type === 'NDO') { ['H','C'].forEach(s => values.forEach(v => temp.push(v+s))); ['D','S'].forEach(s => [...values].reverse().forEach(v => temp.push(v+s))); }
+        else if(type === 'MNEMONICA') { temp = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"]; }
+        else if(type === 'PARTICLE') { temp = ["AH","KS","AD","KC","2H","QS","2D","QC","3H","JS","3D","JC","4H","10S","4D","10C","5H","9S","5D","9C","6H","8S","6D","8C","7H","7S","7D","7C","8H","6S","8D","6C","9H","5S","9D","5C","10H","4S","10D","4C","JH","3S","JD","3C","QH","2S","QD","2C","KH","AS","KD","AC"]; }
+        else if(type === 'STEBBINS') { let v = 0; for(let i=0; i<52; i++) { temp.push(values[v % 13] + ['C','H','S','D'][i % 4]); v += 3; } }
+        else if(type === 'MY_STEBBINS') { let v = 2; for(let i=0; i<52; i++) { temp.push(values[v % 13] + ['C','H','S','D'][i % 4]); v += 3; } }
+        else if(type === 'MY_ORDER') { temp = ["QC","JC","2C","5C","AC","6C","KC","10C","9C","4C","3C","7C","8C","QH","JH","2H","6H","AH","5H","KH","10H","9H","4H","3H","7H","8H","QS","JS","2S","6S","AS","5S","KS","10S","9S","4S","3S","7S","8S","QD","JD","2D","6D","AD","5D","KD","10D","9D","4D","3D","7D","8D"]; }
+        else if(type === 'MEMORANDUM') { temp = ["JS","7C","10H","AD","4C","7H","4D","AS","4H","7D","4S","AH","10D","7S","JC","KD","10S","8C","JH","AC","KS","5C","8H","3D","QS","KH","9C","QH","6C","9H","2D","3C","6H","5D","2S","3H","8D","5S","KC","JD","8S","10C","2C","5H","6D","3S","2H","9D","6S","QC","QD","9S"]; }
+        else if(type === 'ARONSON') { temp = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"]; }
+        else if(type === 'OSTERLIND') { temp = ["AS","3S","7D","5H","QC","AC","5S","JH","JC","QD","2D","8C","6S","KH","2H","6D","3D","10S","8D","7C","4S","9D","9C","8H","5D","AD","6H","AH","4D","QS","QH","KC","3C","9H","7S","2S","5C","KD","4H","10C","10D","JS","10H","9S","6C","2C","7H","3H","8S","4C","JD","KS"]; }
+        else if(type === 'NIKOLA') { temp = ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"]; }
+        else if(type === 'EIGHT_KINGS') { temp = ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D","JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD","6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D","AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD","4C","AH","6S","JD"]; }
+        else if(type === 'BORIS_WILD') { temp = ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D","7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D","10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D","KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD","3C","2H","AS","KD"]; }
+        else if(type === 'SPANISH_NDO') { temp = ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"]; }
+        else if(type === 'FRENCH_NDO') { temp = ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"]; }
+        else if(type === 'PARTICLE_NDO') { temp = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]; }
+        else if(type === 'JOYAL') { temp = ["JH", "6C", "6H", "4C", "10D", "AD", "7C", "4H", "9C", "5D", "QH", "AS", "KC", "7H", "10S", "4S", "JS", "9H", "KD", "5S", "7S", "2C", "QC", "AH", "10H", "6S", "9S", "7D", "QD", "5H","KH", "4D", "3C", "3H", "10C", "9D", "QS", "3S", "3D", "2H", "8C", "2S", "JC", "2D", "8H", "8S", "KS", "AC", "JD", "5C", "8D", "6D"]; }
+        else if(type === 'TETRA_RED') { temp = ["2S", "QH", "5D", "JH", "8C", "10H", "7C", "4D", "AS", "3D", "KS", "6C", "9H", "2D", "QS", "5C", "JS", "8H", "10S", "7H", "4C", "AD", "3C", "KD", "6H", "9S", "2C", "QD", "5H", "JD", "8S", "10D", "7S", "4H", "AC", "3H", "KC", "6S", "9D", "2H", "QC", "5S", "JC", "8D", "10C", "7D", "4S", "AH", "3S", "KH", "6D", "9C"]; }
+        else if(type === 'MNEMONICA_NDO') { temp = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]; }
+        else if(type === 'STEBBINS4') { temp = ["AC","5H","9S","KD","4C","8H","QS","3D","7C","JH","2S","6D","10C","AH","5S","9D","KC","4H","8S","QD","3C","7H","JS","2D","6C","10H","AS","5D","9C","KH","4S","8D","QC","3H","7S","JD","2C","6H","10S","AD","5C","9H","KS","4D","8C","QH","3S","7D","JC","2H","6S","10D"]; }
+        else if(type === 'STEBBINS5') { temp = ["AC","6H","JS","3D","8C","KH","5S","10D","2C","7H","QS","4D","9C","AH","6S","JD","3C","8H","KS","5D","10C","2H","7S","QD","4C","9H","AS","6D","JC","3H","8S","KD","5C","10H","2S","7D","QC","4H","9S","AD","6C","JH","3S","8D","KC","5H","10S","2D","7C","QH","4S","9D"]; }
+        else if(type === 'LATIN_FORMULA') { temp = ["AC","5H","9S","JD","6C","4H","2S","KD","7C","8H","QS","3D","10C","AH","5S","9D","JC","6H","4S","2D","KC","7H","8S","QD","3C","10H","AS","5D","9C","JH","6S","4D","2C","KH","7S","8D","QC","3H","10S","AD","5C","9H","JS","6D","4C","2H","KS","7D","8C","QH","3S","10D"] }
+        
+        deck = temp; logMove(`Reset: ${type}`); renderDeck();
+    }
+
+    function cutDeck() { saveState(); let mid = deck.splice(0, 26); deck.push(...mid); logMove("Cut Deck (26)"); renderDeck(); }
+
+    function executeBoxCut() {
+        var cutPos = parseInt(document.getElementById('cutNumber').value);
+        if (isNaN(cutPos) || cutPos < 1 || cutPos > 51) { alert("Please enter a valid cut position between 1 and 51."); return; }
+        saveState();
+        deck = deck.slice(cutPos).concat(deck.slice(0, cutPos));
+        logMove(`Cut at ${cutPos}`); renderDeck();
+    }
+
+    function reverseDeck() { saveState(); deck.reverse(); logMove("Reverse Shuffle"); renderDeck(); }
+    function randomShuffle() { saveState(); deck.sort(() => Math.random() - 0.5); logMove("Randomized"); renderDeck(); }
+
+    function gilbrethShuffle() {
+        saveState(); let top = deck.slice(0, 26).reverse(); let bot = deck.slice(26, 52); let res = [];
+        while(top.length || bot.length) {
+            if(Math.random() > 0.5 && top.length) res.push(top.pop());
+            else if(bot.length) res.push(bot.pop());
+            else if(top.length) res.push(top.pop());
+        }
+        deck = res; logMove("Gilbreth Shuffle"); renderDeck();
+    }
+
+    function shiftDeck(direction) {
+        saveState();
+        if (direction === 'LEFT') { let card = deck.shift(); deck.push(card); logMove("Shifted Left (1)"); }
+        else { let card = deck.pop(); deck.unshift(card); logMove("Shifted Right (1)"); }
+        renderDeck();
+    }
+
+    function reverseTop() {
+        saveState();
+        deck = [...deck.slice(0, 26).reverse(), ...deck.slice(26)];
+        logMove("Reverse Top 26"); renderDeck();
+    }
+
+    function reverseBottom() {
+        saveState();
+        deck = [...deck.slice(0, 26), ...deck.slice(26).reverse()];
+        logMove("Reverse Bottom 26"); renderDeck();
+    }
+
+   function unequalFaroTop() {
+    saveState();
+    let top = deck.slice(0, 18), bot = deck.slice(18), res = [];
+    
+    // CHANGED: Push top[i] first to ensure it remains the top card
+    for(let i = 0; i < top.length; i++) { 
+        res.push(top[i]); 
+        res.push(bot[i]); 
+    }
+    
+    res = res.concat(bot.slice(18));
+    deck = res; 
+    logMove("Unequal Faro Top 18"); 
+    renderDeck();
+}
+
+    function createCardUI(v) {
+        const isRed = v.includes('H') || v.includes('D');
+        const d = document.createElement('div');
+        d.className = 'table-card';
+        const img = document.createElement('img');
+        img.src = 'cards/' + v + '.png';
+        img.alt = v;
+        img.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;';
+        img.onerror = function() {
+            d.classList.add('text-card');
+            if (isRed) d.classList.add('red');
+            d.innerHTML = v.slice(0,-1) + suitSymbols[v.slice(-1)];
+        };
+        d.appendChild(img);
+        return d;
+    }
+
+    function dealDraw(p) {
+        const a = document.getElementById('poker-arena'); const r = document.getElementById('poker-rows');
+        a.style.display = 'block'; r.innerHTML = '';
+        for (let i = 1; i <= p; i++) {
+            let b = document.createElement('div'); b.className = 'player-box';
+            b.innerHTML = `<span style="color:var(--gold); font-size:0.6rem;">${i==p?'DEALER':'P'+i}</span><div class="hand-row"></div>`;
+            for (let c = 0; c < 5; c++) {
+                let idx = (i-1) + (c*p);
+                if(document.getElementById('bottom-deal-toggle').checked && i==p && c==4) idx = 51;
+                b.querySelector('.hand-row').appendChild(createCardUI(deck[idx]));
+            }
+            r.appendChild(b);
+        }
+    }
+
+    function dealHoldem(p) {
+        const a = document.getElementById('poker-arena'); const r = document.getElementById('poker-rows');
+        const cArea = document.getElementById('community-cards');
+        a.style.display = 'block'; r.innerHTML = ''; cArea.innerHTML = '<div class="hand-row"></div>';
+        for (let i = 1; i <= p; i++) {
+            let b = document.createElement('div'); b.className = 'player-box';
+            b.innerHTML = `<span style="color:var(--gold); font-size:0.6rem;">${i==p?'DEALER':'P'+i}</span><div class="hand-row"></div>`;
+            for (let c = 0; c < 2; c++) {
+                let idx = (i-1) + (c*p);
+                if(document.getElementById('bottom-deal-toggle').checked && i==p && c==1) idx = 51;
+                b.querySelector('.hand-row').appendChild(createCardUI(deck[idx]));
+            }
+            r.appendChild(b);
+        }
+        let ptr = p*2; [1,0,0,0,1,0,1,0].forEach(isBurn => {
+            let card = createCardUI(deck[ptr++]); if(isBurn) card.style.opacity = "0.3";
+            cArea.querySelector('.hand-row').appendChild(card);
+        });
+    }
+
+    function showHelp() { document.getElementById('help-modal').style.display = 'block'; }
+
+    function toggleCoach() {
+        coachActive = !coachActive;
+        logMove(`Coach ${coachActive ? 'ON' : 'OFF'}`);
+        const btn = document.querySelector('[onclick="toggleCoach()"]');
+        if (btn) btn.style.borderColor = coachActive ? 'var(--gold)' : '';
+        renderDeck();
+    }
+
+    function verifyStack() {
+        const stacks = {
+            'MNEMONICA':    ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"],
+            'ARONSON':      ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"],
+            'NIKOLA':       ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"],
+            'EIGHT_KINGS':  ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D","JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD","6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D","AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD","4C","AH","6S","JD"],
+            'BORIS_WILD':   ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D","7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D","10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D","KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD","3C","2H","AS","KD"],
+            'MEMORANDUM':   ["JS","7C","10H","AD","4C","7H","4D","AS","4H","7D","4S","AH","10D","7S","JC","KD","10S","8C","JH","AC","KS","5C","8H","3D","QS","KH","9C","QH","6C","9H","2D","3C","6H","5D","2S","3H","8D","5S","KC","JD","8S","10C","2C","5H","6D","3S","2H","9D","6S","QC","QD","9S"],
+            'PARTICLE':     ["AH","KS","AD","KC","2H","QS","2D","QC","3H","JS","3D","JC","4H","10S","4D","10C","5H","9S","5D","9C","6H","8S","6D","8C","7H","7S","7D","7C","8H","6S","8D","6C","9H","5S","9D","5C","10H","4S","10D","4C","JH","3S","JD","3C","QH","2S","QD","2C","KH","AS","KD","AC"],
+            'SPANISH_NDO':  ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"],
+            'FRENCH_NDO':   ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
+            'US_NDO':       ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"],
+            'OSTERLIND':    ["AS","3S","7D","5H","QC","AC","5S","JH","JC","QD","2D","8C","6S","KH","2H","6D","3D","10S","8D","7C","4S","9D","9C","8H","5D","AD","6H","AH","4D","QS","QH","KC","3C","9H","7S","2S","5C","KD","4H","10C","10D","JS","10H","9S","6C","2C","7H","3H","8S","4C","JD","KS"],
+            'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
+            'JOYAL': ["JH", "6C", "6H", "4C", "10D", "AD", "7C", "4H", "9C", "5D", "QH", "AS", "KC", "7H", "10S", "4S", "JS", "9H", "KD", "5S", "7S", "2C", "QC", "AH", "10H", "6S", "9S", "7D", "QD", "5H","KH", "4D", "3C", "3H", "10C", "9D", "QS", "3S", "3D", "2H", "8C", "2S", "JC", "2D", "8H", "8S", "KS", "AC", "JD", "5C", "8D", "6D"],
+            'STEBBINS4': ["AC","5H","9S","KD","4C","8H","QS","3D","7C","JH","2S","6D","10C","AH","5S","9D","KC","4H","8S","QD","3C","7H","JS","2D","6C","10H","AS","5D","9C","KH","4S","8D","QC","3H","7S","JD","2C","6H","10S","AD","5C","9H","KS","4D","8C","QH","3S","7D","JC","2H","6S","10D"],
+            'STEBBINS5': ["AC","6H","JS","3D","8C","KH","5S","10D","2C","7H","QS","4D","9C","AH","6S","JD","3C","8H","KS","5D","10C","2H","7S","QD","4C","9H","AS","6D","JC","3H","8S","KD","5C","10H","2S","7D","QC","4H","9S","AD","6C","JH","3S","8D","KC","5H","10S","2D","7C","QH","4S","9D"],
+            'LATIN_FORMULA': ["AC","5H","9S","JD","6C","4H","2S","KD","7C","8H","QS","3D","10C","AH","5S","9D","JC","6H","4S","2D","KC","7H","8S","QD","3C","10H","AS","5D","9C","JH","6S","4D","2C","KH","7S","8D","QC","3H","10S","AD","5C","9H","JS","6D","4C","2H","KS","7D","8C","QH","3S","10D"],
+            'TETRA_RED': ["2S", "QH", "5D", "JH", "8C", "10H", "7C", "4D", "AS", "3D", "KS", "6C", "9H", "2D", "QS", "5C", "JS", "8H", "10S", "7H", "4C", "AD", "3C", "KD", "6H", "9S", "2C", "QD", "5H", "JD", "8S", "10D", "7S", "4H", "AC", "3H", "KC", "6S", "9D", "2H", "QC", "5S", "JC", "8D", "10C", "7D", "4S", "AH", "3S", "KH", "6D", "9C"],
+            'MNEMONICA_NDO': ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
+        };
+        const dupes = deck.filter((c, i) => deck.indexOf(c) !== i);
+        if (dupes.length > 0) { logMove(`🎉 DUPLICATES FOUND: ${dupes.join(', ')}`); return; }
+        let matched = false;
+        for (const [name, order] of Object.entries(stacks)) {
+            if (deck.every((c, i) => c === order[i])) { logMove(`🎉 MATCH: Current deck is ${name}`); matched = true; break; }
+        }
+        if (!matched) {
+            for (const [name, order] of Object.entries(stacks)) {
+                for (let cut = 1; cut < 52; cut++) {
+                    const rotated = [...order.slice(cut), ...order.slice(0, cut)];
+                    if (deck.every((c, i) => c === rotated[i])) { logMove(`🎉 CUT MATCH: ${name} cut at position ${cut}`); matched = true; break; }
+                }
+                if (matched) break;
+            }
+        }
+        if (!matched) logMove('❓ No match foundâ€ custom or unknown order');
+    }
+
+    function calcToNDO() {
+        const values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+        let usNdo = [];
+        ['H','C'].forEach(s => values.forEach(v => usNdo.push(v+s)));
+        ['D','S'].forEach(s => [...values].reverse().forEach(v => usNdo.push(v+s)));
+        const targets = {
+            'US NDO':       usNdo,
+            'SPANISH NDO':  ["AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD"],
+            'FRENCH NDO':   ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
+            'MNEMONICA':    ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"],
+            'ARONSON':      ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"],
+            'NIKOLA':       ["6D","5C","KC","JH","5S","9D","9S","QH","3C","10C","KS","AH","4D","JD","KD","KH","2D","QC","9C","10H","8D","2C","AC","7H","7C","4S","7S","9H","8S","6S","6C","2H","AS","JS","4C","5H","10S","AD","JC","4H","2S","7D","QS","3H","3S","8C","10D","6H","5D","3D","QD","8H"],
+            'EIGHT_KINGS':  ["8C","KH","3S","10D","2C","7H","9S","5D","QC","4H","AS","6D","JC","8H","KS","3D","10C","2H","7S","9D","5C","QH","4S","AD","6C","JH","8S","KD","3C","10H","2S","7D","9C","5H","QS","4D","AC","6H","JS","8D","KC","3H","10S","2D","7C","9H","5S","QD","4C","AH","6S","JD"],
+            'BORIS_WILD':   ["4C","3H","2S","AD","5C","4H","3S","2D","6C","5H","4S","3D","7C","6H","5S","4D","8C","7H","6S","5D","9C","8H","7S","6D","10C","9H","8S","7D","JC","10H","9S","8D","QC","JH","10S","9D","KC","QH","JS","10D","AC","KH","QS","JD","2C","AH","KS","QD","3C","2H","AS","KD"],
+            'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
+            'MNEMONICA_NDO': ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
+            'STEBBINS4':  ["AC","5H","9S","KD","4C","8H","QS","3D","7C","JH","2S","6D","10C","AH","5S","9D","KC","4H","8S","QD","3C","7H","JS","2D","6C","10H","AS","5D","9C","KH","4S","8D","QC","3H","7S","JD","2C","6H","10S","AD","5C","9H","KS","4D","8C","QH","3S","7D","JC","2H","6S","10D"],
+            'STEBBINS5':  ["AC","6H","JS","3D","8C","KH","5S","10D","2C","7H","QS","4D","9C","AH","6S","JD","3C","8H","KS","5D","10C","2H","7S","QD","4C","9H","AS","6D","JC","3H","8S","KD","5C","10H","2S","7D","QC","4H","9S","AD","6C","JH","3S","8D","KC","5H","10S","2D","7C","QH","4S","9D"],
+            'LATIN_FORMULA': ["AC","5H","9S","JD","6C","4H","2S","KD","7C","8H","QS","3D","10C","AH","5S","9D","JC","6H","4S","2D","KC","7H","8S","QD","3C","10H","AS","5D","9C","JH","6S","4D","2C","KH","7S","8D","QC","3H","10S","AD","5C","9H","JS","6D","4C","2H","KS","7D","8C","QH","3S","10D"],
+            'STARTING':     [...deck]
+        };
+        let startName = 'STARTING ORDER';
+        for (const [name, order] of Object.entries(targets)) {
+            if (name !== 'STARTING' && deck.every((c, i) => c === order[i])) { startName = name; break; }
+        }
+        targets[startName] = [...deck];
+        delete targets['STARTING'];
+        let test = [...deck], results = [];
+        for (let i = 1; i <= 8; i++) {
+            let top = test.slice(0, 26), bot = test.slice(26), res = [];
+            for (let j = 0; j < 26; j++) { res.push(top[j]); res.push(bot[j]); }
+            test = res;
+            for (const [name, order] of Object.entries(targets)) {
+                if (test.every((c, idx) => c === order[idx])) results.push(`❓  Reaches ${name} in ${i} out-faro(s)`);
+            }
+        }
+        if (results.length > 0) results.forEach(r => logMove(r));
+        else logMove('❓ Does not reach any known order in 8 out-faros');
+    }
+
+    function exportStack() { prompt("Copy Stack Data:", JSON.stringify(deck)); }
+    function importStack() { let data = prompt("Paste Stack Data:"); if(data) { deck = JSON.parse(data); renderDeck(); } }
+    function saveStack() { localStorage.setItem('stackV92', JSON.stringify(deck)); logMove("Session Saved."); }
+    function loadStack() { let s = localStorage.getItem('stackV92'); if(s) { deck = JSON.parse(s); renderDeck(); } }
+
+    window.onload = () => {
+        resetTo('NDO');
+        preloadCardImages();
+        changeCardSize('small'); // Synchronizes layout class and active state button highlighting
+    };
+
+   
+
+// ---- FARO NAVIGATOR ----
+let faroNavSeq = [];      // array of 'IN' or 'OUT'
+let faroNavStep_idx = 0;  // current step pointer
+let faroNavTarget = 0;
+
+function showFaroNav() {
+    document.getElementById('faro-arena').style.display = 'block';
+    document.getElementById('faro-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    calcFaroNav();
+}
+
+function calcFaroNav() {
+    const target = parseInt(document.getElementById('faro-nav-target').value);
+    if (isNaN(target) || target < 2 || target > 52) {
+        document.getElementById('faro-nav-status').innerText = 'Enter a position from 2 to 52.';
+        return;
+    }
+    faroNavTarget = target;
+    faroNavStep_idx = 0;
+
+    // Binary method: (target - 1) in binary, each bit is IN(1) or OUT(0)
+    const n = target - 1;
+    const bits = n.toString(2).split('');  // MSB first
+    faroNavSeq = bits.map(b => b === '1' ? 'IN' : 'OUT');
+
+    // Render binary breakdown
+    const bdiv = document.getElementById('faro-nav-breakdown');
+    let html = '<div style="font-size:0.6rem; color:#aaa; margin-bottom:6px;">'
+             + 'Target &minus; 1 = ' + n + ' &nbsp;&rarr;&nbsp; binary: <span style="color:var(--gold); font-family:monospace; font-size:0.75rem;">' + n.toString(2) + '</span></div>';
+    html += '<div style="display:flex; gap:4px; flex-wrap:wrap;">';
+    // Powers of 2 header
+    const pow = Math.pow;
+    const bitLen = bits.length;
+    bits.forEach((b, i) => {
+        const power = bitLen - 1 - i;
+        const used = b === '1';
+        html += '<div style="text-align:center; min-width:38px;">'
+              + '<div style="font-size:0.5rem; color:#777;">2<sup>' + power + '</sup>=' + Math.pow(2, power) + '</div>'
+              + '<div style="font-size:1rem; font-weight:bold; color:' + (used ? 'var(--gold)' : '#555') + ';">' + b + '</div>'
+              + '<div style="font-size:0.55rem; color:' + (used ? 'var(--accent)' : '#444') + ';">' + (used ? 'IN' : 'OUT') + '</div>'
+              + '</div>';
+    });
+    html += '</div>';
+    bdiv.innerHTML = html;
+
+    // Render step tiles
+    const sdiv = document.getElementById('faro-nav-sequence');
+    sdiv.innerHTML = '';
+    faroNavSeq.forEach((s, i) => {
+        const tile = document.createElement('div');
+        tile.id = 'faro-tile-' + i;
+        tile.style.cssText = 'padding:6px 10px; border-radius:4px; font-size:0.65rem; font-weight:bold;'
+                           + 'border:1px solid #444; background:#1a1a1a; color:#555; text-align:center; min-width:44px;';
+        tile.innerHTML = '<div style="font-size:0.5rem; color:#555;">Step ' + (i+1) + '</div>' + s;
+        sdiv.appendChild(tile);
+    });
+
+    document.getElementById('faro-nav-step-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-run-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-reset-btn').style.display = 'inline-block';
+    document.getElementById('faro-nav-status').innerText =
+        faroNavSeq.length + ' shuffles needed. Press Step to execute one at a time, or Run All to complete the sequence.';
+}
+
+function faroNavStep() {
+    if (faroNavStep_idx >= faroNavSeq.length) {
+        document.getElementById('faro-nav-status').innerText =
+            'Sequence complete. Top card is now at position ' + faroNavTarget + '.';
+        return;
+    }
+    const type = faroNavSeq[faroNavStep_idx];
+    faroShuffle(type);  // calls your existing faroShuffle function
+
+    // Highlight the tile
+    const tile = document.getElementById('faro-tile-' + faroNavStep_idx);
+    if (tile) {
+        tile.style.background = type === 'IN' ? 'var(--accent)' : '#1a5c2a';
+        tile.style.color = 'white';
+        tile.style.borderColor = type === 'IN' ? 'var(--accent)' : 'var(--gold)';
+    }
+
+    faroNavStep_idx++;
+    const remaining = faroNavSeq.length - faroNavStep_idx;
+    if (remaining === 0) {
+        document.getElementById('faro-nav-status').innerText =
+            'Done! Top card is now at position ' + faroNavTarget + '.';
+        document.getElementById('faro-nav-step-btn').style.display = 'none';
+        document.getElementById('faro-nav-run-btn').style.display = 'none';
+    } else {
+        document.getElementById('faro-nav-status').innerText =
+            'Executed ' + type + '-shuffle. ' + remaining + ' step(s) remaining.';
+    }
+}
+
+function faroNavRunAll() {
+    while (faroNavStep_idx < faroNavSeq.length) {
+        faroNavStep();
+    }
+}
+
+function faroNavReset() {
+    faroNavStep_idx = 0;
+    faroNavSeq = [];
+    document.getElementById('faro-nav-breakdown').innerHTML = '';
+    document.getElementById('faro-nav-sequence').innerHTML = '';
+    document.getElementById('faro-nav-status').innerText = '';
+    document.getElementById('faro-nav-step-btn').style.display = 'none';
+    document.getElementById('faro-nav-run-btn').style.display = 'none';
+    document.getElementById('faro-nav-reset-btn').style.display = 'none';
+}
+// ---- FARO CYCLES DEMO ----
+let faroCycleMode = 'OUT';
+let faroCycleStep_idx = 0;
+let faroCycleTotalSteps = 0;
+let faroCycleStartDeck = [];
+
+function showFaroCycles() {
+    document.getElementById('faro-cycles-arena').style.display = 'block';
+    document.getElementById('faro-cycles-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Reset to clean state
+    document.getElementById('cycles-sequence').innerHTML = '';
+    document.getElementById('cycles-status').innerText = 'Choose Out-Faros (8 steps) or In-Faros (52 steps) to begin.';
+    document.getElementById('cycles-top-card').innerText = '';
+    document.getElementById('cycles-match').style.display = 'none';
+    document.getElementById('cycles-progress-wrap').style.display = 'none';
+    document.getElementById('cycles-step-btn').style.display = 'none';
+    document.getElementById('cycles-run-btn').style.display = 'none';
+    document.getElementById('cycles-reset-btn').style.display = 'none';
+}
+
+function initFaroCycles(mode) {
+    faroCycleMode = mode;
+    faroCycleStep_idx = 0;
+    faroCycleTotalSteps = mode === 'OUT' ? 8 : 52;
+    faroCycleStartDeck = [...deck];
+
+    // Highlight active mode button
+    document.getElementById('cycles-out-btn').style.background = mode === 'OUT' ? 'rgba(255,183,3,0.15)' : '';
+    document.getElementById('cycles-in-btn').style.background = mode === 'IN' ? 'rgba(217,4,41,0.15)' : '';
+
+    // Show starting top card
+    document.getElementById('cycles-top-card').innerHTML =
+        'Starting top card: <span style="color:var(--gold); font-weight:bold;">' + deck[0] + '</span> &mdash; watch it travel and return.';
+
+    // Build shuffle tiles
+    const sdiv = document.getElementById('cycles-sequence');
+    sdiv.innerHTML = '';
+    for (let i = 0; i < faroCycleTotalSteps; i++) {
+        const tile = document.createElement('div');
+        tile.id = 'cycle-tile-' + i;
+        tile.style.cssText = 'padding:4px 7px; border-radius:4px; font-size:0.55rem; font-weight:bold;'
+            + 'border:1px solid #333; background:#111; color:#444; text-align:center; min-width:32px;';
+        tile.innerHTML = '<div style="font-size:0.45rem; color:#444;">' + (i + 1) + '</div>' + mode;
+        sdiv.appendChild(tile);
+    }
+
+    // Progress bar
+    document.getElementById('cycles-progress-wrap').style.display = 'block';
+    document.getElementById('cycles-progress-bar').style.width = '0%';
+
+    // Show controls
+    document.getElementById('cycles-step-btn').style.display = 'inline-block';
+    document.getElementById('cycles-run-btn').style.display = 'inline-block';
+    document.getElementById('cycles-reset-btn').style.display = 'inline-block';
+    document.getElementById('cycles-match').style.display = 'none';
+
+    document.getElementById('cycles-status').innerText =
+        faroCycleTotalSteps + ' ' + mode + '-Faros needed. Step through or Run All.';
+}
+
+function faroCycleStep() {
+    if (faroCycleStep_idx >= faroCycleTotalSteps) return;
+
+    faroShuffle(faroCycleMode);  // uses existing faroShuffle()
+
+    // Light up the tile
+    const tile = document.getElementById('cycle-tile-' + faroCycleStep_idx);
+    if (tile) {
+        const color = faroCycleMode === 'OUT' ? 'var(--gold)' : 'var(--accent)';
+        const bg    = faroCycleMode === 'OUT' ? 'rgba(255,183,3,0.18)' : 'rgba(217,4,41,0.18)';
+        tile.style.borderColor = color;
+        tile.style.color = color;
+        tile.style.background = bg;
+    }
+
+    faroCycleStep_idx++;
+
+    // Update progress bar
+    const pct = (faroCycleStep_idx / faroCycleTotalSteps) * 100;
+    document.getElementById('cycles-progress-bar').style.width = pct + '%';
+
+    const remaining = faroCycleTotalSteps - faroCycleStep_idx;
+
+    if (remaining === 0) {
+        // Check if deck actually matches the starting deck
+        const restored = deck.every((c, i) => c === faroCycleStartDeck[i]);
+        document.getElementById('cycles-step-btn').style.display = 'none';
+        document.getElementById('cycles-run-btn').style.display = 'none';
+        document.getElementById('cycles-progress-bar').style.background = restored ? '#00c853' : 'var(--accent)';
+
+        const matchDiv = document.getElementById('cycles-match');
+        matchDiv.style.display = 'block';
+        if (restored) {
+            matchDiv.style.borderColor = 'var(--gold)';
+            matchDiv.style.color = 'var(--gold)';
+            matchDiv.innerHTML = '&#10003; Deck fully restored after '
+                + faroCycleTotalSteps + ' ' + faroCycleMode + '-Faros.<br>'
+                + '<span style="font-size:0.6rem; color:#aaa;">Every card is back in its original position.</span>';
+            document.getElementById('cycles-status').innerText = 'Complete! The deck is identical to when you started.';
+        } else {
+            matchDiv.innerHTML = '&#9888; Deck does not match starting order &mdash; check for an odd number of cards.';
+            document.getElementById('cycles-status').innerText = 'Sequence done but deck did not restore. Verify deck has exactly 52 cards.';
+        }
+    } else {
+        document.getElementById('cycles-status').innerText =
+            faroCycleMode + '-Faro #' + faroCycleStep_idx + ' done. ' + remaining + ' remaining.';
+    }
+}
+
+function faroCycleRunAll() {
+    while (faroCycleStep_idx < faroCycleTotalSteps) {
+        faroCycleStep();
+    }
+}
+
+function faroCycleReset() {
+    // Restore the deck to what it was when the demo started
+    saveState();
+    deck = [...faroCycleStartDeck];
+    renderDeck();
+    logMove('Faro Cycles: deck restored to starting position.');
+
+    faroCycleStep_idx = 0;
+    document.getElementById('cycles-sequence').innerHTML = '';
+    document.getElementById('cycles-status').innerText = 'Deck reset to starting order. Choose a mode to run again.';
+    document.getElementById('cycles-top-card').innerText = '';
+    document.getElementById('cycles-match').style.display = 'none';
+    document.getElementById('cycles-progress-wrap').style.display = 'none';
+    document.getElementById('cycles-step-btn').style.display = 'none';
+    document.getElementById('cycles-run-btn').style.display = 'none';
+    document.getElementById('cycles-reset-btn').style.display = 'none';
+    document.getElementById('cycles-out-btn').style.background = '';
+    document.getElementById('cycles-in-btn').style.background = '';
+}
+
+
+// ================================================================
+// PARTICLE ENTRY DEMO
+// ================================================================
+let peStep_idx = 0;
+function showParticleEntry() {
+    document.getElementById('particle-entry-arena').style.display = 'block';
+    document.getElementById('particle-entry-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    [0,1].forEach(i => { const t=document.getElementById('pe-tile-'+i); t.style.background='#111'; t.style.borderColor='#444'; t.style.color='#555'; });
+    document.getElementById('pe-step-btn').style.display = 'none';
+    document.getElementById('pe-run-btn').style.display = 'none';
+    document.getElementById('pe-match').style.display = 'none';
+    document.getElementById('pe-status').innerText = 'Click Load Particle NDO to begin.';
+    peStep_idx = 0;
+}
+function peInit() {
+    saveState();
+    deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+    renderDeck(); logMove('Particle Demo: Loaded Particle NDO');
+    peStep_idx = 0;
+    [0,1].forEach(i => { const t=document.getElementById('pe-tile-'+i); t.style.background='#111'; t.style.borderColor='#444'; t.style.color='#555'; });
+    document.getElementById('pe-step-btn').style.display = 'inline-block';
+    document.getElementById('pe-run-btn').style.display = 'inline-block';
+    document.getElementById('pe-match').style.display = 'none';
+    document.getElementById('pe-status').innerText = 'Particle NDO loaded. Perform 2 Out-Faros to reach the Particle stack.';
+}
+function peStep() {
+    if (peStep_idx >= 2) return;
+    faroShuffle('OUT');
+    const tile = document.getElementById('pe-tile-'+peStep_idx);
+    tile.style.background = 'rgba(255,183,3,0.18)'; tile.style.borderColor = 'var(--gold)'; tile.style.color = 'var(--gold)';
+    peStep_idx++;
+    if (peStep_idx === 2) {
+        document.getElementById('pe-step-btn').style.display = 'none';
+        document.getElementById('pe-run-btn').style.display = 'none';
+        const PARTICLE = ["AH","KS","AD","KC","2H","QS","2D","QC","3H","JS","3D","JC","4H","10S","4D","10C","5H","9S","5D","9C","6H","8S","6D","8C","7H","7S","7D","7C","8H","6S","8D","6C","9H","5S","9D","5C","10H","4S","10D","4C","JH","3S","JD","3C","QH","2S","QD","2C","KH","AS","KD","AC"];
+        const matched = deck.every((c,i) => c === PARTICLE[i]);
+        const m = document.getElementById('pe-match');
+        m.style.display = 'block';
+        m.innerHTML = matched
+            ? '&#10003; Particle Stack achieved in 2 Out-Faros!<br><span style="font-size:0.6rem;color:#aaa;">The deck is now in full Particle memorized stack order.</span>'
+            : '&#9888; Result does not match Particle &mdash; was the deck in Particle NDO?';
+        document.getElementById('pe-status').innerText = matched ? 'Complete! Particle NDO -> Particle Stack in exactly 2 Out-Faros.' : 'Sequence done but no match.';
+    } else {
+        document.getElementById('pe-status').innerText = 'Out-Faro #1 done. Cards beginning to interleave. One more to go.';
+    }
+}
+function peRunAll() { while (peStep_idx < 2) peStep(); }
+
+// ================================================================
+// PARTICLE RETURN DEMO
+// ================================================================
+let prPiles = [[],[],[],[]];
+let prDealIdx = 0;
+const SUIT_SYM = {'C':'&clubs;','H':'&hearts;','S':'&spades;','D':'&diams;'};
+function showParticleReturn() {
+    document.getElementById('particle-return-arena').style.display = 'block';
+    document.getElementById('particle-return-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    prPiles=[[],[],[],[]]; prDealIdx=0;
+    [0,1,2,3].forEach(i => { document.getElementById('pr-pile-'+i+'-cards').innerHTML=''; document.getElementById('pr-pile-'+i).style.borderColor='#333'; });
+    document.getElementById('pr-progress-wrap').style.display='none';
+    document.getElementById('pr-step-btn').style.display='none';
+    document.getElementById('pr-run-btn').style.display='none';
+    document.getElementById('pr-collect-btn').style.display='none';
+    document.getElementById('pr-match').style.display='none';
+    document.getElementById('pr-status').innerText='Click Load Particle Stack to begin.';
+}
+function prInit() {
+    saveState();
+    deck = ["AH","KS","AD","KC","2H","QS","2D","QC","3H","JS","3D","JC","4H","10S","4D","10C","5H","9S","5D","9C","6H","8S","6D","8C","7H","7S","7D","7C","8H","6S","8D","6C","9H","5S","9D","5C","10H","4S","10D","4C","JH","3S","JD","3C","QH","2S","QD","2C","KH","AS","KD","AC"];
+    renderDeck(); logMove('Particle Demo: Loaded Particle Stack');
+    prPiles=[[],[],[],[]]; prDealIdx=0;
+    [0,1,2,3].forEach(i => { document.getElementById('pr-pile-'+i+'-cards').innerHTML=''; document.getElementById('pr-pile-'+i).style.borderColor='#333'; });
+    document.getElementById('pr-progress-wrap').style.display='block';
+    document.getElementById('pr-progress-bar').style.width='0%';
+    document.getElementById('pr-step-btn').style.display='inline-block';
+    document.getElementById('pr-run-btn').style.display='inline-block';
+    document.getElementById('pr-collect-btn').style.display='none';
+    document.getElementById('pr-match').style.display='none';
+    document.getElementById('pr-status').innerText='Particle Stack loaded. Deal cards one at a time or all at once.';
+}
+function prDealOne() {
+    if (prDealIdx >= 52) return;
+    const card = deck[prDealIdx];
+    const pileIdx = prDealIdx % 4;
+    prPiles[pileIdx].push(card);
+    const suit = card.slice(-1), val = card.slice(0,-1), isRed = suit==='H'||suit==='D';
+    const cardDiv = document.getElementById('pr-pile-'+pileIdx+'-cards');
+    const span = document.createElement('span');
+    span.style.color = isRed ? '#e63946' : '#ccc';
+    span.style.display = 'block';
+    span.innerHTML = val + SUIT_SYM[suit];
+    cardDiv.appendChild(span);
+    [0,1,2,3].forEach(i => { document.getElementById('pr-pile-'+i).style.borderColor = i===pileIdx ? (i%2===0?'#e63946':'#aaa') : '#333'; });
+    prDealIdx++;
+    document.getElementById('pr-progress-bar').style.width = (prDealIdx/52*100)+'%';
+    if (prDealIdx === 52) {
+        document.getElementById('pr-step-btn').style.display='none';
+        document.getElementById('pr-run-btn').style.display='none';
+        document.getElementById('pr-collect-btn').style.display='inline-block';
+        [0,1,2,3].forEach(i => { document.getElementById('pr-pile-'+i).style.borderColor='var(--gold)'; });
+        document.getElementById('pr-status').innerText='All 52 cards dealt. Notice each pile is a complete suit! Now collect pile 1, then 2, then 3, then 4.';
+    } else {
+        document.getElementById('pr-status').innerText='Card '+prDealIdx+' of 52 dealt to pile '+(pileIdx+1)+'. '+(52-prDealIdx)+' remaining.';
+    }
+}
+function prDealAll() { while (prDealIdx < 52) prDealOne(); }
+function prCollect() {
+    saveState();
+    const newDeck = []; prPiles.forEach(pile => pile.forEach(card => newDeck.push(card)));
+    deck = newDeck; renderDeck(); logMove('Particle Demo: Collected 4 piles -> Particle NDO');
+    const PARTICLE_NDO = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+    const matched = deck.every((c,i) => c===PARTICLE_NDO[i]);
+    document.getElementById('pr-collect-btn').style.display='none';
+    const m = document.getElementById('pr-match');
+    m.style.display='block';
+    m.innerHTML = matched
+        ? '&#10003; Particle NDO restored!<br><span style="font-size:0.6rem;color:#aaa;">Each pile was a complete suit. Collecting in order rebuilds Particle NDO exactly.</span>'
+        : '&#9888; Result does not match Particle NDO. Was the starting deck the Particle Stack?';
+    document.getElementById('pr-progress-bar').style.background = matched ? '#00c853' : 'var(--accent)';
+    document.getElementById('pr-status').innerText = matched ? 'Complete! Particle Stack -> Particle NDO via 4-pile deal.' : 'Done but no match.';
+}
+
+// ================================================================
+// MNEMONICA ENTRY DEMO (6-step procedure: 4 Out-Faros + RevTop26 + UnequalFaro18)
+// ================================================================
+let meStep_idx = 0;
+var ME_STEP_NAMES = ['Faro OUT #1','Faro OUT #2','Faro OUT #3','Faro OUT #4','Reverse Top 26','Unequal Faro 18','Cut at 9 (9Ã¢â„¢Â¦)','Verify'];
+var ME_TOTAL_STEPS = 8;
+
+function showMnemEntryDemo() {
+    document.getElementById('mnem-entry-arena').style.display='block';
+    document.getElementById('mnem-entry-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    meStep_idx=0;
+    for(var i=0;i<ME_TOTAL_STEPS;i++){var t=document.getElementById('me-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('me-step-btn').style.display='none';
+    document.getElementById('me-run-btn').style.display='none';
+    document.getElementById('me-result').style.display='none';
+    document.getElementById('me-status').innerText='Click Load Mnemonica NDO to begin.';
+}
+
+function meInit() {
+    saveState();
+    // Load Mnemonica NDO preset
+    deck = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
+            "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+            "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+    renderDeck(); logMove('Mnemonica Demo: Loaded Mnemonica NDO');
+    meStep_idx=0;
+    for(var i=0;i<ME_TOTAL_STEPS;i++){var t=document.getElementById('me-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('me-step-btn').style.display='inline-block';
+    document.getElementById('me-run-btn').style.display='inline-block';
+    document.getElementById('me-result').style.display='none';
+    document.getElementById('me-status').innerText='Mnemonica NDO loaded. Step through all 6 operations to reach Mnemonica order.';
+}
+
+function meDoStep(idx) {
+    if (idx === 0) faroShuffle('OUT');
+    else if (idx === 1) faroShuffle('OUT');
+    else if (idx === 2) faroShuffle('OUT');
+    else if (idx === 3) faroShuffle('OUT');
+    else if (idx === 4) reverseTop();
+    else if (idx === 5) unequalFaroTop();
+    else if (idx === 6) {
+        // Cut at 9 Ã¢â‚¬â€ moves top 9 cards to bottom, bringing 9D to position 1
+        saveState();
+        deck = deck.slice(9).concat(deck.slice(0,9));
+        logMove('Mnemonica Demo: Cut at 9 ♦ to bottom)');
+        renderDeck();
+        document.getElementById('me-status').innerText='Cut at 9 done Ã¢â‚¬â€ 9Ã¢â„¢Â¦ moved to bottom. Now verify!';
+    }
+    else if (idx === 7) {
+        // Verify step
+        var MNEM = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+        var exact = deck.every(function(c,i){return c===MNEM[i];});
+        var r = document.getElementById('me-result');
+        r.style.display='block';
+        if (exact) {
+            r.innerHTML='<span style="color:var(--gold);font-size:0.8rem;">&#10003; Exact Mnemonica match!</span><br><span style="font-size:0.6rem;color:#aaa;">Mnemonica NDO → 4 Out-Faros → Reverse Top 26 → U Unequal Faro Top 18  Cut at 9 ♦ = perfect Mnemonica order.</span>';
+            document.getElementById('me-status').innerText='Perfect Mnemonica! All 8 steps complete.';
+        } else {
+            r.innerHTML='<span style="color:#ffb703;font-size:0.75rem;">&#8505; No exact match.</span><br>Check all 8 steps were performed from Mnemonica NDO.';
+            document.getElementById('me-status').innerText='No match Ã¢â‚¬â€ check starting order was Mnemonica NDO.';
+        }
+        document.getElementById('me-step-btn').style.display='none';
+        document.getElementById('me-run-btn').style.display='none';
+    }
+    var tile = document.getElementById('me-tile-'+idx);
+    if (tile) { tile.style.background='rgba(255,183,3,0.18)'; tile.style.borderColor='var(--gold)'; tile.style.color='var(--gold)'; }
+}
+
+function meStep() {
+    if (meStep_idx >= ME_TOTAL_STEPS) return;
+    meDoStep(meStep_idx);
+    meStep_idx++;
+    if (meStep_idx < ME_TOTAL_STEPS) {
+        document.getElementById('me-status').innerText = 'Step '+meStep_idx+' done. Next: '+ME_STEP_NAMES[meStep_idx]+'.';
+    }
+}
+
+function meRunAll() {
+    var delay = 0;
+    for (var i = meStep_idx; i < ME_TOTAL_STEPS; i++) {
+        (function(idx) {
+            setTimeout(function() {
+                if (meStep_idx !== idx) return;
+                meDoStep(idx);
+                meStep_idx++;
+                if (meStep_idx < ME_TOTAL_STEPS) {
+                    document.getElementById('me-status').innerText = 'Step '+meStep_idx+' done. Next: '+ME_STEP_NAMES[meStep_idx]+'.';
+                }
+            }, delay);
+        })(i);
+        delay += 450;
+    }
+}
+
+// 
+
+// ================================================================
+// MNEMONICA 8-FARO CYCLE DEMO
+// ================================================================
+let mcIdx=0, mcStart=[], mcTotal=8;
+function showMnemCycleDemo() {
+    document.getElementById('mnem-cycle-arena').style.display='block';
+    document.getElementById('mnem-cycle-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    mcIdx=0; mcStart=[];
+    document.getElementById('mc-tiles').innerHTML='';
+    document.getElementById('mc-progress-wrap').style.display='none';
+    document.getElementById('mc-step-btn').style.display='none';
+    document.getElementById('mc-run-btn').style.display='none';
+    document.getElementById('mc-reset-btn').style.display='none';
+    document.getElementById('mc-match').style.display='none';
+    document.getElementById('mc-status').innerText='Click Load Mnemonica to begin.';
+}
+function mcInit() {
+    saveState();
+    deck = ["4C","2H","7D","3C","4H","6D","AS","5H","9S","2S","QH","3D","QC","8H","6S","5S","9H","KC","2D","JH","3S","8S","6H","10C","5D","KD","2C","3H","8D","5C","KS","JD","8C","10S","KH","JC","7S","10H","AD","4S","7H","4D","AC","9C","JS","QD","7C","QS","10D","6C","AH","9D"];
+    renderDeck(); logMove('Mnemonica Demo: Loaded Mnemonica');
+    mcStart=[...deck]; mcIdx=0;
+    const tdiv=document.getElementById('mc-tiles'); tdiv.innerHTML='';
+    for(let i=0;i<8;i++){
+        const t=document.createElement('div');
+        t.id='mc-tile-'+i;
+        t.style.cssText='padding:6px 10px;border-radius:4px;font-size:0.6rem;font-weight:bold;border:1px solid #444;background:#111;color:#555;text-align:center;min-width:40px;';
+        t.innerHTML='<div style="font-size:0.45rem;color:#555;">'+(i+1)+'</div>OUT';
+        tdiv.appendChild(t);
+    }
+    document.getElementById('mc-progress-wrap').style.display='block';
+    document.getElementById('mc-progress-bar').style.width='0%';
+    document.getElementById('mc-step-btn').style.display='inline-block';
+    document.getElementById('mc-run-btn').style.display='inline-block';
+    document.getElementById('mc-reset-btn').style.display='inline-block';
+    document.getElementById('mc-match').style.display='none';
+    document.getElementById('mc-status').innerText='Mnemonica loaded. Step through 8 Out-Faros to watch it restore.';
+}
+function mcStep() {
+    if (mcIdx >= 8) return;
+    faroShuffle('OUT');
+    const tile=document.getElementById('mc-tile-'+mcIdx);
+    tile.style.background='rgba(255,183,3,0.18)'; tile.style.borderColor='var(--gold)'; tile.style.color='var(--gold)';
+    mcIdx++;
+    document.getElementById('mc-progress-bar').style.width=(mcIdx/8*100)+'%';
+    if (mcIdx===8) {
+        document.getElementById('mc-step-btn').style.display='none';
+        document.getElementById('mc-run-btn').style.display='none';
+        const restored=deck.every((c,i)=>c===mcStart[i]);
+        document.getElementById('mc-progress-bar').style.background=restored?'#00c853':'var(--accent)';
+        const m=document.getElementById('mc-match'); m.style.display='block';
+        m.innerHTML=restored
+            ? '&#10003; Mnemonica fully restored after 8 Out-Faros!<br><span style="font-size:0.6rem;color:#aaa;">Every card is back in its original Mnemonica position.</span>'
+            : '&#9888; Deck did not restore &mdash; check deck has exactly 52 cards.';
+        document.getElementById('mc-status').innerText=restored?'Complete! Mnemonica cycled back to itself in 8 Out-Faros.':'Done but no match.';
+    } else {
+        document.getElementById('mc-status').innerText='Out-Faro #'+mcIdx+' done. '+(8-mcIdx)+' remaining.';
+    }
+}
+function mcRunAll() { while(mcIdx<8) mcStep(); }
+function mcReset() {
+    saveState(); deck=[...mcStart]; renderDeck(); logMove('Mnemonica Cycle: deck reset.');
+    mcIdx=0;
+    for(let i=0;i<8;i++){const t=document.getElementById('mc-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('mc-progress-bar').style.width='0%';
+    document.getElementById('mc-progress-bar').style.background='var(--gold)';
+    document.getElementById('mc-step-btn').style.display='inline-block';
+    document.getElementById('mc-run-btn').style.display='inline-block';
+    document.getElementById('mc-match').style.display='none';
+    document.getElementById('mc-status').innerText='Deck reset to Mnemonica. Ready to run again.';
+}
+
+// ================================================================
+// ARONSON STAY-STACK DEMO
+// ================================================================
+let asIdx=0;
+function showAronsonStayDemo() {
+    document.getElementById('aronson-arena').style.display='block';
+    document.getElementById('aronson-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    asIdx=0;
+    [0,1].forEach(i=>{const t=document.getElementById('as-tile-'+i);t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';});
+    document.getElementById('as-step-btn').style.display='none';
+    document.getElementById('as-run-btn').style.display='none';
+    document.getElementById('as-result').style.display='none';
+    document.getElementById('as-status').innerText='Click Load Aronson to begin.';
+}
+function asInit() {
+    saveState();
+    deck = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
+    renderDeck(); logMove('Aronson Demo: Loaded Aronson Stack');
+    asIdx=0;
+    [0,1].forEach(i=>{const t=document.getElementById('as-tile-'+i);t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';});
+    document.getElementById('as-step-btn').style.display='inline-block';
+    document.getElementById('as-run-btn').style.display='inline-block';
+    document.getElementById('as-result').style.display='none';
+    document.getElementById('as-status').innerText='Aronson loaded. Perform 1 Out-Faro then verify it is still Aronson.';
+}
+function asStep() {
+    if (asIdx >= 2) return;
+    if (asIdx===0) {
+        faroShuffle('OUT');
+        const t=document.getElementById('as-tile-0');
+        t.style.background='rgba(255,183,3,0.18)'; t.style.borderColor='var(--gold)'; t.style.color='var(--gold)';
+        document.getElementById('as-status').innerText='Out-Faro done. Now verifying...';
+    } else {
+        const ARONSON=["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
+        let cutPos=-1;
+        for(let c=0;c<52;c++){const rot=[...ARONSON.slice(c),...ARONSON.slice(0,c)];if(deck.every((x,i)=>x===rot[i])){cutPos=c;break;}}
+        const t=document.getElementById('as-tile-1');
+        t.style.background='rgba(255,183,3,0.18)'; t.style.borderColor='var(--gold)'; t.style.color='var(--gold)';
+        const r=document.getElementById('as-result'); r.style.display='block';
+        if (cutPos===0) {
+            r.innerHTML='&#10003; Exact Aronson match after 1 Out-Faro!';
+            document.getElementById('as-status').innerText='Still Aronson! Exact match.';
+        } else if (cutPos>0) {
+            r.innerHTML='&#10003; Still Aronson &mdash; cut at position '+cutPos+'.<br><span style="font-size:0.6rem;color:#aaa;">After 1 Out-Faro, Aronson is still Aronson cut to position '+cutPos+'. This is the Stay-Stack property &mdash; the stack survives a perfect shuffle.</span>';
+            document.getElementById('as-status').innerText='Stay-Stack confirmed: Aronson cut at position '+cutPos+' after 1 Out-Faro.';
+        } else {
+            r.innerHTML='&#9888; Not Aronson &mdash; check starting deck was the correct Aronson order.';
+            document.getElementById('as-status').innerText='No match found.';
+        }
+        document.getElementById('as-step-btn').style.display='none';
+        document.getElementById('as-run-btn').style.display='none';
+    }
+    asIdx++;
+}
+function asRunAll() { while(asIdx<2) asStep(); }
+
+// ================================================================
+// NDO -> MNEMONICA NDO DEMO (Tamariz block shuffle)
+// ================================================================
+var mnStepIdx = 0;
+var MN_TOTAL = 4;
+var MN_STEP_NAMES = ['Run 13 Spades (reverse)','Chop Diamonds + Run 13 Clubs (reverse) + Assemble','','Verify'];
+
+function showNdoToMnemNdo() {
+    document.getElementById('ndo-to-mnem-ndo-arena').style.display='block';
+    document.getElementById('ndo-to-mnem-ndo-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    mnStepIdx=0;
+    for(var i=0;i<MN_TOTAL;i++){var t=document.getElementById('mn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('mn-step-btn').style.display='none';
+    document.getElementById('mn-run-btn').style.display='none';
+    document.getElementById('mn-result').style.display='none';
+    document.getElementById('mn-status').innerText='Click Load US NDO to begin.';
+    mnClearBlocks();
+}
+
+function mnClearBlocks() {
+    for(var i=0;i<4;i++){
+        var lbl=document.getElementById('mn-block-'+i+'-label');
+        var cds=document.getElementById('mn-block-'+i+'-cards');
+        var blk=document.getElementById('mn-block-'+i);
+        if(lbl) lbl.innerHTML='';
+        if(cds) cds.innerHTML='';
+        if(blk) blk.style.borderColor='#333';
+    }
+}
+
+function mnShowBlocks(blocks, highlight) {
+    // blocks = array of {label, cards, color} for each of 4 columns
+    blocks.forEach(function(b,i){
+        var lbl=document.getElementById('mn-block-'+i+'-label');
+        var cds=document.getElementById('mn-block-'+i+'-cards');
+        var blk=document.getElementById('mn-block-'+i);
+        if(lbl) lbl.innerHTML=b.label;
+        if(cds) {
+            cds.innerHTML='';
+            b.cards.forEach(function(c){
+                var s=document.createElement('span');
+                s.style.display='block';
+                s.innerHTML=c;
+                cds.appendChild(s);
+            });
+        }
+        if(blk) blk.style.borderColor = (highlight===i) ? 'var(--gold)' : '#333';
+    });
+}
+
+function mnInit() {
+    saveState();
+    deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+            "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
+            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+            "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"];
+    renderDeck(); logMove('Mnemonica NDO Demo: Loaded US NDO');
+    mnStepIdx=0;
+    for(var i=0;i<MN_TOTAL;i++){var t=document.getElementById('mn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('mn-step-btn').style.display='inline-block';
+    document.getElementById('mn-run-btn').style.display='inline-block';
+    document.getElementById('mn-result').style.display='none';
+    // Show initial block structure
+    mnShowBlocks([
+        {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
+        {label:'Clubs (Aâ†’K)', cards:['AC â†’ KC']},
+        {label:'Diamonds (Kâ†’A)', cards:['KD â†’ AD']},
+        {label:'Spades (Kâ†’A)', cards:['KS â†’ AS']}
+    ], -1);
+    document.getElementById('mn-status').innerText='US NDO loaded. 4 suit blocks shown above. Step through the procedure.';
+}
+
+function mnDoStep(idx) {
+    var tile=document.getElementById('mn-tile-'+idx);
+    if(tile){tile.style.background='rgba(255,183,3,0.18)';tile.style.borderColor='var(--gold)';tile.style.color='var(--gold)';}
+
+    if (idx===0) {
+        // Step 1: Run 13 Spades reversed, throw balance on top
+        // Face-down result: H | C | D | Spades(AS->KS)
+        saveState();
+        deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+                "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
+                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+                "AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS"];
+        renderDeck();
+        logMove('Mnemonica NDO Demo: Step 1 - Ran Spades reversed to bottom');
+        mnShowBlocks([
+            {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
+            {label:'Clubs (Aâ†’K)', cards:['AC â†’ KC']},
+            {label:'Diamonds (Kâ†’A)', cards:['KD â†’ AD']},
+            {label:'Spades REVERSED âœ“', cards:['AS â†’ KS']}
+        ], 3);
+        document.getElementById('mn-status').innerText='Step 1: Spades reversed (KSâ†’AS becomes ASâ†’KS) and placed at bottom. Hearts | Clubs | Diamonds | Spades(rev).';
+    }
+    else if (idx===1) {
+        // Step 2: Chop the Diamonds block (set aside in left hand)
+        // Deck doesn't change yet - diamonds are "in left hand"
+        // Visual only: highlight diamonds as set aside
+        mnShowBlocks([
+            {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
+            {label:'Clubs (A\â†’K)', cards:['AC â†’ KC']},
+            {label:'Diamonds â†’ SET ASIDE', cards:['KD â†’ AD']},
+            {label:'Spades (ASâ†’KS)', cards:['AS â†’ KS']}
+        ], 2);
+        document.getElementById('mn-status').innerText='Step 2: Diamonds block (KDâ†’AD) chopped off and held in left hand. Right hand holds Hearts + Clubs + Spades.';
+    }
+    else if (idx===2) {
+        // Step 3: Run 13 Clubs reversed onto the Diamonds, throw Hearts+Spades beneath
+        // Final face-down: Spades(AS-KS) | Hearts(AH-KH) | Diamonds(KD-AD) | Clubs(KC-AC)
+        saveState();
+        deck = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
+                "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+                "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+        renderDeck();
+        logMove('Mnemonica NDO Demo: Step 3 - Clubs reversed onto Diamonds, balance thrown beneath');
+        mnShowBlocks([
+            {label:'Spades (Aâ†’K) âœ“', cards:['AS â†’ KS']},
+            {label:'Hearts (Aâ†’K) âœ“', cards:['AH â†’ KH']},
+            {label:'Diamonds (Kâ†’A) âœ“', cards:['KD â†’ AD']},
+            {label:'Clubs REVERSED âœ“', cards:['KC â†’ AC']}
+        ], -1);
+        for(var i=0;i<4;i++){var b=document.getElementById('mn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
+        document.getElementById('mn-status').innerText='Step 3: Clubs reversed (ACâ†’KC becomes KCâ†’AC) onto Diamonds, Hearts+Spades thrown beneath. All 4 blocks in Mnemonica NDO order!';
+    }
+    else if (idx===3) {
+        // Step 4: Verify
+        var MNEM_NDO = ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS",
+                        "AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+                        "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+                        "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+        var match = deck.every(function(c,i){return c===MNEM_NDO[i];});
+        var r=document.getElementById('mn-result'); r.style.display='block';
+        r.innerHTML = match
+            ? '&#10003; Mnemonica NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO \u2192 Tamariz block shuffle = perfect Mnemonica NDO. Ready for the 8-step Mnemonica entry procedure.</span>'
+            : '&#9888; Not Mnemonica NDO. Check all steps were performed from US NDO.';
+        document.getElementById('mn-status').innerText = match ? 'Perfect Mnemonica NDO achieved!' : 'No match.';
+        document.getElementById('mn-step-btn').style.display='none';
+        document.getElementById('mn-run-btn').style.display='none';
+    }
+}
+
+var mnStepIdx = 0;
+function mnStep() {
+    if(mnStepIdx>=MN_TOTAL) return;
+    mnDoStep(mnStepIdx);
+    mnStepIdx++;
+}
+function mnRunAll(){
+    var delay=0;
+    for(var i=mnStepIdx;i<MN_TOTAL;i++){
+        (function(idx){setTimeout(function(){if(mnStepIdx!==idx)return;mnDoStep(idx);mnStepIdx++;},delay);})(i);
+        delay+=700;
+    }
+}
+
+// ================================================================
+// NDO -> PARTICLE NDO DEMO (2-step block procedure)
+// ================================================================
+var pnStepIdx = 0;
+var PN_TOTAL = 3;
+
+function showNdoToParticleNdo() {
+    document.getElementById('ndo-to-particle-ndo-arena').style.display='block';
+    document.getElementById('ndo-to-particle-ndo-arena').scrollIntoView({behavior:'smooth',block:'nearest'});
+    pnStepIdx=0;
+    for(var i=0;i<PN_TOTAL;i++){var t=document.getElementById('pn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('pn-step-btn').style.display='none';
+    document.getElementById('pn-run-btn').style.display='none';
+    document.getElementById('pn-result').style.display='none';
+    document.getElementById('pn-status').innerText='Click Load US NDO to begin.';
+    pnClearBlocks();
+}
+
+function pnClearBlocks(){
+    for(var i=0;i<4;i++){
+        var l=document.getElementById('pn-block-'+i+'-label');
+        var c=document.getElementById('pn-block-'+i+'-cards');
+        var b=document.getElementById('pn-block-'+i);
+        if(l)l.innerHTML=''; if(c)c.innerHTML=''; if(b)b.style.borderColor='#333';
+    }
+}
+
+function pnShowBlocks(blocks, highlights){
+    blocks.forEach(function(b,i){
+        var lbl=document.getElementById('pn-block-'+i+'-label');
+        var cds=document.getElementById('pn-block-'+i+'-cards');
+        var blk=document.getElementById('pn-block-'+i);
+        if(lbl)lbl.innerHTML=b.label;
+        if(cds){cds.innerHTML='';b.cards.forEach(function(c){var s=document.createElement('span');s.style.display='block';s.innerHTML=c;cds.appendChild(s);});}
+        if(blk)blk.style.borderColor=(highlights&&highlights.indexOf(i)>=0)?'var(--gold)':'#333';
+    });
+}
+
+function pnInit(){
+    saveState();
+    deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+            "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
+            "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD",
+            "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS"];
+    renderDeck(); logMove('Particle NDO Demo: Loaded US NDO');
+    pnStepIdx=0;
+    for(var i=0;i<PN_TOTAL;i++){var t=document.getElementById('pn-tile-'+i);if(t){t.style.background='#111';t.style.borderColor='#444';t.style.color='#555';}}
+    document.getElementById('pn-step-btn').style.display='inline-block';
+    document.getElementById('pn-run-btn').style.display='inline-block';
+    document.getElementById('pn-result').style.display='none';
+    pnShowBlocks([
+        {label:'Hearts (A→K)', cards:['AH→KH']},
+        {label:'Clubs (A→K)', cards:['AC→KC']},
+        {label:'Diamonds (K→A)', cards:['KD→AD']},
+        {label:'Spades (K→A)', cards:['KS→AS']}
+    ], []);
+    document.getElementById('pn-status').innerText='US NDO loaded. Two operations convert to Particle NDO.';
+}
+
+function pnDoStep(idx){
+    var tile=document.getElementById('pn-tile-'+idx);
+    if(tile){tile.style.background='rgba(255,183,3,0.18)';tile.style.borderColor='var(--gold)';tile.style.color='var(--gold)';}
+    if(idx===0){
+        // Move bottom 13 (Spades) to position 14
+        saveState();
+        deck = ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+                "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS",
+                "AC","2C","3C","4C","5C","6C","7C","8C","9C","10C","JC","QC","KC",
+                "KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"];
+        renderDeck(); logMove('Particle NDO Demo: Step 1 - Spades moved to position 14');
+        pnShowBlocks([
+            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
+            {label:'Spades (K→A) ✓', cards:['KS → AS']},
+            {label:'Clubs (A→K)', cards:['AC → KC']},
+            {label:'Diamonds (K→A)', cards:['KD → AD']}
+        ],[0,1]);
+        document.getElementById('pn-status').innerText='Step 1: Bottom 13 Spades moved up to position 14. Hearts and Spades are now the top 26.';
+    }
+    else if(idx===1){
+        // Reverse Bottom 26
+        reverseBottom();
+        logMove('Particle NDO Demo: Step 2 - Reversed Bottom 26');
+        pnShowBlocks([
+            {label:'Hearts (A→K) ✓', cards:['AH → KH']},
+            {label:'Spades (K→A) ✓', cards:['KS → AS']},
+            {label:'Diamonds REVERSED ✓', cards:['AD → KD']},
+            {label:'Clubs REVERSED ✓', cards:['KC → AC']}
+        ],[0,1,2,3]);
+        for(var i=0;i<4;i++){var b=document.getElementById('pn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
+        document.getElementById('pn-status').innerText='Step 2: Bottom 26 reversed. Diamonds now A→K, Clubs now K→A. Click Verify!';
+    }
+    else if(idx===2){
+        var PART_NDO=["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH",
+                      "KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS",
+                      "AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD",
+                      "KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"];
+        var match=deck.every(function(c,i){return c===PART_NDO[i];});
+        var r=document.getElementById('pn-result'); r.style.display='block';
+        r.innerHTML=match
+            ?'&#10003; Particle NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO â†’ Move Spades to pos 14 â†’ Reverse Bottom 26 = perfect Particle NDO. Ready for the 2 Out-Faro entry.</span>'
+            :'&#9888; Not Particle NDO. Check steps were performed from US NDO.';
+        document.getElementById('pn-status').innerText=match?'Perfect Particle NDO achieved!':'No match.';
+        document.getElementById('pn-step-btn').style.display='none';
+        document.getElementById('pn-run-btn').style.display='none';
+    }
+}
+
+function pnStep(){
+    if(pnStepIdx>=PN_TOTAL)return;
+    pnDoStep(pnStepIdx);
+    pnStepIdx++;
+}
+function pnRunAll(){
+    var delay=0;
+    for(var i=pnStepIdx;i<PN_TOTAL;i++){
+        (function(idx){setTimeout(function(){if(pnStepIdx!==idx)return;pnStep();},delay);})(i);
+        delay+=600;
+    }
+}
+    
+
+// ================================================================
+// JONAH POKER DEMOS
+// ================================================================
+var jonahDemoNum = 1;
+var jonahDealIdx = 0;
+var jonahBank = [];
+var jonahDealOrder = [];  // array of {hand: 1or2, card: string}
+
+var JONAH_PARTICLE = ["AH","KS","AD","KC","2H","QS","2D","QC","3H","JS","3D",
+    "JC","4H","10S","4D","10C","5H","9S","5D","9C",
+    "6H","8S","6D","8C","7H","7S","7D","7C","8H","6S",
+    "8D","6C","9H","5S","9D","5C","10H","4S","10D","4C",
+    "JH","3S","JD","3C","QH","2S","QD","2C","KH","AS","KD","AC"];
+
+function showJonah(num) {
+    jonahDemoNum = num;
+    jonahDealIdx = 0;
+    jonahBank = [];
+    jonahDealOrder = [];
+
+    var arena = document.getElementById('jonah-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({behavior:'smooth', block:'nearest'});
+
+    // Reset table
+    document.getElementById('jonah-p1-hand').innerHTML = '';
+    document.getElementById('jonah-p2-hand').innerHTML = '';
+    document.getElementById('jonah-reveal').style.display = 'none';
+    document.getElementById('jonah-table').style.display = 'none';
+    document.getElementById('jonah-tiles').innerHTML = '';
+    document.getElementById('jonah-load-btn').style.display = 'inline-block';
+    document.getElementById('jonah-step-btn').style.display = 'none';
+    document.getElementById('jonah-run-btn').style.display = 'none';
+    document.getElementById('jonah-reset-btn').style.display = 'none';
+
+    if (num === 1) {
+        document.getElementById('jonah-desc').innerHTML =
+            '<strong style="color:#8B5CF6;">Demo 1 &mdash; 9♣ on Top, User Dealt First:</strong><br>' +
+            'Loads the Particle stack and extracts positions 20–30 (11 cards), removing the 7♥ to leave a clean 10-card bank. ' +
+            'The 9♣ sits at the top of the bank. Cards are dealt one at a time: <strong>User first, then Dealer.</strong> ' +
+            'The 9♣ (card 1) goes straight to the User. ' +
+            '<span style="color:#8B5CF6;">Whoever holds the 9♣ is doomed &mdash; the User loses.</span>';
+        document.getElementById('jonah-p1-label').innerText = 'USER ← deals first';
+        document.getElementById('jonah-p2-label').innerText = 'DEALER';
+        document.getElementById('jonah-status').innerText = 'Demo 1: Click Load Particle Stack to begin.';
+    } else {
+        document.getElementById('jonah-desc').innerHTML =
+            '<strong style="color:#8B5CF6;">Demo 2 &mdash; 9♣ on Bottom, Dealer Dealt First:</strong><br>' +
+            'Same 10-card bank from Particle positions 20–30 (7♥ removed). ' +
+            'Bank is reversed so the 9♣ sits on the bottom. Cards are dealt one at a time: <strong>Dealer first, then User.</strong> ' +
+            'The Dealer receives the last card (bottom deal) on their final card &mdash; the 9♣. ' +
+            '<span style="color:#8B5CF6;">Whoever holds the 9♣ is doomed &mdash; the Dealer loses.</span>';
+        document.getElementById('jonah-p1-label').innerText = 'USER';
+        document.getElementById('jonah-p2-label').innerText = 'DEALER ← deals first';
+        document.getElementById('jonah-status').innerText = 'Demo 2: Click Load Particle Stack to begin.';
+    }
+}
+
+function jonahLoad() {
+    saveState();
+    deck = JONAH_PARTICLE.slice();
+    renderDeck();
+    logMove('Jonah Demo ' + jonahDemoNum + ': Loaded Particle Stack');
+
+    // Build the 10-card bank: Particle pos 20-30, remove 7H
+    var raw = JONAH_PARTICLE.slice(19, 30);
+    jonahBank = raw.filter(function(c){ return c !== '7H'; });
+
+    var workingBank;
+    if (jonahDemoNum === 1) {
+        // 9C on top (natural order), User dealt first: U,D,U,D,U,D,U,D,U,D
+        workingBank = jonahBank.slice();
+        jonahDealOrder = [];
+        for (var i = 0; i < 10; i++) {
+            jonahDealOrder.push({ hand: (i%2===0 ? 1 : 2), card: workingBank[i] });
+        }
+    } else {
+        // 9C on bottom (reversed bank), Dealer dealt first: D,U,D,U,D,U,D,U then bottom deal D
+        workingBank = jonahBank.slice().reverse();
+        jonahDealOrder = [];
+        // First 8 cards: D,U alternating
+        for (var i = 0; i < 8; i++) {
+            jonahDealOrder.push({ hand: (i%2===0 ? 2 : 1), card: workingBank[i] });
+        }
+        // Card 9 (index 8) goes to User
+        jonahDealOrder.push({ hand: 1, card: workingBank[8] });
+        // Card 10 (index 9 = bottom = 9C) goes to Dealer as bottom deal
+        jonahDealOrder.push({ hand: 2, card: workingBank[9] });
+    }
+
+    // Build step tiles
+    var tdiv = document.getElementById('jonah-tiles');
+    tdiv.innerHTML = '';
+    jonahDealOrder.forEach(function(step, i) {
+        var t = document.createElement('div');
+        t.id = 'jonah-tile-' + i;
+        var isJonah = step.card === '9C';
+        t.style.cssText = 'padding:4px 6px; border-radius:4px; font-size:0.5rem; font-weight:bold;' +
+            'border:1px solid ' + (isJonah ? '#8B5CF6' : '#333') + '; background:#111;' +
+            'color:' + (isJonah ? '#8B5CF6' : '#444') + '; text-align:center; min-width:36px;';
+        t.innerHTML = '<div style="font-size:0.4rem;">' + (i+1) + '</div>' +
+            step.card + '<br><span style="font-size:0.4rem;">' +
+            (step.hand===1 ? 'USER' : 'DEALER') + '</span>';
+        tdiv.appendChild(t);
+    });
+
+    jonahDealIdx = 0;
+    document.getElementById('jonah-table').style.display = 'block';
+    document.getElementById('jonah-load-btn').style.display = 'none';
+    document.getElementById('jonah-step-btn').style.display = 'inline-block';
+    document.getElementById('jonah-run-btn').style.display = 'inline-block';
+    document.getElementById('jonah-reset-btn').style.display = 'inline-block';
+    document.getElementById('jonah-status').innerText =
+        'Bank ready (' + jonahBank.join(', ') +
+        (jonahDemoNum===2 ? ' | reversed for Demo 2' : '') +
+        '). Step through the deal one card at a time.';
+}
+
+function jonahDealStep() {
+    if (jonahDealIdx >= jonahDealOrder.length) return;
+
+    var step = jonahDealOrder[jonahDealIdx];
+    var hand = document.getElementById(step.hand === 1 ? 'jonah-p1-hand' : 'jonah-p2-hand');
+    var isJonah = step.card === '9C';
+    var isBottomDeal = (jonahDemoNum === 2 && jonahDealIdx === 9);
+
+    // Create card UI
+    var ui = createCardUI(step.card);
+    if (isJonah) {
+        ui.style.border = '3px solid #8B5CF6';
+        ui.style.boxShadow = '0 0 12px #8B5CF6';
+    }
+    if (isBottomDeal) {
+        ui.style.outline = '2px dashed #ffb703';
+        ui.title = 'Bottom Deal!';
+    }
+    hand.appendChild(ui);
+
+    // Light up tile
+    var tile = document.getElementById('jonah-tile-' + jonahDealIdx);
+    if (tile) {
+        tile.style.background = isJonah ? 'rgba(139,92,246,0.3)' : 'rgba(255,183,3,0.15)';
+        tile.style.borderColor = isJonah ? '#8B5CF6' : 'var(--gold)';
+        tile.style.color = isJonah ? '#8B5CF6' : 'var(--gold)';
+    }
+
+    jonahDealIdx++;
+    var recipient = step.hand === 1 ? 'User' : 'Dealer';
+    var msg = 'Card ' + jonahDealIdx + ': ' + step.card + ' → ' + recipient;
+    if (isJonah) msg += ' — &#9760; THE JONAH CARD!';
+    if (isBottomDeal) msg += ' (Bottom Deal)';
+    document.getElementById('jonah-status').innerHTML = msg;
+
+    if (isJonah) {
+        setTimeout(function() {
+            var loser = step.hand === 1 ? 'USER' : 'DEALER';
+            var winner = step.hand === 1 ? 'DEALER' : 'USER';
+            document.getElementById('jonah-reveal').style.display = 'block';
+            document.getElementById('jonah-reveal').innerHTML =
+                '&#9760; The 9♣ (Jonah) went to the <strong>' + loser + '</strong>.<br>' +
+                '<span style="font-size:0.6rem;color:#aaa;">' +
+                'The ' + loser + ' is doomed — their hand cannot win. The ' + winner + ' wins.<br>' +
+                'This is guaranteed by the Particle stack structure at positions 20–30 — ' +
+                'the 9♣ always lands in the same position every time.</span>';
+        }, 300);
+    }
+
+    if (jonahDealIdx >= jonahDealOrder.length) {
+        document.getElementById('jonah-step-btn').style.display = 'none';
+        document.getElementById('jonah-run-btn').style.display = 'none';
+    }
+}
+
+function jonahRunAll() {
+    var delay = 0;
+    for (var i = jonahDealIdx; i < jonahDealOrder.length; i++) {
+        (function(idx) {
+            setTimeout(function() {
+                if (jonahDealIdx !== idx) return;
+                jonahDealStep();
+            }, delay);
+        })(i);
+        delay += 300;
+    }
+}
+
+function jonahReset() {
+    jonahDealIdx = 0;
+    document.getElementById('jonah-p1-hand').innerHTML = '';
+    document.getElementById('jonah-p2-hand').innerHTML = '';
+    document.getElementById('jonah-reveal').style.display = 'none';
+    document.getElementById('jonah-table').style.display = 'none';
+    document.getElementById('jonah-tiles').innerHTML = '';
+    document.getElementById('jonah-load-btn').style.display = 'inline-block';
+    document.getElementById('jonah-step-btn').style.display = 'none';
+    document.getElementById('jonah-run-btn').style.display = 'none';
+    document.getElementById('jonah-status').innerText = 'Reset. Click Load Particle Stack to begin again.';
+}
+
+function showGilbreathDemo() {
+    document.getElementById('gilbreath-arena').style.display = 'block';
+    document.getElementById('gilbreath-arena').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+</script>
+
+<div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
+    <div style="max-width:700px; margin:40px auto; background:var(--panel); border:1px solid var(--gold); border-radius:8px; padding:30px; color:var(--text); font-size:0.75rem; line-height:1.6;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+            <h2 style="color:var(--gold); margin:0;">Virtual Card Lab v9.4 &mdash; User Guide</h2>
+            <button onclick="document.getElementById('help-modal').style.display='none'" style="font-size:1rem; padding:5px 12px;">&times;</button>
+        </div>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">DISPLAY</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#127183; Peek Mode</td><td style="padding:6px 8px;">Flips all cards face down and shows their position number. Click any card to reveal it for 1 second, then it hides again. Use this to drill stack memorization &mdash; guess each card before you click to reveal. Toggle off to return to normal view.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Size: Small / Medium / Large</td><td style="padding:6px 8px;">Changes the display size of all cards. Small fits the full 52-card grid at 13 per row. Medium and Large scale up for easier reading.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Card Swap</td><td style="padding:6px 8px;">In normal view, click any card to select it (highlighted in gold), then click a second card to swap their positions. A quick way to manually adjust the stack order.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS &amp; SHUFFLES</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro OUT</td><td style="padding:6px 8px;">Perfect weave &mdash; top card stays at position 1. 8 consecutive Out-Faros returns any deck to its original order. Used to cycle a memorized stack back to itself.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro IN</td><td style="padding:6px 8px;">Perfect weave &mdash; top card moves to position 2. Used in stack entry procedures and the binary Faro Navigator to precisely position any card.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Shuffle</td><td style="padding:6px 8px;">Reverses the entire 52-card deck end to end.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Gilbreth Shuffle</td><td style="padding:6px 8px;">Reverses the top 26 cards then randomly interleaves them with the bottom 26.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut Deck (26)</td><td style="padding:6px 8px;">Moves the top 26 cards to the bottom &mdash; a standard half-deck cut.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Randomize</td><td style="padding:6px 8px;">Fisher-Yates full randomization of all 52 cards.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Left</td><td style="padding:6px 8px;">Moves the top card to the bottom (one-card cycle left).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Shift Right</td><td style="padding:6px 8px;">Moves the bottom card to the top (one-card cycle right).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Top 26</td><td style="padding:6px 8px;">Reverses only the top 26 cards. Bottom 26 untouched. Used in the Spanish NDO &rarr; Mnemonica entry procedure (Step 2).</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Reverse Bottom 26</td><td style="padding:6px 8px;">Reverses only the bottom 26 cards. Top 26 untouched.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Unequal Faro Top 18</td><td style="padding:6px 8px;">Cuts the top 18 cards and out-faros them into the top of the remaining 34. Used in the Spanish NDO &rarr; Mnemonica procedure (Step 3).</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut at N &#129514;</td><td style="padding:6px 8px;">Enter any number 1&ndash;51 and click &#129514; CUT to move exactly that many cards from top to bottom.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FALSE WORK (STACK PROTECTION)</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Zarrow Shuffle</td><td style="padding:6px 8px;">Swaps the top 2 cards with the bottom 2. Cards in positions 3&ndash;50 remain completely undisturbed. Simulates a riffle shuffle while preserving the stack.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Blind Faro</td><td style="padding:6px 8px;">Moves the top 2 cards to positions 25&ndash;26 (center of the deck). Appears to lose cards in a shuffle while keeping them locatable.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">WHY MEMORIZE A DECK?</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:8px; font-size:0.6rem; color:var(--text); line-height:1.7;" colspan="2">
+                <span style="color:var(--gold); font-weight:bold;">The Key Card</span> &mdash; In the beginning there was the key card: a known card lying next to a selected card. Cutting without shuffling, or dealing cards one at a time, the card following the key card is the selection.<br><br>
+                Then came the idea of making <em>every card in the deck</em> a key card, all in a known order. If a card is taken, we learn its identity by looking at the one that was above it. Thus we arrive at the concept of a <span style="color:var(--gold); font-weight:bold;">memorized deck</span>.<br><br>
+                <span style="color:#aaa; font-size:0.55rem;">For a deeper history of stacks and memorized decks, visit <a href="https://www.deceptionary.com/aboutstacks.html" target="_blank" style="color:var(--gold);">deceptionary.com/aboutstacks</a></span>
+            </td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK PRESETS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">New Deck Order (NDO)</td><td style="padding:6px 8px;">US Bicycle factory order: A&rarr;K Hearts, A&rarr;K Clubs, K&rarr;A Diamonds, K&rarr;A Spades. Essential baseline for faro math and stack entry procedures.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Spanish NDO</td><td style="padding:6px 8px;">A&rarr;K in all four suits, CHaSeD order. The starting point for the Mnemonica faro entry procedure &mdash; reach Mnemonica in 3 steps from here.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">French NDO</td><td style="padding:6px 8px;">K&rarr;A in all four suits. Common in Tally-Ho and European Bicycle decks. Useful when working with European cards out of the box.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle NDO</td><td style="padding:6px 8px;">Custom new deck order used as the starting point for Particle stack entry procedures.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Mnemonica</td><td style="padding:6px 8px;">Juan Tamariz's world-famous memorized stack. Exceptionally rich in built-in effects &mdash; poker hands, spelling tricks, Si Stebbins-style math, and suit separation routines. The gold standard for serious memdeck work.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aronson</td><td style="padding:6px 8px;">Simon Aronson's memorized stack. Famous for its built-in poker deals, spelling effects, and the Stay Stack property. A favorite among card workers who focus on ACAAN-style effects.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Nikola</td><td style="padding:6px 8px;">Louis Nikola's classic memorized stack &mdash; one of the earliest published memdeck systems. Historically important and still fully functional for standard memdeck work.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Eight Kings</td><td style="padding:6px 8px;">Mnemonic cyclical stack using the phrase &ldquo;Eight Kings Threatened To Save Nine Fair Ladies For One.&rdquo; Suits rotate CHaSeD. Easy to memorize and reconstruct from memory on the fly. Great entry-level stack.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Boris Wild</td><td style="padding:6px 8px;">Formula-based memdeck &mdash; arguably the easiest to learn. Values increment by 1 per group of 4, suits rotate CHaSeD. Ideal for performers who want reliable position math without a full memorization commitment.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Memorandum</td><td style="padding:6px 8px;">Woody Aragon's memorized stack. Designed with a strong focus on natural-feeling poker and gambling demonstrations while maintaining full memdeck capabilities.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Osterlind</td><td style="padding:6px 8px;">Richard Osterlind's Breakthrough Card System. A mathematical cyclical stack preferred by mentalists &mdash; position of any card can be calculated instantly using a simple formula, no memorization required.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Classic Stebbins</td><td style="padding:6px 8px;">Values increase by 3 with each card, suits rotate CHaSeD. The oldest published mathematical stack. Instantly angle-vulnerable (pattern is visible to spectators) but excellent for learning stack math concepts.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My Stebbins</td><td style="padding:6px 8px;">Personal Stebbins variant starting at a different value offset. Retains the formula benefits with a slightly less predictable opening sequence.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">My CHaSeD</td><td style="padding:6px 8px;">Personal CHaSeD stack grouped in sets of 4 by suit. Returns to its original order in exactly 2 Out-Faros &mdash; useful for resetting quickly in performance.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Particle</td><td style="padding:6px 8px;">Joshua Jay's memorized stack. A Stay Stack with top/bottom mirror symmetry &mdash; the top 26 and bottom 26 mirror each other in value and color, enabling a unique set of visual and mathematical effects.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Joyal</td><td style="padding:6px 8px;">The Joyal memorized stack. Known for strong poker hand demonstrations and a balanced suit distribution that supports both memdeck and gambling-style routines.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MATHEMATICAL STACKS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Stebbins +4</td><td style="padding:6px 8px;">Si Stebbins variant where each card&rsquo;s value increases by 4 (instead of 3), suits cycling CHaSeD. Produces a denser mathematical pattern. Fully cyclical &mdash; position of any card is instantly calculable.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Stebbins +5</td><td style="padding:6px 8px;">Si Stebbins variant with value increment of 5. Suits cycle CHaSeD. Less predictable visually than +3 but retains the same instant position-calculation benefit.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Latin Formula</td><td style="padding:6px 8px;">Ancient cyclic stack (Rosary/Chapelet) based on a Latin mnemonic phrase: <em>Unus quinque novem famulus sex quatuour duo Rex septem octo faemina trina decem</em> &mdash; encoding the value sequence A,5,9,J,6,4,2,K,7,8,Q,3,10 cycling in CHaSeD suit order. One of the oldest published stack systems, first described by Guyot in 1769.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">SEARCH &amp; TRACK</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Search Box</td><td style="padding:6px 8px;">Type comma-separated card names (e.g. AS, 4H) to highlight them in gold. Updates live as you type.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Aces / Kings / Royal &#128081;</td><td style="padding:6px 8px;">Quick-select preset tracking groups. Royal &#128081; highlights 10S, JS, QS, KS, AS.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Clear</td><td style="padding:6px 8px;">Removes all tracking highlights.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK COACH</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Toggle Stack Coach</td><td style="padding:6px 8px;">Shows each card's position number (1&ndash;52) as a hover tooltip. Use for drilling position recall.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Verify Current Stack</td><td style="padding:6px 8px;">Checks the deck against all known stack orders. Reports an exact match, a cut match, duplicate cards, or unknown order.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cycles to NDO</td><td style="padding:6px 8px;">Simulates up to 8 consecutive Out-Faros and reports whether any iteration reaches a known stack or NDO.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">FARO NAVIGATOR &amp; CYCLES</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Faro Navigator</td><td style="padding:6px 8px;">Enter a target position (2&ndash;52) to calculate the exact sequence of In and Out shuffles needed to move the current top card there. Based on the binary method by S. Brent Morris: subtract 1 from the target, convert to binary, then read each bit as an In-shuffle (1) or Out-shuffle (0). Use Step or Run All to execute the sequence live on the deck.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">8 Out-Faros</td><td style="padding:6px 8px;">One of the most remarkable results in card mathematics: 8 consecutive Out-Faros return any 52-card deck to its exact original order. Step through one shuffle at a time or Run All &mdash; the progress bar fills and a confirmation appears when every card is back in place.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">52 In-Faros</td><td style="padding:6px 8px;">The In-Faro equivalent: 52 consecutive In-Faros restore the deck &mdash; one shuffle for every card. The cycle length matches the deck size exactly, which feels almost impossibly poetic. Use Reset at any point to return the deck to its state when the demo started.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">POKER SIMS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">4/5/6P Draw</td><td style="padding:6px 8px;">Deals 5-card draw hands for 4, 5, or 6 players. Dealer receives the last hand.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">4/5/6P Hold'em</td><td style="padding:6px 8px;">Deals 2-card hole hands for 4, 5, or 6 players, plus 5 community cards with burn cards. Dealer receives the last hand.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Bottom Deal (Dealer)</td><td style="padding:6px 8px;">When checked, the dealer's final card is forced from position 52 instead of dealing normally.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Clear Table</td><td style="padding:6px 8px;">Hides the poker arena and clears all dealt hands.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:10px;">SESSION</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:10px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#127183; Undo</td><td style="padding:6px 8px;">Steps back one move. The app stores up to 50 undo states.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Clear Log</td><td style="padding:6px 8px;">Wipes the session history log in the sidebar.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128228; Export</td><td style="padding:6px 8px;">Opens a prompt with the current deck as a JSON array. Copy it to save or share your stack.</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128229; Import</td><td style="padding:6px 8px;">Paste a JSON array to restore a previously saved deck state.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128190; Save Session</td><td style="padding:6px 8px;">Saves the current deck to browser local storage. The deck will persist between page reloads.</td></tr>
+        </table>
+
+        <div style="text-align:center; margin-top:20px;">
+            <button onclick="document.getElementById('help-modal').style.display='none'" style="padding:8px 30px; font-size:0.75rem; border-color:var(--gold); color:var(--gold);">CLOSE</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
