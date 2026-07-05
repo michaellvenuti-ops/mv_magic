@@ -1839,10 +1839,10 @@ function mnInit() {
     document.getElementById('mn-result').style.display='none';
     // Show initial block structure
     mnShowBlocks([
-        {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
-        {label:'Clubs (Aâ†’K)', cards:['AC â†’ KC']},
-        {label:'Diamonds (Kâ†’A)', cards:['KD â†’ AD']},
-        {label:'Spades (Kâ†’A)', cards:['KS â†’ AS']}
+        {label:'Hearts (A→K)', cards:['AH → KH']},
+        {label:'Clubs (A→K)', cards:['AC → KC']},
+        {label:'Diamonds (K→A)', cards:['KD → AD']},
+        {label:'Spades (K→A)', cards:['KS → AS']}
     ], -1);
     document.getElementById('mn-status').innerText='US NDO loaded. 4 suit blocks shown above. Step through the procedure.';
 }
@@ -1862,24 +1862,24 @@ function mnDoStep(idx) {
         renderDeck();
         logMove('Mnemonica NDO Demo: Step 1 - Ran Spades reversed to bottom');
         mnShowBlocks([
-            {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
-            {label:'Clubs (Aâ†’K)', cards:['AC â†’ KC']},
-            {label:'Diamonds (Kâ†’A)', cards:['KD â†’ AD']},
-            {label:'Spades REVERSED âœ“', cards:['AS â†’ KS']}
+            {label:'Hearts (A → K)', cards:['AH → KH']},
+            {label:'Clubs (A → K)', cards:['AC → KC']},
+            {label:'Diamonds (K → A)', cards:['KD → AD']},
+            {label:'Spades REVERSED ✓, cards:['AS → KS']}
         ], 3);
-        document.getElementById('mn-status').innerText='Step 1: Spades reversed (KSâ†’AS becomes ASâ†’KS) and placed at bottom. Hearts | Clubs | Diamonds | Spades(rev).';
+        document.getElementById('mn-status').innerText='Step 1: Spades reversed (KS→AS becomes AS→KS) and placed at bottom. Hearts | Clubs | Diamonds | Spades(rev).';
     }
     else if (idx===1) {
         // Step 2: Chop the Diamonds block (set aside in left hand)
         // Deck doesn't change yet - diamonds are "in left hand"
         // Visual only: highlight diamonds as set aside
         mnShowBlocks([
-            {label:'Hearts (Aâ†’K)', cards:['AH â†’ KH']},
-            {label:'Clubs (A\â†’K)', cards:['AC â†’ KC']},
-            {label:'Diamonds â†’ SET ASIDE', cards:['KD â†’ AD']},
-            {label:'Spades (ASâ†’KS)', cards:['AS â†’ KS']}
+            {label:'Hearts (A → K)', cards:['AH → KH']},
+            {label:'Clubs (A → K)', cards:['AC → KC']},
+            {label:'Diamonds → SET ASIDE', cards:['KD → AD']},
+            {label:'Spades (AS → KS)', cards:['AS → KS']}
         ], 2);
-        document.getElementById('mn-status').innerText='Step 2: Diamonds block (KDâ†’AD) chopped off and held in left hand. Right hand holds Hearts + Clubs + Spades.';
+        document.getElementById('mn-status').innerText='Step 2: Diamonds block (KD→AD) chopped off and held in left hand. Right hand holds Hearts + Clubs + Spades.';
     }
     else if (idx===2) {
         // Step 3: Run 13 Clubs reversed onto the Diamonds, throw Hearts+Spades beneath
@@ -1892,13 +1892,13 @@ function mnDoStep(idx) {
         renderDeck();
         logMove('Mnemonica NDO Demo: Step 3 - Clubs reversed onto Diamonds, balance thrown beneath');
         mnShowBlocks([
-            {label:'Spades (Aâ†’K) âœ“', cards:['AS â†’ KS']},
-            {label:'Hearts (Aâ†’K) âœ“', cards:['AH â†’ KH']},
-            {label:'Diamonds (Kâ†’A) âœ“', cards:['KD â†’ AD']},
-            {label:'Clubs REVERSED âœ“', cards:['KC â†’ AC']}
+            {label:'Spades (A→K) ✓, cards:['AS → KS']},
+            {label:'Hearts (A→K) ✓, cards:['AH → KH']},
+            {label:'Diamonds (K→A) ✓, cards:['KD → AD']},
+            {label:'Clubs REVERSED ✓, cards:['KC → AC']}
         ], -1);
         for(var i=0;i<4;i++){var b=document.getElementById('mn-block-'+i);if(b)b.style.borderColor='var(--gold)';}
-        document.getElementById('mn-status').innerText='Step 3: Clubs reversed (ACâ†’KC becomes KCâ†’AC) onto Diamonds, Hearts+Spades thrown beneath. All 4 blocks in Mnemonica NDO order!';
+        document.getElementById('mn-status').innerText='Step 3: Clubs reversed (AC→KC becomes KC→AC) onto Diamonds, Hearts+Spades thrown beneath. All 4 blocks in Mnemonica NDO order!';
     }
     else if (idx===3) {
         // Step 4: Verify
@@ -2030,7 +2030,7 @@ function pnDoStep(idx){
         var match=deck.every(function(c,i){return c===PART_NDO[i];});
         var r=document.getElementById('pn-result'); r.style.display='block';
         r.innerHTML=match
-            ?'&#10003; Particle NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO â†’ Move Spades to pos 14 â†’ Reverse Bottom 26 = perfect Particle NDO. Ready for the 2 Out-Faro entry.</span>'
+            ?'&#10003; Particle NDO confirmed!<br><span style="font-size:0.6rem;color:#aaa;">US NDO → Move Spades to pos 14 → Reverse Bottom 26 = perfect Particle NDO. Ready for the 2 Out-Faro entry.</span>'
             :'&#9888; Not Particle NDO. Check steps were performed from US NDO.';
         document.getElementById('pn-status').innerText=match?'Perfect Particle NDO achieved!':'No match.';
         document.getElementById('pn-step-btn').style.display='none';
