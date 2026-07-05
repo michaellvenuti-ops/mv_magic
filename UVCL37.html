@@ -192,16 +192,20 @@
         </div>
     </div>
 
-<!-- Solver Arena UI -->
-<div id="solver-arena" style="position: fixed; top: 20%; right: 5%; width: 300px; background: #0d0d1a; border: 2px solid #00f5d4; border-radius: 12px; padding: 20px; display: none; z-index: 1000; color: white;">
-    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <span style="color:#00f5d4; font-weight:bold;">Stack Solver</span>
-        <button onclick="document.getElementById('solver-arena').style.display='none'">X</button>
+<div class="demo-section">
+    <div class="demo-header">
+        <span>Stack Solver — Find Shuffle Sequences</span>
     </div>
-    <input type="text" id="solve-card" placeholder="Card (e.g., AH)" style="width: 90%; margin-bottom: 10px; padding: 5px;">
-    <input type="number" id="solve-idx" placeholder="Target Index (0-51)" style="width: 90%; margin-bottom: 10px; padding: 5px;">
-    <button onclick="runSolver()" style="width:100%; cursor: pointer; background: #00f5d4; border: none; padding: 10px; font-weight: bold;">Find Path</button>
-    <div id="solver-status" style="margin-top:10px; font-size:0.8rem; color:white;"></div>
+    <div class="demo-description">
+        Input target cards and positions. The solver uses a BFS search to find the shortest sequence of 
+        <span>Faro In, Faro Out, or Cut</span> operations to reach your goal.
+    </div>
+    <div class="solver-controls">
+        <input type="text" id="solve-card" placeholder="Card (e.g., AH)" style="background:#222; color:#fff; border:1px solid #444; padding:5px; margin:5px;">
+        <input type="number" id="solve-idx" placeholder="Target Index (0-51)" style="background:#222; color:#fff; border:1px solid #444; padding:5px; margin:5px;">
+        <button onclick="runSolver()" style="background:#d90429; color:white; border:none; padding:5px 15px; cursor:pointer;">RUN SOLVER</button>
+    </div>
+    <div id="solver-status" style="margin-top:10px; font-size:0.75rem; color:#00f5d4; font-family:monospace;"></div>
 </div>
 
 <!-- Button to trigger it (Place this in your sidebar/controls area) -->
@@ -2391,35 +2395,35 @@ function runStackCompare() {
         '<span style="color:var(--accent);">&#9679; ' + mismatches + ' different</span>';
 }
 
-// --- SOLVER LOGIC ---
 async function runSolver() {
-    const card = document.getElementById('solve-card').value;
+    const card = document.getElementById('solve-card').value.trim();
     const targetIdx = parseInt(document.getElementById('solve-idx').value);
     const status = document.getElementById('solver-status');
     
-    status.innerText = "Searching...";
+    status.innerText = "Searching... (Limit: 8 moves)";
     
-    // BFS Solver
+    // We use a broader queue and a depth limit of 8
     let queue = [{ d: [...deck], path: [] }];
     let visited = new Set();
-    let limit = 6; // Max move depth
+    let limit = 8; 
     
     while(queue.length > 0) {
         let { d, path } = queue.shift();
         
-        if(d.indexOf(card) === targetIdx) {
-            status.innerText = "Found: " + path.join(" -> ");
+        // Check if card is at the target index
+        if(d[targetIdx] === card) {
+            status.innerText = "Path found: " + path.join(" -> ");
             return;
         }
         
         if(path.length < limit) {
-            let nextMoves = [
+            let moves = [
                 { d: performFaro(d, 'OUT'), m: 'FaroOut' },
                 { d: performFaro(d, 'IN'), m: 'FaroIn' },
                 { d: [...d.slice(1), d[0]], m: 'Cut' }
             ];
             
-            for(let move of nextMoves) {
+            for(let move of moves) {
                 let key = move.d.join(',');
                 if(!visited.has(key)) {
                     visited.add(key);
@@ -2428,7 +2432,7 @@ async function runSolver() {
             }
         }
     }
-    status.innerText = "No path found in 6 moves.";
+    status.innerText = "No path found within depth limit.";
 }
 
 </script>
