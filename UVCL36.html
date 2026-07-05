@@ -2089,22 +2089,22 @@ function showJonah(num) {
 
     if (num === 1) {
         document.getElementById('jonah-desc').innerHTML =
-            '<strong style="color:var(--gold);">Demo 1 &mdash; 9♣ on Top, User Dealt First:</strong><br>' +
+            '<strong style="color:var(--gold);">Demo 1 &mdash; 9♠ on Top, Participant Dealt First:</strong><br>' +
             'Loads the Particle stack and extracts positions 20–30 (11 cards), removing the 7♥ to leave a clean 10-card bank. ' +
-            'The 9♣ sits at the top of the bank. Cards are dealt one at a time: <strong>User first, then Dealer.</strong> ' +
-            'The 9♣ (card 1) goes straight to the User. ' +
-            '<span style="color:#8B5CF6;">Whoever holds the 9♣ is doomed &mdash; the User loses.</span>';
-        document.getElementById('jonah-p1-label').innerText = 'USER ← deals first';
+            'The 9♠ sits at the top of the bank. Cards are dealt one at a time: <strong>User first, then Dealer.</strong> ' +
+            'The 9♠ (card 1) goes straight to the User. ' +
+            '<span style="color:#8B5CF6;">Whoever holds the 9♠ is doomed &mdash; the User loses.</span>';
+        document.getElementById('jonah-p1-label').innerText = 'Participant ← deals first';
         document.getElementById('jonah-p2-label').innerText = 'DEALER';
         document.getElementById('jonah-status').innerText = 'Demo 1: Click Load Particle Stack to begin.';
     } else {
         document.getElementById('jonah-desc').innerHTML =
-            '<strong style="color:var(--gold);">Demo 2 &mdash; 9♣ on Bottom, Dealer Dealt First:</strong><br>' +
+            '<strong style="color:var(--gold);">Demo 2 &mdash; 9♠ on Bottom, Dealer Dealt First:</strong><br>' +
             'Same 10-card bank from Particle positions 20–30 (7♥ removed). ' +
-            'Bank is reversed so the 9♣ sits on the bottom. Cards are dealt one at a time: <strong>Dealer first, then User.</strong> ' +
-            'The Dealer receives the last card (bottom deal) on their final card &mdash; the 9♣. ' +
-            '<span style="color:#8B5CF6;">Whoever holds the 9♣ is doomed &mdash; the Dealer Wins.</span>';
-        document.getElementById('jonah-p1-label').innerText = 'USER';
+            'Bank is reversed so the 9♠ sits on the bottom. Cards are dealt one at a time: <strong>Dealer first, then Participant.</strong> ' +
+            'The Participant receives the last card (bottom deal) on their final card &mdash; the 9♠. ' +
+            '<span style="color:#8B5CF6;">Whoever holds the 9♠ is doomed &mdash; the Dealer Wins.</span>';
+        document.getElementById('jonah-p1-label').innerText = 'PARTICIPANT';
         document.getElementById('jonah-p2-label').innerText = 'DEALER ← deals first';
         document.getElementById('jonah-status').innerText = 'Demo 2: Click Load Particle Stack to begin.';
     }
@@ -2122,24 +2122,19 @@ function jonahLoad() {
 
     var workingBank;
     if (jonahDemoNum === 1) {
-        // 9C on top (natural order), User dealt first: U,D,U,D,U,D,U,D,U,D
+        // 9S on top (natural order), User dealt first: U,D,U,D,U,D,U,D,U,D
         workingBank = jonahBank.slice();
         jonahDealOrder = [];
         for (var i = 0; i < 10; i++) {
             jonahDealOrder.push({ hand: (i%2===0 ? 1 : 2), card: workingBank[i] });
         }
     } else {
-        // 9C on bottom (reversed bank), Dealer dealt first: D,U,D,U,D,U,D,U then bottom deal D
+        // 9S on bottom (reversed bank), Dealer dealt first: D,U,D,U,D,U,D,U,D,U
         workingBank = jonahBank.slice().reverse();
         jonahDealOrder = [];
-        // First 8 cards: D,U alternating
-        for (var i = 0; i < 8; i++) {
+        for (var i = 0; i < 10; i++) {
             jonahDealOrder.push({ hand: (i%2===0 ? 2 : 1), card: workingBank[i] });
         }
-        // Card 9 (index 8) goes to User
-        jonahDealOrder.push({ hand: 1, card: workingBank[8] });
-        // Card 10 (index 9 = bottom = 9C) goes to Dealer as bottom deal
-        jonahDealOrder.push({ hand: 2, card: workingBank[9] });
     }
 
     // Build step tiles
@@ -2148,13 +2143,13 @@ function jonahLoad() {
     jonahDealOrder.forEach(function(step, i) {
         var t = document.createElement('div');
         t.id = 'jonah-tile-' + i;
-        var isJonah = step.card === '9C';
+        var isJonah = step.card === '9S';
         t.style.cssText = 'padding:4px 6px; border-radius:4px; font-size:0.5rem; font-weight:bold;' +
             'border:1px solid ' + (isJonah ? '#8B5CF6' : '#333') + '; background:#111;' +
             'color:' + (isJonah ? '#8B5CF6' : '#444') + '; text-align:center; min-width:36px;';
         t.innerHTML = '<div style="font-size:0.4rem;">' + (i+1) + '</div>' +
             step.card + '<br><span style="font-size:0.4rem;">' +
-            (step.hand===1 ? 'USER' : 'DEALER') + '</span>';
+            (step.hand===1 ? 'PARTICIPANT' : 'DEALER') + '</span>';
         tdiv.appendChild(t);
     });
 
@@ -2199,7 +2194,7 @@ function jonahDealStep() {
     }
 
     jonahDealIdx++;
-    var recipient = step.hand === 1 ? 'User' : 'Dealer';
+    var recipient = step.hand === 1 ? 'Participant' : 'Dealer';
     var msg = 'Card ' + jonahDealIdx + ': ' + step.card + ' → ' + recipient;
     if (isJonah) msg += ' — &#9760; THE JONAH CARD!';
     if (isBottomDeal) msg += ' (Bottom Deal)';
@@ -2207,15 +2202,15 @@ function jonahDealStep() {
 
     if (isJonah) {
         setTimeout(function() {
-            var loser = step.hand === 1 ? 'USER' : 'DEALER';
-            var winner = step.hand === 1 ? 'DEALER' : 'USER';
+            var loser = step.hand === 1 ? 'Participant' : 'DEALER';
+            var winner = step.hand === 1 ? 'DEALER' : 'Participant';
             document.getElementById('jonah-reveal').style.display = 'block';
             document.getElementById('jonah-reveal').innerHTML =
-                '&#9760; The 9♣ (Jonah) went to the <strong>' + loser + '</strong>.<br>' +
+                '&#9760; The 9♠ (Jonah) went to the <strong>' + loser + '</strong>.<br>' +
                 '<span style="font-size:0.6rem;color:#aaa;">' +
                 'The ' + loser + ' is doomed — their hand cannot win. The ' + winner + ' wins.<br>' +
                 'This is guaranteed by the Particle stack structure at positions 20–30 — ' +
-                'the 9♣ always lands in the same position every time.</span>';
+                'the 9♠ always lands in the same position every time.</span>';
         }, 300);
     }
 
