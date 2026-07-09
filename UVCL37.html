@@ -194,8 +194,7 @@
 
 <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
     <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK SOLVER</span>
-    <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-    <button onclick="showSolverDemo()"  style="padding: var(--pad-small);">Solver Arena</button>
+    <button onclick="showSolverDemo()" style="padding: var(--pad-small); width:100%;">Solver Arena</button>
 </div>
 
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr 1fr; gap:5px;">
@@ -396,11 +395,11 @@
         </div>
 
         <!-- Legend -->
-        <div style="display:flex; gap:10px; margin-bottom:10px; font-size:0.5rem; flex-wrap:wrap;">
-            <span style="background:rgba(0,200,100,0.25); border:1px solid #0c3; padding:1px 6px; border-radius:3px; color:#0c3;">Match</span>
-            <span style="background:rgba(255,183,3,0.2); border:1px solid var(--gold); padding:1px 6px; border-radius:3px; color:var(--gold);">Same value, diff suit</span>
-            <span style="background:rgba(217,4,41,0.2); border:1px solid var(--accent); padding:1px 6px; border-radius:3px; color:var(--accent);">Different card</span>
-            <span style="color:#aaa;">Positions where both stacks agree are shown in green.</span>
+        <div style="display:flex; gap:6px; margin-bottom:10px; font-size:0.5rem; flex-wrap:wrap;">
+            <span style="background:rgba(0,200,100,0.25); border:1px solid #0c3; padding:1px 6px; border-radius:3px; color:#0c3;">&#9679; Exact match</span>
+            <span style="background:rgba(255,183,3,0.18); border:1px solid var(--gold); padding:1px 6px; border-radius:3px; color:var(--gold);">&#9679; Swap pair &#x21C4;</span>
+            <span style="background:rgba(100,100,255,0.15); border:1px solid #88aaff; padding:1px 6px; border-radius:3px; color:#88aaff;">&#9679; Same value</span>
+            <span style="background:rgba(217,4,41,0.2); border:1px solid var(--accent); padding:1px 6px; border-radius:3px; color:var(--accent);">&#9679; Different</span>
         </div>
 
         <!-- Comparison table -->
@@ -727,15 +726,28 @@
 
 <!-- ============ SOLVER ARENA ============ -->    
 <div id="solver-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-       <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">STACK SOLVER ARENA</span>
-       <input type="text" id="solve-card" placeholder="Target Card (e.g. AH)" style="width:100%; padding:8px; margin-bottom:5px; background:#000; color:#fff; border:1px solid #333;">
-       <input type="number" id="solve-idx" placeholder="Target Position (0-51)" style="width:100%; padding:8px; margin-bottom:10px; background:#000; color:#fff; border:1px solid #333;">
-    
-       <button onclick="runSolver()" style="width:100%; padding:10px; background:var(--gold); color:#000; font-weight:bold; border:none; cursor:pointer;">RUN SOLVER</button>
-       <div id="solver-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Stack Solver</span>
+        <button onclick="document.getElementById('solver-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
     </div>
-</div>    
+    <div style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.6;">
+        Enter a target card and the position you want it to land at. The solver uses BFS to find the shortest sequence of Faro OUT, Faro IN, and single-card cuts needed to move that card to that position from the current deck.
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap; align-items:flex-end;">
+        <div style="flex:1; min-width:100px;">
+            <div style="font-size:0.5rem; color:var(--gold); margin-bottom:3px; text-transform:uppercase;">Target Card</div>
+            <input type="text" id="solve-card" placeholder="e.g. AH, KS, 10D" style="width:100%; background:#111; color:#00f5d4; border:1px solid #555; border-radius:3px; padding:5px; font-size:0.65rem; box-sizing:border-box;">
+        </div>
+        <div style="flex:1; min-width:100px;">
+            <div style="font-size:0.5rem; color:var(--gold); margin-bottom:3px; text-transform:uppercase;">Target Position (1&ndash;52)</div>
+            <input type="number" id="solve-pos" min="1" max="52" placeholder="e.g. 1 = top" style="width:100%; background:#111; color:#00f5d4; border:1px solid #555; border-radius:3px; padding:5px; font-size:0.65rem; box-sizing:border-box;">
+        </div>
+        <button onclick="runSolver()" style="border-color:var(--gold); color:var(--gold); padding:5px 14px; white-space:nowrap;">&#9654; Solve</button>
+    </div>
+    <div id="solver-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em; margin-bottom:8px;"></div>
+    <div id="solver-result" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.65rem; color:var(--gold); line-height:1.8;"></div>
+</div>
+    
 <!-- ============ ARONSON STAY-STACK ARENA ============ -->
 <div id="aronson-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -2342,29 +2354,63 @@ function runStackCompare() {
     document.getElementById('compare-left-header').innerText = leftLabel;
     document.getElementById('compare-right-header').innerText = rightLabel;
 
+    // ── Pre-compute swap pairs ─────────────────────────────────────────────
+    // A swap pair: leftStack[i]=X, rightStack[i]=Y,
+    //              leftStack[j]=Y, rightStack[j]=X  (for some j != i)
+    var leftPos = {}, rightPos = {};
+    for (var k=0; k<52; k++) {
+        leftPos[leftStack[k]] = k;
+        rightPos[rightStack[k]] = k;
+    }
+    var swapRows = new Set();
+    var swapPartner = {};  // index -> partner index
+    var seenSwap = new Set();
+    for (var i=0; i<52; i++) {
+        if (seenSwap.has(i)) continue;
+        var lc = leftStack[i], rc = rightStack[i];
+        if (lc === rc) continue;
+        // Is rc in leftStack at some position j where leftStack[j]=rc AND rightStack[j]=lc?
+        var j = leftPos[rc];
+        if (j !== undefined && j !== i && rightStack[j] === lc && !seenSwap.has(j)) {
+            swapRows.add(i);
+            swapRows.add(j);
+            swapPartner[i] = j;
+            swapPartner[j] = i;
+            seenSwap.add(i);
+            seenSwap.add(j);
+        }
+    }
+
     var tbody = document.getElementById('compare-tbody');
     tbody.innerHTML = '';
 
-    var exactMatches = 0, valueMatches = 0, mismatches = 0;
+    var exactMatches = 0, swapPairs = 0, valueMatches = 0, mismatches = 0;
 
     for (var i = 0; i < 52; i++) {
         var lc = leftStack[i];
         var rc = rightStack[i];
         var lv = cardVal(lc), rv = cardVal(rc);
-        var ls = cardSuit(lc), rs = cardSuit(rc);
-
-        var isExact = lc === rc;
-        var isSameVal = !isExact && lv === rv;
         var lRed = isRed(lc), rRed = isRed(rc);
 
-        var rowBg, lcColor, rcColor;
+        var isExact   = lc === rc;
+        var isSwap    = !isExact && swapRows.has(i);
+        var isSameVal = !isExact && !isSwap && lv === rv;
+
+        var rowBg, lcColor, rcColor, marker = '';
         if (isExact) {
             rowBg = 'rgba(0,200,100,0.15)';
             lcColor = '#00c864'; rcColor = '#00c864';
             exactMatches++;
-        } else if (isSameVal) {
-            rowBg = 'rgba(255,183,3,0.12)';
+        } else if (isSwap) {
+            rowBg = 'rgba(255,183,3,0.13)';
             lcColor = 'var(--gold)'; rcColor = 'var(--gold)';
+            if (swapPartner[i] > i) {
+                swapPairs++;
+                marker = ' <span style="font-size:0.45rem;color:#888;">⇄ pos '+(swapPartner[i]+1)+'</span>';
+            }
+        } else if (isSameVal) {
+            rowBg = 'rgba(100,100,255,0.1)';
+            lcColor = '#88aaff'; rcColor = '#88aaff';
             valueMatches++;
         } else {
             rowBg = 'rgba(217,4,41,0.08)';
@@ -2376,71 +2422,114 @@ function runStackCompare() {
         var tr = document.createElement('tr');
         tr.style.background = rowBg;
         tr.style.borderBottom = '1px solid #1a1a1a';
-
-        tr.innerHTML = '<td style="padding:3px 6px; text-align:center; color:#555; font-size:0.5rem;">' + (i+1) + '</td>' +
-            '<td style="padding:3px 10px; text-align:center; font-weight:bold; color:' + lcColor + '; font-size:0.6rem;">' + lc + '</td>' +
+        tr.innerHTML =
+            '<td style="padding:3px 6px; text-align:center; color:#555; font-size:0.5rem;">' + (i+1) + '</td>' +
+            '<td style="padding:3px 10px; text-align:center; font-weight:bold; color:' + lcColor + '; font-size:0.6rem;">' + lc + marker + '</td>' +
             '<td style="padding:3px 10px; text-align:center; font-weight:bold; color:' + rcColor + '; font-size:0.6rem;">' + rc + '</td>';
-
         tbody.appendChild(tr);
     }
 
     document.getElementById('compare-summary').innerHTML =
         '<span style="color:#00c864;">&#9679; ' + exactMatches + ' exact matches</span> &nbsp;' +
-        '<span style="color:var(--gold);">&#9679; ' + valueMatches + ' same value</span> &nbsp;' +
+        '<span style="color:var(--gold);">&#9679; ' + swapPairs + ' swap pairs (' + (swapPairs*2) + ' rows)</span> &nbsp;' +
+        '<span style="color:#88aaff;">&#9679; ' + valueMatches + ' same value</span> &nbsp;' +
         '<span style="color:var(--accent);">&#9679; ' + mismatches + ' different</span>';
 }
 
-function toggleSolverUI() {
-    const ui = document.getElementById('solver-ui');
-    ui.style.display = ui.style.display === 'none' ? 'block' : 'none';
-}
-    
 function showSolverDemo() {
     document.getElementById('solver-arena').style.display = 'block';
     document.getElementById('solver-arena').scrollIntoView({behavior:'smooth', block:'nearest'});
-    document.getElementById('solver-tbody').innerHTML = '';
-    document.getElementById('solver-status').innerText = 'Ready. Enter a target card and position.';
+    document.getElementById('solver-status').innerText = 'Ready. Enter a target card and target position (1-52), then click Solve.';
+    document.getElementById('solver-result').style.display = 'none';
 }
 
-async function runSolver() {
-    const card = document.getElementById('solve-card').value.trim();
-    const targetIdx = parseInt(document.getElementById('solve-idx').value);
-    const status = document.getElementById('solver-status');
-    
-    status.innerText = "Searching... (Please wait)";
-    
-    // Breadth-First Search (BFS)
-    let queue = [{ d: [...deck], path: [] }];
-    let visited = new Set();
-    let limit = 7; // Keep this low to prevent browser lag
-    
-    while(queue.length > 0) {
-        let { d, path } = queue.shift();
-        
-        // Success condition
-        if(d[targetIdx] === card) {
-            status.innerHTML = '<span style="color:#00f5d4;">SUCCESS:</span> ' + path.join(" → ");
-            logMove('Solver: Found path to ' + card + ' at pos ' + targetIdx + ': ' + path.join(', '));
-            return;
+function runSolver() {
+    var cardInput = document.getElementById('solve-card').value.trim().toUpperCase();
+    var posInput = parseInt(document.getElementById('solve-pos').value);
+    var status = document.getElementById('solver-status');
+    var result = document.getElementById('solver-result');
+
+    // Validate card
+    if (!cardInput) { status.innerText = 'Please enter a target card (e.g. AH, KS, 10D).'; return; }
+    if (!deck.includes(cardInput)) { status.innerText = 'Card "' + cardInput + '" not found in current deck. Check spelling.'; return; }
+    if (isNaN(posInput) || posInput < 1 || posInput > 52) { status.innerText = 'Please enter a target position between 1 and 52.'; return; }
+
+    var targetIdx = posInput - 1; // convert to 0-based
+
+    // Check if already there
+    if (deck[targetIdx] === cardInput) {
+        status.innerText = cardInput + ' is already at position ' + posInput + '. No moves needed!';
+        result.style.display = 'none';
+        return;
+    }
+
+    status.innerText = 'Searching... (BFS up to depth 8)';
+    result.style.display = 'none';
+
+    // Helper faro functions (local, don't modify deck)
+    function doFaro(d, type) {
+        var top = d.slice(0,26), bot = d.slice(26), res = [];
+        for (var i=0; i<26; i++) {
+            if (type==='OUT') { res.push(top[i]); res.push(bot[i]); }
+            else { res.push(bot[i]); res.push(top[i]); }
         }
-        
-        if(path.length < limit) {
-            let moves = [
-                { d: performFaro(d, 'OUT'), m: 'FaroOut' },
-                { d: performFaro(d, 'IN'), m: 'FaroIn' },
-                { d: [...d.slice(1), d[0]], m: 'Cut' }
+        return res;
+    }
+    function doCut(d, n) { return d.slice(n).concat(d.slice(0,n)); }
+
+    // BFS
+    var queue = [{ d: deck.slice(), path: [] }];
+    var visited = new Set();
+    visited.add(deck.join(','));
+    var found = null;
+    var limit = 8;
+
+    // Use setTimeout to avoid freezing the browser
+    function bfsStep() {
+        var batch = 0;
+        while (queue.length > 0 && batch < 5000) {
+            batch++;
+            var item = queue.shift();
+            var d = item.d, path = item.path;
+
+            if (d[targetIdx] === cardInput) {
+                found = path;
+                break;
+            }
+            if (path.length >= limit) continue;
+
+            var moves = [
+                { d: doFaro(d,'OUT'), m: 'Faro OUT' },
+                { d: doFaro(d,'IN'),  m: 'Faro IN' },
+                { d: doCut(d,1),      m: 'Cut 1 (Shift Left)' },
+                { d: doCut(d,26),     m: 'Cut 26' },
+                { d: doCut(d,51),     m: 'Cut 51 (Shift Right)' }
             ];
-            
-            for(let move of moves) {
-                let key = move.d.join(',');
-                if(!visited.has(key)) {
+            for (var mi=0; mi<moves.length; mi++) {
+                var key = moves[mi].d.join(',');
+                if (!visited.has(key)) {
                     visited.add(key);
-                    queue.push({ d: move.d, path: [...path, move.m] });
+                    queue.push({ d: moves[mi].d, path: path.concat(moves[mi].m) });
                 }
             }
         }
+
+        if (found !== null) {
+            status.innerText = 'Solution found in ' + found.length + ' move(s)!';
+            result.style.display = 'block';
+            result.innerHTML = '<strong>' + cardInput + ' &rarr; position ' + posInput + '</strong><br>' +
+                found.map(function(m,i){ return '<span style="color:#00f5d4;">'+(i+1)+'.</span> '+m; }).join('<br>') +
+                '<br><br><span style="font-size:0.55rem;color:#aaa;">Click Solve again after each move to verify, or use the buttons above to execute the moves.</span>';
+            logMove('Solver: ' + cardInput + ' to pos ' + posInput + ' in ' + found.length + ' moves: ' + found.join(', '));
+        } else if (queue.length === 0) {
+            status.innerText = 'No solution found within ' + limit + ' moves. Try a simpler target.';
+        } else {
+            status.innerText = 'Searching... ' + visited.size + ' states checked so far.';
+            setTimeout(bfsStep, 10);
+            return;
+        }
     }
-    status.innerText = "No path found within depth limit.";
+    setTimeout(bfsStep, 10);
 }
 
 </script>
@@ -2553,6 +2642,27 @@ async function runSolver() {
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128228; Export</td><td style="padding:6px 8px;">Opens a prompt with the current deck as a JSON array. Copy it to save or share your stack.</td></tr>
             <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128229; Import</td><td style="padding:6px 8px;">Paste a JSON array to restore a previously saved deck state.</td></tr>
             <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">&#128190; Save Session</td><td style="padding:6px 8px;">Saves the current deck to browser local storage. The deck will persist between page reloads.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK COMPARE</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Compare Two Stacks</td><td style="padding:6px 8px;">Select any two stacks from the dropdowns and click Compare to see a side-by-side 52-row table. Rows are color-coded: <span style="color:#00c864;">green</span> = exact match, <span style="color:var(--gold);">gold</span> = swap pair (the two cards have exchanged positions between the stacks, shown with a &#x21C4; arrow), <span style="color:#88aaff;">blue</span> = same value different suit, <span style="color:var(--accent);">red</span> = completely different. The summary line counts all four categories including the number of swap pairs.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">STACK SOLVER</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Stack Solver</td><td style="padding:6px 8px;">Enter a target card (e.g. AH) and a target position (1&ndash;52). The solver uses Breadth-First Search to find the shortest sequence of Faro OUT, Faro IN, and cuts needed to move that card to that position from the current deck state. Searches up to 8 moves deep. Runs asynchronously so the page stays responsive.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">JONAH POKER DEMOS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="border-bottom:1px solid #333;"><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Demo 1: 9&#9827; on Top</td><td style="padding:6px 8px;">Loads the Particle stack, extracts positions 20&ndash;30 (11 cards), removes the 7&hearts; leaving a 10-card bank with 9&clubs; on top. Deals User first &mdash; 9&clubs; goes straight to the User. The other 9 cards are randomized each load so the hand looks different every time, but the Jonah always lands in the same spot.</td></tr>
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Demo 2: 9&#9827; on Bottom</td><td style="padding:6px 8px;">Same 10-card bank reversed so 9&clubs; is on the bottom. Deals Dealer first for 9 cards, then the 10th card is bottom-dealt to the Dealer &mdash; the 9&clubs;. The Dealer is doomed.</td></tr>
+        </table>
+
+        <div style="color:var(--gold); font-size:0.65rem; margin-bottom:6px;">MECHANICS</div>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr><td style="padding:6px 8px; color:var(--gold); white-space:nowrap;">Cut to Selected Card</td><td style="padding:6px 8px;">Click any card in the deck to select it (it highlights gold), then click this button. The deck cuts so that card becomes position 1 (top of deck). The session log records which card was cut to and its original position.</td></tr>
         </table>
 
         <div style="text-align:center; margin-top:20px;">
