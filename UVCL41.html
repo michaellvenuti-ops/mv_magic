@@ -245,7 +245,17 @@
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
         <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card</button>
-        <button onclick="runBerglasSolver()">BERGLAS SOLVER</button>
+
+<div id="solver-arena" style="display:none; padding:15px; background:#222; border:1px solid #444;">
+    <input type="text" id="solve-card" placeholder="Card (e.g. AH)">
+    <input type="number" id="solve-pos" placeholder="Position (1-52)">
+    <button onclick="runBerglasSolver()">SOLVE</button>
+    <div id="solver-status"></div>
+</div>
+
+    <div id="solver-status" style="color:white; font-size:0.8rem; margin-top:10px;"></div>
+    <div id="solver-result" style="display:none; margin-top:10px; color:#ccc;"></div>
+</div>
         
 
 <div class="toolbox">
@@ -2611,37 +2621,35 @@ function milkShuffle(n) {
 }
     
 function runBerglasSolver() {
-    var cardInput = document.getElementById('solve-card').value.trim().toUpperCase();
+    // Sanitize: Remove all spaces and ensure uppercase
+    var cardInput = document.getElementById('solve-card').value.trim().toUpperCase().replace(/\s+/g, '');
     var targetPos = parseInt(document.getElementById('solve-pos').value);
+    
+    // Find index
     var currentIdx = deck.indexOf(cardInput);
     
-    if (currentIdx === -1) { alert("Card not in deck!"); return; }
+    // Debug helper
+    if (currentIdx === -1) {
+        console.log("Deck currently looks like this:", deck);
+        alert("Could not find '" + cardInput + "' in the deck. Check formatting!");
+        return;
+    }
 
-    // Calculate cut
+    // Mathematical logic:
+    // If card is at index 2 and we want it at index 0 (Pos 1):
+    // shiftNeeded = (1 - 1) - 2 = -2
+    // cutValue = (-2 + 52) % 52 = 50. 
+    // Cutting 50 cards brings index 2 to position 0.
     var shiftNeeded = (targetPos - 1) - currentIdx;
     var cutValue = (shiftNeeded + 52) % 52;
 
     if (cutValue === 0) {
         document.getElementById('solver-status').innerText = "Already in position!";
     } else {
-        // Highlight the cut point in the deck UI
         highlightCutPoint(cutValue);
-        
         document.getElementById('solver-status').innerHTML = 
             `<strong>Berglas Solution:</strong> Cut ${cutValue} cards from top to bottom. ` +
             `<button onclick="performQuickCut(${cutValue})">Execute</button>`;
-    }
-}
-
-function highlightCutPoint(n) {
-    // Clear previous highlights
-    document.querySelectorAll('.card').forEach(el => el.classList.remove('highlight-cut'));
-    
-    // Highlight the card at the cut position (the card that will become the new top)
-    const deckContainer = document.getElementById('deck');
-    if (deckContainer.children[n]) {
-        deckContainer.children[n].classList.add('highlight-cut');
-        deckContainer.children[n].scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 }
 
