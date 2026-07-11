@@ -2587,38 +2587,48 @@ function runSolver() {
 
 function processDialSequence() {
     const input = document.getElementById('dialSequence').value;
-    // This finds: digits (\d+), text inside (), or text inside []
-    const tokens = input.match(/\d+|(?<=\().*?(?=\))|(?<=\[).*?(?=\])/g);
+    // Regex finds: digits (\d+), or sequences in ()
+    const tokens = input.match(/\d+|\(.*?\)/g); 
     
     if (!tokens) return;
     saveState();
     
     tokens.forEach(token => {
-        let count = parseInt(token);
-        if (input.includes(`[${token}]`)) milkShuffle(count);
-        else if (input.includes(`(${token})`)) tossCards(count);
-        else runCards(count);
+        if (token.startsWith('(')) {
+            // It's a Toss
+            let count = parseInt(token.replace(/\D/g, ''));
+            tossCards(count);
+        } else {
+            // It's a Run
+            runCards(parseInt(token));
+        }
     });
-    logMove(`Executed Sequence: ${input}`);
     renderDeck();
 }
 
-// Logic implementations
+// Run: Reverse the top N cards into your hand
 function runCards(n) {
+    if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n).reverse();
-    deck = packet.concat(deck); 
+    deck = packet.concat(deck);
 }
 
+// Toss: Take top N cards and put them on top (effectively a cut of N)
 function tossCards(n) {
+    if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n);
     deck = packet.concat(deck);
 }
 
+// Milk: Milk top and bottom, then run remaining, then toss
 function milkShuffle(n) {
+    if (n < 2) return;
     let top = deck.shift();
     let bot = deck.pop();
-    let mid = deck.splice(0, n - 2);
-    deck = [top, ...mid, bot, ...deck];
+    // Run n-2 cards
+    let packet = deck.splice(0, n - 2).reverse();
+    // Reconstruct: (packet) + top + bot + remaining
+    deck = [...packet, top, bot, ...deck];
 }
     
 window.performQuickCut = function(n) {
