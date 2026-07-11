@@ -2621,7 +2621,10 @@ function runBerglasSolver() {
     var targetPos = parseInt(document.getElementById('solve-pos').value);
     var currentIdx = deck.indexOf(cardInput);
     
-    if (currentIdx === -1) { alert("Card not in deck!"); return; }
+    if (currentIdx === -1) { 
+        document.getElementById('solver-status').innerText = "Card not found in deck!"; 
+        return; 
+    }
 
     var shiftNeeded = (targetPos - 1) - currentIdx;
     var cutValue = (shiftNeeded + 52) % 52;
@@ -2629,25 +2632,32 @@ function runBerglasSolver() {
     if (cutValue === 0) {
         document.getElementById('solver-status').innerText = "Already in position!";
     } else {
-        // Find the name of the card at index 'cutValue'
+        // Correctly identifying the card at the cut position
+        // If cutValue is 9, the card at index 9 will become the new top card.
         var cutCard = deck[cutValue]; 
         
-        highlightCutPoint(cutValue);
+        // Ensure this string is properly formatted for the browser
+        var statusMsg = `<strong>Berglas Solution:</strong> Cut the deck at the <strong>${cutCard}</strong>.`;
         
-        document.getElementById('solver-status').innerHTML = 
-            `<strong>Berglas Solution:</strong> Cut at the <strong>${cutCard}</strong>. ` +
-            `<button onclick="performQuickCut(${cutValue})">EXECUTE</button>`;
+        document.getElementById('solver-status').innerHTML = statusMsg + 
+            `<br><button onclick="window.performQuickCut(${cutValue})" style="padding:5px; cursor:pointer;">EXECUTE</button>`;
+        
+        highlightCutPoint(cutValue);
     }
 }
 
-    // Make sure this is in your main script area
-function performQuickCut(n) {
+// This MUST be in the global scope of your script
+window.performQuickCut = function(n) {
+    console.log("Executing cut at index:", n); // Debug: Check F12 Console
     saveState();
-    // Move the top 'n' cards to the bottom
+    // n is the number of cards to move from top to bottom
     deck = deck.slice(n).concat(deck.slice(0, n));
     renderDeck();
-    logMove(`Berglas Cut: Cut at card index ${n}`);
-}
+    logMove(`Berglas Cut: Cut at card ${deck[deck.length - 1]}`); // Log the card that moved to the bottom
+    
+    // Clear the solver UI after success
+    document.getElementById('solver-status').innerText = "Move executed!";
+};
     
 // --- CHINESE SHUFFLE GUIDED CULL ---
 
