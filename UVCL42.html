@@ -309,13 +309,19 @@
 </div>
 
 
-   <div style="margin-top:10px; border:1px solid #444; padding:10px; background:#1e1e1e;">
-    <h4 style="color:#aaa; font-size:0.7rem;">CHINESE SHUFFLE</h4>
-    <button onclick="nextChineseCull()" 
-            style="width:100%; padding:8px; background:var(--accent); border:none; cursor:pointer; font-weight:bold;">
-        NEXT CULL STAGE
-    </button>
- </div>
+<div style="margin-top:10px; border:1px solid #444; padding:10px; background:#1e1e1e;">
+    <h4 style="color:#aaa; font-size:0.7rem; margin-bottom:8px;">CHINESE SHUFFLE</h4>
+    <div style="display:flex; gap:5px;">
+        <button onclick="nextChineseCull()" 
+                style="flex-grow:3; padding:8px; background:var(--accent); border:none; cursor:pointer; font-weight:bold;">
+            NEXT CULL STAGE
+        </button>
+        <button onclick="resetCull()" 
+                style="flex-grow:1; padding:8px; background:#444; color:white; border:none; cursor:pointer; font-weight:bold;">
+            RESET
+        </button>
+    </div>
+</div>
 
       
 <div style="background:#1e1e1e; border:1px solid #444; border-radius:4px; padding:10px; margin-top:15px; color:white;">
@@ -2756,22 +2762,28 @@ function stripToRear(criteria) {
 
 // Multi-stage Cull Processor
 let cullStage = 0;
+// Updated Multi-stage Cull Processor
+let cullStage = 0;
 function nextChineseCull() {
-    // Stages based on the "Tetra-Red" instructions (image_c3cfa0.jpg)
     const culls = [
         { desc: "Cull 1: Stripping Aces, 2s, 5s, 7s, 8s, 9s, Kings to rear.", vals: ["A","2","5","7","8","9","K"] },
         { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to rear.", vals: ["4","6","J","5","7","K"] },
         { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to rear.", vals: ["Q","3","A","2","4","7"] },
-        { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to rear.", vals: ["10","8","J","5","Q","2"] }
+        { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to rear.", vals: ["10","8","J","5","Q","2"] },
+        { desc: "Cull 5: Upjog soulmate pairs (9-6-K-3-A-4-7-10-8-J-5-Q-2 pattern). Strip to rear.", vals: [] }, // Manual selection required
+        { desc: "Cull 6: Upjog by suit pattern (Diamonds, Spades, Hearts, Clubs). Strip to rear.", vals: [] }
     ];
     
-    if (cullStage < culls.length) {
+    if (cullStage < 4) { // Culls 1-4 are automated via stripToRear
         saveState();
         stripToRear(culls[cullStage].vals);
         logMove(culls[cullStage].desc);
         cullStage++;
+    } else if (cullStage < 6) { // Culls 5-6 guide the user
+        logMove(culls[cullStage].desc);
+        cullStage++;
     } else {
-        logMove("Chinese Shuffle manual stages (Soulmates/Suits) follow.");
+        logMove("Chinese Shuffle Complete: Tetra-Red Ready.");
         cullStage = 0;
     }
 }
