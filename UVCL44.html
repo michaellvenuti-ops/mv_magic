@@ -2866,6 +2866,7 @@ function nextChineseCull() {
     } else {
         logMove("Chinese Shuffle Complete: Tetra-Red Ready.");
         cullStage = 0;
+        resetDeckView();
     }
 }
 
@@ -2948,6 +2949,26 @@ function prepareCull6() {
     // Log the instruction
     logMove("Cull 6 Setup: Cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
 }  
+
+    function resetDeckView() {
+    // 1. Clear the search input so tracked cards don't stay highlighted
+    document.getElementById('search-input').value = '';
+
+    // 2. Remove all visual classes from the cards in the DOM
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.classList.remove('selected', 'is-tracked', 'dimmed');
+    });
+
+    // 3. Reset any internal logic variables
+    selectedIndex = null;
+
+    // 4. Force a clean re-render of the deck
+    renderDeck();
+    
+    logMove("Display reset: Tetra-Red stack preserved.");
+}
+    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
