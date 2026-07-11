@@ -2787,6 +2787,13 @@ function nextChineseCull() {
         cullStage = 0;
     }
 }
+
+function resetCull() {
+    cullStage = 0; // Reset the counter to the first stage
+    logMove("Chinese Shuffle Reset: Starting over from Cull No. 1.");
+    // Optional: If you have a display element for the current stage, update it here
+    // document.getElementById('cull-display').innerText = "Stage: 1"; 
+}
     
 </script>
 
