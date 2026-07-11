@@ -2923,32 +2923,43 @@ function executeSelectionStrip() {
     renderDeck();
 }
 
-  function prepareCull5() {
-    const soulmates = "9H, 9D, 6S, 6C, KS, KC, 3H, 3D, AS, AC, 4D, 4H, 7C, 7S, 10H, 10D, 8S, 8C, JH, JD, 5H, 5D, QH, QD, 2S, 2C";
+function prepareCull5() {
+    const soulmates = ["9H","9D","6S","6C","KS","KC","3H","3D","AS","AC","4D","4H","7C","7S","10H","10D","8S","8C","JH","JD","5H","5D","QH","QD","2S","2C"];
     
-    // Set the search input
-    document.getElementById('search-input').value = soulmates;
+    // Set the search input so the dimming logic knows we are actively sorting
+    document.getElementById('search-input').value = soulmates.join(', ');
     
-    // Re-render to highlight the cards
+    // We force a render first to build the DOM, then select the elements
     renderDeck();
     
-    // Log the instructions
-    logMove("Cull 5 Setup: Soulmate cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
-}  
- 
+    // Find all card divs and automatically select the matching ones
+    const cardElements = document.querySelectorAll('.card');
+    deck.forEach((card, i) => {
+        if (soulmates.includes(card)) {
+            cardElements[i].classList.add('selected');
+        }
+    });
+    
+    logMove("Cull 5 Automated: Soulmates automatically selected. Simply click STRIP TO TOP to proceed.");
+}
+
 function prepareCull6() {
-    // The specific card list for Cull 6 provided by the user
-    const suitPattern = "9S, 6H, KD, 3C, AD, 4C, 7H, 10S, 8H, JS, 5C, QS, 2D, 9H, 6C, KS, 3D, AS, 4D, 7C, 10H, 8C, JH, 5D, QH, 2S";
+    const suitPattern = ["9S","6H","KD","3C","AD","4C","7H","10S","8H","JS","5C","QS","2D","9H","6C","KS","3D","AS","4D","7C","10H","8C","JH","5D","QH","2S"];
     
-    // Set the search input
-    document.getElementById('search-input').value = suitPattern;
+    // Set the search input for the dimming logic
+    document.getElementById('search-input').value = suitPattern.join(', ');
     
-    // Refresh the deck display to highlight these cards
     renderDeck();
     
-    // Log the instruction
-    logMove("Cull 6 Setup: Cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
-}  
+    const cardElements = document.querySelectorAll('.card');
+    deck.forEach((card, i) => {
+        if (suitPattern.includes(card)) {
+            cardElements[i].classList.add('selected');
+        }
+    });
+    
+    logMove("Cull 6 Automated: Suit pattern automatically selected. Simply click STRIP TO TOP to proceed.");
+}
 
     function resetDeckView() {
     // 1. Clear the search input so tracked cards don't stay highlighted
