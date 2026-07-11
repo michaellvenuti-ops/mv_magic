@@ -328,6 +328,10 @@
                 style="background:var(--accent); color:white; padding:8px; border:none; cursor:pointer; font-weight:bold;">
              STRIP SELECTED TO TOP OF FACE UP DECK
         </button>
+        <button onclick="prepareCull5()" 
+        style="background:var(--gold); color:black; padding:5px; margin-top:5px; border:none; cursor:pointer; font-size:0.7rem;">
+        PREPARE CULL 5 (Highlight Soulmates)
+        </button>
     </div>
 </div>
 
@@ -2803,17 +2807,20 @@ function nextChineseCull() {
         { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to TOP.", vals: ["4","6","J","5","7","K"] },
         { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to TOP.", vals: ["Q","3","A","2","4","7"] },
         { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to TOP.", vals: ["10","8","J","5","Q","2"] },
-        { desc: "Cull 5: Upjog Red 9s, Black 6s, Black Ks, Red 3s, Black As, Red 4s, Black 7s, Red 10s, Black 8s, Red Js, Red 5s, Red Qs and Black 2s.", vals: [] },
+        { desc: "Cull 5: Soulmates ready for selection. Hold Ctrl/Cmd and click highlighted cards.", vals: [] },
         { desc: "Cull 6: Upjog by suit pattern. Strip manually to TOP.", vals: [] }
     ];
     
     if (cullStage < 4) { 
         saveState();
-        // Now calling your new stripToTop function
         stripToTop(culls[cullStage].vals);
         logMove(culls[cullStage].desc);
         cullStage++;
-    } else if (cullStage < 6) { 
+    } else if (cullStage === 4) { // Triggering the highlight for Stage 5
+        prepareCull5(); 
+        logMove(culls[cullStage].desc);
+        cullStage++;
+    } else if (cullStage === 5) { // Stage 6
         logMove(culls[cullStage].desc);
         cullStage++;
     } else {
@@ -2874,6 +2881,19 @@ function executeSelectionStrip() {
     logMove(`Stripped ${selectedValues.length} selected cards to TOP.`);
     renderDeck();
 }
+
+  function prepareCull5() {
+    const soulmates = "9H, 9D, 6S, 6C, KS, KC, 3H, 3D, AS, AC, 4D, 4H, 7C, 7S, 10H, 10D, 8S, 8C, JH, JD, 5H, 5D, QH, QD, 2S, 2C";
+    
+    // Set the search input
+    document.getElementById('search-input').value = soulmates;
+    
+    // Re-render to highlight the cards
+    renderDeck();
+    
+    // Log the instructions
+    logMove("Cull 5 Setup: Soulmate cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
+}  
     
 </script>
 
