@@ -2636,8 +2636,8 @@ function milkShuffle(n) {
     let bot = deck.pop();
     // Run n-2 cards
     let packet = deck.splice(0, n - 2).reverse();
-    // Reconstruct: (packet) + (rest of deck) + top + bot
-    deck = deck.concat(packet, top, bot);
+    // Fix: bot comes before top (bot was milked second, sits above top in hand)
+    deck = deck.concat(packet, bot, top);
 }
     
 window.performQuickCut = function(n) {
