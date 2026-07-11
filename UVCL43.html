@@ -2766,7 +2766,29 @@ function stripToRear(criteria) {
         }
     });
     
-    deck = remaining.concat(toRear);
+    deck = remaining.concat(toRear);  This puts cards to the rear
+    // Proposed: Stripped cards are placed on top, remaining cards follow (Top)
+    // deck = toRear.concat(remaining);
+    renderDeck();
+}
+
+function stripToTop(criteria) {
+    let toRear = [];
+    let remaining = [];
+    
+    // Sort deck: keep original relative order, but move matching cards to the back
+    deck.forEach(card => {
+        const val = card.replace(/[SHDC]/, ''); // Extract value (e.g., '10', 'A')
+        if (criteria.includes(val)) {
+            toRear.push(card);
+        } else {
+            remaining.push(card);
+        }
+    });
+    
+    // deck = remaining.concat(toRear);  This puts cards to the rear
+    // Proposed: Stripped cards are placed on top, remaining cards follow (Top)
+    deck = toRear.concat(remaining);
     renderDeck();
 }
 
@@ -2782,9 +2804,9 @@ function nextChineseCull() {
         { desc: "Cull 6: Upjog by suit pattern (Diamonds, Spades, Hearts, Clubs). Strip to rear.", vals: [] }
     ];
     
-    if (cullStage < 4) { // Culls 1-4 are automated via stripToRear
+    if (cullStage < 4) { // Culls 1-4 are automated via stripToTop
         saveState();
-        stripToRear(culls[cullStage].vals);
+        stripToTop(culls[cullStage].vals);
         logMove(culls[cullStage].desc);
         cullStage++;
     } else if (cullStage < 6) { // Culls 5-6 guide the user
