@@ -2575,20 +2575,23 @@ function runSolver() {
     setTimeout(bfsStep, 10);
 }
 
-    function handleSingle(type) {
+   function handleSingle(type) {
     const count = parseInt(document.getElementById('dialCount').value);
+    if (isNaN(count)) return;
+    
     saveState();
     if (type === 'RUN') runCards(count);
     else if (type === 'TOSS') tossCards(count);
     else if (type === 'MILK') milkShuffle(count);
-    logMove(`${type} ${count}`);
+    
+    logMove(`${type}: ${count}`);
     renderDeck();
 }
 
 function processDialSequence() {
     const input = document.getElementById('dialSequence').value;
-    // Regex finds: digits (\d+), or sequences in ()
-    const tokens = input.match(/\d+|\(.*?\)/g); 
+    // Matches digits (\d+) or groups in parentheses \((\d+)\)
+    const tokens = input.match(/\d+|\(\d+\)/g); 
     
     if (!tokens) return;
     saveState();
@@ -2606,29 +2609,31 @@ function processDialSequence() {
     renderDeck();
 }
 
-// Run: Reverse the top N cards into your hand
+// Corrected: Run the cards, then toss the remaining deck on top of the run group
 function runCards(n) {
     if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n).reverse();
-    deck = packet.concat(deck);
+    // The deck is tossed ON TOP of the run group
+    deck = deck.concat(packet); 
 }
 
-// Toss: Take top N cards and put them on top (effectively a cut of N)
+// Corrected: Toss N cards from the top to the bottom (preserving order)
 function tossCards(n) {
     if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n);
-    deck = packet.concat(deck);
+    // Tossed as a group, preserving order
+    deck = deck.concat(packet); 
 }
 
-// Milk: Milk top and bottom, then run remaining, then toss
+// Corrected: Milk top and bottom, then run remaining as a group
 function milkShuffle(n) {
     if (n < 2) return;
     let top = deck.shift();
     let bot = deck.pop();
     // Run n-2 cards
     let packet = deck.splice(0, n - 2).reverse();
-    // Reconstruct: (packet) + top + bot + remaining
-    deck = [...packet, top, bot, ...deck];
+    // Reconstruct: (packet) + (rest of deck) + top + bot
+    deck = deck.concat(packet, top, bot);
 }
     
 window.performQuickCut = function(n) {
