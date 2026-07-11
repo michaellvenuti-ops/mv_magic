@@ -245,18 +245,17 @@
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
         <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card</button>
-
-<div id="solver-arena" style="display:none; padding:15px; background:#222; border:1px solid #444;">
-    <input type="text" id="solve-card" placeholder="Card (e.g. AH)">
-    <input type="number" id="solve-pos" placeholder="Position (1-52)">
-    <button onclick="runBerglasSolver()">SOLVE</button>
-    <div id="solver-status"></div>
-</div>
+       <div id="solver-status"></div>
+        <input type="text" id="solve-card" placeholder="Card (e.g. AH)">
+       <input type="number" id="solve-pos" placeholder="Position (1-52)">
+       <button onclick="runBerglasSolver()">SOLVE</button>
+        <div id="solver-status"></div>
 
 
-<div class="toolbox">
+
+
     <button onclick="nextChineseCull()" style="width:100%">Chinese Shuffle: Next Cull</button>
-</div>
+
       
 <div style="background:#1e1e1e; border:1px solid #444; border-radius:4px; padding:10px; margin-top:15px; color:white;">
     <h4 style="margin:0 0 10px 0; font-size:0.7rem; color:var(--gold);">DIALING TOOLBOX</h4>
