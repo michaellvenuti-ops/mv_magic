@@ -2611,8 +2611,16 @@ function processDialSequence() {
 
 // Run: Reverse top N into hand, then place remaining deck ON TOP
 function runCards(n) {
-    let packet = deck.splice(0, n).reverse();
-    deck = deck.concat(packet); // Packet goes to bottom
+    if (n > deck.length) return;
+    // 1. Take the top n cards
+    let packet = deck.splice(0, n);
+    // 2. Reverse them to simulate the run-in-hand
+    packet.reverse();
+    // 3. The remainder of the deck is now 'deck'
+    // 4. The rule: "The deck is then tossed on top of those previously run group"
+    // So: [Remainder] + [Packet]
+    deck = deck.concat(packet);
+    renderDeck();
 }
 
 // Toss/Cut: Move N cards from top to bottom, PRESERVING order
