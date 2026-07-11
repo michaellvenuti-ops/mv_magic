@@ -309,7 +309,13 @@
 </div>
 
 
-    <button onclick="nextChineseCull()" style="width:100%">Chinese Shuffle: Next Cull</button>
+   <div style="margin-top:10px; border:1px solid #444; padding:10px; background:#1e1e1e;">
+    <h4 style="color:#aaa; font-size:0.7rem;">CHINESE SHUFFLE</h4>
+    <button onclick="nextChineseCull()" 
+            style="width:100%; padding:8px; background:var(--accent); border:none; cursor:pointer; font-weight:bold;">
+        NEXT CULL STAGE
+    </button>
+ </div>
 
       
 <div style="background:#1e1e1e; border:1px solid #444; border-radius:4px; padding:10px; margin-top:15px; color:white;">
@@ -2729,24 +2735,43 @@ function runBerglasSolver() {
 
 
     
-// --- CHINESE SHUFFLE GUIDED CULL ---
+// Function to handle the "Strip to Rear" mechanics
+function stripToRear(criteria) {
+    let toRear = [];
+    let remaining = [];
+    
+    // Sort deck: keep original relative order, but move matching cards to the back
+    deck.forEach(card => {
+        const val = card.replace(/[SHDC]/, ''); // Extract value (e.g., '10', 'A')
+        if (criteria.includes(val)) {
+            toRear.push(card);
+        } else {
+            remaining.push(card);
+        }
+    });
+    
+    deck = remaining.concat(toRear);
+    renderDeck();
+}
 
+// Multi-stage Cull Processor
 let cullStage = 0;
 function nextChineseCull() {
+    // Stages based on the "Tetra-Red" instructions (image_c3cfa0.jpg)
     const culls = [
-        "Cull 1: Upjog Aces, 2s, 5s, 7s, 8s, 9s, Kings. Strip to rear.",
-        "Cull 2: Upjog 4s, 6s, Jacks, 5s, 7s, Kings. Strip to rear.",
-        "Cull 3: Upjog Queens, 3s, Aces, 2s, 4s, 7s. Strip to rear.",
-        "Cull 4: Upjog 10s, 8s, Jacks, 5s, Queens, 2s. Strip to rear.",
-        "Cull 5: Upjog soulmate pairs: 9-6-K-3-A-4-7-10-8-J-5-Q-2 pattern. Strip to rear.",
-        "Cull 6: Upjog card 26 down to 1. Strip to rear."
+        { desc: "Cull 1: Stripping Aces, 2s, 5s, 7s, 8s, 9s, Kings to rear.", vals: ["A","2","5","7","8","9","K"] },
+        { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to rear.", vals: ["4","6","J","5","7","K"] },
+        { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to rear.", vals: ["Q","3","A","2","4","7"] },
+        { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to rear.", vals: ["10","8","J","5","Q","2"] }
     ];
     
     if (cullStage < culls.length) {
-        logMove(culls[cullStage]);
+        saveState();
+        stripToRear(culls[cullStage].vals);
+        logMove(culls[cullStage].desc);
         cullStage++;
     } else {
-        logMove("Chinese Shuffle Complete: Tetra-Red Ready.");
+        logMove("Chinese Shuffle manual stages (Soulmates/Suits) follow.");
         cullStage = 0;
     }
 }
