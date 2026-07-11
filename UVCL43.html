@@ -332,6 +332,10 @@
         style="background:var(--gold); color:black; padding:5px; margin-top:5px; border:none; cursor:pointer; font-size:0.7rem;">
         PREPARE CULL 5 (Highlight Soulmates)
         </button>
+        <button onclick="prepareCull6()" 
+        style="background:var(--gold); color:black; padding:5px; margin-top:5px; border:none; cursor:pointer; font-size:0.7rem;">
+        PREPARE CULL 6 (Highlight Soulmates)
+        </button>
     </div>
 </div>
 
@@ -2807,8 +2811,8 @@ function nextChineseCull() {
         { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to TOP.", vals: ["4","6","J","5","7","K"] },
         { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to TOP.", vals: ["Q","3","A","2","4","7"] },
         { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to TOP.", vals: ["10","8","J","5","Q","2"] },
-        { desc: "Cull 5: Soulmates ready for selection. Hold Ctrl/Cmd and click highlighted cards.", vals: [] },
-        { desc: "Cull 6: Upjog by suit pattern. Strip manually to TOP.", vals: [] }
+        { desc: "Cull 5: Soulmates highlighted. Ctrl+Click selected cards, then Strip to TOP.", vals: [] },
+        { desc: "Cull 6: Suit pattern highlighted. Ctrl+Click selected cards, then Strip to TOP.", vals: [] }
     ];
     
     if (cullStage < 4) { 
@@ -2816,11 +2820,14 @@ function nextChineseCull() {
         stripToTop(culls[cullStage].vals);
         logMove(culls[cullStage].desc);
         cullStage++;
-    } else if (cullStage === 4) { // Triggering the highlight for Stage 5
+    } else if (cullStage === 4) { 
+        // Trigger highlight for Cull 5
         prepareCull5(); 
         logMove(culls[cullStage].desc);
         cullStage++;
-    } else if (cullStage === 5) { // Stage 6
+    } else if (cullStage === 5) { 
+        // Trigger highlight for Cull 6
+        prepareCull6();
         logMove(culls[cullStage].desc);
         cullStage++;
     } else {
@@ -2894,7 +2901,20 @@ function executeSelectionStrip() {
     // Log the instructions
     logMove("Cull 5 Setup: Soulmate cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
 }  
+ 
+function prepareCull6() {
+    // The specific card list for Cull 6 provided by the user
+    const suitPattern = "9S, 6H, KD, 3C, AD, 4C, 7H, 10S, 8H, JS, 5C, QS, 2D, 9H, 6C, KS, 3D, AS, 4D, 7C, 10H, 8C, JH, 5D, QH, 2S";
     
+    // Set the search input
+    document.getElementById('search-input').value = suitPattern;
+    
+    // Refresh the deck display to highlight these cards
+    renderDeck();
+    
+    // Log the instruction
+    logMove("Cull 6 Setup: Cards highlighted. Hold Ctrl/Cmd, click all highlighted cards, then click STRIP TO TOP.");
+}  
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
