@@ -2609,20 +2609,16 @@ function processDialSequence() {
     renderDeck();
 }
 
-// Corrected: Run the cards, then toss the remaining deck on top of the run group
+// Run: Reverse top N into hand, then place remaining deck ON TOP
 function runCards(n) {
-    if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n).reverse();
-    // The deck is tossed ON TOP of the run group
-    deck = deck.concat(packet); 
+    deck = deck.concat(packet); // Packet goes to bottom
 }
 
-// Corrected: Toss N cards from the top to the bottom (preserving order)
+// Toss/Cut: Move N cards from top to bottom, PRESERVING order
 function tossCards(n) {
-    if (n > deck.length) n = deck.length;
     let packet = deck.splice(0, n);
-    // Tossed as a group, preserving order
-    deck = deck.concat(packet); 
+    deck = deck.concat(packet); // Packet goes to bottom
 }
 
 // Corrected: Milk top and bottom, then run remaining as a group
