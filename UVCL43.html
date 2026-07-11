@@ -23,8 +23,39 @@
 
         /*CARD*/
         .card { background: white; border-radius: 3px; cursor: pointer; position: relative; transition: 0.15s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
-        .card.selected { outline: 2px solid var(--gold); transform: translateY(-2px); z-index: 10; }
-        .card.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
+        // .card.selected { outline: 2px solid var(--gold); transform: translateY(-2px); z-index: 10; }
+        // .card.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
+
+        .card.selected {
+    /* Thick border in a color distinct from "Tracked" (e.g., Bright Gold/Yellow) */
+    outline: 4px solid #ffcc00 !important; 
+    
+    /* Adds a "lifted" look and a soft glow to differentiate from flat cards */
+    box-shadow: 0 0 15px 5px rgba(255, 204, 0, 0.6) !important;
+    
+    /* Scale effect to visually separate it from the deck */
+    transform: scale(0.95);
+    
+    /* Ensure opacity is full so it doesn't look washed out */
+    opacity: 1;
+    
+    /* Z-index to ensure it sits on top when selected */
+    z-index: 5;
+}
+
+        .card.is-tracked {
+    /* Thick, bright border for visibility */
+    border: 4px solid #ff00ff !important; 
+    
+    /* Neon glow effect for "pop" */
+    box-shadow: 0 0 15px 5px rgba(255, 0, 255, 0.6) !important;
+    
+    /* Slightly larger to separate it from surrounding cards */
+    transform: scale(1.05);
+    
+    /* Ensure it stays on top of other elements */
+    z-index: 10;
+}
         .card-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
         /* Text fallback card (used on iPhone / when PNG unavailable) */
