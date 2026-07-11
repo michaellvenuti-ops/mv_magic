@@ -322,9 +322,12 @@
         </button>
         <button onclick="executeSelectionStrip()" 
                 style="background:var(--accent); color:white; padding:8px; border:none; cursor:pointer; font-weight:bold;">
-             STRIP SELECTED TO REAR
+             STRIP SELECTED TO REAR OF FACE UP DECK
         </button>
-        
+                <button onclick="executeSelectionStripToTop()" 
+                style="background:var(--accent); color:white; padding:8px; border:none; cursor:pointer; font-weight:bold;">
+             STRIP SELECTED TO REAR OF FACE UP DECK
+        </button>
     </div>
 </div>
 
@@ -2767,28 +2770,28 @@ function stripToRear(criteria) {
     });
     
     deck = remaining.concat(toRear);  This puts cards to the rear
-    // Proposed: Stripped cards are placed on top, remaining cards follow (Top)
-    // deck = toRear.concat(remaining);
     renderDeck();
 }
 
 function stripToTop(criteria) {
-    let toRear = [];
+    saveState();
+    let toTop = [];
     let remaining = [];
     
-    // Sort deck: keep original relative order, but move matching cards to the back
+    // Sort deck into two piles based on criteria
     deck.forEach(card => {
-        const val = card.replace(/[SHDC]/, ''); // Extract value (e.g., '10', 'A')
+        const val = card.replace(/[SHDC]/, ''); // Get value
         if (criteria.includes(val)) {
-            toRear.push(card);
+            toTop.push(card);
         } else {
             remaining.push(card);
         }
     });
     
-    // deck = remaining.concat(toRear);  This puts cards to the rear
-    // Proposed: Stripped cards are placed on top, remaining cards follow (Top)
-    deck = toRear.concat(remaining);
+    // NEW: Put the stripped cards at the front (Top of array)
+    deck = toTop.concat(remaining);
+    
+    logMove(`Stripped ${toTop.length} cards to TOP of deck.`);
     renderDeck();
 }
 
@@ -2796,20 +2799,21 @@ function stripToTop(criteria) {
 let cullStage = 0;
 function nextChineseCull() {
     const culls = [
-        { desc: "Cull 1: Stripping Aces, 2s, 5s, 7s, 8s, 9s, Kings to rear.", vals: ["A","2","5","7","8","9","K"] },
-        { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to rear.", vals: ["4","6","J","5","7","K"] },
-        { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to rear.", vals: ["Q","3","A","2","4","7"] },
-        { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to rear.", vals: ["10","8","J","5","Q","2"] },
-        { desc: "Cull 5: Upjog soulmate pairs (9-6-K-3-A-4-7-10-8-J-5-Q-2 pattern). Strip to rear.", vals: [] }, // Manual selection required
-        { desc: "Cull 6: Upjog by suit pattern (Diamonds, Spades, Hearts, Clubs). Strip to rear.", vals: [] }
+        { desc: "Cull 1: Stripping Aces, 2s, 5s, 7s, 8s, 9s, Kings to TOP.", vals: ["A","2","5","7","8","9","K"] },
+        { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to TOP.", vals: ["4","6","J","5","7","K"] },
+        { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to TOP.", vals: ["Q","3","A","2","4","7"] },
+        { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to TOP.", vals: ["10","8","J","5","Q","2"] },
+        { desc: "Cull 5: Upjog soulmate pairs. Strip manually to TOP.", vals: [] },
+        { desc: "Cull 6: Upjog by suit pattern. Strip manually to TOP.", vals: [] }
     ];
     
-    if (cullStage < 4) { // Culls 1-4 are automated via stripToTop
+    if (cullStage < 4) { 
         saveState();
+        // Now calling your new stripToTop function
         stripToTop(culls[cullStage].vals);
         logMove(culls[cullStage].desc);
         cullStage++;
-    } else if (cullStage < 6) { // Culls 5-6 guide the user
+    } else if (cullStage < 6) { 
         logMove(culls[cullStage].desc);
         cullStage++;
     } else {
@@ -2843,6 +2847,31 @@ function executeSelectionStrip() {
     deck = remaining.concat(selectedValues);
     
     logMove(`Stripped ${selectedValues.length} cards to rear.`);
+    renderDeck();
+}
+
+    function executeSelectionStripToTop() {
+    saveState();
+    
+    const selectedElements = document.querySelectorAll('.card.selected');
+    const selectedValues = Array.from(selectedElements).map(el => {
+        // Find the index of the clicked card to get the value from the array
+        const index = Array.from(el.parentNode.children).indexOf(el);
+        return deck[index];
+    });
+    
+    if (selectedValues.length === 0) return;
+
+    // Filter the deck
+    let remaining = deck.filter(c => !selectedValues.includes(c));
+    
+    // Move selected to the top (front)
+    deck = selectedValues.concat(remaining);
+    
+    // Clear selection
+    selectedElements.forEach(el => el.classList.remove('selected'));
+    
+    logMove(`Stripped ${selectedValues.length} selected cards to TOP.`);
     renderDeck();
 }
     
