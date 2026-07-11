@@ -2617,37 +2617,38 @@ function milkShuffle(n) {
 }
     
 function runBerglasSolver() {
-    try {
-        var cardInput = document.getElementById('solve-card').value.trim().toUpperCase().replace(/\s+/g, '');
-        var targetPos = parseInt(document.getElementById('solve-pos').value);
-        var currentIdx = deck.indexOf(cardInput);
+    var cardInput = document.getElementById('solve-card').value.trim().toUpperCase();
+    var targetPos = parseInt(document.getElementById('solve-pos').value);
+    var currentIdx = deck.indexOf(cardInput);
+    
+    if (currentIdx === -1) { alert("Card not in deck!"); return; }
 
-        if (currentIdx === -1) {
-            alert("Could not find '" + cardInput + "' in the deck. Check formatting!");
-            return;
-        }
+    var shiftNeeded = (targetPos - 1) - currentIdx;
+    var cutValue = (shiftNeeded + 52) % 52;
 
-        var shiftNeeded = (targetPos - 1) - currentIdx;
-        var cutValue = (shiftNeeded + 52) % 52;
-
-        if (cutValue === 0) {
-            document.getElementById('solver-status').innerText = "Already in position!";
-        } else {
-            // Check if this specific function exists
-            if (typeof highlightCutPoint === 'function') {
-                highlightCutPoint(cutValue);
-            }
-            document.getElementById('solver-status').innerHTML = 
-                `<strong>Berglas Solution:</strong> Cut ${cutValue} cards from top to bottom. ` +
-                `<button onclick="performQuickCut(${cutValue})">Execute</button>`;
-        }
-    } catch (err) {
-        console.error("Solver Error:", err);
-        alert("An error occurred: " + err.message);
+    if (cutValue === 0) {
+        document.getElementById('solver-status').innerText = "Already in position!";
+    } else {
+        // Find the name of the card at index 'cutValue'
+        var cutCard = deck[cutValue]; 
+        
+        highlightCutPoint(cutValue);
+        
+        document.getElementById('solver-status').innerHTML = 
+            `<strong>Berglas Solution:</strong> Cut at the <strong>${cutCard}</strong>. ` +
+            `<button onclick="performQuickCut(${cutValue})">EXECUTE</button>`;
     }
 }
 
-
+    // Make sure this is in your main script area
+function performQuickCut(n) {
+    saveState();
+    // Move the top 'n' cards to the bottom
+    deck = deck.slice(n).concat(deck.slice(0, n));
+    renderDeck();
+    logMove(`Berglas Cut: Cut at card index ${n}`);
+}
+    
 // --- CHINESE SHUFFLE GUIDED CULL ---
 
 let cullStage = 0;
