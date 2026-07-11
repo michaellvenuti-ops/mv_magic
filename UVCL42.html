@@ -244,7 +244,8 @@
         <button onclick="reverseTop()">Reverse Top 26</button>
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
-        <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card</button>
+        <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card to Top</button>
+        <button onclick="cutToSelectedface()" title="Cut the deck so the currently selected card becomes the bottom (Face) card">Cut to Selected Card to Face</button>
         <div style="display:contents;">
             <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
                 <span style="white-space:nowrap;">Cut at:</span>
@@ -1055,6 +1056,26 @@
         deck = deck.slice(selectedIndex).concat(deck.slice(0, selectedIndex));
         selectedIndex = null;
         logMove('Cut to top: ' + card + ' (was position ' + pos + ')');
+        renderDeck();
+    }
+
+    function cutToSelectedface() {
+        if (selectedIndex === null) {
+            logMove('Cut to Selected Face: no card selected. Click a card first.');
+            return;
+        }
+        if (selectedIndex === 51) {
+            logMove('Cut to Selected: selected card is already on bottom (face).');
+            selectedIndex = null;
+            renderDeck();
+            return;
+        }
+        saveState();
+        var card = deck[selectedIndex];
+        var pos = selectedIndex + 1;
+        deck = deck.slice(selectedIndex).concat(deck.slice(51, selectedIndex));
+        selectedIndex = null;
+        logMove('Cut to bottom (face): ' + card + ' (was position ' + pos + ')');
         renderDeck();
     }
 
