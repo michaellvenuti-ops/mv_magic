@@ -1073,7 +1073,9 @@
         saveState();
         var card = deck[selectedIndex];
         var pos = selectedIndex + 1;
-        deck = deck.slice(selectedIndex).concat(deck.slice(0, selectedIndex));
+        var topPart = deck.slice(0, selectedIndex + 1);
+        var bottomPart = deck.slice(selectedIndex + 1);
+        deck = bottomPart.concat(topPart);        
         selectedIndex = null;
         logMove('Cut to bottom (face): ' + card + ' (was position ' + pos + ')');
         renderDeck();
