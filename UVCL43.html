@@ -320,6 +320,11 @@
                 style="flex-grow:1; padding:8px; background:#444; color:white; border:none; cursor:pointer; font-weight:bold;">
             RESET
         </button>
+        <button onclick="executeSelectionStrip()" 
+                style="background:var(--accent); color:white; padding:8px; border:none; cursor:pointer; font-weight:bold;">
+             STRIP SELECTED TO REAR
+        </button>
+        
     </div>
 </div>
 
@@ -858,97 +863,102 @@
         });
     }
 
-    function renderDeck() {
-        const container = document.getElementById('deck');
-        const search = document.getElementById('search-input').value.toUpperCase();
-        container.innerHTML = '';
-        deck.forEach((card, i) => {
-            const div = document.createElement('div');
-            const isRed = card.includes('H') || card.includes('D');
+   function renderDeck() {
+    const container = document.getElementById('deck');
+    const search = document.getElementById('search-input').value.toUpperCase();
+    container.innerHTML = '';
+    
+    deck.forEach((card, i) => {
+        const div = document.createElement('div');
+        const isRed = card.includes('H') || card.includes('D');
+
+        if (peekMode) {
+            div.className = 'card face-down';
+            const label = document.createElement('span');
+            label.className = 'peek-num';
+            label.innerText = i + 1;
+            div.appendChild(label);
+        } else {
+            div.className = 'card';
+            const img = document.createElement('img');
+            img.src = 'cards/' + card + '.png';
+            img.className = 'card-img';
+            img.alt = card;
+            img.onerror = function() {
+                div.classList.add('text-card');
+                if (isRed) div.classList.add('red');
+                div.innerHTML = '';
+                const idx = document.createElement('span');
+                idx.className = 'card-index top-right';
+                idx.innerText = i + 1;
+                div.appendChild(idx);
+                const face = document.createElement('span');
+                face.innerText = card.slice(0,-1) + suitSymbols[card.slice(-1)];
+                div.appendChild(face);
+            };
+            div.appendChild(img);
+            const idxTR = document.createElement('span');
+            idxTR.className = 'card-index top-right';
+            idxTR.innerText = i + 1;
+            div.appendChild(idxTR);
+            const idxBL = document.createElement('span');
+            idxBL.className = 'card-index bottom-left';
+            idxBL.innerText = i + 1;
+            div.appendChild(idxBL);
+        }
+
+        // Existing status classes
+        if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
+        if (selectedIndex === i) div.classList.add('selected'); // This is for swap logic
+        if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
+
+        // Click Handler
+        div.onclick = (e) => {
+            // NEW: Selection mode (Ctrl/Cmd + Click to select for stripping)
+            if (e.ctrlKey || e.metaKey) {
+                div.classList.toggle('selected');
+                return;
+            }
 
             if (peekMode) {
-                div.className = 'card face-down';
-                // Position number centered on face-down card
-                const label = document.createElement('span');
-                label.className = 'peek-num';
-                label.innerText = i + 1;
-                div.appendChild(label);
-            } else {
-                div.className = 'card';
-                // Try PNG first; fall back to text card
+                div.classList.remove('face-down');
+                div.innerHTML = '';
                 const img = document.createElement('img');
                 img.src = 'cards/' + card + '.png';
                 img.className = 'card-img';
                 img.alt = card;
                 img.onerror = function() {
-                    // PNG failedâ€ render as text card instead
                     div.classList.add('text-card');
                     if (isRed) div.classList.add('red');
-                    div.innerHTML = '';
-                    const idx = document.createElement('span');
-                    idx.className = 'card-index top-right';
-                    idx.innerText = i + 1;
-                    div.appendChild(idx);
-                    const face = document.createElement('span');
-                    face.innerText = card.slice(0,-1) + suitSymbols[card.slice(-1)];
-                    div.appendChild(face);
+                    div.innerHTML = card.slice(0,-1) + suitSymbols[card.slice(-1)];
                 };
                 div.appendChild(img);
-                // Position index overlay (top-right and bottom-left)
-                const idxTR = document.createElement('span');
-                idxTR.className = 'card-index top-right';
-                idxTR.innerText = i + 1;
-                div.appendChild(idxTR);
-                const idxBL = document.createElement('span');
-                idxBL.className = 'card-index bottom-left';
-                idxBL.innerText = i + 1;
-                div.appendChild(idxBL);
-            }
-
-            if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
-            if (selectedIndex === i) div.classList.add('selected');
-            if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
-
-            div.onclick = () => {
-                if (peekMode) {
-                    // Reveal card for 1 second
-                    div.classList.remove('face-down');
+                setTimeout(() => {
+                    div.classList.remove('text-card','red');
+                    div.classList.add('face-down');
                     div.innerHTML = '';
-                    const img = document.createElement('img');
-                    img.src = 'cards/' + card + '.png';
-                    img.className = 'card-img';
-                    img.alt = card;
-                    img.onerror = function() {
-                        div.classList.add('text-card');
-                        if (isRed) div.classList.add('red');
-                        div.innerHTML = card.slice(0,-1) + suitSymbols[card.slice(-1)];
-                    };
-                    div.appendChild(img);
-                    setTimeout(() => {
-                        div.classList.remove('text-card','red');
-                        div.classList.add('face-down');
-                        div.innerHTML = '';
-                        const label = document.createElement('span');
-                        label.className = 'peek-num';
-                        label.innerText = i + 1;
-                        div.appendChild(label);
-                    }, 1000);
-                    return;
-                }
-                // Normal swap mode
-                if (selectedIndex === null) {
-                    selectedIndex = i;
-                    renderDeck();
-                } else {
-                    saveState();
-                    [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
-                    selectedIndex = null;
-                    renderDeck();
-                }
-            };
-            container.appendChild(div);
-        });
-    }
+                    const label = document.createElement('span');
+                    label.className = 'peek-num';
+                    label.innerText = i + 1;
+                    div.appendChild(label);
+                }, 1000);
+                return;
+            }
+            
+            // Normal swap mode
+            if (selectedIndex === null) {
+                selectedIndex = i;
+                renderDeck();
+            } else {
+                saveState();
+                [deck[selectedIndex], deck[i]] = [deck[i], deck[selectedIndex]];
+                selectedIndex = null;
+                renderDeck();
+            }
+        };
+        container.appendChild(div);
+    });
+}
 
         function togglePeek() {
         peekMode = !peekMode;
@@ -2791,6 +2801,27 @@ function resetCull() {
     logMove("Chinese Shuffle Reset: Starting over from Cull No. 1.");
     // Optional: If you have a display element for the current stage, update it here
     // document.getElementById('cull-display').innerText = "Stage: 1"; 
+}
+
+function executeSelectionStrip() {
+    saveState();
+    
+    // Get all cards currently highlighted via the selection logic
+    const selectedElements = document.querySelectorAll('.card.selected');
+    const selectedValues = Array.from(selectedElements).map(el => {
+        // Assuming the card value is stored in the img alt or a data-attr
+        // If not, you may need to map index 'i'
+        return deck[Array.from(el.parentNode.children).indexOf(el)];
+    });
+    
+    if (selectedValues.length === 0) return;
+
+    // Filter the deck: Keep unselected, then append selected to end
+    let remaining = deck.filter(c => !selectedValues.includes(c));
+    deck = remaining.concat(selectedValues);
+    
+    logMove(`Stripped ${selectedValues.length} cards to rear.`);
+    renderDeck();
 }
     
 </script>
