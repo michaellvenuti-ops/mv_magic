@@ -2589,23 +2589,38 @@ function runSolver() {
 }
 
 function processDialSequence() {
-    const input = document.getElementById('dialSequence').value;
-    // Matches digits (\d+) or groups in parentheses \((\d+)\)
-    const tokens = input.match(/\d+|\(\d+\)/g); 
-    
+    let input = document.getElementById('dialSequence').value.trim();
+    if (!input) return;
+
+    // 1. Remove dashes since they are just for readability
+    input = input.replace(/-/g, '');
+
+    // 2. Tokenize: Match pairs of brackets/braces/parentheses OR individual characters
+    // This safely keeps [4], {5}, and (2) intact, while separating individual digits!
+    const tokens = input.match(/\[\d+\]|\{\d+\}|\(\d+\)|./g);
     if (!tokens) return;
+
     saveState();
-    
+
     tokens.forEach(token => {
         if (token.startsWith('(')) {
-            // It's a Toss
+            // Toss logic: (2)
             let count = parseInt(token.replace(/\D/g, ''));
             tossCards(count);
-        } else {
-            // It's a Run
+        } else if (token.startsWith('{')) {
+            // Milk logic: {5}
+            let count = parseInt(token.replace(/\D/g, ''));
+            milkShuffle(count);
+        } else if (token.startsWith('[')) {
+            // Custom top-run logic if needed, otherwise standard run
+            let count = parseInt(token.replace(/\D/g, ''));
+            runCards(count); 
+        } else if (/\d/.test(token)) {
+            // It's a single digit run: 5, 7, etc.
             runCards(parseInt(token));
         }
     });
+
     renderDeck();
 }
 
