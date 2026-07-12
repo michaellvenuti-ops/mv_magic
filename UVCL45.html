@@ -915,17 +915,17 @@
 
 function moveSelectedLeft() {
     if (multiSelected.size === 0) { logMove('Move Left: no cards selected (Ctrl+Click to select)'); return; }
+    const indices = [...multiSelected].sort((a, b) => a - b);
+    if (indices[0] === 0) { logMove('Move Left: already at leftmost position'); return; }
     saveState();
-    const indices = [...multiSelected].sort((a, b) => a - b); // left to right
-    const newSelected = new Set();
+    // Move each card one position left, left-to-right so they don't overwrite each other
     for (let idx of indices) {
         if (idx > 0 && !multiSelected.has(idx - 1)) {
             [deck[idx], deck[idx - 1]] = [deck[idx - 1], deck[idx]];
-            newSelected.add(idx - 1);
-        } else {
-            newSelected.add(idx); // blocked, stays put
         }
     }
+    // Shift all selected indices left by 1
+    const newSelected = new Set(indices.map(i => Math.max(0, i - 1)));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
     logMove('Move Selected Left (' + multiSelected.size + ' cards)');
@@ -934,17 +934,17 @@ function moveSelectedLeft() {
 
 function moveSelectedRight() {
     if (multiSelected.size === 0) { logMove('Move Right: no cards selected (Ctrl+Click to select)'); return; }
+    const indices = [...multiSelected].sort((a, b) => b - a);
+    if (indices[0] === 51) { logMove('Move Right: already at rightmost position'); return; }
     saveState();
-    const indices = [...multiSelected].sort((a, b) => b - a); // right to left
-    const newSelected = new Set();
+    // Move each card one position right, right-to-left so they don't overwrite each other
     for (let idx of indices) {
         if (idx < 51 && !multiSelected.has(idx + 1)) {
             [deck[idx], deck[idx + 1]] = [deck[idx + 1], deck[idx]];
-            newSelected.add(idx + 1);
-        } else {
-            newSelected.add(idx); // blocked, stays put
         }
     }
+    // Shift all selected indices right by 1
+    const newSelected = new Set(indices.map(i => Math.min(51, i + 1)));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
     logMove('Move Selected Right (' + multiSelected.size + ' cards)');
