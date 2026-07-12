@@ -140,6 +140,7 @@
     
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap:5px; margin-bottom:10px;">
         <button onclick="undoMove()" style="border-color:var(--gold); color:var(--gold); padding: var(--pad-small);">🃏 Undo</button>
+        <button onclick="redoMove()" style="border-color:#00f5d4; color:#00f5d4; padding: var(--pad-small);">↪ Redo</button>
         <button onclick="showHelp()" style="background:#444; padding: var(--pad-small);">❓ HELP</button>
     </div>
 
@@ -902,10 +903,11 @@
     
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let deck = [], undoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
+    let deck = [], undoStack = [], redoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
 
-    function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift(); }
+    function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift();  redoStack = [];}
     function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
+    function redoMove() { if(redoStack.length > 0) { undoStack.push([...deck]); deck = redoStack.pop(); logMove("Redo"); renderDeck(); } }
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
     function preloadCardImages() {
