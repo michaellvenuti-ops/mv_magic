@@ -274,13 +274,16 @@
         <button onclick="gilbrethShuffle()">Gilbreth Shuffle</button>
         <button onclick="cutDeck()">Cut Deck (26)</button>
         <button onclick="randomShuffle()">Randomize</button>
-        <button onclick="shiftDeck('LEFT')">Shift Left</button>
-        <button onclick="shiftDeck('RIGHT')">Shift Right</button>
+        <button onclick="shiftDeck('LEFT')">◀ Shift Left</button>
+        <button onclick="shiftDeck('RIGHT')">Shift Right ▶</button>
         <button onclick="reverseTop()">Reverse Top 26</button>
         <button onclick="reverseBottom()">Reverse Bottom 26</button>
         <button onclick="unequalFaroTop()">UnequalFaroTop 18</button>
         <button onclick="cutToSelected()" title="Cut the deck so the currently selected card becomes the top card">Cut to Selected Card to Top</button>
         <button onclick="cutToSelectedface()" title="Cut the deck so the currently selected card becomes the bottom (Face) card">Cut to Selected Card to Face</button>
+        <button onclick="moveSelectedLeft()" style="border-color:#00f5d4; color:#00f5d4;">◀ Move Selected Left</button>
+        <button onclick="moveSelectedRight()" style="border-color:#00f5d4; color:#00f5d4;">Move Selected Right ▶</button>
+        <button onclick="clearMultiSelect()" style="border-color:#888; color:#888;">✕ Clear Selection</button>
         <div style="display:contents;">
             <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
                 <span style="white-space:nowrap;">Cut at:</span>
@@ -903,13 +906,57 @@
     
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    let deck = [], undoStack = [], redoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
+    let deck = [], undoStack = [], redoStack = [], selectedIndex = null, multiSelected = new Set(), coachActive = false, peekMode = false;
 
     function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift();  redoStack = [];}
     function undoMove() { if(undoStack.length > 0) { redoStack.push([...deck]); deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
     function redoMove() { if(redoStack.length > 0) { undoStack.push([...deck]); deck = redoStack.pop(); logMove("Redo"); renderDeck(); } }
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
+function moveSelectedLeft() {
+    if (multiSelected.size === 0) { logMove('Move Left: no cards selected (Ctrl+Click to select)'); return; }
+    saveState();
+    const indices = [...multiSelected].sort((a, b) => a - b); // left to right
+    const newSelected = new Set();
+    for (let idx of indices) {
+        if (idx > 0 && !multiSelected.has(idx - 1)) {
+            [deck[idx], deck[idx - 1]] = [deck[idx - 1], deck[idx]];
+            newSelected.add(idx - 1);
+        } else {
+            newSelected.add(idx); // blocked, stays put
+        }
+    }
+    multiSelected.clear();
+    newSelected.forEach(i => multiSelected.add(i));
+    logMove('Move Selected Left (' + multiSelected.size + ' cards)');
+    renderDeck();
+}
+
+function moveSelectedRight() {
+    if (multiSelected.size === 0) { logMove('Move Right: no cards selected (Ctrl+Click to select)'); return; }
+    saveState();
+    const indices = [...multiSelected].sort((a, b) => b - a); // right to left
+    const newSelected = new Set();
+    for (let idx of indices) {
+        if (idx < 51 && !multiSelected.has(idx + 1)) {
+            [deck[idx], deck[idx + 1]] = [deck[idx + 1], deck[idx]];
+            newSelected.add(idx + 1);
+        } else {
+            newSelected.add(idx); // blocked, stays put
+        }
+    }
+    multiSelected.clear();
+    newSelected.forEach(i => multiSelected.add(i));
+    logMove('Move Selected Right (' + multiSelected.size + ' cards)');
+    renderDeck();
+}
+
+function clearMultiSelect() {
+    multiSelected.clear();
+    renderDeck();
+}
+
+    
     function preloadCardImages() {
         const suits = ['C', 'H', 'S', 'D'];
         const valuesList = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
@@ -968,15 +1015,22 @@
         // Existing status classes
         if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
         if (selectedIndex === i) div.classList.add('selected'); // This is for swap logic
+        if (multiSelected.has(i)) div.classList.add('selected');
         if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
 
         // Click Handler
         div.onclick = (e) => {
             // NEW: Selection mode (Ctrl/Cmd + Click to select for stripping)
             if (e.ctrlKey || e.metaKey) {
-                div.classList.toggle('selected');
-                return;
-            }
+    if (multiSelected.has(i)) {
+        multiSelected.delete(i);
+        div.classList.remove('selected');
+    } else {
+        multiSelected.add(i);
+        div.classList.add('selected');
+    }
+    return;
+}
 
             if (peekMode) {
                 div.classList.remove('face-down');
