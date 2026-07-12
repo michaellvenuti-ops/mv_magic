@@ -1015,7 +1015,7 @@ function clearMultiSelect() {
         // Existing status classes
         if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
         if (selectedIndex === i) div.classList.add('selected'); // This is for swap logic
-        if (multiSelected.has(i)) div.classList.add('selected');
+        if (multiSelected && multiSelected.has(i)) div.classList.add('selected');
         if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
 
         // Click Handler
