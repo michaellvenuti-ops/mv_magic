@@ -78,6 +78,14 @@
         .peek-num { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: clamp(0.6rem, 2.5vw, 1.8rem); font-weight: bold; z-index: 20; pointer-events: none; }
         .peek-idx { position: absolute !important; top: 2px; right: 2px; font-size: clamp(0.3rem, 0.7vw, 0.5rem); font-weight: bold; color: black; z-index: 999; pointer-events: none; background: white; padding: 0 2px; border-radius: 2px; display: block !important; }
 
+        /* Upjogged Mode */
+.card.upjogged { 
+    outline: 2px solid #ff9900; 
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 16px rgba(255,153,0,0.5);
+    z-index: 10;
+}
+        
         /*BUTTONS*/
         button { background: #2a2a2a; color: white; border: 1px solid #444; padding: 5px 4px; cursor: pointer; font-size: 0.55rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
         button:hover { background: var(--accent); }
@@ -284,6 +292,9 @@
         <button onclick="moveSelectedLeft()">◀ Move Selected Left</button>
         <button onclick="moveSelectedRight()">Move Selected Right ▶</button>
         <button onclick="clearMultiSelect()" >✕ Clear Selection</button>
+        <button id="upjog-toggle" onclick="toggleUpjogMode()" style="border-color:#ff9900; color:#ff9900;">↑ UPJOG MODE OFF</button>
+        <button onclick="upjogToTop()" style="border-color:#ff9900; color:#ff9900;">⬆ Upjogged to TOP</button>
+        <button onclick="upjogToBottom()" style="border-color:#ff9900; color:#ff9900;">⬇ Upjogged to BOTTOM</button>
         <div style="display:contents;">
             <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
                 <span style="white-space:nowrap;">Cut at:</span>
@@ -907,6 +918,7 @@
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
     const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     let deck = [], undoStack = [], redoStack = [], selectedIndex = null, multiSelected = new Set(), coachActive = false, peekMode = false;
+    let upjogMode = false, upjoggedCards = new Set();
 
     function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift(); redoStack = []; }
     function undoMove() { if(undoStack.length > 0) { redoStack.push([...deck]); deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
@@ -1034,8 +1046,23 @@ function clearMultiSelect() {
         if (search && search.split(',').map(s=>s.trim()).includes(card)) div.classList.add('is-tracked');
         if (selectedIndex === i) div.classList.add('selected'); // This is for swap logic
         if (multiSelected && multiSelected.has(i)) div.classList.add('selected');
+        if (upjoggedCards && upjoggedCards.has(i)) div.classList.add('upjogged');
         if (coachActive && !peekMode) div.title = 'Stack Position: ' + (i+1);
 
+div.onclick = (e) => {
+    // Upjog mode — single click toggles upjog
+    if (upjogMode) {
+        if (upjoggedCards.has(i)) {
+            upjoggedCards.delete(i);
+            div.classList.remove('upjogged');
+        } else {
+            upjoggedCards.add(i);
+            div.classList.add('upjogged');
+        }
+        return;
+    }
+    // ... rest of existing click handler
+        
         // Click Handler
         div.onclick = (e) => {
             // NEW: Selection mode (Ctrl/Cmd + Click to select for stripping)
@@ -3128,6 +3155,49 @@ function prepareSiStebbinsCull6() {
     
     // You can add logic here to auto-select the specific suit-based cards 
     // if you have a specific target sequence for your setup.
+    renderDeck();
+}
+
+    function toggleUpjogMode() {
+    upjogMode = !upjogMode;
+    upjoggedCards.clear();
+    const btn = document.getElementById('upjog-toggle');
+    btn.innerText = upjogMode ? '\u2191 UPJOG MODE ON' : '\u2191 UPJOG MODE OFF';
+    btn.style.background = upjogMode ? '#ff9900' : '';
+    btn.style.color = upjogMode ? '#000' : '#ff9900';
+    logMove(upjogMode ? 'Upjog Mode ON — click cards to upjog' : 'Upjog Mode OFF');
+    renderDeck();
+}
+
+function upjogToTop() {
+    if (upjoggedCards.size === 0) { logMove('Upjog to Top: no cards upjogged'); return; }
+    saveState();
+    const indices = [...upjoggedCards].sort((a, b) => a - b);
+    const selectedCards = indices.map(i => deck[i]);
+    const remaining = deck.filter((_, i) => !upjoggedCards.has(i));
+    deck = [...selectedCards, ...remaining];
+    upjoggedCards.clear();
+    upjogMode = false;
+    document.getElementById('upjog-toggle').innerText = '\u2191 UPJOG MODE OFF';
+    document.getElementById('upjog-toggle').style.background = '';
+    document.getElementById('upjog-toggle').style.color = '#ff9900';
+    logMove('Upjogged ' + selectedCards.length + ' cards to TOP');
+    renderDeck();
+}
+
+function upjogToBottom() {
+    if (upjoggedCards.size === 0) { logMove('Upjog to Bottom: no cards upjogged'); return; }
+    saveState();
+    const indices = [...upjoggedCards].sort((a, b) => a - b);
+    const selectedCards = indices.map(i => deck[i]);
+    const remaining = deck.filter((_, i) => !upjoggedCards.has(i));
+    deck = [...remaining, ...selectedCards];
+    upjoggedCards.clear();
+    upjogMode = false;
+    document.getElementById('upjog-toggle').innerText = '\u2191 UPJOG MODE OFF';
+    document.getElementById('upjog-toggle').style.background = '';
+    document.getElementById('upjog-toggle').style.color = '#ff9900';
+    logMove('Upjogged ' + selectedCards.length + ' cards to BOTTOM');
     renderDeck();
 }
   
