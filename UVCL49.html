@@ -111,9 +111,13 @@
 
 /* PC — shrink the deck wrapper for small and medium */
 @media (min-width: 1200px) {
-    .deck-display.size-small  { width: 55%; }
-    .deck-display.size-medium { width: 78%; }
+    .deck-display.size-small  { width: 100%; }
+    .deck-display.size-medium { width: 100%; }
     .deck-display.size-large  { width: 100%; }
+    
+    .deck-wrapper:has(.size-small)  { width: 55%; }
+    .deck-wrapper:has(.size-medium) { width: 78%; }
+    .deck-wrapper:has(.size-large)  { width: 100%; }
 }
 
 /* iPad */
