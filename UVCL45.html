@@ -918,36 +918,54 @@ function moveSelectedLeft() {
     const indices = [...multiSelected].sort((a, b) => a - b);
     if (indices[0] === 0) { logMove('Move Left: already at leftmost position'); return; }
     saveState();
-    // Move each card one position left, left-to-right so they don't overwrite each other
-    for (let idx of indices) {
-        if (idx > 0 && !multiSelected.has(idx - 1)) {
-            [deck[idx], deck[idx - 1]] = [deck[idx - 1], deck[idx]];
-        }
-    }
-    // Shift all selected indices left by 1
-    const newSelected = new Set(indices.map(i => Math.max(0, i - 1)));
+
+    // Extract selected cards in order
+    const selectedCards = indices.map(i => deck[i]);
+
+    // Build new deck without selected cards
+    const remaining = deck.filter((_, i) => !multiSelected.has(i));
+
+    // Find where to reinsert — leftmost selected index minus 1 in the remaining deck
+    const insertAt = indices[0] - 1;
+
+    // Reinsert the group at the new position
+    remaining.splice(insertAt, 0, ...selectedCards);
+    deck = remaining;
+
+    // Update multiSelected to new positions
+    const newSelected = new Set(indices.map((_, j) => insertAt + j));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
-    logMove('Move Selected Left (' + multiSelected.size + ' cards)');
+
+    logMove('Move Selected Left (' + selectedCards.length + ' cards)');
     renderDeck();
 }
 
 function moveSelectedRight() {
     if (multiSelected.size === 0) { logMove('Move Right: no cards selected (Ctrl+Click to select)'); return; }
-    const indices = [...multiSelected].sort((a, b) => b - a);
-    if (indices[0] === 51) { logMove('Move Right: already at rightmost position'); return; }
+    const indices = [...multiSelected].sort((a, b) => a - b);
+    if (indices[indices.length - 1] === 51) { logMove('Move Right: already at rightmost position'); return; }
     saveState();
-    // Move each card one position right, right-to-left so they don't overwrite each other
-    for (let idx of indices) {
-        if (idx < 51 && !multiSelected.has(idx + 1)) {
-            [deck[idx], deck[idx + 1]] = [deck[idx + 1], deck[idx]];
-        }
-    }
-    // Shift all selected indices right by 1
-    const newSelected = new Set(indices.map(i => Math.min(51, i + 1)));
+
+    // Extract selected cards in order
+    const selectedCards = indices.map(i => deck[i]);
+
+    // Build new deck without selected cards
+    const remaining = deck.filter((_, i) => !multiSelected.has(i));
+
+    // Find where to reinsert — leftmost selected index in the remaining deck, plus 1
+    const insertAt = indices[0] - 0 + 1;
+
+    // Reinsert the group at the new position
+    remaining.splice(insertAt, 0, ...selectedCards);
+    deck = remaining;
+
+    // Update multiSelected to new positions
+    const newSelected = new Set(indices.map((_, j) => insertAt + j));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
-    logMove('Move Selected Right (' + multiSelected.size + ' cards)');
+
+    logMove('Move Selected Right (' + selectedCards.length + ' cards)');
     renderDeck();
 }
 
