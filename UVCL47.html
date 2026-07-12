@@ -2903,7 +2903,7 @@ function runBerglasSolver() {
     var cutSize = (currentIdx - (targetPos - 1) + 52) % 52;
 
     if (cutSize === 0) {
-        document.getElementById('solver-status').innerText = "Already in position!";
+        document.getElementById('berglas-status').innerText = "Already in position!";
     } else {
         var cardAtCut = deck[cutSize]; 
         document.getElementById('berglas-status').innerHTML = 
