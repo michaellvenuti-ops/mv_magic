@@ -8,7 +8,7 @@
         :root { --bg: #050505; --panel: #1a1a1a; --accent: #d90429; --gold: #ffb703; --text: #f1faee; --felt: #0a2e1a; }
 
         /*BASE LAYOUT*/
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }Fsol
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; height: 100vh; overflow: hidden; }
         #sidebar { width: 300px; min-width: 220px; background: var(--panel); border-right: 2px solid #333; display: flex; flex-direction: column; padding: 12px; overflow-y: auto; flex-shrink: 0; }
         .history-log { flex-grow: 1; min-height: 80px; background: #000; border: 1px solid #444; padding: 8px; font-family: monospace; font-size: 0.65rem; overflow-y: auto; color: #00f5d4; border-radius: 5px; margin-bottom: 8px; }
         #lab-main { flex-grow: 1; padding: 12px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
@@ -22,14 +22,22 @@
         .deck-display.size-large  { grid-template-columns: repeat(13, 1fr); }
 
         /*CARD*/
-        // .card { background: white; border-radius: 3px; cursor: pointer; position: relative; transition: 0.15s; border: 1px solid #ccc; aspect-ratio: 5 / 7; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
-        // .card.selected { outline: 2px solid var(--gold); transform: translateY(-2px); z-index: 10; }
-        // .card.is-tracked { border: 2px solid var(--gold) !important; box-shadow: 0 0 8px var(--gold); }
 
-       .card {
+.card { 
+    background: white; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    position: relative; 
+    border: 1px solid #ccc; 
+    aspect-ratio: 5 / 7; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    padding: 0;
     transition: opacity 0.3s, filter 0.3s;
 }
-
+        
 /* Dimming effect for non-active cards */
 .dimmed {
     opacity: 0.15 !important;
