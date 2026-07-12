@@ -913,30 +913,30 @@
     function redoMove() { if(redoStack.length > 0) { undoStack.push([...deck]); deck = redoStack.pop(); logMove("Redo"); renderDeck(); } }
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
+function areContiguous(indices) {
+    const sorted = [...indices].sort((a, b) => a - b);
+    for (let i = 1; i < sorted.length; i++) {
+        if (sorted[i] !== sorted[i-1] + 1) return false;
+    }
+    return true;
+}
+
 function moveSelectedLeft() {
     if (multiSelected.size === 0) { logMove('Move Left: no cards selected (Ctrl+Click to select)'); return; }
     const indices = [...multiSelected].sort((a, b) => a - b);
+    if (!areContiguous(indices)) { logMove('Move Left: selected cards must be adjacent'); return; }
     if (indices[0] === 0) { logMove('Move Left: already at leftmost position'); return; }
     saveState();
 
-    // Extract selected cards in order
     const selectedCards = indices.map(i => deck[i]);
-
-    // Build new deck without selected cards
     const remaining = deck.filter((_, i) => !multiSelected.has(i));
-
-    // Find where to reinsert — leftmost selected index minus 1 in the remaining deck
     const insertAt = indices[0] - 1;
-
-    // Reinsert the group at the new position
     remaining.splice(insertAt, 0, ...selectedCards);
     deck = remaining;
 
-    // Update multiSelected to new positions
     const newSelected = new Set(indices.map((_, j) => insertAt + j));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
-
     logMove('Move Selected Left (' + selectedCards.length + ' cards)');
     renderDeck();
 }
@@ -944,27 +944,19 @@ function moveSelectedLeft() {
 function moveSelectedRight() {
     if (multiSelected.size === 0) { logMove('Move Right: no cards selected (Ctrl+Click to select)'); return; }
     const indices = [...multiSelected].sort((a, b) => a - b);
+    if (!areContiguous(indices)) { logMove('Move Right: selected cards must be adjacent'); return; }
     if (indices[indices.length - 1] === 51) { logMove('Move Right: already at rightmost position'); return; }
     saveState();
 
-    // Extract selected cards in order
     const selectedCards = indices.map(i => deck[i]);
-
-    // Build new deck without selected cards
     const remaining = deck.filter((_, i) => !multiSelected.has(i));
-
-    // Find where to reinsert — leftmost selected index in the remaining deck, plus 1
-    const insertAt = indices[0] - 0 + 1;
-
-    // Reinsert the group at the new position
+    const insertAt = indices[0] + 1;
     remaining.splice(insertAt, 0, ...selectedCards);
     deck = remaining;
 
-    // Update multiSelected to new positions
     const newSelected = new Set(indices.map((_, j) => insertAt + j));
     multiSelected.clear();
     newSelected.forEach(i => multiSelected.add(i));
-
     logMove('Move Selected Right (' + selectedCards.length + ' cards)');
     renderDeck();
 }
