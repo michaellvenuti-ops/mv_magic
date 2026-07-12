@@ -2887,7 +2887,7 @@ window.performQuickCut = function(n) {
     deck = deck.slice(n).concat(deck.slice(0, n));
     renderDeck();
     logMove(`Berglas Cut: Cut ${n} cards`);
-    document.getElementById('solver-status').innerText = "Executed cut of " + n + " cards.";
+    document.getElementById('berglas-status').innerText = "Executed cut of " + n + " cards.";
 };
 
 function runBerglasSolver() {
@@ -2906,10 +2906,10 @@ function runBerglasSolver() {
         document.getElementById('solver-status').innerText = "Already in position!";
     } else {
         var cardAtCut = deck[cutSize]; 
-        document.getElementById('solver-status').innerHTML = 
+        document.getElementById('berglas-status').innerHTML = 
             `<strong>Berglas Solution:</strong><br>Cut the deck at the <strong>${cardAtCut}</strong>.` +
             `<br><br><button onclick="window.performQuickCut(${cutSize})" style="padding:5px 15px; cursor:pointer; background:var(--accent);">EXECUTE CUT ${cutSize}</button>`;
-        
+        document.getElementById('berglas-status').innerText = "Already in position!";
         // Highlight the card you need to cut at
         highlightCutPoint(cutSize);
     }
@@ -3211,6 +3211,37 @@ function upjogToBottom() {
     logMove('Upjogged ' + selectedCards.length + ' cards to BOTTOM');
     renderDeck();
     clearMultiSelect()
+}
+
+    function showChineseShuffleLab() {
+    document.getElementById('chinese-shuffle-arena').style.display = 'block';
+    document.getElementById('chinese-shuffle-arena').scrollIntoView({behavior:'smooth'});
+    logMove('Chinese Shuffle Lab opened');
+}
+
+function showDialingToolbox() {
+    document.getElementById('dialing-arena').style.display = 'block';
+    document.getElementById('dialing-arena').scrollIntoView({behavior:'smooth'});
+    logMove('Dialing Toolbox opened');
+}
+
+function csTetraStart() {
+    randomShuffle();
+    cullStage = 0;
+    document.getElementById('cs-tetra-status').innerText = 'Deck randomized. Click Next Cull Stage to begin.';
+    logMove('Chinese Shuffle Tetra Red: deck randomized, ready for Cull 1');
+}
+
+function csStebbinsStart() {
+    randomShuffle();
+    siStebbinsCullStage = 0;
+    document.getElementById('cs-stebbins-status').innerText = 'Deck randomized. Click Next Si Stebbins Cull to begin.';
+    logMove('Chinese Shuffle Si Stebbins: deck randomized, ready for Cull 1');
+}
+
+function resetSiStebbinsCull() {
+    siStebbinsCullStage = 0;
+    logMove('Si Stebbins Cull reset to Stage 1');
 }
   
 </script>
