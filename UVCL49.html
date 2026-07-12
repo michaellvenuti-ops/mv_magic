@@ -16,10 +16,11 @@
         /*DECK GRIDâ€ fluid 13 columns, cards scale with available space*/
         .deck-display { display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; margin-bottom: 12px; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid #333; }
 
-        /* Size overridesâ€ use fixed px only on wide screens */
-.deck-display.size-small  { grid-template-columns: repeat(13, 1fr); max-height: 340px; overflow: hidden; }
-.deck-display.size-medium { grid-template-columns: repeat(13, 1fr); max-height: 520px; overflow: hidden; }
-.deck-display.size-large  { grid-template-columns: repeat(13, 1fr); }
+/* PC default — all 13 columns, card size controlled by container width percentage */
+.deck-display.size-small  { grid-template-columns: repeat(13, 1fr); max-height: none; transform-origin: top left; }
+.deck-display.size-medium { grid-template-columns: repeat(13, 1fr); max-height: none; }
+.deck-display.size-large  { grid-template-columns: repeat(13, 1fr); max-height: none; }
+
         /*CARD*/
 
 .card { 
@@ -108,17 +109,24 @@
            RESPONSIVE BREAKPOINTS
         */
 
-/* iPad (768px - 1199px) */
+/* PC — shrink the deck wrapper for small and medium */
+@media (min-width: 1200px) {
+    .deck-display.size-small  { width: 55%; }
+    .deck-display.size-medium { width: 78%; }
+    .deck-display.size-large  { width: 100%; }
+}
+
+/* iPad */
 @media (min-width: 768px) and (max-width: 1199px) {
     #sidebar { width: 240px; min-width: 200px; padding: 10px; }
     .history-log { min-height: 60px; font-size: 0.6rem; }
     button { font-size: 0.5rem; padding: 4px 3px; }
-    .deck-display.size-small  { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); max-height: none; }
-    .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); max-height: none; }
-    .deck-display.size-large  { grid-template-columns: repeat(13, 1fr); max-height: none; }
+    .deck-display.size-small  { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
+    .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+    .deck-display.size-large  { grid-template-columns: repeat(13, 1fr); }
 }
 
-/* iPhone (under 768px) */
+/* iPhone */
 @media (max-width: 767px) {
     body { flex-direction: column; height: auto; overflow: auto; }
     #sidebar { width: 100%; min-width: unset; border-right: none; border-bottom: 2px solid #333; padding: 10px; max-height: 40vh; overflow-y: auto; }
@@ -129,11 +137,10 @@
     .peek-num { font-size: clamp(0.5rem, 3vw, 1rem); }
     button { font-size: 0.48rem; padding: 4px 2px; }
     #lab-main h1 { font-size: 0.9rem !important; }
-    .deck-display.size-small  { grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); max-height: none; }
-    .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(55px, 1fr)); max-height: none; }
-    .deck-display.size-large  { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); max-height: none; }
+    .deck-display.size-small  { grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); }
+    .deck-display.size-medium { grid-template-columns: repeat(auto-fill, minmax(55px, 1fr)); }
+    .deck-display.size-large  { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
 }
-
       .highlight-cut {
     outline: 3px solid var(--gold) !important;
     box-shadow: 0 0 15px var(--gold);
