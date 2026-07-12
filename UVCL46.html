@@ -3187,6 +3187,7 @@ function upjogToTop() {
     document.getElementById('upjog-toggle').style.color = '#ff9900';
     logMove('Upjogged ' + selectedCards.length + ' cards to TOP');
     renderDeck();
+    clearMultiSelect()
 }
 
 function upjogToBottom() {
@@ -3203,6 +3204,7 @@ function upjogToBottom() {
     document.getElementById('upjog-toggle').style.color = '#ff9900';
     logMove('Upjogged ' + selectedCards.length + ' cards to BOTTOM');
     renderDeck();
+    clearMultiSelect()
 }
   
 </script>
