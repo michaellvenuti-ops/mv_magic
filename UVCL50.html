@@ -3010,8 +3010,8 @@ function nextChineseCull() {
         { desc: "Cull 2: Stripping 4s, 6s, Js, 5s, 7s, Ks to TOP.", vals: ["4","6","J","5","7","K"] },
         { desc: "Cull 3: Stripping Qs, 3s, As, 2s, 4s, 7s to TOP.", vals: ["Q","3","A","2","4","7"] },
         { desc: "Cull 4: Stripping 10s, 8s, Js, 5s, Qs, 2s to TOP.", vals: ["10","8","J","5","Q","2"] },
-        { desc: "Cull 5: Soulmates highlighted. Ctrl+Click selected cards, then Strip to TOP.", vals: [] },
-        { desc: "Cull 6: Suit pattern highlighted. Ctrl+Click selected cards, then Strip to TOP.", vals: [] }
+        { desc: "Cull 5: For each 4 of a kind, upjog a pair of soulmates cards, which corresponds to the color of the cards values in location 1 through 13 of the stack: red 9s, black 6s, black As, red 4s, black 7s, red 10s, black 8s, red Js, red 5s, red Qs, black 2s. Soulmates highlighted. Automatically Ctrl+Click selected cards, Need user to hit Strip Selected Cards to the TOP.", vals: [] },
+        { desc: "Cull 6: Suit pattern highlighted. Here is the pattern start from Face- SH-DCDC-HSHS,5CSDH6C, SDSD-CHCH-DHS. Ctrl+Click selected cards, then Strip to TOP.", vals: [] }
     ];
     
     if (cullStage < 4) { 
