@@ -1061,21 +1061,17 @@ div.onclick = (e) => {
         }
         return;
     }
-    // ... rest of existing click handler
-        
-        // Click Handler
-        div.onclick = (e) => {
-            // NEW: Selection mode (Ctrl/Cmd + Click to select for stripping)
-            if (e.ctrlKey || e.metaKey) {
-    if (multiSelected.has(i)) {
-        multiSelected.delete(i);
-        div.classList.remove('selected');
-    } else {
-        multiSelected.add(i);
-        div.classList.add('selected');
+    // Ctrl/Cmd+Click — multi-select
+    if (e.ctrlKey || e.metaKey) {
+        if (multiSelected.has(i)) {
+            multiSelected.delete(i);
+            div.classList.remove('selected');
+        } else {
+            multiSelected.add(i);
+            div.classList.add('selected');
+        }
+        return;
     }
-    return;
-}
 
             if (peekMode) {
                 div.classList.remove('face-down');
