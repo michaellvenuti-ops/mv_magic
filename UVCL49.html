@@ -1163,35 +1163,35 @@ if (isSearching && !isTracked && !isSelected) {
     }
 
     function changeCardSize(size) {
-        const container = document.getElementById('deck');
-        container.className = 'deck-display size-' + size;
+    const container = document.getElementById('deck');
+    const wrapper = document.querySelector('.deck-wrapper');
+    container.className = 'deck-display size-' + size;
+    container.style.gridTemplateColumns = '';
 
-        // On wide screens, apply fixed px column widths for Small/Medium
-        // On narrow screens, all sizes stay fluid (1fr) via CSS
-        const screenW = window.innerWidth;
-        const sidebarW = screenW > 600 ? (screenW > 900 ? 300 : 240) : 0;
-        const padW = screenW > 600 ? 24 : 16;
-        const available = screenW - sidebarW - padW;
+    const screenW = window.innerWidth;
 
-        if (screenW > 900) {
-            // Desktop: use explicit px sizes
-            if (size === 'small')       container.style.gridTemplateColumns = 'repeat(13, ' + Math.floor((available - 12*4) / 13) + 'px)';
-            else if (size === 'medium') container.style.gridTemplateColumns = 'repeat(13, ' + Math.min(90, Math.floor((available - 12*4) / 13)) + 'px)';
-            else                        container.style.gridTemplateColumns = 'repeat(13, 1fr)';
-        } else {
-            // Tablet / phone: always fluid
-            container.style.gridTemplateColumns = 'repeat(13, 1fr)';
-        }
-
-        ['small', 'medium', 'large'].forEach(s => {
-            const btn = document.getElementById('size-' + s + '-btn');
-            if (btn) {
-                btn.style.borderColor = s === size ? 'var(--accent)' : '';
-                btn.style.color = s === size ? 'var(--accent)' : '';
-            }
-        });
-        logMove('Card size set to ' + size.toUpperCase());
+    if (screenW >= 1200) {
+        // Desktop: control size via wrapper width so 13 cols stay but cards shrink
+        if (size === 'small')       wrapper.style.width = '52%';
+        else if (size === 'medium') wrapper.style.width = '76%';
+        else                        wrapper.style.width = '100%';
+    } else if (screenW >= 768) {
+        // iPad: fluid columns, full width
+        wrapper.style.width = '100%';
+    } else {
+        // iPhone: fluid columns, full width
+        wrapper.style.width = '100%';
     }
+
+    ['small', 'medium', 'large'].forEach(s => {
+        const btn = document.getElementById('size-' + s + '-btn');
+        if (btn) {
+            btn.style.borderColor = s === size ? 'var(--accent)' : '';
+            btn.style.color = s === size ? 'var(--accent)' : '';
+        }
+    });
+    logMove('Card size set to ' + size.toUpperCase());
+}
 
     function applyPreset(p) {
         const presets = { 'ACES': "AH,AC,AD,AS", 'KINGS': "KH,KC,KD,KS", 'SPADE_ROYAL': "10S,JS,QS,KS,AS" };
