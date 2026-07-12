@@ -1117,7 +1117,8 @@ if (isSearching && !isTracked && !isSelected) {
     div.classList.add('dimmed');
 }
         container.appendChild(div);
-}
+    });   // closes deck.forEach
+}         // closes renderDeck
 
         function togglePeek() {
         peekMode = !peekMode;
