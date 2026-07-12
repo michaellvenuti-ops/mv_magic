@@ -906,7 +906,7 @@
     let deck = [], undoStack = [], redoStack = [], selectedIndex = null, coachActive = false, peekMode = false;
 
     function saveState() { undoStack.push([...deck]); if(undoStack.length > 50) undoStack.shift();  redoStack = [];}
-    function undoMove() { if(undoStack.length > 0) { deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
+    function undoMove() { if(undoStack.length > 0) { redoStack.push([...deck]); deck = undoStack.pop(); logMove("Undo"); renderDeck(); } }
     function redoMove() { if(redoStack.length > 0) { undoStack.push([...deck]); deck = redoStack.pop(); logMove("Redo"); renderDeck(); } }
     function logMove(msg) { const h = document.getElementById('history'); const e = document.createElement('div'); e.innerText = `> ${msg}`; h.prepend(e); }
 
