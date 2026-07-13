@@ -336,6 +336,7 @@
         <button onclick="gilbrethShuffle()">Gilbreth Shuffle</button>
         <button onclick="cutDeck()">Cut Deck (26)</button>
         <button onclick="randomShuffle()">Randomize</button>
+        <button onclick="tabledRiffle()">Tabled Riffle</button>
         <button onclick="shiftDeck('LEFT')">◀ Shift Left</button>
         <button onclick="shiftDeck('RIGHT')">Shift Right ▶</button>
         <button onclick="reverseTop()">Reverse Top 26</button>
@@ -402,7 +403,6 @@
         <button onclick="runningCut(6)">Running Cut (6 packets)</button>
         <button onclick="overhangShuffle()">Overhand Shuffle</button>
         <button onclick="riffleShuffle()">Riffle Shuffle</button>
-        <button onclick="tabledRiffle()">Tabled Riffle</button>
        </div>
 
 <!-- ============ BFS SOLVER ARENA ============ -->
@@ -3444,19 +3444,36 @@ function riffleShuffle() {
 // ===== TABLED RIFFLE (keeps top and bottom) =====
 function tabledRiffle() {
     saveState();
-    const topCard = deck[0];
-    const bottomCard = deck[deck.length - 1];
-    const middle = deck.slice(1, deck.length - 1);
-    const half = Math.floor(middle.length / 2);
-    let left = middle.slice(0, half);
-    let right = middle.slice(half);
-    let result = [];
+    
+    // Split at a random point near the middle (between 22 and 30)
+    const splitPoint = Math.floor(Math.random() * 9) + 22;
+    let left = deck.slice(0, splitPoint);    // left packet
+    let right = deck.slice(splitPoint);      // right packet
+    
+    // Save the anchor cards
+    const leftBottom = left.pop();           // bottom of left packet stays at bottom of deck
+    const rightTop = right.shift();          // top of right packet stays on top of deck
+    
+    // Imperfect interleave of the remaining middle cards
+    // Right packet drops first (it's the upper half on the table)
+    let middle = [];
     while (left.length > 0 || right.length > 0) {
-        if (right.length > 0) result.push(right.shift());
-        if (left.length > 0) result.push(left.shift());
+        // Drop 1-3 cards from right
+        if (right.length > 0) {
+            const drop = Math.min(Math.floor(Math.random() * 3) + 1, right.length);
+            for (let i = 0; i < drop; i++) middle.push(right.shift());
+        }
+        // Drop 1-3 cards from left
+        if (left.length > 0) {
+            const drop = Math.min(Math.floor(Math.random() * 3) + 1, left.length);
+            for (let i = 0; i < drop; i++) middle.push(left.shift());
+        }
     }
-    deck = [topCard, ...result, bottomCard];
-    logMove('Tabled Riffle: top and bottom cards preserved, middle shuffled.');
+    
+    // Reassemble: rightTop on top, shuffled middle, leftBottom on bottom
+    deck = [rightTop, ...middle, leftBottom];
+    
+    logMove('Tabled Riffle: split at ' + splitPoint + ' — top card (' + rightTop + ') and bottom card (' + leftBottom + ') anchored, middle randomly interleaved.');
     renderDeck();
 }
 
