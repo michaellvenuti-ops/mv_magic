@@ -348,7 +348,9 @@
         <button onclick="clearMultiSelect()" >✕ Clear Selection</button>
         <button onclick="upjogToTop()" >⬆ Upjogged to TOP</button>
         <button onclick="upjogToBottom()" >⬇ Upjogged to BOTTOM</button>
-        <button onclick="milkShuffleOnce()" >✂ Milk Shuffle</button>
+        <button onclick="milkToTop()" >✂ Milk to Top</button>
+        <button onclick="milkToBottom()" >✂ Milk to Bottom</button>
+
         <div style="display:contents;">
             <div style="background:#2a2a2a; border:1px solid #444; border-radius:3px; padding:4px 6px; display:flex; align-items:center; gap:4px; font-size:0.6rem; font-weight:bold; text-transform:uppercase; color:white;">
                 <span style="white-space:nowrap;">Cut at:</span>
@@ -3391,12 +3393,21 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-function milkShuffleOnce() {
+function milkToTop() {
     saveState();
-    const top = deck.shift();       // take top card
-    const bot = deck.pop();         // take bottom card
-    deck = [top, bot, ...deck];     // place both on top together
-    logMove('Milk Shuffle: ' + top + ' (top) and ' + bot + ' (bottom) stripped and placed on top.');
+    const top = deck.shift();
+    const bot = deck.pop();
+    deck = [top, bot, ...deck];
+    logMove('Milk to Top: ' + top + ' (was top) and ' + bot + ' (was bottom) placed on top together.');
+    renderDeck();
+}
+
+function milkToBottom() {
+    saveState();
+    const top = deck.shift();
+    const bot = deck.pop();
+    deck = [...deck, top, bot];
+    logMove('Milk to Bottom: ' + top + ' (was top) and ' + bot + ' (was bottom) placed on bottom together.');
     renderDeck();
 }
     // ===== OVERHAND SHUFFLE =====
