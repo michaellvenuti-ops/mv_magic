@@ -370,7 +370,6 @@
         <button onclick="resetTo('PARTICLE_NDO')">Particle NDO</button>
         <button onclick="resetTo('MNEMONICA_NDO')">Mnemonica NDO</button>
         <button onclick="resetTo('TAMARIZ_NDO')">Tamariz NDO</button>
-        <button onclick="resetTo('REDFORD_NDO')">Redford NDO</button>
 
         <div class="divider" data-label="MEM DECK STACKS"></div>
         <button onclick="resetTo('MNEMONICA')">Mnemonica</button>
@@ -385,16 +384,17 @@
         <button onclick="resetTo('JOYAL')">Joyal</button>
         <button onclick="resetTo('TETRA_RED')">Tetra Red</button>
         <button onclick="resetTo('REDFORD')">Redford</button>
-        <button onclick="resetTo('BART_HARDING')">Bart Harding</button>
-        <button onclick="resetTo('CHEATING_BJ')">Cheating at Blackjack</button>
         
         <div class="divider" data-label="MATHEMATICAL STACKS"></div>
         <button onclick="resetTo('STEBBINS')">Classic Stebbins</button>
         <button onclick="resetTo('MY_STEBBINS')">My Stebbins</button>
+        <button onclick="resetTo('STEBBINS_PLUS2')">Stebbins +2</button>
         <button onclick="resetTo('STEBBINS4')">Stebbins +4</button>
         <button onclick="resetTo('STEBBINS5')">Stebbins +5</button>
         <button onclick="resetTo('REDSTEBBINS')">Red Stebbins 9C to Face</button>
         <button onclick="resetTo('LATIN_FORMULA')">Latin Formula</button>
+        <button onclick="resetTo('FIBONACCI')">Fibonacci</button>
+
 
        <div class="divider" data-label="FALSE WORK (STACK PROTECTION)"></div>
         <button onclick="falseShuffle('ZARROW')">Zarrow (Top/Bot Swap)</button>
@@ -603,6 +603,8 @@
                     <option value="FRENCH_NDO">French NDO</option>
                     <option value="PARTICLE_NDO">Particle NDO</option>
                     <option value="MNEMONICA_NDO">Mnemonica NDO</option>
+                    <option value="STEBBINS_PLUS2">Stebbins +2</option>
+                    <option value="TAMARIZ_NDO">Ta,aroz NDO</option>
                     <option value="REDFORD">Redford</option>
                     <option value="REDSTEBBINS">Redstebbins</option>
                 </select>
@@ -632,6 +634,8 @@
                     <option value="FRENCH_NDO">French NDO</option>
                     <option value="PARTICLE_NDO">Particle NDO</option>
                     <option value="MNEMONICA_NDO">Mnemonica NDO</option>
+                    <option value="STEBBINS_PLUS2">Stebbins +2</option>
+                    <option value="TAMARIZ_NDO">Ta,aroz NDO</option>
                     <option value="REDFORD">Redford</option>
                     <option value="REDSTEBBINS">Redstebbins</option>
                 </select>
@@ -1294,6 +1298,7 @@ if (isSearching && !isTracked && !isSelected) {
         else if(type === 'STEBBINS5') { temp = ["AC","6H","JS","3D","8C","KH","5S","10D","2C","7H","QS","4D","9C","AH","6S","JD","3C","8H","KS","5D","10C","2H","7S","QD","4C","9H","AS","6D","JC","3H","8S","KD","5C","10H","2S","7D","QC","4H","9S","AD","6C","JH","3S","8D","KC","5H","10S","2D","7C","QH","4S","9D"]; }
         else if(type === 'REDFORD') {temp = ["QH", "2S", "5D", "8C", "JH", "KS", "10H", "7C", "4D", "AS","8H", "5C", "2D", "QS", "9H", "6C", "3D", "10S", "7H", "4C", "AD", "JS", "9S", "6H", "3C", "KD", "QD", "10D", "7S", "4H", "AC", "JD", "8S", "5H", "2C", "2H", "QC", "9D", "6S", "3H", "KC", "4S", "AH", "JC", "8D", "5S", "3S", "KH", "10C", "7D", "6D", "9C"];}
         else if(type === 'REDSTEBBINS') { temp = ["QH","2S","5D","8C","JH","AS","4D","7C","10H","KS","3D","6C","9H","QS","2D","5C","8H","JS","AD","4C","7H","10S","KD","3C","6H","9S","QD","2C","5H","8S","JD","AC","4H","7S","10D","KC","3H","6S","9D","QC","2H","5S","8D","JC","AH","4S","7D","10C","KH","3S","6D","9C"]; }
+        else if(type === 'TAMARIZ_NDO') {temp = ["QH", "2S", "5D", "8C", "JH", "KS", "10H", "7C", "4D", "AS","8H", "5C", "2D", "QS", "9H", "6C", "3D", "10S", "7H", "4C", "AD", "JS", "9S", "6H", "3C", "KD", "QD", "10D", "7S", "4H", "AC", "JD", "8S", "5H", "2C", "2H", "QC", "9D", "6S", "3H", "KC", "4S", "AH", "JC", "8D", "5S", "3S", "KH", "10C", "7D", "6D", "9C"];}
         else if(type === 'LATIN_FORMULA') { temp = ["AC","5H","9S","JD","6C","4H","2S","KD","7C","8H","QS","3D","10C","AH","5S","9D","JC","6H","4S","2D","KC","7H","8S","QD","3C","10H","AS","5D","9C","JH","6S","4D","2C","KH","7S","8D","QC","3H","10S","AD","5C","9H","JS","6D","4C","2H","KS","7D","8C","QH","3S","10D"] }
         
         deck = temp; logMove(`Reset: ${type}`); renderDeck();
@@ -2652,7 +2657,7 @@ var COMPARE_STACKS = {
     'FRENCH_NDO': ["KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","KH","QH","JH","10H","9H","8H","7H","6H","5H","4H","3H","2H","AH","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD"],
     'PARTICLE_NDO': ["AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KS","QS","JS","10S","9S","8S","7S","6S","5S","4S","3S","2S","AS","AD","2D","3D","4D","5D","6D","7D","8D","9D","10D","JD","QD","KD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"],
     'REDFORD' : ["QH", "2S", "5D", "8C", "JH", "KS", "10H", "7C", "4D", "AS","8H", "5C", "2D", "QS", "9H", "6C", "3D", "10S", "7H", "4C", "AD", "JS", "9S", "6H", "3C", "KD", "QD", "10D", "7S", "4H", "AC", "JD", "8S", "5H", "2C", "2H", "QC", "9D", "6S", "3H", "KC", "4S", "AH", "JC", "8D", "5S", "3S", "KH", "10C", "7D", "6D", "9C"],
-    'TAMARIZ_NDO' : ['AC','2C','3C','4C','5C','6C','7C','8C','9C','10C','JC','QC','KC','AH','2H','3H','4H','5H','6H','7H','8H','9H','10H','JH','QH','KH','KD','QD','JD','10D','9D','8D','7D','6D','5D','4D','3D','2D','AD','KS','QS','JS','10S','9S','8S','7S','6S','5S','4S','3S','2S','AS'],
+    'TAMARIZ_NDO' : ['AC','2C','3C','4C','5C','6C','7C','8C','9C','10C','JC','QC','KC','AH','2H','3H','4H','5H','6H','7H','8H','9H','10H','JH','QH','KH','KD','QD','JD','10D','9D','8D','7D','6D','5D','4D','3D','2D','AD', 'KS','QS','JS','10S','9S','8S','7S','6S','5S','4S','3S','2S','AS'],
     'MNEMONICA_NDO': ["AS","2S","3S","4S","5S","6S","7S","8S","9S","10S","JS","QS","KS","AH","2H","3H","4H","5H","6H","7H","8H","9H","10H","JH","QH","KH","KD","QD","JD","10D","9D","8D","7D","6D","5D","4D","3D","2D","AD","KC","QC","JC","10C","9C","8C","7C","6C","5C","4C","3C","2C","AC"]
 };
 
