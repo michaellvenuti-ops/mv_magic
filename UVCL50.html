@@ -337,6 +337,9 @@
         <button onclick="cutDeck()">Cut Deck (26)</button>
         <button onclick="randomShuffle()">Randomize</button>
         <button onclick="tabledRiffle()">Tabled Riffle</button>
+        <button onclick="runningCut(6)">Running Cut (6 packets)</button>
+        <button onclick="overhangShuffle()">Overhand Shuffle</button>
+        <button onclick="riffleShuffle()">Riffle Shuffle</button>
         <button onclick="shiftDeck('LEFT')">◀ Shift Left</button>
         <button onclick="shiftDeck('RIGHT')">Shift Right ▶</button>
         <button onclick="reverseTop()">Reverse Top 26</button>
@@ -400,9 +403,6 @@
         <button onclick="falseShuffle('ZARROW')">Zarrow (Top/Bot Swap)</button>
         <button onclick="falseShuffle('BLIND')">Blind Faro (Top 2 Center)</button>
         <button onclick="falseShuffle('PUSHTHROUGH')">Push-Through False Shuffle</button>
-        <button onclick="runningCut(6)">Running Cut (6 packets)</button>
-        <button onclick="overhangShuffle()">Overhand Shuffle</button>
-        <button onclick="riffleShuffle()">Riffle Shuffle</button>
        </div>
 
 <!-- ============ BFS SOLVER ARENA ============ -->
@@ -3425,19 +3425,71 @@ function overhangShuffle() {
 // ===== RIFFLE SHUFFLE (imperfect) =====
 function riffleShuffle() {
     saveState();
-    const half = Math.floor(deck.length / 2);
-    let left = deck.slice(0, half);
-    let right = deck.slice(half);
+    
+    // Random split point between 20 and 32 (realistic human split)
+    const splitPoint = Math.floor(Math.random() * 13) + 20;
+    let left = deck.slice(0, splitPoint);
+    let right = deck.slice(splitPoint);
+    
+    // No anchored cards — everything interleaves freely
     let result = [];
     while (left.length > 0 || right.length > 0) {
-        // Weighted random - drop 1-3 cards from each side at a time
-        const leftDrop = Math.min(Math.floor(Math.random() * 3) + 1, left.length);
-        const rightDrop = Math.min(Math.floor(Math.random() * 3) + 1, right.length);
-        result = result.concat(right.splice(0, rightDrop));
-        result = result.concat(left.splice(0, leftDrop));
+        // Weighted probability — more likely to drop 1 card at a time
+        // but occasionally drops 2 or 3 (realistic thumb release)
+        if (right.length > 0) {
+            const drop = Math.random() < 0.65 ? 1 : 
+                         Math.random() < 0.80 ? 2 : 
+                         Math.min(3, right.length);
+            for (let i = 0; i < Math.min(drop, right.length); i++) {
+                result.push(right.shift());
+            }
+        }
+        if (left.length > 0) {
+            const drop = Math.random() < 0.65 ? 1 : 
+                         Math.random() < 0.80 ? 2 : 
+                         Math.min(3, left.length);
+            for (let i = 0; i < Math.min(drop, left.length); i++) {
+                result.push(left.shift());
+            }
+        }
     }
+    
     deck = result;
-    logMove('Riffle Shuffle: imperfect interleave simulated.');
+    logMove('Riffle Shuffle: split at position ' + splitPoint + ' — fully randomized, no anchored cards.');
+    renderDeck();
+}function riffleShuffle() {
+    saveState();
+    
+    // Random split point between 20 and 32 (realistic human split)
+    const splitPoint = Math.floor(Math.random() * 13) + 20;
+    let left = deck.slice(0, splitPoint);
+    let right = deck.slice(splitPoint);
+    
+    // No anchored cards — everything interleaves freely
+    let result = [];
+    while (left.length > 0 || right.length > 0) {
+        // Weighted probability — more likely to drop 1 card at a time
+        // but occasionally drops 2 or 3 (realistic thumb release)
+        if (right.length > 0) {
+            const drop = Math.random() < 0.65 ? 1 : 
+                         Math.random() < 0.80 ? 2 : 
+                         Math.min(3, right.length);
+            for (let i = 0; i < Math.min(drop, right.length); i++) {
+                result.push(right.shift());
+            }
+        }
+        if (left.length > 0) {
+            const drop = Math.random() < 0.65 ? 1 : 
+                         Math.random() < 0.80 ? 2 : 
+                         Math.min(3, left.length);
+            for (let i = 0; i < Math.min(drop, left.length); i++) {
+                result.push(left.shift());
+            }
+        }
+    }
+    
+    deck = result;
+    logMove('Riffle Shuffle: split at position ' + splitPoint + ' — fully randomized, no anchored cards.');
     renderDeck();
 }
 
