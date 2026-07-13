@@ -3394,8 +3394,11 @@ document.addEventListener('keydown', function(e) {
 
 function milkShuffleOnce() {
     saveState();
-    milkShuffle(1);
-    logMove('Milk Shuffle: stripped 1 card from top and 1 from bottom simultaneously.');
+    const top = deck.shift();       // take top card
+    const bot = deck.pop();         // take bottom card
+    deck = [top, bot, ...deck];     // place both on top together
+    logMove('Milk Shuffle: ' + top + ' (top) and ' + bot + ' (bottom) stripped and placed on top.');
+    renderDeck();
 }
     // ===== OVERHAND SHUFFLE =====
 function overhangShuffle() {
