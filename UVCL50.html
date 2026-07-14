@@ -3224,21 +3224,21 @@ const siStebbinsCulls = [
         saveState();
         document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear (position 52).';
         logMove('Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.');
-        stripToRear(['5','6','7','J','Q','A']);
+        stripToTop(['5','6','7','J','Q','A']);
         siStebbinsCullStage++;
 
     } else if (siStebbinsCullStage === 1) {
         saveState();
         document.getElementById('cs-stebbins-status').innerText = 'Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.';
         logMove('Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.');
-        stripToRear(['8','9','10','5','6','7']);
+        stripToTop(['8','9','10','5','6','7']);
         siStebbinsCullStage++;
 
     } else if (siStebbinsCullStage === 2) {
         saveState();
         document.getElementById('cs-stebbins-status').innerText = 'Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.';
         logMove('Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.');
-        stripToRear(['2','4','A','Q','9','6']);
+        stripToTop(['2','4','A','Q','9','6']);
         siStebbinsCullStage++;
 
     } else if (siStebbinsCullStage === 3) {
@@ -3262,7 +3262,7 @@ const siStebbinsCulls = [
             .concat(groups['7'])
             .concat(groups['4'])
             .concat(groups['A']);
-        document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: four-of-a-kinds separated. Face(pos1) to rear(pos52): J,8,5,2,Q,9,6,3,K,10,7,4,A';
+        document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: four-of-a-kinds separated. Face(pos1) to rear(pos52): A,4,7,10,K,3,6,9,Q,2,5,8,J';
         logMove('Cull 4 complete: four-of-a-kinds clean.');
         renderDeck();
         siStebbinsCullStage++;
