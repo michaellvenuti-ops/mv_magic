@@ -978,30 +978,35 @@
 </div>
     
 <!-- ============ ARONSON SPELLING ARENA ============ -->
-<div id="aronson-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+<div id="aronson-spelling-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Aronson Spelling Demo</span>
-        <button onclick="document.getElementById('aronson-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); background:transparent; cursor:pointer;">&times;</button>
+        <button onclick="document.getElementById('aronson-spelling-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
     </div>
 
-    <div style="font-size:0.7rem; color:#ccc; margin-bottom:15px; line-height:1.4;">
-        The Aronson Stack is a <strong>cyclic map</strong>. By cutting the deck, you can bring any card to the perfect position to spell its own name.
+    <div id="spelling-desc" style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.7; padding:8px; background:rgba(255,183,3,0.06); border-radius:4px; border:1px solid #444;">
+        Select a card. The deck will be cut so the card is at the correct position to spell its own name.
     </div>
 
-    <div style="display:flex; flex-direction:column; gap:10px; background:rgba(255,255,255,0.05); padding:10px; border-radius:8px;">
-        <label style="color:#aaa; font-size:0.65rem;">1. SELECT CARD TO SPELL:</label>
-        <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:5px;"></select>
-        
-        <div style="display:flex; gap:5px;">
-            <button onclick="cutToSelectedCard()" style="flex:1; padding:6px; cursor:pointer;">Cut to Card</button>
-            <button onclick="dealNextLetter()" style="flex:1; padding:6px; cursor:pointer;">Deal Letter</button>
-        </div>
+    <!-- Controls -->
+    <div style="margin-bottom:15px;">
+        <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:5px; margin-bottom:5px; width:100%;"></select>
+        <button onclick="spellLoad()" id="spell-load-btn" style="border-color:var(--gold); color:var(--gold);">&#8635; Load & Cut</button>
+        <button onclick="spellDealStep()" id="spell-step-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654; Deal Next Letter</button>
+        <button onclick="spellRunAll()" id="spell-run-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654;&#9654; Run All</button>
+        <button onclick="spellReset()" id="spell-reset-btn" style="border-color:#555; color:#888; display:none;">&#8635; Reset</button>
     </div>
 
-    <div id="spelling-status" style="margin-top:10px; font-size:0.7rem; color:var(--gold); min-height:1.2em; font-style:italic;"></div>
-    <div id="spelled-cards" style="margin-top:10px; padding:10px; background:rgba(0,0,0,0.3); border-radius:6px; color:#fff; font-size:0.75rem; min-height:50px;"></div>
+    <!-- Spelling Progress Tiles -->
+    <div id="spell-tiles" style="display:flex; gap:5px; margin-bottom:12px; flex-wrap:wrap;"></div>
+
+    <!-- Dealing Table -->
+    <div id="spell-table" style="display:none; padding:10px; background:rgba(255,255,255,0.05); border-radius:8px;">
+        <div id="spelled-cards-row" class="hand-row" style="flex-wrap:wrap; min-height:80px; gap:5px;"></div>
+        <div id="spell-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold);"></div>
+    </div>
 </div>
-
+    
 <script>
     
     const suitSymbols = {'C':'♣', 'H':'♥', 'S':'♠', 'D':'♦'};
@@ -2103,83 +2108,122 @@ function mcReset() {
 // ARONSON SPELLING DEMO BASED ON ACAAN
 // ================================================================
 // Global variable to track progress
-let spellingTarget = "";
-let lettersRemaining = [];
+var spellDealIdx = 0;
+var spellDealOrder = []; // Array of {letter: 'A', card: 'AH'}
 
 function showAronsonSpellingDemo() {
-    // Reset to Aronson Stack
-    deck = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
-    renderDeck();
+    var arena = document.getElementById('aronson-spelling-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({behavior:'smooth', block:'nearest'});
     
-    // Show Arena
-    document.getElementById('aronson-arena').style.display = 'block';
-    document.getElementById('aronson-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Populate select
+    var select = document.getElementById('card-select');
+    select.innerHTML = ARONSON.map((c, i) => `<option value="${i}">${c}</option>`).join('');
     
-    prepareSpelling();
+    spellReset();
 }
 
-function prepareSpelling() {
-    const select = document.getElementById('card-select');
-    select.innerHTML = deck.map((c, i) => `<option value="${i}">${c}</option>`).join('');
-    document.getElementById('spelled-cards').innerHTML = "";
-    document.getElementById('spelling-status').innerText = "Stack reset. Select a card and click 'Cut to Card'.";
-}
-
-function cutToSelectedCard() {
-    const cardIndex = parseInt(document.getElementById('card-select').value);
-    const cardName = deck[cardIndex];
-    const targetPos = 11; // Ideal spelling position
+function spellLoad() {
+    saveState();
+    // 1. Reset deck to Aronson
+    deck = [...ARONSON];
     
-    const currentPos = deck.indexOf(cardName) + 1;
-    let cutCount = currentPos - targetPos;
+    // 2. Determine target
+    var cardIdx = parseInt(document.getElementById('card-select').value);
+    var targetCard = deck[cardIdx];
+    var targetName = getCardFullName(targetCard);
+    var letters = targetName.replace(/ /g, '').split(''); // "ACE OF HEARTS" -> "ACEOFHEARTS"
+    
+    // 3. Force Cut (To spell correctly, card needs to be at position [letters.length])
+    var targetPos = letters.length; 
+    var currentPos = deck.indexOf(targetCard) + 1;
+    var cutCount = currentPos - targetPos;
     if (cutCount < 0) cutCount += 52;
     
-    // Perform Cut
-    const topChunk = deck.splice(0, cutCount);
+    var topChunk = deck.splice(0, cutCount);
     deck = deck.concat(topChunk);
-    
-    // Simple mapping for spelling - Add your own keys as needed!
-    const spellMap = { "AH": "ACE OF HEARTS", "JS": "JACK OF SPADES", "KC": "KING OF CLUBS" }; 
-    const targetName = spellMap[cardName] || "ACE OF HEARTS";
-    lettersRemaining = targetName.split('');
-    
     renderDeck();
-    document.getElementById('spelling-status').innerText = `Deck cut! Now spell: ${targetName}.`;
+    
+    // 4. Build Deal Order
+    spellDealOrder = [];
+    for (var i = 0; i < letters.length; i++) {
+        spellDealOrder.push({ letter: letters[i], card: deck[i] });
+    }
+    
+    // 5. Build Tiles
+    var tdiv = document.getElementById('spell-tiles');
+    tdiv.innerHTML = '';
+    spellDealOrder.forEach((step, i) => {
+        var t = document.createElement('div');
+        t.id = 'spell-tile-' + i;
+        t.style.cssText = 'padding:4px 8px; border-radius:4px; border:1px solid #444; background:#111; color:#555; font-size:0.5rem; text-align:center;';
+        t.innerHTML = step.letter + '<br><span style="font-size:0.4rem; color:var(--gold);">' + (i+1) + '</span>';
+        tdiv.appendChild(t);
+    });
+    
+    spellDealIdx = 0;
+    document.getElementById('spell-table').style.display = 'block';
+    document.getElementById('spell-load-btn').style.display = 'none';
+    document.getElementById('spell-step-btn').style.display = 'inline-block';
+    document.getElementById('spell-run-btn').style.display = 'inline-block';
+    document.getElementById('spell-reset-btn').style.display = 'inline-block';
 }
 
-function dealNextLetter() {
-    if (lettersRemaining.length === 0) return;
+function spellDealStep() {
+    if (spellDealIdx >= spellDealOrder.length) return;
     
-    const letter = lettersRemaining.shift();
-    const card = deck.shift();
+    var step = spellDealOrder[spellDealIdx];
+    var row = document.getElementById('spelled-cards-row');
     
-    const area = document.getElementById('spelled-cards');
-    area.innerHTML += `<div><strong>${letter}:</strong> ${card}</div>`;
+    // Create card UI
+    var ui = createCardUI(step.card);
+    ui.innerHTML += `<div style="font-size:0.5rem; margin-top:2px;">${step.letter}</div>`;
+    row.appendChild(ui);
     
-    renderDeck();
-    if (lettersRemaining.length === 0) {
-        document.getElementById('spelling-status').innerText = "Success! The card is at the end of the spell.";
+    // Update Tile
+    var tile = document.getElementById('spell-tile-' + spellDealIdx);
+    tile.style.borderColor = 'var(--gold)';
+    tile.style.color = '#fff';
+    
+    spellDealIdx++;
+    
+    if (spellDealIdx === spellDealOrder.length) {
+        document.getElementById('spell-reveal').style.display = 'block';
+        document.getElementById('spell-reveal').innerHTML = `Success! The final card dealt is the <strong>${step.card}</strong>.`;
+        document.getElementById('spell-step-btn').style.display = 'none';
+        document.getElementById('spell-run-btn').style.display = 'none';
     }
 }
 
-function dealNextLetter() {
-    if (lettersRemaining.length === 0) {
-        document.getElementById('spelling-status').innerText = "Spelling complete!";
-        return;
-    }
-    
-    const letter = lettersRemaining.shift();
-    const card = deck.shift(); // Remove top card
-    
-    // Add to UI
-    const area = document.getElementById('spelled-cards');
-    area.innerHTML += `<span>${letter}: ${card}</span><br>`;
-    
-    if (lettersRemaining.length === 0) {
-        document.getElementById('spelling-status').innerText = `Success! The last card is the ${card}!`;
-    }
-    
-    renderDeck();
+function spellRunAll() {
+    var i = spellDealIdx;
+    var interval = setInterval(() => {
+        if (i >= spellDealOrder.length) {
+            clearInterval(interval);
+            return;
+        }
+        spellDealStep();
+        i++;
+    }, 400);
+}
+
+function spellReset() {
+    spellDealIdx = 0;
+    document.getElementById('spelled-cards-row').innerHTML = '';
+    document.getElementById('spell-tiles').innerHTML = '';
+    document.getElementById('spell-reveal').style.display = 'none';
+    document.getElementById('spell-table').style.display = 'none';
+    document.getElementById('spell-load-btn').style.display = 'inline-block';
+    document.getElementById('spell-step-btn').style.display = 'none';
+    document.getElementById('spell-run-btn').style.display = 'none';
+    document.getElementById('spell-reset-btn').style.display = 'none';
+}
+
+// Ensure you have this helper
+function getCardFullName(code) {
+    const rankMap = {'2':'TWO','3':'THREE','4':'FOUR','5':'FIVE','6':'SIX','7':'SEVEN','8':'EIGHT','9':'NINE','10':'TEN','J':'JACK','Q':'QUEEN','K':'KING','A':'ACE'};
+    const suitMap = {'C':'CLUBS','D':'DIAMONDS','H':'HEARTS','S':'SPADES'};
+    return `${rankMap[code.slice(0,-1)]} OF ${suitMap[code.slice(-1)]}`;
 }
 // ================================================================
 // NDO -> MNEMONICA NDO DEMO (Tamariz block shuffle)
