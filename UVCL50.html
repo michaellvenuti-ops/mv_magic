@@ -2108,15 +2108,19 @@ function mcReset() {
 // ARONSON SPELLING DEMO BASED ON ACAAN
 // ================================================================
 // Global variable to track progress
+// 1. Define the stack using the exact name your code is looking for
+const ARONSON = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
+
+// 2. Global variables needed for the demo
 var spellDealIdx = 0;
-var spellDealOrder = []; // Array of {letter: 'A', card: 'AH'}
+var spellDealOrder = [];
 
 function showAronsonSpellingDemo() {
     var arena = document.getElementById('aronson-spelling-arena');
     arena.style.display = 'block';
     arena.scrollIntoView({behavior:'smooth', block:'nearest'});
     
-    // Populate select
+    // Populate the dropdown using the ARONSON variable
     var select = document.getElementById('card-select');
     select.innerHTML = ARONSON.map((c, i) => `<option value="${i}">${c}</option>`).join('');
     
@@ -2125,16 +2129,16 @@ function showAronsonSpellingDemo() {
 
 function spellLoad() {
     saveState();
-    // 1. Reset deck to Aronson
+    // Reset deck to ARONSON
     deck = [...ARONSON];
     
-    // 2. Determine target
-    var cardIdx = parseInt(document.getElementById('card-select').value);
-    var targetCard = deck[cardIdx];
+    // Get selection
+    var select = document.getElementById('card-select');
+    var targetCard = deck[parseInt(select.value)];
     var targetName = getCardFullName(targetCard);
-    var letters = targetName.replace(/ /g, '').split(''); // "ACE OF HEARTS" -> "ACEOFHEARTS"
+    var letters = targetName.replace(/ /g, '').split(''); 
     
-    // 3. Force Cut (To spell correctly, card needs to be at position [letters.length])
+    // Cut logic: Force card to position = number of letters
     var targetPos = letters.length; 
     var currentPos = deck.indexOf(targetCard) + 1;
     var cutCount = currentPos - targetPos;
@@ -2144,30 +2148,26 @@ function spellLoad() {
     deck = deck.concat(topChunk);
     renderDeck();
     
-    // 4. Build Deal Order
-    spellDealOrder = [];
-    for (var i = 0; i < letters.length; i++) {
-        spellDealOrder.push({ letter: letters[i], card: deck[i] });
-    }
+    // Build steps
+    spellDealOrder = letters.map((l, i) => ({ letter: l, card: deck[i] }));
     
-    // 5. Build Tiles
-    var tdiv = document.getElementById('spell-tiles');
-    tdiv.innerHTML = '';
-    spellDealOrder.forEach((step, i) => {
-        var t = document.createElement('div');
-        t.id = 'spell-tile-' + i;
-        t.style.cssText = 'padding:4px 8px; border-radius:4px; border:1px solid #444; background:#111; color:#555; font-size:0.5rem; text-align:center;';
-        t.innerHTML = step.letter + '<br><span style="font-size:0.4rem; color:var(--gold);">' + (i+1) + '</span>';
-        tdiv.appendChild(t);
-    });
-    
-    spellDealIdx = 0;
+    // UI Updates
     document.getElementById('spell-table').style.display = 'block';
     document.getElementById('spell-load-btn').style.display = 'none';
     document.getElementById('spell-step-btn').style.display = 'inline-block';
     document.getElementById('spell-run-btn').style.display = 'inline-block';
     document.getElementById('spell-reset-btn').style.display = 'inline-block';
 }
+
+function getCardFullName(code) {
+    const r = code.slice(0, -1);
+    const s = code.slice(-1);
+    const ranks = {'2':'TWO','3':'THREE','4':'FOUR','5':'FIVE','6':'SIX','7':'SEVEN','8':'EIGHT','9':'NINE','10':'TEN','J':'JACK','Q':'QUEEN','K':'KING','A':'ACE'};
+    const suits = {'C':'CLUBS','D':'DIAMONDS','H':'HEARTS','S':'SPADES'};
+    return `${ranks[r]} OF ${suits[s]}`;
+}
+
+// ... include your existing spellDealStep, spellRunAll, and spellReset functions here ...
 
 function spellDealStep() {
     if (spellDealIdx >= spellDealOrder.length) return;
