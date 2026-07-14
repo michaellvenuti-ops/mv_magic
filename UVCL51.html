@@ -991,16 +991,18 @@
         <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:8px; width:100%; cursor:pointer;"></select>
     </div>
 
-    <!-- Step 2: Controls -->
-    <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; margin-bottom:15px;">
-        <div style="color:#aaa; font-size:0.6rem; margin-bottom:5px;">STEP 2: ACTIONS</div>
-        <div style="display:flex; gap:5px;">
-            <button onclick="spellLoad()" id="spell-load-btn" style="flex:1; padding:6px; cursor:pointer;">Load Aronson</button>
-            <button onclick="spellCut()" id="spell-cut-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Explain & Cut</button>
-            <button onclick="spellDealStep()" id="spell-step-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Deal Letter</button>
-            <button onclick="spellReset()" id="spell-reset-btn" style="flex:1; padding:6px; cursor:pointer; display:none; background:#8b0000; color:white; border:none;">Reset</button>
-        </div>
+<!-- STEP 2: ACTIONS & Controls -->
+<div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; margin-bottom:15px;">
+    <div style="color:#aaa; font-size:0.6rem; margin-bottom:5px;">STEP 2: ACTIONS</div>
+    <div style="display:flex; gap:5px;">
+        <button onclick="spellLoad()" id="spell-load-btn" style="flex:1; padding:6px; cursor:pointer;">Load Aronson</button>
+        <button onclick="spellCut()" id="spell-cut-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Explain & Cut</button>
+        <button onclick="spellDealStep()" id="spell-step-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Deal Letter</button>
+        <button onclick="spellReset()" id="spell-reset-btn" style="flex:1; padding:6px; cursor:pointer; display:none; background:#8b0000; color:white; border:none;">Reset</button>
     </div>
+</div>
+    
+    
 
     <div id="spell-math" style="display:none; padding:10px; background:rgba(255,183,3,0.05); border:1px solid var(--gold); color:var(--gold); font-size:0.7rem; margin-bottom:10px; border-radius:4px;"></div>
 
@@ -2141,12 +2143,9 @@ function spellLoad() {
 function spellCut() {
     var select = document.getElementById('card-select');
     var targetCard = deck[parseInt(select.value)];
-    
-    // These functions now exist because you added the code block above
-    var rankName = getRankName(targetCard); 
-    var fullName = getCardFullName(targetCard); 
-    
-    var letters = fullName.replace(/ /g, '').split('');
+    var rankName = getRankName(targetCard);
+    var fullName = getCardFullName(targetCard);
+    var letters = fullName.replace(/ /g, '').split(''); 
     
     // Math
     var targetPos = letters.length; 
@@ -2154,20 +2153,23 @@ function spellCut() {
     var cutCount = currentPos - targetPos;
     if (cutCount < 0) cutCount += 52;
     
-    // Show Math
+    // Show Math with clear explanation
     var mathDiv = document.getElementById('spell-math');
     mathDiv.style.display = 'block';
-    mathDiv.innerHTML = `<strong>ACAAN Math:</strong> ${targetCard} is at pos ${currentPos}. To spell "${fullName}", we need it at pos ${targetPos}. Cutting ${cutCount} cards...`;
+    // Explicitly explaining the cut:
+    mathDiv.innerHTML = `<strong>ACAAN Math:</strong> ${targetCard} is currently at position ${currentPos}. By cutting ${cutCount} cards to the bottom, we move the ${targetCard} to position ${targetPos}. This places it perfectly to be the final card dealt when we spell "${fullName}".`;
     
     // Perform Cut
     var topChunk = deck.splice(0, cutCount);
     deck = deck.concat(topChunk);
     renderDeck();
     
+    // Build Steps with "Is this the OF break?" flags
     spellDealOrder = letters.map((l, i) => ({ 
         letter: l, 
         card: deck[i],
-        isOfStart: (i === rankName.length) 
+        isOfEnd: (l === 'F' && letters[i+1] === 'O'), // The F before OF
+        isOfStart: (l === 'O' && letters[i-1] === 'F') // The O after OF
     }));
     
     document.getElementById('spell-step-btn').style.display = 'inline-block';
@@ -2184,8 +2186,9 @@ function spellDealStep() {
     var container = document.createElement('div');
     container.style.textAlign = 'center';
     
-    // Gap only before "OF"
-    container.style.margin = step.isOfStart ? '5px 5px 5px 30px' : '5px 5px';
+    // Apply gap: Right margin on F, Left margin on O
+    container.style.marginLeft = step.isOfStart ? '40px' : '5px';
+    container.style.marginRight = step.isOfEnd ? '40px' : '5px';
     
     var cardUI = createCardUI(step.card);
     var letterLabel = document.createElement('div');
