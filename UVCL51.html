@@ -979,29 +979,33 @@
     
 <!-- ARONSON SPELLING ARENA -->
 <div id="aronson-spelling-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <!-- Header -->
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Aronson Spelling Demo</span>
-        <button onclick="document.getElementById('aronson-spelling-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); background:transparent; cursor:pointer;">&times;</button>
+        <button onclick="document.getElementById('aronson-spelling-arena').style.display='none'" style="background:transparent; border:1px solid #444; color:#fff; cursor:pointer;">&times;</button>
     </div>
 
-    <!-- Controls -->
+    <!-- Step 1: Select -->
+    <div style="margin-bottom:15px;">
+        <div style="color:#aaa; font-size:0.6rem; margin-bottom:5px;">STEP 1: SELECT A CARD</div>
+        <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:8px; width:100%; cursor:pointer;"></select>
+    </div>
+
+    <!-- Step 2: Controls -->
     <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; margin-bottom:15px;">
-        <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:5px; width:100%; margin-bottom:10px;"></select>
+        <div style="color:#aaa; font-size:0.6rem; margin-bottom:5px;">STEP 2: ACTIONS</div>
         <div style="display:flex; gap:5px;">
-            <button onclick="spellLoad()" style="flex:1; padding:6px; cursor:pointer;">1. Load Aronson</button>
-            <button onclick="spellCut()" id="spell-cut-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">2. Explain & Cut</button>
-            <button onclick="spellDealStep()" id="spell-step-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">3. Deal Letter</button>
-            <button onclick="spellReset()" id="spell-reset-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Reset</button>
+            <button onclick="spellLoad()" id="spell-load-btn" style="flex:1; padding:6px; cursor:pointer;">Load Aronson</button>
+            <button onclick="spellCut()" id="spell-cut-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Explain & Cut</button>
+            <button onclick="spellDealStep()" id="spell-step-btn" style="flex:1; padding:6px; cursor:pointer; display:none;">Deal Letter</button>
+            <button onclick="spellReset()" id="spell-reset-btn" style="flex:1; padding:6px; cursor:pointer; display:none; background:#8b0000; color:white; border:none;">Reset</button>
         </div>
     </div>
 
-    <!-- Math Explanation -->
     <div id="spell-math" style="display:none; padding:10px; background:rgba(255,183,3,0.05); border:1px solid var(--gold); color:var(--gold); font-size:0.7rem; margin-bottom:10px; border-radius:4px;"></div>
 
-    <!-- Table -->
     <div id="spell-table" style="display:none; padding:10px; background:rgba(0,0,0,0.3); border-radius:8px;">
-        <div id="spelled-cards-row" style="display:flex; flex-wrap:wrap; min-height:80px; gap:2px; align-items:center;"></div>
-        <div id="spell-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold);"></div>
+        <div id="spelled-cards-row" style="display:flex; flex-wrap:wrap; min-height:100px; gap:2px; align-items:center;"></div>
     </div>
 </div>
     
@@ -2109,37 +2113,39 @@ function mcReset() {
 // 1. Define the stack using the exact name your code is looking for
 // PUT THIS AT THE VERY TOP OF YOUR SCRIPT
 // 1. Defined globally so it never "Disappears"
+// Global Variables
 const ARONSON = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
 var spellDealIdx = 0;
 var spellDealOrder = [];
 
-// Trigger to open the window
 function showAronsonSpellingDemo() {
     var arena = document.getElementById('aronson-spelling-arena');
     arena.style.display = 'block';
+    
+    // Auto-populate select on open
+    var select = document.getElementById('card-select');
+    if (select.options.length === 0) {
+        select.innerHTML = ARONSON.map((c, i) => `<option value="${i}">${c}</option>`).join('');
+    }
     arena.scrollIntoView({behavior:'smooth', block:'nearest'});
-    spellReset();
 }
 
 function spellLoad() {
-    // Reset deck and populate list
     deck = [...ARONSON];
     renderDeck();
-    var select = document.getElementById('card-select');
-    select.innerHTML = ARONSON.map((c, i) => `<option value="${i}">${c}</option>`).join('');
-    
+    document.getElementById('spell-load-btn').style.display = 'none';
     document.getElementById('spell-cut-btn').style.display = 'inline-block';
-    document.getElementById('spell-table').style.display = 'none';
-    document.getElementById('spell-math').style.display = 'none';
-    document.getElementById('spelled-cards-row').innerHTML = '';
+    document.getElementById('spell-reset-btn').style.display = 'inline-block';
 }
 
 function spellCut() {
     var select = document.getElementById('card-select');
     var targetCard = deck[parseInt(select.value)];
-    var targetName = getCardFullName(targetCard);
-    var letters = targetName.replace(/ /g, '').split(''); 
+    var rankName = getRankName(targetCard);
+    var fullName = getCardFullName(targetCard);
+    var letters = fullName.replace(/ /g, '').split(''); 
     
+    // Math
     var targetPos = letters.length; 
     var currentPos = deck.indexOf(targetCard) + 1;
     var cutCount = currentPos - targetPos;
@@ -2148,14 +2154,19 @@ function spellCut() {
     // Show Math
     var mathDiv = document.getElementById('spell-math');
     mathDiv.style.display = 'block';
-    mathDiv.innerHTML = `<strong>ACAAN Math:</strong> ${targetCard} is at pos ${currentPos}. To spell "${targetName}" (${letters.length} letters), we need it at pos ${targetPos}. Cutting ${cutCount} cards...`;
+    mathDiv.innerHTML = `<strong>ACAAN Math:</strong> ${targetCard} is at pos ${currentPos}. To spell "${fullName}", we need it at pos ${targetPos}. Cutting ${cutCount} cards...`;
     
-    // Cut
+    // Perform Cut
     var topChunk = deck.splice(0, cutCount);
     deck = deck.concat(topChunk);
     renderDeck();
     
-    spellDealOrder = letters.map((l, i) => ({ letter: l, card: deck[i] }));
+    spellDealOrder = letters.map((l, i) => ({ 
+        letter: l, 
+        card: deck[i],
+        isOfStart: (i === rankName.length) 
+    }));
+    
     document.getElementById('spell-step-btn').style.display = 'inline-block';
     document.getElementById('spell-cut-btn').style.display = 'none';
     document.getElementById('spell-table').style.display = 'block';
@@ -2170,12 +2181,8 @@ function spellDealStep() {
     var container = document.createElement('div');
     container.style.textAlign = 'center';
     
-    // Logic for extra spacing around "O" and "F"
-    if (step.letter === 'O' || step.letter === 'F') {
-        container.style.margin = '5px 25px';
-    } else {
-        container.style.margin = '5px 2px';
-    }
+    // Gap only before "OF"
+    container.style.margin = step.isOfStart ? '5px 5px 5px 30px' : '5px 5px';
     
     var cardUI = createCardUI(step.card);
     var letterLabel = document.createElement('div');
@@ -2189,35 +2196,29 @@ function spellDealStep() {
     row.appendChild(container);
     
     spellDealIdx++;
-    
-    if (spellDealIdx === spellDealOrder.length) {
-        document.getElementById('spell-step-btn').style.display = 'none';
-        var finalMsg = document.createElement('div');
-        finalMsg.style.width = '100%';
-        finalMsg.style.color = 'var(--gold)';
-        finalMsg.style.marginTop = '10px';
-        finalMsg.style.fontSize = '0.7rem';
-        finalMsg.innerText = "Success! This principle works with ANY memorized stack; you just need to know the card's position.";
-        row.appendChild(finalMsg);
-    }
 }
 
 function spellReset() {
+    // 1. Reset logic
     spellDealIdx = 0;
+    spellDealOrder = [];
+    
+    // 2. Hide/Show buttons
+    document.getElementById('spell-load-btn').style.display = 'inline-block';
+    document.getElementById('spell-cut-btn').style.display = 'none';
+    document.getElementById('spell-step-btn').style.display = 'none';
+    document.getElementById('spell-reset-btn').style.display = 'none';
+    
+    // 3. Clear UI
     document.getElementById('spell-table').style.display = 'none';
     document.getElementById('spell-math').style.display = 'none';
-    document.getElementById('spell-step-btn').style.display = 'none';
-    document.getElementById('spell-cut-btn').style.display = 'none';
-    document.getElementById('spell-reset-btn').style.display = 'none';
-    document.getElementById('spell-load-btn').style.display = 'inline-block';
+    document.getElementById('spelled-cards-row').innerHTML = '';
 }
 
-function getCardFullName(code) {
+function getRankName(code) {
     const r = code.slice(0, -1);
-    const s = code.slice(-1);
     const ranks = {'2':'TWO','3':'THREE','4':'FOUR','5':'FIVE','6':'SIX','7':'SEVEN','8':'EIGHT','9':'NINE','10':'TEN','J':'JACK','Q':'QUEEN','K':'KING','A':'ACE'};
-    const suits = {'C':'CLUBS','D':'DIAMONDS','H':'HEARTS','S':'SPADES'};
-    return `${ranks[r]} OF ${suits[s]}`;
+    return ranks[r];
 }
 // ================================================================
 // NDO -> MNEMONICA NDO DEMO (Tamariz block shuffle)
