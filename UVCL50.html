@@ -3242,13 +3242,35 @@ const siStebbinsCulls = [
         siStebbinsCullStage++;
 
     } else if (siStebbinsCullStage === 3) {
-        saveState();
-        document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: four-of-a-kinds separated. Pos 1=A through Pos 52=J.';
-        logMove('Cull 4: 3s, Ks, 10s, 7s, 4s, As stripped to rear. Four-of-a-kinds complete.');
-        stripToTop(['3','K','10','7','4','A']);
-        siStebbinsCullStage++;
-
-    } else if (siStebbinsCullStage === 4) {
+    saveState();
+    // Bucket 3s and Ks separately to prevent interleaving
+    // All other Cull 4 values (10,7,4,A) are already clean groups from culls 1-3
+    let aces = [], fours = [], sevens = [], tens = [], kings = [], threes = [], remaining = [];
+    deck.forEach(card => {
+        const val = card.replace(/[SHDC]/, '');
+        if      (val === 'A')  aces.push(card);
+        else if (val === '4')  fours.push(card);
+        else if (val === '7')  sevens.push(card);
+        else if (val === '10') tens.push(card);
+        else if (val === 'K')  kings.push(card);
+        else if (val === '3')  threes.push(card);
+        else remaining.push(card);
+    });
+    // stripToTop means Cull 4 values go to position 1
+    // Order at top: A,4,7,10,K,3 then remaining (already sorted J,8,5,2,Q,9,6 groups)
+    deck = aces
+        .concat(fours)
+        .concat(sevens)
+        .concat(tens)
+        .concat(kings)
+        .concat(threes)
+        .concat(remaining);
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: four-of-a-kinds separated. Pos 1=A through Pos 52=J.';
+    logMove('Cull 4 complete: four-of-a-kinds clean.');
+    renderDeck();
+    siStebbinsCullStage++;
+    }    
+    else if (siStebbinsCullStage === 4) {
         prepareSiStebbinsCull5();
         logMove(siStebbinsCulls[4].desc);
         siStebbinsCullStage++;
