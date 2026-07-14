@@ -3255,13 +3255,13 @@ if (siStebbinsCullStage === 0) {
         // Face to rear after Cull 4: J,8,5,2,Q,9,6,3,K,10,7,4,A
         // stripToTop means Cull 4 values go to position 1 (face)
         // So: 3,K,10,7,4,A at top then remaining (J,8,5,2,Q,9,6 already there)
-        deck = groups['3']
-            .concat(groups['K'])
-            .concat(groups['10'])
-            .concat(groups['7'])
-            .concat(groups['4'])
-            .concat(groups['A'])
-            .concat(remaining);
+       deck = remaining
+    .concat(groups['3'])
+    .concat(groups['K'])
+    .concat(groups['10'])
+    .concat(groups['7'])
+    .concat(groups['4'])
+    .concat(groups['A']);
         document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: all four-of-a-kinds separated. Order face to rear: J,8,5,2,Q,9,6,3,K,10,7,4,A';
         logMove('Cull 4 complete: four-of-a-kinds clean. Order face(pos1) to rear(pos52): J,8,5,2,Q,9,6,3,K,10,7,4,A');
         renderDeck();
