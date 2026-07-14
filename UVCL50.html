@@ -3005,6 +3005,7 @@ function runBerglasSolver() {
     
 // Function to handle the "Strip to Rear" mechanics
 function stripToRear(criteria) {
+    saveState();
     let toRear = [];
     let remaining = [];
     
@@ -3211,35 +3212,38 @@ function siStebbinsExecuteCulls1to4() {
 let siStebbinsCullStage = 0;
 function nextSiStebbinsCull() {
 const siStebbinsCulls = [
-    { desc: "Cull 1: Stripping As, 2s, 3s, 4s, 5s, 6s, 7s to TOP.", vals: ["A","2","3","4","5","6","7"] },
-    { desc: "Cull 2: Stripping 8s, 9s, 10s, Js, Qs, Ks to TOP.", vals: ["8","9","10","J","Q","K"] },
-    { desc: "Cull 3: Stripping As, 4s, 7s, 10s, Ks to TOP (alternating values for CHaSeD grouping).", vals: ["A","4","7","10","K"] },
-    { desc: "Cull 4: Stripping 2s, 5s, 8s, Js to TOP.", vals: ["2","5","8","J"] },
-    { desc: "Cull 5: Soulmate/Pair sorting. Preparing...", vals: [] },
-    { desc: "Cull 6: Suit sorting (CHaSeD pattern). Preparing...", vals: [] }
+    { desc: "Cull 1: Upjog 5s, 6s, 7s, Js, Qs, As — strip to rear.", vals: ["5","6","7","J","Q","A"] },
+    { desc: "Cull 2: Upjog 8s, 9s, 10s, 5s, 6s, 7s — strip to rear.", vals: ["8","9","10","5","6","7"] },
+    { desc: "Cull 3: Upjog 2s, 4s, As, Qs, 9s, 6s — strip to rear.", vals: ["2","4","A","Q","9","6"] },
+    { desc: "Cull 4: Upjog 3s, Ks, 10s, 7s, 4s, As — strip to rear. At this point all the cards have been separated into four of a kind and they are in this order from face bottom to rear, Js, 8s, 5s, 2s, Qs, 6s, 3s, Ks, 10s, 7s, 4s, As", vals: ["3","K","10","7","4","A"] },
+    { desc: "Cull 5: Start upjogging the cards alternately in red and black pairs So upjog the Black Js, then Red 8s, then Black 5s, then Red 2s, then Black Qs, then Red 9s, then Black 6s, Then Red 3s, Black Ks, Red 10s, Black 7s, Red 4s, Black As Strip out and place to rear.", vals: [] },
+    { desc: "Cull 6: Suit sorting (Reversed CHaSeD pattern D,S,H,C from Face). Upjog first diamon then spade then heart then clubs.", vals: [] }
 ];
     
-    if (siStebbinsCullStage === 0) {
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Spreading through, upjogging 5s, 6s, 7s, Js, Qs, As...';
+if (siStebbinsCullStage === 0) {
+    saveState();
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.';
     logMove('Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.');
-    stripToTop(['5','6','7','J','Q','A']);
+    stripToRear(['5','6','7','J','Q','A']);
     siStebbinsCullStage++;
 } else if (siStebbinsCullStage === 1) {
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s...';
+    saveState();
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.';
     logMove('Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.');
-    stripToTop(['8','9','10','5','6','7']);
+    stripToRear(['8','9','10','5','6','7']);
     siStebbinsCullStage++;
 } else if (siStebbinsCullStage === 2) {
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s...';
+    saveState();
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.';
     logMove('Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.');
-    stripToTop(['2','4','A','Q','9','6']);
+    stripToRear(['2','4','A','Q','9','6']);
     siStebbinsCullStage++;
 } else if (siStebbinsCullStage === 3) {
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: deck now in 13 four-of-a-kinds. Order: J,8,5,2,Q,9,6,3,K,10,7,4,A';
-    logMove('Cull 4: Upjogging 3s, Ks, 10s, 7s, 4s, As — stripping to rear. Four-of-a-kinds complete.');
-    siStebbinsExecuteCulls1to4();
+    saveState();
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 4: Upjogging 3s, Ks, 10s, 7s, 4s, As — stripping to rear. Four-of-a-kinds complete.';
+    logMove('Cull 4: Upjogging 3s, Ks, 10s, 7s, 4s, As — stripping to rear.');
+    stripToRear(['3','K','10','7','4','A']);
     siStebbinsCullStage++;
-    }
 }
 
   function prepareSiStebbinsCull5() {
