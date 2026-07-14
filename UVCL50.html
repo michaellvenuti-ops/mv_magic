@@ -3245,6 +3245,7 @@ if (siStebbinsCullStage === 0) {
     stripToRear(['3','K','10','7','4','A']);
     siStebbinsCullStage++;
 }
+}
 
   function prepareSiStebbinsCull5() {
     const pairs = ["JC", "JS", "8H", "8D", "5C", "5S", "2H", "2D", "QC", "QS", "9H", "9D", "6C", "6S", "3H", "3D", "KC", "KS", "10H", "10D", "7C", "7S", "4H", "4D", "AC", "AS"];
@@ -3461,7 +3462,8 @@ function riffleShuffle() {
     deck = result;
     logMove('Riffle Shuffle: split at position ' + splitPoint + ' — fully randomized, no anchored cards.');
     renderDeck();
-}function riffleShuffle() {
+}
+    function riffleShuffle() {
     saveState();
     
     // Random split point between 20 and 32 (realistic human split)
