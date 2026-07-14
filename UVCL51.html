@@ -2141,9 +2141,12 @@ function spellLoad() {
 function spellCut() {
     var select = document.getElementById('card-select');
     var targetCard = deck[parseInt(select.value)];
-    var rankName = getRankName(targetCard);
-    var fullName = getCardFullName(targetCard);
-    var letters = fullName.replace(/ /g, '').split(''); 
+    
+    // These functions now exist because you added the code block above
+    var rankName = getRankName(targetCard); 
+    var fullName = getCardFullName(targetCard); 
+    
+    var letters = fullName.replace(/ /g, '').split('');
     
     // Math
     var targetPos = letters.length; 
@@ -2213,6 +2216,14 @@ function spellReset() {
     document.getElementById('spell-table').style.display = 'none';
     document.getElementById('spell-math').style.display = 'none';
     document.getElementById('spelled-cards-row').innerHTML = '';
+}
+
+function getCardFullName(code) {
+    const r = code.slice(0, -1);
+    const s = code.slice(-1);
+    const ranks = {'2':'TWO','3':'THREE','4':'FOUR','5':'FIVE','6':'SIX','7':'SEVEN','8':'EIGHT','9':'NINE','10':'TEN','J':'JACK','Q':'QUEEN','K':'KING','A':'ACE'};
+    const suits = {'C':'CLUBS','D':'DIAMONDS','H':'HEARTS','S':'SPADES'};
+    return `${ranks[r]} OF ${suits[s]}`;
 }
 
 function getRankName(code) {
