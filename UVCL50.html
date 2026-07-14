@@ -3220,16 +3220,6 @@ const siStebbinsCulls = [
     { desc: "Cull 6: Suit sorting (Reversed CHaSeD pattern D,S,H,C from Face). Upjog first diamond then spade then heart then clubs.", vals: [] }
 ];
     
-function nextSiStebbinsCull() {
-const siStebbinsCulls = [
-    { desc: "Cull 1: Upjog 5s, 6s, 7s, Js, Qs, As — strip to rear.", vals: ["5","6","7","J","Q","A"] },
-    { desc: "Cull 2: Upjog 8s, 9s, 10s, 5s, 6s, 7s — strip to rear.", vals: ["8","9","10","5","6","7"] },
-    { desc: "Cull 3: Upjog 2s, 4s, As, Qs, 9s, 6s — strip to rear.", vals: ["2","4","A","Q","9","6"] },
-    { desc: "Cull 4: Upjog 3s, Ks, 10s, 7s, 4s, As — strip to rear. At this point all the cards have been separated into four of a kind and they are in this order from face bottom to rear, Js, 8s, 5s, 2s, Qs, 6s, 3s, Ks, 10s, 7s, 4s, As", vals: ["3","K","10","7","4","A"] },
-    { desc: "Cull 5: Start upjogging the cards alternately in red and black pairs So upjog the Black Js, then Red 8s, then Black 5s, then Red 2s, then Black Qs, then Red 9s, then Black 6s, Then Red 3s, Black Ks, Red 10s, Black 7s, Red 4s, Black As Strip out and place to rear.", vals: [] },
-    { desc: "Cull 6: Suit sorting (Reversed CHaSeD pattern D,S,H,C from Face). Upjog first diamond then spade then heart then clubs.", vals: [] }
-];
-    
 if (siStebbinsCullStage === 0) {
         saveState();
         document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.';
