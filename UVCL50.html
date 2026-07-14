@@ -263,7 +263,7 @@
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">ARONSON DEMOS</span>
         <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
-            <button onclick="prepareSpelling()" style="padding: var(--pad-small);">Aronson Spelling Demo</button>
+            <button onclick="showAronsonSpellingDemo()" style="padding: var(--pad-small);">Aronson Spelling Demo</button>
         </div>
     </div>
     
@@ -979,14 +979,13 @@
     
 <!-- ============ ARONSON SPELLING ARENA ============ -->
 <div id="aronson-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Aronson Spelling Demo</span>
         <button onclick="document.getElementById('aronson-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); background:transparent; cursor:pointer;">&times;</button>
     </div>
 
     <div style="font-size:0.7rem; color:#ccc; margin-bottom:15px; line-height:1.4;">
-        The Aronson Stack is a <strong>cyclic map</strong>. By cutting the deck, you can bring any card to the perfect position to spell its own name. This demo shows how to cut to a card and deal it into existence.
+        The Aronson Stack is a <strong>cyclic map</strong>. By cutting the deck, you can bring any card to the perfect position to spell its own name.
     </div>
 
     <div style="display:flex; flex-direction:column; gap:10px; background:rgba(255,255,255,0.05); padding:10px; border-radius:8px;">
@@ -994,14 +993,12 @@
         <select id="card-select" style="background:#111; color:white; border:1px solid #444; padding:5px;"></select>
         
         <div style="display:flex; gap:5px;">
-            <button onclick="prepareSpelling()" style="flex:1; padding:6px; cursor:pointer;">Setup</button>
             <button onclick="cutToSelectedCard()" style="flex:1; padding:6px; cursor:pointer;">Cut to Card</button>
             <button onclick="dealNextLetter()" style="flex:1; padding:6px; cursor:pointer;">Deal Letter</button>
         </div>
     </div>
 
     <div id="spelling-status" style="margin-top:10px; font-size:0.7rem; color:var(--gold); min-height:1.2em; font-style:italic;"></div>
-    
     <div id="spelled-cards" style="margin-top:10px; padding:10px; background:rgba(0,0,0,0.3); border-radius:6px; color:#fff; font-size:0.75rem; min-height:50px;"></div>
 </div>
 
@@ -2109,40 +2106,60 @@ function mcReset() {
 let spellingTarget = "";
 let lettersRemaining = [];
 
+function showAronsonSpellingDemo() {
+    // Reset to Aronson Stack
+    deck = ["JC","4H","7D","KH","6C","8D","2H","9S","3C","10H","5H","KC","3H","5C","9H","2S","KS","6D","JH","5D","QC","7S","4S","AC","8C","QD","8H","AS","3D","6H","10S","AD","4C","7H","10D","2C","JD","QS","9D","4D","7C","9C","KD","AH","5S","2D","QH","3S","8S","6S","JS","10C"];
+    renderDeck();
+    
+    // Show Arena
+    document.getElementById('aronson-arena').style.display = 'block';
+    document.getElementById('aronson-arena').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    
+    prepareSpelling();
+}
+
 function prepareSpelling() {
-    // 1. Populate the select menu with deck cards
     const select = document.getElementById('card-select');
     select.innerHTML = deck.map((c, i) => `<option value="${i}">${c}</option>`).join('');
-    
-    // 2. Reset spelling state
     document.getElementById('spelled-cards').innerHTML = "";
-    document.getElementById('spelling-status').innerText = "Card selected. Click 'Cut to Card' to bring it to position 11.";
+    document.getElementById('spelling-status').innerText = "Stack reset. Select a card and click 'Cut to Card'.";
 }
 
 function cutToSelectedCard() {
     const cardIndex = parseInt(document.getElementById('card-select').value);
     const cardName = deck[cardIndex];
+    const targetPos = 11; // Ideal spelling position
     
-    // Target position is 11 (Index 10) for "Ace of Hearts" etc.
-    const targetPos = 11; 
-    
-    // Calculate cut (same logic as before)
     const currentPos = deck.indexOf(cardName) + 1;
     let cutCount = currentPos - targetPos;
     if (cutCount < 0) cutCount += 52;
     
-    // Perform the cut
+    // Perform Cut
     const topChunk = deck.splice(0, cutCount);
     deck = deck.concat(topChunk);
     
-    // Prepare the spelling string (simple mapping)
-    // You can expand this map for other cards
-    const cardNameMap = { "AH": "ACE OF HEARTS", "JS": "JACK OF SPADES" }; 
-    spellingTarget = cardNameMap[cardName] || "ACE OF HEARTS"; // Default to AH
-    lettersRemaining = spellingTarget.split('');
+    // Simple mapping for spelling - Add your own keys as needed!
+    const spellMap = { "AH": "ACE OF HEARTS", "JS": "JACK OF SPADES", "KC": "KING OF CLUBS" }; 
+    const targetName = spellMap[cardName] || "ACE OF HEARTS";
+    lettersRemaining = targetName.split('');
     
     renderDeck();
-    document.getElementById('spelling-status').innerText = `Deck cut! Now spell: ${spellingTarget}. Click 'Deal Next Letter'.`;
+    document.getElementById('spelling-status').innerText = `Deck cut! Now spell: ${targetName}.`;
+}
+
+function dealNextLetter() {
+    if (lettersRemaining.length === 0) return;
+    
+    const letter = lettersRemaining.shift();
+    const card = deck.shift();
+    
+    const area = document.getElementById('spelled-cards');
+    area.innerHTML += `<div><strong>${letter}:</strong> ${card}</div>`;
+    
+    renderDeck();
+    if (lettersRemaining.length === 0) {
+        document.getElementById('spelling-status').innerText = "Success! The card is at the end of the spell.";
+    }
 }
 
 function dealNextLetter() {
