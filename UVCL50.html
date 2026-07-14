@@ -3220,31 +3220,77 @@ const siStebbinsCulls = [
     { desc: "Cull 6: Suit sorting (Reversed CHaSeD pattern D,S,H,C from Face). Upjog first diamond then spade then heart then clubs.", vals: [] }
 ];
     
+function nextSiStebbinsCull() {
+const siStebbinsCulls = [
+    { desc: "Cull 1: Upjog 5s, 6s, 7s, Js, Qs, As — strip to rear.", vals: ["5","6","7","J","Q","A"] },
+    { desc: "Cull 2: Upjog 8s, 9s, 10s, 5s, 6s, 7s — strip to rear.", vals: ["8","9","10","5","6","7"] },
+    { desc: "Cull 3: Upjog 2s, 4s, As, Qs, 9s, 6s — strip to rear.", vals: ["2","4","A","Q","9","6"] },
+    { desc: "Cull 4: Upjog 3s, Ks, 10s, 7s, 4s, As — strip to rear. At this point all the cards have been separated into four of a kind and they are in this order from face bottom to rear, Js, 8s, 5s, 2s, Qs, 6s, 3s, Ks, 10s, 7s, 4s, As", vals: ["3","K","10","7","4","A"] },
+    { desc: "Cull 5: Start upjogging the cards alternately in red and black pairs So upjog the Black Js, then Red 8s, then Black 5s, then Red 2s, then Black Qs, then Red 9s, then Black 6s, Then Red 3s, Black Ks, Red 10s, Black 7s, Red 4s, Black As Strip out and place to rear.", vals: [] },
+    { desc: "Cull 6: Suit sorting (Reversed CHaSeD pattern D,S,H,C from Face). Upjog first diamond then spade then heart then clubs.", vals: [] }
+];
+    
 if (siStebbinsCullStage === 0) {
-    saveState();
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.';
-    logMove('Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.');
-    stripToTop(['5','6','7','J','Q','A']);
-    siStebbinsCullStage++;
-} else if (siStebbinsCullStage === 1) {
-    saveState();
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.';
-    logMove('Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.');
-    stripToTop(['8','9','10','5','6','7']);
-    siStebbinsCullStage++;
-} else if (siStebbinsCullStage === 2) {
-    saveState();
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.';
-    logMove('Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.');
-    stripToTop(['2','4','A','Q','9','6']);
-    siStebbinsCullStage++;
-} else if (siStebbinsCullStage === 3) {
-    saveState();
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 4: Upjogging 3s, Ks, 10s, 7s, 4s, As — stripping to rear. Four-of-a-kinds complete.';
-    logMove('Cull 4: Upjogging 3s, Ks, 10s, 7s, 4s, As — stripping to rear.');
-    stripToTop(['3','K','10','7','4','A']);
-    siStebbinsCullStage++;
-}
+        saveState();
+        document.getElementById('cs-stebbins-status').innerText = 'Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.';
+        logMove('Cull 1: Upjogging 5s, 6s, 7s, Js, Qs, As — stripping to rear.');
+        stripToTop(['5','6','7','J','Q','A']);
+        siStebbinsCullStage++;
+
+    } else if (siStebbinsCullStage === 1) {
+        saveState();
+        document.getElementById('cs-stebbins-status').innerText = 'Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.';
+        logMove('Cull 2: Upjogging 8s, 9s, 10s, 5s, 6s, 7s — stripping to rear.');
+        stripToTop(['8','9','10','5','6','7']);
+        siStebbinsCullStage++;
+
+    } else if (siStebbinsCullStage === 2) {
+        saveState();
+        document.getElementById('cs-stebbins-status').innerText = 'Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.';
+        logMove('Cull 3: Upjogging 2s, 4s, As, Qs, 9s, 6s — stripping to rear.');
+        stripToTop(['2','4','A','Q','9','6']);
+        siStebbinsCullStage++;
+
+    } else if (siStebbinsCullStage === 3) {
+        saveState();
+        // Bucket each Cull 4 value separately to guarantee clean four-of-a-kind groups
+        let groups = { 'A':[], '4':[], '7':[], '10':[], 'K':[], '3':[] };
+        let remaining = [];
+        deck.forEach(card => {
+            const val = card.replace(/[SHDC]/, '');
+            if (groups[val] !== undefined) groups[val].push(card);
+            else remaining.push(card);
+        });
+        // Place Cull 4 groups at TOP (face) in correct book order
+        // Face to rear after Cull 4: J,8,5,2,Q,9,6,3,K,10,7,4,A
+        // stripToTop means Cull 4 values go to position 1 (face)
+        // So: 3,K,10,7,4,A at top then remaining (J,8,5,2,Q,9,6 already there)
+        deck = groups['3']
+            .concat(groups['K'])
+            .concat(groups['10'])
+            .concat(groups['7'])
+            .concat(groups['4'])
+            .concat(groups['A'])
+            .concat(remaining);
+        document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: all four-of-a-kinds separated. Order face to rear: J,8,5,2,Q,9,6,3,K,10,7,4,A';
+        logMove('Cull 4 complete: four-of-a-kinds clean. Order face(pos1) to rear(pos52): J,8,5,2,Q,9,6,3,K,10,7,4,A');
+        renderDeck();
+        siStebbinsCullStage++;
+
+    } else if (siStebbinsCullStage === 4) {
+        prepareSiStebbinsCull5();
+        logMove(siStebbinsCulls[4].desc);
+        siStebbinsCullStage++;
+
+    } else if (siStebbinsCullStage === 5) {
+        prepareSiStebbinsCull6();
+        logMove(siStebbinsCulls[5].desc);
+        siStebbinsCullStage++;
+
+    } else {
+        document.getElementById('cs-stebbins-status').innerText = 'All 6 culls complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
+        logMove('Si Stebbins Chinese Shuffle complete — all 6 culls done.');
+    }
 }
 
   function prepareSiStebbinsCull5() {
