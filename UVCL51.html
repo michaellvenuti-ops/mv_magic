@@ -3391,17 +3391,16 @@ const siStebbinsCulls = [
 function prepareSiStebbinsCull6() {
     saveState();
     
-    // Auto-select cards in D,S,H,C repeating pattern through the deck
-    // Go through deck and pick first D, then first S after it, then H, then C
-    // repeat until end of deck
+    // Go through deck picking cards in D,S,H,C repeating suit pattern
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
-    let toSelect = [];
+    let upjogged = [];
     let remaining = [...deck];
     
-    while(remaining.length > 0 && toSelect.length < 52) {
+    // Keep going until we've picked all 52 cards
+    let safety = 0;
+    while(remaining.length > 0 && safety < 1000) {
         const targetSuit = pattern[patternIdx % 4];
-        // Find next card of this suit in remaining
         let foundIdx = -1;
         for(let i = 0; i < remaining.length; i++) {
             if(remaining[i].slice(-1) === targetSuit) {
@@ -3410,30 +3409,21 @@ function prepareSiStebbinsCull6() {
             }
         }
         if(foundIdx !== -1) {
-            toSelect.push(remaining[foundIdx]);
+            upjogged.push(remaining[foundIdx]);
             remaining.splice(foundIdx, 1);
             patternIdx++;
         } else {
-            patternIdx++; // skip this suit if not found
+            patternIdx++; // skip this suit if none left
         }
+        safety++;
     }
     
-    // Highlight selected cards in the deck display
-    document.getElementById('search-input').value = toSelect.join(', ');
-    renderDeck();
-    
-    // Auto-select logic using multiSelected
-    multiSelected.clear();
-    deck.forEach((card, i) => {
-        if(toSelect.includes(card)) {
-            multiSelected.add(i);
-        }
-    });
+    // Strip upjogged to TOP (rear in face-up position)
+    deck = upjogged.concat(remaining);
     
     document.getElementById('cs-stebbins-status').innerText = 
-        'Cull 6: Cards selected in D,S,H,C pattern. Click STRIP SELECTED TO TOP to complete.';
-    logMove('Cull 6 Setup: D,S,H,C suit pattern selected. Click Strip Selected to Top.');
-    
+        'Cull 6 complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
+    logMove('Cull 6: D,S,H,C suit pattern stripped to top. Deck Stebbinized!');
     renderDeck();
 }
 
