@@ -3391,30 +3391,49 @@ const siStebbinsCulls = [
 function prepareSiStebbinsCull6() {
     saveState();
     
-    // Build Si Stebbins target order
-    const vals = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-    const suits = ['C','H','S','D'];
-    let stebbins = [];
-    let v = 0, s = 0;
-    for (let i = 0; i < 52; i++) {
-        stebbins.push(vals[v % 13] + suits[s % 4]);
-        v += 3; s++;
+    // Auto-select cards in D,S,H,C repeating pattern through the deck
+    // Go through deck and pick first D, then first S after it, then H, then C
+    // repeat until end of deck
+    const pattern = ['D','S','H','C'];
+    let patternIdx = 0;
+    let toSelect = [];
+    let remaining = [...deck];
+    
+    while(remaining.length > 0 && toSelect.length < 52) {
+        const targetSuit = pattern[patternIdx % 4];
+        // Find next card of this suit in remaining
+        let foundIdx = -1;
+        for(let i = 0; i < remaining.length; i++) {
+            if(remaining[i].slice(-1) === targetSuit) {
+                foundIdx = i;
+                break;
+            }
+        }
+        if(foundIdx !== -1) {
+            toSelect.push(remaining[foundIdx]);
+            remaining.splice(foundIdx, 1);
+            patternIdx++;
+        } else {
+            patternIdx++; // skip this suit if not found
+        }
     }
     
-    // Verify all 52 cards are present
-    const deckSet = new Set(deck);
-    const allPresent = stebbins.every(c => deckSet.has(c));
-    if (!allPresent) {
-        document.getElementById('cs-stebbins-status').innerText = 'Error: deck is missing cards. Please restart the demo.';
-        logMove('Cull 6 Error: missing cards in deck.');
-        return;
-    }
+    // Highlight selected cards in the deck display
+    document.getElementById('search-input').value = toSelect.join(', ');
+    renderDeck();
     
-    // Sort deck into Si Stebbins order
-    deck = stebbins;
+    // Auto-select logic using multiSelected
+    multiSelected.clear();
+    deck.forEach((card, i) => {
+        if(toSelect.includes(card)) {
+            multiSelected.add(i);
+        }
+    });
     
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 6 complete! Deck is now Si Stebbins Classic (+3, CHaSeD). Use Verify Stack to confirm.';
-    logMove('Cull 6 complete: deck sorted into Si Stebbins order. Use Verify Stack to confirm.');
+    document.getElementById('cs-stebbins-status').innerText = 
+        'Cull 6: Cards selected in D,S,H,C pattern. Click STRIP SELECTED TO TOP to complete.';
+    logMove('Cull 6 Setup: D,S,H,C suit pattern selected. Click Strip Selected to Top.');
+    
     renderDeck();
 }
 
