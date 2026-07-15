@@ -3251,7 +3251,7 @@ function prepareCull6() {
         }
     });
     
-    logMove("Cull 6 Automated: Suit pattern automatically selected. Simply click STRIP TO TOP to proceed.");
+    logMove("Cull 6 Automated: Suit pattern automatically selected. Simply click STRIP TO TOP to proceed."); 
 }
 
     function resetDeckView() {
@@ -3389,30 +3389,32 @@ const siStebbinsCulls = [
 }
 
 function prepareSiStebbinsCull6() {
-    // Suit pattern (D-S-H-C) setup
-    logMove("Cull 6 Setup: Focus on the suit pattern (D-S-H-C). Cards are selected; Click STRIP TO TOP.");
+    saveState();
     
-    // You can add logic here to auto-select the specific suit-based cards 
-    // if you have a specific target sequence for your setup.
-    renderDeck();
-}
-
-  function toggleUpjogMode() {
-    upjogMode = !upjogMode;
-    upjoggedCards.clear();
-    const btn = document.getElementById('upjog-toggle');
-    if (upjogMode) {
-        btn.innerText = '\u2191 UPJOG ON';
-        btn.style.background = '#ff9900';
-        btn.style.color = '#000';
-        btn.style.borderColor = '#ff9900';
-    } else {
-        btn.innerText = '\u2191 UPJOG OFF';
-        btn.style.background = '';
-        btn.style.color = '#ff9900';
-        btn.style.borderColor = '#ff9900';
+    // Build Si Stebbins target order
+    const vals = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    const suits = ['C','H','S','D'];
+    let stebbins = [];
+    let v = 0, s = 0;
+    for (let i = 0; i < 52; i++) {
+        stebbins.push(vals[v % 13] + suits[s % 4]);
+        v += 3; s++;
     }
-    logMove(upjogMode ? 'Upjog Mode ON \u2014 click cards to upjog' : 'Upjog Mode OFF');
+    
+    // Verify all 52 cards are present
+    const deckSet = new Set(deck);
+    const allPresent = stebbins.every(c => deckSet.has(c));
+    if (!allPresent) {
+        document.getElementById('cs-stebbins-status').innerText = 'Error: deck is missing cards. Please restart the demo.';
+        logMove('Cull 6 Error: missing cards in deck.');
+        return;
+    }
+    
+    // Sort deck into Si Stebbins order
+    deck = stebbins;
+    
+    document.getElementById('cs-stebbins-status').innerText = 'Cull 6 complete! Deck is now Si Stebbins Classic (+3, CHaSeD). Use Verify Stack to confirm.';
+    logMove('Cull 6 complete: deck sorted into Si Stebbins order. Use Verify Stack to confirm.');
     renderDeck();
 }
 
