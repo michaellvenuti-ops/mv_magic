@@ -3390,36 +3390,25 @@ const siStebbinsCulls = [
 
 function prepareSiStebbinsCull6() {
     saveState();
-    
-    // Go through deck picking cards in D,S,H,C repeating suit pattern
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
     let upjogged = [];
-    let remaining = [...deck];
+    let notUpjogged = [];
     
-    // Keep going until we've picked all 52 cards
-    let safety = 0;
-    while(remaining.length > 0 && safety < 1000) {
-        const targetSuit = pattern[patternIdx % 4];
-        let foundIdx = -1;
-        for(let i = 0; i < remaining.length; i++) {
-            if(remaining[i].slice(-1) === targetSuit) {
-                foundIdx = i;
-                break;
-            }
-        }
-        if(foundIdx !== -1) {
-            upjogged.push(remaining[foundIdx]);
-            remaining.splice(foundIdx, 1);
+    // Go through deck LEFT TO RIGHT in order
+    // Pick cards that match the next expected suit in D,S,H,C pattern
+    deck.forEach(card => {
+        const suit = card.slice(-1);
+        if(suit === pattern[patternIdx % 4]) {
+            upjogged.push(card);
             patternIdx++;
         } else {
-            patternIdx++; // skip this suit if none left
+            notUpjogged.push(card);
         }
-        safety++;
-    }
+    });
     
-    // Strip upjogged to TOP (rear in face-up position)
-    deck = upjogged.concat(remaining);
+    // Strip upjogged to top (rear in face-up position)
+    deck = upjogged.concat(notUpjogged);
     
     document.getElementById('cs-stebbins-status').innerText = 
         'Cull 6 complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
