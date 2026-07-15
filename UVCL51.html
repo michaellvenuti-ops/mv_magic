@@ -3061,8 +3061,8 @@ window.performQuickCut = function(n) {
 };
 
 function runBerglasSolver() {
-    var cardInput = document.getElementById('solve-card').value.trim().toUpperCase();
-    var targetPos = parseInt(document.getElementById('solve-pos').value);
+    var cardInput = document.getElementById('berglas-card').value.trim().toUpperCase();
+    var targetPos = parseInt(document.getElementById('berglas-pos').value);
     var currentIdx = deck.indexOf(cardInput);
     
     if (currentIdx === -1) { alert("Card not found!"); return; }
@@ -3077,9 +3077,9 @@ function runBerglasSolver() {
     } else {
         var cardAtCut = deck[cutSize]; 
         document.getElementById('berglas-status').innerHTML = 
-            `<strong>Berglas Solution:</strong><br>Cut the deck at the <strong>${cardAtCut}</strong>.` +
-            `<br><br><button onclick="window.performQuickCut(${cutSize})" style="padding:5px 15px; cursor:pointer; background:var(--accent);">EXECUTE CUT ${cutSize}</button>`;
-        document.getElementById('berglas-status').innerText = "Already in position!";
+            document.getElementById('berglas-status').innerHTML = 
+    `<strong>Berglas Solution:</strong><br>Cut the deck at the <strong>${cardAtCut}</strong>.` +
+    `<br><br><button onclick="window.performQuickCut(${cutSize})" style="padding:5px 15px; cursor:pointer; background:var(--accent);">EXECUTE CUT ${cutSize}</button>`;
         // Highlight the card you need to cut at
         highlightCutPoint(cutSize);
     }
