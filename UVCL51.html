@@ -3204,42 +3204,48 @@ function executeSelectionStrip() {
     renderDeck();
 }
     
-function prepareCull5() {
-    const soulmates = ["9H","9D","6S","6C","KS","KC","3H","3D","AS","AC","4D","4H","7C","7S","10H","10D","8S","8C","JH","JD","5H","5D","QH","QD","2S","2C"];
+function prepareSiStebbinsCull5() {
+    const pairs = ["JC","JS","8H","8D","5C","5S","2H","2D","QC","QS","9H","9D",
+                   "6C","6S","3H","3D","KC","KS","10H","10D","7C","7S","4H","4D","AC","AS"];
     
-    // Set the search input so the dimming logic knows we are actively sorting
-    document.getElementById('search-input').value = soulmates.join(', ');
+    // Clear previous selections
+    multiSelected.clear();
     
-    // We force a render first to build the DOM, then select the elements
-    renderDeck();
-    
-    // Find all card divs and automatically select the matching ones
-    const cardElements = document.querySelectorAll('.card');
+    // Add to multiSelected by index
     deck.forEach((card, i) => {
-        if (soulmates.includes(card)) {
-            cardElements[i].classList.add('selected');
-        }
+        if (pairs.includes(card)) multiSelected.add(i);
     });
     
-    logMove("Cull 5 Automated: Soulmates automatically selected. Simply click STRIP TO TOP to proceed.");
+    document.getElementById('search-input').value = pairs.join(', ');
+    logMove('Cull 5 Setup: Pairs selected. Click STRIP SELECTED TO TOP to proceed.');
+    renderDeck();
 }
 
-function prepareCull6() {
-    const suitPattern = ["9S","6H","KD","3C","AD","4C","7H","10S","8H","JS","5C","QS","2D","9H","6C","KS","3D","AS","4D","7C","10H","8C","JH","5D","QH","2S"];
+function prepareSiStebbinsCull6() {
+    multiSelected.clear();
+    upjoggedCards.clear();
+    document.getElementById('search-input').value = ''; // ← clear Cull 5 search highlights
     
-    // Set the search input for the dimming logic
-    document.getElementById('search-input').value = suitPattern.join(', ');
+    const pattern = ['D','S','H','C'];
+    let patternIdx = 0;
+    let picked = new Array(52).fill(false);
     
-    renderDeck();
-    
-    const cardElements = document.querySelectorAll('.card');
-    deck.forEach((card, i) => {
-        if (suitPattern.includes(card)) {
-            cardElements[i].classList.add('selected');
+    for (let i = 51; i >= 0; i--) {
+        const suit = deck[i].slice(-1);
+        if (suit === pattern[patternIdx % 4]) {
+            picked[i] = true;
+            patternIdx++;
         }
+    }
+    
+    picked.forEach((isPicked, i) => {
+        if (isPicked) multiSelected.add(i);
     });
     
-    logMove("Cull 6 Automated: Suit pattern automatically selected. Simply click STRIP TO TOP to proceed."); 
+    document.getElementById('cs-stebbins-status').innerText =
+        'Cull 6: Cards auto-selected in D,S,H,C suit pattern (right to left). Click STRIP SELECTED TO TOP to Stebbinize!';
+    logMove('Cull 6 Setup: D,S,H,C pattern selected right-to-left. Click Strip Selected to Top.');
+    renderDeck();
 }
 
     function resetDeckView() {
