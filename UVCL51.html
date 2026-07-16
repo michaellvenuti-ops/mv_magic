@@ -3390,32 +3390,53 @@ const siStebbinsCulls = [
 
 function prepareSiStebbinsCull6() {
     saveState();
+    
+    // Go RIGHT TO LEFT (index 51 down to 0)
+    // Pick cards in D,S,H,C repeating pattern
+    // Each card must match the next expected suit in sequence
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
     let upjogged = [];
-    let notUpjogged = [];
+    let picked = new Array(52).fill(false);
     
-    // Go through deck LEFT TO RIGHT in order
-    // Pick cards that match the next expected suit in D,S,H,C pattern
-    deck.forEach(card => {
-        const suit = card.slice(-1);
-        if(suit === pattern[patternIdx % 4]) {
-            upjogged.push(card);
+    for (let i = 51; i >= 0; i--) {
+        const suit = deck[i].slice(-1);
+        if (suit === pattern[patternIdx % 4]) {
+            upjogged.unshift(deck[i]); // preserve order
+            picked[i] = true;
             patternIdx++;
-        } else {
-            notUpjogged.push(card);
         }
-    });
+    }
     
-    // Strip upjogged to top (rear in face-up position)
-    deck = upjogged.concat(notUpjogged);
+    // Strip upjogged to top (behind position 0 = rear in face-up)
+    const remaining = deck.filter((_, i) => !picked[i]);
+    deck = upjogged.concat(remaining);
     
-    document.getElementById('cs-stebbins-status').innerText = 
-        'Cull 6 complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
-    logMove('Cull 6: D,S,H,C suit pattern stripped to top. Deck Stebbinized!');
+    document.getElementById('cs-stebbins-status').innerText =
+        'Cull 6 complete! Deck is now Si Stebbins Classic (+3, CHaSeD). Use Verify Stack to confirm.';
+    logMove('Cull 6: D,S,H,C pattern picked right-to-left, stripped to top. Deck Stebbinized!');
     renderDeck();
 }
-
+    
+ function toggleUpjogMode() {
+    upjogMode = !upjogMode;
+    upjoggedCards.clear();
+    const btn = document.getElementById('upjog-toggle');
+    if (upjogMode) {
+        btn.innerText = '\u2191 UPJOG ON';
+        btn.style.background = '#ff9900';
+        btn.style.color = '#000';
+        btn.style.borderColor = '#ff9900';
+    } else {
+        btn.innerText = '\u2191 UPJOG OFF';
+        btn.style.background = '';
+        btn.style.color = '#ff9900';
+        btn.style.borderColor = '#ff9900';
+    }
+    logMove(upjogMode ? 'Upjog Mode ON \u2014 click cards to upjog' : 'Upjog Mode OFF');
+    renderDeck();
+}
+    
 function upjogToTop() {
     if (upjoggedCards.size === 0) { logMove('Upjog to Top: no cards upjogged'); return; }
     saveState();
