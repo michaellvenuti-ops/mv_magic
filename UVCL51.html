@@ -3191,9 +3191,8 @@ function executeSelectionStrip() {
     renderDeck();
 }
 
-   function executeSelectionStripToTop() {
+  function executeSelectionStripToTop() {
     if (multiSelected.size === 0) {
-        // Fallback: check DOM for selected cards
         const selectedElements = document.querySelectorAll('.card.selected');
         if (selectedElements.length === 0) { logMove('Strip to Top: no cards selected'); return; }
         saveState();
@@ -3207,6 +3206,7 @@ function executeSelectionStrip() {
         logMove('Stripped ' + selectedValues.length + ' selected cards to TOP.');
         multiSelected.clear();
         upjoggedCards.clear();
+        document.getElementById('search-input').value = ''; // ← clears purple
         renderDeck();
         return;
     }
@@ -3218,6 +3218,7 @@ function executeSelectionStrip() {
     logMove('Stripped ' + selectedCards.length + ' selected cards to TOP.');
     multiSelected.clear();
     upjoggedCards.clear();
+    document.getElementById('search-input').value = ''; // ← clears purple
     renderDeck();
 }
     
@@ -3237,12 +3238,16 @@ function prepareSiStebbinsCull5() {
     logMove('Cull 5 Setup: Pairs selected. Click STRIP SELECTED TO TOP to proceed.');
     renderDeck();
 }
-
 function prepareSiStebbinsCull6() {
+    // Clear ALL previous highlights
     multiSelected.clear();
     upjoggedCards.clear();
-    document.getElementById('search-input').value = ''; // ← clear Cull 5 search highlights
+    document.getElementById('search-input').value = '';
     
+    // Force a clean render first to remove all purple
+    renderDeck();
+    
+    // Now select Cull 6 cards in D,S,H,C pattern right to left
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
     let picked = new Array(52).fill(false);
@@ -3264,6 +3269,7 @@ function prepareSiStebbinsCull6() {
     logMove('Cull 6 Setup: D,S,H,C pattern selected right-to-left. Click Strip Selected to Top.');
     renderDeck();
 }
+
 
     function resetDeckView() {
     // 1. Clear the search input so tracked cards don't stay highlighted
