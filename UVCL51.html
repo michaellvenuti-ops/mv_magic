@@ -3349,22 +3349,23 @@ const siStebbinsCulls = [
         .concat(kings)
         .concat(threes)
         .concat(remaining);
-    document.getElementById('cs-stebbins-status').innerText = 'Cull 4 complete: four-of-a-kinds separated. Pos 1=A through Pos 52=J.';
+    document.getElementById('cs-stebbins-status').innerText = 
+    'Cull 4 complete: four-of-a-kinds separated. Order A→J top to bottom. Click STRIP SELECTED TO TOP if needed, then click Next Si Stebbins Cull for Cull 5.';
     logMove('Cull 4 complete: four-of-a-kinds clean.');
     renderDeck();
     siStebbinsCullStage++;
-    }    
-    else if (siStebbinsCullStage === 4) {
-        prepareSiStebbinsCull5();
-        logMove(siStebbinsCulls[4].desc);
-        siStebbinsCullStage++;
-
-    } else if (siStebbinsCullStage === 5) {
-        prepareSiStebbinsCull6();
-        logMove(siStebbinsCulls[5].desc);
-        siStebbinsCullStage++;
-
-    } else {
+    } else if (siStebbinsCullStage === 4) {
+    prepareSiStebbinsCull5();
+    logMove(siStebbinsCulls[4].desc);
+    document.getElementById('cs-stebbins-status').innerText = 
+        'Cull 5: Cards auto-selected in alternating red/black pairs. Click STRIP SELECTED TO TOP to execute, then click Next Si Stebbins Cull for Cull 6.';
+    siStebbinsCullStage++;
+} else if (siStebbinsCullStage === 5) {
+    prepareSiStebbinsCull6();
+    logMove(siStebbinsCulls[5].desc);
+    siStebbinsCullStage++;
+    // Don't auto-execute — user clicks Strip Selected to Top
+} else {
         document.getElementById('cs-stebbins-status').innerText = 'All 6 culls complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
         logMove('Si Stebbins Chinese Shuffle complete — all 6 culls done.');
     }
@@ -3389,32 +3390,29 @@ const siStebbinsCulls = [
 }
 
 function prepareSiStebbinsCull6() {
-    saveState();
-    
     // Go RIGHT TO LEFT (index 51 down to 0)
-    // Pick cards in D,S,H,C repeating pattern
-    // Each card must match the next expected suit in sequence
+    // Pick cards in D,S,H,C repeating pattern and highlight them
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
-    let upjogged = [];
     let picked = new Array(52).fill(false);
     
     for (let i = 51; i >= 0; i--) {
         const suit = deck[i].slice(-1);
         if (suit === pattern[patternIdx % 4]) {
-            upjogged.unshift(deck[i]); // preserve order
             picked[i] = true;
             patternIdx++;
         }
     }
     
-    // Strip upjogged to top (behind position 0 = rear in face-up)
-    const remaining = deck.filter((_, i) => !picked[i]);
-    deck = upjogged.concat(remaining);
+    // Highlight selected cards using multiSelected
+    multiSelected.clear();
+    picked.forEach((isPicked, i) => {
+        if (isPicked) multiSelected.add(i);
+    });
     
-    document.getElementById('cs-stebbins-status').innerText =
-        'Cull 6 complete! Deck is now Si Stebbins Classic (+3, CHaSeD). Use Verify Stack to confirm.';
-    logMove('Cull 6: D,S,H,C pattern picked right-to-left, stripped to top. Deck Stebbinized!');
+    document.getElementById('cs-stebbins-status').innerText = 
+        'Cull 6: Cards auto-selected in D,S,H,C suit pattern (right to left). Click STRIP SELECTED TO TOP to Stebbinize the deck!';
+    logMove('Cull 6 Setup: D,S,H,C suit pattern selected right-to-left. Click Strip Selected to Top.');
     renderDeck();
 }
     
