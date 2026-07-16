@@ -3504,8 +3504,20 @@ function csStebbinsStart() {
 }
 
 function resetSiStebbinsCull() {
+    saveState();
     siStebbinsCullStage = 0;
-    logMove('Si Stebbins Cull reset to Stage 1');
+    multiSelected.clear();
+    upjoggedCards.clear();
+    upjogMode = false;
+    const btn = document.getElementById('upjog-toggle');
+    if (btn) {
+        btn.innerText = '\u2191 UPJOG OFF';
+        btn.style.background = '';
+        btn.style.color = 'var(--gold)';
+    }
+    document.getElementById('cs-stebbins-status').innerText = 'Reset complete. Click Randomize & Start to begin a new run.';
+    logMove('Si Stebbins Cull reset — click Randomize & Start to begin again.');
+    renderDeck();
 }
 
 function toggleFullscreen() {
