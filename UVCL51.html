@@ -3192,30 +3192,18 @@ function executeSelectionStrip() {
 }
 
     function executeSelectionStripToTop() {
+    if (multiSelected.size === 0) { logMove('Strip to Top: no cards selected'); return; }
     saveState();
-    
-    const selectedElements = document.querySelectorAll('.card.selected');
-    const selectedValues = Array.from(selectedElements).map(el => {
-        // Find the index of the clicked card to get the value from the array
-        const index = Array.from(el.parentNode.children).indexOf(el);
-        return deck[index];
-    });
-    
-    if (selectedValues.length === 0) return;
-
-    // Filter the deck
-    let remaining = deck.filter(c => !selectedValues.includes(c));
-    
-    // Move selected to the top (front)
-    deck = selectedValues.concat(remaining);
-    
-    // Clear selection
-    selectedElements.forEach(el => el.classList.remove('selected'));
-    
-    logMove(`Stripped ${selectedValues.length} selected cards to TOP.`);
+    const indices = [...multiSelected].sort((a, b) => a - b);
+    const selectedCards = indices.map(i => deck[i]);
+    const remaining = deck.filter((_, i) => !multiSelected.has(i));
+    deck = selectedCards.concat(remaining);
+    logMove('Strip Selected to Top: ' + selectedCards.length + ' cards moved to top.');
+    multiSelected.clear();
+    upjoggedCards.clear();
     renderDeck();
 }
-
+    
 function prepareCull5() {
     const soulmates = ["9H","9D","6S","6C","KS","KC","3H","3D","AS","AC","4D","4H","7C","7S","10H","10D","8S","8C","JH","JD","5H","5D","QH","QD","2S","2C"];
     
@@ -3366,9 +3354,13 @@ const siStebbinsCulls = [
     siStebbinsCullStage++;
     // Don't auto-execute — user clicks Strip Selected to Top
 } else {
-        document.getElementById('cs-stebbins-status').innerText = 'All 6 culls complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
-        logMove('Si Stebbins Chinese Shuffle complete — all 6 culls done.');
-    }
+    multiSelected.clear();
+    upjoggedCards.clear();
+    renderDeck();
+    document.getElementById('cs-stebbins-status').innerText = 
+        'All 6 culls complete! Deck is now Si Stebbins. Use Verify Stack to confirm.';
+    logMove('Si Stebbins Chinese Shuffle complete — all 6 culls done.');
+}
 }    
 
 
@@ -3390,8 +3382,9 @@ const siStebbinsCulls = [
 }
 
 function prepareSiStebbinsCull6() {
-    // Go RIGHT TO LEFT (index 51 down to 0)
-    // Pick cards in D,S,H,C repeating pattern and highlight them
+    multiSelected.clear();  // ← ADD THIS — clears purple from Cull 5
+    upjoggedCards.clear();
+    
     const pattern = ['D','S','H','C'];
     let patternIdx = 0;
     let picked = new Array(52).fill(false);
@@ -3404,7 +3397,6 @@ function prepareSiStebbinsCull6() {
         }
     }
     
-    // Highlight selected cards using multiSelected
     multiSelected.clear();
     picked.forEach((isPicked, i) => {
         if (isPicked) multiSelected.add(i);
