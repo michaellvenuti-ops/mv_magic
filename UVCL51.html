@@ -3191,14 +3191,31 @@ function executeSelectionStrip() {
     renderDeck();
 }
 
-    function executeSelectionStripToTop() {
-    if (multiSelected.size === 0) { logMove('Strip to Top: no cards selected'); return; }
+   function executeSelectionStripToTop() {
+    if (multiSelected.size === 0) {
+        // Fallback: check DOM for selected cards
+        const selectedElements = document.querySelectorAll('.card.selected');
+        if (selectedElements.length === 0) { logMove('Strip to Top: no cards selected'); return; }
+        saveState();
+        const selectedValues = Array.from(selectedElements).map(el => {
+            const index = Array.from(el.parentNode.children).indexOf(el);
+            return deck[index];
+        });
+        let remaining = deck.filter(c => !selectedValues.includes(c));
+        deck = selectedValues.concat(remaining);
+        selectedElements.forEach(el => el.classList.remove('selected'));
+        logMove('Stripped ' + selectedValues.length + ' selected cards to TOP.');
+        multiSelected.clear();
+        upjoggedCards.clear();
+        renderDeck();
+        return;
+    }
     saveState();
     const indices = [...multiSelected].sort((a, b) => a - b);
     const selectedCards = indices.map(i => deck[i]);
     const remaining = deck.filter((_, i) => !multiSelected.has(i));
     deck = selectedCards.concat(remaining);
-    logMove('Strip Selected to Top: ' + selectedCards.length + ' cards moved to top.');
+    logMove('Stripped ' + selectedCards.length + ' selected cards to TOP.');
     multiSelected.clear();
     upjoggedCards.clear();
     renderDeck();
