@@ -207,15 +207,23 @@
     </div>
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#9760; JONAH POKER DEM</span>
+        <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#9760; JONAH POKER DEMO</span>
         <div style="display:grid; grid-template-columns:1fr; gap:4px;">
             <button onclick="showJonah(1)" style="padding:var(--pad-small);">Demo 1: 9&#9827; on Top &rarr; User Loses</button>
             <button onclick="showJonah(2)" style="padding:var(--pad-small);">Demo 2: 9&#9827; on Bottom &rarr; Dealer Wins</button>
         </div>
     </div>
+    
+    <!-- Sidebar Button -->
+<div style="margin-bottom:10px;">
+    <button onclick="openGilbreathDemo()" 
+        style="width:100%; padding:8px; background:#1a1a1a; border:1px solid var(--gold); color:var(--gold); font-size:0.65rem; cursor:pointer; text-transform:uppercase; font-weight:bold;">
+        Gilbreath Shuffle Demo
+    </button>
+</div>
 
 <!-- ============ GILBREATH SHUFFLE ARENA ============ -->
-<div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px;">
+<div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
         <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
@@ -4090,7 +4098,26 @@ function renderGilbreath() {
         container.appendChild(div);
     });
 }
-  
+
+    /**
+ * Opens the Gilbreath Arena and hides other known arenas
+ */
+function openGilbreathDemo() {
+    // 1. Hide other arenas if you have them (add your other IDs here)
+    const arenas = ['jonah-arena', 'berglas-solver-arena', 'stack-compare-arena']; 
+    arenas.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+    });
+
+    // 2. Show the Gilbreath Arena
+    const gilbreath = document.getElementById('gilbreath-arena');
+    if (gilbreath) {
+        gilbreath.style.display = 'block';
+        // Optional: Auto-load the deck state when opened
+        setupGilbreathDeck(); 
+    }
+}
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
