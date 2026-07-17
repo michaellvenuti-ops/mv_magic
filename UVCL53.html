@@ -214,50 +214,39 @@
         </div>
     </div>
     
-    <!-- Sidebar Button -->
-<div style="margin-bottom:10px;">
-    <button onclick="openGilbreathDemo()" 
-        style="width:100%; padding:8px; background:#1a1a1a; border:1px solid var(--gold); color:var(--gold); font-size:0.65rem; cursor:pointer; text-transform:uppercase; font-weight:bold;">
-        Gilbreath Shuffle Demo
+<!-- Sidebar Launcher -->
+<div style="margin-top:15px; border-top:1px solid #333; padding-top:10px;">
+    <div style="color:var(--gold); font-size:0.7rem; font-weight:bold; margin-bottom:5px; text-transform:uppercase;">Gilbreath Shuffle Demo</div>
+    <button onclick="openGilbreathArena()" 
+        style="width:100%; padding:5px; background:transparent; border:1px solid var(--gold); color:var(--gold); font-size:0.6rem; cursor:pointer; margin-bottom:5px;">
+        OPEN DEMO
     </button>
 </div>
-
-<!-- ============ GILBREATH SHUFFLE ARENA ============ -->
+    
+<!-- Gilbreath Main Arena -->
 <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
-        <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+        <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
     </div>
 
-    <!-- Controls -->
-    <div style="display:flex; gap:6px; margin-bottom:10px;">
-        <button onclick="setupGilbreathDeck()" style="border-color:var(--gold); color:var(--gold);">1. Set Stebbins</button>
-        <button onclick="runGilbreathShuffle()" style="border-color:var(--gold); color:var(--gold);">2. Shuffle</button>
+    <div id="gilbreath-desc" style="font-size:0.65rem; color:#aaa; line-height:1.6; margin-bottom:12px;">
+        Use the buttons below to control the deck. <b>1. Set Stebbins</b> resets the deck to a 4-suit cycle. <b>2. Shuffle</b> performs the Gilbreath cut-reverse-riffle.
     </div>
 
-    <!-- Status -->
-    <div id="gilbreath-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em; margin-bottom:10px;">
-        Load the deck to begin.
+    <!-- Arena Controls -->
+    <div style="display:flex; gap:8px; margin-bottom:15px;">
+        <button onclick="stebbinsSetup()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">1. SET STEBBINS</button>
+        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">2. SHUFFLE</button>
     </div>
 
-    <!-- Visual Deck Representation -->
-    <div id="gilbreath-tiles" style="display:grid; grid-template-columns: repeat(13, 1fr); gap:2px; margin-bottom:10px;"></div>
-
-    <!-- MATH/THEORY SECTION (Hidden by default) -->
-    <div id="gilbreath-math" style="display:none; margin-top:15px; border-top:1px solid #333; padding-top:15px;">
-        <div style="font-size:0.6rem; color:#aaa; line-height:1.8; margin-bottom:12px;">
-            The Gilbreath Shuffle is a counter-intuitive principle. It proves that if you start with a repeating sequence, even a chaotic riffle shuffle preserves the "grouping" of those original elements.
-        </div>
-        
-        <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px; margin-bottom:12px;">
-            <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">THE THREE STEPS</div>
-            <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
-                <strong>1. The Stack:</strong> You start with a repeating pattern of 4 (e.g., C-H-S-D).<br>
-                <strong>2. The Cut:</strong> When you cut the deck into two, you create two segments that are still mathematically linked to the original cycle.<br>
-                <strong>3. The Reverse & Riffle:</strong> By reversing one packet before the riffle, you effectively "mirror" the sequence. When interleaved, the cards from packet A and packet B interact in a way that forces every set of 4 cards to contain one of each suit.
-            </div>
-        </div>
+    <!-- Theory Toggle -->
+    <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
+    
+    <div id="gilbreath-math" style="display:none; font-size:0.6rem; color:#00f5d4; background:rgba(255,183,3,0.05); padding:10px; border-radius:4px; border:1px solid #444;">
+        <b>The Theory:</b> Because you start with a repeating cycle, cutting and reversing one half creates a "mirror" of the pattern. When you interleave these two halves, the cards from the start of the cycle and the end of the cycle meet, ensuring each group of 4 cards retains one of each suit.
     </div>
+</div>
 
     <!-- TOGGLE BUTTON -->
     <div style="margin-top:10px; text-align:center;">
@@ -4023,99 +4012,69 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-  /**
- * Toggle the Theory section
- */
-function toggleGilbreathEducation() {
-    const mathDiv = document.getElementById('gilbreath-math');
-    const btn = document.getElementById('gilbreath-edu-btn');
-    
-    if (mathDiv.style.display === 'none') {
-        mathDiv.style.display = 'block';
-        btn.innerHTML = '&#9650; HIDE THEORY';
-    } else {
-        mathDiv.style.display = 'none';
-        btn.innerHTML = '&#9660; SHOW THEORY';
-    }
-}
-
 /**
- * Initializes the deck for the demo
+ * Opens the arena and closes others
  */
-function setupGilbreathDeck() {
-    deck = [];
-    // Creating Si Stebbins-like structure (repeating 0, 1, 2, 3)
-    for (let i = 0; i < 52; i++) {
-        deck.push({ suit: i % 4, val: i });
-    }
-    document.getElementById('gilbreath-status').innerText = "Deck Set: Repeating 4-suit cycle.";
-    renderGilbreath();
-}
-
-/**
- * The core Gilbreath operation
- */
-function runGilbreathShuffle() {
-    // 1. Cut at 26
-    let top = deck.slice(0, 26).reverse(); // Reverse one side
-    let bot = deck.slice(26, 52);
-    let res = [];
-    
-    // 2. Riffle Shuffle
-    // Simple logic: drop cards from either side while cards remain
-    while(top.length > 0 || bot.length > 0) {
-        if(Math.random() > 0.5) {
-            if(top.length > 0) res.push(top.shift());
-            if(bot.length > 0) res.push(bot.shift());
-        } else {
-            if(bot.length > 0) res.push(bot.shift());
-            if(top.length > 0) res.push(top.shift());
-        }
-    }
-    
-    deck = res;
-    document.getElementById('gilbreath-status').innerText = "Shuffle complete. Notice: Every 4 cards still contain all 4 suits.";
-    renderGilbreath();
-}
-
-/**
- * Renders the deck visual
- */
-function renderGilbreath() {
-    const container = document.getElementById('gilbreath-tiles');
-    container.innerHTML = "";
-    const suits = ["♣", "♥", "♠", "♦"];
-    
-    deck.forEach((card) => {
-        const div = document.createElement("div");
-        div.style.padding = "4px";
-        div.style.background = "#222";
-        div.style.textAlign = "center";
-        div.style.border = "1px solid #444";
-        div.style.fontSize = "0.7rem";
-        div.style.color = (card.suit === 1 || card.suit === 3) ? "#f44" : "#fff";
-        div.innerText = suits[card.suit];
-        container.appendChild(div);
-    });
-}
-
-    /**
- * Opens the Gilbreath Arena and hides other known arenas
- */
-function openGilbreathDemo() {
-    // 1. Hide other arenas if you have them (add your other IDs here)
-    const arenas = ['jonah-arena', 'berglas-solver-arena', 'stack-compare-arena']; 
-    arenas.forEach(id => {
-        const el = document.getElementById(id);
+function openGilbreathArena() {
+    // Hide others
+    ['jonah-arena', 'berglas-solver-arena'].forEach(id => {
+        let el = document.getElementById(id);
         if (el) el.style.display = 'none';
     });
+    
+    // Show ours
+    document.getElementById('gilbreath-arena').style.display = 'block';
+}
 
-    // 2. Show the Gilbreath Arena
-    const gilbreath = document.getElementById('gilbreath-arena');
-    if (gilbreath) {
-        gilbreath.style.display = 'block';
-        // Optional: Auto-load the deck state when opened
-        setupGilbreathDeck(); 
+/**
+ * Sets up the Deck and updates the display
+ */
+function stebbinsSetup() {
+    deck = [];
+    for (let i = 0; i < 52; i++) {
+        deck.push({ suit: i % 4, rank: i % 13 }); 
+    }
+    renderDeck(); 
+    logMove("Gilbreath: Stebbins Stack Loaded");
+}
+
+/**
+ * Performs the Gilbreath Shuffle on the current deck
+ */
+function stebbinsShuffle() {
+    let top = deck.slice(0, 26);
+    let bot = deck.slice(26, 52);
+    
+    top.reverse(); // The crucial Gilbreath step
+    
+    let res = [];
+    let i = 0, j = 0;
+    
+    // Riffle
+    while(i < top.length || j < bot.length) {
+        let drop = Math.floor(Math.random() * 2) + 1;
+        if (Math.random() > 0.5) {
+            for(let k=0; k<drop && i < top.length; k++) res.push(top[i++]);
+            for(let k=0; k<drop && j < bot.length; k++) res.push(bot[j++]);
+        } else {
+            for(let k=0; k<drop && j < bot.length; k++) res.push(bot[j++]);
+            for(let k=0; k<drop && i < top.length; k++) res.push(top[i++]);
+        }
+    }
+    deck = res;
+    renderDeck();
+    logMove("Gilbreath: Shuffle Complete");
+}
+
+function toggleGilbreathTheory() {
+    const math = document.getElementById('gilbreath-math');
+    const btn = document.getElementById('gilbreath-theory-btn');
+    if (math.style.display === 'none') {
+        math.style.display = 'block';
+        btn.innerHTML = '&#9650; HIDE THEORY';
+    } else {
+        math.style.display = 'none';
+        btn.innerHTML = '&#9660; SHOW THEORY';
     }
 }
 </script>
