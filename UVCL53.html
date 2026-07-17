@@ -223,40 +223,6 @@
     </button>
 </div>
     
-<!-- Gilbreath Main Arena -->
-<div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
-        <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
-    </div>
-
-    <div id="gilbreath-desc" style="font-size:0.65rem; color:#aaa; line-height:1.6; margin-bottom:12px;">
-        Use the buttons below to control the deck. <b>1. Set Stebbins</b> resets the deck to a 4-suit cycle. <b>2. Shuffle</b> performs the Gilbreath cut-reverse-riffle.
-    </div>
-
-    <!-- Arena Controls -->
-    <div style="display:flex; gap:8px; margin-bottom:15px;">
-        <button onclick="stebbinsSetup()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">1. SET STEBBINS</button>
-        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">2. SHUFFLE</button>
-    </div>
-
-    <!-- Theory Toggle -->
-    <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
-    
-    <div id="gilbreath-math" style="display:none; font-size:0.6rem; color:#00f5d4; background:rgba(255,183,3,0.05); padding:10px; border-radius:4px; border:1px solid #444;">
-        <b>The Theory:</b> Because you start with a repeating cycle, cutting and reversing one half creates a "mirror" of the pattern. When you interleave these two halves, the cards from the start of the cycle and the end of the cycle meet, ensuring each group of 4 cards retains one of each suit.
-    </div>
-</div>
-
-    <!-- TOGGLE BUTTON -->
-    <div style="margin-top:10px; text-align:center;">
-        <button onclick="toggleGilbreathEducation()" id="gilbreath-edu-btn" 
-            style="border-color:#888; color:#888; font-size:0.55rem; padding:4px 16px;">
-            &#9660; SHOW THEORY
-        </button>
-    </div>
-</div>
-
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK COMPARE</span>
         <div style="display:grid; grid-template-columns:1fr; gap:4px;">
@@ -779,15 +745,41 @@
         <div id="compare-summary" style="margin-top:10px; font-size:0.6rem; color:#aaa;"></div>
     </div>
 
-    <!-- ============ GILBREATH ARENA (placeholder) ============ -->
-    <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-            <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">Gilbreath Shuffle Demo</span>
-            <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
-        </div>
-        <div style="font-size:0.6rem; color:#aaa; line-height:1.7;">
-            Gilbreath demos coming soon. This section will demonstrate the Gilbreath Principle &mdash; after one Gilbreath riffle shuffle of a cycling-suit deck, every pair of cards contains one Red and one Black, and every group of 4 contains all 4 suits.
-        </div>
+
+        <!-- Gilbreath Main Arena -->
+<div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
+        <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
+    </div>
+
+    <div id="gilbreath-desc" style="font-size:0.65rem; color:#aaa; line-height:1.6; margin-bottom:12px;">
+        Use the buttons below to control the deck. <b>1. Set Stebbins</b> resets the deck to a 4-suit cycle. <b>2. Shuffle</b> performs the Gilbreath cut-reverse-riffle.
+    </div>
+
+    <!-- Arena Controls -->
+    <div style="display:flex; gap:8px; margin-bottom:15px;">
+        <button onclick="stebbinsSetup()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">1. SET STEBBINS</button>
+        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">2. SHUFFLE</button>
+    </div>
+
+    <!-- Theory Toggle -->
+    <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
+    
+    <div id="gilbreath-math" style="display:none; font-size:0.6rem; color:#00f5d4; background:rgba(255,183,3,0.05); padding:10px; border-radius:4px; border:1px solid #444;">
+        <b>The Theory:</b> Because you start with a repeating cycle, cutting and reversing one half creates a "mirror" of the pattern. When you interleave these two halves, the cards from the start of the cycle and the end of the cycle meet, ensuring each group of 4 cards retains one of each suit.
+    </div>
+</div>
+
+    <!-- TOGGLE BUTTON -->
+    <div style="margin-top:10px; text-align:center;">
+        <button onclick="toggleGilbreathEducation()" id="gilbreath-edu-btn" 
+            style="border-color:#888; color:#888; font-size:0.55rem; padding:4px 16px;">
+            &#9660; SHOW THEORY
+        </button>
+    </div>
+</div>
+
     </div>
 
     <div id="poker-arena">
