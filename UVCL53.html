@@ -787,7 +787,6 @@
     
 </div>
     
-        <!-- Gilbreath Main Arena -->
 <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
@@ -795,39 +794,36 @@
     </div>
 
     <div id="gilbreath-desc" style="font-size:0.65rem; color:#aaa; line-height:1.6; margin-bottom:12px;">
-        Use the buttons below to control the deck. <b>1. Set Stebbins</b> resets the deck to a 4-suit cycle. <b>2. Shuffle</b> performs the Gilbreath cut-reverse-riffle.
+        Select a mode to set the cycle, then shuffle to prove the principle.
     </div>
 
     <!-- Arena Controls -->
     <div style="display:flex; gap:8px; margin-bottom:15px;">
-        <button onclick="resetTo('STEBBINS')" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">1. SET STEBBINS</button>
-        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">2. SHUFFLE</button>
+        <button onclick="setupGilbreath('colors')" style="border-color:#ff4d4d; color:#ff4d4d; padding:5px 10px; font-size:0.6rem;">COLORS MODE</button>
+        <button onclick="setupGilbreath('suits')" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.6rem;">SUITS MODE</button>
+        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">SHUFFLE</button>
+    </div>
+
+    <!-- Results Visualization -->
+    <div id="gilbreath-results" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:15px; padding:10px; background:#111; border:1px solid #333; min-height:60px;">
+        <div style="color:#555; font-size:0.6rem; width:100%; text-align:center;">Select a mode to begin.</div>
     </div>
 
     <!-- Theory Toggle -->
     <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
     
+    <!-- Theory Content (Preserved) -->
     <div id="gilbreath-math" style="display:none; margin-top:15px; border-top:1px solid #333; padding-top:15px;">
-    <div style="font-size:0.6rem; color:#aaa; line-height:1.8; margin-bottom:12px;">
-        <strong>Gilbreath’s First Principle</strong> states that if you start with any repeating cyclic pattern (like a 4-suit cycle), that structure is preserved in a specific way after a riffle shuffle.
-    </div>
-    
-    <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px; margin-bottom:12px;">
-        <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">THE PRINCIPLE</div>
-        <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
-            Suppose your cards start with a repeated cyclic pattern (e.g., C-H-S-D). If your pattern has <em>n</em> cards in cyclic order (for suits, <em>n=4</em>), the principle dictates that after dealing any number of cards into a pile and riffle shuffling them with the remainder, it will still be the case that: 
-            <br><br>
-            <strong>Starting from the top, every group of <em>n</em> cards will contain exactly one card of each type.</strong>
+        <div style="font-size:0.6rem; color:#aaa; line-height:1.8; margin-bottom:12px;">
+            <strong>Gilbreath’s First Principle</strong> states that if you start with any repeating cyclic pattern, that structure is preserved in a specific way after a riffle shuffle.
+        </div>
+        <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px; margin-bottom:12px;">
+            <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">THE PRINCIPLE</div>
+            <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
+                If your pattern has <em>n</em> cards in cyclic order, after dealing and riffle shuffling, <strong>starting from the top, every group of <em>n</em> cards will contain exactly one card of each type.</strong>
+            </div>
         </div>
     </div>
-
-    <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px;">
-        <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">WHY IT WORKS</div>
-        <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
-            When you reverse one packet, you invert the cycle's direction. Because you are interleaving (riffle shuffling) these two mirrored cycles, you are effectively placing an "ascending" card against a "descending" card. This mathematical interaction guarantees the distribution of one of each type in every sequence of <em>n</em> cards.
-        </div>
-    </div>
-</div>
 </div>
 
     <div id="poker-arena">
@@ -4225,6 +4221,75 @@ function analyzeStud() {
 function toggleStudTheory() {
     const el = document.getElementById('stud-theory');
     el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+
+    /**
+ * Sets up a standard Si Stebbins deck
+ */
+function setupGilbreathDeck() {
+    // Generate a basic 52 card deck with suit patterns (0,1,2,3 repeating)
+    // 0=C, 1=H, 2=S, 3=D
+    deck = [];
+    for (let i = 0; i < 52; i++) {
+        deck.push({ suit: i % 4, id: i });
+    }
+    document.getElementById('gilbreath-status').innerText = "Stack set. Each block of 4 has 1 of each suit.";
+    renderGilbreathDisplay();
+}
+
+/**
+ * Performs the Gilbreath Shuffle
+ */
+function runGilbreathShuffle() {
+    if (deck.length < 52) return;
+
+    // 1. Cut the deck (26/26)
+    let top = deck.slice(0, 26);
+    let bot = deck.slice(26, 52);
+
+    // 2. Reverse the top packet (Crucial step for the principle)
+    top.reverse();
+
+    // 3. Riffle Shuffle (Interleave)
+    // We must interleave while keeping the relative order of each packet
+    let res = [];
+    let i = 0, j = 0;
+    
+    while(i < top.length || j < bot.length) {
+        // Randomly choose how many cards to drop from each side (1-3 cards)
+        // to simulate a natural riffle
+        let batch = Math.floor(Math.random() * 3) + 1;
+        
+        if (Math.random() > 0.5) {
+            for(let k=0; k<batch && i < top.length; k++) res.push(top[i++]);
+            for(let k=0; k<batch && j < bot.length; k++) res.push(bot[j++]);
+        } else {
+            for(let k=0; k<batch && j < bot.length; k++) res.push(bot[j++]);
+            for(let k=0; k<batch && i < top.length; k++) res.push(top[i++]);
+        }
+    }
+    
+    deck = res;
+    document.getElementById('gilbreath-status').innerText = "Shuffle complete. Inspect the sets of 4 below.";
+    renderGilbreathDisplay();
+}
+
+/**
+ * Visualizes the deck in rows of 4
+ */
+function renderGilbreathDisplay() {
+    const container = document.getElementById('gilbreath-display');
+    container.innerHTML = "";
+    
+    deck.forEach((card, idx) => {
+        const suits = ["♣", "♥", "♠", "♦"];
+        const div = document.createElement("div");
+        div.style.padding = "5px";
+        div.style.background = "#222";
+        div.style.border = "1px solid #444";
+        div.innerText = suits[card.suit];
+        container.appendChild(div);
+    });
 }
     
 </script>
