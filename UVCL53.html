@@ -4120,20 +4120,7 @@ function toggleGilbreathTheory() {
 }
 
 function setup8Kings() {
-    deck = [];
-    // 8-Kings: 8 K 3 10 2 7 9 5 Q 4 A 6 J
-    const vals = [8, 13, 3, 10, 2, 7, 9, 5, 12, 4, 1, 6, 11];
-    const suitNames = ['C', 'H', 'S', 'D'];
-    const rankNames = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-
-    for (let i = 0; i < 52; i++) {
-        // Cyclic suit pattern (CHSD)
-        let suitIdx = i % 4; 
-        // 8-Kings rank pattern
-        let valIdx = vals[i % 13] - 1; 
-        deck.push({ name: rankNames[valIdx] + suitNames[suitIdx], suit: suitIdx, rank: valIdx + 1 });
-    }
-    renderDeck();
+    resetTo('EIGHT_KINGS')
     document.getElementById('stud-status').innerText = "8-Kings stack loaded using mnemonic: 8 Kings ThreaTen To Save 95 Ladies For One Sick Knave!";
 }
 
