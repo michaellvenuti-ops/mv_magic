@@ -4232,18 +4232,33 @@ function toggleStudTheory() {
     /**
  * Sets up a standard Si Stebbins deck
  */
-function setupGilbreathDeck() {
-    // Generate a basic 52 card deck with suit patterns (0,1,2,3 repeating)
-    // 0=C, 1=H, 2=S, 3=D
+/**
+ * Setup the deck based on the mode provided by the button
+ * @param {string} mode - 'colors' or 'suits'
+ */
+function setupGilbreathDeck(mode) {
     deck = [];
-    for (let i = 0; i < 52; i++) {
-        deck.push({ suit: i % 4, id: i });
-    }
+    
+    // Safety check for UI elements to prevent "Cannot set properties of null" errors
+    const statusEl = document.getElementById('gilbreath-status');
     const descEl = document.getElementById('gilbreath-desc');
-    if (descEl) {
-        descEl.innerText = "Deck set to cycle. Every 4 cards will contain one of each suit.";
+
+    if (mode === 'colors') {
+        // Pattern: 0, 1, 0, 1... (Red vs Black)
+        for (let i = 0; i < 52; i++) {
+            deck.push({ suit: i % 2, id: i }); 
+        }
+        if (descEl) descEl.innerText = "Colors Mode: Deck set to Red-Black cycle.";
+        if (statusEl) statusEl.innerText = "Mode: Colors (Red/Black). Each pair has 1 of each.";
+    } else {
+        // Default to 'suits' (Pattern: 0, 1, 2, 3...)
+        for (let i = 0; i < 52; i++) {
+            deck.push({ suit: i % 4, id: i });
+        }
+        if (descEl) descEl.innerText = "Suits Mode: Deck set to 4-suit cycle.";
+        if (statusEl) statusEl.innerText = "Mode: Suits. Each block of 4 has 1 of each suit.";
     }
-    document.getElementById('gilbreath-status').innerText = "Stack set. Each block of 4 has 1 of each suit.";
+    
     renderGilbreathDisplay();
 }
 
@@ -4289,15 +4304,34 @@ function runGilbreathShuffle() {
  */
 function renderGilbreathDisplay() {
     const container = document.getElementById('gilbreath-display');
+    if (!container) return; // Safety check
+    
     container.innerHTML = "";
     
-    deck.forEach((card, idx) => {
-        const suits = ["♣", "♥", "♠", "♦"];
+    // Check if we are in colors mode by looking at the deck pattern
+    // If the max suit index is 1, we are in colors mode.
+    const isColors = deck.length > 0 && deck[0].suit <= 1;
+
+    deck.forEach((card) => {
         const div = document.createElement("div");
         div.style.padding = "5px";
+        div.style.margin = "2px";
         div.style.background = "#222";
         div.style.border = "1px solid #444";
-        div.innerText = suits[card.suit];
+        div.style.fontSize = "1rem";
+
+        if (isColors) {
+            // Colors Mode: 0=Black, 1=Red
+            div.innerText = (card.suit === 0) ? "B" : "R";
+            div.style.color = (card.suit === 0) ? "#aaa" : "#ff4d4d";
+        } else {
+            // Suits Mode
+            const suits = ["♣", "♥", "♠", "♦"];
+            div.innerText = suits[card.suit];
+            // Style hearts/diamonds red
+            div.style.color = (card.suit === 1 || card.suit === 3) ? "#ff4d4d" : "#fff";
+        }
+        
         container.appendChild(div);
     });
 }
