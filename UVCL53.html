@@ -217,8 +217,8 @@
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#9760; Gilbreath Demo</span>
         <div style="display:grid; grid-template-columns:1fr; gap:4px;">
-            <button onclick="openGilbreathArena()" style="padding:var(--pad-small);">Gilbreath Shuffle Demo</button>
-            <button onclick="showJonah(2)" style="padding:var(--pad-small);">Gilbreath Poker Demo</button>
+            <button onclick="openGilbreathArena()" style="padding:var(--pad-small);">Gilbreath Shuffle</button>
+            <button onclick="openStudArena()" style="padding:var(--pad-small);">7-Card Stud (Gilbreath)</button>
         </div>
     </div>
     
@@ -744,7 +744,35 @@
         <div id="compare-summary" style="margin-top:10px; font-size:0.6rem; color:#aaa;"></div>
     </div>
 
+<!-- 7-Card Stud Arena -->
+<div id="stud-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; 7-Card Stud &mdash; 8-Kings Demo</span>
+        <button onclick="document.getElementById('stud-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
 
+    <!-- Arena Controls -->
+    <div style="display:flex; gap:6px; margin-bottom:15px;">
+        <button onclick="setup8Kings()" style="border-color:var(--gold); color:var(--gold); font-size:0.6rem;">1. LOAD 8-KINGS</button>
+        <button onclick="shuffleStud()" style="border-color:var(--gold); color:var(--gold); font-size:0.6rem;">2. SHUFFLE</button>
+        <button onclick="dealStud()" style="border-color:var(--gold); color:var(--gold); font-size:0.6rem;">3. DEAL HANDS</button>
+        <button onclick="analyzeStud()" style="border-color:#00f5d4; color:#00f5d4; font-size:0.6rem;">4. ANALYZE</button>
+    </div>
+
+    <div id="stud-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px; min-height:1.4em;">Load the 8-Kings stack to begin.</div>
+
+    <div style="display:flex; gap:20px;">
+        <div style="flex:1;">
+            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">USER (PARTICIPANT)</div>
+            <div id="stud-p1" class="hand-row" style="display:flex; gap:3px; min-height:40px;"></div>
+        </div>
+        <div style="flex:1;">
+            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">MAGICIAN (YOU)</div>
+            <div id="stud-p2" class="hand-row" style="display:flex; gap:3px; min-height:40px;"></div>
+        </div>
+    </div>
+</div>
+    
         <!-- Gilbreath Main Arena -->
 <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -4081,6 +4109,68 @@ function toggleGilbreathTheory() {
         math.style.display = 'none';
         btn.innerHTML = '&#9660; SHOW THEORY';
     }
+}
+
+    function openStudArena() {
+    ['jonah-arena', 'gilbreath-arena', 'berglas-solver-arena'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.style.display = 'none';
+    });
+    document.getElementById('stud-arena').style.display = 'block';
+}
+
+function setup8Kings() {
+    deck = [];
+    // 8-Kings: 8 K 3 10 2 7 9 5 Q 4 A 6 J
+    const vals = [8, 13, 3, 10, 2, 7, 9, 5, 12, 4, 1, 6, 11];
+    const suitNames = ['C', 'H', 'S', 'D'];
+    const rankNames = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+
+    for (let i = 0; i < 52; i++) {
+        // Cyclic suit pattern (CHSD)
+        let suitIdx = i % 4; 
+        // 8-Kings rank pattern
+        let valIdx = vals[i % 13] - 1; 
+        deck.push({ name: rankNames[valIdx] + suitNames[suitIdx], suit: suitIdx, rank: valIdx + 1 });
+    }
+    renderDeck();
+    document.getElementById('stud-status').innerText = "8-Kings stack loaded using mnemonic: 8 Kings ThreaTen To Save 95 Ladies For One Sick Knave!";
+}
+
+function shuffleStud() {
+    // Gilbreath Shuffle
+    let top = deck.slice(0, 26).reverse();
+    let bot = deck.slice(26, 52);
+    let res = [];
+    while(top.length || bot.length) {
+        if (Math.random() > 0.5) {
+            if(top.length) res.push(top.shift());
+            if(bot.length) res.push(bot.shift());
+        } else {
+            if(bot.length) res.push(bot.shift());
+            if(top.length) res.push(top.shift());
+        }
+    }
+    deck = res;
+    renderDeck();
+    document.getElementById('stud-status').innerText = "Shuffle complete. Gilbreath Principle active.";
+}
+
+function dealStud() {
+    // Deal 14 cards total (7 per player)
+    let p1 = [], p2 = [];
+    for(let i=0; i<7; i++) {
+        p1.push(deck.shift());
+        p2.push(deck.shift());
+    }
+    document.getElementById('stud-p1').innerHTML = p1.map(c => `<div style="background:#222; border:1px solid #444; padding:5px; font-size:0.6rem;">${c.name}</div>`).join('');
+    document.getElementById('stud-p2').innerHTML = p2.map(c => `<div style="background:#222; border:1px solid #444; padding:5px; font-size:0.6rem;">${c.name}</div>`).join('');
+    document.getElementById('stud-status').innerText = "Hands dealt. Because of the Gilbreath principle, the suits and values in the first 14 cards are mathematically linked.";
+}
+
+function analyzeStud() {
+    // Explanation of the magician's logic
+    document.getElementById('stud-status').innerHTML = "<b>Logic:</b> 1. Identify missing suits from your hand. 2. Compare face-up values against the 8-Kings sequence to find the 2 missing values. 3. Use 'cold reading' to guess which suit goes with which value.";
 }
 </script>
 
