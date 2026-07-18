@@ -600,8 +600,10 @@
         <button onclick="hinduFalse()" style="border-color:#ff9900; color:#ff9900;">&#9888; False Hindu (preserve top/bottom)</button>
         <button onclick="hinduReset()" style="border-color:#888; color:#888;">&#8635; Reset</button>
     </div>
+    <div id="hindu-visual-strip" style="display:flex; flex-wrap:wrap; gap:5px; margin-top:10px; background:#111; padding:10px; border-radius:5px; min-height:80px;"></div>
     <div id="hindu-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em;"></div>
     <div id="hindu-log" style="font-size:0.55rem; color:#888; margin-top:6px; line-height:1.6; max-height:80px; overflow-y:auto;"></div>
+    
 </div>
     
     <!-- ============ JONAH POKER ARENA ============ -->
@@ -3889,13 +3891,16 @@ function showHinduDemo() {
 
 function hinduStep() {
     saveState();
-    const packetSize = Math.floor(Math.random() * 4) + 2; // 2-5 cards
+    const packetSize = Math.floor(Math.random() * 4) + 2;
     const packet = deck.splice(0, Math.min(packetSize, deck.length));
     deck = deck.concat(packet);
     hinduStep_count++;
-    document.getElementById('hindu-status').innerText = 'Packet ' + hinduStep_count + ': stripped ' + packet.length + ' cards (' + packet.join(', ') + ') to bottom of left-hand pile.';
+    
+    document.getElementById('hindu-status').innerText = 'Stripped ' + packet.length + ' cards.';
     document.getElementById('hindu-log').innerHTML += '<div>Strip ' + hinduStep_count + ': ' + packet.join(', ') + '</div>';
-    renderDeck();
+    
+    // UPDATE:
+    renderHinduDisplay(); 
 }
 
 function hinduRunAll() {
@@ -3911,10 +3916,11 @@ function hinduRunAll() {
         log += '<div>Strip ' + (++count) + ': ' + packet.join(', ') + '</div>';
     }
     deck = result;
-    document.getElementById('hindu-status').innerText = 'Full Hindu Shuffle complete: ' + count + ' packets stripped.';
+    document.getElementById('hindu-status').innerText = 'Full Shuffle complete.';
     document.getElementById('hindu-log').innerHTML = log;
-    logMove('Hindu Shuffle: full run, ' + count + ' packets.');
-    renderDeck();
+    
+    // UPDATE:
+    renderHinduDisplay();
 }
 
 function hinduFalse() {
@@ -3930,9 +3936,9 @@ function hinduFalse() {
         shuffled = shuffled.concat(packet);
     }
     deck = [topCard, ...shuffled, bottomCard];
-    document.getElementById('hindu-status').innerText = 'False Hindu: top card (' + topCard + ') and bottom card (' + bottomCard + ') preserved. Middle shuffled.';
-    logMove('False Hindu Shuffle: top ' + topCard + ' and bottom ' + bottomCard + ' anchored.');
-    renderDeck();
+    
+    // UPDATE:
+    renderHinduDisplay();
 }
 
 function hinduReset() {
@@ -3940,10 +3946,11 @@ function hinduReset() {
         saveState();
         deck = [...hinduDeckSnapshot];
         hinduStep_count = 0;
-        document.getElementById('hindu-status').innerText = 'Reset to deck state when demo was opened.';
+        document.getElementById('hindu-status').innerText = 'Deck reset.';
         document.getElementById('hindu-log').innerHTML = '';
-        logMove('Hindu Shuffle Demo reset.');
-        renderDeck();
+        
+        // UPDATE:
+        renderHinduDisplay();
     }
 }
 
@@ -4333,6 +4340,22 @@ function updateTheory(mode) {
         <div style="margin-bottom:6px;"><strong>The Shuffle:</strong> We then riffle shuffle the two halves together. It doesn't matter how sloppy the shuffle is, as long as it is a true riffle.</div>
         <div style="color:#fff;">${resultText}</div>
     `;
+}
+
+    /**
+ * Renders the deck specifically inside the Hindu Demo Arena
+ */
+function renderHinduDisplay() {
+    const container = document.getElementById('hindu-visual-strip');
+    container.innerHTML = ""; // Clear existing
+
+    deck.forEach(card => {
+        // Create the card UI using your global createCardUI function
+        const cardUI = createCardUI(card);
+        // Scale it down slightly so it fits nicely in the demo area
+        cardUI.style.transform = "scale(0.6)"; 
+        container.appendChild(cardUI);
+    });
 }
     
 </script>
