@@ -4239,6 +4239,10 @@ function setupGilbreathDeck() {
     for (let i = 0; i < 52; i++) {
         deck.push({ suit: i % 4, id: i });
     }
+    const descEl = document.getElementById('gilbreath-desc');
+    if (descEl) {
+        descEl.innerText = "Deck set to cycle. Every 4 cards will contain one of each suit.";
+    }
     document.getElementById('gilbreath-status').innerText = "Stack set. Each block of 4 has 1 of each suit.";
     renderGilbreathDisplay();
 }
