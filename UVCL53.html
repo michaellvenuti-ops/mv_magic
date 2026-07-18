@@ -761,15 +761,16 @@
 
     <div id="stud-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px; min-height:1.4em;">Load the 8-Kings stack to begin.</div>
 
-    <div style="display:flex; gap:20px;">
-        <div style="flex:1;">
-            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">USER (PARTICIPANT)</div>
-            <div id="stud-p1" class="hand-row" style="display:flex; gap:3px; min-height:40px;"></div>
-        </div>
-        <div style="flex:1;">
-            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">MAGICIAN (YOU)</div>
-            <div id="stud-p2" class="hand-row" style="display:flex; gap:3px; min-height:40px;"></div>
-        </div>
+   <div style="display:flex; gap:20px;">
+    <div style="flex:1;">
+        <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">USER (PARTICIPANT)</div>
+        <!-- Note the hand-row class to ensure proper spacing -->
+        <div id="stud-p1" class="hand-row" style="display:flex; gap:3px; min-height:55px;"></div>
+    </div>
+    <div style="flex:1;">
+        <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px;">MAGICIAN (YOU)</div>
+        <div id="stud-p2" class="hand-row" style="display:flex; gap:3px; min-height:55px;"></div>
+    </div>
     </div>
 </div>
     
@@ -4159,26 +4160,39 @@ function shuffleStud() {
 }
 
 function dealStud() {
+    // 1. Safety check
+    if (deck.length < 14) { 
+        document.getElementById('stud-status').innerText = "Not enough cards! Load the 8-Kings stack first.";
+        return; 
+    }
+
     let p1 = [], p2 = [];
-    // Ensure we have enough cards
-    if (deck.length < 14) { alert("Not enough cards! Reset the stack."); return; }
-    
-    for(let i=0; i<7; i++) {
+    // 2. Deal 7 cards to each
+    for(let i = 0; i < 7; i++) {
         p1.push(deck.shift());
         p2.push(deck.shift());
     }
 
-    const renderHand = (hand) => hand.map(c => {
-        // If c is an object (with a .name property), use .name. 
-        // If c is a string, use c directly.
-        const displayName = (typeof c === 'object' && c.name) ? c.name : c;
-        
-        return `<div style="background:#222; border:1px solid #444; padding:5px; font-size:0.6rem; color:#fff; min-width:20px; text-align:center;">${displayName}</div>`;
-    }).join('');
+    // 3. Clear existing hands
+    const p1Container = document.getElementById('stud-p1');
+    const p2Container = document.getElementById('stud-p2');
+    p1Container.innerHTML = '';
+    p2Container.innerHTML = '';
 
-    document.getElementById('stud-p1').innerHTML = renderHand(p1);
-    document.getElementById('stud-p2').innerHTML = renderHand(p2);
+    // 4. Create and append the Graphical Cards
+    p1.forEach(card => {
+        // Use your existing createCardUI function
+        let ui = createCardUI(card); 
+        p1Container.appendChild(ui);
+    });
+
+    p2.forEach(card => {
+        let ui = createCardUI(card);
+        p2Container.appendChild(ui);
+    });
+
     document.getElementById('stud-status').innerText = "Hands dealt. Gilbreath principle active.";
+    renderDeck(); // Keep the main lab deck in sync
 }
 
 function analyzeStud() {
