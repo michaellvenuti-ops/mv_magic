@@ -806,7 +806,8 @@
     <div id="gilbreath-display" style="display:flex; flex-wrap:wrap; gap:5px; background:#111; padding:10px; border-radius:6px; min-height:80px;"></div>
 
     <!-- Dynamic Theory Section -->
-    <div id="gilbreath-theory-box" style="margin-top:15px; padding:10px; border-top:1px solid #444; font-size:0.55rem; color:#aaa; line-height:1.5;"></div>
+<div id="gilbreath-theory-box" style="margin-top:15px; padding:12px; background:#111; border:1px solid #444; border-radius:6px; font-size:0.6rem; color:#aaa; line-height:1.6;">
+    
 </div>
 
     <div id="poker-arena">
@@ -4277,25 +4278,61 @@ function renderGilbreathDisplay() {
     const container = document.getElementById('gilbreath-display');
     container.innerHTML = "";
     
-    deck.forEach((card) => {
-        // Helper: Convert ID to a readable card string like "AH"
-        const suits = ['C', 'H', 'S', 'D'];
-        const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-        const cardStr = ranks[card.id % 13] + suits[card.suit % 4];
+    // Determine the grouping size based on the mode
+    let chunkSize = (currentMode === 'colors') ? 2 : 4;
+    
+    // Loop through the deck in chunks
+    for (let i = 0; i < deck.length; i += chunkSize) {
+        let chunk = deck.slice(i, i + chunkSize);
         
-        const cardUI = createCardUI(cardStr);
-        cardUI.style.transform = "scale(0.6)"; // Shrink to fit grid
-        container.appendChild(cardUI);
-    });
+        // Create a visual box for each group
+        let groupDiv = document.createElement('div');
+        groupDiv.style.cssText = "display:flex; gap:2px; padding:4px; border:2px solid #555; border-radius:6px; background:#1a1a2e;";
+        
+        chunk.forEach((card) => {
+            const suits = ['C', 'H', 'S', 'D'];
+            const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+            const cardStr = ranks[card.id % 13] + suits[card.suit % 4];
+            
+            const cardUI = createCardUI(cardStr);
+            
+            // Create a wrapper to perfectly contain the scaled-down card
+            let cardWrapper = document.createElement('div');
+            cardWrapper.style.width = "42px"; 
+            cardWrapper.style.height = "60px";
+            
+            cardUI.style.transform = "scale(0.6)"; 
+            cardUI.style.transformOrigin = "top left"; // Keeps it pinned to the top left of the wrapper
+            
+            cardWrapper.appendChild(cardUI);
+            groupDiv.appendChild(cardWrapper);
+        });
+        
+        container.appendChild(groupDiv);
+    }
 }
 
 function updateTheory(mode) {
     const box = document.getElementById('gilbreath-theory-box');
+    
+    let setupText = "";
+    let resultText = "";
+    
     if (mode === 'colors') {
-        box.innerHTML = `<strong>Gilbreath’s First Principle (Colors):</strong> Discovered by Norman Gilbreath in the 1960s, this principle applies to alternating colors. After a riffle shuffle, every 2 cards will contain a red card and a black card.`;
+        setupText = "<strong>The Setup (Colors):</strong> The deck is set in a repeating 2-card cycle (Red, Black, Red, Black).";
+        resultText = "<strong>The Result:</strong> Because of the math of the interleave, every single group of 2 cards will ALWAYS contain exactly one Red card and one Black card.";
     } else {
-        box.innerHTML = `<strong>Gilbreath’s First Principle (Suits):</strong> Suppose your cards start with a repeated cyclic pattern (C-H-S-D). After a riffle shuffle, every group of 4 cards, starting from the top, will contain one card of each suit.`;
+        setupText = "<strong>The Setup (Suits):</strong> The deck is set in a Si Stebbins repeating 4-suit cycle (Clubs, Hearts, Spades, Diamonds).";
+        resultText = "<strong>The Result:</strong> Because of the math of the interleave, every single group of 4 cards will ALWAYS contain exactly one Club, one Heart, one Spade, and one Diamond.";
     }
+    
+    box.innerHTML = `
+        <div style="color:var(--gold); font-weight:bold; margin-bottom:6px; font-size:0.65rem;">HOW THE GILBREATH PRINCIPLE WORKS</div>
+        <div style="margin-bottom:6px;">${setupText}</div>
+        <div style="margin-bottom:6px;"><strong>The Move:</strong> We cut the top 26 cards and <em>reverse</em> them. In a real performance, this is done by dealing cards one by one onto the table, or executing a specific overhand shuffle. Reversing one half of the cycle is the mathematical secret.</div>
+        <div style="margin-bottom:6px;"><strong>The Shuffle:</strong> We then riffle shuffle the two halves together. It doesn't matter how sloppy the shuffle is, as long as it is a true riffle.</div>
+        <div style="color:#fff;">${resultText}</div>
+    `;
 }
     
 </script>
