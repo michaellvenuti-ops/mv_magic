@@ -789,43 +789,24 @@
     
 <div id="gilbreath-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Shuffle Demo</span>
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; Gilbreath Principle Lab</span>
         <button onclick="document.getElementById('gilbreath-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
     </div>
 
-    <div id="gilbreath-desc" style="font-size:0.65rem; color:#aaa; line-height:1.6; margin-bottom:12px;">
-        Select a mode to set the cycle, then shuffle to prove the principle.
-    </div>
-
-    <!-- Arena Controls -->
+    <!-- Mode Selector -->
     <div style="display:flex; gap:8px; margin-bottom:15px;">
-    <button onclick="setupGilbreathDeck('colors'); currentMode='colors';" style="border-color:#ff4d4d; color:#ff4d4d; padding:5px 10px; font-size:0.6rem;">COLORS MODE</button>
-    <button onclick="setupGilbreathDeck('suits'); currentMode='suits';" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.6rem;">SUITS MODE</button>
-    <button onclick="stebbinsShuffle(currentMode)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">SHUFFLE</button>
+        <button onclick="setupGilbreathDeck('colors')" style="border-color:#ff4d4d; color:#ff4d4d; padding:5px 10px; font-size:0.6rem;">COLORS MODE</button>
+        <button onclick="setupGilbreathDeck('suits')" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.6rem;">SUITS MODE</button>
+        <button onclick="stebbinsShuffle()" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">2. SHUFFLE</button>
     </div>
 
-    <!-- Results Visualization -->
-    <div id="gilbreath-results" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:15px; padding:10px; background:#111; border:1px solid #333; min-height:60px;">
-        <div style="color:#555; font-size:0.6rem; width:100%; text-align:center;">Select a mode to begin.</div>
-    </div>
+    <div id="gilbreath-status" style="font-size:0.6rem; color:#aaa; margin-bottom:10px;">Select a mode to begin.</div>
 
-    <div id="gilbreath-display" style="display:flex; flex-wrap:wrap; margin-top:10px;"></div>
-    
-    <!-- Theory Toggle -->
-    <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
-    
-    <!-- Theory Content (Preserved) -->
-    <div id="gilbreath-math" style="display:none; margin-top:15px; border-top:1px solid #333; padding-top:15px;">
-        <div style="font-size:0.6rem; color:#aaa; line-height:1.8; margin-bottom:12px;">
-            <strong>Gilbreath’s First Principle</strong> states that if you start with any repeating cyclic pattern, that structure is preserved in a specific way after a riffle shuffle.
-        </div>
-        <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px; margin-bottom:12px;">
-            <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">THE PRINCIPLE</div>
-            <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
-                If your pattern has <em>n</em> cards in cyclic order, after dealing and riffle shuffling, <strong>starting from the top, every group of <em>n</em> cards will contain exactly one card of each type.</strong>
-            </div>
-        </div>
-    </div>
+    <!-- Card Display Area -->
+    <div id="gilbreath-display" style="display:flex; flex-wrap:wrap; gap:5px; background:#111; padding:10px; border-radius:6px; min-height:80px;"></div>
+
+    <!-- Dynamic Theory Section -->
+    <div id="gilbreath-theory-box" style="margin-top:15px; padding:10px; border-top:1px solid #444; font-size:0.55rem; color:#aaa; line-height:1.5;"></div>
 </div>
 
     <div id="poker-arena">
@@ -834,7 +815,7 @@
             <button onclick="document.getElementById('poker-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
         </div>
         <div id="poker-rows"></div>
-        <div id="community-cards" style="margin-top:10px; border-top:1px dashed var(--gold); padding-top:10px;"></div>
+        <div id="community-cards" style="margin-top:10px; border-top:1px dashed var(--go/sctiprld); padding-top:10px;"></div>
     </div>
     <!-- ============ PART 2: FARO NAVIGATOR ARENA ============ -->
 <div id="faro-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
@@ -4241,78 +4222,80 @@ function toggleStudTheory() {
 // Global deck variable
 
 // Variable to keep track of mode
-let currentGilbreathMode = 'suits'; 
+let currentMode = 'suits';
 
 function setupGilbreathDeck(mode) {
-    currentGilbreathMode = mode;
+    currentMode = mode;
     deck = [];
-    // Standard setup (0-51)
+    
+    // Create Deck
     for (let i = 0; i < 52; i++) {
-        deck.push({ suit: i % 4, id: i });
+        // mode 'colors': 0=Red, 1=Black
+        // mode 'suits': 0=C, 1=H, 2=S, 3=D
+        let suit = (mode === 'colors') ? (i % 2) : (i % 4);
+        deck.push({ suit: suit, id: i }); 
     }
     
-    // Update UI and Draw
-    const statusEl = document.getElementById('gilbreath-status');
-    if (statusEl) statusEl.innerText = mode === 'colors' ? "Colors Mode Loaded." : "Suits Mode Loaded.";
+    document.getElementById('gilbreath-status').innerText = (mode === 'colors') 
+        ? "Colors Mode: Deck set (Red/Black alternating)." 
+        : "Suits Mode: Deck set (C,H,S,D cycle).";
     
-    renderGilbreathDisplay(mode);
+    updateTheory(mode);
+    renderGilbreathDisplay();
 }
 
 function stebbinsShuffle() {
-    if (deck.length === 0) return;
+    if (deck.length < 52) return;
     
-    // 1. Cut
+    // 1. Cut (26/26)
     let top = deck.slice(0, 26);
     let bot = deck.slice(26, 52);
 
-    // 2. Reverse top (The Overhand/Setup shuffle)
+    // 2. Reverse the top packet (Crucial step for the principle)
+    // The principle requires reversing one pile before the riffle.
     top.reverse();
 
-    // 3. Riffle Shuffle
+    // 3. Riffle Shuffle (Interleave)
     let res = [];
-    while(top.length > 0 || bot.length > 0) {
-        let take = Math.floor(Math.random() * 3) + 1;
-        if(Math.random() > 0.5) {
-            res.push(...top.splice(0, take));
-            res.push(...bot.splice(0, take));
+    let i = 0, j = 0;
+    while(i < top.length || j < bot.length) {
+        let batch = Math.floor(Math.random() * 3) + 1;
+        if (Math.random() > 0.5) {
+            for(let k=0; k<batch && i < top.length; k++) res.push(top[i++]);
+            for(let k=0; k<batch && j < bot.length; k++) res.push(bot[j++]);
         } else {
-            res.push(...bot.splice(0, take));
-            res.push(...top.splice(0, take));
+            for(let k=0; k<batch && j < bot.length; k++) res.push(bot[j++]);
+            for(let k=0; k<batch && i < top.length; k++) res.push(top[i++]);
         }
     }
     deck = res;
-    
-    // Render using the mode we last used
-    renderGilbreathDisplay(currentGilbreathMode);
+    document.getElementById('gilbreath-status').innerText = "Shuffle complete. Observe the preservation of the pattern.";
+    renderGilbreathDisplay();
 }
-    
-function renderGilbreathDisplay(mode) {
-    const container = document.getElementById('gilbreath-display');
-    if (!container) return; // Safety check if container is missing
-    
-    container.innerHTML = ""; // Clear previous cards
-    container.style.display = "flex";
-    container.style.flexWrap = "wrap";
-    container.style.gap = "5px";
 
+function renderGilbreathDisplay() {
+    const container = document.getElementById('gilbreath-display');
+    container.innerHTML = "";
+    
     deck.forEach((card) => {
-        // Use the helper to get the card string, then pass to your UI generator
-        const cardStr = getCardString(card);
-        const cardUI = createCardUI(cardStr);
+        // Helper: Convert ID to a readable card string like "AH"
+        const suits = ['C', 'H', 'S', 'D'];
+        const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+        const cardStr = ranks[card.id % 13] + suits[card.suit % 4];
         
-        // Shrink slightly so they fit in the row nicely
-        cardUI.style.transform = "scale(0.7)"; 
+        const cardUI = createCardUI(cardStr);
+        cardUI.style.transform = "scale(0.6)"; // Shrink to fit grid
         container.appendChild(cardUI);
     });
 }
 
-    function getCardString(card) {
-    const suits = ['C', 'H', 'S', 'D'];
-    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    // card.id is 0-51. rank is id % 13.
-    const rank = ranks[card.id % 13];
-    const suit = suits[card.suit];
-    return rank + suit; 
+function updateTheory(mode) {
+    const box = document.getElementById('gilbreath-theory-box');
+    if (mode === 'colors') {
+        box.innerHTML = `<strong>Gilbreath’s First Principle (Colors):</strong> Discovered by Norman Gilbreath in the 1960s, this principle applies to alternating colors. After a riffle shuffle, every 2 cards will contain a red card and a black card.`;
+    } else {
+        box.innerHTML = `<strong>Gilbreath’s First Principle (Suits):</strong> Suppose your cards start with a repeated cyclic pattern (C-H-S-D). After a riffle shuffle, every group of 4 cards, starting from the top, will contain one card of each suit.`;
+    }
 }
     
 </script>
