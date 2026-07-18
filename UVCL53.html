@@ -765,9 +765,27 @@
     <!-- Theory Toggle -->
     <button onclick="toggleGilbreathTheory()" id="gilbreath-theory-btn" style="border-color:#555; color:#888; font-size:0.6rem; padding:4px 8px; margin-bottom:10px;">&#9660; SHOW THEORY</button>
     
-    <div id="gilbreath-math" style="display:none; font-size:0.6rem; color:#00f5d4; background:rgba(255,183,3,0.05); padding:10px; border-radius:4px; border:1px solid #444;">
-        <b>The Theory:</b> Because you start with a repeating cycle, cutting and reversing one half creates a "mirror" of the pattern. When you interleave these two halves, the cards from the start of the cycle and the end of the cycle meet, ensuring each group of 4 cards retains one of each suit.
+    <div id="gilbreath-math" style="display:none; margin-top:15px; border-top:1px solid #333; padding-top:15px;">
+    <div style="font-size:0.6rem; color:#aaa; line-height:1.8; margin-bottom:12px;">
+        <strong>Gilbreath’s First Principle</strong> states that if you start with any repeating cyclic pattern (like a 4-suit cycle), that structure is preserved in a specific way after a riffle shuffle.
     </div>
+    
+    <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px; margin-bottom:12px;">
+        <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">THE PRINCIPLE</div>
+        <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
+            Suppose your cards start with a repeated cyclic pattern (e.g., C-H-S-D). If your pattern has <em>n</em> cards in cyclic order (for suits, <em>n=4</em>), the principle dictates that after dealing any number of cards into a pile and riffle shuffling them with the remainder, it will still be the case that: 
+            <br><br>
+            <strong>Starting from the top, every group of <em>n</em> cards will contain exactly one card of each type.</strong>
+        </div>
+    </div>
+
+    <div style="background:#111; border:1px solid #333; border-radius:6px; padding:12px;">
+        <div style="font-size:0.6rem; color:var(--gold); font-weight:bold; margin-bottom:8px;">WHY IT WORKS</div>
+        <div style="font-size:0.55rem; color:#aaa; line-height:1.7;">
+            When you reverse one packet, you invert the cycle's direction. Because you are interleaving (riffle shuffling) these two mirrored cycles, you are effectively placing an "ascending" card against a "descending" card. This mathematical interaction guarantees the distribution of one of each type in every sequence of <em>n</em> cards.
+        </div>
+    </div>
+</div>
 </div>
 
     <div id="poker-arena">
