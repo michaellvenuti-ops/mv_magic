@@ -4051,15 +4051,21 @@ document.addEventListener('keydown', function(e) {
 /**
  * Opens the arena and closes others
  */
-function openGilbreathArena() {
-    // Hide others
-    ['jonah-arena', 'berglas-solver-arena'].forEach(id => {
-        let el = document.getElementById(id);
+function openGilbreathDemo() {
+    // 1. Hide other arenas if you have them (add your other IDs here)
+    const arenas = ['jonah-arena', 'berglas-solver-arena', 'stack-compare-arena']; 
+    arenas.forEach(id => {
+        const el = document.getElementById(id);
         if (el) el.style.display = 'none';
     });
-    
-    // Show ours
-    document.getElementById('gilbreath-arena').style.display = 'block';
+
+    // 2. Show the Gilbreath Arena
+    const gilbreath = document.getElementById('gilbreath-arena');
+    if (gilbreath) {
+        gilbreath.style.display = 'block';
+        // Optional: Auto-load the deck state when opened
+        setupGilbreathDeck(); 
+    }
 }
 
 /**
