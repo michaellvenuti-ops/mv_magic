@@ -3705,7 +3705,7 @@ function overhangShuffle() {
 }
 
 // ===== RIFFLE SHUFFLE (imperfect) =====
-function riffleShuffle() {
+function riffleShuffle_imperfect() {
     saveState();
     
     // Random split point between 20 and 32 (realistic human split)
@@ -4011,13 +4011,20 @@ function openGilbreathArena() {
  */
 function stebbinsSetup() {
     deck = [];
+    const suits = ['C', 'H', 'S', 'D'];
+    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+
     for (let i = 0; i < 52; i++) {
-        deck.push({ suit: i % 4, rank: i % 13 }); 
+        deck.push({ 
+            suit: i % 4, 
+            rank: i % 13, 
+            name: ranks[i % 13] + suits[i % 4] 
+        }); 
     }
+    
     renderDeck(); 
     logMove("Gilbreath: Stebbins Stack Loaded");
 }
-
 /**
  * Performs the Gilbreath Shuffle on the current deck
  */
