@@ -4189,15 +4189,20 @@ function dealStud() {
     p1Container.innerHTML = '';
     p2Container.innerHTML = '';
 
-    // Render User Hand (First 2 face down)
+    // Render User Hand
     p1.forEach((card, i) => {
         if (i < 2) {
-            // Face-down card
+            // Face-down placeholder
             let back = document.createElement('div');
-            back.className = "card-back";
-            back.style.cssText = "width:40px; height:60px; background:#8B5CF6; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; color:white; font-size:0.5rem;";
-            back.innerText = "FLIP";
+            // Ensure these dimensions match your standard createCardUI card size
+            back.style.cssText = "width:45px; height:65px; background:#111; border:1px solid #444; border-radius:4px; cursor:pointer; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:5px; box-sizing:border-box;";
+            back.innerHTML = `
+                <div style="font-size:0.5rem; color:#aaa; text-transform:uppercase;">FLIP</div>
+                <div style="font-size:1.2rem; color:var(--gold); font-weight:bold;">${i + 1}</div>
+                <div style="height:10px;"></div>
+            `;
             back.onclick = function() {
+                // Swap the placeholder for the real card
                 this.replaceWith(createCardUI(card));
             };
             p1Container.appendChild(back);
@@ -4206,10 +4211,10 @@ function dealStud() {
         }
     });
 
-    // Render Magician Hand (All face up)
+    // Render Magician Hand
     p2.forEach(card => p2Container.appendChild(createCardUI(card)));
 
-    document.getElementById('stud-status').innerText = "Hands dealt. Flip your 2 face-down cards to reveal your hand!";
+    document.getElementById('stud-status').innerText = "Hands dealt. Flip cards 1 and 2 to reveal.";
 }
 
 function analyzeStud() {
