@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>/script
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Card Lab v10</title>
@@ -213,6 +214,39 @@
             <button onclick="showJonah(2)" style="padding:var(--pad-small);">9&#9827; on Bottom &rarr; Dealer Wins</button>
         </div>
     </div>
+
+<!-- ============ NINE CARD SPELLER ARENA ============ -->
+<div id="ns-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9827; Nine Card Speller</span>
+        <button onclick="document.getElementById('ns-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div id="ns-desc" style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.7; padding:8px; background:rgba(255,183,3,0.06); border-radius:4px; border:1px solid #444;"></div>
+    <div id="ns-peek" style="display:none; font-size:0.6rem; color:#aaa; margin-bottom:10px; display:flex; align-items:center; gap:8px;"></div>
+
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="nsLoad()" id="ns-load-btn" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Random 9-Card Bank</button>
+        <button onclick="nsDealLetter()" id="ns-step-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654; Deal Next Letter</button>
+        <button onclick="nsRunAll()" id="ns-run-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654;&#9654; Spell All</button>
+        <button onclick="nsReset()" id="ns-reset-btn" style="border-color:#555; color:#888; display:none;">&#8635; Reset</button>
+    </div>
+
+    <div id="ns-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em; margin-bottom:10px;"></div>
+
+    <div id="ns-table" style="display:none;">
+        <div id="ns-letters" style="display:flex; gap:5px; margin-bottom:12px; flex-wrap:wrap;"></div>
+        <div style="margin-bottom:6px;">
+            <div style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">HAND</div>
+            <div id="ns-hand-stack" style="font-size:0.6rem; color:#aaa; margin-bottom:8px;"></div>
+            <div id="ns-hand-row" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+        </div>
+        <div>
+            <div style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">TABLE PILE (dealt)</div>
+            <div id="ns-table-row" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+        </div>
+        <div id="ns-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold); line-height:1.6;"></div>
+    </div>
+</div>
     
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;"> Gilbreath Demo</span>
@@ -221,6 +255,13 @@
             <button onclick="openStudArena()" style="padding:var(--pad-small);">7-Card Stud (Gilbreath)</button>
         </div>
     </div>
+
+<div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#9827; NINE CARD SPELLER</span>
+    <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+        <button onclick="showNineSpell()" style="padding:var(--pad-small);">Launch Nine Card Speller</button>
+    </div>
+</div>
     
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK COMPARE</span>
@@ -4370,6 +4411,206 @@ function renderHinduDisplay() {
         container.style.display = "none"; // Hides the div so it takes up no space
     }
 }
+
+    // ================================================================
+// NINE CARD SPELLER (Steinmeyer) DEMO
+// ================================================================
+var NS_VALUE_WORDS = {A:'ACE',2:'TWO',3:'THREE',4:'FOUR',5:'FIVE',6:'SIX',
+    7:'SEVEN',8:'EIGHT',9:'NINE',10:'TEN',J:'JACK',Q:'QUEEN',K:'KING'};
+var NS_SUIT_WORDS = {C:'CLUBS',D:'DIAMONDS',H:'HEARTS',S:'SPADES'};
+
+var nsPacket = [];       // current 9-card packet, top(0) to bottom(8)
+var nsChosenCard = null; // the card at position 3 when the demo starts
+var nsWordQueue = [];
+var nsWordIdx = 0;
+var nsHand = [];         // cards left to deal for the current word
+var nsTableDealt = [];   // cards dealt so far for the current word (dealt order)
+
+function nsCardRank(card) { return card.slice(0, -1); }
+function nsCardSuit(card) { return card.slice(-1); }
+
+function showNineSpell() {
+    var arena = document.getElementById('ns-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({behavior:'smooth', block:'nearest'});
+    nsReset();
+    document.getElementById('ns-desc').innerHTML =
+        '<strong style="color:var(--gold);">Nine Card Speller (Jim Steinmeyer):</strong><br>' +
+        'Nine random cards are loaded and the 3rd card from the top is silently "selected." ' +
+        'Spelling the value, then O-F, then the suit, then M-A-G-I-C &mdash; dealing one card ' +
+        'per letter into a table pile and dropping the remainder on top each time &mdash; always ' +
+        'delivers the selected card on the final letter "C," regardless of which card it was.';
+}
+
+function nsBuildRandomBank() {
+    var ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    var suits = ['C','D','H','S'];
+    var full = [];
+    ranks.forEach(function(r){ suits.forEach(function(s){ full.push(r + s); }); });
+    full.sort(function(){ return Math.random() - 0.5; });
+    return full.slice(0, 9);
+}
+
+function nsLoad() {
+    saveState();
+    var bank = nsBuildRandomBank();
+    deck = bank.slice();
+    renderDeck();
+    logMove('Nine Card Speller: Loaded random 9-card bank');
+
+    nsPacket = bank.slice();
+    nsChosenCard = nsPacket[2]; // 3rd from top
+
+    var rank = nsCardRank(nsChosenCard);
+    var suit = nsCardSuit(nsChosenCard);
+    var valueWord = NS_VALUE_WORDS[rank];
+    var suitWord = NS_SUIT_WORDS[suit];
+
+    nsWordQueue = [
+        {label: 'VALUE', word: valueWord},
+        {label: 'OF', word: 'OF'},
+        {label: 'SUIT', word: suitWord},
+        {label: 'MAGIC', word: 'MAGIC', isFinal: true}
+    ];
+    nsWordIdx = 0;
+
+    document.getElementById('ns-table').style.display = 'block';
+    document.getElementById('ns-load-btn').style.display = 'none';
+    document.getElementById('ns-step-btn').style.display = 'inline-block';
+    document.getElementById('ns-run-btn').style.display = 'inline-block';
+    document.getElementById('ns-reset-btn').style.display = 'inline-block';
+    document.getElementById('ns-peek').style.display = 'block';
+    document.getElementById('ns-peek').innerHTML =
+        'Selected card (3rd from top, shown here for demo purposes only): ';
+    document.getElementById('ns-peek').appendChild(nsMakeCardUI(nsChosenCard, true));
+
+    nsStartWord();
+}
+
+function nsMakeCardUI(card, highlight) {
+    var ui = createCardUI(card);
+    if (highlight && card === nsChosenCard) {
+        ui.style.border = '3px solid #8B5CF6';
+        ui.style.boxShadow = '0 0 12px #8B5CF6';
+    }
+    return ui;
+}
+
+function nsStartWord() {
+    var step = nsWordQueue[nsWordIdx];
+    nsHand = nsPacket.slice();
+    nsTableDealt = [];
+
+    document.getElementById('ns-hand-row').innerHTML = '';
+    document.getElementById('ns-table-row').innerHTML = '';
+    nsRenderHandStack();
+
+    var ldiv = document.getElementById('ns-letters');
+    ldiv.innerHTML = '';
+    step.word.split('').forEach(function(ch, i) {
+        var t = document.createElement('div');
+        t.id = 'ns-letter-' + i;
+        t.style.cssText = 'padding:6px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold;' +
+            'border:1px solid #444; background:#111; color:#555; text-align:center; min-width:20px;';
+        t.innerText = ch;
+        ldiv.appendChild(t);
+    });
+
+    document.getElementById('ns-status').innerText =
+        'Spelling "' + step.word + '" (' + step.label + '). Click Deal Next Letter.';
+}
+
+function nsRenderHandStack() {
+    var hs = document.getElementById('ns-hand-stack');
+    hs.innerHTML = nsHand.length + ' card' + (nsHand.length === 1 ? '' : 's') + ' remaining in hand';
+}
+
+function nsDealLetter() {
+    var step = nsWordQueue[nsWordIdx];
+    var i = nsTableDealt.length;
+    if (i >= step.word.length) return;
+
+    var card = nsHand.shift();
+    nsTableDealt.push(card);
+    nsRenderHandStack();
+
+    var ui = nsMakeCardUI(card, true);
+    document.getElementById('ns-table-row').appendChild(ui);
+
+    var tile = document.getElementById('ns-letter-' + i);
+    if (tile) {
+        tile.style.background = 'rgba(255,183,3,0.15)';
+        tile.style.borderColor = 'var(--gold)';
+        tile.style.color = 'var(--gold)';
+    }
+
+    var isLastLetterOfStep = (nsTableDealt.length === step.word.length);
+    var isFinalReveal = (step.isFinal && isLastLetterOfStep);
+
+    if (isFinalReveal) {
+        var correct = (card === nsChosenCard);
+        document.getElementById('ns-status').innerHTML =
+            'Letter "' + step.word[i] + '" — turn this card face up!';
+        setTimeout(function() {
+            document.getElementById('ns-reveal').style.display = 'block';
+            document.getElementById('ns-reveal').innerHTML =
+                (correct
+                    ? '&#9827; The card dealt on the final letter is <strong>' + card + '</strong> &mdash; the selected card!'
+                    : '&#9888; Mismatch: dealt ' + card + ', expected ' + nsChosenCard + ' (check the bank/logic).') +
+                '<br><span style="font-size:0.6rem;color:#aaa;">Guaranteed by position tracking: ' +
+                '3 → 7 (value) → 5 (of) → 5 (suit) → revealed on letter 5 of MAGIC.</span>';
+        }, 250);
+        document.getElementById('ns-step-btn').style.display = 'none';
+        document.getElementById('ns-run-btn').style.display = 'none';
+    } else if (isLastLetterOfStep) {
+        document.getElementById('ns-status').innerText =
+            'Word complete. Placing remaining ' + nsHand.length + ' cards on top of the dealt pile...';
+        setTimeout(function() {
+            nsPacket = nsHand.concat(nsTableDealt.slice().reverse());
+            nsWordIdx++;
+            nsStartWord();
+        }, 500);
+    } else {
+        document.getElementById('ns-status').innerText =
+            'Dealt "' + step.word[i] + '" (' + (i+1) + '/' + step.word.length + ').';
+    }
+}
+
+function nsRunAll() {
+    function tick() {
+        var step = nsWordQueue[nsWordIdx];
+        if (!step) return;
+        var beforeWordIdx = nsWordIdx;
+        var beforeDealt = nsTableDealt.length;
+        nsDealLetter();
+        setTimeout(function() {
+            var stillGoing = document.getElementById('ns-step-btn').style.display !== 'none';
+            if (stillGoing) tick();
+        }, 450);
+    }
+    tick();
+}
+
+function nsReset() {
+    nsPacket = [];
+    nsChosenCard = null;
+    nsWordQueue = [];
+    nsWordIdx = 0;
+    nsHand = [];
+    nsTableDealt = [];
+    document.getElementById('ns-table').style.display = 'none';
+    document.getElementById('ns-hand-row').innerHTML = '';
+    document.getElementById('ns-table-row').innerHTML = '';
+    document.getElementById('ns-letters').innerHTML = '';
+    document.getElementById('ns-reveal').style.display = 'none';
+    document.getElementById('ns-peek').style.display = 'none';
+    document.getElementById('ns-load-btn').style.display = 'inline-block';
+    document.getElementById('ns-step-btn').style.display = 'none';
+    document.getElementById('ns-run-btn').style.display = 'none';
+    document.getElementById('ns-reset-btn').style.display = 'none';
+    document.getElementById('ns-status').innerText = 'Click Load Random 9-Card Bank to begin.';
+}
+    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
