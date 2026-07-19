@@ -5039,7 +5039,7 @@ function nsqReset() {
     document.getElementById('nsq-round-label').innerText = '';
     document.getElementById('nsq-status').innerText = 'Click Load Bank to begin.';
 }
- // ================================================================
+// ================================================================
 // NINE CARD SPELLER — 3-ROUND: "IS IT REAL... OR IS IT MAGIC?"
 // Round 1: TWO-OF-HEARTS-MAGIC lands on the 2H (position 3 to start)
 // Round 2: same spell lands on the QS, holding the 2H
@@ -5138,7 +5138,7 @@ function nsq3CardVisual(card) {
         var img2 = document.createElement('img');
         img2.src = NSQ3_MAGIC_IMG;
         img2.title = 'Is It Real? / Magic';
-        img2.style.cssText = 'object-fit:cover; border-radius:4px; display:block;';
+        img2.style.cssText = 'object-fit:contain; background:#eef2ee; border-radius:4px; display:block;';
         img2.style.border = '2px solid ' + NSQ3_COLORS.MG;
         nsq3MatchSize(img2);
         return img2;
@@ -5288,7 +5288,7 @@ function nsq3ShowRoundReveal(correct) {
 
 function nsq3RenderFinalFlip(box) {
     var wrap = document.createElement('div');
-    wrap.style.cssText = 'perspective:600px; width:120px; height:168px; margin:12px auto 4px;';
+    wrap.style.cssText = 'perspective:600px; width:220px; height:160px; margin:12px auto 4px;';
     var inner = document.createElement('div');
     inner.id = 'nsq3-flip-inner';
     inner.style.cssText = 'position:relative; width:100%; height:100%; transition:transform 0.6s; ' +
@@ -5297,13 +5297,13 @@ function nsq3RenderFinalFlip(box) {
 
     var front = document.createElement('img');
     front.src = NSQ3_MAGIC_IMG;
-    front.style.cssText = 'position:absolute; width:100%; height:100%; object-fit:cover; border-radius:6px; ' +
-        'border:2px solid #FFA630; backface-visibility:hidden;';
+    front.style.cssText = 'position:absolute; width:100%; height:100%; object-fit:contain; border-radius:6px; ' +
+        'background:#eef2ee; border:2px solid #FFA630; backface-visibility:hidden;';
 
     var back = document.createElement('img');
     back.src = NSQ3_ISITREAL_IMG;
-    back.style.cssText = 'position:absolute; width:100%; height:100%; object-fit:cover; border-radius:6px; ' +
-        'border:2px solid #FFA630; backface-visibility:hidden; transform:rotateY(180deg);';
+    back.style.cssText = 'position:absolute; width:100%; height:100%; object-fit:contain; border-radius:6px; ' +
+        'background:#eef2ee; border:2px solid #FFA630; backface-visibility:hidden; transform:rotateY(180deg);';
 
     inner.appendChild(front);
     inner.appendChild(back);
@@ -5407,7 +5407,7 @@ function nsq3Reset() {
     document.getElementById('nsq3-reset-btn').style.display = 'none';
     document.getElementById('nsq3-round-label').innerText = '';
     document.getElementById('nsq3-status').innerText = 'Click Load Bank to begin.';
-}  
+}
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
