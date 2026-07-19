@@ -5953,7 +5953,14 @@ function renderPrincessCols() {
         setupPrincess();
     }
 }
-    
+    function togglePrincessTheory() {
+    const theoryBox = document.getElementById('princess-theory');
+    if (theoryBox.style.display === 'none') {
+        theoryBox.style.display = 'block';
+    } else {
+        theoryBox.style.display = 'none';
+    }
+}
     
 </script>
 
