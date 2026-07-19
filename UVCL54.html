@@ -5841,30 +5841,86 @@ function tlReset() {
     document.getElementById('tl-reset-btn').style.display = 'none';
     document.getElementById('tl-status').innerText = 'Click Deal 3 Piles of 3 to begin.';
 }
-    function openPrincessDemo() {
-    // 1. Hide all other arenas to prevent overlap
-    const arenas = [
-        'jonah-arena', 
-        'gilbreath-arena', 
-        'poker-arena', 
-        'stud-arena', 
-        'hindu-demo-arena'
+let princessDeck = [];
+let rounds = 0;
+// We will track the "Target" card by index so you can see it move
+let targetCardIndex = 0; 
+
+function setupPrincess() {
+    princessDeck = [];
+    // Generate 21 random unique cards (simplified)
+    const suits = ['C', 'H', 'S', 'D'];
+    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    
+    while(princessDeck.length < 21) {
+        let card = ranks[Math.floor(Math.random()*13)] + suits[Math.floor(Math.random()*4)];
+        if(!princessDeck.includes(card)) princessDeck.push(card);
+    }
+    
+    // Pick a random "volunteer card" to track visually
+    targetCardIndex = Math.floor(Math.random() * 21);
+    rounds = 0;
+    
+    document.getElementById('princess-status').innerText = "Deal 1/3: Pick the column containing your card.";
+    renderPrincessCols();
+}
+
+function renderPrincessCols() {
+    for(let c=0; c<3; c++) {
+        const colDiv = document.getElementById(`col-${c}`);
+        colDiv.innerHTML = `<div style="font-size:0.5rem; color:#666; text-align:center;">COL ${c+1}</div>`;
+        
+        // Slice the 21 cards into 3 sets of 7
+        const colCards = princessDeck.slice(c*7, c*7+7);
+        
+        colCards.forEach((card, idx) => {
+            const cardUI = createCardUI(card);
+            cardUI.style.transform = "scale(0.8)";
+            
+            // Visual tracker: highlight the "secret" card
+            if (princessDeck.indexOf(card) === targetCardIndex) {
+                cardUI.style.border = "2px solid var(--gold)";
+                cardUI.style.boxShadow = "0 0 10px var(--gold)";
+            }
+            colDiv.appendChild(cardUI);
+        });
+    }
+}
+
+function selectColumn(selectedIdx) {
+    if (rounds >= 3) return;
+    
+    // Logic: Gather columns with selected column in the middle
+    let cols = [
+        princessDeck.slice(0, 7),
+        princessDeck.slice(7, 14),
+        princessDeck.slice(14, 21)
     ];
     
-    arenas.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.style.display = 'none';
-    });
-
-    // 2. Show the Princess Arena
-    const arena = document.getElementById('princess-arena');
-    if (arena) {
-        arena.style.display = 'block';
-        arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        
-        // 3. Initialize the demo
-        setupPrincess();
+    // Reorder: Move selected to middle
+    let newDeck = [];
+    let order = [0, 1, 2];
+    order.splice(order.indexOf(selectedIdx), 1);
+    
+    newDeck = [...cols[order[0]], ...cols[selectedIdx], ...cols[order[1]]];
+    
+    // Redeal: One card at a time to columns
+    let redealt = new Array(21);
+    for(let i=0; i<21; i++) {
+        let col = i % 3;
+        let row = Math.floor(i / 3);
+        redealt[col*7 + row] = newDeck[i];
     }
+    
+    princessDeck = redealt;
+    rounds++;
+    
+    if (rounds === 3) {
+        document.getElementById('princess-status').innerHTML = "<b>Complete!</b> Your card is now at the 11th position (index 10).";
+    } else {
+        document.getElementById('princess-status').innerText = `Deal ${rounds + 1}/3: Pick the column again.`;
+    }
+    renderPrincessCols();
 }
     function openPrincessDemo() {
     // We removed the code that hides other arenas
