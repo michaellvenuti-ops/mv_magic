@@ -237,9 +237,16 @@
 </div>    
 
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#10024; IS IT REAL / MAGIC</span>
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#10024; IS IT REAL OR IS IT MAGIC</span>
     <div style="display:grid; grid-template-columns:1fr; gap:4px;">
         <button onclick="showNineSpellQueen3()" style="padding:var(--pad-small);">Launch 3-Round Finale</button>
+    </div>
+</div>
+
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">&#9878; TRUTH OR LIE</span>
+    <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+        <button onclick="showTruthOrLie()" style="padding:var(--pad-small);">Launch Truth or Lie</button>
     </div>
 </div>
     
@@ -1044,6 +1051,63 @@
             </div>
         </div>
         <div id="nsq3-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold); line-height:1.6;"></div>
+    </div>
+</div>
+
+<!-- ============ TRUTH OR LIE ARENA ============ -->
+<div id="tl-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9878; Truth or Lie</span>
+        <button onclick="document.getElementById('tl-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div id="tl-desc" style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.7; padding:8px; background:rgba(255,183,3,0.06); border-radius:4px; border:1px solid #444;"></div>
+
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="tlLoad()" id="tl-load-btn" style="border-color:var(--gold); color:var(--gold);">&#8635; Deal 3 Piles of 3</button>
+        <button onclick="tlDealLetter()" id="tl-step-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654; Deal Next Letter</button>
+        <button onclick="tlRunAll()" id="tl-run-btn" style="border-color:var(--gold); color:var(--gold); display:none;">&#9654;&#9654; Spell All</button>
+        <button onclick="tlReset()" id="tl-reset-btn" style="border-color:#555; color:#888; display:none;">&#8635; Reset</button>
+    </div>
+
+    <div id="tl-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em; margin-bottom:10px;"></div>
+
+    <div id="tl-pile-select" style="display:none; margin-bottom:14px;">
+        <div id="tl-piles" style="display:flex; gap:24px; margin-bottom:10px;"></div>
+    </div>
+
+    <div id="tl-peek" style="display:none; align-items:center; gap:8px; font-size:0.6rem; color:#aaa; margin-bottom:12px;"></div>
+
+    <div id="tl-lie-setup" style="display:none; margin-bottom:14px; padding:10px; border:1px dashed #555; border-radius:6px;">
+        <div style="font-size:0.6rem; color:var(--gold); margin-bottom:8px;">Tell the magician a lie:</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <select id="tl-lie-rank" style="padding:4px;"></select>
+            <span style="color:#888; font-size:0.6rem;">of</span>
+            <select id="tl-lie-suit" style="padding:4px;"></select>
+            <button onclick="tlRandomizeLie()" style="padding:var(--pad-small); border-color:#555; color:#888;">&#8635; Random Lie</button>
+            <button onclick="tlGather()" style="padding:var(--pad-small); border-color:var(--gold); color:var(--gold);">Gather Piles &amp; Begin Spelling</button>
+        </div>
+    </div>
+
+    <div id="tl-lied-banner" style="display:none; font-size:0.65rem; color:#FFA630; margin-bottom:10px;"></div>
+
+    <div id="tl-table" style="display:none;">
+        <div id="tl-letters" style="display:flex; gap:5px; margin-bottom:12px; flex-wrap:wrap;"></div>
+        <div style="margin-bottom:6px;">
+            <div style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">HAND</div>
+            <div id="tl-hand-stack" style="font-size:0.6rem; color:#aaa; margin-bottom:8px;"></div>
+            <div id="tl-hand-row" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+        </div>
+        <div style="display:flex; gap:16px; align-items:flex-start;">
+            <div>
+                <div style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">POSITION</div>
+                <div id="tl-stack-viz" style="position:relative; width:70px; height:230px;"></div>
+            </div>
+            <div style="flex:1;">
+                <div style="font-size:0.55rem; color:var(--gold); margin-bottom:4px; font-weight:bold;">TABLE PILE (dealt)</div>
+                <div id="tl-table-row" class="hand-row" style="flex-wrap:wrap; min-height:55px; gap:3px;"></div>
+            </div>
+        </div>
+        <div id="tl-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold); line-height:1.6;"></div>
     </div>
 </div>
     
@@ -5407,6 +5471,341 @@ function nsq3Reset() {
     document.getElementById('nsq3-reset-btn').style.display = 'none';
     document.getElementById('nsq3-round-label').innerText = '';
     document.getElementById('nsq3-status').innerText = 'Click Load Bank to begin.';
+}
+
+        // ================================================================
+// NINE CARD SPELLER — "TRUTH OR LIE"
+// 3 piles of 3. Participant picks a pile, remembers the BOTTOM
+// card (never shown to the magician). Magician gathers piles with
+// the chosen pile ON TOP — this puts the true card 3rd from the
+// top automatically. Participant then LIES about their card. The
+// magician spells the LIE's value, "OF", the LIE's suit, then
+// TRUTH (not MAGIC) — and the real card appears anyway, because
+// the position math only depends on word LENGTH, not identity.
+// ================================================================
+var TL_VALUE_WORDS = {A:'ACE',2:'TWO',3:'THREE',4:'FOUR',5:'FIVE',6:'SIX',
+    7:'SEVEN',8:'EIGHT',9:'NINE',10:'TEN',J:'JACK',Q:'QUEEN',K:'KING'};
+var TL_SUIT_WORDS = {C:'CLUBS',D:'DIAMONDS',H:'HEARTS',S:'SPADES'};
+var TL_SUIT_SYM = {C:'♣',D:'♦',H:'♥',S:'♠'};
+var TL_RANKS = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+var TL_SUITS = ['C','D','H','S'];
+
+var tlPiles = [];          // [[top,mid,bottom], [top,mid,bottom], [top,mid,bottom]]
+var tlChosenPileIdx = null;
+var tlTrueCard = null;
+var tlLieRank = 'K';
+var tlLieSuit = 'D';
+var tlPacket = [];
+var tlWordQueue = [];
+var tlWordIdx = 0;
+var tlHand = [];
+var tlTableDealt = [];
+
+function tlCardRank(card) { return card.slice(0, -1); }
+function tlCardSuit(card) { return card.slice(-1); }
+
+function showTruthOrLie() {
+    var arena = document.getElementById('tl-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({behavior:'smooth', block:'nearest'});
+    tlReset();
+    document.getElementById('tl-desc').innerHTML =
+        '<strong style="color:var(--gold);">Truth or Lie:</strong><br>' +
+        'Three piles of three. Pick a pile and remember its <strong>bottom</strong> card — don\'t show it. ' +
+        'When the piles are gathered with your pile on top, your card lands 3rd from the top automatically. ' +
+        'Now tell a lie — name a different card entirely. The magician spells the LIE\'s value, then O-F, then ' +
+        'the LIE\'s suit, then <strong>T-R-U-T-H</strong> instead of magic &mdash; and your real card shows up anyway.';
+}
+
+function tlBuildPiles() {
+    var full = [];
+    TL_RANKS.forEach(function(r){ TL_SUITS.forEach(function(s){ full.push(r + s); }); });
+    full.sort(function(){ return Math.random() - 0.5; });
+    var nine = full.slice(0, 9);
+    return [nine.slice(0,3), nine.slice(3,6), nine.slice(6,9)];
+}
+
+function tlLoad() {
+    saveState();
+    tlPiles = tlBuildPiles();
+    deck = tlPiles[0].concat(tlPiles[1]).concat(tlPiles[2]);
+    renderDeck();
+    logMove('Truth or Lie: Loaded 3 piles of 3');
+
+    tlChosenPileIdx = null;
+    tlTrueCard = null;
+
+    var pdiv = document.getElementById('tl-piles');
+    pdiv.innerHTML = '';
+    tlPiles.forEach(function(pile, idx) {
+        var col = document.createElement('div');
+        col.style.cssText = 'display:flex; flex-direction:column; align-items:center; gap:6px;';
+
+        var stack = document.createElement('div');
+        stack.style.cssText = 'position:relative; width:50px; height:' + (64 + 2*14) + 'px;';
+        pile.forEach(function(card, i) {
+            var back = document.createElement('div');
+            back.style.cssText = 'position:absolute; left:0; top:' + (i * 14) + 'px; width:46px; height:64px; ' +
+                'border-radius:4px; border:1px solid #3a0d14; ' +
+                'background:repeating-linear-gradient(45deg,#7a1e2b,#7a1e2b 3px,#9c2b3a 3px,#9c2b3a 6px); ' +
+                'z-index:' + (3 - i) + ';';
+            stack.appendChild(back);
+        });
+        col.appendChild(stack);
+
+        var btn = document.createElement('button');
+        btn.innerText = 'Choose Pile ' + (idx + 1);
+        btn.style.cssText = 'padding:var(--pad-small); border-color:var(--gold); color:var(--gold);';
+        btn.onclick = function(){ tlChoosePile(idx); };
+        btn.id = 'tl-pile-btn-' + idx;
+        col.appendChild(btn);
+
+        pdiv.appendChild(col);
+    });
+
+    document.getElementById('tl-pile-select').style.display = 'block';
+    document.getElementById('tl-load-btn').style.display = 'none';
+    document.getElementById('tl-reset-btn').style.display = 'inline-block';
+    document.getElementById('tl-status').innerText = 'Pick a pile — you\'ll remember its bottom card.';
+}
+
+function tlChoosePile(idx) {
+    tlChosenPileIdx = idx;
+    tlTrueCard = tlPiles[idx][2]; // bottom card of the chosen pile
+
+    for (var i = 0; i < 3; i++) {
+        var b = document.getElementById('tl-pile-btn-' + i);
+        if (b) { b.disabled = true; b.style.opacity = (i === idx) ? '1' : '0.35'; }
+    }
+
+    var peek = document.getElementById('tl-peek');
+    peek.style.display = 'flex';
+    peek.innerHTML = 'Your card (peek — hidden from the magician): ';
+    var ui = createCardUI(tlTrueCard);
+    ui.style.border = '3px solid #10e08a';
+    ui.style.boxShadow = '0 0 12px #10e08a';
+    peek.appendChild(ui);
+
+    tlBuildLieSelectors();
+    document.getElementById('tl-lie-setup').style.display = 'block';
+    document.getElementById('tl-status').innerText = 'Now pick a lie to tell the magician, then gather the piles.';
+}
+
+function tlBuildLieSelectors() {
+    var rSel = document.getElementById('tl-lie-rank');
+    var sSel = document.getElementById('tl-lie-suit');
+    rSel.innerHTML = '';
+    TL_RANKS.forEach(function(r){
+        var o = document.createElement('option');
+        o.value = r; o.innerText = TL_VALUE_WORDS[r];
+        rSel.appendChild(o);
+    });
+    sSel.innerHTML = '';
+    TL_SUITS.forEach(function(s){
+        var o = document.createElement('option');
+        o.value = s; o.innerText = TL_SUIT_WORDS[s] + ' ' + TL_SUIT_SYM[s];
+        sSel.appendChild(o);
+    });
+    var trueRank = tlCardRank(tlTrueCard), trueSuit = tlCardSuit(tlTrueCard);
+    tlLieRank = (trueRank === 'K') ? 'Q' : 'K';
+    tlLieSuit = (trueSuit === 'D') ? 'H' : 'D';
+    rSel.value = tlLieRank;
+    sSel.value = tlLieSuit;
+}
+
+function tlRandomizeLie() {
+    var trueRank = tlCardRank(tlTrueCard), trueSuit = tlCardSuit(tlTrueCard);
+    var r, s;
+    do { r = TL_RANKS[Math.floor(Math.random()*TL_RANKS.length)]; } while (r === trueRank);
+    do { s = TL_SUITS[Math.floor(Math.random()*TL_SUITS.length)]; } while (s === trueSuit);
+    document.getElementById('tl-lie-rank').value = r;
+    document.getElementById('tl-lie-suit').value = s;
+}
+
+function tlGather() {
+    tlLieRank = document.getElementById('tl-lie-rank').value;
+    tlLieSuit = document.getElementById('tl-lie-suit').value;
+
+    var others = [0,1,2].filter(function(i){ return i !== tlChosenPileIdx; });
+    tlPacket = tlPiles[tlChosenPileIdx].concat(tlPiles[others[0]]).concat(tlPiles[others[1]]);
+
+    var valueWord = TL_VALUE_WORDS[tlLieRank];
+    var suitWord = TL_SUIT_WORDS[tlLieSuit];
+    tlWordQueue = [
+        {label: 'VALUE (the lie)', word: valueWord},
+        {label: 'OF', word: 'OF'},
+        {label: 'SUIT (the lie)', word: suitWord},
+        {label: 'TRUTH', word: 'TRUTH', isFinal: true}
+    ];
+    tlWordIdx = 0;
+
+    document.getElementById('tl-pile-select').style.display = 'none';
+    document.getElementById('tl-lie-setup').style.display = 'none';
+    document.getElementById('tl-lied-banner').style.display = 'block';
+    document.getElementById('tl-lied-banner').innerHTML =
+        'Told the magician: <strong>' + valueWord + ' of ' + suitWord + '</strong> ' + TL_SUIT_SYM[tlLieSuit];
+
+    document.getElementById('tl-table').style.display = 'block';
+    document.getElementById('tl-step-btn').style.display = 'inline-block';
+    document.getElementById('tl-run-btn').style.display = 'inline-block';
+
+    tlStartWord();
+}
+
+function tlMakeCardUI(card) {
+    var ui = createCardUI(card);
+    if (card === tlTrueCard) {
+        ui.style.border = '3px solid #10e08a';
+        ui.style.boxShadow = '0 0 12px #10e08a';
+    }
+    return ui;
+}
+
+function tlStartWord() {
+    var step = tlWordQueue[tlWordIdx];
+    tlHand = tlPacket.slice();
+    tlTableDealt = [];
+
+    tlRenderStackViz();
+    document.getElementById('tl-hand-row').innerHTML = '';
+    document.getElementById('tl-table-row').innerHTML = '';
+    tlRenderHandStack();
+
+    var ldiv = document.getElementById('tl-letters');
+    ldiv.innerHTML = '';
+    step.word.split('').forEach(function(ch, i) {
+        var t = document.createElement('div');
+        t.id = 'tl-letter-' + i;
+        t.style.cssText = 'padding:6px 10px; border-radius:4px; font-size:0.8rem; font-weight:bold;' +
+            'border:1px solid #444; background:#111; color:#555; text-align:center; min-width:20px;';
+        t.innerText = ch;
+        ldiv.appendChild(t);
+    });
+
+    document.getElementById('tl-status').innerText =
+        'Spelling "' + step.word + '" (' + step.label + '). Click Deal Next Letter.';
+}
+
+function tlRenderHandStack() {
+    var hs = document.getElementById('tl-hand-stack');
+    hs.innerHTML = tlHand.length + ' card' + (tlHand.length === 1 ? '' : 's') + ' remaining in hand';
+}
+
+function tlRenderStackViz() {
+    var viz = document.getElementById('tl-stack-viz');
+    if (!viz) return;
+    viz.innerHTML = '';
+    var n = tlPacket.length;
+    if (n === 0) return;
+    var stepY = 20, cardW = 46, cardH = 64;
+    viz.style.height = (stepY * (n - 1) + cardH) + 'px';
+    var trueIdx = tlPacket.indexOf(tlTrueCard);
+
+    for (var i = 0; i < n; i++) {
+        var isTrue = (i === trueIdx);
+        var card = document.createElement('div');
+        card.style.cssText = 'position:absolute; left:22px; top:' + (i * stepY) + 'px; ' +
+            'width:' + cardW + 'px; height:' + cardH + 'px; border-radius:4px; border:1px solid #000; ' +
+            (isTrue
+                ? 'background:linear-gradient(135deg,#10e08a,#0aa564); box-shadow:0 0 8px #10e08a;'
+                : 'background:repeating-linear-gradient(45deg,#7a1e2b,#7a1e2b 3px,#9c2b3a 3px,#9c2b3a 6px); border-color:#3a0d14;') +
+            'z-index:' + (n - i) + ';';
+        viz.appendChild(card);
+
+        var label = document.createElement('div');
+        label.innerText = (i + 1);
+        label.style.cssText = 'position:absolute; left:0px; top:' + (i * stepY + cardH/2 - 8) + 'px; width:18px; ' +
+            'text-align:right; font-size:0.65rem; font-weight:bold; color:' + (isTrue ? '#10e08a' : '#888') + ';';
+        viz.appendChild(label);
+    }
+}
+
+function tlDealLetter() {
+    var step = tlWordQueue[tlWordIdx];
+    var i = tlTableDealt.length;
+    if (i >= step.word.length) return;
+
+    var card = tlHand.shift();
+    tlTableDealt.push(card);
+    tlRenderHandStack();
+
+    var ui = tlMakeCardUI(card);
+    document.getElementById('tl-table-row').appendChild(ui);
+
+    var tile = document.getElementById('tl-letter-' + i);
+    if (tile) {
+        tile.style.background = 'rgba(255,183,3,0.15)';
+        tile.style.borderColor = 'var(--gold)';
+        tile.style.color = 'var(--gold)';
+    }
+
+    var isLastLetterOfStep = (tlTableDealt.length === step.word.length);
+    var isFinalReveal = (step.isFinal && isLastLetterOfStep);
+
+    if (isFinalReveal) {
+        var correct = (card === tlTrueCard);
+        document.getElementById('tl-status').innerHTML =
+            'Letter "' + step.word[i] + '" — turn this card face up!';
+        setTimeout(function() {
+            document.getElementById('tl-reveal').style.display = 'block';
+            document.getElementById('tl-reveal').innerHTML = (correct
+                ? 'You said <strong>' + TL_VALUE_WORDS[tlLieRank] + ' of ' + TL_SUIT_WORDS[tlLieSuit] + '</strong> ' +
+                  '&mdash; but the TRUTH is, this is your card: <strong>' + card + '</strong>.'
+                : '&#9888; Mismatch — check the setup.') +
+                '<br><span style="font-size:0.6rem;color:#aaa;">The lie only changed which words got spelled, never where the real card sat: 3 → 7 → 5 → 5.</span>';
+        }, 250);
+        document.getElementById('tl-step-btn').style.display = 'none';
+        document.getElementById('tl-run-btn').style.display = 'none';
+    } else if (isLastLetterOfStep) {
+        document.getElementById('tl-status').innerText =
+            'Word complete. Placing remaining ' + tlHand.length + ' cards on top of the dealt pile...';
+        setTimeout(function() {
+            tlPacket = tlHand.concat(tlTableDealt.slice().reverse());
+            tlWordIdx++;
+            if (tlWordIdx < tlWordQueue.length) tlStartWord();
+        }, 500);
+    } else {
+        document.getElementById('tl-status').innerText =
+            'Dealt "' + step.word[i] + '" (' + (i+1) + '/' + step.word.length + ').';
+    }
+}
+
+function tlRunAll() {
+    function tick() {
+        var step = tlWordQueue[tlWordIdx];
+        if (!step) return;
+        tlDealLetter();
+        setTimeout(function() {
+            var stillGoing = document.getElementById('tl-step-btn').style.display !== 'none';
+            if (stillGoing) tick();
+        }, 450);
+    }
+    tick();
+}
+
+function tlReset() {
+    tlPiles = [];
+    tlChosenPileIdx = null;
+    tlTrueCard = null;
+    tlPacket = [];
+    tlWordQueue = [];
+    tlWordIdx = 0;
+    tlHand = [];
+    tlTableDealt = [];
+    document.getElementById('tl-pile-select').style.display = 'none';
+    document.getElementById('tl-peek').style.display = 'none';
+    document.getElementById('tl-lie-setup').style.display = 'none';
+    document.getElementById('tl-lied-banner').style.display = 'none';
+    document.getElementById('tl-table').style.display = 'none';
+    document.getElementById('tl-hand-row').innerHTML = '';
+    document.getElementById('tl-table-row').innerHTML = '';
+    document.getElementById('tl-letters').innerHTML = '';
+    document.getElementById('tl-reveal').style.display = 'none';
+    document.getElementById('tl-load-btn').style.display = 'inline-block';
+    document.getElementById('tl-step-btn').style.display = 'none';
+    document.getElementById('tl-run-btn').style.display = 'none';
+    document.getElementById('tl-reset-btn').style.display = 'none';
+    document.getElementById('tl-status').innerText = 'Click Deal 3 Piles of 3 to begin.';
 }
 </script>
 
