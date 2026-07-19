@@ -5868,19 +5868,29 @@ function setupPrincess() {
 function renderPrincessCols() {
     for(let c=0; c<3; c++) {
         const colDiv = document.getElementById(`col-${c}`);
-        colDiv.innerHTML = `<div style="font-size:0.5rem; color:#666; text-align:center;">COL ${c+1}</div>`;
+        colDiv.innerHTML = `<div style="font-size:0.5rem; color:#666; text-align:center; margin-bottom:5px;">COL ${c+1}</div>`;
         
-        // Slice the 21 cards into 3 sets of 7
         const colCards = princessDeck.slice(c*7, c*7+7);
         
         colCards.forEach((card, idx) => {
             const cardUI = createCardUI(card);
             cardUI.style.transform = "scale(0.8)";
             
-            // Visual tracker: highlight the "secret" card
+            // Check if this is the target card
             if (princessDeck.indexOf(card) === targetCardIndex) {
-                cardUI.style.border = "2px solid var(--gold)";
-                cardUI.style.boxShadow = "0 0 10px var(--gold)";
+                const isFinished = rounds === 3;
+                
+                // If finished, apply "Reveal" styling
+                if (isFinished) {
+                    cardUI.style.border = "3px solid #00f5d4"; // Bright Reveal Color
+                    cardUI.style.boxShadow = "0 0 20px #00f5d4"; // Glow
+                    cardUI.style.transform = "scale(1.15)";     // Pop it out
+                    cardUI.style.zIndex = "10";
+                } else {
+                    // Standard tracking highlight
+                    cardUI.style.border = "2px solid var(--gold)";
+                    cardUI.style.boxShadow = "0 0 10px var(--gold)";
+                }
             }
             colDiv.appendChild(cardUI);
         });
