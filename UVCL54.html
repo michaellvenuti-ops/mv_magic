@@ -1130,13 +1130,26 @@
         Click <b>Reset</b> to deal 21 random cards. Think of one card, then click the column it is in.
     </div>
 
-    <!-- Arena Controls -->
-    <div style="display:flex; gap:8px; margin-bottom:15px;">
-        <button onclick="setupPrincess()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
-        <button onclick="selectColumn(0)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 1</button>
-        <button onclick="selectColumn(1)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 2</button>
-        <button onclick="selectColumn(2)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 3</button>
-    </div>
+    <!-- Updated Arena Controls -->
+<div style="display:flex; gap:8px; margin-bottom:15px;">
+    <button onclick="setupPrincess()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
+    <button onclick="selectColumn(0)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 1</button>
+    <button onclick="selectColumn(1)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 2</button>
+    <button onclick="selectColumn(2)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 3</button>
+    <button onclick="togglePrincessTheory()" style="border-color:#aaa; color:#aaa; padding:5px 10px; font-size:0.6rem;">THEORY</button>
+</div>
+
+<!-- Theory Section -->
+<div id="princess-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+    <h3 style="color:var(--gold); margin-top:0;">Why the 11th Position?</h3>
+    <p>This trick works because of the mathematical way the cards are distributed during the dealing and gathering process.</p>
+    <ul>
+        <li>After the first deal, the column containing the selected card is picked up second, which places the card in positions 8, 9, 10, 11, 12, 13, or 14.</li>
+        <li>During the second deal, the card lands in the third, fourth, or fifth position in the column. Once these cards are gathered, the card sits in the 10th, 11th, or 12th position.</li>
+        <li>Finally, after the third deal, the card moves to the fourth position of its column. When all cards are gathered, this forces the card to become the 11th card of the deck.</li>
+    </ul>
+</div>
+    
 
     <!-- Display -->
     <div id="princess-cols" style="display:flex; gap:10px; justify-content:center;">
