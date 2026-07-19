@@ -251,6 +251,13 @@
 </div>
     
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MATH TRICKS</span>
+    <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+        <button onclick="openPrincessDemo()" style="padding: var(--pad-small);">21-Card Princess Trick</button>
+    </div>
+</div>
+    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK COMPARE</span>
         <div style="display:grid; grid-template-columns:1fr; gap:4px;">
             <button onclick="showStackCompare()" style="padding:var(--pad-small);">Compare Two Stacks</button>
@@ -1110,7 +1117,34 @@
         <div id="tl-reveal" style="display:none; margin-top:10px; padding:10px; border-radius:6px; border:1px solid var(--gold); background:rgba(255,183,3,0.08); font-size:0.7rem; text-align:center; color:var(--gold); line-height:1.6;"></div>
     </div>
 </div>
-    
+
+    <!-- ============ 21 Card Princess Arena ============ -->
+
+<div id="princess-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; 21-Card Princess Lab</span>
+        <button onclick="document.getElementById('princess-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
+    </div>
+
+    <div id="princess-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">
+        Click <b>Reset</b> to deal 21 random cards. Think of one card, then click the column it is in.
+    </div>
+
+    <!-- Arena Controls -->
+    <div style="display:flex; gap:8px; margin-bottom:15px;">
+        <button onclick="setupPrincess()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
+        <button onclick="selectColumn(0)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 1</button>
+        <button onclick="selectColumn(1)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 2</button>
+        <button onclick="selectColumn(2)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 3</button>
+    </div>
+
+    <!-- Display -->
+    <div id="princess-cols" style="display:flex; gap:10px; justify-content:center;">
+        <div id="col-0" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
+        <div id="col-1" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
+        <div id="col-2" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
+    </div>
+</div>    
 <!-- ============ PARTICLE ENTRY ARENA ============ -->
 <div id="particle-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -5807,6 +5841,48 @@ function tlReset() {
     document.getElementById('tl-reset-btn').style.display = 'none';
     document.getElementById('tl-status').innerText = 'Click Deal 3 Piles of 3 to begin.';
 }
+    function openPrincessDemo() {
+    // 1. Hide all other arenas to prevent overlap
+    const arenas = [
+        'jonah-arena', 
+        'gilbreath-arena', 
+        'poker-arena', 
+        'stud-arena', 
+        'hindu-demo-arena'
+    ];
+    
+    arenas.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+    });
+
+    // 2. Show the Princess Arena
+    const arena = document.getElementById('princess-arena');
+    if (arena) {
+        arena.style.display = 'block';
+        arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        
+        // 3. Initialize the demo
+        setupPrincess();
+    }
+}
+    function openPrincessDemo() {
+    // We removed the code that hides other arenas
+    const arena = document.getElementById('princess-arena');
+    
+    if (arena) {
+        // Show the arena
+        arena.style.display = 'block';
+        
+        // Scroll to it so it's in view
+        arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        
+        // Initialize the demo state
+        setupPrincess();
+    }
+}
+    
+    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
