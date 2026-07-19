@@ -5847,12 +5847,11 @@ function tlReset() {
 // ================================================================    
 let princessDeck = [];
 let rounds = 0;
-let chosenCard = null; // Track the card value, not the index
 
 function setupPrincess() {
     princessDeck = [];
     const suits = ['C', 'H', 'S', 'D'];
-    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'K', 'Q']; // (Note: J, Q, K order)
+    const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     
     // Generate 21 unique cards
     while(princessDeck.length < 21) {
@@ -5860,12 +5859,8 @@ function setupPrincess() {
         if(!princessDeck.includes(card)) princessDeck.push(card);
     }
     
-    // Pick a random card as the target, but DON'T highlight it yet
-    const randomIndex = Math.floor(Math.random() * 21);
-    chosenCard = princessDeck[randomIndex];
-    
     rounds = 0;
-    document.getElementById('princess-status').innerText = "Deal 1/3: Think of a card and click the column it is in.";
+    document.getElementById('princess-status').innerText = "Deal 1/3: Think of any card and click the column it is in.";
     renderPrincessCols();
 }
 
@@ -5879,17 +5874,14 @@ function selectColumn(selectedIdx) {
         princessDeck.slice(14, 21)
     ];
     
-    // 2. Reorder: Gather columns with the selected column in the middle
+    // 2. Gather: Put selected column in the middle
     let order = [0, 1, 2];
-    order.splice(order.indexOf(selectedIdx), 1); // Remove selected
-    
-    // Combine: [Other, Selected, Other]
+    order.splice(order.indexOf(selectedIdx), 1); 
     let newDeck = [...cols[order[0]], ...cols[selectedIdx], ...cols[order[1]]];
     
     // 3. Redeal into 3 columns
     let redealt = new Array(21);
     for(let i=0; i<21; i++) {
-        // This math deals one card at a time to each column (0,1,2, 0,1,2...)
         let col = i % 3; 
         let row = Math.floor(i / 3);
         redealt[col*7 + row] = newDeck[i];
@@ -5898,10 +5890,12 @@ function selectColumn(selectedIdx) {
     princessDeck = redealt;
     rounds++;
     
-    // 4. Status update
+    // 4. Update Status
     if (rounds === 3) {
+        // The 11th card is at index 10 (4th card of the 2nd column)
+        const revealCard = princessDeck[10];
         document.getElementById('princess-status').innerHTML = 
-            `<b>Complete!</b> Your card is now at the 11th position (index 10). Your card was the <b>${chosenCard}</b>.`;
+            `<b>Complete!</b> The 11th card (index 10) is the <b>${revealCard}</b>. Was this your card?`;
     } else {
         document.getElementById('princess-status').innerText = `Deal ${rounds + 1}/3: Click the column containing your card.`;
     }
@@ -5916,12 +5910,13 @@ function renderPrincessCols() {
         
         const colCards = princessDeck.slice(c*7, c*7+7);
         
-        colCards.forEach((card) => {
+        colCards.forEach((card, idx) => {
             const cardUI = createCardUI(card);
             cardUI.style.transform = "scale(0.8)";
             
-            // Only highlight if rounds === 3 AND it is the chosen card
-            if (rounds === 3 && card === chosenCard) {
+            // Logic: Only highlight the 11th card (index 10) at the end of round 3
+            // The 11th card (index 10) is the 4th card of the 2nd column (Column index 1, Row index 3)
+            if (rounds === 3 && (c === 1 && idx === 3)) {
                 cardUI.style.border = "3px solid #00f5d4";
                 cardUI.style.boxShadow = "0 0 20px #00f5d4";
                 cardUI.style.transform = "scale(1.1)";
