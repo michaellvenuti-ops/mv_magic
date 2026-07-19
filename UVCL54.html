@@ -1127,37 +1127,39 @@
     </div>
 
     <div id="princess-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">
-        Click <b>Reset</b> to deal 21 random cards. Think of one card, then click the column it is in.
+        Click <b>Reset</b> to deal 21 random cards. Think of any card and click the column it is in.
     </div>
 
-    <!-- Updated Arena Controls -->
-<div style="display:flex; gap:8px; margin-bottom:15px;">
-    <button onclick="setupPrincess()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
-    <button onclick="selectColumn(0)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 1</button>
-    <button onclick="selectColumn(1)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 2</button>
-    <button onclick="selectColumn(2)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 3</button>
-    <button onclick="togglePrincessTheory()" style="border-color:#aaa; color:#aaa; padding:5px 10px; font-size:0.6rem;">THEORY</button>
-</div>
+    <!-- Arena Controls -->
+    <div style="display:flex; gap:8px; margin-bottom:15px;">
+        <button onclick="setupPrincess()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
+        <button onclick="selectColumn(0)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 1</button>
+        <button onclick="selectColumn(1)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 2</button>
+        <button onclick="selectColumn(2)" style="border-color:var(--gold); color:var(--gold); padding:5px 10px; font-size:0.6rem;">COL 3</button>
+        <button onclick="togglePrincessTheory()" style="border-color:#aaa; color:#aaa; padding:5px 10px; font-size:0.6rem;">THEORY</button>
+        <button onclick="togglePrincessPerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 10px; font-size:0.6rem;">PERFORMANCE</button>
+    </div>
 
-<!-- Theory Section -->
-<div id="princess-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
-    <h3 style="color:var(--gold); margin-top:0;">Why the 11th Position?</h3>
-    <p>This trick works because of the mathematical way the cards are distributed during the dealing and gathering process.</p>
-    <ul>
-        <li>After the first deal, the column containing the selected card is picked up second, which places the card in positions 8, 9, 10, 11, 12, 13, or 14.</li>
-        <li>During the second deal, the card lands in the third, fourth, or fifth position in the column. Once these cards are gathered, the card sits in the 10th, 11th, or 12th position.</li>
-        <li>Finally, after the third deal, the card moves to the fourth position of its column. When all cards are gathered, this forces the card to become the 11th card of the deck.</li>
-    </ul>
-</div>
-    
+    <!-- Theory & Performance Boxes -->
+    <div id="princess-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+        <h3 style="color:var(--gold); margin-top:0;">Why the 11th Position?</h3>
+        <p>After the first deal, the column containing the selected card is picked up second, which places the card in positions 8–14. During the second deal, it lands in the third, fourth, or fifth position in the column, placing it in the 10th–12th position overall. Finally, after the third deal, the card moves to the fourth position of its column, which, when gathered, forces it into the 11th position of the deck.</p>
+    </div>
 
-    <!-- Display -->
+    <div id="princess-performance" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid #ff9900; border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+        <h3 style="color:#ff9900; margin-top:0;">Performance Strategy</h3>
+        <p>The magician begins by showing 21 cards in 3 columns of 7. The volunteer thinks of a card. The cards are gathered, one column at a time, with the selected pile sandwiched between the others. This is redealt into 3 columns, and the process repeats 3 times. After the final gather, the magician claims the next card turned over is the selected card.</p>
+        <p><strong>The Reveal:</strong> Deal about 15 cards faceup, noting the 11th card. Ask, “Would you be surprised if the next card I turned over was your card?” They will be skeptical. Instead of dealing the 16th card, turn the 11th card face-down!</p>
+    </div>
+
+    <!-- Card Display -->
     <div id="princess-cols" style="display:flex; gap:10px; justify-content:center;">
         <div id="col-0" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
         <div id="col-1" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
         <div id="col-2" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
     </div>
-</div>    
+</div>
+    
 <!-- ============ PARTICLE ENTRY ARENA ============ -->
 <div id="particle-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -5961,7 +5963,15 @@ function renderPrincessCols() {
         theoryBox.style.display = 'none';
     }
 }
-    
+
+    function togglePrincessPerformance() {
+    const perfBox = document.getElementById('princess-performance');
+    if (perfBox.style.display === 'none') {
+        perfBox.style.display = 'block';
+    } else {
+        perfBox.style.display = 'none';
+    }
+}
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
