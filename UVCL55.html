@@ -257,10 +257,10 @@
     </div>
 </div>
 
-     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
-    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MATH TRICKS</span>
+<div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">Blaine MAGIC LABS</span>
     <div style="display:grid; grid-template-columns:1fr; gap:4px;">
-       <button onclick="initBlaine()" style="padding: var(--pad-small);">>David Blaine 987 Demo</button>
+        <button onclick="openBlaineDemo()" style="padding: var(--pad-small);">David Blaine 987</button>
     </div>
 </div>
     
@@ -6150,6 +6150,16 @@ function renderVertical(arr, containerId, highlightIndicators = false, highlight
     function toggleBlaineTheory() {
     const el = document.getElementById('blaine-theory');
     el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+
+    function openBlaineDemo() {
+    const arena = document.getElementById('blaine-arena');
+    if (arena) {
+        arena.style.display = 'block';
+        arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Assuming initBlaine() is the setup function for your Blaine demo
+        initBlaine(); 
+    }
 }
     
 </script>
