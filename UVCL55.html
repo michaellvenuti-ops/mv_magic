@@ -256,6 +256,13 @@
         <button onclick="openPrincessDemo()" style="padding: var(--pad-small);">21-Card Princess Trick</button>
     </div>
 </div>
+
+     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
+    <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MATH TRICKS</span>
+    <div style="display:grid; grid-template-columns:1fr; gap:4px;">
+       <button onclick="initBlaine()" style="padding: var(--pad-small);">>David Blaine 987 Demo</button>
+    </div>
+</div>
     
     <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:10px;">
         <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">STACK COMPARE</span>
@@ -449,6 +456,47 @@
         <button onclick="falseShuffle('PUSHTHROUGH')">Push-Through False Shuffle</button>
        </div>
 
+<!-- ============ 987 Blaine Arena ============ -->
+    
+<div id="blaine-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; David Blaine 987 Lab</span>
+        <button onclick="document.getElementById('blaine-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
+    </div>
+
+    <!-- Updated Controls -->
+<div style="display:flex; gap:6px; margin-bottom:15px; flex-wrap:wrap;">
+    <button onclick="initBlaine()" style="border-color:#888; color:#888; padding:5px 8px; font-size:0.6rem;">1. STACK</button>
+    <button onclick="doFaro3()" style="border-color:var(--gold); color:var(--gold); padding:5px 8px; font-size:0.6rem;">2. 3x FARO</button>
+    <button onclick="splitDeck()" style="border-color:var(--gold); color:var(--gold); padding:5px 8px; font-size:0.6rem;">3. SPLIT</button>
+    <button onclick="autoPickCard()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 8px; font-size:0.6rem;">4. PICK CARD</button>
+    <button onclick="toggleBlaineTheory()" style="border-color:#aaa; color:#aaa; padding:5px 8px; font-size:0.6rem;">THEORY</button>
+</div>
+
+<!-- Theory Box -->
+<div id="blaine-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+    <h3 style="color:var(--gold); margin-top:0;">The 9-8-7 Principle</h3>
+    <p>This trick uses the properties of the out-faro shuffle. After 3 out-faros, the deck is interleaved such that specific values (the 9s, 8s, and 7s) end up in predictable positions in the indicator pile.</p>
+    <p>By splitting the deck and forcing a card, you create a system where the "indicator" card you land on tells you exactly how many cards to count in the target pile to reach the spectator's chosen card.</p>
+    <p><a href="https://www.youtube.com/watch?v=NQCaxoQlSIw" target="_blank" style="color:#00f5d4; text-decoration:none;">&#9654; Watch David Blaine's full performance here.</a></p>
+</div>
+
+    <div id="blaine-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">Load the stack to begin.</div>
+
+    <div style="display:flex; gap:20px;">
+        <!-- Left: Indicator Pile -->
+        <div style="flex:1;">
+            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px; text-align:center;">INDICATOR PILE</div>
+            <div id="stack-indicator" style="display:flex; flex-direction:column; gap:2px;"></div>
+        </div>
+        <!-- Right: Target Pile -->
+        <div style="flex:1;">
+            <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px; text-align:center;">TARGET PILE</div>
+            <div id="stack-target" style="display:flex; flex-direction:column; gap:2px;"></div>
+        </div>
+    </div>
+</div>
+    
 <!-- ============ BFS SOLVER ARENA ============ -->
     <div id="bfs-solver-arena" style="margin-top:12px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
@@ -6040,6 +6088,70 @@ function renderPrincessCols() {
         perfBox.style.display = 'none';
     }
 }
+
+    let fullDeck = [];
+let indicatorHalf = [];
+let targetHalf = [];
+let chosenCard = null;
+
+const initialStack = ["9C","8C","7C","6C","5C","4C","3C","2C","AC","KC","QC","JC","10C","9H","8H","7H","6H","5H","4H","3H","2H","AH","KH","QH","JH","10H","9S","8S","7S","6S","5S","4S","3S","2S","AS","KS","QS","JS","10S","9D","8D","7D","6D","5D","4D","3D","2D","AD","KD","QD","JD","10D"];
+const faroedResult = ["9C","3S","9H","3D","9S","2C","9D","2H","8C","2S","8H","2D","8S","AC","8D","AH","7C","AS","7H","AD","7S","KC","7D","KH","6C","KS","6H","KD","6S","QC","6D","QH","5C","QS","5H","QD","5S","JC","5D","JH","4C","JS","4H","JD","4S","10C","4D","10H","3C","10S","3H","10D"];
+
+function initBlaine() {
+    fullDeck = [...initialStack];
+    renderVertical(fullDeck, 'stack-indicator');
+    document.getElementById('blaine-status').innerText = "Stack Loaded.";
+}
+
+function doFaro3() {
+    fullDeck = [...faroedResult];
+    renderVertical(fullDeck, 'stack-indicator');
+    document.getElementById('blaine-status').innerText = "3 Out-Faros applied. Sequence set.";
+}
+
+function splitDeck() {
+    // Split in half
+    indicatorHalf = fullDeck.slice(0, 26);
+    targetHalf = fullDeck.slice(26, 52);
+    renderVertical(indicatorHalf, 'stack-indicator', true); // Highlight 9s/8s
+    renderVertical(targetHalf, 'stack-target');
+    document.getElementById('blaine-status').innerText = "Deck split. Indicator pile on left (9s/8s highlighted).";
+}
+
+function autoPickCard() {
+    // Simulate picking a card from the target half (e.g., index 5)
+    chosenCard = targetHalf[5];
+    targetHalf.splice(5, 1); // Remove
+    targetHalf.splice(8, 0, chosenCard); // Insert at 9th spot (index 8)
+    renderVertical(indicatorHalf, 'stack-indicator', true);
+    renderVertical(targetHalf, 'stack-target', false, chosenCard);
+    document.getElementById('blaine-status').innerText = `Spectator picked ${chosenCard} and replaced it 9th from top.`;
+}
+
+function renderVertical(arr, containerId, highlightIndicators = false, highlightCard = null) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+    
+    arr.forEach((card, idx) => {
+        const isIndicator = highlightIndicators && (card.startsWith('9') || card.startsWith('8'));
+        const isTarget = card === highlightCard;
+        
+        const cardDiv = document.createElement('div');
+        cardDiv.style.cssText = `
+            padding: 2px 5px; background: ${isIndicator ? '#4a3f12' : isTarget ? '#004a4a' : '#1a1a2e'};
+            border: 1px solid ${isIndicator ? 'var(--gold)' : isTarget ? '#00f5d4' : '#333'};
+            color: #fff; font-size: 0.55rem; border-radius:3px; display:flex; justify-content:space-between;
+        `;
+        cardDiv.innerHTML = `<span>${idx+1}.</span> <span>${card}</span>`;
+        container.appendChild(cardDiv);
+    });
+}
+
+    function toggleBlaineTheory() {
+    const el = document.getElementById('blaine-theory');
+    el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
