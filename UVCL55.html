@@ -1171,36 +1171,36 @@
 
 <!-- ============ 4 ACES Arena ============ -->
 
-<div id="aces-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:block;">
+<div id="aces-arena" style="display:none; margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; 4-Aces Parity Lab</span>
         <button onclick="document.getElementById('aces-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
     </div>
 
     <div id="aces-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">
-        <b>Interactive Folding:</b> Click a card pile to select it, then click an adjacent square (Up, Down, Left, Right) to fold it!
+        <b>Structured Folding:</b> Use the step buttons below to fold rows onto rows, then columns onto columns, or click cells manually.
     </div>
 
-    <!-- Controls with Explicit SPREAD Button -->
-    <div style="display:flex; gap:8px; margin-bottom:15px; flex-wrap:wrap;">
-        <button onclick="setupAcesGrid()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem; cursor:pointer;">RESET GRID</button>
-        <button onclick="autoFoldToB2()" style="border-color:#ff9900; color:#ff9900; padding:5px 10px; font-size:0.6rem; cursor:pointer;">AUTO-FOLD TO B2</button>
-        <button onclick="revealAcesSpread()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.6rem; font-weight:bold; cursor:pointer;">SPREAD</button>
-        <button onclick="toggleAcesTheory()" style="border-color:#aaa; color:#aaa; padding:5px 10px; font-size:0.6rem; cursor:pointer;">THEORY</button>
-        <button onclick="toggleAcesPerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 10px; font-size:0.6rem; cursor:pointer;">PERFORMANCE</button>
+    <!-- Controls & Step Folding Buttons -->
+    <div style="display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap;">
+        <button onclick="setupAcesGrid()" style="border-color:#888; color:#888; padding:5px 8px; font-size:0.6rem; cursor:pointer;">RESET</button>
+        <button onclick="foldRowsStep()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">1. FOLD ROWS</button>
+        <button onclick="foldColsStep()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">2. FOLD COLUMNS</button>
+        <button onclick="autoFoldToB2()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">AUTO TO B2</button>
+        <button onclick="revealAcesSpread()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">SPREAD</button>
+        <button onclick="toggleAcesTheory()" style="border-color:#aaa; color:#aaa; padding:5px 8px; font-size:0.6rem; cursor:pointer;">THEORY</button>
+        <button onclick="toggleAcesPerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">PERFORMANCE</button>
     </div>
 
     <!-- Theory & Performance Boxes -->
     <div id="aces-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
         <h3 style="color:var(--gold); margin-top:0;">The Parity Principle</h3>
-        <p>Every time a card is folded onto an adjacent square, it undergoes a 180-degree flip, changing its orientation. Because the Aces start facedown on light squares and end up on square B2 (a dark square), they undergo an odd number of flips, which automatically turns them faceup.</p>
-        <p>Non-aces starting on light squares also undergo an odd number of flips, turning them facedown, while non-aces on dark squares undergo even flips, keeping them facedown.</p>
+        <p>Every time a packet is folded over onto an adjacent position, its cards undergo a 180-degree orientation flip. Aces starting on light squares and landing on dark square B2 undergo an odd number of flips, turning them faceup.</p>
     </div>
 
     <div id="aces-performance" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid #ff9900; border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
         <h3 style="color:#ff9900; margin-top:0;">Performance Strategy</h3>
-        <p>Begin with the 4 aces on top of your deck and deal them facedown on the white diagonal. Say, "The cards can go anywhere, and they can come from any part of the deck—the top, bottom, or middle. It doesn't matter." Turn the 4 cards on the other white squares faceup.</p>
-        <p>Execute your folding process until all cards land in a single pile on square B2. Click <b>SPREAD</b> to fan out all 16 cards and reveal that all 4 aces have magically turned faceup while every other card is facedown!</p>
+        <p>Execute row folding, then column folding until all packets merge into square B2. Click <b>SPREAD</b> to fan out all 16 cards and reveal the 4 Aces face up!</p>
     </div>
 
     <!-- Dynamic Display Area -->
@@ -6210,6 +6210,7 @@ function renderVertical(arr, containerId, highlightIndicators = false, highlight
 let acesGridState = [];
 let selectedCell = null;
 let isSpreadMode = false;
+let foldStepPhase = 0; // 0: Start, 1: Rows Folded, 2: Columns Folded/B2
 
 const initialAcesLayout = [
     // Row 4 (a4 to d4)
@@ -6234,37 +6235,32 @@ const initialAcesLayout = [
     {row: 0, col: 3, pos: 'd1', light: true, cards: [{card: 'AD', faceUp: false, isAce: true}]}
 ];
 
-// Integrates with your Virtual Card Lab's createCardUI function
 function getCardElement(cardCode) {
     if (typeof window.createCardUI === 'function') {
         return window.createCardUI(cardCode);
     }
-    
-    // Fallback card renderer matching Virtual Card Lab specifications
     const container = document.createElement('div');
     container.className = 'table-card';
-    container.style.cssText = "width:45px; height:65px; background:#fff; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:3px; box-shadow:0 2px 4px rgba(0,0,0,0.3); font-weight:bold; font-size:0.65rem;";
+    container.style.cssText = "width:36px; height:52px; background:#fff; border-radius:3px; display:flex; flex-direction:column; justify-content:space-between; padding:2px; box-shadow:0 1px 3px rgba(0,0,0,0.4); font-weight:bold; font-size:0.55rem;";
     
     let rank = cardCode.slice(0, -1);
     let suitChar = cardCode.slice(-1);
     let suitSymbol = '';
-    let color = '#000';
+    let color = (suitChar === 'H' || suitChar === 'D') ? '#d00' : '#000';
 
-    if (suitChar === 'H') { suitSymbol = '♥'; color = '#d00'; }
-    else if (suitChar === 'D') { suitSymbol = '♦'; color = '#d00'; }
-    else if (suitChar === 'C') { suitSymbol = '♣'; color = '#000'; }
-    else if (suitChar === 'S') { suitSymbol = '♠'; color = '#000'; }
+    if (suitChar === 'H') suitSymbol = '♥';
+    else if (suitChar === 'D') suitSymbol = '♦';
+    else if (suitChar === 'C') suitSymbol = '♣';
+    else if (suitChar === 'S') suitSymbol = '♠';
 
     container.style.color = color;
-    
     const topVal = document.createElement('div');
     topVal.innerText = rank + suitSymbol;
-    topVal.style.fontSize = "0.55rem";
-    topVal.style.lineHeight = "1";
+    topVal.style.fontSize = "0.45rem";
     
     const centerVal = document.createElement('div');
     centerVal.innerText = suitSymbol;
-    centerVal.style.fontSize = "1rem";
+    centerVal.style.fontSize = "0.8rem";
     centerVal.style.textAlign = "center";
     centerVal.style.margin = "auto 0";
 
@@ -6277,81 +6273,69 @@ function setupAcesGrid() {
     acesGridState = JSON.parse(JSON.stringify(initialAcesLayout));
     selectedCell = null;
     isSpreadMode = false;
+    foldStepPhase = 0;
     const statusEl = document.getElementById('aces-status');
     if (statusEl) {
-        statusEl.innerHTML = "<b>Grid Ready:</b> Click a card pile to select it, then click an adjacent square to fold it.";
+        statusEl.innerHTML = "<b>Grid Ready:</b> Click <b>1. FOLD ROWS</b> to fold Row 4 onto Row 3 and Row 1 onto Row 2.";
     }
     renderAcesView();
 }
 
-function handleCellClick(r, c) {
-    if (isSpreadMode) return;
-
-    const clickedCell = acesGridState.find(item => item.row === r && item.col === c);
-    if (!clickedCell) return;
-
-    if (!selectedCell) {
-        if (clickedCell.cards.length > 0) {
-            selectedCell = {row: r, col: c};
-            document.getElementById('aces-status').innerHTML = `Selected <b>${clickedCell.pos.toUpperCase()}</b>. Now click an adjacent square (Up, Down, Left, Right) to fold it over!`;
-            renderAcesView();
-        }
-    } else {
-        const rowDiff = Math.abs(selectedCell.row - r);
-        const colDiff = Math.abs(selectedCell.col - c);
-        
-        if ((rowDiff + colDiff) === 1) {
-            const sourceCell = acesGridState.find(item => item.row === selectedCell.row && item.col === selectedCell.col);
-            
-            sourceCell.cards.forEach(cardObj => {
-                cardObj.faceUp = !cardObj.faceUp;
-            });
-
-            clickedCell.cards = [...sourceCell.cards, ...clickedCell.cards];
-            sourceCell.cards = [];
-            selectedCell = null;
-            
-            const remainingPiles = acesGridState.filter(item => item.cards.length > 0);
-            if (remainingPiles.length === 1) {
-                document.getElementById('aces-status').innerHTML = `<b>All cards folded into ${remainingPiles[0].pos.toUpperCase()}!</b> Click <b>SPREAD</b> to fan out and check the outcome.`;
-            } else {
-                document.getElementById('aces-status').innerHTML = `Fold successful! ${remainingPiles.length} piles remaining. Click another pile to continue folding.`;
-            }
-        } else {
-            if (clickedCell.cards.length > 0) {
-                selectedCell = {row: r, col: c};
-                document.getElementById('aces-status').innerHTML = `Selected <b>${clickedCell.pos.toUpperCase()}</b>. Click an adjacent square to fold.`;
-            } else {
-                selectedCell = null;
-                document.getElementById('aces-status').innerHTML = "Selection cleared. Click a card pile to begin folding.";
-            }
-        }
-        renderAcesView();
-    }
-}
-
-function autoFoldToB2() {
-    setupAcesGrid();
-    const b2Cell = acesGridState.find(item => item.pos === 'b2');
+// Step 1: Fold Row 4 onto Row 3, and Row 1 onto Row 2
+function foldRowsStep() {
+    if (foldStepPhase >= 1) return;
     
     acesGridState.forEach(item => {
-        if (item.pos !== 'b2' && item.cards.length > 0) {
-            item.cards.forEach(c => {
-                c.faceUp = !c.faceUp;
-            });
+        // Fold Row 4 (row 3) onto Row 3 (row 2)
+        if (item.row === 3) {
+            let targetItem = acesGridState.find(t => t.row === 2 && t.col === item.col);
+            if (targetItem) {
+                item.cards.forEach(c => c.faceUp = !c.faceUp);
+                targetItem.cards = [...item.cards, ...targetItem.cards];
+                item.cards = [];
+            }
+        }
+        // Fold Row 1 (row 0) onto Row 2 (row 1)
+        if (item.row === 0) {
+            let targetItem = acesGridState.find(t => t.row === 1 && t.col === item.col);
+            if (targetItem) {
+                item.cards.forEach(c => c.faceUp = !c.faceUp);
+                targetItem.cards = [...item.cards, ...targetItem.cards];
+                item.cards = [];
+            }
+        }
+    });
+
+    foldStepPhase = 1;
+    document.getElementById('aces-status').innerHTML = "<b>Rows Folded!</b> Now click <b>2. FOLD COLUMNS</b> to fold left columns onto right columns.";
+    renderAcesView();
+}
+
+// Step 2: Fold Columns onto columns until merging into B2
+function foldColsStep() {
+    if (foldStepPhase === 0) foldRowsStep();
+    if (foldStepPhase >= 2) return;
+
+    let b2Cell = acesGridState.find(i => i.pos === 'b2');
+
+    acesGridState.forEach(item => {
+        if (item.cards.length > 0 && item.pos !== 'b2') {
+            item.cards.forEach(c => c.faceUp = !c.faceUp);
             b2Cell.cards = [...item.cards, ...b2Cell.cards];
             item.cards = [];
         }
     });
 
-    b2Cell.cards.forEach(c => {
-        if (c.isAce) c.faceUp = true;
-        else c.faceUp = false;
-    });
+    foldStepPhase = 2;
+    document.getElementById('aces-status').innerHTML = "<b>All cards merged into B2!</b> Click <b>SPREAD</b> to view the final reveal.";
+    renderAcesView();
+}
 
-    selectedCell = null;
-    isSpreadMode = false;
-    document.getElementById('aces-status').innerHTML = "<b>Auto-Fold Complete onto B2!</b> Click <b>SPREAD</b> to inspect the cards.";
+function autoFoldToB2() {
+    setupAcesGrid();
+    foldRowsStep();
+    foldColsStep();
+    document.getElementById('aces-status').innerHTML = "<b>Auto-Fold Complete onto B2!</b> Click <b>SPREAD</b> to examine the result.";
     renderAcesView();
 }
 
@@ -6359,7 +6343,6 @@ function revealAcesSpread() {
     isSpreadMode = true;
     selectedCell = null;
     
-    // Ensure all Aces are face up and all other cards are face down for the final spread reveal
     acesGridState.forEach(item => {
         item.cards.forEach(c => {
             if (c.isAce) c.faceUp = true;
@@ -6367,7 +6350,7 @@ function revealAcesSpread() {
         });
     });
 
-    document.getElementById('aces-status').innerHTML = "<b>The Spread Reveal:</b> All 16 cards are fanned out. Notice how the 4 Aces are magically <b>FACE UP</b> while every other card is face down!";
+    document.getElementById('aces-status').innerHTML = "<b>The Spread Reveal:</b> All 16 cards are fanned out. The 4 Aces are magically <b>FACE UP</b> while all others are face down!";
     renderAcesView();
 }
 
@@ -6378,57 +6361,60 @@ function renderAcesView() {
 
     if (!isSpreadMode) {
         const grid = document.createElement('div');
-        grid.style.cssText = "display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; max-width:420px; margin:0 auto; cursor:pointer;";
+        grid.style.cssText = "display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; max-width:420px; margin:0 auto;";
         
         acesGridState.forEach(item => {
             const cell = document.createElement('div');
             let bgBg = item.light ? '#e8e8e8' : '#7a0000';
-            let isSelected = selectedCell && selectedCell.row === item.row && selectedCell.col === item.col;
-            let borderColor = isSelected ? '#00f5d4' : (item.light ? '#ccc' : '#4a0000');
             
             cell.style.cssText = `
                 background: ${bgBg};
-                border: 3px solid ${borderColor};
+                border: 2px solid ${item.light ? '#ccc' : '#4a0000'};
                 border-radius: 6px;
-                padding: 6px;
+                padding: 4px;
                 text-align: center;
-                min-height: 85px;
+                min-height: 90px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 align-items: center;
                 position: relative;
-                box-shadow: ${isSelected ? '0 0 15px #00f5d4' : 'none'};
             `;
 
-            cell.onclick = () => handleCellClick(item.row, item.col);
-
             const label = document.createElement('div');
-            label.style.cssText = "font-size:0.5rem; color:" + (item.light ? "#333" : "#ffcccc") + "; align-self:flex-start; font-weight:bold;";
+            label.style.cssText = "font-size:0.45rem; color:" + (item.light ? "#333" : "#ffcccc") + "; align-self:flex-start; font-weight:bold; margin-bottom:2px;";
             label.innerText = item.pos.toUpperCase();
             cell.appendChild(label);
 
             if (item.cards.length > 0) {
-                const topCard = item.cards[item.cards.length - 1];
-                const cardUI = getCardElement(topCard.card);
-                cardUI.style.transform = "scale(0.75)";
-                cardUI.style.margin = "-5px 0";
-                
-                if (!topCard.faceUp) {
-                    cardUI.style.filter = "brightness(0.25)";
-                }
-                
-                cell.appendChild(cardUI);
+                // Vertical Queen's Prisoner Stack Style container
+                const stackContainer = document.createElement('div');
+                stackContainer.style.cssText = "position:relative; width:36px; height:60px; margin-top:2px;";
+
+                item.cards.forEach((cardObj, idx) => {
+                    const cardUI = getCardElement(cardObj.card);
+                    cardUI.style.position = "absolute";
+                    // Offset each card vertically to create the cascading stack effect shown in Queen's Prisoner
+                    cardUI.style.top = (idx * 4) + "px";
+                    cardUI.style.left = "0px";
+                    cardUI.style.zIndex = idx;
+
+                    if (!cardObj.faceUp) {
+                        cardUI.style.filter = "brightness(0.25)";
+                    }
+                    stackContainer.appendChild(cardUI);
+                });
+
+                cell.appendChild(stackContainer);
 
                 if (item.cards.length > 1) {
                     const badge = document.createElement('div');
-                    badge.style.cssText = "position:absolute; bottom:4px; right:4px; background:var(--gold); color:#000; font-size:0.45rem; padding:1px 4px; border-radius:4px; font-weight:bold;";
+                    badge.style.cssText = "position:absolute; bottom:2px; right:2px; background:var(--gold); color:#000; font-size:0.4rem; padding:1px 3px; border-radius:3px; font-weight:bold; z-index:20;";
                     badge.innerText = `x${item.cards.length}`;
                     cell.appendChild(badge);
                 }
             } else {
                 const emptyText = document.createElement('div');
-                emptyText.style.cssText = "color:#666; font-size:0.5rem; margin:auto 0;";
+                emptyText.style.cssText = "color:#666; font-size:0.45rem; margin:auto 0;";
                 emptyText.innerText = "(Empty)";
                 cell.appendChild(emptyText);
             }
@@ -6438,32 +6424,31 @@ function renderAcesView() {
         area.appendChild(grid);
 
     } else {
-        // Spread view: Collect all cards across all stacks and display them side-by-side
         let allCards = [];
         acesGridState.forEach(item => {
             allCards.push(...item.cards);
         });
 
         const spreadContainer = document.createElement('div');
-        spreadContainer.style.cssText = "display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:600px; margin:0 auto; background:#14142b; padding:15px; border-radius:8px;";
+        spreadContainer.style.cssText = "display:flex; flex-wrap:wrap; gap:8px; justify-content:center; max-width:580px; margin:0 auto; background:#14142b; padding:12px; border-radius:8px;";
 
         allCards.forEach(c => {
             const wrapper = document.createElement('div');
-            wrapper.style.cssText = "display:flex; flex-direction:column; align-items:center; gap:3px;";
+            wrapper.style.cssText = "display:flex; flex-direction:column; align-items:center; gap:2px;";
 
             const cardUI = getCardElement(c.card);
             cardUI.style.transform = "scale(0.85)";
 
             if (c.isAce) {
                 cardUI.style.border = "2px solid #00f5d4";
-                cardUI.style.boxShadow = "0 0 10px #00f5d4";
+                cardUI.style.boxShadow = "0 0 8px #00f5d4";
             } else {
                 cardUI.style.filter = "brightness(0.2)";
                 cardUI.style.border = "2px solid #444";
             }
 
             const caption = document.createElement('span');
-            caption.style.cssText = "font-size:0.5rem; color:" + (c.isAce ? "#00f5d4" : "#888") + ";";
+            caption.style.cssText = "font-size:0.45rem; color:" + (c.isAce ? "#00f5d4" : "#888") + ";";
             caption.innerText = c.isAce ? "ACE (Up)" : "Other (Down)";
 
             wrapper.appendChild(cardUI);
@@ -6485,10 +6470,12 @@ function toggleAcesPerformance() {
     if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
 }
 
-// Ensure safe initialization once DOM is loaded
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupAcesGrid);
-} else {
+function openAcesDemo() {
+    const arena = document.getElementById('aces-arena');
+    if (arena) {
+        arena.style.display = 'block';
+        arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
     setupAcesGrid();
 }
     
