@@ -1208,7 +1208,6 @@
         <div id="checkerboard-grid" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; max-width:420px; margin:0 auto;"></div>
     </div>
 </div>
-    
 
     
     <!-- ============ 21 Card Princess Arena ============ -->
@@ -6233,8 +6232,40 @@ const initialAcesLayout = [
     {row: 0, col: 3, pos: 'd1', light: true, cards: [{card: 'AD', faceUp: false, isAce: true}]}
 ];
 
+// Robust card image generator (matches Jonah demo style or uses direct card graphics)
+function renderCardImage(cardCode) {
+    const container = document.createElement('div');
+    container.style.cssText = "width:45px; height:65px; background:#fff; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:3px; box-shadow:0 2px 4px rgba(0,0,0,0.3); font-weight:bold; font-size:0.65rem; color:#000;";
+    
+    let rank = cardCode.slice(0, -1);
+    let suitChar = cardCode.slice(-1);
+    let suitSymbol = '';
+    let color = '#000';
+
+    if (suitChar === 'H') { suitSymbol = '♥'; color = '#d00'; }
+    else if (suitChar === 'D') { suitSymbol = '♦'; color = '#d00'; }
+    else if (suitChar === 'C') { suitSymbol = '♣'; color = '#000'; }
+    else if (suitChar === 'S') { suitSymbol = '♠'; color = '#000'; }
+
+    container.style.color = color;
+    
+    const topVal = document.createElement('div');
+    topVal.innerText = rank + suitSymbol;
+    topVal.style.fontSize = "0.55rem";
+    topVal.style.lineHeight = "1";
+    
+    const centerVal = document.createElement('div');
+    centerVal.innerText = suitSymbol;
+    centerVal.style.fontSize = "1rem";
+    centerVal.style.textAlign = "center";
+    centerVal.style.margin = "auto 0";
+
+    container.appendChild(topVal);
+    container.appendChild(centerVal);
+    return container;
+}
+
 function setupAcesGrid() {
-    // Deep copy initial layout
     acesGridState = JSON.parse(JSON.stringify(initialAcesLayout));
     selectedCell = null;
     isSpreadMode = false;
@@ -6249,33 +6280,26 @@ function handleCellClick(r, c) {
     if (!clickedCell) return;
 
     if (!selectedCell) {
-        // Select source if it has cards
         if (clickedCell.cards.length > 0) {
             selectedCell = {row: r, col: c};
             document.getElementById('aces-status').innerHTML = `Selected <b>${clickedCell.pos.toUpperCase()}</b>. Now click an adjacent square (Up, Down, Left, Right) to fold it over!`;
             renderAcesView();
         }
     } else {
-        // Check if clickedCell is adjacent (Manhattan distance === 1)
         const rowDiff = Math.abs(selectedCell.row - r);
         const colDiff = Math.abs(selectedCell.col - c);
         
         if ((rowDiff + colDiff) === 1) {
-            // Execute Fold: Move cards from selectedCell to clickedCell and flip them!
             const sourceCell = acesGridState.find(item => item.row === selectedCell.row && item.col === selectedCell.col);
             
-            // Flip all cards in the moving pile (inverting faceUp status)
             sourceCell.cards.forEach(cardObj => {
                 cardObj.faceUp = !cardObj.faceUp;
             });
 
-            // Merge piles onto target
             clickedCell.cards = [...sourceCell.cards, ...clickedCell.cards];
             sourceCell.cards = [];
-
             selectedCell = null;
             
-            // Check how many non-empty piles remain
             const remainingPiles = acesGridState.filter(item => item.cards.length > 0);
             if (remainingPiles.length === 1) {
                 document.getElementById('aces-status').innerHTML = `<b>All cards folded into ${remainingPiles[0].pos.toUpperCase()}!</b> Click <b>SPREAD & REVEAL</b> to see the magic.`;
@@ -6283,7 +6307,6 @@ function handleCellClick(r, c) {
                 document.getElementById('aces-status').innerHTML = `Fold successful! ${remainingPiles.length} piles remaining. Click another pile to continue folding.`;
             }
         } else {
-            // Invalid target (not adjacent), reselect if it has cards
             if (clickedCell.cards.length > 0) {
                 selectedCell = {row: r, col: c};
                 document.getElementById('aces-status').innerHTML = `Selected <b>${clickedCell.pos.toUpperCase()}</b>. Click an adjacent square to fold.`;
@@ -6297,22 +6320,19 @@ function handleCellClick(r, c) {
 }
 
 function autoFoldToB2() {
-    // Helper shortcut to instantly complete the fold onto B2
     setupAcesGrid();
     const b2Cell = acesGridState.find(item => item.pos === 'b2');
     
     acesGridState.forEach(item => {
         if (item.pos !== 'b2' && item.cards.length > 0) {
-            // Simulate flips and merge into b2
             item.cards.forEach(c => {
-                c.faceUp = !c.faceUp; // Simplified bulk state or run strict path
+                c.faceUp = !c.faceUp;
             });
             b2Cell.cards = [...item.cards, ...b2Cell.cards];
             item.cards = [];
         }
     });
 
-    // Ensure mathematical parity on B2 for final reveal
     b2Cell.cards.forEach(c => {
         if (c.isAce) c.faceUp = true;
         else c.faceUp = false;
@@ -6328,7 +6348,6 @@ function revealAcesSpread() {
     isSpreadMode = true;
     selectedCell = null;
     
-    // Find all cards across the board (or concentrated in the final pile) and ensure correct face state for reveal
     acesGridState.forEach(item => {
         item.cards.forEach(c => {
             if (c.isAce) c.faceUp = true;
@@ -6367,10 +6386,8 @@ function renderAcesView() {
                 align-items: center;
                 position: relative;
                 box-shadow: ${isSelected ? '0 0 15px #00f5d4' : 'none'};
-                transition: transform 0.1s ease;
             `;
 
-            // Click listener for folding
             cell.onclick = () => handleCellClick(item.row, item.col);
 
             const label = document.createElement('div');
@@ -6379,14 +6396,13 @@ function renderAcesView() {
             cell.appendChild(label);
 
             if (item.cards.length > 0) {
-                // Show top card of the pile using app's standard createCardUI()
                 const topCard = item.cards[item.cards.length - 1];
-                const cardUI = createCardUI(topCard.card);
-                cardUI.style.transform = "scale(0.68)";
+                const cardUI = renderCardImage(topCard.card);
+                cardUI.style.transform = "scale(0.75)";
                 cardUI.style.margin = "-5px 0";
                 
                 if (!topCard.faceUp) {
-                    cardUI.style.filter = "brightness(0.25)"; // Dim facedown cards visually
+                    cardUI.style.filter = "brightness(0.25)";
                 }
                 
                 cell.appendChild(cardUI);
@@ -6409,7 +6425,6 @@ function renderAcesView() {
         area.appendChild(grid);
 
     } else {
-        // Spread view: flatten all cards in grid state and display them cleanly
         let allCards = [];
         acesGridState.forEach(item => {
             allCards.push(...item.cards);
@@ -6422,8 +6437,8 @@ function renderAcesView() {
             const wrapper = document.createElement('div');
             wrapper.style.cssText = "display:flex; flex-direction:column; align-items:center; gap:3px;";
 
-            const cardUI = createCardUI(c.card);
-            cardUI.style.transform = "scale(0.85)";
+            const cardUI = renderCardImage(c.card);
+            cardUI.style.transform = "scale(0.9)";
 
             if (c.isAce) {
                 cardUI.style.border = "2px solid #00f5d4";
