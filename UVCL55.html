@@ -1178,13 +1178,13 @@
     </div>
 
     <div id="aces-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">
-        <b>5-Step Sequential Folding:</b> Click <b>NEXT FOLD</b> to execute the folds one by one. Emptied tiles vanish automatically!
+        <b>6-Step Sequential Folding:</b> Click <b>NEXT FOLD (1/6)</b> to execute the folds one by one until everything merges into square B2.
     </div>
 
     <!-- Controls -->
     <div style="display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap;">
         <button onclick="setupAcesGrid()" style="border-color:#888; color:#888; padding:5px 8px; font-size:0.6rem; cursor:pointer;">RESET</button>
-        <button id="next-fold-btn" onclick="executeNextFold()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">NEXT FOLD (1/5)</button>
+        <button id="next-fold-btn" onclick="executeNextFold()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">NEXT FOLD (1/6)</button>
         <button onclick="autoFoldAll()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">AUTO ALL</button>
         <button onclick="revealAcesSpread()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">SPREAD</button>
         <button onclick="toggleAcesTheory()" style="border-color:#aaa; color:#aaa; padding:5px 8px; font-size:0.6rem; cursor:pointer;">THEORY</button>
@@ -1199,7 +1199,7 @@
 
     <div id="aces-performance" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid #ff9900; border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
         <h3 style="color:#ff9900; margin-top:0;">Performance Strategy</h3>
-        <p>Step through the 5 individual folds watching the piles merge and empty tiles disappear. Finally, click <b>SPREAD</b> to fan out all 16 cards in a single clean row!</p>
+        <p>Step through the 6 individual folds watching the piles merge into square B2 while empty tiles vanish. Finally, click <b>SPREAD</b> to fan out all 16 cards in a single clean row!</p>
     </div>
 
     <!-- Dynamic Display Area -->
@@ -6269,7 +6269,7 @@ function setupAcesGrid() {
     updateFoldButtonLabel();
     const statusEl = document.getElementById('aces-status');
     if (statusEl) {
-        statusEl.innerHTML = "<b>Grid Ready:</b> Click <b>NEXT FOLD (1/5)</b> to begin the sequential folding sequence.";
+        statusEl.innerHTML = "<b>Grid Ready:</b> Click <b>NEXT FOLD (1/6)</b> to begin the 6-step sequential folding sequence.";
     }
     renderAcesView();
 }
@@ -6277,35 +6277,21 @@ function setupAcesGrid() {
 function updateFoldButtonLabel() {
     const btn = document.getElementById('next-fold-btn');
     if (!btn) return;
-    if (currentFoldStep < 5) {
-        btn.innerText = `NEXT FOLD (${currentFoldStep + 1}/5)`;
+    if (currentFoldStep < 6) {
+        btn.innerText = `NEXT FOLD (${currentFoldStep + 1}/6)`;
         btn.style.display = 'inline-block';
     } else {
-        btn.innerText = "FOLDED TO B2";
+        btn.innerText = "MERGED TO B2";
         btn.style.display = 'none';
     }
 }
 
-// Executes exactly one fold step at a time (5 total steps)
+// Executes exactly one fold step at a time (6 total steps to land everything on square B2)
 function executeNextFold() {
-    if (currentFoldStep >= 5) return;
+    if (currentFoldStep >= 6) return;
 
     if (currentFoldStep === 0) {
-        // Fold 1: Row 4 (row 3) onto Row 3 (row 2)
-        acesGridState.forEach(item => {
-            if (item.row === 3) {
-                let target = acesGridState.find(t => t.row === 2 && t.col === item.col);
-                if (target) {
-                    item.cards.forEach(c => c.faceUp = !c.faceUp);
-                    target.cards = [...item.cards, ...target.cards];
-                    item.cards = [];
-                }
-            }
-        });
-        document.getElementById('aces-status').innerHTML = "<b>Fold 1 Complete:</b> Row 4 folded onto Row 3. Click <b>NEXT FOLD (2/5)</b>.";
-    } 
-    else if (currentFoldStep === 1) {
-        // Fold 2: Row 1 (row 0) onto Row 2 (row 1)
+        // Fold 1: Row 1 (row 0) down onto Row 2 (row 1)
         acesGridState.forEach(item => {
             if (item.row === 0) {
                 let target = acesGridState.find(t => t.row === 1 && t.col === item.col);
@@ -6316,13 +6302,27 @@ function executeNextFold() {
                 }
             }
         });
-        document.getElementById('aces-status').innerHTML = "<b>Fold 2 Complete:</b> Row 1 folded onto Row 2. Click <b>NEXT FOLD (3/5)</b>.";
+        document.getElementById('aces-status').innerHTML = "<b>Fold 1 Complete:</b> Row 1 folded down onto Row 2. Click <b>NEXT FOLD (2/6)</b>.";
+    } 
+    else if (currentFoldStep === 1) {
+        // Fold 2: Row 4 (row 3) up onto Row 3 (row 2)
+        acesGridState.forEach(item => {
+            if (item.row === 3) {
+                let target = acesGridState.find(t => t.row === 2 && t.col === item.col);
+                if (target) {
+                    item.cards.forEach(c => c.faceUp = !c.faceUp);
+                    target.cards = [...item.cards, ...target.cards];
+                    item.cards = [];
+                }
+            }
+        });
+        document.getElementById('aces-status').innerHTML = "<b>Fold 2 Complete:</b> Row 4 folded up onto Row 3. Click <b>NEXT FOLD (3/6)</b>.";
     }
     else if (currentFoldStep === 2) {
-        // Fold 3: Left Column (col 0) onto Column 2 (col 1)
+        // Fold 3: Row 3 (row 2) up onto Row 2 (row 1) - All rows now in Row 2
         acesGridState.forEach(item => {
-            if (item.col === 0 && item.cards.length > 0) {
-                let target = acesGridState.find(t => t.row === item.row && t.col === 1);
+            if (item.row === 2) {
+                let target = acesGridState.find(t => t.row === 1 && t.col === item.col);
                 if (target) {
                     item.cards.forEach(c => c.faceUp = !c.faceUp);
                     target.cards = [...item.cards, ...target.cards];
@@ -6330,13 +6330,13 @@ function executeNextFold() {
                 }
             }
         });
-        document.getElementById('aces-status').innerHTML = "<b>Fold 3 Complete:</b> Left column folded inward. Click <b>NEXT FOLD (4/5)</b>.";
+        document.getElementById('aces-status').innerHTML = "<b>Fold 3 Complete:</b> Remaining rows merged into Row 2 (containing B2). Click <b>NEXT FOLD (4/6)</b>.";
     }
     else if (currentFoldStep === 3) {
-        // Fold 4: Right Column (col 3) onto Column 3 (col 2)
+        // Fold 4: Left Column (col 0) right onto Column 1 (col -> B2 column)
         acesGridState.forEach(item => {
-            if (item.col === 3 && item.cards.length > 0) {
-                let target = acesGridState.find(t => t.row === item.row && t.col === 2);
+            if (item.row === 1 && item.col === 0 && item.cards.length > 0) {
+                let target = acesGridState.find(t => t.row === 1 && t.col === 1);
                 if (target) {
                     item.cards.forEach(c => c.faceUp = !c.faceUp);
                     target.cards = [...item.cards, ...target.cards];
@@ -6344,13 +6344,13 @@ function executeNextFold() {
                 }
             }
         });
-        document.getElementById('aces-status').innerHTML = "<b>Fold 4 Complete:</b> Right column folded inward. Click <b>NEXT FOLD (5/5)</b>.";
+        document.getElementById('aces-status').innerHTML = "<b>Fold 4 Complete:</b> Left column folded onto B2 column. Click <b>NEXT FOLD (5/6)</b>.";
     }
     else if (currentFoldStep === 4) {
-        // Fold 5: Column 3 (col 2) onto Column 2 (col 1 -> square B2)
+        // Fold 5: Right Column (col 3) left onto Column 2 (col 2)
         acesGridState.forEach(item => {
-            if (item.col === 2 && item.cards.length > 0) {
-                let target = acesGridState.find(t => t.row === item.row && t.col === 1);
+            if (item.row === 1 && item.col === 3 && item.cards.length > 0) {
+                let target = acesGridState.find(t => t.row === 1 && t.col === 2);
                 if (target) {
                     item.cards.forEach(c => c.faceUp = !c.faceUp);
                     target.cards = [...item.cards, ...target.cards];
@@ -6358,7 +6358,21 @@ function executeNextFold() {
                 }
             }
         });
-        document.getElementById('aces-status').innerHTML = "<b>Fold 5 Complete:</b> All cards successfully merged into square B2! Click <b>SPREAD</b>.";
+        document.getElementById('aces-status').innerHTML = "<b>Fold 5 Complete:</b> Right column folded inward. Click <b>NEXT FOLD (6/6)</b>.";
+    }
+    else if (currentFoldStep === 5) {
+        // Fold 6: Column 2 (col 2) left onto Column 1 (col 1 -> Square B2)
+        acesGridState.forEach(item => {
+            if (item.row === 1 && item.col === 2 && item.cards.length > 0) {
+                let target = acesGridState.find(t => t.row === 1 && t.col === 1);
+                if (target) {
+                    item.cards.forEach(c => c.faceUp = !c.faceUp);
+                    target.cards = [...item.cards, ...target.cards];
+                    item.cards = [];
+                }
+            }
+        });
+        document.getElementById('aces-status').innerHTML = "<b>Fold 6 Complete:</b> All 16 cards successfully merged into square B2! Click <b>SPREAD</b>.";
     }
 
     currentFoldStep++;
@@ -6368,7 +6382,7 @@ function executeNextFold() {
 
 function autoFoldAll() {
     setupAcesGrid();
-    while (currentFoldStep < 5) {
+    while (currentFoldStep < 6) {
         executeNextFold();
     }
 }
@@ -6399,7 +6413,7 @@ function renderAcesView() {
         acesGridState.forEach(item => {
             const cell = document.createElement('div');
             
-            // If cards have been folded away, get rid of the tile visuals completely
+            // Vanish tile visuals completely when empty
             if (item.cards.length === 0) {
                 cell.style.cssText = "border: none; background: transparent; min-height: 90px;";
                 grid.appendChild(cell);
