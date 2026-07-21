@@ -254,6 +254,7 @@
     <span style="font-size:0.6rem; color:var(--gold); display:block; margin-bottom:5px;">MATH TRICKS</span>
     <div style="display:grid; grid-template-columns:1fr; gap:4px;">
         <button onclick="openPrincessDemo()" style="padding: var(--pad-small);">21-Card Princess Trick</button>
+        <button onclick="openAcesDemo()" style="padding: var(--pad-small);">4-Aces Surprise</button>       
     </div>
 </div>
     
@@ -1158,6 +1159,44 @@
         <div id="col-1" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
         <div id="col-2" style="flex:1; display:flex; flex-direction:column; gap:5px;"></div>
     </div>
+</div>
+
+    <!-- ============ Aces Arena ============ -->
+
+    
+    <div id="aces-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9824; 4-Aces Surprise Lab</span>
+        <button onclick="document.getElementById('aces-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
+    </div>
+
+    <div id="aces-status" style="font-size:0.65rem; color:#aaa; margin-bottom:10px;">
+        Initial Setup: 4 Aces placed facedown on the white diagonal. Other light squares have faceup cards. Red squares have facedown cards.
+    </div>
+
+    <!-- Controls -->
+    <div style="display:flex; gap:8px; margin-bottom:15px; flex-wrap:wrap;">
+        <button onclick="setupAcesGrid()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.6rem;">RESET</button>
+        <button onclick="simulateAcesFold()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.6rem;">SIMULATE FOLD (B2)</button>
+        <button onclick="toggleAcesTheory()" style="border-color:#aaa; color:#aaa; padding:5px 10px; font-size:0.6rem;">THEORY</button>
+        <button onclick="toggleAcesPerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 10px; font-size:0.6rem;">PERFORMANCE</button>
+    </div>
+
+    <!-- Theory & Performance Boxes -->
+    <div id="aces-theory" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid var(--gold); border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+        <h3 style="color:var(--gold); margin-top:0;">The Parity Principle</h3>
+        <p>Every time a card is flipped or folded onto another square, its color changes from light to dark or dark to light. Because the Aces start facedown on light squares and end up on a dark square (B2), they must undergo an odd number of flips, which automatically turns them faceup.</p>
+        <p>Non-aces starting on light squares also undergo an odd number of flips, turning them facedown. Non-aces starting on dark squares undergo an even number of flips, keeping them facedown. Thus, all 4 aces cleanly separate and appear faceup!</p>
+    </div>
+
+    <div id="aces-performance" style="display:none; margin-bottom:15px; padding:15px; background:#1a1a2e; border:1px solid #ff9900; border-radius:8px; font-size:0.65rem; color:#ccc; line-height:1.5;">
+        <h3 style="color:#ff9900; margin-top:0;">Performance Strategy</h3>
+        <p>Begin with the 4 aces on top of your deck and deal them facedown on the white diagonal. Say, 'The cards can go anywhere, and they can come from any part of the deck—the top, bottom, or middle. It doesn't matter.' Then turn the 4 cards on the other white squares faceup.</p>
+        <p>Execute your folding process until all cards land in a single pile on a designated square like B2. Unfold or reveal to show that all 4 aces have magically turned faceup while every other card is facedown!</p>
+    </div>
+
+    <!-- 4x4 Grid Display -->
+    <div id="checkerboard-grid" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; max-width:400px; margin:0 auto;"></div>
 </div>
     
 <!-- ============ PARTICLE ENTRY ARENA ============ -->
@@ -5972,6 +6011,130 @@ function renderPrincessCols() {
         perfBox.style.display = 'none';
     }
 }
+
+    let acesState = 'initial'; // 'initial' or 'folded'
+
+const boardLayout = [
+    // Row 4
+    {pos: 'a4', light: true, card: 'AH', faceUp: false, isAce: true},
+    {pos: 'b4', light: false, card: '2C', faceUp: false, isAce: false},
+    {pos: 'c4', light: true, card: 'JD', faceUp: true, isAce: false},
+    {pos: 'd4', light: false, card: '3H', faceUp: false, isAce: false},
+    // Row 3
+    {pos: 'a3', light: false, card: '5S', faceUp: false, isAce: false},
+    {pos: 'b3', light: true, card: 'AS', faceUp: false, isAce: true},
+    {pos: 'c3', light: false, card: '6D', faceUp: false, isAce: false},
+    {pos: 'd3', light: true, card: 'KD', faceUp: true, isAce: false},
+    // Row 2
+    {pos: 'a2', light: true, card: 'JC', faceUp: true, isAce: false},
+    {pos: 'b2', light: false, card: '7C', faceUp: false, isAce: false, target: true},
+    {pos: 'c2', light: true, card: 'AC', faceUp: false, isAce: true},
+    {pos: 'd2', light: false, card: '8H', faceUp: false, isAce: false},
+    // Row 1
+    {pos: 'a1', light: false, card: '9S', faceUp: false, isAce: false},
+    {pos: 'b1', light: true, card: 'KH', faceUp: true, isAce: false},
+    {pos: 'c1', light: false, card: '10C', faceUp: false, isAce: false},
+    {pos: 'd1', light: true, card: 'AD', faceUp: false, isAce: true}
+];
+
+function setupAcesGrid() {
+    acesState = 'initial';
+    document.getElementById('aces-status').innerText = "Initial Setup: 4 Aces facedown on white diagonal. Other light squares faceup. Red squares facedown.";
+    renderAcesGrid();
+}
+
+function simulateAcesFold() {
+    acesState = 'folded';
+    document.getElementById('aces-status').innerHTML = "<b>Fold Complete onto Square B2 (Dark Square)!</b> Parity dictates all 4 Aces made an odd number of flips and are now <b>FACEUP</b>.";
+    renderAcesGrid();
+}
+
+function renderAcesGrid() {
+    const grid = document.getElementById('checkerboard-grid');
+    grid.innerHTML = "";
+
+    boardLayout.forEach(item => {
+        const cell = document.createElement('div');
+        let bgBg = item.light ? '#e8e8e8' : '#7a0000';
+        let borderColor = item.target && acesState === 'folded' ? '#00f5d4' : (item.light ? '#ccc' : '#4a0000');
+        
+        cell.style.cssText = `
+            background: ${bgBg};
+            border: 3px solid ${borderColor};
+            border-radius: 6px;
+            padding: 8px;
+            text-align: center;
+            min-height: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        `;
+
+        const label = document.createElement('div');
+        label.style.cssText = "font-size:0.5rem; color:" + (item.light ? "#333" : "#ffcccc") + "; align-self:flex-start;";
+        label.innerText = item.pos.toUpperCase();
+        cell.appendChild(label);
+
+        const cardEl = document.createElement('div');
+        let faceUpNow = item.faceUp;
+        if (acesState === 'folded') {
+            if (item.isAce) faceUpNow = true;
+            else faceUpNow = false;
+        }
+
+        cardEl.style.cssText = `
+            background: ${faceUpNow ? '#fff' : '#1a1a2e'};
+            color: ${faceUpNow ? '#000' : 'var(--gold)'};
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 3px 6px;
+            font-size: 0.55rem;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        `;
+        
+        let suitChar = item.card[1] === 'H' ? '♥' : item.card[1] === 'D' ? '♦' : item.card[1] === 'C' ? '♣' : '♠';
+        let displayCardText = item.card[0] + suitChar;
+
+        if (!faceUpNow && acesState === 'initial' && !item.faceUp) {
+            cardEl.innerHTML = "🂠";
+            cardEl.style.background = "#1a1a2e";
+            cardEl.style.color = "var(--gold)";
+        } else if (!faceUpNow && acesState === 'folded') {
+            cardEl.innerHTML = "🂠 (Dn)";
+            cardEl.style.background = "#111";
+            cardEl.style.color = "#888";
+        } else {
+            cardEl.innerHTML = displayCardText;
+            if(item.card[1] === 'H' || item.card[1] === 'D') {
+                cardEl.style.color = faceUpNow ? '#d90429' : 'var(--gold)';
+            }
+        }
+
+        cell.appendChild(cardEl);
+        grid.appendChild(cell);
+    });
+}
+
+function toggleAcesTheory() {
+    const el = document.getElementById('aces-theory');
+    el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+
+function toggleAcesPerformance() {
+    const el = document.getElementById('aces-performance');
+    el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+
+function openAcesDemo() {
+    const arena = document.getElementById('aces-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    setupAcesGrid();
+}
+    
 </script>
 
 <div id="help-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; overflow-y:auto;">
