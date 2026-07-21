@@ -6204,7 +6204,6 @@ function renderVertical(arr, containerId, highlightIndicators = false, highlight
         initBlaine(); 
     }
 }
-
 let acesGridState = [];
 let selectedCell = null;
 let isSpreadMode = false;
@@ -6232,9 +6231,16 @@ const initialAcesLayout = [
     {row: 0, col: 3, pos: 'd1', light: true, cards: [{card: 'AD', faceUp: false, isAce: true}]}
 ];
 
-function renderCardImage(cardCode) {
+// Uses global createCardUI if available; otherwise falls back to Jonah demo style card rendering
+function getCardElement(cardCode) {
+    if (typeof window.createCardUI === 'function') {
+        return window.createCardUI(cardCode);
+    }
+    
+    // Fallback Jonah-style card UI renderer
     const container = document.createElement('div');
-    container.style.cssText = "width:45px; height:65px; background:#fff; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:3px; box-shadow:0 2px 4px rgba(0,0,0,0.3); font-weight:bold; font-size:0.65rem; color:#000;";
+    container.className = 'table-card';
+    container.style.cssText = "width:45px; height:65px; background:#fff; border-radius:4px; display:flex; flex-direction:column; justify-content:space-between; padding:3px; box-shadow:0 2px 4px rgba(0,0,0,0.3); font-weight:bold; font-size:0.65rem;";
     
     let rank = cardCode.slice(0, -1);
     let suitChar = cardCode.slice(-1);
@@ -6269,7 +6275,9 @@ function setupAcesGrid() {
     selectedCell = null;
     isSpreadMode = false;
     const statusEl = document.getElementById('aces-status');
-    if(statusEl) statusEl.innerHTML = "<b>Grid Ready:</b> Click a card pile to select it, then click an adjacent square to fold it.";
+    if (statusEl) {
+        statusEl.innerHTML = "<b>Grid Ready:</b> Click a card pile to select it, then click an adjacent square to fold it.";
+    }
     renderAcesView();
 }
 
@@ -6398,7 +6406,7 @@ function renderAcesView() {
 
             if (item.cards.length > 0) {
                 const topCard = item.cards[item.cards.length - 1];
-                const cardUI = renderCardImage(topCard.card);
+                const cardUI = getCardElement(topCard.card);
                 cardUI.style.transform = "scale(0.75)";
                 cardUI.style.margin = "-5px 0";
                 
@@ -6438,7 +6446,7 @@ function renderAcesView() {
             const wrapper = document.createElement('div');
             wrapper.style.cssText = "display:flex; flex-direction:column; align-items:center; gap:3px;";
 
-            const cardUI = renderCardImage(c.card);
+            const cardUI = getCardElement(c.card);
             cardUI.style.transform = "scale(0.9)";
 
             if (c.isAce) {
@@ -6464,25 +6472,29 @@ function renderAcesView() {
 
 function toggleAcesTheory() {
     const el = document.getElementById('aces-theory');
-    if(el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
 }
 
 function toggleAcesPerformance() {
     const el = document.getElementById('aces-performance');
-    if(el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
 }
 
 function openAcesDemo() {
     const arena = document.getElementById('aces-arena');
-    if(arena) {
+    if (arena) {
         arena.style.display = 'block';
         arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
     setupAcesGrid();
 }
 
-// Automatically initialize the grid immediately on script load
-setupAcesGrid();
+// Ensure safe initialization once the DOM is fully loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupAcesGrid);
+} else {
+    setupAcesGrid();
+}
     
 </script>
 
