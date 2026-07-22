@@ -1172,7 +1172,7 @@
 
 <!-- ============ Hearts Content Arena ============ -->
 
- <div id="hearts-arena" style="display:none; margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px;">
+<div id="hearts-arena" style="display:none; margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
         <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#9829; Hearts Content Parity Lab (20 Cards)</span>
         <button onclick="document.getElementById('hearts-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold); cursor:pointer;">&times;</button>
@@ -6288,23 +6288,18 @@ const initialHeartsLayout = [
 ];
 
 function getCardElement(cardCode, faceUp) {
-    if (cardCode === 'BACK' || !faceUp) {
+    if (!faceUp || !cardCode || cardCode === 'BACK' || cardCode.includes('BACK')) {
         const back = document.createElement('div');
         back.style.cssText = "width:30px; height:42px; background:radial-gradient(circle, #b22222 30%, #8b0000 90%); border:1px solid #fff; border-radius:3px; box-shadow:0 1px 3px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; flex-shrink:0;";
         back.innerHTML = '<div style="width:18px; height:30px; border:1px dashed rgba(255,255,255,0.4); border-radius:2px;"></div>';
         return back;
     }
 
-    if (typeof window.createCardUI === 'function') {
-        let el = window.createCardUI(cardCode);
-        if (el) return el;
-    }
-
     const container = document.createElement('div');
     container.style.cssText = "width:30px; height:42px; background:#fff; border-radius:3px; display:flex; flex-direction:column; justify-content:space-between; padding:2px; box-shadow:0 1px 3px rgba(0,0,0,0.4); font-weight:bold; font-size:0.5rem; flex-shrink:0;";
     
-    let rank = cardCode.slice(0, -1);
-    let suitChar = cardCode.slice(-1);
+    let rank = cardCode.slice(0, -1) || 'A';
+    let suitChar = cardCode.slice(-1) || 'S';
     let suitSymbol = (suitChar === 'H') ? '♥' : (suitChar === 'D') ? '♦' : (suitChar === 'C') ? '♣' : '♠';
     let color = (suitChar === 'H' || suitChar === 'D') ? '#d00' : '#000';
 
@@ -6458,7 +6453,6 @@ function autoFoldHeartsAll() {
 function revealHeartsSpread() {
     isHeartsSpreadMode = true;
     
-    // Hearts faceup, non-hearts facedown
     heartsGridState.forEach(item => {
         item.cards.forEach(c => {
             if (c.isHeart) {
@@ -6537,7 +6531,6 @@ function renderHeartsView() {
         area.appendChild(grid);
 
     } else {
-        // Screen-fitting wrapped spread view (fits all 20 cards on screen without horizontal scrolling)
         let allCards = [];
         heartsGridState.forEach(item => {
             allCards.push(...item.cards);
@@ -6591,7 +6584,6 @@ function openHeartsDemo() {
     }
     setupHeartsGrid();
 }
-    
     
 // Aces demo
     
