@@ -1184,12 +1184,12 @@
 
     <!-- Controls -->
     <div style="display:flex; gap:6px; margin-bottom:10px; flex-wrap:wrap;">
-        <button onclick="setupHeartsGrid()" style="border-color:#888; color:#888; padding:5px 8px; font-size:0.6rem; cursor:pointer;">RESET</button>
-        <button id="hearts-next-btn" onclick="executeNextHeartFold()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">NEXT FOLD (1/7)</button>
-        <button onclick="autoFoldHeartsAll()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">AUTO ALL</button>
-        <button onclick="revealHeartsSpread()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">SPREAD</button>
-        <button onclick="toggleHeartsTheory()" style="border-color:#aaa; color:#aaa; padding:5px 8px; font-size:0.6rem; cursor:pointer;">THEORY</button>
-        <button onclick="toggleHeartsPerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">PERFORMANCE</button>
+        <button onclick="heartsSetupGrid()" style="border-color:#888; color:#888; padding:5px 8px; font-size:0.6rem; cursor:pointer;">RESET</button>
+        <button id="hearts-next-btn" onclick="heartsExecuteNextFold()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">NEXT FOLD (1/7)</button>
+        <button onclick="heartsAutoFoldAll()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">AUTO ALL</button>
+        <button onclick="heartsRevealSpread()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 8px; font-size:0.6rem; font-weight:bold; cursor:pointer;">SPREAD</button>
+        <button onclick="heartsToggleTheory()" style="border-color:#aaa; color:#aaa; padding:5px 8px; font-size:0.6rem; cursor:pointer;">THEORY</button>
+        <button onclick="heartsTogglePerformance()" style="border-color:#ff9900; color:#ff9900; padding:5px 8px; font-size:0.6rem; cursor:pointer;">PERFORMANCE</button>
     </div>
 
     <!-- Theory Box -->
@@ -1199,7 +1199,7 @@
         <ul style="margin: 5px 0; padding-left: 15px;">
             <li><b>No Hearts:</b> Turn cards face to face (nothing to see, no matter how flipped).</li>
             <li><b>Both Hearts:</b> Turn cards back to back (see a heart no matter how flipped).</li>
-            <li><b>1 Heart:</b> Arrange so the heart is faceup (using "Keep or Flip?" or subtle sleight of hand).</li>
+            <li><b>1 Heart:</b> Arrange so the heart is faceup.</li>
         </ul>
         <p><b>The Math & Checkerboard Deal:</b> Numbering positions 1 to 20 places hearts faceup in odd positions and facedown in even positions. Dealing into 4 rows of 5 on a checkerboard maps odd positions to <b>light squares</b> and even positions to <b>dark squares</b>. Consolidating into target square <b>B2</b> ensures all hearts finish faceup while non-hearts finish facedown!</p>
     </div>
@@ -1215,7 +1215,6 @@
         <div id="hearts-grid-container" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:6px; max-width:520px; margin:0 auto;"></div>
     </div>
 </div>
-    
     
 <!-- ============ 4 ACES Arena ============ -->
 
@@ -6254,32 +6253,28 @@ function renderVertical(arr, containerId, highlightIndicators = false, highlight
 // Hearts demo
 
 let heartsGridState = [];
-let currentHeartsFoldStep = 0;
-let isHeartsSpreadMode = false;
+let heartsCurrentFoldStep = 0;
+let heartsIsSpreadMode = false;
 
-const initialHeartsLayout = [
-    // Row 4 (a4 to e4)
+const heartsInitialLayout = [
     {row: 3, col: 0, pos: 'a4', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     {row: 3, col: 1, pos: 'b4', light: false, cards: [{card: 'QC', faceUp: true, isHeart: false}]},
     {row: 3, col: 2, pos: 'c4', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     {row: 3, col: 3, pos: 'd4', light: false, cards: [{card: '10D', faceUp: true, isHeart: false}]},
     {row: 3, col: 4, pos: 'e4', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     
-    // Row 3 (a3 to e3)
     {row: 2, col: 0, pos: 'a3', light: false, cards: [{card: 'KH', faceUp: true, isHeart: true}]},
     {row: 2, col: 1, pos: 'b3', light: true, cards: [{card: '10H', faceUp: true, isHeart: true}]},
     {row: 2, col: 2, pos: 'c3', light: false, cards: [{card: '10S', faceUp: true, isHeart: false}]},
     {row: 2, col: 3, pos: 'd3', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     {row: 2, col: 4, pos: 'e3', light: false, cards: [{card: 'KC', faceUp: true, isHeart: false}]},
     
-    // Row 2 (a2 to e2) - Target is b2
     {row: 1, col: 0, pos: 'a2', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     {row: 1, col: 1, pos: 'b2', light: false, cards: [{card: 'JD', faceUp: true, isHeart: false}], target: true},
     {row: 1, col: 2, pos: 'c2', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     {row: 1, col: 3, pos: 'd2', light: false, cards: [{card: 'KD', faceUp: true, isHeart: false}]},
     {row: 1, col: 4, pos: 'e2', light: true, cards: [{card: 'BACK', faceUp: false, isHeart: false}]},
     
-    // Row 1 (a1 to e1)
     {row: 0, col: 0, pos: 'a1', light: false, cards: [{card: 'JH', faceUp: true, isHeart: true}]},
     {row: 0, col: 1, pos: 'b1', light: true, cards: [{card: 'QH', faceUp: true, isHeart: true}]},
     {row: 0, col: 2, pos: 'c1', light: false, cards: [{card: 'AH', faceUp: true, isHeart: true}]},
@@ -6287,25 +6282,32 @@ const initialHeartsLayout = [
     {row: 0, col: 4, pos: 'e1', light: false, cards: [{card: 'JS', faceUp: true, isHeart: false}]}
 ];
 
-function getCardElement(cardCode, faceUp) {
-    if (!faceUp || !cardCode || cardCode === 'BACK' || cardCode.includes('BACK')) {
+function heartsGetCardElement(cardInput, faceUp) {
+    let cardCode = 'BACK';
+    if (typeof cardInput === 'string') {
+        cardCode = cardInput;
+    } else if (cardInput && typeof cardInput === 'object') {
+        cardCode = cardInput.card || cardInput.code || cardInput.name || cardInput.value || 'BACK';
+    }
+
+    if (!faceUp || !cardCode || cardCode === 'BACK' || cardCode.toString().toUpperCase().includes('BACK')) {
         const back = document.createElement('div');
         back.style.cssText = "width:30px; height:42px; background:radial-gradient(circle, #b22222 30%, #8b0000 90%); border:1px solid #fff; border-radius:3px; box-shadow:0 1px 3px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; flex-shrink:0;";
         back.innerHTML = '<div style="width:18px; height:30px; border:1px dashed rgba(255,255,255,0.4); border-radius:2px;"></div>';
         return back;
     }
 
-    const container = document.createElement('div');
-    container.style.cssText = "width:30px; height:42px; background:#fff; border-radius:3px; display:flex; flex-direction:column; justify-content:space-between; padding:2px; box-shadow:0 1px 3px rgba(0,0,0,0.4); font-weight:bold; font-size:0.5rem; flex-shrink:0;";
-    
-    let rank = cardCode.slice(0, -1) || 'A';
-    let suitChar = cardCode.slice(-1) || 'S';
-    let suitSymbol = (suitChar === 'H') ? '♥' : (suitChar === 'D') ? '♦' : (suitChar === 'C') ? '♣' : '♠';
-    let color = (suitChar === 'H' || suitChar === 'D') ? '#d00' : '#000';
+    let codeStr = cardCode.toString().trim();
+    let rank = codeStr.slice(0, -1) || 'A';
+    let suitChar = codeStr.slice(-1) || 'S';
+    let suitSymbol = (suitChar.toUpperCase() === 'H') ? '♥' : (suitChar.toUpperCase() === 'D') ? '♦' : (suitChar.toUpperCase() === 'C') ? '♣' : '♠';
+    let color = (suitChar.toUpperCase() === 'H' || suitChar.toUpperCase() === 'D') ? '#d00' : '#000';
 
-    container.style.color = color;
+    const container = document.createElement('div');
+    container.style.cssText = "width:30px; height:42px; background:#fff; border-radius:3px; display:flex; flex-direction:column; justify-content:space-between; padding:2px; box-shadow:0 1px 3px rgba(0,0,0,0.4); font-weight:bold; font-size:0.5rem; flex-shrink:0; color:" + color + ";";
+    
     const topVal = document.createElement('div');
-    topVal.innerText = rank + suitSymbol;
+    topVal.innerText = rank.toUpperCase() + suitSymbol;
     topVal.style.fontSize = "0.4rem";
     
     const centerVal = document.createElement('div');
@@ -6319,23 +6321,23 @@ function getCardElement(cardCode, faceUp) {
     return container;
 }
 
-function setupHeartsGrid() {
-    heartsGridState = JSON.parse(JSON.stringify(initialHeartsLayout));
-    currentHeartsFoldStep = 0;
-    isHeartsSpreadMode = false;
-    updateHeartsFoldButtonLabel();
+function heartsSetupGrid() {
+    heartsGridState = JSON.parse(JSON.stringify(heartsInitialLayout));
+    heartsCurrentFoldStep = 0;
+    heartsIsSpreadMode = false;
+    heartsUpdateFoldButtonLabel();
     const statusEl = document.getElementById('hearts-status');
     if (statusEl) {
         statusEl.innerHTML = "<b>Grid Ready:</b> Click <b>NEXT FOLD (1/7)</b> to begin the 7-step folding sequence into square B2.";
     }
-    renderHeartsView();
+    heartsRenderView();
 }
 
-function updateHeartsFoldButtonLabel() {
+function heartsUpdateFoldButtonLabel() {
     const btn = document.getElementById('hearts-next-btn');
     if (!btn) return;
-    if (currentHeartsFoldStep < 7) {
-        btn.innerText = `NEXT FOLD (${currentHeartsFoldStep + 1}/7)`;
+    if (heartsCurrentFoldStep < 7) {
+        btn.innerText = `NEXT FOLD (${heartsCurrentFoldStep + 1}/7)`;
         btn.style.display = 'inline-block';
     } else {
         btn.innerText = "MERGED TO B2";
@@ -6343,10 +6345,10 @@ function updateHeartsFoldButtonLabel() {
     }
 }
 
-function executeNextHeartFold() {
-    if (currentHeartsFoldStep >= 7) return;
+function heartsExecuteNextFold() {
+    if (heartsCurrentFoldStep >= 7) return;
 
-    if (currentHeartsFoldStep === 0) {
+    if (heartsCurrentFoldStep === 0) {
         heartsGridState.forEach(item => {
             if (item.col === 4 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === item.row && t.col === 3);
@@ -6359,7 +6361,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 1 Complete:</b> Column E folded onto Column D. Click <b>NEXT FOLD (2/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 1) {
+    else if (heartsCurrentFoldStep === 1) {
         heartsGridState.forEach(item => {
             if (item.col === 3 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === item.row && t.col === 2);
@@ -6372,7 +6374,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 2 Complete:</b> Column D folded onto Column C. Click <b>NEXT FOLD (3/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 2) {
+    else if (heartsCurrentFoldStep === 2) {
         heartsGridState.forEach(item => {
             if (item.col === 2 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === item.row && t.col === 1);
@@ -6385,7 +6387,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 3 Complete:</b> Column C folded onto Column B. Click <b>NEXT FOLD (4/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 3) {
+    else if (heartsCurrentFoldStep === 3) {
         heartsGridState.forEach(item => {
             if (item.col === 0 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === item.row && t.col === 1);
@@ -6398,7 +6400,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 4 Complete:</b> Column A folded onto Column B. Click <b>NEXT FOLD (5/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 4) {
+    else if (heartsCurrentFoldStep === 4) {
         heartsGridState.forEach(item => {
             if (item.row === 3 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === 2 && t.col === item.col);
@@ -6411,7 +6413,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 5 Complete:</b> Row 4 folded down onto Row 3. Click <b>NEXT FOLD (6/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 5) {
+    else if (heartsCurrentFoldStep === 5) {
         heartsGridState.forEach(item => {
             if (item.row === 0 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === 1 && t.col === item.col);
@@ -6424,7 +6426,7 @@ function executeNextHeartFold() {
         });
         document.getElementById('hearts-status').innerHTML = "<b>Fold 6 Complete:</b> Row 1 folded up onto Row 2. Click <b>NEXT FOLD (7/7)</b>.";
     }
-    else if (currentHeartsFoldStep === 6) {
+    else if (heartsCurrentFoldStep === 6) {
         heartsGridState.forEach(item => {
             if (item.row === 2 && item.cards.length > 0) {
                 let target = heartsGridState.find(t => t.row === 1 && t.col === 1);
@@ -6438,20 +6440,20 @@ function executeNextHeartFold() {
         document.getElementById('hearts-status').innerHTML = "<b>Fold 7 Complete:</b> All 20 cards successfully merged into square B2! Click <b>SPREAD</b>.";
     }
 
-    currentHeartsFoldStep++;
-    updateHeartsFoldButtonLabel();
-    renderHeartsView();
+    heartsCurrentFoldStep++;
+    heartsUpdateFoldButtonLabel();
+    heartsRenderView();
 }
 
-function autoFoldHeartsAll() {
-    setupHeartsGrid();
-    while (currentHeartsFoldStep < 7) {
-        executeNextHeartFold();
+function heartsAutoFoldAll() {
+    heartsSetupGrid();
+    while (heartsCurrentFoldStep < 7) {
+        heartsExecuteNextFold();
     }
 }
 
-function revealHeartsSpread() {
-    isHeartsSpreadMode = true;
+function heartsRevealSpread() {
+    heartsIsSpreadMode = true;
     
     heartsGridState.forEach(item => {
         item.cards.forEach(c => {
@@ -6464,15 +6466,15 @@ function revealHeartsSpread() {
     });
 
     document.getElementById('hearts-status').innerHTML = "<b>The Spread Reveal:</b> All 20 cards fanned out on screen. Hearts are <b>FACEUP</b> and the rest are <b>FACEDOWN</b>!";
-    renderHeartsView();
+    heartsRenderView();
 }
 
-function renderHeartsView() {
+function heartsRenderView() {
     const area = document.getElementById('hearts-display-area');
     if (!area) return;
     area.innerHTML = "";
 
-    if (!isHeartsSpreadMode) {
+    if (!heartsIsSpreadMode) {
         const grid = document.createElement('div');
         grid.style.cssText = "display:grid; grid-template-columns: repeat(5, 1fr); gap:6px; max-width:520px; margin:0 auto;";
         
@@ -6509,7 +6511,7 @@ function renderHeartsView() {
             stackContainer.style.cssText = "position:relative; width:30px; height:50px; margin-top:2px;";
 
             item.cards.forEach((cardObj, idx) => {
-                const cardUI = getCardElement(cardObj.card, cardObj.faceUp);
+                const cardUI = heartsGetCardElement(cardObj.card, cardObj.faceUp);
                 cardUI.style.position = "absolute";
                 cardUI.style.top = (idx * 3) + "px";
                 cardUI.style.left = "0px";
@@ -6543,7 +6545,7 @@ function renderHeartsView() {
             const wrapper = document.createElement('div');
             wrapper.style.cssText = "display:flex; flex-direction:column; align-items:center; gap:2px;";
 
-            const cardUI = getCardElement(c.card, c.faceUp);
+            const cardUI = heartsGetCardElement(c.card, c.faceUp);
 
             if (c.isHeart) {
                 cardUI.style.border = "2px solid #ff4d4d";
@@ -6566,12 +6568,12 @@ function renderHeartsView() {
     }
 }
 
-function toggleHeartsTheory() {
+function heartsToggleTheory() {
     const el = document.getElementById('hearts-theory');
     if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
 }
 
-function toggleHeartsPerformance() {
+function heartsTogglePerformance() {
     const el = document.getElementById('hearts-performance');
     if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
 }
@@ -6582,7 +6584,7 @@ function openHeartsDemo() {
         arena.style.display = 'block';
         arena.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-    setupHeartsGrid();
+    heartsSetupGrid();
 }
     
 // Aces demo
