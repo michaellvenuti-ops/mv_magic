@@ -7821,46 +7821,27 @@ let psState = {
 };
 
 function psReset() {
-    let d = [];
-    let suits = ['H', 'D', 'C', 'S'];
-    let ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    suits.forEach(s => {
-        ranks.forEach(r => {
-            d.push({card: r + s});
-        });
+    // Complete 52-card sequence of the Particle Stack in precise order
+    const particleStackOrder = [
+        'AH', 'KS', 'AD', 'KC', '2H', 'QS', '2D', 'QC', '3H', 'JS',
+        '3D', 'JC', '4H', '10S', '4D', '10C', '5H', '9S', '5D', '9C',
+        '6H', '8S', '6D', '8C', '7H', '7S', '7D', '7C', '8H', '6S',
+        '8D', '6C', '9H', '5S', '9D', '5C', '10H', '4S', '10D', '4C',
+        'JH', '3S', 'JD', '3C', 'QH', '2S', 'QD', '2C', 'KH', 'AS',
+        'KD', 'AC'
+    ];
+
+    // Map your master deck items into the simulator deck array
+    deck = particleStackOrder.map(code => {
+        return masterDeck.find(card => card.card === code || card.code === code);
     });
 
-    let rfSpades = [{card: '10S'}, {card: 'JS'}, {card: 'QS'}, {card: 'KS'}, {card: 'AS'}];
-    let pool = d.filter(x => x.card !== 'QD' && !rfSpades.some(rf => rf.card === x.card));
-    
-    let ordered = new Array(52);
-    ordered[0] = {card: '10S'};
-    ordered[4] = {card: 'JS'};
-    ordered[8] = {card: 'QS'};
-    ordered[12] = {card: 'KS'};
-    ordered[16] = {card: 'AS'};
-    ordered[15] = {card: 'QD'}; // Queen of Diamonds positioned so cutting it to top aligns the Royal Flush
-
-    let poolIdx = 0;
-    for (let i = 0; i < 52; i++) {
-        if (!ordered[i]) {
-            ordered[i] = pool[poolIdx++];
-        }
+    // Reset simulator view and state indices
+    currentIndex = 0;
+    if (typeof updateDisplay === 'function') {
+        updateDisplay();
     }
-
-    psState.deck = ordered;
-    psState.hands = [[], [], [], []];
-    psState.staged = false;
-
-    document.getElementById('ps-status').innerHTML = "<b>Step 1: Setup.</b> Particle Stack loaded. The Queen of Diamonds (Q♦) is currently at position 16. Click <b>1. CUT Q♦ TO TOP</b>.";
-    document.getElementById('ps-btn-cut').style.display = 'inline-block';
-    document.getElementById('ps-btn-deal').style.display = 'none';
-    document.getElementById('ps-btn-reveal').style.display = 'none';
-    document.getElementById('ps-poker-hands').style.display = 'none';
-    
-    psRenderDeck();
 }
-
 function psRenderDeck(highlightIndices = []) {
     const container = document.getElementById('ps-deck-container');
     container.innerHTML = "";
