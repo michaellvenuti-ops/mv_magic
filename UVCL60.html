@@ -1358,7 +1358,7 @@
     </div>
 
     <div id="ps-status" style="font-size:0.7rem; color:#aaa; margin-bottom:12px; background:#16162c; padding:8px; border-radius:6px; border-left:3px solid var(--gold, #ffd700);">
-        <b>Step 1: Setup.</b> Particle Stack loaded. Click <b>1. CUT Q♦ TO TOP</b> to begin.
+        <b>Step 1: Setup.</b> Particle Stack loaded. The Queen of Diamonds (Q♦) is positioned so cutting it to the top aligns the poker deal. Click <b>1. CUT Q♦ TO TOP</b>.
     </div>
 
     <!-- Controls -->
@@ -1371,8 +1371,8 @@
 
     <!-- Poker Hands Display Area -->
     <div id="ps-poker-hands" style="display:none; grid-template-columns: repeat(2, 1fr); gap:10px; margin-bottom:12px;">
-        <div id="ps-hand-1" style="background:#16162c; border:1px solid var(--gold); border-radius:6px; padding:8px;">
-            <div style="color:var(--gold); font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 1 (Dealer / You)</div>
+        <div id="ps-hand-1" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
+            <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 1 (Player 1)</div>
             <div class="ps-cards-1" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
         </div>
         <div id="ps-hand-2" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
@@ -1383,8 +1383,8 @@
             <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 3 (Player 3)</div>
             <div class="ps-cards-3" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
         </div>
-        <div id="ps-hand-4" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
-            <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 4 (Player 4)</div>
+        <div id="ps-hand-4" style="background:#16162c; border:1px solid var(--gold); border-radius:6px; padding:8px;">
+            <div style="color:var(--gold); font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 4 (Dealer / You)</div>
             <div class="ps-cards-4" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
         </div>
     </div>
@@ -7924,12 +7924,12 @@ function psDealPoker() {
 }
 
 function psRevealRoyalFlush() {
-    let hand1El = document.getElementById('ps-hand-1');
-    if (hand1El) {
-        hand1El.style.borderColor = '#00f5d4';
-        hand1El.style.boxShadow = '0 0 10px #00f5d4';
+    let hand4El = document.getElementById('ps-hand-4');
+    if (hand4El) {
+        hand4El.style.borderColor = '#00f5d4';
+        hand4El.style.boxShadow = '0 0 10px #00f5d4';
     }
-    document.getElementById('ps-status').innerHTML = "<b>Climax!</b> Hand 1 (You / Dealer) holds the complete <b>Royal Flush in Spades (10♠, J♠, Q♠, K♠, A♠)</b> in exact order! The Particle Stack poker deal is complete.";
+    document.getElementById('ps-status').innerHTML = "<b>Climax!</b> Hand 4 (Dealer / You) holds the complete <b>Royal Flush in Spades (10♠, J♠, Q♠, K♠, A♠)</b>! The Particle Stack poker deal concludes perfectly.";
     document.getElementById('ps-btn-reveal').style.display = 'none';
 }
 
