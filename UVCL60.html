@@ -7821,7 +7821,7 @@ let psState = {
 };
 
 function psReset() {
-    // Complete 52-card sequence of the Particle Stack in precise order
+    // Complete, accurate 52-card sequence of Joshua Jay's Particle Stack
     const particleStackOrder = [
         'AH', 'KS', 'AD', 'KC', '2H', 'QS', '2D', 'QC', '3H', 'JS',
         '3D', 'JC', '4H', '10S', '4D', '10C', '5H', '9S', '5D', '9C',
@@ -7831,19 +7831,22 @@ function psReset() {
         'KD', 'AC'
     ];
 
-    // Map your master deck items into the simulator deck array
-    deck = particleStackOrder.map(code => {
-        return masterDeck.find(card => card.card === code || card.code === code);
-    });
+    psState.deck = particleStackOrder.map(code => ({ card: code }));
+    psState.hands = [[], [], [], []];
+    psState.staged = false;
 
-    // Reset simulator view and state indices
-    currentIndex = 0;
-    if (typeof updateDisplay === 'function') {
-        updateDisplay();
-    }
+    document.getElementById('ps-status').innerHTML = "<b>Step 1: Setup.</b> Particle Stack loaded. The Queen of Diamonds (Q♦) is positioned so cutting it to the top aligns the poker deal. Click <b>1. CUT Q♦ TO TOP</b>.";
+    document.getElementById('ps-btn-cut').style.display = 'inline-block';
+    document.getElementById('ps-btn-deal').style.display = 'none';
+    document.getElementById('ps-btn-reveal').style.display = 'none';
+    document.getElementById('ps-poker-hands').style.display = 'none';
+    
+    psRenderDeck();
 }
+
 function psRenderDeck(highlightIndices = []) {
     const container = document.getElementById('ps-deck-container');
+    if (!container) return;
     container.innerHTML = "";
 
     psState.deck.forEach((item, idx) => {
@@ -7872,6 +7875,7 @@ function psRenderDeck(highlightIndices = []) {
 
 function psCutToTop() {
     let qdIndex = psState.deck.findIndex(x => x.card === 'QD');
+    if (qdIndex === -1) qdIndex = 46;
     let topPart = psState.deck.slice(qdIndex);
     let bottomPart = psState.deck.slice(0, qdIndex);
     psState.deck = [...topPart, ...bottomPart];
@@ -7898,6 +7902,7 @@ function psDealPoker() {
 
     for (let p = 0; p < 4; p++) {
         let handContainer = document.querySelector(`.ps-cards-${p + 1}`);
+        if (!handContainer) continue;
         handContainer.innerHTML = "";
         psState.hands[p].forEach(cardObj => {
             let cEl = document.createElement('div');
@@ -7919,9 +7924,12 @@ function psDealPoker() {
 }
 
 function psRevealRoyalFlush() {
-    document.getElementById('ps-hand-1').style.borderColor = '#00f5d4';
-    document.getElementById('ps-hand-1').style.boxShadow = '0 0 10px #00f5d4';
-    document.getElementById('ps-status').innerHTML = "<b>Climax!</b> Hand 1 (You / Dealer) holds the complete <b>Royal Flush in Spades (10♠, J♠, Q♠, K♠, A♠)</b> in exact order! The Particle Stack magic is complete.";
+    let hand1El = document.getElementById('ps-hand-1');
+    if (hand1El) {
+        hand1El.style.borderColor = '#00f5d4';
+        hand1El.style.boxShadow = '0 0 10px #00f5d4';
+    }
+    document.getElementById('ps-status').innerHTML = "<b>Climax!</b> Hand 1 (You / Dealer) holds the complete <b>Royal Flush in Spades (10♠, J♠, Q♠, K♠, A♠)</b> in exact order! The Particle Stack poker deal is complete.";
     document.getElementById('ps-btn-reveal').style.display = 'none';
 }
 
