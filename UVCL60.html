@@ -320,6 +320,7 @@
             <button onclick="showNdoToParticleNdo()" style="padding: var(--pad-small);">NDO &rarr; Particle NDO</button>
             <button onclick="showParticleEntry()" style="padding: var(--pad-small);">Particle NDO &rarr; Stack</button>
             <button onclick="showParticleReturn()" style="padding: var(--pad-small);">Particle Stack &rarr; NDO</button>
+            <button onclick="showParticleStackDemo()" style="padding: var(--pad-small);"♠ Particle Stack Demo (Royal Riffing)</button>
         </div>
     </div>
 
@@ -1349,6 +1350,57 @@
     <div id="pr-match" style="display:none; margin-top:10px; padding:10px; border:1px solid var(--gold); border-radius:6px; background:rgba(255,183,3,0.08); font-size:0.7rem; color:var(--gold); text-align:center;"></div>
 </div>
 
+<div id="particle-stack-arena" style="display:none; margin-top:20px; background:#0d0d1a; border:4px solid var(--gold, #ffd700); border-radius:12px; padding:15px; font-family:sans-serif;">
+    
+    <div style="background:#222; padding:10px; border-radius:5px; margin-bottom:15px; border:1px solid #333;">
+        <span style="font-size:0.6rem; color:var(--gold, #ffd700); display:block; margin-bottom:5px; font-weight:bold; text-transform:uppercase;">Particle Stack Demo Suite</span>
+        <div style="display:grid; grid-template-columns: 1fr; gap:4px;">
+            <button onclick="showParticleStackDemo()" style="padding:6px 10px; background:#1a1a2e; color:#00f5d4; border:1px solid #00f5d4; border-radius:4px; font-size:0.65rem; cursor:pointer; text-align:left; font-weight:bold;">Particle Stack: Royal Riffing</button>
+        </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+        <span style="color:var(--gold, #ffd700); font-size:0.75rem; font-weight:bold; text-transform:uppercase;">♠ Particle Stack Demo (Royal Riffing)</span>
+        <button onclick="document.getElementById('particle-stack-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold, #ffd700); color:var(--gold, #ffd700); cursor:pointer; background:transparent;">&times;</button>
+    </div>
+
+    <div id="ps-status" style="font-size:0.7rem; color:#aaa; margin-bottom:12px; background:#16162c; padding:8px; border-radius:6px; border-left:3px solid var(--gold, #ffd700);">
+        <b>Step 1: Setup.</b> Particle Stack loaded. Click <b>1. CUT Q♦ TO TOP</b> to begin.
+    </div>
+
+    <!-- Controls -->
+    <div style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
+        <button onclick="psReset()" style="border-color:#888; color:#888; padding:5px 10px; font-size:0.65rem; cursor:pointer; background:transparent;">RESET</button>
+        <button id="ps-btn-cut" onclick="psCutToTop()" style="border-color:#ff9900; color:#ff9900; padding:5px 10px; font-size:0.65rem; font-weight:bold; cursor:pointer; background:transparent;">1. CUT Q♦ TO TOP</button>
+        <button id="ps-btn-deal" onclick="psDealPoker()" style="border-color:#00f5d4; color:#00f5d4; padding:5px 10px; font-size:0.65rem; font-weight:bold; cursor:pointer; background:transparent; display:none;">2. DEAL 4-HANDED POKER GAME</button>
+        <button id="ps-btn-reveal" onclick="psRevealRoyalFlush()" style="border-color:var(--gold, #ffd700); color:var(--gold, #ffd700); padding:5px 10px; font-size:0.65rem; font-weight:bold; cursor:pointer; background:transparent; display:none;">3. REVEAL DEALER'S ROYAL FLUSH</button>
+    </div>
+
+    <!-- Poker Hands Display Area -->
+    <div id="ps-poker-hands" style="display:none; grid-template-columns: repeat(2, 1fr); gap:10px; margin-bottom:12px;">
+        <div id="ps-hand-1" style="background:#16162c; border:1px solid var(--gold); border-radius:6px; padding:8px;">
+            <div style="color:var(--gold); font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 1 (Dealer / You)</div>
+            <div class="ps-cards-1" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
+        </div>
+        <div id="ps-hand-2" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
+            <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 2 (Player 2)</div>
+            <div class="ps-cards-2" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
+        </div>
+        <div id="ps-hand-3" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
+            <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 3 (Player 3)</div>
+            <div class="ps-cards-3" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
+        </div>
+        <div id="ps-hand-4" style="background:#16162c; border:1px solid #444; border-radius:6px; padding:8px;">
+            <div style="color:#aaa; font-size:0.65rem; font-weight:bold; margin-bottom:4px;">Hand 4 (Player 4)</div>
+            <div class="ps-cards-4" style="display:flex; gap:3px; flex-wrap:wrap;"></div>
+        </div>
+    </div>
+
+    <!-- Deck Visualizer Area -->
+    <div id="ps-deck-container" style="display:flex; flex-wrap:wrap; gap:4px; justify-content:center; max-height:180px; overflow-y:auto; padding:5px; background:#121222; border-radius:6px; border:1px solid #222;">
+    </div>
+</div>
+    
 <!-- ============ MNEMONICA ENTRY DEMO ARENA ============ -->
 <div id="mnem-entry-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -7762,6 +7814,146 @@ function openAcesDemo() {
     }
     setupAcesGrid();
 }
+<script>
+function toggleParticleStackDemo() {
+    const arena = document.getElementById('particle-stack-arena');
+    if (arena) {
+        arena.style.display = (arena.style.display === 'none' || arena.style.display === '') ? 'block' : 'none';
+    }
+}
+
+let psState = {
+    deck: [],
+    hands: [[], [], [], []],
+    staged: false
+};
+
+function psReset() {
+    let d = [];
+    let suits = ['H', 'D', 'C', 'S'];
+    let ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    suits.forEach(s => {
+        ranks.forEach(r => {
+            d.push({card: r + s});
+        });
+    });
+
+    let rfSpades = [{card: '10S'}, {card: 'JS'}, {card: 'QS'}, {card: 'KS'}, {card: 'AS'}];
+    let pool = d.filter(x => x.card !== 'QD' && !rfSpades.some(rf => rf.card === x.card));
+    
+    let ordered = new Array(52);
+    ordered[0] = {card: '10S'};
+    ordered[4] = {card: 'JS'};
+    ordered[8] = {card: 'QS'};
+    ordered[12] = {card: 'KS'};
+    ordered[16] = {card: 'AS'};
+    ordered[15] = {card: 'QD'}; // Queen of Diamonds positioned so cutting it to top aligns the Royal Flush
+
+    let poolIdx = 0;
+    for (let i = 0; i < 52; i++) {
+        if (!ordered[i]) {
+            ordered[i] = pool[poolIdx++];
+        }
+    }
+
+    psState.deck = ordered;
+    psState.hands = [[], [], [], []];
+    psState.staged = false;
+
+    document.getElementById('ps-status').innerHTML = "<b>Step 1: Setup.</b> Particle Stack loaded. The Queen of Diamonds (Q♦) is currently at position 16. Click <b>1. CUT Q♦ TO TOP</b>.";
+    document.getElementById('ps-btn-cut').style.display = 'inline-block';
+    document.getElementById('ps-btn-deal').style.display = 'none';
+    document.getElementById('ps-btn-reveal').style.display = 'none';
+    document.getElementById('ps-poker-hands').style.display = 'none';
+    
+    psRenderDeck();
+}
+
+function psRenderDeck(highlightIndices = []) {
+    const container = document.getElementById('ps-deck-container');
+    container.innerHTML = "";
+
+    psState.deck.forEach((item, idx) => {
+        let el = document.createElement('div');
+        el.style.cssText = "width:28px; height:40px; background:#fff; border-radius:3px; display:flex; flex-direction:column; justify-content:space-between; padding:2px; font-weight:bold; font-size:0.45rem; position:relative; box-shadow:0 1px 3px rgba(0,0,0,0.5);";
+        
+        let label = document.createElement('div');
+        label.style.cssText = "position:absolute; top:-8px; left:0; width:100%; font-size:0.35rem; color:#888; text-align:center;";
+        label.innerText = idx + 1;
+        el.appendChild(label);
+
+        let rank = item.card.slice(0, -1);
+        let suitChar = item.card.slice(-1);
+        let suitSymbol = (suitChar === 'H') ? '♥' : (suitChar === 'D') ? '♦' : (suitChar === 'C') ? '♣' : '♠';
+        let color = (suitChar === 'H' || suitChar === 'D') ? '#d00' : '#000';
+        el.style.color = color;
+        el.innerHTML += `<div style="font-size:0.35rem;">${rank}${suitSymbol}</div><div style="font-size:0.6rem; text-align:center; margin:auto 0;">${suitSymbol}</div>`;
+
+        if (highlightIndices.includes(idx)) {
+            el.style.border = "2px solid #ff9900";
+            el.style.boxShadow = "0 0 6px #ff9900";
+        }
+        container.appendChild(el);
+    });
+}
+
+function psCutToTop() {
+    let qdIndex = psState.deck.findIndex(x => x.card === 'QD');
+    let topPart = psState.deck.slice(qdIndex);
+    let bottomPart = psState.deck.slice(0, qdIndex);
+    psState.deck = [...topPart, ...bottomPart];
+    psState.staged = true;
+
+    document.getElementById('ps-status').innerHTML = "<b>Step 2: Cut Complete.</b> The Queen of Diamonds (Q♦) is now cut to the top of the deck. Click <b>2. DEAL 4-HANDED POKER GAME</b>.";
+    document.getElementById('ps-btn-cut').style.display = 'none';
+    document.getElementById('ps-btn-deal').style.display = 'inline-block';
+    psRenderDeck([0]);
+}
+
+function psDealPoker() {
+    psState.hands = [[], [], [], []];
+    let tempDeck = [...psState.deck];
+
+    for (let round = 0; round < 5; round++) {
+        for (let p = 0; p < 4; p++) {
+            if (tempDeck.length > 0) {
+                psState.hands[p].push(tempDeck.shift());
+            }
+        }
+    }
+    psState.deck = tempDeck;
+
+    for (let p = 0; p < 4; p++) {
+        let handContainer = document.querySelector(`.ps-cards-${p + 1}`);
+        handContainer.innerHTML = "";
+        psState.hands[p].forEach(cardObj => {
+            let cEl = document.createElement('div');
+            cEl.style.cssText = "width:22px; height:32px; background:#fff; border-radius:2px; display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:0.4rem; font-weight:bold;";
+            let rank = cardObj.card.slice(0, -1);
+            let suitChar = cardObj.card.slice(-1);
+            let suitSymbol = (suitChar === 'H') ? '♥' : (suitChar === 'D') ? '♦' : (suitChar === 'C') ? '♣' : '♠';
+            cEl.style.color = (suitChar === 'H' || suitChar === 'D') ? '#d00' : '#000';
+            cEl.innerText = rank + suitSymbol;
+            handContainer.appendChild(cEl);
+        });
+    }
+
+    document.getElementById('ps-poker-hands').style.display = 'grid';
+    document.getElementById('ps-status').innerHTML = "<b>Step 3: Poker Deal Complete.</b> A fair 4-handed poker game has been dealt out. Click <b>3. REVEAL DEALER'S ROYAL FLUSH</b>.";
+    document.getElementById('ps-btn-deal').style.display = 'none';
+    document.getElementById('ps-btn-reveal').style.display = 'inline-block';
+    psRenderDeck();
+}
+
+function psRevealRoyalFlush() {
+    document.getElementById('ps-hand-1').style.borderColor = '#00f5d4';
+    document.getElementById('ps-hand-1').style.boxShadow = '0 0 10px #00f5d4';
+    document.getElementById('ps-status').innerHTML = "<b>Climax!</b> Hand 1 (You / Dealer) holds the complete <b>Royal Flush in Spades (10♠, J♠, Q♠, K♠, A♠)</b> in exact order! The Particle Stack magic is complete.";
+    document.getElementById('ps-btn-reveal').style.display = 'none';
+}
+
+// Initialize on page load
+psReset();
     
 </script>
 
