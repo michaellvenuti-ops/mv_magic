@@ -2360,6 +2360,10 @@ function fwSelectTechnique() {
     document.getElementById('fw-before-strip').innerHTML = '';
     document.getElementById('fw-after-strip').innerHTML = '';
     document.getElementById('fw-after-wrap').style.display = 'none';
+    ['fw-before-strip-label', 'fw-after-strip-label'].forEach(function(id) {
+        var lbl = document.getElementById(id);
+        if (lbl) lbl.innerText = '';
+    });
 }
 
 function fwMakePacketEl(size, label) {
@@ -2395,37 +2399,58 @@ function fwAnimatePackets() {
     container.style.cssText = 'display:flex; gap:10px; align-items:flex-end; min-height:90px; padding:10px; ' +
         'background:rgba(0,0,0,0.3); border-radius:8px; flex-wrap:wrap;';
 
-    var els = t.packetSizes.map(function(size, i) {
-        var el = fwMakePacketEl(size, t.packetLabels[i]);
-        // starting state: invisible and offset upward, with a per-packet delay
-        // baked into the transition so the stagger is handled by CSS, not
-        // chained setTimeouts (the source of the earlier version's glitches).
-        el.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-        el.style.transitionDelay = (i * 0.15) + 's';
-        el.style.transform = 'translateY(-24px)';
-        el.style.opacity = '0';
-        container.appendChild(el);
-        return el;
-    });
+    // Each packet is actually inserted on its own timer (real, visible
+    // staggering rather than relying on CSS transition-delay math), and each
+    // one uses a double-requestAnimationFrame before flipping to its final
+    // state -- the standard bulletproof way to guarantee a browser has
+    // painted the starting state before the transition is asked to run.
+    t.packetSizes.forEach(function(size, i) {
+        setTimeout(function() {
+            var el = fwMakePacketEl(size, t.packetLabels[i]);
+            el.style.transition = 'transform 0.4s ease-out, opacity 0.4s ease-out';
+            el.style.transform = 'translateY(-30px) scale(0.85)';
+            el.style.opacity = '0';
+            container.appendChild(el);
 
-    // Force a reflow before flipping to the final state, so the browser
-    // registers the starting state first and the transition actually fires.
-    void container.offsetWidth;
-
-    els.forEach(function(el) {
-        el.style.transform = 'translateY(0)';
-        el.style.opacity = '1';
+            requestAnimationFrame(function() {
+                requestAnimationFrame(function() {
+                    el.style.transform = 'translateY(0) scale(1)';
+                    el.style.opacity = '1';
+                });
+            });
+        }, i * 220);
     });
+}
+
+function fwGetOrCreateLabel(containerId) {
+    var labelId = containerId + '-label';
+    var label = document.getElementById(labelId);
+    if (!label) {
+        label = document.createElement('div');
+        label.id = labelId;
+        label.style.cssText = 'font-size:0.6rem; color:#00f5d4; min-height:1.2em; margin-top:4px;';
+        var container = document.getElementById(containerId);
+        container.parentNode.insertBefore(label, container.nextSibling);
+    }
+    return label;
 }
 
 function fwRenderMiniStrip(containerId, deckArr) {
     var el = document.getElementById(containerId);
     el.innerHTML = '';
-    el.style.cssText = 'display:flex; gap:1px; height:24px; border-radius:4px; overflow:hidden; border:1px solid #333;';
+    el.style.cssText = 'display:flex; gap:1px; height:24px; border-radius:4px; overflow:hidden; border:1px solid #333; cursor:pointer;';
+    var label = fwGetOrCreateLabel(containerId);
+    label.innerText = 'Hover over a position to inspect it.';
     deckArr.forEach(function(card, i) {
         var cell = document.createElement('div');
         cell.style.cssText = 'flex:1; height:100%; background:repeating-linear-gradient(45deg,#7a1e2b,#7a1e2b 3px,#9c2b3a 3px,#9c2b3a 6px);';
-        cell.title = 'Position ' + (i + 1) + ': ' + card;
+        cell.addEventListener('mouseover', function() {
+            label.innerText = 'Position ' + (i + 1) + ': ' + card;
+            cell.style.outline = '2px solid #fff';
+        });
+        cell.addEventListener('mouseout', function() {
+            cell.style.outline = 'none';
+        });
         el.appendChild(cell);
     });
 }
