@@ -2560,7 +2560,7 @@ function fwAnimateOseTrilogy() {
     var container = document.getElementById('fw-anim-container');
     container.innerHTML = '';
     container.style.cssText = 'position:relative; min-height:220px; padding:10px; ' +
-        'background:rgba(0,0,0,0.3); border-radius:8px; overflow:hidden;';
+        'background:rgba(0,0,0,0.3); border-radius:8px;';
 
     var label = document.createElement('div');
     label.style.cssText = 'position:absolute; left:10px; bottom:8px; right:10px; font-size:0.6rem; color:#00f5d4;';
@@ -2630,25 +2630,30 @@ function fwAnimateOseTrilogy() {
         current = {};
 
         var order = ['1', '2', '3', '4'];
-        var stepY = 22, cardW = 46, cardH = 54;
+        var stepY = 26, cardW = 46, cardH = 54;
         var vs = document.createElement('div');
         vs.id = 'fw-ose-vstack';
-        vs.style.cssText = 'position:absolute; left:50%; top:10px; transform:translateX(-50%); width:90px; ' +
-            'height:' + (stepY * (order.length - 1) + cardH) + 'px; transition: opacity 0.5s ease; opacity:0;';
+        // Fixed pixel offset rather than 50%/translateX -- percentage
+        // centering depends on the container's actual rendered width, which
+        // didn't match what this assumed and pushed the stack off to one
+        // side with clipped labels.
+        vs.style.cssText = 'position:absolute; left:130px; top:16px; width:70px; ' +
+            'height:' + (stepY * (order.length - 1) + cardH + 16) + 'px; transition: opacity 0.5s ease; opacity:0;';
         container.insertBefore(vs, label);
 
         order.forEach(function(num, i) {
+            var lbl = document.createElement('div');
+            lbl.innerText = 'Quarter ' + num;
+            lbl.style.cssText = 'position:absolute; left:0; top:' + (i * stepY) + 'px; width:' + cardW + 'px; ' +
+                'text-align:center; font-size:0.55rem; font-weight:bold; color:#ffb703; white-space:nowrap;';
+            vs.appendChild(lbl);
+
             var card = document.createElement('div');
-            card.style.cssText = 'position:absolute; left:22px; top:' + (i * stepY) + 'px; width:' + cardW + 'px; height:' + cardH + 'px; ' +
+            card.style.cssText = 'position:absolute; left:0; top:' + (i * stepY + 14) + 'px; width:' + cardW + 'px; height:' + cardH + 'px; ' +
                 'border-radius:4px; border:1px solid #3a0d14; ' +
                 'background:repeating-linear-gradient(45deg,#7a1e2b,#7a1e2b 3px,#9c2b3a 3px,#9c2b3a 6px); ' +
                 'z-index:' + (order.length - i) + ';';
             vs.appendChild(card);
-            var lbl = document.createElement('div');
-            lbl.innerText = 'Quarter ' + num;
-            lbl.style.cssText = 'position:absolute; left:0; top:' + (i * stepY + cardH / 2 - 8) + 'px; width:20px; ' +
-                'text-align:right; font-size:0.6rem; font-weight:bold; color:#ffb703; white-space:nowrap;';
-            vs.appendChild(lbl);
         });
 
         requestAnimationFrame(function() { requestAnimationFrame(function() { vs.style.opacity = '1'; }); });
