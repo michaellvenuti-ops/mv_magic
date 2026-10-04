@@ -311,6 +311,7 @@
             <button onclick="showAronsonSpellingDemo()" style="padding: var(--pad-small);">Aronson Spelling Demo</button>
             <button onclick="showPriorCommitment()" style="padding: var(--pad-small);">Prior Commitment</button>
             <button onclick="showDivideAndConquer()" style="padding: var(--pad-small);">Divide and Conquer</button>
+            <button onclick="showEuphOracle()" style="padding: var(--pad-small);">Euph-Oracle</button>
         </div>
     </div>
     
@@ -510,6 +511,63 @@
         <div style="flex:1;">
             <div style="color:var(--gold); font-size:0.5rem; margin-bottom:5px; text-align:center;">TARGET PILE</div>
             <div id="stack-target" style="display:flex; flex-direction:column; gap:2px;"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ============ EUPH-ORACLE ARENA ============ -->
+<div id="eu-arena" style="margin-top:20px; background:#0d0d1a; border:4px solid var(--gold); border-radius:12px; padding:15px; display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="color:var(--gold); font-size:0.7rem; font-weight:bold; text-transform:uppercase;">&#128302; Euph-Oracle</span>
+        <button onclick="document.getElementById('eu-arena').style.display='none'" style="padding:2px 10px; border-color:var(--gold); color:var(--gold);">&times;</button>
+    </div>
+    <div id="eu-desc" style="font-size:0.6rem; color:#aaa; margin-bottom:12px; line-height:1.7; padding:8px; background:rgba(255,183,3,0.06); border-radius:4px; border:1px solid #444;"></div>
+
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+        <button onclick="euSetup()" id="eu-setup-btn" style="border-color:var(--gold); color:var(--gold);">&#8635; Load Setup</button>
+        <button onclick="euReset()" id="eu-reset-btn" style="border-color:#555; color:#888; display:none;">&#8635; Reset</button>
+    </div>
+
+    <div id="eu-status" style="font-size:0.65rem; color:#00f5d4; min-height:1.4em; margin-bottom:10px;"></div>
+
+    <div style="display:flex; gap:14px; flex-wrap:wrap; font-size:0.55rem; color:#aaa; margin-bottom:6px;">
+        <span><span style="display:inline-block; width:10px; height:10px; background:#10e08a; border-radius:2px; vertical-align:middle;"></span> 16th from top</span>
+        <span><span style="display:inline-block; width:10px; height:10px; background:#00A8E8; border-radius:2px; vertical-align:middle;"></span> 16th from bottom</span>
+        <span><span style="display:inline-block; width:10px; height:10px; background:#ff9900; border-radius:2px; vertical-align:middle;"></span> Out-jogged</span>
+        <span><span style="display:inline-block; width:10px; height:10px; background:#00A8E8; border-radius:2px; vertical-align:middle;"></span> In-jogged</span>
+    </div>
+
+    <div id="eu-strip" style="margin-bottom:6px;"></div>
+    <div id="eu-targets-note" style="display:none; font-size:0.6rem; color:#aaa; margin-bottom:14px;"></div>
+
+    <div id="eu-cut-panel" style="display:none; margin-bottom:14px; padding:10px; border:1px dashed #555; border-radius:6px;">
+        <div style="font-size:0.6rem; color:var(--gold); margin-bottom:8px;">Spectator cuts off the top portion (21&ndash;31 cards):</div>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <input id="eu-cut-n" type="number" min="21" max="31" value="26" style="width:60px; padding:4px;">
+            <button onclick="euCut()" style="padding:var(--pad-small); border-color:var(--gold); color:var(--gold);">Cut</button>
+        </div>
+    </div>
+
+    <div id="eu-elim-panels" style="display:none;">
+        <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <div style="flex:1; min-width:260px; padding:10px; background:rgba(0,0,0,0.25); border-radius:8px;">
+                <div style="font-size:0.65rem; color:var(--gold); font-weight:bold; margin-bottom:4px;">
+                    TOP HALF &mdash; watch the FIRST card <span id="eu-top-count" style="float:right; color:#aaa; font-weight:normal;"></span>
+                </div>
+                <div id="eu-top-row" style="display:flex; flex-wrap:wrap; gap:4px; min-height:90px; align-items:center; margin-bottom:8px;"></div>
+                <button onclick="euDealRound('top')" id="eu-top-deal-btn" style="padding:var(--pad-small); border-color:var(--gold); color:var(--gold); margin-bottom:6px;">&#9654; Deal Round 1</button>
+                <div id="eu-top-status" style="font-size:0.58rem; color:#aaa; min-height:2em;"></div>
+                <div id="eu-top-survivor" style="display:none; align-items:center; margin-top:8px;"></div>
+            </div>
+            <div style="flex:1; min-width:260px; padding:10px; background:rgba(0,0,0,0.25); border-radius:8px;">
+                <div style="font-size:0.65rem; color:var(--gold); font-weight:bold; margin-bottom:4px;">
+                    BOTTOM HALF &mdash; watch the LAST card <span id="eu-bottom-count" style="float:right; color:#aaa; font-weight:normal;"></span>
+                </div>
+                <div id="eu-bottom-row" style="display:flex; flex-wrap:wrap; gap:4px; min-height:90px; align-items:center; margin-bottom:8px;"></div>
+                <button onclick="euDealRound('bottom')" id="eu-bottom-deal-btn" style="padding:var(--pad-small); border-color:var(--gold); color:var(--gold); margin-bottom:6px;">&#9654; Deal Round 1</button>
+                <div id="eu-bottom-status" style="font-size:0.58rem; color:#aaa; min-height:2em;"></div>
+                <div id="eu-bottom-survivor" style="display:none; align-items:center; margin-top:8px;"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -8637,6 +8695,231 @@ function psRevealRoyalFlush() {
 
 // Initialize on page load
 psReset();
+
+
+var eoTopRound = 0, eoBottomRound = 0;
+var eoGen = 0;
+ 
+function showEuphOracle() {
+    var arena = document.getElementById('eo-arena');
+    arena.style.display = 'block';
+    arena.scrollIntoView({behavior:'smooth', block:'nearest'});
+    eoReset();
+    document.getElementById('eo-desc').innerHTML =
+        '<strong style="color:var(--gold);">Euph-Oracle:</strong><br>' +
+        'Two cards are secretly noted in advance: the one 16 from the top, and the one 16 from the bottom. ' +
+        'A spectator cuts the deck so each portion holds 16&ndash;31 cards. Repeatedly out/in jog the top portion, ' +
+        'each time eliminating whichever group caught the <em>first</em> card &mdash; after four rounds, one card ' +
+        'remains: the original 16th from the top. A mirrored procedure on the bottom portion &mdash; eliminating ' +
+        'whichever group catches the <em>last</em> card each round &mdash; isolates the original 16th from the bottom. ' +
+        'No dealing, no reversal &mdash; cards are jogged and tucked under the packet, so their order never changes ' +
+        'except by elimination.';
+}
+ 
+function eoBuildOriginal() {
+    var ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    var suits = ['C','D','H','S'];
+    var full = [];
+    ranks.forEach(function(r){ suits.forEach(function(s){ full.push(r + s); }); });
+    full.sort(function(){ return Math.random() - 0.5; });
+    return full.slice(0, 52);
+}
+ 
+function eoSetup() {
+    eoGen++;
+    eoOriginal = eoBuildOriginal();
+    eoN = null;
+    eoTopCard = eoOriginal[15];       // 16th from top (index 15)
+    eoBottomCard = eoOriginal[52 - 16]; // 16th from bottom (index 36)
+ 
+    document.getElementById('eo-indicators').style.display = 'flex';
+    document.getElementById('eo-indicators').innerHTML = 'Noted in advance &mdash; 16th from top: ';
+    document.getElementById('eo-indicators').appendChild(createCardUI(eoTopCard));
+    var mid = document.createElement('span');
+    mid.style.cssText = 'margin:0 10px; color:#aaa;';
+    mid.innerText = '16th from bottom:';
+    document.getElementById('eo-indicators').appendChild(mid);
+    document.getElementById('eo-indicators').appendChild(createCardUI(eoBottomCard));
+ 
+    document.getElementById('eo-setup-btn').style.display = 'none';
+    document.getElementById('eo-reset-btn').style.display = 'inline-block';
+    document.getElementById('eo-cut-panel').style.display = 'block';
+    document.getElementById('eo-status').innerText = 'Setup loaded. Spectator cuts the deck.';
+    logMove('Euph-Oracle: Loaded 52-card setup (indicators at 16 from top and bottom)');
+}
+ 
+function eoCut() {
+    var N = parseInt(document.getElementById('eo-cut-n').value, 10);
+    if (isNaN(N) || N < EO_CUT_MIN || N > EO_CUT_MAX) {
+        document.getElementById('eo-status').innerText =
+            'Cut must leave both portions between 16 and 31 cards (top portion ' + EO_CUT_MIN + '-' + EO_CUT_MAX + ').';
+        return;
+    }
+    eoN = N;
+    eoTopPacket = eoOriginal.slice(0, N);
+    eoBottomPacket = eoOriginal.slice(N);
+    eoTopRound = 0;
+    eoBottomRound = 0;
+ 
+    document.getElementById('eo-cut-panel').style.display = 'none';
+    document.getElementById('eo-top-panel').style.display = 'block';
+    document.getElementById('eo-top-round-btn').style.display = 'inline-block';
+    eoRenderJogRow('eo-top-row', eoTopPacket, true);
+    document.getElementById('eo-status').innerText =
+        'Cut into ' + N + ' (top) and ' + (52 - N) + ' (bottom). Working the top portion first — order makes no difference.';
+    logMove('Euph-Oracle: Cut at ' + N + ' (top=' + N + ', bottom=' + (52-N) + ')');
+}
+ 
+// Renders a packet as an alternating out/in jogged row. `startOut` controls
+// which index (0) is jogged out; index parity alternates from there.
+function eoRenderJogRow(containerId, packet, startOut) {
+    var el = document.getElementById(containerId);
+    el.innerHTML = '';
+    el.style.cssText = 'display:flex; gap:2px; align-items:center; min-height:100px; padding:20px 10px; flex-wrap:wrap;';
+    packet.forEach(function(card, i) {
+        var isOut = startOut ? (i % 2 === 0) : (i % 2 === 1);
+        var wrap = document.createElement('div');
+        wrap.style.cssText = 'transform: translateY(' + (isOut ? '-14px' : '14px') + '); transition: transform 0.4s ease, opacity 0.4s ease;';
+        var ui = createCardUI(card);
+        if (card === eoTopCard || card === eoBottomCard) {
+            ui.style.boxShadow = '0 0 8px #10e08a';
+        }
+        wrap.appendChild(ui);
+        wrap.dataset.out = isOut ? '1' : '0';
+        el.appendChild(wrap);
+    });
+}
+ 
+function eoTopRoundStep() {
+    var startOut = true; // always start by outjogging the first card, per the base procedure
+    var outGroup = [], inGroup = [];
+    eoTopPacket.forEach(function(card, i) {
+        var isOut = startOut ? (i % 2 === 0) : (i % 2 === 1);
+        (isOut ? outGroup : inGroup).push(card);
+    });
+    var firstGoesOut = startOut; // index 0's group
+    var eliminated = firstGoesOut ? outGroup : inGroup;
+    var kept = firstGoesOut ? inGroup : outGroup;
+ 
+    // Visual: show the jog row, then strip the eliminated group away.
+    eoRenderJogRow('eo-top-row', eoTopPacket, startOut);
+    var container = document.getElementById('eo-top-row');
+    var gen = eoGen;
+    setTimeout(function() {
+        if (gen !== eoGen) return;
+        Array.prototype.forEach.call(container.children, function(wrap) {
+            if (wrap.dataset.out === (firstGoesOut ? '1' : '0')) {
+                wrap.style.opacity = '0';
+                wrap.style.transform += ' scale(0.6)';
+            }
+        });
+    }, 500);
+ 
+    setTimeout(function() {
+        if (gen !== eoGen) return;
+        eoTopPacket = kept;
+        eoTopRound++;
+        document.getElementById('eo-status').innerText =
+            'Top round ' + eoTopRound + ': first card went ' + (firstGoesOut ? 'out' : 'in') + ' — eliminated ' +
+            eliminated.length + ', kept ' + kept.length + '.';
+        if (eoTopPacket.length <= 1) {
+            eoRenderJogRow('eo-top-row', eoTopPacket, true);
+            document.getElementById('eo-top-round-btn').style.display = 'none';
+            document.getElementById('eo-top-done').style.display = 'block';
+            var ok = (eoTopPacket[0] === eoTopCard);
+            document.getElementById('eo-top-done').innerHTML =
+                (ok ? 'One card remains — it matches the card noted 16th from the top.' : '&#9888; Mismatch — check the setup.');
+            document.getElementById('eo-bottom-panel').style.display = 'block';
+            document.getElementById('eo-bottom-round-btn').style.display = 'inline-block';
+            eoRenderJogRow('eo-bottom-row', eoBottomPacket, true);
+        } else {
+            eoRenderJogRow('eo-top-row', eoTopPacket, true);
+        }
+    }, 950);
+}
+ 
+function eoBottomRoundStep() {
+    var startOut = true;
+    var outGroup = [], inGroup = [];
+    eoBottomPacket.forEach(function(card, i) {
+        var isOut = startOut ? (i % 2 === 0) : (i % 2 === 1);
+        (isOut ? outGroup : inGroup).push(card);
+    });
+    var n = eoBottomPacket.length;
+    var lastIdx = n - 1;
+    var lastGoesOut = startOut ? (lastIdx % 2 === 0) : (lastIdx % 2 === 1);
+    var eliminated = lastGoesOut ? outGroup : inGroup;
+    var kept = lastGoesOut ? inGroup : outGroup;
+ 
+    eoRenderJogRow('eo-bottom-row', eoBottomPacket, startOut);
+    var container = document.getElementById('eo-bottom-row');
+    var gen = eoGen;
+    setTimeout(function() {
+        if (gen !== eoGen) return;
+        Array.prototype.forEach.call(container.children, function(wrap) {
+            if (wrap.dataset.out === (lastGoesOut ? '1' : '0')) {
+                wrap.style.opacity = '0';
+                wrap.style.transform += ' scale(0.6)';
+            }
+        });
+    }, 500);
+ 
+    setTimeout(function() {
+        if (gen !== eoGen) return;
+        eoBottomPacket = kept;
+        eoBottomRound++;
+        document.getElementById('eo-status').innerText =
+            'Bottom round ' + eoBottomRound + ': last card went ' + (lastGoesOut ? 'out' : 'in') + ' — eliminated ' +
+            eliminated.length + ', kept ' + kept.length + '.';
+        if (eoBottomPacket.length <= 1) {
+            eoRenderJogRow('eo-bottom-row', eoBottomPacket, true);
+            document.getElementById('eo-bottom-round-btn').style.display = 'none';
+            document.getElementById('eo-final-panel').style.display = 'block';
+        } else {
+            eoRenderJogRow('eo-bottom-row', eoBottomPacket, true);
+        }
+    }, 950);
+}
+ 
+function eoFinalReveal() {
+    var topOk = (eoTopPacket[0] === eoTopCard);
+    var bottomOk = (eoBottomPacket[0] === eoBottomCard);
+    var box = document.getElementById('eo-final-result');
+    box.style.display = 'block';
+    box.innerHTML =
+        '<div style="margin-bottom:8px;">' +
+        (topOk ? 'Top elimination survivor matches the 16th-from-top card.' : '&#9888; Top survivor does not match — check the setup.') +
+        '</div><div>' +
+        (bottomOk ? 'Bottom elimination survivor matches the 16th-from-bottom card.' : '&#9888; Bottom survivor does not match — check the setup.') +
+        '</div>';
+ 
+    var cards = document.getElementById('eo-final-cards');
+    cards.innerHTML = '';
+    var a = createCardUI(eoTopPacket[0]); a.style.boxShadow = topOk ? '0 0 10px #10e08a' : '0 0 10px #e05050';
+    var b = createCardUI(eoBottomPacket[0]); b.style.boxShadow = bottomOk ? '0 0 10px #10e08a' : '0 0 10px #e05050';
+    cards.appendChild(a); cards.appendChild(b);
+    document.getElementById('eo-status').innerText = 'Both cards isolated — reveal as predictions, selections, or matching mates.';
+}
+ 
+function eoReset() {
+    eoGen++;
+    eoOriginal = []; eoN = null; eoTopCard = null; eoBottomCard = null;
+    eoTopPacket = []; eoBottomPacket = []; eoTopRound = 0; eoBottomRound = 0;
+    document.getElementById('eo-indicators').style.display = 'none';
+    document.getElementById('eo-cut-panel').style.display = 'none';
+    document.getElementById('eo-top-panel').style.display = 'none';
+    document.getElementById('eo-top-row').innerHTML = '';
+    document.getElementById('eo-top-done').style.display = 'none';
+    document.getElementById('eo-bottom-panel').style.display = 'none';
+    document.getElementById('eo-bottom-row').innerHTML = '';
+    document.getElementById('eo-final-panel').style.display = 'none';
+    document.getElementById('eo-final-result').style.display = 'none';
+    document.getElementById('eo-final-cards').innerHTML = '';
+    document.getElementById('eo-setup-btn').style.display = 'inline-block';
+    document.getElementById('eo-reset-btn').style.display = 'none';
+    document.getElementById('eo-status').innerText = 'Click Load Setup to begin.';
+}
+ 
     
 </script>
 
