@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverse Line Movement Board</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px} h3{font-size:16px;margin:18px 0 2px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.note{color:#d29922;font-size:13px;margin:6px 0}
+.warn{color:#f85149;font-size:13px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:560px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+ul,ol{padding-left:22px} li{margin:2px 0}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.card{border:1px solid #30363d;border-radius:10px;padding:14px 16px;margin:12px 0;background:#121821}
+.card h2{margin-top:0}
+.play{border:1px solid #30363d;border-left:6px solid #58a6ff;border-radius:10px;padding:14px 16px;margin:12px 0;background:#141c2a}
+.play .pick{font-size:20px;font-weight:800;color:#7ee2a0;line-height:1.3}
+.play .legs{font-size:15px;margin-top:4px}
+.play .meta{color:#9da7b3;font-size:13px;margin-top:4px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.badge.win{background:#1f6f3a;color:#fff} .badge.loss{background:#8b1e1e;color:#fff}
+.badge.push{background:#555;color:#fff} .badge.pending{background:#7a5b00;color:#fff}
+.badge.clean{background:#1f6f3a;color:#fff} .badge.risk{background:#7a3b00;color:#fff}
+details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top:20px}
+details summary{cursor:pointer;font-weight:700;font-size:16px}
+</style></head><body>
+<div class='note'>Snapshot of this board at end of day 2026-10-24 (archived daily; live version is the un-dated board page).</div>
+<h1>Reverse Line Movement Board</h1>
+<div class="sub">Latest scan list: rlm-2026-10-24.md · page built 2026-10-24 18:50 ET</div>
+
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan — 2026-10-24</h2>
+<h3>Run: ~12:26 PM ET, Sat Oct 24, 2026 — BASELINE RUN, NO FLAGS</h3>
+<p>Source: ScoresAndOdds public consensus pages (NCAAF + NFL), no sign-in, no bet.</p>
+<p>Cross-checked against ScoresAndOdds odds pages. Covers/VegasInsider not needed</p>
+<p>(ScoresAndOdds did not fail). No gate issue — splits are publicly readable,</p>
+<p>consistent with the public-fade scan&#x27;s validation earlier today. No</p>
+<p><code>rlm-gate-notified</code> file created.</p>
+<p>Why no flags: rlm-state.json was empty before this run, so there was no stored</p>
+<p>median line to measure any move against. Per the scan rules, first sightings</p>
+<p>record silently as a baseline, not as flags. This run stored all 48 games&#x27;</p>
+<p>median spread + median total (96 state keys) with ticket splits, so the next</p>
+<p>hourly run can measure moves &gt;= 1.0 (spread) / &gt;= 1.5 (total) toward the</p>
+<p>minority side.</p>
+<h3>Flags delivered: NONE (silent run)</h3>
+<h3>Baseline coverage</h3>
+<ul>
+<li>35 college games kicking off Oct 24 and not yet started at read time</li>
+</ul>
+<p>  (33 FBS-vs-FBS + 2 FCS-involved: Sacramento State at Ball State,</p>
+<p>  North Dakota State at New Mexico). Nine 12:00 PM ET college games were</p>
+<p>  already started and excluded.</p>
+<ul>
+<li>13 NFL games on the Oct 24 board, none kicking off Oct 24 (12 on Oct 25,</li>
+</ul>
+<p>  1 on Oct 26) — stored as upcoming baselines so Sunday moves can be measured.</p>
+<ul>
+<li>Percentages are % OF BETS (tickets), not % of money.</li>
+</ul>
+<h3>&gt;= 70% ticket sides at baseline (candidates to watch next run — NOT flags)</h3>
+<p>Spread: BYU 79% (vs UCF); Tennessee 78% (vs South Carolina); Iowa 71%</p>
+<p>(vs Minnesota); North Texas 71% (vs Navy); Boise State 75% (vs Washington</p>
+<p>State); Ole Miss 82% (vs Texas); Houston 72% (vs Utah); Browns 72%</p>
+<p>(vs Titans); Chiefs 89% (vs Seahawks, as +3 underdogs).</p>
+<p>Total Over &gt;= 70%: Miami (OH) 79%, Akron 73%, BYU 77%, Bowling Green 77%,</p>
+<p>Hawai&#x27;i 77%, Michigan State 80%, Oklahoma 78%, Texas A&amp;M 75%, San Diego State</p>
+<p>92%, Georgia State 93%, Virginia Tech 70%, Colorado 92%, Syracuse 75%,</p>
+<p>Utah State 95%, North Dakota State 82% (FCS-involved).</p>
+<p>Total Under &gt;= 70%: Baylor 79%, Oregon 75%, Sacramento State 83%</p>
+<p>(FCS-involved), Kansas State 77%, Louisiana 89%, Boise State 78%,</p>
+<p>Vanderbilt 90%, UTSA 86%, Houston 88%.</p>
+<p>NFL totals &gt;= 70%: Giants/Texans Over 77%, Chiefs/Seahawks Over 81%,</p>
+<p>Packers/Lions Under 72%.</p>
+<h3>Data-quality notes (recorded as displayed, not adjusted)</h3>
+<ul>
+<li>Three college total splits sum to more than 100% as displayed:</li>
+</ul>
+<p>  Georgia State 93% Over / 12% Under (105%), Colorado 92% Over / 21% Under</p>
+<p>  (113%), Utah State 95% Over / 15% Under (110%).</p>
+<ul>
+<li>CONFLICT with the 11:47 AM public-fade read: that run recorded 92–95% of</li>
+</ul>
+<p>  bets on the UNDER for San Diego State, Georgia State, Colorado, and</p>
+<p>  Utah State totals; this run shows the same 92–95% figures on the OVER</p>
+<p>  for those four totals. Either the display labels flipped between reads or</p>
+<p>  one read mislabeled the side. The state stores this run&#x27;s figures exactly</p>
+<p>  as displayed, with conflict notes on those four total keys — next run</p>
+<p>  should verify the Over/Under labeling on those four games before</p>
+<p>  flagging any move there.</p>
+<ul>
+<li>Boston College vs Georgia Tech total split 50/50 — no public side.</li>
+</ul>
+<h3>News check</h3>
+<p>Not applicable — no flag met both thresholds (no prior baseline), so no</p>
+<p>news check was required this run.</p>
+<h3>Run: ~1:27 PM ET, Sat Oct 24, 2026 — 1 NEW FLAG</h3>
+<p>Source: ScoresAndOdds public consensus/board (no sign-in, no bet). Covers/VegasInsider not needed. 45 not-yet-started games checked (13 NFL + 32 college). Excluded as started: Akron/Kent State, Baylor/Kansas, Miami (OH)/Central Michigan (all 1:00 PM ET).</p>
+<h3>Flag delivered (NEW — first move meeting both thresholds)</h3>
+<ol>
+<li>Colorado at Oklahoma State — 7:00 PM ET — Total — Public side: Under, 92% of bets (79% of money) — Median: 54.5 → 56.5 (+2.0 toward the minority) — Value side: Over — News check: no news found explaining the move (no injury/starter/lineup headline; weather neutral — overcast, 72°F, wind 8 mph SE at Boone Pickens Stadium).</li>
+</ol>
+<p>Why this counts despite the 12:26 state showing &quot;Over 92%&quot;: this run visually verified the dominant bar is on UNDER for all four disputed totals, matching the 11:47 AM public-fade read (92% Under). The 12:26 &quot;Over&quot; label was a text-extraction flip, now corrected in state for all four totals. Under the corrected labels, Colorado&#x27;s total moved 2.0 points toward the minority Over side while 92% of tickets sat on Under — both RLM thresholds met.</p>
+<h3>Label corrections applied in state (no flag — medians unchanged)</h3>
+<ul>
+<li>Georgia State vs Arkansas State total (7:00 PM ET): dominant side corrected to Under 93% (was &quot;Over 93%&quot;); median 58.5 unchanged.</li>
+<li>San Diego State vs Colorado State total (6:30 PM ET): dominant side corrected to Under 92% (was &quot;Over 92%&quot;); median 59.5 unchanged.</li>
+<li>Utah State vs Texas State total (7:30 PM ET): dominant side corrected to Under 94% (was &quot;Over 95%&quot;); median 60.5 unchanged.</li>
+</ul>
+<h3>Sub-threshold moves recorded in state (none flagged — all under 1.5 total)</h3>
+<p>North Texas/Navy total 60.5 → 61.5; Boise State/Washington State total 52.5 → 53.5; Virginia Tech/Clemson total 50.5 → 49.5; Ole Miss/Texas total 54.5 → 53.5; North Dakota State/New Mexico total 39.5 → 40.5; Bengals/Ravens total 47.5 → 48.5. All other not-yet-started games&#x27; medians unchanged or moved below threshold. No new games. No other game met both RLM thresholds.</p>
+<h3>Run: ~2:26 PM ET, Sat Oct 24, 2026 — NO NEW FLAGS (silent run)</h3>
+<p>Source: ScoresAndOdds public consensus pages (NCAAF + NFL), no sign-in, no bet.</p>
+<p>Covers/VegasInsider not needed (ScoresAndOdds readable). 45 not-yet-started games</p>
+<p>checked (32 college + 13 NFL, Oct 25-26). Excluded as started/final: 12 in-progress</p>
+<p>college games + Patriots/Bears (Oct 22, already played). No new games. No split</p>
+<p>missing for any included game.</p>
+<h3>Flags delivered: NONE (silent run)</h3>
+<p>No game met both RLM thresholds (public &gt;= 70% AND move &gt;= 1.0 spread / &gt;= 1.5</p>
+<p>total toward the minority side vs the 1:27 PM state medians), and no prior flag</p>
+<p>widened 0.5+ further toward the minority. News check not required — no flag</p>
+<p>candidate met both thresholds.</p>
+<h3>Prior flag update (not a new delivery)</h3>
+<ul>
+<li>Colorado at Oklahoma State total (7:00 PM ET): the 1:27 PM RLM flag&#x27;s move</li>
+</ul>
+<p>  fully REVERSED — median 56.5 -&gt; 54.5, back to the pre-flag level, while 92% of</p>
+<p>  bets remain on Under. The flag is no longer live; state baseline reset to</p>
+<p>  54.5. Per alert-only rules this reversal is logged, not delivered.</p>
+<h3>Sub-threshold moves recorded in state (none flagged)</h3>
+<ul>
+<li>Spread, +0.5 toward minority (below the 1.0 threshold): Oregon -10 -&gt; -10.5</li>
+</ul>
+<p>  (public Oregon 56%); Georgia Tech -6 -&gt; -6.5 (public 61%); BYU -7 -&gt; -7.5</p>
+<p>  (public BYU 78% — public side qualifies, move does not); Hawai&#x27;i -3.5 -&gt; -3</p>
+<p>  (public Northern Illinois 63%).</p>
+<ul>
+<li>Spread moves AWAY from minority (not RLM direction): Eastern Michigan/Ohio</li>
+</ul>
+<p>  Ohio -9.5 -&gt; -10.5; Iowa State/Arizona Arizona -11.5 -&gt; -12.5; USC -3 -&gt; -2.5.</p>
+<ul>
+<li>Louisiana-Monroe/Troy spread Troy -12.5 -&gt; -13.5: moved toward the stored</li>
+</ul>
+<p>  minority (Louisiana-Monroe) but the public side itself flipped to</p>
+<p>  Louisiana-Monroe 56% (was Troy 56%), below the 70% bar — no flag.</p>
+<ul>
+<li>Totals, +1.0 toward minority (below the 1.5 threshold): North Dakota State/</li>
+</ul>
+<p>  New Mexico 40.5 -&gt; 39.5 (public Over 82% — public side qualifies, move does</p>
+<p>  not); Ole Miss/Texas 53.5 -&gt; 54.5 (public Under 51%).</p>
+<ul>
+<li>Totals moved toward the public side (not RLM direction): Oklahoma/</li>
+</ul>
+<p>  Mississippi State 48.5 -&gt; 49.5; Virginia Tech/Clemson 49.5 -&gt; 50.5; Boise</p>
+<p>  State/Washington State 53.5 -&gt; 52.5; North Texas/Navy 61.5 -&gt; 60.5;</p>
+<p>  Bengals/Ravens 48.5 -&gt; 47.5 (toward the public Under side, 56% — not RLM</p>
+<p>  direction).</p>
+<ul>
+<li>All other not-yet-started games&#x27; medians unchanged or moved below threshold.</li>
+</ul>
+<p>  &gt;= 70% public sides still live at read time include: BYU spread 78%, Tennessee</p>
+<p>  spread 78%, North Texas spread 74%, Boise State spread 75%, Ole Miss spread</p>
+<p>  82%, Houston spread 72%, Browns spread 72%, Chiefs spread 89%; totals Under</p>
+<p>  &gt;= 70% on Oregon 74%, Sacramento State 83%, Kansas State 76%, Louisiana 89%,</p>
+<p>  Boise State 78%, San Diego State 92%, Georgia State 93%, Utah State 94%,</p>
+<p>  UTSA 86%, Vanderbilt 90%, Houston 88%, Packers 71%; totals Over &gt;= 70% on</p>
+<p>  Bowling Green 77%, Hawai&#x27;i 77%, Michigan State 80%, Oklahoma 79%, Texas A&amp;M</p>
+<p>  76%, Virginia Tech 70%, Syracuse 75%, North Dakota State 82%, Giants 77%,</p>
+<p>  Chiefs 81%.</p>
+<h3>Label check (four disputed totals — visually verified again)</h3>
+<p>Dominant side remains Under on all four, matching the 13:27 correction:</p>
+<p>Colorado/Oklahoma State Under 92%, Georgia State/Arkansas State Under 93%,</p>
+<p>San Diego State/Colorado State Under 92%, Utah State/Texas State Under 94%.</p>
+<p>No label changes this run.</p>
+<h3>News check</h3>
+<p>Not applicable — no flag met both thresholds, so no news check was required</p>
+<p>this run.</p></details>
+<div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
+</body></html>
