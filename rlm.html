@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 06:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 07:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:25 ET (browser read 00:24-00:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
 <ul>
@@ -53,6 +53,37 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Unchanged &gt;= 70% sides, no move, no flag: Chiefs spread 89% (Seahawks -3), Chiefs total Over 80% (42.5), Giants total Over 77% (42.5).</li>
 <li>Share-only changes, no move: Steelers spread now 50/50 (was Saints 51%), Giants spread 52% -&gt; 51%, 49ers spread 65% -&gt; 64% / total Over 60% -&gt; 61%, Broncos total Over 51% -&gt; 52%, Rams spread Raiders 61% -&gt; 62% / total Over 60% -&gt; 61%, Chiefs spread 88% -&gt; 89%, Buccaneers total Over 64% -&gt; 65%.</li>
 <li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.0125. Cowboys vs Eagles entries not seen this run, left as-is.</li>
+</ul>
+<h3>Run 02:23 ET (browser read 02:24-02:40 ET interim, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage (interim, verified): 12 not-started NFL games Sun Oct 25; 0 not-started FBS games (ScoresAndOdds NCAAF week board showed no Oct 25 game). Monday Cowboys vs Eagles excluded by this run&#x27;s read as not a today game; its state entries left untouched at last_seen 00:25 ET.</li>
+<li>DELIVERABLES: NONE CONFIRMED. No RLM flag could be confirmed this run. The three &gt;=70% ticket sides all matched their stored medians, so none met the move threshold: Chiefs spread 89% on Chiefs +3 (stored Seahawks -3, unchanged), Chiefs total Over 80% at 42.5 (stored 42.5, unchanged), Giants total Over 77% at 42.5 (stored 42.5, unchanged). No news check required — no candidate met both thresholds. Run ends silently per the alert-only rule; no message sent.</li>
+<li>Near-threshold, below 70% (interim): Bengals spread 69% on Cincinnati -3, Browns spread 68% on Cleveland -1.5, Colts-Vikings total 68% on Over 41.5.</li>
+<li>INCOMPLETE: the browser task asked for the stored medians in readable form (supplied), continued to the consensus page, then its window closed without delivering the final per-game current-median vs stored comparison. Current medians/splits for the other 9 games were NOT verified this run, so their state entries were left unchanged rather than updated with unconfirmed values. State updated only for the three interim-confirmed markets (last_seen 02:40 ET); backup at rlm-state.json.bak.0240. Next hourly run re-checks all games.</li>
+<li>No gate issue — splits publicly readable on ScoresAndOdds consensus; no rlm-gate-notified file.</li>
+</ul>
+<h3>Run 02:23 ET — FINAL report received (supersedes the &quot;INCOMPLETE&quot; note above)</h3>
+<ul>
+<li>Final browser read ~02:42–02:45 ET (task ran 02:24–02:46 ET), ScoresAndOdds consensus, read-only, no sign-in. All 12 stored NFL games still not started; no stored game missing. 0 not-started FBS games.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. The only &gt;=70% ticket sides — Chiefs spread 89%, Giants total Over 77%, Chiefs total Over 80% — all have medians unchanged from stored (0.0 points), so no flag triggered and no news check was required. Run ends silently per the alert-only rule; no message sent.</li>
+<li>Sub-threshold moves (&gt;=0.5, neither a flag): Browns spread Browns -2.5 -&gt; -1.5 (1.0 pt toward minority Titans, but public Browns only 68% &lt; 70%); Giants spread Texans -10 -&gt; -10.5 (0.5 pt toward minority Texans, public Giants 51% &lt; 70, below 1.0). All other 22 game/markets unchanged vs 01:25 stored medians.</li>
+<li>State fully updated for all 12 games (24 keys) at last_seen 02:45 ET; backup at rlm-state.json.bak.0245. Cowboys vs Eagles (Mon) entries still untouched at last_seen 00:25 ET.</li>
+</ul>
+<h3>Run 03:23 ET (browser read 03:24-03:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage: 12 not-started NFL games Sun Oct 25 (Steelers vs Saints 9:30 AM; Buccaneers vs Panthers, Dolphins vs Jets, Browns vs Titans, Giants vs Texans, 49ers vs Falcons, Colts vs Vikings, Bengals vs Ravens 1:00 PM; Broncos vs Cardinals 4:05 PM; Packers vs Lions, Rams vs Raiders 4:25 PM; Chiefs vs Seahawks 8:20 PM). 0 not-started FBS games: ScoresAndOdds&#x27; NCAAF board listed only Oct 20-24 games. No gate issue - splits publicly readable on ScoresAndOdds consensus; no rlm-gate-notified file. Monday Cowboys vs Eagles excluded (not a today game); its state entries left untouched at last_seen 00:25 ET.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent. No live flags carried over.</li>
+<li>No candidate met both thresholds (public &gt;= 70% AND move &gt;= 1.0 spread / &gt;= 1.5 total toward the minority vs the 02:45 ET stored medians). News check not required - no candidate met both thresholds, so no news-explained moves recorded.</li>
+<li>Unchanged &gt;= 70% sides, no move, no flag: Chiefs spread 89% (Seahawks -3), Chiefs total Over 80% (42.5), Giants total Over 77% (42.5).</li>
+<li>Sub-threshold moves recorded in state (not flagged):</li>
+</ul>
+<p>  - Browns vs Titans spread Browns -1.5 -&gt; -2.0 (0.5 toward public Browns, not RLM direction, below 1.0); total 36.5 -&gt; 37.0 (0.5 toward public Over, not RLM direction, below 1.5). Public Browns 68%, Over 66% - both &lt;70.</p>
+<p>  - Rams vs Raiders spread Rams -3 -&gt; -3.5 (0.5 toward minority Rams, public Raiders 62% &lt;70, below 1.0).</p>
+<p>  - Packers vs Lions total 55.5 -&gt; 55.0 (0.5 toward public Under, not RLM direction, below 1.5).</p>
+<ul>
+<li>Share-only change, no move: Dolphins vs Jets spread Jets 55% -&gt; 54% (medians unchanged, Jets -4.5 / 39.5).</li>
+<li>All other listed games unchanged in median vs 02:45 stored: 49ers vs Falcons (-2.5 / 50.5), Bengals vs Ravens (-3 / 46.5, Bengals 69%), Broncos vs Cardinals (-4.5 / 43.5), Buccaneers vs Panthers (Panthers -3 / 44.5), Colts vs Vikings (Vikings -6.5 / 41.5), Steelers vs Saints (-3 / 43.5, 50/50 spread).</li>
+<li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.0325. No genuinely new game/market appeared.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
