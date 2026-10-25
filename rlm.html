@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 09:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 10:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:25 ET (browser read 00:24-00:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
 <ul>
@@ -102,6 +102,22 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>&gt;= 70% sides, no move, no flag: Chiefs spread 89% (Seahawks -3, unchanged), Bengals spread 70% (Bengals -3, unchanged). No total side reached 70% this hour.</li>
 <li>Note: Rams vs Raiders consensus card labels the spread Rams -3, but the median across the 8 books on the odds board is Rams -3.5 (five books -3.5, three -3), matching the stored -3.5 — not a move.</li>
 <li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.0528. No genuinely new game/market appeared.</li>
+</ul>
+<h3>Run 06:23 ET (browser read 06:24-06:26 ET, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage: 12 not-started NFL games Sun Oct 25 (same slate as 05:28 run). 0 not-started FBS games: ScoresAndOdds&#x27; NCAAF board ran through Oct 24. No gate issue - splits publicly readable on ScoresAndOdds consensus; no rlm-gate-notified file. Monday Cowboys vs Eagles excluded (not a today game); its state entries left untouched.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent. No live flags carried over.</li>
+<li>No candidate met both thresholds (public &gt;= 70% AND move &gt;= 1.0 spread / &gt;= 1.5 total toward the minority vs the 05:28 ET stored medians). News check not required - no candidate met both thresholds, so no news-explained moves recorded. Largest moves this hour were 0.5 points on both spreads and totals.</li>
+<li>&gt;= 70% sides, no move, no flag: Chiefs spread 89% (Seahawks -3, unchanged) - the only side still &gt;= 70%. Bengals spread fell 70% -&gt; 69% (Bengals -3, unchanged), so it is no longer &gt;= 70%. No total side reached 70%.</li>
+<li>Sub-threshold moves recorded in state (not flagged):</li>
+</ul>
+<p>  - Browns vs Titans spread Browns -2.0 -&gt; -1.5 (0.5 toward minority Titans, public Browns 68% &lt; 70, below 1.0); total 37.0 -&gt; 36.5 (0.5 toward minority Under, public Over 54% &lt; 70, below 1.5).</p>
+<p>  - Rams vs Raiders spread Rams -3.5 -&gt; -3 (0.5 toward minority Rams, public Raiders 61% &lt; 70, below 1.0).</p>
+<p>  - Packers vs Lions total 55.0 -&gt; 55.5 (0.5 toward minority Over, public Under 62% &lt; 70, below 1.5).</p>
+<ul>
+<li>Share-only changes, no move: Buccaneers spread Panthers 63% -&gt; 64% / total Over 55% -&gt; 56%; Dolphins spread Jets 53% -&gt; 54%; Colts spread 52% -&gt; 51%; Bengals total Under 54% -&gt; 52%; Giants total Over 64% -&gt; 65%; 49ers total Over 53% -&gt; 54%; Rams total Over 52% -&gt; 53%; Chiefs total Over 64% -&gt; 65%. Steelers total confirmed Over 46% / Under 54% (43.5 unchanged).</li>
+<li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.0626. No genuinely new game/market appeared.</li>
+<li>Caveat on Rams spread: the 05:28 run noted the consensus card labels Rams -3 while the 8-book median was -3.5; this run&#x27;s browser read reported the current value as -3, so the state now stores -3, but it may reflect the card label rather than a true median shift. Next run should confirm against the book-by-book median.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
