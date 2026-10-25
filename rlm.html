@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-24.md · page built 2026-10-25 00:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-24.md · page built 2026-10-25 01:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan — 2026-10-24</h2>
 <h3>Run: ~12:26 PM ET, Sat Oct 24, 2026 — BASELINE RUN, NO FLAGS</h3>
@@ -355,6 +355,24 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>Unchanged &gt;= 70% sides, no qualifying move, no flag: Chiefs spread 88% (Seahawks -3), Chiefs total Over 80% (42.5), Giants total Over 76% (42.5), Houston spread 74% (Utah -6.5) and total Under 88% (57.5), North Dakota State total Over 82% (39.5), Browns spread 71% (see sub-threshold move above).</li>
 <li>State updated for all 15 games seen (30 keys); backup at rlm-state.json.bak.2026. No genuinely new game/market appeared.</li>
+</ul>
+<h3>Run 21:24 ET (browser read 21:24-21:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage: 15 not-started games (13 NFL Oct 25-26 + North Dakota State vs New Mexico 10:00 PM ET + Houston vs Utah 10:15 PM ET, still not started at the 9:24 PM read). Excluded as started/final: all other Oct 24 college games. No gate issue - splits publicly readable; no rlm-gate-notified file.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent.</li>
+<li>Browser-flag rejection (direction check): the browser flagged Browns/Titans spread (71% on Browns, -2.25 -&gt; -2.5), but that move is TOWARD the public Browns side, not toward the minority Titans side - so it is not RLM and was not delivered. No news check required - no candidate met both thresholds in the RLM direction.</li>
+<li>Sub-threshold / non-flag moves recorded in state (not flagged):</li>
+</ul>
+<p>  - Browns/Titans total 37 -&gt; 36.5 (-0.5 toward minority Under, public Over 67% &lt;70, below 1.5).</p>
+<p>  - Giants/Texans spread Texans -10.5 -&gt; -10 (0.5 toward minority Texans, public Giants 56% &lt;70, below 1.0).</p>
+<p>  - Bengals/Ravens spread Bengals -2.75 -&gt; -3 and Buccaneers/Panthers spread Panthers -2.75 -&gt; -3 (0.25 each toward the public side, not RLM direction, below 1.0).</p>
+<p>  - Rams/Raiders spread Rams -3.5 -&gt; -3 (0.5 toward minority Rams, public Raiders 59% &lt;70, below 1.0).</p>
+<p>  - Cowboys/Eagles total 44 -&gt; 43.5 (-0.5 toward public Under, not RLM direction, below 1.5).</p>
+<p>  - Steelers/Saints total 43.75 -&gt; 43.5 (-0.25 toward public Under, not RLM direction, below 1.5).</p>
+<ul>
+<li>Unchanged &gt;= 70% sides, no qualifying move, no flag: Chiefs spread 88% (Seahawks -3), Chiefs total Over 80% (42.5), Giants total Over 76% (42.5), North Dakota State total Over 82% (39.5), Houston spread 74% (Utah -6.5) and total Under 88% (57.5), Browns spread 71% (see rejected flag above).</li>
+<li>Houston/Utah note: the browser listed it as an additional not-started game, but it was already in state (unchanged medians/shares) - not a new game.</li>
+<li>State updated for all 15 games seen (30 keys); backup at rlm-state.json.bak.2124.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
