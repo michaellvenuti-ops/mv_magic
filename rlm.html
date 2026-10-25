@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 12:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 13:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:25 ET (browser read 00:24-00:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
 <ul>
@@ -148,6 +148,21 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>Share-only changes, no move: Giants spread 51% Giants -&gt; 50/50 tie (Texans -10.5 unchanged); Packers spread 63% -&gt; 64% Packers; Packers total Under 61% -&gt; 60%. Bengals spread exact median -2.75 unchanged (card still Bengals -3). All other shares and medians unchanged.</li>
 <li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.0823. No genuinely new game/market appeared.</li>
+</ul>
+<h3>Run 09:23 ET (browser interim read 09:24-09:27 ET, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage: PARTIAL. The first browser task confirmed NFL consensus splits visible for all 12 Oct 25 games, but its window closed before it finalized medians or filtered the NCAAF board to Oct 25; a replacement task was spawned for those two items and its final report never arrived. No gate issue - splits ARE publicly readable on ScoresAndOdds consensus; no rlm-gate-notified file. Steelers vs Saints (9:30 AM ET) kicked off during this run; it was not lopsided in the interim read (51% Steelers / 49% Saints spread; 47% Over / 53% Under) and is excluded from the next run.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent. No live flags carried over.</li>
+<li>No candidate met both thresholds (public &gt;= 70% AND move &gt;= 1.0 spread / &gt;= 1.5 total toward the minority vs the stored medians). News check not required - no candidate met both thresholds, so no news-explained moves recorded.</li>
+<li>&gt;= 70% side, no confirmed move, no flag: Chiefs spread 89% (stored median Seahawks -3; last confirmed median Seahawks -3 at 08:48 via the hung-number board read, unchanged; this run&#x27;s fresh median was never finalized, so no move can be claimed either way). No total side reached 70% in the interim read (Chiefs total 65% Over / 35% Under, unchanged).</li>
+<li>Other interim splits (share-only, below 70%, no flag): Bengals -3 at 69%; Browns -1.5 at 67% (state had 68%, a 1-pt share drift, not recorded as a move).</li>
+<li>FBS Oct 25: NOT confirmed by this run&#x27;s own read (NCAAF filter never completed); every RLM run today plus the hung-number 08:44-08:48 board read found 0 Oct 25 FBS games (board ran through Oct 24). Next run should re-confirm the Oct 25 FBS filter.</li>
+<li>State updated ONLY for the two re-checked Chiefs entries (backup at rlm-state.json.bak.0925); all other entries left at last_seen 08:25 ET because this run did not re-verify their medians. No genuinely new game/market appeared.</li>
+</ul>
+<h3>Addendum to Run 09:23 ET (first browser task final report, 09:24-09:31 ET, delivered after the run closed)</h3>
+<ul>
+<li>CORRECTION to the caveat above: the fresh median read DID complete. Final report: 11 not-started NFL games (Steelers/Saints excluded as kicked off; Oct 26 Cowboys/Eagles excluded as not an Oct 25 game); 0 FBS games Oct 25 (NCAAF board week-based, 56 games dated Oct 20-24, no Oct 25 game).</li>
+<li>Chiefs vs Seahawks (8:20 PM ET): fresh 8-book median spread Chiefs +3 (Seahawks -3) and median total 42.5, spread tickets 89% Chiefs / 11% Seahawks, total 65% Over / 35% Under. Both medians match the stored values exactly - NO move, NO flag. This confirms the run&#x27;s no-deliverable conclusion; the earlier &quot;median not finalized&quot; caveat is withdrawn. State updated for both Chiefs entries (backup rlm-state.json.bak.0931).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
