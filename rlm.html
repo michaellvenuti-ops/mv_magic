@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 15:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-25.md · page built 2026-10-25 16:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:25 ET (browser read 00:24-00:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
 <ul>
@@ -163,6 +163,25 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>CORRECTION to the caveat above: the fresh median read DID complete. Final report: 11 not-started NFL games (Steelers/Saints excluded as kicked off; Oct 26 Cowboys/Eagles excluded as not an Oct 25 game); 0 FBS games Oct 25 (NCAAF board week-based, 56 games dated Oct 20-24, no Oct 25 game).</li>
 <li>Chiefs vs Seahawks (8:20 PM ET): fresh 8-book median spread Chiefs +3 (Seahawks -3) and median total 42.5, spread tickets 89% Chiefs / 11% Seahawks, total 65% Over / 35% Under. Both medians match the stored values exactly - NO move, NO flag. This confirms the run&#x27;s no-deliverable conclusion; the earlier &quot;median not finalized&quot; caveat is withdrawn. State updated for both Chiefs entries (backup rlm-state.json.bak.0931).</li>
+</ul>
+<h3>Run 12:23 ET (browser read 12:24-12:28 ET, ScoresAndOdds consensus, no fallback needed)</h3>
+<ul>
+<li>Coverage: 12 games checked — 11 not-started NFL games Sun Oct 25 (Steelers vs Saints excluded, already live at 9:30 AM ET) plus Cowboys vs Eagles Mon Oct 26 8:15 PM ET from the same board (re-included this run after being left at 00:25 ET by intervening runs). 0 not-started FBS games: no Oct 25 FBS game listed on ScoresAndOdds&#x27; today board. No gate issue — splits publicly readable on ScoresAndOdds consensus for all games except Giants vs Texans (see below); no rlm-gate-notified file.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent. No live flags carried over.</li>
+<li>No candidate met both thresholds (public &gt;= 70% AND move &gt;= 1.0 spread / &gt;= 1.5 total toward the minority vs stored medians). News check not required — no candidate met both thresholds, so no news-explained moves recorded.</li>
+<li>&gt;= 70% side, no move, no flag: Chiefs spread 87% (Seahawks -3, unchanged) — the only side &gt;= 70%. No total side reached 70% (highest: Chiefs Over 66%).</li>
+<li>Sub-threshold moves recorded in state (not flagged):</li>
+</ul>
+<p>  - 49ers vs Falcons total 50.5 -&gt; 49.5 (-1.0 toward minority Under, public Over 57% &lt;70, below 1.5).</p>
+<p>  - Browns vs Titans spread Browns -2 -&gt; -2.5 (0.5 toward public Browns, not RLM direction, below 1.0; consensus card showed -1.5, 8-book median -2.5).</p>
+<p>  - Dolphins vs Jets spread Jets -4 -&gt; -3.5 (0.5 toward minority Dolphins, public Jets 54% &lt;70, below 1.0).</p>
+<p>  - Cowboys vs Eagles total 43.5 -&gt; 44.0 (+0.5 toward minority Over, public Under 58% &lt;70, below 1.5).</p>
+<ul>
+<li>Sub-0.5 median refinements recorded (not moves): Bengals spread exact median -2.75 -&gt; -3 (card -3); Colts spread exact median -6.5 -&gt; -6.75 (4 books -6.5, 4 books -7); Broncos total exact median 43.25 -&gt; 43.5.</li>
+<li>Public-side flips, medians otherwise unchanged: Bengals total Under 52% -&gt; Over 52% (46.5 unchanged); Broncos total Under 55% -&gt; Over 52% (43.5 after refinement).</li>
+<li>Share-only changes, no move: 49ers spread 63% -&gt; 61% / total Over 55% -&gt; 57%; Bengals spread 69% -&gt; 67%; Browns total Over 54% -&gt; 55%; Buccaneers spread Panthers 64% -&gt; 63% / total Over 57% -&gt; 59%; Colts total Over 55% -&gt; 57%; Dolphins total Over 54% -&gt; 55%; Packers spread 64% -&gt; 63% / total Under 60% -&gt; 55%; Rams spread Raiders 61% -&gt; 62% / total Over 54% -&gt; 55%; Chiefs total Over 65% -&gt; 66%; Cowboys spread 68% -&gt; 62% / total Under 60% -&gt; 58%. Broncos spread 61% and all other listed medians unchanged.</li>
+<li>Giants vs Texans splits NOT READABLE this run: ScoresAndOdds consensus page omitted the game, Covers&#x27; matchup Picks tab did not load a split, and the VegasInsider odds URL returned a 404 — no split % estimated. Medians unchanged (Texans -10.5 / 42.5), so the candidate test is unaffected; stored splits (50/50 spread, Over 65% total) carried over unverified in state. Next run should re-check this game&#x27;s splits.</li>
+<li>State updated for all 12 games seen (24 keys); backup at rlm-state.json.bak.1228. Steelers vs Saints and all started Oct 24 games left untouched.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
