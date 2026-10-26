@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-10-25.md · page built 2026-10-26 02:50 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-10-25.md · page built 2026-10-26 03:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Leader-follower scan — 2026-10-25</h2>
 <h3>Run 12:24–12:26 AM ET — hourly check (logging phase, no alerts) — FRESH BASELINE SNAPSHOT</h3>
@@ -422,6 +422,31 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Follow checks: none — no pending candidates awaited a follow check.</li>
 <li>Credited leads: none. No-follows: none. Pack moves: none. Pending candidates carried forward: none.</li>
 <li>All books remain in logging phase (BetMGM, Caesars, DraftKings at 1 lead each in trailing 14 days; none graduated), so no message sent, per the phase rule.</li>
+</ul>
+<h3>23:42 ET Oct 25 hourly check (live browser task report NOT delivered; fallback text fetches of ScoresAndOdds NFL + NCAAF boards, no sign-in)</h3>
+<ul>
+<li>Board-check failure, recorded honestly: the live browser task opened the ScoresAndOdds NFL board, moved to NCAAF, then to the NFL week page, and closed twice with no changed-lines report delivered to this run; a status re-check was accepted as new work and also closed without a report. Per-book verification was therefore NOT possible this hour.</li>
+<li>Fallback evidence (text fetch, book columns unattributed — no per-book conclusion drawn): NFL current-week board shows only Cowboys at Eagles (Mon Oct 26 8:15 PM) not started, every other game FINAL; its visible spread columns are all -4.5 with totals 43.5/44.5 and consensus -4.5 / o43.5 — inside the stored range (spreads -4.5, HardRock -5; totals 43.5–44.5) but not attributable to any book, so NO stored line was changed and no move was verified or ruled out. The week-param board shows Panthers at Packers (Thu Oct 29 8:15 PM) at unattributed -3 / ~47.5, also inside the stored range only. The Nov 1–2 NFL slate was seen but NOT baselined, per precedent.</li>
+<li>No not-started FBS games: the NCAAF board lists only FINAL games dated Oct 20–24.</li>
+<li>Follow checks: none — no pending candidates awaited a follow check (pending list was empty).</li>
+<li>Credited leads: none. No-follows: none. Pack moves: none. Pending candidates carried forward: none.</li>
+<li>All books remain in logging phase (BetMGM, Caesars, DraftKings at 1 lead each in trailing 14 days; none graduated), so no message sent, per the phase rule.</li>
+<li>Action for the next hourly run: re-verify per-book lines for both tracked games via the live board, since this run could not attribute any book column; a lead-sized move in this hour, if one occurred, could not be confirmed or ruled out from the fallback evidence.</li>
+</ul>
+<h3>CORRECTION to the 23:42 ET entry — verified board read 23:24–23:32 ET Oct 25 (final re-check 23:31; live browser report delivered late)</h3>
+<ul>
+<li>The live browser report DID arrive after the 23:42 fallback entry was written. The 23:42 entry&#x27;s &quot;report not delivered&quot; conclusion is superseded by this verified read; the fallback evidence is no longer the record.</li>
+<li>Changed lines (3, all stored only, all below thresholds — no lead candidates, no pack moves):</li>
+</ul>
+<p>  - Cowboys at Eagles | Mon Oct 26 8:15 PM | BetMGM spread -4.5 → -5 (0.5 pt — below the 1.0-pt spread threshold; stored only). Note: BetMGM was seen at -4.5 earlier in the browser session and at -5 on the final 23:31 re-check.</p>
+<p>  - Panthers at Packers | Thu Oct 29 8:15 PM | Caesars total 46.5 → 47 (0.5 pt — below the 1.5-pt total threshold; stored only)</p>
+<p>  - Panthers at Packers | Thu Oct 29 8:15 PM | Kalshi total 46.5 → 47.5 (1.0 pt — below the 1.5-pt total threshold; stored only)</p>
+<ul>
+<li>All other stored lines matched at the final check, including all eight Cowboys at Eagles totals and all five Panthers at Packers spreads. BetMGM, Fanatics, and HardRock still showed no line for Panthers at Packers — no line stored for them, not invented.</li>
+<li>No not-started games on Oct 25: all Oct 25 NFL games FINAL; no Oct 25 FBS game on the NCAAF board (games through Oct 24 only).</li>
+<li>Nov 1–2 NFL slate noted (consensus values only, not per-book lines) but NOT baselined, per precedent.</li>
+<li>Follow checks: none — no pending candidates awaited a follow check. Credited leads: none. No-follows: none. Pack moves: none. Pending candidates carried forward: none.</li>
+<li>All books remain in logging phase (BetMGM, Caesars, DraftKings at 1 lead each in trailing 14 days; none graduated), so no message sent, per the phase rule. State file updated to the 23:31 board values.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
