@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-26.md · page built 2026-10-26 19:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-26.md · page built 2026-10-26 20:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (browser read 00:24-00:25 ET, ScoresAndOdds consensus, no fallback needed)</h3>
 <ul>
@@ -187,6 +187,29 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Medians unchanged vs the 14:25 ET snapshot: spread Cowboys -4.5 (7 books -4.5, 1 book -4, same distribution); total book distribution 1x43.5, 3x44, 4x44.5 -&gt; 8-book median 44.25, unchanged.</li>
 <li>Share changes: none — spread Cowboys 58% unchanged; total Over 56% unchanged.</li>
 <li>State updated for the 1 game seen (2 keys); backup at rlm-state.json.bak.1525. All started games left untouched.</li>
+</ul>
+<h3>Run 16:23 ET (browser interim read 16:24-16:25 ET, ScoresAndOdds consensus, partial only)</h3>
+<ul>
+<li>Coverage: 1 not-started NFL game partially verified — Cowboys vs Eagles Mon Oct 26 8:15 PM ET. FBS board NOT re-verified this run (see gaps below); no gate issue — splits were publicly readable on ScoresAndOdds consensus for the spread; no rlm-gate-notified file.</li>
+<li>DELIVERABLES: NONE. No new flags, no prior flag widened 0.5+ toward the minority. Run ends silently per the alert-only rule; no message sent. No live flags carried over.</li>
+<li>No candidate met both thresholds on verified data. Spread: Cowboys 58% of tickets (&lt;70%) with median unchanged at Cowboys -4.5 — cannot flag. Total: homepage header 44.5 vs stored 8-book median 44.25 is at most a +0.25 move, below the 1.5 threshold in either direction (toward public Over if Over is the public side; toward minority Over if the split flipped to Under) — cannot flag regardless of the unread total split. News check not required — no candidate met both thresholds, so no news-explained moves recorded.</li>
+<li>&gt;= 70% sides: none verified. Highest verified ticket share was 58% (Cowboys spread). Total Over 56% is carried over unverified from the 15:25 ET run.</li>
+<li>Medians vs the 15:25 ET stored values: spread Cowboys -4.5 confirmed (consensus header + homepage -4.5 -108); book-by-book median not completed. Total stored median 44.25 RETAINED — homepage header 44.5 noted as a header/median discrepancy, not used as the baseline.</li>
+<li>Share changes: spread Cowboys 58% unchanged. Total split: not read this run.</li>
+<li>GAPS (recorded, not hidden): the first browser window closed after delivering only an interim status check, and the compact replacement window also closed without a delivered final report — so the total ticket split, the book-by-book total distribution, and today&#x27;s FBS board were not re-verified this run. Prior runs today found 0 not-started FBS games (first listed Oct 27), but this run does not independently confirm that; the next hourly run should re-check the FBS board first.</li>
+<li>State updated for the 1 game partially seen (2 keys); backup at rlm-state.json.bak.1626. All started games left untouched.</li>
+</ul>
+<h3>Run 16:23 ET — CORRECTION (completed browser report, task ran 16:24-16:28 ET, read ~16:26 ET)</h3>
+<ul>
+<li>The completed report arrived after the interim entry above and supersedes its gaps: coverage is now FULLY verified — 1 not-started game total (1 NFL, 0 FBS). FBS: NCAAF Week 9 board begins Oct 27 (Delaware vs Western Kentucky, 7:00 PM); no Oct 26 FBS game found.</li>
+<li>Cowboys vs Eagles (8:15 PM ET), ScoresAndOdds consensus: median spread Cowboys -4.5 (all 8 books -4.5); median total CORRECTED to 44.5 (book totals 44.5 x6, 43.5 FanDuel, 44 HardRock); spread tickets Cowboys 58% / Eagles 42%; total tickets Over 56% / Under 44% (money splits 71% Cowboys / 53% Over were not used).</li>
+<li>DELIVERABLES still NONE — divergence test fails on both markets: tickets below 70% (58% spread, 56% total) and moves below threshold (spread 0.0, total +0.25). No candidate, so no news check was triggered. Run remains silent per the alert-only rule; no message sent.</li>
+<li>State corrected accordingly (total median 44.25 -&gt; 44.5); backup at rlm-state.json.bak.corr1. The replacement browser window&#x27;s report, if it arrives, is redundant and should be reconciled, not double-counted.</li>
+</ul>
+<h3>Run 16:23 ET — RECONCILIATION (replacement window report, ran 16:30-16:33 ET)</h3>
+<ul>
+<li>Confirms the corrected record: Cowboys vs Eagles total tickets Over 56% / Under 44%; book totals match the first report (44.5 at bet365, BetMGM, DraftKings, Caesars, Fanatics, Kalshi; 43.5 FanDuel — HardRock 44 from the first report not re-listed, median 44.5 either way). No FBS game today, Oct 26; first listed future game Delaware at Western Kentucky, Oct 27, 7:00 PM ET.</li>
+<li>Its &gt;=70% examples do NOT create deliverables and do not change the outcome: the NFL moneyline (Cowboys 83%) is not a scanned market (scan covers spread and total only), and the NCAAF spread/total examples (e.g. Florida Atlantic, Minnesota, Mississippi State, New Mexico vs San Jose State) are future Week 9 games, not today&#x27;s not-started games — the scan&#x27;s scope is today&#x27;s games only. No new flags, no state change beyond the correction already recorded. Run remains silent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
