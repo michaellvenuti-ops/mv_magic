@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-10-26.md · page built 2026-10-26 12:50 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-10-26.md · page built 2026-10-26 13:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Leader-follower scan — 2026-10-26</h2>
 <h3>00:39 ET hourly check (run scheduled 00:23 ET)</h3>
@@ -189,6 +189,27 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FBS: no games on Mon Oct 26 (NCAAF Week 9 starts Oct 27; earliest listed game Delaware at Western Kentucky, Oct 27 7 PM) — no other not-started NFL or FBS game for Oct 26 besides Cowboys at Eagles; no new baselines.</li>
 <li>Credited leads: none. Pack moves: 3. No-follows: none (pending candidate not yet judged). Pending candidates: 1 (FanDuel, Panthers at Packers spread, above).</li>
 <li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. No graduated book, no alert sent.</li>
+</ul>
+<h3>09:37 ET hourly check (run scheduled 09:23 ET) — NO VERIFIABLE READ</h3>
+<ul>
+<li>Live browser task (browser-task:6f748f47, read-only, no sign-in) opened ScoresAndOdds&#x27; NFL Week 8 and NCAAF boards and was still working at ~09:30 ET, then its window closed with NO report delivered (same failure mode as the 00:39 ET Oct 26 run).</li>
+<li>Fallback: text fetch of the Week 8 board URL returned glossary text only — the odds comparison table is JS-rendered, so no per-book spread or total was verifiable this run. No line was invented, overwritten, or counted as a change.</li>
+<li>Pending candidate NOT judged: FanDuel, Panthers at Packers spread −3.5 → −4.5 (first seen 08:26 ET, 3 books on −3.5 at first sight). It is neither credited nor logged as no-follow — it stays pending, and the next hourly run&#x27;s follow check decides it (credits only if ≥3 books reach −4.5 or past; otherwise no-follow).</li>
+<li>Stored lines unchanged (Cowboys at Eagles and Panthers at Packers, all 8 books, as of 08:28 ET). FBS: no check verifiable this run.</li>
+<li>Credited leads: none. Pack moves: none verifiable. No-follows: none. Pending candidates: 1 (FanDuel, above — carried over, not re-created).</li>
+<li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. No graduated book, no alert sent.</li>
+</ul>
+<h3>Late correction — browser report delivered after the run closed (read 09:30 ET Oct 26)</h3>
+<ul>
+<li>CORRECTION to the 09:37 ET entry above: the browser task DID complete (browser-task:6f748f47, reads 09:24–09:30 ET, read-only, no sign-in); its report arrived after the run had closed. The &quot;no verifiable read&quot; verdict is superseded by this entry. At ~09:30 ET the window listing showed no open windows, which is why the run closed early — the report itself was delivered late, not missing.</li>
+<li>PENDING CANDIDATE JUDGED — NO-FOLLOW, no credit: FanDuel, Panthers at Packers spread −3.5 → −4.5 (first seen 08:26 ET). Follow test at 09:30 ET: bet365 still −3.5, DraftKings still −3.5, Kalshi still −3.5 — 0 of the 3 required followers reached −4.5 or past. FanDuel earns NO lead credit; the candidate is closed and removed from pending. A move nobody follows is never credited and never alerts.</li>
+<li>Other changes from the 09:30 ET read, all below lead thresholds (spread ≥1.0 / total ≥1.5), stored only, no candidates:</li>
+</ul>
+<p>  - Cowboys at Eagles (kickoff 8:15 PM Mon Oct 26, not started): Caesars total 43.5 → 44 (0.5 pt). All spreads unchanged at −4.5; all other totals unchanged.</p>
+<p>  - Panthers at Packers (Thu Oct 29): BetMGM total 47.5 → 48 and Caesars total 47.5 → 48 (0.5 pt each). All spreads unchanged (FanDuel −4.5 confirmed unchanged).</p>
+<ul>
+<li>No new candidates, no pack moves, no credited leads. Other not-started games listed on the boards (Nov 1–2 NFL games; Week 9 FBS games Oct 27–31) were noted by name/date only — no new baselines, per precedent.</li>
+<li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. Pending candidates: none. No graduated book, no alert sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
