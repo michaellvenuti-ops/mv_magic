@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-10-26.md · page built 2026-10-26 13:50 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-10-26.md · page built 2026-10-26 14:45 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Leader-follower scan — 2026-10-26</h2>
 <h3>00:39 ET hourly check (run scheduled 00:23 ET)</h3>
@@ -210,6 +210,27 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>No new candidates, no pack moves, no credited leads. Other not-started games listed on the boards (Nov 1–2 NFL games; Week 9 FBS games Oct 27–31) were noted by name/date only — no new baselines, per precedent.</li>
 <li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. Pending candidates: none. No graduated book, no alert sent.</li>
+</ul>
+<h3>10:36 ET hourly check (run scheduled 10:23 ET) — NO VERIFIABLE READ</h3>
+<ul>
+<li>Live browser task (browser-task:f02076fa, read-only, no sign-in) progressed through ScoresAndOdds (home → /nfl → /nfl/odds?week=2026-reg-8, tab t3) and was still working at ~10:34 ET, then its window closed with NO report delivered (same failure mode as the 00:39 and 09:37 ET Oct 26 runs).</li>
+<li>Fallback: text fetch of the Week 8 board URL returned glossary text only — the odds comparison table is JS-rendered, so no per-book spread or total was verifiable this run. No line was invented, overwritten, or counted as a change.</li>
+<li>If the browser task&#x27;s report arrives late (as it did for the 00:39 and 09:37 runs), the next hourly run should apply it as a correction to this entry and to state.</li>
+<li>Stored lines unchanged (Cowboys at Eagles and Panthers at Packers, all 8 books, as of the verified 09:30 ET read). FBS: no check verifiable this run.</li>
+<li>Credited leads: none. Pack moves: none verifiable. No-follows: none. Pending candidates: none (was empty, stays empty).</li>
+<li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. No graduated book, no alert sent.</li>
+</ul>
+<h3>Late correction — browser report delivered after the run closed (read 10:32 ET Oct 26)</h3>
+<ul>
+<li>CORRECTION to the 10:36 ET entry above: the browser task DID complete (browser-task:f02076fa, reads 10:29–10:32 ET, read-only, no sign-in); its report arrived after the run had closed. The &quot;no verifiable read&quot; verdict is superseded by this entry.</li>
+<li>Changes, all below lead thresholds (spread ≥1.0 / total ≥1.5), stored only, no candidates:</li>
+</ul>
+<p>  - Panthers at Packers (Thu Oct 29): BetMGM total 48 → 47.5 and Caesars total 48 → 47.5 (0.5 pt each; both reverse the 09:30 ET move from 47.5 to 48). No spread changes; all other books unchanged.</p>
+<p>  - Cowboys at Eagles (kickoff 8:15 PM Mon Oct 26, not started): NO spread or total change at any of the 8 books.</p>
+<ul>
+<li>Both games still listed as not started (no FINAL label). Other not-started games listed on the boards (Nov 1–2 NFL games; Week 9 FBS games Oct 27–31) were noted by name/date only — no new baselines, per precedent.</li>
+<li>No new candidates, no pack moves, no credited leads. Pending candidates: none.</li>
+<li>Lead counts unchanged: BetMGM, Caesars, DraftKings 1 lead each (Oct 24); all books remain in logging phase. No graduated book, no alert sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
