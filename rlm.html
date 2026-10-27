@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-27.md · page built 2026-10-27 13:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-27.md · page built 2026-10-27 14:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (browser read 00:24-00:29 ET, ScoresAndOdds medians / Covers consensus fallback)</h3>
 <ul>
@@ -103,6 +103,24 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Source note: ScoresAndOdds consensus tried first but did not list these Oct 27 games (its first listed game was Oct 29), so medians are ScoresAndOdds board panels and ticket splits are Covers matchup consensus per the fallback order (Delaware matchup 379247, Sam Houston matchup 378458). VegasInsider not needed. No gate issue — a readable splits source existed; no rlm-gate-notified file.</li>
 <li>DELIVERABLES: NONE. All 4 panel medians unchanged from the 08:26 ET baseline (moves 0.0), and no majority reached 70%: Delaware spread Delaware -1.5 / total 57.5 (WKU 67% -&gt; 68%, Over 54% -&gt; 53%); Missouri State spread panel median -5 / total 50.5 (Missouri State 69% -&gt; 68%, Over 57% unchanged). No candidate met both RLM conditions, so no news check was triggered and no flag was delivered.</li>
 <li>State updated (4 keys refreshed); backup at rlm-state.json.bak.0927. Run ends silently per the alert-only rule; no message sent.</li>
+</ul>
+<h3>10:39 AM ET run (hourly)</h3>
+<ul>
+<li>Games checked (only unstarted today): Delaware vs Western Kentucky (7:00 PM ET), Sam Houston vs Missouri State (8:00 PM ET). No NFL games today.</li>
+<li>Delaware vs WKU | spread: Delaware -1.5 -&gt; WKU -1.5 (3.0 move TOWARD public WKU, 67% &lt;70%) - not RLM. Covers consensus 33%/67%, CFN consensus WKU -1.5.</li>
+<li>Delaware vs WKU | total: ScoresAndOdds board still 57.5 (move 0.0); other previews show 56.5 (-1.0 toward minority Under, public Over 53% &lt;70%, below 1.5) - no flag either way.</li>
+<li>Sam Houston vs Missouri State | spread: -5 -&gt; -5.5 (0.5 toward PUBLIC Missouri State, 68% &lt;70%, below 1.0) - not RLM. Covers consensus 32%/68%.</li>
+<li>Sam Houston vs Missouri State | total: book totals straddle 50.5-51.5, stored 50.5 kept; at most +1.0, below 1.5, public Over 57% &lt;70% - not flagged.</li>
+<li>News check: no new starter-out news today for either game (Delaware QB Minicucci back since Oct 20; Missouri State injury list known since Oct 23; Sam Houston WR Maxwell out for season reported before today). No threshold move toward a minority side exists, so no news-explained exclusion was needed.</li>
+<li>DELIVERABLES: none. Run silent per alert-only rule.</li>
+<li>Note: the spawned browser task visited ScoresAndOdds + Covers but its result message was never delivered into this run; the check was completed via direct text fetches of the same public pages (ScoresAndOdds board, Covers consensus, Covers SHSU/MOSU matchup).</li>
+</ul>
+<h3>Correction from late browser-task result (observed 10:24-10:32 AM ET, delivered after the 10:39 run closed)</h3>
+<ul>
+<li>Delaware vs WKU spread median is Delaware -1 (ScoresAndOdds 7-book median), NOT WKU -1.5: the -1.5 figures were Covers/CFN consensus lines. True move vs stored Delaware -1.5 is 0.5 toward public WKU (67% &lt;70%, below 1.0) - still not RLM.</li>
+<li>Sam Houston vs Missouri State spread median is Missouri State -5, UNCHANGED (the -5.5 was the Covers matchup line, not the median). Total splits verified: Delaware/WKU Over 52%, Sam Houston/Missouri State Over 59% (replacing carried-over 53%/57%).</li>
+<li>News per browser task: no move-explaining news for either game; benign kickoff weather; only routine Oct 8-21 questionable/out listings.</li>
+<li>Conclusion unchanged: DELIVERABLES none. State corrected above.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
