@@ -1,0 +1,747 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hung Number Board</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px} h3{font-size:16px;margin:18px 0 2px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.note{color:#d29922;font-size:13px;margin:6px 0}
+.warn{color:#f85149;font-size:13px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:560px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+ul,ol{padding-left:22px} li{margin:2px 0}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.card{border:1px solid #30363d;border-radius:10px;padding:14px 16px;margin:12px 0;background:#121821}
+.card h2{margin-top:0}
+.play{border:1px solid #30363d;border-left:6px solid #58a6ff;border-radius:10px;padding:14px 16px;margin:12px 0;background:#141c2a}
+.play .pick{font-size:20px;font-weight:800;color:#7ee2a0;line-height:1.3}
+.play .legs{font-size:15px;margin-top:4px}
+.play .meta{color:#9da7b3;font-size:13px;margin-top:4px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.badge.win{background:#1f6f3a;color:#fff} .badge.loss{background:#8b1e1e;color:#fff}
+.badge.push{background:#555;color:#fff} .badge.pending{background:#7a5b00;color:#fff}
+.badge.clean{background:#1f6f3a;color:#fff} .badge.risk{background:#7a3b00;color:#fff}
+details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top:20px}
+details summary{cursor:pointer;font-weight:700;font-size:16px}
+</style></head><body>
+<div class='note'>Snapshot of this board at end of day 2026-10-27 (archived daily; live version is the un-dated board page).</div>
+<h1>Hung Number Board</h1>
+<div class="sub">Latest scan list: hung-number-2026-10-26.md · page built 2026-10-27 03:44 ET</div>
+
+<div class='card'><h2>Performance ($100 unit)</h2><p><b>10-13-0</b> · <b>$-390.90</b> · 23 graded items · last graded 2026-10-25</p><p class='sub'>Value side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Top plays</h2><div class='play'><div class='pick'>Browns favorite at -1.5 (laying 0.25 points fewer than consensus -1.75)</div><div class='legs'>Browns vs. Titans | FanDuel | spread · divergence 0.25 pts vs median None</div></div><div class='play'><div class='pick'>Western Kentucky +1 at BetMGM (2.5 points better than consensus Western Kentucky -1.5)</div><div class='legs'>Delaware vs. Western Kentucky | BetMGM | spread · divergence 2.5 pts vs median None</div></div><div class='play'><div class='pick'>Western Kentucky +1 at Fanatics (2.5 points better than consensus Western Kentucky -1.5)</div><div class='legs'>Delaware vs. Western Kentucky | Fanatics | spread · divergence 2.5 pts vs median None</div></div><div class='play'><div class='pick'>Florida +12.5 (1.0 point more than consensus +11.5)</div><div class='legs'>Florida vs. Georgia | Hard Rock | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>USC +7.5 at Hard Rock (1.0 point more than consensus +6.5)</div><div class='legs'>Ohio State vs. USC | Hard Rock | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>Over 57 at Fanatics (1.5 points below consensus total 58.5)</div><div class='legs'>Oregon State vs. Fresno State | Fanatics | total · divergence 0.0 pts vs median None</div></div><div class='play'><div class='pick'>Oklahoma -4.5 at FanDuel (laying 1.0 point fewer than consensus -5.5)</div><div class='legs'>South Carolina vs. Oklahoma | FanDuel | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>Louisville -21.5 at FanDuel (laying 1.0 point fewer than consensus -22.5)</div><div class='legs'>Stanford vs. Louisville | FanDuel | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>Boise State -10.5 at Fanatics (laying 1.0 point fewer than consensus -11.5)</div><div class='legs'>Texas State vs. Boise State | Fanatics | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>UTEP at +25.5 (1.0 point more than consensus +24.5)</div><div class='legs'>UTEP vs. North Dakota State | DraftKings | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>UTEP at +25.5 (1.0 point more than consensus +24.5, at flag time)</div><div class='legs'>UTEP vs. North Dakota State | Fanatics | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>Washington +9.5 (1.0 point more than consensus +8.5)</div><div class='legs'>Washington vs. Nebraska | bet365 | spread · divergence 0.0 pts vs median None</div></div><div class='play'><div class='pick'>Northern Illinois +24.5 at FanDuel (1.0 point more than consensus +23.5)</div><div class='legs'>Northern Illinois vs. UNLV | FanDuel | spread · divergence 1.0 pts vs median None</div></div><div class='play'><div class='pick'>Indiana -19.5 at bet365 (laying 1.0 point fewer than consensus -20.5)</div><div class='legs'>Minnesota vs. Indiana | bet365 | spread · divergence 1.0 pts vs median None</div></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Ole Miss at Texas | HardRock | ML Ole Miss +260</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Indiana at Michigan | HardRock | ML Indiana -250</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Michigan State at UCLA | DraftKings | spread Michigan State +15.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Pittsburgh at Miami | Fanatics | total Over 49</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Colorado at Oklahoma State | Fanatics | total Under 56</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Rice at Florida Atlantic | Fanatics | spread Florida Atlantic -8.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>San Jose State at Nevada | Fanatics | spread San Jose State +6.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Baylor at Kansas | DraftKings | spread Baylor +1.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Baylor at Kansas | Caesars | spread Baylor +1.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Syracuse at North Carolina | FanDuel | spread North Carolina -8.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Iowa State at Arizona | FanDuel | spread Arizona -10.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Louisiana-Monroe at Troy | FanDuel | spread Troy -12.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Louisiana-Monroe at Troy | Fanatics | spread Troy -12.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Syracuse at North Carolina | bet365 | spread North Carolina -8.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>USC at Wisconsin | BetMGM | total Over 47.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Syracuse at North Carolina | Fanatics | total Over 49</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Eastern Michigan at Ohio | FanDuel | spread Ohio -9.5</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Eastern Michigan at Ohio | Fanatics | spread Ohio -10</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Colorado at Oklahoma State | BetMGM | spread Oklahoma State -12.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>San Diego State at Colorado State | Fanatics | total Under 59</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr><tr><td>Iowa State at Arizona | BetMGM | spread Arizona -11.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Iowa State at Arizona | FanDuel | spread Arizona -11.5</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Browns vs. Titans | FanDuel | spread</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Delaware vs. Western Kentucky | BetMGM | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Delaware vs. Western Kentucky | Fanatics | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Florida vs. Georgia | Hard Rock | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Ohio State vs. USC | Hard Rock | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Oregon State vs. Fresno State | Fanatics | total</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>South Carolina vs. Oklahoma | FanDuel | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Stanford vs. Louisville | FanDuel | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Texas State vs. Boise State | Fanatics | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>UTEP vs. North Dakota State | DraftKings | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>UTEP vs. North Dakota State | Fanatics | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Washington vs. Nebraska | bet365 | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Northern Illinois vs. UNLV | FanDuel | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr><tr><td>Minnesota vs. Indiana | bet365 | spread</td><td><span class='badge pending'>PENDING</span></td><td>—</td></tr></table></div><details><summary>Full scan log</summary><h2>Hung-number scan — 2026-10-26</h2>
+<h3>00:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~12:45 AM ET via ScoresAndOdds public boards, BOARD view, no sign-in. One live browser task (12:44–12:47 AM ET, measured) plus an independent text fetch of the NFL board in the same run; both agree.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: 0 games. The Oct 26 combined board showed no NCAAF section, and the NCAAF odds board ran through Oct 24 games (ending 10/24 10:15 PM). No Oct 26 FBS or added game was listed.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book except Hard Rock -5. Median -4.5. Largest divergence: Hard Rock 0.5 points — below the 1.0-point flag threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Kalshi) to 44.5 (FanDuel), rest 44. Median 44. Largest divergence: 0.5 points — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, FanDuel, Hard Rock), -235 (BetMGM), -218 (DraftKings), -225 (Fanatics). Median implied probability ~69.7% (-230). Largest divergence: DraftKings -218, ~1.1 implied-probability points below median — below the 5-point threshold. Eagles: +185/+190/+180/+190/+190/+190/+185, median ~34.5% (+190); largest divergence ~1.2 points, also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread/total medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>01:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~1:46 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:cb606f3e-9c7f-59b0-8c27-99742c8cbb16), still pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (see below). Prior runs found no Oct 26 FBS/added game on the board (slate ended Oct 24, 10:15 PM Houston vs. Utah); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book except Hard Rock -5. Median -4.5. Largest divergence: Hard Rock 0.5 points — below the 1.0-point flag threshold. No key-number (3 or 7) middle pairing (divergence does not span 3 or 7).</li>
+<li>Total: 43.5 at every book except FanDuel 44.5. Median 43.5. Largest divergence: FanDuel 1.0 point — below the 1.5-point threshold. (Shift vs the 00:44 run, when the median was 44: the board has moved to 43.5 everywhere except FanDuel; the divergence is unchanged in size and still below threshold.)</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, FanDuel, Hard Rock), -235 (BetMGM), -218 (DraftKings), -225 (Fanatics). Median implied probability 69.7% (-230). Largest divergence: DraftKings -218, 1.14 implied-probability points below median — below the 5-point threshold. Eagles: +185 (bet365, Fanatics), +190 (BetMGM, Caesars, FanDuel, Hard Rock), +180 (DraftKings). Median implied probability 34.48% (+190); largest divergence: DraftKings +180, 1.23 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread median, 1.0 point of the total median, and ~1.2 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (Note the recurring Fanatics-column flip artifacts on out-of-scope games in the text fetch — e.g., Fanatics showing the opposite side&#x27;s number on several finished Oct 25 rows — were not screened, as those games are out of scope.)</p>
+<h4>NCAAF text-fetch note (same run, ~1:46 AM ET)</h4>
+<p>A direct text fetch of the ScoresAndOdds NCAAF board (scoresandodds.com/ncaaf/odds) again rendered team names only — no per-book odds values and no game dates/times — so no NCAAF median or flag math could be computed from it, and no Oct 26 ET kickoff could be confirmed from it. The matchups listed match the following-week slates seen in earlier runs (e.g., Middle Tennessee vs. FIU, Louisiana-Monroe vs. Troy, Eastern Michigan vs. Ohio, Sacramento State vs. Ball State, North Dakota State vs. New Mexico, Houston vs. Utah), not a confirmed Oct 26 ET slate. NCAAF coverage therefore rests on the pending live browser task&#x27;s report; no NCAAF flag is claimed or delivered from the text fetch.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 1:44–1:47 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch exactly: spread Cowboys -4.5 everywhere except Hard Rock -5 (median -4.5, max divergence 0.5); total 43.5 everywhere except FanDuel 44.5 (median 43.5, max divergence 1.0); moneyline Cowboys -230 median (69.7% implied; DraftKings -218 largest divergence, 1.1 pts) and Eagles +190 median (34.5%; DraftKings +180 largest divergence, 1.2 pts). Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The NCAAF board shown ran 10/20–10/24, with no 10/25, 10/26, or 10/27 entries found — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s missing odds/dates were a rendering limitation, not a board problem.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards. Opinionated check: with a single in-scope game, no book-wide pattern can be established; within this game the divergences are isolated (Hard Rock on spread only, FanDuel on total only), not systematic opinionated pricing.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>02:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~2:48 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:48cd1c50-feb3-5a25-9749-403026114df6), still pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (see below). Prior runs found no Oct 26 FBS/added game on the board (slate ended Oct 24, 10:15 PM Houston vs. Utah); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book except Hard Rock -5. Median -4.5. Largest divergence: Hard Rock 0.5 points — below the 1.0-point flag threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 at every book except FanDuel 44.5. Median 43.5. Largest divergence: FanDuel 1.0 point — below the 1.5-point threshold. (Unchanged from the 01:44 run.)</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, Hard Rock), -225 (BetMGM, Fanatics), -218 (DraftKings), -220 (FanDuel). Median implied probability 69.2% (-225). Largest divergence: DraftKings -218, 0.7 implied-probability points below median — below the 5-point threshold. (Small shift vs the 01:44 run, when BetMGM was -235 and FanDuel -230 and the median sat at -230; the divergence size is unchanged in substance and still far below threshold.) Eagles: +185 (bet365, BetMGM, Fanatics), +180 (DraftKings), +190 (Caesars, Hard Rock), +184 (FanDuel). Median implied probability 35.1% (+185); largest divergence: DraftKings +180, 0.6 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread median, 1.0 point of the total median, and ~0.7 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (The recurring Fanatics-column flip artifacts on out-of-scope games in the text fetch — e.g., Fanatics showing the opposite side&#x27;s number on several finished Oct 25 rows — were not screened, as those games are out of scope.)</p>
+<h4>NCAAF text-fetch note (same run, ~2:48 AM ET)</h4>
+<p>A direct text fetch of the ScoresAndOdds NCAAF board (scoresandodds.com/ncaaf/odds) again rendered team names only — no per-book odds values and no game dates/times — so no NCAAF median or flag math could be computed from it, and no Oct 26 ET kickoff could be confirmed from it. The matchups listed match the following-week slates seen in earlier runs (e.g., Middle Tennessee vs. FIU, Louisiana-Monroe vs. Troy, Eastern Michigan vs. Ohio, Sacramento State vs. Ball State, North Dakota State vs. New Mexico, Houston vs. Utah), not a confirmed Oct 26 ET slate. NCAAF coverage therefore rests on the pending live browser task&#x27;s report; no NCAAF flag is claimed or delivered from the text fetch.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 2:44–2:47 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch exactly: spread Cowboys -4.5 everywhere except Hard Rock -5 (median -4.5, max divergence 0.5); total 43.5 everywhere except FanDuel 44.5 (median 43.5, max divergence 1.0); moneyline Cowboys -230 to -218 (median implied ~69.2%) and Eagles +180 to +190 (median implied ~35.1%), divergences ~1 point or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The NCAAF board shown ran 10/20–10/24, with no 10/26 or 10/27 entries found — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s missing odds/dates were a rendering limitation, not a board problem. Limitation noted: the NCAAF board&#x27;s per-book odds cells did not render in the browser view obtained (blank even after reload and scroll attempt); no NCAAF lines were invented from it, and it does not change the result since no Oct 26 NCAAF game was listed in any case.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on the NFL board. Opinionated check: with a single in-scope game, no book-wide pattern can be established; within this game the divergences are isolated (Hard Rock on spread only, FanDuel on total only), not systematic opinionated pricing.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>03:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~3:48 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:6eaa4057-8075-5ad7-897d-670eb947dd3c), still pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (see below). Prior runs found no Oct 26 FBS/added game on the board (slate ended Oct 24, 10:15 PM Houston vs. Utah); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book except Hard Rock -5. Median -4.5. Largest divergence: Hard Rock 0.5 points — below the 1.0-point flag threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 at every book except FanDuel 44.5. Median 43.5. Largest divergence: FanDuel 1.0 point — below the 1.5-point threshold. (Unchanged from the 01:44 and 02:44 runs.)</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, Hard Rock), -225 (BetMGM, Fanatics), -218 (DraftKings), -220 (FanDuel). Median implied probability 69.2% (-225). Largest divergence: DraftKings -218, 0.7 implied-probability points below median — below the 5-point threshold. Eagles: +185 (bet365, BetMGM, Fanatics), +180 (DraftKings), +190 (Caesars, Hard Rock), +184 (FanDuel). Median implied probability 35.1% (+185); largest divergence: DraftKings +180, 0.6 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread median, 1.0 point of the total median, and ~0.7 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (The recurring Fanatics-column flip artifacts on out-of-scope games in the text fetch — e.g., Fanatics showing the opposite side&#x27;s number on several later-week rows — were not screened, as those games are out of scope.)</p>
+<h4>NCAAF text-fetch note (same run, ~3:48 AM ET)</h4>
+<p>A direct text fetch of the ScoresAndOdds NCAAF board (scoresandodds.com/ncaaf/odds) again rendered glossary text only — no per-book odds values, team rows, or game dates/times — so no NCAAF median or flag math could be computed from it, and no Oct 26 ET kickoff could be confirmed from it. NCAAF coverage therefore rests on the pending live browser task&#x27;s report; no NCAAF flag is claimed or delivered from the text fetch.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 3:44–3:47 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened. (Note: the report&#x27;s own time estimate was 3:44–3:46 AM ET; the runtime-measured window 3:44–3:47 AM ET is used here.)</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only — the only &quot;10/26&quot; entry on the NFL board. Per-book lines match the text fetch exactly: spread Cowboys -4.5 everywhere except Hard Rock -5 (median -4.5, max divergence 0.5); total 43.5 everywhere except FanDuel 44.5 (median 43.5, max divergence 1.0); moneyline Cowboys -230 to -218 (median -225, 69.2% implied; DraftKings -218 largest divergence, 0.7 pts) and Eagles +180 to +190 (median +185, 35.1%; DraftKings +180 largest divergence, 0.6 pts). Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. A &quot;10/26&quot; search/filter on the NCAAF board returned nothing; the board began with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM; Sam Houston vs. Missouri State, 10/27 8:00 PM) and ran through 10/31 — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s missing odds rows were a rendering limitation, not a board problem.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards. Opinionated check: with a single in-scope game, no book-wide pattern can be established; within this game the divergences are isolated (Hard Rock on spread only, FanDuel on total only), not systematic opinionated pricing.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>04:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~4:45 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:fe7ba242-5049-5f4c-bc54-8b64b8613ffd), still pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (see below). Prior runs found no Oct 26 FBS/added game on the board (the 03:44 run&#x27;s live browser check found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book except Hard Rock -5. Median -4.5. Largest divergence: Hard Rock 0.5 points — below the 1.0-point flag threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 at every book except BetMGM 44 and FanDuel 44.5. Median 43.5. Largest divergence: FanDuel 1.0 point — below the 1.5-point threshold. (BetMGM moved to 44 since the 03:44 run, when it showed 43.5; still below threshold.)</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, Hard Rock), -225 (BetMGM, Fanatics), -218 (DraftKings), -220 (FanDuel). Median implied probability 69.2% (-225). Largest divergence: DraftKings -218, 0.7 implied-probability points below median — below the 5-point threshold. Eagles: +185 (bet365, Fanatics), +188 (BetMGM), +180 (DraftKings), +190 (Caesars, Hard Rock), +184 (FanDuel). Median implied probability 35.1% (+185); largest divergence: DraftKings +180, 0.6 points, and Caesars/Hard Rock +190, 0.6 points — also below threshold. (Small shift vs the 03:44 run: BetMGM Eagles moved +185 to +188; divergence size unchanged in substance.)</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread median, 1.0 point of the total median, and ~0.7 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (The recurring Fanatics-column flip artifacts on out-of-scope later-week rows in the text fetch were not screened, as those games are out of scope.)</p>
+<h4>NCAAF text-fetch note (same run, ~4:45 AM ET)</h4>
+<p>A direct text fetch of the ScoresAndOdds NCAAF board (scoresandodds.com/ncaaf/odds) again rendered glossary text only — no per-book odds values, team rows, or game dates/times — so no NCAAF median or flag math could be computed from it, and no Oct 26 ET kickoff could be confirmed from it. NCAAF coverage therefore rests on the pending live browser task&#x27;s report; no NCAAF flag is claimed or delivered from the text fetch.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 4:44–4:46 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch exactly: spread Cowboys -4.5 everywhere except Hard Rock -5 (median -4.5, max divergence 0.5); total 43.5 everywhere except BetMGM 44 and FanDuel 44.5 (median 43.5, max divergence 1.0); moneyline Cowboys -230 to -218 (median implied ~69.2%) and Eagles +180 to +190 (median implied ~35.1%), divergences ~0.7 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The board&#x27;s listings begin Oct 27 — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s missing odds rows were a rendering limitation, not a board problem.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards. Opinionated check: with a single in-scope game, no book-wide pattern can be established; within this game the divergences are isolated (Hard Rock on spread only, FanDuel on total only), not systematic opinionated pricing.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>05:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~5:45 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:c71e70a3-4325-5cec-bb86-b723bd43a218), still pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (see below). Prior runs found no Oct 26 FBS/added game on the board (the 03:44 and 04:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book, including Hard Rock (which showed -5 in the 02:44–04:44 runs — it has converged to consensus since). Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 44.5 (bet365, FanDuel), 44 (BetMGM, Hard Rock), 43.5 (DraftKings, Caesars, Fanatics, Kalshi). Median 43.75. Largest divergence: 0.75 points (bet365/FanDuel 44.5) — below the 1.5-point threshold. (FanDuel still 44.5 as in the 04:44 run; BetMGM still 44.)</li>
+<li>Moneyline: Cowboys -230 (bet365, Caesars, Hard Rock), -225 (BetMGM, Fanatics), -218 (DraftKings), -220 (FanDuel). Median implied probability 69.2% (-225). Largest divergence: DraftKings -218, 0.7 implied-probability points below median — below the 5-point threshold. Eagles: +185 (bet365, BetMGM, Fanatics), +180 (DraftKings), +190 (Caesars, Hard Rock), +184 (FanDuel). Median implied probability 35.1% (+185); largest divergence: DraftKings +180, 0.6 points, and Caesars/Hard Rock +190, 0.6 points — also below threshold. (Unchanged in substance from the 04:44 run.)</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 0.75 points of the total median, and ~0.7 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (The recurring Fanatics-column flip artifacts on out-of-scope later-week rows in the text fetch were not screened, as those games are out of scope.)</p>
+<h4>NCAAF text-fetch note (same run, ~5:45 AM ET)</h4>
+<p>A direct text fetch of the ScoresAndOdds NCAAF board (scoresandodds.com/ncaaf/odds) again rendered glossary text only — no per-book odds values, team rows, or game dates/times — so no NCAAF median or flag math could be computed from it, and no Oct 26 ET kickoff could be confirmed from it. NCAAF coverage therefore rests on the pending live browser task&#x27;s report; no NCAAF flag is claimed or delivered from the text fetch.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 5:44–5:46 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch: spread Cowboys -4.5 at all 8 books (median -4.5, max divergence 0); total range 43.5–44.5 (median 43.75, max divergence 0.75); moneyline Cowboys -230 to -218 (median -225, 69.2% implied) and Eagles +180 to +190 (median +185, 35.1%), divergences ~0.7 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing. (The report&#x27;s &quot;hung&quot; notes are juice outliers — e.g., Kalshi under 43.5 at +104, DraftKings Cowboys -218 — not line divergences; none meets the scan&#x27;s spread/total/moneyline flag thresholds, so none is a flag.)</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. A &quot;10/26&quot; search on the NCAAF board returned nothing; the board began with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM) — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s glossary-only rendering was a rendering limitation, not a board problem.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>06:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~6:45 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:d2b3237d-ec08-51d0-ae25-32d3a1a189be), pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (the NCAAF board text fetch again renders glossary text only). Prior runs found no Oct 26 FBS/added game on the board (the 03:44–05:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book. Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Caesars, Fanatics, Kalshi), 44 (BetMGM, Hard Rock), 44.5 (FanDuel). Median 43.5. Largest divergence: 1.0 point (FanDuel 44.5) — below the 1.5-point threshold. (FanDuel still 44.5 as in the 04:44 and 05:44 runs; BetMGM still 44.)</li>
+<li>Moneyline: Cowboys -220 (bet365, BetMGM, FanDuel), -205 (DraftKings), -230 (Caesars), -225 (Hard Rock, Fanatics). Median implied probability 68.75% (-220). Largest divergence: DraftKings -205, 1.5 implied-probability points below median — below the 5-point threshold. Eagles: +180 (bet365, BetMGM), +170 (DraftKings), +190 (Caesars), +184 (FanDuel), +185 (Hard Rock, Fanatics). Median implied probability 35.2% (+184); largest divergence: DraftKings +170, 1.8 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 1.0 point of the total median, and ~1.8 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 6:45–6:49 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch exactly: spread Cowboys -4.5 at all 8 books (median -4.5, max divergence 0); total range 43.5–44.5 (median 43.5, max divergence 1.0, FanDuel 44.5); moneyline Cowboys -230 to -205 (median -220, 68.75% implied) and Eagles +170 to +190 (median +184, 35.2%), divergences ~1.8 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. A &quot;10/26&quot; search on the NCAAF board returned nothing; the board began with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM) — resolving this run&#x27;s NCAAF verification gap.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>07:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~7:50 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:a645197f-b8ab-540f-973a-1142a1b6099d), pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (the NCAAF board text fetch again renders glossary text only in prior runs). Prior runs found no Oct 26 FBS/added game on the board (the 03:44–06:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book. Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Caesars, Fanatics, Kalshi), 44 (BetMGM, Hard Rock), 44.5 (FanDuel). Median 43.5. Largest divergence: 1.0 point (FanDuel 44.5) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 (bet365, FanDuel, Fanatics), -225 (BetMGM, Hard Rock), -218 (DraftKings, Caesars). Median implied probability 68.75% (-220). Largest divergence: BetMGM/Hard Rock -225, 0.5 implied-probability points above median — below the 5-point threshold. Eagles: +180 (bet365, DraftKings, Fanatics), +185 (BetMGM, Hard Rock), +182 (Caesars), +184 (FanDuel). Median implied probability 35.46% (+182); largest divergence: +180, 0.25 points, and +185, 0.37 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 1.0 point of the total median, and ~0.5 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 7:44–7:48 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only — the only &quot;10/26&quot; entry on the NFL board. Per-book lines match the text fetch exactly: spread Cowboys -4.5 at all 8 books (median -4.5, max divergence 0); total range 43.5–44.5 (median 43.5, max divergence 1.0, FanDuel 44.5); moneyline Cowboys -225 to -218 (median -220, 68.75% implied) and Eagles +180 to +185 (median +182, 35.46%), divergences ~0.5 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The board begins with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM; Sam Houston vs. Missouri State, 10/27 8:00 PM); a full-board search for a 10/26 date returned nothing. Later added/small-conference games exist (e.g., Kent State vs. Sacramento State 10/30, UTEP vs. North Dakota State 10/31) but none is dated 10/26 — resolving this run&#x27;s NCAAF verification gap.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>08:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:13083ce6-7cf9-53d0-95e1-1cc3e7227fe0), pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (the NCAAF board text fetch again renders glossary/team rows only in prior runs, with no per-book odds values). Prior runs found no Oct 26 FBS/added game on the board (the 03:44–07:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book. Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Caesars, Fanatics, Kalshi), 44 (BetMGM, Hard Rock), 44.5 (FanDuel). Median 43.5. Largest divergence: 1.0 point (FanDuel 44.5) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 (bet365, FanDuel, Fanatics), -225 (BetMGM, Hard Rock), -218 (DraftKings, Caesars). Median implied probability 68.75% (-220). Largest divergence: BetMGM/Hard Rock -225, 0.48 implied-probability points above median — below the 5-point threshold. Eagles: +180 (bet365, DraftKings, Fanatics), +185 (BetMGM, Hard Rock), +182 (Caesars), +184 (FanDuel). Median implied probability 35.46% (+182); largest divergence: +180, 0.25 points, and +185, 0.37 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 1.0 point of the total median, and ~0.5 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (The recurring Fanatics-column flip artifacts on out-of-scope later-week rows in the text fetch were not screened, as those games are out of scope.)</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 8:44–8:47 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only. Per-book lines match the text fetch exactly: spread Cowboys -4.5 at all 8 books (median -4.5, max divergence 0); total range 43.5–44.5 (median 43.75 across all 8 columns, 43.5 across the 7 NJ books only; FanDuel 44.5 is the largest divergence at 0.75–1.0 points either way, below the 1.5-point threshold); moneyline Cowboys -225 to -218 (median -220, 68.75% implied) and Eagles +180 to +185 (median +182, 35.46%), divergences ~0.5 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The board begins with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM) — resolving this run&#x27;s NCAAF verification gap; the text fetch&#x27;s glossary-only rendering was a rendering limitation, not a board problem.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>09:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:5e465bb5-614e-53a8-ab0e-5c8721be0dc9), pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (the NCAAF board text fetch renders glossary/team rows only in prior runs). Prior runs found no Oct 26 FBS/added game on the board (the 03:44–08:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book. Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Fanatics, Kalshi), 44 (BetMGM, Caesars, Hard Rock), 44.5 (FanDuel). Median across all 8 columns 43.75 (44 across the 7 NJ books only). Largest divergence: FanDuel 44.5, 0.75 points (0.5 vs the NJ-only median) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 (bet365, BetMGM, FanDuel, Hard Rock, Fanatics), -205 (DraftKings), -218 (Caesars). Median -220, 68.75% implied. Largest divergence: DraftKings -205, 1.54 implied-probability points below median — below the 5-point threshold. Eagles: +180 (bet365, BetMGM, Fanatics), +170 (DraftKings), +182 (Caesars), +184 (FanDuel), +185 (Hard Rock). Median +180, 35.71% implied; largest divergence: DraftKings +170, 1.33 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 0.75 points of the total median, and ~1.5 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out. (Later-week rows on the board are out of scope for today and were not screened.)</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 9:44–9:49 AM ET, measured)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened as sources.</p>
+<ul>
+<li>In-scope: Cowboys vs. Eagles, Oct 26, 8:15 PM ET only — the only &quot;10/26&quot; entry on the NFL board. Per-book lines match the text fetch exactly: spread Cowboys -4.5 at all 8 books (median -4.5, max divergence 0); total range 43.5–44.5 (median 43.75; FanDuel 44.5 is the largest divergence at 0.75 points, below the 1.5-point threshold); moneyline Cowboys -220 to -205 (median -220, 68.8% implied) and Eagles +170 to +185 (median +180, 35.7%), divergences ~1.5 points or less. Kalshi moneyline blank on the board, reported as blank, not filled in. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF portion — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The board begins with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM); later-week small-conference/FCS-type matchups exist (e.g., Kent State vs. Sacramento State 10/30, UTEP vs. North Dakota State 10/31) but none is dated 10/26 — resolving this run&#x27;s NCAAF verification gap.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+<li>Note from the browser task: one board &quot;+&quot; link was clicked during checking and opened an external sportsbook bet-slip tab; it was closed immediately and no bet was placed or submitted.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>10:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~10:45 AM ET via ScoresAndOdds public NFL board text fetch (scoresandodds.com/nfl/odds), BOARD view, no sign-in, plus one live browser task spawned per the scan body (task_id browser-task:e95ed41f-b09f-5f17-96cc-69e3ddd477fb), pending when this run was logged; its report, if it arrives, will be appended as an addendum.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: NOT VERIFIED by direct fetch this run (the NCAAF board text fetch renders glossary/team rows only in prior runs). Prior runs found no Oct 26 FBS/added game on the board (the 03:44–09:44 runs&#x27; live browser checks found the NCAAF board beginning with 10/27 games); Monday is not a college game day — but that is prior-run context, not this run&#x27;s verification.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math (all books shown)</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi had no moneyline cell).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at every book. Median -4.5. Largest divergence: 0. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, DraftKings, Fanatics, Kalshi), 44 (BetMGM, Caesars, Hard Rock), 44.5 (FanDuel). Median across all 8 columns 43.75. Largest divergence: FanDuel 44.5, 0.75 points — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 (bet365, BetMGM, FanDuel, Hard Rock, Fanatics), -205 (DraftKings), -218 (Caesars). Median -220, 68.75% implied. Largest divergence: DraftKings -205, 1.54 implied-probability points below median — below the 5-point threshold. Eagles: +180 (bet365, BetMGM, Fanatics), +170 (DraftKings), +182 (Caesars), +184 (FanDuel), +185 (Hard Rock). Median +180, 35.71% implied; largest divergence: DraftKings +170, 1.33 points — also below threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 0.75 points of the total median, and ~1.5 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>Addendum — live browser task report received (ran 10:44–10:51 AM ET, measured; the report&#x27;s own &quot;10:44–10:52&quot; read window differs by one minute at the end)</h3>
+<p>The live browser task&#x27;s report confirms this run&#x27;s screen: 1 in-scope game, ZERO flags across spread, total, and moneyline — BOARD view only, no sign-in, no bets, no individual game pages opened.</p>
+<ul>
+<li>In-scope (Oct 26 only): Cowboys vs. Eagles, Oct 26, 8:15 PM ET only — the only &quot;10/26&quot; entry. Per-book lines match the text fetch: spread Cowboys -4.5 at all books; total median 43.75, max divergence 0.75; moneyline divergences under 1.6 implied-probability points. No key-number (3 or 7) middle pairing.</li>
+<li>NCAAF / added games for Oct 26 — now VERIFIED: 0 FBS/added games for Oct 26 on the board. The board begins with 10/27 games; the 2 added games it lists (Kent State vs. Sacramento State, 10/30; UTEP vs. North Dakota State, 10/31) are not Oct 26 games.</li>
+<li>Coverage note: board columns shown were bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. BetRivers and ESPN BET were not shown as board columns, so their lines could not be scanned. Medians were across all listed books (Kalshi included where listed; blank cells excluded).</li>
+<li>OUT-OF-SCOPE flags reported by the browser task (NOT delivered, NOT added to state): the task also scanned the board&#x27;s full not-yet-started list (57 games: 1 NFL + 54 FBS-vs-FBS + 2 added) and found 12 spread flags, all on Oct 30–31 NCAAF games, 0 total flags, 0 moneyline flags. Per this scan&#x27;s today-only scope, those games are out of scope for the Oct 26 run — they were not delivered and were not entered in state, so they will surface as NEW on their own game days if still present then. The 12, for the record only: Baylor vs. UCF 10/30 (Fanatics, Baylor -1 vs median +1.5, div 2.5); Louisiana Tech vs. South Alabama 10/31 (bet365 and FanDuel, -4.5 vs -5.5, div 1.0 each); Auburn vs. Ole Miss 10/31 (FanDuel, +12.5 vs +13.5, div 1.0); Stanford vs. Louisville 10/31 (bet365 and FanDuel, +21.5 vs +22.5, div 1.0 each); Arizona State vs. BYU 10/31 (bet365, +15.5 vs +16.5, div 1.0); Florida International vs. Liberty 10/31 (FanDuel, +13.5 vs +14.5, div 1.0); Purdue vs. Penn State 10/31 (FanDuel, +8.5 vs +7.5, div 1.0); South Carolina vs. Oklahoma 10/31 (FanDuel, +4.5 vs +5.5, div 1.0); Appalachian State vs. Georgia Southern 10/31 (FanDuel, +4.5 vs +5.5, div 1.0); Florida vs. Georgia 10/31 (Hard Rock, +12.5 vs +10.75, div 1.75). No spread flag spanned key number 3 or 7, so no middle pairings applied; largest total divergence on the full board was 1.0 point.</li>
+<li>Per-book odds were publicly readable without sign-in or paywall on both boards.</li>
+</ul>
+<p>Outcome unchanged: no NEW or CHANGED deliverables for Oct 26, nothing sent, state holds 1 key (closed-below-threshold, game finished).</p>
+<h3>11:44 AM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~11:46 AM ET via one live browser task (ran 11:44–11:47 AM ET, measured), ScoresAndOdds public BOARD views, no sign-in, no bets, no individual game pages opened.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: 0 games for Oct 26. The NCAAF board begins with 10/27 games (Delaware vs. Western Kentucky, 10/27 7:00 PM); added games listed (e.g., Kent State vs. Sacramento State, UTEP vs. North Dakota State) are dated 10/30–10/31, outside today&#x27;s scope.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi moneyline blank).</p>
+<ul>
+<li>Spread: Cowboys -4.5 at all 8 books. Median -4.5. Largest divergence: 0 — below the 1.0-point threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5, 44, 43.5, 44, 44.5, 44, 43.5, 43.5. Median 43.75. Largest divergence: 0.75 points (FanDuel 44.5) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 median (68.75% implied; DraftKings -205 largest divergence, 1.54 points); Eagles +180 median (35.71% implied; DraftKings +170 largest divergence, 1.33 points) — both below the 5-point threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 0.75 points of the total median, and ~1.5 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>12:44 PM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~12:45–12:48 PM ET via one live browser task (ran 12:44–12:48 PM ET, harness-measured), ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys at Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: 0 games for Oct 26, VERIFIED (not assumed). The NCAAF board begins with 10/27 games (Delaware vs. Western Kentucky, 7:00 PM; Sam Houston vs. Missouri State, 8:00 PM) and runs through 10/31. No &quot;added games&quot; dated Oct 26, and no &quot;Added&quot; label found on the NCAAF board.</li>
+</ul>
+<h4>Cowboys at Eagles — flag math</h4>
+<p>Per-book columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi moneyline blank). BetRivers and ESPN BET did not appear as board columns, so their lines could not be scanned.</p>
+<ul>
+<li>Spread: Cowboys -4.5 at all 8 books. Median -4.5. Largest divergence: 0 — below the 1.0-point threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 43.5 (bet365, FanDuel, Kalshi), 44 (BetMGM, Caesars, Hard Rock, Fanatics), 44.5 (DraftKings). Median 44. Largest divergence: 0.5 points — below the 1.5-point threshold. (Note vs the 11:44 run: median moved 43.75 → 44 as DraftKings went 43.5 → 44.5 and FanDuel went 44.5 → 43.5; still no flag.)</li>
+<li>Moneyline: Cowboys median implied 68.55% (-218); largest divergence DraftKings -205, 67.21%, 1.34 points below median. Eagles median implied 35.71% (+180); largest divergence DraftKings +170, 37.04%, 1.33 points above median. Both below the 5-point threshold.</li>
+<li>Kalshi values (spread -4.5, total 43.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0 points of the spread median, 0.5 points of the total median, and ~1.3 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>1:44 PM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~1:45 PM ET via one live browser task (ran 1:44–1:46 PM ET, harness-measured), ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>In-scope games (not yet started, Oct 26)</h4>
+<ul>
+<li>NFL: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF / added games: 0 games for Oct 26, VERIFIED (not assumed). The NCAAF board begins with 10/27 games (Delaware vs. Western Kentucky, 7:00 PM); a board search for &quot;10/26&quot; and for &quot;Added&quot; returned no matches, and no &quot;Added&quot; label/section appears.</li>
+</ul>
+<h4>Cowboys vs. Eagles — flag math</h4>
+<p>Per-book columns, in order: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi (Kalshi moneyline blank). BetRivers and ESPN BET do not appear as board columns, so their lines could not be scanned.</p>
+<ul>
+<li>Spread: -4.5 at seven books, BetMGM -4. Median -4.5. Largest divergence: 0.5 points (BetMGM) — below the 1.0-point threshold. No key-number (3 or 7) middle pairing.</li>
+<li>Total: 44.5 (bet365, DraftKings, Caesars, Kalshi), 44 (BetMGM, Hard Rock, Fanatics), 43.5 (FanDuel). Median 44.25. Largest divergence: 0.75 points (FanDuel 43.5) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys -220 median (68.75% implied; largest divergence FanDuel -210, 67.74%, 1.01 points); Eagles +180 median (35.71% implied; largest divergence Fanatics +185, 35.09%, 0.62 points) — both below the 5-point threshold.</li>
+<li>Kalshi values (spread -4.5, total 44.5) are consensus-aligned; Kalshi is a prediction market, not an NJ book, and nothing turns on it here.</li>
+</ul>
+<h4>Seen, ZERO flags</h4>
+<ul>
+<li>No spread, total, or moneyline flag met threshold, so there are no NEW or CHANGED flags vs state.</li>
+<li>The prior flag (FanDuel Browns -1.5) is out of scope (game finished Oct 25) and stays closed-below-threshold in state; it is not re-delivered.</li>
+</ul>
+<h4>Totals / opinionated check</h4>
+<p>With a single in-scope game and every book within 0.5 points of the spread median, 0.75 points of the total median, and ~1.0 implied-probability points of the moneyline medians, no book shows an off-consensus pattern; nothing opinionated to call out.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed to this run). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>2:44 PM ET run — 2 NEW FLAGS (deliverable prepared; see run result)</h3>
+<p>Read ~2:44–2:48 PM ET via one live browser task (harness-measured 2:44–2:48 PM ET), ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>Scope</h4>
+<ul>
+<li>70 board games scanned — NFL 14, NCAAF Week 9 56.</li>
+<li>Today (10/26) not started: 1 game — NFL Cowboys vs. Eagles, 8:15 PM ET. 0 NCAAF games dated 10/26.</li>
+<li>Added games checked in full: UTEP vs. North Dakota State (10/31, 3:30 PM) and Kent State vs. Sacramento State (10/30, 10:30 PM).</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<p>0 flags under all thresholds (spread &gt;= 1.0 point, total &gt;= 1.5 points, moneyline implied probability &gt;= 5 points).</p>
+<h4>NEW flags (both vs prior state — neither key existed)</h4>
+<ol>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Spread — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP.</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Spread — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP.</li>
+<li>Neither divergence spans key number 3 or 7, so no middle pairing applies.</li>
+<li>No moneyline or total flag for UTEP vs. North Dakota State; Kent State vs. Sacramento State had no flag on any market.</li>
+</ol>
+<h4>Totals / opinionated check</h4>
+<p>Two books each off by exactly the 1.0-point threshold on the same added game, both on the same side — consistent with a slow/stale pair rather than either book being off-consensus across the board; no opinionated-pricing callout. (The browser report did not detail other games&#x27; per-book deviations, so no broader opinionated check is claimed this run.)</p>
+<h4>State / delivery</h4>
+<p>State updated: 2 new keys added (UTEP vs. North Dakota State | DraftKings | spread; UTEP vs. North Dakota State | Fanatics | spread), 1 prior key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed). Delivery: per the execution-phase rule, the alert text + voice-note script are returned as this run&#x27;s result for the main agent to present (not sent from this worker run); source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>3:44 PM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~3:44–3:47 PM ET via one live browser task (harness-measured 3:44–3:48 PM ET), ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>Scope</h4>
+<ul>
+<li>70 board games scanned — NFL 14, NCAAF 56.</li>
+<li>Today (10/26) not started: 1 game — NFL Cowboys vs. Eagles, 8:15 PM ET. 0 NCAAF games dated 10/26.</li>
+<li>Added games checked in full: UTEP vs. North Dakota State (10/31, 3:30 PM) and Kent State vs. Sacramento State (10/30, 10:30 PM).</li>
+<li>Columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. Hard Rock blank for both added games; Kalshi moneyline blank for the NFL game.</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<ul>
+<li>Spread: Cowboys -4.5 at all books except BetMGM -4. Median -4.5. Largest divergence 0.5 points (BetMGM) — below the 1.0-point threshold.</li>
+<li>Total: 44.5 (bet365, DraftKings, Caesars, Kalshi), 44 (BetMGM, Hard Rock, Fanatics), 43.5 (FanDuel). Median 44.25. Largest divergence 0.75 points (FanDuel) — below the 1.5-point threshold.</li>
+<li>Moneyline: Cowboys median -220 (68.8% implied); Eagles median +180 (35.7% implied). Largest divergences ~1 point — below the 5-point threshold.</li>
+</ul>
+<h4>Kent State vs. Sacramento State — no flags</h4>
+<ul>
+<li>Spread median -10.5 (Kent State); total 46.5 at every book; moneyline medians Kent State -395 (79.8%), Sacramento State +310 (24.4%). No threshold flags.</li>
+</ul>
+<h4>UTEP vs. North Dakota State — 2 flags seen, BOTH ALREADY IN STATE, UNCHANGED</h4>
+<ol>
+<li>DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP — identical to the 2:44 PM ET run&#x27;s flag (same number, same median, same divergence; widening 0, below the 0.5-point change bar). NOT re-delivered.</li>
+<li>Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP — identical to the 2:44 PM ET run&#x27;s flag. NOT re-delivered.</li>
+<li>Neither divergence spans key number 3 or 7, so no middle pairing applies. No total or moneyline flag for this game.</li>
+<li>Sensitivity note from the browser report: the flag sits exactly at threshold under the all-listed-columns median (including Kalshi). Excluding Kalshi, the median would be 24.75 and the divergence 0.75 — below threshold. Either way the flags are unchanged vs state, so the delivery decision is the same.</li>
+</ol>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. The UTEP spread flag is shared by two books (DraftKings and Fanatics), both otherwise near consensus in these games — consistent with a slow/stale pair, not opinionated pricing on either book&#x27;s part.</p>
+<h4>State / delivery</h4>
+<p>State updated: 2 UTEP keys&#x27; last_seen refreshed to this run (unchanged numbers); 1 prior key retained (Browns vs. Titans | FanDuel | spread, closed-below-threshold, game finished; last_seen refreshed). None — alert-only run with no NEW or CHANGED flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>4:44 PM ET run — NO DELIVERABLES (alert-only: nothing sent)</h3>
+<p>Read ~4:44–4:50 PM ET via one live browser task, ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>In-scope games (3)</h4>
+<ul>
+<li>NFL, Oct 26, not started: 1 game — Cowboys vs. Eagles, 8:15 PM ET (Monday Night Football).</li>
+<li>NCAAF, Oct 26: 0 games, verified — the NCAAF board&#x27;s first listed game was Oct 27.</li>
+<li>Added games: 2 — Kent State vs. Sacramento State, Oct 30, 10:30 PM ET; UTEP vs. North Dakota State, Oct 31, 3:30 PM ET (specifically re-checked).</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. BetRivers and ESPN BET did not appear as board columns, so their lines could not be scanned. Hard Rock blank for both added games. Medians computed across all listed books with a price for that market, blanks excluded (Kalshi included where present).</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<p>No spread (&gt;= 1.0 point), total (&gt;= 1.5 points), or moneyline (&gt;= 5 implied-probability points) flag.</p>
+<h4>Kent State vs. Sacramento State — no flags</h4>
+<p>No flag on any market.</p>
+<h4>UTEP vs. North Dakota State — 1 flag seen, ALREADY IN STATE, UNCHANGED</h4>
+<ol>
+<li>DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP — identical to the 2:44 PM ET flag and the 3:44 PM ET re-seen (same number, same median, same divergence; widening 0, below the 0.5-point change bar). NOT re-delivered.</li>
+<li>No key-number (3 or 7) middle pairing: divergence does not span 3 or 7. No total or moneyline flag for this game.</li>
+</ol>
+<h4>Fanatics UTEP flag — CLOSED this run</h4>
+<p>The prior Fanatics flag (UTEP +25.5 vs. median +24.5, first flagged 2:44 PM ET) does NOT appear in this run&#x27;s report: the report lists only DraftKings as meeting a threshold for this game. Fanatics therefore no longer meets the 1.0-point spread threshold. Its current number was not itemized in the compact report, so no new number is claimed; state entry moved to closed-below-threshold and retained for history.</p>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. The single live flag is a lone DraftKings number on one added game — consistent with a slow/stale number, not opinionated pricing.</p>
+<h4>State / delivery</h4>
+<p>State updated: DraftKings UTEP key last_seen refreshed (unchanged, still flagged); Fanatics UTEP key moved to closed-below-threshold; Browns vs. Titans key retained (closed-below-threshold, game finished; last_seen refreshed). None — alert-only run with no NEW or CHANGED (widened) flags, so nothing sent. Source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>5:44 PM ET run — 7 NEW FLAGS (deliverable returned for main-agent presentation)</h3>
+<p>Read ~5:45–5:53 PM ET via one live browser task, ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>Scope</h4>
+<ul>
+<li>57 not-yet-started games checked — NFL 1, NCAAF 56 (games dated 10/27–10/31).</li>
+<li>Today (10/26) not started: 1 game — NFL Cowboys vs. Eagles, 8:15 PM ET. 0 NCAAF games dated 10/26.</li>
+<li>Added games checked in full: UTEP vs. North Dakota State (10/31, 3:30 PM) and Kent State vs. Sacramento State (10/30, 10:30 PM).</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<p>Spread median Cowboys -4.5 (Caesars -4 only 0.5 off); total median 44 (range 43.5–44.5); moneyline median implied ~69.2% Cowboys (-225), ~35.1% Eagles (+185), largest moneyline gaps under 2.1 points. No flag on any market.</p>
+<h4>Kent State vs. Sacramento State — no flags</h4>
+<p>No flag on any market.</p>
+<h4>NEW flags (7 — all vs prior state, none existed as keys)</h4>
+<p>Sorted by divergence (desc):</p>
+<ol>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — Spread — BetMGM: Delaware -1 vs. median Delaware +1.5, divergence 2.5 points, value side Western Kentucky +1 at BetMGM.</li>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — Spread — Fanatics: Delaware -1 vs. median Delaware +1.5, divergence 2.5 points, value side Western Kentucky +1 at Fanatics.</li>
+<li>Oregon State vs. Fresno State, 10/31, 11:00 PM — Total — Fanatics: total 57 vs. median 58.5, divergence 1.5 points, value side Over 57 at Fanatics.</li>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — Spread — FanDuel: Stanford +21.5 vs. median +22.5, divergence 1.0 point, value side Louisville -21.5 at FanDuel.</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Spread — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0 point, value side Florida +12.5.</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — Spread — FanDuel: South Carolina +4.5 vs. median +5.5, divergence 1.0 point, value side Oklahoma -4.5 at FanDuel.</li>
+<li>Washington vs. Nebraska, 10/31, 8:00 PM — Spread — bet365: Washington +9.5 vs. median +8.5, divergence 1.0 point, value side Washington +9.5.</li>
+<li>None of the spread divergences spans key number 3 or 7, so no middle pairing applies to any new flag.</li>
+<li>No moneyline flag at the &gt;=5 implied-probability-point threshold in any checked game.</li>
+</ol>
+<h4>Re-seen, NOT re-delivered</h4>
+<ol>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Spread — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP — identical to the 14:44/15:44/16:44 ET flags; widening 0, below the 0.5-point change bar.</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Spread — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 point, value side UTEP — closed below threshold at the 16:44 ET run, re-flagged at the 17:44 ET run at the SAME number it carried at first flagging (14:44 ET, already delivered); widening 0, so not re-delivered as new. State status returned to flagged.</li>
+</ol>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. Fanatics holds 3 flags (Delaware spread, UTEP spread, Oregon State total) and FanDuel 2, each on different games — consistent with lone stale numbers, not opinionated pricing. Bruno&#x27;s caveat still carried in the delivery footer.</p>
+<h4>State / delivery</h4>
+<p>State updated: 7 new keys added, UTEP DraftKings last_seen refreshed (unchanged, still flagged), UTEP Fanatics returned to flagged (re-seen at original number), Browns vs. Titans key retained (closed-below-threshold, game finished; last_seen refreshed). Delivery: per the execution-phase rule, the 7-flag alert text + voice-note script are returned as this run&#x27;s result for the main agent to present (not sent from this worker run); source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>6:44 PM ET run — 2 NEW FLAGS (deliverable returned for main-agent presentation)</h3>
+<p>Read ~6:45–6:54 PM ET via one live browser task (harness-measured 6:45–6:55 PM ET), ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened. Independent text fetch of the NFL board in the same run agrees on tonight&#x27;s game (see below).</p>
+<h4>Scope</h4>
+<ul>
+<li>57 not-yet-started games checked — NFL 1, NCAAF 56 (games dated 10/27–10/31).</li>
+<li>Today (10/26) not started: 1 game — NFL Cowboys vs. Eagles, 8:15 PM ET. 0 NCAAF games dated 10/26.</li>
+<li>Added games checked in full: UTEP vs. North Dakota State (10/31, 3:30 PM) and Kent State vs. Sacramento State (10/30, 10:30 PM) — neither produced a new flag this run.</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. ESPN BET did not appear as a board column. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<ul>
+<li>Spread median Cowboys -4.5; total median 43.5 (max divergence 0.5); moneyline medians Cowboys -225 (69.23% implied), Eagles +185 (35.09% implied), largest moneyline divergence ~1.5 points. No flag on any market. The independent NFL text fetch matches: spread -4.5 at every book except Caesars/Fanatics -4; total 43.5–44; moneyline Cowboys -230 to -210, Eagles +176 to +190.</li>
+</ul>
+<h4>NEW flags (2 — both vs prior state, neither key existed)</h4>
+<p>Sorted by divergence (desc; both 1.0 point, Ohio State first for its key-number middle):</p>
+<ol>
+<li>Ohio State vs. USC, 10/31, 7:30 PM — Spread — Hard Rock: USC +7.5 vs. median +6.5, divergence 1.0 point, value side USC. KEY-NUMBER MIDDLE: USC +7.5 at Hard Rock + Ohio State -6.5 at a consensus book wins both if Ohio State wins by exactly 7.</li>
+<li>Texas State vs. Boise State, 10/31, 10:00 PM — Spread — Fanatics: Boise State -10.5 vs. median -11.5, divergence 1.0 point, value side Boise State (laying 1.0 point fewer than consensus).</li>
+<li>No NCAAF total reached the 1.5-point threshold and no NCAAF moneyline reached the 5-point implied-probability threshold for an NJ book. Closest moneyline case: Ohio State vs. USC, Hard Rock Ohio State -325, ~4.65 points off median implied probability — not flagged.</li>
+</ol>
+<h4>Re-seen, NOT re-delivered (unchanged, widening 0)</h4>
+<ol>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0.</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0.</li>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — BetMGM: Western Kentucky +1 vs. median -1.5, divergence 2.5.</li>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — FanDuel: Louisville -21.5 vs. median -22.5, divergence 1.0.</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0.</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — FanDuel: Oklahoma -4.5 vs. median -5.5, divergence 1.0.</li>
+<li>None of these divergences spans key number 3 or 7 except none newly; no middle pairing applies to the re-seen set.</li>
+</ol>
+<h4>Closed below threshold this run (state updated, not delivered)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky — Fanatics: now Western Kentucky -1 vs. median -1.5, divergence 0.5 (was 2.5).</li>
+<li>Washington vs. Nebraska, 10/31, 8:00 PM — bet365: now Washington +7.5 vs. median +7.5, divergence 0.0. The +9.5 is now only on Kalshi, which is not flagged.</li>
+<li>Oregon State vs. Fresno State, 10/31, 11:00 PM — Fanatics total: now 58.5 vs. median 58.5, divergence 0.0 (was 57 vs. 58.5).</li>
+</ol>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. The two new flags are on different books (Hard Rock, Fanatics) and different games — consistent with lone stale numbers, not opinionated pricing. Bruno&#x27;s caveat still carried in the delivery footer.</p>
+<h4>State / delivery</h4>
+<p>State updated: 2 new keys added (Ohio State vs. USC | Hard Rock | spread; Texas State vs. Boise State | Fanatics | spread), 6 re-seen keys&#x27; last_seen refreshed (unchanged, still flagged), 3 keys moved to closed-below-threshold, Browns vs. Titans key retained (closed-below-threshold, game finished; last_seen refreshed). Delivery: per the execution-phase rule, the 2-flag alert text + voice-note script are returned as this run&#x27;s result for the main agent to present (not sent from this worker run); source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>7:44 PM ET run — 1 NEW FLAG (deliverable returned for main-agent presentation)</h3>
+<p>Read ~7:45–7:55 PM ET via one live browser task, ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened.</p>
+<h4>Scope</h4>
+<ul>
+<li>57 not-yet-started games checked — NFL 1, FBS 54, added games 2 (games dated 10/27–10/31).</li>
+<li>Today (10/26) not started: 1 game — NFL Cowboys vs. Eagles, 8:15 PM ET. 0 NCAAF games dated 10/26.</li>
+<li>Added games checked in full: UTEP vs. North Dakota State (10/31, 3:30 PM) and Kent State vs. Sacramento State (10/30, 10:30 PM).</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. ESPN BET, BetRivers, Bally Bet, Borgata, Golden Nugget did not appear as board columns. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+</ul>
+<h4>Cowboys vs. Eagles — no flags</h4>
+<ul>
+<li>Spread median Cowboys -4.5; total median 43.5; moneyline medians Cowboys -225 (69.23% implied), Eagles +185 (35.09% implied); largest NJ moneyline divergence under 1.5 points. No flag on any market.</li>
+</ul>
+<h4>NEW flag (1 — key not in prior state)</h4>
+<ol>
+<li>Northern Illinois vs. UNLV, 10/31, 10:30 PM — Spread — FanDuel: Northern Illinois +24.5 vs. median +23.5, divergence 1.0 point, value side Northern Illinois +24.5. No key-number (3 or 7) middle pairing: divergence does not span 3 or 7.</li>
+</ol>
+<h4>Full flagged list this run (9 book-instances, 8 games — all spread, no total, no moneyline flags)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — BetMGM: Western Kentucky +1 vs. median -1.5, divergence 2.5 (re-seen, unchanged).</li>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — FanDuel: Louisville -21.5 vs. median -22.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — FanDuel: Oklahoma -4.5 vs. median -5.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Ohio State vs. USC, 10/31, 7:30 PM — Hard Rock: USC +7.5 vs. median +6.5, divergence 1.0 (re-seen, unchanged). Key-number middle (spans 7): USC +7.5 at Hard Rock + Ohio State -6.5 at a consensus book wins both if Ohio State wins by exactly 7.</li>
+<li>Texas State vs. Boise State, 10/31, 10:00 PM — Fanatics: Boise State -10.5 vs. median -11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Northern Illinois vs. UNLV, 10/31, 10:30 PM — FanDuel: Northern Illinois +24.5 vs. median +23.5, divergence 1.0 (NEW — the deliverable).</li>
+<li>No total reached the 1.5-point threshold and no moneyline reached the 5-point implied-probability threshold for an NJ book. Closest moneyline case: Ohio State vs. USC, Hard Rock Ohio State -325, ~4.7 points off median implied probability — not flagged.</li>
+</ol>
+<h4>Re-seen, NOT re-delivered (unchanged, widening 0)</h4>
+<p>All 8 previously flagged keys above except the new Northern Illinois one; each re-seen at the same number, same median, same divergence.</p>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. FanDuel had the most spread flags (3), followed by Hard Rock and Fanatics (2 each), DraftKings and BetMGM (1 each) — far from nearly every game. The new flag is a lone stale number, not opinionated pricing. Bruno&#x27;s caveat still carried in the delivery footer.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 new key added (Northern Illinois vs. UNLV | FanDuel | spread), 8 re-seen keys&#x27; last_seen refreshed (unchanged, still flagged), closed-below-threshold keys left untouched (not re-reported this run). Delivery: per the execution-phase rule, the 1-flag alert text + voice-note script are returned as this run&#x27;s result for the main agent to present (not sent from this worker run); source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h3>8:44 PM ET run — INCOMPLETE (no verified flags; state NOT changed)</h3>
+<p>Two live browser tasks were launched for this run (task 5de68dfc-b41d-5f8a-8244-369e414c6c1d, then cf813abb-9f96-5bc3-9a2a-7d2f9d4a085e after the first was lost in a service restart). Both windows loaded the ScoresAndOdds NFL + NCAAF board pages and worked for ~15–20 minutes each, but both windows closed with NO report delivered back to the worker — no game count, no flagged list, nothing verifiable. A browser.open text fetch of the NCAAF board returns only article copy (the odds board is JS-rendered), so it cannot substitute for the live-board read.</p>
+<p>Consequence: NO flags from this run are verified, so nothing was delivered, nothing was added to or removed from hung-number-state.json, and no re-seen keys were refreshed. The 9 flagged keys from the 7:44 PM ET run carry over untouched. This is NOT a source-gate event (the board pages loaded fine in both windows; the failure was report delivery, not source readability), so no gate file was created. Next hourly run should re-run the board read; if its report again fails to arrive, the delivery path — not the source — needs attention.</p>
+<h3>8:44 PM ET run — CORRECTED: late report arrived (2 DELIVERABLES)</h3>
+<p>SUPERSEDES the &quot;INCOMPLETE&quot; section above. The FIRST browser task&#x27;s report arrived after the run had closed: board read ~8:45–8:52 PM ET via ScoresAndOdds public BOARD views (https://www.scoresandodds.com/nfl/odds and https://www.scoresandodds.com/ncaaf/odds), no sign-in, no bets, no individual game pages opened. The SECOND browser task&#x27;s report never arrived and contributed nothing; all figures below come from the first task only.</p>
+<h4>Scope</h4>
+<ul>
+<li>56 not-yet-started games checked — NFL 0 (board listed 14 games: 1 in progress, Cowboys vs. Eagles 10/26 8:15 PM, excluded; 13 already started/finished Oct 22–25), FBS 54, added games 2 (Kent State vs. Sacramento State, 10/30, 10:30 PM; UTEP vs. North Dakota State, 10/31, 3:30 PM).</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. ESPN BET, BetRivers, Bally Bet, Borgata, Golden Nugget did not appear as board columns. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+<li>No total reached the 1.5-point threshold and no moneyline reached the 5-point implied-probability threshold for an NJ book. Closest moneyline case: Ohio State vs. USC, Hard Rock Ohio State -325 (76.5% implied) vs. median implied 72.2%, divergence 4.25 points — below threshold.</li>
+</ul>
+<h4>DELIVERABLES (2 — sorted by divergence desc)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — Spread — Fanatics: Western Kentucky +1 vs. median Western Kentucky -1.5, divergence 2.5 points. Value side: Western Kentucky +1. CHANGED (re-opened): flagged at the 17:44 ET run, closed below threshold at 0.5 at the 18:44 ET run, back to 2.5 now — widening 2.0. No key-number (3 or 7) middle pairing: divergence does not span 3 or 7.</li>
+<li>Minnesota vs. Indiana, 10/31, 3:30 PM — Spread — bet365: Indiana -19.5 vs. median -20.5, divergence 1.0 point. Value side: Indiana -19.5 (laying 1.0 point fewer than consensus). NEW (key not in prior state). No key-number middle pairing.</li>
+</ol>
+<h4>Full flagged list this run (10 book-instances, all spread)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — Fanatics: Western Kentucky +1 vs. median -1.5, divergence 2.5 (CHANGED, delivered).</li>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — FanDuel: Louisville -21.5 vs. median -22.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Minnesota vs. Indiana, 10/31, 3:30 PM — bet365: Indiana -19.5 vs. median -20.5, divergence 1.0 (NEW, delivered).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — FanDuel: Oklahoma -4.5 vs. median -5.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Ohio State vs. USC, 10/31, 7:30 PM — Hard Rock: USC +7.5 vs. median +6.5, divergence 1.0 (re-seen, unchanged). Key-number middle (spans 7): USC +7.5 at Hard Rock + Ohio State -6.5 at a consensus book wins both if Ohio State wins by exactly 7.</li>
+<li>Texas State vs. Boise State, 10/31, 10:00 PM — Fanatics: Boise State -10.5 vs. median -11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Northern Illinois vs. UNLV, 10/31, 10:30 PM — FanDuel: Northern Illinois +24.5 vs. median +23.5, divergence 1.0 (re-seen, unchanged).</li>
+</ol>
+<h4>Closed below threshold this run (state updated, not delivered)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky — BetMGM: flagged at 2.5 through the 19:44 ET run, absent from this run&#x27;s flagged list (no longer &gt;=1.0 off median). Exact current BetMGM number was not reported in the board summary.</li>
+</ol>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. FanDuel and Fanatics had the most spread flags (3 each) across 56 games — far from nearly every game. The two deliverables are on different books (Fanatics, bet365) and different games — consistent with lone stale numbers, not opinionated pricing. Bruno&#x27;s caveat carried in the delivery footer.</p>
+<h4>State / delivery</h4>
+<p>State updated: 1 new key added (Minnesota vs. Indiana | bet365 | spread), 1 key re-opened as changed (Delaware vs. Western Kentucky | Fanatics | spread), 8 re-seen keys&#x27; last_seen refreshed (unchanged, still flagged), 1 key moved to closed-below-threshold (Delaware vs. Western Kentucky | BetMGM | spread), closed-below-threshold keys otherwise untouched. Delivery: per the execution-phase rule, the 2-flag alert text + voice-note script are returned as this run&#x27;s result for the main agent to present (not sent from this worker run); source publicly readable without sign-in, so this is NOT a source-gate event: no gate file created.</p>
+<h4>Addendum — second board read confirms (read ~9:00–9:14 PM ET)</h4>
+<p>The SECOND browser task&#x27;s report arrived after the corrected section above. It read the same two boards ~9:00–9:14 PM ET and returned the IDENTICAL 10 spread flags, 0 total flags, and 0 moneyline flags — same games, books, numbers, medians, and divergences as the ~8:45–8:52 PM ET read. No additional deliverables: the 2 delivered flags (Delaware/Fanatics re-opened, Minnesota/bet365 new) and the 8 re-seen-unchanged keys are confirmed, and Delaware/BetMGM remains absent from the flagged list (closed stands). One immaterial discrepancy between the two reads: Ohio State moneyline median implied probability 72.2% (divergence 4.25) in the first read vs. 71.8% (divergence 4.6) in the second — both below the 5-point threshold, so no moneyline flag either way. No state change from this confirmation read; the 20:44 ET run&#x27;s deliverables stand as recorded above.</p>
+<h3>9:44 PM ET run — NO DELIVERABLES (all flags re-seen unchanged; run silent)</h3>
+<p>Board read ~9:46–9:50 PM ET via ScoresAndOdds public BOARD views (https://www.scoresandodds.com/ncaaf/odds and https://www.scoresandodds.com/nfl/odds), no sign-in, no bets, no individual game pages opened. Browser task ran 9:45–9:54 PM EDT.</p>
+<h4>Scope</h4>
+<ul>
+<li>56 not-started college football games checked (Tue Oct 27: 2, Wed Oct 28: 2, Thu Oct 29: 2, Fri Oct 30: 3, Sat Oct 31: 47), including both added/FCS matchups (Kent State vs. Sacramento State, 10/30, 10:30 PM; UTEP vs. North Dakota State, 10/31, 3:30 PM). No Oct 26 college games listed.</li>
+<li>NFL: 0 not-started games in scope — the board showed only Week 7; the only Oct 26 game, Cowboys vs. Eagles, was already in progress at read time and was excluded; no Week 8 games appeared.</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi where listed. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+</ul>
+<h4>Full flagged list this run (10 book-instances, all spread; sorted by divergence desc)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky, 10/27, 7:00 PM — Fanatics: Western Kentucky +1 vs. median Western Kentucky -1.5, divergence 2.5 (re-seen, unchanged).</li>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — FanDuel: Louisville -21.5 vs. median -22.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Minnesota vs. Indiana, 10/31, 3:30 PM — bet365: Indiana -19.5 vs. median -20.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — FanDuel: Oklahoma -4.5 vs. median -5.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Ohio State vs. USC, 10/31, 7:30 PM — Hard Rock: USC +7.5 vs. median +6.5, divergence 1.0 (re-seen, unchanged). Key-number middle (spans 7): USC +7.5 at Hard Rock + Ohio State -6.5 at a consensus book wins both if Ohio State wins by exactly 7.</li>
+<li>Texas State vs. Boise State, 10/31, 10:00 PM — Fanatics: Boise State -10.5 vs. median -11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Northern Illinois vs. UNLV, 10/31, 10:30 PM — FanDuel: Northern Illinois +24.5 vs. median +23.5, divergence 1.0 (re-seen, unchanged).</li>
+</ol>
+<p>No other spread flag spans a key number 3 or 7. No total reached the 1.5-point threshold and no moneyline reached the 5-point implied-probability threshold for an NJ book.</p>
+<h4>Deliverable check vs. state</h4>
+<p>All 10 flags match keys already flagged in hung-number-state.json at the same number, median, and divergence — widening 0 on every key, no new keys, no re-opened keys. DELIVERABLE = none. Per the alert-only rule, nothing was sent.</p>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. FanDuel and Fanatics had the most spread flags (3 each) across 56 games — far from nearly every game. All 10 flags are lone stale numbers, not opinionated pricing.</p>
+<h4>State / delivery</h4>
+<p>State updated: 10 flagged keys&#x27; last_seen refreshed to the 21:44 ET run (unchanged, still flagged); closed-below-threshold keys left untouched (Delaware/BetMGM still absent from the flagged list). No gate file created — source publicly readable without sign-in, so this is NOT a source-gate event. Per the execution-phase rule, no message was sent from this worker run.</p>
+<h3>10:44 PM ET run — NO DELIVERABLES (8 flags re-seen unchanged, 2 closed; run silent)</h3>
+<p>Board read ~10:46–10:54 PM ET via ScoresAndOdds public BOARD views (https://www.scoresandodds.com/ncaaf/odds and https://www.scoresandodds.com/nfl/odds), no sign-in, no bets, no individual game pages opened. Browser task ran ~10:44–10:56 PM EDT.</p>
+<h4>Scope</h4>
+<ul>
+<li>56 not-started college football games checked (54 FBS + 2 added/FCS matchups: Kent State vs. Sacramento State, 10/30, 10:30 PM; UTEP vs. North Dakota State, 10/31, 3:30 PM).</li>
+<li>NFL: 0 not-started games in scope — the board showed only the in-progress 10/26 8:15 PM Cowboys vs. Eagles game plus finished games; no Week 8 games appeared.</li>
+<li>Board columns: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi where listed. Medians across all listed books with a price for that market, blanks excluded; only NJ-licensed books flagged; Kalshi-only outliers not flagged.</li>
+</ul>
+<h4>Full flagged list this run (8 book-instances, all spread; sorted by divergence desc)</h4>
+<ol>
+<li>Stanford vs. Louisville, 10/31, 3:15 PM — FanDuel: Louisville -21.5 vs. median -22.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Florida vs. Georgia, 10/31, 3:30 PM — Hard Rock: Florida +12.5 vs. median +11.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Minnesota vs. Indiana, 10/31, 3:30 PM — bet365: Indiana -19.5 vs. median -20.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — DraftKings: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>UTEP vs. North Dakota State, 10/31, 3:30 PM — Fanatics: UTEP +25.5 vs. median +24.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>South Carolina vs. Oklahoma, 10/31, 4:15 PM — FanDuel: Oklahoma -4.5 vs. median -5.5, divergence 1.0 (re-seen, unchanged).</li>
+<li>Ohio State vs. USC, 10/31, 7:30 PM — Hard Rock: USC +7.5 vs. median +6.5, divergence 1.0 (re-seen, unchanged). Key-number middle (spans 7): USC +7.5 at Hard Rock + Ohio State -6.5 at a consensus book wins both if Ohio State wins by exactly 7.</li>
+<li>Northern Illinois vs. UNLV, 10/31, 10:30 PM — FanDuel: Northern Illinois +24.5 vs. median +23.5, divergence 1.0 (re-seen, unchanged).</li>
+</ol>
+<p>No other spread flag spans a key number 3 or 7. No total reached the 1.5-point threshold (largest total divergences observed were 1.0 point) and no moneyline reached the 5-point implied-probability threshold for an NJ book (closest: Hard Rock Ohio State -325, ~76.5% implied vs ~71.8% median, ~4.6 points).</p>
+<h4>Closed below threshold this run (state updated, not delivered)</h4>
+<ol>
+<li>Delaware vs. Western Kentucky — Fanatics: flagged at 2.5 through the 21:44 ET run, absent from this run&#x27;s flagged list (no longer &gt;=1.0 off median). Exact current Fanatics number was not reported in the board summary.</li>
+<li>Texas State vs. Boise State — Fanatics: flagged at 1.0 through the 21:44 ET run, absent from this run&#x27;s flagged list (no longer &gt;=1.0 off median). Exact current Fanatics number was not reported in the board summary.</li>
+</ol>
+<h4>Deliverable check vs. state</h4>
+<p>All 8 flags match keys already flagged in hung-number-state.json at the same number, median, and divergence — widening 0 on every key, no new keys, no re-opened keys. DELIVERABLE = none. Per the alert-only rule, nothing was sent.</p>
+<h4>Totals / opinionated check</h4>
+<p>No book was off-consensus on nearly every in-scope game. FanDuel had the most spread flags (3) across 56 games — far from nearly every game. All 8 flags are lone stale numbers, not opinionated pricing.</p>
+<h4>State / delivery</h4>
+<p>State updated: 8 flagged keys&#x27; last_seen refreshed to the 22:44 ET run (unchanged, still flagged); 2 keys moved to closed-below-threshold (Delaware/Fanatics, Texas State/Fanatics); other closed-below-threshold keys left untouched. No gate file created — source publicly readable without sign-in, so this is NOT a source-gate event. Per the execution-phase rule, no message was sent from this worker run.</p></details>
+<div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
+</body></html>
