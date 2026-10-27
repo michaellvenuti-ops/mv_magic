@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>NHL Totals Board</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:680px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.flag{color:#f778ba;font-weight:700}
+.qual{color:#3fb950;font-weight:700}
+</style></head><body>
+<h1>NHL Totals Board</h1>
+<div class='sub'>Daily NHL total leans from @linemakersports' shots-times-save% system. Updated every morning; graded the next morning.</div>
+<h2>How it works</h2>
+<p>Predicted total for a game = <b>[away shots-on-goal/game x (1 - home team save%)] + [home shots-on-goal/game x (1 - away team save%)]</b>, using each team's season-to-date stats. Frank's example: 29 shots x .900 save% = 26.1 expected saves, leaving ~3 expected goals for that team.</p>
+<p><b>Save% choice:</b> each team's TEAM save% (all goalies combined: total saves / total shots against), because the reel's whiteboard factor reads "Opposing Goalies Save %" (plural). Caveat: a backup starter with a very different save% changes the number — check the announced starter before placing.</p>
+<p class='flag'>Threshold is CHET'S DISPLAY CHOICE, NOT Frank's claim — the reel states no threshold. A game is flagged OVER only when the predicted total sits at least 1.0 goal ABOVE the book total, and UNDER only when it sits at least 1.0 goal BELOW it. Games inside the 1.0 band are shown but never flagged.</p>
+<p class='flag'>Early-season caveat: season-to-date stats are noisy in the first weeks of the season, when teams have played only a handful of games.</p>
+<h2>2026-10-28</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Philadelphia Flyers @ Washington Capitals</td><td>7:30 PM</td><td>5.0</td><td>6.5</td><td>-1.5</td><td>-125</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>New Jersey Devils @ Colorado Avalanche</td><td>9:00 PM</td><td>34.09</td><td>0.8912</td><td>3.71</td><td>29.25</td><td>0.8817</td><td>3.46</td><td><b>7.2</b></td><td>6.5</td><td>0.7</td><td>—</td></tr>
+<tr><td>Calgary Flames @ Edmonton Oilers</td><td>8:30 PM</td><td>29.18</td><td>0.8793</td><td>3.52</td><td>25.58</td><td>0.8799</td><td>3.07</td><td><b>6.6</b></td><td>6.5</td><td>0.1</td><td>—</td></tr>
+<tr><td>Toronto Maple Leafs @ Seattle Kraken</td><td>10:00 PM</td><td>28.57</td><td>0.8947</td><td>3.01</td><td>26.17</td><td>0.9002</td><td>2.61</td><td><b>5.6</b></td><td>6.5</td><td>-0.9</td><td>—</td></tr>
+<tr><td>Philadelphia Flyers @ Washington Capitals</td><td>7:30 PM</td><td>22.69</td><td>0.8968</td><td>2.34</td><td>27.5</td><td>0.902</td><td>2.69</td><td><b>5.0</b></td><td>6.5</td><td>-1.5</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Calgary Flames</td><td>11</td><td>29.18</td><td>0.8799</td></tr>
+<tr><td>Colorado Avalanche</td><td>12</td><td>29.25</td><td>0.8912</td></tr>
+<tr><td>Edmonton Oilers</td><td>12</td><td>25.58</td><td>0.8793</td></tr>
+<tr><td>New Jersey Devils</td><td>11</td><td>34.09</td><td>0.8817</td></tr>
+<tr><td>Philadelphia Flyers</td><td>13</td><td>22.69</td><td>0.902</td></tr>
+<tr><td>Seattle Kraken</td><td>12</td><td>26.17</td><td>0.8947</td></tr>
+<tr><td>Toronto Maple Leafs</td><td>14</td><td>28.57</td><td>0.9002</td></tr>
+<tr><td>Washington Capitals</td><td>10</td><td>27.5</td><td>0.8968</td></tr>
+</table></div>
+<h2>Performance</h2>
+<h3>Over flags</h3>
+<p><b>0-0-0</b> · <b>—</b> · 0 graded flags · $100 flat at the recorded Over juice; record-only where no juice was recorded.</p>
+<h3>Under flags</h3>
+<p><b>0-0-0</b> · <b>—</b> · 0 graded flags · $100 flat at the recorded Under juice; record-only where no juice was recorded.</p>
+<p>Last scan: 2026-10-28; stats source: NHL club-stats API (team shots + team save%) + ESPN scoreboard (DraftKings totals), read 2026-10-27 ~11:08 PM ET.</p>
+<div class='foot'>Snapshot only — verify in the book app before placing. You place every bet yourself; nothing here places a bet. Sources: NHL public APIs (club-stats + standings) and the ESPN public scoreboard (DraftKings totals). No DarkHorse data is used in this system. The 1.0-goal flag threshold is Chet's display choice, not Frank's claim.</div></body></html>
