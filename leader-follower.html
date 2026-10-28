@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-10-28.md · page built 2026-10-28 15:50 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-10-28.md · page built 2026-10-28 16:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Leader-follower scan — 2026-10-28</h2>
 <h3>12:26 AM ET Oct 28 hourly check (scheduled 12:23 AM ET)</h3>
@@ -152,6 +152,19 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>All 5 tracked games still not started. No threshold-sized moves (spread &gt;=1.0 pt or total &gt;=1.5 pts), so no lead candidates.</li>
 <li>NEW GAMES: none for Oct 28-29. The NFL board&#x27;s first game is Panthers at Packers on Oct 29; the NCAAF board&#x27;s only Oct 28 games are the two stored Wed games.</li>
 <li>Credited leads: none. No-follows: none. Pack moves: none. Pending candidates: none. No book graduated (max 1 lead in trailing 14 days). No alert sent, per logging-phase rule.</li>
+</ul>
+<h3>12:35 PM ET Oct 28 (scheduled 12:23 PM ET run) — FAILED READ, no state change</h3>
+<ul>
+<li>Browser task (browser-task:86c299e2-4e66-5c3c-9089-3e381cca8c63) ran ~12:24 PM ET on the ScoresAndOdds public board but its window closed without delivering a per-book report (same failure pattern as the 5:35/7:35/9:35 AM ET runs).</li>
+<li>Text-fetch fallback (crawled 12:34 PM ET) rendered consensus lines only, not per-book values — not used to change or verify any stored line.</li>
+<li>No stored lines changed or verified; no credited leads, no pending candidates, no pack moves judged; no graduated book (BetMGM, Caesars, DraftKings each still at 1 lead, phase logging); no alert sent.</li>
+<li>Last verified per-book read remains 11:32 AM ET Oct 28. State backup: leader-follower-state.json.bak.1028-1235.</li>
+</ul>
+<h3>CORRECTED 12:31 PM ET Oct 28 (report arrived late, supersedes the 12:35 PM ET failed-read record)</h3>
+<ul>
+<li>Browser task report (ran 12:24–12:31 PM ET, read-only, no sign-in): all 5 tracked games UNCHANGED at all shown books, verified from each game&#x27;s expanded Compare Odds table (SPREAD and TOTAL views); no sign flips; all 5 games still not started.</li>
+<li>HardRock shown for Panthers at Packers (unchanged); HardRock not shown for the 4 FBS games, as stored.</li>
+<li>No credited leads, no pending candidates, no graduated book, no alert sent. Last verified read now 12:31 PM ET Oct 28.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
