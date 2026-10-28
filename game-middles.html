@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Game Middles Board</h1>
-<div class="sub">Latest scan list: game-middles-2026-10-28.md · page built 2026-10-28 16:50 ET</div>
+<div class="sub">Latest scan list: game-middles-2026-10-28.md · page built 2026-10-28 17:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>0-1-0</b> · <b>$-41.18</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Middles graded at $100 per leg at the recorded prices against the final score; pushes refund that leg.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Bowling Green vs Buffalo | Alt Spread | Buffalo +2.5 FanDuel -170 | Bowling Green +0.5 Bally Bet +135</td><td><span class='badge loss'>LOSS</span></td><td>$-41.18</td></tr></table></div><details><summary>Full scan log</summary><h2>Game middles — 2026-10-28</h2>
 <h3>12:26–12:47 AM ET scan (browser-task:fafce2d3-b5be-5b77-a874-7cc7261cb708) — INCOMPLETE, no report delivered</h3>
@@ -265,6 +265,21 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Target pairs: Kent St. vs Sacramento St. (+13.5 / -10.5) NOT seen in rows 1–1000 (no Kent St./Sacramento St. row of any line noted); Auburn vs Ole Miss (+17.5 / -14.5) NOT seen in that exact form (other line appeared p.9: Auburn +38.5 Fanatics-NJ -2500 vs Ole Miss -35.5 FanDuel +1000, Oct 31 12:45 PM, -5.02%). Caveat holds: the Bet Odds Max = -170 entry did not enforce in practice (primaries to -50000 appeared) and the filtered view may exclude some rows, so absence does NOT prove either line is gone.</li>
 <li>Anomalies: extreme primaries to -50000 with blended/prediction-market formats (Polymarket, Novig, DraftKings Predictions); recurring both-plus/same-side displays; duplicate blocks across pages; p.6 missing Weather and Middle columns; Middle % non-monotonic (not the sort column); Bet Slip panel stuck on the page-1 first row (not relied on).</li>
 <li>Deliverables: NONE (0 NEW, 0 UPDATED). Per the alert-only rule, no user message sent. State: 2 entries retained, 0 pruned (Kent St. last_seen unchanged Oct 26 1:34 PM ET, ~47h old, under the 48h prune threshold — it reaches 48h at ~1:34 PM ET Oct 28, so the next run should prune it if still unseen; Auburn last_seen unchanged Oct 27 8:43 PM ET, ~16h old). State backup: game-middles-state.json.bak.1028-1226.</li>
+</ul>
+<h3>1:26 PM ET run — INCOMPLETE (no browser report)</h3>
+<ul>
+<li>Browser task browser-task:08a5ef38-b156-5163-9c44-75139c4b6737 launched; window confirmed working on https://darkhorseodds.com/middles with no signed-out redirect observed, but after ~20 min no report was delivered (no signed-in status, no filtered total, no qualifying rows, no best-primary claim). Same late/no-report pattern as several Oct 27/28 runs.</li>
+<li>NOT a verified zero: no claim about qualifying middles, best primary, or either target pair can be made from this run. If a late report for this task_id arrives, it supersedes this note.</li>
+<li>State: Kent St. vs Sacramento St. entry PRUNED under the 48h rule (last_seen Oct 26 1:34 PM ET, now 48h+; the 12:26 PM run&#x27;s handoff said to prune if still unseen). Caveat stands: pruning is a state-age rule, not proof the line is gone — the numeric -170 filter may exclude a -135 primary. Auburn vs Ole Miss retained (last_seen Oct 27 8:43 PM ET, ~17h old). State backup: game-middles-state.json.bak.1028-1345.</li>
+<li>Deliverables: NONE claimed. Per the alert-only rule, no user message sent.</li>
+</ul>
+<h3>1:26 PM ET run — CORRECTION (late report supersedes the incomplete note)</h3>
+<ul>
+<li>Completed scan 1:27–1:48 PM ET: signed in (Sign Out visible every page). Filters as tasked; 100/page (max offered); filtered total &quot;15M+&quot; on all pages 1–10. Rows 1–1000 scanned, conversion about −2.29% to −5.19%.</li>
+<li>QUALIFYING MIDDLES: ZERO — no row had both legs at −170 or better while meeting the width rule; no clean-tier combo, no KEY-NUMBER flag. Best primary overall −174 (NBA GS Warriors vs MIN Timberwolves, today 8:15 PM, Alt Spread, MIN +1.5 Novig vs GS +1.5 Novig +138.5, both-plus display, fails −170 by 4). Per-page best primaries: p.1 −280, p.2 −177, p.3 −286, p.4 −180, p.5 −280, p.6 −278, p.7 −175, p.8 −278, p.9 −177, p.10 −174.</li>
+<li>Target pairs: Kent St./Sacramento St. (+13.5 / −10.5) not seen at all in rows 1–1000 (corroborates the 48h prune; caveat still holds that absence does not prove the line is gone); Auburn/Ole Miss (+17.5 / −14.5) not seen in exact form (other lines +37.5/−34.5 and +38.5/−35.5 appeared).</li>
+<li>Anomalies: all columns present every page; heavy near-duplicates; extreme primaries to −50000; small non-monotonic jumps in Middle %.</li>
+<li>Deliverables: NONE. Per the alert-only rule, no user message sent. State backup: game-middles-state.json.bak.1028-1448.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
