@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Game Middles Board</h1>
-<div class="sub">Latest scan list: game-middles-2026-10-28.md · page built 2026-10-29 01:50 ET</div>
+<div class="sub">Latest scan list: game-middles-2026-10-28.md · page built 2026-10-29 02:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>0-1-0</b> · <b>$-41.18</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Middles graded at $100 per leg at the recorded prices against the final score; pushes refund that leg.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Bowling Green vs Buffalo | Alt Spread | Buffalo +2.5 FanDuel -170 | Bowling Green +0.5 Bally Bet +135</td><td><span class='badge loss'>LOSS</span></td><td>$-41.18</td></tr></table></div><details><summary>Full scan log</summary><h2>Game middles — 2026-10-28</h2>
 <h3>12:26–12:47 AM ET scan (browser-task:fafce2d3-b5be-5b77-a874-7cc7261cb708) — INCOMPLETE, no report delivered</h3>
@@ -404,6 +404,19 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Anomalies: extreme primaries to -50000 and prediction-market prices; heavy duplicate blocks; one CFL row p.9; p.5 and p.10 initially headers-only, loaded after waiting; p.1 Middle % non-monotonic while Profit % descended.</li>
 <li>Deliverables: 1 NEW (Kent St./Sacramento St.), 0 UPDATED. Delivered per the alert-only rule (final message carries the one-tap block; main agent handles delivery + voice note).</li>
 <li>State: 5 entries retained, 0 pruned (Auburn last_seen Oct 27 8:43 PM ET, ~25h old; FAU and Tulane Oct 28 4:46 PM ET; Lakers Oct 28 5:41 PM ET; new Kent St. entry Oct 28 9:41 PM ET — all under 48h). State backup: game-middles-state.json.bak.1028-2141.</li>
+</ul>
+<h3>10:26-10:40 PM ET Oct 28 scan (browser-task:96736ff3-d0a6-532a-b956-2ce4ee6e6c36, harness-measured 13 min)</h3>
+<ul>
+<li>SIGNED IN (Sign Out visible throughout, no redirect, no sign-in attempted, no bot challenge). READ-ONLY: no account/global settings changed, &quot;Include Player Props&quot; untouched, preset unsaved.</li>
+<li>Filters: game markets only (Spread, Total, Alt Spread, Alt Total; no props); widths spreads 3+ / totals 4+; Bet Odds Max = -170, Min blank; Sportsbook Target left at Any Book (Hedge Bet Odds disabled, -170 cap applied manually); Primary Bet $1,000; Liquidity Mode Full Bet Size Only; Items per page 100 as found (dropdown not opened, so max-offered UNCONFIRMED this run).</li>
+<li>COVERAGE: rows 1-1000 (pages 1-10) of a displayed filtered total of &quot;13M+&quot; pp.1-4 shifting to &quot;12M+&quot; pp.5-10 (live-data drift; implausible as a literal count, appears to be a combination count). First-1,000-row scan per the established protocol; rows beyond 1,000 not scanned.</li>
+<li>Profit range: -2.48% (p.1 first row) to -5.46% (p.10 last row), all negative, broadly descending.</li>
+<li>QUALIFYING MIDDLES: EXACTLY ONE, and it is the already-known Kent St. entry re-seen UNCHANGED — Kent St. vs Sacramento St., Oct 30 10:30 PM, Alt Spread: Sacramento St. +14.5 HardRock -170 / Kent St. -11.5 Novig +135.3, window 3.0 (Kent St. wins by 12, 13, or 14), Middle $1,501.47 at 89.64%, conversion -5.18%. Identical prices/Middle/conversion to the 9:41 PM first sighting, so NO change trigger met. NOT key-number (NCAAF; margin window contains none of 3/7/10). NOT clean tier (primary -170 fails -140; no -140-or-better alt combo for this pair in rows 1-1000).</li>
+<li>Per-page best primaries: p.1 -275, p.2 -175, p.3 -177, p.4 -220, p.5 -170 (the qualifier), p.6 -181.7, p.7 -182, p.8 -200, p.9 -225, p.10 -188. Near-misses with genuine windows but failing the -170 cap: Charlotte +20.5 / Tulane -17.5 (-275), Charlotte +17.5 / Tulane -14.5 (-220/-225), Sacramento St. +16.5 / Kent St. -13.5 (-200).</li>
+<li>Tracked pairs: NONE of the other 4 entries re-seen in exact form — Auburn +17.5/-14.5 (only +38.5/-35.5, +39.5/-36.5, +37.5/-34.5 and alt totals); FAU +20.5/-17.5 (only reversed/other lines and Alt Total Over 49.5/Under 53.5); Tulane/Charlotte +16.5/-13.5 (only +20.5/-17.5 and +17.5/-14.5); Lakers/Clippers +7/-3.5 (only far wider alt spreads and alt totals). Caveat holds: the numeric -170 filter may exclude rows, so absence does NOT prove any line is gone.</li>
+<li>Anomalies: Bet Odds Max = -170 did not enforce numerically (primaries to -50000, mostly prediction-market books); filtered-total drift 13M+ to 12M+; small Middle % non-monotonic bumps; no missing columns, no Profit % sort break, no bot challenge.</li>
+<li>Deliverables: 0 NEW, 0 UPDATED. Per the alert-only rule, no user message sent.</li>
+<li>State: 5 entries retained, 0 pruned (Auburn last_seen Oct 27 8:43 PM ET, ~26h old; FAU and Tulane Oct 28 4:46 PM ET; Lakers Oct 28 5:41 PM ET; Kent St. re-seen Oct 28 10:40 PM ET — all under 48h). State backup: game-middles-state.json.bak.1028-2240.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
