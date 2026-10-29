@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-29.md · page built 2026-10-29 19:51 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-29.md · page built 2026-10-29 20:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -188,6 +188,18 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST: none. No market reached 70% of tickets with a threshold move toward the minority; the closest was FAU spread at 65% with an unchanged board median. No news check triggered (no candidate met both conditions).</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State: 6 Oct 29 keys updated to 15:26 ET (backup rlm-state.json.bak.1523). Re-flag threshold for FAU/North Texas spread remains North Texas -15 or beyond.</li>
+</ul>
+<h3>Run 16:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in (browser task browser-task:63fe43fc-7d6a-5a43-b43e-45c480c9e563 spawned per the task body; window observed working on ScoresAndOdds NCAAF plus a DraftKings tab, still working at ~16:31 ET after a compact-report nudge, report NOT delivered when bookkeeping closed). Covers/VegasInsider fallbacks not reached; no gate issue — readable splits sources existed in prior runs, no rlm-gate-notified file.</li>
+<li>Today&#x27;s slate (from prior runs, not re-verified this run): 3 not-started games — Troy at James Madison 7:30 PM ET; Florida Atlantic at North Texas 7:30 PM ET; Panthers at Packers 8:15 PM ET. No other not-started NFL/FBS game claimed today.</li>
+<li>FLAGGED LIST: none determinable this run. No panel median or ticket split was verified: no flag is claimed on carried numbers, and no news check was triggered (no candidate met both RLM conditions on verified data).</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 6 Oct 29 keys&#x27; last_seen set to 2026-10-29T16:31-04:00 with the pending-report note; medians/splits and the FAU spread flag reference (North Texas -14.5, re-flag threshold -15 or beyond) carried unchanged (backup rlm-state.json.bak.1623). Next run must reconcile the late browser report if it arrives, or re-read the panel, before any flag can be judged.</li>
+</ul>
+<ul>
+<li>Late confirmation to Run 16:23 ET (browser task report, ran 4:24-4:34 PM ET, board read ~4:25-4:33 PM ET): CONFIRMS the no-flag outcome, resolving the pending-report caveat. Same 3 not-started games, splits from ScoresAndOdds consensus (% of bets) for all three; Covers/VegasInsider fallbacks not needed. Troy/JMU spread JMU -19.5 / total 51.5, splits JMU 53% / Over 52% — all unchanged. FAU/North Texas spread 7-book panel median North Texas -14.5 / total 77.5, splits FAU 65% / Under 59% — panel median matches the stored -14.5 flag reference (the 15:26 board read of -14 was method variance) and does not reach the -15 re-flag level; FAU 65% is below 70%. Panthers/Packers splits Packers 53% (was 54%) / Over 60% (was 59%); panel median NOT verified this run (NFL Game Details panel did not render) — stored medians Packers -3.5 / 46.5 kept, with the main-board -3.5 / 46.5 noted as context only, not a verified median. No market reached 70% of tickets, so no candidate met both RLM conditions and no news check was triggered. FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
+<li>State reconciled (6 Oct 29 keys, last_seen 16:33 ET; backup rlm-state.json.bak.1634). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
