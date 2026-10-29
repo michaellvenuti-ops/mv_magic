@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 15:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 16:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
 <h3>Run 07:40 AM EDT (first live run of this scan)</h3>
@@ -69,6 +69,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing, left unchanged); Sportsbook Target Any Book, Liquidity Mode Full Bet Size Only. Pages checked: 1, 77 results total (shown &quot;1 – 77 of 77&quot;, Next disabled), all reviewed.</li>
 <li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket leg appeared in any of the 77 rows (text search for Kalshi/Polymarket returned no matches); books shown were sportsbooks plus Novig, ProphetX, BroThrow and DraftKings Predictions depth legs, none of which qualify under this scan&#x27;s filter.</li>
 <li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run (the main scan&#x27;s earlier Lakers–Warriors Kalshi/Polymarket US pairs did not reappear here).</li>
+<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
+</ul>
+<h3>Run 12:44 PM EDT</h3>
+<ul>
+<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
+<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Sportsbook Target left at Any Book. Pages checked: 2, 132 results total (p.1: 1–100, p.2: 101–132); 54 rows at profit ≥2%.</li>
+<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi, Polymarket US, or Polymarket Intl. leg appeared in any of the 132 filtered results, even below 2%.</li>
+<li>Dropped prediction-market legs at ≥2%: 6 of the 54 rows — DraftKings Predictions 4 (e.g. NHL WPG/TB Shots E. Salomonsson $106.08 / 5.46% and $65.04 / 3.28%; NHL CHI/DET Points A. Copp $46.77 / 2.57%, two variants) and Novig 2 (e.g. NBA SAC/NO Assists D. Acuff $55.38 / 3.12%; NFL PHI/WAS Receptions T. Burks $42.80 / 2.29%). ProphetX and BroThrow had no rows at ≥2% in the filtered set.</li>
+<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
 <li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
