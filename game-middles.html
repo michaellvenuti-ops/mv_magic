@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Game Middles Board</h1>
-<div class="sub">Latest scan list: game-middles-2026-10-29.md · page built 2026-10-29 07:37 ET</div>
+<div class="sub">Latest scan list: game-middles-2026-10-29.md · page built 2026-10-29 11:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>0-1-0</b> · <b>$-41.18</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Middles graded at $100 per leg at the recorded prices against the final score; pushes refund that leg.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Bowling Green vs Buffalo | Alt Spread | Buffalo +2.5 FanDuel -170 | Bowling Green +0.5 Bally Bet +135</td><td><span class='badge loss'>LOSS</span></td><td>$-41.18</td></tr></table></div><details><summary>Full scan log</summary><h2>Game middles scan log — 2026-10-29</h2>
 <h3>12:26 AM ET scan — INCOMPLETE (no report delivered)</h3>
@@ -134,6 +134,25 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Method note: this run&#x27;s browser agent counted both-plus rows (e.g. Southern Miss +1.5 / Louisiana-Monroe +1.5) as a 3.0 window rather than the established window-0 exclusion; no deliverable impact, since every such row failed the -170 price rule.</li>
 <li>Anomalies: extreme primaries to -50000; Middle % sort breaks; heavy duplicate/near-duplicate rows; no missing columns.</li>
 <li>Deliverables: 0 NEW, 0 UPDATED. Per the alert-only rule, no user message sent. State: 5 entries retained, 0 pruned, last_seen unchanged (Auburn ~34h old, under 48h).</li>
+</ul>
+<h3>7:26 AM ET scan — INCOMPLETE (no report delivered)</h3>
+<ul>
+<li>Browser task: browser-task:faeb2294-a32b-5e53-8602-6384ad6059e0, launched 7:26 AM ET; window confirmed working on https://darkhorseodds.com/middles at ~7:30 AM ET and ~7:35 AM ET with no signed-out redirect observed, then found CLOSED at the ~7:37 AM ET check with NO report delivered after ~18 min of waiting (no signed-in status, no filtered total, no qualifying rows, no best-primary claim).</li>
+<li>NOT a verified zero: no qualifying-row, best-primary, or target-pair presence/absence claim can be made from this run. A late report for this task_id, if one arrives, supersedes this note — though the window closed, so a late report is less likely (same pattern as the 5:26 PM, 7:26 PM and 8:26 PM Oct 28 runs, whose late reports did still arrive).</li>
+<li>Coverage: none verified. No sign-in attempted (per task body); the window&#x27;s working state with no redirect is not proof of sign-in.</li>
+<li>Deliverables: 0 claimed. Per the alert-only rule, no user message sent.</li>
+<li>State: 5 entries retained, 0 pruned (Auburn ~35h, FAU ~7h, Tulane ~7h, Lakers ~14h, Kent St. ~9h old; all under 48h). State backup: game-middles-state.json.bak.1029-0726.</li>
+</ul>
+<h3>7:26 AM ET scan — CORRECTION (completed, supersedes incomplete note)</h3>
+<ul>
+<li>Completed 7:26–7:33 AM ET (late report; harness-measured 6 min — the ~18 min in the incomplete note was wait time after the task had ended, not task duration). SIGNED IN (Sign Out visible on every results page, no redirect, no sign-in attempted, no bot challenge; pages initially blank then populated after ~8–10s waits).</li>
+<li>Filters: game markets only (Spread, Total, Alt Spread, Alt Total; no props); widths spreads 3+ / totals 4+; Bet Odds Max = -170, Min blank; Sportsbook Target left at Any Book (Hedge Bet Odds disabled, -170 cap applied manually); Primary Bet $1,000; Liquidity Mode Full Bet Size Only; Items per page 100 (max offered); Include Player Props untouched; no account/global settings changed; preset unsaved.</li>
+<li>COVERAGE: rows 1–1000 (pages 1–10) of a displayed filtered total of 11M+ on every page (as displayed only, not a verified count); rows beyond 1,000 not scanned.</li>
+<li>Profit range: -0.87% (p.1 first row, MEM/POR) to -5.46% (p.10 last row, PHI +30.5 / WAS -27.5).</li>
+<li>QUALIFYING MIDDLES: ZERO. No row had both legs at -170 or better with a genuine 3+ spread / 4+ total window; no clean-tier combo, no KEY-NUMBER flag. Per-page best primaries: p.1 -316.7, p.2 -175 (Florida +17.5 / Georgia -14.5), p.3 -175 (same pair), p.4 -178.3 (both-plus, window 0), p.5 -250 (FAU +24.5 / North Texas -21.5), p.6 -181.7 (both-plus, window 0), p.7 -180 (Florida/Georgia), p.8 -2500, p.9 -275 (FAU +25.5 / North Texas -22.5), p.10 -233.3 (both-plus, window 0). Closest near-miss: Florida +17.5 -175 (theScore) / Georgia -14.5 (Bet105), Middle $1,500.88 / 91.46%, profit -4.30%, window 3.0 — fails -170 by 5.</li>
+<li>Tracked pairs: NONE in exact form — Auburn +17.5/-14.5 (only +34.5/-31.5, +38.5/-35.5, +37.5/-34.5 variants); FAU +20.5/-17.5 (only reversed/other lines, incl. +24.5/-21.5 and +25.5/-22.5); Charlotte +16.5/Tulane -13.5, Clippers +7/Lakers -3.5, Sacramento St. +14.5/Kent St. -11.5 (no variant seen at all). Caveat holds: Bet Odds Max = -170 did not enforce numerically (primaries to -50000), so absence does NOT prove any line is gone.</li>
+<li>Anomalies: extreme primaries to -50000; 11M+ total implausible as a literal count; Middle % non-monotonic; no missing columns.</li>
+<li>Deliverables: 0 NEW, 0 UPDATED. Per the alert-only rule, no user message sent. State: 5 entries retained, 0 pruned, last_seen unchanged.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
