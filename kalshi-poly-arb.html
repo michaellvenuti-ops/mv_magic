@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 22:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 23:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
 <h3>Run 07:40 AM EDT (first live run of this scan)</h3>
@@ -126,6 +126,21 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Dropped prediction-market legs at ≥2%: Novig 5 rows (e.g. NBA CLE Cavaliers / ATL Hawks, Today 8:15 PM, 2.81%; NBA NY Knicks / PHI 76ers, Oct-30 7:45 PM, 2.05%) — dropped because Novig alone does not qualify. ProphetX, DraftKings Predictions, and BroThrow had no rows at ≥2% (DraftKings Predictions appeared once in the set, at 1.37%).</li>
 <li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
 <li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
+</ul>
+<h3>Run 18:44 PM EDT</h3>
+<ul>
+<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in as loaded (browser task 6:44–6:51 PM EDT; read ~6:47–6:50 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000.</li>
+<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing). Unfiltered total 798; filtered total 157 (p.1: 1–100, p.2: 101–157); final cut used the tool&#x27;s displayed profit % &gt;= 2.00%.</li>
+<li>Browser agent reported 11 &quot;qualifying&quot; rows, but 9 of them were CORRECTED here under this scan&#x27;s placeability rule: each paired a Kalshi leg with a Polymarket International leg. Polymarket Intl. is not placeable for Michael, and the other leg must be a placeable book (NJ sportsbook or ProphetX), so those 9 D. Murray pairs (45.77% down to 3.51%, all NBA SAC Kings vs NO Pelicans, Today 8:15 PM) were dropped, not delivered and not entered in state. Page 2 added no placeable qualifiers (1.75% down to 1.10%, including a Polymarket US pair at 1.40% and a Kalshi pair at 1.13%, both below 2%).</li>
+<li>Qualifying, placeable pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US AND the other leg placeable): 2, both NBA SAC Kings vs NO Pelicans, Today 8:15 PM, Points J. Fears.</li>
+<li>Deliverables (NEW to both this scan&#x27;s state, previously empty, and the main arbitrage-state.json — no J. Fears entry there): 2, sorted by profit % desc:</li>
+</ul>
+<p>  1. NEW — Points J. Fears — Leg 1: J. Fears 15+ NO +105.7 Polymarket US $1,000; Leg 2: J. Fears Over 14.5 +155 Bet365 $779; Profit $206.77, 11.62%. Arb Risk: YES (shown in Bet Slip, with &quot;Poly/Kalshi Prop&quot;).</p>
+<p>  2. NEW — Points J. Fears — Leg 1: J. Fears Over 14.5 NO -122.7 Kalshi $1,000; Leg 2: J. Fears Over 14.5 +155 Bet365 $712; Profit $103.38, 6.04%. Arb Risk: none shown.</p>
+<ul>
+<li>Dedupe: both pairs are new to both states, so neither was suppressed by the main-scan dedupe.</li>
+<li>State: kalshi-poly-arb-state.json now holds these 2 entries (first_reported 2026-10-29T18:47:00-04:00, last_seen 2026-10-29); nothing to prune (no prior entries, event at 8:15 PM Oct 29 not yet started at read time).</li>
+<li>Delivery: per the execution-phase rule, no chat message was sent directly by this worker; the 2-pair deliverable block is returned as the run&#x27;s result for the main agent to deliver headed &quot;Kalshi-poly-arb&quot;, with the exchange-liquidity footer and a voice note covering both pairs.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
