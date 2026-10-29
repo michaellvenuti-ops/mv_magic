@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-29.md · page built 2026-10-29 21:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-29.md · page built 2026-10-29 22:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -200,6 +200,33 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>Late confirmation to Run 16:23 ET (browser task report, ran 4:24-4:34 PM ET, board read ~4:25-4:33 PM ET): CONFIRMS the no-flag outcome, resolving the pending-report caveat. Same 3 not-started games, splits from ScoresAndOdds consensus (% of bets) for all three; Covers/VegasInsider fallbacks not needed. Troy/JMU spread JMU -19.5 / total 51.5, splits JMU 53% / Over 52% — all unchanged. FAU/North Texas spread 7-book panel median North Texas -14.5 / total 77.5, splits FAU 65% / Under 59% — panel median matches the stored -14.5 flag reference (the 15:26 board read of -14 was method variance) and does not reach the -15 re-flag level; FAU 65% is below 70%. Panthers/Packers splits Packers 53% (was 54%) / Over 60% (was 59%); panel median NOT verified this run (NFL Game Details panel did not render) — stored medians Packers -3.5 / 46.5 kept, with the main-board -3.5 / 46.5 noted as context only, not a verified median. No market reached 70% of tickets, so no candidate met both RLM conditions and no news check was triggered. FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
 <li>State reconciled (6 Oct 29 keys, last_seen 16:33 ET; backup rlm-state.json.bak.1634). No message sent.</li>
+</ul>
+<h3>Run 17:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in — PRIMARY TASK FAILED: browser task browser-task:91511e89 ran 5:25-5:33 PM ET; ScoresAndOdds navigation was aborted before any odds panel rendered, so no median spread, median total, or consensus ticket split was obtained for any game, and no single-book line was substituted. FALLBACK TASK (Covers first, then VegasInsider) was dispatched per the task body&#x27;s validation order; its window was observed working on Covers consensus/matchup pages and a VegasInsider matchup page, but the window closed without a delivered report, even after a compact-report nudge.</li>
+<li>Today&#x27;s slate (from prior runs, not re-verified this run): 3 not-started games — Troy at James Madison 7:30 PM ET; Florida Atlantic at North Texas 7:30 PM ET; Panthers at Packers 8:15 PM ET. No other not-started NFL/FBS game claimed today; no first sightings.</li>
+<li>FLAGGED LIST: none determinable this run. No panel median or ticket split was verified: no flag is claimed on carried numbers, and no news check was triggered (no candidate met both RLM conditions on verified data).</li>
+<li>SOURCE GATE: NOT triggered. The gate requires splits unreadable from all three of ScoresAndOdds, Covers, and VegasInsider; here ScoresAndOdds failed to load in one attempt, but Covers/VegasInsider pages were observed loading and their report simply never arrived — that is an undelivered report, not proof the sources are unreadable. No rlm-gate-notified file created.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 6 Oct 29 keys&#x27; last_seen set to 2026-10-29T17:52-04:00 with the pending-report note; medians/splits and the FAU spread flag reference (North Texas -14.5, re-flag threshold -15 or beyond) carried unchanged (backup rlm-state.json.bak.1723). Next run must reconcile the late fallback report if it arrives, or re-read the panel, before any flag can be judged. Corroborating secondary board lines seen in web search (not used for flagging, no splits attached): JMU -19.5 to -20 / total ~50.5-51.5; North Texas -14 / total 77.5; Packers -3.5 / total 47-47.5 — these are NOT ScoresAndOdds medians and were not substituted for them.</li>
+</ul>
+<h3>Addendum to Run 17:23 ET — late fallback report received (ran 5:37–5:46 PM ET, data observed 5:37–5:42 PM ET, as of 5:43 PM ET)</h3>
+<ul>
+<li>The Covers/VegasInsider fallback report arrived after this run&#x27;s bookkeeping closed, resolving the pending-report caveat in part. All three games were still not started at that time. No sign-in or bet was made.</li>
+<li>Troy/JMU: Covers median JMU -19.5 (matches stored), total 51.0 (vs stored 51.5 — 0.5 method variance, still below the 1.5 total threshold). Verified ticket splits NOT obtained: VegasInsider&#x27;s Bets panel showed a sign-in prompt instead of percentages (no sign-in attempted); Covers consensus picks (59% JMU spread, 63% Over) are NOT % of bets and were not substituted for splits. No candidate at 70%+ on verified data — no flag.</li>
+<li>FAU/North Texas: Covers median North Texas -14.5 (matches stored flag reference, does NOT reach the -15 re-flag level), total 78.0 (vs stored 77.5 — 0.5 method variance). Ticket splits NOT captured in this pass — cannot be assessed, no flag. Stored FAU 65% carried.</li>
+<li>Panthers/Packers: no Covers/VegasInsider median or splits data captured in this pass — cannot be assessed, no flag. Stored Packers -3.5 / 46.5 and splits carried.</li>
+<li>Reconciliation: the late report confirms the no-flag outcome — no market met both RLM conditions on verified data (70%+ tickets + threshold move toward the minority), and no news check was triggered. FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
+<li>State reconciled (6 Oct 29 keys, notes updated to the late report; medians/splits carried unchanged, backup rlm-state.json.bak.1723late). Source gate remains NOT triggered: Covers pages loaded and medians were obtained; only verified ticket splits were missing in this pass, and ScoresAndOdds splits were readable in every earlier run today.</li>
+</ul>
+<h3>Run 18:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in (browser task ran 6:24-6:30 PM ET, board read ~6:29 PM ET). Splits from ScoresAndOdds consensus (% of bets) for all 3 games; Covers/VegasInsider fallbacks not needed. No gate issue.</li>
+<li>Today&#x27;s slate: 3 not-started games — Troy at James Madison 7:30 PM ET; Florida Atlantic at North Texas 7:30 PM ET; Panthers at Packers 8:15 PM ET. No other not-started NFL/FBS game today; no first sightings.</li>
+<li>Reads vs 17:52 baselines: Troy/JMU spread JMU -19.5 unchanged, total 51.5 unchanged, splits JMU 53% / Over 52% unchanged. FAU/North Texas spread North Texas -14.5 unchanged vs stored flag reference (does NOT reach the -15 re-flag level); total 77.5 -&gt; 78.5 (+1.0 toward minority Over, below 1.5; public Under 59% &lt;70) - not flagged; splits FAU 65% / Under 59% unchanged. Panthers/Packers spread Packers -3.5 unchanged (all 8 books -3.5), total 46.5 with 4 books at 47 (at most +0.5 toward public Over, below 1.5, not RLM direction), splits Packers 53% -&gt; 51% / Over 60% -&gt; 62%.</li>
+<li>FLAGGED LIST: none. No market reached 70% of tickets with a threshold move toward the minority; the closest was FAU spread at 65% with an unchanged median. No news check triggered (no candidate met both conditions).</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 6 Oct 29 keys updated to 18:30 ET (backup rlm-state.json.bak.1823). Re-flag threshold for FAU/North Texas spread remains North Texas -15 or beyond.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
