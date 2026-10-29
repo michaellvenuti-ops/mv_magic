@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 21:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 22:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
 <h3>Run 07:40 AM EDT (first live run of this scan)</h3>
@@ -114,6 +114,16 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared at ≥2.00% in the full 115-row set, and no Polymarket (US or Intl.) leg appeared at ≥2.00%.</li>
 <li>Kalshi leg seen below 2% (not qualifying): NBA MEM Grizzlies vs POR Trail Blazers, Today 10:15 PM, Points J. Morant market, 1.65% (Kalshi leg). No Polymarket US leg seen below 2%.</li>
 <li>Dropped prediction-market legs at ≥2%: Novig 5 rows (2.95%, 2.86%, 2.72%, 2.23%, 2.01%) and ProphetX 1 row (2.70%) — dropped because neither qualifies under this scan&#x27;s filter. Polymarket Intl. and BroThrow had no rows at ≥2%; DraftKings Predictions appeared only below 2% (1.37%, 1.35%).</li>
+<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
+<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
+</ul>
+<h3>Run 17:44 PM EDT</h3>
+<ul>
+<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt, no bot/CAPTCHA check; normal loading splash only). Read-only except the instructed Profit filter; no account/global settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000, Sportsbook Target left at Any Book.</li>
+<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing); final cut used the tool&#x27;s displayed profit %. Pages checked: 1, 95 filtered results total (shown &quot;1 – 95 of 95&quot;, 100/page, Next disabled; unfiltered total 529). 39 rows at displayed profit ≥2.00% (highest 8.69%, lowest in set 2.03%); the $20 dollar floor also pulled in rows down to 1.15%.</li>
+<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg at ≥2.00% in the 95 rows; no Polymarket Intl. leg at ≥2.00% either, and no leg labeled only &quot;Polymarket&quot; appeared anywhere in the filtered table (text search for Polymarket returned no rows), so no ambiguous-label row had to be set aside. Books list inspected only (no selections changed): Kalshi, Polymarket Intl., and Polymarket US all listed and checked, so the absence was in the results, not a book exclusion.</li>
+<li>Kalshi legs seen below 2% (not qualifying): NFL MIN Vikings / DET Lions — Kalshi — 1.56%; NFL TEN Titans / CIN Bengals — Kalshi — 1.31%. No Polymarket US leg seen below 2%.</li>
+<li>Dropped prediction-market legs at ≥2%: Novig 5 rows (e.g. NBA CLE Cavaliers / ATL Hawks, Today 8:15 PM, 2.81%; NBA NY Knicks / PHI 76ers, Oct-30 7:45 PM, 2.05%) — dropped because Novig alone does not qualify. ProphetX, DraftKings Predictions, and BroThrow had no rows at ≥2% (DraftKings Predictions appeared once in the set, at 1.37%).</li>
 <li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
 <li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
 </ul></details>
