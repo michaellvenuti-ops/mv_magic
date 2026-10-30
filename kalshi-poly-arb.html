@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-30 01:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-30 02:51 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
 <h3>Run 07:40 AM EDT (first live run of this scan)</h3>
@@ -168,6 +168,17 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared in the 33 rows at &gt;= 2%; the Polymarket legs in that band were Polymarket Intl. only and were excluded under the filter, so there are no qualifying leg details, profit amounts, or Arb Risk flags to report.</li>
 <li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
 <li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
+</ul>
+<h3>Run 22:44 PM EDT</h3>
+<ul>
+<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session (browser task 10:44–10:48 PM EDT; read ~10:46–10:48 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000. No bets placed.</li>
+<li>Filter: tool&#x27;s own Profit filter, Min Profit $20 (dollar-denominated, = 2% on the $1,000 primary framing), plus Min Conversion 2%. Final cut used the tool&#x27;s displayed profit % &gt;= 2.00%. All results on one page: &quot;1 – 28 of 28&quot;, profit range 2.04%–10.44%.</li>
+<li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 2, both Kalshi, both NEW (not in kalshi-poly-arb-state.json, which was empty, and not in arbitrage-state.json — grep for Gonzaga/Purdue in the main state returned 0). No Polymarket US or Polymarket Intl. rows appeared in the 28.</li>
+<li>1. NEW — NCAAB 15 Gonzaga Purdue — Nov-02 7:30 PM, Moneyline: Gonzaga YES −207.6 [66%] Kalshi $1,000 + Purdue +300 HardRock $370; profit $110.00, 8.03%; Arb Risk: Yes.</li>
+<li>2. NEW — NCAAB 15 Gonzaga Purdue — Nov-02 7:30 PM, Moneyline: Purdue NO −261.7 [71%] Kalshi $1,000 + Purdue +300 HardRock $346; profit $36.18, 2.69%; Arb Risk: Yes.</li>
+<li>Deliverables: 2 — delivery prepared for the main agent (one-tap blocks, both marked NEW, both with Arb Risk warning, plus the exchange-liquidity footer); this worker does not send chat messages directly.</li>
+<li>State: kalshi-poly-arb-state.json now holds these 2 entries (last_seen 2026-10-29, event 2026-11-02 7:30 PM ET). Nothing to prune — prior state was empty.</li>
+<li>Note: &quot;DraftKings Predictions&quot; (4.17%) is not Kalshi or Polymarket US and was not counted. Below-2% rows were excluded by the required filters, not separately scanned.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
