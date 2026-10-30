@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-29 23:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-30 00:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
 <h3>Run 07:40 AM EDT (first live run of this scan)</h3>
@@ -141,6 +141,16 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Dedupe: both pairs are new to both states, so neither was suppressed by the main-scan dedupe.</li>
 <li>State: kalshi-poly-arb-state.json now holds these 2 entries (first_reported 2026-10-29T18:47:00-04:00, last_seen 2026-10-29); nothing to prune (no prior entries, event at 8:15 PM Oct 29 not yet started at read time).</li>
 <li>Delivery: per the execution-phase rule, no chat message was sent directly by this worker; the 2-pair deliverable block is returned as the run&#x27;s result for the main agent to deliver headed &quot;Kalshi-poly-arb&quot;, with the exchange-liquidity footer and a voice note covering both pairs.</li>
+</ul>
+<h3>Run 19:44 PM EDT</h3>
+<ul>
+<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt; browser task 7:44–7:48 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000, Sportsbook Target left at Any Book.</li>
+<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing); final cut used the tool&#x27;s displayed profit % &gt;= 2.00%. Pages checked: 2, 173 filtered results total (p.1: 1–100, p.2: 101–173); 841 results before filtering.</li>
+<li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No qualifying row, and no Arb Risk flag to report for a qualifier.</li>
+<li>Closest exchange legs, both below 2% (not qualifying, not delivered, not entered in state): NBA SAC Kings / NO Pelicans, Today 8:15 PM, Assists Z. Williamson — Polymarket US 4+ NO -108.3 $1,000 vs BetParx Over 3.5 +125 $827, $33.75 / 1.85%; and Kalshi Over 3.5 NO -116.2 $1,000 vs BetParx Over 3.5 +125 $827, $33.30 / 1.82%. No leg labeled only &quot;Polymarket&quot; or Polymarket Intl. was counted as qualifying.</li>
+<li>Prior state note: the 2 J. Fears pairs delivered at 18:44 (Polymarket US 11.62% and Kalshi 6.04%, event Oct-29 8:15 PM) did not reappear as &gt;= 2% qualifiers in this read. They are RETAINED in state per the 48-hour pruning rule (last_seen 2026-10-29, event not yet started at read time ~7:47 PM); they were not re-delivered, and no new pair was delivered.</li>
+<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
+<li>State: kalshi-poly-arb-state.json unchanged (2 entries, both SAC vs NO J. Fears).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
