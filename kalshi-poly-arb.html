@@ -26,159 +26,23 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-29.md · page built 2026-10-30 03:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-30.md · page built 2026-10-30 04:50 ET</div>
 
-<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-poly-arb scan — 2026-10-29</h2>
-<h3>Run 07:40 AM EDT (first live run of this scan)</h3>
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb scan — 2026-10-30</h2>
+<h3>Run 00:44–00:47 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
 <ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, already signed in (no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing). Pages checked: 2, 134 results total (p.1: 1–100, p.2: 101–134).</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0.</li>
-<li>Why: page-1 pairs at ≥2% (down to 2.00%) had sportsbook legs only (BetMGM, Bet365, HardRock, DraftKings, FanDuel, BetParx, BetRivers, Caesars, Fanatics-NJ, theScore, Fliff, Bet105) or Novig / DraftKings Predictions decimal legs — no Kalshi or Polymarket US leg. Page 2 topped out at 1.60% profit, below the 2% bar.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json (8 exchange-leg records on file, latest Cowboys/Colts 2.3% last seen 2026-10-29) was moot: no qualifying pair was seen at all this run, so the prior main-scan exchange pairs are no longer live at ≥2% in this read.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
+<li>Coverage: 1 result page, 62 rows total (&quot;1 – 62 of 62&quot;, end reached). Profit filter applied as Min Profit $20 (= 2% of the $1,000 Primary Bet, which is a dollar field in the tool). No sign-in blocker; no &quot;Include Player Props&quot; toggle touched.</li>
+<li>Filter: profit ≥2% AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. never counts).</li>
+<li>Qualifying rows found: 4. Deliverables: NONE — all 4 were already in kalshi-poly-arb-state.json, and none met the changed bar (profit +1pt, or a leg price improved 10+ cents at same-or-better profit). No message sent (alert-only rule). None of the 4 duplicates anything in the main arbitrage-state.json.</li>
+<li>Gonzaga/Purdue pairs from state were NOT seen this run; retained (last_seen 2026-10-29, &lt;48h, event Nov-02 7:30 PM still future). No entries pruned; no event start times had passed at read time.</li>
 </ul>
-<h3>Run 08:44 AM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (no Google sign-in prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing); additionally screened to displayed profit ≥2.00% since displayed % is on total stake. Pages checked: 2, 107 results total (p.1: 1–100, p.2: 101–107).</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared in any of the 107 rows, and no Polymarket Intl. leg appeared either; both were listed as included books in Filters → Books, so not excluded by that list. Non-qualifying prediction-market legs at ≥2% (notably several Novig legs, e.g. 2.92%, 2.61%, 2.20%, 2.04%) were dropped per the filter; ProphetX, DraftKings Predictions, and BroThrow legs were below 2% and/or non-qualifying.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 09:44 AM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session (no sign-in block). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% of the default $1,000 primary framing); Filters showed as On. Pages checked: 2, 108 results total (p.1: 1–100, p.2: 101–108).</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared in any of the 108 rows, and no leg labeled only &quot;Polymarket&quot; / Polymarket International appeared either. Non-qualifying prediction-market legs (e.g. Novig, DraftKings Predictions, BroThrow) were dropped per the filter.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 10:44 AM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt; initial splash/bot-check cleared via reload to /arbitrage). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing); Filters showing On. Pages checked: 1, 74 results total after the $20 filter (shown &quot;1 – 74 of 74&quot;, Next disabled). Of those, 31 rows were at profit 2.00% or more; the other 43 were $20+ in dollars but below 2.00% on the displayed conversion and were excluded.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi leg and no Polymarket US leg appeared in any of the 31 rows at ≥2%.</li>
-<li>Dropped prediction-market legs at ≥2%: Novig only, in 5 of the 31 rows (e.g. NHL CHI Blackhawks/DET Red Wings $56.88 / 3.58% HardRock vs Novig; NBA CLE Cavaliers/ATL Hawks $55.70 / 3.13% Novig vs Bet365; plus three further Novig-hedge rows at 2.76%, 2.55%, 2.49%) — dropped because Novig alone does not qualify. No Polymarket / Polymarket Intl., DraftKings Predictions, ProphetX, or BroThrow leg appeared in the ≥2% set (DraftKings Predictions and BroThrow legs seen were below 2%, at 1.37% and 1.21%).</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 11:44 AM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing, left unchanged); Sportsbook Target Any Book, Liquidity Mode Full Bet Size Only. Pages checked: 1, 77 results total (shown &quot;1 – 77 of 77&quot;, Next disabled), all reviewed.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket leg appeared in any of the 77 rows (text search for Kalshi/Polymarket returned no matches); books shown were sportsbooks plus Novig, ProphetX, BroThrow and DraftKings Predictions depth legs, none of which qualify under this scan&#x27;s filter.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run (the main scan&#x27;s earlier Lakers–Warriors Kalshi/Polymarket US pairs did not reappear here).</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 12:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Sportsbook Target left at Any Book. Pages checked: 2, 132 results total (p.1: 1–100, p.2: 101–132); 54 rows at profit ≥2%.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi, Polymarket US, or Polymarket Intl. leg appeared in any of the 132 filtered results, even below 2%.</li>
-<li>Dropped prediction-market legs at ≥2%: 6 of the 54 rows — DraftKings Predictions 4 (e.g. NHL WPG/TB Shots E. Salomonsson $106.08 / 5.46% and $65.04 / 3.28%; NHL CHI/DET Points A. Copp $46.77 / 2.57%, two variants) and Novig 2 (e.g. NBA SAC/NO Assists D. Acuff $55.38 / 3.12%; NFL PHI/WAS Receptions T. Burks $42.80 / 2.29%). ProphetX and BroThrow had no rows at ≥2% in the filtered set.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 13:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Sportsbook Target left at Any Book. Pages checked: 2, 113 results total (p.1: 1–100, p.2: 101–113); the $20 floor is a dollar floor, so the ≥2% cut below uses the tool&#x27;s displayed profit %.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi leg, no Polymarket US leg, and no Polymarket Intl. leg appeared in any of the 113 rows.</li>
-<li>Dropped prediction-market legs at ≥2%: Novig only, 2 rows (4.47% and 2.65%) — dropped because Novig alone does not qualify. No ProphetX, BroThrow, or DraftKings Predictions row at ≥2% (DraftKings Predictions appeared once, at 1.37% only; ProphetX and BroThrow did not appear at all).</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 14:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session (no Google number-match prompt). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Liquidity Mode Full Bet Size Only; final cut used the tool&#x27;s displayed profit %. Pages checked: 2, 119 results total (p.1: 1–100, p.2: 101–119); 59 rows at displayed profit ≥2.00% (highest 5.98%).</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi leg, no Polymarket US leg, and no Polymarket Intl. leg appeared in any of the 119 rows; the Books list was inspected (not changed) and Kalshi, Polymarket US, and Polymarket Intl. were all listed/included, so the absence was in the results, not a book exclusion. The ≥2% rows carried sportsbook legs plus Novig, none of which qualify; Novig, DraftKings Predictions, ProphetX, and BroThrow were not counted as qualifying.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run (the main scan&#x27;s earlier Lakers–Warriors Kalshi/Polymarket US pairs did not reappear here).</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 15:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt). Read-only; no settings changed other than the tool&#x27;s Profit filter, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Sportsbook Target left at Any Book. Pages checked: 2, 130 results total (p.1: 1–100, p.2: 101–130); page 2 profits ran only 1.47% down to 1.09%, so no additional ≥2.00% rows there.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0.</li>
-<li>Kalshi legs seen, both below 2% (not qualifying): NBA MEM Grizzlies / POR Trail Blazers, Today 10:15 PM, Points J. Morant Over 24.5 NO at Kalshi, 1.95%; NFL TEN Titans / CIN Bengals, Nov-01 1:00 PM, Receptions D. Meyers Over 1.5 YES at Kalshi, 1.51%. No Polymarket US leg appeared on either page. One Polymarket Intl. leg, below 2% and excluded: Serie A Torino / Frosinone, Nov-01 9:00 AM, Total Under 3.5 at Polymarket Intl., $20.50 / 1.15%.</li>
-<li>Dropped prediction-market legs at ≥2%: Novig 8 rows (4.42%, 2.87%, 2.86%, 2.68%, 2.62%, 2.29%, 2.23%, 2.09%) and ProphetX 1 row (2.43%) — dropped because neither qualifies under this scan&#x27;s filter. No DraftKings Predictions leg at ≥2%; BroThrow only at 1.37%.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 16:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (saved session; browser task ran 4:45–4:49 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing), Primary Bet left at $1,000, Sportsbook Target left at Any Book. Pages checked: 2, 115 results total (p.1: 1–100, p.2: 101–115); 45 rows at displayed profit ≥2.00% (all on p.1, 6.29% down to 2.01%; p.2 ranged 1.35% down to 1.09%).</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared at ≥2.00% in the full 115-row set, and no Polymarket (US or Intl.) leg appeared at ≥2.00%.</li>
-<li>Kalshi leg seen below 2% (not qualifying): NBA MEM Grizzlies vs POR Trail Blazers, Today 10:15 PM, Points J. Morant market, 1.65% (Kalshi leg). No Polymarket US leg seen below 2%.</li>
-<li>Dropped prediction-market legs at ≥2%: Novig 5 rows (2.95%, 2.86%, 2.72%, 2.23%, 2.01%) and ProphetX 1 row (2.70%) — dropped because neither qualifies under this scan&#x27;s filter. Polymarket Intl. and BroThrow had no rows at ≥2%; DraftKings Predictions appeared only below 2% (1.37%, 1.35%).</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 17:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt, no bot/CAPTCHA check; normal loading splash only). Read-only except the instructed Profit filter; no account/global settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000, Sportsbook Target left at Any Book.</li>
-<li>Filter: tool&#x27;s own Profit filter set to Min Profit $20 (= 2% on the default $1,000 primary framing); final cut used the tool&#x27;s displayed profit %. Pages checked: 1, 95 filtered results total (shown &quot;1 – 95 of 95&quot;, 100/page, Next disabled; unfiltered total 529). 39 rows at displayed profit ≥2.00% (highest 8.69%, lowest in set 2.03%); the $20 dollar floor also pulled in rows down to 1.15%.</li>
-<li>Qualifying pairs (profit ≥2% AND ≥1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg at ≥2.00% in the 95 rows; no Polymarket Intl. leg at ≥2.00% either, and no leg labeled only &quot;Polymarket&quot; appeared anywhere in the filtered table (text search for Polymarket returned no rows), so no ambiguous-label row had to be set aside. Books list inspected only (no selections changed): Kalshi, Polymarket Intl., and Polymarket US all listed and checked, so the absence was in the results, not a book exclusion.</li>
-<li>Kalshi legs seen below 2% (not qualifying): NFL MIN Vikings / DET Lions — Kalshi — 1.56%; NFL TEN Titans / CIN Bengals — Kalshi — 1.31%. No Polymarket US leg seen below 2%.</li>
-<li>Dropped prediction-market legs at ≥2%: Novig 5 rows (e.g. NBA CLE Cavaliers / ATL Hawks, Today 8:15 PM, 2.81%; NBA NY Knicks / PHI 76ers, Oct-30 7:45 PM, 2.05%) — dropped because Novig alone does not qualify. ProphetX, DraftKings Predictions, and BroThrow had no rows at ≥2% (DraftKings Predictions appeared once in the set, at 1.37%).</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 18:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in as loaded (browser task 6:44–6:51 PM EDT; read ~6:47–6:50 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000.</li>
-<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing). Unfiltered total 798; filtered total 157 (p.1: 1–100, p.2: 101–157); final cut used the tool&#x27;s displayed profit % &gt;= 2.00%.</li>
-<li>Browser agent reported 11 &quot;qualifying&quot; rows, but 9 of them were CORRECTED here under this scan&#x27;s placeability rule: each paired a Kalshi leg with a Polymarket International leg. Polymarket Intl. is not placeable for Michael, and the other leg must be a placeable book (NJ sportsbook or ProphetX), so those 9 D. Murray pairs (45.77% down to 3.51%, all NBA SAC Kings vs NO Pelicans, Today 8:15 PM) were dropped, not delivered and not entered in state. Page 2 added no placeable qualifiers (1.75% down to 1.10%, including a Polymarket US pair at 1.40% and a Kalshi pair at 1.13%, both below 2%).</li>
-<li>Qualifying, placeable pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US AND the other leg placeable): 2, both NBA SAC Kings vs NO Pelicans, Today 8:15 PM, Points J. Fears.</li>
-<li>Deliverables (NEW to both this scan&#x27;s state, previously empty, and the main arbitrage-state.json — no J. Fears entry there): 2, sorted by profit % desc:</li>
-</ul>
-<p>  1. NEW — Points J. Fears — Leg 1: J. Fears 15+ NO +105.7 Polymarket US $1,000; Leg 2: J. Fears Over 14.5 +155 Bet365 $779; Profit $206.77, 11.62%. Arb Risk: YES (shown in Bet Slip, with &quot;Poly/Kalshi Prop&quot;).</p>
-<p>  2. NEW — Points J. Fears — Leg 1: J. Fears Over 14.5 NO -122.7 Kalshi $1,000; Leg 2: J. Fears Over 14.5 +155 Bet365 $712; Profit $103.38, 6.04%. Arb Risk: none shown.</p>
-<ul>
-<li>Dedupe: both pairs are new to both states, so neither was suppressed by the main-scan dedupe.</li>
-<li>State: kalshi-poly-arb-state.json now holds these 2 entries (first_reported 2026-10-29T18:47:00-04:00, last_seen 2026-10-29); nothing to prune (no prior entries, event at 8:15 PM Oct 29 not yet started at read time).</li>
-<li>Delivery: per the execution-phase rule, no chat message was sent directly by this worker; the 2-pair deliverable block is returned as the run&#x27;s result for the main agent to deliver headed &quot;Kalshi-poly-arb&quot;, with the exchange-liquidity footer and a voice note covering both pairs.</li>
-</ul>
-<h3>Run 19:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in (Sign Out visible, no Google number-match prompt; browser task 7:44–7:48 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000, Sportsbook Target left at Any Book.</li>
-<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing); final cut used the tool&#x27;s displayed profit % &gt;= 2.00%. Pages checked: 2, 173 filtered results total (p.1: 1–100, p.2: 101–173); 841 results before filtering.</li>
-<li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No qualifying row, and no Arb Risk flag to report for a qualifier.</li>
-<li>Closest exchange legs, both below 2% (not qualifying, not delivered, not entered in state): NBA SAC Kings / NO Pelicans, Today 8:15 PM, Assists Z. Williamson — Polymarket US 4+ NO -108.3 $1,000 vs BetParx Over 3.5 +125 $827, $33.75 / 1.85%; and Kalshi Over 3.5 NO -116.2 $1,000 vs BetParx Over 3.5 +125 $827, $33.30 / 1.82%. No leg labeled only &quot;Polymarket&quot; or Polymarket Intl. was counted as qualifying.</li>
-<li>Prior state note: the 2 J. Fears pairs delivered at 18:44 (Polymarket US 11.62% and Kalshi 6.04%, event Oct-29 8:15 PM) did not reappear as &gt;= 2% qualifiers in this read. They are RETAINED in state per the 48-hour pruning rule (last_seen 2026-10-29, event not yet started at read time ~7:47 PM); they were not re-delivered, and no new pair was delivered.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged (2 entries, both SAC vs NO J. Fears).</li>
-</ul>
-<h3>Run 20:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session (browser task 8:44–8:48 PM EDT; read ~8:47 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000.</li>
-<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing), plus Min Conversion 2% to isolate profit % &gt;= 2.00%. Final cut used the tool&#x27;s displayed profit %.</li>
-<li>Total at 2%+ profit: 5 rows (&quot;1 – 5 of 5&quot;). Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. The 5 rows used only FanDuel, Bet365, BetParx, Novig, DraftKings and BetMGM legs.</li>
-<li>Closest exchange legs, both below 2% (not qualifying, not delivered, not entered in state): a Kalshi leg at 1.95% and a Polymarket US leg at 1.33%, in the broader $20-minimum list (25 rows).</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json now empty. The 2 J. Fears pairs delivered at 18:44 (Polymarket US 11.62% and Kalshi 6.04%, NBA SAC Kings vs NO Pelicans, Oct-29 8:15 PM) did not reappear as &gt;= 2% qualifiers and their event start time has passed, so they were pruned per the event-passed rule.</li>
-</ul>
-<h3>Run 21:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session on the default profile (browser task 9:44–9:47 PM EDT; read ~9:46–9:47 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000, Liquidity Mode Full Bet Size Only. No bets placed.</li>
-<li>Filter: tool&#x27;s own Profit filter is dollar-denominated, set to Min Profit $20 (= 2% on the $1,000 primary framing); Filters showing On. Final cut used the tool&#x27;s displayed profit % &gt;= 2.00%. Pages checked: 1, 68 filtered results total (shown &quot;1 – 68 of 68&quot;, 100/page); 33 rows at displayed profit &gt;= 2.00% (9.52% down to exactly 2.00%).</li>
-<li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 0. No Kalshi or Polymarket US leg appeared in the 33 rows at &gt;= 2%; the Polymarket legs in that band were Polymarket Intl. only and were excluded under the filter, so there are no qualifying leg details, profit amounts, or Arb Risk flags to report.</li>
-<li>Deliverables: none — no message sent (alert-only rule). Dedupe vs main arbitrage-state.json moot: no qualifying pair seen at all this run.</li>
-<li>State: kalshi-poly-arb-state.json unchanged ({&quot;entries&quot;: {}} — still empty; nothing qualifying seen to record, nothing to prune).</li>
-</ul>
-<h3>Run 22:44 PM EDT</h3>
-<ul>
-<li>Source: DarkHorse Odds Arbitrage Bet Finder, NJ view, signed in via saved session (browser task 10:44–10:48 PM EDT; read ~10:46–10:48 PM EDT). Read-only; no settings changed, &quot;Include Player Props&quot; toggle untouched, Primary Bet left at $1,000. No bets placed.</li>
-<li>Filter: tool&#x27;s own Profit filter, Min Profit $20 (dollar-denominated, = 2% on the $1,000 primary framing), plus Min Conversion 2%. Final cut used the tool&#x27;s displayed profit % &gt;= 2.00%. All results on one page: &quot;1 – 28 of 28&quot;, profit range 2.04%–10.44%.</li>
-<li>Qualifying pairs (profit &gt;= 2% AND &gt;= 1 leg at Kalshi or Polymarket US; Polymarket Intl. excluded): 2, both Kalshi, both NEW (not in kalshi-poly-arb-state.json, which was empty, and not in arbitrage-state.json — grep for Gonzaga/Purdue in the main state returned 0). No Polymarket US or Polymarket Intl. rows appeared in the 28.</li>
-<li>1. NEW — NCAAB 15 Gonzaga Purdue — Nov-02 7:30 PM, Moneyline: Gonzaga YES −207.6 [66%] Kalshi $1,000 + Purdue +300 HardRock $370; profit $110.00, 8.03%; Arb Risk: Yes.</li>
-<li>2. NEW — NCAAB 15 Gonzaga Purdue — Nov-02 7:30 PM, Moneyline: Purdue NO −261.7 [71%] Kalshi $1,000 + Purdue +300 HardRock $346; profit $36.18, 2.69%; Arb Risk: Yes.</li>
-<li>Deliverables: 2 — delivery prepared for the main agent (one-tap blocks, both marked NEW, both with Arb Risk warning, plus the exchange-liquidity footer); this worker does not send chat messages directly.</li>
-<li>State: kalshi-poly-arb-state.json now holds these 2 entries (last_seen 2026-10-29, event 2026-11-02 7:30 PM ET). Nothing to prune — prior state was empty.</li>
-<li>Note: &quot;DraftKings Predictions&quot; (4.17%) is not Kalshi or Polymarket US and was not counted. Below-2% rows were excluded by the required filters, not separately scanned.</li>
-</ul></details>
+<h4>Collected list (full, with read time 00:44–00:47 AM EDT 2026-10-30)</h4>
+<ol>
+<li>WTA Tokyo — D. Shnaider vs A. Eala — Oct-30 4:00 AM — Moneyline — Leg 1: D. Shnaider, -108.3, $1,000, Polymarket US — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: seen before, profit DOWN from 4.72%/$85.40 (leg price -104.1 → -108.3), NOT delivered.</li>
+<li>WTA Tokyo — D. Shnaider vs A. Eala — Oct-30 4:00 AM — Moneyline — Leg 1: A. Eala NO, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+<li>WTA Tokyo — D. Shnaider vs A. Eala — Oct-30 4:00 AM — Moneyline — Leg 1: D. Shnaider YES, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+<li>WTA Curitiba — N. Da Silva vs F. Jones — Oct-30 9:00 AM — Moneyline — Leg 1: F. Jones, -329.6, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $253, DraftKings — Profit $29.69, 2.37% — Arb Risk: Yes — Status: seen before, profit DOWN from 2.49%/$31.25 (leg price -326.6 → -329.6), NOT delivered.</li>
+</ol>
+<p>All other 58 rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
