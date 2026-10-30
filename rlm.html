@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-30.md · page built 2026-10-30 05:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-30.md · page built 2026-10-30 06:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-0-0</b> · <b>$90.91</b> · 1 graded items · last graded 2026-10-24</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -55,6 +55,25 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST: none. No market met both RLM conditions (70%+ tickets + threshold move toward the minority vs a stored line). No news check triggered (no candidate met both conditions).</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State: 6 Oct 30 keys updated to last_seen 2026-10-30T01:37-04:00 (backup rlm-state.json.bak.0137); Tulane spread median updated -9.5 -&gt; -8.5. All other Oct 30 medians/splits unchanged.</li>
+</ul>
+<h3>Run 02:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in. NOTE: the dispatched browser task (browser-task:22f8a6ca-0697-50ee-88ac-c4c0dc9dc851) worked the ScoresAndOdds NCAAF/NFL boards and was still working at ~02:30 ET after a compact-report nudge, but its window closed without delivering a report by bookkeeping close (~02:37 ET). FALLBACK: direct text read of the same public board (crawled 06:37 UTC / 02:37 ET) — see below. Covers/VegasInsider splits were not obtained in this pass (search reads gave lines, no ticket percentages); no gate issue — ScoresAndOdds splits were readable in the 00:37 and 01:37 runs today, and the board itself loaded, so this is an undelivered report, not proof the sources are unreadable. No rlm-gate-notified file created.</li>
+<li>Today&#x27;s slate (from prior runs + fallback board read, all still not started): 3 FBS games, 0 NFL — Tulane @ Charlotte 7:00 PM ET; Baylor @ UCF 7:30 PM ET; Kent State @ Sacramento State 10:30 PM ET.</li>
+<li>Fallback main-board read (~02:37 ET, NOT a verified panel median): Tulane -8.5 / total 47.5 (both unchanged vs stored); Baylor -1.5 / total 48.5 (both unchanged); Kent State -7 / total 46.5 (spread 0.5 toward minority Sacramento State vs stored panel median -7.5, below the 1.0 spread threshold; total unchanged). Stored panel medians/splits carried unchanged — the main-board values are context only and were NOT substituted for medians.</li>
+<li>Comparison vs state: no threshold move toward any minority side on the main-board read (Tulane and Baylor unchanged; Kent 0.5, sub-threshold). Baylor/UCF total, the near-miss, is still 48.5 on the main board — it flags only at 47.0 or below with Over still &gt;=70%. Ticket splits were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered (no candidate met both RLM conditions on verified data).</li>
+<li>FLAGGED LIST: none determinable this run. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 6 Oct 30 keys&#x27; last_seen set to 2026-10-30T02:37-04:00 with the pending-report note; medians/splits carried unchanged (backup rlm-state.json.bak.0237). Next run must reconcile the late browser report if it arrives, or re-read the panel, before any flag can be judged.</li>
+</ul>
+<h3>Addendum to Run 02:23 ET — late browser-task report received (ran 02:24–02:30 AM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete and its report arrived after this run&#x27;s bookkeeping: ScoresAndOdds consensus (% of bets) for 2 of 3 not-started games; NFL showed no Oct 30 kickoffs (next games Nov 1). No sign-in or bet made.</li>
+<li>Tulane @ Charlotte 7:00 PM ET: panel median Tulane -9.5 (was stored -8.5) / total 47.5; splits Tulane 51% / Over 55%. The spread move is 1.0 toward PUBLIC Tulane, not the minority, and public share is 51% (&lt;70) — not flagged. Total unchanged.</li>
+<li>Baylor @ UCF 7:30 PM ET: panel median Baylor -2 (was stored -1.5) / total 48.5; splits UCF 65% (was 68%) / Over 70%. Spread moved 0.5 toward minority Baylor, below the 1.0 threshold and with public share below 70% — not flagged. Total unchanged at 48.5 with Over still exactly 70% — no move toward minority Under, so it does NOT flag; it flags only at 47.0 or below. The report&#x27;s note that the total moved from open 49.5 to 48.5 is measured vs the opener, not vs the stored baseline, and is 1.0 (&lt;1.5) in any case — not a flag.</li>
+<li>Kent State @ Sacramento State 10:30 PM ET: shown not started but its panel median/splits were NOT collected in this report — not estimated from a single book line; stored medians/splits carried unchanged.</li>
+<li>Reconciliation: the late report confirms the no-flag outcome — no market met both RLM conditions (70%+ tickets + threshold move toward the minority) on verified data. FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
+<li>State reconciled (Tulane/Baylor keys, last_seen 02:30 ET; Kent keys carried with the not-collected note; backup rlm-state.json.bak.0230late).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
