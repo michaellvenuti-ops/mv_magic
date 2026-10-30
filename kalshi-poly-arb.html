@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-30.md · page built 2026-10-30 05:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-30.md · page built 2026-10-30 06:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb scan — 2026-10-30</h2>
 <h3>Run 00:44–00:47 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
@@ -43,6 +43,21 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>WTA Tokyo — D. Shnaider vs A. Eala — Oct-30 4:00 AM — Moneyline — Leg 1: D. Shnaider YES, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
 <li>WTA Curitiba — N. Da Silva vs F. Jones — Oct-30 9:00 AM — Moneyline — Leg 1: F. Jones, -329.6, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $253, DraftKings — Profit $29.69, 2.37% — Arb Risk: Yes — Status: seen before, profit DOWN from 2.49%/$31.25 (leg price -326.6 → -329.6), NOT delivered.</li>
 </ol>
-<p>All other 58 rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p></details>
+<p>All other 58 rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p>
+<h3>Run 01:44–01:49 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
+<ul>
+<li>Coverage: tool showed 331 rows before filtering; after Min Profit $20 (= 2% of the $1,000 Primary Bet, dollar-denominated field) it showed &quot;1 – 66 of 66&quot; (one page). Signed in, no sign-in blocker; no &quot;Include Player Props&quot; toggle touched.</li>
+<li>Filter: profit ≥2% AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. excluded).</li>
+<li>Qualifying rows found: 4. Deliverables: NONE — all 4 were already in kalshi-poly-arb-state.json, and none met the changed bar (profit +1pt, or a leg price improved 10+ cents at same-or-better profit). No message sent (alert-only rule). The 3 Tokyo pairs also appear in the main arbitrage-state.json at the same 3.64% profit, so they are deduped there too.</li>
+<li>Gonzaga/Purdue pairs from state were NOT seen this run; retained (last_seen 2026-10-29, &lt;48h, event Nov-02 7:30 PM still future). No entries pruned; no event start times had passed at read time.</li>
+</ul>
+<h4>Collected list (full, with read time 01:44–01:49 AM EDT 2026-10-30)</h4>
+<ol>
+<li>WTA Tokyo — 13 D. Shnaider / 19 A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider, -108.3, $1,000, Polymarket US — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+<li>WTA Tokyo — 13 D. Shnaider / 19 A. Eala — Today 4:00 AM — Moneyline — Leg 1: A. Eala NO, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+<li>WTA Tokyo — 13 D. Shnaider / 19 A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider YES, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+<li>WTA Curitiba — N. Da Silva / 98 F. Jones — Today 12:30 PM — Moneyline — Leg 1: F. Jones, -332.2, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $253, DraftKings — Profit $27.43, 2.19% — Arb Risk: Yes — Status: same pair as state&#x27;s 9:00 AM entry; price worsened (-329.6 → -332.2), profit DOWN 2.37% → 2.19%, NOT delivered. State updated in place under the existing key (no duplicate key created); tool&#x27;s 12:30 PM display noted.</li>
+</ol>
+<p>All other rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
