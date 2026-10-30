@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-30.md · page built 2026-10-30 20:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-30.md · page built 2026-10-30 21:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -304,6 +304,25 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Kent State @ Sacramento State 10:30 PM ET: board line -7 / total 46.5; splits Kent State 56% / Over 59%. The matchup page showed TBD with no book lines, so the -7 board line is NOT a verified panel median and was NOT substituted for the stored panel median -7.5. Splits and total match stored; public below 70% — not flagged.</li>
 <li>Reconciliation: the late report confirms the no-flag outcome — no market met both RLM conditions (70%+ tickets + threshold move toward the minority) on verified data. No news check triggered (no candidate). FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
 <li>State reconciled (all 6 Oct 30 keys, last_seen 16:35 ET; Kent State spread panel median -7.5 carried unchanged; backup rlm-state.json.bak.1635late).</li>
+</ul>
+<h3>Run 17:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in. NOTE: the dispatched browser task (browser-task:74455ba1-0ca5-5c14-87cd-3e24f91f4601, dispatched ~17:24 ET) plus a compact-report nudge delivered NO report by bookkeeping close (~17:37 ET). This is an undelivered report, not a source gate — ScoresAndOdds splits were readable in the 12:26, 14:34, 15:38, and 16:35 runs today and the task was accepted. No rlm-gate-notified file created (verified absent). No sign-in or bet made.</li>
+<li>Fallback attempts: web searches returned only context, not a verbatim ScoresAndOdds panel: a third-party board (Gridiron &amp; Wine, crawled ~3 hours before read) showed Tulane -8 / total 47.5, Baylor -2 / total 48.5 — context only, NOT panel medians and carrying NO ticket splits, so not used for any flag judgment. A targeted search returned no usable ScoresAndOdds consensus URL.</li>
+<li>Today&#x27;s slate (from prior runs, all still not started at last verified read 16:35 ET): 3 FBS games, 0 NFL — Tulane @ Charlotte 7:00 PM ET; Baylor @ UCF 7:30 PM ET; Kent State @ Sacramento State 10:30 PM ET.</li>
+<li>Comparison vs state: NO flag determinable this run. Ticket splits and panel medians were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered (no candidate met both RLM conditions on verified data). The standing near-miss remains Baylor/UCF total: Over 71% (carried) with median 48.5 — it flags only at 47.0 or below with Over still &gt;=70% and no news explanation. All other carried splits are below 70% (next highest: Tulane 63%, UCF 63%).</li>
+<li>FLAGGED LIST: none determinable this run. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 6 Oct 30 keys&#x27; last_seen set to 2026-10-30T17:37-04:00 with the pending-report note; medians/splits carried unchanged (backup rlm-state.json.bak.1737). Next run must re-read the panel, and reconcile any late browser-task report if it arrives, before any flag can be judged; Tulane (7:00 PM) and Baylor (7:30 PM) will have started by the 18:23 run, leaving only Kent State (10:30 PM) not started.</li>
+</ul>
+<h3>Addendum to Run 17:23 ET — late browser-task report received (ran 5:24–5:39 PM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete; its report arrived after this run&#x27;s bookkeeping. ScoresAndOdds panel medians (middle value across 7 books) + consensus (% of bets), 3 not-started FBS games, 0 NFL confirmed — no additional Oct 30 game, no Oct 30 NFL kickoff (next NFL games Nov 1). No sign-in or bet made. Covers/VegasInsider not needed.</li>
+<li>Tulane @ Charlotte 7:00 PM ET: median Tulane -8.5 / total 47.0; splits Tulane 63% / Over 57% — all match stored values exactly. No flag.</li>
+<li>Baylor @ UCF 7:30 PM ET: median Baylor -2.5 (was -1.5, 1.0 toward minority Baylor, but public UCF is only 63% &lt;70% — not flagged) / total 49.5 (was 48.5, +1.0 toward PUBLIC Over, not the minority — not flagged; the report&#x27;s &quot;unchanged from open 49.5&quot; is measured vs the opener, not vs the stored baseline). Splits UCF 63% / Over 71% match stored. Over still &gt;=70% but the total moved the wrong way, so the 47.0-or-below flag watch stays off while the total sits at/above 48.5.</li>
+<li>Kent State @ Sacramento State 10:30 PM ET: median Kent State -7.5 / total 46.5; splits Kent State 56% / Over 59% — all match stored panel median. Public below 70% — not flagged.</li>
+<li>Reconciliation: the late report confirms the no-flag outcome — no market met both RLM conditions (70%+ tickets + threshold move toward the minority) on verified data. No news check triggered (no candidate). FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
+<li>State reconciled (all 6 Oct 30 keys, last_seen 17:39 ET; Baylor medians updated -1.5 -&gt; -2.5 and 48.5 -&gt; 49.5; backup rlm-state.json.bak.1739late).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
