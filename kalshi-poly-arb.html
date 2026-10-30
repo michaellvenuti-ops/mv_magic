@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-30.md · page built 2026-10-30 06:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-30.md · page built 2026-10-30 07:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb scan — 2026-10-30</h2>
 <h3>Run 00:44–00:47 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
@@ -58,6 +58,46 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>WTA Tokyo — 13 D. Shnaider / 19 A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider YES, -116.2, $1,000, Kalshi — Leg 2: A. Eala, +134, $795, DraftKings — Profit $65.30, 3.64% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
 <li>WTA Curitiba — N. Da Silva / 98 F. Jones — Today 12:30 PM — Moneyline — Leg 1: F. Jones, -332.2, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $253, DraftKings — Profit $27.43, 2.19% — Arb Risk: Yes — Status: same pair as state&#x27;s 9:00 AM entry; price worsened (-329.6 → -332.2), profit DOWN 2.37% → 2.19%, NOT delivered. State updated in place under the existing key (no duplicate key created); tool&#x27;s 12:30 PM display noted.</li>
 </ol>
-<p>All other rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p></details>
+<p>All other rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p>
+<h3>Run 02:45–02:49 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
+<ul>
+<li>Coverage: 331 rows before filtering; after Min Profit $20 (= 2% of the $1,000 Primary Bet, dollar field) it showed &quot;1 – 75 of 75&quot;, one page, end reached. Signed in, no sign-in blocker; no &quot;Include Player Props&quot; toggle touched. Primary Bet left at $1,000.</li>
+<li>Filter applied as written: profit ≥2% (tool&#x27;s displayed profit %, i.e. profit on total stake — the same % the state files carry) AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. never counts alone).</li>
+<li>Qualifying rows at 2%+: 4. Deliverables: NONE — no message sent (alert-only rule).</li>
+</ul>
+<p>  - Curitiba Moneyline (F. Jones Polymarket US -316.7 $1,000 / N. Da Silva DraftKings +407 $255, $37.85, 3.02%, Arb Risk Yes) WOULD have been UPDATED vs this scan&#x27;s own state (2.19% → 3.02%, leg improved 15.5¢), but the main hourly arbitrage scan already delivered this exact pair at the same prices/profit in its 02:29–02:46 AM run — deduped, not re-delivered here.</p>
+<p>  - The 3 Tokyo Moneyline pairs all moved DOWN vs state (3.64% → 2.59% Polymarket US, 2.55% Kalshi NO, 2.55% Kalshi YES) and are also in the main arbitrage-state — not delivered.</p>
+<ul>
+<li>Below-cutoff note (do NOT treat as qualifying on future runs): 2 further exchange-leg rows passed the $20 dollar filter but failed the 2% rule on the tool&#x27;s own displayed % — NBA Knicks/76ers Rebounds J. Brown Over 5.5 NO Kalshi -164.9 $1,000 / YES Polymarket Intl. +184.2 $584.33, $22.45, 1.42%, Arb Risk No (qualifies only via the Kalshi leg; Polymarket Intl. leg alone would not count); CFL WPG/TOR Spread TOR -6.5 NO Kalshi -121 $1,000 / Alt Spread TOR -6.5 +128 $801 Bally Bet/BetRivers/BetParx, $25.38, 1.41%, Arb Risk Yes. Both recorded here only; neither added to state, neither delivered.</li>
+<li>Gonzaga/Purdue pairs from state were NOT seen this run; retained (last_seen 2026-10-29, &lt;48h, event Nov-02 7:30 PM still future). No entries pruned; no event start times had passed at read time (Tokyo 4:00 AM and Curitiba 12:30 PM/9:00 AM both still ahead of the 02:49 read).</li>
+</ul>
+<h4>Collected list (full, with read time 02:45–02:49 AM EDT 2026-10-30)</h4>
+<ol>
+<li>WTA Curitiba — N. Da Silva / F. Jones — Today 12:30 PM — Moneyline — Leg 1: F. Jones, -316.7, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $255, DraftKings — Profit $37.85, 3.02% — Arb Risk: Yes — Status: UPDATED vs own state, but DEDUPED (main scan delivered same pair/prices) — NOT delivered here.</li>
+<li>WTA Tokyo — D. Shnaider / A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider, -112.8, $1,000, Polymarket US — Leg 2: A. Eala, +134, $781, DraftKings — Profit $46.11, 2.59% — Arb Risk: Yes — Status: profit DOWN from 3.64%, NOT delivered.</li>
+<li>WTA Tokyo — D. Shnaider / A. Eala — Today 4:00 AM — Moneyline — Leg 1: A. Eala NO, -121, $1,000, Kalshi — Leg 2: A. Eala, +134, $781, DraftKings — Profit $45.38, 2.55% — Arb Risk: Yes — Status: profit DOWN from 3.64%, NOT delivered.</li>
+<li>WTA Tokyo — D. Shnaider / A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider YES, -121, $1,000, Kalshi — Leg 2: A. Eala, +134, $781, DraftKings — Profit $45.38, 2.55% — Arb Risk: Yes — Status: profit DOWN from 3.64%, NOT delivered.</li>
+<li>NBA NY Knicks / PHI 76ers — Today 7:45 PM — Rebounds — Leg 1: J. Brown Over 5.5 NO, -164.9, $1,000, Kalshi — Leg 2: J. Brown Over 5.5 YES, +184.2, $584.33, Polymarket Intl. — Profit $22.45, 1.42% — Arb Risk: No — Status: BELOW 2% cutoff, NOT qualifying, NOT delivered, NOT added to state.</li>
+<li>CFL WPG Blue Bombers / TOR Argonauts — Oct-31 1:00 PM — Spread — Leg 1: TOR Argonauts -6.5 NO, -121, $1,000, Kalshi — Leg 2: Alt Spread TOR Argonauts -6.5, +128, $801, Bally Bet/BetRivers/BetParx — Profit $25.38, 1.41% — Arb Risk: Yes — Status: BELOW 2% cutoff, NOT qualifying, NOT delivered, NOT added to state.</li>
+</ol>
+<p>All other 69 filtered rows dropped: below 2%, no Kalshi/Polymarket US leg, or both. No bets placed.</p>
+<h3>Run 03:44–03:46 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
+<ul>
+<li>Coverage: 87 results on a single page (&quot;1 – 87 of 87&quot;, 100 per page), no further paging needed. Profit filter applied as Min Profit $20 (= 2% of the $1,000 Primary Bet, dollar field in the tool). Signed in, no sign-in blocker; no &quot;Include Player Props&quot; toggle touched. Primary Bet left at $1,000.</li>
+<li>Filter: profit ≥2% AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. never counts).</li>
+<li>Qualifying rows found: 2. Deliverables: NONE — no message sent (alert-only rule).</li>
+</ul>
+<p>  - Curitiba Moneyline (F. Jones Polymarket US -316.7 $1,000 / N. Da Silva DraftKings +407 $255, $37.85, 3.02%, Arb Risk Yes) unchanged vs this scan&#x27;s own state and already delivered by the main arbitrage scan at the same prices/profit — deduped, NOT delivered.</p>
+<p>  - Tokyo Moneyline (D. Shnaider Polymarket US -112.8 $1,000 / A. Eala DraftKings +134 $781, $46.11, 2.59%, Arb Risk Yes) unchanged vs this scan&#x27;s own state and also in the main arbitrage-state at 2.59% — NOT delivered.</p>
+<p>  - The other Kalshi pairs seen in earlier runs fell below 2% this run (browser reported Kalshi pairs at 1.53%, 1.53%, 1.41%) and were dropped, not added to state.</p>
+<ul>
+<li>Gonzaga/Purdue pairs from state were NOT seen this run; retained (last_seen 2026-10-29, &lt;48h, event Nov-02 7:30 PM still future). No entries pruned; no event start times had passed at read time (Tokyo 4:00 AM and Curitiba 12:30 PM Oct-30 both still ahead of the 03:46 read).</li>
+</ul>
+<h4>Collected list (full, with read time 03:44–03:46 AM EDT 2026-10-30)</h4>
+<ol>
+<li>WTA Curitiba — N. Da Silva / 98 F. Jones — Today 12:30 PM — Moneyline — Leg 1: F. Jones, -316.7, $1,000, Polymarket US — Leg 2: N. Da Silva, +407, $255, DraftKings — Profit $37.85, 3.02% — Arb Risk: Yes — Status: unchanged from state, deduped vs main scan, NOT delivered.</li>
+<li>WTA Tokyo — 13 D. Shnaider / 19 A. Eala — Today 4:00 AM — Moneyline — Leg 1: D. Shnaider, -112.8, $1,000, Polymarket US — Leg 2: A. Eala, +134, $781, DraftKings — Profit $46.11, 2.59% — Arb Risk: Yes — Status: unchanged from state, NOT delivered.</li>
+</ol>
+<p>All other 85 rows dropped: below 2%, no Kalshi/Polymarket US leg, Polymarket Intl.-only, or a combination. No bets placed.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
