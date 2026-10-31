@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 05:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 06:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -85,6 +85,22 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + threshold move toward the minority vs a stored panel line) on verified data. The two near-misses (App State total +1.0, UAB total -1.0 toward their minorities) are both below the 1.5 total threshold, and both rest on board values pending panel verification. No news check triggered (no candidate met both conditions).</li>
 <li>FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
 <li>State reconciled (24 watch keys, last_seen 01:29 ET; splits updated Colorado State Under 77%, Purdue Under 68%; stored panel medians carried unchanged for non-panel-verified games; 68 non-watch Oct 31 keys carry the slate-scan note; backup rlm-state.json.bak.1031-0129late).</li>
+</ul>
+<h3>Run 02:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards + consensus (% of bets), read-only, no sign-in, no bet. Browser task browser-task:1f79fdca-9e45-5fb6-b51c-799240f353bc ran 2:24-2:28 AM ET, board read ~2:27 AM ET. No Covers/VegasInsider fallback needed. No rlm-gate-notified file created (verified absent at run start).</li>
+<li>Slate at read time: 47 not-started Oct 31 NCAAF matchups listed, none started; 46 FBS-vs-FBS + 1 excluded UTEP vs North Dakota State (North Dakota State is FCS). NFL: no Oct 31 kickoffs confirmed (next NFL games Nov 1). No watch-list game had started.</li>
+<li>Watch-list reconciliation (23 markets; report lines are board medians, not matchup-page panel medians — values matching stored panel medians are confirmed as no-move; differing board values were NOT substituted for stored panel medians, per precedent):</li>
+</ul>
+<p>  - Unchanged (21 markets): Appalachian State spread +5.5 / 71% and total 56.5 / Under 75%; Army/Memphis total 59.5 / Under 72%; Coastal/Georgia State total 55.5 / Under 74%; Colorado State/Utah State total 61.5 / Under 77%; FIU/Liberty total 45.5 / Over 76%; Kansas/TCU total 45.5 / Over 81%; Louisiana Tech/South Alabama total 58.5 / Under 79%; Minnesota spread +20.5 / 74% and total 41.5 / Over 84%; Mississippi State spread +20.5 / 78%; Nevada/UCLA total 43.5 / Over 80%; New Mexico/San Jose State total 42.5 / Over 86%; Northern Illinois spread +21.5 / 85%; Northwestern spread +3.5 / 73%; Oregon State spread -6 / 74%; South Carolina spread +3.5 / 78% and total 44.5 / Over 77%; Southern Miss/ULM total 55.5 / Under 72%; Stanford spread +22.5 / 75%; Texas State/Boise State total 63.5 / Under 75%.</p>
+<p>  - Changed, not flagged (2 markets): Bowling Green spread +13.5 unchanged, but Bowling Green tickets 72% -&gt; 69% — now below 70%, drops off the watch list; no move in any case. UAB/South Florida total board 42.0 (was stored panel 42.5; -0.5 board move toward minority Under, BELOW the 1.5 threshold, NOT panel-verified) with Over 74% unchanged — stored panel median 42.5 NOT overwritten; flag level remains panel-verified 41.0 or below with Over still &gt;=70% and no news explanation.</p>
+<p>  - Near-miss resolved: Appalachian State/Georgia Southern total board reads 56.5 again (matches stored panel), so the 01:29 board-indicated 57.5 (+1.0 toward minority Over, already below threshold) is not repeated on this read.</p>
+<ul>
+<li>New &gt;=70% markets: only UTEP vs North Dakota State total Over 85% (board 42.5) — EXCLUDED (FCS opponent, as before). No new FBS spread/total reached 70% (closest: Bowling Green spread 69%, Ohio State spread 69%). No non-watch FBS market was individually panel-read this run; the slate scan covers emergence of new &gt;=70% sides only.</li>
+<li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST: none. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 23 watch keys&#x27; last_seen set to 2026-10-31T02:27-04:00; Bowling Green spread ticket_pct updated 72 -&gt; 69; UAB total stored panel median carried unchanged at 42.5 (backup rlm-state.json.bak.1031-0227). All other Oct 31 keys carried unchanged. Next run must re-read the panel before judging any flag; remaining watch list is 22 markets (Bowling Green spread now below 70%).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
