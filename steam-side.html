@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 22:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 23:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -187,6 +187,16 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
 <li>State updated (backup steam-side-state.json.bak.1031-1754; compare script steam-side-compare-20261031-1754.py): medians refreshed to the 5:55-5:56 PM read for the 14 not-started games; the 33 started games keep their earlier medians; flags still 4 total (2 open, 2 closed).</li>
 <li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
+</ul>
+<h3>2026-10-31 18:54 ET run — 1 steam event, no stale book, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:84d12326-2c84-5b38-ad76-33f7a543faf1 (READ-ONLY, no sign-in, board view only; harness-measured 3:54-3:58 PM PDT = 6:54-6:58 PM ET Oct 31): ScoresAndOdds public NCAAF + NFL boards, NCAAF board read ~6:56-6:57 PM ET Oct 31. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 13 FBS not started at read time (kickoffs 7:00 PM ET or later); no new games, none missing vs the stored list. Excluded as started: Appalachian State @ Georgia Southern (6:30 PM ET, in progress in Q1), plus all earlier/final games. NFL: no games listed for Oct 31 (first games Nov 1), as in prior runs. Books on the board this read: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics; Kalshi not shown as a column, Hard Rock blank for the qualifying game.</li>
+<li>Steam events: 1. Georgia Tech @ Pittsburgh spread median moved -7.5 -&gt; -8.5 (exactly 1.0, meeting the &gt;=1.0 threshold), steam toward favorite Pittsburgh; total unchanged at 54.5. All other 12 games below thresholds (largest moves: Clemson @ Florida State spread -5.5 -&gt; -5.0, 0.5; Washington @ Nebraska total 50.5 -&gt; 49.75, 0.75; Army @ Memphis total 58.75 -&gt; 59.25, 0.5; Mississippi State @ Texas total 50.5 -&gt; 50.0, 0.5; Northern Illinois @ UNLV total 55.0 -&gt; 54.5, 0.5).</li>
+<li>Stale-book check on the Pittsburgh steam event: per-book Pittsburgh spreads bet365 -8.5, BetMGM -8.5, DraftKings -8.5, Caesars -8.5, FanDuel -8.5, Fanatics -8.5, Hard Rock no line. NO book still dealing Pittsburgh at the pre-move median (-7.5) or better — every book had already reached the new median — so NO stale-book flag results from this steam event.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1031-1854; compare script steam-side-compare-20261031-1854.py): medians refreshed to the 6:56-6:57 PM read for the 13 not-started games; the 34 started games keep their earlier medians; flags still 4 total (2 open, 2 closed).</li>
+<li>DELIVERABLE: none (alert-only; steam event produced no stale-book flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
