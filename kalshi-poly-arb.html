@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-31.md · page built 2026-10-31 11:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-31.md · page built 2026-10-31 12:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 12:44–12:46 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
 <ul>
@@ -108,6 +108,42 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State: 10 → 10 entries (0 added, 0 pruned). No entries pruned: no event start time had passed at the 6:49 AM read (Delaware St./Norfolk St. Oct-31 3:00 PM, PHI/CHA Nov-01 3:45 AM, Villanova Nov-01 9:30 AM, Gonzaga/Purdue Nov-02 7:30 PM all future), and the Gonzaga/Purdue moneyline entries (last_seen 2026-10-29, first reported Oct 29 10:48 PM) are still within 48h (~32h). No prior entry was seen this run, so no last_seen dates were advanced. State file left unchanged (nothing qualifying seen to record). No bets placed.</li>
 </ul>
 <h4>Collected list (full, with read time 6:44–6:49 AM EDT 2026-10-31)</h4>
-<p>None — no qualifying Kalshi/Polymarket US arbitrage pair at 2%+ was displayed. All other rows dropped: below 2%, or no Kalshi/Polymarket US leg. No bets placed.</p></details>
+<p>None — no qualifying Kalshi/Polymarket US arbitrage pair at 2%+ was displayed. All other rows dropped: below 2%, or no Kalshi/Polymarket US leg. No bets placed.</p>
+<h3>Run 7:44 AM EDT (scheduled) — DarkHorse Arbitrage Bet Finder (NJ view, read-only) — NO RESULT, RETRY NEXT RUN</h3>
+<ul>
+<li>Browser task browser-task:c1b6761a-73b1-5c41-8904-f95bcb4597ae dispatched at 7:44 AM EDT to the Arbitrage finder (profit filter 2%, $1,000 primary, read-only, no &quot;Include Player Props&quot; toggle). No signed-in window existed at dispatch, so a new window was opened on the default profile.</li>
+<li>The window showed &quot;working / browsing&quot; at darkhorseodds.com/arbitrage for 10+ minutes with no report delivered, then closed during a service restart. A continuation request to the same task_id was accepted as new work, then that window also closed with no report delivered. No pending permission/approval cards were found (permissions list empty).</li>
+<li>Outcome unknown: sign-in state and tool contents were never reported, so NO pairs were collected, verified, or invented. Deliverables: 0 — alert-only rule, so nothing delivered.</li>
+<li>State: unchanged (10 entries). No pruning: all remaining events are still future at this read (Delaware St./Norfolk St. Oct-31 3:00 PM, PHI/CHA Nov-01 3:45 AM, Villanova Nov-01 9:30 AM, Gonzaga/Purdue Nov-02 7:30 PM), and the Gonzaga/Purdue entries (last_seen 2026-10-29, first reported Oct 29 10:48 PM) remain within 48h. No bets placed.</li>
+<li>Next hourly run should retry; if DarkHorse again requires Google number-match verification, that step needs Michael (detached runs cannot complete it).</li>
+</ul>
+<h4>Collected list (full, with read time 7:44 AM EDT 2026-10-31)</h4>
+<p>None — no tool output was received this run. No bets placed.</p>
+<h3>Run 7:44–7:50 AM EDT — CORRECTION to the &quot;NO RESULT&quot; note above: report arrived late</h3>
+<ul>
+<li>The browser task&#x27;s report (measured run 7:44–7:50 AM EDT) arrived after the run had closed out as &quot;no result&quot;: sign-in worked (saved profile already signed in, Sign Out visible), Arbitrage tool loaded, no settings changed, no &quot;Include Player Props&quot; toggle touched, Primary Bet left at $1,000, Liquidity Mode &quot;Full Bet Size Only.&quot; Profit filter is dollar-based: Min Profit $20 (= 2% of the $1,000 primary). 54 filtered results, 1 page (unfiltered total 411), screened by displayed profit %.</li>
+<li>Coverage note: the 4.08% Polymarket Intl. pair on the same event (Man United NO -233.3 $1,000 vs Bet365 Man United +300 $355, $55.14) was EXCLUDED — its only prediction-market leg is Polymarket Intl., which never counts. Kalshi/Polymarket US pairs below 2% (e.g., Kalshi UConn/Air Force 1.87%, Polymarket US UConn/Air Force 0.84%) also excluded.</li>
+<li>Filter: profit ≥2% AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. never counts); other leg must be a placeable book (NJ sportsbook or ProphetX).</li>
+<li>Qualifying rows found: 1. Deliverables: 1 (NEW) — delivery left to main-agent resolution (see run result).</li>
+</ul>
+<p>  - Premier League Man United vs Chelsea — Oct-31 8:30 AM — 3-Way Moneyline: Man United NO -239 [69%] $1,000 Kalshi / Man United +300 $355 Bet365 — $63.34, 4.67% — Arb Risk: Yes — NEW to both this state and the main arbitrage-state (exact Kalshi NO pair absent from both; main state holds only different-market same-event pairs, e.g. Draw No Bet Chelsea/Man United) — DELIVERABLE as NEW.</p>
+<ul>
+<li>State: 10 → 11 entries (1 added, 0 pruned). No pruning: all remaining events still future at the 7:55 AM check, and Gonzaga/Purdue entries (last_seen 2026-10-29) remain within 48h. Backup: kalshi-poly-arb-state.json.bak.1031-0755. No bets placed.</li>
+</ul>
+<h4>Collected list (full, with read time 7:44–7:50 AM EDT 2026-10-31)</h4>
+<ol>
+<li>Premier League Man United vs Chelsea — Oct-31 8:30 AM — 3-Way Moneyline — Leg 1: Man United NO, -239 [69%], $1,000, Kalshi — Leg 2: Man United, +300, $355, Bet365 — Profit $63.34, 4.67% — Arb Risk: Yes — Status: NEW to both states — DELIVERABLE as NEW.</li>
+</ol>
+<p>All other filtered rows dropped: below 2%, no Kalshi/Polymarket US leg, or Polymarket Intl.-only. No bets placed.</p>
+<h3>Run 8:44–8:46 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
+<ul>
+<li>Signed in (Sign Out visible); no account/global settings changed, no &quot;Include Player Props&quot; toggle touched; Primary Bet left at $1,000. Profit filter is dollar-based in the tool: Min Profit $20 (= 2% of the $1,000 primary), with the 2% profit-% test applied separately to displayed profit %.</li>
+<li>Coverage: 30 results, single page (&quot;1 – 30 of 30&quot;, Next disabled), all reviewed. 7 rows were at 2%+ profit; 0 had a Kalshi or Polymarket US leg. The only Polymarket legs in the 30 rows were labeled &quot;Polymarket Intl.&quot; (not Polymarket US) and were also below 2% — highest 1.92% — so dropped on both grounds. No Kalshi leg appeared in the 30 rows.</li>
+<li>Filter: profit ≥2% AND at least one leg on Kalshi or Polymarket US (Polymarket Intl. never counts); other leg must be a placeable book (NJ sportsbook or ProphetX).</li>
+<li>Qualifying rows found: 0. Deliverables: 0 — alert-only rule, so nothing delivered.</li>
+<li>State: 11 → 10 entries (0 added, 1 pruned). Pruned: Premier League Man United vs Chelsea — Oct-31 8:30 AM entry (event_time 2026-10-31T08:30:00-04:00 had passed by the 8:46 AM read). No other pruning: remaining events are still future (Delaware St./Norfolk St. Oct-31 3:00 PM, PHI/CHA Nov-01 3:45 AM, Villanova Nov-01 9:30 AM, Gonzaga/Purdue Nov-02 7:30 PM), and the Gonzaga/Purdue moneyline entries (last_seen 2026-10-29, first reported Oct 29 10:48 PM) remain within 48h (~34h). No prior entry was seen this run, so no last_seen dates were advanced. Backup: kalshi-poly-arb-state.json.bak.1031-0846. No bets placed.</li>
+</ul>
+<h4>Collected list (full, with read time 8:44–8:46 AM EDT 2026-10-31)</h4>
+<p>None — no qualifying Kalshi/Polymarket US arbitrage pair at 2%+ was displayed. All other rows dropped: below 2%, no Kalshi/Polymarket US leg, or Polymarket Intl.-only. No bets placed.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
