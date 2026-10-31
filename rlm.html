@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 20:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 21:51 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -391,6 +391,31 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST (final): none. No deliverables.</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State reconciled (5 watch keys, splits unchanged; stored panel medians unchanged). Run 16:23 ET now CLOSED — the earlier &quot;report pending&quot; note is superseded by this reconciliation. Live watch list for the 17:23 run: the same 5 evening markets (Appalachian State spread + total, Washington State spread, Northern Illinois spread, Oregon State spread); Appalachian State (6:30 PM ET) and Washington State (7:00 PM ET) kick off before the next run and will drop out at that point.</li>
+</ul>
+<h3>Run 17:23 ET — browser-task report pending at bookkeeping close</h3>
+<ul>
+<li>Browser task browser-task:a0373a15-cf7c-5ca7-9e67-f7ab352f2c177 dispatched 17:23 ET, read-only, no sign-in, no bet: ScoresAndOdds public board + matchup panels for the 5 live watch markets (Appalachian State spread +5.5/App State 74% and total 56.5/Under 70%, Washington State spread +2.5/San Diego State 70%, Northern Illinois spread +21.5/77%, Oregon State spread -6/77%), a new &gt;=70% scan of not-started FBS-vs-FBS evening games, near-70% movers, and NFL Oct 31 verification.</li>
+<li>Appalachian State (6:30 PM ET) and Washington State (7:00 PM ET) had NOT started at 17:23 ET, so all 5 watch markets were still eligible at dispatch.</li>
+<li>Comparison vs state: NO flag determinable this run. Ticket splits and panel medians were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered (no candidate met both RLM conditions on verified data). The 5 watch-list markets remain watch items only — a market flags on a later read only if its panel median moves &gt;=1.0 (spread) / &gt;=1.5 (total) toward the minority with the public side still &gt;=70% and no news explanation. Flag levels vs stored panel medians: Appalachian State spread +4.5 or lower, Appalachian State total 58.0 or higher, Washington State spread +3.5 or higher, Northern Illinois spread +20.5 or lower, Oregon State spread -5 or higher.</li>
+<li>FLAGGED LIST: none determinable this run. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 5 live watch keys last_seen set to 2026-10-31T17:23-04:00 with the pending-report note; medians/splits carried unchanged (backup rlm-state.json.bak.1031-1723). No rlm-gate-notified file exists. Next run (18:23) must re-read the panel and reconcile any late report from browser-task:a0373a15 before any flag can be judged; Appalachian State and Washington State will have started by then and drop out.</li>
+</ul>
+<h3>Addendum to Run 17:23 ET — browser-task report received (task ran 5:24-5:36 PM ET, board read ~5:34 PM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete after bookkeeping close; its report is now reconciled. ScoresAndOdds public board + matchup-page panels, read-only, no sign-in, no bet. No Covers/VegasInsider fallback needed (splits publicly readable). Both Appalachian State (6:30 PM ET) and Washington State (7:00 PM ET) had NOT started at the board read, so all 5 watch markets were eligible.</li>
+<li>Watch-list reconciliation (5 markets; stored panel medians carried unchanged throughout, per precedent):</li>
+</ul>
+<p>  - Spreads: NO move toward any minority. Appalachian State panel +6.0 (+0.5 toward PUBLIC App State vs stored +5.5, below 1.0, wrong direction), App State 74% unchanged. All others panel-verified unchanged: Washington State +2.5/San Diego State 70%, Northern Illinois +21.5/77%, Oregon State -6/77%.</p>
+<p>  - Totals: Appalachian State panel 55.0 (consensus 54.5; -1.5 vs stored 56.5 toward PUBLIC Under, wrong direction), Under 70% unchanged — flag level 58.0+ not met.</p>
+<ul>
+<li>New &gt;=70% markets: none among not-started FBS-vs-FBS evening games. Next highest: Oklahoma State spread 68%, Miami (FL)/North Carolina total Over 69%, Texas State/Boise State total Under 69% — all below 70%.</li>
+<li>Near-70% confirmations (all below 70%): Army total Under 67%, Mississippi State spread 64%, Ohio State spread 62%, Oklahoma State total Under 63% — each matching the 16:44 read; Miami total Over 69% and Texas State total Under 69% unchanged.</li>
+<li>NFL CHECK VERIFIED: no NFL game on Oct 31 — next games Nov 1.</li>
+<li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST (final): none. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State reconciled (5 watch keys + 6 near-70 keys, splits updated as above; stored panel medians unchanged). Run 17:23 ET now CLOSED — the earlier pending-report note is superseded by this reconciliation. Live watch list for the 18:23 run: Northern Illinois spread and Oregon State spread only (Appalachian State and Washington State will have started by then).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
