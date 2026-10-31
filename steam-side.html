@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 13:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 14:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -65,6 +65,29 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. No stale-book flag was possible without a steam event.</li>
 <li>State updated (backup steam-side-state.json.bak.1031-0855; compare script steam-side-compare-20261031-0855.py): all 47 medians refreshed to the 08:55 read, flags still {}.</li>
 <li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
+</ul>
+<h3>2026-10-31 09:54 ET run — UNVERIFIED, no browser report delivered (silent, alert-only)</h3>
+<ul>
+<li>Browser task 1 browser-task:0f3e1841-0656-53e5-a2eb-d332cedae34d (READ-ONLY, no sign-in, board view only): accepted ~09:55 ET; by the ~10:00 ET check no window was open and no report had been delivered to this run. One retry task browser-task:a3fcd383-eab6-5e64-8882-571c2c8bcd7d was sent; it was confirmed actively working on https://www.scoresandodds.com/ncaaf/odds at the ~10:02 ET check, but by the ~10:05 ET check its window had also closed with no report delivered. A further ~2 min wait to ~10:07 ET produced no late report.</li>
+<li>Fallback text fetch of https://www.scoresandodds.com/ncaaf/odds returned only the page&#x27;s article/glossary text (crawled 13:55 UTC); the odds-comparison tool itself is JS-driven and its per-book lines are not in the fetched text, so no medians could be computed from it. No line, price, or book was invented.</li>
+<li>Games read: NOT verified this run (no browser report). No medians could be computed, so no steam event could be judged.</li>
+<li>Steam events: 0 proven. Flags delivered: 0. Flags closed: 0.</li>
+<li>State file steam-side-state.json LEFT UNCHANGED (08:55 ET medians for 47 FBS games, flags {}) — the next hourly run still judges median moves (spread &gt;=1.0 / total &gt;=1.5) against the 08:55 baselines.</li>
+<li>Gate file NOT created: the source is not proven unreadable — the retry task reached the ScoresAndOdds board, and the hung-number/steam-side scans read the same public boards successfully earlier today (07:54, 08:55 ET). This was a browser-task report-delivery failure, not a source gate. Same pattern as the 06:47 ET run, whose report arrived late in a later turn; if a late report for this run arrives, the next hourly run should reconcile it rather than this run re-delivering.</li>
+<li>DELIVERABLE: none (alert-only; nothing verified). No message sent.</li>
+</ul>
+<h3>2026-10-31 09:54 ET run — CORRECTION (late browser report supersedes the unverified entry above)</h3>
+<ul>
+<li>Browser task browser-task:0f3e1841-0656-53e5-a2eb-d332cedae34d DID complete: harness-measured 9:54-9:58 AM EDT, board read ~9:55-9:57 AM ET Oct 31, ScoresAndOdds public boards, no sign-in, board view only, no individual game pages opened. Its report arrived late, after this run had already logged the run as unverified; the retry task&#x27;s report, if it arrives, is now redundant and must not overwrite this verified read.</li>
+<li>Games read: 47 FBS, all matched to 08:55 AM baselines; no new games, none missing, none started (earliest kickoff 12:00 PM ET). NFL: no games listed for Oct 31 (board begins with Nov 1 games), as in prior runs. Books: 7 per game (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics, Kalshi), except Michigan @ Rutgers 6 (bet365 blank); Hard Rock blank on totals for all games (it showed a spread for Florida @ Georgia and Ohio State @ USC only).</li>
+<li>Steam events: 0. Largest median moves were below thresholds (spread &gt;=1.0 / total &gt;=1.5): total 1.0 (UAB @ South Florida 41.5 -&gt; 42.5, Notre Dame @ Navy 56.5 -&gt; 55.5, Arizona State @ BYU 48.5 -&gt; 47.5, UTEP @ North Dakota State 42.5 -&gt; 43.5, Colorado State @ Utah State 61.5 -&gt; 60.5, Appalachian State @ Georgia Southern 56.5 -&gt; 55.5, Oregon State @ Fresno State 58.5 -&gt; 57.5); spread 0.5 (Bowling Green @ Western Michigan 13.5 -&gt; 14.0, Stanford @ Louisville 23.0 -&gt; 22.5, Florida @ Georgia 11.75 -&gt; 11.5). All other medians unchanged or moved &lt;=0.5.</li>
+<li>Flags delivered: 0. Flags closed: 0. No stale-book flag was possible without a steam event.</li>
+<li>State updated (backup steam-side-state.json.bak.1031-0955; compare script steam-side-compare-20261031-0955.py): all 47 medians refreshed to the 09:55 read, flags still {}.</li>
+<li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
+</ul>
+<h3>2026-10-31 09:54 ET run — addendum (retry report arrived, redundant)</h3>
+<ul>
+<li>The retry task (harness-measured 10:01-10:04 AM EDT, board read ~10:03 AM ET) also completed and reported all 47 medians identical to the 09:55 read already applied above, with the same 0 steam events (largest moves total 1.0, spread 0.5 vs 08:55 baselines) and no Oct 31 NFL games. As directed in the correction entry, it was NOT applied as a second update — state remains at the 09:55 read, flags still {}. No change to the run outcome; still no message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
