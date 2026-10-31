@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 13:08 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 13:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -196,6 +196,29 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST: none. No deliverables.</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State: 20 watch keys&#x27; last_seen set to 2026-10-31T08:25-04:00; ticket updates App State spread 76 -&gt; 77, Stanford spread 72 -&gt; 71, Texas State total 71 -&gt; 70; stored panel medians carried unchanged (backup rlm-state.json.bak.1031-0825). Watch list remains 20 markets. Next run must re-read the panel before judging any flag.</li>
+</ul>
+<h3>Run 09:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in, no bet. Browser task browser-task:8e0a033b-1b9f-5966-889d-fcdf3bfa25e7 dispatched ~09:24 ET for the 20 watch-list markets at &gt;=70% plus a scan for any new &gt;=70% sides; window was seen working (ScoresAndOdds NCAAF odds, splits, and App State matchup pages) but closed with NO report delivered by bookkeeping close (~09:35 ET). This is an undelivered report, not a source gate — ScoresAndOdds splits were readable in the 08:25 run today, and no rlm-gate-notified file exists (verified absent at run start). No Covers/VegasInsider fallback was triggered, since the gate condition (splits unreadable from all three) was not established.</li>
+<li>Slate at last verified read (08:25 ET): 47 Oct 31 NCAAF matchups listed, none started (earliest kickoff 12:00 PM ET); no Oct 31 NFL kickoffs (next Nov 1). No watch-list game had started at 08:25; start status was NOT re-verified this run.</li>
+<li>Comparison vs state: NO flag determinable this run. Ticket splits and panel medians were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered (no candidate met both RLM conditions on verified data). The 20 watch-list markets remain watch items only — a market flags on a later read only if its panel median moves &gt;=1.0 (spread) / &gt;=1.5 (total) toward the minority with the public side still &gt;=70% and no news explanation.</li>
+<li>FLAGGED LIST: none determinable this run. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 20 watch keys&#x27; last_seen set to 2026-10-31T09:35-04:00 with the pending-report note; medians/splits carried unchanged (backup rlm-state.json.bak.1031-0923). Next run (10:23 ET) must re-read the panel and reconcile any late report from browser-task:8e0a033b before any flag can be judged.</li>
+</ul>
+<h3>Addendum to Run 09:23 ET — late browser-task report received (task ran 9:24–9:27 AM ET, board read ~9:26 AM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete; its report arrived after this run&#x27;s bookkeeping. ScoresAndOdds public board + consensus (% of bets), read-only, no sign-in, no bet.</li>
+<li>Slate: 47 Oct 31 NCAAF matchups listed, 46 FBS after excluding UTEP vs North Dakota State (FCS). NFL: no Oct 31 kickoffs (first listed Nov 1). No watch-list game had started (earliest kickoff 12:00 PM ET).</li>
+<li>Watch-list reconciliation (20 markets; stored panel medians carried unchanged throughout, per precedent):</li>
+</ul>
+<p>  - Spreads: NO move toward any minority. Appalachian State panel +6.0 (+0.5 toward PUBLIC App State vs stored +5.5, below 1.0, wrong direction), App State 77% unchanged. All others unchanged in line: Minnesota +20.5/72%, Northern Illinois +21.5/78%, Oregon State -6/75%, South Carolina +3.5/72%, San Diego State -2.5/70%. Splits only: Northwestern 72% -&gt; 70%, Stanford 71% -&gt; 70% (both still &gt;=70%, no line move).</p>
+<p>  - Totals: NO verified panel-median move reaching a flag level. Unchanged (9 markets): Coastal 55.5/Under 73%, Colorado State 61.5/Under 75%, FIU 45.5/Over 75%, Kansas 45.5/Over 79%, Louisiana Tech 58.5/Under 79%, Nevada 43.5/Over 77%, South Carolina 44.5/Over 76%, Texas State 63.5/Under 70%, Wisconsin 36.5/Over 70%. Near-misses, not flags: Minnesota panel 41.0 (-0.5 vs stored 41.5 toward minority Under, below 1.5), Over 83% — flag level 40.0 or below not met; UAB panel 41.5 (-1.0 vs stored 42.5 toward minority Under, below 1.5), Over 74% — flag level 41.0 or below not met; Appalachian State panel 55.5 (-1.0 vs stored 56.5 toward PUBLIC Under, wrong direction), Under 72% — flag level 58.0+ not met.</p>
+<ul>
+<li>New &gt;=70% markets: none among FBS-vs-FBS games. UTEP vs North Dakota State Over 84% excluded (North Dakota State is FCS, as before).</li>
+<li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST (final): none. No message sent (alert-only rule).</li>
+<li>State reconciled (20 watch keys, last_seen 09:26 ET; splits updated Northwestern 70%, Stanford 70%; stored panel medians carried unchanged; backup rlm-state.json.bak.1031-0926late). Watch list remains 20 markets.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
