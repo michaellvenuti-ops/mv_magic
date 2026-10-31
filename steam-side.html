@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 14:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 15:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -88,6 +88,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <h3>2026-10-31 09:54 ET run — addendum (retry report arrived, redundant)</h3>
 <ul>
 <li>The retry task (harness-measured 10:01-10:04 AM EDT, board read ~10:03 AM ET) also completed and reported all 47 medians identical to the 09:55 read already applied above, with the same 0 steam events (largest moves total 1.0, spread 0.5 vs 08:55 baselines) and no Oct 31 NFL games. As directed in the correction entry, it was NOT applied as a second update — state remains at the 09:55 read, flags still {}. No change to the run outcome; still no message sent.</li>
+</ul>
+<h3>2026-10-31 10:55 ET run — no new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:84c19e41-a074-5040-9e30-f73d2d9eba2b (READ-ONLY, no sign-in, board view only; harness-measured 9:54–9:58 AM CDT = 10:54–10:58 AM ET): ScoresAndOdds public NCAAF board, read ~10:55 AM ET Oct 31, before any kickoff (earliest 12:00 PM ET). Per-book odds publicly readable, no gate. NFL board checked: no NFL games listed for Oct 31 (first games Nov 1), as in prior runs.</li>
+<li>Games read: 47 FBS, all matched to 09:55 AM baselines; no new games, none missing, none started. Books: usually 7 per game (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics, Kalshi), except Michigan @ Rutgers 6 (bet365 blank); 8 spread lines for Florida @ Georgia and Ohio State @ USC, where Hard Rock also listed a spread.</li>
+<li>Steam events: 0. Only moves, all below thresholds (spread &gt;=1.0 / total &gt;=1.5): Boston College @ Duke total 49.0 -&gt; 48.5; Temple @ East Carolina spread -4.5 -&gt; -4.0; Virginia @ Wake Forest spread -12.5 -&gt; -13.0; Nevada @ UCLA total 43.5 -&gt; 42.5. All other medians unchanged.</li>
+<li>Flags delivered: 0. Flags closed: 0. No stale-book flag was possible without a steam event.</li>
+<li>State updated (backup steam-side-state.json.bak.1031-1055; compare script steam-side-compare-20261031-1055.py): all 47 medians refreshed to the 10:55 read, flags still {}.</li>
+<li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
