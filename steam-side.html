@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 11:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 12:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -46,6 +46,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State seeded (script steam-side-seed-20261031.py; backup steam-side-state.json.bak.1031-0652): medians 0 → 47, flags 0. Spot-checks vs the report: Florida @ Georgia Georgia -11.5 / 56.5, Ohio State @ USC Ohio State -6.5 / 51.0, Michigan @ Rutgers Michigan -16 / 46.0.</li>
 <li>Gate file NOT created: ScoresAndOdds&#x27; public boards read successfully.</li>
 <li>DELIVERABLE: none (alert-only; seed run records baselines silently by design). No message sent. The next hourly run can now judge median moves (spread ≥1.0 / total ≥1.5) against these 06:52 AM ET baselines.</li>
+</ul>
+<h3>2026-10-31 07:54 ET run — no new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:923126d7 (READ-ONLY, no sign-in, board view only): ScoresAndOdds public NCAAF board, read ~7:54-7:56 AM ET Oct 31, before any kickoff. Per-book odds publicly readable, no gate. NFL board checked: no NFL games listed for Oct 31 (first games Nov 1).</li>
+<li>Games read: 47 FBS, all matched to 06:52 AM baselines; no new games, none missing. Books: 7 per game (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics, Kalshi), except Michigan @ Rutgers 6 (no bet365 line); Hard Rock omitted (no total column, so no pair could be formed without inventing one).</li>
+<li>Steam events: 0. Largest median moves were only 0.5 points, below thresholds (spread &gt;=1.0 / total &gt;=1.5): Appalachian State @ Georgia Southern spread 5.5 -&gt; 6.0; Army @ Memphis 5.5 -&gt; 6.0; Bowling Green @ Western Michigan total 44.5 -&gt; 45.0; Marshall @ Old Dominion spread -3.0 -&gt; -2.5; Virginia @ Wake Forest total 48.5 -&gt; 48.0. All other medians unchanged.</li>
+<li>Flags delivered: 0. Flags closed: 0. No stale-book flag was possible without a steam event.</li>
+<li>State updated (backup steam-side-state.json.bak.1031-0754; compare script steam-side-compare-20261031-0754.py): all 47 medians refreshed to the 07:56 read, flags still {}.</li>
+<li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
