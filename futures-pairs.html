@@ -26,8 +26,63 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Futures Pairs (Arb Watch)</h1>
-<div class="sub">Page built 2026-10-31 10:50 ET</div>
+<div class="sub">Latest scan list: futures-pairs-2026-10-31.md · page built 2026-10-31 11:25 ET</div>
 
-<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><p>No scan list banked yet — the next run will fill this page.</p></details>
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-10-31 (seed run)</h2>
+<h3>Read times and sources</h3>
+<ul>
+<li>Book prices: FALLBACK to <code>futures-board-2026-10-30.json</code> — no <code>futures-board-2026-10-31.json</code> existed at run time (the daily futures board runs 08:44 ET; this scan ran earlier). Board pulled ~8:45–9:00 AM ET Oct 30, 2026, from VegasInsider + Covers, with Kalshi / Polymarket US Yes % as displayed. Stale cells were EXCLUDED from all pairing math.</li>
+<li>Exchange No prices: live browser read Oct 31, 2026 ~06:50–06:55 EDT (Kalshi 06:50–06:52, Polymarket US 06:53–06:55). All are the event pages&#x27; quoted No-button prices; no distinct ask/offer price was shown on either exchange. NO No price was derived as 100 − Yes % — any team without a quoted No price cannot form an arb pair this run.</li>
+<li>Exchange event pages: Super Bowl LXI — kalshi.com/markets/kxsb/super-bowl, polymarket.us/event/nfl-champ-2027-02-14-w; NFL MVP — kalshi.com/markets/kxnflmvp/ap-pro-football-regular-season-mvp, polymarket.us/event/nfl-mvp-2027-02-11-w; NBA Championship — kalshi.com/markets/kxnba/pro-basketball-champion, polymarket.us/event/nba-champ-2027-06-18-w; Stanley Cup — kalshi.com/markets/kxnhl/stanley-cup, polymarket.us/event/nhl-champ-2027-06-18-w; Heisman — kalshi.com/markets/kxheisman/heisman-trophy-winner, polymarket.us/event/cfb-heisman-2026-12-13-w.</li>
+<li>IMPORTANT CAVEAT: book legs are Oct 30 prices paired with Oct 31 exchange No prices. These are NOT same-time pairs — verify BOTH legs live before placing anything. Exchange No legs can partially fill.</li>
+</ul>
+<h3>Scope note</h3>
+<p>No prices were read for the 18 teams whose proxy sum (best book implied % + (100 − Yes %)) was ≤ 99.0. Teams above that proxy were not No-checked this run, so a thin-spread arb just above a 99.0 proxy cannot be ruled out. All 5 live markets were covered; no market had concluded.</p>
+<h3>Arb pairs — DELIVERED (all NEW; prior futures-pairs state was empty)</h3>
+<p>Sorted by profit % of total staked, desc. Stakes are on a $1,000 book leg per the scan formula: gross G = $1,000 × decimal odds; No stake = G × No cost fraction; guaranteed profit = G × (1 − No cost) − $1,000 (identical under both outcomes, before any partial-fill or fee effects).</p>
+<ol>
+<li>Super Bowl LXI Winner — 49ers — Leg 1: DraftKings +900, $1,000 (10.00% implied). Leg 2: Kalshi No 85¢, $8,500.00. Sum 95.00%. Guaranteed profit $500.00, 5.26% of $9,500.00 total staked.</li>
+<li>NBA Championship 2026-27 — Rockets — Leg 1: Hard Rock +5000, $1,000 (1.96% implied). Leg 2: Kalshi No 94¢, $47,940.00. Sum 95.96%. Guaranteed profit $2,060.00, 4.21% of $48,940.00 total staked.</li>
+<li>NBA Championship 2026-27 — Rockets — Leg 1: Hard Rock +5000, $1,000 (1.96% implied). Leg 2: Polymarket US No 94%, $47,940.00. Sum 95.96%. Guaranteed profit $2,060.00, 4.21% of $48,940.00 total staked.</li>
+<li>Super Bowl LXI Winner — 49ers — Leg 1: DraftKings +900, $1,000 (10.00% implied). Leg 2: Polymarket US No 86%, $8,600.00. Sum 96.00%. Guaranteed profit $400.00, 4.17% of $9,600.00 total staked.</li>
+<li>NFL MVP 2026 — Jordan Love — Leg 1: FanDuel +3300, $1,000 (2.94% implied). Leg 2: Polymarket US No 94%, $31,960.00. Sum 96.94%. Guaranteed profit $1,040.00, 3.16% of $32,960.00 total staked.</li>
+<li>Super Bowl LXI Winner — Bears — Leg 1: DraftKings +2400, $1,000 (4.00% implied). Leg 2: Kalshi No 93¢, $23,250.00. Sum 97.00%. Guaranteed profit $750.00, 3.09% of $24,250.00 total staked.</li>
+<li>Super Bowl LXI Winner — Bears — Leg 1: DraftKings +2400, $1,000 (4.00% implied). Leg 2: Polymarket US No 93%, $23,250.00. Sum 97.00%. Guaranteed profit $750.00, 3.09% of $24,250.00 total staked.</li>
+<li>NFL MVP 2026 — Joe Burrow — Leg 1: FanDuel +600, $1,000 (14.29% implied). Leg 2: Kalshi No 83¢, $5,810.00. Sum 97.29%. Guaranteed profit $190.00, 2.79% of $6,810.00 total staked.</li>
+<li>NFL MVP 2026 — Joe Burrow — Leg 1: FanDuel +600, $1,000 (14.29% implied). Leg 2: Polymarket US No 83%, $5,810.00. Sum 97.29%. Guaranteed profit $190.00, 2.79% of $6,810.00 total staked.</li>
+</ol>
+<p>Total delivered arb pairs: 9 (under the top-10 cap). Note the No stakes on the longshot pairs are very large because the $1,000 book leg is scaled to a $51,000 / $34,000 gross — the formula, not a recommendation to stake that much.</p>
+<h3>Price gaps — not locks — DELIVERED</h3>
+<p>Best book implied % vs exchange Yes % differs by ≥ 5 implied points. One leg alone is not a hedge; no stakes, no guaranteed-profit figure.</p>
+<ul>
+<li>Super Bowl LXI Winner — 49ers — DraftKings +900 (10.00%) vs Kalshi Yes 16% (−6.00 pts) and Polymarket US Yes 16% (−6.00 pts). NOTE: these two gap flags overlap the 49ers arb pairs above (same book/exchange) — they are not separate plays.</li>
+<li>NBA Championship 2026-27 — Rockets — Hard Rock +5000 (1.96%) vs Kalshi Yes 8% (−6.04 pts) and Polymarket US Yes 8% (−6.04 pts). NOTE: these two gap flags overlap the Rockets arb pairs above — not separate plays.</li>
+<li>NFL MVP 2026 — Josh Allen — DraftKings +170 (37.04%) vs Kalshi Yes 31% (+6.04 pts). (Polymarket US Yes 33%, +4.04 pts — below threshold, not flagged.)</li>
+<li>Heisman Trophy 2026 — Jeremiah Smith — FanDuel +120 (45.45%) vs Kalshi Yes 39% (+6.45 pts) and Polymarket US Yes 40% (+5.45 pts).</li>
+</ul>
+<p>Gap-only flags (not already arb pairs): Josh Allen / Kalshi, Jeremiah Smith / Kalshi, Jeremiah Smith / Polymarket US.</p>
+<h3>Candidate combos checked that did NOT qualify as arbs (sum &gt; 98%)</h3>
+<ul>
+<li>Super Bowl: Chiefs DK +1050 / No 91% = 99.70%; Jaguars DK +2200 / No 94% = 98.35%; Vikings DK +2400 / No 96% = 100.00%.</li>
+<li>NFL MVP: Caleb Williams FD +2200 / Kalshi No 94% = 98.35%, Poly No 95% = 99.35%; Jared Goff FD +3300 / Kalshi No 96% = 98.94%, Poly No 97% = 99.94%; Lamar Jackson FD +10000 / No 99% = 99.99%; Jordan Love FD +3300 / Kalshi No 96% = 98.94% (Poly side qualified).</li>
+<li>NBA: 76ers Bet365 +900 / No 89% = 99.00%; Timberwolves Hard Rock +2500 / No 95% = 98.85%.</li>
+<li>Stanley Cup: Oilers Caesars +1000 / Kalshi No 91% = 100.09%, Poly No 90% = 99.09%; Wild BetMGM +1400 / No 93% = 99.67%; Senators Hard Rock +4000 / Kalshi No 97% = 99.44%, Poly No 98% = 100.44%.</li>
+<li>Heisman: Malachi Toney BetMGM +400 / Kalshi No 79% = 99.00%, Poly No 82% = 102.00%; Trinidad Chambliss BetMGM +3500 / No 98% = 100.78%.</li>
+</ul>
+<h3>Quoted No prices read (Oct 31, ~06:50–06:55 EDT)</h3>
+<p>Super Bowl: 49ers Kalshi 85¢ / Poly 86%; Bears 93¢ / 93%; Chiefs 91¢ / 91%; Jaguars 94¢ / 94%; Vikings 96¢ / 96%. NFL MVP: Burrow 83¢ / 83%; Caleb Williams 94¢ / 95%; Goff 96¢ / 97%; Jordan Love 96¢ / 94%; Lamar Jackson 99¢ / 99%. NBA: 76ers 89¢ / 89%; Rockets 94¢ / 94%; Timberwolves 95¢ / 95%. Stanley Cup: Oilers 91¢ / 90%; Senators 97¢ / 98%; Wild 93¢ / 93%. Heisman: Toney 79¢ / 82%; Chambliss 98¢ / 98%.</p>
+<h3>Dedupe</h3>
+<ul>
+<li>Prior <code>futures-pairs-state.json</code> was empty (seed run), so all 9 arb pairs and all 7 gap flags are NEW — no profit-change / leg-move comparison applied.</li>
+<li><code>arbitrage-state.json</code> (162 entries) and <code>kalshi-poly-arb-state.json</code> (10 entries) were checked for futures-market overlaps: none found, so no pair was skipped as already covered.</li>
+<li>State-key note: the spec key is market | team | book | exchange, so a team that is both an arb and a gap collapses to one state entry. Arb wins for those 4 keys (49ers × 2, Rockets × 2, marked also_gap=true) so they are graded as arbs, not as gaps. State now holds 12 entries: 9 arb + 3 gap-only. Pairs no longer qualifying are kept with last_seen unchanged — none applied this run (empty prior state).</li>
+<li>A second, narrower browser re-check for the Super Bowl Kalshi page was dispatched after a text-fetch failure (HTTP 429) on that page; its result had not arrived by finalization and was NOT used — the first browser task&#x27;s table above is the sole No-price source for this run. If that re-check later returns a different Super Bowl No price, reconcile before the next run.</li>
+<li>No exchange was unnamed in any report used; no book, exchange, or price was invented.</li>
+<li>Grading: delivered arb pairs are graded by the daily scan-boards grading at their stated profit (scaled to a $100 primary) when the market resolves; unresolved markets stay pending. Price-gap flags are never graded as arbs.</li>
+</ul>
+<h3>Reconciliation (later same morning)</h3>
+<ul>
+<li>The pending Super Bowl Kalshi re-check returned Oct 31, 6:59 AM EDT (measured 6:59–7:00 AM EDT): 49ers 85¢, Bears 93¢, Chiefs 91¢, Jaguars 94¢, Vikings 96¢ — identical to the first browser task&#x27;s Kalshi Super Bowl No prices. No arb pair, gap flag, or state entry changes as a result.</li>
+</ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
