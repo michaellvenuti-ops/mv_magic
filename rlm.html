@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 17:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 18:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -319,6 +319,30 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST (final): none. No deliverables.</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State reconciled (16 watch keys, last_seen 13:29 ET; Minnesota spread ticket_pct 70 -&gt; 69; stored panel medians unchanged; backup rlm-state.json.bak.1031-1329). Watch list now 15 live markets (Minnesota spread dropped below 70%). Next run must re-read the panel before judging any flag; note the 2:00 PM ET Coastal/Georgia State game will have started by the 14:23 run.</li>
+</ul>
+<h3>Run 14:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards, read-only, no sign-in, no bet. Browser task browser-task:493a8c75-76b2-5067-b9e5-a24ca9a6225a dispatched ~14:23 ET for the 14 watch-list markets at &gt;=70% plus a scan for any new &gt;=70% sides and NFL Oct 31 verification. No report delivered by bookkeeping close (~14:37 ET). This is an undelivered report, not a source gate — ScoresAndOdds splits were readable in the 08:25, 09:26, 10:32, 10:45, 12:27, and 13:29 runs today, and no rlm-gate-notified file exists (verified absent at run start). No Covers/VegasInsider fallback was triggered, since the gate condition (splits unreadable from all three) was not established.</li>
+<li>Slate at last verified read (13:29 ET): 14 live watch markets; the 2:00 PM ET Coastal/Georgia State game has since kicked off and is excluded going forward. Start status was NOT re-verified this run; no watch-list game kicks off before 3:00 PM ET, so none could have started before this run&#x27;s close.</li>
+<li>Comparison vs state: NO flag determinable this run. Ticket splits and panel medians were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered (no candidate met both RLM conditions on verified data). The 14 watch-list markets remain watch items only — a market flags on a later read only if its panel median moves &gt;=1.0 (spread) / &gt;=1.5 (total) toward the minority with the public side still &gt;=70% and no news explanation.</li>
+<li>FLAGGED LIST: none determinable this run. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 14 watch keys&#x27; last_seen set to 2026-10-31T14:37-04:00 with the pending-report note; Coastal/Georgia State total marked started (2:00 PM ET kickoff) and excluded going forward; medians/splits carried unchanged (backup rlm-state.json.bak.1031-1423). Next run (15:23) must re-read the panel and reconcile any late report from browser-task:493a8c75 before any flag can be judged.</li>
+</ul>
+<h3>Addendum to Run 14:23 ET — browser-task report received (task ran 2:25-2:42 PM ET, board read ~2:26-2:41 PM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete after bookkeeping close; its report is now reconciled. ScoresAndOdds public board + matchup-page panels, read-only, no sign-in, no bet. Ticket % = % of bets. Panel median = median of the 6 sportsbooks on each matchup page (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics).</li>
+<li>Slate: 47 Oct 31 NCAAF matchups listed; 14 kicking off 12:00-2:00 PM ET excluded as started; 33 not-started games checked (all kicking off after 2:23 PM ET). NFL board VERIFIED: no NFL game kicks off Oct 31 — next games Nov 1.</li>
+<li>Watch-list reconciliation (14 markets; stored panel medians carried unchanged throughout, per precedent):</li>
+</ul>
+<p>  - Spreads: NO move toward any minority. Appalachian State panel +6.0 (+0.5 toward PUBLIC App State vs stored +5.5, below 1.0, wrong direction), App State 75%. Northern Illinois panel +22.0 on the 6-book median (+21.5 including Kalshi) vs stored +21.5 (+0.5 toward PUBLIC on 6-book method, below 1.0, wrong direction; unchanged including Kalshi), NIU 77%. All others panel-verified unchanged: Northwestern +3.5/70%, Washington State +2.5/San Diego State 70%, Oregon State -6/77%.</p>
+<p>  - Totals: NO verified panel-median move reaching a flag level. Unchanged (3 markets): FIU 45.5/Over 75%, Kansas 45.5 (Over 79% -&gt; 84%, splits-only change, still &gt;=70%), South Carolina 44.5/Over 75%. Near-misses, not flags: Louisiana Tech panel 57.75 (-0.75 vs stored 58.5 toward minority Over, below 1.5), Under 78% — flag level 57.0 or below not met; Arizona State panel 47.5 (-1.0 vs stored 48.5 toward minority Under, below 1.5), Over 71% — flag level 47.0 or below not met; Minnesota panel 40.5 (-1.0 vs stored 41.5 toward minority Under, below 1.5), Over 83% — flag level 40.0 or below not met; Nevada panel 42.5 (-1.0 vs stored 43.5 toward minority Under, below 1.5), Over 78% — flag level 42.0 or below not met. Wrong-direction move: Colorado State panel 60.5 (-1.0 vs stored 61.5 toward PUBLIC Under), Under 74% — flag level 63.0+ not met; Appalachian State panel 55.5 (-1.0 vs stored 56.5 toward PUBLIC Under), Under 71% — flag level 58.0+ not met.</p>
+<ul>
+<li>New &gt;=70% markets: none among not-started FBS-vs-FBS games. UTEP vs North Dakota State total Over 89% excluded (North Dakota State is FCS, per precedent). Moneyline splits were not separately scanned.</li>
+<li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST (final): none. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State reconciled (14 watch keys, last_seen 14:41 ET; Kansas Over updated 79% -&gt; 84%; stored panel medians unchanged; backup rlm-state.json.bak.1031-1441). Run 14:23 ET now CLOSED — the earlier &quot;report pending&quot; note is superseded by this reconciliation. Note for the 15:23 run: the 3:00 PM ET games (Louisiana Tech/South Alabama, Temple/East Carolina, UConn/Air Force) will have started by then and drop out of flag consideration.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
