@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 18:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 19:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -147,6 +147,17 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 3 — all UConn @ Air Force, 3:00 PM ET Oct 31, spread: Air Force +1.5 at bet365, Air Force +1.5 at FanDuel, Air Force +1 at Fanatics; market steamed UConn -1.0 -&gt; pick&#x27;em, so these are the pre-move number (or better) on the steam side, 1.5/1.5/1.0 points from the new median. Flags closed: 0. SMU @ Syracuse flag stays open, unverified, not re-delivered (game started 12:00 PM ET).</li>
 <li>State updated (backup steam-side-state.json.bak.1031-1354-retry; compare script steam-side-compare-20261031-1354-retry.py): medians refreshed to the 2:06 PM read for the 33 games; flags 1 -&gt; 4 (3 new UConn flags, status open).</li>
 <li>DELIVERABLE (for main-agent delivery; this worker run does not message the user directly): three one-tap blocks for Air Force +1.5 at bet365, Air Force +1.5 at FanDuel, and Air Force +1 at Fanatics, with footer &quot;read ~2:06 PM ET Oct 31 — prices move, snapshot only, slow books move when hit&quot;. Timing caveat: kickoff is 3:00 PM ET, so delivery must land pre-kickoff to be actionable.</li>
+</ul>
+<h3>2026-10-31 14:54 ET run — 1 steam event, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:c613fa51-7e0b-5056-9ce0-83deddc5b6a8 (READ-ONLY, no sign-in, board view only; harness-measured 11:55 AM-12:01 PM PDT = 2:55-3:01 PM ET Oct 31): ScoresAndOdds public NCAAF + NFL boards. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 33 FBS not started at the ~2:54 PM ET cutoff (kickoffs 3:00 PM ET or later); no new games, none missing vs the stored list. NFL: no games listed for Oct 31 (first games Nov 1), as in prior runs. Books on the board this read: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics; Kalshi not shown (unlike the morning reads), Hard Rock blank for UConn. All other 32 games were within 0.5 points on spread and 0.25 points on total of their stored medians.</li>
+<li>Steam events: 1. UConn @ Air Force spread median moved 0.0 (pick&#x27;em) -&gt; -2.0 Air Force (2.0 points, meeting the &gt;=1.0 threshold), steam toward Air Force. Total 52.5 -&gt; 52.75 (0.25, below the &gt;=1.5 threshold). No other game met a threshold.</li>
+<li>Stale-book check on the UConn steam event: per-book Air Force spreads bet365 -2.5, BetMGM -2.0, DraftKings -2.5, Caesars -2.0, FanDuel -1.5, Hard Rock no line, Fanatics -2.0. Only FanDuel (-1.5) had not yet reached the new median -2.0 for Air Force. Its flag key (UConn @ Air Force | FanDuel | spread) already exists and is OPEN, so it is NOT a new deliverable under the key-based dedupe — its stale line was updated in state from Air Force +1.5 to Air Force -1.5, pre-move 0.0, new median -2.0, and it was NOT re-delivered.</li>
+<li>Flags delivered: 0. Flags closed: 2 — UConn @ Air Force bet365 (line -2.5, past the new median) and Fanatics (line -2.0, = new median), both marked closed silently. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated above).</li>
+<li>Timing caveat: the UConn game kicked off at 3:00 PM ET, inside the 2:55-3:01 PM ET read window, so the FanDuel -1.5 snapshot may already have been at/after kickoff by the end of the read; in any case it was not delivered because the key was already open.</li>
+<li>State updated (backup steam-side-state.json.bak.1031-1454; compare script steam-side-compare-20261031-1454.py): medians refreshed to the 2:55-3:01 PM read for the 33 not-started games; the 14 started games keep their earlier medians; flags 4 total (2 open, 2 closed).</li>
+<li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
