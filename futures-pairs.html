@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Futures Pairs (Arb Watch)</h1>
-<div class="sub">Latest scan list: futures-pairs-2026-10-31.md · page built 2026-10-31 13:08 ET</div>
+<div class="sub">Latest scan list: futures-pairs-2026-10-31.md · page built 2026-10-31 13:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-10-31 (seed run)</h2>
 <h3>Read times and sources</h3>
@@ -83,6 +83,68 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <h3>Reconciliation (later same morning)</h3>
 <ul>
 <li>The pending Super Bowl Kalshi re-check returned Oct 31, 6:59 AM EDT (measured 6:59–7:00 AM EDT): 49ers 85¢, Bears 93¢, Chiefs 91¢, Jaguars 94¢, Vikings 96¢ — identical to the first browser task&#x27;s Kalshi Super Bowl No prices. No arb pair, gap flag, or state entry changes as a result.</li>
+</ul>
+<p>---</p>
+<h2>Futures pairs scan — 2026-10-31 (09:24 ET run; second run of the day)</h2>
+<h3>Read times and sources</h3>
+<ul>
+<li>Book prices: today&#x27;s <code>futures-board-2026-10-31.json</code> (pulled ~8:45–8:56 AM ET, VegasInsider + Covers BetRivers + Kalshi/Polymarket US Yes % as displayed). Stale cells EXCLUDED from all pairing math (same exclusions as the board: e.g. DraftKings Rams +670 / Eagles +1700, FanDuel 76ers +2500 / Lakers +5000, Hard Rock Panthers +650 / Devils +3000 / Mammoth +3000, Caesars Capitals +2000 / Senators +5000, all DraftKings Heisman cells).</li>
+<li>Polymarket US No prices: live browser read Oct 31, 2026, 9:25–9:26 AM EDT (all five event pages loaded; quoted No-button prices, not derived).</li>
+<li>Kalshi No prices: NOT READ THIS RUN. The first Kalshi browser task closed with no report delivered; a recovery Kalshi browser task also closed with no report; a direct text fetch of the Kalshi Super Bowl page returned HTTP 429. No Kalshi No price was derived or invented — Kalshi pair figures below are carried from the 06:55 EDT seed run and are UNVERIFIED today. Next run must re-read Kalshi before treating any Kalshi pair as live.</li>
+<li>Scope note: No prices were read (Polymarket US) for the 20 teams whose proxy sum (best book implied % + (100 − Yes %)) was ≤ 99.0, plus board-derived gaps for all teams. Teams above that proxy were not No-checked this run (e.g. Super Bowl Vikings, best BetRivers +2000, proxy 99.76). All 5 live markets covered; no market had concluded.</li>
+</ul>
+<h3>Deliverables: NONE — alert-only run ends silently</h3>
+<p>Every Polymarket US arb pair verified today is IDENTICAL to the seed run (same book leg, same No leg, same profit — no profit improvement ≥ 1pt, no leg move ≥ 10¢), so none is NEW or materially CHANGED. No new arb pair and no new price-gap flag appeared. Per the alert-only rule, no message was sent.</p>
+<h3>Arb pairs verified today (Polymarket US; all previously reported, unchanged)</h3>
+<p>Sorted by profit % desc. Stakes on a $1,000 book leg: G = $1,000 × decimal odds; No stake = G × No cost fraction; guaranteed profit = G × (1 − No cost) − $1,000.</p>
+<ol>
+<li>Super Bowl LXI Winner — 49ers — DraftKings +900, $1,000 (10.00%). Polymarket US No 86%, $8,600. Sum 96.00%. Profit $400.00, 4.17% of $9,600. (Seed pair, unchanged.)</li>
+<li>NBA Championship 2026-27 — Rockets — Hard Rock +5000, $1,000 (1.96%). Polymarket US No 94%, $47,940. Sum 95.96%. Profit $2,060.00, 4.21% of $48,940. (Seed pair, unchanged.)</li>
+<li>NFL MVP 2026 — Jordan Love — FanDuel +3300, $1,000 (2.94%). Polymarket US No 94%, $31,960. Sum 96.94%. Profit $1,040.00, 3.16% of $32,960. (Seed pair, unchanged.)</li>
+<li>Super Bowl LXI Winner — Bears — DraftKings +2400, $1,000 (4.00%). Polymarket US No 93%, $23,250. Sum 97.00%. Profit $750.00, 3.09% of $24,250. (Seed pair, unchanged.)</li>
+<li>NFL MVP 2026 — Joe Burrow — FanDuel +600, $1,000 (14.29%). Polymarket US No 83%, $5,810. Sum 97.29%. Profit $190.00, 2.79% of $6,810. (Seed pair, unchanged.)</li>
+</ol>
+<p>Kalshi arb pairs carried UNVERIFIED from the seed run (No/profit NOT re-checked today): 49ers DraftKings +900 / Kalshi No 85¢ (5.26%), Rockets Hard Rock +5000 / Kalshi No 94¢ (4.21%), Bears DraftKings +2400 / Kalshi No 93¢ (3.09%), Joe Burrow FanDuel +600 / Kalshi No 83¢ (2.79%). Do not treat these as re-verified today.</p>
+<h3>Price gaps — not locks — verified today</h3>
+<p>Best book implied % vs exchange Yes % differs by ≥ 5 implied points. One leg alone is not a hedge; no stakes, no guaranteed-profit figure. No NEW gap flags this run.</p>
+<ul>
+<li>Super Bowl LXI Winner — 49ers — DraftKings +900 (10.00%) vs Kalshi Yes 16% (−6.00 pts) and Polymarket US Yes 15% (−5.00 pts; was −6.00 in the seed run — Yes ticked 16% → 15%, but the arb legs are unchanged, so this is not a deliverable change). Overlaps the 49ers arb pairs — not separate plays.</li>
+<li>NBA Championship 2026-27 — Rockets — Hard Rock +5000 (1.96%) vs Kalshi Yes 7% (−5.04 pts) and Polymarket US Yes 7% (−5.04 pts; was −6.04 in the seed run — Yes ticked 8% → 7%, arb legs unchanged, not a deliverable change). Overlaps the Rockets arb pairs — not separate plays.</li>
+<li>NFL MVP 2026 — Josh Allen — DraftKings +170 (37.04%) vs Kalshi Yes 31% (+6.04 pts). (Polymarket US Yes 33%, +4.04 pts — below threshold, not flagged.) Gap-only flag, unchanged from seed run.</li>
+<li>Heisman Trophy 2026 — Jeremiah Smith — FanDuel +120 (45.45%) vs Polymarket US Yes 40% (+5.45 pts). Gap-only flag, unchanged from seed run.</li>
+<li>DROPPED BELOW THRESHOLD (kept in state, last_seen unchanged, not delivered): Jeremiah Smith vs Kalshi — Kalshi Yes rose 39% → 41%, so the gap is now +4.45 pts, below the 5-pt threshold. The seed run&#x27;s Kalshi gap flag for Smith no longer qualifies today.</li>
+</ul>
+<h3>Polymarket US candidate combos checked that did NOT qualify as arbs (sum &gt; 98%)</h3>
+<ul>
+<li>Super Bowl: Chiefs FanDuel +1100 / No 91% = 99.33%; Jaguars DraftKings +2200 / No 94% = 98.35%.</li>
+<li>NFL MVP: Caleb Williams FanDuel +2200 / No 94% = 98.35% (was 99.35% on Poly in the seed run — No ticked 95% → 94%, still no arb); Jared Goff FanDuel +3300 / No 97% = 99.94%; Lamar Jackson FanDuel +10000 / No 99% = 99.99%.</li>
+<li>NBA: 76ers Bet365 +900 / No 89% = 99.00%; Timberwolves Hard Rock +2500 / No 95% = 98.85%.</li>
+<li>Stanley Cup: Oilers Caesars +1000 / No 90% = 99.09%; Wild BetMGM +1400 / No 93% = 99.67%; Devils DraftKings +1400 / No 93% = 99.67%; Senators Hard Rock +4000 / No 98% = 100.44%; Canadiens BetRivers +2700 / No 97% = 100.57%.</li>
+<li>Heisman: Malachi Toney BetMGM +400 / No 82% = 102.00%; CJ Carr BetMGM +2000 / No 95% = 99.76%; Jesse Legree BetMGM +3000 / No 96% = 99.23%.</li>
+</ul>
+<h3>Quoted Polymarket US No prices read (Oct 31, 9:25–9:26 AM EDT)</h3>
+<p>Super Bowl: 49ers 86%; Chiefs 91%; Bears 93%; Jaguars 94%. NFL MVP: Burrow 83%; Caleb Williams 94%; Goff 97%; Jordan Love 94%; Lamar Jackson 99%. NBA: 76ers 89%; Rockets 94%; Timberwolves 95%. Stanley Cup: Oilers 90%; Wild 93%; Devils 93%; Senators 98%; Canadiens 97%. Heisman: Toney 82%; CJ Carr 95%; Legree 96%.</p>
+<h3>Dedupe</h3>
+<ul>
+<li><code>arbitrage-state.json</code> and <code>kalshi-poly-arb-state.json</code> checked for futures-market overlaps: none found (no &quot;super bowl&quot;, &quot;mvp&quot;, &quot;nba championship&quot;, &quot;stanley cup&quot;, &quot;heisman&quot;, or &quot;futures&quot; entries), so no pair was skipped as already covered by either state.</li>
+<li>All 5 Polymarket US arb pairs above match seed-run state entries exactly (same book leg, same No leg, same profit) — not deliverable under the NEW / profit +1pt / leg +10¢ rule.</li>
+<li>State: 12 entries retained, none deleted. Board-derived Yes/gap fields updated from today&#x27;s board (49ers Polymarket Yes 16% → 15%, gap −6.00 → −5.00; Rockets Yes 8% → 7% both exchanges, gap −6.04 → −5.04; Jeremiah Smith Kalshi Yes 39% → 41%, gap +6.45 → +4.45, now below threshold). Kalshi No/profit fields untouched — carried, unverified today.</li>
+<li>No exchange was unnamed in any report used; no book, exchange, or price was invented. No No price was derived as 100 − Yes %.</li>
+<li>Grading: no new delivered pairs, so nothing new enters grading. Previously delivered arb pairs are graded by the daily scan-boards grading at their stated profit (scaled to a $100 primary) when the market resolves; unresolved markets stay pending. Price-gap flags are never graded as arbs.</li>
+<li>Footer for any future delivery from this run&#x27;s data: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.</li>
+</ul>
+<p>---</p>
+<h3>Reconciliation (Kalshi read arrived after the 09:24 run was finalized)</h3>
+<ul>
+<li>The Kalshi recovery read completed 9:32–9:33 AM EDT (all five event pages loaded; quoted No-button prices, none derived). This supersedes the &quot;Kalshi NOT READ&quot; note in the 09:24-run section above: Kalshi pairs ARE verified for this run, and the conclusion is unchanged — still no deliverables.</li>
+<li>Quoted Kalshi No prices (9:32–9:33 AM EDT): Super Bowl — 49ers 85¢, Chiefs 91¢, Bears 93¢, Jaguars 94¢. NFL MVP — Burrow 83¢, Caleb Williams 94¢, Goff 96¢, Jordan Love 96¢, Lamar Jackson 99¢. NBA — 76ers 89¢, Rockets 94¢, Timberwolves 95¢. Stanley Cup — Oilers 91¢, Wild 93¢, Devils 93¢, Senators 97¢, Canadiens 96¢. Heisman — Toney 79¢, CJ Carr 94¢, Legree 98¢.</li>
+<li>Kalshi arb pairs verified identical to the seed run (not deliverable): 49ers DraftKings +900 / No 85¢ → $500, 5.26%; Rockets Hard Rock +5000 / No 94¢ → $2,060, 4.21%; Bears DraftKings +2400 / No 93¢ → $750, 3.09%; Burrow FanDuel +600 / No 83¢ → $190, 2.79%.</li>
+<li>Kalshi candidate combos checked that did NOT qualify (sum &gt; 98%): Chiefs 99.33%; Jaguars 98.35%; Caleb Williams 98.35%; Goff 98.94%; Jordan Love 98.94%; Lamar Jackson 99.99%; 76ers 99.00%; Timberwolves 98.85%; Oilers 100.09%; Wild 99.67%; Devils 99.67%; Senators 99.44%; Canadiens 99.57%; Toney 99.00%; CJ Carr 98.76%; Legree 101.23%.</li>
+<li>Final verdict for the 09:24 run stands: NO deliverables, no message sent. Both exchanges are now verified for this run.</li>
+</ul>
+<h3>Second confirmation (original Kalshi read, delivered late)</h3>
+<ul>
+<li>The original Kalshi read (9:25–9:27 AM EDT) arrived after the reconciliation above. Its 20 No prices are IDENTICAL to the 9:32–9:33 AM EDT recovery read on every team — two independent Kalshi reads agree exactly. No pair, sum, or verdict changes. Final verdict for the 09:24 run stands: no deliverables, no message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
