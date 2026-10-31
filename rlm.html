@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 11:25 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 11:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -165,6 +165,22 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST: none. No deliverables.</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State: 19 watch keys&#x27; last_seen set to 2026-10-31T06:26-04:00; stored panel medians carried unchanged throughout (backup rlm-state.json.bak.1031-0626). Watch list remains 19 markets. Next run must re-read the panel before judging any flag.</li>
+</ul>
+<h3>Run 07:23 ET (hourly RLM scan)</h3>
+<ul>
+<li>Source: ScoresAndOdds public boards + consensus (% of bets), read-only, no sign-in, no bet. Browser task ran 7:24-7:27 AM ET, board read ~7:27 AM ET. No Covers/VegasInsider fallback needed. No rlm-gate-notified file created (verified absent at run start).</li>
+<li>Slate at read time: 47 Oct 31 NCAAF matchups listed, none started (earliest kickoff 12:00 PM ET). 46 FBS-vs-FBS + 1 excluded UTEP vs North Dakota State (North Dakota State is FCS). NFL: no Oct 31 kickoffs confirmed (next NFL games Nov 1). No watch-list game had started.</li>
+<li>Watch-list reconciliation (19 markets; report lines are board/consensus lines, panel medians noted where given — values matching stored panel medians are confirmed as no-move; differing board/panel values were NOT substituted for stored panel medians, per precedent):</li>
+</ul>
+<p>  - Spreads: NO consensus line moved. Appalachian State +5.5 / 74% -&gt; 76% (still &gt;=70%, no move); matchup-page spread panel median +6 is +0.5 toward the PUBLIC side, below the 1.0 threshold — stored +5.5 NOT overwritten. All others unchanged: Minnesota +20.5 / 72%, Northern Illinois +21.5 / 78%, Northwestern +3.5 / 72%, Oregon State -6 / 75%, South Carolina +3.5 / 72%, Stanford +22.5 / 72%, San Diego State -2.5 (= stored Washington State +2.5) / 70%.</p>
+<p>  - Totals: NO verified panel-median move toward a minority. Unchanged (8 markets): Coastal/Georgia State 55.5 / Under 73%; Colorado State/Utah State 61.5 / Under 75%; FIU/Liberty 45.5 / Over 75%; Kansas/TCU 45.5 / Over 79%; Louisiana Tech/South Alabama 58.5 / Under 79%; Nevada/UCLA 43.5 / Over 77%; South Carolina/Oklahoma 44.5 / Over 76%; Texas State/Boise State 63.5 / Under 71%. Appalachian State/Georgia Southern panel-verified 56.5 / Under 73% -&gt; 72% (no move; board line-movement subset 57.5 also below flag 58.0+).</p>
+<p>  - Near-misses, not flags (both moved toward the PUBLIC Over side, not the minority, and neither reached its flag level): Minnesota/Indiana header 40.5 vs stored panel 41.5, panel median 41.0 — flag level remains panel-verified 40.0 or below with Over still &gt;=70% (Over 83% unchanged) and no news explanation. UAB/South Florida header 41.5 vs stored panel 42.5, panel median 41.75 — flag level remains panel-verified 41.0 or below with Over still &gt;=70% (Over 74% unchanged) and no news explanation. Stored panel medians carried unchanged throughout.</p>
+<ul>
+<li>New &gt;=70% markets: one — Wisconsin/Iowa total Over 70% at 36.5 (12:00 PM ET). NOT a flag: the game already sits in state (Wisconsin total 36.5, Over 69% at baseline), so this is a below-threshold market crossing to 70% with its line UNCHANGED — it JOINS the watch list as a baseline, not a flag (no move to judge). No new &gt;=70% FBS spreads (closest: Mississippi State +20.5 at 69%, Illinois -2.5 at 68%). UTEP vs North Dakota State Over 84% excluded (North Dakota State is FCS, as before).</li>
+<li>Comparison vs state: NO market met both RLM conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST: none. No deliverables.</li>
+<li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
+<li>State: 20 keys updated, last_seen 2026-10-31T07:27-04:00 (19 carried watch keys + Wisconsin/Iowa total newly at 70%); stored panel medians carried unchanged throughout (backup rlm-state.json.bak.1031-0727). Watch list now 20 markets. Next run must re-read the panel before judging any flag.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
