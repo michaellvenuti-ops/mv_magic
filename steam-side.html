@@ -26,8 +26,26 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Page built 2026-10-31 10:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 11:25 ET</div>
 
-<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><p>No scan list banked yet — the next run will fill this page.</p></details>
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
+<ul>
+<li>Browser task browser-task:77a54b88-724f-5ece-94c4-8d1a36525339 (READ-ONLY, no sign-in, board view only): reached ScoresAndOdds, opened both NFL odds and NCAAF odds boards, still working at ~06:57 ET check; window closed with no report delivered to this run by ~07:03 ET after a further ~3 min wait for a late report.</li>
+<li>Games read: NOT verified this run (no browser report). No medians could be computed, so no baselines were seeded.</li>
+<li>Steam events: 0 proven. Flags delivered: 0. Flags closed: 0.</li>
+<li>State file steam-side-state.json LEFT UNCHANGED (medians {}, flags {}) — this remains a first-sighting run on the next hourly attempt, by design, since no flag is possible without a prior median.</li>
+<li>Gate file NOT created: the source is not proven unreadable — the browser reached both public boards, and the hung-number scan read the same ScoresAndOdds boards successfully earlier this morning (05:44 ET, 60 games). This was a browser-task delivery failure, not a source gate. Next hourly run should retry the board read and seed baselines.</li>
+<li>DELIVERABLE: none (alert-only; seed run records baselines silently in any case, and nothing was verified here). No message sent.</li>
+</ul>
+<h3>2026-10-31 06:47 ET run — CORRECTION (late browser report supersedes the unverified entry above)</h3>
+<ul>
+<li>Browser task browser-task:77a54b88-724f-5ece-94c4-8d1a36525339 DID complete: harness-measured 6:47-6:53 AM EDT, board read ~6:52 AM ET Oct 31, ScoresAndOdds public boards, no sign-in, board view only, no individual game pages opened.</li>
+<li>Games read: 47 total, all FBS Oct 31, not started at read time. NFL 0 — no NFL game is listed for Oct 31 on the board (next NFL games are Nov 1-2), not a paywall or sign-in gate. No section was unreadable.</li>
+<li>Books counted: 7 per game (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics, Kalshi), except Michigan @ Rutgers with 6 (bet365 blank for that game); Hard Rock blank for all 47 games and not counted.</li>
+<li>SEED ONLY: all 47 games are first sightings, so no steam event could be judged and no flag is possible. Steam events: 0. Flags delivered: 0. Flags closed: 0.</li>
+<li>State seeded (script steam-side-seed-20261031.py; backup steam-side-state.json.bak.1031-0652): medians 0 → 47, flags 0. Spot-checks vs the report: Florida @ Georgia Georgia -11.5 / 56.5, Ohio State @ USC Ohio State -6.5 / 51.0, Michigan @ Rutgers Michigan -16 / 46.0.</li>
+<li>Gate file NOT created: ScoresAndOdds&#x27; public boards read successfully.</li>
+<li>DELIVERABLE: none (alert-only; seed run records baselines silently by design). No message sent. The next hourly run can now judge median moves (spread ≥1.0 / total ≥1.5) against these 06:52 AM ET baselines.</li>
+</ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
