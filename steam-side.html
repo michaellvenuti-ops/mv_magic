@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 15:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 16:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -97,6 +97,16 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. No stale-book flag was possible without a steam event.</li>
 <li>State updated (backup steam-side-state.json.bak.1031-1055; compare script steam-side-compare-20261031-1055.py): all 47 medians refreshed to the 10:55 read, flags still {}.</li>
 <li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
+</ul>
+<h3>2026-10-31 11:54 ET run — 1 NEW stale-book flag (deliverable)</h3>
+<ul>
+<li>Browser task browser-task:17f7a4f0-6f66-5462-a1fa-34f3c961647c (READ-ONLY, no sign-in, board view only; harness-measured 11:54-11:57 AM EDT): ScoresAndOdds public NCAAF + NFL boards, read ~11:54-11:56 AM ET Oct 31, before the 12:00 PM ET kickoffs. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 47 FBS, all matched to 10:55 AM baselines; no new games, none missing, none started at read time. NFL: no games listed for Oct 31 (first games Nov 1), as in prior runs. Books: usually 7 per game (bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics, Kalshi), except Michigan @ Rutgers 6 (bet365 blank); Hard Rock blank on totals for all games, spread shown only for Florida @ Georgia and Ohio State @ USC.</li>
+<li>Steam events: 1. SMU @ Syracuse spread median moved -9.5 -&gt; -8.5 (exactly 1.0, meeting the &gt;=1.0 threshold), steam toward underdog Syracuse. No total moved &gt;=1.5 (largest total moves 1.0). Other &gt;=0.5 median moves, all below steam thresholds: Illinois @ Maryland total 53.5 -&gt; 54.0; UAB @ South Florida total 42.5 -&gt; 43.5; Boston College @ Duke total 48.5 -&gt; 49.5; Notre Dame @ Navy spread -30.5 -&gt; -31.0, total 55.5 -&gt; 54.5; Wisconsin @ Iowa total 36.5 -&gt; 35.5; Auburn @ Ole Miss spread -11.5 -&gt; -11.0; Marshall @ Old Dominion total 46.5 -&gt; 45.5; Minnesota @ Indiana total 41.0 -&gt; 40.5; Southern Miss @ Louisiana-Monroe total 55.5 -&gt; 54.5; Clemson @ Florida State total 49.5 -&gt; 50.5; Oklahoma State @ Iowa State total 58.5 -&gt; 58.0; Washington State @ San Diego State total 48.0 -&gt; 48.5; Ohio State @ USC total 51.0 -&gt; 50.5. All other 33 games matched baselines exactly.</li>
+<li>Stale-book check on the SMU steam event: per-book SMU spreads bet365 -8.5, BetMGM -8.5, DraftKings -8.5, Caesars -8.5, FanDuel -8.5, Hard Rock blank, Fanatics -9.5, Kalshi -9.5. Books still at the pre-move median for the underdog (Syracuse +9.5): Fanatics and Kalshi. Fanatics is NJ-licensed and is the DELIVERABLE. Kalshi is NOT a NJ-licensed sportsbook (prediction-market exchange), so it is excluded by the scan&#x27;s NJ-only rule and was NOT delivered as a flag.</li>
+<li>Flags delivered: 1 — SMU @ Syracuse, 12:00 PM ET Oct 31, spread, Syracuse +9.5 at Fanatics; market steamed -9.5 -&gt; -8.5, so +9.5 is the pre-move number on the steam side, 1.0 point from the new median. Flags closed: 0. Prior flags: none, so no re-openings.</li>
+<li>State updated (backup steam-side-state.json.bak.1031-1154; compare script steam-side-compare-20261031-1154.py): all 47 medians refreshed to the 11:54 read, flags 0 -&gt; 1 (Fanatics/SMU spread, status open).</li>
+<li>DELIVERABLE (for main-agent delivery; this worker run does not message the user directly): one-tap block for Syracuse +9.5 at Fanatics, with footer &quot;read ~11:54 AM ET Oct 31 — prices move, snapshot only, slow books move when hit&quot;. Timing caveat: the read was pre-kickoff (12:00 PM ET kickoff), so if delivery lands after kickoff the snapshot is no longer pre-game.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
