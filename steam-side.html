@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 19:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-10-31 20:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -158,6 +158,17 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Timing caveat: the UConn game kicked off at 3:00 PM ET, inside the 2:55-3:01 PM ET read window, so the FanDuel -1.5 snapshot may already have been at/after kickoff by the end of the read; in any case it was not delivered because the key was already open.</li>
 <li>State updated (backup steam-side-state.json.bak.1031-1454; compare script steam-side-compare-20261031-1454.py): medians refreshed to the 2:55-3:01 PM read for the 33 not-started games; the 14 started games keep their earlier medians; flags 4 total (2 open, 2 closed).</li>
 <li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
+</ul>
+<h3>2026-10-31 15:54 ET run — 1 steam event, stale check incomplete, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:bd91c5f6-fe48-5bcb-a2ca-53763b15a8eb (READ-ONLY, no sign-in, board view only; harness-measured 12:55-12:59 PM PDT = 3:55-3:59 PM ET Oct 31): ScoresAndOdds public NCAAF + NFL boards. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 18 FBS not started at read time (kickoffs 4:00 PM ET or later). No new games vs the stored list once the omission below is corrected. NFL: no games listed for Oct 31 (first games Nov 1), as in prior runs. Books on the board this read: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics; Kalshi not shown as a column, Hard Rock frequently blank.</li>
+<li>CORRECTION to the browser report: New Mexico @ San Jose State was NOT a first sighting. It IS in state (stored 2:55 PM ET medians New Mexico -14.5 / 42.5, kickoff 4:00 PM ET) but was omitted from the stored list handed to the browser task, which was cut at 4:15 PM ET kickoffs. The browser therefore reported it as &quot;added&quot; and gave NO per-book detail for it.</li>
+<li>Steam events: 1. New Mexico @ San Jose State spread median moved -14.5 -&gt; -15.5 (exactly 1.0, meeting the &gt;=1.0 threshold), steam toward favorite New Mexico; total unchanged at 42.5. All other 17 games: no spread moved at all, no total moved &gt;=1.5 (largest total moves: Purdue @ Penn State 54.75 -&gt; 55.5, +0.75; Northern Illinois @ UNLV 54.75 -&gt; 54.5; Ohio State @ USC 50.5 -&gt; 50.75; Washington State @ San Diego State 48.25 -&gt; 48.0).</li>
+<li>Stale-book check on the New Mexico steam event: INCOMPLETE — no per-book New Mexico lines were reported, so no stale book can be named and no flag is delivered; no book or price was invented. By reconciliation time the 4:00 PM ET kickoff had arrived, so any flag from this event would be unactionable in any case. A follow-up board read was NOT launched: the game had started, so it falls outside the not-started scope.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1031-1554; compare script steam-side-compare-20261031-1554.py): medians refreshed to the 3:55-3:58 PM read for the 18 not-started games; the 29 started games keep their earlier medians; flags still 4 total (2 open, 2 closed).</li>
+<li>DELIVERABLE: none (alert-only; steam event produced no verifiable stale-book flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
