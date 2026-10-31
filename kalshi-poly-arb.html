@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-31.md · page built 2026-10-31 19:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-10-31.md · page built 2026-10-31 20:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 12:44–12:46 AM EDT — DarkHorse Arbitrage Bet Finder (NJ view, read-only)</h3>
 <ul>
@@ -293,6 +293,41 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <ul>
 <li>Browser task confirmed: DarkHorse remained signed out. Google 2-Step Verification stopped at the tablet prompt (tap &quot;Yes&quot; on the Lenovo tablet notification, then number-match 40) — a step the agent cannot complete, and the user is travelling without that tablet, so no retry was made.</li>
 <li>Arbitrage tool never reached: no 3% profit filter applied, no Full Bet Size or Smaller Bets pass performed, 0 qualifying rows observed. No bets, purchases, or setting changes. State unchanged; deliverables 0; next hourly run retries.</li>
-</ul></details>
+</ul>
+<h3>Run 15:44 PM EDT (12:44 PM PDT, scheduled) — DarkHorse Arbitrage Bet Finder (NJ view, read-only) — NO RESULT DELIVERED, RETRY NEXT RUN</h3>
+<ul>
+<li>Browser task browser-task:8531a126-0447-57c6-bd2b-bc364828e6b6 dispatched to the Arbitrage finder (profit filter 3% strict &gt;3.00%, $1,000 primary, read-only, no &quot;Include Player Props&quot; toggle, Full Bet Size pass + Smaller Bets pass with Liquidity Mode restored). No signed-in window existed at dispatch, so a new window was opened on the default profile; it reached https://darkhorseodds.com/arbitrage and worked for ~10 minutes, then closed.</li>
+<li>No compact report, question, or sign-in status was delivered into this run, and no pending approval was found (permissions check: 0 pending). A follow-up status check via the same task_id was accepted and its window also closed with no report delivered.</li>
+<li>Outcome unknown: sign-in state and tool contents were never reported, so NO pairs were collected, verified, or invented, and no Smaller Bets pass result was confirmed. State file unchanged (25 entries as of the 13:44 EDT run); no pruning was done, because absence of a report is not evidence pairs disappeared. Deliverables: 0 — alert-only rule, so nothing delivered. No bets placed. Per the scan body, the next hourly run retries. If a late browser report arrives after this run, it should be appended here as an addendum rather than treated as this run&#x27;s verified result.</li>
+</ul>
+<h4>Addendum to 15:44 PM EDT run — late browser report arrived (task ran 12:44–12:54 PM PDT, 9 min, harness-measured)</h4>
+<ul>
+<li>Supersedes the &quot;NO RESULT DELIVERED&quot; note above: the scan DID complete, SIGNED IN throughout — no sign-in challenge, menu showed &quot;Sign Out.&quot; Tool loaded: Arbitrage Bet Finder, NJ view, read-only, no &quot;Include Player Props&quot; toggle touched, Primary Bet $1,000. Profit filter is dollar-denominated, so Min Profit was set to $3 and the strict &gt;3.00% cut was applied manually from the profit % column. Liquidity Mode was switched to Smaller Bets and verified back to &quot;Full Bet Size Only&quot; before finishing, so the tool was left as found. The Profit filter remains on, preset [unsaved]; no other settings changed. No bets placed.</li>
+<li>Coverage: Full Bet Size — 242 total results, Page 1 ran 65.45% down to 1.13%, Page 2 started at 1.13% (descending sort confirmed), so the &gt;3.00% set was on Page 1. Smaller Bets — 350 results, scanned in sort order down through the 3.03% row (2.98% next).</li>
+<li>Deliverable: 1 — UPDATED, SMALLER BETS (delivery left to main-agent resolution):</li>
+</ul>
+<p>  - UPDATED, SMALLER BETS — NFL NE Patriots / MIA Dolphins — Nov-01 4:25 PM — Touchdowns C. Kiner 1+ / Over 0.5 — Leg 1: 1+ NO, -374.1, $94.74, Polymarket US — Leg 2: Over 0.5, +575, $18, Bet365 — Profit $5.59, 4.96% — Arb Risk: Yes (also flagged &quot;Poly/Kalshi Prop&quot;). Bet-slip detail: Primary Bet Wins $5.59; Hedge Bet Wins $8.76; Conversion 4.96%. UPDATED vs this state: was 2.94% / Polymarket US -426.3 at the 11:44 run; profit +2.02pt and leg +52.2c, meeting both change bars. Main arbitrage-state holds this pair at 2.35% (worse), so not deduped out.</p>
+<ul>
+<li>Re-seen, NOT re-delivered:</li>
+</ul>
+<p>  - NFL NE Patriots / MIA Dolphins — Nov-01 4:25 PM — Touchdowns C. Kiner Over 0.5 — Leg 1: Over 0.5 NO, -418.8, $1,000, Kalshi — Leg 2: Over 0.5, +575, $184, Bet365 — Profit $54.77, 4.63% — Arb Risk: Yes. Was 4.42% / Kalshi -421.1 at 13:44; profit +0.21pt, leg +2.3c — below both change bars. Main arbitrage-state already holds this exact snapshot and also did not re-deliver.</p>
+<p>  - Smaller Bets variant of that Kalshi pair ($550.16 / $102, 5.47%) — same books/sides, not smaller-bets-only, not counted as new.</p>
+<ul>
+<li>Dropped, banked only (not deliverables):</li>
+</ul>
+<p>  - NBA PHI 76ers / CHA Hornets — Oct-31 6:15 PM — Assists L. James Under 7.5 — Bet105 -140 $1,000 vs Over 7.5 YES Polymarket Intl. +4900 $36.05 — $678.13, 65.45% — no qualifying exchange leg (Polymarket Intl. never counts).</p>
+<p>  - NBA PHI 76ers / CHA Hornets — Oct-31 6:15 PM — Rebounds L. James Under 7.5 — Bet105 -156 $1,000 vs Over 7.5 YES Polymarket Intl. +4900 $34.51 — $606.44, 58.62% — same reason.</p>
+<p>  - 23 other rows above 3.00% with no Kalshi/Polymarket US leg, including a 3.67% DraftKings Predictions row (not treated as Kalshi/Polymarket US). No Fliff/BroThrow pair in the &gt;3.00% Full Bet Size set.</p>
+<ul>
+<li>State: 25 → 21 entries (2 updated: Kiner Kalshi re-seen, Kiner Polymarket US updated; 2 added: L. James Intl. banked-only; 6 pruned for passed event starts: Delaware St./Norfolk St. 3:00 PM, both Henderson POR/UTA 3:15 PM, both Kansas St./Colorado 2:00 PM, MLS DC/COL 2:00 PM). Backup: kalshi-poly-arb-state.json.bak.1031-1544. No bets placed.</li>
+</ul>
+<h4>Collected list (full, with read time 12:44–12:54 PM PDT 2026-10-31)</h4>
+<ol>
+<li>NFL NE Patriots / MIA Dolphins — Nov-01 4:25 PM — Touchdowns C. Kiner Over 0.5 — Leg 1: Over 0.5 NO, -418.8, $1,000, Kalshi — Leg 2: Over 0.5, +575, $184, Bet365 — Profit $54.77, 4.63% — Arb Risk: Yes — Status: re-seen, NOT re-delivered (below both change bars).</li>
+<li>NFL NE Patriots / MIA Dolphins — Nov-01 4:25 PM — Touchdowns C. Kiner 1+ / Over 0.5 — Leg 1: 1+ NO, -374.1, $94.74, Polymarket US — Leg 2: Over 0.5, +575, $18, Bet365 — Profit $5.59, 4.96% — Arb Risk: Yes — Status: SMALLER BETS, UPDATED — DELIVERABLE as UPDATED.</li>
+<li>NBA PHI 76ers / CHA Hornets — Oct-31 6:15 PM — Assists L. James Under 7.5 — Leg 1: Under 7.5, -140, $1,000, Bet105 — Leg 2: Over 7.5 YES, +4900, $36.05, Polymarket Intl. — Profit $678.13, 65.45% — Status: banked only, NOT delivered (Polymarket Intl. never counts).</li>
+<li>NBA PHI 76ers / CHA Hornets — Oct-31 6:15 PM — Rebounds L. James Under 7.5 — Leg 1: Under 7.5, -156, $1,000, Bet105 — Leg 2: Over 7.5 YES, +4900, $34.51, Polymarket Intl. — Profit $606.44, 58.62% — Status: banked only, NOT delivered (Polymarket Intl. never counts).</li>
+</ol>
+<p>All other rows dropped: below 3.00%, no Kalshi/Polymarket US leg, or Polymarket Intl.-only. No bets placed.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
