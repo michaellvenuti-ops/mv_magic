@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-10-31.md · page built 2026-10-31 18:50 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-10-31.md · page built 2026-10-31 19:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Leader-follower scan — 2026-10-31</h2>
 <h3>12:35 AM ET run (scheduled 12:23 AM ET) — FRESH BASELINE SNAPSHOT</h3>
@@ -341,6 +341,51 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <h3>Books graduated: none — BetMGM, Caesars, DraftKings each remain at 1 lead in the trailing 14 days; all remain in logging phase, so no message sent, per the phase rule</h3>
 <ul>
 <li>State backup: leader-follower-state.json.bak.1031-1323 (taken before this run&#x27;s update; 34 stored lines updated, last verified 2:14 PM ET Oct 31).</li>
+</ul>
+<h3>3:15 PM ET run (scheduled 2:23 PM ET) — NO REPORT, no lines changed</h3>
+<ul>
+<li>Browser task ran ~2:24–3:12 PM ET on ScoresAndOdds (read-only, no sign-in) but its window closed without delivering a per-book report. A text-fetch fallback rendered static guide copy only, not the JS odds table, so no stored lines were changed or verified this run.</li>
+<li>The 3:00/3:15 PM ET games kicked off during this window, so their pregame lines go unverified this run; later games remain not started.</li>
+<li>Pending candidate REMAINS PENDING, judgment deferred to the next successful check, NOT judged no-follow without a read: Northern Illinois at UNLV (10:30 PM ET), DraftKings spread 21.5 → 22.5, first seen 2:14 PM ET.</li>
+<li>No credited leads, no pack moves judged, no graduated book (BetMGM, Caesars, DraftKings each still at 1 lead in trailing 14 days; phase logging), no alert sent.</li>
+<li>State backup: leader-follower-state.json.bak.1031-1515 (taken before this run&#x27;s update; last successful board read remains 2:14 PM ET Oct 31).</li>
+</ul>
+<h3>CORRECTED 3:25 PM ET run record (supersedes the 3:15 PM ET no-report entry for the scheduled 2:23 PM ET run)</h3>
+<ul>
+<li>The browser report arrived late. Browser task ran 2:25–3:02 PM ET, final reads spreads 2:53 PM ET, totals 2:54 PM ET, panel re-check 2:55 PM ET, read-only ScoresAndOdds, no sign-in, no bets, no sportsbook tabs used for data. 56 stored lines updated, all matching stored old values exactly (0 mismatches).</li>
+<li>PENDING CANDIDATE JUDGED NO-FOLLOW, no credit: Northern Illinois at UNLV, DraftKings spread 21.5 → 22.5 (first seen 2:14 PM ET) — 0 books followed to 22.5 or past among verifiable books (bet365, Caesars, FanDuel still 21.5; BetMGM 22, below target; Kalshi not shown, unverifiable but immaterial — even a Kalshi follow would be only 1 of the 3 required).</li>
+<li>PACK MOVES, not leads (logged, never credited, no pending candidate): UConn at Air Force bet365 −1.5 → +2.5, BetMGM −1 → +2, FanDuel −1.5 → +1.5, Fanatics −1 → +2 (side flips; 0 books still on old), DraftKings 1.5 → 2.5 (1 book still on 1.5: FanDuel); Florida at Georgia DraftKings 12.5 → 11.5 (1 still on 12.5: bet365); Colorado State at Utah State Caesars 7.5 → 8.5 (2 still on 7.5: bet365, FanDuel); Virginia at Wake Forest bet365 and DraftKings 12.5 → 13.5 (0 still on 12.5); Clemson at Florida State Fanatics 6.5 → 5 (0 still on 6.5); Oklahoma State at Iowa State Fanatics −8.5 → −9.5 (0 still on −8.5); Army at Memphis bet365 5.5 → 6.5 (1 still on 5.5: FanDuel); Northern Illinois at UNLV Fanatics 24 → 22 (0 still on 24; excluded from the follow count).</li>
+<li>No total move reached the 1.5-pt threshold anywhere. No new pending candidates (every threshold spread move had fewer than 3 books still on the old number).</li>
+<li>Below-threshold moves stored only (see state): Louisiana Tech, Stanford, Arizona State, Northwestern, Southern Miss, Utah, New Mexico, Purdue, Nevada, Georgia Tech, Ohio State, Mississippi State, Oregon State, plus NIU BetMGM/Fanatics lines.</li>
+<li>VIEW DISCREPANCY, not counted as a change (matchup panel primary per convention): Temple at East Carolina odds page showed bet365 spread 4.5 → 3.5, Fanatics 3.5 → 4, totals Caesars/FanDuel/Fanatics 50.5 → 51.5, but the Game Details panel still showed stored values at the 2:55 PM ET re-check; stored Temple lines kept, next run to resolve via the matchup table.</li>
+<li>Kalshi was not shown as an odds column in any view this run — no Kalshi line reported, Kalshi lines stay as stored, unverified.</li>
+<li>NEW BASELINE GAME: UTEP at North Dakota State, 3:30 PM ET — spread 23.5 at all six shown books; totals bet365/BetMGM/DraftKings/FanDuel 44.5, Caesars/Fanatics 44; Kalshi not shown.</li>
+<li>All listed games still not started at the final reads (~2:53–2:55 PM ET), including the 3:00 PM games minutes from kickoff; earlier games in progress, status only.</li>
+<li>No credited leads, no graduated book (BetMGM, Caesars, DraftKings each still at 1 lead in trailing 14 days; phase logging), no alert sent.</li>
+<li>State backup: leader-follower-state.json.bak.1031-1525 (taken before this correction; last verified board read now 2:55 PM ET Oct 31).</li>
+</ul>
+<h3>3:23 PM ET run — final re-check ~3:40 PM ET (browser task 12:26-12:41 PM PDT / 3:26-3:41 PM ET)</h3>
+<p>Read-only ScoresAndOdds NCAAF odds grid, no sign-in, no bets, no sportsbook tabs. Started by final check, status only, tracking ends, final pregame lines as updated in state: 3:00/3:15 PM games, plus Southern Miss at Louisiana-Monroe, Kansas at TCU, Colorado State at Utah State, UTEP at North Dakota State, Florida International at Liberty, Minnesota at Indiana, Arizona State at BYU, Northwestern at Oregon (3:30 PM games; their reported changes are last pre-kickoff grid values, not live lines). Florida at Georgia still shown upcoming at final check; all 3:45 PM and later games still not started. No other not-started FBS-vs-FBS game outside the tracked list.</p>
+<h3>Credited leads this run: none</h3>
+<h3>No-follows this run: none (no pending candidates carried in)</h3>
+<h3>Pack moves this run: 8 (logged, never credited, no pending candidate — threshold met, &lt;3 books still on the old number at move time)</h3>
+<ul>
+<li>Florida at Georgia, spread: bet365 12.5 -&gt; 11.5 (1 still on 12.5: HardRock).</li>
+<li>Northwestern at Oregon, spread: bet365 3.5 -&gt; 4.5 (1 still on 3.5: FanDuel).</li>
+<li>Colorado State at Utah State, spread: bet365 7.5 -&gt; 9.5 (0); BetMGM/DraftKings/Caesars 8.5 -&gt; 9.5 (1 each: Fanatics); FanDuel 7.5 -&gt; 9.5 (0).</li>
+<li>Appalachian State at Georgia Southern, spread: bet365 6.5 -&gt; 5.5 (1: BetMGM).</li>
+<li>Missouri at Arkansas, spread: bet365 -10.5 -&gt; -9.5 — CORRECTION: the report counted 3 books on -10.5 (BetMGM, Caesars, Fanatics), but stored values show those three were on -10 and moved TO -10.5 this window, opposite to bet365&#x27;s move, so they were not still on the old number; only Kalshi (not shown) was on -10.5 besides bet365 at move time. Pack move, not a candidate.</li>
+<li>Army at Memphis, spread: bet365 6.5 -&gt; 5.5 (0).</li>
+<li>Oregon State at Fresno State, spread: bet365 -6.5 -&gt; -5.5 (0).</li>
+</ul>
+<h3>Below-threshold moves, stored only (50 stored lines updated total, 0 mismatches vs stored values)</h3>
+<p>Spreads: Florida at Georgia Fanatics 12 -&gt; 11.5; Arizona State at BYU BetMGM 16.5 -&gt; 17, Fanatics 17 -&gt; 17.5; Northwestern at Oregon DraftKings/Caesars 3.5 -&gt; 4; Kansas at TCU BetMGM 6.5 -&gt; 6; Florida International at Liberty DraftKings/Caesars/Fanatics 14 -&gt; 13.5; Utah at Cincinnati BetMGM/Caesars -7 -&gt; -7.5; Virginia at Wake Forest Caesars/Fanatics 13 -&gt; 13.5; Nevada at UCLA BetMGM 22 -&gt; 22.5; Missouri at Arkansas BetMGM/Caesars/Fanatics -10 -&gt; -10.5.</p>
+<p>Totals: Florida at Georgia Fanatics 56.5 -&gt; 56; Arizona State at BYU bet365/BetMGM/DraftKings/Caesars 47.5 -&gt; 46.5, Fanatics 48 -&gt; 47; Northwestern at Oregon bet365 47.5 -&gt; 48.5, BetMGM 48.5 -&gt; 47.5, Caesars 47.5 -&gt; 48; Kansas at TCU BetMGM 45.5 -&gt; 46.5; Colorado State at Utah State bet365/BetMGM/DraftKings/Caesars/FanDuel 60.5 -&gt; 59.5; Virginia at Wake Forest bet365 47.5 -&gt; 48.5; South Carolina at Oklahoma Caesars 44.5 -&gt; 43.5; Washington State at San Diego State BetMGM 48.5 -&gt; 47.5; Ohio State at USC Fanatics 50.5 -&gt; 51; Missouri at Arkansas Fanatics 49 -&gt; 48.5; Northern Illinois at UNLV BetMGM 55.5 -&gt; 54.5, Caesars 55 -&gt; 55.5.</p>
+<p>Reversions, not changes: Florida BetMGM spread briefly 11 at 3:31 PM ET, back to stored 11.5 at final re-check. View discrepancy, grid primary: Florida matchup panel showed BetMGM total 55.5 vs grid 56.5; stored kept at 56.5. Kalshi not shown in any view — Kalshi lines stay as stored, unverified. HardRock shown only for Florida spread 12.5 and Ohio State spread -7.5, both unchanged. Temple at East Carolina discrepancy from the 2:55 PM ET run is moot (game started); stored pregame lines retained as-is.</p>
+<h3>Pending candidates carried forward: none</h3>
+<h3>Books graduated: none — BetMGM, Caesars, DraftKings each remain at 1 lead in the trailing 14 days (need 3 to graduate); all other books 0; all remain in logging phase, so no message sent, per the phase rule</h3>
+<ul>
+<li>State backup: leader-follower-state.json.bak.1031-1523 (taken before this run&#x27;s update; 50 stored lines updated, last verified ~3:40 PM ET Oct 31).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
