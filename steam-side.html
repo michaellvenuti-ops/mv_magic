@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-01.md · page built 2026-11-01 14:52 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-01.md · page built 2026-11-01 15:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Steam-side scan log — 2026-11-01</h2>
 <h3>2026-11-01 00:54 ET run — 0 steam events, 0 new flags (silent, alert-only)</h3>
@@ -119,6 +119,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 1 NEW flag — NFL Patriots @ Dolphins | 2026-11-01, Hard Rock, total, Under 43.0 (pre-move median 43.0 → new median 41.5), kickoff 4:25 PM ET Nov 1. Not previously in state. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET Oct 31; game kicked off 12:00 PM ET Oct 31, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET Oct 31; game kicked off 3:00 PM ET Oct 31, not re-read, closure unverified).</li>
 <li>State updated (backup steam-side-state.json.bak.1101-0854): last_seen refreshed to the 8:54 AM read for the 12 NFL Nov 1 games; stored medians updated for the four total moves (Vikings @ Lions 46.0, Titans @ Bengals 46.0, Chiefs @ Broncos 41.5, Patriots @ Dolphins 41.5); all started games keep their earlier medians; medians still 59; flags now 7 total (3 open, 4 closed).</li>
 <li>DELIVERABLE: 1 new flag (see final handoff for the one-tap block + voice-note requirement). Per the execution-phase fence, the worker did NOT send this to the main chat itself; the main agent handles delivery.</li>
+</ul>
+<h3>2026-11-01 09:54 ET run — 0 steam events, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:4362ea9d-820e-5e18-b8c6-4a4813fde520 (READ-ONLY, no sign-in, board view only; harness-measured 6:55-6:57 AM PST = 9:55-9:57 AM ET Nov 1; report read ~9:56 AM ET Nov 1): ScoresAndOdds public NFL + NCAAF boards. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 12 not-started, all NFL Nov 1; no new games, none missing vs the stored list. No not-started FBS game was listed (NCAAF board ran Oct 27-31, no Nov 1 game). All Oct 31 FBS games excluded as started/final. Nov 2 Bears @ Seahawks excluded. Note: browser kickoff times were shown in PT (e.g. 10:00 AM for the 1:00 PM ET games); stored ET kickoffs retained, not overwritten.</li>
+<li>Steam events: 0. All 12 medians within thresholds (spread &gt;=1.0 / total &gt;=1.5) vs the 08:54 ET baselines. Sub-threshold spread moves only: Vikings @ Lions -3.5 → -3.0 (favorite weakened 0.5); Falcons @ Buccaneers -2.0 → -2.5 (favorite strengthened 0.5); Ravens @ Bills -3.5 → -3.0 (favorite weakened 0.5). All totals unchanged. No game met the per-book-detail threshold, so no stale-book check was triggered and no per-book lines were reported. Per-book lines were reported on the same 7-book basis as the baselines (bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics), so the no-steam conclusion is not a book-count artifact.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: NFL Patriots @ Dolphins, Under 43.0 at Hard Rock (flagged 08:54 ET Nov 1; game kicks off 4:25 PM ET Nov 1, not yet started — per-book line not reported this run since its median did not steam, so closure is unverified), plus the two Oct 31 FBS open flags (SMU @ Syracuse, Syracuse +9.5 at Fanatics; UConn @ Air Force, Air Force -1.5 at FanDuel — both games kicked off Oct 31, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1101-0954): last_seen refreshed to the 9:56 AM read for the 12 NFL Nov 1 games; stored medians updated for the three sub-threshold spread moves (Vikings @ Lions -3.0, Falcons @ Buccaneers -2.5, Ravens @ Bills -3.0); all started games keep their earlier medians; flags untouched; medians still 59; flags still 7 total (3 open, 4 closed).</li>
+<li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
