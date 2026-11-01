@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-11-01 02:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-11-01 03:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -226,6 +226,18 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
 <li>State updated (backup steam-side-state.json.bak.1031-2154): medians refreshed to the 9:55-9:59 PM read for the 3 not-started games; the 44 started games keep their earlier medians; flags 6 total (2 open, 4 closed).</li>
 <li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
+</ul>
+<h3>2026-10-31 22:54 ET run — 0 new flags, 12 NFL first sightings (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:0ada79ae-879e-51fd-9730-ceb1b48da25f (READ-ONLY, no sign-in, board view only; harness-measured 7:54-8:03 PM PDT = 10:54-11:03 PM ET Oct 31): ScoresAndOdds public NCAAF + NFL boards, read ~10:55-11:01 PM ET Oct 31. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 14 not-started as reported — 2 FBS Oct 31 + 12 NFL Nov 1. No NCAAF Nov 1 games listed; NFL board listed no Oct 31 games (one Nov 2 game excluded). Texas State @ Boise State excluded as started (10:00 PM ET kickoff).</li>
+<li>TIMING CAVEAT: Northern Illinois @ UNLV kicked off at 10:30 PM ET, BEFORE the 10:55 PM read, so its snapshot is post-kickoff, not a pre-game read. Its median was NOT refreshed (started games keep earlier medians, per prior-run precedent). Oregon State @ Fresno State reached its 11:00 PM ET kickoff at the end of the read; its median was refreshed (spread unchanged, total -0.75).</li>
+<li>Steam events (pre-game, vs 21:54 ET baselines): 0. Oregon State @ Fresno State spread -6.25 unchanged, total 57.5 -&gt; 56.75 (-0.75, below the 1.5 total threshold). No other pre-game game moved at all.</li>
+<li>UNLV post-kickoff snapshot (NOT a deliverable, NOT a pre-game steam event): spread -21.5 -&gt; -20.5 (1.0 toward underdog Northern Illinois) and total 55.5 -&gt; 65.5 (+10.0). Stale-book check on that snapshot: posted books bet365, BetMGM, DraftKings, Caesars all at UNLV -20.5 and total 65.5; FanDuel, Hard Rock, Fanatics blank. NO book at Northern Illinois +21.5 or better, and NO book at total 55.5 or lower, so NO stale-book flag results on either market even on the snapshot. The 10-point total jump is noted as-is from the board report and was not independently re-verified; it does not change the outcome because no book held the old number.</li>
+<li>First sightings (recorded silently, no flag possible): all 12 NFL Nov 1 games — Vikings @ Lions (Lions -3.5 / 45.5), Raiders @ Jets (Jets -1.5 / 46.5), Cardinals @ Cowboys (Cowboys -7 / 54.5), Falcons @ Buccaneers (Buccaneers -1.5 / 43.5), Ravens @ Bills (Bills -3 / 54.5), Colts @ Jaguars (Jaguars -10 / 46.5), Titans @ Bengals (Bengals -12.5 / 46.5), Browns @ Steelers (Steelers -3.5 / 39), Chargers @ Rams (Rams -6.5 / 45.5), Chiefs @ Broncos (Chiefs -1 / 40.5), Patriots @ Dolphins (Patriots -7 / 43), Eagles @ Commanders (Commanders -6 / 40). Kickoffs 1:00 PM ET except Chargers @ Rams 4:05 PM, Chiefs @ Broncos and Patriots @ Dolphins 4:25 PM, Eagles @ Commanders 8:20 PM.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1031-2254; compare script steam-side-compare-20261031-2254.py): Oregon State median refreshed; UNLV median kept at 21:54 values (started before read); 12 NFL Nov 1 medians added as first sightings; medians 47 -&gt; 59; flags still 6 total (2 open, 4 closed).</li>
+<li>DELIVERABLE: none (alert-only; no new flags). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
