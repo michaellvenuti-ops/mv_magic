@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Game Middles Board</h1>
-<div class="sub">Latest scan list: game-middles-2026-11-01.md · page built 2026-11-01 22:50 ET</div>
+<div class="sub">Latest scan list: game-middles-2026-11-01.md · page built 2026-11-01 23:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-5.18</b> · 2 graded items · last graded 2026-10-28</p><p class='sub'>Middles graded at $100 per leg at the recorded prices against the final score; pushes refund that leg.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Bowling Green vs Buffalo | Alt Spread | Buffalo +2.5 FanDuel -170 | Bowling Green +0.5 Bally Bet +135</td><td><span class='badge loss'>LOSS</span></td><td>$-41.18</td></tr><tr><td>LA Lakers vs LA Clippers | Alt Spread | LA Clippers +7 | LA Lakers -3.5</td><td><span class='badge win'>WIN</span></td><td>$36.00</td></tr></table></div><details><summary>Full scan log</summary><h3>12:25 AM ET Nov 1 scan — SIGNED OUT, scan not performed (browser-task:dbfee91d-f3c8-52b5-945f-c57aa627749e, harness-measured 9:27-9:32 PM PDT Oct 31 / 12:27-12:32 AM ET Nov 1, ~5 min)</h3>
 <ul>
@@ -288,6 +288,23 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>SMALLER BETS PASS: Liquidity Mode control existed, switched to Smaller Bets (all else untouched), first page only (100 rows of 9,597); ZERO new qualifying middles (same -170.3 West Georgia/DePaul and NJIT/Dayton rows recurred; new full-game rows also failed, e.g. TOR/LAL Total Over 218.5 at -188, window 6.0). No stakes reported for qualifiers because there were none; no stake scaled, rounded, or invented. Liquidity Mode restored to &quot;Full Bet Size Only&quot; and confirmed in the final view — tool left as found.</li>
 <li>Deliverables: 0 NEW, 0 UPDATED. Per the alert-only rule, no user message sent. State: entries unchanged (empty), 0 pruned.</li>
 <li>Open item STILL unresolved (carried forward, not resolved by this run): the 5:45 AM duplicate scan&#x27;s filter-semantics question (Bet Odds Min = -170 yielding 75k+ rows with many price-passing rows vs Max = -170 yielding 6M+ rows). This run followed the task-body protocol (Max = -170); the duplicate&#x27;s candidate key-number list remains unverified and undelivered, and no state entries were added from it.</li>
+</ul>
+<h3>6:26–6:33 PM EST — hourly game-middles scan (DarkHorse Middles finder)</h3>
+<ul>
+<li>Signed in throughout (Sign Out visible); no bet placed; Include Player Props untouched.</li>
+<li>Filters: game markets only, Spread + Total (Alt Spread/Total NOT selected); Market Segment Full-Time/Full-Time+ + &quot;Main Lines Only&quot; (cut list 4,064 → 467, removing 1st-quarter/1st-half rows; Moneyline and Soccer then removed); widths spreads 3 / totals 4; Bet Odds Max -170, Sportsbook Target left at Any Book, -170 cap applied manually to both legs; Items per page 100 (max); sort conversion % descending; Primary Bet $1,000.</li>
+<li>COVERAGE: filtered total moved live (467 → 434); all 434 filtered rows scanned (pages 1–5) — the entire filtered set, within the first ~1,000 rows. Count back to 492 on final restore check (live movement, not a filter change). Far lower than 43k+ unfiltered rows, consistent with Spread+Total only + Main Lines Only narrowing.</li>
+<li>QUALIFYING MIDDLES: ZERO. Systematic cause: every primary leg was a prediction-market price worse than -170 (starting at -170.3 and worsening), so no headline or alternative combo qualified and no clean-tier (-140 both sides) combo existed.</li>
+<li>Closest near-misses (failed only on primary price):</li>
+</ul>
+<p>  1. NCAAB West Georgia vs DePaul, Nov-02 5:00 PM — DePaul -19.5 -170.3 (DraftKings Predictions) / West Georgia +22.5 -107 (Bally Bet/BetRivers/BetParx), window 3.0, conversion -14.30%.</p>
+<p>  2. NCAAB NJIT vs Dayton, Nov-02 4:00 PM — Dayton -19.5 -170.3 (DraftKings Predictions) / NJIT +23.5 -110 (Caesars), window 4.0, conversion -14.82%.</p>
+<p>  3. NCAAB Ohio St. vs BYU, Nov-02 6:00 PM — Ohio St. +6.5 -191.5 (ProphetX) / BYU -3.5 -110 (Bet365/Caesars/DraftKings/FanDuel/BetMGM/theScore), window 3.0, conversion -15.64%.</p>
+<p>  4. NFL KEY-NUMBER near-miss: NY Giants vs Philadelphia Eagles, Nov-08 1:00 PM — Total Under 46.5 -1,064.7 (Polymarket) / Over 40.5 -110 (DraftKings), window 6.0 (41–46, contains key 41) — fails on primary price by a wide margin. No qualifying NFL key-number middle.</p>
+<ul>
+<li>Full-game totals DID appear (NFL totals incl. Raiders vs 49ers Over 43.5/Under 50.5 window 7.0, NCAAF totals) but none qualified for the same price reason.</li>
+<li>SMALLER BETS pass: Liquidity Mode control exists; switched to Smaller Bets (filtered total 5,561), first 2 pages checked at same thresholds — ZERO new qualifiers (primaries still -170.3 or worse). Liquidity Mode restored to Full Bet Size Only and confirmed — tool left as found.</li>
+<li>0 deliverables; alert-only, no user message. State entries unchanged (empty). Open item carried forward: the 5:45 AM duplicate scan&#x27;s filter-semantics question (Bet Odds Min vs Max) remains unverified/undelivered.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
