@@ -26,113 +26,14 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Team-Total Middles (Key 20)</h1>
-<div class="sub">Latest scan list: team-total-middles-2026-10-31.md · page built 2026-11-01 07:50 ET</div>
+<div class="sub">Latest scan list: team-total-middles-2026-11-01.md · page built 2026-11-01 08:50 ET</div>
 
-<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Team-total middles scan (key 20) — 2026-10-31</h2>
-<h3>06:47 ET seed run — INCOMPLETE, 0 deliverables claimed (browser-task:1e89bee5-83b6-54d4-a9d0-226743ddea61)</h3>
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Team-total middles scan (key 20) — 2026-11-01</h2>
+<h3>01:33 PDT / 03:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
 <ul>
-<li>Browser task launched (no window was open to reuse; default profile carries darkhorseodds.com cookies, per the precedent in the other DarkHorse scans today). Window confirmed working on https://darkhorseodds.com/browse-odds, then on https://darkhorseodds.com/browse-odds-table, with no signed-out redirect observed at any check — but the window&#x27;s working state is NOT proof of sign-in.</li>
-<li>The window then closed with NO report delivered, after ~20 minutes of waiting. One continuation on the same task_id (requesting the compact report) was accepted as new work and also closed with no report delivered after a further ~7 minutes of waiting.</li>
-<li>NOT a verified zero and NOT a gate finding: no signed-in status, no games/teams-read count, no qualifying pair, and no &quot;team totals unreadable&quot; claim can be made from this run. No sign-in was attempted (per task body). If a late report for this task_id arrives, it supersedes this note; do not double-count it against the next run.</li>
-<li>Deliverables: NONE claimed. Per the alert-only rule, no user message sent. No voice note prepared (no pairs to cover).</li>
-<li>State: UNCHANGED — still the seed state (gate_notified: false, entries: {}). The gate flag was deliberately NOT set: unreadability of team totals was never established, only a missing browser report. Nothing pruned (no entries exist). Next scheduled run retries the scan.</li>
-<li>Possible cause (unconfirmed): the same no-report browser stall seen on several Oct 27/28/30/31 DarkHorse runs, some of whose reports arrived late; a sign-in/verification challenge needing user approval that cannot arrive on a detached run cannot be ruled out.</li>
-</ul>
-<h3>06:47 ET seed run — CORRECTION: completed, GATE FINDING (browser-task:1e89bee5-83b6-54d4-a9d0-226743ddea61, harness-measured 6:47–7:02 AM EDT, 14 min)</h3>
-<ul>
-<li>Supersedes the incomplete note above: the scan DID complete (late report). SIGNED IN throughout (&quot;Sign Out&quot; visible in the sidebar in every view; site redirected to /dashboard at start; no sign-in, verification, or bot challenge; no fresh Google sign-in attempted). READ-ONLY: no bet placed, no preset saved, no account/global settings changed; Sportsbook Target left at Any Book; &quot;Include Player Props&quot; toggle untouched.</li>
-<li>GATE FINDING: no DarkHorse surface found in this signed-in NJ session lists per-team totals with per-book lines and prices, so NO qualifying team-total middle at key 20 could be verified, and 0 games/teams were read on a confirmed team-total surface.</li>
-<li>Surfaces checked: Browse Odds game details fully checked for BAL Ravens at BUF Bills, Nov-01 1:00 PM (NFL), and Notre Dame at Navy, Oct 31 12:00 PM (NCAAF) — categories only Game Lines, Quarters, Halves, plus Player Props (NFL only); Game Lines only Moneyline, Spread, Total Score (game totals, not team totals); NFL Player Props groups only Passing, Receiving, Rushing, TD Scorer, Combos, Defense, Kicking. Browse Odds Table — Market options only Moneyline/Spreads, Totals, Player Props; Totals showed game totals only. Middles finder — Market Type list had no Team Total (Moneyline, Spread, Total, Alt Spread, Alt Total, Both Teams to Score, Hockey/Soccer/Tennis Props, Baseball/Basketball/Football Props, MMA); Football Props only Passing, Receiving, Rushing, TD Scorer, Combos, Defense, Kicking. +EV Bets finder — same Market Type list, no Team Total.</li>
-<li>Qualifying pairs: NONE. Near-misses: NONE (no team-total lines existed to fail the -170 cap or the different-books rule; nothing inferred or invented).</li>
-<li>Coverage caveat (stated in the report and preserved here): only two game details were fully checked; Arbitrage and Low Holds finder taxonomies were not opened and not every Oct 31–Nov 1 game detail was opened — so this is a gate finding for the surfaces checked, NOT proof that DarkHorse carries no team totals anywhere.</li>
-<li>Per task-body step 6, gate_notified is now TRUE in state (first noted 2026-10-31 ~07:02 AM ET). Later runs stay silent on the gate (still logging each attempt) unless team totals later become readable, in which case the flag clears and the scan runs normally. The ONE gate notice for the user is prepared in this run&#x27;s final message for main-agent resolution (execution-phase fence: the worker does not send the main-chat message itself). No voice note: there are no pairs to cover.</li>
-<li>State: entries still {} (nothing to add, nothing to prune); gate_notified: false → true. Backup: team-total-middles-state.json.bak.1031-0715.</li>
-</ul>
-<h3>08:33 ET run — INCOMPLETE, 0 deliverables claimed (browser-task:816bd881-7d2e-52db-9371-61deaa463fb9)</h3>
-<ul>
-<li>No reusable signed-in DarkHorse window was open at run start (browser.windows: no windows open). A compact taxonomy re-check was launched on the default profile (no sign-in attempted, no settings changed, &quot;Include Player Props&quot; untouched, read-only) to test whether team totals had since become readable.</li>
-<li>After ~17 minutes of waiting, the window had closed with NO report delivered and no window remained open — the same no-report stall seen on the 06:47 run, whose report arrived late and superseded its incomplete note. If a late report for this task_id arrives, it supersedes this note; do not double-count it against the next run.</li>
-<li>NOT a verified zero and NOT a new gate finding: no signed-in status, no games/teams-read count, no qualifying pair, and no &quot;team totals readable/unreadable&quot; claim can be made from this run.</li>
-<li>Deliverables: NONE claimed. Per the alert-only rule and the already-notified gate (gate_notified: true since ~07:02 ET), no user message sent and no voice note prepared.</li>
-<li>State: UNCHANGED — gate_notified still true, entries still {}. Nothing pruned (no entries exist). Next scheduled run retries the scan; the gate notice is not re-sent.</li>
-</ul>
-<h3>08:33 ET run — CORRECTION: completed, GATE CONFIRMED AGAIN (browser-task:816bd881-7d2e-52db-9371-61deaa463fb9, harness-measured 8:33–8:36 AM EDT, 3 min)</h3>
-<ul>
-<li>Supersedes the incomplete note above: the scan DID complete (late report). SIGNED IN throughout (&quot;Sign Out&quot; visible on the DarkHorse Odds dashboard; existing session only; no sign-in, settings change, preset save, or &quot;Include Player Props&quot; toggle used; no bet placed).</li>
-<li>GATE CONFIRMED AGAIN: no DarkHorse surface found lists per-team totals with per-book lines and prices, so NO qualifying team-total middle at key 20 could be verified, and 0 games/teams were read on a confirmed team-total surface.</li>
-<li>Surfaces checked: Middles finder Market Type options (Moneyline, Spread, Total, Alt Spread, Alt Total, Both Teams to Score, Hockey/Soccer/Tennis Props, Baseball/Basketball/Football Props, MMA) — no Team Total; Browse Odds Table (NFL) Market options (Moneyline/Spreads, Totals, Player Props) — Totals showed game totals only, not per-team totals; one not-yet-started game detail (BAL Ravens vs BUF Bills, Nov-01 1:00 PM) — categories Game Lines, Quarters, Halves, Player Props; Game Lines markets Moneyline, Spread, Total Score only.</li>
-<li>Qualifying pairs: NONE. Near-misses: NONE (no team-total lines existed to fail the -170 cap or the different-books rule; nothing inferred or invented).</li>
-<li>Per the gate rule, no user message is re-sent (gate_notified already true since ~07:02 ET). State UNCHANGED: gate_notified true, entries {}. Nothing to prune.</li>
-</ul>
-<h3>10:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start, browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
+<li>At run start (Sun 2026-11-01 01:33 PDT), browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
 <li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>12:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start, browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>14:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start, browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>16:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start, browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>18:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start, browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>20:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start (Sat 2026-10-31 17:33 PDT / 20:33 ET), browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>22:33 ET run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start (Sat 2026-10-31 19:33 PDT / 22:33 ET), browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET today (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>00:33 ET (Nov 1) run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start (Sat 2026-10-31 21:33 PDT / Sun 2026-11-01 00:33 ET), browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET Oct 31 (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
-<li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
-<li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
-</ul>
-<h3>02:33 ET (Nov 1) run — NO REUSABLE WINDOW, GATE ALREADY NOTIFIED, SILENT (no browser task launched)</h3>
-<ul>
-<li>At run start (Sat 2026-10-31 23:33 PDT / Sun 2026-11-01 02:33 ET), browser.windows listed NO open windows, so there was no already-signed-in DarkHorse window to reuse. Per the task body&#x27;s one-window rule (&quot;NEVER open a new window&quot;), no new browser task was launched and no fresh sign-in was attempted.</li>
-<li>This is NOT a new gate finding and NOT a verified zero: no signed-in status, no games/teams-read count, and no qualifying pair can be claimed from this run, because no DarkHorse surface was read this run.</li>
-<li>Gate status: gate_notified already true since ~07:02 ET Oct 31 (confirmed again 08:33–08:36 ET run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
+<li>Gate status: gate_notified already true since ~07:02 ET Oct 31 (confirmed again 08:33–08:36 ET Oct 31 run: no DarkHorse surface found lists per-team totals with per-book lines and prices). Per step 6, later runs stay silent on the gate, so no user message and no voice note were sent.</li>
 <li>Deliverables: NONE. State UNCHANGED: gate_notified true, entries {}. Nothing to prune (no entries exist).</li>
 <li>Next scheduled run should retry only if a signed-in DarkHorse window is again open to reuse; otherwise it will log the same no-window outcome rather than opening a new window.</li>
 </ul></details>
