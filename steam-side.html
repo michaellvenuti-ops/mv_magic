@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-01.md · page built 2026-11-01 21:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-01.md · page built 2026-11-01 22:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Steam-side scan log — 2026-11-01</h2>
 <h3>2026-11-01 00:54 ET run — 0 steam events, 0 new flags (silent, alert-only)</h3>
@@ -189,6 +189,16 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Other medians: Chargers @ Rams spread -6.5 unchanged; its reported 8-book total 46.5 vs baseline 45.5 is +1.0 even before any book-count adjustment, below the 1.5 threshold, so no steam event — but per-book totals for that game were not reported, so its stored 7-book total is left at 45.5 rather than updated from an 8-book figure. Patriots @ Dolphins -7.0 / 41.5 and Eagles @ Commanders -5.5 / 40.5 matched baselines exactly.</li>
 <li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: NFL Titans @ Bengals, Bengals -12 at Hard Rock and Bengals -12.5 at FanDuel (flagged 10:54 ET Nov 1; game kicked off 1:00 PM ET, not re-read, closure unverified); plus the two Oct 31 FBS open flags (SMU @ Syracuse, Syracuse +9.5 at Fanatics; UConn @ Air Force, Air Force -1.5 at FanDuel — both games kicked off Oct 31, not re-read, closure unverified).</li>
 <li>State updated (backup steam-side-state.json.bak.1101-1554): last_seen refreshed to the 3:55-3:58 PM read for the 4 NFL Nov 1 games read; stored median updated for the one sub-threshold move (Chiefs @ Broncos spread -1.5 → -1.0); Chargers total deliberately NOT updated (see above); all started games keep their earlier medians; flags untouched; medians still 59; flags still 9 total (4 open, 5 closed).</li>
+<li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
+</ul>
+<h3>2026-11-01 16:54 ET run — 0 steam events, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task (READ-ONLY, no sign-in, board view only; harness-measured 1:54-1:57 PM PST Nov 1): ScoresAndOdds public NFL board (https://www.scoresandodds.com/nfl/odds) + NCAAF board (https://www.scoresandodds.com/ncaaf/odds), read ~4:56 PM ET Nov 1. Per-book odds publicly readable, no gate.</li>
+<li>Games read: 1 not-started Sunday game, NFL only. The other 11 listed NFL games were already started/live (8 at 1:00 PM ET, 1 at 4:05 PM ET, 2 at 4:25 PM ET). No FBS game listed for Nov 1 (NCAAF board ran Oct 27-31). No new Sunday games, none missing vs the stored not-started list.</li>
+<li>Steam events: 0 (spread &gt;=1.0 / total &gt;=1.5 thresholds vs the 15:54 ET baseline). Eagles @ Commanders median unchanged: spread -5.5 (Commanders favorite), total 40.5 — matches stored baseline exactly, so no stale-book check triggered and per-book lines not listed per protocol.</li>
+<li>Board note, out of scope: Bears @ Seahawks, Mon Nov 2, 8:15 PM ET, was visible on the NFL board but excluded as out of scope per the 14:54/15:54 ET precedent (today&#x27;s games only); its median was NOT recorded in state.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: NFL Titans @ Bengals, Bengals -12 at Hard Rock and Bengals -12.5 at FanDuel (flagged 10:54 ET Nov 1; game kicked off 1:00 PM ET, not re-read, closure unverified); plus the two Oct 31 FBS open flags (SMU @ Syracuse, Syracuse +9.5 at Fanatics; UConn @ Air Force, Air Force -1.5 at FanDuel — both games kicked off Oct 31, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1101-1654): last_seen refreshed to the 4:56 PM read for Eagles @ Commanders only; all other medians and all flags untouched; medians still 59; flags still 9 total (4 open, 5 closed).</li>
 <li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
