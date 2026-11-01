@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Leader-Follower Board</h1>
-<div class="sub">Latest scan list: leader-follower-2026-11-01.md · page built 2026-11-01 14:52 ET</div>
+<div class="sub">Latest scan list: leader-follower-2026-11-01.md · page built 2026-11-01 15:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>12:23 AM ET run — browser report received, final re-check 12:31 AM ET Nov 1</h3>
 <p>Browser task ran 12:26-12:31 AM ET (9:26-9:31 PM PDT Oct 31), read-only ScoresAndOdds, no sign-in, no bets, no sportsbook tabs used. BASELINE snapshot of the Sun Nov 1 slate: 12 not-started NFL games, no prior stored lines, so nothing can be a lead this run. No not-started Nov 1 FBS game on the board (NFL/NBA sections only, no NCAAF section). Bears at Seahawks is NOT a Nov 1 game — board lists it 11/2 8:15 PM ET, excluded from the Nov 1 slate. Kalshi is not a column in the ScoresAndOdds NFL odds-comparison table (stored null for these games). Oct 31 status only, no lines: Texas State at Boise State, Northern Illinois at UNLV, Oregon State at Fresno State live; other Oct 31 FBS games final.</p>
@@ -214,6 +214,35 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Credited leads: none. No-follows judged: none (none carried in). Pack moves: 5 market moves, all Patriots at Dolphins (above). Pending candidates carried forward: 1 (Titans at Bengals Caesars spread, above).</li>
 <li>Books graduated: none — BetMGM, Caesars, DraftKings each remain at 1 lead in the trailing 14 days (need 3 to graduate); all books remain in logging phase, so no message sent, per the phase rule.</li>
 <li>State backup: leader-follower-state.json.bak.1101-0623pst-run (taken before this run&#x27;s update).</li>
+</ul>
+<h3>Updated 10:38 AM ET Nov 1 run (scheduled 7:23 AM PST)</h3>
+<ul>
+<li>Board read: NO REPORT DELIVERED. Browser task (browser-task:44842ada-367a-55a5-a40f-6d8dfbac74bb) ran read-only on ScoresAndOdds, no sign-in, no bets, no sportsbook tabs used; its initial open of the NFL odds page returned &#x27;aborted&#x27; with no usable page view, a resume instruction was sent, and the window subsequently closed with no per-book report (browser windows list confirmed no windows open). No stored lines were changed or verified this run; no lines invented.</li>
+<li>Credited leads: none. No-follows judged: none. Pack moves: none. Pending candidates: 1 carried forward, NOT judged (judgment deferred to the next successful check, NOT a no-follow without a read) — Titans at Bengals (1:00 PM ET) Caesars spread -12.5 -&gt; -13.5, first seen 9:26 AM ET Nov 1.</li>
+<li>Books graduated: none — BetMGM, Caesars, DraftKings each remain at 1 lead in the trailing 14 days (need 3 to graduate); all books remain in logging phase, so no message sent, per the phase rule.</li>
+<li>State backup: leader-follower-state.json.bak.1101-0723pst-run (taken before this run&#x27;s update; only last_run_note changed).</li>
+</ul>
+<h3>CORRECTED 10:28 AM ET Nov 1 run (scheduled 7:23 AM PST — supersedes the 10:38 AM ET no-report entry above)</h3>
+<ul>
+<li>Correction note: the browser task had in fact completed 7:24-7:29 AM PST (runtime-measured), final re-check ~10:28 AM ET; its report arrived late, after the no-report entry was recorded on the basis that no windows were open. That no-report entry is superseded — the board WAS read, and the stored lines below are from that read. Read-only ScoresAndOdds, no sign-in, no bets, no sportsbook tabs used. All 12 tracked Sun Nov 1 NFL games still not started; no new not-started Nov 1 NFL game (Bears at Seahawks excluded, Nov 2); no not-started Nov 1 FBS game (NCAAF board showed Oct 31 games only). All seven shown books (bet365, BetMGM, DraftKings, Caesars, FanDuel, HardRock, Fanatics) present for each of the 12 NFL games; Kalshi not shown for these games, as stored (null), nothing invented.</li>
+<li>PENDING CANDIDATE JUDGED NO-FOLLOW, no credit: Titans at Bengals (1:00 PM ET), Caesars spread -12.5 -&gt; -13.5 (first seen 9:26 AM ET Nov 1) followed by 0 books at/past -13.5 at final re-check — full current Titans spreads: bet365 -12.5, BetMGM -13, DraftKings -12.5, Caesars -13.5 (unchanged vs stored), FanDuel -12.5, HardRock -12, Fanatics -13. BetMGM and Fanatics at -13 are one step short of -13.5; HardRock moved the other way, to -12. 3 books still on -12.5 (bet365, DraftKings, FanDuel). The &gt;=3-follower requirement failed, so Caesars earns no lead and stays at 1 lead in the trailing 14 days.</li>
+<li>PENDING CANDIDATE created (credits only if &gt;=3 books reach the new number or past by the next check; no credit yet, no alert): Falcons at Buccaneers (1:00 PM ET), FanDuel spread -2.5 -&gt; -1.5 (1.0 pt, meets the spread threshold; 3 books still on -2.5 at final re-check: bet365, DraftKings, HardRock).</li>
+<li>PACK MOVE, not a lead (logged, never credited, no pending candidate): Cardinals at Cowboys (1:00 PM ET), bet365 spread -6.5 -&gt; -7.5 (1.0 pt, meets the spread threshold, but 0 books still on -6.5 at re-check, below the 3-book requirement).</li>
+<li>Below-threshold moves, stored only (none meets the 1.0-pt spread / 1.5-pt total lead threshold, so none is a candidate, pack move, or credit):</li>
+</ul>
+<p>  - Vikings at Lions (1:00 PM ET): BetMGM spread -3 -&gt; -3.5 and FanDuel spread -3 -&gt; -3.5 (each 0.5 pt; 2 books still on -3: DraftKings, HardRock); Caesars total 45.5 -&gt; 46 (0.5 pt; 3 books still on 45.5: bet365, BetMGM, HardRock).</p>
+<p>  - Cardinals at Cowboys (1:00 PM ET): Caesars spread -7 -&gt; -7.5 (0.5 pt; 5 books still on -7: BetMGM, DraftKings, FanDuel, HardRock, Fanatics).</p>
+<p>  - Titans at Bengals (1:00 PM ET): BetMGM spread -12.5 -&gt; -13 and HardRock spread -12.5 -&gt; -12 (each 0.5 pt; 3 books still on -12.5: bet365, DraftKings, FanDuel); totals bet365 46.5 -&gt; 45.5, DraftKings 45.5 -&gt; 46.5, Caesars 45.5 -&gt; 46.5, FanDuel 46.5 -&gt; 45.5 (each 1.0 pt, below the 1.5-pt total threshold).</p>
+<p>  - Colts at Jaguars (1:00 PM ET): BetMGM total 46.5 -&gt; 46 (0.5 pt; 6 books still on 46.5).</p>
+<p>  - Chargers at Rams (4:05 PM ET): Fanatics total 45.5 -&gt; 46 (0.5 pt; 6 books still on 45.5).</p>
+<p>  - Chiefs at Broncos (4:25 PM ET): BetMGM total 41 -&gt; 41.5 (0.5 pt; 2 books still on 41: HardRock, Fanatics).</p>
+<p>  - Patriots at Dolphins (4:25 PM ET): BetMGM total 42 -&gt; 41.5 (0.5 pt; report states 0 books still on 42 — note: the changed-books list did not include a Fanatics total move, so no Fanatics move was stored or invented; the count discrepancy does not affect judgment, as the move is below threshold).</p>
+<p>  - Eagles at Commanders (8:20 PM ET): HardRock spread -6.5 -&gt; -6 and Fanatics spread -6.5 -&gt; -6 (each 0.5 pt; 4 books still on -6.5: bet365, BetMGM, DraftKings, Caesars; board shows Commanders as favorite, so these are favorite-spread magnitude changes).</p>
+<ul>
+<li>Unchanged: all other tracked spreads/totals at all shown books, including Raiders at Jets, Ravens at Bills, and Browns at Steelers fully unchanged. No favorite flip reported.</li>
+<li>Credited leads: none. No-follows: 1 (Titans Caesars, above). Pack moves: 1 (Cardinals bet365, above). Pending candidates carried forward: 1 (Falcons FanDuel spread, above).</li>
+<li>Books graduated: none — BetMGM, Caesars, DraftKings each remain at 1 lead in the trailing 14 days (need 3 to graduate); all books remain in logging phase, so no message sent, per the phase rule.</li>
+<li>State backup: leader-follower-state.json.bak.1101-0723pst-corrected (taken before this correction; stored lines, pending candidates, and last_read_et updated to the 10:28 AM ET read).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
