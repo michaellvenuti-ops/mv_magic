@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-11-01 02:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-11-01 03:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -505,6 +505,24 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>NEWS CHECK: none triggered — no candidate met both RLM conditions.</li>
 <li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
 <li>State reconciled (4 keys updated; stored panel medians unchanged; backup rlm-state.json.bak.1031-2223). Run 22:23 ET now CLOSED. Live watch for the 23:23 run: Oregon State spread only (-6, 77%, flag level -5 or shorter) — NIU (10:30 PM ET) will have started, Texas State already started.</li>
+</ul>
+<h3>Run 23:23 ET (20:23 PDT) — PENDING, no report yet</h3>
+<ul>
+<li>Dispatched ONE read-only browser task (browser-task:c5e5a42b-cd43-5203-b396-1889c5235ea5), no sign-in, no bets: ScoresAndOdds public board + matchup panels to verify Oregon State vs Fresno State status (11:00 PM ET kickoff — expected started by 23:23 ET, confirmation pending board read), any other Oct 31 FBS game still not started, and NFL Oct 31 verification. Prior run (22:23 ET) left Oregon State spread as the sole live watch market (-6, Oregon State 77%, flag level -5 or shorter); Northern Illinois (10:30 PM ET) and Texas State (10:00 PM ET) had started by then.</li>
+<li>No report delivered by bookkeeping close. Medians/splits carried unchanged — NOT a source gate (ScoresAndOdds splits were readable in the 22:23 ET run today; no rlm-gate-notified file exists).</li>
+<li>Comparison vs state: NO flag determinable this run. Ticket splits and panel medians were NOT verified this run, so no flag is claimed on carried numbers and no news check was triggered. If the browser report confirms Oregon State started, it drops out and the Oct 31 slate is closed for this scan (next games Nov 1).</li>
+<li>FLAGGED LIST: none judged this run (report pending). No deliverables, no message sent (alert-only rule).</li>
+<li>State updated (Oregon State spread + total annotated pending; stored panel medians/splits unchanged; backup rlm-state.json.bak.1031-2323). Next run must re-read the board/panel and reconcile any late report from browser-task:c5e5a42b before any flag can be judged.</li>
+</ul>
+<h3>Addendum to Run 23:23 ET — browser-task report received (task ran 8:25-8:28 PM PDT, board read ~11:25-11:28 PM ET)</h3>
+<ul>
+<li>The dispatched browser task did complete after bookkeeping close; its report is now reconciled. ScoresAndOdds public NCAAF + NFL boards, read-only, no sign-in, no bet. No Covers/VegasInsider fallback needed (no not-started games to report splits for, so the splits hierarchy was not triggered).</li>
+<li>Oregon State vs Fresno State: IN PROGRESS (scores board Q1 9:29, 0-0, Fresno State possession; odds-board time 10:00 PM, consistent with the noted ~1-hour board lag vs the 11:00 PM ET scheduled time). Not pregame, so no pregame panel medians/splits apply and none are reported. Game started and excluded going forward.</li>
+<li>Other not-started Oct 31 FBS-vs-FBS games: NONE. Other games still in progress: Georgia Tech-Pittsburgh (Q4), Washington-Nebraska (Q4), Texas State-Boise State (Q2), Northern Illinois-UNLV (Q2); all other Oct 31 games FINAL.</li>
+<li>NFL CHECK VERIFIED: no NFL game kicks off Oct 31 — board jumps from the Oct 29 final to Nov 1 games, earliest 1:00 PM ET.</li>
+<li>Comparison vs state: NO market met both RLM conditions on verified data. No news check triggered (no candidate met both conditions).</li>
+<li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
+<li>State reconciled (Oregon State spread + total last_seen 2026-10-31T23:28-04:00, marked started/excluded; stored panel medians unchanged; backup rlm-state.json.bak.1031-2328). Run 23:23 ET now CLOSED — the earlier pending-report note is superseded by this reconciliation. Oct 31 slate closed for this scan; next games Nov 1.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
