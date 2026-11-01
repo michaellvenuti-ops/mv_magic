@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-10-31 23:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-10-31.md · page built 2026-11-01 00:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 00:23 ET (hourly RLM scan)</h3>
 <ul>
@@ -458,6 +458,28 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FLAGGED LIST (final): none. No deliverables.</li>
 <li>DELIVERABLES: NONE. No message sent (alert-only rule).</li>
 <li>State reconciled (8 keys updated; stored panel medians unchanged; backup rlm-state.json.bak.1031-1923). Run 19:23 ET now CLOSED. Live watch list for the 20:23 run: Oregon State spread only, plus Texas State spread panel-split verification.</li>
+</ul>
+<h3>Run 20:23 ET (17:23 PDT) — PENDING, no report yet</h3>
+<ul>
+<li>Dispatched ONE read-only browser task (browser-task:123f9305-4c64-566b-9f77-e0371784cbb1), no sign-in, no bets: ScoresAndOdds public board + matchup panels for the 3 FBS games not started at 20:23 ET (Texas State vs Boise State 10:00 PM, Northern Illinois vs UNLV 10:30 PM, Oregon State vs Fresno State 11:00 PM), new &gt;=70% scan, NFL Oct 31 verification. All other Oct 31 FBS games had started by 20:23 ET (including Army vs Memphis 8:00 PM, Washington vs Nebraska 8:00 PM).</li>
+<li>No report delivered by bookkeeping close. Medians/splits carried unchanged — NOT a source gate (ScoresAndOdds splits were readable in the 19:30 run today; no rlm-gate-notified file exists).</li>
+<li>Live watch for the 21:23 run: Oregon State spread only (stored -6, Oregon State 77%, minority Fresno State), plus Texas State spread panel-split verification (stored +10.5, panel Boise State 65%; splits-page 70% does not govern).</li>
+<li>CORRECTION recorded in state: prior runs&#x27; Oregon State &quot;flag level -7&quot; wording was direction-inverted. Correct flag level is -5 or higher (1.0+ toward minority Fresno State); -7 would move toward the public side. No flag resulted from the error since the panel stayed at -6.</li>
+<li>FLAGGED LIST: none judged this run (report pending). No deliverables, no message sent (alert-only rule).</li>
+<li>State updated (3 spread keys annotated pending; stored panel medians/splits unchanged; backup rlm-state.json.bak.1031-2023). Next run (21:23 ET) must re-read the panels and reconcile any late report before any flag can be judged.</li>
+</ul>
+<h3>Run 20:23 ET — LATE REPORT RECONCILED (board read ~20:26-20:37 ET)</h3>
+<ul>
+<li>Browser task browser-task:123f9305, read-only, no sign-in, no bet: ScoresAndOdds public board + matchup panels. Splits publicly readable; no Covers/VegasInsider fallback needed. Not-started count: 3 FBS games (site board times run 1 hour behind ET).</li>
+<li>Texas State vs Boise State (10:00 PM ET) spread: PANEL Boise State 70% (was stored panel 65%) — panel now matches the splits page, resolving the prior discrepancy, so this is now a confirmed &gt;=70% watch market. Panel books -10 to -10.5, header -10: only 0.5 toward minority Texas State vs stored +10.5, BELOW the 1.0 threshold — no flag. Stored +10.5 NOT overwritten. Flag level: +11.5 or more. Total: Under 65% unchanged; panel range 62.5-63.5, stored 63.5 NOT substituted. No flag.</li>
+<li>Northern Illinois vs UNLV (10:30 PM ET): spread panel median +21.5 unchanged, Northern Illinois 69% (below 70%); total 54.5 unchanged, Under 57%. No flag.</li>
+<li>Oregon State vs Fresno State (11:00 PM ET): spread panel median -6 unchanged, Oregon State 77% unchanged; correct flag level -5 or higher NOT met. Total panel 57.5 vs stored 58.5 NOT substituted; Under 59% (below 70%). No flag.</li>
+<li>New &gt;=70% scan: none beyond the three games above; no not-started total reached 70%.</li>
+<li>NFL CHECK VERIFIED: no NFL game Oct 31 — board goes Oct 29 to Nov 1 (e.g., Vikings-Lions Nov 1).</li>
+<li>NEWS CHECK: none triggered — no candidate met both RLM conditions.</li>
+<li>Comparison vs state: NO market met both conditions (70%+ tickets + &gt;=1.0 spread / &gt;=1.5 total move toward the minority vs a stored panel line) on verified data.</li>
+<li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
+<li>State reconciled (6 keys updated; stored panel medians unchanged; backup rlm-state.json.bak.1031-2037). Run 20:23 ET now CLOSED. Live watch list for the 21:23 run: Oregon State spread (-6, 77%, flag level -5+) and Texas State spread (+10.5, panel 70% confirmed, flag level +11.5+).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
