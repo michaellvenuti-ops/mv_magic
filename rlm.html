@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 21:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 22:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan log — 2026-11-01</h2>
 <h3>Run 00:23 ET (21:23 PDT Oct 31) — PENDING, no report yet</h3>
@@ -468,6 +468,19 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>No news check triggered (no candidate met both RLM conditions in the RLM direction vs state).</li>
 <li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
 <li>State updated (last_seen 16:26 ET for the 5 watch markets; stored medians unchanged; backup rlm-state.json.bak.1101-1623EST). Live watch going forward: ONLY Eagles vs Commanders total (8:20 PM ET) — the 4:05 and 4:25 PM ET games are started and excluded; the Eagles total only flags if Over returns to &gt;=70% AND the panel reaches 39.0 or below.</li>
+</ul>
+<h3>Run 17:23 EST — CLOSED, no deliverables</h3>
+<ul>
+<li>Dispatched ONE read-only browser task (browser-task:f5ec3a53-6884-5a74-823c-7aa93e9e485d), no sign-in, no bets; report received in-run (task ran 17:25-17:28 ET). ScoresAndOdds public NFL board + consensus panels, read-only. Splits publicly readable via ScoresAndOdds consensus; no Covers/VegasInsider fallback needed. Scanned 1 not-started Nov 1 NFL game (Eagles at Commanders, 8:20 PM ET); all other Nov 1 NFL games had started (1:00/4:05/4:25 PM ET windows). 0 Nov 1 FBS games listed (NCAAF board ran Oct 27-31).</li>
+<li>WATCH MARKETS vs stored baselines — NONE met both RLM conditions (spread &gt;=1.0 / total &gt;=1.5 toward the minority, public still &gt;=70%):</li>
+</ul>
+<p>  - Eagles vs Commanders total: 40.5 unchanged, Over 60% -&gt; 61% (below 70%) — no flag. Stored 40.5 NOT overwritten. Flag level remains 39.0 or below if Over returns to &gt;=70%.</p>
+<p>  - Eagles vs Commanders spread: FIRST SIGHTING baseline recorded silently (not a move): Commanders -5.5 (Eagles +5.5, book range +5.5 to +6), Eagles 54% (below 70%) — no flag.</p>
+<ul>
+<li>NEW &gt;=70% SCAN: none. No other not-started game remained, and neither Eagles market reached 70%.</li>
+<li>No news check triggered (no candidate met both RLM conditions).</li>
+<li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
+<li>State updated (Eagles total last_seen 17:28 ET, Over 61%; Eagles spread added as first-sighting baseline; stored medians unchanged; backup rlm-state.json.bak.1101-1723EST). Live watch going forward: ONLY Eagles vs Commanders (8:20 PM ET) — total flags only if Over returns to &gt;=70% AND the total reaches 39.0 or below; spread flags only on a &gt;=1.0 move toward the minority with a side at &gt;=70%.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
