@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-11-01 01:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-10-31.md · page built 2026-11-01 02:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-10-31 06:47 ET run — SEED RUN, UNVERIFIED (no delivery)</h3>
 <ul>
@@ -217,6 +217,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 2 — the 19:54 ET UNLV flags (UNLV -21.5 at FanDuel and at Fanatics) both close silently: the median reverted to -21.5, so FanDuel&#x27;s -21.5 now EQUALS the current median and Fanatics&#x27; -22 is past it (worse for the favorite bettor, not stale); neither book is stale on the current underdog-side steam event. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
 <li>State updated (backup steam-side-state.json.bak.1031-2054; compare script steam-side-compare-20261031-2054.py): medians refreshed to the 8:56 PM read for the 3 not-started games; the 44 started games keep their earlier medians; flags 6 total (2 open, 4 closed).</li>
 <li>DELIVERABLE: none (alert-only; steam event produced no stale-book flag, and the 2 closed flags are never re-delivered). No message sent.</li>
+</ul>
+<h3>2026-10-31 21:54 ET run — 0 steam events, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:a9b32d06-a167-5b2c-8235-1fa976106041 (READ-ONLY, no sign-in, board view only; harness-measured 6:54-7:00 PM PDT = 9:54-10:00 PM ET Oct 31): ScoresAndOdds public NCAAF board, spreads read ~9:55 PM ET, totals ~9:57 PM ET, spreads re-verified unchanged ~9:59 PM ET Oct 31. Per-book odds publicly readable, no gate. Board listed 56 games total (47 dated Oct 31 on the board, whose clock runs 1 hour behind ET).</li>
+<li>Games read: 3 FBS not started at read time (kickoffs 10:00 PM ET or later); no new games, none missing vs the stored list. Excluded as started/in progress: Army @ Memphis and Washington @ Nebraska (8:00 PM ET) plus all earlier Oct 31 games. NFL: no games listed for Oct 31 (first games Nov 1), as in prior runs. Books on the board this read: bet365, BetMGM, DraftKings, Caesars, FanDuel, Fanatics (6 per game); Hard Rock blank for all 3 games, Kalshi not shown as a column — same 6-book basis as the 20:54 stored medians, so the moves below are not book-count artifacts.</li>
+<li>Steam events: 0. All moves below thresholds: Texas State @ Boise State spread -10.0 unchanged, total 63.0 -&gt; 63.5 (+0.5); Northern Illinois @ UNLV spread -21.5 unchanged, total 54.5 -&gt; 55.5 (+1.0, below the 1.5 total threshold); Oregon State @ Fresno State spread -6.0 -&gt; -6.25 (+0.25, three books at -6.5 and three at -6.0), total 57.5 unchanged. No stale-book check triggered, since no steam event occurred.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: SMU @ Syracuse, Syracuse +9.5 at Fanatics (flagged 11:54 ET; game kicked off 12:00 PM ET, not re-read, closure unverified) and UConn @ Air Force, Air Force -1.5 at FanDuel (updated 14:54 ET; game kicked off 3:00 PM ET, not re-read, closure unverified).</li>
+<li>State updated (backup steam-side-state.json.bak.1031-2154): medians refreshed to the 9:55-9:59 PM read for the 3 not-started games; the 44 started games keep their earlier medians; flags 6 total (2 open, 4 closed).</li>
+<li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
