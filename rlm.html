@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 10:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 11:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan log — 2026-11-01</h2>
 <h3>Run 00:23 ET (21:23 PDT Oct 31) — PENDING, no report yet</h3>
@@ -205,6 +205,34 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>NEW &gt;=70% SCAN: none. Closest below-threshold: Titans-Bengals spread Bengals 69%, Raiders-Jets total Over 69%, Chargers-Rams total Over 69%.</li>
 <li>No news check triggered (no candidate met both RLM conditions vs state).</li>
 <li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule). Run 05:23 EST now CLOSED — the earlier pending note is superseded by this reconciliation. State updated (last_seen 05:28 EST for the 8 watch markets; stored panel medians unchanged).</li>
+</ul>
+<h3>Run 06:23 EST (03:23 PST Nov 1) — PENDING, no report yet</h3>
+<ul>
+<li>Dispatched ONE read-only browser task (browser-task:8915229c-693a-53e3-a3c8-c3c11a1d97f4), no sign-in, no bets: ScoresAndOdds public board + matchup panels for NOVEMBER 1 games not started at read time (NFL Sunday slate + any FBS Nov 1 games), re-read of the 8 Nov 1 watch markets vs 00:38 ET baselines, new &gt;=70% scan, earliest Nov 1 NFL kickoff verification.</li>
+<li>Watch markets carried into this run (stored panel medians, last_seen 05:28 EST from the prior run): Raiders vs Jets spread Raiders +1.5 / Raiders 82%; Rams vs Chargers spread Rams -6.5 / Rams 73%; Patriots vs Dolphins spread Patriots -7 / Patriots 77%; Falcons vs Buccaneers total Over 43.5 / Over 74%; Browns vs Steelers total stored 38.5 / Over 68% (below 70%, can only flag if Over returns to &gt;=70% AND panel total reaches 37.0 or below); Chiefs vs Broncos total Over 40.5 / Over 71%; Patriots vs Dolphins total stored 43.5 / Over 75% (flag level panel-verified 42.0 or below); Eagles vs Commanders total stored 40.5 / Over 75% (flag level panel-verified 39.0 or below).</li>
+<li>No report delivered by bookkeeping close. Medians/splits carried unchanged — NOT a source gate (ScoresAndOdds splits were readable in the 00:38/01:32/02:26/03:28/04:25/04:28/05:28 ET Nov 1 runs; no rlm-gate-notified file exists).</li>
+<li>Comparison vs state: NO flag determinable this run. No flag is claimed on carried numbers and no news check was triggered.</li>
+<li>FLAGGED LIST: none judged this run (report pending). No deliverables, no message sent (alert-only rule).</li>
+<li>State file unchanged this run (backup rlm-state.json.bak.1101-0323PST). Next run (04:23 PST / 07:23 EST) must re-read the board/panels and reconcile any late report from browser-task:8915229c-693a-53e3-a3c8-c3c11a1d97f4 before any flag can be judged; moves are judged vs the 00:38 ET Nov 1 baselines only.</li>
+</ul>
+<h3>Addendum to Run 06:23 EST (03:23 PST Nov 1) — browser-task report received (task ran 03:24-03:25 PST per runtime measurement; report claimed board read ~06:24-06:30 EST — the measured window is used here)</h3>
+<ul>
+<li>The dispatched browser task completed after bookkeeping close; its report is now reconciled. ScoresAndOdds public board + matchup panels, read-only, no sign-in, no bet. Splits publicly readable via ScoresAndOdds consensus; no Covers/VegasInsider fallback needed. Scanned 12 not-started Nov 1 NFL games; 0 Nov 1 FBS games listed (NCAAF boards ran through Oct 31). Earliest Nov 1 NFL kickoff confirmed 1:00 PM ET (eight games at that time), all not started at read time.</li>
+<li>8 WATCH MARKETS vs 00:38 ET baselines — NONE met both RLM conditions (spread &gt;=1.0 / total &gt;=1.5 toward the minority, public still &gt;=70%):</li>
+</ul>
+<p>  - Raiders vs Jets spread: +1.5 unchanged, Raiders 82% unchanged — no move.</p>
+<p>  - Rams vs Chargers spread: median -6.5 unchanged, Rams 73% unchanged — no move. Report labels panel -6 vs the 05:28 run&#x27;s panel -6.5 (a label swap; the 05:28 run noted the consensus card -6) — at most 0.5 toward Chargers, below 1.0 either way.</p>
+<p>  - Patriots vs Dolphins spread: -7 unchanged, Patriots 77% unchanged — no move.</p>
+<p>  - Falcons vs Buccaneers total: 43.5 unchanged, Over 74% -&gt; 72% (still &gt;=70%) — no move.</p>
+<p>  - Browns vs Steelers total: panel 39.5 / median 39 (+0.5 vs stored 38.5 toward PUBLIC Over, wrong direction, below 1.5); Over 68% -&gt; 64% (now BELOW 70%) — no flag. Stored 38.5 NOT overwritten.</p>
+<p>  - Chiefs vs Broncos total: 40.5 unchanged, Over 71% -&gt; 68% (now BELOW 70%, drops off the &gt;=70% watch condition) — no move, no flag.</p>
+<p>  - Patriots vs Dolphins total: panel 43.5 / median 43 (-0.5 vs stored 43.5 toward minority Under, BELOW 1.5); Over 75% -&gt; 70% (still &gt;=70%) — no flag. Stored 43.5 NOT overwritten. Flag level remains panel-verified 42.0 or below.</p>
+<p>  - Eagles vs Commanders total: 40.5 unchanged, Over 75% -&gt; 69% (now BELOW 70%, drops off the &gt;=70% watch condition) — no move, no flag. Stored 40.5 NOT overwritten. Flag level remains panel-verified 39.0 or below if Over returns to &gt;=70%.</p>
+<ul>
+<li>NEW &gt;=70% MARKET (baseline only, NOT a flag): Titans vs Bengals spread — Bengals -12.5, Bengals 70%. Recorded silently into state as the new baseline; it can only flag on a later 1.0+ move toward minority Titans (panel -11.5 or higher) with Bengals still &gt;=70%.</li>
+<li>Closest below-threshold: Eagles vs Commanders total Over 69%, Chiefs vs Broncos total Over 68%, Raiders vs Jets total Over 66%, Chargers vs Rams total Over 66%.</li>
+<li>No news check triggered (no candidate met both RLM conditions vs state).</li>
+<li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule). Run 06:23 EST now CLOSED — the earlier pending note is superseded by this reconciliation. State updated (last_seen 06:24 EST for the 8 watch markets + new Titans vs Bengals baseline; stored panel medians unchanged; backup rlm-state.json.bak.1101-0623EST).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
