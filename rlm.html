@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 17:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-11-01.md · page built 2026-11-01 18:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan log — 2026-11-01</h2>
 <h3>Run 00:23 ET (21:23 PDT Oct 31) — PENDING, no report yet</h3>
@@ -386,6 +386,31 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>No news check triggered (no candidate met both RLM conditions in the RLM direction vs state).</li>
 <li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule).</li>
 <li>State updated (last_seen 12:25 ET for the 9 watch markets; stored panel medians unchanged; backup rlm-state.json.bak.1101-1225EST). Going forward: the eight 1:00 PM ET games are started and excluded; live watch is Rams/Chargers spread, Patriots/Dolphins spread + total, Chiefs/Broncos total, and Eagles/Commanders total.</li>
+</ul>
+<h3>Run 13:23 EST (10:23 PST Nov 1) — PENDING, no report yet</h3>
+<ul>
+<li>Dispatched ONE read-only browser task (browser-task:f5ef085f-b747-5587-bbf1-6b6320bf99c3), no sign-in, no bets: ScoresAndOdds public board + matchup panels for NOVEMBER 1 NFL games not started at read time, re-read of the 5 remaining watch markets vs stored baselines, new &gt;=70% scan.</li>
+<li>Watch markets carried into this run (stored baselines, last_seen 12:25 EST): Rams vs Chargers spread Rams -6.5 / Rams 71% (flag level -5.5 or shorter); Patriots vs Dolphins spread Patriots -7 / Patriots 75% (flag level -6 or shorter); Patriots vs Dolphins total stored 43.5 / Over 59% (panel already 41.5, flags only if Over returns to &gt;=70% with panel &lt;=42.0); Chiefs vs Broncos total stored 40.5 / Over 61% (flags only if Over returns to &gt;=70% AND panel reaches 39.0 or below); Eagles vs Commanders total stored 40.5 / Over 64% (flags only if Over returns to &gt;=70% AND panel reaches 39.0 or below).</li>
+<li>The eight 1:00 PM ET games are started and excluded going forward (Raiders/Jets, Titans/Bengals, Falcons/Buccaneers, Browns/Steelers spreads/totals).</li>
+<li>No report delivered by bookkeeping close. Medians/splits carried unchanged — NOT a source gate (ScoresAndOdds splits were readable in the 00:38/01:32/02:26/03:28/04:25/04:28/05:28/06:24/07:26/08:25/09:26/10:26/11:25/12:25 ET Nov 1 runs; no rlm-gate-notified file exists).</li>
+<li>Comparison vs state: NO flag determinable this run. No flag is claimed on carried numbers and no news check was triggered.</li>
+<li>FLAGGED LIST: none judged this run (report pending). No deliverables, no message sent (alert-only rule).</li>
+<li>State file unchanged this run (backup rlm-state.json.bak.1101-1323EST). Next run (14:23 EST) must re-read the board/panels and reconcile any late report from browser-task:f5ef085f-b747-5587-bbf1-6b6320bf99c3 before any flag can be judged; moves are judged vs the stored baselines only.</li>
+</ul>
+<h3>Addendum to Run 13:23 EST (10:23 PST Nov 1) — browser-task report received (task ran 13:24-13:29 ET)</h3>
+<ul>
+<li>The dispatched browser task completed in-run; its report is now reconciled. ScoresAndOdds public NFL board + matchup/consensus panels, read-only, no sign-in, no bet. Splits publicly readable via ScoresAndOdds consensus; no Covers/VegasInsider fallback needed. Scanned 4 not-started Nov 1 NFL games (Chargers at Rams, Chiefs at Broncos, Patriots at Dolphins, Eagles at Commanders); 0 Nov 1 FBS games listed (NCAAF board runs through Oct 31). Earliest not-started kickoff confirmed Chargers at Rams, 4:05 PM ET.</li>
+<li>5 WATCH MARKETS vs stored baselines — NONE met both RLM conditions (spread &gt;=1.0 / total &gt;=1.5 toward the minority, public still &gt;=70%):</li>
+</ul>
+<p>  - Rams vs Chargers spread: -6.5 unchanged, Rams 71% -&gt; 70% (still &gt;=70%) — no move, no flag.</p>
+<p>  - Patriots vs Dolphins spread: -7 unchanged, Patriots 75% -&gt; 74% (still &gt;=70%) — no move, no flag.</p>
+<p>  - Patriots vs Dolphins total: panel 41.5 unchanged since 12:25 read (-2.0 vs stored 43.5 toward minority Under, move threshold met, BUT Over 61%, BELOW 70% — both conditions NOT met, no flag). Stored 43.5 NOT overwritten. Flag level remains 42.0 or below if Over returns to &gt;=70% (panel already below that level).</p>
+<p>  - Chiefs vs Broncos total: panel 41.5 unchanged since 12:25 read (+1.0 vs stored 40.5 toward PUBLIC Over, wrong direction, below 1.5); Over 61% -&gt; 59% (below 70%) — no flag. Stored 40.5 NOT overwritten.</p>
+<p>  - Eagles vs Commanders total: 40.5 unchanged, Over 64% -&gt; 61% (below 70%) — no move, no flag.</p>
+<ul>
+<li>NEW &gt;=70% SCAN: no new spread or total market reached &gt;=70% beyond the watch markets. Three MONEYLINE markets did (Rams 95% at ~-300, Patriots 96% at ~-350, Commanders 83% at ~-275) — moneylines are OUTSIDE this scan&#x27;s scope (spread/total only), so they are recorded as observations, not flags, and not added to state. No other spread/total/moneyline market reached 70% (Chiefs moneyline 68%, Chiefs spread 51%, Rams total Over 56%).</li>
+<li>No news check triggered (no candidate met both RLM conditions in the RLM direction vs state).</li>
+<li>FLAGGED LIST (final): none. No deliverables. No message sent (alert-only rule). Run 13:23 EST now CLOSED — the earlier pending note is superseded by this reconciliation. State updated (last_seen 13:29 ET for the 5 watch markets; stored medians unchanged). Live watch going forward: Rams/Chargers and Patriots/Dolphins spreads remain &gt;=70%; all three total markets only flag if their public side returns to &gt;=70% AND the panel reaches its flag level.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
