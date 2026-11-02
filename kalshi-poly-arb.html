@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-01.md · page built 2026-11-02 02:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-01.md · page built 2026-11-02 03:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-01</h2>
 <h3>2026-11-01 00:44 PDT run (read 12:46–12:47 AM PDT Nov 1, DarkHorse Arbitrage, NJ view, signed in)</h3>
@@ -515,6 +515,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Excluded over-3.00% rows with no Kalshi/Polymarket US leg included, for example, Novig/Polymarket Intl. 13.29%, BetParx/Novig 5.31%, theScore/Bet365 5.11%, BetRivers/Novig 4.87%, Fanatics/Novig 3.60% — dropped, not banked as qualifying.</li>
 <li>State: kalshi-poly-arb-state.json updated (7 added banked-only, 5 pruned — the Nov-01 8:20 PM PHI/WAS entries whose start times had passed by 8:55 PM ET; 32 entries before prune, 27 after prune, 34 after adding). Backup: kalshi-poly-arb-state.json.bak-20261101-2044. No bets placed.</li>
 <li>Snapshot caveat: prices are an ~8:49-8:53 PM ET Nov 1 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>Run 2026-11-01 ~9:50 PM ET (scheduled 9:44 PM ET, hourly-kalshi-poly-arb-scan)</h3>
+<ul>
+<li>Browser: DarkHorse Arbitrage Finder, NJ view, signed in, $1,000 primary. Profit filter is dollar-denominated, so Min Profit set to $30 (3% of $1,000) with strict &gt;3.00% cut applied manually; cross-checked with Conversion % &gt;=3% / Min Profit $0 so small-stake pairs were not hidden. No bets placed; Include Player Props never touched; Liquidity Mode restored to &quot;Full Bet Size Only&quot;.</li>
+<li>DELIVERABLES: NONE. Run ends silently per alert-only rule (no main-chat message sent).</li>
+<li>Why none: main pass (read ~9:45 PM ET) had 193 results unfiltered, 20 with Min Profit $30, 8 strictly over 3.00% — none on Kalshi or Polymarket US (books were FanDuel, HardRock, Fanatics-NJ, theScore, Bet365, DraftKings, Novig). A later Full-mode Conversion &gt;=3% check (~9:49 PM) showed 5 rows over 3%, again none on Kalshi/Polymarket US. Smaller Bets pass: 18 results with Min Profit $30; 11 at/over 3% with Conversion &gt;=3% / Min Profit $0, all scanned — no new qualifying Kalshi/Polymarket US pair. The only prediction-market legs over 3% in that pass were Polymarket International (Joel Embiid rebounds/points rows, e.g. 5.26%, 7.33%, 3.75%, 3.47%, 3.37%), which never count and were excluded.</li>
+<li>Collected qualifying list: none — no event/market/leg/stake/profit details to bank, and no per-row Arb Risk flags for qualifying rows (tool shows only a generic Arb Risk control above the table).</li>
+<li>State: kalshi-poly-arb-state.json updated (0 added; 17 pruned — the Nov-01 9:00 PM WTA Hong Kong and 9:15 PM NBA TOR/Lakers entries whose start times had passed by 9:50 PM ET; 34 entries before prune, 17 after). Backup: kalshi-poly-arb-state.json.bak-20261101-2144. No entries 48h stale beyond the passed-event prune.</li>
+<li>Snapshot caveat: prices are a ~9:45-9:49 PM ET Nov 1 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
