@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 16:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 17:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-02</h2>
 <h3>00:44 EST run (read 00:44–00:49 EST, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
@@ -212,6 +212,26 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State: 4 deliverables + 13 bank-only keys added, 2 existing entries updated (Army, St. Peter&#x27;s), 2 pruned (Winthrop/Queens NC Moneyline entries, event 6:00 AM tool-display start passed by read time) — 69 entries total, up from 54. Backup: kalshi-poly-arb-state.json.bak-1102-0744PST. No entries dropped for 48h staleness (oldest last_seen 2026-10-31, kept on prior runs&#x27; date granularity).</li>
 <li>Dedupe vs main arbitrage-state.json: checked by grep — no DET/CHA 104.5 or 102.5, Johnson, WAS/ORL 109.5 Polymarket US, Army/Duke Polymarket US, UNC Asheville 163.5, Toledo 162.5, or St. Peter&#x27;s Polymarket US entry in either state before this run (main-state WAS/ORL and Army/Duke hits are different books/lines).</li>
 <li>Snapshot caveat: prices are a ~7:44–7:56 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>08:44 PST run (read 8:45-8:49 AM PST Nov 2 / 11:45-11:49 AM EST Nov 2, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
+<p><b>Deliverables: 2 — 1 full-size NEW + 1 SMALLER BETS NEW (see delivery block in run result).</b></p>
+<ul>
+<li>Main pass (Full Bet Size Only, Profit filter dollar-denominated — Min Profit set to $30 = 3% of the $1,000 primary, strict &gt;3.00% cut applied manually; filtered total 177 pairs, &gt;3.00% subset 68 pairs, page-1 cutoff 3.02% with 2.98% next):</li>
+</ul>
+<p>  - DELIVERABLE — NEW: American Eagles — Today 5:00 PM — Total / Alt Total Over 149.5 — Bet365 Over 149.5 -111 $1,000 vs Kalshi Over 149.5 NO +127.4 $835.69 — $64.31, 3.50% — Arb Risk Yes (Bet Slip). New to both this state and main arbitrage-state.json (grep: no American/Kalshi or 149.5 Kalshi/Polymarket entry in either state). Event/opponent as displayed; no opponent invented.</p>
+<p>  - Excluded in Full pass: 4 DraftKings Predictions pairs over 3% (UTEP, 5.12% x2 different alt totals, 3.88%, 3.74%) — other leg not an NJ sportsbook, not banked (no lines/prices/stakes reported, not invented). No Polymarket Intl.-only pair in the full-size &gt;3.00% list.</p>
+<ul>
+<li>Smaller Bets pass (Liquidity Mode control existed, switched to Smaller Bets, pages 1-2 until profit fell below 3.00% on page 2, then verified restored to &quot;Full Bet Size Only&quot; — tool left as found, Primary Bet $1,000):</li>
+</ul>
+<p>  - DELIVERABLE — NEW, SMALLER BETS: American Eagles — Today 5:00 PM — Total Over 149.5 / Alt Total Under 149.5 — Bet365 Over 149.5 -111 $476 vs Polymarket US Under 149.5 +138.1 $395.16 — $33.24, 3.82% — Arb Risk Yes. New to both states; distinct hedge book from the delivered full-size Kalshi pair. Stakes exactly as displayed.</p>
+<p>  - Banked only, NOT delivered — size variant of the delivered full-size pair (not a separate deliverable): American Eagles Over 149.5 Bet365 -111 $723 vs Kalshi Over 149.5 NO $601 — $49.75, 3.76%.</p>
+<p>  - Banked only, NOT delivered — Kalshi leg with Polymarket Intl. other leg (Intl never counts, other leg not placeable): NBA SAC/DAL Today 5:15 PM Assists K. Irving Over 5.5 — Kalshi NO -142.7 $249 vs Polymarket Intl. YES +210.8 $141.04 — $33.44, 8.57% (updated banked entry, was 7.55%); same event Rebounds K. Irving Over 3.5 — Kalshi NO -131.1 $288.71 vs Polymarket Intl. YES +186.5 $183.61 — $36.18, 7.66% (updated, was 7.45%); Atlanta Hawks Today 5:45 PM Rebounds J. Johnson Over 9.5 — Kalshi NO -135.5 $281.80 vs Polymarket Intl. YES +190.2 $174.50 — $33.53, 7.35%; Atlanta Hawks Today 5:45 PM Assists J. Johnson Over 7.5 — Kalshi NO -131.1 $300 vs Polymarket Intl. YES +179.7 $195.36 — $33.09, 6.68%. Poly/Kalshi Prop flags; no Arb Risk shown on these four.</p>
+<p>  - Excluded: many Polymarket Intl.-only prop pairs topping the Smaller Bets list — not counted as qualifiers.</p>
+<ul>
+<li>Sign-in/tool: no failure; signed in, NJ view; no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; no bet placed. Liquidity Mode restored to Full Bet Size Only (confirmed by browser report).</li>
+<li>State: 5 new keys banked (2 deliverables + 1 size variant + 2 Atlanta bank-only), 2 existing entries updated (SAC/DAL bank-only) — 74 entries total, up from 69. Backup: kalshi-poly-arb-state.json.bak-1102-0844PST. No entries pruned (no banked event start had passed at read time; oldest last_seen 2026-10-31, kept on prior runs&#x27; date granularity).</li>
+<li>Dedupe vs main arbitrage-state.json: checked by grep — no American 149.5 Kalshi or Polymarket US entry in either state before this run (main-state American/Cincinnati 149.5 pairs use Fanatics/DraftKings as the Under leg, not Kalshi/Polymarket US).</li>
+<li>Snapshot caveat: prices are a ~8:45-8:49 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
