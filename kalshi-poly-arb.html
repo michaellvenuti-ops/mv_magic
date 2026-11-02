@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 09:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 10:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-02</h2>
 <h3>00:44 EST run (read 00:44–00:49 EST, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
@@ -84,6 +84,22 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Sign-in/tool: no failure; signed in, NJ / DarkHorse Default view; no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; no bet placed.</li>
 <li>State: 3 new Intl-only Smaller Bets pairs banked in kalshi-poly-arb-state.json (25 entries total). No entries pruned (no event start time passed at read time; oldest last_seen 2026-10-31, within 48h). No last_seen dates advanced — browser report covered qualifying rows only.</li>
 <li>Dedupe vs main arbitrage-state.json: not needed — zero qualifying pairs.</li>
+</ul>
+<h3>01:44 PST run (read ~01:47–01:51 AM PST Nov 2 / 04:47–04:51 AM EST Nov 2, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
+<p><b>Deliverables: NONE. No message sent (alert-only rule).</b></p>
+<ul>
+<li>Main pass (Full Bet Size Only, Profit filter is dollar-based — Min Profit entered as $30 = 3% of the $1,000 primary, strict &gt;3.00% cut applied manually): 40 rows strictly over 3.00% in the verified restored snapshot (initial filtered view showed 55 rows, restored final view 51 — live odds moved during the scan). Qualifying rows: 0. No row had a Kalshi or Polymarket US leg paired with an NJ-placeable book. The &gt;3.00% segment was dominated by Polymarket Intl. legs (dropped — Intl never counts) plus sportsbook-only pairs. The only Kalshi leg in the main pass was paired with Polymarket Intl. (see banked row below). Arb Risk: the tool shows no per-row Arb Risk column; the Bet Slip showed &quot;Arb Risk&quot; for the Embiid/Polymarket, Collins/DraftKings Predictions, and Okutoyi/Fanatics pairs, but none of those qualified, so no qualifying row carries a flag.</li>
+<li>Smaller Bets pass (Liquidity Mode control existed, switched to Smaller Bets, then verified restored to &quot;Full Bet Size Only&quot; at 01:51 AM PST — tool left as found): 36 rows strictly over 3.00%, all with stakes exactly as displayed. Qualifying rows: 0. The only Kalshi legs were again paired with Polymarket Intl. (see banked rows below); all other &gt;3.00% rows were Polymarket Intl. + NJ book or NJ-book-only. No Polymarket US leg appeared in either pass.</li>
+<li>Banked only, NOT delivered (Kalshi leg present, other leg Polymarket Intl. — not placeable, so the pair cannot be placed both ways):</li>
+</ul>
+<p>  - NBA SAC Kings / DAL Mavericks — Nov-02 5:15 PM ET — Assists K. Irving Over 5.5 — Kalshi Over 5.5 NO -126.9 $1,000 vs Polymarket Intl. Over 5.5 YES +163.9 $699.28 — $89.00, 5.24%</p>
+<p>  - (SMALLER BETS) Same event/market — Kalshi Over 5.5 NO -111.6 $167 vs Polymarket Intl. Over 5.5 YES +188.2 $113.57 — $35.74, 12.74% — stakes exactly as displayed</p>
+<p>  - (SMALLER BETS) Same event — Rebounds K. Irving Over 3.5 — Kalshi Over 3.5 NO -120.9 $319.04 vs Polymarket Intl. Over 3.5 YES +179.3 $215.60 — $48.18, 9.01% — stakes exactly as displayed</p>
+<ul>
+<li>Sign-in/tool: no failure; signed in via saved session (Sign Out visible, NJ view); no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; Primary Bet left at $1,000; no bet placed.</li>
+<li>State: 3 banked-only rows added, 3 pruned (WTA Chennai L. Tagger / E. Jacquemot entries, event Nov-02 4:30 AM ET, start time passed by read time) — 25 entries total, unchanged count. Backup: kalshi-poly-arb-state.json.bak-1102-0144PST. No other entries pruned (no other banked event start had passed; Oct 31 last_seen entries kept on date-only granularity, within 48h). No last_seen dates advanced — browser report covered qualifying rows only.</li>
+<li>Dedupe vs main arbitrage-state.json: not needed — zero qualifying pairs.</li>
+<li>Snapshot caveat: prices are a ~01:47–01:51 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
