@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-02.md · page built 2026-11-02 07:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-02.md · page built 2026-11-02 08:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-11-02 00:54 ET run — 1 first-sighting baseline, 0 steam events, 0 new flags (silent, alert-only)</h3>
 <ul>
@@ -47,6 +47,17 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>FIRST SIGHTINGS (recorded silently, no flag possible — a steam event needs a prior median): 15 NFL Nov 5-9 + 16 FBS Nov 3-7 = 31 new medians. No per-book dumps were supplied for first-sighting games, per compact-report protocol.</li>
 <li>Steam events: 0. Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: Titans @ Bengals (Bengals -12 Hard Rock, -12.5 FanDuel, Nov 1 game, kicked off, closure unverified) + SMU @ Syracuse (Syracuse +9.5 Fanatics) + UConn @ Air Force (Air Force -1.5 FanDuel) — both Oct 31 games kicked off, closure unverified, same handling as the 00:54 ET run.</li>
 <li>State updated (backup steam-side-state.json.bak.1102-0154): 31 medians added, Bears last_seen refreshed; medians now 91 (was 60); flags still 9 total (4 open, 5 closed).</li>
+<li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
+</ul>
+<h3>2026-11-02 02:54 ET run — 1 first-sighting baseline, 0 steam events, 0 new flags (silent, alert-only)</h3>
+<ul>
+<li>Browser task browser-task:537636e4-2d75-5f3d-9e30-f2c51a66d4fb (READ-ONLY, no sign-in, board view only; harness-measured 11:54 PM PST Nov 1–12:01 AM PST Nov 2 / 2:54–3:01 AM ET Nov 2; report read ~2:55–3:00 AM ET Nov 2): ScoresAndOdds public NFL board + NCAAF board (future weeks via site week selectors). Per-book odds publicly readable, no gate. Offers location dropdown set to New Jersey; no separate odds-board jurisdiction filter, and setting it did not change odds columns.</li>
+<li>Games read: 33 with a posted line — 16 NFL (1 Nov 2 + 15 Nov 5–9) and 17 FBS Nov 3–7. All Nov 1 games excluded as already kicked off. NCAAF Week 10 board showed only 4 books with lines (BetMGM, DraftKings, FanDuel, Hard Rock); bet365, Caesars, Fanatics had no Week 10 lines posted. FCS-vs-FBS games skipped (Toledo @ Sacramento State, Merrimack @ Wake Forest — both no line posted).</li>
+<li>Steam events: 0 — no game met spread ≥1.0 or total ≥1.5 vs the 1:54 AM ET stored medians, so no per-book stale check was triggered and no per-book dump was required.</li>
+<li>Sub-threshold median updates recorded (NOT steam events): Bengals spread −3.25→−3.5; Cardinals spread −11.25→−11.5; Lions total 49.25→49.0; Giants total 39.75→39.5; Broncos total 43.75→44.0; Texans total 41.75→41.5. Every other stored median matched exactly, including Bears @ Seahawks (Seahawks −3.0 / 46.5, Mon Nov 2, 8:15 PM ET).</li>
+<li>FIRST SIGHTING (recorded silently, no flag possible): FBS Michigan State @ Michigan, Sat Nov 7, 12:00 PM ET — total-only on the board (39.5, DraftKings only book showing it); no spread posted, so spread recorded as null pending a posted line.</li>
+<li>Flags delivered: 0. Flags closed: 0. Open flags carried, NOT re-delivered: Titans @ Bengals (Bengals −12 Hard Rock, −12.5 FanDuel, Nov 1 game, kicked off, closure unverified) + SMU @ Syracuse (Syracuse +9.5 Fanatics) + UConn @ Air Force (Air Force −1.5 FanDuel) — both Oct 31 games kicked off, closure unverified, same handling as prior runs.</li>
+<li>State updated (backup steam-side-state.json.bak.1102-0254): 33 seen medians refreshed, 6 sub-threshold medians updated, 1 new median added; medians now 92 (was 91); flags still 9 total (4 open, 5 closed).</li>
 <li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
