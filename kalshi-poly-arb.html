@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-01.md · page built 2026-11-02 01:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-01.md · page built 2026-11-02 02:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-01</h2>
 <h3>2026-11-01 00:44 PDT run (read 12:46–12:47 AM PDT Nov 1, DarkHorse Arbitrage, NJ view, signed in)</h3>
@@ -493,6 +493,28 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>DELIVERABLES: none. Run ends silently per alert-only rule (no main-chat message sent by this worker run).</li>
 <li>State: kalshi-poly-arb-state.json updated (0 added, 0 pruned — no entries with event starts passed as of 7:44 PM ET; no entries 48h stale). Backup: kalshi-poly-arb-state.json.bak-20261101-1944.</li>
 <li>Snapshot caveat: prices are a ~7:44-7:47 PM ET Nov 1 snapshot — arbs die fast, re-check before placing; Kalshi legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>Run 2026-11-01 ~8:55 PM ET (scheduled 8:44 PM ET, hourly-kalshi-poly-arb-scan)</h3>
+<ul>
+<li>Browser: DarkHorse Arbitrage Finder, NJ view, signed in via existing saved Google sign-in, $1,000 primary. Profit filter is dollar-denominated, so the browser set Min Profit to $30 (3% of the $1,000 primary) and manually applied the strict &gt;3.00% cut. No bets placed; Include Player Props never touched; Liquidity Mode restored to &quot;Full Bet Size Only&quot; and verified. Note: after restoration the reloaded table had already moved (top row then 91.44%) — rows below are the 8:49-8:53 PM ET snapshot, not the post-restore reload.</li>
+<li>DELIVERABLES: NONE. Run ends silently per alert-only rule (no main-chat message sent by this worker run).</li>
+<li>Why none, despite the browser reporting 6 full-size + 1 smaller-bets &quot;qualifying&quot; rows: every one of the 7 pairs a Kalshi or Polymarket US leg with a Polymarket Intl. leg (the 1-cent YES side on J. Poeltl props). A Polymarket Intl. leg never counts and is not placeable for Michael, so the other leg fails the scan&#x27;s placeability rule — same banked-only treatment as prior non-placeable-leg pairs (e.g. Bet105). These are NOT delivered, only banked to avoid re-flagging as new. Three of the full-size rows also had prices not retained by the browser report; those prices were left null, never guessed.</li>
+<li>Full-size collected list (all NBA TOR Raptors vs LA Lakers, tool showed &quot;Today 9:15 PM&quot;; all showed &quot;Poly/Kalshi Prop&quot; flag, no Arb Risk flag shown):</li>
+</ul>
+<p>  1. Rebounds J. Poeltl Over 3.5 — Kalshi NO -265.9 $1,000 / Polymarket Intl. YES +7374.1 $19.37 — $356.95, 35.02% — BANKED ONLY (Poly Intl. leg).</p>
+<p>  2. Rebounds J. Poeltl Over 5.5 — Kalshi NO -266.7 $1,000 / Polymarket Intl. YES +7361.5 $15.10 — $293.03, 28.81% — BANKED ONLY (Poly Intl. leg).</p>
+<p>  3. Points J. Poeltl 10+ — Polymarket US NO $1,000 / Polymarket Intl. YES Over 9.5 — $190.70, 18.81% — BANKED ONLY (Poly Intl. leg; prices not retained, not guessed).</p>
+<p>  4. Rebounds J. Poeltl 8+ — Polymarket US NO $1,000 / Polymarket Intl. YES Over 7.5 — $51.11, 5.05% — BANKED ONLY (Poly Intl. leg; prices not retained, not guessed).</p>
+<p>  5. Rebounds J. Poeltl Over 7.5 — Kalshi NO $1,000 / Polymarket Intl. YES Over 7.5 — $45.84, 4.53% — BANKED ONLY (Poly Intl. leg; prices not retained, not guessed).</p>
+<p>  6. Rebounds J. Poeltl Over 5.5 — Kalshi NO -232.7 $1,000 / Polymarket Intl. YES Over 5.5 — $44.70, 4.42% — BANKED ONLY (Poly Intl. leg; distinct Kalshi price from row 2).</p>
+<ul>
+<li>Smaller Bets collected list (new pair only; other smaller-bets rows duplicated main-pass pairs):</li>
+</ul>
+<p>  - Points J. Poeltl Over 9.5 — Kalshi NO -322.2 $464.25 / Polymarket Intl. YES +9900 $6.40 — $137.62, 29.24% — BANKED ONLY (Poly Intl. leg). Stakes exactly as displayed.</p>
+<ul>
+<li>Excluded over-3.00% rows with no Kalshi/Polymarket US leg included, for example, Novig/Polymarket Intl. 13.29%, BetParx/Novig 5.31%, theScore/Bet365 5.11%, BetRivers/Novig 4.87%, Fanatics/Novig 3.60% — dropped, not banked as qualifying.</li>
+<li>State: kalshi-poly-arb-state.json updated (7 added banked-only, 5 pruned — the Nov-01 8:20 PM PHI/WAS entries whose start times had passed by 8:55 PM ET; 32 entries before prune, 27 after prune, 34 after adding). Backup: kalshi-poly-arb-state.json.bak-20261101-2044. No bets placed.</li>
+<li>Snapshot caveat: prices are an ~8:49-8:53 PM ET Nov 1 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
