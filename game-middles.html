@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Game Middles Board</h1>
-<div class="sub">Latest scan list: game-middles-2026-11-01.md · page built 2026-11-02 00:50 ET</div>
+<div class="sub">Latest scan list: game-middles-2026-11-01.md · page built 2026-11-02 01:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-5.18</b> · 2 graded items · last graded 2026-10-28</p><p class='sub'>Middles graded at $100 per leg at the recorded prices against the final score; pushes refund that leg.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Bowling Green vs Buffalo | Alt Spread | Buffalo +2.5 FanDuel -170 | Bowling Green +0.5 Bally Bet +135</td><td><span class='badge loss'>LOSS</span></td><td>$-41.18</td></tr><tr><td>LA Lakers vs LA Clippers | Alt Spread | LA Clippers +7 | LA Lakers -3.5</td><td><span class='badge win'>WIN</span></td><td>$36.00</td></tr></table></div><details><summary>Full scan log</summary><h3>12:25 AM ET Nov 1 scan — SIGNED OUT, scan not performed (browser-task:dbfee91d-f3c8-52b5-945f-c57aa627749e, harness-measured 9:27-9:32 PM PDT Oct 31 / 12:27-12:32 AM ET Nov 1, ~5 min)</h3>
 <ul>
@@ -316,6 +316,20 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>SMALLER BETS PASS: Liquidity Mode control existed, switched to Smaller Bets, first 100 rows of 4,504 scanned with the same thresholds; ZERO new qualifying middles (closest traditional-book example, Vegas/Boston NHL, -275 / -245, failing both legs). Liquidity Mode restored to &quot;Full Bet Size Only&quot; and confirmed — tool left as found.</li>
 <li>Deliverables: 0 NEW, 0 UPDATED. Per the alert-only rule, no user message sent. State: entries unchanged (empty), 0 pruned. State backup: game-middles-state.json.bak.1101-1935.</li>
 <li>Open item STILL unresolved: the 5:45 AM duplicate scan filter-semantics question (Bet Odds Min = -170 vs Max = -170); this run followed the task-body protocol (Max = -170); the duplicate candidate key-number list remains unverified and undelivered.</li>
+</ul>
+<h3>8:26–8:36 PM EST Nov 1 scan — COMPLETED, 1 NEW qualifier (browser-task:2feaff48-c672-51d8-a0b7-fab6b221fe8f)</h3>
+<ul>
+<li>SIGNED IN throughout (Sign Out visible; NJ books shown, e.g. Fanatics-NJ, DraftKings-NJ, FanDuel-NJ). No sign-in attempted. READ-ONLY: no bet placed, Include Player Props untouched, Sportsbook Target left at Any Book.</li>
+<li>Filters: game markets only (Spread + Total only, Moneyline unchecked; Market Segment Full-Time+ and Full-Time only; Soccer Advance/Qualify unchecked; NO prop categories; note: unlike most Nov 1 runs, Alt Spread/Alt Total were NOT included this run); widths spreads 3 / totals 4; Bet Odds Max -170 (Min left at -100000; Hedge Bet Odds disabled at Any Book, so the -170 cap was applied manually to both legs); Items per page 100 (max offered: 5/10/25/100); sort conversion % descending; Primary Bet $1,000.</li>
+<li>COVERAGE: entire filtered set scanned — 571 rows at load, drifting to 509 live, all 6 pages at 100/page (rows 1–509 of the final 509-row set). This is a much smaller filtered set than the 6M+ sets in most Nov 1 runs because Alt lines were excluded, similar to the 7:35 PM run&#x27;s Main-Lines-Only 244-row set. Rows beyond the filtered set were not scanned; absence elsewhere proves nothing.</li>
+<li>QUALIFYING MIDDLES: 1 — NEW, delivered:</li>
+</ul>
+<p>  - North Carolina Central vs Georgia — NCAAB, Total — Nov-02 7:30 PM (as shown): Over 156.5, Fliff, -170, $1,000 / Under 160.5, DraftKings, -110, $832 (alternative hedge book theScore at the same -110). Window 4 points (totals 157, 158, 159, 160 win both legs). Middle value shown $1,344.60 / 73.40%; conversion shown -13.31%. NOT a KEY-NUMBER window (157–160 contains neither 37 nor 41). NOT clean tier (no combo prices both sides at -140 or better; the -170 primary blocks it).</p>
+<ul>
+<li>All other scanned main-pass rows failed the manual -170 cap, almost always on the primary leg (e.g. -177.8, -185.7, -257 and worse; closest failures at -170.3, just 0.3 worse than the cap).</li>
+<li>SMALLER BETS PASS: Liquidity Mode control existed, switched to Smaller Bets (all else untouched), first 2 pages (200 rows of 5,081): 0 NEW qualifying middles — the top row was the same North Carolina Central/Georgia middle, whose smaller-size version (primary -185.7) did not qualify. Liquidity Mode restored to Full Bet Size Only and confirmed — tool left as found.</li>
+<li>Deliverables: 1 NEW. State: 1 entry added (was empty after the 48h prune); 0 pruned. State backup: game-middles-state.json.bak.1101-2036.</li>
+<li>Open item STILL unresolved (carried forward, not resolved by this run): the 5:45 AM duplicate scan&#x27;s filter-semantics question (Bet Odds Min = -170 vs Max = -170); this run followed the task-body protocol (Max = -170); the duplicate&#x27;s candidate key-number list remains unverified and undelivered, and no state entries were added from it.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
