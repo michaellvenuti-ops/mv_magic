@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 13:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 14:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-02</h2>
 <h3>00:44 EST run (read 00:44–00:49 EST, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
@@ -144,6 +144,27 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State: 2 banked-only Smaller Bets rows updated to this run&#x27;s readings (SAC/DAL Assists and Rebounds, above) — 39 entries total, unchanged count. Backup: kalshi-poly-arb-state.json.bak-1102-0444PST. No entries pruned (no banked event start had passed at read time; oldest last_seen 2026-10-31 kept on date granularity as in prior runs). No other last_seen dates advanced — browser report covered qualifying rows only.</li>
 <li>Dedupe vs main arbitrage-state.json: not needed — zero qualifying pairs.</li>
 <li>Snapshot caveat: prices are a ~4:44–4:47 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>05:44 PST run (read 5:45–5:47 AM PST Nov 2 / 8:45–8:47 AM EST Nov 2 full pass; 5:54–5:56 AM PST / 8:54–8:56 AM EST Nov 2 Smaller Bets pass, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
+<p><b>Deliverables: 2 — both NEW (see delivery block in run result).</b></p>
+<ul>
+<li>Main pass (Full Bet Size Only, Profit filter dollar-denominated — Min Profit set to $30, strict &gt;3.00% cut applied manually): qualifying rows: 2, both Kalshi legs, both Arb Risk flagged.</li>
+</ul>
+<p>  - DELIVERABLE — NEW: NCAAB New Haven / Syracuse — Today 4:00 PM (tool display) — Total — Kalshi Over 133.5 YES -116.2 $1,000 vs Bet365 Alt Total Under 133.5 +135 $792 — $68.30, 3.81% — Arb Risk flag shown. New to both this state and main arbitrage-state.json.</p>
+<p>  - DELIVERABLE — NEW: NCAAB St. Peter&#x27;s / Seton Hall — Today 4:30 PM (tool display) — Alt Total — Kalshi Over 132.5 YES -131.1 $1,000 vs Bet365 Alt Total Under 132.5 +150 $705 — $57.37, 3.36% — Arb Risk flag shown. New to both states. Reappeared identically in Smaller Bets pass, not repeated.</p>
+<p>  - Excluded in Full pass: 32 pairs above 3.00% whose only prediction-market leg was Polymarket Intl. (Intl never counts); pairs with only DraftKings Predictions, Novig, or ProphetX legs also excluded; no Polymarket US pair above 3.00% found in Full pass.</p>
+<ul>
+<li>Smaller Bets pass (Liquidity Mode control existed, switched to Smaller Bets, then verified restored to &quot;Full Bet Size Only&quot; — tool left as found, Primary Bet still $1,000; a first Smaller Bets attempt failed to load and a reload reset filters, which were re-applied before the completed pass): qualifying rows for delivery: 0. Banked only, NOT delivered, stakes exactly as displayed:</li>
+</ul>
+<p>  - NCAAB Winthrop / Queens NC — Today 6:00 AM (tool display) — Moneyline — BroThrow Queens NC -118 $1,003 vs Kalshi Winthrop YES +136 $785.01 — $64.99, 3.63% — Arb Risk + Poly/Kalshi Prop flags. NOT delivered: BroThrow is a free peer-to-peer platform, not an NJ-licensed sportsbook or ProphetX, so the other leg is not placeable under this scan&#x27;s rules.</p>
+<p>  - NCAAB Winthrop / Queens NC — Today 6:00 AM (tool display) — Moneyline, SMALLER BETS — BroThrow Queens NC -118 $619.50 vs Kalshi Queens NC NO +137.7 $481.49 — $43.51, 3.95% — no flag shown. NOT delivered for the same BroThrow reason; distinct from the full-size Winthrop YES pair.</p>
+<p>  - NBA SAC / DAL — Today 5:15 PM — Assists K. Irving Over 5.5, SMALLER BETS — Kalshi NO -135.1 $188 vs Polymarket Intl. YES +210.9 $108.94 — $30.21, 10.18% — Poly/Kalshi Prop flag, no Arb Risk shown. NOT delivered (Polymarket Intl. never counts, other leg not placeable); updated banked entry (was 7.16%).</p>
+<p>  - NBA SAC / DAL — Today 5:15 PM — Rebounds K. Irving Over 3.5, SMALLER BETS — Kalshi NO -130.8 $234 vs Polymarket Intl. YES +189.5 $147.43 — $31.47, 8.25% — Poly/Kalshi Prop flag, no Arb Risk shown. NOT delivered for the same reason; updated banked entry (was 6.63%).</p>
+<ul>
+<li>Sign-in/tool: no failure; signed in, NJ view; no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; no bet placed. The Profit filter ($30) was left on, as set; Liquidity Mode restored to Full Bet Size Only.</li>
+<li>State: 4 new keys banked (2 deliverables + 2 Winthrop bank-only), 2 banked-only SAC/DAL rows updated — 43 entries total, up from 39. No entries pruned (no banked event start had passed at read time; oldest last_seen 2026-10-31, within 48h). Backup: kalshi-poly-arb-state.json.bak-1102-0544PST. No other last_seen dates advanced — browser report covered qualifying rows only.</li>
+<li>Dedupe vs main arbitrage-state.json: checked by grep — no New Haven 133.5, St. Peter&#x27;s/Seton Hall, or Winthrop entry in either state before this run.</li>
+<li>Snapshot caveat: prices are a ~5:45–5:56 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
