@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-02.md · page built 2026-11-02 20:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-02.md · page built 2026-11-02 21:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-11-02 00:54 ET run — 1 first-sighting baseline, 0 steam events, 0 new flags (silent, alert-only)</h3>
 <ul>
@@ -215,6 +215,27 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. Open flags confirmed STILL PRESENT on the board via per-book lines, last_seen refreshed, NOT re-delivered: Alabama @ LSU, LSU -3.5 at Hard Rock (vs median -5.5; other books -5.5 except FanDuel -4.5); Miami (FL) @ Notre Dame, Over 50.5 at Hard Rock (vs median total 57.5; other books 57.5 except FanDuel 56.5). Other open flags carried, NOT re-delivered: Titans @ Bengals (Bengals -12 Hard Rock, -12.5 FanDuel, Nov 1 game, kicked off, closure unverified) + SMU @ Syracuse (Syracuse +9.5 Fanatics) + UConn @ Air Force (Air Force -1.5 FanDuel) — both Oct 31 games kicked off, closure unverified.</li>
 <li>State updated (backup steam-side-state.json.bak.1102-1454; medians-for-browser file regenerated for the 79 seen games): 79 seen medians refreshed, 9 sub-threshold updates; medians still 138; flags still 14 total (6 open, 8 closed).</li>
 <li>DELIVERABLE: none (alert-only; no steam event, no new flag). No message sent.</li>
+</ul>
+<h3>2026-11-02 15:54 ET run — 0 first sightings, 2 steam events, 2 new flags (DELIVERED as result intent; see final message)</h3>
+<ul>
+<li>Browser task browser-task:4108d016-b411-5159-9ce7-38acbf4dffb8 (READ-ONLY, no sign-in, board view only; harness-measured 12:55-1:01 PM PST Nov 2; board snapshot ~12:56-12:59 PM PST / 3:56-3:59 PM ET): ScoresAndOdds public NFL boards (current week + Week 9 via ?week=2026-reg-9, Week 8 for today&#x27;s Bears game) + NCAAF board, location filter New Jersey (reapplied after navigation resets). Per-book odds publicly readable, no gate. No Kalshi column appeared, so Kalshi was not counted in any median.</li>
+<li>Games read: 79 not-started, matching the stored list exactly — 16 NFL (1 Nov 2 + 15 Nov 5-9) + 63 FBS (Nov 3: 2, Nov 4: 3, Nov 5: 2, Nov 6: 5, Nov 7: 51). No first sightings, no stored not-started game missing, no board game with no line posted. Partial blanks: Hard Rock blank for most FBS games; Merrimack @ Wake Forest posted by only 3 books; Rutgers @ Wisconsin no bet365 line; Michigan State @ Michigan no DraftKings/Hard Rock line.</li>
+<li>Steam events: 2 (vs 14:54 ET stored medians):</li>
+</ul>
+<p>  1. FBS TCU @ Arizona | 2026-11-06, spread -9.5 -&gt; -8.5 toward underdog TCU (total unchanged 43.5). Note: the browser report&#x27;s steam header dated this game 2026-11-07, but its board time is 11/6 7:15 PM and the stored key is 2026-11-06; Nov 6 used.</p>
+<p>  2. FBS Arkansas @ Auburn | 2026-11-07, total 50.5 -&gt; 52.5 UP (spread unchanged -10.5).</p>
+<ul>
+<li>STALE-BOOK CHECK (strict pre-move-or-better rule, per-book lines supplied for both steam games): 2 stale books, both on TCU @ Arizona, both exactly at the pre-move underdog number:</li>
+</ul>
+<p>  1. FBS TCU @ Arizona | 2026-11-06 | bet365 | spread — TCU +9.5 at bet365; market steamed -9.5 to -8.5 toward TCU (distance 1.0). Arizona -9.5 at bet365 and Caesars; -8.5 at BetMGM, DraftKings, FanDuel, Fanatics; Hard Rock no line.</p>
+<p>  2. FBS TCU @ Arizona | 2026-11-06 | Caesars | spread — TCU +9.5 at Caesars; same steam (distance 1.0).</p>
+<ul>
+<li>NO FLAG from Arkansas @ Auburn total steam UP: every posting book deals 52.5, none at the pre-move 50.5 or lower for Over bettors.</li>
+<li>Sub-threshold median updates recorded (NOT steam events): Jets @ Chiefs spread -10 -&gt; -9.5; Ohio @ Akron total 51.25 -&gt; 51; New Mexico @ Nevada spread -10 -&gt; -9.5; Texas @ Missouri total 44.0 -&gt; 43.5; Tulsa @ Tulane total 49.75 -&gt; 49.5; Old Dominion @ Coastal Carolina total 44.5 -&gt; 43.75; Oklahoma State @ Kansas State total 62.25 -&gt; 61.75; Georgia State @ Appalachian State spread -5.5 -&gt; -5; Oregon @ Ohio State total 47.5 -&gt; 46.5; Temple @ Navy total 53.5 -&gt; 54.75; Rutgers @ Wisconsin total 45.5 -&gt; 46; Iowa @ Northwestern total 44.5 -&gt; 45.5; Liberty @ New Mexico State spread -17 -&gt; -16.75, total 46.75 -&gt; 46.5; West Virginia @ Texas Tech spread -17 -&gt; -16.5, total 63.5 -&gt; 64.5; Wyoming @ UNLV spread -6.25 -&gt; -6. Near-misses below threshold: Temple @ Navy total +1.25, Oregon @ Ohio State total -1.0, Iowa @ Northwestern total +1.0, West Virginia @ Texas Tech total +1.0.</li>
+<li>Bears @ Seahawks (Mon Nov 2, 8:15 PM ET): median UNCHANGED, Seahawks -3.5 / total 46.5. No steam event.</li>
+<li>Flags delivered: 2 NEW (above, tied at distance 1.0). Flags closed: 0. Open flags confirmed STILL PRESENT on the board via per-book lines, last_seen refreshed, NOT re-delivered: Alabama @ LSU, LSU -3.5 at Hard Rock (vs median -5.5; FanDuel -4.5, rest -5.5); Miami (FL) @ Notre Dame, Over 50.5 at Hard Rock (vs median total 57.5; FanDuel 56.5, rest 57.5). Other open flags carried, NOT re-delivered: Titans @ Bengals (Bengals -12 Hard Rock, -12.5 FanDuel, Nov 1 game, kicked off, closure unverified) + SMU @ Syracuse (Syracuse +9.5 Fanatics) + UConn @ Air Force (Air Force -1.5 FanDuel) — both Oct 31 games kicked off, closure unverified.</li>
+<li>State updated (backup steam-side-state.json.bak.1102-1554; compare script steam-side-compare-20261102-1554.py; medians-for-browser file regenerated for the 79 seen games): 79 seen medians refreshed, 2 steam + 15 sub-threshold updates, 2 new flags added; medians still 138; flags now 16 total (8 open, 8 closed).</li>
+<li>DELIVERABLE: 2 new flags (see final message for the one-tap blocks + footer; per execution-phase rules the message itself is handed to the main agent for delivery, not sent from this run).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
