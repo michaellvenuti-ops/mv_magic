@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 17:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 18:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-02</h2>
 <h3>00:44 EST run (read 00:44–00:49 EST, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
@@ -232,6 +232,25 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State: 5 new keys banked (2 deliverables + 1 size variant + 2 Atlanta bank-only), 2 existing entries updated (SAC/DAL bank-only) — 74 entries total, up from 69. Backup: kalshi-poly-arb-state.json.bak-1102-0844PST. No entries pruned (no banked event start had passed at read time; oldest last_seen 2026-10-31, kept on prior runs&#x27; date granularity).</li>
 <li>Dedupe vs main arbitrage-state.json: checked by grep — no American 149.5 Kalshi or Polymarket US entry in either state before this run (main-state American/Cincinnati 149.5 pairs use Fanatics/DraftKings as the Under leg, not Kalshi/Polymarket US).</li>
 <li>Snapshot caveat: prices are a ~8:45-8:49 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>09:44 PST run (read 9:45–9:49 AM PST Nov 2 / 12:45–12:49 PM EST Nov 2, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
+<p><b>Deliverables: 2 — both full-size NEW (see delivery block in run result).</b></p>
+<ul>
+<li>Main pass (Full Bet Size Only, Profit filter dollar-denominated — Min Profit $30 = 3% of $1,000 primary, strict &gt;3.00% cut applied manually; filtered set 208 rows, page 1 ran down to just above 3%, page 2 started at 2.98%): qualifying rows: 2.</li>
+</ul>
+<p>  - DELIVERABLE — NEW: NFL CHI Bears vs SEA Seahawks — Today 5:15 PM — Rush Yards, Z. Charbonnet, 34.5 — Bet365 Under 34.5 -116 $1,000 vs Kalshi Over 34.5 YES +139.8 $775.59 — $84.41, 4.75% — no Arb Risk flag shown. New to both this state and main arbitrage-state.json.</p>
+<p>  - DELIVERABLE — NEW: NCAA UNC Asheville game — Today 6:00 PM — Alt Total 152.5 — Polymarket US Under 152.5 -112.8 $1,000 vs Bet365 Over 152.5 +140 $761.00 — $65.40, 3.71% — no Arb Risk flag shown. New to both states (state holds a different UNC Asheville/Richmond Alt Total 163.5 Smaller Bets pair, not 152.5). Opponent not named in browser report; not invented.</p>
+<p>  - Excluded: Polymarket US vs Polymarket Intl. pairs (e.g. Wizards/Magic player-prop NO/YES pairs) and pairs whose only Polymarket leg was Polymarket Intl. — Intl. never counts. ProphetX/Novig/sportsbook-only pairs without a Kalshi/Polymarket US leg also excluded.</p>
+<ul>
+<li>Smaller Bets pass (Liquidity Mode control existed, switched to Smaller Bets, 255 rows filtered, scanned through the &gt;3.00% cutoff to 3.02% on page 2, then restored to Full Bet Size Only — confirmed): qualifying new rows: 1, banked only.</li>
+</ul>
+<p>  - Banked only, NOT delivered — size variant of the delivered full-size pair (not a separate deliverable): NFL CHI Bears vs SEA Seahawks — Today 5:15 PM — Rush Yards, Z. Charbonnet, 34.5 — Bet365 Under 34.5 -116 $981 vs Kalshi Over 34.5 YES +139.9 $761 — $82.99, 4.76% — no Arb Risk flag shown. Stakes exactly as displayed.</p>
+<p>  - Re-seen identically, NOT re-delivered: UNC Asheville Polymarket US Alt Total 152.5 pair ($1,000 / $761, $65.40, 3.71%). Other Smaller Bets Polymarket US rows were vs Polymarket Intl. and excluded.</p>
+<ul>
+<li>Sign-in/tool: no failure; signed in via saved profile, NJ view; no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; no bet placed. Liquidity Mode restored to Full Bet Size Only.</li>
+<li>State: 3 new keys banked (2 deliverables + 1 Smaller Bets size variant), 1 entry pruned (NFL DAL Cowboys / IND Colts Nov-08 Moneyline, last_seen 2026-10-31, not seen for 48+ hours) — 76 entries total, up from 74. Backup: kalshi-poly-arb-state.json.bak-1102-0944PST. No last_seen dates advanced for other entries — browser report covered qualifying rows only.</li>
+<li>Dedupe vs main arbitrage-state.json: checked — no Charbonnet 34.5 or UNC Asheville Alt Total 152.5 entry in either state before this run.</li>
+<li>Snapshot caveat: prices are a ~9:45–9:49 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
