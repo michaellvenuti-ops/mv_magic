@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Kalshi-Poly Arb Board</h1>
-<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 18:50 ET</div>
+<div class="sub">Latest scan list: kalshi-poly-arb-2026-11-02.md · page built 2026-11-02 19:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>2-0-0</b> · <b>$31.02</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Arbs graded at the stated profit scaled to a $100 primary (stated profit is per $1,000 primary, so $100-unit profit = stated / 10).</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | 15+ NO Polymarket US | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$20.68</td></tr><tr><td>NBA SAC Kings / NO Pelicans | Points J. Fears | Over 14.5 NO Kalshi | Over 14.5 Bet365</td><td><span class='badge win'>WIN</span></td><td>$10.34</td></tr></table></div><details><summary>Full scan log</summary><h2>Kalshi-Poly Arb — 2026-11-02</h2>
 <h3>00:44 EST run (read 00:44–00:49 EST, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
@@ -251,6 +251,28 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>State: 3 new keys banked (2 deliverables + 1 Smaller Bets size variant), 1 entry pruned (NFL DAL Cowboys / IND Colts Nov-08 Moneyline, last_seen 2026-10-31, not seen for 48+ hours) — 76 entries total, up from 74. Backup: kalshi-poly-arb-state.json.bak-1102-0944PST. No last_seen dates advanced for other entries — browser report covered qualifying rows only.</li>
 <li>Dedupe vs main arbitrage-state.json: checked — no Charbonnet 34.5 or UNC Asheville Alt Total 152.5 entry in either state before this run.</li>
 <li>Snapshot caveat: prices are a ~9:45–9:49 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
+</ul>
+<h3>10:44 PST run (read 10:44–10:50 AM PST Nov 2 / 1:44–1:50 PM EST Nov 2, DarkHorse Arbitrage Finder, NJ view, $1,000 primary)</h3>
+<p><b>Deliverables: 0 — no message sent (alert-only rule).</b></p>
+<ul>
+<li>Main pass (Full Bet Size Only, Profit filter dollar-denominated — Min Profit set to $30 = 3% of the $1,000 primary, strict displayed-profit cut over 3.00% applied manually; 98 rows scanned in profit-descending order down through 3.01%, next rows 2.98% and below): qualifying rows: 0.</li>
+</ul>
+<p>  - No Kalshi leg appeared in the table.</p>
+<p>  - Polymarket US appeared in only three &gt;3.00% rows, all dropped — other leg was Polymarket Intl., which never counts and is not placeable (no prices/stakes reported for these rows, none invented): ATL/IND, Player Rebounds A. Nesmith 4+ NO, 19.27%; ATL/IND, Player Rebounds A. Nesmith 2+ NO, 5.68%; ATL/IND, Player Rebounds A. Nesmith 4+ NO, 3.46%.</p>
+<p>  - All other &gt;3.00% rows had no Kalshi/Polymarket US leg (sportsbook-vs-sportsbook, ProphetX, Novig, or Polymarket Intl.-only pairings).</p>
+<p>  - No qualifying-row Arb Risk flags to report.</p>
+<ul>
+<li>Smaller Bets pass (Liquidity Mode control existed, switched to Smaller Bets, 129 results scanned in profit-descending order through 3.01%, then verified restored to &quot;Full Bet Size Only&quot; — tool left as found, Primary Bet $1,000): qualifying rows: 0, top-3 cap not reached.</li>
+</ul>
+<p>  - No Kalshi leg appeared.</p>
+<p>  - Polymarket US appeared in seven Smaller Bets rows, all dropped — every one hedged with Polymarket Intl., which never counts (no prices/stakes reported for these rows, none invented).</p>
+<p>  - All other &gt;3.00% rows had no Kalshi/Polymarket US leg.</p>
+<p>  - No stakes reported because none qualified; none scaled, rounded, or invented.</p>
+<ul>
+<li>Sign-in/tool: no failure; signed in, NJ view; no account/global settings changed; &quot;Include Player Props&quot; toggle untouched; no bet placed. Liquidity Mode restored to Full Bet Size Only (confirmed by browser report). Profit filter remains set at $30 as used for this pass.</li>
+<li>State: unchanged — 76 entries total. No new keys banked: the dropped Polymarket US vs Polymarket Intl. rows were reported without leg prices/stakes, so no entries were created from them rather than inventing values. No last_seen dates advanced — browser report covered qualifying rows only, and no prior entry re-appeared as a qualifying row. No entries pruned: no banked event start time had passed at read time (earliest stored today event is after 10:50 AM PST), and oldest last_seen is 2026-11-01, within 48h. Backup: kalshi-poly-arb-state.json.bak-1102-1044PST.</li>
+<li>Dedupe vs main arbitrage-state.json: no deliverable to dedupe; no pair from this run is delivered here.</li>
+<li>Snapshot caveat: prices are a ~10:44–10:50 AM PST Nov 2 snapshot — arbs die fast, re-check before placing; Kalshi/Polymarket legs can partially fill, so check liquidity/depth before sizing up.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
