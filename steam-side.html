@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-03.md · page built 2026-11-03 19:01 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-03.md · page built 2026-11-03 19:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-11-03 03:54 ET run — 0 first sightings, 0 steam events, 0 new flags, 0 flags closed (silent, alert-only)</h3>
 <ul>
@@ -147,6 +147,20 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>New flags delivered: NONE (alert-only rule -&gt; no message sent). Flags closed: NONE.</li>
 <li>Open flags still stale on this board, last_seen refreshed (not re-delivered): Alabama @ LSU Hard Rock spread LSU -3.5 (seven other books at -5.5, median -5.5); Miami (FL) @ Notre Dame Hard Rock total Over 50.5 (seven other books at 57.5, median 57.5). The other 4 open flags&#x27; games have kicked off and are no longer on the board, so their last_seen was left unchanged and none was re-delivered or closed: SMU @ Syracuse (Syracuse +9.5 Fanatics), UConn @ Air Force (Air Force -1.5 FanDuel), Titans @ Bengals (Bengals -12.5 FanDuel, -12 Hard Rock).</li>
 <li>State: steam-side-state.json updated (78 medians, backup steam-side-state.json.bak.1103-1254); flags still 17 total (6 open, 11 closed). Medians-for-browser file regenerated for the 78 seen games.</li>
+<li>DELIVERABLE: none — silent run per alert-only rule.</li>
+</ul>
+<h3>Run 2026-11-03 13:54 ET (board read ~10:55-10:59 AM PST Nov 3, 2026; browser task harness-measured 10:54-11:01 AM PST, plus Browns @ Saints per-book recheck ~11:02 AM PST)</h3>
+<ul>
+<li>Board: ScoresAndOdds public NFL + NCAAF boards, read-only, no sign-in, board view only, location New Jersey. 78 games not yet started (15 NFL Nov 5-9 + 63 FBS Nov 3-7), matching the stored not-started list exactly — no first sightings, no added board game, no board game without a line. Books: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. Hard Rock blank for most FBS games, as before (posted only Alabama @ LSU spread and Miami (FL) @ Notre Dame spread/total). Per-book odds publicly readable, no gate.</li>
+<li>Caveat: the granted baseline medians file was NOT readable by the browser&#x27;s tools this run (same limitation as the 11:54 ET run), so the browser reported medians for all 78 games plus per-book lines for the two flag games; steam detection was done by script comparison against state, and a follow-up browser recheck supplied the per-book lines for the one steam-event game.</li>
+<li>Steam events: 1, spread-only, NO stale flag.</li>
+</ul>
+<p>  - NFL Browns @ Saints (Nov 8) spread median -2.5 -&gt; -1.5 (1.0 point toward underdog Browns; total unchanged 43.5). Steam side = Browns. Per-book Saints lines (recheck ~11:02 AM PST): bet365 -1.5, BetMGM -1.5, DraftKings -1.5, Caesars -1.5, FanDuel -1.5, Hard Rock -2, Fanatics -2, Kalshi -1.5 — i.e. best Browns line +2, none at the pre-move +2.5 or better. NO stale-book flag. Median recomputed from those lines = -1.5, confirming the reported median.</p>
+<ul>
+<li>No total steam event (no median total moved &gt;= 1.5). Sub-threshold median updates recorded (NOT steam events, 9): NFL Jaguars @ Ravens total 41.75 -&gt; 40.5 (-1.25, largest total move, still below the bar); Packers @ Patriots spread -2.5 -&gt; -3.0; Cardinals @ Seahawks spread -11.0 -&gt; -10.75, total 42.0 -&gt; 42.25; FBS Toledo @ Sacramento State total 52.5 -&gt; 53.0; UTSA @ Florida Atlantic total 73.0 -&gt; 72.5; TCU @ Arizona spread -8.5 -&gt; -9.0; Texas @ Missouri total 43.0 -&gt; 42.5; Hawai&#x27;i @ UTEP total 48.5 -&gt; 49.5; West Virginia @ Texas Tech total 65.5 -&gt; 64.5. All other 68 games unchanged; no favorite flipped.</li>
+<li>New flags delivered: NONE (alert-only rule -&gt; no message sent). Flags closed: NONE.</li>
+<li>Open flags still stale on this board, last_seen refreshed (not re-delivered): Alabama @ LSU Hard Rock spread LSU -3.5 (seven other books at -5.5, median -5.5); Miami (FL) @ Notre Dame Hard Rock total Over 50.5 (seven other books at 57.5, median 57.5). The other 4 open flags&#x27; games have kicked off and are no longer on the board, so their last_seen was left unchanged and none was re-delivered or closed: SMU @ Syracuse (Syracuse +9.5 Fanatics), UConn @ Air Force (Air Force -1.5 FanDuel), Titans @ Bengals (Bengals -12.5 FanDuel, -12 Hard Rock).</li>
+<li>State: steam-side-state.json updated (78 medians, backup steam-side-state.json.bak.1103-1354); flags still 17 total (6 open, 11 closed). Medians-for-browser file regenerated for the 78 seen games. Comparison script: steam-side-compare-20261103-1354.py.</li>
 <li>DELIVERABLE: none — silent run per alert-only rule.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
