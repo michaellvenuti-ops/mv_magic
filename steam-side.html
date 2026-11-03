@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-03.md · page built 2026-11-03 22:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-03.md · page built 2026-11-03 23:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>2026-11-03 03:54 ET run — 0 first sightings, 0 steam events, 0 new flags, 0 flags closed (silent, alert-only)</h3>
 <ul>
@@ -195,6 +195,15 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Flags delivered: 0. Flags closed: 0. Caveat: per-book lines for Nov 7 games were NOT re-reported this run (browser report gave full per-book detail for Nov 3 games only), so the two live open flags (Alabama @ LSU Hard Rock spread LSU -3.5; Miami (FL) @ Notre Dame Hard Rock total Over 50.5) are carried forward open with their 15:54 ET last_seen, NOT re-verified this run. Older open flags on already-played games (Oct 31 / Nov 1) likewise carried unchanged.</li>
 <li>Kickoff-time discrepancy noted, not changed in state: browser converted board PT times to ET (Ohio @ Akron 7:00 PM ET, Buffalo @ Miami (OH) 8:00 PM ET) vs stored 8:00 PM / 9:00 PM ET. Stored kickoffs left untouched pending verification.</li>
 <li>State updated: medians + last_seen for all 78 games seen (backup steam-side-state.json.bak.1103-1659). Per alert-only rule, no message sent.</li>
+</ul>
+<h3>Run 17:59 ET (scheduled 14:54 PST / 17:54 ET)</h3>
+<ul>
+<li>Board read: ScoresAndOdds public BOARD view, no sign-in, ~2:55-2:59 PM PST (5:55-5:59 PM ET) Nov 3, 2026; browser task harness-measured 2:54-3:00 PM PST. 78 not-yet-started games listed: 63 NCAAF + 15 NFL, matching the stored list exactly — no first sightings, no stored game missing, no added board game, no board game without a line. Books: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics, Kalshi. Baseline file was not readable by the browser (grant upload-only), so comparison was done by script against state, per the fallback.</li>
+<li>Steam events: NONE. No median spread moved &gt;= 1.0 point and no median total moved &gt;= 1.5 points vs the 16:59 ET stored medians.</li>
+<li>Sub-threshold median updates recorded (NOT steam events, 5): NFL Jaguars @ Ravens spread -10.0 -&gt; -9.75; FBS Florida State @ Boston College total 50.5 -&gt; 51.0; FBS Merrimack @ Wake Forest spread -47.75 -&gt; -47.5; FBS Colorado @ Arizona State spread -3.0 -&gt; -3.5; FBS Air Force @ Army total 45.5 -&gt; 45.0. All other 73 games unchanged; no favorite flipped.</li>
+<li>Flags delivered: 0. Flags closed: 0. Per-book re-check confirmed the two live open flags still stale (not re-delivered): Alabama @ LSU Hard Rock Alabama +3.5 (LSU -3.5) vs median LSU -5.5, seven other books at +5.5; Miami (FL) @ Notre Dame Hard Rock total 50.5 vs median 57.5, seven other books at 57.5. Both flags&#x27; last_seen refreshed to this run. The other 4 open flags&#x27; games have kicked off and are no longer on the board, so their last_seen was left unchanged: SMU @ Syracuse (Syracuse +9.5 Fanatics), UConn @ Air Force (Air Force -1.5 FanDuel), Titans @ Bengals (Bengals -12.5 FanDuel, -12 Hard Rock).</li>
+<li>State updated: medians + last_seen for all 78 games seen (backup steam-side-state.json.bak.1103-1759); flags still 17 total (6 open, 11 closed). Comparison script: steam-side-compare-20261103-1754.py. Medians-for-browser file regenerated for the 78 seen games.</li>
+<li>DELIVERABLE: none — silent run per alert-only rule.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
