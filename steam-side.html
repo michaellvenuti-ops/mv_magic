@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Steam-Side Stale Books</h1>
-<div class="sub">Latest scan list: steam-side-2026-11-04.md · page built 2026-11-04 11:50 ET</div>
+<div class="sub">Latest scan list: steam-side-2026-11-04.md · page built 2026-11-04 12:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h3>Run 2026-11-04 00:54 ET (scheduled 21:54 PST Nov 3; board read ~12:54-12:58 AM ET Nov 4, 2026; NFL spread recheck 12:59 AM ET Nov 4, 2026; browser task harness-measured 9:54-9:57 PM PST + 9:59-10:00 PM PST)</h3>
 <ul>
@@ -85,6 +85,17 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>New flags delivered: NONE (alert-only rule -&gt; no message sent). Flags closed: NONE.</li>
 <li>Open flags per-book re-verified and carried (already delivered, NOT re-delivered): Alabama @ LSU Hard Rock spread LSU -3.5 (six other books at -5.5, median -5.5; Hard Rock total blank); Miami (FL) @ Notre Dame Hard Rock total Over 50.5 (six other books at 57.5, median 57.5; Hard Rock spread -6.5 also still outlying). Their last_seen refreshed to this run. The other 4 open flags&#x27; games have kicked off and are no longer on the board, so their last_seen was left unchanged: SMU @ Syracuse (Syracuse +9.5 Fanatics), UConn @ Air Force (Air Force -1.5 FanDuel), Titans @ Bengals (Bengals -12.5 FanDuel, -12 Hard Rock).</li>
 <li>State: steam-side-state.json updated (76 medians refreshed, backup steam-side-state.json.bak.1104-0554); flags still 17 total (6 open, 11 closed). Medians-for-browser file regenerated for the 76 seen games.</li>
+<li>DELIVERABLE: none — silent run per alert-only rule.</li>
+</ul>
+<h3>Run 2026-11-04 06:54 ET (scheduled 03:54 PST Nov 4; board read ~3:55-3:58 AM PST Nov 4, 2026; browser task harness-measured 3:54-3:58 AM PST)</h3>
+<ul>
+<li>Board: ScoresAndOdds public NFL + NCAAF boards, board view only, no sign-in. 76 not-started games read (15 NFL Nov 5-9 + 61 NCAAF Nov 4-7), matching the stored not-started list exactly — no first sightings, no stored game missing, no added board game. Books: bet365, BetMGM, DraftKings, Caesars, FanDuel, Hard Rock, Fanatics (Kalshi excluded from all medians). The 2 Nov 3 FBS games (Ohio @ Akron, Buffalo @ Miami (OH)) were excluded as finished; their stored pregame medians were NOT updated. Per-book odds publicly readable, no gate.</li>
+<li>STEAM EVENTS: NONE. No median spread moved &gt;= 1.0 point and no median total moved &gt;= 1.5 points vs the 05:54 ET Nov 4 stored medians.</li>
+<li>Sub-threshold median updates recorded (NOT steam events, 3): Merrimack @ Wake Forest total 59.5 -&gt; 60.5 (+1.0); Toledo @ Sacramento State total 53.5 -&gt; 53.25 (-0.25); UTSA @ Florida Atlantic total 72.5 -&gt; 72.75 (+0.25). All other 73 games match stored medians exactly on both spread and total; no favorite flipped.</li>
+<li>New flags delivered: NONE (alert-only rule -&gt; no message sent). Flags closed: NONE.</li>
+<li>Caveat vs prior runs: this run&#x27;s browser report contained NO per-book lines (none required, since no game met the move threshold), so the two still-open Nov 7 flags could NOT be per-book re-verified this run, unlike the 03:54/04:54/05:54 ET runs. They are carried forward UNCHANGED with last_seen untouched: Alabama @ LSU (Nov 7) Hard Rock spread LSU -3.5 vs median -5.5; Miami (FL) @ Notre Dame (Nov 7) Hard Rock total Over 50.5 vs median 57.5. Both already delivered in prior runs, so not re-delivered. The other 4 open flags&#x27; games have kicked off and are no longer on the board: SMU @ Syracuse (Syracuse +9.5 Fanatics), UConn @ Air Force (Air Force -1.5 FanDuel), Titans @ Bengals (Bengals -12.5 FanDuel, -12 Hard Rock).</li>
+<li>Kickoff note: browser reported kickoffs converted from board PT to ET; several differ from stored ET kickoffs (e.g., Georgia @ Ole Miss stored 8:30 PM ET vs browser 4:30 PM ET). Stored kickoffs left unchanged, as in prior runs.</li>
+<li>State: steam-side-state.json updated (76 medians&#x27; last_seen refreshed to 06:54 ET; 3 sub-threshold totals above; flags still 17 total, 6 open, 11 closed). Note: no pre-run .bak was taken this run (prior runs&#x27; convention missed); the pre-run state is the 05:54 ET state in steam-side-state.json.bak.1104-0554 plus the 3 total changes reversed. Medians-for-browser file regenerated for the 76 seen games.</li>
 <li>DELIVERABLE: none — silent run per alert-only rule.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
