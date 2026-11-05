@@ -668,3 +668,6 @@
 [2026-11-05 10:56:48 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 24288 snapshots / 183 events, feeds ok 6 fail 0
 [2026-11-05 10:57:49 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 10:59:50 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 11:02:58 ET] sync_to_github.py: FAILED (exit 1) in 188s —   FAILED: pc-data/totals-2026-11-05.md (HTTP 502: {'error': '{\n  "message": "Server Error"\n}\n'})
+[2026-11-05 11:03:29 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 11:03:31 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 24472 snapshots / 183 events, feeds ok 6 fail 0
