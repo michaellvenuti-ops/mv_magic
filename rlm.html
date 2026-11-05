@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Reverse Line Movement Board</h1>
-<div class="sub">Latest scan list: rlm-2026-11-05.md · page built 2026-11-05 15:50 ET</div>
+<div class="sub">Latest scan list: rlm-2026-11-05.md · page built 2026-11-05 16:50 ET</div>
 
 <div class='card'><h2>Performance ($100 unit)</h2><p><b>1-1-0</b> · <b>$-9.09</b> · 2 graded items · last graded 2026-10-29</p><p class='sub'>Minority side graded as a single pick at $100 flat at an ASSUMED -110 (flags carry no recorded price); record is the primary grade.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Colorado at Oklahoma State | total | Over (minority)</td><td><span class='badge win'>WIN</span></td><td>$90.91</td></tr><tr><td>Florida Atlantic vs North Texas | spread</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>RLM scan — 2026-11-05</h2>
 <h3>00:23 ET run (board read ~00:24-00:27 ET Nov 5) — NO DELIVERABLES, nothing sent</h3>
@@ -176,6 +176,20 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>Caveat: the browser report framed three totals as &quot;open -&gt; current&quot; moves (NFL 49.5 -&gt; 39.5, UTSA 65.5 -&gt; 72.5, JMU 55.5 -&gt; 57.5). Those open figures are NOT the scan&#x27;s baselines — first-sighting baselines were 39.5, 73 (panel-verified 72.5 at 07:23), and 57.5 — so none counts as a move; all three totals are unchanged vs stored. Not used for flagging.</li>
 <li>No market met both RLM thresholds, so no news check was triggered.</li>
 <li>Flags delivered: none (alert-only run ends silently). State updated in rlm-state.json (6 Nov 5 keys, 236 total; backup rlm-state.json.bak.1105-1023).</li>
+</ul>
+<h3>11:23 ET run (board read ~11:24-11:29 ET Nov 5) — NO DELIVERABLES, nothing sent</h3>
+<ul>
+<li>Source: ScoresAndOdds public board + matchup panels, read-only, no sign-in, no bet. Splits readable on ScoresAndOdds; Covers/VegasInsider not needed, no source gate.</li>
+<li>Games checked: the full Nov 5 slate, 3 games, all NOT STARTED. No other Nov 5 NFL or FBS game on the boards — next NFL games Nov 8 (Bengals–Falcons 9:30 AM ET first), next NCAAF games Nov 6 (Virginia Tech at SMU, 7:00 PM ET). Board times matched the ET kickoffs given.</li>
+<li>Read vs 10:27 stored baselines:</li>
+</ul>
+<p>  - Jacksonville Jaguars at Baltimore Ravens (8:15 PM ET): spread panel median VERIFIED -10 (3x -9.5, 4x -10; board 3x -9.5, 5x -10) — the 10:24 board read of -9.5 no longer holds; stored -10 CONFIRMED. Jaguars 69% unchanged (still BELOW 70%, off watch; flag level -9 or shorter NOT met). Total 39.5 unchanged (panel 39.5x7), Over 80% -&gt; 79% (minority still Under, flag level 38.0 or below NOT met). No flag.</p>
+<p>  - UTSA at Florida Atlantic (7:30 PM ET): spread panel -7 matches stored (3x -6.5, 3x -7, 1x -7.5); board median -6.5 differs on Caesars (board -6.5 vs panel -7). UTSA 48% / Florida Atlantic 52% unchanged (both &lt;70%). Total 72.5 unchanged (panel 72.5x7), Under 78% unchanged (minority Over, flag level 74.0+ NOT met). No flag.</p>
+<p>  - James Madison at Southern Miss (8:00 PM ET): spread panel median VERIFIED -13.5 (5x -13.5, 2x -13; board -13.5x7) vs stored -14.5 — +1.0 toward minority Southern Miss, SIZE MET, but JMU tickets 63% unchanged, still &lt;70%, so condition (a) fails. Stored baseline UPDATED to -13.5; new flag level -12.5 or shorter with JMU &gt;=70%. Total panel median now 58 (57.5x3, 58x2, 58.5x2) vs stored 57.5 (+0.5 toward minority Over, BELOW 1.5); stored baseline UPDATED to 58 (panel-verified), new flag level 59.5+. Under 88% unchanged. No flag.</p>
+<ul>
+<li>New &gt;=70% markets on the Nov 5 slate: none. The three &gt;=70% sides are all among the six markets above (JAX total Over 79%, UTSA/FAU total Under 78%, JMU total Under 88%); closest other is Jaguars spread 69%.</li>
+<li>No market met both RLM thresholds, so no news check was triggered.</li>
+<li>Flags delivered: none (alert-only run ends silently). State updated in rlm-state.json (6 Nov 5 keys, 236 total; backup rlm-state.json.bak.1105-1123).</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
