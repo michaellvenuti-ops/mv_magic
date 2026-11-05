@@ -587,3 +587,9 @@
 [2026-11-05 09:28:37 ET] dh_sog_middles.py: OK in 15s — DarkHorse check unavailable (signed out) — sog-middles skipped, no prices invented.
 [2026-11-05 09:28:51 ET] dh_team_total_middles.py: FAILED (exit 1) in 13s —   - [pid=15720] <gracefully close end>
 [2026-11-05 09:29:09 ET] futures_pairs.py: FAILED (exit 2) in 18s — futures-pairs: no futures-board JSON in data/ — run futures_board.py first.
+[2026-11-05 09:30:29 ET] sync_to_github.py: FAILED (exit 1) in 80s — AssertionError: refusing non-pc-data path: hung-number-board.html
+[2026-11-05 09:31:32 ET] upset_watch.py: OK in 32s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 09:33:11 ET] hung_number.py: OK in 99s — HUNG NUMBER: UCLA vs Minnesota — FanDuel spread value dog (-4.5 vs median -5.5)
+[2026-11-05 09:33:24 ET] rlm.py: OK in 13s
+[2026-11-05 09:33:27 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 09:33:30 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
