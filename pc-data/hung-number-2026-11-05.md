@@ -1,0 +1,240 @@
+# Hung numbers — 2026-11-05 (scan 2026-11-05 09:19)
+
+- 11/5 8:15PM vs Ravens | bet365 | spread | value: dog | book 311.0 vs median -10.0 | div 321.0 middle pairing spans key number 7
+- 11/5 8:15PM vs Ravens | bet365 | total | value: Over | book 311.0 vs median 39.5 | div 271.5 
+- 11/8 9:30AM vs Falcons | bet365 | spread | value: dog | book 451.0 vs median -3.0 | div 454.0 middle pairing spans key number 7
+- 11/8 9:30AM vs Falcons | bet365 | total | value: Over | book 451.0 vs median 52.5 | div 398.5 
+- 11/8 1:00PM vs Saints | bet365 | spread | value: dog | book 453.0 vs median 3.0 | div 450.0 middle pairing spans key number 7
+- 11/8 1:00PM vs Saints | bet365 | total | value: Over | book 453.0 vs median 42.5 | div 410.5 
+- 11/8 1:00PM vs Dolphins | bet365 | spread | value: dog | book 455.0 vs median -7.0 | div 462.0 middle pairing spans key number 7
+- 11/8 1:00PM vs Dolphins | bet365 | total | value: Over | book 455.0 vs median 50.5 | div 404.5 
+- 11/8 1:00PM vs Commanders | bet365 | spread | value: dog | book 457.0 vs median -4.5 | div 461.5 middle pairing spans key number 7
+- 11/8 1:00PM vs Commanders | bet365 | total | value: Over | book 457.0 vs median 48.0 | div 409.0 
+- 11/8 1:00PM vs Colts | bet365 | spread | value: dog | book 459.0 vs median -5.5 | div 464.5 middle pairing spans key number 7
+- 11/8 1:00PM vs Colts | bet365 | total | value: Over | book 459.0 vs median 51.5 | div 407.5 
+- 11/8 1:00PM vs Eagles | bet365 | spread | value: dog | book 461.0 vs median -3.0 | div 464.0 middle pairing spans key number 7
+- 11/8 1:00PM vs Eagles | bet365 | total | value: Over | book 461.0 vs median 38.5 | div 422.5 
+- 11/8 1:00PM vs Chiefs | bet365 | spread | value: dog | book 463.0 vs median 10.0 | div 453.0 
+- 11/8 1:00PM vs Chiefs | bet365 | total | value: Over | book 463.0 vs median 47.5 | div 415.5 
+- 11/8 1:00PM vs Panthers | bet365 | spread | value: dog | book 465.0 vs median -2.5 | div 467.5 middle pairing spans key number 7
+- 11/8 1:00PM vs Panthers | bet365 | total | value: Over | book 465.0 vs median 44.0 | div 421.0 
+- 11/8 4:05PM vs Chargers | bet365 | spread | value: dog | book 469.0 vs median -4.5 | div 473.5 middle pairing spans key number 7
+- 11/8 4:05PM vs Chargers | bet365 | total | value: Over | book 469.0 vs median 40.5 | div 428.5 
+- 11/8 4:25PM vs 49ers | bet365 | spread | value: dog | book 467.0 vs median 10.0 | div 457.0 
+- 11/8 4:25PM vs 49ers | bet365 | total | value: Over | book 467.0 vs median 52.5 | div 414.5 
+- 11/8 4:25PM vs Patriots | bet365 | spread | value: dog | book 471.0 vs median 3.5 | div 467.5 middle pairing spans key number 7
+- 11/8 4:25PM vs Patriots | bet365 | total | value: Over | book 471.0 vs median 46.0 | div 425.0 
+- 11/8 4:25PM vs Seahawks | bet365 | spread | value: dog | book 473.0 vs median 8.5 | div 464.5 
+- 11/8 4:25PM vs Seahawks | bet365 | total | value: Over | book 473.0 vs median 39.5 | div 433.5 
+- 11/8 8:20PM vs Bears | bet365 | spread | value: dog | book 475.0 vs median 6.5 | div 468.5 middle pairing spans key number 7
+- 11/8 8:20PM vs Bears | bet365 | total | value: Over | book 475.0 vs median 47.5 | div 427.5 
+- 11/9 8:15PM vs Vikings | bet365 | spread | value: dog | book 477.0 vs median -3.5 | div 480.5 middle pairing spans key number 7
+- 11/9 8:15PM vs Vikings | bet365 | total | value: Over | book 477.0 vs median 45.5 | div 431.5 
+- 11/5 7:30PM vs Florida Atlantic | bet365 | spread | value: dog | book 313.0 vs median -6.5 | div 319.5 middle pairing spans key number 7
+- 11/5 7:30PM vs Florida Atlantic | Fanatics | spread | value: dog | book 7.0 vs median -6.5 | div 13.5 middle pairing spans key number 3
+- 11/5 7:30PM vs Florida Atlantic | bet365 | total | value: Over | book 313.0 vs median 72.5 | div 240.5 
+- 11/5 8:00PM vs Southern Miss | bet365 | spread | value: dog | book 315.0 vs median -14.0 | div 329.0 middle pairing spans key number 7
+- 11/5 8:00PM vs Southern Miss | Fanatics | spread | value: dog | book 14.0 vs median -14.0 | div 28.0 middle pairing spans key number 7
+- 11/5 8:00PM vs Southern Miss | bet365 | total | value: Over | book 315.0 vs median 57.5 | div 257.5 
+- 11/6 7:00PM vs SMU | bet365 | spread | value: dog | book 317.0 vs median 6.5 | div 310.5 middle pairing spans key number 7
+- 11/6 7:00PM vs SMU | Hard Rock | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- 11/6 7:00PM vs SMU | Fanatics | spread | value: favorite | book -6.0 vs median 6.5 | div 12.5 middle pairing spans key number 3
+- 11/6 7:00PM vs SMU | bet365 | total | value: Over | book 317.0 vs median 56.5 | div 260.5 
+- 11/6 7:30PM vs East Carolina | bet365 | spread | value: dog | book 319.0 vs median 2.5 | div 316.5 middle pairing spans key number 7
+- 11/6 7:30PM vs East Carolina | Fanatics | spread | value: favorite | book -2.5 vs median 2.5 | div 5.0 
+- 11/6 7:30PM vs East Carolina | bet365 | total | value: Over | book 319.0 vs median 39.5 | div 279.5 
+- 11/6 8:00PM vs Illinois | bet365 | spread | value: dog | book 321.0 vs median -4.5 | div 325.5 middle pairing spans key number 7
+- 11/6 8:00PM vs Illinois | Fanatics | spread | value: dog | book 4.5 vs median -4.5 | div 9.0 middle pairing spans key number 3
+- 11/6 8:00PM vs Illinois | bet365 | total | value: Over | book 321.0 vs median 50.5 | div 270.5 
+- 11/6 9:00PM vs Nevada | bet365 | spread | value: dog | book 323.0 vs median -9.5 | div 332.5 middle pairing spans key number 7
+- 11/6 9:00PM vs Nevada | Fanatics | spread | value: dog | book 10.0 vs median -9.5 | div 19.5 middle pairing spans key number 7
+- 11/6 9:00PM vs Nevada | bet365 | total | value: Over | book 323.0 vs median 37.5 | div 285.5 
+- 11/6 10:15PM vs Arizona | bet365 | spread | value: dog | book 325.0 vs median 7.5 | div 317.5 
+- 11/6 10:15PM vs Arizona | Fanatics | spread | value: favorite | book -7.5 vs median 7.5 | div 15.0 middle pairing spans key number 7
+- 11/6 10:15PM vs Arizona | bet365 | total | value: Over | book 325.0 vs median 45.5 | div 279.5 
+- 11/7 12:00PM vs UConn | bet365 | spread | value: dog | book 329.0 vs median -6.5 | div 335.5 middle pairing spans key number 7
+- 11/7 12:00PM vs UConn | Fanatics | spread | value: dog | book 7.0 vs median -6.5 | div 13.5 middle pairing spans key number 3
+- 11/7 12:00PM vs UConn | bet365 | total | value: Over | book 329.0 vs median 54.5 | div 274.5 
+- 11/7 12:00PM vs Boston College | bet365 | spread | value: dog | book 331.0 vs median -6.5 | div 337.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Boston College | Fanatics | spread | value: dog | book 6.5 vs median -6.5 | div 13.0 middle pairing spans key number 3
+- 11/7 12:00PM vs Boston College | bet365 | total | value: Over | book 331.0 vs median 52.0 | div 279.0 
+- 11/7 12:00PM vs Minnesota | bet365 | spread | value: dog | book 335.0 vs median -5.5 | div 340.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Minnesota | Fanatics | spread | value: dog | book 5.5 vs median -5.5 | div 11.0 middle pairing spans key number 3
+- 11/7 12:00PM vs Minnesota | bet365 | total | value: Over | book 335.0 vs median 39.5 | div 295.5 
+- 11/7 12:00PM vs Missouri | bet365 | spread | value: dog | book 343.0 vs median -2.5 | div 345.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Missouri | Fanatics | spread | value: dog | book 2.5 vs median -2.5 | div 5.0 
+- 11/7 12:00PM vs Missouri | bet365 | total | value: Over | book 343.0 vs median 42.5 | div 300.5 
+- 11/7 12:00PM vs Syracuse | bet365 | spread | value: dog | book 347.0 vs median -2.5 | div 349.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Syracuse | Fanatics | spread | value: dog | book 2.5 vs median -2.5 | div 5.0 
+- 11/7 12:00PM vs Syracuse | bet365 | total | value: Over | book 347.0 vs median 49.5 | div 297.5 
+- 11/7 12:00PM vs Baylor | bet365 | spread | value: dog | book 361.0 vs median 9.5 | div 351.5 
+- 11/7 12:00PM vs Baylor | Fanatics | spread | value: favorite | book -10.0 vs median 9.5 | div 19.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Baylor | bet365 | total | value: Over | book 361.0 vs median 50.5 | div 310.5 
+- 11/7 12:00PM vs Utah | bet365 | spread | value: dog | book 369.0 vs median 4.5 | div 364.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Utah | Fanatics | spread | value: favorite | book -4.5 vs median 4.5 | div 9.0 middle pairing spans key number 3
+- 11/7 12:00PM vs Utah | bet365 | total | value: Over | book 369.0 vs median 48.5 | div 320.5 
+- 11/7 12:00PM vs Tulane | bet365 | spread | value: dog | book 389.0 vs median -2.5 | div 391.5 middle pairing spans key number 7
+- 11/7 12:00PM vs Tulane | Fanatics | spread | value: dog | book 2.0 vs median -2.5 | div 4.5 
+- 11/7 12:00PM vs Tulane | bet365 | total | value: Over | book 389.0 vs median 50.0 | div 339.0 
+- 11/7 12:30PM vs Purdue | bet365 | spread | value: dog | book 333.0 vs median 6.0 | div 327.0 middle pairing spans key number 7
+- 11/7 12:30PM vs Purdue | Fanatics | spread | value: favorite | book -6.0 vs median 6.0 | div 12.0 middle pairing spans key number 3
+- 11/7 12:30PM vs Purdue | bet365 | total | value: Over | book 333.0 vs median 57.5 | div 275.5 
+- 11/7 12:30PM vs NC State | bet365 | spread | value: dog | book 351.0 vs median -4.5 | div 355.5 middle pairing spans key number 7
+- 11/7 12:30PM vs NC State | Fanatics | spread | value: dog | book 4.5 vs median -4.5 | div 9.0 middle pairing spans key number 3
+- 11/7 12:30PM vs NC State | bet365 | total | value: Over | book 351.0 vs median 51.5 | div 299.5 
+- 11/7 12:45PM vs Auburn | bet365 | spread | value: dog | book 363.0 vs median 10.0 | div 353.0 
+- 11/7 12:45PM vs Auburn | Fanatics | spread | value: favorite | book -10.5 vs median 10.0 | div 20.5 middle pairing spans key number 7
+- 11/7 12:45PM vs Auburn | bet365 | total | value: Over | book 363.0 vs median 53.5 | div 309.5 
+- 11/7 1:00PM vs Coastal Carolina | bet365 | spread | value: dog | book 345.0 vs median 6.5 | div 338.5 middle pairing spans key number 7
+- 11/7 1:00PM vs Coastal Carolina | Hard Rock | spread | value: dog | book 7.5 vs median 6.5 | div 1.0 middle pairing spans key number 7
+- 11/7 1:00PM vs Coastal Carolina | Fanatics | spread | value: favorite | book -6.5 vs median 6.5 | div 13.0 middle pairing spans key number 3
+- 11/7 1:00PM vs Coastal Carolina | bet365 | total | value: Over | book 345.0 vs median 44.5 | div 300.5 
+- 11/7 1:00PM vs Kansas State | bet365 | spread | value: dog | book 355.0 vs median -5.5 | div 360.5 middle pairing spans key number 7
+- 11/7 1:00PM vs Kansas State | Fanatics | spread | value: dog | book 6.0 vs median -5.5 | div 11.5 middle pairing spans key number 3
+- 11/7 1:00PM vs Kansas State | bet365 | total | value: Over | book 355.0 vs median 62.5 | div 292.5 
+- 11/7 2:30PM vs Appalachian State | bet365 | spread | value: dog | book 339.0 vs median 6.0 | div 333.0 middle pairing spans key number 7
+- 11/7 2:30PM vs Appalachian State | Fanatics | spread | value: favorite | book -6.0 vs median 6.0 | div 12.0 middle pairing spans key number 3
+- 11/7 2:30PM vs Appalachian State | bet365 | total | value: Over | book 339.0 vs median 55.0 | div 284.0 
+- 11/7 3:00PM vs Kennesaw State | bet365 | spread | value: dog | book 371.0 vs median -1.5 | div 372.5 middle pairing spans key number 7
+- 11/7 3:00PM vs Kennesaw State | Hard Rock | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- 11/7 3:00PM vs Kennesaw State | Fanatics | spread | value: dog | book 1.5 vs median -1.5 | div 3.0 
+- 11/7 3:00PM vs Kennesaw State | bet365 | total | value: Over | book 371.0 vs median 57.0 | div 314.0 
+- 11/7 3:00PM vs Arkansas State | bet365 | spread | value: dog | book 377.0 vs median 14.5 | div 362.5 
+- 11/7 3:00PM vs Arkansas State | Fanatics | spread | value: favorite | book -14.5 vs median 14.5 | div 29.0 middle pairing spans key number 7
+- 11/7 3:00PM vs Arkansas State | bet365 | total | value: Over | book 377.0 vs median 53.5 | div 323.5 
+- 11/7 3:00PM vs South Carolina | bet365 | spread | value: dog | book 395.0 vs median 7.0 | div 388.0 
+- 11/7 3:00PM vs South Carolina | Fanatics | spread | value: favorite | book -7.0 vs median 7.0 | div 14.0 middle pairing spans key number 3
+- 11/7 3:00PM vs South Carolina | bet365 | total | value: Over | book 395.0 vs median 51.5 | div 343.5 
+- 11/7 3:30PM vs Georgia Southern | bet365 | spread | value: dog | book 337.0 vs median 10.5 | div 326.5 
+- 11/7 3:30PM vs Georgia Southern | Fanatics | spread | value: favorite | book -10.5 vs median 10.5 | div 21.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Georgia Southern | bet365 | total | value: Over | book 337.0 vs median 54.5 | div 282.5 
+- 11/7 3:30PM vs Houston | bet365 | spread | value: dog | book 357.0 vs median 10.5 | div 346.5 
+- 11/7 3:30PM vs Houston | BetMGM | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
+- 11/7 3:30PM vs Houston | Fanatics | spread | value: favorite | book -10.5 vs median 10.5 | div 21.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Houston | bet365 | total | value: Over | book 357.0 vs median 62.5 | div 294.5 
+- 11/7 3:30PM vs Washington | bet365 | spread | value: dog | book 375.0 vs median 2.5 | div 372.5 middle pairing spans key number 7
+- 11/7 3:30PM vs Washington | Fanatics | spread | value: favorite | book -2.5 vs median 2.5 | div 5.0 
+- 11/7 3:30PM vs Washington | bet365 | total | value: Over | book 375.0 vs median 44.5 | div 330.5 
+- 11/7 3:30PM vs Ohio State | bet365 | spread | value: dog | book 385.0 vs median 7.5 | div 377.5 
+- 11/7 3:30PM vs Ohio State | Fanatics | spread | value: favorite | book -8.0 vs median 7.5 | div 15.5 middle pairing spans key number 7
+- 11/7 3:30PM vs Ohio State | bet365 | total | value: Over | book 385.0 vs median 46.5 | div 338.5 
+- 11/7 3:30PM vs LSU | bet365 | spread | value: dog | book 397.0 vs median 6.0 | div 391.0 middle pairing spans key number 7
+- 11/7 3:30PM vs LSU | Fanatics | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
+- 11/7 3:30PM vs LSU | bet365 | total | value: Over | book 397.0 vs median 52.5 | div 344.5 
+- 11/7 3:30PM vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
+- 11/7 3:30PM vs UAB | bet365 | spread | value: dog | book 399.0 vs median 8.5 | div 390.5 
+- 11/7 3:30PM vs UAB | Fanatics | spread | value: favorite | book -8.5 vs median 8.5 | div 17.0 middle pairing spans key number 7
+- 11/7 3:30PM vs UAB | bet365 | total | value: Over | book 399.0 vs median 47.5 | div 351.5 
+- 11/7 3:30PM vs Middle Tennessee | bet365 | spread | value: dog | book 401.0 vs median -1.5 | div 402.5 middle pairing spans key number 7
+- 11/7 3:30PM vs Middle Tennessee | Fanatics | spread | value: dog | book 1.5 vs median -1.5 | div 3.0 
+- 11/7 3:30PM vs Middle Tennessee | bet365 | total | value: Over | book 401.0 vs median 53.5 | div 347.5 
+- 11/7 3:30PM vs Navy | bet365 | spread | value: dog | book 403.0 vs median 7.5 | div 395.5 
+- 11/7 3:30PM vs Navy | Fanatics | spread | value: favorite | book -7.5 vs median 7.5 | div 15.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Navy | bet365 | total | value: Over | book 403.0 vs median 54.5 | div 348.5 
+- 11/7 3:30PM vs Wake Forest | bet365 | spread | value: dog | book 903.0 vs median 46.5 | div 856.5 
+- 11/7 3:30PM vs Wake Forest | BetMGM | spread | value: dog | book 47.5 vs median 46.5 | div 1.0 
+- 11/7 3:30PM vs Wake Forest | DraftKings | spread | value: favorite | book -47.5 vs median 46.5 | div 94.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Wake Forest | Caesars | spread | value: dog | book 47.5 vs median 46.5 | div 1.0 
+- 11/7 3:30PM vs Wake Forest | FanDuel | spread | value: favorite | book -46.5 vs median 46.5 | div 93.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Wake Forest | Fanatics | spread | value: favorite | book -47.5 vs median 46.5 | div 94.0 middle pairing spans key number 7
+- 11/7 3:30PM vs Wake Forest | bet365 | total | value: Over | book 903.0 vs median 59.5 | div 843.5 
+- 11/7 3:45PM vs Kansas | bet365 | spread | value: dog | book 327.0 vs median 2.5 | div 324.5 middle pairing spans key number 7
+- 11/7 3:45PM vs Kansas | Hard Rock | spread | value: dog | book 3.5 vs median 2.5 | div 1.0 middle pairing spans key number 3
+- 11/7 3:45PM vs Kansas | Fanatics | spread | value: favorite | book -2.5 vs median 2.5 | div 5.0 
+- 11/7 3:45PM vs Kansas | bet365 | total | value: Over | book 327.0 vs median 47.5 | div 279.5 
+- 11/7 4:00PM vs San Jose State | bet365 | spread | value: dog | book 373.0 vs median 10.0 | div 363.0 
+- 11/7 4:00PM vs San Jose State | Fanatics | spread | value: favorite | book -10.0 vs median 10.0 | div 20.0 middle pairing spans key number 7
+- 11/7 4:00PM vs San Jose State | bet365 | total | value: Over | book 373.0 vs median 51.5 | div 321.5 
+- 11/7 4:00PM vs North Texas | bet365 | spread | value: dog | book 393.0 vs median 16.5 | div 376.5 
+- 11/7 4:00PM vs North Texas | Caesars | spread | value: dog | book 17.5 vs median 16.5 | div 1.0 
+- 11/7 4:00PM vs North Texas | Fanatics | spread | value: favorite | book -17.0 vs median 16.5 | div 33.5 middle pairing spans key number 7
+- 11/7 4:00PM vs North Texas | bet365 | total | value: Over | book 393.0 vs median 64.5 | div 328.5 
+- 11/7 4:00PM vs Florida International | bet365 | spread | value: dog | book 405.0 vs median 4.5 | div 400.5 middle pairing spans key number 7
+- 11/7 4:00PM vs Florida International | Fanatics | spread | value: favorite | book -5.0 vs median 4.5 | div 9.5 middle pairing spans key number 3
+- 11/7 4:00PM vs Florida International | bet365 | total | value: Over | book 405.0 vs median 49.5 | div 355.5 
+- 11/7 4:00PM vs Troy | bet365 | spread | value: dog | book 407.0 vs median -4.5 | div 411.5 middle pairing spans key number 7
+- 11/7 4:00PM vs Troy | Caesars | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
+- 11/7 4:00PM vs Troy | Fanatics | spread | value: dog | book 4.5 vs median -4.5 | div 9.0 middle pairing spans key number 3
+- 11/7 4:00PM vs Troy | bet365 | total | value: Over | book 407.0 vs median 47.5 | div 359.5 
+- 11/7 4:15PM vs Wisconsin | bet365 | spread | value: dog | book 359.0 vs median 17.5 | div 341.5 
+- 11/7 4:15PM vs Wisconsin | BetMGM | spread | value: favorite | book -17.5 vs median 17.5 | div 35.0 middle pairing spans key number 7
+- 11/7 4:15PM vs Wisconsin | Fanatics | spread | value: favorite | book -17.5 vs median 17.5 | div 35.0 middle pairing spans key number 7
+- 11/7 4:15PM vs Wisconsin | bet365 | total | value: Over | book 359.0 vs median 45.5 | div 313.5 
+- 11/7 4:15PM vs Mississippi State | bet365 | spread | value: dog | book 391.0 vs median 3.0 | div 388.0 middle pairing spans key number 7
+- 11/7 4:15PM vs Mississippi State | Fanatics | spread | value: favorite | book -3.0 vs median 3.0 | div 6.0 
+- 11/7 4:15PM vs Mississippi State | bet365 | total | value: Over | book 391.0 vs median 48.5 | div 342.5 
+- 11/7 5:00PM vs Louisiana | bet365 | spread | value: dog | book 387.0 vs median 7.5 | div 379.5 
+- 11/7 5:00PM vs Louisiana | Fanatics | spread | value: favorite | book -7.5 vs median 7.5 | div 15.0 middle pairing spans key number 7
+- 11/7 5:00PM vs Louisiana | bet365 | total | value: Over | book 387.0 vs median 57.5 | div 329.5 
+- 11/7 6:00PM vs Colorado State | bet365 | spread | value: dog | book 413.0 vs median -17.5 | div 430.5 middle pairing spans key number 7
+- 11/7 6:00PM vs Colorado State | Fanatics | spread | value: dog | book 17.5 vs median -17.5 | div 35.0 middle pairing spans key number 7
+- 11/7 6:00PM vs Colorado State | bet365 | total | value: Over | book 413.0 vs median 68.5 | div 344.5 
+- 11/7 6:15PM vs Tennessee | bet365 | spread | value: dog | book 411.0 vs median 6.5 | div 404.5 middle pairing spans key number 7
+- 11/7 6:15PM vs Tennessee | Fanatics | spread | value: favorite | book -6.5 vs median 6.5 | div 13.0 middle pairing spans key number 3
+- 11/7 6:15PM vs Tennessee | bet365 | total | value: Over | book 411.0 vs median 50.5 | div 360.5 
+- 11/7 7:00PM vs Jacksonville State | bet365 | spread | value: dog | book 415.0 vs median 17.5 | div 397.5 
+- 11/7 7:00PM vs Jacksonville State | Fanatics | spread | value: favorite | book -17.0 vs median 17.5 | div 34.5 middle pairing spans key number 7
+- 11/7 7:00PM vs Jacksonville State | bet365 | total | value: Over | book 415.0 vs median 48.5 | div 366.5 
+- 11/7 7:30PM vs Michigan | bet365 | spread | value: dog | book 341.0 vs median 13.5 | div 327.5 
+- 11/7 7:30PM vs Michigan | Caesars | spread | value: dog | book 39.5 vs median 13.5 | div 26.0 
+- 11/7 7:30PM vs Michigan | Fanatics | spread | value: favorite | book -13.5 vs median 13.5 | div 27.0 middle pairing spans key number 7
+- 11/7 7:30PM vs Michigan | bet365 | total | value: Over | book 341.0 vs median 39.5 | div 301.5 
+- 11/7 7:30PM vs Georgia Tech | bet365 | spread | value: dog | book 349.0 vs median -14.5 | div 363.5 middle pairing spans key number 7
+- 11/7 7:30PM vs Georgia Tech | Fanatics | spread | value: dog | book 14.5 vs median -14.5 | div 29.0 middle pairing spans key number 7
+- 11/7 7:30PM vs Georgia Tech | bet365 | total | value: Over | book 349.0 vs median 61.5 | div 287.5 
+- 11/7 7:30PM vs Northwestern | bet365 | spread | value: dog | book 353.0 vs median 2.5 | div 350.5 middle pairing spans key number 7
+- 11/7 7:30PM vs Northwestern | Fanatics | spread | value: favorite | book -2.5 vs median 2.5 | div 5.0 
+- 11/7 7:30PM vs Northwestern | bet365 | total | value: Over | book 353.0 vs median 45.5 | div 307.5 
+- 11/7 7:30PM vs Arizona State | bet365 | spread | value: dog | book 365.0 vs median 3.5 | div 361.5 middle pairing spans key number 7
+- 11/7 7:30PM vs Arizona State | Fanatics | spread | value: favorite | book -3.5 vs median 3.5 | div 7.0 middle pairing spans key number 3
+- 11/7 7:30PM vs Arizona State | bet365 | total | value: Over | book 365.0 vs median 48.5 | div 316.5 
+- 11/7 7:30PM vs Ole Miss | bet365 | spread | value: dog | book 379.0 vs median -3.5 | div 382.5 middle pairing spans key number 7
+- 11/7 7:30PM vs Ole Miss | Fanatics | spread | value: dog | book 3.5 vs median -3.5 | div 7.0 middle pairing spans key number 3
+- 11/7 7:30PM vs Ole Miss | bet365 | total | value: Over | book 379.0 vs median 56.5 | div 322.5 
+- 11/7 7:30PM vs Army | bet365 | spread | value: dog | book 417.0 vs median 3.0 | div 414.0 middle pairing spans key number 7
+- 11/7 7:30PM vs Army | Fanatics | spread | value: favorite | book -3.0 vs median 3.0 | div 6.0 
+- 11/7 7:30PM vs Army | bet365 | total | value: Over | book 417.0 vs median 45.0 | div 372.0 
+- 11/7 7:30PM vs Notre Dame | bet365 | spread | value: dog | book 419.0 vs median 7.5 | div 411.5 
+- 11/7 7:30PM vs Notre Dame | Fanatics | spread | value: favorite | book 6.5 vs median 7.5 | div 1.0 middle pairing spans key number 7
+- 11/7 7:30PM vs Notre Dame | bet365 | total | value: Over | book 419.0 vs median 55.5 | div 363.5 
+- 11/7 7:30PM vs Notre Dame | Fanatics | total | value: Under | book 50.5 vs median 55.5 | div 5.0 
+- 11/7 7:45PM vs Florida | bet365 | spread | value: dog | book 381.0 vs median 6.5 | div 374.5 middle pairing spans key number 7
+- 11/7 7:45PM vs Florida | Fanatics | spread | value: favorite | book -6.5 vs median 6.5 | div 13.0 middle pairing spans key number 3
+- 11/7 7:45PM vs Florida | bet365 | total | value: Over | book 381.0 vs median 45.0 | div 336.0 
+- 11/7 8:00PM vs New Mexico State | bet365 | spread | value: dog | book 409.0 vs median -16.5 | div 425.5 middle pairing spans key number 7
+- 11/7 8:00PM vs New Mexico State | BetMGM | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
+- 11/7 8:00PM vs New Mexico State | Hard Rock | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
+- 11/7 8:00PM vs New Mexico State | Fanatics | spread | value: dog | book 16.5 vs median -16.5 | div 33.0 middle pairing spans key number 7
+- 11/7 8:00PM vs New Mexico State | bet365 | total | value: Over | book 409.0 vs median 46.5 | div 362.5 
+- 11/7 9:30PM vs UTEP | bet365 | spread | value: dog | book 367.0 vs median -8.5 | div 375.5 middle pairing spans key number 7
+- 11/7 9:30PM vs UTEP | DraftKings | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
+- 11/7 9:30PM vs UTEP | Caesars | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
+- 11/7 9:30PM vs UTEP | Fanatics | spread | value: dog | book 9.5 vs median -8.5 | div 18.0 middle pairing spans key number 7
+- 11/7 9:30PM vs UTEP | bet365 | total | value: Over | book 367.0 vs median 49.5 | div 317.5 
+- 11/7 9:30PM vs Texas Tech | bet365 | spread | value: dog | book 383.0 vs median 16.5 | div 366.5 
+- 11/7 9:30PM vs Texas Tech | Fanatics | spread | value: favorite | book -17.0 vs median 16.5 | div 33.5 middle pairing spans key number 7
+- 11/7 9:30PM vs Texas Tech | bet365 | total | value: Over | book 383.0 vs median 65.5 | div 317.5 
+- 11/7 9:30PM vs Utah State | bet365 | spread | value: dog | book 421.0 vs median -2.5 | div 423.5 middle pairing spans key number 7
+- 11/7 9:30PM vs Utah State | Fanatics | spread | value: dog | book 2.5 vs median -2.5 | div 5.0 
+- 11/7 9:30PM vs Utah State | bet365 | total | value: Over | book 421.0 vs median 42.5 | div 378.5 
+- 11/7 10:30PM vs Oregon State | bet365 | spread | value: dog | book 423.0 vs median 6.5 | div 416.5 middle pairing spans key number 7
+- 11/7 10:30PM vs Oregon State | Fanatics | spread | value: favorite | book -6.0 vs median 6.5 | div 12.5 middle pairing spans key number 3
+- 11/7 10:30PM vs Oregon State | bet365 | total | value: Over | book 423.0 vs median 71.5 | div 351.5 
+- 11/7 10:30PM vs UNLV | bet365 | spread | value: dog | book 425.0 vs median 5.5 | div 419.5 middle pairing spans key number 7
+- 11/7 10:30PM vs UNLV | Fanatics | spread | value: favorite | book -5.5 vs median 5.5 | div 11.0 middle pairing spans key number 3
+- 11/7 10:30PM vs UNLV | bet365 | total | value: Over | book 425.0 vs median 48.5 | div 376.5 
+- 11/3 7:00PM vs Akron | bet365 | spread | value: dog | book 303.0 vs median -12.5 | div 315.5 middle pairing spans key number 7
+- 11/3 7:00PM vs Akron | Fanatics | spread | value: dog | book 13.5 vs median -12.5 | div 26.0 middle pairing spans key number 7
+- 11/3 7:00PM vs Akron | bet365 | total | value: Over | book 303.0 vs median 52.5 | div 250.5 
+- 11/3 8:00PM vs Miami (OH) | bet365 | spread | value: dog | book 301.0 vs median 6.5 | div 294.5 middle pairing spans key number 7
+- 11/3 8:00PM vs Miami (OH) | Fanatics | spread | value: favorite | book -7.0 vs median 6.5 | div 13.5 middle pairing spans key number 3
+- 11/3 8:00PM vs Miami (OH) | bet365 | total | value: Over | book 301.0 vs median 45.5 | div 255.5 
+- 11/4 7:00PM vs Sacramento State | bet365 | spread | value: dog | book 309.0 vs median -25.5 | div 334.5 middle pairing spans key number 7
+- 11/4 7:00PM vs Sacramento State | Fanatics | spread | value: dog | book 25.0 vs median -25.5 | div 50.5 middle pairing spans key number 7
+- 11/4 7:00PM vs Sacramento State | bet365 | total | value: Over | book 309.0 vs median 52.5 | div 256.5 
+- 11/4 7:00PM vs UMass | bet365 | spread | value: dog | book 307.0 vs median 2.5 | div 304.5 middle pairing spans key number 7
+- 11/4 7:00PM vs UMass | Fanatics | spread | value: favorite | book -2.5 vs median 2.5 | div 5.0 
+- 11/4 7:00PM vs UMass | bet365 | total | value: Over | book 307.0 vs median 48.5 | div 258.5 
+- 11/4 7:30PM vs Eastern Michigan | bet365 | spread | value: dog | book 305.0 vs median -2.5 | div 307.5 middle pairing spans key number 7
+- 11/4 7:30PM vs Eastern Michigan | Fanatics | spread | value: dog | book 2.5 vs median -2.5 | div 5.0 
+- 11/4 7:30PM vs Eastern Michigan | bet365 | total | value: Over | book 305.0 vs median 44.5 | div 260.5 
