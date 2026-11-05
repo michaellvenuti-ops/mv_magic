@@ -6,3 +6,4 @@
 ## 2026-11-05T05:25:34-05:00 — board unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
 ## 2026-11-05T06:26:45-05:00 — board unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
 ## 2026-11-05T07:27:31-05:00 — board unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
+## 2026-11-05T08:28:35-05:00 — board unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
