@@ -1,6 +1,5 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 16:11)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 17:13)
 
-- Texans vs Chargers | Hard Rock | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
 - Delaware vs Kennesaw State | BetMGM | moneyline Kennesaw State | value: Kennesaw State | book 99.0 vs median 50.0 | div 49.0 
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
