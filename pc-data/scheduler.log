@@ -835,3 +835,6 @@
 [2026-11-05 14:40:37 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 14:42:54 ET] dh_arbitrage.py: FAILED (exit 2) in 78s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
 [2026-11-05 14:43:25 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:46:03 ET] sync_to_github.py: FAILED (exit 1) in 128s —   FAILED: pc-data/scheduler-console.log (HTTP 409: {'error': '{"message":"is at 71b0d583e61ff459c87c36d15a09e509d7b51547 but expected 6d3ec9dd238eb68daefed58e19
+[2026-11-05 14:46:34 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:46:37 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31884 snapshots / 261 events, feeds ok 6 fail 0
