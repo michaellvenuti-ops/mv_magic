@@ -776,3 +776,32 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 12:20:12 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 27306 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 12:21:13 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 12:23:14 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:26:48 ET] sync_to_github.py: OK in 124s —   ok: hung-number-board-pc.html
+[2026-11-05 12:26:49 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 13, sog-middles: 15. Detail
+[2026-11-05 12:27:20 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:27:23 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (131 with odds), db total 27524 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 12:29:24 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:31:25 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:32:27 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 27742 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 12:33:28 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:36:15 ET] dh_arbitrage.py: OK in 167s — ARBITRAGE:  |  | -10644.6 [99%] $1,000 Kalshi Kalshi | +11000 [0.90%] $9.28 ProphetX ProphetX
+[2026-11-05 12:36:48 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:38:48 ET] dh_kalshi_poly_arb.py: OK in 120s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-05 12:39:21 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:39:25 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 27960 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 12:40:19 ET] dh_low_holds.py: OK in 54s — LOW-HOLDS:  |  | -570 [85.07%] $1,000 ProphetX ProphetX | +566.7 [15%] $188 DraftKings Predictions DraftKings Predictions
+[2026-11-05 12:41:22 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:43:23 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:45:10 ET] dh_game_middles.py: FAILED (exit 1) in 107s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 12:45:42 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:45:47 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 28178 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 12:50:07 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: no new strict-key middles.
+[2026-11-05 12:50:40 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:51:50 ET] hung_number.py: OK in 70s — No new hung numbers (13 current flags).
+[2026-11-05 12:51:55 ET] rlm.py: OK in 5s
+[2026-11-05 12:51:58 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 12:52:00 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 12:52:44 ET] odds_recorder.py: OK in 13s — SUMMARY: recorded 218 events (131 with odds), db total 28396 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 12:53:15 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:55:16 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 12:57:17 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
