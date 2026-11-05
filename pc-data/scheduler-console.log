@@ -521,3 +521,29 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 07:41:16 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 07:43:17 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 07:43:49 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 18032 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 07:45:31 ET] sync_to_github.py: OK in 42s —   ok: pc-data/upset-watch-state.json
+[2026-11-05 07:45:31 ET] notify.py: OK in 0s — notify: nothing banked today, no ping sent.
+[2026-11-05 07:46:03 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:48:04 ET] upset_watch.py: OK in 2s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:49:07 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 184 events (75 with odds), db total 18216 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 07:50:08 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:52:09 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:54:10 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:54:12 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 18400 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 07:56:13 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:58:14 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 07:59:16 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 18584 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 08:00:17 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:02:18 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:04:19 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:04:21 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 18768 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 08:06:23 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:08:23 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:09:26 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 18952 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 08:10:27 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:10:28 ET] fetch_nba_snapshot.py: FAILED (exit 1) in 1s — urllib.error.HTTPError: HTTP Error 403: Forbidden
+[2026-11-05 08:12:29 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:14:30 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 08:14:32 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 19136 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 08:14:33 ET] nba_overs_scan.py: FAILED (exit 2) in 0s — usage: nba_overs_scan.py <snapshot.json>
+[2026-11-05 08:14:39 ET] nhl_totals_scan.py: OK in 6s — nhl-totals: 4 games, no flags.
