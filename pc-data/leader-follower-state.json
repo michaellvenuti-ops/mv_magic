@@ -111,7 +111,7 @@
     },
     "Caesars": {
      "spread": -4.5,
-     "total": 49.0
+     "total": 48.5
     },
     "DraftKings": {
      "spread": -4.5,
@@ -213,15 +213,15 @@
      "total": 45.0
     },
     "Caesars": {
-     "spread": 3.5,
+     "spread": 3.0,
      "total": 45.0
     },
     "DraftKings": {
-     "spread": 3.5,
+     "spread": 3.0,
      "total": 44.5
     },
     "FanDuel": {
-     "spread": 3.5,
+     "spread": 3.0,
      "total": 45.5
     },
     "Fanatics": {
@@ -296,7 +296,7 @@
     },
     "Fanatics": {
      "spread": 2.5,
-     "total": 44.0
+     "total": 44.5
     },
     "Hard Rock": {
      "spread": 3.0,
@@ -832,7 +832,7 @@
     },
     "Caesars": {
      "spread": -6.0,
-     "total": 55.0
+     "total": 54.5
     },
     "DraftKings": {
      "spread": -6.0,
@@ -840,19 +840,19 @@
     },
     "FanDuel": {
      "spread": -5.5,
-     "total": 55.5
+     "total": 54.5
     },
     "Fanatics": {
-     "spread": -6.0,
-     "total": 55.0
+     "spread": -6.5,
+     "total": 54.5
     },
     "Kalshi": {
      "spread": -6.5,
-     "total": 55.5
+     "total": 52.5
     },
     "bet365": {
      "spread": -6.5,
-     "total": 55.5
+     "total": 54.5
     }
    },
    "pending": []
@@ -980,7 +980,7 @@
     },
     "Fanatics": {
      "spread": -10.0,
-     "total": 50.5
+     "total": 51.0
     },
     "Kalshi": {
      "spread": -9.5,
@@ -996,11 +996,11 @@
   "Jaguars @ Ravens | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": 10.0,
+     "spread": 9.5,
      "total": 39.5
     },
     "Caesars": {
-     "spread": 10.0,
+     "spread": 9.5,
      "total": 39.5
     },
     "DraftKings": {
@@ -1380,7 +1380,7 @@
     },
     "Fanatics": {
      "spread": -47.5,
-     "total": 59.5
+     "total": 58.5
     },
     "Kalshi": {
      "spread": -47.5,
@@ -1664,7 +1664,7 @@
   "Oklahoma @ Florida | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": -6.0,
+     "spread": -6.5,
      "total": 45.5
     },
     "Caesars": {
@@ -1676,7 +1676,7 @@
      "total": 45.5
     },
     "FanDuel": {
-     "spread": -6.5,
+     "spread": -5.5,
      "total": 44.5
     },
     "Fanatics": {
@@ -1692,7 +1692,16 @@
      "total": 44.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "FanDuel",
+     "direction": 1,
+     "market": "spread",
+     "new": -5.5,
+     "old": -6.5,
+     "ts": "2026-11-05T15:08:18-05:00"
+    }
+   ]
   },
   "Oklahoma State @ Kansas State | 2026-11-05": {
    "books": {
@@ -1714,7 +1723,7 @@
     },
     "Fanatics": {
      "spread": 6.5,
-     "total": 62.5
+     "total": 62.0
     },
     "Kalshi": {
      "spread": 6.5,
@@ -2168,7 +2177,7 @@
    "books": {
     "BetMGM": {
      "spread": 5.0,
-     "total": 41.0
+     "total": 40.5
     },
     "Caesars": {
      "spread": 4.5,
@@ -2369,19 +2378,19 @@
   "UCF @ Kansas | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": -2.5,
+     "spread": -3.0,
      "total": 47.5
     },
     "Caesars": {
-     "spread": -2.5,
+     "spread": -3.0,
      "total": 47.5
     },
     "DraftKings": {
-     "spread": -2.5,
+     "spread": -3.0,
      "total": 47.5
     },
     "FanDuel": {
-     "spread": -2.5,
+     "spread": -3.5,
      "total": 47.5
     },
     "Fanatics": {
@@ -2393,11 +2402,28 @@
      "total": 47.5
     },
     "bet365": {
-     "spread": -2.5,
+     "spread": -3.5,
      "total": 47.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "bet365",
+     "direction": -1,
+     "market": "spread",
+     "new": -3.5,
+     "old": -2.5,
+     "ts": "2026-11-05T15:08:18-05:00"
+    },
+    {
+     "book": "FanDuel",
+     "direction": -1,
+     "market": "spread",
+     "new": -3.5,
+     "old": -2.5,
+     "ts": "2026-11-05T15:08:18-05:00"
+    }
+   ]
   },
   "UCLA @ Minnesota | 2026-11-05": {
    "books": {
@@ -2430,26 +2456,17 @@
      "total": 39.5
     }
    },
-   "pending": [
-    {
-     "book": "Kalshi",
-     "direction": -1,
-     "market": "spread",
-     "new": 4.5,
-     "old": 5.5,
-     "ts": "2026-11-05T14:04:12-05:00"
-    }
-   ]
+   "pending": []
   },
   "UTSA @ Florida Atlantic | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": 7.0,
+     "spread": 6.5,
      "total": 72.5
     },
     "Caesars": {
      "spread": 6.5,
-     "total": 72.5
+     "total": 73.0
     },
     "DraftKings": {
      "spread": 6.5,
