@@ -28,3 +28,9 @@
 ## 2026-11-05T09:33:27-05:00 — 78 games, 0 leads credited
 ## 2026-11-05T10:39:40-05:00 — 78 games, 0 leads credited
 ## 2026-11-05T11:47:56-05:00 — 78 games, 0 leads credited
+## 2026-11-05T12:51:58-05:00 — no-follow: FanDuel Western Kentucky @ Middle Tennessee | 2026-11-05 spread (only 0 followed)
+## 2026-11-05T12:51:58-05:00 — no-follow: DraftKings Hawai'i @ UTEP | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T12:51:58-05:00 — no-follow: bet365 West Virginia @ Texas Tech | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T12:51:58-05:00 — no-follow: DraftKings West Virginia @ Texas Tech | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T12:51:58-05:00 — no-follow: FanDuel West Virginia @ Texas Tech | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T12:51:58-05:00 — 78 games, 0 leads credited
