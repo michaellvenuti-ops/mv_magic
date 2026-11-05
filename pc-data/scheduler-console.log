@@ -682,3 +682,33 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 10:25:19 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 10:25:21 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 184 events (75 with odds), db total 23552 snapshots / 183 events, feeds ok 6 fail 0
 [2026-11-05 10:27:50 ET] dh_arbitrage.py: FAILED (exit 2) in 148s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 10:29:33 ET] sync_to_github.py: OK in 103s —   ok: hung-number-board-pc.html
+[2026-11-05 10:29:33 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 14. Details in GitHub pc-da
+[2026-11-05 10:30:04 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:32:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 115s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 10:32:47 ET] dh_low_holds.py: OK in 47s — LOW-HOLDS:  |  | -967.2 [90%] $1,000 Kalshi Kalshi | +810 [10.99%] $123.45 ProphetX ProphetX
+[2026-11-05 10:34:21 ET] dh_game_middles.py: FAILED (exit 1) in 94s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 10:37:47 ET] dh_key_number_middles.py: OK in 206s — key-number-middles: no new strict-key middles.
+[2026-11-05 10:38:20 ET] upset_watch.py: OK in 3s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:38:24 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 184 events (75 with odds), db total 23736 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 10:39:33 ET] hung_number.py: OK in 69s — HUNG NUMBER: Western Kentucky vs Middle Tennessee — BetMGM moneyline Middle Tennessee value Middle Tennessee (98.0 vs median 49.5)
+[2026-11-05 10:39:37 ET] rlm.py: OK in 5s
+[2026-11-05 10:39:40 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 10:39:43 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 10:40:44 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:42:58 ET] upset_watch.py: OK in 14s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:44:47 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 184 events (75 with odds), db total 23920 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 10:45:37 ET] upset_watch.py: OK in 21s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:46:16 ET] totals_scan.py: OK in 38s — totals: no new flags (silent).
+[2026-11-05 10:46:50 ET] correlated_parlay.py: OK in 34s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-05 10:51:07 ET] qb_props.py: FAILED (exit 2) in 256s — 0 starters resolved — refusing to write state. Re-run with --dump and send the dump file.
+[2026-11-05 10:51:39 ET] upset_watch.py: OK in 3s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:51:43 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 184 events (75 with odds), db total 24104 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 10:53:44 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:55:46 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:56:48 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 24288 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 10:57:49 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 10:59:50 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 11:02:58 ET] sync_to_github.py: FAILED (exit 1) in 188s —   FAILED: pc-data/totals-2026-11-05.md (HTTP 502: {'error': '{\n  "message": "Server Error"\n}\n'})
+[2026-11-05 11:03:29 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 11:03:31 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 24472 snapshots / 183 events, feeds ok 6 fail 0
