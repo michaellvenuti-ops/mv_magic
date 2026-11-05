@@ -751,3 +751,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 11:48:33 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 25998 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 11:48:37 ET] public_fade.py: OK in 3s
 [2026-11-05 11:49:39 ET] dh_positive_ev.py: OK in 63s — DarkHorse check unavailable (signed out) — positive-ev skipped, no prices invented.
+[2026-11-05 11:51:41 ET] sync_to_github.py: FAILED (exit 1) in 122s —   FAILED: pc-data/rlm-2026-11-04.md (HTTP 409: {'error': '{"message":"is at ef6498a08c83da2bf984d740398b813597e00f08 but expected dd6f8e0d241a6b6d220f62331f08f4
+[2026-11-05 11:52:12 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
