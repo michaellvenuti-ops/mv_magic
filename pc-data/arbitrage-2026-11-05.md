@@ -1,0 +1,2 @@
+## 2026-11-05T12:35:59-05:00 — arbitrage: 1 complete pairs read, 1 NEW/CHANGED delivered
+ |  | -10644.6 [99%] $1,000 Kalshi Kalshi | +11000 [0.90%] $9.28 ProphetX ProphetX :: {'leg1': {'side': '-10644.6 [99%] $1,000 Kalshi', 'price': '-10644.6', 'book': 'Kalshi', 'stake': 1000.0}, 'leg2': {'side': '+11000 [0.90%] $9.28 ProphetX', 'price': '+11000', 'book': 'ProphetX', 'stake': 9.28}, 'arb_risk': False, 'first_reported': '2026-11-05T12:35:59-05:00', 'last_seen': '2026-11-05', 'profit_pct': 99.0}
