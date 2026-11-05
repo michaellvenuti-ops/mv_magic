@@ -952,3 +952,30 @@
 [2026-11-05 16:59:06 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 37334 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 17:00:30 ET] dh_low_holds.py: OK in 23s — LOW-HOLDS:  |  | -2042.5 [95%] $1,000 Kalshi Kalshi | +1600 [5.88%] $62.89 ProphetX ProphetX
 [2026-11-05 17:01:02 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:03:35 ET] sync_to_github.py: OK in 124s —   ok: hung-number-board-pc.html
+[2026-11-05 17:03:36 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 15, sog-middles: 79. Detail
+[2026-11-05 17:04:07 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:04:10 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (130 with odds), db total 37552 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:05:32 ET] dh_game_middles.py: FAILED (exit 1) in 81s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 17:06:04 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:08:05 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:09:40 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (130 with odds), db total 37770 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:13:01 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: no new strict-key middles.
+[2026-11-05 17:13:33 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:14:45 ET] hung_number.py: OK in 72s — No new hung numbers (14 current flags).
+[2026-11-05 17:14:50 ET] rlm.py: OK in 5s
+[2026-11-05 17:14:53 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 6 new leads, no book at 3 yet).
+[2026-11-05 17:14:55 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 17:15:30 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (130 with odds), db total 37988 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:16:01 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:18:02 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:20:03 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:20:35 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 38206 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:22:06 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:24:07 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:25:40 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 38424 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:26:11 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:28:12 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:30:13 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:30:45 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 38642 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:32:20 ET] upset_watch.py: OK in 4s — SUMMARY: 142 games checked, 0 new trigger(s)
