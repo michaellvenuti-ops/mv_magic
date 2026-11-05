@@ -167,3 +167,35 @@
 [2026-11-05 02:00:57 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 02:02:58 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 02:03:00 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 5888 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:04:39 ET] sync_to_github.py: OK in 39s —   ok: pc-data/upset-watch-state.json
+[2026-11-05 02:04:39 ET] notify.py: OK in 0s — notify: nothing banked today, no ping sent.
+[2026-11-05 02:05:10 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:07:11 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:08:13 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 6072 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:09:14 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:11:15 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:13:16 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:13:17 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 6256 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:15:18 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:17:19 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:18:09 ET] dh_arbitrage.py: OK in 49s — DarkHorse check unavailable (signed out) — arbitrage skipped, no prices invented.
+[2026-11-05 02:18:42 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 184 events (75 with odds), db total 6440 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:18:58 ET] dh_kalshi_poly_arb.py: OK in 16s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
+[2026-11-05 02:19:17 ET] dh_low_holds.py: OK in 19s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-05 02:19:49 ET] upset_watch.py: OK in 2s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:20:11 ET] dh_game_middles.py: OK in 22s — DarkHorse check unavailable (signed out) — game-middles skipped, no prices invented.
+[2026-11-05 02:20:33 ET] dh_key_number_middles.py: OK in 22s — DarkHorse check unavailable (signed out) — key-number-middles skipped, no prices invented.
+[2026-11-05 02:21:38 ET] hung_number.py: FAILED (exit 2) in 35s — write state. Re-run with --dump and send the dump file.
+[2026-11-05 02:21:43 ET] rlm.py: OK in 5s
+[2026-11-05 02:21:45 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (0 games, 0 new leads, no book at 3 yet).
+[2026-11-05 02:21:48 ET] steam_side.py: FAILED (exit 2) in 2s — steam-side: board unreadable (NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.)
+[2026-11-05 02:22:19 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:23:51 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 6624 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:24:22 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:26:23 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:28:24 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:28:56 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 6808 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:30:27 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:32:28 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 02:34:00 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 184 events (75 with odds), db total 6992 snapshots / 183 events, feeds ok 6 fail 0
+[2026-11-05 02:34:31 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
