@@ -852,3 +852,30 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 14:07:22 ET] dh_sog_middles.py: FAILED (exit 1) in 96s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 16: character maps to <undefined>
 [2026-11-05 14:08:19 ET] dh_team_total_middles.py: OK in 57s
 [2026-11-05 14:11:23 ET] costco_gold.py: OK in 184s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-05 14:13:37 ET] sync_to_github.py: OK in 133s —   ok: hung-number-board-pc.html
+[2026-11-05 14:13:37 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 13, sog-middles: 53. Detail
+[2026-11-05 14:14:08 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:14:12 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 30576 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:16:13 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:18:14 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:19:16 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 30794 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:20:17 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:22:18 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:24:19 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:24:22 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31012 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:26:23 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:28:24 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:29:26 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31230 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:30:27 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:32:28 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:34:29 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:34:31 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31448 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:36:32 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:38:33 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:39:35 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31666 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:40:37 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:42:54 ET] dh_arbitrage.py: FAILED (exit 2) in 78s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 14:43:25 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:46:03 ET] sync_to_github.py: FAILED (exit 1) in 128s —   FAILED: pc-data/scheduler-console.log (HTTP 409: {'error': '{"message":"is at 71b0d583e61ff459c87c36d15a09e509d7b51547 but expected 6d3ec9dd238eb68daefed58e19
+[2026-11-05 14:46:34 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:46:37 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31884 snapshots / 261 events, feeds ok 6 fail 0
