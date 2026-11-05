@@ -828,3 +828,27 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 13:25:19 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 29704 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 13:26:20 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 13:28:21 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:31:57 ET] sync_to_github.py: OK in 126s —   ok: hung-number-board-pc.html
+[2026-11-05 13:31:58 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 13, sog-middles: 15. Detail
+[2026-11-05 13:32:29 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:32:33 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 29922 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 13:34:34 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:36:35 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:41:29 ET] dh_arbitrage.py: FAILED (exit 2) in 295s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 13:42:02 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:42:07 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 30140 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 13:52:12 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 605s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 13:53:35 ET] dh_low_holds.py: OK in 83s — LOW-HOLDS:  |  | -4878 [98%] $1,000 Polymarket US Polymarket US | +3021.4 [3%] $33 Kalshi Kalshi
+[2026-11-05 13:57:38 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-05 13:57:40 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 13:57:43 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 30358 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 13:59:10 ET] dh_game_middles.py: FAILED (exit 1) in 86s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 14:02:35 ET] dh_key_number_middles.py: OK in 205s — key-number-middles: no new strict-key middles.
+[2026-11-05 14:04:03 ET] hung_number.py: OK in 88s — HUNG NUMBER: Hawai'i vs UTEP — Fanatics spread value favorite (-9.5 vs median -8.5)
+[2026-11-05 14:04:09 ET] rlm.py: OK in 6s
+[2026-11-05 14:04:12 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 14:04:14 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 14:05:46 ET] dh_prop_middles.py: FAILED (exit 1) in 92s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 69: character maps to <undefined>
+[2026-11-05 14:07:22 ET] dh_sog_middles.py: FAILED (exit 1) in 96s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 16: character maps to <undefined>
+[2026-11-05 14:08:19 ET] dh_team_total_middles.py: OK in 57s
+[2026-11-05 14:11:23 ET] costco_gold.py: OK in 184s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
