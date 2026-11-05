@@ -1,0 +1,71 @@
+[Wed 11/04/2026 23:30:06.00] pip install faster-whisper starting 
+Collecting faster-whisper
+  Downloading faster_whisper-1.2.1-py3-none-any.whl (1.1 MB)
+     ---------------------------------------- 1.1/1.1 MB 6.4 MB/s eta 0:00:00
+Collecting ctranslate2<5,>=4.0 (from faster-whisper)
+  Downloading ctranslate2-4.8.5-cp312-cp312-win_amd64.whl (20.4 MB)
+     ---------------------------------------- 20.4/20.4 MB 7.0 MB/s eta 0:00:00
+Collecting huggingface-hub>=0.21 (from faster-whisper)
+  Downloading huggingface_hub-2.4.0-py3-none-any.whl (857 kB)
+     -------------------------------------- 857.0/857.0 kB 3.4 MB/s eta 0:00:00
+Collecting tokenizers<1,>=0.13 (from faster-whisper)
+  Downloading tokenizers-0.23.3-cp310-abi3-win_amd64.whl (2.9 MB)
+     ---------------------------------------- 2.9/2.9 MB 8.3 MB/s eta 0:00:00
+Collecting onnxruntime<2,>=1.14 (from faster-whisper)
+  Downloading onnxruntime-1.31.1-cp312-cp312-win_amd64.whl (14.9 MB)
+     ---------------------------------------- 14.9/14.9 MB 8.7 MB/s eta 0:00:00
+Collecting av>=11 (from faster-whisper)
+  Downloading av-19.0.2-cp312-abi3-win_amd64.whl (28.2 MB)
+     ---------------------------------------- 28.2/28.2 MB 7.6 MB/s eta 0:00:00
+Collecting tqdm (from faster-whisper)
+  Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+     -------------------------------------- 80.2/80.2 kB 636.0 kB/s eta 0:00:00
+Collecting numpy (from ctranslate2<5,>=4.0->faster-whisper)
+  Downloading numpy-2.5.4-cp312-cp312-win_amd64.whl (12.6 MB)
+     ---------------------------------------- 12.6/12.6 MB 6.4 MB/s eta 0:00:00
+Collecting pyyaml<7,>=5.3 (from ctranslate2<5,>=4.0->faster-whisper)
+  Downloading pyyaml-6.0.3-cp312-cp312-win_amd64.whl (154 kB)
+     -------------------------------------- 154.0/154.0 kB 1.8 MB/s eta 0:00:00
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading click-8.5.0-py3-none-any.whl (125 kB)
+     -------------------------------------- 125.3/125.3 kB 3.7 MB/s eta 0:00:00
+Collecting filelock>=3.10.0 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading filelock-4.2.9-py3-none-any.whl (164 kB)
+     -------------------------------------- 164.7/164.7 kB 3.3 MB/s eta 0:00:00
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+     -------------------------------------- 221.7/221.7 kB 4.5 MB/s eta 0:00:00
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading hf_xet-1.8.0-cp38-abi3-win_amd64.whl (3.9 MB)
+     ---------------------------------------- 3.9/3.9 MB 7.6 MB/s eta 0:00:00
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+     ---------------------------------------- 97.9/97.9 kB 2.8 MB/s eta 0:00:00
+Collecting packaging>=20.9 (from huggingface-hub>=0.21->faster-whisper)
+  Downloading packaging-26.3-py3-none-any.whl (129 kB)
+     -------------------------------------- 130.0/130.0 kB 3.9 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=4.1.0 in c:\users\venut\appdata\local\programs\python\python312\lib\site-packages (from huggingface-hub>=0.21->faster-whisper) (4.16.0)
+Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper)
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Collecting protobuf>=4.25.8 (from onnxruntime<2,>=1.14->faster-whisper)
+  Downloading protobuf-7.36.2-cp310-abi3-win_amd64.whl (456 kB)
+     -------------------------------------- 456.5/456.5 kB 7.1 MB/s eta 0:00:00
+Collecting colorama (from tqdm->faster-whisper)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting anyio>=4.10 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper)
+  Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+     -------------------------------------- 134.5/134.5 kB 1.6 MB/s eta 0:00:00
+Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper)
+  Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+     ---------------------------------------- 85.1/85.1 kB 1.6 MB/s eta 0:00:00
+Requirement already satisfied: idna>=3.18 in c:\users\venut\appdata\local\programs\python\python312\lib\site-packages (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper) (3.20)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper)
+  Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub>=0.21->faster-whisper)
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Installing collected packages: flatbuffers, truststore, pyyaml, protobuf, packaging, numpy, hf-xet, h11, fsspec, filelock, colorama, click, av, anyio, tqdm, onnxruntime, httpcore2, ctranslate2, httpx2, huggingface-hub, tokenizers, faster-whisper
+Successfully installed anyio-4.16.0 av-19.0.2 click-8.5.0 colorama-0.4.6 ctranslate2-4.8.5 faster-whisper-1.2.1 filelock-4.2.9 flatbuffers-25.12.19 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.8.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.4.0 numpy-2.5.4 onnxruntime-1.31.1 packaging-26.3 protobuf-7.36.2 pyyaml-6.0.3 tokenizers-0.23.3 tqdm-4.70.1 truststore-0.10.5
+
+[notice] A new release of pip is available: 23.1.2 -> 26.3
+[notice] To update, run: C:\Users\venut\AppData\Local\Programs\Python\Python312\python.exe -m pip install --upgrade pip
+[Wed 11/04/2026 23:31:45.32] pip exit code 0 
