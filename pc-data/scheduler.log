@@ -614,3 +614,6 @@
 [2026-11-05 09:50:11 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 09:51:52 ET] sync_to_github.py: FAILED (exit 1) in 101s — AssertionError: refusing non-pc-data path: hung-number-board.html
 [2026-11-05 09:52:23 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 09:54:03 ET] sync_to_github.py: FAILED (exit 1) in 100s —   FAILED: pc-data/chet-dhlow2-1105.log (HTTP 409: {'error': '{"message":"is at 7e4c64a6f06ec622ec05e0991e09f82175d243bf but expected e34ee606d73d1b3e6cb4287c760
+[2026-11-05 09:54:34 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 09:54:37 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 184 events (75 with odds), db total 22448 snapshots / 183 events, feeds ok 6 fail 0
