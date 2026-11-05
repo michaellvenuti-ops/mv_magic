@@ -1,5 +1,24 @@
 {
  "entries": {
+  " |  | +100 [50%] $1,000 Polymarket US Polymarket US | +104 [49.02%] $957.23 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.25,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "+100",
+    "side": "+100 [50%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+104",
+    "side": "+104 [49.02%] $957.23 ProphetX",
+    "stake": 957.23
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | +100 [50%] $1,000 Polymarket US Polymarket US | +105.7 [48.61%] $949.28 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -16,6 +35,25 @@
     "price": "+105.7",
     "side": "+105.7 [48.61%] $949.28 ProphetX",
     "stake": 949.28
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1011.1 [91%] $1,000 Polymarket US Polymarket US | +1011.1 [9%] $110 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.62,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1011.1",
+    "side": "-1011.1 [91%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+1011.1",
+    "side": "+1011.1 [9%] $110 DraftKings Predictions",
+    "stake": 110.0
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -152,6 +190,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -107.3 [50%] $1,000 Kalshi Kalshi | +104 [49.02%] $957 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.27,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-107.3",
+    "side": "-107.3 [50%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+104",
+    "side": "+104 [49.02%] $957 ProphetX",
+    "stake": 957.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -107.3 [50%] $1,000 Kalshi Kalshi | +105.7 [48.61%] $949.04 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -168,6 +225,139 @@
     "price": "+105.7",
     "side": "+105.7 [48.61%] $949.04 ProphetX",
     "stake": 949.04
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1086.7 [91%] $1,000 Kalshi Kalshi | +1011.1 [9%] $110 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.62,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-1086.7",
+    "side": "-1086.7 [91%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+1011.1",
+    "side": "+1011.1 [9%] $110 DraftKings Predictions",
+    "stake": 110.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -111.6 [51%] $1,000 Kalshi Kalshi | +107 [48.31%] $925.39 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.56,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-111.6",
+    "side": "-111.6 [51%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+107",
+    "side": "+107 [48.31%] $925.39 ProphetX",
+    "stake": 925.39
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1150 [92%] $1,000 DraftKings Predictions DraftKings Predictions | +1241.3 [7%] $80 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.5,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "DraftKings Predictions",
+    "price": "-1150",
+    "side": "-1150 [92%] $1,000 DraftKings Predictions",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1241.3",
+    "side": "+1241.3 [7%] $80 Kalshi",
+    "stake": 80.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1236 [92%] $1,000 Kalshi Kalshi | +1076.5 [8%] $97.72 Polymarket US Polymarket US": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.54,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-1236",
+    "side": "-1236 [92%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Polymarket US",
+    "price": "+1076.5",
+    "side": "+1076.5 [8%] $97.72 Polymarket US",
+    "stake": 97.72
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1328.6 [93%] $1,000 Polymarket US Polymarket US | +1241.3 [7%] $80 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.92,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1328.6",
+    "side": "-1328.6 [93%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1241.3",
+    "side": "+1241.3 [7%] $80 Kalshi",
+    "stake": 80.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1333.9 [93%] $1,000 Kalshi Kalshi | +1100 [8.33%] $91.25 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.5,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-1333.9",
+    "side": "-1333.9 [93%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1100",
+    "side": "+1100 [8.33%] $91.25 ProphetX",
+    "stake": 91.25
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1350 [93.10%] $1,000 ProphetX ProphetX | +1241.3 [7%] $80 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.69,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-1350",
+    "side": "-1350 [93.10%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1241.3",
+    "side": "+1241.3 [7%] $80 Kalshi",
+    "stake": 80.0
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -209,6 +399,82 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -1443.9 [94%] $1,000 Polymarket US Polymarket US | +1245 [7%] $79.14 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.36,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1443.9",
+    "side": "-1443.9 [94%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1245",
+    "side": "+1245 [7%] $79.14 Kalshi",
+    "stake": 79.14
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1516.1 [94%] $1,000 Polymarket US Polymarket US | +1241.3 [7%] $80 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.72,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1516.1",
+    "side": "-1516.1 [94%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1241.3",
+    "side": "+1241.3 [7%] $80 Kalshi",
+    "stake": 80.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1527 [94%] $1,000 Polymarket US Polymarket US | +1241.3 [7%] $80 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.76,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1527",
+    "side": "-1527 [94%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+1241.3",
+    "side": "+1241.3 [7%] $80 Kalshi",
+    "stake": 80.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1548.6 [94%] $1,000 Polymarket US Polymarket US | +1300 [7.14%] $77.15 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.59,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-1548.6",
+    "side": "-1548.6 [94%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1300",
+    "side": "+1300 [7.14%] $77.15 ProphetX",
+    "stake": 77.15
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -1566.7 [94%] $1,000 DraftKings Predictions DraftKings Predictions | +1775.3 [5%] $56 Kalshi Kalshi": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -225,6 +491,25 @@
     "price": "+1775.3",
     "side": "+1775.3 [5%] $56 Kalshi",
     "stake": 56.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -1684.1 [94%] $1,000 Kalshi Kalshi | +1300 [7.14%] $77.10 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.65,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-1684.1",
+    "side": "-1684.1 [94%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1300",
+    "side": "+1300 [7.14%] $77.10 ProphetX",
+    "stake": 77.1
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -247,6 +532,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -18357.9 [99%] $1,000 Polymarket US Polymarket US | +4579 [2%] $22 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.66,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-18357.9",
+    "side": "-18357.9 [99%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+4579",
+    "side": "+4579 [2%] $22 Kalshi",
+    "stake": 22.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -2042.5 [95%] $1,000 Kalshi Kalshi | +1737.5 [5%] $60.84 Polymarket US Polymarket US": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -263,6 +567,82 @@
     "price": "+1737.5",
     "side": "+1737.5 [5%] $60.84 Polymarket US",
     "stake": 60.84
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2140.7 [95%] $1,000 Kalshi Kalshi | +1734.6 [5%] $60.80 Polymarket US Polymarket US": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.33,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2140.7",
+    "side": "-2140.7 [95%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Polymarket US",
+    "price": "+1734.6",
+    "side": "+1734.6 [5%] $60.80 Polymarket US",
+    "stake": 60.8
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2395.6 [96%] $1,000 Kalshi Kalshi | +1800 [5.26%] $55.89 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.34,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2395.6",
+    "side": "-2395.6 [96%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1800",
+    "side": "+1800 [5.26%] $55.89 ProphetX",
+    "stake": 55.89
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -23994.6 [99.58%] $1,000 ProphetX ProphetX | +4579 [2%] $22 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.75,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-23994.6",
+    "side": "-23994.6 [99.58%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+4579",
+    "side": "+4579 [2%] $22 Kalshi",
+    "stake": 22.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2400 [96%] $1,000 DraftKings Predictions DraftKings Predictions | +2757.1 [4%] $38.11 Polymarket US Polymarket US": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.71,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "DraftKings Predictions",
+    "price": "-2400",
+    "side": "-2400 [96%] $1,000 DraftKings Predictions",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Polymarket US",
+    "price": "+2757.1",
+    "side": "+2757.1 [4%] $38.11 Polymarket US",
+    "stake": 38.11
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -285,6 +665,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -24900 [99.60%] $1,000 ProphetX ProphetX | +4579 [2%] $22 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.77,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-24900",
+    "side": "-24900 [99.60%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+4579",
+    "side": "+4579 [2%] $22 Kalshi",
+    "stake": 22.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -2536.3 [96%] $1,000 Kalshi Kalshi | +2100 [4.55%] $48.17 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -301,6 +700,25 @@
     "price": "+2100",
     "side": "+2100 [4.55%] $48.17 ProphetX",
     "stake": 48.17
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2580.1 [96%] $1,000 Kalshi Kalshi | +1900 [5%] $55.37 Polymarket US Polymarket US": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.58,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2580.1",
+    "side": "-2580.1 [96%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Polymarket US",
+    "price": "+1900",
+    "side": "+1900 [5%] $55.37 Polymarket US",
+    "stake": 55.37
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -323,6 +741,44 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -2580.1 [96%] $1,000 Kalshi Kalshi | +1924.5 [4.94%] $52.30 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.29,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2580.1",
+    "side": "-2580.1 [96%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1924.5",
+    "side": "+1924.5 [4.94%] $52.30 ProphetX",
+    "stake": 52.3
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2580.1 [96%] $1,000 Kalshi Kalshi | +2000 [4.76%] $50.43 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.11,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2580.1",
+    "side": "-2580.1 [96%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+2000",
+    "side": "+2000 [4.76%] $50.43 ProphetX",
+    "stake": 50.43
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -2580.1 [96%] $1,000 Kalshi Kalshi | +2005.1 [4.75%] $50.30 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -339,6 +795,120 @@
     "price": "+2005.1",
     "side": "+2005.1 [4.75%] $50.30 ProphetX",
     "stake": 50.3
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2580.1 [96%] $1,000 Kalshi Kalshi | +2400 [4%] $52 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.26,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-2580.1",
+    "side": "-2580.1 [96%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+2400",
+    "side": "+2400 [4%] $52 DraftKings Predictions",
+    "stake": 52.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2772 [97%] $1,000 Polymarket US Polymarket US | +1924.6 [4.94%] $52.04 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.76,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-2772",
+    "side": "-2772 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+1924.6",
+    "side": "+1924.6 [4.94%] $52.04 ProphetX",
+    "stake": 52.04
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -2772 [97%] $1,000 Polymarket US Polymarket US | +2400 [4%] $52 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.75,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-2772",
+    "side": "-2772 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+2400",
+    "side": "+2400 [4%] $52 DraftKings Predictions",
+    "stake": 52.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -300 [75.00%] $1,000 ProphetX ProphetX | +280 [25%] $350 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.73,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-300",
+    "side": "-300 [75.00%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+280",
+    "side": "+280 [25%] $350 Kalshi",
+    "stake": 350.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -3092.1 [97%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $44 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.34,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-3092.1",
+    "side": "-3092.1 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2242.6",
+    "side": "+2242.6 [4%] $44 Kalshi",
+    "stake": 44.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -3233.3 [97%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $44 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.45,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-3233.3",
+    "side": "-3233.3 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2242.6",
+    "side": "+2242.6 [4%] $44 Kalshi",
+    "stake": 44.0
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -380,6 +950,44 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -3270.2 [97%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $44 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.49,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-3270.2",
+    "side": "-3270.2 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2242.6",
+    "side": "+2242.6 [4%] $44 Kalshi",
+    "stake": 44.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -3273.6 [97.04%] $1,000 ProphetX ProphetX | +2242.6 [4%] $44 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.34,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-3273.6",
+    "side": "-3273.6 [97.04%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2242.6",
+    "side": "+2242.6 [4%] $44 Kalshi",
+    "stake": 44.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -3300 [97.06%] $1,000 ProphetX ProphetX | +2242.6 [4%] $44 Kalshi Kalshi": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -415,6 +1023,25 @@
     "price": "+2400",
     "side": "+2400 [4%] $43.93 Polymarket US",
     "stake": 43.93
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -3300 [97.06%] $1,000 ProphetX ProphetX | +2639.2 [3%] $37.59 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.76,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-3300",
+    "side": "-3300 [97.06%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2639.2",
+    "side": "+2639.2 [3%] $37.59 Kalshi",
+    "stake": 37.59
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -494,6 +1121,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -3476.2 [97%] $1,000 Kalshi Kalshi | +2650.1 [3.64%] $38.14 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.91,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-3476.2",
+    "side": "-3476.2 [97%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+2650.1",
+    "side": "+2650.1 [3.64%] $38.14 ProphetX",
+    "stake": 38.14
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -3476.2 [97%] $1,000 Kalshi Kalshi | +2660.3 [3.62%] $38 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -551,6 +1197,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -3648.3 [97%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $44 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.77,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-3648.3",
+    "side": "-3648.3 [97%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+2242.6",
+    "side": "+2242.6 [4%] $44 Kalshi",
+    "stake": 44.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -404.1 [79%] $1,000 Kalshi Kalshi | +377.5 [20.94%] $265.45 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -567,6 +1232,44 @@
     "price": "+377.5",
     "side": "+377.5 [20.94%] $265.45 ProphetX",
     "stake": 265.45
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -425 [80.95%] $1,000 ProphetX ProphetX | +398.1 [19%] $248 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.39,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-425",
+    "side": "-425 [80.95%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+398.1",
+    "side": "+398.1 [19%] $248 Kalshi",
+    "stake": 248.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -4327 [98%] $1,000 Kalshi Kalshi | +3233.3 [3%] $41 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.72,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-4327",
+    "side": "-4327 [98%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+3233.3",
+    "side": "+3233.3 [3%] $41 DraftKings Predictions",
+    "stake": 41.0
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -684,6 +1387,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -5268.3 [98%] $1,000 Kalshi Kalshi | +2704.4 [3.57%] $37.05 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.74,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-5268.3",
+    "side": "-5268.3 [98%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+2704.4",
+    "side": "+2704.4 [3.57%] $37.05 ProphetX",
+    "stake": 37.05
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -5268.3 [98%] $1,000 Kalshi Kalshi | +3008.6 [3.22%] $33.43 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -779,6 +1501,63 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -580 [85.29%] $1,000 ProphetX ProphetX | +529.2 [15%] $186 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.43,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-580",
+    "side": "-580 [85.29%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+529.2",
+    "side": "+529.2 [15%] $186 Kalshi",
+    "stake": 186.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -580 [85.29%] $1,000 ProphetX ProphetX | +614.3 [14%] $176 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.59,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-580",
+    "side": "-580 [85.29%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+614.3",
+    "side": "+614.3 [14%] $176 DraftKings Predictions",
+    "stake": 176.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -610.4 [85%] $1,000 Kalshi Kalshi | +579.6 [14.71%] $174.21 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -0.88,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-610.4",
+    "side": "-610.4 [85%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+579.6",
+    "side": "+579.6 [14.71%] $174.21 ProphetX",
+    "stake": 174.21
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -610.4 [85%] $1,000 Kalshi Kalshi | +581.2 [14.68%] $173.80 ProphetX ProphetX": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -814,6 +1593,101 @@
     "price": "+614.3",
     "side": "+614.3 [14.00%] $164.47 ProphetX",
     "stake": 164.47
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -698 [87.47%] $1,000 ProphetX ProphetX | +609.1 [13%] $160.84 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.76,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-698",
+    "side": "-698 [87.47%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+609.1",
+    "side": "+609.1 [13%] $160.84 Kalshi",
+    "stake": 160.84
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -719.1 [87%] $1,000 Kalshi Kalshi | +669.2 [13%] $157.03 Polymarket US Polymarket US": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.55,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-719.1",
+    "side": "-719.1 [87%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Polymarket US",
+    "price": "+669.2",
+    "side": "+669.2 [13%] $157.03 Polymarket US",
+    "stake": 157.03
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -733.3 [88%] $1,000 Polymarket US Polymarket US | +685 [12%] $144 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.49,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-733.3",
+    "side": "-733.3 [88%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+685",
+    "side": "+685 [12%] $144 Kalshi",
+    "stake": 144.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -788 [88%] $1,000 Kalshi Kalshi | +686.8 [12.71%] $145.77 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.66,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-788",
+    "side": "-788 [88%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+686.8",
+    "side": "+686.8 [12.71%] $145.77 ProphetX",
+    "stake": 145.77
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -809.1 [89%] $1,000 DraftKings Predictions DraftKings Predictions | +858 [10%] $114.71 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.43,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "DraftKings Predictions",
+    "price": "-809.1",
+    "side": "-809.1 [89%] $1,000 DraftKings Predictions",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+858",
+    "side": "+858 [10%] $114.71 Kalshi",
+    "stake": 114.71
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -874,6 +1748,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  " |  | -900 [90%] $1,000 DraftKings Predictions DraftKings Predictions | +953.4 [9%] $103.18 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.48,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "DraftKings Predictions",
+    "price": "-900",
+    "side": "-900 [90%] $1,000 DraftKings Predictions",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+953.4",
+    "side": "+953.4 [9%] $103.18 Kalshi",
+    "stake": 103.18
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   " |  | -9252.3 [99%] $1,000 Polymarket US Polymarket US | +4579 [2%] $22 Kalshi Kalshi": {
    "arb_risk": false,
    "first_reported": "2026-11-05T09:50:22-05:00",
@@ -909,6 +1802,63 @@
     "price": "+840.7",
     "side": "+840.7 [10%] $118 Kalshi",
     "stake": 118.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -940 [90.38%] $1,000 ProphetX ProphetX | +900 [10%] $122 DraftKings Predictions DraftKings Predictions": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.59,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "ProphetX",
+    "price": "-940",
+    "side": "-940 [90.38%] $1,000 ProphetX",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "DraftKings Predictions",
+    "price": "+900",
+    "side": "+900 [10%] $122 DraftKings Predictions",
+    "stake": 122.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -952.6 [91%] $1,000 Polymarket US Polymarket US | +840.7 [10%] $117 Kalshi Kalshi": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.72,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Polymarket US",
+    "price": "-952.6",
+    "side": "-952.6 [91%] $1,000 Polymarket US",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Kalshi",
+    "price": "+840.7",
+    "side": "+840.7 [10%] $117 Kalshi",
+    "stake": 117.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  " |  | -967.2 [90%] $1,000 Kalshi Kalshi | +810 [10.99%] $123.45 ProphetX ProphetX": {
+   "arb_risk": false,
+   "first_reported": "2026-11-05T10:32:32-05:00",
+   "hold_pct": -1.79,
+   "last_seen": "2026-11-05",
+   "leg1": {
+    "book": "Kalshi",
+    "price": "-967.2",
+    "side": "-967.2 [90%] $1,000 Kalshi",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "ProphetX",
+    "price": "+810",
+    "side": "+810 [10.99%] $123.45 ProphetX",
+    "stake": 123.45
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
