@@ -1020,3 +1020,29 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 17:30:13 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 17:30:45 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 38642 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 17:32:20 ET] upset_watch.py: OK in 4s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:35:52 ET] sync_to_github.py: OK in 122s —   ok: hung-number-board-pc.html
+[2026-11-05 17:35:53 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 14, sog-middles: 79. Detail
+[2026-11-05 17:36:24 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:36:28 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (130 with odds), db total 38860 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:38:29 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:40:30 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:41:33 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 39078 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:42:34 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:44:35 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:47:51 ET] dh_arbitrage.py: FAILED (exit 2) in 107s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 17:48:22 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:48:25 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 39296 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:50:26 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:52:27 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:53:29 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (130 with odds), db total 39514 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:54:31 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:56:32 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:58:33 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 17:58:35 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (130 with odds), db total 39732 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 17:59:47 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 72s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 18:00:48 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:01:08 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS:  |  | -4101.3 [97%] $1,000 Kalshi Kalshi | +2636.7 [3.65%] $38.17 ProphetX ProphetX
+[2026-11-05 18:03:09 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:03:41 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (126 with odds), db total 39950 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:05:12 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:06:57 ET] dh_game_middles.py: FAILED (exit 1) in 74s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
