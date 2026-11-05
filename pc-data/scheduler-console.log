@@ -1046,3 +1046,32 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 18:03:41 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (126 with odds), db total 39950 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 18:05:12 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 18:06:57 ET] dh_game_middles.py: FAILED (exit 1) in 74s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 18:09:09 ET] sync_to_github.py: OK in 132s —   ok: hung-number-board-pc.html
+[2026-11-05 18:09:10 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 14, sog-middles: 79. Detail
+[2026-11-05 18:09:41 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:09:46 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (126 with odds), db total 40168 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:12:38 ET] dh_prop_middles.py: FAILED (exit 1) in 82s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 69: character maps to <undefined>
+[2026-11-05 18:13:10 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:16:19 ET] dh_key_number_middles.py: OK in 189s — key-number-middles: no new strict-key middles.
+[2026-11-05 18:16:52 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:16:56 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (126 with odds), db total 40386 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:18:05 ET] hung_number.py: OK in 68s — No new hung numbers (12 current flags).
+[2026-11-05 18:18:10 ET] rlm.py: OK in 5s
+[2026-11-05 18:18:13 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 18:18:15 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 18:19:33 ET] dh_sog_middles.py: FAILED (exit 1) in 78s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 22: character maps to <undefined>
+[2026-11-05 18:20:28 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-05 18:21:00 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:22:04 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (126 with odds), db total 40604 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:23:05 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:25:06 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:27:07 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:27:10 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (126 with odds), db total 40822 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:29:11 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:31:12 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:32:15 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (125 with odds), db total 41040 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:33:16 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:35:16 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:37:17 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:37:20 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (126 with odds), db total 41258 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 18:39:21 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
