@@ -1,0 +1,31 @@
+[Wed 11/04/2026 23:36:59.92] pip install ct2 3.24 + fw 1.0.3 starting 
+Collecting ctranslate2==3.24.0
+  Downloading ctranslate2-3.24.0-cp312-cp312-win_amd64.whl (20.2 MB)
+     ---------------------------------------- 20.2/20.2 MB 7.8 MB/s eta 0:00:00
+Collecting faster-whisper==1.0.3
+  Downloading faster_whisper-1.0.3-py3-none-any.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 6.6 MB/s eta 0:00:00
+Collecting setuptools (from ctranslate2==3.24.0)
+  Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+     -------------------------------------- 876.3/876.3 kB 5.6 MB/s eta 0:00:00
+Requirement already satisfied: numpy in c:\users\venut\appdata\local\programs\python\python312\lib\site-packages (from ctranslate2==3.24.0) (1.26.4)
+Requirement already satisfied: pyyaml<7,>=5.3 in c:\users\venut\appdata\local\programs\python\python312\lib\site-packages (from ctranslate2==3.24.0) (6.0.3)
+Collecting av<13,>=11.0 (from faster-whisper==1.0.3)
+  Downloading av-12.3.0-cp312-cp312-win_amd64.whl (26.0 MB)
+     ---------------------------------------- 26.0/26.0 MB 5.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of faster-whisper to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install ctranslate2==3.24.0 and faster-whisper==1.0.3 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested ctranslate2==3.24.0
+    faster-whisper 1.0.3 depends on ctranslate2<5 and >=4.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 23.1.2 -> 26.3
+[notice] To update, run: C:\Users\venut\AppData\Local\Programs\Python\Python312\python.exe -m pip install --upgrade pip
+[Wed 11/04/2026 23:37:11.28] pip exit code 1 
