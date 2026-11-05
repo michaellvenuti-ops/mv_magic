@@ -612,3 +612,6 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 09:18:49 ET] upset_watch.py: OK in 1s — SUMMARY: 154 games checked, 0 new trigger(s)
 [2026-11-05 09:20:10 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
 [2026-11-05 09:20:12 ET] nba_overs_daily.py: OK in 3s — }
+[2026-11-05 09:21:28 ET] sync_to_github.py: FAILED (exit 1) in 76s — AssertionError: refusing non-pc-data path: hung-number-board.html
+[2026-11-05 09:22:03 ET] upset_watch.py: OK in 4s — SUMMARY: 154 games checked, 0 new trigger(s)
+[2026-11-05 09:22:07 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 184 events (75 with odds), db total 21528 snapshots / 183 events, feeds ok 6 fail 0
