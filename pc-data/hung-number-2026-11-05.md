@@ -1,11 +1,9 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 17:13)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 18:16)
 
-- Delaware vs Kennesaw State | BetMGM | moneyline Kennesaw State | value: Kennesaw State | book 99.0 vs median 50.0 | div 49.0 
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
 - Western Kentucky vs Middle Tennessee | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
 - Michigan State vs Michigan | DraftKings | spread | value: dog | book 39.5 vs median 13.5 | div 26.0 
 - Miami (FL) vs Notre Dame | Hard Rock | spread | value: favorite | book 6.5 vs median 7.5 | div 1.0 middle pairing spans key number 7
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 54.5 | div 4.0 
