@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 11:46)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 12:50)
 
 - UCLA vs Minnesota | FanDuel | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
 - Old Dominion vs Coastal Carolina | FanDuel | spread | value: dog | book 7.5 vs median 6.5 | div 1.0 middle pairing spans key number 7
