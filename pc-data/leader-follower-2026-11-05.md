@@ -19,3 +19,6 @@
 ## 2026-11-05T06:26:41-05:00 — NFL unreadable: NFL board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
 ## 2026-11-05T06:26:42-05:00 — NCAAF unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
 ## 2026-11-05T06:26:43-05:00 — 0 games, 0 leads credited
+## 2026-11-05T07:27:27-05:00 — NFL unreadable: NFL board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
+## 2026-11-05T07:27:29-05:00 — NCAAF unreadable: NCAAF board: zero games parsed from public HTML (JS-rendered snapshot?). Dump saved if --dump was used.
+## 2026-11-05T07:27:29-05:00 — 0 games, 0 leads credited
