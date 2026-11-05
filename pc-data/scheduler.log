@@ -678,3 +678,6 @@
 [2026-11-05 11:10:05 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 24690 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 11:12:59 ET] sync_to_github.py: FAILED (exit 1) in 174s —   FAILED: pc-data/steam-side-2026-11-05.md (HTTP 500: {'error': ''})
 [2026-11-05 11:13:30 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:16:19 ET] sync_to_github.py: FAILED (exit 1) in 169s —   FAILED: pc-data/steam-side-state.json (HTTP 500: {'error': ''})
+[2026-11-05 11:16:50 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:16:52 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 24908 snapshots / 261 events, feeds ok 6 fail 0
