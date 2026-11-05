@@ -897,3 +897,32 @@
 [2026-11-05 15:55:13 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 34718 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 15:55:44 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 15:56:57 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 72s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 15:59:01 ET] sync_to_github.py: OK in 124s —   ok: hung-number-board-pc.html
+[2026-11-05 15:59:01 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 14, sog-middles: 53. Detail
+[2026-11-05 15:59:32 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:59:58 ET] dh_low_holds.py: OK in 25s — LOW-HOLDS:  |  | -10644.6 [99%] $1,000 Kalshi Kalshi | +4430.6 [2.21%] $22.72 ProphetX ProphetX
+[2026-11-05 16:00:33 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (131 with odds), db total 34936 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:02:30 ET] dh_game_middles.py: FAILED (exit 1) in 88s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 16:03:03 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:05:04 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:05:39 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 35154 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:09:26 ET] dh_key_number_middles.py: OK in 197s — key-number-middles: no new strict-key middles.
+[2026-11-05 16:10:59 ET] dh_prop_middles.py: FAILED (exit 1) in 93s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 69: character maps to <undefined>
+[2026-11-05 16:11:32 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:11:36 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (131 with odds), db total 35372 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:12:48 ET] hung_number.py: OK in 71s — HUNG NUMBER: Delaware vs Kennesaw State — BetMGM moneyline Kennesaw State value Kennesaw State (99.0 vs median 50.0)
+[2026-11-05 16:12:53 ET] rlm.py: OK in 5s
+[2026-11-05 16:12:56 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 16:12:58 ET] steam_side.py: OK in 2s — STEAM-SIDE FLAG: FBS UCLA @ Minnesota | 2026-11-05 | Fanatics | Minnesota spread 5.5 (median 5.5 -> 4.5)
+[2026-11-05 16:14:22 ET] dh_sog_middles.py: FAILED (exit 1) in 83s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 16: character maps to <undefined>
+[2026-11-05 16:15:18 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-05 16:15:49 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:16:53 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 35590 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:17:55 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:19:56 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:21:57 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:21:59 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 35808 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:24:00 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:26:01 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 16:27:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (131 with odds), db total 36026 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 16:28:06 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
