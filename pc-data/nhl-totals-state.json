@@ -49,47 +49,148 @@
   },
   "2026-11-05": {
    "date": "2026-11-05",
-   "flags": [],
+   "flags": [
+    {
+     "away": "BOS",
+     "away_pred": 3.11,
+     "flag": "under",
+     "home": "PIT",
+     "home_pred": 2.32,
+     "over_juice": -112,
+     "predicted": 5.43,
+     "start": "2026-11-06T00:00Z",
+     "total": 6.5,
+     "under_juice": -108
+    }
+   ],
    "games": [
     {
-     "away": "OTT",
+     "away": "UTA",
+     "away_pred": 3.1,
      "flag": null,
-     "home": "BUF",
-     "over_juice": null,
-     "predicted": null,
-     "start": "2026-11-05T00:30Z",
-     "total": null,
-     "under_juice": null
+     "home": "MTL",
+     "home_pred": 3.45,
+     "over_juice": -105,
+     "predicted": 6.55,
+     "start": "2026-11-06T00:00Z",
+     "total": 6.5,
+     "under_juice": -115
+    },
+    {
+     "away": "VGK",
+     "away_pred": 3.33,
+     "flag": null,
+     "home": "DET",
+     "home_pred": 3.08,
+     "over_juice": -130,
+     "predicted": 6.41,
+     "start": "2026-11-06T00:00Z",
+     "total": 5.5,
+     "under_juice": 110
     },
     {
      "away": "CHI",
      "flag": null,
-     "home": "FLA",
-     "over_juice": null,
+     "home": "TB",
+     "over_juice": -108,
      "predicted": null,
-     "start": "2026-11-05T00:30Z",
-     "total": null,
-     "under_juice": null
+     "start": "2026-11-06T00:00Z",
+     "total": 6.5,
+     "under_juice": -112
     },
     {
-     "away": "SJ",
+     "away": "STL",
      "flag": null,
-     "home": "LA",
-     "over_juice": null,
+     "home": "NJ",
+     "over_juice": -135,
      "predicted": null,
-     "start": "2026-11-05T03:00Z",
-     "total": null,
-     "under_juice": null
+     "start": "2026-11-06T00:00Z",
+     "total": 5.5,
+     "under_juice": 114
     },
     {
-     "away": "CGY",
+     "away": "CAR",
+     "away_pred": 3.09,
      "flag": null,
-     "home": "SEA",
-     "over_juice": null,
-     "predicted": null,
-     "start": "2026-11-05T03:00Z",
-     "total": null,
-     "under_juice": null
+     "home": "NYI",
+     "home_pred": 2.56,
+     "over_juice": -122,
+     "predicted": 5.65,
+     "start": "2026-11-06T00:00Z",
+     "total": 5.5,
+     "under_juice": 102
+    },
+    {
+     "away": "PHI",
+     "away_pred": 2.29,
+     "flag": null,
+     "home": "NYR",
+     "home_pred": 2.75,
+     "over_juice": -130,
+     "predicted": 5.05,
+     "start": "2026-11-06T00:00Z",
+     "total": 5.5,
+     "under_juice": 110
+    },
+    {
+     "away": "BOS",
+     "away_pred": 3.11,
+     "flag": "under",
+     "home": "PIT",
+     "home_pred": 2.32,
+     "over_juice": -112,
+     "predicted": 5.43,
+     "start": "2026-11-06T00:00Z",
+     "total": 6.5,
+     "under_juice": -108
+    },
+    {
+     "away": "DAL",
+     "away_pred": 2.75,
+     "flag": null,
+     "home": "CBJ",
+     "home_pred": 2.44,
+     "over_juice": -115,
+     "predicted": 5.19,
+     "start": "2026-11-06T00:00Z",
+     "total": 5.5,
+     "under_juice": -105
+    },
+    {
+     "away": "VAN",
+     "away_pred": 2.55,
+     "flag": null,
+     "home": "WPG",
+     "home_pred": 3.85,
+     "over_juice": -102,
+     "predicted": 6.4,
+     "start": "2026-11-06T01:00Z",
+     "total": 6.5,
+     "under_juice": -118
+    },
+    {
+     "away": "ANA",
+     "away_pred": 2.5,
+     "flag": null,
+     "home": "EDM",
+     "home_pred": 3.45,
+     "over_juice": -142,
+     "predicted": 5.95,
+     "start": "2026-11-06T01:00Z",
+     "total": 6.5,
+     "under_juice": 120
+    },
+    {
+     "away": "NSH",
+     "away_pred": 2.97,
+     "flag": null,
+     "home": "COL",
+     "home_pred": 3.16,
+     "over_juice": -102,
+     "predicted": 6.13,
+     "start": "2026-11-06T02:30Z",
+     "total": 6.5,
+     "under_juice": -118
     }
    ],
    "source": "NHL club-stats API + ESPN DraftKings totals"
