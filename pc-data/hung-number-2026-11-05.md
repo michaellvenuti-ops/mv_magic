@@ -1,7 +1,6 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 12:50)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 14:02)
 
 - UCLA vs Minnesota | FanDuel | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
-- Old Dominion vs Coastal Carolina | FanDuel | spread | value: dog | book 7.5 vs median 6.5 | div 1.0 middle pairing spans key number 7
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
@@ -12,4 +11,5 @@
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 55.0 | div 4.5 
 - Liberty vs New Mexico State | bet365 | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
 - Liberty vs New Mexico State | FanDuel | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
+- Hawai'i vs UTEP | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
