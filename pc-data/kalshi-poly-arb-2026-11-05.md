@@ -1,0 +1,2 @@
+## 2026-11-05T11:36:27-05:00 — kalshi-poly-arb: 2 complete pairs read, 1 NEW/CHANGED delivered
+ |  | -1759.3 [95%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $45 Kalshi Kalshi :: {'leg1': {'side': '-1759.3 [95%] $1,000 Polymarket US', 'price': '-1759.3', 'book': 'Polymarket US', 'stake': 1000.0}, 'leg2': {'side': '+2242.6 [4%] $45 Kalshi', 'price': '+2242.6', 'book': 'Kalshi', 'stake': 45.0}, 'arb_risk': False, 'first_reported': '2026-11-05T11:36:27-05:00', 'last_seen': '2026-11-05', 'profit_pct': 95.0}
