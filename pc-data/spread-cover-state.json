@@ -1,0 +1,566 @@
+{
+ "meta": {
+  "source": "ScoresAndOdds public boards read 2026-11-05 ~13:14-13:22 UTC (8:14-8:22 AM ET): scoresandodds.com/nba and scoresandodds.com/ncaab (Open column + current spread with prices) and scoresandodds.com/nba/consensus-picks and scoresandodds.com/ncaab/consensus-picks (Spread splits: % of Bets / % of Money per side). NBA last-10 ATS from Covers matchup pages (Record - Last 10), shown W-L-Push; the 10-game window reaches back to Apr 2026 because only 6-7 games have been played this season. SAO does not label a timezone; its NBA times match Covers ET listings, so times are treated as ET. % of Money shown on both consensus pages. Excluded NCAAB (28 of 47): no published spread (4): Centre @ Belmont, Arkansas-Monticello @ Louisiana Tech, Central State (OH) @ Illinois State, La Sierra @ Pepperdine; spread but no consensus splits (24): Georgia State @ Charlotte, Howard @ Alcorn State, Chicago State @ Incarnate Word, Vermont @ Fairfield, Albany @ Manhattan, UMass Lowell @ Merrimack, UMBC @ Marist, Bryant @ Quinnipiac, Delaware State @ Navy, Binghamton @ Saint Peter's, NJIT @ Iona, Maine @ Sacred Heart, New Hampshire @ Rider, Cornell @ Lehigh, Stonehill @ Fordham, Jackson State @ Tulane, Northern Illinois @ Tulsa, West Georgia @ Loyola Chicago, VMI @ SMU, Jacksonville State @ South Alabama, East Texas A&M @ Rice, Le Moyne @ Creighton, South Florida @ DePaul, Towson @ Utah. On 4 NCAAB cards the small side's Money % number was not printed (bar only), so that side's money% is null and divergence was NOT evaluated from a computed remainder.",
+  "last_scan": "2026-11-05",
+  "method": "Frank Civittolo spread-cover: line movement toward a team + money% vs bet% divergence (NBA adds last-10 ATS context). Frank states no thresholds and no win-rate claim.",
+  "flag_rule_chets_display_choice": "Flag when the spread moved >=1.0 pt toward a side vs its stored opener AND money% - bet% >= 10 pts on that side. NBA '3-signal' tag at >=7 ATS wins in the last 10.",
+  "splits_source": "ScoresAndOdds public consensus pages (nba/consensus-picks, ncaab/consensus-picks) \u2014 % of Bets and % of Money, verified 2026-11-03 (NCAAB live; NBA same product, no games Nov 3)."
+ },
+ "openers": {
+  "NBA|2026-11-05|Orlando Magic|Phoenix Suns": {
+   "open_home_spread": -1.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NBA|2026-11-05|Miami Heat|Golden State Warriors": {
+   "open_home_spread": -4.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|McNeese|North Texas": {
+   "open_home_spread": 1.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Wake Forest|Vanderbilt": {
+   "open_home_spread": -17.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Chattanooga|Penn State": {
+   "open_home_spread": -16.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Bellarmine|Indiana": {
+   "open_home_spread": -26.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|LIU|Seton Hall": {
+   "open_home_spread": -18.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Buffalo|Pittsburgh": {
+   "open_home_spread": -19.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Green Bay|Cincinnati": {
+   "open_home_spread": -24.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Mercer|Virginia Tech": {
+   "open_home_spread": -21.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Hofstra|Princeton": {
+   "open_home_spread": -1.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Central Connecticut State|Syracuse": {
+   "open_home_spread": -22.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Mercyhurst|Notre Dame": {
+   "open_home_spread": -20.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Northwestern State|Mississippi State": {
+   "open_home_spread": -21.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Coastal Carolina|Duke": {
+   "open_home_spread": -41.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Toledo|Michigan State": {
+   "open_home_spread": -26.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Jacksonville|Florida": {
+   "open_home_spread": -34.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Gardner-Webb|Texas": {
+   "open_home_spread": -39.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Penn|Illinois": {
+   "open_home_spread": -29.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Bethune-Cookman|Texas Tech": {
+   "open_home_spread": -26.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Cal Poly|Arizona": {
+   "open_home_spread": -29.5,
+   "open_source": "ScoresAndOdds Open column",
+   "first_seen": "2026-11-05"
+  }
+ },
+ "days": {
+  "2026-11-05": {
+   "NBA": {
+    "games": [
+     {
+      "ats_away_last10": "3-7-0",
+      "ats_home_last10": "2-8-0",
+      "away": "Orlando Magic",
+      "away_bet_pct": 29,
+      "away_money_pct": 32,
+      "away_spread_juice": -114,
+      "current_home_spread": -1.5,
+      "home": "Phoenix Suns",
+      "home_bet_pct": 71,
+      "home_money_pct": 68,
+      "home_spread_juice": -106,
+      "open_home_spread": -1.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "9:00 PM"
+     },
+     {
+      "ats_away_last10": "4-6-0",
+      "ats_home_last10": "7-3-0",
+      "away": "Miami Heat",
+      "away_bet_pct": 52,
+      "away_money_pct": 59,
+      "away_spread_juice": -114,
+      "current_home_spread": -7.5,
+      "home": "Golden State Warriors",
+      "home_bet_pct": 48,
+      "home_money_pct": 41,
+      "home_spread_juice": -106,
+      "open_home_spread": -4.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "10:00 PM"
+     }
+    ],
+    "flags": []
+   },
+   "NCAAB": {
+    "games": [
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "McNeese",
+      "away_bet_pct": 66,
+      "away_money_pct": 87,
+      "away_spread_juice": -115,
+      "current_home_spread": 2.5,
+      "home": "North Texas",
+      "home_bet_pct": 34,
+      "home_money_pct": 13,
+      "home_spread_juice": -105,
+      "notes": "Open home spread is the mirror of McNeese -1.5 -112 shown on the favorite's row; home open juice not shown.",
+      "open_home_spread": 1.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "5:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Wake Forest",
+      "away_bet_pct": 43,
+      "away_money_pct": 25,
+      "away_spread_juice": -108,
+      "current_home_spread": -17.5,
+      "home": "Vanderbilt",
+      "home_bet_pct": 57,
+      "home_money_pct": 75,
+      "home_spread_juice": -112,
+      "open_home_spread": -17.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "6:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Chattanooga",
+      "away_bet_pct": 24,
+      "away_money_pct": 43,
+      "away_spread_juice": 100,
+      "current_home_spread": -12.5,
+      "home": "Penn State",
+      "home_bet_pct": 76,
+      "home_money_pct": 57,
+      "home_spread_juice": -120,
+      "open_home_spread": -16.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "6:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Bellarmine",
+      "away_bet_pct": 12,
+      "away_money_pct": null,
+      "away_spread_juice": -112,
+      "current_home_spread": -27.5,
+      "home": "Indiana",
+      "home_bet_pct": 88,
+      "home_money_pct": 93,
+      "home_spread_juice": -108,
+      "notes": "Bellarmine Money % not printed on the consensus card; divergence NOT evaluated from a computed remainder.",
+      "open_home_spread": -26.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "6:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "LIU",
+      "away_bet_pct": 17,
+      "away_money_pct": 18,
+      "away_spread_juice": -110,
+      "current_home_spread": -17.5,
+      "home": "Seton Hall",
+      "home_bet_pct": 83,
+      "home_money_pct": 82,
+      "home_spread_juice": -110,
+      "open_home_spread": -18.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "6:30 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Buffalo",
+      "away_bet_pct": 22,
+      "away_money_pct": 19,
+      "away_spread_juice": -105,
+      "current_home_spread": -18.5,
+      "home": "Pittsburgh",
+      "home_bet_pct": 78,
+      "home_money_pct": 81,
+      "home_spread_juice": -115,
+      "open_home_spread": -19.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Green Bay",
+      "away_bet_pct": 29,
+      "away_money_pct": 33,
+      "away_spread_juice": -108,
+      "current_home_spread": -24.5,
+      "home": "Cincinnati",
+      "home_bet_pct": 71,
+      "home_money_pct": 67,
+      "home_spread_juice": -112,
+      "open_home_spread": -24.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Mercer",
+      "away_bet_pct": 42,
+      "away_money_pct": 39,
+      "away_spread_juice": -112,
+      "current_home_spread": -21.5,
+      "home": "Virginia Tech",
+      "home_bet_pct": 58,
+      "home_money_pct": 61,
+      "home_spread_juice": -108,
+      "open_home_spread": -21.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Hofstra",
+      "away_bet_pct": 13,
+      "away_money_pct": null,
+      "away_spread_juice": -105,
+      "current_home_spread": -2.5,
+      "home": "Princeton",
+      "home_bet_pct": 87,
+      "home_money_pct": 96,
+      "home_spread_juice": -115,
+      "notes": "Hofstra Money % not printed on the consensus card; divergence NOT evaluated from a computed remainder.",
+      "open_home_spread": -1.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Central Connecticut State",
+      "away_bet_pct": 12,
+      "away_money_pct": 22,
+      "away_spread_juice": -102,
+      "current_home_spread": -20.5,
+      "home": "Syracuse",
+      "home_bet_pct": 88,
+      "home_money_pct": 78,
+      "home_spread_juice": -118,
+      "open_home_spread": -22.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Mercyhurst",
+      "away_bet_pct": 14,
+      "away_money_pct": 10,
+      "away_spread_juice": -115,
+      "current_home_spread": -19.5,
+      "home": "Notre Dame",
+      "home_bet_pct": 86,
+      "home_money_pct": 90,
+      "home_spread_juice": -105,
+      "open_home_spread": -20.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Northwestern State",
+      "away_bet_pct": 24,
+      "away_money_pct": 42,
+      "away_spread_juice": -110,
+      "current_home_spread": -21.5,
+      "home": "Mississippi State",
+      "home_bet_pct": 76,
+      "home_money_pct": 58,
+      "home_spread_juice": -110,
+      "open_home_spread": -21.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "7:30 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Coastal Carolina",
+      "away_bet_pct": 33,
+      "away_money_pct": 34,
+      "away_spread_juice": -108,
+      "current_home_spread": -40.5,
+      "home": "Duke",
+      "home_bet_pct": 67,
+      "home_money_pct": 66,
+      "home_spread_juice": -112,
+      "open_home_spread": -41.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "8:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Toledo",
+      "away_bet_pct": 20,
+      "away_money_pct": 27,
+      "away_spread_juice": -112,
+      "current_home_spread": -27.5,
+      "home": "Michigan State",
+      "home_bet_pct": 80,
+      "home_money_pct": 73,
+      "home_spread_juice": -108,
+      "open_home_spread": -26.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "8:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Jacksonville",
+      "away_bet_pct": 21,
+      "away_money_pct": 23,
+      "away_spread_juice": -105,
+      "current_home_spread": -33.5,
+      "home": "Florida",
+      "home_bet_pct": 79,
+      "home_money_pct": 77,
+      "home_spread_juice": -115,
+      "open_home_spread": -34.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "8:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Gardner-Webb",
+      "away_bet_pct": 16,
+      "away_money_pct": 25,
+      "away_spread_juice": -115,
+      "current_home_spread": -38.5,
+      "home": "Texas",
+      "home_bet_pct": 84,
+      "home_money_pct": 75,
+      "home_spread_juice": -105,
+      "open_home_spread": -39.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "8:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Penn",
+      "away_bet_pct": 17,
+      "away_money_pct": null,
+      "away_spread_juice": -110,
+      "current_home_spread": -30.5,
+      "home": "Illinois",
+      "home_bet_pct": 83,
+      "home_money_pct": 93,
+      "home_spread_juice": -110,
+      "notes": "Penn Money % not printed on the consensus card; divergence NOT evaluated from a computed remainder.",
+      "open_home_spread": -29.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "8:30 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Bethune-Cookman",
+      "away_bet_pct": 15,
+      "away_money_pct": null,
+      "away_spread_juice": -110,
+      "current_home_spread": -26.5,
+      "home": "Texas Tech",
+      "home_bet_pct": 85,
+      "home_money_pct": 93,
+      "home_spread_juice": -110,
+      "notes": "Bethune-Cookman Money % not printed on the consensus card; divergence NOT evaluated from a computed remainder.",
+      "open_home_spread": -26.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "9:00 PM"
+     },
+     {
+      "ats_away_last10": null,
+      "ats_home_last10": null,
+      "away": "Cal Poly",
+      "away_bet_pct": 36,
+      "away_money_pct": 37,
+      "away_spread_juice": -105,
+      "current_home_spread": -30.5,
+      "home": "Arizona",
+      "home_bet_pct": 64,
+      "home_money_pct": 63,
+      "home_spread_juice": -115,
+      "open_home_spread": -29.5,
+      "splits_source": "ScoresAndOdds consensus",
+      "tipoff_et": "10:30 PM"
+     }
+    ],
+    "flags": [
+     {
+      "sport": "NCAAB",
+      "away": "McNeese",
+      "home": "North Texas",
+      "tipoff_et": "5:00 PM",
+      "side": "away",
+      "team": "McNeese",
+      "spread": -2.5,
+      "spread_juice": -115,
+      "open_home_spread": 1.5,
+      "current_home_spread": 2.5,
+      "move_toward_side": 1.0,
+      "bet_pct": 66,
+      "money_pct": 87,
+      "divergence": 21,
+      "splits_source": "ScoresAndOdds consensus",
+      "ats_last10": null,
+      "three_signal": false
+     },
+     {
+      "sport": "NCAAB",
+      "away": "Chattanooga",
+      "home": "Penn State",
+      "tipoff_et": "6:00 PM",
+      "side": "away",
+      "team": "Chattanooga",
+      "spread": 12.5,
+      "spread_juice": 100,
+      "open_home_spread": -16.5,
+      "current_home_spread": -12.5,
+      "move_toward_side": 4.0,
+      "bet_pct": 24,
+      "money_pct": 43,
+      "divergence": 19,
+      "splits_source": "ScoresAndOdds consensus",
+      "ats_last10": null,
+      "three_signal": false
+     },
+     {
+      "sport": "NCAAB",
+      "away": "Central Connecticut State",
+      "home": "Syracuse",
+      "tipoff_et": "7:00 PM",
+      "side": "away",
+      "team": "Central Connecticut State",
+      "spread": 20.5,
+      "spread_juice": -102,
+      "open_home_spread": -22.5,
+      "current_home_spread": -20.5,
+      "move_toward_side": 2.0,
+      "bet_pct": 12,
+      "money_pct": 22,
+      "divergence": 10,
+      "splits_source": "ScoresAndOdds consensus",
+      "ats_last10": null,
+      "three_signal": false
+     },
+     {
+      "sport": "NCAAB",
+      "away": "Penn",
+      "home": "Illinois",
+      "tipoff_et": "8:30 PM",
+      "side": "home",
+      "team": "Illinois",
+      "spread": -30.5,
+      "spread_juice": -110,
+      "open_home_spread": -29.5,
+      "current_home_spread": -30.5,
+      "move_toward_side": 1.0,
+      "bet_pct": 83,
+      "money_pct": 93,
+      "divergence": 10,
+      "splits_source": "ScoresAndOdds consensus",
+      "ats_last10": null,
+      "three_signal": false
+     }
+    ]
+   }
+  }
+ },
+ "delivered": {
+  "NCAAB|2026-11-05|McNeese|North Texas|away": {
+   "spread": -2.5,
+   "date": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Chattanooga|Penn State|away": {
+   "spread": 12.5,
+   "date": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Central Connecticut State|Syracuse|away": {
+   "spread": 20.5,
+   "date": "2026-11-05"
+  },
+  "NCAAB|2026-11-05|Penn|Illinois|home": {
+   "spread": -30.5,
+   "date": "2026-11-05"
+  }
+ }
+}
