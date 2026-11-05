@@ -1075,3 +1075,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 18:37:17 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 18:37:20 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (126 with odds), db total 41258 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 18:39:21 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:41:22 ET] sync_to_github.py: OK in 121s —   ok: hung-number-board-pc.html
+[2026-11-05 18:41:22 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 12, sog-middles: 115. Detai
+[2026-11-05 18:41:53 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 18:42:26 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (126 with odds), db total 41476 snapshots / 261 events, feeds ok 6 fail 0
+^C[2026-11-05 18:42:30 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-05 18:42:31 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-05 18:42:32 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 0-0-0, $+0.00 (inverse money only where an opposite price was recorded)
