@@ -1151,3 +1151,257 @@ $1,000 ProphetX | ▲
 +102
 [50%]
 $952.79 Polymarket US w216.0 :: {'side': '▲\n-114\n[53.27%]\n$1,000 ProphetX', 'line': -114.0, 'price': '-114', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+102\n[50%]\n$952.79 Polymarket US', 'line': 102.0, 'price': '+102', 'book': 'Polymarket US', 'stake': 952.79}
+## 2026-11-05T17:05:27-05:00 — game-middles: 916 + 0 rows parsed (qualifying only)
+ |  | ▲
+-115
+$1,000 Fliff | ▲
++108
+[48.08%]
+$908.26 ProphetX w223.0 :: {'side': '▲\n-115\n$1,000 Fliff', 'line': -115.0, 'price': '-115', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n+108\n[48.08%]\n$908.26 ProphetX', 'line': 108.0, 'price': '+108', 'book': 'ProphetX', 'stake': 908.26}
+ |  | ▲
+-115
+$1,000 Fliff | ▲
++106
+[48.54%]
+$916.94 ProphetX w221.0 :: {'side': '▲\n-115\n$1,000 Fliff', 'line': -115.0, 'price': '-115', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n+106\n[48.54%]\n$916.94 ProphetX', 'line': 106.0, 'price': '+106', 'book': 'ProphetX', 'stake': 916.94}
+ |  | ▲
+-154
+[60.63%]
+$1,000 ProphetX | ▲
++150
+[40%]
+$681.84 Polymarket US w304.0 :: {'side': '▲\n-154\n[60.63%]\n$1,000 ProphetX', 'line': -154.0, 'price': '-154', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+150\n[40%]\n$681.84 Polymarket US', 'line': 150.0, 'price': '+150', 'book': 'Polymarket US', 'stake': 681.84}
+ |  | ▲
+-126
+[55.75%]
+$1,000 ProphetX | ▲
++117
+[46.09%]
+$828.29 ProphetX w243.0 :: {'side': '▲\n-126\n[55.75%]\n$1,000 ProphetX', 'line': -126.0, 'price': '-126', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+117\n[46.09%]\n$828.29 ProphetX', 'line': 117.0, 'price': '+117', 'book': 'ProphetX', 'stake': 828.29}
+ |  | ▲
+-130
+[56.52%]
+$1,000 ProphetX | ▲
++120
+[45.45%]
+$806 ProphetX w250.0 :: {'side': '▲\n-130\n[56.52%]\n$1,000 ProphetX', 'line': -130.0, 'price': '-130', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+120\n[45.45%]\n$806 ProphetX', 'line': 120.0, 'price': '+120', 'book': 'ProphetX', 'stake': 806.0}
+ |  | ▲
+-158
+[61.24%]
+$1,000 ProphetX | ▲
++144
+[40.98%]
+$671.97 ProphetX w302.0 :: {'side': '▲\n-158\n[61.24%]\n$1,000 ProphetX', 'line': -158.0, 'price': '-158', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+144\n[40.98%]\n$671.97 ProphetX', 'line': 144.0, 'price': '+144', 'book': 'ProphetX', 'stake': 671.97}
+ |  | ▲
+-104
+[50.98%]
+$1,000 ProphetX | ▲
++100
+[50%]
+$1,004.85 Polymarket US w204.0 :: {'side': '▲\n-104\n[50.98%]\n$1,000 ProphetX', 'line': -104.0, 'price': '-104', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+100\n[50%]\n$1,004.85 Polymarket US', 'line': 100.0, 'price': '+100', 'book': 'Polymarket US', 'stake': 1004.85}
+ |  | ▲
+-112
+[52.83%]
+$1,000 ProphetX | ▲
++102
+[49.50%]
+$937.69 ProphetX w214.0 :: {'side': '▲\n-112\n[52.83%]\n$1,000 ProphetX', 'line': -112.0, 'price': '-112', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+102\n[49.50%]\n$937.69 ProphetX', 'line': 102.0, 'price': '+102', 'book': 'ProphetX', 'stake': 937.69}
+ |  | ▲
+-111
+[52.61%]
+$1,000 ProphetX | ▲
++101
+[49.75%]
+$946.26 ProphetX w212.0 :: {'side': '▲\n-111\n[52.61%]\n$1,000 ProphetX', 'line': -111.0, 'price': '-111', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+101\n[49.75%]\n$946.26 ProphetX', 'line': 101.0, 'price': '+101', 'book': 'ProphetX', 'stake': 946.26}
+ |  | ▲
+-141
+[58%]
+$1,000 Polymarket US | ▲
++141
+[42%]
+$717.55 Polymarket US w282.0 :: {'side': '▲\n-141\n[58%]\n$1,000 Polymarket US', 'line': -141.0, 'price': '-141', 'book': 'Polymarket US', 'stake': 1000.0} / {'side': '▲\n+141\n[42%]\n$717.55 Polymarket US', 'line': 141.0, 'price': '+141', 'book': 'Polymarket US', 'stake': 717.55}
+ |  | ▲
+-138
+[57.98%]
+$1,000 ProphetX | ▲
++125
+[44.44%]
+$768.61 ProphetX w263.0 :: {'side': '▲\n-138\n[57.98%]\n$1,000 ProphetX', 'line': -138.0, 'price': '-138', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+125\n[44.44%]\n$768.61 ProphetX', 'line': 125.0, 'price': '+125', 'book': 'ProphetX', 'stake': 768.61}
+ |  | ▲
+-144
+[59.02%]
+$1,000 ProphetX | ▲
++130
+[43.48%]
+$739 ProphetX w274.0 :: {'side': '▲\n-144\n[59.02%]\n$1,000 ProphetX', 'line': -144.0, 'price': '-144', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+130\n[43.48%]\n$739 ProphetX', 'line': 130.0, 'price': '+130', 'book': 'ProphetX', 'stake': 739.0}
+ |  | ▲
+-134
+[57.26%]
+$1,000 ProphetX | ▲
++121
+[45.25%]
+$792.09 ProphetX w255.0 :: {'side': '▲\n-134\n[57.26%]\n$1,000 ProphetX', 'line': -134.0, 'price': '-134', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+121\n[45.25%]\n$792.09 ProphetX', 'line': 121.0, 'price': '+121', 'book': 'ProphetX', 'stake': 792.09}
+ |  | ▲
+-142
+[58.68%]
+$1,000 ProphetX | ▲
++128
+[43.86%]
+$749.71 ProphetX w270.0 :: {'side': '▲\n-142\n[58.68%]\n$1,000 ProphetX', 'line': -142.0, 'price': '-142', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+128\n[43.86%]\n$749.71 ProphetX', 'line': 128.0, 'price': '+128', 'book': 'ProphetX', 'stake': 749.71}
+ |  | ▲
+-108
+[51.92%]
+$1,000 ProphetX | ▲
+-103
+[50.74%]
+$977.52 ProphetX w5.0 :: {'side': '▲\n-108\n[51.92%]\n$1,000 ProphetX', 'line': -108.0, 'price': '-108', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n-103\n[50.74%]\n$977.52 ProphetX', 'line': -103.0, 'price': '-103', 'book': 'ProphetX', 'stake': 977.52}
+ |  | ▲
+-118
+[54.13%]
+$1,000 ProphetX | ▲
++106
+[48.54%]
+$897.82 ProphetX w224.0 :: {'side': '▲\n-118\n[54.13%]\n$1,000 ProphetX', 'line': -118.0, 'price': '-118', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+106\n[48.54%]\n$897.82 ProphetX', 'line': 106.0, 'price': '+106', 'book': 'ProphetX', 'stake': 897.82}
+ |  | ▲
+-132
+[56.90%]
+$1,000 ProphetX | ▲
++118
+[45.87%]
+$807.98 ProphetX w250.0 :: {'side': '▲\n-132\n[56.90%]\n$1,000 ProphetX', 'line': -132.0, 'price': '-132', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+118\n[45.87%]\n$807.98 ProphetX', 'line': 118.0, 'price': '+118', 'book': 'ProphetX', 'stake': 807.98}
+ |  | ▲
+-114
+[53.27%]
+$1,000 ProphetX | ▲
++102
+[49.50%]
+$930.05 ProphetX w216.0 :: {'side': '▲\n-114\n[53.27%]\n$1,000 ProphetX', 'line': -114.0, 'price': '-114', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+102\n[49.50%]\n$930.05 ProphetX', 'line': 102.0, 'price': '+102', 'book': 'ProphetX', 'stake': 930.05}
+ |  | ▲
+-105
+[51.22%]
+$1,000 ProphetX | ▲
+-102
+[51%]
+$1,009.92 Polymarket US w3.0 :: {'side': '▲\n-105\n[51.22%]\n$1,000 ProphetX', 'line': -105.0, 'price': '-105', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n-102\n[51%]\n$1,009.92 Polymarket US', 'line': -102.0, 'price': '-102', 'book': 'Polymarket US', 'stake': 1009.92}
+ |  | ▲
+-110
+$1,000 Fliff | ▲
+-105
+[51.22%]
+$987.51 ProphetX w5.0 :: {'side': '▲\n-110\n$1,000 Fliff', 'line': -110.0, 'price': '-110', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n-105\n[51.22%]\n$987.51 ProphetX', 'line': -105.0, 'price': '-105', 'book': 'ProphetX', 'stake': 987.51}
+ |  | ▲
+-110
+[52.38%]
+$1,000 ProphetX | ▲
++102
+[50%]
+$968.85 Polymarket US w212.0 :: {'side': '▲\n-110\n[52.38%]\n$1,000 ProphetX', 'line': -110.0, 'price': '-110', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+102\n[50%]\n$968.85 Polymarket US', 'line': 102.0, 'price': '+102', 'book': 'Polymarket US', 'stake': 968.85}
+ |  | ▲
+-144
+[59.02%]
+$1,000 ProphetX | ▲
++126
+[44.25%]
+$751.96 ProphetX w270.0 :: {'side': '▲\n-144\n[59.02%]\n$1,000 ProphetX', 'line': -144.0, 'price': '-144', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+126\n[44.25%]\n$751.96 ProphetX', 'line': 126.0, 'price': '+126', 'book': 'ProphetX', 'stake': 751.96}
+ |  | ▲
+-122
+[54.95%]
+$1,000 ProphetX | ▲
++107
+[48.31%]
+$880.25 ProphetX w229.0 :: {'side': '▲\n-122\n[54.95%]\n$1,000 ProphetX', 'line': -122.0, 'price': '-122', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+107\n[48.31%]\n$880.25 ProphetX', 'line': 107.0, 'price': '+107', 'book': 'ProphetX', 'stake': 880.25}
+ |  | ▲
+-111
+[52.61%]
+$1,000 ProphetX | ▲
+-103
+[50.74%]
+$964.95 ProphetX w8.0 :: {'side': '▲\n-111\n[52.61%]\n$1,000 ProphetX', 'line': -111.0, 'price': '-111', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n-103\n[50.74%]\n$964.95 ProphetX', 'line': -103.0, 'price': '-103', 'book': 'ProphetX', 'stake': 964.95}
+ |  | ▲
+-160
+$1,000 Fliff | ▲
++136
+[42.37%]
+$696.63 ProphetX w296.0 :: {'side': '▲\n-160\n$1,000 Fliff', 'line': -160.0, 'price': '-160', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n+136\n[42.37%]\n$696.63 ProphetX', 'line': 136.0, 'price': '+136', 'book': 'ProphetX', 'stake': 696.63}
+ |  | ▲
+-170
+$1,000 Fliff | ▲
++144
+[40.98%]
+$658.65 ProphetX w314.0 :: {'side': '▲\n-170\n$1,000 Fliff', 'line': -170.0, 'price': '-170', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n+144\n[40.98%]\n$658.65 ProphetX', 'line': 144.0, 'price': '+144', 'book': 'ProphetX', 'stake': 658.65}
+ |  | ▲
+-115
+$1,000 Fliff | ▲
+-102
+[50.50%]
+$953.53 ProphetX w13.0 :: {'side': '▲\n-115\n$1,000 Fliff', 'line': -115.0, 'price': '-115', 'book': 'Fliff', 'stake': 1000.0} / {'side': '▲\n-102\n[50.50%]\n$953.53 ProphetX', 'line': -102.0, 'price': '-102', 'book': 'ProphetX', 'stake': 953.53}
+ |  | ▲
+-150
+[60%]
+$1,000 Polymarket US | ▲
++136
+[42.37%]
+$695.16 ProphetX w286.0 :: {'side': '▲\n-150\n[60%]\n$1,000 Polymarket US', 'line': -150.0, 'price': '-150', 'book': 'Polymarket US', 'stake': 1000.0} / {'side': '▲\n+136\n[42.37%]\n$695.16 ProphetX', 'line': 136.0, 'price': '+136', 'book': 'ProphetX', 'stake': 695.16}
+ |  | ▲
+-166
+[62.41%]
+$1,000 ProphetX | ▲
++150
+[40%]
+$662.70 Polymarket US w316.0 :: {'side': '▲\n-166\n[62.41%]\n$1,000 ProphetX', 'line': -166.0, 'price': '-166', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+150\n[40%]\n$662.70 Polymarket US', 'line': 150.0, 'price': '+150', 'book': 'Polymarket US', 'stake': 662.7}
+ |  | ▲
+-112
+[52.83%]
+$1,000 ProphetX | ▲
++102
+[50%]
+$960.70 Polymarket US w214.0 :: {'side': '▲\n-112\n[52.83%]\n$1,000 ProphetX', 'line': -112.0, 'price': '-112', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+102\n[50%]\n$960.70 Polymarket US', 'line': 102.0, 'price': '+102', 'book': 'Polymarket US', 'stake': 960.7}
+ |  | ▲
+-132
+[56.90%]
+$1,000 ProphetX | ▲
++114
+[46.74%]
+$823.10 ProphetX w246.0 :: {'side': '▲\n-132\n[56.90%]\n$1,000 ProphetX', 'line': -132.0, 'price': '-132', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+114\n[46.74%]\n$823.10 ProphetX', 'line': 114.0, 'price': '+114', 'book': 'ProphetX', 'stake': 823.1}
+ |  | ▲
+-138
+[57.98%]
+$1,000 ProphetX | ▲
++119
+[45.66%]
+$789.47 ProphetX w257.0 :: {'side': '▲\n-138\n[57.98%]\n$1,000 ProphetX', 'line': -138.0, 'price': '-138', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+119\n[45.66%]\n$789.47 ProphetX', 'line': 119.0, 'price': '+119', 'book': 'ProphetX', 'stake': 789.47}
+ |  | ▲
+-150
+[60.00%]
+$1,000 ProphetX | ▲
++129
+[43.67%]
+$730.22 ProphetX w279.0 :: {'side': '▲\n-150\n[60.00%]\n$1,000 ProphetX', 'line': -150.0, 'price': '-150', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+129\n[43.67%]\n$730.22 ProphetX', 'line': 129.0, 'price': '+129', 'book': 'ProphetX', 'stake': 730.22}
+ |  | ▲
+-148
+[59.68%]
+$1,000 ProphetX | ▲
++127
+[44.05%]
+$740.55 ProphetX w275.0 :: {'side': '▲\n-148\n[59.68%]\n$1,000 ProphetX', 'line': -148.0, 'price': '-148', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n+127\n[44.05%]\n$740.55 ProphetX', 'line': 127.0, 'price': '+127', 'book': 'ProphetX', 'stake': 740.55}
+ |  | ▲
+-114
+[53.27%]
+$1,000 ProphetX | ▲
+-102
+[50.50%]
+$948.51 ProphetX w12.0 :: {'side': '▲\n-114\n[53.27%]\n$1,000 ProphetX', 'line': -114.0, 'price': '-114', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n-102\n[50.50%]\n$948.51 ProphetX', 'line': -102.0, 'price': '-102', 'book': 'ProphetX', 'stake': 948.51}
+ |  | ▲
+-112
+[52.84%]
+$1,000 ProphetX | ▲
+-104
+[50.99%]
+$965.29 ProphetX w8.0 :: {'side': '▲\n-112\n[52.84%]\n$1,000 ProphetX', 'line': -112.0, 'price': '-112', 'book': 'ProphetX', 'stake': 1000.0} / {'side': '▲\n-104\n[50.99%]\n$965.29 ProphetX', 'line': -104.0, 'price': '-104', 'book': 'ProphetX', 'stake': 965.29}
+ |  | ▲
+-150
+[60%]
+$1,000 Polymarket US | ▲
++141
+[42%]
+$700.33 Polymarket US w291.0 :: {'side': '▲\n-150\n[60%]\n$1,000 Polymarket US', 'line': -150.0, 'price': '-150', 'book': 'Polymarket US', 'stake': 1000.0} / {'side': '▲\n+141\n[42%]\n$700.33 Polymarket US', 'line': 141.0, 'price': '+141', 'book': 'Polymarket US', 'stake': 700.33}
