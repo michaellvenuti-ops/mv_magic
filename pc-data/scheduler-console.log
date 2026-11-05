@@ -884,3 +884,32 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 14:51:12 ET] sync_to_github.py: FAILED (exit 1) in 124s —   FAILED: pc-data/transcribe-test.log (HTTP 409: {'error': '{"message":"is at 407dcd781eb2565dda7487638184ec52b29b2c06 but expected aed781dd98ba3a51c009f4c26c84
 [2026-11-05 14:51:43 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 14:51:46 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 32102 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:53:47 ET] sync_to_github.py: OK in 121s —   ok: hung-number-board-pc.html
+[2026-11-05 14:53:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 13, sog-middles: 53. Detail
+[2026-11-05 14:54:18 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:55:33 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 75s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 14:56:09 ET] dh_low_holds.py: OK in 35s — LOW-HOLDS:  |  | -5268.3 [98%] $1,000 Kalshi Kalshi | +3237.4 [3%] $32.59 Polymarket US Polymarket US
+[2026-11-05 14:56:41 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:57:16 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 32320 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 14:58:47 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:00:46 ET] dh_game_middles.py: FAILED (exit 1) in 89s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 15:01:19 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:02:23 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 32538 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 15:06:08 ET] dh_key_number_middles.py: OK in 194s — key-number-middles: no new strict-key middles.
+[2026-11-05 15:06:41 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:08:10 ET] hung_number.py: OK in 89s — HUNG NUMBER: Oklahoma vs Florida — FanDuel spread value favorite (5.5 vs median 6.5)
+[2026-11-05 15:08:15 ET] rlm.py: OK in 5s
+[2026-11-05 15:08:18 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 15:08:20 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 15:08:51 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:08:55 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 32756 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 15:10:56 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:12:58 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:14:00 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 32974 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 15:15:01 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:17:02 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:19:03 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:19:06 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 33192 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 15:21:07 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:23:08 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 15:24:10 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 33410 snapshots / 261 events, feeds ok 6 fail 0
