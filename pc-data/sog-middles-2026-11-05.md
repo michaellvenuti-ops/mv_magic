@@ -542,3 +542,254 @@ $1,000 Fliff -150.0 -150 @ Fliff / ▲
 +125
 [44.44%]
 $749.06 ProphetX 125.0 +125 @ ProphetX
+## 2026-11-05T18:19:29-05:00 — sog-middles: 907 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW CLEAN W249  (): ▲
+-129
+[56.33%]
+$1,000 ProphetX -129.0 -129 @ ProphetX / ▲
++120
+[45.45%]
+$808.68 ProphetX 120.0 +120 @ ProphetX
+- NEW CLEAN W262  (): ▲
+-136
+[57.63%]
+$1,000 ProphetX -136.0 -136 @ ProphetX / ▲
++126
+[44.25%]
+$769.91 ProphetX 126.0 +126 @ ProphetX
+- NEW W364  (): ▲
+-190
+[65.52%]
+$1,000 ProphetX -190.0 -190 @ ProphetX / ▲
++174
+[36.50%]
+$560.32 ProphetX 174.0 +174 @ ProphetX
+- NEW CLEAN W208  (): ▲
+-106
+[51.46%]
+$1,000 ProphetX -106.0 -106 @ ProphetX / ▲
++102
+[50%]
+$986.03 Polymarket US 102.0 +102 @ Polymarket US
+- NEW W290  (): ▲
+-152
+[60.32%]
+$1,000 ProphetX -152.0 -152 @ ProphetX / ▲
++138
+[42.02%]
+$699.17 ProphetX 138.0 +138 @ ProphetX
+- NEW CLEAN W212  (): ▲
+-111
+[52.61%]
+$1,000 ProphetX -111.0 -111 @ ProphetX / ▲
++101
+[49.75%]
+$946.26 ProphetX 101.0 +101 @ ProphetX
+- NEW W278  (): ▲
+-146
+[59.35%]
+$1,000 ProphetX -146.0 -146 @ ProphetX / ▲
++132
+[43.10%]
+$728.68 ProphetX 132.0 +132 @ ProphetX
+- NEW CLEAN W2  (): ▲
+-106
+[51.46%]
+$1,000 ProphetX -106.0 -106 @ ProphetX / ▲
+-104
+[50.98%]
+$990.80 ProphetX -104.0 -104 @ ProphetX
+- NEW W270  (): ▲
+-142
+[58.68%]
+$1,000 ProphetX -142.0 -142 @ ProphetX / ▲
++128
+[43.86%]
+$749.71 ProphetX 128.0 +128 @ ProphetX
+- NEW CLEAN W5  (): ▲
+-108
+[51.92%]
+$1,000 ProphetX -108.0 -108 @ ProphetX / ▲
+-103
+[50.74%]
+$977.43 ProphetX -103.0 -103 @ ProphetX
+- NEW CLEAN W2  (): ▲
+-104
+[50.98%]
+$1,000 ProphetX -104.0 -104 @ ProphetX / ▲
+-102
+[51%]
+$1,014.61 Polymarket US -102.0 -102 @ Polymarket US
+- NEW W376  (): ▲
+-200
+[66.67%]
+$1,000 ProphetX -200.0 -200 @ ProphetX / ▲
++176
+[36.23%]
+$546.78 ProphetX 176.0 +176 @ ProphetX
+- NEW W350  (): ▲
+-186
+[65.03%]
+$1,000 ProphetX -186.0 -186 @ ProphetX / ▲
++164
+[37.88%]
+$585.64 ProphetX 164.0 +164 @ ProphetX
+- NEW W316  (): ▲
+-168
+[62.69%]
+$1,000 ProphetX -168.0 -168 @ ProphetX / ▲
++148
+[40.32%]
+$646.15 ProphetX 148.0 +148 @ ProphetX
+- NEW W286  (): ▲
+-152
+[60.32%]
+$1,000 ProphetX -152.0 -152 @ ProphetX / ▲
++134
+[42.74%]
+$711.02 ProphetX 134.0 +134 @ ProphetX
+- NEW W334  (): ▲
+-178
+[64.03%]
+$1,000 ProphetX -178.0 -178 @ ProphetX / ▲
++156
+[39.06%]
+$613.20 ProphetX 156.0 +156 @ ProphetX
+- NEW CLEAN W226  (): ▲
+-120
+[54.55%]
+$1,000 ProphetX -120.0 -120 @ ProphetX / ▲
++106
+[48.53%]
+$890.84 ProphetX 106.0 +106 @ ProphetX
+- NEW W278  (): ▲
+-148
+[59.68%]
+$1,000 ProphetX -148.0 -148 @ ProphetX / ▲
++130
+[43.48%]
+$730.97 ProphetX 130.0 +130 @ ProphetX
+- NEW W296  (): ▲
+-158
+[61.24%]
+$1,000 ProphetX -158.0 -158 @ ProphetX / ▲
++138
+[42.02%]
+$688.77 ProphetX 138.0 +138 @ ProphetX
+- NEW W354  (): ▲
+-190
+[65.52%]
+$1,000 ProphetX -190.0 -190 @ ProphetX / ▲
++164
+[37.88%]
+$581.39 ProphetX 164.0 +164 @ ProphetX
+- NEW CLEAN W8  (): ▲
+-111
+[52.61%]
+$1,000 ProphetX -111.0 -111 @ ProphetX / ▲
+-103
+[50.74%]
+$964.95 ProphetX -103.0 -103 @ ProphetX
+- NEW W296  (): ▲
+-160
+$1,000 Fliff -160.0 -160 @ Fliff / ▲
++136
+[42.37%]
+$696.63 ProphetX 136.0 +136 @ ProphetX
+- NEW CLEAN W258  (): ▲
+-138
+[57.98%]
+$1,000 ProphetX -138.0 -138 @ ProphetX / ▲
++120
+[45.45%]
+$785.91 ProphetX 120.0 +120 @ ProphetX
+- NEW W346  (): ▲
+-186
+[65.03%]
+$1,000 ProphetX -186.0 -186 @ ProphetX / ▲
++160
+[38.46%]
+$594.56 ProphetX 160.0 +160 @ ProphetX
+- NEW W368  (): ▲
+-194
+[65.99%]
+$1,000 ProphetX -194.0 -194 @ ProphetX / ▲
++174
+[37%]
+$573.63 Polymarket US 174.0 +174 @ Polymarket US
+- NEW W272  (): ▲
+-146
+[59.35%]
+$1,000 ProphetX -146.0 -146 @ ProphetX / ▲
++126
+[44.25%]
+$747.85 ProphetX 126.0 +126 @ ProphetX
+- NEW W294  (): ▲
+-158
+[61.24%]
+$1,000 ProphetX -158.0 -158 @ ProphetX / ▲
++136
+[42.37%]
+$694.58 ProphetX 136.0 +136 @ ProphetX
+- NEW CLEAN W246  (): ▲
+-132
+[56.90%]
+$1,000 ProphetX -132.0 -132 @ ProphetX / ▲
++114
+[46.74%]
+$823.10 ProphetX 114.0 +114 @ ProphetX
+- NEW W312  (): ▲
+-168
+[62.69%]
+$1,000 ProphetX -168.0 -168 @ ProphetX / ▲
++144
+[40.98%]
+$656.66 ProphetX 144.0 +144 @ ProphetX
+- NEW CLEAN W257  (): ▲
+-138
+[57.98%]
+$1,000 ProphetX -138.0 -138 @ ProphetX / ▲
++119
+[45.66%]
+$789.47 ProphetX 119.0 +119 @ ProphetX
+- NEW W330  (): ▲
+-174
+[64%]
+$1,000 Polymarket US -174.0 -174 @ Polymarket US / ▲
++156
+[39.06%]
+$607.38 ProphetX 156.0 +156 @ ProphetX
+- NEW W266  (): ▲
+-143
+[58.84%]
+$1,000 ProphetX -143.0 -143 @ ProphetX / ▲
++123
+[44.84%]
+$764.20 ProphetX 123.0 +123 @ ProphetX
+- NEW W275  (): ▲
+-148
+[59.68%]
+$1,000 ProphetX -148.0 -148 @ ProphetX / ▲
++127
+[44.05%]
+$740.55 ProphetX 127.0 +127 @ ProphetX
+- NEW CLEAN W12  (): ▲
+-115
+$1,000 Fliff -115.0 -115 @ Fliff / ▲
+-103
+[50.74%]
+$958.04 ProphetX -103.0 -103 @ ProphetX
+- NEW W340  (): ▲
+-184
+[64.79%]
+$1,000 ProphetX -184.0 -184 @ ProphetX / ▲
++156
+[39.06%]
+$606.08 ProphetX 156.0 +156 @ ProphetX
+- NEW W291  (): ▲
+-150
+[60%]
+$1,000 Polymarket US -150.0 -150 @ Polymarket US / ▲
++141
+[42%]
+$700.33 Polymarket US 141.0 +141 @ Polymarket US
