@@ -681,3 +681,32 @@
 [2026-11-05 11:16:19 ET] sync_to_github.py: FAILED (exit 1) in 169s —   FAILED: pc-data/steam-side-state.json (HTTP 500: {'error': ''})
 [2026-11-05 11:16:50 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
 [2026-11-05 11:16:52 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 24908 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:18:47 ET] sync_to_github.py: OK in 114s —   ok: hung-number-board-pc.html
+[2026-11-05 11:18:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 14. Details in GitHub pc-da
+[2026-11-05 11:19:18 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:21:19 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:21:51 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 25126 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:23:22 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:26:18 ET] rb_rushing.py: FAILED (exit 2) in 115s — rb-rushing: zero rushers parsed from PFR — run with --dump and send it back for a parser patch. No state written.
+[2026-11-05 11:26:51 ET] upset_watch.py: OK in 3s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:26:55 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (131 with odds), db total 25344 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:33:26 ET] dh_arbitrage.py: FAILED (exit 2) in 330s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 11:34:00 ET] upset_watch.py: OK in 5s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:34:05 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (131 with odds), db total 25562 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:36:37 ET] dh_kalshi_poly_arb.py: OK in 151s — KALSHI-POLY-ARB:  |  | -1759.3 [95%] $1,000 Polymarket US Polymarket US | +2242.6 [4%] $45 Kalshi Kalshi
+[2026-11-05 11:37:22 ET] dh_low_holds.py: OK in 45s — LOW-HOLDS:  |  | -3241.4 [97.01%] $1,000 ProphetX ProphetX | +2242.6 [4%] $44 Kalshi Kalshi
+[2026-11-05 11:38:47 ET] dh_prop_middles.py: FAILED (exit 1) in 85s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 63: character maps to <undefined>
+[2026-11-05 11:40:16 ET] dh_sog_middles.py: FAILED (exit 1) in 88s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 20: character maps to <undefined>
+[2026-11-05 11:41:10 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-05 11:41:42 ET] upset_watch.py: OK in 2s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:41:47 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (131 with odds), db total 25780 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:43:11 ET] dh_game_middles.py: FAILED (exit 1) in 84s — UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 19: character maps to <undefined>
+[2026-11-05 11:46:31 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: no new strict-key middles.
+[2026-11-05 11:47:46 ET] hung_number.py: OK in 75s — HUNG NUMBER: Western Kentucky vs Middle Tennessee — FanDuel spread value favorite (-2.5 vs median -1.5)
+[2026-11-05 11:47:53 ET] rlm.py: OK in 7s
+[2026-11-05 11:47:56 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-05 11:47:58 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-05 11:48:30 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 11:48:33 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (131 with odds), db total 25998 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 11:48:37 ET] public_fade.py: OK in 3s
+[2026-11-05 11:49:39 ET] dh_positive_ev.py: OK in 63s — DarkHorse check unavailable (signed out) — positive-ev skipped, no prices invented.
