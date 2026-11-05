@@ -881,3 +881,6 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 14:46:37 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 31884 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 14:48:37 ET] sync_to_github.py: FAILED (exit 1) in 121s —   FAILED: pc-data/pip-ct2.log (HTTP 409: {'error': '{"message":"is at 88cd698e42a7933953fe130d92da90aece0dfea7 but expected cbddc0476be3558b00b9d0f99aaaf84ca4d3
 [2026-11-05 14:49:08 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:51:12 ET] sync_to_github.py: FAILED (exit 1) in 124s —   FAILED: pc-data/transcribe-test.log (HTTP 409: {'error': '{"message":"is at 407dcd781eb2565dda7487638184ec52b29b2c06 but expected aed781dd98ba3a51c009f4c26c84
+[2026-11-05 14:51:43 ET] upset_watch.py: OK in 1s — SUMMARY: 142 games checked, 0 new trigger(s)
+[2026-11-05 14:51:46 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (131 with odds), db total 32102 snapshots / 261 events, feeds ok 6 fail 0
