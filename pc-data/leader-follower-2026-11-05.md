@@ -50,3 +50,4 @@ LEAD: Caesars on Texans @ Chargers | 2026-11-05 (spread)
 LEAD: FanDuel on Texans @ Chargers | 2026-11-05 (spread)
 LEAD: bet365 on UCLA @ Minnesota | 2026-11-05 (spread)
 LEAD: DraftKings on UCLA @ Minnesota | 2026-11-05 (spread)
+## 2026-11-05T18:18:12-05:00 — 78 games, 0 leads credited
