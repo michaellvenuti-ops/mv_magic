@@ -41,3 +41,12 @@
 ## 2026-11-05T16:12:56-05:00 — no-follow: FanDuel UCF @ Kansas | 2026-11-05 spread (only 2 followed)
 ## 2026-11-05T16:12:56-05:00 — no-follow: FanDuel Oklahoma @ Florida | 2026-11-05 spread (only 0 followed)
 ## 2026-11-05T16:12:56-05:00 — 78 games, 0 leads credited
+## 2026-11-05T17:14:53-05:00 — no-follow: bet365 UTSA @ Florida Atlantic | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T17:14:53-05:00 — no-follow: FanDuel UTSA @ Florida Atlantic | 2026-11-05 spread (only 2 followed)
+## 2026-11-05T17:14:53-05:00 — 78 games, 6 leads credited
+LEAD: bet365 on Texans @ Chargers | 2026-11-05 (spread)
+LEAD: DraftKings on Texans @ Chargers | 2026-11-05 (spread)
+LEAD: Caesars on Texans @ Chargers | 2026-11-05 (spread)
+LEAD: FanDuel on Texans @ Chargers | 2026-11-05 (spread)
+LEAD: bet365 on UCLA @ Minnesota | 2026-11-05 (spread)
+LEAD: DraftKings on UCLA @ Minnesota | 2026-11-05 (spread)
