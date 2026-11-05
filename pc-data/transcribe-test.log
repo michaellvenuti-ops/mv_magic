@@ -1,0 +1,70 @@
+[Wed 11/04/2026 23:31:55.35] transcribe test starting 
+Traceback (most recent call last):
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: DLL load failed while importing _multiarray_umath: A dynamic link library (DLL) initialization routine failed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\venut\pc-scans\transcribe.py", line 61, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\venut\pc-scans\transcribe.py", line 36, in main
+    from faster_whisper import WhisperModel
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\faster_whisper\__init__.py", line 1, in <module>
+    from faster_whisper.audio import decode_audio
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\faster_whisper\audio.py", line 16, in <module>
+    import numpy as np
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\__init__.py", line 122, in <module>
+    from numpy.__config__ import show_config
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\__init__.py", line 85, in <module>
+    raise ImportError(msg) from exc
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python 3.12 from "C:\Users\venut\AppData\Local\Programs\Python\Python312\python.exe"
+  * The NumPy version is: "2.5.4"
+
+and make sure that they are the versions you expect.
+
+Please carefully study the information and documentation linked above.
+This is unlikely to be a NumPy issue but will be caused by a bad install
+or environment on your machine.
+
+Original error was: DLL load failed while importing _multiarray_umath: A dynamic link library (DLL) initialization routine failed.
+
+[Wed 11/04/2026 23:32:13.02] transcribe exit code 1 
+[Wed 11/04/2026 23:34:48.44] transcribe test starting 
+Traceback (most recent call last):
+  File "C:\Users\venut\pc-scans\transcribe.py", line 61, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\venut\pc-scans\transcribe.py", line 36, in main
+    from faster_whisper import WhisperModel
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\faster_whisper\__init__.py", line 2, in <module>
+    from faster_whisper.transcribe import BatchedInferencePipeline, WhisperModel
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\faster_whisper\transcribe.py", line 13, in <module>
+    import ctranslate2
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\ctranslate2\__init__.py", line 29, in <module>
+    ctypes.CDLL(library)
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\ctranslate2\ctranslate2.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[Wed 11/04/2026 23:34:51.71] transcribe exit code 1 
