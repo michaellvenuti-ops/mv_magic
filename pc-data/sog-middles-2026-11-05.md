@@ -98,3 +98,268 @@ $1,000 ProphetX -119.0 -119 @ ProphetX / ▲
 +102
 [50%]
 $934.30 Polymarket US 102.0 +102 @ Polymarket US
+## 2026-11-05T14:07:16-05:00 — sog-middles: 918 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW W302  (): ▲
+-158
+[61.24%]
+$1,000 ProphetX -158.0 -158 @ ProphetX / ▲
++144
+[40.98%]
+$671.97 ProphetX 144.0 +144 @ ProphetX
+- NEW CLEAN W231  (): ▲
+-121
+[54.75%]
+$1,000 ProphetX -121.0 -121 @ ProphetX / ▲
++110
+[47.62%]
+$870.99 ProphetX 110.0 +110 @ ProphetX
+- NEW CLEAN W251  (): ▲
+-132
+[56.90%]
+$1,000 ProphetX -132.0 -132 @ ProphetX / ▲
++119
+[45.66%]
+$804.32 ProphetX 119.0 +119 @ ProphetX
+- NEW CLEAN W1  (): ▲
+-106
+[51.46%]
+$1,000 ProphetX -106.0 -106 @ ProphetX / ▲
+-105
+[51.21%]
+$995.36 ProphetX -105.0 -105 @ ProphetX
+- NEW CLEAN W212  (): ▲
+-110
+[52.37%]
+$1,000 ProphetX -110.0 -110 @ ProphetX / ▲
++102
+[50%]
+$969.03 Polymarket US 102.0 +102 @ Polymarket US
+- NEW CLEAN W5  (): ▲
+-110
+[52.38%]
+$1,000 ProphetX -110.0 -110 @ ProphetX / ▲
+-105
+$969 Fliff -105.0 -105 @ Fliff
+- NEW W288  (): ▲
+-150
+[60%]
+$1,000 Polymarket US -150.0 -150 @ Polymarket US / ▲
++138
+[42.02%]
+$689.33 ProphetX 138.0 +138 @ ProphetX
+- NEW CLEAN W218  (): ▲
+-116
+[53.70%]
+$1,000 ProphetX -116.0 -116 @ ProphetX / ▲
++102
+[49.50%]
+$922.64 ProphetX 102.0 +102 @ ProphetX
+- NEW W270  (): ▲
+-144
+[59.02%]
+$1,000 ProphetX -144.0 -144 @ ProphetX / ▲
++126
+[44.25%]
+$751.94 ProphetX 126.0 +126 @ ProphetX
+- NEW CLEAN W255  (): ▲
+-136
+[57.63%]
+$1,000 ProphetX -136.0 -136 @ ProphetX / ▲
++119
+[45.66%]
+$794.20 ProphetX 119.0 +119 @ ProphetX
+- NEW CLEAN W227  (): ▲
+-121
+[54.75%]
+$1,000 ProphetX -121.0 -121 @ ProphetX / ▲
++106
+[48.54%]
+$887.74 ProphetX 106.0 +106 @ ProphetX
+- NEW CLEAN W223  (): ▲
+-119
+[54.34%]
+$1,000 ProphetX -119.0 -119 @ ProphetX / ▲
++104
+[49.02%]
+$903.07 ProphetX 104.0 +104 @ ProphetX
+- NEW CLEAN W4  (): ▲
+-109
+[52.15%]
+$1,000 ProphetX -109.0 -109 @ ProphetX / ▲
+-105
+[51.22%]
+$982.28 ProphetX -105.0 -105 @ ProphetX
+- NEW W350  (): ▲
+-188
+[65.28%]
+$1,000 ProphetX -188.0 -188 @ ProphetX / ▲
++162
+[38.17%]
+$587.89 ProphetX 162.0 +162 @ ProphetX
+- NEW W284  (): ▲
+-152
+[60.32%]
+$1,000 ProphetX -152.0 -152 @ ProphetX / ▲
++132
+[43.10%]
+$717.14 ProphetX 132.0 +132 @ ProphetX
+- NEW CLEAN W219  (): ▲
+-117
+[53.92%]
+$1,000 ProphetX -117.0 -117 @ ProphetX / ▲
++102
+[49.50%]
+$918.94 ProphetX 102.0 +102 @ ProphetX
+- NEW W324  (): ▲
+-174
+[63.50%]
+$1,000 ProphetX -174.0 -174 @ ProphetX / ▲
++150
+[40.00%]
+$632.91 ProphetX 150.0 +150 @ ProphetX
+- NEW CLEAN W261  (): ▲
+-140
+[58.33%]
+$1,000 ProphetX -140.0 -140 @ ProphetX / ▲
++121
+[45.25%]
+$777.78 ProphetX 121.0 +121 @ ProphetX
+- NEW W316  (): ▲
+-170
+[62.96%]
+$1,000 ProphetX -170.0 -170 @ ProphetX / ▲
++146
+[40.65%]
+$648.54 ProphetX 146.0 +146 @ ProphetX
+- NEW W352  (): ▲
+-190
+[65.52%]
+$1,000 ProphetX -190.0 -190 @ ProphetX / ▲
++162
+[38.17%]
+$585.79 ProphetX 162.0 +162 @ ProphetX
+- NEW W268  (): ▲
+-144
+[59.02%]
+$1,000 ProphetX -144.0 -144 @ ProphetX / ▲
++124
+[44.64%]
+$758.59 ProphetX 124.0 +124 @ ProphetX
+- NEW CLEAN W218  (): ▲
+-117
+[53.92%]
+$1,000 ProphetX -117.0 -117 @ ProphetX / ▲
++101
+[49.75%]
+$923.47 ProphetX 101.0 +101 @ ProphetX
+- NEW CLEAN W253  (): ▲
+-136
+[57.63%]
+$1,000 ProphetX -136.0 -136 @ ProphetX / ▲
++117
+[46.08%]
+$801.54 ProphetX 117.0 +117 @ ProphetX
+- NEW W344  (): ▲
+-186
+[65.03%]
+$1,000 ProphetX -186.0 -186 @ ProphetX / ▲
++158
+[38.76%]
+$599.17 ProphetX 158.0 +158 @ ProphetX
+- NEW W304  (): ▲
+-164
+[62.12%]
+$1,000 ProphetX -164.0 -164 @ ProphetX / ▲
++140
+[41.67%]
+$673.52 ProphetX 140.0 +140 @ ProphetX
+- NEW W358  (): ▲
+-194
+[65.98%]
+$1,000 ProphetX -194.0 -194 @ ProphetX / ▲
++164
+[37.88%]
+$577.33 ProphetX 164.0 +164 @ ProphetX
+- NEW W354  (): ▲
+-192
+[65.76%]
+$1,000 ProphetX -192.0 -192 @ ProphetX / ▲
++162
+[38.17%]
+$583.69 ProphetX 162.0 +162 @ ProphetX
+- NEW CLEAN W210  (): ▲
+-110
+[52.37%]
+$1,000 ProphetX -110.0 -110 @ ProphetX / ▲
++100
+[50%]
+$984 DraftKings Predictions 100.0 +100 @ DraftKings Predictions
+- NEW CLEAN W7  (): ▲
+-109
+[52.15%]
+$1,000 ProphetX -109.0 -109 @ ProphetX / ▲
+-102
+[51%]
+$991.98 Polymarket US -102.0 -102 @ Polymarket US
+- NEW W314  (): ▲
+-170
+[62.96%]
+$1,000 ProphetX -170.0 -170 @ ProphetX / ▲
++144
+[40.98%]
+$653.88 ProphetX 144.0 +144 @ ProphetX
+- NEW W263  (): ▲
+-142
+[58.68%]
+$1,000 ProphetX -142.0 -142 @ ProphetX / ▲
++121
+[45.26%]
+$773.38 ProphetX 121.0 +121 @ ProphetX
+- NEW W292  (): ▲
+-158
+[61.24%]
+$1,000 ProphetX -158.0 -158 @ ProphetX / ▲
++134
+[42.74%]
+$700.44 ProphetX 134.0 +134 @ ProphetX
+- NEW W270  (): ▲
+-146
+[59.35%]
+$1,000 ProphetX -146.0 -146 @ ProphetX / ▲
++124
+[44.64%]
+$754.41 ProphetX 124.0 +124 @ ProphetX
+- NEW CLEAN W11  (): ▲
+-114
+[53.27%]
+$1,000 ProphetX -114.0 -114 @ ProphetX / ▲
+-103
+[50.74%]
+$953.01 ProphetX -103.0 -103 @ ProphetX
+- NEW CLEAN W7  (): ▲
+-112
+[52.83%]
+$1,000 ProphetX -112.0 -112 @ ProphetX / ▲
+-105
+[51.21%]
+$969.74 ProphetX -105.0 -105 @ ProphetX
+- NEW W337  (): ▲
+-185
+$1,000 Fliff -185.0 -185 @ Fliff / ▲
++152
+[39.68%]
+$618.79 ProphetX 152.0 +152 @ ProphetX
+- NEW CLEAN W8  (): ▲
+-110
+[52.38%]
+$1,000 ProphetX -110.0 -110 @ ProphetX / ▲
+-102
+[50%]
+$987.74 Polymarket US -102.0 -102 @ Polymarket US
+- NEW W262  (): ▲
+-142
+[58.68%]
+$1,000 ProphetX -142.0 -142 @ ProphetX / ▲
++120
+[45.45%]
+$776.72 ProphetX 120.0 +120 @ ProphetX
