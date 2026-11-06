@@ -1911,3 +1911,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 11:01:04 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-06 11:03:05 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 11:10:17 ET] costco_gold.py: OK in 372s — SUMMARY: 8 items, prices 2/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-06 11:13:28 ET] sync_to_github.py: OK in 191s —   ok: hung-number-board-pc.html
+[2026-11-06 11:13:29 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 16, sog-m
+[2026-11-06 11:14:00 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 11:14:21 ET] odds_recorder.py: OK in 21s — SUMMARY: recorded 224 events (142 with odds), db total 74400 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 11:18:37 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new strict-key middles.
+[2026-11-06 11:19:08 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 11:19:41 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (142 with odds), db total 74624 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 11:21:17 ET] hung_number.py: OK in 66s — HUNG NUMBER: Texas A&M vs South Carolina — Fanatics total value Under (51.0 vs median 52.5)
+[2026-11-06 11:21:21 ET] rlm.py: OK in 4s
+[2026-11-06 11:21:25 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 11:21:28 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 11:21:59 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 11:23:10 ET] dh_arbitrage.py: FAILED (exit 2) in 71s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
