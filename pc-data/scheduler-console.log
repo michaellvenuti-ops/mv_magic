@@ -1343,3 +1343,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 23:49:51 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-05 23:49:54 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 52158 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 23:51:55 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 23:55:32 ET] sync_to_github.py: OK in 127s —   ok: hung-number-board-pc.html
+[2026-11-05 23:55:32 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 18, sog-middles: 177. Detai
+[2026-11-05 23:56:04 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 23:56:06 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 52376 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 23:58:08 ET] upset_watch.py: OK in 2s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 00:02:23 ET] dh_arbitrage.py: FAILED (exit 2) in 225s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 00:02:56 ET] upset_watch.py: OK in 3s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 00:03:01 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (71 with odds), db total 52594 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 00:05:02 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
