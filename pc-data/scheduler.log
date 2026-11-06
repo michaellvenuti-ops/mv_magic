@@ -2149,3 +2149,6 @@
 [2026-11-06 16:48:30 ET] dh_team_total_middles.py: OK in 52s
 [2026-11-06 16:51:33 ET] sync_to_github.py: FAILED (exit 1) in 183s —   FAILED: pc-data/transcribe-test.log (HTTP 409: {'error': '{"message":"is at 9fe3eff54e1eaaac30daa889a1d9125ae606a886 but expected 1c02c81c0830f2e98c8caeb5b0c9
 [2026-11-06 16:52:04 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 16:55:07 ET] sync_to_github.py: FAILED (exit 1) in 183s —   FAILED: pc-data/correlated-parlay-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 05c887ba633eec0268db1f55efb1456a7d205bd4 but expected 9b88953ac9c07fb1
+[2026-11-06 16:55:38 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 16:55:41 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (200 with odds), db total 85376 snapshots / 345 events, feeds ok 6 fail 0
