@@ -2046,3 +2046,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 13:51:15 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (143 with odds), db total 79552 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 13:54:15 ET] sync_to_github.py: FAILED (exit 1) in 180s —   FAILED: pc-data/costco-signin.log (HTTP 409: {'error': '{"message":"is at 16515eea20bba5564a867694529eec7017ffea56 but expected 6abe6dda9d9879d48b693dfc78ba27
 [2026-11-06 13:54:46 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:57:50 ET] sync_to_github.py: OK in 183s —   ok: hung-number-board-pc.html
+[2026-11-06 13:57:50 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 18, sog-m
+[2026-11-06 13:58:21 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:58:24 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 224 events (157 with odds), db total 79776 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 14:00:25 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:03:22 ET] dh_game_middles.py: OK in 147s — GAME MIDDLE: NFL DET Lions MIA Dolphins Nov-08 1:00 PM / table bar_chart / Alt Spread MIA Dolphins +9.5 / Alt Spread DET Lions -8.5 / table bar_chart | ProphetX
+[2026-11-06 14:03:55 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:04:14 ET] odds_recorder.py: OK in 19s — SUMMARY: recorded 224 events (183 with odds), db total 80000 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 14:06:15 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:08:17 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
