@@ -21,3 +21,5 @@ NEW FLAG: FBS UCLA @ Minnesota | 2026-11-05 — Fanatics still dealing spread 5.
 ## 2026-11-05T18:18:15-05:00 — 63 games, 0 steam events, 0 NEW flags
 ## 2026-11-05T19:29:33-05:00 — 63 games, 0 steam events, 0 NEW flags
 ## 2026-11-05T20:30:51-05:00 — 63 games, 0 steam events, 0 NEW flags
+## 2026-11-05T21:32:57-05:00 — 63 games, 2 steam events, 1 NEW flags
+NEW FLAG: FBS James Madison @ Southern Miss | 2026-11-05 — BetMGM still dealing total 58.5 on Under (pre-move median 58.5, now 56.5)
