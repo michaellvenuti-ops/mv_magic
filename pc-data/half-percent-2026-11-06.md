@@ -1,0 +1,12 @@
+## 2026-11-06T08:01:29-05:00 — Half Percent Club: 1 candidate
+- PICK: NET (Cloudflare, Inc. Class A Common Stock) — LONG, one trade today, target +0.5%, then done.
+- Catalyst: Earnings on Nasdaq's calendar (2026-11-05, today) — reported results / guidance are the catalyst to verify at the book (source: Nasdaq earnings calendar).
+- Premarket: $293.90 (+20.20% vs prior close), 221,554 shares traded premarket, status Pre-Market, last trade Nov 6, 2026 8:01 AM ET (source: Nasdaq quote info).
+- Market cap: $94,923,727,000.00 (Nasdaq earnings calendar / Yahoo Finance).
+- Spread at read: bid $293.89 / ask $295.00 (0.38%).
+- ENTRY PLAN: enter at the open / first minutes inside $293.31-$294.49 (reference $293.90). Modeled grading entry: $293.90.
+- TARGET $295.37 (+0.5%) — STOP $292.43 (-0.5%) — TIME STOP: out by 10:00 AM ET if neither hits.
+- Modeled size: $10,000 flat for the running record. Michael places his own trade at his own small live size — Chet never places trades.
+- Running record: 0W-0L-0T, modeled P/L $0.00 on $10,000 flat modeled size.
+- Strategy source: The Half Percent Club reel (DfX8wkcxURK). The creator's streak / YTD claims are UNVERIFIED.
+- Also screened, did not clear: TM (premarket move -0.26% under +3%); COP (premarket move +0.01% under +3%); SONY (premarket move -3.59% under +3%); MNST (premarket move -5.90% under +3%); PH (price $965.30 outside $10-$500).
