@@ -1556,3 +1556,7 @@
 [2026-11-06 04:46:04 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 62404 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-06 04:47:05 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 04:49:06 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 04:52:52 ET] sync_to_github.py: FAILED (exit 1) in 136s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-06 04:53:23 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 04:53:26 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 62622 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 04:56:25 ET] dh_key_number_middles.py: OK in 180s — key-number-middles: no new strict-key middles.
