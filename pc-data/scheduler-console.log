@@ -1304,3 +1304,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 23:02:36 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 50632 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 23:03:38 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-05 23:05:39 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 23:09:28 ET] sync_to_github.py: FAILED (exit 1) in 139s —   FAILED: pc-data/chet-dhlow-1105.log (HTTP 422: {'error': '{"message":"Invalid request.\\n\\n\\"sha\\" wasn\'t supplied.","documentation_url":"https://docs.git
+[2026-11-05 23:09:59 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 23:10:02 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 50850 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 23:11:20 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 77s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-05 23:12:07 ET] dh_low_holds.py: OK in 47s — LOW-HOLDS: NHL SJ Sharks MIN Wild / Nov-06 8:00 PM / table bar_chart / Alt Spread MIN Wild +2.5 / Alt Spread SJ Sharks -2.5 / table bar_chart | Polymarket US | 
