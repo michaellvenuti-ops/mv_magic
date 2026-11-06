@@ -1357,3 +1357,13 @@
 [2026-11-06 00:52:02 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (71 with odds), db total 54338 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-06 00:53:03 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 00:55:04 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 00:59:04 ET] sync_to_github.py: OK in 150s —   ok: hung-number-board-pc.html
+[2026-11-06 00:59:04 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 15, sog-middles: 30. Detail
+[2026-11-06 00:59:36 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 00:59:38 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 54556 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 01:01:39 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:04:01 ET] dh_arbitrage.py: FAILED (exit 2) in 82s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 01:04:32 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:05:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 54774 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 01:06:36 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:08:38 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
