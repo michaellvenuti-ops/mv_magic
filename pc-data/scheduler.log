@@ -1413,3 +1413,15 @@
 [2026-11-06 02:02:57 ET] sync_to_github.py: FAILED (exit 1) in 152s —   FAILED: pc-data/prop-middles-2026-11-06.md (HTTP 422: {'error': '{"message":"Invalid request.\\n\\n\\"sha\\" wasn\'t supplied.","documentation_url":"https://d
 [2026-11-06 02:03:28 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 02:03:31 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (71 with odds), db total 56736 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 02:06:02 ET] sync_to_github.py: OK in 151s —   ok: hung-number-board-pc.html
+[2026-11-06 02:06:02 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 15, sog-middles: 30. Detail
+[2026-11-06 02:06:33 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 02:07:49 ET] dh_arbitrage.py: OK in 76s — arbitrage: no new qualifying pairs (silent).
+[2026-11-06 02:08:50 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 02:08:53 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 56954 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 02:10:54 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 02:12:55 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 02:13:58 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 57172 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 02:15:10 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 72s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 02:15:41 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 02:16:01 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAB Idaho St. Wyoming / Today 8:30 PM / table bar_chart / Moneyline Idaho St. NO / Moneyline Idaho St. / table bar_chart | Kalshi | Polymarket US
