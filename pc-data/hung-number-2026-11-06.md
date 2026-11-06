@@ -1,6 +1,7 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 04:59)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 06:03)
 
 - Georgia State vs Appalachian State | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- Delaware vs Kennesaw State | Fanatics | moneyline Kennesaw State | value: Kennesaw State | book 99.0 vs median 50.5 | div 48.5 
 - Alabama vs LSU | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.5 | div 3.0 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
