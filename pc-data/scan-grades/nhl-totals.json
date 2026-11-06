@@ -1,14 +1,40 @@
 {
  "regular": {
-  "entries": [],
-  "record": "0-0-0",
-  "money": 0,
-  "graded": 0
+  "entries": [
+   {
+    "away": "BOS",
+    "home": "PIT",
+    "direction": "under",
+    "book_total": 6.5,
+    "actual_total": 8,
+    "price": -108,
+    "result": "loss",
+    "money": -100.0,
+    "inverse": false,
+    "date": "2026-11-05"
+   }
+  ],
+  "record": "0-1-0",
+  "money": -100.0,
+  "graded": 1
  },
  "inverse": {
-  "entries": [],
-  "record": "0-0-0",
-  "money": 0,
-  "graded": 0
+  "entries": [
+   {
+    "away": "BOS",
+    "home": "PIT",
+    "direction": "over",
+    "book_total": 6.5,
+    "actual_total": 8,
+    "price": -112,
+    "result": "win",
+    "money": 89.29,
+    "inverse": true,
+    "date": "2026-11-05"
+   }
+  ],
+  "record": "1-0-0",
+  "money": 89.29,
+  "graded": 1
  }
 }
