@@ -37,3 +37,5 @@ LEAD: DraftKings on Western Kentucky @ Middle Tennessee | 2026-11-06 (spread)
 ## 2026-11-06T14:38:24-05:00 — no-follow: Kalshi West Virginia @ Texas Tech | 2026-11-06 spread (only 0 followed)
 ## 2026-11-06T14:38:24-05:00 — no-follow: Kalshi Fresno State @ Utah State | 2026-11-06 spread (only 2 followed)
 ## 2026-11-06T14:38:25-05:00 — 78 games, 0 leads credited, 5 started games skipped
+## 2026-11-06T15:39:56-05:00 — no-follow: DraftKings Fresno State @ Utah State | 2026-11-06 spread (only 2 followed)
+## 2026-11-06T15:39:57-05:00 — 78 games, 0 leads credited, 5 started games skipped
