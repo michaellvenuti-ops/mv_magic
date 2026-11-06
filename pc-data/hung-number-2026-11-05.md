@@ -1,20 +1,23 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 21:31)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 22:35)
 
-- UTSA vs Florida Atlantic | DraftKings | spread | value: dog | book 7.5 vs median 6.0 | div 1.5 middle pairing spans key number 7
-- UTSA vs Florida Atlantic | Caesars | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
-- UTSA vs Florida Atlantic | DraftKings | total | value: Over | book 95.5 vs median 94.0 | div 1.5 
-- UTSA vs Florida Atlantic | Caesars | total | value: Under | book 90.5 vs median 94.0 | div 3.5 
-- UTSA vs Florida Atlantic | Caesars | moneyline Florida Atlantic | value: Florida Atlantic | book 63.8 vs median 76.7 | div 12.9 
-- UTSA vs Florida Atlantic | Caesars | moneyline UTSA | value: UTSA | book 42.2 vs median 29.0 | div 13.2 
-- James Madison vs Southern Miss | BetMGM | spread | value: favorite | book -17.5 vs median -16.0 | div 1.5 
-- James Madison vs Southern Miss | BetMGM | total | value: Over | book 58.5 vs median 56.5 | div 2.0 
-- James Madison vs Southern Miss | DraftKings | total | value: Under | book 53.5 vs median 56.5 | div 3.0 
+- Jaguars vs Ravens | Caesars | spread | value: dog | book -19.5 vs median -20.5 | div 1.0 
+- Jaguars vs Ravens | Hard Rock | spread | value: dog | book -10.5 vs median -20.5 | div 10.0 
+- Jaguars vs Ravens | BetMGM | total | value: Over | book 39.5 vs median 33.5 | div 6.0 
+- Jaguars vs Ravens | Hard Rock | total | value: Over | book 36.5 vs median 33.5 | div 3.0 
+- Jaguars vs Ravens | Hard Rock | moneyline Jaguars | value: Jaguars | book 88.9 vs median 99.0 | div 10.1 
+- Jaguars vs Ravens | Hard Rock | moneyline Ravens | value: Ravens | book 16.7 vs median 3.8 | div 12.8 
+- UTSA vs Florida Atlantic | BetMGM | spread | value: favorite | book 10.5 vs median 14.0 | div 3.5 
+- UTSA vs Florida Atlantic | DraftKings | total | value: Over | book 105.5 vs median 102.5 | div 3.0 
+- James Madison vs Southern Miss | BetMGM | spread | value: favorite | book -17.5 vs median -8.5 | div 9.0 
+- James Madison vs Southern Miss | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- James Madison vs Southern Miss | BetMGM | moneyline James Madison | value: James Madison | book 93.3 vs median 83.6 | div 9.7 
+- James Madison vs Southern Miss | BetMGM | moneyline Southern Miss | value: Southern Miss | book 11.8 vs median 22.6 | div 10.8 
+- UCLA vs Minnesota | FanDuel | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
 - Western Kentucky vs Middle Tennessee | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Western Kentucky vs Middle Tennessee | BetMGM | moneyline Middle Tennessee | value: Middle Tennessee | book 98.0 vs median 49.0 | div 49.0 
-- Merrimack vs Wake Forest | bet365 | spread | value: dog | book 48.5 vs median 47.5 | div 1.0 
 - Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
 - Michigan State vs Michigan | DraftKings | spread | value: dog | book 39.5 vs median 13.5 | div 26.0 
 - Miami (FL) vs Notre Dame | Hard Rock | spread | value: favorite | book 6.5 vs median 7.5 | div 1.0 middle pairing spans key number 7
