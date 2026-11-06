@@ -51,3 +51,5 @@ LEAD: FanDuel on Texans @ Chargers | 2026-11-05 (spread)
 LEAD: bet365 on UCLA @ Minnesota | 2026-11-05 (spread)
 LEAD: DraftKings on UCLA @ Minnesota | 2026-11-05 (spread)
 ## 2026-11-05T18:18:12-05:00 — 78 games, 0 leads credited
+## 2026-11-05T19:29:31-05:00 — no-follow: bet365 Merrimack @ Wake Forest | 2026-11-05 spread (only 1 followed)
+## 2026-11-05T19:29:31-05:00 — 78 games, 0 leads credited
