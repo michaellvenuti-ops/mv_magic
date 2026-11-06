@@ -1271,3 +1271,17 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 22:26:06 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (72 with odds), db total 49324 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 22:27:37 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-05 22:29:32 ET] dh_team_total_middles.py: OK in 54s
+[2026-11-05 22:31:42 ET] sync_to_github.py: OK in 130s —   ok: hung-number-board-pc.html
+[2026-11-05 22:31:42 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 23, sog-middles: 177. Detai
+[2026-11-05 22:32:13 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 22:32:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (72 with odds), db total 49542 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 22:35:12 ET] dh_key_number_middles.py: OK in 176s — key-number-middles: no new strict-key middles.
+[2026-11-05 22:35:44 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 22:36:52 ET] hung_number.py: OK in 69s — HUNG NUMBER: James Madison vs Southern Miss — BetMGM moneyline Southern Miss value Southern Miss (11.8 vs median 22.6)
+[2026-11-05 22:36:57 ET] rlm.py: OK in 4s
+[2026-11-05 22:37:00 ET] leader_follower.py: OK in 3s — LEADER ALERT: bet365 reached 3 leads in 14 days. Honesty note: board display timing is not proof of who truly moved first.
+[2026-11-05 22:37:02 ET] steam_side.py: OK in 2s — STEAM-SIDE FLAG: FBS James Madison @ Southern Miss | 2026-11-05 | BetMGM | Southern Miss spread 17.5 (median 16.5 -> 8.5)
+[2026-11-05 22:37:36 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 218 events (72 with odds), db total 49760 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-05 22:38:08 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 22:40:09 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-05 22:42:10 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
