@@ -1,6 +1,7 @@
-# Hung numbers — 2026-11-05 (scan 2026-11-05 19:26)
+# Hung numbers — 2026-11-05 (scan 2026-11-05 20:29)
 
 - Jaguars vs Ravens | DraftKings | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
+- UTSA vs Florida Atlantic | BetMGM | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
