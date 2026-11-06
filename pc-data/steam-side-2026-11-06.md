@@ -17,3 +17,5 @@ NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-06 — Kalshi still dea
 NEW FLAG: FBS Kentucky @ Tennessee | 2026-11-06 — Kalshi still dealing spread -6.5 on Kentucky (pre-move median -6.5, now -5.5)
 NEW FLAG: FBS Iowa @ Northwestern | 2026-11-06 — Fanatics still dealing spread -2.5 on Iowa (pre-move median -2.5, now 1.5)
 NEW FLAG: FBS Iowa @ Northwestern | 2026-11-06 — Fanatics still dealing total 45.5 on Under (pre-move median 45.5, now 43.5)
+## 2026-11-06T14:38:27-05:00 — 63 games, 1 steam events, 1 NEW flags, 4 started games skipped
+NEW FLAG: FBS Iowa @ Northwestern | 2026-11-06 — FanDuel still dealing spread 1.5 on Iowa (pre-move median 1.5, now 2.5)
