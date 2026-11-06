@@ -81,3 +81,4 @@ LEAD: DraftKings on UCLA @ Minnesota | 2026-11-05 (spread)
 ## 2026-11-05T23:40:58-05:00 — no-follow: Caesars Jaguars @ Ravens | 2026-11-05 spread (only 0 followed)
 ## 2026-11-05T23:40:58-05:00 — no-follow: FanDuel Jaguars @ Ravens | 2026-11-05 spread (only 0 followed)
 ## 2026-11-05T23:40:58-05:00 — 78 games, 0 leads credited
+## 2026-11-05T23:57:38-05:00 — 78 games, 0 leads credited, 5 started games skipped
