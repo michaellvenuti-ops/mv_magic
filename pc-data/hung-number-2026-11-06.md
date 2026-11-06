@@ -1,14 +1,13 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 15:38)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 16:42)
 
-- Virginia Tech vs SMU | BetMGM | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- South Florida vs East Carolina | DraftKings | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- South Florida vs East Carolina | Caesars | spread | value: favorite | book -1.0 vs median 1.5 | div 2.5 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
-- BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.0 | div 44.5 middle pairing spans key number 7
+- BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
 - Duke vs NC State | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Oklahoma State vs Kansas State | Hard Rock | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
 - Delaware vs Kennesaw State | Hard Rock | total | value: Under | book 55.5 vs median 57.0 | div 1.5 
-- Delaware vs Kennesaw State | Fanatics | moneyline Kennesaw State | value: Kennesaw State | book 99.0 vs median 50.5 | div 48.5 
 - Marshall vs Georgia Southern | Hard Rock | total | value: Under | book 52.5 vs median 54.5 | div 2.0 
-- Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - Penn State vs Washington | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Oregon vs Ohio State | Hard Rock | spread | value: dog | book 45.5 vs median 7.5 | div 38.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
@@ -32,8 +31,9 @@
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 54.5 | div 4.0 
 - Liberty vs New Mexico State | Hard Rock | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
 - Hawai'i vs UTEP | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
-- Fresno State vs Utah State | DraftKings | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
-- Fresno State vs Utah State | Caesars | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
+- Fresno State vs Utah State | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Fresno State vs Utah State | Hard Rock | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Fresno State vs Utah State | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Texas State vs Oregon State | BetMGM | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Wyoming vs UNLV | Fanatics | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
