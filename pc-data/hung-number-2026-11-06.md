@@ -1,12 +1,18 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 16:42)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 17:48)
 
-- South Florida vs East Carolina | DraftKings | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
-- South Florida vs East Carolina | Caesars | spread | value: favorite | book -1.0 vs median 1.5 | div 2.5 
+- Virginia Tech vs SMU | Hard Rock | spread | value: dog | book 6.5 vs median 5.5 | div 1.0 
+- Nebraska vs Illinois | FanDuel | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
+- Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 51.0 | div 1.5 
+- Florida State vs Boston College | FanDuel | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
 - BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
 - Duke vs NC State | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Oklahoma State vs Kansas State | Hard Rock | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
 - Delaware vs Kennesaw State | Hard Rock | total | value: Under | book 55.5 vs median 57.0 | div 1.5 
+- Marshall vs Georgia Southern | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Marshall vs Georgia Southern | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Marshall vs Georgia Southern | Hard Rock | spread | value: dog | book 10.5 vs median 9.5 | div 1.0 
+- Marshall vs Georgia Southern | Fanatics | spread | value: dog | book 10.5 vs median 9.5 | div 1.0 
 - Marshall vs Georgia Southern | Hard Rock | total | value: Under | book 52.5 vs median 54.5 | div 2.0 
 - Penn State vs Washington | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Oregon vs Ohio State | Hard Rock | spread | value: dog | book 45.5 vs median 7.5 | div 38.0 
@@ -14,6 +20,7 @@
 - Western Kentucky vs Middle Tennessee | Hard Rock | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
 - Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
 - Merrimack vs Wake Forest | Hard Rock | spread | value: dog | book 48.5 vs median 47.5 | div 1.0 
+- UCF vs Kansas | Hard Rock | spread | value: favorite | book 2.5 vs median 3.5 | div 1.0 middle pairing spans key number 3
 - Northern Illinois vs San Jose State | bet365 | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - Northern Illinois vs San Jose State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - Rice vs North Texas | Fanatics | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
