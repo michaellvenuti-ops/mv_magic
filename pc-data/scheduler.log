@@ -1862,3 +1862,11 @@
 [2026-11-06 10:38:56 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 10:41:05 ET] upset_watch.py: OK in 9s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 10:56:57 ET] dh_game_middles.py: FAILED (exit 1) in 952s —   - <launched> pid=14864
+[2026-11-06 11:00:07 ET] sync_to_github.py: OK in 190s —   ok: hung-number-board-pc.html
+[2026-11-06 11:00:08 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 16, sog-m
+[2026-11-06 11:00:39 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 11:00:55 ET] odds_recorder.py: OK in 16s — SUMMARY: recorded 218 events (71 with odds), db total 74176 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 11:00:59 ET] totals_scan.py: OK in 4s — totals: no new flags (silent).
+[2026-11-06 11:01:04 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-06 11:03:05 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 11:10:17 ET] costco_gold.py: OK in 372s — SUMMARY: 8 items, prices 2/8, in-stock flags: 0, rate_limited: [], errors: 0
