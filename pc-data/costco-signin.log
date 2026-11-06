@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "C:\Users\venut\pc-scans\costco_gold.py", line 302, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\venut\pc-scans\costco_gold.py", line 252, in main
+    ctx = p.chromium.launch_persistent_context(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_generated.py", line 4412, in launch_persistent_context
+    self._sync(
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_browser_type.py", line 170, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 105, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch_persistent_context: Opening in existing browser session. This usually means that the profile is already in use by another instance of Chromium.
+Call log:
+  - <launching> C:\Users\venut\AppData\Local\ms-playwright\chromium-1248\chrome-win64\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --user-data-dir=C:\Users\venut\AppData\Local\pc_scans\costco_profile --remote-debugging-pipe about:blank
+  - <launched> pid=15744
+  - [pid=15744][out] Opening in existing browser session.
+  - [pid=15744] <gracefully close start>
+  - [pid=15744] <kill>
+  - [pid=15744] <will force kill>
+  - [pid=15744] <process did exit: exitCode=0, signal=null>
+  - [pid=15744] starting temporary directories cleanup
+  - [pid=15744] finished temporary directories cleanup
+  - [pid=15744] <gracefully close end>
+
