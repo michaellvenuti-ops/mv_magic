@@ -2016,3 +2016,19 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 13:15:30 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (142 with odds), db total 78432 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 13:16:31 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 13:18:33 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:23:10 ET] sync_to_github.py: OK in 187s —   ok: hung-number-board-pc.html
+[2026-11-06 13:23:10 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 14, sog-m
+[2026-11-06 13:23:41 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:23:44 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (142 with odds), db total 78656 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 13:26:58 ET] dh_key_number_middles.py: OK in 194s — key-number-middles: no new strict-key middles.
+[2026-11-06 13:27:31 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:27:58 ET] dh_arbitrage.py: FAILED (exit 2) in 27s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 13:29:02 ET] hung_number.py: OK in 64s — HUNG NUMBER: Iowa vs Northwestern — Fanatics moneyline Northwestern value Northwestern (56.5 vs median 49.3)
+[2026-11-06 13:29:07 ET] rlm.py: OK in 4s
+[2026-11-06 13:29:10 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 13:29:13 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Iowa @ Northwestern | 2026-11-06 | Fanatics | Under total 45.5 (median 45.5 -> 43.5)
+[2026-11-06 13:29:44 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:30:02 ET] odds_recorder.py: OK in 18s — SUMMARY: recorded 224 events (142 with odds), db total 78880 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 13:32:13 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 101s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 13:32:46 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 13:34:17 ET] dh_low_holds.py: OK in 91s — LOW-HOLDS: NCAAB Troy Florida St. Today 7:00 PM / table bar_chart / Moneyline Troy NO / Moneyline Troy / table bar_chart | Kalshi | Polymarket US
