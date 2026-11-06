@@ -1834,3 +1834,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 09:14:53 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 09:16:54 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 09:19:43 ET] dh_arbitrage.py: OK in 79s — ARBITRAGE: NCAAB Boston University Brown / Today 7:00 PM / table / Total Under 153.5 / Alt Total Over 153.5 / table bar_chart | DraftKings Predictions | Prophet
+[2026-11-06 09:22:45 ET] sync_to_github.py: OK in 182s —   ok: hung-number-board-pc.html
+[2026-11-06 09:22:46 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 16, sog-m
+[2026-11-06 09:23:17 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 09:23:19 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 71560 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 09:24:31 ET] dh_kalshi_poly_arb.py: OK in 71s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-06 09:25:26 ET] dh_low_holds.py: OK in 26s — LOW-HOLDS: NFL DAL Cowboys IND Colts / input Roof Open 57 °F 10 mph / Nov-08 1:00 PM / table bar_chart / Alt Spread DAL Cowboys -3.5 / Alt Spread DAL Cowboys -3
+[2026-11-06 09:25:27 ET] futures_pairs.py: FAILED (exit 2) in 1s — futures-pairs: no futures-board JSON in data/ — run futures_board.py first.
+[2026-11-06 09:25:58 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 09:28:00 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 09:28:33 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 71778 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 09:30:04 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 09:32:05 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
