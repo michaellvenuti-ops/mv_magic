@@ -1,7 +1,8 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 02:49)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 03:52)
 
 - Georgia State vs Appalachian State | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
-- Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.0 | div 2.5 
+- Alabama vs LSU | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.5 | div 3.0 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
 - Western Kentucky vs Middle Tennessee | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
