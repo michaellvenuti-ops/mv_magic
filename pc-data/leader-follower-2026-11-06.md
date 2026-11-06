@@ -16,3 +16,8 @@
 ## 2026-11-06T10:20:09-05:00 — no-follow: bet365 Oklahoma @ Florida | 2026-11-06 spread (only 1 followed)
 ## 2026-11-06T10:20:09-05:00 — 78 games, 1 leads credited, 5 started games skipped
 LEAD: DraftKings on Western Kentucky @ Middle Tennessee | 2026-11-06 (spread)
+## 2026-11-06T11:21:25-05:00 — pack move, never credited: UCLA @ Minnesota | 2026-11-06 spread (FanDuel, bet365)
+## 2026-11-06T11:21:25-05:00 — pack move, never credited: Western Kentucky @ Middle Tennessee | 2026-11-06 spread (Fanatics, Kalshi)
+## 2026-11-06T11:21:25-05:00 — pack move, never credited: Northern Illinois @ San Jose State | 2026-11-06 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-06T11:21:25-05:00 — pack move, never credited: Sam Houston @ Jacksonville State | 2026-11-06 total (Caesars, DraftKings, Fanatics, bet365)
+## 2026-11-06T11:21:25-05:00 — 78 games, 0 leads credited, 5 started games skipped
