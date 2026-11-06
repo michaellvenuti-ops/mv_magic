@@ -1028,40 +1028,7 @@
      "total": 39.5
     }
    },
-   "pending": [
-    {
-     "book": "BetMGM",
-     "direction": -1,
-     "market": "spread",
-     "new": 9.5,
-     "old": 20.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "DraftKings",
-     "direction": -1,
-     "market": "spread",
-     "new": 9.5,
-     "old": 20.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "FanDuel",
-     "direction": -1,
-     "market": "spread",
-     "new": 9.5,
-     "old": 20.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "Kalshi",
-     "direction": -1,
-     "market": "spread",
-     "new": 9.5,
-     "old": 20.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    }
-   ]
+   "pending": []
   },
   "James Madison @ Southern Miss | 2026-11-05": {
    "books": {
@@ -1086,40 +1053,7 @@
      "total": 63.5
     }
    },
-   "pending": [
-    {
-     "book": "DraftKings",
-     "direction": 1,
-     "market": "total",
-     "new": 74.5,
-     "old": 58.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "Caesars",
-     "direction": 1,
-     "market": "total",
-     "new": 74.5,
-     "old": 58.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "FanDuel",
-     "direction": 1,
-     "market": "total",
-     "new": 74.5,
-     "old": 58.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    },
-    {
-     "book": "Kalshi",
-     "direction": 1,
-     "market": "total",
-     "new": 63.5,
-     "old": 58.5,
-     "ts": "2026-11-05T23:40:58-05:00"
-    }
-   ]
+   "pending": []
   },
   "Jets @ Chiefs | 2026-11-05": {
    "books": {
@@ -1772,7 +1706,7 @@
     },
     "Fanatics": {
      "spread": 6.5,
-     "total": 62.0
+     "total": 62.5
     },
     "Kalshi": {
      "spread": 6.5,
@@ -2427,7 +2361,7 @@
   "UCF @ Kansas | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": -3.0,
+     "spread": -3.5,
      "total": 47.5
     },
     "Caesars": {
@@ -2559,7 +2493,7 @@
   "Virginia Tech @ SMU | 2026-11-05": {
    "books": {
     "BetMGM": {
-     "spread": -6.0,
+     "spread": -6.5,
      "total": 56.5
     },
     "Caesars": {
@@ -2690,82 +2624,25 @@
   }
  },
  "meta": {
-  "alerted_books": [
-   "DraftKings",
-   "bet365"
-  ],
+  "alerted_books": [],
   "baseline_done": true,
   "leads": {
-   "BetMGM": [
-    {
-     "game": "Jaguars @ Ravens | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
-    }
-   ],
-   "Caesars": [
-    {
-     "game": "Texans @ Chargers | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
-     "game": "Jaguars @ Ravens | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
-    }
-   ],
+   "BetMGM": [],
+   "Caesars": [],
    "DraftKings": [
     {
-     "game": "Texans @ Chargers | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
      "game": "UCLA @ Minnesota | 2026-11-05",
      "market": "spread",
      "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
-     "game": "UCLA @ Minnesota | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
     }
    ],
-   "FanDuel": [
-    {
-     "game": "Texans @ Chargers | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
-     "game": "Jaguars @ Ravens | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
-    }
-   ],
-   "Kalshi": [
-    {
-     "game": "Jaguars @ Ravens | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
-    }
-   ],
+   "FanDuel": [],
+   "Kalshi": [],
    "bet365": [
     {
-     "game": "Texans @ Chargers | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
      "game": "UCLA @ Minnesota | 2026-11-05",
      "market": "spread",
      "ts": "2026-11-05T17:14:53-05:00"
-    },
-    {
-     "game": "UCLA @ Minnesota | 2026-11-05",
-     "market": "spread",
-     "ts": "2026-11-05T22:37:00-05:00"
     }
    ]
   }
