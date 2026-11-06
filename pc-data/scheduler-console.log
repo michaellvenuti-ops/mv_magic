@@ -1309,3 +1309,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-05 23:10:02 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 50850 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-05 23:11:20 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 77s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
 [2026-11-05 23:12:07 ET] dh_low_holds.py: OK in 47s — LOW-HOLDS: NHL SJ Sharks MIN Wild / Nov-06 8:00 PM / table bar_chart / Alt Spread MIN Wild +2.5 / Alt Spread SJ Sharks -2.5 / table bar_chart | Polymarket US | 
+[2026-11-05 23:14:24 ET] sync_to_github.py: FAILED (exit 1) in 138s —   FAILED: pc-data/scan-grades/total-projectors.json (HTTP 409: {'error': '{"message":"is at e684cd3053de36265e8a9586256a8c07002165af but expected 86256fd9277ca7
+[2026-11-05 23:14:56 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
