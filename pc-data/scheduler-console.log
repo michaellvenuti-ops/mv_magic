@@ -1601,3 +1601,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 04:53:23 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 04:53:26 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 62622 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-06 04:56:25 ET] dh_key_number_middles.py: OK in 180s — key-number-middles: no new strict-key middles.
+[2026-11-06 04:59:01 ET] sync_to_github.py: OK in 156s —   ok: hung-number-board-pc.html
+[2026-11-06 04:59:02 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 16, sog-middles: 68. Detail
+[2026-11-06 04:59:33 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 04:59:47 ET] odds_recorder.py: OK in 14s — SUMMARY: recorded 218 events (71 with odds), db total 62840 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 05:00:49 ET] hung_number.py: OK in 62s — No new hung numbers (16 current flags).
+[2026-11-06 05:00:54 ET] rlm.py: OK in 4s
+[2026-11-06 05:00:57 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 05:00:59 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 05:01:30 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 05:03:31 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 05:05:04 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 63058 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 05:05:35 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 05:07:36 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
