@@ -1730,3 +1730,18 @@
 [2026-11-06 08:11:33 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
 [2026-11-06 08:11:35 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 08:11:36 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 9 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-06.json
+[2026-11-06 08:14:21 ET] sync_to_github.py: OK in 165s —   ok: hung-number-board-pc.html
+[2026-11-06 08:14:21 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 16, sog-m
+[2026-11-06 08:14:52 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:14:55 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 69380 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 08:14:55 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-06 08:15:03 ET] nhl_totals_scan.py: OK in 8s — nhl-totals: 3 games, no flags.
+[2026-11-06 08:15:09 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-06 08:18:02 ET] dh_arbitrage.py: FAILED (exit 2) in 83s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 08:18:33 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:20:06 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 69598 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 08:21:17 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 71s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 08:21:48 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:23:49 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:24:12 ET] dh_low_holds.py: OK in 23s — LOW-HOLDS: NCAAB East Tennessee St. NC St. / Today 7:00 PM / table bar_chart / Moneyline East Tennessee St. NO / Moneyline East Tennessee St. / table bar_chart 
+[2026-11-06 08:25:34 ET] dh_prop_middles.py: OK in 82s — PROP MIDDLE CLEAN : NCAAF Iowa St. Baylor / cloudy Cloudy 70 °F 8 mph / Nov-07 12:00 PM / table / Spread Iowa St. +9.5 / Spread Baylor -8.5 / table | Fliff | Dr
