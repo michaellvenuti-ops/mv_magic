@@ -31,3 +31,9 @@ LEAD: DraftKings on Western Kentucky @ Middle Tennessee | 2026-11-06 (spread)
 ## 2026-11-06T13:29:10-05:00 — pack move, never credited: Iowa @ Northwestern | 2026-11-06 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
 ## 2026-11-06T13:29:10-05:00 — pack move, never credited: Air Force @ Army | 2026-11-06 spread (BetMGM, Caesars, DraftKings)
 ## 2026-11-06T13:29:10-05:00 — 78 games, 0 leads credited, 5 started games skipped
+## 2026-11-06T14:38:24-05:00 — no-follow: Fanatics North Carolina @ UConn | 2026-11-06 spread (only 0 followed)
+## 2026-11-06T14:38:24-05:00 — pack move, never credited: Boise State @ Colorado State | 2026-11-06 spread (FanDuel, Kalshi)
+## 2026-11-06T14:38:24-05:00 — pack move, never credited: Iowa @ Northwestern | 2026-11-06 spread (Caesars, DraftKings, Kalshi, bet365)
+## 2026-11-06T14:38:24-05:00 — no-follow: Kalshi West Virginia @ Texas Tech | 2026-11-06 spread (only 0 followed)
+## 2026-11-06T14:38:24-05:00 — no-follow: Kalshi Fresno State @ Utah State | 2026-11-06 spread (only 2 followed)
+## 2026-11-06T14:38:25-05:00 — 78 games, 0 leads credited, 5 started games skipped
