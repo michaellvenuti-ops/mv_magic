@@ -1961,3 +1961,17 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 12:08:11 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (142 with odds), db total 76192 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 12:09:12 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 12:11:13 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:15:50 ET] sync_to_github.py: OK in 186s —   ok: hung-number-board-pc.html
+[2026-11-06 12:15:50 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 18, sog-m
+[2026-11-06 12:16:21 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:16:24 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (142 with odds), db total 76416 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 12:18:25 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:22:12 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new strict-key middles.
+[2026-11-06 12:22:45 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:23:03 ET] odds_recorder.py: OK in 18s — SUMMARY: recorded 224 events (142 with odds), db total 76640 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 12:24:07 ET] hung_number.py: OK in 64s — HUNG NUMBER: Rutgers vs Wisconsin — FanDuel spread value favorite (18.5 vs median 19.5)
+[2026-11-06 12:24:11 ET] rlm.py: OK in 4s
+[2026-11-06 12:24:15 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 12:24:18 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-06 | Kalshi | Sam Houston spread -17.5 (median -17.5 -> -16.5)
+[2026-11-06 12:24:49 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:25:14 ET] dh_arbitrage.py: FAILED (exit 2) in 25s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
