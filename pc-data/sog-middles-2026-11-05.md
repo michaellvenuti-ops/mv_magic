@@ -832,3 +832,28 @@ $700.33 Polymarket US 141.0 +141 @ Polymarket US
 - NEW W366  (): -200 [66.67%] $1,000 ProphetX -200.0 -200 @ ProphetX / +166 [37.59%] $567.23 ProphetX 166.0 +166 @ ProphetX
 - NEW W348  (): -190 [65.52%] $1,000 ProphetX -190.0 -190 @ ProphetX / +158 [38.76%] $594.83 ProphetX 158.0 +158 @ ProphetX
 - NEW W330  (): -180 [64.29%] $1,000 ProphetX -180.0 -180 @ ProphetX / +150 [40.00%] $625.32 ProphetX 150.0 +150 @ ProphetX
+## 2026-11-05T22:22:51-05:00 — sog-middles: 928 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW CLEAN W2  (): -106 [51.46%] $1,000 ProphetX -106.0 -106 @ ProphetX / -104 [50.98%] $990.85 ProphetX -104.0 -104 @ ProphetX
+- NEW CLEAN W6  (): -110 $1,000 Fliff -110.0 -110 @ Fliff / -104 [50.98%] $982.90 ProphetX -104.0 -104 @ ProphetX
+- NEW W286  (): -152 [60.32%] $1,000 ProphetX -152.0 -152 @ ProphetX / +134 [42.74%] $711.08 ProphetX 134.0 +134 @ ProphetX
+- NEW W322  (): -172 [63.24%] $1,000 ProphetX -172.0 -172 @ ProphetX / +150 [40.00%] $635.57 ProphetX 150.0 +150 @ ProphetX
+- NEW W349  (): -187 [65.16%] $1,000 ProphetX -187.0 -187 @ ProphetX / +162 [38.17%] $589 ProphetX 162.0 +162 @ ProphetX
+- NEW W288  (): -154 [60.63%] $1,000 ProphetX -154.0 -154 @ ProphetX / +134 [42.74%] $707.33 ProphetX 134.0 +134 @ ProphetX
+- NEW W288  (): -154 [60.63%] $1,000 ProphetX -154.0 -154 @ ProphetX / +134 [42.74%] $707.37 ProphetX 134.0 +134 @ ProphetX
+- NEW CLEAN W209  (): -109 [52.16%] $1,000 ProphetX -109.0 -109 @ ProphetX / +100 [50%] $982.49 Polymarket US 100.0 +100 @ Polymarket US
+- NEW W280  (): -150 [60.00%] $1,000 ProphetX -150.0 -150 @ ProphetX / +130 [43.48%] $727.10 ProphetX 130.0 +130 @ ProphetX
+- NEW W276  (): -148 [59.68%] $1,000 ProphetX -148.0 -148 @ ProphetX / +128 [43.86%] $737.33 ProphetX 128.0 +128 @ ProphetX
+- NEW CLEAN W214  (): -112 [52.83%] $1,000 ProphetX -112.0 -112 @ ProphetX / +102 [50%] $960.70 Polymarket US 102.0 +102 @ Polymarket US
+- NEW W369  (): -195 [66%] $1,000 Polymarket US -195.0 -195 @ Polymarket US / +174 [36.50%] $546.33 ProphetX 174.0 +174 @ ProphetX
+- NEW W275  (): -148 [59.68%] $1,000 ProphetX -148.0 -148 @ ProphetX / +127 [44.05%] $740.55 ProphetX 127.0 +127 @ ProphetX
+- NEW W326  (): -176 [63.77%] $1,000 ProphetX -176.0 -176 @ ProphetX / +150 [40.00%] $630.31 ProphetX 150.0 +150 @ ProphetX
+- NEW W267  (): -144 [59.02%] $1,000 ProphetX -144.0 -144 @ ProphetX / +123 [44.84%] $762.05 ProphetX 123.0 +123 @ ProphetX
+- NEW W291  (): -150 [60%] $1,000 Polymarket US -150.0 -150 @ Polymarket US / +141 [42%] $700.33 Polymarket US 141.0 +141 @ Polymarket US
+- NEW W345  (): -187 [65.16%] $1,000 ProphetX -187.0 -187 @ ProphetX / +158 [38.76%] $598.03 ProphetX 158.0 +158 @ ProphetX
+- NEW W284  (): -150 [60%] $1,000 Polymarket US -150.0 -150 @ Polymarket US / +134 [42.74%] $700.97 ProphetX 134.0 +134 @ ProphetX
+- NEW W310  (): -168 [62.69%] $1,000 ProphetX -168.0 -168 @ ProphetX / +142 [41.32%] $662.06 ProphetX 142.0 +142 @ ProphetX
+- NEW CLEAN W235  (): -127 [55.95%] $1,000 ProphetX -127.0 -127 @ ProphetX / +108 [48.08%] $860.69 ProphetX 108.0 +108 @ ProphetX
+- NEW W306  (): -166 [62.41%] $1,000 ProphetX -166.0 -166 @ ProphetX / +140 [41.67%] $670.51 ProphetX 140.0 +140 @ ProphetX
+- NEW W320  (): -170 [63%] $1,000 Polymarket US -170.0 -170 @ Polymarket US / +150 [40.00%] $626.87 ProphetX 150.0 +150 @ ProphetX
+- NEW W338  (): -184 [64.79%] $1,000 ProphetX -184.0 -184 @ ProphetX / +154 [39.38%] $610.92 ProphetX 154.0 +154 @ ProphetX
+- NEW W316  (): -172 [63.24%] $1,000 ProphetX -172.0 -172 @ ProphetX / +144 [40.98%] $651.05 ProphetX 144.0 +144 @ ProphetX
