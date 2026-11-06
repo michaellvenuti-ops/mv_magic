@@ -250,11 +250,11 @@
      "total": 48.5
     },
     "Caesars": {
-     "spread": -4.0,
+     "spread": -4.5,
      "total": 48.5
     },
     "DraftKings": {
-     "spread": -4.0,
+     "spread": -4.5,
      "total": 48.5
     },
     "FanDuel": {
@@ -357,7 +357,7 @@
   "Bengals @ Falcons | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": 3.0,
+     "spread": 3.5,
      "total": 52.5
     },
     "Caesars": {
@@ -501,7 +501,7 @@
   "Boise State @ Colorado State | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": 16.5,
+     "spread": 17.0,
      "total": 68.5
     },
     "Caesars": {
@@ -657,7 +657,7 @@
      "total": 42.5
     },
     "DraftKings": {
-     "spread": -3.0,
+     "spread": -3.5,
      "total": 42.5
     },
     "FanDuel": {
@@ -665,7 +665,7 @@
      "total": 42.5
     },
     "Fanatics": {
-     "spread": -3.0,
+     "spread": -3.5,
      "total": 42.5
     },
     "Hard Rock": {
@@ -1023,7 +1023,7 @@
      "total": 47.5
     },
     "Kalshi": {
-     "spread": -9.5,
+     "spread": -7.5,
      "total": 46.5
     },
     "bet365": {
@@ -1097,7 +1097,7 @@
      "total": 61.5
     },
     "bet365": {
-     "spread": -11.5,
+     "spread": -10.5,
      "total": 61.5
     }
    },
@@ -1299,7 +1299,7 @@
      "total": 51.5
     },
     "Fanatics": {
-     "spread": 5.5,
+     "spread": 5.0,
      "total": 51.5
     },
     "Hard Rock": {
@@ -1510,7 +1510,7 @@
     },
     "Fanatics": {
      "spread": 6.5,
-     "total": 52.5
+     "total": 52.0
     },
     "Hard Rock": {
      "spread": 6.5,
@@ -1563,7 +1563,7 @@
   "Fresno State @ Utah State | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": 2.0,
+     "spread": 1.5,
      "total": 43.5
     },
     "Caesars": {
@@ -1591,11 +1591,20 @@
      "total": 43.5
     },
     "bet365": {
-     "spread": 2.5,
+     "spread": 1.5,
      "total": 43.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "bet365",
+     "direction": -1,
+     "market": "spread",
+     "new": 1.5,
+     "old": 2.5,
+     "ts": "2026-11-06T16:43:46-05:00"
+    }
+   ]
   },
   "Georgia @ Ole Miss | 2026-11-05": {
    "books": {
@@ -2217,7 +2226,7 @@
      "total": 49.5
     },
     "Fanatics": {
-     "spread": -6.0,
+     "spread": -5.0,
      "total": 49.5
     },
     "Hard Rock": {
@@ -2346,23 +2355,23 @@
    "books": {
     "BetMGM": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 50.0
     },
     "Caesars": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 49.5
     },
     "DraftKings": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 49.5
     },
     "FanDuel": {
-     "spread": 7.0,
-     "total": 50.5
+     "spread": 6.5,
+     "total": 49.5
     },
     "Fanatics": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 50.0
     },
     "Hard Rock": {
      "spread": 7.0,
@@ -2370,11 +2379,11 @@
     },
     "Kalshi": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 49.5
     },
     "bet365": {
      "spread": 6.5,
-     "total": 50.5
+     "total": 49.5
     }
    },
    "pending": []
@@ -2447,16 +2456,7 @@
      "total": 47.5
     }
    },
-   "pending": [
-    {
-     "book": "Kalshi",
-     "direction": 1,
-     "market": "spread",
-     "new": 6.5,
-     "old": 5.5,
-     "ts": "2026-11-06T15:39:56-05:00"
-    }
-   ]
+   "pending": []
   },
   "Louisiana-Monroe @ Arkansas State | 2026-11-05": {
    "books": {
@@ -2767,7 +2767,7 @@
    "books": {
     "DraftKings": {
      "spread": -47.5,
-     "total": 58.5
+     "total": 59.5
     },
     "FanDuel": {
      "spread": -46.5,
@@ -2906,7 +2906,7 @@
      "total": 39.5
     },
     "Caesars": {
-     "spread": -14.5,
+     "spread": -14.0,
      "total": 39.5
     },
     "DraftKings": {
@@ -3067,7 +3067,7 @@
     },
     "Kalshi": {
      "spread": 4.5,
-     "total": 50.5
+     "total": 51.5
     },
     "bet365": {
      "spread": 4.5,
@@ -3198,7 +3198,7 @@
      "total": 54.5
     },
     "Fanatics": {
-     "spread": 8.0,
+     "spread": 7.5,
      "total": 54.5
     },
     "Hard Rock": {
@@ -3445,7 +3445,7 @@
      "total": 62.5
     },
     "Fanatics": {
-     "spread": 7.0,
+     "spread": 6.5,
      "total": 62.5
     },
     "Hard Rock": {
@@ -3516,7 +3516,7 @@
     },
     "Fanatics": {
      "spread": -6.5,
-     "total": 44.5
+     "total": 44.0
     },
     "Hard Rock": {
      "spread": -6.5,
@@ -3804,7 +3804,7 @@
     },
     "Fanatics": {
      "spread": -10.0,
-     "total": 51.5
+     "total": 52.0
     },
     "Hard Rock": {
      "spread": -9.5,
@@ -3886,7 +3886,7 @@
     },
     "Kalshi": {
      "spread": 4.5,
-     "total": 48.5
+     "total": 47.5
     },
     "bet365": {
      "spread": 4.5,
@@ -4207,11 +4207,11 @@
      "total": 39.5
     },
     "Caesars": {
-     "spread": -1.0,
+     "spread": 1.0,
      "total": 39.0
     },
     "DraftKings": {
-     "spread": -1.5,
+     "spread": 1.5,
      "total": 39.5
     },
     "FanDuel": {
@@ -4219,7 +4219,7 @@
      "total": 38.5
     },
     "Fanatics": {
-     "spread": -1.0,
+     "spread": -1.5,
      "total": 39.5
     },
     "Hard Rock": {
@@ -4487,15 +4487,15 @@
   "Texas @ Missouri | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": 2.5,
-     "total": 41.5
+     "spread": 3.0,
+     "total": 42.5
     },
     "Caesars": {
      "spread": 2.5,
      "total": 42.5
     },
     "DraftKings": {
-     "spread": 3.0,
+     "spread": 2.5,
      "total": 42.5
     },
     "FanDuel": {
@@ -4813,7 +4813,7 @@
     },
     "DraftKings": {
      "spread": -3.0,
-     "total": 48.5
+     "total": 47.5
     },
     "FanDuel": {
      "spread": -3.5,
@@ -4821,7 +4821,7 @@
     },
     "Fanatics": {
      "spread": -3.0,
-     "total": 48.0
+     "total": 48.5
     },
     "Hard Rock": {
      "spread": -2.5,
@@ -4833,7 +4833,7 @@
     },
     "bet365": {
      "spread": -3.5,
-     "total": 48.5
+     "total": 47.5
     }
    },
    "pending": []
@@ -4878,7 +4878,7 @@
      "total": 38.5
     },
     "Caesars": {
-     "spread": 4.5,
+     "spread": 4.0,
      "total": 39.0
     },
     "DraftKings": {
@@ -4890,8 +4890,8 @@
      "total": 38.5
     },
     "Fanatics": {
-     "spread": 5.0,
-     "total": 39.0
+     "spread": 4.5,
+     "total": 38.5
     },
     "Hard Rock": {
      "spread": 4.5,
@@ -5084,7 +5084,7 @@
      "total": 56.5
     },
     "Caesars": {
-     "spread": -6.5,
+     "spread": -6.0,
      "total": 56.5
     },
     "DraftKings": {
@@ -5096,7 +5096,7 @@
      "total": 56.5
     },
     "Fanatics": {
-     "spread": -6.0,
+     "spread": -5.5,
      "total": 56.5
     },
     "Hard Rock": {
@@ -5104,22 +5104,22 @@
      "total": 56.5
     },
     "Kalshi": {
-     "spread": -5.5,
+     "spread": -6.5,
      "total": 56.5
     },
     "bet365": {
-     "spread": -6.5,
+     "spread": -5.5,
      "total": 56.5
     }
    },
    "pending": [
     {
-     "book": "Kalshi",
+     "book": "bet365",
      "direction": 1,
      "market": "spread",
      "new": -5.5,
      "old": -6.5,
-     "ts": "2026-11-06T15:39:56-05:00"
+     "ts": "2026-11-06T16:43:46-05:00"
     }
    ]
   },
@@ -5261,16 +5261,7 @@
      "total": 53.5
     }
    },
-   "pending": [
-    {
-     "book": "Kalshi",
-     "direction": -1,
-     "market": "spread",
-     "new": 1.5,
-     "old": 2.5,
-     "ts": "2026-11-06T15:39:56-05:00"
-    }
-   ]
+   "pending": []
   },
   "Wyoming @ UNLV | 2026-11-05": {
    "books": {
@@ -5362,7 +5353,13 @@
     }
    ],
    "FanDuel": [],
-   "Kalshi": [],
+   "Kalshi": [
+    {
+     "game": "Virginia Tech @ SMU | 2026-11-06",
+     "market": "spread",
+     "ts": "2026-11-06T16:43:46-05:00"
+    }
+   ],
    "bet365": [
     {
      "game": "UCLA @ Minnesota | 2026-11-05",
