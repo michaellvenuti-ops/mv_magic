@@ -26,60 +26,52 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Correlated Parlay Board</h1>
-<div class="sub">Latest scan list: correlated-parlay-2026-11-05.md · page built 2026-11-06 18:50 ET</div>
+<div class="sub">Latest scan list: correlated-parlay-2026-11-06.md · page built 2026-11-06 19:27 ET</div>
 
-<div class='card'><h2>Performance ($100 unit)</h2><p><b>0-1-0</b> · <b>$-100.00</b> · 1 graded items · last graded 2026-10-29</p><p class='sub'>Flags graded hit/miss on the fav+over combo; money at $100 flat at the recorded SGP price when the scan recorded one, otherwise record only.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Florida Atlantic @ North Texas</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>Correlated-parlay scan — scheduled run, Thu Nov 5, 2026 (~10:44 AM PT)</h2>
-<p>Read-only, no sign-in, no bets. Browser task ran 10:44–11:01 AM PST (runtime-measured).</p>
+<div class='card'><h2>Performance ($100 unit)</h2><p><b>0-1-0</b> · <b>$-100.00</b> · 1 graded items · last graded 2026-10-29</p><p class='sub'>Flags graded hit/miss on the fav+over combo; money at $100 flat at the recorded SGP price when the scan recorded one, otherwise record only.</p></div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td>Florida Atlantic @ North Texas</td><td><span class='badge loss'>LOSS</span></td><td>$-100.00</td></tr></table></div><details><summary>Full scan log</summary><h2>Correlated-parlay scan — scheduled run, Fri Nov 6, 2026 (~10:44 AM PT)</h2>
+<p>Read-only, no sign-in, no bets. Browser task ran 10:44–10:56 AM PST (runtime-measured).</p>
 <h3>Readability verdicts</h3>
 <ul>
-<li>FanDuel: readable, signed out. SGP builder worked. Read ~10:45–11:00 AM PST (1:45–2:00 PM ET).</li>
+<li>FanDuel: readable, signed out. SGP builder worked. Read ~10:47–10:55 AM PST (1:47–1:55 PM ET).</li>
 <li>DraftKings: straight odds fully readable signed out, but SGP prices could NOT be obtained signed out (see gap note below). No sign-in prompt appeared, so this is NOT confirmed as a sign-in gate — no login was attempted per the assignment.</li>
 <li>No gate message: FanDuel SGP prices were publicly readable, so step 7&#x27;s neither-book condition does not apply. No gate file created.</li>
 </ul>
 <h3>Betslip check</h3>
 <ul>
-<li>FanDuel before adding anything: 0 selections (empty). After: 0 (empty). One batched removal on the JAX game briefly left 1 leg (Over) in the slip; it was then removed individually and the slip was verified back to 0.</li>
-<li>DraftKings before adding anything: 0 selections; no selection was ever added, so nothing to remove. Final: 0.</li>
+<li>FanDuel before adding anything: 0 selections (empty). After: 0 (empty). Scan-added legs were removed individually after each SGP price was read; slip verified back to 0.</li>
+<li>DraftKings before adding anything: 0 selections; no selection ever registered, so nothing to remove. Final: 0.</li>
 <li>No pre-existing selections found, so nothing pre-existing was touched.</li>
 </ul>
-<h3>Scope — today only, Thu Nov 5, 2026, not started, favorite 7+</h3>
+<h3>Scope — today only, Fri Nov 6, 2026, not started, favorite 7+</h3>
 <ul>
-<li>Only 3 NFL/FBS games listed as today and not started at either book. UTSA was -6.5 at both books and is excluded (favorite under 7).</li>
-<li>Qualifying games: 2 only, so the top-12 cap is not binding.</li>
+<li>No NFL game today (both books&#x27; first NFL games are Sun Nov 8). FBS Friday pool was just 5 games at each book.</li>
+<li>Qualifying game: 1 only, so the top-12 cap is not binding.</li>
 </ul>
 <h3>Math</h3>
-<p>Implied prob: negative price |p|/(|p|+100); positive price 100/(p+100). Independent fair = product of leg probs, converted back to American odds. Flag only when book SGP price &gt;= independent fair. Negatively correlated combos (favorite+under, underdog+over) never tested. All four fair values below were independently recomputed this run (python) and match the browser report&#x27;s prices.</p>
+<p>Implied prob: negative price |p|/(|p|+100); positive price 100/(p+100). Independent fair = product of leg probs, converted back to American odds. Flag only when book SGP price &gt;= independent fair. Negatively correlated combos (favorite+under, underdog+over) never tested. Both fair values below were independently recomputed this run (python) and match.</p>
 <h3>Full collected list</h3>
-<h4>1) James Madison at Southern Miss, kickoff 8:00 PM ET (FanDuel display; DraftKings showed Today 5:00 PM PT = 8:00 PM ET), not started</h4>
+<h4>1) New Mexico @ Nevada, kickoff 9:00 PM ET, not started</h4>
 <p>#### FanDuel</p>
 <ul>
-<li>Straight: James Madison -13.5 -110; Over 58.5 -110; Southern Miss +13.5 -110; Under 58.5 -110.</li>
-<li>Favorite + over: JMU -13.5 -110 + Over 58.5 -110 | SGP +242 | fair +264 | edge -22 | NOT FLAGGED</li>
-<li>Underdog + under: Southern Miss +13.5 -110 + Under 58.5 -110 | SGP +242 | fair +264 | edge -22 | NOT FLAGGED</li>
+<li>Straight: New Mexico -9.5 -120; Over 38.5 -110; Nevada +9.5 -102; Under 38.5 -110. (Moneylines as displayed: New Mexico -430, Nevada +330.)</li>
+<li>Favorite + over: New Mexico -9.5 -120 + Over 38.5 -110 | SGP +224 | fair +250 | edge -26 | NOT FLAGGED</li>
+<li>Underdog + under: Nevada +9.5 -102 + Under 38.5 -110 | SGP +244 | fair +278 | edge -34 | NOT FLAGGED</li>
 </ul>
 <p>#### DraftKings</p>
 <ul>
-<li>Straight: James Madison -13.5 -108; Over 58.5 -110; Southern Miss +13.5 -112; Under 58.5 -110.</li>
+<li>Straight: New Mexico -10 -110; Over 38.5 -108; Nevada +10 -110; Under 38.5 -112. (Moneylines as displayed: New Mexico -410, Nevada +320.)</li>
 <li>SGP: not obtainable signed out (see gap note). No flag possible from this book this run.</li>
 </ul>
-<h4>2) Jacksonville Jaguars at Baltimore Ravens, kickoff 8:16 PM ET (FanDuel display; DraftKings showed Today 5:15 PM PT = 8:15 PM ET), not started</h4>
-<p>#### FanDuel</p>
+<h3>Screened-out games (favorite under 7)</h3>
 <ul>
-<li>Straight: Jacksonville -9.5 -120; Over 39.5 -110; Baltimore +9.5 -102; Under 39.5 -110.</li>
-<li>Favorite + over: JAX -9.5 -120 + Over 39.5 -110 | SGP +208 | fair +250 | edge -42 | NOT FLAGGED</li>
-<li>Underdog + under: BAL +9.5 -102 + Under 39.5 -110 | SGP +229 | fair +278 | edge -49 | NOT FLAGGED</li>
-</ul>
-<p>#### DraftKings</p>
-<ul>
-<li>Straight: Jacksonville -10 -105; Over 39.5 -110; Baltimore +10 -115; Under 39.5 -110.</li>
-<li>SGP: not obtainable signed out (see gap note). No flag possible from this book this run.</li>
-</ul>
-<h3>Screened-out game (favorite under 7)</h3>
-<ul>
-<li>UTSA -6.5 at both books (opponent not recorded in the browser report). No straight prices collected for it.</li>
+<li>Virginia Tech at SMU: SMU -6.5 (FD -106; DK -110), 7:00 PM ET</li>
+<li>South Florida at East Carolina: East Carolina -1.5 (FD -110; DK -110), 7:30 PM ET</li>
+<li>Nebraska at Illinois: Nebraska -4.5 FD (-106) / -4 DK (-112), 8:00 PM ET</li>
+<li>TCU at #22 Arizona: Arizona -6.5 (FD -122; DK -110), 10:15 PM ET</li>
+<li>Note: books disagreed slightly on Nebraska&#x27;s spread (-4.5 FD vs -4 DK) and on the Nebraska/Illinois total (FD 49.5 vs DK 50.5).</li>
 </ul>
 <h3>DraftKings SGP gap (uncertain effect stated plainly)</h3>
-<p>On both DraftKings event pages, repeated clicks on spread/total buttons, on a pre-built SGP card (+600), and via the league-page SGP badge (which only opens the event page) never registered a selection — buttons stayed unchecked and the betslip stayed at 0, with repeated &quot;Oops-something didn&#x27;t load right&quot; toasts. Quick SGP offers only pre-packaged prop combos, not the requested spread+total combos. No sign-in prompt appeared when clicking odds, so this cannot be confirmed as a clean sign-in gate; the SGP prices simply could not be obtained signed out in this session. DraftKings SGP prices for both qualifying games therefore remain uncollected. This is a coverage shortfall for this run, not a gate event.</p>
+<p>Same failure pattern as Nov 5: event-page Game buttons clicked repeatedly (New Mexico -10 three times across Popular/Odds tabs and after a full page reload; Over 38.5 once) never registered a selection — betslip stayed at 0, with one &quot;Oops — something didn&#x27;t load right&quot; toast. Quick SGP tab is only a pre-pack picker (anytime-TD-scorer combos, +525) with no spread/total builder; league-page SGP badge only navigates back to the same event page; pre-built SGP cards did not match the required combos (&quot;Lobos On The Run&quot; +385 and &quot;Nevada On The Run&quot; +355 use ML + yardage props; &quot;Favs Feast&quot; SGPx +475 uses moneylines, not spreads). No sign-in prompt appeared when clicking odds, so this cannot be confirmed as a clean sign-in gate; the SGP prices simply could not be obtained signed out in this session. DraftKings SGP prices for the one qualifying game therefore remain uncollected. This is a coverage shortfall for this run, not a gate event.</p>
 <h3>SGP Correlation calculator (step 2B)</h3>
 <p>NOT RUN — correctly, per the if-and-only-if condition: no combo flagged, so there was nothing to run through DarkHorse&#x27;s free SGP Correlation calculator. No correlation % or EV figures exist for this run, and none are invented.</p>
 <h3>Deliverable: NONE — no new or changed flags</h3>
