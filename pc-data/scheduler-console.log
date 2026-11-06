@@ -1797,3 +1797,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 08:36:53 ET] dh_team_total_middles.py: OK in 51s
 [2026-11-06 08:37:24 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 08:38:34 ET] dh_game_middles.py: OK in 70s — GAME MIDDLE: NFL DAL Cowboys IND Colts / input Roof Open 57 °F 10 mph / Nov-08 1:00 PM / table bar_chart / Alt Spread DAL Cowboys -4.5 / Alt Spread IND Colts +5
+[2026-11-06 08:41:31 ET] sync_to_github.py: OK in 177s —   ok: hung-number-board-pc.html
+[2026-11-06 08:41:31 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 16, sog-m
+[2026-11-06 08:42:03 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:42:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 70252 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 08:44:06 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:44:12 ET] futures_board.py: FAILED (exit 2) in 6s — futures-board: zero markets parsed — see --dump
+[2026-11-06 08:46:13 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:47:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 70470 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 08:48:17 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 08:50:19 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
