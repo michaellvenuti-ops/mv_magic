@@ -1,14 +1,18 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 12:23)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 13:27)
 
 - Delaware vs Kennesaw State | Fanatics | moneyline Kennesaw State | value: Kennesaw State | book 99.0 vs median 50.5 | div 48.5 
 - Cincinnati vs Houston | bet365 | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
-- Alabama vs LSU | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Alabama vs LSU | Hard Rock | spread | value: favorite | book 3.5 vs median 6.5 | div 3.0 
 - Alabama vs LSU | Hard Rock | moneyline LSU | value: LSU | book 64.9 vs median 70.1 | div 5.2 
 - Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
-- Rutgers vs Wisconsin | FanDuel | spread | value: favorite | book 18.5 vs median 19.5 | div 1.0 
+- Rice vs North Texas | Fanatics | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
+- Rutgers vs Wisconsin | Fanatics | spread | value: dog | book 19.5 vs median 18.5 | div 1.0 
 - Michigan State vs Michigan | DraftKings | spread | value: dog | book 39.5 vs median 14.5 | div 25.0 
 - Michigan State vs Michigan | Fanatics | spread | value: favorite | book 13.5 vs median 14.5 | div 1.0 
+- Iowa vs Northwestern | Fanatics | spread | value: dog | book 2.5 vs median -1.5 | div 4.0 
+- Iowa vs Northwestern | Fanatics | total | value: Over | book 45.5 vs median 43.5 | div 2.0 
+- Iowa vs Northwestern | Fanatics | moneyline Iowa | value: Iowa | book 47.6 vs median 54.5 | div 6.9 
+- Iowa vs Northwestern | Fanatics | moneyline Northwestern | value: Northwestern | book 56.5 vs median 49.3 | div 7.3 
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 54.5 | div 4.0 
 - Hawai'i vs UTEP | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
 - Wyoming vs UNLV | Fanatics | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
