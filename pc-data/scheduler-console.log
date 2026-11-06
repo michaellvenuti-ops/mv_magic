@@ -1715,3 +1715,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 07:06:12 ET] rlm.py: OK in 5s
 [2026-11-06 07:06:15 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-06 07:06:18 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 07:08:52 ET] sync_to_github.py: OK in 155s —   ok: hung-number-board-pc.html
+[2026-11-06 07:08:53 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 17, sog-middles: 104. Detai
+[2026-11-06 07:09:24 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 07:09:26 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 67200 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 07:11:27 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 07:13:29 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 07:14:31 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 67418 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 07:16:23 ET] dh_arbitrage.py: FAILED (exit 2) in 82s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 07:16:54 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 07:18:55 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 07:20:07 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 72s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
