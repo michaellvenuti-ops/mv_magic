@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 03:52)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 04:59)
 
 - Georgia State vs Appalachian State | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Alabama vs LSU | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
