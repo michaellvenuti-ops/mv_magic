@@ -1408,3 +1408,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 01:05:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 54774 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-06 01:06:36 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 01:08:38 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:11:38 ET] sync_to_github.py: OK in 150s —   ok: hung-number-board-pc.html
+[2026-11-06 01:11:38 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 15, sog-middles: 30. Detail
+[2026-11-06 01:12:09 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:12:12 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 54992 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 01:13:53 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 71s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 01:14:24 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:14:42 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAB Southern TCU / Today 8:00 PM / table bar_chart / Moneyline Southern NO / Moneyline Southern / table bar_chart | Kalshi | Polymarket US
+[2026-11-06 01:16:43 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:17:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 55210 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 01:18:47 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 01:20:48 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
