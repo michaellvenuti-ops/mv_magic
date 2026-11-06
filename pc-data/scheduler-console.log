@@ -1541,3 +1541,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 03:41:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 218 events (71 with odds), db total 60224 snapshots / 261 events, feeds ok 6 fail 0
 [2026-11-06 03:42:17 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
 [2026-11-06 03:44:18 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 03:48:25 ET] sync_to_github.py: OK in 157s —   ok: hung-number-board-pc.html
+[2026-11-06 03:48:25 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 15, sog-middles: 53. Detail
+[2026-11-06 03:48:57 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 03:48:59 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 218 events (71 with odds), db total 60442 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 03:52:11 ET] dh_key_number_middles.py: OK in 192s — key-number-middles: no new strict-key middles.
+[2026-11-06 03:52:45 ET] upset_watch.py: OK in 4s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 03:53:52 ET] hung_number.py: OK in 67s — HUNG NUMBER: Alabama vs LSU — Hard Rock spread value favorite (3.5 vs median 6.5)
+[2026-11-06 03:53:57 ET] rlm.py: OK in 5s
+[2026-11-06 03:54:00 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 03:54:03 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 03:54:38 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 218 events (71 with odds), db total 60660 snapshots / 261 events, feeds ok 6 fail 0
+[2026-11-06 03:55:09 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
+[2026-11-06 03:57:10 ET] upset_watch.py: OK in 1s — SUMMARY: 207 games checked, 0 new trigger(s)
