@@ -21,3 +21,6 @@ NEW FLAG: FBS Iowa @ Northwestern | 2026-11-06 — Fanatics still dealing total 
 NEW FLAG: FBS Iowa @ Northwestern | 2026-11-06 — FanDuel still dealing spread 1.5 on Iowa (pre-move median 1.5, now 2.5)
 ## 2026-11-06T15:39:59-05:00 — 63 games, 0 steam events, 0 NEW flags, 4 started games skipped
 ## 2026-11-06T16:43:49-05:00 — 63 games, 0 steam events, 0 NEW flags, 4 started games skipped
+## 2026-11-06T17:50:53-05:00 — 63 games, 1 steam events, 2 NEW flags, 4 started games skipped
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — Hard Rock still dealing spread -10.5 on Marshall (pre-move median -10.5, now -9.5)
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — Fanatics still dealing spread -10.5 on Marshall (pre-move median -10.5, now -9.5)
