@@ -2031,3 +2031,20 @@
 [2026-11-06 14:28:51 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 14:29:13 ET] dh_arbitrage.py: FAILED (exit 2) in 22s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
 [2026-11-06 14:32:22 ET] dh_key_number_middles.py: OK in 189s — key-number-middles: no new strict-key middles.
+[2026-11-06 14:35:30 ET] sync_to_github.py: OK in 188s —   ok: hung-number-board-pc.html
+[2026-11-06 14:35:31 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 18, sog-m
+[2026-11-06 14:36:02 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:36:20 ET] odds_recorder.py: OK in 18s — SUMMARY: recorded 224 events (201 with odds), db total 80896 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 14:36:47 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 27s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 14:37:05 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAB Arkansas St. 20 Alabama Today 7:30 PM / table bar_chart / Moneyline Alabama / Moneyline Arkansas St. / table bar_chart | ProphetX | Polymarket 
+[2026-11-06 14:38:17 ET] hung_number.py: OK in 72s — HUNG NUMBER: Texas State vs Oregon State — BetMGM spread value favorite (5.5 vs median 6.5)
+[2026-11-06 14:38:21 ET] rlm.py: OK in 5s
+[2026-11-06 14:38:25 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 14:38:27 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Iowa @ Northwestern | 2026-11-06 | FanDuel | Iowa spread 1.5 (median 1.5 -> 2.5)
+[2026-11-06 14:39:49 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NFL CIN Bengals ATL Falcons Nov-08 9:30 AM / table bar_chart / Alt Spread ATL Falcons +5.5 / Alt Spread CIN Bengals -5 / table bar_chart | Prophet
+[2026-11-06 14:40:21 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:41:43 ET] dh_sog_middles.py: OK in 82s — - NEW CLEAN W2  (): -110 $1,000 Fliff -110.0 -110 @ Fliff / -108 [51.92%] $1,000.88 ProphetX -108.0 -108 @ ProphetX
+[2026-11-06 14:42:37 ET] dh_team_total_middles.py: OK in 54s
+[2026-11-06 14:43:09 ET] upset_watch.py: OK in 2s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:43:27 ET] odds_recorder.py: OK in 18s — SUMMARY: recorded 224 events (201 with odds), db total 81120 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 14:45:28 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
