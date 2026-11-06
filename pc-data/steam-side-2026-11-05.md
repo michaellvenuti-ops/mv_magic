@@ -26,3 +26,4 @@ NEW FLAG: FBS James Madison @ Southern Miss | 2026-11-05 — BetMGM still dealin
 ## 2026-11-05T22:37:02-05:00 — 63 games, 2 steam events, 1 NEW flags
 NEW FLAG: FBS James Madison @ Southern Miss | 2026-11-05 — BetMGM still dealing spread 17.5 on Southern Miss (pre-move median 16.5, now 8.5)
 ## 2026-11-05T23:41:01-05:00 — 63 games, 2 steam events, 0 NEW flags
+## 2026-11-05T23:57:44-05:00 — 63 games, 0 steam events, 0 NEW flags, 4 started games skipped
