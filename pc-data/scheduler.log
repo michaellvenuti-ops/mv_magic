@@ -1934,3 +1934,16 @@
 [2026-11-06 12:24:18 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-06 | Kalshi | Sam Houston spread -17.5 (median -17.5 -> -16.5)
 [2026-11-06 12:24:49 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 12:25:14 ET] dh_arbitrage.py: FAILED (exit 2) in 25s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 12:29:23 ET] sync_to_github.py: OK in 189s —   ok: hung-number-board-pc.html
+[2026-11-06 12:29:23 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 14, sog-m
+[2026-11-06 12:29:55 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:29:57 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (141 with odds), db total 76864 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 12:30:25 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 28s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 12:30:53 ET] dh_low_holds.py: OK in 28s — LOW-HOLDS: NFL CLE Browns NO Saints / Dome / Nov-08 1:00 PM / table bar_chart / Alt Spread NO Saints -9.5 NO / Alt Spread NO Saints -9.5 / table bar_chart | Kal
+[2026-11-06 12:32:09 ET] dh_prop_middles.py: OK in 76s — PROP MIDDLE : NFL LA Rams WAS Commanders / sunny Sunny 61 °F 9 mph / Nov-08 1:00 PM / table bar_chart / Alt Spread WAS Commanders +8.5 / Alt Spread LA Rams -8 /
+[2026-11-06 12:32:42 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:34:43 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:35:32 ET] odds_recorder.py: OK in 19s — SUMMARY: recorded 224 events (141 with odds), db total 77088 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 12:37:28 ET] dh_sog_middles.py: OK in 116s — - NEW CLEAN W7  (): -109 [52.15%] $1,000 ProphetX -109.0 -109 @ ProphetX / -102 [51%] $992.03 Polymarket US -102.0 -102 @ Polymarket US
+[2026-11-06 12:38:01 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 12:39:31 ET] dh_team_total_middles.py: OK in 60s
