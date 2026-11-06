@@ -2027,3 +2027,7 @@
 [2026-11-06 14:24:45 ET] sync_to_github.py: FAILED (exit 1) in 182s —   FAILED: pc-data/costco-gold/dump-2026-11-06.txt (HTTP 409: {'error': '{"message":"is at 115e98e37495bd2b1d77dd6fc5450d035ede727a but expected 0cde4f5ca8fee32f
 [2026-11-06 14:25:16 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 14:25:19 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (201 with odds), db total 80672 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 14:28:20 ET] sync_to_github.py: FAILED (exit 1) in 181s —   FAILED: pc-data/total-projectors-snapshot-2026-11-05.json (HTTP 409: {'error': '{"message":"is at 8bd4616e51baefff2f40f8527b9d85640d1e562d but expected 433848
+[2026-11-06 14:28:51 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 14:29:13 ET] dh_arbitrage.py: FAILED (exit 2) in 22s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-06 14:32:22 ET] dh_key_number_middles.py: OK in 189s — key-number-middles: no new strict-key middles.
