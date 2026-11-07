@@ -3054,3 +3054,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 17:09:21 ET] dh_prop_middles.py: OK in 89s — PROP MIDDLE CLEAN : NFL DAL Cowboys IND Colts Nov-08 1:00 PM / table / Receiving Yards R. Flournoy Under 44.5 / Alt Recv Yards R. Flournoy 40+ / table | theScor
 [2026-11-07 17:14:27 ET] sync_to_github.py: FAILED (exit 1) in 306s —   FAILED: pc-data/pclog-entry.txt (HTTP 504: {'error': '{"message": "We couldn\'t respond to your request in time. Sorry about that. Please try resubmitting you
 [2026-11-07 17:15:26 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (75 with odds), db total 124188 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 17:20:13 ET] sync_to_github.py: FAILED (exit 1) in 287s —   FAILED: game-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 38b6bb27d940c5925849b8627a5e9694281438ee but expected 651f8857316ea49c6b03bfb49ac2f
+[2026-11-07 17:20:46 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (74 with odds), db total 124408 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 17:22:21 ET] dh_sog_middles.py: OK in 95s — - NEW W273  (): -143 $1,000 Bally Bet -143.0 -143 @ Bally Bet / +130 [43.48%] $747.27 ProphetX 130.0 +130 @ ProphetX
+[2026-11-07 17:23:15 ET] dh_team_total_middles.py: OK in 54s
+[2026-11-07 17:23:16 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 17:23:18 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
