@@ -2416,3 +2416,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 23:06:38 ET] dh_kalshi_poly_arb.py: OK in 21s — KALSHI-POLY-ARB: NCAAF Morgan St. Delaware St. Nov-07 1:00 PM / table / Total Over 51.5 / Alt Total Under 51.5 / table bar_chart | Bet365 | Polymarket US
 [2026-11-06 23:09:11 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (125 with odds), db total 94560 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 23:12:27 ET] dh_prop_middles.py: OK in 77s — PROP MIDDLE : NCAAF Liberty New Mexico St. Nov-07 8:00 PM / table / Alt Spread New Mexico St. +22.5 / Alt Spread Liberty -21.5 / table | Bally Bet | BetMGM — wi
+[2026-11-06 23:17:23 ET] sync_to_github.py: OK in 236s —   ok: steam-side-board-pc.html
+[2026-11-06 23:17:23 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 57, nfl-f
+[2026-11-06 23:18:15 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (125 with odds), db total 94784 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 23:19:26 ET] hung_number.py: OK in 70s — HUNG NUMBER: Hawai'i vs UTEP — Caesars spread value dog (-7.5 vs median -8.5)
+[2026-11-06 23:19:30 ET] rlm.py: OK in 4s
+[2026-11-06 23:19:33 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-06 23:20:57 ET] dh_sog_middles.py: OK in 84s — - NEW W319  (): -169 $1,000 DraftKings -169.0 -169 @ DraftKings / +150 $637 Bally Bet 150.0 +150 @ Bally Bet
+[2026-11-06 23:22:27 ET] dh_low_holds.py: OK in 31s — LOW-HOLDS: NFL LV Raiders SF 49ers Nov-08 4:25 PM / table / Receptions T. Tucker Under 3.5 / Receptions T. Tucker Over 3.5 / table | Bet365 | Bally Bet
+[2026-11-06 23:23:49 ET] odds_recorder.py: OK in 21s — SUMMARY: recorded 224 events (125 with odds), db total 95008 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 23:25:45 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAF Liberty New Mexico St. Nov-07 8:00 PM / table / Alt Spread New Mexico St. +18.5 / Alt Spread Liberty -18 / table | BetRivers | BetMGM — windo
+[2026-11-06 23:27:05 ET] dh_team_total_middles.py: OK in 49s
+[2026-11-06 23:27:06 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-06 23:27:08 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
