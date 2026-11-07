@@ -12,8 +12,10 @@ Design notes:
 - Results sync back to GitHub (pc-data/) at most once per 10 minutes, and
   only when at least one scan ran since the last sync. Needs
   GH_PC_SCANS_TOKEN in the environment; without it, syncing is skipped.
-- upset_watch polls every 2 minutes like Chet's watch — it is the one
-  time-sensitive piece. Everything else is hourly or slower.
+- upset_watch is NOT in this queue: since 2026-11-06 it runs in its
+  own lane (Windows task pc-upset-watch-lane -> upset_watch_lane.py,
+  every 2 min) so this serial queue's backlog can never delay it.
+  Everything here is 5-minute or slower.
 - State lives in data/scheduler-state.json so a restart does not re-fire
   scans that just ran.
 """
@@ -41,8 +43,9 @@ CAP_SECONDS = 30 * 60
 #   kind "daily":    spec = "HH:MM" Eastern, fires once per day at/after that time
 #   kind "weekly":   spec = ("Mon".."Sun", "HH:MM") Eastern
 SCHEDULE = [
-    # every 2 minutes — the live one
-    ("upset_watch.py", [], "interval", 2),
+    # upset_watch.py: REMOVED 2026-11-06 — it runs in its own 2-minute
+    # lane now (pc-upset-watch-lane task + upset_watch_lane.py); keeping
+    # it here too would run it twice and race the shared state file.
     ("odds_recorder.py", [], "interval", 5),
     # hourly family
     ("dh_arbitrage.py", [], "interval", 60),
