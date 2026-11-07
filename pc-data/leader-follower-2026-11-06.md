@@ -61,3 +61,6 @@ LEAD: bet365 on Fresno State @ Utah State | 2026-11-06 (spread)
 ## 2026-11-06T21:06:03-05:00 — 78 games, 0 leads credited, 9 started games skipped
 ## 2026-11-06T22:14:08-05:00 — 78 games, 1 leads credited, 9 started games skipped
 LEAD: Caesars on Cowboys @ Colts | 2026-11-06 (spread)
+## 2026-11-06T23:19:33-05:00 — pack move, never credited: Liberty @ New Mexico State | 2026-11-06 spread (BetMGM, DraftKings)
+## 2026-11-06T23:19:33-05:00 — pack move, never credited: Hawai'i @ UTEP | 2026-11-06 spread (Caesars, DraftKings)
+## 2026-11-06T23:19:33-05:00 — 78 games, 0 leads credited, 10 started games skipped
