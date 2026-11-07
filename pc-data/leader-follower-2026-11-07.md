@@ -5,3 +5,5 @@
 ## 2026-11-07T02:24:52-05:00 — pack move, never credited: Rutgers @ Wisconsin | 2026-11-07 spread (Caesars, DraftKings, FanDuel)
 ## 2026-11-07T02:24:52-05:00 — 78 games, 1 leads credited, 10 started games skipped
 LEAD: FanDuel on Liberty @ New Mexico State | 2026-11-07 (spread)
+## 2026-11-07T03:26:34-05:00 — no-follow: FanDuel Missouri State @ Florida International | 2026-11-07 spread (only 0 followed)
+## 2026-11-07T03:26:34-05:00 — 78 games, 0 leads credited, 10 started games skipped
