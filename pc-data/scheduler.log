@@ -2326,3 +2326,7 @@
 [2026-11-06 21:40:57 ET] nba_overs_pregame.py: OK in 10s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-06 21:41:55 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 224 events (131 with odds), db total 92096 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 21:50:48 ET] dh_key_number_middles.py: OK in 413s — key-number-middles: no new strict-key middles.
+[2026-11-06 21:54:54 ET] sync_to_github.py: FAILED (exit 1) in 246s —   FAILED: pc-data/rlm-2026-11-04.md (HTTP 409: {'error': '{"message":"is at ae50ff31c29f1f9ce0c6949057588a03952bff9a but expected f9532ff6ad0446c2e999a4813e8a36
+[2026-11-06 21:55:48 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (131 with odds), db total 92320 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 21:59:35 ET] dh_arbitrage.py: OK in 227s — ARBITRAGE: NBA POR Trail Blazers LA Lakers Today 10:15 PM / table / Alt Total Under 238.5 / Alt Total Over 238.5 / table bar_chart | BetParx | Polymarket US
+[2026-11-06 21:59:42 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
