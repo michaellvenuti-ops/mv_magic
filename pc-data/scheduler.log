@@ -2929,3 +2929,14 @@
 [2026-11-07 14:48:17 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 1 new leads, no book at 3 yet).
 [2026-11-07 14:48:21 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Merrimack @ Wake Forest | 2026-11-07 | Hard Rock | Under total 58.5 (median 57.5 -> 55.5)
 [2026-11-07 14:51:24 ET] dh_prop_middles.py: OK in 183s — PROP MIDDLE : NBA SA Spurs POR Trail Blazers Today 10:15 PM / table / Alt Total Under 234.5 / Alt Total Over 234 / table | FanDuel | Bet365 — window 336.0 :: {'
+[2026-11-07 14:56:15 ET] sync_to_github.py: OK in 291s —   ok: steam-side-board-pc.html
+[2026-11-07 14:56:16 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 2912, won
+[2026-11-07 14:57:14 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (132 with odds), db total 120448 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 14:59:59 ET] dh_arbitrage.py: OK in 165s — ARBITRAGE: NBA ORL Magic GS Warriors Today 8:45 PM / table / Alt Total Over 216.5 / Alt Total Under 217 / table | Bally Bet | Bet365
+[2026-11-07 15:01:08 ET] dh_kalshi_poly_arb.py: OK in 69s — KALSHI-POLY-ARB: NCAAF Merrimack 14 Wake Forest Today 3:30 PM / table / Total Under 57.5 / Alt Total Over 57.5 / table bar_chart | BetRivers | Polymarket US
+[2026-11-07 15:04:30 ET] dh_sog_middles.py: OK in 201s — - NEW CLEAN W1  (): -106 $1,000 FanDuel -106.0 -106 @ FanDuel / -105 $995 Bally Bet -105.0 -105 @ Bally Bet
+[2026-11-07 15:05:57 ET] dh_team_total_middles.py: OK in 87s
+[2026-11-07 15:06:03 ET] nfl_first_score.py: OK in 5s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 15:06:05 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-07 15:07:04 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (117 with odds), db total 120668 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:12:07 ET] dh_key_number_middles.py: OK in 302s — key-number-middles: no new strict-key middles.
