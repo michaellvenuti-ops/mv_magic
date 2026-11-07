@@ -27,7 +27,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Cowboys",
    "dog_team": "Colts"
   },
@@ -2121,7 +2121,8 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Oregon",
-   "dog_team": "E Washington"
+   "dog_team": "E Washington",
+   "final": true
   },
   "401926131": {
    "sport": "NCAAB",
@@ -2131,7 +2132,8 @@
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Purdue",
-   "dog_team": "Valparaiso"
+   "dog_team": "Valparaiso",
+   "live_ml": -395
   },
   "401922059": {
    "sport": "NCAAB",
@@ -2162,7 +2164,8 @@
    "fav": "home",
    "spread": 23.5,
    "fav_team": "Kentucky",
-   "dog_team": "James Madison"
+   "dog_team": "James Madison",
+   "live_ml": -720
   },
   "401929385": {
    "sport": "NCAAB",
@@ -2284,12 +2287,12 @@
    "sport": "NCAAB",
    "matchup": "ETSU at NC State",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 17.5,
    "fav_team": "NC State",
    "dog_team": "ETSU",
-   "live_ml": -500
+   "live_ml": -120
   },
   "401917949": {
    "sport": "NCAAB",
@@ -2663,7 +2666,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 11.5,
    "fav_team": "Kansas St",
    "dog_team": "CSU Northridge"
   },
