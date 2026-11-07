@@ -24,3 +24,13 @@ LEAD: FanDuel on Liberty @ New Mexico State | 2026-11-07 (spread)
 ## 2026-11-07T10:01:10-05:00 — no-follow: Kalshi Wyoming @ UNLV | 2026-11-07 spread (only 0 followed)
 ## 2026-11-07T10:01:10-05:00 — 78 games, 1 leads credited, 10 started games skipped
 LEAD: DraftKings on Clemson @ Syracuse | 2026-11-07 (spread)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Florida State @ Boston College | 2026-11-07 spread (Kalshi, bet365)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Clemson @ Syracuse | 2026-11-07 spread (FanDuel, Kalshi)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Maryland @ Purdue | 2026-11-07 spread (FanDuel, Kalshi)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Delaware @ Kennesaw State | 2026-11-07 spread (BetMGM, Caesars, Kalshi, bet365)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Temple @ Navy | 2026-11-07 spread (FanDuel, bet365)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: UCF @ Kansas | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Oklahoma @ Florida | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-07T11:19:03-05:00 — pack move, never credited: Wyoming @ UNLV | 2026-11-07 spread (BetMGM, FanDuel, bet365)
+## 2026-11-07T11:19:03-05:00 — 78 games, 1 leads credited, 10 started games skipped
+LEAD: bet365 on Clemson @ Syracuse | 2026-11-07 (spread)
