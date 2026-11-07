@@ -2984,3 +2984,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 15:12:07 ET] dh_key_number_middles.py: OK in 302s — key-number-middles: no new strict-key middles.
 [2026-11-07 15:17:14 ET] sync_to_github.py: FAILED (exit 1) in 307s —   FAILED: pc-data/totals-2026-11-06.md (HTTP 409: {'error': '{"message":"is at affadb9f505218f9fd5e8549673321b8f2755b10 but expected cfc52c2eb5088ac6e8acf32a4be
 [2026-11-07 15:18:25 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 220 events (117 with odds), db total 120888 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:23:34 ET] sync_to_github.py: OK in 309s —   ok: steam-side-board-pc.html
+[2026-11-07 15:23:37 ET] notify.py: OK in 3s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 3069, won
+[2026-11-07 15:24:36 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (117 with odds), db total 121108 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:26:14 ET] dh_low_holds.py: OK in 98s — LOW-HOLDS: NFL CIN Bengals ATL Falcons Nov-08 9:30 AM / table bar_chart / Receptions A. Hooper 2+ NO / Alt Receptions A. Hooper 2+ / table | Polymarket US | Bet
+[2026-11-07 15:28:39 ET] dh_game_middles.py: OK in 145s — GAME MIDDLE: NCAAF Temple Navy Today 3:30 PM / table bar_chart / Spread Temple +8.5 / Alt Spread Navy -7.5 / table | ProphetX | Bally Bet — window 204.0 :: -102
+[2026-11-07 15:30:59 ET] hung_number.py: OK in 140s — HUNG NUMBER: Florida State vs Boston College — Fanatics moneyline Florida State value Florida State (53.5 vs median 68.8)
+[2026-11-07 15:31:08 ET] steam_side.py: OK in 9s — STEAM-SIDE FLAG: FBS Liberty @ New Mexico State | 2026-11-07 | Fanatics | New Mexico State spread 15.5 (median 15.5 -> 14.5)
+[2026-11-07 15:34:51 ET] dh_prop_middles.py: OK in 223s — PROP MIDDLE CLEAN : NCAAF West Virginia 13 Texas Tech Today 9:30 PM / table / Alt Spread West Virginia +18 / Alt Spread Texas Tech -17.5 / table | BetRivers | F
