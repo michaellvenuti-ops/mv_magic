@@ -51,3 +51,9 @@ LEAD: Kalshi on Virginia Tech @ SMU | 2026-11-06 (spread)
 ## 2026-11-06T17:50:50-05:00 — 78 games, 2 leads credited, 5 started games skipped
 LEAD: bet365 on Virginia Tech @ SMU | 2026-11-06 (spread)
 LEAD: bet365 on Fresno State @ Utah State | 2026-11-06 (spread)
+## 2026-11-06T20:04:25-05:00 — pack move, never credited: Cowboys @ Colts | 2026-11-06 spread (DraftKings, bet365)
+## 2026-11-06T20:04:25-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Nebraska @ Illinois | 2026-11-06
+## 2026-11-06T20:04:25-05:00 — pack move, never credited: New Mexico @ Nevada | 2026-11-06 spread (Kalshi, bet365)
+## 2026-11-06T20:04:25-05:00 — no-follow: FanDuel Florida State @ Boston College | 2026-11-06 spread (only 0 followed)
+## 2026-11-06T20:04:25-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-06 spread (Fanatics, Kalshi)
+## 2026-11-06T20:04:25-05:00 — 78 games, 0 leads credited, 8 started games skipped
