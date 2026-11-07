@@ -2798,3 +2798,16 @@
 [2026-11-07 10:39:00 ET] dh_kalshi_poly_arb.py: OK in 109s — KALSHI-POLY-ARB: NCAAB Northwestern St. Murray St. Today 8:00 PM / table bar_chart / Alt Spread Northwestern St. +30.5 / Alt Spread Murray St. -30.5 / table | P
 [2026-11-07 10:55:33 ET] dh_key_number_middles.py: FAILED (exit 1) in 962s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
 [2026-11-07 10:55:47 ET] steam_side.py: OK in 14s — STEAM-SIDE FLAG: FBS Oklahoma @ Florida | 2026-11-07 | Fanatics | Oklahoma spread -6.5 (median -5.5 -> -4.5)
+[2026-11-07 11:00:30 ET] sync_to_github.py: FAILED (exit 1) in 282s —   FAILED: kalshi-poly-arb-board-pc.html (HTTP 409: {'error': '{"message":"is at 2dea0c0ba6bb5254a2f387ffa3ea0aa65309618a but expected c1ef9a5b513533637edaa3858c
+[2026-11-07 11:01:26 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 224 events (126 with odds), db total 115168 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 11:04:57 ET] dh_low_holds.py: FAILED (exit 1) in 210s —   - [pid=9068][err] [9068:10128:1107/110402.534:ERROR:content\browser\network_service_instance_impl.cc:652] Network service crashed or was terminated, restartin
+[2026-11-07 11:07:38 ET] dh_game_middles.py: OK in 161s — GAME MIDDLE: NCAAB Sacramento St. Santa Clara Today 10:00 PM / table / Total Over 167.5 / Alt Total Under 168.5 / table | Bet365 | DraftKings — window 235.0 :: 
+[2026-11-07 11:08:49 ET] hung_number.py: OK in 71s — HUNG NUMBER: Wyoming vs UNLV — Fanatics moneyline UNLV value UNLV (68.8 vs median 63.4)
+[2026-11-07 11:10:11 ET] dh_prop_middles.py: OK in 82s — PROP MIDDLE : NCAAB Washington St. High Point Today 5:00 PM / table / Alt Total Under 160.5 / Alt Total Over 160 / table | Fanatics-NJ | Bet365 — window 340.0 :
+[2026-11-07 11:11:29 ET] dh_sog_middles.py: OK in 78s — - NEW CLEAN W220  (): -114 $1,000 Bally Bet -114.0 -114 @ Bally Bet / +106 [48.54%] $920.73 ProphetX 106.0 +106 @ ProphetX
+[2026-11-07 11:12:15 ET] dh_team_total_middles.py: OK in 46s
+[2026-11-07 11:12:16 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 11:12:19 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-07 11:12:21 ET] totals_scan.py: OK in 2s — totals: no new flags (silent).
+[2026-11-07 11:12:26 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-07 11:13:19 ET] dh_derivative_ev.py: OK in 52s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
