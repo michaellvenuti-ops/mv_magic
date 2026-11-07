@@ -203,7 +203,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "South Carolina",
-   "dog_team": "Texas A&M"
+   "dog_team": "Texas A&M",
+   "final": true
   },
   "401856740": {
    "sport": "CFB",
@@ -1362,7 +1363,8 @@
    "fav": "home",
    "spread": 24.5,
    "fav_team": "Montana",
-   "dog_team": "Portland St"
+   "dog_team": "Portland St",
+   "final": true
   },
   "401868153": {
    "sport": "CFB",
@@ -1372,7 +1374,8 @@
    "fav": "home",
    "spread": 10.0,
    "fav_team": "Southern Utah",
-   "dog_team": "N Colorado"
+   "dog_team": "N Colorado",
+   "final": true
   },
   "401868184": {
    "sport": "CFB",
@@ -1393,7 +1396,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Alabama A&M",
-   "dog_team": "Prairie View"
+   "dog_team": "Prairie View",
+   "final": true
   },
   "401868331": {
    "sport": "CFB",
@@ -1551,11 +1555,17 @@
    "sport": "CFB",
    "matchup": "Montana St at Idaho St",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 15.5,
    "fav_team": "Montana St",
-   "dog_team": "Idaho St"
+   "dog_team": "Idaho St",
+   "alerted_at": "2026-11-07T18:26:04",
+   "board_read_at": "2026-11-07T18:26:04",
+   "alert_expires_at": "2026-11-07T18:31:04",
+   "alert_detail": "1:49 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401868057": {
    "sport": "CFB",
@@ -3364,7 +3374,7 @@
    "spread": 13.5,
    "fav_team": "High Point",
    "dog_team": "Washington St",
-   "live_ml": -475
+   "live_ml": -395
   },
   "401911007": {
    "sport": "NCAAB",
