@@ -32,3 +32,4 @@ NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — FanDuel still dealing
 ## 2026-11-06T21:59:42-05:00 — 63 games, 0 steam events, 0 NEW flags, 8 started games skipped
 ## 2026-11-06T22:32:43-05:00 — 63 games, 0 steam events, 0 NEW flags, 9 started games skipped
 ## 2026-11-06T23:04:47-05:00 — 63 games, 0 steam events, 0 NEW flags, 9 started games skipped
+## 2026-11-06T23:35:46-05:00 — 63 games, 0 steam events, 0 NEW flags, 9 started games skipped
