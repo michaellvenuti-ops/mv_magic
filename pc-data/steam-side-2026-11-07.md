@@ -50,3 +50,9 @@ NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — Fanatics still dealing
 ## 2026-11-07T16:02:51-05:00 — 63 games, 4 steam events, 2 NEW flags, 34 started games skipped
 NEW FLAG: FBS Georgia State @ Appalachian State | 2026-11-07 — Kalshi still dealing spread -6.5 on Georgia State (pre-move median -5.5, now 5.5)
 NEW FLAG: FBS Georgia State @ Appalachian State | 2026-11-07 — Kalshi still dealing total 52.5 on Over (pre-move median 64.5, now 67.5)
+## 2026-11-07T16:34:42-05:00 — 63 games, 4 steam events, 5 NEW flags, 36 started games skipped
+NEW FLAG: FBS Louisiana-Monroe @ Arkansas State | 2026-11-07 — Caesars still dealing spread -15.5 on Louisiana-Monroe (pre-move median -14.5, now -13.5)
+NEW FLAG: FBS Louisiana-Monroe @ Arkansas State | 2026-11-07 — FanDuel still dealing spread -14.5 on Louisiana-Monroe (pre-move median -14.5, now -13.5)
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — FanDuel still dealing spread -7.5 on Georgia Southern (pre-move median -8.5, now -9.5)
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Caesars still dealing total 47.5 on Over (pre-move median 47.5, now 49.0)
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — FanDuel still dealing total 46.5 on Over (pre-move median 47.5, now 49.0)
