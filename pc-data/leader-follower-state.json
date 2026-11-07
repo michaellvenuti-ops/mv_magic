@@ -110,7 +110,7 @@
   "Alabama @ LSU | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -6.5,
+     "spread": -6.0,
      "total": 52.5
     },
     "Caesars": {
@@ -1209,15 +1209,15 @@
   "Colorado @ Arizona State | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -3.5,
+     "spread": -3.0,
      "total": 48.5
     },
     "Caesars": {
-     "spread": -3.5,
+     "spread": -3.0,
      "total": 48.5
     },
     "DraftKings": {
-     "spread": -3.5,
+     "spread": -3.0,
      "total": 48.5
     },
     "FanDuel": {
@@ -1287,7 +1287,7 @@
      "total": 51.5
     },
     "Caesars": {
-     "spread": 5.5,
+     "spread": 4.5,
      "total": 51.5
     },
     "DraftKings": {
@@ -1315,7 +1315,16 @@
      "total": 51.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "Caesars",
+     "direction": -1,
+     "market": "spread",
+     "new": 4.5,
+     "old": 5.5,
+     "ts": "2026-11-06T21:06:03-05:00"
+    }
+   ]
   },
   "Delaware @ Kennesaw State | 2026-11-05": {
    "books": {
@@ -2131,7 +2140,7 @@
   "Jets @ Chiefs | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -9.5,
+     "spread": -9.0,
      "total": 48.0
     },
     "Caesars": {
@@ -2486,7 +2495,7 @@
    "books": {
     "BetMGM": {
      "spread": -14.5,
-     "total": 53.5
+     "total": 52.5
     },
     "Caesars": {
      "spread": -14.5,
@@ -2502,7 +2511,7 @@
     },
     "Fanatics": {
      "spread": -14.5,
-     "total": 53.0
+     "total": 52.5
     },
     "Hard Rock": {
      "spread": -14.5,
@@ -2560,7 +2569,7 @@
     },
     "Caesars": {
      "spread": 14.5,
-     "total": 62.0
+     "total": 62.5
     },
     "DraftKings": {
      "spread": 14.5,
@@ -2766,7 +2775,7 @@
     },
     "Fanatics": {
      "spread": -47.5,
-     "total": 59.0
+     "total": 58.5
     },
     "Hard Rock": {
      "spread": -48.5,
@@ -2777,20 +2786,11 @@
      "total": 58.5
     },
     "bet365": {
-     "spread": -46.5,
+     "spread": -47.5,
      "total": 58.5
     }
    },
-   "pending": [
-    {
-     "book": "bet365",
-     "direction": 1,
-     "market": "spread",
-     "new": -46.5,
-     "old": -47.5,
-     "ts": "2026-11-06T20:04:25-05:00"
-    }
-   ]
+   "pending": []
   },
   "Miami (FL) @ Notre Dame | 2026-11-05": {
    "books": {
@@ -4273,15 +4273,15 @@
   "TCU @ Arizona | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -7.0,
+     "spread": -6.5,
      "total": 46.5
     },
     "Caesars": {
-     "spread": -7.0,
+     "spread": -6.5,
      "total": 46.5
     },
     "DraftKings": {
-     "spread": -7.0,
+     "spread": -6.5,
      "total": 46.5
     },
     "FanDuel": {
@@ -4289,7 +4289,7 @@
      "total": 46.5
     },
     "Fanatics": {
-     "spread": -7.0,
+     "spread": -6.5,
      "total": 46.5
     },
     "Hard Rock": {
@@ -4628,7 +4628,7 @@
    "books": {
     "BetMGM": {
      "spread": -5.5,
-     "total": 71.5
+     "total": 70.5
     },
     "Caesars": {
      "spread": -6.5,
@@ -4636,7 +4636,7 @@
     },
     "DraftKings": {
      "spread": -6.5,
-     "total": 71.5
+     "total": 70.5
     },
     "FanDuel": {
      "spread": -6.5,
