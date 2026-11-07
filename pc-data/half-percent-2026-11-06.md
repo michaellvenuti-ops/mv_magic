@@ -10,9 +10,3 @@
 - Running record: 0W-0L-0T, modeled P/L $0.00 on $10,000 flat modeled size.
 - Strategy source: The Half Percent Club reel (DfX8wkcxURK). The creator's streak / YTD claims are UNVERIFIED.
 - Also screened, did not clear: TM (premarket move -0.26% under +3%); COP (premarket move +0.01% under +3%); SONY (premarket move -3.59% under +3%); MNST (premarket move -5.90% under +3%); PH (price $965.30 outside $10-$500).
-## 2026-11-06T20:20:19-05:00 — Half Percent Club: 1 candidate CANCELLED at the 9:28 AM re-check
-- PICK CANCELLED: NET (Cloudflare, Inc. Class A Common Stock) — do NOT trade it today. Stand down before the bell.
-- Re-check at 9:28 AM ET (Nasdaq quote info): $268.80 (+0.04% vs prior close). Fail reason: gap +0.04% is outside the +3%..+12% band at 9:28 AM.
-- This morning's plan was entry $293.90, target $295.37, stop $292.43. The v3 pre-bell re-check killed it — head-fake protection working as designed.
-- The cancelled pick grades NO TRADE tomorrow morning (excluded from the record, no modeled P/L).
-- Running record: 0W-0L-0T, modeled P/L $0.00 on $10,000 flat modeled size.
