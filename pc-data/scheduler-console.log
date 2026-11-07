@@ -2774,3 +2774,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 08:54:28 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-07 08:55:54 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 224 events (126 with odds), db total 112032 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 09:01:26 ET] dh_key_number_middles.py: OK in 212s — key-number-middles: no new strict-key middles.
+[2026-11-07 09:06:01 ET] sync_to_github.py: FAILED (exit 1) in 276s —   FAILED: pc-data/nba-overs-snapshot-2026-11-06.json (HTTP 409: {'error': '{"message":"is at 8967adb314ae262e84278185b17c6c44480b1a92 but expected 3a9e67330bc70
+[2026-11-07 09:06:56 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 224 events (126 with odds), db total 112256 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 09:07:01 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
+[2026-11-07 09:08:32 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE CLEAN : NCAAB Long Island University La Salle Today 3:30 PM / table / Total Under 150.5 / Alt Total Over 150 / table | Caesars | Bet365 — window 225
+[2026-11-07 09:08:34 ET] half_percent.py: OK in 2s — half-percent: weekend — no run.
