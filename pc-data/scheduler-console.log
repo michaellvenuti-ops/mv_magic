@@ -2392,3 +2392,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 22:21:47 ET] dh_low_holds.py: OK in 29s — LOW-HOLDS: NCAAF 20 Boise St. Colorado St. Nov-07 6:00 PM / table / Alt Spread Colorado St. +24.5 / Alt Spread Boise St. -24.5 / table | Bally Bet | FanDuel
 [2026-11-06 22:25:28 ET] dh_key_number_middles.py: OK in 221s — key-number-middles: no new strict-key middles.
 [2026-11-06 22:26:21 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (127 with odds), db total 93216 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:32:06 ET] sync_to_github.py: OK in 224s —   ok: steam-side-board-pc.html
+[2026-11-06 22:32:06 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 57, nfl-f
+[2026-11-06 22:32:39 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 93440 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:32:44 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 22:37:47 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (125 with odds), db total 93664 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:41:06 ET] dh_prop_middles.py: OK in 200s — PROP MIDDLE CLEAN : NCAAF 20 Boise St. Colorado St. Nov-07 6:00 PM / table / Alt Spread Colorado St. +19 / Alt Spread Boise St. -18.5 / table | Bally Bet | theS
+[2026-11-06 22:44:11 ET] dh_sog_middles.py: OK in 155s — - NEW W351  (): -186 $1,000 BetRivers -186.0 -186 @ BetRivers / +165 $580 Fanatics-NJ 165.0 +165 @ Fanatics-NJ
