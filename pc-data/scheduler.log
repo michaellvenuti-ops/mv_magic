@@ -2874,3 +2874,13 @@
 [2026-11-07 12:53:45 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 220 events (167 with odds), db total 118028 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 12:58:29 ET] dh_prop_middles.py: OK in 284s — PROP MIDDLE : NCAAB Northern Illinois Dayton Today 7:00 PM / table / Alt Total Over 143.5 / Alt Total Under 144 / table | Caesars | Bet365 — window 315.0 :: {'s
 [2026-11-07 13:01:46 ET] dh_sog_middles.py: OK in 196s — - NEW CLEAN W211  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +100 $950 DraftKings 100.0 +100 @ DraftKings
+[2026-11-07 13:06:33 ET] sync_to_github.py: OK in 287s —   ok: steam-side-board-pc.html
+[2026-11-07 13:06:33 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 67, sog-middles: 2612, wong
+[2026-11-07 13:07:30 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 220 events (149 with odds), db total 118248 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 13:10:14 ET] dh_team_total_middles.py: OK in 164s
+[2026-11-07 13:10:16 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 13:10:19 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-07 13:12:48 ET] dh_low_holds.py: FAILED (exit 2) in 119s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-07 13:13:47 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 220 events (147 with odds), db total 118468 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 13:18:36 ET] dh_key_number_middles.py: OK in 289s — key-number-middles: no new strict-key middles.
+[2026-11-07 13:19:56 ET] hung_number.py: OK in 80s — HUNG NUMBER: Rice vs North Texas — Hard Rock spread value dog (16.5 vs median 15.5)
