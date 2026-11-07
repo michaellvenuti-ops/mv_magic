@@ -65,3 +65,7 @@ NEW FLAG: FBS Northern Illinois @ San Jose State | 2026-11-07 — Kalshi still d
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — bet365 still dealing spread 1.5 on Utah State (pre-move median 1.5, now -1.0)
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — FanDuel still dealing spread 1.5 on Utah State (pre-move median 1.5, now -1.0)
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — Hard Rock still dealing spread 2.5 on Utah State (pre-move median 1.5, now -1.0)
+## 2026-11-07T17:38:09-05:00 — 63 games, 6 steam events, 3 NEW flags, 37 started games skipped
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Caesars still dealing spread -14.5 on Georgia Southern (pre-move median -16.5, now -17.5)
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Kalshi still dealing spread -13.5 on Georgia Southern (pre-move median -16.5, now -17.5)
+NEW FLAG: FBS Western Kentucky @ Middle Tennessee | 2026-11-07 — Kalshi still dealing total 52.5 on Over (pre-move median 55.5, now 68.5)
