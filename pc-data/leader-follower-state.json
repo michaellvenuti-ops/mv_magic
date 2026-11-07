@@ -357,7 +357,7 @@
   "Bengals @ Falcons | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": 3.0,
+     "spread": 3.5,
      "total": 52.5
     },
     "Caesars": {
@@ -1155,7 +1155,7 @@
      "total": 49.5
     },
     "Fanatics": {
-     "spread": 2.0,
+     "spread": 2.5,
      "total": 49.5
     },
     "Hard Rock": {
@@ -1299,11 +1299,11 @@
      "total": 51.5
     },
     "Fanatics": {
-     "spread": 5.0,
+     "spread": 4.5,
      "total": 51.5
     },
     "Hard Rock": {
-     "spread": 5.5,
+     "spread": 5.0,
      "total": 52.0
     },
     "Kalshi": {
@@ -1315,16 +1315,7 @@
      "total": 51.5
     }
    },
-   "pending": [
-    {
-     "book": "Caesars",
-     "direction": -1,
-     "market": "spread",
-     "new": 4.5,
-     "old": 5.5,
-     "ts": "2026-11-06T21:06:03-05:00"
-    }
-   ]
+   "pending": []
   },
   "Delaware @ Kennesaw State | 2026-11-05": {
    "books": {
@@ -1436,7 +1427,7 @@
      "total": 51.5
     },
     "Caesars": {
-     "spread": 4.0,
+     "spread": 4.5,
      "total": 52.0
     },
     "DraftKings": {
@@ -2005,7 +1996,7 @@
     },
     "DraftKings": {
      "spread": -10.0,
-     "total": 50.5
+     "total": 51.5
     },
     "FanDuel": {
      "spread": -9.5,
@@ -2156,7 +2147,7 @@
      "total": 47.5
     },
     "Fanatics": {
-     "spread": -9.5,
+     "spread": -9.0,
      "total": 48.0
     },
     "Hard Rock": {
@@ -3585,7 +3576,7 @@
      "total": 45.5
     },
     "Fanatics": {
-     "spread": -7.5,
+     "spread": -8.0,
      "total": 45.0
     },
     "Hard Rock": {
@@ -3713,7 +3704,7 @@
   "Penn State @ Washington | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -2.0,
+     "spread": -2.5,
      "total": 43.5
     },
     "Caesars": {
@@ -4281,7 +4272,7 @@
      "total": 46.5
     },
     "DraftKings": {
-     "spread": -6.5,
+     "spread": -6.0,
      "total": 46.5
     },
     "FanDuel": {
@@ -4631,7 +4622,7 @@
      "total": 70.5
     },
     "Caesars": {
-     "spread": -6.5,
+     "spread": -6.0,
      "total": 70.5
     },
     "DraftKings": {
@@ -5010,7 +5001,7 @@
   "Vanderbilt @ Mississippi State | 2026-11-06": {
    "books": {
     "BetMGM": {
-     "spread": -3.0,
+     "spread": -2.5,
      "total": 48.5
     },
     "Caesars": {
@@ -5332,7 +5323,13 @@
   "baseline_done": true,
   "leads": {
    "BetMGM": [],
-   "Caesars": [],
+   "Caesars": [
+    {
+     "game": "Cowboys @ Colts | 2026-11-06",
+     "market": "spread",
+     "ts": "2026-11-06T22:14:08-05:00"
+    }
+   ],
    "DraftKings": [
     {
      "game": "UCLA @ Minnesota | 2026-11-05",
