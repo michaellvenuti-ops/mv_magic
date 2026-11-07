@@ -1,14 +1,21 @@
-# Hung numbers — 2026-11-06 (scan 2026-11-06 21:04)
+# Hung numbers — 2026-11-06 (scan 2026-11-06 22:12)
 
-- Virginia Tech vs SMU | BetMGM | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
-- Virginia Tech vs SMU | DraftKings | spread | value: dog | book 12.5 vs median 10.5 | div 2.0 
-- Virginia Tech vs SMU | Caesars | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
-- Virginia Tech vs SMU | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
-- Virginia Tech vs SMU | Caesars | total | value: Over | book 67.5 vs median 65.5 | div 2.0 
-- South Florida vs East Carolina | Caesars | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
-- Nebraska vs Illinois | DraftKings | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
-- New Mexico vs Nevada | FanDuel | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
-- New Mexico vs Nevada | Hard Rock | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
+- Cowboys vs Colts | FanDuel | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
+- Virginia Tech vs SMU | BetMGM | spread | value: favorite | book 18.5 vs median 20.5 | div 2.0 
+- Virginia Tech vs SMU | DraftKings | spread | value: favorite | book 18.5 vs median 20.5 | div 2.0 
+- Virginia Tech vs SMU | Caesars | spread | value: dog | book 22.5 vs median 20.5 | div 2.0 
+- Virginia Tech vs SMU | FanDuel | spread | value: dog | book 22.5 vs median 20.5 | div 2.0 
+- Virginia Tech vs SMU | BetMGM | total | value: Under | book 65.5 vs median 71.0 | div 5.5 
+- Virginia Tech vs SMU | DraftKings | total | value: Over | book 72.5 vs median 71.0 | div 1.5 
+- Virginia Tech vs SMU | Caesars | total | value: Under | book 69.5 vs median 71.0 | div 1.5 
+- Virginia Tech vs SMU | FanDuel | total | value: Over | book 72.5 vs median 71.0 | div 1.5 
+- South Florida vs East Carolina | Caesars | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- South Florida vs East Carolina | BetMGM | moneyline East Carolina | value: East Carolina | book 88.9 vs median 83.2 | div 5.7 
+- South Florida vs East Carolina | Caesars | moneyline East Carolina | value: East Carolina | book 76.7 vs median 83.2 | div 6.5 
+- South Florida vs East Carolina | BetMGM | moneyline South Florida | value: South Florida | book 16.0 vs median 22.8 | div 6.8 
+- South Florida vs East Carolina | Caesars | moneyline South Florida | value: South Florida | book 29.9 vs median 22.8 | div 7.0 
+- New Mexico vs Nevada | DraftKings | spread | value: favorite | book -22.5 vs median -21.0 | div 1.5 
+- New Mexico vs Nevada | FanDuel | total | value: Over | book 41.5 vs median 38.5 | div 3.0 
 - Florida State vs Boston College | FanDuel | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
 - BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
@@ -38,7 +45,7 @@
 - Iowa vs Northwestern | Fanatics | spread | value: dog | book 2.5 vs median -2.5 | div 5.0 
 - Iowa vs Northwestern | Fanatics | total | value: Over | book 45.5 vs median 43.5 | div 2.0 
 - Iowa vs Northwestern | Fanatics | moneyline Iowa | value: Iowa | book 47.6 vs median 56.7 | div 9.1 
-- Iowa vs Northwestern | Fanatics | moneyline Northwestern | value: Northwestern | book 56.5 vs median 47.6 | div 8.9 
+- Iowa vs Northwestern | Fanatics | moneyline Northwestern | value: Northwestern | book 56.5 vs median 47.4 | div 9.1 
 - Georgia vs Ole Miss | Hard Rock | spread | value: dog | book 56.5 vs median -3.5 | div 60.0 middle pairing spans key number 7
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 54.5 | div 4.0 
 - Liberty vs New Mexico State | Hard Rock | spread | value: favorite | book -17.5 vs median -16.5 | div 1.0 
