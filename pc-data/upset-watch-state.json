@@ -593,11 +593,17 @@
    "sport": "CFB",
    "matchup": "Arkansas at Auburn",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Auburn",
-   "dog_team": "Arkansas"
+   "dog_team": "Arkansas",
+   "alerted_at": "2026-11-07T13:16:17",
+   "board_read_at": "2026-11-07T13:16:17",
+   "alert_expires_at": "2026-11-07T13:21:17",
+   "alert_detail": "2:28 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401856854": {
    "sport": "CFB",
@@ -2976,7 +2982,7 @@
    "spread": 14.5,
    "fav_team": "Ohio",
    "dog_team": "NC A&T",
-   "live_ml": -600
+   "live_ml": -330
   },
   "401926793": {
    "sport": "NCAAB",
