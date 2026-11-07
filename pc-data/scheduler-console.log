@@ -2316,3 +2316,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 20:20:14 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
 [2026-11-06 20:20:17 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 20:20:19 ET] half_percent.py: OK in 2s — half-percent recheck: FAIL — NET cancelled (gap +0.04% is outside the +3%..+12% band at 9:28 AM); delivery banked.
+[2026-11-06 20:24:07 ET] sync_to_github.py: FAILED (exit 1) in 227s —   FAILED: pc-data/steam-side-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 29679e9662f20cfc92310646e874c2eb44d3d2b3 but expected b856f11c5704aeb8a3e3cd7
+[2026-11-06 20:24:38 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 20:25:03 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 224 events (146 with odds), db total 90304 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 20:28:46 ET] dh_game_middles.py: OK in 224s — GAME MIDDLE: NCAAF Rice North Texas Nov-07 4:00 PM / table / Alt Spread Rice +16 / Spread North Texas -15.5 / table bar_chart | Bally Bet | ProphetX — window 20
