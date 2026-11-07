@@ -1,33 +1,42 @@
-# Hung numbers — 2026-11-07 (scan 2026-11-07 09:47)
+# Hung numbers — 2026-11-07 (scan 2026-11-07 11:07)
 
 - Cowboys vs Colts | FanDuel | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Jets vs Chiefs | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Jets vs Chiefs | Fanatics | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- UCLA vs Minnesota | Hard Rock | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
-- Clemson vs Syracuse | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Clemson vs Syracuse | Hard Rock | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
 - Duke vs NC State | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Oklahoma State vs Kansas State | Hard Rock | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
+- Delaware vs Kennesaw State | FanDuel | spread | value: favorite | book -1.5 vs median 1.0 | div 2.5 
+- Delaware vs Kennesaw State | Hard Rock | spread | value: favorite | book -1.5 vs median 1.0 | div 2.5 
+- Delaware vs Kennesaw State | Fanatics | spread | value: favorite | book -1.0 vs median 1.0 | div 2.0 
 - Delaware vs Kennesaw State | Hard Rock | total | value: Under | book 55.5 vs median 57.0 | div 1.5 
 - Texas A&M vs South Carolina | Hard Rock | spread | value: dog | book 7.5 vs median 6.5 | div 1.0 middle pairing spans key number 7
 - Marshall vs Georgia Southern | Hard Rock | spread | value: dog | book 10.5 vs median 7.5 | div 3.0 
 - Marshall vs Georgia Southern | Hard Rock | total | value: Under | book 52.5 vs median 54.5 | div 2.0 
 - Marshall vs Georgia Southern | Hard Rock | moneyline Georgia Southern | value: Georgia Southern | book 81.0 vs median 75.6 | div 5.3 
 - Penn State vs Washington | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Oregon vs Ohio State | Hard Rock | spread | value: dog | book 45.5 vs median 7.5 | div 38.0 
+- Oregon vs Ohio State | Fanatics | spread | value: dog | book 8.5 vs median 7.5 | div 1.0 
 - Western Kentucky vs Middle Tennessee | Hard Rock | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
-- Merrimack vs Wake Forest | Hard Rock | spread | value: dog | book 48.5 vs median 47.0 | div 1.5 
-- UCF vs Kansas | Hard Rock | spread | value: favorite | book 2.5 vs median 3.5 | div 1.0 middle pairing spans key number 3
+- Merrimack vs Wake Forest | FanDuel | spread | value: dog | book 47.5 vs median 46.5 | div 1.0 
+- Merrimack vs Wake Forest | Hard Rock | spread | value: dog | book 48.5 vs median 46.5 | div 2.0 
+- UCF vs Kansas | DraftKings | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- UCF vs Kansas | Hard Rock | spread | value: favorite | book 2.5 vs median 4.5 | div 2.0 middle pairing spans key number 3
+- UCF vs Kansas | Hard Rock | moneyline Kansas | value: Kansas | book 60.0 vs median 65.5 | div 5.5 
+- UCF vs Kansas | Hard Rock | moneyline UCF | value: UCF | book 44.4 vs median 38.8 | div 5.7 
+- Northern Illinois vs San Jose State | DraftKings | spread | value: dog | book 12.5 vs median 11.5 | div 1.0 
+- Northern Illinois vs San Jose State | Fanatics | spread | value: dog | book 12.5 vs median 11.5 | div 1.0 
+- Rice vs North Texas | DraftKings | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Rice vs North Texas | Fanatics | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Missouri State vs Florida International | FanDuel | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Rutgers vs Wisconsin | Hard Rock | spread | value: favorite | book 18.5 vs median 19.5 | div 1.0 
-- Michigan State vs Michigan | DraftKings | spread | value: dog | book 39.5 vs median 14.5 | div 25.0 
-- Georgia vs Ole Miss | Hard Rock | spread | value: dog | book 56.5 vs median -3.5 | div 60.0 middle pairing spans key number 7
+- Michigan State vs Michigan | DraftKings | spread | value: dog | book 39.5 vs median 14.0 | div 25.5 
 - Miami (FL) vs Notre Dame | Hard Rock | total | value: Under | book 50.5 vs median 54.5 | div 4.0 
-- Oklahoma vs Florida | Fanatics | spread | value: dog | book 6.5 vs median 5.5 | div 1.0 
-- Liberty vs New Mexico State | bet365 | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
+- Oklahoma vs Florida | Hard Rock | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Oklahoma vs Florida | Fanatics | spread | value: dog | book 6.5 vs median 4.5 | div 2.0 
 - Liberty vs New Mexico State | Hard Rock | spread | value: favorite | book -17.5 vs median -15.5 | div 2.0 
 - Liberty vs New Mexico State | Fanatics | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
 - Hawai'i vs UTEP | FanDuel | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
@@ -35,7 +44,10 @@
 - Hawai'i vs UTEP | Fanatics | spread | value: favorite | book -9.5 vs median -7.5 | div 2.0 
 - Fresno State vs Utah State | Hard Rock | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Fresno State vs Utah State | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Wyoming vs UNLV | Fanatics | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Texas State vs Oregon State | Hard Rock | spread | value: dog | book 6.5 vs median 5.5 | div 1.0 
+- Wyoming vs UNLV | Hard Rock | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
+- Wyoming vs UNLV | Fanatics | spread | value: dog | book 5.5 vs median 3.5 | div 2.0 
+- Wyoming vs UNLV | Fanatics | moneyline UNLV | value: UNLV | book 68.8 vs median 63.4 | div 5.4 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
 - Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 52.5 | div 3.0 
