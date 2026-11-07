@@ -2723,3 +2723,12 @@
 [2026-11-07 08:41:40 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 224 events (126 with odds), db total 111584 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 08:45:24 ET] hung_number.py: OK in 74s — HUNG NUMBER: Merrimack vs Wake Forest — DraftKings spread value favorite (46.5 vs median 47.5)
 [2026-11-07 08:45:29 ET] futures_board.py: FAILED (exit 2) in 5s — futures-board: zero markets parsed — see --dump
+[2026-11-07 08:49:56 ET] sync_to_github.py: OK in 267s —   ok: steam-side-board-pc.html
+[2026-11-07 08:49:56 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 43, sog-middles: 965. Detai
+[2026-11-07 08:50:30 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 111808 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 08:51:22 ET] dh_low_holds.py: OK in 53s — low-holds: no new qualifying pairs (silent).
+[2026-11-07 08:51:49 ET] yahoo_brief.py: OK in 27s — SUMMARY: signed_in=False — report written, no extraction
+[2026-11-07 08:54:24 ET] rlm.py: OK in 5s
+[2026-11-07 08:54:28 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 08:55:54 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 224 events (126 with odds), db total 112032 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 09:01:26 ET] dh_key_number_middles.py: OK in 212s — key-number-middles: no new strict-key middles.
