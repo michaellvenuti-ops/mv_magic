@@ -9,7 +9,16 @@ example was Unity (U) $47.33 -> $47.60 in 3 minutes (+0.57%). His
 they are never stated as fact in the report.
 
 Chet's v1 rules (set 2026-11-06 at Michael's tap — "build it, I'll
-trade it live small" + "put the scan on my computer"):
+trade it live small" + "put the scan on my computer").
+
+V2 AMENDMENTS (2026-11-06 evening, Michael's verbal tap — "go
+ahead, update it"): (1) the qualifying premarket gap is capped at
++3% to +12% — bigger gaps are fade territory (the Nov 6 NET pick
+gapped +20.2% and faded all day); (2) the modeled grading entry is
+the ACTUAL 9:30 AM ET open (first 5-min bar open), with target /
+stop rebased to +0.5% / -0.5% off that open; if the open prints
+below the pick's plan stop (premarket entry x 0.995), the day
+grades NO TRADE — excluded from the record, no modeled P/L.
 - Weekdays only, ~09:00 ET (scheduler "daily" entry; the script
   itself no-ops Sat/Sun). If the market is closed / there is no fresh
   premarket data, write a NO PICK note and stop.
@@ -24,22 +33,27 @@ trade it live small" + "put the scan on my computer"):
     status, last-trade timestamp (the freshness proof).
 - Filters: LONG only; US-listed common stock (no ETFs/ETNs/funds,
   no share-class symbols); price $10-$500; market cap > $1B;
-  premarket move >= +3%; tight spread ((ask-bid)/price <= 1% when
+  premarket move +3% to +12% (v2 cap); tight spread ((ask-bid)/price <= 1% when
   quoted); elevated premarket volume (>= 25k shares by ~09:00 with
   an earnings catalyst, >= 100k without). Rank: earnings catalyst
   first, then premarket % change, then volume.
 - EXACTLY ONE pick, or NO PICK if nothing clears the bar — a trade
   is never forced.
 - ENTRY PLAN: entry zone = reference (premarket last ~09:00 ET)
-  +/- 0.2%; modeled entry for grading = the reference price.
-  TARGET = entry x 1.005, STOP = entry x 0.995 (1:1, v1),
-  TIME STOP = out by 10:00 AM ET if neither hits.
+  +/- 0.2%. PLAN TARGET = reference x 1.005, PLAN STOP =
+  reference x 0.995 (1:1), TIME STOP = out by 10:00 AM ET if
+  neither hits. V2: the MODELED grading entry is the actual
+  9:30 AM ET open, with target/stop rebased off that open; an
+  open below the plan stop grades NO TRADE.
 - Modeled size $10,000 flat for the running record. Michael places
   his own trade at his own small live size — Chet NEVER places
   trades; this script only writes a report.
 - GRADING (first step of each run, before the new pick): the prior
   pick is graded from Yahoo Finance 5-minute bars (v8 chart API,
-  no auth) over the 09:30-10:00 ET entry window: WIN if TARGET is
+  no auth) over the 09:30-10:00 ET entry window. V2 anchor: entry
+  = the first 5-min bar's open (the 9:30 AM open); TARGET/STOP
+  rebase to entry x 1.005 / x 0.995; an open below the pick's
+  plan stop grades NO TRADE instead (no W/L, no P/L). WIN if TARGET is
   touched before STOP (+0.5% modeled), LOSS if STOP first (-0.5%),
   TIME-EXIT at the 10:00 ET close otherwise (modeled P/L = that
   move). If one 5-min bar touches BOTH target and stop, it grades
@@ -77,6 +91,7 @@ STOP_PCT = 0.005
 MIN_PRICE, MAX_PRICE = 10.0, 500.0
 MIN_MCAP = 1_000_000_000
 MIN_MOVE_PCT = 3.0
+MAX_MOVE_PCT = 12.0
 MAX_SPREAD_PCT = 1.0
 MIN_VOL_CATALYST = 25_000
 MIN_VOL_PLAIN = 100_000
@@ -205,14 +220,33 @@ def fetch_bars_5m(sym, date_et):
 
 
 def grade_pick(date_str, pick):
-    """Grade one pick dict -> grade dict or None (retry later)."""
+    """Grade one pick dict -> grade dict or None (retry later).
+
+    V2 (2026-11-06, Michael's tap): the modeled entry is the
+    actual 9:30 AM ET open — the first 5-min bar's open — and
+    target/stop rebase to +0.5%/-0.5% off that open. If the open
+    prints BELOW the pick's plan stop (the premarket plan's
+    entry x 0.995), the day grades NO TRADE: excluded from the
+    W-L record, no modeled P/L.
+    """
     date_et = dt.date.fromisoformat(date_str)
     bars = fetch_bars_5m(pick["ticker"], date_et)
     window = [b for b in bars
               if dt.time(9, 30) <= b[0].time() < dt.time(10, 0)]
     if not window:
         return None
-    entry, target, stop = pick["entry"], pick["target"], pick["stop"]
+    open_price = window[0][1]
+    plan_stop = pick["stop"]
+    if open_price < plan_stop:
+        return {"outcome": "NO TRADE", "pl": 0.0,
+                "open": open_price, "plan_stop": plan_stop,
+                "note": "9:30 AM open printed below the plan stop "
+                        "- v2 no-trade rule (excluded from the "
+                        "record, no modeled position)"}
+    entry = open_price
+    target = round(entry * (1 + TARGET_PCT), 2)
+    stop = round(entry * (1 - STOP_PCT), 2)
+    anchor = {"entry": entry, "target": target, "stop": stop}
     for when, _o, hi, lo, _c in window:
         hit_t, hit_s = hi >= target, lo <= stop
         if hit_t and hit_s:
@@ -220,17 +254,18 @@ def grade_pick(date_str, pick):
                     "exit_time": when.strftime("%H:%M ET"),
                     "pl": -MODEL_SIZE * STOP_PCT,
                     "note": "target and stop both inside one 5-min "
-                            "bar — stop assumed first (conservative)"}
+                            "bar — stop assumed first (conservative)",
+                    **anchor}
         if hit_t:
             return {"outcome": "WIN", "exit_price": target,
                     "exit_time": when.strftime("%H:%M ET"),
                     "pl": MODEL_SIZE * TARGET_PCT,
-                    "note": "target touched before stop"}
+                    "note": "target touched before stop", **anchor}
         if hit_s:
             return {"outcome": "LOSS", "exit_price": stop,
                     "exit_time": when.strftime("%H:%M ET"),
                     "pl": -MODEL_SIZE * STOP_PCT,
-                    "note": "stop touched before target"}
+                    "note": "stop touched before target", **anchor}
     # time exit: close of the last bar starting before 10:00 ET
     exit_close = window[-1][4]
     # prefer an actual 10:00 bar close when present
@@ -241,13 +276,17 @@ def grade_pick(date_str, pick):
     pl = (exit_close / entry - 1.0) * MODEL_SIZE
     return {"outcome": "TIME-EXIT", "exit_price": round(exit_close, 2),
             "exit_time": "10:00 ET", "pl": round(pl, 2),
-            "note": "neither target nor stop touched by 10:00 ET"}
+            "note": "neither target nor stop touched by 10:00 ET",
+            **anchor}
 
 
 def record_line(meta):
     r = meta.get("record") or {}
+    nt = r.get("no_trades", 0)
+    nt_part = f"-{nt}NT" if nt else ""
     return (f"Running record: {r.get('wins', 0)}W-"
-            f"{r.get('losses', 0)}L-{r.get('time_exits', 0)}T, "
+            f"{r.get('losses', 0)}L-{r.get('time_exits', 0)}T"
+            f"{nt_part}, "
             f"modeled P/L {money(r.get('modeled_pl', 0.0))} "
             f"on $10,000 flat modeled size.")
 
@@ -258,7 +297,9 @@ def grade_pending(state, today_str_):
     meta = state.setdefault("meta", {})
     rec = meta.setdefault("record", {"wins": 0, "losses": 0,
                                      "time_exits": 0, "no_data": 0,
+                                     "no_trades": 0,
                                      "modeled_pl": 0.0})
+    rec.setdefault("no_trades", 0)
     graded = 0
     for date_str in sorted(state.get("entries", {})):
         if date_str >= today_str_:
@@ -286,6 +327,17 @@ def grade_pending(state, today_str_):
             continue
         entry_rec["grade"] = grade
         graded += 1
+        if grade["outcome"] == "NO TRADE":
+            rec["no_trades"] = rec.get("no_trades", 0) + 1
+            lines.append(
+                f"- GRADED {date_str} {pick['ticker']}: NO TRADE "
+                f"— the 9:30 AM open {money(grade['open'])} "
+                f"printed below the plan stop "
+                f"{money(grade['plan_stop'])} (premarket plan "
+                f"entry {money(pick['entry'])}). V2 rule: no "
+                f"modeled position — excluded from the record, "
+                f"no modeled P/L.")
+            continue
         if grade["outcome"] == "WIN":
             rec["wins"] += 1
         elif grade["outcome"] == "LOSS":
@@ -296,9 +348,11 @@ def grade_pending(state, today_str_):
                                   + grade["pl"], 2)
         lines.append(
             f"- GRADED {date_str} {pick['ticker']}: "
-            f"{grade['outcome']} — entry {money(pick['entry'])}, "
-            f"target {money(pick['target'])}, stop "
-            f"{money(pick['stop'])}; exit {money(grade['exit_price'])}"
+            f"{grade['outcome']} — modeled entry (9:30 AM open) "
+            f"{money(grade.get('entry', pick['entry']))}, "
+            f"target {money(grade.get('target', pick['target']))}, "
+            f"stop {money(grade.get('stop', pick['stop']))}; "
+            f"exit {money(grade['exit_price'])}"
             f" at {grade['exit_time']} ({grade['note']}). "
             f"Modeled P/L {money(grade['pl'])} on $10,000 flat "
             f"(5-min Yahoo bars — modeled, not a real fill).")
@@ -393,6 +447,10 @@ def evaluate(cand, today):
     if pct < MIN_MOVE_PCT:
         return False, fresh, detail, f"premarket move {pct:+.2f}% " \
                                      f"under +3%"
+    if pct > MAX_MOVE_PCT:
+        return False, fresh, detail, f"premarket move {pct:+.2f}% " \
+                                     f"over the +12% cap (fade " \
+                                     f"territory - v2)"
     if bid and ask and ask > bid:
         spread_pct = (ask - bid) / price * 100.0
         detail["spread_pct"] = round(spread_pct, 2)
@@ -464,8 +522,8 @@ def main():
     if not passed:
         top = "; ".join(f"{t} ({w})" for t, w in near[:4]) or "none"
         reason = ("nothing cleared the bar (price $10-$500, cap "
-                  ">$1B, premarket >= +3%, spread <= 1%, volume "
-                  "bar). Near misses: " + top)
+                  ">$1B, premarket +3% to +12%, spread <= 1%, "
+                  "volume bar). Near misses: " + top)
         entries[today_str_] = {"kind": "no_pick", "reason": reason}
         bank(SCAN, [f"## {now_stamp()} — Half Percent Club: NO PICK",
                     f"- {reason}",
@@ -524,9 +582,14 @@ def main():
     lines += [
         f"- ENTRY PLAN: enter at the open / first minutes inside "
         f"{money(zone_lo)}-{money(zone_hi)} (reference {money(ref)}). "
-        f"Modeled grading entry: {money(ref)}.",
-        f"- TARGET {money(target)} (+0.5%) — STOP {money(stop)} "
-        f"(-0.5%) — TIME STOP: out by 10:00 AM ET if neither hits.",
+        f"Modeled grading (v2): the actual 9:30 AM open is the "
+        f"entry, with target/stop rebased +0.5%/-0.5% off that "
+        f"open.",
+        f"- PLAN TARGET {money(target)} (+0.5% off reference) — "
+        f"PLAN STOP {money(stop)} (-0.5%) — TIME STOP: out by "
+        f"10:00 AM ET if neither hits. If the 9:30 AM open prints "
+        f"below the plan stop, the day grades NO TRADE (no "
+        f"modeled position).",
         f"- Modeled size: $10,000 flat for the running record. "
         f"Michael places his own trade at his own small live size — "
         f"Chet never places trades.",
