@@ -39,3 +39,11 @@ NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — BetMGM still dealing sp
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Kalshi still dealing spread -1.5 on Delaware (pre-move median 0.0, now 1.25)
 ## 2026-11-07T14:48:21-05:00 — 63 games, 2 steam events, 1 NEW flags, 22 started games skipped
 NEW FLAG: FBS Merrimack @ Wake Forest | 2026-11-07 — Hard Rock still dealing total 58.5 on Under (pre-move median 57.5, now 55.5)
+## 2026-11-07T15:31:08-05:00 — 63 games, 4 steam events, 7 NEW flags, 31 started games skipped
+NEW FLAG: FBS Louisiana-Monroe @ Arkansas State | 2026-11-07 — Kalshi still dealing total 53.5 on Under (pre-move median 52.5, now 50.5)
+NEW FLAG: FBS Rice @ North Texas | 2026-11-07 — FanDuel still dealing spread -15.5 on Rice (pre-move median -15.5, now -14.5)
+NEW FLAG: FBS Rice @ North Texas | 2026-11-07 — Hard Rock still dealing spread -16.5 on Rice (pre-move median -15.5, now -14.5)
+NEW FLAG: FBS Rice @ North Texas | 2026-11-07 — Fanatics still dealing spread -15.5 on Rice (pre-move median -15.5, now -14.5)
+NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — FanDuel still dealing spread 15.5 on New Mexico State (pre-move median 15.5, now 14.5)
+NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — Hard Rock still dealing spread 17.5 on New Mexico State (pre-move median 15.5, now 14.5)
+NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — Fanatics still dealing spread 15.5 on New Mexico State (pre-move median 15.5, now 14.5)
