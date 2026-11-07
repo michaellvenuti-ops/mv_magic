@@ -1,19 +1,20 @@
-# Hung numbers — 2026-11-07 (scan 2026-11-07 07:42)
+# Hung numbers — 2026-11-07 (scan 2026-11-07 08:44)
 
 - Cowboys vs Colts | FanDuel | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
-- Florida State vs Boston College | FanDuel | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
+- Jets vs Chiefs | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
 - BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
 - Duke vs NC State | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Oklahoma State vs Kansas State | Hard Rock | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
 - Delaware vs Kennesaw State | Hard Rock | total | value: Under | book 55.5 vs median 57.0 | div 1.5 
-- Marshall vs Georgia Southern | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Texas A&M vs South Carolina | Hard Rock | spread | value: dog | book 7.5 vs median 6.5 | div 1.0 middle pairing spans key number 7
 - Marshall vs Georgia Southern | Hard Rock | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
 - Marshall vs Georgia Southern | Hard Rock | total | value: Under | book 52.5 vs median 54.5 | div 2.0 
 - Penn State vs Washington | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Oregon vs Ohio State | Hard Rock | spread | value: dog | book 45.5 vs median 7.5 | div 38.0 
 - Western Kentucky vs Middle Tennessee | Hard Rock | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
-- Merrimack vs Wake Forest | bet365 | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
+- Merrimack vs Wake Forest | DraftKings | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
 - Merrimack vs Wake Forest | FanDuel | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
 - Merrimack vs Wake Forest | Hard Rock | spread | value: dog | book 48.5 vs median 47.5 | div 1.0 
 - UCF vs Kansas | Hard Rock | spread | value: favorite | book 2.5 vs median 3.5 | div 1.0 middle pairing spans key number 3
