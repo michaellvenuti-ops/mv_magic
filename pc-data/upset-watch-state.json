@@ -790,7 +790,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 3.0,
    "fav_team": "Arizona St",
    "dog_team": "Colorado"
   },
@@ -2128,12 +2128,20 @@
    "sport": "NCAAB",
    "matchup": "Valparaiso at Purdue",
    "date": "2026-11-06",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Purdue",
    "dog_team": "Valparaiso",
-   "live_ml": -395
+   "live_ml": 100,
+   "alerted_at": "2026-11-06T21:01:09",
+   "board_read_at": "2026-11-06T21:01:08",
+   "alert_expires_at": "2026-11-06T21:04:09",
+   "alert_detail": "2:02 - 2OT",
+   "alert_fav_score": 76,
+   "alert_dog_score": 77,
+   "alert_ml": 100,
+   "ml_read_at": "2026-11-06T21:01:08"
   },
   "401922059": {
    "sport": "NCAAB",
@@ -2143,7 +2151,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "SC Upstate",
-   "dog_team": "SC State"
+   "dog_team": "SC State",
+   "final": true
   },
   "401916314": {
    "sport": "NCAAB",
@@ -2166,31 +2175,36 @@
    "spread": 23.5,
    "fav_team": "Kentucky",
    "dog_team": "James Madison",
-   "live_ml": -720
+   "live_ml": -720,
+   "final": true
   },
   "401929385": {
    "sport": "NCAAB",
    "matchup": "Midway at E Kentucky",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928840": {
    "sport": "NCAAB",
    "matchup": "Roberts Wslyn at Kent State",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401926813": {
    "sport": "NCAAB",
    "matchup": "Newberry at Charleston",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401926161": {
    "sport": "NCAAB",
    "matchup": "Erskine at The Citadel",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401926135": {
    "sport": "NCAAB",
@@ -2200,13 +2214,15 @@
    "fav": "home",
    "spread": 24.5,
    "fav_team": "Rutgers",
-   "dog_team": "New Haven"
+   "dog_team": "New Haven",
+   "final": true
   },
   "401922210": {
    "sport": "NCAAB",
    "matchup": "New College at FGCU",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921767": {
    "sport": "NCAAB",
@@ -2216,7 +2232,8 @@
    "fav": "home",
    "spread": 27.5,
    "fav_team": "West Virginia",
-   "dog_team": "Stetson"
+   "dog_team": "Stetson",
+   "final": true
   },
   "401921754": {
    "sport": "NCAAB",
@@ -2226,7 +2243,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "UCF",
-   "dog_team": "Yale"
+   "dog_team": "Yale",
+   "final": true
   },
   "401921285": {
    "sport": "NCAAB",
@@ -2236,13 +2254,15 @@
    "fav": "home",
    "spread": 34.5,
    "fav_team": "Villanova",
-   "dog_team": "Holy Cross"
+   "dog_team": "Holy Cross",
+   "final": true
   },
   "401921166": {
    "sport": "NCAAB",
    "matchup": "UM Dearborn at Cleveland St",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921140": {
    "sport": "NCAAB",
@@ -2252,7 +2272,8 @@
    "fav": "home",
    "spread": 8.5,
    "fav_team": "Elon",
-   "dog_team": "UNC Greensboro"
+   "dog_team": "UNC Greensboro",
+   "final": true
   },
   "401920920": {
    "sport": "NCAAB",
@@ -2293,7 +2314,8 @@
    "spread": 17.5,
    "fav_team": "NC State",
    "dog_team": "ETSU",
-   "live_ml": -120
+   "live_ml": -120,
+   "final": true
   },
   "401917949": {
    "sport": "NCAAB",
@@ -2349,7 +2371,8 @@
    "sport": "NCAAB",
    "matchup": "Alma at C Michigan",
    "date": "2026-11-07",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911005": {
    "sport": "NCAAB",
@@ -2390,7 +2413,8 @@
    "fav": "home",
    "spread": 24.5,
    "fav_team": "Georgia",
-   "dog_team": "Presbyterian"
+   "dog_team": "Presbyterian",
+   "final": true
   },
   "401906758": {
    "sport": "NCAAB",
@@ -2468,7 +2492,7 @@
    "spread": 10.5,
    "fav_team": "UIC",
    "dog_team": "Robert Morris",
-   "live_ml": -345
+   "live_ml": -360
   },
   "401928622": {
    "sport": "NCAAB",
@@ -2640,7 +2664,8 @@
    "fav": "home",
    "spread": 15.5,
    "fav_team": "Colorado St",
-   "dog_team": "Idaho"
+   "dog_team": "Idaho",
+   "live_ml": -2000
   },
   "401921732": {
    "sport": "NCAAB",
@@ -2740,7 +2765,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 33.5,
+   "spread": 31.5,
    "fav_team": "UCLA",
    "dog_team": "North Florida"
   },
