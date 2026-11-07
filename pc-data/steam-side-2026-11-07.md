@@ -23,3 +23,6 @@ NEW FLAG: FBS Merrimack @ Wake Forest | 2026-11-07 — Hard Rock still dealing s
 NEW FLAG: FBS Merrimack @ Wake Forest | 2026-11-07 — Kalshi still dealing spread -47.5 on Merrimack (pre-move median -47.5, now -46.5)
 NEW FLAG: FBS Oklahoma @ Florida | 2026-11-07 — Hard Rock still dealing spread -5.5 on Oklahoma (pre-move median -5.5, now -4.5)
 NEW FLAG: FBS Oklahoma @ Florida | 2026-11-07 — Fanatics still dealing spread -6.5 on Oklahoma (pre-move median -5.5, now -4.5)
+## 2026-11-07T11:34:57-05:00 — 63 games, 1 steam events, 2 NEW flags, 9 started games skipped
+NEW FLAG: FBS UCF @ Kansas | 2026-11-07 — Hard Rock still dealing spread -2.5 on Kansas (pre-move median -4.0, now -5.5)
+NEW FLAG: FBS UCF @ Kansas | 2026-11-07 — Fanatics still dealing spread -4.0 on Kansas (pre-move median -4.0, now -5.5)
