@@ -56,3 +56,12 @@ LEAD: bet365 on Rice @ North Texas | 2026-11-07 (spread)
 ## 2026-11-07T14:48:17-05:00 — pack move, never credited: Rice @ North Texas | 2026-11-07 spread (Caesars, DraftKings)
 ## 2026-11-07T14:48:17-05:00 — 78 games, 1 leads credited, 23 started games skipped
 LEAD: FanDuel on Rice @ North Texas | 2026-11-07 (spread)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 spread (BetMGM, DraftKings, FanDuel)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Louisiana-Monroe @ Arkansas State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Western Kentucky @ Middle Tennessee | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Western Kentucky @ Middle Tennessee | 2026-11-07 total (BetMGM, DraftKings)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Northern Illinois @ San Jose State | 2026-11-07 spread (BetMGM, DraftKings)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Rice @ North Texas | 2026-11-07 spread (Fanatics, Kalshi, bet365)
+## 2026-11-07T15:49:20-05:00 — pack move, never credited: Liberty @ New Mexico State | 2026-11-07 spread (Caesars, DraftKings, Kalshi, bet365)
+## 2026-11-07T15:49:20-05:00 — 78 games, 0 leads credited, 33 started games skipped
