@@ -18,3 +18,9 @@ LEAD: FanDuel on Liberty @ New Mexico State | 2026-11-07 (spread)
 ## 2026-11-07T08:54:28-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-07 spread (FanDuel, Kalshi)
 ## 2026-11-07T08:54:28-05:00 — no-follow: Kalshi Rice @ North Texas | 2026-11-07 spread (only 0 followed)
 ## 2026-11-07T08:54:28-05:00 — 78 games, 0 leads credited, 10 started games skipped
+## 2026-11-07T10:01:10-05:00 — no-follow: DraftKings Jets @ Chiefs | 2026-11-07 spread (only 2 followed)
+## 2026-11-07T10:01:10-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-07 spread (Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-07T10:01:10-05:00 — no-follow: DraftKings Merrimack @ Wake Forest | 2026-11-07 spread (only 2 followed)
+## 2026-11-07T10:01:10-05:00 — no-follow: Kalshi Wyoming @ UNLV | 2026-11-07 spread (only 0 followed)
+## 2026-11-07T10:01:10-05:00 — 78 games, 1 leads credited, 10 started games skipped
+LEAD: DraftKings on Clemson @ Syracuse | 2026-11-07 (spread)
