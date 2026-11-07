@@ -26,3 +26,8 @@ NEW FLAG: FBS Oklahoma @ Florida | 2026-11-07 — Fanatics still dealing spread 
 ## 2026-11-07T11:34:57-05:00 — 63 games, 1 steam events, 2 NEW flags, 9 started games skipped
 NEW FLAG: FBS UCF @ Kansas | 2026-11-07 — Hard Rock still dealing spread -2.5 on Kansas (pre-move median -4.0, now -5.5)
 NEW FLAG: FBS UCF @ Kansas | 2026-11-07 — Fanatics still dealing spread -4.0 on Kansas (pre-move median -4.0, now -5.5)
+## 2026-11-07T12:09:09-05:00 — 63 games, 1 steam events, 4 NEW flags, 17 started games skipped
+NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — DraftKings still dealing spread 1.5 on Kennesaw State (pre-move median 1.0, now 0.0)
+NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Caesars still dealing spread 1.0 on Kennesaw State (pre-move median 1.0, now 0.0)
+NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — FanDuel still dealing spread 1.5 on Kennesaw State (pre-move median 1.0, now 0.0)
+NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Hard Rock still dealing spread 1.5 on Kennesaw State (pre-move median 1.0, now 0.0)
