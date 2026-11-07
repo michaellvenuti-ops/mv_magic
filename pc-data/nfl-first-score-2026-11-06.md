@@ -1,0 +1,123 @@
+## 2026-11-06T19:08:28-05:00 -- NFL FIRST SCORE (PC): 122 new final(s) tallied; season 122 games through 2026-11-05
+- 2026-09-09: New England Patriots @ Seattle Seahawks — first: New England Patriots; lead changes 1; final 10-13
+- 2026-09-10: San Francisco 49ers @ Los Angeles Rams — first: San Francisco 49ers; lead changes 2; final 27-7
+- 2026-09-13: Tampa Bay Buccaneers @ Cincinnati Bengals — first: Tampa Bay Buccaneers; lead changes 1; final 27-33
+- 2026-09-13: New Orleans Saints @ Detroit Lions — first: Detroit Lions; lead changes 0; final 30-31
+- 2026-09-13: New York Jets @ Tennessee Titans — first: New York Jets; lead changes 0; final 23-10
+- 2026-09-13: Baltimore Ravens @ Indianapolis Colts — first: Indianapolis Colts; lead changes 1; final 41-23
+- 2026-09-13: Atlanta Falcons @ Pittsburgh Steelers — first: Pittsburgh Steelers; lead changes 2; final 13-20
+- 2026-09-13: Chicago Bears @ Carolina Panthers — first: Carolina Panthers; lead changes 1; final 59-37
+- 2026-09-13: Cleveland Browns @ Jacksonville Jaguars — first: Jacksonville Jaguars; lead changes 0; final 10-34
+- 2026-09-13: Buffalo Bills @ Houston Texans — first: Buffalo Bills; lead changes 8; final 36-31
+- 2026-09-13: Miami Dolphins @ Las Vegas Raiders — first: Las Vegas Raiders; lead changes 0; final 13-27
+- 2026-09-13: Green Bay Packers @ Minnesota Vikings — first: Green Bay Packers; lead changes 1; final 22-39
+- 2026-09-13: Washington Commanders @ Philadelphia Eagles — first: Washington Commanders; lead changes 1; final 22-24
+- 2026-09-13: Arizona Cardinals @ Los Angeles Chargers — first: Arizona Cardinals; lead changes 0; final 26-14
+- 2026-09-13: Dallas Cowboys @ New York Giants — first: New York Giants; lead changes 0; final 20-28
+- 2026-09-14: Denver Broncos @ Kansas City Chiefs — first: Kansas City Chiefs; lead changes 0; final 10-31
+- 2026-09-17: Detroit Lions @ Buffalo Bills — first: Buffalo Bills; lead changes 0; final 31-41
+- 2026-09-20: Carolina Panthers @ Atlanta Falcons — first: Carolina Panthers; lead changes 0; final 34-3
+- 2026-09-20: Minnesota Vikings @ Chicago Bears — first: Minnesota Vikings; lead changes 0; final 9-3
+- 2026-09-20: Philadelphia Eagles @ Tennessee Titans — first: Tennessee Titans; lead changes 3; final 24-20
+- 2026-09-20: Pittsburgh Steelers @ New England Patriots — first: New England Patriots; lead changes 0; final 3-20
+- 2026-09-20: Green Bay Packers @ New York Jets — first: Green Bay Packers; lead changes 2; final 20-17
+- 2026-09-20: Cleveland Browns @ Tampa Bay Buccaneers — first: Tampa Bay Buccaneers; lead changes 1; final 23-19
+- 2026-09-20: New Orleans Saints @ Baltimore Ravens — first: Baltimore Ravens; lead changes 1; final 24-17
+- 2026-09-20: Cincinnati Bengals @ Houston Texans — first: Cincinnati Bengals; lead changes 0; final 20-6
+- 2026-09-20: Jacksonville Jaguars @ Denver Broncos — first: Jacksonville Jaguars; lead changes 1; final 13-20
+- 2026-09-20: Las Vegas Raiders @ Los Angeles Chargers — first: Las Vegas Raiders; lead changes 2; final 26-14
+- 2026-09-20: Washington Commanders @ Dallas Cowboys — first: Dallas Cowboys; lead changes 0; final 20-37
+- 2026-09-20: Seattle Seahawks @ Arizona Cardinals — first: Seattle Seahawks; lead changes 0; final 31-7
+- 2026-09-20: Miami Dolphins @ San Francisco 49ers — first: San Francisco 49ers; lead changes 0; final 13-35
+- 2026-09-20: Indianapolis Colts @ Kansas City Chiefs — first: Indianapolis Colts; lead changes 5; final 30-33
+- 2026-09-21: New York Giants @ Los Angeles Rams — first: Los Angeles Rams; lead changes 0; final 6-28
+- 2026-09-24: Atlanta Falcons @ Green Bay Packers — first: Green Bay Packers; lead changes 1; final 35-14
+- 2026-09-27: Los Angeles Chargers @ Buffalo Bills — first: Los Angeles Chargers; lead changes 1; final 16-24
+- 2026-09-27: Carolina Panthers @ Cleveland Browns — first: Cleveland Browns; lead changes 4; final 18-21
+- 2026-09-27: New York Jets @ Detroit Lions — first: Detroit Lions; lead changes 2; final 24-31
+- 2026-09-27: Houston Texans @ Indianapolis Colts — first: Indianapolis Colts; lead changes 2; final 17-19
+- 2026-09-27: Kansas City Chiefs @ Miami Dolphins — first: Kansas City Chiefs; lead changes 0; final 24-10
+- 2026-09-27: Tennessee Titans @ New York Giants — first: New York Giants; lead changes 0; final 7-12
+- 2026-09-27: Cincinnati Bengals @ Pittsburgh Steelers — first: Pittsburgh Steelers; lead changes 4; final 27-30
+- 2026-09-27: Seattle Seahawks @ Washington Commanders — first: Washington Commanders; lead changes 0; final 31-33
+- 2026-09-27: New England Patriots @ Jacksonville Jaguars — first: Jacksonville Jaguars; lead changes 0; final 6-35
+- 2026-09-27: Arizona Cardinals @ San Francisco 49ers — first: San Francisco 49ers; lead changes 0; final 30-36
+- 2026-09-27: Minnesota Vikings @ Tampa Bay Buccaneers — first: Minnesota Vikings; lead changes 0; final 23-16
+- 2026-09-27: Baltimore Ravens @ Dallas Cowboys — first: Dallas Cowboys; lead changes 3; final 34-31
+- 2026-09-27: Las Vegas Raiders @ New Orleans Saints — first: Las Vegas Raiders; lead changes 4; final 35-27
+- 2026-09-27: Los Angeles Rams @ Denver Broncos — first: Los Angeles Rams; lead changes 3; final 26-30
+- 2026-09-28: Philadelphia Eagles @ Chicago Bears — first: Chicago Bears; lead changes 0; final 7-27
+- 2026-10-01: Pittsburgh Steelers @ Cleveland Browns — first: Pittsburgh Steelers; lead changes 1; final 24-27
+- 2026-10-04: Indianapolis Colts @ Washington Commanders — first: Washington Commanders; lead changes 1; final 30-13
+- 2026-10-04: New England Patriots @ Buffalo Bills — first: New England Patriots; lead changes 4; final 29-26
+- 2026-10-04: New York Jets @ Chicago Bears — first: Chicago Bears; lead changes 0; final 12-23
+- 2026-10-04: Jacksonville Jaguars @ Cincinnati Bengals — first: Jacksonville Jaguars; lead changes 0; final 22-17
+- 2026-10-04: Arizona Cardinals @ New York Giants — first: Arizona Cardinals; lead changes 3; final 24-36
+- 2026-10-04: Los Angeles Rams @ Philadelphia Eagles — first: Philadelphia Eagles; lead changes 1; final 24-20
+- 2026-10-04: Green Bay Packers @ Tampa Bay Buccaneers — first: Green Bay Packers; lead changes 0; final 17-14
+- 2026-10-04: Tennessee Titans @ Baltimore Ravens — first: Baltimore Ravens; lead changes 0; final 18-24
+- 2026-10-04: Dallas Cowboys @ Houston Texans — first: Houston Texans; lead changes 3; final 34-30
+- 2026-10-04: Miami Dolphins @ Minnesota Vikings — first: Minnesota Vikings; lead changes 0; final 10-15
+- 2026-10-04: Kansas City Chiefs @ Las Vegas Raiders — first: Las Vegas Raiders; lead changes 3; final 30-27
+- 2026-10-04: Denver Broncos @ San Francisco 49ers — first: Denver Broncos; lead changes 1; final 14-24
+- 2026-10-04: Los Angeles Chargers @ Seattle Seahawks — first: Los Angeles Chargers; lead changes 1; final 23-30
+- 2026-10-04: Detroit Lions @ Carolina Panthers — first: Detroit Lions; lead changes 1; final 26-32
+- 2026-10-05: Atlanta Falcons @ New Orleans Saints — first: Atlanta Falcons; lead changes 0; final 45-24
+- 2026-10-08: Tampa Bay Buccaneers @ Dallas Cowboys — first: Dallas Cowboys; lead changes 1; final 24-16
+- 2026-10-11: Philadelphia Eagles @ Jacksonville Jaguars — first: Jacksonville Jaguars; lead changes 4; final 17-19
+- 2026-10-11: Chicago Bears @ Green Bay Packers — first: Green Bay Packers; lead changes 0; final 7-31
+- 2026-10-11: Houston Texans @ Tennessee Titans — first: Tennessee Titans; lead changes 1; final 26-3
+- 2026-10-11: Cincinnati Bengals @ Miami Dolphins — first: Cincinnati Bengals; lead changes 0; final 31-24
+- 2026-10-11: Las Vegas Raiders @ New England Patriots — first: New England Patriots; lead changes 0; final 17-45
+- 2026-10-11: Minnesota Vikings @ New Orleans Saints — first: Minnesota Vikings; lead changes 2; final 23-13
+- 2026-10-11: Cleveland Browns @ New York Jets — first: New York Jets; lead changes 2; final 12-17
+- 2026-10-11: Indianapolis Colts @ Pittsburgh Steelers — first: Indianapolis Colts; lead changes 1; final 22-34
+- 2026-10-11: New York Giants @ Washington Commanders — first: Washington Commanders; lead changes 0; final 27-27
+- 2026-10-11: Denver Broncos @ Los Angeles Chargers — first: Denver Broncos; lead changes 2; final 23-17
+- 2026-10-11: Detroit Lions @ Arizona Cardinals — first: Arizona Cardinals; lead changes 1; final 45-21
+- 2026-10-11: San Francisco 49ers @ Seattle Seahawks — first: San Francisco 49ers; lead changes 4; final 32-29
+- 2026-10-11: Baltimore Ravens @ Atlanta Falcons — first: Baltimore Ravens; lead changes 2; final 30-23
+- 2026-10-12: Buffalo Bills @ Los Angeles Rams — first: Buffalo Bills; lead changes 6; final 37-34
+- 2026-10-15: Seattle Seahawks @ Denver Broncos — first: Seattle Seahawks; lead changes 1; final 14-17
+- 2026-10-18: Houston Texans @ Jacksonville Jaguars — first: Houston Texans; lead changes 2; final 34-31
+- 2026-10-18: Chicago Bears @ Atlanta Falcons — first: Chicago Bears; lead changes 0; final 31-23
+- 2026-10-18: Baltimore Ravens @ Cleveland Browns — first: Baltimore Ravens; lead changes 1; final 10-13
+- 2026-10-18: Tennessee Titans @ Indianapolis Colts — first: Indianapolis Colts; lead changes 1; final 26-20
+- 2026-10-18: New York Jets @ New England Patriots — first: New York Jets; lead changes 1; final 19-26
+- 2026-10-18: New Orleans Saints @ New York Giants — first: New York Giants; lead changes 1; final 34-27
+- 2026-10-18: Carolina Panthers @ Philadelphia Eagles — first: Carolina Panthers; lead changes 0; final 25-14
+- 2026-10-18: Pittsburgh Steelers @ Tampa Bay Buccaneers — first: Tampa Bay Buccaneers; lead changes 1; final 26-19
+- 2026-10-18: Arizona Cardinals @ Los Angeles Rams — first: Los Angeles Rams; lead changes 5; final 18-16
+- 2026-10-18: Los Angeles Chargers @ Kansas City Chiefs — first: Kansas City Chiefs; lead changes 0; final 6-22
+- 2026-10-18: Buffalo Bills @ Las Vegas Raiders — first: Buffalo Bills; lead changes 2; final 33-30
+- 2026-10-18: Dallas Cowboys @ Green Bay Packers — first: Green Bay Packers; lead changes 0; final 13-23
+- 2026-10-19: Washington Commanders @ San Francisco 49ers — first: San Francisco 49ers; lead changes 0; final 17-23
+- 2026-10-22: New England Patriots @ Chicago Bears — first: Chicago Bears; lead changes 0; final 24-30
+- 2026-10-25: Pittsburgh Steelers @ New Orleans Saints — first: Pittsburgh Steelers; lead changes 0; final 16-10
+- 2026-10-25: San Francisco 49ers @ Atlanta Falcons — first: San Francisco 49ers; lead changes 1; final 20-29
+- 2026-10-25: Cleveland Browns @ Tennessee Titans — first: Tennessee Titans; lead changes 1; final 27-24
+- 2026-10-25: Indianapolis Colts @ Minnesota Vikings — first: Indianapolis Colts; lead changes 1; final 10-16
+- 2026-10-25: Miami Dolphins @ New York Jets — first: Miami Dolphins; lead changes 0; final 28-25
+- 2026-10-25: Tampa Bay Buccaneers @ Carolina Panthers — first: Tampa Bay Buccaneers; lead changes 0; final 43-13
+- 2026-10-25: Cincinnati Bengals @ Baltimore Ravens — first: Baltimore Ravens; lead changes 1; final 35-13
+- 2026-10-25: New York Giants @ Houston Texans — first: Houston Texans; lead changes 1; final 27-21
+- 2026-10-25: Denver Broncos @ Arizona Cardinals — first: Denver Broncos; lead changes 0; final 30-16
+- 2026-10-25: Green Bay Packers @ Detroit Lions — first: Detroit Lions; lead changes 2; final 17-20
+- 2026-10-25: Los Angeles Rams @ Las Vegas Raiders — first: Los Angeles Rams; lead changes 0; final 35-21
+- 2026-10-25: Kansas City Chiefs @ Seattle Seahawks — first: Seattle Seahawks; lead changes 0; final 3-20
+- 2026-10-26: Dallas Cowboys @ Philadelphia Eagles — first: Dallas Cowboys; lead changes 6; final 38-21
+- 2026-10-29: Carolina Panthers @ Green Bay Packers — first: Carolina Panthers; lead changes 3; final 19-27
+- 2026-11-01: Baltimore Ravens @ Buffalo Bills — first: Buffalo Bills; lead changes 0; final 10-36
+- 2026-11-01: Tennessee Titans @ Cincinnati Bengals — first: Tennessee Titans; lead changes 5; final 36-43
+- 2026-11-01: Arizona Cardinals @ Dallas Cowboys — first: Dallas Cowboys; lead changes 1; final 33-30
+- 2026-11-01: Minnesota Vikings @ Detroit Lions — first: Detroit Lions; lead changes 4; final 15-19
+- 2026-11-01: Las Vegas Raiders @ New York Jets — first: New York Jets; lead changes 5; final 38-33
+- 2026-11-01: Cleveland Browns @ Pittsburgh Steelers — first: Pittsburgh Steelers; lead changes 0; final 6-27
+- 2026-11-01: Atlanta Falcons @ Tampa Bay Buccaneers — first: Tampa Bay Buccaneers; lead changes 0; final 0-16
+- 2026-11-01: Indianapolis Colts @ Jacksonville Jaguars — first: Jacksonville Jaguars; lead changes 0; final 7-42
+- 2026-11-01: Los Angeles Chargers @ Los Angeles Rams — first: Los Angeles Rams; lead changes 2; final 9-24
+- 2026-11-01: Kansas City Chiefs @ Denver Broncos — first: Denver Broncos; lead changes 2; final 24-28
+- 2026-11-01: New England Patriots @ Miami Dolphins — first: New England Patriots; lead changes 2; final 24-19
+- 2026-11-01: Philadelphia Eagles @ Washington Commanders — first: Philadelphia Eagles; lead changes 1; final 10-27
+- 2026-11-02: Chicago Bears @ Seattle Seahawks — first: Chicago Bears; lead changes 0; final 34-17
+- 2026-11-05: Jacksonville Jaguars @ Baltimore Ravens — first: Jacksonville Jaguars; lead changes 0; final 33-10
