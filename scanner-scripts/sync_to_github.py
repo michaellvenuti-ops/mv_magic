@@ -32,6 +32,15 @@ def main():
     ap.add_argument("--dry-run", action="store_true",
                     help="list what would be pushed, push nothing")
     args = ap.parse_args()
+    # Rebuild the *-pc.html boards from current scan state first, so
+    # this sync carries fresh pages (hung-number pattern, generalized
+    # by build_pc_boards.py). A board failure never blocks the sync.
+    try:
+        import build_pc_boards
+        built = build_pc_boards.build_all()
+        print(f"sync_to_github: rebuilt {len(built)} pc boards.")
+    except Exception as e:  # noqa: BLE001
+        print(f"sync_to_github: pc board rebuild failed ({e}); syncing anyway.")
     plan = []
     for path in sorted(Path(DATA_DIR).rglob("*")):
         if path.is_file() and "__pycache__" not in str(path):
