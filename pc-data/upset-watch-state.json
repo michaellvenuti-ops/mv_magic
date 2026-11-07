@@ -1445,11 +1445,17 @@
    "sport": "CFB",
    "matchup": "SE Missouri at Tennessee St",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 11.5,
    "fav_team": "SE Missouri",
-   "dog_team": "Tennessee St"
+   "dog_team": "Tennessee St",
+   "alerted_at": "2026-11-07T17:36:01",
+   "board_read_at": "2026-11-07T17:36:01",
+   "alert_expires_at": "2026-11-07T17:41:01",
+   "alert_detail": "11:03 - 3rd Quarter",
+   "alert_fav_score": 3,
+   "alert_dog_score": 7
   },
   "401868313": {
    "sport": "CFB",
@@ -3339,7 +3345,7 @@
    "spread": 13.5,
    "fav_team": "High Point",
    "dog_team": "Washington St",
-   "live_ml": -850
+   "live_ml": -475
   },
   "401911007": {
    "sport": "NCAAB",
