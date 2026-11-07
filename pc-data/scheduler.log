@@ -2266,3 +2266,11 @@
 [2026-11-06 20:11:51 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
 [2026-11-06 20:12:49 ET] promo_watch.py: OK in 58s — promo-watch: 10 listed, 0 new, 0 converter attempt(s).
 [2026-11-06 20:13:49 ET] dh_derivative_ev.py: OK in 60s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
+[2026-11-06 20:17:38 ET] sync_to_github.py: OK in 228s —   ok: steam-side-board-pc.html
+[2026-11-06 20:17:38 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 51, nfl-f
+[2026-11-06 20:18:10 ET] upset_watch.py: OK in 2s — SUMMARY: 221 games checked, 1 new trigger(s)
+[2026-11-06 20:18:32 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (146 with odds), db total 90080 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 20:19:26 ET] dh_low_holds.py: OK in 53s — LOW-HOLDS: NFL NY Giants PHI Eagles Nov-08 1:00 PM / table / Receptions D. Mooney Under 1.5 / Alt Receptions D. Mooney 2+ / table | BetMGM | Bally Bet
+[2026-11-06 20:20:14 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-06 20:20:17 ET] upset_watch.py: OK in 3s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 20:20:19 ET] half_percent.py: OK in 2s — half-percent recheck: FAIL — NET cancelled (gap +0.04% is outside the +3%..+12% band at 9:28 AM); delivery banked.
