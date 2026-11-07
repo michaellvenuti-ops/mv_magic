@@ -2502,3 +2502,12 @@
 [2026-11-07 02:39:22 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
 [2026-11-07 02:40:16 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 100832 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 02:41:39 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE : NCAAF 5 UCLA Minnesota Today 12:00 PM / table / Alt Spread UCLA +1 / Moneyline Minnesota / table | Bally Bet | Caesars — window 340.0 :: {'side': 
+[2026-11-07 02:45:46 ET] sync_to_github.py: OK in 248s —   ok: steam-side-board-pc.html
+[2026-11-07 02:45:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 49, sog-middles: 400. Detai
+[2026-11-07 02:46:41 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 224 events (125 with odds), db total 101056 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 02:48:19 ET] dh_game_middles.py: OK in 98s — GAME MIDDLE: NBA ORL Magic GS Warriors Today 8:45 PM / table / Total Over 219.5 / Alt Total Under 220 / table | Bally Bet | Fanatics-NJ — window 239.0 :: -124 $
+[2026-11-07 02:52:46 ET] dh_sog_middles.py: OK in 117s — - NEW CLEAN W220  (): -116 $1,000 Bet365 -116.0 -116 @ Bet365 / +104 $912 DraftKings 104.0 +104 @ DraftKings
+[2026-11-07 02:53:41 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 224 events (125 with odds), db total 101280 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 02:54:40 ET] dh_team_total_middles.py: OK in 59s
+[2026-11-07 02:54:42 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 02:54:44 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
