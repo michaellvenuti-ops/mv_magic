@@ -48,3 +48,11 @@ LEAD: Kalshi on Oklahoma State @ Kansas State | 2026-11-07 (spread)
 ## 2026-11-07T13:29:23-05:00 — pack move, never credited: Boise State @ Colorado State | 2026-11-07 spread (BetMGM, Caesars)
 ## 2026-11-07T13:29:23-05:00 — 78 games, 1 leads credited, 23 started games skipped
 LEAD: bet365 on Rice @ North Texas | 2026-11-07 (spread)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Delaware @ Kennesaw State | 2026-11-07 spread (BetMGM, Fanatics, bet365)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Temple @ Navy | 2026-11-07 total (FanDuel, Kalshi)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Merrimack @ Wake Forest | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-07T14:48:17-05:00 — pack move, never credited: Rice @ North Texas | 2026-11-07 spread (Caesars, DraftKings)
+## 2026-11-07T14:48:17-05:00 — 78 games, 1 leads credited, 23 started games skipped
+LEAD: FanDuel on Rice @ North Texas | 2026-11-07 (spread)
