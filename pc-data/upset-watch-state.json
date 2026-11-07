@@ -238,7 +238,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 10.0,
    "fav_team": "Houston",
    "dog_team": "Cincinnati"
   },
@@ -557,7 +557,8 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "North Carolina",
-   "dog_team": "UConn"
+   "dog_team": "UConn",
+   "final": true
   },
   "401862822": {
    "sport": "CFB",
@@ -639,11 +640,17 @@
    "sport": "CFB",
    "matchup": "UL Monroe at Arkansas St",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Arkansas St",
-   "dog_team": "UL Monroe"
+   "dog_team": "UL Monroe",
+   "alerted_at": "2026-11-07T15:16:08",
+   "board_read_at": "2026-11-07T15:16:08",
+   "alert_expires_at": "2026-11-07T15:21:08",
+   "alert_detail": "7:27 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 6
   },
   "401871073": {
    "sport": "CFB",
@@ -671,7 +678,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 7.5,
    "fav_team": "UAB",
    "dog_team": "Charlotte"
   },
@@ -731,7 +738,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 11.5,
    "fav_team": "San Jos\u00e9 St",
    "dog_team": "N Illinois"
   },
@@ -910,7 +917,8 @@
    "alert_expires_at": "2026-11-07T13:17:08",
    "alert_detail": "1:48 - 2nd Quarter",
    "alert_fav_score": 14,
-   "alert_dog_score": 17
+   "alert_dog_score": 17,
+   "final": true
   },
   "401866682": {
    "sport": "CFB",
@@ -930,7 +938,8 @@
    "fav": "home",
    "spread": 7.0,
    "fav_team": "Yale",
-   "dog_team": "Brown"
+   "dog_team": "Brown",
+   "final": true
   },
   "401867839": {
    "sport": "CFB",
@@ -940,7 +949,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Dartmouth",
-   "dog_team": "Princeton"
+   "dog_team": "Princeton",
+   "final": true
   },
   "401867914": {
    "sport": "CFB",
@@ -960,7 +970,8 @@
    "fav": "home",
    "spread": 10.0,
    "fav_team": "Duquesne",
-   "dog_team": "Robert Morris"
+   "dog_team": "Robert Morris",
+   "final": true
   },
   "401867933": {
    "sport": "CFB",
@@ -991,7 +1002,8 @@
    "fav": "home",
    "spread": 4.5,
    "fav_team": "Lehigh",
-   "dog_team": "Colgate"
+   "dog_team": "Colgate",
+   "final": true
   },
   "401868232": {
    "sport": "CFB",
@@ -1018,7 +1030,8 @@
    "alert_expires_at": "2026-11-07T12:29:11",
    "alert_detail": "7:09 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401868020": {
    "sport": "CFB",
@@ -3000,7 +3013,8 @@
    "spread": 14.5,
    "fav_team": "Ohio",
    "dog_team": "NC A&T",
-   "live_ml": -720
+   "live_ml": -720,
+   "final": true
   },
   "401926793": {
    "sport": "NCAAB",
@@ -3304,7 +3318,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 27.5,
+   "spread": 28.5,
    "fav_team": "New Mexico",
    "dog_team": "N Arizona"
   },
@@ -3432,7 +3446,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 9.5,
    "fav_team": "Little Rock",
    "dog_team": "SE Louisiana"
   },
