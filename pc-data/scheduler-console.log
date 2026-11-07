@@ -2478,3 +2478,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 00:52:59 ET] steam_side.py: OK in 9s — steam-side: 63 games, no new flags (silent).
 [2026-11-07 00:53:52 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 224 events (125 with odds), db total 97696 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 00:56:42 ET] dh_prop_middles.py: OK in 170s — PROP MIDDLE CLEAN : NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Alt Total Under 175.5 / Alt Total Over 174.5 / table | DraftKings | Bet365 — window
+[2026-11-07 01:00:56 ET] sync_to_github.py: OK in 253s —   ok: steam-side-board-pc.html
+[2026-11-07 01:00:56 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 68, sog-middles: 224. Detai
+[2026-11-07 01:01:48 ET] odds_recorder.py: OK in 21s — SUMMARY: recorded 224 events (125 with odds), db total 97920 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 01:03:28 ET] dh_sog_middles.py: OK in 100s — - NEW CLEAN W1  (): -106 $1,000 Bally Bet -106.0 -106 @ Bally Bet / -105 $995 Fanatics-NJ -105.0 -105 @ Fanatics-NJ
+[2026-11-07 01:03:33 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=6
+[2026-11-07 01:06:24 ET] dh_game_middles.py: OK in 110s — GAME MIDDLE: NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Total Under 173.5 / Alt Total Over 173 / table | BetMGM | Bet365 — window 227.0 :: -115 $1
+[2026-11-07 01:07:15 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (125 with odds), db total 98144 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 01:08:17 ET] dh_team_total_middles.py: OK in 61s
+[2026-11-07 01:08:18 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 01:08:20 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-07 01:09:13 ET] dh_arbitrage.py: OK in 23s — ARBITRAGE: NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Alt Total Under 175.5 / Alt Total Over 174.5 / table | DraftKings | Bet365
+[2026-11-07 01:10:07 ET] dh_kalshi_poly_arb.py: OK in 54s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-07 01:10:12 ET] nba_overs_pregame.py: OK in 5s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
