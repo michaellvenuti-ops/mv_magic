@@ -27,3 +27,4 @@ NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — Fanatics still dealin
 ## 2026-11-06T20:04:28-05:00 — 63 games, 1 steam events, 2 NEW flags, 7 started games skipped
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — bet365 still dealing spread -9.5 on Marshall (pre-move median -9.5, now -8.5)
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-06 — FanDuel still dealing spread -9.5 on Marshall (pre-move median -9.5, now -8.5)
+## 2026-11-06T20:49:04-05:00 — 63 games, 0 steam events, 0 NEW flags, 7 started games skipped
