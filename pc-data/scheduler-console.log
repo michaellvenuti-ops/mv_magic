@@ -2608,3 +2608,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 04:29:44 ET] hung_number.py: OK in 67s — No new hung numbers (46 current flags).
 [2026-11-07 04:29:49 ET] rlm.py: OK in 5s
 [2026-11-07 04:29:52 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 04:33:55 ET] sync_to_github.py: OK in 243s —   ok: steam-side-board-pc.html
+[2026-11-07 04:33:56 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 46, sog-middles: 506. Detai
+[2026-11-07 04:34:48 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 104192 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 04:36:17 ET] dh_sog_middles.py: OK in 89s — - NEW W266  (): -141 $1,000 Bally Bet -141.0 -141 @ Bally Bet / +125 $760 Fanatics-NJ 125.0 +125 @ Fanatics-NJ
+[2026-11-07 04:37:18 ET] dh_low_holds.py: OK in 30s — LOW-HOLDS: NFL CIN Bengals ATL Falcons Nov-08 9:30 AM / table / Receptions B. Robinson Under 3.5 / Alt Receptions B. Robinson 4+ / table | Bet365 | Caesars
+[2026-11-07 04:37:59 ET] dh_team_total_middles.py: OK in 41s
+[2026-11-07 04:38:00 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 04:38:02 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-07 04:40:27 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 224 events (125 with odds), db total 104416 snapshots / 345 events, feeds ok 6 fail 0
