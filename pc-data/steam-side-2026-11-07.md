@@ -37,3 +37,5 @@ NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Hard Rock still dealing
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — bet365 still dealing spread -1.5 on Delaware (pre-move median 0.0, now 1.25)
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — BetMGM still dealing spread -1.0 on Delaware (pre-move median 0.0, now 1.25)
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Kalshi still dealing spread -1.5 on Delaware (pre-move median 0.0, now 1.25)
+## 2026-11-07T14:48:21-05:00 — 63 games, 2 steam events, 1 NEW flags, 22 started games skipped
+NEW FLAG: FBS Merrimack @ Wake Forest | 2026-11-07 — Hard Rock still dealing total 58.5 on Under (pre-move median 57.5, now 55.5)
