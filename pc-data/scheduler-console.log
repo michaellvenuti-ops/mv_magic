@@ -2441,3 +2441,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 23:51:25 ET] sync_to_github.py: FAILED (exit 1) in 233s —   FAILED: game-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 3913d1ab172d951cf2cb62877dd03967d60030e4 but expected 8d61dcdb0d1685c4107e7280896bf
 [2026-11-06 23:52:16 ET] odds_recorder.py: OK in 21s — SUMMARY: recorded 224 events (125 with odds), db total 95904 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 23:54:17 ET] dh_sog_middles.py: OK in 121s — - NEW CLEAN W224  (): -118 $1,000 BetMGM -118.0 -118 @ BetMGM / +106 $897 Bally Bet 106.0 +106 @ Bally Bet
+[2026-11-06 23:58:08 ET] sync_to_github.py: OK in 230s —   ok: steam-side-board-pc.html
+[2026-11-06 23:58:08 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 54, nfl-f
+[2026-11-06 23:59:11 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 224 events (125 with odds), db total 96128 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 00:01:09 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NCAAB CSU Fullerton South Dakota Nov-07 2:00 PM / table / Total Under 174.5 / Alt Total Over 172.5 / table | Caesars | Bet365 — window 220.0 :: -11
+[2026-11-07 00:05:55 ET] dh_team_total_middles.py: OK in 286s
+[2026-11-07 00:06:07 ET] nfl_first_score.py: OK in 11s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 00:06:13 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-07 00:07:18 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 224 events (125 with odds), db total 96352 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 00:08:24 ET] dh_arbitrage.py: OK in 66s — ARBITRAGE: NCAAF Wyoming UNLV Today 10:30 PM / table / Alt Total Over 44.5 / Alt Total Under 44.5 / table bar_chart | BetRivers | Polymarket US
+[2026-11-07 00:08:49 ET] dh_kalshi_poly_arb.py: OK in 25s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-07 00:12:17 ET] dh_key_number_middles.py: OK in 208s — key-number-middles: no new strict-key middles.
+[2026-11-07 00:12:27 ET] steam_side.py: OK in 10s — steam-side: 63 games, no new flags (silent).
