@@ -1,0 +1,158 @@
+sync_to_github: rebuilt 12 pc boards.
+sync_to_github: 96 pushed, 60 failed of 156 files.
+  ok: pc-data/.gitkeep
+  ok: pc-data/alerts-2026-11-05.log
+  ok: pc-data/alerts-2026-11-06.log
+  ok: pc-data/arbitrage-2026-11-05.md
+  ok: pc-data/arbitrage-2026-11-06.md
+  ok: pc-data/chet-dhlow4-1105.log
+  ok: pc-data/chet-dhprobe-run.log
+  ok: pc-data/chet-dhprobe2-1105.txt
+  ok: pc-data/chet-dhprobe4-1105.txt
+  ok: pc-data/chet-gamemid-once-1105.log
+  ok: pc-data/chet-hung-1105.log
+  ok: pc-data/chet-propmid-once-1105.log
+  ok: pc-data/correlated-parlay-2026-11-04.md
+  ok: pc-data/correlated-parlay-2026-11-06.md
+  ok: pc-data/correlated-parlay-state.json
+  ok: pc-data/costco-gold/costco-gold-2026-11-05.json
+  ok: pc-data/costco-gold/costco-gold-2026-11-05.md
+  ok: pc-data/costco-gold/costco-gold-2026-11-06.md
+  ok: pc-data/dump-low-holds-2026-11-05.txt
+  ok: pc-data/game-middles-2026-11-05.md
+  ok: pc-data/game-middles-state.json
+  ok: pc-data/half-percent-2026-11-06.md
+  ok: pc-data/half-percent-proof.log
+  ok: pc-data/half-percent-state.json
+  ok: pc-data/hung-number-2026-11-05.md
+  ok: pc-data/hung-number-2026-11-06.md
+  ok: pc-data/kalshi-poly-arb-state.json
+  ok: pc-data/key-number-middles-2026-11-05.md
+  ok: pc-data/key-number-middles-2026-11-06.md
+  ok: pc-data/leader-follower-state.json
+  ok: pc-data/leader-follower-state.json.bak-1105-lffix
+  ok: pc-data/low-holds-2026-11-05.md
+  ok: pc-data/low-holds-2026-11-06.md
+  ok: pc-data/nba-finals-2026-11-04.json
+  ok: pc-data/nba-finals-2026-11-05.json
+  ok: pc-data/nba-overs-2026-11-05.md
+  ok: pc-data/nba-overs-2026-11-06.md
+  ok: pc-data/nba-overs-snapshot-2026-11-05.json
+  ok: pc-data/nba-overs-snapshot-2026-11-06.json
+  ok: pc-data/nba-overs-state.json
+  ok: pc-data/nfl-first-score-2026-11-06.md
+  ok: pc-data/nfl-first-score-sequences.csv
+  ok: pc-data/nfl-first-score-state.json
+  ok: pc-data/nfl-first-score-tally.json
+  ok: pc-data/nhl-finals-2026-11-05.json
+  ok: pc-data/nhl-totals-2026-11-04.md
+  ok: pc-data/nhl-totals-2026-11-05.md
+  ok: pc-data/nhl-totals-snapshot-2026-11-05.json
+  ok: pc-data/nhl-totals-state.json
+  ok: pc-data/pip-np.log
+  ok: pc-data/promo-converter-2026-11-06.md
+  ok: pc-data/promo-converter-state.json
+  ok: pc-data/promo-dashboard-dump-2026-11-06.txt
+  ok: pc-data/prop-middles-2026-11-05.md
+  ok: pc-data/prop-middles-2026-11-06.md
+  ok: pc-data/public-fade-gate-notified
+  ok: pc-data/rlm-2026-11-05.md
+  ok: pc-data/rlm-2026-11-06.md
+  ok: pc-data/rlm-gate-notified
+  ok: pc-data/scan-grades/nba-overs.json
+  ok: pc-data/scan-grades/nhl-totals.json
+  ok: pc-data/scan-grades/total-projectors.json
+  ok: pc-data/scheduler-console.log
+  ok: pc-data/scheduler-state.json
+  ok: pc-data/scheduler.log
+  ok: pc-data/sog-middles-2026-11-05.md
+  ok: pc-data/sog-middles-2026-11-06.md
+  ok: pc-data/sog-middles-state.json
+  ok: pc-data/spread-cover-snapshot-2026-11-05.json
+  ok: pc-data/steam-side-2026-11-04.md
+  ok: pc-data/steam-side-2026-11-05.md
+  ok: pc-data/steam-side-2026-11-06.md
+  ok: pc-data/steam-side-state.json
+  ok: pc-data/sync-boards-1106.log
+  ok: pc-data/team-total-middles-state.json
+  ok: pc-data/total-projectors-snapshot-2026-11-05.json
+  ok: pc-data/totals-2026-11-05.md
+  ok: pc-data/totals-2026-11-06.md
+  ok: pc-data/totals-state.json
+  ok: pc-data/transcribe-test.log
+  ok: pc-data/transcripts/audio-test.json
+  ok: pc-data/transcripts/audio-test.txt
+  ok: pc-data/upset-test.log
+  ok: pc-data/upset-watch-state.json
+  ok: pc-data/yahoo-brief/yahoo-brief-2026-11-06.json
+  ok: pc-data/yahoo-brief/yahoo-brief-2026-11-06.md
+  ok: pc-data/yahoo-dryrun.log
+  ok: game-middles-board-pc.html
+  ok: kalshi-poly-arb-board-pc.html
+  ok: key-number-middles-board-pc.html
+  ok: leader-follower-board-pc.html
+  ok: low-holds-board-pc.html
+  ok: prop-middles-board-pc.html
+  ok: rlm-board-pc.html
+  ok: sog-middles-board-pc.html
+  ok: steam-side-board-pc.html
+  FAILED: pc-data/arbitrage-state.json (HTTP 409: {'error': '{"message":"is at be416ac4d4926b8e86c61cfcb6f7b94958cbfa6f but expected e06c5a2163013dc5c2d6778b2e3d126120f2c2f1","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/av-fix.log (HTTP 409: {'error': '{"message":"is at b8a9d1fc43bd2a90d146776a5a22673c78f47ca5 but expected be416ac4d4926b8e86c61cfcb6f7b94958cbfa6f","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhcheck-1105.log (HTTP 409: {'error': '{"message":"is at 7f7ecf0d075d25a75f45a4c9a7151c5a42f507bb but expected b8a9d1fc43bd2a90d146776a5a22673c78f47ca5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhlow-1105.log (HTTP 409: {'error': '{"message":"is at 7752dfecc5fdd4ee540fe1b9729cf7a37cb9ca28 but expected 7f7ecf0d075d25a75f45a4c9a7151c5a42f507bb","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhlow2-1105.log (HTTP 409: {'error': '{"message":"is at 062702b544afa746a8bf23af8d6c4b95768649d4 but expected 7752dfecc5fdd4ee540fe1b9729cf7a37cb9ca28","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhlow3-1105.log (HTTP 409: {'error': '{"message":"is at 64558d23c739b30deecebc44314859b1fbd7c5cf but expected 062702b544afa746a8bf23af8d6c4b95768649d4","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhlow5-1105.log (HTTP 409: {'error': '{"message":"is at 5f35cbf90dfcbb6b051f989c1bc0e4949abbddff but expected 082b5bdc9165e080ffa5911020145b82ed67e5c5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhprobe-1105.txt (HTTP 409: {'error': '{"message":"is at 72c99ec77328d3bb364cc71d88117337af25c50e but expected 5f35cbf90dfcbb6b051f989c1bc0e4949abbddff","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhprobe3-1105.txt (HTTP 409: {'error': '{"message":"is at 11d65a8075709f6f7a0b685d472e4755e4bf93a0 but expected 050c5abec2ff5c3b6872b469509420a1d6e092f3","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/chet-dhprobe5-1105.txt (HTTP 409: {'error': '{"message":"is at a89819d410d6d549cf0419bdb293a93d345f6e24 but expected 3b890b7945ce2e93ec68c7b1efcbdcdb7a039c35","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/correlated-parlay-2026-11-05.md (HTTP 409: {'error': '{"message":"is at e7466d8162c03b519a42ad23aaa0c26843a1445d but expected eea3625dde1f4871c2a2c5aaefb0ecf4bd657162","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/costco-gold/costco-gold-2026-11-06.json (HTTP 409: {'error': '{"message":"is at b22799cd909e1adda68f4c47779549f8109ee2d1 but expected c147bdf82c91a09bd550ae48d0fb1ef43b8d7671","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/costco-gold/dump-2026-11-05.txt (HTTP 409: {'error': '{"message":"is at 387d9ab513506c01ca11d01f1f31154a0c2d7687 but expected b1206fa0517f512be137a8253f4eb0619d2a6b30","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/costco-gold/dump-2026-11-06.txt (HTTP 409: {'error': '{"message":"is at 369d14b08c334c850f2ffbd9152a5fbcd1bf6120 but expected 387d9ab513506c01ca11d01f1f31154a0c2d7687","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/costco-signin.log (HTTP 409: {'error': '{"message":"is at a7777704b58ab2d1f4494290838abc0d27e838d2 but expected 369d14b08c334c850f2ffbd9152a5fbcd1bf6120","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/costco-trial.log (HTTP 409: {'error': '{"message":"is at fb5dd5ba19f6c11f900258f27f195572630e7119 but expected a7777704b58ab2d1f4494290838abc0d27e838d2","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/dh-check.txt (HTTP 409: {'error': '{"message":"is at ebeaa4d3706fecdc16c08e6ed92e41cd111b32a2 but expected fb5dd5ba19f6c11f900258f27f195572630e7119","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/dh-check2.txt (HTTP 409: {'error': '{"message":"is at 86e97b39b9a1d49598e17aba22fddb8d065f4451 but expected ebeaa4d3706fecdc16c08e6ed92e41cd111b32a2","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/dh-procs.txt (HTTP 409: {'error': '{"message":"is at 91c636dbab92fe6ef3e22093717107a5f809590b but expected 86e97b39b9a1d49598e17aba22fddb8d065f4451","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/dump-2026-11-05.txt (HTTP 409: {'error': '{"message":"is at cdba4bf89c51c99cebdf200e3f2e38583beedf57 but expected 91c636dbab92fe6ef3e22093717107a5f809590b","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/game-middles-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 1dc74cab0c9fb5d342a42715552959d710c477c6 but expected f7e917a951e19ac53fd418ea7ecbdc73cfee0dc8","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/hung-number-state.json (HTTP 409: {'error': '{"message":"is at f3d9230f0cf19f1194415bf8efc263e64314379a but expected 168f68d00d861539ac9b03e77ce5fa17ab86e791","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/kalshi-poly-arb-2026-11-05.md (HTTP 409: {'error': '{"message":"is at feef1c66b6e732ec064e8c0ba8b3e31bcc32670c but expected f3d9230f0cf19f1194415bf8efc263e64314379a","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/kalshi-poly-arb-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 84671949d7558704b984aa073e5561f321eeb37b but expected feef1c66b6e732ec064e8c0ba8b3e31bcc32670c","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/key-number-middles-state.json (HTTP 409: {'error': '{"message":"is at 933a18c7dcbb0f8615d8bdcf81d3b27fa3d978a9 but expected 6afad342ddddc91120bba1100244707e14b69203","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/leader-follower-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 7078fffc18fdc5e5455562fbabfb1e0d837a83e9 but expected 933a18c7dcbb0f8615d8bdcf81d3b27fa3d978a9","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/leader-follower-2026-11-05.md (HTTP 409: {'error': '{"message":"is at c8b4977d3f25110cd36e062593165b0b0d9d542f but expected 7078fffc18fdc5e5455562fbabfb1e0d837a83e9","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/leader-follower-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 1f0423918e27f2a8e02ca9eefec7753279a97e6f but expected c8b4977d3f25110cd36e062593165b0b0d9d542f","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/low-holds-state.json (HTTP 409: {'error': '{"message":"is at 55106baca7a9c8f5145ca224bbbe2731111806ba but expected 4d3a97ea2a386a5669e150ceeec17678944283ea","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nba-overs-pregame-2026-11-06.json (HTTP 409: {'error': '{"message":"is at acd85e08474bb80e7203051b505a802b81e42c1a but expected f7111a838020e9f5f877f02e240ae294ffca9ae6","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nfl-first-score-games.csv (HTTP 409: {'error': '{"message":"is at 86e1609cad52c396654ab11d018a83219156fc77 but expected 94bfd2393b83d66b39ec1b1fea1c56d99f77eb47","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nhl-finals-2026-11-04.json (HTTP 409: {'error': '{"message":"is at 1ff6111ef529a72add609732e772809e7e7a8153 but expected fbee6b7c4b7ee639aff742c184cecbc660836910","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nhl-totals-2026-11-06.md (HTTP 409: {'error': '{"message":"is at ae0c06b358c7da2d5f9457f0df3f3cc1ba94b682 but expected 47fea9e8382f7eb9e4965dfd76435068516a3b4c","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nhl-totals-snapshot-2026-11-04.json (HTTP 409: {'error': '{"message":"is at 41f4756640accb1531e4ee0715ada7c01538ab5c but expected ae0c06b358c7da2d5f9457f0df3f3cc1ba94b682","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/nhl-totals-snapshot-2026-11-06.json (HTTP 409: {'error': '{"message":"is at 5da9d868f815a460a85e76bc41bce369c26fb248 but expected 1bc33b95373c0ce4e8d09f6727d6a1249bcf9f91","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/odds-recorder-summary.json (HTTP 409: {'error': '{"message":"is at 96c3eaba6bf66d900c31c3fcb475321f1d3653f7 but expected 1efab03e64b0ad7bd60bbeca9bb37cae7fe52204","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/oneshot-dh_derivative_ev.log (HTTP 409: {'error': '{"message":"is at fa9055267d250f1d6172efd55d44e4b471d6c987 but expected 96c3eaba6bf66d900c31c3fcb475321f1d3653f7","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/oneshot-promo_watch.log (HTTP 409: {'error': '{"message":"is at 61b3c47b3bc0d3ab6b14223b65ed72b21802986d but expected fa9055267d250f1d6172efd55d44e4b471d6c987","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/pclog-entry.txt (HTTP 409: {'error': '{"message":"is at 3b3bfaff6fd037381a6e9dde63d615f23473ecb3 but expected 61b3c47b3bc0d3ab6b14223b65ed72b21802986d","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/pip-ct2.log (HTTP 409: {'error': '{"message":"is at 2e3c130c9c3d3d8cc6a69bf6e514492daf8eccc9 but expected 3b3bfaff6fd037381a6e9dde63d615f23473ecb3","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/pip-fw.log (HTTP 409: {'error': '{"message":"is at b876a91c3a7a3b6cea0438fa5fb12b2cbd8c86b4 but expected 2e3c130c9c3d3d8cc6a69bf6e514492daf8eccc9","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/prop-middles-state.json (HTTP 409: {'error': '{"message":"is at b449f1459cbb17747356658795c2a58ef6992245 but expected 4916bb82ffd0a6b6f61aa2f9f97b35adca8d85da","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/public-fade-2026-11-04.md (HTTP 409: {'error': '{"message":"is at f347ace554e8714dd366fb139576dc4112996afe but expected b449f1459cbb17747356658795c2a58ef6992245","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/public-fade-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 30b8a85155b5c4506d40c3f15cd26577aa0caa57 but expected f347ace554e8714dd366fb139576dc4112996afe","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/public-fade-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 3b01342ee0cdfb4049b626f47c848c421093dbdd but expected 30b8a85155b5c4506d40c3f15cd26577aa0caa57","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/rlm-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 97222f8b04726274c9460b1d0222effd9a96b27d but expected deeef1aa764b8cf6e1a6092f8719facf54d9b3bc","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/spread-cover-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 98293f253f4a9270e04a7e520dcb93173fe5fa57 but expected 1b667bfb2a1a2193403a052d7b624b2cde1e081d","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/spread-cover-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 77a7a48cf914cb7bac439fd928de3dc3278193cd but expected 98293f253f4a9270e04a7e520dcb93173fe5fa57","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/spread-cover-snapshot-2026-11-06.json (HTTP 409: {'error': '{"message":"is at 474eca700e87dba2b054ce3f01d5b351c41ccfb4 but expected 07514333773d7539481ec7c4976a757a21bfc2b5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/spread-cover-state.json (HTTP 409: {'error': '{"message":"is at 08910b093b2d8f5f5e43954f726489fcf86a6dce but expected 474eca700e87dba2b054ce3f01d5b351c41ccfb4","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/total-projectors-2026-11-05.md (HTTP 409: {'error': '{"message":"is at e4d947e2006f22f115698f67b90dad60efe99098 but expected 9a889f315b2308bac14bf8106712a5063e3ca992","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/total-projectors-2026-11-06.md (HTTP 409: {'error': '{"message":"is at c576c2b0914614d4364214c25df41b275cc24080 but expected e4d947e2006f22f115698f67b90dad60efe99098","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/total-projectors-snapshot-2026-11-06.json (HTTP 409: {'error': '{"message":"is at e0a265747b60511832f6dcb1b051deaa6081bc13 but expected 38b31b116c61417788f857a9259bb16331a03213","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/total-projectors-state.json (HTTP 409: {'error': '{"message":"is at e944dd1583a1d5ef4b35543890edc99331b2f8d6 but expected e0a265747b60511832f6dcb1b051deaa6081bc13","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/totals-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 620df15e47ac81b40c0d0b988fc3b26ed969b683 but expected e944dd1583a1d5ef4b35543890edc99331b2f8d6","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: pc-data/wong-teasers-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 4636e4dcee48a5a29906168ab000d43448c02836 but expected ce8f43d2e5645566aa7da7e7c13b9c61a71ba355","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: arbitrage-board-pc.html (HTTP 409: {'error': '{"message":"is at 364b78bcf2551878d680183d55299a0e7c5098fc but expected 12755cc723abd01f900df7bc93fce8810f9427ab","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: correlated-parlay-board-pc.html (HTTP 409: {'error': '{"message":"is at 20069c45588e78f9fe52a68c5cf3763d60abdad2 but expected 364b78bcf2551878d680183d55299a0e7c5098fc","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: hung-number-board-pc.html (HTTP 409: {'error': '{"message":"is at a817dbf0eb010912dcb881bc6cad629cb590e824 but expected 1f0195c121342afc9fa505f9d8859c21afea33fe","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+  FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at 5aa37e76a0fd2bdc6da72dd8f0cae836cac7e605 but expected 714f8bcf277e6dcf177bb80f8610904da8a049dc","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
