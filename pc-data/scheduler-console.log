@@ -2500,3 +2500,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 01:23:37 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-07 01:28:31 ET] dh_key_number_middles.py: OK in 264s — key-number-middles: no new strict-key middles.
 [2026-11-07 01:28:36 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
+[2026-11-07 01:32:47 ET] sync_to_github.py: OK in 250s —   ok: steam-side-board-pc.html
+[2026-11-07 01:32:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 53, sog-middles: 285. Detai
+[2026-11-07 01:33:40 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 98816 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 01:34:22 ET] dh_low_holds.py: OK in 42s — LOW-HOLDS: NBA DEN Nuggets IND Pacers Today 5:15 PM / table / Assists C. Johnson Under 2.5 / Assists C. Johnson Over 2.5 / table | FanDuel | Bet365
+[2026-11-07 01:35:59 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE CLEAN : NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Total Over 171.5 / Alt Total Under 172.5 / table bar_chart | Bet365 | ProphetX — wi
+[2026-11-07 01:38:10 ET] dh_game_middles.py: OK in 101s — GAME MIDDLE: NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Total Under 173.5 / Alt Total Over 173 / table | Caesars | Bet365 — window 222.0 :: -110 $
+[2026-11-07 01:40:13 ET] dh_sog_middles.py: OK in 123s — - NEW W293  (): -155 $1,000 Fanatics-NJ -155.0 -155 @ Fanatics-NJ / +138 $691 Bally Bet 138.0 +138 @ Bally Bet
+[2026-11-07 01:41:07 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 224 events (125 with odds), db total 99040 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 01:42:23 ET] dh_team_total_middles.py: OK in 76s
+[2026-11-07 01:42:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 01:42:27 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
