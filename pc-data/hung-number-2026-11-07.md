@@ -1,7 +1,6 @@
-# Hung numbers — 2026-11-07 (scan 2026-11-07 03:25)
+# Hung numbers — 2026-11-07 (scan 2026-11-07 04:28)
 
 - Cowboys vs Colts | FanDuel | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
-- Jets vs Chiefs | Fanatics | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Florida State vs Boston College | FanDuel | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
 - Texas vs Missouri | Hard Rock | spread | value: dog | book 42.5 vs median -2.5 | div 45.0 middle pairing spans key number 7
 - BYU vs Utah | Hard Rock | spread | value: dog | book 48.5 vs median 4.5 | div 44.0 middle pairing spans key number 7
