@@ -2891,3 +2891,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 12:11:34 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NBA HOU Rockets PHO Suns Today 9:15 PM / table / Alt Spread PHO Suns +10.5 / Alt Spread HOU Rockets -10 / table | BetParx | Fanatics-NJ — window 33
 [2026-11-07 12:12:49 ET] hung_number.py: OK in 75s — HUNG NUMBER: Wyoming vs UNLV — Hard Rock total value Under (47.5 vs median 49.5)
 [2026-11-07 12:14:54 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE : NCAAB Washington St. High Point Today 5:00 PM / table / Alt Total Under 161.5 / Alt Total Over 161 / table | DraftKings | Bet365 — window 360.0 ::
+[2026-11-07 12:19:45 ET] sync_to_github.py: OK in 291s —   ok: steam-side-board-pc.html
+[2026-11-07 12:19:45 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 67, sog-middles: 2359, wong
+[2026-11-07 12:20:43 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 220 events (172 with odds), db total 117148 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 12:20:47 ET] rlm.py: OK in 4s
+[2026-11-07 12:20:51 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 1 new leads, no book at 3 yet).
+[2026-11-07 12:22:38 ET] dh_sog_middles.py: OK in 107s — - NEW W305  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +145 $663 HardRock 145.0 +145 @ HardRock
+[2026-11-07 12:24:50 ET] dh_team_total_middles.py: OK in 102s
+[2026-11-07 12:24:53 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 12:24:56 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-07 12:26:25 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 220 events (172 with odds), db total 117368 snapshots / 425 events, feeds ok 6 fail 0
