@@ -117,7 +117,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 10.0,
+   "spread": 9.5,
    "fav_team": "49ers",
    "dog_team": "Raiders"
   },
@@ -301,7 +301,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 4.0,
    "fav_team": "Florida",
    "dog_team": "Oklahoma"
   },
@@ -613,7 +613,8 @@
    "alert_expires_at": "2026-11-07T13:21:17",
    "alert_detail": "2:28 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401856854": {
    "sport": "CFB",
@@ -1081,7 +1082,8 @@
    "fav": "home",
    "spread": 7.0,
    "fav_team": "Campbell",
-   "dog_team": "Stony Brook"
+   "dog_team": "Stony Brook",
+   "final": true
   },
   "401866686": {
    "sport": "CFB",
@@ -1091,7 +1093,8 @@
    "fav": "away",
    "spread": 7.0,
    "fav_team": "Rhode Island",
-   "dog_team": "New Hampshire"
+   "dog_team": "New Hampshire",
+   "final": true
   },
   "401867824": {
    "sport": "CFB",
@@ -1112,7 +1115,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Cornell",
-   "dog_team": "Penn"
+   "dog_team": "Penn",
+   "final": true
   },
   "401867904": {
    "sport": "CFB",
@@ -1469,7 +1473,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "away",
-   "spread": 14.0,
+   "spread": 13.5,
    "fav_team": "N Arizona",
    "dog_team": "Cal Poly"
   },
@@ -2956,7 +2960,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Thunder",
    "dog_team": "Wizards"
   },
@@ -3119,11 +3123,20 @@
    "sport": "NCAAB",
    "matchup": "NC Central at Longwood",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Longwood",
-   "dog_team": "NC Central"
+   "dog_team": "NC Central",
+   "live_ml": -125,
+   "alerted_at": "2026-11-07T16:24:03",
+   "board_read_at": "2026-11-07T16:24:02",
+   "alert_expires_at": "2026-11-07T16:27:03",
+   "alert_detail": "13:08 - 2nd Half",
+   "alert_fav_score": 42,
+   "alert_dog_score": 48,
+   "alert_ml": -125,
+   "ml_read_at": "2026-11-07T16:24:03"
   },
   "401918986": {
    "sport": "NCAAB",
@@ -3190,7 +3203,7 @@
    "spread": 11.5,
    "fav_team": "UNLV",
    "dog_team": "Samford",
-   "live_ml": -620
+   "live_ml": -520
   },
   "401920192": {
    "sport": "NCAAB",
@@ -3201,7 +3214,7 @@
    "spread": 15.5,
    "fav_team": "Saint Joseph's",
    "dog_team": "Lafayette",
-   "live_ml": -850
+   "live_ml": -810
   },
   "401920062": {
    "sport": "NCAAB",
