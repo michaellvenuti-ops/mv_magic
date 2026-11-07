@@ -2320,3 +2320,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 20:24:38 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
 [2026-11-06 20:25:03 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 224 events (146 with odds), db total 90304 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 20:28:46 ET] dh_game_middles.py: OK in 224s — GAME MIDDLE: NCAAF Rice North Texas Nov-07 4:00 PM / table / Alt Spread Rice +16 / Spread North Texas -15.5 / table bar_chart | Bally Bet | ProphetX — window 20
+[2026-11-06 20:32:37 ET] sync_to_github.py: FAILED (exit 1) in 230s —   FAILED: pc-data/sog-middles-state.json (HTTP 409: {'error': '{"message":"is at dce4700a11f9b13ee56b8d9a6f4e1168c7a0497c but expected 9b4aa624602cc77a51ef18c6a
+[2026-11-06 20:33:08 ET] upset_watch.py: OK in 1s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 20:33:28 ET] odds_recorder.py: OK in 20s — SUMMARY: recorded 224 events (145 with odds), db total 90528 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 20:38:28 ET] dh_key_number_middles.py: OK in 300s — key-number-middles: no new strict-key middles.
