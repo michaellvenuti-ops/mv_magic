@@ -2698,3 +2698,15 @@
 [2026-11-07 08:06:35 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-07 08:09:37 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 110688 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 08:10:09 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 7 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-07.json
+[2026-11-07 08:17:42 ET] sync_to_github.py: OK in 243s —   ok: steam-side-board-pc.html
+[2026-11-07 08:17:42 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 42, sog-middles: 726. Detai
+[2026-11-07 08:18:15 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 110912 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 08:18:16 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-07 08:18:22 ET] nhl_totals_scan.py: OK in 6s — NHL TOTALS FLAG UNDER: NYR @ SEA — predicted 5.32 vs book 6.5 (-122)
+[2026-11-07 08:18:26 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-07 08:18:30 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 7, 'NCAAB': 48}, new 0, moved 0, baselines 55.
+[2026-11-07 08:23:19 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NCAAB UT Martin IU Indianapolis Today 5:00 PM / table / Alt Total Under 170.5 / Alt Total Over 168.5 / table | DraftKings | Bet365
+[2026-11-07 08:23:52 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 111136 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 08:27:33 ET] dh_key_number_middles.py: OK in 192s — key-number-middles: no new strict-key middles.
+[2026-11-07 08:28:10 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
+[2026-11-07 08:29:41 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE CLEAN : NCAAB UT Martin IU Indianapolis Today 5:00 PM / table / Total Over 158.5 / Alt Total Under 160.5 / table | Bet365 | Caesars — window 220.0 :
