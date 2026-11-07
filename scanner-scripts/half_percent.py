@@ -34,6 +34,13 @@ anchor, the first two 5-min bars (09:30 + 09:35) must both
 CLOSE at or above the rebased stop; if either closes below
 it, the day grades NO TRADE ("open confirmation failed") —
 the trade only counts when the open actually holds.
+V3.1 AMENDMENT (2026-11-06 night, Michael's tap — "Add the
+9:28–9:35 validity window"): the --recheck may only EVALUATE
+inside 09:28–09:35 ET. Outside that window it is a complete
+no-op — no state writes, no recheck keys, no delivery — so a
+scheduler catch-up fire after a restart (the 20:20 ET incident
+on deploy night, when an after-hours quote briefly cancelled
+the NET pick) can never act on a stale quote.
 - Weekdays only, ~09:00 ET (scheduler "daily" entry; the script
   itself no-ops Sat/Sun). If the market is closed / there is no fresh
   premarket data, write a NO PICK note and stop.
@@ -117,6 +124,21 @@ MIN_VOL_PLAIN = 100_000
 MAX_CANDIDATES = 60
 NAME_BLOCKLIST = ("ETF", "ETN", "DIREXION", "PROSHARES", "ISHARES",
                   "BULL 3X", "BEAR 3X", "INDEX FUND", "TRUST FUND")
+
+# V3.1 validity window (2026-11-06, Michael's tap): the 9:28 AM
+# ET pre-bell re-check may only EVALUATE inside 09:28-09:35 ET
+# inclusive. Outside the window a --recheck run is a complete
+# no-op: the scheduler catch-up-fires missed jobs on restart
+# (the 20:20 ET deploy-night incident), and a stale after-hours
+# quote must never be read as a 9:28 AM re-check.
+RECHECK_WINDOW_START = (9, 28)  # (hour, minute) ET, inclusive
+RECHECK_WINDOW_END = (9, 35)    # (hour, minute) ET, inclusive
+
+
+def in_recheck_window(now):
+    """True only inside the 09:28–09:35 ET validity window."""
+    return RECHECK_WINDOW_START <= (now.hour, now.minute) \
+        <= RECHECK_WINDOW_END
 
 
 def today_et():
@@ -548,8 +570,18 @@ def recheck():
     cancels — the pick stands, marked unverified, nothing
     delivered. A pass is recorded and stays silent. No pick
     stored -> exit silently.
+    V3.1: the re-check only EVALUATES inside the 09:28–09:35
+    ET validity window (in_recheck_window); outside it this
+    run is a complete no-op — state untouched, no recheck
+    keys written, no delivery — so a scheduler catch-up fire
+    after a restart can never cancel a pick on a stale quote.
     """
     now = dt.datetime.now(ET)
+    if not in_recheck_window(now):
+        print(f"half-percent recheck: {now:%H:%M} ET is "
+              f"outside the 09:28-09:35 ET validity window "
+              f"— no-op, nothing touched.")
+        return 0
     today = now.date()
     today_str_ = today.isoformat()
     if today.weekday() >= 5:
