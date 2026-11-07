@@ -31,3 +31,4 @@ NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — DraftKings still dealin
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Caesars still dealing spread 1.0 on Kennesaw State (pre-move median 1.0, now 0.0)
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — FanDuel still dealing spread 1.5 on Kennesaw State (pre-move median 1.0, now 0.0)
 NEW FLAG: FBS Delaware @ Kennesaw State | 2026-11-07 — Hard Rock still dealing spread 1.5 on Kennesaw State (pre-move median 1.0, now 0.0)
+## 2026-11-07T12:48:01-05:00 — 63 games, 0 steam events, 0 NEW flags, 20 started games skipped
