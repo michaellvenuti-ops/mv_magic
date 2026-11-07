@@ -58,13 +58,17 @@ SCHEDULE = [
     ("dh_prop_middles.py", [], "interval", 30),
     ("dh_sog_middles.py", [], "interval", 30),
     ("dh_team_total_middles.py", [], "interval", 30),
+    ("nfl_first_score.py", [], "interval", 30),
     # daily, Eastern
     ("fetch_nba_snapshot.py", [], "daily", "08:10"),
+    ("dh_sleeping_book_sweep.py", [], "daily", "08:30"),
     # nba_overs_scan.py needs the dated snapshot path as an argument;
     # the wrapper computes it (bare entry failed daily, exit 2).
     ("nba_overs_daily.py", [], "daily", "08:14"),
+    ("nba_overs_pregame.py", [], "interval", 30),
     ("nhl_totals_scan.py", [], "daily", "08:14"),
     ("total_projectors_scan.py", [], "daily", "08:14"),
+    ("spread_cover_daily.py", [], "daily", "08:14"),
     # the grade scripts need --date/--finals; the *_grade_run wrappers
     # compute yesterday (ET) and fetch finals from ESPN (bare entries
     # failed daily, exit 2 — fixed 2026-11-05).
@@ -76,13 +80,25 @@ SCHEDULE = [
     # Muse-side daily Yahoo brief — the Muse-side cron STAYS ON
     # until a signed-in PC run is proven, per the flip rule).
     ("yahoo_brief.py", [], "daily", "08:45"),
+    # Podcast transcription lane (added 2026-11-06): RSS discovery +
+    # detached local-Whisper worker for episodes with no Spotify
+    # transcript. --work spawns the worker detached and returns at
+    # once (episodes take ~2h; the scheduler caps jobs at 30 min).
+    # Overnight batch first (limit 5), then a daytime single lane
+    # (limit 1) so one transcript can land before the 17:00 ET scan.
+    ("podcast_transcribe.py", ["--discover"], "daily", "01:00"),
+    ("podcast_transcribe.py", ["--work", "--limit", "5"], "daily", "01:05"),
+    ("podcast_transcribe.py", ["--discover"], "daily", "12:30"),
+    ("podcast_transcribe.py", ["--work", "--limit", "1"], "daily", "12:35"),
     # Half Percent Club one-stock pick (added 2026-11-06; weekdays
     # only — the script itself no-ops Sat/Sun; grades prior pick first).
     ("half_percent.py", [], "daily", "09:00"),
     ("costco_gold.py", [], "daily", "11:04"),  # 08:04 PT, ahead of the 08:44 PT brief
     ("futures_pairs.py", [], "daily", "09:24"),
+    ("promo_watch.py", [], "daily", "09:54"),
     ("totals_scan.py", [], "daily", "10:44"),
     ("correlated_parlay.py", [], "daily", "10:44"),
+    ("dh_derivative_ev.py", [], "daily", "10:44"),
     ("public_fade.py", [], "daily", "11:44"),
     ("dh_positive_ev.py", [], "daily", "11:44"),
     # weekly, Eastern
@@ -90,6 +106,7 @@ SCHEDULE = [
     ("rb_rushing.py", [], "weekly", ("Thu", "11:24")),
     ("score_pred.py", [], "weekly", ("Sun", "08:44")),
     ("first_half.py", [], "weekly", ("Sun", "09:44")),
+    ("wong_teasers.py", [], "weekly", ("Sat", "11:44")),
 ]
 # totals grading is handled inside totals_scan's companion run when finals exist;
 # kicker.py data is produced by qb_props.py's weekly run.
