@@ -93,6 +93,10 @@ SCHEDULE = [
     # Half Percent Club one-stock pick (added 2026-11-06; weekdays
     # only — the script itself no-ops Sat/Sun; grades prior pick first).
     ("half_percent.py", [], "daily", "09:00"),
+    # Half Percent Club v3 layer 1 (added 2026-11-06): 9:28 AM ET
+    # pre-bell re-check — cancels today's pick before the bell if
+    # the gap left the +3%..+12% band or price broke the plan stop.
+    ("half_percent.py", ["--recheck"], "daily", "09:28"),
     ("costco_gold.py", [], "daily", "11:04"),  # 08:04 PT, ahead of the 08:44 PT brief
     ("futures_pairs.py", [], "daily", "09:24"),
     ("promo_watch.py", [], "daily", "09:54"),
