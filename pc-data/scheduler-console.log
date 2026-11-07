@@ -2383,3 +2383,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 22:14:00 ET] hung_number.py: OK in 91s — HUNG NUMBER: New Mexico vs Nevada — FanDuel total value Over (41.5 vs median 38.5)
 [2026-11-06 22:14:05 ET] rlm.py: OK in 5s
 [2026-11-06 22:14:09 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 1 new leads, no book at 3 yet).
+[2026-11-06 22:18:01 ET] sync_to_github.py: OK in 232s —   ok: steam-side-board-pc.html
+[2026-11-06 22:18:01 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 57, nfl-f
+[2026-11-06 22:18:53 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (128 with odds), db total 92992 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:20:41 ET] dh_team_total_middles.py: OK in 109s
+[2026-11-06 22:20:44 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-06 22:20:47 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-06 22:21:47 ET] dh_low_holds.py: OK in 29s — LOW-HOLDS: NCAAF 20 Boise St. Colorado St. Nov-07 6:00 PM / table / Alt Spread Colorado St. +24.5 / Alt Spread Boise St. -24.5 / table | Bally Bet | FanDuel
+[2026-11-06 22:25:28 ET] dh_key_number_middles.py: OK in 221s — key-number-middles: no new strict-key middles.
+[2026-11-06 22:26:21 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (127 with odds), db total 93216 snapshots / 345 events, feeds ok 6 fail 0
