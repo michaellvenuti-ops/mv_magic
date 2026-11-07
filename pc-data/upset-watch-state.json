@@ -705,7 +705,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.0,
    "fav_team": "Kansas",
    "dog_team": "UCF"
   },
@@ -1020,11 +1020,17 @@
    "sport": "CFB",
    "matchup": "UAlbany at Bryant",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "UAlbany",
-   "dog_team": "Bryant"
+   "dog_team": "Bryant",
+   "alerted_at": "2026-11-07T13:10:15",
+   "board_read_at": "2026-11-07T13:10:15",
+   "alert_expires_at": "2026-11-07T13:15:15",
+   "alert_detail": "10:37 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401866684": {
    "sport": "CFB",
@@ -2963,7 +2969,8 @@
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Ohio",
-   "dog_team": "NC A&T"
+   "dog_team": "NC A&T",
+   "live_ml": -620
   },
   "401926793": {
    "sport": "NCAAB",
@@ -2983,7 +2990,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "Marshall",
    "dog_team": "Toledo"
   },
@@ -3177,7 +3184,7 @@
    "date": "2026-11-07",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Furman",
    "dog_team": "Northern Iowa"
   },
