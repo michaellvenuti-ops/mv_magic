@@ -2399,3 +2399,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 22:37:47 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (125 with odds), db total 93664 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 22:41:06 ET] dh_prop_middles.py: OK in 200s — PROP MIDDLE CLEAN : NCAAF 20 Boise St. Colorado St. Nov-07 6:00 PM / table / Alt Spread Colorado St. +19 / Alt Spread Boise St. -18.5 / table | Bally Bet | theS
 [2026-11-06 22:44:11 ET] dh_sog_middles.py: OK in 155s — - NEW W351  (): -186 $1,000 BetRivers -186.0 -186 @ BetRivers / +165 $580 Fanatics-NJ 165.0 +165 @ Fanatics-NJ
+[2026-11-06 22:48:08 ET] sync_to_github.py: OK in 237s —   ok: steam-side-board-pc.html
+[2026-11-06 22:48:08 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 57, nfl-f
+[2026-11-06 22:49:00 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (125 with odds), db total 93888 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:53:36 ET] dh_game_middles.py: OK in 276s — GAME MIDDLE: NFL CLE Browns NO Saints Nov-08 1:00 PM / table / Passing Yards T. Shough Under 232.5 / Alt Pass Yards T. Shough 230+ / table | BetMGM | DraftKings
+[2026-11-06 22:54:29 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 94112 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:55:36 ET] dh_team_total_middles.py: OK in 67s
+[2026-11-06 22:55:37 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-06 22:55:39 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-06 22:59:16 ET] dh_key_number_middles.py: OK in 187s — key-number-middles: no new strict-key middles.
