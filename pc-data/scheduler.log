@@ -2963,3 +2963,12 @@
 [2026-11-07 15:49:20 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-07 15:54:33 ET] sync_to_github.py: FAILED (exit 1) in 282s —   FAILED: pc-data/totals-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 498d79713ff76d60bae63be987578b649daf12d3 but expected 0fb444c339abd7115b4910b7e7d
 [2026-11-07 15:55:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (103 with odds), db total 121768 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:59:39 ET] sync_to_github.py: OK in 274s —   ok: steam-side-board-pc.html
+[2026-11-07 15:59:40 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 84, sog-middles: 3124, wong
+[2026-11-07 16:00:13 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (103 with odds), db total 121988 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 16:00:50 ET] dh_arbitrage.py: OK in 37s — ARBITRAGE: NFL NY Jets KC Chiefs Nov-08 1:00 PM / table / Touchdowns K. Walker 1+ / Touchdowns K. Walker 1+ NO / table bar_chart | BetMGM | Polymarket US
+[2026-11-07 16:02:02 ET] dh_game_middles.py: OK in 71s — GAME MIDDLE: NCAAB UT Martin IU Indianapolis Today 5:00 PM / table / Total Under 171.5 / Alt Total Over 170.5 / table | FanDuel | Bet365 — window 210.0 :: -105 
+[2026-11-07 16:02:49 ET] dh_kalshi_poly_arb.py: OK in 17s — KALSHI-POLY-ARB: NFL LA Rams WAS Commanders Nov-08 1:00 PM / table bar_chart / Receptions R. White 3+ YES / Receptions R. White Under 2.5 / table | Polymarket U
+[2026-11-07 16:02:52 ET] steam_side.py: OK in 2s — STEAM-SIDE FLAG: FBS Georgia State @ Appalachian State | 2026-11-07 | Kalshi | Over total 52.5 (median 64.5 -> 67.5)
+[2026-11-07 16:06:07 ET] dh_prop_middles.py: OK in 76s — PROP MIDDLE CLEAN : NCAAF Oklahoma 25 Florida Today 7:45 PM / table / Spread Oklahoma +5 / Alt Spread Florida -4.5 / table bar_chart | Bally Bet | ProphetX — wi
+[2026-11-07 16:06:40 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (91 with odds), db total 122208 snapshots / 425 events, feeds ok 6 fail 0
