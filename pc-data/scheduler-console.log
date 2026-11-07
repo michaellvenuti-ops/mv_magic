@@ -2731,3 +2731,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 07:55:13 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
 [2026-11-07 07:57:02 ET] dh_prop_middles.py: OK in 109s — PROP MIDDLE : NCAAF Wyoming UNLV Today 10:30 PM / table / Alt Spread Wyoming +9.5 / Alt Spread UNLV -9 / table | Bally Bet | Fanatics-NJ — window 356.0 :: {'sid
 [2026-11-07 07:59:07 ET] dh_game_middles.py: OK in 95s — GAME MIDDLE: NCAAF Hawai'i UTEP Today 9:30 PM / table / Alt Spread UTEP +9 / Alt Spread Hawai'i -8.5 / table | BetRivers | theScore — window 218.0 :: -113 $1,00
+[2026-11-07 08:03:19 ET] sync_to_github.py: OK in 252s —   ok: steam-side-board-pc.html
+[2026-11-07 08:03:19 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 42, sog-middles: 677. Detai
+[2026-11-07 08:04:14 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 224 events (125 with odds), db total 110464 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 08:05:45 ET] dh_sog_middles.py: OK in 90s — - NEW W340  (): -180 $1,000 BetRivers -180.0 -180 @ BetRivers / +160 $598 Fanatics-NJ 160.0 +160 @ Fanatics-NJ
+[2026-11-07 08:06:31 ET] dh_team_total_middles.py: OK in 47s
+[2026-11-07 08:06:32 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 08:06:35 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-07 08:09:37 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 110688 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 08:10:09 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 7 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-07.json
