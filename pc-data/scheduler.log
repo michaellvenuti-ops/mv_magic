@@ -2990,3 +2990,14 @@
 [2026-11-07 16:34:42 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 | FanDuel | Over total 46.5 (median 47.5 -> 49.0)
 [2026-11-07 16:35:41 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (89 with odds), db total 123088 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 16:37:42 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE CLEAN : NCAAB St. Bonaventure Canisius Today 7:00 PM / table / Alt Total Under 149.5 / Alt Total Over 149 / table | BetRivers | Bet365 — window 211.
+[2026-11-07 16:44:06 ET] sync_to_github.py: OK in 294s —   ok: steam-side-board-pc.html
+[2026-11-07 16:44:06 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 82, sog-middles: 3178, wong
+[2026-11-07 16:45:04 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 220 events (89 with odds), db total 123308 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 16:48:08 ET] dh_sog_middles.py: OK in 94s — - NEW CLEAN W211  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +100 $950 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+[2026-11-07 16:49:33 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-07 16:49:34 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 16:49:37 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-07 16:50:36 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 220 events (89 with odds), db total 123528 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 16:50:38 ET] rlm.py: OK in 3s
+[2026-11-07 16:50:42 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 16:54:19 ET] dh_key_number_middles.py: OK in 188s — key-number-middles: no new strict-key middles.
