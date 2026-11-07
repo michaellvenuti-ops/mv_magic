@@ -1283,7 +1283,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "North Dakota",
-   "dog_team": "Illinois St"
+   "dog_team": "Illinois St",
+   "final": true
   },
   "401867872": {
    "sport": "CFB",
@@ -1334,7 +1335,8 @@
    "fav": "away",
    "spread": 15.5,
    "fav_team": "S Dakota St",
-   "dog_team": "Northern Iowa"
+   "dog_team": "Northern Iowa",
+   "final": true
   },
   "401868393": {
    "sport": "CFB",
@@ -1500,11 +1502,17 @@
    "sport": "CFB",
    "matchup": "West Georgia at C Arkansas",
    "date": "2026-11-07",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "C Arkansas",
-   "dog_team": "West Georgia"
+   "dog_team": "West Georgia",
+   "alerted_at": "2026-11-07T17:12:01",
+   "board_read_at": "2026-11-07T17:12:01",
+   "alert_expires_at": "2026-11-07T17:17:01",
+   "alert_detail": "11:18 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401869140": {
    "sport": "CFB",
@@ -2959,7 +2967,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Knicks",
    "dog_team": "Cavaliers"
   },
@@ -3128,7 +3136,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Montana St",
-   "dog_team": "Long Beach St"
+   "dog_team": "Long Beach St",
+   "final": true
   },
   "401922044": {
    "sport": "NCAAB",
@@ -3323,7 +3332,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "High Point",
-   "dog_team": "Washington St"
+   "dog_team": "Washington St",
+   "live_ml": -660
   },
   "401911007": {
    "sport": "NCAAB",
