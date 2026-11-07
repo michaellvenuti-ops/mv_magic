@@ -9,3 +9,5 @@ LEAD: FanDuel on Liberty @ New Mexico State | 2026-11-07 (spread)
 ## 2026-11-07T03:26:34-05:00 — 78 games, 0 leads credited, 10 started games skipped
 ## 2026-11-07T04:29:52-05:00 — 78 games, 0 leads credited, 10 started games skipped
 ## 2026-11-07T05:37:33-05:00 — 78 games, 0 leads credited, 10 started games skipped
+## 2026-11-07T06:44:01-05:00 — no-follow: DraftKings Maryland @ Purdue | 2026-11-07 spread (only 1 followed)
+## 2026-11-07T06:44:01-05:00 — 78 games, 0 leads credited, 10 started games skipped
