@@ -2369,7 +2369,7 @@
   "Fresno State @ Utah State | 2026-11-07": {
    "books": {
     "BetMGM": {
-     "spread": 1.5,
+     "spread": 1.0,
      "total": 43.5
     },
     "Caesars": {
@@ -3031,7 +3031,7 @@
      "total": 50.5
     },
     "Fanatics": {
-     "spread": -9.5,
+     "spread": -10.0,
      "total": 51.0
     },
     "Hard Rock": {
@@ -3204,7 +3204,7 @@
   "Jets @ Chiefs | 2026-11-07": {
    "books": {
     "BetMGM": {
-     "spread": -9.0,
+     "spread": -8.5,
      "total": 48.0
     },
     "Caesars": {
@@ -3212,7 +3212,7 @@
      "total": 48.0
     },
     "DraftKings": {
-     "spread": -9.5,
+     "spread": -8.5,
      "total": 48.5
     },
     "FanDuel": {
@@ -3236,7 +3236,16 @@
      "total": 47.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "DraftKings",
+     "direction": 1,
+     "market": "spread",
+     "new": -8.5,
+     "old": -9.5,
+     "ts": "2026-11-07T01:23:37-05:00"
+    }
+   ]
   },
   "Kentucky @ Tennessee | 2026-11-05": {
    "books": {
@@ -3430,7 +3439,7 @@
      "total": 46.5
     },
     "FanDuel": {
-     "spread": 16.5,
+     "spread": 15.5,
      "total": 46.5
     },
     "Fanatics": {
@@ -3450,7 +3459,16 @@
      "total": 46.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "FanDuel",
+     "direction": -1,
+     "market": "spread",
+     "new": 15.5,
+     "old": 16.5,
+     "ts": "2026-11-07T01:23:37-05:00"
+    }
+   ]
   },
   "Lions @ Dolphins | 2026-11-05": {
    "books": {
@@ -4081,7 +4099,7 @@
     },
     "Fanatics": {
      "spread": -5.5,
-     "total": 57.0
+     "total": 57.5
     },
     "Hard Rock": {
      "spread": -5.5,
@@ -4089,7 +4107,7 @@
     },
     "Kalshi": {
      "spread": -5.5,
-     "total": 56.5
+     "total": 57.5
     },
     "bet365": {
      "spread": -5.5,
@@ -4184,11 +4202,20 @@
      "total": 58.5
     },
     "bet365": {
-     "spread": -47.5,
+     "spread": -46.5,
      "total": 58.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "bet365",
+     "direction": 1,
+     "market": "spread",
+     "new": -46.5,
+     "old": -47.5,
+     "ts": "2026-11-07T01:23:37-05:00"
+    }
+   ]
   },
   "Miami (FL) @ Notre Dame | 2026-11-05": {
    "books": {
@@ -4390,8 +4417,8 @@
      "total": 39.5
     },
     "Fanatics": {
-     "spread": -13.5,
-     "total": 39.5
+     "spread": -14.5,
+     "total": 40.0
     },
     "Hard Rock": {
      "spread": -14.5,
@@ -4740,7 +4767,7 @@
      "total": 54.5
     },
     "Caesars": {
-     "spread": 8.0,
+     "spread": 7.5,
      "total": 54.5
     },
     "DraftKings": {
@@ -5892,7 +5919,7 @@
      "total": 64.5
     },
     "Kalshi": {
-     "spread": -14.5,
+     "spread": -16.5,
      "total": 64.5
     },
     "bet365": {
@@ -6563,7 +6590,7 @@
      "total": 40.5
     },
     "Hard Rock": {
-     "spread": 6.0,
+     "spread": 5.5,
      "total": 40.5
     },
     "Kalshi": {
@@ -6873,7 +6900,7 @@
     },
     "DraftKings": {
      "spread": -6.0,
-     "total": 70.5
+     "total": 71.5
     },
     "FanDuel": {
      "spread": -6.5,
@@ -7012,7 +7039,7 @@
   "Tulsa @ Tulane | 2026-11-07": {
    "books": {
     "BetMGM": {
-     "spread": 3.0,
+     "spread": 2.5,
      "total": 50.5
     },
     "Caesars": {
