@@ -2588,3 +2588,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 03:53:17 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 224 events (125 with odds), db total 103072 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 03:55:07 ET] dh_game_middles.py: OK in 110s — GAME MIDDLE: NCAAB North Carolina Central Longwood Today 3:00 PM / table / Spread Longwood -11.5 / Spread North Carolina Central +12.5 / table | FanDuel | Bally
 [2026-11-07 03:58:28 ET] dh_sog_middles.py: OK in 170s — - NEW CLEAN W223  (): -118 $1,000 BetRivers -118.0 -118 @ BetRivers / +105 $901 theScore 105.0 +105 @ theScore
+[2026-11-07 04:02:46 ET] sync_to_github.py: OK in 259s —   ok: steam-side-board-pc.html
+[2026-11-07 04:02:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 47, sog-middles: 506. Detai
+[2026-11-07 04:03:39 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 103296 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 04:05:16 ET] dh_team_total_middles.py: OK in 97s
+[2026-11-07 04:05:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 04:05:19 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-07 04:08:52 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (125 with odds), db total 103520 snapshots / 345 events, feeds ok 6 fail 0
