@@ -2833,3 +2833,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 10:24:53 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-07 10:24:56 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-07 10:25:57 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NCAAB Lamar Abilene Christian Today 2:00 PM / table / Total Under 166.5 / Alt Total Over 166 / table | Bally Bet | Bet365
+[2026-11-07 10:31:12 ET] sync_to_github.py: OK in 284s —   ok: steam-side-board-pc.html
+[2026-11-07 10:31:12 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 44, sog-middles: 1918. Deta
+[2026-11-07 10:32:09 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 224 events (126 with odds), db total 114720 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 10:37:12 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (126 with odds), db total 114944 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 10:39:00 ET] dh_kalshi_poly_arb.py: OK in 109s — KALSHI-POLY-ARB: NCAAB Northwestern St. Murray St. Today 8:00 PM / table bar_chart / Alt Spread Northwestern St. +30.5 / Alt Spread Murray St. -30.5 / table | P
+[2026-11-07 10:55:33 ET] dh_key_number_middles.py: FAILED (exit 1) in 962s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-07 10:55:47 ET] steam_side.py: OK in 14s — STEAM-SIDE FLAG: FBS Oklahoma @ Florida | 2026-11-07 | Fanatics | Oklahoma spread -6.5 (median -5.5 -> -4.5)
