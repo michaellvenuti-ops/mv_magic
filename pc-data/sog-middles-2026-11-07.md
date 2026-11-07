@@ -524,3 +524,19 @@
 - NEW W350  (): -186 $1,000 BetRivers -186.0 -186 @ BetRivers / +164 $582 FanDuel 164.0 +164 @ FanDuel
 - NEW W350  (): -186 $1,000 Bally Bet -186.0 -186 @ Bally Bet / +164 $582 FanDuel 164.0 +164 @ FanDuel
 - NEW W266  (): -141 $1,000 Bally Bet -141.0 -141 @ Bally Bet / +125 $760 Fanatics-NJ 125.0 +125 @ Fanatics-NJ
+## 2026-11-07T05:08:11-05:00 — sog-middles: 935 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW CLEAN W252  (): -122 $1,000 Bally Bet -122.0 -122 @ Bally Bet / +130 $791 Bet365 130.0 +130 @ Bet365
+- NEW CLEAN W215  (): -110 $1,000 FanDuel -110.0 -110 @ FanDuel / +105 $931 Bet365 105.0 +105 @ Bet365
+- NEW CLEAN W215  (): -110 $1,000 FanDuel -110.0 -110 @ FanDuel / +105 $931 Bet365 105.0 +105 @ Bet365
+- NEW CLEAN W205  (): -105 $1,000 HardRock -105.0 -105 @ HardRock / +100 $976 DraftKings 100.0 +100 @ DraftKings
+- NEW W299  (): -154 $1,000 FanDuel -154.0 -154 @ FanDuel / +145 $673 Fanatics-NJ 145.0 +145 @ Fanatics-NJ
+- NEW W277  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +132 $728 FanDuel 132.0 +132 @ FanDuel
+- NEW CLEAN W210  (): -110 $1,000 FanDuel -110.0 -110 @ FanDuel / +100 $955 Bet365 100.0 +100 @ Bet365
+- NEW CLEAN W210  (): -110 $1,000 FanDuel -110.0 -110 @ FanDuel / +100 $955 Bet365 100.0 +100 @ Bet365
+- NEW W316  (): -166 $1,000 FanDuel -166.0 -166 @ FanDuel / +150 $641 Fanatics-NJ 150.0 +150 @ Fanatics-NJ
+- NEW CLEAN W221  (): -116 $1,000 FanDuel -116.0 -116 @ FanDuel / +105 $908 Fanatics-NJ 105.0 +105 @ Fanatics-NJ
+- NEW W340  (): -180 $1,000 theScore -180.0 -180 @ theScore / +160 $598 Fanatics-NJ 160.0 +160 @ Fanatics-NJ
+- NEW W340  (): -180 $1,000 theScore -180.0 -180 @ theScore / +160 $598 Fanatics-NJ 160.0 +160 @ Fanatics-NJ
+- NEW CLEAN W265  (): -140 $1,000 theScore -140.0 -140 @ theScore / +125 $762 Fanatics-NJ 125.0 +125 @ Fanatics-NJ
+- NEW CLEAN W8  (): -110 $1,000 BetMGM -110.0 -110 @ BetMGM / -102 $964 FanDuel -102.0 -102 @ FanDuel
+- NEW W330  (): -175 $1,000 theScore -175.0 -175 @ theScore / +155 $616 Fanatics-NJ 155.0 +155 @ Fanatics-NJ
