@@ -47,3 +47,6 @@ NEW FLAG: FBS Rice @ North Texas | 2026-11-07 — Fanatics still dealing spread 
 NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — FanDuel still dealing spread 15.5 on New Mexico State (pre-move median 15.5, now 14.5)
 NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — Hard Rock still dealing spread 17.5 on New Mexico State (pre-move median 15.5, now 14.5)
 NEW FLAG: FBS Liberty @ New Mexico State | 2026-11-07 — Fanatics still dealing spread 15.5 on New Mexico State (pre-move median 15.5, now 14.5)
+## 2026-11-07T16:02:51-05:00 — 63 games, 4 steam events, 2 NEW flags, 34 started games skipped
+NEW FLAG: FBS Georgia State @ Appalachian State | 2026-11-07 — Kalshi still dealing spread -6.5 on Georgia State (pre-move median -5.5, now 5.5)
+NEW FLAG: FBS Georgia State @ Appalachian State | 2026-11-07 — Kalshi still dealing total 52.5 on Over (pre-move median 64.5, now 67.5)
