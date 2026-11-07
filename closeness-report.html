@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Close to the Number — What's Working, What's Not, and Why</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #0f1420; color: #e8ecf3; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 24px 18px 48px; }
+  h1 { font-size: 26px; margin: 8px 0 4px; }
+  .sub { color: #9fb0c9; font-size: 14px; margin-bottom: 22px; }
+  h2 { font-size: 19px; margin: 28px 0 10px; }
+  .card { background: #182134; border: 1px solid #263350; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
+  .card h3 { margin: 0 0 6px; font-size: 16px; }
+  .good h3 { color: #4ade80; }
+  .bad h3 { color: #f87171; }
+  .mid h3 { color: #fbbf24; }
+  .card p { margin: 4px 0; font-size: 14px; line-height: 1.5; color: #c9d4e6; }
+  .stat { font-weight: 700; color: #fff; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; background: #182134; border-radius: 10px; overflow: hidden; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #263350; }
+  th { background: #1f2c47; color: #cfe0ff; }
+  td.num, th.num { text-align: right; }
+  .foot { color: #7d8db0; font-size: 12.5px; margin-top: 26px; line-height: 1.5; }
+  a { color: #7db4ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Close to the Number — What's Working, What's Not, and Why</h1>
+  <div class="sub">Season-to-date closeness stats from the Football Closing Lines workbook, through Nov 4, 2026 (props through Nov 1). Every morning's 6:44 AM run refreshes the Combined Summary tab in the workbook; this page is the plain-English read of what those numbers mean.</div>
+
+  <h2>✅ What's working</h2>
+
+  <div class="card good">
+    <h3>NHL 1-goal tracking — the sharpest signal on the board</h3>
+    <p>Favorites have won by <span class="stat">exactly 1 goal in 25.5% of games (42 of 165)</span> — better than one game in four. No other sport comes close to landing on a single number that often.</p>
+    <p><b>Why it works:</b> hockey is low-scoring and the puck line is almost always −1.5, so a one-goal favorite win is a routine outcome, not a fluke. That's also why the 5-goal window is useless here — <span class="stat">92.7% of puck lines and 97.0% of totals land within 5</span>, which says nothing. The brief headlines NHL at within-1-goal for exactly this reason. Average distances are tiny (2.12 on the spread, 1.81 on the total): the books price hockey tight, and the 1-goal split is where the information lives.</p>
+  </div>
+
+  <div class="card good">
+    <h3>NFL rushing props — the most predictable prop market</h3>
+    <p><span class="stat">18.4% of rushing lines land within 5 yards</span> (88 of 479 players), with the smallest average miss of any prop type at <span class="stat">20.8 yards</span>.</p>
+    <p><b>Why it works:</b> rushing volume is the most stable thing in football — a lead back's carries are scripted by the game plan and hold up week to week, so the closing number sits closer to the outcome than passing or receiving lines do.</p>
+  </div>
+
+  <div class="card good">
+    <h3>MLB run lines — tight, when there's a season</h3>
+    <p>Average miss of just <span class="stat">2.56 runs</span> on the run line and 2.57 on totals across the tracked games, with the favorite winning by exactly 1 in 12.5% of them.</p>
+    <p><b>Why it works:</b> baseball scoring is low-variance per game and the run line is a fixed −1.5, so results cluster near the number. Caveat: the tracked sample is small (16 games) and the season ended Oct 28 — this section wakes back up in the spring.</p>
+  </div>
+
+  <h2>⚠️ Mixed</h2>
+
+  <div class="card mid">
+    <h3>Football spreads — the honest middle</h3>
+    <p><span class="stat">29.6% of spreads land within 5 points</span> (207 of 699 games), average miss 10.75 points. Totals run a little worse: 26.2% within 5, average miss 11.80.</p>
+    <p><b>Why:</b> the closing spread is an efficient market price — most games aren't close to it, and the ones that are cluster around the key numbers (3 and 7). Totals miss wider because scoring variance compounds across both teams: one shootout quarter blows up a number a spread can survive.</p>
+  </div>
+
+  <div class="card mid">
+    <h3>NFL receiving props — better than passing, still swingy</h3>
+    <p><span class="stat">15.9% land within 5 yards</span> (176 of 1,107 players), average miss 22.9 yards.</p>
+    <p><b>Why:</b> target share is game-plan and coverage dependent — a receiver can be schemed away for a week — but the sheer number of tracked receivers means the misses average out more than the QB market's do.</p>
+  </div>
+
+  <h2>❌ What's not working</h2>
+
+  <div class="card bad">
+    <h3>NFL passing props — the least predictable number tracked</h3>
+    <p>Only <span class="stat">6.8% of QB passing lines land within 5 yards</span> (16 of 237), and the average miss is a huge <span class="stat">57.7 yards</span> — nearly three times the rushing miss.</p>
+    <p><b>Why it doesn't work:</b> passing yardage is the most game-script-sensitive stat in the sport. Blowouts bench starters early, trailing teams throw 50 times, one 60-yard bomb moves a total by itself, and a mid-game QB change zeroes the line out entirely. The closing number is a guess about the whole shape of the game, not just the player — so it lands far from the result far more often.</p>
+  </div>
+
+  <div class="card bad">
+    <h3>"Favorite by exactly 1" in football — a unicorn</h3>
+    <p>It's happened <span class="stat">16 times in 699 games (2.3%)</span>.</p>
+    <p><b>Why it doesn't work:</b> football scoring comes in 3s and 7s, so final margins land on key numbers and skip 1 almost entirely — the mirror image of hockey, where 1 is the single most common favorite margin. Any angle built on football games landing on exactly 1 is fighting the scoring system itself.</p>
+  </div>
+
+  <h2>📊 Latest day per section (from the Combined Summary tab)</h2>
+  <table>
+    <tr><th>Section</th><th>Stats date</th><th class="num">Games / Players</th><th class="num">Within 5 — spread/line</th><th class="num">Within 5 — total</th><th class="num">Fav by exactly 1</th><th class="num">Avg dist (spread/line)</th><th class="num">Avg dist (total)</th></tr>
+    <tr><td>Football (NFL + FBS)</td><td>2026-11-04</td><td class="num">3</td><td class="num">1 (33.3%)</td><td class="num">1 (33.3%)</td><td class="num">1</td><td class="num">16.5</td><td class="num">10.2</td></tr>
+    <tr><td>MLB</td><td>2026-10-28</td><td class="num">1</td><td class="num">1 (100%)</td><td class="num">1 (100%)</td><td class="num">0</td><td class="num">1.5</td><td class="num">1.0</td></tr>
+    <tr><td>NHL</td><td>2026-11-04</td><td class="num">4</td><td class="num">4 (100%)</td><td class="num">4 (100%)</td><td class="num">1</td><td class="num">1.8</td><td class="num">3.0</td></tr>
+    <tr><td>NFL Passing Props</td><td>2026-11-01</td><td class="num">21</td><td class="num">1 (4.8%)</td><td class="num">—</td><td class="num">not tracked</td><td class="num">81.6</td><td class="num">—</td></tr>
+    <tr><td>NFL Rushing Props</td><td>2026-11-01</td><td class="num">48</td><td class="num">13 (27.1%)</td><td class="num">—</td><td class="num">not tracked</td><td class="num">23.2</td><td class="num">—</td></tr>
+    <tr><td>NFL Receiving Props</td><td>2026-11-01</td><td class="num">106</td><td class="num">17 (16.0%)</td><td class="num">—</td><td class="num">not tracked</td><td class="num">23.3</td><td class="num">—</td></tr>
+  </table>
+
+  <div class="foot">
+    Source: Football Closing Lines workbook — Stats, Stats-MLB, Stats-NHL, Stats-NFL-PASS, Stats-NFL-RUSH, Stats-NFL-RECV tabs (season totals computed across every dated row, 54 football days / 699 games, 23 NHL days / 165 games, 24 NFL prop days). The workbook's Combined Summary tab refreshes with each morning's closing-lines run. Page built Nov 7, 2026.
+  </div>
+</div>
+</body>
+</html>
