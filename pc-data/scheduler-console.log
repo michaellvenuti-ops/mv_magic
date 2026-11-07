@@ -2463,3 +2463,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 00:23:23 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 224 events (125 with odds), db total 96800 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 00:24:29 ET] dh_low_holds.py: OK in 65s — LOW-HOLDS: NBA SA Spurs POR Trail Blazers Today 10:15 PM / table / Moneyline SA Spurs / Moneyline POR Trail Blazers / table | Bally Bet | Bet365
 [2026-11-07 00:26:56 ET] dh_sog_middles.py: OK in 117s — - NEW CLEAN W210  (): -110 $1,000 Fanatics-NJ -110.0 -110 @ Fanatics-NJ / +100 [49.99%] $964.03 ProphetX 100.0 +100 @ ProphetX
+[2026-11-07 00:31:08 ET] sync_to_github.py: OK in 253s —   ok: steam-side-board-pc.html
+[2026-11-07 00:31:09 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 68, sog-middles: 224. Detai
+[2026-11-07 00:32:01 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (125 with odds), db total 97024 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 00:34:34 ET] dh_game_middles.py: OK in 153s — GAME MIDDLE: NCAAB CSU Fullerton South Dakota Today 2:00 PM / table / Alt Total Under 176.5 / Alt Total Over 175.5 / table | DraftKings | Bet365 — window 295.0 
+[2026-11-07 00:36:52 ET] dh_team_total_middles.py: OK in 48s
+[2026-11-07 00:36:54 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 00:37:45 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (125 with odds), db total 97248 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 00:37:48 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
