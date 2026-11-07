@@ -57,3 +57,5 @@ LEAD: bet365 on Fresno State @ Utah State | 2026-11-06 (spread)
 ## 2026-11-06T20:04:25-05:00 — no-follow: FanDuel Florida State @ Boston College | 2026-11-06 spread (only 0 followed)
 ## 2026-11-06T20:04:25-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-06 spread (Fanatics, Kalshi)
 ## 2026-11-06T20:04:25-05:00 — 78 games, 0 leads credited, 8 started games skipped
+## 2026-11-06T21:06:03-05:00 — no-follow: bet365 Merrimack @ Wake Forest | 2026-11-06 spread (only 1 followed)
+## 2026-11-06T21:06:03-05:00 — 78 games, 0 leads credited, 9 started games skipped
