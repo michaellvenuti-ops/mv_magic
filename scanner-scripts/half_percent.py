@@ -19,6 +19,21 @@ the ACTUAL 9:30 AM ET open (first 5-min bar open), with target /
 stop rebased to +0.5% / -0.5% off that open; if the open prints
 below the pick's plan stop (premarket entry x 0.995), the day
 grades NO TRADE — excluded from the record, no modeled P/L.
+V3 AMENDMENTS (2026-11-06 night, Michael's tap on the options
+card — "Add re-check + open confirmation"): two anti-head-fake
+layers. (1) A 9:28 AM ET PRE-BELL RE-CHECK (scheduler daily
+09:28 entry running this script with --recheck): today's pick
+is re-priced off Nasdaq quote info; if the gap has left the
++3% to +12% band or the price is below the plan stop, the pick
+is CANCELLED before the bell (a cancel note is banked for
+delivery; it grades NO TRADE next morning with the reason
+recorded). An unreadable or stale quote NEVER cancels — the
+pick stands, marked unverified, and nothing is delivered.
+(2) OPEN CONFIRMATION inside grading: after the v2 open
+anchor, the first two 5-min bars (09:30 + 09:35) must both
+CLOSE at or above the rebased stop; if either closes below
+it, the day grades NO TRADE ("open confirmation failed") —
+the trade only counts when the open actually holds.
 - Weekdays only, ~09:00 ET (scheduler "daily" entry; the script
   itself no-ops Sat/Sun). If the market is closed / there is no fresh
   premarket data, write a NO PICK note and stop.
@@ -59,7 +74,11 @@ grades NO TRADE — excluded from the record, no modeled P/L.
   move). If one 5-min bar touches BOTH target and stop, it grades
   LOSS (stop assumed first — conservative) and says so. No bars =
   left ungraded and retried; after 5 tries it is recorded NO DATA
-  and excluded from the W-L record. Granularity is 5-min bars;
+  and excluded from the W-L record. V3: a pick cancelled at the
+  9:28 AM re-check also grades NO TRADE (cancel reason recorded),
+  and a trade is confirmed only when the first two 5-min bars
+  close at/above the rebased stop — otherwise NO TRADE (open
+  confirmation failed). Granularity is 5-min bars;
   fills are modeled, never claimed as real.
 
 Writes data/half-percent-<date>.md (the delivery watcher wakes on
@@ -228,6 +247,9 @@ def grade_pick(date_str, pick):
     prints BELOW the pick's plan stop (the premarket plan's
     entry x 0.995), the day grades NO TRADE: excluded from the
     W-L record, no modeled P/L.
+    V3 (2026-11-06): OPEN CONFIRMATION — the first two 5-min
+    bars must both close at/above the rebased stop, else the
+    day also grades NO TRADE ("open confirmation failed").
     """
     date_et = dt.date.fromisoformat(date_str)
     bars = fetch_bars_5m(pick["ticker"], date_et)
@@ -240,6 +262,7 @@ def grade_pick(date_str, pick):
     if open_price < plan_stop:
         return {"outcome": "NO TRADE", "pl": 0.0,
                 "open": open_price, "plan_stop": plan_stop,
+                "reason": "open_below_stop",
                 "note": "9:30 AM open printed below the plan stop "
                         "- v2 no-trade rule (excluded from the "
                         "record, no modeled position)"}
@@ -247,6 +270,22 @@ def grade_pick(date_str, pick):
     target = round(entry * (1 + TARGET_PCT), 2)
     stop = round(entry * (1 - STOP_PCT), 2)
     anchor = {"entry": entry, "target": target, "stop": stop}
+    # V3 layer 2 — OPEN CONFIRMATION: the first two 5-min bars
+    # (09:30 + 09:35) must both CLOSE at or above the rebased
+    # stop. A target-touching bar closes high by construction,
+    # so a close below the stop is the head-fake failure
+    # signal; the trade never counted -> NO TRADE, excluded.
+    for when, _o, _h, _l, close in window[:2]:
+        if close < stop:
+            return {"outcome": "NO TRADE", "pl": 0.0,
+                    "open": open_price, "plan_stop": plan_stop,
+                    "reason": "open_confirmation",
+                    "confirm_bar": when.strftime("%H:%M ET"),
+                    "confirm_close": close,
+                    "note": "open confirmation failed - a "
+                            "first-minutes bar closed below the "
+                            "rebased stop (v3 layer 2)",
+                    **anchor}
     for when, _o, hi, lo, _c in window:
         hit_t, hit_s = hi >= target, lo <= stop
         if hit_t and hit_s:
@@ -308,6 +347,24 @@ def grade_pending(state, today_str_):
         pick = entry_rec.get("pick")
         if not pick or entry_rec.get("grade"):
             continue
+        if pick.get("status") == "cancelled":
+            # V3 layer 1: cancelled at the 9:28 AM re-check —
+            # grades NO TRADE regardless of what the bars did.
+            rc = pick.get("recheck") or {}
+            entry_rec["grade"] = {
+                "outcome": "NO TRADE", "pl": 0.0,
+                "reason": "cancelled_recheck",
+                "note": "cancelled at the 9:28 AM re-check "
+                        "(v3 layer 1)"}
+            rec["no_trades"] = rec.get("no_trades", 0) + 1
+            graded += 1
+            lines.append(
+                f"- GRADED {date_str} {pick['ticker']}: NO TRADE "
+                f"— pick CANCELLED at the 9:28 AM re-check "
+                f"({rc.get('reason', 're-check failed')}). V3 "
+                f"rule: no modeled position — excluded from the "
+                f"record, no modeled P/L.")
+            continue
         grade = grade_pick(date_str, pick)
         if grade is None:
             entry_rec["grade_attempts"] = \
@@ -329,14 +386,28 @@ def grade_pending(state, today_str_):
         graded += 1
         if grade["outcome"] == "NO TRADE":
             rec["no_trades"] = rec.get("no_trades", 0) + 1
-            lines.append(
-                f"- GRADED {date_str} {pick['ticker']}: NO TRADE "
-                f"— the 9:30 AM open {money(grade['open'])} "
-                f"printed below the plan stop "
-                f"{money(grade['plan_stop'])} (premarket plan "
-                f"entry {money(pick['entry'])}). V2 rule: no "
-                f"modeled position — excluded from the record, "
-                f"no modeled P/L.")
+            if grade.get("reason") == "open_confirmation":
+                lines.append(
+                    f"- GRADED {date_str} {pick['ticker']}: NO "
+                    f"TRADE — the 9:30 AM open "
+                    f"{money(grade['open'])} cleared the plan "
+                    f"stop, but the {grade.get('confirm_bar', '')} "
+                    f"bar closed "
+                    f"{money(grade.get('confirm_close', 0))}, below "
+                    f"the rebased stop "
+                    f"{money(grade.get('stop', pick['stop']))} — "
+                    f"open confirmation failed (v3 layer 2). No "
+                    f"modeled position — excluded from the "
+                    f"record, no modeled P/L.")
+            else:
+                lines.append(
+                    f"- GRADED {date_str} {pick['ticker']}: NO TRADE "
+                    f"— the 9:30 AM open {money(grade['open'])} "
+                    f"printed below the plan stop "
+                    f"{money(grade['plan_stop'])} (premarket plan "
+                    f"entry {money(pick['entry'])}). V2 rule: no "
+                    f"modeled position — excluded from the record, "
+                    f"no modeled P/L.")
             continue
         if grade["outcome"] == "WIN":
             rec["wins"] += 1
@@ -465,7 +536,102 @@ def evaluate(cand, today):
     return True, fresh, detail, ""
 
 
+def recheck():
+    """V3 layer 1 — 9:28 AM ET pre-bell re-check of today's pick.
+
+    Re-prices today's stored pick off Nasdaq quote info (the same
+    source the 09:00 scan uses) and reads the gap vs prior close.
+    CANCELS the pick before the bell if the gap is outside the
+    +3%..+12% band or the price is below the plan stop; the
+    cancel is banked as a delivery note and the pick grades NO
+    TRADE next morning. An unreadable or stale quote NEVER
+    cancels — the pick stands, marked unverified, nothing
+    delivered. A pass is recorded and stays silent. No pick
+    stored -> exit silently.
+    """
+    now = dt.datetime.now(ET)
+    today = now.date()
+    today_str_ = today.isoformat()
+    if today.weekday() >= 5:
+        print("half-percent recheck: weekend — no run.")
+        return 0
+    state = load_state(SCAN)
+    entry_rec = state.get("entries", {}).get(today_str_)
+    if not entry_rec or entry_rec.get("kind") != "pick":
+        print(f"half-percent recheck: no pick stored for "
+              f"{today_str_} — nothing to re-check.")
+        return 0
+    pick = entry_rec.get("pick") or {}
+    if pick.get("recheck"):
+        print("half-percent recheck: already re-checked today "
+              "— no-op.")
+        return 0
+    checked_at = now.isoformat(timespec="seconds")
+    info = fetch_info(pick["ticker"])
+    price = pct = None
+    fresh = False
+    if info:
+        pdata = info["primaryData"]
+        price = parse_money(pdata.get("lastSalePrice"))
+        pct = parse_pct(pdata.get("percentageChange"))
+        stamp = pdata.get("lastTradeTimestamp") or ""
+        fresh = fresh_stamp(today) in stamp
+    if price is None or pct is None or not fresh:
+        pick["recheck"] = {
+            "checked_at": checked_at, "result": "unverified",
+            "reason": "quote unreadable or stale at the 9:28 AM "
+                      "re-check — pick stands"}
+        save_state(SCAN, state)
+        print("half-percent recheck: quote unverified — pick "
+              "stands, no delivery.")
+        return 0
+    reason = None
+    if pct < MIN_MOVE_PCT or pct > MAX_MOVE_PCT:
+        reason = (f"gap {pct:+.2f}% is outside the +3%..+12% "
+                  f"band at 9:28 AM")
+    elif price < pick["stop"]:
+        reason = (f"price {money(price)} is below the plan stop "
+                  f"{money(pick['stop'])} at 9:28 AM")
+    if reason is None:
+        pick["recheck"] = {"checked_at": checked_at,
+                           "price": price, "gap_pct": pct,
+                           "result": "pass"}
+        save_state(SCAN, state)
+        print(f"half-percent recheck: PASS — {pick['ticker']} "
+              f"{money(price)} ({pct:+.2f}%) at 9:28 AM; pick "
+              f"stands, silent.")
+        return 0
+    pick["recheck"] = {"checked_at": checked_at, "price": price,
+                       "gap_pct": pct, "result": "fail",
+                       "reason": reason}
+    pick["status"] = "cancelled"
+    save_state(SCAN, state)
+    lines = [
+        f"## {now_stamp()} — Half Percent Club: 1 candidate "
+        f"CANCELLED at the 9:28 AM re-check",
+        f"- PICK CANCELLED: {pick['ticker']} "
+        f"({pick['company']}) — do NOT trade it today. Stand "
+        f"down before the bell.",
+        f"- Re-check at 9:28 AM ET (Nasdaq quote info): "
+        f"{money(price)} ({pct:+.2f}% vs prior close). Fail "
+        f"reason: {reason}.",
+        f"- This morning's plan was entry {money(pick['entry'])}, "
+        f"target {money(pick['target'])}, stop "
+        f"{money(pick['stop'])}. The v3 pre-bell re-check killed "
+        f"it — head-fake protection working as designed.",
+        "- The cancelled pick grades NO TRADE tomorrow morning "
+        "(excluded from the record, no modeled P/L).",
+        f"- {record_line(state.setdefault('meta', {}))}",
+    ]
+    bank(SCAN, lines, date=today_str_)
+    print(f"half-percent recheck: FAIL — {pick['ticker']} "
+          f"cancelled ({reason}); delivery banked.")
+    return 0
+
+
 def main():
+    if "--recheck" in sys.argv[1:]:
+        return recheck()
     now = dt.datetime.now(ET)
     today = now.date()
     today_str_ = today.isoformat()
@@ -582,9 +748,16 @@ def main():
     lines += [
         f"- ENTRY PLAN: enter at the open / first minutes inside "
         f"{money(zone_lo)}-{money(zone_hi)} (reference {money(ref)}). "
-        f"Modeled grading (v2): the actual 9:30 AM open is the "
+        f"Modeled grading (v3): the actual 9:30 AM open is the "
         f"entry, with target/stop rebased +0.5%/-0.5% off that "
         f"open.",
+        f"- V3 HEAD-FAKE CHECKS: at 9:28 AM ET the pick is "
+        f"re-checked — if the gap has left the +3%..+12% band or "
+        f"the price is under the plan stop, the pick is "
+        f"CANCELLED before the bell (a cancel note lands here). "
+        f"And the trade only counts if the first two 5-min bars "
+        f"close at/above the rebased stop (open confirmation); "
+        f"otherwise it grades NO TRADE.",
         f"- PLAN TARGET {money(target)} (+0.5% off reference) — "
         f"PLAN STOP {money(stop)} (-0.5%) — TIME STOP: out by "
         f"10:00 AM ET if neither hits. If the 9:30 AM open prints "
