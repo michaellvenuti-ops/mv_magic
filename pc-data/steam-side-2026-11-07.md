@@ -75,3 +75,5 @@ NEW FLAG: FBS Western Kentucky @ Middle Tennessee | 2026-11-07 — BetMGM still 
 NEW FLAG: FBS Northern Illinois @ San Jose State | 2026-11-07 — Caesars still dealing spread -7.5 on San Jose State (pre-move median -9.5, now -10.5)
 NEW FLAG: FBS Northern Illinois @ San Jose State | 2026-11-07 — FanDuel still dealing spread -7.5 on San Jose State (pre-move median -9.5, now -10.5)
 NEW FLAG: FBS Missouri State @ Florida International | 2026-11-07 — Kalshi still dealing spread -2.5 on Florida International (pre-move median -3.5, now -4.5)
+## 2026-11-07T18:49:18-05:00 — 63 games, 3 steam events, 1 NEW flags, 40 started games skipped
+NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Kalshi still dealing total 54.5 on Over (pre-move median 56.5, now 62.5)
