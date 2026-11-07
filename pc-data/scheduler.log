@@ -2317,3 +2317,12 @@
 [2026-11-06 21:26:00 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
 [2026-11-06 21:26:43 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 224 events (134 with odds), db total 91648 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 21:29:55 ET] dh_sog_middles.py: OK in 193s — - NEW CLEAN W254  (): -134 $1,000 Bally Bet -134.0 -134 @ Bally Bet / +120 $794 Fanatics-NJ 120.0 +120 @ Fanatics-NJ
+[2026-11-06 21:34:12 ET] sync_to_github.py: OK in 256s —   ok: steam-side-board-pc.html
+[2026-11-06 21:34:12 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 50, nfl-f
+[2026-11-06 21:35:07 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 224 events (131 with odds), db total 91872 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 21:38:34 ET] dh_game_middles.py: FAILED (exit 1) in 206s —   - <launched> pid=8808
+[2026-11-06 21:40:45 ET] dh_team_total_middles.py: OK in 131s
+[2026-11-06 21:40:47 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-06 21:40:57 ET] nba_overs_pregame.py: OK in 10s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-06 21:41:55 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 224 events (131 with odds), db total 92096 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 21:50:48 ET] dh_key_number_middles.py: OK in 413s — key-number-middles: no new strict-key middles.
