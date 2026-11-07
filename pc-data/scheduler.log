@@ -2940,3 +2940,5 @@
 [2026-11-07 15:06:05 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-07 15:07:04 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (117 with odds), db total 120668 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 15:12:07 ET] dh_key_number_middles.py: OK in 302s — key-number-middles: no new strict-key middles.
+[2026-11-07 15:17:14 ET] sync_to_github.py: FAILED (exit 1) in 307s —   FAILED: pc-data/totals-2026-11-06.md (HTTP 409: {'error': '{"message":"is at affadb9f505218f9fd5e8549673321b8f2755b10 but expected cfc52c2eb5088ac6e8acf32a4be
+[2026-11-07 15:18:25 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 220 events (117 with odds), db total 120888 snapshots / 425 events, feeds ok 6 fail 0
