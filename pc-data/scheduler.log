@@ -2950,3 +2950,14 @@
 [2026-11-07 15:30:59 ET] hung_number.py: OK in 140s — HUNG NUMBER: Florida State vs Boston College — Fanatics moneyline Florida State value Florida State (53.5 vs median 68.8)
 [2026-11-07 15:31:08 ET] steam_side.py: OK in 9s — STEAM-SIDE FLAG: FBS Liberty @ New Mexico State | 2026-11-07 | Fanatics | New Mexico State spread 15.5 (median 15.5 -> 14.5)
 [2026-11-07 15:34:51 ET] dh_prop_middles.py: OK in 223s — PROP MIDDLE CLEAN : NCAAF West Virginia 13 Texas Tech Today 9:30 PM / table / Alt Spread West Virginia +18 / Alt Spread Texas Tech -17.5 / table | BetRivers | F
+[2026-11-07 15:39:36 ET] sync_to_github.py: OK in 284s —   ok: steam-side-board-pc.html
+[2026-11-07 15:39:36 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 84, sog-middles: 3069, wong
+[2026-11-07 15:40:34 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 220 events (109 with odds), db total 121328 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:42:25 ET] dh_sog_middles.py: OK in 111s — - NEW CLEAN W211  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +100 $950 FanDuel 100.0 +100 @ FanDuel
+[2026-11-07 15:43:21 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-07 15:43:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 15:43:25 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-07 15:47:32 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: no new strict-key middles.
+[2026-11-07 15:48:33 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (105 with odds), db total 121548 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 15:49:16 ET] rlm.py: OK in 13s
+[2026-11-07 15:49:20 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
