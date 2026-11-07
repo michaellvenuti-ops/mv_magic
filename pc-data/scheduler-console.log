@@ -2559,3 +2559,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 03:06:20 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (125 with odds), db total 101728 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-07 03:12:47 ET] dh_key_number_middles.py: OK in 207s — key-number-middles: no new strict-key middles.
 [2026-11-07 03:12:52 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
+[2026-11-07 03:17:14 ET] sync_to_github.py: OK in 261s —   ok: steam-side-board-pc.html
+[2026-11-07 03:17:14 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 49, sog-middles: 430. Detai
+[2026-11-07 03:18:07 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 101952 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 03:18:38 ET] dh_arbitrage.py: OK in 31s — ARBITRAGE: NCAAF Wyoming UNLV Today 10:30 PM / table bar_chart / Alt Total Under 50.5 / Alt Total Over 50.5 / table | Polymarket US | Bally Bet
+[2026-11-07 03:20:03 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE : NFL LA Rams WAS Commanders Nov-08 1:00 PM / table / Alt Spread WAS Commanders +9.5 / Alt Spread LA Rams -9 / table | Bet365 | Bally Bet — window 3
+[2026-11-07 03:21:02 ET] dh_kalshi_poly_arb.py: OK in 29s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-07 03:22:22 ET] dh_game_middles.py: OK in 80s — GAME MIDDLE: NCAAB North Carolina Central Longwood Today 3:00 PM / table / Spread Longwood -11.5 / Spread North Carolina Central +12.5 / table | Caesars | Bally
+[2026-11-07 03:24:24 ET] dh_sog_middles.py: OK in 92s — - NEW W372  (): -196 $1,000 Bet365 -196.0 -196 @ Bet365 / +176 [36.23%] $554.17 ProphetX 176.0 +176 @ ProphetX
+[2026-11-07 03:25:17 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (125 with odds), db total 102176 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-07 03:26:27 ET] hung_number.py: OK in 69s — No new hung numbers (47 current flags).
+[2026-11-07 03:26:31 ET] rlm.py: OK in 4s
+[2026-11-07 03:26:34 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 03:27:29 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-07 03:27:30 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 03:27:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
