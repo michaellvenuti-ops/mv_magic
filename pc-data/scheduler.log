@@ -2330,3 +2330,14 @@
 [2026-11-06 21:55:48 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 224 events (131 with odds), db total 92320 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 21:59:35 ET] dh_arbitrage.py: OK in 227s — ARBITRAGE: NBA POR Trail Blazers LA Lakers Today 10:15 PM / table / Alt Total Under 238.5 / Alt Total Over 238.5 / table bar_chart | BetParx | Polymarket US
 [2026-11-06 21:59:42 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
+[2026-11-06 22:03:41 ET] sync_to_github.py: OK in 240s —   ok: steam-side-board-pc.html
+[2026-11-06 22:03:42 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 50, nfl-f
+[2026-11-06 22:04:33 ET] odds_recorder.py: OK in 21s — SUMMARY: recorded 224 events (129 with odds), db total 92544 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:06:06 ET] dh_kalshi_poly_arb.py: OK in 93s — KALSHI-POLY-ARB: NFL DET Lions MIA Dolphins Nov-08 1:00 PM / table / Receiving Yards O. Gordon Under 9.5 / Receiving Yards O. Gordon Over 9.5 YES / table bar_ch
+[2026-11-06 22:07:49 ET] dh_prop_middles.py: OK in 102s — PROP MIDDLE CLEAN : NCAAF 20 Boise St. Colorado St. Nov-07 6:00 PM / table / Alt Spread Colorado St. +19.5 / Alt Spread Boise St. -18.5 / table | Bally Bet | th
+[2026-11-06 22:09:33 ET] dh_sog_middles.py: OK in 104s — - NEW W296  (): -156 $1,000 FanDuel -156.0 -156 @ FanDuel / +140 $684 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
+[2026-11-06 22:10:24 ET] odds_recorder.py: OK in 22s — SUMMARY: recorded 224 events (129 with odds), db total 92768 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 22:12:28 ET] dh_game_middles.py: OK in 124s — GAME MIDDLE: NCAAF TCU 24 Arizona Today 10:15 PM / table / Alt Spread TCU +8 / Alt Spread Arizona -7.5 / table bar_chart | Bally Bet | Polymarket US — window 27
+[2026-11-06 22:14:00 ET] hung_number.py: OK in 91s — HUNG NUMBER: New Mexico vs Nevada — FanDuel total value Over (41.5 vs median 38.5)
+[2026-11-06 22:14:05 ET] rlm.py: OK in 5s
+[2026-11-06 22:14:09 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 1 new leads, no book at 3 yet).
