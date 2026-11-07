@@ -2275,3 +2275,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-06 18:39:03 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 224 events (192 with odds), db total 88960 snapshots / 345 events, feeds ok 6 fail 0
 [2026-11-06 18:40:45 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 42s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
 [2026-11-06 18:41:19 ET] upset_watch.py: OK in 4s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 18:44:46 ET] sync_to_github.py: OK in 178s —   ok: hung-number-board-pc.html
+[2026-11-06 18:44:47 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 11, hung-number: 45, sog-m
+[2026-11-06 18:45:18 ET] upset_watch.py: OK in 2s — SUMMARY: 221 games checked, 0 new trigger(s)
+[2026-11-06 18:45:33 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-06 18:45:46 ET] odds_recorder.py: OK in 13s — SUMMARY: recorded 224 events (192 with odds), db total 89408 snapshots / 345 events, feeds ok 6 fail 0
+[2026-11-06 18:47:04 ET] dh_low_holds.py: OK in 78s — LOW-HOLDS: UEFA Champions RC Lens RB Leipzig Nov-24 3:00 PM / table / Draw No Bet RB Leipzig / Draw No Bet RC Lens / table | FanDuel | Bet365
+[2026-11-06 18:48:32 ET] dh_game_middles.py: FAILED (exit 3221225786) in 88s
