@@ -3027,3 +3027,11 @@
 [2026-11-07 17:36:14 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 220 events (72 with odds), db total 124848 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 17:37:34 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NFL GB Packers NE Patriots Nov-08 4:25 PM / table / 1st Half Spread GB Packers +2.5 / 1st Half Spread NE Patriots -1.5 / table | DraftKings | FanDu
 [2026-11-07 17:38:09 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Western Kentucky @ Middle Tennessee | 2026-11-07 | Kalshi | Over total 52.5 (median 55.5 -> 68.5)
+[2026-11-07 17:43:06 ET] sync_to_github.py: OK in 296s —   ok: steam-side-board-pc.html
+[2026-11-07 17:43:06 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 111, sog-middles: 3306, won
+[2026-11-07 17:43:45 ET] odds_recorder.py: OK in 9s — SUMMARY: recorded 220 events (72 with odds), db total 125068 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 17:45:08 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE CLEAN : NFL DAL Cowboys IND Colts Nov-08 1:00 PM / table / Alt Spread IND Colts +5 / Spread DAL Cowboys -4.5 / table bar_chart | Bally Bet | Prophet
+[2026-11-07 17:49:11 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (72 with odds), db total 125288 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 17:50:44 ET] rlm.py: OK in 3s
+[2026-11-07 17:50:47 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 17:53:55 ET] dh_sog_middles.py: OK in 98s — - NEW CLEAN W218  (): -114 $1,000 Bally Bet -114.0 -114 @ Bally Bet / +104 [49.02%] $929.67 ProphetX 104.0 +104 @ ProphetX
