@@ -44,3 +44,7 @@ LEAD: bet365 on Clemson @ Syracuse | 2026-11-07 (spread)
 ## 2026-11-07T12:20:51-05:00 — no-follow: FanDuel Michigan State @ Michigan | 2026-11-07 spread (only 0 followed)
 ## 2026-11-07T12:20:51-05:00 — 78 games, 1 leads credited, 18 started games skipped
 LEAD: Kalshi on Oklahoma State @ Kansas State | 2026-11-07 (spread)
+## 2026-11-07T13:29:23-05:00 — no-follow: FanDuel Rutgers @ Wisconsin | 2026-11-07 spread (only 1 followed)
+## 2026-11-07T13:29:23-05:00 — pack move, never credited: Boise State @ Colorado State | 2026-11-07 spread (BetMGM, Caesars)
+## 2026-11-07T13:29:23-05:00 — 78 games, 1 leads credited, 23 started games skipped
+LEAD: bet365 on Rice @ North Texas | 2026-11-07 (spread)
