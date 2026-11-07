@@ -56,3 +56,12 @@ NEW FLAG: FBS Louisiana-Monroe @ Arkansas State | 2026-11-07 — FanDuel still d
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — FanDuel still dealing spread -7.5 on Georgia Southern (pre-move median -8.5, now -9.5)
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Caesars still dealing total 47.5 on Over (pre-move median 47.5, now 49.0)
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — FanDuel still dealing total 46.5 on Over (pre-move median 47.5, now 49.0)
+## 2026-11-07T17:06:52-05:00 — 63 games, 7 steam events, 8 NEW flags, 37 started games skipped
+NEW FLAG: FBS Louisiana-Monroe @ Arkansas State | 2026-11-07 — Kalshi still dealing spread -14.5 on Louisiana-Monroe (pre-move median -13.5, now -4.5)
+NEW FLAG: FBS Missouri State @ Florida International | 2026-11-07 — BetMGM still dealing spread -4.5 on Missouri State (pre-move median -4.5, now -3.5)
+NEW FLAG: FBS Missouri State @ Florida International | 2026-11-07 — DraftKings still dealing spread -4.5 on Missouri State (pre-move median -4.5, now -3.5)
+NEW FLAG: FBS Missouri State @ Florida International | 2026-11-07 — Kalshi still dealing total 49.5 on Under (pre-move median 49.0, now 34.5)
+NEW FLAG: FBS Northern Illinois @ San Jose State | 2026-11-07 — Kalshi still dealing total 52.5 on Under (pre-move median 52.5, now 49.5)
+NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — bet365 still dealing spread 1.5 on Utah State (pre-move median 1.5, now -1.0)
+NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — FanDuel still dealing spread 1.5 on Utah State (pre-move median 1.5, now -1.0)
+NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — Hard Rock still dealing spread 2.5 on Utah State (pre-move median 1.5, now -1.0)
