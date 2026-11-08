@@ -3440,3 +3440,10 @@
 [2026-11-08 06:48:00 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-08 06:53:41 ET] sync_to_github.py: FAILED (exit 1) in 311s —   FAILED: pc-data/sog-middles-2026-11-07.md (HTTP 409: {'error': '{"message":"is at a1181a0a0413302ad56f4b811c15977ddc7f26bd but expected 438e018e652e714c87b18d
 [2026-11-08 06:54:48 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 220 events (14 with odds), db total 143108 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 06:59:51 ET] sync_to_github.py: OK in 303s —   ok: steam-side-board-pc.html
+[2026-11-08 06:59:51 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 101, sog-middles: 474. Deta
+[2026-11-08 07:00:24 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 143328 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 07:06:56 ET] dh_key_number_middles.py: OK in 212s — key-number-middles: no new strict-key middles.
+[2026-11-08 07:07:02 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 07:08:06 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 220 events (14 with odds), db total 143548 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 07:09:18 ET] dh_arbitrage.py: OK in 71s — ARBITRAGE: NFL CIN Bengals ATL Falcons Today 9:30 AM / table / Tackles + Assists J. Bates Under 6.5 / Tackles + Assists J. Bates Over 6.5 / table bar_chart | Be
