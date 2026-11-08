@@ -3202,3 +3202,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 22:25:33 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 220 events (16 with odds), db total 130348 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 22:30:32 ET] dh_arbitrage.py: FAILED (exit 1) in 299s —   - <launched> pid=12432
 [2026-11-07 22:35:54 ET] dh_game_middles.py: FAILED (exit 1) in 321s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-07 22:41:03 ET] sync_to_github.py: FAILED (exit 1) in 309s —   FAILED: pc-data/low-holds-2026-11-06.md (HTTP 409: {'error': '{"message":"is at b6980581effb0751fff75e2c7079c49bca06c724 but expected 9b635bc68c434210b8c67c41
+[2026-11-07 22:42:10 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 220 events (15 with odds), db total 130568 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 22:50:24 ET] dh_key_number_middles.py: OK in 494s — key-number-middles: no new strict-key middles.
+[2026-11-07 22:53:56 ET] hung_number.py: OK in 209s — HUNG NUMBER: Texas State vs Oregon State — Hard Rock moneyline Oregon State value Oregon State (70.6 vs median 65.2)
+[2026-11-07 22:54:15 ET] rlm.py: OK in 20s
+[2026-11-07 22:54:19 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 22:54:21 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
+[2026-11-07 22:57:29 ET] dh_prop_middles.py: OK in 187s — PROP MIDDLE CLEAN : NFL BUF Bills MIN Vikings Nov-09 8:15 PM / table / Receiving Yards K. Coleman Under 30.5 / Alt Recv Yards K. Coleman 30+ / table | Bet365 | 
