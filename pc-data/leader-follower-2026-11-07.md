@@ -92,3 +92,17 @@ LEAD: FanDuel on Rice @ North Texas | 2026-11-07 (spread)
 ## 2026-11-07T17:50:47-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel)
 ## 2026-11-07T17:50:47-05:00 — pack move, never credited: Georgia State @ Appalachian State | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel)
 ## 2026-11-07T17:50:47-05:00 — 78 games, 0 leads credited, 38 started games skipped
+## 2026-11-07T18:57:25-05:00 — no-follow: DraftKings Cowboys @ Colts | 2026-11-07 spread (only 0 followed)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Marshall @ Georgia Southern | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — no-follow: Kalshi Missouri State @ Florida International | 2026-11-07 spread (only 0 followed)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Missouri State @ Florida International | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Missouri State @ Florida International | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Northern Illinois @ San Jose State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Northern Illinois @ San Jose State | 2026-11-07 total (Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Boise State @ Colorado State | 2026-11-07
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Sam Houston @ Jacksonville State | 2026-11-07 spread (DraftKings, FanDuel, bet365)
+## 2026-11-07T18:57:25-05:00 — no-follow: Kalshi Air Force @ Army | 2026-11-07 spread (only 0 followed)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Louisiana-Monroe @ Arkansas State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-07T18:57:25-05:00 — pack move, never credited: Louisiana-Monroe @ Arkansas State | 2026-11-07 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-07T18:57:25-05:00 — 78 games, 0 leads credited, 41 started games skipped
