@@ -3261,3 +3261,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 00:20:22 ET] dh_low_holds.py: OK in 21s — LOW-HOLDS: NFL ARI Cardinals SEA Seahawks Today 4:25 PM / table / Alt Spread ARI Cardinals +14.5 / Alt Spread SEA Seahawks -14.5 / table bar_chart | DraftKings 
 [2026-11-08 00:21:33 ET] dh_game_middles.py: OK in 71s — GAME MIDDLE: NCAAB 10 Houston California Today 8:30 PM / table / Spread California +19.5 / Alt Spread Houston -19 / table | DraftKings | Bet365 — window 213.0 :
 [2026-11-08 00:25:06 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 132768 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 00:33:58 ET] sync_to_github.py: OK in 293s —   ok: steam-side-board-pc.html
+[2026-11-08 00:33:59 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — sog-middles: 121. Details in GitHub pc-d
+[2026-11-08 00:34:31 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 132988 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 00:35:20 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NFL LV Raiders SF 49ers Today 4:25 PM / table bar_chart / Receiving Yards A. Jeanty Over 39.5 NO / Alt Recv Yards A. Jeanty 40+ / table | Kalshi | Be
+[2026-11-08 00:42:19 ET] dh_key_number_middles.py: OK in 179s — key-number-middles: no new strict-key middles.
+[2026-11-08 00:43:20 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (14 with odds), db total 133208 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 00:43:25 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 00:44:48 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE CLEAN : NCAAB Western Kentucky Tennessee Tech Today 3:00 PM / table / Total Over 159.5 / Alt Total Under 160 / table | Bally Bet | Bet365 — window 2
