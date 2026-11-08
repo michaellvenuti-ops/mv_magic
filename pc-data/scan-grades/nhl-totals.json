@@ -12,11 +12,23 @@
     "money": -100.0,
     "inverse": false,
     "date": "2026-11-05"
+   },
+   {
+    "away": "NYR",
+    "home": "SEA",
+    "direction": "under",
+    "book_total": 6.5,
+    "actual_total": 7,
+    "price": -122,
+    "result": "loss",
+    "money": -100.0,
+    "inverse": false,
+    "date": "2026-11-07"
    }
   ],
-  "record": "0-1-0",
-  "money": -100.0,
-  "graded": 1
+  "record": "0-2-0",
+  "money": -200.0,
+  "graded": 2
  },
  "inverse": {
   "entries": [
@@ -31,10 +43,22 @@
     "money": 89.29,
     "inverse": true,
     "date": "2026-11-05"
+   },
+   {
+    "away": "NYR",
+    "home": "SEA",
+    "direction": "over",
+    "book_total": 6.5,
+    "actual_total": 7,
+    "price": 102,
+    "result": "win",
+    "money": 102.0,
+    "inverse": true,
+    "date": "2026-11-07"
    }
   ],
-  "record": "1-0-0",
-  "money": 89.29,
-  "graded": 1
+  "record": "2-0-0",
+  "money": 191.29,
+  "graded": 2
  }
 }
