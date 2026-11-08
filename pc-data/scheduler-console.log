@@ -3460,3 +3460,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 06:11:38 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-08 06:11:41 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-08 06:12:43 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 220 events (14 with odds), db total 142228 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 06:21:26 ET] sync_to_github.py: OK in 313s —   ok: steam-side-board-pc.html
+[2026-11-08 06:21:27 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 463. Deta
+[2026-11-08 06:21:59 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 142448 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 06:33:03 ET] dh_key_number_middles.py: OK in 393s — key-number-middles: no new strict-key middles.
+[2026-11-08 06:33:13 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
