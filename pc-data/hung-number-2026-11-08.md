@@ -1,41 +1,27 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 15:38)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 16:47)
 
-- Broncos vs Panthers | Hard Rock | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
-- Lions vs Dolphins | BetMGM | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
-- Lions vs Dolphins | Hard Rock | total | value: Over | book 35.5 vs median 31.5 | div 4.0 
-- Giants vs Eagles | Hard Rock | spread | value: dog | book 1.5 vs median -5.5 | div 7.0 
-- Giants vs Eagles | Hard Rock | total | value: Over | book 31.5 vs median 29.5 | div 2.0 
-- Giants vs Eagles | Hard Rock | moneyline Eagles | value: Eagles | book 57.4 vs median 23.3 | div 34.2 
-- Giants vs Eagles | Hard Rock | moneyline Giants | value: Giants | book 48.8 vs median 83.9 | div 35.1 
-- Rams vs Commanders | BetMGM | spread | value: dog | book -4.5 vs median -6.5 | div 2.0 
-- Rams vs Commanders | BetMGM | moneyline Commanders | value: Commanders | book 28.6 vs median 21.1 | div 7.5 
-- Rams vs Commanders | BetMGM | moneyline Rams | value: Rams | book 77.8 vs median 85.1 | div 7.3 
-- Browns vs Saints | BetMGM | spread | value: favorite | book 1.5 vs median 3.5 | div 2.0 middle pairing spans key number 3
-- Browns vs Saints | Hard Rock | spread | value: favorite | book 1.5 vs median 3.5 | div 2.0 middle pairing spans key number 3
-- Browns vs Saints | BetMGM | total | value: Over | book 21.5 vs median 19.5 | div 2.0 
-- Browns vs Saints | Hard Rock | total | value: Over | book 26.5 vs median 19.5 | div 7.0 
-- Browns vs Saints | BetMGM | moneyline Browns | value: Browns | book 51.2 vs median 35.8 | div 15.4 
-- Browns vs Saints | FanDuel | moneyline Browns | value: Browns | book 26.0 vs median 35.8 | div 9.9 
-- Browns vs Saints | Hard Rock | moneyline Browns | value: Browns | book 48.8 vs median 35.8 | div 12.9 
-- Browns vs Saints | BetMGM | moneyline Saints | value: Saints | book 55.6 vs median 70.8 | div 15.2 
-- Browns vs Saints | FanDuel | moneyline Saints | value: Saints | book 80.0 vs median 70.8 | div 9.2 
-- Browns vs Saints | Hard Rock | moneyline Saints | value: Saints | book 57.4 vs median 70.8 | div 13.3 
-- Jets vs Chiefs | DraftKings | spread | value: dog | book 17.5 vs median 16.5 | div 1.0 
-- Jets vs Chiefs | Caesars | spread | value: favorite | book 13.5 vs median 16.5 | div 3.0 
-- Jets vs Chiefs | FanDuel | spread | value: dog | book 18.5 vs median 16.5 | div 2.0 
-- Jets vs Chiefs | BetMGM | total | value: Over | book 51.5 vs median 47.5 | div 4.0 
-- Jets vs Chiefs | Caesars | total | value: Over | book 51.5 vs median 47.5 | div 4.0 
-- Cowboys vs Colts | BetMGM | spread | value: dog | book -5.5 vs median -7.5 | div 2.0 
-- Cowboys vs Colts | DraftKings | spread | value: dog | book -5.5 vs median -7.5 | div 2.0 
-- Cowboys vs Colts | Hard Rock | spread | value: favorite | book -10.5 vs median -7.5 | div 3.0 
-- Cowboys vs Colts | BetMGM | total | value: Over | book 51.5 vs median 47.5 | div 4.0 
-- Cowboys vs Colts | DraftKings | total | value: Over | book 50.5 vs median 47.5 | div 3.0 
-- Cowboys vs Colts | Caesars | total | value: Under | book 44.5 vs median 47.5 | div 3.0 
-- Cowboys vs Colts | FanDuel | total | value: Under | book 44.5 vs median 47.5 | div 3.0 
-- Cowboys vs Colts | BetMGM | moneyline Colts | value: Colts | book 25.0 vs median 14.3 | div 10.7 
-- Cowboys vs Colts | DraftKings | moneyline Colts | value: Colts | book 25.5 vs median 14.3 | div 11.2 
-- Cowboys vs Colts | BetMGM | moneyline Cowboys | value: Cowboys | book 80.0 vs median 91.7 | div 11.7 
-- Cowboys vs Colts | DraftKings | moneyline Cowboys | value: Cowboys | book 80.9 vs median 91.7 | div 10.8 
+- Browns vs Saints | BetMGM | spread | value: favorite | book -3.5 vs median 2.5 | div 6.0 
+- Browns vs Saints | DraftKings | spread | value: dog | book 6.5 vs median 2.5 | div 4.0 middle pairing spans key number 3
+- Browns vs Saints | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Browns vs Saints | BetMGM | total | value: Under | book 28.5 vs median 35.5 | div 7.0 
+- Browns vs Saints | DraftKings | total | value: Over | book 39.5 vs median 35.5 | div 4.0 
+- Browns vs Saints | Caesars | total | value: Over | book 38.5 vs median 35.5 | div 3.0 
+- Browns vs Saints | Hard Rock | total | value: Under | book 20.5 vs median 35.5 | div 15.0 
+- Browns vs Saints | BetMGM | moneyline Browns | value: Browns | book 33.9 vs median 14.3 | div 19.6 
+- Browns vs Saints | BetMGM | moneyline Saints | value: Saints | book 73.3 vs median 91.7 | div 18.3 
+- Cowboys vs Colts | FanDuel | spread | value: favorite | book -3.5 vs median 2.5 | div 6.0 
+- Cowboys vs Colts | Hard Rock | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Cowboys vs Colts | DraftKings | total | value: Over | book 48.5 vs median 46.5 | div 2.0 
+- Cowboys vs Colts | Caesars | total | value: Under | book 43.5 vs median 46.5 | div 3.0 
+- Cowboys vs Colts | BetMGM | moneyline Colts | value: Colts | book 81.8 vs median 69.2 | div 12.6 
+- Cowboys vs Colts | FanDuel | moneyline Colts | value: Colts | book 61.5 vs median 69.2 | div 7.7 
+- Cowboys vs Colts | Hard Rock | moneyline Colts | value: Colts | book 86.7 vs median 69.2 | div 17.4 
+- Cowboys vs Colts | BetMGM | moneyline Cowboys | value: Cowboys | book 22.7 vs median 37.0 | div 14.3 
+- Cowboys vs Colts | FanDuel | moneyline Cowboys | value: Cowboys | book 44.6 vs median 37.0 | div 7.6 
+- Cowboys vs Colts | Hard Rock | moneyline Cowboys | value: Cowboys | book 20.0 vs median 37.0 | div 17.0 
+- Texans vs Chargers | Hard Rock | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Raiders vs 49ers | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
 - Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 52.5 | div 3.0 
