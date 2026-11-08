@@ -3579,3 +3579,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 09:21:20 ET] steam_side.py: OK in 12s — steam-side: 63 games, no new flags (silent).
 [2026-11-08 09:22:27 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 220 events (14 with odds), db total 147068 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 09:24:28 ET] futures_pairs.py: FAILED (exit 2) in 1s — futures-pairs: no futures-board JSON in data/ — run futures_board.py first.
+[2026-11-08 09:30:10 ET] sync_to_github.py: OK in 341s —   ok: steam-side-board-pc.html
+[2026-11-08 09:30:10 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 831. Deta
+[2026-11-08 09:30:43 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 147288 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 09:30:44 ET] half_percent.py: OK in 1s — half-percent recheck: weekend — no run.
+[2026-11-08 09:35:47 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (13 with odds), db total 147508 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 09:38:24 ET] dh_game_middles.py: OK in 157s — GAME MIDDLE: NBA MIA Heat SAC Kings Today 9:15 PM / table / Alt Spread SAC Kings +11.5 / Alt Spread MIA Heat -11 / table | Bally Bet | Bet365 — window 246.0 :: 
+[2026-11-08 09:40:22 ET] dh_prop_middles.py: OK in 88s — PROP MIDDLE : NCAAB North Dakota St. CSU Bakersfield Today 6:00 PM / table / Alt Total Under 160 / Alt Total Over 159.5 / table | Bet365 | Caesars — window 321.
+[2026-11-08 09:42:04 ET] dh_sog_middles.py: OK in 102s — - NEW CLEAN W211  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +100 $950 theScore 100.0 +100 @ theScore
