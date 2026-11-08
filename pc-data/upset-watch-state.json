@@ -1495,7 +1495,8 @@
    "fav": "away",
    "spread": 7.0,
    "fav_team": "SF Austin",
-   "dog_team": "Lamar"
+   "dog_team": "Lamar",
+   "final": true
   },
   "401869153": {
    "sport": "CFB",
@@ -3446,7 +3447,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "W Carolina",
-   "dog_team": "UNC Asheville"
+   "dog_team": "UNC Asheville",
+   "final": true
   },
   "401926825": {
    "sport": "NCAAB",
@@ -3519,12 +3521,20 @@
    "sport": "NCAAB",
    "matchup": "N Illinois at Dayton",
    "date": "2026-11-08",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Dayton",
    "dog_team": "N Illinois",
-   "live_ml": -280
+   "live_ml": -160,
+   "alerted_at": "2026-11-07T19:46:05",
+   "board_read_at": "2026-11-07T19:46:05",
+   "alert_expires_at": "2026-11-07T19:49:05",
+   "alert_detail": "4:30 - 1st Half",
+   "alert_fav_score": 18,
+   "alert_dog_score": 32,
+   "alert_ml": -160,
+   "ml_read_at": "2026-11-07T19:46:05"
   },
   "401909532": {
    "sport": "NCAAB",
