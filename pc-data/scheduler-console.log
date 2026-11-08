@@ -3352,3 +3352,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 03:04:25 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 220 events (14 with odds), db total 137168 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 03:06:25 ET] dh_prop_middles.py: OK in 120s — PROP MIDDLE : NBA BKN Nets DAL Mavericks Today 7:45 PM / table / Alt Spread BKN Nets +14.5 / Alt Spread DAL Mavericks -14 / table | Fliff | Fanatics-NJ — window
 [2026-11-08 03:08:12 ET] dh_sog_middles.py: OK in 107s — - NEW W345  (): -182 [64.54%] $1,000 ProphetX -182.0 -182 @ ProphetX / +163 $585 Bally Bet 163.0 +163 @ Bally Bet
+[2026-11-08 03:13:31 ET] sync_to_github.py: OK in 318s —   ok: steam-side-board-pc.html
+[2026-11-08 03:13:32 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 342. Deta
+[2026-11-08 03:14:33 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (14 with odds), db total 137388 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 03:15:24 ET] dh_kalshi_poly_arb.py: OK in 51s — KALSHI-POLY-ARB: NFL GB Packers NE Patriots Today 4:25 PM / table bar_chart / Receptions E. Chism Over 2.5 YES / Receptions E. Chism Under 2.5 / table | Kalshi 
+[2026-11-08 03:17:12 ET] dh_game_middles.py: OK in 108s — GAME MIDDLE: NBA BKN Nets DAL Mavericks Today 7:45 PM / table / Alt Spread BKN Nets +11.5 / Alt Spread DAL Mavericks -11 / table | HardRock | Fanatics-NJ — wind
+[2026-11-08 03:19:06 ET] hung_number.py: OK in 114s — No new hung numbers (100 current flags).
+[2026-11-08 03:19:11 ET] rlm.py: OK in 5s
+[2026-11-08 03:19:14 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 03:20:55 ET] dh_team_total_middles.py: OK in 101s
+[2026-11-08 03:21:00 ET] nfl_first_score.py: OK in 4s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 03:21:03 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 03:22:40 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 220 events (14 with odds), db total 137608 snapshots / 425 events, feeds ok 6 fail 0
