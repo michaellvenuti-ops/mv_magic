@@ -27,7 +27,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Cowboys",
    "dog_team": "Colts"
   },
@@ -860,7 +860,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 4.0,
+   "spread": 3.5,
    "fav_team": "Army",
    "dog_team": "Air Force"
   },
@@ -1604,11 +1604,17 @@
    "sport": "CFB",
    "matchup": "Utah Tech at UC Davis",
    "date": "2026-11-08",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 17.5,
    "fav_team": "UC Davis",
-   "dog_team": "Utah Tech"
+   "dog_team": "Utah Tech",
+   "alerted_at": "2026-11-07T19:16:02",
+   "board_read_at": "2026-11-07T19:16:02",
+   "alert_expires_at": "2026-11-07T19:21:02",
+   "alert_detail": "9:56 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 6
   },
   "401868321": {
    "sport": "CFB",
@@ -3329,7 +3335,8 @@
    "fav": "home",
    "spread": 29.5,
    "fav_team": "Gonzaga",
-   "dog_team": "New Mexico St"
+   "dog_team": "New Mexico St",
+   "final": true
   },
   "401926201": {
    "sport": "NCAAB",
@@ -3350,7 +3357,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Furman",
-   "dog_team": "Northern Iowa"
+   "dog_team": "Northern Iowa",
+   "final": true
   },
   "401924940": {
    "sport": "NCAAB",
@@ -3371,7 +3379,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "UT Martin",
-   "dog_team": "IU Indy"
+   "dog_team": "IU Indy",
+   "final": true
   },
   "401920703": {
    "sport": "NCAAB",
@@ -3393,7 +3402,8 @@
    "spread": 13.5,
    "fav_team": "High Point",
    "dog_team": "Washington St",
-   "live_ml": -280
+   "live_ml": -280,
+   "final": true
   },
   "401911007": {
    "sport": "NCAAB",
