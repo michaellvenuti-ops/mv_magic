@@ -3648,3 +3648,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 11:19:30 ET] hung_number.py: OK in 73s — No new hung numbers (99 current flags).
 [2026-11-08 11:19:34 ET] rlm.py: OK in 4s
 [2026-11-08 11:19:37 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 11:25:28 ET] sync_to_github.py: OK in 351s —   ok: steam-side-board-pc.html
+[2026-11-08 11:25:28 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 99, promo-converter: 1, sog
+[2026-11-08 11:26:35 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (55 with odds), db total 150061 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 11:27:13 ET] dh_arbitrage.py: OK in 39s — ARBITRAGE: NCAAB North Dakota St. CSU Bakersfield Today 6:00 PM / table / Alt Total Under 164 / Alt Total Over 163.5 / table | Bet365 | DraftKings
+[2026-11-08 11:28:51 ET] dh_prop_middles.py: OK in 97s — PROP MIDDLE CLEAN : NBA BKN Nets DAL Mavericks Today 7:45 PM / table bar_chart / Alt Total Under 224 / Alt Total Over 223.5 / table | ProphetX | Bet365 — window
+[2026-11-08 11:30:24 ET] dh_sog_middles.py: OK in 93s — - NEW W319  (): -167 $1,000 DraftKings -167.0 -167 @ DraftKings / +152 [39.68%] $642.19 ProphetX 152.0 +152 @ ProphetX
+[2026-11-08 11:31:54 ET] dh_team_total_middles.py: OK in 60s
+[2026-11-08 11:31:56 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 11:31:58 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 11:33:04 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (55 with odds), db total 150250 snapshots / 474 events, feeds ok 6 fail 0
