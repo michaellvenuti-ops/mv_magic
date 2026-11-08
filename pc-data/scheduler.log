@@ -3517,3 +3517,9 @@
 [2026-11-08 08:56:46 ET] rlm.py: OK in 3s
 [2026-11-08 08:56:49 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-08 08:57:32 ET] yahoo_brief.py: OK in 43s — SUMMARY: signed_in=False — report written, no extraction
+[2026-11-08 09:02:53 ET] sync_to_github.py: FAILED (exit 1) in 321s —   FAILED: pc-data/low-holds-2026-11-07.md (HTTP 409: {'error': '{"message":"is at b1a88df1543a6f78ae371b9a998f34e2454668bb but expected e1feacc235d8f86ab0f1f186
+[2026-11-08 09:03:57 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 220 events (14 with odds), db total 146628 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 09:05:36 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NCAAB Campbell Western Michigan Today 2:00 PM / table / Alt Total Under 155.5 / Alt Total Over 155 / table | Caesars | Bet365 — window 345.0 :: -17
+[2026-11-08 09:07:03 ET] dh_prop_middles.py: OK in 87s — PROP MIDDLE CLEAN : NCAAB Campbell Western Michigan Today 2:00 PM / table / Alt Total Over 149 / Total Under 149.5 / table | Bet365 | Bally Bet — window 220.0 :
+[2026-11-08 09:08:31 ET] dh_sog_middles.py: OK in 88s — - NEW W283  (): -148 $1,000 Bally Bet -148.0 -148 @ Bally Bet / +135 [42.56%] $721.47 ProphetX 135.0 +135 @ ProphetX
+[2026-11-08 09:08:34 ET] half_percent.py: OK in 4s — half-percent: weekend — no run.
