@@ -1,6 +1,24 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 13:29)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 14:35)
 
-- Browns vs Saints | DraftKings | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Broncos vs Panthers | BetMGM | spread | value: favorite | book -7.5 vs median -5.5 | div 2.0 
+- Broncos vs Panthers | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
+- Broncos vs Panthers | FanDuel | moneyline Broncos | value: Broncos | book 82.8 vs median 76.5 | div 6.3 
+- Broncos vs Panthers | BetMGM | moneyline Panthers | value: Panthers | book 24.4 vs median 30.0 | div 5.6 
+- Broncos vs Panthers | FanDuel | moneyline Panthers | value: Panthers | book 23.3 vs median 30.0 | div 6.8 
+- Lions vs Dolphins | DraftKings | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
+- Lions vs Dolphins | Hard Rock | spread | value: favorite | book -7.5 vs median -3.5 | div 4.0 
+- Lions vs Dolphins | Hard Rock | total | value: Over | book 48.5 vs median 36.5 | div 12.0 
+- Lions vs Dolphins | DraftKings | moneyline Dolphins | value: Dolphins | book 24.2 vs median 33.8 | div 9.6 
+- Lions vs Dolphins | Hard Rock | moneyline Dolphins | value: Dolphins | book 27.8 vs median 33.8 | div 6.0 
+- Lions vs Dolphins | DraftKings | moneyline Lions | value: Lions | book 82.1 vs median 72.6 | div 9.5 
+- Lions vs Dolphins | Hard Rock | moneyline Lions | value: Lions | book 78.9 vs median 72.6 | div 6.3 
+- Giants vs Eagles | FanDuel | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- Rams vs Commanders | BetMGM | spread | value: dog | book 3.5 vs median 1.5 | div 2.0 middle pairing spans key number 3
+- Rams vs Commanders | BetMGM | moneyline Commanders | value: Commanders | book 69.2 vs median 56.5 | div 12.7 
+- Rams vs Commanders | BetMGM | moneyline Rams | value: Rams | book 37.0 vs median 49.9 | div 12.8 
+- Jets vs Chiefs | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
+- Jets vs Chiefs | Hard Rock | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
+- Raiders vs 49ers | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
 - Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 52.5 | div 3.0 
