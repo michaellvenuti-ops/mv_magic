@@ -3269,3 +3269,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 00:43:20 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (14 with odds), db total 133208 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 00:43:25 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
 [2026-11-08 00:44:48 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE CLEAN : NCAAB Western Kentucky Tennessee Tech Today 3:00 PM / table / Total Over 159.5 / Alt Total Under 160 / table | Bally Bet | Bet365 — window 2
+[2026-11-08 00:49:54 ET] sync_to_github.py: OK in 307s —   ok: steam-side-board-pc.html
+[2026-11-08 00:49:55 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — sog-middles: 121. Details in GitHub pc-d
+[2026-11-08 00:50:55 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (14 with odds), db total 133428 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 00:53:24 ET] dh_sog_middles.py: OK in 149s — - NEW CLEAN W266  (): -140 $1,000 HardRock -140.0 -140 @ HardRock / +126 [44.25%] $767.09 ProphetX 126.0 +126 @ ProphetX
+[2026-11-08 00:54:39 ET] dh_team_total_middles.py: OK in 75s
+[2026-11-08 00:54:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 00:54:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 00:56:31 ET] dh_game_middles.py: OK in 78s — GAME MIDDLE: NCAAB Idaho St. Air Force Today 3:00 PM / table / Total Under 159.5 / Alt Total Over 159 / table | Caesars | Bet365 — window 215.0 :: -110 $1,000 C
+[2026-11-08 00:57:34 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 220 events (14 with odds), db total 133648 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 00:58:45 ET] hung_number.py: OK in 72s — No new hung numbers (100 current flags).
+[2026-11-08 00:58:49 ET] rlm.py: OK in 4s
+[2026-11-08 00:58:52 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 01:00:25 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=5
