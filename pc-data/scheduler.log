@@ -3117,3 +3117,6 @@
 [2026-11-07 20:10:18 ET] dh_team_total_middles.py: OK in 117s
 [2026-11-07 20:10:20 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-07 20:10:23 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-07 20:15:32 ET] sync_to_github.py: FAILED (exit 1) in 309s —   FAILED: pc-data/low-holds-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 7f9ba81bd66e39abdb975e73aef6000d528fcfa2 but expected 994c149c5328afa0c8ff3beb
+[2026-11-07 20:16:58 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 220 events (30 with odds), db total 129248 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 20:22:45 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 347s —   - <launched> pid=6180
