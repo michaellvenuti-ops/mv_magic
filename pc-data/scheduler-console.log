@@ -3878,3 +3878,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 18:00:27 ET] dh_sog_middles.py: OK in 99s — - NEW CLEAN W217  (): -114 [53.27%] $1,000 ProphetX -114.0 -114 @ ProphetX / +103 [49.26%] $925.47 ProphetX 103.0 +103 @ ProphetX
 [2026-11-08 18:01:37 ET] dh_team_total_middles.py: OK in 70s
 [2026-11-08 18:01:40 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 130 total tallied.
+[2026-11-08 18:07:44 ET] sync_to_github.py: OK in 364s —   ok: steam-side-board-pc.html
+[2026-11-08 18:07:45 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 114, nfl-first-score: 8, pr
+[2026-11-08 18:08:52 ET] odds_recorder.py: OK in 38s — SUMMARY: recorded 189 events (17 with odds), db total 159133 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 18:08:55 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-08 18:13:58 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (15 with odds), db total 159322 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 18:19:07 ET] dh_key_number_middles.py: OK in 189s — key-number-middles: no new strict-key middles.
+[2026-11-08 18:19:13 ET] steam_side.py: OK in 6s — steam-side: 63 games, no new flags (silent).
