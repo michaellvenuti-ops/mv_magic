@@ -1,5 +1,6 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 05:27)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 06:40)
 
+- Cowboys vs Colts | DraftKings | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Jets vs Chiefs | Hard Rock | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
