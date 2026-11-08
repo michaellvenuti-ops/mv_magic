@@ -3745,3 +3745,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 14:04:14 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-08 14:06:50 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (33 with odds), db total 153841 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 14:10:48 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAB Richmond Temple Today 5:00 PM / table / Total Over 150.5 / Alt Total Under 151 / table | HardRock | Bet365 — window 216.0 :: -110 $1,000 Hard
+[2026-11-08 14:16:41 ET] sync_to_github.py: OK in 354s —   ok: steam-side-board-pc.html
+[2026-11-08 14:16:42 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, nfl-first-score: 1, pr
+[2026-11-08 14:17:48 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (32 with odds), db total 154030 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 14:18:20 ET] dh_kalshi_poly_arb.py: OK in 31s — KALSHI-POLY-ARB: NFL HOU Texans LA Chargers Today 4:05 PM / table bar_chart / Receptions K. Mitchell Over 2.5 NO / Alt Receptions K. Mitchell 3+ / table | Kalsh
+[2026-11-08 14:21:31 ET] dh_key_number_middles.py: OK in 191s — key-number-middles: no new strict-key middles.
+[2026-11-08 14:21:37 ET] steam_side.py: OK in 6s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 14:23:13 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE CLEAN : NCAAB Richmond Temple Today 5:00 PM / table bar_chart / Alt Total Over 150.5 / Alt Total Under 151 / table | ProphetX | Bet365 — window 213.
+[2026-11-08 14:24:27 ET] odds_recorder.py: OK in 44s — SUMMARY: recorded 189 events (32 with odds), db total 154219 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 14:25:34 ET] dh_low_holds.py: OK in 66s — LOW-HOLDS: NFL TB Buccaneers CHI Bears Today 8:20 PM / table / Sacks K. Gordon Under 0.25 / Sacks K. Gordon Over 0.25 / table | BetParx | FanDuel
