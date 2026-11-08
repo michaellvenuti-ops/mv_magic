@@ -3680,3 +3680,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 12:09:36 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-08 12:10:42 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 189 events (54 with odds), db total 151195 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 12:15:45 ET] dh_low_holds.py: OK in 303s — LOW-HOLDS: NFL CLE Browns NO Saints Today 1:00 PM / table / Moneyline NO Saints / Moneyline CLE Browns / table | Bet365 | Bally Bet
+[2026-11-08 12:21:39 ET] sync_to_github.py: OK in 352s —   ok: steam-side-board-pc.html
+[2026-11-08 12:21:39 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 99, promo-converter: 1, sog
+[2026-11-08 12:22:45 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 189 events (54 with odds), db total 151384 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 12:24:34 ET] dh_game_middles.py: OK in 109s — GAME MIDDLE: NBA UTA Jazz MIN Timberwolves Today 7:15 PM / table / Alt Total Under 224 / Alt Total Over 223.5 / table | Bet365 | Bally Bet — window 211.0 :: -10
+[2026-11-08 12:28:03 ET] dh_key_number_middles.py: OK in 208s — key-number-middles: no new strict-key middles.
+[2026-11-08 12:29:20 ET] hung_number.py: OK in 77s — HUNG NUMBER: Browns vs Saints — Fanatics spread value favorite (3.5 vs median 4.5)
+[2026-11-08 12:29:24 ET] rlm.py: OK in 4s
+[2026-11-08 12:29:27 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 12:29:30 ET] steam_side.py: OK in 3s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 12:30:36 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (54 with odds), db total 151573 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 12:31:02 ET] dh_arbitrage.py: OK in 26s — ARBITRAGE: NFL HOU Texans LA Chargers Today 4:05 PM / table bar_chart / Rush Yards K. Vidal Over 29.5 NO / Alt Rush Yards K. Vidal 30+ / table | Kalshi | Bet365
+[2026-11-08 12:31:05 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=0
