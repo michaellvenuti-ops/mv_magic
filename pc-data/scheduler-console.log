@@ -3692,3 +3692,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 12:30:36 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (54 with odds), db total 151573 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 12:31:02 ET] dh_arbitrage.py: OK in 26s — ARBITRAGE: NFL HOU Texans LA Chargers Today 4:05 PM / table bar_chart / Rush Yards K. Vidal Over 29.5 NO / Alt Rush Yards K. Vidal 30+ / table | Kalshi | Bet365
 [2026-11-08 12:31:05 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=0
+[2026-11-08 12:37:50 ET] sync_to_github.py: OK in 345s —   ok: steam-side-board-pc.html
+[2026-11-08 12:37:51 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 107, promo-converter: 1, so
+[2026-11-08 12:38:23 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (54 with odds), db total 151762 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 12:40:17 ET] dh_prop_middles.py: OK in 113s — PROP MIDDLE CLEAN : NFL CLE Browns NO Saints Today 1:00 PM / table / Spread NO Saints -3.5 / Alt Spread CLE Browns +4 / table | Bet365 | theScore — window 215.0
+[2026-11-08 12:40:18 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-08 12:43:23 ET] dh_sog_middles.py: OK in 155s — - NEW W350  (): -185 $1,000 Bet365 -185.0 -185 @ Bet365 / +165 $581 Bally Bet 165.0 +165 @ Bally Bet
+[2026-11-08 12:44:11 ET] dh_team_total_middles.py: OK in 49s
+[2026-11-08 12:44:13 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 1 new, 0 unverified, 123 total tallied.
+[2026-11-08 12:44:15 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-08 12:45:22 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (54 with odds), db total 151951 snapshots / 474 events, feeds ok 6 fail 0
