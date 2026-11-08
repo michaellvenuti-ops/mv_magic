@@ -27,7 +27,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Cowboys",
    "dog_team": "Colts"
   },
@@ -269,7 +269,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Tennessee",
-   "dog_team": "Kentucky"
+   "dog_team": "Kentucky",
+   "final": true
   },
   "401858291": {
    "sport": "CFB",
@@ -315,11 +316,17 @@
    "sport": "CFB",
    "matchup": "West Virginia at Texas Tech",
    "date": "2026-11-08",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Texas Tech",
-   "dog_team": "West Virginia"
+   "dog_team": "West Virginia",
+   "alerted_at": "2026-11-07T22:02:01",
+   "board_read_at": "2026-11-07T22:02:01",
+   "alert_expires_at": "2026-11-07T22:07:01",
+   "alert_detail": "4:39 - 1st Quarter",
+   "alert_fav_score": 7,
+   "alert_dog_score": 10
   },
   "401909922": {
    "sport": "NBA",
@@ -924,7 +931,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Oregon St",
    "dog_team": "Texas St"
   },
@@ -934,7 +941,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 3.0,
    "fav_team": "UNLV",
    "dog_team": "Wyoming"
   },
@@ -1610,7 +1617,8 @@
    "alert_expires_at": "2026-11-07T18:31:04",
    "alert_detail": "1:49 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401868057": {
    "sport": "CFB",
@@ -1620,7 +1628,8 @@
    "fav": "home",
    "spread": 10.0,
    "fav_team": "Tarleton St",
-   "dog_team": "Abilene Chrstn"
+   "dog_team": "Abilene Chrstn",
+   "final": true
   },
   "401868152": {
    "sport": "CFB",
@@ -1646,7 +1655,8 @@
    "alert_expires_at": "2026-11-07T19:21:02",
    "alert_detail": "9:56 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 6
+   "alert_dog_score": 6,
+   "final": true
   },
   "401868321": {
    "sport": "CFB",
@@ -1656,7 +1666,8 @@
    "fav": "away",
    "spread": 4.0,
    "fav_team": "Incarnate Word",
-   "dog_team": "SE Louisiana"
+   "dog_team": "SE Louisiana",
+   "final": true
   },
   "401909936": {
    "sport": "NBA",
@@ -3562,7 +3573,8 @@
    "alert_fav_score": 18,
    "alert_dog_score": 32,
    "alert_ml": -160,
-   "ml_read_at": "2026-11-07T19:46:05"
+   "ml_read_at": "2026-11-07T19:46:05",
+   "final": true
   },
   "401909532": {
    "sport": "NCAAB",
@@ -3601,13 +3613,15 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Maryland",
-   "dog_team": "Georgetown"
+   "dog_team": "Georgetown",
+   "final": true
   },
   "401929399": {
    "sport": "NCAAB",
    "matchup": "N'Western (OK) at Oral Roberts",
    "date": "2026-11-08",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401925077": {
    "sport": "NCAAB",
@@ -3618,7 +3632,7 @@
    "spread": 23.5,
    "fav_team": "Murray St",
    "dog_team": "N'Western St",
-   "live_ml": -600
+   "live_ml": -475
   },
   "401923392": {
    "sport": "NCAAB",
@@ -3648,7 +3662,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Bradley",
-   "dog_team": "Pacific"
+   "dog_team": "Pacific",
+   "final": true
   },
   "401911345": {
    "sport": "NCAAB",
