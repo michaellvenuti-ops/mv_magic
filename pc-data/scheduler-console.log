@@ -3713,3 +3713,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 13:13:03 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 189 events (39 with odds), db total 152518 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 13:13:43 ET] dh_kalshi_poly_arb.py: OK in 39s — KALSHI-POLY-ARB: NFL HOU Texans LA Chargers Today 4:05 PM / table bar_chart / Rush Yards K. Vidal Over 39.5 NO / Alt Rush Yards K. Vidal 40+ / table | Kalshi | 
 [2026-11-08 13:15:01 ET] dh_prop_middles.py: OK in 78s — PROP MIDDLE : NBA LA Lakers DET Pistons Today 6:15 PM / table / Alt Spread LA Lakers +9.5 / Alt Spread DET Pistons -9 / table | FanDuel | Bet365 — window 305.0 
+[2026-11-08 13:20:58 ET] sync_to_github.py: OK in 357s —   ok: steam-side-board-pc.html
+[2026-11-08 13:20:59 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 107, nfl-first-score: 1, pr
+[2026-11-08 13:22:05 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (39 with odds), db total 152707 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 13:23:47 ET] dh_low_holds.py: OK in 102s — LOW-HOLDS: NBA UTA Jazz MIN Timberwolves Today 7:15 PM / table / Total Under 224.5 / Alt Total Over 224.5 / table bar_chart | Bet365 | Polymarket US
+[2026-11-08 13:25:42 ET] dh_sog_middles.py: OK in 115s — - NEW W318  (): -166 [62.40%] $1,000 ProphetX -166.0 -166 @ ProphetX / +152 [39.68%] $638.89 ProphetX 152.0 +152 @ ProphetX
+[2026-11-08 13:26:43 ET] dh_team_total_middles.py: OK in 61s
+[2026-11-08 13:26:45 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 123 total tallied.
+[2026-11-08 13:26:48 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-08 13:27:55 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 189 events (39 with odds), db total 152896 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 13:30:35 ET] hung_number.py: OK in 70s — HUNG NUMBER: Browns vs Saints — DraftKings spread value dog (5.5 vs median 4.5)
+[2026-11-08 13:30:38 ET] rlm.py: OK in 3s
+[2026-11-08 13:30:42 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 13:31:29 ET] dh_arbitrage.py: OK in 17s — ARBITRAGE: NBA LA Lakers DET Pistons Today 6:15 PM / table / Alt Total Over 213.5 / Alt Total Under 214 / table | Fanatics-NJ | Bet365
