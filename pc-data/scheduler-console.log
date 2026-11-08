@@ -3162,3 +3162,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 20:15:32 ET] sync_to_github.py: FAILED (exit 1) in 309s —   FAILED: pc-data/low-holds-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 7f9ba81bd66e39abdb975e73aef6000d528fcfa2 but expected 994c149c5328afa0c8ff3beb
 [2026-11-07 20:16:58 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 220 events (30 with odds), db total 129248 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-07 20:22:45 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 347s —   - <launched> pid=6180
+[2026-11-07 20:33:20 ET] sync_to_github.py: OK in 635s —   ok: steam-side-board-pc.html
+[2026-11-07 20:36:49 ET] notify.py: OK in 208s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 87, sog-middles: 3727, wong
+[2026-11-07 20:40:33 ET] odds_recorder.py: OK in 186s — SUMMARY: recorded 220 events (30 with odds), db total 129468 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 20:46:25 ET] dh_low_holds.py: FAILED (exit 1) in 352s —   - <launched> pid=3204
+[2026-11-07 20:48:12 ET] dh_game_middles.py: OK in 106s — GAME MIDDLE: NCAAB Butler Boise St. Nov-08 2:00 PM / table / Total Under 156.5 / Alt Total Over 156 / table | FanDuel | Bet365 — window 215.0 :: -110 $1,000 Fan
+[2026-11-07 21:03:50 ET] dh_key_number_middles.py: OK in 938s — key-number-middles: no new strict-key middles.
+[2026-11-07 21:04:07 ET] steam_side.py: OK in 16s — STEAM-SIDE FLAG: FBS Fresno State @ Utah State | 2026-11-07 | Kalshi | Fresno State spread -1.5 (median -1.0 -> 1.5)
+[2026-11-07 21:07:42 ET] dh_prop_middles.py: FAILED (exit 1) in 215s —   - <launched> pid=17508
+[2026-11-07 21:11:13 ET] dh_sog_middles.py: FAILED (exit 1) in 211s —   - <launched> pid=6428
