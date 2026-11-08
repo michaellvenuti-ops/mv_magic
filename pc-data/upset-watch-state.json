@@ -27,7 +27,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Cowboys",
    "dog_team": "Colts"
   },
@@ -258,7 +258,8 @@
    "fav": "away",
    "spread": 15.5,
    "fav_team": "Boise St",
-   "dog_team": "Colorado St"
+   "dog_team": "Colorado St",
+   "final": true
   },
   "401856745": {
    "sport": "CFB",
@@ -1592,7 +1593,8 @@
    "fav": "away",
    "spread": 5.5,
    "fav_team": "S Illinois",
-   "dog_team": "Indiana St"
+   "dog_team": "Indiana St",
+   "final": true
   },
   "401868108": {
    "sport": "CFB",
@@ -3570,7 +3572,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Nebraska",
-   "dog_team": "Providence"
+   "dog_team": "Providence",
+   "final": true
   },
   "401926227": {
    "sport": "NCAAB",
@@ -3580,13 +3583,15 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "UC Riverside",
-   "dog_team": "Denver"
+   "dog_team": "Denver",
+   "final": true
   },
   "401925780": {
    "sport": "NCAAB",
    "matchup": "Central St at Duquesne",
    "date": "2026-11-08",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401909513": {
    "sport": "NCAAB",
@@ -3613,7 +3618,7 @@
    "spread": 23.5,
    "fav_team": "Murray St",
    "dog_team": "N'Western St",
-   "live_ml": -2800
+   "live_ml": -600
   },
   "401923392": {
    "sport": "NCAAB",
