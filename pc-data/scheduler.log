@@ -3129,3 +3129,13 @@
 [2026-11-07 21:04:07 ET] steam_side.py: OK in 16s — STEAM-SIDE FLAG: FBS Fresno State @ Utah State | 2026-11-07 | Kalshi | Fresno State spread -1.5 (median -1.0 -> 1.5)
 [2026-11-07 21:07:42 ET] dh_prop_middles.py: FAILED (exit 1) in 215s —   - <launched> pid=17508
 [2026-11-07 21:11:13 ET] dh_sog_middles.py: FAILED (exit 1) in 211s —   - <launched> pid=6428
+[2026-11-07 21:16:21 ET] sync_to_github.py: OK in 306s —   ok: steam-side-board-pc.html
+[2026-11-07 21:16:23 ET] notify.py: OK in 2s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 87, sog-middles: 3727, wong
+[2026-11-07 21:18:12 ET] odds_recorder.py: OK in 79s — SUMMARY: recorded 220 events (25 with odds), db total 129688 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 21:22:53 ET] dh_arbitrage.py: FAILED (exit 1) in 281s —   - <launched> pid=17468
+[2026-11-07 21:27:13 ET] hung_number.py: OK in 259s — HUNG NUMBER: Wyoming vs UNLV — Hard Rock total value Under (47.5 vs median 50.5)
+[2026-11-07 21:27:28 ET] rlm.py: OK in 14s
+[2026-11-07 21:27:31 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 21:32:58 ET] dh_team_total_middles.py: FAILED (exit 1) in 326s —   - [pid=5396][err] [5396:17496:1107/213008.268:ERROR:content\browser\network_service_instance_impl.cc:652] Network service crashed or was terminated, restartin
+[2026-11-07 21:33:05 ET] nfl_first_score.py: OK in 6s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 21:33:11 ET] nba_overs_pregame.py: OK in 6s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
