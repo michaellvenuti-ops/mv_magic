@@ -3148,3 +3148,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 19:51:02 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NFL CLE Browns NO Saints Nov-08 1:00 PM / table / Moneyline NO Saints / Alt Spread CLE Browns +0.5 / table | FanDuel | BetParx — window 328.0 :: -1
 [2026-11-07 19:51:38 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 | BetMGM | Sam Houston spread -16.5 (median -16.0 -> -10.5)
 [2026-11-07 19:54:51 ET] dh_prop_middles.py: OK in 103s — PROP MIDDLE CLEAN : NFL CLE Browns NO Saints Nov-08 1:00 PM / table / Receiving Yards J. Johnson Under 30.5 / Alt Recv Yards J. Johnson 30+ / table | Bet365 | B
+[2026-11-07 19:59:44 ET] sync_to_github.py: OK in 293s —   ok: steam-side-board-pc.html
+[2026-11-07 19:59:44 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 87, sog-middles: 3594, wong
+[2026-11-07 20:00:44 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 220 events (41 with odds), db total 128808 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 20:00:48 ET] rlm.py: OK in 4s
+[2026-11-07 20:00:51 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-07 20:02:52 ET] dh_sog_middles.py: OK in 91s — - NEW W266  (): -141 $1,000 Bally Bet -141.0 -141 @ Bally Bet / +125 $760 Fanatics-NJ 125.0 +125 @ Fanatics-NJ
+[2026-11-07 20:06:22 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 220 events (36 with odds), db total 129028 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 20:06:51 ET] dh_arbitrage.py: OK in 29s — ARBITRAGE: NBA ORL Magic GS Warriors Today 8:45 PM / table / Alt Spread ORL Magic +13.5 / Alt Spread GS Warriors -12.5 / table | BetParx | Fanatics-NJ
+[2026-11-07 20:10:18 ET] dh_team_total_middles.py: OK in 117s
+[2026-11-07 20:10:20 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 20:10:23 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
