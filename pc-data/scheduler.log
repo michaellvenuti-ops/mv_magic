@@ -3380,3 +3380,15 @@
 [2026-11-08 05:06:55 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-08 05:06:57 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-08 05:09:32 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 220 events (14 with odds), db total 140468 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 05:18:11 ET] sync_to_github.py: OK in 309s —   ok: steam-side-board-pc.html
+[2026-11-08 05:18:12 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 101, sog-middles: 436. Deta
+[2026-11-08 05:18:45 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 140688 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 05:22:01 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new strict-key middles.
+[2026-11-08 05:22:08 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 05:24:11 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE : NBA BOS Celtics MIL Bucks Today 8:15 PM / table / Alt Total Under 230.5 / Alt Total Over 229.5 / table | FanDuel | DraftKings — window 378.0 :: {'
+[2026-11-08 05:25:47 ET] dh_sog_middles.py: OK in 95s — - NEW W283  (): -150 $1,000 theScore -150.0 -150 @ theScore / +133 $715 Bally Bet 133.0 +133 @ Bally Bet
+[2026-11-08 05:26:52 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 220 events (14 with odds), db total 140908 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 05:27:30 ET] dh_kalshi_poly_arb.py: OK in 38s — KALSHI-POLY-ARB: NBA BOS Celtics MIL Bucks Today 8:15 PM / table / Alt Spread MIL Bucks +30.5 / Alt Spread BOS Celtics -30.5 YES / table bar_chart | DraftKings 
+[2026-11-08 05:28:53 ET] hung_number.py: OK in 83s — No new hung numbers (100 current flags).
+[2026-11-08 05:28:57 ET] rlm.py: OK in 4s
+[2026-11-08 05:29:00 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
