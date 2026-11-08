@@ -3372,3 +3372,11 @@
 [2026-11-08 04:55:37 ET] sync_to_github.py: FAILED (exit 1) in 312s —   FAILED: pc-data/public-fade-gate-notified (HTTP 409: {'error': '{"message":"is at 1cc2bcd415aa554917d85a81c09af73fbdbc196f but expected 542b9b3f71700c0159ebc0
 [2026-11-08 04:56:41 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 220 events (14 with odds), db total 140028 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 04:57:26 ET] dh_arbitrage.py: OK in 46s — ARBITRAGE: NFL GB Packers NE Patriots Today 4:25 PM / table / Receptions E. Chism Under 2.5 / Receptions E. Chism 3+ YES / table bar_chart | Bet365 | Polymarket
+[2026-11-08 05:02:39 ET] sync_to_github.py: OK in 313s —   ok: steam-side-board-pc.html
+[2026-11-08 05:02:39 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 101, sog-middles: 436. Deta
+[2026-11-08 05:03:42 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 220 events (14 with odds), db total 140248 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 05:05:47 ET] dh_game_middles.py: OK in 125s — GAME MIDDLE: NFL CIN Bengals ATL Falcons Today 9:30 AM / table bar_chart / Alt Spread ATL Falcons +5.5 / Alt Spread CIN Bengals -5 / table bar_chart | ProphetX 
+[2026-11-08 05:06:53 ET] dh_team_total_middles.py: OK in 66s
+[2026-11-08 05:06:55 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 05:06:57 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 05:09:32 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 220 events (14 with odds), db total 140468 snapshots / 425 events, feeds ok 6 fail 0
