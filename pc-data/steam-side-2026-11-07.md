@@ -79,3 +79,5 @@ NEW FLAG: FBS Missouri State @ Florida International | 2026-11-07 — Kalshi sti
 NEW FLAG: FBS Marshall @ Georgia Southern | 2026-11-07 — Kalshi still dealing total 54.5 on Over (pre-move median 56.5, now 62.5)
 ## 2026-11-07T19:19:31-05:00 — 63 games, 4 steam events, 1 NEW flags, 40 started games skipped
 NEW FLAG: FBS Northern Illinois @ San Jose State | 2026-11-07 — BetMGM still dealing total 59.5 on Under (pre-move median 57.5, now 50.5)
+## 2026-11-07T19:51:38-05:00 — 63 games, 3 steam events, 1 NEW flags, 48 started games skipped
+NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — BetMGM still dealing spread -16.5 on Sam Houston (pre-move median -16.0, now -10.5)
