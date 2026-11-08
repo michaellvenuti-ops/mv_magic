@@ -3702,3 +3702,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 12:44:13 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 1 new, 0 unverified, 123 total tallied.
 [2026-11-08 12:44:15 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-08 12:45:22 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (54 with odds), db total 151951 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 12:53:46 ET] sync_to_github.py: FAILED (exit 1) in 354s —   FAILED: hung-number-board-pc.html (HTTP 409: {'error': '{"message":"is at 9458b65c6a46d7b07dd4e135aee9588cfd9f3c55 but expected 0faf6133101510e86c9cf76dece7db
+[2026-11-08 12:54:18 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (54 with odds), db total 152140 snapshots / 474 events, feeds ok 6 fail 0
