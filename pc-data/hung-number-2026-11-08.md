@@ -1,13 +1,6 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 12:28)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 13:29)
 
-- Bengals vs Falcons | BetMGM | spread | value: dog | book -14.5 vs median -17.5 | div 3.0 
-- Bengals vs Falcons | Hard Rock | spread | value: dog | book -16.5 vs median -17.5 | div 1.0 
-- Bengals vs Falcons | BetMGM | total | value: Over | book 60.5 vs median 56.5 | div 4.0 
-- Bengals vs Falcons | DraftKings | total | value: Under | book 51.5 vs median 56.5 | div 5.0 
-- Bengals vs Falcons | Hard Rock | total | value: Under | book 47.0 vs median 56.5 | div 9.5 
-- Browns vs Saints | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
-- Browns vs Saints | Fanatics | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
-- Jets vs Chiefs | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Browns vs Saints | DraftKings | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
 - Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 52.5 | div 3.0 
