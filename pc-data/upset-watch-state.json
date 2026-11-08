@@ -27,7 +27,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Cowboys",
    "dog_team": "Colts"
   },
@@ -280,7 +280,8 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Notre Dame",
-   "dog_team": "Miami"
+   "dog_team": "Miami",
+   "final": true
   },
   "401856741": {
    "sport": "CFB",
@@ -290,7 +291,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Georgia",
-   "dog_team": "Ole Miss"
+   "dog_team": "Ole Miss",
+   "final": true
   },
   "401858513": {
    "sport": "CFB",
@@ -311,7 +313,8 @@
    "fav": "home",
    "spread": 4.0,
    "fav_team": "Florida",
-   "dog_team": "Oklahoma"
+   "dog_team": "Oklahoma",
+   "final": true
   },
   "401856856": {
    "sport": "CFB",
@@ -881,7 +884,8 @@
    "alert_expires_at": "2026-11-07T21:05:36",
    "alert_detail": "1:26 - 2nd Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401862823": {
    "sport": "CFB",
@@ -3699,7 +3703,8 @@
    "sport": "NCAAB",
    "matchup": "Bethesda at Pepperdine",
    "date": "2026-11-08",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920435": {
    "sport": "NCAAB",
@@ -3709,17 +3714,27 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Utah Valley",
-   "dog_team": "Weber St"
+   "dog_team": "Weber St",
+   "final": true
   },
   "401920371": {
    "sport": "NCAAB",
    "matchup": "Fresno St at UC San Diego",
    "date": "2026-11-08",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 10.5,
    "fav_team": "UC San Diego",
-   "dog_team": "Fresno St"
+   "dog_team": "Fresno St",
+   "live_ml": -200,
+   "alerted_at": "2026-11-07T23:02:03",
+   "board_read_at": "2026-11-07T23:02:02",
+   "alert_expires_at": "2026-11-07T23:05:03",
+   "alert_detail": "19:13 - 2nd Half",
+   "alert_fav_score": 34,
+   "alert_dog_score": 38,
+   "alert_ml": -200,
+   "ml_read_at": "2026-11-07T23:02:02"
   },
   "401917519": {
    "sport": "NCAAB",
