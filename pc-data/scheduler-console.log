@@ -3197,3 +3197,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 22:18:45 ET] dh_team_total_middles.py: FAILED (exit 1) in 277s —   - <launched> pid=3188
 [2026-11-07 22:18:49 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-07 22:18:52 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-07 22:23:52 ET] sync_to_github.py: OK in 300s —   ok: steam-side-board-pc.html
+[2026-11-07 22:23:53 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 107, sog-middles: 3727, won
+[2026-11-07 22:25:33 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 220 events (16 with odds), db total 130348 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 22:30:32 ET] dh_arbitrage.py: FAILED (exit 1) in 299s —   - <launched> pid=12432
+[2026-11-07 22:35:54 ET] dh_game_middles.py: FAILED (exit 1) in 321s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
