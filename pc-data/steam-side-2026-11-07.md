@@ -85,3 +85,6 @@ NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — BetMGM still dea
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — BetMGM still dealing spread -1.0 on Fresno State (pre-move median -1.0, now 1.5)
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — Fanatics still dealing spread -1.0 on Fresno State (pre-move median -1.0, now 1.5)
 NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — Kalshi still dealing spread -1.5 on Fresno State (pre-move median -1.0, now 1.5)
+## 2026-11-07T21:55:27-05:00 — 63 games, 1 steam events, 2 NEW flags, 52 started games skipped
+NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — Kalshi still dealing spread -20.5 on Jacksonville State (pre-move median -29.5, now -33.5)
+NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — Kalshi still dealing total 42.5 on Over (pre-move median 44.0, now 53.5)
