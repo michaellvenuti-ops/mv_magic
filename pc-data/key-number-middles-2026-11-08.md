@@ -20,3 +20,4 @@
 ## 2026-11-08T11:44:57-05:00 — key-number-middles (STRICT exact-key rule): 1962 + 0 rows parsed, qualifying only below
 ## 2026-11-08T12:27:55-05:00 — key-number-middles (STRICT exact-key rule): 1960 + 0 rows parsed, qualifying only below
 ## 2026-11-08T13:05:52-05:00 — key-number-middles (STRICT exact-key rule): 1963 + 0 rows parsed, qualifying only below
+## 2026-11-08T13:42:30-05:00 — key-number-middles (STRICT exact-key rule): 1953 + 0 rows parsed, qualifying only below
