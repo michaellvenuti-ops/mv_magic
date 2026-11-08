@@ -3073,3 +3073,9 @@
 [2026-11-07 18:57:22 ET] rlm.py: OK in 4s
 [2026-11-07 18:57:25 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-07 18:59:13 ET] dh_sog_middles.py: OK in 108s — - NEW W362  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +172 [36.76%] $568.33 ProphetX 172.0 +172 @ ProphetX
+[2026-11-07 19:04:07 ET] sync_to_github.py: FAILED (exit 1) in 293s —   FAILED: pc-data/nhl-totals-snapshot-2026-11-05.json (HTTP 409: {'error': '{"message":"is at a231baba499485c0858fd3b78936963dde2d1884 but expected 7af6b33bb606
+[2026-11-07 19:05:06 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 220 events (58 with odds), db total 127268 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 19:05:37 ET] dh_arbitrage.py: OK in 31s — ARBITRAGE: NFL TB Buccaneers CHI Bears Nov-08 8:20 PM / table bar_chart / Touchdowns T. Hurst Over 0.5 NO / Touchdowns T. Hurst Over 0.5 / table | Kalshi | Fana
+[2026-11-07 19:06:19 ET] dh_team_total_middles.py: OK in 42s
+[2026-11-07 19:06:19 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 19:06:22 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
