@@ -3578,3 +3578,19 @@
 [2026-11-08 10:29:14 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: no new strict-key middles.
 [2026-11-08 10:30:19 ET] odds_recorder.py: OK in 35s — SUMMARY: recorded 220 events (13 with odds), db total 148828 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 10:30:24 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 10:37:58 ET] sync_to_github.py: OK in 334s —   ok: steam-side-board-pc.html
+[2026-11-08 10:37:59 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 101, promo-converter: 1, so
+[2026-11-08 10:38:31 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (13 with odds), db total 149048 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 10:43:29 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NCAAB UT Arlington Hawai'i Today 11:00 PM / table bar_chart / Total Over 147.5 / Alt Total Under 148 / table | Polymarket US | Bet365 — window 10.0
+[2026-11-08 10:44:36 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 220 events (13 with odds), db total 149268 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 10:46:36 ET] dh_prop_middles.py: OK in 89s — PROP MIDDLE : NCAAB North Dakota St. CSU Bakersfield Today 6:00 PM / table / Alt Total Under 159 / Alt Total Over 158.5 / table | Bet365 | HardRock — window 286
+[2026-11-08 10:46:41 ET] totals_scan.py: OK in 5s — totals: no new flags (silent).
+[2026-11-08 10:46:45 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-08 10:47:56 ET] dh_derivative_ev.py: OK in 70s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
+[2026-11-08 10:49:52 ET] dh_sog_middles.py: OK in 87s — - NEW W313  (): -165 $1,000 HardRock -165.0 -165 @ HardRock / +148 $648 Caesars 148.0 +148 @ Caesars
+[2026-11-08 10:55:38 ET] sync_to_github.py: FAILED (exit 1) in 345s —   FAILED: steam-side-board-pc.html (HTTP 409: {'error': '{"message":"is at cb45870eab836f72454c8dcd0feaa8dce824f867 but expected 08b3b3afbbc2b3adb02456031acf206
+[2026-11-08 10:56:42 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 220 events (13 with odds), db total 149488 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 10:58:21 ET] dh_kalshi_poly_arb.py: OK in 99s — KALSHI-POLY-ARB: NFL LV Raiders SF 49ers Today 4:25 PM / table bar_chart / Rush Yards C. McCaffrey 90+ NO / Alt Rush Yards C. McCaffrey 90+ / table | Polymarket
+[2026-11-08 10:59:36 ET] dh_team_total_middles.py: OK in 75s
+[2026-11-08 10:59:41 ET] nfl_first_score.py: OK in 5s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 10:59:44 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
