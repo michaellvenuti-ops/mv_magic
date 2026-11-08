@@ -3333,3 +3333,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 02:27:14 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
 [2026-11-08 02:30:08 ET] dh_prop_middles.py: OK in 84s — PROP MIDDLE CLEAN : NBA UTA Jazz MIN Timberwolves Today 7:15 PM / table / Alt Total Under 226.5 / Alt Total Over 226 / table | Fanatics-NJ | Bet365 — window 241
 [2026-11-08 02:32:15 ET] dh_sog_middles.py: OK in 97s — - NEW CLEAN W215  (): -114 $1,000 DraftKings -114.0 -114 @ DraftKings / +101 $934 Bet365 101.0 +101 @ Bet365
+[2026-11-08 02:37:20 ET] sync_to_github.py: OK in 305s —   ok: steam-side-board-pc.html
+[2026-11-08 02:37:21 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 322. Deta
+[2026-11-08 02:38:23 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 220 events (14 with odds), db total 136288 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 02:39:23 ET] dh_arbitrage.py: OK in 30s — ARBITRAGE: NCAAB Idaho St. Air Force Today 3:00 PM / table bar_chart / Total Under 160.5 / Alt Total Over 160.5 / table | Polymarket US | Bet365
+[2026-11-08 02:40:50 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NBA BKN Nets DAL Mavericks Today 7:45 PM / table / Alt Spread BKN Nets +12.5 / Alt Spread DAL Mavericks -12 / table | HardRock | Fanatics-NJ — wind
+[2026-11-08 02:42:16 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-08 02:42:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 02:42:19 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 02:43:51 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 220 events (14 with odds), db total 136508 snapshots / 425 events, feeds ok 6 fail 0
