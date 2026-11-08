@@ -3390,3 +3390,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 04:13:14 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 220 events (14 with odds), db total 138928 snapshots / 425 events, feeds ok 6 fail 0
 [2026-11-08 04:14:53 ET] dh_prop_middles.py: OK in 99s — PROP MIDDLE CLEAN : NBA LA Lakers DET Pistons Today 6:15 PM / table / Alt Total Over 218.5 / Alt Total Under 219 / table | Fanatics-NJ | Bet365 — window 240.0 :
 [2026-11-08 04:16:30 ET] dh_sog_middles.py: OK in 97s — - NEW CLEAN W245  (): -130 $1,000 FanDuel -130.0 -130 @ FanDuel / +115 $823 Fanatics-NJ 115.0 +115 @ Fanatics-NJ
+[2026-11-08 04:21:34 ET] sync_to_github.py: OK in 305s —   ok: steam-side-board-pc.html
+[2026-11-08 04:21:35 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 100, sog-middles: 424. Deta
+[2026-11-08 04:22:39 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 220 events (14 with odds), db total 139148 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 04:23:58 ET] dh_kalshi_poly_arb.py: OK in 79s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-08 04:25:18 ET] hung_number.py: OK in 80s — HUNG NUMBER: Texas State vs Oregon State — Fanatics moneyline Texas State value Texas State (54.5 vs median 39.4)
+[2026-11-08 04:25:22 ET] rlm.py: OK in 4s
+[2026-11-08 04:25:26 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 04:28:29 ET] odds_recorder.py: OK in 33s — SUMMARY: recorded 220 events (14 with odds), db total 139368 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 04:30:15 ET] dh_game_middles.py: OK in 106s — GAME MIDDLE: NBA LA Lakers DET Pistons Today 6:15 PM / table / Alt Total Under 222.5 / Alt Total Over 222 / table | Bet365 | Fanatics-NJ — window 221.0 :: -116 
+[2026-11-08 04:31:46 ET] dh_team_total_middles.py: OK in 60s
+[2026-11-08 04:31:47 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-08 04:31:50 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
