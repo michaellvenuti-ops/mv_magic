@@ -125,3 +125,4 @@ LEAD: FanDuel on Rice @ North Texas | 2026-11-07 (spread)
 ## 2026-11-07T22:54:18-05:00 — pack move, never credited: Sam Houston @ Jacksonville State | 2026-11-07 spread (BetMGM, Caesars, DraftKings, FanDuel)
 ## 2026-11-07T22:54:19-05:00 — pack move, never credited: Sam Houston @ Jacksonville State | 2026-11-07 total (Caesars, FanDuel)
 ## 2026-11-07T22:54:19-05:00 — 78 games, 0 leads credited, 55 started games skipped
+## 2026-11-07T23:55:46-05:00 — 78 games, 0 leads credited, 55 started games skipped
