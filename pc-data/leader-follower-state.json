@@ -1583,7 +1583,7 @@
    "books": {
     "BetMGM": {
      "spread": -8.5,
-     "total": 39.5
+     "total": 40.0
     },
     "Caesars": {
      "spread": -8.5,
@@ -6501,7 +6501,7 @@
   "Raiders @ 49ers | 2026-11-08": {
    "books": {
     "BetMGM": {
-     "spread": -9.5,
+     "spread": -9.0,
      "total": 52.0
     },
     "Caesars": {
@@ -6509,7 +6509,7 @@
      "total": 52.0
     },
     "DraftKings": {
-     "spread": -9.5,
+     "spread": -8.5,
      "total": 51.5
     },
     "FanDuel": {
@@ -6517,8 +6517,8 @@
      "total": 51.5
     },
     "Fanatics": {
-     "spread": -9.5,
-     "total": 51.5
+     "spread": -9.0,
+     "total": 52.0
     },
     "Hard Rock": {
      "spread": -9.5,
@@ -6533,7 +6533,16 @@
      "total": 52.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "DraftKings",
+     "direction": 1,
+     "market": "spread",
+     "new": -8.5,
+     "old": -9.5,
+     "ts": "2026-11-08T14:37:25-05:00"
+    }
+   ]
   },
   "Rams @ Commanders | 2026-11-05": {
    "books": {
