@@ -1,5 +1,6 @@
-# Hung numbers — 2026-11-07 (scan 2026-11-07 22:50)
+# Hung numbers — 2026-11-07 (scan 2026-11-07 23:54)
 
+- Cowboys vs Colts | DraftKings | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
 - Jets vs Chiefs | Hard Rock | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Miami (FL) vs Notre Dame | DraftKings | spread | value: favorite | book 6.5 vs median 7.5 | div 1.0 middle pairing spans key number 7
 - Miami (FL) vs Notre Dame | BetMGM | total | value: Under | book 58.5 vs median 64.5 | div 6.0 
