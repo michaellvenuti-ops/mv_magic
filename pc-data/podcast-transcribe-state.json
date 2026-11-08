@@ -64,7 +64,7 @@
    "date": "2026-11-06",
    "queued_at": "2026-11-06T19:32:32.849182-05:00",
    "show": "A Numbers Game",
-   "status": "queued",
+   "status": "transcribing",
    "stem": "a-numbers-game-2026-11-06-hour-1",
    "title": "A Numbers Game | November 6, 2026 | Hour 1",
    "url": "https://injector.simplecastaudio.com/25dcf0d8-fcec-40ac-aa04-9badc8f6cd72/episodes/115a92b1-d536-4348-908e-f74f5bcc6c1f/audio/128/default.mp3?aid=rss_feed&awCollectionId=25dcf0d8-fcec-40ac-aa04-9badc8f6cd72&awEpisodeId=115a92b1-d536-4348-908e-f74f5bcc6c1f&feed=dQdfx569"
@@ -291,16 +291,20 @@
   },
   "VSiN By The Books|2026-11-06|VSiN By The Books | November 6, 2026 | Hour 3": {
    "date": "2026-11-06",
+   "done_at": "2026-11-08T06:25:59.847002-05:00",
    "queued_at": "2026-11-06T19:32:32.043976-05:00",
    "show": "VSiN By The Books",
-   "status": "transcribing",
+   "status": "done",
    "stem": "vsin-by-the-books-2026-11-06-hour-3",
    "title": "VSiN By The Books | November 6, 2026 | Hour 3",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/1c92e776-8994-4e2f-99d5-aa7181d51dfb/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=1c92e776-8994-4e2f-99d5-aa7181d51dfb&feed=iXBZFZCf"
+   "transcript": "transcripts/vsin-by-the-books-2026-11-06-hour-3.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/1c92e776-8994-4e2f-99d5-aa7181d51dfb/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=1c92e776-8994-4e2f-99d5-aa7181d51dfb&feed=iXBZFZCf",
+   "wall_s": 9473,
+   "words": 9509
   }
  },
  "worker": {
-  "current": "VSiN By The Books|2026-11-06|VSiN By The Books | November 6, 2026 | Hour 3",
-  "heartbeat": "2026-11-08T03:48:06.908939-05:00"
+  "current": "A Numbers Game|2026-11-06|A Numbers Game | November 6, 2026 | Hour 1",
+  "heartbeat": "2026-11-08T06:26:05.898702-05:00"
  }
 }
