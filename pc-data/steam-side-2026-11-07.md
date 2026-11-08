@@ -89,3 +89,4 @@ NEW FLAG: FBS Fresno State @ Utah State | 2026-11-07 — Kalshi still dealing sp
 NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — Kalshi still dealing spread -20.5 on Jacksonville State (pre-move median -29.5, now -33.5)
 NEW FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 — Kalshi still dealing total 42.5 on Over (pre-move median 44.0, now 53.5)
 ## 2026-11-07T22:54:21-05:00 — 63 games, 1 steam events, 0 NEW flags, 54 started games skipped
+## 2026-11-07T23:35:10-05:00 — 63 games, 0 steam events, 0 NEW flags, 54 started games skipped
