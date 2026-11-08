@@ -3300,3 +3300,5 @@
 [2026-11-08 02:42:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
 [2026-11-08 02:42:19 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-08 02:43:51 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 220 events (14 with odds), db total 136508 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 02:52:16 ET] sync_to_github.py: FAILED (exit 1) in 295s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 3cb1dd3d71fdf51528be2ced32b9a5e304f4dd6e but expected 40a08a227d
+[2026-11-08 02:53:06 ET] odds_recorder.py: OK in 20s — SUMMARY: recorded 220 events (14 with odds), db total 136728 snapshots / 425 events, feeds ok 6 fail 0
