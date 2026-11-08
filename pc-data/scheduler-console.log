@@ -3831,3 +3831,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 16:38:19 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
 [2026-11-08 16:39:09 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NBA MIA Heat SAC Kings Today 9:15 PM / table / 1st Half Total Under 122.5 / 1st Half Total Over 122.5 / table bar_chart | FanDuel | Polymarket US
 [2026-11-08 16:40:23 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NBA BOS Celtics MIL Bucks Today 8:15 PM / table / Total Under 222.5 / Total Over 222 / table bar_chart | Bally Bet | ProphetX — window 7.0 :
+[2026-11-08 16:46:18 ET] sync_to_github.py: OK in 355s —   ok: steam-side-board-pc.html
+[2026-11-08 16:46:18 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 135, nfl-first-score: 5, pr
+[2026-11-08 16:47:25 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (20 with odds), db total 157432 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 16:48:35 ET] hung_number.py: OK in 70s — HUNG NUMBER: Raiders vs 49ers — FanDuel spread value dog (9.5 vs median 8.5)
+[2026-11-08 16:48:38 ET] rlm.py: OK in 4s
+[2026-11-08 16:48:41 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 16:50:08 ET] dh_sog_middles.py: OK in 87s — - NEW CLEAN W9  (): -111 [52.60%] $1,000 ProphetX -111.0 -111 @ ProphetX / -102 $951 Bet365 -102.0 -102 @ Bet365
+[2026-11-08 16:51:58 ET] dh_game_middles.py: OK in 80s — GAME MIDDLE: NCAAB Richmond Temple Today 5:00 PM / table / Alt Total Under 154.5 / Alt Total Over 153.5 / table | BetRivers | Bet365 — window 322.0 :: -167 $1,0
+[2026-11-08 16:52:43 ET] dh_team_total_middles.py: OK in 45s
+[2026-11-08 16:52:48 ET] nfl_first_score.py: OK in 5s — nfl-first-score: 3 new, 0 unverified, 130 total tallied.
+[2026-11-08 16:53:01 ET] nba_overs_pregame.py: OK in 12s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-08 16:54:11 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 189 events (20 with odds), db total 157621 snapshots / 474 events, feeds ok 6 fail 0
