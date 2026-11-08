@@ -443,3 +443,19 @@
 - NEW CLEAN W238  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +113 [46.95%] $854.13 ProphetX 113.0 +113 @ ProphetX
 - NEW W284  (): -148 [59.68%] $1,000 ProphetX -148.0 -148 @ ProphetX / +136 [42.37%] $712.52 ProphetX 136.0 +136 @ ProphetX
 - NEW W299  (): -159 $1,000 Bet365 -159.0 -159 @ Bet365 / +140 $679 Bally Bet 140.0 +140 @ Bally Bet
+## 2026-11-08T05:25:42-05:00 — sog-middles: 980 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW W400  (): -200 $1,000 theScore -200.0 -200 @ theScore / +200 $500 Bally Bet 200.0 +200 @ Bally Bet
+- NEW CLEAN W216  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +105 $927 Fanatics-NJ 105.0 +105 @ Fanatics-NJ
+- NEW CLEAN W221  (): -116 $1,000 Bet365 -116.0 -116 @ Bet365 / +105 $907 Fanatics-NJ 105.0 +105 @ Fanatics-NJ
+- NEW CLEAN W240  (): -125 $1,000 HardRock -125.0 -125 @ HardRock / +115 [46.51%] $846.26 ProphetX 115.0 +115 @ ProphetX
+- NEW CLEAN W211  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +100 $950 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+- NEW W378  (): -200 $1,000 FanDuel -200.0 -200 @ FanDuel / +178 $540 DraftKings 178.0 +178 @ DraftKings
+- NEW W340  (): -180 $1,000 FanDuel -180.0 -180 @ FanDuel / +160 $598 Fanatics-NJ 160.0 +160 @ Fanatics-NJ
+- NEW W362  (): -192 $1,000 Bet365 -192.0 -192 @ Bet365 / +170 $563 Fanatics-NJ 170.0 +170 @ Fanatics-NJ
+- NEW W328  (): -172 $1,000 Bet365 -172.0 -172 @ Bet365 / +156 [39.06%] $624.80 ProphetX 156.0 +156 @ ProphetX
+- NEW W330  (): -175 $1,000 Bally Bet -175.0 -175 @ Bally Bet / +155 $616 Fanatics-NJ 155.0 +155 @ Fanatics-NJ
+- NEW W330  (): -175 $1,000 Bally Bet -175.0 -175 @ Bally Bet / +155 $616 Bet365 155.0 +155 @ Bet365
+- NEW CLEAN W229  (): -120 $1,000 HardRock -120.0 -120 @ HardRock / +109 [47.86%] $886.63 ProphetX 109.0 +109 @ ProphetX
+- NEW CLEAN W255  (): -135 $1,000 DraftKings -135.0 -135 @ DraftKings / +120 $791 HardRock 120.0 +120 @ HardRock
+- UPDATED CLEAN W255  (): -135 $1,000 Bet365 -135.0 -135 @ Bet365 / +120 $791 HardRock 120.0 +120 @ HardRock
+- NEW W283  (): -150 $1,000 theScore -150.0 -150 @ theScore / +133 $715 Bally Bet 133.0 +133 @ Bally Bet
