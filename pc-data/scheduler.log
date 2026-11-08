@@ -3765,3 +3765,8 @@
 [2026-11-08 15:47:08 ET] dh_game_middles.py: OK in 77s — GAME MIDDLE: NCAAF Sacramento St. Central Michigan Nov-11 7:30 PM / table / Spread Sacramento St. +18 / Alt Spread Central Michigan -17 / table | Bally Bet | Fa
 [2026-11-08 15:54:17 ET] sync_to_github.py: FAILED (exit 1) in 369s —   FAILED: pc-data/steam-side-2026-11-08.md (HTTP 409: {'error': '{"message":"is at 7608815bfb4e033dcbef917b99680c5a55685eee but expected a9383e030526089028823be
 [2026-11-08 15:55:25 ET] odds_recorder.py: OK in 37s — SUMMARY: recorded 189 events (27 with odds), db total 156298 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 16:01:16 ET] sync_to_github.py: FAILED (exit 1) in 351s —   FAILED: pc-data/spread-cover-2026-11-05.md (HTTP 409: {'error': '{"message":"is at ed331a82fd458c265cf4ed99dee6b20c38d41c7c but expected f77848860e969b505c171
+[2026-11-08 16:01:48 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (27 with odds), db total 156487 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 16:05:02 ET] dh_key_number_middles.py: OK in 193s — key-number-middles: no new strict-key middles.
+[2026-11-08 16:05:08 ET] steam_side.py: OK in 6s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 16:06:48 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE : NBA NO Pelicans LA Clippers Today 9:15 PM / table / Alt Spread NO Pelicans +4.5 / Alt Spread LA Clippers -3.5 / table | HardRock | Bally Bet — win
