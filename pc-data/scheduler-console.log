@@ -3239,3 +3239,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-07 23:41:56 ET] dh_game_middles.py: OK in 79s — GAME MIDDLE: NCAAB Western Kentucky Tennessee Tech Nov-08 3:00 PM / table / Total Over 159.5 / Alt Total Under 160.5 / table | BetRivers | Bet365 — window 223.0
 [2026-11-07 23:48:15 ET] sync_to_github.py: FAILED (exit 1) in 289s —   FAILED: pc-data/promo-converter-2026-11-07.md (HTTP 409: {'error': '{"message":"is at fb31668abecefeec9abcae92f58cab4ee268a3d8 but expected d579efac8028ab7033
 [2026-11-07 23:49:16 ET] odds_recorder.py: OK in 31s — SUMMARY: recorded 220 events (14 with odds), db total 131888 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 23:53:51 ET] sync_to_github.py: FAILED (exit 1) in 275s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at 922e8bd7a1206fb3c16f950e2b1a605315ca07e4 but expected 7c45dd7652d764f09b8844e5bd9958b28ab8c2
+[2026-11-07 23:54:24 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 220 events (14 with odds), db total 132108 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 23:55:39 ET] hung_number.py: OK in 75s — No new hung numbers (100 current flags).
+[2026-11-07 23:55:43 ET] rlm.py: OK in 4s
+[2026-11-07 23:55:46 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
