@@ -3147,3 +3147,11 @@
 [2026-11-07 21:55:08 ET] dh_key_number_middles.py: FAILED (exit 1) in 396s —   - <launched> pid=17292
 [2026-11-07 21:55:27 ET] steam_side.py: OK in 17s — STEAM-SIDE FLAG: FBS Sam Houston @ Jacksonville State | 2026-11-07 | Kalshi | Over total 42.5 (median 44.0 -> 53.5)
 [2026-11-07 22:00:20 ET] dh_prop_middles.py: FAILED (exit 1) in 292s —   - <launched> pid=16488
+[2026-11-07 22:05:16 ET] sync_to_github.py: OK in 293s —   ok: steam-side-board-pc.html
+[2026-11-07 22:05:16 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 107, sog-middles: 3727, won
+[2026-11-07 22:06:18 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 220 events (19 with odds), db total 130128 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-07 22:10:04 ET] dh_low_holds.py: FAILED (exit 1) in 226s —   - [pid=17592][err] [17592:16336:1107/220922.053:ERROR:content\browser\network_service_instance_impl.cc:652] Network service crashed or was terminated, restart
+[2026-11-07 22:14:07 ET] dh_sog_middles.py: FAILED (exit 1) in 241s —   - <launched> pid=18140
+[2026-11-07 22:18:45 ET] dh_team_total_middles.py: FAILED (exit 1) in 277s —   - <launched> pid=3188
+[2026-11-07 22:18:49 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 122 total tallied.
+[2026-11-07 22:18:52 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
