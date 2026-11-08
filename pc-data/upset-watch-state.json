@@ -778,7 +778,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "FIU",
-   "dog_team": "Missouri St"
+   "dog_team": "Missouri St",
+   "final": true
   },
   "401871098": {
    "sport": "CFB",
@@ -877,11 +878,17 @@
    "sport": "CFB",
    "matchup": "Liberty at New Mexico St",
    "date": "2026-11-08",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 14.5,
    "fav_team": "Liberty",
-   "dog_team": "New Mexico St"
+   "dog_team": "New Mexico St",
+   "alerted_at": "2026-11-07T20:12:01",
+   "board_read_at": "2026-11-07T20:12:01",
+   "alert_expires_at": "2026-11-07T20:17:01",
+   "alert_detail": "11:29 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401860913": {
    "sport": "CFB",
@@ -1528,7 +1535,8 @@
    "fav": "away",
    "spread": 13.5,
    "fav_team": "N Arizona",
-   "dog_team": "Cal Poly"
+   "dog_team": "Cal Poly",
+   "final": true
   },
   "401868090": {
    "sport": "CFB",
@@ -1554,7 +1562,8 @@
    "alert_expires_at": "2026-11-07T17:17:01",
    "alert_detail": "11:18 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 7
+   "alert_dog_score": 7,
+   "final": true
   },
   "401869140": {
    "sport": "CFB",
@@ -3460,7 +3469,8 @@
    "fav": "home",
    "spread": 20.5,
    "fav_team": "G Washington",
-   "dog_team": "Hampton"
+   "dog_team": "Hampton",
+   "final": true
   },
   "401924895": {
    "sport": "NCAAB",
@@ -3470,7 +3480,8 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "New Mexico",
-   "dog_team": "N Arizona"
+   "dog_team": "N Arizona",
+   "final": true
   },
   "401924843": {
    "sport": "NCAAB",
@@ -3588,7 +3599,8 @@
    "fav": "home",
    "spread": 23.5,
    "fav_team": "Murray St",
-   "dog_team": "N'Western St"
+   "dog_team": "N'Western St",
+   "live_ml": -4000
   },
   "401923392": {
    "sport": "NCAAB",
@@ -3606,7 +3618,7 @@
    "date": "2026-11-08",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 9.5,
    "fav_team": "Little Rock",
    "dog_team": "SE Louisiana"
   },
