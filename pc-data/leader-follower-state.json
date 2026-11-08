@@ -616,7 +616,7 @@
     },
     "Fanatics": {
      "spread": 3.5,
-     "total": 53.0
+     "total": 52.5
     },
     "Hard Rock": {
      "spread": 3.5,
@@ -2323,7 +2323,7 @@
      "total": 51.5
     },
     "DraftKings": {
-     "spread": 4.5,
+     "spread": 5.5,
      "total": 51.5
     },
     "FanDuel": {
@@ -2347,7 +2347,16 @@
      "total": 51.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "DraftKings",
+     "direction": 1,
+     "market": "spread",
+     "new": 5.5,
+     "old": 4.5,
+     "ts": "2026-11-08T06:41:37-05:00"
+    }
+   ]
   },
   "Delaware @ Kennesaw State | 2026-11-05": {
    "books": {
