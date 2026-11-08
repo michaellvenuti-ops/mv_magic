@@ -3552,3 +3552,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 08:47:47 ET] steam_side.py: OK in 7s — steam-side: 63 games, no new flags (silent).
 [2026-11-08 08:47:52 ET] futures_board.py: FAILED (exit 2) in 5s — futures-board: zero markets parsed — see --dump
 [2026-11-08 08:47:54 ET] score_pred.py: FAILED (exit 1) in 2s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
+[2026-11-08 08:53:33 ET] sync_to_github.py: FAILED (exit 1) in 338s —   FAILED: pc-data/upset-test.log (HTTP 409: {'error': '{"message":"is at 7af9def8befc2aeee2dbd3e2d288f45950551678 but expected 7de99cb7da74062d8109bed37e99150eb
+[2026-11-08 08:54:41 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 220 events (14 with odds), db total 146408 snapshots / 425 events, feeds ok 6 fail 0
+[2026-11-08 08:55:14 ET] dh_low_holds.py: OK in 32s — LOW-HOLDS: NFL LA Chargers BAL Ravens Nov-16 8:15 PM / table / Moneyline BAL Ravens / Moneyline LA Chargers / table | Bally Bet | FanDuel
+[2026-11-08 08:56:44 ET] hung_number.py: OK in 90s — No new hung numbers (100 current flags).
+[2026-11-08 08:56:46 ET] rlm.py: OK in 3s
+[2026-11-08 08:56:49 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 08:57:32 ET] yahoo_brief.py: OK in 43s — SUMMARY: signed_in=False — report written, no extraction
