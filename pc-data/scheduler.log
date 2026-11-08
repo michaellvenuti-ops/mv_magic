@@ -3662,3 +3662,8 @@
 [2026-11-08 12:45:22 ET] odds_recorder.py: OK in 36s — SUMMARY: recorded 189 events (54 with odds), db total 151951 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 12:53:46 ET] sync_to_github.py: FAILED (exit 1) in 354s —   FAILED: hung-number-board-pc.html (HTTP 409: {'error': '{"message":"is at 9458b65c6a46d7b07dd4e135aee9588cfd9f3c55 but expected 0faf6133101510e86c9cf76dece7db
 [2026-11-08 12:54:18 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (54 with odds), db total 152140 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 12:59:55 ET] sync_to_github.py: FAILED (exit 1) in 337s —   FAILED: pc-data/steam-side-state.json (HTTP 409: {'error': '{"message":"is at 7a9361c99b4c303d576ce5e78a926d91af9370c5 but expected dcee377feeff9f5bb83572539c
+[2026-11-08 13:00:28 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (54 with odds), db total 152329 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 13:02:11 ET] dh_game_middles.py: OK in 103s — GAME MIDDLE: NCAAB Norfolk St. William & Mary Today 6:00 PM / table / Alt Spread Norfolk St. +13.5 / Alt Spread William & Mary -13 / table | Bally Bet | Bet365 
+[2026-11-08 13:06:10 ET] dh_key_number_middles.py: OK in 238s — key-number-middles: no new strict-key middles.
+[2026-11-08 13:06:15 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
