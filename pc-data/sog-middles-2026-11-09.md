@@ -745,3 +745,23 @@
 - NEW W300  (): -160 $1,000 theScore -160.0 -160 @ theScore / +140 $677 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
 - NEW W300  (): -160 $1,000 FanDuel -160.0 -160 @ FanDuel / +140 $677 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
 - NEW CLEAN W3  (): -108 $1,000 DraftKings -108.0 -108 @ DraftKings / -105 $988 Bet365 -105.0 -105 @ Bet365
+## 2026-11-09T06:44:03-05:00 — sog-middles: 973 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW W345  (): -180 $1,000 Bally Bet -180.0 -180 @ Bally Bet / +165 $587 Fanatics-NJ 165.0 +165 @ Fanatics-NJ
+- NEW CLEAN W220  (): -115 $1,000 theScore -115.0 -115 @ theScore / +105 $912 Bet365 105.0 +105 @ Bet365
+- UPDATED W315  (): -165 $1,000 HardRock -165.0 -165 @ HardRock / +150 $642 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W252  (): -132 $1,000 Bally Bet -132.0 -132 @ Bally Bet / +120 $799 Fanatics-NJ 120.0 +120 @ Fanatics-NJ
+- NEW W295  (): -155 $1,000 Bally Bet -155.0 -155 @ Bally Bet / +140 $685 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
+- NEW CLEAN W228  (): -120 $1,000 Fanatics-NJ -120.0 -120 @ Fanatics-NJ / +108 $881 Bet365 108.0 +108 @ Bet365
+- NEW W275  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +130 $735 HardRock 130.0 +130 @ HardRock
+- NEW CLEAN W1  (): -106 $1,000 Bet365 -106.0 -106 @ Bet365 / -105 $995 theScore -105.0 -105 @ theScore
+- NEW CLEAN W1  (): -106 $1,000 FanDuel -106.0 -106 @ FanDuel / -105 $995 Fanatics-NJ -105.0 -105 @ Fanatics-NJ
+- NEW CLEAN W237  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +112 $849 FanDuel 112.0 +112 @ FanDuel
+- NEW W320  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W217  (): -115 $1,000 Fanatics-NJ -115.0 -115 @ Fanatics-NJ / +102 $926 Bet365 102.0 +102 @ Bet365
+- NEW W273  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +128 $741 FanDuel 128.0 +128 @ FanDuel
+- NEW W375  (): -200 $1,000 FanDuel -200.0 -200 @ FanDuel / +175 $545 Fanatics-NJ 175.0 +175 @ Fanatics-NJ
+- NEW CLEAN W226  (): -120 $1,000 Fanatics-NJ -120.0 -120 @ Fanatics-NJ / +106 $890 FanDuel 106.0 +106 @ FanDuel
+- NEW CLEAN W3  (): -108 $1,000 FanDuel -108.0 -108 @ FanDuel / -105 $986 Bally Bet -105.0 -105 @ Bally Bet
+- NEW W365  (): -195 $1,000 Fanatics-NJ -195.0 -195 @ Fanatics-NJ / +170 $560 theScore 170.0 +170 @ theScore
+- NEW W300  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +140 $677 HardRock 140.0 +140 @ HardRock
+- NEW W355  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +165 $576 HardRock 165.0 +165 @ HardRock
