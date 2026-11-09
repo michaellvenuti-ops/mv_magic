@@ -4383,3 +4383,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 08:55:10 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 178909 snapshots / 604 events, feeds ok 6 fail 0
 [2026-11-09 08:57:16 ET] dh_prop_middles.py: OK in 126s — PROP MIDDLE CLEAN : NCAAB Cleveland St. Bowling Green Today 7:00 PM / table / 1st Half Alt Total Under 81.5 / 1st Half Alt Total Over 78.5 / table | Bally Bet |
 [2026-11-09 08:57:48 ET] yahoo_brief.py: OK in 32s — SUMMARY: signed_in=False — report written, no extraction
+[2026-11-09 09:05:13 ET] sync_to_github.py: OK in 444s —   ok: steam-side-board-pc.html
+[2026-11-09 09:05:13 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 26, sog-middles: 1023. Deta
+[2026-11-09 09:06:26 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 179103 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 09:07:34 ET] hung_number.py: OK in 68s — No new hung numbers (25 current flags).
+[2026-11-09 09:07:38 ET] rlm.py: OK in 4s
+[2026-11-09 09:07:41 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 09:09:09 ET] dh_sog_middles.py: OK in 87s — - NEW W350  (): -185 $1,000 Fanatics-NJ -185.0 -185 @ Fanatics-NJ / +165 $581 Bet365 165.0 +165 @ Bet365
+[2026-11-09 09:10:03 ET] dh_team_total_middles.py: OK in 54s
+[2026-11-09 09:10:05 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 09:10:07 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 09:10:24 ET] half_percent.py: OK in 16s — half-percent: PICK SGRY ref $25.80 target $25.93 stop $25.67
+[2026-11-09 09:12:07 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 194 events (68 with odds), db total 179297 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 09:16:37 ET] dh_key_number_middles.py: OK in 180s — key-number-middles: no new strict-key middles.
