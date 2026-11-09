@@ -4060,3 +4060,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 23:25:47 ET] rlm.py: OK in 4s
 [2026-11-08 23:25:50 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
 [2026-11-08 23:26:23 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 23:34:33 ET] sync_to_github.py: OK in 370s —   ok: steam-side-board-pc.html
+[2026-11-08 23:34:33 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 113, nfl-first-score: 12, p
+[2026-11-08 23:35:06 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (1 with odds), db total 166315 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:37:01 ET] dh_game_middles.py: OK in 115s — GAME MIDDLE: NCAAB North Florida 14 Miami Nov-09 7:00 PM / table / Total Over 159.5 / Alt Total Under 161.5 / table bar_chart | BetRivers | ProphetX — window 22
+[2026-11-08 23:39:01 ET] dh_prop_middles.py: OK in 89s — PROP MIDDLE CLEAN : NCAAB Wagner 4 UConn Nov-09 7:00 PM / table / Total Under 142.5 / Alt Total Over 141.5 / table | Bally Bet | DraftKings — window 209.0 :: {'
+[2026-11-08 23:40:26 ET] dh_sog_middles.py: OK in 85s — - NEW CLEAN W251  (): -135 $1,000 Fanatics-NJ -135.0 -135 @ Fanatics-NJ / +116 $806 Bet365 116.0 +116 @ Bet365
+[2026-11-08 23:41:46 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 189 events (1 with odds), db total 166504 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:42:40 ET] dh_team_total_middles.py: OK in 53s
+[2026-11-08 23:42:41 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 135 total tallied.
+[2026-11-08 23:42:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
