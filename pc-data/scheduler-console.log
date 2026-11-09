@@ -4016,3 +4016,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 22:05:14 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-08 22:10:17 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (2 with odds), db total 164425 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 22:14:45 ET] dh_key_number_middles.py: OK in 178s — key-number-middles: no new strict-key middles.
+[2026-11-08 22:20:55 ET] sync_to_github.py: OK in 369s —   ok: steam-side-board-pc.html
+[2026-11-08 22:20:55 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 109, nfl-first-score: 12, p
+[2026-11-08 22:22:25 ET] odds_recorder.py: OK in 60s — SUMMARY: recorded 189 events (2 with odds), db total 164614 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 22:23:35 ET] hung_number.py: OK in 70s — No new hung numbers (105 current flags).
+[2026-11-08 22:23:39 ET] rlm.py: OK in 4s
+[2026-11-08 22:23:41 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 22:23:43 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 22:25:18 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE : NBA SA Spurs PHO Suns Nov-09 9:15 PM / table / Alt Total Under 232 / Alt Total Over 231.5 / table | Fanatics-NJ | Bet365 — window 290.0 :: {'side'
+[2026-11-08 22:27:21 ET] dh_game_middles.py: OK in 93s — GAME MIDDLE: NBA SA Spurs PHO Suns Nov-09 9:15 PM / table / Alt Total Under 232 / Alt Total Over 231.5 / table | Fanatics-NJ | Bet365 — window 290.0 :: -150 $1,
+[2026-11-08 22:28:46 ET] dh_sog_middles.py: OK in 85s — - NEW W262  (): -141 $1,000 BetRivers -141.0 -141 @ BetRivers / +121 $773 DraftKings 121.0 +121 @ DraftKings
+[2026-11-08 22:30:00 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 189 events (2 with odds), db total 164803 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 22:30:52 ET] dh_team_total_middles.py: OK in 53s
+[2026-11-08 22:30:53 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 134 total tallied.
