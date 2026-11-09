@@ -4070,3 +4070,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 23:42:40 ET] dh_team_total_middles.py: OK in 53s
 [2026-11-08 23:42:41 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 135 total tallied.
 [2026-11-08 23:42:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-08 23:50:42 ET] sync_to_github.py: FAILED (exit 1) in 359s —   FAILED: steam-side-board-pc.html (HTTP 409: {'error': '{"message":"is at 2df3c5b8357457d137064f881bdb1bf30baf73c1 but expected 28b3807e9c9e85f9f3f6e1b8eeaab38
+[2026-11-08 23:51:15 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (1 with odds), db total 166693 snapshots / 474 events, feeds ok 6 fail 0
