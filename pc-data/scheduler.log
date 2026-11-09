@@ -4206,3 +4206,5 @@
 [2026-11-09 04:54:26 ET] dh_team_total_middles.py: OK in 69s
 [2026-11-09 04:54:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 04:54:30 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 05:01:09 ET] sync_to_github.py: FAILED (exit 1) in 399s —   FAILED: pc-data/rlm-2026-11-09.md (HTTP 500: {'error': ''})
+[2026-11-09 05:02:19 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 173865 snapshots / 604 events, feeds ok 6 fail 0
