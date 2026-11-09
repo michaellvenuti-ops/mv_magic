@@ -1,7 +1,14 @@
 {
  "entries": {
   "2026-11-06": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 286.9700012207031,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 292.43,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar (2026-11-05, today) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -14,6 +21,21 @@
     "ticker": "NET",
     "vol": 221554
    }
+  },
+  "2026-11-09": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-09, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Surgery Partners, Inc. Common Stock",
+    "entry": 25.8,
+    "mcap": 3033376000.0,
+    "pct": 11.21,
+    "stop": 25.67,
+    "target": 25.93,
+    "ticker": "SGRY",
+    "vol": 493681
+   }
   }
  },
  "meta": {
@@ -21,6 +43,7 @@
    "losses": 0,
    "modeled_pl": 0.0,
    "no_data": 0,
+   "no_trades": 1,
    "time_exits": 0,
    "wins": 0
   }
