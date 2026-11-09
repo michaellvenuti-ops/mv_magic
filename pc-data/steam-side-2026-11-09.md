@@ -15,3 +15,9 @@ NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-09 — FanDuel still dealing spread
 NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-09 — bet365 still dealing spread 2.5 on Oklahoma (pre-move median 2.5, now 1.5)
 NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-09 — FanDuel still dealing spread 2.5 on Oklahoma (pre-move median 2.5, now 1.5)
 ## 2026-11-09T07:37:10-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-09T08:10:34-05:00 — 67 games, 2 steam events, 5 NEW flags
+NEW FLAG: FBS Boston College @ Notre Dame | 2026-11-09 — bet365 still dealing spread -30.5 on Boston College (pre-move median -30.5, now -29.5)
+NEW FLAG: FBS Boston College @ Notre Dame | 2026-11-09 — Kalshi still dealing spread -30.5 on Boston College (pre-move median -30.5, now -29.5)
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — BetMGM still dealing spread 1.0 on UTSA (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — DraftKings still dealing spread 1.5 on UTSA (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Caesars still dealing spread 1.5 on UTSA (pre-move median 1.0, now -1.0)
