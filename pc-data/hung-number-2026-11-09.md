@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-09 (scan 2026-11-09 13:37)
+# Hung numbers — 2026-11-09 (scan 2026-11-09 14:49)
 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
@@ -6,7 +6,7 @@
 - Cardinals vs Seahawks | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Raiders vs 49ers | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Raiders vs 49ers | Fanatics | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
-- Northwestern vs Ohio State | FanDuel | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Memphis vs South Florida | Fanatics | total | value: Under | book 48.5 vs median 50.0 | div 1.5 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - New Mexico State vs Missouri State | BetMGM | spread | value: dog | book 48.5 vs median 1.5 | div 47.0 middle pairing spans key number 7
 - New Mexico State vs Missouri State | BetMGM | moneyline New Mexico State | value: New Mexico State | book 98.0 vs median 48.8 | div 49.3 
@@ -14,7 +14,8 @@
 - Missouri vs Georgia | FanDuel | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
 - Fresno State vs Texas State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Ole Miss vs Oklahoma | bet365 | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Ole Miss vs Oklahoma | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Appalachian State vs Marshall | bet365 | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Appalachian State vs Marshall | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - San Jose State vs Air Force | Fanatics | spread | value: dog | book 12.5 vs median 11.5 | div 1.0 
+- Wyoming vs UTEP | Fanatics | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Wyoming vs UTEP | Fanatics | total | value: Over | book 41.0 vs median 39.5 | div 1.5 
