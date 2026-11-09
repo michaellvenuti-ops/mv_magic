@@ -4295,3 +4295,14 @@
 [2026-11-09 07:39:07 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NBA LA Lakers ATL Hawks Today 7:15 PM / table / Alt Spread LA Lakers +3.5 / Alt Spread ATL Hawks -2.5 / table | Fanatics-NJ | Bally Bet — window 31
 [2026-11-09 07:40:37 ET] dh_prop_middles.py: OK in 90s — PROP MIDDLE CLEAN : NCAAB Boston University Northwestern Today 8:00 PM / table / Total Under 147.5 / Alt Total Over 146.5 / table | Bally Bet | DraftKings — win
 [2026-11-09 07:41:57 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 194 events (68 with odds), db total 177357 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 07:49:40 ET] sync_to_github.py: OK in 404s —   ok: steam-side-board-pc.html
+[2026-11-09 07:49:41 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 23, sog-middles: 774. Detai
+[2026-11-09 07:50:14 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 177551 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 07:51:45 ET] dh_sog_middles.py: OK in 91s — - NEW CLEAN W206  (): -106 $1,000 FanDuel -106.0 -106 @ FanDuel / +100 [50%] $1,005.46 Polymarket US 100.0 +100 @ Polymarket US
+[2026-11-09 07:53:09 ET] dh_team_total_middles.py: OK in 84s
+[2026-11-09 07:53:10 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 07:53:13 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 07:54:55 ET] hung_number.py: OK in 72s — HUNG NUMBER: Utah State vs San Diego State — BetMGM moneyline San Diego State value San Diego State (98.0 vs median 51.0)
+[2026-11-09 07:54:58 ET] rlm.py: OK in 3s
+[2026-11-09 07:55:02 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 07:56:14 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 177745 snapshots / 604 events, feeds ok 6 fail 0
