@@ -4319,3 +4319,10 @@
 [2026-11-09 08:15:28 ET] nhl_totals_scan.py: OK in 5s — NHL TOTALS FLAG UNDER: NYR @ EDM — predicted 5.23 vs book 6.5 (-108)
 [2026-11-09 08:15:31 ET] total_projectors_scan.py: OK in 3s — }
 [2026-11-09 08:15:34 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 8, 'NCAAB': 33}, new 0, moved 0, baselines 41.
+[2026-11-09 08:24:07 ET] sync_to_github.py: FAILED (exit 1) in 422s —   FAILED: pc-data/sog-middles-state.json (HTTP 409: {'error': '{"message":"is at 69eaf89c3a925e6d6d60c69be6b5f2564ec8ade9 but expected d51f613da49723acd0a39f440
+[2026-11-09 08:24:39 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 178327 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 08:25:05 ET] dh_kalshi_poly_arb.py: OK in 26s — KALSHI-POLY-ARB: NBA CLE Cavaliers CHA Hornets Today 7:15 PM / table / Alt Spread CHA Hornets +21.5 / Alt Spread CLE Cavaliers -21.5 / table bar_chart | DraftKi
+[2026-11-09 08:26:42 ET] dh_sog_middles.py: OK in 97s — - NEW CLEAN W205  (): -105 $1,000 Bet365 -105.0 -105 @ Bet365 / +100 [50%] $1,008.88 Polymarket US 100.0 +100 @ Polymarket US
+[2026-11-09 08:27:40 ET] dh_team_total_middles.py: OK in 58s
+[2026-11-09 08:27:41 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 08:27:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
