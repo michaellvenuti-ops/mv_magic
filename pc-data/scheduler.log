@@ -4075,3 +4075,15 @@
 [2026-11-09 01:05:09 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - queue empty
 [2026-11-09 01:08:46 ET] dh_key_number_middles.py: OK in 187s — key-number-middles: no new strict-key middles.
 [2026-11-09 01:08:51 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-09 01:15:14 ET] sync_to_github.py: OK in 383s —   ok: steam-side-board-pc.html
+[2026-11-09 01:15:15 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 246. Deta
+[2026-11-09 01:16:27 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 168627 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 01:16:57 ET] dh_arbitrage.py: OK in 30s — ARBITRAGE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table bar_chart / Alt Spread IND Pacers +15.5 / Alt Spread DAL Mavericks -15.5 / table | Polymarket US |
+[2026-11-09 01:17:14 ET] dh_low_holds.py: OK in 17s — LOW-HOLDS: NCAAB South Carolina St. Chicago St. Today 7:00 PM / table / Alt Total Over 142.5 / Alt Total Under 143 / table | DraftKings | Bet365
+[2026-11-09 01:18:25 ET] dh_game_middles.py: OK in 71s — GAME MIDDLE: NCAAB S. Carolina UpState Coastal Carolina Today 7:00 PM / table / Total Over 148.5 / Alt Total Under 149 / table | Caesars | Bet365 — window 215.0
+[2026-11-09 01:20:20 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE CLEAN : NCAAB UL Monroe Texas A&M Today 8:00 PM / table / Total Over 166.5 / Alt Total Under 167 / table | BetRivers | Bet365 — window 217.0 :: {'si
+[2026-11-09 01:21:49 ET] dh_sog_middles.py: OK in 89s — - NEW W357  (): -192 $1,000 Bet365 -192.0 -192 @ Bet365 / +165 $574 Fanatics-NJ 165.0 +165 @ Fanatics-NJ
+[2026-11-09 01:22:58 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 194 events (68 with odds), db total 168821 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 01:23:49 ET] dh_team_total_middles.py: OK in 51s
+[2026-11-09 01:23:50 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 01:23:52 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
