@@ -4440,3 +4440,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 10:20:56 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-09 10:24:27 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: no new strict-key middles.
 [2026-11-09 10:25:42 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 194 events (68 with odds), db total 180849 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:35:19 ET] sync_to_github.py: OK in 457s —   ok: steam-side-board-pc.html
+[2026-11-09 10:35:19 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 23, promo
+[2026-11-09 10:35:52 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 181043 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:37:16 ET] dh_kalshi_poly_arb.py: OK in 83s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-09 10:39:01 ET] dh_game_middles.py: OK in 105s — GAME MIDDLE: NCAAB Florida A&M UAB Today 7:30 PM / table / Total Under 156.5 / Alt Total Over 156 / table | FanDuel | Bet365 — window 215.0 :: -110 $1,000 FanDu
+[2026-11-09 10:39:07 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Utah State @ San Diego State | 2026-11-09 | Fanatics | Utah State spread 1.5 (median 1.5 -> 2.5)
+[2026-11-09 10:40:48 ET] dh_prop_middles.py: OK in 101s — PROP MIDDLE : NCAAB Illinois St. Purdue Today 8:30 PM / table / Alt Total Over 138.5 / Alt Total Under 139 / table | Caesars | Bet365 — window 350.0 :: {'side':
+[2026-11-09 10:42:09 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 194 events (68 with odds), db total 181237 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:44:39 ET] dh_arbitrage.py: OK in 30s — ARBITRAGE: NFL WAS Commanders NY Giants Nov-12 8:15 PM / table / Alt Total Under 59.5 / Alt Total Over 59.5 YES / table bar_chart | Fanatics-NJ | Kalshi
+[2026-11-09 10:44:41 ET] totals_scan.py: OK in 2s — totals: no new flags (silent).
+[2026-11-09 10:44:46 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-09 10:45:41 ET] dh_derivative_ev.py: OK in 54s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
