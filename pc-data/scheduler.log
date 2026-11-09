@@ -4130,3 +4130,9 @@
 [2026-11-09 02:35:16 ET] hung_number.py: OK in 66s — No new hung numbers (105 current flags).
 [2026-11-09 02:35:19 ET] rlm.py: OK in 3s
 [2026-11-09 02:35:22 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-09 02:42:48 ET] sync_to_github.py: OK in 386s —   ok: steam-side-board-pc.html
+[2026-11-09 02:42:48 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 359. Deta
+[2026-11-09 02:43:21 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 170761 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 02:48:22 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: no new strict-key middles.
+[2026-11-09 02:48:27 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-09 02:49:37 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 170955 snapshots / 604 events, feeds ok 6 fail 0
