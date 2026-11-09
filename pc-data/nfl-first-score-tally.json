@@ -1222,14 +1222,14 @@
    "ties": 0
   },
   {
-   "date": "2026-11-08",
    "away": "Arizona Cardinals",
-   "home": "Seattle Seahawks",
+   "date": "2026-11-08",
+   "final": "3-17",
    "first": "Arizona Cardinals",
-   "seq": "3-0>3-7>3-14>3-17",
+   "home": "Seattle Seahawks",
    "lead_changes": 1,
-   "ties": 0,
-   "final": "3-17"
+   "seq": "3-0>3-7>3-14>3-17",
+   "ties": 0
   },
   {
    "away": "Cincinnati Bengals",
@@ -1283,23 +1283,33 @@
   },
   {
    "date": "2026-11-08",
-   "away": "Houston Texans",
-   "home": "Los Angeles Chargers",
-   "first": "Houston Texans",
-   "seq": "7-0>7-3>10-3>10-6>10-9>17-9>24-9>31-9>38-9>38-15>41-15>41-22>44-22",
+   "away": "Green Bay Packers",
+   "home": "New England Patriots",
+   "first": "Green Bay Packers",
+   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
    "lead_changes": 0,
    "ties": 0,
-   "final": "44-22"
+   "final": "45-27"
   },
   {
+   "away": "Houston Texans",
    "date": "2026-11-08",
-   "away": "Las Vegas Raiders",
-   "home": "San Francisco 49ers",
-   "first": "San Francisco 49ers",
-   "seq": "0-7>0-14>7-14>7-21>10-21>10-28>17-28>17-35>17-38",
+   "final": "44-22",
+   "first": "Houston Texans",
+   "home": "Los Angeles Chargers",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "17-38"
+   "seq": "7-0>7-3>10-3>10-6>10-9>17-9>24-9>31-9>38-9>38-15>41-15>41-22>44-22",
+   "ties": 0
+  },
+  {
+   "away": "Las Vegas Raiders",
+   "date": "2026-11-08",
+   "final": "17-38",
+   "first": "San Francisco 49ers",
+   "home": "San Francisco 49ers",
+   "lead_changes": 0,
+   "seq": "0-7>0-14>7-14>7-21>10-21>10-28>17-28>17-35>17-38",
+   "ties": 0
   },
   {
    "away": "Los Angeles Rams",
@@ -1334,7 +1344,7 @@
  ],
  "tally": {
   "New England Patriots": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 5
   },
   "Seattle Seahawks": {
@@ -1406,8 +1416,8 @@
    "scored_first": 4
   },
   "Green Bay Packers": {
-   "gp": 8,
-   "scored_first": 6
+   "gp": 9,
+   "scored_first": 7
   },
   "Minnesota Vikings": {
    "gp": 7,
@@ -2684,14 +2694,14 @@
    "ties": 0
   },
   {
-   "date": "2026-11-08",
    "away": "Arizona Cardinals",
-   "home": "Seattle Seahawks",
+   "date": "2026-11-08",
+   "final": "3-17",
    "first": "Arizona Cardinals",
-   "seq": "3-0>3-7>3-14>3-17",
+   "home": "Seattle Seahawks",
    "lead_changes": 1,
-   "ties": 0,
-   "final": "3-17"
+   "seq": "3-0>3-7>3-14>3-17",
+   "ties": 0
   },
   {
    "away": "Cincinnati Bengals",
@@ -2745,23 +2755,33 @@
   },
   {
    "date": "2026-11-08",
-   "away": "Houston Texans",
-   "home": "Los Angeles Chargers",
-   "first": "Houston Texans",
-   "seq": "7-0>7-3>10-3>10-6>10-9>17-9>24-9>31-9>38-9>38-15>41-15>41-22>44-22",
+   "away": "Green Bay Packers",
+   "home": "New England Patriots",
+   "first": "Green Bay Packers",
+   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
    "lead_changes": 0,
    "ties": 0,
-   "final": "44-22"
+   "final": "45-27"
   },
   {
+   "away": "Houston Texans",
    "date": "2026-11-08",
-   "away": "Las Vegas Raiders",
-   "home": "San Francisco 49ers",
-   "first": "San Francisco 49ers",
-   "seq": "0-7>0-14>7-14>7-21>10-21>10-28>17-28>17-35>17-38",
+   "final": "44-22",
+   "first": "Houston Texans",
+   "home": "Los Angeles Chargers",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "17-38"
+   "seq": "7-0>7-3>10-3>10-6>10-9>17-9>24-9>31-9>38-9>38-15>41-15>41-22>44-22",
+   "ties": 0
+  },
+  {
+   "away": "Las Vegas Raiders",
+   "date": "2026-11-08",
+   "final": "17-38",
+   "first": "San Francisco 49ers",
+   "home": "San Francisco 49ers",
+   "lead_changes": 0,
+   "seq": "0-7>0-14>7-14>7-21>10-21>10-28>17-28>17-35>17-38",
+   "ties": 0
   },
   {
    "away": "Los Angeles Rams",
@@ -2796,9 +2816,9 @@
  ],
  "lead_change_team_avgs": {
   "New England Patriots": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 8,
-   "avg_per_game": 1.0
+   "avg_per_game": 0.89
   },
   "Seattle Seahawks": {
    "games": 9,
@@ -2886,9 +2906,9 @@
    "avg_per_game": 0.88
   },
   "Green Bay Packers": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 9,
-   "avg_per_game": 1.12
+   "avg_per_game": 1.0
   },
   "Minnesota Vikings": {
    "games": 7,
