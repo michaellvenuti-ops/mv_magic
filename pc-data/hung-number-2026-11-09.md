@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-09 (scan 2026-11-09 01:32)
+# Hung numbers — 2026-11-09 (scan 2026-11-09 02:34)
 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
