@@ -4039,3 +4039,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 22:55:08 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 189 events (2 with odds), db total 165370 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 22:55:42 ET] dh_kalshi_poly_arb.py: OK in 35s — KALSHI-POLY-ARB: NCAAB Florida Gulf Coast Georgia Nov-09 7:00 PM / table bar_chart / Moneyline Georgia YES / Moneyline Florida Gulf Coast / table | Kalshi | Bet
 [2026-11-08 22:55:46 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
+[2026-11-08 23:01:44 ET] sync_to_github.py: OK in 358s —   ok: steam-side-board-pc.html
+[2026-11-08 23:01:45 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, nfl-first-score: 12, p
+[2026-11-08 23:02:18 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (2 with odds), db total 165559 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:02:36 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NCAAB Florida Gulf Coast Georgia Nov-09 7:00 PM / table bar_chart / Moneyline Georgia YES / Moneyline Florida Gulf Coast / table | Kalshi | Bet365
+[2026-11-08 23:03:02 ET] dh_low_holds.py: OK in 26s — LOW-HOLDS: NFL BUF Bills MIN Vikings Nov-09 8:15 PM / table / Alt Total Over 37 / Alt Total Under 37 / table bar_chart | Fanatics-NJ | ProphetX
+[2026-11-08 23:04:24 ET] dh_game_middles.py: OK in 82s — GAME MIDDLE: NCAAB Radford 8 Tennessee Nov-09 7:00 PM / table / Alt Total Under 155.5 / Alt Total Over 155 / table | DraftKings | Bet365 — window 240.0 :: -125 
+[2026-11-08 23:05:46 ET] dh_prop_middles.py: OK in 82s — PROP MIDDLE CLEAN : NCAAB North Florida 14 Miami Nov-09 7:00 PM / table / Total Over 159.5 / Alt Total Under 160.5 / table | BetRivers | DraftKings — window 218
+[2026-11-08 23:07:15 ET] dh_sog_middles.py: OK in 89s — - NEW CLEAN W4  (): -110 $1,000 Caesars -110.0 -110 @ Caesars / -106 $982 BetRivers -106.0 -106 @ BetRivers
+[2026-11-08 23:08:10 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-08 23:08:12 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 134 total tallied.
+[2026-11-08 23:09:23 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 189 events (1 with odds), db total 165748 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:09:25 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
