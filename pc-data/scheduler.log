@@ -4306,3 +4306,16 @@
 [2026-11-09 07:54:58 ET] rlm.py: OK in 3s
 [2026-11-09 07:55:02 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
 [2026-11-09 07:56:14 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 177745 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 08:06:42 ET] sync_to_github.py: OK in 418s —   ok: steam-side-board-pc.html
+[2026-11-09 08:06:42 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 26, sog-middles: 839. Detai
+[2026-11-09 08:07:15 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 177939 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 08:10:29 ET] dh_key_number_middles.py: OK in 193s — key-number-middles: no new strict-key middles.
+[2026-11-09 08:10:34 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS North Texas @ UTSA | 2026-11-09 | Caesars | UTSA spread 1.5 (median 1.0 -> -1.0)
+[2026-11-09 08:12:39 ET] dh_game_middles.py: OK in 94s — GAME MIDDLE: NCAAB Wagner 4 UConn Today 7:00 PM / table / Total Under 141.5 / Alt Total Over 141 / table | HardRock | Bet365 — window 215.0 :: -110 $1,000 HardR
+[2026-11-09 08:14:07 ET] dh_prop_middles.py: OK in 89s — PROP MIDDLE CLEAN : NCAAB Wagner 4 UConn Today 7:00 PM / table / Total Under 141.5 / Alt Total Over 141 / table | HardRock | Bet365 — window 215.0 :: {'side': '
+[2026-11-09 08:14:11 ET] fetch_nba_snapshot.py: OK in 3s — snapshot: 30 teams, 8 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-09.json
+[2026-11-09 08:15:22 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 178133 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 08:15:23 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-09 08:15:28 ET] nhl_totals_scan.py: OK in 5s — NHL TOTALS FLAG UNDER: NYR @ EDM — predicted 5.23 vs book 6.5 (-108)
+[2026-11-09 08:15:31 ET] total_projectors_scan.py: OK in 3s — }
+[2026-11-09 08:15:34 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 8, 'NCAAB': 33}, new 0, moved 0, baselines 41.
