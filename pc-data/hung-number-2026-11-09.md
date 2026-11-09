@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-09 (scan 2026-11-09 06:50)
+# Hung numbers — 2026-11-09 (scan 2026-11-09 07:53)
 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
@@ -6,20 +6,23 @@
 - Cardinals vs Seahawks | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Raiders vs 49ers | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Raiders vs 49ers | Fanatics | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
-- Ohio vs Miami (OH) | FanDuel | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
-- Louisiana vs Louisiana-Monroe | FanDuel | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
-- Florida State vs Pittsburgh | FanDuel | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
-- Duke vs Miami (FL) | FanDuel | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
-- Duke vs Miami (FL) | DraftKings | total | value: Over | book 56.5 vs median 55.0 | div 1.5 
-- Duke vs Miami (FL) | FanDuel | total | value: Under | book 53.5 vs median 55.0 | div 1.5 
-- Wake Forest vs SMU | DraftKings | total | value: Under | book 58.5 vs median 60.0 | div 1.5 
-- Wake Forest vs SMU | FanDuel | total | value: Over | book 62.5 vs median 60.0 | div 2.5 
-- Alabama vs Vanderbilt | FanDuel | spread | value: dog | book -18.5 vs median -19.5 | div 1.0 
-- Michigan vs Oregon | BetMGM | spread | value: dog | book 13.5 vs median 10.5 | div 3.0 
-- Michigan vs Oregon | DraftKings | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
+- Memphis vs South Florida | Fanatics | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
+- Northwestern vs Ohio State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- Georgia Tech vs Clemson | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- UAB vs Temple | FanDuel | spread | value: dog | book 3.5 vs median 2.5 | div 1.0 middle pairing spans key number 3
+- Kennesaw State vs Sam Houston | FanDuel | spread | value: favorite | book -9.5 vs median -8.25 | div 1.25 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
-- Michigan vs Oregon | Fanatics | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
-- Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 24.1 | div 5.9 
-- Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 80.2 | div 6.5 
-- Oregon State vs Boise State | DraftKings | spread | value: favorite | book 4.5 vs median 6.5 | div 2.0 
-- South Carolina vs Arkansas | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- Missouri vs Georgia | FanDuel | spread | value: dog | book 15.5 vs median 14.5 | div 1.0 
+- Boston College vs Notre Dame | bet365 | spread | value: dog | book 30.5 vs median 29.5 | div 1.0 
+- Boston College vs Notre Dame | FanDuel | spread | value: dog | book 30.5 vs median 29.5 | div 1.0 
+- Fresno State vs Texas State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Fresno State vs Texas State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Ole Miss vs Oklahoma | BetMGM | moneyline Oklahoma | value: Oklahoma | book 98.0 vs median 49.5 | div 48.5 
+- North Texas vs UTSA | bet365 | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
+- North Texas vs UTSA | BetMGM | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
+- North Texas vs UTSA | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- North Texas vs UTSA | Caesars | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- North Texas vs UTSA | FanDuel | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
+- North Texas vs UTSA | Fanatics | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
+- Utah State vs San Diego State | BetMGM | moneyline San Diego State | value: San Diego State | book 98.0 vs median 51.0 | div 47.1 
