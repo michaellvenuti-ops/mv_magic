@@ -65,3 +65,11 @@
 ## 2026-11-09T12:28:57-05:00 — no-follow: FanDuel Purdue @ Iowa | 2026-11-09 spread (only 0 followed)
 ## 2026-11-09T12:28:57-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-09 spread (FanDuel, bet365)
 ## 2026-11-09T12:28:57-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T13:38:37-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-09 spread (BetMGM, FanDuel, Fanatics, bet365)
+## 2026-11-09T13:38:37-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-09 total (FanDuel, Fanatics, Kalshi)
+## 2026-11-09T13:38:37-05:00 — pack move, never credited: Florida International @ Delaware | 2026-11-09 spread (DraftKings, FanDuel, bet365)
+## 2026-11-09T13:38:37-05:00 — no-follow: Kalshi Ole Miss @ Oklahoma | 2026-11-09 spread (only 2 followed)
+## 2026-11-09T13:38:37-05:00 — pack move, never credited: North Texas @ UTSA | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T13:38:37-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-09 spread (Caesars, DraftKings, bet365)
+## 2026-11-09T13:38:37-05:00 — 82 games, 1 leads credited, 14 started games skipped
+LEAD: bet365 on Alabama @ Vanderbilt | 2026-11-09 (total)
