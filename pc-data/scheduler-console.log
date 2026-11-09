@@ -4089,3 +4089,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 00:15:37 ET] dh_team_total_middles.py: OK in 50s
 [2026-11-09 00:15:38 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 00:15:41 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 00:23:56 ET] sync_to_github.py: OK in 375s —   ok: steam-side-board-pc.html
+[2026-11-09 00:23:56 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — sog-middles: 141. Details in GitHub pc-d
+[2026-11-09 00:24:29 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 167463 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 00:27:10 ET] hung_number.py: OK in 71s — No new hung numbers (105 current flags).
+[2026-11-09 00:27:12 ET] rlm.py: OK in 3s
+[2026-11-09 00:27:15 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-09 00:29:47 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 194 events (68 with odds), db total 167657 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 00:35:24 ET] dh_key_number_middles.py: FAILED (exit 2) in 216s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-09 00:35:29 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
