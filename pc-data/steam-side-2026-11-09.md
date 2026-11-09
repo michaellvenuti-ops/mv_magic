@@ -40,3 +40,4 @@ NEW FLAG: FBS Utah State @ San Diego State | 2026-11-09 — Fanatics still deali
 NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-09 — Fanatics still dealing spread 17.5 on Vanderbilt (pre-move median 17.5, now 16.5)
 ## 2026-11-09T13:06:29-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-09T13:43:10-05:00 — 67 games, 1 steam events, 0 NEW flags
+## 2026-11-09T14:17:04-05:00 — 67 games, 0 steam events, 0 NEW flags
