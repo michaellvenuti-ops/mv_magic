@@ -4479,3 +4479,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 11:30:14 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 11:30:16 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-09 11:32:59 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 206 events (112 with odds), db total 182257 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 11:43:32 ET] sync_to_github.py: OK in 453s —   ok: steam-side-board-pc.html
+[2026-11-09 11:43:32 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 17, promo
+[2026-11-09 11:44:05 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (112 with odds), db total 182463 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 11:44:24 ET] dh_kalshi_poly_arb.py: OK in 19s — KALSHI-POLY-ARB: NFL BUF Bills MIN Vikings Today 8:15 PM / table bar_chart / Receptions D. Knox 3+ NO / Alt Receptions D. Knox 3+ / table | Polymarket US | Ball
+[2026-11-09 11:47:41 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new strict-key middles.
+[2026-11-09 11:47:47 ET] public_fade.py: OK in 6s
+[2026-11-09 11:48:52 ET] dh_positive_ev.py: OK in 65s — DarkHorse check unavailable (signed out) — positive-ev skipped, no prices invented.
+[2026-11-09 11:50:10 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (112 with odds), db total 182669 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 11:50:29 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NCAAB North Florida 14 Miami Today 7:00 PM / table / Alt Spread Miami -29.5 / Alt Spread North Florida +30.5 / table | DraftKings | Bally Bet
+[2026-11-09 11:51:47 ET] dh_game_middles.py: OK in 78s — GAME MIDDLE: NCAAB UL Monroe Texas A&M Today 8:00 PM / table / Spread Texas A&M -36 / Alt Spread UL Monroe +37.5 / table | Caesars | Fanatics-NJ — window 215.0 
+[2026-11-09 11:51:54 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 11:53:51 ET] dh_prop_middles.py: OK in 117s — PROP MIDDLE CLEAN : NCAAB Cleveland St. Bowling Green Today 7:00 PM / table / Total Under 157.5 / Alt Total Over 156.5 / table | Bet365 | Fanatics-NJ — window 2
