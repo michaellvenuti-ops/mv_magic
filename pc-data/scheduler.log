@@ -4147,3 +4147,11 @@
 [2026-11-09 03:06:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 03:06:27 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-09 03:07:37 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 171343 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:16:11 ET] sync_to_github.py: OK in 394s —   ok: steam-side-board-pc.html
+[2026-11-09 03:16:12 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 380. Deta
+[2026-11-09 03:16:45 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 171537 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:18:06 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table bar_chart / Alt Spread IND Pacers +15.5 / Alt Spread DAL Mavericks -14.5 / table | Polymarket US |
+[2026-11-09 03:19:03 ET] dh_low_holds.py: OK in 27s — LOW-HOLDS: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Spread DAL Mavericks -3 / Alt Spread IND Pacers +3 / table | Caesars | Bet365
+[2026-11-09 03:22:07 ET] dh_key_number_middles.py: OK in 184s — key-number-middles: no new strict-key middles.
+[2026-11-09 03:22:12 ET] steam_side.py: OK in 5s — steam-side: 43 games, no new flags (silent).
+[2026-11-09 03:23:22 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 171731 snapshots / 604 events, feeds ok 6 fail 0
