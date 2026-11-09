@@ -4250,3 +4250,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 04:54:30 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-09 05:01:09 ET] sync_to_github.py: FAILED (exit 1) in 399s —   FAILED: pc-data/rlm-2026-11-09.md (HTTP 500: {'error': ''})
 [2026-11-09 05:02:19 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 173865 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 05:08:50 ET] sync_to_github.py: FAILED (exit 1) in 390s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-06-hour-2.json (HTTP 409: {'error': '{"message":"is at 802d9e28c101179f31407999d165dd5206864a0d but expecte
+[2026-11-09 05:09:22 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 194 events (68 with odds), db total 174059 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 05:10:50 ET] dh_kalshi_poly_arb.py: OK in 88s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-09 05:14:53 ET] dh_key_number_middles.py: OK in 243s — key-number-middles: no new strict-key middles.
+[2026-11-09 05:14:59 ET] steam_side.py: OK in 6s — steam-side: 43 games, no new flags (silent).
