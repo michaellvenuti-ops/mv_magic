@@ -4420,3 +4420,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 09:47:07 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-09 09:48:19 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 180073 snapshots / 604 events, feeds ok 6 fail 0
 [2026-11-09 09:51:20 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: no new strict-key middles.
+[2026-11-09 09:59:39 ET] sync_to_github.py: OK in 439s —   ok: steam-side-board-pc.html
+[2026-11-09 09:59:39 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 25, sog-m
+[2026-11-09 10:00:51 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 180267 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:02:52 ET] dh_game_middles.py: OK in 121s — GAME MIDDLE: NCAAB North Florida 14 Miami Today 7:00 PM / table / Alt Total Under 164.5 / Alt Total Over 164 / table | Fanatics-NJ | Bet365 — window 210.0 :: -1
+[2026-11-09 10:02:59 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS Washington @ Michigan State | 2026-11-09 | Kalshi | Michigan State spread 4.5 (median 4.5 -> 3.5)
+[2026-11-09 10:04:33 ET] dh_prop_middles.py: OK in 94s — PROP MIDDLE CLEAN : NBA LA Lakers ATL Hawks Today 7:15 PM / table / Alt Spread ATL Hawks -0.5 / Alt Spread LA Lakers +1.5 / table | BetRivers | BetParx — window
+[2026-11-09 10:06:38 ET] promo_watch.py: OK in 126s — promo-watch: 9 listed, 2 new, 1 converter attempt(s).
+[2026-11-09 10:07:51 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 194 events (68 with odds), db total 180461 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:09:31 ET] hung_number.py: OK in 69s — HUNG NUMBER: Colorado State vs Washington State — FanDuel spread value favorite (8.5 vs median 9.5)
+[2026-11-09 10:09:35 ET] rlm.py: OK in 4s
+[2026-11-09 10:09:38 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
