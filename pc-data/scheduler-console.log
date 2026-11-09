@@ -4662,3 +4662,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 17:13:37 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 17:14:51 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (113 with odds), db total 189467 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 17:16:08 ET] dh_prop_middles.py: OK in 77s — PROP MIDDLE : NBA NO Pelicans GS Warriors Today 10:15 PM / table / Alt Total Over 224.5 / Alt Total Under 225 / table | Bally Bet | Bet365 — window 339.0 :: {'s
+[2026-11-09 17:23:38 ET] sync_to_github.py: OK in 450s —   ok: steam-side-board-pc.html
+[2026-11-09 17:23:39 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 14, promo
+[2026-11-09 17:24:12 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (113 with odds), db total 189673 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 17:24:49 ET] dh_low_holds.py: OK in 37s — LOW-HOLDS: NBA MEM Grizzlies TOR Raptors Today 7:45 PM / table / Assists R. Barrett Under 4.5 / Assists R. Barrett Over 4.5 / table | BetMGM | Bally Bet
+[2026-11-09 17:29:53 ET] dh_sog_middles.py: OK in 155s — - NEW CLEAN W246  (): -130 $1,000 theScore -130.0 -130 @ theScore / +116 $819 BetRivers 116.0 +116 @ BetRivers
+[2026-11-09 17:31:29 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 206 events (113 with odds), db total 189879 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 17:34:50 ET] dh_team_total_middles.py: OK in 201s
+[2026-11-09 17:34:54 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 17:34:58 ET] nba_overs_pregame.py: OK in 4s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
