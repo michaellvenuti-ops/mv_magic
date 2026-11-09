@@ -4159,3 +4159,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 02:16:32 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 170179 snapshots / 604 events, feeds ok 6 fail 0
 [2026-11-09 02:17:23 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NFL BUF Bills MIN Vikings Today 8:15 PM / table bar_chart / Passing Yards C. Wentz Over 224.5 NO / Alt Pass Yards C. Wentz 225+ / table | Kalshi | Ba
 [2026-11-09 02:18:15 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NCAAB S. Carolina UpState Coastal Carolina Today 7:00 PM / table / Alt Total Over 144.5 / Alt Total Under 145 / table | DraftKings | Bet365
+[2026-11-09 02:26:18 ET] sync_to_github.py: OK in 393s —   ok: steam-side-board-pc.html
+[2026-11-09 02:26:19 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 338. Deta
+[2026-11-09 02:26:51 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 170373 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 02:28:12 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NBA CLE Cavaliers CHA Hornets Today 7:15 PM / table / Alt Total Over 214 / Total Under 214.5 / table | Fanatics-NJ | HardRock — window 215.0 :: -11
+[2026-11-09 02:29:35 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE : NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Total Over 216.5 / Alt Total Under 217 / table | FanDuel | Bet365 — window 322.0 :: {'sid
+[2026-11-09 02:31:03 ET] dh_sog_middles.py: OK in 88s — - NEW W368  (): -198 $1,000 FanDuel -198.0 -198 @ FanDuel / +170 $557 Bet365 170.0 +170 @ Bet365
+[2026-11-09 02:32:26 ET] dh_team_total_middles.py: OK in 53s
+[2026-11-09 02:32:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 02:32:30 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 02:33:40 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 170567 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 02:35:16 ET] hung_number.py: OK in 66s — No new hung numbers (105 current flags).
+[2026-11-09 02:35:19 ET] rlm.py: OK in 3s
+[2026-11-09 02:35:22 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
