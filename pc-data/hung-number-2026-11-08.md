@@ -1,5 +1,9 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 20:05)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 21:15)
 
+- Buccaneers vs Bears | BetMGM | spread | value: favorite | book 10.5 vs median 12.5 | div 2.0 
+- Buccaneers vs Bears | DraftKings | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Buccaneers vs Bears | Caesars | spread | value: dog | book 13.5 vs median 12.5 | div 1.0 
+- Buccaneers vs Bears | FanDuel | spread | value: dog | book 13.5 vs median 12.5 | div 1.0 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
