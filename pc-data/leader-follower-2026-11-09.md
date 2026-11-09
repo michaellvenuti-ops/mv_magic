@@ -94,3 +94,7 @@ LEAD: bet365 on Alabama @ Vanderbilt | 2026-11-09 (total)
 ## 2026-11-09T16:54:58-05:00 — no-follow: BetMGM Minnesota @ Penn State | 2026-11-09 total (only 2 followed)
 ## 2026-11-09T16:54:58-05:00 — no-follow: DraftKings San Jose State @ Air Force | 2026-11-09 spread (only 1 followed)
 ## 2026-11-09T16:54:58-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T18:03:09-05:00 — pack move, never credited: Wake Forest @ SMU | 2026-11-09 spread (FanDuel, Fanatics, Kalshi)
+## 2026-11-09T18:03:09-05:00 — pack move, never credited: Michigan @ Oregon | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T18:03:09-05:00 — no-follow: Fanatics Fresno State @ Texas State | 2026-11-09 spread (only 1 followed)
+## 2026-11-09T18:03:09-05:00 — 82 games, 0 leads credited, 14 started games skipped
