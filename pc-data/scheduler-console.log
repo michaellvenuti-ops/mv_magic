@@ -4379,3 +4379,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 08:46:29 ET] dh_game_middles.py: OK in 103s — GAME MIDDLE: NBA MEM Grizzlies TOR Raptors Today 7:45 PM / table / Alt Total Over 228.5 / Alt Total Under 229 / table | FanDuel | Bet365 — window 224.0 :: -110 
 [2026-11-09 08:46:36 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS North Texas @ UTSA | 2026-11-09 | Fanatics | North Texas spread -1.0 (median -1.0 -> 1.0)
 [2026-11-09 08:46:40 ET] futures_board.py: FAILED (exit 2) in 5s — futures-board: zero markets parsed — see --dump
+[2026-11-09 08:53:57 ET] sync_to_github.py: FAILED (exit 1) in 437s —   FAILED: hung-number-board-pc.html (HTTP 409: {'error': '{"message":"is at 0ec0ebd0ba7ea2152335f8fef6ee857b760c287b but expected 65334a92833eb0c9e4a220aa6aee5c
+[2026-11-09 08:55:10 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 194 events (68 with odds), db total 178909 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 08:57:16 ET] dh_prop_middles.py: OK in 126s — PROP MIDDLE CLEAN : NCAAB Cleveland St. Bowling Green Today 7:00 PM / table / 1st Half Alt Total Under 81.5 / 1st Half Alt Total Over 78.5 / table | Bally Bet |
+[2026-11-09 08:57:48 ET] yahoo_brief.py: OK in 32s — SUMMARY: signed_in=False — report written, no extraction
