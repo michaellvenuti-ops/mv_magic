@@ -4601,3 +4601,12 @@
 [2026-11-09 16:40:36 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 16:41:57 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 206 events (113 with odds), db total 188849 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 16:43:23 ET] dh_prop_middles.py: OK in 86s — PROP MIDDLE CLEAN : NCAAB Florida A&M UAB Today 7:30 PM / table / Alt Total Under 156 / Alt Total Over 155.5 / table | Bet365 | Bally Bet — window 222.0 :: {'si
+[2026-11-09 16:53:02 ET] sync_to_github.py: FAILED (exit 1) in 459s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-2.txt (HTTP 409: {'error': '{"message":"is at 82669d807e8726c693b0464835572738a30ddaca but expec
+[2026-11-09 16:53:37 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 206 events (112 with odds), db total 189055 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 16:54:50 ET] hung_number.py: OK in 73s — HUNG NUMBER: Minnesota vs Penn State — bet365 total value Over (43.5 vs median 41.75)
+[2026-11-09 16:54:54 ET] rlm.py: OK in 4s
+[2026-11-09 16:54:58 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 16:57:03 ET] dh_sog_middles.py: OK in 125s — - NEW W360  (): -190 $1,000 Bally Bet -190.0 -190 @ Bally Bet / +170 $565 DraftKings 170.0 +170 @ DraftKings
+[2026-11-09 16:58:05 ET] dh_team_total_middles.py: OK in 61s
+[2026-11-09 16:58:06 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 16:58:08 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
