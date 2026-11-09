@@ -9,3 +9,7 @@
 - 2026-11-08: Dallas Cowboys @ Indianapolis Colts — first: Dallas Cowboys; lead changes 4; final 27-23
 - 2026-11-08: Cleveland Browns @ New Orleans Saints — first: New Orleans Saints; lead changes 4; final 22-23
 - 2026-11-08: New York Giants @ Philadelphia Eagles — first: New York Giants; lead changes 2; final 19-11
+## 2026-11-08T19:41:26-05:00 -- NFL FIRST SCORE (PC): 3 new final(s) tallied; season 133 games through 2026-11-08
+- 2026-11-08: Houston Texans @ Los Angeles Chargers — first: Houston Texans; lead changes 0; final 44-22
+- 2026-11-08: Las Vegas Raiders @ San Francisco 49ers — first: San Francisco 49ers; lead changes 0; final 17-38
+- 2026-11-08: Arizona Cardinals @ Seattle Seahawks — first: Arizona Cardinals; lead changes 1; final 3-17
