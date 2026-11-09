@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-09 (scan 2026-11-09 07:53)
+# Hung numbers — 2026-11-09 (scan 2026-11-09 09:06)
 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
@@ -13,12 +13,11 @@
 - UAB vs Temple | FanDuel | spread | value: dog | book 3.5 vs median 2.5 | div 1.0 middle pairing spans key number 3
 - Kennesaw State vs Sam Houston | FanDuel | spread | value: favorite | book -9.5 vs median -8.25 | div 1.25 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
+- Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.5 | div 5.2 
 - Missouri vs Georgia | FanDuel | spread | value: dog | book 15.5 vs median 14.5 | div 1.0 
 - Boston College vs Notre Dame | bet365 | spread | value: dog | book 30.5 vs median 29.5 | div 1.0 
-- Boston College vs Notre Dame | FanDuel | spread | value: dog | book 30.5 vs median 29.5 | div 1.0 
 - Fresno State vs Texas State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Fresno State vs Texas State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
-- Ole Miss vs Oklahoma | BetMGM | moneyline Oklahoma | value: Oklahoma | book 98.0 vs median 49.5 | div 48.5 
 - North Texas vs UTSA | bet365 | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
 - North Texas vs UTSA | BetMGM | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
 - North Texas vs UTSA | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
