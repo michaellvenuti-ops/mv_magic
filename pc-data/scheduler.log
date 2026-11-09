@@ -4563,3 +4563,14 @@
 [2026-11-09 15:29:41 ET] steam_side.py: OK in 8s — STEAM-SIDE FLAG: FBS Oregon State @ Boise State | 2026-11-09 | Fanatics | Boise State spread -11.0 (median -11.0 -> -13.5)
 [2026-11-09 15:30:58 ET] odds_recorder.py: OK in 47s — SUMMARY: recorded 206 events (113 with odds), db total 187201 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 15:32:47 ET] dh_prop_middles.py: OK in 109s — PROP MIDDLE CLEAN : NBA DEN Nuggets HOU Rockets Today 8:45 PM / table / Total Under 223.5 / Alt Total Over 223 / table | Caesars | Bet365 — window 232.0 :: {'si
+[2026-11-09 15:41:01 ET] sync_to_github.py: OK in 464s —   ok: steam-side-board-pc.html
+[2026-11-09 15:41:02 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 19, promo
+[2026-11-09 15:42:16 ET] odds_recorder.py: OK in 44s — SUMMARY: recorded 206 events (113 with odds), db total 187407 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 15:43:52 ET] dh_sog_middles.py: OK in 96s — - NEW W330  (): -175 $1,000 Fanatics-NJ -175.0 -175 @ Fanatics-NJ / +155 $616 HardRock 155.0 +155 @ HardRock
+[2026-11-09 15:44:35 ET] dh_team_total_middles.py: OK in 43s
+[2026-11-09 15:44:36 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 15:44:38 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-09 15:47:43 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 206 events (113 with odds), db total 187613 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 15:51:50 ET] hung_number.py: OK in 68s — HUNG NUMBER: Oregon State vs Boise State — Fanatics spread value favorite (11.0 vs median 12.75)
+[2026-11-09 15:51:54 ET] rlm.py: OK in 3s
+[2026-11-09 15:51:58 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
