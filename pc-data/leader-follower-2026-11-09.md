@@ -46,3 +46,16 @@
 ## 2026-11-09T10:09:38-05:00 — pack move, never credited: North Texas @ UTSA | 2026-11-09 spread (BetMGM, FanDuel, Fanatics, bet365)
 ## 2026-11-09T10:09:38-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-09 spread (FanDuel, bet365)
 ## 2026-11-09T10:09:38-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T11:16:24-05:00 — no-follow: Kalshi Northwestern @ Ohio State | 2026-11-09 spread (only 0 followed)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: New Mexico State @ Missouri State | 2026-11-09 spread (Caesars, FanDuel)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: Florida International @ Delaware | 2026-11-09 spread (DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-09T11:16:24-05:00 — no-follow: Kalshi Tennessee @ Texas A&M | 2026-11-09 spread (only 0 followed)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: California @ Virginia | 2026-11-09 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: Missouri @ Georgia | 2026-11-09 spread (Kalshi, bet365)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: Middle Tennessee @ Liberty | 2026-11-09 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: Washington @ Michigan State | 2026-11-09 spread (Fanatics, Kalshi)
+## 2026-11-09T11:16:24-05:00 — no-follow: FanDuel Minnesota @ Penn State | 2026-11-09 spread (only 0 followed)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: North Texas @ UTSA | 2026-11-09 spread (DraftKings, Kalshi)
+## 2026-11-09T11:16:24-05:00 — pack move, never credited: Utah State @ San Diego State | 2026-11-09 spread (Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-09T11:16:24-05:00 — no-follow: DraftKings Wyoming @ UTEP | 2026-11-09 spread (only 1 followed)
+## 2026-11-09T11:16:25-05:00 — 82 games, 0 leads credited, 14 started games skipped
