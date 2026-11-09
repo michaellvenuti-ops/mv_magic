@@ -4178,3 +4178,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 02:48:22 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: no new strict-key middles.
 [2026-11-09 02:48:27 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
 [2026-11-09 02:49:37 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 170955 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 02:59:33 ET] sync_to_github.py: OK in 387s —   ok: steam-side-board-pc.html
+[2026-11-09 02:59:34 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 359. Deta
+[2026-11-09 03:00:06 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 194 events (68 with odds), db total 171149 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:01:34 ET] dh_game_middles.py: OK in 88s — GAME MIDDLE: NFL KC Chiefs ATL Falcons Nov-15 1:00 PM / table / Alt Total Under 46 / Alt Total Over 45.5 / table | Bet365 | Fanatics-NJ — window 4.0 :: -109 $1,
+[2026-11-09 03:03:06 ET] dh_prop_middles.py: OK in 92s — PROP MIDDLE : NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Spread DAL Mavericks +1.5 / Alt Spread IND Pacers -1 / table | BetMGM | Bet365 — window 3
+[2026-11-09 03:04:04 ET] dh_kalshi_poly_arb.py: OK in 29s — KALSHI-POLY-ARB: NBA IND Pacers DAL Mavericks Today 8:15 PM / table bar_chart / Alt Spread IND Pacers +15.5 / Alt Spread DAL Mavericks -15 / table | Polymarket 
+[2026-11-09 03:05:23 ET] dh_sog_middles.py: OK in 78s — - NEW W372  (): -200 $1,000 HardRock -200.0 -200 @ HardRock / +172 $551 Bet365 172.0 +172 @ Bet365
+[2026-11-09 03:06:24 ET] dh_team_total_middles.py: OK in 61s
+[2026-11-09 03:06:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 03:06:27 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 03:07:37 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 171343 snapshots / 604 events, feeds ok 6 fail 0
