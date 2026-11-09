@@ -4523,3 +4523,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 12:45:56 ET] dh_kalshi_poly_arb.py: OK in 22s — KALSHI-POLY-ARB: NCAAB UL Monroe Texas A&M Today 8:00 PM / table bar_chart / Alt Spread Texas A&M -28.5 YES / Alt Spread UL Monroe +28.5 / table | Kalshi | Bet3
 [2026-11-09 12:48:58 ET] odds_recorder.py: OK in 123s — SUMMARY: recorded 206 events (113 with odds), db total 183905 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 12:51:42 ET] dh_arbitrage.py: OK in 72s — ARBITRAGE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Total Under 230.5 / Alt Total Over 229.5 / table | BetMGM | Bet365
+[2026-11-09 12:59:32 ET] sync_to_github.py: OK in 470s —   ok: steam-side-board-pc.html
+[2026-11-09 12:59:32 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 16, promo
+[2026-11-09 13:00:37 ET] odds_recorder.py: OK in 34s — SUMMARY: recorded 206 events (113 with odds), db total 184111 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:02:40 ET] dh_game_middles.py: OK in 123s — GAME MIDDLE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Total Under 229.5 / Alt Total Over 229 / table | HardRock | Bet365 — window 315.0 :: -155 
+[2026-11-09 13:06:23 ET] dh_key_number_middles.py: OK in 224s — key-number-middles: no new strict-key middles.
+[2026-11-09 13:06:29 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 13:07:44 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (113 with odds), db total 184317 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:08:16 ET] dh_low_holds.py: OK in 32s — low-holds: no new qualifying pairs (silent).
+[2026-11-09 13:09:41 ET] dh_prop_middles.py: OK in 84s — PROP MIDDLE : NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Total Under 229.5 / Alt Total Over 229 / table | HardRock | Bet365 — window 315.0 :: {'si
