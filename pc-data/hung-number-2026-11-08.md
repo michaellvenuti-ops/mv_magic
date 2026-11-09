@@ -1,5 +1,13 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 22:22)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 23:24)
 
+- Buccaneers vs Bears | DraftKings | spread | value: favorite | book 5.5 vs median 8.5 | div 3.0 middle pairing spans key number 7
+- Buccaneers vs Bears | FanDuel | spread | value: favorite | book 5.5 vs median 8.5 | div 3.0 middle pairing spans key number 7
+- Buccaneers vs Bears | Caesars | total | value: Under | book 49.5 vs median 51.5 | div 2.0 
+- Buccaneers vs Bears | Hard Rock | total | value: Under | book 49.5 vs median 51.5 | div 2.0 
+- Buccaneers vs Bears | DraftKings | moneyline Bears | value: Bears | book 84.7 vs median 93.3 | div 8.7 
+- Buccaneers vs Bears | FanDuel | moneyline Bears | value: Bears | book 84.1 vs median 93.3 | div 9.2 
+- Buccaneers vs Bears | DraftKings | moneyline Buccaneers | value: Buccaneers | book 21.6 vs median 11.1 | div 10.4 
+- Buccaneers vs Bears | FanDuel | moneyline Buccaneers | value: Buccaneers | book 21.3 vs median 11.1 | div 10.2 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
