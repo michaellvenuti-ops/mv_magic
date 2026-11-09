@@ -4576,3 +4576,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 14:32:29 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 14:32:31 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-09 14:35:16 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (113 with odds), db total 186171 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 14:45:55 ET] sync_to_github.py: OK in 460s —   ok: steam-side-board-pc.html
+[2026-11-09 14:45:56 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 18, promo
+[2026-11-09 14:46:29 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (113 with odds), db total 186377 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 14:49:09 ET] dh_game_middles.py: OK in 160s — GAME MIDDLE: NBA DEN Nuggets HOU Rockets Today 8:45 PM / table / Alt Total Under 226.5 / Alt Total Over 226 / table | Fanatics-NJ | Bet365 — window 305.0 :: -14
+[2026-11-09 14:50:29 ET] hung_number.py: OK in 80s — HUNG NUMBER: Wyoming vs UTEP — Fanatics total value Over (41.0 vs median 39.5)
+[2026-11-09 14:50:34 ET] rlm.py: OK in 5s
+[2026-11-09 14:50:38 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 14:54:40 ET] dh_key_number_middles.py: OK in 212s — key-number-middles: no new strict-key middles.
+[2026-11-09 14:54:52 ET] steam_side.py: OK in 12s — STEAM-SIDE FLAG: FBS Wyoming @ UTEP | 2026-11-09 | Fanatics | UTEP spread 8.5 (median 8.5 -> 7.5)
+[2026-11-09 14:57:16 ET] dh_prop_middles.py: OK in 145s — PROP MIDDLE : NBA DEN Nuggets HOU Rockets Today 8:45 PM / table / Alt Total Under 227.5 / Alt Total Over 227 / table | BetMGM | Bet365 — window 325.0 :: {'side'
