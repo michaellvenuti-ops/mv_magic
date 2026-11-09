@@ -79,3 +79,8 @@ LEAD: bet365 on Alabama @ Vanderbilt | 2026-11-09 (total)
 ## 2026-11-09T14:50:38-05:00 — pack move, never credited: Troy @ South Alabama | 2026-11-09 spread (Kalshi, bet365)
 ## 2026-11-09T14:50:38-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-09 spread (FanDuel, Kalshi, bet365)
 ## 2026-11-09T14:50:38-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T15:51:57-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-09 total (BetMGM, Caesars, FanDuel)
+## 2026-11-09T15:51:58-05:00 — pack move, never credited: Kennesaw State @ Sam Houston | 2026-11-09 total (BetMGM, FanDuel)
+## 2026-11-09T15:51:58-05:00 — pack move, never credited: Oregon State @ Boise State | 2026-11-09 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-09T15:51:58-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T15:51:58-05:00 — 82 games, 0 leads credited, 14 started games skipped
