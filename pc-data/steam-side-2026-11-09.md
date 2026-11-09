@@ -21,3 +21,7 @@ NEW FLAG: FBS Boston College @ Notre Dame | 2026-11-09 — Kalshi still dealing 
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — BetMGM still dealing spread 1.0 on UTSA (pre-move median 1.0, now -1.0)
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — DraftKings still dealing spread 1.5 on UTSA (pre-move median 1.0, now -1.0)
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Caesars still dealing spread 1.5 on UTSA (pre-move median 1.0, now -1.0)
+## 2026-11-09T08:46:35-05:00 — 67 games, 1 steam events, 3 NEW flags
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — bet365 still dealing spread -1.5 on North Texas (pre-move median -1.0, now 1.0)
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — FanDuel still dealing spread -1.5 on North Texas (pre-move median -1.0, now 1.0)
+NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Fanatics still dealing spread -1.0 on North Texas (pre-move median -1.0, now 1.0)
