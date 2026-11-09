@@ -4540,3 +4540,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 13:21:25 ET] nfl_first_score.py: OK in 3s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 13:21:27 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-09 13:24:11 ET] odds_recorder.py: OK in 44s — SUMMARY: recorded 206 events (113 with odds), db total 184729 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:34:30 ET] sync_to_github.py: OK in 438s —   ok: steam-side-board-pc.html
+[2026-11-09 13:34:30 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 16, promo
+[2026-11-09 13:35:05 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 206 events (113 with odds), db total 184935 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:37:06 ET] dh_game_middles.py: OK in 121s — GAME MIDDLE: NCAAB Florida Gulf Coast Georgia Today 7:00 PM / table / Total Under 163 / Alt Total Over 162.5 / table | Caesars | Fanatics-NJ — window 215.0 :: -
+[2026-11-09 13:38:28 ET] hung_number.py: OK in 82s — HUNG NUMBER: San Jose State vs Air Force — Fanatics spread value dog (12.5 vs median 11.5)
+[2026-11-09 13:38:33 ET] rlm.py: OK in 5s
+[2026-11-09 13:38:37 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 1 new leads, no book at 3 yet).
+[2026-11-09 13:43:04 ET] dh_key_number_middles.py: OK in 236s — key-number-middles: no new strict-key middles.
+[2026-11-09 13:43:10 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 13:44:25 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (113 with odds), db total 185141 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:46:04 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE CLEAN : NCAAB Florida Gulf Coast Georgia Today 7:00 PM / table / Total Under 162.5 / Alt Total Over 162 / table | theScore | Bet365 — window 215.0 :
