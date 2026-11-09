@@ -2530,3 +2530,113 @@
 - NEW CLEAN W245  (): -130 $1,000 FanDuel -130.0 -130 @ FanDuel / +115 $823 Bet365 115.0 +115 @ Bet365
 - NEW W273  (): -145 $1,000 BetMGM -145.0 -145 @ BetMGM / +128 $741 Bet365 128.0 +128 @ Bet365
 - NEW W338  (): -180 $1,000 Fanatics-NJ -180.0 -180 @ Fanatics-NJ / +158 $603 FanDuel 158.0 +158 @ FanDuel
+## 2026-11-09T13:58:17-05:00 — sog-middles: 957 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- NEW CLEAN W245  (): -115 $1,000 HardRock -115.0 -115 @ HardRock / +130 $813 Fanatics-NJ 130.0 +130 @ Fanatics-NJ
+- NEW CLEAN W235  (): -116 $1,000 Bet365 -116.0 -116 @ Bet365 / +119 $849 DraftKings 119.0 +119 @ DraftKings
+- NEW CLEAN W220  (): -110 $1,000 Bally Bet -110.0 -110 @ Bally Bet / +110 $909 theScore 110.0 +110 @ theScore
+- NEW CLEAN W222  (): -112 $1,000 BetRivers -112.0 -112 @ BetRivers / +110 $901 theScore 110.0 +110 @ theScore
+- NEW CLEAN W212  (): -107 $1,000 Bet365 -107.0 -107 @ Bet365 / +105 $944 theScore 105.0 +105 @ theScore
+- NEW W305  (): -155 $1,000 HardRock -155.0 -155 @ HardRock / +150 $658 Bet365 150.0 +150 @ Bet365
+- NEW W307  (): -157 $1,000 Bally Bet -157.0 -157 @ Bally Bet / +150 $655 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W215  (): -110 $1,000 theScore -110.0 -110 @ theScore / +105 $931 Bet365 105.0 +105 @ Bet365
+- NEW CLEAN W215  (): -110 $1,000 Bet365 -110.0 -110 @ Bet365 / +105 $931 BetMGM 105.0 +105 @ BetMGM
+- NEW CLEAN W209  (): -107 $1,000 Bet365 -107.0 -107 @ Bet365 / +102 $958 FanDuel 102.0 +102 @ FanDuel
+- UPDATED CLEAN W205  (): -105 $1,000 Bally Bet -105.0 -105 @ Bally Bet / +100 $976 FanDuel 100.0 +100 @ FanDuel
+- NEW W309  (): -159 $1,000 BetRivers -159.0 -159 @ BetRivers / +150 $652 Bet365 150.0 +150 @ Bet365
+- NEW W330  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +160 $611 Bet365 160.0 +160 @ Bet365
+- UPDATED CLEAN W206  (): -106 $1,000 Bet365 -106.0 -106 @ Bet365 / +100 $972 Bally Bet 100.0 +100 @ Bally Bet
+- UPDATED CLEAN W206  (): -106 $1,000 BetRivers -106.0 -106 @ BetRivers / +100 $972 FanDuel 100.0 +100 @ FanDuel
+- NEW W352  (): -180 $1,000 Bally Bet -180.0 -180 @ Bally Bet / +172 [36.76%] $579.22 ProphetX 172.0 +172 @ ProphetX
+- NEW CLEAN W248  (): -128 $1,000 Bet365 -128.0 -128 @ Bet365 / +120 $810 theScore 120.0 +120 @ theScore
+- NEW W384  (): -199 $1,000 DraftKings -199.0 -199 @ DraftKings / +185 $527 Fanatics-NJ 185.0 +185 @ Fanatics-NJ
+- NEW CLEAN W207  (): -107 $1,000 Bet365 -107.0 -107 @ Bet365 / +100 $967 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+- NEW CLEAN W270  (): -140 $1,000 HardRock -140.0 -140 @ HardRock / +130 $745 Bet365 130.0 +130 @ Bet365
+- NEW CLEAN W270  (): -140 $1,000 theScore -140.0 -140 @ theScore / +130 $745 Bet365 130.0 +130 @ Bet365
+- NEW CLEAN W250  (): -130 $1,000 HardRock -130.0 -130 @ HardRock / +120 $804 Bet365 120.0 +120 @ Bet365
+- NEW W271  (): -141 $1,000 Bally Bet -141.0 -141 @ Bally Bet / +130 $743 Bet365 130.0 +130 @ Bet365
+- NEW CLEAN W260  (): -134 [57.26%] $1,000 ProphetX -134.0 -134 @ ProphetX / +126 $766 FanDuel 126.0 +126 @ FanDuel
+- NEW CLEAN W240  (): -125 $1,000 theScore -125.0 -125 @ theScore / +115 $837 Bet365 115.0 +115 @ Bet365
+- NEW CLEAN W240  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +115 $837 theScore 115.0 +115 @ theScore
+- NEW CLEAN W223  (): -116 $1,000 Bet365 -116.0 -116 @ Bet365 / +107 $899 Caesars 107.0 +107 @ Caesars
+- NEW W314  (): -164 $1,000 DraftKings -164.0 -164 @ DraftKings / +150 $644 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W213  (): -111 $1,000 Bet365 -111.0 -111 @ Bet365 / +102 $941 Bally Bet 102.0 +102 @ Bally Bet
+- NEW CLEAN W230  (): -120 $1,000 Fanatics-NJ -120.0 -120 @ Fanatics-NJ / +110 $873 theScore 110.0 +110 @ theScore
+- UPDATED CLEAN W230  (): -120 $1,000 theScore -120.0 -120 @ theScore / +110 $873 Bet365 110.0 +110 @ Bet365
+- NEW W325  (): -170 $1,000 Caesars -170.0 -170 @ Caesars / +155 $623 Bet365 155.0 +155 @ Bet365
+- NEW W344  (): -180 $1,000 Bally Bet -180.0 -180 @ Bally Bet / +164 $589 DraftKings 164.0 +164 @ DraftKings
+- NEW CLEAN W5  (): -107 $1,000 Bet365 -107.0 -107 @ Bet365 / -102 $977 Caesars -102.0 -102 @ Caesars
+- NEW CLEAN W202  (): -102 [50%] $1,000 Polymarket US -102.0 -102 @ Polymarket US / +100 $957 Bet365 100.0 +100 @ Bet365
+- NEW W362  (): -190 $1,000 Caesars -190.0 -190 @ Caesars / +172 $561 Bet365 172.0 +172 @ Bet365
+- NEW W315  (): -165 $1,000 BetMGM -165.0 -165 @ BetMGM / +150 $642 Bet365 150.0 +150 @ Bet365
+- NEW W315  (): -165 $1,000 Fanatics-NJ -165.0 -165 @ Fanatics-NJ / +150 $642 Bet365 150.0 +150 @ Bet365
+- NEW W273  (): -143 $1,000 BetRivers -143.0 -143 @ BetRivers / +130 $739 Bet365 130.0 +130 @ Bet365
+- NEW W337  (): -177 $1,000 BetRivers -177.0 -177 @ BetRivers / +160 $602 Fanatics-NJ 160.0 +160 @ Fanatics-NJ
+- NEW W380  (): -200 $1,000 Fanatics-NJ -200.0 -200 @ Fanatics-NJ / +180 $536 Bally Bet 180.0 +180 @ Bally Bet
+- NEW W380  (): -200 $1,000 Fanatics-NJ -200.0 -200 @ Fanatics-NJ / +180 $536 Bet365 180.0 +180 @ Bet365
+- NEW W380  (): -200 $1,000 Fanatics-NJ -200.0 -200 @ Fanatics-NJ / +180 $536 Bet365 180.0 +180 @ Bet365
+- NEW W380  (): -200 $1,000 Fanatics-NJ -200.0 -200 @ Fanatics-NJ / +180 $536 Bally Bet 180.0 +180 @ Bally Bet
+- NEW W380  (): -200 $1,000 Fanatics-NJ -200.0 -200 @ Fanatics-NJ / +180 $536 Bet365 180.0 +180 @ Bet365
+- NEW CLEAN W229  (): -120 $1,000 theScore -120.0 -120 @ theScore / +109 $877 Bet365 109.0 +109 @ Bet365
+- NEW CLEAN W210  (): -110 $1,000 theScore -110.0 -110 @ theScore / +100 $955 Bet365 100.0 +100 @ Bet365
+- NEW CLEAN W210  (): -110 $1,000 HardRock -110.0 -110 @ HardRock / +100 $955 Bet365 100.0 +100 @ Bet365
+- NEW W316  (): -166 $1,000 DraftKings -166.0 -166 @ DraftKings / +150 $641 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W8  (): -109 $1,000 Bally Bet -109.0 -109 @ Bally Bet / -101 $963 Bet365 -101.0 -101 @ Bet365
+- NEW W342  (): -180 $1,000 Fanatics-NJ -180.0 -180 @ Fanatics-NJ / +162 $594 Bet365 162.0 +162 @ Bet365
+- NEW W295  (): -155 $1,000 BetRivers -155.0 -155 @ BetRivers / +140 $685 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
+- NEW W295  (): -155 $1,000 HardRock -155.0 -155 @ HardRock / +140 $685 Bet365 140.0 +140 @ Bet365
+- NEW W304  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +144 $666 FanDuel 144.0 +144 @ FanDuel
+- NEW W327  (): -172 $1,000 Bet365 -172.0 -172 @ Bet365 / +155 $620 Bally Bet 155.0 +155 @ Bally Bet
+- NEW W285  (): -150 $1,000 Fanatics-NJ -150.0 -150 @ Fanatics-NJ / +135 $709 Bet365 135.0 +135 @ Bet365
+- NEW W285  (): -150 $1,000 Fanatics-NJ -150.0 -150 @ Fanatics-NJ / +135 $709 Bet365 135.0 +135 @ Bet365
+- NEW W297  (): -155 $1,000 Fanatics-NJ -155.0 -155 @ Fanatics-NJ / +142 [41.33%] $687.97 ProphetX 142.0 +142 @ ProphetX
+- NEW CLEAN W211  (): -111 $1,000 DraftKings -111.0 -111 @ DraftKings / +100 $950 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+- UPDATED W275  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +130 $735 Bet365 130.0 +130 @ Bet365
+- NEW W275  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +130 $735 Bet365 130.0 +130 @ Bet365
+- NEW CLEAN W243  (): -128 $1,000 Bet365 -128.0 -128 @ Bet365 / +115 $828 Fanatics-NJ 115.0 +115 @ Fanatics-NJ
+- NEW CLEAN W243  (): -128 $1,000 Bet365 -128.0 -128 @ Bet365 / +115 $828 theScore 115.0 +115 @ theScore
+- NEW CLEAN W220  (): -116 $1,000 DraftKings -116.0 -116 @ DraftKings / +104 $912 Bet365 104.0 +104 @ Bet365
+- NEW W350  (): -185 $1,000 Fanatics-NJ -185.0 -185 @ Fanatics-NJ / +165 $581 Bet365 165.0 +165 @ Bet365
+- NEW CLEAN W1  (): -106 $1,000 DraftKings -106.0 -106 @ DraftKings / -105 $995 Bet365 -105.0 -105 @ Bet365
+- NEW CLEAN W1  (): -106 $1,000 Bet365 -106.0 -106 @ Bet365 / -105 $995 theScore -105.0 -105 @ theScore
+- NEW CLEAN W1  (): -106 $1,000 Bet365 -106.0 -106 @ Bet365 / -105 $995 Fanatics-NJ -105.0 -105 @ Fanatics-NJ
+- NEW CLEAN W237  (): -125 $1,000 theScore -125.0 -125 @ theScore / +112 $849 Bally Bet 112.0 +112 @ Bally Bet
+- NEW W297  (): -157 $1,000 Bally Bet -157.0 -157 @ Bally Bet / +140 $682 Bet365 140.0 +140 @ Bet365
+- NEW W340  (): -180 $1,000 DraftKings -180.0 -180 @ DraftKings / +160 $598 Bet365 160.0 +160 @ Bet365
+- NEW W340  (): -180 $1,000 Caesars -180.0 -180 @ Caesars / +160 $598 Bet365 160.0 +160 @ Bet365
+- NEW W340  (): -180 $1,000 Bally Bet -180.0 -180 @ Bally Bet / +160 $598 HardRock 160.0 +160 @ HardRock
+- NEW CLEAN W265  (): -140 $1,000 theScore -140.0 -140 @ theScore / +125 $762 HardRock 125.0 +125 @ HardRock
+- NEW CLEAN W265  (): -140 $1,000 theScore -140.0 -140 @ theScore / +125 $762 Bet365 125.0 +125 @ Bet365
+- NEW CLEAN W265  (): -140 $1,000 theScore -140.0 -140 @ theScore / +125 $762 Fanatics-NJ 125.0 +125 @ Fanatics-NJ
+- NEW W277  (): -145 $1,000 Fanatics-NJ -145.0 -145 @ Fanatics-NJ / +132 [43.10%] $736.70 ProphetX 132.0 +132 @ ProphetX
+- NEW W287  (): -152 $1,000 Bet365 -152.0 -152 @ Bet365 / +135 $706 HardRock 135.0 +135 @ HardRock
+- NEW CLEAN W212  (): -112 $1,000 DraftKings -112.0 -112 @ DraftKings / +100 $946 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+- NEW W282  (): -148 $1,000 Bally Bet -148.0 -148 @ Bally Bet / +134 [42.74%] $724.40 ProphetX 134.0 +134 @ ProphetX
+- NEW CLEAN W2  (): -107 $1,000 BetParx -107.0 -107 @ BetParx / -105 $991 DraftKings -105.0 -105 @ DraftKings
+- NEW CLEAN W2  (): -107 $1,000 Bet365 -107.0 -107 @ Bet365 / -105 $991 Fliff -105.0 -105 @ Fliff
+- NEW CLEAN W255  (): -135 $1,000 Fanatics-NJ -135.0 -135 @ Fanatics-NJ / +120 $791 Bet365 120.0 +120 @ Bet365
+- NEW CLEAN W255  (): -135 $1,000 Caesars -135.0 -135 @ Caesars / +120 $791 Bet365 120.0 +120 @ Bet365
+- NEW CLEAN W255  (): -135 $1,000 Fanatics-NJ -135.0 -135 @ Fanatics-NJ / +120 $791 Bet365 120.0 +120 @ Bet365
+- NEW CLEAN W255  (): -135 $1,000 DraftKings -135.0 -135 @ DraftKings / +120 $791 theScore 120.0 +120 @ theScore
+- NEW CLEAN W223  (): -118 $1,000 Bally Bet -118.0 -118 @ Bally Bet / +105 $901 Bet365 105.0 +105 @ Bet365
+- NEW W298  (): -158 $1,000 DraftKings -158.0 -158 @ DraftKings / +140 $680 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
+- NEW CLEAN W225  (): -118 $1,000 FanDuel -118.0 -118 @ FanDuel / +107 [48.31%] $901.81 ProphetX 107.0 +107 @ ProphetX
+- NEW CLEAN W2  (): -107 $1,000 Bally Bet -107.0 -107 @ Bally Bet / -105 $992 Bet365 -105.0 -105 @ Bet365
+- UPDATED W320  (): -170 $1,000 Caesars -170.0 -170 @ Caesars / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Caesars -170.0 -170 @ Caesars / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Caesars -170.0 -170 @ Caesars / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW W320  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +150 $635 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W264  (): -140 $1,000 Fanatics-NJ -140.0 -140 @ Fanatics-NJ / +124 $765 FanDuel 124.0 +124 @ FanDuel
+- NEW CLEAN W217  (): -115 $1,000 Fanatics-NJ -115.0 -115 @ Fanatics-NJ / +102 $926 FanDuel 102.0 +102 @ FanDuel
+- NEW CLEAN W217  (): -115 $1,000 BetParx -115.0 -115 @ BetParx / +102 $926 FanDuel 102.0 +102 @ FanDuel
+- NEW W353  (): -188 $1,000 DraftKings -188.0 -188 @ DraftKings / +165 $578 Bet365 165.0 +165 @ Bet365
+- NEW CLEAN W245  (): -130 $1,000 theScore -130.0 -130 @ theScore / +115 $823 Bet365 115.0 +115 @ Bet365
+- NEW CLEAN W245  (): -130 $1,000 Bally Bet -130.0 -130 @ Bally Bet / +115 $823 Caesars 115.0 +115 @ Caesars
+- NEW CLEAN W245  (): -130 $1,000 Bally Bet -130.0 -130 @ Bally Bet / +115 $823 Bet365 115.0 +115 @ Bet365
+- NEW CLEAN W245  (): -130 $1,000 theScore -130.0 -130 @ theScore / +115 $823 Fanatics-NJ 115.0 +115 @ Fanatics-NJ
+- NEW W299  (): -159 $1,000 BetRivers -159.0 -159 @ BetRivers / +140 $679 Bet365 140.0 +140 @ Bet365
+- NEW CLEAN W213  (): -113 $1,000 Bally Bet -113.0 -113 @ Bally Bet / +100 $942 Bet365 100.0 +100 @ Bet365
+- NEW CLEAN W213  (): -113 $1,000 Bally Bet -113.0 -113 @ Bally Bet / +100 $942 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+- NEW CLEAN W213  (): -113 $1,000 FanDuel -113.0 -113 @ FanDuel / +100 $942 Caesars 100.0 +100 @ Caesars
