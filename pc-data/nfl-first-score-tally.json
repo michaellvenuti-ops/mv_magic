@@ -1282,14 +1282,14 @@
    "ties": 1
   },
   {
-   "date": "2026-11-08",
    "away": "Green Bay Packers",
-   "home": "New England Patriots",
+   "date": "2026-11-08",
+   "final": "45-27",
    "first": "Green Bay Packers",
-   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
+   "home": "New England Patriots",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "45-27"
+   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
+   "ties": 0
   },
   {
    "away": "Houston Texans",
@@ -1340,6 +1340,16 @@
    "lead_changes": 3,
    "seq": "3-0>6-0>6-7>9-7>9-14>12-14>12-21>12-28>12-35",
    "ties": 0
+  },
+  {
+   "date": "2026-11-08",
+   "away": "Tampa Bay Buccaneers",
+   "home": "Chicago Bears",
+   "first": "Chicago Bears",
+   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "24-27"
   }
  ],
  "tally": {
@@ -1392,8 +1402,8 @@
    "scored_first": 4
   },
   "Chicago Bears": {
-   "gp": 8,
-   "scored_first": 5
+   "gp": 9,
+   "scored_first": 6
   },
   "Carolina Panthers": {
    "gp": 8,
@@ -1448,7 +1458,7 @@
    "scored_first": 4
   },
   "Tampa Bay Buccaneers": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 5
   },
   "Cincinnati Bengals": {
@@ -2754,14 +2764,14 @@
    "ties": 1
   },
   {
-   "date": "2026-11-08",
    "away": "Green Bay Packers",
-   "home": "New England Patriots",
+   "date": "2026-11-08",
+   "final": "45-27",
    "first": "Green Bay Packers",
-   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
+   "home": "New England Patriots",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "45-27"
+   "seq": "7-0>14-0>17-0>17-7>24-7>24-14>31-14>34-14>42-14>42-21>45-21>45-27",
+   "ties": 0
   },
   {
    "away": "Houston Texans",
@@ -2812,6 +2822,16 @@
    "lead_changes": 3,
    "seq": "3-0>6-0>6-7>9-7>9-14>12-14>12-21>12-28>12-35",
    "ties": 0
+  },
+  {
+   "date": "2026-11-08",
+   "away": "Tampa Bay Buccaneers",
+   "home": "Chicago Bears",
+   "first": "Chicago Bears",
+   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "24-27"
   }
  ],
  "lead_change_team_avgs": {
@@ -2876,9 +2896,9 @@
    "avg_per_game": 2.12
   },
   "Chicago Bears": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 1,
-   "avg_per_game": 0.12
+   "avg_per_game": 0.11
   },
   "Carolina Panthers": {
    "games": 8,
@@ -2946,9 +2966,9 @@
    "avg_per_game": 1.38
   },
   "Tampa Bay Buccaneers": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 4,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.44
   },
   "Cincinnati Bengals": {
    "games": 8,
