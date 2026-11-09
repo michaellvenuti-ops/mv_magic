@@ -15,3 +15,5 @@
 - 2026-11-08: Arizona Cardinals @ Seattle Seahawks — first: Arizona Cardinals; lead changes 1; final 3-17
 ## 2026-11-08T20:14:23-05:00 -- NFL FIRST SCORE (PC): 1 new final(s) tallied; season 134 games through 2026-11-08
 - 2026-11-08: Green Bay Packers @ New England Patriots — first: Green Bay Packers; lead changes 0; final 45-27
+## 2026-11-08T23:42:41-05:00 -- NFL FIRST SCORE (PC): 1 new final(s) tallied; season 135 games through 2026-11-08
+- 2026-11-08: Tampa Bay Buccaneers @ Chicago Bears — first: Chicago Bears; lead changes 0; final 24-27
