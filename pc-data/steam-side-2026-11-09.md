@@ -36,3 +36,5 @@ NEW FLAG: FBS Middle Tennessee @ Liberty | 2026-11-09 — Fanatics still dealing
 NEW FLAG: FBS Utah State @ San Diego State | 2026-11-09 — Fanatics still dealing spread 1.5 on Utah State (pre-move median 1.5, now 2.5)
 ## 2026-11-09T11:16:28-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-09T11:51:53-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-09T12:29:00-05:00 — 67 games, 1 steam events, 1 NEW flags
+NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-09 — Fanatics still dealing spread 17.5 on Vanderbilt (pre-move median 17.5, now 16.5)
