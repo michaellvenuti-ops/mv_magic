@@ -4509,3 +4509,11 @@
 [2026-11-09 13:43:10 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 13:44:25 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (113 with odds), db total 185141 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 13:46:04 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE CLEAN : NCAAB Florida Gulf Coast Georgia Today 7:00 PM / table / Total Under 162.5 / Alt Total Over 162 / table | theScore | Bet365 — window 215.0 :
+[2026-11-09 13:53:31 ET] sync_to_github.py: FAILED (exit 1) in 447s —   FAILED: key-number-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at fc0153e26901bce78763414e68f884823ed0d799 but expected a61a194973b3c07e1df8877
+[2026-11-09 13:54:47 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (113 with odds), db total 185347 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 13:56:31 ET] dh_arbitrage.py: OK in 105s — ARBITRAGE: NFL BUF Bills MIN Vikings Today 8:15 PM / table / Pass Attempts J. Allen Under 30.5 / Pass Attempts J. Allen Over 30.5 YES / table bar_chart | Bet365
+[2026-11-09 13:57:03 ET] dh_kalshi_poly_arb.py: OK in 32s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-09 13:58:27 ET] dh_sog_middles.py: OK in 83s — - NEW CLEAN W213  (): -113 $1,000 FanDuel -113.0 -113 @ FanDuel / +100 $942 Caesars 100.0 +100 @ Caesars
+[2026-11-09 13:59:26 ET] dh_team_total_middles.py: OK in 59s
+[2026-11-09 13:59:27 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 13:59:30 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
