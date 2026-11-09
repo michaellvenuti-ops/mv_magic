@@ -479,6 +479,60 @@
     }
    ],
    "source": "NHL club-stats API + ESPN DraftKings totals"
+  },
+  "2026-11-09": {
+   "date": "2026-11-09",
+   "flags": [
+    {
+     "away": "NYR",
+     "away_pred": 2.71,
+     "flag": "under",
+     "home": "EDM",
+     "home_pred": 2.52,
+     "over_juice": -112,
+     "predicted": 5.23,
+     "start": "2026-11-10T01:00Z",
+     "total": 6.5,
+     "under_juice": -108
+    }
+   ],
+   "games": [
+    {
+     "away": "NYR",
+     "away_pred": 2.71,
+     "flag": "under",
+     "home": "EDM",
+     "home_pred": 2.52,
+     "over_juice": -112,
+     "predicted": 5.23,
+     "start": "2026-11-10T01:00Z",
+     "total": 6.5,
+     "under_juice": -108
+    },
+    {
+     "away": "PHI",
+     "away_pred": 3.4,
+     "flag": null,
+     "home": "VAN",
+     "home_pred": 2.42,
+     "over_juice": 110,
+     "predicted": 5.82,
+     "start": "2026-11-10T02:30Z",
+     "total": 6.5,
+     "under_juice": -130
+    },
+    {
+     "away": "NYI",
+     "flag": null,
+     "home": "SJ",
+     "over_juice": -102,
+     "predicted": null,
+     "start": "2026-11-10T03:00Z",
+     "total": 6.5,
+     "under_juice": -118
+    }
+   ],
+   "source": "NHL club-stats API + ESPN DraftKings totals"
   }
  },
  "entries": {},
