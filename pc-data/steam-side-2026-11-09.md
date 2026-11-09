@@ -44,3 +44,6 @@ NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-09 — Fanatics still dealing sprea
 ## 2026-11-09T14:54:52-05:00 — 67 games, 2 steam events, 2 NEW flags
 NEW FLAG: FBS Memphis @ South Florida | 2026-11-09 — Fanatics still dealing total 48.5 on Over (pre-move median 48.5, now 50.5)
 NEW FLAG: FBS Wyoming @ UTEP | 2026-11-09 — Fanatics still dealing spread 8.5 on UTEP (pre-move median 8.5, now 7.5)
+## 2026-11-09T15:29:41-05:00 — 67 games, 2 steam events, 2 NEW flags
+NEW FLAG: FBS Nebraska @ Rutgers | 2026-11-09 — Fanatics still dealing total 53.5 on Under (pre-move median 53.25, now 51.75)
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-09 — Fanatics still dealing spread -11.0 on Boise State (pre-move median -11.0, now -13.5)
