@@ -4299,3 +4299,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 06:32:45 ET] dh_arbitrage.py: OK in 26s — ARBITRAGE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table bar_chart / Alt Spread IND Pacers +9.5 / Alt Spread DAL Mavericks -9 / table | Polymarket US | Fan
 [2026-11-09 06:33:04 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAF Utah St. San Diego St. Nov-14 9:30 PM / table / Alt Spread Utah St. +13.5 / Alt Spread San Diego St. -13.5 / table | DraftKings | FanDuel
 [2026-11-09 06:34:27 ET] dh_prop_middles.py: OK in 82s — PROP MIDDLE : NBA MEM Grizzlies TOR Raptors Today 7:45 PM / table / Alt Total Under 235 / Alt Total Over 234.5 / table | Fanatics-NJ | HardRock — window 275.0 :
+[2026-11-09 06:41:32 ET] sync_to_github.py: OK in 396s —   ok: steam-side-board-pc.html
+[2026-11-09 06:41:33 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 23, sog-middles: 736. Detai
+[2026-11-09 06:42:44 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 175999 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 06:44:15 ET] dh_sog_middles.py: OK in 91s — - NEW W355  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +165 $576 HardRock 165.0 +165 @ HardRock
+[2026-11-09 06:45:11 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-09 06:45:12 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 06:45:14 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 06:48:25 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 176193 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 06:51:38 ET] hung_number.py: OK in 72s — No new hung numbers (23 current flags).
+[2026-11-09 06:51:40 ET] rlm.py: OK in 2s
+[2026-11-09 06:51:43 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (58 games, 0 new leads, no book at 3 yet).
