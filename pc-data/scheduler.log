@@ -4574,3 +4574,13 @@
 [2026-11-09 15:51:50 ET] hung_number.py: OK in 68s — HUNG NUMBER: Oregon State vs Boise State — Fanatics spread value favorite (11.0 vs median 12.75)
 [2026-11-09 15:51:54 ET] rlm.py: OK in 3s
 [2026-11-09 15:51:58 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 15:59:25 ET] sync_to_github.py: OK in 447s —   ok: steam-side-board-pc.html
+[2026-11-09 15:59:26 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 18, promo
+[2026-11-09 15:59:58 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (113 with odds), db total 187819 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 16:01:34 ET] dh_game_middles.py: OK in 95s — GAME MIDDLE: NCAAB Florida A&M UAB Today 7:30 PM / table / Alt Total Over 149.5 / Alt Total Under 150 / table | BetRivers | Bet365 — window 340.0 :: -165 $1,000
+[2026-11-09 16:04:55 ET] dh_key_number_middles.py: OK in 201s — key-number-middles: no new strict-key middles.
+[2026-11-09 16:05:02 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS Minnesota @ Penn State | 2026-11-09 | bet365 | Under total 43.5 (median 43.5 -> 42.0)
+[2026-11-09 16:06:19 ET] odds_recorder.py: OK in 47s — SUMMARY: recorded 206 events (113 with odds), db total 188025 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 16:07:58 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE : NCAAB Florida A&M UAB Today 7:30 PM / table / Alt Total Over 149.5 / Alt Total Under 150 / table | BetRivers | Bet365 — window 340.0 :: {'side': '
+[2026-11-09 16:08:57 ET] dh_arbitrage.py: OK in 29s — ARBITRAGE: NBA SA Spurs PHO Suns Today 9:15 PM / table bar_chart / 3PT FGs J. Champagnie 5+ NO / Alt 3PT FGs J. Champagnie 5+ / table | Polymarket US | Bet365
+[2026-11-09 16:09:16 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
