@@ -47,3 +47,5 @@ NEW FLAG: FBS Wyoming @ UTEP | 2026-11-09 — Fanatics still dealing spread 8.5 
 ## 2026-11-09T15:29:41-05:00 — 67 games, 2 steam events, 2 NEW flags
 NEW FLAG: FBS Nebraska @ Rutgers | 2026-11-09 — Fanatics still dealing total 53.5 on Under (pre-move median 53.25, now 51.75)
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-09 — Fanatics still dealing spread -11.0 on Boise State (pre-move median -11.0, now -13.5)
+## 2026-11-09T16:05:02-05:00 — 67 games, 2 steam events, 1 NEW flags
+NEW FLAG: FBS Minnesota @ Penn State | 2026-11-09 — bet365 still dealing total 43.5 on Under (pre-move median 43.5, now 42.0)
