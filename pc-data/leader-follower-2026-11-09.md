@@ -33,3 +33,5 @@
 ## 2026-11-09T07:55:02-05:00 — pack move, never credited: Texas Tech @ Oklahoma State | 2026-11-09 spread (DraftKings, FanDuel)
 ## 2026-11-09T07:55:02-05:00 — pack move, never credited: Texas Tech @ Oklahoma State | 2026-11-09 total (DraftKings, FanDuel, Kalshi)
 ## 2026-11-09T07:55:02-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T09:07:41-05:00 — no-follow: Kalshi Illinois @ UCLA | 2026-11-09 spread (only 1 followed)
+## 2026-11-09T09:07:41-05:00 — 82 games, 0 leads credited, 14 started games skipped
