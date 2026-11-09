@@ -4225,3 +4225,12 @@
 [2026-11-09 05:30:20 ET] odds_recorder.py: OK in 41s — SUMMARY: recorded 194 events (68 with odds), db total 174447 snapshots / 604 events, feeds ok 6 fail 0
 [2026-11-09 05:30:37 ET] dh_arbitrage.py: OK in 17s — ARBITRAGE: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Spread DAL Mavericks +4.5 / Alt Spread IND Pacers -4.5 / table bar_chart | Fanatics-NJ | Pol
 [2026-11-09 05:30:54 ET] dh_low_holds.py: OK in 17s — LOW-HOLDS: NCAAF Utah St. San Diego St. Nov-14 9:30 PM / table / Alt Spread Utah St. +13.5 / Alt Spread San Diego St. -13.5 / table | DraftKings | FanDuel
+[2026-11-09 05:38:42 ET] sync_to_github.py: OK in 409s —   ok: steam-side-board-pc.html
+[2026-11-09 05:38:43 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 23, sog-middles: 694. Detai
+[2026-11-09 05:39:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 174641 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 05:44:18 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 174835 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 05:48:25 ET] dh_key_number_middles.py: OK in 186s — key-number-middles: no new strict-key middles.
+[2026-11-09 05:48:29 ET] steam_side.py: OK in 4s — steam-side: 43 games, no new flags (silent).
+[2026-11-09 05:50:07 ET] hung_number.py: OK in 68s — No new hung numbers (23 current flags).
+[2026-11-09 05:50:09 ET] rlm.py: OK in 2s
+[2026-11-09 05:50:12 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (58 games, 0 new leads, no book at 3 yet).
