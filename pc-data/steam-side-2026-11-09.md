@@ -51,3 +51,4 @@ NEW FLAG: FBS Oregon State @ Boise State | 2026-11-09 — Fanatics still dealing
 NEW FLAG: FBS Minnesota @ Penn State | 2026-11-09 — bet365 still dealing total 43.5 on Under (pre-move median 43.5, now 42.0)
 ## 2026-11-09T16:40:36-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-09T17:13:36-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-09T17:49:59-05:00 — 67 games, 0 steam events, 0 NEW flags
