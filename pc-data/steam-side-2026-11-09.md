@@ -25,3 +25,4 @@ NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Caesars still dealing spread 1
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — bet365 still dealing spread -1.5 on North Texas (pre-move median -1.0, now 1.0)
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — FanDuel still dealing spread -1.5 on North Texas (pre-move median -1.0, now 1.0)
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Fanatics still dealing spread -1.0 on North Texas (pre-move median -1.0, now 1.0)
+## 2026-11-09T09:27:14-05:00 — 67 games, 0 steam events, 0 NEW flags
