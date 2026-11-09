@@ -26,3 +26,6 @@ NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — bet365 still dealing spread -1
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — FanDuel still dealing spread -1.5 on North Texas (pre-move median -1.0, now 1.0)
 NEW FLAG: FBS North Texas @ UTSA | 2026-11-09 — Fanatics still dealing spread -1.0 on North Texas (pre-move median -1.0, now 1.0)
 ## 2026-11-09T09:27:14-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-09T10:02:59-05:00 — 67 games, 1 steam events, 2 NEW flags
+NEW FLAG: FBS Washington @ Michigan State | 2026-11-09 — Fanatics still dealing spread 4.5 on Michigan State (pre-move median 4.5, now 3.5)
+NEW FLAG: FBS Washington @ Michigan State | 2026-11-09 — Kalshi still dealing spread 4.5 on Michigan State (pre-move median 4.5, now 3.5)
