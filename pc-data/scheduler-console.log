@@ -4431,3 +4431,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 10:09:31 ET] hung_number.py: OK in 69s — HUNG NUMBER: Colorado State vs Washington State — FanDuel spread value favorite (8.5 vs median 9.5)
 [2026-11-09 10:09:35 ET] rlm.py: OK in 4s
 [2026-11-09 10:09:38 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 10:17:41 ET] sync_to_github.py: OK in 452s —   ok: steam-side-board-pc.html
+[2026-11-09 10:17:41 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 23, promo
+[2026-11-09 10:18:14 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 194 events (68 with odds), db total 180655 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:19:47 ET] dh_sog_middles.py: OK in 93s — - NEW W375  (): -200 $1,000 Caesars -200.0 -200 @ Caesars / +175 $545 Bet365 175.0 +175 @ Bet365
+[2026-11-09 10:20:52 ET] dh_team_total_middles.py: OK in 65s
+[2026-11-09 10:20:54 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 10:20:56 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 10:24:27 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: no new strict-key middles.
+[2026-11-09 10:25:42 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 194 events (68 with odds), db total 180849 snapshots / 604 events, feeds ok 6 fail 0
