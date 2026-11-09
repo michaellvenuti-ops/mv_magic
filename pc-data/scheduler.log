@@ -4056,3 +4056,13 @@
 [2026-11-09 00:29:47 ET] odds_recorder.py: OK in 2s — SUMMARY: recorded 194 events (68 with odds), db total 167657 snapshots / 604 events, feeds ok 6 fail 0
 [2026-11-09 00:35:24 ET] dh_key_number_middles.py: FAILED (exit 2) in 216s — key-number-middles: zero middles parsed — send a dump back. No state written.
 [2026-11-09 00:35:29 ET] steam_side.py: OK in 5s — steam-side: 63 games, no new flags (silent).
+[2026-11-09 00:41:51 ET] sync_to_github.py: OK in 382s —   ok: steam-side-board-pc.html
+[2026-11-09 00:41:51 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 141. Deta
+[2026-11-09 00:43:01 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 167851 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 00:44:40 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NCAAB South Carolina St. Chicago St. Today 7:00 PM / table / Total Over 148.5 / Alt Total Under 149.5 / table | DraftKings | Bet365 — window 208.0 
+[2026-11-09 00:46:11 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE CLEAN : NCAAB S. Carolina UpState Coastal Carolina Today 7:00 PM / table / Total Over 148.5 / Alt Total Under 149 / table | DraftKings | Bet365 — wi
+[2026-11-09 00:48:10 ET] dh_sog_middles.py: OK in 89s — - NEW CLEAN W5  (): -110 $1,000 BetRivers -110.0 -110 @ BetRivers / -105 $978 Fanatics-NJ -105.0 -105 @ Fanatics-NJ
+[2026-11-09 00:49:07 ET] dh_team_total_middles.py: OK in 57s
+[2026-11-09 00:49:08 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 00:49:10 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 00:50:20 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 194 events (68 with odds), db total 168045 snapshots / 604 events, feeds ok 6 fail 0
