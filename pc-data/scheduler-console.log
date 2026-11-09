@@ -4210,3 +4210,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 03:43:36 ET] dh_team_total_middles.py: OK in 55s
 [2026-11-09 03:43:37 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 03:43:39 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-09 03:50:14 ET] sync_to_github.py: FAILED (exit 1) in 395s —   FAILED: pc-data/kalshi-poly-arb-2026-11-08.md (HTTP 409: {'error': '{"message":"is at ae728dac7ff554986d78087277d4834079ac07e7 but expected 23cdb69250e9281462
+[2026-11-09 03:51:24 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 172313 snapshots / 604 events, feeds ok 6 fail 0
