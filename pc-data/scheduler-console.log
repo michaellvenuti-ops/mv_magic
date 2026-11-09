@@ -4679,3 +4679,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 17:49:59 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 17:51:22 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE : NCAAB Florida Gulf Coast Georgia Today 7:00 PM / table / Alt Total Under 166.5 / Alt Total Over 166 / table | Bally Bet | Bet365 — window 302.0 ::
 [2026-11-09 17:53:47 ET] odds_recorder.py: OK in 115s — SUMMARY: recorded 206 events (113 with odds), db total 190291 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 18:01:20 ET] sync_to_github.py: OK in 453s —   ok: steam-side-board-pc.html
+[2026-11-09 18:01:21 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 14, promo
+[2026-11-09 18:01:54 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (113 with odds), db total 190497 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 18:03:01 ET] hung_number.py: OK in 68s — HUNG NUMBER: Fresno State vs Texas State — Fanatics spread value favorite (8.5 vs median 9.5)
+[2026-11-09 18:03:06 ET] rlm.py: OK in 4s
+[2026-11-09 18:03:09 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 18:05:48 ET] dh_sog_middles.py: OK in 159s — - UPDATED W288  (): -152 $1,000 Bet365 -152.0 -152 @ Bet365 / +136 $703 FanDuel 136.0 +136 @ FanDuel
+[2026-11-09 18:07:10 ET] dh_team_total_middles.py: OK in 52s
+[2026-11-09 18:07:11 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 18:07:14 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
+[2026-11-09 18:08:29 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (112 with odds), db total 190703 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 18:10:19 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NBA MEM Grizzlies TOR Raptors Today 7:45 PM / table / Alt Spread MEM Grizzlies +7.5 / Alt Spread TOR Raptors -7.5 / table bar_chart | Bet365 | Polyma
+[2026-11-09 18:10:38 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
