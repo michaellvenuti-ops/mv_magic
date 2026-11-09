@@ -4491,3 +4491,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 11:51:47 ET] dh_game_middles.py: OK in 78s — GAME MIDDLE: NCAAB UL Monroe Texas A&M Today 8:00 PM / table / Spread Texas A&M -36 / Alt Spread UL Monroe +37.5 / table | Caesars | Fanatics-NJ — window 215.0 
 [2026-11-09 11:51:54 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 11:53:51 ET] dh_prop_middles.py: OK in 117s — PROP MIDDLE CLEAN : NCAAB Cleveland St. Bowling Green Today 7:00 PM / table / Total Under 157.5 / Alt Total Over 156.5 / table | Bet365 | Fanatics-NJ — window 2
+[2026-11-09 12:03:05 ET] sync_to_github.py: OK in 554s —   ok: steam-side-board-pc.html
+[2026-11-09 12:03:06 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 17, promo
+[2026-11-09 12:04:20 ET] odds_recorder.py: OK in 44s — SUMMARY: recorded 206 events (112 with odds), db total 182875 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 12:04:53 ET] dh_low_holds.py: OK in 33s — LOW-HOLDS: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / 1st Half Total Over 107.5 / 1st Half Alt Total Under 107.5 / table | Bet365 | BetRivers
+[2026-11-09 12:06:09 ET] dh_sog_middles.py: OK in 76s — - NEW W310  (): -165 $1,000 BetMGM -165.0 -165 @ BetMGM / +145 $656 HardRock 145.0 +145 @ HardRock
+[2026-11-09 12:07:01 ET] dh_team_total_middles.py: OK in 53s
+[2026-11-09 12:07:03 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 12:07:05 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-09 12:10:19 ET] odds_recorder.py: OK in 44s — SUMMARY: recorded 206 events (112 with odds), db total 183081 snapshots / 665 events, feeds ok 6 fail 0
