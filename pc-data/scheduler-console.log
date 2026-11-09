@@ -4035,3 +4035,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-08 22:38:01 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-08 22:43:04 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (2 with odds), db total 165181 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 22:47:56 ET] dh_key_number_middles.py: OK in 171s — key-number-middles: no new strict-key middles.
+[2026-11-08 22:53:59 ET] sync_to_github.py: FAILED (exit 1) in 363s —   FAILED: pc-data/transcripts/prop-points-2026-11-06.json (HTTP 409: {'error': '{"message":"is at 66223dfdec742cd0ffee62a0937004acfde6abff but expected 0a0168ca
+[2026-11-08 22:55:08 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 189 events (2 with odds), db total 165370 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 22:55:42 ET] dh_kalshi_poly_arb.py: OK in 35s — KALSHI-POLY-ARB: NCAAB Florida Gulf Coast Georgia Nov-09 7:00 PM / table bar_chart / Moneyline Georgia YES / Moneyline Florida Gulf Coast / table | Kalshi | Bet
+[2026-11-08 22:55:46 ET] steam_side.py: OK in 4s — steam-side: 63 games, no new flags (silent).
