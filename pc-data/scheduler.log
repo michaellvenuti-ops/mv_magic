@@ -4009,3 +4009,12 @@
 [2026-11-08 23:08:12 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 134 total tallied.
 [2026-11-08 23:09:23 ET] odds_recorder.py: OK in 42s — SUMMARY: recorded 189 events (1 with odds), db total 165748 snapshots / 474 events, feeds ok 6 fail 0
 [2026-11-08 23:09:25 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-08 23:17:57 ET] sync_to_github.py: OK in 361s —   ok: steam-side-board-pc.html
+[2026-11-08 23:17:57 ET] notify.py: OK in 0s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, nfl-first-score: 12, p
+[2026-11-08 23:18:30 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 189 events (1 with odds), db total 165937 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:21:21 ET] dh_key_number_middles.py: OK in 171s — key-number-middles: no new strict-key middles.
+[2026-11-08 23:24:31 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 189 events (1 with odds), db total 166126 snapshots / 474 events, feeds ok 6 fail 0
+[2026-11-08 23:25:44 ET] hung_number.py: OK in 72s — HUNG NUMBER: Buccaneers vs Bears — FanDuel moneyline Buccaneers value Buccaneers (21.3 vs median 11.1)
+[2026-11-08 23:25:47 ET] rlm.py: OK in 4s
+[2026-11-08 23:25:50 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (78 games, 0 new leads, no book at 3 yet).
+[2026-11-08 23:26:23 ET] steam_side.py: OK in 2s — steam-side: 63 games, no new flags (silent).
