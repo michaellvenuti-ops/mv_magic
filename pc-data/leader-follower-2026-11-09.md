@@ -84,3 +84,13 @@ LEAD: bet365 on Alabama @ Vanderbilt | 2026-11-09 (total)
 ## 2026-11-09T15:51:58-05:00 — pack move, never credited: Oregon State @ Boise State | 2026-11-09 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
 ## 2026-11-09T15:51:58-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-09 spread (FanDuel, bet365)
 ## 2026-11-09T15:51:58-05:00 — 82 games, 0 leads credited, 14 started games skipped
+## 2026-11-09T16:54:58-05:00 — no-follow: DraftKings Sacramento State @ Central Michigan | 2026-11-09 spread (only 1 followed)
+## 2026-11-09T16:54:58-05:00 — pack move, never credited: Illinois @ UCLA | 2026-11-09 total (Fanatics, Kalshi)
+## 2026-11-09T16:54:58-05:00 — pack move, never credited: Cincinnati @ Iowa State | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T16:54:58-05:00 — pack move, never credited: Kansas State @ TCU | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T16:54:58-05:00 — no-follow: FanDuel Ole Miss @ Oklahoma | 2026-11-09 spread (only 0 followed)
+## 2026-11-09T16:54:58-05:00 — pack move, never credited: Ole Miss @ Oklahoma | 2026-11-09 spread (FanDuel, bet365)
+## 2026-11-09T16:54:58-05:00 — pack move, never credited: Florida @ Kentucky | 2026-11-09 total (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-09T16:54:58-05:00 — no-follow: BetMGM Minnesota @ Penn State | 2026-11-09 total (only 2 followed)
+## 2026-11-09T16:54:58-05:00 — no-follow: DraftKings San Jose State @ Air Force | 2026-11-09 spread (only 1 followed)
+## 2026-11-09T16:54:58-05:00 — 82 games, 0 leads credited, 14 started games skipped
