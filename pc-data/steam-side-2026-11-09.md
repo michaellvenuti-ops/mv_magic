@@ -14,3 +14,4 @@
 NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-09 — FanDuel still dealing spread 7.5 on Wisconsin (pre-move median 7.5, now 8.5)
 NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-09 — bet365 still dealing spread 2.5 on Oklahoma (pre-move median 2.5, now 1.5)
 NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-09 — FanDuel still dealing spread 2.5 on Oklahoma (pre-move median 2.5, now 1.5)
+## 2026-11-09T07:37:10-05:00 — 67 games, 0 steam events, 0 NEW flags
