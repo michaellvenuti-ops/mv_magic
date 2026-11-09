@@ -1,26 +1,11 @@
-# Hung numbers — 2026-11-08 (scan 2026-11-08 18:59)
+# Hung numbers — 2026-11-08 (scan 2026-11-08 20:05)
 
-- Texans vs Chargers | BetMGM | spread | value: dog | book -24.5 vs median -26.5 | div 2.0 
-- Texans vs Chargers | FanDuel | spread | value: dog | book -25.5 vs median -26.5 | div 1.0 
-- Texans vs Chargers | BetMGM | total | value: Under | book 52.5 vs median 60.5 | div 8.0 
-- Texans vs Chargers | Hard Rock | total | value: Under | book 40.0 vs median 60.5 | div 20.5 
-- Cardinals vs Seahawks | Caesars | spread | value: dog | book 14.5 vs median 13.5 | div 1.0 
-- Cardinals vs Seahawks | Hard Rock | spread | value: dog | book 14.5 vs median 13.5 | div 1.0 
-- Cardinals vs Seahawks | BetMGM | total | value: Over | book 30.5 vs median 26.5 | div 4.0 
-- Cardinals vs Seahawks | Hard Rock | total | value: Under | book 18.5 vs median 26.5 | div 8.0 
-- Packers vs Patriots | BetMGM | spread | value: favorite | book -24.5 vs median -22.5 | div 2.0 
-- Packers vs Patriots | DraftKings | spread | value: favorite | book -24.5 vs median -22.5 | div 2.0 
-- Packers vs Patriots | Hard Rock | spread | value: dog | book -19.5 vs median -22.5 | div 3.0 
-- Packers vs Patriots | BetMGM | total | value: Under | book 59.5 vs median 69.5 | div 10.0 
-- Packers vs Patriots | Hard Rock | total | value: Under | book 65.5 vs median 69.5 | div 4.0 
-- Raiders vs 49ers | BetMGM | spread | value: favorite | book 19.5 vs median 20.5 | div 1.0 
-- Raiders vs 49ers | Hard Rock | spread | value: favorite | book 19.5 vs median 20.5 | div 1.0 
-- Raiders vs 49ers | BetMGM | total | value: Over | book 61.5 vs median 57.5 | div 4.0 
-- Raiders vs 49ers | Hard Rock | total | value: Under | book 51.0 vs median 57.5 | div 6.5 
-- Raiders vs 49ers | Caesars | moneyline Raiders | value: Raiders | book 7.7 vs median 2.0 | div 5.7 
-- Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Jets vs Chiefs | DraftKings | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
+- Cardinals vs Seahawks | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Raiders vs 49ers | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Raiders vs 49ers | Fanatics | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
 - Ohio vs Akron | Fanatics | spread | value: favorite | book -13.5 vs median -12.5 | div 1.0 
 - James Madison vs Southern Miss | Fanatics | spread | value: favorite | book -15.5 vs median -13.5 | div 2.0 
 - Nebraska vs Illinois | Hard Rock | total | value: Under | book 49.5 vs median 52.5 | div 3.0 
