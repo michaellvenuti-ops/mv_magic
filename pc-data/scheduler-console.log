@@ -4197,3 +4197,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 03:22:07 ET] dh_key_number_middles.py: OK in 184s — key-number-middles: no new strict-key middles.
 [2026-11-09 03:22:12 ET] steam_side.py: OK in 5s — steam-side: 43 games, no new flags (silent).
 [2026-11-09 03:23:22 ET] odds_recorder.py: OK in 40s — SUMMARY: recorded 194 events (68 with odds), db total 171731 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:32:51 ET] sync_to_github.py: OK in 389s —   ok: steam-side-board-pc.html
+[2026-11-09 03:32:52 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 105, sog-middles: 380. Deta
+[2026-11-09 03:33:28 ET] odds_recorder.py: OK in 6s — SUMMARY: recorded 194 events (68 with odds), db total 171925 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:36:28 ET] dh_game_middles.py: OK in 180s — GAME MIDDLE: NCAAB Florida Gulf Coast Georgia Today 7:00 PM / table / Total Under 163.5 / Total Over 160.5 / table | BetMGM | HardRock — window 205.0 :: -105 $1
+[2026-11-09 03:38:42 ET] dh_prop_middles.py: OK in 133s — PROP MIDDLE CLEAN : NCAAB Kansas City Jacksonville Today 7:00 PM / table / Total Over 145.5 / Alt Total Under 146 / table | Caesars | Bet365 — window 215.0 :: {
+[2026-11-09 03:39:55 ET] odds_recorder.py: OK in 43s — SUMMARY: recorded 194 events (68 with odds), db total 172119 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 03:41:04 ET] hung_number.py: OK in 69s — HUNG NUMBER: South Carolina vs Arkansas — FanDuel spread value dog (-7.5 vs median -8.5)
+[2026-11-09 03:41:08 ET] rlm.py: OK in 4s
+[2026-11-09 03:41:11 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (58 games, 0 new leads, no book at 3 yet).
+[2026-11-09 03:42:41 ET] dh_sog_middles.py: OK in 90s — - NEW CLEAN W213  (): -113 $1,000 BetRivers -113.0 -113 @ BetRivers / +100 $942 Fanatics-NJ 100.0 +100 @ Fanatics-NJ
+[2026-11-09 03:43:36 ET] dh_team_total_middles.py: OK in 55s
+[2026-11-09 03:43:37 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 03:43:39 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
