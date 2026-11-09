@@ -4410,3 +4410,10 @@
 [2026-11-09 10:44:41 ET] totals_scan.py: OK in 2s — totals: no new flags (silent).
 [2026-11-09 10:44:46 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-09 10:45:41 ET] dh_derivative_ev.py: OK in 54s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
+[2026-11-09 10:53:26 ET] sync_to_github.py: FAILED (exit 1) in 466s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at 06bc510e1414a2d9c7057dcdf510b10d4928785d but expected 337971131400c114653b251de78e984c541902
+[2026-11-09 10:54:00 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 194 events (68 with odds), db total 181431 snapshots / 604 events, feeds ok 6 fail 0
+[2026-11-09 10:54:20 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NBA IND Pacers DAL Mavericks Today 8:15 PM / table / Alt Total Under 229.5 / Alt Total Over 229.5 / table | Caesars | Bet365
+[2026-11-09 10:55:54 ET] dh_sog_middles.py: OK in 94s — - NEW W278  (): -148 $1,000 Bally Bet -148.0 -148 @ Bally Bet / +130 $729 Fanatics-NJ 130.0 +130 @ Fanatics-NJ
+[2026-11-09 10:56:58 ET] dh_team_total_middles.py: OK in 65s
+[2026-11-09 10:57:00 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 10:57:02 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
