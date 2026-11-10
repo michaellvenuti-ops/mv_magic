@@ -23,7 +23,16 @@
    }
   },
   "2026-11-09": {
-   "grade": null,
+   "grade": {
+    "entry": 25.809999465942383,
+    "exit_price": 25.94,
+    "exit_time": "09:30 ET",
+    "note": "target touched before stop",
+    "outcome": "WIN",
+    "pl": 50.0,
+    "stop": 25.68,
+    "target": 25.94
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-09, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -42,16 +51,31 @@
     "ticker": "SGRY",
     "vol": 493681
    }
+  },
+  "2026-11-10": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-09, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Take-Two Interactive Software, Inc. Common Stock",
+    "entry": 214.8,
+    "mcap": 38779744000.0,
+    "pct": 3.57,
+    "stop": 213.73,
+    "target": 215.87,
+    "ticker": "TTWO",
+    "vol": 230965
+   }
   }
  },
  "meta": {
   "record": {
    "losses": 0,
-   "modeled_pl": 0.0,
+   "modeled_pl": 50.0,
    "no_data": 0,
    "no_trades": 1,
    "time_exits": 0,
-   "wins": 0
+   "wins": 1
   }
  }
 }
