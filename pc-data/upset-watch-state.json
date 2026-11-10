@@ -5394,7 +5394,8 @@
    "fav": "home",
    "spread": 29.5,
    "fav_team": "Tennessee",
-   "dog_team": "Radford"
+   "dog_team": "Radford",
+   "live_ml": -8500
   },
   "401921720": {
    "sport": "NCAAB",
@@ -5427,7 +5428,7 @@
    "spread": 19.5,
    "fav_team": "UIC",
    "dog_team": "UNC Greensboro",
-   "live_ml": -1750
+   "live_ml": -660
   },
   "401925681": {
    "sport": "NCAAB",
@@ -5438,7 +5439,7 @@
    "spread": 28.5,
    "fav_team": "Notre Dame",
    "dog_team": "E Illinois",
-   "live_ml": -8500
+   "live_ml": -20000
   },
   "401922060": {
    "sport": "NCAAB",
@@ -5476,11 +5477,20 @@
    "sport": "NCAAB",
    "matchup": "Stonehill at Columbia",
    "date": "2026-11-10",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Columbia",
-   "dog_team": "Stonehill"
+   "dog_team": "Stonehill",
+   "live_ml": -195,
+   "alerted_at": "2026-11-09T19:20:02",
+   "board_read_at": "2026-11-09T19:20:02",
+   "alert_expires_at": "2026-11-09T19:23:02",
+   "alert_detail": "12:00 - 1st Half",
+   "alert_fav_score": 9,
+   "alert_dog_score": 18,
+   "alert_ml": -195,
+   "ml_read_at": "2026-11-09T19:20:02"
   },
   "401919806": {
    "sport": "NCAAB",
@@ -5517,7 +5527,7 @@
    "spread": 24.5,
    "fav_team": "Clemson",
    "dog_team": "North Dakota",
-   "live_ml": -20000
+   "live_ml": -2800
   },
   "401916305": {
    "sport": "NCAAB",
@@ -5553,7 +5563,8 @@
    "fav": "home",
    "spread": 22.5,
    "fav_team": "Georgia",
-   "dog_team": "FGCU"
+   "dog_team": "FGCU",
+   "live_ml": -2500
   },
   "401906759": {
    "sport": "NCAAB",
