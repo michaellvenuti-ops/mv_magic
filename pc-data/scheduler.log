@@ -4918,3 +4918,12 @@
 [2026-11-10 11:37:26 ET] dh_team_total_middles.py: OK in 56s
 [2026-11-10 11:37:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 11:37:30 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 11:47:25 ET] sync_to_github.py: FAILED (exit 1) in 595s —   FAILED: pc-data/nhl-totals-snapshot-2026-11-06.json (HTTP 422: {'error': '{"message":"Invalid request.\\n\\n\\"sha\\" wasn\'t supplied.","documentation_url":"
+[2026-11-10 11:48:43 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 227 events (136 with odds), db total 200242 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 11:49:04 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NCAAB Bryant Providence Today 7:00 PM / table / Alt Spread Bryant +35.5 / Alt Spread Providence -35.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-10 11:49:23 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 11:52:30 ET] dh_key_number_middles.py: OK in 187s — key-number-middles: no new strict-key middles.
+[2026-11-10 11:52:39 ET] steam_side.py: OK in 9s — STEAM-SIDE FLAG: FBS Wake Forest @ SMU | 2026-11-10 | Kalshi | Wake Forest spread -1.5 (median -1.0 -> 1.0)
+[2026-11-10 11:54:12 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NCAAB Winthrop Kennesaw St. Today 7:00 PM / table / Alt Total Under 170.5 / Alt Total Over 169.5 / table | Fanatics-NJ | Bet365 — window 225
+[2026-11-10 11:54:20 ET] public_fade.py: OK in 9s
+[2026-11-10 11:55:27 ET] dh_positive_ev.py: OK in 66s — DarkHorse check unavailable (signed out) — positive-ev skipped, no prices invented.
