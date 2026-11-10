@@ -90,6 +90,24 @@ def main():
                 state["entries"][key]["last_seen"] = today_str()
             lines.append(f"{key} w{entry['window']} :: {mid['leg1']} / "
                          f"{mid['leg2']}")
+        # Chat-delivery wiring (2026-11-10, Michael's tap): the banked
+        # list re-lists every qualifying middle each run, so the truly
+        # NEW ones are ALSO banked as NEW MIDDLE lines directly under
+        # the header, and the header carries their count — the exact
+        # pattern steam_side.py uses ("N NEW flags") that the pc-data
+        # delivery watcher screens for. Without this, new middles
+        # reached only stdout (scheduler.log), never chat.
+        new_lines = []
+        for key, e in deliverables:
+            tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            new_lines.append(
+                f"NEW MIDDLE: {tag}{key} w{e['window']} :: "
+                f"{e['leg1']} / {e['leg2']}")
+        lines[0] += f" — {len(deliverables)} NEW middles"
+        if new_lines:
+            lines = (lines[:1] + new_lines
+                     + ["(end of new middles — full qualifying list "
+                         "below)"] + lines[1:])
         save_state(SCAN, state)
         bank(SCAN, lines)
         for key, e in deliverables[:10]:
