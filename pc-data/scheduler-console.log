@@ -4813,3 +4813,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 06:38:20 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-10 06:38:23 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=4 queued_total=6
 [2026-11-10 06:38:24 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=6, limit=5)
+[2026-11-10 06:46:22 ET] sync_to_github.py: FAILED (exit 1) in 478s —   FAILED: pc-data/game-middles-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 3e29a72e98c27998289104e2641483c0cbe65899 but expected 8d65f59f9882d283c7454
+[2026-11-10 06:47:40 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (67 with odds), db total 195441 snapshots / 665 events, feeds ok 6 fail 0
