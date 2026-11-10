@@ -5043,3 +5043,12 @@
 [2026-11-10 15:40:25 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Alt Spread LV Raiders +8.5 / Alt Spread SEA Seahawks -8 / table | Fanatics-NJ | Bet365 — wind
 [2026-11-10 15:40:58 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (136 with odds), db total 205463 snapshots / 747 events, feeds ok 6 fail 0
 [2026-11-10 15:44:14 ET] hung_number.py: OK in 76s — HUNG NUMBER: Seahawks vs Raiders — Fanatics total value Over (42.0 vs median 40.5)
+[2026-11-10 15:52:59 ET] sync_to_github.py: FAILED (exit 1) in 524s —   FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at 58c0839a6001d75ceff099f8a9df788ed151543e but expected 09ee29c7265f3fab4935a408fbe4f0
+[2026-11-10 15:53:32 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (136 with odds), db total 205690 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 15:55:03 ET] dh_game_middles.py: OK in 91s — GAME MIDDLE: NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Spread MIA Dolphins +4.5 / Alt Spread IND Colts -4 / table | BetMGM | Bet365 — window 275.0
+[2026-11-10 15:55:08 ET] rlm.py: OK in 5s
+[2026-11-10 15:55:12 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 15:56:52 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-10 15:57:43 ET] dh_team_total_middles.py: OK in 51s
+[2026-11-10 15:57:45 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 15:57:47 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
