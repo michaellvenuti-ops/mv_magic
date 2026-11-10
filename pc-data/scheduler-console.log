@@ -4953,3 +4953,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 11:16:07 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Western Michigan @ Akron | 2026-11-10 | Kalshi | Western Michigan spread 14.5 (median 14.5 -> 15.5)
 [2026-11-10 11:17:40 ET] dh_prop_middles.py: OK in 94s — PROP MIDDLE : NCAAB 15 Kansas 24 Kentucky Today 9:30 PM / table / Alt Total Under 163.5 / Alt Total Over 163 / table | DraftKings | Bet365 — window 395.0 :: {'s
 [2026-11-10 11:21:03 ET] costco_gold.py: OK in 203s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-10 11:32:04 ET] sync_to_github.py: FAILED (exit 1) in 661s —   FAILED: sog-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at d4685293792fb388c1b596a6b2ba2907761668e1 but expected c99423cb37a6f97cafed18434651ed
+[2026-11-10 11:33:22 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 227 events (136 with odds), db total 200015 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 11:35:05 ET] dh_game_middles.py: OK in 103s — GAME MIDDLE: NFL PIT Steelers CIN Bengals Nov-15 8:20 PM / table / Rush Yards S. Perine Under 20.5 / Alt Rush Yards S. Perine 20+ / table | Fanatics-NJ | Bet365
+[2026-11-10 11:36:31 ET] dh_sog_middles.py: OK in 85s — - 0 deliverables this run
+[2026-11-10 11:37:26 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-10 11:37:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 11:37:30 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
