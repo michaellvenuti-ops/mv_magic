@@ -315,3 +315,5 @@ NEW MIDDLE: W311  (): -165 $1,000 Bally Bet -165.0 -165 @ Bally Bet / +146 $653 
 - NEW W311  (): -165 $1,000 Bally Bet -165.0 -165 @ Bally Bet / +146 $653 FanDuel 146.0 +146 @ FanDuel
 NEW MIDDLE: W330  (): -175 $1,000 Bet365 -175.0 -175 @ Bet365 / +155 $616 Bally Bet 155.0 +155 @ Bally Bet
 - NEW W330  (): -175 $1,000 Bet365 -175.0 -175 @ Bet365 / +155 $616 Bally Bet 155.0 +155 @ Bally Bet
+## 2026-11-10T08:39:43-05:00 — sog-middles: 998 full-size + 0 smaller-bets rows parsed (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
