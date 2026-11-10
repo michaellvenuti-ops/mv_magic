@@ -1,9 +1,8 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 12:30)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 13:32)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Panthers vs Saints | Hard Rock | spread | value: dog | book 48.0 vs median 1.5 | div 46.5 middle pairing spans key number 7
+- Panthers vs Saints | Hard Rock | spread | value: dog | book 48.5 vs median 1.5 | div 47.0 middle pairing spans key number 7
 - Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 99.0 vs median 50.5 | div 48.5 
-- Vikings vs Packers | FanDuel | spread | value: favorite | book 4.5 vs median 5.5 | div 1.0 
 - Ohio vs Miami (OH) | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
