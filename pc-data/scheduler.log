@@ -4814,3 +4814,20 @@
 [2026-11-10 08:09:22 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 206 events (67 with odds), db total 197089 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-10 08:21:52 ET] dh_game_middles.py: OK in 690s — GAME MIDDLE: NCAAB Winthrop Kennesaw St. Today 7:00 PM / table / Alt Total Under 174.5 / Alt Total Over 173 / table | DraftKings | Bet365 — window 341.0 :: -166
 [2026-11-10 08:22:16 ET] fetch_nba_snapshot.py: OK in 24s — snapshot: 30 teams, 6 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-10.json
+[2026-11-10 08:31:35 ET] sync_to_github.py: FAILED (exit 1) in 559s —   FAILED: pc-data/nba-overs-snapshot-2026-11-07.json (HTTP 409: {'error': '{"message":"is at 0d0209f46021eb3d0d4c9a9a1e79e98a2dc68840 but expected ae2d357c16596
+[2026-11-10 08:32:57 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 206 events (67 with odds), db total 197295 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 08:33:18 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NCAAB Alcorn St. Murray St. Today 8:00 PM / table / Alt Total Under 171.5 / Alt Total Over 171.5 / table | DraftKings | Bet365
+[2026-11-10 08:33:37 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 08:33:56 ET] dh_low_holds.py: OK in 19s — low-holds: no new qualifying pairs (silent).
+[2026-11-10 08:37:03 ET] dh_key_number_middles.py: OK in 187s — key-number-middles: no new strict-key middles.
+[2026-11-10 08:37:07 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 08:38:26 ET] dh_prop_middles.py: OK in 80s — PROP MIDDLE : NCAAB 5 Michigan St. 2 Duke Today 7:00 PM / table / Alt Total Over 142.5 / Alt Total Under 143 / table | DraftKings | Bet365 — window 316.0 :: {'s
+[2026-11-10 08:39:45 ET] dh_sog_middles.py: OK in 79s — - 0 deliverables this run
+[2026-11-10 08:40:29 ET] dh_team_total_middles.py: OK in 43s
+[2026-11-10 08:40:29 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 08:41:24 ET] dh_sleeping_book_sweep.py: OK in 55s — DarkHorse check unavailable (signed out) -- sleeping-book sweep skipped, no prices invented.
+[2026-11-10 08:41:25 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-10 08:41:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 08:41:33 ET] nhl_totals_scan.py: OK in 7s — nhl-totals: 7 games, no flags.
+[2026-11-10 08:41:38 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-10 08:41:42 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 6, 'NCAAB': 57}, new 0, moved 0, baselines 63.
