@@ -5118,3 +5118,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 16:49:08 ET] dh_key_number_middles.py: FAILED (exit 2) in 200s — key-number-middles: zero middles parsed — send a dump back. No state written.
 [2026-11-10 16:50:22 ET] hung_number.py: OK in 74s — HUNG NUMBER: Wake Forest vs SMU — BetMGM spread value favorite (-1.0 vs median 1.0)
 [2026-11-10 16:50:28 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 16:59:33 ET] sync_to_github.py: FAILED (exit 1) in 545s —   FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at bec26ffdc0d21cd35c0f65903ea1d44533b56d12 but expected 7f6dda2bf29f2130615ec51a6b6fe5
+[2026-11-10 17:00:53 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 227 events (136 with odds), db total 207052 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 17:04:11 ET] dh_game_middles.py: OK in 198s — GAME MIDDLE: NCAAB UT Martin Arkansas St. Today 8:00 PM / table / Alt Total Under 159.5 / Alt Total Over 159 / table | Bally Bet | Bet365 — window 315.0 :: -155
+[2026-11-10 17:04:18 ET] rlm.py: OK in 6s
+[2026-11-10 17:04:22 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 17:06:01 ET] dh_prop_middles.py: OK in 99s — PROP MIDDLE : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Spread IND Colts +2.5 / Alt Spread MIA Dolphins -2 / table | Bet365 | BetMGM — window 372.
