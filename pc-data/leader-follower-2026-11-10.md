@@ -1,2 +1,6 @@
 ## 2026-11-10T06:34:09-05:00 — 81 games, 0 leads credited
 ## 2026-11-10T07:37:51-05:00 — 81 games, 0 leads credited
+## 2026-11-10T08:52:07-05:00 — no-follow: Kalshi Commanders @ Giants | 2026-11-10 spread (only 1 followed)
+## 2026-11-10T08:52:07-05:00 — pack move, never credited: Vikings @ Packers | 2026-11-10 total (FanDuel, Kalshi, bet365)
+## 2026-11-10T08:52:07-05:00 — pack move, never credited: Wake Forest @ SMU | 2026-11-10 spread (BetMGM, Fanatics)
+## 2026-11-10T08:52:07-05:00 — 81 games, 0 leads credited
