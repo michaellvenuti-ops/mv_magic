@@ -341,3 +341,5 @@ NEW MIDDLE: W330  (): -175 $1,000 Bet365 -175.0 -175 @ Bet365 / +155 $616 Bally 
 - 0 deliverables this run
 ## 2026-11-10T16:31:28-05:00 — sog-middles: 960 full-size + 0 smaller-bets rows parsed (compact: qualifying only below) — 0 NEW/CHANGED middles
 - 0 deliverables this run
+## 2026-11-10T17:18:23-05:00 — sog-middles: 960 full-size + 0 smaller-bets rows parsed (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
