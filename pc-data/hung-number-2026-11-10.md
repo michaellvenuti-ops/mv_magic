@@ -1,27 +1,20 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 11:14)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 12:30)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Panthers vs Saints | Hard Rock | spread | value: dog | book 48.0 vs median 1.5 | div 46.5 middle pairing spans key number 7
 - Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 99.0 vs median 50.5 | div 48.5 
-- Vikings vs Packers | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
-- Western Michigan vs Akron | Caesars | spread | value: dog | book -14.0 vs median -15.5 | div 1.5 
-- Western Michigan vs Akron | Fanatics | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
-- Ohio vs Miami (OH) | Caesars | moneyline Miami (OH) | value: Miami (OH) | book 99.0 vs median 51.2 | div 47.8 
-- Memphis vs South Florida | Caesars | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
+- Vikings vs Packers | FanDuel | spread | value: favorite | book 4.5 vs median 5.5 | div 1.0 
+- Ohio vs Miami (OH) | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Wake Forest vs SMU | BetMGM | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
+- Wake Forest vs SMU | BetMGM | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
 - Wake Forest vs SMU | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Wake Forest vs SMU | Caesars | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
+- Wake Forest vs SMU | Caesars | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
 - Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
 - Wake Forest vs SMU | Fanatics | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
 - East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Boston College vs Notre Dame | FanDuel | spread | value: favorite | book 28.5 vs median 29.5 | div 1.0 
-- Fresno State vs Texas State | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Oregon State vs Boise State | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
-- San Jose State vs Air Force | bet365 | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
-- San Jose State vs Air Force | FanDuel | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
 - Colorado State vs Washington State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
