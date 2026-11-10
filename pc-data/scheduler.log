@@ -4937,3 +4937,15 @@
 [2026-11-10 12:11:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 12:11:29 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-10 12:13:03 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 227 events (136 with odds), db total 200696 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 12:24:50 ET] sync_to_github.py: OK in 558s —   ok: steam-side-board-pc.html
+[2026-11-10 12:25:23 ET] notify.py: OK in 32s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 12:27:11 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 227 events (136 with odds), db total 200923 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 12:30:53 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: no new strict-key middles.
+[2026-11-10 12:32:06 ET] hung_number.py: OK in 73s — HUNG NUMBER: Ohio vs Miami (OH) — BetMGM spread value dog (1.0 vs median -1.25)
+[2026-11-10 12:32:11 ET] rlm.py: OK in 5s
+[2026-11-10 12:32:15 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 12:32:18 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS San Jose State @ Air Force | 2026-11-10 | Fanatics | San Jose State spread -12.5 (median -12.5 -> -11.5)
+[2026-11-10 12:33:38 ET] dh_prop_middles.py: OK in 80s — PROP MIDDLE CLEAN : NCAAF 2 Utah 22 Arizona Nov-14 7:30 PM / table / Moneyline Utah / Alt Spread Arizona +1 / table | BetMGM | BetRivers — window 278.0 :: {'sid
+[2026-11-10 12:34:12 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 227 events (136 with odds), db total 201150 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 12:34:15 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=6 queued_total=9
+[2026-11-10 12:35:16 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
