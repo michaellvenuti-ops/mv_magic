@@ -4702,3 +4702,39 @@
 - NEW CLEAN W258  (): -136 $1,000 Bally Bet -136.0 -136 @ Bally Bet / +122 $782 Bet365 122.0 +122 @ Bet365
 - NEW W303  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +143 $669 Bally Bet 143.0 +143 @ Bally Bet
 - NEW W331  (): -175 $1,000 Bally Bet -175.0 -175 @ Bally Bet / +156 $614 DraftKings 156.0 +156 @ DraftKings
+## 2026-11-09T21:05:12-05:00 — sog-middles: 962 full-size + 0 smaller-bets rows parsed (compact: qualifying only below)
+- UPDATED W335  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +165 $599 HardRock 165.0 +165 @ HardRock
+- NEW W390  (): -200 $1,000 FanDuel -200.0 -200 @ FanDuel / +190 $517 Bally Bet 190.0 +190 @ Bally Bet
+- NEW W350  (): -180 $1,000 FanDuel -180.0 -180 @ FanDuel / +170 $576 Bally Bet 170.0 +170 @ Bally Bet
+- UPDATED W340  (): -175 $1,000 Fanatics-NJ -175.0 -175 @ Fanatics-NJ / +165 $593 HardRock 165.0 +165 @ HardRock
+- NEW W330  (): -170 $1,000 Fanatics-NJ -170.0 -170 @ Fanatics-NJ / +160 $611 BetRivers 160.0 +160 @ BetRivers
+- NEW W310  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +150 $650 Bet365 150.0 +150 @ Bet365
+- NEW W383  (): -198 $1,000 FanDuel -198.0 -198 @ FanDuel / +185 $528 Bally Bet 185.0 +185 @ Bally Bet
+- NEW W365  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +175 $555 Bet365 175.0 +175 @ Bet365
+- NEW W365  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +175 $555 Bally Bet 175.0 +175 @ Bally Bet
+- NEW CLEAN W250  (): -130 $1,000 HardRock -130.0 -130 @ HardRock / +120 $804 Fanatics-NJ 120.0 +120 @ Fanatics-NJ
+- NEW CLEAN W206  (): -106 $1,000 Bet365 -106.0 -106 @ Bet365 / +100 [50.00%] $979.80 ProphetX 100.0 +100 @ ProphetX
+- NEW CLEAN W240  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +115 $837 HardRock 115.0 +115 @ HardRock
+- NEW W314  (): -164 $1,000 FanDuel -164.0 -164 @ FanDuel / +150 $644 Bally Bet 150.0 +150 @ Bally Bet
+- NEW W335  (): -175 $1,000 Fanatics-NJ -175.0 -175 @ Fanatics-NJ / +160 $604 BetRivers 160.0 +160 @ BetRivers
+- NEW CLEAN W1  (): -105 $1,000 Caesars -105.0 -105 @ Caesars / -104 $995 FanDuel -104.0 -104 @ FanDuel
+- NEW W312  (): -162 [61.83%] $1,000 ProphetX -162.0 -162 @ ProphetX / +150 $642 Bet365 150.0 +150 @ Bet365
+- NEW CLEAN W252  (): -132 $1,000 FanDuel -132.0 -132 @ FanDuel / +120 $799 Bally Bet 120.0 +120 @ Bally Bet
+- NEW W358  (): -188 $1,000 FanDuel -188.0 -188 @ FanDuel / +170 $567 Bally Bet 170.0 +170 @ Bally Bet
+- NEW W305  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +145 $663 HardRock 145.0 +145 @ HardRock
+- NEW CLEAN W210  (): -110 $1,000 Bally Bet -110.0 -110 @ Bally Bet / +100 $955 theScore 100.0 +100 @ theScore
+- NEW W316  (): -166 $1,000 DraftKings -166.0 -166 @ DraftKings / +150 $641 Bet365 150.0 +150 @ Bet365
+- NEW W370  (): -195 $1,000 Bally Bet -195.0 -195 @ Bally Bet / +175 $550 Fanatics-NJ 175.0 +175 @ Fanatics-NJ
+- NEW W345  (): -180 [64.29%] $1,000 ProphetX -180.0 -180 @ ProphetX / +165 $583 Bet365 165.0 +165 @ Bet365
+- NEW W360  (): -190 $1,000 Fanatics-NJ -190.0 -190 @ Fanatics-NJ / +170 $565 Bet365 170.0 +170 @ Bet365
+- NEW CLEAN W232  (): -122 $1,000 FanDuel -122.0 -122 @ FanDuel / +110 $867 Bally Bet 110.0 +110 @ Bally Bet
+- NEW CLEAN W232  (): -122 $1,000 Bally Bet -122.0 -122 @ Bally Bet / +110 $867 Fanatics-NJ 110.0 +110 @ Fanatics-NJ
+- NEW CLEAN W228  (): -120 $1,000 BetMGM -120.0 -120 @ BetMGM / +108 $881 Bally Bet 108.0 +108 @ Bally Bet
+- NEW W303  (): -160 $1,000 FanDuel -160.0 -160 @ FanDuel / +143 $669 Bally Bet 143.0 +143 @ Bally Bet
+- NEW W303  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +143 $669 Bally Bet 143.0 +143 @ Bally Bet
+- NEW W301  (): -159 $1,000 Bally Bet -159.0 -159 @ Bally Bet / +142 $673 DraftKings 142.0 +142 @ DraftKings
+- NEW CLEAN W237  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +112 $849 Bet365 112.0 +112 @ Bet365
+- NEW CLEAN W237  (): -125 $1,000 Fanatics-NJ -125.0 -125 @ Fanatics-NJ / +112 $849 BetRivers 112.0 +112 @ BetRivers
+- NEW W314  (): -166 $1,000 FanDuel -166.0 -166 @ FanDuel / +148 $646 Bally Bet 148.0 +148 @ Bally Bet
+- NEW W329  (): -174 $1,000 FanDuel -174.0 -174 @ FanDuel / +155 $618 Bally Bet 155.0 +155 @ Bally Bet
+- NEW W297  (): -157 $1,000 Bally Bet -157.0 -157 @ Bally Bet / +140 $682 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
