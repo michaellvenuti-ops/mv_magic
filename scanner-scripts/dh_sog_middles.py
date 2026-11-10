@@ -22,6 +22,17 @@ CALIBRATION: the Market Type filter control is set best-effort; if
 the click does not land, rows are still filtered in code by the
 market label ("shot" must appear in the market when a label parsed).
 Run --dump on the first pass and send the dump back for a patch.
+
+FIX 2026-11-10 (Michael's tap): the in-code check was dead —
+dh_middles.parse_middle_row never populates a "market" field, so
+`mid.get("market")` was always "" and the guard never fired; with
+the best-effort Hockey Props click also not landing, the scan
+banked the WHOLE Middles board (13,150 state entries, all game
+spreads/totals/moneylines with empty player/game/market). The
+filter is now authoritative in code: a row qualifies only when
+its own row identity (the non-bet cells: event + market text)
+mentions shots ("shot" / "sog"). The polluted state was backed up
+and reset the same day.
 """
 import argparse
 import sys
@@ -71,11 +82,22 @@ def middle_key(mid):
     return f"{ident} | {l1['book']} | {l2['book']}"
 
 
+def row_identity(mid):
+    """The row's own event/market text (non-bet cells). This is the
+    only trustworthy market label: parse_middle_row populates no
+    player/market/game fields."""
+    return stable_row_identity(mid.get("cells")) or ""
+
+
+def is_sog_row(mid):
+    ident = row_identity(mid).lower()
+    return "shot" in ident or "sog" in ident
+
+
 def qualifies(mid):
     if mid["window"] < MIN_WINDOW:
         return False
-    market = (mid.get("market") or "").lower()
-    if market and "shot" not in market:
+    if not is_sog_row(mid):
         return False
     return (price_in(mid["leg1"]["price"], PRICE_LO, PRICE_HI)
             and price_in(mid["leg2"]["price"], PRICE_LO, PRICE_HI))
@@ -128,7 +150,7 @@ def main():
                 continue
             key = middle_key(mid)
             entry = {"player": mid.get("player", ""),
-                     "market": mid.get("market", ""),
+                     "market": row_identity(mid),
                      "game": mid.get("game", ""),
                      "window": mid["window"],
                      "conversion_pct": mid["conversion_pct"],
@@ -168,7 +190,7 @@ def main():
             kind = "NEW" if tag == "NEW" else "CHANGED"
             lines.append(
                 f"{kind} MIDDLE: {'CLEAN ' if e['clean_tier'] else ''}"
-                f"W{e['window']:g} {e['player']} ({e['game']}): "
+                f"{key} w{e['window']:g} :: "
                 f"{leg_line(h['leg1'])} / {leg_line(h['leg2'])}"
                 f"{' [SMALLER BETS]' if e['smaller_bets'] else ''}")
             lines.append(
