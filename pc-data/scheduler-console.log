@@ -4924,3 +4924,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 10:19:18 ET] sync_to_github.py: FAILED (exit 1) in 619s —   FAILED: pc-data/hung-number-state.json (HTTP 500: {'error': ''})
 [2026-11-10 10:20:42 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 206 events (67 with odds), db total 198943 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-10 10:22:09 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAB Utah Tech Utah St. Today 9:00 PM / table / Alt Total Under 159.5 / Alt Total Over 159 / table | Bally Bet | Bet365 — window 269.0 :: -129 $1,
+[2026-11-10 10:31:46 ET] sync_to_github.py: OK in 577s —   ok: steam-side-board-pc.html
+[2026-11-10 10:31:54 ET] notify.py: OK in 8s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 10:33:12 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (67 with odds), db total 199149 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 10:36:32 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: no new strict-key middles.
+[2026-11-10 10:36:36 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 10:37:26 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NCAAB Harvard Northeastern Today 7:00 PM / table / Alt Total Over 138.5 / Alt Total Under 139 / table | DraftKings | Bet365
+[2026-11-10 10:37:49 ET] dh_kalshi_poly_arb.py: OK in 22s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 10:39:15 ET] dh_prop_middles.py: OK in 86s — PROP MIDDLE CLEAN : NCAAB Southern Iowa St. Today 8:00 PM / table / Alt Spread Iowa St. -33 / Alt Spread Southern +33.5 / table | Bet365 | BetRivers — window 26
+[2026-11-10 10:40:47 ET] dh_sog_middles.py: OK in 92s — - 0 deliverables this run
+[2026-11-10 10:42:10 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 206 events (67 with odds), db total 199355 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 10:42:57 ET] dh_team_total_middles.py: OK in 47s
+[2026-11-10 10:42:58 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 10:43:02 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
