@@ -5048,3 +5048,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 14:23:39 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-10 14:25:02 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE : NFL NE Patriots DET Lions Nov-15 9:30 AM / table / Moneyline DET Lions / Alt Spread NE Patriots +0.5 / table | theScore | Bally Bet — window 293.0
 [2026-11-10 14:27:00 ET] odds_recorder.py: OK in 88s — SUMMARY: recorded 227 events (136 with odds), db total 203874 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 14:39:12 ET] sync_to_github.py: OK in 552s —   ok: steam-side-board-pc.html
+[2026-11-10 14:39:17 ET] notify.py: OK in 5s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 14:39:50 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (136 with odds), db total 204101 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 14:41:26 ET] dh_game_middles.py: OK in 97s — GAME MIDDLE: NCAAB SE Louisiana Ole Miss Today 8:30 PM / table / Alt Total Over 144.5 / Alt Total Under 145 / table | Bally Bet | Bet365 — window 266.0 :: -136 
+[2026-11-10 14:42:50 ET] hung_number.py: OK in 84s — HUNG NUMBER: Purdue vs Iowa — DraftKings spread value favorite (16.5 vs median 17.5)
+[2026-11-10 14:44:29 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-10 14:45:28 ET] dh_team_total_middles.py: OK in 59s
+[2026-11-10 14:45:29 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 14:45:32 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-10 14:46:52 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (136 with odds), db total 204328 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 14:47:26 ET] rlm.py: OK in 4s
+[2026-11-10 14:47:30 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
