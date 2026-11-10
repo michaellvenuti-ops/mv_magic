@@ -49,7 +49,8 @@ def main():
 
     return run_pair_scan("kalshi-poly-arb", "arbitrage", qualify_deduped,
                          enrich, changed=changed, dump=args.dump,
-                         smaller=not args.no_smaller)
+                         smaller=not args.no_smaller,
+                         deliver_label="PAIR")
 
 
 if __name__ == "__main__":
