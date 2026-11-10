@@ -4873,3 +4873,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 08:41:33 ET] nhl_totals_scan.py: OK in 7s — nhl-totals: 7 games, no flags.
 [2026-11-10 08:41:38 ET] total_projectors_scan.py: OK in 5s — }
 [2026-11-10 08:41:42 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 6, 'NCAAB': 57}, new 0, moved 0, baselines 63.
+[2026-11-10 08:50:06 ET] sync_to_github.py: OK in 504s —   ok: steam-side-board-pc.html
+[2026-11-10 08:50:07 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 16, sog-middles: 230. Detai
+[2026-11-10 08:50:40 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 197501 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 08:52:00 ET] hung_number.py: OK in 80s — HUNG NUMBER: Wake Forest vs SMU — Fanatics spread value dog (1.0 vs median 0.0)
+[2026-11-10 08:52:04 ET] rlm.py: OK in 4s
+[2026-11-10 08:52:07 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 08:52:13 ET] futures_board.py: FAILED (exit 2) in 6s — futures-board: zero markets parsed — see --dump
+[2026-11-10 08:52:37 ET] yahoo_brief.py: OK in 24s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-10 08:54:34 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAB Alcorn St. Murray St. Today 8:00 PM / table / Alt Spread Alcorn St. +30.5 / Alt Spread Murray St. -30 / table | Caesars | Bet365 — window 290
+[2026-11-10 08:57:07 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 206 events (67 with odds), db total 197707 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 09:00:20 ET] half_percent.py: OK in 13s — half-percent: PICK TTWO ref $214.80 target $215.87 stop $213.73
