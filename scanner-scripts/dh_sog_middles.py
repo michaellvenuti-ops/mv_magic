@@ -156,8 +156,21 @@ def main():
                 if changed:
                     prior.update(entry)
                     deliverables.append(("UPDATED", key, entry))
+        # Chat-delivery wiring (2026-11-10, Michael's tap): the
+        # header carries the NEW/CHANGED count and each deliverable
+        # also banks as a uniform NEW MIDDLE / CHANGED MIDDLE line —
+        # the steam_side.py pattern the pc-data delivery watcher
+        # screens for. The original "- NEW ..." lines stay (boards
+        # and the log read them).
+        lines[0] += f" — {len(deliverables)} NEW/CHANGED middles"
         for tag, key, e in deliverables:
             h = e["headline"]
+            kind = "NEW" if tag == "NEW" else "CHANGED"
+            lines.append(
+                f"{kind} MIDDLE: {'CLEAN ' if e['clean_tier'] else ''}"
+                f"W{e['window']:g} {e['player']} ({e['game']}): "
+                f"{leg_line(h['leg1'])} / {leg_line(h['leg2'])}"
+                f"{' [SMALLER BETS]' if e['smaller_bets'] else ''}")
             lines.append(
                 f"- {tag} {'CLEAN ' if e['clean_tier'] else ''}"
                 f"W{e['window']:g} {e['player']} ({e['game']}): "
