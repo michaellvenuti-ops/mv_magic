@@ -164,6 +164,23 @@ def main():
                 state["entries"][key]["last_seen"] = now_stamp()
             lines.append(f"KEY {key_num}: {key} margins {margins} :: "
                          f"{entry['leg1']} / {entry['leg2']}")
+        # Chat-delivery wiring (2026-11-10, Michael's tap): bank the
+        # NEW strict-key middles as NEW MIDDLE lines directly under
+        # the header, with their count in the header — the
+        # steam_side.py pattern the pc-data delivery watcher screens
+        # for. Previously deliverables reached only stdout
+        # (scheduler.log), never chat.
+        new_lines = []
+        for key, e in deliverables:
+            tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            new_lines.append(
+                f"NEW MIDDLE: {tag}KEY {e['key_number']}: {key} "
+                f"margins {e['margins']} :: {e['leg1']} / {e['leg2']}")
+        lines[0] += f" — {len(deliverables)} NEW middles"
+        if new_lines:
+            lines = (lines[:1] + new_lines
+                     + ["(end of new middles — full qualifying list "
+                         "below)"] + lines[1:])
         save_state(SCAN, state)
         bank(SCAN, lines)
         for key, e in deliverables[:10]:
