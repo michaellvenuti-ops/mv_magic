@@ -4815,3 +4815,5 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 06:38:24 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=6, limit=5)
 [2026-11-10 06:46:22 ET] sync_to_github.py: FAILED (exit 1) in 478s —   FAILED: pc-data/game-middles-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 3e29a72e98c27998289104e2641483c0cbe65899 but expected 8d65f59f9882d283c7454
 [2026-11-10 06:47:40 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (67 with odds), db total 195441 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 06:55:05 ET] sync_to_github.py: FAILED (exit 1) in 445s —   FAILED: kalshi-poly-arb-board-pc.html (HTTP 409: {'error': '{"message":"is at 4fc25b47fbbef2fe61603569db7324f2139d3d72 but expected da2bb7371df7867c117607e5fa
+[2026-11-10 06:55:38 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 195647 snapshots / 665 events, feeds ok 6 fail 0
