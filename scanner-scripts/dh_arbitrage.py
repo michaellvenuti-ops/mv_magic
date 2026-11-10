@@ -17,16 +17,38 @@ Read-only; never places a bet.
 import argparse
 import sys
 
+from dh_common import PCT_RE, _book_in
 from dh_pairs import run_pair_scan
 
 MIN_PROFIT_PCT = 3.0
 
 
 def displayed_profit(pair):
-    """The tool's profit % is the percent attached to the pair row;
-    calibration: the largest % on the row is the profit figure on
-    DarkHorse's arbitrage table. None when no % parsed."""
-    return max(pair["pcts"]) if pair["pcts"] else None
+    """The tool's profit % for the pair: the % in the row's payout /
+    profit summary cell — the cell carrying a $ profit figure and a
+    % but NO book (e.g. "$6.35\\n0.60%").
+
+    NEVER the max % on the row (the original calibration): exchange
+    bet cells carry the contract's win % in brackets ("-1684.1 [94%]
+    $1,000 Kalshi"), and max() read that 94.0 as the pair's profit.
+    Live probe 2026-11-10: that row's pcts were [94.0, 0.6]; the
+    summary cell's 0.60% matched the from-prices complementary
+    profit (0.61%). Book-only rows carry exactly one % — the same
+    summary-cell figure (probe: matched computed profit to rounding
+    on 15 of 15 rows). A summary cell carrying two scenario %s
+    yields the MINIMUM — the worst case is the guaranteed figure.
+    Fallback when no summary cell parses: min of the row's %s
+    (book rows hold exactly one; exchange rows hold the win % plus
+    the true profit, and the profit is the smaller in practice)."""
+    for cell in pair.get("cells") or []:
+        if "%" not in cell or "$" not in cell:
+            continue
+        if _book_in(cell):
+            continue
+        pcts = [float(p) for p in PCT_RE.findall(cell)]
+        if pcts:
+            return min(pcts)
+    return min(pair["pcts"]) if pair["pcts"] else None
 
 
 def qualify(pair):
@@ -58,7 +80,8 @@ def main():
     args = ap.parse_args()
     return run_pair_scan("arbitrage", "arbitrage", qualify, enrich,
                          changed=changed, dump=args.dump,
-                         smaller=not args.no_smaller)
+                         smaller=not args.no_smaller,
+                         deliver_label="PAIR")
 
 
 if __name__ == "__main__":
