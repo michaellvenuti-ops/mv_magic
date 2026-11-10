@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-09 (scan 2026-11-09 18:01)
+# Hung numbers — 2026-11-09 (scan 2026-11-09 19:08)
 
 - Browns vs Saints | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Cowboys vs Colts | Fanatics | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
@@ -8,14 +8,13 @@
 - Raiders vs 49ers | Fanatics | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
 - Ohio vs Miami (OH) | Fanatics | moneyline Miami (OH) | value: Miami (OH) | book 99.0 vs median 50.5 | div 48.5 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
-- Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
+- Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median -1.25 | div 2.75 
 - Tulane vs Rice | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - New Mexico State vs Missouri State | BetMGM | spread | value: dog | book 48.5 vs median 1.5 | div 47.0 middle pairing spans key number 7
 - New Mexico State vs Missouri State | BetMGM | moneyline New Mexico State | value: New Mexico State | book 98.0 vs median 48.8 | div 49.3 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Missouri vs Georgia | FanDuel | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
-- Fresno State vs Texas State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
-- Fresno State vs Texas State | Fanatics | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Fresno State vs Texas State | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Appalachian State vs Marshall | bet365 | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Appalachian State vs Marshall | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Minnesota vs Penn State | bet365 | total | value: Over | book 43.5 vs median 42.0 | div 1.5 
