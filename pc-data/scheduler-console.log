@@ -4755,3 +4755,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 20:11:15 ET] hung_number.py: OK in 61s — HUNG NUMBER: South Carolina vs Arkansas — Fanatics spread value favorite (-8.5 vs median -7.5)
 [2026-11-09 20:11:18 ET] rlm.py: OK in 3s
 [2026-11-09 20:11:22 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 20:18:45 ET] sync_to_github.py: OK in 443s —   ok: steam-side-board-pc.html
+[2026-11-09 20:18:47 ET] notify.py: OK in 2s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 19, promo
+[2026-11-09 20:20:04 ET] odds_recorder.py: OK in 47s — SUMMARY: recorded 206 events (80 with odds), db total 193587 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 20:21:58 ET] dh_arbitrage.py: OK in 113s — ARBITRAGE: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +10.5 / Alt Spread West Virginia -10 / table | DraftKings | Bally Bet
+[2026-11-09 20:22:43 ET] dh_kalshi_poly_arb.py: OK in 46s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-09 20:24:34 ET] dh_prop_middles.py: OK in 110s — PROP MIDDLE : NCAAF North Texas UTSA Nov-14 9:00 PM / table / Alt Spread UTSA +5.5 / Alt Spread North Texas -5 / table | DraftKings | Bally Bet — window 350.0 :
+[2026-11-09 20:26:18 ET] dh_sog_middles.py: OK in 104s — - NEW W331  (): -175 $1,000 Bally Bet -175.0 -175 @ Bally Bet / +156 $614 DraftKings 156.0 +156 @ DraftKings
+[2026-11-09 20:27:14 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-09 20:27:15 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 20:27:19 ET] nba_overs_pregame.py: OK in 4s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-09 20:28:37 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (80 with odds), db total 193793 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 20:29:25 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAF Utah St. San Diego St. Nov-14 9:30 PM / table / Alt Spread San Diego St. +12.5 / Alt Spread Utah St. -12 / table | DraftKings | Bally Bet
