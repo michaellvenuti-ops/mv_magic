@@ -4905,3 +4905,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 09:37:01 ET] dh_game_middles.py: OK in 83s — GAME MIDDLE: NCAAB Alcorn St. Murray St. Today 8:00 PM / table / Alt Spread Murray St. -27 / Alt Spread Alcorn St. +27.5 / table | Bet365 | Bally Bet — window 2
 [2026-11-10 09:37:05 ET] half_percent.py: OK in 4s — half-percent recheck: 09:37 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
 [2026-11-10 09:37:06 ET] futures_pairs.py: FAILED (exit 2) in 1s — futures-pairs: no futures-board JSON in data/ — run futures_board.py first.
+[2026-11-10 09:46:44 ET] sync_to_github.py: FAILED (exit 1) in 578s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at e18799b95d43d19b6b147b7bc3a19132c9c22278 but expected 1d7d1ce8295730b5e7e58405def87e0852f5df
+[2026-11-10 09:48:05 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 206 events (67 with odds), db total 198531 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 09:48:51 ET] dh_low_holds.py: OK in 47s — LOW-HOLDS: NCAAB Hofstra Arizona St. Today 9:00 PM / table / Spread Hofstra +19 / Alt Spread Arizona St. -19 / table | Caesars | Bet365
+[2026-11-10 09:52:05 ET] dh_key_number_middles.py: OK in 194s — key-number-middles: no new strict-key middles.
+[2026-11-10 09:52:12 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
