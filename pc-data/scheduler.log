@@ -4879,3 +4879,6 @@
 [2026-11-10 10:07:55 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 10:07:57 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-10 10:08:59 ET] promo_watch.py: OK in 62s — promo-watch: 9 listed, 0 new, 0 converter attempt(s).
+[2026-11-10 10:19:18 ET] sync_to_github.py: FAILED (exit 1) in 619s —   FAILED: pc-data/hung-number-state.json (HTTP 500: {'error': ''})
+[2026-11-10 10:20:42 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 206 events (67 with odds), db total 198943 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 10:22:09 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAB Utah Tech Utah St. Today 9:00 PM / table / Alt Total Under 159.5 / Alt Total Over 159 / table | Bally Bet | Bet365 — window 269.0 :: -129 $1,
