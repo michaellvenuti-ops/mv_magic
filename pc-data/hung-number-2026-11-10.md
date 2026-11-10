@@ -1,15 +1,11 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 14:41)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 15:43)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Dolphins vs Colts | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Panthers vs Saints | Hard Rock | spread | value: dog | book 48.5 vs median 1.5 | div 47.0 middle pairing spans key number 7
 - Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 99.0 vs median 50.5 | div 48.5 
-- Vikings vs Packers | Caesars | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
-- Vikings vs Packers | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
-- Vikings vs Packers | BetMGM | total | value: Over | book 42.5 vs median 40.5 | div 2.0 
-- Vikings vs Packers | FanDuel | total | value: Over | book 42.5 vs median 40.5 | div 2.0 
-- Seahawks vs Raiders | Caesars | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
-- Seahawks vs Raiders | Hard Rock | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
-- Seahawks vs Raiders | Fanatics | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
+- Seahawks vs Raiders | Fanatics | spread | value: dog | book -5.0 vs median -6.5 | div 1.5 
+- Seahawks vs Raiders | Fanatics | total | value: Over | book 42.0 vs median 40.5 | div 1.5 
 - Chargers vs Ravens | Hard Rock | spread | value: favorite | book 4.5 vs median 5.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Ohio vs Miami (OH) | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
@@ -24,7 +20,6 @@
 - Tulane vs Rice | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Boston College vs Notre Dame | FanDuel | spread | value: favorite | book 28.5 vs median 29.5 | div 1.0 
-- Oregon State vs Boise State | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Purdue vs Iowa | DraftKings | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
 - Colorado State vs Washington State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
