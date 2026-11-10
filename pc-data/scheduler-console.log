@@ -5150,3 +5150,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 17:57:38 ET] dh_team_total_middles.py: OK in 60s
 [2026-11-10 17:57:40 ET] nfl_first_score.py: OK in 3s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 17:57:43 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-10 18:06:08 ET] sync_to_github.py: OK in 506s —   ok: steam-side-board-pc.html
+[2026-11-10 18:06:19 ET] notify.py: OK in 10s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 18:08:36 ET] odds_recorder.py: OK in 107s — SUMMARY: recorded 227 events (135 with odds), db total 208414 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 18:10:32 ET] dh_game_middles.py: OK in 116s — GAME MIDDLE: NCAAB UT Martin Arkansas St. Today 8:00 PM / table / Alt Total Under 159.5 / Alt Total Over 158 / table | BetRivers | Bet365 — window 305.0 :: -155
+[2026-11-10 18:13:41 ET] dh_key_number_middles.py: OK in 189s — key-number-middles: no new strict-key middles.
+[2026-11-10 18:13:46 ET] rlm.py: OK in 5s
+[2026-11-10 18:13:50 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 18:13:54 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 18:14:28 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 227 events (135 with odds), db total 208641 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 18:15:49 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Spread IND Colts +2.5 / Alt Spread MIA Dolphins -1.5 / table | Bet365 | BetMGM — window 37
