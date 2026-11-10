@@ -5143,3 +5143,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 17:36:08 ET] dh_game_middles.py: OK in 100s — GAME MIDDLE: NCAAB Wright St. Toledo Today 7:00 PM / table / Alt Total Over 154.5 / Alt Total Under 155 / table | DraftKings | Bet365 — window 285.0 :: -145 $1,
 [2026-11-10 17:38:16 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE CLEAN : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Total Over 38.5 / Alt Total Under 39 / table | DraftKings | Bet365 — window 213.0 :: {'s
 [2026-11-10 17:40:07 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (136 with odds), db total 207960 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 17:51:49 ET] sync_to_github.py: FAILED (exit 1) in 492s —   FAILED: prop-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at ced8fc5cc12c94027a240ea427858d320f6b603a but expected ef21451b5222bbbbd89ff1053fcd5
+[2026-11-10 17:52:23 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (136 with odds), db total 208187 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 17:54:22 ET] hung_number.py: OK in 119s — HUNG NUMBER: Houston vs Colorado — FanDuel spread value favorite (-10.5 vs median -9.5)
+[2026-11-10 17:56:38 ET] dh_sog_middles.py: OK in 136s — - 0 deliverables this run
+[2026-11-10 17:57:38 ET] dh_team_total_middles.py: OK in 60s
+[2026-11-10 17:57:40 ET] nfl_first_score.py: OK in 3s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 17:57:43 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
