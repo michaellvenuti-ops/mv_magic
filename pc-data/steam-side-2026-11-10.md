@@ -21,3 +21,4 @@ NEW FLAG: FBS Wake Forest @ SMU | 2026-11-10 — BetMGM still dealing spread 1.0
 NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — DraftKings still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
 NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — Fanatics still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
 ## 2026-11-10T13:07:15-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-10T13:46:18-05:00 — 67 games, 0 steam events, 0 NEW flags
