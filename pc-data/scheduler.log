@@ -4741,3 +4741,33 @@
 [2026-11-09 21:06:21 ET] dh_team_total_middles.py: OK in 59s
 [2026-11-09 21:06:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 21:06:25 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-09 21:13:46 ET] sync_to_github.py: OK in 441s —   ok: steam-side-board-pc.html
+[2026-11-09 21:13:46 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 19, promo
+[2026-11-09 21:15:01 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (75 with odds), db total 194823 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 21:16:26 ET] dh_game_middles.py: OK in 85s — GAME MIDDLE: NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Alt Total Over 56 / Alt Total Under 56.5 / table | Fanatics-NJ | BetRivers — window 330.0 :: 
+[2026-11-09 21:19:37 ET] dh_key_number_middles.py: OK in 191s — key-number-middles: no new strict-key middles.
+[2026-11-09 21:20:51 ET] hung_number.py: OK in 73s — No new hung numbers (19 current flags).
+[2026-11-09 21:20:55 ET] rlm.py: OK in 5s
+[2026-11-09 21:20:59 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 21:21:02 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 21:22:20 ET] odds_recorder.py: OK in 47s — SUMMARY: recorded 206 events (75 with odds), db total 195029 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 21:23:12 ET] dh_arbitrage.py: OK in 22s — ARBITRAGE: NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM / table / Alt Spread Coastal Carolina +6.5 / Alt Spread Arkansas St. -6 / table | DraftKings | Bal
+[2026-11-09 21:23:31 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 06:16:32 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-10 06:17:27 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 206 events (67 with odds), db total 195235 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 06:21:02 ET] dh_arbitrage.py: FAILED (exit 1) in 214s —   - <launched> pid=10080
+[2026-11-10 06:24:52 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 231s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-10 06:27:23 ET] dh_low_holds.py: OK in 151s — LOW-HOLDS: NHL WSH Capitals OTT Senators Today 7:00 PM / table / Shots T. Stutzle Under 2.5 / Shots T. Stutzle Over 2.5 / table | BetMGM | Bet365
+[2026-11-10 06:29:32 ET] dh_game_middles.py: OK in 129s — GAME MIDDLE: NCAAB Presbyterian NC St. Today 7:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | DraftKings | Bet365 — window 326.0 :: -166 $
+[2026-11-10 06:32:52 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: no new strict-key middles.
+[2026-11-10 06:33:59 ET] hung_number.py: OK in 67s — HUNG NUMBER: San Jose State vs Air Force — FanDuel spread value favorite (11.5 vs median 12.5)
+[2026-11-10 06:34:05 ET] rlm.py: OK in 6s
+[2026-11-10 06:34:09 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 06:34:12 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 06:35:33 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NCAAB Presbyterian NC St. Today 7:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | DraftKings | Bet365 — window 326.0 :: {'sid
+[2026-11-10 06:37:14 ET] dh_sog_middles.py: OK in 101s — - NEW W302  (): -160 $1,000 Fanatics-NJ -160.0 -160 @ Fanatics-NJ / +142 $671 FanDuel 142.0 +142 @ FanDuel
+[2026-11-10 06:38:17 ET] dh_team_total_middles.py: OK in 63s
+[2026-11-10 06:38:18 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 06:38:20 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 06:38:23 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=4 queued_total=6
+[2026-11-10 06:38:24 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=6, limit=5)
