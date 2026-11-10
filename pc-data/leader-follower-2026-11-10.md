@@ -7,3 +7,7 @@
 ## 2026-11-10T10:03:39-05:00 — pack move, never credited: Vikings @ Packers | 2026-11-10 spread (BetMGM, Caesars)
 ## 2026-11-10T10:03:39-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 total (FanDuel, bet365)
 ## 2026-11-10T10:03:39-05:00 — 81 games, 0 leads credited
+## 2026-11-10T11:16:03-05:00 — pack move, never credited: Vikings @ Packers | 2026-11-10 total (BetMGM, Caesars, FanDuel, Hard Rock, Kalshi, bet365)
+## 2026-11-10T11:16:03-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 spread (BetMGM, DraftKings, FanDuel, bet365)
+## 2026-11-10T11:16:03-05:00 — no-follow: FanDuel Minnesota @ Penn State | 2026-11-10 spread (only 0 followed)
+## 2026-11-10T11:16:03-05:00 — 81 games, 0 leads credited
