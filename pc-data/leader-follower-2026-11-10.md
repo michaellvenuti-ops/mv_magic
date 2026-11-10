@@ -29,3 +29,8 @@ LEAD: Caesars on San Jose State @ Air Force | 2026-11-10 (spread)
 ## 2026-11-10T14:47:30-05:00 — pack move, never credited: 49ers @ Cowboys | 2026-11-10 spread (DraftKings, Kalshi)
 ## 2026-11-10T14:47:30-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 spread (FanDuel, Kalshi)
 ## 2026-11-10T14:47:30-05:00 — 81 games, 0 leads credited
+## 2026-11-10T15:55:12-05:00 — pack move, never credited: Dolphins @ Colts | 2026-11-10 spread (BetMGM, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-10T15:55:12-05:00 — pack move, never credited: Dolphins @ Colts | 2026-11-10 total (BetMGM, DraftKings, FanDuel, Hard Rock, bet365)
+## 2026-11-10T15:55:12-05:00 — pack move, never credited: Vikings @ Packers | 2026-11-10 spread (Fanatics, Kalshi)
+## 2026-11-10T15:55:12-05:00 — pack move, never credited: Seahawks @ Raiders | 2026-11-10 spread (Fanatics, Kalshi, bet365)
+## 2026-11-10T15:55:12-05:00 — 81 games, 0 leads credited
