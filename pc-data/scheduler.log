@@ -4667,3 +4667,8 @@
 [2026-11-09 18:39:54 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 18:39:56 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 5 game(s) refreshed, 0 deliverable change(s).
 [2026-11-09 18:42:43 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (110 with odds), db total 191527 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 18:54:05 ET] sync_to_github.py: FAILED (exit 1) in 442s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at 86f586f4f06329849f8708419de0f02ab8905c93 but expected 741c1c62358e0ece18ba0cefa6ea89a03dfcda
+[2026-11-09 18:54:37 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (110 with odds), db total 191733 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 18:56:36 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NCAAF Northwestern 21 Ohio St. Nov-14 12:00 PM / table / Alt Spread Northwestern +15 / Alt Spread Ohio St. -14.5 / table | Bally Bet | Fanatics-NJ 
+[2026-11-09 19:00:06 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: no new strict-key middles.
+[2026-11-09 19:00:12 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
