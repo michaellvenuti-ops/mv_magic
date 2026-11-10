@@ -1,11 +1,18 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 07:36)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 08:50)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Caesars | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
-- Chargers vs Ravens | Hard Rock | spread | value: favorite | book 4.5 vs median 5.5 | div 1.0 
+- Panthers vs Saints | Hard Rock | spread | value: dog | book 48.0 vs median 1.5 | div 46.5 middle pairing spans key number 7
+- Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 99.0 vs median 50.5 | div 48.5 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
-- Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median -1.25 | div 2.75 
+- Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Wake Forest vs SMU | BetMGM | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
+- Wake Forest vs SMU | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Wake Forest vs SMU | Caesars | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
+- Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
+- Wake Forest vs SMU | Fanatics | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
+- East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
 - Tulane vs Rice | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Missouri vs Georgia | FanDuel | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
