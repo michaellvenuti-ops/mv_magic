@@ -1,23 +1,12 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 15:43)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 16:49)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Dolphins vs Colts | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Panthers vs Saints | Hard Rock | spread | value: dog | book 48.5 vs median 1.5 | div 47.0 middle pairing spans key number 7
-- Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 99.0 vs median 50.5 | div 48.5 
-- Seahawks vs Raiders | Fanatics | spread | value: dog | book -5.0 vs median -6.5 | div 1.5 
-- Seahawks vs Raiders | Fanatics | total | value: Over | book 42.0 vs median 40.5 | div 1.5 
-- Chargers vs Ravens | Hard Rock | spread | value: favorite | book 4.5 vs median 5.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
-- Ohio vs Miami (OH) | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
+- Louisiana vs Louisiana-Monroe | FanDuel | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
-- Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Wake Forest vs SMU | BetMGM | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
-- Wake Forest vs SMU | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Wake Forest vs SMU | Caesars | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
-- Wake Forest vs SMU | FanDuel | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
-- Wake Forest vs SMU | Fanatics | spread | value: dog | book 1.0 vs median 0.0 | div 1.0 
+- Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 1.0 | div 2.5 
+- Wake Forest vs SMU | BetMGM | spread | value: favorite | book -1.0 vs median 1.0 | div 2.0 
 - East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
-- Tulane vs Rice | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Boston College vs Notre Dame | FanDuel | spread | value: favorite | book 28.5 vs median 29.5 | div 1.0 
 - Purdue vs Iowa | DraftKings | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
