@@ -16,3 +16,7 @@ NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — Kalshi still dealing spr
 NEW FLAG: FBS Wake Forest @ SMU | 2026-11-10 — FanDuel still dealing spread -1.5 on Wake Forest (pre-move median -1.0, now 1.0)
 NEW FLAG: FBS Wake Forest @ SMU | 2026-11-10 — Fanatics still dealing spread -1.0 on Wake Forest (pre-move median -1.0, now 1.0)
 NEW FLAG: FBS Wake Forest @ SMU | 2026-11-10 — Kalshi still dealing spread -1.5 on Wake Forest (pre-move median -1.0, now 1.0)
+## 2026-11-10T12:32:18-05:00 — 67 games, 2 steam events, 3 NEW flags
+NEW FLAG: FBS Wake Forest @ SMU | 2026-11-10 — BetMGM still dealing spread 1.0 on SMU (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — DraftKings still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — Fanatics still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
