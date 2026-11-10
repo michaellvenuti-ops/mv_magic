@@ -4821,3 +4821,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 07:03:34 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 195853 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-10 07:06:25 ET] dh_game_middles.py: OK in 171s — GAME MIDDLE: NCAAF Kent St. Bowling Green Today 7:00 PM / table / Alt Spread Bowling Green -1.5 / Alt Spread Kent St. +2 / table | HardRock | Fanatics-NJ — wind
 [2026-11-10 07:09:53 ET] dh_key_number_middles.py: OK in 207s — key-number-middles: no new strict-key middles.
+[2026-11-10 07:17:36 ET] sync_to_github.py: OK in 463s —   ok: steam-side-board-pc.html
+[2026-11-10 07:17:37 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — hung-number: 19, sog-middles: 146. Detai
+[2026-11-10 07:18:58 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 206 events (67 with odds), db total 196059 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 07:19:03 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 07:20:48 ET] dh_prop_middles.py: OK in 105s — PROP MIDDLE : NCAAB Presbyterian NC St. Today 7:00 PM / table / Alt Total Under 150.5 / Alt Total Over 150 / table | HardRock | Bet365 — window 310.0 :: {'side'
+[2026-11-10 07:22:41 ET] dh_sog_middles.py: OK in 114s — - NEW CLEAN W263  (): -139 $1,000 Bally Bet -139.0 -139 @ Bally Bet / +124 $768 DraftKings 124.0 +124 @ DraftKings
+[2026-11-10 07:23:46 ET] dh_team_total_middles.py: OK in 64s
+[2026-11-10 07:23:47 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 07:23:49 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 07:25:07 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (67 with odds), db total 196265 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 07:25:29 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NCAAF Utah St. San Diego St. Nov-14 9:30 PM / table / Alt Spread San Diego St. +9.5 / Alt Spread Utah St. -9 / table | DraftKings | Bally Bet
+[2026-11-10 07:26:20 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 07:27:39 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NCAAB Presbyterian NC St. Today 7:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151.5 / table | DraftKings | Bet365
