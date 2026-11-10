@@ -4,7 +4,7 @@
 WHY THIS EXISTS: the Muse-side podcast picks scan reads Spotify
 transcripts. Episodes Spotify has no transcript for yield nothing
 (Nov 5 scan: 10 episodes, 0 picks). This lane is the fallback: it
-discovers the day's episodes for the 5 tracked shows from their public
+discovers the day's episodes for the 6 tracked shows from their public
 RSS feeds, downloads the audio, and transcribes locally with the
 already-proven transcribe.py (faster-whisper base, ~0.37x realtime).
 Transcripts land in data/transcripts/ and ride the normal GitHub sync
@@ -73,6 +73,7 @@ FEEDS = [
         ("VSiN By The Books", "VSiN By The Books"),
         ("Follow the Money", "Follow the Money"),
         ("Prop Points", "Prop Points"),
+        ("Circa Friday Football Invitational", "Circa Friday Football Invitational"),
     ]),
     ("https://feeds.simplecast.com/dQdfx569", [   # A Numbers Game
         ("A Numbers Game", "A Numbers Game"),
@@ -90,6 +91,7 @@ SHOW_SLUG = {
     "A Numbers Game": "a-numbers-game",
     "Prop Points": "prop-points",
     "Even Money": "even-money",
+    "Circa Friday Football Invitational": "circa-friday-football-invitational",
 }
 IDLE_PRIORITY_CLASS = 0x00000040  # Windows: scans keep CPU priority
 
