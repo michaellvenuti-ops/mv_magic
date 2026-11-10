@@ -4732,3 +4732,5 @@
 [2026-11-09 20:41:52 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: no new strict-key middles.
 [2026-11-09 20:41:57 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-09 20:43:13 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (78 with odds), db total 194205 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 20:53:49 ET] sync_to_github.py: FAILED (exit 1) in 426s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-2.txt (HTTP 409: {'error': '{"message":"is at f9e52533086c696150c386b87d6c7a122e4f3477 but expec
+[2026-11-09 20:54:22 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (78 with odds), db total 194411 snapshots / 665 events, feeds ok 6 fail 0
