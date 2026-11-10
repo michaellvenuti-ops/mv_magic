@@ -5025,3 +5025,13 @@
 [2026-11-10 15:02:58 ET] dh_key_number_middles.py: OK in 207s — key-number-middles: no new strict-key middles.
 [2026-11-10 15:03:06 ET] steam_side.py: OK in 8s — steam-side: 67 games, no new flags (silent).
 [2026-11-10 15:04:49 ET] dh_prop_middles.py: OK in 103s — PROP MIDDLE : NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Alt Spread SEA Seahawks -1 / Alt Spread LV Raiders +2.5 / table | Bet365 | FanDuel — window 3
+[2026-11-10 15:13:27 ET] sync_to_github.py: OK in 519s —   ok: steam-side-board-pc.html
+[2026-11-10 15:13:36 ET] notify.py: OK in 8s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 15:14:57 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 227 events (136 with odds), db total 204782 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 15:15:40 ET] dh_low_holds.py: OK in 42s — LOW-HOLDS: NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Alt Total Over 41 / Alt Total Under 41 / table | Fanatics-NJ | Bet365
+[2026-11-10 15:17:05 ET] dh_game_middles.py: OK in 85s — GAME MIDDLE: NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Alt Total Over 38.5 / Alt Total Under 39 / table | BetMGM | Bet365 — window 293.0 :: -145 $1,0
+[2026-11-10 15:19:19 ET] dh_sog_middles.py: OK in 104s — - 0 deliverables this run
+[2026-11-10 15:20:16 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-10 15:20:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 15:20:24 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-10 15:22:23 ET] odds_recorder.py: OK in 90s — SUMMARY: recorded 227 events (136 with odds), db total 205009 snapshots / 747 events, feeds ok 6 fail 0
