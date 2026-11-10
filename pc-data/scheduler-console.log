@@ -4843,3 +4843,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 07:39:58 ET] dh_game_middles.py: OK in 97s — GAME MIDDLE: NCAAB Alcorn St. Murray St. Today 8:00 PM / table / Alt Spread Murray St. -26 / Spread Alcorn St. +26.5 / table | Bet365 | theScore — window 210.0 
 [2026-11-10 07:43:43 ET] dh_key_number_middles.py: OK in 194s — key-number-middles: no new strict-key middles.
 [2026-11-10 07:45:04 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 206 events (67 with odds), db total 196677 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 07:53:43 ET] sync_to_github.py: FAILED (exit 1) in 459s —   FAILED: kalshi-poly-arb-board-pc.html (HTTP 409: {'error': '{"message":"is at c990550fd4e32cd6f693482748c88173b8f5ca4a but expected 2ed74497fa5c0e653f242f4cfe
+[2026-11-10 07:54:16 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 196883 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 07:54:21 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 07:56:47 ET] dh_prop_middles.py: OK in 146s — PROP MIDDLE CLEAN : NFL LA Rams ARI Cardinals Nov-15 4:05 PM / table / Alt Total Over 38 / Alt Total Under 38.5 / table | Fanatics-NJ | FanDuel — window 239.0 :
+[2026-11-10 07:58:29 ET] dh_sog_middles.py: OK in 102s — - NEW W330  (): -175 $1,000 Bet365 -175.0 -175 @ Bet365 / +155 $616 Bally Bet 155.0 +155 @ Bally Bet
+[2026-11-10 07:59:25 ET] dh_team_total_middles.py: OK in 56s
+[2026-11-10 07:59:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 07:59:28 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
