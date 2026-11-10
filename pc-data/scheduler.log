@@ -5082,3 +5082,16 @@
 [2026-11-10 17:04:18 ET] rlm.py: OK in 6s
 [2026-11-10 17:04:22 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-10 17:06:01 ET] dh_prop_middles.py: OK in 99s — PROP MIDDLE : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Spread IND Colts +2.5 / Alt Spread MIA Dolphins -2 / table | Bet365 | BetMGM — window 372.
+[2026-11-10 17:14:29 ET] sync_to_github.py: OK in 508s —   ok: steam-side-board-pc.html
+[2026-11-10 17:14:36 ET] notify.py: OK in 7s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 17:16:08 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 227 events (136 with odds), db total 207279 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 17:16:43 ET] dh_arbitrage.py: OK in 35s — ARBITRAGE: NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Total Under 43.5 / Alt Total Over 43.5 / table | Bet365 | FanDuel
+[2026-11-10 17:17:03 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 17:18:28 ET] dh_sog_middles.py: OK in 85s — - 0 deliverables this run
+[2026-11-10 17:19:16 ET] dh_team_total_middles.py: OK in 48s
+[2026-11-10 17:19:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 17:19:20 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-10 17:20:11 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Total Over 37 / Alt Total Under 37 / table | Fanatics-NJ | Bet365
+[2026-11-10 17:23:30 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: no new strict-key middles.
+[2026-11-10 17:24:54 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 227 events (136 with odds), db total 207506 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 17:24:59 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
