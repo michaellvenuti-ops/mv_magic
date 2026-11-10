@@ -4776,3 +4776,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 20:43:13 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (78 with odds), db total 194205 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-09 20:53:49 ET] sync_to_github.py: FAILED (exit 1) in 426s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-2.txt (HTTP 409: {'error': '{"message":"is at f9e52533086c696150c386b87d6c7a122e4f3477 but expec
 [2026-11-09 20:54:22 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (78 with odds), db total 194411 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 21:01:25 ET] sync_to_github.py: FAILED (exit 1) in 423s —   FAILED: pc-data/public-fade-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 984883ba80c41fa61a07b6aa89a2b94282dabe33 but expected 0c91da23873cddbb3d764b
+[2026-11-09 21:01:58 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (78 with odds), db total 194617 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 21:03:42 ET] dh_prop_middles.py: OK in 104s — PROP MIDDLE : NCAAF Appalachian St. Marshall Nov-14 6:00 PM / table / Alt Spread Marshall +4.5 / Alt Spread Appalachian St. -4 / table | FanDuel | Bally Bet — w
+[2026-11-09 21:05:22 ET] dh_sog_middles.py: OK in 99s — - NEW W297  (): -157 $1,000 Bally Bet -157.0 -157 @ Bally Bet / +140 $682 Fanatics-NJ 140.0 +140 @ Fanatics-NJ
+[2026-11-09 21:06:21 ET] dh_team_total_middles.py: OK in 59s
+[2026-11-09 21:06:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 21:06:25 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
