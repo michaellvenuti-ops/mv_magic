@@ -29,3 +29,5 @@ NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — Fanatics still dealing
 ## 2026-11-10T16:50:28-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-10T17:24:59-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-10T18:13:54-05:00 — 67 games, 0 steam events, 0 NEW flags
+## 2026-11-10T18:49:38-05:00 — 67 games, 1 steam events, 1 NEW flags
+NEW FLAG: FBS Kent State @ Bowling Green | 2026-11-10 — Kalshi still dealing spread -4.5 on Kent State (pre-move median -4.5, now -3.5)
