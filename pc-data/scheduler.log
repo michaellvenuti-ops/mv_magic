@@ -4703,3 +4703,13 @@
 [2026-11-09 19:48:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 19:48:27 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-09 19:49:44 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (88 with odds), db total 192969 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 19:59:58 ET] sync_to_github.py: OK in 434s —   ok: steam-side-board-pc.html
+[2026-11-09 19:59:58 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 20, promo
+[2026-11-09 20:00:31 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (88 with odds), db total 193175 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 20:01:58 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.5 / Alt Spread West Virginia -5 / table | DraftKings | BetRivers — window 
+[2026-11-09 20:06:51 ET] dh_key_number_middles.py: OK in 203s — key-number-middles: no new strict-key middles.
+[2026-11-09 20:06:57 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 20:08:14 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (82 with odds), db total 193381 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 20:11:15 ET] hung_number.py: OK in 61s — HUNG NUMBER: South Carolina vs Arkansas — Fanatics spread value favorite (-8.5 vs median -7.5)
+[2026-11-09 20:11:18 ET] rlm.py: OK in 3s
+[2026-11-09 20:11:22 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
