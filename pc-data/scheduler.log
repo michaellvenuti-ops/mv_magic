@@ -4856,3 +4856,10 @@
 [2026-11-10 09:24:25 ET] nba_overs_grade_run.py: OK in 1s — }
 [2026-11-10 09:24:26 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 2-2-0, $-8.71 (inverse money only where an opposite price was recorded)
 [2026-11-10 09:24:28 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-10 09:33:17 ET] sync_to_github.py: FAILED (exit 1) in 530s —   FAILED: pc-data/correlated-parlay-state.json (HTTP 409: {'error': '{"message":"is at 4554fb6332de50ee20b5f1d704c0dfc53494e03c but expected 0613dafb4c0b403414d
+[2026-11-10 09:34:54 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 206 events (67 with odds), db total 198325 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 09:35:14 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NCAAB Fairfield Wisconsin Today 8:30 PM / table / Alt Spread Wisconsin -20.5 / Alt Spread Fairfield +20.5 / table | Bet365 | Bally Bet
+[2026-11-10 09:35:38 ET] dh_kalshi_poly_arb.py: OK in 23s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 09:37:01 ET] dh_game_middles.py: OK in 83s — GAME MIDDLE: NCAAB Alcorn St. Murray St. Today 8:00 PM / table / Alt Spread Murray St. -27 / Alt Spread Alcorn St. +27.5 / table | Bet365 | Bally Bet — window 2
+[2026-11-10 09:37:05 ET] half_percent.py: OK in 4s — half-percent recheck: 09:37 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-10 09:37:06 ET] futures_pairs.py: FAILED (exit 2) in 1s — futures-pairs: no futures-board JSON in data/ — run futures_board.py first.
