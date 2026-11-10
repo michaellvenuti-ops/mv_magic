@@ -4672,3 +4672,17 @@
 [2026-11-09 18:56:36 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NCAAF Northwestern 21 Ohio St. Nov-14 12:00 PM / table / Alt Spread Northwestern +15 / Alt Spread Ohio St. -14.5 / table | Bally Bet | Fanatics-NJ 
 [2026-11-09 19:00:06 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: no new strict-key middles.
 [2026-11-09 19:00:12 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 19:07:32 ET] sync_to_github.py: OK in 440s —   ok: steam-side-board-pc.html
+[2026-11-09 19:07:32 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 21, promo
+[2026-11-09 19:08:47 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 206 events (95 with odds), db total 191939 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 19:09:50 ET] hung_number.py: OK in 63s — HUNG NUMBER: Fresno State vs Texas State — BetMGM spread value favorite (8.5 vs median 9.5)
+[2026-11-09 19:09:53 ET] rlm.py: OK in 3s
+[2026-11-09 19:09:57 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-09 19:11:37 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NBA NO Pelicans GS Warriors Today 10:15 PM / table / Alt Total Over 227.5 / Alt Total Under 228 / table | Fanatics-NJ | Bet365 — window 245.
+[2026-11-09 19:12:39 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM / table / Alt Spread Arkansas St. +8.5 / Alt Spread Coastal Carolina -8 / table | DraftKings | Bal
+[2026-11-09 19:12:57 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-09 19:14:23 ET] dh_sog_middles.py: OK in 86s — - NEW W319  (): -169 $1,000 Bet365 -169.0 -169 @ Bet365 / +150 $637 Bally Bet 150.0 +150 @ Bally Bet
+[2026-11-09 19:15:22 ET] dh_team_total_middles.py: OK in 59s
+[2026-11-09 19:15:23 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-09 19:15:26 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-09 19:16:42 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (92 with odds), db total 192145 snapshots / 665 events, feeds ok 6 fail 0
