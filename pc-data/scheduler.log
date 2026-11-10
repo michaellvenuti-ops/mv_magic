@@ -4902,3 +4902,12 @@
 [2026-11-10 10:56:58 ET] totals_scan.py: OK in 3s — totals: no new flags (silent).
 [2026-11-10 10:57:04 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-10 10:58:08 ET] dh_derivative_ev.py: OK in 65s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
+[2026-11-10 11:09:55 ET] sync_to_github.py: FAILED (exit 1) in 707s —   FAILED: pc-data/nba-finals-2026-11-06.json (HTTP 409: {'error': '{"message":"is at 7291fa44f060619d1881a70a8c5bc16f2b1432b0 but expected 90d03a67712375c0b6abb
+[2026-11-10 11:11:12 ET] odds_recorder.py: OK in 47s — SUMMARY: recorded 227 events (136 with odds), db total 199788 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 11:14:36 ET] dh_key_number_middles.py: OK in 204s — key-number-middles: no new strict-key middles.
+[2026-11-10 11:15:53 ET] hung_number.py: OK in 77s — HUNG NUMBER: Memphis vs South Florida — Caesars spread value favorite (-4.5 vs median -3.5)
+[2026-11-10 11:15:58 ET] rlm.py: OK in 5s
+[2026-11-10 11:16:03 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 11:16:07 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Western Michigan @ Akron | 2026-11-10 | Kalshi | Western Michigan spread 14.5 (median 14.5 -> 15.5)
+[2026-11-10 11:17:40 ET] dh_prop_middles.py: OK in 94s — PROP MIDDLE : NCAAB 15 Kansas 24 Kentucky Today 9:30 PM / table / Alt Total Under 163.5 / Alt Total Over 163 / table | DraftKings | Bet365 — window 395.0 :: {'s
+[2026-11-10 11:21:03 ET] costco_gold.py: OK in 203s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
