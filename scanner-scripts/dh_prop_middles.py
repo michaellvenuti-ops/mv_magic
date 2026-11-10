@@ -126,7 +126,7 @@ def main():
             prior = state["entries"].get(key)
             if prior is None:
                 state["entries"][key] = entry
-                deliverables.append((key, entry))
+                deliverables.append(("NEW", key, entry))
             else:
                 prior["last_seen"] = today_str()
                 # CHANGED: newly clean, window grew 2+, or a leg +10c.
@@ -143,13 +143,31 @@ def main():
                     state["entries"][key] = {
                         **prior, **entry,
                         "first_reported": prior["first_reported"]}
-                    deliverables.append((key, entry))
+                    deliverables.append(("CHANGED", key, entry))
             lines.append(f"{'SMALLER BETS ' if entry['smaller_bets'] else ''}"
                          f"{'CLEAN ' if entry['clean_tier'] else ''}{key} "
                          f"w{entry['window']} :: {entry['headline']}")
+        # Chat-delivery wiring (2026-11-10, Michael's tap): bank the
+        # NEW/CHANGED deliverables as NEW MIDDLE / CHANGED MIDDLE
+        # lines directly under the header, with their count in the
+        # header — the steam_side.py pattern the pc-data delivery
+        # watcher screens for. Previously deliverables reached only
+        # stdout (scheduler.log), never chat.
+        new_lines = []
+        for kind, key, e in deliverables:
+            tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            clean = "CLEAN " if e["clean_tier"] else ""
+            new_lines.append(
+                f"{kind} MIDDLE: {tag}{clean}{key} w{e['window']} :: "
+                f"{e['headline']}")
+        lines[0] += f" — {len(deliverables)} NEW/CHANGED middles"
+        if new_lines:
+            lines = (lines[:1] + new_lines
+                     + ["(end of new/changed middles — full qualifying "
+                         "list below)"] + lines[1:])
         save_state(SCAN, state)
         bank(SCAN, lines)
-        for key, e in deliverables[:10]:
+        for kind, key, e in deliverables[:10]:
             tag = "SMALLER BETS " if e["smaller_bets"] else ""
             clean = "CLEAN " if e["clean_tier"] else ""
             print(f"{tag}PROP MIDDLE {clean}: {key} — window "
