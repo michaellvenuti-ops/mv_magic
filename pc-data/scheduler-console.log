@@ -4910,3 +4910,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 09:48:51 ET] dh_low_holds.py: OK in 47s — LOW-HOLDS: NCAAB Hofstra Arizona St. Today 9:00 PM / table / Spread Hofstra +19 / Alt Spread Arizona St. -19 / table | Caesars | Bet365
 [2026-11-10 09:52:05 ET] dh_key_number_middles.py: OK in 194s — key-number-middles: no new strict-key middles.
 [2026-11-10 09:52:12 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 10:01:41 ET] sync_to_github.py: FAILED (exit 1) in 569s —   FAILED: pc-data/nba-overs-snapshot-2026-11-10.json (HTTP 500: {'error': ''})
+[2026-11-10 10:02:14 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 198737 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 10:03:31 ET] hung_number.py: OK in 77s — HUNG NUMBER: Oregon State vs Boise State — FanDuel spread value favorite (12.5 vs median 13.5)
+[2026-11-10 10:03:34 ET] rlm.py: OK in 3s
+[2026-11-10 10:03:39 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 10:05:29 ET] dh_prop_middles.py: OK in 110s — PROP MIDDLE : NCAAB Loyola Marymount Troy Today 7:00 PM / table / Alt Total Over 139.5 / Alt Total Under 140 / table | Fanatics-NJ | Bet365 — window 350.0 :: {'
+[2026-11-10 10:07:08 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-10 10:07:54 ET] dh_team_total_middles.py: OK in 46s
+[2026-11-10 10:07:55 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 10:07:57 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 10:08:59 ET] promo_watch.py: OK in 62s — promo-watch: 9 listed, 0 new, 0 converter attempt(s).
