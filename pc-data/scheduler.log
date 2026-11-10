@@ -4895,3 +4895,10 @@
 [2026-11-10 10:42:57 ET] dh_team_total_middles.py: OK in 47s
 [2026-11-10 10:42:58 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 10:43:02 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 10:52:37 ET] sync_to_github.py: FAILED (exit 1) in 575s —   FAILED: pc-data/upset-watch-state.json (HTTP 409: {'error': '{"message":"is at 5b8d1887a2aef34ebf33086e87c03fd111c0e491 but expected fe0f0a6e5747bf63ef1a40c4e
+[2026-11-10 10:54:02 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 206 events (67 with odds), db total 199561 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 10:55:15 ET] dh_low_holds.py: OK in 73s — LOW-HOLDS: NCAAB Virginia Tech Iowa Today 7:00 PM / table / Total Over 139 / Alt Total Under 139 / table | Caesars | Bet365
+[2026-11-10 10:56:55 ET] dh_game_middles.py: OK in 100s — GAME MIDDLE: NCAAB Wyoming North Carolina Today 7:00 PM / table / Alt Spread Wyoming +15 / Alt Spread North Carolina -14.5 / table | Bet365 | Bally Bet — window
+[2026-11-10 10:56:58 ET] totals_scan.py: OK in 3s — totals: no new flags (silent).
+[2026-11-10 10:57:04 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-10 10:58:08 ET] dh_derivative_ev.py: OK in 65s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
