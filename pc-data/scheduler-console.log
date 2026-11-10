@@ -4728,3 +4728,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-09 19:15:23 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
 [2026-11-09 19:15:26 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-09 19:16:42 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (92 with odds), db total 192145 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 19:25:00 ET] sync_to_github.py: OK in 437s —   ok: steam-side-board-pc.html
+[2026-11-09 19:25:00 ET] notify.py: OK in 1s — notify: no channel configured (set NTFY_TOPIC, TELEGRAM_*, or NOTIFY_WEBHOOK_URL). Message was: PC scans banked today — half-percent: 14, hung-number: 20, promo
+[2026-11-09 19:25:33 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (92 with odds), db total 192351 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-09 19:27:50 ET] dh_game_middles.py: OK in 77s — GAME MIDDLE: NCAAF Kennesaw St. Sam Houston Nov-14 2:00 PM / table / Alt Spread Sam Houston +12.5 / Alt Spread Kennesaw St. -12 / table | Bally Bet | Fanatics-N
+[2026-11-09 19:28:48 ET] dh_low_holds.py: OK in 28s — LOW-HOLDS: NBA BOS Celtics PHI 76ers Nov-10 8:15 PM / table / Rebounds P. George Under 5.5 / Alt Rebounds P. George 6+ / table | BetRivers | FanDuel
+[2026-11-09 19:33:24 ET] dh_key_number_middles.py: OK in 186s — key-number-middles: no new strict-key middles.
+[2026-11-09 19:33:31 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-09 19:34:47 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 206 events (89 with odds), db total 192557 snapshots / 665 events, feeds ok 6 fail 0
