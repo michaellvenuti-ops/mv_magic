@@ -4888,3 +4888,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 09:07:19 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 206 events (67 with odds), db total 197913 snapshots / 665 events, feeds ok 6 fail 0
 [2026-11-10 09:10:35 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new strict-key middles.
 [2026-11-10 09:10:43 ET] steam_side.py: OK in 9s — STEAM-SIDE FLAG: FBS Wake Forest @ SMU | 2026-11-10 | Caesars | SMU spread 1.0 (median 1.0 -> -1.0)
+[2026-11-10 09:19:02 ET] sync_to_github.py: FAILED (exit 1) in 499s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at d45429c0b22d2e3a23bdd9e24da93fbd8310529a but expected d008e54f701daabbc8e6d995dc2bfb9954f59b
+[2026-11-10 09:20:20 ET] odds_recorder.py: OK in 48s — SUMMARY: recorded 206 events (67 with odds), db total 198119 snapshots / 665 events, feeds ok 6 fail 0
+[2026-11-10 09:21:50 ET] dh_prop_middles.py: OK in 90s — PROP MIDDLE CLEAN : NCAAB Northern Arizona 12 Arizona Today 9:00 PM / table / 1st Half Spread Arizona -20.5 / 1st Half Spread Northern Arizona +22.5 / table | F
+[2026-11-10 09:23:28 ET] dh_sog_middles.py: OK in 97s — - 0 deliverables this run
+[2026-11-10 09:24:20 ET] dh_team_total_middles.py: OK in 52s
+[2026-11-10 09:24:21 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 09:24:24 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 09:24:25 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-10 09:24:26 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 2-2-0, $-8.71 (inverse money only where an opposite price was recorded)
+[2026-11-10 09:24:28 ET] total_projectors_grade_run.py: OK in 1s — }
