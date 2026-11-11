@@ -5549,3 +5549,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 07:14:28 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 226 events (78 with odds), db total 224265 snapshots / 761 events, feeds ok 6 fail 0
 [2026-11-11 07:14:31 ET] rlm.py: OK in 4s
 [2026-11-11 07:14:36 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 07:25:18 ET] sync_to_github.py: FAILED (exit 1) in 552s —   FAILED: pc-data/transcripts/follow-the-money-2026-11-05-hour-1.json (HTTP 409: {'error': '{"message":"is at 13a207348de09a3406977781583be9c16978dbc9 but expec
+[2026-11-11 07:25:53 ET] odds_recorder.py: OK in 5s — SUMMARY: recorded 226 events (78 with odds), db total 224491 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 07:27:26 ET] dh_game_middles.py: OK in 93s — GAME MIDDLE: NCAAB NJIT VCU Today 7:00 PM / table / Alt Spread VCU -28 / Alt Spread NJIT +29.5 / table | Bet365 | DraftKings — window 264.0 :: -135 $1,000 Bet36
+[2026-11-11 07:31:01 ET] dh_basketball_key_middles.py: OK in 215s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Pennsylvania Navy Today 5:30 PM / table / Alt Spread Navy +8.5 / Spread Pennsylvania -6.5 / table | Bet
+[2026-11-11 07:31:07 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
