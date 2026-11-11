@@ -104,3 +104,28 @@ NCAAB Southern Indiana IU Indianapolis Nov-11 6:30 PM — Spread — IU Indianap
 NCAAB Southern Indiana IU Indianapolis Nov-11 6:30 PM — Total — Over 163.5 Bet365 +110 ($87) / Under 167.5 DraftKings -166 ($113) — both win 164, 165, 166, 167 — land +$163.77, miss -18.93 / -17.30 on ~$200 balanced
 NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM — Spread — Coastal Carolina -4.5 Bally Bet +188 ($64) / Arkansas St. +8.5 DraftKings -285 ($136) — both win 5, 6, 7, 8 — land +$168.04, miss -16.28 / -15.68 on ~$200 balanced
 NCAAF Sacramento St. Central Michigan Today 7:30 PM — Spread — Central Michigan -18.5 theScore +115 ($84) / Sacramento St. +23.5 Bally Bet -180 ($116) — both win 19, 20, 21, 22, 23 — land +$161.04, miss -19.56 / -19.40 on ~$200 balanced
+## 2026-11-11T12:15:38-05:00 — wide-builds: 1 NEW wide builds
+NEW BUILD: NBA CLE Cavaliers NY Knicks Today 7:15 PM — Total — Over 224.5 Bally Bet +118 ($83) / Under 229.5 FanDuel -182 ($117) — both win 225, 226, 227, 228, 229 — land +$162.23, miss -18.71 / -19.06 on ~$200 balanced
+(end of new builds — full list below)
+NBA BKN Nets NO Pelicans Nov-11 8:15 PM — Total — Over 223.5 Fanatics-NJ -160 ($113) / Under 228.5 Bet365 +110 ($87) — both win 224, 225, 226, 227, 228 — land +$166.33, miss -17.30 / -16.38 on ~$200 balanced
+NBA BKN Nets NO Pelicans Today 8:15 PM — Total — Over 114.5 BetMGM -115 ($98) / Under 118.5 FanDuel -128 ($102) — both win 115, 116, 117, 118 — land +$164.90, miss -18.31 / -16.78 on ~$200 balanced
+NBA LA Lakers MIL Bucks Today 8:15 PM — Spread — LA Lakers -16.5 Bally Bet +145 ($77) / MIL Bucks +19.5 BetMGM -190 ($123) — both win 17, 18, 19 — land +$176.39, miss -12.26 / -11.35 on ~$200 balanced
+NBA LA Lakers MIL Bucks Today 8:15 PM — Total — Over 226.5 Fanatics-NJ -140 ($108) / Under 229.5 Bet365 +102 ($92) — both win 227, 228, 229 — land +$170.98, miss -14.16 / -14.86 on ~$200 balanced
+NBA ORL Magic UTA Jazz Today 9:15 PM — Total — Over 209.5 BetMGM -180 ($117) / Under 214.5 Bet365 +120 ($83) — both win 210, 211, 212, 213, 214 — land +$164.60, miss -17.40 / -18.00 on ~$200 balanced
+NBA ORL Magic UTA Jazz Today 9:15 PM — Total — Over 214.5 BetMGM -115 ($100) / Under 217.5 Bet365 -114 ($100) — both win 215, 216, 217 — land +$174.68, miss -12.28 / -13.04 on ~$200 balanced
+NCAAB Campbell East Tennessee St. Today 7:00 PM — Total — Over 143.5 HardRock -105 ($94) / Under 148.5 Bet365 -135 ($106) — both win 144, 145, 146, 147, 148 — land +$168.04, miss -15.48 / -16.48 on ~$200 balanced
+NCAAB Charleston Temple Nov-11 6:30 PM — Total — Over 154.5 Bet365 +100 ($92) / Under 157.5 DraftKings -140 ($108) — both win 155, 156, 157 — land +$169.14, miss -14.86 / -16.00 on ~$200 balanced
+NCAAB Charleston Temple Today 6:30 PM — Total — Over 156.5 Bet365 -105 ($93) / Under 161.5 HardRock -145 ($107) — both win 157, 158, 159, 160, 161 — land +$162.36, miss -19.21 / -18.43 on ~$200 balanced
+NCAAB Jacksonville St. 8 Houston Nov-11 8:00 PM — Spread — Houston -35.5 Bet365 -105 ($96) / Jacksonville St. +38.5 theScore -125 ($104) — both win 36, 37, 38 — land +$174.63, miss -12.80 / -12.57 on ~$200 balanced
+NCAAB Kansas City Florida A&M Today 12:00 PM — Total — Over 143.5 Caesars -110 ($100) / Under 148.5 Bally Bet -112 ($100) — both win 144, 145, 146, 147, 148 — land +$180.19, miss -10.71 / -9.09 on ~$200 balanced
+NCAAB Kent St. Golden UNC Wilmington Nov-11 7:00 PM — Total — Over 156.5 Bet365 +110 ($87) / Under 159.5 DraftKings -166 ($113) — both win 157, 158, 159 — land +$163.77, miss -18.93 / -17.30 on ~$200 balanced
+NCAAB Kent St. Golden UNC Wilmington Today 7:00 PM — Total — Over 157.5 Bet365 +110 ($87) / Under 162.5 DraftKings -166 ($113) — both win 158, 159, 160, 161, 162 — land +$163.77, miss -18.93 / -17.30 on ~$200 balanced
+NCAAB Loyola Chicago Air Force Nov-11 3:00 PM — Spread — Loyola Chicago -9.5 Bet365 +105 ($89) / Air Force +12.5 DraftKings -157 ($111) — both win 10, 11, 12 — land +$164.15, miss -18.30 / -17.55 on ~$200 balanced
+NCAAB NJIT VCU Today 7:00 PM — Spread — VCU -24.5 Bet365 -200 ($127) / NJIT +27.5 DraftKings +162 ($73) — both win 25, 26, 27 — land +$181.76, miss -8.74 / -9.50 on ~$200 balanced
+NCAAB Pacific Long Beach St. Nov-11 10:00 PM — Total — Over 131.5 DraftKings -188 ($118) / Under 135.5 Bet365 +122 ($82) — both win 132, 133, 134, 135 — land +$162.81, miss -17.96 / -19.23 on ~$200 balanced
+NCAAB Pennsylvania Navy Today 5:30 PM — Total — Over 142.5 DraftKings -180 ($116) / Under 146.5 Bet365 +115 ($84) — both win 143, 144, 145, 146 — land +$161.04, miss -19.40 / -19.56 on ~$200 balanced
+NCAAB Southern Indiana IU Indianapolis Nov-11 6:30 PM — Spread — IU Indianapolis -6.5 Bet365 +100 ($91) / Southern Indiana +9.5 DraftKings -147 ($109) — both win 7, 8, 9 — land +$165.15, miss -16.85 / -18.00 on ~$200 balanced
+NCAAB Southern Indiana IU Indianapolis Nov-11 6:30 PM — Total — Over 163.5 Bet365 +110 ($87) / Under 167.5 DraftKings -166 ($113) — both win 164, 165, 166, 167 — land +$163.77, miss -18.93 / -17.30 on ~$200 balanced
+NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM — Spread — Coastal Carolina -4.5 Bally Bet +188 ($64) / Arkansas St. +8.5 DraftKings -285 ($136) — both win 5, 6, 7, 8 — land +$168.04, miss -16.28 / -15.68 on ~$200 balanced
+NCAAF Sacramento St. Central Michigan Today 7:30 PM — Spread — Central Michigan -18.5 theScore +115 ($84) / Sacramento St. +23.5 Bally Bet -180 ($116) — both win 19, 20, 21, 22, 23 — land +$161.04, miss -19.56 / -19.40 on ~$200 balanced
+NBA CLE Cavaliers NY Knicks Today 7:15 PM — Total — Over 224.5 Bally Bet +118 ($83) / Under 229.5 FanDuel -182 ($117) — both win 225, 226, 227, 228, 229 — land +$162.23, miss -18.71 / -19.06 on ~$200 balanced
