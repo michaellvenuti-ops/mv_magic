@@ -46,3 +46,5 @@ KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards
 NEW MIDDLE: KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4 / table | Fanatics-NJ | Bally Bet margins [4, 5] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +143 $669 Bally Bet, Bally Bet, +143
 (end of new middles — full qualifying list below)
 KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4 / table | Fanatics-NJ | Bally Bet margins [4, 5] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +143 $669 Bally Bet, Bally Bet, +143
+## 2026-11-11T13:23:24-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1924 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4 / table | Fanatics-NJ | Bally Bet margins [4, 5] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +143 $669 Bally Bet, Bally Bet, +143
