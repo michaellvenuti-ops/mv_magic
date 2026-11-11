@@ -5508,3 +5508,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 05:57:47 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-11 05:57:48 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 05:57:49 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 06:06:50 ET] sync_to_github.py: OK in 541s —   ok: team-total-middles-board-pc.html
+[2026-11-11 06:06:59 ET] notify.py: OK in 9s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 06:08:21 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 222909 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 06:10:03 ET] dh_game_middles.py: OK in 102s — GAME MIDDLE: NCAAB Pennsylvania Navy Today 5:30 PM / table / Alt Total Over 147.5 / Alt Total Under 148 / table | DraftKings | Bet365 — window 205.0 :: -105 $1,
+[2026-11-11 06:10:10 ET] rlm.py: OK in 7s
+[2026-11-11 06:10:15 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 06:14:13 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
+[2026-11-11 06:14:18 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 06:15:59 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 146.5 / Alt Total Under 147 / table | BetMGM | Bet365 — window 220.0 :: {'side': 
+[2026-11-11 06:17:25 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 226 events (78 with odds), db total 223135 snapshots / 761 events, feeds ok 6 fail 0
