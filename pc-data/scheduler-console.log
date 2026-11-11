@@ -5518,3 +5518,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 06:14:18 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
 [2026-11-11 06:15:59 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 146.5 / Alt Total Under 147 / table | BetMGM | Bet365 — window 220.0 :: {'side': 
 [2026-11-11 06:17:25 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 226 events (78 with odds), db total 223135 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 06:26:27 ET] sync_to_github.py: OK in 541s —   ok: team-total-middles-board-pc.html
+[2026-11-11 06:26:36 ET] notify.py: OK in 10s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 06:27:10 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 226 events (78 with odds), db total 223361 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 06:27:41 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Alt Total Over 139.5 / Alt Total Under 139.5 / table | DraftKings | Bet365
+[2026-11-11 06:31:19 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: 434 basketball rows excluded (football-only rule).
+[2026-11-11 06:32:35 ET] hung_number.py: OK in 76s — No new hung numbers (12 current flags).
+[2026-11-11 06:33:57 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 223587 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 06:35:33 ET] dh_sog_middles.py: OK in 96s — - 0 deliverables this run
+[2026-11-11 06:35:38 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 06:35:39 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 06:35:40 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
