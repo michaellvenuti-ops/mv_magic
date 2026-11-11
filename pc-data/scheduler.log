@@ -5245,3 +5245,15 @@
 [2026-11-10 22:31:09 ET] sync_to_github.py: FAILED (exit 1) in 522s —   FAILED: pc-data/nfl-first-score-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 4b753bc706060589b3e90b0aedab404759d7f7f2 but expected e38bbf5139a2b272c6
 [2026-11-10 22:32:33 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 227 events (65 with odds), db total 213862 snapshots / 747 events, feeds ok 6 fail 0
 [2026-11-10 22:34:03 ET] dh_game_middles.py: OK in 90s — GAME MIDDLE: NCAAB William & Mary Florida Atlantic Nov-11 7:00 PM / table / Alt Total Under 169.5 / Alt Total Over 169 / table | DraftKings | Bet365 — window 33
+[2026-11-10 22:42:49 ET] sync_to_github.py: OK in 526s —   ok: team-total-middles-board-pc.html
+[2026-11-10 22:43:11 ET] notify.py: OK in 22s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 22:44:38 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 227 events (65 with odds), db total 214089 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 22:48:13 ET] dh_key_number_middles.py: OK in 215s — KEY-NUMBER MIDDLE (key 6): NCAAB Southern Indiana IU Indianapolis Nov-11 6:30 PM / table / Spread IU Indianapolis -5.5 / Alt Spread Southern Indiana +6.5 / tabl
+[2026-11-10 22:49:21 ET] dh_arbitrage.py: OK in 38s — ARBITRAGE: NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Total Under 162.5 / Alt Total Over 162 / table | DraftKings | Bet365
+[2026-11-10 22:49:40 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 22:49:58 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NBA OKC Thunder POR Trail Blazers Today 11:15 PM / table / 1st Half Alt Total Over 110.5 / 1st Half Alt Total Under 110.5 / table | FanDuel | Bally B
+[2026-11-10 22:53:13 ET] dh_basketball_key_middles.py: OK in 195s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Spread Arkansas -30 / Spread Robert Morris +31.5
+[2026-11-10 22:53:25 ET] rlm.py: OK in 11s
+[2026-11-10 22:53:30 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 22:53:33 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 22:55:19 ET] dh_prop_middles.py: OK in 106s — PROP MIDDLE CLEAN : NCAAB Cal Poly Grand Canyon Nov-11 9:00 PM / table / Total Under 179.5 / Alt Total Over 179 / table | BetMGM | Bet365 — window 210.0 :: {'si
