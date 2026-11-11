@@ -18,3 +18,6 @@ LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
 ## 2026-11-11T11:13:43-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 total (DraftKings, Kalshi)
 ## 2026-11-11T11:13:43-05:00 — pack move, never credited: Boston College @ Notre Dame | 2026-11-11 spread (FanDuel, bet365)
 ## 2026-11-11T11:13:43-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T12:22:19-05:00 — pack move, never credited: Bills @ Jets | 2026-11-11 spread (Caesars, Kalshi)
+## 2026-11-11T12:22:19-05:00 — no-follow: FanDuel Tulane @ Rice | 2026-11-11 spread (only 0 followed)
+## 2026-11-11T12:22:19-05:00 — 81 games, 0 leads credited, 1 started games skipped
