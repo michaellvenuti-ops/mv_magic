@@ -5332,3 +5332,16 @@
 [2026-11-11 01:18:19 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-11 01:18:20 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=12, limit=5)
 [2026-11-11 01:23:26 ET] odds_recorder.py: OK in 216s — SUMMARY: recorded 226 events (78 with odds), db total 217259 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:32:13 ET] sync_to_github.py: OK in 527s —   ok: team-total-middles-board-pc.html
+[2026-11-11 01:32:20 ET] notify.py: OK in 7s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 01:33:00 ET] odds_recorder.py: OK in 9s — SUMMARY: recorded 226 events (78 with odds), db total 217485 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:35:10 ET] dh_game_middles.py: OK in 130s — GAME MIDDLE: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Total Over 221.5 / Alt Total Under 222 / table | Fanatics-NJ | Bet365 — window 287.0 :: -150
+[2026-11-11 01:38:34 ET] dh_basketball_key_middles.py: OK in 204s — basketball-key-middles: no new basketball middles.
+[2026-11-11 01:38:39 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 01:40:07 ET] dh_prop_middles.py: OK in 88s — PROP MIDDLE CLEAN : NCAAB Kansas City Florida A&M Today 12:00 PM / table / Total Under 148.5 / Alt Total Over 147.5 / table | BetRivers | DraftKings — window 21
+[2026-11-11 01:41:35 ET] odds_recorder.py: OK in 58s — SUMMARY: recorded 226 events (78 with odds), db total 217711 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:42:50 ET] hung_number.py: OK in 74s — No new hung numbers (15 current flags).
+[2026-11-11 01:44:13 ET] dh_sog_middles.py: OK in 83s — - 0 deliverables this run
+[2026-11-11 01:44:14 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-11 01:44:15 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 01:44:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
