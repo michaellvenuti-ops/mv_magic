@@ -50,6 +50,7 @@ SCHEDULE = [
     # hourly family
     ("dh_arbitrage.py", [], "interval", 60),
     ("dh_kalshi_poly_arb.py", [], "interval", 60),
+    ("wide_builds.py", [], "interval", 30),
     ("dh_low_holds.py", [], "interval", 60),
     ("dh_game_middles.py", [], "interval", 30),
     ("dh_key_number_middles.py", [], "interval", 30),
