@@ -36,3 +36,8 @@ NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — DraftKings still dealing
 NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — Kalshi still dealing total 50.5 on Under (pre-move median 50.5, now 44.5)
 ## 2026-11-10T20:08:29-05:00 — 67 games, 1 steam events, 0 NEW flags, 1 started games skipped
 ## 2026-11-10T20:45:07-05:00 — 67 games, 2 steam events, 0 NEW flags, 1 started games skipped
+## 2026-11-10T21:33:25-05:00 — 67 games, 3 steam events, 4 NEW flags, 1 started games skipped
+NEW FLAG: FBS Ohio @ Miami (OH) | 2026-11-10 — Caesars still dealing total 48.5 on Under (pre-move median 48.5, now 46.5)
+NEW FLAG: FBS Buffalo @ Ball State | 2026-11-10 — FanDuel still dealing spread 2.5 on Ball State (pre-move median 2.5, now 1.5)
+NEW FLAG: FBS Buffalo @ Ball State | 2026-11-10 — Fanatics still dealing spread 2.5 on Ball State (pre-move median 2.5, now 1.5)
+NEW FLAG: FBS Buffalo @ Ball State | 2026-11-10 — Kalshi still dealing spread 2.5 on Ball State (pre-move median 2.5, now 1.5)
