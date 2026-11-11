@@ -409,3 +409,6 @@
 ## 2026-11-11T15:10:14-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 405 games through 2026-11-11
 - 2026-11-11: Dartmouth Big Green @ UAlbany Great Danes — first: Dartmouth Big Green (3PT, 0:21 in); lead changes 0; final 85-76
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T16:36:56-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 406 games through 2026-11-11
+- 2026-11-11: Incarnate Word Cardinals @ UC Davis Aggies — first: UC Davis Aggies (2PT, 0:18 in); lead changes 0; final 69-81
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
