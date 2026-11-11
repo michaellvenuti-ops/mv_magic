@@ -5899,7 +5899,8 @@
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Knicks",
-   "dog_team": "Bucks"
+   "dog_team": "Bucks",
+   "live_ml": -900
   },
   "401909961": {
    "sport": "NBA",
@@ -5981,7 +5982,7 @@
    "spread": 30.5,
    "fav_team": "Georgetown",
    "dog_team": "Delaware St",
-   "live_ml": -850
+   "live_ml": -410
   },
   "401909564": {
    "sport": "NCAAB",
@@ -6087,12 +6088,20 @@
    "sport": "NCAAB",
    "matchup": "South Alabama at UCF",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "UCF",
    "dog_team": "South Alabama",
-   "live_ml": -315
+   "live_ml": -180,
+   "alerted_at": "2026-11-10T19:44:04",
+   "board_read_at": "2026-11-10T19:44:03",
+   "alert_expires_at": "2026-11-10T19:47:04",
+   "alert_detail": "1:03 - 1st Half",
+   "alert_fav_score": 26,
+   "alert_dog_score": 34,
+   "alert_ml": -180,
+   "ml_read_at": "2026-11-10T19:44:03"
   },
   "401921025": {
    "sport": "NCAAB",
@@ -6133,7 +6142,7 @@
    "spread": 15.5,
    "fav_team": "Georgia Tech",
    "dog_team": "E Kentucky",
-   "live_ml": -560
+   "live_ml": -375
   },
   "401920063": {
    "sport": "NCAAB",
@@ -6144,7 +6153,7 @@
    "spread": 20.5,
    "fav_team": "Rhode Island",
    "dog_team": "Maine",
-   "live_ml": -600
+   "live_ml": -660
   },
   "401918957": {
    "sport": "NCAAB",
@@ -6218,7 +6227,7 @@
    "spread": 14.5,
    "fav_team": "Dayton",
    "dog_team": "Siena",
-   "live_ml": -280
+   "live_ml": -475
   },
   "401911011": {
    "sport": "NCAAB",
