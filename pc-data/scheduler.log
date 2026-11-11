@@ -5324,3 +5324,11 @@
 [2026-11-11 01:04:28 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 01:04:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 01:04:32 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=11 queued_total=12
+[2026-11-11 01:13:20 ET] sync_to_github.py: OK in 528s —   ok: team-total-middles-board-pc.html
+[2026-11-11 01:13:30 ET] notify.py: OK in 10s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 01:14:51 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 226 events (78 with odds), db total 217033 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:18:10 ET] dh_key_number_middles.py: OK in 199s — KEY-NUMBER MIDDLE (key 7): NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetM
+[2026-11-11 01:18:16 ET] rlm.py: OK in 5s
+[2026-11-11 01:18:19 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 01:18:20 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=12, limit=5)
+[2026-11-11 01:23:26 ET] odds_recorder.py: OK in 216s — SUMMARY: recorded 226 events (78 with odds), db total 217259 snapshots / 761 events, feeds ok 6 fail 0
