@@ -102,17 +102,18 @@ def parse_leg(segment):
     return None
 
 
-def collect_legs(now):
-    """Pool of usable legs grouped by (kind, group key)."""
-    today = now.strftime("%Y-%m-%d")
+MD_LINE_RE = re.compile(
+    r"^(?:NEW|CHANGED) MIDDLE:\s*(?:CLEAN\s+)?(.+?)\s*::\s*(\{.+\})\s*$")
+MIDDLES_SLUGS = ["game-middles", "prop-middles", "key-number-middles",
+                 "basketball-key-middles", "sog-middles",
+                 "team-total-middles"]
+
+
+def entries_to_groups(items):
+    """items: (key, entry, src) triples -> grouped leg pools."""
     groups = {}
-    for src in SOURCES:
-        state = load_state(src)
-        for key, entry in (state.get("entries") or {}).items():
-            if not isinstance(entry, dict):
-                continue
-            if entry.get("last_seen") != today:
-                continue
+    for key, entry, src in items:
+        if True:
             ident = key.split(" | ")[0]
             segs = ident.split(" / ")
             if len(segs) < 2:
@@ -149,6 +150,54 @@ def collect_legs(now):
                 if pk not in pool or src == "arbitrage":
                     pool[pk] = rec
     return groups
+
+
+def collect_legs(now):
+    """Leg pools from (a) the arbitrage pair states and (b) the
+    middles scans' banked dated files (today + yesterday). The
+    middles STATE files carry no identity text (dh_middles populates
+    no game/player fields), so their dated .md lines — which carry
+    the full identity + legs — are the minable source."""
+    import ast
+    from datetime import timedelta as _td
+    today = now.strftime("%Y-%m-%d")
+    items = []
+    for src in SOURCES:
+        state = load_state(src)
+        for key, entry in (state.get("entries") or {}).items():
+            if isinstance(entry, dict) and \
+                    entry.get("last_seen") == today:
+                items.append((key, entry, src))
+    for slug in MIDDLES_SLUGS:
+        for day in (today, (now - _td(days=1)).strftime("%Y-%m-%d")):
+            path = Path(DATA_DIR) / f"{slug}-{day}.md"
+            if not path.exists():
+                continue
+            try:
+                text = path.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            # Only the NEWEST run section per file: the middles files
+            # append a section per run, and mining every section from
+            # a whole day yields 100+ mechanical builds. The newest
+            # section is the batch the delivery stream just showed —
+            # the same set the delivery-side build rule works from.
+            # wide_builds runs on the same 30-min cadence, so each
+            # run gets mined once; state dedupe prevents re-banking.
+            sections = re.split(r"^## ", text, flags=re.M)
+            newest = sections[-1] if sections else ""
+            for line in newest.splitlines():
+                m = MD_LINE_RE.match(line.strip())
+                if not m:
+                    continue
+                try:
+                    legs = ast.literal_eval(m.group(2))
+                except (ValueError, SyntaxError):
+                    continue
+                if isinstance(legs, dict) and legs.get("leg1") \
+                        and legs.get("leg2"):
+                    items.append((m.group(1), legs, slug))
+    return entries_to_groups(items)
 
 
 def balanced(leg_a, leg_b):
@@ -271,6 +320,18 @@ def make_build(event, market, margin_team, leg1, leg2, window, math_out,
     }
 
 
+DATE_TAIL_RE = re.compile(
+    r"\s+(?:Today|Tomorrow)\s+\d+:\d+\s*[AP]M.*$|"
+    r"\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-\d+"
+    r"\s+\d+:\d+\s*[AP]M.*$")
+
+
+def norm_event(event):
+    """Event text without its date tail — the same game appears as
+    'Today 8:15 PM' in one file and 'Nov-11 8:15 PM' in another."""
+    return DATE_TAIL_RE.sub("", event).strip()
+
+
 def build_key(b):
     return (f"{b['game']}|{b['market']}|{b['leg1']['side']}"
             f"|{b['leg2']['side']}")
@@ -295,8 +356,15 @@ def main():
     builds = assemble(groups, now)
     state = load_state(SCAN)
     entries = state.setdefault("entries", {})
+    seen_windows = {(norm_event(v.get("game", "")), v.get("market"),
+                     tuple(v.get("window") or []))
+                    for v in entries.values() if isinstance(v, dict)}
     new_builds = []
     for b in builds:
+        wkey = (norm_event(b["game"]), b["market"], tuple(b["window"]))
+        if wkey in seen_windows:
+            continue  # same game+market+window via another line combo
+        seen_windows.add(wkey)
         k = build_key(b)
         if k in entries:
             entries[k]["last_seen"] = today
