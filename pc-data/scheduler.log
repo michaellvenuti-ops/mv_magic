@@ -5198,3 +5198,9 @@
 [2026-11-10 20:46:37 ET] odds_recorder.py: OK in 59s — SUMMARY: recorded 227 events (82 with odds), db total 212046 snapshots / 747 events, feeds ok 6 fail 0
 [2026-11-10 20:48:13 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE : NCAAB Northern Arizona 12 Arizona Today 9:00 PM / table / Alt Total Over 152.5 / Alt Total Under 153 / table | Caesars | Bet365 — window 310.0 :: 
 [2026-11-10 20:52:14 ET] dh_basketball_key_middles.py: OK in 211s — BASKETBALL MIDDLE (NCAAB total, modeled 119.0%): NCAAB Northern Arizona 12 Arizona Today 9:00 PM / table / Alt Total Over 153.5 / Alt Total Under 154 / table | 
+[2026-11-10 21:00:46 ET] sync_to_github.py: FAILED (exit 1) in 512s —   FAILED: pc-data/total-projectors-snapshot-2026-11-09.json (HTTP 409: {'error': '{"message":"is at 395bb8dd4c5b1131865ab5225b6a10ae62c2c5f4 but expected 89c9c7
+[2026-11-10 21:02:08 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 227 events (80 with odds), db total 212273 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 21:03:28 ET] dh_sog_middles.py: OK in 79s — - 0 deliverables this run
+[2026-11-10 21:04:09 ET] dh_team_total_middles.py: OK in 42s
+[2026-11-10 21:04:10 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 21:04:13 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
