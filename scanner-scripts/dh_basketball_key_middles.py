@@ -71,6 +71,46 @@ TOTAL_PCT = {"NBA": NBA_TOTAL_PCT, "NCAAB": NCAAB_TOTAL_PCT}
 TOTAL_TAIL = {"NBA": 0.5, "NCAAB": 0.4}    # totals beyond the table
 
 
+# --- Line recovery (fix 2026-11-10, first-run postmortem) ----------
+# parse_middle_row takes the legs from the BET cells, and for many
+# books those cells carry only price / stake / book — the line lives
+# in the row's MARKET columns ("Alt Spread Bucknell +41.5"). For
+# those rows leg["line"] silently equals the leg PRICE (e.g. +145),
+# and the first version scored windows like [145..160] as "margins".
+# The lines are therefore recovered from the identity's market
+# segments; leg lines are only a fallback when they cannot be a
+# price (non-integer, or different from the leg's price).
+import re as _re
+_SEG_NUM = _re.compile(r"([+-]?\d+(?:\.\d+)?)\s*(?:YES|NO)?\s*$",
+                       _re.I)
+
+
+def identity_lines(ident, market):
+    """The two lines named in the identity's market segments."""
+    if not ident:
+        return []
+    out = []
+    for seg in ident.split(" / "):
+        if market not in seg.lower():
+            continue
+        m = _SEG_NUM.search(seg.strip())
+        if m:
+            out.append(float(m.group(1)))
+    return out
+
+
+def leg_line_trustworthy(mid, leg):
+    """A parsed leg line that cannot be the leg's price."""
+    try:
+        line = float(mid[leg]["line"])
+        price = int(mid[leg]["price"])
+    except (TypeError, ValueError, KeyError):
+        return None
+    if line == price:
+        return None            # bet cell carried no line: line IS price
+    return line
+
+
 def classify(mid):
     """(league, market) from the row identity, or (None, None).
 
@@ -132,26 +172,35 @@ def score_mid(mid):
     league, market = classify(mid)
     if league is None or market is None:
         return None
-    try:
-        l1 = mid["leg1"]["line"]
-        l2 = mid["leg2"]["line"]
-    except (TypeError, KeyError):
-        return None
+    ident = stable_row_identity(mid.get("cells")) or ""
+    lines = identity_lines(ident, market)
+    if len(lines) >= 2:
+        l1, l2 = lines[0], lines[1]
+    else:
+        l1 = leg_line_trustworthy(mid, "leg1")
+        l2 = leg_line_trustworthy(mid, "leg2")
+        if l1 is None or l2 is None:
+            return None
     if market == "spread":
         pct, values = spread_score(league, abs(l1), abs(l2))
     else:
         pct, values = total_score(league, l1, l2)
-    return league, market, pct, values
+    width = (abs(abs(l2) - abs(l1)) if market == "spread"
+             else abs(l2 - l1))
+    return league, market, pct, values, width
 
 
 def qualifies(mid):
-    if mid["window"] < MIN_WINDOW:
-        return False, None
+    # NOTE: mid["window"] from the parser is computed off the raw leg
+    # lines, which for price-only bet cells are the PRICES — never
+    # trust it. The width used here comes from the recovered lines.
     if not (price_in(mid["leg1"]["price"], CAP, 100000)
             and price_in(mid["leg2"]["price"], CAP, 100000)):
         return False, None
     scored = score_mid(mid)
     if scored is None:
+        return False, None
+    if scored[4] < MIN_WINDOW:
         return False, None
     bar = SPREAD_BAR if scored[1] == "spread" else TOTAL_BAR
     return scored[2] >= bar, scored
@@ -212,7 +261,7 @@ def main():
             ok, scored = qualifies(mid)
             if not ok:
                 continue
-            league, market, pct, values = scored
+            league, market, pct, values = scored[:4]
             _l1, _l2 = mid["leg1"], mid["leg2"]
             _ident = stable_row_identity(mid.get("cells"))
             if not _ident:
