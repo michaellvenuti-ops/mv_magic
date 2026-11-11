@@ -5224,3 +5224,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 20:20:03 ET] dh_team_total_middles.py: OK in 51s
 [2026-11-10 20:20:05 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 20:20:08 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-10 20:28:31 ET] sync_to_github.py: FAILED (exit 1) in 503s —   FAILED: pc-data/nhl-totals-snapshot-2026-11-09.json (HTTP 409: {'error': '{"message":"is at 6edad5990c3bc7f5a7678261d6fd38ceabf1c1fa but expected 9d2041ccc72d
+[2026-11-10 20:29:52 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 227 events (84 with odds), db total 211592 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 20:30:12 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Receptions J. Price Over 1.5 / Receptions J. Price Under 1.5 / table | Bet365 | FanDuel
+[2026-11-10 20:30:16 ET] rlm.py: OK in 3s
+[2026-11-10 20:30:20 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
