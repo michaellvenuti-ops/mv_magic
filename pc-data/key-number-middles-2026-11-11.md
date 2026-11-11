@@ -21,3 +21,5 @@ NEW MIDDLE: KEY 7: NBA DEN Nuggets MEM Grizzlies Today 8:15 PM / table / Alt Spr
 (end of new middles — full qualifying list below)
 KEY 7: NBA DEN Nuggets MEM Grizzlies Today 8:15 PM / table / Alt Spread MEM Grizzlies +7.5 / Alt Spread DEN Nuggets -6.5 / table | HardRock | BetMGM margins [7] :: -165 $1,000 HardRock, HardRock, -165 / +145 $656 BetMGM, BetMGM, +145
 KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -165 $1,000 HardRock, HardRock, -165 / +145 $656 BetMGM, BetMGM, +145
+## 2026-11-11T03:14:30-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1957 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -165 $1,000 HardRock, HardRock, -165 / +145 $656 BetMGM, BetMGM, +145
