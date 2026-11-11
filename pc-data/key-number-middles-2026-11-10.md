@@ -20,3 +20,7 @@
 ## 2026-11-10T19:26:46-05:00 — key-number-middles (STRICT exact-key rule): 1888 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-10T20:08:17-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1899 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-10T20:44:55-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1911 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-10T21:29:41-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1957 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 3: NCAAB 15 Kansas 24 Kentucky Today 9:30 PM / table / Alt Spread Kansas -2.5 / Alt Spread Kentucky +3.5 / table | BetMGM | Bally Bet margins [3] :: -160 $1,000 BetMGM, BetMGM, -160 / +140 $677 Bally Bet, Bally Bet, +140
+(end of new middles — full qualifying list below)
+KEY 3: NCAAB 15 Kansas 24 Kentucky Today 9:30 PM / table / Alt Spread Kansas -2.5 / Alt Spread Kentucky +3.5 / table | BetMGM | Bally Bet margins [3] :: -160 $1,000 BetMGM, BetMGM, -160 / +140 $677 Bally Bet, Bally Bet, +140
