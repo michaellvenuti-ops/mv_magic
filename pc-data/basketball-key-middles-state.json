@@ -75,12 +75,30 @@
     158
    ]
   },
+  "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Spread Arkansas -30 / Spread Robert Morris +31.5 / table | Bet365 | Fanatics-NJ": {
+   "clean_tier": true,
+   "cluster": "NCAAB margin cluster ~1.4%",
+   "first_reported": "2026-11-10T22:53:01-05:00",
+   "game": "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Spread Arkansas -30 / Spread Robert Morris +31.5 / table",
+   "last_seen": "2026-11-10T22:53:01-05:00",
+   "league": "NCAAB",
+   "leg1": "-108 $1,000 Bet365, Bet365, -108",
+   "leg2": "-105 $989 Fanatics-NJ, Fanatics-NJ, -105",
+   "market": "spread",
+   "modeled_pct": 1.4,
+   "smaller_bets": false,
+   "tier": "SPANKY",
+   "window_values": [
+    31,
+    30
+   ]
+  },
   "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Total Over 154 / Alt Total Under 156.5 / table | Bet365 | DraftKings": {
    "clean_tier": true,
    "cluster": "NCAAB total window ~4.6%",
    "first_reported": "2026-11-10T22:16:48-05:00",
    "game": "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Total Over 154 / Alt Total Under 156.5 / table",
-   "last_seen": "2026-11-10T22:16:48-05:00",
+   "last_seen": "2026-11-10T22:53:01-05:00",
    "league": "NCAAB",
    "leg1": "-125 $1,000 Bet365, Bet365, -125",
    "leg2": "+110 $857 DraftKings, DraftKings, +110",
@@ -92,6 +110,44 @@
     155,
     156,
     154
+   ]
+  },
+  "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Total Under 158.5 / Alt Total Over 156 / table | Caesars | Bet365": {
+   "clean_tier": true,
+   "cluster": "NCAAB total window ~4.5%",
+   "first_reported": "2026-11-10T22:53:01-05:00",
+   "game": "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Total Under 158.5 / Alt Total Over 156 / table",
+   "last_seen": "2026-11-10T22:53:01-05:00",
+   "league": "NCAAB",
+   "leg1": "-110 $1,000 Caesars, Caesars, -110",
+   "leg2": "+100 $955 Bet365, Bet365, +100",
+   "market": "total",
+   "modeled_pct": 4.5,
+   "smaller_bets": false,
+   "tier": "SPANKY",
+   "window_values": [
+    157,
+    158,
+    156
+   ]
+  },
+  "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Total Under 158.5 / Alt Total Over 156 / table | DraftKings | Bet365": {
+   "clean_tier": true,
+   "cluster": "NCAAB total window ~4.5%",
+   "first_reported": "2026-11-10T22:53:01-05:00",
+   "game": "NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Total Under 158.5 / Alt Total Over 156 / table",
+   "last_seen": "2026-11-10T22:53:01-05:00",
+   "league": "NCAAB",
+   "leg1": "-112 $1,000 DraftKings, DraftKings, -112",
+   "leg2": "+100 $946 Bet365, Bet365, +100",
+   "market": "total",
+   "modeled_pct": 4.5,
+   "smaller_bets": false,
+   "tier": "SPANKY",
+   "window_values": [
+    157,
+    158,
+    156
    ]
   }
  },
