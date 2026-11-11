@@ -5308,3 +5308,19 @@
 [2026-11-11 00:34:29 ET] hung_number.py: OK in 76s — No new hung numbers (16 current flags).
 [2026-11-11 00:39:02 ET] dh_key_number_middles.py: FAILED (exit 2) in 243s — key-number-middles: zero middles parsed — send a dump back. No state written.
 [2026-11-11 00:40:26 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 226 events (78 with odds), db total 216355 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 00:50:38 ET] sync_to_github.py: OK in 522s —   ok: team-total-middles-board-pc.html
+[2026-11-11 00:50:53 ET] notify.py: OK in 15s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 00:51:26 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 226 events (78 with odds), db total 216581 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 00:55:16 ET] dh_game_middles.py: OK in 230s — GAME MIDDLE: NCAAB Cal Poly Grand Canyon Today 9:00 PM / table / Alt Total Under 181.5 / Alt Total Over 180.5 / table | DraftKings | Bet365 — window 250.0 :: -1
+[2026-11-11 00:58:48 ET] dh_basketball_key_middles.py: OK in 212s — basketball-key-middles: no new basketball middles.
+[2026-11-11 00:58:53 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 01:00:29 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE : NCAAB Cornell St. Bonaventure Today 7:00 PM / table / Alt Total Under 160.5 / Alt Total Over 159.5 / table | DraftKings | Bet365 — window 321.0 ::
+[2026-11-11 01:01:51 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 216807 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:02:28 ET] dh_arbitrage.py: OK in 37s — ARBITRAGE: NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Rush Yards D. Lock Under 9.5 / Alt Rush Yards D. Lock 10+ / table | Bet365 | DraftKings
+[2026-11-11 01:02:48 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 01:03:06 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM / table / Alt Spread Arkansas St. +7.5 / Alt Spread Coastal Carolina -7.5 / table | DraftKings | B
+[2026-11-11 01:04:25 ET] dh_sog_middles.py: OK in 78s — - 0 deliverables this run
+[2026-11-11 01:04:27 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-11 01:04:28 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 01:04:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 01:04:32 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=11 queued_total=12
