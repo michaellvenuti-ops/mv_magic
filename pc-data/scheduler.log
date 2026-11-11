@@ -5398,3 +5398,14 @@
 [2026-11-11 03:34:54 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
 [2026-11-11 03:36:34 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 226 events (78 with odds), db total 219971 snapshots / 761 events, feeds ok 6 fail 0
 [2026-11-11 03:38:07 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NBA DEN Nuggets MEM Grizzlies Today 8:15 PM / table / Total Under 229.5 / Alt Total Over 229 / table | Caesars | Bet365 — window 213.0 :: {'
+[2026-11-11 03:47:16 ET] sync_to_github.py: OK in 549s —   ok: team-total-middles-board-pc.html
+[2026-11-11 03:47:34 ET] notify.py: OK in 18s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 03:49:42 ET] odds_recorder.py: OK in 98s — SUMMARY: recorded 226 events (78 with odds), db total 220197 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 03:54:29 ET] dh_key_number_middles.py: OK in 285s — KEY-NUMBER MIDDLE (key 4): NCAAB Marquette 20 Michigan Today 7:00 PM / table / Alt Spread Marquette +4.5 / Spread Michigan -3.5 / table | theScore | Bally Bet —
+[2026-11-11 03:54:34 ET] rlm.py: OK in 6s
+[2026-11-11 03:54:38 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 03:55:58 ET] dh_sog_middles.py: OK in 80s — - 0 deliverables this run
+[2026-11-11 03:55:59 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-11 03:56:01 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 03:56:02 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 03:57:21 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 226 events (78 with odds), db total 220423 snapshots / 761 events, feeds ok 6 fail 0
