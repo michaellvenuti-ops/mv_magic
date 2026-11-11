@@ -26,3 +26,6 @@ NEW FLAG: FBS USC @ Indiana | 2026-11-11 — Fanatics still dealing spread -7.5 
 NEW FLAG: FBS USC @ Indiana | 2026-11-11 — Kalshi still dealing spread -7.5 on Indiana (pre-move median -7.5, now -10.0)
 ## 2026-11-11T16:35:26-05:00 — 67 games, 0 steam events, 0 NEW flags, 1 started games skipped
 ## 2026-11-11T17:17:33-05:00 — 67 games, 0 steam events, 0 NEW flags, 1 started games skipped
+## 2026-11-11T17:58:34-05:00 — 67 games, 1 steam events, 2 NEW flags, 1 started games skipped
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-11 — DraftKings still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-11 — Fanatics still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
