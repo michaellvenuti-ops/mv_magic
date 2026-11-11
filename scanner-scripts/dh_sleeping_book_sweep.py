@@ -43,10 +43,35 @@ def main():
     pw, ctx = open_session()
     try:
         page = ctx.new_page()
-        if not signed_in(page, FINDER_URLS["positive_ev"]):
+        # Gate on the SESSION via the middles finder — the page
+        # dh_common.signed_in was calibrated on. The /positive-ev
+        # page never satisfies the gate in this profile (its SPA
+        # stays a shell through the gate's full 45s poll), so gating
+        # on it skipped every run Nov 5-10 while middles/arbitrage/
+        # low-holds passed minutes apart in the same profile. After
+        # the session gate, navigate to the +EV finder and judge it
+        # by table rows; no rows = loud failure with a body dump,
+        # never a silent skip. (Fix drafted Nov 10, 2026.)
+        if not signed_in(page, FINDER_URLS["middles"]):
             print("DarkHorse check unavailable (signed out) -- "
                   "sleeping-book sweep skipped, no prices invented.")
             return 0
+        page.goto(FINDER_URLS["positive_ev"], timeout=60000,
+                  wait_until="domcontentloaded")
+        try:
+            page.wait_for_function(
+                "document.querySelectorAll('table tr').length > 5",
+                timeout=60000)
+        except Exception:  # noqa: BLE001 - judged by the count below
+            pass
+        if page.locator("table tr").count() == 0:
+            dump_path = DATA_DIR / f"dump-positive-ev-sweep-{today_str()}.txt"
+            with open(dump_path, "w", encoding="utf-8") as fh:
+                fh.write(page.locator("body").inner_text(timeout=20000))
+            print("positive-ev-sweep: session OK but the +EV finder rendered "
+                  f"no table rows — body dumped to {dump_path}. "
+                  "No prices invented.", file=sys.stderr)
+            return 2
         plays = parse_ev_rows(page)
         kept = []
         for play in sorted(plays, key=lambda p: -(p["ev_pct"] or 0)):
