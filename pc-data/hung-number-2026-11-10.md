@@ -1,24 +1,23 @@
-# Hung numbers — 2026-11-10 (scan 2026-11-10 22:19)
+# Hung numbers — 2026-11-10 (scan 2026-11-10 23:22)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Western Michigan vs Akron | Caesars | spread | value: favorite | book -28.5 vs median -27.5 | div 1.0 
-- Western Michigan vs Akron | BetMGM | total | value: Under | book 49.5 vs median 56.5 | div 7.0 
-- Western Michigan vs Akron | DraftKings | total | value: Over | book 61.5 vs median 56.5 | div 5.0 
-- Kent State vs Bowling Green | BetMGM | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
-- Kent State vs Bowling Green | FanDuel | total | value: Under | book 51.5 vs median 53.0 | div 1.5 
-- Ohio vs Miami (OH) | DraftKings | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
-- Ohio vs Miami (OH) | FanDuel | spread | value: favorite | book -12.5 vs median -10.5 | div 2.0 
+- Ohio vs Miami (OH) | BetMGM | spread | value: dog | book 2.5 vs median 0.0 | div 2.5 
+- Ohio vs Miami (OH) | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Ohio vs Miami (OH) | Caesars | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
+- Ohio vs Miami (OH) | FanDuel | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Ohio vs Miami (OH) | BetMGM | total | value: Over | book 43.5 vs median 41.5 | div 2.0 
 - Buffalo vs Ball State | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Buffalo vs Ball State | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Houston vs Colorado | bet365 | spread | value: favorite | book -10.5 vs median -9.5 | div 1.0 
 - Houston vs Colorado | FanDuel | spread | value: favorite | book -10.5 vs median -9.5 | div 1.0 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 1.25 | div 2.75 
 - Wake Forest vs SMU | BetMGM | spread | value: favorite | book -1.0 vs median 1.25 | div 2.25 
 - East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
-- Tulane vs Rice | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.5 | div 3.0 
 - Ole Miss vs Oklahoma | Fanatics | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
 - Purdue vs Iowa | DraftKings | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
 - Colorado State vs Washington State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
+- Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
+- Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
