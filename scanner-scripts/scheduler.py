@@ -53,6 +53,7 @@ SCHEDULE = [
     ("dh_low_holds.py", [], "interval", 60),
     ("dh_game_middles.py", [], "interval", 30),
     ("dh_key_number_middles.py", [], "interval", 30),
+    ("dh_basketball_key_middles.py", [], "interval", 30),
     ("hung_number.py", [], "interval", 60),
     ("rlm.py", [], "interval", 60),
     ("leader_follower.py", [], "interval", 60),
