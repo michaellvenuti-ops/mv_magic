@@ -5743,3 +5743,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 13:25:17 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 402 total tallied.
 [2026-11-11 13:25:18 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 13:25:19 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-11 13:36:11 ET] sync_to_github.py: FAILED (exit 1) in 652s —   FAILED: pc-data/public-fade-gate-notified (HTTP 409: {'error': '{"message":"is at 4f04c3fb7c9c396cdf26a7b6c0d91216878da157 but expected 1a7f81409c10a4d778b166
+[2026-11-11 13:36:44 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (139 with odds), db total 229474 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 13:36:46 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA SA Spurs CHI Bulls Today 8:15 PM — Total — Over 243.5 DraftKings +155 ($74) / Under 246.5 FanDuel -198 ($126) — both win 244, 245, 246 — land +$1
+[2026-11-11 13:37:49 ET] dh_game_middles.py: OK in 63s — game-middles: no new qualifying middles.
+[2026-11-11 13:41:26 ET] dh_basketball_key_middles.py: OK in 217s — basketball-key-middles: no new basketball middles.
+[2026-11-11 13:42:50 ET] hung_number.py: OK in 84s — No new hung numbers (13 current flags).
+[2026-11-11 13:42:55 ET] rlm.py: OK in 5s
+[2026-11-11 13:42:59 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 13:43:02 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
