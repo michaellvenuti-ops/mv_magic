@@ -5299,3 +5299,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 22:53:30 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-10 22:53:33 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
 [2026-11-10 22:55:19 ET] dh_prop_middles.py: OK in 106s — PROP MIDDLE CLEAN : NCAAB Cal Poly Grand Canyon Nov-11 9:00 PM / table / Total Under 179.5 / Alt Total Over 179 / table | BetMGM | Bet365 — window 210.0 :: {'si
+[2026-11-10 23:04:06 ET] sync_to_github.py: FAILED (exit 1) in 527s —   FAILED: pc-data/total-projectors-2026-11-10.md (HTTP 409: {'error': '{"message":"is at c51da8f711b6c5add0b4e062d72e0401aa41c655 but expected 777ee276530973d9d
+[2026-11-10 23:05:26 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 227 events (65 with odds), db total 214316 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 23:07:13 ET] dh_game_middles.py: OK in 107s — GAME MIDDLE: NCAAB William & Mary Florida Atlantic Nov-11 7:00 PM / table / Total Under 165.5 / Alt Total Over 165 / table | Bally Bet | Bet365 — window 223.0 :
+[2026-11-10 23:08:27 ET] dh_sog_middles.py: OK in 74s — - 0 deliverables this run
+[2026-11-10 23:08:29 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-10 23:08:30 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 23:08:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
