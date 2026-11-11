@@ -24,3 +24,9 @@ LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
 ## 2026-11-11T13:42:58-05:00 — 81 games, 0 leads credited, 1 started games skipped
 ## 2026-11-11T14:46:35-05:00 — no-follow: Kalshi Wyoming @ UTEP | 2026-11-11 spread (only 0 followed)
 ## 2026-11-11T14:46:35-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T15:53:49-05:00 — no-follow: DraftKings Sacramento State @ Central Michigan | 2026-11-11 spread (only 0 followed)
+## 2026-11-11T15:53:49-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-11 spread (Fanatics, Kalshi)
+## 2026-11-11T15:53:49-05:00 — pack move, never credited: USC @ Indiana | 2026-11-11 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-11T15:53:49-05:00 — pack move, never credited: Ole Miss @ Oklahoma | 2026-11-11 spread (Caesars, DraftKings)
+## 2026-11-11T15:53:49-05:00 — no-follow: bet365 Colorado State @ Washington State | 2026-11-11 spread (only 1 followed)
+## 2026-11-11T15:53:49-05:00 — 81 games, 0 leads credited, 1 started games skipped
