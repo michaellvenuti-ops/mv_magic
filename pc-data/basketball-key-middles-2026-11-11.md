@@ -42,3 +42,7 @@ NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB NJIT VCU Today 7:00 PM / table /
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [SPANKY] ~1.4%: NCAAB NJIT VCU Today 7:00 PM / table / Alt Spread VCU -29 / Alt Spread NJIT +30.5 / table | Bet365 | DraftKings window [30, 29] :: -120 $1,000 Bet365, Bet365, -120 / +115 $851 DraftKings, DraftKings, +115
 NCAAB SPREAD [SPANKY] ~1.8%: NCAAB NJIT VCU Today 7:00 PM / table / Spread VCU -29.5 / Alt Spread NJIT +31.5 / table | Bet365 | DraftKings window [30, 31] :: -111 $1,000 Bet365, Bet365, -111 / +102 $941 DraftKings, DraftKings, +102
+## 2026-11-11T08:54:33-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1962 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Spread Florida A&M +9.5 / Alt Spread Kansas City -8 / table | theScore | Bet365 window [9, 8] :: -110 $1,000 theScore, theScore, -110 / +115 $888 Bet365, Bet365, +115
+(end of new middles — full qualifying list below)
+NCAAB SPREAD [SPANKY] ~7.1%: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Spread Florida A&M +9.5 / Alt Spread Kansas City -8 / table | theScore | Bet365 window [9, 8] :: -110 $1,000 theScore, theScore, -110 / +115 $888 Bet365, Bet365, +115
