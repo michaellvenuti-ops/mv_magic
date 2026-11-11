@@ -5412,3 +5412,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 02:36:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 02:36:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 02:38:49 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 218841 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 02:50:13 ET] sync_to_github.py: OK in 533s —   ok: team-total-middles-board-pc.html
+[2026-11-11 02:50:22 ET] notify.py: OK in 9s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 02:50:55 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 226 events (78 with odds), db total 219067 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 02:53:18 ET] dh_game_middles.py: OK in 143s — GAME MIDDLE: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Total Over 143.5 / Alt Total Under 146 / table | Caesars | Bet365 — window 215.0 :: -110 $1,
+[2026-11-11 02:57:10 ET] dh_basketball_key_middles.py: OK in 231s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Kansas City Florida A&M Today 12:00 PM / table / Total Under 148.5 / Alt Total Over 145.5 / table | BetR
+[2026-11-11 02:58:26 ET] hung_number.py: OK in 76s — HUNG NUMBER: Michigan vs Oregon — Hard Rock spread value dog (14.5 vs median 11.0)
+[2026-11-11 02:58:30 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 03:00:13 ET] dh_prop_middles.py: OK in 102s — PROP MIDDLE CLEAN : NCAAB Kansas City Florida A&M Today 12:00 PM / table / Total Over 143.5 / Alt Total Under 145.5 / table | Caesars | Bet365 — window 220.0 ::
