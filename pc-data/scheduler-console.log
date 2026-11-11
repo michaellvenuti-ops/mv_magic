@@ -5271,3 +5271,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 21:56:36 ET] sync_to_github.py: FAILED (exit 1) in 534s —   FAILED: pc-data/public-fade-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 53a3d18d0914dc947976147256ba1b119119a1cc but expected 9b923b3a03945a28dee0dd
 [2026-11-10 21:57:55 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 227 events (69 with odds), db total 213181 snapshots / 747 events, feeds ok 6 fail 0
 [2026-11-10 21:59:43 ET] dh_game_middles.py: OK in 107s — GAME MIDDLE: NCAAB Marquette 20 Michigan Nov-11 7:00 PM / table / Total Under 157.5 / Alt Total Over 156.5 / table | theScore | Bet365 — window 215.0 :: -105 $1
+[2026-11-10 22:08:33 ET] sync_to_github.py: OK in 530s —   ok: team-total-middles-board-pc.html
+[2026-11-10 22:08:50 ET] notify.py: OK in 17s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 22:10:11 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (66 with odds), db total 213408 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 22:13:32 ET] dh_key_number_middles.py: OK in 201s — KEY-NUMBER MIDDLE (key 7): NCAAB Kent St. Golden UNC Wilmington Nov-11 7:00 PM / table / Spread Kent St. Golden +7.5 / Alt Spread UNC Wilmington -6 / table | Dr
+[2026-11-10 22:16:50 ET] dh_basketball_key_middles.py: OK in 198s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Kent St. Golden UNC Wilmington Nov-11 7:00 PM / table / Spread Kent St. Golden +7.5 / Alt Spread UNC Wi
+[2026-11-10 22:16:55 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Ohio @ Miami (OH) | 2026-11-10 | Kalshi | Miami (OH) spread 14.5 (median 14.5 -> 10.5)
+[2026-11-10 22:18:20 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE CLEAN : NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Total Over 154.5 / Alt Total Under 155.5 / table | Bet365 | DraftKings — window 235
+[2026-11-10 22:19:43 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 227 events (65 with odds), db total 213635 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 22:20:54 ET] hung_number.py: OK in 71s — HUNG NUMBER: Buffalo vs Ball State — Fanatics spread value favorite (-2.5 vs median -1.5)
+[2026-11-10 22:22:22 ET] dh_sog_middles.py: OK in 88s — - 0 deliverables this run
+[2026-11-10 22:22:25 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-10 22:22:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 22:22:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
