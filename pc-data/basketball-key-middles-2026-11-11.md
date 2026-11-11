@@ -50,3 +50,5 @@ NCAAB SPREAD [SPANKY] ~7.1%: NCAAB Kansas City Florida A&M Today 12:00 PM / tabl
 NEW MIDDLE: NCAAB TOTAL SPANKY baseline: NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 145.5 / Alt Total Under 148 / table | FanDuel | Bet365 window [146, 147, 148] :: -110 $1,000 FanDuel, FanDuel, -110 / +100 $955 Bet365, Bet365, +100
 (end of new middles — full qualifying list below)
 NCAAB TOTAL [SPANKY] ~5.5%: NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 145.5 / Alt Total Under 148 / table | FanDuel | Bet365 window [146, 147, 148] :: -110 $1,000 FanDuel, FanDuel, -110 / +100 $955 Bet365, Bet365, +100
+## 2026-11-11T10:13:31-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1942 + 0 rows parsed, qualifying only below — 0 NEW middles
+NCAAB TOTAL [SPANKY] ~5.5%: NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 145.5 / Alt Total Under 148 / table | FanDuel | Bet365 window [146, 147, 148] :: -110 $1,000 FanDuel, FanDuel, -110 / +100 $955 Bet365, Bet365, +100
