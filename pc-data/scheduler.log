@@ -5595,3 +5595,10 @@
 [2026-11-11 10:14:36 ET] promo_watch.py: OK in 59s — promo-watch: 8 listed, 0 new, 0 converter attempt(s).
 [2026-11-11 10:15:10 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 226 events (78 with odds), db total 226751 snapshots / 761 events, feeds ok 6 fail 0
 [2026-11-11 10:16:36 ET] dh_prop_middles.py: OK in 87s — PROP MIDDLE : NCAAB Charleston Temple Today 6:30 PM / table / Alt Total Under 162.5 / Alt Total Over 161.5 / table | HardRock | Bet365 — window 330.0 :: {'side'
+[2026-11-11 10:27:05 ET] sync_to_github.py: FAILED (exit 1) in 629s —   FAILED: pc-data/promo-dashboard-dump-2026-11-11.txt (HTTP 409: {'error': '{"message":"is at c3668b01b2e7fb2f12b482e6e5ad5491b747a610 but expected f659dc344770
+[2026-11-11 10:27:39 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 226 events (78 with odds), db total 226977 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 10:31:01 ET] dh_key_number_middles.py: OK in 202s — key-number-middles: 767 basketball rows excluded (football-only rule).
+[2026-11-11 10:32:25 ET] dh_sog_middles.py: OK in 84s — - 0 deliverables this run
+[2026-11-11 10:32:26 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 10:32:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 10:32:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
