@@ -5616,3 +5616,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 09:37:40 ET] total_projectors_grade_run.py: OK in 1s — }
 [2026-11-11 09:37:55 ET] half_percent.py: OK in 15s — half-percent: PICK REZI ref $20.81 target $20.91 stop $20.71
 [2026-11-11 09:37:58 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-11 09:48:07 ET] sync_to_github.py: FAILED (exit 1) in 609s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-09-hour-1.json (HTTP 409: {'error': '{"message":"is at 7cb9942a5c468da07172d00df9eebabf9bc7450f but expe
+[2026-11-11 09:49:32 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 226 events (78 with odds), db total 226299 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 09:53:30 ET] dh_key_number_middles.py: OK in 238s — key-number-middles: 693 basketball rows excluded (football-only rule).
+[2026-11-11 09:53:36 ET] rlm.py: OK in 5s
+[2026-11-11 09:53:43 ET] leader_follower.py: OK in 7s — leader-follower: logging phase (81 games, 1 new leads, no book at 3 yet).
+[2026-11-11 09:55:22 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-11 09:55:26 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 09:55:28 ET] nfl_first_score.py: OK in 2s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 09:55:31 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 09:55:32 ET] half_percent.py: OK in 1s — half-percent recheck: 09:55 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
