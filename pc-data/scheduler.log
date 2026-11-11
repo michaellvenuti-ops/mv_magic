@@ -5438,3 +5438,14 @@
 [2026-11-11 04:58:30 ET] rlm.py: OK in 4s
 [2026-11-11 04:58:34 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-11 05:00:55 ET] dh_prop_middles.py: OK in 141s — PROP MIDDLE : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Alt Spread IND Colts +1 / Moneyline MIA Dolphins / table bar_chart | Bally Bet | ProphetX — wi
+[2026-11-11 05:09:58 ET] sync_to_github.py: OK in 542s —   ok: team-total-middles-board-pc.html
+[2026-11-11 05:10:14 ET] notify.py: OK in 16s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 05:11:36 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 221779 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 05:15:23 ET] dh_key_number_middles.py: OK in 227s — key-number-middles: 384 basketball rows excluded (football-only rule).
+[2026-11-11 05:16:53 ET] dh_sog_middles.py: OK in 90s — - 0 deliverables this run
+[2026-11-11 05:16:57 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 05:17:00 ET] nfl_first_score.py: OK in 2s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 05:17:01 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 05:18:27 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 226 events (78 with odds), db total 222005 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 05:19:39 ET] hung_number.py: OK in 72s — HUNG NUMBER: Rams vs Cardinals — Hard Rock spread value favorite (-10.5 vs median -9.5)
+[2026-11-11 05:20:55 ET] dh_arbitrage.py: OK in 46s — ARBITRAGE: NBA CLE Cavaliers NY Knicks Today 7:15 PM / table / Assists E. Mobley Under 3.5 / Assists E. Mobley Over 3.5 / table | FanDuel | Bally Bet
