@@ -5995,13 +5995,15 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Duke",
-   "dog_team": "Michigan St"
+   "dog_team": "Michigan St",
+   "final": true
   },
   "401929354": {
    "sport": "NCAAB",
    "matchup": "Biblical Stud at Texas Southern",
    "date": "2026-11-11",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928828": {
    "sport": "NCAAB",
@@ -6237,7 +6239,8 @@
    "spread": 11.5,
    "fav_team": "Fordham",
    "dog_team": "Iona",
-   "live_ml": -298
+   "live_ml": -298,
+   "final": true
   },
   "401911187": {
    "sport": "NCAAB",
@@ -6323,7 +6326,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Vanderbilt",
-   "dog_team": "Memphis"
+   "dog_team": "Memphis",
+   "final": true
   },
   "401927369": {
    "sport": "NCAAB",
@@ -6333,7 +6337,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "MTSU",
-   "dog_team": "Evansville"
+   "dog_team": "Evansville",
+   "final": true
   },
   "401925107": {
    "sport": "NCAAB",
@@ -6366,7 +6371,8 @@
    "sport": "NCAAB",
    "matchup": "Ecclesia at C Arkansas",
    "date": "2026-11-11",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401913527": {
    "sport": "NCAAB",
@@ -6607,7 +6613,8 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Utah",
-   "dog_team": "Weber St"
+   "dog_team": "Weber St",
+   "live_ml": -445
   },
   "401917979": {
    "sport": "NCAAB",
@@ -6618,18 +6625,26 @@
    "spread": 33.5,
    "fav_team": "TCU",
    "dog_team": "UL Monroe",
-   "live_ml": -15000
+   "live_ml": -20000
   },
   "401909761": {
    "sport": "NCAAB",
    "matchup": "San Diego at Colorado",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Colorado",
    "dog_team": "San Diego",
-   "live_ml": -345
+   "live_ml": -175,
+   "alerted_at": "2026-11-10T21:34:03",
+   "board_read_at": "2026-11-10T21:34:03",
+   "alert_expires_at": "2026-11-10T21:37:03",
+   "alert_detail": "4:46 - 1st Half",
+   "alert_fav_score": 25,
+   "alert_dog_score": 32,
+   "alert_ml": -175,
+   "ml_read_at": "2026-11-10T21:34:03"
   },
   "401909492": {
    "sport": "NCAAB",
