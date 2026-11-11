@@ -44,3 +44,4 @@ NEW FLAG: FBS Buffalo @ Ball State | 2026-11-10 — Kalshi still dealing spread 
 ## 2026-11-10T22:16:55-05:00 — 67 games, 2 steam events, 2 NEW flags, 1 started games skipped
 NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — BetMGM still dealing total 49.5 on Over (pre-move median 49.5, now 56.5)
 NEW FLAG: FBS Ohio @ Miami (OH) | 2026-11-10 — Kalshi still dealing spread 14.5 on Miami (OH) (pre-move median 14.5, now 10.5)
+## 2026-11-10T22:53:33-05:00 — 67 games, 0 steam events, 0 NEW flags, 1 started games skipped
