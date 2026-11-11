@@ -5752,3 +5752,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 13:42:55 ET] rlm.py: OK in 5s
 [2026-11-11 13:42:59 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-11 13:43:02 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 13:54:09 ET] sync_to_github.py: FAILED (exit 1) in 668s —   FAILED: pc-data/voice-sample-brian.mp3 (HTTP 409: {'error': '{"message":"is at 72192873629fa82876a68e722a2ad659c6c5e8f3 but expected 8ec33c1db02cd6bf02fc7f91c
+[2026-11-11 13:55:38 ET] odds_recorder.py: OK in 59s — SUMMARY: recorded 227 events (139 with odds), db total 229701 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 13:57:10 ET] dh_arbitrage.py: OK in 92s — ARBITRAGE: NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +41.5 / Alt Spread Oregon -41.5 / table | Fanatics-NJ 
+[2026-11-11 14:00:49 ET] dh_key_number_middles.py: OK in 219s — key-number-middles: 467 basketball rows excluded (football-only rule).
+[2026-11-11 14:02:45 ET] dh_prop_middles.py: OK in 116s — PROP MIDDLE : NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +40.5 / Alt Spread Oregon -39.5 / table | Fanatics-
