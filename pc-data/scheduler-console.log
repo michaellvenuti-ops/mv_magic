@@ -5201,3 +5201,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 19:29:19 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-10 19:29:40 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAB Fairfield Wisconsin Today 8:30 PM / table / Alt Spread Fairfield +31.5 / Alt Spread Wisconsin -31.5 / table | Fanatics-NJ | BetRivers
 [2026-11-10 19:31:01 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NBA MIA Heat UTA Jazz Today 9:15 PM / table / Alt Spread UTA Jazz +12 / Alt Spread MIA Heat -11.5 / table | Bet365 | BetMGM — window 360.0 :: {'si
+[2026-11-10 19:39:30 ET] sync_to_github.py: FAILED (exit 1) in 509s —   FAILED: pc-data/half-percent-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 16c39b0896ce0ca9fb7e9fe3989be2843fbab570 but expected f3b4d8af310dee61649f2
+[2026-11-10 19:40:50 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 227 events (98 with odds), db total 210684 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 19:42:31 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-10 19:43:23 ET] dh_team_total_middles.py: OK in 52s
+[2026-11-10 19:43:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 19:43:27 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
