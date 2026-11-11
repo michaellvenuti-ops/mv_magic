@@ -210,12 +210,16 @@
   },
   "Follow the Money|2026-11-09|Follow the Money | November 9, 2026 | Hour 3": {
    "date": "2026-11-09",
+   "done_at": "2026-11-10T21:00:46.513721-05:00",
    "queued_at": "2026-11-10T06:38:22.061578-05:00",
    "show": "Follow the Money",
-   "status": "transcribing",
+   "status": "done",
    "stem": "follow-the-money-2026-11-09-hour-3",
    "title": "Follow the Money | November 9, 2026 | Hour 3",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/b49b29f7-58b6-462d-a432-669ea2886cd1/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=b49b29f7-58b6-462d-a432-669ea2886cd1&feed=iXBZFZCf"
+   "transcript": "transcripts/follow-the-money-2026-11-09-hour-3.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/b49b29f7-58b6-462d-a432-669ea2886cd1/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=b49b29f7-58b6-462d-a432-669ea2886cd1&feed=iXBZFZCf",
+   "wall_s": 10584,
+   "words": 9354
   },
   "Prop Points|2026-11-04|Prop Points | November 4, 2026": {
    "date": "2026-11-04",
@@ -399,7 +403,7 @@
   }
  },
  "worker": {
-  "current": "Follow the Money|2026-11-09|Follow the Money | November 9, 2026 | Hour 3",
-  "heartbeat": "2026-11-10T18:04:22.509739-05:00"
+  "finished": true,
+  "heartbeat": "2026-11-10T21:00:46.701220-05:00"
  }
 }
