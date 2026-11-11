@@ -5833,3 +5833,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 16:15:52 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
 [2026-11-11 16:15:54 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF 15 USC 6 Indiana Nov-14 3:30 PM — Spread — Indiana -8.5 Bally Bet -114 ($99) / USC +11.5 theScore -120 ($101) — both win 9, 10, 11 — land +$171
 [2026-11-11 16:18:03 ET] ncaaf_first_score.py: OK in 129s — ncaaf-first-score: 687 new, 1 unverified, 687 total tallied.
+[2026-11-11 16:28:59 ET] sync_to_github.py: FAILED (exit 1) in 656s —   FAILED: pc-data/prop-middles-2026-11-09.md (HTTP 409: {'error': '{"message":"is at e37f56dad59e28068260a5e8e9135c12e40719fa but expected 3490d8d2ab921e12095bd
+[2026-11-11 16:29:33 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (135 with odds), db total 231971 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 16:30:14 ET] dh_kalshi_poly_arb.py: OK in 42s — KALSHI-POLY-ARB: NBA OKC Thunder POR Trail Blazers Today 10:15 PM / table / Moneyline POR Trail Blazers / Moneyline POR Trail Blazers NO / table bar_chart | Bet
+[2026-11-11 16:30:39 ET] dh_low_holds.py: OK in 24s — LOW-HOLDS: NBA OKC Thunder POR Trail Blazers Today 10:15 PM / table / Spread POR Trail Blazers +1.5 / Alt Spread OKC Thunder -1.5 / table bar_chart | Bet365 | P
+[2026-11-11 16:32:02 ET] dh_game_middles.py: OK in 83s — GAME MIDDLE: NBA OKC Thunder POR Trail Blazers Today 10:15 PM / table / Spread POR Trail Blazers +1.5 / Alt Spread OKC Thunder -0.5 / table | Bet365 | Bally Bet
+[2026-11-11 16:35:20 ET] dh_basketball_key_middles.py: OK in 198s — basketball-key-middles: no new basketball middles.
+[2026-11-11 16:35:26 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 16:36:50 ET] dh_sog_middles.py: OK in 83s — - 0 deliverables this run
+[2026-11-11 16:36:51 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 16:36:52 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 16:36:53 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 16:36:54 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 16:36:56 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 406 total tallied.
+[2026-11-11 16:36:56 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 16:36:58 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
