@@ -5324,3 +5324,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 23:43:55 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 23:43:56 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-10 23:45:18 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (64 with odds), db total 215224 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 23:55:50 ET] sync_to_github.py: FAILED (exit 1) in 512s —   FAILED: pc-data/transcripts/audio-test.txt (HTTP 409: {'error': '{"message":"is at b7f7347dbacd92a6ab3ee1d6316611aa3cddf391 but expected 94d623b04b0aad442e06c
+[2026-11-10 23:56:23 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (64 with odds), db total 215451 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 23:57:48 ET] dh_arbitrage.py: OK in 85s — ARBITRAGE: NFL JAX Jaguars TEN Titans Nov-15 1:00 PM / table / Receptions T. Pollard Under 2.5 / Alt Receptions T. Pollard 3+ / table | Bet365 | DraftKings
+[2026-11-10 23:58:59 ET] dh_kalshi_poly_arb.py: OK in 71s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 23:59:42 ET] dh_low_holds.py: OK in 43s — LOW-HOLDS: NCAAB Santa Clara North Texas Nov-11 8:00 PM / table / Spread North Texas +3 / Alt Spread Santa Clara -3 / table | Caesars | Bet365
+[2026-11-11 00:03:07 ET] dh_key_number_middles.py: OK in 205s — KEY-NUMBER MIDDLE (key 17): NCAAB UTSA Seattle U Today 10:00 PM / table / Spread UTSA +17.5 / Alt Spread Seattle U -16 / table | theScore | Bet365 — -115 $1,000
+[2026-11-11 00:03:12 ET] rlm.py: OK in 5s
+[2026-11-11 00:03:16 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
