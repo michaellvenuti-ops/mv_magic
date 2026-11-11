@@ -5167,3 +5167,18 @@
 [2026-11-10 19:43:27 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-10 19:51:48 ET] sync_to_github.py: FAILED (exit 1) in 501s —   FAILED: prop-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at bf75f6a5fc2233b22d11dc31e2b6195e526adc7e but expected ea68c7e934f8a6985a90150ee4af5
 [2026-11-10 19:53:53 ET] odds_recorder.py: OK in 94s — SUMMARY: recorded 227 events (97 with odds), db total 210911 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 20:02:08 ET] sync_to_github.py: OK in 495s —   ok: steam-side-board-pc.html
+[2026-11-10 20:02:13 ET] notify.py: OK in 5s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 20:02:49 ET] odds_recorder.py: OK in 6s — SUMMARY: recorded 227 events (93 with odds), db total 211138 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 20:04:35 ET] dh_game_middles.py: OK in 106s — GAME MIDDLE: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +4.5 / Alt Spread West Virginia -4 / table | DraftKings | BetRivers — window 
+[2026-11-10 20:08:23 ET] dh_key_number_middles.py: OK in 228s — key-number-middles: no new key middles.
+[2026-11-10 20:08:29 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-10 20:10:09 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Rec + Rush Yards J. Price Under 60.5 / Rec + Rush Yards J. Price 60+ / table | FanDuel 
+[2026-11-10 20:11:34 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 227 events (85 with odds), db total 211365 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 20:12:52 ET] hung_number.py: OK in 78s — No new hung numbers (14 current flags).
+[2026-11-10 20:14:14 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-10 20:17:41 ET] dh_basketball_key_middles.py: OK in 207s — BASKETBALL MIDDLE (NCAAB spread, modeled 10.8%): NCAAB Bucknell 6 Virginia Today 9:00 PM / table / Spread Virginia -37.5 / Alt Spread Bucknell +38 / table | Bal
+[2026-11-10 20:19:13 ET] dh_sog_middles.py: OK in 92s — - 0 deliverables this run
+[2026-11-10 20:20:03 ET] dh_team_total_middles.py: OK in 51s
+[2026-11-10 20:20:05 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 20:20:08 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
