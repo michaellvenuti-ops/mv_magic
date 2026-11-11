@@ -5630,3 +5630,11 @@
 [2026-11-11 11:16:47 ET] nhl_first_goal.py: OK in 52s — nhl-first-goal: 284 new, 0 unverified, 284 total tallied.
 [2026-11-11 11:16:49 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 11:20:24 ET] costco_gold.py: OK in 216s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-11 11:31:03 ET] sync_to_github.py: FAILED (exit 1) in 639s —   FAILED: pc-data/rlm-2026-11-10.md (HTTP 409: {'error': '{"message":"is at d4c8f5952eacec42be287603b18d6568fdfa6a54 but expected 42b4eb6087daeda710728c9ae4721e
+[2026-11-11 11:32:28 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 227 events (141 with odds), db total 227885 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 11:33:13 ET] dh_arbitrage.py: OK in 46s — arbitrage: no new qualifying pairs (silent).
+[2026-11-11 11:33:16 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Sacramento St. Central Michigan Today 7:30 PM — Spread — Central Michigan -18.5 theScore +115 ($84) / Sacramento St. +23.5 Bally Bet -180 ($116
+[2026-11-11 11:34:48 ET] dh_game_middles.py: OK in 93s — GAME MIDDLE: NCAAB North Carolina A&T East Carolina Today 4:00 PM / table / Alt Total Under 157.5 / Alt Total Over 156.5 / table | HardRock | Bet365 — window 32
+[2026-11-11 11:38:16 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
+[2026-11-11 11:38:21 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 11:39:52 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE : NCAAB Arkansas-Pine Bluff 9 UCLA Today 9:00 PM / table / Alt Spread UCLA -40.5 / Alt Spread Arkansas-Pine Bluff +41.5 / table | Caesars | BetParx 
