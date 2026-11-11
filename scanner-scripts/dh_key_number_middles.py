@@ -22,6 +22,16 @@ wins, the other pushes — the live scan records those, e.g. -9/+10 ->
 margins [9, 10]). The middle qualifies only if that set intersects
 KEY_NUMBERS.
 
+SCOPE — FOOTBALL ONLY (Michael's ruling, Nov 11, 2026): the key
+set is derived from FOOTBALL margins. This scan originally read
+the all-sports finder with no league gate and happily banked
+NCAAB/NBA middles labeled with football keys (the Nov 10-11 night
+runs were nearly all basketball) — wrong: basketball has no such
+keys and has its OWN scan (dh_basketball_key_middles.py, modeled
+cluster + Spanky tiers). Rows now qualify only when the row
+identity's first token is NFL or NCAAF; every other league is
+excluded, fail-closed when the league cannot be read.
+
 Other rules: width minimum 1; both legs -170 cap applied MANUALLY on
 parsed results; clean tier = both sides -140-or-better; collect from
 BOTH the Full-Time and Full-Time+ segments when the segment control
@@ -111,7 +121,25 @@ def key_hit(mid):
     return (hits[0], margins) if hits else (None, margins)
 
 
+FOOTBALL_LEAGUES = ("NFL", "NCAAF")
+BASKETBALL_LEAGUES = ("NBA", "NCAAB")
+
+
+def row_league(mid):
+    """League token from the row identity's first word (the
+    basketball scan's classify() reads the same field). None when
+    the identity carries no league token."""
+    ident = stable_row_identity(mid.get("cells")) or ""
+    if not ident:
+        ident = (mid["leg1"].get("side", "") + " "
+                 + mid["leg2"].get("side", ""))
+    head = ident.split(" ", 1)[0].strip().upper() if ident else ""
+    return head or None
+
+
 def qualifies(mid):
+    if row_league(mid) not in FOOTBALL_LEAGUES:
+        return False        # football-only rule (Nov 11, 2026)
     lines = recovered_lines(mid)
     if lines is None or abs(lines[1] - lines[0]) < MIN_WINDOW:
         return False
@@ -173,8 +201,11 @@ def main():
             return 2
         deliverables = []
         lines = [f"## {now_stamp()} — key-number-middles (data-based "
-                 f"key set 3/7/6/4/10/14/17): {len(full)} + "
-                 f"{len(smaller)} rows parsed, qualifying only below"]
+                 f"key set 3/7/6/4/10/14/17; NFL/NCAAF only): "
+                 f"{len(full)} + {len(smaller)} rows parsed, "
+                 f"qualifying only below"]
+        _hoops = sum(1 for m in full + smaller
+                     if row_league(m) in BASKETBALL_LEAGUES)
         for mid in full + smaller:
             if not qualifies(mid):
                 continue
@@ -239,6 +270,8 @@ def main():
                   f"— {e['leg1']} / {e['leg2']}")
         if not deliverables:
             print("key-number-middles: no new key middles.")
+        print(f"key-number-middles: {_hoops} basketball rows "
+              f"excluded (football-only rule).")
         return 0
     finally:
         ctx.close()
