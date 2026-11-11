@@ -5817,3 +5817,19 @@
 [2026-11-11 16:58:45 ET] hung_number.py: OK in 75s — No new hung numbers (16 current flags).
 [2026-11-11 16:58:50 ET] rlm.py: OK in 5s
 [2026-11-11 16:58:54 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 17:10:04 ET] sync_to_github.py: OK in 670s —   ok: wide-builds-board-pc.html
+[2026-11-11 17:11:26 ET] notify.py: OK in 82s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 17:12:00 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 227 events (134 with odds), db total 232652 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 17:12:38 ET] dh_arbitrage.py: OK in 38s — ARBITRAGE: NCAAB Charleston Temple Today 6:30 PM / table / Alt Spread Charleston +3.5 / Alt Spread Temple -3.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-11 17:13:59 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NCAAF 15 USC 6 Indiana Nov-14 3:30 PM / table / Alt Spread Indiana -9 / Alt Spread USC +9.5 / table | Bally Bet | theScore — window 219.0 :: -114 $
+[2026-11-11 17:17:26 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-11 17:17:33 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 17:18:55 ET] dh_sog_middles.py: OK in 82s — - 0 deliverables this run
+[2026-11-11 17:18:56 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 17:18:57 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 17:18:58 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 17:18:59 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 17:19:03 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 1 new, 4 unverified, 407 total tallied.
+[2026-11-11 17:19:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 17:19:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-11 17:20:34 ET] odds_recorder.py: OK in 59s — SUMMARY: recorded 227 events (134 with odds), db total 232879 snapshots / 844 events, feeds ok 6 fail 0
