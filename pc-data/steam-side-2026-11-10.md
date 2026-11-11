@@ -31,3 +31,6 @@ NEW FLAG: FBS San Jose State @ Air Force | 2026-11-10 — Fanatics still dealing
 ## 2026-11-10T18:13:54-05:00 — 67 games, 0 steam events, 0 NEW flags
 ## 2026-11-10T18:49:38-05:00 — 67 games, 1 steam events, 1 NEW flags
 NEW FLAG: FBS Kent State @ Bowling Green | 2026-11-10 — Kalshi still dealing spread -4.5 on Kent State (pre-move median -4.5, now -3.5)
+## 2026-11-10T19:27:09-05:00 — 67 games, 1 steam events, 2 NEW flags, 1 started games skipped
+NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — DraftKings still dealing spread 15.5 on Akron (pre-move median 15.5, now 14.5)
+NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — Kalshi still dealing total 50.5 on Under (pre-move median 50.5, now 44.5)
