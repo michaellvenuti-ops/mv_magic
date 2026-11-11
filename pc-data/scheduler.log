@@ -5556,3 +5556,21 @@
 [2026-11-11 08:56:43 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 08:56:51 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-11.json (5 markets).
 [2026-11-11 08:57:55 ET] yahoo_brief.py: OK in 64s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-11 09:07:40 ET] sync_to_github.py: FAILED (exit 1) in 585s —   FAILED: pc-data/game-middles-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 66a99af4d1014b8ff319f1473cd71e8918a5708d but expected 1552b32429eb27dc0323e
+[2026-11-11 09:09:07 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 226 events (78 with odds), db total 225847 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 09:12:40 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 678 basketball rows excluded (football-only rule).
+[2026-11-11 09:25:41 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-11 09:26:39 ET] odds_recorder.py: OK in 58s — SUMMARY: recorded 226 events (78 with odds), db total 226073 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 09:27:58 ET] dh_kalshi_poly_arb.py: OK in 80s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 09:28:01 ET] wide_builds.py: OK in 3s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-11.md)
+[2026-11-11 09:29:09 ET] dh_low_holds.py: OK in 68s — LOW-HOLDS: NBA ORL Magic UTA Jazz Today 9:15 PM / table / Total Over 215 / Alt Total Under 215 / table | Caesars | Bet365
+[2026-11-11 09:31:07 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NBA BKN Nets NO Pelicans Today 8:15 PM / table / 1st Half Alt Total Over 113.5 / 1st Half Alt Total Under 114.5 / table | Bally Bet | BetMGM — wind
+[2026-11-11 09:34:40 ET] dh_basketball_key_middles.py: OK in 213s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Pennsylvania Navy Today 5:30 PM / table / Total Over 145.5 / Alt Total Under 148 / table | FanDuel | Bet
+[2026-11-11 09:35:53 ET] hung_number.py: OK in 73s — HUNG NUMBER: Buffalo vs Ball State — Fanatics moneyline Ball State value Ball State (99.0 vs median 49.5)
+[2026-11-11 09:35:58 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 09:37:31 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NCAAB Campbell East Tennessee St. Today 7:00 PM / table / Alt Total Over 144.5 / Alt Total Under 145 / table | Bally Bet | Bet365 — window 1
+[2026-11-11 09:37:37 ET] nba_overs_grade_run.py: OK in 5s — }
+[2026-11-11 09:37:39 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 2-2-0, $-8.71 (inverse money only where an opposite price was recorded)
+[2026-11-11 09:37:40 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-11 09:37:55 ET] half_percent.py: OK in 15s — half-percent: PICK REZI ref $20.81 target $20.91 stop $20.71
+[2026-11-11 09:37:58 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
