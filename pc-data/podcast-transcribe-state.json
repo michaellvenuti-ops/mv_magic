@@ -261,7 +261,7 @@
    "date": "2026-11-10",
    "queued_at": "2026-11-11T01:04:30.854702-05:00",
    "show": "Follow the Money",
-   "status": "queued",
+   "status": "transcribing",
    "stem": "follow-the-money-2026-11-10-hour-1",
    "title": "Follow the Money | November 10, 2026 | Hour 1",
    "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/7d82b6fa-85dc-43ef-bb89-41f904f97909/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=7d82b6fa-85dc-43ef-bb89-41f904f97909&feed=iXBZFZCf"
@@ -319,12 +319,16 @@
   },
   "Prop Points|2026-11-09|Prop Points |  November 9, 2026": {
    "date": "2026-11-09",
+   "done_at": "2026-11-11T03:47:05.308150-05:00",
    "queued_at": "2026-11-10T06:38:22.061578-05:00",
    "show": "Prop Points",
-   "status": "transcribing",
+   "status": "done",
    "stem": "prop-points-2026-11-09",
    "title": "Prop Points |  November 9, 2026",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/1f456e25-6964-4147-8b45-b680ee69ca10/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=1f456e25-6964-4147-8b45-b680ee69ca10&feed=iXBZFZCf"
+   "transcript": "transcripts/prop-points-2026-11-09.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/1f456e25-6964-4147-8b45-b680ee69ca10/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=1f456e25-6964-4147-8b45-b680ee69ca10&feed=iXBZFZCf",
+   "wall_s": 8918,
+   "words": 8375
   },
   "Prop Points|2026-11-10|Prop Points | November 10, 2026": {
    "date": "2026-11-10",
@@ -502,7 +506,7 @@
   }
  },
  "worker": {
-  "current": "Prop Points|2026-11-09|Prop Points |  November 9, 2026",
-  "heartbeat": "2026-11-11T01:18:27.403797-05:00"
+  "current": "Follow the Money|2026-11-10|Follow the Money | November 10, 2026 | Hour 1",
+  "heartbeat": "2026-11-11T03:47:11.075942-05:00"
  }
 }
