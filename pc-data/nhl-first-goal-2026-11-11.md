@@ -1,0 +1,285 @@
+## 2026-11-11T11:16:47-05:00 -- NHL FIRST GOAL (PC): 284 new final(s) tallied; season 284 games through 2026-11-10
+- 2026-10-01: Buffalo Sabres @ Columbus Blue Jackets — first goal: Buffalo Sabres (EV, Mattias Samuelsson, 12:39 in); lead changes 1; final 3-6
+- 2026-10-01: Philadelphia Flyers @ New Jersey Devils — first goal: Philadelphia Flyers (EV, Rasmus Ristolainen, 8:48 in); lead changes 1; final 2-3
+- 2026-10-01: Tampa Bay Lightning @ New York Rangers — first goal: New York Rangers (PP, Mika Zibanejad, 14:26 in); lead changes 0; final 1-5
+- 2026-10-01: Minnesota Wild @ Nashville Predators — first goal: Minnesota Wild (EV, Nick Foligno, 10:25 in); lead changes 0; final 3-1
+- 2026-10-01: Seattle Kraken @ Calgary Flames — first goal: Seattle Kraken (PP, Jordan Eberle, 10:50 in); lead changes 0; final 6-1
+- 2026-10-01: Chicago Blackhawks @ Utah Mammoth — first goal: Utah Mammoth (PP, Dylan Guenther, 3:19 in); lead changes 0; final 0-6
+- 2026-10-01: Florida Panthers @ San Jose Sharks — first goal: San Jose Sharks (EV, Mason Marchment, 5:40 in); lead changes 0; final 3-4
+- 2026-10-01: Edmonton Oilers @ Vancouver Canucks — first goal: Edmonton Oilers (PP, Vasily Podkolzin, 10:34 in); lead changes 0; final 9-7
+- 2026-10-02: New York Rangers @ Detroit Red Wings — first goal: New York Rangers (PP, Sean Durzi, 14:48 in); lead changes 0; final 2-0
+- 2026-10-02: Washington Capitals @ Carolina Hurricanes — first goal: Washington Capitals (EV, Alex Tuch, 13:27 in); lead changes 0; final 5-2
+- 2026-10-02: Boston Bruins @ Winnipeg Jets — first goal: Winnipeg Jets (EV, Dylan DeMelo, 15:08 in); lead changes 3; final 4-3
+- 2026-10-02: St. Louis Blues @ Dallas Stars — first goal: St. Louis Blues (EV, Mason McTavish, 18:26 in); lead changes 0; final 4-0
+- 2026-10-02: Anaheim Ducks @ Vegas Golden Knights — first goal: Anaheim Ducks (EV, Beckett Sennecke, 0:08 in); lead changes 0; final 4-3
+- 2026-10-03: Chicago Blackhawks @ Buffalo Sabres — first goal: Chicago Blackhawks (EV, Ryan Donato, 12:01 in); lead changes 1; final 3-4
+- 2026-10-03: Montreal Canadiens @ Pittsburgh Penguins — first goal: Montreal Canadiens (EV, Cole Caufield, 16:11 in); lead changes 1; final 5-6
+- 2026-10-03: Washington Capitals @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (EV, Charle-Edouard D'Astous, 17:34 in); lead changes 0; final 1-3
+- 2026-10-03: Ottawa Senators @ Toronto Maple Leafs — first goal: Ottawa Senators (EV, Thomas Chabot, 1:09 in); lead changes 2; final 3-2
+- 2026-10-03: Carolina Hurricanes @ Philadelphia Flyers — first goal: Carolina Hurricanes (EV, Sebastian Aho, 19:50 in); lead changes 2; final 3-2
+- 2026-10-03: Utah Mammoth @ Columbus Blue Jackets — first goal: Utah Mammoth (PP, Mikhail Sergachev, 8:05 in); lead changes 0; final 4-1
+- 2026-10-03: Seattle Kraken @ Edmonton Oilers — first goal: Edmonton Oilers (EV, Owen Michaels, 17:09 in); lead changes 0; final 1-3
+- 2026-10-03: New Jersey Devils @ New York Islanders — first goal: New York Islanders (EV, Simon Holmstrom, 36:28 in); lead changes 0; final 0-6
+- 2026-10-03: Boston Bruins @ Minnesota Wild — first goal: Boston Bruins (EV, Tanner Jeannot, 18:07 in); lead changes 1; final 1-4
+- 2026-10-03: Dallas Stars @ Nashville Predators — first goal: Dallas Stars (EV, Miro Heiskanen, 19:13 in); lead changes 1; final 1-2
+- 2026-10-03: St. Louis Blues @ Colorado Avalanche — first goal: Colorado Avalanche (EV, Cale Makar, 15:51 in); lead changes 0; final 1-6
+- 2026-10-03: Calgary Flames @ Vancouver Canucks — first goal: Calgary Flames (PP, Matt Coronato, 5:09 in); lead changes 1; final 1-4
+- 2026-10-03: Los Angeles Kings @ San Jose Sharks — first goal: Los Angeles Kings (PP, Adrian Kempe, 4:10 in); lead changes 1; final 4-5
+- 2026-10-04: Winnipeg Jets @ Detroit Red Wings — first goal: Winnipeg Jets (PP, Cole Perfetti, 6:56 in); lead changes 0; final 3-2
+- 2026-10-04: Utah Mammoth @ New York Rangers — first goal: New York Rangers (EV, Vladislav Gavrikov, 2:42 in); lead changes 0; final 2-4
+- 2026-10-04: Florida Panthers @ Anaheim Ducks — first goal: Anaheim Ducks (PP, Cutter Gauthier, 3:42 in); lead changes 0; final 2-3
+- 2026-10-04: Calgary Flames @ Seattle Kraken — first goal: Seattle Kraken (EV, Berkly Catton, 17:38 in); lead changes 0; final 1-6
+- 2026-10-04: Vegas Golden Knights @ Vancouver Canucks — first goal: Vancouver Canucks (PP, Paul Cotter, 1:08 in); lead changes 1; final 3-2
+- 2026-10-05: Philadelphia Flyers @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (EV, Brayden Point, 3:55 in); lead changes 0; final 1-4
+- 2026-10-05: Ottawa Senators @ Boston Bruins — first goal: Ottawa Senators (SH, Tim Stutzle, 12:21 in); lead changes 0; final 4-1
+- 2026-10-05: Winnipeg Jets @ Pittsburgh Penguins — first goal: Pittsburgh Penguins (EV, Ben Kindel, 30:33 in); lead changes 1; final 3-2
+- 2026-10-05: San Jose Sharks @ Dallas Stars — first goal: Dallas Stars (EV, Miro Heiskanen, 1:09 in); lead changes 0; final 0-5
+- 2026-10-06: Carolina Hurricanes @ Montreal Canadiens — first goal: Carolina Hurricanes (EV, Taylor Hall, 17:35 in); lead changes 2; final 6-4
+- 2026-10-06: Nashville Predators @ Toronto Maple Leafs — first goal: Nashville Predators (PP, Steven Stamkos, 12:47 in); lead changes 1; final 4-5
+- 2026-10-06: Ottawa Senators @ Detroit Red Wings — first goal: Ottawa Senators (EV, Tim Stutzle, 17:16 in); lead changes 1; final 3-5
+- 2026-10-06: Utah Mammoth @ New Jersey Devils — first goal: Utah Mammoth (PP, Clayton Keller, 18:03 in); lead changes 0; final 5-3
+- 2026-10-06: Minnesota Wild @ Buffalo Sabres — first goal: Minnesota Wild (PP, Danila Yurov, 26:07 in); lead changes 1; final 2-3
+- 2026-10-06: New York Islanders @ New York Rangers — first goal: New York Rangers (EV, Oliver Bjorkstrand, 13:20 in); lead changes 0; final 2-5
+- 2026-10-06: St. Louis Blues @ Chicago Blackhawks — first goal: St. Louis Blues (EV, Mason McTavish, 4:22 in); lead changes 1; final 2-4
+- 2026-10-06: Vegas Golden Knights @ Seattle Kraken — first goal: Vegas Golden Knights (EV, Victor Olofsson, 6:58 in); lead changes 0; final 6-2
+- 2026-10-06: Florida Panthers @ Los Angeles Kings — first goal: Los Angeles Kings (EV, Alex Laferriere, 1:00 in); lead changes 1; final 2-1
+- 2026-10-07: Pittsburgh Penguins @ Washington Capitals — first goal: Washington Capitals (EV, Anthony Beauvillier, 19:37 in); lead changes 0; final 3-5
+- 2026-10-07: Colorado Avalanche @ Winnipeg Jets — first goal: Colorado Avalanche (EV, Jaden Schwartz, 37:09 in); lead changes 1; final 2-3
+- 2026-10-07: Edmonton Oilers @ Anaheim Ducks — first goal: Anaheim Ducks (PP, Beckett Sennecke, 15:49 in); lead changes 1; final 5-2
+- 2026-10-08: Philadelphia Flyers @ Ottawa Senators — first goal: Ottawa Senators (EV, Nick Cousins, 9:46 in); lead changes 0; final 1-2
+- 2026-10-08: Utah Mammoth @ Boston Bruins — first goal: Boston Bruins (EV, Casey Mittelstadt, 9:54 in); lead changes 0; final 1-6
+- 2026-10-08: Dallas Stars @ Buffalo Sabres — first goal: Dallas Stars (EV, Jason Robertson, 10:57 in); lead changes 0; final 4-0
+- 2026-10-08: Nashville Predators @ Montreal Canadiens — first goal: Montreal Canadiens (EV, Nick Suzuki, 36:48 in); lead changes 1; final 5-2
+- 2026-10-08: Minnesota Wild @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (EV, Anthony Cirelli, 14:34 in); lead changes 0; final 2-3
+- 2026-10-08: Vancouver Canucks @ Carolina Hurricanes — first goal: Carolina Hurricanes (EV, K'Andre Miller, 18:42 in); lead changes 0; final 2-7
+- 2026-10-08: Chicago Blackhawks @ New York Islanders — first goal: New York Islanders (PP, Bo Horvat, 0:59 in); lead changes 0; final 1-4
+- 2026-10-08: San Jose Sharks @ St. Louis Blues — first goal: St. Louis Blues (EV, Connor McMichael, 16:08 in); lead changes 1; final 3-2
+- 2026-10-08: Colorado Avalanche @ Calgary Flames — first goal: Colorado Avalanche (EV, Devon Toews, 4:06 in); lead changes 0; final 7-3
+- 2026-10-08: Toronto Maple Leafs @ Vegas Golden Knights — first goal: Toronto Maple Leafs (EV, Jack Roslovic, 19:26 in); lead changes 0; final 3-4 (SO)
+- 2026-10-09: Seattle Kraken @ Detroit Red Wings — first goal: Detroit Red Wings (PP, Viktor Arvidsson, 10:41 in); lead changes 1; final 6-3
+- 2026-10-09: New York Rangers @ Washington Capitals — first goal: New York Rangers (PP, Alexis Lafreniere, 9:43 in); lead changes 1; final 1-3
+- 2026-10-09: Pittsburgh Penguins @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Damon Severson, 9:08 in); lead changes 0; final 2-3 (SO)
+- 2026-10-09: Anaheim Ducks @ Winnipeg Jets — first goal: Anaheim Ducks (EV, Judd Caulfield, 5:19 in); lead changes 0; final 5-1
+- 2026-10-10: Philadelphia Flyers @ Boston Bruins — first goal: Boston Bruins (EV, Pavel Zacha, 7:39 in); lead changes 0; final 1-5
+- 2026-10-10: Vancouver Canucks @ New Jersey Devils — first goal: Vancouver Canucks (PP, Linus Karlsson, 14:33 in); lead changes 1; final 1-4
+- 2026-10-10: Edmonton Oilers @ San Jose Sharks — first goal: Edmonton Oilers (EV, Mattias Ekholm, 7:23 in); lead changes 0; final 3-1
+- 2026-10-10: Minnesota Wild @ Florida Panthers — first goal: Minnesota Wild (EV, Matt Boldy, 19:07 in); lead changes 0; final 4-1
+- 2026-10-10: Utah Mammoth @ Buffalo Sabres — first goal: Buffalo Sabres (PP, Tage Thompson, 12:00 in); lead changes 1; final 4-1
+- 2026-10-10: Detroit Red Wings @ Montreal Canadiens — no goal through OT; shootout final 0-1
+- 2026-10-10: Nashville Predators @ Ottawa Senators — first goal: Nashville Predators (EV, Ross Colton, 11:10 in); lead changes 0; final 2-3 (SO)
+- 2026-10-10: Dallas Stars @ Pittsburgh Penguins — first goal: Pittsburgh Penguins (EV, Connor Dewar, 58:03 in); lead changes 0; final 1-2 (SO)
+- 2026-10-10: Carolina Hurricanes @ Chicago Blackhawks — first goal: Carolina Hurricanes (EV, Mark Jankowski, 0:57 in); lead changes 0; final 5-2
+- 2026-10-10: Columbus Blue Jackets @ St. Louis Blues — first goal: Columbus Blue Jackets (EV, Valeri Nichushkin, 3:50 in); lead changes 1; final 3-5
+- 2026-10-10: Toronto Maple Leafs @ Colorado Avalanche — first goal: Toronto Maple Leafs (EV, Nick Blankenburg, 16:57 in); lead changes 2; final 6-3
+- 2026-10-10: Tampa Bay Lightning @ New York Islanders — first goal: Tampa Bay Lightning (EV, Jake Guentzel, 14:15 in); lead changes 0; final 5-3
+- 2026-10-10: Anaheim Ducks @ Calgary Flames — first goal: Anaheim Ducks (PP, Jackson LaCombe, 9:58 in); lead changes 0; final 4-2
+- 2026-10-10: Los Angeles Kings @ Vegas Golden Knights — first goal: Vegas Golden Knights (PP, Trevor Connelly, 37:23 in); lead changes 0; final 1-2
+- 2026-10-11: Seattle Kraken @ Washington Capitals — first goal: Seattle Kraken (EV, Kaapo Kakko, 13:54 in); lead changes 2; final 5-3
+- 2026-10-11: Vancouver Canucks @ New York Rangers — first goal: New York Rangers (EV, Tye Kartye, 19:33 in); lead changes 0; final 2-6
+- 2026-10-11: Carolina Hurricanes @ Philadelphia Flyers — first goal: Carolina Hurricanes (EV, Andrei Svechnikov, 29:44 in); lead changes 0; final 4-1
+- 2026-10-12: Florida Panthers @ Buffalo Sabres — first goal: Buffalo Sabres (EV, Josh Doan, 14:02 in); lead changes 0; final 3-5
+- 2026-10-12: Ottawa Senators @ New Jersey Devils — first goal: Ottawa Senators (EV, Shane Pinto, 39:51 in); lead changes 0; final 4-1
+- 2026-10-12: Vegas Golden Knights @ Minnesota Wild — first goal: Minnesota Wild (EV, Matt Boldy, 8:10 in); lead changes 0; final 2-4
+- 2026-10-13: New Jersey Devils @ Detroit Red Wings — first goal: New Jersey Devils (EV, Evan Rodrigues, 13:53 in); lead changes 2; final 5-4
+- 2026-10-13: Florida Panthers @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Kent Johnson, 5:49 in); lead changes 1; final 7-3
+- 2026-10-13: Buffalo Sabres @ Montreal Canadiens — first goal: Buffalo Sabres (EV, Olen Zellweger, 17:44 in); lead changes 1; final 3-4 (SO)
+- 2026-10-13: Washington Capitals @ Carolina Hurricanes — first goal: Washington Capitals (EV, Boone Jenner, 10:34 in); lead changes 1; final 2-4
+- 2026-10-13: Seattle Kraken @ Philadelphia Flyers — first goal: Seattle Kraken (PP, Bobby McMann, 12:03 in); lead changes 0; final 3-2 (SO)
+- 2026-10-13: Tampa Bay Lightning @ New York Rangers — first goal: New York Rangers (EV, Alexis Lafreniere, 18:58 in); lead changes 0; final 1-4
+- 2026-10-13: St. Louis Blues @ Ottawa Senators — first goal: St. Louis Blues (SH, Pius Suter, 5:32 in); lead changes 0; final 7-2
+- 2026-10-13: Vancouver Canucks @ New York Islanders — first goal: New York Islanders (EV, Kyle Palmieri, 5:03 in); lead changes 0; final 2-3
+- 2026-10-13: Pittsburgh Penguins @ Chicago Blackhawks — first goal: Chicago Blackhawks (EV, Teuvo Teravainen, 19:32 in); lead changes 0; final 3-5
+- 2026-10-13: Minnesota Wild @ Winnipeg Jets — first goal: Winnipeg Jets (EV, Cole Perfetti, 18:10 in); lead changes 0; final 2-5
+- 2026-10-13: Colorado Avalanche @ Dallas Stars — first goal: Colorado Avalanche (EV, Artturi Lehkonen, 8:28 in); lead changes 0; final 3-2
+- 2026-10-13: Vegas Golden Knights @ Nashville Predators — first goal: Nashville Predators (EV, Ryan O'Reilly, 16:05 in); lead changes 1; final 5-2
+- 2026-10-13: Toronto Maple Leafs @ Utah Mammoth — first goal: Utah Mammoth (EV, Daniil But, 5:05 in); lead changes 0; final 4-5
+- 2026-10-13: Calgary Flames @ Anaheim Ducks — first goal: Calgary Flames (EV, Adam Klapka, 11:28 in); lead changes 2; final 4-2
+- 2026-10-13: Edmonton Oilers @ Los Angeles Kings — first goal: Edmonton Oilers (EV, Leon Draisaitl, 12:44 in); lead changes 0; final 4-1
+- 2026-10-13: Boston Bruins @ San Jose Sharks — first goal: Boston Bruins (EV, Fraser Minten, 7:05 in); lead changes 0; final 6-3
+- 2026-10-14: Montreal Canadiens @ Washington Capitals — first goal: Montreal Canadiens (EV, Josh Anderson, 15:31 in); lead changes 1; final 4-5
+- 2026-10-14: Dallas Stars @ Colorado Avalanche — first goal: Colorado Avalanche (EV, Gabriel Landeskog, 35:05 in); lead changes 1; final 3-2 (SO)
+- 2026-10-15: Buffalo Sabres @ Toronto Maple Leafs — first goal: Toronto Maple Leafs (EV, Auston Matthews, 17:36 in); lead changes 1; final 5-4
+- 2026-10-15: New York Islanders @ Ottawa Senators — first goal: New York Islanders (EV, Matias Maccelli, 0:12 in); lead changes 0; final 1-2 (SO)
+- 2026-10-15: Seattle Kraken @ Tampa Bay Lightning — first goal: Seattle Kraken (EV, Ryan Winterton, 14:17 in); lead changes 1; final 3-4
+- 2026-10-15: Vancouver Canucks @ Florida Panthers — first goal: Vancouver Canucks (EV, Liam Ohgren, 12:37 in); lead changes 1; final 2-3
+- 2026-10-15: New York Rangers @ New Jersey Devils — first goal: New Jersey Devils (EV, Evan Rodrigues, 0:30 in); lead changes 0; final 1-7
+- 2026-10-15: Philadelphia Flyers @ Detroit Red Wings — first goal: Philadelphia Flyers (EV, Matvei Michkov, 2:28 in); lead changes 1; final 1-2
+- 2026-10-15: Winnipeg Jets @ Chicago Blackhawks — first goal: Chicago Blackhawks (PP, Connor Bedard, 11:49 in); lead changes 0; final 3-4
+- 2026-10-15: San Jose Sharks @ Nashville Predators — first goal: San Jose Sharks (EV, Mason Marchment, 14:30 in); lead changes 0; final 3-2 (SO)
+- 2026-10-15: St. Louis Blues @ Minnesota Wild — first goal: St. Louis Blues (PP, Jonatan Berggren, 18:15 in); lead changes 1; final 4-5
+- 2026-10-15: Utah Mammoth @ Edmonton Oilers — first goal: Utah Mammoth (PP, Barrett Hayton, 9:22 in); lead changes 0; final 4-2
+- 2026-10-15: Calgary Flames @ Vegas Golden Knights — first goal: Vegas Golden Knights (EV, Brett Howden, 19:35 in); lead changes 0; final 2-6
+- 2026-10-16: Pittsburgh Penguins @ Colorado Avalanche — first goal: Pittsburgh Penguins (EV, Evgeni Malkin, 11:32 in); lead changes 1; final 2-5
+- 2026-10-16: Boston Bruins @ Anaheim Ducks — first goal: Anaheim Ducks (EV, Tim Washe, 0:38 in); lead changes 1; final 4-2
+- 2026-10-17: New Jersey Devils @ Washington Capitals — first goal: New Jersey Devils (EV, Arseny Gritsyuk, 9:56 in); lead changes 1; final 2-4
+- 2026-10-17: Carolina Hurricanes @ Winnipeg Jets — first goal: Winnipeg Jets (EV, Mark Scheifele, 35:37 in); lead changes 1; final 3-2
+- 2026-10-17: Vancouver Canucks @ Tampa Bay Lightning — first goal: Vancouver Canucks (EV, Linus Karlsson, 4:28 in); lead changes 1; final 2-4
+- 2026-10-17: Seattle Kraken @ Florida Panthers — first goal: Florida Panthers (EV, Sam Bennett, 18:55 in); lead changes 0; final 3-8
+- 2026-10-17: New York Islanders @ Toronto Maple Leafs — first goal: New York Islanders (EV, Anthony Duclair, 11:42 in); lead changes 0; final 4-1
+- 2026-10-17: Buffalo Sabres @ Montreal Canadiens — first goal: Buffalo Sabres (EV, Josh Norris, 11:39 in); lead changes 1; final 3-4
+- 2026-10-17: San Jose Sharks @ Detroit Red Wings — first goal: Detroit Red Wings (PP, Justin Faulk, 7:13 in); lead changes 1; final 3-4 (SO)
+- 2026-10-17: Ottawa Senators @ Philadelphia Flyers — first goal: Ottawa Senators (EV, Drake Batherson, 34:05 in); lead changes 1; final 1-3
+- 2026-10-17: New York Rangers @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Kent Johnson, 76:34 in); lead changes 0; final 0-1
+- 2026-10-17: Dallas Stars @ Chicago Blackhawks — first goal: Dallas Stars (PP, Jason Robertson, 35:02 in); lead changes 0; final 4-0
+- 2026-10-17: St. Louis Blues @ Nashville Predators — first goal: St. Louis Blues (EV, Philip Broberg, 13:39 in); lead changes 1; final 2-5
+- 2026-10-17: Boston Bruins @ Los Angeles Kings — first goal: Los Angeles Kings (EV, Alex Laferriere, 19:29 in); lead changes 1; final 4-1
+- 2026-10-17: Edmonton Oilers @ Utah Mammoth — first goal: Edmonton Oilers (EV, Connor McDavid, 19:20 in); lead changes 0; final 6-2
+- 2026-10-17: Pittsburgh Penguins @ Vegas Golden Knights — first goal: Vegas Golden Knights (EV, Rasmus Andersson, 18:54 in); lead changes 0; final 2-6
+- 2026-10-18: Columbus Blue Jackets @ Minnesota Wild — first goal: Minnesota Wild (EV, Danila Yurov, 1:48 in); lead changes 0; final 1-2
+- 2026-10-18: Carolina Hurricanes @ Calgary Flames — first goal: Carolina Hurricanes (EV, Jesperi Kotkaniemi, 33:51 in); lead changes 1; final 2-3
+- 2026-10-19: Anaheim Ducks @ New York Rangers — first goal: New York Rangers (EV, Sean Durzi, 18:42 in); lead changes 0; final 2-5
+- 2026-10-19: Colorado Avalanche @ Philadelphia Flyers — first goal: Philadelphia Flyers (PP, Matvei Michkov, 12:19 in); lead changes 0; final 2-3
+- 2026-10-19: San Jose Sharks @ Toronto Maple Leafs — first goal: San Jose Sharks (EV, Mason Marchment, 6:06 in); lead changes 1; final 1-3
+- 2026-10-19: Pittsburgh Penguins @ Utah Mammoth — first goal: Pittsburgh Penguins (PP, Erik Karlsson, 18:49 in); lead changes 1; final 4-5
+- 2026-10-20: San Jose Sharks @ Montreal Canadiens — first goal: San Jose Sharks (EV, Macklin Celebrini, 6:11 in); lead changes 2; final 4-3
+- 2026-10-20: Colorado Avalanche @ New Jersey Devils — first goal: New Jersey Devils (EV, Luke Evangelista, 13:20 in); lead changes 0; final 3-4
+- 2026-10-20: Anaheim Ducks @ New York Islanders — first goal: New York Islanders (EV, Ondrej Palat, 6:21 in); lead changes 0; final 2-3
+- 2026-10-20: Los Angeles Kings @ Washington Capitals — first goal: Washington Capitals (EV, Ryan Leonard, 10:35 in); lead changes 1; final 5-2
+- 2026-10-20: Toronto Maple Leafs @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Jake Christiansen, 17:22 in); lead changes 1; final 6-2
+- 2026-10-20: Winnipeg Jets @ St. Louis Blues — first goal: St. Louis Blues (EV, Jimmy Snuggerud, 7:30 in); lead changes 0; final 1-2
+- 2026-10-20: Boston Bruins @ Dallas Stars — first goal: Boston Bruins (EV, Matthew Poitras, 17:51 in); lead changes 1; final 2-3
+- 2026-10-20: Minnesota Wild @ Edmonton Oilers — first goal: Minnesota Wild (EV, Joel Eriksson Ek, 16:28 in); lead changes 1; final 3-4
+- 2026-10-20: Detroit Red Wings @ Seattle Kraken — first goal: Seattle Kraken (EV, Mackie Samoskevich, 13:15 in); lead changes 0; final 3-4 (SO)
+- 2026-10-20: Carolina Hurricanes @ Vancouver Canucks — first goal: Carolina Hurricanes (EV, Logan Stankoven, 15:16 in); lead changes 0; final 6-3
+- 2026-10-20: Tampa Bay Lightning @ Vegas Golden Knights — first goal: Tampa Bay Lightning (PP, Brandon Hagel, 15:49 in); lead changes 0; final 6-2
+- 2026-10-21: Philadelphia Flyers @ Buffalo Sabres — first goal: Philadelphia Flyers (EV, Cole Knuble, 5:11 in); lead changes 0; final 3-1
+- 2026-10-21: Florida Panthers @ Ottawa Senators — first goal: Florida Panthers (PP, Brady Tkachuk, 10:00 in); lead changes 1; final 1-5
+- 2026-10-22: Nashville Predators @ Boston Bruins — first goal: Boston Bruins (EV, Casey Mittelstadt, 16:11 in); lead changes 0; final 0-6
+- 2026-10-22: New York Rangers @ Toronto Maple Leafs — first goal: Toronto Maple Leafs (EV, Easton Cowan, 18:24 in); lead changes 2; final 4-5
+- 2026-10-22: San Jose Sharks @ Ottawa Senators — first goal: Ottawa Senators (EV, Tim Stutzle, 13:44 in); lead changes 1; final 6-2
+- 2026-10-22: Anaheim Ducks @ New Jersey Devils — first goal: New Jersey Devils (EV, Arseny Gritsyuk, 15:22 in); lead changes 0; final 1-4
+- 2026-10-22: Florida Panthers @ Pittsburgh Penguins — first goal: Pittsburgh Penguins (EV, Nick Robertson, 4:41 in); lead changes 0; final 0-4
+- 2026-10-22: Los Angeles Kings @ New York Islanders — first goal: Los Angeles Kings (EV, Artemi Panarin, 14:09 in); lead changes 0; final 3-2
+- 2026-10-22: Vegas Golden Knights @ St. Louis Blues — first goal: St. Louis Blues (PP, Pavel Buchnevich, 10:00 in); lead changes 0; final 2-6
+- 2026-10-22: Winnipeg Jets @ Dallas Stars — first goal: Dallas Stars (EV, Wyatt Johnston, 38:43 in); lead changes 2; final 2-3
+- 2026-10-22: Minnesota Wild @ Calgary Flames — first goal: Calgary Flames (PP, Aydar Suniev, 9:11 in); lead changes 0; final 1-2
+- 2026-10-22: Carolina Hurricanes @ Edmonton Oilers — first goal: Edmonton Oilers (PP, Leon Draisaitl, 11:53 in); lead changes 1; final 5-6 (SO)
+- 2026-10-22: Utah Mammoth @ Seattle Kraken — first goal: Seattle Kraken (EV, Jordan Eberle, 16:22 in); lead changes 0; final 3-5
+- 2026-10-22: Detroit Red Wings @ Vancouver Canucks — first goal: Detroit Red Wings (EV, Lucas Raymond, 15:42 in); lead changes 0; final 5-2
+- 2026-10-23: Montreal Canadiens @ Chicago Blackhawks — first goal: Chicago Blackhawks (EV, Connor Bedard, 15:37 in); lead changes 1; final 4-1
+- 2026-10-23: Tampa Bay Lightning @ Colorado Avalanche — first goal: Colorado Avalanche (EV, Devon Toews, 18:52 in); lead changes 0; final 3-6
+- 2026-10-24: Anaheim Ducks @ Philadelphia Flyers — first goal: Philadelphia Flyers (PP, Matvei Michkov, 6:01 in); lead changes 1; final 5-4
+- 2026-10-24: Los Angeles Kings @ New Jersey Devils — first goal: Los Angeles Kings (EV, Scott Laughton, 24:03 in); lead changes 1; final 1-3
+- 2026-10-24: San Jose Sharks @ Boston Bruins — first goal: Boston Bruins (EV, Casey Mittelstadt, 16:52 in); lead changes 2; final 4-6
+- 2026-10-24: New York Rangers @ Ottawa Senators — first goal: Ottawa Senators (EV, Drake Batherson, 14:26 in); lead changes 0; final 4-7
+- 2026-10-24: Nashville Predators @ Pittsburgh Penguins — first goal: Nashville Predators (EV, Steven Stamkos, 10:36 in); lead changes 1; final 2-3
+- 2026-10-24: Buffalo Sabres @ Washington Capitals — first goal: Buffalo Sabres (EV, Jack Quinn, 13:33 in); lead changes 1; final 3-4
+- 2026-10-24: Vegas Golden Knights @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Denton Mateychuk, 8:09 in); lead changes 0; final 1-2
+- 2026-10-24: Carolina Hurricanes @ St. Louis Blues — first goal: Carolina Hurricanes (EV, Sean Walker, 35:15 in); lead changes 0; final 4-0
+- 2026-10-24: Toronto Maple Leafs @ Edmonton Oilers — first goal: Toronto Maple Leafs (EV, Jack Roslovic, 5:44 in); lead changes 0; final 7-2
+- 2026-10-24: Tampa Bay Lightning @ Utah Mammoth — first goal: Tampa Bay Lightning (EV, Jake Guentzel, 14:50 in); lead changes 1; final 4-5
+- 2026-10-24: Detroit Red Wings @ Calgary Flames — first goal: Calgary Flames (EV, Joel Farabee, 2:10 in); lead changes 0; final 1-4
+- 2026-10-24: Minnesota Wild @ Seattle Kraken — first goal: Minnesota Wild (EV, Kirill Kaprizov, 19:34 in); lead changes 0; final 5-1
+- 2026-10-25: Florida Panthers @ Chicago Blackhawks — first goal: Chicago Blackhawks (EV, Ryan Greene, 17:26 in); lead changes 1; final 3-2
+- 2026-10-25: New York Islanders @ Dallas Stars — first goal: Dallas Stars (EV, Tyler Seguin, 8:29 in); lead changes 0; final 3-6
+- 2026-10-25: Montreal Canadiens @ Winnipeg Jets — first goal: Montreal Canadiens (EV, Lane Hutson, 32:41 in); lead changes 0; final 2-1
+- 2026-10-25: Colorado Avalanche @ Nashville Predators — first goal: Nashville Predators (PP, Filip Forsberg, 15:59 in); lead changes 0; final 2-6
+- 2026-10-25: Minnesota Wild @ Vancouver Canucks — first goal: Minnesota Wild (PP, Maxim Shabanov, 1:27 in); lead changes 0; final 4-2
+- 2026-10-26: Los Angeles Kings @ New York Rangers — first goal: Los Angeles Kings (EV, Taylor Ward, 18:45 in); lead changes 0; final 6-3
+- 2026-10-26: Toronto Maple Leafs @ Calgary Flames — first goal: Calgary Flames (EV, Matvei Gridin, 9:55 in); lead changes 0; final 2-5
+- 2026-10-26: Detroit Red Wings @ Edmonton Oilers — first goal: Edmonton Oilers (EV, Vasily Podkolzin, 13:50 in); lead changes 0; final 4-3 (SO)
+- 2026-10-27: Columbus Blue Jackets @ Philadelphia Flyers — first goal: Columbus Blue Jackets (EV, Adam Fantilli, 9:02 in); lead changes 0; final 4-3
+- 2026-10-27: Boston Bruins @ Carolina Hurricanes — first goal: Boston Bruins (PP, Pavel Zacha, 18:29 in); lead changes 1; final 1-2
+- 2026-10-27: Los Angeles Kings @ Chicago Blackhawks — first goal: Los Angeles Kings (EV, Samuel Helenius, 17:29 in); lead changes 1; final 1-2
+- 2026-10-27: Montreal Canadiens @ St. Louis Blues — first goal: Montreal Canadiens (EV, Zack Bolduc, 31:23 in); lead changes 0; final 2-0
+- 2026-10-27: New York Islanders @ Nashville Predators — first goal: New York Islanders (EV, Anthony Duclair, 16:53 in); lead changes 0; final 4-3 (SO)
+- 2026-10-27: New Jersey Devils @ Dallas Stars — first goal: New Jersey Devils (EV, Nico Hischier, 17:19 in); lead changes 0; final 5-1
+- 2026-10-27: Florida Panthers @ Winnipeg Jets — first goal: Florida Panthers (PP, Carter Verhaeghe, 12:33 in); lead changes 0; final 5-1
+- 2026-10-27: Minnesota Wild @ Utah Mammoth — first goal: Minnesota Wild (PP, Joel Eriksson Ek, 24:56 in); lead changes 0; final 3-1
+- 2026-10-27: Ottawa Senators @ Vegas Golden Knights — first goal: Vegas Golden Knights (PP, Braeden Bowman, 20:11 in); lead changes 0; final 1-4
+- 2026-10-27: Vancouver Canucks @ Anaheim Ducks — first goal: Anaheim Ducks (EV, A.J. Greer, 4:08 in); lead changes 1; final 6-5
+- 2026-10-27: Buffalo Sabres @ San Jose Sharks — first goal: Buffalo Sabres (EV, Olen Zellweger, 39:10 in); lead changes 0; final 2-0
+- 2026-10-28: Philadelphia Flyers @ Washington Capitals — first goal: Washington Capitals (EV, Alex Tuch, 18:10 in); lead changes 0; final 2-5
+- 2026-10-28: Calgary Flames @ Edmonton Oilers — first goal: Edmonton Oilers (EV, Mathieu Joseph, 12:14 in); lead changes 0; final 0-4
+- 2026-10-28: New Jersey Devils @ Colorado Avalanche — first goal: New Jersey Devils (SH, Connor Brown, 7:39 in); lead changes 1; final 2-5
+- 2026-10-28: Toronto Maple Leafs @ Seattle Kraken — first goal: Seattle Kraken (EV, Berkly Catton, 18:01 in); lead changes 0; final 4-5
+- 2026-10-29: Winnipeg Jets @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (EV, Brayden Point, 17:40 in); lead changes 0; final 4-6
+- 2026-10-29: Utah Mammoth @ Pittsburgh Penguins — first goal: Utah Mammoth (EV, Logan Cooley, 15:20 in); lead changes 2; final 4-3
+- 2026-10-29: Columbus Blue Jackets @ Carolina Hurricanes — first goal: Carolina Hurricanes (EV, Jordan Martinook, 4:09 in); lead changes 0; final 2-3
+- 2026-10-29: Chicago Blackhawks @ Detroit Red Wings — first goal: Chicago Blackhawks (EV, Connor Bedard, 14:01 in); lead changes 1; final 1-4
+- 2026-10-29: Boston Bruins @ St. Louis Blues — first goal: Boston Bruins (EV, James Hagens, 14:32 in); lead changes 1; final 1-4
+- 2026-10-29: Washington Capitals @ Nashville Predators — first goal: Nashville Predators (PP, Filip Forsberg, 7:12 in); lead changes 1; final 4-3
+- 2026-10-29: Montreal Canadiens @ Dallas Stars — first goal: Montreal Canadiens (EV, Cole Caufield, 12:36 in); lead changes 0; final 5-2
+- 2026-10-29: New York Islanders @ Minnesota Wild — first goal: Minnesota Wild (EV, Joel Eriksson Ek, 19:33 in); lead changes 1; final 4-3
+- 2026-10-29: Buffalo Sabres @ Anaheim Ducks — first goal: Anaheim Ducks (PP, Mikael Granlund, 18:03 in); lead changes 1; final 7-6
+- 2026-10-29: Ottawa Senators @ Los Angeles Kings — first goal: Ottawa Senators (EV, Tyler Kleven, 8:36 in); lead changes 1; final 5-6
+- 2026-10-29: Vancouver Canucks @ San Jose Sharks — first goal: Vancouver Canucks (EV, Drew O'Connor, 6:39 in); lead changes 1; final 2-3
+- 2026-10-30: New Jersey Devils @ Vegas Golden Knights — first goal: New Jersey Devils (EV, Luke Hughes, 14:22 in); lead changes 2; final 5-2
+- 2026-10-30: Winnipeg Jets @ Florida Panthers — first goal: Florida Panthers (PP, Sam Reinhart, 1:45 in); lead changes 0; final 2-5
+- 2026-10-30: Seattle Kraken @ Calgary Flames — first goal: Calgary Flames (PP, Morgan Frost, 17:28 in); lead changes 0; final 2-6
+- 2026-10-31: Chicago Blackhawks @ Boston Bruins — first goal: Chicago Blackhawks (PP, Anton Frondell, 13:56 in); lead changes 1; final 4-5
+- 2026-10-31: St. Louis Blues @ Detroit Red Wings — first goal: St. Louis Blues (EV, Dalibor Dvorsky, 17:31 in); lead changes 2; final 5-4
+- 2026-10-31: Tampa Bay Lightning @ Nashville Predators — first goal: Nashville Predators (EV, Reid Schaefer, 8:46 in); lead changes 1; final 4-5 (SO)
+- 2026-10-31: Edmonton Oilers @ New York Islanders — first goal: Edmonton Oilers (EV, Ryan Nugent-Hopkins, 31:18 in); lead changes 0; final 4-0
+- 2026-10-31: Buffalo Sabres @ Los Angeles Kings — first goal: Buffalo Sabres (PP, Jack Quinn, 13:25 in); lead changes 0; final 3-2
+- 2026-10-31: Ottawa Senators @ San Jose Sharks — first goal: Ottawa Senators (EV, Dylan Cozens, 6:35 in); lead changes 0; final 5-1
+- 2026-10-31: Pittsburgh Penguins @ Montreal Canadiens — first goal: Pittsburgh Penguins (PP, Erik Karlsson, 17:52 in); lead changes 1; final 4-5
+- 2026-10-31: Toronto Maple Leafs @ Vancouver Canucks — first goal: Toronto Maple Leafs (EV, William Nylander, 18:37 in); lead changes 0; final 4-2
+- 2026-10-31: Columbus Blue Jackets @ Dallas Stars — first goal: Dallas Stars (PP, Mikko Rantanen, 17:44 in); lead changes 0; final 1-3
+- 2026-10-31: Calgary Flames @ Colorado Avalanche — first goal: Colorado Avalanche (EV, Nathan MacKinnon, 5:47 in); lead changes 0; final 2-5
+- 2026-11-01: Winnipeg Jets @ Carolina Hurricanes — first goal: Carolina Hurricanes (SH, Sean Walker, 14:44 in); lead changes 0; final 0-7
+- 2026-11-01: Minnesota Wild @ Washington Capitals — first goal: Minnesota Wild (EV, Quinn Hughes, 16:18 in); lead changes 0; final 5-1
+- 2026-11-01: Utah Mammoth @ Philadelphia Flyers — first goal: Philadelphia Flyers (EV, Matvei Michkov, 7:11 in); lead changes 0; final 3-6
+- 2026-11-01: Edmonton Oilers @ New York Rangers — first goal: Edmonton Oilers (EV, Connor McDavid, 19:10 in); lead changes 0; final 4-1
+- 2026-11-01: Ottawa Senators @ Anaheim Ducks — first goal: Ottawa Senators (EV, Philip Tomasino, 14:00 in); lead changes 1; final 3-6
+- 2026-11-02: Vegas Golden Knights @ Boston Bruins — first goal: Boston Bruins (EV, James Hagens, 12:37 in); lead changes 0; final 2-3 (SO)
+- 2026-11-02: Detroit Red Wings @ Florida Panthers — first goal: Detroit Red Wings (EV, Carter Mazur, 14:34 in); lead changes 0; final 5-3
+- 2026-11-02: Colorado Avalanche @ Chicago Blackhawks — first goal: Chicago Blackhawks (EV, Wyatt Kaiser, 19:03 in); lead changes 1; final 5-2
+- 2026-11-02: Calgary Flames @ San Jose Sharks — first goal: Calgary Flames (EV, Adam Klapka, 5:24 in); lead changes 0; final 2-1
+- 2026-11-03: Utah Mammoth @ Toronto Maple Leafs — first goal: Utah Mammoth (PP, Dylan Guenther, 0:13 in); lead changes 0; final 3-2
+- 2026-11-03: Winnipeg Jets @ Montreal Canadiens — first goal: Montreal Canadiens (EV, Owen Beck, 16:55 in); lead changes 1; final 5-4
+- 2026-11-03: Detroit Red Wings @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (PP, Brayden Point, 12:06 in); lead changes 0; final 2-4
+- 2026-11-03: St. Louis Blues @ New York Rangers — first goal: New York Rangers (EV, Adam Fox, 38:11 in); lead changes 0; final 1-3
+- 2026-11-03: Minnesota Wild @ Philadelphia Flyers — first goal: Minnesota Wild (EV, Matt Boldy, 15:54 in); lead changes 0; final 4-2
+- 2026-11-03: Vegas Golden Knights @ Pittsburgh Penguins — first goal: Vegas Golden Knights (PP, Tomas Hertl, 3:24 in); lead changes 2; final 3-2
+- 2026-11-03: Dallas Stars @ Washington Capitals — first goal: Dallas Stars (EV, Joel Kiviranta, 11:04 in); lead changes 0; final 6-5
+- 2026-11-03: Colorado Avalanche @ Columbus Blue Jackets — first goal: Columbus Blue Jackets (EV, Mathieu Olivier, 19:32 in); lead changes 0; final 2-7
+- 2026-11-03: Edmonton Oilers @ New Jersey Devils — first goal: Edmonton Oilers (EV, Evan Bouchard, 11:31 in); lead changes 1; final 3-4 (SO)
+- 2026-11-03: Carolina Hurricanes @ Nashville Predators — first goal: Nashville Predators (EV, Nick Perbix, 7:28 in); lead changes 0; final 1-4
+- 2026-11-03: Anaheim Ducks @ Vancouver Canucks — first goal: Anaheim Ducks (PP, Mikael Granlund, 15:56 in); lead changes 0; final 5-4
+- 2026-11-04: Ottawa Senators @ Buffalo Sabres — first goal: Buffalo Sabres (EV, Peyton Krebs, 26:00 in); lead changes 1; final 2-1
+- 2026-11-04: Chicago Blackhawks @ Florida Panthers — first goal: Florida Panthers (EV, Sandis Vilmanis, 15:17 in); lead changes 0; final 3-5
+- 2026-11-04: San Jose Sharks @ Los Angeles Kings — first goal: Los Angeles Kings (EV, Adrian Kempe, 18:37 in); lead changes 0; final 2-7
+- 2026-11-04: Calgary Flames @ Seattle Kraken — first goal: Calgary Flames (EV, Yegor Sharangovich, 7:15 in); lead changes 1; final 1-2
+- 2026-11-05: Utah Mammoth @ Montreal Canadiens — first goal: Utah Mammoth (EV, Logan Cooley, 18:18 in); lead changes 1; final 4-5
+- 2026-11-05: Vegas Golden Knights @ Detroit Red Wings — first goal: Detroit Red Wings (EV, Anton Johansson, 57:58 in); lead changes 1; final 2-1
+- 2026-11-05: Chicago Blackhawks @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (PP, Victor Hedman, 15:48 in); lead changes 0; final 1-4
+- 2026-11-05: St. Louis Blues @ New Jersey Devils — first goal: New Jersey Devils (EV, Luke Hughes, 12:26 in); lead changes 0; final 4-5
+- 2026-11-05: Carolina Hurricanes @ New York Islanders — first goal: Carolina Hurricanes (EV, Logan Stankoven, 19:03 in); lead changes 0; final 5-3
+- 2026-11-05: Philadelphia Flyers @ New York Rangers — first goal: New York Rangers (EV, Gabe Perreault, 15:21 in); lead changes 2; final 2-3
+- 2026-11-05: Boston Bruins @ Pittsburgh Penguins — first goal: Pittsburgh Penguins (EV, Justin Brazeau, 10:56 in); lead changes 1; final 6-2
+- 2026-11-05: Dallas Stars @ Columbus Blue Jackets — first goal: Dallas Stars (EV, Mikko Rantanen, 53:33 in); lead changes 0; final 1-2 (SO)
+- 2026-11-05: Vancouver Canucks @ Winnipeg Jets — first goal: Winnipeg Jets (PP, Alex Iafallo, 16:11 in); lead changes 0; final 2-6
+- 2026-11-05: Anaheim Ducks @ Edmonton Oilers — first goal: Anaheim Ducks (PP, Cutter Gauthier, 10:34 in); lead changes 2; final 5-4
+- 2026-11-05: Nashville Predators @ Colorado Avalanche — first goal: Nashville Predators (EV, Ross Colton, 15:59 in); lead changes 0; final 3-2
+- 2026-11-06: Columbus Blue Jackets @ Buffalo Sabres — first goal: Buffalo Sabres (EV, Jack Quinn, 13:10 in); lead changes 0; final 2-5
+- 2026-11-06: San Jose Sharks @ Minnesota Wild — first goal: Minnesota Wild (PP, Kirill Kaprizov, 12:05 in); lead changes 0; final 1-4
+- 2026-11-06: Anaheim Ducks @ Calgary Flames — first goal: Calgary Flames (EV, William Stromgren, 17:37 in); lead changes 1; final 5-3
+- 2026-11-07: Florida Panthers @ Washington Capitals — first goal: Washington Capitals (EV, Jack St. Ivany, 17:39 in); lead changes 2; final 3-4
+- 2026-11-07: St. Louis Blues @ Nashville Predators — first goal: St. Louis Blues (PP, Jimmy Snuggerud, 6:53 in); lead changes 1; final 1-3
+- 2026-11-07: New York Rangers @ Seattle Kraken — first goal: New York Rangers (EV, Gabe Perreault, 18:25 in); lead changes 0; final 4-3
+- 2026-11-07: Montreal Canadiens @ Toronto Maple Leafs — first goal: Montreal Canadiens (EV, Alex Newhook, 14:04 in); lead changes 0; final 4-2
+- 2026-11-07: Utah Mammoth @ Ottawa Senators — first goal: Ottawa Senators (PP, Fabian Zetterlund, 14:33 in); lead changes 0; final 2-4
+- 2026-11-07: New Jersey Devils @ New York Islanders — first goal: New York Islanders (EV, Anthony Duclair, 4:54 in); lead changes 1; final 5-4
+- 2026-11-07: Chicago Blackhawks @ Carolina Hurricanes — first goal: Carolina Hurricanes (EV, Seth Jarvis, 18:26 in); lead changes 0; final 2-9
+- 2026-11-07: San Jose Sharks @ Dallas Stars — first goal: San Jose Sharks (EV, Michael Misa, 12:38 in); lead changes 1; final 3-4
+- 2026-11-07: Tampa Bay Lightning @ Minnesota Wild — first goal: Minnesota Wild (EV, Blake Coleman, 19:05 in); lead changes 1; final 4-3
+- 2026-11-07: Detroit Red Wings @ Colorado Avalanche — first goal: Colorado Avalanche (PP, Martin Necas, 30:14 in); lead changes 0; final 0-4
+- 2026-11-07: Pittsburgh Penguins @ Los Angeles Kings — first goal: Pittsburgh Penguins (EV, Tommy Novak, 18:08 in); lead changes 0; final 5-2
+- 2026-11-07: Vancouver Canucks @ Edmonton Oilers — first goal: Edmonton Oilers (EV, Mattias Ekholm, 10:46 in); lead changes 0; final 2-4
+- 2026-11-08: Florida Panthers @ Boston Bruins — first goal: Boston Bruins (EV, Elias Lindholm, 15:10 in); lead changes 0; final 1-4
+- 2026-11-08: Vegas Golden Knights @ Buffalo Sabres — first goal: Vegas Golden Knights (SH, Mitch Marner, 27:43 in); lead changes 0; final 4-1
+- 2026-11-08: Tampa Bay Lightning @ Winnipeg Jets — first goal: Winnipeg Jets (PP, Cole Perfetti, 38:07 in); lead changes 0; final 3-4
+- 2026-11-08: New Jersey Devils @ Toronto Maple Leafs — first goal: New Jersey Devils (EV, Timo Meier, 31:32 in); lead changes 0; final 4-0
+- 2026-11-08: Philadelphia Flyers @ Calgary Flames — first goal: Philadelphia Flyers (EV, Denver Barkey, 7:14 in); lead changes 1; final 3-4
+- 2026-11-08: Pittsburgh Penguins @ Anaheim Ducks — first goal: Anaheim Ducks (PP, Mikael Granlund, 11:34 in); lead changes 0; final 2-5
+- 2026-11-09: New York Rangers @ Edmonton Oilers — first goal: Edmonton Oilers (EV, Connor McDavid, 13:18 in); lead changes 0; final 1-3
+- 2026-11-09: Philadelphia Flyers @ Vancouver Canucks — first goal: Philadelphia Flyers (EV, Michael Bunting, 17:57 in); lead changes 0; final 3-1
+- 2026-11-09: New York Islanders @ San Jose Sharks — first goal: New York Islanders (EV, Ben Hutton, 13:46 in); lead changes 0; final 2-3 (SO)
+- 2026-11-10: Colorado Avalanche @ Toronto Maple Leafs — first goal: Toronto Maple Leafs (EV, Darren Raddysh, 16:27 in); lead changes 1; final 6-3
+- 2026-11-10: Minnesota Wild @ Montreal Canadiens — first goal: Minnesota Wild (EV, Bobby Brink, 57:07 in); lead changes 0; final 2-1
+- 2026-11-10: Washington Capitals @ Ottawa Senators — first goal: Washington Capitals (EV, Matt Roy, 19:25 in); lead changes 2; final 3-2
+- 2026-11-10: New Jersey Devils @ Winnipeg Jets — first goal: Winnipeg Jets (EV, Dawson Mercer, 12:06 in); lead changes 0; final 2-4
+- 2026-11-10: Florida Panthers @ Columbus Blue Jackets — first goal: Florida Panthers (PP, Sam Bennett, 38:00 in); lead changes 0; final 4-1
+- 2026-11-10: Detroit Red Wings @ St. Louis Blues — first goal: Detroit Red Wings (EV, Andrew Copp, 0:13 in); lead changes 1; final 2-3
+- 2026-11-10: Nashville Predators @ Los Angeles Kings — first goal: Nashville Predators (EV, Filip Forsberg, 14:40 in); lead changes 0; final 3-0
