@@ -5246,3 +5246,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 21:04:09 ET] dh_team_total_middles.py: OK in 42s
 [2026-11-10 21:04:10 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 21:04:13 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-10 21:12:33 ET] sync_to_github.py: FAILED (exit 1) in 500s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-10.md (HTTP 409: {'error': '{"message":"is at df026b1c9e27d0eee095f32d4aee8889e968b58c but expected 4e200d3b33
+[2026-11-10 21:13:07 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (69 with odds), db total 212500 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 21:14:30 ET] dh_game_middles.py: OK in 83s — GAME MIDDLE: NCAAF Auburn Mississippi St. Nov-14 12:00 PM / table / Alt Spread Auburn +1.5 / Moneyline Mississippi St. / table | HardRock | theScore — window 26
+[2026-11-10 21:15:52 ET] hung_number.py: OK in 82s — HUNG NUMBER: Kent State vs Bowling Green — BetMGM total value Under (52.5 vs median 55.5)
