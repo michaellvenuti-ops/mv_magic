@@ -5345,3 +5345,6 @@
 [2026-11-11 01:44:14 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
 [2026-11-11 01:44:15 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 01:44:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 01:52:50 ET] sync_to_github.py: FAILED (exit 1) in 514s —   FAILED: team-total-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 1ec3d3af0fb2d341ca11471e31f41dc7411efebd but expected aaec00c2a465d6ff889be2e
+[2026-11-11 01:53:24 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 226 events (78 with odds), db total 217937 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 01:56:39 ET] dh_key_number_middles.py: OK in 196s — key-number-middles: no new key middles.
