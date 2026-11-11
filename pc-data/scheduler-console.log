@@ -5402,3 +5402,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 02:18:43 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-11 02:20:28 ET] dh_prop_middles.py: OK in 104s — PROP MIDDLE : NCAAB Kansas City Florida A&M Today 12:00 PM / table / Alt Total Over 141.5 / Alt Total Under 142.5 / table | DraftKings | Bet365 — window 309.0 :
 [2026-11-11 02:22:16 ET] dh_sog_middles.py: OK in 109s — - 0 deliverables this run
+[2026-11-11 02:31:03 ET] sync_to_github.py: OK in 527s —   ok: team-total-middles-board-pc.html
+[2026-11-11 02:31:16 ET] notify.py: OK in 13s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 02:32:39 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 226 events (78 with odds), db total 218615 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 02:36:14 ET] dh_key_number_middles.py: OK in 215s — KEY-NUMBER MIDDLE (key 7): NBA DEN Nuggets MEM Grizzlies Today 8:15 PM / table / Alt Spread MEM Grizzlies +7.5 / Alt Spread DEN Nuggets -6.5 / table | HardRock 
+[2026-11-11 02:36:20 ET] rlm.py: OK in 6s
+[2026-11-11 02:36:24 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 02:36:25 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 02:36:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 02:36:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 02:38:49 ET] odds_recorder.py: OK in 52s — SUMMARY: recorded 226 events (78 with odds), db total 218841 snapshots / 761 events, feeds ok 6 fail 0
