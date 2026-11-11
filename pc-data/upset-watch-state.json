@@ -5928,7 +5928,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "away",
-   "spread": 6.5,
+   "spread": 8.5,
    "fav_team": "Heat",
    "dog_team": "Jazz"
   },
@@ -5960,7 +5960,8 @@
    "fav": "away",
    "spread": 8.5,
    "fav_team": "Florida",
-   "dog_team": "Florida St"
+   "dog_team": "Florida St",
+   "final": true
   },
   "401920866": {
    "sport": "NCAAB",
@@ -5982,7 +5983,7 @@
    "spread": 30.5,
    "fav_team": "Georgetown",
    "dog_team": "Delaware St",
-   "live_ml": -1150
+   "live_ml": -1450
   },
   "401909564": {
    "sport": "NCAAB",
@@ -6153,7 +6154,7 @@
    "spread": 20.5,
    "fav_team": "Rhode Island",
    "dog_team": "Maine",
-   "live_ml": -445
+   "live_ml": -850
   },
   "401918957": {
    "sport": "NCAAB",
@@ -6222,12 +6223,20 @@
    "sport": "NCAAB",
    "matchup": "Siena at Dayton",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Dayton",
    "dog_team": "Siena",
-   "live_ml": -475
+   "live_ml": -188,
+   "alerted_at": "2026-11-10T20:24:03",
+   "board_read_at": "2026-11-10T20:24:02",
+   "alert_expires_at": "2026-11-10T20:27:03",
+   "alert_detail": "12:49 - 2nd Half",
+   "alert_fav_score": 57,
+   "alert_dog_score": 63,
+   "alert_ml": -188,
+   "ml_read_at": "2026-11-10T20:24:03"
   },
   "401911011": {
    "sport": "NCAAB",
@@ -6376,7 +6385,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.5,
    "fav_team": "Arkansas St",
    "dog_team": "UT Martin"
   },
@@ -6466,7 +6475,8 @@
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Baylor",
-   "dog_team": "Yale"
+   "dog_team": "Yale",
+   "live_ml": -1050
   },
   "401920895": {
    "sport": "NCAAB",
@@ -6484,7 +6494,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "home",
-   "spread": 26.5,
+   "spread": 25.5,
    "fav_team": "Ole Miss",
    "dog_team": "SE Louisiana"
   },
