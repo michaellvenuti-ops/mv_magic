@@ -412,3 +412,6 @@
 ## 2026-11-11T16:36:56-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 406 games through 2026-11-11
 - 2026-11-11: Incarnate Word Cardinals @ UC Davis Aggies — first: UC Davis Aggies (2PT, 0:18 in); lead changes 0; final 69-81
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T17:19:03-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 407 games through 2026-11-11
+- 2026-11-11: Loyola Chicago Ramblers @ Air Force Falcons — first: Air Force Falcons (3PT, 0:14 in); lead changes 2; final 93-107
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
