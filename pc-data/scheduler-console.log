@@ -5626,3 +5626,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 09:55:28 ET] nfl_first_score.py: OK in 2s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 09:55:31 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 09:55:32 ET] half_percent.py: OK in 1s — half-percent recheck: 09:55 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-11 10:05:27 ET] sync_to_github.py: OK in 594s —   ok: wide-builds-board-pc.html
+[2026-11-11 10:06:34 ET] notify.py: OK in 68s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 10:07:59 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 226 events (78 with odds), db total 226525 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 10:08:57 ET] dh_arbitrage.py: OK in 58s — ARBITRAGE: NCAAF Arkansas St. Coastal Carolina Nov-14 1:00 PM / table / Alt Spread Arkansas St. +8.5 / Alt Spread Coastal Carolina -8 / table | DraftKings | Bal
+[2026-11-11 10:08:59 ET] wide_builds.py: OK in 2s — wide_builds: 14 qualifying builds, 0 NEW (banked wide-builds-2026-11-11.md)
+[2026-11-11 10:10:21 ET] dh_game_middles.py: OK in 82s — GAME MIDDLE: NCAAB Kent St. Golden UNC Wilmington Today 7:00 PM / table / Alt Total Under 157.5 / Alt Total Over 157 / table | Caesars | Bet365 — window 210.0 :
+[2026-11-11 10:13:33 ET] dh_basketball_key_middles.py: OK in 192s — basketball-key-middles: no new basketball middles.
+[2026-11-11 10:13:37 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 10:14:36 ET] promo_watch.py: OK in 59s — promo-watch: 8 listed, 0 new, 0 converter attempt(s).
+[2026-11-11 10:15:10 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 226 events (78 with odds), db total 226751 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 10:16:36 ET] dh_prop_middles.py: OK in 87s — PROP MIDDLE : NCAAB Charleston Temple Today 6:30 PM / table / Alt Total Under 162.5 / Alt Total Over 161.5 / table | HardRock | Bet365 — window 330.0 :: {'side'
