@@ -5659,3 +5659,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 10:55:54 ET] totals_scan.py: OK in 5s — totals: no new flags (silent).
 [2026-11-11 10:55:59 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-11 10:57:32 ET] dh_derivative_ev.py: FAILED (exit 2) in 93s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-11.txt. No prices i
+[2026-11-11 11:07:52 ET] sync_to_github.py: FAILED (exit 1) in 620s —   FAILED: pc-data/game-middles-2026-11-10.md (HTTP 409: {'error': '{"message":"is at 19402d7ac83e2b2dfeedf651e699dbc1a9de6cf6 but expected d4cfa7f0daa942d06361a
+^C[2026-11-11 11:08:49 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-11 11:10:11 ET] odds_recorder.py: OK in 83s — SUMMARY: recorded 229 events (94 with odds), db total 227658 snapshots / 777 events, feeds ok 6 fail 0
+[2026-11-11 11:13:31 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: 419 basketball rows excluded (football-only rule).
+[2026-11-11 11:13:39 ET] rlm.py: OK in 7s
+[2026-11-11 11:13:43 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 11:15:20 ET] dh_sog_middles.py: OK in 97s — - 0 deliverables this run
+[2026-11-11 11:15:24 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 11:15:25 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 11:15:55 ET] nba_first_score.py: OK in 30s — nba-first-score: 152 new, 8 unverified, 152 total tallied.
+[2026-11-11 11:16:47 ET] nhl_first_goal.py: OK in 52s — nhl-first-goal: 284 new, 0 unverified, 284 total tallied.
+[2026-11-11 11:16:49 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 11:20:24 ET] costco_gold.py: OK in 216s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
