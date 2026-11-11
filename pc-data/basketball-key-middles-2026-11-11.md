@@ -1,1 +1,2 @@
 ## 2026-11-11T00:18:18-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1952 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-11T00:58:41-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1955 + 0 rows parsed, qualifying only below — 0 NEW middles
