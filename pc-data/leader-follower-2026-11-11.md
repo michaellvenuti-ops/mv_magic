@@ -22,3 +22,5 @@ LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
 ## 2026-11-11T12:22:19-05:00 — no-follow: FanDuel Tulane @ Rice | 2026-11-11 spread (only 0 followed)
 ## 2026-11-11T12:22:19-05:00 — 81 games, 0 leads credited, 1 started games skipped
 ## 2026-11-11T13:42:58-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T14:46:35-05:00 — no-follow: Kalshi Wyoming @ UTEP | 2026-11-11 spread (only 0 followed)
+## 2026-11-11T14:46:35-05:00 — 81 games, 0 leads credited, 1 started games skipped
