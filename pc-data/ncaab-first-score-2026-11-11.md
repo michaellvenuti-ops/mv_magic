@@ -1,0 +1,404 @@
+## 2026-11-11T11:48:37-05:00 -- NCAAB FIRST SCORE (PC): 402 new final(s) tallied; season 402 games through 2026-11-10
+- 2026-11-03: Wofford Terriers @ Tennessee Volunteers — first: Tennessee Volunteers (2PT, 0:07 in); lead changes 2; final 59-90
+- 2026-11-03: Drexel Dragons @ Virginia Cavaliers — first: Virginia Cavaliers (2PT, 0:05 in); lead changes 0; final 60-89
+- 2026-11-03: Arkansas-Pine Bluff Golden Lions @ Arkansas Razorbacks — first: Arkansas-Pine Bluff Golden Lions (2PT, 0:36 in); lead changes 1; final 61-106
+- 2026-11-03: Sam Houston Bearkats @ Alabama Crimson Tide — first: Alabama Crimson Tide (2PT, 0:31 in); lead changes 0; final 74-96
+- 2026-11-03: Manhattan Jaspers @ Kentucky Wildcats — first: Kentucky Wildcats (2PT, 1:20 in); lead changes 2; final 57-85
+- 2026-11-03: Milligan Buffaloes @ UNC Greensboro Spartans — first: UNC Greensboro Spartans (2PT, 1:17 in); lead changes 0; final 43-96
+- 2026-11-03: Purdue Fort Wayne Mastodons @ Duquesne Dukes — first: Duquesne Dukes (2PT, 0:56 in); lead changes 8; final 71-78
+- 2026-11-03: Stetson Hatters @ South Carolina Gamecocks — first: Stetson Hatters (2PT, 0:20 in); lead changes 3; final 55-81
+- 2026-11-03: Coppin State Eagles @ Virginia Tech Hokies — first: Coppin State Eagles (2PT, 1:09 in); lead changes 1; final 54-88
+- 2026-11-03: Hampton Pirates @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (2PT, 1:09 in); lead changes 0; final 55-75
+- 2026-11-03: Holy Cross Crusaders @ Rhode Island Rams — first: Rhode Island Rams (3PT, 0:22 in); lead changes 2; final 59-103
+- 2026-11-03: Wagner Seahawks @ Boston College Eagles — first: Wagner Seahawks (3PT, 0:52 in); lead changes 1; final 50-76
+- 2026-11-03: Lincoln (MO) Blue Tigers @ Missouri State Bears — first: Missouri State Bears (2PT, 0:46 in); lead changes 2; final 60-88
+- 2026-11-03: Cornell (IA) Rams @ Northern Iowa Panthers — first: Northern Iowa Panthers (FT, 0:12 in); lead changes 2; final 70-106
+- 2026-11-03: Louisiana Christian Wildcats @ Houston Christian Huskies — first: Houston Christian Huskies (FT, 0:00 in); lead changes 2; final 45-108
+- 2026-11-03: LSU New Orleans Privateers @ LSU Tigers — first: LSU Tigers (2PT, 1:08 in); lead changes 0; final 57-100
+- 2026-11-03: Cleveland State Vikings @ Missouri Tigers — first: Missouri Tigers (2PT, 0:21 in); lead changes 0; final 50-111
+- 2026-11-03: Alabama State Hornets @ Texas A&M Aggies — first: Texas A&M Aggies (FT, 1:19 in); lead changes 0; final 66-97
+- 2026-11-03: Lipscomb Bisons @ Iowa Hawkeyes — first: Iowa Hawkeyes (FT, 0:37 in); lead changes 2; final 54-76
+- 2026-11-03: South Dakota State Jackrabbits @ Kansas State Wildcats — first: Kansas State Wildcats (3PT, 0:57 in); lead changes 5; final 68-66
+- 2026-11-03: Western New Mexico Mustangs @ New Mexico State Aggies — first: Western New Mexico Mustangs (3PT, 0:23 in); lead changes 3; final 66-73
+- 2026-11-03: Regis University REGIS UNIVERSITY @ Wyoming Cowboys — first: Wyoming Cowboys (2PT, 0:26 in); lead changes 0; final 48-95
+- 2026-11-03: Chapman Panthers @ UC Irvine Anteaters — first: UC Irvine Anteaters (3PT, 0:15 in); lead changes 2; final 66-92
+- 2026-11-03: Lewis & Clark River Otters @ Portland State Vikings — first: Portland State Vikings (3PT, 0:22 in); lead changes 0; final 59-111
+- 2026-11-03: Northern Arizona Lumberjacks @ UNLV Rebels — first: UNLV Rebels (2PT, 0:39 in); lead changes 6; final 77-89
+- 2026-11-03: North Florida Ospreys @ California Baptist Lancers — first: North Florida Ospreys (2PT, 1:25 in); lead changes 6; final 71-63
+- 2026-11-03: Cal State Fullerton Titans @ San Diego State Aztecs — first: San Diego State Aztecs (FT, 0:16 in); lead changes 6; final 78-102
+- 2026-11-03: Bethesda Flames @ Pacific Tigers — first: Pacific Tigers (2PT, 1:57 in); lead changes 0; final 47-102
+- 2026-11-04: Framingham State Rams @ Dartmouth Big Green — first: Dartmouth Big Green (2PT, 0:13 in); lead changes 0; final 50-107
+- 2026-11-04: Regent Regent Royals @ Old Dominion Monarchs — first: Regent Regent Royals (2PT, 0:13 in); lead changes 1; final 47-91
+- 2026-11-04: Virginia Lynchburg Dragons @ Morgan State Bears — first: Morgan State Bears (2PT, 0:15 in); lead changes 0; final 58-95
+- 2026-11-04: Concordia Chicago Cougars @ SIU Edwardsville Cougars — first: Concordia Chicago Cougars (FT, 0:17 in); lead changes 11; final 61-85
+- 2026-11-04: Erskine Flying Fleet @ UNC Asheville Bulldogs — first: UNC Asheville Bulldogs (2PT, 0:13 in); lead changes 6; final 74-101
+- 2026-11-04: Maryland Eastern Shore Hawks @ High Point Panthers — first: High Point Panthers (3PT, 2:00 in); lead changes 2; final 49-63
+- 2026-11-04: Longwood Lancers @ Saint Joseph's Hawks — first: Longwood Lancers (3PT, 0:23 in); lead changes 5; final 73-82
+- 2026-11-04: Fairleigh Dickinson Knights @ Butler Bulldogs — first: Butler Bulldogs (3PT, 0:38 in); lead changes 0; final 65-99
+- 2026-11-04: Christendom Crusaders @ App State Mountaineers — first: App State Mountaineers (3PT, 1:32 in); lead changes 0; final 43-108
+- 2026-11-04: Central College Dutch @ Drake Bulldogs — first: Drake Bulldogs (2PT, 0:02 in); lead changes 0; final 48-101
+- 2026-11-04: Blue Mountain Christian Toppers @ Tennessee Tech Golden Eagles — first: Blue Mountain Christian Toppers (2PT, 0:05 in); lead changes 1; final 70-117
+- 2026-11-04: Webster Gorloks @ Southeast Missouri State Redhawks — first: Southeast Missouri State Redhawks (2PT, 0:12 in); lead changes 6; final 65-90
+- 2026-11-04: Bob Jones Bruins @ Furman Paladins — first: Furman Paladins (3PT, 0:16 in); lead changes 0; final 52-121
+- 2026-11-04: Cal State Northridge Matadors @ Wichita State Shockers — first: Wichita State Shockers (2PT, 1:02 in); lead changes 2; final 67-79
+- 2026-11-04: Champion Christian Tigers @ UL Monroe Warhawks — first: UL Monroe Warhawks (2PT, 0:28 in); lead changes 2; final 55-99
+- 2026-11-04: Northern Kentucky Norse @ South Dakota Coyotes — first: South Dakota Coyotes (3PT, 0:52 in); lead changes 7; final 102-94
+- 2026-11-04: Randolph Wildcats @ Norfolk State Spartans — first: Randolph Wildcats (3PT, 0:25 in); lead changes 9; final 71-78
+- 2026-11-04: Saint Mary of the Woods Pomeroys @ Southern Indiana Screaming Eagles — first: Southern Indiana Screaming Eagles (2PT, 0:51 in); lead changes 0; final 42-112
+- 2026-11-04: SE Louisiana Lions @ Auburn Tigers — first: Auburn Tigers (2PT, 0:25 in); lead changes 4; final 59-92
+- 2026-11-04: West Coast Baptist Eagles @ Boise State Broncos — first: Boise State Broncos (2PT, 0:14 in); lead changes 0; final 53-132
+- 2026-11-04: Grace University Lancers @ Utah Tech Trailblazers — first: Utah Tech Trailblazers (FT, 0:51 in); lead changes 0; final 52-103
+- 2026-11-04: Salish Kootenai Bison @ Montana Grizzlies — first: Salish Kootenai Bison (2PT, 0:40 in); lead changes 3; final 40-105
+- 2026-11-04: Radford Highlanders @ California Golden Bears — first: California Golden Bears (3PT, 0:18 in); lead changes 2; final 70-84
+- 2026-11-04: Queens University Royals @ Loyola Marymount Lions — first: Loyola Marymount Lions (3PT, 0:15 in); lead changes 7; final 96-95
+- 2026-11-04: Milwaukee Panthers @ Santa Clara Broncos — first: Santa Clara Broncos (3PT, 0:17 in); lead changes 0; final 72-95
+- 2026-11-04: North Dakota State Bison @ Saint Mary's Gaels — first: Saint Mary's Gaels (3PT, 0:55 in); lead changes 2; final 64-105
+- 2026-11-05: Jacksonville Dolphins @ Florida Gators — first: Florida Gators (2PT, 0:18 in); lead changes 2; final 57-88
+- 2026-11-05: Coastal Carolina Chanticleers @ Duke Blue Devils — first: Duke Blue Devils (2PT, 1:04 in); lead changes 0; final 52-113
+- 2026-11-05: Pennsylvania Quakers @ Illinois Fighting Illini — first: Illinois Fighting Illini (2PT, 0:08 in); lead changes 2; final 70-112
+- 2026-11-05: Cal Poly Mustangs @ Arizona Wildcats — first: Cal Poly Mustangs (2PT, 0:27 in); lead changes 1; final 84-104
+- 2026-11-05: Toledo Rockets @ Michigan State Spartans — first: Toledo Rockets (2PT, 1:07 in); lead changes 1; final 61-91
+- 2026-11-05: Gardner-Webb Runnin' Bulldogs @ Texas Longhorns — first: Texas Longhorns (2PT, 0:21 in); lead changes 2; final 50-98
+- 2026-11-05: Bethune-Cookman Wildcats @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (FT, 1:47 in); lead changes 2; final 58-76
+- 2026-11-05: Wake Forest Demon Deacons @ Vanderbilt Commodores — first: Wake Forest Demon Deacons (2PT, 0:17 in); lead changes 5; final 51-74
+- 2026-11-05: McNeese Cowboys @ North Texas Mean Green — first: McNeese Cowboys (3PT, 0:14 in); lead changes 3; final 67-77
+- 2026-11-05: Virginia Lynchburg Dragons @ Morehead State Eagles — first: Morehead State Eagles (2PT, 0:39 in); lead changes 2; final 60-114
+- 2026-11-05: King's Monarchs @ Lafayette Leopards — first: Lafayette Leopards (2PT, 0:18 in); lead changes 0; final 67-104
+- 2026-11-05: Chattanooga Mocs @ Penn State Nittany Lions — first: Penn State Nittany Lions (3PT, 1:06 in); lead changes 0; final 93-97
+- 2026-11-05: Bellarmine Knights @ Indiana Hoosiers — first: Indiana Hoosiers (3PT, 0:16 in); lead changes 0; final 69-92
+- 2026-11-05: Mount St Mary Knights @ Army Black Knights — first: Army Black Knights (2PT, 0:53 in); lead changes 0; final 41-118
+- 2026-11-05: Long Island University Sharks @ Seton Hall Pirates — first: Long Island University Sharks (FT, 0:37 in); lead changes 9; final 60-67
+- 2026-11-05: Fort Valley State Wildcats @ Florida A&M Rattlers — first: Fort Valley State Wildcats (2PT, 0:56 in); lead changes 8; final 75-70
+- 2026-11-05: Howard Payne Yellow Jackets @ Texas State Bobcats — first: Texas State Bobcats (2PT, 0:23 in); lead changes 2; final 66-135
+- 2026-11-05: Central Bible Saints @ Lindenwood Lions — first: Lindenwood Lions (2PT, 0:16 in); lead changes 0; final 46-120
+- 2026-11-05: Kalamazoo Hornets @ Western Michigan Broncos — first: Western Michigan Broncos (3PT, 0:17 in); lead changes 0; final 52-99
+- 2026-11-05: Southern Virginia Knights @ Richmond Spiders — first: Richmond Spiders (2PT, 0:16 in); lead changes 0; final 46-107
+- 2026-11-05: College of Biblical Studies Ambassadors @ Prairie View A&M Panthers — first: Prairie View A&M Panthers (2PT, 0:47 in); lead changes 0; final 90-103
+- 2026-11-05: Georgia State Panthers @ Charlotte 49ers — first: Charlotte 49ers (2PT, 0:32 in); lead changes 18; final 67-77
+- 2026-11-05: Howard Bison @ Alcorn State Braves — first: Alcorn State Braves (3PT, 1:07 in); lead changes 3; final 94-83
+- 2026-11-05: Hofstra Pride @ Princeton Tigers — first: Princeton Tigers (3PT, 0:37 in); lead changes 6; final 58-60
+- 2026-11-05: Cornell Big Red @ Lehigh Mountain Hawks — first: Lehigh Mountain Hawks (2PT, 0:29 in); lead changes 2; final 64-71
+- 2026-11-05: SUNY Old Westbury Panthers @ Columbia Lions — first: SUNY Old Westbury Panthers (2PT, 0:09 in); lead changes 1; final 58-120
+- 2026-11-05: Green Bay Phoenix @ Cincinnati Bearcats — first: Green Bay Phoenix (2PT, 0:31 in); lead changes 3; final 64-81
+- 2026-11-05: Maine Black Bears @ Sacred Heart Pioneers — first: Maine Black Bears (2PT, 1:57 in); lead changes 14; final 74-72
+- 2026-11-05: New Hampshire Wildcats @ Rider Broncs — first: New Hampshire Wildcats (2PT, 0:26 in); lead changes 6; final 66-55
+- 2026-11-05: Bryant Bulldogs @ Quinnipiac Bobcats — first: Quinnipiac Bobcats (3PT, 0:30 in); lead changes 6; final 56-66
+- 2026-11-05: UMass Lowell River Hawks @ Merrimack Warriors — first: Merrimack Warriors (2PT, 0:16 in); lead changes 3; final 71-61
+- 2026-11-05: UAlbany Great Danes @ Manhattan Jaspers — first: UAlbany Great Danes (2PT, 0:11 in); lead changes 0; final 72-68
+- 2026-11-05: Delaware State Hornets @ Navy Midshipmen — first: Delaware State Hornets (2PT, 0:49 in); lead changes 9; final 60-66
+- 2026-11-05: UMBC Retrievers @ Marist Red Foxes — first: UMBC Retrievers (2PT, 0:42 in); lead changes 7; final 80-88
+- 2026-11-05: NJIT Highlanders @ Iona Gaels — first: Iona Gaels (FT, 1:49 in); lead changes 2; final 49-72
+- 2026-11-05: Vermont Catamounts @ Fairfield Stags — first: Fairfield Stags (2PT, 0:18 in); lead changes 1; final 79-67
+- 2026-11-05: Mercer Bears @ Virginia Tech Hokies — first: Virginia Tech Hokies (2PT, 0:41 in); lead changes 0; final 67-96
+- 2026-11-05: Mercyhurst Lakers @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (3PT, 0:25 in); lead changes 0; final 56-83
+- 2026-11-05: Chicago State Cougars @ Incarnate Word Cardinals — first: Incarnate Word Cardinals (3PT, 0:53 in); lead changes 3; final 66-54
+- 2026-11-05: Columbia International Rams @ Charleston Southern Buccaneers — first: Columbia International Rams (2PT, 0:35 in); lead changes 1; final 49-86
+- 2026-11-05: Binghamton Bearcats @ Saint Peter's Peacocks — first: Binghamton Bearcats (2PT, 0:18 in); lead changes 8; final 58-55
+- 2026-11-05: Central Connecticut Blue Devils @ Syracuse Orange — first: Syracuse Orange (2PT, 0:36 in); lead changes 0; final 49-102
+- 2026-11-05: Buffalo Bulls @ Pittsburgh Panthers — first: Buffalo Bulls (3PT, 0:13 in); lead changes 7; final 61-80
+- 2026-11-05: Union (TN) Bulldogs @ North Alabama Lions — first: Union (TN) Bulldogs (FT, 1:10 in); lead changes 17; final 66-76
+- 2026-11-05: Kentucky Wesleyan Panthers @ Western Kentucky Hilltoppers — first: Kentucky Wesleyan Panthers (3PT, 0:09 in); lead changes 1; final 48-82
+- 2026-11-05: Arkansas Monticello Boll Weevils @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (2PT, 0:11 in); lead changes 0; final 17-76
+- 2026-11-05: Centre Colonels @ Belmont Bruins — first: Belmont Bruins (2PT, 0:18 in); lead changes 2; final 45-75
+- 2026-11-05: Jackson State Tigers @ Tulane Green Wave — first: Tulane Green Wave (3PT, 0:15 in); lead changes 1; final 87-85
+- 2026-11-05: Stonehill Skyhawks @ Fordham Rams — first: Stonehill Skyhawks (2PT, 0:32 in); lead changes 3; final 63-83
+- 2026-11-05: Northwestern State Demons @ Mississippi State Bulldogs — first: Mississippi State Bulldogs (FT, 2:07 in); lead changes 0; final 44-82
+- 2026-11-05: Central State Marauders @ Illinois State Redbirds — first: Illinois State Redbirds (3PT, 0:50 in); lead changes 0; final 55-100
+- 2026-11-05: Jacksonville State Gamecocks @ South Alabama Jaguars — first: Jacksonville State Gamecocks (3PT, 0:46 in); lead changes 9; final 80-83
+- 2026-11-05: East Texas A&M Lions @ Rice Owls — first: Rice Owls (2PT, 1:33 in); lead changes 5; final 72-71
+- 2026-11-05: Northern Illinois Huskies @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (FT, 0:27 in); lead changes 2; final 75-94
+- 2026-11-05: East West Phantoms @ Tennessee State Tigers — first: Tennessee State Tigers (3PT, 0:16 in); lead changes 0; final 61-127
+- 2026-11-05: VMI Keydets @ SMU Mustangs — first: SMU Mustangs (2PT, 0:29 in); lead changes 2; final 70-95
+- 2026-11-05: West Georgia Wolves @ Loyola Chicago Ramblers — first: Loyola Chicago Ramblers (2PT, 0:38 in); lead changes 0; final 53-76
+- 2026-11-05: Le Moyne Dolphins @ Creighton Bluejays — first: Creighton Bluejays (2PT, 0:25 in); lead changes 0; final 55-83
+- 2026-11-05: Grace University Lancers @ Southern Utah Thunderbirds — first: Southern Utah Thunderbirds (2PT, 0:17 in); lead changes 0; final 53-97
+- 2026-11-05: South Florida Bulls @ DePaul Blue Demons — first: DePaul Blue Demons (FT, 0:25 in); lead changes 0; final 80-82
+- 2026-11-05: Towson Tigers @ Utah Utes — first: Towson Tigers (FT, 0:15 in); lead changes 3; final 57-67
+- 2026-11-05: Menlo Oaks @ UC Davis Aggies — first: Menlo Oaks (3PT, 0:54 in); lead changes 9; final 52-65
+- 2026-11-05: Stanton Elks @ Cal State Bakersfield Roadrunners — first: Stanton Elks (2PT, 0:27 in); lead changes 1; final 54-93
+- 2026-11-05: La Sierra Golden Eagles @ Pepperdine Waves — first: Pepperdine Waves (2PT, 0:14 in); lead changes 2; final 66-106
+- 2026-11-06: UConn Huskies @ Michigan Wolverines — first: Michigan Wolverines (2PT, 0:06 in); lead changes 1; final 85-77
+- 2026-11-06: Northeastern Huskies @ Virginia Cavaliers — first: Northeastern Huskies (2PT, 2:50 in); lead changes 1; final 72-97
+- 2026-11-06: Wagner Seahawks @ Miami Hurricanes — first: Miami Hurricanes (2PT, 0:27 in); lead changes 2; final 57-83
+- 2026-11-06: Middle Tennessee Blue Raiders @ Kansas Jayhawks — first: Kansas Jayhawks (2PT, 1:09 in); lead changes 0; final 45-89
+- 2026-11-06: Southern Miss Golden Eagles @ Iowa State Cyclones — first: Iowa State Cyclones (2PT, 0:24 in); lead changes 0; final 57-83
+- 2026-11-06: Arkansas State Red Wolves @ Alabama Crimson Tide — first: Alabama Crimson Tide (FT, 1:14 in); lead changes 2; final 86-101
+- 2026-11-06: North Florida Ospreys @ UCLA Bruins — first: UCLA Bruins (2PT, 1:03 in); lead changes 6; final 63-114
+- 2026-11-06: James Madison Dukes @ Kentucky Wildcats — first: Kentucky Wildcats (2PT, 0:20 in); lead changes 18; final 80-89
+- 2026-11-06: Omaha Mavericks @ BYU Cougars — first: BYU Cougars (3PT, 0:24 in); lead changes 0; final 67-108
+- 2026-11-06: Massachusetts Minutemen @ Boston College Eagles — first: Boston College Eagles (FT, 0:27 in); lead changes 4; final 55-71
+- 2026-11-06: West Florida Argonauts @ Florida International Panthers — first: West Florida Argonauts (2PT, 1:16 in); lead changes 3; final 75-85
+- 2026-11-06: Arkansas-Pine Bluff Golden Lions @ Baylor Bears — first: Baylor Bears (FT, 2:19 in); lead changes 0; final 53-109
+- 2026-11-06: Eastern Washington Eagles @ Oregon Ducks — first: Oregon Ducks (3PT, 0:51 in); lead changes 2; final 71-98
+- 2026-11-06: Valparaiso Beacons @ Purdue Boilermakers — first: Valparaiso Beacons (2PT, 0:15 in); lead changes 10; final 83-80
+- 2026-11-06: South Carolina State Bulldogs @ South Carolina Upstate Spartans — first: South Carolina State Bulldogs (2PT, 1:34 in); lead changes 10; final 78-70
+- 2026-11-06: Youngstown State Penguins @ Ohio State Buckeyes — first: Ohio State Buckeyes (2PT, 0:16 in); lead changes 8; final 65-89
+- 2026-11-06: Midway Eagles @ Eastern Kentucky Colonels — first: Midway Eagles (3PT, 0:20 in); lead changes 1; final 68-106
+- 2026-11-06: Roberts Wesleyan Redhawks @ Kent State Golden Flashes — first: Kent State Golden Flashes (3PT, 1:09 in); lead changes 0; final 50-102
+- 2026-11-06: Newberry Wolves @ Charleston Cougars — first: Charleston Cougars (3PT, 0:24 in); lead changes 0; final 66-112
+- 2026-11-06: Erskine Flying Fleet @ The Citadel Bulldogs — first: The Citadel Bulldogs (3PT, 0:12 in); lead changes 0; final 57-100
+- 2026-11-06: New Haven Chargers @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (2PT, 0:21 in); lead changes 2; final 54-81
+- 2026-11-06: New College Mighty Banyans @ Florida Gulf Coast Eagles — first: New College Mighty Banyans (3PT, 0:33 in); lead changes 9; final 67-89
+- 2026-11-06: Stetson Hatters @ West Virginia Mountaineers — first: West Virginia Mountaineers (2PT, 0:16 in); lead changes 0; final 53-91
+- 2026-11-06: Yale Bulldogs @ UCF Knights — first: Yale Bulldogs (2PT, 0:42 in); lead changes 7; final 75-87
+- 2026-11-06: Holy Cross Crusaders @ Villanova Wildcats — first: Holy Cross Crusaders (3PT, 0:51 in); lead changes 1; final 66-95
+- 2026-11-06: Michigan Dearborn Wolves @ Cleveland State Vikings — first: Cleveland State Vikings (2PT, 1:01 in); lead changes 10; final 79-103
+- 2026-11-06: UNC Greensboro Spartans @ Elon Phoenix — first: Elon Phoenix (2PT, 0:59 in); lead changes 2; final 65-74
+- 2026-11-06: Loyola Maryland Greyhounds @ Mount St. Mary's Mountaineers — first: Mount St. Mary's Mountaineers (FT, 0:39 in); lead changes 6; final 57-68
+- 2026-11-06: Georgia Southern Eagles @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (3PT, 0:22 in); lead changes 0; final 83-95
+- 2026-11-06: Coppin State Eagles @ George Mason Patriots — first: George Mason Patriots (2PT, 0:24 in); lead changes 0; final 51-68
+- 2026-11-06: East Tennessee State Buccaneers @ NC State Wolfpack — first: NC State Wolfpack (3PT, 0:57 in); lead changes 4; final 63-77
+- 2026-11-06: Austin Peay Governors @ Kennesaw State Owls — first: Austin Peay Governors (2PT, 0:38 in); lead changes 1; final 69-71
+- 2026-11-06: Wofford Terriers @ North Carolina Tar Heels — first: North Carolina Tar Heels (2PT, 0:09 in); lead changes 0; final 70-109
+- 2026-11-06: American University Eagles @ Clemson Tigers — first: American University Eagles (3PT, 0:38 in); lead changes 7; final 73-82
+- 2026-11-06: Boston University Terriers @ Brown Bears — first: Brown Bears (3PT, 0:21 in); lead changes 11; final 72-67
+- 2026-11-06: Saint Louis Billikens @ Missouri Tigers — first: Missouri Tigers (FT, 0:14 in); lead changes 3; final 90-84
+- 2026-11-06: Alma Scots @ Central Michigan Chippewas — first: Central Michigan Chippewas (2PT, 0:16 in); lead changes 2; final 50-93
+- 2026-11-06: Indiana State Sycamores @ Ball State Cardinals — first: Ball State Cardinals (2PT, 0:38 in); lead changes 3; final 69-66
+- 2026-11-06: Troy Trojans @ Florida State Seminoles — first: Florida State Seminoles (2PT, 0:15 in); lead changes 0; final 68-91
+- 2026-11-06: Eastern Michigan Eagles @ Xavier Musketeers — first: Eastern Michigan Eagles (3PT, 0:58 in); lead changes 1; final 53-76
+- 2026-11-06: Presbyterian Blue Hose @ Georgia Bulldogs — first: Georgia Bulldogs (3PT, 0:36 in); lead changes 0; final 77-91
+- 2026-11-06: Texas Lutheran Bulldogs @ Stephen F. Austin Lumberjacks — first: Stephen F. Austin Lumberjacks (2PT, 0:35 in); lead changes 0; final 32-89
+- 2026-11-06: Florida Atlantic Owls @ Wright State Raiders — first: Wright State Raiders (2PT, 0:29 in); lead changes 0; final 71-97
+- 2026-11-06: Delaware Blue Hens @ Wisconsin Badgers — first: Delaware Blue Hens (2PT, 0:42 in); lead changes 5; final 64-73
+- 2026-11-06: Nicholls Colonels @ UAB Blazers — first: Nicholls Colonels (3PT, 1:29 in); lead changes 1; final 63-70
+- 2026-11-06: Robert Morris Colonials @ UIC Flames — first: Robert Morris Colonials (2PT, 0:20 in); lead changes 3; final 56-79
+- 2026-11-06: Truman State Bulldogs @ Missouri State Bears — first: Truman State Bulldogs (3PT, 1:23 in); lead changes 1; final 62-79
+- 2026-11-06: Mississippi U for Women Owls @ Alabama A&M Bulldogs — first: Mississippi U for Women Owls (2PT, 0:41 in); lead changes 1; final 47-103
+- 2026-11-06: Texas A&M-Corpus Christi Islanders @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (2PT, 0:16 in); lead changes 3; final 67-60
+- 2026-11-06: Texas Southern Tigers @ LSU Tigers — first: LSU Tigers (2PT, 0:22 in); lead changes 2; final 51-92
+- 2026-11-06: Northern Kentucky Norse @ Texas A&M Aggies — first: Texas A&M Aggies (2PT, 0:22 in); lead changes 0; final 67-104
+- 2026-11-06: Stony Brook Seawolves @ Northwestern Wildcats — first: Northwestern Wildcats (2PT, 0:53 in); lead changes 0; final 65-78
+- 2026-11-06: Southern Jaguars @ TCU Horned Frogs — first: Southern Jaguars (2PT, 0:58 in); lead changes 3; final 54-106
+- 2026-11-06: St. Thomas Tommies @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (2PT, 0:29 in); lead changes 6; final 62-76
+- 2026-11-06: Detroit Mercy Titans @ Marquette Golden Eagles — first: Marquette Golden Eagles (2PT, 0:38 in); lead changes 0; final 32-93
+- 2026-11-06: Mississippi Valley State Delta Devils @ Oklahoma Sooners — first: Oklahoma Sooners (2PT, 2:41 in); lead changes 0; final 57-84
+- 2026-11-06: Idaho State Bengals @ Wyoming Cowboys — first: Wyoming Cowboys (2PT, 0:39 in); lead changes 0; final 62-93
+- 2026-11-06: Eastern Illinois Panthers @ Iowa Hawkeyes — first: Eastern Illinois Panthers (2PT, 0:47 in); lead changes 1; final 47-91
+- 2026-11-06: Central Arkansas Bears @ Ole Miss Rebels — first: Ole Miss Rebels (2PT, 1:19 in); lead changes 0; final 60-92
+- 2026-11-06: Idaho Vandals @ Colorado State Rams — first: Idaho Vandals (3PT, 0:34 in); lead changes 1; final 67-78
+- 2026-11-06: Northern Colorado Bears @ Arizona State Sun Devils — first: Arizona State Sun Devils (2PT, 1:26 in); lead changes 0; final 63-90
+- 2026-11-06: Queens University Royals @ Oklahoma State Cowboys — first: Oklahoma State Cowboys (FT, 0:32 in); lead changes 2; final 68-118
+- 2026-11-06: Cal State Northridge Matadors @ Kansas State Wildcats — first: Kansas State Wildcats (2PT, 0:18 in); lead changes 4; final 78-95
+- 2026-11-06: Southern Illinois Salukis @ Kansas City Roos — first: Southern Illinois Salukis (2PT, 0:49 in); lead changes 7; final 93-100
+- 2026-11-06: Briar Cliff Chargers @ South Dakota State Jackrabbits — first: Briar Cliff Chargers (FT, 0:38 in); lead changes 1; final 49-71
+- 2026-11-06: UT Arlington Mavericks @ Portland Pilots — first: UT Arlington Mavericks (3PT, 0:18 in); lead changes 4; final 89-85
+- 2026-11-06: California Baptist Lancers @ Oregon State Beavers — first: Oregon State Beavers (2PT, 0:19 in); lead changes 8; final 68-96
+- 2026-11-06: Tarleton State Texans @ San Diego Toreros — first: Tarleton State Texans (3PT, 0:26 in); lead changes 5; final 90-96
+- 2026-11-06: Oakland Golden Grizzlies @ Stanford Cardinal — first: Stanford Cardinal (2PT, 0:25 in); lead changes 4; final 63-81
+- 2026-11-06: North Dakota State Bison @ San Francisco Dons — first: San Francisco Dons (3PT, 1:30 in); lead changes 0; final 70-79
+- 2026-11-06: Lincoln (CA) Oaklanders @ Loyola Marymount Lions — first: Loyola Marymount Lions (3PT, 1:45 in); lead changes 0; final 50-102
+- 2026-11-06: Bethesda Flames @ Hawai'i Rainbow Warriors — first: Bethesda Flames (2PT, 0:51 in); lead changes 1; final 44-116
+- 2026-11-07: Morehead State Eagles @ Louisville Cardinals — first: Morehead State Eagles (2PT, 0:25 in); lead changes 3; final 57-107
+- 2026-11-07: New Mexico State Aggies @ Gonzaga Bulldogs — first: New Mexico State Aggies (2PT, 1:04 in); lead changes 1; final 68-109
+- 2026-11-07: North Dakota Fighting Hawks @ Winthrop Eagles — first: North Dakota Fighting Hawks (2PT, 0:07 in); lead changes 4; final 93-90
+- 2026-11-07: City College NY Beavers @ Fairleigh Dickinson Knights — first: Fairleigh Dickinson Knights (3PT, 0:18 in); lead changes 0; final 56-93
+- 2026-11-07: Andrew Fighting Tigers @ Georgia State Panthers — first: Georgia State Panthers (2PT, 0:09 in); lead changes 2; final 61-111
+- 2026-11-07: North Carolina A&T Aggies @ Ohio Bobcats — first: North Carolina A&T Aggies (2PT, 0:17 in); lead changes 3; final 70-80
+- 2026-11-07: Boyce Bulldogs @ Liberty Flames — first: Liberty Flames (3PT, 0:14 in); lead changes 0; final 54-113
+- 2026-11-07: Loyola New Orleans Wolfpack @ LSU New Orleans Privateers — first: LSU New Orleans Privateers (2PT, 0:23 in); lead changes 0; final 65-90
+- 2026-11-07: Toledo Rockets @ Marshall Thundering Herd — first: Toledo Rockets (FT, 0:42 in); lead changes 14; final 81-76
+- 2026-11-07: Colgate Raiders @ Drexel Dragons — first: Drexel Dragons (3PT, 1:08 in); lead changes 4; final 74-77
+- 2026-11-07: Cal State Fullerton Titans @ South Dakota Coyotes — first: South Dakota Coyotes (2PT, 0:14 in); lead changes 5; final 87-85
+- 2026-11-07: UNC Wilmington Seahawks @ East Carolina Pirates — first: East Carolina Pirates (2PT, 0:18 in); lead changes 9; final 78-75
+- 2026-11-07: Lamar Cardinals @ Abilene Christian Wildcats — first: Lamar Cardinals (2PT, 0:04 in); lead changes 3; final 81-83
+- 2026-11-07: Long Beach State Beach @ Montana State Bobcats — first: Montana State Bobcats (2PT, 0:23 in); lead changes 0; final 70-83
+- 2026-11-07: North Carolina Central Eagles @ Longwood Lancers — first: North Carolina Central Eagles (2PT, 1:05 in); lead changes 9; final 75-80
+- 2026-11-07: VCU Rams @ Memphis Tigers — first: VCU Rams (3PT, 1:09 in); lead changes 9; final 88-89
+- 2026-11-07: Howard Payne Yellow Jackets @ Sam Houston Bearkats — first: Sam Houston Bearkats (3PT, 1:00 in); lead changes 0; final 59-102
+- 2026-11-07: Long Island University Sharks @ La Salle Explorers — first: La Salle Explorers (FT, 0:42 in); lead changes 6; final 80-88
+- 2026-11-07: San Diego State Aztecs @ Colorado Buffaloes — first: Colorado Buffaloes (2PT, 0:21 in); lead changes 1; final 77-66
+- 2026-11-07: Omaha Mavericks @ Utah State Aggies — first: Utah State Aggies (FT, 0:23 in); lead changes 2; final 56-90
+- 2026-11-07: Oakland Golden Grizzlies @ UC Santa Barbara Gauchos — first: UC Santa Barbara Gauchos (2PT, 0:16 in); lead changes 4; final 67-90
+- 2026-11-07: Samford Bulldogs @ UNLV Rebels — first: Samford Bulldogs (2PT, 0:34 in); lead changes 9; final 79-88
+- 2026-11-07: Lafayette Leopards @ Saint Joseph's Hawks — first: Saint Joseph's Hawks (2PT, 0:15 in); lead changes 6; final 57-67
+- 2026-11-07: Monmouth Hawks @ Rhode Island Rams — first: Monmouth Hawks (2PT, 0:34 in); lead changes 1; final 66-84
+- 2026-11-07: Penn State Shenango Nittany Lions @ Mercyhurst Lakers — first: Penn State Shenango Nittany Lions (2PT, 0:10 in); lead changes 1; final 50-89
+- 2026-11-07: East West Phantoms @ Lindenwood Lions — first: Lindenwood Lions (FT, 0:14 in); lead changes 2; final 44-115
+- 2026-11-07: Cheyney (PA) Wolves @ Maryland Eastern Shore Hawks — first: Maryland Eastern Shore Hawks (FT, 0:12 in); lead changes 2; final 55-81
+- 2026-11-07: VMI Keydets @ UTSA Roadrunners — first: VMI Keydets (FT, 0:46 in); lead changes 11; final 68-70
+- 2026-11-07: Northern Iowa Panthers @ Furman Paladins — first: Northern Iowa Panthers (2PT, 0:15 in); lead changes 5; final 83-98
+- 2026-11-07: Old Dominion Monarchs @ Bucknell Bison — first: Bucknell Bison (2PT, 0:56 in); lead changes 7; final 82-62
+- 2026-11-07: UT Martin Skyhawks @ IU Indianapolis Jaguars — first: UT Martin Skyhawks (2PT, 0:17 in); lead changes 13; final 74-75
+- 2026-11-07: SIU Edwardsville Cougars @ Lipscomb Bisons — first: Lipscomb Bisons (2PT, 0:10 in); lead changes 6; final 77-78
+- 2026-11-07: Washington State Cougars @ High Point Panthers — first: Washington State Cougars (2PT, 0:49 in); lead changes 19; final 71-83
+- 2026-11-07: Bellarmine Knights @ Miami (OH) RedHawks — first: Bellarmine Knights (2PT, 1:04 in); lead changes 5; final 73-80
+- 2026-11-07: Prairie View A&M Panthers @ UT Rio Grande Valley Vaqueros — first: UT Rio Grande Valley Vaqueros (3PT, 0:20 in); lead changes 10; final 63-68
+- 2026-11-07: Western Carolina Catamounts @ UNC Asheville Bulldogs — first: Western Carolina Catamounts (FT, 0:40 in); lead changes 6; final 83-75
+- 2026-11-07: Hampton Pirates @ George Washington Revolutionaries — first: Hampton Pirates (2PT, 0:29 in); lead changes 5; final 61-75
+- 2026-11-07: Northern Arizona Lumberjacks @ New Mexico Lobos — first: New Mexico Lobos (FT, 1:09 in); lead changes 0; final 65-94
+- 2026-11-07: Morgan State Bears @ Niagara Purple Eagles — first: Niagara Purple Eagles (3PT, 0:29 in); lead changes 3; final 73-67
+- 2026-11-07: Albion Britons @ Purdue Fort Wayne Mastodons — first: Purdue Fort Wayne Mastodons (2PT, 0:26 in); lead changes 0; final 65-103
+- 2026-11-07: Mercer Bears @ Davidson Wildcats — first: Mercer Bears (3PT, 0:28 in); lead changes 5; final 76-88
+- 2026-11-07: Houston Christian Huskies @ Western Illinois Leathernecks — first: Western Illinois Leathernecks (2PT, 0:06 in); lead changes 7; final 74-67
+- 2026-11-07: St. Bonaventure Bonnies @ Canisius Golden Griffins — first: St. Bonaventure Bonnies (3PT, 0:18 in); lead changes 0; final 88-49
+- 2026-11-07: Northern Illinois Huskies @ Dayton Flyers — first: Northern Illinois Huskies (2PT, 0:57 in); lead changes 8; final 81-76
+- 2026-11-07: Providence Friars @ Nebraska Cornhuskers — first: Providence Friars (2PT, 0:23 in); lead changes 5; final 58-67
+- 2026-11-07: Denver Pioneers @ UC Riverside Highlanders — first: Denver Pioneers (3PT, 0:44 in); lead changes 3; final 60-64
+- 2026-11-07: Central State Marauders @ Duquesne Dukes — first: Central State Marauders (2PT, 0:14 in); lead changes 15; final 58-68
+- 2026-11-07: Maryland Terrapins @ Georgetown Hoyas — first: Georgetown Hoyas (2PT, 0:14 in); lead changes 2; final 74-86
+- 2026-11-07: Northwestern (OK) Rangers @ Oral Roberts Golden Eagles — first: Oral Roberts Golden Eagles (2PT, 1:13 in); lead changes 0; final 39-94
+- 2026-11-07: Northwestern State Demons @ Murray State Racers — first: Murray State Racers (2PT, 0:05 in); lead changes 10; final 71-93
+- 2026-11-07: Southern Indiana Screaming Eagles @ Evansville Purple Aces — first: Southern Indiana Screaming Eagles (FT, 1:22 in); lead changes 19; final 76-78
+- 2026-11-07: SE Louisiana Lions @ Little Rock Trojans — first: Little Rock Trojans (3PT, 0:20 in); lead changes 9; final 83-79
+- 2026-11-07: Pacific Tigers @ Bradley Braves — first: Bradley Braves (3PT, 0:26 in); lead changes 1; final 63-52
+- 2026-11-07: Bethune-Cookman Wildcats @ Grand Canyon Lopes — first: Grand Canyon Lopes (2PT, 0:53 in); lead changes 0; final 81-99
+- 2026-11-07: Bethesda Flames @ Southern Utah Thunderbirds — first: Southern Utah Thunderbirds (2PT, 0:48 in); lead changes 0; final 49-143
+- 2026-11-07: Bethesda Flames @ Pepperdine Waves — first: Pepperdine Waves (3PT, 0:11 in); lead changes 0; final 43-116
+- 2026-11-07: Utah Valley Wolverines @ Weber State Wildcats — first: Utah Valley Wolverines (2PT, 0:23 in); lead changes 4; final 101-93
+- 2026-11-07: Fresno State Bulldogs @ UC San Diego Tritons — first: UC San Diego Tritons (2PT, 0:20 in); lead changes 4; final 65-81
+- 2026-11-07: Sacramento State Hornets @ Santa Clara Broncos — first: Sacramento State Hornets (2PT, 0:34 in); lead changes 5; final 77-83
+- 2026-11-07: Portland State Vikings @ Seattle U Redhawks — first: Seattle U Redhawks (2PT, 0:34 in); lead changes 12; final 60-79
+- 2026-11-07: San José State Spartans @ UC Irvine Anteaters — first: UC Irvine Anteaters (3PT, 0:27 in); lead changes 0; final 79-91
+- 2026-11-08: Arkansas Razorbacks @ Virginia Cavaliers — first: Arkansas Razorbacks (FT, 1:02 in); lead changes 5; final 72-91
+- 2026-11-08: California Golden Bears @ Houston Cougars — first: Houston Cougars (2PT, 0:18 in); lead changes 0; final 68-86
+- 2026-11-08: Iona Gaels @ St. John's Red Storm — first: St. John's Red Storm (3PT, 0:14 in); lead changes 0; final 65-104
+- 2026-11-08: Wichita State Shockers @ USC Trojans — first: USC Trojans (2PT, 0:38 in); lead changes 6; final 86-93
+- 2026-11-08: Ripon Red Hawks @ Milwaukee Panthers — first: Milwaukee Panthers (2PT, 0:50 in); lead changes 2; final 48-99
+- 2026-11-08: Princeton Tigers @ Siena Saints — first: Siena Saints (3PT, 1:08 in); lead changes 0; final 68-82
+- 2026-11-08: Southeast Missouri State Redhawks @ South Carolina Gamecocks — first: South Carolina Gamecocks (2PT, 1:05 in); lead changes 12; final 68-78
+- 2026-11-08: Marist Red Foxes @ UMass Lowell River Hawks — first: Marist Red Foxes (2PT, 0:31 in); lead changes 19; final 61-63
+- 2026-11-08: Sacred Heart Pioneers @ New Hampshire Wildcats — first: Sacred Heart Pioneers (2PT, 0:14 in); lead changes 14; final 81-76
+- 2026-11-08: Manhattan Jaspers @ Maine Black Bears — first: Manhattan Jaspers (2PT, 0:42 in); lead changes 10; final 68-62
+- 2026-11-08: Fairfield Stags @ Bryant Bulldogs — first: Fairfield Stags (2PT, 0:27 in); lead changes 8; final 68-59
+- 2026-11-08: Central Penn Knights @ Navy Midshipmen — first: Navy Midshipmen (3PT, 0:18 in); lead changes 0; final 46-102
+- 2026-11-08: Allen Yellow Jackets @ Wofford Terriers — first: Wofford Terriers (3PT, 0:15 in); lead changes 0; final 67-100
+- 2026-11-08: Keuka Storm @ Cornell Big Red — first: Cornell Big Red (2PT, 1:23 in); lead changes 0; final 59-99
+- 2026-11-08: Merrimack Warriors @ UAlbany Great Danes — first: Merrimack Warriors (3PT, 0:54 in); lead changes 2; final 73-60
+- 2026-11-08: Green Bay Phoenix @ St. Thomas Tommies — first: St. Thomas Tommies (3PT, 1:18 in); lead changes 11; final 76-67
+- 2026-11-08: Campbell Fighting Camels @ Western Michigan Broncos — first: Campbell Fighting Camels (2PT, 0:51 in); lead changes 1; final 71-87
+- 2026-11-08: Quinnipiac Bobcats @ Vermont Catamounts — first: Quinnipiac Bobcats (2PT, 0:15 in); lead changes 6; final 79-76
+- 2026-11-08: Harvard Crimson @ Chicago Maroons — first: Chicago Maroons (2PT, 0:25 in); lead changes 3; final 63-47
+- 2026-11-08: Central Connecticut Blue Devils @ Dartmouth Big Green — first: Central Connecticut Blue Devils (2PT, 0:19 in); lead changes 16; final 78-71
+- 2026-11-08: Brown Bears @ Lehigh Mountain Hawks — first: Brown Bears (2PT, 0:38 in); lead changes 10; final 65-55
+- 2026-11-08: Butler Bulldogs @ Boise State Broncos — first: Butler Bulldogs (2PT, 0:17 in); lead changes 1; final 81-100
+- 2026-11-08: Southern Jaguars @ Drake Bulldogs — first: Drake Bulldogs (3PT, 0:18 in); lead changes 4; final 68-75
+- 2026-11-08: Western Kentucky Hilltoppers @ Tennessee Tech Golden Eagles — first: Western Kentucky Hilltoppers (3PT, 0:26 in); lead changes 3; final 94-97
+- 2026-11-08: Idaho State Bengals @ Air Force Falcons — first: Idaho State Bengals (3PT, 0:28 in); lead changes 7; final 82-89
+- 2026-11-08: Saint Peter's Peacocks @ NJIT Highlanders — first: Saint Peter's Peacocks (2PT, 0:16 in); lead changes 5; final 52-54
+- 2026-11-08: Rider Broncs @ Binghamton Bearcats — first: Binghamton Bearcats (FT, 0:29 in); lead changes 2; final 63-75
+- 2026-11-08: Saint Mary's Gaels @ Nevada Wolf Pack — first: Saint Mary's Gaels (2PT, 0:14 in); lead changes 7; final 95-96
+- 2026-11-08: Lincoln (CA) Oaklanders @ Idaho Vandals — first: Idaho Vandals (2PT, 0:24 in); lead changes 0; final 69-108
+- 2026-11-08: Richmond Spiders @ Temple Owls — first: Richmond Spiders (3PT, 0:32 in); lead changes 0; final 79-53
+- 2026-11-08: Norfolk State Spartans @ William & Mary Tribe — first: William & Mary Tribe (2PT, 0:43 in); lead changes 0; final 73-104
+- 2026-11-08: North Dakota State Bison @ Cal State Bakersfield Roadrunners — first: North Dakota State Bison (2PT, 0:35 in); lead changes 11; final 80-91
+- 2026-11-08: Incarnate Word Cardinals @ UTEP Miners — first: UTEP Miners (2PT, 0:28 in); lead changes 0; final 60-79
+- 2026-11-08: Portland Pilots @ Bethesda Flames — first: Portland Pilots (FT, 0:13 in); lead changes 0; final 130-56
+- 2026-11-08: Pittsburgh Panthers @ Penn State Nittany Lions — first: Pittsburgh Panthers (2PT, 0:25 in); lead changes 10; final 82-76
+- 2026-11-08: UT Arlington Mavericks @ Hawai'i Rainbow Warriors — first: Hawai'i Rainbow Warriors (2PT, 0:51 in); lead changes 2; final 62-71
+- 2026-11-09: Wagner Seahawks @ UConn Huskies — first: UConn Huskies (3PT, 0:23 in); lead changes 0; final 41-83
+- 2026-11-09: Grambling Tigers @ Texas Longhorns — first: Texas Longhorns (FT, 0:21 in); lead changes 0; final 62-93
+- 2026-11-09: Radford Highlanders @ Tennessee Volunteers — first: Radford Highlanders (FT, 0:22 in); lead changes 3; final 47-70
+- 2026-11-09: North Florida Ospreys @ Miami Hurricanes — first: Miami Hurricanes (2PT, 1:31 in); lead changes 0; final 51-89
+- 2026-11-09: Oakland Golden Grizzlies @ Alabama Crimson Tide — first: Alabama Crimson Tide (3PT, 0:33 in); lead changes 0; final 68-109
+- 2026-11-09: Cheyney (PA) Wolves @ Coppin State Eagles — first: Cheyney (PA) Wolves (FT, 0:51 in); lead changes 3; final 53-90
+- 2026-11-09: McDaniel Green Terror @ UMBC Retrievers — first: McDaniel Green Terror (FT, 2:31 in); lead changes 3; final 61-91
+- 2026-11-09: Hiram Terriers @ Canisius Golden Griffins — first: Hiram Terriers (2PT, 0:41 in); lead changes 3; final 60-117
+- 2026-11-09: Marshall Thundering Herd @ Ohio State Buckeyes — first: Ohio State Buckeyes (FT, 0:20 in); lead changes 4; final 74-84
+- 2026-11-09: Howard Bison @ Pennsylvania Quakers — first: Howard Bison (2PT, 0:36 in); lead changes 3; final 65-78
+- 2026-11-09: Penn State Schuylkill Nittany Lions @ Buffalo Bulls — first: Buffalo Bulls (FT, 1:00 in); lead changes 0; final 65-107
+- 2026-11-09: Syracuse Orange @ Indiana Hoosiers — first: Syracuse Orange (2PT, 1:02 in); lead changes 13; final 80-83
+- 2026-11-09: Simpson (IA) Storm @ Western Illinois Leathernecks — first: Western Illinois Leathernecks (2PT, 0:37 in); lead changes 0; final 48-90
+- 2026-11-09: Muskingum Fighting Muskies @ Akron Zips — first: Akron Zips (2PT, 0:40 in); lead changes 0; final 64-112
+- 2026-11-09: UNC Greensboro Spartans @ UIC Flames — first: UNC Greensboro Spartans (3PT, 0:30 in); lead changes 3; final 72-82
+- 2026-11-09: Eastern Illinois Panthers @ Notre Dame Fighting Irish — first: Eastern Illinois Panthers (3PT, 0:55 in); lead changes 1; final 70-94
+- 2026-11-09: Georgia Gwinnett Grizzlies @ Alabama State Hornets — first: Georgia Gwinnett Grizzlies (2PT, 0:44 in); lead changes 10; final 79-77
+- 2026-11-09: Baptist (Fl) Eagles @ West Florida Argonauts — first: West Florida Argonauts (2PT, 1:32 in); lead changes 2; final 59-110
+- 2026-11-09: South Carolina Upstate Spartans @ Coastal Carolina Chanticleers — first: South Carolina Upstate Spartans (3PT, 3:21 in); lead changes 1; final 56-65
+- 2026-11-09: Washington Maryland Shoremen @ Loyola Maryland Greyhounds — first: Loyola Maryland Greyhounds (2PT, 0:24 in); lead changes 0; final 64-106
+- 2026-11-09: Covenant Fighting Scots @ Chattanooga Mocs — first: Chattanooga Mocs (3PT, 0:26 in); lead changes 0; final 67-97
+- 2026-11-09: Kansas City Roos @ Jacksonville Dolphins — first: Kansas City Roos (2PT, 1:02 in); lead changes 1; final 61-79
+- 2026-11-09: Stonehill Skyhawks @ Columbia Lions — first: Stonehill Skyhawks (2PT, 0:35 in); lead changes 5; final 55-75
+- 2026-11-09: Long Island University Sharks @ Towson Tigers — first: Long Island University Sharks (3PT, 0:25 in); lead changes 3; final 46-66
+- 2026-11-09: Elmira Soaring Eagles @ Le Moyne Dolphins — first: Le Moyne Dolphins (2PT, 1:45 in); lead changes 0; final 39-109
+- 2026-11-09: South Carolina State Bulldogs @ Chicago State Cougars — first: South Carolina State Bulldogs (2PT, 0:36 in); lead changes 2; final 82-67
+- 2026-11-09: North Dakota Fighting Hawks @ Clemson Tigers — first: Clemson Tigers (2PT, 0:13 in); lead changes 10; final 77-92
+- 2026-11-09: Minnesota Golden Gophers @ Cincinnati Bearcats — first: Minnesota Golden Gophers (3PT, 0:19 in); lead changes 6; final 63-61
+- 2026-11-09: Cleveland State Vikings @ Bowling Green Falcons — first: Cleveland State Vikings (2PT, 0:23 in); lead changes 1; final 79-95
+- 2026-11-09: Brescia Bearcats @ Ball State Cardinals — first: Ball State Cardinals (3PT, 0:20 in); lead changes 0; final 64-89
+- 2026-11-09: Florida Gulf Coast Eagles @ Georgia Bulldogs — first: Georgia Bulldogs (FT, 0:20 in); lead changes 2; final 72-80
+- 2026-11-09: College of Biblical Studies Ambassadors @ McNeese Cowboys — first: McNeese Cowboys (FT, 0:21 in); lead changes 2; final 87-135
+- 2026-11-09: Florida A&M Rattlers @ UAB Blazers — first: UAB Blazers (3PT, 0:32 in); lead changes 2; final 64-92
+- 2026-11-09: Jackson State Tigers @ Mississippi State Bulldogs — first: Mississippi State Bulldogs (3PT, 1:06 in); lead changes 4; final 57-98
+- 2026-11-09: Southern New Orleans Knights @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (2PT, 0:55 in); lead changes 0; final 39-56
+- 2026-11-09: SIU Edwardsville Cougars @ Missouri Tigers — first: Missouri Tigers (2PT, 0:56 in); lead changes 0; final 58-96
+- 2026-11-09: Louisiana Tech Bulldogs @ LSU Tigers — first: Louisiana Tech Bulldogs (2PT, 1:01 in); lead changes 1; final 50-90
+- 2026-11-09: Fisk Bulldogs @ Tennessee State Tigers — first: Tennessee State Tigers (2PT, 0:11 in); lead changes 0; final 73-123
+- 2026-11-09: Boston University Terriers @ Northwestern Wildcats — first: Northwestern Wildcats (2PT, 0:40 in); lead changes 0; final 55-72
+- 2026-11-09: UL Monroe Warhawks @ Texas A&M Aggies — first: Texas A&M Aggies (2PT, 0:32 in); lead changes 0; final 67-108
+- 2026-11-09: North Alabama Lions @ Oklahoma Sooners — first: Oklahoma Sooners (3PT, 0:46 in); lead changes 4; final 72-81
+- 2026-11-09: Illinois State Redbirds @ Purdue Boilermakers — first: Purdue Boilermakers (3PT, 1:47 in); lead changes 0; final 59-76
+- 2026-11-09: Seton Hall Pirates @ Charlotte 49ers — first: Charlotte 49ers (3PT, 0:25 in); lead changes 7; final 68-62
+- 2026-11-09: App State Mountaineers @ Auburn Tigers — first: App State Mountaineers (3PT, 0:20 in); lead changes 1; final 53-75
+- 2026-11-09: Alabama A&M Bulldogs @ DePaul Blue Demons — first: DePaul Blue Demons (FT, 0:38 in); lead changes 0; final 47-84
+- 2026-11-09: UT Arlington Mavericks @ Bethesda Flames — first: UT Arlington Mavericks (2PT, 0:26 in); lead changes 2; final 116-65
+- 2026-11-09: Eastern Washington Eagles @ Oregon State Beavers — first: Eastern Washington Eagles (2PT, 0:20 in); lead changes 1; final 84-94
+- 2026-11-09: Mississippi Valley State Delta Devils @ Washington Huskies — first: Mississippi Valley State Delta Devils (3PT, 0:15 in); lead changes 1; final 64-77
+- 2026-11-09: Rice Owls @ Stanford Cardinal — first: Stanford Cardinal (3PT, 0:20 in); lead changes 4; final 73-91
+- 2026-11-09: Portland Pilots @ Hawai'i Rainbow Warriors — first: Portland Pilots (2PT, 0:12 in); lead changes 8; final 73-66
+- 2026-11-10: Florida Gators @ Florida State Seminoles — first: Florida Gators (3PT, 1:20 in); lead changes 8; final 81-72
+- 2026-11-10: Michigan State Spartans @ Duke Blue Devils — first: Michigan State Spartans (2PT, 0:33 in); lead changes 0; final 79-73
+- 2026-11-10: Illinois Fighting Illini @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (2PT, 0:16 in); lead changes 0; final 78-84
+- 2026-11-10: Bucknell Bison @ Virginia Cavaliers — first: Virginia Cavaliers (2PT, 1:00 in); lead changes 0; final 61-95
+- 2026-11-10: Northern Arizona Lumberjacks @ Arizona Wildcats — first: Northern Arizona Lumberjacks (2PT, 0:22 in); lead changes 1; final 59-90
+- 2026-11-10: Kansas Jayhawks @ Kentucky Wildcats — first: Kentucky Wildcats (2PT, 0:47 in); lead changes 5; final 89-69
+- 2026-11-10: Queens University Royals @ BYU Cougars — first: BYU Cougars (2PT, 1:38 in); lead changes 6; final 82-98
+- 2026-11-10: NJIT Highlanders @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (FT, 0:06 in); lead changes 2; final 64-101
+- 2026-11-10: Delaware State Hornets @ Georgetown Hoyas — first: Georgetown Hoyas (3PT, 0:32 in); lead changes 14; final 78-83
+- 2026-11-10: College of Biblical Studies Ambassadors @ Texas Southern Tigers — first: Texas Southern Tigers (FT, 0:21 in); lead changes 2; final 78-98
+- 2026-11-10: Wright State Raiders @ Toledo Rockets — first: Wright State Raiders (FT, 0:29 in); lead changes 8; final 76-68
+- 2026-11-10: Apprentice School Builders @ Hampton Pirates — first: Hampton Pirates (FT, 0:21 in); lead changes 2; final 56-67
+- 2026-11-10: Virginia Lynchburg Dragons @ The Citadel Bulldogs — first: Virginia Lynchburg Dragons (2PT, 0:30 in); lead changes 1; final 50-131
+- 2026-11-10: Washington State Cougars @ Duquesne Dukes — first: Washington State Cougars (2PT, 1:16 in); lead changes 5; final 71-72
+- 2026-11-10: Bradley Braves @ Davidson Wildcats — first: Davidson Wildcats (2PT, 0:17 in); lead changes 2; final 45-62
+- 2026-11-10: Winthrop Eagles @ Kennesaw State Owls — first: Winthrop Eagles (2PT, 1:50 in); lead changes 5; final 79-88
+- 2026-11-10: St. Mary's (MD) Seahawks @ Longwood Lancers — first: Longwood Lancers (2PT, 0:14 in); lead changes 0; final 45-101
+- 2026-11-10: La Salle Explorers @ Villanova Wildcats — first: Villanova Wildcats (2PT, 2:43 in); lead changes 2; final 59-80
+- 2026-11-10: South Alabama Jaguars @ UCF Knights — first: UCF Knights (3PT, 0:14 in); lead changes 2; final 69-76
+- 2026-11-10: Mercer Bears @ Georgia Southern Eagles — first: Mercer Bears (2PT, 0:38 in); lead changes 6; final 97-91
+- 2026-11-10: Harvard Crimson @ Northeastern Huskies — first: Northeastern Huskies (2PT, 0:20 in); lead changes 4; final 70-74
+- 2026-11-10: Eastern Kentucky Colonels @ Georgia Tech Yellow Jackets — first: Eastern Kentucky Colonels (2PT, 0:14 in); lead changes 7; final 71-85
+- 2026-11-10: Maine Black Bears @ Rhode Island Rams — first: Rhode Island Rams (FT, 2:00 in); lead changes 2; final 65-71
+- 2026-11-10: Presbyterian Blue Hose @ NC State Wolfpack — first: Presbyterian Blue Hose (2PT, 0:54 in); lead changes 1; final 60-94
+- 2026-11-10: Loyola Marymount Lions @ Troy Trojans — first: Troy Trojans (3PT, 0:51 in); lead changes 2; final 69-74
+- 2026-11-10: Wyoming Cowboys @ North Carolina Tar Heels — first: Wyoming Cowboys (2PT, 0:11 in); lead changes 5; final 63-76
+- 2026-11-10: Army Black Knights @ New Haven Chargers — first: Army Black Knights (2PT, 0:54 in); lead changes 7; final 55-63
+- 2026-11-10: Elon Phoenix @ George Washington Revolutionaries — first: George Washington Revolutionaries (2PT, 0:26 in); lead changes 6; final 50-69
+- 2026-11-10: Iona Gaels @ Fordham Rams — first: Iona Gaels (3PT, 0:35 in); lead changes 7; final 72-78
+- 2026-11-10: Siena Saints @ Dayton Flyers — first: Dayton Flyers (3PT, 0:23 in); lead changes 15; final 99-89
+- 2026-11-10: Youngstown State Penguins @ Central Michigan Chippewas — first: Youngstown State Penguins (3PT, 0:34 in); lead changes 3; final 78-91
+- 2026-11-10: Charleston Southern Buccaneers @ Wake Forest Demon Deacons — first: Charleston Southern Buccaneers (2PT, 0:15 in); lead changes 1; final 64-82
+- 2026-11-10: Maryland Eastern Shore Hawks @ Boston College Eagles — first: Boston College Eagles (3PT, 0:15 in); lead changes 0; final 54-82
+- 2026-11-10: Detroit Mercy Titans @ Xavier Musketeers — first: Xavier Musketeers (2PT, 0:15 in); lead changes 0; final 55-100
+- 2026-11-10: Bryant Bulldogs @ Providence Friars — first: Providence Friars (2PT, 1:43 in); lead changes 0; final 55-78
+- 2026-11-10: Evansville Purple Aces @ Middle Tennessee Blue Raiders — first: Evansville Purple Aces (2PT, 0:46 in); lead changes 3; final 68-73
+- 2026-11-10: Texas State Bobcats @ UT Rio Grande Valley Vaqueros — first: Texas State Bobcats (2PT, 1:51 in); lead changes 2; final 72-65
+- 2026-11-10: Millsaps Majors @ Northwestern State Demons — first: Northwestern State Demons (FT, 1:52 in); lead changes 4; final 49-77
+- 2026-11-10: Nicholls Colonels @ Tulane Green Wave — first: Nicholls Colonels (2PT, 0:38 in); lead changes 1; final 63-77
+- 2026-11-10: Ecclesia Royals @ Central Arkansas Bears — first: Central Arkansas Bears (3PT, 0:56 in); lead changes 0; final 54-127
+- 2026-11-10: York (NE) Panthers @ Omaha Mavericks — first: Omaha Mavericks (2PT, 0:47 in); lead changes 4; final 66-78
+- 2026-11-10: UT Dallas Comets @ Tarleton State Texans — first: Tarleton State Texans (2PT, 0:48 in); lead changes 2; final 57-76
+- 2026-11-10: Newman Jets @ Missouri State Bears — first: Newman Jets (2PT, 0:24 in); lead changes 5; final 62-89
+- 2026-11-10: Green Bay Phoenix @ Northern Iowa Panthers — first: Green Bay Phoenix (2PT, 0:36 in); lead changes 5; final 76-89
+- 2026-11-10: UT Martin Skyhawks @ Arkansas State Red Wolves — first: UT Martin Skyhawks (3PT, 0:12 in); lead changes 2; final 82-65
+- 2026-11-10: Northern New Mexico Eagles @ Northern Colorado Bears — first: Northern New Mexico Eagles (3PT, 1:08 in); lead changes 1; final 52-102
+- 2026-11-10: Alcorn State Braves @ Murray State Racers — first: Murray State Racers (3PT, 0:20 in); lead changes 0; final 57-94
+- 2026-11-10: Dallas Christian Crusaders @ Texas A&M-Corpus Christi Islanders — first: Texas A&M-Corpus Christi Islanders (2PT, 0:18 in); lead changes 0; final 58-102
+- 2026-11-10: Houston Christian Huskies @ South Dakota Coyotes — first: Houston Christian Huskies (2PT, 0:35 in); lead changes 10; final 87-76
+- 2026-11-10: Belmont Bruins @ Lipscomb Bisons — first: Lipscomb Bisons (2PT, 0:23 in); lead changes 4; final 75-88
+- 2026-11-10: Prairie View A&M Panthers @ SMU Mustangs — first: SMU Mustangs (2PT, 0:43 in); lead changes 0; final 63-98
+- 2026-11-10: Northern Kentucky Norse @ Saint Louis Billikens — first: Saint Louis Billikens (2PT, 1:43 in); lead changes 0; final 63-125
+- 2026-11-10: Southern Jaguars @ Iowa State Cyclones — first: Iowa State Cyclones (2PT, 0:18 in); lead changes 0; final 47-84
+- 2026-11-10: Yale Bulldogs @ Baylor Bears — first: Yale Bulldogs (3PT, 0:31 in); lead changes 7; final 61-90
+- 2026-11-10: Fairfield Stags @ Wisconsin Badgers — first: Fairfield Stags (FT, 0:43 in); lead changes 1; final 42-89
+- 2026-11-10: SE Louisiana Lions @ Ole Miss Rebels — first: SE Louisiana Lions (2PT, 0:18 in); lead changes 3; final 51-91
+- 2026-11-10: Georgia State Panthers @ Fresno State Bulldogs — first: Fresno State Bulldogs (2PT, 1:18 in); lead changes 14; final 92-95
+- 2026-11-10: Utah Tech Trailblazers @ Utah State Aggies — first: Utah State Aggies (2PT, 0:21 in); lead changes 6; final 86-118
+- 2026-11-10: Little Rock Trojans @ New Mexico Lobos — first: Little Rock Trojans (2PT, 0:31 in); lead changes 1; final 69-94
+- 2026-11-10: Hofstra Pride @ Arizona State Sun Devils — first: Arizona State Sun Devils (2PT, 0:50 in); lead changes 0; final 63-85
+- 2026-11-10: Weber State Wildcats @ Utah Utes — first: Weber State Wildcats (2PT, 1:31 in); lead changes 9; final 64-85
+- 2026-11-10: UL Monroe Warhawks @ TCU Horned Frogs — first: UL Monroe Warhawks (3PT, 0:43 in); lead changes 23; final 92-100
+- 2026-11-10: San Diego Toreros @ Colorado Buffaloes — first: San Diego Toreros (FT, 0:54 in); lead changes 5; final 75-83
+- 2026-11-10: Creighton Bluejays @ Kansas State Wildcats — first: Kansas State Wildcats (3PT, 0:28 in); lead changes 8; final 82-89
+- 2026-11-10: Montana Grizzlies @ San Francisco Dons — first: Montana Grizzlies (2PT, 0:17 in); lead changes 9; final 58-63
+- note: 6 final(s) UNVERIFIED this run — left out, retried next run.
