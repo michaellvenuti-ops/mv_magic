@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-11 (scan 2026-11-11 12:20)
+# Hung numbers — 2026-11-11 (scan 2026-11-11 13:41)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Buffalo vs Ball State | Fanatics | moneyline Ball State | value: Ball State | book 99.0 vs median 49.8 | div 49.3 
@@ -6,7 +6,7 @@
 - Wake Forest vs SMU | bet365 | spread | value: favorite | book -1.5 vs median 1.0 | div 2.5 
 - East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.0 | div 3.5 
-- Ole Miss vs Oklahoma | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
+- Ole Miss vs Oklahoma | BetMGM | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
 - Appalachian State vs Marshall | BetMGM | moneyline Marshall | value: Marshall | book 98.0 vs median 49.9 | div 48.2 
 - Purdue vs Iowa | DraftKings | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
