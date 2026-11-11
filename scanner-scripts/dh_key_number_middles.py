@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
-"""DarkHorse KEY-NUMBER middles (PC port) — STRICT RULE.
+"""DarkHorse KEY-NUMBER middles (PC port) — DATA-BASED KEY SET.
 
-Michael's words, Oct 26, 2026: "I need exactly on the key numbers."
-Keep ONLY middles whose BOTH-WIN margin set CONTAINS a key number:
-3, 7, 10, 14, 17, 21, 28. The old cluster rule and key-leg extension
-are RETIRED — near-misses are out, no exceptions in this script.
+Rule changed Nov 10, 2026 at Michael's tap, replacing the Oct 26
+tradition-based set (3, 7, 10, 14, 17, 21, 28). The new set comes from
+Chet's scan of the nflverse game log — every NFL game since 2010
+(n=4,499), victory-margin landing rates: 3 = 14.6%, 7 = 8.7%,
+6 = 6.7%, 4 = 5.1%, 10 = 5.0%, 14 = 5.0%, 17 = 3.4%. Keep ONLY
+middles whose BOTH-WIN margin set CONTAINS one of: 3, 7, 6, 4, 10,
+14, 17 (ordered by landing frequency, so the reported key_number is
+the strongest hit). DROPPED: 21 (2.5%) and 28 (1.5%) — they land less
+often than the numbers that replaced them. ADDED: 6 and 4. The seven
+kept margins cover 48.5% of all games vs 40.8% for the old set.
+Full findings: nfl-key-numbers.html on mv_magic. Near-misses are
+still out — the set changed, the strictness didn't.
 
 Margin set definition (matches the live state files): for a spread
 middle favorite -A / underdog +B (B > A), the both-win-or-push margins
@@ -33,7 +41,7 @@ from odds_common import bank, now_stamp, today_str
 from state import load_state, save_state
 
 SCAN = "key-number-middles"
-KEY_NUMBERS = (3, 7, 10, 14, 17, 21, 28)
+KEY_NUMBERS = (3, 7, 6, 4, 10, 14, 17)  # by NFL landing rate since 2010 (Nov 10, 2026)
 MIN_WINDOW = 1.0
 CAP = -170
 CLEAN = -140
@@ -122,9 +130,9 @@ def main():
                   "dump back. No state written.", file=sys.stderr)
             return 2
         deliverables = []
-        lines = [f"## {now_stamp()} — key-number-middles (STRICT "
-                 f"exact-key rule): {len(full)} + {len(smaller)} rows "
-                 f"parsed, qualifying only below"]
+        lines = [f"## {now_stamp()} — key-number-middles (data-based "
+                 f"key set 3/7/6/4/10/14/17): {len(full)} + "
+                 f"{len(smaller)} rows parsed, qualifying only below"]
         for mid in full + smaller:
             if not qualifies(mid):
                 continue
@@ -188,7 +196,7 @@ def main():
             print(f"{tag}KEY-NUMBER MIDDLE (key {e['key_number']}): {key} "
                   f"— {e['leg1']} / {e['leg2']}")
         if not deliverables:
-            print("key-number-middles: no new strict-key middles.")
+            print("key-number-middles: no new key middles.")
         return 0
     finally:
         ctx.close()
