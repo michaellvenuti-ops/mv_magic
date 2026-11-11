@@ -5315,3 +5315,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 23:26:55 ET] dh_basketball_key_middles.py: OK in 184s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Jacksonville St. 8 Houston Nov-11 8:00 PM / table / Alt Spread Jacksonville St. +38.5 / Alt Spread Hous
 [2026-11-10 23:26:58 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
 [2026-11-10 23:28:42 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NCAAB Robert Morris 19 Arkansas Nov-11 8:00 PM / table / Alt Spread Robert Morris +33.5 / Alt Spread Arkansas -33 / table | theScore | Bet36
+[2026-11-10 23:37:18 ET] sync_to_github.py: OK in 516s —   ok: team-total-middles-board-pc.html
+[2026-11-10 23:37:49 ET] notify.py: OK in 32s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 23:38:26 ET] odds_recorder.py: OK in 7s — SUMMARY: recorded 227 events (64 with odds), db total 214997 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 23:41:39 ET] dh_game_middles.py: OK in 192s — GAME MIDDLE: NBA BKN Nets NO Pelicans Nov-11 8:15 PM / table / Alt Total Over 226.5 / Alt Total Under 227 / table | Fanatics-NJ | Bet365 — window 250.0 :: -125 
+[2026-11-10 23:43:50 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-10 23:43:54 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-10 23:43:55 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 23:43:56 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-10 23:45:18 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (64 with odds), db total 215224 snapshots / 747 events, feeds ok 6 fail 0
