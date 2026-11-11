@@ -7043,12 +7043,20 @@
    "sport": "NCAAB",
    "matchup": "Loyola Chicago at Air Force",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Loyola Chicago",
    "dog_team": "Air Force",
-   "live_ml": -230
+   "live_ml": -135,
+   "alerted_at": "2026-11-11T15:42:02",
+   "board_read_at": "2026-11-11T15:42:02",
+   "alert_expires_at": "2026-11-11T15:45:02",
+   "alert_detail": "4:54 - 1st Half",
+   "alert_fav_score": 27,
+   "alert_dog_score": 33,
+   "alert_ml": -135,
+   "ml_read_at": "2026-11-11T15:42:02"
   },
   "401918978": {
    "sport": "NCAAB",
@@ -7406,7 +7414,7 @@
    "date": "2026-11-12",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Valparaiso",
    "dog_team": "S Dakota St"
   },
