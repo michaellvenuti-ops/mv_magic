@@ -1,7 +1,6 @@
-# Hung numbers — 2026-11-11 (scan 2026-11-11 00:33)
+# Hung numbers — 2026-11-11 (scan 2026-11-11 01:41)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Buffalo vs Ball State | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Houston vs Colorado | bet365 | spread | value: favorite | book -10.5 vs median -9.5 | div 1.0 
 - Houston vs Colorado | FanDuel | spread | value: favorite | book -10.5 vs median -9.5 | div 1.0 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
