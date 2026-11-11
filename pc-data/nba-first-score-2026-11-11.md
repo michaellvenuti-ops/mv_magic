@@ -1,0 +1,308 @@
+## 2026-11-11T11:15:41-05:00 -- NBA FIRST SCORE (PC): 152 new final(s) tallied; season 152 games through 2026-11-10
+- 2026-10-20: Boston Celtics @ Detroit Pistons — first: Detroit Pistons (2PT, 0:51 in); lead changes 16; final 113-121
+- 2026-10-20: Philadelphia 76ers @ New York Knicks — first: Philadelphia 76ers (3PT, 0:16 in); lead changes 6; final 106-100
+- 2026-10-20: Oklahoma City Thunder @ San Antonio Spurs — first: San Antonio Spurs (3PT, 0:18 in); lead changes 5; final 116-104
+- 2026-10-21: Atlanta Hawks @ Orlando Magic — first: Atlanta Hawks (2PT, 0:19 in); lead changes 22; final 132-125
+- 2026-10-21: Milwaukee Bucks @ Washington Wizards — first: Milwaukee Bucks (2PT, 0:13 in); lead changes 7; final 116-128
+- 2026-10-21: Minnesota Timberwolves @ Miami Heat — first: Miami Heat (2PT, 0:13 in); lead changes 7; final 131-106
+- 2026-10-21: Charlotte Hornets @ Brooklyn Nets — first: Brooklyn Nets (2PT, 0:19 in); lead changes 7; final 110-103
+- 2026-10-21: Chicago Bulls @ Toronto Raptors — first: Toronto Raptors (2PT, 0:13 in); lead changes 0; final 92-135
+- 2026-10-21: Utah Jazz @ Memphis Grizzlies — first: Memphis Grizzlies (2PT, 0:11 in); lead changes 4; final 103-123
+- 2026-10-21: Indiana Pacers @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:35 in); lead changes 13; final 123-120
+- 2026-10-21: Dallas Mavericks @ Houston Rockets — first: Dallas Mavericks (3PT, 0:25 in); lead changes 7; final 110-128
+- 2026-10-21: Sacramento Kings @ LA Clippers — first: LA Clippers (3PT, 0:29 in); lead changes 0; final 96-121
+- 2026-10-22: Cleveland Cavaliers @ Philadelphia 76ers — first: Cleveland Cavaliers (2PT, 0:19 in); lead changes 1; final 106-114
+- 2026-10-22: Denver Nuggets @ Oklahoma City Thunder — first: Oklahoma City Thunder (3PT, 0:18 in); lead changes 2; final 84-96
+- 2026-10-23: Chicago Bulls @ Milwaukee Bucks — first: Chicago Bulls (2PT, 0:20 in); lead changes 10; final 132-125
+- 2026-10-23: New York Knicks @ Boston Celtics — first: Boston Celtics (2PT, 0:53 in); lead changes 12; final 103-107
+- 2026-10-23: Atlanta Hawks @ Charlotte Hornets — first: Charlotte Hornets (2PT, 0:27 in); lead changes 3; final 128-81
+- 2026-10-23: Dallas Mavericks @ Indiana Pacers — first: Dallas Mavericks (2PT, 0:31 in); lead changes 0; final 121-105
+- 2026-10-23: Minnesota Timberwolves @ Orlando Magic — first: Minnesota Timberwolves (2PT, 0:59 in); lead changes 0; final 115-93
+- 2026-10-23: Toronto Raptors @ Washington Wizards — first: Toronto Raptors (3PT, 0:51 in); lead changes 0; final 112-102
+- 2026-10-23: Detroit Pistons @ Miami Heat — first: Detroit Pistons (3PT, 0:44 in); lead changes 0; final 128-111
+- 2026-10-23: Houston Rockets @ San Antonio Spurs — first: Houston Rockets (3PT, 0:50 in); lead changes 14; final 114-110
+- 2026-10-23: New Orleans Pelicans @ Utah Jazz — first: Utah Jazz (2PT, 0:43 in); lead changes 6; final 119-120
+- 2026-10-23: Memphis Grizzlies @ Golden State Warriors — first: Memphis Grizzlies (2PT, 0:13 in); lead changes 14; final 111-108
+- 2026-10-23: LA Clippers @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 1:29 in); lead changes 12; final 117-125
+- 2026-10-23: Portland Trail Blazers @ Sacramento Kings — first: Sacramento Kings (FT, 0:35 in); lead changes 1; final 128-120
+- 2026-10-24: Miami Heat @ Charlotte Hornets — first: Miami Heat (2PT, 0:18 in); lead changes 9; final 110-115
+- 2026-10-24: Brooklyn Nets @ Cleveland Cavaliers — first: Cleveland Cavaliers (FT, 0:44 in); lead changes 4; final 121-125
+- 2026-10-24: Milwaukee Bucks @ Philadelphia 76ers — first: Philadelphia 76ers (3PT, 0:22 in); lead changes 4; final 116-127
+- 2026-10-24: Washington Wizards @ Chicago Bulls — first: Washington Wizards (3PT, 0:25 in); lead changes 12; final 124-120
+- 2026-10-24: San Antonio Spurs @ Dallas Mavericks — first: San Antonio Spurs (FT, 0:17 in); lead changes 14; final 122-106
+- 2026-10-24: Houston Rockets @ Atlanta Hawks — first: Atlanta Hawks (2PT, 0:36 in); lead changes 3; final 121-114
+- 2026-10-24: New Orleans Pelicans @ Denver Nuggets — first: Denver Nuggets (3PT, 0:55 in); lead changes 2; final 135-141
+- 2026-10-24: Golden State Warriors @ Phoenix Suns — first: Phoenix Suns (FT, 0:13 in); lead changes 14; final 122-131
+- 2026-10-25: Los Angeles Lakers @ Utah Jazz — first: Los Angeles Lakers (2PT, 0:20 in); lead changes 6; final 132-123
+- 2026-10-25: Indiana Pacers @ Brooklyn Nets — first: Indiana Pacers (2PT, 0:54 in); lead changes 8; final 136-109
+- 2026-10-25: Orlando Magic @ New York Knicks — first: New York Knicks (2PT, 0:53 in); lead changes 3; final 111-102
+- 2026-10-25: Toronto Raptors @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:51 in); lead changes 2; final 94-117
+- 2026-10-25: LA Clippers @ Oklahoma City Thunder — first: LA Clippers (2PT, 0:24 in); lead changes 9; final 101-108
+- 2026-10-25: Detroit Pistons @ Philadelphia 76ers — first: Detroit Pistons (2PT, 0:39 in); lead changes 0; final 106-93
+- 2026-10-25: Memphis Grizzlies @ Sacramento Kings — first: Sacramento Kings (2PT, 0:17 in); lead changes 3; final 123-112
+- 2026-10-26: Washington Wizards @ Charlotte Hornets — first: Charlotte Hornets (2PT, 1:24 in); lead changes 8; final 103-110
+- 2026-10-26: Chicago Bulls @ Boston Celtics — first: Boston Celtics (3PT, 0:51 in); lead changes 0; final 99-134
+- 2026-10-26: Indiana Pacers @ Milwaukee Bucks — first: Indiana Pacers (2PT, 1:14 in); lead changes 5; final 102-110
+- 2026-10-26: Atlanta Hawks @ Houston Rockets — first: Houston Rockets (2PT, 0:17 in); lead changes 20; final 110-120
+- 2026-10-26: Memphis Grizzlies @ Utah Jazz — first: Memphis Grizzlies (3PT, 0:10 in); lead changes 2; final 110-105
+- 2026-10-26: Golden State Warriors @ Denver Nuggets — first: Denver Nuggets (3PT, 0:18 in); lead changes 5; final 134-114
+- 2026-10-27: Brooklyn Nets @ Boston Celtics — first: Boston Celtics (2PT, 0:15 in); lead changes 10; final 124-125
+- 2026-10-27: Detroit Pistons @ New York Knicks — first: New York Knicks (2PT, 0:19 in); lead changes 4; final 97-111
+- 2026-10-27: Sacramento Kings @ San Antonio Spurs — first: San Antonio Spurs (2PT, 0:12 in); lead changes 4; final 103-130
+- 2026-10-28: Miami Heat @ Atlanta Hawks — first: Miami Heat (2PT, 0:22 in); lead changes 6; final 129-117
+- 2026-10-28: Washington Wizards @ Cleveland Cavaliers — first: Washington Wizards (FT, 0:16 in); lead changes 7; final 111-121
+- 2026-10-28: Charlotte Hornets @ Detroit Pistons — first: Charlotte Hornets (3PT, 1:15 in); lead changes 3; final 89-97
+- 2026-10-28: Philadelphia 76ers @ Indiana Pacers — first: Indiana Pacers (2PT, 1:14 in); lead changes 9; final 114-109
+- 2026-10-28: Orlando Magic @ Toronto Raptors — first: Orlando Magic (2PT, 0:17 in); lead changes 3; final 99-129
+- 2026-10-28: New York Knicks @ Chicago Bulls — first: New York Knicks (FT, 0:48 in); lead changes 18; final 133-127
+- 2026-10-28: Houston Rockets @ Milwaukee Bucks — first: Milwaukee Bucks (3PT, 0:40 in); lead changes 5; final 132-100
+- 2026-10-28: Golden State Warriors @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:37 in); lead changes 3; final 119-114
+- 2026-10-28: Denver Nuggets @ New Orleans Pelicans — first: Denver Nuggets (3PT, 0:32 in); lead changes 0; final 104-91
+- 2026-10-28: San Antonio Spurs @ Utah Jazz — first: San Antonio Spurs (2PT, 0:13 in); lead changes 12; final 117-111
+- 2026-10-28: Oklahoma City Thunder @ Dallas Mavericks — first: Dallas Mavericks (2PT, 0:35 in); lead changes 6; final 96-120
+- 2026-10-28: Los Angeles Lakers @ LA Clippers — first: Los Angeles Lakers (3PT, 0:14 in); lead changes 4; final 103-87
+- 2026-10-29: Cleveland Cavaliers @ Atlanta Hawks — first: Cleveland Cavaliers (FT, 0:53 in); lead changes 1; final 111-114
+- 2026-10-29: Sacramento Kings @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:46 in); lead changes 12; final 120-132
+- 2026-10-29: Memphis Grizzlies @ Portland Trail Blazers — first: Memphis Grizzlies (2PT, 0:32 in); lead changes 10; final 124-103
+- 2026-10-30: Charlotte Hornets @ Washington Wizards — first: Charlotte Hornets (3PT, 0:34 in); lead changes 1; final 79-95
+- 2026-10-30: Chicago Bulls @ Boston Celtics — first: Boston Celtics (2PT, 0:10 in); lead changes 6; final 111-125
+- 2026-10-30: Detroit Pistons @ Brooklyn Nets — first: Brooklyn Nets (2PT, 0:17 in); lead changes 3; final 110-94
+- 2026-10-30: New York Knicks @ Philadelphia 76ers — first: Philadelphia 76ers (FT, 0:36 in); lead changes 4; final 93-98
+- 2026-10-30: Orlando Magic @ Toronto Raptors — first: Toronto Raptors (2PT, 1:15 in); lead changes 5; final 121-114
+- 2026-10-30: Indiana Pacers @ Miami Heat — first: Miami Heat (2PT, 0:17 in); lead changes 8; final 125-145
+- 2026-10-30: Houston Rockets @ Dallas Mavericks — first: Houston Rockets (2PT, 0:27 in); lead changes 9; final 111-116
+- 2026-10-30: LA Clippers @ Minnesota Timberwolves — first: Minnesota Timberwolves (3PT, 0:12 in); lead changes 4; final 101-127
+- 2026-10-30: Los Angeles Lakers @ Golden State Warriors — first: Golden State Warriors (2PT, 0:14 in); lead changes 2; final 95-112
+- 2026-10-30: Denver Nuggets @ Phoenix Suns — first: Phoenix Suns (2PT, 0:52 in); lead changes 11; final 127-120
+- 2026-10-31: Portland Trail Blazers @ Utah Jazz — first: Portland Trail Blazers (2PT, 1:24 in); lead changes 4; final 112-90
+- 2026-10-31: Philadelphia 76ers @ Charlotte Hornets — first: Philadelphia 76ers (3PT, 0:26 in); lead changes 4; final 109-104
+- 2026-10-31: Atlanta Hawks @ New Orleans Pelicans — first: Atlanta Hawks (2PT, 0:41 in); lead changes 1; final 99-121
+- 2026-10-31: Sacramento Kings @ Memphis Grizzlies — first: Sacramento Kings (3PT, 1:08 in); lead changes 3; final 105-136
+- 2026-10-31: Cleveland Cavaliers @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:34 in); lead changes 5; final 136-111
+- 2026-10-31: Minnesota Timberwolves @ San Antonio Spurs — first: San Antonio Spurs (FT, 0:15 in); lead changes 8; final 111-121
+- 2026-10-31: Oklahoma City Thunder @ Houston Rockets — first: Oklahoma City Thunder (2PT, 0:12 in); lead changes 1; final 98-119
+- 2026-11-01: Boston Celtics @ Orlando Magic — first: Orlando Magic (3PT, 0:21 in); lead changes 5; final 108-97
+- 2026-11-01: Brooklyn Nets @ Indiana Pacers — first: Brooklyn Nets (2PT, 0:16 in); lead changes 4; final 98-90
+- 2026-11-01: LA Clippers @ Golden State Warriors — first: LA Clippers (2PT, 0:31 in); lead changes 7; final 112-124
+- 2026-11-01: Toronto Raptors @ Los Angeles Lakers — first: Toronto Raptors (3PT, 0:25 in); lead changes 1; final 125-131
+- 2026-11-02: Oklahoma City Thunder @ Cleveland Cavaliers — first: Cleveland Cavaliers (2PT, 0:17 in); lead changes 19; final 117-112
+- 2026-11-02: Detroit Pistons @ Charlotte Hornets — first: Charlotte Hornets (2PT, 0:21 in); lead changes 7; final 124-91
+- 2026-11-02: Atlanta Hawks @ Indiana Pacers — first: Atlanta Hawks (3PT, 0:26 in); lead changes 4; final 108-104
+- 2026-11-02: Brooklyn Nets @ New York Knicks — first: Brooklyn Nets (2PT, 0:40 in); lead changes 9; final 90-103
+- 2026-11-02: Washington Wizards @ Orlando Magic — first: Orlando Magic (2PT, 0:26 in); lead changes 11; final 103-94
+- 2026-11-02: Chicago Bulls @ Philadelphia 76ers — first: Philadelphia 76ers (FT, 1:10 in); lead changes 4; final 107-126
+- 2026-11-02: Sacramento Kings @ Dallas Mavericks — first: Dallas Mavericks (2PT, 1:15 in); lead changes 17; final 115-100
+- 2026-11-02: New Orleans Pelicans @ Memphis Grizzlies — first: New Orleans Pelicans (2PT, 1:02 in); lead changes 16; final 135-134
+- 2026-11-02: Milwaukee Bucks @ Minnesota Timberwolves — first: Milwaukee Bucks (2PT, 0:24 in); lead changes 5; final 100-112
+- 2026-11-02: Boston Celtics @ Houston Rockets — first: Houston Rockets (2PT, 1:09 in); lead changes 0; final 93-109
+- 2026-11-02: Utah Jazz @ San Antonio Spurs — first: Utah Jazz (2PT, 0:45 in); lead changes 1; final 97-119
+- 2026-11-02: Portland Trail Blazers @ Denver Nuggets — first: Denver Nuggets (2PT, 0:36 in); lead changes 3; final 118-110
+- 2026-11-02: Phoenix Suns @ Golden State Warriors — first: Phoenix Suns (2PT, 2:07 in); lead changes 3; final 113-116
+- 2026-11-02: Toronto Raptors @ LA Clippers — first: LA Clippers (3PT, 0:20 in); lead changes 1; final 125-118
+- 2026-11-02: Miami Heat @ Los Angeles Lakers — first: Miami Heat (FT, 0:51 in); lead changes 1; final 117-138
+- 2026-11-04: Philadelphia 76ers @ Detroit Pistons — first: Detroit Pistons (3PT, 0:25 in); lead changes 5; final 112-106
+- 2026-11-04: Atlanta Hawks @ Washington Wizards — first: Atlanta Hawks (3PT, 0:22 in); lead changes 8; final 120-105
+- 2026-11-04: Milwaukee Bucks @ Boston Celtics — first: Boston Celtics (3PT, 0:38 in); lead changes 4; final 102-109
+- 2026-11-04: Charlotte Hornets @ Brooklyn Nets — first: Brooklyn Nets (2PT, 1:20 in); lead changes 12; final 104-114
+- 2026-11-04: Chicago Bulls @ New York Knicks — first: New York Knicks (2PT, 0:49 in); lead changes 4; final 105-135
+- 2026-11-04: Indiana Pacers @ Memphis Grizzlies — first: Indiana Pacers (2PT, 0:50 in); lead changes 16; final 107-103
+- 2026-11-04: Utah Jazz @ New Orleans Pelicans — first: Utah Jazz (2PT, 0:15 in); lead changes 23; final 113-120
+- 2026-11-04: Cleveland Cavaliers @ Oklahoma City Thunder — first: Oklahoma City Thunder (3PT, 0:21 in); lead changes 0; final 116-124
+- 2026-11-04: Minnesota Timberwolves @ Houston Rockets — first: Minnesota Timberwolves (3PT, 0:23 in); lead changes 26; final 117-107
+- 2026-11-04: Toronto Raptors @ Denver Nuggets — first: Denver Nuggets (2PT, 0:36 in); lead changes 2; final 109-128
+- 2026-11-04: Portland Trail Blazers @ Phoenix Suns — first: Portland Trail Blazers (3PT, 0:36 in); lead changes 4; final 132-119
+- 2026-11-04: Dallas Mavericks @ San Antonio Spurs — first: San Antonio Spurs (2PT, 0:50 in); lead changes 6; final 111-112
+- 2026-11-04: Los Angeles Lakers @ Sacramento Kings — first: Los Angeles Lakers (3PT, 0:28 in); lead changes 4; final 116-103
+- 2026-11-04: Miami Heat @ LA Clippers — first: Miami Heat (FT, 1:11 in); lead changes 8; final 117-116
+- 2026-11-05: Orlando Magic @ Phoenix Suns — first: Orlando Magic (FT, 0:13 in); lead changes 5; final 104-117
+- 2026-11-05: Miami Heat @ Golden State Warriors — first: Miami Heat (2PT, 0:15 in); lead changes 3; final 100-120
+- 2026-11-06: Washington Wizards @ Atlanta Hawks — first: Atlanta Hawks (3PT, 0:31 in); lead changes 2; final 132-139
+- 2026-11-06: Boston Celtics @ Charlotte Hornets — first: Boston Celtics (3PT, 0:38 in); lead changes 0; final 119-80
+- 2026-11-06: Philadelphia 76ers @ Cleveland Cavaliers — first: Philadelphia 76ers (2PT, 0:30 in); lead changes 1; final 95-119
+- 2026-11-06: Utah Jazz @ Dallas Mavericks — first: Utah Jazz (3PT, 0:17 in); lead changes 9; final 100-112
+- 2026-11-06: Oklahoma City Thunder @ Memphis Grizzlies — first: Oklahoma City Thunder (2PT, 0:28 in); lead changes 2; final 128-97
+- 2026-11-06: Toronto Raptors @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:34 in); lead changes 3; final 121-107
+- 2026-11-06: Portland Trail Blazers @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 2:36 in); lead changes 2; final 118-124
+- 2026-11-06: San Antonio Spurs @ Sacramento Kings — first: San Antonio Spurs (2PT, 0:24 in); lead changes 10; final 124-109
+- 2026-11-07: Denver Nuggets @ Indiana Pacers — first: Indiana Pacers (3PT, 0:36 in); lead changes 1; final 114-102
+- 2026-11-07: Brooklyn Nets @ Atlanta Hawks — first: Brooklyn Nets (2PT, 0:41 in); lead changes 1; final 121-124
+- 2026-11-07: New York Knicks @ Cleveland Cavaliers — first: Cleveland Cavaliers (FT, 0:22 in); lead changes 11; final 109-97
+- 2026-11-07: Washington Wizards @ Oklahoma City Thunder — first: Oklahoma City Thunder (2PT, 0:32 in); lead changes 4; final 75-114
+- 2026-11-07: Orlando Magic @ Golden State Warriors — first: Golden State Warriors (2PT, 0:34 in); lead changes 10; final 119-126
+- 2026-11-07: Houston Rockets @ Phoenix Suns — first: Houston Rockets (2PT, 1:41 in); lead changes 17; final 99-102
+- 2026-11-07: San Antonio Spurs @ Portland Trail Blazers — first: San Antonio Spurs (3PT, 1:14 in); lead changes 0; final 125-103
+- 2026-11-08: Philadelphia 76ers @ Chicago Bulls — first: Chicago Bulls (2PT, 0:34 in); lead changes 9; final 127-121
+- 2026-11-08: Los Angeles Lakers @ Detroit Pistons — first: Los Angeles Lakers (2PT, 0:48 in); lead changes 0; final 121-116
+- 2026-11-08: Utah Jazz @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 1:01 in); lead changes 4; final 100-115
+- 2026-11-08: Brooklyn Nets @ Dallas Mavericks — first: Dallas Mavericks (2PT, 0:21 in); lead changes 0; final 93-130
+- 2026-11-08: Boston Celtics @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:48 in); lead changes 1; final 117-97
+- 2026-11-08: New Orleans Pelicans @ LA Clippers — first: New Orleans Pelicans (2PT, 0:29 in); lead changes 13; final 123-139
+- 2026-11-08: Miami Heat @ Sacramento Kings — first: Sacramento Kings (2PT, 1:00 in); lead changes 11; final 114-108
+- 2026-11-09: Los Angeles Lakers @ Atlanta Hawks — first: Atlanta Hawks (3PT, 0:30 in); lead changes 1; final 124-114
+- 2026-11-09: Cleveland Cavaliers @ Charlotte Hornets — first: Cleveland Cavaliers (2PT, 0:16 in); lead changes 3; final 112-124
+- 2026-11-09: Washington Wizards @ Detroit Pistons — first: Detroit Pistons (3PT, 0:53 in); lead changes 2; final 111-122
+- 2026-11-09: Memphis Grizzlies @ Toronto Raptors — first: Toronto Raptors (2PT, 1:00 in); lead changes 13; final 118-102
+- 2026-11-09: Indiana Pacers @ Dallas Mavericks — first: Indiana Pacers (FT, 0:12 in); lead changes 5; final 122-125
+- 2026-11-09: Denver Nuggets @ Houston Rockets — first: Denver Nuggets (FT, 0:17 in); lead changes 3; final 100-110
+- 2026-11-09: San Antonio Spurs @ Phoenix Suns — first: San Antonio Spurs (2PT, 0:45 in); lead changes 2; final 122-96
+- 2026-11-09: New Orleans Pelicans @ Golden State Warriors — first: Golden State Warriors (2PT, 0:15 in); lead changes 2; final 87-138
+- 2026-11-10: Milwaukee Bucks @ New York Knicks — first: Milwaukee Bucks (3PT, 1:01 in); lead changes 7; final 85-117
+- 2026-11-10: Boston Celtics @ Philadelphia 76ers — first: Boston Celtics (2PT, 0:45 in); lead changes 2; final 123-101
+- 2026-11-10: Miami Heat @ Utah Jazz — first: Utah Jazz (3PT, 0:11 in); lead changes 1; final 115-109
+- 2026-11-10: Orlando Magic @ Sacramento Kings — first: Sacramento Kings (2PT, 0:42 in); lead changes 5; final 107-100
+- 2026-11-10: Oklahoma City Thunder @ Portland Trail Blazers — first: Portland Trail Blazers (2PT, 1:11 in); lead changes 14; final 103-123
+- note: 8 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T11:15:55-05:00 -- NBA FIRST SCORE (PC): 152 new final(s) tallied; season 152 games through 2026-11-10
+- 2026-10-20: Boston Celtics @ Detroit Pistons — first: Detroit Pistons (2PT, 0:51 in); lead changes 16; final 113-121
+- 2026-10-20: Philadelphia 76ers @ New York Knicks — first: Philadelphia 76ers (3PT, 0:16 in); lead changes 6; final 106-100
+- 2026-10-20: Oklahoma City Thunder @ San Antonio Spurs — first: San Antonio Spurs (3PT, 0:18 in); lead changes 5; final 116-104
+- 2026-10-21: Atlanta Hawks @ Orlando Magic — first: Atlanta Hawks (2PT, 0:19 in); lead changes 22; final 132-125
+- 2026-10-21: Milwaukee Bucks @ Washington Wizards — first: Milwaukee Bucks (2PT, 0:13 in); lead changes 7; final 116-128
+- 2026-10-21: Minnesota Timberwolves @ Miami Heat — first: Miami Heat (2PT, 0:13 in); lead changes 7; final 131-106
+- 2026-10-21: Charlotte Hornets @ Brooklyn Nets — first: Brooklyn Nets (2PT, 0:19 in); lead changes 7; final 110-103
+- 2026-10-21: Chicago Bulls @ Toronto Raptors — first: Toronto Raptors (2PT, 0:13 in); lead changes 0; final 92-135
+- 2026-10-21: Utah Jazz @ Memphis Grizzlies — first: Memphis Grizzlies (2PT, 0:11 in); lead changes 4; final 103-123
+- 2026-10-21: Indiana Pacers @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:35 in); lead changes 13; final 123-120
+- 2026-10-21: Dallas Mavericks @ Houston Rockets — first: Dallas Mavericks (3PT, 0:25 in); lead changes 7; final 110-128
+- 2026-10-21: Sacramento Kings @ LA Clippers — first: LA Clippers (3PT, 0:29 in); lead changes 0; final 96-121
+- 2026-10-22: Cleveland Cavaliers @ Philadelphia 76ers — first: Cleveland Cavaliers (2PT, 0:19 in); lead changes 1; final 106-114
+- 2026-10-22: Denver Nuggets @ Oklahoma City Thunder — first: Oklahoma City Thunder (3PT, 0:18 in); lead changes 2; final 84-96
+- 2026-10-23: Chicago Bulls @ Milwaukee Bucks — first: Chicago Bulls (2PT, 0:20 in); lead changes 10; final 132-125
+- 2026-10-23: New York Knicks @ Boston Celtics — first: Boston Celtics (2PT, 0:53 in); lead changes 12; final 103-107
+- 2026-10-23: Atlanta Hawks @ Charlotte Hornets — first: Charlotte Hornets (2PT, 0:27 in); lead changes 3; final 128-81
+- 2026-10-23: Dallas Mavericks @ Indiana Pacers — first: Dallas Mavericks (2PT, 0:31 in); lead changes 0; final 121-105
+- 2026-10-23: Minnesota Timberwolves @ Orlando Magic — first: Minnesota Timberwolves (2PT, 0:59 in); lead changes 0; final 115-93
+- 2026-10-23: Toronto Raptors @ Washington Wizards — first: Toronto Raptors (3PT, 0:51 in); lead changes 0; final 112-102
+- 2026-10-23: Detroit Pistons @ Miami Heat — first: Detroit Pistons (3PT, 0:44 in); lead changes 0; final 128-111
+- 2026-10-23: Houston Rockets @ San Antonio Spurs — first: Houston Rockets (3PT, 0:50 in); lead changes 14; final 114-110
+- 2026-10-23: New Orleans Pelicans @ Utah Jazz — first: Utah Jazz (2PT, 0:43 in); lead changes 6; final 119-120
+- 2026-10-23: Memphis Grizzlies @ Golden State Warriors — first: Memphis Grizzlies (2PT, 0:13 in); lead changes 14; final 111-108
+- 2026-10-23: LA Clippers @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 1:29 in); lead changes 12; final 117-125
+- 2026-10-23: Portland Trail Blazers @ Sacramento Kings — first: Sacramento Kings (FT, 0:35 in); lead changes 1; final 128-120
+- 2026-10-24: Miami Heat @ Charlotte Hornets — first: Miami Heat (2PT, 0:18 in); lead changes 9; final 110-115
+- 2026-10-24: Brooklyn Nets @ Cleveland Cavaliers — first: Cleveland Cavaliers (FT, 0:44 in); lead changes 4; final 121-125
+- 2026-10-24: Milwaukee Bucks @ Philadelphia 76ers — first: Philadelphia 76ers (3PT, 0:22 in); lead changes 4; final 116-127
+- 2026-10-24: Washington Wizards @ Chicago Bulls — first: Washington Wizards (3PT, 0:25 in); lead changes 12; final 124-120
+- 2026-10-24: San Antonio Spurs @ Dallas Mavericks — first: San Antonio Spurs (FT, 0:17 in); lead changes 14; final 122-106
+- 2026-10-24: Houston Rockets @ Atlanta Hawks — first: Atlanta Hawks (2PT, 0:36 in); lead changes 3; final 121-114
+- 2026-10-24: New Orleans Pelicans @ Denver Nuggets — first: Denver Nuggets (3PT, 0:55 in); lead changes 2; final 135-141
+- 2026-10-24: Golden State Warriors @ Phoenix Suns — first: Phoenix Suns (FT, 0:13 in); lead changes 14; final 122-131
+- 2026-10-25: Los Angeles Lakers @ Utah Jazz — first: Los Angeles Lakers (2PT, 0:20 in); lead changes 6; final 132-123
+- 2026-10-25: Indiana Pacers @ Brooklyn Nets — first: Indiana Pacers (2PT, 0:54 in); lead changes 8; final 136-109
+- 2026-10-25: Orlando Magic @ New York Knicks — first: New York Knicks (2PT, 0:53 in); lead changes 3; final 111-102
+- 2026-10-25: Toronto Raptors @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:51 in); lead changes 2; final 94-117
+- 2026-10-25: LA Clippers @ Oklahoma City Thunder — first: LA Clippers (2PT, 0:24 in); lead changes 9; final 101-108
+- 2026-10-25: Detroit Pistons @ Philadelphia 76ers — first: Detroit Pistons (2PT, 0:39 in); lead changes 0; final 106-93
+- 2026-10-25: Memphis Grizzlies @ Sacramento Kings — first: Sacramento Kings (2PT, 0:17 in); lead changes 3; final 123-112
+- 2026-10-26: Washington Wizards @ Charlotte Hornets — first: Charlotte Hornets (2PT, 1:24 in); lead changes 8; final 103-110
+- 2026-10-26: Chicago Bulls @ Boston Celtics — first: Boston Celtics (3PT, 0:51 in); lead changes 0; final 99-134
+- 2026-10-26: Indiana Pacers @ Milwaukee Bucks — first: Indiana Pacers (2PT, 1:14 in); lead changes 5; final 102-110
+- 2026-10-26: Atlanta Hawks @ Houston Rockets — first: Houston Rockets (2PT, 0:17 in); lead changes 20; final 110-120
+- 2026-10-26: Memphis Grizzlies @ Utah Jazz — first: Memphis Grizzlies (3PT, 0:10 in); lead changes 2; final 110-105
+- 2026-10-26: Golden State Warriors @ Denver Nuggets — first: Denver Nuggets (3PT, 0:18 in); lead changes 5; final 134-114
+- 2026-10-27: Brooklyn Nets @ Boston Celtics — first: Boston Celtics (2PT, 0:15 in); lead changes 10; final 124-125
+- 2026-10-27: Detroit Pistons @ New York Knicks — first: New York Knicks (2PT, 0:19 in); lead changes 4; final 97-111
+- 2026-10-27: Sacramento Kings @ San Antonio Spurs — first: San Antonio Spurs (2PT, 0:12 in); lead changes 4; final 103-130
+- 2026-10-28: Miami Heat @ Atlanta Hawks — first: Miami Heat (2PT, 0:22 in); lead changes 6; final 129-117
+- 2026-10-28: Washington Wizards @ Cleveland Cavaliers — first: Washington Wizards (FT, 0:16 in); lead changes 7; final 111-121
+- 2026-10-28: Charlotte Hornets @ Detroit Pistons — first: Charlotte Hornets (3PT, 1:15 in); lead changes 3; final 89-97
+- 2026-10-28: Philadelphia 76ers @ Indiana Pacers — first: Indiana Pacers (2PT, 1:14 in); lead changes 9; final 114-109
+- 2026-10-28: Orlando Magic @ Toronto Raptors — first: Orlando Magic (2PT, 0:17 in); lead changes 3; final 99-129
+- 2026-10-28: New York Knicks @ Chicago Bulls — first: New York Knicks (FT, 0:48 in); lead changes 18; final 133-127
+- 2026-10-28: Houston Rockets @ Milwaukee Bucks — first: Milwaukee Bucks (3PT, 0:40 in); lead changes 5; final 132-100
+- 2026-10-28: Golden State Warriors @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:37 in); lead changes 3; final 119-114
+- 2026-10-28: Denver Nuggets @ New Orleans Pelicans — first: Denver Nuggets (3PT, 0:32 in); lead changes 0; final 104-91
+- 2026-10-28: San Antonio Spurs @ Utah Jazz — first: San Antonio Spurs (2PT, 0:13 in); lead changes 12; final 117-111
+- 2026-10-28: Oklahoma City Thunder @ Dallas Mavericks — first: Dallas Mavericks (2PT, 0:35 in); lead changes 6; final 96-120
+- 2026-10-28: Los Angeles Lakers @ LA Clippers — first: Los Angeles Lakers (3PT, 0:14 in); lead changes 4; final 103-87
+- 2026-10-29: Cleveland Cavaliers @ Atlanta Hawks — first: Cleveland Cavaliers (FT, 0:53 in); lead changes 1; final 111-114
+- 2026-10-29: Sacramento Kings @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:46 in); lead changes 12; final 120-132
+- 2026-10-29: Memphis Grizzlies @ Portland Trail Blazers — first: Memphis Grizzlies (2PT, 0:32 in); lead changes 10; final 124-103
+- 2026-10-30: Charlotte Hornets @ Washington Wizards — first: Charlotte Hornets (3PT, 0:34 in); lead changes 1; final 79-95
+- 2026-10-30: Chicago Bulls @ Boston Celtics — first: Boston Celtics (2PT, 0:10 in); lead changes 6; final 111-125
+- 2026-10-30: Detroit Pistons @ Brooklyn Nets — first: Brooklyn Nets (2PT, 0:17 in); lead changes 3; final 110-94
+- 2026-10-30: New York Knicks @ Philadelphia 76ers — first: Philadelphia 76ers (FT, 0:36 in); lead changes 4; final 93-98
+- 2026-10-30: Orlando Magic @ Toronto Raptors — first: Toronto Raptors (2PT, 1:15 in); lead changes 5; final 121-114
+- 2026-10-30: Indiana Pacers @ Miami Heat — first: Miami Heat (2PT, 0:17 in); lead changes 8; final 125-145
+- 2026-10-30: Houston Rockets @ Dallas Mavericks — first: Houston Rockets (2PT, 0:27 in); lead changes 9; final 111-116
+- 2026-10-30: LA Clippers @ Minnesota Timberwolves — first: Minnesota Timberwolves (3PT, 0:12 in); lead changes 4; final 101-127
+- 2026-10-30: Los Angeles Lakers @ Golden State Warriors — first: Golden State Warriors (2PT, 0:14 in); lead changes 2; final 95-112
+- 2026-10-30: Denver Nuggets @ Phoenix Suns — first: Phoenix Suns (2PT, 0:52 in); lead changes 11; final 127-120
+- 2026-10-31: Portland Trail Blazers @ Utah Jazz — first: Portland Trail Blazers (2PT, 1:24 in); lead changes 4; final 112-90
+- 2026-10-31: Philadelphia 76ers @ Charlotte Hornets — first: Philadelphia 76ers (3PT, 0:26 in); lead changes 4; final 109-104
+- 2026-10-31: Atlanta Hawks @ New Orleans Pelicans — first: Atlanta Hawks (2PT, 0:41 in); lead changes 1; final 99-121
+- 2026-10-31: Sacramento Kings @ Memphis Grizzlies — first: Sacramento Kings (3PT, 1:08 in); lead changes 3; final 105-136
+- 2026-10-31: Cleveland Cavaliers @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:34 in); lead changes 5; final 136-111
+- 2026-10-31: Minnesota Timberwolves @ San Antonio Spurs — first: San Antonio Spurs (FT, 0:15 in); lead changes 8; final 111-121
+- 2026-10-31: Oklahoma City Thunder @ Houston Rockets — first: Oklahoma City Thunder (2PT, 0:12 in); lead changes 1; final 98-119
+- 2026-11-01: Boston Celtics @ Orlando Magic — first: Orlando Magic (3PT, 0:21 in); lead changes 5; final 108-97
+- 2026-11-01: Brooklyn Nets @ Indiana Pacers — first: Brooklyn Nets (2PT, 0:16 in); lead changes 4; final 98-90
+- 2026-11-01: LA Clippers @ Golden State Warriors — first: LA Clippers (2PT, 0:31 in); lead changes 7; final 112-124
+- 2026-11-01: Toronto Raptors @ Los Angeles Lakers — first: Toronto Raptors (3PT, 0:25 in); lead changes 1; final 125-131
+- 2026-11-02: Oklahoma City Thunder @ Cleveland Cavaliers — first: Cleveland Cavaliers (2PT, 0:17 in); lead changes 19; final 117-112
+- 2026-11-02: Detroit Pistons @ Charlotte Hornets — first: Charlotte Hornets (2PT, 0:21 in); lead changes 7; final 124-91
+- 2026-11-02: Atlanta Hawks @ Indiana Pacers — first: Atlanta Hawks (3PT, 0:26 in); lead changes 4; final 108-104
+- 2026-11-02: Brooklyn Nets @ New York Knicks — first: Brooklyn Nets (2PT, 0:40 in); lead changes 9; final 90-103
+- 2026-11-02: Washington Wizards @ Orlando Magic — first: Orlando Magic (2PT, 0:26 in); lead changes 11; final 103-94
+- 2026-11-02: Chicago Bulls @ Philadelphia 76ers — first: Philadelphia 76ers (FT, 1:10 in); lead changes 4; final 107-126
+- 2026-11-02: Sacramento Kings @ Dallas Mavericks — first: Dallas Mavericks (2PT, 1:15 in); lead changes 17; final 115-100
+- 2026-11-02: New Orleans Pelicans @ Memphis Grizzlies — first: New Orleans Pelicans (2PT, 1:02 in); lead changes 16; final 135-134
+- 2026-11-02: Milwaukee Bucks @ Minnesota Timberwolves — first: Milwaukee Bucks (2PT, 0:24 in); lead changes 5; final 100-112
+- 2026-11-02: Boston Celtics @ Houston Rockets — first: Houston Rockets (2PT, 1:09 in); lead changes 0; final 93-109
+- 2026-11-02: Utah Jazz @ San Antonio Spurs — first: Utah Jazz (2PT, 0:45 in); lead changes 1; final 97-119
+- 2026-11-02: Portland Trail Blazers @ Denver Nuggets — first: Denver Nuggets (2PT, 0:36 in); lead changes 3; final 118-110
+- 2026-11-02: Phoenix Suns @ Golden State Warriors — first: Phoenix Suns (2PT, 2:07 in); lead changes 3; final 113-116
+- 2026-11-02: Toronto Raptors @ LA Clippers — first: LA Clippers (3PT, 0:20 in); lead changes 1; final 125-118
+- 2026-11-02: Miami Heat @ Los Angeles Lakers — first: Miami Heat (FT, 0:51 in); lead changes 1; final 117-138
+- 2026-11-04: Philadelphia 76ers @ Detroit Pistons — first: Detroit Pistons (3PT, 0:25 in); lead changes 5; final 112-106
+- 2026-11-04: Atlanta Hawks @ Washington Wizards — first: Atlanta Hawks (3PT, 0:22 in); lead changes 8; final 120-105
+- 2026-11-04: Milwaukee Bucks @ Boston Celtics — first: Boston Celtics (3PT, 0:38 in); lead changes 4; final 102-109
+- 2026-11-04: Charlotte Hornets @ Brooklyn Nets — first: Brooklyn Nets (2PT, 1:20 in); lead changes 12; final 104-114
+- 2026-11-04: Chicago Bulls @ New York Knicks — first: New York Knicks (2PT, 0:49 in); lead changes 4; final 105-135
+- 2026-11-04: Indiana Pacers @ Memphis Grizzlies — first: Indiana Pacers (2PT, 0:50 in); lead changes 16; final 107-103
+- 2026-11-04: Utah Jazz @ New Orleans Pelicans — first: Utah Jazz (2PT, 0:15 in); lead changes 23; final 113-120
+- 2026-11-04: Cleveland Cavaliers @ Oklahoma City Thunder — first: Oklahoma City Thunder (3PT, 0:21 in); lead changes 0; final 116-124
+- 2026-11-04: Minnesota Timberwolves @ Houston Rockets — first: Minnesota Timberwolves (3PT, 0:23 in); lead changes 26; final 117-107
+- 2026-11-04: Toronto Raptors @ Denver Nuggets — first: Denver Nuggets (2PT, 0:36 in); lead changes 2; final 109-128
+- 2026-11-04: Portland Trail Blazers @ Phoenix Suns — first: Portland Trail Blazers (3PT, 0:36 in); lead changes 4; final 132-119
+- 2026-11-04: Dallas Mavericks @ San Antonio Spurs — first: San Antonio Spurs (2PT, 0:50 in); lead changes 6; final 111-112
+- 2026-11-04: Los Angeles Lakers @ Sacramento Kings — first: Los Angeles Lakers (3PT, 0:28 in); lead changes 4; final 116-103
+- 2026-11-04: Miami Heat @ LA Clippers — first: Miami Heat (FT, 1:11 in); lead changes 8; final 117-116
+- 2026-11-05: Orlando Magic @ Phoenix Suns — first: Orlando Magic (FT, 0:13 in); lead changes 5; final 104-117
+- 2026-11-05: Miami Heat @ Golden State Warriors — first: Miami Heat (2PT, 0:15 in); lead changes 3; final 100-120
+- 2026-11-06: Washington Wizards @ Atlanta Hawks — first: Atlanta Hawks (3PT, 0:31 in); lead changes 2; final 132-139
+- 2026-11-06: Boston Celtics @ Charlotte Hornets — first: Boston Celtics (3PT, 0:38 in); lead changes 0; final 119-80
+- 2026-11-06: Philadelphia 76ers @ Cleveland Cavaliers — first: Philadelphia 76ers (2PT, 0:30 in); lead changes 1; final 95-119
+- 2026-11-06: Utah Jazz @ Dallas Mavericks — first: Utah Jazz (3PT, 0:17 in); lead changes 9; final 100-112
+- 2026-11-06: Oklahoma City Thunder @ Memphis Grizzlies — first: Oklahoma City Thunder (2PT, 0:28 in); lead changes 2; final 128-97
+- 2026-11-06: Toronto Raptors @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:34 in); lead changes 3; final 121-107
+- 2026-11-06: Portland Trail Blazers @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 2:36 in); lead changes 2; final 118-124
+- 2026-11-06: San Antonio Spurs @ Sacramento Kings — first: San Antonio Spurs (2PT, 0:24 in); lead changes 10; final 124-109
+- 2026-11-07: Denver Nuggets @ Indiana Pacers — first: Indiana Pacers (3PT, 0:36 in); lead changes 1; final 114-102
+- 2026-11-07: Brooklyn Nets @ Atlanta Hawks — first: Brooklyn Nets (2PT, 0:41 in); lead changes 1; final 121-124
+- 2026-11-07: New York Knicks @ Cleveland Cavaliers — first: Cleveland Cavaliers (FT, 0:22 in); lead changes 11; final 109-97
+- 2026-11-07: Washington Wizards @ Oklahoma City Thunder — first: Oklahoma City Thunder (2PT, 0:32 in); lead changes 4; final 75-114
+- 2026-11-07: Orlando Magic @ Golden State Warriors — first: Golden State Warriors (2PT, 0:34 in); lead changes 10; final 119-126
+- 2026-11-07: Houston Rockets @ Phoenix Suns — first: Houston Rockets (2PT, 1:41 in); lead changes 17; final 99-102
+- 2026-11-07: San Antonio Spurs @ Portland Trail Blazers — first: San Antonio Spurs (3PT, 1:14 in); lead changes 0; final 125-103
+- 2026-11-08: Philadelphia 76ers @ Chicago Bulls — first: Chicago Bulls (2PT, 0:34 in); lead changes 9; final 127-121
+- 2026-11-08: Los Angeles Lakers @ Detroit Pistons — first: Los Angeles Lakers (2PT, 0:48 in); lead changes 0; final 121-116
+- 2026-11-08: Utah Jazz @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 1:01 in); lead changes 4; final 100-115
+- 2026-11-08: Brooklyn Nets @ Dallas Mavericks — first: Dallas Mavericks (2PT, 0:21 in); lead changes 0; final 93-130
+- 2026-11-08: Boston Celtics @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:48 in); lead changes 1; final 117-97
+- 2026-11-08: New Orleans Pelicans @ LA Clippers — first: New Orleans Pelicans (2PT, 0:29 in); lead changes 13; final 123-139
+- 2026-11-08: Miami Heat @ Sacramento Kings — first: Sacramento Kings (2PT, 1:00 in); lead changes 11; final 114-108
+- 2026-11-09: Los Angeles Lakers @ Atlanta Hawks — first: Atlanta Hawks (3PT, 0:30 in); lead changes 1; final 124-114
+- 2026-11-09: Cleveland Cavaliers @ Charlotte Hornets — first: Cleveland Cavaliers (2PT, 0:16 in); lead changes 3; final 112-124
+- 2026-11-09: Washington Wizards @ Detroit Pistons — first: Detroit Pistons (3PT, 0:53 in); lead changes 2; final 111-122
+- 2026-11-09: Memphis Grizzlies @ Toronto Raptors — first: Toronto Raptors (2PT, 1:00 in); lead changes 13; final 118-102
+- 2026-11-09: Indiana Pacers @ Dallas Mavericks — first: Indiana Pacers (FT, 0:12 in); lead changes 5; final 122-125
+- 2026-11-09: Denver Nuggets @ Houston Rockets — first: Denver Nuggets (FT, 0:17 in); lead changes 3; final 100-110
+- 2026-11-09: San Antonio Spurs @ Phoenix Suns — first: San Antonio Spurs (2PT, 0:45 in); lead changes 2; final 122-96
+- 2026-11-09: New Orleans Pelicans @ Golden State Warriors — first: Golden State Warriors (2PT, 0:15 in); lead changes 2; final 87-138
+- 2026-11-10: Milwaukee Bucks @ New York Knicks — first: Milwaukee Bucks (3PT, 1:01 in); lead changes 7; final 85-117
+- 2026-11-10: Boston Celtics @ Philadelphia 76ers — first: Boston Celtics (2PT, 0:45 in); lead changes 2; final 123-101
+- 2026-11-10: Miami Heat @ Utah Jazz — first: Utah Jazz (3PT, 0:11 in); lead changes 1; final 115-109
+- 2026-11-10: Orlando Magic @ Sacramento Kings — first: Sacramento Kings (2PT, 0:42 in); lead changes 5; final 107-100
+- 2026-11-10: Oklahoma City Thunder @ Portland Trail Blazers — first: Portland Trail Blazers (2PT, 1:11 in); lead changes 14; final 103-123
+- note: 8 final(s) UNVERIFIED this run — left out, retried next run.
