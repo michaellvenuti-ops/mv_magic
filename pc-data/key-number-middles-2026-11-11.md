@@ -70,3 +70,4 @@ KEY 6: NCAAF 15 USC 6 Indiana Nov-14 3:30 PM / table / Alt Spread Indiana -5.5 /
 KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4 / table | Fanatics-NJ | Bally Bet margins [4, 5] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +143 $669 Bally Bet, Bally Bet, +143
 KEY 6: NCAAF 15 USC 6 Indiana Nov-14 3:30 PM / table / Alt Spread Indiana -5.5 / Alt Spread USC +6.5 / table | Bally Bet | FanDuel margins [6] :: -167 $1,000 Bally Bet, Bally Bet, -167 / +148 $645 FanDuel, FanDuel, +148
 ## 2026-11-11T16:54:04-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1925 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-11T17:38:28-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1921 + 0 rows parsed, qualifying only below — 0 NEW middles
