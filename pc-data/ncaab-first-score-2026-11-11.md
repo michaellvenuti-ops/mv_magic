@@ -402,3 +402,7 @@
 - 2026-11-10: Creighton Bluejays @ Kansas State Wildcats — first: Kansas State Wildcats (3PT, 0:28 in); lead changes 8; final 82-89
 - 2026-11-10: Montana Grizzlies @ San Francisco Dons — first: Montana Grizzlies (2PT, 0:17 in); lead changes 9; final 58-63
 - note: 6 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T14:23:27-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 404 games through 2026-11-11
+- 2026-11-11: Fairleigh Dickinson Knights @ East Texas A&M Lions — first: East Texas A&M Lions (3PT, 0:17 in); lead changes 5; final 80-76
+- 2026-11-11: Kansas City Roos @ Florida A&M Rattlers — first: Kansas City Roos (2PT, 0:24 in); lead changes 0; final 87-65
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
