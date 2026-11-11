@@ -5898,3 +5898,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 18:00:19 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 408 total tallied.
 [2026-11-11 18:00:19 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 18:00:21 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-11 18:11:04 ET] sync_to_github.py: FAILED (exit 1) in 643s —   FAILED: pc-data/transcripts/audio-test.txt (HTTP 409: {'error': '{"message":"is at 320a50399158a66bcf72030d798c89b14ef2a900 but expected 5bc409b6a95be38de9c84
+[2026-11-11 18:12:30 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 227 events (132 with odds), db total 233787 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 18:12:31 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Oregon St. 17 Boise St. Nov-14 6:00 PM — Spread — Boise St. -11.5 Fanatics-NJ -125 ($101) / Oregon St. +15.5 Bally Bet -121 ($99) — both win 12
+[2026-11-11 18:16:08 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: 454 basketball rows excluded (football-only rule).
+[2026-11-11 18:17:22 ET] hung_number.py: OK in 74s — HUNG NUMBER: Ole Miss vs Oklahoma — DraftKings spread value dog (1.5 vs median -1.0)
+[2026-11-11 18:17:27 ET] rlm.py: OK in 5s
+[2026-11-11 18:17:30 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 18:19:25 ET] dh_prop_middles.py: OK in 115s — PROP MIDDLE CLEAN : NCAAF UMass Toledo Today 7:30 PM / table bar_chart / Alt Spread Toledo -11.5 / Alt Spread UMass +12.5 / table | ProphetX | Bally Bet — windo
+[2026-11-11 18:19:28 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
