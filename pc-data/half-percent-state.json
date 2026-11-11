@@ -53,7 +53,16 @@
    }
   },
   "2026-11-10": {
-   "grade": null,
+   "grade": {
+    "entry": 218.17999267578125,
+    "exit_price": 219.27,
+    "exit_time": "09:30 ET",
+    "note": "target touched before stop",
+    "outcome": "WIN",
+    "pl": 50.0,
+    "stop": 217.09,
+    "target": 219.27
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-09, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -66,16 +75,31 @@
     "ticker": "TTWO",
     "vol": 230965
    }
+  },
+  "2026-11-11": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-10, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Resideo Technologies, Inc. Common Stock ",
+    "entry": 20.81,
+    "mcap": 2953431550.0,
+    "pct": 6.99,
+    "stop": 20.71,
+    "target": 20.91,
+    "ticker": "REZI",
+    "vol": 409770
+   }
   }
  },
  "meta": {
   "record": {
    "losses": 0,
-   "modeled_pl": 50.0,
+   "modeled_pl": 100.0,
    "no_data": 0,
    "no_trades": 1,
    "time_exits": 0,
-   "wins": 1
+   "wins": 2
   }
  }
 }
