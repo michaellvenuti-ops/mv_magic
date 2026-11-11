@@ -415,3 +415,6 @@
 ## 2026-11-11T17:19:03-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 407 games through 2026-11-11
 - 2026-11-11: Loyola Chicago Ramblers @ Air Force Falcons — first: Air Force Falcons (3PT, 0:14 in); lead changes 2; final 93-107
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T18:00:19-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 408 games through 2026-11-11
+- 2026-11-11: South Florida Bulls @ Saint Joseph's Hawks — first: South Florida Bulls (2PT, 0:18 in); lead changes 3; final 80-83
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
