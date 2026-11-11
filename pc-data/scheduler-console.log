@@ -5268,3 +5268,6 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 21:47:39 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-10 21:47:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 21:47:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-10 21:56:36 ET] sync_to_github.py: FAILED (exit 1) in 534s —   FAILED: pc-data/public-fade-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 53a3d18d0914dc947976147256ba1b119119a1cc but expected 9b923b3a03945a28dee0dd
+[2026-11-10 21:57:55 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 227 events (69 with odds), db total 213181 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 21:59:43 ET] dh_game_middles.py: OK in 107s — GAME MIDDLE: NCAAB Marquette 20 Michigan Nov-11 7:00 PM / table / Total Under 157.5 / Alt Total Over 156.5 / table | theScore | Bet365 — window 215.0 :: -105 $1
