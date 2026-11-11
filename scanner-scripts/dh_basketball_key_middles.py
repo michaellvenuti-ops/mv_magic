@@ -25,6 +25,23 @@ The bars sit near football selectivity (one NFL key-3 window is
 WIDTH over the cluster (NBA margins 2-9 cover 42.2% of games;
 NCAAB margins 2-5 are the core at 23.0%, 2-9 covers 41.5%).
 
+SPANKY TIER (added Nov 10, 2026 at Michael's tap — "scans looking
+for middles like Spanky said"): across the 93-episode Be Better
+Bettors catalog Spanky never names a basketball key number; his
+college basketball middling baselines are WIDTH rules at -110
+(Ep 14, Mar 6 2020: CBB totals need ~2.5 points of differential
+for a +EV middle, 2 points is roughly break-even; Ep 39, Dec 14
+2020: a 1.5-point side middle and a 2-point total middle are the
+baselines at -110, and a half point on a CBB total is worth about
+5 cents / 2.5%). So a COLLEGE row also qualifies — labeled
+SPANKY — when its window is >= 1.5 points (spreads) or >= 2.5
+points (totals) AND both legs are priced -125 or better (near his
+-110 baseline; worse juice needs more width than his rule
+assumes). The 2.0-point total window is his break-even, not +EV,
+so it does NOT qualify. He gave no NBA width rule (Ep 93 quotes a
+flat ~$0.78 per half point on NBA spreads), so NBA rows stay on
+the modeled tier only — no rule invented for him.
+
 Other rules match the football key scan: width minimum 1; both
 legs -170 cap (price_in on parsed rows); clean tier = both sides
 -140-or-better; BOTH Full-Time and Full-Time+ segments; Smaller
@@ -50,6 +67,10 @@ CLEAN = -140
 MIN_WINDOW = 1.0
 SPREAD_BAR = 10.0   # modeled both-win % (see docstring)
 TOTAL_BAR = 8.0
+# Spanky tier (college only, Ep 14 + Ep 39 baselines at -110):
+SPANKY_SPREAD_WIDTH = 1.5
+SPANKY_TOTAL_WIDTH = 2.5
+SPANKY_PRICE_FLOOR = -125   # both legs -125 or better
 
 # Empirical landing rates (%), ESPN finals — see docstring.
 NBA_MARGIN_PCT = {1: 4.16, 2: 5.41, 3: 5.11, 4: 4.61, 5: 4.99,
@@ -187,7 +208,18 @@ def score_mid(mid):
         pct, values = total_score(league, l1, l2)
     width = (abs(abs(l2) - abs(l1)) if market == "spread"
              else abs(l2 - l1))
-    return league, market, pct, values, width
+    spanky = False
+    if league == "NCAAB":
+        bar_w = (SPANKY_SPREAD_WIDTH if market == "spread"
+                 else SPANKY_TOTAL_WIDTH)
+        try:
+            prices_ok = all(
+                int(mid[l]["price"]) >= SPANKY_PRICE_FLOOR
+                for l in ("leg1", "leg2"))
+        except (TypeError, ValueError, KeyError):
+            prices_ok = False
+        spanky = width >= bar_w and prices_ok
+    return league, market, pct, values, width, spanky
 
 
 def qualifies(mid):
@@ -203,7 +235,7 @@ def qualifies(mid):
     if scored[4] < MIN_WINDOW:
         return False, None
     bar = SPREAD_BAR if scored[1] == "spread" else TOTAL_BAR
-    return scored[2] >= bar, scored
+    return (scored[2] >= bar or scored[5]), scored
 
 
 def collect_segments(page, smaller_flag):
@@ -255,13 +287,17 @@ def main():
         deliverables = []
         lines = [f"## {now_stamp()} — basketball-key-middles "
                  f"(NBA/NCAAB cluster rule, modeled bars: spreads "
-                 f">=10%, totals >=8%): {len(full)} + "
+                 f">=10%, totals >=8%; plus SPANKY tier: CBB "
+                 f"spreads >=1.5 pts / totals >=2.5 pts at -125 or "
+                 f"better): {len(full)} + "
                  f"{len(smaller)} rows parsed, qualifying only below"]
         for mid in full + smaller:
             ok, scored = qualifies(mid)
             if not ok:
                 continue
             league, market, pct, values = scored[:4]
+            tier = ("MODELED" if pct >= (SPREAD_BAR if market == "spread" else TOTAL_BAR)
+                    else "SPANKY")
             _l1, _l2 = mid["leg1"], mid["leg2"]
             _ident = stable_row_identity(mid.get("cells"))
             if not _ident:
@@ -270,7 +306,8 @@ def main():
                           f"{strip_volatile(_l2['side'])}")
             key = f"{_ident} | {_l1['book']} | {_l2['book']}"
             entry = {"game": _ident, "league": league,
-                     "market": market, "modeled_pct": pct,
+                     "market": market, "tier": tier,
+                     "modeled_pct": pct,
                      "window_values": values,
                      "cluster": (f"{league} {'margin cluster' if market == 'spread' else 'total window'}"
                                  f" ~{pct:.1f}%"),
@@ -290,17 +327,21 @@ def main():
             else:
                 state["entries"][key]["last_seen"] = now_stamp()
             lines.append(
-                f"{league} {market.upper()} ~{pct:.1f}%: {key} "
-                f"window {values} :: {entry['leg1']} / {entry['leg2']}")
+                f"{league} {market.upper()} [{tier}] ~{pct:.1f}%: "
+                f"{key} window {values} :: "
+                f"{entry['leg1']} / {entry['leg2']}")
         # Chat-delivery wiring (same pattern as the football key
         # scan, 2026-11-10): bank NEW middles as NEW MIDDLE lines
         # directly under the header, count in the header.
         new_lines = []
         for key, e in deliverables:
             tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            label = (f"~{e['modeled_pct']:.1f}%"
+                     if e.get("tier") != "SPANKY"
+                     else "SPANKY baseline")
             new_lines.append(
                 f"NEW MIDDLE: {tag}{e['league']} "
-                f"{e['market'].upper()} ~{e['modeled_pct']:.1f}%: "
+                f"{e['market'].upper()} {label}: "
                 f"{key} window {e['window_values']} :: "
                 f"{e['leg1']} / {e['leg2']}")
         lines[0] += f" — {len(deliverables)} NEW middles"
@@ -312,8 +353,11 @@ def main():
         bank(SCAN, lines)
         for key, e in deliverables[:10]:
             tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            label = (f"modeled {e['modeled_pct']:.1f}%"
+                     if e.get("tier") != "SPANKY"
+                     else "SPANKY baseline")
             print(f"{tag}BASKETBALL MIDDLE ({e['league']} "
-                  f"{e['market']}, modeled {e['modeled_pct']:.1f}%): "
+                  f"{e['market']}, {label}): "
                   f"{key} — {e['leg1']} / {e['leg2']}")
         if not deliverables:
             print("basketball-key-middles: no new basketball middles.")
