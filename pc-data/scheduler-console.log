@@ -5284,3 +5284,6 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 22:22:25 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-10 22:22:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 22:22:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-10 22:31:09 ET] sync_to_github.py: FAILED (exit 1) in 522s —   FAILED: pc-data/nfl-first-score-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 4b753bc706060589b3e90b0aedab404759d7f7f2 but expected e38bbf5139a2b272c6
+[2026-11-10 22:32:33 ET] odds_recorder.py: OK in 53s — SUMMARY: recorded 227 events (65 with odds), db total 213862 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 22:34:03 ET] dh_game_middles.py: OK in 90s — GAME MIDDLE: NCAAB William & Mary Florida Atlantic Nov-11 7:00 PM / table / Alt Total Under 169.5 / Alt Total Over 169 / table | DraftKings | Bet365 — window 33
