@@ -5757,3 +5757,19 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 13:57:10 ET] dh_arbitrage.py: OK in 92s — ARBITRAGE: NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +41.5 / Alt Spread Oregon -41.5 / table | Fanatics-NJ 
 [2026-11-11 14:00:49 ET] dh_key_number_middles.py: OK in 219s — key-number-middles: 467 basketball rows excluded (football-only rule).
 [2026-11-11 14:02:45 ET] dh_prop_middles.py: OK in 116s — PROP MIDDLE : NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +40.5 / Alt Spread Oregon -39.5 / table | Fanatics-
+[2026-11-11 14:13:43 ET] sync_to_github.py: FAILED (exit 1) in 658s —   FAILED: pc-data/nhl-totals-2026-11-08.md (HTTP 409: {'error': '{"message":"is at fc18a4567e9be5c9006a307c51c41557ce895f48 but expected 2cec1fe90c0d3b138fcfd6a
+[2026-11-11 14:15:08 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 227 events (138 with odds), db total 229928 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 14:15:42 ET] dh_kalshi_poly_arb.py: OK in 34s — KALSHI-POLY-ARB: NBA LA Lakers MIL Bucks Today 8:15 PM / table / Pts+Ast+Rebs K. Kuzma Under 19.5 / Pts+Ast+Rebs K. Kuzma Over 19.5 YES / table bar_chart | FanD
+[2026-11-11 14:15:43 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL BUF Bills NY Jets Nov-15 1:00 PM — Rush Yards B. Hall — Over 49.5 Bet365 +100 ($98) / Under 54.5 theScore -110 ($102) — both win 50, 51, 52, 53, 
+[2026-11-11 14:16:04 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +42.5 / Alt Spread Oregon -41.5 / table | Fanatics-NJ 
+[2026-11-11 14:17:44 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Spread SMU +2 / Alt Spread Wake Forest -1.5 / table bar_chart | Bally Bet | ProphetX — window
+[2026-11-11 14:21:45 ET] dh_basketball_key_middles.py: OK in 242s — basketball-key-middles: no new basketball middles.
+[2026-11-11 14:21:51 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 14:23:20 ET] dh_sog_middles.py: OK in 88s — - 0 deliverables this run
+[2026-11-11 14:23:21 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 14:23:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 14:23:24 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 14:23:25 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 14:23:27 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 4 unverified, 404 total tallied.
+[2026-11-11 14:23:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 14:23:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
