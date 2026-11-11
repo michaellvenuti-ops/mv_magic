@@ -5529,3 +5529,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 06:35:38 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-11 06:35:39 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 06:35:40 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 06:45:38 ET] sync_to_github.py: OK in 538s —   ok: team-total-middles-board-pc.html
+[2026-11-11 06:45:51 ET] notify.py: OK in 12s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 06:47:16 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 226 events (78 with odds), db total 223813 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 06:48:00 ET] dh_kalshi_poly_arb.py: OK in 45s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 06:48:22 ET] dh_low_holds.py: OK in 21s — LOW-HOLDS: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Alt Total Over 142.5 / Alt Total Under 143 / table | DraftKings | Bet365
+[2026-11-11 06:49:54 ET] dh_game_middles.py: OK in 92s — GAME MIDDLE: NCAAB Pennsylvania Navy Today 5:30 PM / table / Spread Navy +10.5 / Alt Spread Pennsylvania -9.5 / table | Bally Bet | DraftKings — window 226.0 ::
+[2026-11-11 06:53:55 ET] dh_basketball_key_middles.py: OK in 241s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB NJIT VCU Today 7:00 PM / table / Spread NJIT +31.5 / Alt Spread VCU -30 / table | Caesars | Bet365 — -1
+[2026-11-11 06:54:03 ET] steam_side.py: OK in 8s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 06:56:01 ET] dh_prop_middles.py: OK in 119s — PROP MIDDLE CLEAN : NCAAB NJIT VCU Today 7:00 PM / table / Alt Spread NJIT +32.5 / Alt Spread VCU -32 / table | DraftKings | Bet365 — window 256.0 :: {'side': '
