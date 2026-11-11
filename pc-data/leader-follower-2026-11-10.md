@@ -54,3 +54,13 @@ LEAD: Caesars on San Jose State @ Air Force | 2026-11-10 (spread)
 ## 2026-11-10T20:30:19-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-10 spread (BetMGM, Caesars, DraftKings, FanDuel)
 ## 2026-11-10T20:30:19-05:00 — no-follow: bet365 Boston College @ Notre Dame | 2026-11-10 spread (only 2 followed)
 ## 2026-11-10T20:30:19-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-10T21:46:15-05:00 — no-follow: Kalshi 49ers @ Cowboys | 2026-11-10 spread (only 0 followed)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 total (BetMGM, Caesars, Kalshi)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 total (DraftKings, FanDuel)
+## 2026-11-10T21:46:15-05:00 — no-follow: FanDuel Ohio @ Miami (OH) | 2026-11-10 total (only 0 followed)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-10 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-10 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-10T21:46:15-05:00 — pack move, never credited: Buffalo @ Ball State | 2026-11-10 spread (BetMGM, Caesars, DraftKings, bet365)
+## 2026-11-10T21:46:15-05:00 — no-follow: DraftKings Stanford @ Virginia Tech | 2026-11-10 spread (only 1 followed)
+## 2026-11-10T21:46:16-05:00 — 81 games, 0 leads credited, 1 started games skipped
