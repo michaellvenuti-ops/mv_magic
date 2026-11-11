@@ -1,12 +1,18 @@
-# Hung numbers — 2026-11-11 (scan 2026-11-11 14:45)
+# Hung numbers — 2026-11-11 (scan 2026-11-11 15:51)
 
 - Commanders vs Giants | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Buffalo vs Ball State | Fanatics | moneyline Ball State | value: Ball State | book 99.0 vs median 49.8 | div 49.3 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - East Carolina vs Charlotte | Fanatics | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 11.0 | div 3.5 
-- Ole Miss vs Oklahoma | BetMGM | spread | value: dog | book 1.0 vs median -1.25 | div 2.25 
+- USC vs Indiana | Fanatics | spread | value: favorite | book 7.5 vs median 10.0 | div 2.5 
+- Ole Miss vs Oklahoma | bet365 | spread | value: favorite | book -1.5 vs median -0.25 | div 1.25 
+- Ole Miss vs Oklahoma | BetMGM | spread | value: dog | book 1.0 vs median -0.25 | div 1.25 
+- Ole Miss vs Oklahoma | DraftKings | spread | value: dog | book 1.5 vs median -0.25 | div 1.75 
+- Ole Miss vs Oklahoma | Caesars | spread | value: dog | book 1.5 vs median -0.25 | div 1.75 
+- Ole Miss vs Oklahoma | FanDuel | spread | value: favorite | book -1.5 vs median -0.25 | div 1.25 
+- Ole Miss vs Oklahoma | Fanatics | spread | value: favorite | book -1.5 vs median -0.25 | div 1.25 
 - Appalachian State vs Marshall | BetMGM | moneyline Marshall | value: Marshall | book 98.0 vs median 49.9 | div 48.2 
-- Purdue vs Iowa | DraftKings | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
 - Colorado State vs Washington State | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
