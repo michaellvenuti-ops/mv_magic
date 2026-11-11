@@ -5897,7 +5897,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "home",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Knicks",
    "dog_team": "Bucks"
   },
@@ -5907,7 +5907,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "Celtics",
    "dog_team": "76ers"
   },
@@ -5927,7 +5927,7 @@
    "date": "2026-11-11",
    "alerted": false,
    "fav": "away",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "Heat",
    "dog_team": "Jazz"
   },
@@ -5981,7 +5981,7 @@
    "spread": 30.5,
    "fav_team": "Georgetown",
    "dog_team": "Delaware St",
-   "live_ml": -20000
+   "live_ml": -2800
   },
   "401909564": {
    "sport": "NCAAB",
@@ -6045,11 +6045,20 @@
    "sport": "NCAAB",
    "matchup": "Winthrop at Kennesaw St",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Kennesaw St",
-   "dog_team": "Winthrop"
+   "dog_team": "Winthrop",
+   "live_ml": -195,
+   "alerted_at": "2026-11-10T19:18:04",
+   "board_read_at": "2026-11-10T19:18:03",
+   "alert_expires_at": "2026-11-10T19:21:04",
+   "alert_detail": "13:10 - 1st Half",
+   "alert_fav_score": 7,
+   "alert_dog_score": 13,
+   "alert_ml": -195,
+   "ml_read_at": "2026-11-10T19:18:03"
   },
   "401924949": {
    "sport": "NCAAB",
@@ -6071,7 +6080,8 @@
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Villanova",
-   "dog_team": "La Salle"
+   "dog_team": "La Salle",
+   "live_ml": -3200
   },
   "401921755": {
    "sport": "NCAAB",
@@ -6081,7 +6091,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "UCF",
-   "dog_team": "South Alabama"
+   "dog_team": "South Alabama",
+   "live_ml": -375
   },
   "401921025": {
    "sport": "NCAAB",
@@ -6121,7 +6132,8 @@
    "fav": "home",
    "spread": 15.5,
    "fav_team": "Georgia Tech",
-   "dog_team": "E Kentucky"
+   "dog_team": "E Kentucky",
+   "live_ml": -475
   },
   "401920063": {
    "sport": "NCAAB",
@@ -6131,7 +6143,8 @@
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Rhode Island",
-   "dog_team": "Maine"
+   "dog_team": "Maine",
+   "live_ml": -1300
   },
   "401918957": {
    "sport": "NCAAB",
@@ -6141,7 +6154,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "NC State",
-   "dog_team": "Presbyterian"
+   "dog_team": "Presbyterian",
+   "live_ml": -1950
   },
   "401917520": {
    "sport": "NCAAB",
@@ -6161,7 +6175,8 @@
    "fav": "home",
    "spread": 12.5,
    "fav_team": "North Carolina",
-   "dog_team": "Wyoming"
+   "dog_team": "Wyoming",
+   "live_ml": -620
   },
   "401912228": {
    "sport": "NCAAB",
@@ -6191,7 +6206,8 @@
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Fordham",
-   "dog_team": "Iona"
+   "dog_team": "Iona",
+   "live_ml": -298
   },
   "401911187": {
    "sport": "NCAAB",
@@ -6201,7 +6217,8 @@
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Dayton",
-   "dog_team": "Siena"
+   "dog_team": "Siena",
+   "live_ml": -475
   },
   "401911011": {
    "sport": "NCAAB",
@@ -6221,7 +6238,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Wake Forest",
-   "dog_team": "Charleston So"
+   "dog_team": "Charleston So",
+   "live_ml": -1950
   },
   "401909553": {
    "sport": "NCAAB",
