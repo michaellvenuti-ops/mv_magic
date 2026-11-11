@@ -4471,7 +4471,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Alabama",
    "dog_team": "Vanderbilt"
   },
@@ -6981,12 +6981,20 @@
    "sport": "NCAAB",
    "matchup": "FDU at East Texas A&M",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "East Texas A&M",
    "dog_team": "FDU",
-   "live_ml": -238
+   "live_ml": 150,
+   "alerted_at": "2026-11-11T13:32:07",
+   "board_read_at": "2026-11-11T13:32:07",
+   "alert_expires_at": "2026-11-11T13:35:07",
+   "alert_detail": "0:42 - 2nd Half",
+   "alert_fav_score": 68,
+   "alert_dog_score": 70,
+   "alert_ml": 150,
+   "ml_read_at": "2026-11-11T13:32:07"
   },
   "401921005": {
    "sport": "NCAAB",
@@ -7336,7 +7344,7 @@
    "date": "2026-11-12",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "UMass",
    "dog_team": "UMass Lowell"
   },
@@ -7558,7 +7566,7 @@
    "date": "2026-11-12",
    "alerted": false,
    "fav": "home",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Seattle U",
    "dog_team": "UTSA"
   },
