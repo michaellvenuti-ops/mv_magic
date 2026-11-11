@@ -14,3 +14,7 @@
 ## 2026-11-11T09:53:43-05:00 — pack move, never credited: Texans @ Browns | 2026-11-11 spread (DraftKings, Kalshi)
 ## 2026-11-11T09:53:43-05:00 — 81 games, 1 leads credited, 1 started games skipped
 LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
+## 2026-11-11T11:13:43-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 spread (BetMGM, Caesars, DraftKings, Fanatics, Kalshi)
+## 2026-11-11T11:13:43-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 total (DraftKings, Kalshi)
+## 2026-11-11T11:13:43-05:00 — pack move, never credited: Boston College @ Notre Dame | 2026-11-11 spread (FanDuel, bet365)
+## 2026-11-11T11:13:43-05:00 — 81 games, 0 leads credited, 1 started games skipped
