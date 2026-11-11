@@ -73,6 +73,14 @@ def kalshi_no(series_map):
         for m in data.get("markets", []):
             title = m.get("yes_sub_title") or m.get("title") or ""
             no_ask = m.get("no_ask")
+            if not isinstance(no_ask, (int, float)):
+                # Same Kalshi fixed-point migration as futures_board:
+                # integer-cent no_ask is gone; live field is the
+                # dollar string no_ask_dollars ("0.8400").
+                try:
+                    no_ask = round(float(m.get("no_ask_dollars")) * 100)
+                except (TypeError, ValueError):
+                    no_ask = None
             if title and isinstance(no_ask, (int, float)):
                 teams[title] = float(no_ask)  # cents = percent
         out[heading] = teams
