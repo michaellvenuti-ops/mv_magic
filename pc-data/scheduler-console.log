@@ -5257,3 +5257,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 21:33:19 ET] dh_basketball_key_middles.py: OK in 210s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Loyola Chicago Air Force Nov-11 3:00 PM / table / Total Under 160.5 / Alt Total Over 157.5 / table | Bet
 [2026-11-10 21:33:25 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Buffalo @ Ball State | 2026-11-10 | Kalshi | Ball State spread 2.5 (median 2.5 -> 1.5)
 [2026-11-10 21:34:50 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE CLEAN : NCAAB Marquette 20 Michigan Nov-11 7:00 PM / table / Total Under 158.5 / Alt Total Over 157 / table | DraftKings | Bet365 — window 224.0 :: 
+[2026-11-10 21:43:28 ET] sync_to_github.py: FAILED (exit 1) in 518s —   FAILED: pc-data/promo-dashboard-dump-2026-11-07.txt (HTTP 409: {'error': '{"message":"is at 680f1eafddb0800755a89b51e798208e72542292 but expected 1ab9770a54f1
+[2026-11-10 21:44:49 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (69 with odds), db total 212954 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 21:45:14 ET] dh_arbitrage.py: OK in 25s — ARBITRAGE: NBA ORL Magic SAC Kings Today 10:15 PM / table / Rebounds W. Carter Under 9.5 / Alt Rebounds W. Carter 10+ / table | BetParx | DraftKings
+[2026-11-10 21:45:44 ET] dh_kalshi_poly_arb.py: OK in 30s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 21:46:07 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NFL MIN Vikings GB Packers Nov-15 1:00 PM / table / Receptions T. Kraft Under 4.5 / Alt Receptions T. Kraft 5+ / table | Bet365 | DraftKings
+[2026-11-10 21:46:12 ET] rlm.py: OK in 5s
+[2026-11-10 21:46:16 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 21:47:34 ET] dh_sog_middles.py: OK in 79s — - 0 deliverables this run
+[2026-11-10 21:47:39 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-10 21:47:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 21:47:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
