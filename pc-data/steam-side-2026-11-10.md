@@ -35,3 +35,4 @@ NEW FLAG: FBS Kent State @ Bowling Green | 2026-11-10 — Kalshi still dealing s
 NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — DraftKings still dealing spread 15.5 on Akron (pre-move median 15.5, now 14.5)
 NEW FLAG: FBS Western Michigan @ Akron | 2026-11-10 — Kalshi still dealing total 50.5 on Under (pre-move median 50.5, now 44.5)
 ## 2026-11-10T20:08:29-05:00 — 67 games, 1 steam events, 0 NEW flags, 1 started games skipped
+## 2026-11-10T20:45:07-05:00 — 67 games, 2 steam events, 0 NEW flags, 1 started games skipped
