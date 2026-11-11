@@ -5598,3 +5598,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 08:56:43 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-11 08:56:51 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-11.json (5 markets).
 [2026-11-11 08:57:55 ET] yahoo_brief.py: OK in 64s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-11 09:07:40 ET] sync_to_github.py: FAILED (exit 1) in 585s —   FAILED: pc-data/game-middles-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 66a99af4d1014b8ff319f1473cd71e8918a5708d but expected 1552b32429eb27dc0323e
+[2026-11-11 09:09:07 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 226 events (78 with odds), db total 225847 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 09:12:40 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 678 basketball rows excluded (football-only rule).
+[2026-11-11 09:25:41 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-11 09:26:39 ET] odds_recorder.py: OK in 58s — SUMMARY: recorded 226 events (78 with odds), db total 226073 snapshots / 761 events, feeds ok 6 fail 0
