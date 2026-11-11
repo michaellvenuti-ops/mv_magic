@@ -5638,3 +5638,19 @@
 [2026-11-11 11:38:16 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
 [2026-11-11 11:38:21 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-11 11:39:52 ET] dh_prop_middles.py: OK in 91s — PROP MIDDLE : NCAAB Arkansas-Pine Bluff 9 UCLA Today 9:00 PM / table / Alt Spread UCLA -40.5 / Alt Spread Arkansas-Pine Bluff +41.5 / table | Caesars | BetParx 
+[2026-11-11 11:50:23 ET] sync_to_github.py: FAILED (exit 1) in 631s —   FAILED: pc-data/upset-lane.log (HTTP 409: {'error': '{"message":"is at a7ab2b774081c5b7c88ed89a7be5280c8c6848fe but expected 5a06679e97c17c33d447fdc93913a65ed
+[2026-11-11 11:50:55 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-11 11:52:08 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 227 events (141 with odds), db total 228112 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 11:52:45 ET] dh_kalshi_poly_arb.py: OK in 36s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 11:54:21 ET] dh_low_holds.py: OK in 96s — LOW-HOLDS: NCAAB Mississippi Valley St. Oregon Today 10:00 PM / table / Alt Spread Mississippi Valley St. +42.5 / Alt Spread Oregon -42.5 / table | DraftKings |
+[2026-11-11 11:58:13 ET] dh_key_number_middles.py: OK in 232s — key-number-middles: 492 basketball rows excluded (football-only rule).
+[2026-11-11 11:59:54 ET] dh_sog_middles.py: OK in 102s — - 0 deliverables this run
+[2026-11-11 11:59:59 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 12:00:01 ET] nfl_first_score.py: OK in 3s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 12:00:07 ET] nba_first_score.py: OK in 6s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 12:00:09 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 12:00:11 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 402 total tallied.
+[2026-11-11 12:00:12 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 12:00:13 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-11 12:00:17 ET] public_fade.py: OK in 4s
+[2026-11-11 12:01:39 ET] dh_positive_ev.py: FAILED (exit 2) in 82s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-11.txt. No prices inven
