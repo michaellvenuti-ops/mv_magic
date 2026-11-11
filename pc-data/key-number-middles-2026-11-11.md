@@ -14,3 +14,5 @@ KEY 17: NCAAB UTSA Seattle U Today 10:00 PM / table / Spread UTSA +17.5 / Alt Sp
 NEW MIDDLE: KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -160 $1,000 HardRock, HardRock, -160 / +145 $663 BetMGM, BetMGM, +145
 (end of new middles — full qualifying list below)
 KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -160 $1,000 HardRock, HardRock, -160 / +145 $663 BetMGM, BetMGM, +145
+## 2026-11-11T01:56:36-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1957 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -160 $1,000 HardRock, HardRock, -160 / +145 $663 BetMGM, BetMGM, +145
