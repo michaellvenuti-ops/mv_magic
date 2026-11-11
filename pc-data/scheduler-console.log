@@ -5582,3 +5582,19 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 08:31:09 ET] nhl_totals_scan.py: OK in 4s — NHL TOTALS FLAG UNDER: PHI @ EDM — predicted 5.2 vs book 6.5 (-130)
 [2026-11-11 08:31:13 ET] total_projectors_scan.py: OK in 5s — }
 [2026-11-11 08:31:17 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 10, 'NCAAB': 48}, new 0, moved 0, baselines 58.
+[2026-11-11 08:40:56 ET] sync_to_github.py: OK in 578s —   ok: team-total-middles-board-pc.html
+[2026-11-11 08:42:17 ET] notify.py: OK in 82s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 08:43:41 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 226 events (78 with odds), db total 225395 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 08:46:01 ET] dh_game_middles.py: OK in 139s — GAME MIDDLE: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Alt Spread Florida A&M +9.5 / Alt Spread Kansas City -9 / table | Caesars | Bet365 — window 
+[2026-11-11 08:47:48 ET] dh_prop_middles.py: OK in 107s — PROP MIDDLE CLEAN : NBA ORL Magic UTA Jazz Today 9:15 PM / table / Total Over 214.5 / Alt Total Under 215.5 / table | DraftKings | Bet365 — window 220.0 :: {'si
+[2026-11-11 08:49:21 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 92s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-11.txt. No 
+[2026-11-11 08:50:49 ET] odds_recorder.py: OK in 58s — SUMMARY: recorded 226 events (78 with odds), db total 225621 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 08:51:10 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NBA OKC Thunder POR Trail Blazers Today 10:15 PM / table / Rebounds S. Gilgeous-Alexander Under 4.5 / Alt Rebounds S. Gilgeous-Alexander 5+ / table |
+[2026-11-11 08:54:45 ET] dh_basketball_key_middles.py: OK in 215s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Kansas City Florida A&M Today 12:00 PM / table / Spread Florida A&M +9.5 / Alt Spread Kansas City -8 / 
+[2026-11-11 08:54:51 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 08:56:37 ET] dh_sog_middles.py: OK in 106s — - 0 deliverables this run
+[2026-11-11 08:56:41 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 08:56:42 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 08:56:43 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 08:56:51 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-11.json (5 markets).
+[2026-11-11 08:57:55 ET] yahoo_brief.py: OK in 64s — SUMMARY: signed_in=None — report written, no extraction
