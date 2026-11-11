@@ -1,1 +1,4 @@
 ## 2026-11-11T00:03:16-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T01:18:19-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-11 spread (BetMGM, Caesars, DraftKings, Kalshi)
+## 2026-11-11T01:18:19-05:00 — pack move, never credited: Ohio @ Miami (OH) | 2026-11-11 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-11T01:18:19-05:00 — 81 games, 0 leads credited, 1 started games skipped
