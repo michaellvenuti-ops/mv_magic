@@ -5572,3 +5572,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 08:16:39 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-11 08:16:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 08:16:41 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 08:26:08 ET] sync_to_github.py: FAILED (exit 1) in 567s —   FAILED: pc-data/transcripts/prop-points-2026-11-06.txt (HTTP 409: {'error': '{"message":"is at 3f05a88dced979f4e43d95332a367e9ef388e3eb but expected 03b20cf93
+[2026-11-11 08:27:32 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 226 events (78 with odds), db total 225169 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 08:30:51 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: 611 basketball rows excluded (football-only rule).
+[2026-11-11 08:30:57 ET] rlm.py: OK in 5s
+[2026-11-11 08:31:01 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 08:31:03 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 10 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-11.json
+[2026-11-11 08:31:04 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-11 08:31:09 ET] nhl_totals_scan.py: OK in 4s — NHL TOTALS FLAG UNDER: PHI @ EDM — predicted 5.2 vs book 6.5 (-130)
+[2026-11-11 08:31:13 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-11 08:31:17 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 10, 'NCAAB': 48}, new 0, moved 0, baselines 58.
