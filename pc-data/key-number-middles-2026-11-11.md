@@ -32,3 +32,4 @@ KEY 4: NCAAB Marquette 20 Michigan Today 7:00 PM / table / Alt Spread Marquette 
 KEY 7: NBA WAS Wizards IND Pacers Today 7:15 PM / table / Alt Spread WAS Wizards +7.5 / Alt Spread IND Pacers -6.5 / table | HardRock | BetMGM margins [7] :: -165 $1,000 HardRock, HardRock, -165 / +145 $656 BetMGM, BetMGM, +145
 ## 2026-11-11T04:36:36-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17): 1954 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-11T05:15:17-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1960 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-11T05:55:42-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1960 + 0 rows parsed, qualifying only below — 0 NEW middles
