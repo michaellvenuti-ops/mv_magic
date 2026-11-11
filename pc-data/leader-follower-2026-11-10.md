@@ -44,3 +44,8 @@ LEAD: Caesars on San Jose State @ Air Force | 2026-11-10 (spread)
 ## 2026-11-10T18:13:50-05:00 — pack move, never credited: Panthers @ Saints | 2026-11-10 spread (FanDuel, Fanatics, Kalshi)
 ## 2026-11-10T18:13:50-05:00 — pack move, never credited: Kent State @ Bowling Green | 2026-11-10 spread (BetMGM, Caesars, DraftKings, Kalshi, bet365)
 ## 2026-11-10T18:13:50-05:00 — 81 games, 0 leads credited
+## 2026-11-10T19:27:05-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 spread (Caesars, FanDuel, Kalshi)
+## 2026-11-10T19:27:05-05:00 — pack move, never credited: Western Michigan @ Akron | 2026-11-10 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-10T19:27:05-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Kent State @ Bowling Green | 2026-11-10
+## 2026-11-10T19:27:05-05:00 — no-follow: Kalshi Ole Miss @ Oklahoma | 2026-11-10 spread (only 0 followed)
+## 2026-11-10T19:27:05-05:00 — 81 games, 0 leads credited, 1 started games skipped
