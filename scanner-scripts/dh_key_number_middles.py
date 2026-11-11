@@ -47,6 +47,48 @@ CAP = -170
 CLEAN = -140
 
 
+# --- Line recovery (fix 2026-11-10) --------------------------------
+# parse_middle_row takes the legs from the BET cells, and for many
+# books those cells carry only price / stake / book — the line lives
+# in the row's MARKET columns ("Alt Spread Notre Dame -13.5"). For
+# those rows leg["line"] silently equals the leg PRICE, so the old
+# code computed margin sets off prices (100-200 range: could never
+# contain a key number, so those rows were silently dropped and real
+# key middles were MISSED). Lines are now recovered from the
+# identity's Spread segments first; leg lines are only a fallback
+# when they cannot be a price (different from the leg's price).
+import re as _re
+_SEG_NUM = _re.compile(r"([+-]?\d+(?:\.\d+)?)\s*(?:YES|NO)?\s*$",
+                       _re.I)
+
+
+def identity_spread_lines(cells):
+    ident = stable_row_identity(cells) or ""
+    out = []
+    for seg in ident.split(" / "):
+        if "spread" not in seg.lower():
+            continue
+        m = _SEG_NUM.search(seg.strip())
+        if m:
+            out.append(float(m.group(1)))
+    return out
+
+
+def recovered_lines(mid):
+    """(a, b) absolute spread lines for the middle, or None."""
+    lines = identity_spread_lines(mid.get("cells"))
+    if len(lines) >= 2:
+        return abs(lines[0]), abs(lines[1])
+    try:
+        l1 = float(mid["leg1"]["line"]); p1 = int(mid["leg1"]["price"])
+        l2 = float(mid["leg2"]["line"]); p2 = int(mid["leg2"]["price"])
+    except (TypeError, ValueError, KeyError):
+        return None
+    if l1 == p1 or l2 == p2:
+        return None            # a bet cell carried no line
+    return abs(l1), abs(l2)
+
+
 def margin_set(a, b):
     """Both-win-or-push margins for favorite -a / underdog +b."""
     lo, hi = min(a, b), max(a, b)
@@ -60,18 +102,18 @@ def margin_set(a, b):
 
 def key_hit(mid):
     """The key number in the margin set, or None (STRICT)."""
-    try:
-        a = abs(mid["leg1"]["line"])
-        b = abs(mid["leg2"]["line"])
-    except (TypeError, KeyError):
-        return None
+    lines = recovered_lines(mid)
+    if lines is None:
+        return None, []
+    a, b = lines
     margins = margin_set(a, b)
     hits = [k for k in KEY_NUMBERS if k in margins]
     return (hits[0], margins) if hits else (None, margins)
 
 
 def qualifies(mid):
-    if mid["window"] < MIN_WINDOW:
+    lines = recovered_lines(mid)
+    if lines is None or abs(lines[1] - lines[0]) < MIN_WINDOW:
         return False
     if not (price_in(mid["leg1"]["price"], CAP, 100000)
             and price_in(mid["leg2"]["price"], CAP, 100000)):
