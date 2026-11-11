@@ -5538,3 +5538,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 06:53:55 ET] dh_basketball_key_middles.py: OK in 241s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB NJIT VCU Today 7:00 PM / table / Spread NJIT +31.5 / Alt Spread VCU -30 / table | Caesars | Bet365 — -1
 [2026-11-11 06:54:03 ET] steam_side.py: OK in 8s — steam-side: 67 games, no new flags (silent).
 [2026-11-11 06:56:01 ET] dh_prop_middles.py: OK in 119s — PROP MIDDLE CLEAN : NCAAB NJIT VCU Today 7:00 PM / table / Alt Spread NJIT +32.5 / Alt Spread VCU -32 / table | DraftKings | Bet365 — window 256.0 :: {'side': '
+[2026-11-11 07:05:40 ET] sync_to_github.py: OK in 579s —   ok: team-total-middles-board-pc.html
+[2026-11-11 07:06:09 ET] notify.py: OK in 28s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 07:07:39 ET] odds_recorder.py: OK in 60s — SUMMARY: recorded 226 events (78 with odds), db total 224039 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 07:11:29 ET] dh_key_number_middles.py: OK in 230s — key-number-middles: 420 basketball rows excluded (football-only rule).
+[2026-11-11 07:12:58 ET] dh_sog_middles.py: OK in 89s — - 0 deliverables this run
+[2026-11-11 07:13:00 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 07:13:01 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 07:13:03 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 07:14:28 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 226 events (78 with odds), db total 224265 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 07:14:31 ET] rlm.py: OK in 4s
+[2026-11-11 07:14:36 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
