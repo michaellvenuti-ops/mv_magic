@@ -4710,7 +4710,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 3.0,
+   "spread": 3.5,
    "fav_team": "Washington",
    "dog_team": "Michigan St"
   },
@@ -6577,7 +6577,8 @@
    "fav": "home",
    "spread": 35.5,
    "fav_team": "Arizona",
-   "dog_team": "N Arizona"
+   "dog_team": "N Arizona",
+   "final": true
   },
   "401921740": {
    "sport": "NCAAB",
@@ -6587,7 +6588,8 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "BYU",
-   "dog_team": "Queens"
+   "dog_team": "Queens",
+   "final": true
   },
   "401929180": {
    "sport": "NCAAB",
@@ -6608,7 +6610,8 @@
    "spread": 25.5,
    "fav_team": "Utah State",
    "dog_team": "Utah Tech",
-   "live_ml": -8500
+   "live_ml": -8500,
+   "final": true
   },
   "401924896": {
    "sport": "NCAAB",
@@ -6629,7 +6632,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Arizona St",
-   "dog_team": "Hofstra"
+   "dog_team": "Hofstra",
+   "final": true
   },
   "401921699": {
    "sport": "NCAAB",
@@ -6640,18 +6644,27 @@
    "spread": 16.5,
    "fav_team": "Utah",
    "dog_team": "Weber St",
-   "live_ml": -1050
+   "live_ml": -1050,
+   "final": true
   },
   "401917979": {
    "sport": "NCAAB",
    "matchup": "UL Monroe at TCU",
    "date": "2026-11-11",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 33.5,
    "fav_team": "TCU",
    "dog_team": "UL Monroe",
-   "live_ml": -1950
+   "live_ml": -130,
+   "alerted_at": "2026-11-10T23:02:02",
+   "board_read_at": "2026-11-10T23:02:02",
+   "alert_expires_at": "2026-11-10T23:05:02",
+   "alert_detail": "3:41 - 2nd Half",
+   "alert_fav_score": 73,
+   "alert_dog_score": 77,
+   "alert_ml": -130,
+   "ml_read_at": "2026-11-10T23:02:02"
   },
   "401909761": {
    "sport": "NCAAB",
