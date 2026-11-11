@@ -5740,3 +5740,18 @@
 [2026-11-11 14:46:26 ET] hung_number.py: OK in 82s — No new hung numbers (12 current flags).
 [2026-11-11 14:46:31 ET] rlm.py: OK in 5s
 [2026-11-11 14:46:35 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 14:57:44 ET] sync_to_github.py: FAILED (exit 1) in 669s —   FAILED: pc-data/oneshot-dh_derivative_ev.log (HTTP 409: {'error': '{"message":"is at 175316fa2be6fc05d19e8e3ee01958c26f36e5e6 but expected aabefb1578dec9ee1f6
+[2026-11-11 14:59:25 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 227 events (138 with odds), db total 230609 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 15:02:18 ET] dh_arbitrage.py: OK in 173s — ARBITRAGE: NBA BOS Celtics TOR Raptors Today 7:15 PM / table / Pts+Ast J. Poeltl Under 14.5 / Pts+Ast J. Poeltl 15+ / table | BetParx | Bet365
+[2026-11-11 15:02:25 ET] wide_builds.py: OK in 7s — wide_builds: 8 qualifying builds, 0 NEW (banked wide-builds-2026-11-11.md)
+[2026-11-11 15:04:17 ET] dh_game_middles.py: OK in 111s — GAME MIDDLE: NCAAB Santa Clara North Texas Today 8:00 PM / table / Moneyline Santa Clara / Alt Spread North Texas +1 / table | Fanatics-NJ | Bet365 — window 232
+[2026-11-11 15:08:06 ET] dh_basketball_key_middles.py: OK in 229s — basketball-key-middles: no new basketball middles.
+[2026-11-11 15:08:11 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 15:10:04 ET] dh_sog_middles.py: OK in 113s — - 0 deliverables this run
+[2026-11-11 15:10:08 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-11 15:10:09 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 15:10:11 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 15:10:12 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 15:10:14 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 405 total tallied.
+[2026-11-11 15:10:15 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 15:10:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
