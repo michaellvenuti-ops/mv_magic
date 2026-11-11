@@ -5179,3 +5179,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 18:49:38 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS Kent State @ Bowling Green | 2026-11-10 | Kalshi | Kent State spread -4.5 (median -4.5 -> -3.5)
 [2026-11-10 18:51:21 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 227 events (133 with odds), db total 209549 snapshots / 747 events, feeds ok 6 fail 0
 [2026-11-10 18:53:14 ET] dh_prop_middles.py: OK in 113s — PROP MIDDLE : NCAAF Kent St. Bowling Green Today 7:00 PM / table / Alt Spread Bowling Green +1 / Moneyline Kent St. / table bar_chart | Bally Bet | ProphetX — w
+[2026-11-10 19:02:09 ET] sync_to_github.py: OK in 504s —   ok: steam-side-board-pc.html
+[2026-11-10 19:02:14 ET] notify.py: OK in 6s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 19:03:34 ET] odds_recorder.py: OK in 49s — SUMMARY: recorded 227 events (122 with odds), db total 209776 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 19:04:47 ET] hung_number.py: OK in 73s — HUNG NUMBER: Ole Miss vs Oklahoma — Fanatics spread value dog (1.0 vs median -1.25)
+[2026-11-10 19:06:38 ET] dh_sog_middles.py: OK in 111s — - 0 deliverables this run
+[2026-11-10 19:07:32 ET] dh_team_total_middles.py: OK in 54s
+[2026-11-10 19:07:33 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-10 19:07:36 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-10 19:09:26 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 227 events (106 with odds), db total 210003 snapshots / 747 events, feeds ok 6 fail 0
