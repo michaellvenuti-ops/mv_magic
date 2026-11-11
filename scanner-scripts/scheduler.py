@@ -66,6 +66,8 @@ SCHEDULE = [
     ("nfl_first_score.py", [], "interval", 30),
     ("nba_first_score.py", [], "interval", 30),
     ("nhl_first_goal.py", [], "interval", 30),
+    ("ncaab_first_score.py", [], "interval", 30),
+    ("pace_board.py", [], "interval", 30),
     # daily, Eastern
     ("fetch_nba_snapshot.py", [], "daily", "08:10"),
     ("dh_sleeping_book_sweep.py", [], "daily", "08:30"),
