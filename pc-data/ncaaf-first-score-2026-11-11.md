@@ -1,0 +1,689 @@
+## 2026-11-11T16:18:03-05:00 -- NCAAF FIRST SCORE (PC): 687 new final(s) tallied; season 687 games through 2026-11-10
+- 2026-08-29: San José State Spartans @ USC Trojans — first: USC Trojans (TD, 6:05 in); lead changes 0; final 26-42
+- 2026-08-29: North Carolina Tar Heels @ TCU Horned Frogs — first: North Carolina Tar Heels (FG, 4:53 in); lead changes 2; final 15-10
+- 2026-08-29: NC State Wolfpack @ Virginia Cavaliers — first: Virginia Cavaliers (FG, 9:49 in); lead changes 0; final 8-34
+- 2026-08-29: Jacksonville State Gamecocks @ North Dakota State Bison — first: North Dakota State Bison (TD, 0:00 in); lead changes 0; final 7-33
+- 2026-08-29: Sacramento State Hornets @ Eastern Michigan Eagles — first: Eastern Michigan Eagles (TD, 15:40 in); lead changes 0; final 17-28
+- 2026-08-29: Hawai'i Rainbow Warriors @ Stanford Cardinal — first: Stanford Cardinal (TD, 6:23 in); lead changes 2; final 27-37
+- 2026-08-29: New Mexico State Aggies @ Florida State Seminoles — first: Florida State Seminoles (FG, 11:55 in); lead changes 0; final 17-34
+- 2026-08-29: Memphis Tigers @ UNLV Rebels — first: UNLV Rebels (TD, 21:46 in); lead changes 1; final 27-21
+- 2026-09-03: Idaho Vandals @ Utah Utes — first: Utah Utes (TD, 2:20 in); lead changes 0; final 14-66
+- 2026-09-03: Arkansas-Pine Bluff Golden Lions @ Missouri Tigers — first: Missouri Tigers (TD, 5:22 in); lead changes 0; final 14-54
+- 2026-09-03: Massachusetts Minutemen @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (TD, 6:40 in); lead changes 1; final 37-21
+- 2026-09-03: Bethune-Cookman Wildcats @ UCF Knights — first: UCF Knights (TD, 3:58 in); lead changes 0; final 6-73
+- 2026-09-03: Akron Zips @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (TD, 3:28 in); lead changes 0; final 16-38
+- 2026-09-03: Merrimack Warriors @ Delaware Blue Hens — first: Delaware Blue Hens (TD, 7:25 in); lead changes 0; final 7-42
+- 2026-09-03: West Georgia Wolves @ Kennesaw State Owls — first: Kennesaw State Owls (TD, 1:44 in); lead changes 0; final 0-47
+- 2026-09-03: UAlbany Great Danes @ Buffalo Bulls — first: UAlbany Great Danes (TD, 11:58 in); lead changes 3; final 17-21
+- 2026-09-03: Colorado Buffaloes @ Georgia Tech Yellow Jackets — first: Colorado Buffaloes (TD, 16:54 in); lead changes 2; final 14-13
+- 2026-09-03: Eastern Illinois Panthers @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (TD, 10:31 in); lead changes 0; final 7-59
+- 2026-09-03: UAB Blazers @ Illinois Fighting Illini — first: Illinois Fighting Illini (TD, 7:05 in); lead changes 0; final 23-42
+- 2026-09-04: Miami Hurricanes @ Stanford Cardinal — first: Miami Hurricanes (TD, 2:53 in); lead changes 0; final 45-6
+- 2026-09-04: UTEP Miners @ Oklahoma Sooners — first: Oklahoma Sooners (TD, 5:44 in); lead changes 0; final 0-51
+- 2026-09-04: Fresno State Bulldogs @ USC Trojans — first: USC Trojans (TD, 5:33 in); lead changes 0; final 0-39
+- 2026-09-04: San José State Spartans @ Eastern Michigan Eagles — first: Eastern Michigan Eagles (TD, 20:41 in); lead changes 5; final 27-21
+- 2026-09-04: Indiana State Sycamores @ Purdue Boilermakers — first: Purdue Boilermakers (FG, 3:54 in); lead changes 0; final 19-44
+- 2026-09-04: North Carolina A&T Aggies @ Georgia State Panthers — first: Georgia State Panthers (TD, 7:43 in); lead changes 0; final 10-59
+- 2026-09-04: Long Island University Sharks @ Kansas Jayhawks — first: Kansas Jayhawks (TD, 9:01 in); lead changes 0; final 6-51
+- 2026-09-04: Toledo Rockets @ Michigan State Spartans — first: Michigan State Spartans (TD, 8:01 in); lead changes 2; final 20-30
+- 2026-09-05: Ball State Cardinals @ Ohio State Buckeyes — first: Ohio State Buckeyes (TD, 6:13 in); lead changes 0; final 3-56
+- 2026-09-05: Boise State Broncos @ Oregon Ducks — first: Boise State Broncos (TD, 6:23 in); lead changes 1; final 27-34
+- 2026-09-05: Tennessee State Tigers @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 1:24 in); lead changes 0; final 3-63
+- 2026-09-05: Texas State Bobcats @ Texas Longhorns — first: Texas Longhorns (TD, 4:29 in); lead changes 0; final 7-59
+- 2026-09-05: North Texas Mean Green @ Indiana Hoosiers — first: Indiana Hoosiers (TD, 1:24 in); lead changes 0; final 16-52
+- 2026-09-05: Missouri State Bears @ Texas A&M Aggies — first: Texas A&M Aggies (TD, 5:28 in); lead changes 0; final 0-50
+- 2026-09-05: Clemson Tigers @ LSU Tigers — first: Clemson Tigers (FG, 1:32 in); lead changes 1; final 10-51
+- 2026-09-05: Abilene Christian Wildcats @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (TD, 2:46 in); lead changes 0; final 10-33
+- 2026-09-05: East Carolina Pirates @ Alabama Crimson Tide — first: Alabama Crimson Tide (FG, 5:30 in); lead changes 0; final 10-48
+- 2026-09-05: Utah Tech Trailblazers @ BYU Cougars — first: BYU Cougars (TD, 1:55 in); lead changes 0; final 7-63
+- 2026-09-05: Western Michigan Broncos @ Michigan Wolverines — first: Michigan Wolverines (TD, 5:20 in); lead changes 2; final 12-13
+- 2026-09-05: Marshall Thundering Herd @ Penn State Nittany Lions — first: Penn State Nittany Lions (FG, 2:34 in); lead changes 0; final 0-45
+- 2026-09-05: Furman Paladins @ Tennessee Volunteers — first: Tennessee Volunteers (TD, 4:18 in); lead changes 0; final 9-56
+- 2026-09-05: Northern Illinois Huskies @ Iowa Hawkeyes — first: Iowa Hawkeyes (TD, 5:08 in); lead changes 0; final 0-40
+- 2026-09-05: Oregon State Beavers @ Houston Cougars — first: Houston Cougars (TD, 6:47 in); lead changes 2; final 20-33
+- 2026-09-05: Coastal Carolina Chanticleers @ West Virginia Mountaineers — first: West Virginia Mountaineers (TD, 0:47 in); lead changes 0; final 24-31
+- 2026-09-05: New Hampshire Wildcats @ Syracuse Orange — first: Syracuse Orange (TD, 10:33 in); lead changes 0; final 3-66
+- 2026-09-05: Ohio Bobcats @ Nebraska Cornhuskers — first: Ohio Bobcats (TD, 1:11 in); lead changes 1; final 21-49
+- 2026-09-05: Lafayette Leopards @ UConn Huskies — first: UConn Huskies (TD, 2:10 in); lead changes 0; final 7-56
+- 2026-09-05: Bryant Bulldogs @ Army Black Knights — first: Army Black Knights (TD, 3:55 in); lead changes 0; final 3-59
+- 2026-09-05: Tarleton State Texans @ Bowling Green Falcons — first: Tarleton State Texans (TD, 5:21 in); lead changes 0; final 20-13
+- 2026-09-05: Liberty Flames @ James Madison Dukes — first: James Madison Dukes (TD, 10:37 in); lead changes 0; final 13-20
+- 2026-09-05: Miami (OH) RedHawks @ Pittsburgh Panthers — first: Pittsburgh Panthers (TD, 4:54 in); lead changes 0; final 14-59
+- 2026-09-05: Kent State Golden Flashes @ South Carolina Gamecocks — first: South Carolina Gamecocks (TD, 10:42 in); lead changes 0; final 0-57
+- 2026-09-05: Youngstown State Penguins @ Kentucky Wildcats — first: Kentucky Wildcats (TD, 3:31 in); lead changes 0; final 13-45
+- 2026-09-05: Southeast Missouri State Redhawks @ Iowa State Cyclones — first: Iowa State Cyclones (TD, 4:52 in); lead changes 0; final 10-38
+- 2026-09-05: Duquesne Dukes @ Air Force Falcons — first: Air Force Falcons (TD, 6:54 in); lead changes 0; final 0-34
+- 2026-09-05: Rhode Island Rams @ Temple Owls — first: Temple Owls (TD, 2:31 in); lead changes 0; final 14-38
+- 2026-09-05: Baylor Bears @ Auburn Tigers — first: Auburn Tigers (FG, 6:47 in); lead changes 0; final 16-17
+- 2026-09-05: Boston College Eagles @ Cincinnati Bearcats — first: Cincinnati Bearcats (FG, 6:33 in); lead changes 0; final 15-34
+- 2026-09-05: Tulane Green Wave @ Duke Blue Devils — first: Duke Blue Devils (TD, 9:53 in); lead changes 0; final 3-17
+- 2026-09-05: The Citadel Bulldogs @ Charlotte 49ers — first: The Citadel Bulldogs (TD, 7:37 in); lead changes 4; final 43-41
+- 2026-09-05: Towson Tigers @ Navy Midshipmen — first: Navy Midshipmen (TD, 4:39 in); lead changes 0; final 15-42
+- 2026-09-05: UT Rio Grande Valley Vaqueros @ UTSA Roadrunners — first: UTSA Roadrunners (TD, 8:09 in); lead changes 0; final 16-45
+- 2026-09-05: Fordham Rams @ North Dakota State Bison — first: North Dakota State Bison (FG, 7:59 in); lead changes 0; final 0-38
+- 2026-09-05: Maine Black Bears @ App State Mountaineers — first: App State Mountaineers (TD, 8:50 in); lead changes 0; final 3-55
+- 2026-09-05: Oklahoma State Cowboys @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (FG, 12:42 in); lead changes 0; final 10-24
+- 2026-09-05: North Alabama Lions @ Arkansas Razorbacks — first: Arkansas Razorbacks (TD, 14:24 in); lead changes 0; final 14-31
+- 2026-09-05: Alcorn State Braves @ Southern Miss Golden Eagles — first: Alcorn State Braves (FG, 9:08 in); lead changes 1; final 3-49
+- 2026-09-05: Wyoming Cowboys @ Colorado State Rams — first: Colorado State Rams (TD, 4:14 in); lead changes 0; final 13-35
+- 2026-09-05: Norfolk State Spartans @ Old Dominion Monarchs — first: Old Dominion Monarchs (TD, 10:23 in); lead changes 0; final 10-31
+- 2026-09-05: Austin Peay Governors @ Vanderbilt Commodores — first: Vanderbilt Commodores (FG, 6:01 in); lead changes 2; final 9-28
+- 2026-09-05: Nicholls Colonels @ Kansas State Wildcats — first: Kansas State Wildcats (TD, 2:24 in); lead changes 0; final 3-71
+- 2026-09-05: Idaho State Bengals @ Utah State Aggies — first: Idaho State Bengals (FG, 5:56 in); lead changes 4; final 29-17
+- 2026-09-05: Arkansas State Red Wolves @ Memphis Tigers — first: Arkansas State Red Wolves (FG, 13:16 in); lead changes 5; final 24-42
+- 2026-09-05: Houston Christian Huskies @ Rice Owls — first: Houston Christian Huskies (FG, 5:36 in); lead changes 1; final 3-31
+- 2026-09-05: Florida International Panthers @ South Florida Bulls — first: South Florida Bulls (FG, 15:00 in); lead changes 0; final 9-19
+- 2026-09-05: Eastern Kentucky Colonels @ Jacksonville State Gamecocks — first: Jacksonville State Gamecocks (TD, 8:33 in); lead changes 0; final 7-49
+- 2026-09-05: Charleston Southern Buccaneers @ Georgia Southern Eagles — first: Georgia Southern Eagles (TD, 6:09 in); lead changes 0; final 0-31
+- 2026-09-05: SE Louisiana Lions @ South Alabama Jaguars — first: South Alabama Jaguars (TD, 1:41 in); lead changes 0; final 14-39
+- 2026-09-05: Sam Houston Bearkats @ Troy Trojans — first: Sam Houston Bearkats (TD, 7:13 in); lead changes 1; final 21-24
+- 2026-09-05: UL Monroe Warhawks @ Mississippi State Bulldogs — first: Mississippi State Bulldogs (TD, 2:39 in); lead changes 0; final 13-62
+- 2026-09-05: VMI Keydets @ Virginia Tech Hokies — first: Virginia Tech Hokies (TD, 3:19 in); lead changes 0; final 3-73
+- 2026-09-05: Northwestern State Demons @ Louisiana Tech Bulldogs — first: Northwestern State Demons (FG, 6:01 in); lead changes 1; final 6-80
+- 2026-09-05: Florida Atlantic Owls @ Florida Gators — first: Florida Gators (TD, 6:19 in); lead changes 0; final 21-66
+- 2026-09-05: Murray State Racers @ Middle Tennessee Blue Raiders — first: Middle Tennessee Blue Raiders (TD, 9:14 in); lead changes 0; final 14-38
+- 2026-09-05: Hampton Pirates @ Maryland Terrapins — first: Maryland Terrapins (TD, 5:30 in); lead changes 0; final 0-62
+- 2026-09-05: South Dakota State Jackrabbits @ Northwestern Wildcats — first: Northwestern Wildcats (TD, 3:18 in); lead changes 0; final 18-34
+- 2026-09-05: Lamar Cardinals @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 7:45 in); lead changes 0; final 7-38
+- 2026-09-05: Mercyhurst Lakers @ New Mexico State Aggies — first: New Mexico State Aggies (TD, 0:00 in); lead changes 2; final 14-51
+- 2026-09-05: Northern Arizona Lumberjacks @ Arizona Wildcats — first: Arizona Wildcats (TD, 3:28 in); lead changes 0; final 7-35
+- 2026-09-05: Portland State Vikings @ San Diego State Aztecs — first: Portland State Vikings (FG, 8:14 in); lead changes 1; final 20-53
+- 2026-09-05: Morgan State Bears @ Arizona State Sun Devils — first: Arizona State Sun Devils (TD, 1:34 in); lead changes 0; final 7-70
+- 2026-09-05: UNLV Rebels @ Hawai'i Rainbow Warriors — first: UNLV Rebels (TD, 5:27 in); lead changes 0; final 21-6
+- 2026-09-05: Central Michigan Chippewas @ New Mexico Lobos — first: New Mexico Lobos (TD, 7:42 in); lead changes 0; final 7-38
+- 2026-09-05: Mississippi Valley State Delta Devils @ Sacramento State Hornets — first: Sacramento State Hornets (TD, 4:08 in); lead changes 0; final 0-52
+- 2026-09-05: UCLA Bruins @ California Golden Bears — first: California Golden Bears (TD, 4:32 in); lead changes 1; final 45-24
+- 2026-09-05: Western Kentucky Hilltoppers @ Nevada Wolf Pack — first: Nevada Wolf Pack (TD, 0:35 in); lead changes 0; final 14-49
+- 2026-09-06: Wisconsin Badgers @ Notre Dame Fighting Irish — first: Wisconsin Badgers (FG, 8:28 in); lead changes 1; final 13-41
+- 2026-09-06: Louisville Cardinals @ Ole Miss Rebels — first: Louisville Cardinals (FG, 7:41 in); lead changes 3; final 38-41
+- 2026-09-06: Washington State Cougars @ Washington Huskies — first: Washington Huskies (FG, 11:07 in); lead changes 0; final 10-24
+- 2026-09-07: SMU Mustangs @ Florida State Seminoles — first: SMU Mustangs (TD, 5:28 in); lead changes 0; final 27-24
+- 2026-09-10: Florida A&M Rattlers @ Miami Hurricanes — first: Miami Hurricanes (TD, 2:23 in); lead changes 0; final 7-77
+- 2026-09-11: Missouri Tigers @ Kansas Jayhawks — first: Kansas Jayhawks (FG, 22:44 in); lead changes 1; final 38-21
+- 2026-09-11: Villanova Wildcats @ Louisville Cardinals — first: Louisville Cardinals (FG, 2:44 in); lead changes 0; final 13-59
+- 2026-09-11: Norfolk State Spartans @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 7:21 in); lead changes 0; final 3-59
+- 2026-09-11: Richmond Spiders @ NC State Wolfpack — first: NC State Wolfpack (TD, 3:39 in); lead changes 0; final 0-73
+- 2026-09-11: Rutgers Scarlet Knights @ Boston College Eagles — first: Boston College Eagles (TD, 4:18 in); lead changes 0; final 21-28
+- 2026-09-12: Ohio State Buckeyes @ Texas Longhorns — first: Ohio State Buckeyes (FG, 2:56 in); lead changes 1; final 23-24
+- 2026-09-12: Western Kentucky Hilltoppers @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 1:01 in); lead changes 0; final 20-70
+- 2026-09-12: Rice Owls @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (TD, 0:14 in); lead changes 0; final 0-52
+- 2026-09-12: Howard Bison @ Indiana Hoosiers — first: Indiana Hoosiers (TD, 2:04 in); lead changes 0; final 0-55
+- 2026-09-12: Oregon Ducks @ Oklahoma State Cowboys — first: Oklahoma State Cowboys (FG, 4:09 in); lead changes 4; final 31-39
+- 2026-09-12: Louisiana Tech Bulldogs @ LSU Tigers — first: LSU Tigers (FG, 8:24 in); lead changes 0; final 14-45
+- 2026-09-12: Charlotte 49ers @ Ole Miss Rebels — first: Ole Miss Rebels (TD, 4:21 in); lead changes 0; final 9-41
+- 2026-09-12: Arizona State Sun Devils @ Texas A&M Aggies — first: Texas A&M Aggies (TD, 10:05 in); lead changes 0; final 20-48
+- 2026-09-12: Oklahoma Sooners @ Michigan Wolverines — first: Michigan Wolverines (TD, 14:13 in); lead changes 0; final 10-17
+- 2026-09-12: Alabama Crimson Tide @ Kentucky Wildcats — first: Kentucky Wildcats (TD, 4:49 in); lead changes 1; final 45-17
+- 2026-09-12: Texas Tech Red Raiders @ Oregon State Beavers — first: Texas Tech Red Raiders (TD, 22:25 in); lead changes 2; final 35-24
+- 2026-09-12: Louisiana Ragin' Cajuns @ USC Trojans — first: Louisiana Ragin' Cajuns (FG, 3:37 in); lead changes 1; final 30-49
+- 2026-09-12: Arizona Wildcats @ BYU Cougars — first: Arizona Wildcats (TD, 5:50 in); lead changes 3; final 17-28
+- 2026-09-12: Penn State Nittany Lions @ Temple Owls — first: Temple Owls (FG, 18:00 in); lead changes 1; final 27-9
+- 2026-09-12: UC Davis Aggies @ SMU Mustangs — first: SMU Mustangs (TD, 8:20 in); lead changes 0; final 10-56
+- 2026-09-12: Tennessee Volunteers @ Georgia Tech Yellow Jackets — first: Tennessee Volunteers (TD, 2:38 in); lead changes 2; final 45-24
+- 2026-09-12: Utah State Aggies @ Washington Huskies — first: Washington Huskies (FG, 18:25 in); lead changes 2; final 14-16
+- 2026-09-12: Arkansas Razorbacks @ Utah Utes — first: Arkansas Razorbacks (FG, 7:16 in); lead changes 1; final 10-43
+- 2026-09-12: Iowa State Cyclones @ Iowa Hawkeyes — first: Iowa State Cyclones (FG, 15:43 in); lead changes 1; final 13-16
+- 2026-09-12: Southern Jaguars @ Houston Cougars — first: Houston Cougars (TD, 6:01 in); lead changes 0; final 6-77
+- 2026-09-12: Washington State Cougars @ Kansas State Wildcats — first: Kansas State Wildcats (FG, 9:00 in); lead changes 0; final 7-34
+- 2026-09-12: East Tennessee State Buccaneers @ North Carolina Tar Heels — first: North Carolina Tar Heels (TD, 5:12 in); lead changes 0; final 3-35
+- 2026-09-12: Old Dominion Monarchs @ Virginia Tech Hokies — first: Virginia Tech Hokies (FG, 4:37 in); lead changes 0; final 21-44
+- 2026-09-12: Wake Forest Demon Deacons @ Purdue Boilermakers — first: Purdue Boilermakers (TD, 4:17 in); lead changes 3; final 38-36
+- 2026-09-12: South Florida Bulls @ Army Black Knights — first: South Florida Bulls (TD, 4:00 in); lead changes 2; final 28-24
+- 2026-09-12: App State Mountaineers @ East Carolina Pirates — first: East Carolina Pirates (TD, 10:49 in); lead changes 1; final 27-24
+- 2026-09-12: Wofford Terriers @ Kent State Golden Flashes — first: Kent State Golden Flashes (TD, 4:37 in); lead changes 4; final 15-36
+- 2026-09-12: Wagner Seahawks @ James Madison Dukes — first: James Madison Dukes (TD, 1:29 in); lead changes 0; final 3-87
+- 2026-09-12: Gardner-Webb Runnin' Bulldogs @ Liberty Flames — first: Gardner-Webb Runnin' Bulldogs (FG, 3:06 in); lead changes 3; final 23-24
+- 2026-09-12: UT Martin Skyhawks @ West Virginia Mountaineers — first: West Virginia Mountaineers (TD, 2:52 in); lead changes 0; final 7-52
+- 2026-09-12: Colgate Raiders @ Central Michigan Chippewas — first: Colgate Raiders (TD, 18:12 in); lead changes 1; final 10-13
+- 2026-09-12: Holy Cross Crusaders @ Miami (OH) RedHawks — first: Miami (OH) RedHawks (TD, 5:29 in); lead changes 0; final 7-45
+- 2026-09-12: Stony Brook Seawolves @ Ball State Cardinals — first: Ball State Cardinals (TD, 13:19 in); lead changes 0; final 17-41
+- 2026-09-12: Mississippi State Bulldogs @ Minnesota Golden Gophers — first: Mississippi State Bulldogs (TD, 1:48 in); lead changes 0; final 38-13
+- 2026-09-12: Weber State Wildcats @ Colorado Buffaloes — first: Colorado Buffaloes (TD, 0:35 in); lead changes 0; final 21-52
+- 2026-09-12: UCF Knights @ Pittsburgh Panthers — first: Pittsburgh Panthers (FG, 14:56 in); lead changes 0; final 7-12
+- 2026-09-12: California Golden Bears @ Syracuse Orange — first: Syracuse Orange (FG, 2:23 in); lead changes 3; final 21-18
+- 2026-09-12: Duke Blue Devils @ Illinois Fighting Illini — first: Illinois Fighting Illini (TD, 4:37 in); lead changes 1; final 31-27
+- 2026-09-12: Eastern Michigan Eagles @ Michigan State Spartans — first: Michigan State Spartans (TD, 8:28 in); lead changes 0; final 7-35
+- 2026-09-12: Maryland Terrapins @ UConn Huskies — first: UConn Huskies (TD, 10:21 in); lead changes 1; final 38-14
+- 2026-09-12: UTSA Roadrunners @ Texas State Bobcats — first: UTSA Roadrunners (TD, 10:06 in); lead changes 4; final 31-26
+- 2026-09-12: UL Monroe Warhawks @ UAB Blazers — first: UL Monroe Warhawks (TD, 9:51 in); lead changes 1; final 20-26
+- 2026-09-12: Robert Morris Colonials @ Akron Zips — first: Akron Zips (TD, 11:08 in); lead changes 0; final 10-45
+- 2026-09-12: Central Connecticut Blue Devils @ Toledo Rockets — first: Central Connecticut Blue Devils (FG, 0:24 in); lead changes 1; final 10-63
+- 2026-09-12: Sacred Heart Pioneers @ Massachusetts Minutemen — first: Massachusetts Minutemen (TD, 0:44 in); lead changes 0; final 10-37
+- 2026-09-12: UNLV Rebels @ North Texas Mean Green — first: North Texas Mean Green (FG, 4:12 in); lead changes 0; final 6-44
+- 2026-09-12: Northern Colorado Bears @ Wyoming Cowboys — first: Wyoming Cowboys (TD, 22:41 in); lead changes 2; final 13-21
+- 2026-09-12: Mercyhurst Lakers @ New Mexico Lobos — first: New Mexico Lobos (TD, 14:33 in); lead changes 0; final 7-70
+- 2026-09-12: Alabama State Hornets @ Troy Trojans — first: Troy Trojans (TD, 1:35 in); lead changes 0; final 17-34
+- 2026-09-12: Delaware Blue Hens @ Vanderbilt Commodores — first: Vanderbilt Commodores (TD, 13:41 in); lead changes 2; final 26-35
+- 2026-09-12: Campbell Fighting Camels @ Florida Gators — first: Campbell Fighting Camels (FG, 2:42 in); lead changes 1; final 3-52
+- 2026-09-12: Memphis Tigers @ Boise State Broncos — first: Boise State Broncos (FG, 5:23 in); lead changes 2; final 20-38
+- 2026-09-12: Buffalo Bulls @ Florida International Panthers — first: Florida International Panthers (TD, 4:04 in); lead changes 0; final 20-33
+- 2026-09-12: Jacksonville State Gamecocks @ Ohio Bobcats — first: Jacksonville State Gamecocks (TD, 10:06 in); lead changes 1; final 27-29
+- 2026-09-12: Monmouth Hawks @ Western Michigan Broncos — first: Western Michigan Broncos (TD, 10:24 in); lead changes 0; final 14-49
+- 2026-09-12: Towson Tigers @ South Carolina Gamecocks — first: South Carolina Gamecocks (TD, 5:23 in); lead changes 0; final 9-45
+- 2026-09-12: Western Carolina Catamounts @ Cincinnati Bearcats — first: Western Carolina Catamounts (FG, 6:03 in); lead changes 1; final 10-62
+- 2026-09-12: Bowling Green Falcons @ Nebraska Cornhuskers — first: Nebraska Cornhuskers (TD, 7:26 in); lead changes 0; final 7-56
+- 2026-09-12: Southern Utah Thunderbirds @ Colorado State Rams — first: Colorado State Rams (TD, 0:47 in); lead changes 0; final 24-58
+- 2026-09-12: Tulsa Golden Hurricane @ Sam Houston Bearkats — first: Sam Houston Bearkats (TD, 2:58 in); lead changes 1; final 23-17
+- 2026-09-12: Illinois State Redbirds @ Northern Illinois Huskies — first: Illinois State Redbirds (TD, 2:19 in); lead changes 2; final 28-24
+- 2026-09-12: South Alabama Jaguars @ Tulane Green Wave — first: South Alabama Jaguars (FG, 6:57 in); lead changes 5; final 24-28
+- 2026-09-12: West Georgia Wolves @ Arkansas State Red Wolves — first: Arkansas State Red Wolves (TD, 17:10 in); lead changes 0; final 7-52
+- 2026-09-12: Georgia State Panthers @ Kennesaw State Owls — first: Georgia State Panthers (FG, 5:42 in); lead changes 0; final 31-17
+- 2026-09-12: Middle Tennessee Blue Raiders @ Marshall Thundering Herd — first: Marshall Thundering Herd (TD, 4:24 in); lead changes 4; final 26-28
+- 2026-09-12: Lindenwood Lions @ Missouri State Bears — first: Missouri State Bears (TD, 4:21 in); lead changes 0; final 14-48
+- 2026-09-12: San Diego State Aztecs @ UCLA Bruins — first: UCLA Bruins (TD, 33:43 in); lead changes 0; final 10-28
+- 2026-09-12: Western Illinois Leathernecks @ Wisconsin Badgers — first: Wisconsin Badgers (TD, 0:13 in); lead changes 0; final 9-36
+- 2026-09-12: Navy Midshipmen @ Florida Atlantic Owls — first: Florida Atlantic Owls (TD, 0:42 in); lead changes 0; final 30-38
+- 2026-09-12: Fordham Rams @ Coastal Carolina Chanticleers — first: Coastal Carolina Chanticleers (TD, 4:51 in); lead changes 0; final 7-45
+- 2026-09-12: Grambling Tigers @ TCU Horned Frogs — first: TCU Horned Frogs (TD, 2:39 in); lead changes 0; final 7-63
+- 2026-09-12: Prairie View A&M Panthers @ Baylor Bears — first: Prairie View A&M Panthers (FG, 4:02 in); lead changes 1; final 3-44
+- 2026-09-12: Southern Miss Golden Eagles @ Auburn Tigers — first: Auburn Tigers (TD, 0:10 in); lead changes 0; final 8-43
+- 2026-09-12: Cal Poly Mustangs @ San José State Spartans — first: Cal Poly Mustangs (TD, 15:57 in); lead changes 1; final 20-30
+- 2026-09-12: Texas Southern Tigers @ UTEP Miners — first: UTEP Miners (TD, 2:28 in); lead changes 2; final 10-51
+- 2026-09-12: Georgia Southern Eagles @ Clemson Tigers — first: Clemson Tigers (TD, 3:59 in); lead changes 0; final 7-22
+- 2026-09-12: North Dakota State Bison @ Air Force Falcons — first: North Dakota State Bison (TD, 5:06 in); lead changes 0; final 38-32
+- 2026-09-12: Sacramento State Hornets @ Fresno State Bulldogs — first: Fresno State Bulldogs (TD, 15:07 in); lead changes 0; final 3-49
+- 2026-09-12: Montana State Bobcats @ Nevada Wolf Pack — first: Montana State Bobcats (TD, 2:55 in); lead changes 0; final 20-7
+- 2026-09-12: New Mexico State Aggies @ Hawai'i Rainbow Warriors — first: Hawai'i Rainbow Warriors (TD, 6:19 in); lead changes 0; final 19-29
+- 2026-09-17: Syracuse Orange @ Pittsburgh Panthers — first: Pittsburgh Panthers (TD, 11:44 in); lead changes 0; final 13-27
+- 2026-09-18: Miami Hurricanes @ Wake Forest Demon Deacons — first: Miami Hurricanes (TD, 7:40 in); lead changes 0; final 33-20
+- 2026-09-18: Houston Cougars @ Texas Tech Red Raiders — first: Houston Cougars (FG, 5:33 in); lead changes 3; final 26-28
+- 2026-09-18: Portland State Vikings @ Oregon Ducks — first: Oregon Ducks (TD, 3:15 in); lead changes 0; final 0-84
+- 2026-09-19: UTSA Roadrunners @ Texas Longhorns — first: Texas Longhorns (TD, 1:26 in); lead changes 0; final 6-30
+- 2026-09-19: Georgia Bulldogs @ Arkansas Razorbacks — first: Georgia Bulldogs (TD, 8:07 in); lead changes 0; final 45-17
+- 2026-09-19: Michigan State Spartans @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (FG, 2:54 in); lead changes 0; final 10-27
+- 2026-09-19: Western Kentucky Hilltoppers @ Indiana Hoosiers — first: Indiana Hoosiers (TD, 20:09 in); lead changes 0; final 0-38
+- 2026-09-19: Kent State Golden Flashes @ Ohio State Buckeyes — first: Ohio State Buckeyes (TD, 2:53 in); lead changes 0; final 3-59
+- 2026-09-19: LSU Tigers @ Ole Miss Rebels — first: Ole Miss Rebels (FG, 8:22 in); lead changes 0; final 24-32
+- 2026-09-19: Kentucky Wildcats @ Texas A&M Aggies — first: Texas A&M Aggies (TD, 24:42 in); lead changes 1; final 31-21
+- 2026-09-19: Florida State Seminoles @ Alabama Crimson Tide — first: Florida State Seminoles (TD, 5:41 in); lead changes 3; final 36-50
+- 2026-09-19: BYU Cougars @ Colorado State Rams — first: BYU Cougars (TD, 0:49 in); lead changes 0; final 41-23
+- 2026-09-19: USC Trojans @ Rutgers Scarlet Knights — first: USC Trojans (FG, 5:30 in); lead changes 0; final 42-35
+- 2026-09-19: Buffalo Bulls @ Penn State Nittany Lions — first: Penn State Nittany Lions (FG, 3:07 in); lead changes 0; final 13-55
+- 2026-09-19: Kennesaw State Owls @ Tennessee Volunteers — first: Tennessee Volunteers (TD, 3:28 in); lead changes 0; final 9-42
+- 2026-09-19: SMU Mustangs @ Louisville Cardinals — first: SMU Mustangs (TD, 3:25 in); lead changes 7; final 31-41
+- 2026-09-19: Utah State Aggies @ Utah Utes — first: Utah Utes (TD, 4:23 in); lead changes 0; final 0-33
+- 2026-09-19: Northern Iowa Panthers @ Iowa Hawkeyes — first: Iowa Hawkeyes (TD, 3:49 in); lead changes 0; final 0-55
+- 2026-09-19: UTEP Miners @ Michigan Wolverines — first: UTEP Miners (TD, 8:09 in); lead changes 1; final 17-52
+- 2026-09-19: Troy Trojans @ Missouri Tigers — first: Troy Trojans (TD, 0:45 in); lead changes 1; final 17-27
+- 2026-09-19: New Mexico Lobos @ Oklahoma Sooners — first: Oklahoma Sooners (TD, 16:11 in); lead changes 0; final 6-14
+- 2026-09-19: West Virginia Mountaineers @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 8:11 in); lead changes 1; final 38-27
+- 2026-09-19: Coastal Carolina Chanticleers @ Delaware Blue Hens — first: Coastal Carolina Chanticleers (TD, 7:09 in); lead changes 1; final 14-22
+- 2026-09-19: Tulane Green Wave @ Kansas State Wildcats — first: Tulane Green Wave (TD, 7:05 in); lead changes 1; final 20-31
+- 2026-09-19: Bowling Green Falcons @ Iowa State Cyclones — first: Iowa State Cyclones (TD, 9:32 in); lead changes 0; final 7-55
+- 2026-09-19: Arizona State Sun Devils @ Kansas Jayhawks — first: Arizona State Sun Devils (FG, 5:38 in); lead changes 2; final 24-17
+- 2026-09-19: Mercer Bears @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (TD, 6:28 in); lead changes 0; final 11-44
+- 2026-09-19: North Carolina Tar Heels @ Clemson Tigers — first: North Carolina Tar Heels (TD, 4:10 in); lead changes 1; final 20-28
+- 2026-09-19: Akron Zips @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (TD, 2:46 in); lead changes 0; final 7-41
+- 2026-09-19: North Texas Mean Green @ Texas State Bobcats — first: Texas State Bobcats (TD, 4:07 in); lead changes 0; final 35-49
+- 2026-09-19: Eastern Michigan Eagles @ Wisconsin Badgers — first: Eastern Michigan Eagles (TD, 5:36 in); lead changes 1; final 10-54
+- 2026-09-19: NC State Wolfpack @ Vanderbilt Commodores — first: NC State Wolfpack (TD, 3:55 in); lead changes 1; final 31-35
+- 2026-09-19: Wyoming Cowboys @ Central Michigan Chippewas — first: Central Michigan Chippewas (FG, 6:02 in); lead changes 0; final 10-24
+- 2026-09-19: Maine Black Bears @ Boston College Eagles — first: Boston College Eagles (TD, 5:59 in); lead changes 0; final 16-22
+- 2026-09-19: Southern Illinois Salukis @ Illinois Fighting Illini — first: Illinois Fighting Illini (TD, 5:35 in); lead changes 0; final 10-48
+- 2026-09-19: Temple Owls @ Toledo Rockets — first: Temple Owls (FG, 2:50 in); lead changes 5; final 48-49
+- 2026-09-19: Miami (OH) RedHawks @ Cincinnati Bearcats — first: Miami (OH) RedHawks (TD, 0:14 in); lead changes 1; final 31-35
+- 2026-09-19: Wagner Seahawks @ California Golden Bears — first: California Golden Bears (TD, 3:01 in); lead changes 0; final 7-49
+- 2026-09-19: Duquesne Dukes @ Washington State Cougars — first: Washington State Cougars (TD, 6:50 in); lead changes 0; final 7-48
+- 2026-09-19: Stonehill Skyhawks @ Massachusetts Minutemen — first: Massachusetts Minutemen (FG, 2:51 in); lead changes 2; final 14-36
+- 2026-09-19: Stanford Cardinal @ Duke Blue Devils — first: Duke Blue Devils (TD, 19:18 in); lead changes 0; final 7-35
+- 2026-09-19: Ball State Cardinals @ Liberty Flames — first: Liberty Flames (TD, 4:44 in); lead changes 2; final 15-51
+- 2026-09-19: Louisiana Tech Bulldogs @ Baylor Bears — first: Baylor Bears (TD, 4:23 in); lead changes 0; final 19-36
+- 2026-09-19: SE Louisiana Lions @ UL Monroe Warhawks — first: SE Louisiana Lions (TD, 11:50 in); lead changes 0; final 38-35
+- 2026-09-19: Mississippi State Bulldogs @ South Carolina Gamecocks — first: South Carolina Gamecocks (FG, 7:53 in); lead changes 1; final 41-34
+- 2026-09-19: East Carolina Pirates @ Old Dominion Monarchs — first: East Carolina Pirates (TD, 8:57 in); lead changes 2; final 20-17
+- 2026-09-19: Florida International Panthers @ Florida Atlantic Owls — first: Florida Atlantic Owls (TD, 12:48 in); lead changes 0; final 10-16
+- 2026-09-19: Marshall Thundering Herd @ Missouri State Bears — first: Marshall Thundering Herd (TD, 5:36 in); lead changes 0; final 30-24
+- 2026-09-19: Florida Gators @ Auburn Tigers — first: Florida Gators (TD, 2:54 in); lead changes 0; final 44-39
+- 2026-09-19: Georgia State Panthers @ UCF Knights — first: UCF Knights (TD, 2:58 in); lead changes 2; final 30-44
+- 2026-09-19: Murray State Racers @ Oklahoma State Cowboys — first: Oklahoma State Cowboys (TD, 5:45 in); lead changes 0; final 0-59
+- 2026-09-19: UConn Huskies @ Southern Miss Golden Eagles — first: UConn Huskies (TD, 4:49 in); lead changes 0; final 48-20
+- 2026-09-19: UT Martin Skyhawks @ Memphis Tigers — first: Memphis Tigers (FG, 7:28 in); lead changes 0; final 21-45
+- 2026-09-19: Western Michigan Broncos @ Rice Owls — first: Western Michigan Broncos (TD, 13:31 in); lead changes 0; final 28-21
+- 2026-09-19: Delaware State Hornets @ South Florida Bulls — first: South Florida Bulls (TD, 1:20 in); lead changes 0; final 17-59
+- 2026-09-19: Nevada Wolf Pack @ Middle Tennessee Blue Raiders — first: Nevada Wolf Pack (TD, 4:57 in); lead changes 3; final 20-27
+- 2026-09-19: Ohio Bobcats @ South Alabama Jaguars — first: South Alabama Jaguars (TD, 2:53 in); lead changes 0; final 36-41
+- 2026-09-19: Georgia Southern Eagles @ Jacksonville State Gamecocks — first: Georgia Southern Eagles (FG, 7:52 in); lead changes 1; final 27-31
+- 2026-09-19: Nicholls Colonels @ Sam Houston Bearkats — first: Sam Houston Bearkats (TD, 4:05 in); lead changes 0; final 0-59
+- 2026-09-19: North Dakota Fighting Hawks @ Nebraska Cornhuskers — first: Nebraska Cornhuskers (TD, 4:29 in); lead changes 0; final 7-34
+- 2026-09-19: Eastern Washington Eagles @ Washington Huskies — first: Washington Huskies (TD, 4:10 in); lead changes 0; final 16-48
+- 2026-09-19: Colorado Buffaloes @ Northwestern Wildcats — first: Northwestern Wildcats (TD, 14:17 in); lead changes 0; final 7-41
+- 2026-09-19: Virginia Tech Hokies @ Maryland Terrapins — first: Virginia Tech Hokies (TD, 6:45 in); lead changes 0; final 35-26
+- 2026-09-19: Arkansas State Red Wolves @ TCU Horned Frogs — first: TCU Horned Frogs (TD, 6:24 in); lead changes 0; final 7-31
+- 2026-09-19: East Texas A&M Lions @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (TD, 3:43 in); lead changes 0; final 0-42
+- 2026-09-19: UAB Blazers @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 6:08 in); lead changes 0; final 14-21
+- 2026-09-19: Charlotte 49ers @ App State Mountaineers — first: App State Mountaineers (FG, 5:10 in); lead changes 0; final 21-26
+- 2026-09-19: South Dakota Coyotes @ Boise State Broncos — first: South Dakota Coyotes (TD, 6:31 in); lead changes 1; final 24-38
+- 2026-09-19: James Madison Dukes @ San Diego State Aztecs — first: James Madison Dukes (TD, 2:46 in); lead changes 0; final 26-13
+- 2026-09-19: Northern Illinois Huskies @ Arizona Wildcats — first: Northern Illinois Huskies (FG, 3:36 in); lead changes 1; final 17-42
+- 2026-09-19: North Dakota State Bison @ Sacramento State Hornets — first: North Dakota State Bison (TD, 1:23 in); lead changes 0; final 31-10
+- 2026-09-19: Purdue Boilermakers @ UCLA Bruins — first: UCLA Bruins (TD, 3:04 in); lead changes 2; final 38-52
+- 2026-09-19: Montana Grizzlies @ Oregon State Beavers — first: Oregon State Beavers (TD, 3:36 in); lead changes 0; final 17-52
+- 2026-09-19: Fresno State Bulldogs @ San José State Spartans — first: San José State Spartans (FG, 5:35 in); lead changes 1; final 26-10
+- 2026-09-24: Liberty Flames @ Coastal Carolina Chanticleers — first: Liberty Flames (FG, 5:17 in); lead changes 2; final 34-17
+- 2026-09-25: Northwestern Wildcats @ Indiana Hoosiers — first: Indiana Hoosiers (Safety, 7:40 in); lead changes 0; final 23-29
+- 2026-09-25: Army Black Knights @ Temple Owls — first: Army Black Knights (TD, 11:54 in); lead changes 2; final 21-17
+- 2026-09-25: Howard Bison @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (TD, 2:38 in); lead changes 0; final 7-58
+- 2026-09-25: Navy Midshipmen @ UAB Blazers — first: UAB Blazers (TD, 15:04 in); lead changes 2; final 20-24
+- 2026-09-25: Clemson Tigers @ California Golden Bears — first: California Golden Bears (TD, 9:45 in); lead changes 1; final 24-10
+- 2026-09-26: Texas Longhorns @ Tennessee Volunteers — first: Texas Longhorns (TD, 4:02 in); lead changes 0; final 20-17
+- 2026-09-26: Oklahoma Sooners @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 11:44 in); lead changes 0; final 13-41
+- 2026-09-26: Notre Dame Fighting Irish @ Purdue Boilermakers — first: Notre Dame Fighting Irish (TD, 10:51 in); lead changes 0; final 49-10
+- 2026-09-26: Ole Miss Rebels @ Florida Gators — first: Florida Gators (TD, 4:07 in); lead changes 0; final 28-52
+- 2026-09-26: Central Michigan Chippewas @ Miami Hurricanes — first: Central Michigan Chippewas (FG, 9:04 in); lead changes 1; final 3-52
+- 2026-09-26: Illinois Fighting Illini @ Ohio State Buckeyes — first: Ohio State Buckeyes (TD, 5:26 in); lead changes 0; final 19-42
+- 2026-09-26: South Carolina Gamecocks @ Alabama Crimson Tide — first: Alabama Crimson Tide (TD, 9:07 in); lead changes 0; final 18-49
+- 2026-09-26: Texas A&M Aggies @ LSU Tigers — first: LSU Tigers (TD, 5:23 in); lead changes 0; final 6-35
+- 2026-09-26: Sam Houston Bearkats @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (TD, 9:49 in); lead changes 0; final 14-49
+- 2026-09-26: Oregon Ducks @ USC Trojans — first: Oregon Ducks (FG, 11:26 in); lead changes 2; final 41-27
+- 2026-09-26: Wisconsin Badgers @ Penn State Nittany Lions — first: Penn State Nittany Lions (FG, 8:44 in); lead changes 1; final 24-20
+- 2026-09-26: Utah Utes @ Iowa State Cyclones — first: Utah Utes (TD, 0:16 in); lead changes 0; final 31-17
+- 2026-09-26: Wake Forest Demon Deacons @ Louisville Cardinals — first: Wake Forest Demon Deacons (FG, 8:42 in); lead changes 4; final 30-27
+- 2026-09-26: Iowa Hawkeyes @ Michigan Wolverines — first: Michigan Wolverines (TD, 13:02 in); lead changes 3; final 20-19
+- 2026-09-26: Missouri Tigers @ Mississippi State Bulldogs — first: Mississippi State Bulldogs (TD, 6:04 in); lead changes 2; final 24-31
+- 2026-09-26: Missouri State Bears @ SMU Mustangs — first: Missouri State Bears (FG, 12:43 in); lead changes 1; final 24-34
+- 2026-09-26: Houston Cougars @ Georgia Southern Eagles — first: Houston Cougars (TD, 4:30 in); lead changes 0; final 42-28
+- 2026-09-26: Colorado Buffaloes @ Baylor Bears — first: Colorado Buffaloes (FG, 11:38 in); lead changes 1; final 13-23
+- 2026-09-26: Bucknell Bison @ Pittsburgh Panthers — first: Pittsburgh Panthers (TD, 3:34 in); lead changes 0; final 0-59
+- 2026-09-26: Virginia Tech Hokies @ Boston College Eagles — first: Virginia Tech Hokies (FG, 29:44 in); lead changes 2; final 21-14
+- 2026-09-26: San Diego State Aztecs @ Toledo Rockets — first: San Diego State Aztecs (FG, 3:01 in); lead changes 1; final 16-41
+- 2026-09-26: Colorado State Rams @ UTSA Roadrunners — first: Colorado State Rams (TD, 0:12 in); lead changes 1; final 45-59
+- 2026-09-26: UNLV Rebels @ Akron Zips — first: Akron Zips (TD, 3:02 in); lead changes 1; final 38-10
+- 2026-09-26: Ball State Cardinals @ Kent State Golden Flashes — first: Kent State Golden Flashes (TD, 10:45 in); lead changes 0; final 13-26
+- 2026-09-26: South Alabama Jaguars @ Kentucky Wildcats — first: Kentucky Wildcats (TD, 14:23 in); lead changes 2; final 21-45
+- 2026-09-26: Lindenwood Lions @ Eastern Michigan Eagles — first: Eastern Michigan Eagles (TD, 5:02 in); lead changes 0; final 3-29
+- 2026-09-26: UCLA Bruins @ Maryland Terrapins — first: UCLA Bruins (TD, 16:29 in); lead changes 0; final 54-3
+- 2026-09-26: Northern Illinois Huskies @ Georgia State Panthers — first: Georgia State Panthers (TD, 1:00 in); lead changes 0; final 14-35
+- 2026-09-26: Central Arkansas Bears @ Florida State Seminoles — first: Florida State Seminoles (TD, 0:44 in); lead changes 0; final 7-34
+- 2026-09-26: Hawai'i Rainbow Warriors @ Wyoming Cowboys — first: Wyoming Cowboys (FG, 4:47 in); lead changes 0; final 10-27
+- 2026-09-26: TCU Horned Frogs @ UCF Knights — first: UCF Knights (TD, 4:33 in); lead changes 2; final 13-21
+- 2026-09-26: William & Mary Tribe @ Duke Blue Devils — first: Duke Blue Devils (TD, 4:18 in); lead changes 0; final 7-62
+- 2026-09-26: Boise State Broncos @ Western Michigan Broncos — first: Boise State Broncos (TD, 3:27 in); lead changes 0; final 32-7
+- 2026-09-26: UConn Huskies @ Miami (OH) RedHawks — first: UConn Huskies (TD, 3:56 in); lead changes 1; final 21-24
+- 2026-09-26: New Mexico Lobos @ New Mexico State Aggies — first: New Mexico Lobos (TD, 3:34 in); lead changes 0; final 42-18
+- 2026-09-26: Robert Morris Colonials @ Buffalo Bulls — first: Robert Morris Colonials (TD, 5:18 in); lead changes 1; final 28-31
+- 2026-09-26: Stonehill Skyhawks @ Ohio Bobcats — first: Ohio Bobcats (TD, 13:14 in); lead changes 0; final 7-35
+- 2026-09-26: Gardner-Webb Runnin' Bulldogs @ Marshall Thundering Herd — first: Gardner-Webb Runnin' Bulldogs (TD, 2:53 in); lead changes 5; final 35-36
+- 2026-09-26: North Carolina Central Eagles @ East Carolina Pirates — first: North Carolina Central Eagles (FG, 4:13 in); lead changes 1; final 9-42
+- 2026-09-26: Vanderbilt Commodores @ Auburn Tigers — first: Vanderbilt Commodores (FG, 5:31 in); lead changes 1; final 15-21
+- 2026-09-26: Nebraska Cornhuskers @ Michigan State Spartans — first: Michigan State Spartans (FG, 9:50 in); lead changes 1; final 31-13
+- 2026-09-26: South Florida Bulls @ Bowling Green Falcons — first: Bowling Green Falcons (FG, 4:54 in); lead changes 1; final 14-6
+- 2026-09-26: Delaware Blue Hens @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 7:26 in); lead changes 0; final 3-42
+- 2026-09-26: Incarnate Word Cardinals @ Texas State Bobcats — first: Texas State Bobcats (TD, 1:34 in); lead changes 0; final 10-63
+- 2026-09-26: Long Island University Sharks @ Florida International Panthers — first: Florida International Panthers (TD, 9:30 in); lead changes 0; final 3-20
+- 2026-09-26: James Madison Dukes @ Old Dominion Monarchs — first: James Madison Dukes (TD, 3:56 in); lead changes 0; final 46-20
+- 2026-09-26: Louisiana Ragin' Cajuns @ Charlotte 49ers — first: Louisiana Ragin' Cajuns (FG, 10:02 in); lead changes 0; final 34-7
+- 2026-09-26: Kansas State Wildcats @ Cincinnati Bearcats — first: Kansas State Wildcats (FG, 10:28 in); lead changes 1; final 26-31
+- 2026-09-26: Oklahoma State Cowboys @ West Virginia Mountaineers — first: West Virginia Mountaineers (TD, 7:16 in); lead changes 1; final 41-24
+- 2026-09-26: Southern Miss Golden Eagles @ Tulane Green Wave — first: Tulane Green Wave (TD, 6:45 in); lead changes 2; final 21-24
+- 2026-09-26: Kennesaw State Owls @ Arkansas State Red Wolves — first: Arkansas State Red Wolves (TD, 25:18 in); lead changes 2; final 14-17
+- 2026-09-26: Mercyhurst Lakers @ Western Kentucky Hilltoppers — first: Western Kentucky Hilltoppers (TD, 3:19 in); lead changes 0; final 7-52
+- 2026-09-26: Middle Tennessee Blue Raiders @ Jacksonville State Gamecocks — first: Jacksonville State Gamecocks (FG, 7:46 in); lead changes 2; final 13-23
+- 2026-09-26: Arizona Wildcats @ Washington State Cougars — first: Washington State Cougars (TD, 5:03 in); lead changes 1; final 34-24
+- 2026-09-26: Troy Trojans @ Utah State Aggies — first: Utah State Aggies (TD, 1:14 in); lead changes 2; final 10-21
+- 2026-09-26: Houston Christian Huskies @ North Texas Mean Green — first: North Texas Mean Green (TD, 2:07 in); lead changes 0; final 14-63
+- 2026-09-26: App State Mountaineers @ NC State Wolfpack — first: NC State Wolfpack (TD, 4:29 in); lead changes 0; final 31-41
+- 2026-09-26: Tulsa Golden Hurricane @ Arkansas Razorbacks — first: Arkansas Razorbacks (FG, 6:12 in); lead changes 0; final 6-34
+- 2026-09-26: Florida Atlantic Owls @ UL Monroe Warhawks — first: Florida Atlantic Owls (TD, 8:04 in); lead changes 0; final 45-17
+- 2026-09-26: Oregon State Beavers @ UTEP Miners — first: Oregon State Beavers (TD, 2:37 in); lead changes 0; final 33-7
+- 2026-09-26: Massachusetts Minutemen @ Sacramento State Hornets — first: Massachusetts Minutemen (TD, 3:12 in); lead changes 0; final 35-6
+- 2026-09-26: Rice Owls @ Fresno State Bulldogs — first: Rice Owls (TD, 9:15 in); lead changes 1; final 24-38
+- 2026-09-26: Georgia Tech Yellow Jackets @ Stanford Cardinal — first: Georgia Tech Yellow Jackets (FG, 5:47 in); lead changes 3; final 27-34
+- 2026-09-26: Air Force Falcons @ Nevada Wolf Pack — first: Nevada Wolf Pack (FG, 5:23 in); lead changes 5; final 36-33
+- 2026-09-26: Minnesota Golden Gophers @ Washington Huskies — first: Minnesota Golden Gophers (TD, 8:24 in); lead changes 0; final 27-24
+- 2026-10-01: Western Kentucky Hilltoppers @ New Mexico State Aggies — first: Western Kentucky Hilltoppers (FG, 5:07 in); lead changes 1; final 13-34
+- 2026-10-01: North Texas Mean Green @ Tulsa Golden Hurricane — first: North Texas Mean Green (FG, 11:54 in); lead changes 2; final 45-44
+- 2026-10-02: Pittsburgh Panthers @ Virginia Tech Hokies — first: Virginia Tech Hokies (TD, 1:16 in); lead changes 1; final 35-33
+- 2026-10-02: Liberty Flames @ Delaware Blue Hens — first: Liberty Flames (FG, 6:00 in); lead changes 0; final 30-14
+- 2026-10-02: Penn State Nittany Lions @ Northwestern Wildcats — first: Northwestern Wildcats (FG, 4:51 in); lead changes 0; final 13-34
+- 2026-10-03: Vanderbilt Commodores @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 8:03 in); lead changes 0; final 14-38
+- 2026-10-03: Notre Dame Fighting Irish @ North Carolina Tar Heels — first: North Carolina Tar Heels (TD, 5:26 in); lead changes 1; final 37-26
+- 2026-10-03: Miami Hurricanes @ Clemson Tigers — first: Miami Hurricanes (TD, 1:55 in); lead changes 0; final 41-13
+- 2026-10-03: Ohio State Buckeyes @ Iowa Hawkeyes — first: Ohio State Buckeyes (TD, 1:42 in); lead changes 0; final 31-14
+- 2026-10-03: Indiana Hoosiers @ Rutgers Scarlet Knights — first: Indiana Hoosiers (TD, 6:36 in); lead changes 0; final 47-15
+- 2026-10-03: Alabama Crimson Tide @ Mississippi State Bulldogs — first: Alabama Crimson Tide (TD, 5:19 in); lead changes 0; final 56-23
+- 2026-10-03: Florida Gators @ Missouri Tigers — first: Florida Gators (FG, 6:54 in); lead changes 1; final 17-45
+- 2026-10-03: BYU Cougars @ TCU Horned Frogs — first: BYU Cougars (TD, 22:08 in); lead changes 0; final 17-10
+- 2026-10-03: McNeese Cowboys @ LSU Tigers — first: LSU Tigers (TD, 5:37 in); lead changes 0; final 14-63
+- 2026-10-03: Texas Tech Red Raiders @ Colorado Buffaloes — first: Colorado Buffaloes (TD, 4:31 in); lead changes 1; final 29-7
+- 2026-10-03: Auburn Tigers @ Tennessee Volunteers — first: Tennessee Volunteers (FG, 20:09 in); lead changes 2; final 14-24
+- 2026-10-03: Washington Huskies @ USC Trojans — first: USC Trojans (FG, 6:25 in); lead changes 4; final 21-25
+- 2026-10-03: UCF Knights @ Houston Cougars — first: UCF Knights (TD, 3:43 in); lead changes 1; final 17-27
+- 2026-10-03: Boston College Eagles @ SMU Mustangs — first: SMU Mustangs (TD, 3:27 in); lead changes 2; final 16-25
+- 2026-10-03: Utah State Aggies @ Boise State Broncos — first: Boise State Broncos (TD, 6:43 in); lead changes 0; final 18-37
+- 2026-10-03: Kentucky Wildcats @ South Carolina Gamecocks — first: South Carolina Gamecocks (TD, 4:00 in); lead changes 3; final 35-34
+- 2026-10-03: Memphis Tigers @ Charlotte 49ers — first: Memphis Tigers (TD, 4:35 in); lead changes 0; final 59-8
+- 2026-10-03: Middle Tennessee Blue Raiders @ Kansas Jayhawks — first: Kansas Jayhawks (FG, 8:57 in); lead changes 0; final 0-55
+- 2026-10-03: West Virginia Mountaineers @ Iowa State Cyclones — first: West Virginia Mountaineers (TD, 8:07 in); lead changes 5; final 42-45
+- 2026-10-03: Stanford Cardinal @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (TD, 5:58 in); lead changes 0; final 3-57
+- 2026-10-03: Syracuse Orange @ UConn Huskies — first: Syracuse Orange (TD, 3:15 in); lead changes 4; final 42-41
+- 2026-10-03: Michigan Wolverines @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (TD, 7:31 in); lead changes 2; final 14-20
+- 2026-10-03: Navy Midshipmen @ Air Force Falcons — first: Air Force Falcons (TD, 20:49 in); lead changes 0; final 9-14
+- 2026-10-03: Michigan State Spartans @ Wisconsin Badgers — first: Wisconsin Badgers (TD, 6:44 in); lead changes 0; final 3-31
+- 2026-10-03: Western Michigan Broncos @ Buffalo Bulls — first: Western Michigan Broncos (TD, 5:47 in); lead changes 2; final 20-17
+- 2026-10-03: Toledo Rockets @ Ball State Cardinals — first: Ball State Cardinals (TD, 4:51 in); lead changes 1; final 39-24
+- 2026-10-03: California Golden Bears @ UNLV Rebels — first: California Golden Bears (TD, 3:30 in); lead changes 3; final 31-39
+- 2026-10-03: Louisville Cardinals @ NC State Wolfpack — first: NC State Wolfpack (FG, 7:26 in); lead changes 0; final 28-31
+- 2026-10-03: Virginia Cavaliers @ Florida State Seminoles — first: Virginia Cavaliers (TD, 8:56 in); lead changes 1; final 7-38
+- 2026-10-03: Samford Bulldogs @ UAB Blazers — first: UAB Blazers (FG, 1:56 in); lead changes 4; final 14-33
+- 2026-10-03: Wyoming Cowboys @ North Dakota State Bison — first: North Dakota State Bison (TD, 2:17 in); lead changes 0; final 0-28
+- 2026-10-03: Akron Zips @ Central Michigan Chippewas — first: Akron Zips (TD, 16:01 in); lead changes 1; final 17-41
+- 2026-10-03: Eastern Michigan Eagles @ Massachusetts Minutemen — first: Eastern Michigan Eagles (TD, 9:22 in); lead changes 0; final 38-14
+- 2026-10-03: Ohio Bobcats @ Kent State Golden Flashes — first: Ohio Bobcats (FG, 11:33 in); lead changes 0; final 13-10
+- 2026-10-03: Bowling Green Falcons @ Miami (OH) RedHawks — first: Miami (OH) RedHawks (FG, 20:55 in); lead changes 3; final 24-20
+- 2026-10-03: Old Dominion Monarchs @ Georgia State Panthers — first: Old Dominion Monarchs (FG, 3:42 in); lead changes 1; final 10-42
+- 2026-10-03: Marshall Thundering Herd @ James Madison Dukes — first: Marshall Thundering Herd (TD, 8:25 in); lead changes 3; final 17-45
+- 2026-10-03: Maryland Terrapins @ Nebraska Cornhuskers — first: Maryland Terrapins (FG, 2:45 in); lead changes 3; final 23-48
+- 2026-10-03: UTEP Miners @ New Mexico Lobos — first: New Mexico Lobos (TD, 8:00 in); lead changes 0; final 7-61
+- 2026-10-03: Purdue Boilermakers @ Illinois Fighting Illini — first: Purdue Boilermakers (FG, 8:12 in); lead changes 0; final 24-17
+- 2026-10-03: Oregon State Beavers @ Colorado State Rams — first: Oregon State Beavers (TD, 2:40 in); lead changes 0; final 56-26
+- 2026-10-03: Texas Southern Tigers @ Florida Atlantic Owls — first: Florida Atlantic Owls (TD, 0:13 in); lead changes 0; final 10-66
+- 2026-10-03: Arkansas Razorbacks @ Texas A&M Aggies — first: Texas A&M Aggies (TD, 5:33 in); lead changes 0; final 7-34
+- 2026-10-03: UTSA Roadrunners @ Rice Owls — first: UTSA Roadrunners (FG, 2:08 in); lead changes 2; final 16-14
+- 2026-10-03: Georgia Southern Eagles @ Coastal Carolina Chanticleers — first: Georgia Southern Eagles (FG, 4:51 in); lead changes 0; final 31-24
+- 2026-10-03: UL Monroe Warhawks @ South Alabama Jaguars — first: South Alabama Jaguars (TD, 0:52 in); lead changes 0; final 35-52
+- 2026-10-03: Temple Owls @ South Florida Bulls — first: South Florida Bulls (FG, 5:54 in); lead changes 3; final 17-13
+- 2026-10-03: Army Black Knights @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 6:28 in); lead changes 2; final 29-31
+- 2026-10-03: Arkansas State Red Wolves @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 13:01 in); lead changes 4; final 20-23
+- 2026-10-03: Fresno State Bulldogs @ Washington State Cougars — first: Fresno State Bulldogs (FG, 7:59 in); lead changes 0; final 26-6
+- 2026-10-03: Baylor Bears @ Arizona State Sun Devils — first: Arizona State Sun Devils (FG, 5:13 in); lead changes 1; final 55-19
+- 2026-10-03: Texas State Bobcats @ San Diego State Aztecs — first: Texas State Bobcats (FG, 4:05 in); lead changes 1; final 29-31
+- 2026-10-03: Cincinnati Bearcats @ Arizona Wildcats — first: Arizona Wildcats (TD, 4:39 in); lead changes 0; final 7-34
+- 2026-10-03: San José State Spartans @ Hawai'i Rainbow Warriors — first: San José State Spartans (TD, 17:59 in); lead changes 0; final 20-16
+- 2026-10-06: Southern Miss Golden Eagles @ Troy Trojans — first: Troy Trojans (TD, 4:49 in); lead changes 0; final 34-55
+- 2026-10-07: Jacksonville State Gamecocks @ Kennesaw State Owls — first: Kennesaw State Owls (FG, 8:16 in); lead changes 7; final 27-26
+- 2026-10-07: New Mexico State Aggies @ Florida International Panthers — first: Florida International Panthers (TD, 13:29 in); lead changes 0; final 3-22
+- 2026-10-08: Sam Houston Bearkats @ Liberty Flames — first: Liberty Flames (TD, 4:12 in); lead changes 0; final 3-35
+- 2026-10-08: Missouri State Bears @ Western Kentucky Hilltoppers — first: Western Kentucky Hilltoppers (TD, 8:22 in); lead changes 0; final 13-34
+- 2026-10-08: South Florida Bulls @ UTSA Roadrunners — first: South Florida Bulls (TD, 4:33 in); lead changes 3; final 24-31
+- 2026-10-08: South Alabama Jaguars @ Arkansas State Red Wolves — first: South Alabama Jaguars (TD, 7:39 in); lead changes 2; final 56-49
+- 2026-10-09: Iowa State Cyclones @ BYU Cougars — first: BYU Cougars (TD, 6:08 in); lead changes 0; final 10-24
+- 2026-10-09: Iowa Hawkeyes @ Washington Huskies — first: Iowa Hawkeyes (FG, 2:30 in); lead changes 0; final 41-24
+- 2026-10-09: Florida State Seminoles @ Louisville Cardinals — first: Florida State Seminoles (TD, 6:26 in); lead changes 1; final 20-44
+- 2026-10-09: Washington State Cougars @ Utah State Aggies — first: Washington State Cougars (FG, 1:34 in); lead changes 1; final 16-17
+- 2026-10-09: Wyoming Cowboys @ San José State Spartans — first: Wyoming Cowboys (FG, 3:55 in); lead changes 2; final 16-13
+- 2026-10-10: Texas Longhorns @ Oklahoma Sooners — first: Texas Longhorns (TD, 8:04 in); lead changes 1; final 24-27
+- 2026-10-10: Georgia Bulldogs @ Alabama Crimson Tide — first: Georgia Bulldogs (FG, 11:35 in); lead changes 2; final 20-17
+- 2026-10-10: Stanford Cardinal @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (TD, 1:54 in); lead changes 0; final 7-58
+- 2026-10-10: Maryland Terrapins @ Ohio State Buckeyes — first: Ohio State Buckeyes (TD, 6:20 in); lead changes 0; final 16-45
+- 2026-10-10: Indiana Hoosiers @ Nebraska Cornhuskers — first: Nebraska Cornhuskers (FG, 6:03 in); lead changes 1; final 20-17
+- 2026-10-10: Ole Miss Rebels @ Vanderbilt Commodores — first: Ole Miss Rebels (TD, 4:23 in); lead changes 0; final 52-17
+- 2026-10-10: LSU Tigers @ Kentucky Wildcats — first: LSU Tigers (FG, 6:15 in); lead changes 7; final 34-35
+- 2026-10-10: Kansas Jayhawks @ Utah Utes — first: Utah Utes (TD, 5:39 in); lead changes 0; final 24-41
+- 2026-10-10: UCLA Bruins @ Oregon Ducks — first: UCLA Bruins (FG, 4:13 in); lead changes 2; final 17-15
+- 2026-10-10: Texas A&M Aggies @ Missouri Tigers — first: Texas A&M Aggies (FG, 10:14 in); lead changes 1; final 6-27
+- 2026-10-10: Tennessee Volunteers @ Arkansas Razorbacks — first: Tennessee Volunteers (TD, 19:57 in); lead changes 2; final 24-17
+- 2026-10-10: South Carolina Gamecocks @ Florida Gators — first: Florida Gators (TD, 3:35 in); lead changes 1; final 38-19
+- 2026-10-10: UCF Knights @ Oklahoma State Cowboys — first: UCF Knights (TD, 4:52 in); lead changes 1; final 28-42
+- 2026-10-10: USC Trojans @ Penn State Nittany Lions — first: USC Trojans (TD, 4:23 in); lead changes 2; final 31-23
+- 2026-10-10: Houston Cougars @ Kansas State Wildcats — first: Houston Cougars (TD, 5:40 in); lead changes 0; final 35-16
+- 2026-10-10: Boise State Broncos @ Fresno State Bulldogs — first: Fresno State Bulldogs (TD, 4:02 in); lead changes 1; final 38-31
+- 2026-10-10: North Carolina Tar Heels @ Pittsburgh Panthers — first: Pittsburgh Panthers (TD, 5:11 in); lead changes 3; final 21-17
+- 2026-10-10: Arizona Wildcats @ West Virginia Mountaineers — first: West Virginia Mountaineers (FG, 4:48 in); lead changes 1; final 52-31
+- 2026-10-10: Wake Forest Demon Deacons @ NC State Wolfpack — first: Wake Forest Demon Deacons (TD, 1:57 in); lead changes 2; final 38-14
+- 2026-10-10: Tulane Green Wave @ Army Black Knights — first: Army Black Knights (TD, 13:18 in); lead changes 2; final 17-20
+- 2026-10-10: Sacramento State Hornets @ Bowling Green Falcons — first: Sacramento State Hornets (FG, 7:56 in); lead changes 1; final 10-38
+- 2026-10-10: Ball State Cardinals @ Northwestern Wildcats — first: Northwestern Wildcats (TD, 3:18 in); lead changes 0; final 14-45
+- 2026-10-10: Rice Owls @ East Carolina Pirates — first: East Carolina Pirates (TD, 5:45 in); lead changes 2; final 12-28
+- 2026-10-10: Old Dominion Monarchs @ App State Mountaineers — first: App State Mountaineers (FG, 33:19 in); lead changes 1; final 10-3
+- 2026-10-10: Miami (OH) RedHawks @ Massachusetts Minutemen — first: Massachusetts Minutemen (TD, 8:24 in); lead changes 1; final 20-19
+- 2026-10-10: Duke Blue Devils @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (TD, 6:13 in); lead changes 2; final 25-28
+- 2026-10-10: Virginia Tech Hokies @ California Golden Bears — first: Virginia Tech Hokies (TD, 17:19 in); lead changes 3; final 20-25
+- 2026-10-10: Illinois Fighting Illini @ Michigan State Spartans — first: Illinois Fighting Illini (FG, 3:14 in); lead changes 0; final 38-37
+- 2026-10-10: Charlotte 49ers @ North Texas Mean Green — first: North Texas Mean Green (FG, 4:08 in); lead changes 0; final 10-50
+- 2026-10-10: Tulsa Golden Hurricane @ Navy Midshipmen — first: Navy Midshipmen (TD, 2:18 in); lead changes 2; final 26-34
+- 2026-10-10: Eastern Michigan Eagles @ Akron Zips — first: Eastern Michigan Eagles (FG, 5:34 in); lead changes 6; final 25-23
+- 2026-10-10: Buffalo Bulls @ Toledo Rockets — first: Buffalo Bulls (FG, 4:36 in); lead changes 0; final 23-8
+- 2026-10-10: Central Michigan Chippewas @ Ohio Bobcats — first: Ohio Bobcats (TD, 3:59 in); lead changes 0; final 14-31
+- 2026-10-10: Kent State Golden Flashes @ Western Michigan Broncos — first: Western Michigan Broncos (TD, 1:59 in); lead changes 0; final 7-38
+- 2026-10-10: UConn Huskies @ Temple Owls — first: UConn Huskies (TD, 2:17 in); lead changes 2; final 34-20
+- 2026-10-10: San Diego State Aztecs @ Oregon State Beavers — first: Oregon State Beavers (TD, 5:21 in); lead changes 0; final 14-66
+- 2026-10-10: UAB Blazers @ Memphis Tigers — first: UAB Blazers (TD, 4:11 in); lead changes 3; final 13-38
+- 2026-10-10: Nevada Wolf Pack @ UTEP Miners — first: Nevada Wolf Pack (TD, 8:45 in); lead changes 0; final 30-13
+- 2026-10-10: North Dakota State Bison @ UNLV Rebels — first: UNLV Rebels (TD, 5:21 in); lead changes 0; final 7-13
+- 2026-10-10: Coastal Carolina Chanticleers @ Marshall Thundering Herd — first: Coastal Carolina Chanticleers (FG, 6:02 in); lead changes 0; final 27-21
+- 2026-10-10: Syracuse Orange @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 4:31 in); lead changes 2; final 25-28
+- 2026-10-10: Air Force Falcons @ Northern Illinois Huskies — first: Air Force Falcons (TD, 10:12 in); lead changes 0; final 28-7
+- 2026-10-10: Louisiana Ragin' Cajuns @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 15:07 in); lead changes 4; final 31-32
+- 2026-10-10: Minnesota Golden Gophers @ Purdue Boilermakers — first: Purdue Boilermakers (FG, 2:07 in); lead changes 0; final 13-41
+- 2026-10-10: James Madison Dukes @ Georgia Southern Eagles — first: Georgia Southern Eagles (TD, 2:27 in); lead changes 1; final 27-24
+- 2026-10-10: Hawai'i Rainbow Warriors @ Arizona State Sun Devils — first: Hawai'i Rainbow Warriors (FG, 1:19 in); lead changes 1; final 12-30
+- 2026-10-13: Delaware Blue Hens @ Middle Tennessee Blue Raiders — first: Delaware Blue Hens (FG, 3:40 in); lead changes 7; final 30-33
+- 2026-10-13: Florida International Panthers @ Jacksonville State Gamecocks — first: Jacksonville State Gamecocks (TD, 3:15 in); lead changes 0; final 24-27
+- 2026-10-14: Kennesaw State Owls @ Missouri State Bears — first: Missouri State Bears (FG, 15:46 in); lead changes 2; final 21-24
+- 2026-10-14: Western Kentucky Hilltoppers @ Sam Houston Bearkats — first: Western Kentucky Hilltoppers (TD, 4:54 in); lead changes 0; final 16-3
+- 2026-10-15: East Carolina Pirates @ UAB Blazers — first: East Carolina Pirates (TD, 4:53 in); lead changes 1; final 17-30
+- 2026-10-15: Georgia Southern Eagles @ Old Dominion Monarchs — first: Old Dominion Monarchs (TD, 5:58 in); lead changes 1; final 23-15
+- 2026-10-15: Colorado State Rams @ Texas State Bobcats — first: Texas State Bobcats (TD, 5:07 in); lead changes 0; final 27-66
+- 2026-10-16: Memphis Tigers @ Tulane Green Wave — first: Memphis Tigers (FG, 4:40 in); lead changes 1; final 17-31
+- 2026-10-16: Washington Huskies @ Purdue Boilermakers — first: Washington Huskies (TD, 8:41 in); lead changes 0; final 38-26
+- 2026-10-16: App State Mountaineers @ Coastal Carolina Chanticleers — first: Coastal Carolina Chanticleers (TD, 1:54 in); lead changes 3; final 35-32
+- 2026-10-17: Auburn Tigers @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 2:57 in); lead changes 1; final 27-24
+- 2026-10-17: Notre Dame Fighting Irish @ BYU Cougars — first: BYU Cougars (TD, 5:39 in); lead changes 4; final 24-28
+- 2026-10-17: Florida State Seminoles @ Miami Hurricanes — first: Miami Hurricanes (TD, 7:28 in); lead changes 4; final 35-43
+- 2026-10-17: Ohio State Buckeyes @ Indiana Hoosiers — first: Ohio State Buckeyes (FG, 3:08 in); lead changes 2; final 19-15
+- 2026-10-17: Alabama Crimson Tide @ Tennessee Volunteers — first: Tennessee Volunteers (FG, 4:55 in); lead changes 0; final 10-26
+- 2026-10-17: Florida Gators @ Texas Longhorns — first: Texas Longhorns (TD, 3:18 in); lead changes 1; final 27-24
+- 2026-10-17: Missouri Tigers @ Ole Miss Rebels — first: Missouri Tigers (FG, 6:44 in); lead changes 1; final 3-31
+- 2026-10-17: Arizona State Sun Devils @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (TD, 7:12 in); lead changes 0; final 25-53
+- 2026-10-17: Utah Utes @ Colorado Buffaloes — first: Utah Utes (TD, 5:21 in); lead changes 2; final 27-24
+- 2026-10-17: Wisconsin Badgers @ UCLA Bruins — first: UCLA Bruins (FG, 11:53 in); lead changes 0; final 7-17
+- 2026-10-17: Kentucky Wildcats @ Oklahoma Sooners — first: Kentucky Wildcats (TD, 6:24 in); lead changes 2; final 21-13
+- 2026-10-17: Mississippi State Bulldogs @ LSU Tigers — first: LSU Tigers (TD, 5:03 in); lead changes 0; final 0-31
+- 2026-10-17: Oklahoma State Cowboys @ Houston Cougars — first: Oklahoma State Cowboys (FG, 6:21 in); lead changes 1; final 32-35
+- 2026-10-17: Wake Forest Demon Deacons @ California Golden Bears — first: Wake Forest Demon Deacons (TD, 6:40 in); lead changes 0; final 41-7
+- 2026-10-17: Virginia Cavaliers @ SMU Mustangs — first: SMU Mustangs (FG, 12:04 in); lead changes 2; final 13-23
+- 2026-10-17: Northwestern Wildcats @ Michigan State Spartans — first: Northwestern Wildcats (FG, 6:37 in); lead changes 4; final 24-21
+- 2026-10-17: Cincinnati Bearcats @ West Virginia Mountaineers — first: Cincinnati Bearcats (TD, 6:07 in); lead changes 1; final 42-45
+- 2026-10-17: Kansas Jayhawks @ Kansas State Wildcats — first: Kansas State Wildcats (TD, 1:43 in); lead changes 4; final 24-35
+- 2026-10-17: Charleston Southern Buccaneers @ Clemson Tigers — first: Clemson Tigers (FG, 2:09 in); lead changes 0; final 0-37
+- 2026-10-17: Pittsburgh Panthers @ Boston College Eagles — first: Pittsburgh Panthers (TD, 0:18 in); lead changes 1; final 21-27
+- 2026-10-17: Florida Atlantic Owls @ Army Black Knights — first: Army Black Knights (TD, 0:22 in); lead changes 0; final 24-56
+- 2026-10-17: Ball State Cardinals @ Bowling Green Falcons — first: Ball State Cardinals (FG, 11:39 in); lead changes 2; final 32-31
+- 2026-10-17: Georgia State Panthers @ James Madison Dukes — first: James Madison Dukes (TD, 3:32 in); lead changes 0; final 22-49
+- 2026-10-17: Rutgers Scarlet Knights @ Maryland Terrapins — first: Maryland Terrapins (TD, 7:30 in); lead changes 1; final 37-30
+- 2026-10-17: The Citadel Bulldogs @ Texas A&M Aggies — first: Texas A&M Aggies (TD, 6:04 in); lead changes 0; final 0-41
+- 2026-10-17: Charlotte 49ers @ Temple Owls — first: Charlotte 49ers (TD, 4:47 in); lead changes 2; final 38-31
+- 2026-10-17: Massachusetts Minutemen @ Buffalo Bulls — first: Massachusetts Minutemen (TD, 4:52 in); lead changes 3; final 18-25
+- 2026-10-17: Western Michigan Broncos @ Central Michigan Chippewas — first: Western Michigan Broncos (TD, 11:52 in); lead changes 0; final 21-14
+- 2026-10-17: Georgia Tech Yellow Jackets @ Virginia Tech Hokies — first: Virginia Tech Hokies (TD, 1:23 in); lead changes 0; final 24-34
+- 2026-10-17: North Carolina Tar Heels @ Duke Blue Devils — first: North Carolina Tar Heels (FG, 4:57 in); lead changes 2; final 24-20
+- 2026-10-17: Penn State Nittany Lions @ Michigan Wolverines — first: Penn State Nittany Lions (FG, 9:02 in); lead changes 1; final 18-21
+- 2026-10-17: Northern Illinois Huskies @ Wyoming Cowboys — first: Wyoming Cowboys (FG, 5:40 in); lead changes 0; final 23-41
+- 2026-10-17: UNLV Rebels @ Air Force Falcons — first: Air Force Falcons (FG, 13:36 in); lead changes 6; final 31-41
+- 2026-10-17: Toledo Rockets @ Eastern Michigan Eagles — first: Toledo Rockets (TD, 7:10 in); lead changes 0; final 34-14
+- 2026-10-17: Akron Zips @ Miami (OH) RedHawks — first: Akron Zips (TD, 9:42 in); lead changes 1; final 14-34
+- 2026-10-17: Tulsa Golden Hurricane @ Rice Owls — first: Rice Owls (TD, 2:50 in); lead changes 1; final 38-17
+- 2026-10-17: Troy Trojans @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 2:45 in); lead changes 0; final 6-33
+- 2026-10-17: Washington State Cougars @ Oregon State Beavers — first: Oregon State Beavers (TD, 7:47 in); lead changes 0; final 30-48
+- 2026-10-17: Arkansas Razorbacks @ Vanderbilt Commodores — first: Vanderbilt Commodores (TD, 14:47 in); lead changes 1; final 31-21
+- 2026-10-17: TCU Horned Frogs @ Baylor Bears — first: TCU Horned Frogs (TD, 8:46 in); lead changes 0; final 17-6
+- 2026-10-17: Kent State Golden Flashes @ South Florida Bulls — first: Kent State Golden Flashes (Safety, 13:08 in); lead changes 1; final 2-29
+- 2026-10-17: Nevada Wolf Pack @ North Dakota State Bison — first: Nevada Wolf Pack (TD, 15:45 in); lead changes 1; final 17-31
+- 2026-10-17: Arkansas State Red Wolves @ Southern Miss Golden Eagles — first: Arkansas State Red Wolves (FG, 5:45 in); lead changes 0; final 23-13
+- 2026-10-17: Elon Phoenix @ Stanford Cardinal — first: Stanford Cardinal (TD, 15:04 in); lead changes 0; final 7-34
+- 2026-10-17: Louisville Cardinals @ Syracuse Orange — first: Syracuse Orange (FG, 3:11 in); lead changes 5; final 34-26
+- 2026-10-17: Navy Midshipmen @ UTSA Roadrunners — first: Navy Midshipmen (TD, 3:10 in); lead changes 5; final 34-38
+- 2026-10-17: Louisiana Tech Bulldogs @ UL Monroe Warhawks — first: Louisiana Tech Bulldogs (TD, 33:06 in); lead changes 0; final 24-0
+- 2026-10-17: San José State Spartans @ UTEP Miners — first: San José State Spartans (TD, 7:01 in); lead changes 0; final 24-11
+- 2026-10-17: Ohio Bobcats @ Sacramento State Hornets — first: Ohio Bobcats (TD, 9:25 in); lead changes 0; final 48-7
+- 2026-10-17: Fresno State Bulldogs @ San Diego State Aztecs — first: San Diego State Aztecs (FG, 8:44 in); lead changes 2; final 23-26
+- 2026-10-17: New Mexico Lobos @ Hawai'i Rainbow Warriors — first: Hawai'i Rainbow Warriors (FG, 7:09 in); lead changes 1; final 21-10
+- 2026-10-17: Nebraska Cornhuskers @ Oregon Ducks — first: Nebraska Cornhuskers (TD, 29:56 in); lead changes 1; final 14-17
+- 2026-10-20: Middle Tennessee Blue Raiders @ Florida International Panthers — first: Florida International Panthers (TD, 5:05 in); lead changes 1; final 26-23
+- 2026-10-20: Missouri State Bears @ Delaware Blue Hens — first: Delaware Blue Hens (TD, 6:23 in); lead changes 6; final 38-61
+- 2026-10-20: South Alabama Jaguars @ Marshall Thundering Herd — first: South Alabama Jaguars (FG, 13:06 in); lead changes 1; final 13-20
+- 2026-10-21: New Mexico State Aggies @ Sam Houston Bearkats — first: Sam Houston Bearkats (TD, 2:20 in); lead changes 3; final 30-24
+- 2026-10-22: James Madison Dukes @ App State Mountaineers — first: James Madison Dukes (TD, 3:27 in); lead changes 1; final 31-34
+- 2026-10-22: Liberty Flames @ Kennesaw State Owls — first: Liberty Flames (TD, 7:49 in); lead changes 0; final 34-6
+- 2026-10-22: East Carolina Pirates @ Memphis Tigers — first: East Carolina Pirates (FG, 4:38 in); lead changes 1; final 34-41
+- 2026-10-23: Duke Blue Devils @ Virginia Cavaliers — first: Duke Blue Devils (TD, 4:01 in); lead changes 2; final 19-16
+- 2026-10-23: Massachusetts Minutemen @ UConn Huskies — first: Massachusetts Minutemen (FG, 7:57 in); lead changes 1; final 16-35
+- 2026-10-23: Army Black Knights @ Tulsa Golden Hurricane — first: Army Black Knights (TD, 5:49 in); lead changes 4; final 38-35
+- 2026-10-23: Air Force Falcons @ Wyoming Cowboys — first: Wyoming Cowboys (TD, 0:50 in); lead changes 0; final 14-28
+- 2026-10-23: NC State Wolfpack @ Stanford Cardinal — first: Stanford Cardinal (TD, 4:26 in); lead changes 0; final 28-31
+- 2026-10-24: Pittsburgh Panthers @ Miami Hurricanes — first: Miami Hurricanes (FG, 7:39 in); lead changes 0; final 23-52
+- 2026-10-24: BYU Cougars @ UCF Knights — first: BYU Cougars (TD, 6:41 in); lead changes 7; final 31-39
+- 2026-10-24: Indiana Hoosiers @ Michigan Wolverines — first: Indiana Hoosiers (FG, 11:16 in); lead changes 0; final 13-6
+- 2026-10-24: Ole Miss Rebels @ Texas Longhorns — first: Texas Longhorns (FG, 6:33 in); lead changes 0; final 27-34
+- 2026-10-24: Texas Tech Red Raiders @ Cincinnati Bearcats — first: Cincinnati Bearcats (FG, 3:38 in); lead changes 2; final 24-37
+- 2026-10-24: Michigan State Spartans @ UCLA Bruins — first: Michigan State Spartans (TD, 9:34 in); lead changes 1; final 10-28
+- 2026-10-24: Houston Cougars @ Utah Utes — first: Houston Cougars (FG, 26:16 in); lead changes 1; final 13-21
+- 2026-10-24: Tennessee Volunteers @ South Carolina Gamecocks — first: South Carolina Gamecocks (TD, 4:58 in); lead changes 2; final 24-27
+- 2026-10-24: Vanderbilt Commodores @ Kentucky Wildcats — first: Vanderbilt Commodores (FG, 11:03 in); lead changes 1; final 17-34
+- 2026-10-24: Texas A&M Aggies @ Alabama Crimson Tide — first: Alabama Crimson Tide (TD, 3:36 in); lead changes 4; final 20-31
+- 2026-10-24: Iowa Hawkeyes @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (FG, 2:46 in); lead changes 0; final 10-13
+- 2026-10-24: USC Trojans @ Wisconsin Badgers — first: Wisconsin Badgers (FG, 7:40 in); lead changes 2; final 7-24
+- 2026-10-24: LSU Tigers @ Auburn Tigers — first: LSU Tigers (FG, 4:06 in); lead changes 0; final 38-17
+- 2026-10-24: Boise State Broncos @ Washington State Cougars — first: Boise State Broncos (TD, 10:36 in); lead changes 0; final 31-10
+- 2026-10-24: California Golden Bears @ SMU Mustangs — first: California Golden Bears (TD, 4:32 in); lead changes 3; final 20-59
+- 2026-10-24: Rutgers Scarlet Knights @ Northwestern Wildcats — first: Northwestern Wildcats (TD, 5:06 in); lead changes 0; final 14-42
+- 2026-10-24: Iowa State Cyclones @ Arizona Wildcats — first: Arizona Wildcats (TD, 0:31 in); lead changes 0; final 3-39
+- 2026-10-24: West Virginia Mountaineers @ TCU Horned Frogs — first: West Virginia Mountaineers (FG, 2:41 in); lead changes 6; final 24-20
+- 2026-10-24: Rice Owls @ Florida Atlantic Owls — first: Rice Owls (TD, 1:27 in); lead changes 1; final 49-51
+- 2026-10-24: Western Michigan Broncos @ Toledo Rockets — first: Toledo Rockets (TD, 3:57 in); lead changes 0; final 38-45
+- 2026-10-24: Baylor Bears @ Kansas Jayhawks — first: Kansas Jayhawks (TD, 8:57 in); lead changes 2; final 24-25
+- 2026-10-24: Akron Zips @ Kent State Golden Flashes — first: Akron Zips (TD, 8:35 in); lead changes 1; final 20-35
+- 2026-10-24: Miami (OH) RedHawks @ Central Michigan Chippewas — first: Central Michigan Chippewas (FG, 5:29 in); lead changes 7; final 28-27
+- 2026-10-24: Oregon Ducks @ Illinois Fighting Illini — first: Oregon Ducks (TD, 3:43 in); lead changes 1; final 10-21
+- 2026-10-24: Oklahoma Sooners @ Mississippi State Bulldogs — first: Oklahoma Sooners (FG, 3:50 in); lead changes 0; final 23-15
+- 2026-10-24: Boston College Eagles @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (TD, 3:34 in); lead changes 3; final 49-27
+- 2026-10-24: North Texas Mean Green @ Navy Midshipmen — first: North Texas Mean Green (TD, 4:55 in); lead changes 0; final 49-39
+- 2026-10-24: Hawai'i Rainbow Warriors @ Northern Illinois Huskies — first: Hawai'i Rainbow Warriors (TD, 5:47 in); lead changes 0; final 56-21
+- 2026-10-24: Sacramento State Hornets @ Ball State Cardinals — first: Sacramento State Hornets (FG, 12:24 in); lead changes 3; final 17-34
+- 2026-10-24: Bowling Green Falcons @ Buffalo Bulls — first: Buffalo Bulls (TD, 5:57 in); lead changes 2; final 24-31
+- 2026-10-24: Kansas State Wildcats @ Arizona State Sun Devils — first: Kansas State Wildcats (TD, 4:22 in); lead changes 3; final 17-28
+- 2026-10-24: Eastern Michigan Eagles @ Ohio Bobcats — first: Ohio Bobcats (TD, 9:12 in); lead changes 4; final 20-24
+- 2026-10-24: UL Monroe Warhawks @ Troy Trojans — first: Troy Trojans (TD, 10:44 in); lead changes 1; final 21-14
+- 2026-10-24: San José State Spartans @ Nevada Wolf Pack — first: Nevada Wolf Pack (TD, 10:12 in); lead changes 0; final 13-28
+- 2026-10-24: Louisiana Ragin' Cajuns @ Southern Miss Golden Eagles — first: Louisiana Ragin' Cajuns (TD, 7:23 in); lead changes 3; final 31-35
+- 2026-10-24: Old Dominion Monarchs @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 6:19 in); lead changes 0; final 0-26
+- 2026-10-24: San Diego State Aztecs @ Colorado State Rams — first: Colorado State Rams (TD, 4:43 in); lead changes 4; final 49-56
+- 2026-10-24: Colorado Buffaloes @ Oklahoma State Cowboys — first: Oklahoma State Cowboys (TD, 0:59 in); lead changes 4; final 24-57
+- 2026-10-24: Virginia Tech Hokies @ Clemson Tigers — first: Virginia Tech Hokies (FG, 13:40 in); lead changes 2; final 20-16
+- 2026-10-24: Georgia State Panthers @ Arkansas State Red Wolves — first: Arkansas State Red Wolves (TD, 3:12 in); lead changes 0; final 32-38
+- 2026-10-24: Syracuse Orange @ North Carolina Tar Heels — first: North Carolina Tar Heels (TD, 3:20 in); lead changes 1; final 31-30
+- 2026-10-24: Utah State Aggies @ Texas State Bobcats — first: Utah State Aggies (FG, 3:48 in); lead changes 3; final 17-20
+- 2026-10-24: UTSA Roadrunners @ Tulane Green Wave — first: Tulane Green Wave (TD, 0:05 in); lead changes 1; final 42-19
+- 2026-10-24: North Dakota State Bison @ New Mexico Lobos — first: New Mexico Lobos (TD, 3:09 in); lead changes 0; final 16-21
+- 2026-10-27: Delaware Blue Hens @ Western Kentucky Hilltoppers — first: Western Kentucky Hilltoppers (TD, 3:23 in); lead changes 1; final 35-21
+- 2026-10-27: Sam Houston Bearkats @ Missouri State Bears — first: Missouri State Bears (TD, 10:51 in); lead changes 0; final 3-24
+- 2026-10-28: Kennesaw State Owls @ Middle Tennessee Blue Raiders — first: Kennesaw State Owls (TD, 2:28 in); lead changes 2; final 44-28
+- 2026-10-28: Jacksonville State Gamecocks @ New Mexico State Aggies — first: Jacksonville State Gamecocks (TD, 17:27 in); lead changes 0; final 24-0
+- 2026-10-29: Florida Atlantic Owls @ North Texas Mean Green — first: North Texas Mean Green (FG, 5:21 in); lead changes 2; final 41-48
+- 2026-10-29: Troy Trojans @ James Madison Dukes — first: James Madison Dukes (TD, 6:03 in); lead changes 1; final 24-21
+- 2026-10-30: Tulane Green Wave @ Charlotte 49ers — first: Tulane Green Wave (TD, 9:46 in); lead changes 4; final 38-31
+- 2026-10-30: Baylor Bears @ UCF Knights — first: Baylor Bears (TD, 10:54 in); lead changes 0; final 41-9
+- 2026-10-30: Kent State Golden Flashes @ Sacramento State Hornets — first: Kent State Golden Flashes (TD, 7:35 in); lead changes 1; final 10-31
+- 2026-10-31: Miami Hurricanes @ North Carolina Tar Heels — first: Miami Hurricanes (TD, 6:27 in); lead changes 4; final 38-35
+- 2026-10-31: Ohio State Buckeyes @ USC Trojans — first: USC Trojans (TD, 0:39 in); lead changes 0; final 18-30
+- 2026-10-31: Florida Gators @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 13:10 in); lead changes 0; final 8-27
+- 2026-10-31: Minnesota Golden Gophers @ Indiana Hoosiers — first: Minnesota Golden Gophers (FG, 6:06 in); lead changes 3; final 16-23
+- 2026-10-31: Notre Dame Fighting Irish @ Navy Midshipmen — first: Navy Midshipmen (FG, 8:17 in); lead changes 3; final 35-13
+- 2026-10-31: Utah Utes @ Cincinnati Bearcats — first: Utah Utes (TD, 8:23 in); lead changes 0; final 49-25
+- 2026-10-31: Nevada Wolf Pack @ UCLA Bruins — first: UCLA Bruins (FG, 2:45 in); lead changes 0; final 0-27
+- 2026-10-31: Arizona State Sun Devils @ BYU Cougars — first: BYU Cougars (TD, 4:13 in); lead changes 0; final 20-27
+- 2026-10-31: Mississippi State Bulldogs @ Texas Longhorns — first: Texas Longhorns (TD, 2:01 in); lead changes 0; final 3-31
+- 2026-10-31: Auburn Tigers @ Ole Miss Rebels — first: Ole Miss Rebels (TD, 15:03 in); lead changes 0; final 15-45
+- 2026-10-31: Arizona Wildcats @ Texas Tech Red Raiders — first: Arizona Wildcats (FG, 3:25 in); lead changes 3; final 26-34
+- 2026-10-31: Virginia Cavaliers @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (TD, 2:31 in); lead changes 0; final 7-51
+- 2026-10-31: SMU Mustangs @ Syracuse Orange — first: Syracuse Orange (TD, 4:56 in); lead changes 4; final 27-30
+- 2026-10-31: Northwestern Wildcats @ Oregon Ducks — first: Northwestern Wildcats (FG, 5:25 in); lead changes 1; final 26-34
+- 2026-10-31: Texas State Bobcats @ Boise State Broncos — first: Boise State Broncos (TD, 9:25 in); lead changes 4; final 45-46
+- 2026-10-31: Missouri Tigers @ Arkansas Razorbacks — first: Missouri Tigers (FG, 9:27 in); lead changes 0; final 34-10
+- 2026-10-31: Oklahoma State Cowboys @ Iowa State Cyclones — first: Iowa State Cyclones (TD, 2:22 in); lead changes 4; final 49-51
+- 2026-10-31: Wisconsin Badgers @ Iowa Hawkeyes — first: Iowa Hawkeyes (FG, 5:52 in); lead changes 0; final 0-30
+- 2026-10-31: California Golden Bears @ NC State Wolfpack — first: NC State Wolfpack (TD, 1:31 in); lead changes 0; final 10-31
+- 2026-10-31: Illinois Fighting Illini @ Maryland Terrapins — first: Maryland Terrapins (TD, 7:55 in); lead changes 1; final 20-17
+- 2026-10-31: UAB Blazers @ South Florida Bulls — first: UAB Blazers (TD, 4:02 in); lead changes 1; final 10-30
+- 2026-10-31: Bowling Green Falcons @ Western Michigan Broncos — first: Bowling Green Falcons (TD, 8:00 in); lead changes 1; final 10-23
+- 2026-10-31: Michigan Wolverines @ Rutgers Scarlet Knights — first: Michigan Wolverines (TD, 7:37 in); lead changes 0; final 28-21
+- 2026-10-31: Marshall Thundering Herd @ Old Dominion Monarchs — first: Marshall Thundering Herd (TD, 2:03 in); lead changes 0; final 36-23
+- 2026-10-31: Kansas State Wildcats @ Colorado Buffaloes — first: Colorado Buffaloes (TD, 13:18 in); lead changes 2; final 24-27
+- 2026-10-31: Coastal Carolina Chanticleers @ Georgia State Panthers — first: Georgia State Panthers (FG, 12:48 in); lead changes 1; final 31-20
+- 2026-10-31: UConn Huskies @ Air Force Falcons — first: Air Force Falcons (TD, 6:17 in); lead changes 0; final 26-35
+- 2026-10-31: Temple Owls @ East Carolina Pirates — first: East Carolina Pirates (TD, 13:41 in); lead changes 0; final 9-17
+- 2026-10-31: Louisiana Tech Bulldogs @ South Alabama Jaguars — first: South Alabama Jaguars (TD, 5:27 in); lead changes 1; final 35-20
+- 2026-10-31: Stanford Cardinal @ Louisville Cardinals — first: Louisville Cardinals (TD, 3:35 in); lead changes 4; final 24-52
+- 2026-10-31: Kansas Jayhawks @ TCU Horned Frogs — first: Kansas Jayhawks (FG, 13:28 in); lead changes 3; final 16-22
+- 2026-10-31: Colorado State Rams @ Utah State Aggies — first: Utah State Aggies (TD, 2:34 in); lead changes 0; final 14-31
+- 2026-10-31: UTEP Miners @ North Dakota State Bison — first: UTEP Miners (TD, 2:22 in); lead changes 1; final 7-31
+- 2026-10-31: Florida International Panthers @ Liberty Flames — first: Liberty Flames (TD, 3:45 in); lead changes 0; final 10-49
+- 2026-10-31: Southern Miss Golden Eagles @ UL Monroe Warhawks — first: Southern Miss Golden Eagles (TD, 17:12 in); lead changes 0; final 35-21
+- 2026-10-31: New Mexico Lobos @ San José State Spartans — first: San José State Spartans (FG, 11:24 in); lead changes 1; final 21-16
+- 2026-10-31: South Carolina Gamecocks @ Oklahoma Sooners — first: South Carolina Gamecocks (TD, 8:34 in); lead changes 0; final 42-25
+- 2026-10-31: Purdue Boilermakers @ Penn State Nittany Lions — first: Penn State Nittany Lions (TD, 9:47 in); lead changes 0; final 17-31
+- 2026-10-31: App State Mountaineers @ Georgia Southern Eagles — first: Georgia Southern Eagles (FG, 15:56 in); lead changes 0; final 3-19
+- 2026-10-31: Clemson Tigers @ Florida State Seminoles — first: Clemson Tigers (TD, 4:47 in); lead changes 0; final 36-24
+- 2026-10-31: Washington State Cougars @ San Diego State Aztecs — first: San Diego State Aztecs (TD, 7:33 in); lead changes 0; final 20-26
+- 2026-10-31: Georgia Tech Yellow Jackets @ Pittsburgh Panthers — first: Pittsburgh Panthers (FG, 7:29 in); lead changes 0; final 11-34
+- 2026-10-31: Washington Huskies @ Nebraska Cornhuskers — first: Nebraska Cornhuskers (TD, 13:20 in); lead changes 1; final 17-10
+- 2026-10-31: Army Black Knights @ Memphis Tigers — first: Memphis Tigers (TD, 7:44 in); lead changes 0; final 22-49
+- 2026-10-31: Northern Illinois Huskies @ UNLV Rebels — first: UNLV Rebels (TD, 0:11 in); lead changes 2; final 24-31
+- 2026-10-31: Oregon State Beavers @ Fresno State Bulldogs — first: Oregon State Beavers (FG, 8:19 in); lead changes 1; final 22-38
+- 2026-11-03: Ohio Bobcats @ Akron Zips — first: Akron Zips (FG, 11:25 in); lead changes 5; final 28-20
+- 2026-11-03: Buffalo Bulls @ Miami (OH) RedHawks — first: Buffalo Bulls (FG, 4:11 in); lead changes 2; final 34-31
+- 2026-11-04: Ball State Cardinals @ Massachusetts Minutemen — first: Ball State Cardinals (TD, 8:11 in); lead changes 5; final 30-31
+- 2026-11-04: Toledo Rockets @ Sacramento State Hornets — first: Toledo Rockets (TD, 7:28 in); lead changes 2; final 20-17
+- 2026-11-04: Central Michigan Chippewas @ Eastern Michigan Eagles — first: Central Michigan Chippewas (TD, 5:43 in); lead changes 0; final 35-7
+- 2026-11-05: UTSA Roadrunners @ Florida Atlantic Owls — first: Florida Atlantic Owls (TD, 5:00 in); lead changes 0; final 29-60
+- 2026-11-05: James Madison Dukes @ Southern Miss Golden Eagles — first: James Madison Dukes (FG, 5:16 in); lead changes 2; final 54-23
+- 2026-11-06: TCU Horned Frogs @ Arizona Wildcats — first: Arizona Wildcats (TD, 4:21 in); lead changes 4; final 28-29
+- 2026-11-06: Virginia Tech Hokies @ SMU Mustangs — first: SMU Mustangs (TD, 2:38 in); lead changes 0; final 28-51
+- 2026-11-06: South Florida Bulls @ East Carolina Pirates — first: South Florida Bulls (TD, 4:35 in); lead changes 1; final 17-20
+- 2026-11-06: Nebraska Cornhuskers @ Illinois Fighting Illini — first: Nebraska Cornhuskers (TD, 20:31 in); lead changes 1; final 13-24
+- 2026-11-06: New Mexico Lobos @ Nevada Wolf Pack — first: New Mexico Lobos (TD, 3:29 in); lead changes 0; final 31-3
+- 2026-11-07: Miami Hurricanes @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (FG, 5:22 in); lead changes 0; final 24-31
+- 2026-11-07: Georgia Bulldogs @ Ole Miss Rebels — first: Georgia Bulldogs (TD, 4:44 in); lead changes 0; final 42-7
+- 2026-11-07: BYU Cougars @ Utah Utes — first: Utah Utes (TD, 1:15 in); lead changes 2; final 20-28
+- 2026-11-07: Alabama Crimson Tide @ LSU Tigers — first: Alabama Crimson Tide (FG, 4:20 in); lead changes 2; final 31-13
+- 2026-11-07: Kentucky Wildcats @ Tennessee Volunteers — first: Tennessee Volunteers (TD, 14:04 in); lead changes 0; final 6-34
+- 2026-11-07: Texas Longhorns @ Missouri Tigers — first: Missouri Tigers (TD, 6:20 in); lead changes 1; final 34-20
+- 2026-11-07: UCLA Bruins @ Minnesota Golden Gophers — first: UCLA Bruins (FG, 2:40 in); lead changes 0; final 34-20
+- 2026-11-07: Oregon Ducks @ Ohio State Buckeyes — first: Ohio State Buckeyes (TD, 5:04 in); lead changes 1; final 41-28
+- 2026-11-07: West Virginia Mountaineers @ Texas Tech Red Raiders — first: Texas Tech Red Raiders (TD, 1:58 in); lead changes 8; final 48-53
+- 2026-11-07: Merrimack Warriors @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (TD, 6:34 in); lead changes 0; final 0-77
+- 2026-11-07: Cincinnati Bearcats @ Houston Cougars — first: Houston Cougars (TD, 5:56 in); lead changes 0; final 24-31
+- 2026-11-07: Iowa Hawkeyes @ Northwestern Wildcats — first: Iowa Hawkeyes (TD, 3:50 in); lead changes 0; final 24-10
+- 2026-11-07: Texas A&M Aggies @ South Carolina Gamecocks — first: Texas A&M Aggies (FG, 15:12 in); lead changes 3; final 9-17
+- 2026-11-07: Oklahoma Sooners @ Florida Gators — first: Oklahoma Sooners (FG, 7:24 in); lead changes 0; final 23-7
+- 2026-11-07: Boise State Broncos @ Colorado State Rams — first: Boise State Broncos (TD, 0:52 in); lead changes 0; final 64-38
+- 2026-11-07: Iowa State Cyclones @ Baylor Bears — first: Iowa State Cyclones (TD, 8:29 in); lead changes 1; final 31-42
+- 2026-11-07: Clemson Tigers @ Syracuse Orange — first: Clemson Tigers (FG, 2:30 in); lead changes 0; final 18-13
+- 2026-11-07: Florida State Seminoles @ Boston College Eagles — first: Boston College Eagles (TD, 7:22 in); lead changes 3; final 31-24
+- 2026-11-07: North Carolina Tar Heels @ UConn Huskies — first: North Carolina Tar Heels (TD, 9:31 in); lead changes 0; final 38-21
+- 2026-11-07: Tulsa Golden Hurricane @ Tulane Green Wave — first: Tulsa Golden Hurricane (TD, 5:14 in); lead changes 0; final 60-10
+- 2026-11-07: Duke Blue Devils @ NC State Wolfpack — first: Duke Blue Devils (TD, 0:48 in); lead changes 0; final 41-3
+- 2026-11-07: Maryland Terrapins @ Purdue Boilermakers — first: Purdue Boilermakers (FG, 3:21 in); lead changes 1; final 34-29
+- 2026-11-07: Arkansas Razorbacks @ Auburn Tigers — first: Arkansas Razorbacks (FG, 12:32 in); lead changes 1; final 23-26
+- 2026-11-07: Oklahoma State Cowboys @ Kansas State Wildcats — first: Oklahoma State Cowboys (TD, 2:39 in); lead changes 0; final 66-28
+- 2026-11-07: Old Dominion Monarchs @ Coastal Carolina Chanticleers — first: Old Dominion Monarchs (TD, 9:55 in); lead changes 0; final 21-8
+- 2026-11-07: Georgia State Panthers @ App State Mountaineers — first: Georgia State Panthers (FG, 5:52 in); lead changes 4; final 39-23
+- 2026-11-07: UL Monroe Warhawks @ Arkansas State Red Wolves — first: UL Monroe Warhawks (TD, 7:38 in); lead changes 4; final 19-17
+- 2026-11-07: Delaware Blue Hens @ Kennesaw State Owls — first: Kennesaw State Owls (TD, 0:13 in); lead changes 8; final 40-42
+- 2026-11-07: Penn State Nittany Lions @ Washington Huskies — first: Washington Huskies (FG, 6:47 in); lead changes 1; final 28-25
+- 2026-11-07: Charlotte 49ers @ UAB Blazers — first: Charlotte 49ers (FG, 22:35 in); lead changes 1; final 12-23
+- 2026-11-07: Temple Owls @ Navy Midshipmen — first: Navy Midshipmen (TD, 3:19 in); lead changes 0; final 35-42
+- 2026-11-07: Marshall Thundering Herd @ Georgia Southern Eagles — first: Georgia Southern Eagles (TD, 11:49 in); lead changes 0; final 13-49
+- 2026-11-07: Western Kentucky Hilltoppers @ Middle Tennessee Blue Raiders — first: Middle Tennessee Blue Raiders (TD, 9:51 in); lead changes 0; final 42-51
+- 2026-11-07: UCF Knights @ Kansas Jayhawks — first: Kansas Jayhawks (TD, 4:35 in); lead changes 3; final 33-32
+- 2026-11-07: Rice Owls @ North Texas Mean Green — first: North Texas Mean Green (FG, 8:57 in); lead changes 0; final 23-52
+- 2026-11-07: Northern Illinois Huskies @ San José State Spartans — first: San José State Spartans (TD, 5:17 in); lead changes 0; final 19-30
+- 2026-11-07: Missouri State Bears @ Florida International Panthers — first: Florida International Panthers (FG, 28:00 in); lead changes 2; final 20-23
+- 2026-11-07: Louisiana Tech Bulldogs @ Troy Trojans — first: Louisiana Tech Bulldogs (FG, 4:18 in); lead changes 2; final 41-17
+- 2026-11-07: Vanderbilt Commodores @ Mississippi State Bulldogs — first: Vanderbilt Commodores (FG, 12:01 in); lead changes 0; final 25-23
+- 2026-11-07: Rutgers Scarlet Knights @ Wisconsin Badgers — first: Wisconsin Badgers (TD, 8:35 in); lead changes 0; final 10-31
+- 2026-11-07: South Alabama Jaguars @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 0:12 in); lead changes 0; final 26-28
+- 2026-11-07: Sam Houston Bearkats @ Jacksonville State Gamecocks — first: Jacksonville State Gamecocks (TD, 21:25 in); lead changes 0; final 14-47
+- 2026-11-07: Colorado Buffaloes @ Arizona State Sun Devils — first: Arizona State Sun Devils (FG, 8:29 in); lead changes 0; final 10-20
+- 2026-11-07: Louisville Cardinals @ Georgia Tech Yellow Jackets — first: Louisville Cardinals (FG, 3:54 in); lead changes 0; final 44-17
+- 2026-11-07: Michigan State Spartans @ Michigan Wolverines — first: Michigan State Spartans (FG, 28:27 in); lead changes 0; final 15-6
+- 2026-11-07: Air Force Falcons @ Army Black Knights — first: Air Force Falcons (FG, 15:07 in); lead changes 2; final 24-21
+- 2026-11-07: Liberty Flames @ New Mexico State Aggies — first: New Mexico State Aggies (TD, 3:31 in); lead changes 1; final 30-14
+- 2026-11-07: Fresno State Bulldogs @ Utah State Aggies — first: Utah State Aggies (TD, 15:10 in); lead changes 0; final 10-17
+- 2026-11-07: Hawai'i Rainbow Warriors @ UTEP Miners — first: Hawai'i Rainbow Warriors (TD, 12:03 in); lead changes 0; final 17-14
+- 2026-11-07: Texas State Bobcats @ Oregon State Beavers — first: Texas State Bobcats (TD, 6:39 in); lead changes 0; final 42-21
+- 2026-11-07: Wyoming Cowboys @ UNLV Rebels — first: Wyoming Cowboys (TD, 4:28 in); lead changes 0; final 41-35
+- 2026-11-10: Western Michigan Broncos @ Akron Zips — first: Western Michigan Broncos (TD, 12:41 in); lead changes 0; final 42-14
+- 2026-11-10: Kent State Golden Flashes @ Bowling Green Falcons — first: Bowling Green Falcons (TD, 4:33 in); lead changes 4; final 28-33
+- 2026-11-10: Ohio Bobcats @ Miami (OH) RedHawks — first: Ohio Bobcats (TD, 4:55 in); lead changes 1; final 17-34
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
