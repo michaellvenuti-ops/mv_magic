@@ -5188,3 +5188,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-10 19:07:33 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-10 19:07:36 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-10 19:09:26 ET] odds_recorder.py: OK in 50s — SUMMARY: recorded 227 events (106 with odds), db total 210003 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 19:20:47 ET] sync_to_github.py: OK in 501s —   ok: steam-side-board-pc.html
+[2026-11-10 19:20:52 ET] notify.py: OK in 5s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-10 19:21:25 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (103 with odds), db total 210230 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 19:23:22 ET] dh_game_middles.py: OK in 116s — GAME MIDDLE: NBA MIA Heat UTA Jazz Today 9:15 PM / table / Alt Spread MIA Heat -5.5 / Alt Spread UTA Jazz +6.5 / table | FanDuel | Bally Bet — window 260.0 :: -
+[2026-11-10 19:26:56 ET] dh_key_number_middles.py: OK in 214s — key-number-middles: no new strict-key middles.
+[2026-11-10 19:27:01 ET] rlm.py: OK in 6s
+[2026-11-10 19:27:05 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-10 19:27:09 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Western Michigan @ Akron | 2026-11-10 | Kalshi | Under total 50.5 (median 50.5 -> 44.5)
+[2026-11-10 19:28:30 ET] odds_recorder.py: OK in 51s — SUMMARY: recorded 227 events (102 with odds), db total 210457 snapshots / 747 events, feeds ok 6 fail 0
+[2026-11-10 19:29:00 ET] dh_arbitrage.py: OK in 30s — ARBITRAGE: NFL SEA Seahawks LV Raiders Nov-15 4:05 PM / table / Passing TDs F. Mendoza Over 0.5 / Passing TDs F. Mendoza Under 0.5 / table | Bet365 | Caesars
+[2026-11-10 19:29:19 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-10 19:29:40 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAB Fairfield Wisconsin Today 8:30 PM / table / Alt Spread Fairfield +31.5 / Alt Spread Wisconsin -31.5 / table | Fanatics-NJ | BetRivers
+[2026-11-10 19:31:01 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE : NBA MIA Heat UTA Jazz Today 9:15 PM / table / Alt Spread UTA Jazz +12 / Alt Spread MIA Heat -11.5 / table | Bet365 | BetMGM — window 360.0 :: {'si
