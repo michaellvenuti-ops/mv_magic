@@ -11,3 +11,6 @@
 ## 2026-11-11T06:10:14-05:00 — 81 games, 0 leads credited, 1 started games skipped
 ## 2026-11-11T07:14:36-05:00 — 81 games, 0 leads credited, 1 started games skipped
 ## 2026-11-11T08:31:01-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T09:53:43-05:00 — pack move, never credited: Texans @ Browns | 2026-11-11 spread (DraftKings, Kalshi)
+## 2026-11-11T09:53:43-05:00 — 81 games, 1 leads credited, 1 started games skipped
+LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
