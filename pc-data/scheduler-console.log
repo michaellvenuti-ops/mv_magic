@@ -5644,3 +5644,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 10:32:26 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
 [2026-11-11 10:32:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
 [2026-11-11 10:32:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 10:42:32 ET] sync_to_github.py: OK in 603s —   ok: wide-builds-board-pc.html
+[2026-11-11 10:43:27 ET] notify.py: OK in 56s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 10:44:01 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 226 events (78 with odds), db total 227203 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 10:44:26 ET] dh_kalshi_poly_arb.py: OK in 25s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 10:44:27 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA LA Lakers MIL Bucks Today 8:15 PM — Total — Over 226.5 Fanatics-NJ -140 ($108) / Under 229.5 Bet365 +102 ($92) — both win 227, 228, 229 — land +$
+[2026-11-11 10:44:50 ET] dh_low_holds.py: OK in 23s — low-holds: no new qualifying pairs (silent).
+[2026-11-11 10:46:15 ET] dh_game_middles.py: OK in 85s — GAME MIDDLE: NCAAB Kansas City Florida A&M Today 12:00 PM / table / Alt Total Over 141.5 / Alt Total Under 142 / table | Caesars | Bet365 — window 295.0 :: -145
+[2026-11-11 10:50:13 ET] dh_basketball_key_middles.py: OK in 237s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Campbell East Tennessee St. Today 7:00 PM / table / Alt Total Under 148 / Alt Total Over 145.5 / table |
+[2026-11-11 10:51:28 ET] hung_number.py: OK in 75s — HUNG NUMBER: Ole Miss vs Oklahoma — BetMGM spread value dog (1.0 vs median -1.25)
+[2026-11-11 10:51:32 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 10:53:36 ET] odds_recorder.py: OK in 94s — SUMMARY: recorded 226 events (78 with odds), db total 227429 snapshots / 761 events, feeds ok 6 fail 0
+[2026-11-11 10:55:48 ET] dh_prop_middles.py: OK in 132s — PROP MIDDLE : NCAAB North Carolina A&T East Carolina Today 4:00 PM / table / Alt Total Under 156.5 / Alt Total Over 156 / table | Bally Bet | Bet365 — window 30
+[2026-11-11 10:55:54 ET] totals_scan.py: OK in 5s — totals: no new flags (silent).
+[2026-11-11 10:55:59 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-11 10:57:32 ET] dh_derivative_ev.py: FAILED (exit 2) in 93s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-11.txt. No prices i
