@@ -6074,3 +6074,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 23:16:21 ET] dh_key_number_middles.py: OK in 209s — key-number-middles: 80 basketball rows excluded (football-only rule).
 [2026-11-11 23:17:51 ET] dh_prop_middles.py: OK in 90s — PROP MIDDLE : NCAAB Tennessee Tech Indiana Nov-12 6:30 PM / table / Alt Total Under 172.5 / Alt Total Over 172 / table | DraftKings | Bet365 — window 352.0 :: {
 [2026-11-11 23:17:54 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 2 new, 0 unverified, 690 total tallied.
+[2026-11-11 23:28:28 ET] sync_to_github.py: OK in 633s —   ok: wide-builds-board-pc.html
+[2026-11-11 23:29:26 ET] notify.py: OK in 59s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 23:30:53 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 227 events (75 with odds), db total 238327 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 23:31:24 ET] dh_arbitrage.py: OK in 31s — arbitrage: no new qualifying pairs (silent).
+[2026-11-11 23:31:25 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Oklahoma St. Texas A&M Nov-12 8:00 PM — Total — Over 178.5 Bet365 +100 ($90) / Under 182.5 DraftKings -154 ($110) — both win 179, 180, 181, 182
+[2026-11-11 23:34:43 ET] dh_basketball_key_middles.py: OK in 198s — basketball-key-middles: no new basketball middles.
+[2026-11-11 23:35:55 ET] hung_number.py: OK in 72s — HUNG NUMBER: Buffalo vs Ball State — Fanatics spread value dog (1.0 vs median -1.5)
+[2026-11-11 23:35:59 ET] rlm.py: OK in 5s
+[2026-11-11 23:36:05 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 23:36:07 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 23:37:43 ET] dh_sog_middles.py: OK in 96s — - 0 deliverables this run
+[2026-11-11 23:37:47 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 23:37:48 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 23:37:49 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 2 unverified, 159 total tallied.
+[2026-11-11 23:37:50 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 286 total tallied.
+[2026-11-11 23:37:53 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 6 new, 4 unverified, 463 total tallied.
+[2026-11-11 23:37:54 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 23:37:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-11 23:39:22 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 227 events (75 with odds), db total 238554 snapshots / 844 events, feeds ok 6 fail 0
