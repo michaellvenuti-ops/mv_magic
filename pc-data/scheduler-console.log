@@ -6166,3 +6166,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 01:40:21 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 469 total tallied.
 [2026-11-12 01:40:22 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 01:40:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-12 01:51:06 ET] sync_to_github.py: FAILED (exit 1) in 644s —   FAILED: team-total-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at f3146cc4a85da0f68bfe74cc7a74cea22256f207 but expected 2e45ad4631490a7e56e7b3f
+[2026-11-12 01:53:14 ET] odds_recorder.py: OK in 97s — SUMMARY: recorded 227 events (75 with odds), db total 240824 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 01:54:35 ET] dh_arbitrage.py: OK in 81s — ARBITRAGE: NCAAB Loyola (MD) Towson Today 7:00 PM / table / Alt Total Over 130.5 / Alt Total Under 130.5 / table | DraftKings | Bet365
+[2026-11-12 01:56:52 ET] dh_game_middles.py: OK in 138s — GAME MIDDLE: NCAAB Loyola (MD) Towson Today 7:00 PM / table / Alt Total Under 139 / Alt Total Over 138.5 / table | Bet365 | DraftKings — window 230.0 :: -120 $1
+[2026-11-12 02:00:38 ET] dh_key_number_middles.py: OK in 226s — key-number-middles: 132 basketball rows excluded (football-only rule).
+[2026-11-12 02:01:57 ET] hung_number.py: OK in 79s — No new hung numbers (12 current flags).
+[2026-11-12 02:02:02 ET] rlm.py: OK in 6s
+[2026-11-12 02:02:07 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 02:04:40 ET] dh_prop_middles.py: OK in 153s — PROP MIDDLE CLEAN : NCAAB Tennessee Tech Indiana Today 6:30 PM / table / Total Under 170 / Total Over 169.5 / table | Caesars | BetRivers — window 214.0 :: {'si
+[2026-11-12 02:04:43 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
