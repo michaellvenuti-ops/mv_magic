@@ -31,3 +31,4 @@ NEW FLAG: FBS San Jose State @ Air Force | 2026-11-11 — DraftKings still deali
 NEW FLAG: FBS San Jose State @ Air Force | 2026-11-11 — Fanatics still dealing spread -12.5 on San Jose State (pre-move median -12.5, now -11.5)
 ## 2026-11-11T18:41:37-05:00 — 67 games, 0 steam events, 0 NEW flags, 1 started games skipped
 ## 2026-11-11T19:20:33-05:00 — 67 games, 0 steam events, 0 NEW flags, 1 started games skipped
+## 2026-11-11T20:02:44-05:00 — 67 games, 1 steam events, 0 NEW flags, 3 started games skipped
