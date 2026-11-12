@@ -13,3 +13,6 @@
 ## 2026-11-12T08:25:32-05:00 — no-follow: Kalshi Florida Atlantic @ Tulsa | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T08:25:32-05:00 — pack move, never credited: Texas @ LSU | 2026-11-12 spread (FanDuel, bet365)
 ## 2026-11-12T08:25:32-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T09:35:15-05:00 — pack move, never credited: Louisiana @ Louisiana-Monroe | 2026-11-12 total (BetMGM, Caesars, FanDuel, Fanatics, bet365)
+## 2026-11-12T09:35:15-05:00 — no-follow: FanDuel North Texas @ UTSA | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T09:35:15-05:00 — 81 games, 0 leads credited, 3 started games skipped
