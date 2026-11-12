@@ -80,7 +80,10 @@ def fetch_ppp(league, dump_path=None):
 
 
 def match_ppp(ppp_map, team_name):
-    """Fuzzy team match: exact, then substring either way."""
+    """Fuzzy team match: alias, then exact, then substring either way."""
+    alias = TEAM_ALIASES.get(team_name.strip().lower())
+    if alias and alias in ppp_map:
+        return ppp_map[alias]
     if team_name in ppp_map:
         return ppp_map[team_name]
     low = team_name.lower()
@@ -88,6 +91,29 @@ def match_ppp(ppp_map, team_name):
         if name.lower() in low or low in name.lower():
             return val
     return None
+
+
+# Board names (ScoresAndOdds nicknames / short forms) -> TeamRankings names.
+# Without these the NFL leg is blind: TeamRankings lists cities ("Washington")
+# while the board lists nicknames ("Commanders"), and the substring fallback
+# only matches Giants/Jets/Rams/Chargers. CFB short forms likewise.
+TEAM_ALIASES = {
+    # NFL nickname -> TeamRankings city name
+    "49ers": "San Francisco", "bengals": "Cincinnati", "bills": "Buffalo",
+    "browns": "Cleveland", "cardinals": "Arizona", "chiefs": "Kansas City",
+    "colts": "Indianapolis", "commanders": "Washington", "cowboys": "Dallas",
+    "dolphins": "Miami", "falcons": "Atlanta", "jaguars": "Jacksonville",
+    "lions": "Detroit", "packers": "Green Bay", "panthers": "Carolina",
+    "patriots": "New England", "raiders": "Las Vegas", "ravens": "Baltimore",
+    "saints": "New Orleans", "seahawks": "Seattle", "steelers": "Pittsburgh",
+    "texans": "Houston", "titans": "Tennessee", "vikings": "Minnesota",
+    "bears": "Chicago", "broncos": "Denver", "buccaneers": "Tampa Bay",
+    "eagles": "Philadelphia", "giants": "NY Giants", "jets": "NY Jets",
+    "rams": "LA Rams", "chargers": "LA Chargers",
+    # CFB short form -> TeamRankings name
+    "appalachian state": "App State", "east carolina": "E Carolina",
+    "james madison": "J Madison", "ole miss": "Mississippi",
+}
 
 
 def main():
