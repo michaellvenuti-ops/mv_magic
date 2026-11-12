@@ -25,3 +25,10 @@ NEW FLAG: FBS USC @ Indiana | 2026-11-12 — Kalshi still dealing spread -9.5 on
 NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — DraftKings still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
 NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — Caesars still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
 NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — Fanatics still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
+## 2026-11-12T17:26:04-05:00 — 67 games, 3 steam events, 6 NEW flags, 3 started games skipped
+NEW FLAG: FBS Missouri @ Georgia | 2026-11-12 — FanDuel still dealing spread -15.5 on Georgia (pre-move median -15.5, now -16.5)
+NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-12 — FanDuel still dealing spread 1.5 on Oklahoma (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-12 — Fanatics still dealing spread 1.0 on Oklahoma (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS Ole Miss @ Oklahoma | 2026-11-12 — Kalshi still dealing spread 1.5 on Oklahoma (pre-move median 1.0, now -1.0)
+NEW FLAG: FBS Colorado State @ Washington State | 2026-11-12 — bet365 still dealing spread -9.5 on Colorado State (pre-move median -9.5, now -8.5)
+NEW FLAG: FBS Colorado State @ Washington State | 2026-11-12 — Fanatics still dealing spread -9.5 on Colorado State (pre-move median -9.5, now -8.5)
