@@ -285,3 +285,5 @@
 - 2026-11-10: Nashville Predators @ Los Angeles Kings — first goal: Nashville Predators (EV, Filip Forsberg, 14:40 in); lead changes 0; final 3-0
 ## 2026-11-11T22:19:03-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 285 games through 2026-11-11
 - 2026-11-11: Tampa Bay Lightning @ Buffalo Sabres — first goal: Tampa Bay Lightning (EV, Scott Sabourin, 1:11 in); lead changes 0; final 8-3
+## 2026-11-11T22:58:45-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 286 games through 2026-11-11
+- 2026-11-11: New York Rangers @ Calgary Flames — first goal: New York Rangers (EV, Mika Zibanejad, 39:01 in); lead changes 0; final 3-1
