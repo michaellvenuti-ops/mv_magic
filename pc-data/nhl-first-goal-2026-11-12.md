@@ -3,3 +3,5 @@
 ## 2026-11-12T00:56:30-05:00 -- NHL FIRST GOAL (PC): 2 new final(s) tallied; season 289 games through 2026-11-11
 - 2026-11-11: Utah Mammoth @ Vegas Golden Knights — first goal: Vegas Golden Knights (PP, Jack Eichel, 17:45 in); lead changes 0; final 3-5
 - 2026-11-11: Nashville Predators @ Anaheim Ducks — first goal: Anaheim Ducks (EV, Cutter Gauthier, 11:52 in); lead changes 1; final 4-2
+## 2026-11-12T01:40:19-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 290 games through 2026-11-11
+- 2026-11-11: Pittsburgh Penguins @ San Jose Sharks — first goal: Pittsburgh Penguins (EV, Samuel Girard, 11:03 in); lead changes 0; final 3-2 (SO)
