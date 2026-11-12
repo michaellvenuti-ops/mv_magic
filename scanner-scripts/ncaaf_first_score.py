@@ -39,6 +39,11 @@ Outputs (all in data/, synced to pc-data/):
     "league", "lead_change_team_avgs"}
   - ncaaf-first-score-games.csv / ncaaf-first-score-sequences.csv
   - ncaaf-first-score-<date>.md banked lines when new games tally
+
+Trends (added 2026-11-12 at Michael's ask): per team and
+league-wide, won-by-exactly-one when scoring first — the both-win
+rate for a moneyline + opponent +1.5 in-play middle when your
+team scores first.
 """
 import csv
 import json
@@ -189,6 +194,19 @@ def process_game(ev):
             "final": f"{ev['away_score']}-{ev['home_score']}"}
 
 
+def margin_for(game, team):
+    """Final-score margin for team (+N = team won by N), or None."""
+    try:
+        a, h = (int(x) for x in str(game.get("final", "")).split("-"))
+    except (ValueError, TypeError):
+        return None
+    if team == game.get("away"):
+        return a - h
+    if team == game.get("home"):
+        return h - a
+    return None
+
+
 def recompute(entries):
     games = sorted(entries.values(),
                    key=lambda g: (g["date"], g["away"]))
@@ -199,7 +217,8 @@ def recompute(entries):
             t = tally.setdefault(team, {
                 "gp": 0, "scored_first": 0,
                 "kinds": {k: 0 for k in KINDS},
-                "won_when_first": 0, "won_when_not_first": 0})
+                "won_when_first": 0, "won_when_not_first": 0,
+                "won_by_one_when_first": 0})
             t["gp"] += 1
             la = lc_avg.setdefault(team, {"games": 0, "lead_changes": 0})
             la["games"] += 1
@@ -207,6 +226,10 @@ def recompute(entries):
             if g["first"] == team:
                 if g["winner"] == team:
                     t["won_when_first"] += 1
+                    # ML + opponent +1.5 middle: both legs win iff the
+                    # first-score team wins by exactly one point.
+                    if margin_for(g, team) == 1:
+                        t["won_by_one_when_first"] += 1
             elif g["winner"] == team:
                 t["won_when_not_first"] += 1
         if g["first"] in tally:
@@ -223,16 +246,26 @@ def recompute(entries):
             if gp_first else None
         t["win_pct_when_not_first"] = \
             round(100 * t["won_when_not_first"] / gp_not, 1) if gp_not else None
+        t["won_by_one_when_first_pct"] = \
+            round(100 * t["won_by_one_when_first"] / gp_first, 1) \
+            if gp_first else None
     for v in lc_avg.values():
         v["avg_per_game"] = round(v["lead_changes"] / v["games"], 2) \
             if v["games"] else 0.0
     n = len(games)
     elapsed = [g["first_elapsed_sec"] for g in games
                if g.get("first_elapsed_sec") is not None]
+    scored = [g for g in games if g.get("first")]
+    first_by_one = sum(1 for g in scored
+                       if g["first"] == g["winner"]
+                       and margin_for(g, g["first"]) == 1)
     league = {
         "games": n,
         "home_scored_first": sum(1 for g in games if g["first_side"] == "home"),
         "first_team_won": sum(1 for g in games if g["first"] == g["winner"]),
+        "first_team_won_by_one": first_by_one,
+        "first_team_won_by_one_pct": round(100 * first_by_one / len(scored), 1)
+        if scored else None,
         "kinds": {k: sum(1 for g in games if g["first_kind"] == k)
                   for k in KINDS},
         "avg_lead_changes": round(sum(g["lead_changes"] for g in games) / n, 2)
