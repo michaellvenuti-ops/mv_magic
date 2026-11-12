@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-12 (scan 2026-11-12 13:23)
+# Hung numbers — 2026-11-12 (scan 2026-11-12 14:37)
 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
