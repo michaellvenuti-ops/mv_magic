@@ -34,3 +34,7 @@
 ## 2026-11-12T14:38:47-05:00 — 81 games, 0 leads credited, 3 started games skipped
 ## 2026-11-12T15:51:34-05:00 — pack move, never credited: Oregon State @ Boise State | 2026-11-12 total (Caesars, FanDuel, Fanatics, Kalshi, bet365)
 ## 2026-11-12T15:51:34-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T17:04:18-05:00 — pack move, never credited: Commanders @ Giants | 2026-11-12 spread (Caesars, DraftKings, Kalshi, bet365)
+## 2026-11-12T17:04:18-05:00 — pack move, never credited: Wisconsin @ Maryland | 2026-11-12 spread (FanDuel, bet365)
+## 2026-11-12T17:04:18-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-12 spread (BetMGM, DraftKings, Kalshi)
+## 2026-11-12T17:04:18-05:00 — 81 games, 0 leads credited, 3 started games skipped
