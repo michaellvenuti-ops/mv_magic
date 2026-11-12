@@ -5967,3 +5967,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 20:04:09 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 3 new, 4 unverified, 413 total tallied.
 [2026-11-11 20:04:09 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 20:04:11 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-11 20:15:02 ET] sync_to_github.py: FAILED (exit 1) in 651s —   FAILED: pc-data/pace-state.json (HTTP 409: {'error': '{"message":"is at 0f99c2550c6a15afbb75532b22ffe16e8ebca369 but expected a592b0b690b00c0bb9fffce682c0e889
+[2026-11-11 20:16:28 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 227 events (93 with odds), db total 235149 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 20:17:04 ET] dh_kalshi_poly_arb.py: OK in 36s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 20:17:07 ET] wide_builds.py: OK in 3s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-11.md)
+[2026-11-11 20:17:27 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAF Northwestern 21 Ohio St. Nov-14 12:00 PM / table / Alt Total Over 41.5 / Alt Total Under 41.5 / table | FanDuel | Bally Bet
+[2026-11-11 20:25:59 ET] dh_key_number_middles.py: OK in 512s — key-number-middles: 169 basketball rows excluded (football-only rule).
+[2026-11-11 20:30:18 ET] dh_prop_middles.py: OK in 257s — PROP MIDDLE CLEAN : NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Alt Spread SMU +2 / Alt Spread Wake Forest -1.5 / table | BetRivers | theScore — windo
+[2026-11-11 20:30:48 ET] ncaaf_first_score.py: OK in 29s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
