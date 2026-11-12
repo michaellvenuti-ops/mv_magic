@@ -6619,3 +6619,19 @@
 [2026-11-12 17:04:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-12 17:05:58 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NFL JAX Jaguars TEN Titans Nov-15 1:00 PM / table / Rush Yards C. Ward Over 8.5 / Rush Yards C. Ward Under 10.5 / table | Bally Bet | theSco
 [2026-11-12 17:06:02 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 17:19:25 ET] sync_to_github.py: FAILED (exit 1) in 803s —   FAILED: pc-data/upset-lane-console.log (HTTP 500: {'error': ''})
+[2026-11-12 17:20:59 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 188 events (113 with odds), db total 250707 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 17:21:43 ET] dh_arbitrage.py: OK in 44s — ARBITRAGE: NCAAB Tennessee Tech Indiana Today 6:30 PM / table / Alt Total Under 175.5 / Alt Total Over 175.5 YES / table bar_chart | BetParx | Kalshi
+[2026-11-12 17:22:10 ET] dh_kalshi_poly_arb.py: OK in 26s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 17:22:12 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 17:22:36 ET] dh_low_holds.py: OK in 25s — low-holds: no new qualifying pairs (silent).
+[2026-11-12 17:25:56 ET] dh_basketball_key_middles.py: OK in 200s — basketball-key-middles: no new basketball middles.
+[2026-11-12 17:26:04 ET] steam_side.py: OK in 8s — STEAM-SIDE FLAG: FBS Colorado State @ Washington State | 2026-11-12 | Fanatics | Colorado State spread -9.5 (median -9.5 -> -8.5)
+[2026-11-12 17:27:57 ET] dh_sog_middles.py: OK in 112s — - 0 deliverables this run
+[2026-11-12 17:28:03 ET] dh_team_total_middles.py: OK in 6s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 17:28:04 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 17:28:05 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 17:28:06 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 291 total tallied.
+[2026-11-12 17:28:08 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 470 total tallied.
+[2026-11-12 17:28:08 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 17:28:10 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
