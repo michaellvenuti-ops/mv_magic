@@ -47,3 +47,9 @@ LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
 ## 2026-11-11T20:55:46-05:00 — pack move, never credited: Northwestern @ Ohio State | 2026-11-11 total (BetMGM, Caesars, FanDuel)
 ## 2026-11-11T20:55:46-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-11 spread (Caesars, DraftKings, bet365)
 ## 2026-11-11T20:55:46-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-11T22:17:16-05:00 — no-follow: DraftKings 49ers @ Cowboys | 2026-11-11 spread (only 0 followed)
+## 2026-11-11T22:17:16-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-11T22:17:16-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 total (Caesars, DraftKings, FanDuel)
+## 2026-11-11T22:17:16-05:00 — pack move, never credited: Nebraska @ Rutgers | 2026-11-11 spread (Caesars, DraftKings)
+## 2026-11-11T22:17:16-05:00 — pack move, never credited: Oregon State @ Boise State | 2026-11-11 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-11T22:17:16-05:00 — 81 games, 0 leads credited, 3 started games skipped
