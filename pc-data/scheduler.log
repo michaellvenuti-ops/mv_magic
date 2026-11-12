@@ -6134,3 +6134,16 @@
 [2026-11-12 02:02:07 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-12 02:04:40 ET] dh_prop_middles.py: OK in 153s — PROP MIDDLE CLEAN : NCAAB Tennessee Tech Indiana Today 6:30 PM / table / Total Under 170 / Total Over 169.5 / table | Caesars | BetRivers — window 214.0 :: {'si
 [2026-11-12 02:04:43 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 02:15:44 ET] sync_to_github.py: FAILED (exit 1) in 661s —   FAILED: pc-data/nba-finals-2026-11-05.json (HTTP 409: {'error': '{"message":"is at 403be2ed5e6695be68035cafda4580a8cc989c43 but expected 80c3e85ce06cbd6c13b10
+[2026-11-12 02:17:11 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 227 events (75 with odds), db total 241051 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 02:17:12 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Loyola (MD) Towson Today 7:00 PM — Total — Over 132.5 DraftKings -175 ($117) / Under 136.5 Bet365 +120 ($83) — both win 133, 134, 135, 136 — la
+[2026-11-12 02:20:49 ET] dh_basketball_key_middles.py: OK in 217s — basketball-key-middles: no new basketball middles.
+[2026-11-12 02:20:54 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 02:22:47 ET] dh_sog_middles.py: OK in 113s — - 0 deliverables this run
+[2026-11-12 02:22:50 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-12 02:22:51 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 02:22:53 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 02:22:54 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 02:22:55 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 02:22:56 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 02:22:57 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
