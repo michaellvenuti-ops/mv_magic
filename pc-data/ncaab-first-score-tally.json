@@ -1,5 +1,5 @@
 {
- "through": "2026-11-11",
+ "through": "2026-11-12",
  "games": [
   {
    "away": "Alabama State Hornets",
@@ -6566,6 +6566,20 @@
    "seq": "0-3>0-6>0-8>2-8>2-10>2-13>2-15>2-16>2-19>5-19>5-21>7-21>10-21>10-23>10-26>10-29>10-31>12-31>12-33>14-33>14-36>16-36>18-36>18-38>18-40>20-40>22-40>22-42>24-42>24-44>24-46>26-46>27-46>27-48>27-49>27-51>29-51>29-53>29-55>30-55>30-56>30-57>30-60>32-60>33-60>34-60>37-60>37-61>39-61>39-62>41-62>41-64>43-64>43-67>45-67>47-67>48-67>48-68>48-71>48-73>48-74>48-75>48-76>48-77>48-79>50-79>50-81>53-81>53-83",
    "ties": 0,
    "winner": "Rider Broncs"
+  },
+  {
+   "date": "2026-11-12",
+   "away": "Kansas City Roos",
+   "home": "George Mason Patriots",
+   "first": "George Mason Patriots",
+   "first_side": "home",
+   "first_kind": "2PT",
+   "first_elapsed_sec": 121,
+   "winner": "George Mason Patriots",
+   "seq": "0-2>3-2>3-5>4-5>5-5>5-7>5-9>7-9>7-11>7-13>7-16>9-16>12-16>14-16>14-17>14-19>14-20>14-21>17-21>17-24>20-24>20-25>20-26>22-26>24-26>26-26>26-29>27-29>28-29>28-31>28-33>31-33>33-33>33-34>33-35>33-37>35-37>35-38>35-39>35-40>35-42>35-43>36-43>37-43>38-43>39-43>40-43>41-43>41-44>41-45>41-47>43-47>43-48>43-49>43-51>43-53>43-56>43-58>45-58>45-59>46-59>47-59>47-61>49-61>50-61>51-61>51-62>51-64>53-64>53-65>53-66>55-66>55-68>55-71>58-71>61-71>64-71>64-73>66-73>66-74>68-74>68-75>68-76",
+   "lead_changes": 2,
+   "ties": 3,
+   "final": "68-76"
   }
  ],
  "tally": {
@@ -10522,14 +10536,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "George Mason Patriots": {
-   "gp": 1,
-   "scored_first": 1,
+   "gp": 2,
+   "scored_first": 2,
    "kinds": {
     "3PT": 0,
-    "2PT": 1,
+    "2PT": 2,
     "FT": 0
    },
-   "won_when_first": 1,
+   "won_when_first": 2,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
@@ -11546,7 +11560,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Kansas City Roos": {
-   "gp": 3,
+   "gp": 4,
    "scored_first": 2,
    "kinds": {
     "3PT": 0,
@@ -11556,9 +11570,9 @@
    "won_when_first": 1,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 66.7,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Southern Jaguars": {
@@ -14091,20 +14105,20 @@
   }
  },
  "league": {
-  "games": 469,
-  "home_scored_first": 284,
-  "first_team_won": 294,
+  "games": 470,
+  "home_scored_first": 285,
+  "first_team_won": 295,
   "first_team_won_by_one": 1,
   "first_team_won_by_one_pct": 0.2,
   "kinds": {
    "3PT": 127,
-   "2PT": 282,
+   "2PT": 283,
    "FT": 60
   },
   "avg_lead_changes": 3.29,
   "median_first_score_sec": 31,
   "home_scored_first_pct": 60.6,
-  "first_team_win_pct": 62.7
+  "first_team_win_pct": 62.8
  },
  "lead_change_team_avgs": {
   "Alabama State Hornets": {
@@ -15343,9 +15357,9 @@
    "avg_per_game": 1.5
   },
   "George Mason Patriots": {
-   "games": 1,
-   "lead_changes": 0,
-   "avg_per_game": 0.0
+   "games": 2,
+   "lead_changes": 2,
+   "avg_per_game": 1.0
   },
   "Delaware Blue Hens": {
    "games": 2,
@@ -15663,9 +15677,9 @@
    "avg_per_game": 7.0
   },
   "Kansas City Roos": {
-   "games": 3,
-   "lead_changes": 8,
-   "avg_per_game": 2.67
+   "games": 4,
+   "lead_changes": 10,
+   "avg_per_game": 2.5
   },
   "Southern Jaguars": {
    "games": 3,
