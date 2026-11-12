@@ -429,3 +429,13 @@
 - 2026-11-11: Virginia Lynchburg Dragons @ Western Carolina Catamounts — first: Virginia Lynchburg Dragons (3PT, 0:49 in); lead changes 1; final 68-136
 - 2026-11-11: Thomas College Terriers @ New Hampshire Wildcats — first: New Hampshire Wildcats (2PT, 0:55 in); lead changes 0; final 55-114
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T20:51:43-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 421 games through 2026-11-11
+- 2026-11-11: Bryant & Stratton-Albany Bobcats @ Wagner Seahawks — first: Wagner Seahawks (3PT, 0:28 in); lead changes 0; final 51-117
+- 2026-11-11: Clarke Pride @ Northern Illinois Huskies — first: Northern Illinois Huskies (2PT, 0:26 in); lead changes 0; final 43-82
+- 2026-11-11: Pennsylvania Quakers @ Navy Midshipmen — first: Pennsylvania Quakers (2PT, 0:20 in); lead changes 3; final 76-81
+- 2026-11-11: North Carolina Central Eagles @ VMI Keydets — first: VMI Keydets (FT, 1:06 in); lead changes 0; final 51-65
+- 2026-11-11: Charleston Cougars @ Temple Owls — first: Charleston Cougars (2PT, 0:42 in); lead changes 0; final 91-81
+- 2026-11-11: Bob Jones Bruins @ South Carolina Upstate Spartans — first: South Carolina Upstate Spartans (2PT, 0:27 in); lead changes 2; final 49-104
+- 2026-11-11: Southern Indiana Screaming Eagles @ IU Indianapolis Jaguars — first: IU Indianapolis Jaguars (2PT, 0:44 in); lead changes 14; final 70-74
+- 2026-11-11: Great Lakes Christian Crusaders @ Eastern Michigan Eagles — first: Eastern Michigan Eagles (2PT, 0:15 in); lead changes 0; final 44-108
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
