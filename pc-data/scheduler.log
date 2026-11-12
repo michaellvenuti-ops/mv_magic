@@ -5888,3 +5888,16 @@
 [2026-11-11 19:01:22 ET] dh_key_number_middles.py: OK in 198s — key-number-middles: 384 basketball rows excluded (football-only rule).
 [2026-11-11 19:03:00 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE CLEAN : NCAAF Sacramento St. Central Michigan Today 7:30 PM / table / Alt Total Under 44.5 / Alt Total Over 44 / table bar_chart | HardRock | Prophe
 [2026-11-11 19:03:02 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
+[2026-11-11 19:13:49 ET] sync_to_github.py: FAILED (exit 1) in 646s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-3.txt (HTTP 409: {'error': '{"message":"is at ab226e7f91f30b5c0714c4726482cc4d2d924557 but expec
+[2026-11-11 19:15:14 ET] odds_recorder.py: OK in 55s — SUMMARY: recorded 227 events (109 with odds), db total 234468 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 19:16:50 ET] dh_game_middles.py: OK in 96s — GAME MIDDLE: NCAAF Buffalo Ball St. Today 7:30 PM / table / 1st Half Total Over 25.5 / 1st Half Total Under 26.5 / table | Bet365 | FanDuel — window 217.0 :: -1
+[2026-11-11 19:20:25 ET] dh_basketball_key_middles.py: OK in 215s — basketball-key-middles: no new basketball middles.
+[2026-11-11 19:20:33 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 19:22:16 ET] dh_sog_middles.py: OK in 104s — - 0 deliverables this run
+[2026-11-11 19:22:19 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 19:22:20 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 19:22:21 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 19:22:22 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 19:22:25 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 410 total tallied.
+[2026-11-11 19:22:25 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 19:22:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
