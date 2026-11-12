@@ -481,3 +481,11 @@
 - 2026-11-11: Stephen F. Austin Lumberjacks @ Abilene Christian Wildcats — first: Abilene Christian Wildcats (2PT, 1:00 in); lead changes 3; final 76-71
 - 2026-11-11: Erskine Flying Fleet @ Gardner-Webb Runnin' Bulldogs — first: Erskine Flying Fleet (2PT, 1:17 in); lead changes 1; final 66-88
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T23:37:53-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 463 games through 2026-11-11
+- 2026-11-11: Arkansas-Pine Bluff Golden Lions @ UCLA Bruins — first: UCLA Bruins (2PT, 0:11 in); lead changes 0; final 37-106
+- 2026-11-11: Lindenwood Lions @ Nebraska Cornhuskers — first: Lindenwood Lions (2PT, 0:49 in); lead changes 1; final 60-94
+- 2026-11-11: Oakland Golden Grizzlies @ Boise State Broncos — first: Oakland Golden Grizzlies (3PT, 0:16 in); lead changes 3; final 79-111
+- 2026-11-11: Portland State Vikings @ Colorado State Rams — first: Portland State Vikings (2PT, 0:49 in); lead changes 1; final 71-87
+- 2026-11-11: Nevada Wolf Pack @ UC Santa Barbara Gauchos — first: Nevada Wolf Pack (2PT, 0:55 in); lead changes 1; final 63-76
+- 2026-11-11: Cal Poly Mustangs @ Grand Canyon Lopes — first: Cal Poly Mustangs (2PT, 1:21 in); lead changes 3; final 71-99
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
