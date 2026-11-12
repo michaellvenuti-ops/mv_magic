@@ -41,3 +41,4 @@ NEW FLAG: FBS Sacramento State @ Central Michigan | 2026-11-11 — Kalshi still 
 NEW FLAG: FBS Sacramento State @ Central Michigan | 2026-11-11 — Kalshi still dealing spread -20.5 on Sacramento State (pre-move median -17.5, now -14.5)
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-11 — Fanatics still dealing spread -13.5 on Boise State (pre-move median -13.5, now -14.5)
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-11 — Kalshi still dealing spread -13.5 on Boise State (pre-move median -13.5, now -14.5)
+## 2026-11-11T22:57:05-05:00 — 67 games, 1 steam events, 0 NEW flags, 3 started games skipped
