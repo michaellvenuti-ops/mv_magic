@@ -6026,3 +6026,9 @@
 [2026-11-11 22:58:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 22:58:48 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-11 23:00:15 ET] odds_recorder.py: OK in 57s — SUMMARY: recorded 227 events (76 with odds), db total 237873 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 23:10:36 ET] sync_to_github.py: FAILED (exit 1) in 621s —   FAILED: pc-data/total-projectors-snapshot-2026-11-06.json (HTTP 409: {'error': '{"message":"is at db8290fa7922bc2db1d6384c2a7e774f8909930a but expected 742c5b
+[2026-11-11 23:11:10 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (75 with odds), db total 238100 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 23:12:51 ET] dh_game_middles.py: OK in 101s — GAME MIDDLE: NFL LA Rams ARI Cardinals Nov-15 4:05 PM / table / Alt Spread ARI Cardinals +13.5 / Alt Spread LA Rams -13 / table | Bally Bet | Fanatics-NJ — wind
+[2026-11-11 23:16:21 ET] dh_key_number_middles.py: OK in 209s — key-number-middles: 80 basketball rows excluded (football-only rule).
+[2026-11-11 23:17:51 ET] dh_prop_middles.py: OK in 90s — PROP MIDDLE : NCAAB Tennessee Tech Indiana Nov-12 6:30 PM / table / Alt Total Under 172.5 / Alt Total Over 172 / table | DraftKings | Bet365 — window 352.0 :: {
+[2026-11-11 23:17:54 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 2 new, 0 unverified, 690 total tallied.
