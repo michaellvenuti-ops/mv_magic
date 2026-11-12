@@ -9,3 +9,7 @@
 ## 2026-11-12T07:02:16-05:00 — no-follow: Kalshi Middle Tennessee @ Liberty | 2026-11-12 total (only 0 followed)
 ## 2026-11-12T07:02:16-05:00 — no-follow: Kalshi Ole Miss @ Oklahoma | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T07:02:16-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T08:25:32-05:00 — no-follow: Fanatics Louisiana @ Louisiana-Monroe | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T08:25:32-05:00 — no-follow: Kalshi Florida Atlantic @ Tulsa | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T08:25:32-05:00 — pack move, never credited: Texas @ LSU | 2026-11-12 spread (FanDuel, bet365)
+## 2026-11-12T08:25:32-05:00 — 81 games, 0 leads credited, 3 started games skipped
