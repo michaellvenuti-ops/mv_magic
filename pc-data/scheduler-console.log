@@ -6045,3 +6045,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 22:19:07 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 22:19:08 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-11 22:20:48 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 227 events (76 with odds), db total 237192 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 22:31:13 ET] sync_to_github.py: FAILED (exit 1) in 625s —   FAILED: prop-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 0e12a3f2406a17ce53f36bb3a64174a3bf0a4d1e but expected 163530f5e6610e5a47b8844aabab6
+[2026-11-11 22:31:46 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (76 with odds), db total 237419 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 22:33:40 ET] dh_game_middles.py: OK in 114s — GAME MIDDLE: NCAAB Maryland-Eastern Rhode Island Nov-12 7:00 PM / table / Total Under 146.5 / Alt Total Over 144.5 / table | FanDuel | DraftKings — window 215.0
+[2026-11-11 22:37:17 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: 22 basketball rows excluded (football-only rule).
+[2026-11-11 22:38:52 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE CLEAN : NCAAF Middle Tennessee Liberty Nov-14 3:30 PM / table / Alt Spread Liberty -20 / Alt Spread Middle Tennessee +20.5 / table | Bally Bet | the
+[2026-11-11 22:38:54 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 1 new, 0 unverified, 688 total tallied.
