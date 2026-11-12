@@ -80,3 +80,4 @@ NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB CSU Bakersfield Western Illinois
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [SPANKY] ~7.1%: NCAAB CSU Bakersfield Western Illinois Nov-12 7:00 PM / table / Spread Western Illinois +8.5 / Alt Spread CSU Bakersfield -7 / table | theScore | Bet365 window [8, 7] :: -115 $1,000 theScore, theScore, -115 / +103 $921 Bet365, Bet365, +103
 ## 2026-11-11T22:56:53-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1953 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-11T23:34:38-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1952 + 0 rows parsed, qualifying only below — 0 NEW middles
