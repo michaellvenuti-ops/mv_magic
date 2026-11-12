@@ -6116,3 +6116,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 00:15:08 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 363 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-12 00:15:09 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-12 00:16:37 ET] odds_recorder.py: OK in 58s — SUMMARY: recorded 227 events (75 with odds), db total 239235 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 00:28:50 ET] sync_to_github.py: OK in 642s —   ok: wide-builds-board-pc.html
+[2026-11-12 00:29:12 ET] notify.py: OK in 22s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-12 00:29:45 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (75 with odds), db total 239462 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 00:31:24 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NBA DET Pistons WAS Wizards Today 7:15 PM / table / Rebounds P. Reed Under 8.5 / Rebounds P. Reed Over 7.5 / table | Fanatics-NJ | FanDuel — window
+[2026-11-12 00:34:51 ET] dh_key_number_middles.py: OK in 207s — key-number-middles: 107 basketball rows excluded (football-only rule).
+[2026-11-12 00:36:24 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NCAAB Maryland-Eastern Rhode Island Today 7:00 PM / table / Total Under 144.5 / Total Over 143.5 / table | Bally Bet | theScore — window 209
+[2026-11-12 00:36:26 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 00:37:52 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 227 events (75 with odds), db total 239689 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 00:38:24 ET] dh_arbitrage.py: OK in 32s — arbitrage: no new qualifying pairs (silent).
+[2026-11-12 00:39:36 ET] hung_number.py: OK in 72s — No new hung numbers (13 current flags).
+[2026-11-12 00:39:40 ET] rlm.py: OK in 5s
+[2026-11-12 00:39:44 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
