@@ -14,13 +14,18 @@ kept margins cover 48.5% of all games vs 40.8% for the old set.
 Full findings: nfl-key-numbers.html on mv_magic. Near-misses are
 still out — the set changed, the strictness didn't.
 
-Margin set definition (matches the live state files): for a spread
-middle favorite -A / underdog +B (B > A), the both-win-or-push margins
-are the integers m with A < m < B (both legs win outright), PLUS the
-endpoints A and B themselves when they are whole numbers (one leg
-wins, the other pushes — the live scan records those, e.g. -9/+10 ->
-margins [9, 10]). The middle qualifies only if that set intersects
-KEY_NUMBERS.
+Margin sets (MARGIN-LOGIC FIX, Nov 12, 2026, Michael's tap): for a
+spread middle favorite -A / underdog +B (B > A), the STRICT both-win
+margins are the integers m with A < m < B (both legs win outright);
+the WIN+PUSH margins are the endpoints A and B themselves when they
+are whole numbers (one leg wins, the other pushes — e.g. -9/+10 has
+NO both-win margin, only win+push [9, 10]). The middle qualifies if
+EITHER set contains a key number, and its kind is "both_win" when a
+key sits in the strict set, else "win_push". BEFORE this fix the scan
+merged both sets into one "margins" list and treated any key in it as
+a both-win key — Kansas +5 / WV -4 (Nov 11) and BUF/NYJ Jets +10 /
+Bills -8.5 (Nov 12 05:04) were delivered as both-win pairs when both
+are win+push only. Whole-number endpoints NEVER count as both-win.
 
 SCOPE — FOOTBALL ONLY (Michael's ruling, Nov 11, 2026): the key
 set is derived from FOOTBALL margins. This scan originally read
@@ -38,7 +43,8 @@ BOTH the Full-Time and Full-Time+ segments when the segment control
 exists (best-effort click, view setting); every leg book + price;
 Smaller Bets pass PRESERVING the strict rule.
 State shape matches live key-number-middles-state.json
-({"entries", "meta"}); entries carry "margins" and "key_number".
+({"entries", "meta"}); entries carry "margins" (STRICT both-win list
+only, Nov 12 fix), "both_win", "win_push", "kind", and "key_number".
 Banked: data/key-number-middles-<date>.md. Alert-only.
 """
 import argparse
@@ -99,26 +105,39 @@ def recovered_lines(mid):
     return abs(l1), abs(l2)
 
 
-def margin_set(a, b):
-    """Both-win-or-push margins for favorite -a / underdog +b."""
+def split_margins(a, b):
+    """(both_win, win_push) integer margin lists for favorite -a /
+    underdog +b. both_win: m with lo < m < hi (both legs win
+    outright). win_push: whole-number endpoints lo/hi (one leg wins,
+    the other pushes at exactly that margin). Nov 12, 2026 fix: the
+    old margin_set() merged these into one list, so a key sitting
+    only on a push endpoint qualified the pair as a BOTH-WIN key
+    middle — wrong (Kansas +5 / WV -4: both_win [], win_push [4, 5])."""
     lo, hi = min(a, b), max(a, b)
-    margins = [m for m in range(int(lo) + 1, int(hi) + 1)
-               if lo < m < hi]
-    for endpoint in (lo, hi):
-        if float(endpoint).is_integer() and int(endpoint) not in margins:
-            margins.append(int(endpoint))
-    return sorted(margins)
+    both_win = [m for m in range(int(lo) + 1, int(hi) + 1)
+                if lo < m < hi]
+    win_push = sorted({int(e) for e in (lo, hi)
+                       if float(e).is_integer()})
+    return sorted(both_win), win_push
 
 
 def key_hit(mid):
-    """The key number in the margin set, or None (STRICT)."""
+    """(key, both_win, win_push, kind) — kind 'both_win' when a key
+    sits in the STRICT both-win set, else 'win_push' when a key sits
+    only in the win+push endpoints. STRICT: a whole-number endpoint
+    never counts as a both-win margin."""
     lines = recovered_lines(mid)
     if lines is None:
-        return None, []
+        return None, [], [], None
     a, b = lines
-    margins = margin_set(a, b)
-    hits = [k for k in KEY_NUMBERS if k in margins]
-    return (hits[0], margins) if hits else (None, margins)
+    both_win, win_push = split_margins(a, b)
+    for k in KEY_NUMBERS:
+        if k in both_win:
+            return k, both_win, win_push, "both_win"
+    for k in KEY_NUMBERS:
+        if k in win_push:
+            return k, both_win, win_push, "win_push"
+    return None, both_win, win_push, None
 
 
 FOOTBALL_LEAGUES = ("NFL", "NCAAF")
@@ -146,7 +165,7 @@ def qualifies(mid):
     if not (price_in(mid["leg1"]["price"], CAP, 100000)
             and price_in(mid["leg2"]["price"], CAP, 100000)):
         return False
-    hit, _ = key_hit(mid)
+    hit, _, _, _ = key_hit(mid)
     return hit is not None
 
 
@@ -201,7 +220,8 @@ def main():
             return 2
         deliverables = []
         lines = [f"## {now_stamp()} — key-number-middles (data-based "
-                 f"key set 3/7/6/4/10/14/17; NFL/NCAAF only): "
+                 f"key set 3/7/6/4/10/14/17; NFL/NCAAF only; "
+                 f"win+push labeled honestly): "
                  f"{len(full)} + {len(smaller)} rows parsed, "
                  f"qualifying only below"]
         _hoops = sum(1 for m in full + smaller
@@ -209,7 +229,7 @@ def main():
         for mid in full + smaller:
             if not qualifies(mid):
                 continue
-            key_num, margins = key_hit(mid)
+            key_num, both_win, win_push, kind = key_hit(mid)
             # Stable key (fix 2026-11-05, same as dh_pairs.pair_key):
             # row identity from the non-bet cells + leg books — the
             # old key embedded raw bet-cell text (price / % / stake),
@@ -224,7 +244,12 @@ def main():
             key = f"{_ident} | {_l1['book']} | {_l2['book']}"
             entry = {"game": mid.get("game", ""),
                      "market": mid.get("market", ""),
-                     "key_number": key_num, "margins": margins,
+                     # "margins" is the STRICT both-win list only
+                     # (Nov 12 fix) — the board's fallback reads it,
+                     # so a push endpoint must never sit in it.
+                     "key_number": key_num, "margins": both_win,
+                     "both_win": both_win, "win_push": win_push,
+                     "kind": kind,
                      "cluster": f"Key {key_num}",
                      "clean_tier": all(
                          price_in(mid[l]["price"], CLEAN, 100000)
@@ -242,8 +267,24 @@ def main():
                 state["entries"][key] = entry
                 deliverables.append((key, entry))
             else:
-                state["entries"][key]["last_seen"] = now_stamp()
-            lines.append(f"KEY {key_num}: {key} margins {margins} :: "
+                # Refresh the margin fields on re-see (Nov 12 fix):
+                # entries banked before the fix carry the merged
+                # "margins" list — refresh them so the board stops
+                # showing push numbers as both-win windows.
+                old = state["entries"][key]
+                old.update({"margins": both_win, "both_win": both_win,
+                            "win_push": win_push, "kind": kind,
+                            "key_number": key_num,
+                            "last_seen": now_stamp()})
+                old["leg1"] = entry["leg1"]
+                old["leg2"] = entry["leg2"]
+            if kind == "win_push":
+                label = (f"KEY {key_num} WIN+PUSH: {key} win+push "
+                         f"{win_push}; both-win "
+                         f"{both_win if both_win else 'none'}")
+            else:
+                label = f"KEY {key_num}: {key} both-win {both_win}"
+            lines.append(f"{label} :: "
                          f"{entry['leg1']} / {entry['leg2']}")
         # Chat-delivery wiring (2026-11-10, Michael's tap): bank the
         # NEW strict-key middles as NEW MIDDLE lines directly under
@@ -254,9 +295,16 @@ def main():
         new_lines = []
         for key, e in deliverables:
             tag = "SMALLER BETS " if e["smaller_bets"] else ""
+            if e["kind"] == "win_push":
+                label = (f"KEY {e['key_number']} WIN+PUSH: {key} "
+                         f"win+push {e['win_push']}; both-win "
+                         f"{e['both_win'] if e['both_win'] else 'none'}")
+            else:
+                label = (f"KEY {e['key_number']}: {key} "
+                         f"both-win {e['both_win']}")
             new_lines.append(
-                f"NEW MIDDLE: {tag}KEY {e['key_number']}: {key} "
-                f"margins {e['margins']} :: {e['leg1']} / {e['leg2']}")
+                f"NEW MIDDLE: {tag}{label} :: "
+                f"{e['leg1']} / {e['leg2']}")
         lines[0] += f" — {len(deliverables)} NEW middles"
         if new_lines:
             lines = (lines[:1] + new_lines
