@@ -6440,3 +6440,18 @@
 [2026-11-12 11:22:05 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-12 11:23:29 ET] dh_derivative_ev.py: FAILED (exit 2) in 84s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-12.txt. No prices i
 [2026-11-12 11:24:29 ET] qb_props.py: FAILED (exit 2) in 60s — 0 starters resolved — refusing to write state. Re-run with --dump and send the dump file.
+[2026-11-12 11:37:45 ET] sync_to_github.py: FAILED (exit 1) in 796s —   FAILED: pc-data/pip-np.log (HTTP 409: {'error': '{"message":"is at fee65b9d9a8a8125ccffdc902a1dd252156f85a7 but expected b8b4fefe8db2524822db504b1e3003f68c102
+[2026-11-12 11:39:16 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (115 with odds), db total 247135 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 11:39:17 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 11:40:44 ET] dh_game_middles.py: OK in 87s — GAME MIDDLE: NBA TOR Raptors PHI 76ers Today 7:15 PM / table / Points J. Embiid Under 20.5 / Alt Points J. Embiid 20+ / table | BetRivers | Bet365 — window 220.
+[2026-11-12 11:44:47 ET] dh_basketball_key_middles.py: OK in 243s — basketball-key-middles: no new basketball middles.
+[2026-11-12 11:45:00 ET] steam_side.py: OK in 12s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 11:47:17 ET] dh_sog_middles.py: OK in 136s — - 0 deliverables this run
+[2026-11-12 11:47:18 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Green Bay 22.5/24.5 sits at -2.0c vs +EV
+[2026-11-12 11:47:19 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 11:47:22 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 11:47:23 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 11:47:25 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 11:47:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 11:47:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-12 11:48:32 ET] rb_rushing.py: FAILED (exit 2) in 65s — rb-rushing: zero rushers parsed from PFR — run with --dump and send it back for a parser patch. No state written.
