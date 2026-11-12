@@ -6427,3 +6427,16 @@
 [2026-11-12 10:53:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
 [2026-11-12 10:53:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 10:53:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-12 11:07:01 ET] sync_to_github.py: FAILED (exit 1) in 808s —   FAILED: pc-data/leader-follower-2026-11-09.md (HTTP 409: {'error': '{"message":"is at be2954e6fcdabad0add313620cc0db4673506434 but expected 9bc7b382c1dc715ff7
+[2026-11-12 11:08:35 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 221 events (79 with odds), db total 246947 snapshots / 848 events, feeds ok 6 fail 0
+[2026-11-12 11:10:35 ET] dh_arbitrage.py: OK in 121s — ARBITRAGE: NBA DAL Mavericks MIN Timberwolves Today 8:15 PM / table / Rebounds L. Ball Under 4.5 / Alt Rebounds L. Ball 5+ / table | BetRivers | BetMGM
+[2026-11-12 11:12:03 ET] dh_kalshi_poly_arb.py: OK in 88s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 11:12:38 ET] dh_low_holds.py: OK in 35s — LOW-HOLDS: NHL NY Islanders LA Kings Today 10:00 PM / table / Shots T. Moore Over 1.5 / Shots T. Moore Under 1.5 / table | Bally Bet | BetMGM
+[2026-11-12 11:16:11 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 268 basketball rows excluded (football-only rule).
+[2026-11-12 11:18:15 ET] dh_prop_middles.py: OK in 124s — PROP MIDDLE CLEAN : NFL MIA Dolphins IND Colts Nov-15 1:00 PM / table / Receiving Yards M. Washington Under 31.5 / Alt Recv Yards M. Washington 30+ / table | th
+[2026-11-12 11:18:18 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 11:21:50 ET] costco_gold.py: OK in 212s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-12 11:21:59 ET] totals_scan.py: OK in 9s — totals: no new flags (silent).
+[2026-11-12 11:22:05 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-12 11:23:29 ET] dh_derivative_ev.py: FAILED (exit 2) in 84s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-12.txt. No prices i
+[2026-11-12 11:24:29 ET] qb_props.py: FAILED (exit 2) in 60s — 0 starters resolved — refusing to write state. Re-run with --dump and send the dump file.
