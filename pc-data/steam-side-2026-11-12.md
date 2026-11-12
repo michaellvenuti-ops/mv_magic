@@ -19,3 +19,4 @@ NEW FLAG: FBS USC @ Indiana | 2026-11-12 — Fanatics still dealing spread -9.5 
 NEW FLAG: FBS USC @ Indiana | 2026-11-12 — Kalshi still dealing spread -9.5 on USC (pre-move median -9.5, now -8.5)
 ## 2026-11-12T13:24:52-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-12T14:16:08-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
+## 2026-11-12T15:06:38-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
