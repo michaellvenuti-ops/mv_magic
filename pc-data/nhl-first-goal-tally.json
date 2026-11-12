@@ -4547,19 +4547,35 @@
   },
   {
    "date": "2026-11-11",
-   "away": "Tampa Bay Lightning",
-   "home": "Buffalo Sabres",
-   "first": "Tampa Bay Lightning",
+   "away": "New York Rangers",
+   "home": "Calgary Flames",
+   "first": "New York Rangers",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Scott Sabourin",
-   "first_elapsed_sec": 71,
-   "winner": "Tampa Bay Lightning",
+   "first_scorer": "Mika Zibanejad",
+   "first_elapsed_sec": 2341,
+   "winner": "New York Rangers",
    "shootout": false,
-   "seq": "1-0>2-0>3-0>4-0>4-1>4-2>4-3>5-3>6-3>7-3>8-3",
+   "seq": "1-0>2-0>2-1>3-1",
    "lead_changes": 0,
    "ties": 0,
-   "final": "8-3"
+   "final": "3-1"
+  },
+  {
+   "away": "Tampa Bay Lightning",
+   "date": "2026-11-11",
+   "final": "8-3",
+   "first": "Tampa Bay Lightning",
+   "first_elapsed_sec": 71,
+   "first_scorer": "Scott Sabourin",
+   "first_side": "away",
+   "first_strength": "EV",
+   "home": "Buffalo Sabres",
+   "lead_changes": 0,
+   "seq": "1-0>2-0>3-0>4-0>4-1>4-2>4-3>5-3>6-3>7-3>8-3",
+   "shootout": false,
+   "ties": 0,
+   "winner": "Tampa Bay Lightning"
   }
  ],
  "tally": {
@@ -4746,7 +4762,7 @@
    "win_pct_when_not_first": 25.0
   },
   "Calgary Flames": {
-   "gp": 18,
+   "gp": 19,
    "scored_first": 9,
    "strengths": {
     "EV": 6,
@@ -4755,9 +4771,9 @@
    },
    "won_when_first": 6,
    "won_when_not_first": 2,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 47.4,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": 22.2
+   "win_pct_when_not_first": 20.0
   },
   "Tampa Bay Lightning": {
    "gp": 18,
@@ -4774,17 +4790,17 @@
    "win_pct_when_not_first": 37.5
   },
   "New York Rangers": {
-   "gp": 18,
-   "scored_first": 11,
+   "gp": 19,
+   "scored_first": 12,
    "strengths": {
-    "EV": 8,
+    "EV": 9,
     "PP": 3,
     "SH": 0
    },
-   "won_when_first": 10,
+   "won_when_first": 11,
    "won_when_not_first": 0,
-   "scored_first_pct": 61.1,
-   "win_pct_when_first": 90.9,
+   "scored_first_pct": 63.2,
+   "win_pct_when_first": 91.7,
    "win_pct_when_not_first": 0.0
   },
   "Anaheim Ducks": {
@@ -5013,20 +5029,20 @@
   }
  },
  "league": {
-  "games": 285,
-  "games_with_goal": 284,
+  "games": 286,
+  "games_with_goal": 285,
   "shootouts": 20,
   "home_scored_first": 134,
-  "first_team_won": 187,
+  "first_team_won": 188,
   "strengths": {
-   "EV": 215,
+   "EV": 216,
    "PP": 64,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
-  "median_first_goal_sec": 852,
-  "home_scored_first_pct": 47.2,
-  "first_team_win_pct": 65.8
+  "median_first_goal_sec": 855,
+  "home_scored_first_pct": 47.0,
+  "first_team_win_pct": 66.0
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5095,9 +5111,9 @@
    "avg_per_game": 0.31
   },
   "Calgary Flames": {
-   "games": 18,
+   "games": 19,
    "lead_changes": 7,
-   "avg_per_game": 0.39
+   "avg_per_game": 0.37
   },
   "Tampa Bay Lightning": {
    "games": 18,
@@ -5105,9 +5121,9 @@
    "avg_per_game": 0.28
   },
   "New York Rangers": {
-   "games": 18,
+   "games": 19,
    "lead_changes": 5,
-   "avg_per_game": 0.28
+   "avg_per_game": 0.26
   },
   "Anaheim Ducks": {
    "games": 18,
