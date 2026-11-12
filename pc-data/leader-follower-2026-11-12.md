@@ -32,3 +32,5 @@
 ## 2026-11-12T13:24:48-05:00 — 81 games, 0 leads credited, 3 started games skipped
 ## 2026-11-12T14:38:47-05:00 — no-follow: FanDuel Southern Miss @ Louisiana Tech | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T14:38:47-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T15:51:34-05:00 — pack move, never credited: Oregon State @ Boise State | 2026-11-12 total (Caesars, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-12T15:51:34-05:00 — 81 games, 0 leads credited, 3 started games skipped
