@@ -6339,3 +6339,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 07:04:23 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
 [2026-11-12 07:04:24 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 07:04:25 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-12 07:15:40 ET] sync_to_github.py: FAILED (exit 1) in 675s —   FAILED: pc-data/wong-teasers-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 719af4b6d8ddfd3279d95da9d505c8b4d0765938 but expected d3d91f057adef40005b1f
+[2026-11-12 07:17:10 ET] odds_recorder.py: OK in 60s — SUMMARY: recorded 227 events (75 with odds), db total 244456 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 07:17:31 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 07:17:54 ET] dh_low_holds.py: OK in 23s — LOW-HOLDS: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +8 / Alt Spread West Virginia -8 / table | BetMGM | Bally Bet
+[2026-11-12 07:21:16 ET] dh_key_number_middles.py: OK in 202s — key-number-middles: 166 basketball rows excluded (football-only rule).
+[2026-11-12 07:22:51 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE CLEAN : NBA DET Pistons WAS Wizards Today 7:15 PM / table / Pts+Ast+Rebs P. Reed Under 21.5 / Pts+Ast+Rebs P. Reed 21+ / table | Bet365 | Fanatics-N
+[2026-11-12 07:22:53 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
