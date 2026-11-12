@@ -6489,3 +6489,20 @@
 [2026-11-12 13:02:54 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 13:02:58 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=6 queued_total=15
 [2026-11-12 13:02:59 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-12 13:16:24 ET] sync_to_github.py: FAILED (exit 1) in 805s —   FAILED: pc-data/ncaab-first-score-tally.json (HTTP 409: {'error': '{"message":"is at 92c511bd91d05c7d2f3048a28a9fade8fa1e01c8 but expected 47938fc04036e683d6a
+[2026-11-12 13:17:56 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 188 events (114 with odds), db total 247887 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 13:17:57 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 13:19:29 ET] dh_game_middles.py: OK in 92s — GAME MIDDLE: NFL HOU Texans CLE Browns Nov-15 1:00 PM / table / Receiving Yards J. Jeudy Over 12.5 / Receiving Yards J. Jeudy Under 14.5 / table | BetRivers | t
+[2026-11-12 13:23:07 ET] dh_basketball_key_middles.py: OK in 219s — basketball-key-middles: no new basketball middles.
+[2026-11-12 13:24:38 ET] hung_number.py: OK in 91s — HUNG NUMBER: Stanford vs Virginia Tech — DraftKings spread value favorite (14.5 vs median 15.5)
+[2026-11-12 13:24:44 ET] rlm.py: OK in 6s
+[2026-11-12 13:24:48 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 13:24:52 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 13:26:57 ET] dh_sog_middles.py: OK in 125s — - 0 deliverables this run
+[2026-11-12 13:27:01 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 13:27:03 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 13:27:05 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 13:27:06 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 13:27:08 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 13:27:09 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 13:27:10 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
