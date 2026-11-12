@@ -1342,145 +1342,380 @@
    "ties": 0
   },
   {
-   "date": "2026-11-08",
    "away": "Tampa Bay Buccaneers",
-   "home": "Chicago Bears",
+   "date": "2026-11-08",
+   "final": "24-27",
    "first": "Chicago Bears",
-   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "home": "Chicago Bears",
    "lead_changes": 0,
-   "ties": 1,
-   "final": "24-27"
+   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "ties": 1
   }
  ],
  "tally": {
   "New England Patriots": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 4,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 80.0,
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Seattle Seahawks": {
    "gp": 9,
-   "scored_first": 3
+   "scored_first": 3,
+   "won_when_first": 2,
+   "won_when_not_first": 3,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 33.3,
+   "win_pct_when_first": 66.7,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "San Francisco 49ers": {
    "gp": 8,
-   "scored_first": 7
+   "scored_first": 7,
+   "won_when_first": 6,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 87.5,
+   "win_pct_when_first": 85.7,
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Los Angeles Rams": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 3,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 60.0,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arizona Cardinals": {
    "gp": 9,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 1,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 44.4,
+   "win_pct_when_first": 25.0,
+   "win_pct_when_not_first": 40.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Los Angeles Chargers": {
    "gp": 8,
-   "scored_first": 2
+   "scored_first": 2,
+   "won_when_first": 0,
+   "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 25.0,
+   "win_pct_when_first": 0.0,
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Atlanta Falcons": {
    "gp": 9,
-   "scored_first": 2
+   "scored_first": 2,
+   "won_when_first": 1,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 22.2,
+   "win_pct_when_first": 50.0,
+   "win_pct_when_not_first": 28.6,
+   "won_by_one_when_first_pct": 0.0
   },
   "Pittsburgh Steelers": {
    "gp": 8,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 4,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 62.5,
+   "win_pct_when_first": 80.0,
+   "win_pct_when_not_first": 66.7,
+   "won_by_one_when_first_pct": 0.0
   },
   "Baltimore Ravens": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 2,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 40.0,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Indianapolis Colts": {
    "gp": 9,
-   "scored_first": 6
+   "scored_first": 6,
+   "won_when_first": 1,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 66.7,
+   "win_pct_when_first": 16.7,
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": 0.0
   },
   "Buffalo Bills": {
    "gp": 7,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 5,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 71.4,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Houston Texans": {
    "gp": 8,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 2,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 50.0,
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Chicago Bears": {
    "gp": 9,
-   "scored_first": 6
+   "scored_first": 6,
+   "won_when_first": 6,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 66.7,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": 0.0
   },
   "Carolina Panthers": {
    "gp": 8,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 2,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 50.0,
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cleveland Browns": {
    "gp": 9,
-   "scored_first": 1
+   "scored_first": 1,
+   "won_when_first": 1,
+   "won_when_not_first": 4,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 11.1,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Jacksonville Jaguars": {
    "gp": 8,
-   "scored_first": 7
+   "scored_first": 7,
+   "won_when_first": 6,
+   "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 87.5,
+   "win_pct_when_first": 85.7,
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Dallas Cowboys": {
    "gp": 9,
-   "scored_first": 6
+   "scored_first": 6,
+   "won_when_first": 3,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 66.7,
+   "win_pct_when_first": 50.0,
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": 0.0
   },
   "New York Giants": {
    "gp": 8,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 3,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 75.0,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Green Bay Packers": {
    "gp": 9,
-   "scored_first": 7
+   "scored_first": 7,
+   "won_when_first": 5,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 77.8,
+   "win_pct_when_first": 71.4,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Minnesota Vikings": {
    "gp": 7,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 4,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 57.1,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 66.7,
+   "won_by_one_when_first_pct": 0.0
   },
   "Miami Dolphins": {
    "gp": 8,
-   "scored_first": 1
+   "scored_first": 1,
+   "won_when_first": 1,
+   "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 12.5,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Las Vegas Raiders": {
    "gp": 9,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 3,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 44.4,
+   "win_pct_when_first": 75.0,
+   "win_pct_when_not_first": 20.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "New Orleans Saints": {
    "gp": 8,
-   "scored_first": 1
+   "scored_first": 1,
+   "won_when_first": 1,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 1,
+   "scored_first_pct": 12.5,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 28.6,
+   "won_by_one_when_first_pct": 100.0
   },
   "Detroit Lions": {
    "gp": 8,
-   "scored_first": 6
+   "scored_first": 6,
+   "won_when_first": 5,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 1,
+   "scored_first_pct": 75.0,
+   "win_pct_when_first": 83.3,
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 16.7
   },
   "New York Jets": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 2,
+   "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 40.0,
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tennessee Titans": {
    "gp": 8,
-   "scored_first": 4
+   "scored_first": 4,
+   "won_when_first": 0,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 0.0,
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tampa Bay Buccaneers": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 2,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 40.0,
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cincinnati Bengals": {
    "gp": 8,
-   "scored_first": 2
+   "scored_first": 2,
+   "won_when_first": 2,
+   "won_when_not_first": 4,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 25.0,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 66.7,
+   "won_by_one_when_first_pct": 0.0
   },
   "Washington Commanders": {
    "gp": 8,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 1,
+   "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 62.5,
+   "win_pct_when_first": 20.0,
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": 0.0
   },
   "Philadelphia Eagles": {
    "gp": 9,
-   "scored_first": 2
+   "scored_first": 2,
+   "won_when_first": 0,
+   "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 22.2,
+   "win_pct_when_first": 0.0,
+   "win_pct_when_not_first": 28.6,
+   "won_by_one_when_first_pct": 0.0
   },
   "Denver Broncos": {
    "gp": 9,
-   "scored_first": 5
+   "scored_first": 5,
+   "won_when_first": 4,
+   "won_when_not_first": 3,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 55.6,
+   "win_pct_when_first": 80.0,
+   "win_pct_when_not_first": 75.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kansas City Chiefs": {
    "gp": 8,
-   "scored_first": 3
+   "scored_first": 3,
+   "won_when_first": 3,
+   "won_when_not_first": 3,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 37.5,
+   "win_pct_when_first": 100.0,
+   "win_pct_when_not_first": 60.0,
+   "won_by_one_when_first_pct": 0.0
   }
+ },
+ "league": {
+  "games": 135,
+  "games_with_goal": 135,
+  "home_scored_first": 69,
+  "first_team_won": 85,
+  "first_team_won_by_one": 2,
+  "first_team_won_by_one_pct": 1.5,
+  "avg_lead_changes": 1.28,
+  "home_scored_first_pct": 51.1,
+  "first_team_win_pct": 63.0
  },
  "lead_changes": [
   {
@@ -2824,14 +3059,14 @@
    "ties": 0
   },
   {
-   "date": "2026-11-08",
    "away": "Tampa Bay Buccaneers",
-   "home": "Chicago Bears",
+   "date": "2026-11-08",
+   "final": "24-27",
    "first": "Chicago Bears",
-   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "home": "Chicago Bears",
    "lead_changes": 0,
-   "ties": 1,
-   "final": "24-27"
+   "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
+   "ties": 1
   }
  ],
  "lead_change_team_avgs": {
