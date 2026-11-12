@@ -476,3 +476,8 @@
 - 2026-11-11: Oral Roberts Golden Eagles @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (2PT, 0:43 in); lead changes 4; final 71-80
 - 2026-11-11: Macalester Scots @ St. Thomas Tommies — first: St. Thomas Tommies (3PT, 0:12 in); lead changes 0; final 82-119
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T22:58:47-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 457 games through 2026-11-11
+- 2026-11-11: Jackson State Tigers @ Southern Miss Golden Eagles — first: Southern Miss Golden Eagles (2PT, 0:21 in); lead changes 6; final 80-84
+- 2026-11-11: Stephen F. Austin Lumberjacks @ Abilene Christian Wildcats — first: Abilene Christian Wildcats (2PT, 1:00 in); lead changes 3; final 76-71
+- 2026-11-11: Erskine Flying Fleet @ Gardner-Webb Runnin' Bulldogs — first: Erskine Flying Fleet (2PT, 1:17 in); lead changes 1; final 66-88
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
