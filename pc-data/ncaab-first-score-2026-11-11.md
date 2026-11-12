@@ -421,3 +421,6 @@
 ## 2026-11-11T18:43:22-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 409 games through 2026-11-11
 - 2026-11-11: North Carolina A&T Aggies @ East Carolina Pirates — first: East Carolina Pirates (2PT, 0:15 in); lead changes 2; final 67-72
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T19:22:25-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 410 games through 2026-11-11
+- 2026-11-11: Bethune-Cookman Wildcats @ San Diego State Aztecs — first: San Diego State Aztecs (FT, 0:43 in); lead changes 10; final 75-88
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
