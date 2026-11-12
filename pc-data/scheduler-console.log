@@ -6452,3 +6452,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 10:25:56 ET] dh_prop_middles.py: OK in 118s — PROP MIDDLE CLEAN : NBA DAL Mavericks MIN Timberwolves Today 8:15 PM / table / 1st Quarter Points C. Flagg Under 7.5 / 1st Quarter Alt Points C. Flagg 7+ / tabl
 [2026-11-12 10:26:15 ET] ncaaf_first_score.py: OK in 19s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 10:27:34 ET] promo_watch.py: OK in 79s — promo-watch: 9 listed, 1 new, 1 converter attempt(s).
+[2026-11-12 10:40:45 ET] sync_to_github.py: FAILED (exit 1) in 791s —   FAILED: prop-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 63024d83f852916195b3ee769a436ced56a94c82 but expected c884b138b4cdb0bff7b1fedb0d27e
+[2026-11-12 10:42:25 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 227 events (75 with odds), db total 246726 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 10:42:26 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 10:45:44 ET] dh_game_middles.py: OK in 198s — GAME MIDDLE: NCAAF Florida 13 Kentucky Nov-14 6:15 PM / table / Alt Spread Florida +5.5 / Alt Spread Kentucky -5 / table | Fanatics-NJ | BetRivers — window 268.
+[2026-11-12 10:49:28 ET] dh_basketball_key_middles.py: OK in 224s — basketball-key-middles: no new basketball middles.
+[2026-11-12 10:50:48 ET] hung_number.py: OK in 80s — No new hung numbers (12 current flags).
+[2026-11-12 10:50:53 ET] rlm.py: OK in 5s
+[2026-11-12 10:50:57 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 10:51:01 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 10:53:14 ET] dh_sog_middles.py: OK in 133s — - 0 deliverables this run
+[2026-11-12 10:53:22 ET] dh_team_total_middles.py: OK in 8s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Green Bay 22.5/24.5 sits at -2.0c vs +EV
+[2026-11-12 10:53:27 ET] nfl_first_score.py: OK in 5s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 10:53:28 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 10:53:29 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 10:53:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 10:53:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 10:53:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
