@@ -4546,20 +4546,20 @@
    "winner": "Washington Capitals"
   },
   {
-   "date": "2026-11-11",
    "away": "Nashville Predators",
-   "home": "Anaheim Ducks",
+   "date": "2026-11-11",
+   "final": "4-2",
    "first": "Anaheim Ducks",
+   "first_elapsed_sec": 712,
+   "first_scorer": "Cutter Gauthier",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Cutter Gauthier",
-   "first_elapsed_sec": 712,
-   "winner": "Nashville Predators",
-   "shootout": false,
-   "seq": "0-1>1-1>2-1>3-1>3-2>4-2",
+   "home": "Anaheim Ducks",
    "lead_changes": 1,
+   "seq": "0-1>1-1>2-1>3-1>3-2>4-2",
+   "shootout": false,
    "ties": 1,
-   "final": "4-2"
+   "winner": "Nashville Predators"
   },
   {
    "away": "New York Rangers",
@@ -4594,6 +4594,22 @@
    "winner": "Edmonton Oilers"
   },
   {
+   "date": "2026-11-11",
+   "away": "Pittsburgh Penguins",
+   "home": "San Jose Sharks",
+   "first": "Pittsburgh Penguins",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Samuel Girard",
+   "first_elapsed_sec": 663,
+   "winner": "Pittsburgh Penguins",
+   "shootout": true,
+   "seq": "1-0>2-0>2-1>2-2",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "3-2"
+  },
+  {
    "away": "Tampa Bay Lightning",
    "date": "2026-11-11",
    "final": "8-3",
@@ -4610,20 +4626,20 @@
    "winner": "Tampa Bay Lightning"
   },
   {
-   "date": "2026-11-11",
    "away": "Utah Mammoth",
-   "home": "Vegas Golden Knights",
+   "date": "2026-11-11",
+   "final": "3-5",
    "first": "Vegas Golden Knights",
+   "first_elapsed_sec": 1065,
+   "first_scorer": "Jack Eichel",
    "first_side": "home",
    "first_strength": "PP",
-   "first_scorer": "Jack Eichel",
-   "first_elapsed_sec": 1065,
-   "winner": "Vegas Golden Knights",
-   "shootout": false,
-   "seq": "0-1>1-1>1-2>1-3>1-4>2-4>3-4>3-5",
+   "home": "Vegas Golden Knights",
    "lead_changes": 0,
+   "seq": "0-1>1-1>1-2>1-3>1-4>2-4>3-4>3-5",
+   "shootout": false,
    "ties": 1,
-   "final": "3-5"
+   "winner": "Vegas Golden Knights"
   }
  ],
  "tally": {
@@ -4726,7 +4742,7 @@
    "win_pct_when_not_first": 33.3
   },
   "San Jose Sharks": {
-   "gp": 20,
+   "gp": 21,
    "scored_first": 5,
    "strengths": {
     "EV": 5,
@@ -4735,9 +4751,9 @@
    },
    "won_when_first": 3,
    "won_when_not_first": 5,
-   "scored_first_pct": 25.0,
+   "scored_first_pct": 23.8,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 31.2
   },
   "Minnesota Wild": {
    "gp": 20,
@@ -5006,17 +5022,17 @@
    "win_pct_when_not_first": 66.7
   },
   "Pittsburgh Penguins": {
-   "gp": 17,
-   "scored_first": 8,
+   "gp": 18,
+   "scored_first": 9,
    "strengths": {
-    "EV": 6,
+    "EV": 7,
     "PP": 2,
     "SH": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 2,
-   "scored_first_pct": 47.1,
-   "win_pct_when_first": 37.5,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 44.4,
    "win_pct_when_not_first": 22.2
   },
   "New York Islanders": {
@@ -5077,20 +5093,20 @@
   }
  },
  "league": {
-  "games": 289,
-  "games_with_goal": 288,
-  "shootouts": 20,
+  "games": 290,
+  "games_with_goal": 289,
+  "shootouts": 21,
   "home_scored_first": 137,
-  "first_team_won": 190,
+  "first_team_won": 191,
   "strengths": {
-   "EV": 218,
+   "EV": 219,
    "PP": 65,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
-  "median_first_goal_sec": 856,
-  "home_scored_first_pct": 47.6,
-  "first_team_win_pct": 66.0
+  "median_first_goal_sec": 855,
+  "home_scored_first_pct": 47.4,
+  "first_team_win_pct": 66.1
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5129,9 +5145,9 @@
    "avg_per_game": 0.39
   },
   "San Jose Sharks": {
-   "games": 20,
+   "games": 21,
    "lead_changes": 11,
-   "avg_per_game": 0.55
+   "avg_per_game": 0.52
   },
   "Minnesota Wild": {
    "games": 20,
@@ -5229,9 +5245,9 @@
    "avg_per_game": 0.76
   },
   "Pittsburgh Penguins": {
-   "games": 17,
+   "games": 18,
    "lead_changes": 11,
-   "avg_per_game": 0.65
+   "avg_per_game": 0.61
   },
   "New York Islanders": {
    "games": 16,
