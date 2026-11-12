@@ -105,7 +105,7 @@
      "total": 55.5
     },
     "bet365": {
-     "spread": 3.5,
+     "spread": 4.5,
      "total": 55.5
     }
    },
@@ -4638,7 +4638,7 @@
     },
     "Fanatics": {
      "spread": -2.0,
-     "total": 41.0
+     "total": 40.5
     },
     "Hard Rock": {
      "spread": -2.0,
@@ -5198,7 +5198,7 @@
     },
     "Kalshi": {
      "spread": -13.5,
-     "total": 54.5
+     "total": 55.5
     },
     "bet365": {
      "spread": -13.5,
@@ -5760,7 +5760,7 @@
     },
     "Kalshi": {
      "spread": -6.5,
-     "total": 74.5
+     "total": 73.5
     },
     "bet365": {
      "spread": -5.5,
@@ -6735,7 +6735,7 @@
      "total": 56.5
     },
     "bet365": {
-     "spread": 5.5,
+     "spread": 6.5,
      "total": 56.5
     }
    },
@@ -8819,7 +8819,7 @@
     },
     "Kalshi": {
      "spread": -10.5,
-     "total": 45.5
+     "total": 44.5
     },
     "bet365": {
      "spread": -10.5,
@@ -9585,23 +9585,23 @@
    "books": {
     "BetMGM": {
      "spread": 10.0,
-     "total": 49.5
+     "total": 47.5
     },
     "Caesars": {
      "spread": 10.0,
-     "total": 49.0
+     "total": 47.5
     },
     "DraftKings": {
-     "spread": 10.5,
-     "total": 48.5
+     "spread": 10.0,
+     "total": 47.5
     },
     "FanDuel": {
      "spread": 10.5,
-     "total": 49.5
+     "total": 47.5
     },
     "Fanatics": {
-     "spread": 10.0,
-     "total": 49.0
+     "spread": 10.5,
+     "total": 47.5
     },
     "Kalshi": {
      "spread": 10.5,
@@ -9609,7 +9609,7 @@
     },
     "bet365": {
      "spread": 10.5,
-     "total": 49.5
+     "total": 47.5
     }
    },
    "pending": []
@@ -11119,7 +11119,7 @@
      "total": 39.5
     },
     "bet365": {
-     "spread": -11.5,
+     "spread": -10.5,
      "total": 38.5
     }
    },
@@ -11508,7 +11508,7 @@
    "books": {
     "BetMGM": {
      "spread": -9.0,
-     "total": 42.5
+     "total": 41.5
     },
     "Caesars": {
      "spread": -9.5,
@@ -11528,7 +11528,7 @@
     },
     "Kalshi": {
      "spread": -9.5,
-     "total": 42.5
+     "total": 43.5
     },
     "bet365": {
      "spread": -9.5,
@@ -11639,7 +11639,7 @@
   "Missouri @ Georgia | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -15.5,
+     "spread": -16.0,
      "total": 47.5
     },
     "Caesars": {
@@ -11655,7 +11655,7 @@
      "total": 47.5
     },
     "Fanatics": {
-     "spread": -15.5,
+     "spread": -16.5,
      "total": 47.5
     },
     "Kalshi": {
@@ -11667,7 +11667,16 @@
      "total": 47.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "Fanatics",
+     "direction": -1,
+     "market": "spread",
+     "new": -16.5,
+     "old": -15.5,
+     "ts": "2026-11-12T09:35:15-05:00"
+    }
+   ]
   },
   "Missouri State @ Florida International | 2026-11-05": {
    "books": {
@@ -12207,7 +12216,7 @@
      "total": 47.5
     },
     "bet365": {
-     "spread": 7.5,
+     "spread": 6.5,
      "total": 47.5
     }
    },
@@ -12430,7 +12439,7 @@
   "New Mexico State @ Missouri State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -2.0,
+     "spread": -1.5,
      "total": 48.5
     },
     "Caesars": {
@@ -12439,7 +12448,7 @@
     },
     "DraftKings": {
      "spread": -1.5,
-     "total": 48.5
+     "total": 49.5
     },
     "FanDuel": {
      "spread": -1.5,
@@ -12451,7 +12460,7 @@
     },
     "Kalshi": {
      "spread": -1.5,
-     "total": 48.5
+     "total": 49.5
     },
     "bet365": {
      "spread": -1.5,
@@ -12731,7 +12740,7 @@
     },
     "Kalshi": {
      "spread": 6.5,
-     "total": 38.5
+     "total": 39.5
     },
     "bet365": {
      "spread": 6.5,
@@ -12855,11 +12864,11 @@
     },
     "FanDuel": {
      "spread": 1.5,
-     "total": 75.5
+     "total": 76.5
     },
     "Fanatics": {
      "spread": 2.5,
-     "total": 76.5
+     "total": 76.0
     },
     "Kalshi": {
      "spread": 2.5,
@@ -12870,16 +12879,7 @@
      "total": 76.5
     }
    },
-   "pending": [
-    {
-     "book": "FanDuel",
-     "direction": -1,
-     "market": "spread",
-     "new": 1.5,
-     "old": 2.5,
-     "ts": "2026-11-12T08:25:32-05:00"
-    }
-   ]
+   "pending": []
   },
   "Northern Illinois @ San Jose State | 2026-11-05": {
    "books": {
@@ -13962,7 +13962,7 @@
      "total": 49.0
     },
     "Kalshi": {
-     "spread": 1.5,
+     "spread": -1.5,
      "total": 49.5
     },
     "bet365": {
@@ -13970,7 +13970,16 @@
      "total": 49.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "Kalshi",
+     "direction": -1,
+     "market": "spread",
+     "new": -1.5,
+     "old": 1.5,
+     "ts": "2026-11-12T09:35:15-05:00"
+    }
+   ]
   },
   "Oregon @ Ohio State | 2026-11-05": {
    "books": {
@@ -14222,7 +14231,7 @@
   "Oregon State @ Boise State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -14.5,
+     "spread": -15.0,
      "total": 64.5
     },
     "Caesars": {
@@ -14498,7 +14507,7 @@
     },
     "Fanatics": {
      "spread": -2.5,
-     "total": 48.5
+     "total": 49.0
     },
     "Hard Rock": {
      "spread": -2.0,
@@ -16038,7 +16047,7 @@
      "total": 47.5
     },
     "Caesars": {
-     "spread": -12.0,
+     "spread": -12.5,
      "total": 47.5
     },
     "DraftKings": {
@@ -17051,7 +17060,7 @@
      "total": 53.5
     },
     "Caesars": {
-     "spread": 2.5,
+     "spread": 3.0,
      "total": 53.5
     },
     "DraftKings": {
@@ -17063,12 +17072,12 @@
      "total": 53.5
     },
     "Fanatics": {
-     "spread": 2.5,
+     "spread": 3.0,
      "total": 53.5
     },
     "Kalshi": {
      "spread": 2.5,
-     "total": 53.5
+     "total": 54.5
     },
     "bet365": {
      "spread": 2.5,
@@ -17838,11 +17847,11 @@
    "books": {
     "BetMGM": {
      "spread": -4.0,
-     "total": 46.5
+     "total": 45.5
     },
     "Caesars": {
      "spread": -4.0,
-     "total": 45.5
+     "total": 46.5
     },
     "DraftKings": {
      "spread": -4.0,
@@ -17861,7 +17870,7 @@
      "total": 46.5
     },
     "bet365": {
-     "spread": -3.5,
+     "spread": -4.5,
      "total": 46.5
     }
    },
@@ -21593,7 +21602,7 @@
      "total": 39.5
     },
     "DraftKings": {
-     "spread": 8.5,
+     "spread": 7.5,
      "total": 39.5
     },
     "FanDuel": {
@@ -21602,7 +21611,7 @@
     },
     "Fanatics": {
      "spread": 8.5,
-     "total": 39.5
+     "total": 40.0
     },
     "Kalshi": {
      "spread": 9.5,
@@ -21613,7 +21622,16 @@
      "total": 39.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "DraftKings",
+     "direction": -1,
+     "market": "spread",
+     "new": 7.5,
+     "old": 8.5,
+     "ts": "2026-11-12T09:35:15-05:00"
+    }
+   ]
   }
  },
  "meta": {
