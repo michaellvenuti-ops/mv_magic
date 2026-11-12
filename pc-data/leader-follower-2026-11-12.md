@@ -38,3 +38,7 @@
 ## 2026-11-12T17:04:18-05:00 — pack move, never credited: Wisconsin @ Maryland | 2026-11-12 spread (FanDuel, bet365)
 ## 2026-11-12T17:04:18-05:00 — pack move, never credited: Colorado State @ Washington State | 2026-11-12 spread (BetMGM, DraftKings, Kalshi)
 ## 2026-11-12T17:04:18-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T18:11:35-05:00 — no-follow: Kalshi Dolphins @ Colts | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T18:11:35-05:00 — no-follow: Kalshi Kansas State @ TCU | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T18:11:35-05:00 — pack move, never credited: Missouri @ Georgia | 2026-11-12 spread (Caesars, DraftKings, bet365)
+## 2026-11-12T18:11:35-05:00 — 81 games, 0 leads credited, 3 started games skipped
