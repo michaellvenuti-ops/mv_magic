@@ -6326,3 +6326,25 @@
 [2026-11-12 08:03:01 ET] dh_key_number_middles.py: OK in 281s — key-number-middles: 168 basketball rows excluded (football-only rule).
 [2026-11-12 08:05:06 ET] dh_prop_middles.py: OK in 125s — PROP MIDDLE CLEAN : NFL WAS Commanders NY Giants Today 8:15 PM / table / Passing Yards J. Daniels Under 200.5 / Alt Pass Yards J. Daniels 200+ / table | Fanatic
 [2026-11-12 08:05:11 ET] ncaaf_first_score.py: OK in 5s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 08:16:51 ET] sync_to_github.py: FAILED (exit 1) in 699s —   FAILED: leader-follower-board-pc.html (HTTP 409: {'error': '{"message":"is at 9a89266b7ba2e6a6b766ebf0c73961c3db237a2e but expected 119b71458d611b71f015303d6d
+[2026-11-12 08:18:23 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 227 events (75 with odds), db total 245364 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 08:18:24 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 08:20:23 ET] dh_game_middles.py: OK in 119s — GAME MIDDLE: NCAAB Maryland-Eastern Rhode Island Today 7:00 PM / table / Spread Maryland-Eastern +27.5 / Alt Spread Rhode Island -27 / table | Caesars | Bet365 
+[2026-11-12 08:23:59 ET] dh_basketball_key_middles.py: OK in 216s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Maryland-Eastern Rhode Island Today 7:00 PM / table / Spread Rhode Island -24.5 / Spread Maryland-Easte
+[2026-11-12 08:25:23 ET] hung_number.py: OK in 83s — No new hung numbers (12 current flags).
+[2026-11-12 08:25:27 ET] rlm.py: OK in 5s
+[2026-11-12 08:25:32 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 08:25:35 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 08:27:28 ET] dh_sog_middles.py: OK in 113s — - 0 deliverables this run
+[2026-11-12 08:27:33 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-12 08:27:35 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 08:27:36 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 08:27:38 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 08:27:40 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 08:27:40 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 08:27:42 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 4 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-12.json
+[2026-11-12 08:27:43 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-12 08:27:44 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-12 08:27:51 ET] nhl_totals_scan.py: OK in 7s — NHL TOTALS FLAG UNDER: MTL @ BOS — predicted 4.95 vs book 6.5 (-130)
+[2026-11-12 08:27:56 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-12 08:27:59 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 4, 'NCAAB': 24}, new 0, moved 0, baselines 28.
