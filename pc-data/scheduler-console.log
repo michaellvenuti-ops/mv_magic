@@ -6446,3 +6446,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 10:04:46 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 10:04:48 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-12 10:04:48 ET] half_percent.py: OK in 1s — half-percent recheck: 10:04 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-12 10:18:21 ET] sync_to_github.py: FAILED (exit 1) in 812s —   FAILED: pc-data/leader-follower-state.json (HTTP 409: {'error': '{"message":"is at 4acce62946540ba9b101128eac67fd3804fb5ab7 but expected bc9c7626594cf29554771
+[2026-11-12 10:19:58 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 227 events (75 with odds), db total 246499 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 10:23:58 ET] dh_key_number_middles.py: OK in 240s — key-number-middles: 198 basketball rows excluded (football-only rule).
+[2026-11-12 10:25:56 ET] dh_prop_middles.py: OK in 118s — PROP MIDDLE CLEAN : NBA DAL Mavericks MIN Timberwolves Today 8:15 PM / table / 1st Quarter Points C. Flagg Under 7.5 / 1st Quarter Alt Points C. Flagg 7+ / tabl
+[2026-11-12 10:26:15 ET] ncaaf_first_score.py: OK in 19s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 10:27:34 ET] promo_watch.py: OK in 79s — promo-watch: 9 listed, 1 new, 1 converter attempt(s).
