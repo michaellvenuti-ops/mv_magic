@@ -25,3 +25,4 @@ NEW PAIR: Challenger Monastir M. Malige 238 K. Feldbausch Nov-12 8:30 AM / table
 (end of new/changed pairs — deliverable list below)
 Challenger Monastir M. Malige 238 K. Feldbausch Nov-12 8:30 AM / table bar_chart / Moneyline K. Feldbausch / Moneyline M. Malige / table | Polymarket US | Bet365 :: {'leg1': {'side': '-390.1 [80%] $1,000 Polymarket US', 'price': '-390.1', 'book': 'Polymarket US', 'stake': 1000.0}, 'leg2': {'side': '+550 $190 Bet365', 'price': '+550', 'book': 'Bet365', 'stake': 190.0}, 'arb_risk': False, 'first_reported': '2026-11-11T17:33:59-05:00', 'last_seen': '2026-11-11', 'profit_pct': 3.57}
 ## 2026-11-11T18:57:38-05:00 — kalshi-poly-arb: 96 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-11T20:16:53-05:00 — kalshi-poly-arb: 94 complete pairs read, 0 NEW/CHANGED delivered
