@@ -4361,7 +4361,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 9.5,
+   "spread": 10.0,
    "fav_team": "Houston",
    "dog_team": "Colorado"
   },
@@ -4461,7 +4461,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 14.0,
+   "spread": 14.5,
    "fav_team": "Nebraska",
    "dog_team": "Rutgers"
   },
@@ -4661,7 +4661,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 6.0,
    "fav_team": "GA Southern",
    "dog_team": "Georgia St"
   },
@@ -4700,10 +4700,10 @@
    "matchup": "Ole Miss at Oklahoma",
    "date": "2026-11-14",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 1.5,
-   "fav_team": "Oklahoma",
-   "dog_team": "Ole Miss"
+   "fav_team": "Ole Miss",
+   "dog_team": "Oklahoma"
   },
   "401858521": {
    "sport": "CFB",
@@ -4861,7 +4861,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 7.5,
+   "spread": 7.0,
    "fav_team": "South Carolina",
    "dog_team": "Arkansas"
   },
@@ -4901,7 +4901,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 7.5,
+   "spread": 8.5,
    "fav_team": "Wyoming",
    "dog_team": "UTEP"
   },
@@ -6915,7 +6915,8 @@
    "fav": "away",
    "spread": 15.5,
    "fav_team": "Spurs",
-   "dog_team": "Bulls"
+   "dog_team": "Bulls",
+   "live_ml": -270
   },
   "401909970": {
    "sport": "NBA",
@@ -6936,7 +6937,7 @@
    "spread": 14.5,
    "fav_team": "Lakers",
    "dog_team": "Bucks",
-   "live_ml": -950
+   "live_ml": -800
   },
   "401909972": {
    "sport": "NBA",
@@ -6954,7 +6955,7 @@
    "date": "2026-11-12",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Magic",
    "dog_team": "Jazz"
   },
@@ -7093,7 +7094,8 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Penn",
-   "dog_team": "Navy"
+   "dog_team": "Navy",
+   "final": true
   },
   "401926211": {
    "sport": "NCAAB",
@@ -7141,7 +7143,8 @@
    "sport": "NCAAB",
    "matchup": "Bob Jones at SC Upstate",
    "date": "2026-11-11",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921175": {
    "sport": "NCAAB",
@@ -7157,7 +7160,8 @@
    "sport": "NCAAB",
    "matchup": "Great Lakes at E Michigan",
    "date": "2026-11-11",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920680": {
    "sport": "NCAAB",
@@ -7418,7 +7422,7 @@
    "spread": 29.5,
    "fav_team": "Arkansas",
    "dog_team": "Robert Morris",
-   "live_ml": -15000
+   "live_ml": -10000
   },
   "401928996": {
    "sport": "NCAAB",
@@ -7445,7 +7449,7 @@
    "spread": 18.5,
    "fav_team": "Tulsa",
    "dog_team": "Oral Roberts",
-   "live_ml": -1150
+   "live_ml": -395
   },
   "401921037": {
    "sport": "NCAAB",
