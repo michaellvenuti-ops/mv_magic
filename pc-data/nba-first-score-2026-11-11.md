@@ -314,3 +314,8 @@
 - 2026-11-11: Boston Celtics @ Toronto Raptors — first: Boston Celtics (3PT, 0:38 in); lead changes 14; final 98-93
 - 2026-11-11: San Antonio Spurs @ Chicago Bulls — first: San Antonio Spurs (3PT, 0:19 in); lead changes 8; final 124-119
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T22:58:43-05:00 -- NBA FIRST SCORE (PC): 3 new final(s) tallied; season 159 games through 2026-11-11
+- 2026-11-11: Denver Nuggets @ Memphis Grizzlies — first: Denver Nuggets (2PT, 0:04 in); lead changes 0; final 123-118
+- 2026-11-11: Los Angeles Lakers @ Milwaukee Bucks — first: Milwaukee Bucks (2PT, 0:31 in); lead changes 1; final 123-112
+- 2026-11-11: Brooklyn Nets @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:19 in); lead changes 1; final 145-111
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
