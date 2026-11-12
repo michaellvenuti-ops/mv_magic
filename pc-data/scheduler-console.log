@@ -5975,3 +5975,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 20:25:59 ET] dh_key_number_middles.py: OK in 512s — key-number-middles: 169 basketball rows excluded (football-only rule).
 [2026-11-11 20:30:18 ET] dh_prop_middles.py: OK in 257s — PROP MIDDLE CLEAN : NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Alt Spread SMU +2 / Alt Spread Wake Forest -1.5 / table | BetRivers | theScore — windo
 [2026-11-11 20:30:48 ET] ncaaf_first_score.py: OK in 29s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
+[2026-11-11 20:42:05 ET] sync_to_github.py: OK in 675s —   ok: wide-builds-board-pc.html
+[2026-11-11 20:43:01 ET] notify.py: OK in 56s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 20:44:33 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 227 events (93 with odds), db total 235376 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 20:46:33 ET] dh_game_middles.py: OK in 119s — GAME MIDDLE: NFL BUF Bills NY Jets Nov-15 1:00 PM / table / Alt Spread NY Jets +11.5 / Alt Spread BUF Bills -10.5 / table | HardRock | theScore — window 285.0 :
+[2026-11-11 20:49:56 ET] dh_basketball_key_middles.py: OK in 204s — basketball-key-middles: no new basketball middles.
+[2026-11-11 20:50:05 ET] steam_side.py: OK in 8s — STEAM-SIDE FLAG: FBS Wyoming @ UTEP | 2026-11-11 | FanDuel | Wyoming spread 7.5 (median 7.5 -> 8.5)
+[2026-11-11 20:51:33 ET] dh_sog_middles.py: OK in 88s — - 0 deliverables this run
+[2026-11-11 20:51:36 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 20:51:38 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 20:51:39 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 20:51:40 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 20:51:43 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 8 new, 4 unverified, 421 total tallied.
+[2026-11-11 20:51:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 20:51:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-11 20:54:22 ET] odds_recorder.py: OK in 127s — SUMMARY: recorded 227 events (93 with odds), db total 235603 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 20:54:25 ET] wide_builds.py: OK in 3s — NEW BUILD: NCAAB Mississippi Valley St. Oregon Today 10:00 PM — Spread — Oregon -29.5 DraftKings -199 ($121) / Mississippi Valley St. +32.5 Bally Bet +130 ($79)
+[2026-11-11 20:55:38 ET] hung_number.py: OK in 73s — HUNG NUMBER: UMass vs Toledo — FanDuel spread value favorite (28.5 vs median 30.0)
+[2026-11-11 20:55:42 ET] rlm.py: OK in 4s
+[2026-11-11 20:55:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
