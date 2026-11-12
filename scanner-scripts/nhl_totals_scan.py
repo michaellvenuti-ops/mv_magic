@@ -12,6 +12,17 @@ when predicted >= book total + 1.0, UNDER when predicted <= book
 total - 1.0. Book totals: ESPN scoreboard (DraftKings). No ESPN total
 = game unavailable, never flagged (no fallback source).
 
+FRANK-ADJUSTED 85% LINE (added Nov 12, 2026 at Michael's ask):
+Frank buys the total up/down to the number where the model gives the
+side about an 85% chance. Total goals are modeled Poisson with
+lambda = predicted total (the standard first-order model for hockey
+goals; labeled "modeled", never a guarantee). UNDER flag: smallest
+integer k with P(total <= k) >= 0.85, adjusted line = k + 0.5.
+OVER flag: largest integer k with P(total >= k) >= 0.85, adjusted
+line = k - 0.5. Example: predicted 4.95 -> Under 7.5 (P<=7 = 87%).
+Grading is UNCHANGED: graded at the book total as flagged, never at
+the adjusted line — the adjusted line is Frank's buy-up guide only.
+
 BOTH sides' prices are recorded for every flagged game so grading can
 score the inverse side too (see nhl_totals_grade.py).
 
@@ -25,6 +36,7 @@ data/nhl-totals-<date>.md. Public sources only; no sign-in.
 """
 import argparse
 import json
+import math
 import sys
 
 import requests
@@ -46,6 +58,37 @@ CAVEAT = ("BACKUP-STARTER CAVEAT: a backup goalie starting can move "
           "season save %.")
 DISPLAY = ("Threshold note: the 1.0-goal flag gap is Chet's display "
            "choice, not a claim from the reel.")
+
+
+def pois_cdf(lam, k):
+    """P(X <= k) for X ~ Poisson(lam), recurrence form (no scipy)."""
+    p = math.exp(-lam)
+    cdf = p
+    for i in range(1, k + 1):
+        p *= lam / i
+        cdf += p
+    return cdf
+
+
+def adj85(pred, flag):
+    """Frank-adjusted 85% line for a flag.
+
+    Returns (line, prob): line is the bought total (e.g. 7.5 for
+    "Under 7.5"), prob is the model's P of that side hitting at that
+    line. UNDER: smallest k with P(X<=k) >= 0.85, line k+0.5.
+    OVER: largest k with P(X>=k) >= 0.85, line k-0.5.
+    """
+    if flag == "under":
+        for k in range(0, 30):
+            prob = pois_cdf(pred, k)
+            if prob >= 0.85:
+                return k + 0.5, round(prob, 3)
+        return 30.5, round(pois_cdf(pred, 30), 3)
+    for k in range(30, -1, -1):
+        prob = 1.0 - pois_cdf(pred, k - 1) if k > 0 else 1.0
+        if prob >= 0.85:
+            return k - 0.5, round(prob, 3)
+    return -0.5, 1.0
 
 
 def fetch_team_stats(abbr):
@@ -124,6 +167,10 @@ def main():
                 rec["flag"] = "over"
             elif pred <= g["total"] - 1.0:
                 rec["flag"] = "under"
+            if rec["flag"]:
+                line85, prob85 = adj85(pred, rec["flag"])
+                rec["adj85_line"] = line85
+                rec["adj85_prob"] = prob85
         snapshot_games.append(rec)
         if rec["flag"]:
             flags.append(rec)
@@ -142,7 +189,10 @@ def main():
             f"FLAG {f['flag'].upper()}: {f['away']} @ {f['home']} — "
             f"predicted {f['predicted']} ({f['away_pred']} + "
             f"{f['home_pred']}) vs book {f['total']} "
-            f"(over {f['over_juice']}, under {f['under_juice']})")
+            f"(over {f['over_juice']}, under {f['under_juice']}) — "
+            f"Frank-adjusted {f['flag'].upper()} {f['adj85_line']} "
+            f"(~{f['adj85_prob'] * 100:.0f}% modeled, Poisson on "
+            f"predicted total)")
     bank(SCAN, lines)
     if flags:
         print(CAVEAT)
@@ -151,7 +201,9 @@ def main():
         juice = f["over_juice"] if f["flag"] == "over" else f["under_juice"]
         print(f"NHL TOTALS FLAG {f['flag'].upper()}: {f['away']} @ "
               f"{f['home']} — predicted {f['predicted']} vs book "
-              f"{f['total']} ({juice})")
+              f"{f['total']} ({juice}) — Frank-adjusted "
+              f"{f['flag'].upper()} {f['adj85_line']} "
+              f"(~{f['adj85_prob'] * 100:.0f}% modeled)")
     if not flags:
         print(f"nhl-totals: {len(games)} games, no flags.")
     return 0
