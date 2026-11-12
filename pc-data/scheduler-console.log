@@ -6626,3 +6626,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 15:53:37 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-12 15:55:08 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 188 events (113 with odds), db total 249579 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-12 15:55:13 ET] wide_builds.py: OK in 5s — NEW BUILD: CFL MTL Alouettes EDM Elks Nov-15 6:00 PM — Rush Yards D. Alexander — Over 14.5 Bally Bet +128 ($90) / Under 17.5 FanDuel -114 ($110) — both win 15, 
+[2026-11-12 16:08:17 ET] sync_to_github.py: OK in 784s —   ok: wide-builds-board-pc.html
+[2026-11-12 16:09:13 ET] notify.py: OK in 56s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-12 16:09:45 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (113 with odds), db total 249767 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 16:10:45 ET] dh_arbitrage.py: OK in 60s — ARBITRAGE: NHL NY Islanders LA Kings Today 10:00 PM / table / PowerPlay Points K. Fiala Under 0.5 / PowerPlay Points K. Fiala 1+ / table | Bally Bet | BetMGM
+[2026-11-12 16:11:08 ET] dh_kalshi_poly_arb.py: OK in 23s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 16:11:30 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread West Virginia +4.5 / Alt Spread Kansas -4.5 / table | DraftKings | Bally Bet
+[2026-11-12 16:14:54 ET] dh_key_number_middles.py: OK in 204s — key-number-middles: 262 basketball rows excluded (football-only rule).
+[2026-11-12 16:16:43 ET] dh_prop_middles.py: OK in 109s — prop-middles: no new/changed qualifying middles.
+[2026-11-12 16:16:45 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 16:18:16 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (113 with odds), db total 249955 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 16:19:59 ET] dh_game_middles.py: OK in 104s — GAME MIDDLE: NBA DET Pistons WAS Wizards Today 7:15 PM / table / Alt Total Under 226.5 / Alt Total Over 225.5 / table | Bally Bet | HardRock — window 295.0 :: -
