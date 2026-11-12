@@ -6223,3 +6223,10 @@
 [2026-11-12 04:40:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-12 04:42:16 ET] odds_recorder.py: OK in 76s — SUMMARY: recorded 227 events (75 with odds), db total 242640 snapshots / 844 events, feeds ok 6 fail 0
 [2026-11-12 04:44:37 ET] dh_game_middles.py: OK in 141s — GAME MIDDLE: NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Alt Spread SMU +1 / Moneyline Wake Forest / table bar_chart | Bally Bet | ProphetX — window 7
+[2026-11-12 04:56:08 ET] sync_to_github.py: FAILED (exit 1) in 691s —   FAILED: pc-data/transcripts/prop-points-2026-11-10.txt (HTTP 409: {'error': '{"message":"is at 2fc1a927c466d11c717d90d0f5b0ad0da8756c2b but expected a4dc53f72
+[2026-11-12 04:57:38 ET] odds_recorder.py: OK in 60s — SUMMARY: recorded 227 events (75 with odds), db total 242867 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 04:59:41 ET] dh_kalshi_poly_arb.py: OK in 123s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 05:00:55 ET] dh_low_holds.py: OK in 74s — LOW-HOLDS: NCAAB Loyola (MD) Towson Today 7:00 PM / table / Total Under 138.5 / Alt Total Over 138.5 / table | Bally Bet | Bet365
+[2026-11-12 05:04:34 ET] dh_key_number_middles.py: OK in 219s — key-number-middles: 94 basketball rows excluded (football-only rule).
+[2026-11-12 05:06:19 ET] dh_prop_middles.py: OK in 105s — PROP MIDDLE CLEAN : NCAAF Washington Michigan St. Nov-14 4:15 PM / table / Alt Spread Michigan St. +6 / Alt Spread Washington -5.5 / table | Bally Bet | theScor
+[2026-11-12 05:06:21 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
