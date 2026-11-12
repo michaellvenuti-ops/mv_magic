@@ -8,3 +8,6 @@
 ## 2026-11-12T01:40:21-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 469 games through 2026-11-11
 - 2026-11-11: USC Trojans @ California Golden Bears — first: California Golden Bears (FT, 1:15 in); lead changes 1; final 77-65
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T17:28:08-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 470 games through 2026-11-12
+- 2026-11-12: Kansas City Roos @ George Mason Patriots — first: George Mason Patriots (2PT, 2:01 in); lead changes 2; final 68-76
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
