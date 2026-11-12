@@ -6026,3 +6026,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 21:57:40 ET] dh_key_number_middles.py: OK in 198s — key-number-middles: 140 basketball rows excluded (football-only rule).
 [2026-11-11 21:59:03 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE CLEAN : NCAAB Mercer West Virginia Nov-12 7:00 PM / table / Total Over 149.5 / Alt Total Under 150 / table | Bally Bet | Bet365 — window 215.0 :: {'
 [2026-11-11 21:59:05 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
+[2026-11-11 22:09:51 ET] sync_to_github.py: OK in 646s —   ok: wide-builds-board-pc.html
+[2026-11-11 22:10:41 ET] notify.py: OK in 50s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-11 22:12:10 ET] odds_recorder.py: OK in 59s — SUMMARY: recorded 227 events (77 with odds), db total 236965 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 22:12:30 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NBA OKC Thunder POR Trail Blazers Today 10:15 PM / table / Rebounds B. Stirtz Under 2.5 / Alt Rebounds B. Stirtz 3+ / table | BetRivers | DraftKings
+[2026-11-11 22:12:31 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Oregon St. 17 Boise St. Nov-14 6:00 PM — Spread — Boise St. -8.5 Fanatics-NJ -160 ($112) / Oregon St. +13.5 DraftKings +107 ($88) — both win 9,
+[2026-11-11 22:15:51 ET] dh_basketball_key_middles.py: OK in 200s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB CSU Bakersfield Western Illinois Nov-12 7:00 PM / table / Spread Western Illinois +8.5 / Alt Spread CSU
+[2026-11-11 22:17:08 ET] hung_number.py: OK in 77s — HUNG NUMBER: Wyoming vs UTEP — FanDuel spread value dog (-7.5 vs median -8.5)
+[2026-11-11 22:17:13 ET] rlm.py: OK in 5s
+[2026-11-11 22:17:17 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-11 22:17:19 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Oregon State @ Boise State | 2026-11-11 | Kalshi | Boise State spread -13.5 (median -13.5 -> -14.5)
+[2026-11-11 22:18:55 ET] dh_sog_middles.py: OK in 95s — - 0 deliverables this run
+[2026-11-11 22:18:57 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 22:18:58 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 22:19:01 ET] nba_first_score.py: OK in 2s — nba-first-score: 3 new, 1 unverified, 156 total tallied.
+[2026-11-11 22:19:03 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 1 new, 0 unverified, 285 total tallied.
+[2026-11-11 22:19:07 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 8 new, 4 unverified, 454 total tallied.
+[2026-11-11 22:19:07 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 22:19:08 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-11 22:20:48 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 227 events (76 with odds), db total 237192 snapshots / 844 events, feeds ok 6 fail 0
