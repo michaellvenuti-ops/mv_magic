@@ -424,3 +424,8 @@
 ## 2026-11-11T19:22:25-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 410 games through 2026-11-11
 - 2026-11-11: Bethune-Cookman Wildcats @ San Diego State Aztecs — first: San Diego State Aztecs (FT, 0:43 in); lead changes 10; final 75-88
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T20:04:08-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 413 games through 2026-11-11
+- 2026-11-11: Voorhees Tigers @ Wofford Terriers — first: Wofford Terriers (2PT, 0:18 in); lead changes 2; final 47-91
+- 2026-11-11: Virginia Lynchburg Dragons @ Western Carolina Catamounts — first: Virginia Lynchburg Dragons (3PT, 0:49 in); lead changes 1; final 68-136
+- 2026-11-11: Thomas College Terriers @ New Hampshire Wildcats — first: New Hampshire Wildcats (2PT, 0:55 in); lead changes 0; final 55-114
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
