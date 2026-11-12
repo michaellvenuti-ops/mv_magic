@@ -4,9 +4,12 @@ ask: a reference list for live totals betting — who plays fast,
 who scores a lot, who defends — so in-play over/under reads start
 from each team's scoring environment instead of a guess.
 
-Source: TeamRankings public stat pages (possessions per game,
-points per game, opponent points per game) for the NBA and NCAA
-men's basketball. TeamRankings names are used as published.
+Source: TeamRankings public stat pages (pace, points per game,
+opponent points per game) for the NBA, NCAA men's basketball,
+NFL, and NCAA football. Basketball pace is possessions per game;
+football pace is plays per game (TeamRankings publishes no
+possessions stat for football). TeamRankings names are used as
+published.
 Avg game total = points/g + opponent points/g (every game a team
 plays totals its own points plus its opponent's, so the sum of
 the two averages is the average total of that team's games).
@@ -38,11 +41,15 @@ SCAN = "pace"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                     "AppleWebKit/537.36"}
 LEAGUES = {
-    "NBA": ("nba", 20),
-    "NCAAB": ("ncaa-basketball", 200),
+    # name: (teamrankings path, min teams, pace stat)
+    # Basketball pace = possessions per game; football has no
+    # possessions stat on TeamRankings, so pace = plays per game.
+    "NBA": ("nba", 20, "possessions-per-game"),
+    "NCAAB": ("ncaa-basketball", 200, "possessions-per-game"),
+    "NFL": ("nfl", 20, "plays-per-game"),
+    "NCAAF": ("college-football", 100, "plays-per-game"),
 }
-STATS = ("possessions-per-game", "points-per-game",
-         "opponent-points-per-game")
+STATS = ("points-per-game", "opponent-points-per-game")
 
 
 def fetch_stat(league_path, stat):
@@ -63,15 +70,15 @@ def fetch_stat(league_path, stat):
     return out
 
 
-def build_league(league_path, min_teams):
+def build_league(league_path, min_teams, pace_stat):
     tables = {}
-    for stat in STATS:
+    for stat in (pace_stat,) + STATS:
         t = fetch_stat(league_path, stat)
         if len(t) < min_teams:
             return None
         tables[stat] = t
     teams = []
-    for team, pace in tables["possessions-per-game"].items():
+    for team, pace in tables[pace_stat].items():
         pts = tables["points-per-game"].get(team)
         opp = tables["opponent-points-per-game"].get(team)
         if pts is None or opp is None:
@@ -89,7 +96,8 @@ def main():
     now = datetime.now(ET)
     today = now.strftime("%Y-%m-%d")
     state = load_state(SCAN)
-    if state["meta"].get("last_built_date") == today:
+    force = "--force" in sys.argv
+    if state["meta"].get("last_built_date") == today and not force:
         print(f"pace: already built for {today}; skipping.")
         return 0
     out_path = Path(DATA_DIR) / "pace-board.json"
@@ -102,9 +110,9 @@ def main():
             existing = {}
     leagues = {}
     notes = []
-    for name, (path, min_teams) in LEAGUES.items():
+    for name, (path, min_teams, pace_stat) in LEAGUES.items():
         try:
-            built = build_league(path, min_teams)
+            built = build_league(path, min_teams, pace_stat)
         except Exception as exc:  # noqa: BLE001
             built = None
             notes.append(f"{name}: fetch failed ({exc})")
@@ -119,7 +127,7 @@ def main():
     if leagues:
         out_path.write_text(json.dumps({
             "updated_et": now.strftime("%Y-%m-%d %H:%M"),
-            "source": "TeamRankings (possessions, points, "
+            "source": "TeamRankings (pace, points, "
                       "opponent points per game)",
             "leagues": leagues,
         }, indent=1), encoding="utf-8")
