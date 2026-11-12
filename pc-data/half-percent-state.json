@@ -77,7 +77,14 @@
    }
   },
   "2026-11-11": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 20.65999984741211,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 20.71,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-10, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -90,6 +97,21 @@
     "ticker": "REZI",
     "vol": 409770
    }
+  },
+  "2026-11-12": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-12, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Intuitive Machines, Inc. Class A Common Stock",
+    "entry": 13.62,
+    "mcap": 2703593220.0,
+    "pct": 11.8,
+    "stop": 13.55,
+    "target": 13.69,
+    "ticker": "LUNR",
+    "vol": 2588290
+   }
   }
  },
  "meta": {
@@ -97,7 +119,7 @@
    "losses": 0,
    "modeled_pl": 100.0,
    "no_data": 0,
-   "no_trades": 1,
+   "no_trades": 2,
    "time_exits": 0,
    "wins": 2
   }
