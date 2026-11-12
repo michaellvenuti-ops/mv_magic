@@ -6279,3 +6279,21 @@
 [2026-11-12 06:36:23 ET] dh_prop_middles.py: OK in 110s — PROP MIDDLE CLEAN : NCAAF Georgia Tech Clemson Nov-14 12:30 PM / table / Alt Spread Clemson -11.5 / Spread Georgia Tech +12.5 / table | Bally Bet | HardRock — w
 [2026-11-12 06:36:25 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 06:37:57 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 227 events (75 with odds), db total 244002 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 06:49:25 ET] sync_to_github.py: OK in 658s —   ok: wide-builds-board-pc.html
+[2026-11-12 06:50:03 ET] notify.py: OK in 37s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-12 06:50:36 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (75 with odds), db total 244229 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 06:50:37 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Georgia Tech Clemson Nov-14 12:30 PM — Spread — Clemson -8.5 Bally Bet -150 ($109) / Georgia Tech +13.5 HardRock +100 ($91) — both win 9, 10, 1
+[2026-11-12 06:54:17 ET] dh_game_middles.py: OK in 220s — GAME MIDDLE: NCAAB Bradley Coppin St. Today 6:00 PM / table / Spread Bradley -9.5 / Spread Coppin St. +10.5 / table | Bally Bet | FanDuel — window 3.0 :: -105 $
+[2026-11-12 06:58:01 ET] dh_basketball_key_middles.py: OK in 223s — basketball-key-middles: no new basketball middles.
+[2026-11-12 07:02:07 ET] hung_number.py: OK in 245s — No new hung numbers (12 current flags).
+[2026-11-12 07:02:12 ET] rlm.py: OK in 5s
+[2026-11-12 07:02:16 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 07:02:19 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 07:04:16 ET] dh_sog_middles.py: OK in 117s — - 0 deliverables this run
+[2026-11-12 07:04:17 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-12 07:04:19 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 07:04:21 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 07:04:22 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 07:04:23 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 07:04:24 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 07:04:25 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
