@@ -1,9 +1,8 @@
-# Hung numbers — 2026-11-12 (scan 2026-11-12 12:08)
+# Hung numbers — 2026-11-12 (scan 2026-11-12 13:23)
 
 - Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.5 | div 5.2 
-- USC vs Indiana | Fanatics | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Missouri vs Georgia | Fanatics | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
 - Fresno State vs Texas State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Ole Miss vs Oklahoma | bet365 | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
@@ -12,7 +11,9 @@
 - Ole Miss vs Oklahoma | Caesars | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
 - Ole Miss vs Oklahoma | FanDuel | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
 - Ole Miss vs Oklahoma | Fanatics | spread | value: favorite | book -1.0 vs median 0.0 | div 1.0 
+- Southern Miss vs Louisiana Tech | FanDuel | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
 - San Jose State vs Air Force | bet365 | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Stanford vs Virginia Tech | DraftKings | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
 - Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
