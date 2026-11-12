@@ -21,3 +21,7 @@ NEW FLAG: FBS USC @ Indiana | 2026-11-12 — Kalshi still dealing spread -9.5 on
 ## 2026-11-12T14:16:08-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-12T15:06:38-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-12T15:51:37-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
+## 2026-11-12T16:40:27-05:00 — 67 games, 1 steam events, 3 NEW flags, 3 started games skipped
+NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — DraftKings still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
+NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — Caesars still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
+NEW FLAG: FBS Wisconsin @ Maryland | 2026-11-12 — Fanatics still dealing spread 8.5 on Wisconsin (pre-move median 8.5, now 9.5)
