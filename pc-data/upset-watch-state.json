@@ -4700,10 +4700,10 @@
    "matchup": "Ole Miss at Oklahoma",
    "date": "2026-11-14",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
-   "fav_team": "Ole Miss",
-   "dog_team": "Oklahoma"
+   "fav_team": "Oklahoma",
+   "dog_team": "Ole Miss"
   },
   "401858521": {
    "sport": "CFB",
@@ -4871,7 +4871,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "North Texas",
    "dog_team": "UTSA"
   },
@@ -6896,7 +6896,8 @@
    "fav": "home",
    "spread": 4.5,
    "fav_team": "Knicks",
-   "dog_team": "Cavaliers"
+   "dog_team": "Cavaliers",
+   "final": true
   },
   "401909968": {
    "sport": "NBA",
@@ -6906,7 +6907,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Celtics",
-   "dog_team": "Raptors"
+   "dog_team": "Raptors",
+   "final": true
   },
   "401909969": {
    "sport": "NBA",
@@ -7476,7 +7478,8 @@
    "sport": "NCAAB",
    "matchup": "Blackburn at E Illinois",
    "date": "2026-11-12",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401925863": {
    "sport": "NCAAB",
@@ -7589,7 +7592,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Grand Canyon",
-   "dog_team": "Cal Poly"
+   "dog_team": "Cal Poly",
+   "live_ml": -750
   },
   "401929625": {
    "sport": "NCAAB",
@@ -7633,7 +7637,7 @@
    "date": "2026-11-12",
    "alerted": false,
    "fav": "home",
-   "spread": 17.5,
+   "spread": 16.5,
    "fav_team": "Seattle U",
    "dog_team": "UTSA"
   },
