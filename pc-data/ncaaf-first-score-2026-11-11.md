@@ -687,3 +687,5 @@
 - 2026-11-10: Kent State Golden Flashes @ Bowling Green Falcons — first: Bowling Green Falcons (TD, 4:33 in); lead changes 4; final 28-33
 - 2026-11-10: Ohio Bobcats @ Miami (OH) RedHawks — first: Ohio Bobcats (TD, 4:55 in); lead changes 1; final 17-34
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T22:38:54-05:00 -- NCAAF FIRST SCORE (PC): 1 new final(s) tallied; season 688 games through 2026-11-11
+- 2026-11-11: Sacramento State Hornets @ Central Michigan Chippewas — first: Central Michigan Chippewas (TD, 3:49 in); lead changes 0; final 7-28
