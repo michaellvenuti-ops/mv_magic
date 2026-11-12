@@ -5911,3 +5911,17 @@
 [2026-11-11 19:43:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
 [2026-11-11 19:44:58 ET] dh_prop_middles.py: OK in 72s — PROP MIDDLE CLEAN : NBA LA Lakers MIL Bucks Today 8:15 PM / table / 1st Quarter Alt Spread MIL Bucks +7.5 / 1st Quarter Alt Spread LA Lakers -6.5 / table | FanD
 [2026-11-11 19:45:02 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
+[2026-11-11 19:56:02 ET] sync_to_github.py: FAILED (exit 1) in 660s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-3.txt (HTTP 409: {'error': '{"message":"is at b2ac7b9840c7800aea81c5dbd39ef0129d792d0b but expec
+[2026-11-11 19:57:28 ET] odds_recorder.py: OK in 56s — SUMMARY: recorded 227 events (104 with odds), db total 234922 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 19:57:57 ET] dh_arbitrage.py: OK in 29s — ARBITRAGE: NBA LA Lakers MIL Bucks Today 8:15 PM / table / Alt Rebounds R. Rollins 3+ / Rebounds R. Rollins Under 2.5 / table | Bet365 | DraftKings
+[2026-11-11 19:59:22 ET] dh_game_middles.py: OK in 84s — GAME MIDDLE: NCAAF Michigan 18 Oregon Nov-14 3:30 PM / table / Alt Spread Michigan +16 / Alt Spread Oregon -15.5 / table | Bally Bet | FanDuel — window 292.0 ::
+[2026-11-11 20:02:39 ET] dh_basketball_key_middles.py: OK in 197s — basketball-key-middles: no new basketball middles.
+[2026-11-11 20:02:44 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-11 20:04:01 ET] dh_sog_middles.py: OK in 77s — - 0 deliverables this run
+[2026-11-11 20:04:02 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-11 20:04:03 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-11 20:04:05 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 152 total tallied.
+[2026-11-11 20:04:06 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 284 total tallied.
+[2026-11-11 20:04:09 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 3 new, 4 unverified, 413 total tallied.
+[2026-11-11 20:04:09 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
+[2026-11-11 20:04:11 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
