@@ -4,3 +4,7 @@
 ## 2026-11-12T02:44:16-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1956 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-12T03:26:37-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1960 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-12T04:15:43-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1064 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-12T05:04:25-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1960 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 10: NFL BUF Bills NY Jets Nov-15 1:00 PM / table / Alt Spread NY Jets +10 / Alt Spread BUF Bills -8.5 / table | HardRock | theScore margins [9, 10] :: -125 $1,000 HardRock, HardRock, -125 / +110 $857 theScore, theScore, +110
+(end of new middles — full qualifying list below)
+KEY 10: NFL BUF Bills NY Jets Nov-15 1:00 PM / table / Alt Spread NY Jets +10 / Alt Spread BUF Bills -8.5 / table | HardRock | theScore margins [9, 10] :: -125 $1,000 HardRock, HardRock, -125 / +110 $857 theScore, theScore, +110
