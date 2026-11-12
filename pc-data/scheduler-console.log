@@ -6652,3 +6652,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 16:42:29 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 16:42:31 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-12 16:44:06 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 188 events (113 with odds), db total 250331 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 16:56:57 ET] sync_to_github.py: FAILED (exit 1) in 771s —   FAILED: pc-data/total-projectors-2026-11-12.md (HTTP 409: {'error': '{"message":"is at 1807a8aeef93444a7fe239f9221a04da611df3fd but expected ec55f027c46858bcf
+[2026-11-12 16:57:30 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (113 with odds), db total 250519 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 16:59:16 ET] dh_game_middles.py: OK in 105s — GAME MIDDLE: NFL WAS Commanders NY Giants Today 8:15 PM / table / Rush Yards R. White Under 40.5 / Alt Rush Yards R. White 40+ / table | Bet365 | BetParx — wind
+[2026-11-12 17:02:49 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 262 basketball rows excluded (football-only rule).
+[2026-11-12 17:04:09 ET] hung_number.py: OK in 81s — HUNG NUMBER: Ole Miss vs Oklahoma — Fanatics spread value favorite (-1.0 vs median 1.25)
+[2026-11-12 17:04:14 ET] rlm.py: OK in 5s
+[2026-11-12 17:04:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 17:05:58 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NFL JAX Jaguars TEN Titans Nov-15 1:00 PM / table / Rush Yards C. Ward Over 8.5 / Rush Yards C. Ward Under 10.5 / table | Bally Bet | theSco
+[2026-11-12 17:06:02 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
