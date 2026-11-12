@@ -35,3 +35,8 @@ LEAD: bet365 on Bills @ Jets | 2026-11-11 (spread)
 ## 2026-11-11T16:58:54-05:00 — 81 games, 0 leads credited, 1 started games skipped
 ## 2026-11-11T18:17:30-05:00 — no-follow: Kalshi Sacramento State @ Central Michigan | 2026-11-11 spread (only 0 followed)
 ## 2026-11-11T18:17:30-05:00 — 81 games, 0 leads credited, 1 started games skipped
+## 2026-11-11T19:43:46-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-11T19:43:46-05:00 — pack move, never credited: Sacramento State @ Central Michigan | 2026-11-11 total (DraftKings, FanDuel)
+## 2026-11-11T19:43:46-05:00 — no-follow: FanDuel Nebraska @ Rutgers | 2026-11-11 spread (only 1 followed)
+## 2026-11-11T19:43:46-05:00 — no-follow: FanDuel Minnesota @ Penn State | 2026-11-11 spread (only 0 followed)
+## 2026-11-11T19:43:46-05:00 — 80 games, 0 leads credited, 2 started games skipped
