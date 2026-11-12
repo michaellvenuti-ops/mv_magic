@@ -134,3 +134,4 @@ KEY 14: NCAAF Northwestern 21 Ohio St. Nov-14 12:00 PM / table / Alt Spread Nort
 KEY 10: NCAAF Northwestern 21 Ohio St. Nov-14 12:00 PM / table / Alt Spread Ohio St. -9.5 / Alt Spread Northwestern +10.5 / table | BetRivers | DraftKings margins [10] :: -134 $1,000 BetRivers, BetRivers, -134 / +119 $797 DraftKings, DraftKings, +119
 ## 2026-11-11T21:11:47-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1939 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-11T21:57:38-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1919 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-11T22:37:11-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1936 + 0 rows parsed, qualifying only below — 0 NEW middles
