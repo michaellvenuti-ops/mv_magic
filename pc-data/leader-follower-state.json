@@ -645,7 +645,7 @@
   "Appalachian State @ Marshall | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": 2.0,
+     "spread": 1.5,
      "total": 53.5
     },
     "Caesars": {
@@ -1045,7 +1045,7 @@
   "Arkansas State @ Coastal Carolina | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -1.5,
+     "spread": -1.0,
      "total": 51.5
     },
     "Caesars": {
@@ -3543,7 +3543,7 @@
   "Chargers @ Ravens | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -4.0,
+     "spread": -4.5,
      "total": 38.5
     },
     "Caesars": {
@@ -4638,7 +4638,7 @@
     },
     "Fanatics": {
      "spread": -2.0,
-     "total": 40.5
+     "total": 41.0
     },
     "Hard Rock": {
      "spread": -2.0,
@@ -4650,7 +4650,7 @@
     },
     "bet365": {
      "spread": -2.5,
-     "total": 41.5
+     "total": 40.5
     }
    },
    "pending": []
@@ -5054,7 +5054,7 @@
     },
     "FanDuel": {
      "spread": -3.5,
-     "total": 37.5
+     "total": 38.5
     },
     "Fanatics": {
      "spread": -4.0,
@@ -5743,11 +5743,11 @@
      "total": 74.5
     },
     "Caesars": {
-     "spread": -5.5,
+     "spread": -6.0,
      "total": 74.5
     },
     "DraftKings": {
-     "spread": -5.5,
+     "spread": -6.0,
      "total": 74.5
     },
     "FanDuel": {
@@ -5767,16 +5767,7 @@
      "total": 74.5
     }
    },
-   "pending": [
-    {
-     "book": "Kalshi",
-     "direction": -1,
-     "market": "spread",
-     "new": -6.5,
-     "old": -5.5,
-     "ts": "2026-11-12T07:02:16-05:00"
-    }
-   ]
+   "pending": []
   },
   "Florida International @ Delaware | 2026-11-09": {
    "books": {
@@ -8186,7 +8177,7 @@
    "books": {
     "BetMGM": {
      "spread": 10.5,
-     "total": 46.5
+     "total": 46.0
     },
     "Caesars": {
      "spread": 10.5,
@@ -8205,12 +8196,12 @@
      "total": 46.0
     },
     "Hard Rock": {
-     "spread": 10.5,
+     "spread": 11.0,
      "total": 46.5
     },
     "Kalshi": {
      "spread": 10.5,
-     "total": 46.5
+     "total": 45.5
     },
     "bet365": {
      "spread": 10.5,
@@ -9598,7 +9589,7 @@
     },
     "Caesars": {
      "spread": 10.0,
-     "total": 49.5
+     "total": 49.0
     },
     "DraftKings": {
      "spread": 10.5,
@@ -9609,7 +9600,7 @@
      "total": 49.5
     },
     "Fanatics": {
-     "spread": 9.5,
+     "spread": 10.0,
      "total": 49.0
     },
     "Kalshi": {
@@ -9621,16 +9612,7 @@
      "total": 49.5
     }
    },
-   "pending": [
-    {
-     "book": "Fanatics",
-     "direction": -1,
-     "market": "spread",
-     "new": 9.5,
-     "old": 10.5,
-     "ts": "2026-11-12T07:02:16-05:00"
-    }
-   ]
+   "pending": []
   },
   "Louisiana Tech @ Troy | 2026-11-05": {
    "books": {
@@ -11117,7 +11099,7 @@
      "total": 38.5
     },
     "DraftKings": {
-     "spread": -10.5,
+     "spread": -11.5,
      "total": 38.5
     },
     "FanDuel": {
@@ -11525,16 +11507,16 @@
   "Minnesota @ Penn State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -9.5,
+     "spread": -9.0,
      "total": 42.5
     },
     "Caesars": {
      "spread": -9.5,
-     "total": 42.0
+     "total": 41.5
     },
     "DraftKings": {
      "spread": -9.5,
-     "total": 42.5
+     "total": 41.5
     },
     "FanDuel": {
      "spread": -9.5,
@@ -12448,7 +12430,7 @@
   "New Mexico State @ Missouri State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -1.5,
+     "spread": -2.0,
      "total": 48.5
     },
     "Caesars": {
@@ -12860,8 +12842,8 @@
   "North Texas @ UTSA | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": 2.0,
-     "total": 75.5
+     "spread": 2.5,
+     "total": 76.5
     },
     "Caesars": {
      "spread": 2.5,
@@ -12872,7 +12854,7 @@
      "total": 76.5
     },
     "FanDuel": {
-     "spread": 2.5,
+     "spread": 1.5,
      "total": 75.5
     },
     "Fanatics": {
@@ -12888,7 +12870,16 @@
      "total": 76.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "FanDuel",
+     "direction": -1,
+     "market": "spread",
+     "new": 1.5,
+     "old": 2.5,
+     "ts": "2026-11-12T08:25:32-05:00"
+    }
+   ]
   },
   "Northern Illinois @ San Jose State | 2026-11-05": {
    "books": {
@@ -13173,7 +13164,7 @@
   "Northwestern @ Ohio State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -14.0,
+     "spread": -14.5,
      "total": 44.5
     },
     "Caesars": {
@@ -13194,7 +13185,7 @@
     },
     "Kalshi": {
      "spread": -13.5,
-     "total": 45.5
+     "total": 42.5
     },
     "bet365": {
      "spread": -13.5,
@@ -13951,7 +13942,7 @@
   "Ole Miss @ Oklahoma | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -1.0,
+     "spread": 1.0,
      "total": 49.5
     },
     "Caesars": {
@@ -14507,11 +14498,11 @@
     },
     "Fanatics": {
      "spread": -2.5,
-     "total": 49.0
+     "total": 48.5
     },
     "Hard Rock": {
      "spread": -2.0,
-     "total": 48.5
+     "total": 49.0
     },
     "Kalshi": {
      "spread": -2.5,
@@ -16043,7 +16034,7 @@
   "San Jose State @ Air Force | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": -12.0,
+     "spread": -12.5,
      "total": 47.5
     },
     "Caesars": {
@@ -16697,8 +16688,8 @@
      "total": 56.5
     },
     "Fanatics": {
-     "spread": -18.0,
-     "total": 56.5
+     "spread": -17.5,
+     "total": 56.0
     },
     "Kalshi": {
      "spread": -17.5,
@@ -17064,7 +17055,7 @@
      "total": 53.5
     },
     "DraftKings": {
-     "spread": 2.5,
+     "spread": 3.0,
      "total": 53.5
     },
     "FanDuel": {
@@ -17847,18 +17838,18 @@
    "books": {
     "BetMGM": {
      "spread": -4.0,
-     "total": 45.5
+     "total": 46.5
     },
     "Caesars": {
      "spread": -4.0,
-     "total": 46.5
+     "total": 45.5
     },
     "DraftKings": {
      "spread": -4.0,
      "total": 46.5
     },
     "FanDuel": {
-     "spread": -4.5,
+     "spread": -3.5,
      "total": 46.5
     },
     "Fanatics": {
@@ -17870,7 +17861,7 @@
      "total": 46.5
     },
     "bet365": {
-     "spread": -4.5,
+     "spread": -3.5,
      "total": 46.5
     }
    },
@@ -18633,7 +18624,7 @@
    "books": {
     "BetMGM": {
      "spread": -3.0,
-     "total": 56.5
+     "total": 55.5
     },
     "Caesars": {
      "spread": -3.0,
@@ -18649,7 +18640,7 @@
     },
     "Fanatics": {
      "spread": -3.0,
-     "total": 56.0
+     "total": 56.5
     },
     "Kalshi": {
      "spread": -2.5,
@@ -18765,7 +18756,7 @@
    "books": {
     "BetMGM": {
      "spread": -2.5,
-     "total": 47.5
+     "total": 48.5
     },
     "Caesars": {
      "spread": -2.5,
@@ -20659,7 +20650,7 @@
     },
     "Fanatics": {
      "spread": -1.0,
-     "total": 61.0
+     "total": 60.5
     },
     "Kalshi": {
      "spread": -1.5,
@@ -20774,7 +20765,7 @@
   "Washington @ Michigan State | 2026-11-12": {
    "books": {
     "BetMGM": {
-     "spread": 3.0,
+     "spread": 3.5,
      "total": 43.5
     },
     "Caesars": {
