@@ -6497,3 +6497,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 11:47:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 11:47:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-12 11:48:32 ET] rb_rushing.py: FAILED (exit 2) in 65s — rb-rushing: zero rushers parsed from PFR — run with --dump and send it back for a parser patch. No state written.
+[2026-11-12 12:02:01 ET] sync_to_github.py: FAILED (exit 1) in 809s —   FAILED: pc-data/kalshi-poly-arb-2026-11-09.md (HTTP 409: {'error': '{"message":"is at bcedb1f4f3ec95eca447177481c14ef70335e393 but expected 4cc60469b27dc115d4
+[2026-11-12 12:03:37 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 188 events (115 with odds), db total 247323 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 12:08:20 ET] dh_key_number_middles.py: OK in 283s — key-number-middles: 267 basketball rows excluded (football-only rule).
+[2026-11-12 12:09:38 ET] hung_number.py: OK in 78s — HUNG NUMBER: Michigan vs Oregon — Hard Rock spread value dog (14.5 vs median 10.5)
+[2026-11-12 12:09:44 ET] rlm.py: OK in 5s
+[2026-11-12 12:09:48 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 12:11:32 ET] dh_prop_middles.py: OK in 104s — prop-middles: no new/changed qualifying middles.
+[2026-11-12 12:11:35 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 12:11:40 ET] public_fade.py: OK in 5s
+[2026-11-12 12:13:11 ET] dh_positive_ev.py: FAILED (exit 2) in 91s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-12.txt. No prices inven
