@@ -283,3 +283,5 @@
 - 2026-11-10: Florida Panthers @ Columbus Blue Jackets — first goal: Florida Panthers (PP, Sam Bennett, 38:00 in); lead changes 0; final 4-1
 - 2026-11-10: Detroit Red Wings @ St. Louis Blues — first goal: Detroit Red Wings (EV, Andrew Copp, 0:13 in); lead changes 1; final 2-3
 - 2026-11-10: Nashville Predators @ Los Angeles Kings — first goal: Nashville Predators (EV, Filip Forsberg, 14:40 in); lead changes 0; final 3-0
+## 2026-11-11T22:19:03-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 285 games through 2026-11-11
+- 2026-11-11: Tampa Bay Lightning @ Buffalo Sabres — first goal: Tampa Bay Lightning (EV, Scott Sabourin, 1:11 in); lead changes 0; final 8-3
