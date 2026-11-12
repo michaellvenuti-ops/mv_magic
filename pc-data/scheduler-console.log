@@ -5922,3 +5922,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-11 18:43:22 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 4 unverified, 409 total tallied.
 [2026-11-11 18:43:23 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 18:43:24 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 7 game(s) refreshed, 0 deliverable change(s).
+[2026-11-11 18:54:15 ET] sync_to_github.py: FAILED (exit 1) in 651s —   FAILED: pc-data/total-projectors-state.json (HTTP 409: {'error': '{"message":"is at 01539c18b3f6c2a3bac0c8e2d22693c71fda77c6 but expected 979ffdab974dd3b8e070
+[2026-11-11 18:56:46 ET] odds_recorder.py: OK in 121s — SUMMARY: recorded 227 events (130 with odds), db total 234241 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 18:57:41 ET] dh_kalshi_poly_arb.py: OK in 55s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-11 18:57:44 ET] wide_builds.py: OK in 3s — wide_builds: 5 qualifying builds, 0 NEW (banked wide-builds-2026-11-11.md)
+[2026-11-11 18:58:04 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NCAAB Oral Roberts Tulsa Today 8:00 PM / table / Alt Spread Oral Roberts +23.5 / Alt Spread Tulsa -23.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-11 19:01:22 ET] dh_key_number_middles.py: OK in 198s — key-number-middles: 384 basketball rows excluded (football-only rule).
+[2026-11-11 19:03:00 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE CLEAN : NCAAF Sacramento St. Central Michigan Today 7:30 PM / table / Alt Total Under 44.5 / Alt Total Over 44 / table bar_chart | HardRock | Prophe
+[2026-11-11 19:03:02 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
