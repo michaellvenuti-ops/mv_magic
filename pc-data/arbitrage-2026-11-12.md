@@ -1,1 +1,5 @@
 ## 2026-11-12T00:38:23-05:00 — arbitrage: 98 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-12T01:54:32-05:00 — arbitrage: 98 complete pairs read, 1 NEW/CHANGED delivered — 1 NEW/CHANGED pairs
+NEW PAIR: NCAAB Loyola (MD) Towson Today 7:00 PM / table / Alt Total Over 130.5 / Alt Total Under 130.5 / table | DraftKings | Bet365 :: {'leg1': {'side': '-220 $1,000 DraftKings', 'price': '-220', 'book': 'DraftKings', 'stake': 1000.0}, 'leg2': {'side': '+255 $410 Bet365', 'price': '+255', 'book': 'Bet365', 'stake': 410.0}, 'arb_risk': False, 'first_reported': '2026-11-12T01:54:31-05:00', 'last_seen': '2026-11-12', 'profit_pct': 3.16}
+(end of new/changed pairs — deliverable list below)
+NCAAB Loyola (MD) Towson Today 7:00 PM / table / Alt Total Over 130.5 / Alt Total Under 130.5 / table | DraftKings | Bet365 :: {'leg1': {'side': '-220 $1,000 DraftKings', 'price': '-220', 'book': 'DraftKings', 'stake': 1000.0}, 'leg2': {'side': '+255 $410 Bet365', 'price': '+255', 'book': 'Bet365', 'stake': 410.0}, 'arb_risk': False, 'first_reported': '2026-11-12T01:54:31-05:00', 'last_seen': '2026-11-12', 'profit_pct': 3.16}
