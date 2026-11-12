@@ -105,11 +105,20 @@
      "total": 55.5
     },
     "bet365": {
-     "spread": 4.5,
+     "spread": 3.5,
      "total": 55.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "bet365",
+     "direction": -1,
+     "market": "spread",
+     "new": 3.5,
+     "old": 4.5,
+     "ts": "2026-11-12T04:38:18-05:00"
+    }
+   ]
   },
   "Air Force @ Army | 2026-11-05": {
    "books": {
@@ -8196,7 +8205,7 @@
      "total": 46.0
     },
     "Hard Rock": {
-     "spread": 11.0,
+     "spread": 10.5,
      "total": 46.5
     },
     "Kalshi": {
