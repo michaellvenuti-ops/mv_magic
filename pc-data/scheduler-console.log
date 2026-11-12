@@ -6363,3 +6363,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 07:44:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 07:44:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-12 07:46:00 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 227 events (75 with odds), db total 244910 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 07:57:47 ET] sync_to_github.py: FAILED (exit 1) in 706s —   FAILED: pc-data/spread-cover-2026-11-09.md (HTTP 409: {'error': '{"message":"is at 226eb32a3ee1187219128dc5997d73abc57ff907 but expected 83897a25873321aac437c
+[2026-11-12 07:58:20 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (75 with odds), db total 245137 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 08:03:01 ET] dh_key_number_middles.py: OK in 281s — key-number-middles: 168 basketball rows excluded (football-only rule).
+[2026-11-12 08:05:06 ET] dh_prop_middles.py: OK in 125s — PROP MIDDLE CLEAN : NFL WAS Commanders NY Giants Today 8:15 PM / table / Passing Yards J. Daniels Under 200.5 / Alt Pass Yards J. Daniels 200+ / table | Fanatic
+[2026-11-12 08:05:11 ET] ncaaf_first_score.py: OK in 5s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
