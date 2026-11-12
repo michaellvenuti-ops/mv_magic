@@ -6470,18 +6470,18 @@
    "winner": "UNC Asheville Bulldogs"
   },
   {
-   "date": "2026-11-11",
    "away": "USC Trojans",
-   "home": "California Golden Bears",
+   "date": "2026-11-11",
+   "final": "77-65",
    "first": "California Golden Bears",
-   "first_side": "home",
-   "first_kind": "FT",
    "first_elapsed_sec": 75,
-   "winner": "USC Trojans",
-   "seq": "0-1>0-2>2-2>2-5>2-7>2-9>5-9>7-9>7-11>8-11>9-11>9-12>9-13>12-13>12-16>14-16>16-16>16-18>18-18>18-20>20-20>21-20>23-20>23-22>25-22>25-23>26-23>27-23>27-24>29-24>29-26>32-26>32-28>32-30>34-30>37-30>38-30>39-30>39-31>39-32>39-34>39-36>40-36>43-36>43-38>45-38>45-40>47-40>48-40>49-40>50-40>51-40>51-41>51-42>53-42>53-45>53-47>53-48>53-49>55-49>55-51>57-51>57-54>59-54>59-56>61-56>61-57>63-57>63-59>65-59>66-59>67-59>69-59>70-59>70-60>73-60>73-61>74-61>75-61>75-63>75-65>76-65>77-65",
+   "first_kind": "FT",
+   "first_side": "home",
+   "home": "California Golden Bears",
    "lead_changes": 1,
+   "seq": "0-1>0-2>2-2>2-5>2-7>2-9>5-9>7-9>7-11>8-11>9-11>9-12>9-13>12-13>12-16>14-16>16-16>16-18>18-18>18-20>20-20>21-20>23-20>23-22>25-22>25-23>26-23>27-23>27-24>29-24>29-26>32-26>32-28>32-30>34-30>37-30>38-30>39-30>39-31>39-32>39-34>39-36>40-36>43-36>43-38>45-38>45-40>47-40>48-40>49-40>50-40>51-40>51-41>51-42>53-42>53-45>53-47>53-48>53-49>55-49>55-51>57-51>57-54>59-54>59-56>61-56>61-57>63-57>63-59>65-59>66-59>67-59>69-59>70-59>70-60>73-60>73-61>74-61>75-61>75-63>75-65>76-65>77-65",
    "ties": 4,
-   "final": "77-65"
+   "winner": "USC Trojans"
   },
   {
    "away": "UTSA Roadrunners",
@@ -6579,9 +6579,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Texas A&M Aggies": {
    "gp": 3,
@@ -6593,9 +6595,11 @@
    },
    "won_when_first": 3,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arkansas-Pine Bluff Golden Lions": {
    "gp": 3,
@@ -6607,9 +6611,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arkansas Razorbacks": {
    "gp": 3,
@@ -6621,9 +6627,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bethesda Flames": {
    "gp": 6,
@@ -6635,9 +6643,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 16.7,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Pacific Tigers": {
    "gp": 3,
@@ -6649,9 +6659,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cal State Fullerton Titans": {
    "gp": 2,
@@ -6663,9 +6675,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "San Diego State Aztecs": {
    "gp": 3,
@@ -6677,9 +6691,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Chapman Panthers": {
    "gp": 1,
@@ -6691,9 +6707,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "UC Irvine Anteaters": {
    "gp": 3,
@@ -6705,9 +6723,11 @@
    },
    "won_when_first": 3,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cleveland State Vikings": {
    "gp": 3,
@@ -6719,9 +6739,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Missouri Tigers": {
    "gp": 3,
@@ -6733,9 +6755,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Coppin State Eagles": {
    "gp": 3,
@@ -6747,9 +6771,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Virginia Tech Hokies": {
    "gp": 2,
@@ -6761,9 +6787,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cornell (IA) Rams": {
    "gp": 1,
@@ -6775,9 +6803,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Northern Iowa Panthers": {
    "gp": 3,
@@ -6789,9 +6819,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Drexel Dragons": {
    "gp": 3,
@@ -6803,9 +6835,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Virginia Cavaliers": {
    "gp": 4,
@@ -6817,9 +6851,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Hampton Pirates": {
    "gp": 3,
@@ -6831,9 +6867,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Georgia Tech Yellow Jackets": {
    "gp": 3,
@@ -6845,9 +6883,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Holy Cross Crusaders": {
    "gp": 3,
@@ -6859,9 +6899,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Rhode Island Rams": {
    "gp": 3,
@@ -6873,9 +6915,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "LSU New Orleans Privateers": {
    "gp": 2,
@@ -6887,9 +6931,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "LSU Tigers": {
    "gp": 3,
@@ -6901,9 +6947,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Lewis & Clark River Otters": {
    "gp": 1,
@@ -6915,9 +6963,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Portland State Vikings": {
    "gp": 3,
@@ -6929,9 +6979,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Lincoln (MO) Blue Tigers": {
    "gp": 1,
@@ -6943,9 +6995,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Missouri State Bears": {
    "gp": 3,
@@ -6957,9 +7011,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Lipscomb Bisons": {
    "gp": 3,
@@ -6971,9 +7027,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 1,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 50.0
   },
   "Iowa Hawkeyes": {
    "gp": 2,
@@ -6985,9 +7043,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Louisiana Christian Wildcats": {
    "gp": 1,
@@ -6999,9 +7059,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Houston Christian Huskies": {
    "gp": 3,
@@ -7013,9 +7075,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Manhattan Jaspers": {
    "gp": 3,
@@ -7027,9 +7091,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kentucky Wildcats": {
    "gp": 3,
@@ -7041,9 +7107,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Milligan Buffaloes": {
    "gp": 1,
@@ -7055,9 +7123,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "UNC Greensboro Spartans": {
    "gp": 4,
@@ -7069,9 +7139,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 75.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "North Florida Ospreys": {
    "gp": 3,
@@ -7083,9 +7155,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "California Baptist Lancers": {
    "gp": 3,
@@ -7097,9 +7171,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northern Arizona Lumberjacks": {
    "gp": 3,
@@ -7111,9 +7187,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UNLV Rebels": {
    "gp": 2,
@@ -7125,9 +7203,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Purdue Fort Wayne Mastodons": {
    "gp": 2,
@@ -7139,9 +7219,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Duquesne Dukes": {
    "gp": 3,
@@ -7153,9 +7235,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Regis University REGIS UNIVERSITY": {
    "gp": 1,
@@ -7167,9 +7251,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Wyoming Cowboys": {
    "gp": 3,
@@ -7181,9 +7267,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Sam Houston Bearkats": {
    "gp": 3,
@@ -7195,9 +7283,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Alabama Crimson Tide": {
    "gp": 3,
@@ -7209,9 +7299,11 @@
    },
    "won_when_first": 3,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "South Dakota State Jackrabbits": {
    "gp": 3,
@@ -7223,9 +7315,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kansas State Wildcats": {
    "gp": 3,
@@ -7237,9 +7331,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Stetson Hatters": {
    "gp": 2,
@@ -7251,9 +7347,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "South Carolina Gamecocks": {
    "gp": 3,
@@ -7265,9 +7363,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Wagner Seahawks": {
    "gp": 4,
@@ -7279,9 +7379,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Boston College Eagles": {
    "gp": 3,
@@ -7293,9 +7395,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Western New Mexico Mustangs": {
    "gp": 1,
@@ -7307,9 +7411,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "New Mexico State Aggies": {
    "gp": 2,
@@ -7321,9 +7427,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Wofford Terriers": {
    "gp": 4,
@@ -7335,9 +7443,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tennessee Volunteers": {
    "gp": 2,
@@ -7349,9 +7459,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Blue Mountain Christian Toppers": {
    "gp": 1,
@@ -7363,9 +7475,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tennessee Tech Golden Eagles": {
    "gp": 2,
@@ -7377,9 +7491,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Bob Jones Bruins": {
    "gp": 2,
@@ -7391,9 +7507,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Furman Paladins": {
    "gp": 3,
@@ -7405,9 +7523,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cal State Northridge Matadors": {
    "gp": 2,
@@ -7419,9 +7539,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Wichita State Shockers": {
    "gp": 3,
@@ -7433,9 +7555,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Central College Dutch": {
    "gp": 1,
@@ -7447,9 +7571,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Drake Bulldogs": {
    "gp": 2,
@@ -7461,9 +7587,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Champion Christian Tigers": {
    "gp": 1,
@@ -7475,9 +7603,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "UL Monroe Warhawks": {
    "gp": 3,
@@ -7489,9 +7619,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Christendom Crusaders": {
    "gp": 1,
@@ -7503,9 +7635,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "App State Mountaineers": {
    "gp": 2,
@@ -7517,9 +7651,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Concordia Chicago Cougars": {
    "gp": 1,
@@ -7531,9 +7667,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "SIU Edwardsville Cougars": {
    "gp": 3,
@@ -7545,9 +7683,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": null
   },
   "Erskine Flying Fleet": {
    "gp": 3,
@@ -7559,9 +7699,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UNC Asheville Bulldogs": {
    "gp": 3,
@@ -7573,9 +7715,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Fairleigh Dickinson Knights": {
    "gp": 3,
@@ -7587,9 +7731,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Butler Bulldogs": {
    "gp": 2,
@@ -7601,9 +7747,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Framingham State Rams": {
    "gp": 1,
@@ -7615,9 +7763,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Dartmouth Big Green": {
    "gp": 3,
@@ -7629,9 +7779,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Grace University Lancers": {
    "gp": 2,
@@ -7643,9 +7795,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Utah Tech Trailblazers": {
    "gp": 2,
@@ -7657,9 +7811,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Longwood Lancers": {
    "gp": 3,
@@ -7671,9 +7827,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Saint Joseph's Hawks": {
    "gp": 3,
@@ -7685,9 +7843,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Maryland Eastern Shore Hawks": {
    "gp": 3,
@@ -7699,9 +7859,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "High Point Panthers": {
    "gp": 2,
@@ -7713,9 +7875,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Milwaukee Panthers": {
    "gp": 3,
@@ -7727,9 +7891,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Santa Clara Broncos": {
    "gp": 3,
@@ -7741,9 +7907,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "North Dakota State Bison": {
    "gp": 3,
@@ -7755,9 +7923,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Saint Mary's Gaels": {
    "gp": 2,
@@ -7769,9 +7939,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northern Kentucky Norse": {
    "gp": 3,
@@ -7783,9 +7955,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": null
   },
   "South Dakota Coyotes": {
    "gp": 3,
@@ -7797,9 +7971,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Queens University Royals": {
    "gp": 3,
@@ -7811,9 +7987,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": null
   },
   "Loyola Marymount Lions": {
    "gp": 3,
@@ -7825,9 +8003,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Radford Highlanders": {
    "gp": 2,
@@ -7839,9 +8019,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "California Golden Bears": {
    "gp": 3,
@@ -7853,9 +8035,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Randolph Wildcats": {
    "gp": 1,
@@ -7867,9 +8051,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Norfolk State Spartans": {
    "gp": 3,
@@ -7881,9 +8067,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": null
   },
   "Regent Regent Royals": {
    "gp": 1,
@@ -7895,9 +8083,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Old Dominion Monarchs": {
    "gp": 3,
@@ -7909,9 +8099,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "SE Louisiana Lions": {
    "gp": 3,
@@ -7923,9 +8115,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Auburn Tigers": {
    "gp": 2,
@@ -7937,9 +8131,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Saint Mary of the Woods Pomeroys": {
    "gp": 1,
@@ -7951,9 +8147,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Southern Indiana Screaming Eagles": {
    "gp": 3,
@@ -7965,9 +8163,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Salish Kootenai Bison": {
    "gp": 1,
@@ -7979,9 +8179,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Montana Grizzlies": {
    "gp": 2,
@@ -7993,9 +8195,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Virginia Lynchburg Dragons": {
    "gp": 4,
@@ -8007,9 +8211,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Morgan State Bears": {
    "gp": 2,
@@ -8021,9 +8227,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Webster Gorloks": {
    "gp": 1,
@@ -8035,9 +8243,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Southeast Missouri State Redhawks": {
    "gp": 2,
@@ -8049,9 +8259,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "West Coast Baptist Eagles": {
    "gp": 1,
@@ -8063,9 +8275,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Boise State Broncos": {
    "gp": 3,
@@ -8077,9 +8291,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arkansas Monticello Boll Weevils": {
    "gp": 1,
@@ -8091,9 +8307,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Louisiana Tech Bulldogs": {
    "gp": 2,
@@ -8105,9 +8323,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bellarmine Knights": {
    "gp": 3,
@@ -8119,9 +8339,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Indiana Hoosiers": {
    "gp": 2,
@@ -8133,9 +8355,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bethune-Cookman Wildcats": {
    "gp": 3,
@@ -8147,9 +8371,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Texas Tech Red Raiders": {
    "gp": 2,
@@ -8161,9 +8387,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Binghamton Bearcats": {
    "gp": 3,
@@ -8175,9 +8403,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Saint Peter's Peacocks": {
    "gp": 3,
@@ -8189,9 +8419,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bryant Bulldogs": {
    "gp": 3,
@@ -8203,9 +8435,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Quinnipiac Bobcats": {
    "gp": 2,
@@ -8217,9 +8451,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Buffalo Bulls": {
    "gp": 2,
@@ -8231,9 +8467,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Pittsburgh Panthers": {
    "gp": 2,
@@ -8245,9 +8483,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cal Poly Mustangs": {
    "gp": 2,
@@ -8259,9 +8499,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arizona Wildcats": {
    "gp": 2,
@@ -8273,9 +8515,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Central Bible Saints": {
    "gp": 1,
@@ -8287,9 +8531,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Lindenwood Lions": {
    "gp": 3,
@@ -8301,9 +8547,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Central Connecticut Blue Devils": {
    "gp": 2,
@@ -8315,9 +8563,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Syracuse Orange": {
    "gp": 2,
@@ -8329,9 +8579,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Central State Marauders": {
    "gp": 2,
@@ -8343,9 +8595,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Illinois State Redbirds": {
    "gp": 2,
@@ -8357,9 +8611,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Centre Colonels": {
    "gp": 1,
@@ -8371,9 +8627,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Belmont Bruins": {
    "gp": 2,
@@ -8385,9 +8643,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Chattanooga Mocs": {
    "gp": 2,
@@ -8399,9 +8659,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Penn State Nittany Lions": {
    "gp": 2,
@@ -8413,9 +8675,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Chicago State Cougars": {
    "gp": 3,
@@ -8427,9 +8691,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 66.7
+   "win_pct_when_not_first": 66.7,
+   "won_by_one_when_first_pct": null
   },
   "Incarnate Word Cardinals": {
    "gp": 3,
@@ -8441,9 +8707,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Coastal Carolina Chanticleers": {
    "gp": 2,
@@ -8455,9 +8723,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Duke Blue Devils": {
    "gp": 2,
@@ -8469,9 +8739,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "College of Biblical Studies Ambassadors": {
    "gp": 3,
@@ -8483,9 +8755,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Prairie View A&M Panthers": {
    "gp": 3,
@@ -8497,9 +8771,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Columbia International Rams": {
    "gp": 1,
@@ -8511,9 +8787,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Charleston Southern Buccaneers": {
    "gp": 2,
@@ -8525,9 +8803,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cornell Big Red": {
    "gp": 3,
@@ -8539,9 +8819,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Lehigh Mountain Hawks": {
    "gp": 2,
@@ -8553,9 +8835,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Delaware State Hornets": {
    "gp": 2,
@@ -8567,9 +8851,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Navy Midshipmen": {
    "gp": 3,
@@ -8581,9 +8867,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "East Texas A&M Lions": {
    "gp": 2,
@@ -8595,9 +8883,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Rice Owls": {
    "gp": 2,
@@ -8609,9 +8899,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "East West Phantoms": {
    "gp": 2,
@@ -8623,9 +8915,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Tennessee State Tigers": {
    "gp": 2,
@@ -8637,9 +8931,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Fort Valley State Wildcats": {
    "gp": 1,
@@ -8651,9 +8947,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Florida A&M Rattlers": {
    "gp": 3,
@@ -8665,9 +8963,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Gardner-Webb Runnin' Bulldogs": {
    "gp": 2,
@@ -8679,9 +8979,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Texas Longhorns": {
    "gp": 2,
@@ -8693,9 +8995,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Georgia State Panthers": {
    "gp": 3,
@@ -8707,9 +9011,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Charlotte 49ers": {
    "gp": 2,
@@ -8721,9 +9027,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Southern Utah Thunderbirds": {
    "gp": 2,
@@ -8735,9 +9043,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Green Bay Phoenix": {
    "gp": 3,
@@ -8749,9 +9059,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cincinnati Bearcats": {
    "gp": 2,
@@ -8763,9 +9075,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Hofstra Pride": {
    "gp": 2,
@@ -8777,9 +9091,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Princeton Tigers": {
    "gp": 3,
@@ -8791,9 +9107,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Howard Bison": {
    "gp": 2,
@@ -8805,9 +9123,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Alcorn State Braves": {
    "gp": 2,
@@ -8819,9 +9139,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Howard Payne Yellow Jackets": {
    "gp": 2,
@@ -8833,9 +9155,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Texas State Bobcats": {
    "gp": 2,
@@ -8847,9 +9171,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Jackson State Tigers": {
    "gp": 3,
@@ -8861,9 +9187,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 33.3
+   "win_pct_when_not_first": 33.3,
+   "won_by_one_when_first_pct": null
   },
   "Tulane Green Wave": {
    "gp": 2,
@@ -8875,9 +9203,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Jacksonville Dolphins": {
    "gp": 2,
@@ -8889,9 +9219,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Florida Gators": {
    "gp": 2,
@@ -8903,9 +9235,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Jacksonville State Gamecocks": {
    "gp": 2,
@@ -8917,9 +9251,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "South Alabama Jaguars": {
    "gp": 2,
@@ -8931,9 +9267,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Kalamazoo Hornets": {
    "gp": 1,
@@ -8945,9 +9283,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Western Michigan Broncos": {
    "gp": 2,
@@ -8959,9 +9299,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kentucky Wesleyan Panthers": {
    "gp": 1,
@@ -8973,9 +9315,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Western Kentucky Hilltoppers": {
    "gp": 3,
@@ -8987,9 +9331,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "King's Monarchs": {
    "gp": 1,
@@ -9001,9 +9347,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Lafayette Leopards": {
    "gp": 2,
@@ -9015,9 +9363,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "La Sierra Golden Eagles": {
    "gp": 1,
@@ -9029,9 +9379,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Pepperdine Waves": {
    "gp": 3,
@@ -9043,9 +9395,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Le Moyne Dolphins": {
    "gp": 2,
@@ -9057,9 +9411,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Creighton Bluejays": {
    "gp": 2,
@@ -9071,9 +9427,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Long Island University Sharks": {
    "gp": 3,
@@ -9085,9 +9443,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Seton Hall Pirates": {
    "gp": 2,
@@ -9099,9 +9459,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Maine Black Bears": {
    "gp": 3,
@@ -9113,9 +9475,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Sacred Heart Pioneers": {
    "gp": 2,
@@ -9127,9 +9491,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "McNeese Cowboys": {
    "gp": 2,
@@ -9141,9 +9507,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "North Texas Mean Green": {
    "gp": 2,
@@ -9155,9 +9523,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Menlo Oaks": {
    "gp": 1,
@@ -9169,9 +9539,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UC Davis Aggies": {
    "gp": 2,
@@ -9183,9 +9555,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mercer Bears": {
    "gp": 3,
@@ -9197,9 +9571,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mercyhurst Lakers": {
    "gp": 2,
@@ -9211,9 +9587,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Notre Dame Fighting Irish": {
    "gp": 3,
@@ -9225,9 +9603,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mount St Mary Knights": {
    "gp": 1,
@@ -9239,9 +9619,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Army Black Knights": {
    "gp": 2,
@@ -9253,9 +9635,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "NJIT Highlanders": {
    "gp": 4,
@@ -9267,9 +9651,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 25.0
+   "win_pct_when_not_first": 25.0,
+   "won_by_one_when_first_pct": null
   },
   "Iona Gaels": {
    "gp": 3,
@@ -9281,9 +9667,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "New Hampshire Wildcats": {
    "gp": 3,
@@ -9295,9 +9683,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Rider Broncs": {
    "gp": 3,
@@ -9309,9 +9699,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northern Illinois Huskies": {
    "gp": 3,
@@ -9323,9 +9715,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tulsa Golden Hurricane": {
    "gp": 2,
@@ -9337,9 +9731,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northwestern State Demons": {
    "gp": 3,
@@ -9351,9 +9747,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mississippi State Bulldogs": {
    "gp": 2,
@@ -9365,9 +9763,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Pennsylvania Quakers": {
    "gp": 3,
@@ -9379,9 +9779,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Illinois Fighting Illini": {
    "gp": 2,
@@ -9393,9 +9795,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "SUNY Old Westbury Panthers": {
    "gp": 1,
@@ -9407,9 +9811,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Columbia Lions": {
    "gp": 2,
@@ -9421,9 +9827,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "South Florida Bulls": {
    "gp": 2,
@@ -9435,9 +9843,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "DePaul Blue Demons": {
    "gp": 2,
@@ -9449,9 +9859,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Southern Virginia Knights": {
    "gp": 1,
@@ -9463,9 +9875,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Richmond Spiders": {
    "gp": 2,
@@ -9477,9 +9891,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Stanton Elks": {
    "gp": 1,
@@ -9491,9 +9907,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cal State Bakersfield Roadrunners": {
    "gp": 2,
@@ -9505,9 +9923,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Stonehill Skyhawks": {
    "gp": 2,
@@ -9519,9 +9939,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Fordham Rams": {
    "gp": 2,
@@ -9533,9 +9955,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Toledo Rockets": {
    "gp": 3,
@@ -9547,9 +9971,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Michigan State Spartans": {
    "gp": 2,
@@ -9561,9 +9987,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Towson Tigers": {
    "gp": 2,
@@ -9575,9 +10003,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Utah Utes": {
    "gp": 2,
@@ -9589,9 +10019,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "UAlbany Great Danes": {
    "gp": 3,
@@ -9603,9 +10035,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UMBC Retrievers": {
    "gp": 2,
@@ -9617,9 +10051,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Marist Red Foxes": {
    "gp": 2,
@@ -9631,9 +10067,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UMass Lowell River Hawks": {
    "gp": 3,
@@ -9645,9 +10083,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 66.7
+   "win_pct_when_not_first": 66.7,
+   "won_by_one_when_first_pct": null
   },
   "Merrimack Warriors": {
    "gp": 2,
@@ -9659,9 +10099,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Union (TN) Bulldogs": {
    "gp": 1,
@@ -9673,9 +10115,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "North Alabama Lions": {
    "gp": 2,
@@ -9687,9 +10131,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "VMI Keydets": {
    "gp": 3,
@@ -9701,9 +10147,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "SMU Mustangs": {
    "gp": 2,
@@ -9715,9 +10163,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Vermont Catamounts": {
    "gp": 2,
@@ -9729,9 +10179,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Fairfield Stags": {
    "gp": 3,
@@ -9743,9 +10195,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 33.3,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Morehead State Eagles": {
    "gp": 2,
@@ -9757,9 +10211,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Wake Forest Demon Deacons": {
    "gp": 2,
@@ -9771,9 +10227,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Vanderbilt Commodores": {
    "gp": 1,
@@ -9785,9 +10243,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "West Georgia Wolves": {
    "gp": 2,
@@ -9799,9 +10259,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Loyola Chicago Ramblers": {
    "gp": 2,
@@ -9813,9 +10275,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Alma Scots": {
    "gp": 1,
@@ -9827,9 +10291,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Central Michigan Chippewas": {
    "gp": 2,
@@ -9841,9 +10307,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "American University Eagles": {
    "gp": 2,
@@ -9855,9 +10323,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Clemson Tigers": {
    "gp": 2,
@@ -9869,9 +10339,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Arkansas State Red Wolves": {
    "gp": 2,
@@ -9883,9 +10355,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Baylor Bears": {
    "gp": 2,
@@ -9897,9 +10371,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Austin Peay Governors": {
    "gp": 1,
@@ -9911,9 +10387,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kennesaw State Owls": {
    "gp": 2,
@@ -9925,9 +10403,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Hawai'i Rainbow Warriors": {
    "gp": 3,
@@ -9939,9 +10419,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Boston University Terriers": {
    "gp": 2,
@@ -9953,9 +10435,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Brown Bears": {
    "gp": 2,
@@ -9967,9 +10451,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Briar Cliff Chargers": {
    "gp": 1,
@@ -9981,9 +10467,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Oregon State Beavers": {
    "gp": 2,
@@ -9995,9 +10483,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Central Arkansas Bears": {
    "gp": 2,
@@ -10009,9 +10499,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Ole Miss Rebels": {
    "gp": 2,
@@ -10023,9 +10515,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "George Mason Patriots": {
    "gp": 1,
@@ -10037,9 +10531,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Delaware Blue Hens": {
    "gp": 2,
@@ -10051,9 +10547,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Wisconsin Badgers": {
    "gp": 2,
@@ -10065,9 +10563,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Detroit Mercy Titans": {
    "gp": 2,
@@ -10079,9 +10579,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Marquette Golden Eagles": {
    "gp": 2,
@@ -10093,9 +10595,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "East Tennessee State Buccaneers": {
    "gp": 2,
@@ -10107,9 +10611,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "NC State Wolfpack": {
    "gp": 2,
@@ -10121,9 +10627,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Eastern Illinois Panthers": {
    "gp": 3,
@@ -10135,9 +10643,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 33.3,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Eastern Michigan Eagles": {
    "gp": 2,
@@ -10149,9 +10659,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Xavier Musketeers": {
    "gp": 2,
@@ -10163,9 +10675,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Eastern Washington Eagles": {
    "gp": 2,
@@ -10177,9 +10691,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Oregon Ducks": {
    "gp": 2,
@@ -10191,9 +10707,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "The Citadel Bulldogs": {
    "gp": 2,
@@ -10205,9 +10723,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Florida Atlantic Owls": {
    "gp": 2,
@@ -10219,9 +10739,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Wright State Raiders": {
    "gp": 2,
@@ -10233,9 +10755,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Georgia Southern Eagles": {
    "gp": 2,
@@ -10247,9 +10771,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Villanova Wildcats": {
    "gp": 2,
@@ -10261,9 +10787,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Idaho State Bengals": {
    "gp": 2,
@@ -10275,9 +10803,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Idaho Vandals": {
    "gp": 2,
@@ -10289,9 +10819,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Colorado State Rams": {
    "gp": 2,
@@ -10303,9 +10835,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Indiana State Sycamores": {
    "gp": 2,
@@ -10317,9 +10851,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Ball State Cardinals": {
    "gp": 2,
@@ -10331,9 +10867,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "James Madison Dukes": {
    "gp": 2,
@@ -10345,9 +10883,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Lincoln (CA) Oaklanders": {
    "gp": 3,
@@ -10359,9 +10899,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Loyola Maryland Greyhounds": {
    "gp": 2,
@@ -10373,9 +10915,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mount St. Mary's Mountaineers": {
    "gp": 1,
@@ -10387,9 +10931,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Massachusetts Minutemen": {
    "gp": 2,
@@ -10401,9 +10947,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Michigan Dearborn Wolves": {
    "gp": 1,
@@ -10415,9 +10963,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Middle Tennessee Blue Raiders": {
    "gp": 2,
@@ -10429,9 +10979,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Kansas Jayhawks": {
    "gp": 2,
@@ -10443,9 +10995,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Midway Eagles": {
    "gp": 1,
@@ -10457,9 +11011,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Eastern Kentucky Colonels": {
    "gp": 2,
@@ -10471,9 +11027,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Mississippi U for Women Owls": {
    "gp": 1,
@@ -10485,9 +11043,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Alabama A&M Bulldogs": {
    "gp": 2,
@@ -10499,9 +11059,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Mississippi Valley State Delta Devils": {
    "gp": 3,
@@ -10513,9 +11075,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Oklahoma Sooners": {
    "gp": 2,
@@ -10527,9 +11091,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "New College Mighty Banyans": {
    "gp": 1,
@@ -10541,9 +11107,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Florida Gulf Coast Eagles": {
    "gp": 2,
@@ -10555,9 +11123,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "New Haven Chargers": {
    "gp": 2,
@@ -10569,9 +11139,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Rutgers Scarlet Knights": {
    "gp": 2,
@@ -10583,9 +11155,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Newberry Wolves": {
    "gp": 1,
@@ -10597,9 +11171,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Charleston Cougars": {
    "gp": 2,
@@ -10611,9 +11187,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Nicholls Colonels": {
    "gp": 2,
@@ -10625,9 +11203,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UAB Blazers": {
    "gp": 2,
@@ -10639,9 +11219,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "San Francisco Dons": {
    "gp": 2,
@@ -10653,9 +11235,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UCLA Bruins": {
    "gp": 2,
@@ -10667,9 +11251,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northeastern Huskies": {
    "gp": 2,
@@ -10681,9 +11267,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northern Colorado Bears": {
    "gp": 2,
@@ -10695,9 +11283,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Arizona State Sun Devils": {
    "gp": 2,
@@ -10709,9 +11299,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Oakland Golden Grizzlies": {
    "gp": 4,
@@ -10723,9 +11315,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 25.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Stanford Cardinal": {
    "gp": 2,
@@ -10737,9 +11331,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Omaha Mavericks": {
    "gp": 3,
@@ -10751,9 +11347,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "BYU Cougars": {
    "gp": 2,
@@ -10765,9 +11363,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Presbyterian Blue Hose": {
    "gp": 2,
@@ -10779,9 +11379,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Georgia Bulldogs": {
    "gp": 2,
@@ -10793,9 +11395,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Oklahoma State Cowboys": {
    "gp": 1,
@@ -10807,9 +11411,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Robert Morris Colonials": {
    "gp": 2,
@@ -10821,9 +11427,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UIC Flames": {
    "gp": 2,
@@ -10835,9 +11443,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Roberts Wesleyan Redhawks": {
    "gp": 1,
@@ -10849,9 +11459,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Kent State Golden Flashes": {
    "gp": 2,
@@ -10863,9 +11475,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Saint Louis Billikens": {
    "gp": 2,
@@ -10877,9 +11491,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "South Carolina State Bulldogs": {
    "gp": 3,
@@ -10891,9 +11507,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "South Carolina Upstate Spartans": {
    "gp": 3,
@@ -10905,9 +11523,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Southern Illinois Salukis": {
    "gp": 1,
@@ -10919,9 +11539,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Kansas City Roos": {
    "gp": 3,
@@ -10933,9 +11555,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Southern Jaguars": {
    "gp": 3,
@@ -10947,9 +11571,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 33.3,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "TCU Horned Frogs": {
    "gp": 2,
@@ -10961,9 +11587,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Southern Miss Golden Eagles": {
    "gp": 2,
@@ -10975,9 +11603,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Iowa State Cyclones": {
    "gp": 2,
@@ -10989,9 +11619,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "St. Thomas Tommies": {
    "gp": 3,
@@ -11003,9 +11635,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Minnesota Golden Gophers": {
    "gp": 2,
@@ -11017,9 +11651,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "West Virginia Mountaineers": {
    "gp": 1,
@@ -11031,9 +11667,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Stony Brook Seawolves": {
    "gp": 2,
@@ -11045,9 +11683,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northwestern Wildcats": {
    "gp": 2,
@@ -11059,9 +11699,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Tarleton State Texans": {
    "gp": 2,
@@ -11073,9 +11715,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "San Diego Toreros": {
    "gp": 2,
@@ -11087,9 +11731,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Texas A&M-Corpus Christi Islanders": {
    "gp": 2,
@@ -11101,9 +11747,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Louisiana Ragin' Cajuns": {
    "gp": 2,
@@ -11115,9 +11763,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Texas Lutheran Bulldogs": {
    "gp": 1,
@@ -11129,9 +11779,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Stephen F. Austin Lumberjacks": {
    "gp": 2,
@@ -11143,9 +11795,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Texas Southern Tigers": {
    "gp": 2,
@@ -11157,9 +11811,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Troy Trojans": {
    "gp": 2,
@@ -11171,9 +11827,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Florida State Seminoles": {
    "gp": 2,
@@ -11185,9 +11843,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Truman State Bulldogs": {
    "gp": 1,
@@ -11199,9 +11859,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UConn Huskies": {
    "gp": 2,
@@ -11213,9 +11875,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Michigan Wolverines": {
    "gp": 2,
@@ -11227,9 +11891,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Elon Phoenix": {
    "gp": 2,
@@ -11241,9 +11907,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UT Arlington Mavericks": {
    "gp": 3,
@@ -11255,9 +11923,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Portland Pilots": {
    "gp": 3,
@@ -11269,9 +11939,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Valparaiso Beacons": {
    "gp": 2,
@@ -11283,9 +11955,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Purdue Boilermakers": {
    "gp": 2,
@@ -11297,9 +11971,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Miami Hurricanes": {
    "gp": 2,
@@ -11311,9 +11987,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "West Florida Argonauts": {
    "gp": 2,
@@ -11325,9 +12003,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Florida International Panthers": {
    "gp": 1,
@@ -11339,9 +12019,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "North Carolina Tar Heels": {
    "gp": 2,
@@ -11353,9 +12035,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Yale Bulldogs": {
    "gp": 2,
@@ -11367,9 +12051,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UCF Knights": {
    "gp": 2,
@@ -11381,9 +12067,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Youngstown State Penguins": {
    "gp": 2,
@@ -11395,9 +12083,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Ohio State Buckeyes": {
    "gp": 2,
@@ -11409,9 +12099,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Albion Britons": {
    "gp": 1,
@@ -11423,9 +12115,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Andrew Fighting Tigers": {
    "gp": 1,
@@ -11437,9 +12131,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Miami (OH) RedHawks": {
    "gp": 1,
@@ -11451,9 +12147,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Grand Canyon Lopes": {
    "gp": 2,
@@ -11465,9 +12163,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Boyce Bulldogs": {
    "gp": 1,
@@ -11479,9 +12179,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Liberty Flames": {
    "gp": 1,
@@ -11493,9 +12195,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Cheyney (PA) Wolves": {
    "gp": 2,
@@ -11507,9 +12211,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "City College NY Beavers": {
    "gp": 1,
@@ -11521,9 +12227,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Colgate Raiders": {
    "gp": 2,
@@ -11535,9 +12243,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Denver Pioneers": {
    "gp": 1,
@@ -11549,9 +12259,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UC Riverside Highlanders": {
    "gp": 1,
@@ -11563,9 +12275,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Fresno State Bulldogs": {
    "gp": 2,
@@ -11577,9 +12291,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UC San Diego Tritons": {
    "gp": 1,
@@ -11591,9 +12307,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "George Washington Revolutionaries": {
    "gp": 2,
@@ -11605,9 +12323,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Western Illinois Leathernecks": {
    "gp": 2,
@@ -11619,9 +12339,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Lamar Cardinals": {
    "gp": 2,
@@ -11633,9 +12355,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Abilene Christian Wildcats": {
    "gp": 2,
@@ -11647,9 +12371,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Long Beach State Beach": {
    "gp": 2,
@@ -11661,9 +12387,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Montana State Bobcats": {
    "gp": 1,
@@ -11675,9 +12403,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "La Salle Explorers": {
    "gp": 2,
@@ -11689,9 +12419,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Loyola New Orleans Wolfpack": {
    "gp": 1,
@@ -11703,9 +12435,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Maryland Terrapins": {
    "gp": 1,
@@ -11717,9 +12451,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Georgetown Hoyas": {
    "gp": 2,
@@ -11731,9 +12467,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Davidson Wildcats": {
    "gp": 2,
@@ -11745,9 +12483,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Monmouth Hawks": {
    "gp": 1,
@@ -11759,9 +12499,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Louisville Cardinals": {
    "gp": 1,
@@ -11773,9 +12515,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Niagara Purple Eagles": {
    "gp": 1,
@@ -11787,9 +12531,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Gonzaga Bulldogs": {
    "gp": 1,
@@ -11801,9 +12547,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "North Carolina A&T Aggies": {
    "gp": 2,
@@ -11815,9 +12563,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Ohio Bobcats": {
    "gp": 1,
@@ -11829,9 +12579,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "North Carolina Central Eagles": {
    "gp": 2,
@@ -11843,9 +12595,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "North Dakota Fighting Hawks": {
    "gp": 2,
@@ -11857,9 +12611,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Winthrop Eagles": {
    "gp": 2,
@@ -11871,9 +12627,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "New Mexico Lobos": {
    "gp": 2,
@@ -11885,9 +12643,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Dayton Flyers": {
    "gp": 2,
@@ -11899,9 +12659,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northwestern (OK) Rangers": {
    "gp": 1,
@@ -11913,9 +12675,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Oral Roberts Golden Eagles": {
    "gp": 2,
@@ -11927,9 +12691,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Murray State Racers": {
    "gp": 2,
@@ -11941,9 +12707,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UC Santa Barbara Gauchos": {
    "gp": 2,
@@ -11955,9 +12723,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bucknell Bison": {
    "gp": 2,
@@ -11969,9 +12739,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Utah State Aggies": {
    "gp": 2,
@@ -11983,9 +12755,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Bradley Braves": {
    "gp": 2,
@@ -11997,9 +12771,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Penn State Shenango Nittany Lions": {
    "gp": 1,
@@ -12011,9 +12787,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Seattle U Redhawks": {
    "gp": 2,
@@ -12025,9 +12803,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UT Rio Grande Valley Vaqueros": {
    "gp": 2,
@@ -12039,9 +12819,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Providence Friars": {
    "gp": 2,
@@ -12053,9 +12835,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Nebraska Cornhuskers": {
    "gp": 2,
@@ -12067,9 +12851,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Little Rock Trojans": {
    "gp": 2,
@@ -12081,9 +12867,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Sacramento State Hornets": {
    "gp": 1,
@@ -12095,9 +12883,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Samford Bulldogs": {
    "gp": 1,
@@ -12109,9 +12899,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Colorado Buffaloes": {
    "gp": 2,
@@ -12123,9 +12915,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "San Jos\u00e9 State Spartans": {
    "gp": 1,
@@ -12137,9 +12931,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Evansville Purple Aces": {
    "gp": 2,
@@ -12151,9 +12947,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "St. Bonaventure Bonnies": {
    "gp": 2,
@@ -12165,9 +12963,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Canisius Golden Griffins": {
    "gp": 2,
@@ -12179,9 +12979,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Marshall Thundering Herd": {
    "gp": 2,
@@ -12193,9 +12995,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "UNC Wilmington Seahawks": {
    "gp": 2,
@@ -12207,9 +13011,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "East Carolina Pirates": {
    "gp": 2,
@@ -12221,9 +13027,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "UT Martin Skyhawks": {
    "gp": 2,
@@ -12235,9 +13043,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "IU Indianapolis Jaguars": {
    "gp": 2,
@@ -12249,9 +13059,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Utah Valley Wolverines": {
    "gp": 1,
@@ -12263,9 +13075,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Weber State Wildcats": {
    "gp": 2,
@@ -12277,9 +13091,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "VCU Rams": {
    "gp": 2,
@@ -12291,9 +13107,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Memphis Tigers": {
    "gp": 1,
@@ -12305,9 +13123,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "UTSA Roadrunners": {
    "gp": 2,
@@ -12319,9 +13139,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Washington State Cougars": {
    "gp": 2,
@@ -12333,9 +13155,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Western Carolina Catamounts": {
    "gp": 2,
@@ -12347,9 +13171,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Allen Yellow Jackets": {
    "gp": 1,
@@ -12361,9 +13187,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Houston Cougars": {
    "gp": 2,
@@ -12375,9 +13203,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Campbell Fighting Camels": {
    "gp": 2,
@@ -12389,9 +13219,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Central Penn Knights": {
    "gp": 1,
@@ -12403,9 +13235,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Harvard Crimson": {
    "gp": 2,
@@ -12417,9 +13251,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 50.0
+   "win_pct_when_not_first": 50.0,
+   "won_by_one_when_first_pct": null
   },
   "Chicago Maroons": {
    "gp": 1,
@@ -12431,9 +13267,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Air Force Falcons": {
    "gp": 2,
@@ -12445,9 +13283,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "UTEP Miners": {
    "gp": 1,
@@ -12459,9 +13299,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "St. John's Red Storm": {
    "gp": 2,
@@ -12473,9 +13315,11 @@
    },
    "won_when_first": 2,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Keuka Storm": {
    "gp": 1,
@@ -12487,9 +13331,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "William & Mary Tribe": {
    "gp": 2,
@@ -12501,9 +13347,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Siena Saints": {
    "gp": 2,
@@ -12515,9 +13363,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Temple Owls": {
    "gp": 2,
@@ -12529,9 +13379,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Ripon Red Hawks": {
    "gp": 1,
@@ -12543,9 +13395,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Nevada Wolf Pack": {
    "gp": 2,
@@ -12557,9 +13411,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "USC Trojans": {
    "gp": 2,
@@ -12571,9 +13427,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": 0.0
   },
   "Baptist (Fl) Eagles": {
    "gp": 1,
@@ -12585,9 +13443,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Brescia Bearcats": {
    "gp": 1,
@@ -12599,9 +13459,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Bowling Green Falcons": {
    "gp": 1,
@@ -12613,9 +13475,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Covenant Fighting Scots": {
    "gp": 1,
@@ -12627,9 +13491,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Elmira Soaring Eagles": {
    "gp": 1,
@@ -12641,9 +13507,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Fisk Bulldogs": {
    "gp": 1,
@@ -12655,9 +13523,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Georgia Gwinnett Grizzlies": {
    "gp": 1,
@@ -12669,9 +13539,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Grambling Tigers": {
    "gp": 1,
@@ -12683,9 +13555,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Hiram Terriers": {
    "gp": 1,
@@ -12697,9 +13571,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "McDaniel Green Terror": {
    "gp": 1,
@@ -12711,9 +13587,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Washington Huskies": {
    "gp": 1,
@@ -12725,9 +13603,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 1,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 100.0
+   "win_pct_when_not_first": 100.0,
+   "won_by_one_when_first_pct": null
   },
   "Muskingum Fighting Muskies": {
    "gp": 1,
@@ -12739,9 +13619,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Akron Zips": {
    "gp": 1,
@@ -12753,9 +13635,11 @@
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Penn State Schuylkill Nittany Lions": {
    "gp": 1,
@@ -12767,9 +13651,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Simpson (IA) Storm": {
    "gp": 1,
@@ -12781,9 +13667,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Southern New Orleans Knights": {
    "gp": 1,
@@ -12795,9 +13683,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Washington Maryland Shoremen": {
    "gp": 1,
@@ -12809,9 +13699,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Apprentice School Builders": {
    "gp": 1,
@@ -12823,9 +13715,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Dallas Christian Crusaders": {
    "gp": 1,
@@ -12837,9 +13731,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Ecclesia Royals": {
    "gp": 1,
@@ -12851,9 +13747,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Millsaps Majors": {
    "gp": 1,
@@ -12865,9 +13763,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Newman Jets": {
    "gp": 1,
@@ -12879,9 +13779,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Northern New Mexico Eagles": {
    "gp": 1,
@@ -12893,9 +13795,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "St. Mary's (MD) Seahawks": {
    "gp": 1,
@@ -12907,9 +13811,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "UT Dallas Comets": {
    "gp": 1,
@@ -12921,9 +13827,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "York (NE) Panthers": {
    "gp": 1,
@@ -12935,9 +13843,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Misericordia Cougars": {
    "gp": 1,
@@ -12949,9 +13859,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Blackburn Beavers": {
    "gp": 1,
@@ -12963,9 +13875,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Bryant & Stratton-Albany Bobcats": {
    "gp": 1,
@@ -12977,9 +13891,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Campbellsville Tigers": {
    "gp": 1,
@@ -12991,9 +13907,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Centenary (LA) Ladies": {
    "gp": 1,
@@ -13005,9 +13923,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Clarke Pride": {
    "gp": 1,
@@ -13019,9 +13939,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Franklin Grizzlies": {
    "gp": 1,
@@ -13033,9 +13955,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Friends Falcons": {
    "gp": 1,
@@ -13047,9 +13971,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 100.0,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": null
+   "win_pct_when_not_first": null,
+   "won_by_one_when_first_pct": 0.0
   },
   "Great Lakes Christian Crusaders": {
    "gp": 1,
@@ -13061,9 +13987,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Lees McRae Bobcats": {
    "gp": 1,
@@ -13075,9 +14003,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Macalester Scots": {
    "gp": 1,
@@ -13089,9 +14019,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Oklahoma Panhandle PANHANDLE ST": {
    "gp": 1,
@@ -13103,9 +14035,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Thomas College Terriers": {
    "gp": 1,
@@ -13117,9 +14051,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "Voorhees Tigers": {
    "gp": 1,
@@ -13131,9 +14067,11 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   },
   "William Paterson Pioneers": {
    "gp": 1,
@@ -13145,15 +14083,19 @@
    },
    "won_when_first": 0,
    "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
    "scored_first_pct": 0.0,
    "win_pct_when_first": null,
-   "win_pct_when_not_first": 0.0
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
   }
  },
  "league": {
   "games": 469,
   "home_scored_first": 284,
   "first_team_won": 294,
+  "first_team_won_by_one": 1,
+  "first_team_won_by_one_pct": 0.2,
   "kinds": {
    "3PT": 127,
    "2PT": 282,
