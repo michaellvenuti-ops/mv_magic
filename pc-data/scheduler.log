@@ -6086,3 +6086,16 @@
 [2026-11-12 00:39:36 ET] hung_number.py: OK in 72s — No new hung numbers (13 current flags).
 [2026-11-12 00:39:40 ET] rlm.py: OK in 5s
 [2026-11-12 00:39:44 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 00:50:36 ET] sync_to_github.py: FAILED (exit 1) in 651s —   FAILED: steam-side-board-pc.html (HTTP 409: {'error': '{"message":"is at 52a2cb7a4ecee9daff62cd708b79ebb9672a9acf but expected 3820dd85c2dc2d7c12d64bd29af63ca
+[2026-11-12 00:51:09 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 227 events (75 with odds), db total 239916 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 00:51:10 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Southern Miss Louisiana Tech Nov-14 5:00 PM — Total — Over 57.5 BetRivers +112 ($87) / Under 60.5 Fanatics-NJ -160 ($113) — both win 58, 59, 60
+[2026-11-12 00:54:44 ET] dh_basketball_key_middles.py: OK in 215s — basketball-key-middles: no new basketball middles.
+[2026-11-12 00:54:50 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 00:56:23 ET] dh_sog_middles.py: OK in 94s — - 0 deliverables this run
+[2026-11-12 00:56:26 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-12 00:56:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 00:56:29 ET] nba_first_score.py: OK in 2s — nba-first-score: 1 new, 3 unverified, 160 total tallied.
+[2026-11-12 00:56:30 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 2 new, 0 unverified, 289 total tallied.
+[2026-11-12 00:56:32 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 468 total tallied.
+[2026-11-12 00:56:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 00:56:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
