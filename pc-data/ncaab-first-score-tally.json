@@ -5630,6 +5630,20 @@
    "winner": "Central Michigan Chippewas"
   },
   {
+   "date": "2026-11-11",
+   "away": "Bethune-Cookman Wildcats",
+   "home": "San Diego State Aztecs",
+   "first": "San Diego State Aztecs",
+   "first_side": "home",
+   "first_kind": "FT",
+   "first_elapsed_sec": 43,
+   "winner": "San Diego State Aztecs",
+   "seq": "0-1>0-2>0-3>0-4>2-4>2-6>4-6>6-6>9-6>9-8>9-11>11-11>14-11>17-11>17-13>19-13>19-15>19-17>19-19>21-19>21-21>21-23>21-25>21-26>23-26>23-28>25-28>25-30>27-30>27-32>29-32>29-34>31-34>33-34>33-35>33-36>35-36>37-36>37-39>40-39>40-41>40-44>41-44>42-44>42-45>42-46>42-47>42-49>45-49>45-50>45-51>47-51>47-53>50-53>53-53>53-55>55-55>55-58>57-58>57-60>60-60>62-60>62-62>64-62>64-64>64-67>66-67>66-69>66-72>66-74>66-76>68-76>68-78>68-80>68-82>69-82>70-82>71-82>71-84>72-84>73-84>73-85>73-86>74-86>75-86>75-88",
+   "lead_changes": 10,
+   "ties": 9,
+   "final": "75-88"
+  },
+  {
    "away": "Dartmouth Big Green",
    "date": "2026-11-11",
    "final": "85-76",
@@ -5700,18 +5714,18 @@
    "winner": "Air Force Falcons"
   },
   {
-   "date": "2026-11-11",
    "away": "North Carolina A&T Aggies",
-   "home": "East Carolina Pirates",
+   "date": "2026-11-11",
+   "final": "67-72",
    "first": "East Carolina Pirates",
-   "first_side": "home",
-   "first_kind": "2PT",
    "first_elapsed_sec": 15,
-   "winner": "East Carolina Pirates",
-   "seq": "0-2>3-2>3-5>3-8>4-8>5-8>5-11>6-11>7-11>8-11>9-11>9-14>9-16>11-16>12-16>13-16>13-17>13-18>15-18>15-20>15-22>18-22>20-22>20-24>20-25>23-25>23-26>23-27>25-27>25-29>26-29>26-31>26-33>27-33>27-34>27-35>28-35>29-35>29-37>30-37>32-37>33-37>33-38>34-38>34-40>34-41>34-43>34-44>34-45>34-46>34-47>36-47>36-49>39-49>39-51>40-51>41-51>42-51>42-53>42-55>43-55>44-55>45-55>46-55>48-55>48-56>48-57>49-57>51-57>52-57>53-57>53-60>55-60>55-63>57-63>57-65>59-65>60-65>60-68>61-68>62-68>63-68>63-69>63-70>65-70>66-70>67-70>67-72",
+   "first_kind": "2PT",
+   "first_side": "home",
+   "home": "East Carolina Pirates",
    "lead_changes": 2,
+   "seq": "0-2>3-2>3-5>3-8>4-8>5-8>5-11>6-11>7-11>8-11>9-11>9-14>9-16>11-16>12-16>13-16>13-17>13-18>15-18>15-20>15-22>18-22>20-22>20-24>20-25>23-25>23-26>23-27>25-27>25-29>26-29>26-31>26-33>27-33>27-34>27-35>28-35>29-35>29-37>30-37>32-37>33-37>33-38>34-38>34-40>34-41>34-43>34-44>34-45>34-46>34-47>36-47>36-49>39-49>39-51>40-51>41-51>42-51>42-53>42-55>43-55>44-55>45-55>46-55>48-55>48-56>48-57>49-57>51-57>52-57>53-57>53-60>55-60>55-63>57-63>57-65>59-65>60-65>60-68>61-68>62-68>63-68>63-69>63-70>65-70>66-70>67-70>67-72",
    "ties": 0,
-   "final": "67-72"
+   "winner": "East Carolina Pirates"
   },
   {
    "away": "South Florida Bulls",
@@ -5828,16 +5842,16 @@
    "win_pct_when_not_first": 50.0
   },
   "San Diego State Aztecs": {
-   "gp": 2,
-   "scored_first": 1,
+   "gp": 3,
+   "scored_first": 2,
    "kinds": {
     "3PT": 0,
     "2PT": 0,
-    "FT": 1
+    "FT": 2
    },
-   "won_when_first": 1,
+   "won_when_first": 2,
    "won_when_not_first": 1,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 100.0
   },
@@ -7298,7 +7312,7 @@
    "win_pct_when_not_first": 100.0
   },
   "Bethune-Cookman Wildcats": {
-   "gp": 2,
+   "gp": 3,
    "scored_first": 0,
    "kinds": {
     "3PT": 0,
@@ -12101,18 +12115,18 @@
   }
  },
  "league": {
-  "games": 409,
-  "home_scored_first": 248,
-  "first_team_won": 259,
+  "games": 410,
+  "home_scored_first": 249,
+  "first_team_won": 260,
   "kinds": {
    "3PT": 113,
    "2PT": 245,
-   "FT": 51
+   "FT": 52
   },
-  "avg_lead_changes": 3.39,
+  "avg_lead_changes": 3.4,
   "median_first_score_sec": 29,
-  "home_scored_first_pct": 60.6,
-  "first_team_win_pct": 63.3
+  "home_scored_first_pct": 60.7,
+  "first_team_win_pct": 63.4
  },
  "lead_change_team_avgs": {
   "Alabama State Hornets": {
@@ -12151,9 +12165,9 @@
    "avg_per_game": 5.5
   },
   "San Diego State Aztecs": {
-   "games": 2,
-   "lead_changes": 7,
-   "avg_per_game": 3.5
+   "games": 3,
+   "lead_changes": 17,
+   "avg_per_game": 5.67
   },
   "Chapman Panthers": {
    "games": 1,
@@ -12676,9 +12690,9 @@
    "avg_per_game": 6.5
   },
   "Bethune-Cookman Wildcats": {
-   "games": 2,
-   "lead_changes": 2,
-   "avg_per_game": 1.0
+   "games": 3,
+   "lead_changes": 12,
+   "avg_per_game": 4.0
   },
   "Texas Tech Red Raiders": {
    "games": 2,
