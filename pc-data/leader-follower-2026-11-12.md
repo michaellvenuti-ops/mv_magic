@@ -21,3 +21,10 @@
 ## 2026-11-12T10:50:57-05:00 — no-follow: Kalshi Ole Miss @ Oklahoma | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T10:50:57-05:00 — no-follow: DraftKings Wyoming @ UTEP | 2026-11-12 spread (only 2 followed)
 ## 2026-11-12T10:50:57-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T12:09:47-05:00 — no-follow: FanDuel Louisiana @ Louisiana-Monroe | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T12:09:48-05:00 — pack move, never credited: Michigan @ Oregon | 2026-11-12 spread (DraftKings, Fanatics)
+## 2026-11-12T12:09:48-05:00 — pack move, never credited: USC @ Indiana | 2026-11-12 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-12T12:09:48-05:00 — no-follow: FanDuel Fresno State @ Texas State | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T12:09:48-05:00 — pack move, never credited: Ole Miss @ Oklahoma | 2026-11-12 spread (BetMGM, Caesars, DraftKings)
+## 2026-11-12T12:09:48-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-12 spread (Caesars, DraftKings)
+## 2026-11-12T12:09:48-05:00 — 81 games, 0 leads credited, 3 started games skipped
