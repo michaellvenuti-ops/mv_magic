@@ -5,3 +5,6 @@
 - 2026-11-11: Mississippi Valley State Delta Devils @ Oregon Ducks — first: Oregon Ducks (3PT, 0:47 in); lead changes 0; final 66-100
 - 2026-11-11: Chicago State Cougars @ California Baptist Lancers — first: California Baptist Lancers (FT, 1:31 in); lead changes 1; final 81-62
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T01:40:21-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 469 games through 2026-11-11
+- 2026-11-11: USC Trojans @ California Golden Bears — first: California Golden Bears (FT, 1:15 in); lead changes 1; final 77-65
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
