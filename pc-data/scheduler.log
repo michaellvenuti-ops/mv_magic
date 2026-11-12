@@ -6156,3 +6156,17 @@
 [2026-11-12 02:44:26 ET] dh_key_number_middles.py: OK in 231s — key-number-middles: 99 basketball rows excluded (football-only rule).
 [2026-11-12 02:46:13 ET] dh_prop_middles.py: OK in 107s — PROP MIDDLE CLEAN : NFL ARI Cardinals KC Chiefs Nov-22 1:00 PM / table / Spread KC Chiefs -14 / Spread ARI Cardinals +14.5 / table | Bally Bet | Bet365 — window
 [2026-11-12 02:46:15 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 02:57:34 ET] sync_to_github.py: FAILED (exit 1) in 673s —   FAILED: pc-data/promo-converter-2026-11-08.md (HTTP 409: {'error': '{"message":"is at b5fd7ea6b41f595e7bc15f8097a10abd499c53bb but expected 82b49e90425897d4b2
+[2026-11-12 02:59:08 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 227 events (75 with odds), db total 241505 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-12 03:01:22 ET] dh_arbitrage.py: OK in 134s — ARBITRAGE: NCAAB Loyola (MD) Towson Today 7:00 PM / table / Total Under 138.5 / Alt Total Over 138.5 / table bar_chart | Bally Bet | ProphetX
+[2026-11-12 03:01:25 ET] wide_builds.py: OK in 3s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 03:05:54 ET] dh_basketball_key_middles.py: OK in 268s — basketball-key-middles: no new basketball middles.
+[2026-11-12 03:05:59 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 03:07:41 ET] dh_sog_middles.py: OK in 102s — - 0 deliverables this run
+[2026-11-12 03:07:44 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -1.6c vs +EV.
+[2026-11-12 03:07:46 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 03:07:47 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 03:07:48 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 03:07:50 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 03:07:51 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 03:07:52 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
