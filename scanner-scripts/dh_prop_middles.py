@@ -14,6 +14,11 @@ Rules (identical to Chet's scan):
   - ALTERNATIVES RULE: when the tool lists alternative book combos for
     the same line pair, they are recorded under "alternatives",
   - Smaller Bets pass (dh_middles.collect_with_smaller).
+PLAYER-PROP FILTER (2026-11-12, Michael's tap): the finder serves
+game spreads/totals in its default view too, so this script keeps
+ONLY rows whose market names a player stat (is_player_prop) — game
+lines stay in game-middles. Game rows dropped by the filter are
+counted in the banked header, never delivered.
 State shape matches live prop-middles-state.json:
   {"entries": {key: {player, market, game, window, conversion_pct,
    clean_tier, headline: {leg1, leg2}, alternatives: [...],
@@ -21,6 +26,7 @@ State shape matches live prop-middles-state.json:
 Banked: data/prop-middles-<date>.md. Alert-only: NEW/CHANGED print.
 """
 import argparse
+import re
 import sys
 
 from config import DATA_DIR
@@ -34,6 +40,49 @@ SCAN = "prop-middles"
 MIN_WINDOW = 5.0
 PRICE_LO, PRICE_HI = -200, 200
 CLEAN = -140
+
+# Market words that only ever name a PLAYER stat. Game segments
+# ("Total Under X", "Spread ...", "Alt Spread ...", "Moneyline",
+# "Team Total ...") never contain these, so a row carrying one is a
+# prop row. "Points" is safe: game totals render as "Total Under X",
+# never "... Points ...".
+PROP_MARKETS = (
+    "Rebounds", "Assists", "Points", "Steals", "Blocks", "Turnovers",
+    "Threes", "3-Pointers", "3 Pointers", "PRA",
+    "Receiving Yards", "Recv Yards", "Rushing Yards", "Rush Yards",
+    "Passing Yards", "Pass Yards", "Receptions", "Receiving",
+    "Rushing Attempts", "Rush Attempts", "Targets", "Tackles", "Sacks",
+    "Passing TD", "Rushing TD", "Receiving TD", "Touchdown",
+    "Shots on Goal", "Shots", "Goals", "Saves",
+    "Hits", "Strikeouts", "Home Runs", "RBIs", "Total Bases",
+    "First Basket", "Double-Double", "Triple-Double",
+    "Completions", "Pass Attempts", "Interceptions",
+    "Points + Rebounds", "Points + Assists",
+)
+
+
+def is_prop_identity(ident):
+    """True when a row identity names a player stat (see PROP_MARKETS),
+    or — fallback for stat words outside the list — when a market
+    segment carries a player name in 'X. Surname' form ('P. Reed')."""
+    if not ident:
+        return False
+    low = ident.lower()
+    if any(k.lower() in low for k in PROP_MARKETS):
+        return True
+    return bool(re.search(r"\b[A-Z]\. [A-Z][a-z]+", ident))
+
+
+def is_player_prop(mid):
+    """True only for genuine player-prop rows. The finder serves game
+    spreads/totals in its default view, so prop-middles filters rows
+    itself (fix 2026-11-12, Michael's tap) instead of trusting the
+    view. Rows with no readable identity are dropped (fail-closed:
+    a game row must never reach the prop file again)."""
+    ident = stable_row_identity(mid.get("cells")) or ""
+    if not ident:
+        ident = f"{mid.get('player', '')} {mid.get('market', '')}"
+    return is_prop_identity(ident)
 
 
 def normalize_line(leg):
@@ -98,15 +147,24 @@ def main():
             smaller = []
         else:
             full, smaller = collect_with_smaller(page)
+        # Prop filter (2026-11-12): drop game-line rows the finder
+        # serves in its default view; count them in the header.
+        n_full, n_smaller = len(full), len(smaller)
+        full = [m for m in full if is_player_prop(m)]
+        smaller = [m for m in smaller if is_player_prop(m)]
+        n_dropped = (n_full - len(full)) + (n_smaller - len(smaller))
         if not full and not smaller:
-            print("prop-middles: zero middles parsed — run with a "
-                  "dump and send it back for a parser patch. No state "
-                  "written.", file=sys.stderr)
+            print("prop-middles: zero player-prop middles parsed "
+                  f"({n_dropped} game-line rows dropped by prop filter) "
+                  "— run with a dump and send it back for a parser "
+                  "patch. No state written.", file=sys.stderr)
             return 2
         deliverables = []
         lines = [f"## {now_stamp()} — prop-middles: {len(full)} full-size "
                  f"+ {len(smaller)} smaller-bets rows parsed (compact: "
-                 f"qualifying only below)"]
+                 f"qualifying only below)"
+                 + (f" — {n_dropped} game-line rows dropped by prop "
+                    f"filter" if n_dropped else "")]
         for mid in full + smaller:
             if not qualifies(mid):
                 continue
