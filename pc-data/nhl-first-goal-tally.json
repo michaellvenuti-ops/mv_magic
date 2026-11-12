@@ -1,5 +1,5 @@
 {
- "through": "2026-11-11",
+ "through": "2026-11-12",
  "games": [
   {
    "away": "Buffalo Sabres",
@@ -4640,6 +4640,22 @@
    "shootout": false,
    "ties": 1,
    "winner": "Vegas Golden Knights"
+  },
+  {
+   "date": "2026-11-12",
+   "away": "Carolina Hurricanes",
+   "home": "Seattle Kraken",
+   "first": "Carolina Hurricanes",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Nikolaj Ehlers",
+   "first_elapsed_sec": 496,
+   "winner": "Carolina Hurricanes",
+   "shootout": false,
+   "seq": "1-0>2-0>3-0>4-0>4-1",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "4-1"
   }
  ],
  "tally": {
@@ -4836,7 +4852,7 @@
    "won_by_one_when_first_pct": 30.0
   },
   "Seattle Kraken": {
-   "gp": 16,
+   "gp": 17,
    "scored_first": 8,
    "strengths": {
     "EV": 6,
@@ -4846,9 +4862,9 @@
    "won_when_first": 7,
    "won_when_not_first": 2,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 47.1,
    "win_pct_when_first": 87.5,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 22.2,
    "won_by_one_when_first_pct": 37.5
   },
   "Calgary Flames": {
@@ -5028,20 +5044,20 @@
    "won_by_one_when_first_pct": 28.6
   },
   "Carolina Hurricanes": {
-   "gp": 18,
-   "scored_first": 12,
+   "gp": 19,
+   "scored_first": 13,
    "strengths": {
-    "EV": 11,
+    "EV": 12,
     "PP": 0,
     "SH": 1
    },
-   "won_when_first": 11,
+   "won_when_first": 12,
    "won_when_not_first": 3,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 66.7,
-   "win_pct_when_first": 91.7,
+   "scored_first_pct": 68.4,
+   "win_pct_when_first": 92.3,
    "win_pct_when_not_first": 50.0,
-   "won_by_one_when_first_pct": 16.7
+   "won_by_one_when_first_pct": 15.4
   },
   "Los Angeles Kings": {
    "gp": 15,
@@ -5157,22 +5173,22 @@
   }
  },
  "league": {
-  "games": 290,
-  "games_with_goal": 289,
+  "games": 291,
+  "games_with_goal": 290,
   "shootouts": 21,
   "home_scored_first": 137,
-  "first_team_won": 191,
+  "first_team_won": 192,
   "first_team_won_by_one": 59,
-  "first_team_won_by_one_pct": 20.4,
+  "first_team_won_by_one_pct": 20.3,
   "strengths": {
-   "EV": 219,
+   "EV": 220,
    "PP": 65,
    "SH": 5
   },
-  "avg_lead_changes": 0.47,
-  "median_first_goal_sec": 855,
-  "home_scored_first_pct": 47.4,
-  "first_team_win_pct": 66.1
+  "avg_lead_changes": 0.46,
+  "median_first_goal_sec": 852,
+  "home_scored_first_pct": 47.2,
+  "first_team_win_pct": 66.2
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5236,9 +5252,9 @@
    "avg_per_game": 0.58
   },
   "Seattle Kraken": {
-   "games": 16,
+   "games": 17,
    "lead_changes": 5,
-   "avg_per_game": 0.31
+   "avg_per_game": 0.29
   },
   "Calgary Flames": {
    "games": 19,
@@ -5296,9 +5312,9 @@
    "avg_per_game": 0.81
   },
   "Carolina Hurricanes": {
-   "games": 18,
+   "games": 19,
    "lead_changes": 9,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.47
   },
   "Los Angeles Kings": {
    "games": 15,
