@@ -37,3 +37,7 @@ NEW FLAG: FBS Northwestern @ Ohio State | 2026-11-11 — Kalshi still dealing sp
 NEW FLAG: FBS Wyoming @ UTEP | 2026-11-11 — FanDuel still dealing spread 7.5 on Wyoming (pre-move median 7.5, now 8.5)
 ## 2026-11-11T21:36:41-05:00 — 67 games, 1 steam events, 1 NEW flags, 3 started games skipped
 NEW FLAG: FBS Sacramento State @ Central Michigan | 2026-11-11 — Kalshi still dealing total 38.5 on Over (pre-move median 39.5, now 41.5)
+## 2026-11-11T22:17:19-05:00 — 67 games, 2 steam events, 3 NEW flags, 3 started games skipped
+NEW FLAG: FBS Sacramento State @ Central Michigan | 2026-11-11 — Kalshi still dealing spread -20.5 on Sacramento State (pre-move median -17.5, now -14.5)
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-11 — Fanatics still dealing spread -13.5 on Boise State (pre-move median -13.5, now -14.5)
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-11 — Kalshi still dealing spread -13.5 on Boise State (pre-move median -13.5, now -14.5)
