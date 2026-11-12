@@ -6541,3 +6541,19 @@
 [2026-11-12 14:40:36 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 14:42:21 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 188 events (114 with odds), db total 248639 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-12 14:42:24 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 14:55:07 ET] sync_to_github.py: FAILED (exit 1) in 763s —   FAILED: pc-data/transcripts/follow-the-money-2026-11-05-hour-1.txt (HTTP 409: {'error': '{"message":"is at c19e7884424e35e4e678e76c882ceecd50ddb99f but expect
+[2026-11-12 14:55:40 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (114 with odds), db total 248827 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 14:56:48 ET] dh_arbitrage.py: OK in 69s — ARBITRAGE: NHL STL Blues Utah Mammoth Today 9:00 PM / table / Shots M. Carcone Under 1.5 / Shots M. Carcone 2+ / table | Bally Bet | Fanatics-NJ
+[2026-11-12 14:58:47 ET] dh_kalshi_poly_arb.py: OK in 119s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 14:59:32 ET] dh_low_holds.py: OK in 45s — LOW-HOLDS: NCAAF Missouri 1 Georgia Nov-14 3:30 PM / table / Spread Georgia -15.5 / Alt Spread Missouri +15.5 / table | Caesars | Bally Bet
+[2026-11-12 15:02:15 ET] dh_game_middles.py: OK in 163s — GAME MIDDLE: NCAAF Missouri 1 Georgia Nov-14 3:30 PM / table / Alt Spread Georgia -16 / Alt Spread Missouri +16.5 / table | BetRivers | Bally Bet — window 208.0
+[2026-11-12 15:06:32 ET] dh_basketball_key_middles.py: OK in 257s — basketball-key-middles: no new basketball middles.
+[2026-11-12 15:06:38 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 15:08:14 ET] dh_sog_middles.py: OK in 96s — - 0 deliverables this run
+[2026-11-12 15:08:15 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 15:08:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 15:08:18 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 15:08:19 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 291 total tallied.
+[2026-11-12 15:08:22 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 15:08:23 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 15:08:24 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
