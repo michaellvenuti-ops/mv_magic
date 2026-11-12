@@ -29,7 +29,10 @@ team flips — passing through a tie counts once (the NFL rule).
 Trends computed per team and league-wide: games, first-goal
 count + %, strength mix of first goals, win % when scoring
 first vs when not, avg lead changes, and the time of the first
-goal (seconds into the game).
+goal (seconds into the game). Plus, per team and league-wide,
+won-by-exactly-one when scoring first — the both-win rate for a
+moneyline + opponent +1.5 in-play middle when your team scores
+first (added 2026-11-12 at Michael's ask).
 
 Outputs (all in data/, synced to pc-data/):
   - nhl-first-goal-state.json (state.py shape; entries per game)
@@ -101,6 +104,19 @@ def event_finals(events):
         except Exception:  # noqa: BLE001 - skip malformed events
             continue
     return out
+
+
+def margin_for(game, team):
+    """Final-score margin for team (+N = team won by N), or None."""
+    try:
+        a, h = (int(x) for x in str(game.get("final", "")).split("-"))
+    except (ValueError, TypeError):
+        return None
+    if team == game.get("away"):
+        return a - h
+    if team == game.get("home"):
+        return h - a
+    return None
 
 
 def lead_changes_and_ties(seq_pairs):
@@ -241,7 +257,8 @@ def recompute(entries):
             t = tally.setdefault(team, {
                 "gp": 0, "scored_first": 0,
                 "strengths": {"EV": 0, "PP": 0, "SH": 0},
-                "won_when_first": 0, "won_when_not_first": 0})
+                "won_when_first": 0, "won_when_not_first": 0,
+                "won_by_one_when_first": 0})
             t["gp"] += 1
             la = lc_avg.setdefault(team, {"games": 0, "lead_changes": 0})
             la["games"] += 1
@@ -249,6 +266,11 @@ def recompute(entries):
             if g["first"] == team:
                 if g["winner"] == team:
                     t["won_when_first"] += 1
+                    # ML + opponent +1.5 middle: both legs win iff the
+                    # first-goal team wins by exactly one (final-score
+                    # margin 1 — shootout wins count, they pay both).
+                    if margin_for(g, team) == 1:
+                        t["won_by_one_when_first"] += 1
             elif g["winner"] == team:
                 t["won_when_not_first"] += 1
         if g["first"] and g["first"] in tally:
@@ -265,6 +287,9 @@ def recompute(entries):
             if gp_first else None
         t["win_pct_when_not_first"] = \
             round(100 * t["won_when_not_first"] / gp_not, 1) if gp_not else None
+        t["won_by_one_when_first_pct"] = \
+            round(100 * t["won_by_one_when_first"] / gp_first, 1) \
+            if gp_first else None
     for v in lc_avg.values():
         v["avg_per_game"] = round(v["lead_changes"] / v["games"], 2) \
             if v["games"] else 0.0
@@ -272,6 +297,9 @@ def recompute(entries):
     n = len(games)
     elapsed = [g["first_elapsed_sec"] for g in scored
                if g.get("first_elapsed_sec") is not None]
+    first_by_one = sum(1 for g in scored
+                       if g["first"] == g["winner"]
+                       and margin_for(g, g["first"]) == 1)
     league = {
         "games": n,
         "games_with_goal": len(scored),
@@ -279,6 +307,9 @@ def recompute(entries):
         "home_scored_first": sum(1 for g in scored
                                  if g["first_side"] == "home"),
         "first_team_won": sum(1 for g in scored if g["first"] == g["winner"]),
+        "first_team_won_by_one": first_by_one,
+        "first_team_won_by_one_pct": round(100 * first_by_one / len(scored), 1)
+        if scored else None,
         "strengths": {k: sum(1 for g in scored if g["first_strength"] == k)
                       for k in ("EV", "PP", "SH")},
         "avg_lead_changes": round(
