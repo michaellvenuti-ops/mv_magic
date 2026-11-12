@@ -6700,3 +6700,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 18:13:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 470 total tallied.
 [2026-11-12 18:13:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 18:13:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-12 18:26:04 ET] sync_to_github.py: OK in 751s —   ok: wide-builds-board-pc.html
+[2026-11-12 18:26:51 ET] notify.py: OK in 46s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-12 18:28:22 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (110 with odds), db total 251271 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 18:29:14 ET] dh_arbitrage.py: OK in 52s — ARBITRAGE: NCAAB Richmond Southern Illinois Today 8:00 PM / table / Alt Spread Richmond +2.5 / Alt Spread Southern Illinois -2.5 / table | Fanatics-NJ | BetRive
+[2026-11-12 18:29:38 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 18:30:02 ET] dh_low_holds.py: OK in 24s — low-holds: no new qualifying pairs (silent).
+[2026-11-12 18:31:40 ET] dh_game_middles.py: OK in 98s — GAME MIDDLE: NCAAB Richmond Southern Illinois Today 8:00 PM / table / Alt Spread Richmond +1.5 / Alt Spread Southern Illinois -0.5 / table | BetMGM | Bally Bet 
+[2026-11-12 18:35:04 ET] dh_key_number_middles.py: OK in 203s — key-number-middles: 327 basketball rows excluded (football-only rule).
+[2026-11-12 18:36:33 ET] dh_prop_middles.py: OK in 89s — prop-middles: no new/changed qualifying middles.
+[2026-11-12 18:36:34 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
