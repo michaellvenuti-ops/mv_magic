@@ -689,3 +689,6 @@
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
 ## 2026-11-11T22:38:54-05:00 -- NCAAF FIRST SCORE (PC): 1 new final(s) tallied; season 688 games through 2026-11-11
 - 2026-11-11: Sacramento State Hornets @ Central Michigan Chippewas — first: Central Michigan Chippewas (TD, 3:49 in); lead changes 0; final 7-28
+## 2026-11-11T23:17:54-05:00 -- NCAAF FIRST SCORE (PC): 2 new final(s) tallied; season 690 games through 2026-11-11
+- 2026-11-11: Buffalo Bulls @ Ball State Cardinals — first: Ball State Cardinals (TD, 13:13 in); lead changes 1; final 28-7
+- 2026-11-11: Massachusetts Minutemen @ Toledo Rockets — first: Toledo Rockets (TD, 10:40 in); lead changes 0; final 0-24
