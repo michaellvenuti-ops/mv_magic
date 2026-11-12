@@ -6642,3 +6642,19 @@
 [2026-11-12 17:50:44 ET] dh_key_number_middles.py: OK in 206s — key-number-middles: 432 basketball rows excluded (football-only rule).
 [2026-11-12 17:52:13 ET] dh_prop_middles.py: OK in 89s — PROP MIDDLE CLEAN : NFL WAS Commanders NY Giants Today 8:15 PM / table / Receiving Yards S. Diggs Under 40.5 / Alt Recv Yards S. Diggs 40+ / table | BetParx | F
 [2026-11-12 17:52:15 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 18:05:04 ET] sync_to_github.py: FAILED (exit 1) in 769s —   FAILED: pc-data/correlated-parlay-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 8ac3c7c940ef13943ab99580e0ca8fee067ecba7 but expected 6bb217e89092ac5e
+[2026-11-12 18:06:36 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 188 events (110 with odds), db total 251083 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 18:06:37 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL WAS Commanders NY Giants Today 8:15 PM — Rush Yards R. White — Over 39.5 Bally Bet +108 ($95) / Under 42.5 Bet365 -115 ($105) — both win 40, 41, 
+[2026-11-12 18:10:15 ET] dh_basketball_key_middles.py: OK in 218s — basketball-key-middles: no new basketball middles.
+[2026-11-12 18:11:26 ET] hung_number.py: OK in 71s — No new hung numbers (13 current flags).
+[2026-11-12 18:11:31 ET] rlm.py: OK in 5s
+[2026-11-12 18:11:35 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 18:11:38 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 18:13:23 ET] dh_sog_middles.py: OK in 105s — - 0 deliverables this run
+[2026-11-12 18:13:25 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 18:13:27 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 18:13:28 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 18:13:29 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 291 total tallied.
+[2026-11-12 18:13:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 470 total tallied.
+[2026-11-12 18:13:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 18:13:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
