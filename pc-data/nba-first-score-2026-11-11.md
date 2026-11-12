@@ -306,3 +306,6 @@
 - 2026-11-10: Orlando Magic @ Sacramento Kings — first: Sacramento Kings (2PT, 0:42 in); lead changes 5; final 107-100
 - 2026-11-10: Oklahoma City Thunder @ Portland Trail Blazers — first: Portland Trail Blazers (2PT, 1:11 in); lead changes 14; final 103-123
 - note: 8 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T21:38:28-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 153 games through 2026-11-11
+- 2026-11-11: Washington Wizards @ Indiana Pacers — first: Indiana Pacers (2PT, 0:38 in); lead changes 12; final 101-114
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
