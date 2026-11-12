@@ -6507,3 +6507,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 12:11:35 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 12:11:40 ET] public_fade.py: OK in 5s
 [2026-11-12 12:13:11 ET] dh_positive_ev.py: FAILED (exit 2) in 91s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-12.txt. No prices inven
+[2026-11-12 12:26:49 ET] sync_to_github.py: FAILED (exit 1) in 818s —   FAILED: pc-data/key-number-middles-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 7261585b8f0b4fd731fddecf8e48da542cf7a2ff but expected 5a9cdd21c8fad0d
+[2026-11-12 12:28:23 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 188 events (114 with odds), db total 247511 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 12:29:25 ET] dh_arbitrage.py: OK in 62s — ARBITRAGE: NHL DET Red Wings FLA Panthers Today 7:30 PM / table / Points M. Brandsegg-Nygard Under 0.5 / Points M. Brandsegg-Nygard 1+ / table | BetMGM | Bet365
+[2026-11-12 12:30:28 ET] dh_kalshi_poly_arb.py: OK in 62s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 12:30:31 ET] wide_builds.py: OK in 3s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 12:31:35 ET] dh_low_holds.py: OK in 64s — LOW-HOLDS: NHL MTL Canadiens BOS Bruins Today 7:00 PM / table / Shots P. Zacha Under 2.5 / Shots P. Zacha 3+ / table | Bally Bet | FanDuel
+[2026-11-12 12:34:16 ET] dh_game_middles.py: OK in 160s — GAME MIDDLE: NCAAF Nevada Northern Illinois Nov-14 3:30 PM / table / Alt Spread Northern Illinois +8 / Alt Spread Nevada -7.5 / table | Bally Bet | theScore — w
+[2026-11-12 12:37:51 ET] dh_basketball_key_middles.py: OK in 214s — basketball-key-middles: no new basketball middles.
+[2026-11-12 12:37:57 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS USC @ Indiana | 2026-11-12 | Kalshi | USC spread -9.5 (median -9.5 -> -8.5)
+[2026-11-12 12:39:39 ET] dh_sog_middles.py: OK in 102s — - 0 deliverables this run
+[2026-11-12 12:39:43 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Green Bay 22.5/24.5 sits at -2.0c vs +EV
+[2026-11-12 12:39:45 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 12:39:46 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 12:39:47 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 290 total tallied.
+[2026-11-12 12:39:49 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 469 total tallied.
+[2026-11-12 12:39:50 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 12:39:52 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
