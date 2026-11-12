@@ -466,3 +466,13 @@
 - 2026-11-11: Friends Falcons @ Wichita State Shockers — first: Friends Falcons (FT, 0:41 in); lead changes 7; final 60-113
 - 2026-11-11: Binghamton Bearcats @ Misericordia Cougars — first: Misericordia Cougars (2PT, 0:06 in); lead changes 3; final 87-62
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T22:19:07-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 454 games through 2026-11-11
+- 2026-11-11: Valparaiso Beacons @ South Dakota State Jackrabbits — first: South Dakota State Jackrabbits (2PT, 0:45 in); lead changes 4; final 69-81
+- 2026-11-11: Santa Clara Broncos @ North Texas Mean Green — first: Santa Clara Broncos (2PT, 0:37 in); lead changes 4; final 76-71
+- 2026-11-11: Jacksonville State Gamecocks @ Houston Cougars — first: Houston Cougars (FT, 0:22 in); lead changes 0; final 46-92
+- 2026-11-11: Robert Morris Colonials @ Arkansas Razorbacks — first: Robert Morris Colonials (2PT, 1:18 in); lead changes 5; final 53-76
+- 2026-11-11: Pepperdine Waves @ Sam Houston Bearkats — first: Pepperdine Waves (2PT, 0:16 in); lead changes 5; final 77-85
+- 2026-11-11: Blackburn Beavers @ Eastern Illinois Panthers — first: Eastern Illinois Panthers (3PT, 1:18 in); lead changes 0; final 44-102
+- 2026-11-11: Oral Roberts Golden Eagles @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (2PT, 0:43 in); lead changes 4; final 71-80
+- 2026-11-11: Macalester Scots @ St. Thomas Tommies — first: St. Thomas Tommies (3PT, 0:12 in); lead changes 0; final 82-119
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
