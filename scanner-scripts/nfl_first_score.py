@@ -35,10 +35,16 @@ never hand-counted (the Muse rule).
 Outputs (all in data/, synced to pc-data/ for testing):
   - nfl-first-score-state.json (state.py shape; entries per game)
   - nfl-first-score-tally.json {"through", "games", "tally",
-    "lead_changes", "lead_change_team_avgs"}
+    "league", "lead_changes", "lead_change_team_avgs"}
   - nfl-first-score-games.csv / nfl-first-score-sequences.csv
   - nfl-first-score-<date>.md banked lines when new games tally
 The Muse-side Tuesday scan stays ON untouched during testing.
+
+Trends (added 2026-11-12 at Michael's ask): per team and
+league-wide, win % when scoring first vs when not, plus
+won-by-exactly-one when scoring first — the both-win rate for a
+moneyline + opponent +1.5 in-play middle when your team scores
+first. Winner and margin derive from the final score each run.
 """
 import csv
 import json
@@ -176,30 +182,105 @@ def process_game(ev):
             "final": f"{ev['away_score']}-{ev['home_score']}"}
 
 
+def margin_for(game, team):
+    """Final-score margin for team (+N = team won by N), or None."""
+    try:
+        a, h = (int(x) for x in str(game.get("final", "")).split("-"))
+    except (ValueError, TypeError):
+        return None
+    if team == game.get("away"):
+        return a - h
+    if team == game.get("home"):
+        return h - a
+    return None
+
+
+def winner_of(game):
+    """Winner team name from the final score, or None on a tie."""
+    try:
+        a, h = (int(x) for x in str(game.get("final", "")).split("-"))
+    except (ValueError, TypeError):
+        return None
+    if a > h:
+        return game.get("away")
+    if h > a:
+        return game.get("home")
+    return None
+
+
 def recompute(entries):
     games = sorted(entries.values(),
                    key=lambda g: (g["date"], g["away"]))
     tally = {}
     lc_avg = {}
     for g in games:
+        winner = winner_of(g)
         for team in (g["away"], g["home"]):
-            tally.setdefault(team, {"gp": 0, "scored_first": 0})
-            tally[team]["gp"] += 1
-            lc_avg.setdefault(team, {"games": 0, "lead_changes": 0})
-            lc_avg[team]["games"] += 1
-            lc_avg[team]["lead_changes"] += g["lead_changes"]
+            t = tally.setdefault(team, {
+                "gp": 0, "scored_first": 0,
+                "won_when_first": 0, "won_when_not_first": 0,
+                "won_by_one_when_first": 0})
+            t["gp"] += 1
+            la = lc_avg.setdefault(team, {"games": 0, "lead_changes": 0})
+            la["games"] += 1
+            la["lead_changes"] += g["lead_changes"]
+            if g["first"] == team:
+                if winner == team:
+                    t["won_when_first"] += 1
+                    # ML + opponent +1.5 middle: both legs win iff the
+                    # first-score team wins by exactly one point.
+                    if margin_for(g, team) == 1:
+                        t["won_by_one_when_first"] += 1
+            elif winner == team:
+                t["won_when_not_first"] += 1
         if g["first"] in tally:
             tally[g["first"]]["scored_first"] += 1
+    for t in tally.values():
+        gp_first = t["scored_first"]
+        gp_not = t["gp"] - gp_first
+        t["scored_first_pct"] = round(100 * gp_first / t["gp"], 1) \
+            if t["gp"] else 0.0
+        t["win_pct_when_first"] = round(100 * t["won_when_first"] / gp_first, 1) \
+            if gp_first else None
+        t["win_pct_when_not_first"] = \
+            round(100 * t["won_when_not_first"] / gp_not, 1) if gp_not else None
+        t["won_by_one_when_first_pct"] = \
+            round(100 * t["won_by_one_when_first"] / gp_first, 1) \
+            if gp_first else None
     for v in lc_avg.values():
         v["avg_per_game"] = round(v["lead_changes"] / v["games"], 2) \
             if v["games"] else 0.0
-    return games, tally, lc_avg
+    n = len(games)
+    scored = [g for g in games if g.get("first")]
+    first_by_one = sum(1 for g in scored
+                       if winner_of(g) == g["first"]
+                       and margin_for(g, g["first"]) == 1)
+    league = {
+        "games": n,
+        "games_with_goal": len(scored),
+        "home_scored_first": sum(1 for g in scored
+                                 if g["first"] == g["home"]),
+        "first_team_won": sum(1 for g in scored
+                              if winner_of(g) == g["first"]),
+        "first_team_won_by_one": first_by_one,
+        "first_team_won_by_one_pct": round(100 * first_by_one / len(scored), 1)
+        if scored else None,
+        "avg_lead_changes": round(
+            sum(g["lead_changes"] for g in games) / n, 2) if n else 0.0,
+    }
+    if n:
+        league["home_scored_first_pct"] = round(
+            100 * league["home_scored_first"] / n, 1)
+        league["first_team_win_pct"] = round(
+            100 * league["first_team_won"] / n, 1)
+    return games, tally, lc_avg, league
 
 
 def write_outputs(state):
-    games, tally, lc_avg = recompute(state["entries"])
+    games, tally, lc_avg, league = recompute(state["entries"])
     through = games[-1]["date"] if games else ""
     standing = {"through": through, "games": games, "tally": tally,
+                "league": league,
                 "lead_changes": games, "lead_change_team_avgs": lc_avg}
     (Path(DATA_DIR) / "nfl-first-score-tally.json").write_text(
         json.dumps(standing, indent=1))
