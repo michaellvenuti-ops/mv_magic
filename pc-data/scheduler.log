@@ -5978,3 +5978,9 @@
 [2026-11-11 21:38:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-11; skipping.
 [2026-11-11 21:38:37 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-11 21:40:09 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 227 events (85 with odds), db total 236511 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 21:50:55 ET] sync_to_github.py: FAILED (exit 1) in 646s —   FAILED: team-total-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 254781afb9aac911db03a2d32c7b2e91ab933ab5 but expected cac3f5a8d177dbadf672568
+[2026-11-11 21:51:29 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 227 events (83 with odds), db total 236738 snapshots / 844 events, feeds ok 6 fail 0
+[2026-11-11 21:54:22 ET] dh_game_middles.py: OK in 173s — GAME MIDDLE: NFL BUF Bills NY Jets Nov-15 1:00 PM / table / Alt Spread NY Jets +12.5 / Alt Spread BUF Bills -11.5 / table | HardRock | Fanatics-NJ — window 305.
+[2026-11-11 21:57:40 ET] dh_key_number_middles.py: OK in 198s — key-number-middles: 140 basketball rows excluded (football-only rule).
+[2026-11-11 21:59:03 ET] dh_prop_middles.py: OK in 83s — PROP MIDDLE CLEAN : NCAAB Mercer West Virginia Nov-12 7:00 PM / table / Total Over 149.5 / Alt Total Under 150 / table | Bally Bet | Bet365 — window 215.0 :: {'
+[2026-11-11 21:59:05 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 687 total tallied.
