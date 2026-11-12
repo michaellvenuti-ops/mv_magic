@@ -439,3 +439,30 @@
 - 2026-11-11: Southern Indiana Screaming Eagles @ IU Indianapolis Jaguars — first: IU Indianapolis Jaguars (2PT, 0:44 in); lead changes 14; final 70-74
 - 2026-11-11: Great Lakes Christian Crusaders @ Eastern Michigan Eagles — first: Eastern Michigan Eagles (2PT, 0:15 in); lead changes 0; final 44-108
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-11T21:38:35-05:00 -- NCAAB FIRST SCORE (PC): 25 new final(s) tallied; season 446 games through 2026-11-11
+- 2026-11-11: Colgate Raiders @ St. John's Red Storm — first: St. John's Red Storm (2PT, 0:13 in); lead changes 0; final 59-90
+- 2026-11-11: Marquette Golden Eagles @ Michigan Wolverines — first: Marquette Golden Eagles (2PT, 0:31 in); lead changes 3; final 70-84
+- 2026-11-11: Milwaukee Panthers @ Indiana State Sycamores — first: Indiana State Sycamores (3PT, 0:15 in); lead changes 1; final 82-73
+- 2026-11-11: Kent State Golden Flashes @ UNC Wilmington Seahawks — first: Kent State Golden Flashes (3PT, 1:49 in); lead changes 1; final 73-91
+- 2026-11-11: Lees McRae Bobcats @ UNC Greensboro Spartans — first: UNC Greensboro Spartans (2PT, 1:00 in); lead changes 18; final 84-91
+- 2026-11-11: Old Dominion Monarchs @ Norfolk State Spartans — first: Old Dominion Monarchs (2PT, 0:49 in); lead changes 2; final 71-60
+- 2026-11-11: South Carolina State Bulldogs @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (2PT, 0:53 in); lead changes 0; final 59-99
+- 2026-11-11: Oklahoma Panhandle PANHANDLE ST @ Alabama State Hornets — first: Alabama State Hornets (3PT, 0:56 in); lead changes 0; final 60-66
+- 2026-11-11: Centenary (LA) Ladies @ Lamar Cardinals — first: Centenary (LA) Ladies (3PT, 0:25 in); lead changes 1; final 57-122
+- 2026-11-11: William Paterson Pioneers @ Rider Broncs — first: Rider Broncs (3PT, 1:42 in); lead changes 0; final 53-83
+- 2026-11-11: Stony Brook Seawolves @ Princeton Tigers — first: Stony Brook Seawolves (2PT, 0:38 in); lead changes 1; final 59-69
+- 2026-11-11: Saint Peter's Peacocks @ South Carolina Gamecocks — first: Saint Peter's Peacocks (2PT, 0:28 in); lead changes 1; final 41-77
+- 2026-11-11: Furman Paladins @ Holy Cross Crusaders — first: Furman Paladins (2PT, 0:50 in); lead changes 0; final 80-67
+- 2026-11-11: Franklin Grizzlies @ Bellarmine Knights — first: Bellarmine Knights (2PT, 0:29 in); lead changes 0; final 82-99
+- 2026-11-11: James Madison Dukes @ Delaware Blue Hens — first: Delaware Blue Hens (2PT, 0:30 in); lead changes 3; final 71-61
+- 2026-11-11: Campbell Fighting Camels @ East Tennessee State Buccaneers — first: Campbell Fighting Camels (2PT, 1:46 in); lead changes 5; final 53-68
+- 2026-11-11: NJIT Highlanders @ VCU Rams — first: VCU Rams (2PT, 0:20 in); lead changes 2; final 49-87
+- 2026-11-11: William & Mary Tribe @ Florida Atlantic Owls — first: Florida Atlantic Owls (3PT, 0:16 in); lead changes 12; final 90-95
+- 2026-11-11: UNC Asheville Bulldogs @ West Georgia Wolves — first: UNC Asheville Bulldogs (FT, 0:26 in); lead changes 2; final 73-70
+- 2026-11-11: American University Eagles @ Drexel Dragons — first: American University Eagles (FT, 1:11 in); lead changes 8; final 66-64
+- 2026-11-11: Cornell Big Red @ St. Bonaventure Bonnies — first: St. Bonaventure Bonnies (2PT, 1:02 in); lead changes 4; final 64-88
+- 2026-11-11: UMass Lowell River Hawks @ Massachusetts Minutemen — first: Massachusetts Minutemen (3PT, 0:14 in); lead changes 2; final 62-72
+- 2026-11-11: Campbellsville Tigers @ Western Kentucky Hilltoppers — first: Western Kentucky Hilltoppers (2PT, 2:21 in); lead changes 2; final 51-78
+- 2026-11-11: Friends Falcons @ Wichita State Shockers — first: Friends Falcons (FT, 0:41 in); lead changes 7; final 60-113
+- 2026-11-11: Binghamton Bearcats @ Misericordia Cougars — first: Misericordia Cougars (2PT, 0:06 in); lead changes 3; final 87-62
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
