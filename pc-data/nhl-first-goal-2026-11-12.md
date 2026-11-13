@@ -16,3 +16,5 @@
 ## 2026-11-12T22:45:25-05:00 -- NHL FIRST GOAL (PC): 2 new final(s) tallied; season 298 games through 2026-11-12
 - 2026-11-12: Detroit Red Wings @ Florida Panthers — first goal: Florida Panthers (EV, Sam Reinhart, 16:08 in); lead changes 2; final 4-5
 - 2026-11-12: Winnipeg Jets @ Dallas Stars — first goal: Dallas Stars (EV, Arttu Hyry, 15:41 in); lead changes 1; final 8-3
+## 2026-11-12T23:30:15-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 299 games through 2026-11-12
+- 2026-11-12: Buffalo Sabres @ Chicago Blackhawks — first goal: Buffalo Sabres (EV, Owen Power, 11:00 in); lead changes 1; final 2-3
