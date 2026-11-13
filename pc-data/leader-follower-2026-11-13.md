@@ -12,3 +12,8 @@
 ## 2026-11-13T09:10:40-05:00 — no-follow: DraftKings Houston @ Colorado | 2026-11-13 spread (only 1 followed)
 ## 2026-11-13T09:10:40-05:00 — no-follow: Kalshi Georgia Tech @ Clemson | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T09:10:41-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T10:25:05-05:00 — no-follow: Fanatics Houston @ Colorado | 2026-11-13 spread (only 2 followed)
+## 2026-11-13T10:25:05-05:00 — pack move, never credited: Kansas State @ TCU | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-13T10:25:05-05:00 — pack move, never credited: Nevada @ Northern Illinois | 2026-11-13 spread (BetMGM, Caesars, DraftKings)
+## 2026-11-13T10:25:05-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-13 spread (BetMGM, Caesars, DraftKings, Fanatics, Kalshi, bet365)
+## 2026-11-13T10:25:05-05:00 — 81 games, 0 leads credited, 5 started games skipped
