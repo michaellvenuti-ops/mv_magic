@@ -6725,3 +6725,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 18:58:53 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 18:58:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-12 19:00:29 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 188 events (109 with odds), db total 251647 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 19:13:00 ET] sync_to_github.py: OK in 751s —   ok: wide-builds-board-pc.html
+[2026-11-12 19:13:00 ET] notify.py: OK in 1s — notify: nothing new banked, no ping sent.
+[2026-11-12 19:13:35 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 188 events (91 with odds), db total 251835 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 19:15:28 ET] dh_game_middles.py: OK in 113s — GAME MIDDLE: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +6 / Alt Spread West Virginia -5.5 / table | Fanatics-NJ | Bally Bet — window
+[2026-11-12 19:19:04 ET] dh_key_number_middles.py: OK in 216s — key-number-middles: 160 basketball rows excluded (football-only rule).
+[2026-11-12 19:20:15 ET] hung_number.py: OK in 70s — HUNG NUMBER: Colorado State vs Washington State — Fanatics spread value dog (9.5 vs median 8.5)
+[2026-11-12 19:20:20 ET] rlm.py: OK in 5s
+[2026-11-12 19:20:24 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 19:22:02 ET] dh_prop_middles.py: OK in 99s — PROP MIDDLE CLEAN : NFL JAX Jaguars TEN Titans Nov-15 1:00 PM / table / Rush Yards C. Ward Under 10.5 / Alt Rush Yards C. Ward 10+ / table | Fanatics-NJ | Bally
+[2026-11-12 19:22:06 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 19:23:37 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (91 with odds), db total 252023 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 19:23:40 ET] wide_builds.py: OK in 3s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
