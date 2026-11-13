@@ -39,3 +39,4 @@ KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.
 ## 2026-11-13T10:55:17-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1992 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-13T11:49:26-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1938 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-13T12:41:55-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1850 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-13T13:34:12-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1893 + 0 rows parsed, qualifying only below — 0 NEW middles
