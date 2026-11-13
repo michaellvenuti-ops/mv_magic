@@ -64,3 +64,7 @@ NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM — Spread — Vanderbilt -41
 (end of new builds — full list below)
 NCAAB Florida International Florida Gulf Coast Today 7:00 PM — Total — Over 147.5 Bet365 -210 ($132) / Under 150.5 DraftKings +185 ($68) — both win 148, 149, 150 — land +$188.66, miss -6.20 / -5.14 on ~$200 balanced
 NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM — Spread — Vanderbilt -41.5 HardRock +125 ($81) / Prairie View A&M +45.5 DraftKings -193 ($119) — both win 42, 43, 44, 45 — land +$162.91, miss -19.34 / -17.75 on ~$200 balanced
+## 2026-11-13T14:50:09-05:00 — wide-builds: 0 NEW wide builds
+(end of new builds — full list below)
+NCAAB Florida International Florida Gulf Coast Today 7:00 PM — Total — Over 147.5 Bet365 -210 ($132) / Under 150.5 DraftKings +185 ($68) — both win 148, 149, 150 — land +$188.66, miss -6.20 / -5.14 on ~$200 balanced
+NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM — Spread — Vanderbilt -41.5 HardRock +125 ($81) / Prairie View A&M +45.5 DraftKings -193 ($119) — both win 42, 43, 44, 45 — land +$162.91, miss -19.34 / -17.75 on ~$200 balanced
