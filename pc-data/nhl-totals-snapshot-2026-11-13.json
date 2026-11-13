@@ -1,0 +1,44 @@
+{
+ "date": "2026-11-13",
+ "source": "NHL club-stats API + ESPN DraftKings totals",
+ "games": [
+  {
+   "away": "NYR",
+   "home": "VAN",
+   "total": 6.5,
+   "over_juice": -105,
+   "under_juice": -115,
+   "start": "2026-11-14T02:00Z",
+   "predicted": 5.66,
+   "flag": null,
+   "away_pred": 3.61,
+   "home_pred": 2.05
+  },
+  {
+   "away": "NSH",
+   "home": "VGK",
+   "total": 6.5,
+   "over_juice": 114,
+   "under_juice": -135,
+   "start": "2026-11-14T03:00Z",
+   "predicted": 5.21,
+   "flag": "under",
+   "away_pred": 2.62,
+   "home_pred": 2.59
+  }
+ ],
+ "flags": [
+  {
+   "away": "NSH",
+   "home": "VGK",
+   "total": 6.5,
+   "over_juice": 114,
+   "under_juice": -135,
+   "start": "2026-11-14T03:00Z",
+   "predicted": 5.21,
+   "flag": "under",
+   "away_pred": 2.62,
+   "home_pred": 2.59
+  }
+ ]
+}
