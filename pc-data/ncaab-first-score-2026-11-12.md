@@ -38,3 +38,7 @@
 - 2026-11-12: Southern Jaguars @ Minnesota Golden Gophers — first: Southern Jaguars (2PT, 0:23 in); lead changes 3; final 61-91
 - 2026-11-12: Richmond Spiders @ Southern Illinois Salukis — first: Southern Illinois Salukis (FT, 0:12 in); lead changes 0; final 70-80
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T22:45:27-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 493 games through 2026-11-12
+- 2026-11-12: West Florida Argonauts @ Alabama A&M Bulldogs — first: West Florida Argonauts (FT, 0:42 in); lead changes 9; final 83-85
+- 2026-11-12: Oklahoma State Cowboys @ Texas A&M Aggies — first: Texas A&M Aggies (3PT, 0:42 in); lead changes 4; final 69-88
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
