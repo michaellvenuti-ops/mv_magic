@@ -7032,3 +7032,18 @@
 [2026-11-13 05:43:17 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 188 events (73 with odds), db total 258979 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-13 05:43:18 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
 [2026-11-13 05:45:30 ET] dh_game_middles.py: OK in 132s — GAME MIDDLE: NFL BUF Bills NY Jets Nov-15 1:00 PM / table / Alt Spread NY Jets +9 / Alt Spread BUF Bills -8.5 / table | Fanatics-NJ | FanDuel — window 230.0 :: 
+[2026-11-13 05:58:56 ET] sync_to_github.py: FAILED (exit 1) in 806s —   FAILED: pc-data/repurge_keys.json (HTTP 409: {'error': '{"message":"is at 57f73229c47969028bd91a313ad4f8781fcad50d but expected cc32fd80b223ca57f316340d9d7a35
+[2026-11-13 06:00:31 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 188 events (73 with odds), db total 259167 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 06:04:26 ET] dh_key_number_middles.py: OK in 235s — key-number-middles: 191 basketball rows excluded (football-only rule).
+[2026-11-13 06:08:22 ET] dh_basketball_key_middles.py: OK in 236s — basketball-key-middles: no new basketball middles.
+[2026-11-13 06:08:29 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 06:10:18 ET] dh_prop_middles.py: OK in 110s — prop-middles: no new/changed qualifying middles.
+[2026-11-13 06:11:50 ET] dh_sog_middles.py: OK in 91s — - 0 deliverables this run
+[2026-11-13 06:11:52 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 06:11:54 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 06:11:55 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 06:11:56 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 06:11:57 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 06:11:59 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 06:11:59 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 06:12:01 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
