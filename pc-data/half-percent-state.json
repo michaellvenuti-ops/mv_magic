@@ -99,7 +99,19 @@
    }
   },
   "2026-11-12": {
-   "grade": null,
+   "grade": {
+    "confirm_bar": "09:30 ET",
+    "confirm_close": 14.149999618530273,
+    "entry": 14.369999885559082,
+    "note": "open confirmation failed - a first-minutes bar closed below the rebased stop (v3 layer 2)",
+    "open": 14.369999885559082,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 13.55,
+    "reason": "open_confirmation",
+    "stop": 14.3,
+    "target": 14.44
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-12, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -112,6 +124,21 @@
     "ticker": "LUNR",
     "vol": 2588290
    }
+  },
+  "2026-11-13": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-12, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Nu Holdings Ltd. Class A Ordinary Shares",
+    "entry": 12.37,
+    "mcap": 59586547712,
+    "pct": 4.52,
+    "stop": 12.31,
+    "target": 12.43,
+    "ticker": "NU",
+    "vol": 7964957
+   }
   }
  },
  "meta": {
@@ -119,7 +146,7 @@
    "losses": 0,
    "modeled_pl": 100.0,
    "no_data": 0,
-   "no_trades": 2,
+   "no_trades": 3,
    "time_exits": 0,
    "wins": 2
   }
