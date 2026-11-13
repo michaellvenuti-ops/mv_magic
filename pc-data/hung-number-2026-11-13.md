@@ -1,5 +1,7 @@
-# Hung numbers — 2026-11-13 (scan 2026-11-13 04:02)
+# Hung numbers — 2026-11-13 (scan 2026-11-13 05:24)
 
+- Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - New Mexico State vs Missouri State | Fanatics | spread | value: dog | book 49.0 vs median 1.5 | div 47.5 middle pairing spans key number 7
 - New Mexico State vs Missouri State | Fanatics | moneyline New Mexico State | value: New Mexico State | book 99.0 vs median 50.5 | div 48.5 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
