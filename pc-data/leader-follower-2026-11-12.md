@@ -52,3 +52,7 @@
 ## 2026-11-12T21:36:51-05:00 — pack move, never credited: Washington @ Michigan State | 2026-11-12 total (BetMGM, Caesars, DraftKings)
 ## 2026-11-12T21:36:51-05:00 — pack move, never credited: South Carolina @ Arkansas | 2026-11-12 spread (FanDuel, Fanatics)
 ## 2026-11-12T21:36:51-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-12T22:43:32-05:00 — pack move, never credited: Louisiana @ Louisiana-Monroe | 2026-11-12 spread (Caesars, FanDuel)
+## 2026-11-12T22:43:32-05:00 — pack move, never credited: Louisiana @ Louisiana-Monroe | 2026-11-12 spread (BetMGM, DraftKings)
+## 2026-11-12T22:43:32-05:00 — pack move, never credited: Louisiana @ Louisiana-Monroe | 2026-11-12 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-12T22:43:32-05:00 — 81 games, 0 leads credited, 5 started games skipped
