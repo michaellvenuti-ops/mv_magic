@@ -7412,3 +7412,10 @@
 [2026-11-13 17:57:47 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 17:57:48 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 17:57:50 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-13 18:12:30 ET] sync_to_github.py: FAILED (exit 1) in 881s —   FAILED: pc-data/spread-cover-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 3387e592ed9d9fa87fe1c71ce9f2377e85843913 but expected 1991a6aed592ba822ae6f
+[2026-11-13 18:14:07 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 216 events (195 with odds), db total 266091 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 18:16:40 ET] dh_game_middles.py: OK in 153s — GAME MIDDLE: NCAAB Long Island University Fordham Today 7:00 PM / table / Total Under 146 / Alt Total Over 145.5 / table | Caesars | BetRivers — window 212.0 ::
+[2026-11-13 18:20:26 ET] dh_key_number_middles.py: OK in 226s — key-number-middles: 617 basketball rows excluded (football-only rule).
+[2026-11-13 18:21:34 ET] hung_number.py: OK in 68s — HUNG NUMBER: UNLV vs New Mexico — Fanatics spread value favorite (14.5 vs median 15.5)
+[2026-11-13 18:21:39 ET] rlm.py: OK in 5s
+[2026-11-13 18:21:42 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
