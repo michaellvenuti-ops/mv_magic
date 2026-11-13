@@ -1,5 +1,5 @@
 {
- "through": "2026-11-11",
+ "through": "2026-11-12",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -9660,6 +9660,20 @@
    "seq": "0-7>7-7>7-14>7-21>7-28",
    "ties": 1,
    "winner": "Central Michigan Chippewas"
+  },
+  {
+   "date": "2026-11-12",
+   "away": "Memphis Tigers",
+   "home": "South Florida Bulls",
+   "first": "Memphis Tigers",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 337,
+   "winner": "Memphis Tigers",
+   "seq": "7-0>14-0>21-0>21-3>21-10>28-10>28-17>28-24>35-24>35-31>38-31>38-38>38-41>45-41>52-41",
+   "lead_changes": 2,
+   "ties": 1,
+   "final": "52-41"
   }
  ],
  "tally": {
@@ -9728,18 +9742,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Memphis Tigers": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
     "FG": 2,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 80.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -10992,7 +11006,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "South Florida Bulls": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 6,
    "kinds": {
     "FG": 2,
@@ -11002,9 +11016,9 @@
    "won_when_first": 3,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 66.7,
+   "scored_first_pct": 60.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 100.0,
+   "win_pct_when_not_first": 75.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Fordham Rams": {
@@ -13441,19 +13455,19 @@
   }
  },
  "league": {
-  "games": 690,
+  "games": 691,
   "home_scored_first": 413,
-  "first_team_won": 489,
+  "first_team_won": 490,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 194,
-   "TD": 494,
+   "TD": 495,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
-  "median_first_score_sec": 335,
-  "home_scored_first_pct": 59.9,
+  "median_first_score_sec": 336,
+  "home_scored_first_pct": 59.8,
   "first_team_win_pct": 70.9
  },
  "lead_change_team_avgs": {
@@ -13478,9 +13492,9 @@
    "avg_per_game": 0.22
   },
   "Memphis Tigers": {
-   "games": 9,
-   "lead_changes": 13,
-   "avg_per_game": 1.44
+   "games": 10,
+   "lead_changes": 15,
+   "avg_per_game": 1.5
   },
   "UNLV Rebels": {
    "games": 9,
@@ -13873,9 +13887,9 @@
    "avg_per_game": 0.33
   },
   "South Florida Bulls": {
-   "games": 9,
-   "lead_changes": 12,
-   "avg_per_game": 1.33
+   "games": 10,
+   "lead_changes": 14,
+   "avg_per_game": 1.4
   },
   "Fordham Rams": {
    "games": 2,
