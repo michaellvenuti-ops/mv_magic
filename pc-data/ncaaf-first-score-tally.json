@@ -9663,17 +9663,31 @@
   },
   {
    "date": "2026-11-12",
-   "away": "Memphis Tigers",
-   "home": "South Florida Bulls",
-   "first": "Memphis Tigers",
-   "first_side": "away",
+   "away": "Louisiana Ragin' Cajuns",
+   "home": "UL Monroe Warhawks",
+   "first": "UL Monroe Warhawks",
+   "first_side": "home",
    "first_kind": "TD",
+   "first_elapsed_sec": 503,
+   "winner": "Louisiana Ragin' Cajuns",
+   "seq": "0-7>7-7>7-14>14-14>21-14>28-14>35-14>35-21>42-21",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "42-21"
+  },
+  {
+   "away": "Memphis Tigers",
+   "date": "2026-11-12",
+   "final": "52-41",
+   "first": "Memphis Tigers",
    "first_elapsed_sec": 337,
-   "winner": "Memphis Tigers",
-   "seq": "7-0>14-0>21-0>21-3>21-10>28-10>28-17>28-24>35-24>35-31>38-31>38-38>38-41>45-41>52-41",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "South Florida Bulls",
    "lead_changes": 2,
+   "seq": "7-0>14-0>21-0>21-3>21-10>28-10>28-17>28-24>35-24>35-31>38-31>38-38>38-41>45-41>52-41",
    "ties": 1,
-   "final": "52-41"
+   "winner": "Memphis Tigers"
   }
  ],
  "tally": {
@@ -11246,7 +11260,7 @@
    "won_by_one_when_first_pct": null
   },
   "Louisiana Ragin' Cajuns": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 8,
    "kinds": {
     "FG": 2,
@@ -11254,11 +11268,11 @@
     "Safety": 0
    },
    "won_when_first": 6,
-   "won_when_not_first": 0,
+   "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 88.9,
+   "scored_first_pct": 80.0,
    "win_pct_when_first": 75.0,
-   "win_pct_when_not_first": 0.0,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Liberty Flames": {
@@ -12286,18 +12300,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "UL Monroe Warhawks": {
-   "gp": 9,
-   "scored_first": 2,
+   "gp": 10,
+   "scored_first": 3,
    "kinds": {
     "FG": 0,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 22.2,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 30.0,
+   "win_pct_when_first": 33.3,
    "win_pct_when_not_first": 14.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13455,20 +13469,20 @@
   }
  },
  "league": {
-  "games": 691,
-  "home_scored_first": 413,
+  "games": 692,
+  "home_scored_first": 414,
   "first_team_won": 490,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 194,
-   "TD": 495,
+   "TD": 496,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
   "median_first_score_sec": 336,
   "home_scored_first_pct": 59.8,
-  "first_team_win_pct": 70.9
+  "first_team_win_pct": 70.8
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -13962,9 +13976,9 @@
    "avg_per_game": 0.0
   },
   "Louisiana Ragin' Cajuns": {
-   "games": 9,
-   "lead_changes": 12,
-   "avg_per_game": 1.33
+   "games": 10,
+   "lead_changes": 13,
+   "avg_per_game": 1.3
   },
   "Liberty Flames": {
    "games": 9,
@@ -14287,9 +14301,9 @@
    "avg_per_game": 1.56
   },
   "UL Monroe Warhawks": {
-   "games": 9,
-   "lead_changes": 6,
-   "avg_per_game": 0.67
+   "games": 10,
+   "lead_changes": 7,
+   "avg_per_game": 0.7
   },
   "Mississippi State Bulldogs": {
    "games": 9,
