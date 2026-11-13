@@ -4739,19 +4739,35 @@
   },
   {
    "date": "2026-11-12",
+   "away": "New York Islanders",
+   "home": "Los Angeles Kings",
+   "first": "New York Islanders",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Brayden Schenn",
+   "first_elapsed_sec": 850,
+   "winner": "New York Islanders",
+   "shootout": false,
+   "seq": "1-0>1-1>2-1>3-1>3-2>4-2>5-2",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "5-2"
+  },
+  {
    "away": "St. Louis Blues",
-   "home": "Utah Mammoth",
+   "date": "2026-11-12",
+   "final": "1-0",
    "first": null,
+   "first_elapsed_sec": null,
+   "first_scorer": null,
    "first_side": null,
    "first_strength": null,
-   "first_scorer": null,
-   "first_elapsed_sec": null,
-   "winner": "St. Louis Blues",
-   "shootout": true,
-   "seq": "",
+   "home": "Utah Mammoth",
    "lead_changes": 0,
+   "seq": "",
+   "shootout": true,
    "ties": 0,
-   "final": "1-0"
+   "winner": "St. Louis Blues"
   },
   {
    "away": "Tampa Bay Lightning",
@@ -5204,7 +5220,7 @@
    "won_by_one_when_first_pct": 15.4
   },
   "Los Angeles Kings": {
-   "gp": 15,
+   "gp": 16,
    "scored_first": 8,
    "strengths": {
     "EV": 7,
@@ -5214,9 +5230,9 @@
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 53.3,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 37.5,
-   "win_pct_when_not_first": 28.6,
+   "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 12.5
   },
   "Montreal Canadiens": {
@@ -5252,20 +5268,20 @@
    "won_by_one_when_first_pct": 22.2
   },
   "New York Islanders": {
-   "gp": 16,
-   "scored_first": 9,
+   "gp": 17,
+   "scored_first": 10,
    "strengths": {
-    "EV": 8,
+    "EV": 9,
     "PP": 1,
     "SH": 0
    },
-   "won_when_first": 6,
+   "won_when_first": 7,
    "won_when_not_first": 1,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 56.2,
-   "win_pct_when_first": 66.7,
+   "scored_first_pct": 58.8,
+   "win_pct_when_first": 70.0,
    "win_pct_when_not_first": 14.3,
-   "won_by_one_when_first_pct": 33.3
+   "won_by_one_when_first_pct": 30.0
   },
   "Ottawa Senators": {
    "gp": 20,
@@ -5317,22 +5333,22 @@
   }
  },
  "league": {
-  "games": 300,
-  "games_with_goal": 298,
+  "games": 301,
+  "games_with_goal": 299,
   "shootouts": 22,
   "home_scored_first": 141,
-  "first_team_won": 198,
+  "first_team_won": 199,
   "first_team_won_by_one": 61,
-  "first_team_won_by_one_pct": 20.5,
+  "first_team_won_by_one_pct": 20.4,
   "strengths": {
-   "EV": 227,
+   "EV": 228,
    "PP": 66,
    "SH": 5
   },
   "avg_lead_changes": 0.48,
-  "median_first_goal_sec": 856,
-  "home_scored_first_pct": 47.3,
-  "first_team_win_pct": 66.4
+  "median_first_goal_sec": 855,
+  "home_scored_first_pct": 47.2,
+  "first_team_win_pct": 66.6
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5461,9 +5477,9 @@
    "avg_per_game": 0.47
   },
   "Los Angeles Kings": {
-   "games": 15,
+   "games": 16,
    "lead_changes": 7,
-   "avg_per_game": 0.47
+   "avg_per_game": 0.44
   },
   "Montreal Canadiens": {
    "games": 18,
@@ -5476,7 +5492,7 @@
    "avg_per_game": 0.61
   },
   "New York Islanders": {
-   "games": 16,
+   "games": 17,
    "lead_changes": 2,
    "avg_per_game": 0.12
   },
