@@ -83,3 +83,7 @@ KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.
 ## 2026-11-12T17:02:40-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1959 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-12T17:50:38-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1951 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-12T18:35:01-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1961 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-12T19:18:57-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1967 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.5 / Alt Spread West Virginia -4 / table | theScore | Bally Bet margins [4, 5] :: -145 $1,000 theScore, theScore, -145 / +133 $725 Bally Bet, Bally Bet, +133
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.5 / Alt Spread West Virginia -4 / table | theScore | BetRivers margins [4, 5] :: -145 $1,000 theScore, theScore, -145 / +132 $728 BetRivers, BetRivers, +132
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +4.5 / Alt Spread West Virginia -3.5 / table | theScore | Bally Bet margins [4] :: -135 $1,000 theScore, theScore, -135 / +120 $791 Bally Bet, Bally Bet, +120
