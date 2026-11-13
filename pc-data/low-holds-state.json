@@ -18810,6 +18810,25 @@
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
+  "NCAAB Harvard George Washington Today 7:00 PM / table / Alt Spread George Washington -6.5 / Alt Spread Harvard +6.5 / table | Caesars | Fanatics-NJ": {
+   "arb_risk": false,
+   "first_reported": "2026-11-13T13:01:32-05:00",
+   "hold_pct": 0.97,
+   "last_seen": "2026-11-13",
+   "leg1": {
+    "book": "Caesars",
+    "price": "-210",
+    "side": "-210 $1,000 Caesars",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Fanatics-NJ",
+    "price": "+220",
+    "side": "+220 $461 Fanatics-NJ",
+    "stake": 461.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
   "NCAAB Hofstra Arizona St. Today 9:00 PM / table / Spread Hofstra +19 / Alt Spread Arizona St. -19 / table | Caesars | Bet365": {
    "arb_risk": false,
    "first_reported": "2026-11-10T09:48:49-05:00",
@@ -20308,6 +20327,25 @@
     "price": "+225",
     "side": "+225 $448 Bally Bet",
     "stake": 448.0
+   },
+   "pct_label": "Conversion (tool shows no Hold % column)"
+  },
+  "NCAAB Merrimack 1 Florida Today 7:00 PM / table / Alt Spread Merrimack +44.5 / Alt Spread Florida -44.5 / table | Fanatics-NJ | Bally Bet": {
+   "arb_risk": false,
+   "first_reported": "2026-11-13T13:01:32-05:00",
+   "hold_pct": 0.96,
+   "last_seen": "2026-11-13",
+   "leg1": {
+    "book": "Fanatics-NJ",
+    "price": "-285",
+    "side": "-285 $1,000 Fanatics-NJ",
+    "stake": 1000.0
+   },
+   "leg2": {
+    "book": "Bally Bet",
+    "price": "+300",
+    "side": "+300 $338 Bally Bet",
+    "stake": 338.0
    },
    "pct_label": "Conversion (tool shows no Hold % column)"
   },
@@ -29644,7 +29682,7 @@
    "arb_risk": false,
    "first_reported": "2026-11-11T18:58:01-05:00",
    "hold_pct": 0.0,
-   "last_seen": "2026-11-12",
+   "last_seen": "2026-11-13",
    "leg1": {
     "book": "BetMGM",
     "price": "-285",
