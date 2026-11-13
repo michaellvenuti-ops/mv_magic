@@ -7243,3 +7243,9 @@
 [2026-11-13 12:17:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-13 12:17:49 ET] public_fade.py: OK in 3s
 [2026-11-13 12:19:24 ET] dh_positive_ev.py: FAILED (exit 2) in 95s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-13.txt. No prices inven
+[2026-11-13 12:34:59 ET] sync_to_github.py: FAILED (exit 1) in 934s —   FAILED: pc-data/transcripts/follow-the-money-2026-11-05-hour-1.txt (HTTP 500: {'error': ''})
+[2026-11-13 12:36:35 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 216 events (200 with odds), db total 262851 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 12:38:20 ET] dh_game_middles.py: OK in 104s — GAME MIDDLE: NCAAF 11 Wake Forest 25 SMU Nov-14 12:00 PM / table / Alt Spread SMU +2.5 / Alt Spread Wake Forest -2 / table | Fanatics-NJ | BetRivers — window 26
+[2026-11-13 12:42:04 ET] dh_key_number_middles.py: OK in 225s — key-number-middles: 414 basketball rows excluded (football-only rule).
+[2026-11-13 12:42:09 ET] podcast_transcribe.py: OK in 4s — SUMMARY: discover days=2 added=5 queued_total=21
+[2026-11-13 12:42:10 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
