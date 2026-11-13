@@ -1,0 +1,375 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>NHL Totals Board</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:680px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.flag{color:#f778ba;font-weight:700}
+.qual{color:#3fb950;font-weight:700}
+</style></head><body>
+<div class='note'>Snapshot of this board at end of day 2026-11-13 (archived daily; live version is the un-dated board page).</div>
+<h1>NHL Totals Board</h1>
+<div class='sub'>Daily NHL total leans from @linemakersports' shots-times-save% system. Updated every morning; graded the next morning.</div>
+<h2>How it works</h2>
+<p>Predicted total for a game = <b>[away shots-on-goal/game x (1 - home team save%)] + [home shots-on-goal/game x (1 - away team save%)]</b>, using each team's season-to-date stats. Frank's example: 29 shots x .900 save% = 26.1 expected saves, leaving ~3 expected goals for that team.</p>
+<p><b>Save% choice:</b> each team's TEAM save% (all goalies combined: total saves / total shots against), because the reel's whiteboard factor reads "Opposing Goalies Save %" (plural). Caveat: a backup starter with a very different save% changes the number — check the announced starter before placing.</p>
+<p class='flag'>Threshold is CHET'S DISPLAY CHOICE, NOT Frank's claim — the reel states no threshold. A game is flagged OVER only when the predicted total sits at least 1.0 goal ABOVE the book total, and UNDER only when it sits at least 1.0 goal BELOW it. Games inside the 1.0 band are shown but never flagged.</p>
+<p class='flag'>Early-season caveat: season-to-date stats are noisy in the first weeks of the season, when teams have played only a handful of games.</p>
+<h2>2026-11-05</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Boston Bruins @ Pittsburgh Penguins</td><td>7:00 PM</td><td>5.4</td><td>6.5</td><td>-1.1</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Vegas Golden Knights @ Detroit Red Wings</td><td>7:00 PM</td><td>28.41</td><td>0.883</td><td>3.32</td><td>29.06</td><td>0.894</td><td>3.08</td><td><b>6.4</b></td><td>5.5</td><td>0.9</td><td>—</td></tr>
+<tr><td>St. Louis Blues @ New Jersey Devils</td><td>7:00 PM</td><td>26.87</td><td>0.8856</td><td>3.07</td><td>32.67</td><td>0.9</td><td>3.27</td><td><b>6.3</b></td><td>5.5</td><td>0.8</td><td>—</td></tr>
+<tr><td>Carolina Hurricanes @ New York Islanders</td><td>7:00 PM</td><td>32.94</td><td>0.9063</td><td>3.09</td><td>25.5</td><td>0.8995</td><td>2.56</td><td><b>5.7</b></td><td>5.5</td><td>0.2</td><td>—</td></tr>
+<tr><td>Utah Mammoth @ Montreal Canadiens</td><td>7:00 PM</td><td>30.31</td><td>0.8977</td><td>3.1</td><td>27.13</td><td>0.8728</td><td>3.45</td><td><b>6.6</b></td><td>6.5</td><td>0.1</td><td>—</td></tr>
+<tr><td>Vancouver Canucks @ Winnipeg Jets</td><td>8:00 PM</td><td>21.59</td><td>0.8817</td><td>2.55</td><td>27.62</td><td>0.8606</td><td>3.85</td><td><b>6.4</b></td><td>6.5</td><td>-0.1</td><td>—</td></tr>
+<tr><td>Chicago Blackhawks @ Tampa Bay Lightning</td><td>7:00 PM</td><td>22.88</td><td>0.8801</td><td>2.74</td><td>29.86</td><td>0.881</td><td>3.55</td><td><b>6.3</b></td><td>6.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Dallas Stars @ Columbus Blue Jackets</td><td>7:00 PM</td><td>25.4</td><td>0.8917</td><td>2.75</td><td>25.46</td><td>0.9042</td><td>2.44</td><td><b>5.2</b></td><td>5.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Nashville Predators @ Colorado Avalanche</td><td>9:30 PM</td><td>25.87</td><td>0.8853</td><td>2.97</td><td>30.5</td><td>0.8963</td><td>3.16</td><td><b>6.1</b></td><td>6.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Philadelphia Flyers @ New York Rangers</td><td>7:00 PM</td><td>23.41</td><td>0.9021</td><td>2.29</td><td>25.25</td><td>0.8909</td><td>2.75</td><td><b>5.0</b></td><td>5.5</td><td>-0.5</td><td>—</td></tr>
+<tr><td>Anaheim Ducks @ Edmonton Oilers</td><td>8:00 PM</td><td>24.8</td><td>0.8993</td><td>2.5</td><td>25.56</td><td>0.8649</td><td>3.45</td><td><b>6.0</b></td><td>6.5</td><td>-0.5</td><td>—</td></tr>
+<tr><td>Boston Bruins @ Pittsburgh Penguins</td><td>7:00 PM</td><td>26.31</td><td>0.8816</td><td>3.12</td><td>28.0</td><td>0.9172</td><td>2.32</td><td><b>5.4</b></td><td>6.5</td><td>-1.1</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Anaheim Ducks</td><td>15</td><td>24.8</td><td>0.8649</td></tr>
+<tr><td>Boston Bruins</td><td>16</td><td>26.31</td><td>0.9172</td></tr>
+<tr><td>Carolina Hurricanes</td><td>17</td><td>32.94</td><td>0.8995</td></tr>
+<tr><td>Chicago Blackhawks</td><td>16</td><td>22.88</td><td>0.881</td></tr>
+<tr><td>Colorado Avalanche</td><td>16</td><td>30.5</td><td>0.8853</td></tr>
+<tr><td>Columbus Blue Jackets</td><td>13</td><td>25.46</td><td>0.8917</td></tr>
+<tr><td>Dallas Stars</td><td>15</td><td>25.4</td><td>0.9042</td></tr>
+<tr><td>Detroit Red Wings</td><td>16</td><td>29.06</td><td>0.883</td></tr>
+<tr><td>Edmonton Oilers</td><td>16</td><td>25.56</td><td>0.8993</td></tr>
+<tr><td>Montreal Canadiens</td><td>15</td><td>27.13</td><td>0.8977</td></tr>
+<tr><td>Nashville Predators</td><td>15</td><td>25.87</td><td>0.8963</td></tr>
+<tr><td>New Jersey Devils</td><td>15</td><td>32.67</td><td>0.8856</td></tr>
+<tr><td>New York Islanders</td><td>14</td><td>25.5</td><td>0.9063</td></tr>
+<tr><td>New York Rangers</td><td>16</td><td>25.25</td><td>0.9021</td></tr>
+<tr><td>Philadelphia Flyers</td><td>17</td><td>23.41</td><td>0.8909</td></tr>
+<tr><td>Pittsburgh Penguins</td><td>15</td><td>28.0</td><td>0.8816</td></tr>
+<tr><td>St. Louis Blues</td><td>15</td><td>26.87</td><td>0.9</td></tr>
+<tr><td>Tampa Bay Lightning</td><td>14</td><td>29.86</td><td>0.8801</td></tr>
+<tr><td>Utah Mammoth</td><td>16</td><td>30.31</td><td>0.8728</td></tr>
+<tr><td>Vancouver Canucks</td><td>17</td><td>21.59</td><td>0.8606</td></tr>
+<tr><td>Vegas Golden Knights</td><td>17</td><td>28.41</td><td>0.894</td></tr>
+<tr><td>Winnipeg Jets</td><td>16</td><td>27.62</td><td>0.8817</td></tr>
+</table></div>
+<h2>2026-11-04</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<p>No Under flags this day.</p>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Chicago Blackhawks @ Florida Panthers</td><td>7:30 PM</td><td>23.07</td><td>0.8874</td><td>2.6</td><td>28.67</td><td>0.8822</td><td>3.38</td><td><b>6.0</b></td><td>5.5</td><td>0.5</td><td>—</td></tr>
+<tr><td>Calgary Flames @ Seattle Kraken</td><td>10:00 PM</td><td>28.07</td><td>0.8834</td><td>3.27</td><td>25.21</td><td>0.8839</td><td>2.93</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Ottawa Senators @ Buffalo Sabres</td><td>7:30 PM</td><td>25.69</td><td>0.8757</td><td>3.19</td><td>28.07</td><td>0.8951</td><td>2.94</td><td><b>6.1</b></td><td>6.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>San Jose Sharks @ Los Angeles Kings</td><td>10:00 PM</td><td>27.12</td><td>0.8874</td><td>3.05</td><td>28.0</td><td>0.9004</td><td>2.79</td><td><b>5.8</b></td><td>6.5</td><td>-0.7</td><td>—</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Buffalo Sabres</td><td>14</td><td>28.07</td><td>0.8757</td></tr>
+<tr><td>Calgary Flames</td><td>15</td><td>28.07</td><td>0.8839</td></tr>
+<tr><td>Chicago Blackhawks</td><td>15</td><td>23.07</td><td>0.8822</td></tr>
+<tr><td>Florida Panthers</td><td>15</td><td>28.67</td><td>0.8874</td></tr>
+<tr><td>Los Angeles Kings</td><td>13</td><td>28.0</td><td>0.8874</td></tr>
+<tr><td>Ottawa Senators</td><td>16</td><td>25.69</td><td>0.8951</td></tr>
+<tr><td>San Jose Sharks</td><td>16</td><td>27.12</td><td>0.9004</td></tr>
+<tr><td>Seattle Kraken</td><td>14</td><td>25.21</td><td>0.8834</td></tr>
+</table></div>
+<h2>2026-11-03</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<p>No Under flags this day.</p>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Detroit Red Wings @ Tampa Bay Lightning</td><td>7:00 PM</td><td>29.6</td><td>0.8785</td><td>3.6</td><td>30.08</td><td>0.8828</td><td>3.53</td><td><b>7.1</b></td><td>6.5</td><td>0.6</td><td>—</td></tr>
+<tr><td>Utah Mammoth @ Toronto Maple Leafs</td><td>7:00 PM</td><td>29.93</td><td>0.8948</td><td>3.15</td><td>28.12</td><td>0.8681</td><td>3.71</td><td><b>6.9</b></td><td>6.5</td><td>0.4</td><td>—</td></tr>
+<tr><td>Winnipeg Jets @ Montreal Canadiens</td><td>7:00 PM</td><td>26.33</td><td>0.8982</td><td>2.68</td><td>27.5</td><td>0.8849</td><td>3.17</td><td><b>5.8</b></td><td>5.5</td><td>0.3</td><td>—</td></tr>
+<tr><td>Minnesota Wild @ Philadelphia Flyers</td><td>7:00 PM</td><td>30.75</td><td>0.8924</td><td>3.31</td><td>23.31</td><td>0.9109</td><td>2.08</td><td><b>5.4</b></td><td>5.5</td><td>-0.1</td><td>—</td></tr>
+<tr><td>Vegas Golden Knights @ Pittsburgh Penguins</td><td>7:00 PM</td><td>28.75</td><td>0.8824</td><td>3.38</td><td>28.21</td><td>0.8924</td><td>3.04</td><td><b>6.4</b></td><td>6.5</td><td>-0.1</td><td>—</td></tr>
+<tr><td>St. Louis Blues @ New York Rangers</td><td>7:00 PM</td><td>26.43</td><td>0.8964</td><td>2.74</td><td>24.87</td><td>0.8974</td><td>2.55</td><td><b>5.3</b></td><td>5.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Edmonton Oilers @ New Jersey Devils</td><td>7:30 PM</td><td>25.87</td><td>0.8873</td><td>2.92</td><td>32.57</td><td>0.8982</td><td>3.32</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Carolina Hurricanes @ Nashville Predators</td><td>8:00 PM</td><td>33.12</td><td>0.8911</td><td>3.61</td><td>26.29</td><td>0.9025</td><td>2.56</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Anaheim Ducks @ Vancouver Canucks</td><td>9:00 PM</td><td>25.0</td><td>0.8644</td><td>3.39</td><td>21.5</td><td>0.8672</td><td>2.86</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Dallas Stars @ Washington Capitals</td><td>7:00 PM</td><td>25.64</td><td>0.8947</td><td>2.7</td><td>27.77</td><td>0.9126</td><td>2.43</td><td><b>5.1</b></td><td>5.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Colorado Avalanche @ Columbus Blue Jackets</td><td>7:00 PM</td><td>30.6</td><td>0.8882</td><td>3.42</td><td>25.58</td><td>0.8956</td><td>2.67</td><td><b>6.1</b></td><td>6.5</td><td>-0.4</td><td>—</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Anaheim Ducks</td><td>14</td><td>25.0</td><td>0.8672</td></tr>
+<tr><td>Carolina Hurricanes</td><td>16</td><td>33.12</td><td>0.9025</td></tr>
+<tr><td>Colorado Avalanche</td><td>15</td><td>30.6</td><td>0.8956</td></tr>
+<tr><td>Columbus Blue Jackets</td><td>12</td><td>25.58</td><td>0.8882</td></tr>
+<tr><td>Dallas Stars</td><td>14</td><td>25.64</td><td>0.9126</td></tr>
+<tr><td>Detroit Red Wings</td><td>15</td><td>29.6</td><td>0.8828</td></tr>
+<tr><td>Edmonton Oilers</td><td>15</td><td>25.87</td><td>0.8982</td></tr>
+<tr><td>Minnesota Wild</td><td>16</td><td>30.75</td><td>0.9109</td></tr>
+<tr><td>Montreal Canadiens</td><td>14</td><td>27.5</td><td>0.8982</td></tr>
+<tr><td>Nashville Predators</td><td>14</td><td>26.29</td><td>0.8911</td></tr>
+<tr><td>New Jersey Devils</td><td>14</td><td>32.57</td><td>0.8873</td></tr>
+<tr><td>New York Rangers</td><td>15</td><td>24.87</td><td>0.8964</td></tr>
+<tr><td>Philadelphia Flyers</td><td>16</td><td>23.31</td><td>0.8924</td></tr>
+<tr><td>Pittsburgh Penguins</td><td>14</td><td>28.21</td><td>0.8824</td></tr>
+<tr><td>St. Louis Blues</td><td>14</td><td>26.43</td><td>0.8974</td></tr>
+<tr><td>Tampa Bay Lightning</td><td>13</td><td>30.08</td><td>0.8785</td></tr>
+<tr><td>Toronto Maple Leafs</td><td>16</td><td>28.12</td><td>0.8948</td></tr>
+<tr><td>Utah Mammoth</td><td>15</td><td>29.93</td><td>0.8681</td></tr>
+<tr><td>Vancouver Canucks</td><td>16</td><td>21.5</td><td>0.8644</td></tr>
+<tr><td>Vegas Golden Knights</td><td>16</td><td>28.75</td><td>0.8924</td></tr>
+<tr><td>Washington Capitals</td><td>13</td><td>27.77</td><td>0.8947</td></tr>
+<tr><td>Winnipeg Jets</td><td>15</td><td>26.33</td><td>0.8849</td></tr>
+</table></div>
+<h2>2026-11-02</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Over juice</th><th>Source</th></tr>
+<tr><td class='qual'>Detroit Red Wings @ Florida Panthers</td><td>7:00 PM</td><td>6.7</td><td>5.5</td><td>1.2</td><td>-125</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Vegas Golden Knights @ Boston Bruins</td><td>7:00 PM</td><td>5.3</td><td>6.5</td><td>-1.2</td><td>-125</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Detroit Red Wings @ Florida Panthers</td><td>7:00 PM</td><td>29.71</td><td>0.8899</td><td>3.27</td><td>28.86</td><td>0.8827</td><td>3.39</td><td><b>6.7</b></td><td>5.5</td><td>1.2</td><td>over</td></tr>
+<tr><td>Calgary Flames @ San Jose Sharks</td><td>9:00 PM</td><td>28.5</td><td>0.9</td><td>2.85</td><td>27.13</td><td>0.8786</td><td>3.29</td><td><b>6.1</b></td><td>6.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Colorado Avalanche @ Chicago Blackhawks</td><td>8:00 PM</td><td>30.64</td><td>0.8839</td><td>3.56</td><td>23.0</td><td>0.8946</td><td>2.42</td><td><b>6.0</b></td><td>6.5</td><td>-0.5</td><td>—</td></tr>
+<tr><td>Vegas Golden Knights @ Boston Bruins</td><td>7:00 PM</td><td>29.13</td><td>0.9173</td><td>2.41</td><td>26.27</td><td>0.8901</td><td>2.89</td><td><b>5.3</b></td><td>6.5</td><td>-1.2</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Boston Bruins</td><td>15</td><td>26.27</td><td>0.9173</td></tr>
+<tr><td>Calgary Flames</td><td>14</td><td>28.5</td><td>0.8786</td></tr>
+<tr><td>Chicago Blackhawks</td><td>14</td><td>23.0</td><td>0.8839</td></tr>
+<tr><td>Colorado Avalanche</td><td>14</td><td>30.64</td><td>0.8946</td></tr>
+<tr><td>Detroit Red Wings</td><td>14</td><td>29.71</td><td>0.8827</td></tr>
+<tr><td>Florida Panthers</td><td>14</td><td>28.86</td><td>0.8899</td></tr>
+<tr><td>San Jose Sharks</td><td>15</td><td>27.13</td><td>0.9</td></tr>
+<tr><td>Vegas Golden Knights</td><td>15</td><td>29.13</td><td>0.8901</td></tr>
+</table></div>
+<h2>2026-11-01</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Edmonton Oilers @ New York Rangers</td><td>6:00 PM</td><td>5.3</td><td>6.5</td><td>-1.2</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Winnipeg Jets @ Carolina Hurricanes</td><td>1:00 PM</td><td>26.36</td><td>0.8949</td><td>2.77</td><td>33.2</td><td>0.8929</td><td>3.56</td><td><b>6.3</b></td><td>6.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Utah Mammoth @ Philadelphia Flyers</td><td>4:00 PM</td><td>30.5</td><td>0.8938</td><td>3.24</td><td>23.47</td><td>0.875</td><td>2.93</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Ottawa Senators @ Anaheim Ducks</td><td>8:00 PM</td><td>25.87</td><td>0.867</td><td>3.44</td><td>24.38</td><td>0.9015</td><td>2.4</td><td><b>5.8</b></td><td>6.5</td><td>-0.7</td><td>—</td></tr>
+<tr><td>Minnesota Wild @ Washington Capitals</td><td>3:30 PM</td><td>30.93</td><td>0.8982</td><td>3.15</td><td>27.83</td><td>0.9072</td><td>2.58</td><td><b>5.7</b></td><td>6.5</td><td>-0.8</td><td>—</td></tr>
+<tr><td>Edmonton Oilers @ New York Rangers</td><td>6:00 PM</td><td>25.93</td><td>0.8981</td><td>2.64</td><td>24.64</td><td>0.8932</td><td>2.63</td><td><b>5.3</b></td><td>6.5</td><td>-1.2</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Anaheim Ducks</td><td>13</td><td>24.38</td><td>0.867</td></tr>
+<tr><td>Carolina Hurricanes</td><td>15</td><td>33.2</td><td>0.8949</td></tr>
+<tr><td>Edmonton Oilers</td><td>14</td><td>25.93</td><td>0.8932</td></tr>
+<tr><td>Minnesota Wild</td><td>15</td><td>30.93</td><td>0.9072</td></tr>
+<tr><td>New York Rangers</td><td>14</td><td>24.64</td><td>0.8981</td></tr>
+<tr><td>Ottawa Senators</td><td>15</td><td>25.87</td><td>0.9015</td></tr>
+<tr><td>Philadelphia Flyers</td><td>15</td><td>23.47</td><td>0.8938</td></tr>
+<tr><td>Utah Mammoth</td><td>14</td><td>30.5</td><td>0.875</td></tr>
+<tr><td>Washington Capitals</td><td>12</td><td>27.83</td><td>0.8982</td></tr>
+<tr><td>Winnipeg Jets</td><td>14</td><td>26.36</td><td>0.8929</td></tr>
+</table></div>
+<h2>2026-10-31</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Over juice</th><th>Source</th></tr>
+<tr><td class='qual'>Buffalo Sabres @ Los Angeles Kings</td><td>4:00 PM</td><td>6.8</td><td>5.5</td><td>1.3</td><td>-135</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Chicago Blackhawks @ Boston Bruins</td><td>1:00 PM</td><td>4.7</td><td>6.5</td><td>-1.8</td><td>-135</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Edmonton Oilers @ New York Islanders</td><td>2:00 PM</td><td>5.3</td><td>6.5</td><td>-1.2</td><td>-125</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Ottawa Senators @ San Jose Sharks</td><td>4:00 PM</td><td>5.3</td><td>6.5</td><td>-1.2</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Buffalo Sabres @ Los Angeles Kings</td><td>4:00 PM</td><td>27.85</td><td>0.8859</td><td>3.18</td><td>27.92</td><td>0.8711</td><td>3.6</td><td><b>6.8</b></td><td>5.5</td><td>1.3</td><td>over</td></tr>
+<tr><td>St. Louis Blues @ Detroit Red Wings</td><td>1:00 PM</td><td>27.31</td><td>0.8926</td><td>2.93</td><td>29.85</td><td>0.9008</td><td>2.96</td><td><b>5.9</b></td><td>5.5</td><td>0.4</td><td>—</td></tr>
+<tr><td>Calgary Flames @ Colorado Avalanche</td><td>10:00 PM</td><td>28.62</td><td>0.8923</td><td>3.08</td><td>30.46</td><td>0.8811</td><td>3.62</td><td><b>6.7</b></td><td>6.5</td><td>0.2</td><td>—</td></tr>
+<tr><td>Tampa Bay Lightning @ Nashville Predators</td><td>2:00 PM</td><td>30.42</td><td>0.8942</td><td>3.22</td><td>25.77</td><td>0.8785</td><td>3.13</td><td><b>6.3</b></td><td>6.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Columbus Blue Jackets @ Dallas Stars</td><td>8:00 PM</td><td>25.64</td><td>0.9085</td><td>2.35</td><td>26.31</td><td>0.8889</td><td>2.92</td><td><b>5.3</b></td><td>5.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Toronto Maple Leafs @ Vancouver Canucks</td><td>7:00 PM</td><td>28.13</td><td>0.8631</td><td>3.85</td><td>21.07</td><td>0.8927</td><td>2.26</td><td><b>6.1</b></td><td>6.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Pittsburgh Penguins @ Montreal Canadiens</td><td>7:00 PM</td><td>28.15</td><td>0.9011</td><td>2.78</td><td>27.54</td><td>0.8874</td><td>3.1</td><td><b>5.9</b></td><td>6.5</td><td>-0.6</td><td>—</td></tr>
+<tr><td>Edmonton Oilers @ New York Islanders</td><td>2:00 PM</td><td>26.08</td><td>0.9086</td><td>2.38</td><td>26.08</td><td>0.8876</td><td>2.93</td><td><b>5.3</b></td><td>6.5</td><td>-1.2</td><td>under</td></tr>
+<tr><td>Ottawa Senators @ San Jose Sharks</td><td>4:00 PM</td><td>25.21</td><td>0.9014</td><td>2.49</td><td>27.43</td><td>0.8981</td><td>2.8</td><td><b>5.3</b></td><td>6.5</td><td>-1.2</td><td>under</td></tr>
+<tr><td>Chicago Blackhawks @ Boston Bruins</td><td>1:00 PM</td><td>21.62</td><td>0.9188</td><td>1.76</td><td>25.86</td><td>0.8872</td><td>2.92</td><td><b>4.7</b></td><td>6.5</td><td>-1.8</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Boston Bruins</td><td>14</td><td>25.86</td><td>0.9188</td></tr>
+<tr><td>Buffalo Sabres</td><td>13</td><td>27.85</td><td>0.8711</td></tr>
+<tr><td>Calgary Flames</td><td>13</td><td>28.62</td><td>0.8811</td></tr>
+<tr><td>Chicago Blackhawks</td><td>13</td><td>21.62</td><td>0.8872</td></tr>
+<tr><td>Colorado Avalanche</td><td>13</td><td>30.46</td><td>0.8923</td></tr>
+<tr><td>Columbus Blue Jackets</td><td>11</td><td>25.64</td><td>0.8889</td></tr>
+<tr><td>Dallas Stars</td><td>13</td><td>26.31</td><td>0.9085</td></tr>
+<tr><td>Detroit Red Wings</td><td>13</td><td>29.85</td><td>0.8926</td></tr>
+<tr><td>Edmonton Oilers</td><td>13</td><td>26.08</td><td>0.8876</td></tr>
+<tr><td>Los Angeles Kings</td><td>12</td><td>27.92</td><td>0.8859</td></tr>
+<tr><td>Montreal Canadiens</td><td>13</td><td>27.54</td><td>0.9011</td></tr>
+<tr><td>Nashville Predators</td><td>13</td><td>25.77</td><td>0.8942</td></tr>
+<tr><td>New York Islanders</td><td>13</td><td>26.08</td><td>0.9086</td></tr>
+<tr><td>Ottawa Senators</td><td>14</td><td>25.21</td><td>0.8981</td></tr>
+<tr><td>Pittsburgh Penguins</td><td>13</td><td>28.15</td><td>0.8874</td></tr>
+<tr><td>San Jose Sharks</td><td>14</td><td>27.43</td><td>0.9014</td></tr>
+<tr><td>St. Louis Blues</td><td>13</td><td>27.31</td><td>0.9008</td></tr>
+<tr><td>Tampa Bay Lightning</td><td>12</td><td>30.42</td><td>0.8785</td></tr>
+<tr><td>Toronto Maple Leafs</td><td>15</td><td>28.13</td><td>0.8927</td></tr>
+<tr><td>Vancouver Canucks</td><td>15</td><td>21.07</td><td>0.8631</td></tr>
+</table></div>
+<h2>2026-10-30</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<p>No Under flags this day.</p>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>New Jersey Devils @ Vegas Golden Knights</td><td>6:00 PM</td><td>32.62</td><td>0.8917</td><td>3.53</td><td>29.71</td><td>0.8862</td><td>3.38</td><td><b>6.9</b></td><td>6.5</td><td>0.4</td><td>—</td></tr>
+<tr><td>Seattle Kraken @ Calgary Flames</td><td>8:00 PM</td><td>25.46</td><td>0.8795</td><td>3.07</td><td>28.75</td><td>0.8905</td><td>3.15</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>Winnipeg Jets @ Florida Panthers</td><td>7:00 PM</td><td>26.54</td><td>0.8878</td><td>2.98</td><td>28.15</td><td>0.893</td><td>3.01</td><td><b>6.0</b></td><td>6.5</td><td>-0.5</td><td>—</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Calgary Flames</td><td>12</td><td>28.75</td><td>0.8795</td></tr>
+<tr><td>Florida Panthers</td><td>13</td><td>28.15</td><td>0.8878</td></tr>
+<tr><td>New Jersey Devils</td><td>13</td><td>32.62</td><td>0.8862</td></tr>
+<tr><td>Seattle Kraken</td><td>13</td><td>25.46</td><td>0.8905</td></tr>
+<tr><td>Vegas Golden Knights</td><td>14</td><td>29.71</td><td>0.8917</td></tr>
+<tr><td>Winnipeg Jets</td><td>13</td><td>26.54</td><td>0.893</td></tr>
+</table></div>
+<h2>2026-10-29</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Washington Capitals @ Nashville Predators</td><td>8:00 PM</td><td>5.4</td><td>6.5</td><td>-1.1</td><td>-120</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Montreal Canadiens @ Dallas Stars</td><td>8:00 PM</td><td>5.0</td><td>6.5</td><td>-1.5</td><td>-135</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Utah Mammoth @ Pittsburgh Penguins</td><td>7:00 PM</td><td>30.15</td><td>0.8875</td><td>3.39</td><td>27.75</td><td>0.8714</td><td>3.57</td><td><b>7.0</b></td><td>6.5</td><td>0.5</td><td>—</td></tr>
+<tr><td>Columbus Blue Jackets @ Carolina Hurricanes</td><td>7:00 PM</td><td>25.6</td><td>0.8925</td><td>2.75</td><td>33.64</td><td>0.8889</td><td>3.74</td><td><b>6.5</b></td><td>6.5</td><td>0.0</td><td>—</td></tr>
+<tr><td>Buffalo Sabres @ Anaheim Ducks</td><td>10:00 PM</td><td>27.58</td><td>0.8758</td><td>3.43</td><td>23.5</td><td>0.8758</td><td>2.92</td><td><b>6.3</b></td><td>6.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Ottawa Senators @ Los Angeles Kings</td><td>10:00 PM</td><td>25.46</td><td>0.8939</td><td>2.7</td><td>27.0</td><td>0.9045</td><td>2.58</td><td><b>5.3</b></td><td>5.5</td><td>-0.2</td><td>—</td></tr>
+<tr><td>Winnipeg Jets @ Tampa Bay Lightning</td><td>7:00 PM</td><td>27.0</td><td>0.8839</td><td>3.13</td><td>30.36</td><td>0.8983</td><td>3.09</td><td><b>6.2</b></td><td>6.5</td><td>-0.3</td><td>—</td></tr>
+<tr><td>New York Islanders @ Minnesota Wild</td><td>8:00 PM</td><td>26.08</td><td>0.9117</td><td>2.3</td><td>31.29</td><td>0.9105</td><td>2.8</td><td><b>5.1</b></td><td>5.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Vancouver Canucks @ San Jose Sharks</td><td>10:00 PM</td><td>20.79</td><td>0.9002</td><td>2.07</td><td>27.69</td><td>0.8624</td><td>3.81</td><td><b>5.9</b></td><td>6.5</td><td>-0.6</td><td>—</td></tr>
+<tr><td>Chicago Blackhawks @ Detroit Red Wings</td><td>7:30 PM</td><td>21.83</td><td>0.8893</td><td>2.42</td><td>29.75</td><td>0.8861</td><td>3.39</td><td><b>5.8</b></td><td>6.5</td><td>-0.7</td><td>—</td></tr>
+<tr><td>Boston Bruins @ St. Louis Blues</td><td>8:00 PM</td><td>25.46</td><td>0.8946</td><td>2.68</td><td>28.08</td><td>0.9258</td><td>2.08</td><td><b>4.8</b></td><td>5.5</td><td>-0.7</td><td>—</td></tr>
+<tr><td>Washington Capitals @ Nashville Predators</td><td>8:00 PM</td><td>27.73</td><td>0.8968</td><td>2.86</td><td>25.58</td><td>0.8987</td><td>2.59</td><td><b>5.4</b></td><td>6.5</td><td>-1.1</td><td>under</td></tr>
+<tr><td>Montreal Canadiens @ Dallas Stars</td><td>8:00 PM</td><td>28.08</td><td>0.9167</td><td>2.34</td><td>26.92</td><td>0.9015</td><td>2.65</td><td><b>5.0</b></td><td>6.5</td><td>-1.5</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Anaheim Ducks</td><td>12</td><td>23.5</td><td>0.8758</td></tr>
+<tr><td>Boston Bruins</td><td>13</td><td>25.46</td><td>0.9258</td></tr>
+<tr><td>Buffalo Sabres</td><td>12</td><td>27.58</td><td>0.8758</td></tr>
+<tr><td>Carolina Hurricanes</td><td>14</td><td>33.64</td><td>0.8925</td></tr>
+<tr><td>Chicago Blackhawks</td><td>12</td><td>21.83</td><td>0.8861</td></tr>
+<tr><td>Columbus Blue Jackets</td><td>10</td><td>25.6</td><td>0.8889</td></tr>
+<tr><td>Dallas Stars</td><td>12</td><td>26.92</td><td>0.9167</td></tr>
+<tr><td>Detroit Red Wings</td><td>12</td><td>29.75</td><td>0.8893</td></tr>
+<tr><td>Los Angeles Kings</td><td>11</td><td>27.0</td><td>0.8939</td></tr>
+<tr><td>Minnesota Wild</td><td>14</td><td>31.29</td><td>0.9117</td></tr>
+<tr><td>Montreal Canadiens</td><td>12</td><td>28.08</td><td>0.9015</td></tr>
+<tr><td>Nashville Predators</td><td>12</td><td>25.58</td><td>0.8968</td></tr>
+<tr><td>New York Islanders</td><td>12</td><td>26.08</td><td>0.9105</td></tr>
+<tr><td>Ottawa Senators</td><td>13</td><td>25.46</td><td>0.9045</td></tr>
+<tr><td>Pittsburgh Penguins</td><td>12</td><td>27.75</td><td>0.8875</td></tr>
+<tr><td>San Jose Sharks</td><td>13</td><td>27.69</td><td>0.9002</td></tr>
+<tr><td>St. Louis Blues</td><td>12</td><td>28.08</td><td>0.8946</td></tr>
+<tr><td>Tampa Bay Lightning</td><td>11</td><td>30.36</td><td>0.8839</td></tr>
+<tr><td>Utah Mammoth</td><td>13</td><td>30.15</td><td>0.8714</td></tr>
+<tr><td>Vancouver Canucks</td><td>14</td><td>20.79</td><td>0.8624</td></tr>
+<tr><td>Washington Capitals</td><td>11</td><td>27.73</td><td>0.8987</td></tr>
+<tr><td>Winnipeg Jets</td><td>12</td><td>27.0</td><td>0.8983</td></tr>
+</table></div>
+<h2>2026-10-28</h2>
+<h3>Over flags (predicted >= book + 1.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (predicted <= book - 1.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Philadelphia Flyers @ Washington Capitals</td><td>7:30 PM</td><td>5.3</td><td>6.5</td><td>-1.2</td><td>-125</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and predicted totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away SOG/G</th><th>Home save%</th><th>Away exp goals</th><th>Home SOG/G</th><th>Away save%</th><th>Home exp goals</th><th>Predicted</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>New Jersey Devils @ Colorado Avalanche</td><td>9:00 PM</td><td>33.5</td><td>0.8912</td><td>3.64</td><td>29.25</td><td>0.8857</td><td>3.34</td><td><b>7.0</b></td><td>6.5</td><td>0.5</td><td>—</td></tr>
+<tr><td>Calgary Flames @ Edmonton Oilers</td><td>8:30 PM</td><td>29.18</td><td>0.8793</td><td>3.52</td><td>25.58</td><td>0.8799</td><td>3.07</td><td><b>6.6</b></td><td>6.5</td><td>0.1</td><td>—</td></tr>
+<tr><td>Toronto Maple Leafs @ Seattle Kraken</td><td>10:00 PM</td><td>28.57</td><td>0.8947</td><td>3.01</td><td>26.17</td><td>0.9002</td><td>2.61</td><td><b>5.6</b></td><td>6.5</td><td>-0.9</td><td>—</td></tr>
+<tr><td>Philadelphia Flyers @ Washington Capitals</td><td>7:30 PM</td><td>23.29</td><td>0.8968</td><td>2.4</td><td>27.5</td><td>0.896</td><td>2.86</td><td><b>5.3</b></td><td>6.5</td><td>-1.2</td><td>under</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>GP</th><th>SOG/G</th><th>Team save%</th></tr>
+<tr><td>Calgary Flames</td><td>11</td><td>29.18</td><td>0.8799</td></tr>
+<tr><td>Colorado Avalanche</td><td>12</td><td>29.25</td><td>0.8912</td></tr>
+<tr><td>Edmonton Oilers</td><td>12</td><td>25.58</td><td>0.8793</td></tr>
+<tr><td>New Jersey Devils</td><td>12</td><td>33.5</td><td>0.8857</td></tr>
+<tr><td>Philadelphia Flyers</td><td>14</td><td>23.29</td><td>0.896</td></tr>
+<tr><td>Seattle Kraken</td><td>12</td><td>26.17</td><td>0.8947</td></tr>
+<tr><td>Toronto Maple Leafs</td><td>14</td><td>28.57</td><td>0.9002</td></tr>
+<tr><td>Washington Capitals</td><td>10</td><td>27.5</td><td>0.8968</td></tr>
+</table></div>
+<h2>Performance</h2>
+<h3>Over flags</h3>
+<p><b>1-1-0</b> · <b>$-20.00</b> · 2 graded flags · $100 flat at the recorded Over juice; record-only where no juice was recorded.</p>
+<div class='wrap'><table><tr><th>Date</th><th>Play</th><th>Result</th><th>Money</th></tr>
+<tr><td>2026-11-02</td><td>Detroit Red Wings @ Florida Panthers | Over 5.5</td><td>W</td><td>$80.00</td></tr>
+<tr><td>2026-10-31</td><td>Buffalo Sabres @ Los Angeles Kings | Over 5.5</td><td>L</td><td>$-100.00</td></tr>
+</table></div>
+<h3>Under flags</h3>
+<p><b>7-6-0</b> · <b>$-5.31</b> · 13 graded flags · $100 flat at the recorded Under juice; record-only where no juice was recorded.</p>
+<div class='wrap'><table><tr><th>Date</th><th>Play</th><th>Result</th><th>Money</th></tr>
+<tr><td>2026-11-11</td><td>Philadelphia Flyers @ Edmonton Oilers | Under 6.5</td><td>W</td><td>$76.92</td></tr>
+<tr><td>2026-11-09</td><td>New York Rangers @ Edmonton Oilers | Under 6.5</td><td>W</td><td>$92.59</td></tr>
+<tr><td>2026-11-08</td><td>Florida Panthers @ Boston Bruins | Under 6.5</td><td>W</td><td>$80.00</td></tr>
+<tr><td>2026-11-07</td><td>New York Rangers @ Seattle Kraken | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-05</td><td>Boston Bruins @ Pittsburgh Penguins | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-02</td><td>Vegas Golden Knights @ Boston Bruins | Under 6.5</td><td>W</td><td>$80.00</td></tr>
+<tr><td>2026-11-01</td><td>Edmonton Oilers @ New York Rangers | Under 6.5</td><td>W</td><td>$92.59</td></tr>
+<tr><td>2026-10-31</td><td>Chicago Blackhawks @ Boston Bruins | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-31</td><td>Edmonton Oilers @ New York Islanders | Under 6.5</td><td>W</td><td>$80.00</td></tr>
+<tr><td>2026-10-31</td><td>Ottawa Senators @ San Jose Sharks | Under 6.5</td><td>W</td><td>$92.59</td></tr>
+<tr><td>2026-10-29</td><td>Washington Capitals @ Nashville Predators | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-29</td><td>Montreal Canadiens @ Dallas Stars | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-28</td><td>Philadelphia Flyers @ Washington Capitals | Under 6.5</td><td>L</td><td>$-100.00</td></tr>
+</table></div>
+<h3>Inverse (fade the flag)</h3>
+<p>Added Oct 31, 2026: every delivered flag is ALSO graded on the opposite side of the same total (flag Under &rarr; inverse Over, same number), reported as its own separate scorecard — mirroring the Positive EV Tracker's inverse pass. Inverse money uses the opposite side's price recorded at scan time when one was recorded; where no opposite price exists the inverse grade is record-only (never invented). The first three inverse entries are a labeled backfill of the flags delivered before the inverse pass existed.</p>
+<h3>Inverse scorecard</h3>
+<p><b>7-8-0</b> · <b>$-380.71</b> · 15 graded flags · $100 flat at the recorded opposite-side juice; record-only where no juice was recorded.</p>
+<div class='wrap'><table><tr><th>Date</th><th>Play</th><th>Result</th><th>Money</th></tr>
+<tr><td>2026-11-11</td><td>Philadelphia Flyers @ Edmonton Oilers | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-09</td><td>New York Rangers @ Edmonton Oilers | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-08</td><td>Florida Panthers @ Boston Bruins | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-07</td><td>New York Rangers @ Seattle Kraken | INVERSE Over 6.5</td><td>W</td><td>$102.00</td></tr>
+<tr><td>2026-11-05</td><td>Boston Bruins @ Pittsburgh Penguins | INVERSE Over 6.5</td><td>W</td><td>$89.29</td></tr>
+<tr><td>2026-11-02</td><td>Detroit Red Wings @ Florida Panthers | INVERSE Under 5.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-02</td><td>Vegas Golden Knights @ Boston Bruins | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-01</td><td>Edmonton Oilers @ New York Rangers | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-31</td><td>Buffalo Sabres @ Los Angeles Kings | INVERSE Under 5.5</td><td>W</td><td>$114.00</td></tr>
+<tr><td>2026-10-31</td><td>Chicago Blackhawks @ Boston Bruins | INVERSE Over 6.5</td><td>W</td><td>$114.00</td></tr>
+<tr><td>2026-10-31</td><td>Edmonton Oilers @ New York Islanders | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-31</td><td>Ottawa Senators @ San Jose Sharks | INVERSE Over 6.5</td><td>L</td><td>$-100.00</td></tr>
+<tr><td>2026-10-29</td><td>Washington Capitals @ Nashville Predators | INVERSE Over 6.5 (BACKFILL)</td><td>W</td><td>record-only</td></tr>
+<tr><td>2026-10-29</td><td>Montreal Canadiens @ Dallas Stars | INVERSE Over 6.5 (BACKFILL)</td><td>W</td><td>record-only</td></tr>
+<tr><td>2026-10-28</td><td>Philadelphia Flyers @ Washington Capitals | INVERSE Over 6.5 (BACKFILL)</td><td>W</td><td>record-only</td></tr>
+</table></div>
+<p>Last scan: 2026-11-05; stats source: NHL club-stats API (team shots + team save%) + ESPN scoreboard (DraftKings totals), read 2026-11-05 ~01:15 PM ET.</p>
+<div class='foot'>Snapshot only — verify in the book app before placing. You place every bet yourself; nothing here places a bet. Sources: NHL public APIs (club-stats + standings) and the ESPN public scoreboard (DraftKings totals). No DarkHorse data is used in this system. The 1.0-goal flag threshold is Chet's display choice, not Frank's claim.</div></body></html>
