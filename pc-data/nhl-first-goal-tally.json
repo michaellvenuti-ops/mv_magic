@@ -4642,20 +4642,20 @@
    "winner": "Vegas Golden Knights"
   },
   {
-   "date": "2026-11-12",
    "away": "Buffalo Sabres",
-   "home": "Chicago Blackhawks",
+   "date": "2026-11-12",
+   "final": "2-3",
    "first": "Buffalo Sabres",
+   "first_elapsed_sec": 660,
+   "first_scorer": "Owen Power",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Owen Power",
-   "first_elapsed_sec": 660,
-   "winner": "Chicago Blackhawks",
-   "shootout": false,
-   "seq": "1-0>1-1>2-1>2-2>2-3",
+   "home": "Chicago Blackhawks",
    "lead_changes": 1,
+   "seq": "1-0>1-1>2-1>2-2>2-3",
+   "shootout": false,
    "ties": 2,
-   "final": "2-3"
+   "winner": "Chicago Blackhawks"
   },
   {
    "away": "Carolina Hurricanes",
@@ -4736,6 +4736,22 @@
    "shootout": false,
    "ties": 0,
    "winner": "Montreal Canadiens"
+  },
+  {
+   "date": "2026-11-12",
+   "away": "St. Louis Blues",
+   "home": "Utah Mammoth",
+   "first": null,
+   "first_side": null,
+   "first_strength": null,
+   "first_scorer": null,
+   "first_elapsed_sec": null,
+   "winner": "St. Louis Blues",
+   "shootout": true,
+   "seq": "",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "1-0"
   },
   {
    "away": "Tampa Bay Lightning",
@@ -4836,7 +4852,7 @@
    "won_by_one_when_first_pct": 12.5
   },
   "Utah Mammoth": {
-   "gp": 19,
+   "gp": 20,
    "scored_first": 8,
    "strengths": {
     "EV": 3,
@@ -4846,9 +4862,9 @@
    "won_when_first": 7,
    "won_when_not_first": 3,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 42.1,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 87.5,
-   "win_pct_when_not_first": 27.3,
+   "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 37.5
   },
   "Edmonton Oilers": {
@@ -5124,7 +5140,7 @@
    "won_by_one_when_first_pct": 16.7
   },
   "St. Louis Blues": {
-   "gp": 18,
+   "gp": 19,
    "scored_first": 10,
    "strengths": {
     "EV": 6,
@@ -5132,11 +5148,11 @@
     "SH": 1
    },
    "won_when_first": 5,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 52.6,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 37.5,
+   "win_pct_when_not_first": 44.4,
    "won_by_one_when_first_pct": 20.0
   },
   "Dallas Stars": {
@@ -5301,9 +5317,9 @@
   }
  },
  "league": {
-  "games": 299,
+  "games": 300,
   "games_with_goal": 298,
-  "shootouts": 21,
+  "shootouts": 22,
   "home_scored_first": 141,
   "first_team_won": 198,
   "first_team_won_by_one": 61,
@@ -5335,9 +5351,9 @@
    "avg_per_game": 0.5
   },
   "Utah Mammoth": {
-   "games": 19,
+   "games": 20,
    "lead_changes": 6,
-   "avg_per_game": 0.32
+   "avg_per_game": 0.3
   },
   "Edmonton Oilers": {
    "games": 19,
@@ -5425,9 +5441,9 @@
    "avg_per_game": 0.65
   },
   "St. Louis Blues": {
-   "games": 18,
+   "games": 19,
    "lead_changes": 10,
-   "avg_per_game": 0.56
+   "avg_per_game": 0.53
   },
   "Dallas Stars": {
    "games": 18,
