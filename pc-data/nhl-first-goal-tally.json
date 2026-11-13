@@ -4642,6 +4642,22 @@
    "winner": "Vegas Golden Knights"
   },
   {
+   "date": "2026-11-12",
+   "away": "Buffalo Sabres",
+   "home": "Chicago Blackhawks",
+   "first": "Buffalo Sabres",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Owen Power",
+   "first_elapsed_sec": 660,
+   "winner": "Chicago Blackhawks",
+   "shootout": false,
+   "seq": "1-0>1-1>2-1>2-2>2-3",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "2-3"
+  },
+  {
    "away": "Carolina Hurricanes",
    "date": "2026-11-12",
    "final": "4-1",
@@ -4674,20 +4690,20 @@
    "winner": "Ottawa Senators"
   },
   {
-   "date": "2026-11-12",
    "away": "Detroit Red Wings",
-   "home": "Florida Panthers",
+   "date": "2026-11-12",
+   "final": "4-5",
    "first": "Florida Panthers",
+   "first_elapsed_sec": 968,
+   "first_scorer": "Sam Reinhart",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Sam Reinhart",
-   "first_elapsed_sec": 968,
-   "winner": "Florida Panthers",
-   "shootout": false,
-   "seq": "0-1>1-1>2-1>3-1>4-1>4-2>4-3>4-4>4-5",
+   "home": "Florida Panthers",
    "lead_changes": 2,
+   "seq": "0-1>1-1>2-1>3-1>4-1>4-2>4-3>4-4>4-5",
+   "shootout": false,
    "ties": 2,
-   "final": "4-5"
+   "winner": "Florida Panthers"
   },
   {
    "away": "Minnesota Wild",
@@ -4754,38 +4770,38 @@
    "winner": "New Jersey Devils"
   },
   {
-   "date": "2026-11-12",
    "away": "Winnipeg Jets",
-   "home": "Dallas Stars",
+   "date": "2026-11-12",
+   "final": "8-3",
    "first": "Dallas Stars",
+   "first_elapsed_sec": 941,
+   "first_scorer": "Arttu Hyry",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Arttu Hyry",
-   "first_elapsed_sec": 941,
-   "winner": "Winnipeg Jets",
-   "shootout": false,
-   "seq": "0-1>0-2>1-2>2-2>2-3>3-3>4-3>5-3>6-3>7-3>8-3",
+   "home": "Dallas Stars",
    "lead_changes": 1,
+   "seq": "0-1>0-2>1-2>2-2>2-3>3-3>4-3>5-3>6-3>7-3>8-3",
+   "shootout": false,
    "ties": 2,
-   "final": "8-3"
+   "winner": "Winnipeg Jets"
   }
  ],
  "tally": {
   "Buffalo Sabres": {
-   "gp": 18,
-   "scored_first": 10,
+   "gp": 19,
+   "scored_first": 11,
    "strengths": {
-    "EV": 8,
+    "EV": 9,
     "PP": 2,
     "SH": 0
    },
    "won_when_first": 4,
    "won_when_not_first": 4,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 55.6,
-   "win_pct_when_first": 40.0,
+   "scored_first_pct": 57.9,
+   "win_pct_when_first": 36.4,
    "win_pct_when_not_first": 50.0,
-   "won_by_one_when_first_pct": 10.0
+   "won_by_one_when_first_pct": 9.1
   },
   "Columbus Blue Jackets": {
    "gp": 17,
@@ -4804,7 +4820,7 @@
    "won_by_one_when_first_pct": 50.0
   },
   "Chicago Blackhawks": {
-   "gp": 17,
+   "gp": 18,
    "scored_first": 8,
    "strengths": {
     "EV": 6,
@@ -4812,11 +4828,11 @@
     "SH": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 47.1,
+   "scored_first_pct": 44.4,
    "win_pct_when_first": 25.0,
-   "win_pct_when_not_first": 22.2,
+   "win_pct_when_not_first": 30.0,
    "won_by_one_when_first_pct": 12.5
   },
   "Utah Mammoth": {
@@ -5285,28 +5301,28 @@
   }
  },
  "league": {
-  "games": 298,
-  "games_with_goal": 297,
+  "games": 299,
+  "games_with_goal": 298,
   "shootouts": 21,
   "home_scored_first": 141,
   "first_team_won": 198,
   "first_team_won_by_one": 61,
   "first_team_won_by_one_pct": 20.5,
   "strengths": {
-   "EV": 226,
+   "EV": 227,
    "PP": 66,
    "SH": 5
   },
   "avg_lead_changes": 0.48,
-  "median_first_goal_sec": 857,
-  "home_scored_first_pct": 47.5,
-  "first_team_win_pct": 66.7
+  "median_first_goal_sec": 856,
+  "home_scored_first_pct": 47.3,
+  "first_team_win_pct": 66.4
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
-   "games": 18,
-   "lead_changes": 10,
-   "avg_per_game": 0.56
+   "games": 19,
+   "lead_changes": 11,
+   "avg_per_game": 0.58
   },
   "Columbus Blue Jackets": {
    "games": 17,
@@ -5314,9 +5330,9 @@
    "avg_per_game": 0.24
   },
   "Chicago Blackhawks": {
-   "games": 17,
-   "lead_changes": 8,
-   "avg_per_game": 0.47
+   "games": 18,
+   "lead_changes": 9,
+   "avg_per_game": 0.5
   },
   "Utah Mammoth": {
    "games": 19,
