@@ -1,5 +1,5 @@
 {
- "through": "2026-11-08",
+ "through": "2026-11-12",
  "games": [
   {
    "away": "New England Patriots",
@@ -1350,6 +1350,16 @@
    "lead_changes": 0,
    "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
    "ties": 1
+  },
+  {
+   "date": "2026-11-12",
+   "away": "Washington Commanders",
+   "home": "New York Giants",
+   "first": "Washington Commanders",
+   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "lead_changes": 6,
+   "ties": 0,
+   "final": "24-21"
   }
  ],
  "tally": {
@@ -1541,14 +1551,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "New York Giants": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 4,
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 44.4,
    "win_pct_when_first": 75.0,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Green Bay Packers": {
@@ -1662,13 +1672,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Washington Commanders": {
-   "gp": 8,
-   "scored_first": 5,
-   "won_when_first": 1,
+   "gp": 9,
+   "scored_first": 6,
+   "won_when_first": 2,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 62.5,
-   "win_pct_when_first": 20.0,
+   "scored_first_pct": 66.7,
+   "win_pct_when_first": 33.3,
    "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1707,15 +1717,15 @@
   }
  },
  "league": {
-  "games": 135,
-  "games_with_goal": 135,
+  "games": 136,
+  "games_with_goal": 136,
   "home_scored_first": 69,
-  "first_team_won": 85,
+  "first_team_won": 86,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.5,
-  "avg_lead_changes": 1.28,
-  "home_scored_first_pct": 51.1,
-  "first_team_win_pct": 63.0
+  "avg_lead_changes": 1.32,
+  "home_scored_first_pct": 50.7,
+  "first_team_win_pct": 63.2
  },
  "lead_changes": [
   {
@@ -3067,6 +3077,16 @@
    "lead_changes": 0,
    "seq": "0-7>0-14>3-14>3-17>6-17>13-17>13-24>16-24>24-24>24-27",
    "ties": 1
+  },
+  {
+   "date": "2026-11-12",
+   "away": "Washington Commanders",
+   "home": "New York Giants",
+   "first": "Washington Commanders",
+   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "lead_changes": 6,
+   "ties": 0,
+   "final": "24-21"
   }
  ],
  "lead_change_team_avgs": {
@@ -3156,9 +3176,9 @@
    "avg_per_game": 2.0
   },
   "New York Giants": {
-   "games": 8,
-   "lead_changes": 7,
-   "avg_per_game": 0.88
+   "games": 9,
+   "lead_changes": 13,
+   "avg_per_game": 1.44
   },
   "Green Bay Packers": {
    "games": 9,
@@ -3211,9 +3231,9 @@
    "avg_per_game": 1.5
   },
   "Washington Commanders": {
-   "games": 8,
-   "lead_changes": 4,
-   "avg_per_game": 0.5
+   "games": 9,
+   "lead_changes": 10,
+   "avg_per_game": 1.11
   },
   "Philadelphia Eagles": {
    "games": 9,
