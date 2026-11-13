@@ -6759,3 +6759,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 20:06:29 ET] dh_key_number_middles.py: OK in 210s — key-number-middles: 175 basketball rows excluded (football-only rule).
 [2026-11-12 20:08:09 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NFL WAS Commanders NY Giants Today 8:15 PM / table / Passing Yards J. Daniels Under 204.5 / Passing Yards J. Daniels Over 203.5 / table | Ha
 [2026-11-12 20:08:10 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
+[2026-11-12 20:20:45 ET] sync_to_github.py: FAILED (exit 1) in 755s —   FAILED: pc-data/game-middles-2026-11-08.md (HTTP 409: {'error': '{"message":"is at 8cb009126974f55f86ec1147eb3fc1de2a133ade but expected 445324d63d4d77f8fdda6
+[2026-11-12 20:22:45 ET] odds_recorder.py: OK in 89s — SUMMARY: recorded 188 events (80 with odds), db total 252587 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 20:26:49 ET] dh_basketball_key_middles.py: OK in 244s — basketball-key-middles: no new basketball middles.
+[2026-11-12 20:27:57 ET] hung_number.py: OK in 68s — HUNG NUMBER: Memphis vs South Florida — BetMGM total value Under (47.5 vs median 49.5)
+[2026-11-12 20:28:02 ET] rlm.py: OK in 5s
+[2026-11-12 20:28:06 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 20:28:09 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 20:29:30 ET] dh_sog_middles.py: OK in 81s — - 0 deliverables this run
+[2026-11-12 20:29:31 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 20:29:32 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 20:29:34 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 20:29:35 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 291 total tallied.
+[2026-11-12 20:29:38 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 4 new, 4 unverified, 474 total tallied.
+[2026-11-12 20:29:38 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 20:29:40 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
