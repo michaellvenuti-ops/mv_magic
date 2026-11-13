@@ -1,16 +1,23 @@
-# Hung numbers — 2026-11-13 (scan 2026-11-13 17:02)
+# Hung numbers — 2026-11-13 (scan 2026-11-13 18:20)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Houston vs Colorado | FanDuel | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Wisconsin vs Maryland | DraftKings | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
+- Tennessee vs Texas A&M | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.0 | div 5.7 
+- California vs Virginia | FanDuel | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Missouri vs Georgia | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Nevada vs Northern Illinois | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
-- Ole Miss vs Oklahoma | FanDuel | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- Ole Miss vs Oklahoma | Fanatics | spread | value: dog | book 49.0 vs median 2.5 | div 46.5 middle pairing spans key number 7
+- Ole Miss vs Oklahoma | Fanatics | moneyline Ole Miss | value: Ole Miss | book 98.0 vs median 47.6 | div 50.4 
 - Southern Miss vs Louisiana Tech | FanDuel | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
+- Minnesota vs Penn State | Fanatics | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
+- San Jose State vs Air Force | FanDuel | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- UNLV vs New Mexico | Caesars | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
+- UNLV vs New Mexico | Fanatics | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
