@@ -7320,3 +7320,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 13:35:51 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 216 events (200 with odds), db total 263499 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-13 13:35:53 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
 [2026-11-13 13:39:42 ET] dh_basketball_key_middles.py: OK in 199s — basketball-key-middles: no new basketball middles.
+[2026-11-13 13:54:05 ET] sync_to_github.py: FAILED (exit 1) in 863s —   FAILED: pc-data/wide-builds-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 1aeaf2723578575ccbeb42ce00549fa56676bd1c but expected ec1a1c78512272743350fb
+[2026-11-13 13:54:39 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 216 events (200 with odds), db total 263715 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 13:54:43 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 13:56:58 ET] dh_prop_middles.py: OK in 135s — PROP MIDDLE CLEAN : NFL KC Chiefs ATL Falcons Nov-15 1:00 PM / table / Rush Yards K. Walker Under 90.5 / Alt Rush Yards K. Walker 90+ / table | Caesars | Bally 
+[2026-11-13 13:58:33 ET] dh_sog_middles.py: OK in 95s — - 0 deliverables this run
+[2026-11-13 13:58:35 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 13:58:36 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 13:58:37 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 13:58:38 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 13:58:40 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 0 unverified, 499 total tallied.
+[2026-11-13 13:58:41 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 13:58:42 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 13:58:43 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
