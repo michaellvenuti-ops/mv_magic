@@ -39,3 +39,13 @@
 ## 2026-11-13T17:04:06-05:00 — no-follow: DraftKings Boston College @ Notre Dame | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T17:04:06-05:00 — no-follow: Kalshi Utah State @ San Diego State | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T17:04:06-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-13 total (Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Kansas State @ TCU | 2026-11-13 spread (Caesars, DraftKings)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Tennessee @ Texas A&M | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Washington @ Michigan State | 2026-11-13 spread (Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Ole Miss @ Oklahoma | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Minnesota @ Penn State | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: Troy @ South Alabama | 2026-11-13 spread (FanDuel, bet365)
+## 2026-11-13T18:21:42-05:00 — pack move, never credited: UNLV @ New Mexico | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-13T18:21:42-05:00 — 81 games, 0 leads credited, 5 started games skipped
