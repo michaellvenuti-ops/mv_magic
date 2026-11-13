@@ -42,3 +42,8 @@
 - 2026-11-12: West Florida Argonauts @ Alabama A&M Bulldogs — first: West Florida Argonauts (FT, 0:42 in); lead changes 9; final 83-85
 - 2026-11-12: Oklahoma State Cowboys @ Texas A&M Aggies — first: Texas A&M Aggies (3PT, 0:42 in); lead changes 4; final 69-88
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T23:30:17-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 496 games through 2026-11-12
+- 2026-11-12: Montana State Bobcats @ BYU Cougars — first: BYU Cougars (2PT, 0:17 in); lead changes 0; final 71-86
+- 2026-11-12: Lincoln (CA) Oaklanders @ Cal State Fullerton Titans — first: Cal State Fullerton Titans (2PT, 1:13 in); lead changes 4; final 71-101
+- 2026-11-12: New Mexico State Aggies @ UTEP Miners — first: New Mexico State Aggies (FT, 0:53 in); lead changes 9; final 58-60
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
