@@ -8,3 +8,6 @@
 ## 2026-11-12T21:59:54-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 163 games through 2026-11-12
 - 2026-11-12: Toronto Raptors @ Philadelphia 76ers — first: Toronto Raptors (2PT, 0:53 in); lead changes 25; final 112-123
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T22:45:23-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 164 games through 2026-11-12
+- 2026-11-12: Dallas Mavericks @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:15 in); lead changes 6; final 94-133
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
