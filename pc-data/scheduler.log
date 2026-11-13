@@ -7393,3 +7393,22 @@
 [2026-11-13 17:23:52 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (197 with odds), db total 265659 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-13 17:26:08 ET] dh_game_middles.py: OK in 135s — GAME MIDDLE: NCAAB Southern Miss Texas St. Today 8:00 PM / table / Spread Southern Miss +11.5 / Alt Spread Texas St. -11 / table bar_chart | Bally Bet | Prophet
 [2026-11-13 17:29:33 ET] dh_key_number_middles.py: OK in 205s — key-number-middles: 501 basketball rows excluded (football-only rule).
+[2026-11-13 17:44:18 ET] sync_to_github.py: OK in 884s —   ok: wide-builds-board-pc.html
+[2026-11-13 17:45:12 ET] notify.py: OK in 55s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-13 17:46:47 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (197 with odds), db total 265875 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 17:47:49 ET] dh_arbitrage.py: OK in 63s — ARBITRAGE: NCAAB Merrimack 1 Florida Today 7:00 PM / table / Alt Spread Florida -31.5 / Alt Spread Merrimack +31.5 / table | Caesars | Bally Bet
+[2026-11-13 17:48:21 ET] dh_kalshi_poly_arb.py: OK in 31s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 17:48:23 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL MIA Dolphins IND Colts Nov-15 1:00 PM — Rush Yards O. Gordon — Over 69.5 Bet365 +105 ($95) / Under 74.5 theScore -115 ($105) — both win 70, 71, 7
+[2026-11-13 17:48:46 ET] dh_low_holds.py: OK in 23s — low-holds: no new qualifying pairs (silent).
+[2026-11-13 17:52:17 ET] dh_basketball_key_middles.py: OK in 211s — basketball-key-middles: no new basketball middles.
+[2026-11-13 17:52:23 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Alabama @ Vanderbilt | 2026-11-13 | Kalshi | Under total 49.5 (median 49.5 -> 47.5)
+[2026-11-13 17:55:47 ET] dh_prop_middles.py: OK in 204s — prop-middles: no new/changed qualifying middles.
+[2026-11-13 17:57:34 ET] dh_sog_middles.py: OK in 107s — - 0 deliverables this run
+[2026-11-13 17:57:38 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 17:57:40 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 17:57:42 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 17:57:44 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 17:57:46 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 500 total tallied.
+[2026-11-13 17:57:47 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 17:57:48 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 17:57:50 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
