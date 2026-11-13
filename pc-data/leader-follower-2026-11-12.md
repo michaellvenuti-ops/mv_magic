@@ -47,3 +47,8 @@
 ## 2026-11-12T19:20:24-05:00 — 81 games, 0 leads credited, 3 started games skipped
 ## 2026-11-12T20:28:06-05:00 — no-follow: Kalshi Texans @ Browns | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T20:28:06-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-12T21:36:51-05:00 — no-follow: Kalshi Louisiana @ Louisiana-Monroe | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T21:36:51-05:00 — pack move, never credited: Louisiana @ Louisiana-Monroe | 2026-11-12 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-12T21:36:51-05:00 — pack move, never credited: Washington @ Michigan State | 2026-11-12 total (BetMGM, Caesars, DraftKings)
+## 2026-11-12T21:36:51-05:00 — pack move, never credited: South Carolina @ Arkansas | 2026-11-12 spread (FanDuel, Fanatics)
+## 2026-11-12T21:36:51-05:00 — 81 games, 0 leads credited, 5 started games skipped
