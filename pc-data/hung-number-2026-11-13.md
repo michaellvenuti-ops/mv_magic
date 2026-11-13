@@ -1,14 +1,5 @@
-# Hung numbers — 2026-11-13 (scan 2026-11-13 01:20)
+# Hung numbers — 2026-11-13 (scan 2026-11-13 02:51)
 
-- Texans vs Browns | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
-- Memphis vs South Florida | DraftKings | spread | value: favorite | book -10.5 vs median -3.5 | div 7.0 
-- Memphis vs South Florida | BetMGM | total | value: Under | book 64.5 vs median 86.5 | div 22.0 
-- Memphis vs South Florida | DraftKings | total | value: Over | book 93.5 vs median 86.5 | div 7.0 
-- Memphis vs South Florida | FanDuel | moneyline Memphis | value: Memphis | book 88.5 vs median 96.9 | div 8.4 
-- Memphis vs South Florida | BetMGM | moneyline South Florida | value: South Florida | book 3.2 vs median 9.1 | div 5.9 
-- Memphis vs South Florida | FanDuel | moneyline South Florida | value: South Florida | book 17.2 vs median 9.1 | div 8.1 
-- Louisiana vs Louisiana-Monroe | DraftKings | spread | value: favorite | book -16.5 vs median -14.5 | div 2.0 
-- Louisiana vs Louisiana-Monroe | BetMGM | total | value: Under | book 52.5 vs median 55.5 | div 3.0 
 - New Mexico State vs Missouri State | Fanatics | spread | value: dog | book 49.0 vs median 1.5 | div 47.5 middle pairing spans key number 7
 - New Mexico State vs Missouri State | Fanatics | moneyline New Mexico State | value: New Mexico State | book 99.0 vs median 50.5 | div 48.5 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
