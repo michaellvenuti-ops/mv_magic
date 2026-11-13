@@ -6,3 +6,6 @@
 NEW BUILD: NCAAB Florida International Florida Gulf Coast Today 7:00 PM — Total — Over 147.5 Bet365 -210 ($132) / Under 150.5 DraftKings +185 ($68) — both win 148, 149, 150 — land +$188.66, miss -6.20 / -5.14 on ~$200 balanced
 (end of new builds — full list below)
 NCAAB Florida International Florida Gulf Coast Today 7:00 PM — Total — Over 147.5 Bet365 -210 ($132) / Under 150.5 DraftKings +185 ($68) — both win 148, 149, 150 — land +$188.66, miss -6.20 / -5.14 on ~$200 balanced
+## 2026-11-13T02:22:23-05:00 — wide-builds: 0 NEW wide builds
+(end of new builds — full list below)
+NCAAB Florida International Florida Gulf Coast Today 7:00 PM — Total — Over 147.5 Bet365 -210 ($132) / Under 150.5 DraftKings +185 ($68) — both win 148, 149, 150 — land +$188.66, miss -6.20 / -5.14 on ~$200 balanced
