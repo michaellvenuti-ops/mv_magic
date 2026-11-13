@@ -33,3 +33,8 @@
 - 2026-11-12: Loyola Maryland Greyhounds @ Towson Tigers — first: Towson Tigers (2PT, 1:52 in); lead changes 0; final 60-90
 - 2026-11-12: Maryland Eastern Shore Hawks @ Rhode Island Rams — first: Rhode Island Rams (3PT, 0:49 in); lead changes 4; final 47-67
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T21:59:59-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 491 games through 2026-11-12
+- 2026-11-12: Loyola Marymount Lions @ South Alabama Jaguars — first: South Alabama Jaguars (2PT, 0:23 in); lead changes 0; final 72-79
+- 2026-11-12: Southern Jaguars @ Minnesota Golden Gophers — first: Southern Jaguars (2PT, 0:23 in); lead changes 3; final 61-91
+- 2026-11-12: Richmond Spiders @ Southern Illinois Salukis — first: Southern Illinois Salukis (FT, 0:12 in); lead changes 0; final 70-80
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
