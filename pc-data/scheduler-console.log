@@ -7206,3 +7206,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 09:36:26 ET] total_projectors_grade_run.py: OK in 1s — }
 [2026-11-13 09:36:40 ET] half_percent.py: OK in 13s — half-percent: PICK NU ref $12.37 target $12.43 stop $12.31
 [2026-11-13 09:36:42 ET] futures_pairs.py: OK in 2s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-13 09:51:03 ET] sync_to_github.py: FAILED (exit 1) in 861s —   FAILED: wide-builds-board-pc.html (HTTP 409: {'error': '{"message":"is at c905f5cc91ddedb0164821b1c64fc12055f74474 but expected 07294d388a3aaeac316ccf937674dd
+[2026-11-13 09:53:09 ET] odds_recorder.py: OK in 97s — SUMMARY: recorded 188 events (73 with odds), db total 261611 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 09:55:24 ET] dh_game_middles.py: OK in 134s — GAME MIDDLE: NCAAB Chicago St. San Diego Today 9:30 PM / table / Total Under 147.5 / Alt Total Over 146 / table | BetMGM | Bet365 — window 215.0 :: -110 $1,000 
+[2026-11-13 10:00:00 ET] dh_key_number_middles.py: OK in 276s — key-number-middles: 613 basketball rows excluded (football-only rule).
+[2026-11-13 10:00:07 ET] half_percent.py: OK in 6s — half-percent recheck: 10:00 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
