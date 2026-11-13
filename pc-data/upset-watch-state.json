@@ -7701,11 +7701,20 @@
    "sport": "NBA",
    "matchup": "Pistons at Wizards",
    "date": "2026-11-13",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Pistons",
-   "dog_team": "Wizards"
+   "dog_team": "Wizards",
+   "live_ml": -175,
+   "alerted_at": "2026-11-12T19:22:06",
+   "board_read_at": "2026-11-12T19:22:06",
+   "alert_expires_at": "2026-11-12T19:25:06",
+   "alert_detail": "7:04 - 1st Quarter",
+   "alert_fav_score": 15,
+   "alert_dog_score": 20,
+   "alert_ml": -175,
+   "ml_read_at": "2026-11-12T19:22:06"
   },
   "401909978": {
    "sport": "NBA",
@@ -7748,7 +7757,7 @@
    "spread": 13.5,
    "fav_team": "Bradley",
    "dog_team": "Coppin St",
-   "live_ml": -280
+   "live_ml": -330
   },
   "401923400": {
    "sport": "NCAAB",
@@ -7869,7 +7878,7 @@
    "spread": 22.5,
    "fav_team": "High Point",
    "dog_team": "Southern Utah",
-   "live_ml": -2800
+   "live_ml": -2100
   },
   "401920135": {
    "sport": "NCAAB",
@@ -7900,7 +7909,8 @@
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Brown",
-   "dog_team": "Canisius"
+   "dog_team": "Canisius",
+   "live_ml": -445
   },
   "401911013": {
    "sport": "NCAAB",
