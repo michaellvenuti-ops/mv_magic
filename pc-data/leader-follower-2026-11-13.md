@@ -29,3 +29,8 @@
 ## 2026-11-13T14:27:14-05:00 — no-follow: Kalshi East Carolina @ Charlotte | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T14:27:14-05:00 — no-follow: bet365 Nevada @ Northern Illinois | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T14:27:14-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T15:51:36-05:00 — no-follow: Kalshi James Madison @ UConn | 2026-11-13 spread (only 0 followed)
+## 2026-11-13T15:51:36-05:00 — pack move, never credited: Alabama @ Vanderbilt | 2026-11-13 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-13T15:51:36-05:00 — pack move, never credited: USC @ Indiana | 2026-11-13 spread (BetMGM, DraftKings)
+## 2026-11-13T15:51:36-05:00 — pack move, never credited: Utah State @ San Diego State | 2026-11-13 total (Caesars, DraftKings)
+## 2026-11-13T15:51:36-05:00 — 81 games, 0 leads credited, 5 started games skipped
