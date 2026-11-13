@@ -7234,3 +7234,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 10:28:50 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 10:28:51 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-13 10:30:04 ET] promo_watch.py: OK in 73s — promo-watch: 9 listed, 0 new, 0 converter attempt(s).
+[2026-11-13 10:45:58 ET] sync_to_github.py: OK in 954s —   ok: wide-builds-board-pc.html
+[2026-11-13 10:47:39 ET] notify.py: OK in 99s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-13 10:49:14 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 188 events (101 with odds), db total 261987 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 10:51:40 ET] dh_game_middles.py: OK in 147s — GAME MIDDLE: NCAAB Arkansas-Pine Bluff California Baptist Today 10:30 PM / table / Alt Total Under 146.5 / Total Over 145.5 / table | Fanatics-NJ | theScore — w
+[2026-11-13 10:55:19 ET] dh_key_number_middles.py: OK in 219s — key-number-middles: 652 basketball rows excluded (football-only rule).
+[2026-11-13 10:55:25 ET] totals_scan.py: OK in 6s — totals: no new flags (silent).
+[2026-11-13 10:55:31 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-13 10:56:51 ET] dh_derivative_ev.py: FAILED (exit 2) in 80s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-13.txt. No prices i
