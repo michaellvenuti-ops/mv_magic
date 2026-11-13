@@ -6695,3 +6695,18 @@
 [2026-11-12 19:22:06 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 19:23:37 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (91 with odds), db total 252023 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-12 19:23:40 ET] wide_builds.py: OK in 3s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 19:36:29 ET] sync_to_github.py: FAILED (exit 1) in 769s —   FAILED: hung-number-board-pc.html (HTTP 409: {'error': '{"message":"is at ba480acf39213afca8f48662d03a7d834e26a06a but expected 79a754f206ff23a2c726b521bfd58b
+[2026-11-12 19:37:02 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (91 with odds), db total 252211 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 19:38:54 ET] dh_arbitrage.py: OK in 112s — ARBITRAGE: NCAAB Southern Minnesota Today 8:00 PM / table / Alt Spread Minnesota -21.5 / Alt Spread Southern +21.5 / table | Fanatics-NJ | BetRivers
+[2026-11-12 19:40:12 ET] dh_kalshi_poly_arb.py: OK in 78s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 19:41:17 ET] dh_low_holds.py: OK in 65s — LOW-HOLDS: NCAAF Utah St. San Diego St. Nov-14 9:30 PM / table / Alt Spread San Diego St. +12.5 / Alt Spread Utah St. -12 / table | DraftKings | Bally Bet
+[2026-11-12 19:44:58 ET] dh_basketball_key_middles.py: OK in 221s — basketball-key-middles: no new basketball middles.
+[2026-11-12 19:45:03 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-12 19:46:44 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-12 19:46:46 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 19:46:48 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 19:46:49 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 162 total tallied.
+[2026-11-12 19:46:50 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 291 total tallied.
+[2026-11-12 19:46:52 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 470 total tallied.
+[2026-11-12 19:46:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 19:46:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
