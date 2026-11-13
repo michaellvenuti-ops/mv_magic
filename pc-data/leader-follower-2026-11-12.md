@@ -42,3 +42,6 @@
 ## 2026-11-12T18:11:35-05:00 — no-follow: Kalshi Kansas State @ TCU | 2026-11-12 spread (only 0 followed)
 ## 2026-11-12T18:11:35-05:00 — pack move, never credited: Missouri @ Georgia | 2026-11-12 spread (Caesars, DraftKings, bet365)
 ## 2026-11-12T18:11:35-05:00 — 81 games, 0 leads credited, 3 started games skipped
+## 2026-11-12T19:20:23-05:00 — no-follow: DraftKings Nebraska @ Rutgers | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T19:20:23-05:00 — no-follow: DraftKings East Carolina @ Charlotte | 2026-11-12 spread (only 0 followed)
+## 2026-11-12T19:20:24-05:00 — 81 games, 0 leads credited, 3 started games skipped
