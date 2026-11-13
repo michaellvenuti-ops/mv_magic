@@ -6710,3 +6710,10 @@
 [2026-11-12 19:46:52 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 4 unverified, 470 total tallied.
 [2026-11-12 19:46:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 19:46:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-12 19:59:36 ET] sync_to_github.py: FAILED (exit 1) in 762s —   FAILED: pc-data/nhl-finals-2026-11-08.json (HTTP 409: {'error': '{"message":"is at 2003a45ca4bc8e299c131ba32a1faf14a286f432 but expected 958e519fa4571dfd979d4
+[2026-11-12 20:01:07 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (90 with odds), db total 252399 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 20:01:08 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 20:02:59 ET] dh_game_middles.py: OK in 111s — GAME MIDDLE: NBA CHA Hornets PHO Suns Today 9:15 PM / table / 1st Quarter Total Over 54 / 1st Quarter Alt Total Under 54.5 / table | Caesars | FanDuel — window 
+[2026-11-12 20:06:29 ET] dh_key_number_middles.py: OK in 210s — key-number-middles: 175 basketball rows excluded (football-only rule).
+[2026-11-12 20:08:09 ET] dh_prop_middles.py: OK in 100s — PROP MIDDLE CLEAN : NFL WAS Commanders NY Giants Today 8:15 PM / table / Passing Yards J. Daniels Under 204.5 / Passing Yards J. Daniels Over 203.5 / table | Ha
+[2026-11-12 20:08:10 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
