@@ -7340,3 +7340,10 @@
 [2026-11-13 15:25:15 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 15:25:16 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 15:25:17 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-13 15:40:28 ET] sync_to_github.py: FAILED (exit 1) in 911s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-09-hour-1.txt (HTTP 422: {'error': '{"message":"Invalid request.\\n\\n\\"sha\\" wasn\'t supplied.","docu
+[2026-11-13 15:42:12 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 216 events (199 with odds), db total 264795 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 15:46:11 ET] dh_game_middles.py: OK in 239s — GAME MIDDLE: NCAAB Ball St. SMU Today 9:00 PM / table / Alt Total Under 155.5 / Alt Total Over 155 / table | Bally Bet | Bet365 — window 320.0 :: -165 $1,000 Ba
+[2026-11-13 15:50:14 ET] dh_key_number_middles.py: OK in 242s — key-number-middles: 535 basketball rows excluded (football-only rule).
+[2026-11-13 15:51:27 ET] hung_number.py: OK in 73s — HUNG NUMBER: USC vs Indiana — DraftKings spread value dog (9.5 vs median 8.5)
+[2026-11-13 15:51:32 ET] rlm.py: OK in 5s
+[2026-11-13 15:51:36 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
