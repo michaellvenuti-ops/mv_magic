@@ -11,3 +11,9 @@
 ## 2026-11-12T17:28:08-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 470 games through 2026-11-12
 - 2026-11-12: Kansas City Roos @ George Mason Patriots — first: George Mason Patriots (2PT, 2:01 in); lead changes 2; final 68-76
 - note: 4 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-12T20:29:38-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 474 games through 2026-11-12
+- 2026-11-12: Mercyhurst Lakers @ Penn State Nittany Lions — first: Mercyhurst Lakers (FT, 1:33 in); lead changes 5; final 57-72
+- 2026-11-12: Bradley Braves @ Coppin State Eagles — first: Bradley Braves (2PT, 0:12 in); lead changes 6; final 56-54
+- 2026-11-12: Johnson & Wales Griffins @ Boston University Terriers — first: Boston University Terriers (2PT, 0:30 in); lead changes 2; final 74-100
+- 2026-11-12: Morgan State Bears @ UMBC Retrievers — first: Morgan State Bears (2PT, 1:16 in); lead changes 1; final 70-85
+- note: 4 final(s) UNVERIFIED this run — left out, retried next run.
