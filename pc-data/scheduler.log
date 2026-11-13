@@ -7389,3 +7389,7 @@
 [2026-11-13 17:07:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 17:07:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 17:07:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-13 17:22:19 ET] sync_to_github.py: FAILED (exit 1) in 883s —   FAILED: pc-data/costco-gold/dump-2026-11-11.txt (HTTP 409: {'error': '{"message":"is at 78a89bf15079b3ff567b973228328e0ff3282b3e but expected d95a0aa0092bc6aa
+[2026-11-13 17:23:52 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (197 with odds), db total 265659 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 17:26:08 ET] dh_game_middles.py: OK in 135s — GAME MIDDLE: NCAAB Southern Miss Texas St. Today 8:00 PM / table / Spread Southern Miss +11.5 / Alt Spread Texas St. -11 / table bar_chart | Bally Bet | Prophet
+[2026-11-13 17:29:33 ET] dh_key_number_middles.py: OK in 205s — key-number-middles: 501 basketball rows excluded (football-only rule).
