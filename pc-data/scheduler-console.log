@@ -6958,3 +6958,16 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 02:06:03 ET] dh_key_number_middles.py: OK in 214s — key-number-middles: 144 basketball rows excluded (football-only rule).
 [2026-11-13 02:07:36 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NBA ATL Hawks CHI Bulls Today 8:15 PM / table / Pts+Ast+Rebs M. Buzelis Under 25.5 / Pts+Ast+Rebs M. Buzelis 25+ / table | theScore | Bet365
 [2026-11-13 02:07:38 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 02:20:38 ET] sync_to_github.py: FAILED (exit 1) in 780s —   FAILED: pc-data/correlated-parlay-2026-11-06.md (HTTP 409: {'error': '{"message":"is at dd3574ba333c53109b9710c87419192683f4fbfc but expected f160319761e8d64e
+[2026-11-13 02:22:23 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 188 events (73 with odds), db total 256911 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 02:22:23 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 02:25:52 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
+[2026-11-13 02:25:57 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 02:27:46 ET] dh_sog_middles.py: OK in 109s — - 0 deliverables this run
+[2026-11-13 02:27:50 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 02:27:51 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 02:27:52 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 02:27:53 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 02:27:54 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 02:27:55 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 02:27:56 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
