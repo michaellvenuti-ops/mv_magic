@@ -13,3 +13,4 @@
 ## 2026-11-13T09:32:51-05:00 — 67 games, 1 steam events, 2 NEW flags, 4 started games skipped
 NEW FLAG: FBS Wyoming @ UTEP | 2026-11-13 — Fanatics still dealing spread 8.5 on UTEP (pre-move median 8.5, now 7.5)
 NEW FLAG: FBS Wyoming @ UTEP | 2026-11-13 — Kalshi still dealing spread 9.5 on UTEP (pre-move median 8.5, now 7.5)
+## 2026-11-13T10:25:08-05:00 — 67 games, 1 steam events, 0 NEW flags, 4 started games skipped
