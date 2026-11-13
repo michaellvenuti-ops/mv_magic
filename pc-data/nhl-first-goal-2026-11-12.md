@@ -13,3 +13,6 @@
 - 2026-11-12: Colorado Avalanche @ Ottawa Senators — first goal: Ottawa Senators (EV, Shane Pinto, 12:49 in); lead changes 2; final 3-4
 - 2026-11-12: Washington Capitals @ New Jersey Devils — first goal: New Jersey Devils (PP, Evan Rodrigues, 17:40 in); lead changes 2; final 2-5
 - 2026-11-12: Tampa Bay Lightning @ Columbus Blue Jackets — first goal: Tampa Bay Lightning (EV, Brandon Hagel, 17:03 in); lead changes 0; final 3-1
+## 2026-11-12T22:45:25-05:00 -- NHL FIRST GOAL (PC): 2 new final(s) tallied; season 298 games through 2026-11-12
+- 2026-11-12: Detroit Red Wings @ Florida Panthers — first goal: Florida Panthers (EV, Sam Reinhart, 16:08 in); lead changes 2; final 4-5
+- 2026-11-12: Winnipeg Jets @ Dallas Stars — first goal: Dallas Stars (EV, Arttu Hyry, 15:41 in); lead changes 1; final 8-3
