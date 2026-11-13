@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frank's Assists Model — Tyrese Maxey</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0d1117; color: #e6edf3; margin: 0; padding: 0; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 18px 48px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: #8b949e; font-size: 14px; margin-bottom: 20px; }
+  .sub a { color: #58a6ff; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+  .card h2 { font-size: 17px; margin: 0 0 10px; color: #f0b429; }
+  .verdict { border: 2px solid #f85149; background: #2a1215; }
+  .verdict h2 { color: #ff7b72; font-size: 20px; }
+  .verdict .big { font-size: 22px; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #30363d; }
+  th { color: #8b949e; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  .pos { color: #3fb950; font-weight: 700; }
+  .neg { color: #f85149; font-weight: 700; }
+  .muted { color: #8b949e; font-size: 13px; }
+  .mono { font-variant-numeric: tabular-nums; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .tag { display: inline-block; background: #30363d; border-radius: 6px; padding: 2px 8px; font-size: 12px; margin-right: 6px; }
+  .foot { color: #8b949e; font-size: 12px; margin-top: 22px; }
+  a { color: #58a6ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Frank's Assists Model — Tyrese Maxey</h1>
+  <div class="sub">Modeled from Frank Civittolo's reel <a href="https://www.instagram.com/reel/Dfr_RX2gqaO/">"Easiest Way to Predict an NBA Player's Assists"</a> (posted Fri Nov 13, 2026, 7:49 AM ET) &middot; Built Fri Nov 13, 2026, ~2:50 PM ET &middot; Paper model only — not a Frank pick</div>
+
+  <div class="card verdict">
+    <h2>Verdict</h2>
+    <div class="big">NO EDGE — PASS on Over 5.5 assists</div>
+    <p>Frank's system says skip this one. The matchup isn't a top-5 soft spot for point-guard assists, and the true probability of Maxey hitting 6+ assists (38.5% this season) sits well below the book's implied probability (~54–58%). Blended expectation lands ~5.3–5.7 assists — right at the 5.5 line, no clear side.</p>
+    <p class="muted">Sunday's assist props aren't posted yet (as of ~2:50 PM ET Fri). Re-check Sunday morning when they post; if the line opens at 4.5, re-run — 5+ true is 46% vs ~59% implied, still no edge.</p>
+  </div>
+
+  <div class="card">
+    <h2>The game</h2>
+    <p><strong>Maxey / 76ers do NOT play tonight (Fri Nov 13).</strong></p>
+    <p>Next game: <strong>Sun Nov 15, 1:00 PM ET — Indiana Pacers at Philadelphia 76ers</strong>, Xfinity Mobile Arena.</p>
+    <p>Records: 76ers 10-3 &middot; Pacers 4-8. (Note: the Pacers also play Fri Nov 13 at 7:00 PM ET vs the Knicks, so their record will move before Sunday.) Book spread/total for Nov 15 not cleanly verified — pages showing PHI −7.5 / 234.5 are the Oct 28 game, not Nov 15.</p>
+  </div>
+
+  <div class="card">
+    <h2>Frank's formula (from the reel)</h2>
+    <p class="muted">No verbatim spoken transcript was available for this reel (transcript endpoint returned empty); the formula below is confirmed from the reel via a read of the whiteboard + audio. Structure and numbers verified; exact spoken phrasing not available word-for-word.</p>
+    <ol>
+      <li><strong>Find the top 5 teams that allow the most assists to point guards</strong> — PGs are the primary distributors, so target the softest PG matchups.</li>
+      <li><strong>Find an assist-prop number where the "true probability" beats the sportsbook's implied probability.</strong> True probability = how often the player has hit that number this season + head-to-head against that opponent. Bet only where true probability &gt; implied probability.</li>
+    </ol>
+    <p><strong>Frank's worked example (Maxey, favorable matchup, hypothetical odds):</strong> 3+ assists at 85% true vs 80% implied (+5% edge) &middot; 4+ at 70% vs 75% (−5%) &middot; 5+ at 50% vs 55% (−5%). Only the 3+ line had an edge. No pick was stated in the reel — instructional only.</p>
+  </div>
+
+  <div class="card">
+    <h2>Step 1 — Top-5 soft matchup? NO</h2>
+    <p>Indiana's defense vs guard assists (PropLab DvP, Nov 13): ratio <strong>1.05</strong> — 5% above league average, exactly on PropLab's own "soft" threshold line. Absolute: ~13.4–13.8 assists/game allowed to guards — slightly above average, mid-pack.</p>
+    <p>Top 5 softest vs guard assists: <span class="tag">Washington 1.32</span><span class="tag">Chicago 1.24</span><span class="tag">Milwaukee 1.24</span><span class="tag">Cleveland 1.22</span><span class="tag">Dallas / Toronto 1.21</span></p>
+    <p><strong>Indiana is NOT top 5.</strong> Frank's first filter already fails — this is not the spot his system is hunting.</p>
+  </div>
+
+  <div class="card">
+    <h2>Step 2 — True probability vs implied (at the expected 5.5 line = 6+ assists)</h2>
+    <table>
+      <tr><th>Rung</th><th>True (season)</th><th>Implied (last posted)</th><th>Edge</th></tr>
+      <tr><td>3+ ast (Over 2.5)</td><td class="mono">13/13 = 100%</td><td class="mono">~56% (−125)</td><td class="pos">+44 pts</td></tr>
+      <tr><td>4+ ast (Over 3.5)</td><td class="mono">13/13 = 100%</td><td class="mono">~56% (−125/−130)</td><td class="pos">+44 pts</td></tr>
+      <tr><td>5+ ast (Over 4.5)</td><td class="mono">6/13 = 46.2%</td><td class="mono">~59% (−145)</td><td class="neg">negative</td></tr>
+      <tr><td>6+ ast (Over 5.5)</td><td class="mono">5/13 = 38.5%</td><td class="mono">~54–58%</td><td class="neg">−16 to −20 pts</td></tr>
+    </table>
+    <p class="muted">Implied probabilities are from the last posted prices (Nov 12 vs Toronto game — reference only, not Sunday's). Maxey has never had fewer than 4 assists in 13 games this season, so the low rungs are near-certainties on paper — exactly like Frank's example, where only the 3+ rung had the edge. But a −125 near-lock on a 13-game sample is not a real prop play, and Sunday's prices aren't posted yet anyway.</p>
+    <p>Cross-check: OPTIMAL projects <strong>5.7 assists</strong> for the next game (fair Over 5.5 −114 = 53.3%, vs last posted market −136 = 57.6% — market already above fair, no value). One counterpoint: Maxey's <em>career</em> hit rate vs 5.5 is 59% (92/156, per OPTIMAL) — above implied — but Frank's formula explicitly uses current-season + head-to-head, and both of those point under.</p>
+  </div>
+
+  <div class="card">
+    <h2>Maxey's inputs</h2>
+    <ul>
+      <li><strong>Season to date (13 games, through Nov 12):</strong> 72 assists, <strong>5.5 APG</strong>, 26.7 PPG, 36.3 MPG, 27.7% usage.</li>
+      <li><strong>Last 5:</strong> 7, 4, 7, 4, 8 → <strong>6.0 APG</strong> (3 of 5 at 6+).</li>
+      <li><strong>Game log (assists):</strong> Oct 20 @NYK 5 &middot; Oct 22 CLE 6 &middot; Oct 24 MIL 4 &middot; Oct 25 DET 4 &middot; Oct 28 @IND 4 &middot; Oct 30 NYK 4 &middot; Oct 31 @CHA 4 &middot; Nov 2 CHI 11 &middot; Nov 4 @DET 7 &middot; Nov 6 @CLE 4 &middot; Nov 8 @CHI 7 &middot; Nov 10 BOS 4 &middot; Nov 12 TOR 8.</li>
+      <li><strong>Head-to-head vs Indiana:</strong> Oct 28, 2026 @IND — 4 assists (PHI won 114-109). Career vs IND: 4.5 APG over 20 games.</li>
+      <li><strong>Expected line Sunday: 5.5</strong> (his line in 8 of his last 10 games; 4.5 in the other two).</li>
+    </ul>
+    <p class="muted">Last posted prices (Nov 12 vs TOR, reference only): consensus Over 5.5 −119 / Under −110 &middot; DraftKings −127 / −107 &middot; FanDuel −140 / +105 &middot; BetMGM −119 / −110 &middot; Caesars −128 / −100 &middot; Fanatics −145 / +114 &middot; bet365 −130 / +102.</p>
+  </div>
+
+  <div class="card">
+    <h2>What could NOT be verified</h2>
+    <ul>
+      <li>No verbatim transcript of the reel — formula confirmed via whiteboard/audio read, not Frank's exact spoken words.</li>
+      <li>No Sunday book line or prices yet — all prices above are the Nov 12 Raptors-game lines, labeled as such.</li>
+      <li>Nov 15 game spread/total from books (only a model read: PHI ~65%, total ~226.5).</li>
+      <li>No single canonical "assists allowed to PGs" leaderboard — used PropLab DvP ratios + Hoopsgraph/getBettor guard splits as closest available.</li>
+    </ul>
+  </div>
+
+  <div class="foot">Sources: Instagram reel Dfr_RX2gqaO &middot; Basketball-Reference &middot; PropLab DvP &middot; Hoopsgraph / getBettor &middot; ScoresAndOdds &middot; BettingPros / OPTIMAL &middot; StatMuse / Sportradar standings. Built by Chet for Michael Venuti, Fri Nov 13, 2026. Paper model only — Chet never places bets.</div>
+</div>
+</body>
+</html>
