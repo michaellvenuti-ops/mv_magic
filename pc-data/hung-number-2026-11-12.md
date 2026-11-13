@@ -1,19 +1,18 @@
-# Hung numbers — 2026-11-12 (scan 2026-11-12 21:35)
+# Hung numbers — 2026-11-12 (scan 2026-11-12 22:42)
 
-- Commanders vs Giants | DraftKings | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
-- Commanders vs Giants | FanDuel | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
-- Commanders vs Giants | Hard Rock | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
-- Commanders vs Giants | FanDuel | total | value: Under | book 34.5 vs median 36.5 | div 2.0 
-- Commanders vs Giants | DraftKings | moneyline Commanders | value: Commanders | book 64.9 vs median 59.2 | div 5.7 
-- Commanders vs Giants | FanDuel | moneyline Commanders | value: Commanders | book 53.1 vs median 59.2 | div 6.1 
-- Commanders vs Giants | Hard Rock | moneyline Commanders | value: Commanders | book 53.5 vs median 59.2 | div 5.7 
-- Commanders vs Giants | DraftKings | moneyline Giants | value: Giants | book 41.8 vs median 46.9 | div 5.1 
-- Commanders vs Giants | FanDuel | moneyline Giants | value: Giants | book 53.1 vs median 46.9 | div 6.1 
-- Commanders vs Giants | Hard Rock | moneyline Giants | value: Giants | book 53.5 vs median 46.9 | div 6.5 
-- Memphis vs South Florida | Caesars | spread | value: favorite | book -23.5 vs median -20.5 | div 3.0 
-- Memphis vs South Florida | FanDuel | spread | value: dog | book -19.5 vs median -20.5 | div 1.0 
-- Louisiana vs Louisiana-Monroe | FanDuel | spread | value: favorite | book -6.5 vs median -4.5 | div 2.0 
-- Louisiana vs Louisiana-Monroe | FanDuel | moneyline Louisiana-Monroe | value: Louisiana-Monroe | book 31.7 vs median 37.2 | div 5.4 
+- Commanders vs Giants | BetMGM | spread | value: dog | book 1.5 vs median -1.5 | div 3.0 
+- Commanders vs Giants | DraftKings | spread | value: dog | book 1.5 vs median -1.5 | div 3.0 
+- Memphis vs South Florida | BetMGM | total | value: Under | book 64.5 vs median 75.5 | div 11.0 
+- Louisiana vs Louisiana-Monroe | BetMGM | spread | value: favorite | book -6.5 vs median -4.5 | div 2.0 
+- Louisiana vs Louisiana-Monroe | DraftKings | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
+- Louisiana vs Louisiana-Monroe | Caesars | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
+- Louisiana vs Louisiana-Monroe | FanDuel | spread | value: dog | book -2.5 vs median -4.5 | div 2.0 
+- Louisiana vs Louisiana-Monroe | FanDuel | total | value: Under | book 48.5 vs median 51.5 | div 3.0 
+- Louisiana vs Louisiana-Monroe | BetMGM | moneyline Louisiana | value: Louisiana | book 77.8 vs median 71.3 | div 6.5 
+- Louisiana vs Louisiana-Monroe | FanDuel | moneyline Louisiana | value: Louisiana | book 60.6 vs median 71.3 | div 10.6 
+- Louisiana vs Louisiana-Monroe | BetMGM | moneyline Louisiana-Monroe | value: Louisiana-Monroe | book 28.6 vs median 35.2 | div 6.6 
+- Louisiana vs Louisiana-Monroe | FanDuel | moneyline Louisiana-Monroe | value: Louisiana-Monroe | book 45.0 vs median 35.2 | div 9.9 
+- Wisconsin vs Maryland | Fanatics | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
 - New Mexico State vs Missouri State | Fanatics | spread | value: dog | book 49.0 vs median 1.5 | div 47.5 middle pairing spans key number 7
 - New Mexico State vs Missouri State | Fanatics | moneyline New Mexico State | value: New Mexico State | book 99.0 vs median 50.5 | div 48.5 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
