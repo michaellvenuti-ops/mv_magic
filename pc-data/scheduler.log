@@ -6963,3 +6963,22 @@
 [2026-11-13 03:38:38 ET] dh_prop_middles.py: OK in 96s — prop-middles: no new/changed qualifying middles.
 [2026-11-13 03:38:40 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 03:40:19 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 188 events (73 with odds), db total 257663 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 03:54:01 ET] sync_to_github.py: FAILED (exit 1) in 822s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-09-hour-3.json (HTTP 409: {'error': '{"message":"is at 50d302672e919791da21bd53dfbd275282d575dc but expe
+[2026-11-13 03:55:35 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 188 events (73 with odds), db total 257851 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 03:56:45 ET] dh_arbitrage.py: OK in 70s — ARBITRAGE: NHL NSH Predators VGS Golden Knights Today 10:00 PM / table / Points I. Barbashev Under 0.5 / Points I. Barbashev 1+ / table | Bally Bet | Bet365
+[2026-11-13 03:57:49 ET] dh_kalshi_poly_arb.py: OK in 64s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 03:57:52 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 03:58:21 ET] dh_low_holds.py: OK in 29s — LOW-HOLDS: NCAAF Tulane Rice Nov-14 2:00 PM / table / Alt Spread Tulane +9.5 / Alt Spread Rice -9.5 / table | Bally Bet | DraftKings
+[2026-11-13 04:01:57 ET] dh_basketball_key_middles.py: OK in 216s — basketball-key-middles: no new basketball middles.
+[2026-11-13 04:03:17 ET] hung_number.py: OK in 80s — No new hung numbers (13 current flags).
+[2026-11-13 04:03:22 ET] rlm.py: OK in 5s
+[2026-11-13 04:03:26 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 04:03:29 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 04:05:15 ET] dh_sog_middles.py: OK in 106s — - 0 deliverables this run
+[2026-11-13 04:05:16 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 04:05:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 04:05:18 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 04:05:19 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 04:05:21 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 04:05:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 04:05:22 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
