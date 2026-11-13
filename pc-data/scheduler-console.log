@@ -7045,3 +7045,28 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 04:48:37 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
 [2026-11-13 04:48:38 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 04:48:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-13 05:01:51 ET] sync_to_github.py: FAILED (exit 1) in 791s —   FAILED: pc-data/half-percent-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 662880163d4f974fe366178c08a10d34bdbd1e4a but expected 052f3f28b2851dc1a4900
+[2026-11-13 05:03:26 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 188 events (73 with odds), db total 258603 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 05:05:10 ET] dh_arbitrage.py: OK in 105s — ARBITRAGE: NCAAB Arkansas-Pine Bluff California Baptist Today 10:30 PM / table / Spread California Baptist -14.5 / Alt Spread Arkansas-Pine Bluff +14.5 / table 
+[2026-11-13 05:06:59 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 108s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-13 05:07:01 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 05:07:41 ET] dh_low_holds.py: OK in 41s — LOW-HOLDS: NBA MEM Grizzlies NO Pelicans Today 8:15 PM / table / Pts+Ast T. Jerome Under 29.5 / Pts+Ast T. Jerome 30+ / table | DraftKings | Bet365
+[2026-11-13 05:09:45 ET] dh_game_middles.py: OK in 124s — GAME MIDDLE: NBA ATL Hawks CHI Bulls Today 8:15 PM / table / Spread CHI Bulls +7.5 / Alt Spread ATL Hawks -7 / table | theScore | Bet365 — window 4.0 :: -105 $1
+[2026-11-13 05:13:37 ET] dh_key_number_middles.py: OK in 232s — key-number-middles: 218 basketball rows excluded (football-only rule).
+[2026-11-13 05:15:14 ET] dh_prop_middles.py: OK in 97s — prop-middles: no new/changed qualifying middles.
+[2026-11-13 05:15:16 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 05:19:31 ET] sync_to_github.py: FAILED (exit 1) in 255s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-13 05:21:03 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 188 events (73 with odds), db total 258791 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 05:24:57 ET] dh_basketball_key_middles.py: OK in 234s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Columbia Bucknell Today 7:00 PM / table / Spread Bucknell +6.5 / Alt Spread Columbia -5 / table | theSc
+[2026-11-13 05:26:13 ET] hung_number.py: OK in 77s — HUNG NUMBER: Panthers vs Saints — FanDuel spread value favorite (1.5 vs median 2.5)
+[2026-11-13 05:26:19 ET] rlm.py: OK in 5s
+[2026-11-13 05:26:23 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 05:26:26 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 05:28:18 ET] dh_sog_middles.py: OK in 112s — - 0 deliverables this run
+[2026-11-13 05:28:20 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 05:28:21 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 05:28:22 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 05:28:23 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 05:28:25 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 05:28:25 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 05:28:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
