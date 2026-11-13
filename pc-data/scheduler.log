@@ -7226,3 +7226,20 @@
 [2026-11-13 11:50:43 ET] hung_number.py: OK in 73s — HUNG NUMBER: Kansas State vs TCU — BetMGM spread value dog (12.5 vs median 11.5)
 [2026-11-13 11:50:47 ET] rlm.py: OK in 5s
 [2026-11-13 11:50:51 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 12:06:08 ET] sync_to_github.py: FAILED (exit 1) in 917s —   FAILED: pc-data/costco-gold/dump-2026-11-09.txt (HTTP 409: {'error': '{"message":"is at 72bdb563abaf0c4a2d5c8f4c2266741bd16f5a6a but expected 45976ff44485ffe6
+[2026-11-13 12:07:43 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 216 events (200 with odds), db total 262635 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 12:07:44 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 12:13:25 ET] dh_basketball_key_middles.py: OK in 341s — basketball-key-middles: no new basketball middles.
+[2026-11-13 12:13:32 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 12:15:37 ET] dh_prop_middles.py: OK in 125s — PROP MIDDLE CLEAN : NBA MIL Bucks ORL Magic Today 7:15 PM / table / Points F. Wagner Under 25.5 / Alt Points F. Wagner 25+ / table | BetParx | DraftKings — wind
+[2026-11-13 12:17:33 ET] dh_sog_middles.py: OK in 115s — - 0 deliverables this run
+[2026-11-13 12:17:37 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 12:17:38 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 12:17:40 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 12:17:41 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 12:17:43 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 12:17:44 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 12:17:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 12:17:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-13 12:17:49 ET] public_fade.py: OK in 3s
+[2026-11-13 12:19:24 ET] dh_positive_ev.py: FAILED (exit 2) in 95s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-13.txt. No prices inven
