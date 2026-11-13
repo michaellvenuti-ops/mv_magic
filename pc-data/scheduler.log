@@ -6811,3 +6811,12 @@
 [2026-11-12 22:45:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
 [2026-11-12 22:45:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-12 22:47:12 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 188 events (73 with odds), db total 254467 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 22:59:28 ET] sync_to_github.py: FAILED (exit 1) in 736s —   FAILED: pc-data/prop-middles-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 27824d9ecb50526e27c712591df30679d4a1229b but expected 38123da91bb030b8d6577
+[2026-11-12 23:00:11 ET] odds_recorder.py: OK in 13s — SUMMARY: recorded 188 events (73 with odds), db total 254655 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 23:01:24 ET] dh_arbitrage.py: OK in 73s — ARBITRAGE: NBA CLE Cavaliers MIA Heat Nov-13 8:15 PM / table / Rebounds G. Antetokounmpo Under 12.5 / Alt Rebounds G. Antetokounmpo 13+ / table | BetRivers | Be
+[2026-11-12 23:02:09 ET] dh_kalshi_poly_arb.py: OK in 45s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 23:03:02 ET] dh_low_holds.py: OK in 53s — LOW-HOLDS: NFL NE Patriots DET Lions Nov-15 9:30 AM / table / Alt Spread DET Lions +9.5 / Alt Spread NE Patriots -8.5 / table | DraftKings | Bally Bet
+[2026-11-12 23:04:57 ET] dh_game_middles.py: OK in 115s — GAME MIDDLE: NCAAF Oregon St. 17 Boise St. Nov-14 6:00 PM / table / 1st Half Spread Boise St. -7.5 / 1st Half Alt Spread Oregon St. +8.5 / table | Bet365 | Ball
+[2026-11-12 23:08:30 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 146 basketball rows excluded (football-only rule).
+[2026-11-12 23:10:11 ET] dh_prop_middles.py: OK in 101s — PROP MIDDLE CLEAN : NBA NY Knicks IND Pacers Nov-13 7:15 PM / table / Pts+Ast+Rebs I. Zubac Under 25.5 / Pts+Ast+Rebs I. Zubac 25+ / table | FanDuel | Fanatics-
+[2026-11-12 23:10:13 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
