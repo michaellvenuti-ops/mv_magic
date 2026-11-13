@@ -6769,3 +6769,19 @@
 [2026-11-12 21:38:32 ET] dh_prop_middles.py: OK in 101s — PROP MIDDLE CLEAN : NFL HOU Texans CLE Browns Nov-15 1:00 PM / table / Receiving Yards J. Jeudy Over 13.5 / Receiving Yards J. Jeudy Under 14.5 / table | BetRiv
 [2026-11-12 21:38:34 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 21:40:06 ET] odds_recorder.py: OK in 62s — SUMMARY: recorded 188 events (75 with odds), db total 253527 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 21:52:44 ET] sync_to_github.py: FAILED (exit 1) in 758s —   FAILED: ncaab-first-score-board-pc.html (HTTP 409: {'error': '{"message":"is at 63e11f0ce12c44b94ed30ae9f281dbb5f6470b73 but expected 3b8f2bf461eab4aab3d883c4
+[2026-11-12 21:53:18 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (75 with odds), db total 253715 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 21:54:11 ET] dh_arbitrage.py: OK in 54s — ARBITRAGE: NHL NY Islanders LA Kings Today 10:00 PM / table / Shots B. Schenn 2+ / Shots B. Schenn Under 1.5 / table | DraftKings | BetMGM
+[2026-11-12 21:54:34 ET] dh_kalshi_poly_arb.py: OK in 22s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-12 21:54:36 ET] wide_builds.py: OK in 3s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 21:54:55 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAF 20 South Carolina Arkansas Nov-14 7:45 PM / table / Moneyline South Carolina / Moneyline South Carolina NO / table bar_chart | Bet365 | Kalshi
+[2026-11-12 21:58:11 ET] dh_basketball_key_middles.py: OK in 196s — basketball-key-middles: no new basketball middles.
+[2026-11-12 21:58:17 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Louisiana @ Louisiana-Monroe | 2026-11-12 | Kalshi | Over total 47.5 (median 47.5 -> 56.5)
+[2026-11-12 21:59:48 ET] dh_sog_middles.py: OK in 91s — - 0 deliverables this run
+[2026-11-12 21:59:51 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 21:59:52 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 21:59:54 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 1 unverified, 163 total tallied.
+[2026-11-12 21:59:56 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 5 new, 0 unverified, 296 total tallied.
+[2026-11-12 21:59:59 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 3 new, 4 unverified, 491 total tallied.
+[2026-11-12 21:59:59 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 22:00:01 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
