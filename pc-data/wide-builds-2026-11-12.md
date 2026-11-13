@@ -192,3 +192,13 @@ NCAAB Southern Utah High Point Today 7:00 PM — Total — Over 153.5 Bet365 +10
 NCAAF Georgia Tech Clemson Nov-14 12:30 PM — Spread — Clemson -8.5 Bally Bet -150 ($109) / Georgia Tech +13.5 HardRock +100 ($91) — both win 9, 10, 11, 12, 13 — land +$163.67, miss -18.00 / -18.33 on ~$200 balanced
 NCAAF Southern Miss Louisiana Tech Nov-14 5:00 PM — Total — Over 57.5 BetRivers +112 ($87) / Under 60.5 Fanatics-NJ -160 ($113) — both win 58, 59, 60 — land +$168.06, miss -16.38 / -15.56 on ~$200 balanced
 NFL WAS Commanders NY Giants Today 8:15 PM — Rush Yards R. White — Over 39.5 Bally Bet +108 ($95) / Under 42.5 Bet365 -115 ($105) — both win 40, 41, 42 — land +$193.90, miss -3.70 / -2.40 on ~$200 balanced
+## 2026-11-12T18:51:51-05:00 — wide-builds: 0 NEW wide builds
+(end of new builds — full list below)
+CFL MTL Alouettes EDM Elks Nov-15 6:00 PM — Rush Yards D. Alexander — Over 14.5 Bally Bet +128 ($90) / Under 17.5 FanDuel -114 ($110) — both win 15, 16, 17 — land +$211.69, miss +6.49 / +5.20 on ~$200 balanced
+NCAAB CSU Bakersfield Western Illinois Nov-12 7:00 PM — Total — Over 148.5 Bally Bet -113 ($101) / Under 151.5 BetMGM -110 ($99) — both win 149, 150, 151 — land +$179.38, miss -11.00 / -9.62 on ~$200 balanced
+NCAAB Loyola (MD) Towson Today 7:00 PM — Total — Over 132.5 DraftKings -175 ($117) / Under 136.5 Bet365 +120 ($83) — both win 133, 134, 135, 136 — land +$166.46, miss -17.40 / -16.14 on ~$200 balanced
+NCAAB Loyola (MD) Towson Today 7:00 PM — Total — Over 134.5 Caesars -110 ($100) / Under 138.5 Bally Bet -110 ($100) — both win 135, 136, 137, 138 — land +$181.82, miss -9.09 / -9.09 on ~$200 balanced
+NCAAB Southern Utah High Point Today 7:00 PM — Total — Over 153.5 Bet365 +100 ($92) / Under 156.5 DraftKings -145 ($108) — both win 154, 155, 156 — land +$166.48, miss -17.52 / -16.00 on ~$200 balanced
+NCAAF Georgia Tech Clemson Nov-14 12:30 PM — Spread — Clemson -8.5 Bally Bet -150 ($109) / Georgia Tech +13.5 HardRock +100 ($91) — both win 9, 10, 11, 12, 13 — land +$163.67, miss -18.00 / -18.33 on ~$200 balanced
+NCAAF Southern Miss Louisiana Tech Nov-14 5:00 PM — Total — Over 57.5 BetRivers +112 ($87) / Under 60.5 Fanatics-NJ -160 ($113) — both win 58, 59, 60 — land +$168.06, miss -16.38 / -15.56 on ~$200 balanced
+NFL WAS Commanders NY Giants Today 8:15 PM — Rush Yards R. White — Over 39.5 Bally Bet +108 ($95) / Under 42.5 Bet365 -115 ($105) — both win 40, 41, 42 — land +$193.90, miss -3.70 / -2.40 on ~$200 balanced
