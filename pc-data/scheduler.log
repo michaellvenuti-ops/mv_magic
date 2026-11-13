@@ -7132,3 +7132,15 @@
 [2026-11-13 08:41:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-13 08:42:27 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 261047 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-13 08:42:29 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 08:57:23 ET] sync_to_github.py: FAILED (exit 1) in 865s —   FAILED: pc-data/spread-cover-2026-11-12.md (HTTP 409: {'error': '{"message":"is at a972edfef441ed1f9be93e31698dc916d1b12aa9 but expected 1ec2cf2059a914986b443
+[2026-11-13 08:59:02 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 188 events (73 with odds), db total 261235 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 09:01:13 ET] dh_arbitrage.py: OK in 131s — ARBITRAGE: NCAAB Northern Arizona 24 Kentucky Today 7:00 PM / table / Alt Spread Kentucky -29.5 / Alt Spread Northern Arizona +29.5 / table | Fanatics-NJ | BetR
+[2026-11-13 09:01:57 ET] dh_kalshi_poly_arb.py: OK in 44s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 09:02:20 ET] dh_low_holds.py: OK in 23s — low-holds: no new qualifying pairs (silent).
+[2026-11-13 09:04:38 ET] dh_game_middles.py: OK in 138s — GAME MIDDLE: NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM / table / Spread Prairie View A&M +41.5 / Alt Spread Vanderbilt -40.5 / table | FanDuel | Bally 
+[2026-11-13 09:08:59 ET] dh_key_number_middles.py: OK in 260s — key-number-middles: 417 basketball rows excluded (football-only rule).
+[2026-11-13 09:10:27 ET] hung_number.py: OK in 88s — No new hung numbers (14 current flags).
+[2026-11-13 09:10:37 ET] rlm.py: OK in 9s
+[2026-11-13 09:10:41 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 09:10:47 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-13.json (5 markets).
+[2026-11-13 09:12:04 ET] yahoo_brief.py: OK in 77s — SUMMARY: signed_in=None — report written, no extraction
