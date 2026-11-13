@@ -42,3 +42,4 @@ NEW FLAG: FBS Louisiana @ Louisiana-Monroe | 2026-11-12 — Kalshi still dealing
 ## 2026-11-12T22:43:35-05:00 — 67 games, 1 steam events, 2 NEW flags, 4 started games skipped
 NEW FLAG: FBS Louisiana @ Louisiana-Monroe | 2026-11-12 — Caesars still dealing spread 3.5 on Louisiana (pre-move median 3.5, now 5.5)
 NEW FLAG: FBS Louisiana @ Louisiana-Monroe | 2026-11-12 — FanDuel still dealing spread 2.5 on Louisiana (pre-move median 3.5, now 5.5)
+## 2026-11-12T23:28:34-05:00 — 67 games, 0 steam events, 0 NEW flags, 4 started games skipped
