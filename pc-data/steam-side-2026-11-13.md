@@ -21,3 +21,4 @@ NEW FLAG: FBS Wyoming @ UTEP | 2026-11-13 — Kalshi still dealing spread 9.5 on
 ## 2026-11-13T14:45:22-05:00 — 67 games, 1 steam events, 2 NEW flags, 4 started games skipped
 NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-13 — Fanatics still dealing spread 17.0 on Vanderbilt (pre-move median 17.0, now 16.0)
 NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-13 — Kalshi still dealing spread 17.5 on Vanderbilt (pre-move median 17.0, now 16.0)
+## 2026-11-13T15:22:04-05:00 — 67 games, 0 steam events, 0 NEW flags, 4 started games skipped
