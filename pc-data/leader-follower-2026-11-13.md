@@ -17,3 +17,7 @@
 ## 2026-11-13T10:25:05-05:00 — pack move, never credited: Nevada @ Northern Illinois | 2026-11-13 spread (BetMGM, Caesars, DraftKings)
 ## 2026-11-13T10:25:05-05:00 — pack move, never credited: Wyoming @ UTEP | 2026-11-13 spread (BetMGM, Caesars, DraftKings, Fanatics, Kalshi, bet365)
 ## 2026-11-13T10:25:05-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T11:50:51-05:00 — pack move, never credited: East Carolina @ Charlotte | 2026-11-13 spread (BetMGM, DraftKings, Fanatics)
+## 2026-11-13T11:50:51-05:00 — no-follow: bet365 Florida @ Kentucky | 2026-11-13 spread (only 0 followed)
+## 2026-11-13T11:50:51-05:00 — no-follow: Kalshi Utah State @ San Diego State | 2026-11-13 spread (only 0 followed)
+## 2026-11-13T11:50:51-05:00 — 81 games, 0 leads credited, 5 started games skipped
