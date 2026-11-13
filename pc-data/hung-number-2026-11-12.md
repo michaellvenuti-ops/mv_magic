@@ -1,7 +1,19 @@
-# Hung numbers — 2026-11-12 (scan 2026-11-12 20:26)
+# Hung numbers — 2026-11-12 (scan 2026-11-12 21:35)
 
-- Commanders vs Giants | Caesars | total | value: Over | book 40.5 vs median 38.5 | div 2.0 
-- Memphis vs South Florida | BetMGM | total | value: Under | book 47.5 vs median 49.5 | div 2.0 
+- Commanders vs Giants | DraftKings | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
+- Commanders vs Giants | FanDuel | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
+- Commanders vs Giants | Hard Rock | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
+- Commanders vs Giants | FanDuel | total | value: Under | book 34.5 vs median 36.5 | div 2.0 
+- Commanders vs Giants | DraftKings | moneyline Commanders | value: Commanders | book 64.9 vs median 59.2 | div 5.7 
+- Commanders vs Giants | FanDuel | moneyline Commanders | value: Commanders | book 53.1 vs median 59.2 | div 6.1 
+- Commanders vs Giants | Hard Rock | moneyline Commanders | value: Commanders | book 53.5 vs median 59.2 | div 5.7 
+- Commanders vs Giants | DraftKings | moneyline Giants | value: Giants | book 41.8 vs median 46.9 | div 5.1 
+- Commanders vs Giants | FanDuel | moneyline Giants | value: Giants | book 53.1 vs median 46.9 | div 6.1 
+- Commanders vs Giants | Hard Rock | moneyline Giants | value: Giants | book 53.5 vs median 46.9 | div 6.5 
+- Memphis vs South Florida | Caesars | spread | value: favorite | book -23.5 vs median -20.5 | div 3.0 
+- Memphis vs South Florida | FanDuel | spread | value: dog | book -19.5 vs median -20.5 | div 1.0 
+- Louisiana vs Louisiana-Monroe | FanDuel | spread | value: favorite | book -6.5 vs median -4.5 | div 2.0 
+- Louisiana vs Louisiana-Monroe | FanDuel | moneyline Louisiana-Monroe | value: Louisiana-Monroe | book 31.7 vs median 37.2 | div 5.4 
 - New Mexico State vs Missouri State | Fanatics | spread | value: dog | book 49.0 vs median 1.5 | div 47.5 middle pairing spans key number 7
 - New Mexico State vs Missouri State | Fanatics | moneyline New Mexico State | value: New Mexico State | book 99.0 vs median 50.5 | div 48.5 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
