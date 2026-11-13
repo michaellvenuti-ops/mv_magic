@@ -6835,3 +6835,21 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-12 22:22:18 ET] dh_prop_middles.py: OK in 106s — prop-middles: no new/changed qualifying middles.
 [2026-11-12 22:22:20 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 690 total tallied.
 [2026-11-12 22:23:51 ET] odds_recorder.py: OK in 61s — SUMMARY: recorded 188 events (73 with odds), db total 254091 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 22:36:28 ET] sync_to_github.py: OK in 757s —   ok: wide-builds-board-pc.html
+[2026-11-12 22:37:18 ET] notify.py: OK in 50s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-12 22:37:51 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 254279 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-12 22:37:52 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-12.md)
+[2026-11-12 22:42:17 ET] dh_basketball_key_middles.py: OK in 266s — basketball-key-middles: no new basketball middles.
+[2026-11-12 22:43:24 ET] hung_number.py: OK in 66s — HUNG NUMBER: Wisconsin vs Maryland — Fanatics spread value dog (-8.5 vs median -9.5)
+[2026-11-12 22:43:29 ET] rlm.py: OK in 5s
+[2026-11-12 22:43:32 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-12 22:43:35 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Louisiana @ Louisiana-Monroe | 2026-11-12 | FanDuel | Louisiana spread 2.5 (median 3.5 -> 5.5)
+[2026-11-12 22:45:18 ET] dh_sog_middles.py: OK in 102s — - 0 deliverables this run
+[2026-11-12 22:45:21 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-12 22:45:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 135 total tallied.
+[2026-11-12 22:45:23 ET] nba_first_score.py: OK in 2s — nba-first-score: 1 new, 2 unverified, 164 total tallied.
+[2026-11-12 22:45:25 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 2 new, 0 unverified, 298 total tallied.
+[2026-11-12 22:45:27 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 2 new, 4 unverified, 493 total tallied.
+[2026-11-12 22:45:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-12; skipping.
+[2026-11-12 22:45:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-12 22:47:12 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 188 events (73 with odds), db total 254467 snapshots / 888 events, feeds ok 6 fail 0
