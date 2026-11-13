@@ -7033,3 +7033,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 04:28:14 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 04:28:47 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 258227 snapshots / 888 events, feeds ok 6 fail 0
 [2026-11-13 04:28:49 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 04:42:40 ET] sync_to_github.py: FAILED (exit 1) in 801s —   FAILED: pc-data/pip-ct2.log (HTTP 409: {'error': '{"message":"is at 1d76d09fa5f0caed8ea8b13847bd12347b232a3e but expected ac976808ae2a9221207c5fb3c107b248cb50
+[2026-11-13 04:43:13 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 258415 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 04:46:40 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-13 04:46:45 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 04:48:30 ET] dh_sog_middles.py: OK in 105s — - 0 deliverables this run
+[2026-11-13 04:48:32 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 04:48:34 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 04:48:35 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 04:48:36 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 04:48:37 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 04:48:38 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 04:48:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
