@@ -6868,3 +6868,16 @@
 [2026-11-13 00:41:47 ET] dh_prop_middles.py: OK in 80s — PROP MIDDLE CLEAN : NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM / table / Spread Prairie View A&M +39.5 / Alt Spread Vanderbilt -38.5 / table | Caesars |
 [2026-11-13 00:41:49 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 1 new, 0 unverified, 692 total tallied.
 [2026-11-13 00:42:22 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 255783 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 00:57:03 ET] sync_to_github.py: FAILED (exit 1) in 731s —   FAILED: pc-data/steam-side-2026-11-10.md (HTTP 409: {'error': '{"message":"is at 01b097ee48667d4daa97b644b8585c55324f7650 but expected 8f1a0deba6e6c2ae5caeb6a
+[2026-11-13 00:57:36 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 188 events (73 with odds), db total 255971 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 00:57:36 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 01:00:45 ET] dh_basketball_key_middles.py: OK in 188s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Sam Houston 3 Illinois Today 7:00 PM / table / Total Over 169.5 / Alt Total Under 172 / table | BetRiver
+[2026-11-13 01:00:49 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 01:02:11 ET] dh_sog_middles.py: OK in 82s — - 0 deliverables this run
+[2026-11-13 01:02:13 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 01:02:13 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 01:02:15 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 165 total tallied.
+[2026-11-13 01:02:16 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 301 total tallied.
+[2026-11-13 01:02:17 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 01:02:17 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 01:02:18 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
