@@ -7186,3 +7186,23 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 09:10:41 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-13 09:10:47 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-13.json (5 markets).
 [2026-11-13 09:12:04 ET] yahoo_brief.py: OK in 77s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-13 09:26:56 ET] sync_to_github.py: FAILED (exit 1) in 891s —   FAILED: pc-data/voice-sample-chris-bright.mp3 (HTTP 409: {'error': '{"message":"is at a88718652a577d6f11cbfa0920939204cee91447 but expected 8aa6f3eeffdd03661a
+[2026-11-13 09:28:29 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 188 events (73 with odds), db total 261423 snapshots / 888 events, feeds ok 6 fail 0
+[2026-11-13 09:28:30 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 09:32:46 ET] dh_basketball_key_middles.py: OK in 256s — basketball-key-middles: no new basketball middles.
+[2026-11-13 09:32:51 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Wyoming @ UTEP | 2026-11-13 | Kalshi | UTEP spread 9.5 (median 8.5 -> 7.5)
+[2026-11-13 09:34:41 ET] dh_prop_middles.py: OK in 110s — PROP MIDDLE : NCAAB Prairie View A&M 22 Vanderbilt Today 7:00 PM / table / Alt Spread Prairie View A&M +43 / Alt Spread Vanderbilt -42.5 / table | Bet365 | BetR
+[2026-11-13 09:36:11 ET] dh_sog_middles.py: OK in 90s — - 0 deliverables this run
+[2026-11-13 09:36:13 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 09:36:15 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 09:36:16 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 09:36:17 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 09:36:19 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 09:36:20 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 09:36:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 09:36:22 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-13 09:36:23 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-13 09:36:25 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 3-3-0, $+1.29 (inverse money only where an opposite price was recorded)
+[2026-11-13 09:36:26 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-13 09:36:40 ET] half_percent.py: OK in 13s — half-percent: PICK NU ref $12.37 target $12.43 stop $12.31
+[2026-11-13 09:36:42 ET] futures_pairs.py: OK in 2s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
