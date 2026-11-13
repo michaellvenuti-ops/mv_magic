@@ -34,3 +34,4 @@ NEW FLAG: FBS Colorado State @ Washington State | 2026-11-12 — bet365 still de
 NEW FLAG: FBS Colorado State @ Washington State | 2026-11-12 — Fanatics still dealing spread -9.5 on Colorado State (pre-move median -9.5, now -8.5)
 ## 2026-11-12T18:11:38-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-12T18:56:57-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
+## 2026-11-12T19:45:03-05:00 — 67 games, 0 steam events, 0 NEW flags, 3 started games skipped
