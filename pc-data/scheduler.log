@@ -7249,3 +7249,24 @@
 [2026-11-13 12:42:04 ET] dh_key_number_middles.py: OK in 225s — key-number-middles: 414 basketball rows excluded (football-only rule).
 [2026-11-13 12:42:09 ET] podcast_transcribe.py: OK in 4s — SUMMARY: discover days=2 added=5 queued_total=21
 [2026-11-13 12:42:10 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-13 12:57:00 ET] sync_to_github.py: FAILED (exit 1) in 890s —   FAILED: pc-data/steam-side-2026-11-04.md (HTTP 409: {'error': '{"message":"is at ba59793c94c47c2b23266a8fcd312f14c218f9be but expected b134f37fc72624b937ea941
+[2026-11-13 12:58:33 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (200 with odds), db total 263067 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 12:59:51 ET] dh_arbitrage.py: OK in 78s — ARBITRAGE: CFL MTL Alouettes EDM Elks Nov-15 6:00 PM / table / Rush Yards D. Alexander Under 15.5 / Alt Rush Yards D. Alexander 15+ / table | Caesars | Bally Be
+[2026-11-13 13:00:55 ET] dh_kalshi_poly_arb.py: OK in 63s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 13:00:58 ET] wide_builds.py: OK in 3s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 13:01:43 ET] dh_low_holds.py: OK in 45s — LOW-HOLDS: NCAAB Merrimack 1 Florida Today 7:00 PM / table / Alt Spread Merrimack +44.5 / Alt Spread Florida -44.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-13 13:05:56 ET] dh_basketball_key_middles.py: OK in 253s — basketball-key-middles: no new basketball middles.
+[2026-11-13 13:07:22 ET] hung_number.py: OK in 85s — No new hung numbers (11 current flags).
+[2026-11-13 13:07:27 ET] rlm.py: OK in 5s
+[2026-11-13 13:07:31 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 13:07:34 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 13:09:19 ET] dh_prop_middles.py: OK in 105s — PROP MIDDLE CLEAN : NBA OKC Thunder LA Clippers Today 10:45 PM / table / Pts+Rebs D. Jones Under 15.5 / Pts+Rebs D. Jones 15+ / table | BetParx | Bet365 — windo
+[2026-11-13 13:11:02 ET] dh_sog_middles.py: OK in 103s — - 0 deliverables this run
+[2026-11-13 13:11:05 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 13:11:06 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 13:11:07 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 13:11:08 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 13:11:09 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 498 total tallied.
+[2026-11-13 13:11:11 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 13:11:11 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 13:11:12 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
