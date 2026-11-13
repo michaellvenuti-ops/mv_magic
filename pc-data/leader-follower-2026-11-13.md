@@ -9,3 +9,6 @@
 ## 2026-11-13T06:32:50-05:00 — no-follow: FanDuel Panthers @ Saints | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T06:32:50-05:00 — 81 games, 0 leads credited, 5 started games skipped
 ## 2026-11-13T07:50:16-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T09:10:40-05:00 — no-follow: DraftKings Houston @ Colorado | 2026-11-13 spread (only 1 followed)
+## 2026-11-13T09:10:40-05:00 — no-follow: Kalshi Georgia Tech @ Clemson | 2026-11-13 spread (only 0 followed)
+## 2026-11-13T09:10:41-05:00 — 81 games, 0 leads credited, 5 started games skipped
