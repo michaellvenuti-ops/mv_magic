@@ -21,3 +21,5 @@
 ## 2026-11-13T11:50:51-05:00 — no-follow: bet365 Florida @ Kentucky | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T11:50:51-05:00 — no-follow: Kalshi Utah State @ San Diego State | 2026-11-13 spread (only 0 followed)
 ## 2026-11-13T11:50:51-05:00 — 81 games, 0 leads credited, 5 started games skipped
+## 2026-11-13T13:07:30-05:00 — pack move, never credited: Houston @ Colorado | 2026-11-13 spread (Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-13T13:07:31-05:00 — 81 games, 0 leads credited, 5 started games skipped
