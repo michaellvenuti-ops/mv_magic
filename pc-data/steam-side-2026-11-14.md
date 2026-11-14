@@ -27,3 +27,9 @@ NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — DraftKings still
 NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — FanDuel still dealing spread -3.5 on Florida International (pre-move median -3.5, now 1.5)
 NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — Kalshi still dealing total 53.5 on Under (pre-move median 53.5, now 49.5)
 NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — Caesars still dealing spread 7.5 on Western Kentucky (pre-move median 7.5, now 6.0)
+## 2026-11-14T17:03:17-05:00 — 67 games, 7 steam events, 5 NEW flags, 35 started games skipped
+NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — Kalshi still dealing spread 6.5 on Western Kentucky (pre-move median 6.0, now 3.5)
+NEW FLAG: FBS Appalachian State @ Marshall | 2026-11-14 — Kalshi still dealing spread 1.5 on Marshall (pre-move median 1.5, now -1.5)
+NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — FanDuel still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
+NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — Fanatics still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
+NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — Kalshi still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
