@@ -8009,3 +8009,15 @@
 [2026-11-14 14:20:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 14:20:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-14 14:20:36 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 14:35:23 ET] sync_to_github.py: FAILED (exit 1) in 887s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-06-hour-1.txt (HTTP 409: {'error': '{"message":"is at d555416ee1d3154ae69ade28ffaa50880523fba6 but expected
+[2026-11-14 14:37:23 ET] odds_recorder.py: OK in 90s — SUMMARY: recorded 234 events (134 with odds), db total 277433 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 14:37:49 ET] dh_arbitrage.py: OK in 26s — ARBITRAGE: NFL SF 49ers DAL Cowboys Nov-15 4:25 PM / table bar_chart / Receptions J. Watkins 2+ NO / Receptions J. Watkins Over 1.5 / table | Polymarket US | Be
+[2026-11-14 14:38:39 ET] dh_kalshi_poly_arb.py: OK in 49s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 14:38:43 ET] wide_builds.py: OK in 3s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 14:38:56 ET] dh_low_holds.py: FAILED (exit 1) in 13s —   - [pid=6384] <gracefully close end>
+[2026-11-14 14:39:16 ET] dh_key_number_middles.py: FAILED (exit 1) in 20s —   - [pid=6400] <gracefully close end>
+[2026-11-14 14:39:44 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 28s —   - [pid=7716] <gracefully close end>
+[2026-11-14 14:42:37 ET] hung_number.py: OK in 173s — HUNG NUMBER: Michigan vs Oregon — Hard Rock moneyline Michigan value Michigan (18.2 vs median 24.4)
+[2026-11-14 14:42:42 ET] rlm.py: OK in 5s
+[2026-11-14 14:42:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 14:42:47 ET] syncing to GitHub (regular 10-minute sync)
