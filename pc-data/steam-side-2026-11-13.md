@@ -30,3 +30,7 @@ NEW FLAG: FBS USC @ Indiana | 2026-11-13 — Fanatics still dealing spread -8.5 
 NEW FLAG: FBS Alabama @ Vanderbilt | 2026-11-13 — Kalshi still dealing total 49.5 on Under (pre-move median 49.5, now 47.5)
 ## 2026-11-13T18:41:55-05:00 — 67 games, 2 steam events, 1 NEW flags, 4 started games skipped
 NEW FLAG: FBS UNLV @ New Mexico | 2026-11-13 — Fanatics still dealing spread -14.5 on New Mexico (pre-move median -14.5, now -16.0)
+## 2026-11-13T19:31:45-05:00 — 67 games, 1 steam events, 3 NEW flags, 5 started games skipped
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — FanDuel still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — Fanatics still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — Kalshi still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
