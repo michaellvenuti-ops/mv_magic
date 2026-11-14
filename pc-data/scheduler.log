@@ -8104,3 +8104,19 @@
 [2026-11-14 17:50:31 ET] rlm.py: OK in 5s
 [2026-11-14 17:50:34 ET] leader_follower.py: OK in 3s — LEADER ALERT: FanDuel reached 3 leads in 14 days. Honesty note: board display timing is not proof of who truly moved first.
 [2026-11-14 17:50:35 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 18:05:57 ET] sync_to_github.py: FAILED (exit 1) in 923s —   FAILED: pc-data/steam-side-2026-11-13.md (HTTP 409: {'error': '{"message":"is at d541d17515122702c0acf2690c258acaca4ddd2a but expected 4ce6db100766382f5455fb0
+[2026-11-14 18:07:34 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 234 events (80 with odds), db total 279071 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 18:07:35 ET] wide_builds.py: OK in 1s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 18:09:23 ET] dh_game_middles.py: OK in 108s — GAME MIDDLE: NBA DEN Nuggets NO Pelicans Today 7:15 PM / table bar_chart / Alt Total Under 237 / Alt Total Over 236.5 / table | ProphetX | theScore — window 217
+[2026-11-14 18:09:30 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 | BetMGM | Under total 76.5 (median 76.5 -> 65.5)
+[2026-11-14 18:11:05 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE CLEAN : CFL MTL Alouettes EDM Elks Nov-15 6:00 PM / table / Receiving Yards T. Snead Under 76.5 / Alt Recv Yards T. Snead 75+ / table | FanDuel | Ba
+[2026-11-14 18:13:09 ET] dh_sog_middles.py: OK in 124s — - 0 deliverables this run
+[2026-11-14 18:13:14 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-14 18:13:15 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 18:13:16 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 18:13:17 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 304 total tallied.
+[2026-11-14 18:13:20 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 8 new, 1 unverified, 588 total tallied.
+[2026-11-14 18:13:22 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 3 new, 0 unverified, 712 total tallied.
+[2026-11-14 18:13:22 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 18:13:24 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-14 18:13:24 ET] syncing to GitHub (regular 10-minute sync)
