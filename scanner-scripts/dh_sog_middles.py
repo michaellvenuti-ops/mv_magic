@@ -48,6 +48,17 @@ resets the switch itself — Clear is now used ONLY for the stale
 filter at run start and the restore in clear_shots_filter.
 Failures are recorded in the banked header (FILTER_FAIL) so the
 scheduler's own hourly runs self-diagnose.
+FIX v3 2026-11-14 (same day, after manual test #3 at 14:47):
+the switch now flips and verifies (via header-parent), and
+Hockey Props checks — but 'Player Props' never appeared: the
+label click checks the box without expanding the branch. The
+drill-down now polls for the child node and, if it is not
+visible, clicks the row text once (the probe's click, which
+expands the branch). Also fixed: FILTER_FAIL assignments in
+set_shots_filter were function-locals (missing `global`), so
+the banked header never carried the failure reason. A final
+checked-state verification guards against the expansion click
+toggling Hockey Props off.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -276,12 +287,43 @@ def _click_checkbox(page, label):
     return _click_visible_text(page, label)
 
 
+def _wait_visible(page, text, timeout_ms=8000):
+    """Poll until an element with exactly this text is visible."""
+    try:
+        page.locator(f"text={text} >> visible=true").first.wait_for(
+            state="visible", timeout=timeout_ms)
+        return True
+    except Exception:
+        return False
+
+
+def _expand_and_click(page, label, child_text=None):
+    """Click a filter-tree checkbox by its label; when a child
+    node is expected, make sure the subtree expands so the child
+    becomes visible. The label click checks the box but does not
+    always expand the branch (manual test 2026-11-14 14:47:
+    'Player Props' never appeared after checking Hockey Props),
+    so if the child is not visible after a poll, click the row
+    text once — the probe's click, which expands the branch —
+    and poll again. Returns True when the checkbox got clicked
+    AND (no child expected OR the child became visible)."""
+    if not _click_checkbox(page, label):
+        return False
+    if child_text is None:
+        return True
+    if _wait_visible(page, child_text, 8000):
+        return True
+    _click_visible_text(page, label)
+    return _wait_visible(page, child_text, 8000)
+
+
 def set_shots_filter(page):
     """Drive the Filters panel to Market Type = Hockey Props →
     Player Props → Shots only. Returns True only when the board
     afterwards reads 'Filters: On'. On any failure the panel is
     cleared and closed so no partial filter is left behind; the
     caller then falls back to the in-code market check."""
+    global FILTER_FAIL
     if not _open_filters_panel(page):
         FILTER_FAIL = "panel did not open"
         print("sog-middles: Filters panel did not open — relying "
@@ -303,16 +345,19 @@ def set_shots_filter(page):
         # A stale filter is already cleared at run start (above);
         # the checkboxes of a freshly flipped switch start
         # unchecked.
-        if not _click_checkbox(page, "Hockey Props"):
-            FILTER_FAIL = "'Hockey Props' not clickable"
-            print("sog-middles: 'Hockey Props' not clickable — "
-                  "relying on the in-code market check.")
+        if not _expand_and_click(page, "Hockey Props",
+                                  "Player Props"):
+            FILTER_FAIL = "'Hockey Props' not clickable / did not expand"
+            print("sog-middles: 'Hockey Props' not clickable or "
+                  "its subtree did not expand — relying on the "
+                  "in-code market check.")
             return False
         page.wait_for_timeout(1200)
-        if not _click_visible_text(page, "Player Props"):
-            FILTER_FAIL = "'Player Props' not clickable"
-            print("sog-middles: 'Player Props' not clickable — "
-                  "relying on the in-code market check.")
+        if not _expand_and_click(page, "Player Props", "Shots"):
+            FILTER_FAIL = "'Player Props' not clickable / did not expand"
+            print("sog-middles: 'Player Props' not clickable or "
+                  "its subtree did not expand — relying on the "
+                  "in-code market check.")
             return False
         page.wait_for_timeout(1200)
         if not _click_visible_text(page, "Shots"):
@@ -321,6 +366,19 @@ def set_shots_filter(page):
                   "on the in-code market check.")
             return False
         page.wait_for_timeout(1200)
+        # The row-text expansion click can toggle a checkbox off
+        # in some trees — verify Hockey Props is still checked
+        # before trusting the filter.
+        try:
+            hp = page.get_by_label("Hockey Props", exact=True)
+            if hp.count() and not hp.first.is_checked():
+                FILTER_FAIL = "Hockey Props unchecked after drill-down"
+                print("sog-middles: Hockey Props unchecked itself "
+                      "during drill-down — relying on the in-code "
+                      "market check.")
+                return False
+        except Exception:
+            pass
         if not _close_filters_panel(page):
             FILTER_FAIL = "panel did not close"
             print("sog-middles: Filters panel did not close — "
