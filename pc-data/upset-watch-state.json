@@ -8725,7 +8725,8 @@
    "spread": 28.5,
    "fav_team": "Murray St",
    "dog_team": "Texas Southern",
-   "live_ml": -10000
+   "live_ml": -10000,
+   "final": true
   },
   "401927374": {
    "sport": "NCAAB",
@@ -8735,7 +8736,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Illinois St",
-   "dog_team": "N Dakota St"
+   "dog_team": "N Dakota St",
+   "final": true
   },
   "401926117": {
    "sport": "NCAAB",
@@ -9024,12 +9026,20 @@
    "sport": "NBA",
    "matchup": "Jazz at Rockets",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 15.5,
    "fav_team": "Rockets",
    "dog_team": "Jazz",
-   "live_ml": -250
+   "live_ml": -135,
+   "alerted_at": "2026-11-13T22:16:26",
+   "board_read_at": "2026-11-13T22:16:22",
+   "alert_expires_at": "2026-11-13T22:19:26",
+   "alert_detail": "4:25 - 3rd Quarter",
+   "alert_fav_score": 77,
+   "alert_dog_score": 82,
+   "alert_ml": -135,
+   "ml_read_at": "2026-11-13T22:16:26"
   },
   "401909302": {
    "sport": "NBA",
@@ -9049,7 +9059,8 @@
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Trail Blazers",
-   "dog_team": "Kings"
+   "dog_team": "Kings",
+   "live_ml": -300
   },
   "401909304": {
    "sport": "NBA",
