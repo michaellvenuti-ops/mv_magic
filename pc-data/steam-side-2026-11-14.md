@@ -33,3 +33,7 @@ NEW FLAG: FBS Appalachian State @ Marshall | 2026-11-14 — Kalshi still dealing
 NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — FanDuel still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
 NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — Fanatics still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
 NEW FLAG: FBS Purdue @ Iowa | 2026-11-14 — Kalshi still dealing spread -17.5 on Iowa (pre-move median -17.5, now -18.5)
+## 2026-11-14T18:09:30-05:00 — 67 games, 3 steam events, 3 NEW flags, 38 started games skipped
+NEW FLAG: FBS Middle Tennessee @ Liberty | 2026-11-14 — Kalshi still dealing spread -14.5 on Middle Tennessee (pre-move median -14.5, now -10.5)
+NEW FLAG: FBS Middle Tennessee @ Liberty | 2026-11-14 — Kalshi still dealing total 48.5 on Over (pre-move median 51.5, now 55.5)
+NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — BetMGM still dealing total 76.5 on Under (pre-move median 76.5, now 65.5)
