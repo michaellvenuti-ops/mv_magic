@@ -1,16 +1,14 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 07:49)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 09:12)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
-- Dolphins vs Colts | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Kansas State vs TCU | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- Wisconsin vs Maryland | bet365 | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
+- Georgia Tech vs Clemson | FanDuel | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.0 | div 5.7 
 - California vs Virginia | bet365 | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
-- USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Missouri vs Georgia | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Nevada vs Northern Illinois | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
-- Tulane vs Rice | FanDuel | spread | value: favorite | book 2.5 vs median 3.5 | div 1.0 middle pairing spans key number 3
 - Oregon State vs Boise State | bet365 | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Minnesota vs Penn State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
