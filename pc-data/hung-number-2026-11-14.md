@@ -1,12 +1,34 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 12:03)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 13:11)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
-- Nebraska vs Rutgers | BetMGM | spread | value: favorite | book -16.0 vs median -15.0 | div 1.0 
-- Tennessee vs Texas A&M | FanDuel | spread | value: dog | book 1.5 vs median -1.25 | div 2.75 
+- Wisconsin vs Maryland | DraftKings | spread | value: dog | book -12.5 vs median -13.5 | div 1.0 
+- Wisconsin vs Maryland | Caesars | spread | value: favorite | book -16.5 vs median -13.5 | div 3.0 
+- Syracuse vs NC State | DraftKings | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- Duke vs Miami (FL) | Caesars | spread | value: favorite | book 7.5 vs median 10.5 | div 3.0 
+- Duke vs Miami (FL) | Caesars | total | value: Under | book 40.5 vs median 42.5 | div 2.0 
+- James Madison vs UConn | DraftKings | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
+- James Madison vs UConn | DraftKings | total | value: Under | book 47.5 vs median 50.0 | div 2.5 
+- Wake Forest vs SMU | BetMGM | spread | value: favorite | book -23.5 vs median -22.0 | div 1.5 
+- Wake Forest vs SMU | DraftKings | total | value: Over | book 69.5 vs median 66.5 | div 3.0 
+- Northwestern vs Ohio State | Caesars | spread | value: favorite | book 11.5 vs median 13.0 | div 1.5 
+- Georgia Tech vs Clemson | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Alabama vs Vanderbilt | DraftKings | spread | value: dog | book -11.5 vs median -13.0 | div 1.5 
+- East Carolina vs Charlotte | BetMGM | spread | value: dog | book -7.5 vs median -10.5 | div 3.0 
+- East Carolina vs Charlotte | DraftKings | spread | value: dog | book -8.5 vs median -10.5 | div 2.0 
+- East Carolina vs Charlotte | Caesars | spread | value: favorite | book -13.5 vs median -10.5 | div 3.0 
+- East Carolina vs Charlotte | FanDuel | spread | value: favorite | book -12.5 vs median -10.5 | div 2.0 
+- East Carolina vs Charlotte | Caesars | total | value: Over | book 46.5 vs median 44.0 | div 2.5 
+- East Carolina vs Charlotte | Caesars | moneyline Charlotte | value: Charlotte | book 20.0 vs median 25.2 | div 5.2 
+- East Carolina vs Charlotte | Caesars | moneyline East Carolina | value: East Carolina | book 87.1 vs median 80.8 | div 6.3 
+- UAB vs Temple | FanDuel | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- UAB vs Temple | FanDuel | total | value: Over | book 47.5 vs median 46.0 | div 1.5 
+- Arkansas State vs Coastal Carolina | DraftKings | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
+- Arkansas State vs Coastal Carolina | FanDuel | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- Kansas vs West Virginia | FanDuel | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.0 | div 4.5 
-- Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 24.4 | div 6.2 
+- Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 23.8 | div 5.6 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 80.0 | div 6.7 
 - California vs Virginia | bet365 | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - USC vs Indiana | Fanatics | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
@@ -17,8 +39,6 @@
 - Stanford vs Virginia Tech | Fanatics | spread | value: favorite | book 15.0 vs median 17.25 | div 2.25 
 - UNLV vs New Mexico | Fanatics | spread | value: favorite | book 14.5 vs median 17.5 | div 3.0 
 - Utah vs Arizona | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Utah vs Arizona | Fanatics | moneyline Arizona | value: Arizona | book 46.5 vs median 51.6 | div 5.1 
-- Utah vs Arizona | Fanatics | moneyline Utah | value: Utah | book 58.3 vs median 53.1 | div 5.3 
 - Colorado State vs Washington State | Fanatics | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Colorado State vs Washington State | Fanatics | total | value: Over | book 66.5 vs median 65.0 | div 1.5 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
