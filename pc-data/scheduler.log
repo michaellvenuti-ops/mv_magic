@@ -7962,3 +7962,27 @@
 [2026-11-14 12:47:26 ET] dh_key_number_middles.py: OK in 321s — key-number-middles: 228 basketball rows excluded (football-only rule).
 [2026-11-14 12:51:22 ET] dh_basketball_key_middles.py: OK in 235s — basketball-key-middles: no new basketball middles.
 [2026-11-14 12:51:22 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 13:06:37 ET] sync_to_github.py: FAILED (exit 1) in 914s —   FAILED: pc-data/transcripts/audio-test.txt (HTTP 409: {'error': '{"message":"is at 2a303085bdde5968219a7a615fe4b09d4390ff22 but expected 9e536da8654237613a820
+[2026-11-14 13:08:13 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 234 events (162 with odds), db total 276731 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 13:08:48 ET] dh_arbitrage.py: OK in 35s — arbitrage: no new qualifying pairs (silent).
+[2026-11-14 13:09:10 ET] dh_kalshi_poly_arb.py: OK in 22s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 13:09:11 ET] wide_builds.py: OK in 1s — wide_builds: 5 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 13:09:31 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: Serie A Fiorentina Monza Nov-23 2:45 PM / table / Draw No Bet Fiorentina / Draw No Bet Monza / table | Caesars | FanDuel
+[2026-11-14 13:11:11 ET] dh_game_middles.py: OK in 100s — GAME MIDDLE: NCAAF 19 Ole Miss Oklahoma Nov-15 1:00 PM / table / Alt Spread Oklahoma -1.5 / Alt Spread Ole Miss +2 / table | Bally Bet | Fanatics-NJ — window 23
+[2026-11-14 13:12:56 ET] hung_number.py: OK in 105s — HUNG NUMBER: Kansas vs West Virginia — FanDuel spread value dog (2.5 vs median 1.5)
+[2026-11-14 13:13:09 ET] rlm.py: OK in 13s
+[2026-11-14 13:13:12 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 13:13:15 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Kansas @ West Virginia | 2026-11-14 | Kalshi | Kansas spread -2.5 (median -2.5 -> -1.5)
+[2026-11-14 13:15:01 ET] dh_prop_middles.py: OK in 106s — PROP MIDDLE CLEAN : NHL COL Avalanche MTL Canadiens Today 7:00 PM / table / Saves M. Blackwood Under 25.5 / Saves M. Blackwood 25+ / table | HardRock | BetMGM —
+[2026-11-14 13:18:13 ET] dh_sog_middles.py: OK in 191s — - 0 deliverables this run
+[2026-11-14 13:18:26 ET] dh_team_total_middles.py: OK in 13s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-14 13:18:28 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 13:18:29 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 13:18:30 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 13:18:32 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 13:18:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 13:18:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 13:18:37 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 13:18:41 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=24
+[2026-11-14 13:18:42 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-14 13:18:42 ET] syncing to GitHub (regular 10-minute sync)
