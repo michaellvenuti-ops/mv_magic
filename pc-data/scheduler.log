@@ -7829,3 +7829,14 @@
 [2026-11-14 08:19:40 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
 [2026-11-14 08:19:40 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 08:19:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 08:34:31 ET] sync_to_github.py: OK in 889s —   ok: wide-builds-board-pc.html
+[2026-11-14 08:35:50 ET] notify.py: OK in 79s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 08:37:35 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 216 events (130 with odds), db total 274715 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 08:41:38 ET] dh_key_number_middles.py: OK in 244s — key-number-middles: 135 basketball rows excluded (football-only rule).
+[2026-11-14 08:45:38 ET] dh_basketball_key_middles.py: OK in 239s — basketball-key-middles: no new basketball middles.
+[2026-11-14 08:45:43 ET] fetch_nba_snapshot.py: OK in 5s — snapshot: 30 teams, 5 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-14.json
+[2026-11-14 08:47:16 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 93s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-14.txt. No 
+[2026-11-14 08:47:18 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-14 08:47:24 ET] nhl_totals_scan.py: OK in 6s — NHL TOTALS FLAG UNDER: MIN @ BOS — predicted 4.73 vs book 6.5 (-135)
+[2026-11-14 08:47:29 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-14 08:47:34 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 5, 'NCAAB': 61}, new 0, moved 0, baselines 66.
