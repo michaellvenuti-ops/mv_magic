@@ -15,8 +15,11 @@ Qualifying bar (Michael's, set 2026-11-10/11):
   - miss cost at most ~10% of the ~$200 staked,
   - both legs at standard books with American odds (exchange legs in
     cents are skipped in v1), no BroThrow / Fliff legs,
-  - half-point lines only in v1 (integer lines can push and change
-    the miss math),
+  - whole-number legs allowed since 2026-11-14 (Michael's tap): the
+    push number is NOT a both-win number — window_ints() excludes it
+    from the window — and it is labeled win+push in the build line
+    ("push at N"); the grader already settles a pushed leg (stake
+    back, other leg at its price),
   - game not started yet.
 
 State: data/wide-builds-state.json. Banked: data/wide-builds-<date>.md
@@ -24,6 +27,7 @@ with an "N NEW wide builds" header + "NEW BUILD:" lines (the delivery
 watcher's signal). Board: wide-builds-board-pc.html via
 build_pc_boards.py. Read-only; never places a bet.
 """
+import ast
 import math
 import re
 import sys
@@ -104,9 +108,40 @@ def parse_leg(segment):
 
 MD_LINE_RE = re.compile(
     r"^(?:NEW|CHANGED) MIDDLE:\s*(?:CLEAN\s+)?(.+?)\s*::\s*(\{.+\})\s*$")
+LEG_DICT_RE = re.compile(r"\{[^{}]*\}")
 MIDDLES_SLUGS = ["game-middles", "prop-middles", "key-number-middles",
                  "basketball-key-middles", "sog-middles",
                  "team-total-middles"]
+
+
+def parse_banked_legs(text):
+    """Banked middles lines carry legs in one of two dict shapes:
+    prop-middles banks {'leg1': {...}, 'leg2': {...}} (one dict);
+    game/key/basketball-key bank {leg1} / {leg2} (two bare dicts).
+    Returns {'leg1': ..., 'leg2': ...} or None. The old code only
+    accepted the first shape, so the second silently literal_eval'd
+    to a BinOp and EVERY game/key/basketball line was dropped — the
+    middles-mining path banked nothing at all (found 2026-11-14 while
+    fixing the integer-legs rule; only the arbitrage states fed the
+    scan). SOG/team-total bank formatted strings, not dicts, so
+    their lines stay unparsed here."""
+    try:
+        legs = ast.literal_eval(text)
+        if isinstance(legs, dict) and legs.get("leg1") \
+                and legs.get("leg2"):
+            return legs
+    except (ValueError, SyntaxError):
+        pass
+    try:
+        parts = LEG_DICT_RE.findall(text)
+        if len(parts) == 2:
+            d1 = ast.literal_eval(parts[0])
+            d2 = ast.literal_eval(parts[1])
+            if isinstance(d1, dict) and isinstance(d2, dict):
+                return {"leg1": d1, "leg2": d2}
+    except (ValueError, SyntaxError):
+        pass
+    return None
 
 
 def entries_to_groups(items):
@@ -115,6 +150,17 @@ def entries_to_groups(items):
     for key, entry, src in items:
         if True:
             ident = key.split(" | ")[0]
+            # Strip banked-line labels that precede the identity text
+            # (SMALLER BETS tag, CLEAN tag, key-number "KEY n ...:"
+            # label, basketball-key "LEAGUE MARKET ~pct%:" label, and
+            # the trailing " window [...]" on basketball-key lines).
+            ident = re.sub(r"^SMALLER BETS ", "", ident)
+            ident = re.sub(r"^CLEAN ", "", ident)
+            ident = re.sub(r"^KEY \d+ (?:WIN\+PUSH: |: )", "", ident)
+            ident = re.sub(
+                r"^[A-Z]+ (?:TOTAL|SPREAD) (?:~[\d.]+%|SPANKY baseline): ",
+                "", ident)
+            ident = re.sub(r"\s+window \[[^\]]*\]$", "", ident)
             segs = ident.split(" / ")
             if len(segs) < 2:
                 continue
@@ -134,9 +180,10 @@ def entries_to_groups(items):
                 price = int(price_s)
                 if abs(price) < 100:
                     continue
-                if leg_meta["line"] % 1 != 0.5 and leg_meta["line"] % 1 != -0.5:
-                    if float(leg_meta["line"]).is_integer():
-                        continue  # v1: half-point lines only
+                # Whole-number legs allowed since 2026-11-14
+                # (Michael's tap): the push number is excluded from
+                # the strict both-win window by window_ints() and
+                # labeled win+push in the build line.
                 rec = {**leg_meta, "book": book, "price": price,
                        "event": event, "src": src}
                 if leg_meta["kind"] == "total":
@@ -158,8 +205,6 @@ def collect_legs(now):
     middles STATE files carry no identity text (dh_middles populates
     no game/player fields), so their dated .md lines — which carry
     the full identity + legs — are the minable source."""
-    import ast
-    from datetime import timedelta as _td
     today = now.strftime("%Y-%m-%d")
     items = []
     for src in SOURCES:
@@ -169,7 +214,7 @@ def collect_legs(now):
                     entry.get("last_seen") == today:
                 items.append((key, entry, src))
     for slug in MIDDLES_SLUGS:
-        for day in (today, (now - _td(days=1)).strftime("%Y-%m-%d")):
+        for day in (today, (now - timedelta(days=1)).strftime("%Y-%m-%d")):
             path = Path(DATA_DIR) / f"{slug}-{day}.md"
             if not path.exists():
                 continue
@@ -190,12 +235,8 @@ def collect_legs(now):
                 m = MD_LINE_RE.match(line.strip())
                 if not m:
                     continue
-                try:
-                    legs = ast.literal_eval(m.group(2))
-                except (ValueError, SyntaxError):
-                    continue
-                if isinstance(legs, dict) and legs.get("leg1") \
-                        and legs.get("leg2"):
+                legs = parse_banked_legs(m.group(2))
+                if legs:
                     items.append((m.group(1), legs, slug))
     return entries_to_groups(items)
 
@@ -225,14 +266,25 @@ def window_ints(lo_line, hi_line):
     return list(range(lo, hi + 1)) if hi >= lo else []
 
 
+def push_numbers(a_line, b_line):
+    """Whole-number leg lines in the pair: landing exactly on one
+    pushes that leg (stake back) while the other leg settles — a
+    win+push outcome, never a both-win number. window_ints() already
+    excludes these from the window; this labels them for the build
+    line, the board, and the grader."""
+    return sorted({int(l) for l in (a_line, b_line)
+                   if float(l).is_integer()})
+
+
 def pick_best(cands):
-    """cands: (window, math_out, leg_a, leg_b). Prefer the widest
-    qualifying window, then the cheapest worst-side miss."""
+    """cands: (window, push, math_out, leg_a, leg_b). Prefer the widest
+    qualifying window, then the most win+push numbers, then the
+    cheapest worst-side miss."""
     if not cands:
         return None
-    return max(cands, key=lambda c: (len(c[0]),
-                                     min(c[1]["miss_a"], c[1]["miss_b"]),
-                                     c[1]["land"]))
+    return max(cands, key=lambda c: (len(c[0]), len(c[1]),
+                                     min(c[2]["miss_a"], c[2]["miss_b"]),
+                                     c[2]["land"]))
 
 
 def assemble(groups, now):
@@ -255,11 +307,13 @@ def assemble(groups, now):
                         continue
                     math_out = balanced(a, b)
                     if math_out:
-                        cands.append((window, math_out, a, b))
+                        cands.append((window,
+                                      push_numbers(a["line"], b["line"]),
+                                      math_out, a, b))
             best = pick_best(cands)
             if not best:
                 continue
-            window, math_out, a, b = best
+            window, push, math_out, a, b = best
             market = "Total" if kind == "total" else gk[2]
             builds.append(make_build(
                 event, market, None,
@@ -267,7 +321,7 @@ def assemble(groups, now):
                  "price": a["price"]},
                 {"side": f"Under {b['line']:g}", "book": b["book"],
                  "price": b["price"]},
-                window, math_out, a, b, start,
+                window, push, math_out, a, b, start,
                 miss_low=math_out["miss_b"], miss_high=math_out["miss_a"]))
         else:  # spread
             favs = [l for l in legs if l["line"] < 0]
@@ -282,24 +336,27 @@ def assemble(groups, now):
                         continue
                     math_out = balanced(fav, dog)
                     if math_out:
-                        cands.append((window, math_out, fav, dog))
+                        cands.append((window,
+                                      push_numbers(abs(fav["line"]),
+                                                   dog["line"]),
+                                      math_out, fav, dog))
             best = pick_best(cands)
             if not best:
                 continue
-            window, math_out, fav, dog = best
+            window, push, math_out, fav, dog = best
             builds.append(make_build(
                 event, "Spread", fav["side"],
                 {"side": f"{fav['side']} {fav['line']:+g}",
                  "book": fav["book"], "price": fav["price"]},
                 {"side": f"{dog['side']} +{dog['line']:g}",
                  "book": dog["book"], "price": dog["price"]},
-                window, math_out, fav, dog, start,
+                window, push, math_out, fav, dog, start,
                 miss_low=math_out["miss_b"], miss_high=math_out["miss_a"]))
     return builds
 
 
-def make_build(event, market, margin_team, leg1, leg2, window, math_out,
-               src_a, src_b, start, miss_low, miss_high):
+def make_build(event, market, margin_team, leg1, leg2, window, push,
+               math_out, src_a, src_b, start, miss_low, miss_high):
     s1, s2 = math_out["stakes"]
     leg1 = {**leg1, "stake": float(s1)}
     leg2 = {**leg2, "stake": float(s2)}
@@ -313,7 +370,7 @@ def make_build(event, market, margin_team, leg1, leg2, window, math_out,
                       else ""),
         "market": market, "margin_team": margin_team,
         "leg1": leg1, "leg2": leg2,
-        "total_staked": TOTAL_STAKE, "window": window,
+        "total_staked": TOTAL_STAKE, "window": window, "push": push,
         "miss_pl": {"low": miss_low, "high": miss_high},
         "land_profit": math_out["land"],
         "source_scan": (" + ".join(srcs)),
@@ -339,12 +396,16 @@ def build_key(b):
 
 def build_line(b):
     win = ", ".join(str(w) for w in b["window"])
+    push_txt = ""
+    if b.get("push"):
+        push_txt = (" — push at " +
+                    ", ".join(str(p) for p in b["push"]))
     return (f"{b['game']} — {b['market']} — "
             f"{b['leg1']['side']} {b['leg1']['book']} "
             f"{b['leg1']['price']:+d} (${b['leg1']['stake']:,.0f}) / "
             f"{b['leg2']['side']} {b['leg2']['book']} "
             f"{b['leg2']['price']:+d} (${b['leg2']['stake']:,.0f}) — "
-            f"both win {win} — land +${b['land_profit']:,.2f}, "
+            f"both win {win}{push_txt} — land +${b['land_profit']:,.2f}, "
             f"miss {b['miss_pl']['low']:+,.2f} / "
             f"{b['miss_pl']['high']:+,.2f} on ~$200 balanced")
 
@@ -357,11 +418,13 @@ def main():
     state = load_state(SCAN)
     entries = state.setdefault("entries", {})
     seen_windows = {(norm_event(v.get("game", "")), v.get("market"),
-                     tuple(v.get("window") or []))
+                     tuple(v.get("window") or []),
+                     tuple(v.get("push") or []))
                     for v in entries.values() if isinstance(v, dict)}
     new_builds = []
     for b in builds:
-        wkey = (norm_event(b["game"]), b["market"], tuple(b["window"]))
+        wkey = (norm_event(b["game"]), b["market"], tuple(b["window"]),
+                tuple(b.get("push") or []))
         if wkey in seen_windows:
             continue  # same game+market+window via another line combo
         seen_windows.add(wkey)
