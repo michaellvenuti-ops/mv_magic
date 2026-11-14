@@ -7656,3 +7656,11 @@
 [2026-11-14 02:04:21 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 1 new, 0 unverified, 695 total tallied.
 [2026-11-14 02:04:22 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 02:04:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 02:18:32 ET] sync_to_github.py: FAILED (exit 1) in 848s —   FAILED: pc-data/key-number-middles-state.json (HTTP 409: {'error': '{"message":"is at ed0d09a8076e622ed6f5dd2ed8ffcacaa1c700af but expected 94ee13ee4b5834e5bf
+[2026-11-14 02:20:07 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 215 events (129 with odds), db total 271273 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 02:21:01 ET] dh_arbitrage.py: OK in 54s — arbitrage: no new qualifying pairs (silent).
+[2026-11-14 02:21:20 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 02:21:40 ET] dh_low_holds.py: OK in 20s — LOW-HOLDS: NFL KC Chiefs ATL Falcons Nov-15 1:00 PM / table / Alt Total Under 55.5 / Alt Total Over 55.5 / table bar_chart | Fanatics-NJ | ProphetX
+[2026-11-14 02:23:19 ET] dh_game_middles.py: OK in 98s — GAME MIDDLE: NCAAF Wisconsin Maryland Today 12:00 PM / table / Alt Spread Maryland +12 / Alt Spread Wisconsin -11.5 / table | BetRivers | theScore — window 262.
+[2026-11-14 02:27:09 ET] dh_key_number_middles.py: OK in 231s — key-number-middles: 161 basketball rows excluded (football-only rule).
+[2026-11-14 02:30:51 ET] dh_basketball_key_middles.py: OK in 222s — basketball-key-middles: no new basketball middles.
