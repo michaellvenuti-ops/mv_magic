@@ -4466,7 +4466,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 14.5,
+   "spread": 15.5,
    "fav_team": "Nebraska",
    "dog_team": "Rutgers"
   },
@@ -8438,12 +8438,20 @@
    "sport": "NCAAB",
    "matchup": "N Arizona at Kentucky",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 30.5,
    "fav_team": "Kentucky",
    "dog_team": "N Arizona",
-   "live_ml": -1150
+   "live_ml": -175,
+   "alerted_at": "2026-11-13T20:30:08",
+   "board_read_at": "2026-11-13T20:30:07",
+   "alert_expires_at": "2026-11-13T20:33:08",
+   "alert_detail": "5:12 - 2nd Half",
+   "alert_fav_score": 61,
+   "alert_dog_score": 62,
+   "alert_ml": -175,
+   "ml_read_at": "2026-11-13T20:30:07"
   },
   "401929386": {
    "sport": "NCAAB",
@@ -8676,7 +8684,7 @@
    "spread": 10.5,
    "fav_team": "Texas St",
    "dog_team": "Southern Miss",
-   "live_ml": -270
+   "live_ml": -345
   },
   "401927380": {
    "sport": "NCAAB",
@@ -8686,7 +8694,8 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "Murray St",
-   "dog_team": "Texas Southern"
+   "dog_team": "Texas Southern",
+   "live_ml": -10000
   },
   "401927374": {
    "sport": "NCAAB",
@@ -8717,7 +8726,7 @@
    "spread": 16.5,
    "fav_team": "Tarleton St",
    "dog_team": "Alcorn St",
-   "live_ml": -620
+   "live_ml": -360
   },
   "401924953": {
    "sport": "NCAAB",
@@ -8754,7 +8763,7 @@
    "spread": 22.5,
    "fav_team": "TCU",
    "dog_team": "Milwaukee",
-   "live_ml": -2800
+   "live_ml": -2100
   },
   "401906804": {
    "sport": "NCAAB",
@@ -8898,7 +8907,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.5,
    "fav_team": "Saint Mary's",
    "dog_team": "UIC"
   },
