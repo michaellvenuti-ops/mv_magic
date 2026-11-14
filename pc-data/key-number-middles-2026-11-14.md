@@ -79,3 +79,4 @@ KEY 4: NCAAF Kansas West Virginia Today 3:30 PM / table bar_chart / Alt Spread K
 KEY 4: NCAAF Arizona St. UCF Today 5:30 PM / table / Alt Spread Arizona St. +4.5 / Spread UCF -3.5 / table bar_chart | theScore | ProphetX margins [4] :: -115 $1,000 theScore, theScore, -115 / +105 [48.78%] $921.42 ProphetX, ProphetX, +105
 ## 2026-11-14T13:39:41-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1880 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-14T15:43:39-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1948 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-14T16:27:23-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1959 + 0 rows parsed, qualifying only below — 0 NEW middles
