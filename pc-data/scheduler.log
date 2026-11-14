@@ -7727,3 +7727,11 @@
 [2026-11-14 04:37:00 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
 [2026-11-14 04:37:00 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 04:37:02 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 04:51:02 ET] sync_to_github.py: FAILED (exit 1) in 840s —   FAILED: steam-side-board-pc.html (HTTP 409: {'error': '{"message":"is at 51c4dc668267ab7c1b656607a0c9cfcc9ac0262e but expected a7b415bb908a542b0742d75641c1e56
+[2026-11-14 04:53:16 ET] odds_recorder.py: OK in 104s — SUMMARY: recorded 215 events (129 with odds), db total 272563 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 04:57:10 ET] dh_arbitrage.py: OK in 234s — ARBITRAGE: NBA DEN Nuggets NO Pelicans Today 7:15 PM / table / Ast+Rebs J. Murray Under 11.5 / Ast+Rebs J. Murray 12+ / table | FanDuel | Bet365
+[2026-11-14 04:58:57 ET] dh_kalshi_poly_arb.py: OK in 107s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 04:59:43 ET] dh_low_holds.py: OK in 45s — LOW-HOLDS: Challenger Orleans 127 O. Virtanen 124 P. Martinez Today 11:00 AM / table / Moneyline O. Virtanen / Moneyline P. Martinez / table bar_chart | Bet365 
+[2026-11-14 05:02:21 ET] dh_game_middles.py: OK in 158s — GAME MIDDLE: NCAAF Northwestern 21 Ohio St. Today 12:00 PM / table / Alt Spread Northwestern +15 / Alt Spread Ohio St. -14.5 / table bar_chart | Bally Bet | Pro
+[2026-11-14 05:06:22 ET] dh_key_number_middles.py: OK in 240s — key-number-middles: 98 basketball rows excluded (football-only rule).
+[2026-11-14 05:10:13 ET] dh_basketball_key_middles.py: OK in 231s — basketball-key-middles: no new basketball middles.
