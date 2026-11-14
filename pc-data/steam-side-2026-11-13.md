@@ -43,3 +43,6 @@ NEW FLAG: FBS San Jose State @ Air Force | 2026-11-13 — Fanatics still dealing
 NEW FLAG: FBS Utah @ Arizona | 2026-11-13 — Fanatics still dealing spread 2.5 on Arizona (pre-move median 2.5, now 1.5)
 NEW FLAG: FBS Utah @ Arizona | 2026-11-13 — Kalshi still dealing spread 2.5 on Arizona (pre-move median 2.5, now 1.5)
 ## 2026-11-13T21:06:18-05:00 — 67 games, 0 steam events, 0 NEW flags, 6 started games skipped
+## 2026-11-13T21:58:29-05:00 — 67 games, 1 steam events, 2 NEW flags, 6 started games skipped
+NEW FLAG: FBS California @ Virginia | 2026-11-13 — bet365 still dealing spread -10.5 on Virginia (pre-move median -10.5, now -11.5)
+NEW FLAG: FBS California @ Virginia | 2026-11-13 — Kalshi still dealing spread -10.5 on Virginia (pre-move median -10.5, now -11.5)
