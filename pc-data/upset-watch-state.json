@@ -5491,7 +5491,8 @@
    "fav": "away",
    "spread": 3.0,
    "fav_team": "SE Missouri",
-   "dog_team": "Charleston So"
+   "dog_team": "Charleston So",
+   "final": true
   },
   "401868192": {
    "sport": "CFB",
@@ -9521,7 +9522,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "N Kentucky",
-   "dog_team": "C Michigan"
+   "dog_team": "C Michigan",
+   "final": true
   },
   "401934189": {
    "sport": "NCAAB",
@@ -9654,11 +9656,20 @@
    "sport": "NCAAB",
    "matchup": "Utah Tech at California",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 14.5,
    "fav_team": "California",
-   "dog_team": "Utah Tech"
+   "dog_team": "Utah Tech",
+   "live_ml": -180,
+   "alerted_at": "2026-11-14T17:36:04",
+   "board_read_at": "2026-11-14T17:36:04",
+   "alert_expires_at": "2026-11-14T17:39:04",
+   "alert_detail": "4:07 - 1st Half",
+   "alert_fav_score": 24,
+   "alert_dog_score": 32,
+   "alert_ml": -180,
+   "ml_read_at": "2026-11-14T17:36:04"
   },
   "401926777": {
    "sport": "NCAAB",
@@ -10004,7 +10015,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Pistons",
    "dog_team": "Heat"
   },
