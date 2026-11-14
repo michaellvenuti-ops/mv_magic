@@ -38,6 +38,16 @@ returns to "Filters: Off") after its read, even on failure
 (try/finally). A stale "Filters: On" left by a crashed run is
 cleared at the START of the next run. No named preset is saved
 (the "Middles Preset" dropdown is untested).
+FIX v2 2026-11-14 (same day, after manual test #2 at 14:40):
+the filter still did not set — 'Hockey Props' was not clickable.
+Two causes: (1) the header-text click only expands the Market
+Type section, it does NOT flip the switch, so the checkboxes
+stayed disabled — the flip is now VERIFIED against the Hockey
+Props checkbox before proceeding; (2) the mid-sequence Clear
+resets the switch itself — Clear is now used ONLY for the stale
+filter at run start and the restore in clear_shots_filter.
+Failures are recorded in the banked header (FILTER_FAIL) so the
+scheduler's own hourly runs self-diagnose.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -159,31 +169,111 @@ def _panel_clear(page):
     return _click_visible_text(page, "Clear", timeout=5000)
 
 
+# Last filter failure reason, for the banked header — the
+# scheduler's own hourly runs then self-diagnose without a
+# manual test (fix 2026-11-14 v2).
+FILTER_FAIL = ""
+
+
+def _hockey_props_enabled(page):
+    """True when the Hockey Props checkbox exists and is enabled
+    (i.e. the Market Type switch is really on); False when it
+    exists but is disabled; None when no label-associated control
+    is found (DOM shape unprobed — caller must not treat None as
+    proof either way)."""
+    try:
+        lbl = page.get_by_label("Hockey Props", exact=True)
+        if lbl.count():
+            return bool(lbl.first.is_enabled())
+    except Exception:
+        pass
+    return None
+
+
 def _turn_on_market_type(page):
     """Flip the Market Type section switch on. The switch sits
     beside the section label; its checkboxes stay disabled until
-    it is on. Layered attempts — the DOM shape is unprobed."""
-    try:
+    it is on. Layered attempts — the DOM shape is unprobed — and
+    each attempt is VERIFIED against the Hockey Props checkbox:
+    the old version returned True after merely clicking the
+    section header text, which expands/collapses the section
+    WITHOUT flipping the switch (manual test 2026-11-14 14:40:
+    'Hockey Props' stayed disabled and the filter never set)."""
+    attempts = []
+
+    def _try(fn):
+        try:
+            if fn():
+                page.wait_for_timeout(1200)
+                return _hockey_props_enabled(page)
+        except Exception:
+            pass
+        return None
+
+    def _by_switch_role():
         sw = page.get_by_role("switch", name=re.compile(
             "Market Type", re.I))
         if sw.count():
             sw.first.click(timeout=5000)
-            page.wait_for_timeout(1200)
             return True
-    except Exception:
-        pass
-    try:
+        return False
+
+    def _by_label():
         lbl = page.locator("label", has_text="Market Type")
         if lbl.count():
             lbl.first.click(timeout=5000)
-            page.wait_for_timeout(1200)
+            return True
+        return False
+
+    def _by_header_parent():
+        # The switch is a toggle control inside the section
+        # header row: find the header text, walk to its parent,
+        # click the first switch/checkbox/button inside it.
+        hdr = page.get_by_text("Market Type", exact=True)
+        if not hdr.count():
+            return False
+        try:
+            parent = hdr.first.locator("xpath=..")
+            for sel in ("[role='switch']", "input[type='checkbox']",
+                        "button"):
+                cand = parent.locator(sel)
+                if cand.count():
+                    cand.first.click(timeout=5000)
+                    return True
+        except Exception:
+            pass
+        return False
+
+    def _by_header_text():
+        return _click_visible_text(page, "Market Type", timeout=5000)
+
+    for name, fn in (("switch-role", _by_switch_role),
+                     ("label", _by_label),
+                     ("header-parent", _by_header_parent),
+                     ("header-text", _by_header_text)):
+        enabled = _try(fn)
+        attempts.append(f"{name}={'on' if enabled else ('?' if enabled is None else 'off')}")
+        if enabled is True:
+            print("sog-middles: Market Type switch on "
+                  f"(via {name}).")
+            return True
+    print("sog-middles: Market Type switch did not flip "
+          f"({', '.join(attempts)}) — relying on the in-code "
+          "market check.")
+    return False
+
+
+def _click_checkbox(page, label):
+    """Click a filter-tree checkbox by its label (top-level labels
+    are unique); fall back to the visible-text click."""
+    try:
+        loc = page.get_by_label(label, exact=True)
+        if loc.count():
+            loc.first.click(timeout=5000)
             return True
     except Exception:
         pass
-    if _click_visible_text(page, "Market Type", timeout=5000):
-        page.wait_for_timeout(1200)
-        return True
-    return False
+    return _click_visible_text(page, label)
 
 
 def set_shots_filter(page):
@@ -193,6 +283,7 @@ def set_shots_filter(page):
     cleared and closed so no partial filter is left behind; the
     caller then falls back to the in-code market check."""
     if not _open_filters_panel(page):
+        FILTER_FAIL = "panel did not open"
         print("sog-middles: Filters panel did not open — relying "
               "on the in-code market check.")
         return False
@@ -201,34 +292,44 @@ def set_shots_filter(page):
         if _filters_button_state(page) == "On":
             _panel_clear(page)
         if not _turn_on_market_type(page):
+            FILTER_FAIL = "Market Type switch did not flip"
             print("sog-middles: Market Type switch did not flip — "
                   "relying on the in-code market check.")
             return False
-        # The probe's order: section Clear first, then drill down.
-        _panel_clear(page)
-        page.wait_for_timeout(800)
-        if not _click_visible_text(page, "Hockey Props"):
+        # NOTE: do NOT press Clear here. The section Clear (or the
+        # panel's top Clear) resets the Market Type switch itself
+        # — the 2026-11-14 14:40 manual test flipped the switch,
+        # then cleared, and 'Hockey Props' was disabled afterwards.
+        # A stale filter is already cleared at run start (above);
+        # the checkboxes of a freshly flipped switch start
+        # unchecked.
+        if not _click_checkbox(page, "Hockey Props"):
+            FILTER_FAIL = "'Hockey Props' not clickable"
             print("sog-middles: 'Hockey Props' not clickable — "
                   "relying on the in-code market check.")
             return False
         page.wait_for_timeout(1200)
         if not _click_visible_text(page, "Player Props"):
+            FILTER_FAIL = "'Player Props' not clickable"
             print("sog-middles: 'Player Props' not clickable — "
                   "relying on the in-code market check.")
             return False
         page.wait_for_timeout(1200)
         if not _click_visible_text(page, "Shots"):
+            FILTER_FAIL = "'Shots' not clickable"
             print("sog-middles: 'Shots' not clickable — relying "
                   "on the in-code market check.")
             return False
         page.wait_for_timeout(1200)
         if not _close_filters_panel(page):
+            FILTER_FAIL = "panel did not close"
             print("sog-middles: Filters panel did not close — "
                   "filter state uncertain; relying on the in-code "
                   "market check.")
             return False
         state = _filters_button_state(page)
         if state != "On":
+            FILTER_FAIL = f"button reads 'Filters: {state}'"
             print(f"sog-middles: filter set but button reads "
                   f"'Filters: {state}' — treating as unset.")
             return False
@@ -425,8 +526,8 @@ def main():
         lines = [f"## {now_stamp()} — sog-middles: {len(full)} "
                  f"full-size + {len(smaller)} smaller-bets rows "
                  f"parsed (filter={'on' if filter_set else 'off — '
-                 f'in-code check only'}) (compact: qualifying only "
-                 f"below)"]
+                 f'{FILTER_FAIL or 'in-code check only'}'}) "
+                 f"(compact: qualifying only below)"]
         for mid in full + smaller:
             ok, recovered = qualifies(mid)
             if not ok:
