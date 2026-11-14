@@ -1,22 +1,12 @@
-# Hung numbers — 2026-11-13 (scan 2026-11-13 21:57)
+# Hung numbers — 2026-11-13 (scan 2026-11-13 23:10)
 
-- Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Dolphins vs Colts | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Florida State vs Pittsburgh | DraftKings | spread | value: dog | book 1.5 vs median -2.5 | div 4.0 
-- Florida State vs Pittsburgh | DraftKings | moneyline Florida State | value: Florida State | book 53.1 vs median 59.7 | div 6.7 
-- Florida State vs Pittsburgh | FanDuel | moneyline Florida State | value: Florida State | book 65.8 vs median 59.7 | div 6.0 
-- Florida State vs Pittsburgh | DraftKings | moneyline Pittsburgh | value: Pittsburgh | book 53.9 vs median 46.8 | div 7.1 
-- Florida State vs Pittsburgh | FanDuel | moneyline Pittsburgh | value: Pittsburgh | book 40.0 vs median 46.8 | div 6.8 
-- Illinois vs UCLA | BetMGM | spread | value: dog | book 13.5 vs median 12.0 | div 1.5 
-- Illinois vs UCLA | DraftKings | spread | value: dog | book 13.5 vs median 12.0 | div 1.5 
-- Illinois vs UCLA | Caesars | spread | value: favorite | book 10.5 vs median 12.0 | div 1.5 
-- Illinois vs UCLA | FanDuel | spread | value: favorite | book 9.5 vs median 12.0 | div 2.5 
-- Illinois vs UCLA | BetMGM | total | value: Under | book 37.5 vs median 40.0 | div 2.5 
-- Illinois vs UCLA | DraftKings | total | value: Under | book 38.5 vs median 40.0 | div 1.5 
-- Illinois vs UCLA | Caesars | total | value: Over | book 41.5 vs median 40.0 | div 1.5 
-- Illinois vs UCLA | FanDuel | total | value: Over | book 41.5 vs median 40.0 | div 1.5 
-- Houston vs Colorado | FanDuel | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Illinois vs UCLA | BetMGM | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Houston vs Colorado | BetMGM | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
+- Houston vs Colorado | DraftKings | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
+- Houston vs Colorado | Caesars | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
+- Houston vs Colorado | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Kansas State vs TCU | FanDuel | spread | value: favorite | book 11.5 vs median 13.25 | div 1.75 
 - Florida Atlantic vs Tulsa | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
