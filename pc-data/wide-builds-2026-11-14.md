@@ -13,3 +13,6 @@ NFL MIN Vikings GB Packers Nov-15 1:00 PM — Receiving Yards J. Addison — Ove
 ## 2026-11-14T04:32:48-05:00 — wide-builds: 0 NEW wide builds
 (end of new builds — full list below)
 NFL MIN Vikings GB Packers Nov-15 1:00 PM — Receiving Yards J. Addison — Over 47.5 BetMGM -111 ($100) / Under 50.5 Caesars -112 ($100) — both win 48, 49, 50 — land +$179.38, miss -10.71 / -9.91 on ~$200 balanced
+## 2026-11-14T05:26:58-05:00 — wide-builds: 0 NEW wide builds
+(end of new builds — full list below)
+NFL MIN Vikings GB Packers Nov-15 1:00 PM — Receiving Yards J. Addison — Over 47.5 BetMGM -111 ($100) / Under 50.5 Caesars -112 ($100) — both win 48, 49, 50 — land +$179.38, miss -10.71 / -9.91 on ~$200 balanced
