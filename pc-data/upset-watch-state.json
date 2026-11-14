@@ -4614,7 +4614,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "Indiana",
    "dog_team": "USC"
   },
@@ -4714,7 +4714,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 21.5,
+   "spread": 22.5,
    "fav_team": "Liberty",
    "dog_team": "MTSU"
   },
@@ -5157,7 +5157,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Presbyterian",
-   "dog_team": "Morehead St"
+   "dog_team": "Morehead St",
+   "final": true
   },
   "401869155": {
    "sport": "CFB",
@@ -5574,11 +5575,17 @@
    "sport": "CFB",
    "matchup": "Miss Valley St at Florida A&M",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Florida A&M",
-   "dog_team": "Miss Valley St"
+   "dog_team": "Miss Valley St",
+   "alerted_at": "2026-11-14T15:16:03",
+   "board_read_at": "2026-11-14T15:16:03",
+   "alert_expires_at": "2026-11-14T15:21:03",
+   "alert_detail": "10:16 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401869148": {
    "sport": "CFB",
