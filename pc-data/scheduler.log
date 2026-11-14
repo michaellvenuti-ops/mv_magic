@@ -7556,3 +7556,11 @@
 [2026-11-13 22:49:04 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 1 new, 0 unverified, 693 total tallied.
 [2026-11-13 22:49:05 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 22:49:06 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-13 23:03:00 ET] sync_to_github.py: FAILED (exit 1) in 834s —   FAILED: pc-data/game-middles-state.json (HTTP 409: {'error': '{"message":"is at 1f818315e681cdb3ceefdeed79e2a81cb4ecf322 but expected a37c6645c860222c84c3f502
+[2026-11-13 23:04:34 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (130 with odds), db total 269115 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 23:04:35 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 23:06:35 ET] dh_game_middles.py: OK in 120s — GAME MIDDLE: NCAAF Minnesota Penn St. Nov-14 7:00 PM / table / Alt Spread Minnesota +16.5 / Alt Spread Penn St. -15.5 / table | BetRivers | FanDuel — window 313
+[2026-11-13 23:10:18 ET] dh_key_number_middles.py: OK in 223s — key-number-middles: 15 basketball rows excluded (football-only rule).
+[2026-11-13 23:11:28 ET] hung_number.py: OK in 70s — HUNG NUMBER: Houston vs Colorado — Caesars spread value dog (-14.5 vs median -15.5)
+[2026-11-13 23:11:33 ET] rlm.py: OK in 5s
+[2026-11-13 23:11:36 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
