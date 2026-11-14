@@ -21,3 +21,4 @@ NEW FLAG: FBS Colorado State @ Washington State | 2026-11-14 — Fanatics still 
 NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — FanDuel still dealing spread -2.5 on Kansas (pre-move median -2.5, now -1.5)
 NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — Kalshi still dealing spread -2.5 on Kansas (pre-move median -2.5, now -1.5)
 ## 2026-11-14T14:16:48-05:00 — 67 games, 0 steam events, 0 NEW flags, 22 started games skipped
+## 2026-11-14T15:02:32-05:00 — 67 games, 0 steam events, 0 NEW flags, 24 started games skipped
