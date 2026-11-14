@@ -17,3 +17,6 @@ NEW FLAG: FBS Minnesota @ Penn State | 2026-11-14 — Kalshi still dealing sprea
 NEW FLAG: FBS UNLV @ New Mexico | 2026-11-14 — Fanatics still dealing spread -14.5 on New Mexico (pre-move median -16.5, now -17.5)
 ## 2026-11-14T12:05:18-05:00 — 66 games, 1 steam events, 1 NEW flags, 13 started games skipped
 NEW FLAG: FBS Colorado State @ Washington State | 2026-11-14 — Fanatics still dealing spread -9.5 on Colorado State (pre-move median -9.5, now -8.5)
+## 2026-11-14T13:13:15-05:00 — 67 games, 1 steam events, 2 NEW flags, 20 started games skipped
+NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — FanDuel still dealing spread -2.5 on Kansas (pre-move median -2.5, now -1.5)
+NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — Kalshi still dealing spread -2.5 on Kansas (pre-move median -2.5, now -1.5)
