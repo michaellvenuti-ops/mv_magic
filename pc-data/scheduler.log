@@ -7687,3 +7687,21 @@
 [2026-11-14 03:14:41 ET] dh_game_middles.py: OK in 166s — GAME MIDDLE: NFL MIN Vikings GB Packers Nov-15 1:00 PM / table / Receiving Yards J. Addison Over 47.5 / Receiving Yards J. Addison Under 49.5 / table | BetMGM |
 [2026-11-14 03:18:18 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: 183 basketball rows excluded (football-only rule).
 [2026-11-14 03:22:09 ET] dh_basketball_key_middles.py: OK in 230s — basketball-key-middles: no new basketball middles.
+[2026-11-14 03:36:54 ET] sync_to_github.py: OK in 885s —   ok: wide-builds-board-pc.html
+[2026-11-14 03:37:33 ET] notify.py: OK in 38s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 03:39:10 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 215 events (129 with odds), db total 271918 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 03:41:01 ET] dh_arbitrage.py: FAILED (exit 1) in 111s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-14 03:43:04 ET] dh_kalshi_poly_arb.py: OK in 124s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 03:43:06 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL MIN Vikings GB Packers Nov-15 1:00 PM — Receiving Yards J. Addison — Over 47.5 BetMGM -111 ($100) / Under 50.5 Caesars -112 ($100) — both win 48,
+[2026-11-14 03:44:26 ET] dh_low_holds.py: OK in 80s — LOW-HOLDS: NCAAF Kansas West Virginia Today 3:30 PM / table / Alt Spread Kansas +9.5 / Alt Spread West Virginia -9 / table | Fanatics-NJ | Bally Bet
+[2026-11-14 03:44:33 ET] steam_side.py: OK in 7s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 03:47:07 ET] dh_prop_middles.py: OK in 154s — PROP MIDDLE CLEAN : NFL PIT Steelers CIN Bengals Nov-15 8:20 PM / table / Receiving Yards C. Brown Under 25.5 / Alt Recv Yards C. Brown 25+ / table | BetRivers 
+[2026-11-14 03:48:43 ET] dh_sog_middles.py: OK in 96s — - 0 deliverables this run
+[2026-11-14 03:48:47 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 03:48:48 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 03:48:49 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 03:48:50 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 03:48:52 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 03:48:53 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 03:48:54 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 03:48:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
