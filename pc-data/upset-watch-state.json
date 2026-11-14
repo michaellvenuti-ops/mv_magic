@@ -4590,7 +4590,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Tennessee",
-   "dog_team": "Texas A&M"
+   "dog_team": "Texas A&M",
+   "final": true
   },
   "401870796": {
    "sport": "CFB",
@@ -4793,11 +4794,17 @@
    "sport": "CFB",
    "matchup": "Oregon St at Boise St",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 17.5,
    "fav_team": "Boise St",
-   "dog_team": "Oregon St"
+   "dog_team": "Oregon St",
+   "alerted_at": "2026-11-14T18:14:02",
+   "board_read_at": "2026-11-14T18:14:02",
+   "alert_expires_at": "2026-11-14T18:19:02",
+   "alert_detail": "12:08 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401869928": {
    "sport": "CFB",
@@ -5537,7 +5544,8 @@
    "fav": "home",
    "spread": 14.0,
    "fav_team": "St Thomas",
-   "dog_team": "Drake"
+   "dog_team": "Drake",
+   "final": true
   },
   "401869135": {
    "sport": "CFB",
@@ -5591,7 +5599,8 @@
    "alert_expires_at": "2026-11-14T15:17:03",
    "alert_detail": "15:00 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401868303": {
    "sport": "CFB",
@@ -5611,7 +5620,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Jackson St",
-   "dog_team": "Alabama St"
+   "dog_team": "Alabama St",
+   "final": true
   },
   "401868364": {
    "sport": "CFB",
@@ -9641,7 +9651,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Wake Forest",
-   "dog_team": "Southern Utah"
+   "dog_team": "Southern Utah",
+   "final": true
   },
   "401920741": {
    "sport": "NCAAB",
@@ -9743,7 +9754,7 @@
    "spread": 11.5,
    "fav_team": "Providence",
    "dog_team": "Colorado",
-   "live_ml": -540
+   "live_ml": -375
   },
   "401920193": {
    "sport": "NCAAB",
@@ -10037,7 +10048,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Pistons",
    "dog_team": "Heat"
   },
