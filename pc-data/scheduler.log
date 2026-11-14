@@ -7922,3 +7922,14 @@
 [2026-11-14 11:12:23 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-14 11:13:41 ET] dh_derivative_ev.py: FAILED (exit 2) in 78s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-14.txt. No prices i
 [2026-11-14 11:13:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 11:28:52 ET] sync_to_github.py: OK in 911s —   ok: wide-builds-board-pc.html
+[2026-11-14 11:29:29 ET] notify.py: OK in 37s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 11:31:10 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 234 events (206 with odds), db total 276029 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 11:32:03 ET] dh_arbitrage.py: OK in 54s — ARBITRAGE: NCAAB Northern Illinois Bellarmine Today 2:00 PM / table / Alt Total Under 156.5 / Alt Total Over 156.5 / table | Fanatics-NJ | Bet365
+[2026-11-14 11:32:40 ET] dh_kalshi_poly_arb.py: OK in 37s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 11:32:43 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 11:33:33 ET] dh_low_holds.py: OK in 50s — low-holds: no new qualifying pairs (silent).
+[2026-11-14 11:37:08 ET] dh_key_number_middles.py: OK in 214s — key-number-middles: 292 basketball rows excluded (football-only rule).
+[2026-11-14 11:40:53 ET] dh_basketball_key_middles.py: OK in 225s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Coppin St. South Florida Today 2:00 PM / table / Alt Spread South Florida -23.5 / Alt Spread Coppin St.
+[2026-11-14 11:44:39 ET] costco_gold.py: OK in 225s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-14 11:44:41 ET] syncing to GitHub (regular 10-minute sync)
