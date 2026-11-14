@@ -42,3 +42,14 @@
 - 2026-11-13: North Carolina Central Eagles @ Liberty Flames — first: North Carolina Central Eagles (2PT, 0:23 in); lead changes 3; final 66-74
 - 2026-11-13: Southeast Missouri State Redhawks @ Middle Tennessee Blue Raiders — first: Middle Tennessee Blue Raiders (3PT, 0:29 in); lead changes 0; final 75-88
 - 2026-11-13: Wright State Raiders @ Samford Bulldogs — first: Wright State Raiders (2PT, 0:17 in); lead changes 2; final 90-66
+## 2026-11-13T22:49:03-05:00 -- NCAAB FIRST SCORE (PC): 10 new final(s) tallied; season 543 games through 2026-11-13
+- 2026-11-13: SIU Edwardsville Cougars @ Duke Blue Devils — first: Duke Blue Devils (2PT, 0:29 in); lead changes 0; final 47-90
+- 2026-11-13: Virginia Cavaliers @ Maryland Terrapins — first: Maryland Terrapins (2PT, 0:36 in); lead changes 5; final 87-83
+- 2026-11-13: Central Arkansas Bears @ Arkansas Razorbacks — first: Arkansas Razorbacks (FT, 1:09 in); lead changes 4; final 66-79
+- 2026-11-13: Southern Miss Golden Eagles @ Texas State Bobcats — first: Southern Miss Golden Eagles (3PT, 0:17 in); lead changes 3; final 65-85
+- 2026-11-13: Texas Southern Tigers @ Murray State Racers — first: Murray State Racers (3PT, 0:21 in); lead changes 8; final 78-99
+- 2026-11-13: Illinois State Redbirds @ North Dakota State Bison — first: Illinois State Redbirds (2PT, 0:45 in); lead changes 13; final 81-82
+- 2026-11-13: Alcorn State Braves @ Tarleton State Texans — first: Alcorn State Braves (3PT, 0:22 in); lead changes 5; final 69-73
+- 2026-11-13: Georgia Southern Eagles @ UCF Knights — first: UCF Knights (2PT, 1:10 in); lead changes 0; final 70-84
+- 2026-11-13: Milwaukee Panthers @ TCU Horned Frogs — first: TCU Horned Frogs (2PT, 0:21 in); lead changes 12; final 64-76
+- 2026-11-13: Fairleigh Dickinson Knights @ Oklahoma Sooners — first: Oklahoma Sooners (3PT, 0:28 in); lead changes 0; final 58-74
