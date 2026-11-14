@@ -1,0 +1,15 @@
+sog-middles: Market Type switch on (via header-parent).
+sog-middles: filter state dumped to data\sog-filter-dump-switch-on-20261114-1512.json (94 controls).
+Traceback (most recent call last):
+  File "C:\Users\venut\pc-scans\dh_sog_middles.py", line 798, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\venut\pc-scans\dh_sog_middles.py", line 695, in main
+    filter_set = set_shots_filter(page)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\venut\pc-scans\dh_sog_middles.py", line 524, in set_shots_filter
+    print("sog-middles: Market Type filter set to Hockey Props "
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 52: character maps to <undefined>
