@@ -8162,3 +8162,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 18:13:22 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 18:13:24 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-14 18:13:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 18:29:11 ET] sync_to_github.py: OK in 948s —   ok: team-total-middles-board-pc.html
+[2026-11-14 18:31:06 ET] notify.py: OK in 114s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 18:32:41 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (77 with odds), db total 279305 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 18:33:19 ET] dh_arbitrage.py: OK in 38s — arbitrage: no new qualifying pairs (silent).
+[2026-11-14 18:33:40 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 18:36:45 ET] dh_key_number_middles.py: OK in 185s — key-number-middles: 164 basketball rows excluded (football-only rule).
+[2026-11-14 18:39:52 ET] dh_basketball_key_middles.py: OK in 186s — BASKETBALL MIDDLE (NCAAB spread, modeled 11.6%): NCAAB Quinnipiac Central Connecticut Nov-15 1:00 PM / table / Spread Quinnipiac -2.5 / Spread Central Connectic
+[2026-11-14 18:39:52 ET] syncing to GitHub (regular 10-minute sync)
