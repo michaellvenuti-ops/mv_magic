@@ -80,3 +80,7 @@ KEY 4: NCAAF Arizona St. UCF Today 5:30 PM / table / Alt Spread Arizona St. +4.5
 ## 2026-11-14T13:39:41-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1880 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-14T15:43:39-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1948 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-14T16:27:23-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1959 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-14T17:45:26-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1949 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 4: NCAAF Louisville North Carolina Today 7:00 PM / table bar_chart / Alt Spread North Carolina +4.5 / Alt Spread Louisville -3.5 / table | ProphetX | Bally Bet margins [4] :: -115 [53.49%] $1,000 ProphetX, ProphetX, -115 / +104 $908 Bally Bet, Bally Bet, +104
+(end of new middles — full qualifying list below)
+KEY 4: NCAAF Louisville North Carolina Today 7:00 PM / table bar_chart / Alt Spread North Carolina +4.5 / Alt Spread Louisville -3.5 / table | ProphetX | Bally Bet margins [4] :: -115 [53.49%] $1,000 ProphetX, ProphetX, -115 / +104 $908 Bally Bet, Bally Bet, +104
