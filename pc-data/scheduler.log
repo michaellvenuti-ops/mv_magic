@@ -8045,3 +8045,30 @@
 [2026-11-14 15:43:47 ET] dh_key_number_middles.py: OK in 255s — key-number-middles: 227 basketball rows excluded (football-only rule).
 [2026-11-14 15:47:32 ET] dh_basketball_key_middles.py: OK in 224s — basketball-key-middles: no new basketball middles.
 [2026-11-14 15:47:32 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 16:02:58 ET] sync_to_github.py: FAILED (exit 1) in 926s —   FAILED: pc-data/low-holds-state.json (HTTP 409: {'error': '{"message":"is at ad9c5eed23843282cf50dda0fccf55e9a4c2d005 but expected e07c83ff2d4c01f2f73042bc026
+[2026-11-14 16:04:37 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 234 events (102 with odds), db total 278135 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 16:05:10 ET] dh_arbitrage.py: OK in 34s — ARBITRAGE: NBA DET Pistons MIA Heat Today 8:15 PM / table / Pts+Ast+Rebs P. Reed Under 23.5 / Pts+Ast+Rebs P. Reed 24+ / table | Bet365 | Fanatics-NJ
+[2026-11-14 16:05:31 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 16:05:32 ET] wide_builds.py: OK in 1s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 16:05:54 ET] dh_low_holds.py: OK in 21s — LOW-HOLDS: NBA BKN Nets MEM Grizzlies Today 8:15 PM / table / Rebounds J. Wells Under 3.5 / Alt Rebounds J. Wells 4+ / table | BetRivers | FanDuel
+[2026-11-14 16:07:33 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NCAAF Auburn Mississippi St. Today 4:15 PM / table / Alt Total Under 52.5 / Alt Total Over 51.5 / table | theScore | Bally Bet — window 230.0 :: -1
+[2026-11-14 16:08:58 ET] hung_number.py: OK in 85s — HUNG NUMBER: Nebraska vs Rutgers — FanDuel spread value dog (-14.5 vs median -15.5)
+[2026-11-14 16:09:02 ET] rlm.py: OK in 5s
+[2026-11-14 16:09:06 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 16:09:09 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 | Caesars | Western Kentucky spread 7.5 (median 7.5 -> 6.0)
+[2026-11-14 16:10:44 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE CLEAN : NBA BKN Nets MEM Grizzlies Today 8:15 PM / table / Points C. Coward Under 15.5 / Alt Points C. Coward 15+ / table | DraftKings | Bet365 — wi
+[2026-11-14 16:13:14 ET] dh_sog_middles.py: OK in 150s — - 0 deliverables this run
+[2026-11-14 16:13:16 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-14 16:13:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 16:13:18 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 16:13:20 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 304 total tallied.
+[2026-11-14 16:13:22 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 10 new, 0 unverified, 574 total tallied.
+[2026-11-14 16:13:25 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 10 new, 0 unverified, 705 total tallied.
+[2026-11-14 16:13:25 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 16:13:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 16:13:26 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 16:22:32 ET] sync_to_github.py: FAILED (exit 1) in 546s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-14 16:24:11 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 234 events (95 with odds), db total 278369 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 16:27:24 ET] dh_key_number_middles.py: OK in 193s — key-number-middles: 298 basketball rows excluded (football-only rule).
+[2026-11-14 16:30:40 ET] dh_basketball_key_middles.py: OK in 195s — basketball-key-middles: no new basketball middles.
+[2026-11-14 16:30:40 ET] syncing to GitHub (regular 10-minute sync)
