@@ -9732,144 +9732,200 @@
    "winner": "UCLA Bruins"
   },
   {
-   "date": "2026-11-14",
    "away": "Alabama Crimson Tide",
-   "home": "Vanderbilt Commodores",
+   "date": "2026-11-14",
+   "final": "21-6",
    "first": "Vanderbilt Commodores",
-   "first_side": "home",
-   "first_kind": "FG",
    "first_elapsed_sec": 1547,
-   "winner": "Alabama Crimson Tide",
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "Vanderbilt Commodores",
+   "lead_changes": 1,
    "seq": "0-3>7-3>14-3>14-6>21-6",
-   "lead_changes": 1,
    "ties": 0,
-   "final": "21-6"
+   "winner": "Alabama Crimson Tide"
   },
   {
    "date": "2026-11-14",
-   "away": "Cincinnati Bearcats",
-   "home": "Iowa State Cyclones",
-   "first": "Cincinnati Bearcats",
-   "first_side": "away",
-   "first_kind": "TD",
-   "first_elapsed_sec": 89,
-   "winner": "Iowa State Cyclones",
-   "seq": "7-0>7-7>7-14>7-21>7-28>7-31>13-31>13-34>13-41",
-   "lead_changes": 1,
-   "ties": 1,
-   "final": "13-41"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "Duke Blue Devils",
-   "home": "Miami Hurricanes",
-   "first": "Miami Hurricanes",
+   "away": "Arkansas State Red Wolves",
+   "home": "Coastal Carolina Chanticleers",
+   "first": "Coastal Carolina Chanticleers",
    "first_side": "home",
-   "first_kind": "FG",
-   "first_elapsed_sec": 917,
-   "winner": "Miami Hurricanes",
-   "seq": "0-3>3-3>3-10>10-10>10-13>10-16>10-22>17-22>17-29>17-36>25-36",
-   "lead_changes": 0,
-   "ties": 2,
-   "final": "25-36"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "Georgia Tech Yellow Jackets",
-   "home": "Clemson Tigers",
-   "first": "Georgia Tech Yellow Jackets",
-   "first_side": "away",
    "first_kind": "TD",
-   "first_elapsed_sec": 566,
-   "winner": "Georgia Tech Yellow Jackets",
-   "seq": "7-0>10-0>10-3>13-3>20-3>20-6",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "20-6"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "James Madison Dukes",
-   "home": "UConn Huskies",
-   "first": "UConn Huskies",
-   "first_side": "home",
-   "first_kind": "FG",
-   "first_elapsed_sec": 339,
-   "winner": "UConn Huskies",
-   "seq": "0-3>6-3>6-10>13-10>13-17>13-20>13-26>16-26>16-33>16-39>22-39>22-46",
-   "lead_changes": 4,
-   "ties": 0,
-   "final": "22-46"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "Nebraska Cornhuskers",
-   "home": "Rutgers Scarlet Knights",
-   "first": "Nebraska Cornhuskers",
-   "first_side": "away",
-   "first_kind": "TD",
-   "first_elapsed_sec": 880,
-   "winner": "Nebraska Cornhuskers",
-   "seq": "7-0>14-0>21-0>28-0>31-0",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "31-0"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "Northwestern Wildcats",
-   "home": "Ohio State Buckeyes",
-   "first": "Northwestern Wildcats",
-   "first_side": "away",
-   "first_kind": "FG",
-   "first_elapsed_sec": 607,
-   "winner": "Ohio State Buckeyes",
-   "seq": "3-0>3-7>6-7>6-14>13-14>13-21>13-28>19-28",
-   "lead_changes": 1,
-   "ties": 0,
-   "final": "19-28"
-  },
-  {
-   "date": "2026-11-14",
-   "away": "Syracuse Orange",
-   "home": "NC State Wolfpack",
-   "first": "Syracuse Orange",
-   "first_side": "away",
-   "first_kind": "FG",
-   "first_elapsed_sec": 436,
-   "winner": "Syracuse Orange",
-   "seq": "3-0>3-7>6-7>6-14>6-21>13-21>13-28>20-28>20-31>26-31>34-31",
+   "first_elapsed_sec": 551,
+   "winner": "Coastal Carolina Chanticleers",
+   "seq": "0-7>7-7>14-7>14-14>14-21>14-28>21-28",
    "lead_changes": 2,
-   "ties": 0,
-   "final": "34-31"
+   "ties": 2,
+   "final": "21-28"
+  },
+  {
+   "away": "Cincinnati Bearcats",
+   "date": "2026-11-14",
+   "final": "13-41",
+   "first": "Cincinnati Bearcats",
+   "first_elapsed_sec": 89,
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Iowa State Cyclones",
+   "lead_changes": 1,
+   "seq": "7-0>7-7>7-14>7-21>7-28>7-31>13-31>13-34>13-41",
+   "ties": 1,
+   "winner": "Iowa State Cyclones"
+  },
+  {
+   "away": "Duke Blue Devils",
+   "date": "2026-11-14",
+   "final": "25-36",
+   "first": "Miami Hurricanes",
+   "first_elapsed_sec": 917,
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "Miami Hurricanes",
+   "lead_changes": 0,
+   "seq": "0-3>3-3>3-10>10-10>10-13>10-16>10-22>17-22>17-29>17-36>25-36",
+   "ties": 2,
+   "winner": "Miami Hurricanes"
   },
   {
    "date": "2026-11-14",
-   "away": "Wake Forest Demon Deacons",
-   "home": "SMU Mustangs",
-   "first": "Wake Forest Demon Deacons",
-   "first_side": "away",
+   "away": "East Carolina Pirates",
+   "home": "Charlotte 49ers",
+   "first": "Charlotte 49ers",
+   "first_side": "home",
+   "first_kind": "FG",
+   "first_elapsed_sec": 702,
+   "winner": "East Carolina Pirates",
+   "seq": "0-3>7-3>7-10>7-13>7-16>14-16>17-16",
+   "lead_changes": 3,
+   "ties": 0,
+   "final": "17-16"
+  },
+  {
+   "away": "Georgia Tech Yellow Jackets",
+   "date": "2026-11-14",
+   "final": "20-6",
+   "first": "Georgia Tech Yellow Jackets",
+   "first_elapsed_sec": 566,
    "first_kind": "TD",
-   "first_elapsed_sec": 236,
-   "winner": "Wake Forest Demon Deacons",
-   "seq": "7-0>14-0>21-0>28-0>35-0>42-0>42-7>49-7",
+   "first_side": "away",
+   "home": "Clemson Tigers",
+   "lead_changes": 0,
+   "seq": "7-0>10-0>10-3>13-3>20-3>20-6",
+   "ties": 0,
+   "winner": "Georgia Tech Yellow Jackets"
+  },
+  {
+   "away": "James Madison Dukes",
+   "date": "2026-11-14",
+   "final": "22-46",
+   "first": "UConn Huskies",
+   "first_elapsed_sec": 339,
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "UConn Huskies",
+   "lead_changes": 4,
+   "seq": "0-3>6-3>6-10>13-10>13-17>13-20>13-26>16-26>16-33>16-39>22-39>22-46",
+   "ties": 0,
+   "winner": "UConn Huskies"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Kansas State Wildcats",
+   "home": "TCU Horned Frogs",
+   "first": "TCU Horned Frogs",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 402,
+   "winner": "TCU Horned Frogs",
+   "seq": "0-7>0-10>0-17>3-17>10-17>10-20",
    "lead_changes": 0,
    "ties": 0,
-   "final": "49-7"
+   "final": "10-20"
+  },
+  {
+   "away": "Nebraska Cornhuskers",
+   "date": "2026-11-14",
+   "final": "31-0",
+   "first": "Nebraska Cornhuskers",
+   "first_elapsed_sec": 880,
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Rutgers Scarlet Knights",
+   "lead_changes": 0,
+   "seq": "7-0>14-0>21-0>28-0>31-0",
+   "ties": 0,
+   "winner": "Nebraska Cornhuskers"
+  },
+  {
+   "away": "Northwestern Wildcats",
+   "date": "2026-11-14",
+   "final": "19-28",
+   "first": "Northwestern Wildcats",
+   "first_elapsed_sec": 607,
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "Ohio State Buckeyes",
+   "lead_changes": 1,
+   "seq": "3-0>3-7>6-7>6-14>13-14>13-21>13-28>19-28",
+   "ties": 0,
+   "winner": "Ohio State Buckeyes"
+  },
+  {
+   "away": "Syracuse Orange",
+   "date": "2026-11-14",
+   "final": "34-31",
+   "first": "Syracuse Orange",
+   "first_elapsed_sec": 436,
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "NC State Wolfpack",
+   "lead_changes": 2,
+   "seq": "3-0>3-7>6-7>6-14>6-21>13-21>13-28>20-28>20-31>26-31>34-31",
+   "ties": 0,
+   "winner": "Syracuse Orange"
   },
   {
    "date": "2026-11-14",
-   "away": "Wisconsin Badgers",
-   "home": "Maryland Terrapins",
-   "first": "Wisconsin Badgers",
-   "first_side": "away",
+   "away": "UAB Blazers",
+   "home": "Temple Owls",
+   "first": "Temple Owls",
+   "first_side": "home",
    "first_kind": "TD",
+   "first_elapsed_sec": 635,
+   "winner": "UAB Blazers",
+   "seq": "0-7>7-7>10-7>10-10>13-10>20-10>22-10>29-10>36-10",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "36-10"
+  },
+  {
+   "away": "Wake Forest Demon Deacons",
+   "date": "2026-11-14",
+   "final": "49-7",
+   "first": "Wake Forest Demon Deacons",
+   "first_elapsed_sec": 236,
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "SMU Mustangs",
+   "lead_changes": 0,
+   "seq": "7-0>14-0>21-0>28-0>35-0>42-0>42-7>49-7",
+   "ties": 0,
+   "winner": "Wake Forest Demon Deacons"
+  },
+  {
+   "away": "Wisconsin Badgers",
+   "date": "2026-11-14",
+   "final": "21-24",
+   "first": "Wisconsin Badgers",
    "first_elapsed_sec": 239,
-   "winner": "Maryland Terrapins",
-   "seq": "7-0>10-0>10-7>10-14>13-14>21-14>21-21>21-24",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Maryland Terrapins",
    "lead_changes": 3,
+   "seq": "7-0>10-0>10-7>10-14>13-14>21-14>21-21>21-24",
    "ties": 1,
-   "final": "21-24"
+   "winner": "Maryland Terrapins"
   }
  ],
  "tally": {
@@ -10050,17 +10106,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "TCU Horned Frogs": {
-   "gp": 9,
-   "scored_first": 3,
+   "gp": 10,
+   "scored_first": 4,
    "kinds": {
     "FG": 0,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 16.7,
    "won_by_one_when_first_pct": 0.0
@@ -10386,7 +10442,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "UAB Blazers": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 4,
    "kinds": {
     "FG": 1,
@@ -10394,11 +10450,11 @@
     "Safety": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 60.0,
+   "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
   },
   "Illinois Fighting Illini": {
@@ -10738,7 +10794,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Arkansas State Red Wolves": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 2,
@@ -10748,7 +10804,7 @@
    "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -11042,18 +11098,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Coastal Carolina Chanticleers": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
     "FG": 1,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 2,
+   "won_when_first": 3,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -11106,7 +11162,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "East Carolina Pirates": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 6,
    "kinds": {
     "FG": 1,
@@ -11114,11 +11170,11 @@
     "Safety": 0
    },
    "won_when_first": 3,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 66.7,
+   "scored_first_pct": 60.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 66.7,
+   "win_pct_when_not_first": 75.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Alabama Crimson Tide": {
@@ -11762,7 +11818,7 @@
    "won_by_one_when_first_pct": null
   },
   "Kansas State Wildcats": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 2,
@@ -11772,9 +11828,9 @@
    "won_when_first": 3,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Norfolk State Spartans": {
@@ -12114,18 +12170,18 @@
    "won_by_one_when_first_pct": null
   },
   "Temple Owls": {
-   "gp": 9,
-   "scored_first": 3,
+   "gp": 10,
+   "scored_first": 4,
    "kinds": {
     "FG": 2,
-    "TD": 1,
+    "TD": 2,
     "Safety": 0
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
-   "win_pct_when_first": 33.3,
+   "scored_first_pct": 40.0,
+   "win_pct_when_first": 25.0,
    "win_pct_when_not_first": 16.7,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12370,18 +12426,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Charlotte 49ers": {
-   "gp": 9,
-   "scored_first": 2,
+   "gp": 10,
+   "scored_first": 3,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 1,
     "Safety": 0
    },
    "won_when_first": 1,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 22.2,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 30.0,
+   "win_pct_when_first": 33.3,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13651,20 +13707,20 @@
   }
  },
  "league": {
-  "games": 705,
-  "home_scored_first": 418,
-  "first_team_won": 498,
+  "games": 709,
+  "home_scored_first": 422,
+  "first_team_won": 500,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
-   "FG": 201,
-   "TD": 502,
+   "FG": 202,
+   "TD": 505,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
-  "median_first_score_sec": 337,
-  "home_scored_first_pct": 59.3,
-  "first_team_win_pct": 70.6
+  "median_first_score_sec": 338,
+  "home_scored_first_pct": 59.5,
+  "first_team_win_pct": 70.5
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -13723,9 +13779,9 @@
    "avg_per_game": 1.56
   },
   "TCU Horned Frogs": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 17,
-   "avg_per_game": 1.89
+   "avg_per_game": 1.7
   },
   "Sacramento State Hornets": {
    "games": 11,
@@ -13828,9 +13884,9 @@
    "avg_per_game": 2.78
   },
   "UAB Blazers": {
-   "games": 9,
-   "lead_changes": 13,
-   "avg_per_game": 1.44
+   "games": 10,
+   "lead_changes": 14,
+   "avg_per_game": 1.4
   },
   "Illinois Fighting Illini": {
    "games": 10,
@@ -13938,9 +13994,9 @@
    "avg_per_game": 0.89
   },
   "Arkansas State Red Wolves": {
-   "games": 9,
-   "lead_changes": 17,
-   "avg_per_game": 1.89
+   "games": 10,
+   "lead_changes": 19,
+   "avg_per_game": 1.9
   },
   "Austin Peay Governors": {
    "games": 1,
@@ -14033,9 +14089,9 @@
    "avg_per_game": 1.11
   },
   "Coastal Carolina Chanticleers": {
-   "games": 9,
-   "lead_changes": 7,
-   "avg_per_game": 0.78
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "West Virginia Mountaineers": {
    "games": 9,
@@ -14053,9 +14109,9 @@
    "avg_per_game": 1.44
   },
   "East Carolina Pirates": {
-   "games": 9,
-   "lead_changes": 9,
-   "avg_per_game": 1.0
+   "games": 10,
+   "lead_changes": 12,
+   "avg_per_game": 1.2
   },
   "Alabama Crimson Tide": {
    "games": 10,
@@ -14258,9 +14314,9 @@
    "avg_per_game": 0.0
   },
   "Kansas State Wildcats": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 11,
-   "avg_per_game": 1.22
+   "avg_per_game": 1.1
   },
   "Norfolk State Spartans": {
    "games": 2,
@@ -14368,9 +14424,9 @@
    "avg_per_game": 0.0
   },
   "Temple Owls": {
-   "games": 9,
-   "lead_changes": 15,
-   "avg_per_game": 1.67
+   "games": 10,
+   "lead_changes": 16,
+   "avg_per_game": 1.6
   },
   "SE Louisiana Lions": {
    "games": 2,
@@ -14448,9 +14504,9 @@
    "avg_per_game": 2.0
   },
   "Charlotte 49ers": {
-   "games": 9,
-   "lead_changes": 11,
-   "avg_per_game": 1.22
+   "games": 10,
+   "lead_changes": 14,
+   "avg_per_game": 1.4
   },
   "Towson Tigers": {
    "games": 2,
