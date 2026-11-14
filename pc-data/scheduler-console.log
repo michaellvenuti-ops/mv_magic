@@ -7943,3 +7943,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 10:32:14 ET] rlm.py: OK in 5s
 [2026-11-14 10:32:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-14 10:32:18 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 10:47:02 ET] sync_to_github.py: FAILED (exit 1) in 883s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-11-hour-2.json (HTTP 409: {'error': '{"message":"is at 2b132580c760b8f6bf7b8f1a45402948bbdb6fb8 but expecte
+[2026-11-14 10:48:38 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 216 events (130 with odds), db total 275795 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 10:48:39 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Miami (OH) Evansville Today 2:00 PM — Total — Over 151.5 HardRock -115 ($98) / Under 155.5 Fanatics-NJ -125 ($102) — both win 152, 153, 154, 15
+[2026-11-14 10:48:39 ET] syncing to GitHub (wide-builds banked new builds)
