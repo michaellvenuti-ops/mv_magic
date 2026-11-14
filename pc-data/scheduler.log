@@ -7986,3 +7986,8 @@
 [2026-11-14 13:18:41 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=24
 [2026-11-14 13:18:42 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
 [2026-11-14 13:18:42 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 13:34:30 ET] sync_to_github.py: FAILED (exit 1) in 948s —   FAILED: pc-data/transcripts/even-money-2026-11-10-nfl-week-10-bets.txt (HTTP 409: {'error': '{"message":"is at 5f8f72e3d5ae796f1f83d551ee3c1fe714f80a1a but ex
+[2026-11-14 13:36:06 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (157 with odds), db total 276965 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 13:39:44 ET] dh_key_number_middles.py: OK in 218s — key-number-middles: 367 basketball rows excluded (football-only rule).
+[2026-11-14 13:43:22 ET] dh_basketball_key_middles.py: OK in 217s — basketball-key-middles: no new basketball middles.
+[2026-11-14 13:43:22 ET] syncing to GitHub (regular 10-minute sync)
