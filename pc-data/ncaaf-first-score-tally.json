@@ -9705,17 +9705,31 @@
   },
   {
    "date": "2026-11-13",
-   "away": "Illinois Fighting Illini",
-   "home": "UCLA Bruins",
-   "first": "UCLA Bruins",
-   "first_side": "home",
-   "first_kind": "TD",
-   "first_elapsed_sec": 143,
-   "winner": "UCLA Bruins",
-   "seq": "0-7>0-10>0-12>7-12>7-19>14-19>14-22",
-   "lead_changes": 0,
+   "away": "Houston Cougars",
+   "home": "Colorado Buffaloes",
+   "first": "Houston Cougars",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 430,
+   "winner": "Colorado Buffaloes",
+   "seq": "3-0>10-0>10-7>17-7>20-7>20-14>20-21>20-28>20-35>26-35>26-42>32-42",
+   "lead_changes": 1,
    "ties": 0,
-   "final": "14-22"
+   "final": "32-42"
+  },
+  {
+   "away": "Illinois Fighting Illini",
+   "date": "2026-11-13",
+   "final": "14-22",
+   "first": "UCLA Bruins",
+   "first_elapsed_sec": 143,
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "UCLA Bruins",
+   "lead_changes": 0,
+   "seq": "0-7>0-10>0-12>7-12>7-19>14-19>14-22",
+   "ties": 0,
+   "winner": "UCLA Bruins"
   }
  ],
  "tally": {
@@ -10072,7 +10086,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Colorado Buffaloes": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 1,
@@ -10080,11 +10094,11 @@
     "Safety": 0
    },
    "won_when_first": 3,
-   "won_when_not_first": 0,
+   "won_when_not_first": 1,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 0.0,
+   "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 20.0
   },
   "Georgia Tech Yellow Jackets": {
@@ -11896,18 +11910,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Houston Cougars": {
-   "gp": 9,
-   "scored_first": 7,
+   "gp": 10,
+   "scored_first": 8,
    "kinds": {
-    "FG": 2,
+    "FG": 3,
     "TD": 5,
     "Safety": 0
    },
    "won_when_first": 5,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
-   "win_pct_when_first": 71.4,
+   "scored_first_pct": 80.0,
+   "win_pct_when_first": 62.5,
    "win_pct_when_not_first": 100.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13497,20 +13511,20 @@
   }
  },
  "league": {
-  "games": 694,
+  "games": 695,
   "home_scored_first": 415,
   "first_team_won": 492,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
-   "FG": 195,
+   "FG": 196,
    "TD": 497,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
   "median_first_score_sec": 336,
-  "home_scored_first_pct": 59.8,
-  "first_team_win_pct": 70.9
+  "home_scored_first_pct": 59.7,
+  "first_team_win_pct": 70.8
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -13624,9 +13638,9 @@
    "avg_per_game": 1.78
   },
   "Colorado Buffaloes": {
-   "games": 9,
-   "lead_changes": 12,
-   "avg_per_game": 1.33
+   "games": 10,
+   "lead_changes": 13,
+   "avg_per_game": 1.3
   },
   "Georgia Tech Yellow Jackets": {
    "games": 9,
@@ -14194,9 +14208,9 @@
    "avg_per_game": 0.56
   },
   "Houston Cougars": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "Portland State Vikings": {
    "games": 2,
