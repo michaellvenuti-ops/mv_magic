@@ -7478,3 +7478,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 18:45:35 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 18:45:37 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 5 game(s) refreshed, 0 deliverable change(s).
 [2026-11-13 18:47:13 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 216 events (194 with odds), db total 266523 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 19:01:38 ET] sync_to_github.py: FAILED (exit 1) in 865s —   FAILED: pc-data/nhl-totals-snapshot-2026-11-04.json (HTTP 409: {'error': '{"message":"is at aa548d02581fb0760a8daa1b1f409f6cad07e1d8 but expected 33a376e12793
+[2026-11-13 19:02:12 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 216 events (186 with odds), db total 266739 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 19:03:50 ET] dh_arbitrage.py: OK in 98s — ARBITRAGE: NCAAB SIU Edwardsville 2 Duke Today 8:00 PM / table / Alt Spread Duke -34.5 / Alt Spread SIU Edwardsville +34.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-13 19:04:34 ET] dh_kalshi_poly_arb.py: OK in 44s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 19:05:05 ET] dh_low_holds.py: OK in 31s — LOW-HOLDS: NHL SEA Kraken CAR Hurricanes Nov-14 1:00 PM / table / Points T. Hall Under 0.5 / Points T. Hall 1+ / table | DraftKings | Bally Bet
+[2026-11-13 19:07:02 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NBA GS Warriors SA Spurs Today 9:45 PM / table / Alt Total Under 218 / Alt Total Over 217.5 / table bar_chart | Fanatics-NJ | ProphetX — window 223
+[2026-11-13 19:10:44 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 377 basketball rows excluded (football-only rule).
