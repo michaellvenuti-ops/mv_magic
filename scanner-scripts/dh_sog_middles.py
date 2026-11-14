@@ -84,6 +84,18 @@ start-of-run self-heal is the backstop). Close is now verified
 by the board's 'Filters:' button becoming visible again (it is
 hidden while the full-page panel is open — confirmed in the
 15:03 dump). A close-fail dump was added for diagnosis.
+FIX v8 2026-11-14 (same day, after manual test #8 at ~15:20):
+v7's flow WORKED end to end — switch, both expansions, Shots
+check, close, button 'Filters: On' — but the script DIED on
+the success print: the '→' arrow char (U+2192) is not in
+Windows cp1252, so print() raised UnicodeEncodeError and the
+run crashed BEFORE the read and BEFORE the restore clear,
+leaving the filter SET on the shared board (the next SOG
+run's start-of-run self-heal is the backstop; a game/prop
+scan in between would read a filtered board). The arrow is
+now ASCII '->'. RULE for this file: prints must stay in the
+cp1252 set (em-dash is fine, arrows are not); non-ASCII
+belongs only in comments and in banked-file lines (UTF-8).
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -522,7 +534,7 @@ def set_shots_filter(page):
                   f"'Filters: {state}' — treating as unset.")
             return False
         print("sog-middles: Market Type filter set to Hockey Props "
-              "→ Player Props → Shots (button: Filters: On).")
+              "-> Player Props -> Shots (button: Filters: On).")
         return True
     finally:
         # A failure above must not leave a half-set panel open.
