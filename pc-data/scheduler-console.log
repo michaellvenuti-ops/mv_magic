@@ -7916,3 +7916,30 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 09:45:51 ET] total_projectors_grade_run.py: OK in 1s — }
 [2026-11-14 09:45:52 ET] half_percent.py: OK in 1s — half-percent recheck: 09:45 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
 [2026-11-14 09:45:55 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-14 10:00:29 ET] sync_to_github.py: FAILED (exit 1) in 875s —   FAILED: pc-data/transcripts/prop-points-2026-11-09.json (HTTP 409: {'error': '{"message":"is at f167d210506a81cc3df4762d77818cbcdbba8005 but expected a820359a
+[2026-11-14 10:02:06 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 216 events (130 with odds), db total 275363 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 10:02:07 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 10:05:45 ET] dh_game_middles.py: OK in 218s — GAME MIDDLE: NCAAB Gardner-Webb South Carolina Today 2:00 PM / table / Alt Total Over 140.5 / Alt Total Under 141 / table | Fanatics-NJ | Bet365 — window 315.0 
+[2026-11-14 10:05:52 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS Stanford @ Virginia Tech | 2026-11-14 | Fanatics | Virginia Tech spread -15.0 (median -15.5 -> -16.5)
+[2026-11-14 10:07:43 ET] dh_prop_middles.py: OK in 110s — PROP MIDDLE CLEAN : NCAAF Prairie View A&M Arkansas-Pine Bluff Today 3:00 PM / table / Spread Prairie View A&M +1.5 / Moneyline Arkansas-Pine Bluff / table | Be
+[2026-11-14 10:09:33 ET] dh_sog_middles.py: OK in 111s — - 0 deliverables this run
+[2026-11-14 10:09:38 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 10:09:39 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 10:09:40 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 10:09:41 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 10:09:43 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 10:09:44 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 10:09:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 10:09:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 10:10:56 ET] promo_watch.py: OK in 70s — promo-watch: 8 listed, 0 new, 0 converter attempt(s).
+[2026-11-14 10:20:56 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-14 10:22:11 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 216 events (130 with odds), db total 275579 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 10:23:13 ET] dh_arbitrage.py: OK in 62s — ARBITRAGE: NCAAB Coppin St. South Florida Today 2:00 PM / table / Alt Spread South Florida -24.5 / Alt Spread Coppin St. +24.5 / table | Caesars | Bally Bet
+[2026-11-14 10:23:33 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 10:23:54 ET] dh_low_holds.py: OK in 21s — LOW-HOLDS: NCAAF Arkansas St. Coastal Carolina Today 1:00 PM / table / 2nd Quarter Moneyline Arkansas St. / 2nd Quarter Moneyline Coastal Carolina / table | Fan
+[2026-11-14 10:27:25 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: 253 basketball rows excluded (football-only rule).
+[2026-11-14 10:30:50 ET] dh_basketball_key_middles.py: OK in 205s — basketball-key-middles: no new basketball middles.
+[2026-11-14 10:32:09 ET] hung_number.py: OK in 79s — HUNG NUMBER: Colorado State vs Washington State — Fanatics total value Over (66.5 vs median 65.0)
+[2026-11-14 10:32:14 ET] rlm.py: OK in 5s
+[2026-11-14 10:32:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 10:32:18 ET] syncing to GitHub (regular 10-minute sync)
