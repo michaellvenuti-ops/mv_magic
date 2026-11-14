@@ -443,12 +443,16 @@
   },
   "Follow the Money|2026-11-12|Follow the Money | November 12, 2026 | Hour 1": {
    "date": "2026-11-12",
+   "done_at": "2026-11-14T16:22:15.049431-05:00",
    "queued_at": "2026-11-13T01:23:32.206984-05:00",
    "show": "Follow the Money",
-   "status": "transcribing",
+   "status": "done",
    "stem": "follow-the-money-2026-11-12-hour-1",
    "title": "Follow the Money | November 12, 2026 | Hour 1",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/8334c4ed-96fa-4b2a-8978-caa630f28fec/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=8334c4ed-96fa-4b2a-8978-caa630f28fec&feed=iXBZFZCf"
+   "transcript": "transcripts/follow-the-money-2026-11-12-hour-1.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/8334c4ed-96fa-4b2a-8978-caa630f28fec/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=8334c4ed-96fa-4b2a-8978-caa630f28fec&feed=iXBZFZCf",
+   "wall_s": 11365,
+   "words": 9589
   },
   "Follow the Money|2026-11-12|Follow the Money | November 12, 2026 | Hour 2": {
    "date": "2026-11-12",
@@ -866,7 +870,7 @@
   }
  },
  "worker": {
-  "current": "Follow the Money|2026-11-12|Follow the Money | November 12, 2026 | Hour 1",
-  "heartbeat": "2026-11-14T13:12:49.259358-05:00"
+  "finished": true,
+  "heartbeat": "2026-11-14T16:22:15.315057-05:00"
  }
 }
