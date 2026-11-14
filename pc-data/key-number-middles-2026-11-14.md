@@ -77,3 +77,4 @@ NEW MIDDLE: KEY 4: NCAAF Kansas West Virginia Today 3:30 PM / table bar_chart / 
 (end of new middles — full qualifying list below)
 KEY 4: NCAAF Kansas West Virginia Today 3:30 PM / table bar_chart / Alt Spread Kansas +4.5 / Alt Spread West Virginia -3.5 / table | ProphetX | DraftKings margins [4] :: -144 [59.02%] $1,000 ProphetX, ProphetX, -144 / +132 $724 DraftKings, DraftKings, +132
 KEY 4: NCAAF Arizona St. UCF Today 5:30 PM / table / Alt Spread Arizona St. +4.5 / Spread UCF -3.5 / table bar_chart | theScore | ProphetX margins [4] :: -115 $1,000 theScore, theScore, -115 / +105 [48.78%] $921.42 ProphetX, ProphetX, +105
+## 2026-11-14T13:39:41-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1880 + 0 rows parsed, qualifying only below — 0 NEW middles
