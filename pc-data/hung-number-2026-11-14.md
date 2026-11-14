@@ -1,0 +1,40 @@
+# Hung numbers — 2026-11-14 (scan 2026-11-14 00:18)
+
+- Dolphins vs Colts | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
+- Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Illinois vs UCLA | BetMGM | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Houston vs Colorado | BetMGM | spread | value: dog | book -3.5 vs median -5.5 | div 2.0 
+- Houston vs Colorado | DraftKings | spread | value: dog | book -3.5 vs median -5.5 | div 2.0 
+- Houston vs Colorado | Caesars | spread | value: favorite | book -7.5 vs median -5.5 | div 2.0 
+- Houston vs Colorado | FanDuel | spread | value: favorite | book -7.5 vs median -5.5 | div 2.0 
+- Houston vs Colorado | BetMGM | total | value: Over | book 68.5 vs median 65.5 | div 3.0 
+- Houston vs Colorado | DraftKings | total | value: Over | book 68.5 vs median 65.5 | div 3.0 
+- Houston vs Colorado | Caesars | total | value: Under | book 62.5 vs median 65.5 | div 3.0 
+- Houston vs Colorado | FanDuel | total | value: Under | book 61.5 vs median 65.5 | div 4.0 
+- Houston vs Colorado | BetMGM | moneyline Colorado | value: Colorado | book 38.5 vs median 30.4 | div 8.1 
+- Houston vs Colorado | DraftKings | moneyline Colorado | value: Colorado | book 35.7 vs median 30.4 | div 5.4 
+- Houston vs Colorado | Caesars | moneyline Colorado | value: Colorado | book 24.7 vs median 30.4 | div 5.7 
+- Houston vs Colorado | FanDuel | moneyline Colorado | value: Colorado | book 25.0 vs median 30.4 | div 5.4 
+- Houston vs Colorado | BetMGM | moneyline Houston | value: Houston | book 68.8 vs median 75.7 | div 7.0 
+- Houston vs Colorado | Caesars | moneyline Houston | value: Houston | book 81.5 vs median 75.7 | div 5.7 
+- Kansas State vs TCU | FanDuel | spread | value: favorite | book 11.5 vs median 13.5 | div 2.0 
+- Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
+- Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.0 | div 5.7 
+- USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Missouri vs Georgia | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
+- Nevada vs Northern Illinois | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
+- Southern Miss vs Louisiana Tech | FanDuel | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
+- Oregon State vs Boise State | Fanatics | spread | value: favorite | book 14.5 vs median 16.25 | div 1.75 
+- Minnesota vs Penn State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Minnesota vs Penn State | Fanatics | spread | value: favorite | book 9.5 vs median 11.5 | div 2.0 
+- Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
+- San Jose State vs Air Force | Fanatics | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- UNLV vs New Mexico | Fanatics | spread | value: favorite | book 14.5 vs median 16.5 | div 2.0 
+- Florida Atlantic vs Tulsa | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- Utah vs Arizona | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
+- Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
+- Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
+- Buffalo vs Ball State | BetMGM | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
+- Buffalo vs Ball State | Fanatics | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
