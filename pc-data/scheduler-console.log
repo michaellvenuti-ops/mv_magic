@@ -7656,3 +7656,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 00:46:36 ET] dh_key_number_middles.py: OK in 214s — key-number-middles: 68 basketball rows excluded (football-only rule).
 [2026-11-14 00:48:16 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 216 events (130 with odds), db total 270411 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-14 00:52:23 ET] dh_basketball_key_middles.py: OK in 217s — basketball-key-middles: no new basketball middles.
+[2026-11-14 01:06:38 ET] sync_to_github.py: FAILED (exit 1) in 854s —   FAILED: pc-data/costco-gold/costco-gold-2026-11-09.md (HTTP 409: {'error': '{"message":"is at 0d42b2ce697a0543bc41dc7e557ca47452baa299 but expected 506605cb23
+[2026-11-14 01:08:11 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (130 with odds), db total 270627 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 01:09:06 ET] dh_arbitrage.py: OK in 55s — arbitrage: no new qualifying pairs (silent).
+[2026-11-14 01:09:34 ET] dh_kalshi_poly_arb.py: OK in 28s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 01:09:36 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 01:09:58 ET] dh_low_holds.py: OK in 23s — LOW-HOLDS: NCAAF Kansas West Virginia Today 3:30 PM / table bar_chart / Alt Spread West Virginia -6.5 NO / Alt Spread West Virginia -6 / table | Kalshi | Bally 
+[2026-11-14 01:10:04 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 01:11:36 ET] dh_prop_middles.py: OK in 92s — prop-middles: no new/changed qualifying middles.
+[2026-11-14 01:13:28 ET] dh_sog_middles.py: OK in 112s — - 0 deliverables this run
+[2026-11-14 01:13:31 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 01:13:32 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 01:13:33 ET] nba_first_score.py: OK in 1s — nba-first-score: 2 new, 0 unverified, 175 total tallied.
+[2026-11-14 01:13:34 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 303 total tallied.
+[2026-11-14 01:13:36 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 0 unverified, 559 total tallied.
+[2026-11-14 01:13:38 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 1 new, 0 unverified, 694 total tallied.
+[2026-11-14 01:13:38 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 01:13:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 01:13:42 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=13 queued_total=29
+[2026-11-14 01:13:43 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=29, limit=5)
