@@ -7958,3 +7958,7 @@
 [2026-11-14 12:27:36 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 234 events (182 with odds), db total 276497 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-14 12:27:37 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF 7 Alabama Vanderbilt Today 12:45 PM — Spread — Alabama -15.5 theScore +110 ($87) / Vanderbilt +19.5 Bally Bet -162 ($113) — both win 16, 17, 18
 [2026-11-14 12:27:37 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-14 12:42:06 ET] sync_to_github.py: FAILED (exit 1) in 869s —   FAILED: pc-data/totals-2026-11-06.md (HTTP 409: {'error': '{"message":"is at cbcb06e57bda10e027d0b080881abcfe0ae3f59b but expected 6dbae4fa98205c2211d59d44b84
+[2026-11-14 12:47:26 ET] dh_key_number_middles.py: OK in 321s — key-number-middles: 228 basketball rows excluded (football-only rule).
+[2026-11-14 12:51:22 ET] dh_basketball_key_middles.py: OK in 235s — basketball-key-middles: no new basketball middles.
+[2026-11-14 12:51:22 ET] syncing to GitHub (regular 10-minute sync)
