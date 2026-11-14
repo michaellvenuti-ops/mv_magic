@@ -59,18 +59,19 @@ set_shots_filter were function-locals (missing `global`), so
 the banked header never carried the failure reason. A final
 checked-state verification guards against the expansion click
 toggling Hockey Props off.
-FIX v5 2026-11-14 (same day, after manual test #5 at 14:57):
-the v4 dumps were identical (switch-on == drill-fail) — the
-drill-down clicks changed NOTHING, and the dump's label lookup
-(closest('label')) missed every tree label because the <label>
-is a SIBLING of the input, not an ancestor. The dumper now
-resolves labels via label[for=id], captures 3 ancestor levels
-of the Hockey Props node (the row container holds the expand
-chevron, if any) and all [aria-expanded] toggles. Leading
-hypothesis for the v6 fix: checking the box does NOT expand
-the branch — the row-text click in _expand_and_click toggles
-the box back OFF (net-zero change, matching the identical
-dumps) — so expansion needs the chevron, not the label.
+FIX v6 2026-11-14 (same day, after the 15:03 scheduler run's
+v5 dump — the evidence that cracked it): the Market Type
+section is an Angular Material TREE. Each top-level node is a
+mat-tree-node with a chevron toggle button (matTreeNodeToggle)
+and a checkbox; children are NOT in the DOM until the node is
+expanded (aria-expanded=false). AND flipping the switch checks
+ALL top-level market boxes by default — so every earlier
+version's checkbox click TOGGLED Hockey Props OFF (v4's
+switch-on == drill-fail dumps prove the clicks were net-zero).
+v6 never clicks a parent checkbox: it expands Hockey Props and
+Player Props via their toggle buttons and checks ONLY the
+Shots leaf, idempotently (is_checked guard). The probe's clicks
+did the same thing by hand.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -299,34 +300,58 @@ def _click_checkbox(page, label):
     return _click_visible_text(page, label)
 
 
-def _wait_visible(page, text, timeout_ms=8000):
-    """Poll until an element with exactly this text is visible."""
+def _expand_tree_node(page, label, timeout_ms=8000):
+    """Expand a mat-tree node (Market Type section) by its toggle
+    button — the chevron_right icon button inside the node's row.
+    The tree does NOT expand when its checkbox is clicked, and
+    the children are NOT in the DOM until the node expands, so
+    clicking the checkbox / row text can never reveal them.
+    Returns True once the node reads aria-expanded=true."""
     try:
-        page.locator(f"text={text} >> visible=true").first.wait_for(
-            state="visible", timeout=timeout_ms)
-        return True
+        node = page.locator("mat-tree-node",
+                            has_text=label).first
+        if not node.count():
+            return False
+        if node.get_attribute("aria-expanded") == "true":
+            return True
+        btn = node.locator("button[mattreenodetoggle]")
+        if not btn.count():
+            btn = node.locator("button")
+        if not btn.count():
+            return False
+        btn.first.click(timeout=5000)
+        for _ in range(timeout_ms // 500):
+            page.wait_for_timeout(500)
+            try:
+                if node.get_attribute("aria-expanded") == "true":
+                    return True
+            except Exception:
+                pass
+        return False
     except Exception:
         return False
 
 
-def _expand_and_click(page, label, child_text=None):
-    """Click a filter-tree checkbox by its label; when a child
-    node is expected, make sure the subtree expands so the child
-    becomes visible. The label click checks the box but does not
-    always expand the branch (manual test 2026-11-14 14:47:
-    'Player Props' never appeared after checking Hockey Props),
-    so if the child is not visible after a poll, click the row
-    text once — the probe's click, which expands the branch —
-    and poll again. Returns True when the checkbox got clicked
-    AND (no child expected OR the child became visible)."""
-    if not _click_checkbox(page, label):
-        return False
-    if child_text is None:
-        return True
-    if _wait_visible(page, child_text, 8000):
-        return True
-    _click_visible_text(page, label)
-    return _wait_visible(page, child_text, 8000)
+def _check_leaf(page, label):
+    """Check a leaf checkbox by its label, but ONLY if it is not
+    already checked (idempotent — a second click would toggle it
+    back off). Uses the first VISIBLE + enabled match: the same
+    label can exist under several collapsed sports, and only the
+    expanded branch's node is visible."""
+    try:
+        locs = page.get_by_label(label, exact=True)
+        for i in range(locs.count()):
+            el = locs.nth(i)
+            try:
+                if el.is_visible() and el.is_enabled():
+                    if not el.is_checked():
+                        el.click(timeout=5000)
+                    return True
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return _click_visible_text(page, label)
 
 
 def _dump_filter_state(page, tag):
@@ -425,34 +450,35 @@ def set_shots_filter(page):
         # panel's top Clear) resets the Market Type switch itself
         # — the 2026-11-14 14:40 manual test flipped the switch,
         # then cleared, and 'Hockey Props' was disabled afterwards.
-        # A stale filter is already cleared at run start (above);
-        # the checkboxes of a freshly flipped switch start
-        # unchecked.
-        if not _expand_and_click(page, "Hockey Props",
-                                  "Player Props"):
-            FILTER_FAIL = "'Hockey Props' not clickable / did not expand"
-            print("sog-middles: 'Hockey Props' not clickable or "
-                  "its subtree did not expand — relying on the "
-                  "in-code market check.")
+        # A stale filter is already cleared at run start (above).
+        # NOTE 2: do NOT click the Hockey Props / Player Props
+        # checkboxes — flipping the switch checks ALL top-level
+        # market boxes by default (dump 2026-11-14 15:03), so a
+        # click would toggle them OFF. Drill down by EXPANDING
+        # the tree nodes (chevron toggle) and check ONLY the
+        # Shots leaf, idempotently.
+        if not _expand_tree_node(page, "Hockey Props"):
+            FILTER_FAIL = "Hockey Props node did not expand"
+            print("sog-middles: Hockey Props tree node did not "
+                  "expand — relying on the in-code market check.")
             _dump_filter_state(page, "drill-fail")
             return False
         page.wait_for_timeout(1200)
-        if not _expand_and_click(page, "Player Props", "Shots"):
-            FILTER_FAIL = "'Player Props' not clickable / did not expand"
-            print("sog-middles: 'Player Props' not clickable or "
-                  "its subtree did not expand — relying on the "
-                  "in-code market check.")
+        if not _expand_tree_node(page, "Player Props"):
+            FILTER_FAIL = "Player Props node did not expand"
+            print("sog-middles: Player Props tree node did not "
+                  "expand — relying on the in-code market check.")
+            _dump_filter_state(page, "drill-fail")
             return False
         page.wait_for_timeout(1200)
-        if not _click_visible_text(page, "Shots"):
+        if not _check_leaf(page, "Shots"):
             FILTER_FAIL = "'Shots' not clickable"
             print("sog-middles: 'Shots' not clickable — relying "
                   "on the in-code market check.")
             return False
         page.wait_for_timeout(1200)
-        # The row-text expansion click can toggle a checkbox off
-        # in some trees — verify Hockey Props is still checked
-        # before trusting the filter.
+        # Verify the Shots leaf is checked and Hockey Props is
+        # still checked before trusting the filter.
         try:
             hp = page.get_by_label("Hockey Props", exact=True)
             if hp.count() and not hp.first.is_checked():
