@@ -68,3 +68,5 @@ KEY 6: NCAAF Troy South Alabama Today 7:00 PM / table / Alt Spread Troy +6.5 / A
 ## 2026-11-14T09:40:51-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1950 + 0 rows parsed, qualifying only below — 0 NEW middles
 KEY 4: NCAAF Arizona St. UCF Today 5:30 PM / table / Alt Spread Arizona St. +4.5 / Spread UCF -3.5 / table bar_chart | theScore | ProphetX margins [4] :: -115 $1,000 theScore, theScore, -115 / +105 [48.78%] $921.42 ProphetX, ProphetX, +105
 KEY 6: NCAAF Troy South Alabama Today 7:00 PM / table / Alt Spread Troy +6.5 / Alt Spread South Alabama -5.5 / table | theScore | Bally Bet margins [6] :: -155 $1,000 theScore, theScore, -155 / +138 $691 Bally Bet, Bally Bet, +138
+## 2026-11-14T10:27:16-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1945 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 4: NCAAF Arizona St. UCF Today 5:30 PM / table / Alt Spread Arizona St. +4.5 / Spread UCF -3.5 / table bar_chart | theScore | ProphetX margins [4] :: -115 $1,000 theScore, theScore, -115 / +105 [48.78%] $921.42 ProphetX, ProphetX, +105
