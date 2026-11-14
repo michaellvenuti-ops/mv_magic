@@ -4853,7 +4853,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "LSU",
    "dog_team": "Texas"
   },
@@ -5172,11 +5172,17 @@
    "sport": "CFB",
    "matchup": "The Citadel at VMI",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 17.5,
    "fav_team": "The Citadel",
-   "dog_team": "VMI"
+   "dog_team": "VMI",
+   "alerted_at": "2026-11-14T14:20:04",
+   "board_read_at": "2026-11-14T14:20:04",
+   "alert_expires_at": "2026-11-14T14:25:04",
+   "alert_detail": "10:11 - 3rd Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 6
   },
   "401866690": {
    "sport": "CFB",
@@ -5340,11 +5346,17 @@
    "sport": "CFB",
    "matchup": "Northern Iowa at South Dakota",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "South Dakota",
-   "dog_team": "Northern Iowa"
+   "dog_team": "Northern Iowa",
+   "alerted_at": "2026-11-14T14:20:04",
+   "board_read_at": "2026-11-14T14:20:04",
+   "alert_expires_at": "2026-11-14T14:25:04",
+   "alert_detail": "8:03 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401867893": {
    "sport": "CFB",
@@ -9234,7 +9246,7 @@
    "spread": 11.5,
    "fav_team": "George Mason",
    "dog_team": "Bradley",
-   "live_ml": -410
+   "live_ml": -345
   },
   "401912229": {
    "sport": "NCAAB",
