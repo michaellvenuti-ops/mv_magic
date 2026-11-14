@@ -7933,3 +7933,24 @@
 [2026-11-14 11:40:53 ET] dh_basketball_key_middles.py: OK in 225s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Coppin St. South Florida Today 2:00 PM / table / Alt Spread South Florida -23.5 / Alt Spread Coppin St.
 [2026-11-14 11:44:39 ET] costco_gold.py: OK in 225s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
 [2026-11-14 11:44:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 11:59:49 ET] sync_to_github.py: FAILED (exit 1) in 909s —   FAILED: pc-data/nhl-totals-snapshot-2026-11-04.json (HTTP 409: {'error': '{"message":"is at 1018849331ee205be06c2100b89eda60a3c67f24 but expected 52e41d57155c
+[2026-11-14 12:01:26 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (206 with odds), db total 276263 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 12:03:49 ET] dh_game_middles.py: OK in 143s — GAME MIDDLE: NCAAB Stonehill 16 Texas Tech Today 2:00 PM / table / Alt Total Under 148.5 / Alt Total Over 148 / table | Fanatics-NJ | Bet365 — window 315.0 :: -
+[2026-11-14 12:05:06 ET] hung_number.py: OK in 77s — HUNG NUMBER: Utah vs Arizona — Fanatics moneyline Utah value Utah (58.3 vs median 53.1)
+[2026-11-14 12:05:11 ET] rlm.py: OK in 5s
+[2026-11-14 12:05:15 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-14 12:05:18 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Colorado State @ Washington State | 2026-11-14 | Fanatics | Colorado State spread -9.5 (median -9.5 -> -8.5)
+[2026-11-14 12:06:56 ET] dh_prop_middles.py: OK in 97s — PROP MIDDLE CLEAN : NHL PHI Flyers CBJ Blue Jackets Today 7:00 PM / table / Saves J. Greaves Under 22.5 / Saves J. Greaves 22+ / table | HardRock | Fanatics-NJ 
+[2026-11-14 12:08:36 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-14 12:08:39 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 12:08:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 12:08:41 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 12:08:43 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 12:08:44 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 12:08:45 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 12:08:46 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 12:08:47 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 12:08:51 ET] public_fade.py: OK in 3s
+[2026-11-14 12:10:12 ET] dh_positive_ev.py: FAILED (exit 2) in 81s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-14.txt. No prices inven
+[2026-11-14 12:11:08 ET] wong_teasers.py: OK in 57s — wong-teasers: 3 legs, 3 pairs, 0 triples banked.
+[2026-11-14 12:11:08 ET] syncing to GitHub (regular 10-minute sync)
