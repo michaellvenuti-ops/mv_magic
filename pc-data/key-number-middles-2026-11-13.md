@@ -49,3 +49,7 @@ KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.
 ## 2026-11-13T19:10:37-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1932 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-13T20:00:00-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1902 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-13T20:45:36-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1897 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-13T21:34:32-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1892 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 17: NCAAF Minnesota Penn St. Nov-14 7:00 PM / table / Alt Spread Minnesota +17 / Alt Spread Penn St. -15.5 / table | BetRivers | FanDuel margins [16, 17] :: -165 $1,000 BetRivers, BetRivers, -165 / +148 $648 FanDuel, FanDuel, +148
+(end of new middles — full qualifying list below)
+KEY 17: NCAAF Minnesota Penn St. Nov-14 7:00 PM / table / Alt Spread Minnesota +17 / Alt Spread Penn St. -15.5 / table | BetRivers | FanDuel margins [16, 17] :: -165 $1,000 BetRivers, BetRivers, -165 / +148 $648 FanDuel, FanDuel, +148
