@@ -54,3 +54,8 @@ NEW MIDDLE: KEY 17: NCAAF Minnesota Penn St. Nov-14 7:00 PM / table / Alt Spread
 (end of new middles — full qualifying list below)
 KEY 17: NCAAF Minnesota Penn St. Nov-14 7:00 PM / table / Alt Spread Minnesota +17 / Alt Spread Penn St. -15.5 / table | BetRivers | FanDuel margins [16, 17] :: -165 $1,000 BetRivers, BetRivers, -165 / +148 $648 FanDuel, FanDuel, +148
 ## 2026-11-13T22:23:07-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1920 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-13T23:10:12-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1932 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.5 / Alt Spread West Virginia -4 / table | theScore | Bally Bet margins [4, 5] :: -155 $1,000 theScore, theScore, -155 / +143 $677 Bally Bet, Bally Bet, +143
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5.5 / Alt Spread West Virginia -4 / table | theScore | BetRivers margins [4, 5] :: -155 $1,000 theScore, theScore, -155 / +140 $685 BetRivers, BetRivers, +140
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +4.5 / Alt Spread West Virginia -3.5 / table | theScore | Bally Bet margins [4] :: -145 $1,000 theScore, theScore, -145 / +130 $735 Bally Bet, Bally Bet, +130
+KEY 4: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4 / table | Fanatics-NJ | Bally Bet margins [4, 5] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +143 $669 Bally Bet, Bally Bet, +143
