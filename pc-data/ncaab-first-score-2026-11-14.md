@@ -4,3 +4,5 @@
 ## 2026-11-14T01:13:36-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 559 games through 2026-11-13
 - 2026-11-13: East Texas A&M Lions @ Portland Pilots — first: Portland Pilots (2PT, 0:10 in); lead changes 15; final 94-88
 - 2026-11-13: Arkansas-Pine Bluff Golden Lions @ California Baptist Lancers — first: Arkansas-Pine Bluff Golden Lions (2PT, 0:19 in); lead changes 7; final 60-74
+## 2026-11-14T14:20:33-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 560 games through 2026-11-14
+- 2026-11-14: Tulane Green Wave @ Akron Zips — first: Tulane Green Wave (2PT, 0:33 in); lead changes 5; final 63-65
