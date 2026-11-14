@@ -59,6 +59,17 @@ set_shots_filter were function-locals (missing `global`), so
 the banked header never carried the failure reason. A final
 checked-state verification guards against the expansion click
 toggling Hockey Props off.
+FIX v4 2026-11-14 (same day, after manual test #4 at 14:52):
+the drill-down now fails at Hockey Props itself (the child
+never becomes visible even after the row-text expansion click),
+and each version has failed at a different step — guessing at
+selectors is exhausted. Added _dump_filter_state: on switch-on
+and on drill-down failure the script snapshots the panel's
+checkbox/switch inventory (label, checked, disabled, visible)
+plus the Hockey Props row's parent HTML to
+data/sog-filter-dump-<tag>-<stamp>.json, so the next patch
+targets the real DOM. No behavior change in v4 besides the
+dumps.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -317,6 +328,51 @@ def _expand_and_click(page, label, child_text=None):
     return _wait_visible(page, child_text, 8000)
 
 
+def _dump_filter_state(page, tag):
+    """Snapshot the Filters panel's checkbox/switch inventory
+    (label, checked, disabled, visible) plus the Hockey Props
+    row's parent HTML, to a JSON file on the PC. Diagnostic only
+    — the drill-down keeps failing at a different step each
+    version (v2: Hockey Props, v3: Player Props), so the next
+    patch targets the real DOM instead of guessing at selectors.
+    Never raises."""
+    try:
+        import json as _json
+        from datetime import datetime
+        data = page.evaluate("""() => {
+          const rows = [];
+          document.querySelectorAll(
+            'input[type=checkbox], [role=switch], [role=checkbox]').forEach(e => {
+            const lab = e.closest('label');
+            const txt = (lab ? lab.innerText : '') ||
+              e.getAttribute('aria-label') || '';
+            rows.push({
+              tag: e.tagName, label: txt.trim().slice(0, 80),
+              checked: (e.checked !== undefined ? e.checked
+                        : e.getAttribute('aria-checked')),
+              disabled: (e.disabled !== undefined ? e.disabled
+                         : e.getAttribute('aria-disabled')),
+              visible: !!(e.offsetWidth || e.offsetHeight)});
+          });
+          let hpHtml = '';
+          const hp = [...document.querySelectorAll('*')].find(
+            el => el.children.length === 0 &&
+              el.textContent.trim() === 'Hockey Props');
+          if (hp && hp.parentElement) {
+            hpHtml = hp.parentElement.outerHTML.slice(0, 2000);
+          }
+          return {controls: rows, hockeyPropsRow: hpHtml};
+        }""")
+        stamp = datetime.now().strftime("%Y%m%d-%H%M")
+        path = f"data\\sog-filter-dump-{tag}-{stamp}.json"
+        with open(path, "w", encoding="utf-8") as fh:
+            _json.dump(data, fh, indent=1)
+        print(f"sog-middles: filter state dumped to {path} "
+              f"({len(data.get('controls', []))} controls).")
+    except Exception as exc:  # noqa: BLE001 - diagnostic only
+        print(f"sog-middles: filter dump failed ({exc})")
+
+
 def set_shots_filter(page):
     """Drive the Filters panel to Market Type = Hockey Props →
     Player Props → Shots only. Returns True only when the board
@@ -338,6 +394,7 @@ def set_shots_filter(page):
             print("sog-middles: Market Type switch did not flip — "
                   "relying on the in-code market check.")
             return False
+        _dump_filter_state(page, "switch-on")
         # NOTE: do NOT press Clear here. The section Clear (or the
         # panel's top Clear) resets the Market Type switch itself
         # — the 2026-11-14 14:40 manual test flipped the switch,
@@ -351,6 +408,7 @@ def set_shots_filter(page):
             print("sog-middles: 'Hockey Props' not clickable or "
                   "its subtree did not expand — relying on the "
                   "in-code market check.")
+            _dump_filter_state(page, "drill-fail")
             return False
         page.wait_for_timeout(1200)
         if not _expand_and_click(page, "Player Props", "Shots"):
