@@ -8037,3 +8037,17 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 13:59:52 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 234 events (157 with odds), db total 277199 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-14 13:59:53 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Colorado Providence Today 6:00 PM — Total — Over 155 Caesars -110 ($96) / Under 158.5 Bally Bet -132 ($104) — both win 156, 157, 158 — push at 
 [2026-11-14 13:59:53 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-14 14:14:42 ET] sync_to_github.py: FAILED (exit 1) in 889s —   FAILED: pc-data/promo-converter-2026-11-08.md (HTTP 409: {'error': '{"message":"is at 79975831a7b3c2e0b77ec967f8bc35f8eef0d82c but expected 3f6dca6b5cea8dced0
+[2026-11-14 14:16:43 ET] dh_game_middles.py: OK in 121s — GAME MIDDLE: NCAAB Delaware St. East Carolina Today 4:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | BetRivers | Bet365 — window 312.0 :: 
+[2026-11-14 14:16:48 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 14:18:31 ET] dh_prop_middles.py: OK in 103s — PROP MIDDLE CLEAN : NHL DET Red Wings TB Lightning Today 7:00 PM / table / Saves D. Tarasov Under 26.5 / Saves D. Tarasov 26+ / table | HardRock | Fanatics-NJ —
+[2026-11-14 14:20:23 ET] dh_sog_middles.py: OK in 111s — - 0 deliverables this run
+[2026-11-14 14:20:27 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-14 14:20:28 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 14:20:30 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 14:20:31 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 14:20:33 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 0 unverified, 560 total tallied.
+[2026-11-14 14:20:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 14:20:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 14:20:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 14:20:36 ET] syncing to GitHub (regular 10-minute sync)
