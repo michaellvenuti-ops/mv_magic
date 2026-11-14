@@ -1,6 +1,6 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 04:15)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 05:27)
 
-- Dolphins vs Colts | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
+- Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Kansas State vs TCU | FanDuel | spread | value: favorite | book 11.5 vs median 13.5 | div 2.0 
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
