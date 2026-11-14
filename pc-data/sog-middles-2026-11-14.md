@@ -38,3 +38,11 @@
 - 0 deliverables this run
 ## 2026-11-14T14:52:03-05:00 — sog-middles: 977 full-size + 0 smaller-bets rows parsed (filter=off — 'Hockey Props' not clickable / did not expand) (compact: qualifying only below) — 0 NEW/CHANGED middles
 - 0 deliverables this run
+## 2026-11-14T14:56:59-05:00 — sog-middles: 980 full-size + 0 smaller-bets rows parsed (filter=off — 'Hockey Props' not clickable / did not expand) (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
+## 2026-11-14T15:02:49-05:00 — sog-middles: 87 full-size + 0 smaller-bets rows parsed (filter=off — panel did not open) (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
+## 2026-11-14T15:04:32-05:00 — sog-middles: 972 full-size + 0 smaller-bets rows parsed (filter=off — 'Hockey Props' not clickable / did not expand) (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
+## 2026-11-14T15:09:00-05:00 — sog-middles: 978 full-size + 0 smaller-bets rows parsed (filter=off — panel did not close) (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
