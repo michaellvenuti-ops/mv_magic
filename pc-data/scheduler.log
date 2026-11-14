@@ -7443,3 +7443,21 @@
 [2026-11-13 19:05:05 ET] dh_low_holds.py: OK in 31s — LOW-HOLDS: NHL SEA Kraken CAR Hurricanes Nov-14 1:00 PM / table / Points T. Hall Under 0.5 / Points T. Hall 1+ / table | DraftKings | Bally Bet
 [2026-11-13 19:07:02 ET] dh_game_middles.py: OK in 118s — GAME MIDDLE: NBA GS Warriors SA Spurs Today 9:45 PM / table / Alt Total Under 218 / Alt Total Over 217.5 / table bar_chart | Fanatics-NJ | ProphetX — window 223
 [2026-11-13 19:10:44 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 377 basketball rows excluded (football-only rule).
+[2026-11-13 19:25:11 ET] sync_to_github.py: FAILED (exit 1) in 867s —   FAILED: pc-data/nhl-totals-2026-11-04.md (HTTP 409: {'error': '{"message":"is at 4cb1c1535bfa37787290f2910012b12e5b21fb4f but expected c7a863fe046aef34e22647c
+[2026-11-13 19:26:59 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 216 events (172 with odds), db total 266955 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 19:27:00 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB SIU Edwardsville 2 Duke Today 8:00 PM — Spread — Duke -34.5 Fanatics-NJ -310 ($143) / SIU Edwardsville +37.5 Bally Bet +235 ($57) — both win 35
+[2026-11-13 19:30:27 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-13 19:31:33 ET] hung_number.py: OK in 66s — HUNG NUMBER: UNLV vs New Mexico — Fanatics spread value favorite (14.5 vs median 16.5)
+[2026-11-13 19:31:39 ET] rlm.py: OK in 5s
+[2026-11-13 19:31:42 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 19:31:45 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Oregon State @ Boise State | 2026-11-13 | Kalshi | Boise State spread -14.5 (median -14.5 -> -15.5)
+[2026-11-13 19:34:21 ET] dh_prop_middles.py: OK in 156s — PROP MIDDLE CLEAN : NFL KC Chiefs ATL Falcons Nov-15 1:00 PM / table / Passing Yards M. Penix Under 221.5 / Alt Pass Yards M. Penix 220+ / table | BetRivers | D
+[2026-11-13 19:36:35 ET] dh_sog_middles.py: OK in 133s — - 0 deliverables this run
+[2026-11-13 19:36:39 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 19:36:41 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 19:36:42 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-13 19:36:43 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 19:36:45 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 0 unverified, 502 total tallied.
+[2026-11-13 19:36:46 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
+[2026-11-13 19:36:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 19:36:48 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
