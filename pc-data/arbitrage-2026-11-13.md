@@ -183,3 +183,4 @@ NBA UTA Jazz HOU Rockets Today 8:45 PM / table / Alt Rebounds J. Green 2+ / Rebo
 NBA UTA Jazz HOU Rockets Today 8:45 PM / table bar_chart / Rebounds J. Green Over 3.5 NO / Alt Rebounds J. Green 4+ / table | Kalshi | DraftKings :: {'leg1': {'side': '-458 [81%] $1,000 Kalshi', 'price': '-458', 'book': 'Kalshi', 'stake': 1000.0}, 'leg2': {'side': '+610 $172 DraftKings', 'price': '+610', 'book': 'DraftKings', 'stake': 172.0}, 'arb_risk': False, 'first_reported': '2026-11-13T20:16:36-05:00', 'last_seen': '2026-11-13', 'profit_pct': 3.95}
 ## 2026-11-13T21:28:35-05:00 — arbitrage: 99 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-13T22:40:35-05:00 — arbitrage: 100 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-13T23:51:46-05:00 — arbitrage: 100 complete pairs read, 0 NEW/CHANGED delivered
