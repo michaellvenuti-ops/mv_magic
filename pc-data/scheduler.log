@@ -8021,3 +8021,18 @@
 [2026-11-14 14:42:42 ET] rlm.py: OK in 5s
 [2026-11-14 14:42:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-14 14:42:47 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 14:58:20 ET] sync_to_github.py: FAILED (exit 1) in 934s —   FAILED: pc-data/steam-side-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 650300d71a20e03643014c4dffd6c9c551efdf00 but expected bcf3a7ae6199f65cf07dee1
+[2026-11-14 15:00:04 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 234 events (134 with odds), db total 277667 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 15:01:58 ET] dh_game_middles.py: OK in 113s — GAME MIDDLE: NCAAB LSU 14 Gonzaga Today 3:30 PM / table / Alt Total Under 164.5 / Alt Total Over 164 / table | Bally Bet | Bet365 — window 288.0 :: -148 $1,000 
+[2026-11-14 15:02:33 ET] steam_side.py: OK in 35s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 15:02:49 ET] dh_prop_middles.py: FAILED (exit 1) in 17s —   - [pid=15896] <gracefully close end>
+[2026-11-14 15:04:34 ET] dh_sog_middles.py: OK in 105s — - 0 deliverables this run
+[2026-11-14 15:04:37 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-14 15:04:38 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 15:04:39 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 15:04:40 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 15:04:43 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 4 new, 0 unverified, 564 total tallied.
+[2026-11-14 15:04:44 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 15:04:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 15:04:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 15:04:46 ET] syncing to GitHub (regular 10-minute sync)
