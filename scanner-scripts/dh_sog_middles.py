@@ -72,6 +72,18 @@ v6 never clicks a parent checkbox: it expands Hockey Props and
 Player Props via their toggle buttons and checks ONLY the
 Shots leaf, idempotently (is_checked guard). The probe's clicks
 did the same thing by hand.
+FIX v7 2026-11-14 (same day, after manual test #7 at 15:09):
+v6 got PAST both expansions and the Shots check, failing only
+at the panel close. The close check (zero 'Market Type' text
+anywhere) was wrong: once the filter applies, the board's
+active-filter summary keeps 'Market Type' on the page, so a
+successful close read as a failure — and because filter_set
+was False, main() skipped the restore clear, LEAVING the
+filter set on the shared board (the next scheduler run's
+start-of-run self-heal is the backstop). Close is now verified
+by the board's 'Filters:' button becoming visible again (it is
+hidden while the full-page panel is open — confirmed in the
+15:03 dump). A close-fail dump was added for diagnosis.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -163,7 +175,13 @@ def _open_filters_panel(page):
 
 
 def _close_filters_panel(page):
-    """Back to the board; True when the panel is gone."""
+    """Back to the board; True when the panel is gone. The panel
+    is a full-page overlay: while it is open the board's
+    'Filters:' button is hidden, so its reappearance is the
+    reliable closed signal. (The old check — zero 'Market Type'
+    text anywhere — was wrong: once the filter applies, the
+    board's active-filter summary keeps 'Market Type' on the
+    page, so a successful close read as a failure, test #7.)"""
     try:
         back = page.get_by_role("button", name="Back")
         if back.count():
@@ -174,7 +192,8 @@ def _close_filters_panel(page):
         return False
     page.wait_for_timeout(2500)
     try:
-        return page.get_by_text("Market Type", exact=True).count() == 0
+        btn = page.locator("text=/Filters:\\s*(Off|On)/ >> visible=true")
+        return btn.count() > 0
     except Exception:
         return False
 
@@ -494,6 +513,7 @@ def set_shots_filter(page):
             print("sog-middles: Filters panel did not close — "
                   "filter state uncertain; relying on the in-code "
                   "market check.")
+            _dump_filter_state(page, "close-fail")
             return False
         state = _filters_button_state(page)
         if state != "On":
