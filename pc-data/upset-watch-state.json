@@ -4417,7 +4417,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Iowa State",
-   "dog_team": "Cincinnati"
+   "dog_team": "Cincinnati",
+   "final": true
   },
   "401856886": {
    "sport": "CFB",
@@ -4683,7 +4684,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 6.0,
+   "spread": 6.5,
    "fav_team": "Nevada",
    "dog_team": "N Illinois"
   },
@@ -4693,7 +4694,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 6.0,
+   "spread": 5.5,
    "fav_team": "GA Southern",
    "dog_team": "Georgia St"
   },
@@ -4713,7 +4714,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 21.0,
+   "spread": 21.5,
    "fav_team": "Liberty",
    "dog_team": "MTSU"
   },
@@ -5004,7 +5005,8 @@
    "fav": "home",
    "spread": 3.0,
    "fav_team": "Rhode Island",
-   "dog_team": "Towson"
+   "dog_team": "Towson",
+   "final": true
   },
   "401866693": {
    "sport": "CFB",
@@ -5020,7 +5022,8 @@
    "alert_expires_at": "2026-11-14T12:31:05",
    "alert_detail": "5:05 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 6
+   "alert_dog_score": 6,
+   "final": true
   },
   "401867811": {
    "sport": "CFB",
@@ -5036,7 +5039,8 @@
    "alert_expires_at": "2026-11-14T12:35:02",
    "alert_detail": "2:41 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 6
+   "alert_dog_score": 6,
+   "final": true
   },
   "401867853": {
    "sport": "CFB",
@@ -5073,7 +5077,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Robert Morris",
-   "dog_team": "Stonehill"
+   "dog_team": "Stonehill",
+   "final": true
   },
   "401867934": {
    "sport": "CFB",
@@ -5124,7 +5129,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "Butler",
-   "dog_team": "Marist"
+   "dog_team": "Marist",
+   "final": true
   },
   "401868225": {
    "sport": "CFB",
@@ -5171,7 +5177,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Yale",
-   "dog_team": "Princeton"
+   "dog_team": "Princeton",
+   "final": true
   },
   "401868395": {
    "sport": "CFB",
@@ -5511,11 +5518,17 @@
    "sport": "CFB",
    "matchup": "Tarleton St at West Florida",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 17.5,
    "fav_team": "Tarleton St",
-   "dog_team": "West Florida"
+   "dog_team": "West Florida",
+   "alerted_at": "2026-11-14T15:12:03",
+   "board_read_at": "2026-11-14T15:12:03",
+   "alert_expires_at": "2026-11-14T15:17:03",
+   "alert_detail": "15:00 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401868303": {
    "sport": "CFB",
@@ -9232,7 +9245,8 @@
    "sport": "NCAAB",
    "matchup": "Northwest U at Washington St",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401923303": {
    "sport": "NCAAB",
@@ -9242,7 +9256,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Drexel",
-   "dog_team": "Maine"
+   "dog_team": "Maine",
+   "final": true
   },
   "401920750": {
    "sport": "NCAAB",
@@ -9270,7 +9285,8 @@
    "spread": 11.5,
    "fav_team": "George Mason",
    "dog_team": "Bradley",
-   "live_ml": -345
+   "live_ml": -445,
+   "final": true
   },
   "401912229": {
    "sport": "NCAAB",
@@ -9280,7 +9296,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "St Thomas",
-   "dog_team": "Army"
+   "dog_team": "Army",
+   "final": true
   },
   "401911231": {
    "sport": "NCAAB",
@@ -9363,7 +9380,7 @@
    "spread": 25.5,
    "fav_team": "South Florida",
    "dog_team": "Coppin St",
-   "live_ml": -1950
+   "live_ml": -2500
   },
   "401911392": {
    "sport": "NCAAB",
@@ -9661,7 +9678,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 7.5,
    "fav_team": "San Francisco",
    "dog_team": "Portland St"
   },
@@ -9901,7 +9918,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Pistons",
    "dog_team": "Heat"
   },
