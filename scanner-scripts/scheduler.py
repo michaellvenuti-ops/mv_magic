@@ -193,6 +193,21 @@ def run_one(script: str, args: list) -> bool:
         return False
 
 
+def _wide_builds_count() -> int:
+    """Entries in the wide-builds state file (0 when absent/unreadable).
+
+    The count only grows when wide_builds.py banks a genuinely NEW
+    build — re-seen builds just refresh last_seen — so a rise across
+    one run means new builds landed and are worth syncing at once.
+    """
+    try:
+        st = json.loads((HERE / "data" / "wide-builds-state.json")
+                        .read_text(encoding="utf-8"))
+        return len(st.get("entries") or {})
+    except (OSError, json.JSONDecodeError):
+        return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Run the scans on Chet's cadence while this stays open.")
     ap.add_argument("--once", action="store_true", help="fire everything currently due, then exit")
@@ -207,6 +222,28 @@ def main() -> int:
     state = load_state()
     last_sync = 0.0
     dirty = False
+
+    def sync_now(reason: str) -> bool:
+        """One GitHub sync + phone digest. Returns True on success.
+        On success clears the dirty flag and resets the 10-minute
+        sync clock, so the regular gate does not re-sync right after.
+        On failure leaves dirty set — the regular gate retries on the
+        next loop, exactly as before."""
+        nonlocal last_sync, dirty
+        if not os.environ.get("GH_PC_SCANS_TOKEN"):
+            last_sync = time.time()  # don't nag every loop
+            log("sync skipped — GH_PC_SCANS_TOKEN not set (results stay in data/ until you send them)")
+            return False
+        log(f"syncing to GitHub ({reason})")
+        if run_one("sync_to_github.py", []):
+            last_sync = time.time()
+            dirty = False
+            # Phone ping (no-op unless a notify
+            # channel is configured — see notify.py)
+            run_one("notify.py", ["--digest"])
+            return True
+        return False
+
     log("scheduler started — mirroring Chet's cadence. Ctrl+C to stop.")
     try:
         while True:
@@ -214,21 +251,23 @@ def main() -> int:
             for entry in SCHEDULE:
                 if due(entry, state, now):
                     script, sargs, _kind, _spec = entry
+                    wb_before = (_wide_builds_count()
+                                 if script == "wide_builds.py" else None)
                     run_one(script, sargs)
                     state[key_of(script, sargs)] = datetime.now(ET).isoformat()
                     save_state(state)
                     dirty = True
+                    if wb_before is not None and \
+                            _wide_builds_count() > wb_before:
+                        # NEW wide builds banked — sync NOW instead of
+                        # waiting for the 10-minute boundary, so chat
+                        # and the phone ping see them within minutes.
+                        # The sync still takes ~10 min of lane time,
+                        # but it would have run at the next boundary
+                        # anyway; this just moves it earlier.
+                        sync_now("wide-builds banked new builds")
             if dirty and time.time() - last_sync >= 10 * 60:
-                if os.environ.get("GH_PC_SCANS_TOKEN"):
-                    if run_one("sync_to_github.py", []):
-                        last_sync = time.time()
-                        dirty = False
-                        # Phone ping (no-op unless a notify
-                        # channel is configured — see notify.py)
-                        run_one("notify.py", ["--digest"])
-                else:
-                    last_sync = time.time()  # don't nag every loop
-                    log("sync skipped — GH_PC_SCANS_TOKEN not set (results stay in data/ until you send them)")
+                sync_now("regular 10-minute sync")
             if args.once:
                 break
             time.sleep(30)
