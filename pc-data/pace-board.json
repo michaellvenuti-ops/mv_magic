@@ -1,42 +1,35 @@
 {
- "updated_et": "2026-11-13 00:21",
+ "updated_et": "2026-11-14 00:23",
  "source": "TeamRankings (pace, points, opponent points per game)",
  "leagues": {
   "NBA": [
    {
     "team": "Chicago",
-    "pace": 107.5,
-    "pts": 113.3,
-    "opp_pts": 128.8,
+    "pace": 108.5,
+    "pts": 114.4,
+    "opp_pts": 127.7,
+    "avg_total": 242.1
+   },
+   {
+    "team": "Atlanta",
+    "pace": 107.3,
+    "pts": 118.2,
+    "opp_pts": 116.8,
+    "avg_total": 235.0
+   },
+   {
+    "team": "New Orleans",
+    "pace": 107.2,
+    "pts": 116.5,
+    "opp_pts": 125.6,
     "avg_total": 242.1
    },
    {
     "team": "Miami",
-    "pace": 106.9,
-    "pts": 115.7,
-    "opp_pts": 120.0,
-    "avg_total": 235.7
-   },
-   {
-    "team": "New Orleans",
-    "pace": 106.9,
-    "pts": 116.9,
-    "opp_pts": 124.3,
-    "avg_total": 241.2
-   },
-   {
-    "team": "Atlanta",
     "pace": 106.4,
-    "pts": 118.3,
-    "opp_pts": 116.2,
-    "avg_total": 234.5
-   },
-   {
-    "team": "Utah",
-    "pace": 105.2,
-    "pts": 106.6,
-    "opp_pts": 118.1,
-    "avg_total": 224.7
+    "pts": 117.2,
+    "opp_pts": 120.1,
+    "avg_total": 237.3
    },
    {
     "team": "Minnesota",
@@ -44,6 +37,20 @@
     "pts": 119.3,
     "opp_pts": 105.9,
     "avg_total": 225.2
+   },
+   {
+    "team": "Utah",
+    "pace": 104.7,
+    "pts": 107.5,
+    "opp_pts": 118.6,
+    "avg_total": 226.1
+   },
+   {
+    "team": "Memphis",
+    "pace": 104.4,
+    "pts": 119.9,
+    "opp_pts": 111.8,
+    "avg_total": 231.7
    },
    {
     "team": "LA Clippers",
@@ -67,13 +74,6 @@
     "avg_total": 229.3
    },
    {
-    "team": "Memphis",
-    "pace": 103.9,
-    "pts": 117.9,
-    "opp_pts": 111.9,
-    "avg_total": 229.8
-   },
-   {
     "team": "Washington",
     "pace": 103.8,
     "pts": 110.0,
@@ -90,16 +90,9 @@
    {
     "team": "Indiana",
     "pace": 103.6,
-    "pts": 111.6,
-    "opp_pts": 114.0,
-    "avg_total": 225.6
-   },
-   {
-    "team": "Cleveland",
-    "pace": 103.6,
-    "pts": 116.4,
-    "opp_pts": 114.3,
-    "avg_total": 230.7
+    "pts": 111.2,
+    "opp_pts": 113.2,
+    "avg_total": 224.4
    },
    {
     "team": "Detroit",
@@ -130,6 +123,13 @@
     "avg_total": 225.4
    },
    {
+    "team": "Cleveland",
+    "pace": 103.4,
+    "pts": 116.8,
+    "opp_pts": 115.8,
+    "avg_total": 232.6
+   },
+   {
     "team": "San Antonio",
     "pace": 103.1,
     "pts": 119.2,
@@ -152,17 +152,10 @@
    },
    {
     "team": "Milwaukee",
-    "pace": 102.7,
-    "pts": 106.8,
-    "opp_pts": 121.3,
-    "avg_total": 228.1
-   },
-   {
-    "team": "Orlando",
-    "pace": 102.6,
-    "pts": 108.5,
-    "opp_pts": 114.0,
-    "avg_total": 222.5
+    "pace": 102.5,
+    "pts": 106.2,
+    "opp_pts": 120.2,
+    "avg_total": 226.4
    },
    {
     "team": "Okla City",
@@ -170,6 +163,13 @@
     "pts": 111.1,
     "opp_pts": 106.9,
     "avg_total": 218.0
+   },
+   {
+    "team": "Orlando",
+    "pace": 102.4,
+    "pts": 108.3,
+    "opp_pts": 112.8,
+    "avg_total": 221.1
    },
    {
     "team": "Phoenix",
@@ -187,10 +187,10 @@
    },
    {
     "team": "Houston",
-    "pace": 100.5,
-    "pts": 115.4,
-    "opp_pts": 106.5,
-    "avg_total": 221.9
+    "pace": 100.4,
+    "pts": 116.2,
+    "opp_pts": 107.4,
+    "avg_total": 223.6
    },
    {
     "team": "Boston",
@@ -200,28 +200,21 @@
     "avg_total": 217.4
    },
    {
+    "team": "New York",
+    "pace": 99.4,
+    "pts": 109.8,
+    "opp_pts": 103.7,
+    "avg_total": 213.5
+   },
+   {
     "team": "Charlotte",
     "pace": 99.4,
     "pts": 98.6,
     "opp_pts": 109.6,
     "avg_total": 208.2
-   },
-   {
-    "team": "New York",
-    "pace": 99.0,
-    "pts": 110.3,
-    "opp_pts": 103.5,
-    "avg_total": 213.8
    }
   ],
   "NCAAB": [
-   {
-    "team": "Tennessee St",
-    "pace": 86.7,
-    "pts": 64.0,
-    "opp_pts": 94.0,
-    "avg_total": 158.0
-   },
    {
     "team": "Alabama St",
     "pace": 85.4,
@@ -235,13 +228,6 @@
     "pts": 77.0,
     "opp_pts": 83.0,
     "avg_total": 160.0
-   },
-   {
-    "team": "UL Monroe",
-    "pace": 84.1,
-    "pts": 79.0,
-    "opp_pts": 97.0,
-    "avg_total": 176.0
    },
    {
     "team": "CS Fullerton",
@@ -272,11 +258,18 @@
     "avg_total": 166.6
    },
    {
-    "team": "TCU",
-    "pace": 82.6,
-    "pts": 101.3,
-    "opp_pts": 68.3,
-    "avg_total": 169.6
+    "team": "Tennessee St",
+    "pace": 83.0,
+    "pts": 71.0,
+    "opp_pts": 88.5,
+    "avg_total": 159.5
+   },
+   {
+    "team": "Texas So",
+    "pace": 82.2,
+    "pts": 69.3,
+    "opp_pts": 98.0,
+    "avg_total": 167.3
    },
    {
     "team": "Boise St",
@@ -284,20 +277,6 @@
     "pts": 105.5,
     "opp_pts": 80.0,
     "avg_total": 185.5
-   },
-   {
-    "team": "Alabama",
-    "pace": 81.7,
-    "pts": 102.0,
-    "opp_pts": 76.0,
-    "avg_total": 178.0
-   },
-   {
-    "team": "Cal Poly",
-    "pace": 81.6,
-    "pts": 77.5,
-    "opp_pts": 101.5,
-    "avg_total": 179.0
    },
    {
     "team": "Air Force",
@@ -314,11 +293,11 @@
     "avg_total": 159.5
    },
    {
-    "team": "Texas So",
-    "pace": 81.3,
-    "pts": 65.0,
-    "opp_pts": 97.5,
-    "avg_total": 162.5
+    "team": "TCU",
+    "pace": 81.2,
+    "pts": 95.0,
+    "opp_pts": 67.3,
+    "avg_total": 162.3
    },
    {
     "team": "Tenn Tech",
@@ -342,6 +321,13 @@
     "avg_total": 157.3
    },
    {
+    "team": "UL Monroe",
+    "pace": 81.1,
+    "pts": 74.8,
+    "opp_pts": 95.8,
+    "avg_total": 170.6
+   },
+   {
     "team": "Winthrop",
     "pace": 80.9,
     "pts": 89.0,
@@ -356,18 +342,18 @@
     "avg_total": 182.0
    },
    {
-    "team": "Xavier",
-    "pace": 80.9,
-    "pts": 91.0,
-    "opp_pts": 53.3,
-    "avg_total": 144.3
-   },
-   {
     "team": "Penn",
     "pace": 80.9,
     "pts": 74.7,
     "opp_pts": 86.0,
     "avg_total": 160.7
+   },
+   {
+    "team": "Xavier",
+    "pace": 80.8,
+    "pts": 88.5,
+    "opp_pts": 55.8,
+    "avg_total": 144.3
    },
    {
     "team": "N Kentucky",
@@ -377,11 +363,18 @@
     "avg_total": 178.8
    },
    {
-    "team": "Tarleton St",
+    "team": "Alabama",
+    "pace": 80.6,
+    "pts": 97.0,
+    "opp_pts": 76.0,
+    "avg_total": 173.0
+   },
+   {
+    "team": "Murray St",
     "pace": 80.5,
-    "pts": 90.0,
-    "opp_pts": 96.0,
-    "avg_total": 186.0
+    "pts": 95.0,
+    "opp_pts": 67.5,
+    "avg_total": 162.5
    },
    {
     "team": "Saint Joseph's",
@@ -398,25 +391,18 @@
     "avg_total": 164.3
    },
    {
+    "team": "Illinois",
+    "pace": 80.3,
+    "pts": 104.5,
+    "opp_pts": 71.3,
+    "avg_total": 175.8
+   },
+   {
     "team": "N Florida",
     "pace": 80.2,
     "pts": 61.7,
     "opp_pts": 88.7,
     "avg_total": 150.4
-   },
-   {
-    "team": "SMU",
-    "pace": 80.2,
-    "pts": 92.7,
-    "opp_pts": 68.3,
-    "avg_total": 161.0
-   },
-   {
-    "team": "Illinois",
-    "pace": 80.0,
-    "pts": 103.3,
-    "opp_pts": 66.3,
-    "avg_total": 169.6
    },
    {
     "team": "Utah Valley",
@@ -440,6 +426,13 @@
     "avg_total": 153.5
    },
    {
+    "team": "Cal Poly",
+    "pace": 79.7,
+    "pts": 79.3,
+    "opp_pts": 92.3,
+    "avg_total": 171.6
+   },
+   {
     "team": "Arkansas St",
     "pace": 79.6,
     "pts": 74.0,
@@ -447,32 +440,11 @@
     "avg_total": 158.3
    },
    {
-    "team": "South Dakota",
-    "pace": 79.6,
-    "pts": 85.0,
-    "opp_pts": 92.0,
-    "avg_total": 177.0
-   },
-   {
     "team": "Georgia Tech",
     "pace": 79.4,
     "pts": 85.0,
     "opp_pts": 69.7,
     "avg_total": 154.7
-   },
-   {
-    "team": "Murray St",
-    "pace": 79.3,
-    "pts": 93.7,
-    "opp_pts": 64.0,
-    "avg_total": 157.7
-   },
-   {
-    "team": "Georgia So",
-    "pace": 79.3,
-    "pts": 80.3,
-    "opp_pts": 82.3,
-    "avg_total": 162.6
    },
    {
     "team": "UCLA",
@@ -503,11 +475,11 @@
     "avg_total": 140.0
    },
    {
-    "team": "Southern Miss",
-    "pace": 78.9,
-    "pts": 70.5,
-    "opp_pts": 81.5,
-    "avg_total": 152.0
+    "team": "Sam Houston",
+    "pace": 78.8,
+    "pts": 81.7,
+    "opp_pts": 93.7,
+    "avg_total": 175.4
    },
    {
     "team": "W Kentucky",
@@ -522,13 +494,6 @@
     "pts": 94.0,
     "opp_pts": 52.7,
     "avg_total": 146.7
-   },
-   {
-    "team": "Butler",
-    "pace": 78.4,
-    "pts": 92.0,
-    "opp_pts": 75.0,
-    "avg_total": 167.0
    },
    {
     "team": "Tulane",
@@ -566,11 +531,25 @@
     "avg_total": 164.7
    },
    {
+    "team": "Southern Miss",
+    "pace": 78.1,
+    "pts": 68.7,
+    "opp_pts": 82.7,
+    "avg_total": 151.4
+   },
+   {
     "team": "Saint Louis",
     "pace": 78.1,
     "pts": 102.3,
     "opp_pts": 71.3,
     "avg_total": 173.6
+   },
+   {
+    "team": "Georgia So",
+    "pace": 78.1,
+    "pts": 77.8,
+    "opp_pts": 82.8,
+    "avg_total": 160.6
    },
    {
     "team": "Oklahoma St",
@@ -587,6 +566,13 @@
     "avg_total": 153.5
    },
    {
+    "team": "SMU",
+    "pace": 77.9,
+    "pts": 92.0,
+    "opp_pts": 67.5,
+    "avg_total": 159.5
+   },
+   {
     "team": "Utah St",
     "pace": 77.7,
     "pts": 100.7,
@@ -601,20 +587,6 @@
     "avg_total": 157.4
    },
    {
-    "team": "Alcorn St",
-    "pace": 77.6,
-    "pts": 66.0,
-    "opp_pts": 95.7,
-    "avg_total": 161.7
-   },
-   {
-    "team": "Sam Houston",
-    "pace": 77.6,
-    "pts": 79.5,
-    "opp_pts": 86.5,
-    "avg_total": 166.0
-   },
-   {
     "team": "Jackson St",
     "pace": 77.6,
     "pts": 66.5,
@@ -622,25 +594,11 @@
     "avg_total": 152.3
    },
    {
-    "team": "Florida Intl",
-    "pace": 77.6,
-    "pts": 85.0,
-    "opp_pts": 75.0,
-    "avg_total": 160.0
-   },
-   {
-    "team": "Saint Mary's",
-    "pace": 77.5,
-    "pts": 96.7,
-    "opp_pts": 81.7,
-    "avg_total": 178.4
-   },
-   {
     "team": "Milwaukee",
-    "pace": 77.5,
-    "pts": 72.3,
-    "opp_pts": 87.7,
-    "avg_total": 160.0
+    "pace": 77.4,
+    "pts": 70.3,
+    "opp_pts": 84.8,
+    "avg_total": 155.1
    },
    {
     "team": "USC",
@@ -650,6 +608,13 @@
     "avg_total": 159.6
    },
    {
+    "team": "Tarleton St",
+    "pace": 77.3,
+    "pts": 81.5,
+    "opp_pts": 82.5,
+    "avg_total": 164.0
+   },
+   {
     "team": "UMBC",
     "pace": 77.2,
     "pts": 73.0,
@@ -657,18 +622,25 @@
     "avg_total": 153.0
    },
    {
-    "team": "Samford",
+    "team": "Florida Intl",
     "pace": 77.1,
-    "pts": 79.0,
-    "opp_pts": 88.0,
-    "avg_total": 167.0
+    "pts": 87.0,
+    "opp_pts": 77.5,
+    "avg_total": 164.5
    },
    {
-    "team": "Lindenwood",
-    "pace": 77.1,
-    "pts": 59.5,
-    "opp_pts": 96.0,
-    "avg_total": 155.5
+    "team": "Butler",
+    "pace": 77.0,
+    "pts": 85.0,
+    "opp_pts": 75.3,
+    "avg_total": 160.3
+   },
+   {
+    "team": "South Dakota",
+    "pace": 77.0,
+    "pts": 81.8,
+    "opp_pts": 89.3,
+    "avg_total": 171.1
    },
    {
     "team": "Longwood",
@@ -682,13 +654,6 @@
     "pace": 76.9,
     "pts": 64.5,
     "opp_pts": 99.5,
-    "avg_total": 164.0
-   },
-   {
-    "team": "W Florida",
-    "pace": 76.9,
-    "pts": 79.0,
-    "opp_pts": 85.0,
     "avg_total": 164.0
    },
    {
@@ -713,6 +678,13 @@
     "avg_total": 147.5
    },
    {
+    "team": "Alcorn St",
+    "pace": 76.7,
+    "pts": 66.8,
+    "opp_pts": 90.0,
+    "avg_total": 156.8
+   },
+   {
     "team": "Dayton",
     "pace": 76.7,
     "pts": 84.7,
@@ -734,25 +706,11 @@
     "avg_total": 159.3
    },
    {
-    "team": "San Diego",
-    "pace": 76.5,
-    "pts": 85.5,
-    "opp_pts": 86.5,
-    "avg_total": 172.0
-   },
-   {
     "team": "Kansas St",
     "pace": 76.5,
     "pts": 83.3,
     "opp_pts": 76.0,
     "avg_total": 159.3
-   },
-   {
-    "team": "C Arkansas",
-    "pace": 76.5,
-    "pts": 72.5,
-    "opp_pts": 73.5,
-    "avg_total": 146.0
    },
    {
     "team": "Charleston So",
@@ -762,25 +720,11 @@
     "avg_total": 157.5
    },
    {
-    "team": "Duke",
-    "pace": 76.5,
-    "pts": 90.0,
-    "opp_pts": 60.3,
-    "avg_total": 150.3
-   },
-   {
     "team": "Weber St",
     "pace": 76.5,
     "pts": 72.7,
     "opp_pts": 96.0,
     "avg_total": 168.7
-   },
-   {
-    "team": "San Jose St",
-    "pace": 76.4,
-    "pts": 87.0,
-    "opp_pts": 82.5,
-    "avg_total": 169.5
    },
    {
     "team": "S Florida",
@@ -797,11 +741,11 @@
     "avg_total": 156.0
    },
    {
-    "team": "Mt St Mary's",
-    "pace": 76.3,
-    "pts": 60.0,
-    "opp_pts": 77.0,
-    "avg_total": 137.0
+    "team": "Miami",
+    "pace": 76.2,
+    "pts": 83.3,
+    "opp_pts": 59.3,
+    "avg_total": 142.6
    },
    {
     "team": "San Diego St",
@@ -825,6 +769,13 @@
     "avg_total": 140.0
    },
    {
+    "team": "Arizona",
+    "pace": 76.0,
+    "pts": 87.3,
+    "opp_pts": 74.0,
+    "avg_total": 161.3
+   },
+   {
     "team": "Buffalo",
     "pace": 75.9,
     "pts": 63.0,
@@ -839,11 +790,11 @@
     "avg_total": 181.0
    },
    {
-    "team": "Northeastern",
+    "team": "Florida St",
     "pace": 75.9,
-    "pts": 77.0,
-    "opp_pts": 86.7,
-    "avg_total": 163.7
+    "pts": 90.0,
+    "opp_pts": 69.5,
+    "avg_total": 159.5
    },
    {
     "team": "UC Davis",
@@ -860,32 +811,25 @@
     "avg_total": 151.7
    },
    {
-    "team": "Miami",
+    "team": "Tennessee",
     "pace": 75.8,
-    "pts": 79.7,
-    "opp_pts": 61.7,
-    "avg_total": 141.4
+    "pts": 81.0,
+    "opp_pts": 61.3,
+    "avg_total": 142.3
    },
    {
-    "team": "Harvard",
-    "pace": 75.8,
-    "pts": 70.0,
-    "opp_pts": 74.0,
-    "avg_total": 144.0
+    "team": "Duke",
+    "pace": 75.7,
+    "pts": 90.0,
+    "opp_pts": 57.0,
+    "avg_total": 147.0
    },
    {
-    "team": "Florida St",
-    "pace": 75.8,
-    "pts": 92.0,
-    "opp_pts": 72.7,
-    "avg_total": 164.7
-   },
-   {
-    "team": "Arizona",
-    "pace": 75.8,
-    "pts": 89.7,
-    "opp_pts": 75.7,
-    "avg_total": 165.4
+    "team": "Michigan St",
+    "pace": 75.7,
+    "pts": 93.0,
+    "opp_pts": 66.3,
+    "avg_total": 159.3
    },
    {
     "team": "UC Irvine",
@@ -909,6 +853,27 @@
     "avg_total": 144.5
    },
    {
+    "team": "Saint Mary's",
+    "pace": 75.4,
+    "pts": 93.5,
+    "opp_pts": 76.5,
+    "avg_total": 170.0
+   },
+   {
+    "team": "Mt St Mary's",
+    "pace": 75.3,
+    "pts": 60.7,
+    "opp_pts": 78.7,
+    "avg_total": 139.4
+   },
+   {
+    "team": "San Jose St",
+    "pace": 75.2,
+    "pts": 83.0,
+    "opp_pts": 81.7,
+    "avg_total": 164.7
+   },
+   {
     "team": "Creighton",
     "pace": 75.2,
     "pts": 80.3,
@@ -928,6 +893,13 @@
     "pts": 80.0,
     "opp_pts": 86.5,
     "avg_total": 166.5
+   },
+   {
+    "team": "Oregon St",
+    "pace": 75.1,
+    "pts": 93.3,
+    "opp_pts": 69.5,
+    "avg_total": 162.8
    },
    {
     "team": "Mercer",
@@ -958,13 +930,6 @@
     "avg_total": 148.5
    },
    {
-    "team": "SE Missouri St",
-    "pace": 75.0,
-    "pts": 77.0,
-    "opp_pts": 78.5,
-    "avg_total": 155.5
-   },
-   {
     "team": "VMI",
     "pace": 75.0,
     "pts": 67.7,
@@ -972,11 +937,18 @@
     "avg_total": 139.7
    },
    {
-    "team": "Michigan St",
+    "team": "FGCU",
+    "pace": 75.0,
+    "pts": 82.3,
+    "opp_pts": 88.3,
+    "avg_total": 170.6
+   },
+   {
+    "team": "Lindenwood",
     "pace": 74.9,
-    "pts": 88.7,
-    "opp_pts": 64.3,
-    "avg_total": 153.0
+    "pts": 58.3,
+    "opp_pts": 86.3,
+    "avg_total": 144.6
    },
    {
     "team": "Georgia St",
@@ -993,13 +965,6 @@
     "avg_total": 153.5
    },
    {
-    "team": "Chattanooga",
-    "pace": 74.8,
-    "pts": 81.5,
-    "opp_pts": 90.5,
-    "avg_total": 172.0
-   },
-   {
     "team": "S Illinois",
     "pace": 74.8,
     "pts": 86.5,
@@ -1014,11 +979,18 @@
     "avg_total": 172.0
    },
    {
-    "team": "Oregon St",
+    "team": "Mississippi St",
+    "pace": 74.7,
+    "pts": 87.3,
+    "opp_pts": 67.5,
+    "avg_total": 154.8
+   },
+   {
+    "team": "Virginia",
     "pace": 74.6,
-    "pts": 97.3,
-    "opp_pts": 71.0,
-    "avg_total": 168.3
+    "pts": 91.8,
+    "opp_pts": 69.6,
+    "avg_total": 161.4
    },
    {
     "team": "Richmond",
@@ -1033,13 +1005,6 @@
     "pts": 90.7,
     "opp_pts": 62.3,
     "avg_total": 153.0
-   },
-   {
-    "team": "Pittsburgh",
-    "pace": 74.5,
-    "pts": 85.7,
-    "opp_pts": 64.7,
-    "avg_total": 150.4
    },
    {
     "team": "Iowa St",
@@ -1063,13 +1028,6 @@
     "avg_total": 155.4
    },
    {
-    "team": "Bryant",
-    "pace": 74.4,
-    "pts": 62.5,
-    "opp_pts": 71.8,
-    "avg_total": 134.3
-   },
-   {
     "team": "Portland",
     "pace": 74.4,
     "pts": 79.0,
@@ -1084,11 +1042,18 @@
     "avg_total": 156.7
    },
    {
-    "team": "Virginia",
+    "team": "North Carolina",
     "pace": 74.4,
-    "pts": 93.0,
-    "opp_pts": 66.3,
-    "avg_total": 159.3
+    "pts": 83.8,
+    "opp_pts": 70.8,
+    "avg_total": 154.6
+   },
+   {
+    "team": "C Arkansas",
+    "pace": 74.4,
+    "pts": 70.3,
+    "opp_pts": 75.3,
+    "avg_total": 145.6
    },
    {
     "team": "La Salle",
@@ -1096,13 +1061,6 @@
     "pts": 67.3,
     "opp_pts": 84.7,
     "avg_total": 152.0
-   },
-   {
-    "team": "Virginia Tech",
-    "pace": 74.3,
-    "pts": 92.3,
-    "opp_pts": 69.7,
-    "avg_total": 162.0
    },
    {
     "team": "UTSA",
@@ -1133,6 +1091,13 @@
     "avg_total": 133.0
    },
    {
+    "team": "Samford",
+    "pace": 74.2,
+    "pts": 72.5,
+    "opp_pts": 89.0,
+    "avg_total": 161.5
+   },
+   {
     "team": "Jacksonville St",
     "pace": 74.2,
     "pts": 63.0,
@@ -1147,27 +1112,6 @@
     "avg_total": 166.5
    },
    {
-    "team": "FGCU",
-    "pace": 74.2,
-    "pts": 83.5,
-    "opp_pts": 88.0,
-    "avg_total": 171.5
-   },
-   {
-    "team": "Ohio St",
-    "pace": 74.1,
-    "pts": 85.3,
-    "opp_pts": 77.7,
-    "avg_total": 163.0
-   },
-   {
-    "team": "Tennessee",
-    "pace": 74.1,
-    "pts": 80.0,
-    "opp_pts": 53.0,
-    "avg_total": 133.0
-   },
-   {
     "team": "S Indiana",
     "pace": 74.1,
     "pts": 66.7,
@@ -1175,18 +1119,25 @@
     "avg_total": 141.4
    },
    {
-    "team": "Omaha",
-    "pace": 74.1,
-    "pts": 61.5,
-    "opp_pts": 99.0,
-    "avg_total": 160.5
-   },
-   {
     "team": "California",
     "pace": 74.1,
     "pts": 72.3,
     "opp_pts": 77.7,
     "avg_total": 150.0
+   },
+   {
+    "team": "Pittsburgh",
+    "pace": 74.1,
+    "pts": 83.3,
+    "opp_pts": 64.5,
+    "avg_total": 147.8
+   },
+   {
+    "team": "SE Missouri St",
+    "pace": 74.1,
+    "pts": 76.3,
+    "opp_pts": 81.7,
+    "avg_total": 158.0
    },
    {
     "team": "Evansville",
@@ -1203,6 +1154,13 @@
     "avg_total": 155.0
    },
    {
+    "team": "N Alabama",
+    "pace": 74.0,
+    "pts": 67.7,
+    "opp_pts": 83.3,
+    "avg_total": 151.0
+   },
+   {
     "team": "Niagara",
     "pace": 74.0,
     "pts": 63.0,
@@ -1210,11 +1168,18 @@
     "avg_total": 147.0
    },
    {
-    "team": "North Carolina",
+    "team": "Virginia Tech",
     "pace": 74.0,
-    "pts": 88.3,
-    "opp_pts": 68.3,
-    "avg_total": 156.6
+    "pts": 89.8,
+    "opp_pts": 67.8,
+    "avg_total": 157.6
+   },
+   {
+    "team": "N Iowa",
+    "pace": 73.9,
+    "pts": 81.3,
+    "opp_pts": 93.3,
+    "avg_total": 174.6
    },
    {
     "team": "Memphis",
@@ -1294,13 +1259,6 @@
     "avg_total": 149.7
    },
    {
-    "team": "UNLV",
-    "pace": 73.5,
-    "pts": 88.5,
-    "opp_pts": 78.0,
-    "avg_total": 166.5
-   },
-   {
     "team": "C Michigan",
     "pace": 73.4,
     "pts": 87.0,
@@ -1336,6 +1294,20 @@
     "avg_total": 147.8
    },
    {
+    "team": "W Florida",
+    "pace": 73.3,
+    "pts": 75.0,
+    "opp_pts": 79.7,
+    "avg_total": 154.7
+   },
+   {
+    "team": "Northeastern",
+    "pace": 73.3,
+    "pts": 78.8,
+    "opp_pts": 83.3,
+    "avg_total": 162.1
+   },
+   {
     "team": "Seattle",
     "pace": 73.2,
     "pts": 70.3,
@@ -1364,11 +1336,11 @@
     "avg_total": 142.3
    },
    {
-    "team": "Wright St",
-    "pace": 73.1,
-    "pts": 91.7,
-    "opp_pts": 70.0,
-    "avg_total": 161.7
+    "team": "Idaho",
+    "pace": 73.2,
+    "pts": 70.5,
+    "opp_pts": 80.5,
+    "avg_total": 151.0
    },
    {
     "team": "Texas Tech",
@@ -1399,6 +1371,13 @@
     "avg_total": 149.5
    },
    {
+    "team": "Maryland",
+    "pace": 73.0,
+    "pts": 84.3,
+    "opp_pts": 80.0,
+    "avg_total": 164.3
+   },
+   {
     "team": "Loyola Chi",
     "pace": 73.0,
     "pts": 82.0,
@@ -1406,11 +1385,11 @@
     "avg_total": 152.7
    },
    {
-    "team": "F Dickinson",
+    "team": "Chattanooga",
     "pace": 73.0,
-    "pts": 63.3,
-    "opp_pts": 98.3,
-    "avg_total": 161.6
+    "pts": 80.0,
+    "opp_pts": 83.7,
+    "avg_total": 163.7
    },
    {
     "team": "Penn St",
@@ -1434,32 +1413,11 @@
     "avg_total": 147.3
    },
    {
-    "team": "Prairie View",
+    "team": "Omaha",
     "pace": 72.9,
-    "pts": 63.0,
-    "opp_pts": 83.0,
-    "avg_total": 146.0
-   },
-   {
-    "team": "Fordham",
-    "pace": 72.9,
-    "pts": 75.3,
-    "opp_pts": 76.7,
-    "avg_total": 152.0
-   },
-   {
-    "team": "NC Central",
-    "pace": 72.9,
-    "pts": 62.7,
-    "opp_pts": 74.3,
-    "avg_total": 137.0
-   },
-   {
-    "team": "Kentucky",
-    "pace": 72.9,
-    "pts": 81.0,
-    "opp_pts": 75.3,
-    "avg_total": 156.3
+    "pts": 63.3,
+    "opp_pts": 84.7,
+    "avg_total": 148.0
    },
    {
     "team": "Monmouth",
@@ -1474,20 +1432,6 @@
     "pts": 90.7,
     "opp_pts": 56.3,
     "avg_total": 147.0
-   },
-   {
-    "team": "UConn",
-    "pace": 72.8,
-    "pts": 84.7,
-    "opp_pts": 54.7,
-    "avg_total": 139.4
-   },
-   {
-    "team": "Mississippi St",
-    "pace": 72.8,
-    "pts": 95.3,
-    "opp_pts": 63.0,
-    "avg_total": 158.3
    },
    {
     "team": "W Illinois",
@@ -1511,6 +1455,20 @@
     "avg_total": 155.7
    },
    {
+    "team": "Wright St",
+    "pace": 72.7,
+    "pts": 91.3,
+    "opp_pts": 69.0,
+    "avg_total": 160.3
+   },
+   {
+    "team": "E Washington",
+    "pace": 72.7,
+    "pts": 73.3,
+    "opp_pts": 88.7,
+    "avg_total": 162.0
+   },
+   {
     "team": "IU Indy",
     "pace": 72.7,
     "pts": 74.5,
@@ -1525,18 +1483,18 @@
     "avg_total": 150.3
    },
    {
-    "team": "E Washington",
-    "pace": 72.7,
-    "pts": 73.3,
-    "opp_pts": 88.7,
-    "avg_total": 162.0
-   },
-   {
     "team": "Louisiana Tech",
     "pace": 72.6,
     "pts": 67.5,
     "opp_pts": 82.5,
     "avg_total": 150.0
+   },
+   {
+    "team": "UCF",
+    "pace": 72.6,
+    "pts": 85.8,
+    "opp_pts": 77.3,
+    "avg_total": 163.1
    },
    {
     "team": "Navy",
@@ -1567,11 +1525,11 @@
     "avg_total": 165.5
    },
    {
-    "team": "N Alabama",
+    "team": "Ohio St",
     "pace": 72.5,
-    "pts": 75.5,
-    "opp_pts": 78.0,
-    "avg_total": 153.5
+    "pts": 81.0,
+    "opp_pts": 79.3,
+    "avg_total": 160.3
    },
    {
     "team": "Oakland",
@@ -1579,13 +1537,6 @@
     "pts": 69.0,
     "opp_pts": 95.0,
     "avg_total": 164.0
-   },
-   {
-    "team": "Middle Tenn",
-    "pace": 72.4,
-    "pts": 59.0,
-    "opp_pts": 78.5,
-    "avg_total": 137.5
    },
    {
     "team": "Indiana",
@@ -1609,6 +1560,13 @@
     "avg_total": 130.7
    },
    {
+    "team": "Fordham",
+    "pace": 72.4,
+    "pts": 76.5,
+    "opp_pts": 72.0,
+    "avg_total": 148.5
+   },
+   {
     "team": "Colorado",
     "pace": 72.4,
     "pts": 81.0,
@@ -1623,18 +1581,18 @@
     "avg_total": 137.8
    },
    {
+    "team": "Middle Tenn",
+    "pace": 72.3,
+    "pts": 68.7,
+    "opp_pts": 77.3,
+    "avg_total": 146.0
+   },
+   {
     "team": "Little Rock",
     "pace": 72.3,
     "pts": 73.3,
     "opp_pts": 86.3,
     "avg_total": 159.6
-   },
-   {
-    "team": "Arkansas",
-    "pace": 72.3,
-    "pts": 84.7,
-    "opp_pts": 68.3,
-    "avg_total": 153.0
    },
    {
     "team": "Colorado St",
@@ -1644,32 +1602,32 @@
     "avg_total": 153.7
    },
    {
-    "team": "Marist",
-    "pace": 72.2,
-    "pts": 70.3,
-    "opp_pts": 70.7,
-    "avg_total": 141.0
-   },
-   {
-    "team": "LIU",
-    "pace": 72.2,
-    "pts": 61.5,
-    "opp_pts": 73.8,
-    "avg_total": 135.3
-   },
-   {
-    "team": "Chicago St",
-    "pace": 72.1,
-    "pts": 68.3,
-    "opp_pts": 76.8,
-    "avg_total": 145.1
-   },
-   {
     "team": "Temple",
     "pace": 72.1,
     "pts": 67.3,
     "opp_pts": 75.3,
     "avg_total": 142.6
+   },
+   {
+    "team": "Prairie View",
+    "pace": 72.1,
+    "pts": 62.7,
+    "opp_pts": 85.0,
+    "avg_total": 147.7
+   },
+   {
+    "team": "San Diego",
+    "pace": 72.0,
+    "pts": 86.0,
+    "opp_pts": 80.0,
+    "avg_total": 166.0
+   },
+   {
+    "team": "UC Riverside",
+    "pace": 72.0,
+    "pts": 72.0,
+    "opp_pts": 67.5,
+    "avg_total": 139.5
    },
    {
     "team": "J Madison",
@@ -1679,13 +1637,6 @@
     "avg_total": 154.7
    },
    {
-    "team": "Florida",
-    "pace": 72.0,
-    "pts": 82.0,
-    "opp_pts": 65.3,
-    "avg_total": 147.3
-   },
-   {
     "team": "W Carolina",
     "pace": 72.0,
     "pts": 77.5,
@@ -1693,18 +1644,18 @@
     "avg_total": 155.0
    },
    {
-    "team": "UCF",
-    "pace": 72.0,
-    "pts": 86.3,
-    "opp_pts": 79.7,
-    "avg_total": 166.0
-   },
-   {
     "team": "Marquette",
     "pace": 72.0,
     "pts": 80.3,
     "opp_pts": 53.0,
     "avg_total": 133.3
+   },
+   {
+    "team": "LIU",
+    "pace": 72.0,
+    "pts": 60.8,
+    "opp_pts": 75.0,
+    "avg_total": 135.8
    },
    {
     "team": "N Illinois",
@@ -1728,27 +1679,6 @@
     "avg_total": 148.6
    },
    {
-    "team": "N Iowa",
-    "pace": 71.9,
-    "pts": 86.0,
-    "opp_pts": 87.0,
-    "avg_total": 173.0
-   },
-   {
-    "team": "Ohio",
-    "pace": 71.9,
-    "pts": 83.0,
-    "opp_pts": 73.5,
-    "avg_total": 156.5
-   },
-   {
-    "team": "Troy",
-    "pace": 71.9,
-    "pts": 67.3,
-    "opp_pts": 77.0,
-    "avg_total": 144.3
-   },
-   {
     "team": "Indiana St",
     "pace": 71.9,
     "pts": 70.7,
@@ -1763,11 +1693,32 @@
     "avg_total": 162.3
    },
    {
+    "team": "Bryant",
+    "pace": 71.8,
+    "pts": 60.2,
+    "opp_pts": 71.8,
+    "avg_total": 132.0
+   },
+   {
     "team": "CS Bakersfield",
     "pace": 71.8,
     "pts": 91.0,
     "opp_pts": 81.5,
     "avg_total": 172.5
+   },
+   {
+    "team": "UNLV",
+    "pace": 71.8,
+    "pts": 84.3,
+    "opp_pts": 74.7,
+    "avg_total": 159.0
+   },
+   {
+    "team": "Arkansas",
+    "pace": 71.8,
+    "pts": 83.3,
+    "opp_pts": 67.8,
+    "avg_total": 151.1
    },
    {
     "team": "Notre Dame",
@@ -1791,18 +1742,11 @@
     "avg_total": 133.5
    },
    {
-    "team": "Rutgers",
-    "pace": 71.7,
-    "pts": 91.0,
-    "opp_pts": 59.0,
-    "avg_total": 150.0
-   },
-   {
-    "team": "Maryland",
-    "pace": 71.7,
-    "pts": 85.0,
-    "opp_pts": 76.5,
-    "avg_total": 161.5
+    "team": "N Dakota St",
+    "pace": 71.6,
+    "pts": 74.0,
+    "opp_pts": 89.0,
+    "avg_total": 163.0
    },
    {
     "team": "Portland St",
@@ -1812,18 +1756,11 @@
     "avg_total": 148.5
    },
    {
-    "team": "Vanderbilt",
+    "team": "Auburn",
     "pace": 71.6,
-    "pts": 90.7,
-    "opp_pts": 59.7,
-    "avg_total": 150.4
-   },
-   {
-    "team": "Drake",
-    "pace": 71.6,
-    "pts": 75.0,
-    "opp_pts": 68.0,
-    "avg_total": 143.0
+    "pts": 78.7,
+    "opp_pts": 64.0,
+    "avg_total": 142.7
    },
    {
     "team": "Missouri",
@@ -1838,6 +1775,13 @@
     "pts": 63.0,
     "opp_pts": 73.5,
     "avg_total": 136.5
+   },
+   {
+    "team": "UConn",
+    "pace": 71.5,
+    "pts": 84.5,
+    "opp_pts": 58.0,
+    "avg_total": 142.5
    },
    {
     "team": "Kansas City",
@@ -1868,18 +1812,11 @@
     "avg_total": 144.5
    },
    {
-    "team": "Ball St",
+    "team": "Vanderbilt",
     "pace": 71.3,
-    "pts": 60.5,
-    "opp_pts": 68.0,
-    "avg_total": 128.5
-   },
-   {
-    "team": "DePaul",
-    "pace": 71.3,
-    "pts": 80.3,
-    "opp_pts": 61.7,
-    "avg_total": 142.0
+    "pts": 90.3,
+    "opp_pts": 60.3,
+    "avg_total": 150.6
    },
    {
     "team": "Louisville",
@@ -1896,6 +1833,13 @@
     "avg_total": 146.3
    },
    {
+    "team": "Ball St",
+    "pace": 71.2,
+    "pts": 62.0,
+    "opp_pts": 75.3,
+    "avg_total": 137.3
+   },
+   {
     "team": "Oregon",
     "pace": 71.2,
     "pts": 95.0,
@@ -1910,6 +1854,13 @@
     "avg_total": 154.7
    },
    {
+    "team": "Georgia",
+    "pace": 71.2,
+    "pts": 81.8,
+    "opp_pts": 70.3,
+    "avg_total": 152.1
+   },
+   {
     "team": "UMass Lowell",
     "pace": 71.2,
     "pts": 65.3,
@@ -1917,18 +1868,11 @@
     "avg_total": 130.0
    },
    {
-    "team": "UC Riverside",
+    "team": "Illinois St",
     "pace": 71.1,
-    "pts": 64.0,
-    "opp_pts": 60.0,
-    "avg_total": 124.0
-   },
-   {
-    "team": "Stanford",
-    "pace": 71.1,
-    "pts": 82.0,
-    "opp_pts": 67.0,
-    "avg_total": 149.0
+    "pts": 75.0,
+    "opp_pts": 82.7,
+    "avg_total": 157.7
    },
    {
     "team": "Gonzaga",
@@ -1936,13 +1880,6 @@
     "pts": 93.5,
     "opp_pts": 70.0,
     "avg_total": 163.5
-   },
-   {
-    "team": "Lehigh",
-    "pace": 71.0,
-    "pts": 64.3,
-    "opp_pts": 73.7,
-    "avg_total": 138.0
    },
    {
     "team": "Wake Forest",
@@ -1973,18 +1910,18 @@
     "avg_total": 147.0
    },
    {
+    "team": "SIU Edward",
+    "pace": 70.9,
+    "pts": 60.7,
+    "opp_pts": 88.0,
+    "avg_total": 148.7
+   },
+   {
     "team": "Morehead St",
     "pace": 70.7,
     "pts": 57.5,
     "opp_pts": 95.0,
     "avg_total": 152.5
-   },
-   {
-    "team": "N Dakota St",
-    "pace": 70.7,
-    "pts": 71.3,
-    "opp_pts": 91.7,
-    "avg_total": 163.0
    },
    {
     "team": "Bowling Green",
@@ -1994,11 +1931,11 @@
     "avg_total": 162.3
    },
    {
-    "team": "Idaho",
+    "team": "Miss Valley St",
     "pace": 70.6,
-    "pts": 67.0,
-    "opp_pts": 78.0,
-    "avg_total": 145.0
+    "pts": 63.0,
+    "opp_pts": 85.5,
+    "avg_total": 148.5
    },
    {
     "team": "N Texas",
@@ -2036,6 +1973,20 @@
     "avg_total": 136.0
    },
    {
+    "team": "Stanford",
+    "pace": 70.4,
+    "pts": 78.5,
+    "opp_pts": 69.3,
+    "avg_total": 147.8
+   },
+   {
+    "team": "Drake",
+    "pace": 70.4,
+    "pts": 78.0,
+    "opp_pts": 70.0,
+    "avg_total": 148.0
+   },
+   {
     "team": "Dartmouth",
     "pace": 70.4,
     "pts": 75.0,
@@ -2057,6 +2008,27 @@
     "avg_total": 135.5
    },
    {
+    "team": "Chicago St",
+    "pace": 70.3,
+    "pts": 68.0,
+    "opp_pts": 78.8,
+    "avg_total": 146.8
+   },
+   {
+    "team": "Marist",
+    "pace": 70.3,
+    "pts": 67.8,
+    "opp_pts": 69.3,
+    "avg_total": 137.1
+   },
+   {
+    "team": "F Dickinson",
+    "pace": 70.2,
+    "pts": 62.0,
+    "opp_pts": 92.3,
+    "avg_total": 154.3
+   },
+   {
     "team": "Kent St",
     "pace": 70.2,
     "pts": 74.0,
@@ -2064,11 +2036,11 @@
     "avg_total": 162.0
    },
    {
-    "team": "Yale",
+    "team": "NC Central",
     "pace": 70.1,
-    "pts": 69.3,
-    "opp_pts": 79.7,
-    "avg_total": 149.0
+    "pts": 63.5,
+    "opp_pts": 74.3,
+    "avg_total": 137.8
    },
    {
     "team": "Bellarmine",
@@ -2092,13 +2064,6 @@
     "avg_total": 161.7
    },
    {
-    "team": "Bucknell",
-    "pace": 70.1,
-    "pts": 63.3,
-    "opp_pts": 91.0,
-    "avg_total": 154.3
-   },
-   {
     "team": "Boston U",
     "pace": 70.0,
     "pts": 73.3,
@@ -2113,11 +2078,18 @@
     "avg_total": 154.0
    },
    {
-    "team": "Purdue",
+    "team": "Harvard",
     "pace": 70.0,
-    "pts": 76.0,
-    "opp_pts": 73.3,
-    "avg_total": 149.3
+    "pts": 63.5,
+    "opp_pts": 79.5,
+    "avg_total": 143.0
+   },
+   {
+    "team": "Florida",
+    "pace": 69.9,
+    "pts": 82.3,
+    "opp_pts": 62.5,
+    "avg_total": 144.8
    },
    {
     "team": "Manhattan",
@@ -2127,25 +2099,25 @@
     "avg_total": 137.3
    },
    {
+    "team": "Kentucky",
+    "pace": 69.9,
+    "pts": 80.3,
+    "opp_pts": 75.8,
+    "avg_total": 156.1
+   },
+   {
+    "team": "Troy",
+    "pace": 69.8,
+    "pts": 66.0,
+    "opp_pts": 78.0,
+    "avg_total": 144.0
+   },
+   {
     "team": "E Illinois",
     "pace": 69.8,
     "pts": 58.0,
     "opp_pts": 92.0,
     "avg_total": 150.0
-   },
-   {
-    "team": "SIU Edward",
-    "pace": 69.8,
-    "pts": 67.5,
-    "opp_pts": 87.0,
-    "avg_total": 154.5
-   },
-   {
-    "team": "G Washington",
-    "pace": 69.7,
-    "pts": 78.3,
-    "opp_pts": 50.0,
-    "avg_total": 128.3
    },
    {
     "team": "Rider",
@@ -2155,11 +2127,11 @@
     "avg_total": 137.0
    },
    {
-    "team": "Georgia",
+    "team": "DePaul",
     "pace": 69.7,
-    "pts": 83.0,
-    "opp_pts": 70.3,
-    "avg_total": 153.3
+    "pts": 77.0,
+    "opp_pts": 58.0,
+    "avg_total": 135.0
    },
    {
     "team": "Delaware St",
@@ -2169,18 +2141,25 @@
     "avg_total": 143.5
    },
    {
+    "team": "Ohio",
+    "pace": 69.7,
+    "pts": 76.0,
+    "opp_pts": 75.7,
+    "avg_total": 151.7
+   },
+   {
+    "team": "Bucknell",
+    "pace": 69.6,
+    "pts": 62.3,
+    "opp_pts": 87.5,
+    "avg_total": 149.8
+   },
+   {
     "team": "George Mason",
     "pace": 69.6,
     "pts": 75.3,
     "opp_pts": 57.7,
     "avg_total": 133.0
-   },
-   {
-    "team": "Illinois St",
-    "pace": 69.5,
-    "pts": 72.0,
-    "opp_pts": 83.0,
-    "avg_total": 155.0
    },
    {
     "team": "Wagner",
@@ -2204,11 +2183,11 @@
     "avg_total": 140.6
    },
    {
-    "team": "Illinois Chicago",
+    "team": "Lehigh",
     "pace": 69.4,
-    "pts": 80.5,
-    "opp_pts": 64.0,
-    "avg_total": 144.5
+    "pts": 64.5,
+    "opp_pts": 70.3,
+    "avg_total": 134.8
    },
    {
     "team": "S Alabama",
@@ -2239,6 +2218,13 @@
     "avg_total": 137.3
    },
    {
+    "team": "Illinois Chicago",
+    "pace": 69.2,
+    "pts": 74.0,
+    "opp_pts": 70.7,
+    "avg_total": 144.7
+   },
+   {
     "team": "McNeese",
     "pace": 69.2,
     "pts": 83.0,
@@ -2251,13 +2237,6 @@
     "pts": 75.0,
     "opp_pts": 61.0,
     "avg_total": 136.0
-   },
-   {
-    "team": "Georgetown",
-    "pace": 69.1,
-    "pts": 83.0,
-    "opp_pts": 70.0,
-    "avg_total": 153.0
    },
    {
     "team": "Presbyterian",
@@ -2274,18 +2253,25 @@
     "avg_total": 138.5
    },
    {
-    "team": "Auburn",
+    "team": "Iona",
     "pace": 69.1,
-    "pts": 83.5,
-    "opp_pts": 56.0,
-    "avg_total": 139.5
+    "pts": 64.8,
+    "opp_pts": 69.6,
+    "avg_total": 134.4
    },
    {
-    "team": "Oklahoma",
-    "pace": 69.0,
-    "pts": 76.3,
-    "opp_pts": 65.7,
-    "avg_total": 142.0
+    "team": "Texas A&M-CC",
+    "pace": 69.1,
+    "pts": 60.7,
+    "opp_pts": 70.3,
+    "avg_total": 131.0
+   },
+   {
+    "team": "Seton Hall",
+    "pace": 69.1,
+    "pts": 69.3,
+    "opp_pts": 61.5,
+    "avg_total": 130.8
    },
    {
     "team": "Drexel",
@@ -2302,6 +2288,13 @@
     "avg_total": 160.0
    },
    {
+    "team": "Yale",
+    "pace": 69.0,
+    "pts": 70.3,
+    "opp_pts": 80.8,
+    "avg_total": 151.1
+   },
+   {
     "team": "Delaware",
     "pace": 69.0,
     "pts": 62.5,
@@ -2314,20 +2307,6 @@
     "pts": 72.0,
     "opp_pts": 79.0,
     "avg_total": 151.0
-   },
-   {
-    "team": "Clemson",
-    "pace": 68.9,
-    "pts": 86.3,
-    "opp_pts": 74.0,
-    "avg_total": 160.3
-   },
-   {
-    "team": "Liberty",
-    "pace": 68.9,
-    "pts": 57.0,
-    "opp_pts": 72.0,
-    "avg_total": 129.0
    },
    {
     "team": "Coppin St",
@@ -2358,6 +2337,13 @@
     "avg_total": 149.7
    },
    {
+    "team": "Purdue",
+    "pace": 68.8,
+    "pts": 77.0,
+    "opp_pts": 70.5,
+    "avg_total": 147.5
+   },
+   {
     "team": "Albany",
     "pace": 68.7,
     "pts": 69.3,
@@ -2372,32 +2358,11 @@
     "avg_total": 135.0
    },
    {
-    "team": "NC State",
-    "pace": 68.7,
-    "pts": 84.7,
-    "opp_pts": 62.3,
-    "avg_total": 147.0
-   },
-   {
     "team": "Stonehill",
     "pace": 68.7,
     "pts": 59.0,
     "opp_pts": 79.0,
     "avg_total": 138.0
-   },
-   {
-    "team": "Miss Valley St",
-    "pace": 68.7,
-    "pts": 62.3,
-    "opp_pts": 87.0,
-    "avg_total": 149.3
-   },
-   {
-    "team": "Iona",
-    "pace": 68.6,
-    "pts": 66.3,
-    "opp_pts": 71.5,
-    "avg_total": 137.8
    },
    {
     "team": "UTEP",
@@ -2428,6 +2393,13 @@
     "avg_total": 148.6
    },
    {
+    "team": "Elon",
+    "pace": 68.5,
+    "pts": 69.5,
+    "opp_pts": 70.5,
+    "avg_total": 140.0
+   },
+   {
     "team": "Jacksonville",
     "pace": 68.4,
     "pts": 68.0,
@@ -2456,6 +2428,13 @@
     "avg_total": 136.0
    },
    {
+    "team": "G Washington",
+    "pace": 68.3,
+    "pts": 80.0,
+    "opp_pts": 51.8,
+    "avg_total": 131.8
+   },
+   {
     "team": "Robert Morris",
     "pace": 68.3,
     "pts": 52.7,
@@ -2463,11 +2442,11 @@
     "avg_total": 133.0
    },
    {
-    "team": "Elon",
+    "team": "Rutgers",
     "pace": 68.2,
-    "pts": 69.3,
-    "opp_pts": 68.3,
-    "avg_total": 137.6
+    "pts": 84.7,
+    "opp_pts": 56.3,
+    "avg_total": 141.0
    },
    {
     "team": "Quinnipiac",
@@ -2477,13 +2456,6 @@
     "avg_total": 144.0
    },
    {
-    "team": "Charlotte",
-    "pace": 68.2,
-    "pts": 72.3,
-    "opp_pts": 68.3,
-    "avg_total": 140.6
-   },
-   {
     "team": "Utah",
     "pace": 68.1,
     "pts": 72.7,
@@ -2491,11 +2463,11 @@
     "avg_total": 134.0
    },
    {
-    "team": "N Arizona",
+    "team": "Arizona St",
     "pace": 68.0,
-    "pts": 67.0,
-    "opp_pts": 91.0,
-    "avg_total": 158.0
+    "pts": 85.5,
+    "opp_pts": 63.3,
+    "avg_total": 148.8
    },
    {
     "team": "Louisiana",
@@ -2512,11 +2484,32 @@
     "avg_total": 134.3
    },
    {
+    "team": "Georgetown",
+    "pace": 67.8,
+    "pts": 83.5,
+    "opp_pts": 72.0,
+    "avg_total": 155.5
+   },
+   {
     "team": "Duquesne",
     "pace": 67.8,
     "pts": 75.0,
     "opp_pts": 71.0,
     "avg_total": 146.0
+   },
+   {
+    "team": "Columbia",
+    "pace": 67.7,
+    "pts": 74.3,
+    "opp_pts": 66.0,
+    "avg_total": 140.3
+   },
+   {
+    "team": "Clemson",
+    "pace": 67.7,
+    "pts": 84.3,
+    "opp_pts": 76.8,
+    "avg_total": 161.1
    },
    {
     "team": "NC Greensboro",
@@ -2540,11 +2533,32 @@
     "avg_total": 126.0
    },
    {
-    "team": "Columbia",
+    "team": "NC State",
+    "pace": 67.5,
+    "pts": 83.8,
+    "opp_pts": 62.3,
+    "avg_total": 146.1
+   },
+   {
+    "team": "Hofstra",
+    "pace": 67.4,
+    "pts": 61.0,
+    "opp_pts": 68.0,
+    "avg_total": 129.0
+   },
+   {
+    "team": "Texas St",
     "pace": 67.3,
-    "pts": 73.0,
-    "opp_pts": 69.5,
-    "avg_total": 142.5
+    "pts": 74.7,
+    "opp_pts": 61.7,
+    "avg_total": 136.4
+   },
+   {
+    "team": "Oklahoma",
+    "pace": 67.3,
+    "pts": 75.8,
+    "opp_pts": 63.8,
+    "avg_total": 139.6
    },
    {
     "team": "New Mexico St",
@@ -2554,11 +2568,11 @@
     "avg_total": 147.5
    },
    {
-    "team": "Cleveland St",
-    "pace": 66.9,
-    "pts": 64.5,
-    "opp_pts": 103.0,
-    "avg_total": 167.5
+    "team": "Charlotte",
+    "pace": 67.0,
+    "pts": 69.3,
+    "opp_pts": 67.8,
+    "avg_total": 137.1
    },
    {
     "team": "SF Austin",
@@ -2568,11 +2582,11 @@
     "avg_total": 147.0
    },
    {
-    "team": "Arizona St",
+    "team": "Cleveland St",
     "pace": 66.7,
-    "pts": 83.3,
-    "opp_pts": 63.7,
-    "avg_total": 147.0
+    "pts": 66.0,
+    "opp_pts": 91.0,
+    "avg_total": 157.0
    },
    {
     "team": "South Carolina",
@@ -2610,11 +2624,11 @@
     "avg_total": 143.5
    },
    {
-    "team": "Seton Hall",
-    "pace": 66.3,
-    "pts": 67.0,
-    "opp_pts": 54.7,
-    "avg_total": 121.7
+    "team": "N Arizona",
+    "pace": 66.2,
+    "pts": 69.5,
+    "opp_pts": 87.8,
+    "avg_total": 157.3
    },
    {
     "team": "W Michigan",
@@ -2638,25 +2652,18 @@
     "avg_total": 110.7
    },
    {
-    "team": "Texas A&M-CC",
-    "pace": 65.5,
-    "pts": 61.0,
-    "opp_pts": 63.5,
-    "avg_total": 124.5
-   },
-   {
-    "team": "Hofstra",
-    "pace": 65.5,
-    "pts": 60.5,
-    "opp_pts": 72.5,
-    "avg_total": 133.0
-   },
-   {
     "team": "Campbell",
     "pace": 65.5,
     "pts": 62.7,
     "opp_pts": 79.3,
     "avg_total": 142.0
+   },
+   {
+    "team": "Liberty",
+    "pace": 65.4,
+    "pts": 65.5,
+    "opp_pts": 69.0,
+    "avg_total": 134.5
    },
    {
     "team": "Washington St",
@@ -2681,17 +2688,10 @@
    },
    {
     "team": "Northwestern",
-    "pace": 64.6,
-    "pts": 78.7,
-    "opp_pts": 60.0,
-    "avg_total": 138.7
-   },
-   {
-    "team": "Merrimack",
-    "pace": 64.6,
-    "pts": 61.0,
-    "opp_pts": 64.7,
-    "avg_total": 125.7
+    "pace": 64.7,
+    "pts": 70.8,
+    "opp_pts": 61.8,
+    "avg_total": 132.6
    },
    {
     "team": "Vermont",
@@ -2706,6 +2706,13 @@
     "pts": 71.3,
     "opp_pts": 57.0,
     "avg_total": 128.3
+   },
+   {
+    "team": "Merrimack",
+    "pace": 64.3,
+    "pts": 59.3,
+    "opp_pts": 69.3,
+    "avg_total": 128.6
    },
    {
     "team": "UT Rio Grande",
@@ -2743,13 +2750,6 @@
     "avg_total": 111.3
    },
    {
-    "team": "Texas St",
-    "pace": 62.7,
-    "pts": 69.5,
-    "opp_pts": 60.0,
-    "avg_total": 129.5
-   },
-   {
     "team": "E Tennessee St",
     "pace": 62.6,
     "pts": 65.3,
@@ -2758,10 +2758,10 @@
    },
    {
     "team": "App State",
-    "pace": 60.4,
-    "pts": 58.0,
-    "opp_pts": 62.0,
-    "avg_total": 120.0
+    "pace": 61.4,
+    "pts": 60.7,
+    "opp_pts": 61.3,
+    "avg_total": 122.0
    }
   ],
   "NFL": [
@@ -2885,18 +2885,18 @@
     "avg_total": 50.1
    },
    {
-    "team": "Las Vegas",
-    "pace": 61.9,
-    "pts": 26.4,
-    "opp_pts": 29.8,
-    "avg_total": 56.2
-   },
-   {
     "team": "New England",
     "pace": 61.9,
     "pts": 23.4,
     "opp_pts": 23.0,
     "avg_total": 46.4
+   },
+   {
+    "team": "Las Vegas",
+    "pace": 61.9,
+    "pts": 26.4,
+    "opp_pts": 29.8,
+    "avg_total": 56.2
    },
    {
     "team": "Cleveland",
@@ -2941,18 +2941,18 @@
     "avg_total": 47.2
    },
    {
-    "team": "Atlanta",
-    "pace": 58.9,
-    "pts": 20.9,
-    "opp_pts": 24.8,
-    "avg_total": 45.7
-   },
-   {
     "team": "NY Jets",
     "pace": 58.9,
     "pts": 20.2,
     "opp_pts": 24.8,
     "avg_total": 45.0
+   },
+   {
+    "team": "Atlanta",
+    "pace": 58.9,
+    "pts": 20.9,
+    "opp_pts": 24.8,
+    "avg_total": 45.7
    },
    {
     "team": "Jacksonville",
@@ -3097,13 +3097,6 @@
     "avg_total": 59.8
    },
    {
-    "team": "Memphis",
-    "pace": 72.8,
-    "pts": 36.6,
-    "opp_pts": 23.9,
-    "avg_total": 60.5
-   },
-   {
     "team": "Buffalo",
     "pace": 72.5,
     "pts": 23.9,
@@ -3139,6 +3132,13 @@
     "avg_total": 54.0
    },
    {
+    "team": "Memphis",
+    "pace": 72.3,
+    "pts": 38.3,
+    "opp_pts": 25.8,
+    "avg_total": 64.1
+   },
+   {
     "team": "N Texas",
     "pace": 72.3,
     "pts": 42.4,
@@ -3161,10 +3161,10 @@
    },
    {
     "team": "Pittsburgh",
-    "pace": 71.9,
-    "pts": 28.5,
-    "opp_pts": 22.3,
-    "avg_total": 50.8
+    "pace": 72.0,
+    "pts": 26.4,
+    "opp_pts": 21.6,
+    "avg_total": 48.0
    },
    {
     "team": "SMU",
@@ -3349,13 +3349,6 @@
     "avg_total": 45.4
    },
    {
-    "team": "Florida St",
-    "pace": 69.8,
-    "pts": 30.3,
-    "opp_pts": 31.0,
-    "avg_total": 61.3
-   },
-   {
     "team": "Tennessee",
     "pace": 69.6,
     "pts": 29.5,
@@ -3454,11 +3447,11 @@
     "avg_total": 59.4
    },
    {
-    "team": "Louisiana",
-    "pace": 68.5,
-    "pts": 28.9,
-    "opp_pts": 23.6,
-    "avg_total": 52.5
+    "team": "Florida St",
+    "pace": 68.6,
+    "pts": 28.7,
+    "opp_pts": 28.7,
+    "avg_total": 57.4
    },
    {
     "team": "Oklahoma",
@@ -3475,6 +3468,13 @@
     "avg_total": 48.2
    },
    {
+    "team": "UNLV",
+    "pace": 68.1,
+    "pts": 26.1,
+    "opp_pts": 25.7,
+    "avg_total": 51.8
+   },
+   {
     "team": "UCF",
     "pace": 68.0,
     "pts": 24.8,
@@ -3482,11 +3482,11 @@
     "avg_total": 53.3
    },
    {
-    "team": "UNLV",
+    "team": "UL Monroe",
     "pace": 68.0,
-    "pts": 26.1,
-    "opp_pts": 25.7,
-    "avg_total": 51.8
+    "pts": 18.6,
+    "opp_pts": 35.2,
+    "avg_total": 53.8
    },
    {
     "team": "Oregon",
@@ -3615,13 +3615,6 @@
     "avg_total": 59.7
    },
    {
-    "team": "UL Monroe",
-    "pace": 66.5,
-    "pts": 18.3,
-    "opp_pts": 34.4,
-    "avg_total": 52.7
-   },
-   {
     "team": "Middle Tenn",
     "pace": 66.4,
     "pts": 25.5,
@@ -3648,6 +3641,13 @@
     "pts": 18.9,
     "opp_pts": 29.2,
     "avg_total": 48.1
+   },
+   {
+    "team": "Louisiana",
+    "pace": 66.0,
+    "pts": 30.3,
+    "opp_pts": 23.3,
+    "avg_total": 53.6
    },
    {
     "team": "Akron",
@@ -3727,6 +3727,13 @@
     "avg_total": 50.3
    },
    {
+    "team": "S Florida",
+    "pace": 64.3,
+    "pts": 23.9,
+    "opp_pts": 19.0,
+    "avg_total": 42.9
+   },
+   {
     "team": "Alabama",
     "pace": 64.3,
     "pts": 37.4,
@@ -3783,18 +3790,18 @@
     "avg_total": 52.1
    },
    {
-    "team": "Nevada",
-    "pace": 63.8,
-    "pts": 22.5,
-    "opp_pts": 24.0,
-    "avg_total": 46.5
-   },
-   {
     "team": "New Mexico St",
     "pace": 63.8,
     "pts": 16.9,
     "opp_pts": 27.3,
     "avg_total": 44.2
+   },
+   {
+    "team": "Nevada",
+    "pace": 63.8,
+    "pts": 22.5,
+    "opp_pts": 24.0,
+    "avg_total": 46.5
    },
    {
     "team": "Missouri St",
@@ -3935,13 +3942,6 @@
     "pts": 20.0,
     "opp_pts": 29.9,
     "avg_total": 49.9
-   },
-   {
-    "team": "S Florida",
-    "pace": 60.3,
-    "pts": 21.8,
-    "opp_pts": 14.9,
-    "avg_total": 36.7
    },
    {
     "team": "Wisconsin",
