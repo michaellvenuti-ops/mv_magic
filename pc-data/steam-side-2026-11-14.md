@@ -22,3 +22,8 @@ NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — FanDuel still dealing spre
 NEW FLAG: FBS Kansas @ West Virginia | 2026-11-14 — Kalshi still dealing spread -2.5 on Kansas (pre-move median -2.5, now -1.5)
 ## 2026-11-14T14:16:48-05:00 — 67 games, 0 steam events, 0 NEW flags, 22 started games skipped
 ## 2026-11-14T15:02:32-05:00 — 67 games, 0 steam events, 0 NEW flags, 24 started games skipped
+## 2026-11-14T16:09:09-05:00 — 67 games, 4 steam events, 4 NEW flags, 32 started games skipped
+NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — DraftKings still dealing spread -3.5 on Florida International (pre-move median -3.5, now 1.5)
+NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — FanDuel still dealing spread -3.5 on Florida International (pre-move median -3.5, now 1.5)
+NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — Kalshi still dealing total 53.5 on Under (pre-move median 53.5, now 49.5)
+NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — Caesars still dealing spread 7.5 on Western Kentucky (pre-move median 7.5, now 6.0)
