@@ -13,3 +13,8 @@
 - 2026-11-14: James Madison Dukes @ UConn Huskies — first: UConn Huskies (FG, 5:39 in); lead changes 4; final 22-46
 - 2026-11-14: Georgia Tech Yellow Jackets @ Clemson Tigers — first: Georgia Tech Yellow Jackets (TD, 9:26 in); lead changes 0; final 20-6
 - 2026-11-14: Nebraska Cornhuskers @ Rutgers Scarlet Knights — first: Nebraska Cornhuskers (TD, 14:40 in); lead changes 0; final 31-0
+## 2026-11-14T17:06:40-05:00 -- NCAAF FIRST SCORE (PC): 4 new final(s) tallied; season 709 games through 2026-11-14
+- 2026-11-14: Kansas State Wildcats @ TCU Horned Frogs — first: TCU Horned Frogs (TD, 6:42 in); lead changes 0; final 10-20
+- 2026-11-14: East Carolina Pirates @ Charlotte 49ers — first: Charlotte 49ers (FG, 11:42 in); lead changes 3; final 17-16
+- 2026-11-14: UAB Blazers @ Temple Owls — first: Temple Owls (TD, 10:35 in); lead changes 1; final 36-10
+- 2026-11-14: Arkansas State Red Wolves @ Coastal Carolina Chanticleers — first: Coastal Carolina Chanticleers (TD, 9:11 in); lead changes 2; final 21-28
