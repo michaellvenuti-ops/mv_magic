@@ -4508,7 +4508,8 @@
    "alert_expires_at": "2026-11-14T13:55:02",
    "alert_detail": "4:11 - 2nd Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401862825": {
    "sport": "CFB",
@@ -4534,7 +4535,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Temple",
-   "dog_team": "UAB"
+   "dog_team": "UAB",
+   "final": true
   },
   "401869937": {
    "sport": "CFB",
@@ -4544,7 +4546,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Coastal",
-   "dog_team": "Arkansas St"
+   "dog_team": "Arkansas St",
+   "final": true
   },
   "401856862": {
    "sport": "CFB",
@@ -4791,10 +4794,10 @@
    "matchup": "App State at Marshall",
    "date": "2026-11-14",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
-   "fav_team": "App State",
-   "dog_team": "Marshall"
+   "fav_team": "Marshall",
+   "dog_team": "App State"
   },
   "401856884": {
    "sport": "CFB",
@@ -4862,7 +4865,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "LSU",
    "dog_team": "Texas"
   },
@@ -5218,7 +5221,8 @@
    "fav": "away",
    "spread": 11.5,
    "fav_team": "NC A&T",
-   "dog_team": "Hampton"
+   "dog_team": "Hampton",
+   "final": true
   },
   "401866691": {
    "sport": "CFB",
@@ -5228,7 +5232,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Stony Brook",
-   "dog_team": "New Hampshire"
+   "dog_team": "New Hampshire",
+   "final": true
   },
   "401867833": {
    "sport": "CFB",
@@ -5255,7 +5260,8 @@
    "alert_expires_at": "2026-11-14T14:29:02",
    "alert_detail": "0:53 - 2nd Quarter",
    "alert_fav_score": 17,
-   "alert_dog_score": 24
+   "alert_dog_score": 24,
+   "final": true
   },
   "401867863": {
    "sport": "CFB",
@@ -5265,7 +5271,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "Indiana St",
-   "dog_team": "Murray St"
+   "dog_team": "Murray St",
+   "final": true
   },
   "401867958": {
    "sport": "CFB",
@@ -5275,7 +5282,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Delaware St",
-   "dog_team": "Howard"
+   "dog_team": "Howard",
+   "final": true
   },
   "401867997": {
    "sport": "CFB",
@@ -5285,7 +5293,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "William & Mary",
-   "dog_team": "Bucknell"
+   "dog_team": "Bucknell",
+   "final": true
   },
   "401868006": {
    "sport": "CFB",
@@ -5328,7 +5337,8 @@
    "fav": "away",
    "spread": 3.0,
    "fav_team": "Chattanooga",
-   "dog_team": "Furman"
+   "dog_team": "Furman",
+   "final": true
   },
   "401868946": {
    "sport": "CFB",
@@ -5338,13 +5348,15 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Grambling",
-   "dog_team": "Bethune"
+   "dog_team": "Bethune",
+   "final": true
   },
   "401915931": {
    "sport": "CFB",
    "matchup": "VA Lynchburg at Chicago St",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401867981": {
    "sport": "CFB",
@@ -9347,13 +9359,15 @@
    "fav": "home",
    "spread": 38.5,
    "fav_team": "Texas Tech",
-   "dog_team": "Stonehill"
+   "dog_team": "Stonehill",
+   "final": true
   },
   "401923261": {
    "sport": "NCAAB",
    "matchup": "Coastal GA at FAU",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401922230": {
    "sport": "NCAAB",
@@ -9363,7 +9377,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Queens",
-   "dog_team": "Wofford"
+   "dog_team": "Wofford",
+   "final": true
   },
   "401922220": {
    "sport": "NCAAB",
@@ -9373,13 +9388,15 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "North Florida",
-   "dog_team": "The Citadel"
+   "dog_team": "The Citadel",
+   "final": true
   },
   "401921155": {
    "sport": "NCAAB",
    "matchup": "Cheyney (PA) at NC A&T",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921096": {
    "sport": "NCAAB",
@@ -9389,7 +9406,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "SF Austin",
-   "dog_team": "Rice"
+   "dog_team": "Rice",
+   "final": true
   },
   "401920915": {
    "sport": "NCAAB",
@@ -9399,7 +9417,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "N Illinois",
-   "dog_team": "Bellarmine"
+   "dog_team": "Bellarmine",
+   "final": true
   },
   "401918993": {
    "sport": "NCAAB",
@@ -9410,7 +9429,8 @@
    "spread": 25.5,
    "fav_team": "South Florida",
    "dog_team": "Coppin St",
-   "live_ml": -2500
+   "live_ml": -2500,
+   "final": true
   },
   "401911392": {
    "sport": "NCAAB",
@@ -9420,7 +9440,8 @@
    "fav": "home",
    "spread": 26.5,
    "fav_team": "South Carolina",
-   "dog_team": "Gardner-Webb"
+   "dog_team": "Gardner-Webb",
+   "final": true
   },
   "401911015": {
    "sport": "NCAAB",
@@ -9430,13 +9451,15 @@
    "fav": "away",
    "spread": 9.5,
    "fav_team": "Miami OH",
-   "dog_team": "Evansville"
+   "dog_team": "Evansville",
+   "final": true
   },
   "401922054": {
    "sport": "NCAAB",
    "matchup": "Shenandoah at Radford",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921038": {
    "sport": "NCAAB",
@@ -9528,11 +9551,20 @@
    "sport": "NCAAB",
    "matchup": "UNC Asheville at Georgia Tech",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 17.5,
    "fav_team": "Georgia Tech",
-   "dog_team": "UNC Asheville"
+   "dog_team": "UNC Asheville",
+   "live_ml": -195,
+   "alerted_at": "2026-11-14T16:38:03",
+   "board_read_at": "2026-11-14T16:38:02",
+   "alert_expires_at": "2026-11-14T16:41:03",
+   "alert_detail": "4:15 - 1st Half",
+   "alert_fav_score": 19,
+   "alert_dog_score": 26,
+   "alert_ml": -195,
+   "ml_read_at": "2026-11-14T16:38:03"
   },
   "401918979": {
    "sport": "NCAAB",
@@ -9552,7 +9584,8 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "St Bonaventure",
-   "dog_team": "Lafayette"
+   "dog_team": "Lafayette",
+   "live_ml": -750
   },
   "401909728": {
    "sport": "NCAAB",
@@ -9900,7 +9933,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 10.5,
    "fav_team": "Nevada",
    "dog_team": "Utah Valley"
   },
@@ -9948,7 +9981,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Pistons",
    "dog_team": "Heat"
   },
