@@ -7996,3 +7996,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 12:10:12 ET] dh_positive_ev.py: FAILED (exit 2) in 81s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-14.txt. No prices inven
 [2026-11-14 12:11:08 ET] wong_teasers.py: OK in 57s — wong-teasers: 3 legs, 3 pairs, 0 triples banked.
 [2026-11-14 12:11:08 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 12:25:55 ET] sync_to_github.py: FAILED (exit 1) in 886s —   FAILED: pc-data/correlated-parlay-2026-11-10.md (HTTP 409: {'error': '{"message":"is at d64146c5565d69b9e4905711bc5e6836ad8d2add but expected 01b80063a1753bb1
+[2026-11-14 12:27:36 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 234 events (182 with odds), db total 276497 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 12:27:37 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF 7 Alabama Vanderbilt Today 12:45 PM — Spread — Alabama -15.5 theScore +110 ($87) / Vanderbilt +19.5 Bally Bet -162 ($113) — both win 16, 17, 18
+[2026-11-14 12:27:37 ET] syncing to GitHub (wide-builds banked new builds)
