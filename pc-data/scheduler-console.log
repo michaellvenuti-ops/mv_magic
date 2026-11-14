@@ -7882,3 +7882,27 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 08:47:24 ET] nhl_totals_scan.py: OK in 6s — NHL TOTALS FLAG UNDER: MIN @ BOS — predicted 4.73 vs book 6.5 (-135)
 [2026-11-14 08:47:29 ET] total_projectors_scan.py: OK in 5s — }
 [2026-11-14 08:47:34 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 5, 'NCAAB': 61}, new 0, moved 0, baselines 66.
+[2026-11-14 09:02:12 ET] sync_to_github.py: FAILED (exit 1) in 878s —   FAILED: pc-data/spread-cover-state.json (HTTP 409: {'error': '{"message":"is at 9fa12c6506200348121ac7eda1abf796e23e1331 but expected 5913448ae59bd11f60c5c1ca
+[2026-11-14 09:03:49 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 216 events (130 with odds), db total 274931 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 09:07:23 ET] dh_arbitrage.py: OK in 214s — ARBITRAGE: NCAAB S. Carolina UpState Campbell Today 4:30 PM / table / Alt Total Over 137.5 / Alt Total Under 137.5 / table | DraftKings | Bet365
+[2026-11-14 09:09:09 ET] dh_kalshi_poly_arb.py: OK in 105s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 09:09:11 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB S. Carolina UpState Campbell Today 4:30 PM — Total — Over 137.5 DraftKings -180 ($123) / Under 142.5 Bet365 +150 ($77) — both win 138, 139, 140
+[2026-11-14 09:10:28 ET] dh_low_holds.py: OK in 77s — LOW-HOLDS: NHL BUF Sabres DAL Stars Today 8:00 PM / table / Points T. Seguin Under 0.5 / Points T. Seguin 1+ / table | BetMGM | Bet365
+[2026-11-14 09:12:44 ET] dh_game_middles.py: OK in 136s — GAME MIDDLE: NCAAF 20 South Carolina Arkansas Today 7:45 PM / table / Alt Spread Arkansas +12 / Alt Spread South Carolina -11.5 / table | BetRivers | theScore —
+[2026-11-14 09:14:03 ET] hung_number.py: OK in 79s — HUNG NUMBER: Wisconsin vs Maryland — bet365 spread value favorite (-9.5 vs median -8.5)
+[2026-11-14 09:14:09 ET] rlm.py: OK in 6s
+[2026-11-14 09:14:13 ET] leader_follower.py: OK in 4s — LEADER ALERT: Caesars reached 3 leads in 14 days. Honesty note: board display timing is not proof of who truly moved first.
+[2026-11-14 09:14:16 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 09:16:30 ET] dh_prop_middles.py: OK in 134s — PROP MIDDLE CLEAN : NCAAF Prairie View A&M Arkansas-Pine Bluff Today 3:00 PM / table / Spread Prairie View A&M +1.5 / Moneyline Arkansas-Pine Bluff / table | Fl
+[2026-11-14 09:18:23 ET] dh_sog_middles.py: OK in 113s — - 0 deliverables this run
+[2026-11-14 09:18:27 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 09:18:29 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 09:18:30 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 09:18:31 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 09:18:33 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 09:18:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 09:18:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 09:18:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 09:18:43 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-14.json (5 markets).
+[2026-11-14 09:19:31 ET] yahoo_brief.py: OK in 48s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-14 09:19:32 ET] half_percent.py: OK in 1s — half-percent: weekend — no run.
