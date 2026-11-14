@@ -7797,3 +7797,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 05:32:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-14 05:34:15 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 215 events (129 with odds), db total 272993 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-14 05:36:11 ET] dh_game_middles.py: OK in 116s — GAME MIDDLE: NCAAF Minnesota Penn St. Today 7:00 PM / table / Alt Spread Minnesota +16.5 / Alt Spread Penn St. -15.5 / table | BetRivers | FanDuel — window 313.
+[2026-11-14 05:50:17 ET] sync_to_github.py: OK in 846s —   ok: wide-builds-board-pc.html
+[2026-11-14 05:50:52 ET] notify.py: OK in 34s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 05:52:39 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 215 events (129 with odds), db total 273208 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 05:59:26 ET] dh_key_number_middles.py: FAILED (exit 2) in 407s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-14 06:04:14 ET] dh_basketball_key_middles.py: OK in 288s — basketball-key-middles: no new basketball middles.
