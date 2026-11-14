@@ -8090,3 +8090,9 @@
 [2026-11-14 17:06:41 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 17:06:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-14 17:06:42 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 17:22:02 ET] sync_to_github.py: FAILED (exit 1) in 920s —   FAILED: pc-data/costco-gold/costco-gold-2026-11-09.json (HTTP 409: {'error': '{"message":"is at 4b8f4694a2087b013fb3f6d70a95f537f495fe1c but expected 586576ac
+[2026-11-14 17:23:37 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 234 events (88 with odds), db total 278837 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 17:24:20 ET] dh_arbitrage.py: OK in 43s — ARBITRAGE: NHL CGY Flames LA Kings Today 10:00 PM / table / Shots A. Laferriere Under 3.5 / Shots A. Laferriere 4+ / table | Bally Bet | Bet365
+[2026-11-14 17:24:39 ET] dh_kalshi_poly_arb.py: OK in 19s — KALSHI-POLY-ARB: NFL CAR Panthers NO Saints Nov-15 1:00 PM / table bar_chart / Rush Yards A. Estime Over 39.5 NO / Alt Rush Yards A. Estime 40+ / table | Kalshi
+[2026-11-14 17:24:41 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA DEN Nuggets NO Pelicans Today 7:15 PM — Total — Over 235.5 theScore +100 ($92) / Under 239.5 Fanatics-NJ -145 ($108) — both win 236, 237, 238, 23
+[2026-11-14 17:24:41 ET] syncing to GitHub (wide-builds banked new builds)
