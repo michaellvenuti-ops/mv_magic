@@ -22,3 +22,10 @@
 - 2026-11-14: Marshall Thundering Herd @ Youngstown State Penguins — first: Marshall Thundering Herd (2PT, 0:37 in); lead changes 5; final 71-74
 - 2026-11-14: George Mason Patriots @ Bradley Braves — first: George Mason Patriots (3PT, 1:07 in); lead changes 5; final 61-62
 - 2026-11-14: Loyola Chicago Ramblers @ Colorado State Rams — first: Loyola Chicago Ramblers (2PT, 0:57 in); lead changes 2; final 73-58
+## 2026-11-14T17:06:38-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 580 games through 2026-11-14
+- 2026-11-14: Jackson State Tigers @ Winthrop Eagles — first: Jackson State Tigers (2PT, 0:23 in); lead changes 10; final 76-72
+- 2026-11-14: Wofford Terriers @ Queens University Royals — first: Wofford Terriers (2PT, 2:01 in); lead changes 9; final 92-97
+- 2026-11-14: The Citadel Bulldogs @ North Florida Ospreys — first: North Florida Ospreys (2PT, 1:05 in); lead changes 7; final 77-74
+- 2026-11-14: Rice Owls @ Stephen F. Austin Lumberjacks — first: Rice Owls (3PT, 0:13 in); lead changes 8; final 81-78
+- 2026-11-14: Shenandoah Hornets @ Radford Highlanders — first: Radford Highlanders (2PT, 0:16 in); lead changes 0; final 63-102
+- 2026-11-14: Wyoming Cowboys @ Denver Pioneers — first: Denver Pioneers (2PT, 0:47 in); lead changes 9; final 76-53
