@@ -9746,18 +9746,18 @@
    "winner": "Alabama Crimson Tide"
   },
   {
-   "date": "2026-11-14",
    "away": "Arkansas State Red Wolves",
-   "home": "Coastal Carolina Chanticleers",
+   "date": "2026-11-14",
+   "final": "21-28",
    "first": "Coastal Carolina Chanticleers",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 551,
-   "winner": "Coastal Carolina Chanticleers",
-   "seq": "0-7>7-7>14-7>14-14>14-21>14-28>21-28",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Coastal Carolina Chanticleers",
    "lead_changes": 2,
+   "seq": "0-7>7-7>14-7>14-14>14-21>14-28>21-28",
    "ties": 2,
-   "final": "21-28"
+   "winner": "Coastal Carolina Chanticleers"
   },
   {
    "away": "Cincinnati Bearcats",
@@ -9788,18 +9788,32 @@
    "winner": "Miami Hurricanes"
   },
   {
-   "date": "2026-11-14",
    "away": "East Carolina Pirates",
-   "home": "Charlotte 49ers",
+   "date": "2026-11-14",
+   "final": "17-16",
    "first": "Charlotte 49ers",
-   "first_side": "home",
-   "first_kind": "FG",
    "first_elapsed_sec": 702,
-   "winner": "East Carolina Pirates",
-   "seq": "0-3>7-3>7-10>7-13>7-16>14-16>17-16",
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "Charlotte 49ers",
    "lead_changes": 3,
+   "seq": "0-3>7-3>7-10>7-13>7-16>14-16>17-16",
    "ties": 0,
-   "final": "17-16"
+   "winner": "East Carolina Pirates"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Florida International Panthers",
+   "home": "Delaware Blue Hens",
+   "first": "Delaware Blue Hens",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 352,
+   "winner": "Delaware Blue Hens",
+   "seq": "0-7>7-7>7-10>10-10>10-17>16-17>16-24",
+   "lead_changes": 0,
+   "ties": 2,
+   "final": "16-24"
   },
   {
    "away": "Georgia Tech Yellow Jackets",
@@ -9830,18 +9844,32 @@
    "winner": "UConn Huskies"
   },
   {
-   "date": "2026-11-14",
    "away": "Kansas State Wildcats",
-   "home": "TCU Horned Frogs",
+   "date": "2026-11-14",
+   "final": "10-20",
    "first": "TCU Horned Frogs",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 402,
-   "winner": "TCU Horned Frogs",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "TCU Horned Frogs",
+   "lead_changes": 0,
    "seq": "0-7>0-10>0-17>3-17>10-17>10-20",
+   "ties": 0,
+   "winner": "TCU Horned Frogs"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Kennesaw State Owls",
+   "home": "Sam Houston Bearkats",
+   "first": "Kennesaw State Owls",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 270,
+   "winner": "Kennesaw State Owls",
+   "seq": "3-0>10-0>10-7>17-7>20-7>26-7",
    "lead_changes": 0,
    "ties": 0,
-   "final": "10-20"
+   "final": "26-7"
   },
   {
    "away": "Nebraska Cornhuskers",
@@ -9887,17 +9915,31 @@
   },
   {
    "date": "2026-11-14",
+   "away": "Tennessee Volunteers",
+   "home": "Texas A&M Aggies",
+   "first": "Tennessee Volunteers",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 568,
+   "winner": "Tennessee Volunteers",
+   "seq": "3-0>3-7>6-7>9-7>16-7>19-7>22-7",
+   "lead_changes": 2,
+   "ties": 0,
+   "final": "22-7"
+  },
+  {
    "away": "UAB Blazers",
-   "home": "Temple Owls",
+   "date": "2026-11-14",
+   "final": "36-10",
    "first": "Temple Owls",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 635,
-   "winner": "UAB Blazers",
-   "seq": "0-7>7-7>10-7>10-10>13-10>20-10>22-10>29-10>36-10",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Temple Owls",
    "lead_changes": 1,
+   "seq": "0-7>7-7>10-7>10-10>13-10>20-10>22-10>29-10>36-10",
    "ties": 2,
-   "final": "36-10"
+   "winner": "UAB Blazers"
   },
   {
    "away": "Wake Forest Demon Deacons",
@@ -10426,18 +10468,18 @@
    "won_by_one_when_first_pct": null
   },
   "Delaware Blue Hens": {
-   "gp": 9,
-   "scored_first": 3,
+   "gp": 10,
+   "scored_first": 4,
    "kinds": {
     "FG": 1,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 2,
+   "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
-   "win_pct_when_first": 66.7,
+   "scored_first_pct": 40.0,
+   "win_pct_when_first": 75.0,
    "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -10522,18 +10564,18 @@
    "won_by_one_when_first_pct": null
   },
   "Kennesaw State Owls": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -11242,7 +11284,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Florida International Panthers": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 1,
@@ -11252,7 +11294,7 @@
    "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -11306,17 +11348,17 @@
    "won_by_one_when_first_pct": null
   },
   "Tennessee Volunteers": {
-   "gp": 9,
-   "scored_first": 7,
+   "gp": 10,
+   "scored_first": 8,
    "kinds": {
-    "FG": 2,
+    "FG": 3,
     "TD": 5,
     "Safety": 0
    },
-   "won_when_first": 7,
+   "won_when_first": 8,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 80.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -11690,7 +11732,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Texas A&M Aggies": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 7,
    "kinds": {
     "FG": 2,
@@ -11700,7 +11742,7 @@
    "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 70.0,
    "win_pct_when_first": 57.1,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -12218,7 +12260,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Sam Houston Bearkats": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 4,
    "kinds": {
     "FG": 0,
@@ -12228,7 +12270,7 @@
    "won_when_first": 1,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 25.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -13707,20 +13749,20 @@
   }
  },
  "league": {
-  "games": 709,
-  "home_scored_first": 422,
-  "first_team_won": 500,
+  "games": 712,
+  "home_scored_first": 423,
+  "first_team_won": 503,
   "first_team_won_by_one": 11,
-  "first_team_won_by_one_pct": 1.6,
+  "first_team_won_by_one_pct": 1.5,
   "kinds": {
-   "FG": 202,
-   "TD": 505,
+   "FG": 204,
+   "TD": 506,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
   "median_first_score_sec": 338,
-  "home_scored_first_pct": 59.5,
-  "first_team_win_pct": 70.5
+  "home_scored_first_pct": 59.4,
+  "first_team_win_pct": 70.6
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -13879,9 +13921,9 @@
    "avg_per_game": 0.0
   },
   "Delaware Blue Hens": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 25,
-   "avg_per_game": 2.78
+   "avg_per_game": 2.5
   },
   "UAB Blazers": {
    "games": 10,
@@ -13909,9 +13951,9 @@
    "avg_per_game": 0.0
   },
   "Kennesaw State Owls": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 21,
-   "avg_per_game": 2.33
+   "avg_per_game": 2.1
   },
   "Fresno State Bulldogs": {
    "games": 9,
@@ -14134,9 +14176,9 @@
    "avg_per_game": 0.44
   },
   "Florida International Panthers": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 3,
-   "avg_per_game": 0.33
+   "avg_per_game": 0.3
   },
   "South Florida Bulls": {
    "games": 10,
@@ -14154,9 +14196,9 @@
    "avg_per_game": 0.0
   },
   "Tennessee Volunteers": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 10,
+   "avg_per_game": 1.0
   },
   "Hampton Pirates": {
    "games": 1,
@@ -14274,9 +14316,9 @@
    "avg_per_game": 1.22
   },
   "Texas A&M Aggies": {
-   "games": 9,
-   "lead_changes": 9,
-   "avg_per_game": 1.0
+   "games": 10,
+   "lead_changes": 11,
+   "avg_per_game": 1.1
   },
   "Morgan State Bears": {
    "games": 1,
@@ -14439,9 +14481,9 @@
    "avg_per_game": 1.22
   },
   "Sam Houston Bearkats": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 5,
-   "avg_per_game": 0.56
+   "avg_per_game": 0.5
   },
   "Troy Trojans": {
    "games": 9,
