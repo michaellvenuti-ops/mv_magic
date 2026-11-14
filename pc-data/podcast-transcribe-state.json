@@ -142,7 +142,7 @@
    "date": "2026-11-11",
    "queued_at": "2026-11-12T01:16:50.365111-05:00",
    "show": "A Numbers Game",
-   "status": "queued",
+   "status": "transcribing",
    "stem": "a-numbers-game-2026-11-11-hour-1",
    "title": "A Numbers Game | November 11, 2026 | Hour 1",
    "url": "https://injector.simplecastaudio.com/25dcf0d8-fcec-40ac-aa04-9badc8f6cd72/episodes/fdc1a099-c671-4818-8ad2-8b0bb1d7ec01/audio/128/default.mp3?aid=rss_feed&awCollectionId=25dcf0d8-fcec-40ac-aa04-9badc8f6cd72&awEpisodeId=fdc1a099-c671-4818-8ad2-8b0bb1d7ec01&feed=dQdfx569"
@@ -787,12 +787,16 @@
   },
   "VSiN By The Books|2026-11-11|VSiN By The Books | November 11, 2026 | Hour 3": {
    "date": "2026-11-11",
+   "done_at": "2026-11-14T03:49:57.353794-05:00",
    "queued_at": "2026-11-12T01:16:49.526204-05:00",
    "show": "VSiN By The Books",
-   "status": "transcribing",
+   "status": "done",
    "stem": "vsin-by-the-books-2026-11-11-hour-3",
    "title": "VSiN By The Books | November 11, 2026 | Hour 3",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/a6275748-ebd8-4fb5-aae7-37c9c1d6548e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=a6275748-ebd8-4fb5-aae7-37c9c1d6548e&feed=iXBZFZCf"
+   "transcript": "transcripts/vsin-by-the-books-2026-11-11-hour-3.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/a6275748-ebd8-4fb5-aae7-37c9c1d6548e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=a6275748-ebd8-4fb5-aae7-37c9c1d6548e&feed=iXBZFZCf",
+   "wall_s": 9368,
+   "words": 9289
   },
   "VSiN By The Books|2026-11-12|VSiN By The Books | November 12, 2026 | Hour 1": {
    "date": "2026-11-12",
@@ -850,7 +854,7 @@
   }
  },
  "worker": {
-  "current": "VSiN By The Books|2026-11-11|VSiN By The Books | November 11, 2026 | Hour 3",
-  "heartbeat": "2026-11-14T01:13:49.188519-05:00"
+  "current": "A Numbers Game|2026-11-11|A Numbers Game | November 11, 2026 | Hour 1",
+  "heartbeat": "2026-11-14T03:50:04.906594-05:00"
  }
 }
