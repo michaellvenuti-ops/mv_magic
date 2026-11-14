@@ -4356,7 +4356,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 10.0,
    "fav_team": "UCLA",
    "dog_team": "Illinois"
   },
@@ -4456,7 +4456,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 14.5,
+   "spread": 15.5,
    "fav_team": "Clemson",
    "dog_team": "Georgia Tech"
   },
@@ -4516,7 +4516,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 13.5,
    "fav_team": "TCU",
    "dog_team": "Kansas St"
   },
@@ -4646,7 +4646,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.0,
    "fav_team": "Tulsa",
    "dog_team": "FAU"
   },
@@ -4746,7 +4746,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Boise St",
    "dog_team": "Oregon St"
   },
@@ -4786,7 +4786,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 11.5,
    "fav_team": "Penn State",
    "dog_team": "Minnesota"
   },
@@ -4816,7 +4816,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "Utah",
    "dog_team": "Arizona"
   },
@@ -4916,7 +4916,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "Washington St",
    "dog_team": "Colorado St"
   },
@@ -8339,7 +8339,8 @@
    "fav": "home",
    "spread": 23.5,
    "fav_team": "Florida St",
-   "dog_team": "Texas A&M-CC"
+   "dog_team": "Texas A&M-CC",
+   "final": true
   },
   "401923270": {
    "sport": "NCAAB",
@@ -8406,12 +8407,20 @@
    "sport": "NCAAB",
    "matchup": "Tennessee St at Tennessee",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 27.5,
    "fav_team": "Tennessee",
    "dog_team": "Tennessee St",
-   "live_ml": -15000
+   "live_ml": 1650,
+   "alerted_at": "2026-11-13T19:24:03",
+   "board_read_at": "2026-11-13T19:24:02",
+   "alert_expires_at": "2026-11-13T19:27:03",
+   "alert_detail": "10:57 - 1st Half",
+   "alert_fav_score": 13,
+   "alert_dog_score": 14,
+   "alert_ml": 1650,
+   "ml_read_at": "2026-11-13T19:24:02"
   },
   "401921825": {
    "sport": "NCAAB",
@@ -8601,7 +8610,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Drake",
-   "dog_team": "South Dakota"
+   "dog_team": "South Dakota",
+   "live_ml": -395
   },
   "401926794": {
    "sport": "NCAAB",
@@ -8611,7 +8621,8 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Liberty",
-   "dog_team": "NC Central"
+   "dog_team": "NC Central",
+   "live_ml": -1300
   },
   "401926152": {
    "sport": "NCAAB",
@@ -8629,7 +8640,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 43.5,
+   "spread": 42.5,
    "fav_team": "Duke",
    "dog_team": "SIUE"
   },
@@ -8669,7 +8680,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 29.5,
+   "spread": 28.5,
    "fav_team": "Murray St",
    "dog_team": "Texas Southern"
   },
