@@ -7621,3 +7621,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 23:35:30 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 693 total tallied.
 [2026-11-13 23:35:30 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 23:35:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-13 23:49:17 ET] sync_to_github.py: FAILED (exit 1) in 826s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-10-hour-3.txt (HTTP 409: {'error': '{"message":"is at 6b96875a2ba11bfddb49d1464bdeb22be9c46c9d but expec
+[2026-11-13 23:50:51 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (130 with odds), db total 269547 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 23:51:48 ET] dh_arbitrage.py: OK in 57s — arbitrage: no new qualifying pairs (silent).
+[2026-11-13 23:52:25 ET] dh_kalshi_poly_arb.py: OK in 37s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 23:52:27 ET] wide_builds.py: OK in 2s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 23:53:48 ET] dh_low_holds.py: OK in 80s — LOW-HOLDS: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +9.5 / Alt Spread West Virginia -8.5 / table | BetMGM | Bally Bet
+[2026-11-13 23:55:51 ET] dh_game_middles.py: OK in 123s — GAME MIDDLE: NCAAB LSU 14 Gonzaga Nov-14 3:30 PM / table / Spread Gonzaga -5.5 / Alt Spread LSU +6 / table | BetRivers | Bet365 — window 210.0 :: -110 $1,000 Be
+[2026-11-13 23:59:33 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 25 basketball rows excluded (football-only rule).
