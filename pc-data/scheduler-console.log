@@ -7649,3 +7649,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 00:23:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-14 00:24:50 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (130 with odds), db total 269979 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-14 00:24:51 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 00:38:57 ET] sync_to_github.py: OK in 846s —   ok: wide-builds-board-pc.html
+[2026-11-14 00:39:22 ET] notify.py: OK in 25s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 00:39:57 ET] odds_recorder.py: OK in 4s — SUMMARY: recorded 216 events (130 with odds), db total 270195 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 00:43:02 ET] dh_game_middles.py: OK in 185s — GAME MIDDLE: NCAAF Arizona St. UCF Today 3:30 PM / table / Alt Spread Arizona St. +5.5 / Alt Spread UCF -5 / table | theScore | Bally Bet — window 253.0 :: -130
+[2026-11-14 00:46:36 ET] dh_key_number_middles.py: OK in 214s — key-number-middles: 68 basketball rows excluded (football-only rule).
+[2026-11-14 00:48:16 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 216 events (130 with odds), db total 270411 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 00:52:23 ET] dh_basketball_key_middles.py: OK in 217s — basketball-key-middles: no new basketball middles.
