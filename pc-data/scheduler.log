@@ -7587,3 +7587,23 @@
 [2026-11-13 23:53:48 ET] dh_low_holds.py: OK in 80s — LOW-HOLDS: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +9.5 / Alt Spread West Virginia -8.5 / table | BetMGM | Bally Bet
 [2026-11-13 23:55:51 ET] dh_game_middles.py: OK in 123s — GAME MIDDLE: NCAAB LSU 14 Gonzaga Nov-14 3:30 PM / table / Spread Gonzaga -5.5 / Alt Spread LSU +6 / table | BetRivers | Bet365 — window 210.0 :: -110 $1,000 Be
 [2026-11-13 23:59:33 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 25 basketball rows excluded (football-only rule).
+[2026-11-14 00:13:24 ET] sync_to_github.py: OK in 831s —   ok: wide-builds-board-pc.html
+[2026-11-14 00:13:25 ET] notify.py: OK in 0s — notify: nothing new banked, no ping sent.
+[2026-11-14 00:14:58 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (130 with odds), db total 269763 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 00:18:25 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-14 00:19:33 ET] hung_number.py: OK in 68s — HUNG NUMBER: Houston vs Colorado — Caesars moneyline Houston value Houston (81.5 vs median 75.7)
+[2026-11-14 00:19:38 ET] rlm.py: OK in 5s
+[2026-11-14 00:19:42 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 00:19:45 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 00:21:22 ET] dh_prop_middles.py: OK in 97s — prop-middles: no new/changed qualifying middles.
+[2026-11-14 00:23:02 ET] dh_sog_middles.py: OK in 100s — - 0 deliverables this run
+[2026-11-14 00:23:06 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 00:23:07 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 00:23:08 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 0 unverified, 173 total tallied.
+[2026-11-14 00:23:09 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 302 total tallied.
+[2026-11-14 00:23:11 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 0 unverified, 557 total tallied.
+[2026-11-14 00:23:12 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 693 total tallied.
+[2026-11-14 00:23:15 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 364 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-14 00:23:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 00:24:50 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (130 with odds), db total 269979 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 00:24:51 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
