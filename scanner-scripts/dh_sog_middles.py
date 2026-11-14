@@ -59,17 +59,18 @@ set_shots_filter were function-locals (missing `global`), so
 the banked header never carried the failure reason. A final
 checked-state verification guards against the expansion click
 toggling Hockey Props off.
-FIX v4 2026-11-14 (same day, after manual test #4 at 14:52):
-the drill-down now fails at Hockey Props itself (the child
-never becomes visible even after the row-text expansion click),
-and each version has failed at a different step — guessing at
-selectors is exhausted. Added _dump_filter_state: on switch-on
-and on drill-down failure the script snapshots the panel's
-checkbox/switch inventory (label, checked, disabled, visible)
-plus the Hockey Props row's parent HTML to
-data/sog-filter-dump-<tag>-<stamp>.json, so the next patch
-targets the real DOM. No behavior change in v4 besides the
-dumps.
+FIX v5 2026-11-14 (same day, after manual test #5 at 14:57):
+the v4 dumps were identical (switch-on == drill-fail) — the
+drill-down clicks changed NOTHING, and the dump's label lookup
+(closest('label')) missed every tree label because the <label>
+is a SIBLING of the input, not an ancestor. The dumper now
+resolves labels via label[for=id], captures 3 ancestor levels
+of the Hockey Props node (the row container holds the expand
+chevron, if any) and all [aria-expanded] toggles. Leading
+hypothesis for the v6 fix: checking the box does NOT expand
+the branch — the row-text click in _expand_and_click toggles
+the box back OFF (net-zero change, matching the identical
+dumps) — so expansion needs the chevron, not the label.
 
 FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
 key-scan pattern — leg["line"] silently EQUALS the leg price when
@@ -340,28 +341,53 @@ def _dump_filter_state(page, tag):
         import json as _json
         from datetime import datetime
         data = page.evaluate("""() => {
+          const labelFor = (e) => {
+            if (e.id) {
+              const l = document.querySelector(
+                'label[for="' + e.id + '"]');
+              if (l) return l.innerText.trim();
+            }
+            const lab = e.closest('label');
+            return lab ? lab.innerText.trim() : '';
+          };
           const rows = [];
           document.querySelectorAll(
             'input[type=checkbox], [role=switch], [role=checkbox]').forEach(e => {
-            const lab = e.closest('label');
-            const txt = (lab ? lab.innerText : '') ||
-              e.getAttribute('aria-label') || '';
             rows.push({
-              tag: e.tagName, label: txt.trim().slice(0, 80),
+              tag: e.tagName, id: e.id || '',
+              label: labelFor(e).slice(0, 80),
               checked: (e.checked !== undefined ? e.checked
                         : e.getAttribute('aria-checked')),
               disabled: (e.disabled !== undefined ? e.disabled
                          : e.getAttribute('aria-disabled')),
               visible: !!(e.offsetWidth || e.offsetHeight)});
           });
+          // The Hockey Props node: label -> ancestors (the row
+          // container holds the expand chevron, if any) + any
+          // aria-expanded toggles on the page.
+          let hpAncestors = [];
           let hpHtml = '';
-          const hp = [...document.querySelectorAll('*')].find(
-            el => el.children.length === 0 &&
-              el.textContent.trim() === 'Hockey Props');
-          if (hp && hp.parentElement) {
+          const hp = [...document.querySelectorAll('label')].find(
+            el => el.textContent.trim() === 'Hockey Props');
+          if (hp) {
             hpHtml = hp.parentElement.outerHTML.slice(0, 2000);
+            let node = hp.parentElement;
+            for (let i = 0; i < 3 && node; i++) {
+              hpAncestors.push(node.outerHTML.slice(0, 1500));
+              node = node.parentElement;
+            }
           }
-          return {controls: rows, hockeyPropsRow: hpHtml};
+          const expanders = [];
+          document.querySelectorAll('[aria-expanded]').forEach(e => {
+            expanders.push({
+              tag: e.tagName,
+              text: (e.innerText || '').trim().slice(0, 60),
+              expanded: e.getAttribute('aria-expanded'),
+              visible: !!(e.offsetWidth || e.offsetHeight)});
+          });
+          return {controls: rows, hockeyPropsRow: hpHtml,
+                  hockeyPropsAncestors: hpAncestors,
+                  expanders: expanders};
         }""")
         stamp = datetime.now().strftime("%Y%m%d-%H%M")
         path = f"data\\sog-filter-dump-{tag}-{stamp}.json"
