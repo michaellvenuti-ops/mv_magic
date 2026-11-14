@@ -7525,3 +7525,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-13 20:24:23 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 20:24:23 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 20:24:24 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-13 20:38:23 ET] sync_to_github.py: FAILED (exit 1) in 838s —   FAILED: pc-data/nba-overs-snapshot-2026-11-12.json (HTTP 409: {'error': '{"message":"is at 58fbf879d5b89d446467fc5273296f520719e505 but expected 72a989eb1c93c
+[2026-11-13 20:39:57 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (154 with odds), db total 267603 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 20:41:57 ET] dh_game_middles.py: OK in 119s — GAME MIDDLE: NCAAF Illinois 4 UCLA Today 9:00 PM / table / Total Under 49 / Alt Total Over 48.5 / table | Caesars | HardRock — window 207.0 :: -107 $1,000 Caesa
+[2026-11-13 20:45:42 ET] dh_key_number_middles.py: OK in 225s — key-number-middles: 134 basketball rows excluded (football-only rule).
+[2026-11-13 20:47:03 ET] hung_number.py: OK in 81s — HUNG NUMBER: Utah vs Arizona — Fanatics spread value favorite (-2.5 vs median -1.5)
+[2026-11-13 20:47:08 ET] rlm.py: OK in 5s
+[2026-11-13 20:47:12 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 1 new leads, no book at 3 yet).
