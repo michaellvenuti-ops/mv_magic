@@ -38,3 +38,11 @@ LEAD: Caesars on Wisconsin @ Maryland | 2026-11-14 (spread)
 ## 2026-11-14T14:42:46-05:00 — pack move, never credited: Stanford @ Virginia Tech | 2026-11-14 spread (Fanatics, Kalshi)
 ## 2026-11-14T14:42:46-05:00 — no-follow: Kalshi Utah State @ San Diego State | 2026-11-14 spread (only 0 followed)
 ## 2026-11-14T14:42:46-05:00 — 81 games, 0 leads credited, 23 started games skipped
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Florida International @ Delaware | 2026-11-14 spread (BetMGM, Caesars, Kalshi)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Florida International @ Delaware | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Georgia Southern @ Georgia State | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Georgia Southern @ Georgia State | 2026-11-14 total (BetMGM, DraftKings)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Middle Tennessee @ Liberty | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Jacksonville State @ Western Kentucky | 2026-11-14 spread (BetMGM, DraftKings, FanDuel)
+## 2026-11-14T16:09:06-05:00 — pack move, never credited: Jacksonville State @ Western Kentucky | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T16:09:06-05:00 — 81 games, 0 leads credited, 33 started games skipped
