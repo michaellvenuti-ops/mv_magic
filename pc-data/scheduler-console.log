@@ -7724,3 +7724,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 02:56:27 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
 [2026-11-14 02:56:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 02:56:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 03:10:18 ET] sync_to_github.py: FAILED (exit 1) in 829s —   FAILED: pc-data/transcripts/prop-points-2026-11-11.txt (HTTP 409: {'error': '{"message":"is at ae7b883789611750c888cd5f89893094087301bf but expected 695636a1a
+[2026-11-14 03:11:55 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 215 events (129 with odds), db total 271703 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 03:14:41 ET] dh_game_middles.py: OK in 166s — GAME MIDDLE: NFL MIN Vikings GB Packers Nov-15 1:00 PM / table / Receiving Yards J. Addison Over 47.5 / Receiving Yards J. Addison Under 49.5 / table | BetMGM |
+[2026-11-14 03:18:18 ET] dh_key_number_middles.py: OK in 217s — key-number-middles: 183 basketball rows excluded (football-only rule).
+[2026-11-14 03:22:09 ET] dh_basketball_key_middles.py: OK in 230s — basketball-key-middles: no new basketball middles.
