@@ -18,3 +18,7 @@
 - 2026-11-14: East Carolina Pirates @ Charlotte 49ers — first: Charlotte 49ers (FG, 11:42 in); lead changes 3; final 17-16
 - 2026-11-14: UAB Blazers @ Temple Owls — first: Temple Owls (TD, 10:35 in); lead changes 1; final 36-10
 - 2026-11-14: Arkansas State Red Wolves @ Coastal Carolina Chanticleers — first: Coastal Carolina Chanticleers (TD, 9:11 in); lead changes 2; final 21-28
+## 2026-11-14T18:13:21-05:00 -- NCAAF FIRST SCORE (PC): 3 new final(s) tallied; season 712 games through 2026-11-14
+- 2026-11-14: Tennessee Volunteers @ Texas A&M Aggies — first: Tennessee Volunteers (FG, 9:28 in); lead changes 2; final 22-7
+- 2026-11-14: Kennesaw State Owls @ Sam Houston Bearkats — first: Kennesaw State Owls (FG, 4:30 in); lead changes 0; final 26-7
+- 2026-11-14: Florida International Panthers @ Delaware Blue Hens — first: Delaware Blue Hens (TD, 5:52 in); lead changes 0; final 16-24
