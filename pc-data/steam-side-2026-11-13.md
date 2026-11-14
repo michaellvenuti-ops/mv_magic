@@ -47,3 +47,4 @@ NEW FLAG: FBS Utah @ Arizona | 2026-11-13 — Kalshi still dealing spread 2.5 on
 NEW FLAG: FBS California @ Virginia | 2026-11-13 — bet365 still dealing spread -10.5 on Virginia (pre-move median -10.5, now -11.5)
 NEW FLAG: FBS California @ Virginia | 2026-11-13 — Kalshi still dealing spread -10.5 on Virginia (pre-move median -10.5, now -11.5)
 ## 2026-11-13T22:45:03-05:00 — 67 games, 0 steam events, 0 NEW flags, 7 started games skipped
+## 2026-11-13T23:31:54-05:00 — 67 games, 0 steam events, 0 NEW flags, 7 started games skipped
