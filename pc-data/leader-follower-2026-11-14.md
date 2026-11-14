@@ -30,3 +30,11 @@ LEAD: Caesars on Wisconsin @ Maryland | 2026-11-14 (spread)
 ## 2026-11-14T13:13:12-05:00 — no-follow: Fanatics Boston College @ Notre Dame | 2026-11-14 spread (only 0 followed)
 ## 2026-11-14T13:13:12-05:00 — no-follow: Fanatics Fresno State @ Texas State | 2026-11-14 spread (only 0 followed)
 ## 2026-11-14T13:13:12-05:00 — 81 games, 0 leads credited, 21 started games skipped
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Michigan @ Oregon | 2026-11-14 spread (FanDuel, Kalshi)
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Nevada @ Northern Illinois | 2026-11-14 spread (FanDuel, Kalshi)
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Fresno State @ Texas State | 2026-11-14 spread (FanDuel, Kalshi)
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Tulane @ Rice | 2026-11-14 spread (BetMGM, Caesars, DraftKings)
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Texas @ LSU | 2026-11-14 spread (Fanatics, Kalshi)
+## 2026-11-14T14:42:46-05:00 — pack move, never credited: Stanford @ Virginia Tech | 2026-11-14 spread (Fanatics, Kalshi)
+## 2026-11-14T14:42:46-05:00 — no-follow: Kalshi Utah State @ San Diego State | 2026-11-14 spread (only 0 followed)
+## 2026-11-14T14:42:46-05:00 — 81 games, 0 leads credited, 23 started games skipped
