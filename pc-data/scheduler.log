@@ -7564,3 +7564,26 @@
 [2026-11-13 23:11:28 ET] hung_number.py: OK in 70s — HUNG NUMBER: Houston vs Colorado — Caesars spread value dog (-14.5 vs median -15.5)
 [2026-11-13 23:11:33 ET] rlm.py: OK in 5s
 [2026-11-13 23:11:36 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-13 23:25:28 ET] sync_to_github.py: OK in 832s —   ok: wide-builds-board-pc.html
+[2026-11-13 23:26:17 ET] notify.py: OK in 49s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-13 23:27:50 ET] odds_recorder.py: OK in 63s — SUMMARY: recorded 216 events (130 with odds), db total 269331 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 23:31:48 ET] dh_basketball_key_middles.py: OK in 238s — basketball-key-middles: no new basketball middles.
+[2026-11-13 23:31:54 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-13 23:33:30 ET] dh_prop_middles.py: OK in 97s — prop-middles: no new/changed qualifying middles.
+[2026-11-13 23:35:19 ET] dh_sog_middles.py: OK in 109s — - 0 deliverables this run
+[2026-11-13 23:35:22 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-13 23:35:23 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-13 23:35:24 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 0 unverified, 172 total tallied.
+[2026-11-13 23:35:25 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 301 total tallied.
+[2026-11-13 23:35:28 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 12 new, 0 unverified, 555 total tallied.
+[2026-11-13 23:35:30 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 693 total tallied.
+[2026-11-13 23:35:30 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
+[2026-11-13 23:35:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-13 23:49:17 ET] sync_to_github.py: FAILED (exit 1) in 826s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-10-hour-3.txt (HTTP 409: {'error': '{"message":"is at 6b96875a2ba11bfddb49d1464bdeb22be9c46c9d but expec
+[2026-11-13 23:50:51 ET] odds_recorder.py: OK in 64s — SUMMARY: recorded 216 events (130 with odds), db total 269547 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 23:51:48 ET] dh_arbitrage.py: OK in 57s — arbitrage: no new qualifying pairs (silent).
+[2026-11-13 23:52:25 ET] dh_kalshi_poly_arb.py: OK in 37s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-13 23:52:27 ET] wide_builds.py: OK in 2s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-13.md)
+[2026-11-13 23:53:48 ET] dh_low_holds.py: OK in 80s — LOW-HOLDS: NCAAF Kansas West Virginia Nov-14 5:30 PM / table / Alt Spread Kansas +9.5 / Alt Spread West Virginia -8.5 / table | BetMGM | Bally Bet
+[2026-11-13 23:55:51 ET] dh_game_middles.py: OK in 123s — GAME MIDDLE: NCAAB LSU 14 Gonzaga Nov-14 3:30 PM / table / Spread Gonzaga -5.5 / Alt Spread LSU +6 / table | BetRivers | Bet365 — window 210.0 :: -110 $1,000 Be
+[2026-11-13 23:59:33 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 25 basketball rows excluded (football-only rule).
