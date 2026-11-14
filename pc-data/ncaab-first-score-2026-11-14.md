@@ -29,3 +29,13 @@
 - 2026-11-14: Rice Owls @ Stephen F. Austin Lumberjacks — first: Rice Owls (3PT, 0:13 in); lead changes 8; final 81-78
 - 2026-11-14: Shenandoah Hornets @ Radford Highlanders — first: Radford Highlanders (2PT, 0:16 in); lead changes 0; final 63-102
 - 2026-11-14: Wyoming Cowboys @ Denver Pioneers — first: Denver Pioneers (2PT, 0:47 in); lead changes 9; final 76-53
+## 2026-11-14T18:13:20-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 588 games through 2026-11-14
+- 2026-11-14: Hampton Pirates @ Navy Midshipmen — first: Navy Midshipmen (2PT, 0:23 in); lead changes 8; final 56-58
+- 2026-11-14: Southern Utah Thunderbirds @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (2PT, 0:34 in); lead changes 2; final 51-89
+- 2026-11-14: LSU Tigers @ Gonzaga Bulldogs — first: Gonzaga Bulldogs (2PT, 0:15 in); lead changes 13; final 81-80
+- 2026-11-14: Central Michigan Chippewas @ Northern Kentucky Norse — first: Northern Kentucky Norse (2PT, 0:20 in); lead changes 11; final 68-57
+- 2026-11-14: Montreat Cavaliers @ UNC Wilmington Seahawks — first: UNC Wilmington Seahawks (3PT, 0:16 in); lead changes 0; final 41-100
+- 2026-11-14: Toledo Rockets @ Detroit Mercy Titans — first: Toledo Rockets (3PT, 0:51 in); lead changes 4; final 85-72
+- 2026-11-14: Delaware State Hornets @ East Carolina Pirates — first: East Carolina Pirates (3PT, 0:14 in); lead changes 0; final 48-72
+- 2026-11-14: Lafayette Leopards @ St. Bonaventure Bonnies — first: St. Bonaventure Bonnies (2PT, 0:35 in); lead changes 2; final 58-81
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
