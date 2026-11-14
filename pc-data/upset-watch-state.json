@@ -4499,11 +4499,17 @@
    "sport": "CFB",
    "matchup": "East Carolina at Charlotte",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 12.5,
    "fav_team": "East Carolina",
-   "dog_team": "Charlotte"
+   "dog_team": "Charlotte",
+   "alerted_at": "2026-11-14T13:30:02",
+   "board_read_at": "2026-11-14T13:30:02",
+   "alert_expires_at": "2026-11-14T13:35:02",
+   "alert_detail": "3:18 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401862829": {
    "sport": "CFB",
@@ -4531,7 +4537,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 13.5,
+   "spread": 14.0,
    "fav_team": "TCU",
    "dog_team": "Kansas St"
   },
@@ -4551,7 +4557,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "away",
-   "spread": 7.5,
+   "spread": 8.5,
    "fav_team": "Kennesaw St",
    "dog_team": "Sam Houston"
   },
@@ -5558,7 +5564,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 7.5,
+   "spread": 8.5,
    "fav_team": "N Arizona",
    "dog_team": "Weber St"
   },
@@ -7103,7 +7109,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Colts",
    "dog_team": "Dolphins"
   },
@@ -9147,11 +9153,20 @@
    "sport": "NCAAB",
    "matchup": "Tulane at Akron",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Akron",
-   "dog_team": "Tulane"
+   "dog_team": "Tulane",
+   "live_ml": -160,
+   "alerted_at": "2026-11-14T13:32:03",
+   "board_read_at": "2026-11-14T13:32:03",
+   "alert_expires_at": "2026-11-14T13:35:03",
+   "alert_detail": "9:17 - 2nd Half",
+   "alert_fav_score": 50,
+   "alert_dog_score": 51,
+   "alert_ml": -160,
+   "ml_read_at": "2026-11-14T13:32:03"
   },
   "401929362": {
    "sport": "NCAAB",
@@ -9190,10 +9205,11 @@
    "matchup": "Bradley at George Mason",
    "date": "2026-11-14",
    "alerted": false,
-   "fav": "home",
-   "spread": 12.5,
-   "fav_team": "Bradley",
-   "dog_team": "George Mason"
+   "fav": "away",
+   "spread": 11.5,
+   "fav_team": "George Mason",
+   "dog_team": "Bradley",
+   "live_ml": -520
   },
   "401912229": {
    "sport": "NCAAB",
@@ -9221,7 +9237,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 39.5,
+   "spread": 38.5,
    "fav_team": "Texas Tech",
    "dog_team": "Stonehill"
   },
@@ -9663,7 +9679,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 10.5,
    "fav_team": "Towson",
    "dog_team": "UMBC"
   },
@@ -9813,7 +9829,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 4.5,
    "fav_team": "Mavericks",
    "dog_team": "Cavaliers"
   },
@@ -9823,7 +9839,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 3.5,
    "fav_team": "Pistons",
    "dog_team": "Heat"
   },
