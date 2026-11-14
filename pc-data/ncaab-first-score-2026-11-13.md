@@ -8,3 +8,6 @@
 ## 2026-11-13T19:36:45-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 502 games through 2026-11-13
 - 2026-11-13: Texas A&M-Corpus Christi Islanders @ Florida State Seminoles — first: Florida State Seminoles (2PT, 0:33 in); lead changes 0; final 60-84
 - 2026-11-13: North Alabama Lions @ Miami Hurricanes — first: Miami Hurricanes (3PT, 1:10 in); lead changes 2; final 52-94
+## 2026-11-13T20:24:22-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 504 games through 2026-11-13
+- 2026-11-13: Bryant Bulldogs @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (2PT, 1:41 in); lead changes 2; final 51-72
+- 2026-11-13: Georgetown Hoyas @ Clemson Tigers — first: Georgetown Hoyas (3PT, 0:27 in); lead changes 6; final 85-78
