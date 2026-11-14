@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 02:47)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 04:15)
 
 - Dolphins vs Colts | Fanatics | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
@@ -11,7 +11,6 @@
 - Nevada vs Northern Illinois | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
 - Oregon State vs Boise State | bet365 | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Minnesota vs Penn State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
-- Minnesota vs Penn State | Fanatics | spread | value: favorite | book 9.5 vs median 11.5 | div 2.0 
 - Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
 - San Jose State vs Air Force | Fanatics | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Florida Atlantic vs Tulsa | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
