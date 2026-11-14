@@ -7675,3 +7675,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 01:13:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-14 01:13:42 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=13 queued_total=29
 [2026-11-14 01:13:43 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=29, limit=5)
+[2026-11-14 01:28:07 ET] sync_to_github.py: OK in 864s —   ok: wide-builds-board-pc.html
+[2026-11-14 01:29:24 ET] notify.py: OK in 77s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 01:30:59 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 216 events (130 with odds), db total 270843 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 01:33:07 ET] dh_game_middles.py: OK in 128s — GAME MIDDLE: NCAAF Kansas West Virginia Today 3:30 PM / table / Alt Spread Kansas +5 / Alt Spread West Virginia -4.5 / table | Fanatics-NJ | Bally Bet — window 
+[2026-11-14 01:37:00 ET] dh_key_number_middles.py: OK in 232s — key-number-middles: 97 basketball rows excluded (football-only rule).
+[2026-11-14 01:41:10 ET] dh_basketball_key_middles.py: OK in 249s — basketball-key-middles: no new basketball middles.
+[2026-11-14 01:42:30 ET] hung_number.py: OK in 80s — HUNG NUMBER: Oregon State vs Boise State — bet365 spread value favorite (15.5 vs median 16.5)
+[2026-11-14 01:42:35 ET] rlm.py: OK in 5s
+[2026-11-14 01:42:39 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
