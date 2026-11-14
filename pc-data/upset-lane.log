@@ -5542,3 +5542,21 @@
 [2026-11-14 13:04:03 ET] lane run: upset_watch exit 0 in 2s — 1 new alert(s) (Georgia Tech at Clemson)
 [2026-11-14 13:04:05 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 79a5b138814fdc8e04a108bb1574bb1378d3b8f2 but expected d6ed8163b5e8269113bd7e496273b6b26fa5cfad","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
 [2026-11-14 13:04:09 ET] fast push OK (attempt 2, commit 2a303085bdde) for 1 new alert(s)
+[2026-11-14 13:06:02 ET] lane run: upset_watch exit 0 in 1s — 0 new alert(s)
+[2026-11-14 13:08:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:10:22 ET] lane run: upset_watch exit 0 in 18s — 0 new alert(s)
+[2026-11-14 13:12:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:14:16 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:17:46 ET] lane run: upset_watch exit 0 in 40s — 0 new alert(s)
+[2026-11-14 13:18:06 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:20:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:22:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:24:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:26:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:28:03 ET] lane run: upset_watch exit 0 in 2s — 0 new alert(s)
+[2026-11-14 13:30:03 ET] lane run: upset_watch exit 0 in 2s — 1 new alert(s) (East Carolina at Charlotte)
+[2026-11-14 13:30:05 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at fd74772ee54cf8e8bab5623f844f602df8287a8c but expected 06e8b29244e73bdd5dd47e56727831f152e40487","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-14 13:30:10 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at ae6fd93a46e03d903c1eed6bf31ab7fe894831fc but expected f7160f04e09c481ab772d90c1fe64888ec5daf7e","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-14 13:30:10 ET] fast push gave up — the regular 10-min sync is the backstop
+[2026-11-14 13:32:03 ET] lane run: upset_watch exit 0 in 2s — 1 new alert(s) (Tulane at Akron)
+[2026-11-14 13:32:05 ET] fast push OK (attempt 1, commit 5f8f72e3d5ae) for 1 new alert(s)
