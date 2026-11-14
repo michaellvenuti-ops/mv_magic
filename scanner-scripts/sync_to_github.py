@@ -14,6 +14,12 @@ like v2's build_nba_overs_board.py flow.
 Token: GH_PC_SCANS_TOKEN environment variable ONLY (see config.py).
 Never hardcoded, never printed.
 
+Push order (2026-11-14, Michael's tap): hot files first — wide-builds
+data, then the wide-builds board, then the other middles/arb scan
+files, then everything else in the old order. A ~15-minute alphabetical
+run used to land wide-builds-* near the end; now it lands in the first
+minute. All files are still pushed; only the order changes.
+
 Usage: python sync_to_github.py [--dry-run]
 Prints a summary of what was pushed.
 """
@@ -25,6 +31,26 @@ from config import BOARDS_DIR, DATA_DIR
 from github_push import put_file
 
 PREFIX = "pc-data/"
+
+_SCAN_PREFIXES = (
+    "game-middles-", "prop-middles-", "key-number-middles-",
+    "basketball-key-middles-", "arbitrage-",
+)
+
+
+def _push_priority(repo_path):
+    """Push tier: 0 = wide-builds data, 1 = wide-builds board,
+    2 = other middles/arb scan files, 3 = everything else.
+    The sort is stable, so order within a tier is unchanged."""
+    if repo_path.startswith(f"{PREFIX}wide-builds-"):
+        return 0
+    if repo_path == "wide-builds-board-pc.html":
+        return 1
+    if repo_path.startswith(PREFIX):
+        name = repo_path[len(PREFIX):]
+        if any(name.startswith(p) for p in _SCAN_PREFIXES):
+            return 2
+    return 3
 
 
 def main():
@@ -48,6 +74,9 @@ def main():
             plan.append((f"{PREFIX}{rel}", path))
     for path in sorted(Path(BOARDS_DIR).glob("*.html")):
         plan.append((path.name, path))  # repo root, calibration name
+    # Hot files first (see module docstring); stable sort keeps the
+    # old order within each tier.
+    plan.sort(key=lambda item: _push_priority(item[0]))
     pushed, failed = [], []
     for repo_path, local in plan:
         assert repo_path.startswith(PREFIX) or repo_path.endswith("-pc.html"), \
