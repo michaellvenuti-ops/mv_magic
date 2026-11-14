@@ -23,6 +23,32 @@ the click does not land, rows are still filtered in code by the
 market label ("shot" must appear in the market when a label parsed).
 Run --dump on the first pass and send the dump back for a patch.
 
+FIX 2026-11-14 (Michael's tap — UI probe browser-task:771724dc):
+the filter EXISTS and WORKS, but it lives behind a "Filters: Off"
+button opening a full-page Filters panel — there is no "Hockey
+Props" text on the board page itself, which is why the old
+label-click never landed. Path: Filters panel → Market Type switch
+ON → Hockey Props → Player Props → Shots (SOG is labeled just
+"Shots"; no "Shots on Goal" label exists). Filtered board reads
+"1–100 of 14k+", all NHL Shots rows. The URL never changes —
+the filter is app/preset state, NOT a URL param. CRITICAL: the
+filter persists, and game/prop middles share /middles — this
+script MUST Clear the filter (panel top "Clear", verify the button
+returns to "Filters: Off") after its read, even on failure
+(try/finally). A stale "Filters: On" left by a crashed run is
+cleared at the START of the next run. No named preset is saved
+(the "Middles Preset" dropdown is untested).
+
+FIX 2026-11-14 (same tap): real-line recovery, the Nov 10
+key-scan pattern — leg["line"] silently EQUALS the leg price when
+a BET cell carries no line, so mid["window"] is price-derived
+garbage and must never gate qualification. Lines are recovered
+from the identity's Shots segments (last number per segment,
+optional "+" threshold suffix — "3+" wins at exactly 3, per the
+Nov 13 player-prop rule); leg lines are only a fallback when
+they cannot be a price. The both-win numbers are the integers
+n with ceil(lo) <= n <= floor(hi) of the recovered pair.
+
 FIX 2026-11-10 (Michael's tap): the in-code check was dead —
 dh_middles.parse_middle_row never populates a "market" field, so
 `mid.get("market")` was always "" and the guard never fired; with
@@ -35,6 +61,8 @@ mentions shots ("shot" / "sog"). The polluted state was backed up
 and reset the same day.
 """
 import argparse
+import math
+import re
 import sys
 
 from dh_common import (FINDER_URLS, open_session, signed_in,
@@ -49,21 +77,197 @@ PRICE_LO, PRICE_HI = -200, 200
 CLEAN = -140
 
 
-def try_set_hockey_props(page):
-    """Best-effort: set Market Type = Hockey Props. View/filter
-    controls are safe to change (same class as Items-per-page);
-    the Include Player Props toggle is NEVER touched."""
-    for label in ("Hockey Props", "Hockey"):
-        try:
-            page.get_by_text(label, exact=False).first.click(timeout=3000)
+def _click_visible_text(page, text, timeout=5000):
+    """Click the first VISIBLE element with exactly this text.
+    The Filters panel has nested trees (e.g. "Shots" under both
+    Hockey Props and Soccer) — the collapsed branches are hidden,
+    so :visible keeps the click on the expanded hockey node."""
+    try:
+        loc = page.locator(f"text={text} >> visible=true")
+        if loc.count():
+            loc.first.click(timeout=timeout)
+            return True
+    except Exception:
+        pass
+    try:
+        loc = page.get_by_text(text, exact=True)
+        if loc.count():
+            loc.first.click(timeout=timeout)
+            return True
+    except Exception:
+        pass
+    return False
+
+
+def _filters_button_state(page):
+    """'Off' / 'On' / None — read off the toolbar button label."""
+    try:
+        text = page.locator("body").inner_text(timeout=10000)
+    except Exception:
+        return None
+    m = re.search(r"Filters:\s*(Off|On)", text)
+    return m.group(1) if m else None
+
+
+def _open_filters_panel(page):
+    """Click the toolbar Filters button; True when the panel (with
+    its Market Type section) is showing."""
+    try:
+        btn = page.locator("text=/Filters:\\s*(Off|On)/ >> visible=true")
+        if btn.count():
+            btn.first.click(timeout=5000)
+        else:
+            page.get_by_text(re.compile(r"Filters:\s*(Off|On)"),
+                             exact=False).first.click(timeout=5000)
+    except Exception:
+        return False
+    page.wait_for_timeout(1500)
+    try:
+        return page.get_by_text("Market Type", exact=True).count() > 0
+    except Exception:
+        return False
+
+
+def _close_filters_panel(page):
+    """Back to the board; True when the panel is gone."""
+    try:
+        back = page.get_by_role("button", name="Back")
+        if back.count():
+            back.first.click(timeout=5000)
+        else:
+            _click_visible_text(page, "Back", timeout=5000)
+    except Exception:
+        return False
+    page.wait_for_timeout(2500)
+    try:
+        return page.get_by_text("Market Type", exact=True).count() == 0
+    except Exception:
+        return False
+
+
+def _panel_clear(page):
+    """Top 'Clear' in the Filters panel header (first Clear button
+    in the panel). Returns True when clicked."""
+    try:
+        btns = page.get_by_role("button", name="Clear")
+        if btns.count():
+            btns.first.click(timeout=5000)
             page.wait_for_timeout(1200)
             return True
-        except Exception:
-            continue
-    print("sog-middles: could not set the Hockey Props market filter "
-          "by label — relying on the in-code market check; send a "
-          "--dump back for a selector patch.")
+    except Exception:
+        pass
+    return _click_visible_text(page, "Clear", timeout=5000)
+
+
+def _turn_on_market_type(page):
+    """Flip the Market Type section switch on. The switch sits
+    beside the section label; its checkboxes stay disabled until
+    it is on. Layered attempts — the DOM shape is unprobed."""
+    try:
+        sw = page.get_by_role("switch", name=re.compile(
+            "Market Type", re.I))
+        if sw.count():
+            sw.first.click(timeout=5000)
+            page.wait_for_timeout(1200)
+            return True
+    except Exception:
+        pass
+    try:
+        lbl = page.locator("label", has_text="Market Type")
+        if lbl.count():
+            lbl.first.click(timeout=5000)
+            page.wait_for_timeout(1200)
+            return True
+    except Exception:
+        pass
+    if _click_visible_text(page, "Market Type", timeout=5000):
+        page.wait_for_timeout(1200)
+        return True
     return False
+
+
+def set_shots_filter(page):
+    """Drive the Filters panel to Market Type = Hockey Props →
+    Player Props → Shots only. Returns True only when the board
+    afterwards reads 'Filters: On'. On any failure the panel is
+    cleared and closed so no partial filter is left behind; the
+    caller then falls back to the in-code market check."""
+    if not _open_filters_panel(page):
+        print("sog-middles: Filters panel did not open — relying "
+              "on the in-code market check.")
+        return False
+    try:
+        # Self-heal a stale filter left by a crashed run.
+        if _filters_button_state(page) == "On":
+            _panel_clear(page)
+        if not _turn_on_market_type(page):
+            print("sog-middles: Market Type switch did not flip — "
+                  "relying on the in-code market check.")
+            return False
+        # The probe's order: section Clear first, then drill down.
+        _panel_clear(page)
+        page.wait_for_timeout(800)
+        if not _click_visible_text(page, "Hockey Props"):
+            print("sog-middles: 'Hockey Props' not clickable — "
+                  "relying on the in-code market check.")
+            return False
+        page.wait_for_timeout(1200)
+        if not _click_visible_text(page, "Player Props"):
+            print("sog-middles: 'Player Props' not clickable — "
+                  "relying on the in-code market check.")
+            return False
+        page.wait_for_timeout(1200)
+        if not _click_visible_text(page, "Shots"):
+            print("sog-middles: 'Shots' not clickable — relying "
+                  "on the in-code market check.")
+            return False
+        page.wait_for_timeout(1200)
+        if not _close_filters_panel(page):
+            print("sog-middles: Filters panel did not close — "
+                  "filter state uncertain; relying on the in-code "
+                  "market check.")
+            return False
+        state = _filters_button_state(page)
+        if state != "On":
+            print(f"sog-middles: filter set but button reads "
+                  f"'Filters: {state}' — treating as unset.")
+            return False
+        print("sog-middles: Market Type filter set to Hockey Props "
+              "→ Player Props → Shots (button: Filters: On).")
+        return True
+    finally:
+        # A failure above must not leave a half-set panel open.
+        try:
+            if page.get_by_text("Market Type",
+                                exact=True).count() > 0:
+                _panel_clear(page)
+                _close_filters_panel(page)
+        except Exception:
+            pass
+
+
+def clear_shots_filter(page):
+    """Best-effort restore: open the panel, top Clear, Back, verify
+    the button reads 'Filters: Off'. Never raises — the caller logs
+    the outcome. MUST run after every read (try/finally): the
+    filter is app state shared by every middles scan on /middles."""
+    try:
+        if _filters_button_state(page) != "On":
+            return True
+        if not _open_filters_panel(page):
+            return False
+        _panel_clear(page)
+        if not _close_filters_panel(page):
+            return False
+        ok = _filters_button_state(page) == "Off"
+        print("sog-middles: filter cleared — button reads "
+              f"'Filters: {_filters_button_state(page)}'.")
+        return ok
+    except Exception as exc:  # noqa: BLE001 - cleanup must not raise
+        print(f"sog-middles: filter clear FAILED ({exc}) — the "
+              f"Middles board may still be filtered; the next "
+              f"middles scan will self-heal at its start.")
+        return False
 
 
 def middle_key(mid):
@@ -89,18 +293,88 @@ def row_identity(mid):
     return stable_row_identity(mid.get("cells")) or ""
 
 
+# --- Line recovery (fix 2026-11-14, same Nov 10 key-scan pattern)
+# parse_middle_row takes the legs from the BET cells, and for many
+# books those cells carry only price / stake / book — the line lives
+# in the row's MARKET columns ("Shots M. Barzal Under 2.5"). For
+# those rows leg["line"] silently equals the leg PRICE, so the old
+# code computed windows off prices and mid["window"] was garbage.
+# Lines are recovered from the identity's Shots segments first; leg
+# lines are only a fallback when they cannot be a price.
+_SEG_NUM = re.compile(r"([+-]?\d+(?:\.\d+)?)\+?\s*(?:YES|NO)?\s*$",
+                      re.I)
+
+
+def identity_shots_lines(cells):
+    """The two lines named in the identity's Shots segments."""
+    ident = stable_row_identity(cells) or ""
+    out = []
+    for seg in ident.split(" / "):
+        if "shot" not in seg.lower():
+            continue
+        m = _SEG_NUM.search(seg.strip())
+        if m:
+            out.append(float(m.group(1)))
+    return out
+
+
+def leg_line_trustworthy(mid, leg):
+    """A parsed leg line that cannot be the leg's price."""
+    try:
+        line = float(mid[leg]["line"])
+        price = int(mid[leg]["price"])
+    except (TypeError, ValueError, KeyError):
+        return None
+    if line == price:
+        return None            # bet cell carried no line: line IS price
+    return line
+
+
+def recovered_lines(mid):
+    """(lo, hi) SOG threshold lines for the middle, or None."""
+    lines = identity_shots_lines(mid.get("cells"))
+    if len(lines) >= 2:
+        return min(lines[0], lines[1]), max(lines[0], lines[1])
+    l1 = leg_line_trustworthy(mid, "leg1")
+    l2 = leg_line_trustworthy(mid, "leg2")
+    if l1 is None or l2 is None:
+        return None
+    return min(l1, l2), max(l1, l2)
+
+
+def both_win_numbers(lo, hi):
+    """Integers n with ceil(lo) <= n <= floor(hi): the actual shot
+    totals where BOTH legs win. Threshold props: the Over leg wins
+    at exactly its (whole-number) line — a "+" leg is a win at the
+    number, never a push (Nov 13 player-prop rule)."""
+    return list(range(math.ceil(lo), math.floor(hi) + 1))
+
+
 def is_sog_row(mid):
     ident = row_identity(mid).lower()
-    return "shot" in ident or "sog" in ident
+    # "Blocked Shots" is a different market — it also contains
+    # "shot", so exclude it explicitly.
+    return ("shot" in ident or "sog" in ident) and \
+        "blocked shot" not in ident
 
 
 def qualifies(mid):
-    if mid["window"] < MIN_WINDOW:
-        return False
+    # NOTE: mid["window"] from the parser is computed off the raw
+    # leg lines, which for price-only bet cells are the PRICES —
+    # never trust it. Width and both-win numbers come from the
+    # recovered lines.
     if not is_sog_row(mid):
-        return False
-    return (price_in(mid["leg1"]["price"], PRICE_LO, PRICE_HI)
-            and price_in(mid["leg2"]["price"], PRICE_LO, PRICE_HI))
+        return False, None
+    lines = recovered_lines(mid)
+    if lines is None:
+        return False, None
+    lo, hi = lines
+    if hi - lo < MIN_WINDOW:
+        return False, None
+    if not (price_in(mid["leg1"]["price"], PRICE_LO, PRICE_HI)
+            and price_in(mid["leg2"]["price"], PRICE_LO, PRICE_HI)):
+        return False, None
+    return True, (lo, hi, both_win_numbers(lo, hi))
 
 
 def is_clean(mid):
@@ -129,13 +403,19 @@ def main():
             print("DarkHorse check unavailable (signed out) — "
                   "sog-middles skipped, no prices invented.")
             return 0
-        try_set_hockey_props(page)
-        if args.no_smaller:
-            from dh_middles import collect_middles
-            full, _ = collect_middles(page)
-            smaller = []
-        else:
-            full, smaller = collect_with_smaller(page)
+        filter_set = set_shots_filter(page)
+        try:
+            if args.no_smaller:
+                from dh_middles import collect_middles
+                full, _ = collect_middles(page)
+                smaller = []
+            else:
+                full, smaller = collect_with_smaller(page)
+        finally:
+            # The filter is shared app state — restore the board
+            # even when the read failed midway.
+            if filter_set:
+                clear_shots_filter(page)
         if not full and not smaller:
             print("sog-middles: zero middles parsed — run with a "
                   "dump and send it back for a parser patch. No "
@@ -144,15 +424,21 @@ def main():
         deliverables = []
         lines = [f"## {now_stamp()} — sog-middles: {len(full)} "
                  f"full-size + {len(smaller)} smaller-bets rows "
-                 f"parsed (compact: qualifying only below)"]
+                 f"parsed (filter={'on' if filter_set else 'off — '
+                 f'in-code check only'}) (compact: qualifying only "
+                 f"below)"]
         for mid in full + smaller:
-            if not qualifies(mid):
+            ok, recovered = qualifies(mid)
+            if not ok:
                 continue
+            lo, hi, both_win = recovered
             key = middle_key(mid)
             entry = {"player": mid.get("player", ""),
                      "market": row_identity(mid),
                      "game": mid.get("game", ""),
-                     "window": mid["window"],
+                     "window": hi - lo,
+                     "lines": [lo, hi],
+                     "both_win": both_win,
                      "conversion_pct": mid["conversion_pct"],
                      "clean_tier": is_clean(mid),
                      "headline": {"leg1": mid["leg1"],
@@ -188,14 +474,17 @@ def main():
         for tag, key, e in deliverables:
             h = e["headline"]
             kind = "NEW" if tag == "NEW" else "CHANGED"
+            bw = e.get("both_win")
+            bw_txt = f" both-win {bw}" if bw is not None else ""
             lines.append(
                 f"{kind} MIDDLE: {'CLEAN ' if e['clean_tier'] else ''}"
-                f"{key} w{e['window']:g} :: "
+                f"{key} w{e['window']:g}{bw_txt} :: "
                 f"{leg_line(h['leg1'])} / {leg_line(h['leg2'])}"
                 f"{' [SMALLER BETS]' if e['smaller_bets'] else ''}")
             lines.append(
                 f"- {tag} {'CLEAN ' if e['clean_tier'] else ''}"
-                f"W{e['window']:g} {e['player']} ({e['game']}): "
+                f"W{e['window']:g}{bw_txt} {e['player']} "
+                f"({e['game']}): "
                 f"{leg_line(h['leg1'])} / {leg_line(h['leg2'])}"
                 f"{' [SMALLER BETS]' if e['smaller_bets'] else ''}")
         if not deliverables:
