@@ -7747,3 +7747,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 03:48:53 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
 [2026-11-14 03:48:54 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 03:48:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 04:04:17 ET] sync_to_github.py: FAILED (exit 1) in 922s —   FAILED: pc-data/steam-side-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 8a2ed51884fc66016777283e1140c68d1713eb58 but expected 6d2c5e55c2a6a550a1f5711
+[2026-11-14 04:05:52 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 215 events (129 with odds), db total 272133 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 04:08:08 ET] dh_game_middles.py: OK in 136s — GAME MIDDLE: NBA BKN Nets MEM Grizzlies Today 8:15 PM / table / Alt Spread BKN Nets +8 / Alt Spread MEM Grizzlies -7.5 / table | Fanatics-NJ | BetMGM — window 3
+[2026-11-14 04:12:04 ET] dh_key_number_middles.py: OK in 236s — key-number-middles: 128 basketball rows excluded (football-only rule).
+[2026-11-14 04:15:31 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-14 04:16:50 ET] hung_number.py: OK in 80s — No new hung numbers (22 current flags).
+[2026-11-14 04:16:55 ET] rlm.py: OK in 5s
+[2026-11-14 04:16:59 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
