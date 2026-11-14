@@ -1,5 +1,5 @@
 {
- "through": "2026-11-12",
+ "through": "2026-11-13",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -9662,18 +9662,18 @@
    "winner": "Central Michigan Chippewas"
   },
   {
-   "date": "2026-11-12",
    "away": "Louisiana Ragin' Cajuns",
-   "home": "UL Monroe Warhawks",
+   "date": "2026-11-12",
+   "final": "42-21",
    "first": "UL Monroe Warhawks",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 503,
-   "winner": "Louisiana Ragin' Cajuns",
-   "seq": "0-7>7-7>7-14>14-14>21-14>28-14>35-14>35-21>42-21",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "UL Monroe Warhawks",
    "lead_changes": 1,
+   "seq": "0-7>7-7>7-14>14-14>21-14>28-14>35-14>35-21>42-21",
    "ties": 2,
-   "final": "42-21"
+   "winner": "Louisiana Ragin' Cajuns"
   },
   {
    "away": "Memphis Tigers",
@@ -9688,6 +9688,20 @@
    "seq": "7-0>14-0>21-0>21-3>21-10>28-10>28-17>28-24>35-24>35-31>38-31>38-38>38-41>45-41>52-41",
    "ties": 1,
    "winner": "Memphis Tigers"
+  },
+  {
+   "date": "2026-11-13",
+   "away": "Florida State Seminoles",
+   "home": "Pittsburgh Panthers",
+   "first": "Florida State Seminoles",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 679,
+   "winner": "Florida State Seminoles",
+   "seq": "3-0>6-0>6-7>13-7>13-10>16-10",
+   "lead_changes": 2,
+   "ties": 0,
+   "final": "16-10"
   }
  ],
  "tally": {
@@ -9836,18 +9850,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Florida State Seminoles": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 2,
+   "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -11404,7 +11418,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Pittsburgh Panthers": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 7,
    "kinds": {
     "FG": 2,
@@ -11414,9 +11428,9 @@
    "won_when_first": 5,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 70.0,
    "win_pct_when_first": 71.4,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
   "Mississippi Valley State Delta Devils": {
@@ -13469,20 +13483,20 @@
   }
  },
  "league": {
-  "games": 692,
+  "games": 693,
   "home_scored_first": 414,
-  "first_team_won": 490,
+  "first_team_won": 491,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
-   "FG": 194,
+   "FG": 195,
    "TD": 496,
    "Safety": 2
   },
-  "avg_lead_changes": 0.99,
+  "avg_lead_changes": 1.0,
   "median_first_score_sec": 336,
-  "home_scored_first_pct": 59.8,
-  "first_team_win_pct": 70.8
+  "home_scored_first_pct": 59.7,
+  "first_team_win_pct": 70.9
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -13531,9 +13545,9 @@
    "avg_per_game": 0.78
   },
   "Florida State Seminoles": {
-   "games": 9,
-   "lead_changes": 12,
-   "avg_per_game": 1.33
+   "games": 10,
+   "lead_changes": 14,
+   "avg_per_game": 1.4
   },
   "North Carolina Tar Heels": {
    "games": 9,
@@ -14021,9 +14035,9 @@
    "avg_per_game": 1.7
   },
   "Pittsburgh Panthers": {
-   "games": 9,
-   "lead_changes": 5,
-   "avg_per_game": 0.56
+   "games": 10,
+   "lead_changes": 7,
+   "avg_per_game": 0.7
   },
   "Mississippi Valley State Delta Devils": {
    "games": 1,
