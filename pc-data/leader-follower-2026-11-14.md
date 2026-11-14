@@ -8,3 +8,9 @@
 ## 2026-11-14T07:50:42-05:00 — 81 games, 0 leads credited, 8 started games skipped
 ## 2026-11-14T09:14:13-05:00 — 81 games, 1 leads credited, 8 started games skipped
 LEAD: Caesars on Wisconsin @ Maryland | 2026-11-14 (spread)
+## 2026-11-14T10:32:18-05:00 — no-follow: Caesars Dolphins @ Colts | 2026-11-14 spread (only 2 followed)
+## 2026-11-14T10:32:18-05:00 — pack move, never credited: Wisconsin @ Maryland | 2026-11-14 spread (Caesars, FanDuel)
+## 2026-11-14T10:32:18-05:00 — pack move, never credited: Georgia Southern @ Georgia State | 2026-11-14 spread (BetMGM, bet365)
+## 2026-11-14T10:32:18-05:00 — pack move, never credited: Stanford @ Virginia Tech | 2026-11-14 spread (BetMGM, Caesars, DraftKings, bet365)
+## 2026-11-14T10:32:18-05:00 — pack move, never credited: UNLV @ New Mexico | 2026-11-14 spread (Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-14T10:32:18-05:00 — 81 games, 0 leads credited, 8 started games skipped
