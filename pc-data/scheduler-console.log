@@ -7825,3 +7825,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 06:30:56 ET] hung_number.py: OK in 77s — No new hung numbers (23 current flags).
 [2026-11-14 06:31:01 ET] rlm.py: OK in 6s
 [2026-11-14 06:31:05 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 06:45:30 ET] sync_to_github.py: OK in 865s —   ok: wide-builds-board-pc.html
+[2026-11-14 06:46:04 ET] notify.py: OK in 34s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 06:47:42 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 215 events (129 with odds), db total 273853 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 06:54:44 ET] dh_key_number_middles.py: OK in 421s — key-number-middles: 100 basketball rows excluded (football-only rule).
+[2026-11-14 06:57:31 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 165s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
