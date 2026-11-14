@@ -9690,18 +9690,32 @@
    "winner": "Memphis Tigers"
   },
   {
-   "date": "2026-11-13",
    "away": "Florida State Seminoles",
-   "home": "Pittsburgh Panthers",
+   "date": "2026-11-13",
+   "final": "16-10",
    "first": "Florida State Seminoles",
-   "first_side": "away",
-   "first_kind": "FG",
    "first_elapsed_sec": 679,
-   "winner": "Florida State Seminoles",
-   "seq": "3-0>6-0>6-7>13-7>13-10>16-10",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "Pittsburgh Panthers",
    "lead_changes": 2,
+   "seq": "3-0>6-0>6-7>13-7>13-10>16-10",
    "ties": 0,
-   "final": "16-10"
+   "winner": "Florida State Seminoles"
+  },
+  {
+   "date": "2026-11-13",
+   "away": "Illinois Fighting Illini",
+   "home": "UCLA Bruins",
+   "first": "UCLA Bruins",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 143,
+   "winner": "UCLA Bruins",
+   "seq": "0-7>0-10>0-12>7-12>7-19>14-19>14-22",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "14-22"
   }
  ],
  "tally": {
@@ -10234,7 +10248,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Illinois Fighting Illini": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 4,
    "kinds": {
     "FG": 1,
@@ -10244,9 +10258,9 @@
    "won_when_first": 3,
    "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 44.4,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 75.0,
-   "win_pct_when_not_first": 60.0,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 25.0
   },
   "UAlbany Great Danes": {
@@ -12282,17 +12296,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "UCLA Bruins": {
-   "gp": 9,
-   "scored_first": 7,
+   "gp": 10,
+   "scored_first": 8,
    "kinds": {
     "FG": 4,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 7,
+   "won_when_first": 8,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 80.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 100.0,
    "won_by_one_when_first_pct": 0.0
@@ -13483,19 +13497,19 @@
   }
  },
  "league": {
-  "games": 693,
-  "home_scored_first": 414,
-  "first_team_won": 491,
+  "games": 694,
+  "home_scored_first": 415,
+  "first_team_won": 492,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 195,
-   "TD": 496,
+   "TD": 497,
    "Safety": 2
   },
-  "avg_lead_changes": 1.0,
+  "avg_lead_changes": 0.99,
   "median_first_score_sec": 336,
-  "home_scored_first_pct": 59.7,
+  "home_scored_first_pct": 59.8,
   "first_team_win_pct": 70.9
  },
  "lead_change_team_avgs": {
@@ -13665,9 +13679,9 @@
    "avg_per_game": 1.44
   },
   "Illinois Fighting Illini": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 4,
-   "avg_per_game": 0.44
+   "avg_per_game": 0.4
   },
   "UAlbany Great Danes": {
    "games": 1,
@@ -14305,9 +14319,9 @@
    "avg_per_game": 0.88
   },
   "UCLA Bruins": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 6,
-   "avg_per_game": 0.67
+   "avg_per_game": 0.6
   },
   "California Golden Bears": {
    "games": 9,
