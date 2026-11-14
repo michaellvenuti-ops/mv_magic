@@ -7947,3 +7947,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 10:48:38 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 216 events (130 with odds), db total 275795 snapshots / 960 events, feeds ok 6 fail 0
 [2026-11-14 10:48:39 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Miami (OH) Evansville Today 2:00 PM — Total — Over 151.5 HardRock -115 ($98) / Under 155.5 Fanatics-NJ -125 ($102) — both win 152, 153, 154, 15
 [2026-11-14 10:48:39 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-14 11:03:13 ET] sync_to_github.py: FAILED (exit 1) in 874s —   FAILED: sog-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at 9952fef4955d71b01f487b6286942c214470bea3 but expected 61f08fdbc088d2714ab8642590f071
+[2026-11-14 11:08:25 ET] dh_game_middles.py: OK in 312s — GAME MIDDLE: NCAAF Boston College 3 Notre Dame Today 3:30 PM / table / Alt Spread Notre Dame -26 / Alt Spread Boston College +26.5 / table | Bally Bet | FanDuel
+[2026-11-14 11:08:32 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS UNLV @ New Mexico | 2026-11-14 | Fanatics | New Mexico spread -14.5 (median -16.5 -> -17.5)
+[2026-11-14 11:10:32 ET] dh_prop_middles.py: OK in 119s — prop-middles: no new/changed qualifying middles.
+[2026-11-14 11:12:03 ET] dh_sog_middles.py: OK in 91s — - 0 deliverables this run
+[2026-11-14 11:12:06 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 11:12:07 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 11:12:08 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 11:12:10 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 11:12:11 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 11:12:12 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 11:12:13 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 11:12:14 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-14 11:12:18 ET] totals_scan.py: OK in 4s — totals: no new flags (silent).
+[2026-11-14 11:12:23 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-14 11:13:41 ET] dh_derivative_ev.py: FAILED (exit 2) in 78s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-14.txt. No prices i
+[2026-11-14 11:13:41 ET] syncing to GitHub (regular 10-minute sync)
