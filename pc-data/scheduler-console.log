@@ -7706,3 +7706,21 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 02:23:19 ET] dh_game_middles.py: OK in 98s — GAME MIDDLE: NCAAF Wisconsin Maryland Today 12:00 PM / table / Alt Spread Maryland +12 / Alt Spread Wisconsin -11.5 / table | BetRivers | theScore — window 262.
 [2026-11-14 02:27:09 ET] dh_key_number_middles.py: OK in 231s — key-number-middles: 161 basketball rows excluded (football-only rule).
 [2026-11-14 02:30:51 ET] dh_basketball_key_middles.py: OK in 222s — basketball-key-middles: no new basketball middles.
+[2026-11-14 02:45:02 ET] sync_to_github.py: OK in 850s —   ok: wide-builds-board-pc.html
+[2026-11-14 02:45:36 ET] notify.py: OK in 34s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 02:47:18 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 215 events (129 with odds), db total 271488 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 02:47:18 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 02:49:13 ET] hung_number.py: OK in 115s — No new hung numbers (23 current flags).
+[2026-11-14 02:49:20 ET] rlm.py: OK in 7s
+[2026-11-14 02:49:24 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 02:49:28 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 02:53:52 ET] dh_prop_middles.py: OK in 264s — PROP MIDDLE CLEAN : NFL MIN Vikings GB Packers Nov-15 1:00 PM / table / Receiving Yards J. Addison Over 47.5 / Receiving Yards J. Addison Under 49.5 / table | B
+[2026-11-14 02:56:18 ET] dh_sog_middles.py: OK in 146s — - 0 deliverables this run
+[2026-11-14 02:56:21 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 02:56:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 02:56:23 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 02:56:24 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 02:56:26 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 02:56:27 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 02:56:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 02:56:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
