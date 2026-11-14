@@ -9,3 +9,6 @@
 ## 2026-11-14T07:18:37-05:00 — 67 games, 0 steam events, 0 NEW flags, 7 started games skipped
 ## 2026-11-14T08:12:42-05:00 — 67 games, 0 steam events, 0 NEW flags, 7 started games skipped
 ## 2026-11-14T09:14:16-05:00 — 67 games, 0 steam events, 0 NEW flags, 7 started games skipped
+## 2026-11-14T10:05:52-05:00 — 67 games, 1 steam events, 2 NEW flags, 7 started games skipped
+NEW FLAG: FBS Stanford @ Virginia Tech | 2026-11-14 — FanDuel still dealing spread -15.5 on Virginia Tech (pre-move median -15.5, now -16.5)
+NEW FLAG: FBS Stanford @ Virginia Tech | 2026-11-14 — Fanatics still dealing spread -15.0 on Virginia Tech (pre-move median -15.5, now -16.5)
