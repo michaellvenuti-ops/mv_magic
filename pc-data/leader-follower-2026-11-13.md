@@ -71,3 +71,4 @@
 LEAD: DraftKings on Utah @ Arizona | 2026-11-13 (spread)
 ## 2026-11-13T21:58:26-05:00 — pack move, never credited: California @ Virginia | 2026-11-13 spread (BetMGM, Caesars, DraftKings)
 ## 2026-11-13T21:58:26-05:00 — 81 games, 0 leads credited, 7 started games skipped
+## 2026-11-13T23:11:36-05:00 — 81 games, 0 leads credited, 8 started games skipped
