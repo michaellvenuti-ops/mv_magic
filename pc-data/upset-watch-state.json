@@ -5420,11 +5420,17 @@
    "sport": "CFB",
    "matchup": "North Alabama at West Georgia",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 14.0,
    "fav_team": "North Alabama",
-   "dog_team": "West Georgia"
+   "dog_team": "West Georgia",
+   "alerted_at": "2026-11-14T14:08:02",
+   "board_read_at": "2026-11-14T14:08:02",
+   "alert_expires_at": "2026-11-14T14:13:02",
+   "alert_detail": "12:36 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 7
   },
   "401868260": {
    "sport": "CFB",
@@ -9571,7 +9577,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Saint Joseph's",
    "dog_team": "Penn"
   },
