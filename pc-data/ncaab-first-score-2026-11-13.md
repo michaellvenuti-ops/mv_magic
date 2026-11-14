@@ -53,3 +53,16 @@
 - 2026-11-13: Georgia Southern Eagles @ UCF Knights — first: UCF Knights (2PT, 1:10 in); lead changes 0; final 70-84
 - 2026-11-13: Milwaukee Panthers @ TCU Horned Frogs — first: TCU Horned Frogs (2PT, 0:21 in); lead changes 12; final 64-76
 - 2026-11-13: Fairleigh Dickinson Knights @ Oklahoma Sooners — first: Oklahoma Sooners (3PT, 0:28 in); lead changes 0; final 58-74
+## 2026-11-13T23:35:28-05:00 -- NCAAB FIRST SCORE (PC): 12 new final(s) tallied; season 555 games through 2026-11-13
+- 2026-11-13: Lindenwood Lions @ Omaha Mavericks — first: Lindenwood Lions (3PT, 0:16 in); lead changes 7; final 56-67
+- 2026-11-13: Ball State Cardinals @ SMU Mustangs — first: SMU Mustangs (3PT, 0:13 in); lead changes 0; final 65-90
+- 2026-11-13: Xavier Musketeers @ Mississippi State Bulldogs — first: Mississippi State Bulldogs (2PT, 0:29 in); lead changes 1; final 81-63
+- 2026-11-13: Mississippi Valley State Delta Devils @ Oregon State Beavers — first: Mississippi Valley State Delta Devils (3PT, 0:38 in); lead changes 1; final 65-81
+- 2026-11-13: Chicago State Cougars @ San Diego Toreros — first: San Diego Toreros (2PT, 0:57 in); lead changes 6; final 67-87
+- 2026-11-13: Arizona Wildcats @ Auburn Tigers — first: Auburn Tigers (3PT, 1:31 in); lead changes 15; final 80-69
+- 2026-11-13: Seton Hall Pirates @ Alabama Crimson Tide — first: Alabama Crimson Tide (2PT, 1:08 in); lead changes 4; final 76-82
+- 2026-11-13: Stanford Cardinal @ UNLV Rebels — first: UNLV Rebels (2PT, 0:25 in); lead changes 4; final 68-76
+- 2026-11-13: Corban Warriors @ Eastern Washington Eagles — first: Corban Warriors (2PT, 0:31 in); lead changes 1; final 68-102
+- 2026-11-13: Cal Poly Mustangs @ Idaho Vandals — first: Cal Poly Mustangs (3PT, 0:13 in); lead changes 2; final 83-74
+- 2026-11-13: UL Monroe Warhawks @ Arizona State Sun Devils — first: UL Monroe Warhawks (3PT, 1:06 in); lead changes 1; final 62-92
+- 2026-11-13: DePaul Blue Demons @ Northwestern Wildcats — first: Northwestern Wildcats (FT, 0:27 in); lead changes 5; final 67-47
