@@ -10,3 +10,5 @@
 - 2026-11-13: Cleveland Cavaliers @ Miami Heat — first: Miami Heat (2PT, 0:53 in); lead changes 12; final 121-133
 - 2026-11-13: Atlanta Hawks @ Chicago Bulls — first: Atlanta Hawks (2PT, 1:02 in); lead changes 5; final 117-125
 - 2026-11-13: Memphis Grizzlies @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 1:02 in); lead changes 5; final 142-111
+## 2026-11-13T23:35:24-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 172 games through 2026-11-13
+- 2026-11-13: Utah Jazz @ Houston Rockets — first: Utah Jazz (3PT, 0:21 in); lead changes 11; final 118-125
