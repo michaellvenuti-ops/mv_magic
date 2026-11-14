@@ -4601,7 +4601,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Missouri St",
-   "dog_team": "New Mexico St"
+   "dog_team": "New Mexico St",
+   "final": true
   },
   "401871060": {
    "sport": "CFB",
@@ -4682,7 +4683,8 @@
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Virginia",
-   "dog_team": "California"
+   "dog_team": "California",
+   "final": true
   },
   "401862826": {
    "sport": "CFB",
@@ -4702,7 +4704,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "Nevada",
-   "dog_team": "N Illinois"
+   "dog_team": "N Illinois",
+   "final": true
   },
   "401869952": {
    "sport": "CFB",
@@ -4712,7 +4715,8 @@
    "fav": "away",
    "spread": 5.5,
    "fav_team": "GA Southern",
-   "dog_team": "Georgia St"
+   "dog_team": "Georgia St",
+   "final": true
   },
   "401870752": {
    "sport": "CFB",
@@ -4738,17 +4742,24 @@
    "alert_expires_at": "2026-11-14T16:45:02",
    "alert_detail": "8:49 - 2nd Quarter",
    "alert_fav_score": 7,
-   "alert_dog_score": 10
+   "alert_dog_score": 10,
+   "final": true
   },
   "401860916": {
    "sport": "CFB",
    "matchup": "Fresno St at Texas St",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Texas St",
-   "dog_team": "Fresno St"
+   "dog_team": "Fresno St",
+   "alerted_at": "2026-11-14T18:54:02",
+   "board_read_at": "2026-11-14T18:54:02",
+   "alert_expires_at": "2026-11-14T18:59:02",
+   "alert_detail": "10:33 - 4th Quarter",
+   "alert_fav_score": 31,
+   "alert_dog_score": 35
   },
   "401856887": {
    "sport": "CFB",
@@ -4852,7 +4863,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 14.0,
+   "spread": 14.5,
    "fav_team": "Air Force",
    "dog_team": "San Jos\u00e9 St"
   },
@@ -5612,7 +5623,8 @@
    "fav": "home",
    "spread": 14.0,
    "fav_team": "Alabama A&M",
-   "dog_team": "Texas Southern"
+   "dog_team": "Texas Southern",
+   "final": true
   },
   "401868332": {
    "sport": "CFB",
@@ -5633,7 +5645,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Alcorn St",
-   "dog_team": "Southern"
+   "dog_team": "Southern",
+   "final": true
   },
   "401868940": {
    "sport": "CFB",
@@ -5697,7 +5710,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "W Carolina",
-   "dog_team": "Samford"
+   "dog_team": "Samford",
+   "final": true
   },
   "401868091": {
    "sport": "CFB",
@@ -9668,7 +9682,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "Campbell",
-   "dog_team": "SC Upstate"
+   "dog_team": "SC Upstate",
+   "final": true
   },
   "401927387": {
    "sport": "NCAAB",
@@ -9804,7 +9819,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 34.5,
+   "spread": 33.5,
    "fav_team": "Villanova",
    "dog_team": "Rider"
   },
@@ -9854,7 +9869,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Wichita St",
    "dog_team": "Austin Peay"
   },
@@ -10074,7 +10089,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Timberwolves",
    "dog_team": "Bulls"
   }
