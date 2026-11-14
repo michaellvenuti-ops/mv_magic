@@ -7755,3 +7755,17 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 04:16:50 ET] hung_number.py: OK in 80s — No new hung numbers (22 current flags).
 [2026-11-14 04:16:55 ET] rlm.py: OK in 5s
 [2026-11-14 04:16:59 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 04:31:12 ET] sync_to_github.py: FAILED (exit 1) in 852s —   FAILED: pc-data/scan-grades/nba-overs.json (HTTP 409: {'error': '{"message":"is at 485dc645df17134565280f54480d7bec79dba28f but expected 0d155d1a19c1e10381937
+[2026-11-14 04:32:47 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 215 events (129 with odds), db total 272348 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 04:32:48 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 04:32:51 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 04:34:39 ET] dh_prop_middles.py: OK in 108s — PROP MIDDLE CLEAN : NBA DEN Nuggets NO Pelicans Today 7:15 PM / table / Pts+Ast+Rebs S. Bey Under 25.5 / Pts+Ast+Rebs S. Bey 25+ / table | HardRock | Bet365 — w
+[2026-11-14 04:36:50 ET] dh_sog_middles.py: OK in 131s — - 0 deliverables this run
+[2026-11-14 04:36:53 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +1.4c vs +EV.
+[2026-11-14 04:36:54 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 04:36:56 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 04:36:57 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 303 total tallied.
+[2026-11-14 04:36:58 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 559 total tallied.
+[2026-11-14 04:37:00 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 695 total tallied.
+[2026-11-14 04:37:00 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 04:37:02 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
