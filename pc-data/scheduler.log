@@ -7864,3 +7864,13 @@
 [2026-11-14 09:18:43 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-14.json (5 markets).
 [2026-11-14 09:19:31 ET] yahoo_brief.py: OK in 48s — SUMMARY: signed_in=None — report written, no extraction
 [2026-11-14 09:19:32 ET] half_percent.py: OK in 1s — half-percent: weekend — no run.
+[2026-11-14 09:34:20 ET] sync_to_github.py: OK in 888s —   ok: wide-builds-board-pc.html
+[2026-11-14 09:34:45 ET] notify.py: OK in 25s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 09:36:22 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 216 events (130 with odds), db total 275147 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-14 09:41:27 ET] dh_key_number_middles.py: OK in 305s — key-number-middles: 175 basketball rows excluded (football-only rule).
+[2026-11-14 09:45:44 ET] dh_basketball_key_middles.py: OK in 255s — basketball-key-middles: no new basketball middles.
+[2026-11-14 09:45:48 ET] nba_overs_grade_run.py: OK in 4s — }
+[2026-11-14 09:45:49 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 3-4-0, $-98.71 (inverse money only where an opposite price was recorded)
+[2026-11-14 09:45:51 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-14 09:45:52 ET] half_percent.py: OK in 1s — half-percent recheck: 09:45 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-14 09:45:55 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
