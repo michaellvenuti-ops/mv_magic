@@ -34,3 +34,11 @@ NEW FLAG: FBS UNLV @ New Mexico | 2026-11-13 — Fanatics still dealing spread -
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — FanDuel still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — Fanatics still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
 NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — Kalshi still dealing spread -14.5 on Boise State (pre-move median -14.5, now -15.5)
+## 2026-11-13T20:20:49-05:00 — 67 games, 4 steam events, 7 NEW flags, 5 started games skipped
+NEW FLAG: FBS Oregon State @ Boise State | 2026-11-13 — bet365 still dealing spread -15.5 on Boise State (pre-move median -15.5, now -16.5)
+NEW FLAG: FBS Minnesota @ Penn State | 2026-11-13 — FanDuel still dealing spread -10.5 on Penn State (pre-move median -10.5, now -11.5)
+NEW FLAG: FBS Minnesota @ Penn State | 2026-11-13 — Fanatics still dealing spread -9.5 on Penn State (pre-move median -10.5, now -11.5)
+NEW FLAG: FBS Minnesota @ Penn State | 2026-11-13 — Kalshi still dealing spread -10.5 on Penn State (pre-move median -10.5, now -11.5)
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-13 — Fanatics still dealing spread -12.5 on Air Force (pre-move median -12.5, now -13.5)
+NEW FLAG: FBS Utah @ Arizona | 2026-11-13 — Fanatics still dealing spread 2.5 on Arizona (pre-move median 2.5, now 1.5)
+NEW FLAG: FBS Utah @ Arizona | 2026-11-13 — Kalshi still dealing spread 2.5 on Arizona (pre-move median 2.5, now 1.5)
