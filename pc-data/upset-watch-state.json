@@ -4397,7 +4397,8 @@
    "alert_expires_at": "2026-11-14T12:35:02",
    "alert_detail": "4:53 - 1st Quarter",
    "alert_fav_score": 0,
-   "alert_dog_score": 3
+   "alert_dog_score": 3,
+   "final": true
   },
   "401858301": {
    "sport": "CFB",
@@ -4407,7 +4408,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "SMU",
-   "dog_team": "Wake Forest"
+   "dog_team": "Wake Forest",
+   "final": true
   },
   "401856859": {
    "sport": "CFB",
@@ -4438,7 +4440,8 @@
    "fav": "away",
    "spread": 3.0,
    "fav_team": "Syracuse",
-   "dog_team": "NC State"
+   "dog_team": "NC State",
+   "final": true
   },
   "401858520": {
    "sport": "CFB",
@@ -4448,7 +4451,8 @@
    "fav": "away",
    "spread": 8.5,
    "fav_team": "Wisconsin",
-   "dog_team": "Maryland"
+   "dog_team": "Maryland",
+   "final": true
   },
   "401861967": {
    "sport": "CFB",
@@ -4458,7 +4462,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "James Madison",
-   "dog_team": "UConn"
+   "dog_team": "UConn",
+   "final": true
   },
   "401858297": {
    "sport": "CFB",
@@ -4484,7 +4489,8 @@
    "fav": "away",
    "spread": 15.5,
    "fav_team": "Nebraska",
-   "dog_team": "Rutgers"
+   "dog_team": "Rutgers",
+   "final": true
   },
   "401856889": {
    "sport": "CFB",
@@ -4614,7 +4620,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "Indiana",
    "dog_team": "USC"
   },
@@ -4724,7 +4730,7 @@
    "date": "2026-11-14",
    "alerted": false,
    "fav": "home",
-   "spread": 10.0,
+   "spread": 10.5,
    "fav_team": "Texas St",
    "dog_team": "Fresno St"
   },
@@ -4854,7 +4860,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "LSU",
    "dog_team": "Texas"
   },
@@ -5099,7 +5105,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Morgan St",
-   "dog_team": "Norfolk St"
+   "dog_team": "Norfolk St",
+   "final": true
   },
   "401868014": {
    "sport": "CFB",
@@ -5109,7 +5116,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Fordham",
-   "dog_team": "Georgetown"
+   "dog_team": "Georgetown",
+   "final": true
   },
   "401868027": {
    "sport": "CFB",
@@ -5168,7 +5176,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "Duquesne",
-   "dog_team": "Mercyhurst"
+   "dog_team": "Mercyhurst",
+   "final": true
   },
   "401870842": {
    "sport": "CFB",
@@ -5293,11 +5302,17 @@
    "sport": "CFB",
    "matchup": "Valparaiso at Stetson",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Valparaiso",
-   "dog_team": "Stetson"
+   "dog_team": "Stetson",
+   "alerted_at": "2026-11-14T15:36:03",
+   "board_read_at": "2026-11-14T15:36:03",
+   "alert_expires_at": "2026-11-14T15:41:03",
+   "alert_detail": "12:31 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 6
   },
   "401868344": {
    "sport": "CFB",
@@ -9274,7 +9289,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Marshall",
-   "dog_team": "Youngstown St"
+   "dog_team": "Youngstown St",
+   "final": true
   },
   "401920693": {
    "sport": "NCAAB",
