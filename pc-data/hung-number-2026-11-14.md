@@ -1,28 +1,25 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 10:30)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 12:03)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Wisconsin vs Maryland | DraftKings | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
-- Wisconsin vs Maryland | Fanatics | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
-- Wake Forest vs SMU | BetMGM | spread | value: dog | book 60.5 vs median 1.5 | div 59.0 middle pairing spans key number 7
-- Wake Forest vs SMU | BetMGM | moneyline Wake Forest | value: Wake Forest | book 98.0 vs median 49.3 | div 48.8 
-- Georgia Tech vs Clemson | FanDuel | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
-- UAB vs Temple | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Arkansas State vs Coastal Carolina | BetMGM | spread | value: dog | book 52.5 vs median 1.5 | div 51.0 middle pairing spans key number 7
-- Arkansas State vs Coastal Carolina | BetMGM | moneyline Arkansas State | value: Arkansas State | book 98.0 vs median 50.5 | div 47.5 
-- Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.5 | div 4.0 
-- Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 23.3 | div 5.1 
-- Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 81.0 | div 5.7 
+- Wisconsin vs Maryland | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- Nebraska vs Rutgers | BetMGM | spread | value: favorite | book -16.0 vs median -15.0 | div 1.0 
+- Tennessee vs Texas A&M | FanDuel | spread | value: dog | book 1.5 vs median -1.25 | div 2.75 
+- Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.0 | div 4.5 
+- Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 24.4 | div 6.2 
+- Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 80.0 | div 6.7 
 - California vs Virginia | bet365 | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- USC vs Indiana | Fanatics | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Missouri vs Georgia | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
-- Minnesota vs Penn State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Boston College vs Notre Dame | Fanatics | spread | value: favorite | book 28.5 vs median 29.5 | div 1.0 
 - Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
 - Florida Atlantic vs Tulsa | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
-- Stanford vs Virginia Tech | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
-- Stanford vs Virginia Tech | Fanatics | spread | value: favorite | book 15.0 vs median 16.5 | div 1.5 
+- Stanford vs Virginia Tech | Fanatics | spread | value: favorite | book 15.0 vs median 17.25 | div 2.25 
 - UNLV vs New Mexico | Fanatics | spread | value: favorite | book 14.5 vs median 17.5 | div 3.0 
 - Utah vs Arizona | Fanatics | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Colorado State vs Washington State | FanDuel | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Utah vs Arizona | Fanatics | moneyline Arizona | value: Arizona | book 46.5 vs median 51.6 | div 5.1 
+- Utah vs Arizona | Fanatics | moneyline Utah | value: Utah | book 58.3 vs median 53.1 | div 5.3 
+- Colorado State vs Washington State | Fanatics | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Colorado State vs Washington State | Fanatics | total | value: Over | book 66.5 vs median 65.0 | div 1.5 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
