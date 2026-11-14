@@ -8036,3 +8036,7 @@
 [2026-11-14 15:04:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 15:04:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-14 15:04:46 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 15:20:20 ET] sync_to_github.py: FAILED (exit 1) in 934s —   FAILED: pc-data/sog-middles-state-polluted-20261110.json (HTTP 409: {'error': '{"message":"is at 9d83695d181b6cc523b199b663b388661d39577f but expected 82f5729
+[2026-11-14 15:22:05 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 234 events (123 with odds), db total 277901 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 15:22:06 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL CAR Panthers NO Saints Nov-15 1:00 PM — Rec + Rush Yards T. Etienne — Over 49.5 DraftKings +114 ($92) / Under 52.5 BetRivers -122 ($108) — both w
+[2026-11-14 15:22:07 ET] syncing to GitHub (wide-builds banked new builds)
