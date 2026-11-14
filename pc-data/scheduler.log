@@ -7461,3 +7461,7 @@
 [2026-11-13 19:36:46 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 692 total tallied.
 [2026-11-13 19:36:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-13; skipping.
 [2026-11-13 19:36:48 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
+[2026-11-13 19:51:08 ET] sync_to_github.py: FAILED (exit 1) in 860s —   FAILED: prop-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at fbe92746157325c26ce24507e737cee98256a2ed but expected d92f63e542cdf2c3811a41047123f
+[2026-11-13 19:53:44 ET] odds_recorder.py: OK in 125s — SUMMARY: recorded 216 events (168 with odds), db total 267171 snapshots / 960 events, feeds ok 6 fail 0
+[2026-11-13 19:56:27 ET] dh_game_middles.py: OK in 163s — GAME MIDDLE: NCAAF Tulane Rice Nov-14 2:00 PM / table / Alt Spread Rice -0.5 / Alt Spread Tulane +1.5 / table | Bally Bet | FanDuel — window 264.0 :: -136 $1,00
+[2026-11-13 20:00:07 ET] dh_key_number_middles.py: OK in 221s — key-number-middles: 286 basketball rows excluded (football-only rule).
