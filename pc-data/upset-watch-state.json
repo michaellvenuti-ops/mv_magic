@@ -4796,7 +4796,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 14.0,
+   "spread": 13.5,
    "fav_team": "Air Force",
    "dog_team": "San Jos\u00e9 St"
   },
@@ -8680,7 +8680,8 @@
    "fav": "home",
    "spread": 42.5,
    "fav_team": "Duke",
-   "dog_team": "SIUE"
+   "dog_team": "SIUE",
+   "final": true
   },
   "401916297": {
    "sport": "NCAAB",
@@ -8701,7 +8702,8 @@
    "spread": 22.5,
    "fav_team": "Arkansas",
    "dog_team": "C Arkansas",
-   "live_ml": -10000
+   "live_ml": -10000,
+   "final": true
   },
   "401929199": {
    "sport": "NCAAB",
@@ -8743,7 +8745,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Wright St",
-   "dog_team": "Samford"
+   "dog_team": "Samford",
+   "final": true
   },
   "401925686": {
    "sport": "NCAAB",
@@ -8762,13 +8765,15 @@
    "alert_fav_score": 61,
    "alert_dog_score": 62,
    "alert_ml": -188,
-   "ml_read_at": "2026-11-13T21:44:03"
+   "ml_read_at": "2026-11-13T21:44:03",
+   "final": true
   },
   "401924953": {
    "sport": "NCAAB",
    "matchup": "Biblical Stud at Hou Christian",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921026": {
    "sport": "NCAAB",
@@ -8778,7 +8783,8 @@
    "fav": "home",
    "spread": 22.5,
    "fav_team": "UCF",
-   "dog_team": "GA Southern"
+   "dog_team": "GA Southern",
+   "final": true
   },
   "401920123": {
    "sport": "NCAAB",
@@ -8799,7 +8805,8 @@
    "spread": 22.5,
    "fav_team": "TCU",
    "dog_team": "Milwaukee",
-   "live_ml": -1750
+   "live_ml": -1750,
+   "final": true
   },
   "401906804": {
    "sport": "NCAAB",
@@ -8809,7 +8816,8 @@
    "fav": "home",
    "spread": 31.5,
    "fav_team": "Oklahoma",
-   "dog_team": "FDU"
+   "dog_team": "FDU",
+   "final": true
   },
   "401929040": {
    "sport": "NCAAB",
@@ -9021,7 +9029,7 @@
    "spread": 15.5,
    "fav_team": "Rockets",
    "dog_team": "Jazz",
-   "live_ml": -700
+   "live_ml": -250
   },
   "401909302": {
    "sport": "NBA",
