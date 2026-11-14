@@ -4359,7 +4359,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "UCLA",
-   "dog_team": "Illinois"
+   "dog_team": "Illinois",
+   "final": true
   },
   "401856860": {
    "sport": "CFB",
@@ -4935,11 +4936,17 @@
    "sport": "CFB",
    "matchup": "Southern Utah at Portland St",
    "date": "2026-11-14",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 11.5,
    "fav_team": "Southern Utah",
-   "dog_team": "Portland St"
+   "dog_team": "Portland St",
+   "alerted_at": "2026-11-14T00:54:02",
+   "board_read_at": "2026-11-14T00:54:02",
+   "alert_expires_at": "2026-11-14T00:59:02",
+   "alert_detail": "1:51 - 4th Quarter",
+   "alert_fav_score": 20,
+   "alert_dog_score": 21
   },
   "401866687": {
    "sport": "CFB",
@@ -8964,7 +8971,8 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Portland",
-   "dog_team": "East Texas A&M"
+   "dog_team": "East Texas A&M",
+   "final": true
   },
   "401917525": {
    "sport": "NCAAB",
