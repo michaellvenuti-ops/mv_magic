@@ -41,3 +41,6 @@ NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — BetMGM stil
 NEW FLAG: FBS Jacksonville State @ Western Kentucky | 2026-11-14 — Kalshi still dealing total 74.5 on Under (pre-move median 65.5, now 51.5)
 NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — Kalshi still dealing spread -7.5 on Florida International (pre-move median -7.5, now -4.0)
 ## 2026-11-14T19:53:11-05:00 — 67 games, 4 steam events, 0 NEW flags, 48 started games skipped
+## 2026-11-14T20:57:27-05:00 — 67 games, 3 steam events, 2 NEW flags, 48 started games skipped
+NEW FLAG: FBS Appalachian State @ Marshall | 2026-11-14 — Kalshi still dealing total 45.5 on Under (pre-move median 45.5, now 42.5)
+NEW FLAG: FBS San Jose State @ Air Force | 2026-11-14 — Kalshi still dealing total 45.5 on Under (pre-move median 40.5, now 38.5)
