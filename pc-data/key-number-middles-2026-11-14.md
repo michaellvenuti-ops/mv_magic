@@ -86,3 +86,7 @@ NEW MIDDLE: KEY 4: NCAAF Louisville North Carolina Today 7:00 PM / table bar_cha
 KEY 4: NCAAF Louisville North Carolina Today 7:00 PM / table bar_chart / Alt Spread North Carolina +4.5 / Alt Spread Louisville -3.5 / table | ProphetX | Bally Bet margins [4] :: -115 [53.49%] $1,000 ProphetX, ProphetX, -115 / +104 $908 Bally Bet, Bally Bet, +104
 ## 2026-11-14T18:36:42-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1952 + 0 rows parsed, qualifying only below — 0 NEW middles
 KEY 4: NCAAF Louisville North Carolina Today 7:00 PM / table bar_chart / Alt Spread North Carolina +4.5 / Alt Spread Louisville -3.5 / table | ProphetX | Bally Bet margins [4] :: -115 [53.49%] $1,000 ProphetX, ProphetX, -115 / +104 $908 Bally Bet, Bally Bet, +104
+## 2026-11-14T19:25:59-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1958 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 6: NCAAF UNLV 23 New Mexico Today 7:30 PM / table / 1st Quarter Spread UNLV +6.5 / 1st Quarter Spread New Mexico -4.5 / table | FanDuel | Caesars margins [5, 6] :: -112 $1,000 FanDuel, FanDuel, -112 / +101 $942 Caesars, Caesars, +101
+(end of new middles — full qualifying list below)
+KEY 6: NCAAF UNLV 23 New Mexico Today 7:30 PM / table / 1st Quarter Spread UNLV +6.5 / 1st Quarter Spread New Mexico -4.5 / table | FanDuel | Caesars margins [5, 6] :: -112 $1,000 FanDuel, FanDuel, -112 / +101 $942 Caesars, Caesars, +101
