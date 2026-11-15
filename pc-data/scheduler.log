@@ -8254,3 +8254,11 @@
 [2026-11-14 22:42:03 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-14 22:43:39 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (16 with odds), db total 281879 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-14 22:43:39 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 22:59:17 ET] sync_to_github.py: FAILED (exit 1) in 938s —   FAILED: pc-data/nhl-first-goal-2026-11-14.md (HTTP 409: {'error': '{"message":"is at e6c89b65019a3319f0418a93bd64788a84e71a4f but expected e63bccb015bea0e7586
+[2026-11-14 22:59:50 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 234 events (15 with odds), db total 282113 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 23:03:09 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: 268 basketball rows excluded (football-only rule).
+[2026-11-14 23:06:30 ET] dh_basketball_key_middles.py: OK in 201s — basketball-key-middles: no new basketball middles.
+[2026-11-14 23:07:39 ET] hung_number.py: OK in 68s — HUNG NUMBER: UNLV vs New Mexico — bet365 spread value favorite (17.5 vs median 19.0)
+[2026-11-14 23:07:43 ET] rlm.py: OK in 4s
+[2026-11-14 23:07:46 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 23:07:46 ET] syncing to GitHub (regular 10-minute sync)
