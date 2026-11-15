@@ -8448,3 +8448,20 @@
 [2026-11-15 06:19:47 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-15 06:19:49 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
 [2026-11-15 06:19:49 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 06:35:17 ET] sync_to_github.py: FAILED (exit 1) in 928s —   FAILED: pc-data/leader-follower-2026-11-07.md (HTTP 409: {'error': '{"message":"is at 5288d8bd787a458017c40385ddf53bedb93f1e86 but expected 26d84a7e0f3d8f55c9
+[2026-11-15 06:36:56 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 234 events (14 with odds), db total 285623 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 06:37:55 ET] dh_arbitrage.py: OK in 59s — ARBITRAGE: NBA HOU Rockets WAS Wizards Today 7:15 PM / table / Pts+Ast T. Eason Under 14.5 / Pts+Ast T. Eason 15+ / table | FanDuel | Bet365
+[2026-11-15 06:38:17 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 06:42:14 ET] dh_key_number_middles.py: OK in 237s — key-number-middles: 459 basketball rows excluded (football-only rule).
+[2026-11-15 06:45:53 ET] dh_basketball_key_middles.py: OK in 218s — basketball-key-middles: no new basketball middles.
+[2026-11-15 06:47:57 ET] dh_prop_middles.py: OK in 124s — PROP MIDDLE CLEAN : CFL MTL Alouettes EDM Elks Today 6:00 PM / table / Receiving Yards T. Snead Under 75.5 / Alt Recv Yards T. Snead 75+ / table | Bet365 | Ball
+[2026-11-15 06:50:21 ET] dh_sog_middles.py: OK in 144s — - 0 deliverables this run
+[2026-11-15 06:50:25 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at -0.6c vs +EV
+[2026-11-15 06:50:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-15 06:50:27 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 06:50:29 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 06:50:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 625 total tallied.
+[2026-11-15 06:50:32 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 750 total tallied.
+[2026-11-15 06:50:33 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 06:50:34 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-15 06:50:34 ET] syncing to GitHub (regular 10-minute sync)
