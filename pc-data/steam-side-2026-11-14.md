@@ -44,3 +44,6 @@ NEW FLAG: FBS Florida International @ Delaware | 2026-11-14 — Kalshi still dea
 ## 2026-11-14T20:57:27-05:00 — 67 games, 3 steam events, 2 NEW flags, 48 started games skipped
 NEW FLAG: FBS Appalachian State @ Marshall | 2026-11-14 — Kalshi still dealing total 45.5 on Under (pre-move median 45.5, now 42.5)
 NEW FLAG: FBS San Jose State @ Air Force | 2026-11-14 — Kalshi still dealing total 45.5 on Under (pre-move median 40.5, now 38.5)
+## 2026-11-14T21:47:46-05:00 — 67 games, 3 steam events, 2 NEW flags, 51 started games skipped
+NEW FLAG: FBS Florida Atlantic @ Tulsa | 2026-11-14 — BetMGM still dealing spread -13.5 on Florida Atlantic (pre-move median -13.5, now -12.5)
+NEW FLAG: FBS Florida Atlantic @ Tulsa | 2026-11-14 — DraftKings still dealing spread -13.5 on Florida Atlantic (pre-move median -13.5, now -12.5)
