@@ -16,3 +16,5 @@
 - 0 deliverables this run
 ## 2026-11-15T10:19:36-05:00 — sog-middles: 961 full-size + 0 smaller-bets rows parsed (filter=on) (compact: qualifying only below) — 0 NEW/CHANGED middles
 - 0 deliverables this run
+## 2026-11-15T11:48:22-05:00 — sog-middles: 954 full-size + 0 smaller-bets rows parsed (filter=on) (compact: qualifying only below) — 0 NEW/CHANGED middles
+- 0 deliverables this run
