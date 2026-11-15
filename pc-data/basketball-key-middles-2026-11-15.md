@@ -11,3 +11,4 @@ NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Arkansas-Pine Bluff 21 USC Today
 (end of new middles — full qualifying list below)
 NCAAB TOTAL [SPANKY] ~5.5%: NCAAB Chicago St. Loyola Marymount Today 4:00 PM / table / Total Over 138.5 / Alt Total Under 141 / table | theScore | Bet365 window [139, 140, 141] :: -110 $1,000 theScore, theScore, -110 / +100 $955 Bet365, Bet365, +100
 NCAAB SPREAD [SPANKY] ~1.4%: NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM / table / Spread USC -43.5 / Alt Spread Arkansas-Pine Bluff +45 / table | FanDuel | Bet365 window [44, 45] :: -110 $1,000 FanDuel, FanDuel, -110 / +100 $955 Bet365, Bet365, +100
+## 2026-11-15T10:15:07-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1950 + 0 rows parsed, qualifying only below — 0 NEW middles
