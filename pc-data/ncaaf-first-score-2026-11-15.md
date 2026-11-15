@@ -3,3 +3,7 @@
 - 2026-11-14: North Texas Mean Green @ UTSA Roadrunners — first: UTSA Roadrunners (TD, 5:27 in); lead changes 0; final 16-35
 - 2026-11-14: Utah State Aggies @ San Diego State Aztecs — first: Utah State Aggies (TD, 6:31 in); lead changes 1; final 13-30
 - 2026-11-14: Wyoming Cowboys @ UTEP Miners — first: UTEP Miners (TD, 6:49 in); lead changes 1; final 27-15
+## 2026-11-15T02:48:47-05:00 -- NCAAF FIRST SCORE (PC): 3 new final(s) tallied; season 750 games through 2026-11-14
+- 2026-11-14: Utah Utes @ Arizona Wildcats — first: Arizona Wildcats (TD, 5:15 in); lead changes 7; final 40-39
+- 2026-11-14: Colorado State Rams @ Washington State Cougars — first: Washington State Cougars (TD, 8:24 in); lead changes 0; final 7-73
+- 2026-11-14: North Dakota State Bison @ Hawai'i Rainbow Warriors — first: North Dakota State Bison (TD, 10:40 in); lead changes 2; final 21-13
