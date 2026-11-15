@@ -35,3 +35,14 @@
 - 2026-11-15: High Point Panthers @ Saint Louis Billikens — first: High Point Panthers (3PT, 0:40 in); lead changes 0; final 68-58
 - 2026-11-15: Creighton Bluejays @ Iowa Hawkeyes — first: Creighton Bluejays (3PT, 0:15 in); lead changes 6; final 70-69
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T18:46:54-05:00 -- NCAAB FIRST SCORE (PC): 9 new final(s) tallied; season 659 games through 2026-11-15
+- 2026-11-15: Doane Tigers @ South Dakota Coyotes — first: South Dakota Coyotes (2PT, 0:32 in); lead changes 0; final 57-81
+- 2026-11-15: Air Force Falcons @ Pacific Tigers — first: Pacific Tigers (2PT, 0:09 in); lead changes 0; final 69-93
+- 2026-11-15: New Mexico State Aggies @ San Diego State Aztecs — first: San Diego State Aztecs (2PT, 1:15 in); lead changes 4; final 61-73
+- 2026-11-15: UC Merced Bobcats @ UC Santa Barbara Gauchos — first: UC Santa Barbara Gauchos (FT, 0:17 in); lead changes 0; final 47-97
+- 2026-11-15: Mercyhurst Lakers @ James Madison Dukes — first: James Madison Dukes (FT, 0:58 in); lead changes 14; final 71-80
+- 2026-11-15: Chicago State Cougars @ Loyola Marymount Lions — first: Chicago State Cougars (FT, 0:12 in); lead changes 1; final 49-86
+- 2026-11-15: Idaho State Bengals @ Seattle U Redhawks — first: Seattle U Redhawks (2PT, 1:14 in); lead changes 4; final 70-77
+- 2026-11-15: Western Michigan Broncos @ Southern Indiana Screaming Eagles — first: Southern Indiana Screaming Eagles (3PT, 0:23 in); lead changes 3; final 80-59
+- 2026-11-15: New Haven Chargers @ Penn State Nittany Lions — first: New Haven Chargers (2PT, 1:01 in); lead changes 1; final 52-86
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
