@@ -8459,3 +8459,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 05:03:15 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-15 05:03:18 ET] steam_side.py: OK in 2s — steam-side: 67 games, no new flags (silent).
 [2026-11-15 05:03:18 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 05:19:21 ET] sync_to_github.py: OK in 963s —   ok: team-total-middles-board-pc.html
+[2026-11-15 05:21:51 ET] notify.py: OK in 150s — notify: voice clip failed (HTTP Error 413: Request Entity Too Large); text ping only.
+[2026-11-15 05:23:29 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 234 events (14 with odds), db total 285155 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 05:25:50 ET] dh_arbitrage.py: OK in 140s — arbitrage: no new qualifying pairs (silent).
+[2026-11-15 05:27:38 ET] dh_kalshi_poly_arb.py: OK in 108s — KALSHI-POLY-ARB: NCAAB Syracuse 13 St. John's Today 7:00 PM / table / Moneyline St. John's / Moneyline St. John's NO / table bar_chart | Bally Bet | Kalshi
+[2026-11-15 05:27:42 ET] wide_builds.py: OK in 3s — NEW BUILD: NCAAB New Hampshire Boston College Today 1:30 PM — Total — Over 129.5 DraftKings -140 ($106) / Under 133.5 FanDuel -108 ($94) — both win 130, 131, 13
+[2026-11-15 05:27:42 ET] syncing to GitHub (wide-builds banked new builds)
