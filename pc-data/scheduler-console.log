@@ -8358,3 +8358,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 00:49:23 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (14 with odds), db total 283517 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-15 00:49:25 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Baylor 7 Texas Today 3:00 PM — Total — Over 155.5 DraftKings -154 ($110) / Under 159.5 Bet365 +100 ($90) — both win 156, 157, 158, 159 — land +
 [2026-11-15 00:49:25 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 01:05:09 ET] sync_to_github.py: FAILED (exit 1) in 944s —   FAILED: pc-data/chet-hung-1105.log (HTTP 409: {'error': '{"message":"is at 5fc599494a99846966f6bee4b6ea588da2ab7352 but expected 9a2a43f18395554611f9b9c80aaf6
+[2026-11-15 01:06:50 ET] dh_game_middles.py: OK in 101s — GAME MIDDLE: NFL LA Rams ARI Cardinals Today 4:05 PM / table / Receiving Yards K. Williams Under 20.5 / Alt Recv Yards K. Williams 20+ / table | HardRock | Bet3
+[2026-11-15 01:06:55 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 01:06:55 ET] syncing to GitHub (regular 10-minute sync)
