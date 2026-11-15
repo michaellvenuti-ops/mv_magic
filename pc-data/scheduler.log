@@ -8505,3 +8505,30 @@
 [2026-11-15 08:47:22 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 234 events (14 with odds), db total 286559 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-15 08:47:23 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA CHA Hornets LA Clippers Today 4:45 PM — Total — Over 214 Caesars -110 ($95) / Under 218.5 FanDuel -140 ($105) — both win 215, 216, 217, 218 — pus
 [2026-11-15 08:47:23 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 09:02:51 ET] sync_to_github.py: FAILED (exit 1) in 928s —   FAILED: pc-data/promo-dashboard-dump-2026-11-12.txt (HTTP 409: {'error': '{"message":"is at 490eb5c71b4c139e360eccdb2d27eb0040c32dac but expected 6e197df73fdb
+[2026-11-15 09:04:51 ET] dh_low_holds.py: OK in 120s — low-holds: no new qualifying pairs (silent).
+[2026-11-15 09:09:19 ET] dh_key_number_middles.py: OK in 268s — key-number-middles: 816 basketball rows excluded (football-only rule).
+[2026-11-15 09:13:41 ET] dh_basketball_key_middles.py: OK in 262s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM / table / Spread USC -43.5 / Alt Spread Arkansas-Pine Bluff +4
+[2026-11-15 09:15:10 ET] hung_number.py: OK in 89s — HUNG NUMBER: 49ers vs Cowboys — Fanatics spread value dog (-3.5 vs median -4.5)
+[2026-11-15 09:15:15 ET] rlm.py: OK in 5s
+[2026-11-15 09:15:18 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 09:17:32 ET] dh_prop_middles.py: OK in 133s — PROP MIDDLE CLEAN : NFL PIT Steelers CIN Bengals Today 8:20 PM / table / Receiving Yards G. Bernard Over 47.5 / Receiving Yards G. Bernard Over 49.5 NO / table 
+[2026-11-15 09:19:52 ET] dh_sog_middles.py: OK in 140s — - 0 deliverables this run
+[2026-11-15 09:19:55 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at +0.4c vs +EV.
+[2026-11-15 09:19:56 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-15 09:19:57 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 09:19:59 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 09:20:02 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 0 new, 2 unverified, 625 total tallied.
+[2026-11-15 09:20:03 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 750 total tallied.
+[2026-11-15 09:20:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 09:20:06 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 9 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-15.json
+[2026-11-15 09:21:36 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 90s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-15.txt. No 
+[2026-11-15 09:21:37 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-15 09:21:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-15 09:21:45 ET] nhl_totals_scan.py: OK in 6s — NHL TOTALS FLAG UNDER: EDM @ PHI — predicted 5.06 vs book 6.5 (-135)
+[2026-11-15 09:21:50 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-15 09:21:53 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 9, 'NCAAB': 38}, new 0, moved 0, baselines 47.
+[2026-11-15 09:22:01 ET] futures_board.py: OK in 8s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-15.json (5 markets).
+[2026-11-15 09:22:34 ET] yahoo_brief.py: OK in 33s — SUMMARY: signed_in=None — report written, no extraction
+[2026-11-15 09:22:36 ET] score_pred.py: FAILED (exit 1) in 1s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
+[2026-11-15 09:22:36 ET] syncing to GitHub (regular 10-minute sync)
