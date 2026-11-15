@@ -8262,3 +8262,7 @@
 [2026-11-14 23:07:43 ET] rlm.py: OK in 4s
 [2026-11-14 23:07:46 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-14 23:07:46 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 23:23:26 ET] sync_to_github.py: FAILED (exit 1) in 940s —   FAILED: pc-data/arbitrage-2026-11-14.md (HTTP 409: {'error': '{"message":"is at 3ef16020a0973d7210353d142a93e62b3ed0767b but expected ec8ee8bd8c0242b13fcbe147
+[2026-11-14 23:25:02 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 234 events (14 with odds), db total 282347 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 23:25:02 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA ATL Hawks MIL Bucks Nov-15 8:15 PM — Total — Over 234 Bet365 +115 ($85) / Under 237.5 BetMGM -170 ($115) — both win 235, 236, 237 — push at 234 —
+[2026-11-14 23:25:03 ET] syncing to GitHub (wide-builds banked new builds)
