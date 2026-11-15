@@ -12,3 +12,5 @@
 ## 2026-11-15T09:15:18-05:00 — 81 games, 0 leads credited, 55 started games skipped
 ## 2026-11-15T11:04:45-05:00 — pack move, never credited: Texans @ Browns | 2026-11-15 spread (Caesars, bet365)
 ## 2026-11-15T11:04:46-05:00 — 81 games, 0 leads credited, 56 started games skipped
+## 2026-11-15T12:21:45-05:00 — pack move, never credited: Panthers @ Saints | 2026-11-15 spread (BetMGM, Caesars, Fanatics, Hard Rock)
+## 2026-11-15T12:21:46-05:00 — 81 games, 0 leads credited, 56 started games skipped
