@@ -10323,7 +10323,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Quinnipiac",
-   "dog_team": "C Connecticut"
+   "dog_team": "C Connecticut",
+   "final": true
   },
   "401918949": {
    "sport": "NCAAB",
@@ -10435,11 +10436,21 @@
    "sport": "NCAAB",
    "matchup": "SC State at Charleston",
    "date": "2026-11-15",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Charleston",
-   "dog_team": "SC State"
+   "dog_team": "SC State",
+   "live_ml": -2500,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-15T14:06:17",
+   "board_read_at": "2026-11-15T14:06:16",
+   "alert_expires_at": "2026-11-15T14:09:17",
+   "alert_detail": "17:11 - 1st Half",
+   "alert_fav_score": 5,
+   "alert_dog_score": 6,
+   "alert_ml": -2500,
+   "ml_read_at": "2026-11-15T14:06:17"
   },
   "401925812": {
    "sport": "NCAAB",
