@@ -8574,3 +8574,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 09:22:34 ET] yahoo_brief.py: OK in 33s — SUMMARY: signed_in=None — report written, no extraction
 [2026-11-15 09:22:36 ET] score_pred.py: FAILED (exit 1) in 1s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
 [2026-11-15 09:22:36 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 09:39:11 ET] sync_to_github.py: FAILED (exit 1) in 995s —   FAILED: pc-data/total-projectors-2026-11-13.md (HTTP 409: {'error': '{"message":"is at e62ad41aa63c410a72390d7d3d5e36a39477d8f0 but expected 4921e7fb180aca793
+[2026-11-15 09:40:52 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 234 events (13 with odds), db total 286793 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 09:42:02 ET] dh_arbitrage.py: OK in 70s — ARBITRAGE: NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM / table / Alt Spread Arkansas-Pine Bluff +50.5 / Alt Spread USC -50.5 / table | Bet365 | BetRivers
+[2026-11-15 09:42:30 ET] dh_kalshi_poly_arb.py: OK in 28s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 09:42:32 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 09:44:15 ET] dh_game_middles.py: OK in 103s — GAME MIDDLE: NCAAB Temple La Salle Today 2:00 PM / table / Alt Total Under 157.5 / Alt Total Over 157 / table | HardRock | Bet365 — window 310.0 :: -160 $1,000 
+[2026-11-15 09:48:08 ET] dh_key_number_middles.py: OK in 233s — key-number-middles: 642 basketball rows excluded (football-only rule).
+[2026-11-15 09:48:14 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 09:48:16 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-15 09:48:17 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 4-4-0, $+15.29 (inverse money only where an opposite price was recorded)
+[2026-11-15 09:48:18 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-15 09:48:20 ET] half_percent.py: OK in 1s — half-percent: weekend — no run.
+[2026-11-15 09:48:21 ET] half_percent.py: OK in 1s — half-percent recheck: 09:48 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-15 09:48:23 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-15 09:48:24 ET] syncing to GitHub (regular 10-minute sync)
