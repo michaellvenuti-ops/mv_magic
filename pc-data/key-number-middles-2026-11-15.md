@@ -18,3 +18,5 @@ NEW MIDDLE: KEY 14: NCAAF Arkansas St. Louisiana Tech Nov-21 7:00 PM / table / S
 (end of new middles — full qualifying list below)
 KEY 14: NCAAF Eastern Michigan Western Michigan Nov-17 6:00 PM / table / Spread Western Michigan -13.5 / Spread Eastern Michigan +14.5 / table | HardRock | theScore margins [14] :: -110 $1,000 HardRock, HardRock, -110 / -105 $978 theScore, theScore, -105
 KEY 14: NCAAF Arkansas St. Louisiana Tech Nov-21 7:00 PM / table / Spread Louisiana Tech -13.5 / Spread Arkansas St. +14.5 / table | FanDuel | DraftKings margins [14] :: -110 $1,000 FanDuel, FanDuel, -110 / -105 $978 DraftKings, DraftKings, -105
+## 2026-11-15T14:29:31-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1967 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 14: NCAAF Eastern Michigan Western Michigan Nov-17 6:00 PM / table / Spread Western Michigan -13.5 / Spread Eastern Michigan +14.5 / table | HardRock | theScore margins [14] :: -110 $1,000 HardRock, HardRock, -110 / -105 $978 theScore, theScore, -105
