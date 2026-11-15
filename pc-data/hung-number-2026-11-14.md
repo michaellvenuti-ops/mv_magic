@@ -1,35 +1,38 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 21:46)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 23:06)
 
-- Louisville vs North Carolina | Caesars | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
-- Louisville vs North Carolina | Caesars | total | value: Over | book 33.5 vs median 31.0 | div 2.5 
-- Louisville vs North Carolina | Caesars | moneyline Louisville | value: Louisville | book 77.5 vs median 85.2 | div 7.7 
-- Louisville vs North Carolina | Caesars | moneyline North Carolina | value: North Carolina | book 28.6 vs median 20.0 | div 8.6 
-- Minnesota vs Penn State | BetMGM | total | value: Under | book 47.5 vs median 56.5 | div 9.0 
-- Baylor vs BYU | BetMGM | spread | value: favorite | book 21.5 vs median 23.0 | div 1.5 
-- Baylor vs BYU | DraftKings | spread | value: favorite | book 21.5 vs median 23.0 | div 1.5 
-- Baylor vs BYU | Caesars | spread | value: dog | book 27.5 vs median 23.0 | div 4.5 
-- Baylor vs BYU | FanDuel | spread | value: dog | book 24.5 vs median 23.0 | div 1.5 
-- Baylor vs BYU | BetMGM | total | value: Under | book 28.5 vs median 30.5 | div 2.0 
-- Baylor vs BYU | Caesars | total | value: Over | book 34.5 vs median 30.5 | div 4.0 
-- Florida Atlantic vs Tulsa | Caesars | total | value: Under | book 70.5 vs median 72.5 | div 2.0 
-- UNLV vs New Mexico | BetMGM | total | value: Under | book 38.5 vs median 40.5 | div 2.0 
-- Texas vs LSU | FanDuel | spread | value: dog | book 6.5 vs median 5.5 | div 1.0 
-- Stanford vs Virginia Tech | BetMGM | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
-- Stanford vs Virginia Tech | DraftKings | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
-- Stanford vs Virginia Tech | Caesars | spread | value: dog | book -5.5 vs median -8.5 | div 3.0 
-- Stanford vs Virginia Tech | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
-- Stanford vs Virginia Tech | Caesars | total | value: Over | book 59.5 vs median 56.5 | div 3.0 
-- Stanford vs Virginia Tech | Caesars | moneyline Stanford | value: Stanford | book 71.4 vs median 82.1 | div 10.6 
-- Stanford vs Virginia Tech | Caesars | moneyline Virginia Tech | value: Virginia Tech | book 35.1 vs median 23.6 | div 11.5 
-- Purdue vs Iowa | Caesars | spread | value: dog | book 28.5 vs median 27.5 | div 1.0 
-- Purdue vs Iowa | Caesars | total | value: Over | book 51.5 vs median 49.5 | div 2.0 
-- South Carolina vs Arkansas | FanDuel | spread | value: dog | book 13.5 vs median 12.5 | div 1.0 
-- South Carolina vs Arkansas | FanDuel | total | value: Under | book 40.5 vs median 42.0 | div 1.5 
-- Texas Tech vs Oklahoma State | BetMGM | spread | value: dog | book 74.5 vs median 2.5 | div 72.0 middle pairing spans key number 7
-- Texas Tech vs Oklahoma State | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Texas Tech vs Oklahoma State | BetMGM | moneyline Oklahoma State | value: Oklahoma State | book 64.9 vs median 58.1 | div 6.9 
-- Texas Tech vs Oklahoma State | BetMGM | moneyline Texas Tech | value: Texas Tech | book 40.0 vs median 48.5 | div 8.5 
-- Colorado State vs Washington State | DraftKings | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
+- Jaguars vs Titans | Hard Rock | spread | value: favorite | book -11.5 vs median -10.5 | div 1.0 
+- Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
+- Florida Atlantic vs Tulsa | DraftKings | spread | value: favorite | book 10.5 vs median 16.5 | div 6.0 
+- Florida Atlantic vs Tulsa | Caesars | total | value: Over | book 70.5 vs median 66.5 | div 4.0 
+- Florida Atlantic vs Tulsa | FanDuel | total | value: Under | book 59.5 vs median 66.5 | div 7.0 
+- Florida Atlantic vs Tulsa | BetMGM | moneyline Florida Atlantic | value: Florida Atlantic | book 0.4 vs median 6.4 | div 6.0 
+- Stanford vs Virginia Tech | BetMGM | total | value: Under | book 57.5 vs median 62.5 | div 5.0 
+- Stanford vs Virginia Tech | Caesars | moneyline Virginia Tech | value: Virginia Tech | book 8.3 vs median 3.2 | div 5.2 
+- Texas vs LSU | BetMGM | total | value: Over | book 47.5 vs median 37.5 | div 10.0 
+- South Carolina vs Arkansas | FanDuel | spread | value: dog | book 21.5 vs median 20.5 | div 1.0 
+- South Carolina vs Arkansas | BetMGM | total | value: Over | book 39.5 vs median 36.5 | div 3.0 
+- South Carolina vs Arkansas | DraftKings | total | value: Under | book 33.5 vs median 36.5 | div 3.0 
+- South Carolina vs Arkansas | Caesars | total | value: Over | book 39.5 vs median 36.5 | div 3.0 
+- South Carolina vs Arkansas | FanDuel | total | value: Under | book 33.5 vs median 36.5 | div 3.0 
+- South Carolina vs Arkansas | Caesars | moneyline South Carolina | value: South Carolina | book 10.0 vs median 3.2 | div 6.8 
+- North Texas vs UTSA | BetMGM | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- Texas Tech vs Oklahoma State | BetMGM | spread | value: dog | book -1.5 vs median -3.0 | div 1.5 
+- Texas Tech vs Oklahoma State | BetMGM | total | value: Over | book 82.5 vs median 80.0 | div 2.5 
+- Texas Tech vs Oklahoma State | DraftKings | total | value: Over | book 81.5 vs median 80.0 | div 1.5 
+- Texas Tech vs Oklahoma State | Caesars | total | value: Under | book 78.5 vs median 80.0 | div 1.5 
+- Texas Tech vs Oklahoma State | FanDuel | total | value: Under | book 78.5 vs median 80.0 | div 1.5 
+- Texas Tech vs Oklahoma State | DraftKings | moneyline Oklahoma State | value: Oklahoma State | book 47.8 vs median 42.4 | div 5.5 
+- Texas Tech vs Oklahoma State | Caesars | moneyline Texas Tech | value: Texas Tech | book 66.3 vs median 61.2 | div 5.1 
+- Utah State vs San Diego State | Caesars | spread | value: favorite | book -1.5 vs median 2.5 | div 4.0 
+- Utah State vs San Diego State | Caesars | total | value: Under | book 37.5 vs median 40.0 | div 2.5 
+- Utah State vs San Diego State | Caesars | moneyline San Diego State | value: San Diego State | book 51.9 vs median 59.8 | div 7.8 
+- Utah State vs San Diego State | Caesars | moneyline Utah State | value: Utah State | book 54.1 vs median 46.5 | div 7.6 
+- Wyoming vs UTEP | BetMGM | spread | value: dog | book -9.5 vs median -14.5 | div 5.0 
+- Wyoming vs UTEP | BetMGM | moneyline UTEP | value: UTEP | book 22.7 vs median 15.1 | div 7.6 
+- Wyoming vs UTEP | BetMGM | moneyline Wyoming | value: Wyoming | book 83.3 vs median 91.1 | div 7.8 
+- Colorado State vs Washington State | BetMGM | spread | value: dog | book 14.5 vs median 13.5 | div 1.0 
+- Colorado State vs Washington State | FanDuel | total | value: Under | book 59.5 vs median 61.0 | div 1.5 
+- North Dakota State vs Hawai'i | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
@@ -51,11 +54,25 @@
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.0 | div 4.5 
 - Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 24.4 | div 6.2 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 80.0 | div 6.7 
-- USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Middle Tennessee vs Liberty | Fanatics | spread | value: favorite | book 21.0 vs median 22.5 | div 1.5 
+- USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
 - Fresno State vs Texas State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - Fresno State vs Texas State | Fanatics | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
 - Appalachian State vs Marshall | Fanatics | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
 - Appalachian State vs Marshall | Fanatics | total | value: Under | book 51.5 vs median 54.5 | div 3.0 
 - Appalachian State vs Marshall | Fanatics | moneyline Appalachian State | value: Appalachian State | book 44.4 vs median 51.0 | div 6.5 
 - Appalachian State vs Marshall | Fanatics | moneyline Marshall | value: Marshall | book 62.3 vs median 53.5 | div 8.8 
+- Baylor vs BYU | Fanatics | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
+- Baylor vs BYU | Fanatics | moneyline BYU | value: BYU | book 82.6 vs median 76.0 | div 6.6 
+- Troy vs South Alabama | Fanatics | spread | value: dog | book 7.5 vs median 3.25 | div 4.25 middle pairing spans key number 7
+- Troy vs South Alabama | Caesars | total | value: Over | book 62.5 vs median 55.5 | div 7.0 
+- Troy vs South Alabama | Fanatics | total | value: Over | book 57.5 vs median 55.5 | div 2.0 
+- Troy vs South Alabama | Caesars | moneyline South Alabama | value: South Alabama | book 72.2 vs median 60.8 | div 11.4 
+- Troy vs South Alabama | Fanatics | moneyline South Alabama | value: South Alabama | book 75.0 vs median 60.8 | div 14.2 
+- Troy vs South Alabama | Caesars | moneyline Troy | value: Troy | book 34.0 vs median 43.5 | div 9.5 
+- Troy vs South Alabama | Fanatics | moneyline Troy | value: Troy | book 31.2 vs median 43.5 | div 12.2 
+- Minnesota vs Penn State | BetMGM | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- San Jose State vs Air Force | BetMGM | spread | value: dog | book 15.5 vs median 14.5 | div 1.0 
+- San Jose State vs Air Force | DraftKings | spread | value: dog | book 15.5 vs median 14.5 | div 1.0 
+- UNLV vs New Mexico | bet365 | spread | value: favorite | book 17.5 vs median 19.0 | div 1.5 
+- UNLV vs New Mexico | Fanatics | spread | value: favorite | book 18.0 vs median 19.0 | div 1.0 
