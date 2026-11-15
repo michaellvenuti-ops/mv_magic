@@ -26,3 +26,12 @@
 - 2026-11-15: Cal State Bakersfield Roadrunners @ North Dakota State Bison — first: North Dakota State Bison (2PT, 0:36 in); lead changes 9; final 73-69
 - 2026-11-15: Princeton Tigers @ Rhode Island Rams — first: Rhode Island Rams (2PT, 0:05 in); lead changes 10; final 72-79
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T17:34:48-05:00 -- NCAAB FIRST SCORE (PC): 7 new final(s) tallied; season 650 games through 2026-11-15
+- 2026-11-15: Baylor Bears @ Texas Longhorns — first: Texas Longhorns (2PT, 0:13 in); lead changes 14; final 72-75
+- 2026-11-15: Marquette Golden Eagles @ Missouri Tigers — first: Marquette Golden Eagles (2PT, 0:38 in); lead changes 7; final 64-69
+- 2026-11-15: Wright State-Lake Lakers @ Tennessee Tech Golden Eagles — first: Tennessee Tech Golden Eagles (3PT, 0:17 in); lead changes 0; final 34-101
+- 2026-11-15: Purdue Fort Wayne Mastodons @ Eastern Illinois Panthers — first: Purdue Fort Wayne Mastodons (3PT, 0:32 in); lead changes 0; final 86-74
+- 2026-11-15: Cleveland State Vikings @ Alabama A&M Bulldogs — first: Alabama A&M Bulldogs (2PT, 0:45 in); lead changes 15; final 74-73
+- 2026-11-15: High Point Panthers @ Saint Louis Billikens — first: High Point Panthers (3PT, 0:40 in); lead changes 0; final 68-58
+- 2026-11-15: Creighton Bluejays @ Iowa Hawkeyes — first: Creighton Bluejays (3PT, 0:15 in); lead changes 6; final 70-69
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
