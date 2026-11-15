@@ -8409,3 +8409,11 @@
 [2026-11-15 04:40:18 ET] odds_recorder.py: OK in 454s — SUMMARY: recorded 234 events (14 with odds), db total 284921 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-15 04:40:21 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL MIN Vikings GB Packers Today 1:00 PM — Rec + Rush Yards A. Jones — Over 41.5 Bally Bet -110 ($102) / Under 44.5 theScore +100 ($98) — both win 42
 [2026-11-15 04:40:21 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 04:57:13 ET] sync_to_github.py: FAILED (exit 1) in 1012s —   FAILED: pc-data/scan-grades/nhl-totals.json (HTTP 409: {'error': '{"message":"is at 82f4681f53ed0795fd50e1b49a26ce42f1fd46c0 but expected 65e6f2c67b770ac99aab
+[2026-11-15 04:59:46 ET] dh_low_holds.py: OK in 153s — LOW-HOLDS: NBA DAL Mavericks BOS Celtics Today 6:15 PM / table / Pts+Ast J. Tatum Under 34.5 / Pts+Ast J. Tatum 35+ / table | FanDuel | Bet365
+[2026-11-15 05:01:52 ET] dh_game_middles.py: OK in 125s — GAME MIDDLE: NCAAB Norfolk St. Georgia St. Today 1:00 PM / table / Alt Total Over 143.5 / Alt Total Under 144 / table | DraftKings | Bet365 — window 265.0 :: -1
+[2026-11-15 05:03:07 ET] hung_number.py: OK in 75s — No new hung numbers (47 current flags).
+[2026-11-15 05:03:12 ET] rlm.py: OK in 4s
+[2026-11-15 05:03:15 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 05:03:18 ET] steam_side.py: OK in 2s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 05:03:18 ET] syncing to GitHub (regular 10-minute sync)
