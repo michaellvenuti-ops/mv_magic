@@ -9747,17 +9747,31 @@
   },
   {
    "date": "2026-11-14",
+   "away": "App State Mountaineers",
+   "home": "Marshall Thundering Herd",
+   "first": "Marshall Thundering Herd",
+   "first_side": "home",
+   "first_kind": "FG",
+   "first_elapsed_sec": 399,
+   "winner": "App State Mountaineers",
+   "seq": "0-3>3-3>3-6>3-13>6-13>13-13>13-16>20-16",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "20-16"
+  },
+  {
    "away": "Arizona State Sun Devils",
-   "home": "UCF Knights",
+   "date": "2026-11-14",
+   "final": "26-13",
    "first": "Arizona State Sun Devils",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 905,
-   "winner": "Arizona State Sun Devils",
-   "seq": "7-0>10-0>10-7>13-7>16-7>23-7>26-7>26-13",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "UCF Knights",
    "lead_changes": 0,
+   "seq": "7-0>10-0>10-7>13-7>16-7>23-7>26-7>26-13",
    "ties": 0,
-   "final": "26-13"
+   "winner": "Arizona State Sun Devils"
   },
   {
    "away": "Arkansas State Red Wolves",
@@ -9856,6 +9870,20 @@
    "seq": "0-3>7-3>7-10>7-13>7-16>14-16>17-16",
    "ties": 0,
    "winner": "East Carolina Pirates"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Florida Gators",
+   "home": "Kentucky Wildcats",
+   "first": "Kentucky Wildcats",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 808,
+   "winner": "Florida Gators",
+   "seq": "0-7>2-7>10-7>10-14>13-14>21-14",
+   "lead_changes": 3,
+   "ties": 0,
+   "final": "21-14"
   },
   {
    "away": "Florida International Panthers",
@@ -10082,6 +10110,34 @@
    "winner": "Ohio State Buckeyes"
   },
   {
+   "date": "2026-11-14",
+   "away": "Oregon State Beavers",
+   "home": "Boise State Broncos",
+   "first": "Oregon State Beavers",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 173,
+   "winner": "Boise State Broncos",
+   "seq": "7-0>7-7>7-15>13-15>13-22>13-29>20-29>20-32>27-32>27-39>34-39>34-46>41-46",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "41-46"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Southern Miss Golden Eagles",
+   "home": "Louisiana Tech Bulldogs",
+   "first": "Louisiana Tech Bulldogs",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 104,
+   "winner": "Louisiana Tech Bulldogs",
+   "seq": "0-7>3-7>3-14>3-21>10-21>10-28>10-35>10-42>10-49>17-49>17-56>24-56>24-63>31-63",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "31-63"
+  },
+  {
    "away": "Syracuse Orange",
    "date": "2026-11-14",
    "final": "34-31",
@@ -10166,18 +10222,18 @@
    "winner": "Wake Forest Demon Deacons"
   },
   {
-   "date": "2026-11-14",
    "away": "Washington Huskies",
-   "home": "Michigan State Spartans",
+   "date": "2026-11-14",
+   "final": "21-14",
    "first": "Michigan State Spartans",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 202,
-   "winner": "Washington Huskies",
-   "seq": "0-7>7-7>14-7>14-14>21-14",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Michigan State Spartans",
    "lead_changes": 1,
+   "seq": "0-7>7-7>14-7>14-14>21-14",
    "ties": 2,
-   "final": "21-14"
+   "winner": "Washington Huskies"
   },
   {
    "away": "Wisconsin Badgers",
@@ -11044,7 +11100,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Southern Miss Golden Eagles": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 1,
    "kinds": {
     "FG": 0,
@@ -11054,9 +11110,9 @@
    "won_when_first": 1,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 11.1,
+   "scored_first_pct": 10.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 22.2,
    "won_by_one_when_first_pct": 0.0
   },
   "Arkansas State Red Wolves": {
@@ -11172,7 +11228,7 @@
    "won_by_one_when_first_pct": 33.3
   },
   "Boise State Broncos": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 7,
    "kinds": {
     "FG": 1,
@@ -11180,9 +11236,9 @@
     "Safety": 0
    },
    "won_when_first": 6,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 70.0,
    "win_pct_when_first": 85.7,
    "win_pct_when_not_first": 100.0,
    "won_by_one_when_first_pct": 14.3
@@ -11492,7 +11548,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Florida Gators": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 1,
@@ -11500,11 +11556,11 @@
     "Safety": 0
    },
    "won_when_first": 3,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 60.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Florida International Panthers": {
@@ -11828,7 +11884,7 @@
    "won_by_one_when_first_pct": null
   },
   "App State Mountaineers": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 3,
    "kinds": {
     "FG": 2,
@@ -11836,26 +11892,26 @@
     "Safety": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
+   "scored_first_pct": 30.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 57.1,
    "won_by_one_when_first_pct": 0.0
   },
   "Marshall Thundering Herd": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
-    "FG": 0,
+    "FG": 1,
     "TD": 4,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12276,20 +12332,20 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Louisiana Tech Bulldogs": {
-   "gp": 9,
-   "scored_first": 5,
+   "gp": 10,
+   "scored_first": 6,
    "kinds": {
     "FG": 1,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 2,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 60.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 50.0,
-   "won_by_one_when_first_pct": 20.0
+   "won_by_one_when_first_pct": 16.7
   },
   "Ohio Bobcats": {
    "gp": 10,
@@ -12356,18 +12412,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Oregon State Beavers": {
-   "gp": 9,
-   "scored_first": 6,
+   "gp": 10,
+   "scored_first": 7,
    "kinds": {
     "FG": 1,
-    "TD": 5,
+    "TD": 6,
     "Safety": 0
    },
    "won_when_first": 5,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 66.7,
-   "win_pct_when_first": 83.3,
+   "scored_first_pct": 70.0,
+   "win_pct_when_first": 71.4,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13044,18 +13100,18 @@
    "won_by_one_when_first_pct": null
   },
   "Kentucky Wildcats": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
     "FG": 0,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 80.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13973,20 +14029,20 @@
   }
  },
  "league": {
-  "games": 728,
-  "home_scored_first": 435,
-  "first_team_won": 516,
+  "games": 732,
+  "home_scored_first": 438,
+  "first_team_won": 517,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.5,
   "kinds": {
-   "FG": 206,
-   "TD": 520,
+   "FG": 207,
+   "TD": 523,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
   "median_first_score_sec": 338,
   "home_scored_first_pct": 59.8,
-  "first_team_win_pct": 70.9
+  "first_team_win_pct": 70.6
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -14255,9 +14311,9 @@
    "avg_per_game": 1.0
   },
   "Southern Miss Golden Eagles": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 8,
-   "avg_per_game": 0.89
+   "avg_per_game": 0.8
   },
   "Arkansas State Red Wolves": {
    "games": 10,
@@ -14295,8 +14351,8 @@
    "avg_per_game": 0.5
   },
   "Boise State Broncos": {
-   "games": 9,
-   "lead_changes": 9,
+   "games": 10,
+   "lead_changes": 10,
    "avg_per_game": 1.0
   },
   "Oregon Ducks": {
@@ -14395,9 +14451,9 @@
    "avg_per_game": 0.33
   },
   "Florida Gators": {
-   "games": 9,
-   "lead_changes": 4,
-   "avg_per_game": 0.44
+   "games": 10,
+   "lead_changes": 7,
+   "avg_per_game": 0.7
   },
   "Florida International Panthers": {
    "games": 10,
@@ -14500,14 +14556,14 @@
    "avg_per_game": 0.0
   },
   "App State Mountaineers": {
-   "games": 9,
-   "lead_changes": 10,
-   "avg_per_game": 1.11
+   "games": 10,
+   "lead_changes": 11,
+   "avg_per_game": 1.1
   },
   "Marshall Thundering Herd": {
-   "games": 9,
-   "lead_changes": 13,
-   "avg_per_game": 1.44
+   "games": 10,
+   "lead_changes": 14,
+   "avg_per_game": 1.4
   },
   "Penn State Nittany Lions": {
    "games": 9,
@@ -14640,9 +14696,9 @@
    "avg_per_game": 1.0
   },
   "Louisiana Tech Bulldogs": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 10,
-   "avg_per_game": 1.11
+   "avg_per_game": 1.0
   },
   "Ohio Bobcats": {
    "games": 10,
@@ -14665,9 +14721,9 @@
    "avg_per_game": 1.11
   },
   "Oregon State Beavers": {
-   "games": 9,
-   "lead_changes": 5,
-   "avg_per_game": 0.56
+   "games": 10,
+   "lead_changes": 6,
+   "avg_per_game": 0.6
   },
   "Houston Cougars": {
    "games": 10,
@@ -14880,9 +14936,9 @@
    "avg_per_game": 0.0
   },
   "Kentucky Wildcats": {
-   "games": 9,
-   "lead_changes": 17,
-   "avg_per_game": 1.89
+   "games": 10,
+   "lead_changes": 20,
+   "avg_per_game": 2.0
   },
   "Louisville Cardinals": {
    "games": 9,
