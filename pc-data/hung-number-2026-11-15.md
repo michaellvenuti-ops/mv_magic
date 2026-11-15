@@ -1,6 +1,8 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 00:13)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 01:51)
 
+- Bills vs Jets | Hard Rock | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Jaguars vs Titans | Hard Rock | spread | value: favorite | book -11.5 vs median -10.5 | div 1.0 
+- Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Florida Atlantic vs Tulsa | BetMGM | total | value: Over | book 67.5 vs median 64.5 | div 3.0 
 - Florida Atlantic vs Tulsa | DraftKings | total | value: Under | book 61.5 vs median 64.5 | div 3.0 
 - Florida Atlantic vs Tulsa | Caesars | total | value: Over | book 70.5 vs median 64.5 | div 6.0 
