@@ -8564,3 +8564,16 @@
 [2026-11-15 10:20:51 ET] promo_watch.py: OK in 60s — promo-watch: 9 listed, 0 new, 0 converter attempt(s).
 [2026-11-15 10:20:52 ET] first_half.py: FAILED (exit 1) in 1s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
 [2026-11-15 10:20:52 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 10:37:37 ET] sync_to_github.py: OK in 1005s —   ok: team-total-middles-board-pc.html
+[2026-11-15 10:38:42 ET] notify.py: OK in 65s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-15 10:40:24 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 234 events (13 with odds), db total 287261 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 10:40:25 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA DAL Mavericks BOS Celtics Today 6:15 PM — Total — Over 219.5 FanDuel +106 ($89) / Under 223.5 Bally Bet -155 ($111) — both win 220, 221, 222, 223
+[2026-11-15 10:40:25 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 10:56:24 ET] sync_to_github.py: FAILED (exit 1) in 959s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-11-hour-2.json (HTTP 409: {'error': '{"message":"is at af8323c1ce7aec517c52866e1e90c18811928b37 but expe
+[2026-11-15 10:59:40 ET] dh_game_middles.py: OK in 196s — GAME MIDDLE: NFL MIN Vikings GB Packers Today 1:00 PM / table / Receiving Yards B. Yurosek Under 10.5 / Receiving Yards B. Yurosek Over 9.5 / table | BetParx | 
+[2026-11-15 11:03:19 ET] dh_key_number_middles.py: OK in 219s — key-number-middles: 480 basketball rows excluded (football-only rule).
+[2026-11-15 11:04:37 ET] hung_number.py: OK in 78s — HUNG NUMBER: Patriots vs Lions — Caesars total value Under (45.5 vs median 47.5)
+[2026-11-15 11:04:42 ET] rlm.py: OK in 5s
+[2026-11-15 11:04:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 11:04:49 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 11:04:49 ET] syncing to GitHub (regular 10-minute sync)
