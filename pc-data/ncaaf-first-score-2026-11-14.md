@@ -42,3 +42,8 @@
 - 2026-11-14: Arizona State Sun Devils @ UCF Knights — first: Arizona State Sun Devils (TD, 15:05 in); lead changes 0; final 26-13
 - 2026-11-14: Washington Huskies @ Michigan State Spartans — first: Michigan State Spartans (TD, 3:22 in); lead changes 1; final 21-14
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T21:51:36-05:00 -- NCAAF FIRST SCORE (PC): 4 new final(s) tallied; season 732 games through 2026-11-14
+- 2026-11-14: Oregon State Beavers @ Boise State Broncos — first: Oregon State Beavers (TD, 2:53 in); lead changes 1; final 41-46
+- 2026-11-14: Florida Gators @ Kentucky Wildcats — first: Kentucky Wildcats (TD, 13:28 in); lead changes 3; final 21-14
+- 2026-11-14: Southern Miss Golden Eagles @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 1:44 in); lead changes 0; final 31-63
+- 2026-11-14: App State Mountaineers @ Marshall Thundering Herd — first: Marshall Thundering Herd (FG, 6:39 in); lead changes 1; final 20-16
