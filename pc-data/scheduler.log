@@ -8577,3 +8577,9 @@
 [2026-11-15 11:04:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-15 11:04:49 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
 [2026-11-15 11:04:49 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 11:21:18 ET] sync_to_github.py: FAILED (exit 1) in 989s —   FAILED: pc-data/low-holds-2026-11-12.md (HTTP 409: {'error': '{"message":"is at a9f5c2ed06f52b1dac5e7d9613508f70ca745d17 but expected 1bda78429a9fdb1569694340
+[2026-11-15 11:22:57 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 202 events (62 with odds), db total 287463 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 11:23:38 ET] dh_arbitrage.py: OK in 42s — ARBITRAGE: NBA LA Lakers PHO Suns Today 4:15 PM / table / Pts+Ast+Rebs L. Doncic Under 54.5 / Pts+Ast+Rebs L. Doncic 55+ / table | Bet365 | Bally Bet
+[2026-11-15 11:24:07 ET] dh_kalshi_poly_arb.py: OK in 29s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 11:24:08 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL JAX Jaguars TEN Titans Today 1:00 PM — Rush Yards T. Pollard — Over 59.5 FanDuel +102 ($97) / Under 62.5 BetRivers -113 ($103) — both win 60, 61,
+[2026-11-15 11:24:08 ET] syncing to GitHub (wide-builds banked new builds)
