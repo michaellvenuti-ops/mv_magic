@@ -1,14 +1,9 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 12:20)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 13:40)
 
-- Patriots vs Lions | BetMGM | spread | value: dog | book 25.5 vs median 20.5 | div 5.0 
-- Patriots vs Lions | FanDuel | spread | value: dog | book 21.5 vs median 20.5 | div 1.0 
-- Patriots vs Lions | BetMGM | total | value: Under | book 41.5 vs median 45.5 | div 4.0 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
+- Dolphins vs Colts | bet365 | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Dolphins vs Colts | FanDuel | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Texans vs Browns | DraftKings | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
-- Texans vs Browns | FanDuel | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
-- Texans vs Browns | Hard Rock | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
-- Panthers vs Saints | bet365 | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
-- Panthers vs Saints | DraftKings | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
