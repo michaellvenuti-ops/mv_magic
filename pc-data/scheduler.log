@@ -8438,3 +8438,13 @@
 [2026-11-15 05:56:31 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 05:56:32 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-15 05:56:32 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 06:12:30 ET] sync_to_github.py: FAILED (exit 1) in 958s —   FAILED: pc-data/sog-middles-2026-11-13.md (HTTP 409: {'error': '{"message":"is at b54456fff0f3ace0449088499dfa61493223c328 but expected e46993d66f88ac95d0eba4
+[2026-11-15 06:14:12 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 234 events (14 with odds), db total 285389 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 06:14:13 ET] wide_builds.py: OK in 1s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 06:15:33 ET] dh_low_holds.py: OK in 80s — LOW-HOLDS: NHL EDM Oilers PHI Flyers Today 7:30 PM / table / Assists L. Draisaitl Under 1.5 / Assists L. Draisaitl 2+ / table | Bally Bet | FanDuel
+[2026-11-15 06:18:25 ET] dh_game_middles.py: OK in 172s — GAME MIDDLE: NFL JAX Jaguars TEN Titans Today 1:00 PM / table / Alt Spread JAX Jaguars -9 / Alt Spread TEN Titans +9.5 / table bar_chart | HardRock | ProphetX —
+[2026-11-15 06:19:39 ET] hung_number.py: OK in 74s — No new hung numbers (47 current flags).
+[2026-11-15 06:19:43 ET] rlm.py: OK in 4s
+[2026-11-15 06:19:47 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 06:19:49 ET] steam_side.py: OK in 3s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 06:19:49 ET] syncing to GitHub (regular 10-minute sync)
