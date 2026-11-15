@@ -97,3 +97,10 @@ LEAD: Kalshi on San Jose State @ Air Force | 2026-11-14 (spread)
 ## 2026-11-14T21:47:43-05:00 — pack move, never credited: Appalachian State @ Marshall | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
 ## 2026-11-14T21:47:43-05:00 — pack move, never credited: Appalachian State @ Marshall | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
 ## 2026-11-14T21:47:43-05:00 — 81 games, 0 leads credited, 52 started games skipped
+## 2026-11-14T23:07:46-05:00 — no-follow: DraftKings Panthers @ Saints | 2026-11-14 spread (only 2 followed)
+## 2026-11-14T23:07:46-05:00 — pack move, never credited: Florida Atlantic @ Tulsa | 2026-11-14 spread (BetMGM, Caesars, FanDuel, Kalshi)
+## 2026-11-14T23:07:46-05:00 — pack move, never credited: Florida Atlantic @ Tulsa | 2026-11-14 total (BetMGM, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T23:07:46-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Colorado State @ Washington State | 2026-11-14
+## 2026-11-14T23:07:46-05:00 — pack move, never credited: San Jose State @ Air Force | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T23:07:46-05:00 — pack move, never credited: San Jose State @ Air Force | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T23:07:46-05:00 — 81 games, 0 leads credited, 55 started games skipped
