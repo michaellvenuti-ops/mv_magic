@@ -8589,3 +8589,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 09:48:21 ET] half_percent.py: OK in 1s — half-percent recheck: 09:48 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
 [2026-11-15 09:48:23 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-15 09:48:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 10:04:46 ET] sync_to_github.py: FAILED (exit 1) in 982s —   FAILED: pc-data/scan-grades/total-projectors.json (HTTP 409: {'error': '{"message":"is at fadc8056a12619f94ccffeb6a58008a500419fef but expected 4b2be7ee9fc659
+[2026-11-15 10:06:25 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 234 events (13 with odds), db total 287027 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 10:08:15 ET] dh_low_holds.py: OK in 110s — LOW-HOLDS: NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM / table / Alt Spread Arkansas-Pine Bluff +50.5 / Alt Spread USC -50.5 / table | Bet365 | BetRivers
+[2026-11-15 10:15:39 ET] dh_basketball_key_middles.py: OK in 443s — basketball-key-middles: no new basketball middles.
+[2026-11-15 10:17:46 ET] dh_prop_middles.py: OK in 126s — PROP MIDDLE CLEAN : NFL CAR Panthers NO Saints Today 1:00 PM / table / Rush Yards B. Young Over 7.5 / Rush Yards B. Young Under 8.5 / table | Bally Bet | theSco
+[2026-11-15 10:19:38 ET] dh_sog_middles.py: OK in 111s — - 0 deliverables this run
+[2026-11-15 10:19:42 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at +0.4c vs +EV
+[2026-11-15 10:19:43 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-15 10:19:45 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 10:19:46 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 10:19:48 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 625 total tallied.
+[2026-11-15 10:19:49 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 750 total tallied.
+[2026-11-15 10:19:49 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 10:19:51 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-15 10:20:51 ET] promo_watch.py: OK in 60s — promo-watch: 9 listed, 0 new, 0 converter attempt(s).
+[2026-11-15 10:20:52 ET] first_half.py: FAILED (exit 1) in 1s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
+[2026-11-15 10:20:52 ET] syncing to GitHub (regular 10-minute sync)
