@@ -8249,3 +8249,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 21:23:04 ET] dh_key_number_middles.py: OK in 195s — key-number-middles: 36 basketball rows excluded (football-only rule).
 [2026-11-14 21:26:42 ET] dh_basketball_key_middles.py: OK in 218s — basketball-key-middles: no new basketball middles.
 [2026-11-14 21:26:42 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 21:42:20 ET] sync_to_github.py: OK in 938s —   ok: team-total-middles-board-pc.html
+[2026-11-14 21:42:48 ET] notify.py: OK in 28s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-14 21:44:23 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 234 events (24 with odds), db total 280943 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 21:46:28 ET] dh_game_middles.py: OK in 125s — GAME MIDDLE: NCAAB 10 Louisville Memphis Nov-15 1:00 PM / table / Total Under 164.5 / Alt Total Over 164 / table | DraftKings | Bet365 — window 208.0 :: -108 $1
+[2026-11-14 21:47:35 ET] hung_number.py: OK in 67s — HUNG NUMBER: Appalachian State vs Marshall — Fanatics moneyline Marshall value Marshall (62.3 vs median 53.5)
+[2026-11-14 21:47:40 ET] rlm.py: OK in 5s
+[2026-11-14 21:47:43 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 21:47:46 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Florida Atlantic @ Tulsa | 2026-11-14 | DraftKings | Florida Atlantic spread -13.5 (median -13.5 -> -12.5)
+[2026-11-14 21:49:18 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NFL HOU Texans CLE Browns Nov-15 1:00 PM / table / Receiving Yards D. Schultz Under 30.5 / Alt Recv Yards D. Schultz 30+ / table | BetMGM | 
+[2026-11-14 21:51:25 ET] dh_sog_middles.py: OK in 126s — - 0 deliverables this run
+[2026-11-14 21:51:27 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at -0.6c vs +EV
+[2026-11-14 21:51:28 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 21:51:29 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 0 unverified, 176 total tallied.
+[2026-11-14 21:51:31 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 6 new, 0 unverified, 311 total tallied.
+[2026-11-14 21:51:34 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 13 new, 1 unverified, 616 total tallied.
+[2026-11-14 21:51:36 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 4 new, 0 unverified, 732 total tallied.
+[2026-11-14 21:51:37 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 21:51:38 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 21:53:53 ET] odds_recorder.py: OK in 105s — SUMMARY: recorded 234 events (23 with odds), db total 281177 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 21:53:55 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 21:53:55 ET] syncing to GitHub (regular 10-minute sync)
