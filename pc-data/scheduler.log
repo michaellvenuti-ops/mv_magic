@@ -8180,3 +8180,7 @@
 [2026-11-14 20:22:36 ET] rlm.py: OK in 4s
 [2026-11-14 20:22:39 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-14 20:22:39 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 20:38:28 ET] sync_to_github.py: FAILED (exit 1) in 949s —   FAILED: pc-data/transcripts/follow-the-money-2026-11-09-hour-2.txt (HTTP 409: {'error': '{"message":"is at cf0ee917031f5fb500f0e27bf64d9d709c20e285 but expect
+[2026-11-14 20:40:08 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 234 events (29 with odds), db total 280475 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 20:40:09 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL MIA Dolphins IND Colts Nov-15 1:00 PM — Spread — IND Colts -1.5 FanDuel +126 ($90) / MIA Dolphins +6 Bally Bet -120 ($110) — both win 2, 3, 4, 5 
+[2026-11-14 20:40:09 ET] syncing to GitHub (wide-builds banked new builds)
