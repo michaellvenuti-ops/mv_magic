@@ -8347,3 +8347,9 @@
 [2026-11-15 01:57:28 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=24
 [2026-11-15 01:57:29 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=24, limit=5)
 [2026-11-15 01:57:29 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 02:13:59 ET] sync_to_github.py: FAILED (exit 1) in 991s —   FAILED: pc-data/sog-filter-dump-switch-on-20261114-1705.json (HTTP 409: {'error': '{"message":"is at 171b76d646f6c51942a8b05b7e79479d278de7ed but expected 5f4
+[2026-11-15 02:15:37 ET] odds_recorder.py: OK in 67s — SUMMARY: recorded 234 events (14 with odds), db total 283985 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 02:15:38 ET] wide_builds.py: OK in 1s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 02:17:56 ET] dh_game_middles.py: OK in 138s — GAME MIDDLE: NCAAB Harvard American University Today 1:00 PM / table / Total Under 133.5 / Alt Total Over 132.5 / table | theScore | Bet365 — window 225.0 :: -1
+[2026-11-15 02:18:02 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 02:18:03 ET] syncing to GitHub (regular 10-minute sync)
