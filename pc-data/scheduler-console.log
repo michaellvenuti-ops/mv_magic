@@ -8369,3 +8369,23 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 01:27:44 ET] dh_kalshi_poly_arb.py: OK in 63s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-15 01:27:47 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA ATL Hawks MIL Bucks Today 8:15 PM — Total — Over 233.5 FanDuel -110 ($95) / Under 237.5 theScore -135 ($105) — both win 234, 235, 236, 237 — land
 [2026-11-15 01:27:47 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 01:43:30 ET] sync_to_github.py: FAILED (exit 1) in 943s —   FAILED: pc-data/costco-gold/costco-gold-2026-11-10.json (HTTP 409: {'error': '{"message":"is at 585d503f1a4ac9794703ae600aa6f985265e0903 but expected daa2705d
+[2026-11-15 01:44:24 ET] dh_low_holds.py: OK in 54s — LOW-HOLDS: NFL BUF Bills NY Jets Today 1:00 PM / table / 3rd Quarter Moneyline BUF Bills / 3rd Quarter Moneyline NY Jets / table | DraftKings | Fanatics-NJ
+[2026-11-15 01:47:42 ET] dh_key_number_middles.py: OK in 197s — key-number-middles: 393 basketball rows excluded (football-only rule).
+[2026-11-15 01:51:13 ET] dh_basketball_key_middles.py: OK in 211s — basketball-key-middles: no new basketball middles.
+[2026-11-15 01:52:23 ET] hung_number.py: OK in 70s — No new hung numbers (79 current flags).
+[2026-11-15 01:52:29 ET] rlm.py: OK in 6s
+[2026-11-15 01:52:34 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 01:55:03 ET] dh_prop_middles.py: OK in 149s — PROP MIDDLE CLEAN : NFL JAX Jaguars TEN Titans Today 1:00 PM / table / Receiving Yards T. Pollard Under 10.5 / Alt Recv Yards T. Pollard 10+ / table | Bet365 | 
+[2026-11-15 01:57:13 ET] dh_sog_middles.py: OK in 130s — - 0 deliverables this run
+[2026-11-15 01:57:16 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Miami 19.5/24.5 sits at -0.6c vs +EV.
+[2026-11-15 01:57:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-15 01:57:19 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 01:57:20 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 2 new, 0 unverified, 317 total tallied.
+[2026-11-15 01:57:22 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 2 unverified, 625 total tallied.
+[2026-11-15 01:57:23 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 4 new, 0 unverified, 747 total tallied.
+[2026-11-15 01:57:24 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 01:57:25 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-15 01:57:28 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=24
+[2026-11-15 01:57:29 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=24, limit=5)
+[2026-11-15 01:57:29 ET] syncing to GitHub (regular 10-minute sync)
