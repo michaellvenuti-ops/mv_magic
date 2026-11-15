@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 06:18)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 07:38)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
