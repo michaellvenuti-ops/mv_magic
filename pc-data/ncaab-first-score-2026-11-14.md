@@ -60,3 +60,18 @@
 - 2026-11-14: Pennsylvania Quakers @ Saint Joseph's Hawks — first: Saint Joseph's Hawks (3PT, 1:00 in); lead changes 6; final 77-83
 - 2026-11-14: Earlham Quakers @ Indiana State Sycamores — first: Indiana State Sycamores (2PT, 1:03 in); lead changes 0; final 37-109
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T21:51:34-05:00 -- NCAAB FIRST SCORE (PC): 13 new final(s) tallied; season 616 games through 2026-11-14
+- 2026-11-14: UT Rio Grande Valley Vaqueros @ UT Arlington Mavericks — first: UT Rio Grande Valley Vaqueros (2PT, 0:47 in); lead changes 3; final 77-85
+- 2026-11-14: UMBC Retrievers @ Towson Tigers — first: Towson Tigers (2PT, 0:56 in); lead changes 0; final 42-68
+- 2026-11-14: Howard Bison @ Davidson Wildcats — first: Howard Bison (3PT, 1:19 in); lead changes 2; final 64-58
+- 2026-11-14: Rider Broncs @ Villanova Wildcats — first: Villanova Wildcats (2PT, 1:11 in); lead changes 0; final 62-99
+- 2026-11-14: Portland State Vikings @ San Francisco Dons — first: Portland State Vikings (2PT, 0:27 in); lead changes 0; final 84-68
+- 2026-11-14: NJIT Highlanders @ Fairfield Stags — first: NJIT Highlanders (2PT, 1:41 in); lead changes 11; final 60-63
+- 2026-11-14: Lipscomb Bisons @ Western Carolina Catamounts — first: Western Carolina Catamounts (2PT, 0:23 in); lead changes 11; final 75-68
+- 2026-11-14: Austin Peay Governors @ Wichita State Shockers — first: Wichita State Shockers (2PT, 0:16 in); lead changes 4; final 60-76
+- 2026-11-14: West Georgia Wolves @ Charleston Southern Buccaneers — first: West Georgia Wolves (2PT, 1:40 in); lead changes 3; final 68-92
+- 2026-11-14: Brown Bears @ Siena Saints — first: Siena Saints (2PT, 0:43 in); lead changes 2; final 74-79
+- 2026-11-14: IU Indianapolis Jaguars @ Morehead State Eagles — first: Morehead State Eagles (2PT, 1:00 in); lead changes 6; final 75-79
+- 2026-11-14: Binghamton Bearcats @ Duquesne Dukes — first: Binghamton Bearcats (2PT, 0:26 in); lead changes 1; final 58-71
+- 2026-11-14: Cincinnati Bearcats @ Dayton Flyers — first: Cincinnati Bearcats (2PT, 0:38 in); lead changes 0; final 95-72
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
