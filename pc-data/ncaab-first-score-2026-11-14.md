@@ -82,3 +82,7 @@
 - 2026-11-14: UC Davis Aggies @ Sacramento State Hornets — first: UC Davis Aggies (2PT, 0:48 in); lead changes 6; final 75-56
 - 2026-11-14: UL Monroe Warhawks @ Grand Canyon Lopes — first: Grand Canyon Lopes (3PT, 0:22 in); lead changes 0; final 52-88
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T23:47:13-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 623 games through 2026-11-14
+- 2026-11-14: Furman Paladins @ Belmont Bruins — first: Belmont Bruins (2PT, 0:43 in); lead changes 6; final 62-72
+- 2026-11-14: Montana Grizzlies @ North Dakota Fighting Hawks — first: Montana Grizzlies (2PT, 0:31 in); lead changes 10; final 80-71
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
