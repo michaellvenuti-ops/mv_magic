@@ -13,10 +13,10 @@ TRAILING on the live scoreboard, and this game has not alerted before.
 One alert per game (a favorite that goes back ahead and trails again
 does not re-fire).
 
-Basketball trigger (NBA + NCAAB; changed 2026-11-05 at Michael's tap):
-the same trailing condition, PLUS the favorite's LIVE moneyline must be
--200 or better (bettor-friendly: -200, -180, any plus price) at the
-moment of the check. ESPN's basketball scoreboards carry no usable live
+Basketball trigger (NBA + NCAAB; changed 2026-11-05, gate reading
+settled 2026-11-14 at Michael's tap): the same trailing condition,
+PLUS the favorite's LIVE moneyline must be -200 or SHORTER
+(-200, -250, -300 — strong favorite only) at the moment of the check. ESPN's basketball scoreboards carry no usable live
 moneyline (live NCAAB games have no odds object at all), so the live ML
 is read from ScoresAndOdds' public board — fetched ONLY on runs where a
 basketball candidate exists. If the live ML cannot be read for a game,
@@ -60,7 +60,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DATA_DIR
 STATE_PATH = DATA_DIR / "upset-watch-state.json"
 THRESHOLD = 10.5
-ML_GATE = -200  # basketball: live ML must be -200 or better (bettor-friendly)
+ML_GATE = -200  # basketball: live ML must be -200 or shorter (strong favorite only; settled 2026-11-14)
 ALERT_TTL_MIN = {"basketball": 3, "football": 5}  # delivery freshness window
 
 SPORTS = [
@@ -352,7 +352,7 @@ def main():
                     continue
                 ml = entry["ml"]
                 rec["live_ml"] = ml
-                if ml < ML_GATE:
+                if ml > ML_GATE:
                     continue
                 hold = ml_sanity_hold(
                     ml, entry.get("spread"), dog_score - fav_score,
