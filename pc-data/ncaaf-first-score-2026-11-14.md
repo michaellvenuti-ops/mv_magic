@@ -34,3 +34,7 @@
 - 2026-11-14: California Golden Bears @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 5:28 in); lead changes 0; final 7-36
 - 2026-11-14: Nevada Wolf Pack @ Northern Illinois Huskies — first: Nevada Wolf Pack (TD, 5:02 in); lead changes 0; final 28-7
 - 2026-11-14: Georgia Southern Eagles @ Georgia State Panthers — first: Georgia State Panthers (TD, 6:42 in); lead changes 1; final 34-17
+## 2026-11-14T19:57:03-05:00 -- NCAAF FIRST SCORE (PC): 3 new final(s) tallied; season 726 games through 2026-11-14
+- 2026-11-14: Fresno State Bulldogs @ Texas State Bobcats — first: Texas State Bobcats (TD, 5:42 in); lead changes 2; final 35-37
+- 2026-11-14: Auburn Tigers @ Mississippi State Bulldogs — first: Auburn Tigers (TD, 6:21 in); lead changes 0; final 41-9
+- 2026-11-14: Tulane Green Wave @ Rice Owls — first: Rice Owls (FG, 5:38 in); lead changes 1; final 20-17
