@@ -105,3 +105,4 @@ NEW PAIR: NHL CGY Flames LA Kings Today 10:00 PM / table / Shots A. Laferriere U
 (end of new/changed pairs — deliverable list below)
 NHL CGY Flames LA Kings Today 10:00 PM / table / Shots A. Laferriere Under 3.5 / Shots A. Laferriere 4+ / table | Bally Bet | Bet365 :: {'leg1': {'side': '-157 $1,000 Bally Bet', 'price': '-157', 'book': 'Bally Bet', 'stake': 1000.0}, 'leg2': {'side': '+190 $564 Bet365', 'price': '+190', 'book': 'Bet365', 'stake': 564.0}, 'arb_risk': False, 'first_reported': '2026-11-14T17:24:16-05:00', 'last_seen': '2026-11-14', 'profit_pct': 4.58}
 ## 2026-11-14T18:33:13-05:00 — arbitrage: 98 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-14T19:50:00-05:00 — arbitrage: 98 complete pairs read, 0 NEW/CHANGED delivered
