@@ -8644,3 +8644,19 @@
 [2026-11-15 13:18:09 ET] odds_recorder.py: OK in 81s — SUMMARY: recorded 202 events (44 with odds), db total 288271 snapshots / 1108 events, feeds ok 6 fail 0
 [2026-11-15 13:21:49 ET] dh_basketball_key_middles.py: OK in 190s — basketball-key-middles: no new basketball middles.
 [2026-11-15 13:21:49 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 13:38:22 ET] sync_to_github.py: FAILED (exit 1) in 993s —   FAILED: pc-data/steam-side-2026-11-04.md (HTTP 409: {'error': '{"message":"is at d1de1e2abb7f06e895fa67481d235f830c82d0c1 but expected b7daab5ba80ea9d10b3780f
+[2026-11-15 13:39:59 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (43 with odds), db total 288473 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 13:41:47 ET] hung_number.py: OK in 108s — HUNG NUMBER: Dolphins vs Colts — bet365 spread value dog (5.5 vs median 4.5)
+[2026-11-15 13:41:51 ET] rlm.py: OK in 4s
+[2026-11-15 13:41:54 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (79 games, 0 new leads, no book at 3 yet).
+[2026-11-15 13:43:59 ET] dh_prop_middles.py: OK in 125s — PROP MIDDLE CLEAN : NBA DAL Mavericks BOS Celtics Today 6:15 PM / table / Pts+Ast+Rebs N. Marshall Under 18.5 / Pts+Ast+Rebs N. Marshall Over 17.5 / table | Bet
+[2026-11-15 13:46:15 ET] dh_sog_middles.py: OK in 136s — - 0 deliverables this run
+[2026-11-15 13:46:18 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at +1.4c vs +EV
+[2026-11-15 13:46:19 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 137 total tallied.
+[2026-11-15 13:46:21 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 13:46:22 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 13:46:24 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 625 total tallied.
+[2026-11-15 13:46:26 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 750 total tallied.
+[2026-11-15 13:46:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 13:46:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-15 13:46:28 ET] syncing to GitHub (regular 10-minute sync)
