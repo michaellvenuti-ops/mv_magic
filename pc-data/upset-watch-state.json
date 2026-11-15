@@ -9814,13 +9814,15 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Saint Joseph's",
-   "dog_team": "Penn"
+   "dog_team": "Penn",
+   "final": true
   },
   "401927377": {
    "sport": "NCAAB",
    "matchup": "Earlham at Indiana St",
    "date": "2026-11-15",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401925774": {
    "sport": "NCAAB",
@@ -9875,12 +9877,20 @@
    "sport": "NCAAB",
    "matchup": "NJIT at Fairfield",
    "date": "2026-11-15",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Fairfield",
    "dog_team": "NJIT",
-   "live_ml": -280
+   "live_ml": -125,
+   "alerted_at": "2026-11-14T20:50:03",
+   "board_read_at": "2026-11-14T20:50:02",
+   "alert_expires_at": "2026-11-14T20:53:03",
+   "alert_detail": "1:56 - 2nd Half",
+   "alert_fav_score": 54,
+   "alert_dog_score": 56,
+   "alert_ml": -125,
+   "ml_read_at": "2026-11-14T20:50:03"
   },
   "401920705": {
    "sport": "NCAAB",
