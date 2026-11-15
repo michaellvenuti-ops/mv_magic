@@ -7,3 +7,5 @@
 - 2026-11-14: Utah Utes @ Arizona Wildcats — first: Arizona Wildcats (TD, 5:15 in); lead changes 7; final 40-39
 - 2026-11-14: Colorado State Rams @ Washington State Cougars — first: Washington State Cougars (TD, 8:24 in); lead changes 0; final 7-73
 - 2026-11-14: North Dakota State Bison @ Hawai'i Rainbow Warriors — first: North Dakota State Bison (TD, 10:40 in); lead changes 2; final 21-13
+## 2026-11-15T16:41:51-05:00 -- NCAAF FIRST SCORE (PC): 1 new final(s) tallied; season 751 games through 2026-11-15
+- 2026-11-15: Ole Miss Rebels @ Oklahoma Sooners — first: Oklahoma Sooners (TD, 9:06 in); lead changes 0; final 17-24
