@@ -19,3 +19,4 @@ NFL NE Patriots DET Lions Today 9:30 AM / table bar_chart / Touchdowns E. Rarido
 ## 2026-11-15T12:44:01-05:00 — kalshi-poly-arb: 87 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-15T14:06:26-05:00 — kalshi-poly-arb: 91 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-15T15:36:23-05:00 — kalshi-poly-arb: 91 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-15T17:02:16-05:00 — kalshi-poly-arb: 85 complete pairs read, 0 NEW/CHANGED delivered
