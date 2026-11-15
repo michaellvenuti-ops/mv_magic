@@ -7,3 +7,4 @@ NEW PAIR: NBA SA Spurs UTA Jazz Today 5:15 PM / table / Ast+Rebs D. Vassell 6+ /
 (end of new/changed pairs — deliverable list below)
 NBA SA Spurs UTA Jazz Today 5:15 PM / table / Ast+Rebs D. Vassell 6+ / Ast+Rebs D. Vassell Under 5.5 / table | Bet365 | FanDuel :: {'leg1': {'side': '+105 $1,000 Bet365', 'price': '+105', 'book': 'Bet365', 'stake': 1000.0}, 'leg2': {'side': '+116 $949 FanDuel', 'price': '+116', 'book': 'FanDuel', 'stake': 949.0}, 'arb_risk': False, 'first_reported': '2026-11-15T02:37:00-05:00', 'last_seen': '2026-11-15', 'profit_pct': 5.17}
 ## 2026-11-15T03:46:14-05:00 — arbitrage: 89 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-15T05:25:41-05:00 — arbitrage: 95 complete pairs read, 0 NEW/CHANGED delivered
