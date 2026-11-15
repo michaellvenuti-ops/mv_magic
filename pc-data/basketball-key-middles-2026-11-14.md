@@ -28,3 +28,4 @@ NEW MIDDLE: NCAAB SPREAD ~11.6%: NCAAB Quinnipiac Central Connecticut Nov-15 1:0
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [MODELED] ~11.6%: NCAAB Quinnipiac Central Connecticut Nov-15 1:00 PM / table / Spread Quinnipiac -2.5 / Spread Central Connecticut +4.5 / table | FanDuel | theScore window [3, 4] :: -108 $1,000 FanDuel, FanDuel, -108 / -105 $986 theScore, theScore, -105
 ## 2026-11-14T19:29:22-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1989 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-14T20:21:25-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1945 + 0 rows parsed, qualifying only below — 0 NEW middles
