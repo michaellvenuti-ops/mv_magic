@@ -7381,7 +7381,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 9.5,
+   "spread": 10.0,
    "fav_team": "Rams",
    "dog_team": "Cardinals"
   },
@@ -7391,7 +7391,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "49ers",
    "dog_team": "Cowboys"
   },
@@ -10226,7 +10226,8 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "76ers",
-   "dog_team": "Pacers"
+   "dog_team": "Pacers",
+   "final": true
   },
   "401909986": {
    "sport": "NBA",
@@ -10243,10 +10244,10 @@
    "matchup": "Hornets at Clippers",
    "date": "2026-11-15",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
-   "fav_team": "Hornets",
-   "dog_team": "Clippers"
+   "fav_team": "Clippers",
+   "dog_team": "Hornets"
   },
   "401909988": {
    "sport": "NBA",
@@ -10254,7 +10255,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 15.5,
+   "spread": 14.5,
    "fav_team": "Spurs",
    "dog_team": "Jazz"
   },
@@ -10438,7 +10439,8 @@
    "sport": "NCAAB",
    "matchup": "Capital at Robert Morris",
    "date": "2026-11-15",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401925926": {
    "sport": "NCAAB",
@@ -10474,7 +10476,8 @@
    "sport": "NCAAB",
    "matchup": "Emmanuel (MA) at Yale",
    "date": "2026-11-15",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921287": {
    "sport": "NCAAB",
@@ -10600,7 +10603,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 11.5,
    "fav_team": "James Madison",
    "dog_team": "Mercyhurst"
   },
