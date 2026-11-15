@@ -8184,3 +8184,17 @@
 [2026-11-14 20:40:08 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 234 events (29 with odds), db total 280475 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-14 20:40:09 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL MIA Dolphins IND Colts Nov-15 1:00 PM — Spread — IND Colts -1.5 FanDuel +126 ($90) / MIA Dolphins +6 Bally Bet -120 ($110) — both win 2, 3, 4, 5 
 [2026-11-14 20:40:09 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-14 20:55:19 ET] sync_to_github.py: FAILED (exit 1) in 911s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-06-hour-2.json (HTTP 409: {'error': '{"message":"is at 44c9f20ce0c2c702b5c77a68c9a84cff22c406a5 but expecte
+[2026-11-14 20:57:19 ET] dh_game_middles.py: OK in 120s — GAME MIDDLE: NCAAB Utah Valley Nevada Today 10:00 PM / table / Alt Total Under 157.5 / Alt Total Over 156.5 / table | HardRock | Bet365 — window 325.0 :: -170 $
+[2026-11-14 20:57:27 ET] steam_side.py: OK in 7s — STEAM-SIDE FLAG: FBS San Jose State @ Air Force | 2026-11-14 | Kalshi | Under total 45.5 (median 40.5 -> 38.5)
+[2026-11-14 20:58:55 ET] dh_prop_middles.py: OK in 88s — PROP MIDDLE CLEAN : NFL LA Rams ARI Cardinals Nov-15 4:05 PM / table / Rec + Rush Yards T. Allgeier Under 50.5 / Rec + Rush Yards T. Allgeier 50+ / table | BetR
+[2026-11-14 21:00:59 ET] dh_sog_middles.py: OK in 125s — - 0 deliverables this run
+[2026-11-14 21:01:04 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at -0.6c vs +EV
+[2026-11-14 21:01:06 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 21:01:07 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 21:01:08 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 305 total tallied.
+[2026-11-14 21:01:11 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 7 new, 1 unverified, 603 total tallied.
+[2026-11-14 21:01:13 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 2 new, 1 unverified, 728 total tallied.
+[2026-11-14 21:01:14 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 21:01:15 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-14 21:01:15 ET] syncing to GitHub (regular 10-minute sync)
