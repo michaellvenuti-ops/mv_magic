@@ -21,3 +21,4 @@ KEY 14: NCAAF Arkansas St. Louisiana Tech Nov-21 7:00 PM / table / Spread Louisi
 ## 2026-11-15T14:29:31-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1967 + 0 rows parsed, qualifying only below — 0 NEW middles
 KEY 14: NCAAF Eastern Michigan Western Michigan Nov-17 6:00 PM / table / Spread Western Michigan -13.5 / Spread Eastern Michigan +14.5 / table | HardRock | theScore margins [14] :: -110 $1,000 HardRock, HardRock, -110 / -105 $978 theScore, theScore, -105
 ## 2026-11-15T15:57:59-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1976 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-15T17:07:49-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1987 + 0 rows parsed, qualifying only below — 0 NEW middles
