@@ -97,3 +97,5 @@ KEY 6: NCAAF UNLV 23 New Mexico Today 7:30 PM / table / 1st Quarter Spread UNLV 
 NEW MIDDLE: KEY 4: NCAAF 19 Ole Miss Oklahoma Nov-15 1:00 PM / table / Alt Spread Ole Miss +4.5 / Alt Spread Oklahoma -3.5 / table | theScore | HardRock margins [4] :: -145 $1,000 theScore, theScore, -145 / +125 $751 HardRock, HardRock, +125
 (end of new middles — full qualifying list below)
 KEY 4: NCAAF 19 Ole Miss Oklahoma Nov-15 1:00 PM / table / Alt Spread Ole Miss +4.5 / Alt Spread Oklahoma -3.5 / table | theScore | HardRock margins [4] :: -145 $1,000 theScore, theScore, -145 / +125 $751 HardRock, HardRock, +125
+## 2026-11-14T23:52:48-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1952 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 4: NCAAF 19 Ole Miss Oklahoma Nov-15 1:00 PM / table / Alt Spread Ole Miss +4.5 / Alt Spread Oklahoma -3.5 / table | theScore | HardRock margins [4] :: -145 $1,000 theScore, theScore, -145 / +125 $751 HardRock, HardRock, +125
