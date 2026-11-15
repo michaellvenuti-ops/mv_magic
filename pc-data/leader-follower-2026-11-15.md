@@ -10,3 +10,5 @@
 ## 2026-11-15T07:39:55-05:00 — 81 games, 0 leads credited, 55 started games skipped
 ## 2026-11-15T09:15:18-05:00 — no-follow: Kalshi 49ers @ Cowboys | 2026-11-15 spread (only 1 followed)
 ## 2026-11-15T09:15:18-05:00 — 81 games, 0 leads credited, 55 started games skipped
+## 2026-11-15T11:04:45-05:00 — pack move, never credited: Texans @ Browns | 2026-11-15 spread (Caesars, bet365)
+## 2026-11-15T11:04:46-05:00 — 81 games, 0 leads credited, 56 started games skipped
