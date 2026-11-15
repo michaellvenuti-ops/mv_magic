@@ -9746,6 +9746,20 @@
    "winner": "Alabama Crimson Tide"
   },
   {
+   "date": "2026-11-14",
+   "away": "Arizona State Sun Devils",
+   "home": "UCF Knights",
+   "first": "Arizona State Sun Devils",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 905,
+   "winner": "Arizona State Sun Devils",
+   "seq": "7-0>10-0>10-7>13-7>16-7>23-7>26-7>26-13",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "26-13"
+  },
+  {
    "away": "Arkansas State Red Wolves",
    "date": "2026-11-14",
    "final": "21-28",
@@ -9760,18 +9774,18 @@
    "winner": "Coastal Carolina Chanticleers"
   },
   {
-   "date": "2026-11-14",
    "away": "Auburn Tigers",
-   "home": "Mississippi State Bulldogs",
+   "date": "2026-11-14",
+   "final": "41-9",
    "first": "Auburn Tigers",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 381,
-   "winner": "Auburn Tigers",
-   "seq": "7-0>10-0>10-7>17-7>24-7>27-7>34-7>41-7>41-9",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Mississippi State Bulldogs",
    "lead_changes": 0,
+   "seq": "7-0>10-0>10-7>17-7>24-7>27-7>34-7>41-7>41-9",
    "ties": 0,
-   "final": "41-9"
+   "winner": "Auburn Tigers"
   },
   {
    "away": "Boston College Eagles",
@@ -9858,18 +9872,18 @@
    "winner": "Delaware Blue Hens"
   },
   {
-   "date": "2026-11-14",
    "away": "Fresno State Bulldogs",
-   "home": "Texas State Bobcats",
+   "date": "2026-11-14",
+   "final": "35-37",
    "first": "Texas State Bobcats",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 342,
-   "winner": "Texas State Bobcats",
-   "seq": "0-7>7-7>7-14>7-21>14-21>14-28>21-28>21-31>28-31>35-31>35-37",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Texas State Bobcats",
    "lead_changes": 2,
+   "seq": "0-7>7-7>7-14>7-21>14-21>14-28>21-28>21-31>28-31>35-31>35-37",
    "ties": 1,
-   "final": "35-37"
+   "winner": "Texas State Bobcats"
   },
   {
    "away": "Georgia Southern Eagles",
@@ -10096,18 +10110,18 @@
    "winner": "Tennessee Volunteers"
   },
   {
-   "date": "2026-11-14",
    "away": "Tulane Green Wave",
-   "home": "Rice Owls",
+   "date": "2026-11-14",
+   "final": "20-17",
    "first": "Rice Owls",
-   "first_side": "home",
-   "first_kind": "FG",
    "first_elapsed_sec": 338,
-   "winner": "Tulane Green Wave",
-   "seq": "0-3>3-3>3-10>6-10>6-17>13-17>20-17",
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "Rice Owls",
    "lead_changes": 1,
+   "seq": "0-3>3-3>3-10>6-10>6-17>13-17>20-17",
    "ties": 1,
-   "final": "20-17"
+   "winner": "Tulane Green Wave"
   },
   {
    "away": "UAB Blazers",
@@ -10150,6 +10164,20 @@
    "seq": "7-0>14-0>21-0>28-0>35-0>42-0>42-7>49-7",
    "ties": 0,
    "winner": "Wake Forest Demon Deacons"
+  },
+  {
+   "date": "2026-11-14",
+   "away": "Washington Huskies",
+   "home": "Michigan State Spartans",
+   "first": "Michigan State Spartans",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 202,
+   "winner": "Washington Huskies",
+   "seq": "0-7>7-7>14-7>14-14>21-14",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "21-14"
   },
   {
    "away": "Wisconsin Badgers",
@@ -10504,7 +10532,7 @@
    "won_by_one_when_first_pct": null
   },
   "UCF Knights": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 0,
@@ -10514,9 +10542,9 @@
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Colorado Buffaloes": {
@@ -10920,18 +10948,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Michigan State Spartans": {
-   "gp": 9,
-   "scored_first": 5,
+   "gp": 10,
+   "scored_first": 6,
    "kinds": {
     "FG": 2,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
-   "win_pct_when_first": 60.0,
+   "scored_first_pct": 60.0,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -11960,18 +11988,18 @@
    "won_by_one_when_first_pct": null
   },
   "Arizona State Sun Devils": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
     "FG": 3,
-    "TD": 1,
+    "TD": 2,
     "Safety": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13080,7 +13108,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Washington Huskies": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "kinds": {
     "FG": 3,
@@ -13088,11 +13116,11 @@
     "Safety": 0
    },
    "won_when_first": 4,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 80.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Wisconsin Badgers": {
@@ -13945,14 +13973,14 @@
   }
  },
  "league": {
-  "games": 726,
-  "home_scored_first": 434,
-  "first_team_won": 515,
+  "games": 728,
+  "home_scored_first": 435,
+  "first_team_won": 516,
   "first_team_won_by_one": 11,
   "first_team_won_by_one_pct": 1.5,
   "kinds": {
    "FG": 206,
-   "TD": 518,
+   "TD": 520,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
@@ -14067,9 +14095,9 @@
    "avg_per_game": 0.0
   },
   "UCF Knights": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 16,
-   "avg_per_game": 1.78
+   "avg_per_game": 1.6
   },
   "Colorado Buffaloes": {
    "games": 10,
@@ -14197,9 +14225,9 @@
    "avg_per_game": 1.2
   },
   "Michigan State Spartans": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "UTEP Miners": {
    "games": 9,
@@ -14522,9 +14550,9 @@
    "avg_per_game": 0.0
   },
   "Arizona State Sun Devils": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 7,
-   "avg_per_game": 0.78
+   "avg_per_game": 0.7
   },
   "Murray State Racers": {
    "games": 2,
@@ -14872,9 +14900,9 @@
    "avg_per_game": 0.22
   },
   "Washington Huskies": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "Wisconsin Badgers": {
    "games": 10,
