@@ -8213,3 +8213,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 19:57:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 19:57:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-14 19:57:05 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 20:12:38 ET] sync_to_github.py: FAILED (exit 1) in 933s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-10-hour-3.json (HTTP 409: {'error': '{"message":"is at c16a4a418661a670c3308e60dde18c08a66fc7e3 but expecte
+[2026-11-14 20:14:14 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (30 with odds), db total 280241 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 20:14:55 ET] dh_low_holds.py: OK in 41s — LOW-HOLDS: NCAAF 10 Texas Tech Oklahoma St. Today 9:30 PM / table / Moneyline Oklahoma St. / Moneyline Texas Tech / table bar_chart | Bet365 | ProphetX
+[2026-11-14 20:18:11 ET] dh_key_number_middles.py: OK in 197s — key-number-middles: 43 basketball rows excluded (football-only rule).
+[2026-11-14 20:21:27 ET] dh_basketball_key_middles.py: OK in 196s — basketball-key-middles: no new basketball middles.
+[2026-11-14 20:22:31 ET] hung_number.py: OK in 64s — HUNG NUMBER: South Carolina vs Arkansas — FanDuel total value Under (41.5 vs median 43.0)
+[2026-11-14 20:22:36 ET] rlm.py: OK in 4s
+[2026-11-14 20:22:39 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-14 20:22:39 ET] syncing to GitHub (regular 10-minute sync)
