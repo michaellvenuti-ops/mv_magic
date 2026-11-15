@@ -8768,3 +8768,14 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 16:41:52 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 16:41:53 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
 [2026-11-15 16:41:54 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 16:58:55 ET] sync_to_github.py: FAILED (exit 1) in 1021s —   FAILED: pc-data/rlm-2026-11-11.md (HTTP 409: {'error': '{"message":"is at cb4e787dc675bb8997f82921df1877b35ddccac0 but expected 9c7c89af4ca0b0613f46f6fa766f48
+[2026-11-15 17:00:35 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 202 events (20 with odds), db total 289483 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 17:01:50 ET] dh_arbitrage.py: OK in 74s — arbitrage: no new qualifying pairs (silent).
+[2026-11-15 17:02:19 ET] dh_kalshi_poly_arb.py: OK in 29s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 17:02:22 ET] wide_builds.py: OK in 3s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 17:02:54 ET] dh_low_holds.py: OK in 32s — LOW-HOLDS: NFL PIT Steelers CIN Bengals Today 8:20 PM / table / Receptions D. Metcalf Under 4.5 / Alt Receptions D. Metcalf 5+ / table | BetParx | Bet365
+[2026-11-15 17:04:33 ET] dh_game_middles.py: OK in 99s — GAME MIDDLE: NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM / table / Alt Spread Arkansas-Pine Bluff +48.5 / Alt Spread USC -47.5 / table | Fanatics-NJ | HardRo
+[2026-11-15 17:07:58 ET] dh_key_number_middles.py: OK in 204s — key-number-middles: 1062 basketball rows excluded (football-only rule).
+[2026-11-15 17:11:15 ET] dh_basketball_key_middles.py: OK in 197s — basketball-key-middles: no new basketball middles.
+[2026-11-15 17:11:21 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 17:11:21 ET] syncing to GitHub (regular 10-minute sync)
