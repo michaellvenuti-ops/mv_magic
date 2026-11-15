@@ -1,5 +1,5 @@
 {
- "through": "2026-11-12",
+ "through": "2026-11-15",
  "games": [
   {
    "away": "New England Patriots",
@@ -1352,25 +1352,35 @@
    "ties": 1
   },
   {
-   "date": "2026-11-12",
    "away": "Washington Commanders",
-   "home": "New York Giants",
+   "date": "2026-11-12",
+   "final": "24-21",
    "first": "Washington Commanders",
-   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "home": "New York Giants",
    "lead_changes": 6,
+   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "ties": 0
+  },
+  {
+   "date": "2026-11-15",
+   "away": "New England Patriots",
+   "home": "Detroit Lions",
+   "first": "New England Patriots",
+   "seq": "3-0>3-7>3-14>3-21>3-28>10-28>10-35",
+   "lead_changes": 1,
    "ties": 0,
-   "final": "24-21"
+   "final": "10-35"
   }
  ],
  "tally": {
   "New England Patriots": {
-   "gp": 9,
-   "scored_first": 5,
+   "gp": 10,
+   "scored_first": 6,
    "won_when_first": 4,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
-   "win_pct_when_first": 80.0,
+   "scored_first_pct": 60.0,
+   "win_pct_when_first": 66.7,
    "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1617,14 +1627,14 @@
    "won_by_one_when_first_pct": 100.0
   },
   "Detroit Lions": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 6,
    "won_when_first": 5,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 75.0,
+   "scored_first_pct": 66.7,
    "win_pct_when_first": 83.3,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 16.7
   },
   "New York Jets": {
@@ -1717,15 +1727,15 @@
   }
  },
  "league": {
-  "games": 136,
-  "games_with_goal": 136,
+  "games": 137,
+  "games_with_goal": 137,
   "home_scored_first": 69,
   "first_team_won": 86,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.5,
-  "avg_lead_changes": 1.32,
-  "home_scored_first_pct": 50.7,
-  "first_team_win_pct": 63.2
+  "avg_lead_changes": 1.31,
+  "home_scored_first_pct": 50.4,
+  "first_team_win_pct": 62.8
  },
  "lead_changes": [
   {
@@ -3079,21 +3089,31 @@
    "ties": 1
   },
   {
-   "date": "2026-11-12",
    "away": "Washington Commanders",
-   "home": "New York Giants",
+   "date": "2026-11-12",
+   "final": "24-21",
    "first": "Washington Commanders",
-   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "home": "New York Giants",
    "lead_changes": 6,
+   "seq": "3-0>3-7>10-7>10-14>17-14>17-21>24-21",
+   "ties": 0
+  },
+  {
+   "date": "2026-11-15",
+   "away": "New England Patriots",
+   "home": "Detroit Lions",
+   "first": "New England Patriots",
+   "seq": "3-0>3-7>3-14>3-21>3-28>10-28>10-35",
+   "lead_changes": 1,
    "ties": 0,
-   "final": "24-21"
+   "final": "10-35"
   }
  ],
  "lead_change_team_avgs": {
   "New England Patriots": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "Seattle Seahawks": {
    "games": 9,
@@ -3206,9 +3226,9 @@
    "avg_per_game": 1.5
   },
   "Detroit Lions": {
-   "games": 8,
-   "lead_changes": 10,
-   "avg_per_game": 1.25
+   "games": 9,
+   "lead_changes": 11,
+   "avg_per_game": 1.22
   },
   "New York Jets": {
    "games": 9,
