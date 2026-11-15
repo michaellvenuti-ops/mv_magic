@@ -8153,3 +8153,21 @@
 [2026-11-14 19:26:08 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: 545 basketball rows excluded (football-only rule).
 [2026-11-14 19:29:27 ET] dh_basketball_key_middles.py: OK in 199s — basketball-key-middles: no new basketball middles.
 [2026-11-14 19:29:27 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 19:45:53 ET] sync_to_github.py: FAILED (exit 1) in 985s —   FAILED: ncaab-first-score-board-pc.html (HTTP 409: {'error': '{"message":"is at e90a008d620eb546ed2c86fb2c7edd8dd4d86fab but expected 038a6858590fca7c0746c7cd
+[2026-11-14 19:47:28 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (42 with odds), db total 280007 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 19:50:13 ET] dh_arbitrage.py: OK in 165s — arbitrage: no new qualifying pairs (silent).
+[2026-11-14 19:50:51 ET] dh_kalshi_poly_arb.py: OK in 38s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-14 19:50:53 ET] wide_builds.py: OK in 2s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-14.md)
+[2026-11-14 19:53:05 ET] dh_game_middles.py: OK in 132s — GAME MIDDLE: NCAAB Missouri Marquette Nov-15 2:30 PM / table / Spread Marquette +1 / Moneyline Missouri / table | Fanatics-NJ | BetMGM — window 220.0 :: -115 $1
+[2026-11-14 19:53:11 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-14 19:54:50 ET] dh_prop_middles.py: OK in 99s — PROP MIDDLE CLEAN : NFL SF 49ers DAL Cowboys Nov-15 4:25 PM / table / Receiving Yards D. Robinson Under 32.5 / Alt Recv Yards D. Robinson 30+ / table | Caesars 
+[2026-11-14 19:56:53 ET] dh_sog_middles.py: OK in 123s — - 0 deliverables this run
+[2026-11-14 19:56:56 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/24.5 sits at -0.6c vs +EV
+[2026-11-14 19:56:57 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-14 19:56:58 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 175 total tallied.
+[2026-11-14 19:56:59 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 305 total tallied.
+[2026-11-14 19:57:01 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 4 new, 1 unverified, 596 total tallied.
+[2026-11-14 19:57:03 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 3 new, 0 unverified, 726 total tallied.
+[2026-11-14 19:57:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
+[2026-11-14 19:57:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-14 19:57:05 ET] syncing to GitHub (regular 10-minute sync)
