@@ -8666,3 +8666,10 @@
 [2026-11-15 14:06:28 ET] dh_kalshi_poly_arb.py: OK in 33s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-15 14:06:30 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL PIT Steelers CIN Bengals Today 8:20 PM — Total — Over 45.5 Fanatics-NJ -160 ($113) / Under 48.5 theScore +110 ($87) — both win 46, 47, 48 — land 
 [2026-11-15 14:06:30 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 14:23:06 ET] sync_to_github.py: FAILED (exit 1) in 996s —   FAILED: pc-data/promo-dashboard-dump-2026-11-07.txt (HTTP 409: {'error': '{"message":"is at de309d0f29dc323bcef7ebfe84900b0fbcaba592 but expected 1b172d4feb51
+[2026-11-15 14:24:04 ET] dh_low_holds.py: OK in 58s — LOW-HOLDS: NBA LA Lakers PHO Suns Today 4:15 PM / table / Alt Spread PHO Suns +9.5 / Alt Spread LA Lakers -9.5 / table | FanDuel | BetMGM
+[2026-11-15 14:25:59 ET] dh_game_middles.py: OK in 114s — GAME MIDDLE: NBA SA Spurs UTA Jazz Today 5:15 PM / table / 1st Half Total Over 114.5 / 1st Half Alt Total Under 115.5 / table | Bally Bet | FanDuel — window 209
+[2026-11-15 14:29:49 ET] dh_key_number_middles.py: OK in 230s — key-number-middles: 912 basketball rows excluded (football-only rule).
+[2026-11-15 14:33:28 ET] dh_basketball_key_middles.py: OK in 218s — basketball-key-middles: no new basketball middles.
+[2026-11-15 14:33:34 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 14:33:34 ET] syncing to GitHub (regular 10-minute sync)
