@@ -47,3 +47,10 @@
 - 2026-11-14: Florida Gators @ Kentucky Wildcats — first: Kentucky Wildcats (TD, 13:28 in); lead changes 3; final 21-14
 - 2026-11-14: Southern Miss Golden Eagles @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 1:44 in); lead changes 0; final 31-63
 - 2026-11-14: App State Mountaineers @ Marshall Thundering Herd — first: Marshall Thundering Herd (FG, 6:39 in); lead changes 1; final 20-16
+## 2026-11-14T22:42:00-05:00 -- NCAAF FIRST SCORE (PC): 6 new final(s) tallied; season 738 games through 2026-11-14
+- 2026-11-14: Purdue Boilermakers @ Iowa Hawkeyes — first: Iowa Hawkeyes (TD, 11:41 in); lead changes 0; final 7-28
+- 2026-11-14: Baylor Bears @ BYU Cougars — first: BYU Cougars (TD, 5:46 in); lead changes 0; final 7-28
+- 2026-11-14: Louisville Cardinals @ North Carolina Tar Heels — first: Louisville Cardinals (FG, 4:39 in); lead changes 2; final 16-14
+- 2026-11-14: Minnesota Golden Gophers @ Penn State Nittany Lions — first: Penn State Nittany Lions (TD, 6:16 in); lead changes 0; final 14-42
+- 2026-11-14: San José State Spartans @ Air Force Falcons — first: Air Force Falcons (FG, 19:02 in); lead changes 0; final 3-24
+- 2026-11-14: Troy Trojans @ South Alabama Jaguars — first: South Alabama Jaguars (TD, 1:26 in); lead changes 0; final 14-27
