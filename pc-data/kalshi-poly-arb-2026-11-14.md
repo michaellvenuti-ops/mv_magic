@@ -18,3 +18,4 @@ NFL CAR Panthers NO Saints Nov-15 1:00 PM / table bar_chart / Rush Yards A. Esti
 NFL CAR Panthers NO Saints Nov-15 1:00 PM / table bar_chart / Rush Yards A. Estime Over 39.5 NO / Alt Rush Yards A. Estime 40+ / table | Kalshi | Bet365 :: {'leg1': {'side': '-322.7 [75%] $1,000 Kalshi', 'price': '-322.7', 'book': 'Kalshi', 'stake': 1000.0}, 'leg2': {'side': '+400 $262 Bet365', 'price': '+400', 'book': 'Bet365', 'stake': 262.0}, 'arb_risk': False, 'first_reported': '2026-11-14T17:24:37-05:00', 'last_seen': '2026-11-14', 'profit_pct': 3.79}
 ## 2026-11-14T18:33:38-05:00 — kalshi-poly-arb: 98 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-14T19:50:48-05:00 — kalshi-poly-arb: 98 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-14T21:19:26-05:00 — kalshi-poly-arb: 67 complete pairs read, 0 NEW/CHANGED delivered
