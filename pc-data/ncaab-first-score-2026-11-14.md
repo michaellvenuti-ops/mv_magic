@@ -45,3 +45,9 @@
 - 2026-11-14: South Carolina Upstate Spartans @ Campbell Fighting Camels — first: Campbell Fighting Camels (3PT, 0:34 in); lead changes 0; final 77-93
 - 2026-11-14: Utah Tech Trailblazers @ California Golden Bears — first: California Golden Bears (2PT, 1:43 in); lead changes 2; final 73-79
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T19:57:01-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 596 games through 2026-11-14
+- 2026-11-14: Manhattan Jaspers @ Le Moyne Dolphins — first: Le Moyne Dolphins (3PT, 0:25 in); lead changes 0; final 62-76
+- 2026-11-14: Northern Iowa Panthers @ Oakland Golden Grizzlies — first: Oakland Golden Grizzlies (2PT, 0:22 in); lead changes 6; final 76-80
+- 2026-11-14: Morgan State Bears @ Loyola Maryland Greyhounds — first: Morgan State Bears (2PT, 0:16 in); lead changes 10; final 63-61
+- 2026-11-14: Lincoln (CA) Oaklanders @ Weber State Wildcats — first: Lincoln (CA) Oaklanders (3PT, 0:44 in); lead changes 1; final 57-80
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
