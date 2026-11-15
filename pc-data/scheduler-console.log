@@ -8413,3 +8413,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 02:48:48 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 02:48:49 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-15 02:48:49 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 03:04:38 ET] sync_to_github.py: FAILED (exit 1) in 949s —   FAILED: pc-data/ncaaf-first-score-2026-11-15.md (HTTP 409: {'error': '{"message":"is at 20eda30a334726d552f1655066087771d4031f25 but expected 593b2efe3e11da79
+[2026-11-15 03:06:27 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 234 events (14 with odds), db total 284453 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 03:06:28 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Quinnipiac Central Connecticut Today 12:00 PM — Total — Over 134 Bet365 +105 ($88) / Under 137.5 DraftKings -160 ($112) — both win 135, 136, 13
+[2026-11-15 03:06:28 ET] syncing to GitHub (wide-builds banked new builds)
