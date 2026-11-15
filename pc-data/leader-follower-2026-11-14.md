@@ -76,3 +76,15 @@ LEAD: FanDuel on Middle Tennessee @ Liberty | 2026-11-14 (total)
 ## 2026-11-14T19:01:16-05:00 — pack move, never credited: Georgia Southern @ Georgia State | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
 ## 2026-11-14T19:01:16-05:00 — 81 games, 1 leads credited, 44 started games skipped
 LEAD: Kalshi on San Jose State @ Air Force | 2026-11-14 (spread)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Appalachian State @ Marshall | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Appalachian State @ Marshall | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: San Jose State @ Air Force | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: San Jose State @ Air Force | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Florida Atlantic @ Tulsa | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Florida Atlantic @ Tulsa | 2026-11-14 total (BetMGM, Caesars, DraftKings, FanDuel)
+## 2026-11-14T20:22:39-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Texas @ LSU | 2026-11-14
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Utah @ Arizona | 2026-11-14 spread (BetMGM, Fanatics)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Jacksonville State @ Western Kentucky | 2026-11-14 spread (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Jacksonville State @ Western Kentucky | 2026-11-14 total (BetMGM, Kalshi)
+## 2026-11-14T20:22:39-05:00 — pack move, never credited: Jacksonville State @ Western Kentucky | 2026-11-14 total (Caesars, DraftKings, FanDuel)
+## 2026-11-14T20:22:39-05:00 — 81 games, 0 leads credited, 49 started games skipped
