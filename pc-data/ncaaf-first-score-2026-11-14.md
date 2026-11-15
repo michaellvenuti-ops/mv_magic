@@ -38,3 +38,7 @@
 - 2026-11-14: Fresno State Bulldogs @ Texas State Bobcats — first: Texas State Bobcats (TD, 5:42 in); lead changes 2; final 35-37
 - 2026-11-14: Auburn Tigers @ Mississippi State Bulldogs — first: Auburn Tigers (TD, 6:21 in); lead changes 0; final 41-9
 - 2026-11-14: Tulane Green Wave @ Rice Owls — first: Rice Owls (FG, 5:38 in); lead changes 1; final 20-17
+## 2026-11-14T21:01:13-05:00 -- NCAAF FIRST SCORE (PC): 2 new final(s) tallied; season 728 games through 2026-11-14
+- 2026-11-14: Arizona State Sun Devils @ UCF Knights — first: Arizona State Sun Devils (TD, 15:05 in); lead changes 0; final 26-13
+- 2026-11-14: Washington Huskies @ Michigan State Spartans — first: Michigan State Spartans (TD, 3:22 in); lead changes 1; final 21-14
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
