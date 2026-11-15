@@ -8702,3 +8702,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 13:46:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 13:46:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-15 13:46:28 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 14:03:08 ET] sync_to_github.py: FAILED (exit 1) in 1000s —   FAILED: pc-data/ncaab-first-score-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 5dada7602a2d71646339e4660529c73d3ece3aeb but expected c3920445fb234ba4
+[2026-11-15 14:04:47 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 202 events (39 with odds), db total 288675 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 14:05:55 ET] dh_arbitrage.py: OK in 69s — arbitrage: no new qualifying pairs (silent).
+[2026-11-15 14:06:28 ET] dh_kalshi_poly_arb.py: OK in 33s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 14:06:30 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL PIT Steelers CIN Bengals Today 8:20 PM — Total — Over 45.5 Fanatics-NJ -160 ($113) / Under 48.5 theScore +110 ($87) — both win 46, 47, 48 — land 
+[2026-11-15 14:06:30 ET] syncing to GitHub (wide-builds banked new builds)
