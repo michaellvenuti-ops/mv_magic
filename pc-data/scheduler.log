@@ -8148,3 +8148,8 @@
 [2026-11-14 19:05:11 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-14; skipping.
 [2026-11-14 19:05:13 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
 [2026-11-14 19:05:13 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-14 19:21:01 ET] sync_to_github.py: FAILED (exit 1) in 948s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-08.md (HTTP 409: {'error': '{"message":"is at b739c526330cd5508d0900105bccc447d84e2315 but expected 69ea624033
+[2026-11-14 19:22:37 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 234 events (49 with odds), db total 279773 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-14 19:26:08 ET] dh_key_number_middles.py: OK in 211s — key-number-middles: 545 basketball rows excluded (football-only rule).
+[2026-11-14 19:29:27 ET] dh_basketball_key_middles.py: OK in 199s — basketball-key-middles: no new basketball middles.
+[2026-11-14 19:29:27 ET] syncing to GitHub (regular 10-minute sync)
