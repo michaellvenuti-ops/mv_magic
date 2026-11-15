@@ -81,28 +81,51 @@ def parse_start(event_text, now):
     return None
 
 
+def period_of(seg):
+    """Game period a market segment covers. Full-game is the default;
+    quarter/half markets must never pool with full-game legs (WB-120,
+    2026-11-14: a 3rd-quarter IND -1.5 leg paired with a full-game
+    MIA +6 leg and shipped as a full-game spread middle — the old
+    code only recognised 1st Half, so every other period collapsed
+    into the full-game pool)."""
+    if "1st Half" in seg or " 1H" in seg or seg.startswith("1H"):
+        return "1H"
+    if "2nd Half" in seg or " 2H" in seg or seg.startswith("2H"):
+        return "2H"
+    if "1st Quarter" in seg or " 1Q" in seg or seg.startswith("1Q"):
+        return "1Q"
+    if "2nd Quarter" in seg or " 2Q" in seg or seg.startswith("2Q"):
+        return "2Q"
+    if "3rd Quarter" in seg or " 3Q" in seg or seg.startswith("3Q"):
+        return "3Q"
+    if "4th Quarter" in seg or " 4Q" in seg or seg.startswith("4Q"):
+        return "4Q"
+    return "full"
+
+
 def parse_leg(segment):
     """One market segment -> leg dict or None."""
     seg = segment.strip()
-    half = "1st Half" in seg or " 1H" in seg
+    period = period_of(seg)
     m = TOTAL_RE.search(seg)
     if m:
         return {"kind": "total", "side": m.group(1),
-                "line": float(m.group(2)), "half": half}
+                "line": float(m.group(2)), "period": period}
     m = SPREAD_RE.search(seg)
     if m:
         return {"kind": "spread", "side": m.group(1).strip(),
-                "line": float(m.group(2)), "half": half}
+                "line": float(m.group(2)), "period": period}
     m = PROP_ALT_RE.search(seg)
     if m and "Spread" not in seg and "Total" not in seg:
         grp = re.sub(r"^Alt ", "", m.group(1).strip())
         return {"kind": "prop", "side": "Over",
-                "line": int(m.group(2)) - 0.5, "group": grp, "half": half}
+                "line": int(m.group(2)) - 0.5, "group": grp,
+                "period": period}
     m = PROP_OU_RE.search(seg)
     if m and "Spread" not in seg and "Total" not in seg:
         grp = re.sub(r"^Alt ", "", m.group(1).strip())
         return {"kind": "prop", "side": m.group(2),
-                "line": float(m.group(3)), "group": grp, "half": half}
+                "line": float(m.group(3)), "group": grp, "period": period}
     return None
 
 
@@ -187,11 +210,12 @@ def entries_to_groups(items):
                 rec = {**leg_meta, "book": book, "price": price,
                        "event": event, "src": src}
                 if leg_meta["kind"] == "total":
-                    gk = ("total", event, leg_meta["half"])
+                    gk = ("total", event, leg_meta["period"])
                 elif leg_meta["kind"] == "spread":
-                    gk = ("spread", event, leg_meta["half"])
+                    gk = ("spread", event, leg_meta["period"])
                 else:
-                    gk = ("prop", event, leg_meta["group"], leg_meta["half"])
+                    gk = ("prop", event, leg_meta["group"],
+                          leg_meta["period"])
                 pool = groups.setdefault(gk, {})
                 pk = (rec["side"], rec["line"], book)
                 if pk not in pool or src == "arbitrage":
