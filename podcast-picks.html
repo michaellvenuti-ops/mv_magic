@@ -9,11 +9,20 @@ th{background:#161b22;color:#9da7b3}
 a{color:#58a6ff}
 .foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
 .win{color:#7ee2a0;font-weight:700} .loss{color:#f778ba;font-weight:700} .push{color:#d29922;font-weight:700}
+.filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 2px;font-size:13px}
+.filters select,.filters input{padding:4px 6px;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:4px}
+.filters button{padding:4px 10px;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:4px;cursor:pointer}
+.f-count{color:#8b949e}
+th.sortable{cursor:pointer;white-space:nowrap}
+th.sortable:hover{color:#e6edf3}
+th.asc::after{content:' ▲';font-size:10px}
+th.desc::after{content:' ▼';font-size:10px}
 </style></head><body>
 <h1>Podcast Picks Tracker</h1>
 <div class='sub'>3235 picks logged · 2505 graded · 730 awaiting results · Graded P/L -5,858.30 at $100 flat · Scoreboard last updated 2026-11-14 · Daily scan ~4:44 PM ET (Spotify transcripts: VSiN By The Books, Follow the Money, A Numbers Game, Prop Points, Even Money).</div>
-<h2>Scoreboard (per picker)</h2>
-<div class='wrap'><table><tr><th>Picker</th><th>Show</th><th>Record (W-L-P)</th><th>Win % (excl. pushes)</th><th>Picks Graded</th><th>$ P/L ($100 flat)</th><th>Last Updated</th></tr>
+<div class='sub'>Two separate books, never netted: <b>following</b> the picks (scoreboard + latest picks below) and <b>fading</b> them (paper inverse section). Click any column header to sort a table; the tables below also filter by show, and latest picks by date.</div>
+<h2>Scoreboard (per picker) — following the picks</h2>
+<div class='filterable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table><tr><th>Picker</th><th>Show</th><th>Record (W-L-P)</th><th>Win % (excl. pushes)</th><th>Picks Graded</th><th>$ P/L ($100 flat)</th><th>Last Updated</th></tr>
 <tr><td>Steve Fezzik</td><td>Even Money</td><td>35-19-0</td><td>64.8%</td><td>54</td><td>+1288.98</td><td>2026-11-14</td></tr>
 <tr><td>Alex White</td><td>Circa Friday Football Invitational</td><td>39-23-0</td><td>62.9%</td><td>62</td><td>+1245.49</td><td>2026-11-14</td></tr>
 <tr><td>Ryan Kramer</td><td>Follow the Money</td><td>8-17-1</td><td>32.0%</td><td>26</td><td>+1145.46</td><td>2026-11-14</td></tr>
@@ -124,10 +133,10 @@ a{color:#58a6ff}
 <tr><td>Robert Brubeck</td><td>Circa Friday Football Invitational</td><td>26-34-0</td><td>43.3%</td><td>60</td><td>-1036.34</td><td>2026-11-14</td></tr>
 <tr><td>Pauly Howard</td><td>Follow the Money</td><td>35-48-1</td><td>42.2%</td><td>84</td><td>-1630.88</td><td>2026-11-14</td></tr>
 <tr><td>Jensen Lewis</td><td>VSiN By The Books</td><td>63-90-2</td><td>41.2%</td><td>155</td><td>-2904.26</td><td>2026-11-14</td></tr>
-</table></div>
+</table></div></div>
 <h2>Paper Inverse Tracker — fading the picks</h2>
 <div class='sub'>2383 invertible picks faded (paper only, no bets) · Inverse record 1132-1215-36 · Inverse P/L -20,672.47 at $100 flat at modeled reverse prices. Picks with no two-sided reverse bet (horse racing, MVP/award fields, first-touchdown and anytime scorer props, parlays) are excluded — see the sheet's Inverse tabs for the per-pick list and pricing basis.</div>
-<div class='wrap'><table><tr><th>Picker</th><th>Show</th><th>Inverse Record (W-L-P)</th><th>Inverse Win % (excl. pushes)</th><th>Picks Faded</th><th>$ Inverse P/L ($100 flat, paper)</th><th>Last Updated</th></tr>
+<div class='filterable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table><tr><th>Picker</th><th>Show</th><th>Inverse Record (W-L-P)</th><th>Inverse Win % (excl. pushes)</th><th>Picks Faded</th><th>$ Inverse P/L ($100 flat, paper)</th><th>Last Updated</th></tr>
 <tr><td>Jensen Lewis</td><td>VSiN By The Books</td><td>81-60-2</td><td>57.4%</td><td>143</td><td>+831.64</td><td>2026-11-14</td></tr>
 <tr><td>Will Hill</td><td>A Numbers Game</td><td>10-3-0</td><td>76.9%</td><td>13</td><td>+617.19</td><td>2026-11-14</td></tr>
 <tr><td>Tom Brolley</td><td>Prop Points</td><td>7-1-0</td><td>87.5%</td><td>8</td><td>+536.36</td><td>2026-11-14</td></tr>
@@ -240,9 +249,9 @@ a{color:#58a6ff}
 <tr><td>Note (P-5, 2026-11-12): Rounding convention — the Inverse Scoreboard sums each picker&#x27;s exact (unrounded) $ values and rounds the total; the Picks $ column rounds each row&#x27;s $ value first. Totals may therefore differ by a few cents from a sum of the rounded $ column.</td></tr>
 <tr><td>Note (P-8, 2026-11-12): 8 inverse modeled prices beyond -500 are modeled artifacts of inverting long plus-money originals, not real prices — Inverse Picks rows 181 (-768), 189 (-1634), 479 (-684), 571 (-3233), 668 (-515), 686 (-740), 2218 (-841), 2222 (-1066). Their $ values are the modeled payouts at those prices.</td></tr>
 <tr><td>Note (P-10, 2026-11-12): No inverse fade exists for Picks row 1045 (Steve Wyss, Enciso anytime goalscorer, Ipswich vs Bournemouth) — an anytime-goalscorer prop is the soccer analogue of the excluded TD-scorer class, so it is not faded.</td></tr>
-</table></div>
-<h2>Latest picks (newest first)</h2>
-<div class='wrap'><table><tr><th>Date</th><th>Show</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$</th></tr>
+</table></div></div>
+<h2>Latest picks (newest first) — following the picks</h2>
+<div class='filterable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> Date: <input type='date' class='f-date'> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table><tr><th>Date</th><th>Show</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$</th></tr>
 <tr><td>2026-11-13</td><td>VSiN By The Books</td><td>Shahan Jayarajah</td><td>Heisman Trophy</td><td>Gio Lopez (UNC QB)</td><td>not stated</td><td>no price stated</td><td class=''></td><td></td></tr>
 <tr><td>2026-11-13</td><td>VSiN By The Books</td><td>Shahan Jayarajah</td><td>Texas Tech at Oklahoma State (CFB)</td><td>Over 73</td><td>73</td><td>no price stated</td><td class=''></td><td></td></tr>
 <tr><td>2026-11-13</td><td>VSiN By The Books</td><td>Shahan Jayarajah</td><td>Oklahoma State at Texas Tech (CFB)</td><td>Oklahoma State</td><td>not stated</td><td>no price stated</td><td class=''></td><td></td></tr>
@@ -3478,5 +3487,14 @@ a{color:#58a6ff}
 <tr><td>2026-10-22</td><td>Prop Points</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>Rome Odunze OVER receiving yards</td><td>44.5</td><td>-113</td><td class='win'>WIN</td><td>+88.50</td></tr>
 <tr><td>2026-10-22</td><td>Prop Points</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>A.J. Brown OVER receiving yards</td><td>67.5</td><td>-112</td><td class='loss'>LOSS</td><td>-100.00</td></tr>
 <tr><td>2026-10-22</td><td>Prop Points</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>Stevenson OVER rushing yards</td><td>42.5</td><td>no price stated</td><td class='loss'>LOSS</td><td>-100.00</td></tr>
-</table></div>
-<div class='foot'>Grading: $100 flat bet at the price recorded with the pick; if no price was stated on the show, graded at -110 and noted. Picks are the hosts' own words from Spotify transcripts; this page never places a bet. Source: Podcast Picks Tracker sheet.</div></body></html>
+</table></div></div>
+<div class='foot'>Grading: $100 flat bet at the price recorded with the pick; if no price was stated on the show, graded at -110 and noted. Picks are the hosts' own words from Spotify transcripts; this page never places a bet. Source: Podcast Picks Tracker sheet.</div>
+<script>
+function numVal(t){var v=t.replace(/[$,%]/g,'').replace(/,/g,'').trim();if(v===''||v==='\u2014'||v==='\u2013')return null;var n=parseFloat(v);return isNaN(n)?null:n;}
+function cellText(r,i){var c=r.cells[i];return c?c.textContent.trim():'';}
+function sortTable(table,col,dir){var tb=table.tBodies[0];var rows=Array.prototype.slice.call(tb.rows);rows.sort(function(a,b){var ta=cellText(a,col),t2=cellText(b,col);var na=numVal(ta),nb=numVal(t2);var c;if(na!==null&&nb!==null){c=na-nb;}else{c=ta.localeCompare(t2);}return dir*c;});rows.forEach(function(r){tb.appendChild(r);});}
+document.querySelectorAll('table').forEach(function(table){var ths=table.querySelectorAll('th');ths.forEach(function(th,i){th.classList.add('sortable');th.addEventListener('click',function(){var dir=th.dataset.dir==='asc'?'desc':'asc';table.querySelectorAll('th').forEach(function(x){x.classList.remove('asc','desc');delete x.dataset.dir;});th.dataset.dir=dir;th.classList.add(dir);sortTable(table,i,dir==='asc'?1:-1);});});});
+function applyFilters(wrap){var sEl=wrap.querySelector('.f-show');var dEl=wrap.querySelector('.f-date');var show=sEl?sEl.value:'';var date=dEl?dEl.value:'';var rows=wrap.querySelectorAll('tbody tr');var shown=0;rows.forEach(function(r){var okShow=!show||r.cells.length<2||cellText(r,1)===show;var okDate=!date||r.cells.length<1||cellText(r,0)===date;var ok=okShow&&okDate;r.style.display=ok?'':'none';if(ok)shown++;});var c=wrap.querySelector('.f-count');if(c)c.textContent=shown+' of '+rows.length+' shown';}
+document.querySelectorAll('.filterable').forEach(function(wrap){var sel=wrap.querySelector('.f-show');if(sel){var shows={};wrap.querySelectorAll('tbody tr').forEach(function(r){if(r.cells.length>1)shows[cellText(r,1)]=1;});Object.keys(shows).sort().forEach(function(s){var o=document.createElement('option');o.value=s;o.textContent=s;sel.appendChild(o);});sel.addEventListener('change',function(){applyFilters(wrap);});}var dEl=wrap.querySelector('.f-date');if(dEl){dEl.addEventListener('change',function(){applyFilters(wrap);});}var cl=wrap.querySelector('.f-clear');if(cl){cl.addEventListener('click',function(){if(sel)sel.value='';if(dEl)dEl.value='';applyFilters(wrap);});}applyFilters(wrap);});
+</script>
+</body></html>
