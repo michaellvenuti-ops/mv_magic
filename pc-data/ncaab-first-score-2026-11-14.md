@@ -39,3 +39,9 @@
 - 2026-11-14: Delaware State Hornets @ East Carolina Pirates — first: East Carolina Pirates (3PT, 0:14 in); lead changes 0; final 48-72
 - 2026-11-14: Lafayette Leopards @ St. Bonaventure Bonnies — first: St. Bonaventure Bonnies (2PT, 0:35 in); lead changes 2; final 58-81
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T19:05:08-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 592 games through 2026-11-14
+- 2026-11-14: Longwood Lancers @ Old Dominion Monarchs — first: Longwood Lancers (2PT, 1:22 in); lead changes 5; final 74-80
+- 2026-11-14: UNC Asheville Bulldogs @ Georgia Tech Yellow Jackets — first: Georgia Tech Yellow Jackets (2PT, 0:20 in); lead changes 6; final 74-75
+- 2026-11-14: South Carolina Upstate Spartans @ Campbell Fighting Camels — first: Campbell Fighting Camels (3PT, 0:34 in); lead changes 0; final 77-93
+- 2026-11-14: Utah Tech Trailblazers @ California Golden Bears — first: California Golden Bears (2PT, 1:43 in); lead changes 2; final 73-79
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
