@@ -13,10 +13,13 @@ TRAILING on the live scoreboard, and this game has not alerted before.
 One alert per game (a favorite that goes back ahead and trails again
 does not re-fire).
 
-Basketball trigger (NBA + NCAAB; changed 2026-11-05, gate reading
-settled 2026-11-14 at Michael's tap): the same trailing condition,
-PLUS the favorite's LIVE moneyline must be -200 or SHORTER
-(-200, -250, -300 — strong favorite only) at the moment of the check. ESPN's basketball scoreboards carry no usable live
+Basketball trigger (NBA + NCAAB; changed 2026-11-05, both buckets
+labeled 2026-11-14 at Michael's tap): the same trailing condition,
+PLUS the favorite's LIVE moneyline is read and the alert is LABELED
+by bucket — STRONG FAVORITE when the live ML is -200 or shorter
+(-200, -250, -300), BETTOR-FRIENDLY when it is longer than -200
+(-195, -180, -125, any plus price). Both buckets alert; the label
+tells them apart. ML of exactly -200 counts as STRONG FAVORITE. ESPN's basketball scoreboards carry no usable live
 moneyline (live NCAAB games have no odds object at all), so the live ML
 is read from ScoresAndOdds' public board — fetched ONLY on runs where a
 basketball candidate exists. If the live ML cannot be read for a game,
@@ -60,7 +63,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DATA_DIR
 STATE_PATH = DATA_DIR / "upset-watch-state.json"
 THRESHOLD = 10.5
-ML_GATE = -200  # basketball: live ML must be -200 or shorter (strong favorite only; settled 2026-11-14)
+ML_GATE = -200  # basketball: live ML bucket split — ML <= -200 is STRONG FAVORITE, ML > -200 is BETTOR-FRIENDLY (both alert; settled 2026-11-14)
 ALERT_TTL_MIN = {"basketball": 3, "football": 5}  # delivery freshness window
 
 SPORTS = [
@@ -232,6 +235,7 @@ def stamp_alert(rec, kind, board_at, detail, fav_score, dog_score,
     rec["alert_dog_score"] = dog_score
     if ml is not None:
         rec["alert_ml"] = ml
+        rec["ml_bucket"] = ("strong" if ml <= ML_GATE else "bettor")
         rec["ml_read_at"] = ml_at.isoformat(timespec="seconds")
     rec.pop("ml_hold_reason", None)
     rec.pop("ml_hold_at", None)
@@ -284,7 +288,7 @@ def main():
             state = {"games": {}}
     games = state.setdefault("games", {})
     triggers = []
-    bb_candidates = []  # basketball: trailing 10.5+ favs awaiting the ML gate
+    bb_candidates = []  # basketball: trailing 10.5+ favs awaiting the ML bucket label
     seen = 0
     for sport, url in SPORTS:
         try:
@@ -352,8 +356,8 @@ def main():
                     continue
                 ml = entry["ml"]
                 rec["live_ml"] = ml
-                if ml > ML_GATE:
-                    continue
+                rec["ml_bucket"] = ("strong" if ml <= ML_GATE
+                                    else "bettor")
                 hold = ml_sanity_hold(
                     ml, entry.get("spread"), dog_score - fav_score,
                     seconds_left_in_game(g["detail"]))
@@ -403,12 +407,15 @@ def main():
                         g = g2
                 emit = stamp_alert(rec, "basketball", board_at, g["detail"],
                                    fav_score, dog_score, ml=ml, ml_at=ml_at)
+                bucket = ("STRONG FAVORITE" if ml <= ML_GATE
+                          else "BETTOR-FRIENDLY")
                 triggers.append(
                     f"TRIGGER: {sport} | {g['matchup']} | pregame favorite "
                     f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
                     f"{rec['dog_team']} {dog_score}-{rec['fav_team']} {fav_score} "
-                    f"| {g['detail']} | live ML {ml:+d} (ScoresAndOdds, read "
-                    f"{ml_at:%H:%M:%S} ET) | as of {emit:%H:%M:%S} ET")
+                    f"| {g['detail']} | {bucket} — live ML {ml:+d} "
+                    f"(ScoresAndOdds, read {ml_at:%H:%M:%S} ET) "
+                    f"| as of {emit:%H:%M:%S} ET")
     # Prune games from before yesterday (keeps the file small; finals stay
     # out of future checks either way).
     with open(STATE_PATH, "w") as fh:
