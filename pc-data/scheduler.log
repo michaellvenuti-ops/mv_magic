@@ -8707,3 +8707,7 @@
 [2026-11-15 16:01:24 ET] dh_basketball_key_middles.py: OK in 197s — basketball-key-middles: no new basketball middles.
 [2026-11-15 16:01:31 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
 [2026-11-15 16:01:31 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 16:18:19 ET] sync_to_github.py: FAILED (exit 1) in 1008s —   FAILED: pc-data/nhl-finals-2026-11-08.json (HTTP 409: {'error': '{"message":"is at de56e94b6410f44fd4850d204f90ea53cd03ce2d but expected a04f56ef609c20409debf
+[2026-11-15 16:19:55 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 202 events (24 with odds), db total 289281 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 16:19:56 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA SA Spurs UTA Jazz Today 5:15 PM — Total — Over 222.5 DraftKings -112 ($96) / Under 227.5 BetRivers -137 ($104) — both win 223, 224, 225, 226, 227
+[2026-11-15 16:19:56 ET] syncing to GitHub (wide-builds banked new builds)
