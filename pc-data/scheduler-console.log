@@ -8720,3 +8720,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 14:53:58 ET] odds_recorder.py: OK in 109s — SUMMARY: recorded 202 events (36 with odds), db total 288877 snapshots / 1108 events, feeds ok 6 fail 0
 [2026-11-15 14:53:59 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL LA Rams ARI Cardinals Today 4:05 PM — Spread — LA Rams -9 Bally Bet -110 ($95) / ARI Cardinals +12.5 HardRock -140 ($105) — both win 10, 11, 12 —
 [2026-11-15 14:53:59 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 15:10:13 ET] sync_to_github.py: FAILED (exit 1) in 974s —   FAILED: pc-data/public-fade-2026-11-13.md (HTTP 409: {'error': '{"message":"is at 002d2e47f44bd20120940bbed081cd82b845126a but expected 9f5283543e12c112cd8ef3
+[2026-11-15 15:11:35 ET] hung_number.py: OK in 82s — HUNG NUMBER: Jaguars vs Titans — BetMGM total value Under (47.5 vs median 49.5)
+[2026-11-15 15:11:43 ET] rlm.py: OK in 9s
+[2026-11-15 15:11:47 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 15:13:21 ET] dh_prop_middles.py: OK in 95s — PROP MIDDLE CLEAN : CFL MTL Alouettes EDM Elks Today 6:00 PM / table / Rush Yards D. Alexander Under 15.5 / Alt Rush Yards D. Alexander 15+ / table | Caesars | 
+[2026-11-15 15:15:14 ET] dh_sog_middles.py: OK in 113s — - 0 deliverables this run
+[2026-11-15 15:15:17 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 24 team-games with two-sided ladders, 2 qualifying straddles, 2 new, 0 changed.
+[2026-11-15 15:15:18 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 137 total tallied.
+[2026-11-15 15:15:19 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 15:15:20 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 15:15:23 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 9 new, 2 unverified, 634 total tallied.
+[2026-11-15 15:15:24 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 750 total tallied.
+[2026-11-15 15:15:25 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 15:15:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-15 15:15:26 ET] syncing to GitHub (regular 10-minute sync)
