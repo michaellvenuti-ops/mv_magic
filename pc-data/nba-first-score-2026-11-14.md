@@ -9,3 +9,6 @@
 - 2026-11-14: Brooklyn Nets @ Memphis Grizzlies — first: Brooklyn Nets (2PT, 0:43 in); lead changes 1; final 110-129
 - 2026-11-14: Chicago Bulls @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:50 in); lead changes 1; final 117-106
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T23:47:10-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 179 games through 2026-11-14
+- 2026-11-14: Detroit Pistons @ Miami Heat — first: Detroit Pistons (2PT, 0:05 in); lead changes 9; final 117-137
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
