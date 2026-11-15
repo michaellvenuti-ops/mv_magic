@@ -22,3 +22,15 @@
 - 2026-11-14: Tennessee Volunteers @ Texas A&M Aggies — first: Tennessee Volunteers (FG, 9:28 in); lead changes 2; final 22-7
 - 2026-11-14: Kennesaw State Owls @ Sam Houston Bearkats — first: Kennesaw State Owls (FG, 4:30 in); lead changes 0; final 26-7
 - 2026-11-14: Florida International Panthers @ Delaware Blue Hens — first: Delaware Blue Hens (TD, 5:52 in); lead changes 0; final 16-24
+## 2026-11-14T19:05:11-05:00 -- NCAAF FIRST SCORE (PC): 11 new final(s) tallied; season 723 games through 2026-11-14
+- 2026-11-14: Missouri Tigers @ Georgia Bulldogs — first: Georgia Bulldogs (TD, 1:01 in); lead changes 0; final 21-48
+- 2026-11-14: Boston College Eagles @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (TD, 8:35 in); lead changes 0; final 7-41
+- 2026-11-14: USC Trojans @ Indiana Hoosiers — first: Indiana Hoosiers (TD, 6:42 in); lead changes 0; final 13-27
+- 2026-11-14: Michigan Wolverines @ Oregon Ducks — first: Oregon Ducks (TD, 2:00 in); lead changes 0; final 7-31
+- 2026-11-14: Kansas Jayhawks @ West Virginia Mountaineers — first: Kansas Jayhawks (FG, 4:55 in); lead changes 0; final 37-14
+- 2026-11-14: Jacksonville State Gamecocks @ Western Kentucky Hilltoppers — first: Western Kentucky Hilltoppers (TD, 4:41 in); lead changes 6; final 24-35
+- 2026-11-14: Middle Tennessee Blue Raiders @ Liberty Flames — first: Liberty Flames (TD, 7:54 in); lead changes 2; final 23-28
+- 2026-11-14: New Mexico State Aggies @ Missouri State Bears — first: Missouri State Bears (TD, 16:47 in); lead changes 2; final 21-27
+- 2026-11-14: California Golden Bears @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 5:28 in); lead changes 0; final 7-36
+- 2026-11-14: Nevada Wolf Pack @ Northern Illinois Huskies — first: Nevada Wolf Pack (TD, 5:02 in); lead changes 0; final 28-7
+- 2026-11-14: Georgia Southern Eagles @ Georgia State Panthers — first: Georgia State Panthers (TD, 6:42 in); lead changes 1; final 34-17
