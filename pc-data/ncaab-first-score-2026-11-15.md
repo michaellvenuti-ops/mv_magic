@@ -15,3 +15,14 @@
 - 2026-11-15: Colgate Raiders @ Delaware Blue Hens — first: Delaware Blue Hens (2PT, 0:21 in); lead changes 2; final 58-64
 - 2026-11-15: Niagara Purple Eagles @ Iowa State Cyclones — first: Niagara Purple Eagles (3PT, 0:32 in); lead changes 5; final 45-66
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T16:41:49-05:00 -- NCAAB FIRST SCORE (PC): 9 new final(s) tallied; season 643 games through 2026-11-15
+- 2026-11-15: William & Mary Tribe @ Michigan Wolverines — first: Michigan Wolverines (FT, 0:33 in); lead changes 2; final 79-123
+- 2026-11-15: New Hampshire Wildcats @ Boston College Eagles — first: New Hampshire Wildcats (3PT, 0:59 in); lead changes 1; final 55-67
+- 2026-11-15: Capital Crusaders @ Robert Morris Colonials — first: Robert Morris Colonials (3PT, 0:36 in); lead changes 0; final 45-94
+- 2026-11-15: South Carolina State Bulldogs @ Charleston Cougars — first: South Carolina State Bulldogs (2PT, 1:21 in); lead changes 5; final 66-90
+- 2026-11-15: Temple Owls @ La Salle Explorers — first: Temple Owls (3PT, 0:14 in); lead changes 6; final 84-71
+- 2026-11-15: Emmanuel (MA) Lions @ Yale Bulldogs — first: Yale Bulldogs (2PT, 0:24 in); lead changes 0; final 58-103
+- 2026-11-15: UAlbany Great Danes @ Holy Cross Crusaders — first: UAlbany Great Danes (2PT, 0:57 in); lead changes 2; final 62-60
+- 2026-11-15: Cal State Bakersfield Roadrunners @ North Dakota State Bison — first: North Dakota State Bison (2PT, 0:36 in); lead changes 9; final 73-69
+- 2026-11-15: Princeton Tigers @ Rhode Island Rams — first: Rhode Island Rams (2PT, 0:05 in); lead changes 10; final 72-79
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
