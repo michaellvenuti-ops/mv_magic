@@ -20,19 +20,38 @@ tr.bigdog td.price{color:#ffb454}
 .callout{background:#161b22;border:1px solid #30363d;border-left:4px solid #58a6ff;padding:10px 14px;margin:12px 0;font-size:14px}
 .callout.warn{border-left-color:#d29922}
 .callout.bad{border-left-color:#f778ba}
+.filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 2px;font-size:13px}
+.filters select,.filters input{padding:4px 6px;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:4px}
+.filters button{padding:4px 10px;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:4px;cursor:pointer}
+.f-count{color:#8b949e}
+th.sortable{cursor:pointer;white-space:nowrap}
+th.sortable:hover{color:#e6edf3}
+th.asc::after{content:' ▲';font-size:10px}
+th.desc::after{content:' ▼';font-size:10px}
+tr.tot td{font-weight:700;border-top:2px solid #58a6ff}
 </style></head><body>
 <h1>Podcast Picks — Breakdown by Show</h1>
-<div class='sub'>Last updated November 14, 2026, 05:46 PM ET &middot; Source: Podcast Picks Tracker Google Sheet &middot; 3235 picks logged &middot; 2505 graded (1235-1233-37) &middot; Graded P/L <b>-$5,858.30</b> at $100 flat &middot; Paper inverse 1132-1215-36, <b>-$20,672.47</b></div>
-<div class='callout'><b>How to read this page.</b> Every pick below shows the <b>price it was logged at</b> — that column is bold, and any pick at <b>+200 or longer is highlighted in gold</b>. Prices drive a big share of the damage (see the price section below). <b>Paper inverse</b> = fading only the invertible picks (spread / ML / totals / prop over-unders / alt lines) at <i>modeled</i> reverse prices — the opposite side priced by flipping the implied probability and adding standard -110/-110 juice. It is paper-only, never real-money advice. <b>Note on names:</b> the tracker logs <i>Gill</i> and <i>Gil</i> Alexander as one host, and <i>Kelley</i> / <i>Kelly</i> Bydlon as one host. <b>John Hanson</b> (Prop Points host) and <b>John Hansen</b> (guest) are two different people. <b>Alex White</b> is a Circa Friday Football Invitational contestant — any picks under her name are logged under that show (see its section below), not under a host show. The A Numbers Game host with the strongest record is Gill Alexander (20-20-0, -$228.14).</div>
-<div class='callout warn'><b>Why both sides lose:</b> the regular picks win 1235 of 2468 decided (50.0%) and the blanket fade wins 1132 of 2347 decided (48.2%). Both sit inside the band where the juice eats both sides — following needs &gt;52.4% at -110 to profit, and so does fading at modeled reverse prices. The only fade that clearly works is <b>Jensen Lewis on By The Books: +$831.70</b> fading him (81-60-2). The worst fade is <b>Alex White on Circa Friday Football Invitational: -$1,809.07</b> — fading a winner loses.</div>
-<h2>Show totals</h2><div class='wrap'><table><tr><th>Show</th><th>Picks</th><th>Graded Record (W-L-P)</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $</th></tr>
-<tr><td><b>Even Money</b></td><td>141</td><td>54-41-1</td><td>96</td><td class='pos'>+$816.27</td><td class='neg'>-$1,443.51 (40-51-1)</td></tr>
-<tr><td><b>A Numbers Game</b></td><td>372</td><td>103-121-3</td><td>227</td><td class='neg'>-$2,170.49</td><td class='neg'>-$1,177.37 (98-100-3)</td></tr>
-<tr><td><b>Follow the Money</b></td><td>482</td><td>125-169-3</td><td>297</td><td class='neg'>-$1,603.68</td><td class='neg'>-$1,857.30 (119-116-3)</td></tr>
-<tr><td><b>Prop Points</b></td><td>197</td><td>65-70-4</td><td>139</td><td class='neg'>-$989.97</td><td class='neg'>-$876.45 (63-64-3)</td></tr>
-<tr><td><b>VSiN By The Books</b></td><td>444</td><td>127-168-4</td><td>299</td><td class='neg'>-$4,692.94</td><td class='pos'>+$417.92 (148-123-4)</td></tr>
-<tr><td><b>Circa Friday Football Invitational</b></td><td>1599</td><td>761-664-22</td><td>1447</td><td class='pos'>+$2,782.51</td><td class='neg'>-$15,735.76 (664-761-22)</td></tr>
-<tr><td><b>ALL SHOWS</b></td><td>3235</td><td>1235-1233-37</td><td>2505</td><td class='neg'>-$5,858.30</td><td class='neg'>-$20,672.47 (1132-1215-36)</td></tr>
+<div class='sub'>Last updated November 14, 2026, 07:10 PM ET &middot; Source: Podcast Picks Tracker Google Sheet &middot; 3235 picks logged</div><div class='sub'><b>Following the picks:</b> 2505 graded (1235-1233-37) &middot; P/L <b>-$5,858.30</b> at $100 flat</div><div class='sub'><b>Fading the picks (paper inverse):</b> 2383 faded (1132-1215-36) &middot; P/L <b>-$20,672.47</b> at $100 flat &middot; 122 graded picks excluded (not invertible)</div><div class='sub'>The two books are separate and never netted — each has its own tables below. Click any column header to sort a table; the pick tables also filter by show and date.</div>
+<div class='callout'><b>How to read this page.</b> Two separate books, never netted: <b>following</b> the picks as stated, and <b>fading</b> them (paper inverse). Every pick below shows the <b>price it was logged at</b> — that column is bold, and any pick at <b>+200 or longer is highlighted in gold</b>. Prices drive a big share of the damage (see the price section below). <b>Paper inverse</b> = fading only the invertible picks (spread / ML / totals / prop over-unders / alt lines) at <i>modeled</i> reverse prices — the opposite side priced by flipping the implied probability and adding standard -110/-110 juice. It is paper-only, never real-money advice. <b>Note on names:</b> the tracker logs <i>Gill</i> and <i>Gil</i> Alexander as one host, and <i>Kelley</i> / <i>Kelly</i> Bydlon as one host. <b>John Hanson</b> (Prop Points host) and <b>John Hansen</b> (guest) are two different people. <b>Alex White</b> is a Circa Friday Football Invitational contestant — any picks under her name are logged under that show (see its section below), not under a host show. The A Numbers Game host with the strongest record is Gill Alexander (20-20-0, -$228.14).</div>
+<div class='callout warn'><b>Following the picks:</b> the picks win 1235 of 2468 decided (50.0%). Following needs &gt;52.4% at -110 to profit — the juice eats the rest. Best follow is <b>Steve Fezzik on Even Money: +$1,288.98</b> (35-19-0). Worst is <b>Jensen Lewis on By The Books: -$2,904.26</b>.</div>
+<div class='callout warn'><b>Fading the picks (paper inverse):</b> the fade wins 1132 of 2347 decided (48.2%). Fading at modeled reverse prices needs &gt;52.4% too. The only fade that clearly works is <b>Jensen Lewis on By The Books: +$831.70</b> fading him (81-60-2). The worst fade is <b>Alex White on Circa Friday Football Invitational: -$1,809.07</b> — fading a winner loses.</div>
+<h2>Show totals — following the picks</h2><div class='wrap'><table><tr><th>Show</th><th>Picks</th><th>Graded Record (W-L-P)</th><th>Graded</th><th>$ P/L ($100 flat)</th></tr>
+<tr><td><b>Even Money</b></td><td>141</td><td>54-41-1</td><td>96</td><td class='pos'>+$816.27</td></tr>
+<tr><td><b>A Numbers Game</b></td><td>372</td><td>103-121-3</td><td>227</td><td class='neg'>-$2,170.49</td></tr>
+<tr><td><b>Follow the Money</b></td><td>482</td><td>125-169-3</td><td>297</td><td class='neg'>-$1,603.68</td></tr>
+<tr><td><b>Prop Points</b></td><td>197</td><td>65-70-4</td><td>139</td><td class='neg'>-$989.97</td></tr>
+<tr><td><b>VSiN By The Books</b></td><td>444</td><td>127-168-4</td><td>299</td><td class='neg'>-$4,692.94</td></tr>
+<tr><td><b>Circa Friday Football Invitational</b></td><td>1599</td><td>761-664-22</td><td>1447</td><td class='pos'>+$2,782.51</td></tr>
+<tr class='tot'><td><b>ALL SHOWS</b></td><td>3235</td><td>1235-1233-37</td><td>2505</td><td class='neg'>-$5,858.30</td></tr>
+</table></div>
+<h2>Show totals — fading the picks (paper inverse)</h2><div class='wrap'><table><tr><th>Show</th><th>Faded picks</th><th>Record (W-L-P)</th><th>Graded</th><th>$ P/L ($100 flat)</th></tr>
+<tr><td><b>Even Money</b></td><td>92</td><td>40-51-1</td><td>92</td><td class='neg'>-$1,443.51</td></tr>
+<tr><td><b>A Numbers Game</b></td><td>201</td><td>98-100-3</td><td>201</td><td class='neg'>-$1,177.37</td></tr>
+<tr><td><b>Follow the Money</b></td><td>238</td><td>119-116-3</td><td>238</td><td class='neg'>-$1,857.30</td></tr>
+<tr><td><b>Prop Points</b></td><td>130</td><td>63-64-3</td><td>130</td><td class='neg'>-$876.45</td></tr>
+<tr><td><b>VSiN By The Books</b></td><td>275</td><td>148-123-4</td><td>275</td><td class='pos'>+$417.92</td></tr>
+<tr><td><b>Circa Friday Football Invitational</b></td><td>1447</td><td>664-761-22</td><td>1447</td><td class='neg'>-$15,735.76</td></tr>
+<tr class='tot'><td><b>ALL SHOWS</b></td><td>2383</td><td>1132-1215-36</td><td>2383</td><td class='neg'>-$20,672.47</td></tr>
 </table></div>
 <h2>Do prices drive the outcome? Yes — the longshots bleed</h2>
 <div class='callout'>Graded picks by the price they were logged at. 307 of 2505 graded picks carry a usable price — <b>2198 graded picks have no usable price logged</b> (most show "no price stated", a few use fractional odds or a moved-price note), so this is a partial view, but the pattern in the priced slice is stark.</div>
@@ -46,7 +65,7 @@ tr.bigdog td.price{color:#ffb454}
 </table></div>
 <div class='callout bad'><b>Big dogs (+200 or longer): 89 picks, 6-43-1 graded, -$2,830.00</b> — over a quarter of the total -$5,858.30 loss comes from just 50 graded longshots. The +100 to +199 bucket is worse still: 16-51, -$3,075.18. The short-priced buckets are near breakeven by comparison. The damage is concentrated in plus-money shots that almost never land. 39 big-dog picks are still pending (mostly futures).</div>
 <h3>All big-dog picks (+200 or longer)</h3>
-<div class='wrap'><table><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
+<div class='picktable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> Date: <input type='date' class='f-date'> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table id='tbl-bigdogs'><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
 <tr class='bigdog'><td>2026-10-22</td><td>Prop Points</td><td>October 22, 2026</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>Rome Odunze 70+ receiving yards</td><td>70+</td><td class='price'>+253</td><td class='loss'>LOSS</td><td class='neg'>-$100.00</td></tr>
 <tr class='bigdog'><td>2026-10-22</td><td>VSiN By The Books</td><td>Hour 2</td><td>Jensen Lewis</td><td>World Series (Rays @ Brewers)</td><td>Brewers in 6 (exacta)</td><td>not stated</td><td class='price'>+365</td><td class='loss'>LOSS</td><td class='neg'>-$100.00</td></tr>
 <tr class='bigdog'><td>2026-10-22</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>World Series (Rays @ Brewers)</td><td>Drew Rasmussen WS MVP</td><td>not stated</td><td class='price'>+2200</td><td class='loss'>LOSS</td><td class='neg'>-$100.00</td></tr>
@@ -136,10 +155,76 @@ tr.bigdog td.price{color:#ffb454}
 <tr class='bigdog'><td>2026-11-12</td><td>Follow the Money</td><td>Hour 2</td><td>Mitch Moss &amp; Pauly Howard</td><td>Washington Commanders vs New York Giants (NFL)</td><td>A scoreless quarter to occur</td><td>not stated</td><td class='price'>+300</td><td class='win'>WIN</td><td class='pos'>+$300.00</td></tr>
 <tr class='bigdog'><td>2026-11-13</td><td>Follow the Money</td><td>Hour 1</td><td>Pauly Howard</td><td>NFC East</td><td>Commanders to win the division</td><td>not stated</td><td class='price'>+575</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class='bigdog'><td>2026-11-13</td><td>Follow the Money</td><td>Hour 1</td><td>Mitch Moss</td><td>NFL Coach of the Year</td><td>Liam Coen</td><td>not stated</td><td class='price'>+950</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
-</table></div>
+</table></div></div>
 <h2>Today's picks — act before tip / kickoff</h2>
-<div class='callout warn'><b>175 new picks</b> logged since the last build of this page (sheet rows 3062-3236): Circa Friday Football Invitational Hour 1 (2026-11-13): 30; Circa Friday Football Invitational Hour 2 (2026-11-13): 74; Circa Friday Football Invitational Hour 3 (2026-11-13): 42; Follow the Money Hour 1 (2026-11-13): 9; Follow the Money Hour 2 (2026-11-13): 9; Follow the Money Hour 3 (2026-11-13): 5; VSiN By The Books Hour 3 (2026-11-13): 6. New pickers: <b>Pat Forde</b> (2 picks), <b>Shahan Jayarajah</b> (6 picks). 175 of the 175 are still pending — act before tip / kickoff.</div>
-<div class='wrap'><table><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
+<div class='callout warn'><b>241 pending picks</b> from the newest episode date (2026-11-13): A Numbers Game Hour 1 (2026-11-13): 6; A Numbers Game Hour 2 (2026-11-13): 12; A Numbers Game Hour 3 (2026-11-13): 5; Circa Friday Football Invitational Hour 1 (2026-11-13): 30; Circa Friday Football Invitational Hour 2 (2026-11-13): 74; Circa Friday Football Invitational Hour 3 (2026-11-13): 42; Follow the Money Hour 1 (2026-11-13): 9; Follow the Money Hour 2 (2026-11-13): 9; Follow the Money Hour 3 (2026-11-13): 5; Prop Points November 13, 2026 (2026-11-13): 18; VSiN By The Books Hour 1 (2026-11-13): 5; VSiN By The Books Hour 2 (2026-11-13): 6; VSiN By The Books Hour 3 (2026-11-13): 20. New pickers: <b>Dr. Bob Stoll</b> (1 pick), <b>Pat Forde</b> (2 picks), <b>Shahan Jayarajah</b> (6 picks). 241 of the 241 are still pending — act before tip / kickoff.</div>
+<div class='picktable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> Date: <input type='date' class='f-date'> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table id='tbl-today'><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 1</td><td>Dave Ross &amp; Jensen Lewis</td><td>Atlanta Falcons vs Kansas City Chiefs (NFL)</td><td>Falcons +3.5</td><td>+3.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 1</td><td>Dave Ross &amp; Jensen Lewis</td><td>Dallas Cowboys vs San Francisco 49ers (NFL)</td><td>Cowboys +4</td><td>+4</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 1</td><td>Dave Ross &amp; Jensen Lewis</td><td>Detroit Lions vs New England Patriots (NFL, Munich)</td><td>Lions -3</td><td>-3</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 1</td><td>Dave Ross &amp; Jensen Lewis</td><td>Minnesota Vikings vs Green Bay Packers (NFL)</td><td>Vikings +3</td><td>+3</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 1</td><td>Jensen Lewis</td><td>Pittsburgh Steelers vs Cincinnati Bengals (NFL)</td><td>Steelers +3.5</td><td>+3.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Lou Finocchiaro</td><td>UFC 334: Cyril Gane vs Josh Hockett</td><td>Gane</td><td>moneyline</td><td class='price'>-190</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class='bigdog'><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Lou Finocchiaro</td><td>UFC 334: Jim Miller vs Terence McKinney</td><td>Jim Miller by submission</td><td>submission</td><td class='price'>+550</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Lou Finocchiaro</td><td>UFC 334: Jim Miller vs Terence McKinney</td><td>Fight to reach Round 2</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Lou Finocchiaro</td><td>UFC 334: Kevin Holland</td><td>Holland to win</td><td>moneyline</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Dave Ross &amp; Jensen Lewis</td><td>New Orleans Saints vs Carolina Panthers (NFL)</td><td>Saints -2.5</td><td>-2.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 2</td><td>Jensen Lewis</td><td>Seattle Seahawks at Las Vegas Raiders (NFL)</td><td>Under 42.5</td><td>42.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class='bigdog'><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>UFC 334: Jim Miller vs Terence McKinney</td><td>Over 7.5 minutes (Over 1.5 rounds)</td><td>Over 7.5 minutes</td><td class='price'>+290</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class='bigdog'><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>UFC 334: Jim Miller vs Terence McKinney</td><td>Jim Miller moneyline</td><td>moneyline</td><td class='price'>~+200</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class='bigdog'><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>UFC 334: Josh Hockett vs Cyril Gane</td><td>Josh Hockett moneyline</td><td>moneyline</td><td class='price'>+230</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class='bigdog'><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>UFC 334: Amanda Nunes vs Kayla Harrison</td><td>Amanda Nunes double chance (KO or submission)</td><td>double chance</td><td class='price'>+270</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>UFC 334: Kevin Holland vs &#x27;Medics&#x27;</td><td>Fight Over 7.5 minutes</td><td>Over 7.5 minutes</td><td class='price'>+145</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Colorado vs Houston (CFB)</td><td>Colorado +10.5</td><td>+10.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Vanderbilt vs Alabama (CFB)</td><td>Vanderbilt +18.5</td><td>+18.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>UCLA vs Illinois (CFB)</td><td>Over</td><td>45.5-47.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Dave Ross</td><td>Houston Texans vs Cleveland Browns (NFL)</td><td>Texans -4.5</td><td>-4.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Buffalo Bills vs New York Jets (NFL)</td><td>Over 51</td><td>51</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Buffalo Bills vs New York Jets (NFL)</td><td>Jets +7.5</td><td>+7.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Dallas Cowboys vs San Francisco 49ers (NFL)</td><td>Hunter Luepke anytime touchdown</td><td>anytime TD</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>Houston Texans vs Cleveland Browns (NFL)</td><td>Dare Ogunbowale anytime touchdown</td><td>anytime TD</td><td class='price'>12-1</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Jensen Lewis</td><td>San Francisco 49ers vs Dallas Cowboys (NFL)</td><td>Luke Farrell anytime touchdown</td><td>anytime TD</td><td class='price'>14-1</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Kelley Bydlon</td><td>Atlanta Falcons vs Kansas City Chiefs (NFL)</td><td>Falcons +3.5</td><td>+3.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Gill Alexander</td><td>Houston Texans vs Cleveland Browns (NFL)</td><td>Texans -4</td><td>-4</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Gill Alexander &amp; Kelley Bydlon</td><td>Houston Texans vs Cleveland Browns (NFL) + San Francisco 49ers vs Dallas Cowboys (NFL)</td><td>Parlay: Texans moneyline + 49ers moneyline</td><td>combined parlay</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Chris Fallica</td><td>Washington at Michigan State (CFB)</td><td>Washington -3.5</td><td>-3.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Chris Fallica</td><td>Arkansas vs South Carolina (CFB)</td><td>Arkansas +7.5</td><td>+7.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 1</td><td>Chris Fallica</td><td>Texas A&amp;M vs Tennessee (CFB)</td><td>Texas A&amp;M +2.5</td><td>+2.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Tennessee Titans vs Jacksonville Jaguars (NFL)</td><td>Titans +10.5</td><td>+10.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Gill Alexander</td><td>Miami Dolphins vs Indianapolis Colts (NFL)</td><td>Dolphins +4</td><td>+4</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Indianapolis Colts vs Miami Dolphins (NFL)</td><td>Over 37.5</td><td>37.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Carolina Panthers vs New Orleans Saints (NFL)</td><td>Panthers +2.5</td><td>+2.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Buffalo Bills vs New York Jets (NFL)</td><td>Over</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Seattle Seahawks at Las Vegas Raiders (NFL)</td><td>Under</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>Los Angeles Rams vs Arizona Cardinals (NFL)</td><td>Under</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Gill Alexander</td><td>San Francisco 49ers at Dallas Cowboys (NFL)</td><td>49ers -4</td><td>-4</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Kelley Bydlon</td><td>San Francisco 49ers at Dallas Cowboys (NFL)</td><td>49ers -5.5</td><td>-5.5</td><td class='price'>+105</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Gill Alexander</td><td>Baltimore Ravens vs LA Chargers (NFL)</td><td>Ravens -4.5</td><td>-4.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Matt Brown</td><td>Houston Texans vs Cleveland Browns (NFL)</td><td>Under 41.5</td><td>41.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 2</td><td>Dr. Bob Stoll</td><td>Kansas City Chiefs vs Atlanta Falcons (NFL)</td><td>Over 45.5</td><td>45.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 3</td><td>Steve Fezzik</td><td>Pittsburgh vs Florida State (CFB)</td><td>Pitt moneyline</td><td>moneyline</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 3</td><td>Steve Fezzik</td><td>UCLA vs Illinois (CFB)</td><td>UCLA -10</td><td>-10</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 3</td><td>Steve Fezzik</td><td>Cleveland Browns vs Houston Texans (NFL)</td><td>Browns +4</td><td>+4</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 3</td><td>Steve Fezzik</td><td>Carolina Panthers vs New Orleans Saints (NFL)</td><td>Panthers +2.5</td><td>+2.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>A Numbers Game</td><td>Hour 3</td><td>Steve Fezzik</td><td>Miami Dolphins vs Indianapolis Colts (NFL)</td><td>Dolphins +8.5 (teased from +2.5)</td><td>+8.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Minnesota Vikings at Green Bay Packers (NFL)</td><td>Kirk Cousins Over 1.5 TD passes</td><td>1.5</td><td class='price'>+146</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Detroit Lions vs New England Patriots (NFL)</td><td>Amon-Ra St. Brown Under 79.5 receiving yards</td><td>79.5</td><td class='price'>-115</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Atlanta Falcons vs Kansas City Chiefs (NFL)</td><td>Drake London Under 73.5 receiving yards</td><td>73.5</td><td class='price'>-113</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Minnesota Vikings at Green Bay Packers (NFL)</td><td>Jordan Addison Under 3.5 receptions</td><td>3.5</td><td class='price'>+103</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Arizona Cardinals vs Los Angeles Rams (NFL)</td><td>Trey McBride Under receiving yards</td><td>not stated</td><td class='price'>+118</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Buffalo Bills vs New York Jets (NFL)</td><td>Khalil Shakir Over 42.5 receiving yards</td><td>42.5</td><td class='price'>-114</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Kansas City Chiefs vs Atlanta Falcons (NFL)</td><td>Travis Kelce Over 47.5 receiving yards</td><td>47.5</td><td class='price'>-114</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>New England Patriots vs Detroit Lions (NFL)</td><td>Hunter Henry Over 35.5 receiving yards</td><td>35.5</td><td class='price'>-114</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Detroit Lions vs New England Patriots (NFL)</td><td>Sam LaPorta Over 41.5 receiving yards</td><td>41.5</td><td class='price'>-115</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Houston Texans vs Cleveland Browns (NFL)</td><td>CJ Stroud Over 8.5 rushing yards</td><td>8.5</td><td class='price'>-114</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Pittsburgh Steelers vs Cincinnati Bengals (NFL)</td><td>Jalen Warren Over 64.5 rushing yards</td><td>64.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Seattle Seahawks at Las Vegas Raiders (NFL)</td><td>Zach Charbonnet Over 14.5 receiving yards</td><td>14.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>John Hansen</td><td>Los Angeles Rams vs Arizona Cardinals (NFL)</td><td>Kyren Williams Over 19.5 receiving yards</td><td>19.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>Josh Chevalier</td><td>Colorado vs Houston (CFB)</td><td>Joseph Williams Over 75.5 receiving yards</td><td>75.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>Josh Chevalier</td><td>Florida State at Pittsburgh (CFB)</td><td>Makai Danzy Over 63.5 receiving yards</td><td>63.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>Josh Chevalier</td><td>BYU vs Baylor (CFB)</td><td>Legend Glasker Over 64.5 receiving yards</td><td>64.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>Josh Chevalier</td><td>Arizona vs Utah (CFB)</td><td>Giovanni Richardson Over 69.5 receiving yards</td><td>69.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+<tr class=''><td>2026-11-13</td><td>Prop Points</td><td>November 13, 2026</td><td>Josh Chevalier</td><td>Duke at Miami (CFB)</td><td>Walker Eget Over 216.5 passing yards</td><td>216.5</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>Circa Friday Football Invitational</td><td>Hour 1</td><td>Clyde Walker</td><td>Illinois at UCLA (CFB)</td><td>Illinois +10</td><td>+10</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>Circa Friday Football Invitational</td><td>Hour 1</td><td>Weston Stradtman</td><td>Illinois at UCLA (CFB)</td><td>Illinois +10</td><td>+10</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>Circa Friday Football Invitational</td><td>Hour 1</td><td>Steve Fezzik</td><td>Illinois at UCLA (CFB)</td><td>UCLA -10</td><td>-10</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
@@ -315,137 +400,265 @@ tr.bigdog td.price{color:#ffb454}
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Oklahoma State at Texas Tech (CFB)</td><td>Oklahoma State</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Texas Tech at Oklahoma State (CFB)</td><td>Over 73</td><td>73</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Heisman Trophy</td><td>Gio Lopez (UNC QB)</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
+</table></div></div>
+<h2>Even Money</h2><div class='sub'>Tue &quot;Week N Bets&quot; + Thu &quot;Week N Prop Bets &amp; Parlays&quot; &mdash; Ross Tucker &amp; Steve Fezzik. 141 picks &middot; graded 54-41-1 &middot; <b>+$816.27</b></div>
+<h3>Following Even Money</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Steve Fezzik</td><td>35-19-0</td><td>64.8%</td><td>54</td><td class='pos'>+$1,288.98</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>Ross Tucker</td><td>19-22-1</td><td>46.3%</td><td>42</td><td class='neg'>-$472.71</td><td><span class="badge worst">WORST</span></td></tr>
 </table></div>
-<h2>Even Money</h2><div class='sub'>Tue &quot;Week N Bets&quot; + Thu &quot;Week N Prop Bets &amp; Parlays&quot; &mdash; Ross Tucker &amp; Steve Fezzik. 141 picks &middot; graded 54-41-1 &middot; <b>+$816.27</b> &middot; paper inverse -$1,443.51 (40-51-1)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Steve Fezzik</td><td>35-19-0</td><td>64.8%</td><td>54</td><td class='pos'>+$1,288.98</td><td class='neg'>-$1,543.53 (18-32-0)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>Ross Tucker</td><td>19-22-1</td><td>46.3%</td><td>42</td><td class='neg'>-$472.71</td><td class='pos'>+$100.02 (22-19-1)</td><td><span class="badge worst">WORST</span></td></tr>
+<h3>Fading Even Money (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Ross Tucker</td><td>22-19-1</td><td>53.7%</td><td>42</td><td class='pos'>+$100.02</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Steve Fezzik</td><td>18-32-0</td><td>36.0%</td><td>50</td><td class='neg'>-$1,543.53</td><td><span class="badge worst">WORST FADE</span></td></tr>
 </table></div>
-<h2>A Numbers Game</h2><div class='sub'>Gill Alexander hosts; guests across Hours 1-3. 372 picks &middot; graded 103-121-3 &middot; <b>-$2,170.49</b> &middot; paper inverse -$1,177.37 (98-100-3)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Jay Khan</td><td>5-1-0</td><td>83.3%</td><td>6</td><td class='pos'>+$403.64</td><td class='neg'>-$409.09 (1-5-0)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>Zach Cohen</td><td>10-9-1</td><td>52.6%</td><td>20</td><td class='pos'>+$319.53</td><td class='neg'>-$152.96 (9-9-1)</td><td></td></tr>
-<tr><td>Dr. Bob</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$177.87</td><td class='neg'>-$200.00 (0-2-0)</td><td></td></tr>
-<tr><td>Steve Fezzik</td><td>5-3-1</td><td>62.5%</td><td>9</td><td class='pos'>+$154.55</td><td class='neg'>-$227.27 (3-5-1)</td><td></td></tr>
-<tr><td>Tim Murray</td><td>4-2-0</td><td>66.7%</td><td>6</td><td class='pos'>+$149.65</td><td class='neg'>-$218.18 (2-4-0)</td><td></td></tr>
-<tr><td>Paul Carr</td><td>4-3-0</td><td>57.1%</td><td>7</td><td class='pos'>+$106.66</td><td class='neg'>-$189.01 (3-4-0)</td><td></td></tr>
-<tr><td>Carl Sack</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$95.24</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Matt Brown</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td class='neg'>-$109.09 (1-2-0)</td><td></td></tr>
-<tr><td>Drew Dinsick</td><td>8-7-0</td><td>53.3%</td><td>15</td><td class='pos'>+$41.37</td><td class='neg'>-$186.05 (7-8-0)</td><td></td></tr>
-<tr><td>Bill Connelly</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td class='neg'>-$9.09 (1-1-0)</td><td></td></tr>
-<tr><td>Pete Fiutak</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td class='neg'>-$9.09 (1-1-0)</td><td></td></tr>
-<tr><td>Chris Fallica</td><td>9-11-0</td><td>45.0%</td><td>20</td><td class='neg'>-$72.08</td><td class='neg'>-$165.27 (5-7-0)</td><td></td></tr>
-<tr><td>Gill Alexander &amp; Kelley Bydlon</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Mark Borchardt</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Paul Sporer</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Tanner</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Todd Wishnev</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Jake Hahn</td><td>3-4-0</td><td>42.9%</td><td>7</td><td class='neg'>-$127.27</td><td class='pos'>+$63.64 (4-3-0)</td><td></td></tr>
-<tr><td>Wes Reynolds</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td class='pos'>+$181.82 (2-0-0)</td><td></td></tr>
-<tr><td>Gill Alexander</td><td>20-20-0</td><td>50.0%</td><td>40</td><td class='neg'>-$228.14</td><td class='neg'>-$300.33 (19-20-0)</td><td></td></tr>
-<tr><td>Doug Kezirian</td><td>0-3-0</td><td>0.0%</td><td>3</td><td class='neg'>-$300.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Nick Whalen</td><td>2-5-0</td><td>28.6%</td><td>7</td><td class='neg'>-$318.18</td><td class='pos'>+$254.55 (5-2-0)</td><td></td></tr>
-<tr><td>Jensen Lewis</td><td>0-5-0</td><td>0.0%</td><td>5</td><td class='neg'>-$500.00</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Kelley Bydlon</td><td>23-28-1</td><td>45.1%</td><td>52</td><td class='neg'>-$709.70</td><td class='neg'>-$473.70 (20-23-1)</td><td></td></tr>
-<tr><td>Will Hill</td><td>3-10-0</td><td>23.1%</td><td>13</td><td class='neg'>-$727.27</td><td class='pos'>+$617.20 (10-3-0)</td><td><span class="badge worst">WORST</span></td></tr>
+<h2>A Numbers Game</h2><div class='sub'>Gill Alexander hosts; guests across Hours 1-3. 372 picks &middot; graded 103-121-3 &middot; <b>-$2,170.49</b></div>
+<h3>Following A Numbers Game</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Jay Khan</td><td>5-1-0</td><td>83.3%</td><td>6</td><td class='pos'>+$403.64</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>Zach Cohen</td><td>10-9-1</td><td>52.6%</td><td>20</td><td class='pos'>+$319.53</td><td></td></tr>
+<tr><td>Dr. Bob</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$177.87</td><td></td></tr>
+<tr><td>Steve Fezzik</td><td>5-3-1</td><td>62.5%</td><td>9</td><td class='pos'>+$154.55</td><td></td></tr>
+<tr><td>Tim Murray</td><td>4-2-0</td><td>66.7%</td><td>6</td><td class='pos'>+$149.65</td><td></td></tr>
+<tr><td>Paul Carr</td><td>4-3-0</td><td>57.1%</td><td>7</td><td class='pos'>+$106.66</td><td></td></tr>
+<tr><td>Carl Sack</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$95.24</td><td></td></tr>
+<tr><td>Matt Brown</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td></td></tr>
+<tr><td>Drew Dinsick</td><td>8-7-0</td><td>53.3%</td><td>15</td><td class='pos'>+$41.37</td><td></td></tr>
+<tr><td>Bill Connelly</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Pete Fiutak</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Chris Fallica</td><td>9-11-0</td><td>45.0%</td><td>20</td><td class='neg'>-$72.08</td><td></td></tr>
+<tr><td>Gill Alexander &amp; Kelley Bydlon</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Mark Borchardt</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Paul Sporer</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Tanner</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Todd Wishnev</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Jake Hahn</td><td>3-4-0</td><td>42.9%</td><td>7</td><td class='neg'>-$127.27</td><td></td></tr>
+<tr><td>Wes Reynolds</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Gill Alexander</td><td>20-20-0</td><td>50.0%</td><td>40</td><td class='neg'>-$228.14</td><td></td></tr>
+<tr><td>Doug Kezirian</td><td>0-3-0</td><td>0.0%</td><td>3</td><td class='neg'>-$300.00</td><td></td></tr>
+<tr><td>Nick Whalen</td><td>2-5-0</td><td>28.6%</td><td>7</td><td class='neg'>-$318.18</td><td></td></tr>
+<tr><td>Jensen Lewis</td><td>0-5-0</td><td>0.0%</td><td>5</td><td class='neg'>-$500.00</td><td></td></tr>
+<tr><td>Kelley Bydlon</td><td>23-28-1</td><td>45.1%</td><td>52</td><td class='neg'>-$709.70</td><td></td></tr>
+<tr><td>Will Hill</td><td>3-10-0</td><td>23.1%</td><td>13</td><td class='neg'>-$727.27</td><td><span class="badge worst">WORST</span></td></tr>
 </table></div>
-<h2>Follow the Money</h2><div class='sub'>Mitch Moss &amp; Pauly Howard hosts; guests across Hours 1-4. 482 picks &middot; graded 125-169-3 &middot; <b>-$1,603.68</b> &middot; paper inverse -$1,857.30 (119-116-3)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Ryan Kramer</td><td>8-17-1</td><td>32.0%</td><td>26</td><td class='pos'>+$1,145.46</td><td class='neg'>-$312.37 (3-5-1)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>Mitch Moss</td><td>35-43-1</td><td>44.9%</td><td>79</td><td class='pos'>+$464.67</td><td class='neg'>-$345.60 (34-34-1)</td><td></td></tr>
-<tr><td>Mitch Moss &amp; Pauly Howard</td><td>4-2-0</td><td>66.7%</td><td>6</td><td class='pos'>+$353.25</td><td class='neg'>-$309.09 (1-4-0)</td><td></td></tr>
-<tr><td>Adam Kramer</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td class='neg'>-$200.00 (0-2-0)</td><td></td></tr>
-<tr><td>Brett McMurphy</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td class='neg'>-$200.00 (0-2-0)</td><td></td></tr>
-<tr><td>Thor Nystrom</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td class='neg'>-$200.00 (0-2-0)</td><td></td></tr>
-<tr><td>Adam Hill</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Christopher Price</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Dustin Sweetelson</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Jimmy Pilegge</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>John Keim</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Keyshawn Johnson</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>David Bearman</td><td>3-2-0</td><td>60.0%</td><td>5</td><td class='pos'>+$72.73</td><td class='neg'>-$209.09 (1-3-0)</td><td></td></tr>
-<tr><td>Jonathan Davis</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$66.67</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Mike Palm</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td class='neg'>-$45.65 (1-1-0)</td><td></td></tr>
-<tr><td>Nick Whalen</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$18.18</td><td class='neg'>-$27.27 (3-3-0)</td><td></td></tr>
-<tr><td>Adam Burke</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Brad Powers</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Gavin McCarthy</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Jeff Davis</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Listener Lance</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Matt Vasgersian / Mitch Moss</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Sal Paolantonio</td><td>2-3-0</td><td>40.0%</td><td>5</td><td class='neg'>-$118.18</td><td class='pos'>+$72.73 (3-2-0)</td><td></td></tr>
-<tr><td>Chris Massero</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Paul Charchian</td><td>10-12-0</td><td>45.5%</td><td>22</td><td class='neg'>-$206.81</td><td class='neg'>-$160.54 (8-8-0)</td><td></td></tr>
-<tr><td>David Aragona</td><td>1-3-0</td><td>25.0%</td><td>4</td><td class='neg'>-$209.09</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Mike Montesano</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td class='pos'>+$263.64 (4-1-0)</td><td></td></tr>
-<tr><td>John Hansen</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$311.50</td><td class='pos'>+$181.17 (4-1-0)</td><td></td></tr>
-<tr><td>Jensen Lewis</td><td>3-6-0</td><td>33.3%</td><td>9</td><td class='neg'>-$341.26</td><td class='pos'>+$97.16 (6-3-0)</td><td></td></tr>
-<tr><td>Stanford Steve</td><td>0-4-0</td><td>0.0%</td><td>4</td><td class='neg'>-$400.00</td><td class='pos'>+$363.64 (4-0-0)</td><td></td></tr>
-<tr><td>Steve Wyss</td><td>5-9-0</td><td>35.7%</td><td>14</td><td class='neg'>-$443.30</td><td class='pos'>+$29.47 (8-5-0)</td><td></td></tr>
-<tr><td>Pauly Howard</td><td>35-48-1</td><td>42.2%</td><td>84</td><td class='neg'>-$1,630.88</td><td class='neg'>-$610.05 (34-33-1)</td><td><span class="badge worst">WORST</span></td></tr>
+<h3>Fading A Numbers Game (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Will Hill</td><td>10-3-0</td><td>76.9%</td><td>13</td><td class='pos'>+$617.20</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Nick Whalen</td><td>5-2-0</td><td>71.4%</td><td>7</td><td class='pos'>+$254.55</td><td></td></tr>
+<tr><td>Wes Reynolds</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Doug Kezirian</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Gill Alexander &amp; Kelley Bydlon</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Paul Sporer</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Tanner</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Todd Wishnev</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Jake Hahn</td><td>4-3-0</td><td>57.1%</td><td>7</td><td class='pos'>+$63.64</td><td></td></tr>
+<tr><td>Bill Connelly</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Pete Fiutak</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Carl Sack</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Matt Brown</td><td>1-2-0</td><td>33.3%</td><td>3</td><td class='neg'>-$109.09</td><td></td></tr>
+<tr><td>Zach Cohen</td><td>9-9-1</td><td>50.0%</td><td>19</td><td class='neg'>-$152.96</td><td></td></tr>
+<tr><td>Chris Fallica</td><td>5-7-0</td><td>41.7%</td><td>12</td><td class='neg'>-$165.27</td><td></td></tr>
+<tr><td>Drew Dinsick</td><td>7-8-0</td><td>46.7%</td><td>15</td><td class='neg'>-$186.05</td><td></td></tr>
+<tr><td>Paul Carr</td><td>3-4-0</td><td>42.9%</td><td>7</td><td class='neg'>-$189.01</td><td></td></tr>
+<tr><td>Dr. Bob</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Tim Murray</td><td>2-4-0</td><td>33.3%</td><td>6</td><td class='neg'>-$218.18</td><td></td></tr>
+<tr><td>Steve Fezzik</td><td>3-5-1</td><td>37.5%</td><td>9</td><td class='neg'>-$227.27</td><td></td></tr>
+<tr><td>Gill Alexander</td><td>19-20-0</td><td>48.7%</td><td>39</td><td class='neg'>-$300.33</td><td></td></tr>
+<tr><td>Jay Khan</td><td>1-5-0</td><td>16.7%</td><td>6</td><td class='neg'>-$409.09</td><td></td></tr>
+<tr><td>Kelley Bydlon</td><td>20-23-1</td><td>46.5%</td><td>44</td><td class='neg'>-$473.70</td><td><span class="badge worst">WORST FADE</span></td></tr>
 </table></div>
-<h2>Prop Points</h2><div class='sub'>John Hanson hosts; nightly props. 197 picks &middot; graded 65-70-4 &middot; <b>-$989.97</b> &middot; paper inverse -$876.45 (63-64-3)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Josh Chevalier</td><td>8-2-0</td><td>80.0%</td><td>10</td><td class='pos'>+$527.28</td><td class='neg'>-$618.18 (2-8-0)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>John Hansen / Tom Brolley</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$88.50</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Justin Varnes</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td class='neg'>-$121.26 (1-2-0)</td><td></td></tr>
-<tr><td>Steven O&#x27;Rourke</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td class='neg'>-$9.09 (1-1-0)</td><td></td></tr>
-<tr><td>Brett Whitefield</td><td>0-5-0</td><td>0.0%</td><td>5</td><td class='neg'>-$500.00</td><td class='pos'>+$367.07 (4-0-0)</td><td></td></tr>
-<tr><td>John Hansen</td><td>52-54-4</td><td>49.1%</td><td>110</td><td class='neg'>-$569.39</td><td class='neg'>-$931.36 (48-51-3)</td><td></td></tr>
-<tr><td>Tom Brolley</td><td>1-7-0</td><td>12.5%</td><td>8</td><td class='neg'>-$609.09</td><td class='pos'>+$536.37 (7-1-0)</td><td><span class="badge worst">WORST</span></td></tr>
+<h2>Follow the Money</h2><div class='sub'>Mitch Moss &amp; Pauly Howard hosts; guests across Hours 1-4. 482 picks &middot; graded 125-169-3 &middot; <b>-$1,603.68</b></div>
+<h3>Following Follow the Money</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Ryan Kramer</td><td>8-17-1</td><td>32.0%</td><td>26</td><td class='pos'>+$1,145.46</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>Mitch Moss</td><td>35-43-1</td><td>44.9%</td><td>79</td><td class='pos'>+$464.67</td><td></td></tr>
+<tr><td>Mitch Moss &amp; Pauly Howard</td><td>4-2-0</td><td>66.7%</td><td>6</td><td class='pos'>+$353.25</td><td></td></tr>
+<tr><td>Adam Kramer</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Brett McMurphy</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Thor Nystrom</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Adam Hill</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Christopher Price</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Dustin Sweetelson</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Jimmy Pilegge</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>John Keim</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Keyshawn Johnson</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>David Bearman</td><td>3-2-0</td><td>60.0%</td><td>5</td><td class='pos'>+$72.73</td><td></td></tr>
+<tr><td>Jonathan Davis</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$66.67</td><td></td></tr>
+<tr><td>Mike Palm</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Nick Whalen</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$18.18</td><td></td></tr>
+<tr><td>Adam Burke</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Brad Powers</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Gavin McCarthy</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Jeff Davis</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Listener Lance</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Matt Vasgersian / Mitch Moss</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Sal Paolantonio</td><td>2-3-0</td><td>40.0%</td><td>5</td><td class='neg'>-$118.18</td><td></td></tr>
+<tr><td>Chris Massero</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Paul Charchian</td><td>10-12-0</td><td>45.5%</td><td>22</td><td class='neg'>-$206.81</td><td></td></tr>
+<tr><td>David Aragona</td><td>1-3-0</td><td>25.0%</td><td>4</td><td class='neg'>-$209.09</td><td></td></tr>
+<tr><td>Mike Montesano</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td></td></tr>
+<tr><td>John Hansen</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$311.50</td><td></td></tr>
+<tr><td>Jensen Lewis</td><td>3-6-0</td><td>33.3%</td><td>9</td><td class='neg'>-$341.26</td><td></td></tr>
+<tr><td>Stanford Steve</td><td>0-4-0</td><td>0.0%</td><td>4</td><td class='neg'>-$400.00</td><td></td></tr>
+<tr><td>Steve Wyss</td><td>5-9-0</td><td>35.7%</td><td>14</td><td class='neg'>-$443.30</td><td></td></tr>
+<tr><td>Pauly Howard</td><td>35-48-1</td><td>42.2%</td><td>84</td><td class='neg'>-$1,630.88</td><td><span class="badge worst">WORST</span></td></tr>
 </table></div>
-<h2>VSiN By The Books</h2><div class='sub'>Dave Ross &amp; Jensen Lewis hosts; Hours 1-3. 444 picks &middot; graded 127-168-4 &middot; <b>-$4,692.94</b> &middot; paper inverse +$417.92 (148-123-4)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Dave Ross &amp; Jensen Lewis</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$263.64</td><td class='neg'>-$309.09 (1-4-0)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>Wes Reynolds</td><td>3-1-0</td><td>75.0%</td><td>4</td><td class='pos'>+$165.15</td><td class='neg'>-$209.09 (1-3-0)</td><td></td></tr>
-<tr><td>Marty Hurney</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Stormy Bonettoni</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Nick Whalen</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td class='neg'>-$109.09 (1-2-0)</td><td></td></tr>
-<tr><td>Rob Moreno</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$48.78</td><td class='neg'>-$100.00 (0-1-0)</td><td></td></tr>
-<tr><td>Lou Finocchiaro</td><td>6-5-0</td><td>54.5%</td><td>11</td><td class='pos'>+$8.60</td><td class='neg'>-$228.46 (5-6-0)</td><td></td></tr>
-<tr><td>Joe Lisi</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$27.27</td><td class='neg'>-$27.27 (3-3-0)</td><td></td></tr>
-<tr><td>Aaron Murray</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Jonathan Von Tobel</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td class='pos'>+$90.91 (1-0-0)</td><td></td></tr>
-<tr><td>Matt Youmans</td><td>1-2-0</td><td>33.3%</td><td>3</td><td class='neg'>-$109.09</td><td class='pos'>+$81.82 (2-1-0)</td><td></td></tr>
-<tr><td>Adam Burke</td><td>2-3-0</td><td>40.0%</td><td>5</td><td class='neg'>-$118.18</td><td class='pos'>+$72.73 (3-2-0)</td><td></td></tr>
-<tr><td>Mike Palm</td><td>0-2-1</td><td>0.0%</td><td>3</td><td class='neg'>-$200.00</td><td class='pos'>+$181.82 (2-0-1)</td><td></td></tr>
-<tr><td>David Aragona</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td class=''>+$0.00 (0-0-0)</td><td></td></tr>
-<tr><td>Zach Cohen</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td class='pos'>+$263.64 (4-1-0)</td><td></td></tr>
-<tr><td>Dave Ross</td><td>38-41-1</td><td>48.1%</td><td>80</td><td class='neg'>-$370.10</td><td class='neg'>-$458.07 (37-37-1)</td><td></td></tr>
-<tr><td>Will Hill</td><td>1-5-0</td><td>16.7%</td><td>6</td><td class='neg'>-$404.76</td><td class='pos'>+$263.64 (4-1-0)</td><td></td></tr>
-<tr><td>Ryan Kramer</td><td>0-6-0</td><td>0.0%</td><td>6</td><td class='neg'>-$600.00</td><td class='pos'>+$181.82 (2-0-0)</td><td></td></tr>
-<tr><td>Jensen Lewis</td><td>63-90-2</td><td>41.2%</td><td>155</td><td class='neg'>-$2,904.26</td><td class='pos'>+$831.70 (81-60-2)</td><td><span class="badge worst">WORST</span></td></tr>
+<h3>Fading Follow the Money (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Stanford Steve</td><td>4-0-0</td><td>100.0%</td><td>4</td><td class='pos'>+$363.64</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Mike Montesano</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$263.64</td><td></td></tr>
+<tr><td>John Hansen</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$181.17</td><td></td></tr>
+<tr><td>Jensen Lewis</td><td>6-3-0</td><td>66.7%</td><td>9</td><td class='pos'>+$97.16</td><td></td></tr>
+<tr><td>Adam Burke</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Brad Powers</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Gavin McCarthy</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Jeff Davis</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Matt Vasgersian / Mitch Moss</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Sal Paolantonio</td><td>3-2-0</td><td>60.0%</td><td>5</td><td class='pos'>+$72.73</td><td></td></tr>
+<tr><td>Steve Wyss</td><td>8-5-0</td><td>61.5%</td><td>13</td><td class='pos'>+$29.47</td><td></td></tr>
+<tr><td>Nick Whalen</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$27.27</td><td></td></tr>
+<tr><td>Mike Palm</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$45.65</td><td></td></tr>
+<tr><td>Adam Hill</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Christopher Price</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Dustin Sweetelson</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Jimmy Pilegge</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>John Keim</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Jonathan Davis</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Keyshawn Johnson</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Paul Charchian</td><td>8-8-0</td><td>50.0%</td><td>16</td><td class='neg'>-$160.54</td><td></td></tr>
+<tr><td>Adam Kramer</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Brett McMurphy</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Thor Nystrom</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>David Bearman</td><td>1-3-0</td><td>25.0%</td><td>4</td><td class='neg'>-$209.09</td><td></td></tr>
+<tr><td>Mitch Moss &amp; Pauly Howard</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td></td></tr>
+<tr><td>Ryan Kramer</td><td>3-5-1</td><td>37.5%</td><td>9</td><td class='neg'>-$312.37</td><td></td></tr>
+<tr><td>Mitch Moss</td><td>34-34-1</td><td>50.0%</td><td>69</td><td class='neg'>-$345.60</td><td></td></tr>
+<tr><td>Pauly Howard</td><td>34-33-1</td><td>50.7%</td><td>68</td><td class='neg'>-$610.05</td><td><span class="badge worst">WORST FADE</span></td></tr>
 </table></div>
-<h2>Circa Friday Football Invitational</h2><div class='sub'>Matt Youmans hosts, with Circa&rsquo;s Derek Stevens; Friday episodes (Hours 1-2). Contestant picks as stated on air &mdash; a subset of the 175 weekly contest picks. 1599 picks &middot; graded 761-664-22 &middot; <b>+$2,782.51</b> &middot; paper inverse -$15,735.76 (664-761-22)</div>
-<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Paper Inverse $ (fading them)</th><th>Flag</th></tr>
-<tr><td>Alex White</td><td>39-23-0</td><td>62.9%</td><td>62</td><td class='pos'>+$1,245.49</td><td class='neg'>-$1,809.07 (23-39-0)</td><td><span class="badge best">BEST</span></td></tr>
-<tr><td>Chris Macero</td><td>38-25-0</td><td>60.3%</td><td>63</td><td class='pos'>+$954.58</td><td class='neg'>-$1,527.25 (25-38-0)</td><td></td></tr>
-<tr><td>Scott Pritchard</td><td>28-18-0</td><td>60.9%</td><td>46</td><td class='pos'>+$745.48</td><td class='neg'>-$1,163.62 (18-28-0)</td><td></td></tr>
-<tr><td>Jeff Petch</td><td>34-24-1</td><td>58.6%</td><td>59</td><td class='pos'>+$690.94</td><td class='neg'>-$1,218.16 (24-34-1)</td><td></td></tr>
-<tr><td>Doug Fleming</td><td>34-25-3</td><td>57.6%</td><td>62</td><td class='pos'>+$590.94</td><td class='neg'>-$1,127.25 (25-34-3)</td><td></td></tr>
-<tr><td>Matt Ste. Marie</td><td>30-22-4</td><td>57.7%</td><td>56</td><td class='pos'>+$527.30</td><td class='neg'>-$999.98 (22-30-4)</td><td></td></tr>
-<tr><td>Steve Fezzik</td><td>31-23-3</td><td>57.4%</td><td>57</td><td class='pos'>+$518.21</td><td class='neg'>-$1,009.07 (23-31-3)</td><td></td></tr>
-<tr><td>Jason Jarvis</td><td>32-24-0</td><td>57.1%</td><td>56</td><td class='pos'>+$509.12</td><td class='neg'>-$1,018.16 (24-32-0)</td><td></td></tr>
-<tr><td>Ed Salmons</td><td>33-25-0</td><td>56.9%</td><td>58</td><td class='pos'>+$500.03</td><td class='neg'>-$1,027.25 (25-33-0)</td><td></td></tr>
-<tr><td>Jeff Whitelaw</td><td>31-24-1</td><td>56.4%</td><td>56</td><td class='pos'>+$418.21</td><td class='neg'>-$918.16 (24-31-1)</td><td></td></tr>
-<tr><td>Carl Sack</td><td>32-25-0</td><td>56.1%</td><td>57</td><td class='pos'>+$409.12</td><td class='neg'>-$927.25 (25-32-0)</td><td></td></tr>
-<tr><td>Randy McKay</td><td>32-25-0</td><td>56.1%</td><td>57</td><td class='pos'>+$409.12</td><td class='neg'>-$927.25 (25-32-0)</td><td></td></tr>
-<tr><td>Weston Stradtman</td><td>34-28-1</td><td>54.8%</td><td>63</td><td class='pos'>+$290.94</td><td class='neg'>-$854.52 (28-34-1)</td><td></td></tr>
-<tr><td>Kenny White</td><td>29-26-1</td><td>52.7%</td><td>56</td><td class='pos'>+$36.39</td><td class='neg'>-$536.34 (26-29-1)</td><td></td></tr>
-<tr><td>Clyde Walker</td><td>33-30-0</td><td>52.4%</td><td>63</td><td class='pos'>+$0.03</td><td class='neg'>-$572.70 (30-33-0)</td><td></td></tr>
-<tr><td>Mike Montesano</td><td>27-27-1</td><td>50.0%</td><td>55</td><td class='neg'>-$245.43</td><td class='neg'>-$245.43 (27-27-1)</td><td></td></tr>
-<tr><td>Paul Stone</td><td>31-31-1</td><td>50.0%</td><td>63</td><td class='neg'>-$281.79</td><td class='neg'>-$281.79 (31-31-1)</td><td></td></tr>
-<tr><td>Tony George</td><td>27-28-2</td><td>49.1%</td><td>57</td><td class='neg'>-$345.43</td><td class='neg'>-$154.52 (28-27-2)</td><td></td></tr>
-<tr><td>Chris Fallica</td><td>30-31-1</td><td>49.2%</td><td>62</td><td class='neg'>-$372.70</td><td class='neg'>-$181.79 (31-30-1)</td><td></td></tr>
-<tr><td>Chris Coyne</td><td>27-29-1</td><td>48.2%</td><td>57</td><td class='neg'>-$445.43</td><td class='neg'>-$63.61 (29-27-1)</td><td></td></tr>
-<tr><td>Tony Gordon</td><td>28-31-1</td><td>47.5%</td><td>60</td><td class='neg'>-$554.52</td><td class='pos'>+$18.21 (31-28-1)</td><td></td></tr>
-<tr><td>Chuck Edel</td><td>30-33-0</td><td>47.6%</td><td>63</td><td class='neg'>-$572.70</td><td class='pos'>+$0.03 (33-30-0)</td><td></td></tr>
-<tr><td>Frank Carulli</td><td>22-26-1</td><td>45.8%</td><td>49</td><td class='neg'>-$599.98</td><td class='pos'>+$163.66 (26-22-1)</td><td></td></tr>
-<tr><td>Jack Lenenberg</td><td>23-27-0</td><td>46.0%</td><td>50</td><td class='neg'>-$609.07</td><td class='pos'>+$154.57 (27-23-0)</td><td></td></tr>
-<tr><td>Robert Brubeck</td><td>26-34-0</td><td>43.3%</td><td>60</td><td class='neg'>-$1,036.34</td><td class='pos'>+$490.94 (34-26-0)</td><td><span class="badge worst">WORST</span></td></tr>
+<h2>Prop Points</h2><div class='sub'>John Hanson hosts; nightly props. 197 picks &middot; graded 65-70-4 &middot; <b>-$989.97</b></div>
+<h3>Following Prop Points</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Josh Chevalier</td><td>8-2-0</td><td>80.0%</td><td>10</td><td class='pos'>+$527.28</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>John Hansen / Tom Brolley</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$88.50</td><td></td></tr>
+<tr><td>Justin Varnes</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td></td></tr>
+<tr><td>Steven O&#x27;Rourke</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>Brett Whitefield</td><td>0-5-0</td><td>0.0%</td><td>5</td><td class='neg'>-$500.00</td><td></td></tr>
+<tr><td>John Hansen</td><td>52-54-4</td><td>49.1%</td><td>110</td><td class='neg'>-$569.39</td><td></td></tr>
+<tr><td>Tom Brolley</td><td>1-7-0</td><td>12.5%</td><td>8</td><td class='neg'>-$609.09</td><td><span class="badge worst">WORST</span></td></tr>
 </table></div>
-<h2>All picks (3235) — with price on every row</h2>
-<div class='wrap'><table><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
+<h3>Fading Prop Points (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Tom Brolley</td><td>7-1-0</td><td>87.5%</td><td>8</td><td class='pos'>+$536.37</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Brett Whitefield</td><td>4-0-0</td><td>100.0%</td><td>4</td><td class='pos'>+$367.07</td><td></td></tr>
+<tr><td>Steven O&#x27;Rourke</td><td>1-1-0</td><td>50.0%</td><td>2</td><td class='neg'>-$9.09</td><td></td></tr>
+<tr><td>John Hansen / Tom Brolley</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Justin Varnes</td><td>1-2-0</td><td>33.3%</td><td>3</td><td class='neg'>-$121.26</td><td></td></tr>
+<tr><td>Josh Chevalier</td><td>2-8-0</td><td>20.0%</td><td>10</td><td class='neg'>-$618.18</td><td></td></tr>
+<tr><td>John Hansen</td><td>48-51-3</td><td>48.5%</td><td>102</td><td class='neg'>-$931.36</td><td><span class="badge worst">WORST FADE</span></td></tr>
+</table></div>
+<h2>VSiN By The Books</h2><div class='sub'>Dave Ross &amp; Jensen Lewis hosts; Hours 1-3. 444 picks &middot; graded 127-168-4 &middot; <b>-$4,692.94</b></div>
+<h3>Following VSiN By The Books</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Dave Ross &amp; Jensen Lewis</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$263.64</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>Wes Reynolds</td><td>3-1-0</td><td>75.0%</td><td>4</td><td class='pos'>+$165.15</td><td></td></tr>
+<tr><td>Marty Hurney</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Stormy Bonettoni</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Nick Whalen</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td></td></tr>
+<tr><td>Rob Moreno</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$48.78</td><td></td></tr>
+<tr><td>Lou Finocchiaro</td><td>6-5-0</td><td>54.5%</td><td>11</td><td class='pos'>+$8.60</td><td></td></tr>
+<tr><td>Joe Lisi</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$27.27</td><td></td></tr>
+<tr><td>Aaron Murray</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Jonathan Von Tobel</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Matt Youmans</td><td>1-2-0</td><td>33.3%</td><td>3</td><td class='neg'>-$109.09</td><td></td></tr>
+<tr><td>Adam Burke</td><td>2-3-0</td><td>40.0%</td><td>5</td><td class='neg'>-$118.18</td><td></td></tr>
+<tr><td>Mike Palm</td><td>0-2-1</td><td>0.0%</td><td>3</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>David Aragona</td><td>0-2-0</td><td>0.0%</td><td>2</td><td class='neg'>-$200.00</td><td></td></tr>
+<tr><td>Zach Cohen</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td></td></tr>
+<tr><td>Dave Ross</td><td>38-41-1</td><td>48.1%</td><td>80</td><td class='neg'>-$370.10</td><td></td></tr>
+<tr><td>Will Hill</td><td>1-5-0</td><td>16.7%</td><td>6</td><td class='neg'>-$404.76</td><td></td></tr>
+<tr><td>Ryan Kramer</td><td>0-6-0</td><td>0.0%</td><td>6</td><td class='neg'>-$600.00</td><td></td></tr>
+<tr><td>Jensen Lewis</td><td>63-90-2</td><td>41.2%</td><td>155</td><td class='neg'>-$2,904.26</td><td><span class="badge worst">WORST</span></td></tr>
+</table></div>
+<h3>Fading VSiN By The Books (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Jensen Lewis</td><td>81-60-2</td><td>57.4%</td><td>143</td><td class='pos'>+$831.70</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Will Hill</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$263.64</td><td></td></tr>
+<tr><td>Zach Cohen</td><td>4-1-0</td><td>80.0%</td><td>5</td><td class='pos'>+$263.64</td><td></td></tr>
+<tr><td>Mike Palm</td><td>2-0-1</td><td>100.0%</td><td>3</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Ryan Kramer</td><td>2-0-0</td><td>100.0%</td><td>2</td><td class='pos'>+$181.82</td><td></td></tr>
+<tr><td>Aaron Murray</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Jonathan Von Tobel</td><td>1-0-0</td><td>100.0%</td><td>1</td><td class='pos'>+$90.91</td><td></td></tr>
+<tr><td>Matt Youmans</td><td>2-1-0</td><td>66.7%</td><td>3</td><td class='pos'>+$81.82</td><td></td></tr>
+<tr><td>Adam Burke</td><td>3-2-0</td><td>60.0%</td><td>5</td><td class='pos'>+$72.73</td><td></td></tr>
+<tr><td>Joe Lisi</td><td>3-3-0</td><td>50.0%</td><td>6</td><td class='neg'>-$27.27</td><td></td></tr>
+<tr><td>Marty Hurney</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Rob Moreno</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Stormy Bonettoni</td><td>0-1-0</td><td>0.0%</td><td>1</td><td class='neg'>-$100.00</td><td></td></tr>
+<tr><td>Nick Whalen</td><td>1-2-0</td><td>33.3%</td><td>3</td><td class='neg'>-$109.09</td><td></td></tr>
+<tr><td>Wes Reynolds</td><td>1-3-0</td><td>25.0%</td><td>4</td><td class='neg'>-$209.09</td><td></td></tr>
+<tr><td>Lou Finocchiaro</td><td>5-6-0</td><td>45.5%</td><td>11</td><td class='neg'>-$228.46</td><td></td></tr>
+<tr><td>Dave Ross &amp; Jensen Lewis</td><td>1-4-0</td><td>20.0%</td><td>5</td><td class='neg'>-$309.09</td><td></td></tr>
+<tr><td>Dave Ross</td><td>37-37-1</td><td>50.0%</td><td>75</td><td class='neg'>-$458.07</td><td><span class="badge worst">WORST FADE</span></td></tr>
+</table></div>
+<h2>Circa Friday Football Invitational</h2><div class='sub'>Matt Youmans hosts, with Circa&rsquo;s Derek Stevens; Friday episodes (Hours 1-2). Contestant picks as stated on air &mdash; a subset of the 175 weekly contest picks. 1599 picks &middot; graded 761-664-22 &middot; <b>+$2,782.51</b></div>
+<h3>Following Circa Friday Football Invitational</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Graded Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Alex White</td><td>39-23-0</td><td>62.9%</td><td>62</td><td class='pos'>+$1,245.49</td><td><span class="badge best">BEST</span></td></tr>
+<tr><td>Chris Macero</td><td>38-25-0</td><td>60.3%</td><td>63</td><td class='pos'>+$954.58</td><td></td></tr>
+<tr><td>Scott Pritchard</td><td>28-18-0</td><td>60.9%</td><td>46</td><td class='pos'>+$745.48</td><td></td></tr>
+<tr><td>Jeff Petch</td><td>34-24-1</td><td>58.6%</td><td>59</td><td class='pos'>+$690.94</td><td></td></tr>
+<tr><td>Doug Fleming</td><td>34-25-3</td><td>57.6%</td><td>62</td><td class='pos'>+$590.94</td><td></td></tr>
+<tr><td>Matt Ste. Marie</td><td>30-22-4</td><td>57.7%</td><td>56</td><td class='pos'>+$527.30</td><td></td></tr>
+<tr><td>Steve Fezzik</td><td>31-23-3</td><td>57.4%</td><td>57</td><td class='pos'>+$518.21</td><td></td></tr>
+<tr><td>Jason Jarvis</td><td>32-24-0</td><td>57.1%</td><td>56</td><td class='pos'>+$509.12</td><td></td></tr>
+<tr><td>Ed Salmons</td><td>33-25-0</td><td>56.9%</td><td>58</td><td class='pos'>+$500.03</td><td></td></tr>
+<tr><td>Jeff Whitelaw</td><td>31-24-1</td><td>56.4%</td><td>56</td><td class='pos'>+$418.21</td><td></td></tr>
+<tr><td>Carl Sack</td><td>32-25-0</td><td>56.1%</td><td>57</td><td class='pos'>+$409.12</td><td></td></tr>
+<tr><td>Randy McKay</td><td>32-25-0</td><td>56.1%</td><td>57</td><td class='pos'>+$409.12</td><td></td></tr>
+<tr><td>Weston Stradtman</td><td>34-28-1</td><td>54.8%</td><td>63</td><td class='pos'>+$290.94</td><td></td></tr>
+<tr><td>Kenny White</td><td>29-26-1</td><td>52.7%</td><td>56</td><td class='pos'>+$36.39</td><td></td></tr>
+<tr><td>Clyde Walker</td><td>33-30-0</td><td>52.4%</td><td>63</td><td class='pos'>+$0.03</td><td></td></tr>
+<tr><td>Mike Montesano</td><td>27-27-1</td><td>50.0%</td><td>55</td><td class='neg'>-$245.43</td><td></td></tr>
+<tr><td>Paul Stone</td><td>31-31-1</td><td>50.0%</td><td>63</td><td class='neg'>-$281.79</td><td></td></tr>
+<tr><td>Tony George</td><td>27-28-2</td><td>49.1%</td><td>57</td><td class='neg'>-$345.43</td><td></td></tr>
+<tr><td>Chris Fallica</td><td>30-31-1</td><td>49.2%</td><td>62</td><td class='neg'>-$372.70</td><td></td></tr>
+<tr><td>Chris Coyne</td><td>27-29-1</td><td>48.2%</td><td>57</td><td class='neg'>-$445.43</td><td></td></tr>
+<tr><td>Tony Gordon</td><td>28-31-1</td><td>47.5%</td><td>60</td><td class='neg'>-$554.52</td><td></td></tr>
+<tr><td>Chuck Edel</td><td>30-33-0</td><td>47.6%</td><td>63</td><td class='neg'>-$572.70</td><td></td></tr>
+<tr><td>Frank Carulli</td><td>22-26-1</td><td>45.8%</td><td>49</td><td class='neg'>-$599.98</td><td></td></tr>
+<tr><td>Jack Lenenberg</td><td>23-27-0</td><td>46.0%</td><td>50</td><td class='neg'>-$609.07</td><td></td></tr>
+<tr><td>Robert Brubeck</td><td>26-34-0</td><td>43.3%</td><td>60</td><td class='neg'>-$1,036.34</td><td><span class="badge worst">WORST</span></td></tr>
+</table></div>
+<h3>Fading Circa Friday Football Invitational (paper inverse)</h3>
+<div class='wrap'><table><tr><th>Host / Picker</th><th>Record (W-L-P)</th><th>Win %</th><th>Graded</th><th>$ P/L ($100 flat)</th><th>Flag</th></tr>
+<tr><td>Robert Brubeck</td><td>34-26-0</td><td>56.7%</td><td>60</td><td class='pos'>+$490.94</td><td><span class="badge best">BEST FADE</span></td></tr>
+<tr><td>Frank Carulli</td><td>26-22-1</td><td>54.2%</td><td>49</td><td class='pos'>+$163.66</td><td></td></tr>
+<tr><td>Jack Lenenberg</td><td>27-23-0</td><td>54.0%</td><td>50</td><td class='pos'>+$154.57</td><td></td></tr>
+<tr><td>Tony Gordon</td><td>31-28-1</td><td>52.5%</td><td>60</td><td class='pos'>+$18.21</td><td></td></tr>
+<tr><td>Chuck Edel</td><td>33-30-0</td><td>52.4%</td><td>63</td><td class='pos'>+$0.03</td><td></td></tr>
+<tr><td>Chris Coyne</td><td>29-27-1</td><td>51.8%</td><td>57</td><td class='neg'>-$63.61</td><td></td></tr>
+<tr><td>Tony George</td><td>28-27-2</td><td>50.9%</td><td>57</td><td class='neg'>-$154.52</td><td></td></tr>
+<tr><td>Chris Fallica</td><td>31-30-1</td><td>50.8%</td><td>62</td><td class='neg'>-$181.79</td><td></td></tr>
+<tr><td>Mike Montesano</td><td>27-27-1</td><td>50.0%</td><td>55</td><td class='neg'>-$245.43</td><td></td></tr>
+<tr><td>Paul Stone</td><td>31-31-1</td><td>50.0%</td><td>63</td><td class='neg'>-$281.79</td><td></td></tr>
+<tr><td>Kenny White</td><td>26-29-1</td><td>47.3%</td><td>56</td><td class='neg'>-$536.34</td><td></td></tr>
+<tr><td>Clyde Walker</td><td>30-33-0</td><td>47.6%</td><td>63</td><td class='neg'>-$572.70</td><td></td></tr>
+<tr><td>Weston Stradtman</td><td>28-34-1</td><td>45.2%</td><td>63</td><td class='neg'>-$854.52</td><td></td></tr>
+<tr><td>Jeff Whitelaw</td><td>24-31-1</td><td>43.6%</td><td>56</td><td class='neg'>-$918.16</td><td></td></tr>
+<tr><td>Carl Sack</td><td>25-32-0</td><td>43.9%</td><td>57</td><td class='neg'>-$927.25</td><td></td></tr>
+<tr><td>Randy McKay</td><td>25-32-0</td><td>43.9%</td><td>57</td><td class='neg'>-$927.25</td><td></td></tr>
+<tr><td>Matt Ste. Marie</td><td>22-30-4</td><td>42.3%</td><td>56</td><td class='neg'>-$999.98</td><td></td></tr>
+<tr><td>Steve Fezzik</td><td>23-31-3</td><td>42.6%</td><td>57</td><td class='neg'>-$1,009.07</td><td></td></tr>
+<tr><td>Jason Jarvis</td><td>24-32-0</td><td>42.9%</td><td>56</td><td class='neg'>-$1,018.16</td><td></td></tr>
+<tr><td>Ed Salmons</td><td>25-33-0</td><td>43.1%</td><td>58</td><td class='neg'>-$1,027.25</td><td></td></tr>
+<tr><td>Doug Fleming</td><td>25-34-3</td><td>42.4%</td><td>62</td><td class='neg'>-$1,127.25</td><td></td></tr>
+<tr><td>Scott Pritchard</td><td>18-28-0</td><td>39.1%</td><td>46</td><td class='neg'>-$1,163.62</td><td></td></tr>
+<tr><td>Jeff Petch</td><td>24-34-1</td><td>41.4%</td><td>59</td><td class='neg'>-$1,218.16</td><td></td></tr>
+<tr><td>Chris Macero</td><td>25-38-0</td><td>39.7%</td><td>63</td><td class='neg'>-$1,527.25</td><td></td></tr>
+<tr><td>Alex White</td><td>23-39-0</td><td>37.1%</td><td>62</td><td class='neg'>-$1,809.07</td><td><span class="badge worst">WORST FADE</span></td></tr>
+</table></div>
+<h2>All picks (3235) — following the picks, with price on every row</h2>
+<div class='picktable'><div class='filters'>Show: <select class='f-show'><option value=''>All shows</option></select> Date: <input type='date' class='f-date'> <button class='f-clear' type='button'>Clear</button> <span class='f-count'></span></div><div class='wrap'><table id='tbl-all'><tr><th>Date</th><th>Show</th><th>Episode</th><th>Picker</th><th>Game / Event</th><th>Pick</th><th>Line</th><th>Price</th><th>Result</th><th>$ Result</th></tr>
 <tr class=''><td>2026-10-22</td><td>Prop Points</td><td>October 22, 2026</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>Stevenson OVER rushing yards</td><td>42.5</td><td class='price'>no price stated</td><td class='loss'>LOSS</td><td class='neg'>-$100.00</td></tr>
 <tr class=''><td>2026-10-22</td><td>Prop Points</td><td>October 22, 2026</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>A.J. Brown OVER receiving yards</td><td>67.5</td><td class='price'>-112</td><td class='loss'>LOSS</td><td class='neg'>-$100.00</td></tr>
 <tr class=''><td>2026-10-22</td><td>Prop Points</td><td>October 22, 2026</td><td>John Hansen</td><td>Patriots @ Bears (TNF)</td><td>Rome Odunze OVER receiving yards</td><td>44.5</td><td class='price'>-113</td><td class='win'>WIN</td><td class='pos'>+$88.50</td></tr>
@@ -3681,5 +3894,13 @@ tr.bigdog td.price{color:#ffb454}
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Oklahoma State at Texas Tech (CFB)</td><td>Oklahoma State</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Texas Tech at Oklahoma State (CFB)</td><td>Over 73</td><td>73</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
 <tr class=''><td>2026-11-13</td><td>VSiN By The Books</td><td>Hour 3</td><td>Shahan Jayarajah</td><td>Heisman Trophy</td><td>Gio Lopez (UNC QB)</td><td>not stated</td><td class='price'>no price stated</td><td class=''><span class="pend">PENDING</span></td><td class=''>&mdash;</td></tr>
-</table></div>
-<div class='foot'>Built November 14, 2026, 05:46 PM ET from the Podcast Picks Tracker sheet (3,235 picks). Host records computed from the raw Picks tab (name variants Gill/Gil Alexander and Kelley/Kelly Bydlon merged); show totals and price buckets recomputed from the Picks tab (2505 graded, -$5,858.30). Inverse figures recomputed from the Inverse Picks (Paper) tab: 1132-1215-36, -$20,672.47. Paper inverse is paper-only. &middot; <a href='podcast-picks.html'>Full tracker page</a></div></body></html>
+</table></div></div>
+<div class='foot'>Built November 14, 2026, 07:10 PM ET from the Podcast Picks Tracker sheet (3,235 picks). FOLLOWING book: host records computed from the raw Picks tab (name variants Gill/Gil Alexander and Kelley/Kelly Bydlon merged); show totals and price buckets recomputed from the Picks tab (2505 graded, -$5,858.30). FADING book (paper inverse, separate — never netted with following): figures recomputed from the Inverse Picks (Paper) tab: 1132-1215-36, -$20,672.47. Paper inverse is paper-only. &middot; <a href='podcast-picks.html'>Full tracker page</a></div>
+<script>
+function numVal(t){var v=t.replace(/[$,%]/g,'').replace(/,/g,'').trim();if(v===''||v==='\u2014'||v==='\u2013')return null;var n=parseFloat(v);return isNaN(n)?null:n;}
+function sortTable(table,col,dir){var tb=table.tBodies[0];var rows=Array.prototype.slice.call(tb.rows);var pinned=rows.filter(function(r){return r.className.indexOf('tot')!==-1;});var rest=rows.filter(function(r){return r.className.indexOf('tot')===-1;});rest.sort(function(a,b){var ta=a.cells[col].textContent.trim(),t2=b.cells[col].textContent.trim();var na=numVal(ta),nb=numVal(t2);var c;if(na!==null&&nb!==null){c=na-nb;}else{c=ta.localeCompare(t2);}return dir*c;});rest.concat(pinned).forEach(function(r){tb.appendChild(r);});}
+document.querySelectorAll('table').forEach(function(table){var ths=table.querySelectorAll('th');ths.forEach(function(th,i){th.classList.add('sortable');th.addEventListener('click',function(){var dir=th.dataset.dir==='asc'?'desc':'asc';table.querySelectorAll('th').forEach(function(x){x.classList.remove('asc','desc');delete x.dataset.dir;});th.dataset.dir=dir;th.classList.add(dir);sortTable(table,i,dir==='asc'?1:-1);});});});
+function applyFilters(wrap){var show=wrap.querySelector('.f-show').value;var date=wrap.querySelector('.f-date').value;var rows=wrap.querySelectorAll('tbody tr');var shown=0;rows.forEach(function(r){var okShow=!show||r.cells[1].textContent.trim()===show;var okDate=!date||r.cells[0].textContent.trim()===date;var ok=okShow&&okDate;r.style.display=ok?'':'none';if(ok)shown++;});var c=wrap.querySelector('.f-count');if(c)c.textContent=shown+' of '+rows.length+' shown';}
+document.querySelectorAll('.picktable').forEach(function(wrap){var sel=wrap.querySelector('.f-show');var shows={};wrap.querySelectorAll('tbody tr').forEach(function(r){shows[r.cells[1].textContent.trim()]=1;});Object.keys(shows).sort().forEach(function(s){var o=document.createElement('option');o.value=s;o.textContent=s;sel.appendChild(o);});wrap.querySelector('.f-show').addEventListener('change',function(){applyFilters(wrap);});wrap.querySelector('.f-date').addEventListener('change',function(){applyFilters(wrap);});wrap.querySelector('.f-clear').addEventListener('click',function(){wrap.querySelector('.f-show').value='';wrap.querySelector('.f-date').value='';applyFilters(wrap);});applyFilters(wrap);});
+</script>
+</body></html>
