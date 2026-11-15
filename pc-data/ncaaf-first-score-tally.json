@@ -1,5 +1,5 @@
 {
- "through": "2026-11-14",
+ "through": "2026-11-15",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -9858,18 +9858,18 @@
    "winner": "Iowa State Cyclones"
   },
   {
-   "date": "2026-11-14",
    "away": "Colorado State Rams",
-   "home": "Washington State Cougars",
+   "date": "2026-11-14",
+   "final": "7-73",
    "first": "Washington State Cougars",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 504,
-   "winner": "Washington State Cougars",
-   "seq": "0-7>0-14>0-21>0-28>0-35>7-35>7-38>7-45>7-52>7-59>7-66>7-73",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Washington State Cougars",
    "lead_changes": 0,
+   "seq": "0-7>0-14>0-21>0-28>0-35>7-35>7-38>7-45>7-52>7-59>7-66>7-73",
    "ties": 0,
-   "final": "7-73"
+   "winner": "Washington State Cougars"
   },
   {
    "away": "Duke Blue Devils",
@@ -10166,18 +10166,18 @@
    "winner": "Missouri State Bears"
   },
   {
-   "date": "2026-11-14",
    "away": "North Dakota State Bison",
-   "home": "Hawai'i Rainbow Warriors",
+   "date": "2026-11-14",
+   "final": "21-13",
    "first": "North Dakota State Bison",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 640,
-   "winner": "North Dakota State Bison",
-   "seq": "7-0>7-7>7-10>7-13>14-13>21-13",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Hawai'i Rainbow Warriors",
    "lead_changes": 2,
+   "seq": "7-0>7-7>7-10>7-13>14-13>21-13",
    "ties": 1,
-   "final": "21-13"
+   "winner": "North Dakota State Bison"
   },
   {
    "away": "North Texas Mean Green",
@@ -10432,18 +10432,18 @@
    "winner": "San Diego State Aztecs"
   },
   {
-   "date": "2026-11-14",
    "away": "Utah Utes",
-   "home": "Arizona Wildcats",
+   "date": "2026-11-14",
+   "final": "40-39",
    "first": "Arizona Wildcats",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 315,
-   "winner": "Utah Utes",
-   "seq": "0-7>3-7>3-14>10-14>17-14>17-21>24-21>24-28>27-28>33-28>33-31>33-39>40-39",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Arizona Wildcats",
    "lead_changes": 7,
+   "seq": "0-7>3-7>3-14>10-14>17-14>17-21>24-21>24-28>27-28>33-28>33-31>33-39>40-39",
    "ties": 0,
-   "final": "40-39"
+   "winner": "Utah Utes"
   },
   {
    "away": "Wake Forest Demon Deacons",
@@ -10500,6 +10500,20 @@
    "seq": "0-6>7-6>14-6>21-6>24-6>24-9>24-15>27-15",
    "ties": 0,
    "winner": "Wyoming Cowboys"
+  },
+  {
+   "date": "2026-11-15",
+   "away": "Ole Miss Rebels",
+   "home": "Oklahoma Sooners",
+   "first": "Oklahoma Sooners",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 546,
+   "winner": "Oklahoma Sooners",
+   "seq": "0-7>0-14>7-14>7-21>14-21>14-24>17-24",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "17-24"
   }
  ],
  "tally": {
@@ -11288,17 +11302,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Oklahoma Sooners": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "kinds": {
     "FG": 2,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 4,
+   "won_when_first": 5,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
@@ -13384,7 +13398,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Ole Miss Rebels": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 4,
    "kinds": {
     "FG": 1,
@@ -13394,9 +13408,9 @@
    "won_when_first": 4,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 40.0,
+   "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
   "Washington State Cougars": {
@@ -14281,19 +14295,19 @@
   }
  },
  "league": {
-  "games": 750,
-  "home_scored_first": 450,
-  "first_team_won": 531,
+  "games": 751,
+  "home_scored_first": 451,
+  "first_team_won": 532,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 210,
-   "TD": 538,
+   "TD": 539,
    "Safety": 2
   },
-  "avg_lead_changes": 1.0,
-  "median_first_score_sec": 339,
-  "home_scored_first_pct": 60.0,
+  "avg_lead_changes": 0.99,
+  "median_first_score_sec": 340,
+  "home_scored_first_pct": 60.1,
   "first_team_win_pct": 70.8
  },
  "lead_change_team_avgs": {
@@ -14543,9 +14557,9 @@
    "avg_per_game": 0.5
   },
   "Oklahoma Sooners": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 3,
-   "avg_per_game": 0.33
+   "avg_per_game": 0.3
   },
   "Abilene Christian Wildcats": {
    "games": 1,
@@ -15198,9 +15212,9 @@
    "avg_per_game": 2.6
   },
   "Ole Miss Rebels": {
-   "games": 9,
+   "games": 10,
    "lead_changes": 4,
-   "avg_per_game": 0.44
+   "avg_per_game": 0.4
   },
   "Washington State Cougars": {
    "games": 10,
