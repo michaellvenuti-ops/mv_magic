@@ -4431,7 +4431,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Auburn",
-   "dog_team": "Mississippi St"
+   "dog_team": "Mississippi St",
+   "final": true
   },
   "401858300": {
    "sport": "CFB",
@@ -4569,7 +4570,8 @@
    "fav": "home",
    "spread": 4.0,
    "fav_team": "Rice",
-   "dog_team": "Tulane"
+   "dog_team": "Tulane",
+   "final": true
   },
   "401870769": {
    "sport": "CFB",
@@ -4960,7 +4962,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.0,
    "fav_team": "Oklahoma St",
    "dog_team": "Texas Tech"
   },
@@ -5102,7 +5104,8 @@
    "alert_expires_at": "2026-11-14T17:47:10",
    "alert_detail": "3:09 - 2nd Quarter",
    "alert_fav_score": 7,
-   "alert_dog_score": 14
+   "alert_dog_score": 14,
+   "final": true
   },
   "401867905": {
    "sport": "CFB",
@@ -7244,7 +7247,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.0,
    "fav_team": "Lions",
    "dog_team": "Patriots"
   },
@@ -9762,13 +9765,15 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "North Texas",
-   "dog_team": "South Alabama"
+   "dog_team": "South Alabama",
+   "final": true
   },
   "401925048": {
    "sport": "NCAAB",
    "matchup": "Southern NO at LSU N Orleans",
    "date": "2026-11-14",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401919782": {
    "sport": "NCAAB",
@@ -9778,7 +9783,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Le Moyne",
-   "dog_team": "Manhattan"
+   "dog_team": "Manhattan",
+   "final": true
   },
   "401909534": {
    "sport": "NCAAB",
@@ -9789,7 +9795,8 @@
    "spread": 11.5,
    "fav_team": "Providence",
    "dog_team": "Colorado",
-   "live_ml": -375
+   "live_ml": -375,
+   "final": true
   },
   "401920193": {
    "sport": "NCAAB",
@@ -9865,7 +9872,7 @@
    "spread": 11.5,
    "fav_team": "Fairfield",
    "dog_team": "NJIT",
-   "live_ml": -330
+   "live_ml": -220
   },
   "401920705": {
    "sport": "NCAAB",
