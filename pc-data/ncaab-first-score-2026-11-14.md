@@ -75,3 +75,10 @@
 - 2026-11-14: Binghamton Bearcats @ Duquesne Dukes — first: Binghamton Bearcats (2PT, 0:26 in); lead changes 1; final 58-71
 - 2026-11-14: Cincinnati Bearcats @ Dayton Flyers — first: Cincinnati Bearcats (2PT, 0:38 in); lead changes 0; final 95-72
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T22:41:58-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 621 games through 2026-11-14
+- 2026-11-14: Dillard Blue Devils @ Arkansas State Red Wolves — first: Arkansas State Red Wolves (2PT, 0:23 in); lead changes 2; final 65-99
+- 2026-11-14: Oklahoma City Okies @ Oral Roberts Golden Eagles — first: Oral Roberts Golden Eagles (FT, 0:31 in); lead changes 0; final 39-82
+- 2026-11-14: Louisiana Tech Bulldogs @ Nicholls Colonels — first: Nicholls Colonels (3PT, 0:18 in); lead changes 8; final 68-71
+- 2026-11-14: UC Davis Aggies @ Sacramento State Hornets — first: UC Davis Aggies (2PT, 0:48 in); lead changes 6; final 75-56
+- 2026-11-14: UL Monroe Warhawks @ Grand Canyon Lopes — first: Grand Canyon Lopes (3PT, 0:22 in); lead changes 0; final 52-88
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
