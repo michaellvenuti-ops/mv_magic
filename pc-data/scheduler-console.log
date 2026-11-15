@@ -8417,3 +8417,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 03:06:27 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 234 events (14 with odds), db total 284453 snapshots / 1050 events, feeds ok 6 fail 0
 [2026-11-15 03:06:28 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Quinnipiac Central Connecticut Today 12:00 PM — Total — Over 134 Bet365 +105 ($88) / Under 137.5 DraftKings -160 ($112) — both win 135, 136, 13
 [2026-11-15 03:06:28 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-15 03:21:40 ET] sync_to_github.py: FAILED (exit 1) in 912s —   FAILED: pc-data/prop-middles-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 0672702f3de9caae08633d1454c4e849be253f78 but expected b8c30cc95add532d5e6ce
+[2026-11-15 03:23:32 ET] dh_low_holds.py: OK in 112s — LOW-HOLDS: NCAAB High Point St. Louis Today 3:00 PM / table / Total Under 164.5 / Alt Total Over 164.5 / table | Bet365 | DraftKings
+[2026-11-15 03:25:45 ET] dh_game_middles.py: OK in 132s — GAME MIDDLE: NBA SA Spurs UTA Jazz Today 5:15 PM / table / Alt Total Under 225 / Alt Total Over 224.5 / table | Fanatics-NJ | Bally Bet — window 217.0 :: -115 $
+[2026-11-15 03:27:05 ET] hung_number.py: OK in 80s — HUNG NUMBER: South Carolina vs Arkansas — bet365 spread value favorite (-7.5 vs median -6.5)
+[2026-11-15 03:27:09 ET] rlm.py: OK in 4s
+[2026-11-15 03:27:12 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 03:27:15 ET] steam_side.py: OK in 2s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 03:27:15 ET] syncing to GitHub (regular 10-minute sync)
