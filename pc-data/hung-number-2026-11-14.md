@@ -1,55 +1,50 @@
-# Hung numbers — 2026-11-14 (scan 2026-11-14 19:00)
+# Hung numbers — 2026-11-14 (scan 2026-11-14 20:21)
 
 - Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Panthers vs Saints | bet365 | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Panthers vs Saints | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
-- Missouri vs Georgia | BetMGM | spread | value: dog | book 27.5 vs median 26.5 | div 1.0 
-- Missouri vs Georgia | FanDuel | spread | value: favorite | book 24.5 vs median 26.5 | div 2.0 
-- Missouri vs Georgia | BetMGM | total | value: Under | book 65.5 vs median 69.5 | div 4.0 
-- USC vs Indiana | DraftKings | spread | value: dog | book 14.5 vs median 13.5 | div 1.0 
-- USC vs Indiana | BetMGM | total | value: Under | book 33.5 vs median 40.5 | div 7.0 
-- Boston College vs Notre Dame | Caesars | spread | value: favorite | book 33.5 vs median 34.5 | div 1.0 
-- Boston College vs Notre Dame | BetMGM | total | value: Over | book 54.5 vs median 49.5 | div 5.0 
-- Jacksonville State vs Western Kentucky | DraftKings | spread | value: dog | book 3.5 vs median -2.5 | div 6.0 middle pairing spans key number 3
-- Jacksonville State vs Western Kentucky | BetMGM | total | value: Over | book 76.5 vs median 51.5 | div 25.0 
-- Jacksonville State vs Western Kentucky | BetMGM | moneyline Jacksonville State | value: Jacksonville State | book 0.8 vs median 11.6 | div 10.8 
-- Jacksonville State vs Western Kentucky | DraftKings | moneyline Jacksonville State | value: Jacksonville State | book 19.3 vs median 11.6 | div 7.7 
-- Jacksonville State vs Western Kentucky | Caesars | moneyline Jacksonville State | value: Jacksonville State | book 73.3 vs median 11.6 | div 61.8 
-- Jacksonville State vs Western Kentucky | FanDuel | moneyline Jacksonville State | value: Jacksonville State | book 3.8 vs median 11.6 | div 7.7 
-- Jacksonville State vs Western Kentucky | BetMGM | moneyline Western Kentucky | value: Western Kentucky | book 52.4 vs median 69.7 | div 17.3 
-- Jacksonville State vs Western Kentucky | DraftKings | moneyline Western Kentucky | value: Western Kentucky | book 87.0 vs median 69.7 | div 17.3 
-- Jacksonville State vs Western Kentucky | Caesars | moneyline Western Kentucky | value: Western Kentucky | book 33.3 vs median 69.7 | div 36.4 
-- Jacksonville State vs Western Kentucky | FanDuel | moneyline Western Kentucky | value: Western Kentucky | book 99.5 vs median 69.7 | div 29.8 
-- Fresno State vs Texas State | BetMGM | spread | value: dog | book 2.5 vs median 0.0 | div 2.5 
-- Fresno State vs Texas State | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Fresno State vs Texas State | Caesars | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
-- Fresno State vs Texas State | FanDuel | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
-- Fresno State vs Texas State | BetMGM | total | value: Over | book 83.5 vs median 79.5 | div 4.0 
-- Auburn vs Mississippi State | DraftKings | spread | value: favorite | book -34.5 vs median -33.5 | div 1.0 
-- Auburn vs Mississippi State | Caesars | spread | value: dog | book -30.5 vs median -33.5 | div 3.0 
-- Auburn vs Mississippi State | BetMGM | total | value: Under | book 54.5 vs median 60.5 | div 6.0 
-- Auburn vs Mississippi State | DraftKings | total | value: Over | book 62.5 vs median 60.5 | div 2.0 
-- Auburn vs Mississippi State | Caesars | total | value: Under | book 58.5 vs median 60.5 | div 2.0 
-- Auburn vs Mississippi State | FanDuel | total | value: Over | book 62.5 vs median 60.5 | div 2.0 
-- Tulane vs Rice | Caesars | moneyline Tulane | value: Tulane | book 32.3 vs median 37.3 | div 5.1 
-- Southern Miss vs Louisiana Tech | BetMGM | total | value: Over | book 81.5 vs median 78.5 | div 3.0 
-- Washington vs Michigan State | FanDuel | total | value: Over | book 50.5 vs median 49.0 | div 1.5 
-- Arizona State vs UCF | Caesars | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
-- Arizona State vs UCF | BetMGM | total | value: Under | book 41.5 vs median 43.0 | div 1.5 
-- Arizona State vs UCF | Caesars | total | value: Over | book 44.5 vs median 43.0 | div 1.5 
-- Oregon State vs Boise State | BetMGM | spread | value: favorite | book 12.5 vs median 16.0 | div 3.5 
-- Oregon State vs Boise State | DraftKings | spread | value: favorite | book 13.5 vs median 16.0 | div 2.5 
-- Oregon State vs Boise State | Caesars | spread | value: dog | book 19.5 vs median 16.0 | div 3.5 
-- Oregon State vs Boise State | FanDuel | spread | value: dog | book 18.5 vs median 16.0 | div 2.5 
-- Oregon State vs Boise State | BetMGM | total | value: Under | book 66.5 vs median 73.5 | div 7.0 
-- Appalachian State vs Marshall | Caesars | spread | value: favorite | book 4.5 vs median 7.0 | div 2.5 
-- Appalachian State vs Marshall | Caesars | total | value: Under | book 49.5 vs median 53.0 | div 3.5 
-- Appalachian State vs Marshall | Caesars | moneyline Appalachian State | value: Appalachian State | book 37.6 vs median 29.9 | div 7.7 
-- Appalachian State vs Marshall | Caesars | moneyline Marshall | value: Marshall | book 68.6 vs median 76.2 | div 7.7 
-- Florida vs Kentucky | BetMGM | spread | value: favorite | book 7.5 vs median 9.5 | div 2.0 
-- Florida vs Kentucky | BetMGM | total | value: Over | book 48.5 vs median 45.0 | div 3.5 
-- Baylor vs BYU | FanDuel | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
-- Purdue vs Iowa | FanDuel | spread | value: favorite | book 17.5 vs median 18.5 | div 1.0 
+- Southern Miss vs Louisiana Tech | FanDuel | spread | value: favorite | book 38.5 vs median 39.5 | div 1.0 
+- Southern Miss vs Louisiana Tech | BetMGM | total | value: Under | book 81.5 vs median 87.5 | div 6.0 
+- Southern Miss vs Louisiana Tech | Caesars | total | value: Over | book 93.5 vs median 87.5 | div 6.0 
+- Arizona State vs UCF | Caesars | spread | value: dog | book -10.5 vs median -13.5 | div 3.0 
+- Arizona State vs UCF | FanDuel | spread | value: favorite | book -14.5 vs median -13.5 | div 1.0 
+- Arizona State vs UCF | DraftKings | total | value: Over | book 40.5 vs median 39.0 | div 1.5 
+- Arizona State vs UCF | Caesars | total | value: Under | book 36.5 vs median 39.0 | div 2.5 
+- Oregon State vs Boise State | BetMGM | total | value: Under | book 83.5 vs median 85.0 | div 1.5 
+- Appalachian State vs Marshall | Caesars | spread | value: dog | book 3.5 vs median 2.5 | div 1.0 middle pairing spans key number 3
+- Appalachian State vs Marshall | Caesars | total | value: Over | book 45.5 vs median 43.5 | div 2.0 
+- Appalachian State vs Marshall | Caesars | moneyline Appalachian State | value: Appalachian State | book 35.3 vs median 41.3 | div 6.0 
+- Appalachian State vs Marshall | Caesars | moneyline Marshall | value: Marshall | book 71.0 vs median 65.5 | div 5.5 
+- Florida vs Kentucky | BetMGM | spread | value: dog | book 1.5 vs median 0.0 | div 1.5 
+- Florida vs Kentucky | DraftKings | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Florida vs Kentucky | Caesars | spread | value: dog | book 2.5 vs median 0.0 | div 2.5 
+- Florida vs Kentucky | FanDuel | spread | value: favorite | book -1.5 vs median 0.0 | div 1.5 
+- Florida vs Kentucky | FanDuel | total | value: Over | book 35.5 vs median 34.0 | div 1.5 
+- Florida vs Kentucky | DraftKings | moneyline Florida | value: Florida | book 58.2 vs median 53.0 | div 5.1 
+- Florida vs Kentucky | Caesars | moneyline Florida | value: Florida | book 45.2 vs median 53.0 | div 7.8 
+- Florida vs Kentucky | Caesars | moneyline Kentucky | value: Kentucky | book 60.6 vs median 53.0 | div 7.6 
+- Troy vs South Alabama | DraftKings | total | value: Under | book 54.5 vs median 56.5 | div 2.0 
+- San Jose State vs Air Force | DraftKings | total | value: Under | book 30.5 vs median 32.5 | div 2.0 
+- Minnesota vs Penn State | BetMGM | spread | value: favorite | book 27.5 vs median 29.0 | div 1.5 
+- Minnesota vs Penn State | Caesars | spread | value: dog | book 30.5 vs median 29.0 | div 1.5 
+- Louisville vs North Carolina | Caesars | total | value: Over | book 52.5 vs median 51.0 | div 1.5 
+- Baylor vs BYU | BetMGM | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
+- Baylor vs BYU | DraftKings | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
+- Baylor vs BYU | Caesars | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
+- Baylor vs BYU | FanDuel | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
+- Baylor vs BYU | FanDuel | total | value: Under | book 41.5 vs median 43.0 | div 1.5 
+- Florida Atlantic vs Tulsa | Caesars | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
+- Florida Atlantic vs Tulsa | FanDuel | spread | value: dog | book 18.5 vs median 17.5 | div 1.0 
+- Florida Atlantic vs Tulsa | Caesars | total | value: Under | book 63.5 vs median 65.5 | div 2.0 
+- Texas vs LSU | FanDuel | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
+- Stanford vs Virginia Tech | FanDuel | spread | value: dog | book 9.5 vs median 8.0 | div 1.5 
+- UNLV vs New Mexico | Caesars | spread | value: favorite | book 18.5 vs median 23.5 | div 5.0 
+- UNLV vs New Mexico | Caesars | total | value: Over | book 45.5 vs median 43.5 | div 2.0 
+- Purdue vs Iowa | Caesars | spread | value: dog | book 24.5 vs median 20.5 | div 4.0 
+- Purdue vs Iowa | Caesars | total | value: Over | book 44.5 vs median 41.5 | div 3.0 
+- South Carolina vs Arkansas | DraftKings | spread | value: dog | book -5.5 vs median -7.0 | div 1.5 
+- South Carolina vs Arkansas | BetMGM | total | value: Over | book 44.5 vs median 43.0 | div 1.5 
+- South Carolina vs Arkansas | FanDuel | total | value: Under | book 41.5 vs median 43.0 | div 1.5 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
@@ -57,10 +52,10 @@
 - Buffalo vs Ball State | Fanatics | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
 - Nebraska vs Rutgers | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Alabama vs Vanderbilt | Fanatics | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
-- Arkansas State vs Coastal Carolina | BetMGM | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
-- Arkansas State vs Coastal Carolina | Fanatics | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
 - East Carolina vs Charlotte | bet365 | spread | value: dog | book -11.5 vs median -12.5 | div 1.0 
 - East Carolina vs Charlotte | Fanatics | spread | value: dog | book -10.5 vs median -12.5 | div 2.0 
+- Arkansas State vs Coastal Carolina | BetMGM | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
+- Arkansas State vs Coastal Carolina | Fanatics | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
 - Kennesaw State vs Sam Houston | Fanatics | spread | value: dog | book -7.5 vs median -9.5 | div 2.0 
 - Kansas State vs TCU | Fanatics | total | value: Under | book 42.5 vs median 44.5 | div 2.0 
 - New Mexico State vs Missouri State | BetMGM | spread | value: favorite | book -1.0 vs median 1.5 | div 2.5 
@@ -70,5 +65,8 @@
 - Michigan vs Oregon | Hard Rock | spread | value: dog | book 14.5 vs median 10.0 | div 4.5 
 - Michigan vs Oregon | Hard Rock | moneyline Michigan | value: Michigan | book 18.2 vs median 24.4 | div 6.2 
 - Michigan vs Oregon | Hard Rock | moneyline Oregon | value: Oregon | book 86.7 vs median 80.0 | div 6.7 
-- Middle Tennessee vs Liberty | Fanatics | spread | value: favorite | book 21.0 vs median 22.5 | div 1.5 
 - California vs Virginia | bet365 | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Middle Tennessee vs Liberty | Fanatics | spread | value: favorite | book 21.0 vs median 22.5 | div 1.5 
+- USC vs Indiana | bet365 | spread | value: favorite | book 8.5 vs median 9.5 | div 1.0 
+- Fresno State vs Texas State | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Fresno State vs Texas State | Fanatics | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
