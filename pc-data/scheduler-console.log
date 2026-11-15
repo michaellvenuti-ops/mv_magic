@@ -8329,3 +8329,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-14 23:53:05 ET] dh_key_number_middles.py: OK in 195s — key-number-middles: 141 basketball rows excluded (football-only rule).
 [2026-11-14 23:56:31 ET] dh_basketball_key_middles.py: OK in 205s — basketball-key-middles: no new basketball middles.
 [2026-11-14 23:56:31 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 00:12:09 ET] sync_to_github.py: OK in 938s —   ok: team-total-middles-board-pc.html
+[2026-11-15 00:12:09 ET] notify.py: OK in 0s — notify: nothing new banked, no ping sent.
+[2026-11-15 00:13:45 ET] odds_recorder.py: OK in 66s — SUMMARY: recorded 234 events (14 with odds), db total 282815 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 00:13:46 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 00:14:50 ET] hung_number.py: OK in 64s — HUNG NUMBER: North Dakota State vs Hawai'i — Fanatics spread value favorite (-9.5 vs median -7.75)
+[2026-11-15 00:14:54 ET] rlm.py: OK in 4s
+[2026-11-15 00:14:57 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 00:16:58 ET] dh_game_middles.py: OK in 91s — GAME MIDDLE: CFL MTL Alouettes EDM Elks Today 6:00 PM / table / Receiving Yards A. Mack Under 76.5 / Alt Recv Yards A. Mack 75+ / table | FanDuel | Bally Bet — 
+[2026-11-15 00:17:02 ET] steam_side.py: OK in 4s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 00:18:35 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : CFL MTL Alouettes EDM Elks Today 6:00 PM / table / Receiving Yards T. Snead Under 76.5 / Alt Recv Yards T. Snead 75+ / table | FanDuel | Bal
+[2026-11-15 00:20:11 ET] odds_recorder.py: OK in 65s — SUMMARY: recorded 234 events (14 with odds), db total 283049 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 00:22:13 ET] dh_sog_middles.py: OK in 122s — - 0 deliverables this run
+[2026-11-15 00:22:19 ET] dh_team_total_middles.py: OK in 6s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Las Vegas 19.5/20.5 sits at -0.0c vs +EV
+[2026-11-15 00:22:20 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 136 total tallied.
+[2026-11-15 00:22:21 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 179 total tallied.
+[2026-11-15 00:22:22 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 315 total tallied.
+[2026-11-15 00:22:24 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 2 unverified, 624 total tallied.
+[2026-11-15 00:22:25 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 743 total tallied.
+[2026-11-15 00:22:27 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 364 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-15 00:22:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-15 00:22:29 ET] syncing to GitHub (regular 10-minute sync)
