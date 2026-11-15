@@ -3,3 +3,5 @@
 ## 2026-11-14T01:13:33-05:00 -- NBA FIRST SCORE (PC): 2 new final(s) tallied; season 175 games through 2026-11-13
 - 2026-11-13: Portland Trail Blazers @ Sacramento Kings — first: Portland Trail Blazers (3PT, 1:32 in); lead changes 4; final 120-107
 - 2026-11-13: Oklahoma City Thunder @ LA Clippers — first: LA Clippers (3PT, 0:25 in); lead changes 6; final 112-113
+## 2026-11-14T21:51:29-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 176 games through 2026-11-14
+- 2026-11-14: Denver Nuggets @ New Orleans Pelicans — first: New Orleans Pelicans (3PT, 0:59 in); lead changes 1; final 116-108
