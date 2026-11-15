@@ -8,3 +8,5 @@
 ## 2026-11-15T06:19:47-05:00 — 81 games, 0 leads credited, 55 started games skipped
 ## 2026-11-15T07:39:54-05:00 — pack move, never credited: Panthers @ Saints | 2026-11-15 spread (BetMGM, bet365)
 ## 2026-11-15T07:39:55-05:00 — 81 games, 0 leads credited, 55 started games skipped
+## 2026-11-15T09:15:18-05:00 — no-follow: Kalshi 49ers @ Cowboys | 2026-11-15 spread (only 1 followed)
+## 2026-11-15T09:15:18-05:00 — 81 games, 0 leads credited, 55 started games skipped
