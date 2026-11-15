@@ -1,31 +1,40 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 15:10)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 16:36)
 
-- Panthers vs Saints | DraftKings | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
-- Panthers vs Saints | Caesars | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
-- Panthers vs Saints | FanDuel | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
-- Panthers vs Saints | Hard Rock | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
-- Panthers vs Saints | DraftKings | total | value: Over | book 30.5 vs median 28.5 | div 2.0 
-- Panthers vs Saints | Hard Rock | total | value: Over | book 30.5 vs median 28.5 | div 2.0 
-- Panthers vs Saints | DraftKings | moneyline Panthers | value: Panthers | book 68.8 vs median 75.0 | div 6.2 
-- Panthers vs Saints | DraftKings | moneyline Saints | value: Saints | book 38.0 vs median 31.2 | div 6.8 
-- Chiefs vs Falcons | BetMGM | spread | value: favorite | book -11.5 vs median -10.5 | div 1.0 
-- Chiefs vs Falcons | DraftKings | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
-- Chiefs vs Falcons | FanDuel | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
-- Chiefs vs Falcons | Hard Rock | spread | value: favorite | book -11.5 vs median -10.5 | div 1.0 
-- Chiefs vs Falcons | BetMGM | total | value: Under | book 34.5 vs median 36.5 | div 2.0 
-- Dolphins vs Colts | Hard Rock | spread | value: favorite | book 2.5 vs median 13.5 | div 11.0 middle pairing spans key number 7
-- Dolphins vs Colts | BetMGM | total | value: Under | book 41.5 vs median 47.5 | div 6.0 
-- Dolphins vs Colts | Hard Rock | total | value: Under | book 37.5 vs median 47.5 | div 10.0 
-- Dolphins vs Colts | Hard Rock | moneyline Colts | value: Colts | book 60.0 vs median 96.2 | div 36.2 
-- Dolphins vs Colts | Hard Rock | moneyline Dolphins | value: Dolphins | book 46.5 vs median 9.5 | div 37.0 
-- Texans vs Browns | DraftKings | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
-- Texans vs Browns | FanDuel | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
-- Texans vs Browns | Hard Rock | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
-- Texans vs Browns | DraftKings | moneyline Browns | value: Browns | book 26.8 vs median 21.3 | div 5.5 
-- Texans vs Browns | DraftKings | moneyline Texans | value: Texans | book 79.6 vs median 84.8 | div 5.2 
-- Vikings vs Packers | BetMGM | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
-- Vikings vs Packers | FanDuel | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
-- Jaguars vs Titans | BetMGM | total | value: Under | book 47.5 vs median 49.5 | div 2.0 
+- Panthers vs Saints | BetMGM | spread | value: dog | book 3.5 vs median -2.5 | div 6.0 middle pairing spans key number 3
+- Panthers vs Saints | Hard Rock | spread | value: dog | book 3.5 vs median -2.5 | div 6.0 middle pairing spans key number 3
+- Panthers vs Saints | FanDuel | total | value: Under | book 24.5 vs median 31.5 | div 7.0 
+- Panthers vs Saints | Hard Rock | total | value: Under | book 25.5 vs median 31.5 | div 6.0 
+- Panthers vs Saints | DraftKings | moneyline Panthers | value: Panthers | book 60.3 vs median 66.0 | div 5.7 
+- Panthers vs Saints | Hard Rock | moneyline Panthers | value: Panthers | book 36.4 vs median 66.0 | div 29.6 
+- Panthers vs Saints | DraftKings | moneyline Saints | value: Saints | book 46.3 vs median 40.0 | div 6.3 
+- Panthers vs Saints | Hard Rock | moneyline Saints | value: Saints | book 70.6 vs median 40.0 | div 30.6 
+- Bills vs Jets | BetMGM | moneyline Bills | value: Bills | book 92.3 vs median 98.0 | div 5.7 
+- Chiefs vs Falcons | BetMGM | spread | value: dog | book -19.5 vs median -22.5 | div 3.0 
+- Chiefs vs Falcons | Hard Rock | spread | value: dog | book -21.5 vs median -22.5 | div 1.0 
+- Chiefs vs Falcons | BetMGM | total | value: Under | book 36.5 vs median 47.0 | div 10.5 
+- Chiefs vs Falcons | DraftKings | total | value: Over | book 50.5 vs median 47.0 | div 3.5 
+- Chiefs vs Falcons | Caesars | total | value: Over | book 48.5 vs median 47.0 | div 1.5 
+- Chiefs vs Falcons | FanDuel | total | value: Under | book 44.5 vs median 47.0 | div 2.5 
+- Chiefs vs Falcons | Caesars | moneyline Falcons | value: Falcons | book 7.7 vs median 2.0 | div 5.7 
+- Dolphins vs Colts | DraftKings | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Dolphins vs Colts | Caesars | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Dolphins vs Colts | BetMGM | total | value: Under | book 47.5 vs median 49.5 | div 2.0 
+- Dolphins vs Colts | FanDuel | total | value: Over | book 51.5 vs median 49.5 | div 2.0 
+- Dolphins vs Colts | Hard Rock | total | value: Over | book 52.5 vs median 49.5 | div 3.0 
+- Dolphins vs Colts | DraftKings | moneyline Dolphins | value: Dolphins | book 40.8 vs median 34.5 | div 6.3 
+- Texans vs Browns | BetMGM | total | value: Over | book 52.5 vs median 44.5 | div 8.0 
+- Texans vs Browns | Hard Rock | total | value: Under | book 41.0 vs median 44.5 | div 3.5 
+- Texans vs Browns | Hard Rock | moneyline Browns | value: Browns | book 26.7 vs median 18.2 | div 8.5 
+- Texans vs Browns | Hard Rock | moneyline Texans | value: Texans | book 80.0 vs median 88.5 | div 8.5 
+- Vikings vs Packers | FanDuel | spread | value: dog | book -19.5 vs median -20.5 | div 1.0 
+- Vikings vs Packers | Hard Rock | spread | value: dog | book -19.5 vs median -20.5 | div 1.0 
+- Vikings vs Packers | Hard Rock | total | value: Under | book 39.0 vs median 40.5 | div 1.5 
+- Vikings vs Packers | Caesars | moneyline Packers | value: Packers | book 11.8 vs median 2.4 | div 9.3 
+- Vikings vs Packers | BetMGM | moneyline Vikings | value: Vikings | book 90.0 vs median 96.8 | div 6.8 
+- Jaguars vs Titans | BetMGM | spread | value: dog | book -9.5 vs median -10.5 | div 1.0 
+- Jaguars vs Titans | Hard Rock | spread | value: dog | book -8.5 vs median -10.5 | div 2.0 
+- Jaguars vs Titans | BetMGM | total | value: Under | book 52.5 vs median 59.5 | div 7.0 
+- Jaguars vs Titans | Hard Rock | total | value: Under | book 46.0 vs median 59.5 | div 13.5 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
