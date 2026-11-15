@@ -51,3 +51,12 @@
 - 2026-11-14: Morgan State Bears @ Loyola Maryland Greyhounds — first: Morgan State Bears (2PT, 0:16 in); lead changes 10; final 63-61
 - 2026-11-14: Lincoln (CA) Oaklanders @ Weber State Wildcats — first: Lincoln (CA) Oaklanders (3PT, 0:44 in); lead changes 1; final 57-80
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-14T21:01:11-05:00 -- NCAAB FIRST SCORE (PC): 7 new final(s) tallied; season 603 games through 2026-11-14
+- 2026-11-14: UAB Blazers @ Jacksonville State Gamecocks — first: UAB Blazers (2PT, 1:43 in); lead changes 11; final 68-71
+- 2026-11-14: UC Riverside Highlanders @ Fresno State Bulldogs — first: Fresno State Bulldogs (2PT, 0:42 in); lead changes 0; final 80-89
+- 2026-11-14: South Alabama Jaguars @ North Texas Mean Green — first: North Texas Mean Green (2PT, 0:13 in); lead changes 8; final 65-66
+- 2026-11-14: Southern New Orleans Knights @ LSU New Orleans Privateers — first: Southern New Orleans Knights (2PT, 0:59 in); lead changes 3; final 82-98
+- 2026-11-14: Colorado Buffaloes @ Providence Friars — first: Colorado Buffaloes (3PT, 1:01 in); lead changes 1; final 53-67
+- 2026-11-14: Pennsylvania Quakers @ Saint Joseph's Hawks — first: Saint Joseph's Hawks (3PT, 1:00 in); lead changes 6; final 77-83
+- 2026-11-14: Earlham Quakers @ Indiana State Sycamores — first: Indiana State Sycamores (2PT, 1:03 in); lead changes 0; final 37-109
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
