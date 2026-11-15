@@ -8491,3 +8491,9 @@
 [2026-11-15 07:44:00 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 07:44:02 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-15 07:44:02 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 08:00:01 ET] sync_to_github.py: FAILED (exit 1) in 958s —   FAILED: pc-data/nhl-first-goal-sequences.csv (HTTP 409: {'error': '{"message":"is at 134ecde60a8e0a811d8a9fc6b5f3d009a2eeaa34 but expected fa35410e6f7ca9d68a8
+[2026-11-15 08:03:23 ET] odds_recorder.py: OK in 172s — SUMMARY: recorded 234 events (14 with odds), db total 286325 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 08:07:51 ET] dh_arbitrage.py: OK in 268s — ARBITRAGE: NFL NE Patriots DET Lions Today 9:30 AM / table / Receiving Yards R. Stevenson Under 19.5 / Alt Recv Yards R. Stevenson 20+ / table | BetMGM | Bally 
+[2026-11-15 08:09:11 ET] dh_kalshi_poly_arb.py: OK in 80s — KALSHI-POLY-ARB: NFL NE Patriots DET Lions Today 9:30 AM / table bar_chart / Touchdowns E. Raridon 1+ NO / Touchdowns E. Raridon Over 0.5 / table | Polymarket U
+[2026-11-15 08:09:12 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL NE Patriots DET Lions Today 9:30 AM — Rush Attempts R. Stevenson — Over 7.5 Bally Bet -106 ($103) / Under 11.5 theScore +105 ($97) — both win 8, 
+[2026-11-15 08:09:13 ET] syncing to GitHub (wide-builds banked new builds)
