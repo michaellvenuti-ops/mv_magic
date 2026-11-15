@@ -1,7 +1,7 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 07:38)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 09:13)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
-- Dolphins vs Colts | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
+- 49ers vs Cowboys | Fanatics | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
