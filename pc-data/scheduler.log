@@ -8465,3 +8465,9 @@
 [2026-11-15 06:50:33 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 06:50:34 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-15 06:50:34 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 07:06:35 ET] sync_to_github.py: FAILED (exit 1) in 961s —   FAILED: pc-data/key-number-middles-2026-11-07.md (HTTP 409: {'error': '{"message":"is at d83d61e944b4c422610311cccc924cd0de3fff34 but expected 4866da8a766669e
+[2026-11-15 07:08:15 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 234 events (14 with odds), db total 285857 snapshots / 1050 events, feeds ok 6 fail 0
+[2026-11-15 07:08:15 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 07:10:34 ET] dh_game_middles.py: OK in 138s — GAME MIDDLE: NCAAB Chicago St. Loyola Marymount Today 4:00 PM / table / Spread Chicago St. +18 / Spread Loyola Marymount -17.5 / table | Fanatics-NJ | theScore 
+[2026-11-15 07:10:40 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 07:10:40 ET] syncing to GitHub (regular 10-minute sync)
