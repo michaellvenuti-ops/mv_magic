@@ -4780,7 +4780,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Oklahoma",
-   "dog_team": "Ole Miss"
+   "dog_team": "Ole Miss",
+   "final": true
   },
   "401858521": {
    "sport": "CFB",
@@ -7303,7 +7304,8 @@
    "fav": "away",
    "spread": 3.0,
    "fav_team": "Chiefs",
-   "dog_team": "Falcons"
+   "dog_team": "Falcons",
+   "final": true
   },
   "401873056": {
    "sport": "NFL",
@@ -7313,7 +7315,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Texans",
-   "dog_team": "Browns"
+   "dog_team": "Browns",
+   "final": true
   },
   "401873060": {
    "sport": "NFL",
@@ -7323,7 +7326,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Packers",
-   "dog_team": "Vikings"
+   "dog_team": "Vikings",
+   "final": true
   },
   "401873057": {
    "sport": "NFL",
@@ -7333,7 +7337,8 @@
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Jaguars",
-   "dog_team": "Titans"
+   "dog_team": "Titans",
+   "final": true
   },
   "401873059": {
    "sport": "NFL",
@@ -7353,7 +7358,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Panthers",
-   "dog_team": "Saints"
+   "dog_team": "Saints",
+   "final": true
   },
   "401873054": {
    "sport": "NFL",
@@ -7363,7 +7369,8 @@
    "fav": "away",
    "spread": 8.5,
    "fav_team": "Bills",
-   "dog_team": "Jets"
+   "dog_team": "Jets",
+   "final": true
   },
   "401873062": {
    "sport": "NFL",
@@ -10433,7 +10440,8 @@
    "fav": "home",
    "spread": 26.5,
    "fav_team": "Michigan",
-   "dog_team": "William & Mary"
+   "dog_team": "William & Mary",
+   "final": true
   },
   "401928825": {
    "sport": "NCAAB",
@@ -10460,7 +10468,8 @@
    "alert_fav_score": 5,
    "alert_dog_score": 6,
    "alert_ml": -2500,
-   "ml_read_at": "2026-11-15T14:06:17"
+   "ml_read_at": "2026-11-15T14:06:17",
+   "final": true
   },
   "401925812": {
    "sport": "NCAAB",
@@ -10470,7 +10479,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "La Salle",
-   "dog_team": "Temple"
+   "dog_team": "Temple",
+   "final": true
   },
   "401924744": {
    "sport": "NCAAB",
@@ -10487,7 +10497,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "UAlbany",
-   "dog_team": "Holy Cross"
+   "dog_team": "Holy Cross",
+   "final": true
   },
   "401920136": {
    "sport": "NCAAB",
@@ -10497,7 +10508,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "N Dakota St",
-   "dog_team": "Bakersfield"
+   "dog_team": "Bakersfield",
+   "final": true
   },
   "401920065": {
    "sport": "NCAAB",
@@ -10601,11 +10613,21 @@
    "sport": "NCAAB",
    "matchup": "Mercyhurst at James Madison",
    "date": "2026-11-15",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "James Madison",
-   "dog_team": "Mercyhurst"
+   "dog_team": "Mercyhurst",
+   "live_ml": -660,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-15T16:10:03",
+   "board_read_at": "2026-11-15T16:10:02",
+   "alert_expires_at": "2026-11-15T16:13:03",
+   "alert_detail": "15:01 - 1st Half",
+   "alert_fav_score": 8,
+   "alert_dog_score": 9,
+   "alert_ml": -660,
+   "ml_read_at": "2026-11-15T16:10:03"
   },
   "401917531": {
    "sport": "NCAAB",
@@ -10639,7 +10661,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 6.5,
+   "spread": 7.5,
    "fav_team": "W Michigan",
    "dog_team": "S Indiana"
   },
@@ -10649,7 +10671,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 24.5,
+   "spread": 23.5,
    "fav_team": "Penn State",
    "dog_team": "New Haven"
   },
