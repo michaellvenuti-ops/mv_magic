@@ -10254,7 +10254,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "away",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Spurs",
    "dog_team": "Jazz"
   },
@@ -10264,7 +10264,7 @@
    "date": "2026-11-15",
    "alerted": false,
    "fav": "home",
-   "spread": 13.5,
+   "spread": 14.5,
    "fav_team": "Celtics",
    "dog_team": "Mavericks"
   },
@@ -10398,11 +10398,21 @@
    "sport": "NCAAB",
    "matchup": "New Hampshire at Boston College",
    "date": "2026-11-15",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Boston College",
-   "dog_team": "New Hampshire"
+   "dog_team": "New Hampshire",
+   "live_ml": -2800,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-15T13:34:03",
+   "board_read_at": "2026-11-15T13:34:02",
+   "alert_expires_at": "2026-11-15T13:37:03",
+   "alert_detail": "17:59 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 5,
+   "alert_ml": -2800,
+   "ml_read_at": "2026-11-15T13:34:03"
   },
   "401918453": {
    "sport": "NCAAB",
