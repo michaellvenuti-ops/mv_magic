@@ -30,3 +30,6 @@ KEY 6: NCAAF 2 Utah TCU Nov-21 9:00 PM / table / Spread Utah -5.5 / Spread TCU +
 KEY 10: NCAAF Ball St. Ohio Nov-17 7:00 PM / table / Alt Spread Ohio -9 / Alt Spread Ball St. +10 / table | Bally Bet | Fanatics-NJ margins [9, 10] :: -121 $1,000 Bally Bet, Bally Bet, -121 / +105 $891 Fanatics-NJ, Fanatics-NJ, +105
 KEY 10: NCAAF Ball St. Ohio Nov-17 7:00 PM / table / Alt Spread Ohio -9 / Alt Spread Ball St. +10 / table | BetRivers | Fanatics-NJ margins [9, 10] :: -122 $1,000 BetRivers, BetRivers, -122 / +105 $888 Fanatics-NJ, Fanatics-NJ, +105
 KEY 6: NCAAF 2 Utah TCU Nov-21 9:00 PM / table / Spread Utah -5.5 / Spread TCU +6.5 / table | theScore | BetMGM margins [6] :: -115 $1,000 theScore, theScore, -115 / -102 $944 BetMGM, BetMGM, -102
+## 2026-11-16T05:05:05-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1987 + 0 rows parsed, qualifying only below — 0 NEW middles
+KEY 10: NCAAF Ball St. Ohio Nov-17 7:00 PM / table / Alt Spread Ohio -9 / Alt Spread Ball St. +10 / table | Bally Bet | Fanatics-NJ margins [9, 10] :: -121 $1,000 Bally Bet, Bally Bet, -121 / +105 $891 Fanatics-NJ, Fanatics-NJ, +105
+KEY 10: NCAAF Ball St. Ohio Nov-17 7:00 PM / table / Alt Spread Ohio -9 / Alt Spread Ball St. +10 / table | BetRivers | Fanatics-NJ margins [9, 10] :: -122 $1,000 BetRivers, BetRivers, -122 / +105 $888 Fanatics-NJ, Fanatics-NJ, +105
