@@ -8780,18 +8780,18 @@
    "winner": "Pacific Tigers"
   },
   {
-   "date": "2026-11-15",
    "away": "Alabama State Hornets",
-   "home": "San Jos\u00e9 State Spartans",
+   "date": "2026-11-15",
+   "final": "68-80",
    "first": "Alabama State Hornets",
-   "first_side": "away",
-   "first_kind": "3PT",
    "first_elapsed_sec": 48,
-   "winner": "San Jos\u00e9 State Spartans",
-   "seq": "3-0>5-0>5-3>5-5>7-5>9-5>9-7>9-8>9-9>9-10>9-11>9-13>9-14>11-14>13-14>13-16>16-16>17-16>18-16>21-16>21-18>23-18>23-20>25-20>25-21>25-23>25-24>25-25>25-26>25-28>27-28>27-29>27-32>29-32>29-35>29-37>29-39>32-39>32-42>32-45>34-45>34-46>34-47>36-47>39-47>39-48>42-48>42-50>42-52>45-52>45-54>45-55>48-55>48-58>48-60>48-62>49-62>50-62>50-65>53-65>55-65>55-67>57-67>57-68>57-69>59-69>59-71>59-70>61-71>61-73>64-73>64-76>66-76>66-78>66-80>68-80",
+   "first_kind": "3PT",
+   "first_side": "away",
+   "home": "San Jos\u00e9 State Spartans",
    "lead_changes": 3,
+   "seq": "3-0>5-0>5-3>5-5>7-5>9-5>9-7>9-8>9-9>9-10>9-11>9-13>9-14>11-14>13-14>13-16>16-16>17-16>18-16>21-16>21-18>23-18>23-20>25-20>25-21>25-23>25-24>25-25>25-26>25-28>27-28>27-29>27-32>29-32>29-35>29-37>29-39>32-39>32-42>32-45>34-45>34-46>34-47>36-47>39-47>39-48>42-48>42-50>42-52>45-52>45-54>45-55>48-55>48-58>48-60>48-62>49-62>50-62>50-65>53-65>55-65>55-67>57-67>57-68>57-69>59-69>59-71>59-70>61-71>61-73>64-73>64-76>66-76>66-78>66-80>68-80",
    "ties": 4,
-   "final": "68-80"
+   "winner": "San Jos\u00e9 State Spartans"
   },
   {
    "away": "Arkansas-Pine Bluff Golden Lions",
@@ -9226,6 +9226,20 @@
    "seq": "2-0>2-3>4-3>6-3>6-5>8-5>10-5>10-6>10-7>10-9>11-9>11-11>14-11>14-12>14-15>16-15>18-15>18-18>18-20>18-22>18-24>18-26>19-26>20-26>21-26>21-27>21-28>23-28>25-28>27-28>27-30>27-32>27-34>27-36>29-36>29-39>29-42>29-44>31-44>33-44>33-47>33-49>34-49>34-51>37-51>37-53>37-54>37-55>37-56>39-56>39-58>41-58>41-60>41-62>43-62>43-65>45-65>45-68>45-70>46-70>47-70>47-71>47-72>50-72>52-72>52-73>52-74>52-75>54-75>54-76>54-78>55-78>56-78>56-79>57-79>58-79>58-80>58-81>60-81>60-83>63-83>65-83>65-84>65-85>66-85>66-88>66-90",
    "ties": 2,
    "winner": "Charleston Cougars"
+  },
+  {
+   "date": "2026-11-15",
+   "away": "Stillman Tigers",
+   "home": "Bethune-Cookman Wildcats",
+   "first": "Bethune-Cookman Wildcats",
+   "first_side": "home",
+   "first_kind": "2PT",
+   "first_elapsed_sec": 15,
+   "winner": "Bethune-Cookman Wildcats",
+   "seq": "0-2>0-4>2-4>2-6>2-8>2-10>4-10>4-13>4-16>7-16>9-16>9-19>9-20>9-21>12-21>13-21>13-23>16-23>16-26>16-28>18-28>18-31>20-31>20-32>21-32>23-32>23-34>25-34>25-36>25-37>25-39>27-39>27-42>29-42>29-44>29-45>29-46>31-46>31-48>31-49>33-49>35-49>37-49>37-51>37-53>38-53>39-53>39-56>40-56>40-58>42-58>44-58>44-60>45-60>46-60>48-60>49-60>49-63>51-63>51-64>51-65>53-65>53-67>53-69>54-69>54-72>54-74>54-76>56-76>56-78>59-78>59-79>59-81>61-81>61-84>63-84>64-84>64-85>64-86>64-88",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "64-88"
   },
   {
    "away": "Syracuse Orange",
@@ -11134,20 +11148,20 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Bethune-Cookman Wildcats": {
-   "gp": 3,
-   "scored_first": 0,
+   "gp": 4,
+   "scored_first": 1,
    "kinds": {
     "3PT": 0,
-    "2PT": 0,
+    "2PT": 1,
     "FT": 0
    },
-   "won_when_first": 0,
+   "won_when_first": 1,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 0.0,
-   "win_pct_when_first": null,
+   "scored_first_pct": 25.0,
+   "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 0.0,
-   "won_by_one_when_first_pct": null
+   "won_by_one_when_first_pct": 0.0
   },
   "Texas Tech Red Raiders": {
    "gp": 3,
@@ -17165,6 +17179,22 @@
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": null
   },
+  "Stillman Tigers": {
+   "gp": 1,
+   "scored_first": 0,
+   "kinds": {
+    "3PT": 0,
+    "2PT": 0,
+    "FT": 0
+   },
+   "won_when_first": 0,
+   "won_when_not_first": 0,
+   "won_by_one_when_first": 0,
+   "scored_first_pct": 0.0,
+   "win_pct_when_first": null,
+   "win_pct_when_not_first": 0.0,
+   "won_by_one_when_first_pct": null
+  },
   "UC Merced Bobcats": {
    "gp": 1,
    "scored_first": 0,
@@ -17199,20 +17229,20 @@
   }
  },
  "league": {
-  "games": 667,
-  "home_scored_first": 404,
-  "first_team_won": 423,
+  "games": 668,
+  "home_scored_first": 405,
+  "first_team_won": 424,
   "first_team_won_by_one": 4,
   "first_team_won_by_one_pct": 0.6,
   "kinds": {
    "3PT": 189,
-   "2PT": 398,
+   "2PT": 399,
    "FT": 80
   },
   "avg_lead_changes": 3.5,
   "median_first_score_sec": 31,
   "home_scored_first_pct": 60.6,
-  "first_team_win_pct": 63.4
+  "first_team_win_pct": 63.5
  },
  "lead_change_team_avgs": {
   "Alabama State Hornets": {
@@ -17776,9 +17806,9 @@
    "avg_per_game": 5.67
   },
   "Bethune-Cookman Wildcats": {
-   "games": 3,
+   "games": 4,
    "lead_changes": 12,
-   "avg_per_game": 4.0
+   "avg_per_game": 3.0
   },
   "Texas Tech Red Raiders": {
    "games": 3,
@@ -19656,6 +19686,11 @@
    "avg_per_game": 0.0
   },
   "Emmanuel (MA) Lions": {
+   "games": 1,
+   "lead_changes": 0,
+   "avg_per_game": 0.0
+  },
+  "Stillman Tigers": {
    "games": 1,
    "lead_changes": 0,
    "avg_per_game": 0.0
