@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-16 (scan 2026-11-16 10:55)
+# Hung numbers — 2026-11-16 (scan 2026-11-16 12:28)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Fanatics | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
@@ -12,6 +12,6 @@
 - Steelers vs Bengals | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Steelers vs Bengals | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Bowling Green vs Toledo | DraftKings | spread | value: dog | book 16.5 vs median 15.5 | div 1.0 
-- Northwestern vs Minnesota | Fanatics | total | value: Over | book 43.5 vs median 42.0 | div 1.5 
 - Old Dominion vs UConn | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Georgia State vs Marshall | FanDuel | total | value: Over | book 59.5 vs median 57.75 | div 1.75 
+- Georgia Southern vs Troy | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
