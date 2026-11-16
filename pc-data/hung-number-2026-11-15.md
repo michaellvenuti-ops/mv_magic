@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 19:58)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 21:36)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Fanatics | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
