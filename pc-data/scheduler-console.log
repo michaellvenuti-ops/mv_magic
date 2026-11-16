@@ -9310,3 +9310,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 14:02:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 14:02:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-16 14:02:29 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 14:23:10 ET] sync_to_github.py: FAILED (exit 1) in 1240s —   FAILED: pc-data/nba-finals-2026-11-04.json (HTTP 409: {'error': '{"message":"is at bc94b80acf5470aaf17361179ca1e3693d64176e but expected a583827bfd7570a48dc2a
+[2026-11-16 14:24:51 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 191 events (98 with odds), db total 297168 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 14:25:44 ET] dh_arbitrage.py: OK in 52s — ARBITRAGE: WTA Colina 107 L. Samson 230 D. Papamichail Nov-17 8:00 AM / table / Total Match Games Over 17.5 / Alt Total Match Games Under 17.5 / table | DraftKi
+[2026-11-16 14:26:12 ET] dh_kalshi_poly_arb.py: OK in 29s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 14:26:14 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Bowling Green Toledo Nov-20 7:30 PM — Total — Over 47.5 HardRock -110 ($95) / Under 51 Fanatics-NJ -140 ($105) — both win 48, 49, 50 — push at 
+[2026-11-16 14:26:15 ET] syncing to GitHub (wide-builds banked new builds)
