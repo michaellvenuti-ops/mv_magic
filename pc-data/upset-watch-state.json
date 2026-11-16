@@ -12011,23 +12011,35 @@
    "sport": "NCAAB",
    "matchup": "Fisk at North Alabama",
    "date": "2026-11-16",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911211": {
    "sport": "NCAAB",
    "matchup": "Ferrum at G Washington",
    "date": "2026-11-16",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929419": {
    "sport": "NCAAB",
    "matchup": "Florida A&M at UTEP",
    "date": "2026-11-16",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 20.5,
    "fav_team": "UTEP",
-   "dog_team": "Florida A&M"
+   "dog_team": "Florida A&M",
+   "live_ml": -4000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-16T14:10:03",
+   "board_read_at": "2026-11-16T14:10:02",
+   "alert_expires_at": "2026-11-16T14:13:03",
+   "alert_detail": "17:17 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 5,
+   "alert_ml": -4000,
+   "ml_read_at": "2026-11-16T14:10:02"
   },
   "401921087": {
    "sport": "NCAAB",
@@ -12045,7 +12057,7 @@
    "date": "2026-11-16",
    "alerted": false,
    "fav": "home",
-   "spread": 35.5,
+   "spread": 34.5,
    "fav_team": "Maryland",
    "dog_team": "Alcorn St"
   },
@@ -12075,7 +12087,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 9.5,
    "fav_team": "Kent State",
    "dog_team": "E Kentucky"
   },
@@ -12143,7 +12155,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "home",
-   "spread": 21.5,
+   "spread": 22.5,
    "fav_team": "Georgia",
    "dog_team": "Jacksonville"
   },
@@ -12231,7 +12243,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "home",
-   "spread": 34.5,
+   "spread": 33.5,
    "fav_team": "Texas A&M",
    "dog_team": "SE Louisiana"
   },
