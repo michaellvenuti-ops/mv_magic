@@ -7,3 +7,11 @@
 NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — bet365 still dealing spread 8.5 on Miami (OH) (pre-move median 8.5, now 9.5)
 NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — FanDuel still dealing spread 8.5 on Miami (OH) (pre-move median 8.5, now 9.5)
 ## 2026-11-16T08:59:20-05:00 — 66 games, 0 steam events, 0 NEW flags
+## 2026-11-16T10:27:27-05:00 — 66 games, 6 steam events, 7 NEW flags
+NEW FLAG: FBS East Carolina @ Army | 2026-11-16 — Kalshi still dealing spread -4.5 on Army (pre-move median -4.5, now -5.5)
+NEW FLAG: FBS Middle Tennessee @ Sam Houston | 2026-11-16 — FanDuel still dealing spread 6.5 on Sam Houston (pre-move median 6.5, now 5.5)
+NEW FLAG: FBS Middle Tennessee @ Sam Houston | 2026-11-16 — Kalshi still dealing spread 6.5 on Sam Houston (pre-move median 6.5, now 5.5)
+NEW FLAG: FBS UCLA @ Michigan | 2026-11-16 — Fanatics still dealing spread 5.0 on Michigan (pre-move median 5.0, now 3.5)
+NEW FLAG: FBS Colorado State @ Fresno State | 2026-11-16 — Fanatics still dealing spread -21.5 on Colorado State (pre-move median -21.5, now -20.5)
+NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Fanatics still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
+NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Kalshi still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
