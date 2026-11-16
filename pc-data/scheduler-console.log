@@ -9117,3 +9117,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 06:12:05 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 206 events (67 with odds), db total 294977 snapshots / 1238 events, feeds ok 6 fail 0
 [2026-11-16 06:12:06 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHI 76ers BKN Nets Today 7:45 PM — Total — Over 223 Fanatics-NJ -125 ($101) / Under 226.5 FanDuel -118 ($99) — both win 224, 225, 226 — push at 2
 [2026-11-16 06:12:06 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 06:31:57 ET] sync_to_github.py: FAILED (exit 1) in 1191s —   FAILED: pc-data/totals-2026-11-10.md (HTTP 409: {'error': '{"message":"is at e04c065e8dc0675b8fed1c7fbeea16085258da5c but expected c244604fd33a45e09af4010cd71
+[2026-11-16 06:34:21 ET] dh_low_holds.py: OK in 145s — LOW-HOLDS: NCAAF Akron UMass Nov-18 7:00 PM / table / 1st Quarter Total Over 7.5 / 1st Quarter Total Under 9.5 / table | Fanatics-NJ | FanDuel
+[2026-11-16 06:35:57 ET] dh_game_middles.py: OK in 95s — GAME MIDDLE: NBA POR Trail Blazers MIN Timberwolves Today 8:15 PM / table / Alt Total Over 225.5 / Alt Total Under 226 / table bar_chart | theScore | ProphetX —
+[2026-11-16 06:37:17 ET] hung_number.py: OK in 80s — HUNG NUMBER: San Diego State vs Boise State — FanDuel spread value dog (17.5 vs median 16.5)
+[2026-11-16 06:37:22 ET] rlm.py: OK in 5s
+[2026-11-16 06:37:26 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 06:39:10 ET] dh_prop_middles.py: OK in 104s — prop-middles: no new/changed qualifying middles.
+[2026-11-16 06:41:21 ET] dh_sog_middles.py: OK in 131s — - 0 deliverables this run
+[2026-11-16 06:41:28 ET] dh_team_total_middles.py: OK in 7s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Baltimore 17.5/20.5 sits at -4.9c vs +EV.
+[2026-11-16 06:41:30 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 06:41:31 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 06:41:32 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 06:41:34 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 668 total tallied.
+[2026-11-16 06:41:35 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 06:41:36 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 06:41:37 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-16 06:41:37 ET] syncing to GitHub (regular 10-minute sync)
