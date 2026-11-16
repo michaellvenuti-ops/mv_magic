@@ -16,3 +16,8 @@ NEW FLAG: FBS Colorado State @ Fresno State | 2026-11-16 — Fanatics still deal
 NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Fanatics still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
 NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Kalshi still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
 ## 2026-11-16T11:38:42-05:00 — 66 games, 0 steam events, 0 NEW flags
+## 2026-11-16T13:28:43-05:00 — 66 games, 2 steam events, 4 NEW flags
+NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — DraftKings still dealing spread 9.5 on Kent State (pre-move median 9.5, now 8.5)
+NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — Fanatics still dealing spread 9.5 on Kent State (pre-move median 9.5, now 8.5)
+NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — Kalshi still dealing spread 9.5 on Kent State (pre-move median 9.5, now 8.5)
+NEW FLAG: FBS Charlotte @ Tulsa | 2026-11-16 — Kalshi still dealing spread -21.5 on Tulsa (pre-move median -21.5, now -22.5)
