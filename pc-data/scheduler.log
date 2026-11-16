@@ -9092,3 +9092,9 @@
 [2026-11-16 06:41:36 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 06:41:37 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-16 06:41:37 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 07:01:58 ET] sync_to_github.py: FAILED (exit 1) in 1220s —   FAILED: pc-data/sog-middles-2026-11-05.md (HTTP 409: {'error': '{"message":"is at 7bf43f672ec2cbe80069ddf267c73107dae87964 but expected 227622bbc832879e2dfc5a
+[2026-11-16 07:03:40 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 206 events (67 with odds), db total 295183 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 07:04:38 ET] dh_arbitrage.py: OK in 58s — ARBITRAGE: NBA GS Warriors NO Pelicans Today 8:15 PM / table / Points H. Jones Under 9.5 / Alt Points H. Jones 10+ / table | Bet365 | Caesars
+[2026-11-16 07:05:01 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 07:05:04 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA PHO Suns DEN Nuggets Today 9:15 PM — Total — Over 229 Bet365 +106 ($89) / Under 232.5 FanDuel -152 ($111) — both win 230, 231, 232 — push at 229 
+[2026-11-16 07:05:04 ET] syncing to GitHub (wide-builds banked new builds)
