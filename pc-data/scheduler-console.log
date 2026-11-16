@@ -8823,3 +8823,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 18:46:56 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 18:46:57 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-15 18:46:57 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 19:04:12 ET] sync_to_github.py: FAILED (exit 1) in 1034s —   FAILED: pc-data/kalshi-poly-arb-2026-11-09.md (HTTP 409: {'error': '{"message":"is at f809671a342f7e419011a76873926bb505dbfb5f but expected 82a740b94d9fc9b2cc
+[2026-11-15 19:05:51 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 202 events (13 with odds), db total 290089 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 19:05:52 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 19:07:44 ET] dh_game_middles.py: OK in 112s — GAME MIDDLE: NCAAB Texas St. UTSA Today 8:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | Fanatics-NJ | Bet365 — window 320.0 :: -170 $1,00
+[2026-11-15 19:07:44 ET] syncing to GitHub (regular 10-minute sync)
