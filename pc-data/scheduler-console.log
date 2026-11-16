@@ -9113,3 +9113,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 05:49:26 ET] dh_basketball_key_middles.py: OK in 199s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Alcorn St. Maryland Today 6:00 PM / table / Spread Maryland -34.5 / Spread Alcorn St. +36.5 / table | B
 [2026-11-16 05:49:33 ET] steam_side.py: OK in 7s — steam-side: 66 games, no new flags (silent).
 [2026-11-16 05:49:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 06:10:23 ET] sync_to_github.py: FAILED (exit 1) in 1251s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-12.json (HTTP 409: {'error': '{"message":"is at 1aa7812abcb78a0731a6045c8deed9fdcffe9073 but expected f31165e8
+[2026-11-16 06:12:05 ET] odds_recorder.py: OK in 72s — SUMMARY: recorded 206 events (67 with odds), db total 294977 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 06:12:06 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHI 76ers BKN Nets Today 7:45 PM — Total — Over 223 Fanatics-NJ -125 ($101) / Under 226.5 FanDuel -118 ($99) — both win 224, 225, 226 — push at 2
+[2026-11-16 06:12:06 ET] syncing to GitHub (wide-builds banked new builds)
