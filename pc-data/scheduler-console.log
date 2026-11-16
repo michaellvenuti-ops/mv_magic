@@ -9078,3 +9078,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 04:14:54 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 04:14:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-16 04:14:55 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 04:35:36 ET] sync_to_github.py: FAILED (exit 1) in 1241s —   FAILED: pc-data/transcripts/prop-points-2026-11-09.json (HTTP 409: {'error': '{"message":"is at ce950074de3a6e26f9cec0c79b28d4a2d8931a9e but expected ff7934c6
+[2026-11-16 04:37:23 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 206 events (67 with odds), db total 294359 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 04:37:25 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Miami (OH) Kent St. Nov-17 7:00 PM — Spread — Miami (OH) -7.5 Bally Bet -110 ($95) / Kent St. +11.5 Fanatics-NJ -135 ($105) — both win 8, 9, 10
+[2026-11-16 04:37:25 ET] syncing to GitHub (wide-builds banked new builds)
