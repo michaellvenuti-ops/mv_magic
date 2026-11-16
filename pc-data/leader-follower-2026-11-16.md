@@ -44,3 +44,8 @@
 ## 2026-11-16T12:30:18-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 spread (BetMGM, Caesars, FanDuel, bet365)
 ## 2026-11-16T12:30:18-05:00 — pack move, never credited: Maryland @ USC | 2026-11-16 spread (FanDuel, bet365)
 ## 2026-11-16T12:30:18-05:00 — 80 games, 0 leads credited, 13 started games skipped
+## 2026-11-16T13:58:27-05:00 — no-follow: FanDuel Central Michigan @ Buffalo | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T13:58:27-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 spread (FanDuel, Kalshi)
+## 2026-11-16T13:58:27-05:00 — no-follow: Fanatics Georgia Southern @ Troy | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T13:58:27-05:00 — no-follow: Kalshi Colorado State @ Fresno State | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T13:58:27-05:00 — 80 games, 0 leads credited, 13 started games skipped
