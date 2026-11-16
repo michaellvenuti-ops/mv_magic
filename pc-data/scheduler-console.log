@@ -8855,3 +8855,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 19:59:58 ET] rlm.py: OK in 4s
 [2026-11-15 20:00:01 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
 [2026-11-15 20:00:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 20:17:48 ET] sync_to_github.py: OK in 1067s —   ok: team-total-middles-board-pc.html
+[2026-11-15 20:18:59 ET] notify.py: OK in 71s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-15 20:20:37 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (6 with odds), db total 290695 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 20:24:23 ET] dh_key_number_middles.py: OK in 226s — key-number-middles: 503 basketball rows excluded (football-only rule).
+[2026-11-15 20:27:34 ET] dh_basketball_key_middles.py: OK in 191s — BASKETBALL MIDDLE (NCAAB total, SPANKY baseline): NCAAB Eastern Kentucky Kent St. Golden Nov-16 7:00 PM / table / Total Under 161 / Total Over 158.5 / table | C
+[2026-11-15 20:27:40 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 20:29:05 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE CLEAN : NCAAB Prairie View A&M Ohio St. Nov-16 6:30 PM / table / Spread Ohio St. -33.5 / Alt Spread Prairie View A&M +34 / table | Caesars | Bet365 
+[2026-11-15 20:31:04 ET] dh_sog_middles.py: OK in 119s — - 0 deliverables this run
+[2026-11-15 20:31:06 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Cincinnati 21.5/26.5 sits at -3.7c vs +EV
+[2026-11-15 20:31:08 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 1 new, 0 unverified, 147 total tallied.
+[2026-11-15 20:31:09 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 1 unverified, 184 total tallied.
+[2026-11-15 20:31:11 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 20:31:13 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 2 unverified, 662 total tallied.
+[2026-11-15 20:31:14 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-15 20:31:15 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 20:31:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-15 20:31:16 ET] syncing to GitHub (regular 10-minute sync)
