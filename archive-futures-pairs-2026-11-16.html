@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futures Pairs (Arb Watch)</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px} h3{font-size:16px;margin:18px 0 2px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.note{color:#d29922;font-size:13px;margin:6px 0}
+.warn{color:#f85149;font-size:13px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:560px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+ul,ol{padding-left:22px} li{margin:2px 0}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.card{border:1px solid #30363d;border-radius:10px;padding:14px 16px;margin:12px 0;background:#121821}
+.card h2{margin-top:0}
+.play{border:1px solid #30363d;border-left:6px solid #58a6ff;border-radius:10px;padding:14px 16px;margin:12px 0;background:#141c2a}
+.play .pick{font-size:20px;font-weight:800;color:#7ee2a0;line-height:1.3}
+.play .legs{font-size:15px;margin-top:4px}
+.play .meta{color:#9da7b3;font-size:13px;margin-top:4px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.badge.win{background:#1f6f3a;color:#fff} .badge.loss{background:#8b1e1e;color:#fff}
+.badge.push{background:#555;color:#fff} .badge.pending{background:#7a5b00;color:#fff}
+.badge.clean{background:#1f6f3a;color:#fff} .badge.risk{background:#7a3b00;color:#fff}
+details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top:20px}
+details summary{cursor:pointer;font-weight:700;font-size:16px}
+</style></head><body>
+<div class='note'>Snapshot of this board at end of day 2026-11-16 (archived daily; live version is the un-dated board page).</div>
+<h1>Futures Pairs (Arb Watch)</h1>
+<div class="sub">Latest scan list: futures-pairs-2026-11-15.md · page built 2026-11-15 23:44 ET</div>
+
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-11-15 (09:24 ET run)</h2>
+<h3>Read times and sources</h3>
+<ul>
+<li>Book prices: TODAY&#x27;S BOARD — no <code>futures-board-2026-11-15.json</code> was saved this morning, but today&#x27;s board DID land as <code>futures-board-2026-11-15.html</code> (from <code>build-futures-board-2026-11-15.py</code>, whose embedded data is the board&#x27;s source of truth, pulled ~8:45–8:53 AM ET; VegasInsider SB/Heisman odds as of Nov 14, 2026; MVP/NBA headers updated 11/15/26; NHL article updated Nov 12). Same fallback pattern as Nov 13/14 — fresher than the Nov 10 JSON the spec would otherwise require. A <code>futures-board-2026-11-15.json</code> was extracted from the build script for the record. Stale cells were EXCLUDED from all pairing math (MVP: Allen FanDuel +350, Lawrence FanDuel +600, Williams Bet365 +1,200 / FanDuel +5,000, Goff BetMGM +6,600, Maye DraftKings +4,500, Gibbs Bet365 +2,500, Walker Bet365 +4,000, Smith-Njigba FanDuel +30,000, Stafford FanDuel +25,000, Nix BetMGM +50,000; NBA: Thunder Hard Rock +275, Rockets Hard Rock +5,000, Timberwolves Caesars +1,400, Trail Blazers Hard Rock +7,500, Heat Hard Rock +3,000; Stanley Cup: Hurricanes Caesars +800, Golden Knights Caesars +1,300, Panthers Caesars +780, Capitals Caesars +3,000, Senators Caesars +5,000, Sabres Caesars +2,400; Heisman: DraftKings Mensah +600, Chambliss +1,300, Leavitt +1,500, Maiava +1,750, Dampier +7,200).</li>
+<li>Exchange No prices: live browser reads Nov 15, 2026, 09:28–09:33 ET (1 browser task, 10 event pages), no sign-in, no purchases, quoted No-button prices only, none derived. All 10 pages loaded; no bot/verification screen.</li>
+<li>Exchange event pages: Super Bowl LXI — kalshi.com/markets/kxsb/super-bowl, polymarket.us/event/nfl-champ-2027-02-14-w; NFL MVP — kalshi.com/markets/kxnflmvp/ap-pro-football-regular-season-mvp, polymarket.us/event/nfl-mvp-2027-02-11-w; NBA Championship — kalshi.com/markets/kxnba/pro-basketball-champion, polymarket.us/event/nba-champ-2027-06-18-w; Stanley Cup — kalshi.com/markets/kxnhl/stanley-cup, polymarket.us/event/nhl-champ-2027-06-18-w; Heisman — kalshi.com/markets/kxheisman/heisman-trophy-winner, polymarket.us/event/cfb-heisman-2026-12-13-w.</li>
+<li>Scope note: No prices were read for EVERY team listed on all 10 event pages (not just candidates), so all state pairs were re-checked against live No prices. All 5 live markets were covered; no market had concluded. The Kings are still off the NHL book tables (2% on both exchanges) — no book leg, no pair. Gio Lopez is new on Kalshi at 2% with no book price — no pair.</li>
+</ul>
+<h3>DELIVERABLE — 1 NEW arb pair, 0 new price-gap flags</h3>
+<h4>Arb pairs (sorted by profit % desc)</h4>
+<ol>
+<li><b>Stanley Cup 2026-27 — Minnesota Wild — NEW</b></li>
+</ol>
+<p>   - Leg 1: DraftKings +1100 — $1,000 stake</p>
+<p>   - Leg 2: Kalshi No 88¢ — $10,560 stake</p>
+<p>   - Guaranteed profit: <b>$440 (3.81% of $11,560 staked)</b> — identical under both outcomes.</p>
+<p>   - Note: DraftKings +1100 is a three-way tie — Hard Rock and BetRivers also list the Wild at +1100, and all three clear the bar against the Kalshi No 88¢. The Polymarket US side of the same pair is only $80, 0.67% (No 91%) — below bar.</p>
+<h3>Price gaps — not locks — 0 NEW FLAGS</h3>
+<ul>
+<li>The only ≥5-point gap today is Malachi Toney / DraftKings / Polymarket US (+6.41), re-verified UNCHANGED from Nov 14 — not a deliverable. All other gaps are below threshold (see below).</li>
+</ul>
+<h3>Pairs that NO LONGER QUALIFY (kept in state, last_seen unchanged, not delivered)</h3>
+<ul>
+<li>Heisman Trophy 2026 — Jeremiah Smith — Caesars / Kalshi: arb DEAD — yesterday&#x27;s delivered arb is gone. Books now have Smith at −140/−150 (FanDuel −140 is the longest; Caesars −150), Kalshi No 45¢ → combined 103.33%. Delivered NEW yesterday at $110, 3.81% (Caesars +200 / No 63¢); old figures kept.</li>
+<li>Heisman Trophy 2026 — Jeremiah Smith — Caesars / Polymarket US: arb dead — Poly No 43%, combined 101.33% at FanDuel −140. Delivered at $216, 6.03% on Nov 12 (Caesars +280 / No 68%); old figures kept.</li>
+<li>Heisman Trophy 2026 — Darian Mensah — BetMGM / Polymarket US: arb dead — BetMGM now +375 (was +300), Poly No 80% → combined 101.05%. Old figures kept (state pair was +300, 3.09%).</li>
+<li>NBA Championship 2026-27 — 76ers — Bet365 / Kalshi and BetRivers / Kalshi + Polymarket US: best book now FanDuel +900; No 90% both → combined 100.00%, $0. Old figures kept.</li>
+<li>NBA Championship 2026-27 — Rockets — Hard Rock / Kalshi and Polymarket US: Hard Rock +5000 still flagged stale; best book FanDuel +1500, No 95% both → combined 101.25%. Old figures kept.</li>
+<li>NBA Championship 2026-27 — Warriors — BetRivers / Kalshi and Polymarket US: best book now DraftKings +5000; No 98%/97% → $20, 0.04% / $530, 1.05%. Old figures kept.</li>
+<li>NFL MVP 2026 — Joe Burrow — FanDuel / Kalshi and Polymarket US: FanDuel leg now +150 (state pair was +600); best book Caesars +200, No 68% both → combined 101.33%. Old figures kept.</li>
+<li>NFL MVP 2026 — Jordan Love — FanDuel / Polymarket US: best book now BetMGM/FanDuel +700; Poly No 87% → $40, 0.50%. Old figures kept (state pair was +3300, 3.16%).</li>
+<li>NFL MVP 2026 — Josh Allen — Caesars / Polymarket US: Caesars now +260; Poly No 80% → combined 107.78%. Old figures kept.</li>
+<li>NFL MVP 2026 — Trevor Lawrence — FanDuel / Kalshi: FanDuel leg now +600 and flagged stale (excluded); best book Caesars +900, Kalshi No 92% → combined 102.00%. Old figures kept.</li>
+<li>Stanley Cup 2026-27 — Devils — Caesars / Kalshi and Polymarket US: book leg shortened +2500 → +1000; No 93%/94% → combined 102.09%/103.09%. Old figures kept.</li>
+<li>Stanley Cup 2026-27 — Oilers — Caesars / Kalshi and Polymarket US: book leg shortened +1500 → +1000; No 91% both → combined 100.09%, −$10. Old figures kept.</li>
+<li>Super Bowl LXI Winner — 49ers — DraftKings / Kalshi and Polymarket US: DK now +540; No 86% both → combined 101.63%. Old figures kept.</li>
+<li>Super Bowl LXI Winner — Bears — DraftKings / Kalshi and Polymarket US: DK now +850; No 88%/89% → $140, 1.50% / $45, 0.48%. Old figures kept (state pair was DK +2400).</li>
+<li>Heisman Trophy 2026 — CJ Carr — BetMGM / Kalshi and Polymarket US (gaps): best book now BetMGM +1200 (7.69%) vs Yes 5% → gap +2.69, below threshold. Old figures kept.</li>
+<li>Heisman Trophy 2026 — CJ Carr — FanDuel / Kalshi and Polymarket US (gaps): FanDuel now +1100 (8.33%) vs Yes 5% → gap +3.33, below threshold. Old figures kept.</li>
+<li>NFL MVP 2026 — Josh Allen — DraftKings / Kalshi (gap): DK +275 (26.67%) vs board Yes 22% → gap +4.67, below threshold. Old figures kept. Caveat: the live Kalshi Yes button read 21¢ this morning, which would still be +5.67 — the board headline (22%) is what the gap rule uses.</li>
+<li>NFL MVP 2026 — Josh Allen — DraftKings / Polymarket US (gap): DK +275 vs Poly Yes 22% → gap +4.67, below threshold. Old figures kept.</li>
+<li>NFL MVP 2026 — Brock Purdy — DraftKings / Kalshi and Polymarket US (gaps): best book now FanDuel +500 (16.67%) vs Yes 16%/15% → +0.67/+1.67, below threshold. Old figures kept.</li>
+<li>NFL MVP 2026 — Caleb Williams — FanDuel / Kalshi and Polymarket US (gaps): FanDuel leg now +5000 and flagged stale; best book BetMGM +3000 (3.23%) vs Yes 4% → −0.77, below threshold. Old figures kept.</li>
+<li>Heisman Trophy 2026 — Jeremiah Smith — FanDuel / Kalshi and Polymarket US (gaps): best book now FanDuel −140 (58.33%) vs live Yes 56¢/58% → +2.33/+0.33, below threshold. Old figures kept.</li>
+<li>All other state pairs re-checked below bar, dead, or with book legs no longer on the board. No state pair improved by ≥ 1pt today other than the delivered item.</li>
+</ul>
+<h3>Arb pairs verified today but NOT delivered (below the 3% bar)</h3>
+<ul>
+<li>Stanley Cup 2026-27 — Hurricanes — BetRivers +650 / Kalshi No 84¢ → $200, 2.74%; Polymarket US No 86% → $50, 0.67%. Below bar; never a state pair.</li>
+<li>NBA Championship 2026-27 — Timberwolves — Hard Rock +2500 / Polymarket US No 94% → $560, 2.20%; Kalshi No 95¢ → $300, 1.17%. Below bar; never a state pair.</li>
+<li>NFL MVP 2026 — Jordan Love — BetMGM +700 / Kalshi No 86¢ → $120, 1.52%; Polymarket US No 87% → $40, 0.50%. Below bar; never a state pair (state pair is FanDuel/Poly).</li>
+<li>Super Bowl LXI Winner — Bears — Bet365 +850 / Kalshi No 88¢ → $140, 1.50%; Polymarket US No 89% → $45, 0.48%. Below bar; state pair is DraftKings +2400, old figures kept.</li>
+<li>NBA Championship 2026-27 — Warriors — DraftKings +5000 / Polymarket US No 97% → $530, 1.05%; Kalshi No 98¢ → $20, 0.04%. Below bar; never a state pair.</li>
+<li>NBA Championship 2026-27 — Celtics — Hard Rock +1300 / Kalshi No 92¢ and Polymarket US No 92% → $120, 0.86% each. Below bar; never a state pair.</li>
+<li>NBA Championship 2026-27 — Lakers — Hard Rock +3000 / Kalshi No 96¢ and Polymarket US No 96% → $240, 0.78% each. Below bar; never a state pair.</li>
+<li>Stanley Cup 2026-27 — Canadiens — FanDuel +3000 / Kalshi No 96¢ and Polymarket US No 96% → $240, 0.78% each. Below bar; never a state pair.</li>
+<li>Stanley Cup 2026-27 — Wild — DraftKings +1100 / Polymarket US No 91% → $80, 0.67%. Below bar; the Kalshi side is the delivered arb.</li>
+<li>Stanley Cup 2026-27 — Bruins — FanDuel +4000 / Kalshi No 97¢ and Polymarket US No 97% → $230, 0.56% each. Below bar; never a state pair.</li>
+<li>NFL MVP 2026 — Jaxon Smith-Njigba — BetMGM +20000 / Kalshi No 99¢ and Polymarket US No 99% → $1,010, 0.51% each. Below bar; never a state pair.</li>
+<li>Super Bowl LXI Winner — Texans — BetMGM +5000 / Kalshi No 98¢ and Polymarket US No 98% → $20, 0.04% each. Below bar; never a state pair.</li>
+<li>NBA Championship 2026-27 — Heat — Bet365 +5000 / Kalshi No 98¢ → $20, 0.04%. Below bar; never a state pair.</li>
+<li>NBA Championship 2026-27 — 76ers — FanDuel +900 / Kalshi No 90¢ and Polymarket US No 90% → $0, 0.00% each. Below bar; state pairs kept, old figures retained.</li>
+<li>Stanley Cup 2026-27 — Stars — FanDuel +1900 / Kalshi No 95¢ and Polymarket US No 95% → $0, 0.00% each. Below bar; never a state pair.</li>
+</ul>
+<h3>Candidate combos checked that did NOT qualify as arbs (profit ≤ 3% of total staked)</h3>
+<ul>
+<li>Kalshi: 49ers 86¢ = −0.81%; Bills 87¢ = −1.68%; Jaguars 90¢ = −1.10%; Bears 88¢ = 1.50%; Chiefs 93¢ = −0.69%; Bengals 94¢ = −1.13%; Rams 96¢ = −1.53%; Broncos 95¢ = −0.87%; Seahawks 96¢ = −1.25%; Lions 96¢ = −0.99%; Packers 96¢ = −0.35%; Vikings 96¢ = −0.35%; Patriots 98¢ = −0.93%; Texans 98¢ = 0.04%; Steelers 98¢ = −0.17%; Burrow 68¢ = −1.32%; Allen 80¢ = −4.76%; Purdy 85¢ = −1.64%; Love 86¢ = 1.52%; Lawrence 92¢ = −1.96%; Williams 97¢ = −0.23%; Goff 99¢ = −0.41%; Stroud 99¢ = −0.31%; Cousins 99¢ = 0.21%; Smith-Njigba 99¢ = 0.51%; Spurs 79¢ = −3.28%; Thunder 87¢ = −1.78%; Celtics 92¢ = 0.86%; 76ers 90¢ = 0.00%; Knicks 94¢ = −3.00%; Rockets 95¢ = −1.23%; Raptors 97¢ = −0.84%; Timberwolves 95¢ = 1.17%; Pistons 97¢ = −0.84%; Lakers 96¢ = 0.78%; Nuggets 98¢ = −1.21%; Cavaliers 98¢ = −0.44%; Heat 98¢ = 0.04%; Trail Blazers 98¢ = −0.44%; Warriors 98¢ = 0.04%; Pacers 99¢ = −0.78%; Hurricanes 84¢ = 2.74%; Avalanche 90¢ = −1.73%; Oilers 91¢ = −0.09%; Golden Knights 94¢ = −3.40%; Panthers 93¢ = −2.05%; Devils 93¢ = −0.69%; Lightning 95¢ = −2.62%; Wild 88¢ = 3.81% — NEW ARB, delivered; Capitals 97¢ = −1.73%; Stars 95¢ = 0.00%; Mammoth 98¢ = −2.29%; Senators 98¢ = −1.55%; Canadiens 96¢ = 0.78%; Bruins 97¢ = 0.56%; Sabres 99¢ = −1.16%; Smith 45¢ = −3.23%; Mensah 79¢ = −0.05%; Carr 96¢ = −3.56%; Dampier 89¢ = −1.48%; Stockton 98¢ = −1.81%.</li>
+<li>Polymarket US: 49ers 86% = −0.81%; Bills 87% = −1.68%; Jaguars 90% = −1.10%; Bears 89% = 0.48%; Chiefs 93% = −0.69%; Bengals 94% = −1.13%; Rams 96% = −1.53%; Broncos 95% = −0.87%; Seahawks 96% = −1.25%; Lions 96% = −0.99%; Packers 97% = −1.33%; Vikings 96% = −0.35%; Patriots 98% = −0.93%; Texans 98% = 0.04%; Steelers 98% = −0.17%; Burrow 68% = −1.32%; Allen 80% = −4.76%; Purdy 86% = −2.60%; Love 87% = 0.50%; Lawrence 91% = −0.99%; Williams 97% = −0.23%; Mahomes 99% = −0.64%; Goff 99% = −0.41%; Cousins 99% = 0.21%; Smith-Njigba 99% = 0.51%; Spurs 78% = −2.33%; Thunder 87% = −1.78%; Celtics 92% = 0.86%; 76ers 90% = 0.00%; Knicks 94% = −3.00%; Rockets 95% = −1.23%; Raptors 97% = −0.84%; Timberwolves 94% = 2.20%; Pistons 97% = −0.84%; Lakers 96% = 0.78%; Nuggets 98% = −1.21%; Cavaliers 99% = −1.42%; Heat 99% = −0.95%; Trail Blazers 98% = −0.44%; Warriors 97% = 1.05%; Pacers 99% = −0.78%; Hurricanes 86% = 0.67%; Avalanche 91% = −2.69%; Oilers 91% = −0.09%; Golden Knights 93% = −2.46%; Panthers 94% = −3.00%; Devils 94% = −1.66%; Lightning 96% = −3.56%; Wild 91% = 0.67%; Capitals 97% = −1.73%; Stars 95% = 0.00%; Mammoth 97% = −1.33%; Senators 98% = −1.55%; Canadiens 96% = 0.78%; Bruins 97% = 0.56%; Sabres 99% = −1.16%; Smith 43% = −1.32%; Mensah 80% = −1.04%; Carr 96% = −3.56%; Dampier 89% = −1.48%; Mestemaker 99% = 0.21%; Stockton 98% = −1.81%; Russell 99% = −0.95%.</li>
+<li>Maye, Gibbs, Walker III, Stafford and Nix No not shown on either exchange — cannot form arb pairs this run. Mahomes has no Kalshi MVP entry; Stroud Poly No not shown; Sellers, Toney, Hoover, Mateer, Reed, Chambliss, Leavitt and Maiava No not shown on either exchange; Russell has no Kalshi Heisman entry; Mestemaker Kalshi No not shown; Smith-Njigba has no Kalshi entry in the board (Kalshi does list him at 2¢/99¢ live, but the board carries no Kalshi cell for him — the Kalshi combo above uses the live No with the BetMGM book leg).</li>
+</ul>
+<h3>Quoted No prices read (Nov 15, 09:28–09:33 ET)</h3>
+<ul>
+<li>Kalshi Super Bowl: Bills 87¢, 49ers 86¢, Bears 88¢, Jaguars 90¢, Chiefs 93¢, Bengals 94¢, Broncos 95¢, Packers 96¢, Vikings 96¢, Lions 96¢, Rams 96¢, Seahawks 96¢, Texans 98¢, Steelers 98¢, Cowboys 99¢, Patriots 98¢, Giants 99¢.</li>
+<li>Polymarket US Super Bowl: 49ers 86%, Bills 87%, Bears 89%, Jaguars 90%, Chiefs 93%, Bengals 94%, Broncos 95%, Lions 96%, Rams 96%, Vikings 96%, Seahawks 96%, Packers 97%, Texans 98%, Patriots 98%, Steelers 98%, Cowboys 99%, Giants 99%.</li>
+<li>Kalshi MVP: Burrow 68¢, Allen 80¢, Purdy 85¢, Love 86¢, Lawrence 92¢, Williams 97¢, Stroud 99¢, Smith-Njigba 99¢, Cousins 99¢, Goff 99¢.</li>
+<li>Polymarket US MVP: Burrow 68%, Allen 80%, Purdy 86%, Love 87%, Lawrence 91%, Williams 97%, Goff 99%, Smith-Njigba 99%, Cousins 99%, Mahomes 99%.</li>
+<li>Kalshi NBA: Spurs 79¢, Thunder 87¢, 76ers 90¢, Celtics 92¢, Knicks 94¢, Timberwolves 95¢, Rockets 95¢, Lakers 96¢, Cavaliers 98¢, Pistons 97¢, Trail Blazers 98¢, Raptors 97¢, Mavericks 99¢, Nuggets 98¢, Warriors 98¢, Pacers 99¢, Heat 98¢.</li>
+<li>Polymarket US NBA: Spurs 78%, Thunder 87%, 76ers 90%, Celtics 92%, Timberwolves 94%, Knicks 94%, Rockets 95%, Lakers 96%, Pistons 97%, Warriors 97%, Raptors 97%, Nuggets 98%, Trail Blazers 98%, Cavaliers 99%, Mavericks 99%, Pacers 99%, Heat 99%.</li>
+<li>Kalshi Stanley Cup: Hurricanes 84¢, Wild 88¢, Avalanche 90¢, Oilers 91¢, Panthers 93¢, Devils 93¢, Golden Knights 94¢, Stars 95¢, Lightning 95¢, Canadiens 96¢, Bruins 97¢, Capitals 97¢, Senators 98¢, Mammoth 98¢, Ducks 99¢, Sabres 99¢, Kings 99¢, Rangers 99¢, Sharks 99¢.</li>
+<li>Polymarket US Stanley Cup: Hurricanes 86%, Avalanche 91%, Oilers 91%, Wild 91%, Golden Knights 93%, Panthers 94%, Devils 94%, Stars 95%, Canadiens 96%, Lightning 96%, Bruins 97%, Mammoth 97%, Capitals 97%, Senators 98%, Ducks 99%, Sabres 99%, Blue Jackets 99%, Kings 99%, Rangers 99%, Sharks 99%, Maple Leafs 99%.</li>
+<li>Kalshi Heisman: Smith 45¢, Mensah 79¢, Dampier 89¢, Carr 96¢, Stockton 98¢, Gio Lopez 99¢.</li>
+<li>Polymarket US Heisman: Smith 43%, Mensah 80%, Dampier 89%, Carr 96%, Stockton 98%, Mestemaker 99%, Russell 99%.</li>
+<li>Live Yes prices read alongside (for context; gap flags use board Yes %): SB Kalshi Yes 49ers 15¢, Bills 15¢, Bears 13¢, Jaguars 11¢, Chiefs 8¢, Bengals 7¢, Broncos 6¢, Lions 5¢, Vikings 5¢, Packers 5¢, Rams 5¢, Seahawks 5¢, Patriots 3¢, Steelers 3¢, Texans 3¢; MVP Kalshi Yes Burrow 33¢, Allen 21¢, Purdy 16¢, Love 15¢, Lawrence 9¢, Williams 4¢, Stroud 2¢, Smith-Njigba 2¢, Cousins 2¢, Goff 2¢; NBA Kalshi Yes Spurs 22¢, Thunder 14¢, 76ers 11¢, Celtics 9¢, Knicks 7¢, Timberwolves 6¢, Rockets 6¢, Lakers 5¢, Pistons 4¢, Raptors 4¢, Cavaliers 3¢, Nuggets 3¢, Trail Blazers 3¢, Warriors 3¢, Pacers 2¢, Heat 3¢; NHL Kalshi Yes Hurricanes 17¢, Wild 13¢, Avalanche 11¢, Oilers 10¢, Panthers 8¢, Devils 8¢, Golden Knights 7¢, Stars 6¢, Lightning 6¢, Canadiens 5¢, Bruins 4¢, Capitals 4¢, Senators 3¢, Mammoth 3¢, Ducks 2¢, Sabres 2¢, Kings 2¢; Heisman Kalshi Yes Smith 56¢, Mensah 22¢, Dampier 12¢, Carr 5¢, Stockton 3¢, Gio Lopez 2¢ — all consistent with the board Yes % within 1 pt except Allen (board 22%, live 21¢) and Wild (board 12%, live 13¢).</li>
+</ul>
+<h3>Bookkeeping refresh (not a delivery)</h3>
+<ul>
+<li>Heisman Malachi Toney / DraftKings / Polymarket US gap entry re-verified unchanged (+6.41), last_seen 2026-11-15.</li>
+</ul>
+<h3>Caveats</h3>
+<ul>
+<li>No <code>futures-board-2026-11-15.json</code> was saved this morning, so per spec the fallback would have been the Nov 10 JSON — but today&#x27;s board HTML + build script (same data, pulled ~8:45–8:53 AM ET, VegasInsider SB/Heisman as of Nov 14) were available and were used instead, and a <code>futures-board-2026-11-15.json</code> was extracted from the build script. Had the Nov 10 JSON been used, the Wild arb would have been missed entirely (Wild was +1000 then, Kalshi No 90¢) and the Smith arb death would have been missed.</li>
+<li>The Wild arb is a three-way book tie (DraftKings, Hard Rock, BetRivers all +1100) — delivery names DraftKings, first in column order.</li>
+<li>Book prices are last night&#x27;s (VegasInsider as of Nov 14); exchange No prices are live as of 09:28–09:33 ET.</li>
+<li>Dedupe: <code>arbitrage-state.json</code> and <code>kalshi-poly-arb-state.json</code> checked for futures-market overlaps: zero hits (name matches were single-game props only). No pair skipped as already covered.</li>
+<li>State: 37 entries (36 retained + 1 new: Wild/DraftKings/Kalshi arb).</li>
+<li>Voice note: <code>~/workspace/your_files/futures-pairs-2026-11-15-voice.mp3</code> (voice avocado_v2:qvd_00052), covering the new Wild arb and the Smith arb death.</li>
+</ul></details>
+<div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
+</body></html>
