@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-16 (scan 2026-11-16 08:00)
+# Hung numbers — 2026-11-16 (scan 2026-11-16 09:24)
 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Fanatics | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
@@ -11,15 +11,14 @@
 - Rams vs Cardinals | DraftKings | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
 - Steelers vs Bengals | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Steelers vs Bengals | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
-- Miami (OH) vs Kent State | bet365 | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
-- Miami (OH) vs Kent State | FanDuel | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
+- Oregon vs Michigan State | Fanatics | spread | value: dog | book -14.0 vs median -15.5 | div 1.5 
 - UTEP vs Air Force | FanDuel | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
 - BYU vs Kansas | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
 - Colorado vs Cincinnati | FanDuel | spread | value: favorite | book 2.5 vs median 3.5 | div 1.0 middle pairing spans key number 3
-- Ohio State vs Nebraska | FanDuel | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
-- North Carolina vs Virginia | DraftKings | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- North Carolina vs Virginia | DraftKings | spread | value: favorite | book -1.5 vs median 1.25 | div 2.75 
+- Middle Tennessee vs Sam Houston | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
+- Arkansas vs Texas | FanDuel | spread | value: dog | book 21.5 vs median 20.5 | div 1.0 
 - Georgia State vs Marshall | FanDuel | total | value: Over | book 59.5 vs median 57.75 | div 1.75 
 - Arizona vs Kansas State | bet365 | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Arizona vs Kansas State | FanDuel | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - UTSA vs UAB | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
-- San Diego State vs Boise State | FanDuel | spread | value: dog | book 17.5 vs median 16.5 | div 1.0 
