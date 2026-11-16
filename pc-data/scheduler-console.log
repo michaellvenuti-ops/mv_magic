@@ -9254,3 +9254,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 11:38:42 ET] steam_side.py: OK in 7s — steam-side: 66 games, no new flags (silent).
 [2026-11-16 11:42:09 ET] costco_gold.py: OK in 207s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
 [2026-11-16 11:42:10 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 12:02:53 ET] sync_to_github.py: FAILED (exit 1) in 1243s —   FAILED: pc-data/nhl-totals-2026-11-15.md (HTTP 409: {'error': '{"message":"is at 0520e7c1a4f212df11c1192f64259f43a59cf9d6 but expected c94e7766d4586d80ecefaeb
+[2026-11-16 12:04:34 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 191 events (99 with odds), db total 296595 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 12:04:36 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Colorado St. Fresno St. Nov-21 7:30 PM — Spread — Fresno St. -22.5 FanDuel +128 ($82) / Colorado St. +26 Fanatics-NJ -170 ($118) — both win 23,
+[2026-11-16 12:04:37 ET] syncing to GitHub (wide-builds banked new builds)
