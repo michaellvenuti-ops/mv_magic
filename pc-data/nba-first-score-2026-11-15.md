@@ -8,3 +8,6 @@
 - 2026-11-15: Charlotte Hornets @ LA Clippers — first: LA Clippers (2PT, 0:14 in); lead changes 10; final 105-113
 - 2026-11-15: San Antonio Spurs @ Utah Jazz — first: San Antonio Spurs (2PT, 0:16 in); lead changes 14; final 110-102
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T20:31:09-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 184 games through 2026-11-15
+- 2026-11-15: Dallas Mavericks @ Boston Celtics — first: Boston Celtics (2PT, 0:46 in); lead changes 0; final 94-131
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
