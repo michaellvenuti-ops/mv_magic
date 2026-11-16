@@ -9356,3 +9356,9 @@
 [2026-11-16 18:06:36 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 18:06:37 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 5 game(s) refreshed, 0 deliverable change(s).
 [2026-11-16 18:06:37 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 18:26:25 ET] sync_to_github.py: FAILED (exit 1) in 1187s —   FAILED: pc-data/chet-dhlow2-1105.log (HTTP 409: {'error': '{"message":"is at b9c3b392afa8c6a76ca5bf80dfb908aacef18af9 but expected 65b8d0ecf252400b37f381393d6
+[2026-11-16 18:28:08 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 191 events (96 with odds), db total 298314 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 18:29:14 ET] dh_arbitrage.py: OK in 66s — ARBITRAGE: Challenger Helsinki MD Niklas-Salminen / 129Vrbensky 233Mackinlay / 244Nedunchezhiyan Nov-18 6:30 AM / table / Moneyline Niklas-Salminen / Vrbensky /
+[2026-11-16 18:30:22 ET] dh_kalshi_poly_arb.py: OK in 68s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 18:30:25 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Colorado Cincinnati Nov-21 12:00 PM — Spread — Cincinnati -3.5 Bally Bet +112 ($87) / Colorado +6.5 Fanatics-NJ -160 ($113) — both win 4, 5, 6 
+[2026-11-16 18:30:25 ET] syncing to GitHub (wide-builds banked new builds)
