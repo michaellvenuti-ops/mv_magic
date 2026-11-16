@@ -8863,3 +8863,9 @@
 [2026-11-15 21:39:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-15 21:41:27 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 202 events (1 with odds), db total 291301 snapshots / 1108 events, feeds ok 6 fail 0
 [2026-11-15 21:41:27 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 21:59:06 ET] sync_to_github.py: FAILED (exit 1) in 1059s —   FAILED: pc-data/sog-filter-dump-switch-on-20261114-2059.json (HTTP 409: {'error': '{"message":"is at 292470687e6d0c34efa32c793117c2f190242cf8 but expected b9a
+[2026-11-15 21:59:39 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 202 events (1 with odds), db total 291503 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 22:01:19 ET] dh_arbitrage.py: FAILED (exit 2) in 100s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-15 22:01:37 ET] dh_kalshi_poly_arb.py: OK in 18s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
+[2026-11-15 22:02:54 ET] dh_game_middles.py: FAILED (exit 2) in 78s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-15 22:02:55 ET] syncing to GitHub (regular 10-minute sync)
