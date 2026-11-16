@@ -8978,3 +8978,14 @@
 [2026-11-16 01:37:55 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=19
 [2026-11-16 01:37:56 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=19, limit=5)
 [2026-11-16 01:37:56 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 01:56:36 ET] sync_to_github.py: FAILED (exit 1) in 1120s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-06-hour-1.json (HTTP 409: {'error': '{"message":"is at 12f47cc3fd6852a9dfcce47d8dbf3c67690b8c2b but expe
+[2026-11-16 01:58:22 ET] odds_recorder.py: OK in 76s — SUMMARY: recorded 206 events (67 with odds), db total 293535 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 01:59:20 ET] dh_arbitrage.py: OK in 58s — ARBITRAGE: NBA POR Trail Blazers MIN Timberwolves Today 8:15 PM / table / Ast+Rebs S. Cissoko Under 5.5 / Ast+Rebs S. Cissoko 6+ / table | BetParx | Bet365
+[2026-11-16 01:59:39 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 01:59:40 ET] wide_builds.py: OK in 1s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 02:01:13 ET] dh_game_middles.py: OK in 93s — GAME MIDDLE: NFL LA Chargers BAL Ravens Today 8:15 PM / table / Passing Yards J. Herbert Under 200.5 / Alt Pass Yards J. Herbert 200+ / table | Caesars | Bet365
+[2026-11-16 02:04:33 ET] dh_key_number_middles.py: OK in 200s — key-number-middles: 731 basketball rows excluded (football-only rule).
+[2026-11-16 02:07:42 ET] dh_basketball_key_middles.py: OK in 189s — basketball-key-middles: no new basketball middles.
+[2026-11-16 02:07:47 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
+[2026-11-16 02:09:01 ET] dh_prop_middles.py: OK in 74s — PROP MIDDLE CLEAN : NBA CHI Bulls CLE Cavaliers Today 7:15 PM / table / Points M. Buzelis Under 15.5 / Points M. Buzelis Over 14.5 / table | theScore | Bet365 —
+[2026-11-16 02:09:01 ET] syncing to GitHub (regular 10-minute sync)
