@@ -4,3 +4,7 @@
 ## 2026-11-15T18:46:50-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 181 games through 2026-11-15
 - 2026-11-15: Los Angeles Lakers @ Phoenix Suns — first: Los Angeles Lakers (3PT, 0:19 in); lead changes 0; final 131-123
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T19:39:22-05:00 -- NBA FIRST SCORE (PC): 2 new final(s) tallied; season 183 games through 2026-11-15
+- 2026-11-15: Charlotte Hornets @ LA Clippers — first: LA Clippers (2PT, 0:14 in); lead changes 10; final 105-113
+- 2026-11-15: San Antonio Spurs @ Utah Jazz — first: San Antonio Spurs (2PT, 0:16 in); lead changes 14; final 110-102
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
