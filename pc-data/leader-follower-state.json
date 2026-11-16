@@ -377,7 +377,7 @@
   "Akron @ UMass | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": -3.0,
+     "spread": -3.5,
      "total": 46.5
     },
     "Caesars": {
@@ -1469,11 +1469,11 @@
      "total": 46.5
     },
     "Caesars": {
-     "spread": -21.0,
+     "spread": -20.5,
      "total": 47.5
     },
     "DraftKings": {
-     "spread": -21.0,
+     "spread": -20.5,
      "total": 46.5
     },
     "FanDuel": {
@@ -1742,7 +1742,7 @@
     },
     "DraftKings": {
      "spread": -14.0,
-     "total": 53.5
+     "total": 52.5
     },
     "FanDuel": {
      "spread": -14.5,
@@ -2186,11 +2186,11 @@
      "total": 49.5
     },
     "Caesars": {
-     "spread": -11.0,
+     "spread": -11.5,
      "total": 49.5
     },
     "DraftKings": {
-     "spread": -10.5,
+     "spread": -11.5,
      "total": 49.5
     },
     "FanDuel": {
@@ -4663,7 +4663,7 @@
   "Central Michigan @ Buffalo | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": -2.5,
+     "spread": -2.0,
      "total": 43.5
     },
     "Caesars": {
@@ -4679,7 +4679,7 @@
      "total": 43.5
     },
     "Fanatics": {
-     "spread": -2.0,
+     "spread": -2.5,
      "total": 43.5
     },
     "Kalshi": {
@@ -5926,11 +5926,11 @@
      "total": 43.5
     },
     "Fanatics": {
-     "spread": -12.5,
+     "spread": -13.0,
      "total": 43.5
     },
     "Kalshi": {
-     "spread": -11.5,
+     "spread": -13.5,
      "total": 43.5
     },
     "bet365": {
@@ -9663,7 +9663,7 @@
      "total": 51.5
     },
     "Kalshi": {
-     "spread": 16.5,
+     "spread": 17.5,
      "total": 51.5
     },
     "bet365": {
@@ -9671,7 +9671,16 @@
      "total": 51.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "Kalshi",
+     "direction": 1,
+     "market": "spread",
+     "new": 17.5,
+     "old": 16.5,
+     "ts": "2026-11-16T09:26:15-05:00"
+    }
+   ]
   },
   "Georgia Southern @ Georgia State | 2026-11-09": {
    "books": {
@@ -13439,7 +13448,7 @@
      "total": 48.5
     },
     "Kalshi": {
-     "spread": -4.5,
+     "spread": -5.5,
      "total": 48.5
     },
     "bet365": {
@@ -13447,16 +13456,7 @@
      "total": 48.5
     }
    },
-   "pending": [
-    {
-     "book": "Kalshi",
-     "direction": 1,
-     "market": "spread",
-     "new": -4.5,
-     "old": -5.5,
-     "ts": "2026-11-16T08:01:29-05:00"
-    }
-   ]
+   "pending": []
   },
   "Kentucky @ Tennessee | 2026-11-05": {
    "books": {
@@ -15306,7 +15306,7 @@
    "books": {
     "BetMGM": {
      "spread": 3.5,
-     "total": 66.5
+     "total": 67.5
     },
     "Caesars": {
      "spread": 3.5,
@@ -15314,7 +15314,7 @@
     },
     "DraftKings": {
      "spread": 3.5,
-     "total": 66.5
+     "total": 67.5
     },
     "FanDuel": {
      "spread": 3.5,
@@ -15808,7 +15808,7 @@
   "Miami (OH) @ Kent State | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": 9.5,
+     "spread": 9.0,
      "total": 46.5
     },
     "Caesars": {
@@ -16516,15 +16516,15 @@
   "Middle Tennessee @ Sam Houston | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": 6.5,
+     "spread": 5.5,
      "total": 48.5
     },
     "Caesars": {
-     "spread": 6.0,
+     "spread": 5.5,
      "total": 48.5
     },
     "DraftKings": {
-     "spread": 6.0,
+     "spread": 5.5,
      "total": 48.5
     },
     "FanDuel": {
@@ -16540,7 +16540,7 @@
      "total": 48.5
     },
     "bet365": {
-     "spread": 6.5,
+     "spread": 5.5,
      "total": 48.5
     }
    },
@@ -18358,7 +18358,7 @@
      "total": 43.5
     },
     "Caesars": {
-     "spread": -1.5,
+     "spread": -1.0,
      "total": 43.5
     },
     "DraftKings": {
@@ -19756,7 +19756,7 @@
      "total": 42.5
     },
     "Fanatics": {
-     "spread": 2.5,
+     "spread": 3.0,
      "total": 43.0
     },
     "Kalshi": {
@@ -20267,7 +20267,7 @@
     },
     "Fanatics": {
      "spread": -13.5,
-     "total": 47.5
+     "total": 47.0
     },
     "Kalshi": {
      "spread": -13.5,
@@ -20547,31 +20547,31 @@
   "Oregon @ Michigan State | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": 14.0,
+     "spread": 15.5,
      "total": 44.5
     },
     "Caesars": {
-     "spread": 14.0,
+     "spread": 15.5,
      "total": 44.0
     },
     "DraftKings": {
-     "spread": 14.0,
+     "spread": 15.5,
      "total": 44.5
     },
     "FanDuel": {
-     "spread": 14.5,
+     "spread": 15.5,
      "total": 44.5
     },
     "Fanatics": {
      "spread": 14.0,
-     "total": 44.5
+     "total": 44.0
     },
     "Kalshi": {
      "spread": 14.5,
      "total": 44.5
     },
     "bet365": {
-     "spread": 14.5,
+     "spread": 15.5,
      "total": 44.5
     }
    },
@@ -23350,7 +23350,7 @@
      "total": 62.5
     },
     "FanDuel": {
-     "spread": -17.5,
+     "spread": -16.5,
      "total": 62.5
     },
     "Fanatics": {
@@ -24038,7 +24038,7 @@
      "total": 63.5
     },
     "Kalshi": {
-     "spread": 5.5,
+     "spread": 4.5,
      "total": 63.5
     },
     "bet365": {
@@ -24046,7 +24046,16 @@
      "total": 63.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "Kalshi",
+     "direction": -1,
+     "market": "spread",
+     "new": 4.5,
+     "old": 5.5,
+     "ts": "2026-11-16T09:26:15-05:00"
+    }
+   ]
   },
   "South Carolina @ Arkansas | 2026-11-09": {
    "books": {
@@ -24686,7 +24695,7 @@
     },
     "Fanatics": {
      "spread": 2.5,
-     "total": 56.0
+     "total": 56.5
     },
     "Kalshi": {
      "spread": 2.5,
@@ -26711,7 +26720,7 @@
     },
     "Kalshi": {
      "spread": -7.5,
-     "total": 39.5
+     "total": 38.5
     },
     "bet365": {
      "spread": -7.5,
@@ -28370,11 +28379,11 @@
      "total": 38.5
     },
     "Caesars": {
-     "spread": 5.5,
+     "spread": 5.0,
      "total": 38.5
     },
     "DraftKings": {
-     "spread": 5.5,
+     "spread": 4.5,
      "total": 38.5
     },
     "FanDuel": {
@@ -28390,7 +28399,7 @@
      "total": 39.5
     },
     "bet365": {
-     "spread": 5.5,
+     "spread": 4.5,
      "total": 37.5
     }
    },
@@ -29199,11 +29208,11 @@
    "books": {
     "BetMGM": {
      "spread": -22.5,
-     "total": 45.5
+     "total": 46.5
     },
     "Caesars": {
      "spread": -22.5,
-     "total": 45.5
+     "total": 46.0
     },
     "DraftKings": {
      "spread": -22.5,
@@ -29396,7 +29405,7 @@
   "UTSA @ UAB | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": 5.5,
+     "spread": 5.0,
      "total": 52.5
     },
     "Caesars": {
@@ -29404,7 +29413,7 @@
      "total": 52.5
     },
     "DraftKings": {
-     "spread": 6.0,
+     "spread": 5.5,
      "total": 52.5
     },
     "FanDuel": {
@@ -30520,7 +30529,7 @@
      "total": 56.5
     },
     "Caesars": {
-     "spread": 21.0,
+     "spread": 21.5,
      "total": 56.5
     },
     "DraftKings": {
@@ -30532,7 +30541,7 @@
      "total": 56.5
     },
     "Fanatics": {
-     "spread": 21.0,
+     "spread": 21.5,
      "total": 56.5
     },
     "Kalshi": {
@@ -31860,7 +31869,7 @@
   "Wisconsin @ Purdue | 2026-11-16": {
    "books": {
     "BetMGM": {
-     "spread": 6.0,
+     "spread": 5.5,
      "total": 44.5
     },
     "Caesars": {
