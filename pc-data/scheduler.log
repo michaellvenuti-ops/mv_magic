@@ -8989,3 +8989,15 @@
 [2026-11-16 02:07:47 ET] steam_side.py: OK in 5s — steam-side: 67 games, no new flags (silent).
 [2026-11-16 02:09:01 ET] dh_prop_middles.py: OK in 74s — PROP MIDDLE CLEAN : NBA CHI Bulls CLE Cavaliers Today 7:15 PM / table / Points M. Buzelis Under 15.5 / Points M. Buzelis Over 14.5 / table | theScore | Bet365 —
 [2026-11-16 02:09:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 02:27:17 ET] sync_to_github.py: FAILED (exit 1) in 1096s —   FAILED: pc-data/odds-recorder-summary.json (HTTP 409: {'error': '{"message":"is at 1738fb461f94a72efa83996ff018d6b772c81597 but expected 1c2e49fdbbd4750131160
+[2026-11-16 02:29:07 ET] odds_recorder.py: OK in 80s — SUMMARY: recorded 206 events (67 with odds), db total 293741 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 02:31:07 ET] dh_sog_middles.py: OK in 120s — - 0 deliverables this run
+[2026-11-16 02:31:09 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Baltimore 17.5/20.5 sits at -4.9c vs +EV.
+[2026-11-16 02:31:10 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 02:31:11 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 02:31:12 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 02:31:14 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 668 total tallied.
+[2026-11-16 02:31:16 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 02:31:16 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 02:31:18 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-16 02:31:18 ET] syncing to GitHub (regular 10-minute sync)
