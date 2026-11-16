@@ -9171,3 +9171,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 08:29:56 ET] dh_kalshi_poly_arb.py: OK in 26s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-16 08:29:58 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Prairie View A&M Ohio St. Today 6:30 PM — Total — Over 150.5 HardRock -145 ($107) / Under 154.5 FanDuel -105 ($93) — both win 151, 152, 153, 15
 [2026-11-16 08:29:58 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 08:50:21 ET] sync_to_github.py: FAILED (exit 1) in 1223s —   FAILED: pc-data/dump-positive-ev-sweep-2026-11-14.txt (HTTP 409: {'error': '{"message":"is at 50528efb2ff96f7574f3a637a4db4c205be80084 but expected 2811fb0d16
+[2026-11-16 08:55:19 ET] dh_key_number_middles.py: OK in 298s — key-number-middles: 612 basketball rows excluded (football-only rule).
+[2026-11-16 08:59:15 ET] dh_basketball_key_middles.py: OK in 236s — basketball-key-middles: no new basketball middles.
+[2026-11-16 08:59:21 ET] steam_side.py: OK in 5s — steam-side: 66 games, no new flags (silent).
+[2026-11-16 08:59:22 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 8 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-16.json
+[2026-11-16 08:59:24 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-16 08:59:31 ET] nhl_totals_scan.py: OK in 7s — NHL TOTALS FLAG UNDER: MTL @ NYR — predicted 5.16 vs book 6.5 (-135)
+[2026-11-16 08:59:34 ET] total_projectors_scan.py: OK in 4s — }
+[2026-11-16 08:59:38 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 8, 'NCAAB': 22}, new 0, moved 0, baselines 30.
+[2026-11-16 08:59:38 ET] syncing to GitHub (regular 10-minute sync)
