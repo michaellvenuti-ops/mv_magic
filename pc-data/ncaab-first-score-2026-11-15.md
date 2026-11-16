@@ -53,3 +53,7 @@
 ## 2026-11-15T20:31:13-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 662 games through 2026-11-15
 - 2026-11-15: Cal Poly Mustangs @ Montana State Bobcats — first: Cal Poly Mustangs (2PT, 0:40 in); lead changes 1; final 52-77
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T21:39:43-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 664 games through 2026-11-15
+- 2026-11-15: Syracuse Orange @ St. John's Red Storm — first: Syracuse Orange (2PT, 1:22 in); lead changes 5; final 62-79
+- 2026-11-15: Arkansas-Pine Bluff Golden Lions @ USC Trojans — first: USC Trojans (2PT, 1:16 in); lead changes 0; final 46-122
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
