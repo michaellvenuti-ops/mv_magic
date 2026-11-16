@@ -23,3 +23,4 @@ NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — Kalshi still dealing spre
 NEW FLAG: FBS Charlotte @ Tulsa | 2026-11-16 — Kalshi still dealing spread -21.5 on Tulsa (pre-move median -21.5, now -22.5)
 ## 2026-11-16T14:58:29-05:00 — 66 games, 1 steam events, 0 NEW flags
 ## 2026-11-16T16:14:16-05:00 — 66 games, 1 steam events, 0 NEW flags
+## 2026-11-16T17:16:05-05:00 — 66 games, 1 steam events, 0 NEW flags
