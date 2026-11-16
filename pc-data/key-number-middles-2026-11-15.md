@@ -26,3 +26,14 @@ KEY 14: NCAAF Eastern Michigan Western Michigan Nov-17 6:00 PM / table / Spread 
 NEW MIDDLE: KEY 6: NCAAF 2 Utah TCU Nov-21 9:00 PM / table / Spread Utah -5.5 / Spread TCU +6.5 / table | theScore | FanDuel margins [6] :: -115 $1,000 theScore, theScore, -115 / +100 $935 FanDuel, FanDuel, +100
 (end of new middles — full qualifying list below)
 KEY 6: NCAAF 2 Utah TCU Nov-21 9:00 PM / table / Spread Utah -5.5 / Spread TCU +6.5 / table | theScore | FanDuel margins [6] :: -115 $1,000 theScore, theScore, -115 / +100 $935 FanDuel, FanDuel, +100
+## 2026-11-15T19:32:00-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1990 + 0 rows parsed, qualifying only below — 4 NEW middles
+NEW MIDDLE: KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +5.5 / table | theScore | Bally Bet margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -105 $978 Bally Bet, Bally Bet, -105
+NEW MIDDLE: KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +4.5 / table | theScore | DraftKings margins [4] :: -110 $1,000 theScore, theScore, -110 / -106 $982 DraftKings, DraftKings, -106
+NEW MIDDLE: KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +5.5 / table | theScore | BetRivers margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -106 $982 BetRivers, BetRivers, -106
+NEW MIDDLE: KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Spread Michigan +5 / table | theScore | BetMGM margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -108 $991 BetMGM, BetMGM, -108
+(end of new middles — full qualifying list below)
+KEY 6: NCAAF 2 Utah TCU Nov-21 9:00 PM / table / Spread Utah -5.5 / Spread TCU +6.5 / table | theScore | FanDuel margins [6] :: -115 $1,000 theScore, theScore, -115 / +100 $935 FanDuel, FanDuel, +100
+KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +5.5 / table | theScore | Bally Bet margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -105 $978 Bally Bet, Bally Bet, -105
+KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +4.5 / table | theScore | DraftKings margins [4] :: -110 $1,000 theScore, theScore, -110 / -106 $982 DraftKings, DraftKings, -106
+KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Alt Spread Michigan +5.5 / table | theScore | BetRivers margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -106 $982 BetRivers, BetRivers, -106
+KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread UCLA -3.5 / Spread Michigan +5 / table | theScore | BetMGM margins [4, 5] :: -110 $1,000 theScore, theScore, -110 / -108 $991 BetMGM, BetMGM, -108
