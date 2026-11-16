@@ -46,3 +46,7 @@
 - 2026-11-15: Western Michigan Broncos @ Southern Indiana Screaming Eagles — first: Southern Indiana Screaming Eagles (3PT, 0:23 in); lead changes 3; final 80-59
 - 2026-11-15: New Haven Chargers @ Penn State Nittany Lions — first: New Haven Chargers (2PT, 1:01 in); lead changes 1; final 52-86
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T19:39:25-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 661 games through 2026-11-15
+- 2026-11-15: Ecclesia Royals @ UT Martin Skyhawks — first: UT Martin Skyhawks (3PT, 0:11 in); lead changes 0; final 44-128
+- 2026-11-15: Canisius Golden Griffins @ Buffalo Bulls — first: Buffalo Bulls (2PT, 0:42 in); lead changes 4; final 55-79
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
