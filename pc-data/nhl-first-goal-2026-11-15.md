@@ -3,3 +3,5 @@
 ## 2026-11-15T01:57:20-05:00 -- NHL FIRST GOAL (PC): 2 new final(s) tallied; season 317 games through 2026-11-14
 - 2026-11-14: New York Islanders @ Anaheim Ducks — first goal: New York Islanders (EV, Ben Hutton, 18:05 in); lead changes 0; final 6-2
 - 2026-11-14: Calgary Flames @ Los Angeles Kings — first goal: Calgary Flames (EV, Morgan Frost, 37:47 in); lead changes 0; final 3-2
+## 2026-11-15T22:26:56-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 318 games through 2026-11-15
+- 2026-11-15: Edmonton Oilers @ Philadelphia Flyers — first goal: Edmonton Oilers (PP, Leon Draisaitl, 11:52 in); lead changes 0; final 5-2
