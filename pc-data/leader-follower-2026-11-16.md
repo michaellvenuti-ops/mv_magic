@@ -49,3 +49,9 @@
 ## 2026-11-16T13:58:27-05:00 — no-follow: Fanatics Georgia Southern @ Troy | 2026-11-16 spread (only 1 followed)
 ## 2026-11-16T13:58:27-05:00 — no-follow: Kalshi Colorado State @ Fresno State | 2026-11-16 spread (only 1 followed)
 ## 2026-11-16T13:58:27-05:00 — 80 games, 0 leads credited, 13 started games skipped
+## 2026-11-16T15:15:43-05:00 — no-follow: Caesars Miami (OH) @ Kent State | 2026-11-16 spread (only 2 followed)
+## 2026-11-16T15:15:44-05:00 — no-follow: Kalshi Wisconsin @ Purdue | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T15:15:44-05:00 — pack move, never credited: Iowa @ Illinois | 2026-11-16 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-16T15:15:44-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 spread (FanDuel, Kalshi)
+## 2026-11-16T15:15:44-05:00 — no-follow: FanDuel Washington State @ Texas State | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T15:15:44-05:00 — 80 games, 0 leads credited, 13 started games skipped
