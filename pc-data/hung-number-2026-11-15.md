@@ -1,5 +1,9 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 21:36)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 22:53)
 
+- Steelers vs Bengals | Caesars | spread | value: favorite | book 16.5 vs median 20.5 | div 4.0 
+- Steelers vs Bengals | Hard Rock | spread | value: favorite | book 16.5 vs median 20.5 | div 4.0 
+- Steelers vs Bengals | Caesars | total | value: Under | book 47.5 vs median 50.5 | div 3.0 
+- Steelers vs Bengals | Hard Rock | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Fanatics | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
 - Dolphins vs Colts | bet365 | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
