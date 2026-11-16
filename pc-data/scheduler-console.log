@@ -9145,3 +9145,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 07:34:45 ET] dh_basketball_key_middles.py: OK in 222s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Alcorn St. Maryland Today 6:00 PM / table / Spread Alcorn St. +36.5 / Alt Spread Maryland -34.5 / table
 [2026-11-16 07:34:51 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 | FanDuel | Miami (OH) spread 8.5 (median 8.5 -> 9.5)
 [2026-11-16 07:34:52 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 07:54:38 ET] sync_to_github.py: FAILED (exit 1) in 1186s —   FAILED: basketball-key-middles-board-pc.html (HTTP 409: {'error': '{"message":"is at ace27b02bdc164368712d29f08aef1865c212ad6 but expected 070309eb46fea1326e9
+[2026-11-16 07:56:45 ET] odds_recorder.py: OK in 97s — SUMMARY: recorded 206 events (67 with odds), db total 295389 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 07:56:46 ET] wide_builds.py: OK in 1s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 07:57:58 ET] dh_low_holds.py: OK in 72s — LOW-HOLDS: NFL IND Colts HOU Texans Nov-19 8:15 PM / table bar_chart / Touchdowns D. Burks Over 0.5 NO / Touchdowns D. Burks Over 0.5 / table | Kalshi | Fanatic
+[2026-11-16 08:00:00 ET] dh_game_middles.py: OK in 122s — GAME MIDDLE: NBA HOU Rockets MIA Heat Today 7:45 PM / table / Alt Total Over 227.5 / Alt Total Under 228 / table bar_chart | Bally Bet | ProphetX — window 243.0
+[2026-11-16 08:01:20 ET] hung_number.py: OK in 80s — HUNG NUMBER: Arizona vs Kansas State — FanDuel spread value favorite (-8.5 vs median -7.5)
+[2026-11-16 08:01:25 ET] rlm.py: OK in 5s
+[2026-11-16 08:01:29 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 08:03:05 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE CLEAN : NCAAB Prairie View A&M Ohio St. Today 6:30 PM / table / Alt Total Over 151.5 / Alt Total Under 152.5 / table | HardRock | FanDuel — window 2
+[2026-11-16 08:05:13 ET] dh_sog_middles.py: OK in 127s — - 0 deliverables this run
+[2026-11-16 08:05:18 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Baltimore 17.5/20.5 sits at -4.9c vs +EV.
+[2026-11-16 08:05:20 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 08:05:21 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 08:05:22 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 08:05:24 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 668 total tallied.
+[2026-11-16 08:05:25 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 08:05:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 08:05:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-16 08:05:27 ET] syncing to GitHub (regular 10-minute sync)
