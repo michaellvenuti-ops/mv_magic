@@ -48,3 +48,4 @@ NEW MIDDLE: KEY 6: NFL CIN Bengals WAS Commanders Nov-23 8:15 PM / table / Sprea
 KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread Michigan +4.5 / Spread UCLA -3.5 / table | Bally Bet | theScore margins [4] :: -114 $1,000 Bally Bet, Bally Bet, -114 / +100 $939 theScore, theScore, +100
 KEY 4: NCAAF 4 UCLA Michigan Nov-21 3:30 PM / table / Spread Michigan +4.5 / Spread UCLA -3.5 / table | BetRivers | theScore margins [4] :: -115 $1,000 BetRivers, BetRivers, -115 / +100 $935 theScore, theScore, +100
 KEY 6: NFL CIN Bengals WAS Commanders Nov-23 8:15 PM / table / Spread CIN Bengals -4.5 / Alt Spread WAS Commanders +6 / table | DraftKings | Fanatics-NJ margins [5, 6] :: -110 $1,000 DraftKings, DraftKings, -110 / -105 $978 Fanatics-NJ, Fanatics-NJ, -105
+## 2026-11-16T11:34:48-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1984 + 0 rows parsed, qualifying only below — 0 NEW middles
