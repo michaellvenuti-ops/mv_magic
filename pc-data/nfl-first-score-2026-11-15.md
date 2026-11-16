@@ -11,3 +11,5 @@
 ## 2026-11-15T19:39:20-05:00 -- NFL FIRST SCORE (PC): 2 new final(s) tallied; season 146 games through 2026-11-15
 - 2026-11-15: Seattle Seahawks @ Las Vegas Raiders — first: Las Vegas Raiders; lead changes 1; final 21-13
 - 2026-11-15: Los Angeles Rams @ Arizona Cardinals — first: Arizona Cardinals; lead changes 1; final 34-6
+## 2026-11-15T20:31:08-05:00 -- NFL FIRST SCORE (PC): 1 new final(s) tallied; season 147 games through 2026-11-15
+- 2026-11-15: San Francisco 49ers @ Dallas Cowboys — first: Dallas Cowboys; lead changes 3; final 46-40
