@@ -1453,13 +1453,23 @@
   },
   {
    "date": "2026-11-15",
+   "away": "Pittsburgh Steelers",
+   "home": "Cincinnati Bengals",
+   "first": "Cincinnati Bengals",
+   "seq": "0-3>0-10>0-17>3-17>3-24>3-31>11-31>11-38>18-38",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "18-38"
+  },
+  {
    "away": "San Francisco 49ers",
-   "home": "Dallas Cowboys",
+   "date": "2026-11-15",
+   "final": "46-40",
    "first": "Dallas Cowboys",
-   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "home": "Dallas Cowboys",
    "lead_changes": 3,
-   "ties": 1,
-   "final": "46-40"
+   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "ties": 1
   },
   {
    "away": "Seattle Seahawks",
@@ -1551,14 +1561,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Pittsburgh Steelers": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 5,
    "won_when_first": 4,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 62.5,
+   "scored_first_pct": 55.6,
    "win_pct_when_first": 80.0,
-   "win_pct_when_not_first": 66.7,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Baltimore Ravens": {
@@ -1771,12 +1781,12 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Cincinnati Bengals": {
-   "gp": 8,
-   "scored_first": 2,
-   "won_when_first": 2,
+   "gp": 9,
+   "scored_first": 3,
+   "won_when_first": 3,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 25.0,
+   "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
@@ -1827,15 +1837,15 @@
   }
  },
  "league": {
-  "games": 147,
-  "games_with_goal": 147,
-  "home_scored_first": 73,
-  "first_team_won": 92,
+  "games": 148,
+  "games_with_goal": 148,
+  "home_scored_first": 74,
+  "first_team_won": 93,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.4,
-  "avg_lead_changes": 1.29,
-  "home_scored_first_pct": 49.7,
-  "first_team_win_pct": 62.6
+  "avg_lead_changes": 1.28,
+  "home_scored_first_pct": 50.0,
+  "first_team_win_pct": 62.8
  },
  "lead_changes": [
   {
@@ -3290,13 +3300,23 @@
   },
   {
    "date": "2026-11-15",
+   "away": "Pittsburgh Steelers",
+   "home": "Cincinnati Bengals",
+   "first": "Cincinnati Bengals",
+   "seq": "0-3>0-10>0-17>3-17>3-24>3-31>11-31>11-38>18-38",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "18-38"
+  },
+  {
    "away": "San Francisco 49ers",
-   "home": "Dallas Cowboys",
+   "date": "2026-11-15",
+   "final": "46-40",
    "first": "Dallas Cowboys",
-   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "home": "Dallas Cowboys",
    "lead_changes": 3,
-   "ties": 1,
-   "final": "46-40"
+   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "ties": 1
   },
   {
    "away": "Seattle Seahawks",
@@ -3346,9 +3366,9 @@
    "avg_per_game": 0.7
   },
   "Pittsburgh Steelers": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 9,
-   "avg_per_game": 1.12
+   "avg_per_game": 1.0
   },
   "Baltimore Ravens": {
    "games": 9,
@@ -3446,9 +3466,9 @@
    "avg_per_game": 0.44
   },
   "Cincinnati Bengals": {
-   "games": 8,
+   "games": 9,
    "lead_changes": 12,
-   "avg_per_game": 1.5
+   "avg_per_game": 1.33
   },
   "Washington Commanders": {
    "games": 9,
