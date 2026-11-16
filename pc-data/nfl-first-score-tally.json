@@ -1412,14 +1412,14 @@
    "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Los Angeles Rams",
-   "home": "Arizona Cardinals",
+   "date": "2026-11-15",
+   "final": "34-6",
    "first": "Arizona Cardinals",
-   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "home": "Arizona Cardinals",
    "lead_changes": 1,
-   "ties": 1,
-   "final": "34-6"
+   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "ties": 1
   },
   {
    "away": "Miami Dolphins",
@@ -1453,13 +1453,23 @@
   },
   {
    "date": "2026-11-15",
-   "away": "Seattle Seahawks",
-   "home": "Las Vegas Raiders",
-   "first": "Las Vegas Raiders",
-   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
-   "lead_changes": 1,
+   "away": "San Francisco 49ers",
+   "home": "Dallas Cowboys",
+   "first": "Dallas Cowboys",
+   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "lead_changes": 3,
    "ties": 1,
-   "final": "21-13"
+   "final": "46-40"
+  },
+  {
+   "away": "Seattle Seahawks",
+   "date": "2026-11-15",
+   "final": "21-13",
+   "first": "Las Vegas Raiders",
+   "home": "Las Vegas Raiders",
+   "lead_changes": 1,
+   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
+   "ties": 1
   }
  ],
  "tally": {
@@ -1486,12 +1496,12 @@
    "won_by_one_when_first_pct": 0.0
   },
   "San Francisco 49ers": {
-   "gp": 8,
+   "gp": 9,
    "scored_first": 7,
    "won_when_first": 6,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 87.5,
+   "scored_first_pct": 77.8,
    "win_pct_when_first": 85.7,
    "win_pct_when_not_first": 100.0,
    "won_by_one_when_first_pct": 0.0
@@ -1640,13 +1650,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Dallas Cowboys": {
-   "gp": 9,
-   "scored_first": 6,
+   "gp": 10,
+   "scored_first": 7,
    "won_when_first": 3,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 66.7,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 70.0,
+   "win_pct_when_first": 42.9,
    "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1817,15 +1827,15 @@
   }
  },
  "league": {
-  "games": 146,
-  "games_with_goal": 146,
-  "home_scored_first": 72,
+  "games": 147,
+  "games_with_goal": 147,
+  "home_scored_first": 73,
   "first_team_won": 92,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.4,
-  "avg_lead_changes": 1.28,
-  "home_scored_first_pct": 49.3,
-  "first_team_win_pct": 63.0
+  "avg_lead_changes": 1.29,
+  "home_scored_first_pct": 49.7,
+  "first_team_win_pct": 62.6
  },
  "lead_changes": [
   {
@@ -3239,14 +3249,14 @@
    "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Los Angeles Rams",
-   "home": "Arizona Cardinals",
+   "date": "2026-11-15",
+   "final": "34-6",
    "first": "Arizona Cardinals",
-   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "home": "Arizona Cardinals",
    "lead_changes": 1,
-   "ties": 1,
-   "final": "34-6"
+   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "ties": 1
   },
   {
    "away": "Miami Dolphins",
@@ -3280,13 +3290,23 @@
   },
   {
    "date": "2026-11-15",
-   "away": "Seattle Seahawks",
-   "home": "Las Vegas Raiders",
-   "first": "Las Vegas Raiders",
-   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
-   "lead_changes": 1,
+   "away": "San Francisco 49ers",
+   "home": "Dallas Cowboys",
+   "first": "Dallas Cowboys",
+   "seq": "0-3>7-3>7-10>10-10>10-16>17-16>24-16>24-19>31-19>38-19>38-25>38-32>46-32>46-40",
+   "lead_changes": 3,
    "ties": 1,
-   "final": "21-13"
+   "final": "46-40"
+  },
+  {
+   "away": "Seattle Seahawks",
+   "date": "2026-11-15",
+   "final": "21-13",
+   "first": "Las Vegas Raiders",
+   "home": "Las Vegas Raiders",
+   "lead_changes": 1,
+   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
+   "ties": 1
   }
  ],
  "lead_change_team_avgs": {
@@ -3301,9 +3321,9 @@
    "avg_per_game": 0.9
   },
   "San Francisco 49ers": {
-   "games": 8,
-   "lead_changes": 8,
-   "avg_per_game": 1.0
+   "games": 9,
+   "lead_changes": 11,
+   "avg_per_game": 1.22
   },
   "Los Angeles Rams": {
    "games": 10,
@@ -3371,9 +3391,9 @@
    "avg_per_game": 0.78
   },
   "Dallas Cowboys": {
-   "games": 9,
-   "lead_changes": 18,
-   "avg_per_game": 2.0
+   "games": 10,
+   "lead_changes": 21,
+   "avg_per_game": 2.1
   },
   "New York Giants": {
    "games": 9,
