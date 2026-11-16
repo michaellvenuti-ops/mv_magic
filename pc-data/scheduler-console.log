@@ -8846,3 +8846,12 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-15 19:39:27 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
 [2026-11-15 19:39:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-15 19:39:28 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 19:55:05 ET] sync_to_github.py: FAILED (exit 1) in 936s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-15 19:56:43 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (11 with odds), db total 290493 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 19:56:44 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 19:57:28 ET] dh_low_holds.py: OK in 44s — LOW-HOLDS: NBA OKC Thunder SAC Kings Today 9:15 PM / table / Rebounds K. Murray Under 4.5 / Alt Rebounds K. Murray 5+ / table | FanDuel | Fanatics-NJ
+[2026-11-15 19:58:49 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NCAAF South Florida Florida Atlantic Nov-21 2:30 PM / table / Total Under 67.5 / Alt Total Over 67 / table | Bally Bet | Fanatics-NJ — window 230.0
+[2026-11-15 19:59:53 ET] hung_number.py: OK in 64s — HUNG NUMBER: Rams vs Cardinals — bet365 spread value favorite (-10.5 vs median -9.5)
+[2026-11-15 19:59:58 ET] rlm.py: OK in 4s
+[2026-11-15 20:00:01 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 20:00:01 ET] syncing to GitHub (regular 10-minute sync)
