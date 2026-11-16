@@ -8985,3 +8985,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 00:05:23 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 364 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-16 00:05:24 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-16 00:05:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 00:23:20 ET] sync_to_github.py: FAILED (exit 1) in 1075s —   FAILED: pc-data/dump-positive-ev-sweep-2026-11-15.txt (HTTP 409: {'error': '{"message":"is at e6c51fc4c3e87d9957d63a43d3303406ad3db712 but expected 8c92f75129
+[2026-11-16 00:25:03 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 206 events (67 with odds), db total 293123 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 00:25:43 ET] dh_arbitrage.py: OK in 40s — ARBITRAGE: NBA ORL Magic BOS Celtics Today 7:15 PM / table / Assists P. Pritchard Under 4.5 / Alt Assists P. Pritchard 5+ / table | DraftKings | Bally Bet
+[2026-11-16 00:26:03 ET] dh_kalshi_poly_arb.py: OK in 21s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 00:26:05 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHI 76ers BKN Nets Nov-16 7:45 PM — Total — Over 223.5 theScore -120 ($100) / Under 227 Fanatics-NJ -120 ($100) — both win 224, 225, 226 — push a
+[2026-11-16 00:26:05 ET] syncing to GitHub (wide-builds banked new builds)
