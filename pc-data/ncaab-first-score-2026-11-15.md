@@ -50,3 +50,6 @@
 - 2026-11-15: Ecclesia Royals @ UT Martin Skyhawks — first: UT Martin Skyhawks (3PT, 0:11 in); lead changes 0; final 44-128
 - 2026-11-15: Canisius Golden Griffins @ Buffalo Bulls — first: Buffalo Bulls (2PT, 0:42 in); lead changes 4; final 55-79
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T20:31:13-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 662 games through 2026-11-15
+- 2026-11-15: Cal Poly Mustangs @ Montana State Bobcats — first: Cal Poly Mustangs (2PT, 0:40 in); lead changes 1; final 52-77
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
