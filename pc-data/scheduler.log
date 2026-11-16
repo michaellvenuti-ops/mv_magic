@@ -9006,3 +9006,14 @@
 [2026-11-16 02:52:11 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 206 events (67 with odds), db total 293947 snapshots / 1238 events, feeds ok 6 fail 0
 [2026-11-16 02:52:12 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHO Suns DEN Nuggets Today 9:15 PM — Total — Over 226.5 theScore -120 ($98) / Under 230.5 FanDuel -130 ($102) — both win 227, 228, 229, 230 — lan
 [2026-11-16 02:52:12 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 03:10:35 ET] sync_to_github.py: FAILED (exit 1) in 1103s —   FAILED: pc-data/prop-middles-2026-11-08.md (HTTP 409: {'error': '{"message":"is at 013e23ae2bf0c3b7b2c04c7e0bafe79d6ddf40c8 but expected 45c5adfb1ab095fac9076
+[2026-11-16 03:12:17 ET] dh_low_holds.py: OK in 102s — LOW-HOLDS: M15 Orlando J. Weber K. Ampaw Today 11:30 AM / table / Moneyline K. Ampaw / Moneyline J. Weber / table | Bet365 | BetMGM
+[2026-11-16 03:14:55 ET] dh_game_middles.py: OK in 158s — GAME MIDDLE: NBA ORL Magic BOS Celtics Today 7:15 PM / table / Points N. Queta Over 9.5 / Points N. Queta Under 10.5 / table | Bally Bet | Bet365 — window 208.0
+[2026-11-16 03:18:24 ET] dh_key_number_middles.py: OK in 209s — key-number-middles: 580 basketball rows excluded (football-only rule).
+[2026-11-16 03:21:57 ET] dh_basketball_key_middles.py: OK in 213s — basketball-key-middles: no new basketball middles.
+[2026-11-16 03:23:07 ET] hung_number.py: OK in 70s — HUNG NUMBER: UTSA vs UAB — FanDuel spread value favorite (-6.5 vs median -5.5)
+[2026-11-16 03:23:12 ET] rlm.py: OK in 5s
+[2026-11-16 03:23:16 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 03:23:19 ET] steam_side.py: OK in 3s — steam-side: 66 games, no new flags (silent).
+[2026-11-16 03:24:37 ET] dh_prop_middles.py: OK in 78s — PROP MIDDLE CLEAN : NBA ORL Magic BOS Celtics Today 7:15 PM / table / Alt Points N. Queta 10+ / Points N. Queta Under 10.5 / table | FanDuel | Bet365 — window 2
+[2026-11-16 03:24:38 ET] syncing to GitHub (regular 10-minute sync)
