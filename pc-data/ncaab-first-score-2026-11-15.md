@@ -61,3 +61,6 @@
 - 2026-11-15: Texas State Bobcats @ UTSA Roadrunners — first: Texas State Bobcats (2PT, 0:26 in); lead changes 4; final 87-67
 - 2026-11-15: Coastal Carolina Chanticleers @ Wisconsin Badgers — first: Wisconsin Badgers (3PT, 0:46 in); lead changes 2; final 81-89
 - note: 3 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T23:02:50-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 667 games through 2026-11-15
+- 2026-11-15: Alabama State Hornets @ San José State Spartans — first: Alabama State Hornets (3PT, 0:48 in); lead changes 3; final 68-80
+- note: 3 final(s) UNVERIFIED this run — left out, retried next run.
