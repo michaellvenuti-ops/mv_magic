@@ -30,3 +30,17 @@
 ## 2026-11-16T10:57:35-05:00 — pack move, never credited: Utah @ TCU | 2026-11-16 spread (FanDuel, bet365)
 ## 2026-11-16T10:57:35-05:00 — pack move, never credited: Hawai'i @ Nevada | 2026-11-16 spread (Kalshi, bet365)
 ## 2026-11-16T10:57:35-05:00 — 80 games, 0 leads credited, 13 started games skipped
+## 2026-11-16T12:30:18-05:00 — no-follow: Kalshi Central Michigan @ Buffalo | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T12:30:18-05:00 — no-follow: FanDuel Rice @ Temple | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Iowa State @ UCF | 2026-11-16 spread (DraftKings, Kalshi)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Syracuse @ Boston College | 2026-11-16 spread (FanDuel, Kalshi, bet365)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Wake Forest @ Georgia Tech | 2026-11-16 spread (FanDuel, Fanatics, bet365)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Ohio State @ Nebraska | 2026-11-16 spread (Kalshi, bet365)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Houston @ West Virginia | 2026-11-16 spread (DraftKings, bet365)
+## 2026-11-16T12:30:18-05:00 — no-follow: FanDuel Western Kentucky @ Liberty | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Charlotte @ Tulsa | 2026-11-16 spread (Caesars, FanDuel, bet365)
+## 2026-11-16T12:30:18-05:00 — no-follow: Kalshi Iowa @ Illinois | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T12:30:18-05:00 — no-follow: FanDuel Old Dominion @ UConn | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 spread (BetMGM, Caesars, FanDuel, bet365)
+## 2026-11-16T12:30:18-05:00 — pack move, never credited: Maryland @ USC | 2026-11-16 spread (FanDuel, bet365)
+## 2026-11-16T12:30:18-05:00 — 80 games, 0 leads credited, 13 started games skipped
