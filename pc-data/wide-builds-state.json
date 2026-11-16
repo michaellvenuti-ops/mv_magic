@@ -1374,6 +1374,41 @@
     154
    ]
   },
+  "NCAAB Alcorn St. Maryland Today 6:00 PM|Spread|Maryland -32.5|Alcorn St. +35.5": {
+   "first_reported": "2026-11-16T08:29:57-05:00",
+   "game": "NCAAB Alcorn St. Maryland Today 6:00 PM",
+   "game_date": "2026-11-16",
+   "land_profit": 161.94,
+   "last_seen": "2026-11-16",
+   "league": "NCAAB",
+   "leg1": {
+    "book": "Bet365",
+    "price": -160,
+    "side": "Maryland -32.5",
+    "stake": 111.0
+   },
+   "leg2": {
+    "book": "BetParx",
+    "price": 104,
+    "side": "Alcorn St. +35.5",
+    "stake": 89.0
+   },
+   "margin_team": "Maryland",
+   "market": "Spread",
+   "miss_pl": {
+    "high": -19.62,
+    "low": -18.44
+   },
+   "push": [],
+   "source_scan": "game-middles",
+   "tipoff_et": "6:00 PM",
+   "total_staked": 200.0,
+   "window": [
+    33,
+    34,
+    35
+   ]
+  },
   "NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM|Spread|USC -47.5|Arkansas-Pine Bluff +50.5": {
    "first_reported": "2026-11-15T10:40:24-05:00",
    "game": "NCAAB Arkansas-Pine Bluff 21 USC Today 7:00 PM",
@@ -3072,6 +3107,42 @@
     44,
     45,
     46
+   ]
+  },
+  "NCAAB Prairie View A&M Ohio St. Today 6:30 PM|Total|Over 150.5|Under 154.5": {
+   "first_reported": "2026-11-16T08:29:57-05:00",
+   "game": "NCAAB Prairie View A&M Ohio St. Today 6:30 PM",
+   "game_date": "2026-11-16",
+   "land_profit": 162.36,
+   "last_seen": "2026-11-16",
+   "league": "NCAAB",
+   "leg1": {
+    "book": "HardRock",
+    "price": -145,
+    "side": "Over 150.5",
+    "stake": 107.0
+   },
+   "leg2": {
+    "book": "FanDuel",
+    "price": -105,
+    "side": "Under 154.5",
+    "stake": 93.0
+   },
+   "margin_team": null,
+   "market": "Total",
+   "miss_pl": {
+    "high": -19.21,
+    "low": -18.43
+   },
+   "push": [],
+   "source_scan": "game-middles + prop-middles",
+   "tipoff_et": "6:30 PM",
+   "total_staked": 200.0,
+   "window": [
+    151,
+    152,
+    153,
+    154
    ]
   },
   "NCAAB Quinnipiac Central Connecticut Today 12:00 PM|Total|Over 134|Under 137.5": {
