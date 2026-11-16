@@ -9343,3 +9343,16 @@
 [2026-11-16 17:38:33 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 191 events (98 with odds), db total 298123 snapshots / 1281 events, feeds ok 6 fail 0
 [2026-11-16 17:38:35 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Delaware New Mexico St. Nov-21 3:00 PM — Spread — Delaware -3.5 Fanatics-NJ +110 ($88) / New Mexico St. +6.5 FanDuel -150 ($112) — both win 4, 
 [2026-11-16 17:38:35 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 17:58:24 ET] sync_to_github.py: FAILED (exit 1) in 1189s —   FAILED: pc-data/spread-cover-2026-11-14.md (HTTP 409: {'error': '{"message":"is at ca636fca2357841568659b085c8e8ab69963044d but expected 8215e05f9fbf68ab02935
+[2026-11-16 18:02:30 ET] dh_game_middles.py: OK in 246s — GAME MIDDLE: NCAAB Central Arkansas Oklahoma St. Today 8:00 PM / table / Alt Total Over 159.5 / Alt Total Under 160 / table bar_chart | HardRock | ProphetX — wi
+[2026-11-16 18:04:11 ET] dh_prop_middles.py: OK in 101s — PROP MIDDLE CLEAN : NBA PHO Suns DEN Nuggets Today 9:15 PM / table / Pts+Ast+Rebs D. Booker Under 33.5 / Pts+Ast+Rebs D. Booker 33+ / table | Bet365 | Fanatics-
+[2026-11-16 18:06:25 ET] dh_sog_middles.py: OK in 134s — - 0 deliverables this run
+[2026-11-16 18:06:28 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Tennessee 21.5/24.5 sits at -4.3c vs +EV
+[2026-11-16 18:06:30 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 18:06:31 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 18:06:32 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 18:06:34 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 672 total tallied.
+[2026-11-16 18:06:35 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 18:06:36 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 18:06:37 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 5 game(s) refreshed, 0 deliverable change(s).
+[2026-11-16 18:06:37 ET] syncing to GitHub (regular 10-minute sync)
