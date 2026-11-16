@@ -55,3 +55,16 @@
 ## 2026-11-16T15:15:44-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 spread (FanDuel, Kalshi)
 ## 2026-11-16T15:15:44-05:00 — no-follow: FanDuel Washington State @ Texas State | 2026-11-16 spread (only 0 followed)
 ## 2026-11-16T15:15:44-05:00 — 80 games, 0 leads credited, 13 started games skipped
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: Rice @ Temple | 2026-11-16 total (BetMGM, Caesars, DraftKings, Fanatics, Kalshi)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: Clemson @ Duke | 2026-11-16 total (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: UTEP @ Air Force | 2026-11-16 total (Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-16T16:41:35-05:00 — no-follow: DraftKings Western Kentucky @ Liberty | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T16:41:35-05:00 — no-follow: FanDuel Missouri State @ Jacksonville State | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T16:41:35-05:00 — no-follow: Kalshi UCLA @ Michigan | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: Georgia State @ Marshall | 2026-11-16 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: South Alabama @ Southern Miss | 2026-11-16 total (Caesars, Fanatics, Kalshi, bet365)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: Washington State @ Texas State | 2026-11-16 total (BetMGM, Fanatics, Kalshi)
+## 2026-11-16T16:41:35-05:00 — no-follow: Kalshi Georgia @ South Carolina | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T16:41:35-05:00 — pack move, never credited: Colorado State @ Fresno State | 2026-11-16 total (FanDuel, Fanatics)
+## 2026-11-16T16:41:35-05:00 — 80 games, 1 leads credited, 13 started games skipped
+LEAD: Caesars on Miami (OH) @ Kent State | 2026-11-16 (spread)
