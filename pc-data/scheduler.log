@@ -9235,3 +9235,9 @@
 [2026-11-16 12:34:27 ET] public_fade.py: OK in 3s
 [2026-11-16 12:36:00 ET] dh_positive_ev.py: FAILED (exit 2) in 94s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-16.txt. No prices inven
 [2026-11-16 12:36:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 12:56:42 ET] sync_to_github.py: FAILED (exit 1) in 1241s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-10.md (HTTP 409: {'error': '{"message":"is at 931c49358ef36b79f0ea97fd3524ac3cf88d4159 but expected 7c007528bf
+[2026-11-16 12:58:25 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 191 events (99 with odds), db total 296786 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 12:59:44 ET] dh_arbitrage.py: OK in 79s — ARBITRAGE: NBA ORL Magic BOS Celtics Today 7:15 PM / table / Points P. George Under 19.5 / Alt Points P. George 20+ / table | BetRivers | DraftKings
+[2026-11-16 13:00:09 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 13:00:11 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Grambling St. 24 Kentucky Today 7:00 PM — Total — Over 152 Caesars -110 ($96) / Under 155.5 HardRock -130 ($104) — both win 153, 154, 155 — pus
+[2026-11-16 13:00:11 ET] syncing to GitHub (wide-builds banked new builds)
