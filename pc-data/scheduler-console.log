@@ -9316,3 +9316,28 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 14:26:12 ET] dh_kalshi_poly_arb.py: OK in 29s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-16 14:26:14 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Bowling Green Toledo Nov-20 7:30 PM — Total — Over 47.5 HardRock -110 ($95) / Under 51 Fanatics-NJ -140 ($105) — both win 48, 49, 50 — push at 
 [2026-11-16 14:26:15 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 14:46:22 ET] sync_to_github.py: OK in 1207s —   ok: team-total-middles-board-pc.html
+[2026-11-16 14:48:46 ET] notify.py: OK in 144s — notify: voice clip failed (HTTP Error 413: Request Entity Too Large); text ping only.
+[2026-11-16 14:54:31 ET] dh_key_number_middles.py: OK in 345s — key-number-middles: 478 basketball rows excluded (football-only rule).
+[2026-11-16 14:58:23 ET] dh_basketball_key_middles.py: OK in 232s — basketball-key-middles: no new basketball middles.
+[2026-11-16 14:58:29 ET] steam_side.py: OK in 6s — steam-side: 66 games, no new flags (silent).
+[2026-11-16 14:58:29 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 15:09:50 ET] sync_to_github.py: FAILED (exit 1) in 680s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-16 15:11:34 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 191 events (98 with odds), db total 297359 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 15:11:36 ET] wide_builds.py: OK in 1s — wide_builds: 10 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 15:12:54 ET] dh_low_holds.py: OK in 78s — LOW-HOLDS: NBA ORL Magic BOS Celtics Today 7:15 PM / table / 3PT FGs F. Wagner Over 1.5 / 3PT FGs F. Wagner Under 1.5 / table | BetMGM | BetRivers
+[2026-11-16 15:14:29 ET] dh_game_middles.py: OK in 95s — GAME MIDDLE: NCAAF South Florida Florida Atlantic Nov-21 2:30 PM / table / Alt Total Over 64 / Alt Total Under 64.5 / table | Fanatics-NJ | Bally Bet — window 2
+[2026-11-16 15:15:35 ET] hung_number.py: OK in 66s — No new hung numbers (14 current flags).
+[2026-11-16 15:15:40 ET] rlm.py: OK in 5s
+[2026-11-16 15:15:44 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 15:17:19 ET] dh_prop_middles.py: OK in 95s — prop-middles: no new/changed qualifying middles.
+[2026-11-16 15:19:09 ET] dh_sog_middles.py: OK in 110s — - 0 deliverables this run
+[2026-11-16 15:19:12 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles C 16.5/17.5 sits at -4.3c vs
+[2026-11-16 15:19:13 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 15:19:14 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 15:19:15 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 15:19:17 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 2 unverified, 671 total tallied.
+[2026-11-16 15:19:18 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 15:19:19 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 15:19:20 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-16 15:19:20 ET] syncing to GitHub (regular 10-minute sync)
