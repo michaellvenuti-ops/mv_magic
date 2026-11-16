@@ -57,3 +57,7 @@
 - 2026-11-15: Syracuse Orange @ St. John's Red Storm — first: Syracuse Orange (2PT, 1:22 in); lead changes 5; final 62-79
 - 2026-11-15: Arkansas-Pine Bluff Golden Lions @ USC Trojans — first: USC Trojans (2PT, 1:16 in); lead changes 0; final 46-122
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T22:26:58-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 666 games through 2026-11-15
+- 2026-11-15: Texas State Bobcats @ UTSA Roadrunners — first: Texas State Bobcats (2PT, 0:26 in); lead changes 4; final 87-67
+- 2026-11-15: Coastal Carolina Chanticleers @ Wisconsin Badgers — first: Wisconsin Badgers (3PT, 0:46 in); lead changes 2; final 81-89
+- note: 3 final(s) UNVERIFIED this run — left out, retried next run.
