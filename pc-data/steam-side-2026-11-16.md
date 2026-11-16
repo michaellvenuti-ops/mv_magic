@@ -15,3 +15,4 @@ NEW FLAG: FBS UCLA @ Michigan | 2026-11-16 — Fanatics still dealing spread 5.0
 NEW FLAG: FBS Colorado State @ Fresno State | 2026-11-16 — Fanatics still dealing spread -21.5 on Colorado State (pre-move median -21.5, now -20.5)
 NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Fanatics still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
 NEW FLAG: FBS UTSA @ UAB | 2026-11-16 — Kalshi still dealing spread 5.5 on UTSA (pre-move median 5.5, now 6.5)
+## 2026-11-16T11:38:42-05:00 — 66 games, 0 steam events, 0 NEW flags
