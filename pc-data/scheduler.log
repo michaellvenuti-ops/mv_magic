@@ -9248,3 +9248,23 @@
 [2026-11-16 13:28:47 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=3 queued_total=17
 [2026-11-16 13:28:47 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
 [2026-11-16 13:28:48 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 13:49:03 ET] sync_to_github.py: OK in 1215s —   ok: team-total-middles-board-pc.html
+[2026-11-16 13:50:00 ET] notify.py: OK in 57s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-16 13:51:41 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 191 events (99 with odds), db total 296977 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 13:51:42 ET] wide_builds.py: OK in 1s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 13:54:29 ET] dh_low_holds.py: OK in 167s — LOW-HOLDS: NCAAF 13 Kentucky Missouri Nov-21 7:30 PM / table / Alt Spread Kentucky +11.5 / Alt Spread Missouri -11.5 / table | Bally Bet | FanDuel
+[2026-11-16 13:56:59 ET] dh_game_middles.py: OK in 150s — GAME MIDDLE: NCAAF Iowa St. UCF Nov-20 6:00 PM / table / Alt Spread Iowa St. +5.5 / Alt Spread UCF -5 / table | DraftKings | Bally Bet — window 328.0 :: -168 $1
+[2026-11-16 13:58:18 ET] hung_number.py: OK in 79s — HUNG NUMBER: Washington State vs Texas State — FanDuel spread value dog (11.5 vs median 10.5)
+[2026-11-16 13:58:23 ET] rlm.py: OK in 5s
+[2026-11-16 13:58:27 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 14:00:13 ET] dh_prop_middles.py: OK in 106s — PROP MIDDLE CLEAN : NFL LA Chargers BAL Ravens Today 8:15 PM / table / Receiving Yards M. Hibner Under 8.5 / Receiving Yards M. Hibner Over 7.5 / table bar_char
+[2026-11-16 14:02:17 ET] dh_sog_middles.py: OK in 124s — - 0 deliverables this run
+[2026-11-16 14:02:20 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Indianapolis 17.5/20.5 sits at -4.9c vs +
+[2026-11-16 14:02:21 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 14:02:22 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 14:02:24 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 14:02:26 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 3 new, 2 unverified, 671 total tallied.
+[2026-11-16 14:02:27 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 14:02:28 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 14:02:29 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-16 14:02:29 ET] syncing to GitHub (regular 10-minute sync)
