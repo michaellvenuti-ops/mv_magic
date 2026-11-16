@@ -9213,3 +9213,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 09:58:25 ET] dh_kalshi_poly_arb.py: OK in 25s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-16 09:58:28 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB The Citadel Clemson Today 7:00 PM — Total — Over 144.5 Caesars +110 ($87) / Under 148.5 HardRock -165 ($113) — both win 145, 146, 147, 148 — la
 [2026-11-16 09:58:28 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 10:20:23 ET] sync_to_github.py: FAILED (exit 1) in 1315s —   FAILED: pc-data/pip-ct2.log (HTTP 409: {'error': '{"message":"is at c778a3798831e03dd8b511d08b14d319b133b7b5 but expected 0f141b3baa9433b6b92e718a9512014e5651
+[2026-11-16 10:24:12 ET] dh_key_number_middles.py: OK in 229s — key-number-middles: 933 basketball rows excluded (football-only rule).
+[2026-11-16 10:27:21 ET] dh_basketball_key_middles.py: OK in 189s — basketball-key-middles: no new basketball middles.
+[2026-11-16 10:27:27 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS UTSA @ UAB | 2026-11-16 | Kalshi | UTSA spread 5.5 (median 5.5 -> 6.5)
+[2026-11-16 10:27:28 ET] half_percent.py: OK in 1s — half-percent recheck: 10:27 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-16 10:27:31 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-16 10:27:31 ET] syncing to GitHub (regular 10-minute sync)
