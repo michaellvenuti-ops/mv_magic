@@ -8961,3 +8961,20 @@
 [2026-11-16 01:15:11 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 206 events (67 with odds), db total 293329 snapshots / 1238 events, feeds ok 6 fail 0
 [2026-11-16 01:15:12 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHO Suns DEN Nuggets Today 9:15 PM — Total — Over 225.5 theScore -125 ($100) / Under 230 Fanatics-NJ -125 ($100) — both win 226, 227, 228, 229 — 
 [2026-11-16 01:15:12 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 01:33:04 ET] sync_to_github.py: FAILED (exit 1) in 1072s —   FAILED: pc-data/prop-middles-state.json.bak-20261112-f13 (HTTP 409: {'error': '{"message":"is at d4a1231144c03725807d6cedf3afffa11d4e35f9 but expected 2a0a0d0
+[2026-11-16 01:34:16 ET] dh_low_holds.py: OK in 72s — LOW-HOLDS: M25 Chihuahua R. Ruiz M. Benson Today 1:00 PM / table / Moneyline M. Benson / Moneyline R. Ruiz / table | BetMGM | Bet365
+[2026-11-16 01:35:21 ET] hung_number.py: OK in 65s — No new hung numbers (56 current flags).
+[2026-11-16 01:35:25 ET] rlm.py: OK in 4s
+[2026-11-16 01:35:28 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-16 01:37:40 ET] dh_sog_middles.py: OK in 132s — - 0 deliverables this run
+[2026-11-16 01:37:45 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Baltimore 17.5/20.5 sits at -4.9c vs +EV.
+[2026-11-16 01:37:46 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 01:37:47 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 01:37:48 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 01:37:50 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 2 unverified, 668 total tallied.
+[2026-11-16 01:37:51 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 01:37:52 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 01:37:53 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-16 01:37:55 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=19
+[2026-11-16 01:37:56 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=19, limit=5)
+[2026-11-16 01:37:56 ET] syncing to GitHub (regular 10-minute sync)
