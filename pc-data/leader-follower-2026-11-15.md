@@ -19,3 +19,5 @@
 ## 2026-11-15T15:11:47-05:00 — 81 games, 0 leads credited, 64 started games skipped
 ## 2026-11-15T16:37:44-05:00 — 81 games, 0 leads credited, 67 started games skipped
 ## 2026-11-15T18:43:28-05:00 — 81 games, 0 leads credited, 67 started games skipped
+## 2026-11-15T20:00:01-05:00 — pack move, never credited: Steelers @ Bengals | 2026-11-15 spread (DraftKings, Kalshi, bet365)
+## 2026-11-15T20:00:01-05:00 — 81 games, 0 leads credited, 67 started games skipped
