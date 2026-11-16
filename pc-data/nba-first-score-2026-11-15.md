@@ -15,3 +15,6 @@
 - 2026-11-15: New York Knicks @ Toronto Raptors — first: Toronto Raptors (2PT, 0:14 in); lead changes 9; final 112-108
 - 2026-11-15: Houston Rockets @ Washington Wizards — first: Houston Rockets (2PT, 1:08 in); lead changes 12; final 147-119
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-15T22:26:55-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 187 games through 2026-11-15
+- 2026-11-15: Atlanta Hawks @ Milwaukee Bucks — first: Milwaukee Bucks (3PT, 0:27 in); lead changes 3; final 113-106
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
