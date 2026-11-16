@@ -9082,3 +9082,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 04:37:23 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 206 events (67 with odds), db total 294359 snapshots / 1238 events, feeds ok 6 fail 0
 [2026-11-16 04:37:25 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Miami (OH) Kent St. Nov-17 7:00 PM — Spread — Miami (OH) -7.5 Bally Bet -110 ($95) / Kent St. +11.5 Fanatics-NJ -135 ($105) — both win 8, 9, 10
 [2026-11-16 04:37:25 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 04:57:11 ET] sync_to_github.py: FAILED (exit 1) in 1185s —   FAILED: pc-data/totals-2026-11-15.md (HTTP 409: {'error': '{"message":"is at 7485917de813f596281dc32c127800a4aca2bbaf but expected 026026d05565cb2690aa0e4e1db
+[2026-11-16 05:00:45 ET] dh_low_holds.py: OK in 214s — LOW-HOLDS: NCAAF Oklahoma St. Arizona St. Nov-21 10:15 PM / table / Alt Spread Oklahoma St. +12.5 / Alt Spread Arizona St. -12.5 / table | FanDuel | DraftKings
+[2026-11-16 05:05:12 ET] dh_key_number_middles.py: OK in 266s — key-number-middles: 428 basketball rows excluded (football-only rule).
+[2026-11-16 05:08:40 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
+[2026-11-16 05:09:53 ET] hung_number.py: OK in 73s — No new hung numbers (23 current flags).
+[2026-11-16 05:09:58 ET] rlm.py: OK in 4s
+[2026-11-16 05:10:03 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 05:10:06 ET] steam_side.py: OK in 3s — steam-side: 66 games, no new flags (silent).
+[2026-11-16 05:11:43 ET] dh_prop_middles.py: OK in 97s — PROP MIDDLE CLEAN : NBA POR Trail Blazers MIN Timberwolves Today 8:15 PM / table / Points D. Clingan Over 10.5 / Points D. Clingan Under 11.5 / table | FanDuel 
+[2026-11-16 05:11:43 ET] syncing to GitHub (regular 10-minute sync)
