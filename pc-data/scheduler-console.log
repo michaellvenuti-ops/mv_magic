@@ -9258,3 +9258,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 12:04:34 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 191 events (99 with odds), db total 296595 snapshots / 1281 events, feeds ok 6 fail 0
 [2026-11-16 12:04:36 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Colorado St. Fresno St. Nov-21 7:30 PM — Spread — Fresno St. -22.5 FanDuel +128 ($82) / Colorado St. +26 Fanatics-NJ -170 ($118) — both win 23,
 [2026-11-16 12:04:37 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-16 12:24:53 ET] sync_to_github.py: FAILED (exit 1) in 1217s —   FAILED: pc-data/low-holds-2026-11-11.md (HTTP 409: {'error': '{"message":"is at 8278619e9e466bf3713e50ecabf6d093c2da292e but expected 7666407b902e44fcecae105f
+[2026-11-16 12:26:47 ET] dh_low_holds.py: OK in 114s — LOW-HOLDS: NCAAF Oklahoma St. Arizona St. Nov-21 10:15 PM / table / Alt Spread Arizona St. +19 / Alt Spread Oklahoma St. -18.5 / table | Bet365 | DraftKings
+[2026-11-16 12:28:50 ET] dh_game_middles.py: OK in 123s — GAME MIDDLE: NCAAF Central Michigan Buffalo Nov-18 7:30 PM / table bar_chart / Moneyline Buffalo / Alt Spread Central Michigan +1 / table | ProphetX | Bally Bet
+[2026-11-16 12:30:09 ET] hung_number.py: OK in 79s — HUNG NUMBER: Georgia Southern vs Troy — Fanatics spread value favorite (-9.5 vs median -8.5)
+[2026-11-16 12:30:14 ET] rlm.py: OK in 5s
+[2026-11-16 12:30:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 12:31:51 ET] dh_prop_middles.py: OK in 93s — PROP MIDDLE CLEAN : NFL LA Chargers BAL Ravens Today 8:15 PM / table / Receiving Yards O. Gadsden Under 20.5 / Alt Recv Yards O. Gadsden 20+ / table | Bet365 | 
+[2026-11-16 12:34:11 ET] dh_sog_middles.py: OK in 140s — - 0 deliverables this run
+[2026-11-16 12:34:15 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles C 17.5/21.5 sits at -4.2c vs 
+[2026-11-16 12:34:16 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 12:34:17 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 12:34:18 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 12:34:20 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 668 total tallied.
+[2026-11-16 12:34:21 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 12:34:22 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 12:34:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-16 12:34:27 ET] public_fade.py: OK in 3s
+[2026-11-16 12:36:00 ET] dh_positive_ev.py: FAILED (exit 2) in 94s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-16.txt. No prices inven
+[2026-11-16 12:36:01 ET] syncing to GitHub (regular 10-minute sync)
