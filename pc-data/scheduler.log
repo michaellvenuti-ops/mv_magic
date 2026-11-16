@@ -9165,3 +9165,9 @@
 [2026-11-16 09:32:48 ET] yahoo_brief.py: OK in 35s — SUMMARY: signed_in=None — report written, no extraction
 [2026-11-16 09:32:53 ET] half_percent.py: OK in 5s — half-percent: PICK TSN ref $62.09 target $62.40 stop $61.78
 [2026-11-16 09:32:53 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 09:53:20 ET] sync_to_github.py: FAILED (exit 1) in 1227s —   FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at 4c174b5f46eca42c38aefbca874e8b39b72502a2 but expected 784334073ac0c756eaa9fbd4e1750d
+[2026-11-16 09:55:05 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 206 events (67 with odds), db total 296007 snapshots / 1238 events, feeds ok 6 fail 0
+[2026-11-16 09:58:00 ET] dh_arbitrage.py: OK in 174s — arbitrage: no new qualifying pairs (silent).
+[2026-11-16 09:58:25 ET] dh_kalshi_poly_arb.py: OK in 25s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 09:58:28 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB The Citadel Clemson Today 7:00 PM — Total — Over 144.5 Caesars +110 ($87) / Under 148.5 HardRock -165 ($113) — both win 145, 146, 147, 148 — la
+[2026-11-16 09:58:28 ET] syncing to GitHub (wide-builds banked new builds)
