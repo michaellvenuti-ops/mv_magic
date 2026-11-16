@@ -8786,3 +8786,30 @@
 [2026-11-15 19:05:52 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
 [2026-11-15 19:07:44 ET] dh_game_middles.py: OK in 112s — GAME MIDDLE: NCAAB Texas St. UTSA Today 8:00 PM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | Fanatics-NJ | Bet365 — window 320.0 :: -170 $1,00
 [2026-11-15 19:07:44 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 19:25:20 ET] sync_to_github.py: FAILED (exit 1) in 1055s —   FAILED: wide-builds-board-pc.html (HTTP 409: {'error': '{"message":"is at 562ea327bba6c1d4fe625764364f1592ecf8ff21 but expected 6b6d2abf3f3900f4a1294311756d35
+[2026-11-15 19:26:58 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (12 with odds), db total 290291 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 19:28:11 ET] dh_arbitrage.py: OK in 73s — ARBITRAGE: NCAAF Oklahoma St. Arizona St. Nov-21 10:15 PM / table / Alt Spread Arizona St. +19.5 / Alt Spread Oklahoma St. -19.5 / table | Bet365 | DraftKings
+[2026-11-15 19:28:46 ET] dh_kalshi_poly_arb.py: OK in 35s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-15 19:32:16 ET] dh_key_number_middles.py: OK in 210s — key-number-middles: 513 basketball rows excluded (football-only rule).
+[2026-11-15 19:35:43 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
+[2026-11-15 19:35:49 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 19:37:15 ET] dh_prop_middles.py: OK in 85s — PROP MIDDLE CLEAN : NFL PIT Steelers CIN Bengals Today 8:20 PM / table / Receiving Yards D. Washington Under 31.5 / Alt Recv Yards D. Washington 30+ / table | H
+[2026-11-15 19:39:15 ET] dh_sog_middles.py: OK in 120s — - 0 deliverables this run
+[2026-11-15 19:39:19 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 6 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Pittsburgh 22.5/24.5 sits at -3.0c vs +EV
+[2026-11-15 19:39:20 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 2 new, 0 unverified, 146 total tallied.
+[2026-11-15 19:39:22 ET] nba_first_score.py: OK in 2s — nba-first-score: 2 new, 1 unverified, 183 total tallied.
+[2026-11-15 19:39:23 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 317 total tallied.
+[2026-11-15 19:39:25 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 2 unverified, 661 total tallied.
+[2026-11-15 19:39:26 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-15 19:39:27 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 19:39:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-15 19:39:28 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 19:55:05 ET] sync_to_github.py: FAILED (exit 1) in 936s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-15 19:56:43 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (11 with odds), db total 290493 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 19:56:44 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 19:57:28 ET] dh_low_holds.py: OK in 44s — LOW-HOLDS: NBA OKC Thunder SAC Kings Today 9:15 PM / table / Rebounds K. Murray Under 4.5 / Alt Rebounds K. Murray 5+ / table | FanDuel | Fanatics-NJ
+[2026-11-15 19:58:49 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NCAAF South Florida Florida Atlantic Nov-21 2:30 PM / table / Total Under 67.5 / Alt Total Over 67 / table | Bally Bet | Fanatics-NJ — window 230.0
+[2026-11-15 19:59:53 ET] hung_number.py: OK in 64s — HUNG NUMBER: Rams vs Cardinals — bet365 spread value favorite (-10.5 vs median -9.5)
+[2026-11-15 19:59:58 ET] rlm.py: OK in 4s
+[2026-11-15 20:00:01 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 20:00:01 ET] syncing to GitHub (regular 10-minute sync)
