@@ -21,3 +21,4 @@ NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — DraftKings still dealing 
 NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — Fanatics still dealing spread 9.5 on Kent State (pre-move median 9.5, now 8.5)
 NEW FLAG: FBS Miami (OH) @ Kent State | 2026-11-16 — Kalshi still dealing spread 9.5 on Kent State (pre-move median 9.5, now 8.5)
 NEW FLAG: FBS Charlotte @ Tulsa | 2026-11-16 — Kalshi still dealing spread -21.5 on Tulsa (pre-move median -21.5, now -22.5)
+## 2026-11-16T14:58:29-05:00 — 66 games, 1 steam events, 0 NEW flags
