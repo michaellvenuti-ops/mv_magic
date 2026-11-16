@@ -126,7 +126,16 @@
    }
   },
   "2026-11-13": {
-   "grade": null,
+   "grade": {
+    "entry": 12.359999656677246,
+    "exit_price": 12.3,
+    "exit_time": "09:30 ET",
+    "note": "stop touched before target",
+    "outcome": "LOSS",
+    "pl": -50.0,
+    "stop": 12.3,
+    "target": 12.42
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-12, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -139,12 +148,27 @@
     "ticker": "NU",
     "vol": 7964957
    }
+  },
+  "2026-11-16": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-16, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Tyson Foods, Inc. Common Stock",
+    "entry": 62.09,
+    "mcap": 21875017728,
+    "pct": 5.56,
+    "stop": 61.78,
+    "target": 62.4,
+    "ticker": "TSN",
+    "vol": 353636
+   }
   }
  },
  "meta": {
   "record": {
-   "losses": 0,
-   "modeled_pl": 100.0,
+   "losses": 1,
+   "modeled_pl": 50.0,
    "no_data": 0,
    "no_trades": 3,
    "time_exits": 0,
