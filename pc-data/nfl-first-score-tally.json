@@ -1362,74 +1362,84 @@
    "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Buffalo Bills",
-   "home": "New York Jets",
+   "date": "2026-11-15",
+   "final": "31-12",
    "first": "Buffalo Bills",
+   "home": "New York Jets",
+   "lead_changes": 0,
    "seq": "7-0>7-3>10-3>10-6>10-9>17-9>17-12>24-12>31-12",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "31-12"
+   "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Carolina Panthers",
-   "home": "New Orleans Saints",
+   "date": "2026-11-15",
+   "final": "20-17",
    "first": "Carolina Panthers",
-   "seq": "7-0>7-7>10-7>10-14>17-14>17-17>20-17",
+   "home": "New Orleans Saints",
    "lead_changes": 2,
-   "ties": 2,
-   "final": "20-17"
+   "seq": "7-0>7-7>10-7>10-14>17-14>17-17>20-17",
+   "ties": 2
   },
   {
-   "date": "2026-11-15",
    "away": "Houston Texans",
-   "home": "Cleveland Browns",
+   "date": "2026-11-15",
+   "final": "24-27",
    "first": "Houston Texans",
-   "seq": "7-0>10-0>17-0>17-3>17-10>17-17>17-20>24-20>24-27",
+   "home": "Cleveland Browns",
    "lead_changes": 3,
-   "ties": 1,
-   "final": "24-27"
+   "seq": "7-0>10-0>17-0>17-3>17-10>17-17>17-20>24-20>24-27",
+   "ties": 1
   },
   {
-   "date": "2026-11-15",
    "away": "Jacksonville Jaguars",
-   "home": "Tennessee Titans",
+   "date": "2026-11-15",
+   "final": "40-23",
    "first": "Jacksonville Jaguars",
+   "home": "Tennessee Titans",
+   "lead_changes": 0,
    "seq": "7-0>7-3>10-3>13-3>13-10>16-10>16-13>23-13>23-16>30-16>30-23>33-23>40-23",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "40-23"
+   "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Kansas City Chiefs",
-   "home": "Atlanta Falcons",
+   "date": "2026-11-15",
+   "final": "35-13",
    "first": "Kansas City Chiefs",
+   "home": "Atlanta Falcons",
+   "lead_changes": 0,
    "seq": "7-0>7-3>14-3>21-3>28-3>28-10>28-13>35-13",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "35-13"
+   "ties": 0
   },
   {
    "date": "2026-11-15",
-   "away": "Miami Dolphins",
-   "home": "Indianapolis Colts",
-   "first": "Indianapolis Colts",
-   "seq": "0-7>7-7>7-14>7-21>10-21>16-21>16-24>22-24",
-   "lead_changes": 0,
+   "away": "Los Angeles Rams",
+   "home": "Arizona Cardinals",
+   "first": "Arizona Cardinals",
+   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "lead_changes": 1,
    "ties": 1,
-   "final": "22-24"
+   "final": "34-6"
   },
   {
+   "away": "Miami Dolphins",
    "date": "2026-11-15",
-   "away": "Minnesota Vikings",
-   "home": "Green Bay Packers",
-   "first": "Minnesota Vikings",
-   "seq": "3-0>10-0>17-0>20-0>20-7>20-10>27-10>30-10",
+   "final": "22-24",
+   "first": "Indianapolis Colts",
+   "home": "Indianapolis Colts",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "30-10"
+   "seq": "0-7>7-7>7-14>7-21>10-21>16-21>16-24>22-24",
+   "ties": 1
+  },
+  {
+   "away": "Minnesota Vikings",
+   "date": "2026-11-15",
+   "final": "30-10",
+   "first": "Minnesota Vikings",
+   "home": "Green Bay Packers",
+   "lead_changes": 0,
+   "seq": "3-0>10-0>17-0>20-0>20-7>20-10>27-10>30-10",
+   "ties": 0
   },
   {
    "away": "New England Patriots",
@@ -1440,6 +1450,16 @@
    "lead_changes": 1,
    "seq": "3-0>3-7>3-14>3-21>3-28>10-28>10-35",
    "ties": 0
+  },
+  {
+   "date": "2026-11-15",
+   "away": "Seattle Seahawks",
+   "home": "Las Vegas Raiders",
+   "first": "Las Vegas Raiders",
+   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "21-13"
   }
  ],
  "tally": {
@@ -1455,14 +1475,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Seattle Seahawks": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 3,
    "won_when_first": 2,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
+   "scored_first_pct": 30.0,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 57.1,
    "won_by_one_when_first_pct": 0.0
   },
   "San Francisco 49ers": {
@@ -1477,24 +1497,24 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Los Angeles Rams": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "won_when_first": 3,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 60.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Arizona Cardinals": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "won_when_first": 1,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 25.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 20.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1675,13 +1695,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Las Vegas Raiders": {
-   "gp": 9,
-   "scored_first": 4,
+   "gp": 10,
+   "scored_first": 5,
    "won_when_first": 3,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 44.4,
-   "win_pct_when_first": 75.0,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1797,15 +1817,15 @@
   }
  },
  "league": {
-  "games": 144,
-  "games_with_goal": 144,
-  "home_scored_first": 70,
+  "games": 146,
+  "games_with_goal": 146,
+  "home_scored_first": 72,
   "first_team_won": 92,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.4,
   "avg_lead_changes": 1.28,
-  "home_scored_first_pct": 48.6,
-  "first_team_win_pct": 63.9
+  "home_scored_first_pct": 49.3,
+  "first_team_win_pct": 63.0
  },
  "lead_changes": [
   {
@@ -3169,74 +3189,84 @@
    "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Buffalo Bills",
-   "home": "New York Jets",
+   "date": "2026-11-15",
+   "final": "31-12",
    "first": "Buffalo Bills",
+   "home": "New York Jets",
+   "lead_changes": 0,
    "seq": "7-0>7-3>10-3>10-6>10-9>17-9>17-12>24-12>31-12",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "31-12"
+   "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Carolina Panthers",
-   "home": "New Orleans Saints",
+   "date": "2026-11-15",
+   "final": "20-17",
    "first": "Carolina Panthers",
-   "seq": "7-0>7-7>10-7>10-14>17-14>17-17>20-17",
+   "home": "New Orleans Saints",
    "lead_changes": 2,
-   "ties": 2,
-   "final": "20-17"
+   "seq": "7-0>7-7>10-7>10-14>17-14>17-17>20-17",
+   "ties": 2
   },
   {
-   "date": "2026-11-15",
    "away": "Houston Texans",
-   "home": "Cleveland Browns",
+   "date": "2026-11-15",
+   "final": "24-27",
    "first": "Houston Texans",
-   "seq": "7-0>10-0>17-0>17-3>17-10>17-17>17-20>24-20>24-27",
+   "home": "Cleveland Browns",
    "lead_changes": 3,
-   "ties": 1,
-   "final": "24-27"
+   "seq": "7-0>10-0>17-0>17-3>17-10>17-17>17-20>24-20>24-27",
+   "ties": 1
   },
   {
-   "date": "2026-11-15",
    "away": "Jacksonville Jaguars",
-   "home": "Tennessee Titans",
+   "date": "2026-11-15",
+   "final": "40-23",
    "first": "Jacksonville Jaguars",
+   "home": "Tennessee Titans",
+   "lead_changes": 0,
    "seq": "7-0>7-3>10-3>13-3>13-10>16-10>16-13>23-13>23-16>30-16>30-23>33-23>40-23",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "40-23"
+   "ties": 0
   },
   {
-   "date": "2026-11-15",
    "away": "Kansas City Chiefs",
-   "home": "Atlanta Falcons",
+   "date": "2026-11-15",
+   "final": "35-13",
    "first": "Kansas City Chiefs",
+   "home": "Atlanta Falcons",
+   "lead_changes": 0,
    "seq": "7-0>7-3>14-3>21-3>28-3>28-10>28-13>35-13",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "35-13"
+   "ties": 0
   },
   {
    "date": "2026-11-15",
-   "away": "Miami Dolphins",
-   "home": "Indianapolis Colts",
-   "first": "Indianapolis Colts",
-   "seq": "0-7>7-7>7-14>7-21>10-21>16-21>16-24>22-24",
-   "lead_changes": 0,
+   "away": "Los Angeles Rams",
+   "home": "Arizona Cardinals",
+   "first": "Arizona Cardinals",
+   "seq": "0-3>3-3>3-6>10-6>17-6>24-6>31-6>34-6",
+   "lead_changes": 1,
    "ties": 1,
-   "final": "22-24"
+   "final": "34-6"
   },
   {
+   "away": "Miami Dolphins",
    "date": "2026-11-15",
-   "away": "Minnesota Vikings",
-   "home": "Green Bay Packers",
-   "first": "Minnesota Vikings",
-   "seq": "3-0>10-0>17-0>20-0>20-7>20-10>27-10>30-10",
+   "final": "22-24",
+   "first": "Indianapolis Colts",
+   "home": "Indianapolis Colts",
    "lead_changes": 0,
-   "ties": 0,
-   "final": "30-10"
+   "seq": "0-7>7-7>7-14>7-21>10-21>16-21>16-24>22-24",
+   "ties": 1
+  },
+  {
+   "away": "Minnesota Vikings",
+   "date": "2026-11-15",
+   "final": "30-10",
+   "first": "Minnesota Vikings",
+   "home": "Green Bay Packers",
+   "lead_changes": 0,
+   "seq": "3-0>10-0>17-0>20-0>20-7>20-10>27-10>30-10",
+   "ties": 0
   },
   {
    "away": "New England Patriots",
@@ -3247,6 +3277,16 @@
    "lead_changes": 1,
    "seq": "3-0>3-7>3-14>3-21>3-28>10-28>10-35",
    "ties": 0
+  },
+  {
+   "date": "2026-11-15",
+   "away": "Seattle Seahawks",
+   "home": "Las Vegas Raiders",
+   "first": "Las Vegas Raiders",
+   "seq": "0-7>7-7>7-10>14-10>21-10>21-13",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "21-13"
   }
  ],
  "lead_change_team_avgs": {
@@ -3256,9 +3296,9 @@
    "avg_per_game": 0.9
   },
   "Seattle Seahawks": {
-   "games": 9,
-   "lead_changes": 8,
-   "avg_per_game": 0.89
+   "games": 10,
+   "lead_changes": 9,
+   "avg_per_game": 0.9
   },
   "San Francisco 49ers": {
    "games": 8,
@@ -3266,14 +3306,14 @@
    "avg_per_game": 1.0
   },
   "Los Angeles Rams": {
-   "games": 9,
-   "lead_changes": 20,
-   "avg_per_game": 2.22
+   "games": 10,
+   "lead_changes": 21,
+   "avg_per_game": 2.1
   },
   "Arizona Cardinals": {
-   "games": 9,
-   "lead_changes": 11,
-   "avg_per_game": 1.22
+   "games": 10,
+   "lead_changes": 12,
+   "avg_per_game": 1.2
   },
   "Los Angeles Chargers": {
    "games": 8,
@@ -3356,9 +3396,9 @@
    "avg_per_game": 0.22
   },
   "Las Vegas Raiders": {
-   "games": 9,
-   "lead_changes": 16,
-   "avg_per_game": 1.78
+   "games": 10,
+   "lead_changes": 17,
+   "avg_per_game": 1.7
   },
   "New Orleans Saints": {
    "games": 9,
