@@ -8888,3 +8888,32 @@
 [2026-11-15 22:27:01 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-15 22:29:43 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 202 events (1 with odds), db total 291907 snapshots / 1108 events, feeds ok 6 fail 0
 [2026-11-15 22:30:43 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 22:48:02 ET] sync_to_github.py: OK in 1039s —   ok: team-total-middles-board-pc.html
+[2026-11-15 22:48:49 ET] notify.py: OK in 48s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-15 22:49:22 ET] odds_recorder.py: OK in 3s — SUMMARY: recorded 202 events (1 with odds), db total 292109 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 22:51:40 ET] dh_low_holds.py: FAILED (exit 2) in 138s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-15 22:53:20 ET] dh_game_middles.py: FAILED (exit 2) in 100s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-15 22:54:36 ET] hung_number.py: OK in 75s — HUNG NUMBER: Steelers vs Bengals — Hard Rock total value Under (46.5 vs median 50.5)
+[2026-11-15 22:54:40 ET] rlm.py: OK in 4s
+[2026-11-15 22:54:43 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (81 games, 0 new leads, no book at 3 yet).
+[2026-11-15 22:56:24 ET] odds_recorder.py: OK in 71s — SUMMARY: recorded 202 events (1 with odds), db total 292311 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 22:56:26 ET] wide_builds.py: OK in 2s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-15.md)
+[2026-11-15 23:00:05 ET] dh_key_number_middles.py: FAILED (exit 2) in 189s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-15 23:00:36 ET] dh_basketball_key_middles.py: OK in 32s — DarkHorse check unavailable (signed out) — basketball-key-middles skipped, no prices invented.
+[2026-11-15 23:00:42 ET] steam_side.py: OK in 6s — steam-side: 67 games, no new flags (silent).
+[2026-11-15 23:01:10 ET] dh_prop_middles.py: OK in 27s — DarkHorse check unavailable (signed out) — prop-middles skipped, no prices invented.
+[2026-11-15 23:02:41 ET] dh_sog_middles.py: FAILED (exit 2) in 91s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-15 23:02:44 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 4 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Pittsburgh 14.5/17.5 sits at -1.7c vs +EV
+[2026-11-15 23:02:45 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 147 total tallied.
+[2026-11-15 23:02:46 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 187 total tallied.
+[2026-11-15 23:02:48 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 2 new, 0 unverified, 320 total tallied.
+[2026-11-15 23:02:50 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 3 unverified, 667 total tallied.
+[2026-11-15 23:02:51 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-15 23:02:52 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-15; skipping.
+[2026-11-15 23:02:52 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-15 23:10:28 ET] sync_to_github.py: FAILED (exit 1) in 456s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-15 23:12:06 ET] odds_recorder.py: OK in 68s — SUMMARY: recorded 202 events (1 with odds), db total 292513 snapshots / 1108 events, feeds ok 6 fail 0
+[2026-11-15 23:12:21 ET] dh_arbitrage.py: OK in 16s — DarkHorse check unavailable (signed out) — arbitrage skipped, no prices invented.
+[2026-11-15 23:12:44 ET] dh_kalshi_poly_arb.py: OK in 23s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
+[2026-11-15 23:12:46 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-15 23:12:46 ET] syncing to GitHub (regular 10-minute sync)
