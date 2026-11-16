@@ -1,15 +1,14 @@
-# Hung numbers — 2026-11-15 (scan 2026-11-15 18:41)
+# Hung numbers — 2026-11-15 (scan 2026-11-15 19:58)
 
-- Rams vs Cardinals | DraftKings | spread | value: favorite | book -21.5 vs median -20.5 | div 1.0 
-- Rams vs Cardinals | FanDuel | spread | value: favorite | book -21.5 vs median -20.5 | div 1.0 
-- Rams vs Cardinals | BetMGM | total | value: Under | book 40.5 vs median 44.5 | div 4.0 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Bills vs Jets | Fanatics | total | value: Under | book 46.5 vs median 50.5 | div 4.0 
-- Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Dolphins vs Colts | bet365 | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Dolphins vs Colts | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Dolphins vs Colts | FanDuel | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Texans vs Browns | DraftKings | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
+- Rams vs Cardinals | bet365 | spread | value: favorite | book -10.5 vs median -9.5 | div 1.0 
+- Rams vs Cardinals | DraftKings | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
 - Western Michigan vs Akron | FanDuel | spread | value: dog | book -14.5 vs median -15.5 | div 1.0 
 - Western Michigan vs Akron | Fanatics | total | value: Under | book 44.5 vs median 50.5 | div 6.0 
 - Western Michigan vs Akron | Fanatics | moneyline Akron | value: Akron | book 22.2 vs median 16.0 | div 6.2 
