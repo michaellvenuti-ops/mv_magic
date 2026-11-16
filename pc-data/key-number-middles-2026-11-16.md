@@ -77,3 +77,8 @@ KEY 6: NCAAF Colorado Cincinnati Nov-21 12:00 PM / table / Alt Spread Colorado +
 KEY 6: NCAAF Colorado Cincinnati Nov-21 12:00 PM / table / Alt Spread Colorado +6.5 / Alt Spread Cincinnati -5.5 / table | Fanatics-NJ | Bally Bet margins [6] :: -155 $1,000 Fanatics-NJ, Fanatics-NJ, -155 / +138 $691 Bally Bet, Bally Bet, +138
 KEY 4: NCAAF Oklahoma St. Arizona St. Nov-21 10:15 PM / table / Alt Spread Arizona St. +4.5 / Alt Spread Oklahoma St. -3.5 / table bar_chart | FanDuel | ProphetX margins [4] :: -136 $1,000 FanDuel, FanDuel, -136 / +122 [45.05%] $790.35 ProphetX, ProphetX, +122
 KEY 6: NCAAF Memphis Navy Nov-21 12:00 PM / table / Alt Spread Navy +6.5 / Alt Spread Memphis -5.5 / table | Fanatics-NJ | HardRock margins [6] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +140 $677 HardRock, HardRock, +140
+## 2026-11-16T16:10:07-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1948 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: KEY 6: NCAAF 24 Memphis Navy Nov-21 12:00 PM / table / Alt Spread Navy +6.5 / Alt Spread Memphis -5.5 / table | Fanatics-NJ | HardRock margins [6] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +140 $677 HardRock, HardRock, +140
+(end of new middles — full qualifying list below)
+KEY 6: NCAAF Colorado Cincinnati Nov-21 12:00 PM / table / Alt Spread Colorado +6.5 / Alt Spread Cincinnati -5.5 / table | Fanatics-NJ | HardRock margins [6] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +140 $677 HardRock, HardRock, +140
+KEY 6: NCAAF 24 Memphis Navy Nov-21 12:00 PM / table / Alt Spread Navy +6.5 / Alt Spread Memphis -5.5 / table | Fanatics-NJ | HardRock margins [6] :: -160 $1,000 Fanatics-NJ, Fanatics-NJ, -160 / +140 $677 HardRock, HardRock, +140
