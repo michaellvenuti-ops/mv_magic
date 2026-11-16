@@ -9373,3 +9373,11 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 16:45:12 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 16:45:13 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-16 16:45:13 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 17:04:45 ET] sync_to_github.py: FAILED (exit 1) in 1172s —   FAILED: pc-data/nba-finals-2026-11-14.json (HTTP 409: {'error': '{"message":"is at 743f49180adf0213608030a04610a44a50185250 but expected ad695c667c9812c2452eb
+[2026-11-16 17:06:25 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 191 events (98 with odds), db total 297932 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 17:07:56 ET] dh_arbitrage.py: OK in 90s — ARBITRAGE: ATP Finals 4 B. Shelton 1 A. Zverev Nov-17 2:30 PM / table / Alt Total Match Games Over 24.5 / Alt Total Match Games Under 25.5 / table | Bally Bet |
+[2026-11-16 17:08:42 ET] dh_kalshi_poly_arb.py: OK in 47s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-16 17:12:28 ET] dh_key_number_middles.py: OK in 225s — key-number-middles: 677 basketball rows excluded (football-only rule).
+[2026-11-16 17:15:56 ET] dh_basketball_key_middles.py: OK in 209s — basketball-key-middles: no new basketball middles.
+[2026-11-16 17:16:05 ET] steam_side.py: OK in 8s — steam-side: 66 games, no new flags (silent).
+[2026-11-16 17:16:05 ET] syncing to GitHub (regular 10-minute sync)
