@@ -9575,3 +9575,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-17 01:56:15 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=7 queued_total=21
 [2026-11-17 01:56:15 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=21, limit=5)
 [2026-11-17 01:56:15 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 02:16:34 ET] sync_to_github.py: FAILED (exit 1) in 1218s —   FAILED: pc-data/public-fade-gate-notified (HTTP 409: {'error': '{"message":"is at 20d5658cfa8440bfd8b5d5eea4eb8e10c7884c74 but expected 2f4a72b15fafd489c4da6b
+[2026-11-17 02:18:14 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 191 events (66 with odds), db total 300606 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 02:23:28 ET] dh_key_number_middles.py: OK in 314s — key-number-middles: 185 basketball rows excluded (football-only rule).
+[2026-11-17 02:27:29 ET] dh_basketball_key_middles.py: OK in 240s — basketball-key-middles: no new basketball middles.
+[2026-11-17 02:27:35 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Georgia State @ Marshall | 2026-11-17 | FanDuel | Marshall spread 1.5 (median 1.0 -> -1.5)
+[2026-11-17 02:27:35 ET] syncing to GitHub (regular 10-minute sync)
