@@ -9559,3 +9559,9 @@
 [2026-11-17 03:00:03 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-17; skipping.
 [2026-11-17 03:00:04 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-17 03:00:05 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 03:20:50 ET] sync_to_github.py: FAILED (exit 1) in 1245s —   FAILED: pc-data/nba-overs-2026-11-10.md (HTTP 409: {'error': '{"message":"is at 9990fabc2f0a804429f41aaa4d6426ede111f744 but expected b69cdc2ce75b9245f659fc65
+[2026-11-17 03:22:39 ET] odds_recorder.py: OK in 79s — SUMMARY: recorded 191 events (66 with odds), db total 300988 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 03:23:43 ET] dh_arbitrage.py: OK in 64s — ARBITRAGE: NCAAB Nicholls Ole Miss Today 8:30 PM / table / Alt Total Under 153 / Alt Total Over 152.5 / table | Bet365 | DraftKings
+[2026-11-17 03:24:08 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-17 03:24:09 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Nicholls Ole Miss Today 8:30 PM — Total — Over 141.5 DraftKings -140 ($109) / Under 147 Bet365 +105 ($91) — both win 142, 143, 144, 145, 146 — 
+[2026-11-17 03:24:09 ET] syncing to GitHub (wide-builds banked new builds)
