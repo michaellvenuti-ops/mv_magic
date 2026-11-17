@@ -6,3 +6,5 @@
 ## 2026-11-17T04:19:54-05:00 — no-follow: Kalshi Missouri State @ Jacksonville State | 2026-11-17 spread (only 1 followed)
 ## 2026-11-17T04:19:55-05:00 — 79 games, 0 leads credited
 ## 2026-11-17T05:54:18-05:00 — 79 games, 0 leads credited
+## 2026-11-17T08:01:18-05:00 — pack move, never credited: Colts @ Texans | 2026-11-17 spread (Caesars, DraftKings, bet365)
+## 2026-11-17T08:01:18-05:00 — 79 games, 0 leads credited
