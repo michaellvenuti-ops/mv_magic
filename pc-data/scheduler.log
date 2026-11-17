@@ -9621,3 +9621,12 @@
 [2026-11-17 05:58:33 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-17; skipping.
 [2026-11-17 05:58:34 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-17 05:58:34 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 06:19:05 ET] sync_to_github.py: FAILED (exit 1) in 1231s —   FAILED: pc-data/nhl-finals-2026-11-15.json (HTTP 409: {'error': '{"message":"is at 8844e1be2ef43e8e29a93e3bd67427a60b5fcf76 but expected 416cd56b01362f50df191
+[2026-11-17 06:20:48 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 191 events (66 with odds), db total 301752 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 06:22:30 ET] dh_arbitrage.py: OK in 103s — ARBITRAGE: NCAAB Nicholls Ole Miss Today 8:30 PM / table / Alt Total Over 139.5 / Alt Total Under 139.5 / table | DraftKings | Bet365
+[2026-11-17 06:24:07 ET] dh_kalshi_poly_arb.py: OK in 97s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-17 06:24:10 ET] wide_builds.py: OK in 2s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-17.md)
+[2026-11-17 06:27:53 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 237 basketball rows excluded (football-only rule).
+[2026-11-17 06:31:37 ET] dh_basketball_key_middles.py: OK in 225s — basketball-key-middles: no new basketball middles.
+[2026-11-17 06:31:45 ET] steam_side.py: OK in 7s — steam-side: 66 games, no new flags (silent).
+[2026-11-17 06:31:45 ET] syncing to GitHub (regular 10-minute sync)
