@@ -11961,7 +11961,8 @@
    "fav": "away",
    "spread": 5.5,
    "fav_team": "76ers",
-   "dog_team": "Nets"
+   "dog_team": "Nets",
+   "final": true
   },
   "401909998": {
    "sport": "NBA",
@@ -11992,7 +11993,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Warriors",
-   "dog_team": "Pelicans"
+   "dog_team": "Pelicans",
+   "final": true
   },
   "401910001": {
    "sport": "NBA",
@@ -12219,7 +12221,8 @@
    "sport": "NCAAB",
    "matchup": "Mayville St at S Dakota St",
    "date": "2026-11-17",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928997": {
    "sport": "NCAAB",
@@ -12257,7 +12260,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Missouri St",
-   "dog_team": "Abilene Chrstn"
+   "dog_team": "Abilene Chrstn",
+   "final": true
   },
   "401917917": {
    "sport": "NCAAB",
@@ -12277,7 +12281,8 @@
    "alert_fav_score": 0,
    "alert_dog_score": 6,
    "alert_ml": -1450,
-   "ml_read_at": "2026-11-16T20:04:04"
+   "ml_read_at": "2026-11-16T20:04:04",
+   "final": true
   },
   "401916307": {
    "sport": "NCAAB",
@@ -12367,11 +12372,21 @@
    "sport": "NCAAB",
    "matchup": "Texas Southern at UC San Diego",
    "date": "2026-11-17",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 18.5,
    "fav_team": "UC San Diego",
-   "dog_team": "Texas Southern"
+   "dog_team": "Texas Southern",
+   "live_ml": -1300,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-16T22:16:02",
+   "board_read_at": "2026-11-16T22:16:02",
+   "alert_expires_at": "2026-11-16T22:19:02",
+   "alert_detail": "14:42 - 1st Half",
+   "alert_fav_score": 10,
+   "alert_dog_score": 15,
+   "alert_ml": -1300,
+   "ml_read_at": "2026-11-16T22:16:02"
   },
   "401917532": {
    "sport": "NCAAB",
