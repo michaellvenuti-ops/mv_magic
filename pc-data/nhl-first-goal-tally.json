@@ -1,5 +1,5 @@
 {
- "through": "2026-11-15",
+ "through": "2026-11-16",
  "games": [
   {
    "away": "Buffalo Sabres",
@@ -5122,36 +5122,52 @@
    "winner": "Dallas Stars"
   },
   {
-   "date": "2026-11-15",
    "away": "Nashville Predators",
-   "home": "San Jose Sharks",
+   "date": "2026-11-15",
+   "final": "2-4",
    "first": "San Jose Sharks",
+   "first_elapsed_sec": 455,
+   "first_scorer": "Will Smith",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Will Smith",
-   "first_elapsed_sec": 455,
-   "winner": "San Jose Sharks",
-   "shootout": false,
-   "seq": "0-1>0-2>0-3>1-3>1-4>2-4",
+   "home": "San Jose Sharks",
    "lead_changes": 0,
+   "seq": "0-1>0-2>0-3>1-3>1-4>2-4",
+   "shootout": false,
    "ties": 0,
-   "final": "2-4"
+   "winner": "San Jose Sharks"
   },
   {
-   "date": "2026-11-15",
    "away": "Vancouver Canucks",
-   "home": "Vegas Golden Knights",
+   "date": "2026-11-15",
+   "final": "6-3",
    "first": "Vancouver Canucks",
+   "first_elapsed_sec": 880,
+   "first_scorer": "Elias Pettersson",
    "first_side": "away",
    "first_strength": "PP",
-   "first_scorer": "Elias Pettersson",
-   "first_elapsed_sec": 880,
-   "winner": "Vancouver Canucks",
-   "shootout": false,
-   "seq": "1-0>2-0>2-1>3-1>4-1>4-2>4-3>5-3>6-3",
+   "home": "Vegas Golden Knights",
    "lead_changes": 0,
+   "seq": "1-0>2-0>2-1>3-1>4-1>4-2>4-3>5-3>6-3",
+   "shootout": false,
    "ties": 0,
-   "final": "6-3"
+   "winner": "Vancouver Canucks"
+  },
+  {
+   "date": "2026-11-16",
+   "away": "Montreal Canadiens",
+   "home": "New York Rangers",
+   "first": "Montreal Canadiens",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Phillip Danault",
+   "first_elapsed_sec": 1921,
+   "winner": "New York Rangers",
+   "shootout": false,
+   "seq": "1-0>1-1>1-2>1-3",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "1-3"
   }
  ],
  "tally": {
@@ -5396,7 +5412,7 @@
    "won_by_one_when_first_pct": 9.1
   },
   "New York Rangers": {
-   "gp": 20,
+   "gp": 21,
    "scored_first": 12,
    "strengths": {
     "EV": 9,
@@ -5404,11 +5420,11 @@
     "SH": 0
    },
    "won_when_first": 11,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 60.0,
+   "scored_first_pct": 57.1,
    "win_pct_when_first": 91.7,
-   "win_pct_when_not_first": 12.5,
+   "win_pct_when_not_first": 22.2,
    "won_by_one_when_first_pct": 16.7
   },
   "Anaheim Ducks": {
@@ -5572,20 +5588,20 @@
    "won_by_one_when_first_pct": 12.5
   },
   "Montreal Canadiens": {
-   "gp": 19,
-   "scored_first": 9,
+   "gp": 20,
+   "scored_first": 10,
    "strengths": {
-    "EV": 9,
+    "EV": 10,
     "PP": 0,
     "SH": 0
    },
    "won_when_first": 5,
    "won_when_not_first": 6,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 47.4,
-   "win_pct_when_first": 55.6,
+   "scored_first_pct": 50.0,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 60.0,
-   "won_by_one_when_first_pct": 11.1
+   "won_by_one_when_first_pct": 10.0
   },
   "Pittsburgh Penguins": {
    "gp": 19,
@@ -5669,22 +5685,22 @@
   }
  },
  "league": {
-  "games": 322,
-  "games_with_goal": 320,
+  "games": 323,
+  "games_with_goal": 321,
   "shootouts": 25,
   "home_scored_first": 151,
   "first_team_won": 213,
   "first_team_won_by_one": 64,
-  "first_team_won_by_one_pct": 20.0,
+  "first_team_won_by_one_pct": 19.9,
   "strengths": {
-   "EV": 244,
+   "EV": 245,
    "PP": 71,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
   "median_first_goal_sec": 866,
-  "home_scored_first_pct": 47.2,
-  "first_team_win_pct": 66.6
+  "home_scored_first_pct": 47.0,
+  "first_team_win_pct": 66.4
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5763,9 +5779,9 @@
    "avg_per_game": 0.25
   },
   "New York Rangers": {
-   "games": 20,
-   "lead_changes": 6,
-   "avg_per_game": 0.3
+   "games": 21,
+   "lead_changes": 7,
+   "avg_per_game": 0.33
   },
   "Anaheim Ducks": {
    "games": 21,
@@ -5818,9 +5834,9 @@
    "avg_per_game": 0.41
   },
   "Montreal Canadiens": {
-   "games": 19,
-   "lead_changes": 13,
-   "avg_per_game": 0.68
+   "games": 20,
+   "lead_changes": 14,
+   "avg_per_game": 0.7
   },
   "Pittsburgh Penguins": {
    "games": 19,
