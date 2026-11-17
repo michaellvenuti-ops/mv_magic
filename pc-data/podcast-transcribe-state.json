@@ -247,7 +247,7 @@
    "date": "2026-11-13",
    "queued_at": "2026-11-14T01:13:40.890247-05:00",
    "show": "Circa Friday Football Invitational",
-   "status": "queued",
+   "status": "transcribing",
    "stem": "circa-friday-football-invitational-2026-11-13-hour-1",
    "title": "Circa Friday Football Invitational | November 13, 2026 | Hour 1",
    "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/e5057e53-fb7c-4fb2-b0f1-f34cdc42220c/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=e5057e53-fb7c-4fb2-b0f1-f34cdc42220c&feed=iXBZFZCf"
@@ -295,12 +295,16 @@
   },
   "Even Money|2026-11-12|2026 NFL Week 10 Prop Bets & Parlays": {
    "date": "2026-11-12",
+   "done_at": "2026-11-17T03:15:47.541043-05:00",
    "queued_at": "2026-11-13T01:23:33.681992-05:00",
    "show": "Even Money",
-   "status": "transcribing",
+   "status": "done",
    "stem": "even-money-2026-11-12-nfl-week-10-prop-bets-parlays",
    "title": "2026 NFL Week 10 Prop Bets & Parlays",
-   "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/arttrk.com/p/DF7K3/claritaspod.com/measure/pscrb.fm/rss/p/traffic.megaphone.fm/DFT2765607846.mp3"
+   "transcript": "transcripts/even-money-2026-11-12-nfl-week-10-prop-bets-parlays.txt",
+   "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/arttrk.com/p/DF7K3/claritaspod.com/measure/pscrb.fm/rss/p/traffic.megaphone.fm/DFT2765607846.mp3",
+   "wall_s": 4767,
+   "words": 4549
   },
   "Follow the Money|2026-11-04|Follow the Money | November 4, 2026 | Hour 1": {
    "date": "2026-11-04",
@@ -973,7 +977,7 @@
   }
  },
  "worker": {
-  "current": "Even Money|2026-11-12|2026 NFL Week 10 Prop Bets & Parlays",
-  "heartbeat": "2026-11-17T01:56:20.642387-05:00"
+  "current": "Circa Friday Football Invitational|2026-11-13|Circa Friday Football Invitational | November 13, 2026 | Hour 1",
+  "heartbeat": "2026-11-17T03:15:53.478867-05:00"
  }
 }
