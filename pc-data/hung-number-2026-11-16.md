@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-16 (scan 2026-11-16 20:44)
+# Hung numbers — 2026-11-16 (scan 2026-11-16 22:06)
 
 - Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
@@ -12,11 +12,11 @@
 - Steelers vs Bengals | FanDuel | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Steelers vs Bengals | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Miami (OH) vs Kent State | FanDuel | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
-- Central Michigan vs Buffalo | FanDuel | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
 - Clemson vs Duke | BetMGM | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
 - Clemson vs Duke | DraftKings | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
 - Syracuse vs Boston College | FanDuel | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
+- North Texas vs Tulane | FanDuel | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
+- Iowa vs Illinois | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
 - Old Dominion vs UConn | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Georgia Southern vs Troy | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
-- Washington State vs Texas State | FanDuel | spread | value: dog | book 11.5 vs median 10.5 | div 1.0 
 - San Diego State vs Boise State | FanDuel | spread | value: dog | book 17.5 vs median 16.5 | div 1.0 
