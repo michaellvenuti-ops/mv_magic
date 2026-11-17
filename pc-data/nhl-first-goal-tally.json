@@ -5154,20 +5154,36 @@
    "winner": "Vancouver Canucks"
   },
   {
-   "date": "2026-11-16",
    "away": "Montreal Canadiens",
-   "home": "New York Rangers",
+   "date": "2026-11-16",
+   "final": "1-3",
    "first": "Montreal Canadiens",
+   "first_elapsed_sec": 1921,
+   "first_scorer": "Phillip Danault",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Phillip Danault",
-   "first_elapsed_sec": 1921,
-   "winner": "New York Rangers",
-   "shootout": false,
-   "seq": "1-0>1-1>1-2>1-3",
+   "home": "New York Rangers",
    "lead_changes": 1,
+   "seq": "1-0>1-1>1-2>1-3",
+   "shootout": false,
    "ties": 1,
-   "final": "1-3"
+   "winner": "New York Rangers"
+  },
+  {
+   "date": "2026-11-16",
+   "away": "Vancouver Canucks",
+   "home": "Utah Mammoth",
+   "first": "Vancouver Canucks",
+   "first_side": "away",
+   "first_strength": "PP",
+   "first_scorer": "Jake DeBrusk",
+   "first_elapsed_sec": 1495,
+   "winner": "Vancouver Canucks",
+   "shootout": false,
+   "seq": "1-0>1-1>2-1>2-2>3-2",
+   "lead_changes": 0,
+   "ties": 2,
+   "final": "3-2"
   }
  ],
  "tally": {
@@ -5220,7 +5236,7 @@
    "won_by_one_when_first_pct": 11.1
   },
   "Utah Mammoth": {
-   "gp": 21,
+   "gp": 22,
    "scored_first": 9,
    "strengths": {
     "EV": 4,
@@ -5230,9 +5246,9 @@
    "won_when_first": 7,
    "won_when_not_first": 3,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 42.9,
+   "scored_first_pct": 40.9,
    "win_pct_when_first": 77.8,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 23.1,
    "won_by_one_when_first_pct": 33.3
   },
   "Edmonton Oilers": {
@@ -5252,20 +5268,20 @@
    "won_by_one_when_first_pct": 18.8
   },
   "Vancouver Canucks": {
-   "gp": 21,
-   "scored_first": 7,
+   "gp": 22,
+   "scored_first": 8,
    "strengths": {
     "EV": 4,
-    "PP": 3,
+    "PP": 4,
     "SH": 0
    },
-   "won_when_first": 1,
+   "won_when_first": 2,
    "won_when_not_first": 2,
-   "won_by_one_when_first": 0,
-   "scored_first_pct": 33.3,
-   "win_pct_when_first": 14.3,
+   "won_by_one_when_first": 1,
+   "scored_first_pct": 36.4,
+   "win_pct_when_first": 25.0,
    "win_pct_when_not_first": 14.3,
-   "won_by_one_when_first_pct": 0.0
+   "won_by_one_when_first_pct": 12.5
   },
   "Florida Panthers": {
    "gp": 21,
@@ -5685,22 +5701,22 @@
   }
  },
  "league": {
-  "games": 323,
-  "games_with_goal": 321,
+  "games": 324,
+  "games_with_goal": 322,
   "shootouts": 25,
   "home_scored_first": 151,
-  "first_team_won": 213,
-  "first_team_won_by_one": 64,
-  "first_team_won_by_one_pct": 19.9,
+  "first_team_won": 214,
+  "first_team_won_by_one": 65,
+  "first_team_won_by_one_pct": 20.2,
   "strengths": {
    "EV": 245,
-   "PP": 71,
+   "PP": 72,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
-  "median_first_goal_sec": 866,
-  "home_scored_first_pct": 47.0,
-  "first_team_win_pct": 66.4
+  "median_first_goal_sec": 868,
+  "home_scored_first_pct": 46.9,
+  "first_team_win_pct": 66.5
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -5719,9 +5735,9 @@
    "avg_per_game": 0.47
   },
   "Utah Mammoth": {
-   "games": 21,
+   "games": 22,
    "lead_changes": 7,
-   "avg_per_game": 0.33
+   "avg_per_game": 0.32
   },
   "Edmonton Oilers": {
    "games": 21,
@@ -5729,9 +5745,9 @@
    "avg_per_game": 0.29
   },
   "Vancouver Canucks": {
-   "games": 21,
+   "games": 22,
    "lead_changes": 8,
-   "avg_per_game": 0.38
+   "avg_per_game": 0.36
   },
   "Florida Panthers": {
    "games": 21,
