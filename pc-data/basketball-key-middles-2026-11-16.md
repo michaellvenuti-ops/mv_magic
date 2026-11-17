@@ -37,3 +37,4 @@ NCAAB SPREAD [SPANKY] ~1.8%: NCAAB Alcorn St. Maryland Today 6:00 PM / table / S
 NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Central Arkansas Oklahoma St. Today 8:00 PM / table / Spread Oklahoma St. -18 / Alt Spread Central Arkansas +19.5 / table | Caesars | BetRivers window [19, 18] :: -110 $1,000 Caesars, Caesars, -110 / -103 $969 BetRivers, BetRivers, -103
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [SPANKY] ~3.1%: NCAAB Central Arkansas Oklahoma St. Today 8:00 PM / table / Spread Oklahoma St. -18 / Alt Spread Central Arkansas +19.5 / table | Caesars | BetRivers window [19, 18] :: -110 $1,000 Caesars, Caesars, -110 / -103 $969 BetRivers, BetRivers, -103
+## 2026-11-16T20:00:57-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1970 + 0 rows parsed, qualifying only below — 0 NEW middles
