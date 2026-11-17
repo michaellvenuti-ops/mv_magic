@@ -9722,3 +9722,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-17 08:32:37 ET] total_projectors_scan.py: OK in 5s — }
 [2026-11-17 08:32:41 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 5, 'NCAAB': 54}, new 0, moved 0, baselines 59.
 [2026-11-17 08:32:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 08:54:53 ET] sync_to_github.py: FAILED (exit 1) in 1333s —   FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at 5f92d4a9bbf7782b14b7f80036a18991da23236d but expected ea117f33c84bc8f665e362e16c1403
+[2026-11-17 08:56:41 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 191 events (66 with odds), db total 302516 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 08:58:56 ET] dh_arbitrage.py: OK in 134s — ARBITRAGE: NCAAB Sacred Heart Providence Today 7:00 PM / table / Alt Spread Providence -22.5 / Alt Spread Sacred Heart +22.5 / table | Caesars | Bally Bet
+[2026-11-17 08:59:48 ET] dh_kalshi_poly_arb.py: OK in 52s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-17 08:59:51 ET] wide_builds.py: OK in 3s — NEW BUILD: NCAAB 10 Illinois 5 Duke Today 7:00 PM — Total — Over 164.5 Bally Bet +100 ($91) / Under 168.5 Fanatics-NJ -150 ($109) — both win 165, 166, 167, 168 
+[2026-11-17 08:59:52 ET] syncing to GitHub (wide-builds banked new builds)
