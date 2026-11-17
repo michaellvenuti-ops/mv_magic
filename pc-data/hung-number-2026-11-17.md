@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-17 (scan 2026-11-17 01:24)
+# Hung numbers — 2026-11-17 (scan 2026-11-17 02:53)
 
 - Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
@@ -13,12 +13,11 @@
 - Steelers vs Bengals | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Miami (OH) vs Kent State | FanDuel | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
 - Ball State vs Ohio | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
-- Central Michigan vs Buffalo | Fanatics | spread | value: dog | book 45.5 vs median 1.5 | div 44.0 middle pairing spans key number 7
-- Central Michigan vs Buffalo | Fanatics | moneyline Central Michigan | value: Central Michigan | book 99.0 vs median 49.8 | div 49.3 
 - Syracuse vs Boston College | FanDuel | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
 - North Texas vs Tulane | FanDuel | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
 - Iowa vs Illinois | FanDuel | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- Indiana vs Washington | FanDuel | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
 - Old Dominion vs UConn | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
-- Georgia State vs Marshall | DraftKings | spread | value: dog | book 1.5 vs median -1.25 | div 2.75 
+- Georgia State vs Marshall | FanDuel | spread | value: favorite | book -1.5 vs median 1.25 | div 2.75 
 - Georgia Southern vs Troy | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
 - San Diego State vs Boise State | FanDuel | spread | value: dog | book 17.5 vs median 16.5 | div 1.0 
