@@ -9413,3 +9413,18 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 19:02:53 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
 [2026-11-16 19:02:56 ET] steam_side.py: OK in 4s — steam-side: 66 games, no new flags (silent).
 [2026-11-16 19:02:56 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 19:22:42 ET] sync_to_github.py: FAILED (exit 1) in 1186s —   FAILED: pc-data/f13-purge-report.json (HTTP 409: {'error': '{"message":"is at 90c19c52116179c9d58c8b9f8f6f116f41d67e9d but expected d342eefadf3bcdfcc1908dcdc6
+[2026-11-16 19:24:39 ET] odds_recorder.py: OK in 87s — SUMMARY: recorded 191 events (85 with odds), db total 298505 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 19:24:40 ET] wide_builds.py: OK in 1s — wide_builds: 3 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 19:26:29 ET] dh_game_middles.py: OK in 108s — GAME MIDDLE: NBA PHI 76ers BKN Nets Today 7:45 PM / table / Alt Total Over 226.5 / Alt Total Under 227 / table bar_chart | FanDuel | ProphetX — window 237.0 :: 
+[2026-11-16 19:28:11 ET] dh_prop_middles.py: OK in 103s — PROP MIDDLE CLEAN : NFL MIN Vikings SF 49ers Nov-22 8:20 PM / table / Receiving Yards G. Kittle Under 64.5 / Alt Recv Yards G. Kittle 60+ / table | FanDuel | Be
+[2026-11-16 19:30:22 ET] dh_sog_middles.py: OK in 130s — - 0 deliverables this run
+[2026-11-16 19:30:25 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Tennessee 21.5/24.5 sits at -4.3c vs +EV
+[2026-11-16 19:30:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 19:30:27 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 188 total tallied.
+[2026-11-16 19:30:29 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 19:30:31 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 672 total tallied.
+[2026-11-16 19:30:32 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 19:30:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 19:30:34 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-16 19:30:34 ET] syncing to GitHub (regular 10-minute sync)
