@@ -49,3 +49,8 @@ NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Notre Dame 1 Florida Nov-17 4:30
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [SPANKY] ~5.6%: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -103 [49%] $969 Kalshi, Kalshi, -103
 NCAAB SPREAD [SPANKY] ~5.6%: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -103 [49%] $969 Kalshi, Kalshi, -103
+## 2026-11-16T23:41:33-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1971 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Ball St. Florida St. Nov-17 7:00 PM / table / Spread Florida St. -25 / Spread Ball St. +26.5 / table | Bet365 | FanDuel window [26, 25] :: -110 $1,000 Bet365, Bet365, -110 / -102 $964 FanDuel, FanDuel, -102
+(end of new middles — full qualifying list below)
+NCAAB SPREAD [SPANKY] ~1.5%: NCAAB Ball St. Florida St. Nov-17 7:00 PM / table / Spread Florida St. -25 / Spread Ball St. +26.5 / table | Bet365 | FanDuel window [26, 25] :: -110 $1,000 Bet365, Bet365, -110 / -102 $964 FanDuel, FanDuel, -102
+NCAAB SPREAD [SPANKY] ~5.6%: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -104 [49%] $973.04 Kalshi, Kalshi, -104
