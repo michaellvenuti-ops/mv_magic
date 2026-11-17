@@ -77,3 +77,9 @@ LEAD: Caesars on Miami (OH) @ Kent State | 2026-11-16 (spread)
 ## 2026-11-16T20:45:48-05:00 — no-follow: FanDuel Syracuse @ Boston College | 2026-11-16 spread (only 0 followed)
 ## 2026-11-16T20:45:48-05:00 — no-follow: FanDuel South Alabama @ Southern Miss | 2026-11-16 total (only 0 followed)
 ## 2026-11-16T20:45:48-05:00 — 80 games, 0 leads credited, 14 started games skipped
+## 2026-11-16T22:07:32-05:00 — no-follow: DraftKings Ball State @ Ohio | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T22:07:32-05:00 — pack move, never credited: Central Michigan @ Buffalo | 2026-11-16 spread (Caesars, DraftKings, bet365)
+## 2026-11-16T22:07:32-05:00 — no-follow: Kalshi LSU @ Tennessee | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T22:07:32-05:00 — no-follow: Fanatics Georgia Southern @ Troy | 2026-11-16 spread (only 1 followed)
+## 2026-11-16T22:07:32-05:00 — no-follow: FanDuel San Diego State @ Boise State | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T22:07:32-05:00 — 80 games, 0 leads credited, 14 started games skipped
