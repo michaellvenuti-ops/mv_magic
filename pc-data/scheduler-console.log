@@ -9469,3 +9469,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 21:42:27 ET] dh_basketball_key_middles.py: OK in 216s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB Old Dominion 4 Virginia Nov-17 9:00 PM / table / Spread Virginia -25.5 / Alt Spread Old Dominion +27 / 
 [2026-11-16 21:42:32 ET] steam_side.py: OK in 5s — steam-side: 66 games, no new flags (silent).
 [2026-11-16 21:42:32 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 22:02:13 ET] sync_to_github.py: FAILED (exit 1) in 1181s —   FAILED: pc-data/public-fade-2026-11-11.md (HTTP 409: {'error': '{"message":"is at b262876200dd3551726508f628af8d9c03c1eaf7 but expected 98b8426b062c5dfb0e4799
+[2026-11-16 22:03:53 ET] odds_recorder.py: OK in 70s — SUMMARY: recorded 191 events (67 with odds), db total 299269 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 22:03:54 ET] wide_builds.py: OK in 1s — wide_builds: 3 qualifying builds, 0 NEW (banked wide-builds-2026-11-16.md)
+[2026-11-16 22:04:35 ET] dh_low_holds.py: OK in 41s — LOW-HOLDS: NCAAF Colorado St. Fresno St. Nov-21 7:30 PM / table / Alt Total Under 69.5 / Alt Total Over 69.5 / table | FanDuel | Bally Bet
+[2026-11-16 22:06:13 ET] dh_game_middles.py: OK in 97s — GAME MIDDLE: NFL IND Colts HOU Texans Nov-19 8:15 PM / table / Alt Spread HOU Texans -9 / Alt Spread IND Colts +9.5 / table bar_chart | Bally Bet | ProphetX — w
+[2026-11-16 22:07:23 ET] hung_number.py: OK in 71s — HUNG NUMBER: Iowa vs Illinois — FanDuel spread value dog (-7.5 vs median -8.5)
+[2026-11-16 22:07:28 ET] rlm.py: OK in 5s
+[2026-11-16 22:07:32 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-16 22:09:03 ET] dh_prop_middles.py: FAILED (exit 2) in 91s — prop-middles: zero player-prop middles parsed (967 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state writte
+[2026-11-16 22:11:05 ET] dh_sog_middles.py: OK in 121s — - 0 deliverables this run
+[2026-11-16 22:11:07 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Indianapolis 16.5/17.5 sits at -4.3c vs 
+[2026-11-16 22:11:08 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 148 total tallied.
+[2026-11-16 22:11:10 ET] nba_first_score.py: OK in 2s — nba-first-score: 4 new, 1 unverified, 192 total tallied.
+[2026-11-16 22:11:12 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 322 total tallied.
+[2026-11-16 22:11:16 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 17 new, 2 unverified, 693 total tallied.
+[2026-11-16 22:11:17 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-16 22:11:18 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
+[2026-11-16 22:11:19 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-16 22:11:19 ET] syncing to GitHub (regular 10-minute sync)
