@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-16 (scan 2026-11-16 16:40)
+# Hung numbers — 2026-11-16 (scan 2026-11-16 19:01)
 
 - Panthers vs Saints | FanDuel | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - Bills vs Jets | DraftKings | spread | value: favorite | book -8.5 vs median -7.5 | div 1.0 
@@ -13,5 +13,5 @@
 - Steelers vs Bengals | Hard Rock | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Miami (OH) vs Kent State | FanDuel | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
 - Ball State vs Ohio | FanDuel | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
-- Clemson vs Duke | Fanatics | total | value: Over | book 42.0 vs median 40.5 | div 1.5 
+- Syracuse vs Boston College | FanDuel | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
 - Old Dominion vs UConn | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
