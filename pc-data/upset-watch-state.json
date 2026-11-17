@@ -11928,7 +11928,8 @@
    "fav": "home",
    "spread": 8.5,
    "fav_team": "Celtics",
-   "dog_team": "Magic"
+   "dog_team": "Magic",
+   "final": true
   },
   "401909995": {
    "sport": "NBA",
@@ -11938,7 +11939,8 @@
    "fav": "home",
    "spread": 8.5,
    "fav_team": "Cavaliers",
-   "dog_team": "Bulls"
+   "dog_team": "Bulls",
+   "final": true
   },
   "401909996": {
    "sport": "NBA",
@@ -12113,7 +12115,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Tulsa",
-   "dog_team": "Western KY"
+   "dog_team": "Western KY",
+   "final": true
   },
   "401922240": {
    "sport": "NCAAB",
@@ -12322,11 +12325,21 @@
    "sport": "NCAAB",
    "matchup": "East Texas A&M at Oregon St",
    "date": "2026-11-17",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Oregon St",
-   "dog_team": "East Texas A&M"
+   "dog_team": "East Texas A&M",
+   "live_ml": -1850,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-16T21:38:11",
+   "board_read_at": "2026-11-16T21:38:10",
+   "alert_expires_at": "2026-11-16T21:41:11",
+   "alert_detail": "16:09 - 1st Half",
+   "alert_fav_score": 6,
+   "alert_dog_score": 7,
+   "alert_ml": -1850,
+   "ml_read_at": "2026-11-16T21:38:10"
   },
   "401924265": {
    "sport": "NCAAB",
