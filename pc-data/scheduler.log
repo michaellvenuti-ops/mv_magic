@@ -9539,3 +9539,23 @@
 [2026-11-17 02:27:29 ET] dh_basketball_key_middles.py: OK in 240s — basketball-key-middles: no new basketball middles.
 [2026-11-17 02:27:35 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS Georgia State @ Marshall | 2026-11-17 | FanDuel | Marshall spread 1.5 (median 1.0 -> -1.5)
 [2026-11-17 02:27:35 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 02:47:08 ET] sync_to_github.py: OK in 1173s —   ok: team-total-middles-board-pc.html
+[2026-11-17 02:48:06 ET] notify.py: OK in 58s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-17 02:49:49 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 191 events (66 with odds), db total 300797 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 02:49:50 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-17.md)
+[2026-11-17 02:51:37 ET] dh_low_holds.py: OK in 107s — low-holds: no new qualifying pairs (silent).
+[2026-11-17 02:53:44 ET] dh_game_middles.py: OK in 127s — GAME MIDDLE: NCAAB Nicholls Ole Miss Today 8:30 PM / table / Alt Total Under 146.5 / Alt Total Over 145.5 / table | Bet365 | DraftKings — window 10.0 :: +100 $1
+[2026-11-17 02:55:10 ET] hung_number.py: OK in 86s — HUNG NUMBER: Georgia State vs Marshall — FanDuel spread value favorite (-1.5 vs median 1.25)
+[2026-11-17 02:55:15 ET] rlm.py: OK in 5s
+[2026-11-17 02:55:19 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 0 new leads, no book at 3 yet).
+[2026-11-17 02:57:12 ET] dh_prop_middles.py: FAILED (exit 2) in 113s — prop-middles: zero player-prop middles parsed (983 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state writte
+[2026-11-17 02:59:52 ET] dh_sog_middles.py: OK in 160s — - 0 deliverables this run
+[2026-11-17 02:59:56 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -3.5c vs +EV.
+[2026-11-17 02:59:57 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 149 total tallied.
+[2026-11-17 02:59:58 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 195 total tallied.
+[2026-11-17 02:59:59 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 324 total tallied.
+[2026-11-17 03:00:01 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 701 total tallied.
+[2026-11-17 03:00:02 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-17 03:00:03 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-17; skipping.
+[2026-11-17 03:00:04 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-17 03:00:05 ET] syncing to GitHub (regular 10-minute sync)
