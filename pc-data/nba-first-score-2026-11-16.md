@@ -7,3 +7,8 @@
 - 2026-11-16: Memphis Grizzlies @ Washington Wizards — first: Memphis Grizzlies (2PT, 1:39 in); lead changes 20; final 136-120
 - 2026-11-16: Houston Rockets @ Miami Heat — first: Miami Heat (2PT, 1:21 in); lead changes 0; final 110-128
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-16T23:11:48-05:00 -- NBA FIRST SCORE (PC): 3 new final(s) tallied; season 195 games through 2026-11-16
+- 2026-11-16: Philadelphia 76ers @ Brooklyn Nets — first: Philadelphia 76ers (2PT, 0:21 in); lead changes 4; final 135-123
+- 2026-11-16: Portland Trail Blazers @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:41 in); lead changes 6; final 98-106
+- 2026-11-16: Golden State Warriors @ New Orleans Pelicans — first: New Orleans Pelicans (2PT, 0:30 in); lead changes 0; final 94-115
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
