@@ -44,3 +44,8 @@ NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Old Dominion 4 Virginia Nov-17 9
 (end of new middles — full qualifying list below)
 NCAAB SPREAD [SPANKY] ~1.4%: NCAAB Old Dominion 4 Virginia Nov-17 9:00 PM / table / Spread Virginia -25.5 / Alt Spread Old Dominion +27 / table | Bally Bet | Bet365 window [26, 27] :: -105 $1,000 Bally Bet, Bally Bet, -105 / -105 $1,000 Bet365, Bet365, -105
 NCAAB SPREAD [SPANKY] ~1.4%: NCAAB Old Dominion 4 Virginia Nov-17 9:00 PM / table / Spread Virginia -25.5 / Alt Spread Old Dominion +27 / table | BetRivers | Bet365 window [26, 27] :: -106 $1,000 BetRivers, BetRivers, -106 / -105 $995 Bet365, Bet365, -105
+## 2026-11-16T22:42:08-05:00 — basketball-key-middles (NBA/NCAAB cluster rule, modeled bars: spreads >=10%, totals >=8%; plus SPANKY tier: CBB spreads >=1.5 pts / totals >=2.5 pts at -125 or better): 1965 + 0 rows parsed, qualifying only below — 1 NEW middles
+NEW MIDDLE: NCAAB SPREAD SPANKY baseline: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -103 [49%] $969 Kalshi, Kalshi, -103
+(end of new middles — full qualifying list below)
+NCAAB SPREAD [SPANKY] ~5.6%: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -103 [49%] $969 Kalshi, Kalshi, -103
+NCAAB SPREAD [SPANKY] ~5.6%: NCAAB Notre Dame 1 Florida Nov-17 4:30 PM / table / Spread Florida -13.5 / Spread Florida -15.5 NO / table bar_chart | Bally Bet | Kalshi window [14, 15] :: -110 $1,000 Bally Bet, Bally Bet, -110 / -103 [49%] $969 Kalshi, Kalshi, -103
