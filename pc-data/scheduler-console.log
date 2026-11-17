@@ -9631,3 +9631,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-17 04:24:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-17; skipping.
 [2026-11-17 04:24:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-17 04:24:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 04:46:55 ET] sync_to_github.py: OK in 1330s —   ok: team-total-middles-board-pc.html
+[2026-11-17 04:47:22 ET] notify.py: OK in 26s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-17 04:49:07 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 191 events (66 with odds), db total 301370 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 04:51:35 ET] dh_arbitrage.py: FAILED (exit 1) in 148s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-17 04:55:19 ET] dh_kalshi_poly_arb.py: OK in 224s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-17 04:55:26 ET] wide_builds.py: OK in 6s — NEW BUILD: NFL TEN Titans DAL Cowboys Nov-22 1:00 PM — Total — Over 55 Bally Bet +106 ($88) / Under 58.5 HardRock -165 ($112) — both win 56, 57, 58 — push at 55
+[2026-11-17 04:55:26 ET] syncing to GitHub (wide-builds banked new builds)
