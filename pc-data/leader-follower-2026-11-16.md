@@ -73,3 +73,7 @@ LEAD: Caesars on Miami (OH) @ Kent State | 2026-11-16 (spread)
 ## 2026-11-16T19:02:52-05:00 — pack move, never credited: South Florida @ Florida Atlantic | 2026-11-16 total (FanDuel, Kalshi)
 ## 2026-11-16T19:02:52-05:00 — pack move, never credited: Colorado State @ Fresno State | 2026-11-16 spread (FanDuel, Kalshi)
 ## 2026-11-16T19:02:52-05:00 — 80 games, 0 leads credited, 13 started games skipped
+## 2026-11-16T20:45:48-05:00 — pack move, never credited: Clemson @ Duke | 2026-11-16 spread (BetMGM, DraftKings, FanDuel)
+## 2026-11-16T20:45:48-05:00 — no-follow: FanDuel Syracuse @ Boston College | 2026-11-16 spread (only 0 followed)
+## 2026-11-16T20:45:48-05:00 — no-follow: FanDuel South Alabama @ Southern Miss | 2026-11-16 total (only 0 followed)
+## 2026-11-16T20:45:48-05:00 — 80 games, 0 leads credited, 14 started games skipped
