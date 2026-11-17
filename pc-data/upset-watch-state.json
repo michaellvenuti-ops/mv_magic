@@ -11276,7 +11276,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 10.5,
    "fav_team": "Ohio",
    "dog_team": "Ball State"
   },
@@ -12061,7 +12061,8 @@
    "fav": "home",
    "spread": 35.5,
    "fav_team": "Maryland",
-   "dog_team": "Alcorn St"
+   "dog_team": "Alcorn St",
+   "final": true
   },
   "401916317": {
    "sport": "NCAAB",
@@ -12213,11 +12214,21 @@
    "sport": "NCAAB",
    "matchup": "Columbia at Northwestern",
    "date": "2026-11-17",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Northwestern",
-   "dog_team": "Columbia"
+   "dog_team": "Columbia",
+   "live_ml": -580,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-16T20:16:03",
+   "board_read_at": "2026-11-16T20:16:02",
+   "alert_expires_at": "2026-11-16T20:19:03",
+   "alert_detail": "12:29 - 1st Half",
+   "alert_fav_score": 6,
+   "alert_dog_score": 7,
+   "alert_ml": -580,
+   "ml_read_at": "2026-11-16T20:16:03"
   },
   "401917964": {
    "sport": "NCAAB",
