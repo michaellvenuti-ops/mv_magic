@@ -34,3 +34,8 @@
 - 2026-11-16: Western Illinois Leathernecks @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (3PT, 0:40 in); lead changes 0; final 63-99
 - 2026-11-16: Montana Grizzlies @ Kansas State Wildcats — first: Montana Grizzlies (2PT, 0:39 in); lead changes 1; final 45-86
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-16T23:11:51-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 696 games through 2026-11-16
+- 2026-11-16: Abilene Christian Wildcats @ Missouri State Bears — first: Abilene Christian Wildcats (3PT, 0:38 in); lead changes 1; final 64-73
+- 2026-11-16: SE Louisiana Lions @ Texas A&M Aggies — first: Texas A&M Aggies (3PT, 0:56 in); lead changes 4; final 69-101
+- 2026-11-16: Dallas Christian Crusaders @ UL Monroe Warhawks — first: UL Monroe Warhawks (FT, 0:14 in); lead changes 0; final 81-118
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
