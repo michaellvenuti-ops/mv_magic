@@ -1374,6 +1374,42 @@
     165
    ]
   },
+  "NCAAB 10 Illinois 5 Duke Today 7:00 PM|Total|Over 164.5|Under 168.5": {
+   "first_reported": "2026-11-17T08:59:50-05:00",
+   "game": "NCAAB 10 Illinois 5 Duke Today 7:00 PM",
+   "game_date": "2026-11-17",
+   "land_profit": 163.67,
+   "last_seen": "2026-11-17",
+   "league": "NCAAB",
+   "leg1": {
+    "book": "Bally Bet",
+    "price": 100,
+    "side": "Over 164.5",
+    "stake": 91.0
+   },
+   "leg2": {
+    "book": "Fanatics-NJ",
+    "price": -150,
+    "side": "Under 168.5",
+    "stake": 109.0
+   },
+   "margin_team": null,
+   "market": "Total",
+   "miss_pl": {
+    "high": -18.0,
+    "low": -18.33
+   },
+   "push": [],
+   "source_scan": "game-middles",
+   "tipoff_et": "7:00 PM",
+   "total_staked": 200.0,
+   "window": [
+    165,
+    166,
+    167,
+    168
+   ]
+  },
   "NCAAB Alabama St. San Jos\u00e9 St. Today 9:00 PM|Total|Over 151.5|Under 154.5": {
    "first_reported": "2026-11-15T20:52:49-05:00",
    "game": "NCAAB Alabama St. San Jos\u00e9 St. Today 9:00 PM",
@@ -3007,6 +3043,46 @@
     144,
     145,
     146
+   ]
+  },
+  "NCAAB Nicholls Ole Miss Today 8:30 PM|Total|Over 147|Under 153": {
+   "first_reported": "2026-11-17T08:59:50-05:00",
+   "game": "NCAAB Nicholls Ole Miss Today 8:30 PM",
+   "game_date": "2026-11-17",
+   "land_profit": 166.3,
+   "last_seen": "2026-11-17",
+   "league": "NCAAB",
+   "leg1": {
+    "book": "Bet365",
+    "price": 135,
+    "side": "Over 147",
+    "stake": 78.0
+   },
+   "leg2": {
+    "book": "Bet365",
+    "price": -200,
+    "side": "Under 153",
+    "stake": 122.0
+   },
+   "margin_team": null,
+   "market": "Total",
+   "miss_pl": {
+    "high": -16.7,
+    "low": -17.0
+   },
+   "push": [
+    147,
+    153
+   ],
+   "source_scan": "arbitrage + game-middles",
+   "tipoff_et": "8:30 PM",
+   "total_staked": 200.0,
+   "window": [
+    148,
+    149,
+    150,
+    151,
+    152
    ]
   },
   "NCAAB Norfolk St. Georgia St. Nov-15 1:00 PM|Total|Over 142.5|Under 146.5": {
