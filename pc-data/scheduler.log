@@ -9416,3 +9416,9 @@
 [2026-11-16 20:50:09 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-16; skipping.
 [2026-11-16 20:50:10 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-16 20:50:11 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 21:10:01 ET] sync_to_github.py: FAILED (exit 1) in 1190s —   FAILED: pc-data/nhl-totals-2026-11-09.md (HTTP 409: {'error': '{"message":"is at ea2965094c0be655b42ec6b7702e126b1c28104f but expected 6606053df2502b4bba25d75
+[2026-11-16 21:11:40 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 191 events (72 with odds), db total 299078 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 21:13:43 ET] dh_arbitrage.py: OK in 123s — arbitrage: no new qualifying pairs (silent).
+[2026-11-16 21:14:43 ET] dh_kalshi_poly_arb.py: OK in 60s — KALSHI-POLY-ARB: NHL VAN Canucks Utah Mammoth Today 9:30 PM / table bar_chart / Points M. Sergachev Over 1.5 NO / Points M. Sergachev 2+ / table | Kalshi | Draf
+[2026-11-16 21:14:47 ET] wide_builds.py: OK in 3s — NEW BUILD: NCAAF Colorado St. Fresno St. Nov-21 7:30 PM — Spread — Fresno St. -15.5 Fanatics-NJ -170 ($114) / Colorado St. +19 Bally Bet +112 ($86) — both win 1
+[2026-11-16 21:14:47 ET] syncing to GitHub (wide-builds banked new builds)
