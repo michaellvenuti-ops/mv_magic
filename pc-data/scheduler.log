@@ -9570,3 +9570,22 @@
 [2026-11-17 03:51:42 ET] dh_basketball_key_middles.py: OK in 220s — basketball-key-middles: no new basketball middles.
 [2026-11-17 03:51:47 ET] steam_side.py: OK in 5s — steam-side: 66 games, no new flags (silent).
 [2026-11-17 03:51:48 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 04:12:24 ET] sync_to_github.py: FAILED (exit 1) in 1237s —   FAILED: pc-data/transcripts/a-numbers-game-2026-11-11-hour-2.txt (HTTP 409: {'error': '{"message":"is at 318f64e5a1d6fbd28ba4037908921e2a3beb6b53 but expected
+[2026-11-17 04:14:16 ET] odds_recorder.py: OK in 82s — SUMMARY: recorded 191 events (66 with odds), db total 301179 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 04:14:17 ET] wide_builds.py: OK in 1s — wide_builds: 2 qualifying builds, 0 NEW (banked wide-builds-2026-11-17.md)
+[2026-11-17 04:15:43 ET] dh_low_holds.py: OK in 85s — low-holds: no new qualifying pairs (silent).
+[2026-11-17 04:18:28 ET] dh_game_middles.py: OK in 166s — GAME MIDDLE: NFL IND Colts HOU Texans Nov-19 8:15 PM / table / Alt Spread IND Colts +13.5 / Alt Spread HOU Texans -13 / table | HardRock | Bally Bet — window 23
+[2026-11-17 04:19:45 ET] hung_number.py: OK in 76s — HUNG NUMBER: Bengals vs Commanders — FanDuel spread value dog (-5.5 vs median -6.5)
+[2026-11-17 04:19:50 ET] rlm.py: OK in 5s
+[2026-11-17 04:19:55 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (79 games, 0 new leads, no book at 3 yet).
+[2026-11-17 04:21:35 ET] dh_prop_middles.py: OK in 101s — prop-middles: no new/changed qualifying middles.
+[2026-11-17 04:24:23 ET] dh_sog_middles.py: OK in 167s — - 0 deliverables this run
+[2026-11-17 04:24:32 ET] dh_team_total_middles.py: OK in 9s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Indianapolis 16.5/17.5 sits at -3.3c vs 
+[2026-11-17 04:24:37 ET] nfl_first_score.py: OK in 5s — nfl-first-score: 0 new, 0 unverified, 149 total tallied.
+[2026-11-17 04:24:39 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 195 total tallied.
+[2026-11-17 04:24:41 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 324 total tallied.
+[2026-11-17 04:24:42 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 701 total tallied.
+[2026-11-17 04:24:43 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 751 total tallied.
+[2026-11-17 04:24:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-17; skipping.
+[2026-11-17 04:24:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-17 04:24:45 ET] syncing to GitHub (regular 10-minute sync)
