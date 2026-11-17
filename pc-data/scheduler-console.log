@@ -9437,3 +9437,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-16 20:01:05 ET] dh_basketball_key_middles.py: OK in 207s — basketball-key-middles: no new basketball middles.
 [2026-11-16 20:01:10 ET] steam_side.py: OK in 5s — steam-side: 66 games, no new flags (silent).
 [2026-11-16 20:01:10 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-16 20:21:09 ET] sync_to_github.py: FAILED (exit 1) in 1199s —   FAILED: pc-data/ncaaf-first-score-sequences.csv (HTTP 409: {'error': '{"message":"is at da8210097e91f8774bba4d7a688350f7d405b0a6 but expected ef33589a4406b65e
+[2026-11-16 20:22:48 ET] odds_recorder.py: OK in 69s — SUMMARY: recorded 191 events (73 with odds), db total 298887 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-16 20:22:49 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF UTEP Air Force Nov-20 8:00 PM — Total — Over 45.5 Bet365 -110 ($95) / Under 49.5 theScore -135 ($105) — both win 46, 47, 48, 49 — land +$164.14
+[2026-11-16 20:22:49 ET] syncing to GitHub (wide-builds banked new builds)
