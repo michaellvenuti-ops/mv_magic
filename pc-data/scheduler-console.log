@@ -9542,3 +9542,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-17 00:35:00 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-17 00:35:01 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-17 00:35:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-17 00:54:19 ET] sync_to_github.py: FAILED (exit 1) in 1158s —   FAILED: public-fade-board-pc.html (HTTP 409: {'error': '{"message":"is at fa7bd10ae0a9fa3898c0ce6792f6e1d922f47fe0 but expected ef291e0f0d3ec9f1a3bd63ef0146f8
+[2026-11-17 00:56:06 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 191 events (66 with odds), db total 300224 snapshots / 1281 events, feeds ok 6 fail 0
+[2026-11-17 00:56:07 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Colorado St. Fresno St. Nov-21 7:30 PM — Total — Over 65.5 Bally Bet +104 ($91) / Under 68.5 Fanatics-NJ -140 ($109) — both win 66, 67, 68 — la
+[2026-11-17 00:56:07 ET] syncing to GitHub (wide-builds banked new builds)
