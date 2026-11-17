@@ -27,3 +27,4 @@ NEW FLAG: FBS Charlotte @ Tulsa | 2026-11-16 — Kalshi still dealing spread -21
 ## 2026-11-16T19:02:56-05:00 — 66 games, 0 steam events, 0 NEW flags
 ## 2026-11-16T20:01:09-05:00 — 66 games, 0 steam events, 0 NEW flags
 ## 2026-11-16T21:42:32-05:00 — 66 games, 1 steam events, 0 NEW flags
+## 2026-11-16T22:42:21-05:00 — 66 games, 0 steam events, 0 NEW flags
