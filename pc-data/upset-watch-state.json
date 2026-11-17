@@ -11926,7 +11926,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "Celtics",
    "dog_team": "Magic"
   },
@@ -11946,7 +11946,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Grizzlies",
    "dog_team": "Wizards"
   },
@@ -11956,7 +11956,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "76ers",
    "dog_team": "Nets"
   },
@@ -11966,7 +11966,7 @@
    "date": "2026-11-17",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "Rockets",
    "dog_team": "Heat"
   },
@@ -12154,11 +12154,21 @@
    "sport": "NCAAB",
    "matchup": "Jacksonville at Georgia",
    "date": "2026-11-17",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 21.5,
    "fav_team": "Georgia",
-   "dog_team": "Jacksonville"
+   "dog_team": "Jacksonville",
+   "live_ml": -4800,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-16T19:04:03",
+   "board_read_at": "2026-11-16T19:04:02",
+   "alert_expires_at": "2026-11-16T19:07:03",
+   "alert_detail": "18:21 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 3,
+   "alert_ml": -4800,
+   "ml_read_at": "2026-11-16T19:04:02"
   },
   "401927364": {
    "sport": "NCAAB",
