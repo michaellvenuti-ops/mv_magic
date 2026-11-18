@@ -12483,7 +12483,8 @@
    "fav": "home",
    "spread": 4.5,
    "fav_team": "UMass Lowell",
-   "dog_team": "Saint Peter's"
+   "dog_team": "Saint Peter's",
+   "final": true
   },
   "401920953": {
    "sport": "NCAAB",
@@ -12493,7 +12494,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "S Illinois",
-   "dog_team": "Liberty"
+   "dog_team": "Liberty",
+   "final": true
   },
   "401912230": {
    "sport": "NCAAB",
@@ -12943,7 +12945,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 17.5,
+   "spread": 16.5,
    "fav_team": "Illinois St",
    "dog_team": "Bellarmine"
   },
@@ -12987,11 +12989,21 @@
    "sport": "NCAAB",
    "matchup": "Oral Roberts at SMU",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 22.5,
    "fav_team": "SMU",
-   "dog_team": "Oral Roberts"
+   "dog_team": "Oral Roberts",
+   "live_ml": -10000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T20:04:03",
+   "board_read_at": "2026-11-17T20:04:03",
+   "alert_expires_at": "2026-11-17T20:07:03",
+   "alert_detail": "18:08 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 3,
+   "alert_ml": -10000,
+   "ml_read_at": "2026-11-17T20:04:03"
   },
   "401917952": {
    "sport": "NCAAB",
@@ -13005,7 +13017,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 30.5,
+   "spread": 29.5,
    "fav_team": "DePaul",
    "dog_team": "MD Eastern"
   },
@@ -13167,7 +13179,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 5.5,
    "fav_team": "Clippers",
    "dog_team": "Jazz"
   },
@@ -13177,7 +13189,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 7.5,
    "fav_team": "Lakers",
    "dog_team": "Hornets"
   }
