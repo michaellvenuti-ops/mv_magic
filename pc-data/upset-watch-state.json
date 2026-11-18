@@ -12505,13 +12505,15 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Army",
-   "dog_team": "Marist"
+   "dog_team": "Marist",
+   "final": true
   },
   "401926834": {
    "sport": "NCAAB",
    "matchup": "SUNY Potsdam at Stony Brook",
    "date": "2026-11-17",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920706": {
    "sport": "NCAAB",
@@ -12521,13 +12523,15 @@
    "fav": "home",
    "spread": 22.5,
    "fav_team": "Purdue",
-   "dog_team": "Lipscomb"
+   "dog_team": "Lipscomb",
+   "final": true
   },
   "401920236": {
    "sport": "NCAAB",
    "matchup": "Maine Augusta at Dartmouth",
    "date": "2026-11-17",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401909566": {
    "sport": "NCAAB",
@@ -12569,7 +12573,8 @@
    "sport": "NCAAB",
    "matchup": "VTSU Lyndon at C Connecticut",
    "date": "2026-11-18",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401924941": {
    "sport": "NCAAB",
@@ -13035,11 +13040,21 @@
    "sport": "NCAAB",
    "matchup": "Sam Houston at Wyoming",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Wyoming",
-   "dog_team": "Sam Houston"
+   "dog_team": "Sam Houston",
+   "live_ml": -720,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T20:38:03",
+   "board_read_at": "2026-11-17T20:38:03",
+   "alert_expires_at": "2026-11-17T20:41:03",
+   "alert_detail": "18:07 - 1st Half",
+   "alert_fav_score": 0,
+   "alert_dog_score": 4,
+   "alert_ml": -720,
+   "ml_read_at": "2026-11-17T20:38:03"
   },
   "401920720": {
    "sport": "NCAAB",
@@ -13189,7 +13204,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 7.5,
+   "spread": 6.5,
    "fav_team": "Lakers",
    "dog_team": "Hornets"
   }
