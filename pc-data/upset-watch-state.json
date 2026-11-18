@@ -12639,11 +12639,21 @@
    "sport": "NCAAB",
    "matchup": "Norfolk St at Georgia Tech",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Georgia Tech",
-   "dog_team": "Norfolk St"
+   "dog_team": "Norfolk St",
+   "live_ml": -2100,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T19:18:03",
+   "board_read_at": "2026-11-17T19:18:02",
+   "alert_expires_at": "2026-11-17T19:21:03",
+   "alert_detail": "12:22 - 1st Half",
+   "alert_fav_score": 11,
+   "alert_dog_score": 16,
+   "alert_ml": -2100,
+   "ml_read_at": "2026-11-17T19:18:02"
   },
   "401920297": {
    "sport": "NCAAB",
@@ -13157,7 +13167,7 @@
    "date": "2026-11-18",
    "alerted": false,
    "fav": "home",
-   "spread": 7.5,
+   "spread": 6.5,
    "fav_team": "Lakers",
    "dog_team": "Hornets"
   }
