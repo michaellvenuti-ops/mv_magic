@@ -12788,7 +12788,8 @@
    "alert_fav_score": 2,
    "alert_dog_score": 6,
    "alert_ml": -4800,
-   "ml_read_at": "2026-11-17T19:04:03"
+   "ml_read_at": "2026-11-17T19:04:03",
+   "final": true
   },
   "401909544": {
    "sport": "NCAAB",
@@ -13122,11 +13123,21 @@
    "sport": "NCAAB",
    "matchup": "Old Dominion at Virginia",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 26.5,
    "fav_team": "Virginia",
-   "dog_team": "Old Dominion"
+   "dog_team": "Old Dominion",
+   "live_ml": -8500,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T21:10:09",
+   "board_read_at": "2026-11-17T21:10:08",
+   "alert_expires_at": "2026-11-17T21:13:09",
+   "alert_detail": "16:59 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 3,
+   "alert_ml": -8500,
+   "ml_read_at": "2026-11-17T21:10:09"
   },
   "401911521": {
    "sport": "NCAAB",
@@ -13205,10 +13216,10 @@
    "matchup": "West Virginia at Auburn",
    "date": "2026-11-18",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
-   "fav_team": "West Virginia",
-   "dog_team": "Auburn"
+   "fav_team": "Auburn",
+   "dog_team": "West Virginia"
   },
   "401910002": {
    "sport": "NBA",
