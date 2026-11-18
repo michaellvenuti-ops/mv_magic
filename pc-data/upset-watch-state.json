@@ -12568,7 +12568,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Davidson",
-   "dog_team": "Charlotte"
+   "dog_team": "Charlotte",
+   "final": true
   },
   "401925751": {
    "sport": "NCAAB",
@@ -12631,7 +12632,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Mount St Marys",
-   "dog_team": "Lehigh"
+   "dog_team": "Lehigh",
+   "final": true
   },
   "401920857": {
    "sport": "NCAAB",
@@ -12692,7 +12694,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "South Florida",
-   "dog_team": "Tennessee St"
+   "dog_team": "Tennessee St",
+   "final": true
   },
   "401911198": {
    "sport": "NCAAB",
@@ -12712,7 +12715,8 @@
    "alert_fav_score": 0,
    "alert_dog_score": 2,
    "alert_ml": -900,
-   "ml_read_at": "2026-11-17T19:04:03"
+   "ml_read_at": "2026-11-17T19:04:03",
+   "final": true
   },
   "401911019": {
    "sport": "NCAAB",
@@ -12722,7 +12726,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Dayton",
-   "dog_team": "C Michigan"
+   "dog_team": "C Michigan",
+   "final": true
   },
   "401911018": {
    "sport": "NCAAB",
@@ -12803,7 +12808,8 @@
    "alert_fav_score": 54,
    "alert_dog_score": 56,
    "alert_ml": -3200,
-   "ml_read_at": "2026-11-17T20:42:03"
+   "ml_read_at": "2026-11-17T20:42:03",
+   "final": true
   },
   "401909535": {
    "sport": "NCAAB",
@@ -12834,7 +12840,8 @@
    "alert_fav_score": 3,
    "alert_dog_score": 4,
    "alert_ml": -620,
-   "ml_read_at": "2026-11-17T19:06:03"
+   "ml_read_at": "2026-11-17T19:06:03",
+   "final": true
   },
   "401906761": {
    "sport": "NCAAB",
@@ -13125,11 +13132,21 @@
    "sport": "NCAAB",
    "matchup": "Alabama St at UC Davis",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "UC Davis",
-   "dog_team": "Alabama St"
+   "dog_team": "Alabama St",
+   "live_ml": -445,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T21:08:06",
+   "board_read_at": "2026-11-17T21:08:05",
+   "alert_expires_at": "2026-11-17T21:11:06",
+   "alert_detail": "19:10 - 1st Half",
+   "alert_fav_score": 0,
+   "alert_dog_score": 4,
+   "alert_ml": -445,
+   "ml_read_at": "2026-11-17T21:08:06"
   },
   "401909787": {
    "sport": "NCAAB",
