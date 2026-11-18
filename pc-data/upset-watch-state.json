@@ -12557,7 +12557,8 @@
    "sport": "NCAAB",
    "matchup": "Cheyney (PA) at Delaware St",
    "date": "2026-11-18",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401925775": {
    "sport": "NCAAB",
@@ -12640,7 +12641,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Marshall",
-   "dog_team": "ETSU"
+   "dog_team": "ETSU",
+   "final": true
   },
   "401920308": {
    "sport": "NCAAB",
@@ -12760,7 +12762,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Villanova",
-   "dog_team": "Pitt"
+   "dog_team": "Pitt",
+   "final": true
   },
   "401909697": {
    "sport": "NCAAB",
@@ -12810,7 +12813,8 @@
    "fav": "home",
    "spread": 30.5,
    "fav_team": "Providence",
-   "dog_team": "Sacred Heart"
+   "dog_team": "Sacred Heart",
+   "final": true
   },
   "401902279": {
    "sport": "NCAAB",
@@ -13081,11 +13085,21 @@
    "sport": "NCAAB",
    "matchup": "E Washington at Utah",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Utah",
-   "dog_team": "E Washington"
+   "dog_team": "E Washington",
+   "live_ml": -475,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T21:00:23",
+   "board_read_at": "2026-11-17T21:00:23",
+   "alert_expires_at": "2026-11-17T21:03:23",
+   "alert_detail": "7:52 - 1st Half",
+   "alert_fav_score": 14,
+   "alert_dog_score": 16,
+   "alert_ml": -475,
+   "ml_read_at": "2026-11-17T21:00:23"
   },
   "401906851": {
    "sport": "NCAAB",
