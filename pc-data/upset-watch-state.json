@@ -12906,7 +12906,8 @@
    "sport": "NCAAB",
    "matchup": "Spring Hill at South Alabama",
    "date": "2026-11-18",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929358": {
    "sport": "NCAAB",
@@ -12928,11 +12929,21 @@
    "sport": "NCAAB",
    "matchup": "Lindenwood at Northern Iowa",
    "date": "2026-11-18",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Northern Iowa",
-   "dog_team": "Lindenwood"
+   "dog_team": "Lindenwood",
+   "live_ml": -850,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-17T20:46:04",
+   "board_read_at": "2026-11-17T20:46:04",
+   "alert_expires_at": "2026-11-17T20:49:04",
+   "alert_detail": "2:57 - 1st Half",
+   "alert_fav_score": 25,
+   "alert_dog_score": 27,
+   "alert_ml": -850,
+   "ml_read_at": "2026-11-17T20:46:04"
   },
   "401926143": {
    "sport": "NCAAB",
