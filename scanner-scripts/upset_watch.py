@@ -13,13 +13,15 @@ TRAILING on the live scoreboard, and this game has not alerted before.
 One alert per game (a favorite that goes back ahead and trails again
 does not re-fire).
 
-Basketball trigger (NBA + NCAAB; changed 2026-11-05, both buckets
-labeled 2026-11-14 at Michael's tap): the same trailing condition,
-PLUS the favorite's LIVE moneyline is read and the alert is LABELED
-by bucket — STRONG FAVORITE when the live ML is -200 or shorter
-(-200, -250, -300), BETTOR-FRIENDLY when it is longer than -200
-(-195, -180, -125, any plus price). Both buckets alert; the label
-tells them apart. ML of exactly -200 counts as STRONG FAVORITE. ESPN's basketball scoreboards carry no usable live
+Basketball trigger (NBA + NCAAB; changed 2026-11-19 at Michael's tap):
+the same trailing condition, PLUS the favorite's LIVE moneyline must
+be LONGER than -200 (bettor-friendly only: -195, -180, -125, any plus
+price) at the moment of the check. A favorite still laying -200 or
+shorter live (-200, -250, -8500) does NOT alert — the market is saying
+it is not really in danger, no matter how far it trails. ML of exactly
+-200 does not alert. A strong-ML candidate is simply skipped this
+cycle (not marked alerted, not held): a later cycle can still fire it
+once the ML weakens past -200. ESPN's basketball scoreboards carry no usable live
 moneyline (live NCAAB games have no odds object at all), so the live ML
 is read from ScoresAndOdds' public board — fetched ONLY on runs where a
 basketball candidate exists. If the live ML cannot be read for a game,
@@ -63,7 +65,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DATA_DIR
 STATE_PATH = DATA_DIR / "upset-watch-state.json"
 THRESHOLD = 10.5
-ML_GATE = -200  # basketball: live ML bucket split — ML <= -200 is STRONG FAVORITE, ML > -200 is BETTOR-FRIENDLY (both alert; settled 2026-11-14)
+ML_GATE = -200  # basketball: alert ONLY when live ML is LONGER than -200 (ml > -200, bettor-friendly only; strong favorites never alert; settled 2026-11-19)
 ALERT_TTL_MIN = {"basketball": 3, "football": 5}  # delivery freshness window
 
 SPORTS = [
@@ -358,6 +360,15 @@ def main():
                 rec["live_ml"] = ml
                 rec["ml_bucket"] = ("strong" if ml <= ML_GATE
                                     else "bettor")
+                if ml <= ML_GATE:
+                    # Bettor-friendly-only gate (2026-11-19): a favorite
+                    # still laying -200 or shorter live does not alert.
+                    # Not marked alerted, not held — a later cycle can
+                    # still fire it once the ML weakens past -200.
+                    print(f"SKIP {sport} | {g['matchup']} | live ML "
+                          f"{ml:+d} is -200 or shorter (strong favorite, "
+                          f"bettor-friendly-only gate)", file=sys.stderr)
+                    continue
                 hold = ml_sanity_hold(
                     ml, entry.get("spread"), dog_score - fav_score,
                     seconds_left_in_game(g["detail"]))
