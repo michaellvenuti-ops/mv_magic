@@ -10893,7 +10893,11 @@
    "sport": "CFB",
    "matchup": "Wofford at Ole Miss",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "fav": "home",
+   "spread": 49.5,
+   "fav_team": "Ole Miss",
+   "dog_team": "Wofford"
   },
   "401866694": {
    "sport": "CFB",
@@ -10983,7 +10987,11 @@
    "sport": "CFB",
    "matchup": "Tennessee Tech at Mississippi St",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "fav": "home",
+   "spread": 35.5,
+   "fav_team": "Mississippi St",
+   "dog_team": "Tennessee Tech"
   },
   "401866696": {
    "sport": "CFB",
@@ -11079,7 +11087,11 @@
    "sport": "CFB",
    "matchup": "Chattanooga at Alabama",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "fav": "home",
+   "spread": 49.5,
+   "fav_team": "Alabama",
+   "dog_team": "Chattanooga"
   },
   "401867873": {
    "sport": "CFB",
@@ -13492,7 +13504,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Florida",
-   "dog_team": "Houston"
+   "dog_team": "Houston",
+   "final": true
   },
   "401922292": {
    "sport": "NCAAB",
@@ -13686,11 +13699,21 @@
    "sport": "NCAAB",
    "matchup": "Elon at South Carolina",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 15.5,
    "fav_team": "South Carolina",
-   "dog_team": "Elon"
+   "dog_team": "Elon",
+   "live_ml": -950,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T19:04:04",
+   "board_read_at": "2026-11-18T19:04:04",
+   "alert_expires_at": "2026-11-18T19:07:04",
+   "alert_detail": "18:44 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 5,
+   "alert_ml": -950,
+   "ml_read_at": "2026-11-18T19:04:04"
   },
   "401920963": {
    "sport": "NCAAB",
@@ -13790,7 +13813,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Lafayette",
    "dog_team": "Binghamton"
   },
@@ -13800,7 +13823,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 35.5,
+   "spread": 36.5,
    "fav_team": "Texas Tech",
    "dog_team": "LSU N Orleans"
   },
@@ -13838,7 +13861,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 28.5,
+   "spread": 29.5,
    "fav_team": "Cincinnati",
    "dog_team": "Youngstown St"
   },
@@ -14170,7 +14193,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Heat",
    "dog_team": "Bucks"
   },
@@ -14180,7 +14203,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 4.5,
    "fav_team": "Magic",
    "dog_team": "76ers"
   },
@@ -14200,7 +14223,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Raptors",
    "dog_team": "Wizards"
   },
@@ -14260,7 +14283,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "away",
-   "spread": 7.5,
+   "spread": 6.5,
    "fav_team": "Suns",
    "dog_team": "Kings"
   }
