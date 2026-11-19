@@ -459,6 +459,21 @@ def open_row(page, row: dict) -> bool:
     needle = _clean(row["subject"] or row["sender"])[:60]
     if not needle:
         return False
+    # Start from the top of the list: collect_rows leaves it scrolled to
+    # the bottom, and the virtual list only mounts rows near the
+    # viewport - scrolling down alone can never reach rows above it.
+    try:
+        page.evaluate("""() => {
+            const cont = document.querySelector(
+                '[data-test-id="virtual-list-container"]')
+                || document.querySelector('[data-test-id="virtual-list"]')
+                || document.querySelector('main');
+            if (cont) cont.scrollTop = 0;
+            return true;
+        }""")
+        page.wait_for_timeout(800)
+    except Exception:  # noqa: BLE001
+        pass
     hit = False
     for _ in range(12):
         try:
