@@ -447,6 +447,30 @@ def read_body(page) -> str:
     return " ".join(text.split())[:BODY_MAX_CHARS]
 
 
+FIND_ROW_JS = """(needle) => {
+    const clean = (t) => Array.from(t || '').filter(ch => {
+        const cp = ch.codePointAt(0);
+        return !(cp >= 0xE0000 && cp <= 0xE007F)
+            && !(cp >= 0xE000 && cp <= 0xF8FF)
+            && !(cp >= 0xFE00 && cp <= 0xFE0F)
+            && cp !== 0x200B && cp !== 0x00AD;
+    }).join('');
+    const sels = ['[data-test-id="message-list-item"]',
+                  '[data-test-id*="message-list"] li', 'main li',
+                  '[role="main"] li', 'li[data-test-id]'];
+    for (const s of sels) {
+        for (const el of document.querySelectorAll(s)) {
+            if (clean(el.innerText).includes(needle)) {
+                el.scrollIntoView({block: 'center', behavior: 'instant'});
+                el.click();
+                return true;
+            }
+        }
+    }
+    return false;
+}"""
+
+
 def open_row(page, row: dict) -> bool:
     """Click the list row matching this message; True if a view opened.
 
@@ -471,35 +495,25 @@ def open_row(page, row: dict) -> bool:
             if (cont) cont.scrollTop = 0;
             return true;
         }""")
-        page.wait_for_timeout(800)
+        page.wait_for_timeout(1200)
     except Exception:  # noqa: BLE001
         pass
     hit = False
+    # The virtual list re-mounts rows asynchronously after the jump to
+    # the top: give the top rows a few settle attempts BEFORE scrolling
+    # down, or the first down-scroll moves them out of view again and
+    # the newest rows are never found.
+    for _ in range(3):
+        try:
+            hit = page.evaluate(FIND_ROW_JS, needle)
+        except Exception:  # noqa: BLE001
+            return False
+        if hit:
+            break
+        page.wait_for_timeout(700)
     for _ in range(12):
         try:
-            hit = page.evaluate("""(needle) => {
-                const clean = (t) => Array.from(t || '').filter(ch => {
-                    const cp = ch.codePointAt(0);
-                    return !(cp >= 0xE0000 && cp <= 0xE007F)
-                        && !(cp >= 0xE000 && cp <= 0xF8FF)
-                        && !(cp >= 0xFE00 && cp <= 0xFE0F)
-                        && cp !== 0x200B && cp !== 0x00AD;
-                }).join('');
-                const sels = ['[data-test-id="message-list-item"]',
-                              '[data-test-id*="message-list"] li', 'main li',
-                              '[role="main"] li', 'li[data-test-id]'];
-                for (const s of sels) {
-                    for (const el of document.querySelectorAll(s)) {
-                        if (clean(el.innerText).includes(needle)) {
-                            el.scrollIntoView({block: 'center',
-                                               behavior: 'instant'});
-                            el.click();
-                            return true;
-                        }
-                    }
-                }
-                return false;
-            }""", needle)
+            hit = page.evaluate(FIND_ROW_JS, needle)
         except Exception:  # noqa: BLE001
             return False
         if hit:
