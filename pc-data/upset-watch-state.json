@@ -11416,7 +11416,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 21.0,
+   "spread": 20.5,
    "fav_team": "Wake Forest",
    "dog_team": "Georgia Tech"
   },
@@ -11466,7 +11466,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 3.0,
+   "spread": 2.5,
    "fav_team": "Northwestern",
    "dog_team": "Minnesota"
   },
@@ -11746,7 +11746,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Marshall",
    "dog_team": "Georgia St"
   },
@@ -11826,7 +11826,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "away",
-   "spread": 16.5,
+   "spread": 15.5,
    "fav_team": "Georgia",
    "dog_team": "South Carolina"
   },
@@ -13519,7 +13519,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Tennessee Tech",
-   "dog_team": "UNC Asheville"
+   "dog_team": "UNC Asheville",
+   "final": true
   },
   "401922283": {
    "sport": "NCAAB",
@@ -13539,7 +13540,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Chattanooga",
-   "dog_team": "Winthrop"
+   "dog_team": "Winthrop",
+   "final": true
   },
   "401920947": {
    "sport": "NCAAB",
@@ -13569,7 +13571,8 @@
    "alert_fav_score": 2,
    "alert_dog_score": 3,
    "alert_ml": -1850,
-   "ml_read_at": "2026-11-18T18:38:04"
+   "ml_read_at": "2026-11-18T18:38:04",
+   "final": true
   },
   "401909516": {
    "sport": "NCAAB",
@@ -13579,7 +13582,8 @@
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Georgetown",
-   "dog_team": "Navy"
+   "dog_team": "Navy",
+   "final": true
   },
   "401920682": {
    "sport": "NCAAB",
@@ -13743,7 +13747,8 @@
    "sport": "NCAAB",
    "matchup": "Utica at Colgate",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920694": {
    "sport": "NCAAB",
@@ -13913,11 +13918,21 @@
    "sport": "NCAAB",
    "matchup": "UL Monroe at LSU",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 37.5,
    "fav_team": "LSU",
-   "dog_team": "UL Monroe"
+   "dog_team": "UL Monroe",
+   "live_ml": -15000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T20:38:03",
+   "board_read_at": "2026-11-18T20:38:03",
+   "alert_expires_at": "2026-11-18T20:41:03",
+   "alert_detail": "2:43 - 1st Half",
+   "alert_fav_score": 31,
+   "alert_dog_score": 36,
+   "alert_ml": -15000,
+   "ml_read_at": "2026-11-18T20:38:03"
   },
   "401929420": {
    "sport": "NCAAB",
