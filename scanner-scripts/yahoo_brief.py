@@ -511,25 +511,52 @@ def open_row(page, row: dict) -> bool:
         page.wait_for_timeout(900)
     if not hit:
         return False
-    page.wait_for_timeout(2500)
-    try:
-        return len(read_body(page)) > 40
-    except Exception:  # noqa: BLE001
-        return False
+    # The message view renders its body lazily (2.5s is too short: the
+    # body read came back empty at 2.5s and 1121 chars at 5s). Poll until
+    # the body clears 40 chars, up to ~10s.
+    for _ in range(20):
+        try:
+            if len(read_body(page)) > 40:
+                return True
+        except Exception:  # noqa: BLE001
+            pass
+        page.wait_for_timeout(500)
+    return False
+
+
+def wait_for_list(page, timeout_ms: int = 12000) -> bool:
+    """Poll until the inbox virtual list has mounted rows again."""
+    waited = 0
+    while waited < timeout_ms:
+        try:
+            n = page.evaluate(
+                "() => document.querySelectorAll("
+                "'[data-test-id=\"message-list-item\"]').length")
+            if n and n > 0:
+                return True
+        except Exception:  # noqa: BLE001
+            pass
+        page.wait_for_timeout(500)
+        waited += 500
+    return False
 
 
 def go_back(page) -> None:
-    for sel in ('[data-test-id="back-button"]', '[aria-label="Back"]',
+    # The real control is [aria-label="Back"] (renders a few seconds
+    # after the message view opens); the old 2.5s click timeout gave up
+    # before it existed. After any return, the list needs ~4s to
+    # re-render, so poll for rows instead of a fixed short wait.
+    for sel in ('[aria-label="Back"]', '[data-test-id="back-button"]',
                 'button[title="Back"]'):
         try:
-            page.click(sel, timeout=2500)
-            page.wait_for_timeout(1500)
+            page.click(sel, timeout=5000)
+            wait_for_list(page)
             return
         except Exception:  # noqa: BLE001
             continue
     try:
         page.go_back(timeout=10000)
-        page.wait_for_timeout(1500)
+        wait_for_list(page)
     except Exception:  # noqa: BLE001
         pass
 
