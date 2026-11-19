@@ -13666,7 +13666,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Merrimack",
-   "dog_team": "Boston U"
+   "dog_team": "Boston U",
+   "final": true
   },
   "401922212": {
    "sport": "NCAAB",
@@ -14134,11 +14135,21 @@
    "sport": "NCAAB",
    "matchup": "Oakland at Arizona St",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 22.5,
    "fav_team": "Arizona St",
-   "dog_team": "Oakland"
+   "dog_team": "Oakland",
+   "live_ml": -10000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T21:06:04",
+   "board_read_at": "2026-11-18T21:06:03",
+   "alert_expires_at": "2026-11-18T21:09:04",
+   "alert_detail": "18:10 - 1st Half",
+   "alert_fav_score": 0,
+   "alert_dog_score": 1,
+   "alert_ml": -10000,
+   "ml_read_at": "2026-11-18T21:06:03"
   },
   "401917965": {
    "sport": "NCAAB",
