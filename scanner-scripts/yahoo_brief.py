@@ -141,18 +141,36 @@ LANE_TITLES = {
 }
 
 # ---------------------------------------------------------------- probe
+# Markers refreshed 2026-11-19: Yahoo renamed the inbox DOM since Nov 6
+# (compose-button -> left-rail-Compose-icon / compact-compose-container,
+# "Compose" button label -> "New message", message-list -> virtual-list,
+# folder-list -> expanded-left-rail / novation-left-rail). Diagnosed by
+# loading the profile on the PC: the inbox WAS rendered (title
+# "(21,716 unread) - venutiml@yahoo.com - Yahoo Mail", message rows
+# present) while the old probe returned None on every marker. Old
+# markers are kept as fallbacks in case Yahoo restores them.
 
 PROBE_JS = """() => {
     const url = location.href;
     const body = document.body ? document.body.innerText : '';
+    const title = document.title || '';
     const has = (sel) => !!document.querySelector(sel);
-    const signedIn = has('[data-test-id="compose-button"]')
+    const signedIn = has('[data-test-id="message-list-item"]')
+        || has('[data-test-id="virtual-list"]')
+        || has('[data-test-id="virtual-list-container"]')
+        || has('[data-test-id="inbox-tabs-list"]')
+        || has('[data-test-id="left-rail-Compose-icon"]')
+        || has('[data-test-id="compact-compose-container"]')
+        || has('[data-test-id="compose-button"]')
         || has('[data-test-id="message-list"]')
         || has('[data-test-id="folder-list"]')
-        || (body.includes('Compose') && body.includes('Inbox'));
+        || (body.includes('New message') && body.includes('Inbox'))
+        || (body.includes('Compose') && body.includes('Inbox'))
+        || /\\(\\d[\\d,]* unread\\)/i.test(title)
+        || title.includes('@yahoo.com');
     const loginForm = has('input[name="username"]')
         || has('#login-username') || url.includes('login.yahoo.com');
-    return { url, signedIn, loginForm, title: document.title,
+    return { url, signedIn, loginForm, title: title,
              bodyHead: body.slice(0, 400) };
 }"""
 
@@ -171,8 +189,10 @@ def probe(page) -> dict:
         return {"signed_in": False, "url": info.get("url")}
     # Fresh/logged-out profiles land on a Yahoo Mail promo page whose
     # only mail affordance is a "Sign in" CTA — that is signed OUT.
+    # (The compose button now reads "New message", so the promo test
+    # keys on "Inbox", which a promo page never shows.)
     head = (info.get("bodyHead") or "")
-    if "Sign in" in head and "Compose" not in head:
+    if "Sign in" in head and "Inbox" not in head:
         return {"signed_in": False, "url": info.get("url", page.url),
                 "note": "promo/landing page with Sign in CTA, no inbox"}
     return {"signed_in": None, "url": info.get("url", page.url),
@@ -212,7 +232,7 @@ ROWS_JS = """() => {
 
 SCROLL_JS = """() => {
     const cands = document.querySelectorAll(
-        '[data-test-id="message-list"], [data-test-id*="scroll"], main, [role="main"]');
+        '[data-test-id="virtual-list-container"], [data-test-id="virtual-list"], [data-test-id="message-list"], [data-test-id*="scroll"], main, [role="main"]');
     let best = null, bestH = 0;
     document.querySelectorAll('div, ul').forEach(el => {
         if (el.scrollHeight > el.clientHeight + 200 && el.clientHeight > 200
