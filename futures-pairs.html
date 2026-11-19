@@ -26,7 +26,7 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Futures Pairs (Arb Watch)</h1>
-<div class="sub">Latest scan list: futures-pairs-2026-11-19.md · page built 2026-11-19 09:50 ET</div>
+<div class="sub">Latest scan list: futures-pairs-2026-11-19.md · page built 2026-11-19 10:50 ET</div>
 
 <div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-11-19 (09:24 ET run; No prices read 09:26–09:30 ET)</h2>
 <h3>Read times and sources</h3>
@@ -120,6 +120,13 @@ details summary{cursor:pointer;font-weight:700;font-size:16px}
 <li>NBA Championship 2026-27 — Lakers — Hard Rock +3000 / Kalshi No 96% and Polymarket US No 96% → $240, 0.78% each. Below bar; never a state pair.</li>
 <li>NBA Championship 2026-27 — Heat — Bet365 +5000 / Kalshi No 97% and Polymarket US No 97% → $530, 1.05% each. Below bar; never a state pair.</li>
 <li>Stanley Cup 2026-27 — Canadiens — FanDuel +3000 / Kalshi No 96% and Polymarket US No 96% → $240, 0.78% each. Below bar; never a state pair.</li>
+</ul>
+<h3>CORRECTION — recomputed 2026-11-19 ~10:00 ET against the Nov 19 board JSON (main agent)</h3>
+<ul>
+<li>Cause: the 09:24 scan fired before the fresh <code>futures-board-2026-11-19.json</code> landed, so it fell back to the Nov 15 file. The Nov 19 JSON was saved and verified that morning (5 markets, 93 rows); the pairs above were recomputed with today&#x27;s book legs + the same fresh No prices (09:26–09:30 ET).</li>
+<li>CORRECTED DELIVERABLES: (1) Wild / BetRivers +1100 + Poly No 86% → $680, 6.01% (book was mislabeled DraftKings in the scan text; state was already BetRivers-keyed). (2) Wild / BetRivers +1100 + Kalshi No 87¢ → $560, 4.90% (profit fell from $800/7.14%). (3) Mensah / DraftKings +600 + Poly No 82% → $260, 3.86% — NEW (scan missed it: it used the old best book BetMGM +375).</li>
+<li>DEAD on today&#x27;s prices (do not deliver): Burrow/Caesars pairs (best book now FanDuel −105); Smith/FanDuel pairs (FanDuel now −220; best book Caesars −170 + Poly No 35% = 97.96%, just above bar); Vikings/Bet365/Kalshi (best book now DK +1500, 6.25% + No 92% = 98.25%).</li>
+<li>State repaired: Wild notes fixed to BetRivers; Smith/Burrow/Vikings entries annotated DEAD with today&#x27;s combined %; Mensah/DK/Poly added as a new pair. Backup: futures-pairs-state.json.bak-20261119-pairscorrect.</li>
 </ul></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
