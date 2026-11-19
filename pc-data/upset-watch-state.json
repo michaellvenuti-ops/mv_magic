@@ -11193,7 +11193,11 @@
    "sport": "CFB",
    "matchup": "Samford at Auburn",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "fav": "home",
+   "spread": 48.5,
+   "fav_team": "Auburn",
+   "dog_team": "Samford"
   },
   "401867844": {
    "sport": "CFB",
@@ -13785,11 +13789,21 @@
    "sport": "NCAAB",
    "matchup": "Chicago St at UIC",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 23.5,
    "fav_team": "UIC",
-   "dog_team": "Chicago St"
+   "dog_team": "Chicago St",
+   "live_ml": -8500,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T19:14:03",
+   "board_read_at": "2026-11-18T19:14:03",
+   "alert_expires_at": "2026-11-18T19:17:03",
+   "alert_detail": "14:06 - 1st Half",
+   "alert_fav_score": 7,
+   "alert_dog_score": 8,
+   "alert_ml": -8500,
+   "ml_read_at": "2026-11-18T19:14:03"
   },
   "401917902": {
    "sport": "NCAAB",
@@ -14203,7 +14217,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 11.5,
    "fav_team": "Heat",
    "dog_team": "Bucks"
   },
@@ -14283,7 +14297,7 @@
    "date": "2026-11-19",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 11.5,
    "fav_team": "Lakers",
    "dog_team": "Jazz"
   },
