@@ -13551,7 +13551,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "E Michigan",
-   "dog_team": "Detroit Mercy"
+   "dog_team": "Detroit Mercy",
+   "final": true
   },
   "401917181": {
    "sport": "NCAAB",
@@ -13593,19 +13594,22 @@
    "fav": "home",
    "spread": 29.5,
    "fav_team": "St John's",
-   "dog_team": "Siena"
+   "dog_team": "Siena",
+   "final": true
   },
   "401929014": {
    "sport": "NCAAB",
    "matchup": "MCLA at New Haven",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928843": {
    "sport": "NCAAB",
    "matchup": "Defiance at Miami OH",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928347": {
    "sport": "NCAAB",
@@ -13651,7 +13655,8 @@
    "sport": "NCAAB",
    "matchup": "St Joseph BKN at Fairfield",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401923401": {
    "sport": "NCAAB",
@@ -13681,7 +13686,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Furman",
-   "dog_team": "Radford"
+   "dog_team": "Radford",
+   "final": true
   },
   "401922047": {
    "sport": "NCAAB",
@@ -13721,7 +13727,8 @@
    "alert_fav_score": 2,
    "alert_dog_score": 5,
    "alert_ml": -950,
-   "ml_read_at": "2026-11-18T19:04:04"
+   "ml_read_at": "2026-11-18T19:04:04",
+   "final": true
   },
   "401920963": {
    "sport": "NCAAB",
@@ -13778,7 +13785,8 @@
    "alert_fav_score": 3,
    "alert_dog_score": 4,
    "alert_ml": -10000,
-   "ml_read_at": "2026-11-18T19:06:04"
+   "ml_read_at": "2026-11-18T19:06:04",
+   "final": true
   },
   "401919808": {
    "sport": "NCAAB",
@@ -13824,7 +13832,8 @@
    "sport": "NCAAB",
    "matchup": "Columbia (SC) at West Georgia",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911377": {
    "sport": "NCAAB",
@@ -13854,7 +13863,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Lafayette",
-   "dog_team": "Binghamton"
+   "dog_team": "Binghamton",
+   "final": true
   },
   "401921134": {
    "sport": "NCAAB",
@@ -14150,11 +14160,21 @@
    "sport": "NCAAB",
    "matchup": "Portland at Colorado",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 14.5,
    "fav_team": "Colorado",
-   "dog_team": "Portland"
+   "dog_team": "Portland",
+   "live_ml": -2000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T21:04:03",
+   "board_read_at": "2026-11-18T21:04:03",
+   "alert_expires_at": "2026-11-18T21:07:03",
+   "alert_detail": "18:07 - 1st Half",
+   "alert_fav_score": 2,
+   "alert_dog_score": 4,
+   "alert_ml": -2000,
+   "ml_read_at": "2026-11-18T21:04:03"
   },
   "401909494": {
    "sport": "NCAAB",
