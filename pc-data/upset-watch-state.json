@@ -11318,7 +11318,8 @@
    "fav": "home",
    "spread": 3.0,
    "fav_team": "UMass",
-   "dog_team": "Akron"
+   "dog_team": "Akron",
+   "final": true
   },
   "401866469": {
    "sport": "CFB",
@@ -11328,7 +11329,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Buffalo",
-   "dog_team": "C Michigan"
+   "dog_team": "C Michigan",
+   "final": true
   },
   "401862830": {
    "sport": "CFB",
@@ -11346,7 +11348,7 @@
    "date": "2026-11-20",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "UCF",
    "dog_team": "Iowa State"
   },
@@ -11496,7 +11498,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 3.0,
    "fav_team": "Memphis",
    "dog_team": "Navy"
   },
@@ -13530,7 +13532,8 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Samford",
-   "dog_team": "SC Upstate"
+   "dog_team": "SC Upstate",
+   "final": true
   },
   "401920974": {
    "sport": "NCAAB",
@@ -14007,7 +14010,8 @@
    "alert_fav_score": 2,
    "alert_dog_score": 5,
    "alert_ml": -10000,
-   "ml_read_at": "2026-11-18T20:08:03"
+   "ml_read_at": "2026-11-18T20:08:03",
+   "final": true
   },
   "401927357": {
    "sport": "NCAAB",
@@ -14057,7 +14061,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "UNC Greensboro",
-   "dog_team": "Gardner-Webb"
+   "dog_team": "Gardner-Webb",
+   "final": true
   },
   "401911232": {
    "sport": "NCAAB",
@@ -14067,7 +14072,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Wichita St",
-   "dog_team": "Loyola Chicago"
+   "dog_team": "Loyola Chicago",
+   "final": true
   },
   "401909555": {
    "sport": "NCAAB",
@@ -14077,7 +14083,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Boston College",
-   "dog_team": "Harvard"
+   "dog_team": "Harvard",
+   "final": true
   },
   "401906805": {
    "sport": "NCAAB",
@@ -14108,7 +14115,8 @@
    "fav": "home",
    "spread": 32.5,
    "fav_team": "Nebraska",
-   "dog_team": "South Dakota"
+   "dog_team": "South Dakota",
+   "final": true
   },
   "401909742": {
    "sport": "NCAAB",
@@ -14320,11 +14328,21 @@
    "sport": "NCAAB",
    "matchup": "Fullerton at UCLA",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 31.5,
    "fav_team": "UCLA",
-   "dog_team": "Fullerton"
+   "dog_team": "Fullerton",
+   "live_ml": -15000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T22:40:03",
+   "board_read_at": "2026-11-18T22:40:03",
+   "alert_expires_at": "2026-11-18T22:43:03",
+   "alert_detail": "18:30 - 1st Half",
+   "alert_fav_score": 0,
+   "alert_dog_score": 6,
+   "alert_ml": -15000,
+   "ml_read_at": "2026-11-18T22:40:03"
   },
   "401910007": {
    "sport": "NBA",
@@ -14400,7 +14418,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Pistons",
-   "dog_team": "Pelicans"
+   "dog_team": "Pelicans",
+   "final": true
   },
   "401910014": {
    "sport": "NBA",
@@ -14410,7 +14429,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Thunder",
-   "dog_team": "Hawks"
+   "dog_team": "Hawks",
+   "final": true
   },
   "401910016": {
    "sport": "NBA",
@@ -14420,7 +14440,8 @@
    "fav": "home",
    "spread": 4.5,
    "fav_team": "Mavericks",
-   "dog_team": "Warriors"
+   "dog_team": "Warriors",
+   "final": true
   },
   "401910015": {
    "sport": "NBA",
