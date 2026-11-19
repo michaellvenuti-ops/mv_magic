@@ -71,6 +71,24 @@ MONTHS = {m: i + 1 for i, m in enumerate(
 DATE_RE = re.compile(
     r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})\b")
 TIME_RE = re.compile(r"\b\d{1,2}:\d{2}\s*(AM|PM)\b", re.I)
+# Row-layout patterns, diagnosed 2026-11-19 from a real inbox dump:
+# rows render as [Unread|Read message] / sender / [thread-count badge]
+# / subject (+ middle-dot + snippet start) / subject (full) / middle-dot
+# separator / snippet / date line. The date line is standalone, so it is
+# found by scanning from the END (snippet dates must never win).
+STATUS_RE = re.compile(r"^(unread|read) message$", re.I)
+DATE_LINE_RE = re.compile(
+    r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})$")
+TIME_LINE_RE = re.compile(r"^\d{1,2}:\d{2}\s*(AM|PM)$", re.I)
+BARE_NUM_RE = re.compile(r"^\d+$")
+# Invisible junk spam rows carry between letters (tag chars, soft
+# hyphens, zero-width spaces) - strip so sender/subject match and read.
+_JUNK_RE = re.compile(
+    "[\U000E0000-\U000E007F\uE000-\uF8FF\uFE00-\uFE0F\u200B\u00AD]")
+
+
+def _clean(s: str) -> str:
+    return _JUNK_RE.sub("", s).strip()
 
 # ---------------------------------------------------------------- lanes
 # Matching is on sender + subject (and, for urgent, the body once opened).
@@ -248,35 +266,92 @@ SCROLL_JS = """() => {
 def parse_row(text: str, today: datetime) -> dict | None:
     """Split one list row's text into sender / subject / date fields.
 
-    Yahoo rows render as stacked lines: sender, subject, snippet, date
-    (time for today, 'Yesterday', or 'Mon D'). Parsing is best-effort;
-    the raw text is banked in the dump either way.
+    Yahoo rows render as stacked lines (Nov 2026 layout):
+        [Unread|Read message]   status line
+        <sender>
+        [<n>]                   thread-count badge on some rows
+        <subject>               truncated with an ellipsis, or subject
+                                + middle-dot + snippet start
+        <subject>               full subject, repeated
+        \u00b7                   separator line
+        <snippet...>
+        <time | Yesterday | Mon D>   date line, last
+    The subject is the line immediately before the standalone
+    middle-dot separator; the date is the last standalone time/date
+    line. Parsing is best-effort; the raw text is banked either way.
     """
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if not lines:
+        return None
+    if STATUS_RE.match(lines[0]):
+        lines = lines[1:]
     if len(lines) < 2:
         return None
+    # Date: last standalone time/date/yesterday line (scan from the end
+    # so dates inside the snippet never win).
     date_text, msg_date = "", None
-    for ln in lines:
-        m = DATE_RE.search(ln)
+    di = -1
+    for i in range(len(lines) - 1, -1, -1):
+        ln = lines[i]
+        if TIME_LINE_RE.match(ln):
+            date_text = ln
+            msg_date = today
+            di = i
+            break
+        if ln.lower() == "yesterday":
+            date_text = ln
+            msg_date = today - timedelta(days=1)
+            di = i
+            break
+        m = DATE_LINE_RE.match(ln)
         if m:
-            date_text = m.group(0)
+            date_text = ln
             year = today.year
             msg_date = datetime(year, MONTHS[m.group(1)],
                                 int(m.group(2)), tzinfo=ET)
             if msg_date > today + timedelta(days=2):  # Dec row in January
                 msg_date = msg_date.replace(year=year - 1)
+            di = i
             break
-        if TIME_RE.search(ln) and len(ln) < 12:
-            date_text = ln
-            msg_date = today
+    if di < 0:
+        # fallback: old forward scan over any line
+        for ln in lines:
+            m = DATE_RE.search(ln)
+            if m:
+                date_text = m.group(0)
+                year = today.year
+                msg_date = datetime(year, MONTHS[m.group(1)],
+                                    int(m.group(2)), tzinfo=ET)
+                if msg_date > today + timedelta(days=2):
+                    msg_date = msg_date.replace(year=year - 1)
+                break
+            if TIME_RE.search(ln) and len(ln) < 12:
+                date_text = ln
+                msg_date = today
+                break
+            if ln.lower() == "yesterday":
+                date_text = ln
+                msg_date = today - timedelta(days=1)
+                break
+    body_lines = lines if di < 0 else lines[:di]
+    if not body_lines:
+        return None
+    sender = _clean(body_lines[0])
+    rest = body_lines[1:]
+    # skip a bare thread-count badge ("2", "3") between sender/subject
+    while rest and BARE_NUM_RE.match(rest[0]):
+        rest = rest[1:]
+    subject = ""
+    for j, ln in enumerate(rest):
+        if ln == "\u00b7":
+            if j > 0:
+                subject = rest[j - 1]
             break
-        if ln.lower() == "yesterday":
-            date_text = ln
-            msg_date = today - timedelta(days=1)
-            break
-    content = [ln for ln in lines if ln != date_text]
-    sender = content[0] if content else ""
-    subject = content[1] if len(content) > 1 else ""
+    if not subject and rest:
+        subject = rest[0].split("\u00b7")[0]
+    if "\u00b7" in subject:  # no repeated subject line: truncated form
+        subject = subject.split("\u00b7")[0]
+    subject = _clean(subject).rstrip("\u2026").strip()
     if not sender or not subject:
         return None
     return {"sender": sender[:120], "subject": subject[:300],
@@ -373,27 +448,57 @@ def read_body(page) -> str:
 
 
 def open_row(page, row: dict) -> bool:
-    """Click the list row matching this message; True if a view opened."""
-    subject = row["subject"]
-    handle = page.evaluate_handle("""(subj) => {
-        const sels = ['[data-test-id="message-list-item"]',
-                      '[data-test-id*="message-list"] li', 'main li',
-                      '[role="main"] li', 'li[data-test-id]'];
-        for (const s of sels) {
-            for (const el of document.querySelectorAll(s)) {
-                if ((el.innerText || '').includes(subj)) return el;
-            }
-        }
-        return null;
-    }""", subject[:60])
-    try:
-        el = handle.as_element()
-        if el is None:
+    """Click the list row matching this message; True if a view opened.
+
+    The inbox list is virtualized: rows outside the viewport are not
+    mounted, so find-and-click runs in-page (no handle round-trip) and
+    the list is scrolled until the row mounts, up to 12 tries. The
+    match strips the same invisible junk parse_row removes, so spam
+    rows with tag characters between letters still match.
+    """
+    needle = _clean(row["subject"] or row["sender"])[:60]
+    if not needle:
+        return False
+    hit = False
+    for _ in range(12):
+        try:
+            hit = page.evaluate("""(needle) => {
+                const clean = (t) => Array.from(t || '').filter(ch => {
+                    const cp = ch.codePointAt(0);
+                    return !(cp >= 0xE0000 && cp <= 0xE007F)
+                        && !(cp >= 0xE000 && cp <= 0xF8FF)
+                        && !(cp >= 0xFE00 && cp <= 0xFE0F)
+                        && cp !== 0x200B && cp !== 0x00AD;
+                }).join('');
+                const sels = ['[data-test-id="message-list-item"]',
+                              '[data-test-id*="message-list"] li', 'main li',
+                              '[role="main"] li', 'li[data-test-id]'];
+                for (const s of sels) {
+                    for (const el of document.querySelectorAll(s)) {
+                        if (clean(el.innerText).includes(needle)) {
+                            el.scrollIntoView({block: 'center',
+                                               behavior: 'instant'});
+                            el.click();
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            }""", needle)
+        except Exception:  # noqa: BLE001
             return False
-        el.scroll_into_view_if_needed(timeout=5000)
-        el.click(timeout=8000)
-        page.wait_for_timeout(2500)
-        return True
+        if hit:
+            break
+        try:
+            page.evaluate(SCROLL_JS)
+        except Exception:  # noqa: BLE001
+            break
+        page.wait_for_timeout(900)
+    if not hit:
+        return False
+    page.wait_for_timeout(2500)
+    try:
+        return len(read_body(page)) > 40
     except Exception:  # noqa: BLE001
         return False
 
