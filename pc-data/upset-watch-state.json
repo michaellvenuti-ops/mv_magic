@@ -13649,7 +13649,8 @@
    "fav": "home",
    "spread": 15.5,
    "fav_team": "La Salle",
-   "dog_team": "Coppin St"
+   "dog_team": "Coppin St",
+   "final": true
   },
   "401924763": {
    "sport": "NCAAB",
@@ -13677,7 +13678,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "FAU",
-   "dog_team": "FGCU"
+   "dog_team": "FGCU",
+   "final": true
   },
   "401922055": {
    "sport": "NCAAB",
@@ -13698,7 +13700,8 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Longwood",
-   "dog_team": "VMI"
+   "dog_team": "VMI",
+   "final": true
   },
   "401921156": {
    "sport": "NCAAB",
@@ -13708,7 +13711,8 @@
    "fav": "home",
    "spread": 8.5,
    "fav_team": "NC A&T",
-   "dog_team": "Morgan St"
+   "dog_team": "Morgan St",
+   "final": true
   },
   "401921141": {
    "sport": "NCAAB",
@@ -13827,7 +13831,8 @@
    "alert_fav_score": 7,
    "alert_dog_score": 8,
    "alert_ml": -8500,
-   "ml_read_at": "2026-11-18T19:14:03"
+   "ml_read_at": "2026-11-18T19:14:03",
+   "final": true
   },
   "401917902": {
    "sport": "NCAAB",
@@ -13844,7 +13849,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Wofford",
-   "dog_team": "Charleston So"
+   "dog_team": "Charleston So",
+   "final": true
   },
   "401911309": {
    "sport": "NCAAB",
@@ -13854,7 +13860,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "Brown",
-   "dog_team": "Holy Cross"
+   "dog_team": "Holy Cross",
+   "final": true
   },
   "401911277": {
    "sport": "NCAAB",
@@ -14201,11 +14208,21 @@
    "sport": "NCAAB",
    "matchup": "Bethune at Creighton",
    "date": "2026-11-19",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 24.5,
    "fav_team": "Creighton",
-   "dog_team": "Bethune"
+   "dog_team": "Bethune",
+   "live_ml": -15000,
+   "ml_bucket": "strong",
+   "alerted_at": "2026-11-18T21:18:03",
+   "board_read_at": "2026-11-18T21:18:02",
+   "alert_expires_at": "2026-11-18T21:21:03",
+   "alert_detail": "17:17 - 1st Half",
+   "alert_fav_score": 3,
+   "alert_dog_score": 5,
+   "alert_ml": -15000,
+   "ml_read_at": "2026-11-18T21:18:03"
   },
   "401917535": {
    "sport": "NCAAB",
