@@ -9937,3 +9937,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 03:34:40 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
 [2026-11-20 03:34:42 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-20 03:34:42 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 03:58:20 ET] sync_to_github.py: FAILED (exit 1) in 1418s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-15.md (HTTP 409: {'error': '{"message":"is at 8262cd7ee905580d072cfbd9bfafbac3b76ed661 but expected b9378e8dd1
+[2026-11-20 04:00:53 ET] odds_recorder.py: OK in 123s — SUMMARY: recorded 199 events (80 with odds), db total 304896 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 04:00:55 ET] wide_builds.py: OK in 1s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 04:04:41 ET] dh_low_holds.py: FAILED (exit 1) in 226s —   - navigating to "https://darkhorseodds.com/low-holds", waiting until "domcontentloaded"
+[2026-11-20 04:09:07 ET] dh_game_middles.py: OK in 266s — GAME MIDDLE: NCAAB UT Arlington Northwestern St. Today 7:30 PM / table / Alt Total Under 148.5 / Alt Total Over 147.5 / table | DraftKings | Bet365 — window 295
+[2026-11-20 04:12:54 ET] dh_key_number_middles.py: OK in 227s — key-number-middles: 288 basketball rows excluded (football-only rule).
+[2026-11-20 04:14:26 ET] hung_number.py: OK in 92s — HUNG NUMBER: Saints vs Bears — Hard Rock spread value dog (12.5 vs median 11.5)
+[2026-11-20 04:14:33 ET] rlm.py: OK in 7s
+[2026-11-20 04:14:38 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 04:14:38 ET] syncing to GitHub (regular 10-minute sync)
