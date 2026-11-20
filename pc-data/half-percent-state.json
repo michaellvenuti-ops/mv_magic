@@ -150,7 +150,14 @@
    }
   },
   "2026-11-16": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 60.900001525878906,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 61.78,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-16, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -163,6 +170,21 @@
     "ticker": "TSN",
     "vol": 353636
    }
+  },
+  "2026-11-19": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-18, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Palo Alto Networks, Inc. Common Stock",
+    "entry": 361.81,
+    "mcap": 296174288896,
+    "pct": 6.44,
+    "stop": 360.0,
+    "target": 363.62,
+    "ticker": "PANW",
+    "vol": 19184181
+   }
   }
  },
  "meta": {
@@ -170,7 +192,7 @@
    "losses": 1,
    "modeled_pl": 50.0,
    "no_data": 0,
-   "no_trades": 3,
+   "no_trades": 4,
    "time_exits": 0,
    "wins": 2
   }
