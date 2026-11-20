@@ -8,3 +8,8 @@
 ## 2026-11-20T05:54:52-05:00 — 83 games, 0 leads credited, 4 started games skipped
 ## 2026-11-20T08:14:47-05:00 — no-follow: Fanatics Iowa @ Illinois | 2026-11-20 spread (only 1 followed)
 ## 2026-11-20T08:14:47-05:00 — 83 games, 0 leads credited, 4 started games skipped
+## 2026-11-20T10:50:19-05:00 — pack move, never credited: Iowa State @ UCF | 2026-11-20 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-20T10:50:21-05:00 — pack move, never credited: Clemson @ Duke | 2026-11-20 spread (BetMGM, Caesars, DraftKings, Fanatics, bet365)
+## 2026-11-20T10:50:21-05:00 — pack move, never credited: Bowling Green @ Toledo | 2026-11-20 total (BetMGM, DraftKings)
+## 2026-11-20T10:50:21-05:00 — pack move, never credited: New Mexico @ Wyoming | 2026-11-20 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-20T10:50:21-05:00 — 83 games, 0 leads credited, 4 started games skipped
