@@ -1,6 +1,5 @@
-# Hung numbers — 2026-11-20 (scan 2026-11-20 05:53)
+# Hung numbers — 2026-11-20 (scan 2026-11-20 07:10)
 
-- Saints vs Bears | Hard Rock | spread | value: dog | book 12.5 vs median 11.5 | div 1.0 
 - Cardinals vs Chiefs | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Steelers vs Eagles | DraftKings | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
 - Raiders vs Broncos | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
