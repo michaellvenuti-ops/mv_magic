@@ -1,0 +1,25 @@
+# Hung numbers — 2026-11-19 (scan 2026-11-19 20:48)
+
+- Colts vs Texans | DraftKings | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
+- Colts vs Texans | Caesars | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
+- Colts vs Texans | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Colts vs Texans | Hard Rock | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
+- Colts vs Texans | Caesars | moneyline Colts | value: Colts | book 27.8 vs median 21.1 | div 6.7 
+- Colts vs Texans | Hard Rock | moneyline Colts | value: Colts | book 26.7 vs median 21.1 | div 5.6 
+- Cardinals vs Chiefs | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
+- Raiders vs Broncos | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
+- Rice vs Temple | DraftKings | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
+- Rice vs Temple | Caesars | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
+- Rice vs Temple | BetMGM | total | value: Under | book 45.5 vs median 47.0 | div 1.5 
+- Clemson vs Duke | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- Vanderbilt vs Florida | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- Wofford vs Ole Miss | FanDuel | spread | value: favorite | book 48.5 vs median 49.5 | div 1.0 
+- Tennessee Tech vs Mississippi State | FanDuel | spread | value: favorite | book 34.5 vs median 35.5 | div 1.0 
+- Tennessee Tech vs Mississippi State | Fanatics | spread | value: dog | book 59.5 vs median 35.5 | div 24.0 
+- Tennessee Tech vs Mississippi State | Fanatics | moneyline Mississippi State | value: Mississippi State | book 26.5 vs median 98.8 | div 72.3 
+- Tennessee Tech vs Mississippi State | Fanatics | moneyline Tennessee Tech | value: Tennessee Tech | book 73.5 vs median 5.0 | div 68.5 
+- Chattanooga vs Alabama | Fanatics | spread | value: dog | book 58.5 vs median 49.0 | div 9.5 
+- LSU vs Tennessee | DraftKings | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
+- LSU vs Tennessee | Fanatics | spread | value: dog | book 1.0 vs median -1.0 | div 2.0 
+- Utah State vs Oregon State | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Eastern Michigan vs Western Michigan | DraftKings | spread | value: dog | book 18.5 vs median 17.5 | div 1.0 
