@@ -12,3 +12,5 @@ NEW FLAG: FBS New Mexico @ Wyoming | 2026-11-20 — Kalshi still dealing spread 
 ## 2026-11-20T10:50:28-05:00 — 70 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-20T11:53:02-05:00 — 70 games, 0 steam events, 0 NEW flags, 3 started games skipped
 ## 2026-11-20T13:42:46-05:00 — 70 games, 0 steam events, 0 NEW flags, 3 started games skipped
+## 2026-11-20T15:36:51-05:00 — 70 games, 2 steam events, 1 NEW flags, 3 started games skipped
+NEW FLAG: FBS South Alabama @ Southern Miss | 2026-11-20 — Kalshi still dealing spread 3.5 on South Alabama (pre-move median 3.5, now 4.5)
