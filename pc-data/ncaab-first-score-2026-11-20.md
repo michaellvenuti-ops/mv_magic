@@ -17,3 +17,8 @@
 - 2026-11-20: Averett Cougars @ William & Mary Tribe — first: Averett Cougars (3PT, 0:26 in); lead changes 1; final 39-85
 - 2026-11-20: Bloomfield Deacons @ Maryland Eastern Shore Hawks — first: Bloomfield Deacons (2PT, 0:26 in); lead changes 1; final 77-87
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T15:52:20-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 880 games through 2026-11-20
+- 2026-11-20: Green Bay Phoenix @ Florida State Seminoles — first: Florida State Seminoles (3PT, 0:15 in); lead changes 6; final 63-87
+- 2026-11-20: Oklahoma State Cowboys @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (3PT, 0:34 in); lead changes 6; final 70-85
+- 2026-11-20: Temple Owls @ Middle Tennessee Blue Raiders — first: Temple Owls (3PT, 0:33 in); lead changes 4; final 85-76
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
