@@ -10027,3 +10027,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 08:16:51 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
 [2026-11-20 08:16:53 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-20 08:16:53 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 08:46:04 ET] sync_to_github.py: OK in 1750s —   ok: team-total-middles-board-pc.html
+[2026-11-20 08:47:55 ET] notify.py: OK in 106s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-20 08:54:12 ET] odds_recorder.py: OK in 347s — SUMMARY: recorded 199 events (80 with odds), db total 306090 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 08:59:36 ET] dh_arbitrage.py: FAILED (exit 1) in 321s —   - [pid=16800] <gracefully close end>
+[2026-11-20 09:05:53 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 365s —   - <launched> pid=13976
+[2026-11-20 09:06:00 ET] wide_builds.py: OK in 5s — NEW BUILD: NCAAF UTEP Air Force Today 8:00 PM — Total — Over 46 Fanatics-NJ -120 ($107) / Under 46.5 Bally Bet +110 ($93) — win+push at 46 — push +$102.30, miss
+[2026-11-20 09:06:00 ET] syncing to GitHub (wide-builds banked new builds)
