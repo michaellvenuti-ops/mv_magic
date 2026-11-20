@@ -9888,3 +9888,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 01:22:23 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=0 queued_total=36
 [2026-11-20 01:22:24 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
 [2026-11-20 01:22:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 01:44:30 ET] sync_to_github.py: OK in 1326s —   ok: team-total-middles-board-pc.html
+[2026-11-20 01:44:56 ET] notify.py: OK in 25s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-20 01:46:46 ET] odds_recorder.py: OK in 81s — SUMMARY: recorded 199 events (80 with odds), db total 304299 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 01:50:35 ET] dh_arbitrage.py: OK in 228s — arbitrage: no new qualifying pairs (silent).
+[2026-11-20 01:52:22 ET] dh_kalshi_poly_arb.py: OK in 107s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-20 01:52:25 ET] wide_builds.py: OK in 2s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 01:56:14 ET] dh_basketball_key_middles.py: OK in 229s — basketball-key-middles: no new basketball middles.
+[2026-11-20 01:56:20 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 01:57:56 ET] dh_prop_middles.py: OK in 96s — PROP MIDDLE CLEAN : NFL LV Raiders DEN Broncos Nov-22 4:25 PM / table / Rec + Rush Yards A. Jeanty Under 70.5 / Rec + Rush Yards A. Jeanty 70+ / table | BetRive
+[2026-11-20 02:01:09 ET] dh_sog_middles.py: OK in 193s — - 0 deliverables this run
+[2026-11-20 02:01:15 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -2.5c vs +EV.
+[2026-11-20 02:01:16 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 02:01:18 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 02:01:19 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 350 total tallied.
+[2026-11-20 02:01:22 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 2 new, 1 unverified, 875 total tallied.
+[2026-11-20 02:01:23 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 02:01:24 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 02:01:25 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-20 02:01:25 ET] syncing to GitHub (regular 10-minute sync)
