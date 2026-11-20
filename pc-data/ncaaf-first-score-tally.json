@@ -1,5 +1,5 @@
 {
- "through": "2026-11-18",
+ "through": "2026-11-19",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -10516,74 +10516,88 @@
    "winner": "Oklahoma Sooners"
   },
   {
-   "date": "2026-11-17",
    "away": "Ball State Cardinals",
-   "home": "Ohio Bobcats",
+   "date": "2026-11-17",
+   "final": "28-35",
    "first": "Ohio Bobcats",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 256,
-   "winner": "Ohio Bobcats",
-   "seq": "0-7>3-7>10-7>17-7>17-14>20-14>20-21>20-28>28-28>28-35",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Ohio Bobcats",
    "lead_changes": 2,
+   "seq": "0-7>3-7>10-7>17-7>17-14>20-14>20-21>20-28>28-28>28-35",
    "ties": 1,
-   "final": "28-35"
+   "winner": "Ohio Bobcats"
   },
   {
-   "date": "2026-11-17",
    "away": "Eastern Michigan Eagles",
-   "home": "Western Michigan Broncos",
-   "first": "Western Michigan Broncos",
-   "first_side": "home",
-   "first_kind": "TD",
-   "first_elapsed_sec": 18,
-   "winner": "Western Michigan Broncos",
-   "seq": "0-7>0-14>7-14>7-17>7-24>7-31>13-31>20-31>20-34>27-34",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "27-34"
-  },
-  {
    "date": "2026-11-17",
-   "away": "Miami (OH) RedHawks",
-   "home": "Kent State Golden Flashes",
-   "first": "Miami (OH) RedHawks",
-   "first_side": "away",
+   "final": "27-34",
+   "first": "Western Michigan Broncos",
+   "first_elapsed_sec": 18,
    "first_kind": "TD",
-   "first_elapsed_sec": 213,
-   "winner": "Miami (OH) RedHawks",
-   "seq": "7-0>7-3>13-3>20-3",
+   "first_side": "home",
+   "home": "Western Michigan Broncos",
    "lead_changes": 0,
+   "seq": "0-7>0-14>7-14>7-17>7-24>7-31>13-31>20-31>20-34>27-34",
    "ties": 0,
-   "final": "20-3"
+   "winner": "Western Michigan Broncos"
   },
   {
-   "date": "2026-11-18",
+   "away": "Miami (OH) RedHawks",
+   "date": "2026-11-17",
+   "final": "20-3",
+   "first": "Miami (OH) RedHawks",
+   "first_elapsed_sec": 213,
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Kent State Golden Flashes",
+   "lead_changes": 0,
+   "seq": "7-0>7-3>13-3>20-3",
+   "ties": 0,
+   "winner": "Miami (OH) RedHawks"
+  },
+  {
    "away": "Akron Zips",
-   "home": "Massachusetts Minutemen",
+   "date": "2026-11-18",
+   "final": "34-33",
    "first": "Massachusetts Minutemen",
+   "first_elapsed_sec": 182,
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Massachusetts Minutemen",
+   "lead_changes": 1,
+   "seq": "0-7>0-10>7-10>7-17>7-20>7-26>14-26>17-26>24-26>24-33>31-33>34-33",
+   "ties": 0,
+   "winner": "Akron Zips"
+  },
+  {
+   "away": "Central Michigan Chippewas",
+   "date": "2026-11-18",
+   "final": "21-40",
+   "first": "Central Michigan Chippewas",
+   "first_elapsed_sec": 387,
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Buffalo Bulls",
+   "lead_changes": 3,
+   "seq": "7-0>7-3>7-6>7-13>14-13>14-20>14-26>21-26>21-33>21-40",
+   "ties": 0,
+   "winner": "Buffalo Bulls"
+  },
+  {
+   "date": "2026-11-19",
+   "away": "Rice Owls",
+   "home": "Temple Owls",
+   "first": "Temple Owls",
    "first_side": "home",
    "first_kind": "TD",
-   "first_elapsed_sec": 182,
-   "winner": "Akron Zips",
-   "seq": "0-7>0-10>7-10>7-17>7-20>7-26>14-26>17-26>24-26>24-33>31-33>34-33",
-   "lead_changes": 1,
-   "ties": 0,
-   "final": "34-33"
-  },
-  {
-   "date": "2026-11-18",
-   "away": "Central Michigan Chippewas",
-   "home": "Buffalo Bulls",
-   "first": "Central Michigan Chippewas",
-   "first_side": "away",
-   "first_kind": "TD",
-   "first_elapsed_sec": 387,
-   "winner": "Buffalo Bulls",
-   "seq": "7-0>7-3>7-6>7-13>14-13>14-20>14-26>21-26>21-33>21-40",
+   "first_elapsed_sec": 277,
+   "winner": "Rice Owls",
+   "seq": "0-7>7-7>7-10>14-10>14-17>14-24>17-24>17-27>24-27>31-27",
    "lead_changes": 3,
-   "ties": 0,
-   "final": "21-40"
+   "ties": 1,
+   "final": "31-27"
   }
  ],
  "tally": {
@@ -12028,7 +12042,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Rice Owls": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 4,
    "kinds": {
     "FG": 1,
@@ -12036,11 +12050,11 @@
     "Safety": 0
    },
    "won_when_first": 0,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 40.0,
+   "scored_first_pct": 36.4,
    "win_pct_when_first": 0.0,
-   "win_pct_when_not_first": 16.7,
+   "win_pct_when_not_first": 28.6,
    "won_by_one_when_first_pct": 0.0
   },
   "Idaho State Bengals": {
@@ -12828,18 +12842,18 @@
    "won_by_one_when_first_pct": null
   },
   "Temple Owls": {
-   "gp": 10,
-   "scored_first": 4,
+   "gp": 11,
+   "scored_first": 5,
    "kinds": {
     "FG": 2,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
    "won_when_first": 1,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 40.0,
-   "win_pct_when_first": 25.0,
+   "scored_first_pct": 45.5,
+   "win_pct_when_first": 20.0,
    "win_pct_when_not_first": 16.7,
    "won_by_one_when_first_pct": 0.0
   },
@@ -14365,20 +14379,20 @@
   }
  },
  "league": {
-  "games": 756,
-  "home_scored_first": 454,
+  "games": 757,
+  "home_scored_first": 455,
   "first_team_won": 535,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 210,
-   "TD": 544,
+   "TD": 545,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
   "median_first_score_sec": 339,
   "home_scored_first_pct": 60.1,
-  "first_team_win_pct": 70.8
+  "first_team_win_pct": 70.7
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -14832,9 +14846,9 @@
    "avg_per_game": 0.5
   },
   "Rice Owls": {
-   "games": 10,
-   "lead_changes": 9,
-   "avg_per_game": 0.9
+   "games": 11,
+   "lead_changes": 12,
+   "avg_per_game": 1.09
   },
   "Idaho State Bengals": {
    "games": 1,
@@ -15082,9 +15096,9 @@
    "avg_per_game": 0.0
   },
   "Temple Owls": {
-   "games": 10,
-   "lead_changes": 16,
-   "avg_per_game": 1.6
+   "games": 11,
+   "lead_changes": 19,
+   "avg_per_game": 1.73
   },
   "SE Louisiana Lions": {
    "games": 2,
