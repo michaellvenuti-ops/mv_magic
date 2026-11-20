@@ -13,3 +13,7 @@
 - 2026-11-19: Houston Cougars @ Kansas Jayhawks — first: Houston Cougars (2PT, 1:02 in); lead changes 0; final 92-83
 - 2026-11-19: Tarleton State Texans @ USC Trojans — first: USC Trojans (3PT, 0:20 in); lead changes 0; final 51-96
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T14:00:37-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 877 games through 2026-11-20
+- 2026-11-20: Averett Cougars @ William & Mary Tribe — first: Averett Cougars (3PT, 0:26 in); lead changes 1; final 39-85
+- 2026-11-20: Bloomfield Deacons @ Maryland Eastern Shore Hawks — first: Bloomfield Deacons (2PT, 0:26 in); lead changes 1; final 77-87
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
