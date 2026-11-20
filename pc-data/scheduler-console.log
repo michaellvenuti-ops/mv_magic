@@ -10010,3 +10010,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 07:42:42 ET] dh_kalshi_poly_arb.py: OK in 98s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-20 07:42:49 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAB Georgia St. Jacksonville St. Nov-20 7:00 PM — Total — Over 137 Bet365 +105 ($95) / Under 137.5 theScore -115 ($105) — win+push at 137 — push +$
 [2026-11-20 07:42:49 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-20 08:07:44 ET] sync_to_github.py: FAILED (exit 1) in 1494s —   FAILED: pc-data/nba-overs-2026-11-06.md (HTTP 409: {'error': '{"message":"is at ffb1458e81c31e38c51ce46aec913aa0ba07d249 but expected 60e1d65049aab6e5873f898f
+[2026-11-20 08:12:52 ET] dh_game_middles.py: OK in 308s — GAME MIDDLE: NCAAB St. Louis St. Mary's Today 11:00 PM / table / Total Over 158.5 / Alt Total Under 159 / table bar_chart | BetRivers | ProphetX — window 222.0 
+[2026-11-20 08:14:19 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 87s —   - [pid=10844] <gracefully close end>
+[2026-11-20 08:14:42 ET] rlm.py: OK in 22s
+[2026-11-20 08:14:47 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 08:14:52 ET] steam_side.py: OK in 4s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 08:15:37 ET] dh_prop_middles.py: FAILED (exit 1) in 45s —   - [pid=15476] <gracefully close end>
+[2026-11-20 08:16:29 ET] dh_sog_middles.py: FAILED (exit 1) in 52s —   - [pid=17648] <gracefully close end>
+[2026-11-20 08:16:42 ET] dh_team_total_middles.py: OK in 12s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -2.5c vs +EV.
+[2026-11-20 08:16:44 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 08:16:46 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 08:16:47 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 08:16:49 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 875 total tallied.
+[2026-11-20 08:16:51 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 08:16:51 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 08:16:53 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-20 08:16:53 ET] syncing to GitHub (regular 10-minute sync)
