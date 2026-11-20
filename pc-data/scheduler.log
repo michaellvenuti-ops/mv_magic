@@ -9962,3 +9962,9 @@
 [2026-11-20 07:10:01 ET] dh_key_number_middles.py: OK in 229s — key-number-middles: 175 basketball rows excluded (football-only rule).
 [2026-11-20 07:11:54 ET] hung_number.py: OK in 111s — No new hung numbers (12 current flags).
 [2026-11-20 07:11:54 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 07:36:36 ET] sync_to_github.py: FAILED (exit 1) in 1482s —   FAILED: pc-data/transcripts/follow-the-money-2026-11-13-hour-1.json (HTTP 409: {'error': '{"message":"is at 411dbfaa808fd61a5cb208c6dcc62625cd5d1049 but expec
+[2026-11-20 07:40:00 ET] odds_recorder.py: OK in 173s — SUMMARY: recorded 199 events (80 with odds), db total 305891 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 07:41:04 ET] dh_arbitrage.py: FAILED (exit 1) in 60s —   - [pid=12472] <gracefully close end>
+[2026-11-20 07:42:42 ET] dh_kalshi_poly_arb.py: OK in 98s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-20 07:42:49 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAB Georgia St. Jacksonville St. Nov-20 7:00 PM — Total — Over 137 Bet365 +105 ($95) / Under 137.5 theScore -115 ($105) — win+push at 137 — push +$
+[2026-11-20 07:42:49 ET] syncing to GitHub (wide-builds banked new builds)
