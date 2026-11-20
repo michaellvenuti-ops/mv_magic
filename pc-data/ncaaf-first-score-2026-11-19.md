@@ -4,3 +4,5 @@
 - 2026-11-17: Miami (OH) RedHawks @ Kent State Golden Flashes — first: Miami (OH) RedHawks (TD, 3:33 in); lead changes 0; final 20-3
 - 2026-11-18: Akron Zips @ Massachusetts Minutemen — first: Massachusetts Minutemen (TD, 3:02 in); lead changes 1; final 34-33
 - 2026-11-18: Central Michigan Chippewas @ Buffalo Bulls — first: Central Michigan Chippewas (TD, 6:27 in); lead changes 3; final 21-40
+## 2026-11-19T22:57:31-05:00 -- NCAAF FIRST SCORE (PC): 1 new final(s) tallied; season 757 games through 2026-11-19
+- 2026-11-19: Rice Owls @ Temple Owls — first: Temple Owls (TD, 4:37 in); lead changes 3; final 31-27
