@@ -10034,3 +10034,48 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 09:05:53 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 365s —   - <launched> pid=13976
 [2026-11-20 09:06:00 ET] wide_builds.py: OK in 5s — NEW BUILD: NCAAF UTEP Air Force Today 8:00 PM — Total — Over 46 Fanatics-NJ -120 ($107) / Under 46.5 Bally Bet +110 ($93) — win+push at 46 — push +$102.30, miss
 [2026-11-20 09:06:00 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-20 09:33:20 ET] sync_to_github.py: FAILED (exit 1) in 1640s —   FAILED: pc-data/ncaaf-first-score-2026-11-14.md (HTTP 409: {'error': '{"message":"is at 562d827c983d49ae16a938a89f74a515fbbc7b3c but expected 093b05ab0728f1d3
+[2026-11-20 09:39:12 ET] dh_low_holds.py: FAILED (exit 1) in 351s —   - navigating to "https://darkhorseodds.com/low-holds", waiting until "domcontentloaded"
+[2026-11-20 09:41:04 ET] dh_game_middles.py: FAILED (exit 1) in 110s —   - [pid=15212] <gracefully close end>
+[2026-11-20 09:46:12 ET] dh_key_number_middles.py: FAILED (exit 1) in 307s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-20 09:50:10 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 236s —   - <launched> pid=20444
+[2026-11-20 09:54:31 ET] hung_number.py: FAILED (exit 1) in 258s —   - <launched> pid=16052
+[2026-11-20 09:57:35 ET] steam_side.py: OK in 182s — STEAM-SIDE FLAG: FBS New Mexico @ Wyoming | 2026-11-20 | Kalshi | New Mexico spread 7.5 (median 7.5 -> 8.5)
+[2026-11-20 10:07:25 ET] dh_prop_middles.py: FAILED (exit 1) in 589s —   - <launched> pid=5648
+[2026-11-20 10:15:14 ET] dh_sog_middles.py: FAILED (exit 2) in 460s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-20 10:15:37 ET] dh_team_total_middles.py: OK in 20s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -2.5c vs +EV.
+[2026-11-20 10:15:39 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 10:15:44 ET] nba_first_score.py: OK in 5s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 10:15:47 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 10:15:49 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 875 total tallied.
+[2026-11-20 10:15:50 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 10:15:51 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 10:15:53 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 9 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-20.json
+[2026-11-20 10:19:58 ET] dh_sleeping_book_sweep.py: FAILED (exit 1) in 244s —   - <launched> pid=19224
+[2026-11-20 10:20:03 ET] nba_overs_daily.py: OK in 4s — }
+[2026-11-20 10:20:12 ET] nba_overs_pregame.py: OK in 8s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-20 10:20:21 ET] nhl_totals_scan.py: OK in 9s — nhl-totals: 0 games, no flags.
+[2026-11-20 10:20:29 ET] total_projectors_scan.py: OK in 8s — }
+[2026-11-20 10:20:34 ET] spread_cover_daily.py: OK in 5s — spread-cover: games {'NBA': 9, 'NCAAB': 51}, new 0, moved 0, baselines 60.
+[2026-11-20 10:20:46 ET] futures_board.py: OK in 12s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-20.json (5 markets).
+[2026-11-20 10:26:18 ET] yahoo_brief.py: FAILED (exit 2) in 331s —   - navigating to "https://mail.yahoo.com/", waiting until "domcontentloaded"
+[2026-11-20 10:26:20 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 10:28:36 ET] sync_to_github.py: FAILED (exit 1) in 136s — urllib.error.URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:2402)>
+[2026-11-20 10:35:03 ET] odds_recorder.py: OK in 357s — SUMMARY: recorded 199 events (80 with odds), db total 306289 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 10:39:41 ET] dh_arbitrage.py: FAILED (exit 1) in 276s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-20 10:41:24 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 96s —   - [pid=12072] <gracefully close end>
+[2026-11-20 10:41:41 ET] wide_builds.py: OK in 14s — wide_builds: 7 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 10:43:28 ET] dh_game_middles.py: FAILED (exit 1) in 106s —   - [pid=12352] <gracefully close end>
+[2026-11-20 10:47:15 ET] dh_key_number_middles.py: FAILED (exit 1) in 227s —   - [pid=5196] <gracefully close end>
+[2026-11-20 10:49:46 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 151s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-20 10:50:12 ET] rlm.py: OK in 26s
+[2026-11-20 10:50:21 ET] leader_follower.py: OK in 10s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 10:50:28 ET] steam_side.py: OK in 6s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 10:50:35 ET] nba_overs_grade_run.py: OK in 7s — }
+[2026-11-20 10:50:37 ET] nhl_totals_grade_run.py: OK in 2s —   Inverse: 5-4-0, $+129.29 (inverse money only where an opposite price was recorded)
+[2026-11-20 10:50:39 ET] total_projectors_grade_run.py: OK in 2s — }
+[2026-11-20 10:50:53 ET] half_percent.py: OK in 14s — half-percent: PICK BSP ref $44.22 target $44.44 stop $44.00
+[2026-11-20 10:50:54 ET] half_percent.py: OK in 1s — half-percent recheck: 10:50 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-20 10:50:58 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-20 10:54:49 ET] promo_watch.py: FAILED (exit 1) in 231s —   - <launched> pid=3008
+[2026-11-20 10:54:49 ET] syncing to GitHub (regular 10-minute sync)
