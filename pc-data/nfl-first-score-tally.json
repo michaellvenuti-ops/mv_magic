@@ -1,5 +1,5 @@
 {
- "through": "2026-11-16",
+ "through": "2026-11-19",
  "games": [
   {
    "away": "New England Patriots",
@@ -1482,14 +1482,24 @@
    "ties": 1
   },
   {
-   "date": "2026-11-16",
    "away": "Los Angeles Chargers",
-   "home": "Baltimore Ravens",
+   "date": "2026-11-16",
+   "final": "23-20",
    "first": "Los Angeles Chargers",
-   "seq": "7-0>10-0>10-7>17-7>17-10>20-10>20-13>23-13>23-20",
+   "home": "Baltimore Ravens",
    "lead_changes": 0,
+   "seq": "7-0>10-0>10-7>17-7>17-10>20-10>20-13>23-13>23-20",
+   "ties": 0
+  },
+  {
+   "date": "2026-11-19",
+   "away": "Indianapolis Colts",
+   "home": "Houston Texans",
+   "first": "Indianapolis Colts",
+   "seq": "3-0>3-7>3-14>3-17>3-19>3-26",
+   "lead_changes": 1,
    "ties": 0,
-   "final": "23-20"
+   "final": "3-26"
   }
  ],
  "tally": {
@@ -1593,13 +1603,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Indianapolis Colts": {
-   "gp": 10,
-   "scored_first": 7,
+   "gp": 11,
+   "scored_first": 8,
    "won_when_first": 2,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
-   "win_pct_when_first": 28.6,
+   "scored_first_pct": 72.7,
+   "win_pct_when_first": 25.0,
    "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1615,14 +1625,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Houston Texans": {
-   "gp": 9,
+   "gp": 10,
    "scored_first": 5,
    "won_when_first": 2,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 55.6,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 40.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Chicago Bears": {
@@ -1847,15 +1857,15 @@
   }
  },
  "league": {
-  "games": 149,
-  "games_with_goal": 149,
+  "games": 150,
+  "games_with_goal": 150,
   "home_scored_first": 74,
   "first_team_won": 94,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.3,
-  "avg_lead_changes": 1.28,
-  "home_scored_first_pct": 49.7,
-  "first_team_win_pct": 63.1
+  "avg_lead_changes": 1.27,
+  "home_scored_first_pct": 49.3,
+  "first_team_win_pct": 62.7
  },
  "lead_changes": [
   {
@@ -3339,14 +3349,24 @@
    "ties": 1
   },
   {
-   "date": "2026-11-16",
    "away": "Los Angeles Chargers",
-   "home": "Baltimore Ravens",
+   "date": "2026-11-16",
+   "final": "23-20",
    "first": "Los Angeles Chargers",
-   "seq": "7-0>10-0>10-7>17-7>17-10>20-10>20-13>23-13>23-20",
+   "home": "Baltimore Ravens",
    "lead_changes": 0,
+   "seq": "7-0>10-0>10-7>17-7>17-10>20-10>20-13>23-13>23-20",
+   "ties": 0
+  },
+  {
+   "date": "2026-11-19",
+   "away": "Indianapolis Colts",
+   "home": "Houston Texans",
+   "first": "Indianapolis Colts",
+   "seq": "3-0>3-7>3-14>3-17>3-19>3-26",
+   "lead_changes": 1,
    "ties": 0,
-   "final": "23-20"
+   "final": "3-26"
   }
  ],
  "lead_change_team_avgs": {
@@ -3396,9 +3416,9 @@
    "avg_per_game": 0.9
   },
   "Indianapolis Colts": {
-   "games": 10,
-   "lead_changes": 16,
-   "avg_per_game": 1.6
+   "games": 11,
+   "lead_changes": 17,
+   "avg_per_game": 1.55
   },
   "Buffalo Bills": {
    "games": 8,
@@ -3406,9 +3426,9 @@
    "avg_per_game": 2.62
   },
   "Houston Texans": {
-   "games": 9,
-   "lead_changes": 20,
-   "avg_per_game": 2.22
+   "games": 10,
+   "lead_changes": 21,
+   "avg_per_game": 2.1
   },
   "Chicago Bears": {
    "games": 9,
