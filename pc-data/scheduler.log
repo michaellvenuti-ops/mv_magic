@@ -10061,3 +10061,31 @@
 [2026-11-20 12:21:41 ET] correlated_parlay.py: OK in 5s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-20 12:26:39 ET] dh_derivative_ev.py: FAILED (exit 1) in 298s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
 [2026-11-20 12:26:39 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 12:54:25 ET] sync_to_github.py: FAILED (exit 1) in 1666s —   FAILED: low-holds-board-pc.html (HTTP 409: {'error': '{"message":"is at 390e1c84b6d8caebe1cf842a050305cbc6e1c61f but expected 3f768445212c6577230a8c935524ad0a
+[2026-11-20 12:58:45 ET] odds_recorder.py: OK in 227s — SUMMARY: recorded 229 events (209 with odds), db total 306747 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-20 13:05:01 ET] dh_arbitrage.py: FAILED (exit 1) in 374s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-20 13:11:54 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 411s —   - <launched> pid=18960
+[2026-11-20 13:12:03 ET] wide_builds.py: OK in 6s — wide_builds: 7 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 13:17:19 ET] dh_low_holds.py: FAILED (exit 1) in 316s —   - navigating to "https://darkhorseodds.com/low-holds", waiting until "domcontentloaded"
+[2026-11-20 13:22:41 ET] dh_game_middles.py: FAILED (exit 1) in 320s —   - <launched> pid=10404
+[2026-11-20 13:28:28 ET] dh_key_number_middles.py: FAILED (exit 1) in 331s —   - <launched> pid=19784
+[2026-11-20 13:37:36 ET] dh_basketball_key_middles.py: OK in 546s — basketball-key-middles: no new basketball middles.
+[2026-11-20 13:41:55 ET] hung_number.py: FAILED (exit 2) in 257s — state. Re-run with --dump and send the dump file.
+[2026-11-20 13:42:34 ET] rlm.py: OK in 39s
+[2026-11-20 13:42:39 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 13:42:48 ET] steam_side.py: OK in 9s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 13:49:21 ET] dh_prop_middles.py: FAILED (exit 1) in 393s —   - <launched> pid=5632
+[2026-11-20 13:53:31 ET] dh_sog_middles.py: FAILED (exit 1) in 245s —   - <launched> pid=18708
+[2026-11-20 13:58:25 ET] dh_team_total_middles.py: FAILED (exit 2) in 292s — team-total-middles: Kalshi fetch failed (HTTPSConnectionPool(host='api.elections.kalshi.com', port=443): Max retries exceeded with url: /trade-api/v2/markets?se
+[2026-11-20 13:59:28 ET] nfl_first_score.py: OK in 53s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 14:00:33 ET] nba_first_score.py: OK in 64s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 14:00:35 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 14:00:38 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 1 unverified, 877 total tallied.
+[2026-11-20 14:00:39 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 14:00:41 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 14:00:56 ET] nba_overs_pregame.py: OK in 15s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-20 14:01:07 ET] podcast_transcribe.py: OK in 11s — SUMMARY: discover days=2 added=6 queued_total=41
+[2026-11-20 14:01:08 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=41, limit=1)
+[2026-11-20 14:01:25 ET] public_fade.py: OK in 17s
+[2026-11-20 14:09:48 ET] dh_positive_ev.py: FAILED (exit 2) in 503s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-20.txt. No prices inven
+[2026-11-20 14:09:50 ET] syncing to GitHub (regular 10-minute sync)
