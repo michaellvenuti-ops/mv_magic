@@ -9826,3 +9826,31 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-19 22:57:32 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-19; skipping.
 [2026-11-19 22:57:34 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-19 22:57:34 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-19 23:19:22 ET] sync_to_github.py: OK in 1307s —   ok: team-total-middles-board-pc.html
+[2026-11-19 23:20:17 ET] notify.py: OK in 56s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-19 23:22:10 ET] odds_recorder.py: OK in 82s — SUMMARY: recorded 199 events (80 with odds), db total 303304 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-19 23:24:57 ET] dh_arbitrage.py: OK in 167s — arbitrage: no new qualifying pairs (silent).
+[2026-11-19 23:26:32 ET] dh_kalshi_poly_arb.py: OK in 95s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-19 23:26:34 ET] wide_builds.py: OK in 1s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-19.md)
+[2026-11-19 23:28:38 ET] dh_game_middles.py: OK in 124s — GAME MIDDLE: NCAAB Northwestern Virginia Tech Nov-20 3:00 PM / table / Total Over 141.5 / Alt Total Under 142 / table | DraftKings | Bet365 — window 217.0 :: -1
+[2026-11-19 23:32:47 ET] dh_key_number_middles.py: OK in 248s — key-number-middles: 153 basketball rows excluded (football-only rule).
+[2026-11-19 23:32:47 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-19 23:53:42 ET] sync_to_github.py: FAILED (exit 1) in 1254s —   FAILED: pc-data/upset-lane-console.log (HTTP 409: {'error': '{"message":"is at 8689e1014de8b3d6f196c1ca0a8ae8bee52ba1dc but expected 1381fc5097d5cf0a8755bea7f
+[2026-11-19 23:55:26 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 199 events (80 with odds), db total 303503 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-19 23:56:37 ET] dh_low_holds.py: OK in 71s — LOW-HOLDS: NCAAF Washington St. Texas St. Nov-21 6:00 PM / table / Alt Total Under 64.5 / Alt Total Over 64.5 / table | Fanatics-NJ | Bally Bet
+[2026-11-20 00:00:53 ET] dh_basketball_key_middles.py: OK in 256s — basketball-key-middles: no new basketball middles.
+[2026-11-20 00:02:23 ET] hung_number.py: OK in 89s — HUNG NUMBER: Utah vs TCU — FanDuel spread value dog (-6.5 vs median -7.5)
+[2026-11-20 00:02:29 ET] rlm.py: OK in 7s
+[2026-11-20 00:02:34 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 00:02:38 ET] steam_side.py: OK in 4s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 00:04:51 ET] dh_prop_middles.py: OK in 133s — PROP MIDDLE CLEAN : NFL NO Saints CHI Bears Nov-22 1:00 PM / table / Rush Yards A. Estime Under 21.5 / Alt Rush Yards A. Estime 20+ / table | BetParx | FanDuel 
+[2026-11-20 00:07:38 ET] dh_sog_middles.py: OK in 167s — - 0 deliverables this run
+[2026-11-20 00:07:42 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-20 00:07:44 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 150 total tallied.
+[2026-11-20 00:07:46 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 00:07:47 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 348 total tallied.
+[2026-11-20 00:07:50 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 7 new, 0 unverified, 871 total tallied.
+[2026-11-20 00:07:51 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 00:07:53 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-20 00:07:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-20 00:07:55 ET] syncing to GitHub (regular 10-minute sync)
