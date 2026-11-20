@@ -10881,13 +10881,21 @@
    "sport": "CFB",
    "matchup": "N'Western St at SF Austin",
    "date": "2026-11-20",
-   "alerted": false
+   "alerted": false,
+   "fav": "home",
+   "spread": 44.5,
+   "fav_team": "SF Austin",
+   "dog_team": "N'Western St"
   },
   "401868323": {
    "sport": "CFB",
    "matchup": "SE Louisiana at Nicholls",
    "date": "2026-11-20",
-   "alerted": false
+   "alerted": false,
+   "fav": "away",
+   "spread": 11.5,
+   "fav_team": "SE Louisiana",
+   "dog_team": "Nicholls"
   },
   "401856749": {
    "sport": "CFB",
@@ -11338,7 +11346,7 @@
    "date": "2026-11-20",
    "alerted": false,
    "fav": "home",
-   "spread": 3.0,
+   "spread": 2.5,
    "fav_team": "Temple",
    "dog_team": "Rice"
   },
@@ -11378,7 +11386,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Oregon",
    "dog_team": "Michigan St"
   },
@@ -11388,7 +11396,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 22.5,
+   "spread": 21.5,
    "fav_team": "Air Force",
    "dog_team": "UTEP"
   },
@@ -11428,7 +11436,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 3.0,
+   "spread": 3.5,
    "fav_team": "Ohio State",
    "dog_team": "Nebraska"
   },
@@ -11568,7 +11576,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 6.0,
    "fav_team": "MTSU",
    "dog_team": "Sam Houston"
   },
@@ -11598,7 +11606,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 14.0,
+   "spread": 13.5,
    "fav_team": "App State",
    "dog_team": "UL Monroe"
   },
@@ -11657,10 +11665,10 @@
    "matchup": "LSU at Tennessee",
    "date": "2026-11-21",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
-   "fav_team": "LSU",
-   "dog_team": "Tennessee"
+   "fav_team": "Tennessee",
+   "dog_team": "LSU"
   },
   "401858535": {
    "sport": "CFB",
@@ -11678,7 +11686,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Texas Tech",
    "dog_team": "Baylor"
   },
@@ -11698,7 +11706,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 24.5,
+   "spread": 26.5,
    "fav_team": "Penn State",
    "dog_team": "Rutgers"
   },
@@ -11738,7 +11746,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "GA Southern",
    "dog_team": "Troy"
   },
@@ -11768,7 +11776,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 13.5,
    "fav_team": "Texas St",
    "dog_team": "Washington St"
   },
@@ -11808,7 +11816,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "away",
-   "spread": 7.0,
+   "spread": 6.5,
    "fav_team": "UNLV",
    "dog_team": "San Jos\u00e9 St"
   },
@@ -11818,7 +11826,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 13.5,
+   "spread": 14.0,
    "fav_team": "Louisiana Tech",
    "dog_team": "Arkansas St"
   },
@@ -11828,7 +11836,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "away",
-   "spread": 15.5,
+   "spread": 14.5,
    "fav_team": "Georgia",
    "dog_team": "South Carolina"
   },
@@ -11848,7 +11856,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Missouri",
    "dog_team": "Kentucky"
   },
@@ -11858,7 +11866,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 14.0,
+   "spread": 13.5,
    "fav_team": "Louisville",
    "dog_team": "Pitt"
   },
@@ -11928,7 +11936,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "Oregon St",
    "dog_team": "Utah State"
   },
@@ -11938,7 +11946,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Nevada",
    "dog_team": "Hawai'i"
   },
@@ -13354,11 +13362,17 @@
    "sport": "NFL",
    "matchup": "Colts at Texans",
    "date": "2026-11-20",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Texans",
-   "dog_team": "Colts"
+   "dog_team": "Colts",
+   "alerted_at": "2026-11-19T20:28:02",
+   "board_read_at": "2026-11-19T20:28:02",
+   "alert_expires_at": "2026-11-19T20:33:02",
+   "alert_detail": "10:43 - 1st Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401873070": {
    "sport": "NFL",
@@ -13396,7 +13410,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 7.0,
+   "spread": 6.0,
    "fav_team": "Lions",
    "dog_team": "Buccaneers"
   },
@@ -13406,7 +13420,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 15.5,
+   "spread": 16.5,
    "fav_team": "Chiefs",
    "dog_team": "Cardinals"
   },
@@ -13426,7 +13440,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.0,
    "fav_team": "Panthers",
    "dog_team": "Ravens"
   },
@@ -13446,7 +13460,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 10.0,
+   "spread": 10.5,
    "fav_team": "Broncos",
    "dog_team": "Raiders"
   },
@@ -13466,7 +13480,7 @@
    "date": "2026-11-23",
    "alerted": false,
    "fav": "home",
-   "spread": 3.0,
+   "spread": 3.5,
    "fav_team": "49ers",
    "dog_team": "Vikings"
   },
@@ -13476,7 +13490,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "away",
-   "spread": 6.5,
+   "spread": 6.0,
    "fav_team": "Bengals",
    "dog_team": "Commanders"
   },
@@ -14126,7 +14140,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Arizona",
-   "dog_team": "UConn"
+   "dog_team": "UConn",
+   "final": true
   },
   "401921742": {
    "sport": "NCAAB",
@@ -14136,7 +14151,8 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "BYU",
-   "dog_team": "N Colorado"
+   "dog_team": "N Colorado",
+   "final": true
   },
   "401929176": {
    "sport": "NCAAB",
@@ -14156,7 +14172,8 @@
    "alert_fav_score": 7,
    "alert_dog_score": 8,
    "alert_ml": -750,
-   "ml_read_at": "2026-11-18T21:10:06"
+   "ml_read_at": "2026-11-18T21:10:06",
+   "final": true
   },
   "401925949": {
    "sport": "NCAAB",
@@ -14166,7 +14183,8 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "Utah State",
-   "dog_team": "Weber St"
+   "dog_team": "Weber St",
+   "final": true
   },
   "401921816": {
    "sport": "NCAAB",
@@ -14176,7 +14194,8 @@
    "fav": "home",
    "spread": 40.5,
    "fav_team": "Missouri",
-   "dog_team": "Alcorn St"
+   "dog_team": "Alcorn St",
+   "final": true
   },
   "401921734": {
    "sport": "NCAAB",
@@ -14196,13 +14215,15 @@
    "alert_fav_score": 0,
    "alert_dog_score": 1,
    "alert_ml": -10000,
-   "ml_read_at": "2026-11-18T21:06:03"
+   "ml_read_at": "2026-11-18T21:06:03",
+   "final": true
   },
   "401917965": {
    "sport": "NCAAB",
    "matchup": "McMurry at Abilene Chrstn",
    "date": "2026-11-19",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911473": {
    "sport": "NCAAB",
@@ -14212,7 +14233,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "San Jos\u00e9 St",
-   "dog_team": "Fresno St"
+   "dog_team": "Fresno St",
+   "final": true
   },
   "401909762": {
    "sport": "NCAAB",
@@ -14232,7 +14254,8 @@
    "alert_fav_score": 2,
    "alert_dog_score": 4,
    "alert_ml": -2000,
-   "ml_read_at": "2026-11-18T21:04:03"
+   "ml_read_at": "2026-11-18T21:04:03",
+   "final": true
   },
   "401909494": {
    "sport": "NCAAB",
@@ -14252,7 +14275,8 @@
    "alert_fav_score": 3,
    "alert_dog_score": 5,
    "alert_ml": -15000,
-   "ml_read_at": "2026-11-18T21:18:03"
+   "ml_read_at": "2026-11-18T21:18:03",
+   "final": true
   },
   "401917535": {
    "sport": "NCAAB",
@@ -14262,7 +14286,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "San Diego",
-   "dog_team": "UC Riverside"
+   "dog_team": "UC Riverside",
+   "final": true
   },
   "401929146": {
    "sport": "NCAAB",
@@ -14272,7 +14297,8 @@
    "fav": "home",
    "spread": 24.5,
    "fav_team": "San Diego St",
-   "dog_team": "Texas Southern"
+   "dog_team": "Texas Southern",
+   "final": true
   },
   "401929004": {
    "sport": "NCAAB",
@@ -14282,7 +14308,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Hawai'i",
-   "dog_team": "Washington St"
+   "dog_team": "Washington St",
+   "final": true
   },
   "401921064": {
    "sport": "NCAAB",
@@ -14292,7 +14319,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "San Francisco",
-   "dog_team": "Louisiana"
+   "dog_team": "Louisiana",
+   "final": true
   },
   "401920516": {
    "sport": "NCAAB",
@@ -14302,7 +14330,8 @@
    "fav": "home",
    "spread": 9.5,
    "fav_team": "Auburn",
-   "dog_team": "UNLV"
+   "dog_team": "UNLV",
+   "final": true
   },
   "401911456": {
    "sport": "NCAAB",
@@ -14322,7 +14351,8 @@
    "alert_fav_score": 0,
    "alert_dog_score": 2,
    "alert_ml": -1950,
-   "ml_read_at": "2026-11-18T22:10:03"
+   "ml_read_at": "2026-11-18T22:10:03",
+   "final": true
   },
   "401920158": {
    "sport": "NCAAB",
@@ -14342,7 +14372,8 @@
    "alert_fav_score": 0,
    "alert_dog_score": 6,
    "alert_ml": -15000,
-   "ml_read_at": "2026-11-18T22:40:03"
+   "ml_read_at": "2026-11-18T22:40:03",
+   "final": true
   },
   "401910007": {
    "sport": "NBA",
@@ -14451,7 +14482,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Celtics",
-   "dog_team": "Nuggets"
+   "dog_team": "Nuggets",
+   "final": true
   },
   "401910017": {
    "sport": "NBA",
@@ -14471,7 +14503,8 @@
    "alert_fav_score": 4,
    "alert_dog_score": 5,
    "alert_ml": -475,
-   "ml_read_at": "2026-11-18T22:14:03"
+   "ml_read_at": "2026-11-18T22:14:03",
+   "final": true
   },
   "401910018": {
    "sport": "NBA",
@@ -14481,7 +14514,395 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Suns",
-   "dog_team": "Kings"
+   "dog_team": "Kings",
+   "final": true
+  },
+  "401910019": {
+   "sport": "NBA",
+   "matchup": "Warriors at Grizzlies",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 5.5,
+   "fav_team": "Grizzlies",
+   "dog_team": "Warriors"
+  },
+  "401910020": {
+   "sport": "NBA",
+   "matchup": "Trail Blazers at Bucks",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 9.5,
+   "fav_team": "Trail Blazers",
+   "dog_team": "Bucks"
+  },
+  "401910021": {
+   "sport": "NBA",
+   "matchup": "Knicks at Timberwolves",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 1.5,
+   "fav_team": "Knicks",
+   "dog_team": "Timberwolves"
+  },
+  "401910022": {
+   "sport": "NBA",
+   "matchup": "Clippers at Spurs",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 15.5,
+   "fav_team": "Spurs",
+   "dog_team": "Clippers",
+   "live_ml": -750,
+   "ml_bucket": "strong"
+  },
+  "401920517": {
+   "sport": "NCAAB",
+   "matchup": "Florida at West Virginia",
+   "date": "2026-11-19",
+   "alerted": false,
+   "fav": "away",
+   "spread": 7.5,
+   "fav_team": "Florida",
+   "dog_team": "West Virginia",
+   "final": true
+  },
+  "401920519": {
+   "sport": "NCAAB",
+   "matchup": "Notre Dame at Auburn",
+   "date": "2026-11-19",
+   "alerted": false,
+   "fav": "home",
+   "spread": 3.5,
+   "fav_team": "Auburn",
+   "dog_team": "Notre Dame",
+   "final": true
+  },
+  "401918959": {
+   "sport": "NCAAB",
+   "matchup": "NC State at Murray St",
+   "date": "2026-11-19",
+   "alerted": false,
+   "fav": "away",
+   "spread": 3.5,
+   "fav_team": "Murray St",
+   "dog_team": "NC State",
+   "final": true
+  },
+  "401928826": {
+   "sport": "NCAAB",
+   "matchup": "Robert Morris at Toledo",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 7.5,
+   "fav_team": "Toledo",
+   "dog_team": "Robert Morris"
+  },
+  "401928812": {
+   "sport": "NCAAB",
+   "matchup": "Berea at N Kentucky",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401926144": {
+   "sport": "NCAAB",
+   "matchup": "North Park at SIUE",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401923304": {
+   "sport": "NCAAB",
+   "matchup": "Maine at Quinnipiac",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 8.5,
+   "fav_team": "Quinnipiac",
+   "dog_team": "Maine"
+  },
+  "401920878": {
+   "sport": "NCAAB",
+   "matchup": "Little Rock at Jacksonville",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "Jacksonville",
+   "dog_team": "Little Rock"
+  },
+  "401920413": {
+   "sport": "NCAAB",
+   "matchup": "Montana St at High Point",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 12.5,
+   "fav_team": "High Point",
+   "dog_team": "Montana St",
+   "live_ml": -280,
+   "ml_bucket": "strong"
+  },
+  "401916318": {
+   "sport": "NCAAB",
+   "matchup": "UMBC at Ohio State",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 28.5,
+   "fav_team": "Ohio State",
+   "dog_team": "UMBC"
+  },
+  "401912211": {
+   "sport": "NCAAB",
+   "matchup": "Mary Baldwin at American",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401911021": {
+   "sport": "NCAAB",
+   "matchup": "Buffalo at St Bonaventure",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 11.5,
+   "fav_team": "St Bonaventure",
+   "dog_team": "Buffalo",
+   "live_ml": -475,
+   "ml_bucket": "strong"
+  },
+  "401902280": {
+   "sport": "NCAAB",
+   "matchup": "Northeastern at Butler",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 16.5,
+   "fav_team": "Butler",
+   "dog_team": "Northeastern",
+   "live_ml": -660,
+   "ml_bucket": "strong"
+  },
+  "401929373": {
+   "sport": "NCAAB",
+   "matchup": "Tusculum at North Alabama",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401926814": {
+   "sport": "NCAAB",
+   "matchup": "Charleston at Drake",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "Drake",
+   "dog_team": "Charleston"
+  },
+  "401919005": {
+   "sport": "NCAAB",
+   "matchup": "Tulane at Louisiana Tech",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "Louisiana Tech",
+   "dog_team": "Tulane"
+  },
+  "401906867": {
+   "sport": "NCAAB",
+   "matchup": "Southern Utah at Texas",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 35.5,
+   "fav_team": "Texas",
+   "dog_team": "Southern Utah",
+   "live_ml": -6500,
+   "ml_bucket": "strong"
+  },
+  "401918950": {
+   "sport": "NCAAB",
+   "matchup": "Stetson at Louisville",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 36.5,
+   "fav_team": "Louisville",
+   "dog_team": "Stetson",
+   "live_ml": -20000,
+   "ml_bucket": "strong"
+  },
+  "401929409": {
+   "sport": "NCAAB",
+   "matchup": "Mayville St at North Dakota",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401927375": {
+   "sport": "NCAAB",
+   "matchup": "Eureka at Illinois St",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401921028": {
+   "sport": "NCAAB",
+   "matchup": "GA Southern at Hou Christian",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 3.5,
+   "fav_team": "Hou Christian",
+   "dog_team": "GA Southern"
+  },
+  "401920845": {
+   "sport": "NCAAB",
+   "matchup": "SE Missouri at St Thomas",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 6.5,
+   "fav_team": "St Thomas",
+   "dog_team": "SE Missouri"
+  },
+  "401919050": {
+   "sport": "NCAAB",
+   "matchup": "Texas A&M at TCU",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 1.5,
+   "fav_team": "Texas A&M",
+   "dog_team": "TCU"
+  },
+  "401920888": {
+   "sport": "NCAAB",
+   "matchup": "Seton Hall at Wisconsin",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 5.5,
+   "fav_team": "Wisconsin",
+   "dog_team": "Seton Hall"
+  },
+  "401920520": {
+   "sport": "NCAAB",
+   "matchup": "Rutgers at UNLV",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 2.5,
+   "fav_team": "Rutgers",
+   "dog_team": "UNLV"
+  },
+  "401930884": {
+   "sport": "NCAAB",
+   "matchup": "Oregon St at Oregon",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "Oregon",
+   "dog_team": "Oregon St"
+  },
+  "401928388": {
+   "sport": "NCAAB",
+   "matchup": "Southern Miss at Grambling",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 1.5,
+   "fav_team": "Southern Miss",
+   "dog_team": "Grambling"
+  },
+  "401928354": {
+   "sport": "NCAAB",
+   "matchup": "Santa Barbara at Pepperdine",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 1.5,
+   "fav_team": "Santa Barbara",
+   "dog_team": "Pepperdine"
+  },
+  "401925941": {
+   "sport": "NCAAB",
+   "matchup": "Utah Tech at Washington",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 16.5,
+   "fav_team": "Washington",
+   "dog_team": "Utah Tech"
+  },
+  "401911534": {
+   "sport": "NCAAB",
+   "matchup": "UTEP at New Mexico St",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "New Mexico St",
+   "dog_team": "UTEP"
+  },
+  "401925916": {
+   "sport": "NCAAB",
+   "matchup": "NW Indian at Portland St",
+   "date": "2026-11-20",
+   "alerted": false
+  },
+  "401920349": {
+   "sport": "NCAAB",
+   "matchup": "Sacramento St at Stanford",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 16.5,
+   "fav_team": "Stanford",
+   "dog_team": "Sacramento St"
+  },
+  "401918056": {
+   "sport": "NCAAB",
+   "matchup": "East Texas A&M at California",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 14.5,
+   "fav_team": "California",
+   "dog_team": "East Texas A&M"
+  },
+  "401917536": {
+   "sport": "NCAAB",
+   "matchup": "VCU at Santa Clara",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 1.5,
+   "fav_team": "Santa Clara",
+   "dog_team": "VCU"
+  },
+  "401920518": {
+   "sport": "NCAAB",
+   "matchup": "Houston at Kansas",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "away",
+   "spread": 3.5,
+   "fav_team": "Houston",
+   "dog_team": "Kansas"
+  },
+  "401926773": {
+   "sport": "NCAAB",
+   "matchup": "Tarleton St at USC",
+   "date": "2026-11-20",
+   "alerted": false,
+   "fav": "home",
+   "spread": 28.5,
+   "fav_team": "USC",
+   "dog_team": "Tarleton St"
   }
  }
 }
