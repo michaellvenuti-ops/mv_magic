@@ -172,7 +172,14 @@
    }
   },
   "2026-11-19": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 355.80999755859375,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 360.0,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-18, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -185,6 +192,21 @@
     "ticker": "PANW",
     "vol": 19184181
    }
+  },
+  "2026-11-20": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-19, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Bending Spoons S.p.A. Ordinary Shares",
+    "entry": 44.22,
+    "mcap": 29037721600,
+    "pct": 6.03,
+    "stop": 44.0,
+    "target": 44.44,
+    "ticker": "BSP",
+    "vol": 1814624
+   }
   }
  },
  "meta": {
@@ -192,7 +214,7 @@
    "losses": 1,
    "modeled_pl": 50.0,
    "no_data": 0,
-   "no_trades": 4,
+   "no_trades": 5,
    "time_exits": 0,
    "wins": 2
   }
