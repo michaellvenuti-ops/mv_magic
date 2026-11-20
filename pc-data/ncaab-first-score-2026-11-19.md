@@ -144,3 +144,22 @@
 - 2026-11-19: Notre Dame Fighting Irish @ Auburn Tigers — first: Notre Dame Fighting Irish (2PT, 0:52 in); lead changes 4; final 78-73
 - 2026-11-19: Murray State Racers @ NC State Wolfpack — first: NC State Wolfpack (2PT, 1:25 in); lead changes 4; final 83-93
 - 2026-11-19: Mary Baldwin Fighting Squirrels @ American University Eagles — first: American University Eagles (2PT, 0:37 in); lead changes 0; final 51-82
+## 2026-11-19T22:57:29-05:00 -- NCAAB FIRST SCORE (PC): 18 new final(s) tallied; season 864 games through 2026-11-19
+- 2026-11-19: Rutgers Scarlet Knights @ UNLV Rebels — first: Rutgers Scarlet Knights (2PT, 0:52 in); lead changes 0; final 89-70
+- 2026-11-19: Southern Utah Thunderbirds @ Texas Longhorns — first: Texas Longhorns (2PT, 0:22 in); lead changes 6; final 68-92
+- 2026-11-19: Stetson Hatters @ Louisville Cardinals — first: Stetson Hatters (2PT, 1:04 in); lead changes 5; final 69-83
+- 2026-11-19: Robert Morris Colonials @ Toledo Rockets — first: Toledo Rockets (2PT, 1:17 in); lead changes 0; final 76-83
+- 2026-11-19: Berea Mountaineers @ Northern Kentucky Norse — first: Northern Kentucky Norse (2PT, 0:58 in); lead changes 0; final 41-93
+- 2026-11-19: Maine Black Bears @ Quinnipiac Bobcats — first: Quinnipiac Bobcats (FT, 0:22 in); lead changes 1; final 69-67
+- 2026-11-19: Little Rock Trojans @ Jacksonville Dolphins — first: Jacksonville Dolphins (2PT, 0:56 in); lead changes 1; final 78-72
+- 2026-11-19: Montana State Bobcats @ High Point Panthers — first: High Point Panthers (2PT, 0:36 in); lead changes 6; final 74-85
+- 2026-11-19: Buffalo Bulls @ St. Bonaventure Bonnies — first: St. Bonaventure Bonnies (2PT, 0:47 in); lead changes 2; final 69-78
+- 2026-11-19: Northeastern Huskies @ Butler Bulldogs — first: Butler Bulldogs (3PT, 0:23 in); lead changes 24; final 77-84
+- 2026-11-19: Tusculum Pioneers @ North Alabama Lions — first: Tusculum Pioneers (3PT, 0:28 in); lead changes 5; final 67-74
+- 2026-11-19: Charleston Cougars @ Drake Bulldogs — first: Charleston Cougars (3PT, 1:08 in); lead changes 3; final 70-86
+- 2026-11-19: Tulane Green Wave @ Louisiana Tech Bulldogs — first: Tulane Green Wave (2PT, 0:59 in); lead changes 3; final 67-74
+- 2026-11-19: Mayville State Comets @ North Dakota Fighting Hawks — first: Mayville State Comets (3PT, 1:18 in); lead changes 1; final 66-91
+- 2026-11-19: Eureka Red Devils @ Illinois State Redbirds — first: Illinois State Redbirds (2PT, 0:14 in); lead changes 0; final 48-123
+- 2026-11-19: Georgia Southern Eagles @ Houston Christian Huskies — first: Houston Christian Huskies (2PT, 0:12 in); lead changes 17; final 86-79
+- 2026-11-19: Southeast Missouri State Redhawks @ St. Thomas Tommies — first: St. Thomas Tommies (3PT, 0:25 in); lead changes 0; final 61-93
+- 2026-11-19: Texas A&M Aggies @ TCU Horned Frogs — first: TCU Horned Frogs (3PT, 0:19 in); lead changes 9; final 97-92
