@@ -10885,7 +10885,8 @@
    "fav": "home",
    "spread": 44.5,
    "fav_team": "SF Austin",
-   "dog_team": "N'Western St"
+   "dog_team": "N'Western St",
+   "final": true
   },
   "401868323": {
    "sport": "CFB",
@@ -10895,7 +10896,8 @@
    "fav": "away",
    "spread": 11.5,
    "fav_team": "SE Louisiana",
-   "dog_team": "Nicholls"
+   "dog_team": "Nicholls",
+   "final": true
   },
   "401856749": {
    "sport": "CFB",
@@ -11536,7 +11538,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 8.5,
+   "spread": 7.5,
    "fav_team": "Houston",
    "dog_team": "West Virginia"
   },
@@ -11906,7 +11908,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "away",
-   "spread": 7.0,
+   "spread": 7.5,
    "fav_team": "Utah",
    "dog_team": "TCU"
   },
@@ -14525,7 +14527,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Grizzlies",
-   "dog_team": "Warriors"
+   "dog_team": "Warriors",
+   "final": true
   },
   "401910020": {
    "sport": "NBA",
@@ -14535,7 +14538,8 @@
    "fav": "away",
    "spread": 9.5,
    "fav_team": "Trail Blazers",
-   "dog_team": "Bucks"
+   "dog_team": "Bucks",
+   "final": true
   },
   "401910021": {
    "sport": "NBA",
@@ -14545,7 +14549,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Knicks",
-   "dog_team": "Timberwolves"
+   "dog_team": "Timberwolves",
+   "final": true
   },
   "401910022": {
    "sport": "NBA",
@@ -14566,7 +14571,8 @@
    "warn_fav_score": 61,
    "warn_dog_score": 65,
    "warn_ml": -380,
-   "ml_read_at": "2026-11-19T21:26:03"
+   "ml_read_at": "2026-11-19T21:26:03",
+   "final": true
   },
   "401920517": {
    "sport": "NCAAB",
@@ -14752,7 +14758,8 @@
    "fav_team": "Texas",
    "dog_team": "Southern Utah",
    "live_ml": -20000,
-   "ml_bucket": "strong"
+   "ml_bucket": "strong",
+   "final": true
   },
   "401918950": {
    "sport": "NCAAB",
@@ -14764,7 +14771,8 @@
    "fav_team": "Louisville",
    "dog_team": "Stetson",
    "live_ml": -20000,
-   "ml_bucket": "strong"
+   "ml_bucket": "strong",
+   "final": true
   },
   "401929409": {
    "sport": "NCAAB",
@@ -14788,7 +14796,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Hou Christian",
-   "dog_team": "GA Southern"
+   "dog_team": "GA Southern",
+   "final": true
   },
   "401920845": {
    "sport": "NCAAB",
@@ -14798,7 +14807,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "St Thomas",
-   "dog_team": "SE Missouri"
+   "dog_team": "SE Missouri",
+   "final": true
   },
   "401919050": {
    "sport": "NCAAB",
@@ -14896,7 +14906,18 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Stanford",
-   "dog_team": "Sacramento St"
+   "dog_team": "Sacramento St",
+   "live_ml": -660,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-19T22:04:34",
+   "warn_board_read_at": "2026-11-19T22:04:33",
+   "warn_expires_at": "2026-11-19T22:07:34",
+   "warn_detail": "17:40 - 1st Half",
+   "warn_fav_score": 0,
+   "warn_dog_score": 4,
+   "warn_ml": -1750,
+   "ml_read_at": "2026-11-19T22:04:34"
   },
   "401918056": {
    "sport": "NCAAB",
