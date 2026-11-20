@@ -1,0 +1,18 @@
+## 2026-11-19T20:52:04-05:00 -- NBA FIRST SCORE (PC): 17 new final(s) tallied; season 212 games through 2026-11-18
+- 2026-11-17: New York Knicks @ Toronto Raptors — first: New York Knicks (2PT, 0:31 in); lead changes 12; final 111-102
+- 2026-11-17: Portland Trail Blazers @ Minnesota Timberwolves — first: Minnesota Timberwolves (2PT, 0:33 in); lead changes 12; final 105-106
+- 2026-11-17: Detroit Pistons @ San Antonio Spurs — first: San Antonio Spurs (2PT, 0:14 in); lead changes 3; final 105-93
+- 2026-11-17: Utah Jazz @ LA Clippers — first: Utah Jazz (2PT, 0:35 in); lead changes 14; final 132-107
+- 2026-11-17: Charlotte Hornets @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 0:55 in); lead changes 8; final 114-118
+- 2026-11-18: Memphis Grizzlies @ Cleveland Cavaliers — first: Memphis Grizzlies (2PT, 0:19 in); lead changes 22; final 124-121
+- 2026-11-18: Houston Rockets @ Indiana Pacers — first: Indiana Pacers (3PT, 0:34 in); lead changes 3; final 119-104
+- 2026-11-18: Milwaukee Bucks @ Miami Heat — first: Miami Heat (3PT, 0:44 in); lead changes 0; final 130-137
+- 2026-11-18: Philadelphia 76ers @ Orlando Magic — first: Philadelphia 76ers (3PT, 0:12 in); lead changes 4; final 121-116
+- 2026-11-18: Chicago Bulls @ Brooklyn Nets — first: Brooklyn Nets (2PT, 0:23 in); lead changes 1; final 137-107
+- 2026-11-18: Washington Wizards @ Toronto Raptors — first: Washington Wizards (FT, 0:23 in); lead changes 14; final 103-99
+- 2026-11-18: Detroit Pistons @ New Orleans Pelicans — first: Detroit Pistons (3PT, 0:32 in); lead changes 6; final 122-109
+- 2026-11-18: Atlanta Hawks @ Oklahoma City Thunder — first: Oklahoma City Thunder (2PT, 0:34 in); lead changes 5; final 117-112
+- 2026-11-18: Golden State Warriors @ Dallas Mavericks — first: Golden State Warriors (2PT, 0:17 in); lead changes 3; final 94-116
+- 2026-11-18: Boston Celtics @ Denver Nuggets — first: Boston Celtics (3PT, 0:37 in); lead changes 15; final 101-105
+- 2026-11-18: Utah Jazz @ Los Angeles Lakers — first: Los Angeles Lakers (2PT, 0:16 in); lead changes 13; final 109-97
+- 2026-11-18: Phoenix Suns @ Sacramento Kings — first: Phoenix Suns (2PT, 0:09 in); lead changes 12; final 128-107
