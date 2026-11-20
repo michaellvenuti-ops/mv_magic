@@ -9917,3 +9917,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 02:34:50 ET] rlm.py: OK in 11s
 [2026-11-20 02:34:55 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
 [2026-11-20 02:34:55 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 02:56:35 ET] sync_to_github.py: FAILED (exit 1) in 1300s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-12.json (HTTP 409: {'error': '{"message":"is at 6bddf6ad94f04382f8c7c036837239b1442171b0 but expected 75b2e037
+[2026-11-20 02:58:21 ET] odds_recorder.py: OK in 76s — SUMMARY: recorded 199 events (80 with odds), db total 304697 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 03:01:20 ET] dh_arbitrage.py: OK in 179s — ARBITRAGE: NBA HOU Rockets DEN Nuggets Today 10:15 PM / table / Points D. DeRozan Under 10.5 / Alt Points D. DeRozan 11+ / table | Bet365 | Caesars
+[2026-11-20 03:02:43 ET] dh_kalshi_poly_arb.py: OK in 83s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-20 03:02:45 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHO Suns UTA Jazz Today 9:45 PM — Total — Over 229 Bet365 +110 ($87) / Under 233.5 Fanatics-NJ -165 ($113) — both win 230, 231, 232, 233 — push a
+[2026-11-20 03:02:45 ET] syncing to GitHub (wide-builds banked new builds)
