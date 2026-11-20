@@ -14600,19 +14600,22 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Toledo",
-   "dog_team": "Robert Morris"
+   "dog_team": "Robert Morris",
+   "final": true
   },
   "401928812": {
    "sport": "NCAAB",
    "matchup": "Berea at N Kentucky",
    "date": "2026-11-20",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401926144": {
    "sport": "NCAAB",
    "matchup": "North Park at SIUE",
    "date": "2026-11-20",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401923304": {
    "sport": "NCAAB",
@@ -14654,13 +14657,15 @@
    "fav": "home",
    "spread": 28.5,
    "fav_team": "Ohio State",
-   "dog_team": "UMBC"
+   "dog_team": "UMBC",
+   "final": true
   },
   "401912211": {
    "sport": "NCAAB",
    "matchup": "Mary Baldwin at American",
    "date": "2026-11-20",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911021": {
    "sport": "NCAAB",
@@ -14678,13 +14683,21 @@
    "sport": "NCAAB",
    "matchup": "Northeastern at Butler",
    "date": "2026-11-20",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Butler",
    "dog_team": "Northeastern",
-   "live_ml": -660,
-   "ml_bucket": "strong"
+   "live_ml": 105,
+   "ml_bucket": "bettor",
+   "alerted_at": "2026-11-19T20:57:17",
+   "board_read_at": "2026-11-19T20:57:17",
+   "alert_expires_at": "2026-11-19T21:00:17",
+   "alert_detail": "3:55 - 2nd Half",
+   "alert_fav_score": 66,
+   "alert_dog_score": 70,
+   "alert_ml": 105,
+   "ml_read_at": "2026-11-19T20:57:17"
   },
   "401929373": {
    "sport": "NCAAB",
@@ -14721,7 +14734,7 @@
    "spread": 35.5,
    "fav_team": "Texas",
    "dog_team": "Southern Utah",
-   "live_ml": -6500,
+   "live_ml": -20000,
    "ml_bucket": "strong"
   },
   "401918950": {
@@ -14834,7 +14847,7 @@
    "date": "2026-11-20",
    "alerted": false,
    "fav": "home",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Washington",
    "dog_team": "Utah Tech"
   },
