@@ -9,8 +9,18 @@ their legs by game + market, and assembles WIDE BUILDS: an Over leg at
 a low line paired with an Under leg at a higher line (totals / props),
 or the two spread legs whose both-win margin window is widest.
 
-Qualifying bar (Michael's, set 2026-11-10/11):
+Qualifying bar (Michael's, set 2026-11-10/11; 2-number shapes added
+2026-11-20):
   - both-win window of 3 to 5 numbers,
+  - or a 2-number both-win window: NHL totals/spreads (Over X.5 /
+    Under X+1.5; favorite -1.5 / dog +3.5) and totals in every league
+    (NBA/NCAAB/NCAAF/NFL),
+  - or a win+push-only pair (empty window, one or two push numbers):
+    NHL Shape A (Over X / Under X+1, both whole numbers) generalized
+    to totals in every league, plus the half-point/whole-number form
+    (Over X.5 / Under X+1, push at X+1); NHL spreads on a genuine
+    whole-number push pair (favorite -2 / dog +3). Props keep the
+    3-5 bar (the grader cannot settle an empty-window prop),
   - balanced stakes scaled to ~$200 total (equal leg payouts),
   - miss cost at most ~10% of the ~$200 staked,
   - both legs at standard books with American odds (exchange legs in
@@ -134,7 +144,10 @@ MD_LINE_RE = re.compile(
 LEG_DICT_RE = re.compile(r"\{[^{}]*\}")
 MIDDLES_SLUGS = ["game-middles", "prop-middles", "key-number-middles",
                  "basketball-key-middles", "sog-middles",
-                 "team-total-middles"]
+                 "team-total-middles", "nhl-totals-middles"]
+# nhl-totals-middles has no producing script yet (2026-11-20):
+# collect_legs skips the missing file, so the slug is safe to list
+# now and starts feeding builds the day the script lands.
 
 
 def parse_banked_legs(text):
@@ -300,6 +313,39 @@ def push_numbers(a_line, b_line):
                    if float(l).is_integer()})
 
 
+def qualifies_total(window, push):
+    """Totals bar (2026-11-20, all leagues): the 3-5 number window,
+    or a 2-number window (NHL Shape B: Over X.5 / Under X+1.5), or a
+    win+push-only pair (empty window with >=1 push number — NHL
+    Shape A: Over X / Under X+1 whole numbers, or a half-point Over
+    with a whole-number Under one up, e.g. Over 147.5 / Under 148).
+    The balanced miss bar applies to every shape."""
+    if 3 <= len(window) <= 5:
+        return True
+    if len(window) == 2:
+        return True
+    if not window and push:
+        return True
+    return False
+
+
+def qualifies_spread(window, push, is_nhl):
+    """Spread bar: 3-5 numbers everywhere; NHL also qualifies at a
+    2-number window (favorite -1.5 / dog +3.5) and on a genuine
+    whole-number win+push pair (favorite -2 / dog +3, push at 2 and
+    3). NOTE favorite -1.5 / dog +1.5 does NOT qualify: neither leg
+    can push (both half-point lines) and no margin wins both ways —
+    every margin is a single-leg win, i.e. a miss."""
+    if 3 <= len(window) <= 5:
+        return True
+    if is_nhl:
+        if len(window) == 2:
+            return True
+        if not window and push:
+            return True
+    return False
+
+
 def pick_best(cands):
     """cands: (window, push, math_out, leg_a, leg_b). Prefer the widest
     qualifying window, then the most win+push numbers, then the
@@ -327,13 +373,18 @@ def assemble(groups, now):
             for a in overs:
                 for b in unders:
                     window = window_ints(a["line"], b["line"])
-                    if not (3 <= len(window) <= 5):
+                    push = push_numbers(a["line"], b["line"])
+                    if kind == "total":
+                        if not qualifies_total(window, push):
+                            continue
+                    elif not (3 <= len(window) <= 5):
+                        # Props keep the 3-5 bar: the grader settles
+                        # only Total/Spread markets, so an
+                        # empty-window prop could never be graded.
                         continue
                     math_out = balanced(a, b)
                     if math_out:
-                        cands.append((window,
-                                      push_numbers(a["line"], b["line"]),
-                                      math_out, a, b))
+                        cands.append((window, push, math_out, a, b))
             best = pick_best(cands)
             if not best:
                 continue
@@ -350,20 +401,19 @@ def assemble(groups, now):
         else:  # spread
             favs = [l for l in legs if l["line"] < 0]
             dogs = [l for l in legs if l["line"] > 0]
+            is_nhl = event.startswith("NHL")
             cands = []
             for fav in favs:
                 for dog in dogs:
                     if fav["side"] == dog["side"]:
                         continue
                     window = window_ints(abs(fav["line"]), dog["line"])
-                    if not (3 <= len(window) <= 5):
+                    push = push_numbers(abs(fav["line"]), dog["line"])
+                    if not qualifies_spread(window, push, is_nhl):
                         continue
                     math_out = balanced(fav, dog)
                     if math_out:
-                        cands.append((window,
-                                      push_numbers(abs(fav["line"]),
-                                                   dog["line"]),
-                                      math_out, fav, dog))
+                        cands.append((window, push, math_out, fav, dog))
             best = pick_best(cands)
             if not best:
                 continue
@@ -418,18 +468,71 @@ def build_key(b):
             f"|{b['leg2']['side']}")
 
 
+def push_profits(b):
+    """Profit when the final lands on each push number: the pushing
+    leg's stake comes back, the other leg settles at its price.
+    Returns {push_number: profit}; 0.00 when both legs push (the
+    degenerate Over 6 / Under 6 case). Only quoted for empty-window
+    builds — there both legs can never win together, so the
+    balanced() 'land' figure can never occur and must not be quoted
+    as the win."""
+    legs = (b["leg1"], b["leg2"])
+    lines = []
+    for leg in legs:
+        m = re.search(r"(-?\d+(?:\.\d+)?)\s*$", leg["side"])
+        lines.append(abs(float(m.group(1))) if m else None)
+    out = {}
+    for p in (b.get("push") or []):
+        pushers = [i for i, ln in enumerate(lines) if ln == float(p)]
+        if len(pushers) == 2:
+            out[p] = 0.0
+        elif len(pushers) == 1:
+            # Pushed leg's stake comes back (a wash); the profit is
+            # just the winning leg's profit at its price.
+            other = legs[1 - pushers[0]]
+            out[p] = round(other["stake"] * (dec(other["price"]) - 1), 2)
+        else:
+            out[p] = None
+    return out
+
+
 def build_line(b):
-    win = ", ".join(str(w) for w in b["window"])
-    push_txt = ""
-    if b.get("push"):
-        push_txt = (" — push at " +
-                    ", ".join(str(p) for p in b["push"]))
+    # Empty window = win+push-only build: name the push numbers
+    # ("win+push at 6 and 7" / "win+push at 6") instead of leaving
+    # "both win" with nothing after it.
+    if b["window"]:
+        win_txt = ("both win " +
+                   ", ".join(str(w) for w in b["window"]))
+        if b.get("push"):
+            win_txt += (" — push at " +
+                        ", ".join(str(p) for p in b["push"]))
+    elif b.get("push"):
+        nums = [str(p) for p in b["push"]]
+        if len(nums) == 1:
+            win_txt = "win+push at " + nums[0]
+        elif len(nums) == 2:
+            win_txt = "win+push at " + nums[0] + " and " + nums[1]
+        else:
+            win_txt = ("win+push at " + ", ".join(nums[:-1]) +
+                       " and " + nums[-1])
+    else:
+        win_txt = "both win —"
+    if not b["window"] and b.get("push"):
+        # Win+push-only build: 'land' can never happen (both legs
+        # cannot win together), so quote the push settlements.
+        pls = push_profits(b)
+        push_money = " / ".join(
+            ("+$" if pls[p] >= 0 else "-$") + f"{abs(pls[p]):,.2f}"
+            for p in b["push"] if pls.get(p) is not None)
+        money_txt = f"push {push_money}"
+    else:
+        money_txt = f"land +${b['land_profit']:,.2f}"
     return (f"{b['game']} — {b['market']} — "
             f"{b['leg1']['side']} {b['leg1']['book']} "
             f"{b['leg1']['price']:+d} (${b['leg1']['stake']:,.0f}) / "
             f"{b['leg2']['side']} {b['leg2']['book']} "
             f"{b['leg2']['price']:+d} (${b['leg2']['stake']:,.0f}) — "
-            f"both win {win}{push_txt} — land +${b['land_profit']:,.2f}, "
+            f"{win_txt} — {money_txt}, "
             f"miss {b['miss_pl']['low']:+,.2f} / "
             f"{b['miss_pl']['high']:+,.2f} on ~$200 balanced")
 
