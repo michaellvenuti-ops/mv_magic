@@ -10089,3 +10089,24 @@
 [2026-11-20 14:01:25 ET] public_fade.py: OK in 17s
 [2026-11-20 14:09:48 ET] dh_positive_ev.py: FAILED (exit 2) in 503s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-20.txt. No prices inven
 [2026-11-20 14:09:50 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 14:39:56 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-20 14:52:21 ET] odds_recorder.py: OK in 711s — SUMMARY: recorded 229 events (208 with odds), db total 306976 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-20 14:57:35 ET] dh_arbitrage.py: FAILED (exit 1) in 313s —   - [pid=6612][err] [6612:5920:1120/145617.379:ERROR:content\browser\network_service_instance_impl.cc:652] Network service crashed or was terminated, restarting
+[2026-11-20 15:02:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 262s —   - <launched> pid=4264
+[2026-11-20 15:02:23 ET] wide_builds.py: OK in 19s — wide_builds: 5 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 15:09:58 ET] dh_low_holds.py: OK in 455s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-20 15:14:35 ET] dh_game_middles.py: FAILED (exit 1) in 274s —   - <launched> pid=16760
+[2026-11-20 15:24:55 ET] dh_key_number_middles.py: FAILED (exit 1) in 618s —   - <launched> pid=16264
+[2026-11-20 15:36:24 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 680s —   - <launched> pid=12996
+[2026-11-20 15:36:51 ET] steam_side.py: OK in 26s — STEAM-SIDE FLAG: FBS South Alabama @ Southern Miss | 2026-11-20 | Kalshi | South Alabama spread 3.5 (median 3.5 -> 4.5)
+[2026-11-20 15:42:21 ET] dh_prop_middles.py: FAILED (exit 1) in 330s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-20 15:50:30 ET] dh_sog_middles.py: FAILED (exit 1) in 487s —   - <launched> pid=12932
+[2026-11-20 15:51:54 ET] dh_team_total_middles.py: OK in 80s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -2.5c vs +EV.
+[2026-11-20 15:52:12 ET] nfl_first_score.py: OK in 18s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 15:52:15 ET] nba_first_score.py: OK in 3s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 15:52:17 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 15:52:20 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 3 new, 1 unverified, 880 total tallied.
+[2026-11-20 15:52:22 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 15:52:23 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 15:52:31 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-20 15:52:32 ET] syncing to GitHub (regular 10-minute sync)
