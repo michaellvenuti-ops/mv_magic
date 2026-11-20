@@ -1,0 +1,8 @@
+## 2026-11-20T00:07:50-05:00 -- NCAAB FIRST SCORE (PC): 7 new final(s) tallied; season 871 games through 2026-11-19
+- 2026-11-19: Seton Hall Pirates @ Wisconsin Badgers — first: Seton Hall Pirates (2PT, 0:19 in); lead changes 2; final 74-69
+- 2026-11-19: Oregon State Beavers @ Oregon Ducks — first: Oregon State Beavers (2PT, 0:10 in); lead changes 14; final 82-71
+- 2026-11-19: UC Santa Barbara Gauchos @ Pepperdine Waves — first: Pepperdine Waves (2PT, 0:43 in); lead changes 9; final 88-80
+- 2026-11-19: Utah Tech Trailblazers @ Washington Huskies — first: Utah Tech Trailblazers (3PT, 0:04 in); lead changes 3; final 69-82
+- 2026-11-19: UTEP Miners @ New Mexico State Aggies — first: New Mexico State Aggies (2PT, 0:37 in); lead changes 3; final 84-69
+- 2026-11-19: Northwest Indian RedHawks @ Portland State Vikings — first: Northwest Indian RedHawks (2PT, 0:30 in); lead changes 1; final 41-132
+- 2026-11-19: East Texas A&M Lions @ California Golden Bears — first: California Golden Bears (3PT, 0:17 in); lead changes 2; final 54-86
