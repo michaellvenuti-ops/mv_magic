@@ -9905,3 +9905,9 @@
 [2026-11-20 04:14:33 ET] rlm.py: OK in 7s
 [2026-11-20 04:14:38 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
 [2026-11-20 04:14:38 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 04:36:55 ET] sync_to_github.py: FAILED (exit 1) in 1337s —   FAILED: pc-data/leader-follower-2026-11-16.md (HTTP 409: {'error': '{"message":"is at 89966c425cd563a1cad4587652160c1f0d451e38 but expected 1f5c0be3a3712ed1ec
+[2026-11-20 04:43:25 ET] odds_recorder.py: OK in 360s — SUMMARY: recorded 199 events (80 with odds), db total 305095 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 04:44:29 ET] dh_arbitrage.py: OK in 64s — ARBITRAGE: NCAAB UT Arlington Northwestern St. Today 7:30 PM / table / Total Under 146.5 / Alt Total Over 145.5 / table | DraftKings | Bet365
+[2026-11-20 04:44:51 ET] dh_kalshi_poly_arb.py: OK in 23s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-20 04:44:54 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA CHA Hornets ATL Hawks Today 7:15 PM — Total — Over 219.5 Bet365 +105 ($88) / Under 224.5 Fanatics-NJ -165 ($112) — both win 220, 221, 222, 223, 2
+[2026-11-20 04:44:54 ET] syncing to GitHub (wide-builds banked new builds)
