@@ -10,3 +10,4 @@ NEW FLAG: FBS Iowa State @ UCF | 2026-11-20 — Kalshi still dealing spread -1.5
 NEW FLAG: FBS Clemson @ Duke | 2026-11-20 — Kalshi still dealing spread -13.5 on Clemson (pre-move median -13.5, now -12.5)
 NEW FLAG: FBS New Mexico @ Wyoming | 2026-11-20 — Kalshi still dealing spread 7.5 on New Mexico (pre-move median 7.5, now 8.5)
 ## 2026-11-20T10:50:28-05:00 — 70 games, 0 steam events, 0 NEW flags, 3 started games skipped
+## 2026-11-20T11:53:02-05:00 — 70 games, 0 steam events, 0 NEW flags, 3 started games skipped
