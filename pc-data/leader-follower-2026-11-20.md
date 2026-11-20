@@ -13,3 +13,8 @@
 ## 2026-11-20T10:50:21-05:00 — pack move, never credited: Bowling Green @ Toledo | 2026-11-20 total (BetMGM, DraftKings)
 ## 2026-11-20T10:50:21-05:00 — pack move, never credited: New Mexico @ Wyoming | 2026-11-20 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
 ## 2026-11-20T10:50:21-05:00 — 83 games, 0 leads credited, 4 started games skipped
+## 2026-11-20T13:42:38-05:00 — pack move, never credited: Buccaneers @ Lions | 2026-11-20 spread (BetMGM, Caesars, FanDuel, Fanatics, Hard Rock, Kalshi, bet365)
+## 2026-11-20T13:42:39-05:00 — pack move, never credited: New Mexico @ Wyoming | 2026-11-20 spread (Fanatics, Kalshi)
+## 2026-11-20T13:42:39-05:00 — pack move, never credited: Florida International @ Kennesaw State | 2026-11-20 spread (FanDuel, Kalshi)
+## 2026-11-20T13:42:39-05:00 — pack move, never credited: Utah State @ Oregon State | 2026-11-20 spread (FanDuel, Kalshi)
+## 2026-11-20T13:42:39-05:00 — 83 games, 0 leads credited, 4 started games skipped
