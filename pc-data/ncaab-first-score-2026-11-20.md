@@ -9,3 +9,7 @@
 ## 2026-11-20T00:49:00-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 873 games through 2026-11-19
 - 2026-11-19: Southern Miss Golden Eagles @ Grambling Tigers — first: Grambling Tigers (2PT, 0:38 in); lead changes 5; final 103-100
 - 2026-11-19: Sacramento State Hornets @ Stanford Cardinal — first: Sacramento State Hornets (2PT, 0:25 in); lead changes 3; final 65-78
+## 2026-11-20T02:01:22-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 875 games through 2026-11-19
+- 2026-11-19: Houston Cougars @ Kansas Jayhawks — first: Houston Cougars (2PT, 1:02 in); lead changes 0; final 92-83
+- 2026-11-19: Tarleton State Texans @ USC Trojans — first: USC Trojans (3PT, 0:20 in); lead changes 0; final 51-96
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
