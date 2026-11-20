@@ -6,3 +6,6 @@
 - 2026-11-19: UTEP Miners @ New Mexico State Aggies — first: New Mexico State Aggies (2PT, 0:37 in); lead changes 3; final 84-69
 - 2026-11-19: Northwest Indian RedHawks @ Portland State Vikings — first: Northwest Indian RedHawks (2PT, 0:30 in); lead changes 1; final 41-132
 - 2026-11-19: East Texas A&M Lions @ California Golden Bears — first: California Golden Bears (3PT, 0:17 in); lead changes 2; final 54-86
+## 2026-11-20T00:49:00-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 873 games through 2026-11-19
+- 2026-11-19: Southern Miss Golden Eagles @ Grambling Tigers — first: Grambling Tigers (2PT, 0:38 in); lead changes 5; final 103-100
+- 2026-11-19: Sacramento State Hornets @ Stanford Cardinal — first: Sacramento State Hornets (2PT, 0:25 in); lead changes 3; final 65-78
