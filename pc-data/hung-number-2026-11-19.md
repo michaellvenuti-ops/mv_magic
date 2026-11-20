@@ -1,23 +1,16 @@
-# Hung numbers — 2026-11-19 (scan 2026-11-19 20:48)
+# Hung numbers — 2026-11-19 (scan 2026-11-19 22:51)
 
-- Colts vs Texans | DraftKings | spread | value: dog | book 10.5 vs median 8.5 | div 2.0 
-- Colts vs Texans | Caesars | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
-- Colts vs Texans | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
-- Colts vs Texans | Hard Rock | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
-- Colts vs Texans | Caesars | moneyline Colts | value: Colts | book 27.8 vs median 21.1 | div 6.7 
-- Colts vs Texans | Hard Rock | moneyline Colts | value: Colts | book 26.7 vs median 21.1 | div 5.6 
+- Colts vs Texans | Caesars | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
+- Colts vs Texans | FanDuel | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
 - Cardinals vs Chiefs | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Raiders vs Broncos | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
-- Rice vs Temple | DraftKings | spread | value: dog | book 2.5 vs median 1.5 | div 1.0 
-- Rice vs Temple | Caesars | spread | value: favorite | book -1.5 vs median 1.5 | div 3.0 
-- Rice vs Temple | BetMGM | total | value: Under | book 45.5 vs median 47.0 | div 1.5 
+- Rice vs Temple | BetMGM | spread | value: dog | book 5.5 vs median 2.5 | div 3.0 middle pairing spans key number 3
+- Rice vs Temple | DraftKings | moneyline Rice | value: Rice | book 25.3 vs median 19.9 | div 5.4 
+- Rice vs Temple | DraftKings | moneyline Temple | value: Temple | book 81.2 vs median 86.4 | div 5.2 
 - Clemson vs Duke | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Vanderbilt vs Florida | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
 - Wofford vs Ole Miss | FanDuel | spread | value: favorite | book 48.5 vs median 49.5 | div 1.0 
 - Tennessee Tech vs Mississippi State | FanDuel | spread | value: favorite | book 34.5 vs median 35.5 | div 1.0 
-- Tennessee Tech vs Mississippi State | Fanatics | spread | value: dog | book 59.5 vs median 35.5 | div 24.0 
-- Tennessee Tech vs Mississippi State | Fanatics | moneyline Mississippi State | value: Mississippi State | book 26.5 vs median 98.8 | div 72.3 
-- Tennessee Tech vs Mississippi State | Fanatics | moneyline Tennessee Tech | value: Tennessee Tech | book 73.5 vs median 5.0 | div 68.5 
 - Chattanooga vs Alabama | Fanatics | spread | value: dog | book 58.5 vs median 49.0 | div 9.5 
 - LSU vs Tennessee | DraftKings | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
 - LSU vs Tennessee | Fanatics | spread | value: dog | book 1.0 vs median -1.0 | div 2.0 
