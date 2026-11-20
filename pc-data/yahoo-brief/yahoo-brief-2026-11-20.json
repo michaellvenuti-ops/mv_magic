@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-20",
+ "run_time_et": "2026-11-20 10:20 ET",
+ "run_time_pt": "2026-11-20 07:20 PT",
+ "account": "venutiml@yahoo.com (expected)",
+ "signed_in": null,
+ "window_days": 7,
+ "scanned_rows": 0,
+ "lanes": {
+  "urgent": [],
+  "miles_earn_and_burn": [],
+  "doctor_of_credit": [],
+  "gift_cards": [],
+  "sportsbook": []
+ },
+ "messages": [],
+ "errors": [
+  "run failed: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://mail.yahoo.com/\", waiting until \"domcontentloaded\"\n"
+ ],
+ "parse_note": "",
+ "_dump": []
+}
