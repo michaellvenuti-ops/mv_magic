@@ -1205,15 +1205,15 @@
   "Arizona @ Kansas State | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": 7.0,
+     "spread": 7.5,
      "total": 52.5
     },
     "Caesars": {
-     "spread": 7.0,
+     "spread": 7.5,
      "total": 52.5
     },
     "DraftKings": {
-     "spread": 7.0,
+     "spread": 7.5,
      "total": 52.5
     },
     "FanDuel": {
@@ -2075,7 +2075,7 @@
   "Arkansas State @ Louisiana Tech | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": -14.0,
+     "spread": -14.5,
      "total": 53.5
     },
     "Caesars": {
@@ -3100,7 +3100,7 @@
      "total": 53.5
     },
     "Fanatics": {
-     "spread": 6.0,
+     "spread": 6.5,
      "total": 54.0
     },
     "Hard Rock": {
@@ -5409,7 +5409,7 @@
     },
     "Fanatics": {
      "spread": -16.0,
-     "total": 40.5
+     "total": 41.0
     },
     "Hard Rock": {
      "spread": -16.5,
@@ -7879,11 +7879,11 @@
      "total": 66.5
     },
     "Caesars": {
-     "spread": -20.5,
+     "spread": -20.0,
      "total": 66.5
     },
     "DraftKings": {
-     "spread": -20.5,
+     "spread": -19.5,
      "total": 66.5
     },
     "FanDuel": {
@@ -7903,7 +7903,16 @@
      "total": 66.5
     }
    },
-   "pending": []
+   "pending": [
+    {
+     "book": "DraftKings",
+     "direction": 1,
+     "market": "spread",
+     "new": -19.5,
+     "old": -20.5,
+     "ts": "2026-11-20T01:22:19-05:00"
+    }
+   ]
   },
   "Colorado State @ Washington State | 2026-11-09": {
    "books": {
@@ -10863,7 +10872,7 @@
      "total": 45.0
     },
     "DraftKings": {
-     "spread": -3.5,
+     "spread": -3.0,
      "total": 44.5
     },
     "FanDuel": {
@@ -13586,7 +13595,7 @@
   "Houston @ West Virginia | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": 7.0,
+     "spread": 7.5,
      "total": 70.5
     },
     "Caesars": {
@@ -14056,7 +14065,7 @@
   "Iowa @ Illinois | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": 8.5,
+     "spread": 9.0,
      "total": 40.5
     },
     "Caesars": {
@@ -16947,14 +16956,14 @@
    "books": {
     "BetMGM": {
      "spread": 1.0,
-     "total": 46.5
+     "total": 45.5
     },
     "Caesars": {
-     "spread": 1.0,
+     "spread": 1.5,
      "total": 45.5
     },
     "DraftKings": {
-     "spread": -1.5,
+     "spread": 1.5,
      "total": 45.5
     },
     "FanDuel": {
@@ -21263,7 +21272,7 @@
   "NC State @ Florida State | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": -10.0,
+     "spread": -10.5,
      "total": 56.5
     },
     "Caesars": {
@@ -30356,7 +30365,7 @@
      "total": 64.5
     },
     "Caesars": {
-     "spread": 1.0,
+     "spread": 1.5,
      "total": 64.0
     },
     "DraftKings": {
@@ -35755,7 +35764,7 @@
   "UNLV @ San Jose State | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": 7.0,
+     "spread": 6.5,
      "total": 47.5
     },
     "Caesars": {
@@ -38755,11 +38764,11 @@
   "Washington State @ Texas State | 2026-11-20": {
    "books": {
     "BetMGM": {
-     "spread": -13.0,
+     "spread": -13.5,
      "total": 62.5
     },
     "Caesars": {
-     "spread": -13.0,
+     "spread": -13.5,
      "total": 62.0
     },
     "DraftKings": {
