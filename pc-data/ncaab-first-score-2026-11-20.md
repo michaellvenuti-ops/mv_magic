@@ -22,3 +22,9 @@
 - 2026-11-20: Oklahoma State Cowboys @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (3PT, 0:34 in); lead changes 6; final 70-85
 - 2026-11-20: Temple Owls @ Middle Tennessee Blue Raiders — first: Temple Owls (3PT, 0:33 in); lead changes 4; final 85-76
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T18:07:28-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 884 games through 2026-11-20
+- 2026-11-20: UAB Blazers @ George Washington Revolutionaries — first: UAB Blazers (2PT, 0:12 in); lead changes 6; final 81-76
+- 2026-11-20: Northwestern Wildcats @ Virginia Tech Hokies — first: Virginia Tech Hokies (2PT, 0:48 in); lead changes 0; final 70-87
+- 2026-11-20: UAlbany Great Danes @ Western Illinois Leathernecks — first: Western Illinois Leathernecks (2PT, 0:58 in); lead changes 7; final 65-60
+- 2026-11-20: Indiana State Sycamores @ Stephen F. Austin Lumberjacks — first: Indiana State Sycamores (3PT, 1:22 in); lead changes 7; final 76-86
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
