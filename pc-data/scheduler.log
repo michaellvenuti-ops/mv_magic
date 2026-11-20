@@ -9758,3 +9758,9 @@
 [2026-11-19 21:37:16 ET] qb_props.py: FAILED (exit 2) in 78s — 0 starters resolved — refusing to write state. Re-run with --dump and send the dump file.
 [2026-11-19 21:37:33 ET] rb_rushing.py: FAILED (exit 2) in 17s — rb-rushing: zero rushers parsed from PFR — run with --dump and send it back for a parser patch. No state written.
 [2026-11-19 21:37:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-19 22:00:27 ET] sync_to_github.py: FAILED (exit 1) in 1374s —   FAILED: pc-data/sog-filter-dump-switch-on-20261114-1903.json (HTTP 409: {'error': '{"message":"is at 662922f2f6514bb8cba34fc833ac44c2af542f2f but expected 5dd
+[2026-11-19 22:04:41 ET] odds_recorder.py: OK in 223s — SUMMARY: recorded 199 events (86 with odds), db total 303105 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-19 22:09:44 ET] dh_arbitrage.py: FAILED (exit 2) in 303s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-19 22:12:26 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 162s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-19 22:12:33 ET] wide_builds.py: OK in 6s — NEW BUILD: NFL LV Raiders DEN Broncos Nov-22 4:25 PM — Rec + Rush Yards J. Coleman — Over 99.5 DraftKings +110 ($94) / Under 102.5 BetRivers -118 ($106) — both 
+[2026-11-19 22:12:33 ET] syncing to GitHub (wide-builds banked new builds)
