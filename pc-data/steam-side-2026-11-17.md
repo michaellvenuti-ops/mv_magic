@@ -8,3 +8,6 @@ NEW FLAG: FBS Georgia State @ Marshall | 2026-11-17 — FanDuel still dealing sp
 ## 2026-11-17T06:31:44-05:00 — 66 games, 0 steam events, 0 NEW flags
 ## 2026-11-17T08:01:22-05:00 — 66 games, 0 steam events, 0 NEW flags
 ## 2026-11-17T09:32:04-05:00 — 66 games, 0 steam events, 0 NEW flags
+## 2026-11-17T10:18:24-05:00 — 66 games, 1 steam events, 2 NEW flags
+NEW FLAG: FBS Ball State @ Ohio | 2026-11-17 — Fanatics still dealing spread -11.5 on Ball State (pre-move median -11.5, now -10.5)
+NEW FLAG: FBS Ball State @ Ohio | 2026-11-17 — Kalshi still dealing spread -11.5 on Ball State (pre-move median -11.5, now -10.5)
