@@ -9954,3 +9954,11 @@
 [2026-11-20 06:31:08 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
 [2026-11-20 06:31:09 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-20 06:31:09 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 06:54:09 ET] sync_to_github.py: FAILED (exit 1) in 1379s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-11-hour-1.txt (HTTP 409: {'error': '{"message":"is at 5a41ff5768b69dc5233ec8c56ec8835e24aa60e0 but expec
+[2026-11-20 06:55:58 ET] odds_recorder.py: OK in 80s — SUMMARY: recorded 199 events (80 with odds), db total 305692 snapshots / 1346 events, feeds ok 6 fail 0
+[2026-11-20 06:56:00 ET] wide_builds.py: OK in 2s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 07:00:53 ET] dh_low_holds.py: FAILED (exit 1) in 292s —   - navigating to "https://darkhorseodds.com/low-holds", waiting until "domcontentloaded"
+[2026-11-20 07:06:12 ET] dh_game_middles.py: OK in 319s — GAME MIDDLE: NFL LV Raiders DEN Broncos Nov-22 4:25 PM / table / Receiving Yards J. Coleman Under 26.5 / Alt Recv Yards J. Coleman 25+ / table | BetParx | FanDu
+[2026-11-20 07:10:01 ET] dh_key_number_middles.py: OK in 229s — key-number-middles: 175 basketball rows excluded (football-only rule).
+[2026-11-20 07:11:54 ET] hung_number.py: OK in 111s — No new hung numbers (12 current flags).
+[2026-11-20 07:11:54 ET] syncing to GitHub (regular 10-minute sync)
