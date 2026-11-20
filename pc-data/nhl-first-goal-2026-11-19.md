@@ -1,0 +1,15 @@
+## 2026-11-19T20:52:09-05:00 -- NHL FIRST GOAL (PC): 14 new final(s) tallied; season 338 games through 2026-11-18
+- 2026-11-17: Los Angeles Kings @ Boston Bruins — first goal: Los Angeles Kings (EV, Mats Zuccarello, 4:14 in); lead changes 0; final 3-0
+- 2026-11-17: Edmonton Oilers @ Florida Panthers — first goal: Edmonton Oilers (EV, Kasperi Kapanen, 10:03 in); lead changes 0; final 5-2
+- 2026-11-17: Columbus Blue Jackets @ New York Islanders — first goal: New York Islanders (PP, Anthony Duclair, 0:58 in); lead changes 0; final 1-5
+- 2026-11-17: Buffalo Sabres @ Philadelphia Flyers — first goal: Buffalo Sabres (EV, Mattias Samuelsson, 19:13 in); lead changes 1; final 3-4
+- 2026-11-17: Ottawa Senators @ Winnipeg Jets — first goal: Ottawa Senators (PP, Drake Batherson, 36:54 in); lead changes 0; final 2-1
+- 2026-11-17: Washington Capitals @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (EV, Sam O'Reilly, 17:49 in); lead changes 0; final 2-5
+- 2026-11-17: Toronto Maple Leafs @ Chicago Blackhawks — first goal: Toronto Maple Leafs (EV, Easton Cowan, 16:38 in); lead changes 1; final 3-6
+- 2026-11-17: Anaheim Ducks @ St. Louis Blues — first goal: St. Louis Blues (EV, Jonatan Berggren, 17:47 in); lead changes 0; final 6-8
+- 2026-11-17: Nashville Predators @ Minnesota Wild — first goal: Minnesota Wild (EV, Brock Faber, 15:40 in); lead changes 0; final 3-7
+- 2026-11-17: Dallas Stars @ Vegas Golden Knights — first goal: Vegas Golden Knights (EV, William Karlsson, 39:20 in); lead changes 1; final 4-3
+- 2026-11-17: Calgary Flames @ San Jose Sharks — first goal: San Jose Sharks (EV, Adam Gaudette, 16:07 in); lead changes 1; final 5-2
+- 2026-11-18: Boston Bruins @ Detroit Red Wings — first goal: Detroit Red Wings (EV, Lucas Raymond, 3:02 in); lead changes 1; final 4-1
+- 2026-11-18: Montreal Canadiens @ New Jersey Devils — first goal: New Jersey Devils (EV, Luke Evangelista, 9:40 in); lead changes 1; final 3-2
+- 2026-11-18: Colorado Avalanche @ Utah Mammoth — first goal: Utah Mammoth (EV, Liam O'Brien, 34:38 in); lead changes 0; final 1-4
