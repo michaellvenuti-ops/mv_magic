@@ -1,5 +1,5 @@
 {
- "through": "2026-11-15",
+ "through": "2026-11-18",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -10502,18 +10502,88 @@
    "winner": "Wyoming Cowboys"
   },
   {
-   "date": "2026-11-15",
    "away": "Ole Miss Rebels",
-   "home": "Oklahoma Sooners",
+   "date": "2026-11-15",
+   "final": "17-24",
    "first": "Oklahoma Sooners",
+   "first_elapsed_sec": 546,
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Oklahoma Sooners",
+   "lead_changes": 0,
+   "seq": "0-7>0-14>7-14>7-21>14-21>14-24>17-24",
+   "ties": 0,
+   "winner": "Oklahoma Sooners"
+  },
+  {
+   "date": "2026-11-17",
+   "away": "Ball State Cardinals",
+   "home": "Ohio Bobcats",
+   "first": "Ohio Bobcats",
    "first_side": "home",
    "first_kind": "TD",
-   "first_elapsed_sec": 546,
-   "winner": "Oklahoma Sooners",
-   "seq": "0-7>0-14>7-14>7-21>14-21>14-24>17-24",
+   "first_elapsed_sec": 256,
+   "winner": "Ohio Bobcats",
+   "seq": "0-7>3-7>10-7>17-7>17-14>20-14>20-21>20-28>28-28>28-35",
+   "lead_changes": 2,
+   "ties": 1,
+   "final": "28-35"
+  },
+  {
+   "date": "2026-11-17",
+   "away": "Eastern Michigan Eagles",
+   "home": "Western Michigan Broncos",
+   "first": "Western Michigan Broncos",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 18,
+   "winner": "Western Michigan Broncos",
+   "seq": "0-7>0-14>7-14>7-17>7-24>7-31>13-31>20-31>20-34>27-34",
    "lead_changes": 0,
    "ties": 0,
-   "final": "17-24"
+   "final": "27-34"
+  },
+  {
+   "date": "2026-11-17",
+   "away": "Miami (OH) RedHawks",
+   "home": "Kent State Golden Flashes",
+   "first": "Miami (OH) RedHawks",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 213,
+   "winner": "Miami (OH) RedHawks",
+   "seq": "7-0>7-3>13-3>20-3",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "20-3"
+  },
+  {
+   "date": "2026-11-18",
+   "away": "Akron Zips",
+   "home": "Massachusetts Minutemen",
+   "first": "Massachusetts Minutemen",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 182,
+   "winner": "Akron Zips",
+   "seq": "0-7>0-10>7-10>7-17>7-20>7-26>14-26>17-26>24-26>24-33>31-33>34-33",
+   "lead_changes": 1,
+   "ties": 0,
+   "final": "34-33"
+  },
+  {
+   "date": "2026-11-18",
+   "away": "Central Michigan Chippewas",
+   "home": "Buffalo Bulls",
+   "first": "Central Michigan Chippewas",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 387,
+   "winner": "Buffalo Bulls",
+   "seq": "7-0>7-3>7-6>7-13>14-13>14-20>14-26>21-26>21-33>21-40",
+   "lead_changes": 3,
+   "ties": 0,
+   "final": "21-40"
   }
  ],
  "tally": {
@@ -10726,7 +10796,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Eastern Michigan Eagles": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 6,
    "kinds": {
     "FG": 1,
@@ -10736,7 +10806,7 @@
    "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 60.0,
+   "scored_first_pct": 54.5,
    "win_pct_when_first": 66.7,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -10774,7 +10844,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Akron Zips": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 6,
    "kinds": {
     "FG": 1,
@@ -10782,11 +10852,11 @@
     "Safety": 0
    },
    "won_when_first": 1,
-   "won_when_not_first": 0,
+   "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 60.0,
+   "scored_first_pct": 54.5,
    "win_pct_when_first": 16.7,
-   "win_pct_when_not_first": 0.0,
+   "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Wake Forest Demon Deacons": {
@@ -10966,18 +11036,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Massachusetts Minutemen": {
-   "gp": 10,
-   "scored_first": 6,
+   "gp": 11,
+   "scored_first": 7,
    "kinds": {
     "FG": 2,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 60.0,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 63.6,
+   "win_pct_when_first": 42.9,
    "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -11078,7 +11148,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Buffalo Bulls": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 3,
    "kinds": {
     "FG": 2,
@@ -11086,11 +11156,11 @@
     "Safety": 0
    },
    "won_when_first": 3,
-   "won_when_not_first": 4,
+   "won_when_not_first": 5,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 30.0,
+   "scored_first_pct": 27.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 57.1,
+   "win_pct_when_not_first": 62.5,
    "won_by_one_when_first_pct": 0.0
   },
   "West Georgia Wolves": {
@@ -11430,7 +11500,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Ball State Cardinals": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 5,
    "kinds": {
     "FG": 1,
@@ -11440,9 +11510,9 @@
    "won_when_first": 2,
    "won_when_not_first": 1,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 40.0,
-   "win_pct_when_not_first": 20.0,
+   "win_pct_when_not_first": 16.7,
    "won_by_one_when_first_pct": 20.0
   },
   "Ohio State Buckeyes": {
@@ -11590,18 +11660,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Central Michigan Chippewas": {
-   "gp": 10,
-   "scored_first": 5,
+   "gp": 11,
+   "scored_first": 6,
    "kinds": {
     "FG": 3,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 60.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12006,7 +12076,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Kent State Golden Flashes": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 4,
    "kinds": {
     "FG": 0,
@@ -12016,9 +12086,9 @@
    "won_when_first": 2,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 40.0,
+   "scored_first_pct": 36.4,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 16.7,
+   "win_pct_when_not_first": 14.3,
    "won_by_one_when_first_pct": 0.0
   },
   "South Carolina Gamecocks": {
@@ -12214,18 +12284,18 @@
    "won_by_one_when_first_pct": null
   },
   "Miami (OH) RedHawks": {
-   "gp": 10,
-   "scored_first": 3,
+   "gp": 11,
+   "scored_first": 4,
    "kinds": {
     "FG": 1,
-    "TD": 2,
+    "TD": 3,
     "Safety": 0
    },
-   "won_when_first": 1,
+   "won_when_first": 2,
    "won_when_not_first": 5,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 30.0,
-   "win_pct_when_first": 33.3,
+   "scored_first_pct": 36.4,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 71.4,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12614,18 +12684,18 @@
    "won_by_one_when_first_pct": 16.7
   },
   "Ohio Bobcats": {
-   "gp": 10,
-   "scored_first": 7,
+   "gp": 11,
+   "scored_first": 8,
    "kinds": {
     "FG": 1,
-    "TD": 6,
+    "TD": 7,
     "Safety": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
-   "win_pct_when_first": 71.4,
+   "scored_first_pct": 72.7,
+   "win_pct_when_first": 75.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13286,17 +13356,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Western Michigan Broncos": {
-   "gp": 10,
-   "scored_first": 6,
+   "gp": 11,
+   "scored_first": 7,
    "kinds": {
     "FG": 0,
-    "TD": 6,
+    "TD": 7,
     "Safety": 0
    },
-   "won_when_first": 6,
+   "won_when_first": 7,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 60.0,
+   "scored_first_pct": 63.6,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 0.0
@@ -14295,18 +14365,18 @@
   }
  },
  "league": {
-  "games": 751,
-  "home_scored_first": 451,
-  "first_team_won": 532,
+  "games": 756,
+  "home_scored_first": 454,
+  "first_team_won": 535,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
    "FG": 210,
-   "TD": 539,
+   "TD": 544,
    "Safety": 2
   },
-  "avg_lead_changes": 0.99,
-  "median_first_score_sec": 340,
+  "avg_lead_changes": 1.0,
+  "median_first_score_sec": 339,
   "home_scored_first_pct": 60.1,
   "first_team_win_pct": 70.8
  },
@@ -14377,9 +14447,9 @@
    "avg_per_game": 0.64
   },
   "Eastern Michigan Eagles": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 16,
-   "avg_per_game": 1.6
+   "avg_per_game": 1.45
   },
   "San Jos\u00e9 State Spartans": {
    "games": 11,
@@ -14392,9 +14462,9 @@
    "avg_per_game": 1.1
   },
   "Akron Zips": {
-   "games": 10,
-   "lead_changes": 15,
-   "avg_per_game": 1.5
+   "games": 11,
+   "lead_changes": 16,
+   "avg_per_game": 1.45
   },
   "Wake Forest Demon Deacons": {
    "games": 10,
@@ -14452,9 +14522,9 @@
    "avg_per_game": 1.3
   },
   "Massachusetts Minutemen": {
-   "games": 10,
-   "lead_changes": 13,
-   "avg_per_game": 1.3
+   "games": 11,
+   "lead_changes": 14,
+   "avg_per_game": 1.27
   },
   "Rutgers Scarlet Knights": {
    "games": 10,
@@ -14487,9 +14557,9 @@
    "avg_per_game": 3.0
   },
   "Buffalo Bulls": {
-   "games": 10,
-   "lead_changes": 14,
-   "avg_per_game": 1.4
+   "games": 11,
+   "lead_changes": 17,
+   "avg_per_game": 1.55
   },
   "West Georgia Wolves": {
    "games": 2,
@@ -14597,9 +14667,9 @@
    "avg_per_game": 0.9
   },
   "Ball State Cardinals": {
-   "games": 10,
-   "lead_changes": 14,
-   "avg_per_game": 1.4
+   "games": 11,
+   "lead_changes": 16,
+   "avg_per_game": 1.45
   },
   "Ohio State Buckeyes": {
    "games": 10,
@@ -14647,9 +14717,9 @@
    "avg_per_game": 1.56
   },
   "Central Michigan Chippewas": {
-   "games": 10,
-   "lead_changes": 10,
-   "avg_per_game": 1.0
+   "games": 11,
+   "lead_changes": 13,
+   "avg_per_game": 1.18
   },
   "New Mexico Lobos": {
    "games": 10,
@@ -14777,9 +14847,9 @@
    "avg_per_game": 1.3
   },
   "Kent State Golden Flashes": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 11,
-   "avg_per_game": 1.1
+   "avg_per_game": 1.0
   },
   "South Carolina Gamecocks": {
    "games": 10,
@@ -14842,9 +14912,9 @@
    "avg_per_game": 0.67
   },
   "Miami (OH) RedHawks": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 17,
-   "avg_per_game": 1.7
+   "avg_per_game": 1.55
   },
   "Pittsburgh Panthers": {
    "games": 10,
@@ -14967,9 +15037,9 @@
    "avg_per_game": 1.0
   },
   "Ohio Bobcats": {
-   "games": 10,
-   "lead_changes": 12,
-   "avg_per_game": 1.2
+   "games": 11,
+   "lead_changes": 14,
+   "avg_per_game": 1.27
   },
   "Nebraska Cornhuskers": {
    "games": 10,
@@ -15177,9 +15247,9 @@
    "avg_per_game": 0.9
   },
   "Western Michigan Broncos": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 5,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.45
   },
   "Michigan Wolverines": {
    "games": 10,
