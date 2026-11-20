@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-20 (scan 2026-11-20 00:00)
+# Hung numbers — 2026-11-20 (scan 2026-11-20 01:20)
 
 - Cardinals vs Chiefs | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Steelers vs Eagles | DraftKings | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
@@ -9,8 +9,7 @@
 - Tennessee Tech vs Mississippi State | FanDuel | spread | value: favorite | book 34.5 vs median 35.5 | div 1.0 
 - Chattanooga vs Alabama | DraftKings | spread | value: dog | book 49.5 vs median 48.5 | div 1.0 
 - Iowa vs Illinois | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
-- LSU vs Tennessee | DraftKings | spread | value: dog | book 1.5 vs median -1.0 | div 2.5 
-- LSU vs Tennessee | Fanatics | spread | value: dog | book 1.0 vs median -1.0 | div 2.0 
+- LSU vs Tennessee | Fanatics | spread | value: dog | book 1.0 vs median -1.5 | div 2.5 
 - Samford vs Auburn | Fanatics | spread | value: dog | book 59.5 vs median 48.5 | div 11.0 
 - Kentucky vs Missouri | FanDuel | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
 - Utah vs TCU | FanDuel | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
