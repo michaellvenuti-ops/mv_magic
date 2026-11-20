@@ -13,20 +13,23 @@ TRAILING on the live scoreboard, and this game has not alerted before.
 One alert per game (a favorite that goes back ahead and trails again
 does not re-fire).
 
-Basketball trigger (NBA + NCAAB; changed 2026-11-19 at Michael's tap):
-the same trailing condition, PLUS the favorite's LIVE moneyline must
-be LONGER than -200 (bettor-friendly only: -195, -180, -125, any plus
-price) at the moment of the check. A favorite still laying -200 or
-shorter live (-200, -250, -8500) does NOT alert — the market is saying
-it is not really in danger, no matter how far it trails. ML of exactly
--200 does not alert. A strong-ML candidate is simply skipped this
-cycle (not marked alerted, not held): a later cycle can still fire it
-once the ML weakens past -200. ESPN's basketball scoreboards carry no usable live
-moneyline (live NCAAB games have no odds object at all), so the live ML
-is read from ScoresAndOdds' public board — fetched ONLY on runs where a
+Basketball trigger (NBA + NCAAB; changed 2026-11-19 at Michael's tap,
+warning added the same evening at his tap): the same trailing
+condition, PLUS the favorite's LIVE moneyline bucket at the moment of
+the check. ML LONGER than -200 (bettor-friendly: -195, -180, -125,
+any plus price) fires the bettor-friendly ALERT. ML -200 or shorter
+(-200, -250, -8500) fires a STRONG FAVORITE WARNING instead — once
+per game; the warning does NOT mark the game alerted, so a later
+cycle can still fire the bettor-friendly alert once the ML weakens
+past -200. ML of exactly -200 warns (it is -200 or shorter). ESPN's
+basketball scoreboards carry no usable live moneyline (live NCAAB
+games have no odds object at all), so the live ML is read from
+ScoresAndOdds' public board — fetched ONLY on runs where a
 basketball candidate exists. If the live ML cannot be read for a game,
-that game does not alert: never an invented price. One alert per game,
-fired on the first check where BOTH conditions hold.
+that game neither alerts nor warns: never an invented price. One
+alert per game, fired on the first check where BOTH conditions hold;
+one warning per game, fired on the first check where the favorite
+trails with a strong ML.
 
 Freshness / read-correctness hardening (2026-11-06, after the ETSU at
 NC State alert reached chat ~10 minutes after the scan read it, by
@@ -51,7 +54,7 @@ time, but the delivered text paired it with a newer score):
   the favorite is no longer trailing (or the game is over), the alert
   is suppressed for this cycle instead of firing dead.
 
-Output: one "TRIGGER: ..." line per new trigger, then a SUMMARY line.
+Output: one "TRIGGER: ..." line per new alert and one "WARNING: ..." line per new strong-favorite warning, then a SUMMARY line.
 No triggers -> prints "NO TRIGGER" (the cron stays silent on that).
 """
 import json
@@ -65,7 +68,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DATA_DIR
 STATE_PATH = DATA_DIR / "upset-watch-state.json"
 THRESHOLD = 10.5
-ML_GATE = -200  # basketball: alert ONLY when live ML is LONGER than -200 (ml > -200, bettor-friendly only; strong favorites never alert; settled 2026-11-19)
+ML_GATE = -200  # basketball: ML longer than -200 -> bettor-friendly ALERT; ML -200 or shorter -> STRONG FAVORITE WARNING (once per game, never blocks a later alert); settled 2026-11-19, warning added same evening
 ALERT_TTL_MIN = {"basketball": 3, "football": 5}  # delivery freshness window
 
 SPORTS = [
@@ -244,6 +247,29 @@ def stamp_alert(rec, kind, board_at, detail, fav_score, dog_score,
     return emit
 
 
+def stamp_warning(rec, board_at, detail, fav_score, dog_score,
+                  ml, ml_at):
+    """Record freshness stamps for an emitted strong-favorite warning.
+    Does NOT set rec['alerted'] — a warned game can still alert later
+    once its live ML weakens past -200."""
+    emit = now_et()
+    rec["warned"] = True
+    rec["warned_at"] = emit.isoformat(timespec="seconds")
+    rec["warn_board_read_at"] = board_at.isoformat(timespec="seconds")
+    rec["warn_expires_at"] = (
+        emit + timedelta(minutes=ALERT_TTL_MIN["basketball"])).isoformat(
+            timespec="seconds")
+    rec["warn_detail"] = detail
+    rec["warn_fav_score"] = fav_score
+    rec["warn_dog_score"] = dog_score
+    rec["warn_ml"] = ml
+    rec["ml_bucket"] = "strong"
+    rec["ml_read_at"] = ml_at.isoformat(timespec="seconds")
+    rec.pop("ml_hold_reason", None)
+    rec.pop("ml_hold_at", None)
+    return emit
+
+
 def parse_game(sport, event):
     comp = event["competitions"][0]
     status = comp["status"]["type"]["name"]
@@ -352,6 +378,7 @@ def main():
                 continue
             ml_at = now_et()
             passing = []
+            warning_passing = []
             for rec, g, fav_score, dog_score, board_at in cands:
                 entry = board.get(norm_team(rec["fav_team"]))
                 if entry is None:
@@ -361,13 +388,27 @@ def main():
                 rec["ml_bucket"] = ("strong" if ml <= ML_GATE
                                     else "bettor")
                 if ml <= ML_GATE:
-                    # Bettor-friendly-only gate (2026-11-19): a favorite
-                    # still laying -200 or shorter live does not alert.
-                    # Not marked alerted, not held — a later cycle can
-                    # still fire it once the ML weakens past -200.
-                    print(f"SKIP {sport} | {g['matchup']} | live ML "
-                          f"{ml:+d} is -200 or shorter (strong favorite, "
-                          f"bettor-friendly-only gate)", file=sys.stderr)
+                    # Strong-favorite WARNING (added 2026-11-19 evening):
+                    # a favorite still laying -200 or shorter live warns
+                    # once per game. The warning does NOT mark the game
+                    # alerted — a later cycle can still fire the
+                    # bettor-friendly alert once the ML weakens past -200.
+                    if rec.get("warned"):
+                        print(f"SKIP {sport} | {g['matchup']} | live ML "
+                              f"{ml:+d} is -200 or shorter (already warned)",
+                              file=sys.stderr)
+                        continue
+                    hold = ml_sanity_hold(
+                        ml, entry.get("spread"), dog_score - fav_score,
+                        seconds_left_in_game(g["detail"]))
+                    if hold:
+                        rec["ml_hold_reason"] = hold
+                        rec["ml_hold_at"] = now_et().isoformat(timespec="seconds")
+                        print(f"HOLD {sport} | {g['matchup']} | {hold}",
+                              file=sys.stderr)
+                        continue
+                    warning_passing.append(
+                        (rec, g, fav_score, dog_score, board_at, ml))
                     continue
                 hold = ml_sanity_hold(
                     ml, entry.get("spread"), dog_score - fav_score,
@@ -379,11 +420,11 @@ def main():
                           file=sys.stderr)
                     continue
                 passing.append((rec, g, fav_score, dog_score, board_at, ml))
-            if not passing:
+            if not passing and not warning_passing:
                 continue
             # Re-verification: one fresh ESPN fetch of this sport's board.
             # A favorite that has retaken the lead (or finished) since the
-            # triggering fetch does not alert this cycle.
+            # triggering fetch neither alerts nor warns this cycle.
             fresh = {}
             try:
                 data2 = fetch(ESPN_URLS[sport])
@@ -393,40 +434,51 @@ def main():
             except Exception as exc:
                 print(f"RECHECK FAIL {sport}: {exc} — proceeding on the "
                       f"triggering snapshot", file=sys.stderr)
-            for rec, g, fav_score, dog_score, board_at, ml in passing:
-                g2 = fresh.get(g["id"])
-                if g2 is not None:
-                    if g2["status"] != "STATUS_IN_PROGRESS":
-                        print(f"SUPPRESS {sport} | {g['matchup']} | no "
-                              f"longer in progress on re-check", file=sys.stderr)
-                        continue
-                    try:
-                        fs2 = int(g2["home_score"] if rec["fav"] == "home"
-                                  else g2["away_score"])
-                        ds2 = int(g2["away_score"] if rec["fav"] == "home"
-                                  else g2["home_score"])
-                    except (TypeError, ValueError):
-                        fs2 = ds2 = None
-                    if fs2 is not None:
-                        if fs2 >= ds2:
-                            print(f"SUPPRESS {sport} | {g['matchup']} | "
-                                  f"favorite no longer trailing on re-check "
-                                  f"({rec['dog_team']} {ds2}-{rec['fav_team']} "
-                                  f"{fs2})", file=sys.stderr)
+            for kind, cands in (("alert", passing),
+                                ("warning", warning_passing)):
+                for rec, g, fav_score, dog_score, board_at, ml in cands:
+                    g2 = fresh.get(g["id"])
+                    if g2 is not None:
+                        if g2["status"] != "STATUS_IN_PROGRESS":
+                            print(f"SUPPRESS {sport} | {g['matchup']} | no "
+                                  f"longer in progress on re-check", file=sys.stderr)
                             continue
-                        fav_score, dog_score = fs2, ds2
-                        g = g2
-                emit = stamp_alert(rec, "basketball", board_at, g["detail"],
-                                   fav_score, dog_score, ml=ml, ml_at=ml_at)
-                bucket = ("STRONG FAVORITE" if ml <= ML_GATE
-                          else "BETTOR-FRIENDLY")
-                triggers.append(
-                    f"TRIGGER: {sport} | {g['matchup']} | pregame favorite "
-                    f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
-                    f"{rec['dog_team']} {dog_score}-{rec['fav_team']} {fav_score} "
-                    f"| {g['detail']} | {bucket} — live ML {ml:+d} "
-                    f"(ScoresAndOdds, read {ml_at:%H:%M:%S} ET) "
-                    f"| as of {emit:%H:%M:%S} ET")
+                        try:
+                            fs2 = int(g2["home_score"] if rec["fav"] == "home"
+                                      else g2["away_score"])
+                            ds2 = int(g2["away_score"] if rec["fav"] == "home"
+                                      else g2["home_score"])
+                        except (TypeError, ValueError):
+                            fs2 = ds2 = None
+                        if fs2 is not None:
+                            if fs2 >= ds2:
+                                print(f"SUPPRESS {sport} | {g['matchup']} | "
+                                      f"favorite no longer trailing on re-check "
+                                      f"({rec['dog_team']} {ds2}-{rec['fav_team']} "
+                                      f"{fs2})", file=sys.stderr)
+                                continue
+                            fav_score, dog_score = fs2, ds2
+                            g = g2
+                    if kind == "warning":
+                        emit = stamp_warning(rec, board_at, g["detail"],
+                                             fav_score, dog_score, ml, ml_at)
+                        triggers.append(
+                            f"WARNING: {sport} | {g['matchup']} | pregame favorite "
+                            f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
+                            f"{rec['dog_team']} {dog_score}-{rec['fav_team']} {fav_score} "
+                            f"| {g['detail']} | STRONG FAVORITE — live ML {ml:+d} "
+                            f"(ScoresAndOdds, read {ml_at:%H:%M:%S} ET) "
+                            f"| as of {emit:%H:%M:%S} ET")
+                    else:
+                        emit = stamp_alert(rec, "basketball", board_at, g["detail"],
+                                           fav_score, dog_score, ml=ml, ml_at=ml_at)
+                        triggers.append(
+                            f"TRIGGER: {sport} | {g['matchup']} | pregame favorite "
+                            f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
+                            f"{rec['dog_team']} {dog_score}-{rec['fav_team']} {fav_score} "
+                            f"| {g['detail']} | BETTOR-FRIENDLY — live ML {ml:+d} "
+                            f"(ScoresAndOdds, read {ml_at:%H:%M:%S} ET) "
+                            f"| as of {emit:%H:%M:%S} ET")
     # Prune games from before yesterday (keeps the file small; finals stay
     # out of future checks either way).
     with open(STATE_PATH, "w") as fh:
@@ -435,7 +487,7 @@ def main():
         print(t)
     if not triggers:
         print("NO TRIGGER")
-    print(f"SUMMARY: {seen} games checked, {len(triggers)} new trigger(s)")
+    print(f"SUMMARY: {seen} games checked, {len(triggers)} new trigger(s)/warning(s)")
 
 
 if __name__ == "__main__":
