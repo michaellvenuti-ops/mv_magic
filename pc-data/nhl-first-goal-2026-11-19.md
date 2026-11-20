@@ -13,3 +13,13 @@
 - 2026-11-18: Boston Bruins @ Detroit Red Wings — first goal: Detroit Red Wings (EV, Lucas Raymond, 3:02 in); lead changes 1; final 4-1
 - 2026-11-18: Montreal Canadiens @ New Jersey Devils — first goal: New Jersey Devils (EV, Luke Evangelista, 9:40 in); lead changes 1; final 3-2
 - 2026-11-18: Colorado Avalanche @ Utah Mammoth — first goal: Utah Mammoth (EV, Liam O'Brien, 34:38 in); lead changes 0; final 1-4
+## 2026-11-19T22:57:23-05:00 -- NHL FIRST GOAL (PC): 9 new final(s) tallied; season 347 games through 2026-11-19
+- 2026-11-19: Los Angeles Kings @ Toronto Maple Leafs — first goal: Toronto Maple Leafs (PP, Auston Matthews, 6:06 in); lead changes 0; final 4-3 (SO)
+- 2026-11-19: Philadelphia Flyers @ Ottawa Senators — first goal: Ottawa Senators (EV, Claude Giroux, 18:16 in); lead changes 1; final 6-5
+- 2026-11-19: St. Louis Blues @ Pittsburgh Penguins — first goal: Pittsburgh Penguins (EV, Rickard Rakell, 12:22 in); lead changes 1; final 5-2
+- 2026-11-19: Buffalo Sabres @ Washington Capitals — first goal: Buffalo Sabres (EV, Jack Quinn, 14:35 in); lead changes 0; final 6-3
+- 2026-11-19: Montreal Canadiens @ Carolina Hurricanes — first goal: Carolina Hurricanes (EV, Nikolaj Ehlers, 46:19 in); lead changes 1; final 2-1
+- 2026-11-19: New York Islanders @ Winnipeg Jets — first goal: New York Islanders (EV, Anthony Duclair, 17:25 in); lead changes 1; final 3-4
+- 2026-11-19: Edmonton Oilers @ Tampa Bay Lightning — first goal: Tampa Bay Lightning (PP, John Carlson, 26:31 in); lead changes 0; final 1-3
+- 2026-11-19: Columbus Blue Jackets @ Chicago Blackhawks — first goal: Columbus Blue Jackets (EV, Zach Werenski, 18:01 in); lead changes 0; final 4-2
+- 2026-11-19: Minnesota Wild @ Calgary Flames — first goal: Minnesota Wild (EV, Joel Eriksson Ek, 19:35 in); lead changes 0; final 4-1
