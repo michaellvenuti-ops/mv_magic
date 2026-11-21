@@ -1,5 +1,5 @@
 {
- "through": "2026-11-19",
+ "through": "2026-11-20",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -10586,18 +10586,32 @@
    "winner": "Buffalo Bulls"
   },
   {
-   "date": "2026-11-19",
    "away": "Rice Owls",
-   "home": "Temple Owls",
+   "date": "2026-11-19",
+   "final": "31-27",
    "first": "Temple Owls",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 277,
-   "winner": "Rice Owls",
-   "seq": "0-7>7-7>7-10>14-10>14-17>14-24>17-24>17-27>24-27>31-27",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Temple Owls",
    "lead_changes": 3,
+   "seq": "0-7>7-7>7-10>14-10>14-17>14-24>17-24>17-27>24-27>31-27",
    "ties": 1,
-   "final": "31-27"
+   "winner": "Rice Owls"
+  },
+  {
+   "date": "2026-11-20",
+   "away": "Iowa State Cyclones",
+   "home": "UCF Knights",
+   "first": "Iowa State Cyclones",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 389,
+   "winner": "UCF Knights",
+   "seq": "3-0>3-3>3-10>3-17>3-24>10-24>10-31>17-31>17-38>17-41>17-48",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "17-48"
   }
  ],
  "tally": {
@@ -10938,7 +10952,7 @@
    "won_by_one_when_first_pct": null
   },
   "UCF Knights": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 5,
    "kinds": {
     "FG": 0,
@@ -10946,11 +10960,11 @@
     "Safety": 0
    },
    "won_when_first": 3,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 60.0,
-   "win_pct_when_not_first": 40.0,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Colorado Buffaloes": {
@@ -12970,18 +12984,18 @@
    "won_by_one_when_first_pct": null
   },
   "Iowa State Cyclones": {
-   "gp": 10,
-   "scored_first": 5,
+   "gp": 11,
+   "scored_first": 6,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 4,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 60.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -14379,20 +14393,20 @@
   }
  },
  "league": {
-  "games": 757,
+  "games": 758,
   "home_scored_first": 455,
   "first_team_won": 535,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
-   "FG": 210,
+   "FG": 211,
    "TD": 545,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
   "median_first_score_sec": 339,
-  "home_scored_first_pct": 60.1,
-  "first_team_win_pct": 70.7
+  "home_scored_first_pct": 60.0,
+  "first_team_win_pct": 70.6
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -14501,9 +14515,9 @@
    "avg_per_game": 0.0
   },
   "UCF Knights": {
-   "games": 10,
-   "lead_changes": 16,
-   "avg_per_game": 1.6
+   "games": 11,
+   "lead_changes": 17,
+   "avg_per_game": 1.55
   },
   "Colorado Buffaloes": {
    "games": 10,
@@ -15136,9 +15150,9 @@
    "avg_per_game": 0.0
   },
   "Iowa State Cyclones": {
-   "games": 10,
-   "lead_changes": 12,
-   "avg_per_game": 1.2
+   "games": 11,
+   "lead_changes": 13,
+   "avg_per_game": 1.18
   },
   "Tarleton State Texans": {
    "games": 1,
