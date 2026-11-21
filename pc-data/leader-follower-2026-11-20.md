@@ -37,3 +37,10 @@
 ## 2026-11-20T20:13:17-05:00 — no-follow: Fanatics Iowa @ Illinois | 2026-11-20 spread (only 1 followed)
 ## 2026-11-20T20:13:17-05:00 — no-follow: Kalshi Hawai'i @ Nevada | 2026-11-20 spread (only 0 followed)
 ## 2026-11-20T20:13:18-05:00 — 83 games, 0 leads credited, 9 started games skipped
+## 2026-11-20T22:57:46-05:00 — no-follow: bet365 Syracuse @ Boston College | 2026-11-20 spread (only 0 followed)
+## 2026-11-20T22:57:46-05:00 — pack move, never credited: BYU @ Kansas | 2026-11-20 spread (Fanatics, Kalshi)
+## 2026-11-20T22:57:46-05:00 — no-follow: Kalshi Wofford @ Ole Miss | 2026-11-20 spread (only 1 followed)
+## 2026-11-20T22:57:46-05:00 — no-follow: Kalshi Texas Tech @ Baylor | 2026-11-20 spread (only 0 followed)
+## 2026-11-20T22:57:46-05:00 — pack move, never credited: Utah @ TCU | 2026-11-20 spread (BetMGM, Caesars, DraftKings)
+## 2026-11-20T22:57:46-05:00 — no-follow: Caesars Utah State @ Oregon State | 2026-11-20 spread (only 1 followed)
+## 2026-11-20T22:57:46-05:00 — 83 games, 0 leads credited, 10 started games skipped
