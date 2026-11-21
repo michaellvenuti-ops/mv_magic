@@ -10601,17 +10601,31 @@
   },
   {
    "date": "2026-11-20",
-   "away": "Iowa State Cyclones",
-   "home": "UCF Knights",
-   "first": "Iowa State Cyclones",
-   "first_side": "away",
+   "away": "Bowling Green Falcons",
+   "home": "Toledo Rockets",
+   "first": "Toledo Rockets",
+   "first_side": "home",
    "first_kind": "FG",
+   "first_elapsed_sec": 130,
+   "winner": "Toledo Rockets",
+   "seq": "0-3>0-6>0-9>0-16>0-19",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "0-19"
+  },
+  {
+   "away": "Iowa State Cyclones",
+   "date": "2026-11-20",
+   "final": "17-48",
+   "first": "Iowa State Cyclones",
    "first_elapsed_sec": 389,
-   "winner": "UCF Knights",
-   "seq": "3-0>3-3>3-10>3-17>3-24>10-24>10-31>17-31>17-38>17-41>17-48",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "UCF Knights",
    "lead_changes": 1,
+   "seq": "3-0>3-3>3-10>3-17>3-24>10-24>10-31>17-31>17-38>17-41>17-48",
    "ties": 1,
-   "final": "17-48"
+   "winner": "UCF Knights"
   }
  ],
  "tally": {
@@ -11352,17 +11366,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Toledo Rockets": {
-   "gp": 10,
-   "scored_first": 4,
+   "gp": 11,
+   "scored_first": 5,
    "kinds": {
-    "FG": 0,
+    "FG": 1,
     "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 4,
+   "won_when_first": 5,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 40.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
@@ -13016,7 +13030,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Bowling Green Falcons": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 3,
    "kinds": {
     "FG": 1,
@@ -13026,9 +13040,9 @@
    "won_when_first": 1,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 30.0,
+   "scored_first_pct": 27.3,
    "win_pct_when_first": 33.3,
-   "win_pct_when_not_first": 28.6,
+   "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Tennessee State Tigers": {
@@ -14393,19 +14407,19 @@
   }
  },
  "league": {
-  "games": 758,
-  "home_scored_first": 455,
-  "first_team_won": 535,
+  "games": 759,
+  "home_scored_first": 456,
+  "first_team_won": 536,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.6,
   "kinds": {
-   "FG": 211,
+   "FG": 212,
    "TD": 545,
    "Safety": 2
   },
   "avg_lead_changes": 1.0,
   "median_first_score_sec": 339,
-  "home_scored_first_pct": 60.0,
+  "home_scored_first_pct": 60.1,
   "first_team_win_pct": 70.6
  },
  "lead_change_team_avgs": {
@@ -14640,9 +14654,9 @@
    "avg_per_game": 0.9
   },
   "Toledo Rockets": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 12,
-   "avg_per_game": 1.2
+   "avg_per_game": 1.09
   },
   "Michigan State Spartans": {
    "games": 10,
@@ -15160,9 +15174,9 @@
    "avg_per_game": 0.0
   },
   "Bowling Green Falcons": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 14,
-   "avg_per_game": 1.4
+   "avg_per_game": 1.27
   },
   "Tennessee State Tigers": {
    "games": 1,
