@@ -38,3 +38,33 @@
 - 2026-11-20: Worcester State Lancers @ Bryant Bulldogs — first: Bryant Bulldogs (2PT, 0:28 in); lead changes 8; final 61-75
 - 2026-11-20: WVU Tech Golden Bears @ Akron Zips — first: Akron Zips (2PT, 0:18 in); lead changes 0; final 71-116
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T21:57:07-05:00 -- NCAAB FIRST SCORE (PC): 28 new final(s) tallied; season 920 games through 2026-11-20
+- 2026-11-20: Niagara Purple Eagles @ Delaware State Hornets — first: Delaware State Hornets (3PT, 0:29 in); lead changes 13; final 103-101
+- 2026-11-20: West Coast Baptist Eagles @ Pepperdine Waves — first: Pepperdine Waves (2PT, 0:29 in); lead changes 0; final 54-140
+- 2026-11-20: Neumann Knights @ Lehigh Mountain Hawks — first: Lehigh Mountain Hawks (2PT, 0:40 in); lead changes 0; final 38-79
+- 2026-11-20: Le Moyne Dolphins @ Missouri Tigers — first: Missouri Tigers (2PT, 0:39 in); lead changes 6; final 64-91
+- 2026-11-20: Loyola Maryland Greyhounds @ Virginia Cavaliers — first: Virginia Cavaliers (3PT, 0:17 in); lead changes 0; final 61-103
+- 2026-11-20: Coastal Carolina Chanticleers @ Tennessee Volunteers — first: Coastal Carolina Chanticleers (3PT, 0:48 in); lead changes 3; final 51-78
+- 2026-11-20: Mississippi Valley State Delta Devils @ Arkansas Razorbacks — first: Arkansas Razorbacks (3PT, 0:13 in); lead changes 2; final 48-92
+- 2026-11-20: Delaware Blue Hens @ Cal State Northridge Matadors — first: Delaware Blue Hens (2PT, 2:04 in); lead changes 16; final 97-92
+- 2026-11-20: North Texas Mean Green @ App State Mountaineers — first: North Texas Mean Green (FT, 0:28 in); lead changes 1; final 75-81
+- 2026-11-20: Western Kentucky Hilltoppers @ Richmond Spiders — first: Western Kentucky Hilltoppers (3PT, 0:18 in); lead changes 2; final 82-68
+- 2026-11-20: Georgia State Panthers @ Jacksonville State Gamecocks — first: Jacksonville State Gamecocks (2PT, 0:22 in); lead changes 12; final 77-82
+- 2026-11-20: Oakland Golden Grizzlies @ Purdue Boilermakers — first: Purdue Boilermakers (3PT, 1:00 in); lead changes 0; final 49-95
+- 2026-11-20: South Carolina State Bulldogs @ The Citadel Bulldogs — first: South Carolina State Bulldogs (2PT, 0:35 in); lead changes 11; final 63-79
+- 2026-11-20: Monmouth Hawks @ Princeton Tigers — first: Princeton Tigers (3PT, 1:24 in); lead changes 6; final 64-75
+- 2026-11-20: Wisconsin Badgers @ Murray State Racers — first: Wisconsin Badgers (2PT, 0:46 in); lead changes 5; final 53-70
+- 2026-11-20: Bellarmine Knights @ Eastern Kentucky Colonels — first: Bellarmine Knights (FT, 0:14 in); lead changes 18; final 79-76
+- 2026-11-20: Kansas City Roos @ Iona Gaels — first: Iona Gaels (3PT, 0:26 in); lead changes 8; final 61-62
+- 2026-11-20: Western Michigan Broncos @ Mount St. Mary's Mountaineers — first: Western Michigan Broncos (FT, 0:14 in); lead changes 4; final 73-67
+- 2026-11-20: SE Louisiana Lions @ Kennesaw State Owls — first: Kennesaw State Owls (2PT, 0:23 in); lead changes 2; final 59-96
+- 2026-11-20: Harvard Crimson @ Holy Cross Crusaders — first: Holy Cross Crusaders (3PT, 0:48 in); lead changes 1; final 77-65
+- 2026-11-20: Saint Joseph's Hawks @ Drexel Dragons — first: Saint Joseph's Hawks (2PT, 0:17 in); lead changes 9; final 64-75
+- 2026-11-20: Wagner Seahawks @ Maryland Terrapins — first: Maryland Terrapins (3PT, 0:26 in); lead changes 0; final 45-62
+- 2026-11-20: Central Michigan Chippewas @ Pittsburgh Panthers — first: Central Michigan Chippewas (3PT, 1:25 in); lead changes 5; final 82-104
+- 2026-11-20: Paine Lions @ West Georgia Wolves — first: West Georgia Wolves (3PT, 0:45 in); lead changes 0; final 56-105
+- 2026-11-20: Tulsa Golden Hurricane @ Mississippi State Bulldogs — first: Tulsa Golden Hurricane (2PT, 0:35 in); lead changes 7; final 61-72
+- 2026-11-20: UT Arlington Mavericks @ Northwestern State Demons — first: UT Arlington Mavericks (3PT, 0:18 in); lead changes 6; final 69-62
+- 2026-11-20: Iowa Hawkeyes @ Xavier Musketeers — first: Xavier Musketeers (3PT, 0:54 in); lead changes 7; final 83-65
+- 2026-11-20: South Alabama Jaguars @ SMU Mustangs — first: SMU Mustangs (3PT, 0:50 in); lead changes 2; final 55-101
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
