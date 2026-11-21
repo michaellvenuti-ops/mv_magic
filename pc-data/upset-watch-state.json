@@ -11843,7 +11843,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Jax State",
    "dog_team": "Missouri St"
   },
@@ -11853,7 +11853,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 6.0,
+   "spread": 6.5,
    "fav_team": "MTSU",
    "dog_team": "Sam Houston"
   },
@@ -11873,7 +11873,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "South Florida",
    "dog_team": "FAU"
   },
@@ -11903,7 +11903,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 3.0,
+   "spread": 2.5,
    "fav_team": "Delaware",
    "dog_team": "New Mexico St"
   },
@@ -11983,7 +11983,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 26.5,
+   "spread": 25.5,
    "fav_team": "Penn State",
    "dog_team": "Rutgers"
   },
@@ -11993,7 +11993,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 13.5,
+   "spread": 14.0,
    "fav_team": "UConn",
    "dog_team": "Old Dominion"
   },
@@ -12213,7 +12213,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 7.5,
+   "spread": 7.0,
    "fav_team": "Oregon St",
    "dog_team": "Utah State"
   },
@@ -13758,7 +13758,7 @@
    "date": "2026-11-23",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 3.0,
    "fav_team": "49ers",
    "dog_team": "Vikings"
   },
@@ -16096,7 +16096,8 @@
    "sport": "NCAAB",
    "matchup": "Siena at Bucknell",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401922284": {
    "sport": "NCAAB",
@@ -16134,7 +16135,7 @@
    "spread": 25.5,
    "fav_team": "LSU",
    "dog_team": "Queens",
-   "live_ml": -2800,
+   "live_ml": -4000,
    "ml_bucket": "strong",
    "warned": true,
    "warned_at": "2026-11-21T13:05:00",
@@ -16182,7 +16183,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.5,
    "fav_team": "Mercyhurst",
    "dog_team": "W Illinois"
   },
@@ -16204,7 +16205,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Stony Brook",
    "dog_team": "Saint Peter's"
   },
@@ -16250,7 +16251,7 @@
    "date": "2026-11-21",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "New Mexico",
    "dog_team": "Wichita St"
   },
@@ -16646,13 +16647,13 @@
    "sport": "NBA",
    "matchup": "Bucks at 76ers",
    "date": "2026-11-21",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "76ers",
    "dog_team": "Bucks",
-   "live_ml": -450,
-   "ml_bucket": "strong",
+   "live_ml": -190,
+   "ml_bucket": "bettor",
    "warned": true,
    "warned_at": "2026-11-21T13:16:44",
    "warn_board_read_at": "2026-11-21T13:16:44",
@@ -16661,7 +16662,14 @@
    "warn_fav_score": 8,
    "warn_dog_score": 10,
    "warn_ml": -600,
-   "ml_read_at": "2026-11-21T13:16:44"
+   "ml_read_at": "2026-11-21T14:00:04",
+   "alerted_at": "2026-11-21T14:00:04",
+   "board_read_at": "2026-11-21T14:00:03",
+   "alert_expires_at": "2026-11-21T14:03:04",
+   "alert_detail": "1:54 - 2nd Quarter",
+   "alert_fav_score": 55,
+   "alert_dog_score": 59,
+   "alert_ml": -190
   },
   "401910024": {
    "sport": "NBA",
