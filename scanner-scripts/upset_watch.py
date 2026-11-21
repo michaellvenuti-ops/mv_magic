@@ -8,10 +8,16 @@ games against that frozen pregame line. A game whose pregame spread was
 never captured (odds missing, or the script started mid-game) is NEVER
 judged: no invented lines, ever.
 
-Football trigger: pregame favorite laying 10.5+ points is strictly
-TRAILING on the live scoreboard, and this game has not alerted before.
-One alert per game (a favorite that goes back ahead and trails again
-does not re-fire).
+Football trigger (ML-gated since 2026-11-21 at Michael's tap — the
+same -200 gate basketball got on 2026-11-19): pregame favorite laying
+10.5+ points is strictly TRAILING on the live scoreboard, and this
+game has not alerted before. The live moneyline bucket decides the
+outcome: ML longer than -200 fires the bettor-friendly ALERT; ML -200
+or shorter fires a STRONG FAVORITE WARNING once per game (the warning
+does NOT mark the game alerted, so a later cycle can still fire the
+bettor-friendly alert once the ML weakens past -200); a live ML that
+cannot be read means neither. One alert per game, fired on the first
+check where BOTH conditions hold.
 
 Basketball trigger (NBA + NCAAB; changed 2026-11-19 at Michael's tap,
 warning added the same evening at his tap): the same trailing
@@ -42,7 +48,7 @@ time, but the delivered text paired it with a newer score):
   read time, and an alert_expires_at (+3 min basketball, +5 min
   football) so the delivery layer can show the data's age and drop
   alerts that arrive stale.
-- Sanity hold: before a basketball alert fires, the read ML is cross-
+- Sanity hold: before an alert fires, the read ML is cross-
   checked against the SAME ScoresAndOdds board's live spread for the
   favorite and against the score/clock. A wildly inconsistent read
   (e.g. ML says near pick'em while the same board prices the favorite
@@ -68,7 +74,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DATA_DIR
 STATE_PATH = DATA_DIR / "upset-watch-state.json"
 THRESHOLD = 10.5
-ML_GATE = -200  # basketball: ML longer than -200 -> bettor-friendly ALERT; ML -200 or shorter -> STRONG FAVORITE WARNING (once per game, never blocks a later alert); settled 2026-11-19, warning added same evening
+ML_GATE = -200  # ALL sports: ML longer than -200 -> bettor-friendly ALERT; ML -200 or shorter -> STRONG FAVORITE WARNING (once per game, never blocks a later alert); basketball settled 2026-11-19 (warning added same evening), football added 2026-11-21 at Michael's tap
 ALERT_TTL_MIN = {"basketball": 3, "football": 5}  # delivery freshness window
 
 SPORTS = [
@@ -89,6 +95,8 @@ BASKETBALL = {"NBA", "NCAAB"}
 SAO_URLS = {
     "NBA": "https://www.scoresandodds.com/nba",
     "NCAAB": "https://www.scoresandodds.com/ncaab",
+    "NFL": "https://www.scoresandodds.com/nfl",
+    "CFB": "https://www.scoresandodds.com/ncaaf",
 }
 ESPN_URLS = {sport: url for sport, url in SPORTS}
 
@@ -180,9 +188,10 @@ def sao_live_moneylines(html):
     return {team: v["ml"] for team, v in sao_live_board(html).items()}
 
 
-def seconds_left_in_game(detail):
-    """Seconds remaining in a basketball game from an ESPN status detail
-    like '11:34 - 2nd Half' or '5:23 - 4th Quarter'. None if unparseable."""
+def seconds_left_in_game(detail, quarter_minutes=12):
+    """Seconds remaining in a game from an ESPN status detail like
+    '11:34 - 2nd Half' or '5:23 - 4th Quarter'. quarter_minutes is 12
+    for basketball, 15 for football. None if unparseable."""
     m = re.match(r"\s*(\d+):(\d+)\s*-\s*(.+?)\s*$", detail or "")
     if not m:
         return None
@@ -194,7 +203,7 @@ def seconds_left_in_game(detail):
         return clock
     qm = re.search(r"(\d)(?:st|nd|rd|th) quarter", label)
     if qm:
-        return clock + (4 - int(qm.group(1))) * 12 * 60
+        return clock + (4 - int(qm.group(1))) * quarter_minutes * 60
     if "overtime" in label or label == "ot":
         return clock
     return None
@@ -248,7 +257,7 @@ def stamp_alert(rec, kind, board_at, detail, fav_score, dog_score,
 
 
 def stamp_warning(rec, board_at, detail, fav_score, dog_score,
-                  ml, ml_at):
+                  ml, ml_at, kind="basketball"):
     """Record freshness stamps for an emitted strong-favorite warning.
     Does NOT set rec['alerted'] — a warned game can still alert later
     once its live ML weakens past -200."""
@@ -257,7 +266,7 @@ def stamp_warning(rec, board_at, detail, fav_score, dog_score,
     rec["warned_at"] = emit.isoformat(timespec="seconds")
     rec["warn_board_read_at"] = board_at.isoformat(timespec="seconds")
     rec["warn_expires_at"] = (
-        emit + timedelta(minutes=ALERT_TTL_MIN["basketball"])).isoformat(
+        emit + timedelta(minutes=ALERT_TTL_MIN[kind])).isoformat(
             timespec="seconds")
     rec["warn_detail"] = detail
     rec["warn_fav_score"] = fav_score
@@ -316,7 +325,7 @@ def main():
             state = {"games": {}}
     games = state.setdefault("games", {})
     triggers = []
-    bb_candidates = []  # basketball: trailing 10.5+ favs awaiting the ML bucket label
+    candidates = []  # trailing 10.5+ favs awaiting the ML bucket label (all sports since 2026-11-21)
     seen = 0
     for sport, url in SPORTS:
         try:
@@ -348,26 +357,18 @@ def main():
                     except (TypeError, ValueError):
                         continue
                     if fav_score < dog_score:
-                        if sport in BASKETBALL:
-                            bb_candidates.append(
-                                (sport, rec, g, fav_score, dog_score, board_at))
-                        else:
-                            emit = stamp_alert(rec, "football", board_at,
-                                               g["detail"], fav_score, dog_score)
-                            triggers.append(
-                                f"TRIGGER: {sport} | {g['matchup']} | pregame favorite "
-                                f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
-                                f"{rec['dog_team']} {dog_score}-{rec['fav_team']} {fav_score} "
-                                f"| {g['detail']} | as of {emit:%H:%M:%S} ET")
+                        candidates.append(
+                            (sport, rec, g, fav_score, dog_score, board_at))
             elif g["status"] in ("STATUS_FINAL", "STATUS_CANCELED"):
                 rec["final"] = True
-    # Basketball ML gate: one ScoresAndOdds fetch per sport that has a
-    # candidate this run; a game whose live ML is unreadable never alerts.
-    # The board fetch happens in THIS run, seconds after the ESPN fetch
-    # that produced the candidate — the ML is never carried across runs.
-    if bb_candidates:
+    # ML gate (all sports since 2026-11-21; basketball since 2026-11-19):
+    # one ScoresAndOdds fetch per sport that has a candidate this run;
+    # a game whose live ML is unreadable never alerts or warns. The
+    # board fetch happens in THIS run, seconds after the ESPN fetch that
+    # produced the candidate — the ML is never carried across runs.
+    if candidates:
         by_sport = {}
-        for sport, rec, g, fav_score, dog_score, board_at in bb_candidates:
+        for sport, rec, g, fav_score, dog_score, board_at in candidates:
             by_sport.setdefault(sport, []).append(
                 (rec, g, fav_score, dog_score, board_at))
         for sport, cands in by_sport.items():
@@ -400,7 +401,9 @@ def main():
                         continue
                     hold = ml_sanity_hold(
                         ml, entry.get("spread"), dog_score - fav_score,
-                        seconds_left_in_game(g["detail"]))
+                        seconds_left_in_game(
+                            g["detail"],
+                            quarter_minutes=15 if sport not in BASKETBALL else 12))
                     if hold:
                         rec["ml_hold_reason"] = hold
                         rec["ml_hold_at"] = now_et().isoformat(timespec="seconds")
@@ -412,7 +415,9 @@ def main():
                     continue
                 hold = ml_sanity_hold(
                     ml, entry.get("spread"), dog_score - fav_score,
-                    seconds_left_in_game(g["detail"]))
+                    seconds_left_in_game(
+                        g["detail"],
+                        quarter_minutes=15 if sport not in BASKETBALL else 12))
                 if hold:
                     rec["ml_hold_reason"] = hold
                     rec["ml_hold_at"] = now_et().isoformat(timespec="seconds")
@@ -461,7 +466,8 @@ def main():
                             g = g2
                     if kind == "warning":
                         emit = stamp_warning(rec, board_at, g["detail"],
-                                             fav_score, dog_score, ml, ml_at)
+                                             fav_score, dog_score, ml, ml_at,
+                                             kind="football" if sport not in BASKETBALL else "basketball")
                         triggers.append(
                             f"WARNING: {sport} | {g['matchup']} | pregame favorite "
                             f"{rec['fav_team']} -{rec['spread']:g} is LOSING "
@@ -470,7 +476,8 @@ def main():
                             f"(ScoresAndOdds, read {ml_at:%H:%M:%S} ET) "
                             f"| as of {emit:%H:%M:%S} ET")
                     else:
-                        emit = stamp_alert(rec, "basketball", board_at, g["detail"],
+                        emit = stamp_alert(rec, "football" if sport not in BASKETBALL else "basketball",
+                                           board_at, g["detail"],
                                            fav_score, dog_score, ml=ml, ml_at=ml_at)
                         triggers.append(
                             f"TRIGGER: {sport} | {g['matchup']} | pregame favorite "
