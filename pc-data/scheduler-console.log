@@ -10176,3 +10176,28 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-20 18:07:31 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-20; skipping.
 [2026-11-20 18:07:38 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
 [2026-11-20 18:07:39 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 18:37:42 ET] sync_to_github.py: OK in 1803s —   ok: team-total-middles-board-pc.html
+[2026-11-20 18:40:41 ET] notify.py: OK in 169s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-20 18:58:26 ET] odds_recorder.py: OK in 1034s — SUMMARY: recorded 229 events (196 with odds), db total 307434 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-20 19:08:36 ET] dh_arbitrage.py: FAILED (exit 1) in 608s —   - <launched> pid=19892
+[2026-11-20 19:13:39 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 300s —   - <launched> pid=8560
+[2026-11-20 19:13:56 ET] wide_builds.py: OK in 15s — wide_builds: 4 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 19:30:32 ET] dh_low_holds.py: FAILED (exit 1) in 994s —   - <launched> pid=10680
+[2026-11-20 19:37:53 ET] dh_game_middles.py: FAILED (exit 1) in 436s —   - <launched> pid=16644
+[2026-11-20 19:43:07 ET] dh_key_number_middles.py: FAILED (exit 1) in 306s —   - <launched> pid=17908
+[2026-11-20 19:50:22 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 434s —   - <launched> pid=5972
+[2026-11-20 20:04:08 ET] hung_number.py: FAILED (exit 2) in 823s — state. Re-run with --dump and send the dump file.
+[2026-11-20 20:12:45 ET] rlm.py: OK in 492s
+[2026-11-20 20:13:18 ET] leader_follower.py: OK in 16s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 20:13:23 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 20:23:52 ET] dh_prop_middles.py: FAILED (exit 2) in 630s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-20 20:26:45 ET] dh_sog_middles.py: FAILED (exit 1) in 172s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-20 20:26:54 ET] dh_team_total_middles.py: OK in 9s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Carolina 23.5/24.5 sits at -3.5c vs +EV.
+[2026-11-20 20:26:55 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 20:26:59 ET] nba_first_score.py: OK in 3s — nba-first-score: 0 new, 1 unverified, 215 total tallied.
+[2026-11-20 20:27:00 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 20:27:06 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 8 new, 1 unverified, 892 total tallied.
+[2026-11-20 20:27:08 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 757 total tallied.
+[2026-11-20 20:27:09 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 20:27:13 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-20 20:27:13 ET] syncing to GitHub (regular 10-minute sync)
