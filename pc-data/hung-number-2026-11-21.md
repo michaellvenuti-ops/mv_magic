@@ -1,0 +1,22 @@
+# Hung numbers — 2026-11-21 (scan 2026-11-21 11:57)
+
+- Memphis vs Navy | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Wofford vs Ole Miss | Fanatics | spread | value: dog | book 59.5 vs median 49.0 | div 10.5 
+- Tennessee Tech vs Mississippi State | Fanatics | spread | value: dog | book 30.5 vs median 29.5 | div 1.0 
+- Chattanooga vs Alabama | FanDuel | spread | value: favorite | book 46.5 vs median 48.5 | div 2.0 
+- Rutgers vs Penn State | FanDuel | spread | value: favorite | book 25.5 vs median 26.5 | div 1.0 
+- Northern Illinois vs North Dakota State | bet365 | spread | value: dog | book 26.5 vs median 25.5 | div 1.0 
+- Arkansas State vs Louisiana Tech | FanDuel | spread | value: dog | book 15.5 vs median 14.5 | div 1.0 
+- Pittsburgh vs Louisville | Fanatics | spread | value: dog | book 13.5 vs median 12.5 | div 1.0 
+- Colorado State vs Fresno State | FanDuel | spread | value: favorite | book 19.5 vs median 20.5 | div 1.0 
+- UTSA vs UAB | Fanatics | spread | value: favorite | book -6.5 vs median -4.5 | div 2.0 
+- Utah vs TCU | Fanatics | spread | value: dog | book -7.5 vs median -8.5 | div 1.0 
+- San Diego State vs Boise State | Fanatics | spread | value: favorite | book 17.5 vs median 20.5 | div 3.0 
+- Hawai'i vs Nevada | Fanatics | spread | value: favorite | book 5.5 vs median 6.75 | div 1.25 
+- Utah State vs Oregon State | Fanatics | spread | value: dog | book 8.5 vs median 7.5 | div 1.0 
+- Utah State vs Oregon State | Fanatics | total | value: Under | book 50.0 vs median 51.5 | div 1.5 
+- Eastern Michigan vs Western Michigan | DraftKings | spread | value: dog | book 18.5 vs median 17.5 | div 1.0 
+- Iowa State vs UCF | BetMGM | moneyline UCF | value: UCF | book 98.0 vs median 49.5 | div 48.5 
+- Oregon vs Michigan State | Caesars | spread | value: favorite | book -19.5 vs median -18.5 | div 1.0 
+- UTEP vs Air Force | DraftKings | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
+- UTEP vs Air Force | Fanatics | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
