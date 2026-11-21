@@ -1,14 +1,28 @@
-# Hung numbers — 2026-11-20 (scan 2026-11-20 07:10)
+# Hung numbers — 2026-11-20 (scan 2026-11-20 22:53)
 
-- Cardinals vs Chiefs | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
-- Steelers vs Eagles | DraftKings | spread | value: dog | book -3.5 vs median -4.5 | div 1.0 
+- Buccaneers vs Lions | DraftKings | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Cardinals vs Chiefs | Fanatics | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
+- Steelers vs Eagles | FanDuel | spread | value: favorite | book -4.5 vs median -3.5 | div 1.0 
 - Raiders vs Broncos | FanDuel | spread | value: favorite | book 9.5 vs median 10.5 | div 1.0 
-- Clemson vs Duke | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
-- Vanderbilt vs Florida | FanDuel | spread | value: favorite | book 12.5 vs median 13.5 | div 1.0 
+- Clemson vs Duke | DraftKings | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
+- Clemson vs Duke | BetMGM | total | value: Over | book 32.5 vs median 30.0 | div 2.5 
+- Clemson vs Duke | DraftKings | moneyline Clemson | value: Clemson | book 96.4 vs median 87.5 | div 8.9 
+- Clemson vs Duke | Caesars | moneyline Clemson | value: Clemson | book 81.5 vs median 87.5 | div 6.0 
+- Clemson vs Duke | DraftKings | moneyline Duke | value: Duke | book 8.1 vs median 17.5 | div 9.5 
+- Clemson vs Duke | Caesars | moneyline Duke | value: Duke | book 24.7 vs median 17.5 | div 7.2 
+- UTEP vs Air Force | Caesars | spread | value: favorite | book 48.5 vs median 49.5 | div 1.0 
+- UTEP vs Air Force | FanDuel | spread | value: favorite | book 48.5 vs median 49.5 | div 1.0 
+- UTEP vs Air Force | BetMGM | total | value: Over | book 58.5 vs median 55.5 | div 3.0 
+- UTEP vs Air Force | DraftKings | total | value: Over | book 57.5 vs median 55.5 | div 2.0 
+- Oregon vs Michigan State | BetMGM | total | value: Under | book 40.5 vs median 45.5 | div 5.0 
+- New Mexico vs Wyoming | DraftKings | total | value: Under | book 42.5 vs median 44.0 | div 1.5 
 - Wofford vs Ole Miss | FanDuel | spread | value: favorite | book 48.5 vs median 49.5 | div 1.0 
-- Tennessee Tech vs Mississippi State | FanDuel | spread | value: favorite | book 34.5 vs median 35.5 | div 1.0 
-- Chattanooga vs Alabama | DraftKings | spread | value: dog | book 49.5 vs median 48.5 | div 1.0 
-- Samford vs Auburn | Fanatics | spread | value: dog | book 59.5 vs median 48.5 | div 11.0 
-- Utah vs TCU | FanDuel | spread | value: dog | book -6.5 vs median -7.5 | div 1.0 
-- Utah State vs Oregon State | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
+- Wofford vs Ole Miss | Fanatics | spread | value: dog | book 59.5 vs median 49.5 | div 10.0 
+- Tennessee Tech vs Mississippi State | bet365 | spread | value: favorite | book 31.5 vs median 33.5 | div 2.0 
+- Tennessee Tech vs Mississippi State | FanDuel | spread | value: favorite | book 31.5 vs median 33.5 | div 2.0 
+- Chattanooga vs Alabama | Fanatics | spread | value: dog | book 58.5 vs median 48.5 | div 10.0 
+- Iowa vs Illinois | Fanatics | spread | value: favorite | book -9.5 vs median -8.5 | div 1.0 
+- Colorado State vs Fresno State | FanDuel | spread | value: favorite | book 19.5 vs median 20.5 | div 1.0 
+- Utah State vs Oregon State | Caesars | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
 - Eastern Michigan vs Western Michigan | DraftKings | spread | value: dog | book 18.5 vs median 17.5 | div 1.0 
+- Iowa State vs UCF | BetMGM | moneyline UCF | value: UCF | book 98.0 vs median 49.5 | div 48.5 
