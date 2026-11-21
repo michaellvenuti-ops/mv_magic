@@ -1,0 +1,268 @@
+--- probe attempt 1 --- 
+probe-nhl-totals5: start 20261121-0530
+probe: signed in; Filters button: Off
+probe: Market Type switch on (via header-parent).
+probe: tree dumped to data\probe-nhl-totals5-tree-switch-on-20261121-0530.json (45 nodes, 26 visible)
+probe: visible filter nodes: 26
+probe: vis[0] label='Baseball' exp=false chk=True tc='chevron_right Baseball'
+probe: vis[1] label='Basketball' exp=false chk=True tc='chevron_right Basketball'
+probe: vis[2] label='Football' exp=false chk=True tc='chevron_right Football'
+probe: vis[3] label='Hockey' exp=false chk=True tc='chevron_right Hockey'
+probe: vis[4] label='MMA' exp=false chk=True tc='chevron_right MMA'
+probe: vis[5] label='Soccer' exp=false chk=True tc='chevron_right Soccer'
+probe: vis[6] label='TennisPlayer RankingAllTop 25Top 50Top 100Apply to All PlayersTournament LevelAllClearGrand SlamATPWTAChallengerWTA 125ITF & OtherFormatAllClearSinglesDoublesGenderAllClearMenWomenMixed' exp=None chk=True tc='chevron_right TennisPlayer RankingAllTop 25Top 50Top 100Apply to All PlayersTour'
+probe: vis[7] label='Moneyline' exp=None chk=True tc='Moneyline'
+probe: vis[8] label='Spread' exp=None chk=True tc='Spread'
+probe: vis[9] label='Total' exp=None chk=True tc='Total'
+probe: vis[10] label='Alt Spread' exp=None chk=True tc='Alt Spread'
+probe: vis[11] label='Alt Total' exp=None chk=True tc='Alt Total'
+probe: vis[12] label='Both Teams to Score' exp=None chk=True tc='Both Teams to Score'
+probe: vis[13] label='Hockey Props' exp=false chk=True tc='chevron_right Hockey Props'
+probe: vis[14] label='Soccer' exp=false chk=True tc='chevron_right Soccer'
+probe: vis[15] label='Tennis' exp=false chk=True tc='chevron_right Tennis'
+probe: vis[16] label='Baseball Props' exp=false chk=True tc='chevron_right Baseball Props'
+probe: vis[17] label='Basketball Props' exp=false chk=True tc='chevron_right Basketball Props'
+probe: vis[18] label='Football Props' exp=false chk=True tc='chevron_right Football Props'
+probe: vis[19] label='MMA' exp=false chk=True tc='chevron_right MMA'
+probe: vis[20] label='Full-Time+' exp=None chk=True tc='Full-Time+'
+probe: vis[21] label='Full-Time' exp=None chk=True tc='Full-Time'
+probe: vis[22] label='Halves/Quarters' exp=false chk=True tc='chevron_right Halves/Quarters'
+probe: vis[23] label='Innings' exp=false chk=True tc='chevron_right Innings'
+probe: vis[24] label='Periods' exp=false chk=True tc='chevron_right Periods'
+probe: vis[25] label='Sets' exp=false chk=True tc='chevron_right Sets'
+probe: Hockey node at vis[3], expanding
+probe: tree dumped to data\probe-nhl-totals5-tree-hockey-expanded-20261121-0530.json (49 nodes, 30 visible)
+probe: Hockey children: ['4 Nations Face-Off', 'NHL', 'Oly. Hockey (M)', 'Oly. Hockey (W)']
+probe: NHL leaf vis[5] chk=True (checkbox disabled => included via parent Hockey)
+probe: Total leaf check=True
+probe: tree dumped to data\probe-nhl-totals5-tree-narrowing-20261121-0530.json (49 nodes, 30 visible)
+probe: narrowing: unchecking 23 nodes
+probe: check idx 10 -> disabled
+probe: check idx 9 -> disabled
+probe: check idx 8 -> disabled
+probe: check idx 7 -> disabled
+probe: check idx 6 -> disabled
+probe: check idx 5 -> disabled
+probe: check idx 4 -> disabled
+probe: check idx 3 -> disabled
+probe: check idx 2 -> disabled
+probe: check idx 1 -> disabled
+probe: check idx 0 -> disabled
+probe: tree dumped to data\probe-nhl-totals5-tree-narrowed-20261121-0530.json (49 nodes, 30 visible)
+probe: narrowing: still checked: ['Baseball', 'Basketball', 'Football', 'Hockey', '4 Nations Face-Off', 'NHL', 'Oly. Hockey (M)', 'Oly. Hockey (W)', 'MMA', 'Soccer', 'TennisPlayer RankingAllTop 25Top 50Top 100Apply to All PlayersTournament LevelAllClearGrand SlamATPWTAChallengerWTA 125ITF & OtherFormatAllClearSinglesDoublesGenderAllClearMenWomenMixed', 'Total', 'Full-Time+', 'Full-Time', 'Halves/Quarters', 'Innings', 'Periods', 'Sets']
+probe: EXP1 isolated Total (unchecked 12), still checked: ['Baseball', 'Basketball', 'Football', 'Hockey', '4 Nations Face-Off', 'NHL', 'Oly. Hockey (M)', 'Oly. Hockey (W)', 'MMA', 'Soccer', 'TennisPlayer RankingAllTop 25Top 50Top 100Apply to All PlayersTournament LevelAllClearGrand SlamATPWTAChallengerWTA 125ITF & OtherFormatAllClearSinglesDoublesGenderAllClearMenWomenMixed', 'Total', 'Full-Time+', 'Full-Time', 'Halves/Quarters', 'Innings', 'Periods', 'Sets']
+probe: tree dumped to data\probe-nhl-totals5-tree-exp1-verify-20261121-0530.json (60 nodes, 41 visible)
+probe: EXP1 props leaves now checked: []
+probe: filter set, button: On
+probe: board totals-isolated-p1 header: 1 ? 100 of 21
+probe: board totals-isolated-p1 rows=102 totals=100 spreads=0 moneyline=0 other=2 nhl_mentions=0
+probe: 102 rows dumped verbatim to data\probe-nhl-totals5-rows-totals-isolated-p1-20261121-0530.json
+probe: SAMPLE TOTAL ROW: NCAAF
+Delaware
+New Mexico St.
+Today 3:00 PM |  | Today 3:00 PM | table | Total
+Under 54.5 | ?-105
+$1,000 theScore | +102?
+[49.50%]
+$976.32 ProphetX | Alt Total
+Over 54 | table
+bar_chart |  | -$23.94
+-1.21%
+Middle
+$952.38
+48.19%
+probe: SAMPLE TOTAL ROW: NCAAF
+East Carolina
+Army
+Today 12:00 PM |  | Today 12:00 PM | table | 1st Quarter
+Total
+Under 9.5 | ?-105
+$1,000 DraftKings | +100?
+$976 HardRock | 1st Quarter
+Total
+Over 8.5 | table |  | -$24.00
+-1.21%
+Middle
+$1,928.38
+97.59%
+probe: SAMPLE TOTAL ROW: NCAAB
+Little Rock
+North Florida
+Today 2:00 PM |  | Today 2:00 PM | table | Total
+Under 160.5 | ?-105
+$1,000 Bet365 | +100?
+$975 BroThrow | Alt Total
+Over 159.5 | table
+bar_chart |  | -$25.00
+-1.27%
+Middle
+$1,927.38
+97.59%
+probe: SAMPLE ROW: Middles ? 
+link
+Showing 5:33am
+?
+Update in 0:02
+probe: SAMPLE ROW: Event | Weather | Time | Primary Bet | Hedge Bet | Middle | Profit
+probe: SAMPLE ROW: NCAAF
+Delaware
+New Mexico St.
+Today 3:00 PM |  | Today 3:00 PM | table | Total
+Under 54.5 | ?-105
+$1,000 theScore | +102?
+[49.50%]
+$976.32 ProphetX | Alt Total
+Over 54 | table
+bar_chart |  | -$23.94
+-1.21%
+Middle
+$952.38
+48.19%
+probe: board totals-isolated p2 rows=102
+probe: 102 rows dumped verbatim to data\probe-nhl-totals5-rows-totals-isolated-p2-20261121-0530.json
+probe: board totals-isolated p3 rows=102
+probe: 102 rows dumped verbatim to data\probe-nhl-totals5-rows-totals-isolated-p3-20261121-0530.json
+probe: board totals-isolated ALL pages rows=306 totals=300 spreads=0 nhl=0
+probe: EXP1 board NOT narrowed (nhl=0 totals=300 rows=306)
+probe: EXP2 Total label click failed (Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("Total", exact=True).first
+    - locator r)
+probe: tree dumped to data\probe-nhl-totals5-tree-exp2-total-clicked-20261121-0530.json (60 nodes, 41 visible)
+probe: board totals-exp2 header: 201 ? 300 of 22
+probe: board totals-exp2 rows=102 totals=100 spreads=0 moneyline=0 other=2 nhl_mentions=0
+probe: 102 rows dumped verbatim to data\probe-nhl-totals5-rows-totals-exp2-20261121-0530.json
+probe: SAMPLE TOTAL ROW: NFL
+LV Raiders
+DEN Broncos
+Nov-22 4:25 PM |  | Nov-22 4:25 PM | table | Total
+Over 40.5 | ?-108
+$1,000 Bally Bet | -104.7?
+[51.15%]
+$994.92 ProphetX | Total
+Under 41 | table
+bar_chart |  | -$69.00
+-3.46%
+Middle
+$925.93
+46.41%
+probe: SAMPLE TOTAL ROW: NCAAB
+Columbia
+Boston University
+Today 12:00 PM |  | Today 12:00 PM | table | Total
+Over 142.5 | ?-110
+$1,000 DraftKings | -105?
+$978 HardRock | Total
+Under 144.5 | table |  | -$68.91
+-3.48%
+Middle
+$1,840.52
+93.05%
+probe: SAMPLE TOTAL ROW: NCAAB
+Little Rock
+North Florida
+Today 2:00 PM |  | Today 2:00 PM | table | Total
+Over 159.5 | ?-110
+$1,000 DraftKings | -105?
+$978 Bet365 | Total
+Under 160.5 | table |  | -$68.91
+-3.48%
+Middle
+$1,840.52
+93.05%
+probe: SAMPLE ROW: Middles ? 
+link
+Showing 5:36am
+?
+Update in 2:09
+probe: SAMPLE ROW: Event | Weather | Time | Primary Bet | Hedge Bet | Middle | Profit
+probe: SAMPLE ROW: NFL
+LV Raiders
+DEN Broncos
+Nov-22 4:25 PM |  | Nov-22 4:25 PM | table | Total
+Over 40.5 | ?-108
+$1,000 Bally Bet | -104.7?
+[51.15%]
+$994.92 ProphetX | Total
+Under 41 | table
+bar_chart |  | -$69.00
+-3.46%
+Middle
+$925.93
+46.41%
+probe: EXP2 board NOT narrowed (nhl=0 totals=100 rows=102)
+probe: EXP3 NHL label click failed (Locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for get_by_text("NHL", exact=True).first
+    - locator res)
+probe: board totals-exp3 header: 201 ? 300 of 22
+probe: board totals-exp3 rows=102 totals=100 spreads=0 moneyline=0 other=2 nhl_mentions=0
+probe: 102 rows dumped verbatim to data\probe-nhl-totals5-rows-totals-exp3-20261121-0530.json
+probe: SAMPLE TOTAL ROW: NFL
+LV Raiders
+DEN Broncos
+Nov-22 4:25 PM |  | Nov-22 4:25 PM | table | Total
+Over 40.5 | ?-108
+$1,000 Bally Bet | -104.7?
+[51.15%]
+$994.92 ProphetX | Total
+Under 41 | table
+bar_chart |  | -$69.00
+-3.46%
+Middle
+$925.93
+46.41%
+probe: SAMPLE TOTAL ROW: NCAAB
+Columbia
+Boston University
+Today 12:00 PM |  | Today 12:00 PM | table | Total
+Over 142.5 | ?-110
+$1,000 DraftKings | -105?
+$978 HardRock | Total
+Under 144.5 | table |  | -$68.91
+-3.48%
+Middle
+$1,840.52
+93.05%
+probe: SAMPLE TOTAL ROW: NCAAB
+Little Rock
+North Florida
+Today 2:00 PM |  | Today 2:00 PM | table | Total
+Over 159.5 | ?-110
+$1,000 DraftKings | -105?
+$978 Bet365 | Total
+Under 160.5 | table |  | -$68.91
+-3.48%
+Middle
+$1,840.52
+93.05%
+probe: SAMPLE ROW: Middles ? 
+link
+Showing 5:36am
+?
+Update in 1:40
+probe: SAMPLE ROW: Event | Weather | Time | Primary Bet | Hedge Bet | Middle | Profit
+probe: SAMPLE ROW: NFL
+LV Raiders
+DEN Broncos
+Nov-22 4:25 PM |  | Nov-22 4:25 PM | table | Total
+Over 40.5 | ?-108
+$1,000 Bally Bet | -104.7?
+[51.15%]
+$994.92 ProphetX | Total
+Under 41 | table
+bar_chart |  | -$69.00
+-3.46%
+Middle
+$925.93
+46.41%
+probe: EXP3 board NOT narrowed (nhl=0 totals=100 rows=102)
+probe: restore: cleared, button reads 'Filters: Off'
+probe: Market Type switch on (via header-parent).
+probe: tree dumped to data\probe-nhl-totals5-tree-props-open-20261121-0530.json (60 nodes, 41 visible)
+probe: tree dumped to data\probe-nhl-totals5-tree-hockey-props-expanded-20261121-0530.json (60 nodes, 41 visible)
+probe: Hockey Props children: []
+probe: Goals check: no 'Player Props' node
+probe: SUMMARY totals_path=None goals=NOT-CHECKED
+probe: restore: cleared, button reads 'Filters: Off'
+probe-nhl-totals5: done 20261121-0530
