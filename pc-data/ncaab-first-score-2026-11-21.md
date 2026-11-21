@@ -6,3 +6,8 @@
 ## 2026-11-21T03:39:32-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 933 games through 2026-11-20
 - 2026-11-20: Saint Louis Billikens @ Saint Mary's Gaels — first: Saint Mary's Gaels (3PT, 1:22 in); lead changes 4; final 78-95
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T14:14:23-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 936 games through 2026-11-21
+- 2026-11-21: Detroit Mercy Titans @ Michigan State Spartans — first: Detroit Mercy Titans (2PT, 0:35 in); lead changes 1; final 70-91
+- 2026-11-21: Siena Saints @ Bucknell Bison — first: Siena Saints (2PT, 0:17 in); lead changes 8; final 93-87
+- 2026-11-21: South Carolina Upstate Spartans @ UNC Greensboro Spartans — first: UNC Greensboro Spartans (2PT, 1:16 in); lead changes 0; final 66-85
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
