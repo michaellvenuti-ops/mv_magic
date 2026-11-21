@@ -10180,3 +10180,26 @@
 [2026-11-20 21:57:13 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-20; skipping.
 [2026-11-20 21:57:20 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-20 21:57:23 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-20 22:27:32 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-20 22:31:14 ET] odds_recorder.py: OK in 189s — SUMMARY: recorded 229 events (147 with odds), db total 307892 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-20 22:35:17 ET] dh_arbitrage.py: OK in 243s — ARBITRAGE: NHL PIT Penguins NSH Predators Nov-21 6:00 PM / Nov-21 6:00 PM / table / Shots E. Karlsson Under 2.5 / Shots E. Karlsson 3+ / table | FanDuel | Bet36
+[2026-11-20 22:37:02 ET] dh_kalshi_poly_arb.py: OK in 104s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-20 22:37:09 ET] wide_builds.py: OK in 5s — wide_builds: 1 qualifying builds, 0 NEW (banked wide-builds-2026-11-20.md)
+[2026-11-20 22:41:51 ET] dh_game_middles.py: OK in 282s — GAME MIDDLE: NCAAF 19 Arizona Kansas St. Nov-21 7:00 PM / Nov-21 7:00 PM / table / Total Under 53.5 / Alt Total Over 53 / table bar_chart | Bally Bet | ProphetX
+[2026-11-20 22:47:44 ET] dh_key_number_middles.py: OK in 350s — key-number-middles: 114 basketball rows excluded (football-only rule).
+[2026-11-20 22:53:01 ET] dh_basketball_key_middles.py: OK in 316s — basketball-key-middles: no new basketball middles.
+[2026-11-20 22:57:32 ET] hung_number.py: OK in 269s — HUNG NUMBER: Iowa State vs UCF — BetMGM moneyline UCF value UCF (98.0 vs median 49.5)
+[2026-11-20 22:57:41 ET] rlm.py: OK in 9s
+[2026-11-20 22:57:46 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-20 22:57:51 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-20 23:01:20 ET] dh_prop_middles.py: FAILED (exit 1) in 209s —   - <launched> pid=10684
+[2026-11-20 23:05:22 ET] dh_sog_middles.py: FAILED (exit 1) in 242s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-20 23:05:36 ET] dh_team_total_middles.py: OK in 14s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-20 23:05:39 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-20 23:05:42 ET] nba_first_score.py: OK in 3s — nba-first-score: 4 new, 2 unverified, 220 total tallied.
+[2026-11-20 23:05:43 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-20 23:05:47 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 9 new, 2 unverified, 929 total tallied.
+[2026-11-20 23:05:49 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 1 new, 0 unverified, 759 total tallied.
+[2026-11-20 23:05:51 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-20; skipping.
+[2026-11-20 23:05:54 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-20 23:05:55 ET] syncing to GitHub (regular 10-minute sync)
