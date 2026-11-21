@@ -31,3 +31,7 @@ NEW FLAG: FBS San Diego State @ Boise State | 2026-11-21 — Fanatics still deal
 NEW FLAG: FBS San Diego State @ Boise State | 2026-11-21 — Kalshi still dealing spread -17.5 on Boise State (pre-move median -17.5, now -18.5)
 NEW FLAG: FBS Utah State @ Oregon State | 2026-11-21 — DraftKings still dealing spread -8.5 on Utah State (pre-move median -8.5, now -7.5)
 NEW FLAG: FBS Utah State @ Oregon State | 2026-11-21 — Fanatics still dealing spread -8.5 on Utah State (pre-move median -8.5, now -7.5)
+## 2026-11-21T12:04:03-05:00 — 67 games, 5 steam events, 1 NEW flags, 18 started games skipped
+NEW FLAG: FBS UTSA @ UAB | 2026-11-21 — Fanatics still dealing spread 6.5 on UAB (pre-move median 5.5, now 4.5)
+## 2026-11-21T14:05:57-05:00 — 70 games, 4 steam events, 1 NEW flags, 26 started games skipped
+NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — FanDuel still dealing spread 1.5 on South Florida (pre-move median 1.5, now 2.5)
