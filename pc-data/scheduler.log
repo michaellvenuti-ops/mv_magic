@@ -10386,3 +10386,61 @@
 [2026-11-21 10:32:19 ET] half_percent.py: OK in 2s — half-percent recheck: 10:32 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
 [2026-11-21 10:35:19 ET] futures_pairs.py: OK in 176s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-21 10:35:20 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 11:05:22 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-21 11:17:17 ET] odds_recorder.py: OK in 684s — SUMMARY: recorded 227 events (195 with odds), db total 310180 snapshots / 1485 events, feeds ok 6 fail 0
+[2026-11-21 11:25:26 ET] dh_arbitrage.py: FAILED (exit 2) in 487s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-21 11:30:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 268s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-21 11:30:17 ET] wide_builds.py: OK in 12s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 11:34:46 ET] dh_low_holds.py: FAILED (exit 1) in 269s —   - <launched> pid=13012
+[2026-11-21 11:46:01 ET] dh_game_middles.py: FAILED (exit 1) in 667s —   - <launched> pid=8480
+[2026-11-21 11:53:22 ET] dh_key_number_middles.py: FAILED (exit 1) in 427s —   - <launched> pid=15064
+[2026-11-21 11:57:11 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 228s —   - <launched> pid=14328
+[2026-11-21 12:03:44 ET] hung_number.py: OK in 392s — HUNG NUMBER: UTEP vs Air Force — Fanatics spread value favorite (21.5 vs median 22.5)
+[2026-11-21 12:03:54 ET] rlm.py: OK in 10s
+[2026-11-21 12:03:58 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (80 games, 1 new leads, no book at 3 yet).
+[2026-11-21 12:04:04 ET] steam_side.py: OK in 6s — STEAM-SIDE FLAG: FBS UTSA @ UAB | 2026-11-21 | Fanatics | UAB spread 6.5 (median 5.5 -> 4.5)
+[2026-11-21 12:09:55 ET] dh_prop_middles.py: FAILED (exit 2) in 351s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-21 12:19:47 ET] dh_sog_middles.py: FAILED (exit 1) in 584s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-21 12:19:53 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-21 12:19:54 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 12:19:56 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 2 unverified, 223 total tallied.
+[2026-11-21 12:19:58 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-21 12:20:01 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 0 new, 2 unverified, 933 total tallied.
+[2026-11-21 12:20:03 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 763 total tallied.
+[2026-11-21 12:20:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 12:20:07 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-21 12:30:35 ET] costco_gold.py: OK in 628s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 1
+[2026-11-21 12:43:54 ET] promo_watch.py: FAILED (exit 1) in 796s —   - <launched> pid=19848
+[2026-11-21 12:45:41 ET] totals_scan.py: OK in 93s — totals: no new flags (silent).
+[2026-11-21 12:46:39 ET] correlated_parlay.py: OK in 57s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-21 12:52:06 ET] dh_derivative_ev.py: FAILED (exit 1) in 327s —   - <launched> pid=19484
+[2026-11-21 12:52:10 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 13:03:22 ET] sync_to_github.py: FAILED (exit 1) in 671s — urllib.error.URLError: <urlopen error [WinError 10053] An established connection was aborted by the software in your host machine>
+[2026-11-21 13:26:13 ET] odds_recorder.py: OK in 1296s — SUMMARY: recorded 224 events (152 with odds), db total 310404 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-21 13:32:33 ET] dh_arbitrage.py: FAILED (exit 1) in 371s —   - <launched> pid=9676
+[2026-11-21 13:36:48 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 251s —   - <launched> pid=11108
+[2026-11-21 13:37:11 ET] wide_builds.py: OK in 16s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 13:41:43 ET] dh_low_holds.py: FAILED (exit 1) in 272s —   - <launched> pid=5768
+[2026-11-21 13:46:29 ET] dh_game_middles.py: FAILED (exit 1) in 286s —   - <launched> pid=11572
+[2026-11-21 13:53:51 ET] dh_key_number_middles.py: FAILED (exit 1) in 439s —   - <launched> pid=13720
+[2026-11-21 13:58:15 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 260s —   - <launched> pid=12748
+[2026-11-21 14:05:28 ET] hung_number.py: FAILED (exit 2) in 432s — state. Re-run with --dump and send the dump file.
+[2026-11-21 14:05:47 ET] rlm.py: OK in 18s
+[2026-11-21 14:05:53 ET] leader_follower.py: OK in 6s — leader-follower: logging phase (83 games, 1 new leads, no book at 3 yet).
+[2026-11-21 14:05:57 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 | FanDuel | South Florida spread 1.5 (median 1.5 -> 2.5)
+[2026-11-21 14:09:33 ET] dh_prop_middles.py: FAILED (exit 1) in 216s —   - <launched> pid=7540
+[2026-11-21 14:13:50 ET] dh_sog_middles.py: FAILED (exit 1) in 257s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-21 14:14:08 ET] dh_team_total_middles.py: OK in 16s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-21 14:14:13 ET] nfl_first_score.py: OK in 4s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 14:14:19 ET] nba_first_score.py: OK in 6s — nba-first-score: 0 new, 2 unverified, 223 total tallied.
+[2026-11-21 14:14:20 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-21 14:14:23 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 3 new, 2 unverified, 936 total tallied.
+[2026-11-21 14:14:24 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 763 total tallied.
+[2026-11-21 14:14:25 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 14:14:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-21 14:14:31 ET] podcast_transcribe.py: OK in 4s — SUMMARY: discover days=2 added=13 queued_total=46
+[2026-11-21 14:14:32 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=46, limit=1)
+[2026-11-21 14:14:36 ET] public_fade.py: OK in 4s
+[2026-11-21 14:17:51 ET] dh_positive_ev.py: FAILED (exit 1) in 195s —   - <launched> pid=16280
+[2026-11-21 14:23:55 ET] wong_teasers.py: OK in 364s — wong-teasers: 2 legs, 1 pairs, 0 triples banked.
+[2026-11-21 14:24:06 ET] syncing to GitHub (regular 10-minute sync)
