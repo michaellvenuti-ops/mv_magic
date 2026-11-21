@@ -1,5 +1,5 @@
 {
- "through": "2026-11-19",
+ "through": "2026-11-21",
  "games": [
   {
    "away": "Buffalo Sabres",
@@ -5458,20 +5458,20 @@
    "winner": "Columbus Blue Jackets"
   },
   {
-   "date": "2026-11-19",
    "away": "Dallas Stars",
-   "home": "Vegas Golden Knights",
+   "date": "2026-11-19",
+   "final": "4-3",
    "first": "Dallas Stars",
+   "first_elapsed_sec": 1002,
+   "first_scorer": "Miro Heiskanen",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Miro Heiskanen",
-   "first_elapsed_sec": 1002,
-   "winner": "Dallas Stars",
-   "shootout": true,
-   "seq": "1-0>2-0>2-1>2-2>2-3>3-3",
+   "home": "Vegas Golden Knights",
    "lead_changes": 1,
+   "seq": "1-0>2-0>2-1>2-2>2-3>3-3",
+   "shootout": true,
    "ties": 2,
-   "final": "4-3"
+   "winner": "Dallas Stars"
   },
   {
    "away": "Edmonton Oilers",
@@ -5600,6 +5600,22 @@
    "shootout": false,
    "ties": 1,
    "winner": "Seattle Kraken"
+  },
+  {
+   "date": "2026-11-21",
+   "away": "Edmonton Oilers",
+   "home": "Carolina Hurricanes",
+   "first": "Edmonton Oilers",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Owen Michaels",
+   "first_elapsed_sec": 562,
+   "winner": "Carolina Hurricanes",
+   "shootout": false,
+   "seq": "1-0>2-0>2-1>3-1>3-2>3-3>3-4>4-4>4-5>4-6>4-7",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "4-7"
   }
  ],
  "tally": {
@@ -5668,20 +5684,20 @@
    "won_by_one_when_first_pct": 30.0
   },
   "Edmonton Oilers": {
-   "gp": 23,
-   "scored_first": 17,
+   "gp": 24,
+   "scored_first": 18,
    "strengths": {
-    "EV": 14,
+    "EV": 15,
     "PP": 3,
     "SH": 0
    },
    "won_when_first": 15,
    "won_when_not_first": 2,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 73.9,
-   "win_pct_when_first": 88.2,
+   "scored_first_pct": 75.0,
+   "win_pct_when_first": 83.3,
    "win_pct_when_not_first": 33.3,
-   "won_by_one_when_first_pct": 17.6
+   "won_by_one_when_first_pct": 16.7
   },
   "Vancouver Canucks": {
    "gp": 23,
@@ -5988,7 +6004,7 @@
    "won_by_one_when_first_pct": 25.0
   },
   "Carolina Hurricanes": {
-   "gp": 21,
+   "gp": 22,
    "scored_first": 15,
    "strengths": {
     "EV": 13,
@@ -5996,11 +6012,11 @@
     "SH": 1
    },
    "won_when_first": 13,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 71.4,
+   "scored_first_pct": 68.2,
    "win_pct_when_first": 86.7,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 57.1,
    "won_by_one_when_first_pct": 13.3
   },
   "Los Angeles Kings": {
@@ -6117,22 +6133,22 @@
   }
  },
  "league": {
-  "games": 350,
-  "games_with_goal": 348,
+  "games": 351,
+  "games_with_goal": 349,
   "shootouts": 27,
   "home_scored_first": 167,
   "first_team_won": 229,
   "first_team_won_by_one": 67,
-  "first_team_won_by_one_pct": 19.3,
+  "first_team_won_by_one_pct": 19.2,
   "strengths": {
-   "EV": 266,
+   "EV": 267,
    "PP": 77,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
   "median_first_goal_sec": 874,
-  "home_scored_first_pct": 48.0,
-  "first_team_win_pct": 65.8
+  "home_scored_first_pct": 47.9,
+  "first_team_win_pct": 65.6
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6156,9 +6172,9 @@
    "avg_per_game": 0.3
   },
   "Edmonton Oilers": {
-   "games": 23,
-   "lead_changes": 6,
-   "avg_per_game": 0.26
+   "games": 24,
+   "lead_changes": 7,
+   "avg_per_game": 0.29
   },
   "Vancouver Canucks": {
    "games": 23,
@@ -6256,9 +6272,9 @@
    "avg_per_game": 0.8
   },
   "Carolina Hurricanes": {
-   "games": 21,
-   "lead_changes": 10,
-   "avg_per_game": 0.48
+   "games": 22,
+   "lead_changes": 11,
+   "avg_per_game": 0.5
   },
   "Los Angeles Kings": {
    "games": 19,
