@@ -28,3 +28,13 @@
 - 2026-11-20: UAlbany Great Danes @ Western Illinois Leathernecks — first: Western Illinois Leathernecks (2PT, 0:58 in); lead changes 7; final 65-60
 - 2026-11-20: Indiana State Sycamores @ Stephen F. Austin Lumberjacks — first: Indiana State Sycamores (3PT, 1:22 in); lead changes 7; final 76-86
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T20:27:05-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 892 games through 2026-11-20
+- 2026-11-20: Manhattan Jaspers @ Miami Hurricanes — first: Miami Hurricanes (2PT, 2:33 in); lead changes 0; final 54-106
+- 2026-11-20: South Dakota State Jackrabbits @ Idaho State Bengals — first: Idaho State Bengals (2PT, 0:16 in); lead changes 6; final 71-86
+- 2026-11-20: Rhode Island Rams @ Liberty Flames — first: Rhode Island Rams (3PT, 0:29 in); lead changes 3; final 68-71
+- 2026-11-20: Dayton Flyers @ Utah Utes — first: Dayton Flyers (3PT, 0:25 in); lead changes 4; final 63-46
+- 2026-11-20: Mercyhurst Lakers @ Canisius Golden Griffins — first: Canisius Golden Griffins (3PT, 0:36 in); lead changes 2; final 56-63
+- 2026-11-20: UT Martin Skyhawks @ Southern Illinois Salukis — first: UT Martin Skyhawks (3PT, 0:28 in); lead changes 8; final 76-73
+- 2026-11-20: Worcester State Lancers @ Bryant Bulldogs — first: Bryant Bulldogs (2PT, 0:28 in); lead changes 8; final 61-75
+- 2026-11-20: WVU Tech Golden Bears @ Akron Zips — first: Akron Zips (2PT, 0:18 in); lead changes 0; final 71-116
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
