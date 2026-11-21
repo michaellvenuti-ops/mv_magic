@@ -1,1 +1,5 @@
 ## 2026-11-21T00:46:07-05:00 — 70 games, 0 steam events, 0 NEW flags, 9 started games skipped
+## 2026-11-21T02:31:20-05:00 — 70 games, 1 steam events, 3 NEW flags, 9 started games skipped
+NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — DraftKings still dealing spread -33.5 on Tennessee Tech (pre-move median -33.5, now -32.5)
+NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — Caesars still dealing spread -33.5 on Tennessee Tech (pre-move median -33.5, now -32.5)
+NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — Fanatics still dealing spread -33.5 on Tennessee Tech (pre-move median -33.5, now -32.5)
