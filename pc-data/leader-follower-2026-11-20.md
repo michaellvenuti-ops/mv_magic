@@ -29,3 +29,11 @@
 ## 2026-11-20T17:22:38-05:00 — no-follow: FanDuel Colorado State @ Fresno State | 2026-11-20 spread (only 0 followed)
 ## 2026-11-20T17:22:38-05:00 — no-follow: Kalshi UTSA @ UAB | 2026-11-20 spread (only 0 followed)
 ## 2026-11-20T17:22:39-05:00 — 83 games, 0 leads credited, 4 started games skipped
+## 2026-11-20T20:13:17-05:00 — pack move, never credited: Steelers @ Eagles | 2026-11-20 spread (Hard Rock, bet365)
+## 2026-11-20T20:13:17-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: UTEP @ Air Force | 2026-11-20
+## 2026-11-20T20:13:17-05:00 — pack move, never credited: East Carolina @ Army | 2026-11-20 spread (Fanatics, bet365)
+## 2026-11-20T20:13:17-05:00 — pack move, never credited: BYU @ Kansas | 2026-11-20 spread (BetMGM, Caesars, DraftKings)
+## 2026-11-20T20:13:17-05:00 — pack move, never credited: Tennessee Tech @ Mississippi State | 2026-11-20 spread (FanDuel, Fanatics, bet365)
+## 2026-11-20T20:13:17-05:00 — no-follow: Fanatics Iowa @ Illinois | 2026-11-20 spread (only 1 followed)
+## 2026-11-20T20:13:17-05:00 — no-follow: Kalshi Hawai'i @ Nevada | 2026-11-20 spread (only 0 followed)
+## 2026-11-20T20:13:18-05:00 — 83 games, 0 leads credited, 9 started games skipped
