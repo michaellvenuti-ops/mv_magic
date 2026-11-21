@@ -3,3 +3,24 @@
 - 2026-11-20: Clemson Tigers @ Duke Blue Devils — first: Clemson Tigers (FG, 29:43 in); lead changes 0; final 20-10
 - 2026-11-20: UTEP Miners @ Air Force Falcons — first: Air Force Falcons (TD, 9:03 in); lead changes 0; final 3-52
 - 2026-11-20: New Mexico Lobos @ Wyoming Cowboys — first: New Mexico Lobos (TD, 8:12 in); lead changes 0; final 24-17
+## 2026-11-21T17:31:01-05:00 -- NCAAF FIRST SCORE (PC): 20 new final(s) tallied; season 783 games through 2026-11-21
+- 2026-11-21: Charlotte 49ers @ Tulsa Golden Hurricane — first: Charlotte 49ers (TD, 18:59 in); lead changes 1; final 14-42
+- 2026-11-21: Chattanooga Mocs @ Alabama Crimson Tide — first: Alabama Crimson Tide (TD, 7:57 in); lead changes 0; final 0-47
+- 2026-11-21: BYU Cougars @ Kansas Jayhawks — first: Kansas Jayhawks (FG, 12:10 in); lead changes 3; final 31-29
+- 2026-11-21: Wake Forest Demon Deacons @ Georgia Tech Yellow Jackets — first: Wake Forest Demon Deacons (TD, 6:41 in); lead changes 0; final 50-29
+- 2026-11-21: Ohio State Buckeyes @ Nebraska Cornhuskers — first: Ohio State Buckeyes (TD, 3:17 in); lead changes 1; final 28-31
+- 2026-11-21: Houston Cougars @ West Virginia Mountaineers — first: Houston Cougars (TD, 1:17 in); lead changes 4; final 34-31
+- 2026-11-21: Vanderbilt Commodores @ Florida Gators — first: Vanderbilt Commodores (FG, 4:36 in); lead changes 3; final 27-34
+- 2026-11-21: Wofford Terriers @ Ole Miss Rebels — first: Ole Miss Rebels (TD, 1:05 in); lead changes 0; final 17-59
+- 2026-11-21: Colorado Buffaloes @ Cincinnati Bearcats — first: Cincinnati Bearcats (TD, 5:25 in); lead changes 0; final 28-35
+- 2026-11-21: Syracuse Orange @ Boston College Eagles — first: Boston College Eagles (TD, 2:17 in); lead changes 0; final 15-27
+- 2026-11-21: Northwestern Wildcats @ Minnesota Golden Gophers — first: Northwestern Wildcats (TD, 27:58 in); lead changes 1; final 17-20
+- 2026-11-21: Wisconsin Badgers @ Purdue Boilermakers — first: Wisconsin Badgers (TD, 6:59 in); lead changes 0; final 42-10
+- 2026-11-21: East Carolina Pirates @ Army Black Knights — first: Army Black Knights (FG, 30:00 in); lead changes 1; final 10-6
+- 2026-11-21: Memphis Tigers @ Navy Midshipmen — first: Navy Midshipmen (TD, 4:25 in); lead changes 2; final 34-38
+- 2026-11-21: North Texas Mean Green @ Tulane Green Wave — first: North Texas Mean Green (TD, 8:40 in); lead changes 1; final 24-28
+- 2026-11-21: North Carolina Tar Heels @ Virginia Cavaliers — first: Virginia Cavaliers (TD, 8:15 in); lead changes 0; final 24-41
+- 2026-11-21: Tennessee Tech Golden Eagles @ Mississippi State Bulldogs — first: Tennessee Tech Golden Eagles (FG, 8:06 in); lead changes 3; final 16-34
+- 2026-11-21: Western Kentucky Hilltoppers @ Liberty Flames — first: Liberty Flames (TD, 2:27 in); lead changes 0; final 14-45
+- 2026-11-21: Missouri State Bears @ Jacksonville State Gamecocks — first: Missouri State Bears (FG, 9:13 in); lead changes 1; final 20-25
+- 2026-11-21: Middle Tennessee Blue Raiders @ Sam Houston Bearkats — first: Middle Tennessee Blue Raiders (TD, 0:10 in); lead changes 2; final 31-28
