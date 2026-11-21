@@ -10306,3 +10306,15 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-21 03:39:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
 [2026-11-21 03:39:36 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-21 03:39:37 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 04:08:21 ET] sync_to_github.py: FAILED (exit 1) in 1724s —   FAILED: pc-data/nfl-first-score-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 3e9df6e746c775e9c9b7f7118d2c28040d6c83cf but expected 407c0b3c3511c8b711
+[2026-11-21 04:17:02 ET] odds_recorder.py: OK in 484s — SUMMARY: recorded 229 events (146 with odds), db total 308808 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-21 04:17:06 ET] wide_builds.py: OK in 3s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 04:21:16 ET] dh_game_middles.py: OK in 249s — GAME MIDDLE: NFL NO Saints CHI Bears Nov-22 1:00 PM / Nov-22 1:00 PM / table / Alt Spread CHI Bears -9 / Alt Spread NO Saints +9.5 / table bar_chart | HardRock 
+[2026-11-21 04:24:58 ET] dh_key_number_middles.py: OK in 222s — key-number-middles: 245 basketball rows excluded (football-only rule).
+[2026-11-21 04:29:35 ET] dh_basketball_key_middles.py: OK in 277s — basketball-key-middles: no new basketball middles.
+[2026-11-21 04:33:09 ET] hung_number.py: FAILED (exit 1) in 212s —   - <launched> pid=18244
+[2026-11-21 04:34:17 ET] rlm.py: OK in 67s
+[2026-11-21 04:34:22 ET] leader_follower.py: OK in 6s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-21 04:34:27 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-21 04:37:53 ET] dh_prop_middles.py: FAILED (exit 1) in 206s —   - <launched> pid=10460
+[2026-11-21 04:37:54 ET] syncing to GitHub (regular 10-minute sync)
