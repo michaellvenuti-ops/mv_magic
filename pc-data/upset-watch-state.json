@@ -11593,7 +11593,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Iowa State",
-   "dog_team": "UCF"
+   "dog_team": "UCF",
+   "final": true
   },
   "401858303": {
    "sport": "CFB",
@@ -12187,7 +12188,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.0,
    "fav_team": "Nevada",
    "dog_team": "Hawai'i"
   },
@@ -15221,7 +15222,8 @@
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Hawks",
-   "dog_team": "Hornets"
+   "dog_team": "Hornets",
+   "final": true
   },
   "401909306": {
    "sport": "NBA",
@@ -15231,7 +15233,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "Magic",
-   "dog_team": "Nets"
+   "dog_team": "Nets",
+   "final": true
   },
   "401909307": {
    "sport": "NBA",
@@ -15241,7 +15244,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Cavaliers",
-   "dog_team": "Pacers"
+   "dog_team": "Pacers",
+   "final": true
   },
   "401909308": {
    "sport": "NBA",
@@ -15251,7 +15255,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Pistons",
-   "dog_team": "Raptors"
+   "dog_team": "Raptors",
+   "final": true
   },
   "401909309": {
    "sport": "NBA",
@@ -15617,7 +15622,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Niagara",
-   "dog_team": "Delaware St"
+   "dog_team": "Delaware St",
+   "final": true
   },
   "401924736": {
    "sport": "NCAAB",
@@ -15722,7 +15728,8 @@
    "sport": "NCAAB",
    "matchup": "Paine at West Georgia",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401916299": {
    "sport": "NCAAB",
@@ -15754,7 +15761,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Mississippi St",
-   "dog_team": "Tulsa"
+   "dog_team": "Tulsa",
+   "final": true
   },
   "401925080": {
    "sport": "NCAAB",
@@ -15764,7 +15772,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "UT Arlington",
-   "dog_team": "N'Western St"
+   "dog_team": "N'Western St",
+   "final": true
   },
   "401909545": {
    "sport": "NCAAB",
@@ -15774,7 +15783,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Xavier",
-   "dog_team": "Iowa"
+   "dog_team": "Iowa",
+   "final": true
   },
   "401921757": {
    "sport": "NCAAB",
@@ -15794,13 +15804,15 @@
    "fav": "home",
    "spread": 35.5,
    "fav_team": "Arkansas",
-   "dog_team": "Miss Valley St"
+   "dog_team": "Miss Valley St",
+   "final": true
   },
   "401935675": {
    "sport": "NCAAB",
    "matchup": "West Coast at Pepperdine",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929459": {
    "sport": "NCAAB",
@@ -15821,13 +15833,15 @@
    "warn_fav_score": 13,
    "warn_dog_score": 17,
    "warn_ml": -1600,
-   "ml_read_at": "2026-11-20T20:22:14"
+   "ml_read_at": "2026-11-20T20:22:14",
+   "final": true
   },
   "401926755": {
    "sport": "NCAAB",
    "matchup": "Neumann at Lehigh",
    "date": "2026-11-21",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920707": {
    "sport": "NCAAB",
@@ -15847,7 +15861,8 @@
    "fav": "home",
    "spread": 35.5,
    "fav_team": "Missouri",
-   "dog_team": "Le Moyne"
+   "dog_team": "Le Moyne",
+   "final": true
   },
   "401916290": {
    "sport": "NCAAB",
@@ -15857,7 +15872,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Indiana",
-   "dog_team": "Kentucky"
+   "dog_team": "Kentucky",
+   "final": true
   },
   "401916125": {
    "sport": "NCAAB",
@@ -15895,7 +15911,8 @@
    "alert_detail": "12:43 - 2nd Half",
    "alert_fav_score": 45,
    "alert_dog_score": 56,
-   "alert_ml": -140
+   "alert_ml": -140,
+   "final": true
   },
   "401906784": {
    "sport": "NCAAB",
@@ -15921,11 +15938,29 @@
    "sport": "NCAAB",
    "matchup": "Sam Houston at Boise St",
    "date": "2026-11-21",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Boise St",
-   "dog_team": "Sam Houston"
+   "dog_team": "Sam Houston",
+   "live_ml": -120,
+   "ml_bucket": "bettor",
+   "warned": true,
+   "warned_at": "2026-11-20T21:20:26",
+   "warn_board_read_at": "2026-11-20T21:20:25",
+   "warn_expires_at": "2026-11-20T21:23:26",
+   "warn_detail": "11:56 - 1st Half",
+   "warn_fav_score": 5,
+   "warn_dog_score": 6,
+   "warn_ml": -810,
+   "ml_read_at": "2026-11-20T22:14:29",
+   "alerted_at": "2026-11-20T22:14:29",
+   "board_read_at": "2026-11-20T22:14:28",
+   "alert_expires_at": "2026-11-20T22:17:29",
+   "alert_detail": "18:41 - 2nd Half",
+   "alert_fav_score": 28,
+   "alert_dog_score": 42,
+   "alert_ml": -120
   },
   "401920137": {
    "sport": "NCAAB",
@@ -15965,7 +16000,18 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Fresno St",
-   "dog_team": "Alabama St"
+   "dog_team": "Alabama St",
+   "live_ml": -410,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-20T22:05:05",
+   "warn_board_read_at": "2026-11-20T22:05:05",
+   "warn_expires_at": "2026-11-20T22:08:05",
+   "warn_detail": "18:44 - 1st Half",
+   "warn_fav_score": 0,
+   "warn_dog_score": 3,
+   "warn_ml": -650,
+   "ml_read_at": "2026-11-20T22:05:05"
   },
   "401911252": {
    "sport": "NCAAB",
