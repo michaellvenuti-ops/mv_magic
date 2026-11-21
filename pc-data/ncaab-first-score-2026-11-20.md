@@ -68,3 +68,14 @@
 - 2026-11-20: Iowa Hawkeyes @ Xavier Musketeers — first: Xavier Musketeers (3PT, 0:54 in); lead changes 7; final 83-65
 - 2026-11-20: South Alabama Jaguars @ SMU Mustangs — first: SMU Mustangs (3PT, 0:50 in); lead changes 2; final 55-101
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-20T23:05:47-05:00 -- NCAAB FIRST SCORE (PC): 9 new final(s) tallied; season 929 games through 2026-11-20
+- 2026-11-20: Eastern Illinois Panthers @ Illinois Fighting Illini — first: Illinois Fighting Illini (2PT, 0:45 in); lead changes 2; final 52-114
+- 2026-11-20: UCF Knights @ Vanderbilt Commodores — first: UCF Knights (FT, 1:26 in); lead changes 1; final 74-82
+- 2026-11-20: Lipscomb Bisons @ Alabama A&M Bulldogs — first: Alabama A&M Bulldogs (2PT, 1:28 in); lead changes 0; final 69-85
+- 2026-11-20: Kentucky Wildcats @ Indiana Hoosiers — first: Indiana Hoosiers (3PT, 0:20 in); lead changes 2; final 76-90
+- 2026-11-20: East Carolina Pirates @ Utah Valley Wolverines — first: East Carolina Pirates (3PT, 1:28 in); lead changes 9; final 79-90
+- 2026-11-20: Campbell Fighting Camels @ Kansas State Wildcats — first: Kansas State Wildcats (3PT, 0:14 in); lead changes 7; final 80-70
+- 2026-11-20: Georgia Bulldogs @ Georgia Tech Yellow Jackets — first: Georgia Bulldogs (FT, 0:12 in); lead changes 0; final 88-82
+- 2026-11-20: Cal State Bakersfield Roadrunners @ Idaho Vandals — first: Cal State Bakersfield Roadrunners (2PT, 0:13 in); lead changes 5; final 81-84
+- 2026-11-20: Marshall Thundering Herd @ North Carolina Tar Heels — first: North Carolina Tar Heels (3PT, 0:28 in); lead changes 0; final 72-88
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
