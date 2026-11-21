@@ -11599,11 +11599,17 @@
    "sport": "CFB",
    "matchup": "Clemson at Duke",
    "date": "2026-11-21",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Duke",
-   "dog_team": "Clemson"
+   "dog_team": "Clemson",
+   "alerted_at": "2026-11-20T21:07:34",
+   "board_read_at": "2026-11-20T21:07:34",
+   "alert_expires_at": "2026-11-20T21:12:34",
+   "alert_detail": "0:17 - 2nd Quarter",
+   "alert_fav_score": 0,
+   "alert_dog_score": 3
   },
   "401866468": {
    "sport": "CFB",
@@ -15534,7 +15540,8 @@
    "fav": "home",
    "spread": 42.5,
    "fav_team": "Virginia",
-   "dog_team": "Loyola MD"
+   "dog_team": "Loyola MD",
+   "final": true
   },
   "401906852": {
    "sport": "NCAAB",
@@ -15587,7 +15594,8 @@
    "fav": "home",
    "spread": 21.5,
    "fav_team": "Purdue",
-   "dog_team": "Oakland"
+   "dog_team": "Oakland",
+   "final": true
   },
   "401925927": {
    "sport": "NCAAB",
@@ -15617,7 +15625,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Princeton",
-   "dog_team": "Monmouth"
+   "dog_team": "Monmouth",
+   "final": true
   },
   "401921692": {
    "sport": "NCAAB",
@@ -15647,7 +15656,8 @@
    "fav": "home",
    "spread": 4.5,
    "fav_team": "Iona",
-   "dog_team": "Kansas City"
+   "dog_team": "Kansas City",
+   "final": true
   },
   "401920922": {
    "sport": "NCAAB",
@@ -15699,7 +15709,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Saint Joseph's",
-   "dog_team": "Drexel"
+   "dog_team": "Drexel",
+   "final": true
   },
   "401917903": {
    "sport": "NCAAB",
@@ -15715,7 +15726,8 @@
    "fav": "home",
    "spread": 33.5,
    "fav_team": "Maryland",
-   "dog_team": "Wagner"
+   "dog_team": "Wagner",
+   "final": true
   },
   "401909709": {
    "sport": "NCAAB",
@@ -15859,7 +15871,7 @@
    "spread": 16.5,
    "fav_team": "Kansas St",
    "dog_team": "Campbell",
-   "live_ml": -1850,
+   "live_ml": -445,
    "ml_bucket": "strong",
    "warned": true,
    "warned_at": "2026-11-20T20:32:28",
