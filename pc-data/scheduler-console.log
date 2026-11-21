@@ -10266,3 +10266,22 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-21 00:58:10 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-21 00:58:12 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-21 00:58:13 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 01:26:21 ET] sync_to_github.py: OK in 1688s —   ok: team-total-middles-board-pc.html
+[2026-11-21 01:26:51 ET] notify.py: OK in 30s — notify: voice clip sent via ntfy (notify-voice.mp3).
+[2026-11-21 01:29:10 ET] odds_recorder.py: OK in 108s — SUMMARY: recorded 229 events (146 with odds), db total 308350 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-21 01:32:58 ET] dh_arbitrage.py: OK in 229s — ARBITRAGE: NBA LA Clippers DAL Mavericks Today 8:15 PM / Today 8:15 PM / table / Points B. Lopez Under 14.5 / Alt Points B. Lopez 15+ / table | Bet365 | Caesars
+[2026-11-21 01:33:31 ET] dh_kalshi_poly_arb.py: OK in 32s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-21 01:33:43 ET] wide_builds.py: OK in 10s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 01:37:30 ET] dh_low_holds.py: FAILED (exit 1) in 226s —   - <launched> pid=10508
+[2026-11-21 01:53:43 ET] dh_game_middles.py: OK in 963s — GAME MIDDLE: NCAAF Delaware New Mexico St. Today 3:00 PM / Today 3:00 PM / table / Total Under 54.5 / Alt Total Over 54 / table bar_chart | theScore | ProphetX 
+[2026-11-21 01:59:29 ET] dh_key_number_middles.py: FAILED (exit 1) in 332s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-21 02:18:47 ET] dh_basketball_key_middles.py: OK in 1089s — basketball-key-middles: no new basketball middles.
+[2026-11-21 02:30:54 ET] hung_number.py: FAILED (exit 2) in 701s — state. Re-run with --dump and send the dump file.
+[2026-11-21 02:31:08 ET] rlm.py: OK in 11s
+[2026-11-21 02:31:15 ET] leader_follower.py: OK in 7s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-21 02:31:20 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 | Fanatics | Tennessee Tech spread -33.5 (median -33.5 -> -32.5)
+[2026-11-21 02:42:34 ET] dh_prop_middles.py: OK in 674s — PROP MIDDLE CLEAN : NFL LV Raiders DEN Broncos Nov-22 4:25 PM / Nov-22 4:25 PM / table / Receiving Yards J. Coleman Under 25.5 / Alt Recv Yards J. Coleman 25+ /
+[2026-11-21 02:49:47 ET] dh_sog_middles.py: OK in 431s — - 0 deliverables this run
+[2026-11-21 02:50:53 ET] podcast_transcribe.py: OK in 53s — SUMMARY: discover days=2 added=7 queued_total=47
+[2026-11-21 02:50:54 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
+[2026-11-21 02:50:57 ET] syncing to GitHub (regular 10-minute sync)
