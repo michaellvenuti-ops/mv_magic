@@ -11,3 +11,26 @@
 - 2026-11-21: Siena Saints @ Bucknell Bison — first: Siena Saints (2PT, 0:17 in); lead changes 8; final 93-87
 - 2026-11-21: South Carolina Upstate Spartans @ UNC Greensboro Spartans — first: UNC Greensboro Spartans (2PT, 1:16 in); lead changes 0; final 66-85
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T17:30:54-05:00 -- NCAAB FIRST SCORE (PC): 21 new final(s) tallied; season 957 games through 2026-11-21
+- 2026-11-21: Queens University Royals @ LSU Tigers — first: LSU Tigers (2PT, 0:20 in); lead changes 4; final 75-106
+- 2026-11-21: Columbia Lions @ Boston University Terriers — first: Columbia Lions (2PT, 0:52 in); lead changes 4; final 80-71
+- 2026-11-21: New Hampshire Wildcats @ New Haven Chargers — first: New Haven Chargers (2PT, 1:16 in); lead changes 4; final 47-50
+- 2026-11-21: Kent State Golden Flashes @ Cleveland State Vikings — first: Kent State Golden Flashes (2PT, 0:20 in); lead changes 0; final 69-62
+- 2026-11-21: Denver Pioneers @ Eastern Michigan Eagles — first: Denver Pioneers (2PT, 0:24 in); lead changes 1; final 68-70
+- 2026-11-21: Western Illinois Leathernecks @ Mercyhurst Lakers — first: Mercyhurst Lakers (2PT, 0:35 in); lead changes 6; final 65-68
+- 2026-11-21: Virginia Lynchburg Dragons @ James Madison Dukes — first: James Madison Dukes (3PT, 1:09 in); lead changes 0; final 45-136
+- 2026-11-21: Calumet St. Joseph Crimson Wave @ Purdue Fort Wayne Mastodons — first: Purdue Fort Wayne Mastodons (2PT, 0:23 in); lead changes 0; final 53-99
+- 2026-11-21: Stony Brook Seawolves @ Saint Peter's Peacocks — first: Stony Brook Seawolves (2PT, 0:18 in); lead changes 2; final 67-52
+- 2026-11-21: Cornell Big Red @ Morgan State Bears — first: Cornell Big Red (2PT, 1:18 in); lead changes 0; final 84-63
+- 2026-11-21: Little Rock Trojans @ North Florida Ospreys — first: North Florida Ospreys (2PT, 0:25 in); lead changes 2; final 87-99
+- 2026-11-21: Navy Midshipmen @ Rider Broncs — first: Navy Midshipmen (3PT, 0:44 in); lead changes 5; final 66-69
+- 2026-11-21: Penn State Behrend Lions @ Colgate Raiders — first: Colgate Raiders (FT, 0:14 in); lead changes 0; final 55-87
+- 2026-11-21: New Mexico Lobos @ Wichita State Shockers — first: Wichita State Shockers (2PT, 0:30 in); lead changes 4; final 60-85
+- 2026-11-21: Fordham Rams @ Portland Pilots — first: Fordham Rams (2PT, 0:48 in); lead changes 0; final 87-69
+- 2026-11-21: Northern Illinois Huskies @ Bowling Green Falcons — first: Bowling Green Falcons (2PT, 0:53 in); lead changes 1; final 86-68
+- 2026-11-21: Western Carolina Catamounts @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (3PT, 0:18 in); lead changes 0; final 63-90
+- 2026-11-21: Lafayette Leopards @ Syracuse Orange — first: Lafayette Leopards (2PT, 0:30 in); lead changes 9; final 81-84
+- 2026-11-21: Drake Bulldogs @ Missouri State Bears — first: Missouri State Bears (2PT, 0:21 in); lead changes 8; final 65-67
+- 2026-11-21: St. Thomas Tommies @ Milwaukee Panthers — first: St. Thomas Tommies (2PT, 0:28 in); lead changes 6; final 98-70
+- 2026-11-21: Middle Tennessee Blue Raiders @ Indiana State Sycamores — first: Middle Tennessee Blue Raiders (3PT, 0:49 in); lead changes 10; final 69-59
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
