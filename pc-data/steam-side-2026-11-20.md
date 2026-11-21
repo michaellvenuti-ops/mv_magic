@@ -17,3 +17,4 @@ NEW FLAG: FBS South Alabama @ Southern Miss | 2026-11-20 — Kalshi still dealin
 ## 2026-11-20T17:22:43-05:00 — 70 games, 1 steam events, 2 NEW flags, 3 started games skipped
 NEW FLAG: FBS Clemson @ Duke | 2026-11-20 — bet365 still dealing spread -12.5 on Clemson (pre-move median -12.5, now -11.5)
 NEW FLAG: FBS Clemson @ Duke | 2026-11-20 — FanDuel still dealing spread -12.5 on Clemson (pre-move median -12.5, now -11.5)
+## 2026-11-20T20:13:22-05:00 — 70 games, 0 steam events, 0 NEW flags, 8 started games skipped
