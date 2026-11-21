@@ -1,0 +1,5 @@
+## 2026-11-21T00:58:04-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 932 games through 2026-11-20
+- 2026-11-20: Sam Houston Bearkats @ Boise State Broncos — first: Boise State Broncos (FT, 2:50 in); lead changes 7; final 83-69
+- 2026-11-20: Seton Hall Pirates @ NC State Wolfpack — first: Seton Hall Pirates (2PT, 0:25 in); lead changes 16; final 87-81
+- 2026-11-20: Alabama State Hornets @ Fresno State Bulldogs — first: Alabama State Hornets (3PT, 1:16 in); lead changes 1; final 68-80
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
