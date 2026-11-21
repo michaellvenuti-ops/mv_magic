@@ -10243,3 +10243,24 @@
 [2026-11-21 02:50:53 ET] podcast_transcribe.py: OK in 53s — SUMMARY: discover days=2 added=7 queued_total=47
 [2026-11-21 02:50:54 ET] podcast_transcribe.py: OK in 1s — SUMMARY: work skipped - worker already running
 [2026-11-21 02:50:57 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 03:20:25 ET] sync_to_github.py: FAILED (exit 1) in 1768s —   FAILED: pc-data/wide-builds-2026-11-11.md (HTTP 409: {'error': '{"message":"is at ad6d36d7b28c0a0fa709fa5109a48f000a6ffd79 but expected bb44618375226a2a11fa24
+[2026-11-21 03:22:41 ET] odds_recorder.py: OK in 106s — SUMMARY: recorded 229 events (146 with odds), db total 308579 snapshots / 1428 events, feeds ok 6 fail 0
+[2026-11-21 03:24:36 ET] dh_arbitrage.py: OK in 115s — arbitrage: no new qualifying pairs (silent).
+[2026-11-21 03:25:15 ET] dh_kalshi_poly_arb.py: OK in 39s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-21 03:25:18 ET] wide_builds.py: OK in 2s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 03:25:51 ET] dh_low_holds.py: OK in 32s — LOW-HOLDS: NHL NJ Devils STL Blues Today 7:00 PM / Today 7:00 PM / table / Alt Spread NJ Devils +1.5 / Alt Spread STL Blues -1.5 / table | Caesars | Bally Bet
+[2026-11-21 03:27:41 ET] dh_game_middles.py: OK in 110s — GAME MIDDLE: NCAAF Middle Tennessee Sam Houston Today 2:00 PM / Today 2:00 PM / table / Alt Total Under 50.5 / Alt Total Over 50 / table bar_chart | theScore | 
+[2026-11-21 03:31:13 ET] dh_key_number_middles.py: OK in 213s — key-number-middles: 220 basketball rows excluded (football-only rule).
+[2026-11-21 03:34:37 ET] dh_basketball_key_middles.py: OK in 204s — basketball-key-middles: no new basketball middles.
+[2026-11-21 03:34:48 ET] steam_side.py: OK in 11s — STEAM-SIDE FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 | FanDuel | Mississippi State spread -31.5 (median -32.5 -> -33.5)
+[2026-11-21 03:36:46 ET] dh_prop_middles.py: OK in 118s — PROP MIDDLE : NCAAB S. Carolina UpState UNC Greensboro Today 11:00 AM / Today 11:00 AM / table / Alt Total Under 151.5 / Alt Total Over 151 / table | DraftKings
+[2026-11-21 03:39:18 ET] dh_sog_middles.py: OK in 152s — - 0 deliverables this run
+[2026-11-21 03:39:24 ET] dh_team_total_middles.py: OK in 5s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-21 03:39:26 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 03:39:28 ET] nba_first_score.py: OK in 3s — nba-first-score: 0 new, 2 unverified, 223 total tallied.
+[2026-11-21 03:39:30 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 350 total tallied.
+[2026-11-21 03:39:32 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 2 unverified, 933 total tallied.
+[2026-11-21 03:39:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 763 total tallied.
+[2026-11-21 03:39:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 03:39:36 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-21 03:39:37 ET] syncing to GitHub (regular 10-minute sync)
