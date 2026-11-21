@@ -5,3 +5,4 @@ NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — Caesars still 
 NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — Fanatics still dealing spread -33.5 on Tennessee Tech (pre-move median -33.5, now -32.5)
 ## 2026-11-21T03:34:48-05:00 — 70 games, 1 steam events, 1 NEW flags, 9 started games skipped
 NEW FLAG: FBS Tennessee Tech @ Mississippi State | 2026-11-21 — FanDuel still dealing spread -31.5 on Mississippi State (pre-move median -32.5, now -33.5)
+## 2026-11-21T04:34:27-05:00 — 70 games, 0 steam events, 0 NEW flags, 9 started games skipped
