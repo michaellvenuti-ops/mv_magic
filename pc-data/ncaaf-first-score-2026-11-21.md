@@ -46,3 +46,9 @@
 - 2026-11-21: Northern Illinois Huskies @ North Dakota State Bison — first: North Dakota State Bison (TD, 4:37 in); lead changes 0; final 25-31
 - 2026-11-21: Georgia State Panthers @ Marshall Thundering Herd — first: Georgia State Panthers (TD, 6:51 in); lead changes 1; final 27-28
 - 2026-11-21: South Alabama Jaguars @ Southern Miss Golden Eagles — first: South Alabama Jaguars (TD, 3:21 in); lead changes 2; final 40-35
+## 2026-11-21T22:43:43-05:00 -- NCAAF FIRST SCORE (PC): 5 new final(s) tallied; season 808 games through 2026-11-21
+- 2026-11-21: Virginia Tech Hokies @ Miami Hurricanes — first: Virginia Tech Hokies (TD, 8:17 in); lead changes 1; final 20-28
+- 2026-11-21: Maryland Terrapins @ USC Trojans — first: USC Trojans (FG, 3:22 in); lead changes 2; final 21-35
+- 2026-11-21: Washington State Cougars @ Texas State Bobcats — first: Washington State Cougars (TD, 3:20 in); lead changes 1; final 14-42
+- 2026-11-21: UNLV Rebels @ San José State Spartans — first: UNLV Rebels (TD, 7:33 in); lead changes 2; final 24-22
+- 2026-11-21: Arkansas State Red Wolves @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 9:29 in); lead changes 0; final 3-48
