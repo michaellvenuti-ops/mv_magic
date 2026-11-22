@@ -50,3 +50,9 @@
 - 2026-11-21: Northeastern Huskies @ Stonehill Skyhawks — first: Northeastern Huskies (2PT, 0:05 in); lead changes 5; final 82-95
 - 2026-11-21: Air Force Falcons @ UTSA Roadrunners — first: UTSA Roadrunners (3PT, 0:36 in); lead changes 2; final 68-90
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T20:40:47-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 975 games through 2026-11-21
+- 2026-11-21: Southern Illinois Salukis @ East Carolina Pirates — first: East Carolina Pirates (2PT, 0:34 in); lead changes 3; final 85-69
+- 2026-11-21: UNC Wilmington Seahawks @ Norfolk State Spartans — first: UNC Wilmington Seahawks (3PT, 0:43 in); lead changes 0; final 89-80
+- 2026-11-21: Maine Black Bears @ Massachusetts Minutemen — first: Massachusetts Minutemen (2PT, 0:28 in); lead changes 0; final 44-76
+- 2026-11-21: Coppin State Eagles @ Georgetown Hoyas — first: Coppin State Eagles (2PT, 0:14 in); lead changes 5; final 60-84
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
