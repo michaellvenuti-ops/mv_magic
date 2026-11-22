@@ -39,3 +39,10 @@
 - 2026-11-21: NC State Wolfpack @ Florida State Seminoles — first: Florida State Seminoles (TD, 2:09 in); lead changes 1; final 28-10
 - 2026-11-21: Old Dominion Monarchs @ UConn Huskies — first: UConn Huskies (TD, 6:28 in); lead changes 0; final 21-29
 - 2026-11-21: Georgia Southern Eagles @ Troy Trojans — first: Georgia Southern Eagles (TD, 1:14 in); lead changes 0; final 45-7
+## 2026-11-21T20:40:52-05:00 -- NCAAF FIRST SCORE (PC): 6 new final(s) tallied; season 803 games through 2026-11-21
+- 2026-11-21: UCLA Bruins @ Michigan Wolverines — first: Michigan Wolverines (FG, 26:52 in); lead changes 2; final 16-18
+- 2026-11-21: LSU Tigers @ Tennessee Volunteers — first: LSU Tigers (FG, 7:28 in); lead changes 1; final 13-27
+- 2026-11-21: South Florida Bulls @ Florida Atlantic Owls — first: Florida Atlantic Owls (TD, 11:27 in); lead changes 0; final 14-35
+- 2026-11-21: Northern Illinois Huskies @ North Dakota State Bison — first: North Dakota State Bison (TD, 4:37 in); lead changes 0; final 25-31
+- 2026-11-21: Georgia State Panthers @ Marshall Thundering Herd — first: Georgia State Panthers (TD, 6:51 in); lead changes 1; final 27-28
+- 2026-11-21: South Alabama Jaguars @ Southern Miss Golden Eagles — first: South Alabama Jaguars (TD, 3:21 in); lead changes 2; final 40-35
