@@ -1,5 +1,5 @@
 {
- "through": "2026-11-21",
+ "through": "2026-11-22",
  "games": [
   {
    "away": "Buffalo Sabres",
@@ -5698,20 +5698,20 @@
    "winner": "Ottawa Senators"
   },
   {
-   "date": "2026-11-21",
    "away": "Minnesota Wild",
-   "home": "Vancouver Canucks",
+   "date": "2026-11-21",
+   "final": "3-4",
    "first": "Minnesota Wild",
+   "first_elapsed_sec": 1862,
+   "first_scorer": "Matt Boldy",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Matt Boldy",
-   "first_elapsed_sec": 1862,
-   "winner": "Vancouver Canucks",
-   "shootout": true,
-   "seq": "1-0>1-1>2-1>2-2>3-2>3-3",
+   "home": "Vancouver Canucks",
    "lead_changes": 0,
+   "seq": "1-0>1-1>2-1>2-2>3-2>3-3",
+   "shootout": true,
    "ties": 3,
-   "final": "3-4"
+   "winner": "Vancouver Canucks"
   },
   {
    "away": "New Jersey Devils",
@@ -5778,20 +5778,20 @@
    "winner": "Nashville Predators"
   },
   {
-   "date": "2026-11-21",
    "away": "Seattle Kraken",
-   "home": "San Jose Sharks",
+   "date": "2026-11-21",
+   "final": "3-4",
    "first": "Seattle Kraken",
+   "first_elapsed_sec": 843,
+   "first_scorer": "Kaapo Kakko",
    "first_side": "away",
    "first_strength": "PP",
-   "first_scorer": "Kaapo Kakko",
-   "first_elapsed_sec": 843,
-   "winner": "San Jose Sharks",
-   "shootout": false,
-   "seq": "1-0>1-1>1-2>1-3>1-4>2-4>3-4",
+   "home": "San Jose Sharks",
    "lead_changes": 1,
+   "seq": "1-0>1-1>1-2>1-3>1-4>2-4>3-4",
+   "shootout": false,
    "ties": 1,
-   "final": "3-4"
+   "winner": "San Jose Sharks"
   },
   {
    "away": "Vegas Golden Knights",
@@ -5824,6 +5824,22 @@
    "shootout": false,
    "ties": 3,
    "winner": "Boston Bruins"
+  },
+  {
+   "date": "2026-11-22",
+   "away": "Carolina Hurricanes",
+   "home": "New York Rangers",
+   "first": "Carolina Hurricanes",
+   "first_side": "away",
+   "first_strength": "SH",
+   "first_scorer": "Eric Robinson",
+   "first_elapsed_sec": 420,
+   "winner": "Carolina Hurricanes",
+   "shootout": false,
+   "seq": "1-0>1-1>2-1>3-1>4-1>4-2>5-2",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "5-2"
   }
  ],
  "tally": {
@@ -6068,7 +6084,7 @@
    "won_by_one_when_first_pct": 7.7
   },
   "New York Rangers": {
-   "gp": 21,
+   "gp": 22,
    "scored_first": 12,
    "strengths": {
     "EV": 9,
@@ -6078,9 +6094,9 @@
    "won_when_first": 11,
    "won_when_not_first": 2,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 57.1,
+   "scored_first_pct": 54.5,
    "win_pct_when_first": 91.7,
-   "win_pct_when_not_first": 22.2,
+   "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 16.7
   },
   "Anaheim Ducks": {
@@ -6212,20 +6228,20 @@
    "won_by_one_when_first_pct": 22.2
   },
   "Carolina Hurricanes": {
-   "gp": 22,
-   "scored_first": 15,
+   "gp": 23,
+   "scored_first": 16,
    "strengths": {
     "EV": 13,
     "PP": 1,
-    "SH": 1
+    "SH": 2
    },
-   "won_when_first": 13,
+   "won_when_first": 14,
    "won_when_not_first": 4,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 68.2,
-   "win_pct_when_first": 86.7,
+   "scored_first_pct": 69.6,
+   "win_pct_when_first": 87.5,
    "win_pct_when_not_first": 57.1,
-   "won_by_one_when_first_pct": 13.3
+   "won_by_one_when_first_pct": 12.5
   },
   "Los Angeles Kings": {
    "gp": 20,
@@ -6341,22 +6357,22 @@
   }
  },
  "league": {
-  "games": 364,
-  "games_with_goal": 362,
+  "games": 365,
+  "games_with_goal": 363,
   "shootouts": 29,
   "home_scored_first": 173,
-  "first_team_won": 232,
+  "first_team_won": 233,
   "first_team_won_by_one": 69,
-  "first_team_won_by_one_pct": 19.1,
+  "first_team_won_by_one_pct": 19.0,
   "strengths": {
    "EV": 278,
    "PP": 79,
-   "SH": 5
+   "SH": 6
   },
-  "avg_lead_changes": 0.49,
+  "avg_lead_changes": 0.48,
   "median_first_goal_sec": 873,
-  "home_scored_first_pct": 47.8,
-  "first_team_win_pct": 64.1
+  "home_scored_first_pct": 47.7,
+  "first_team_win_pct": 64.2
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6435,9 +6451,9 @@
    "avg_per_game": 0.23
   },
   "New York Rangers": {
-   "games": 21,
+   "games": 22,
    "lead_changes": 7,
-   "avg_per_game": 0.33
+   "avg_per_game": 0.32
   },
   "Anaheim Ducks": {
    "games": 24,
@@ -6480,9 +6496,9 @@
    "avg_per_game": 0.81
   },
   "Carolina Hurricanes": {
-   "games": 22,
+   "games": 23,
    "lead_changes": 11,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.48
   },
   "Los Angeles Kings": {
    "games": 20,
