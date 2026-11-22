@@ -10894,6 +10894,20 @@
    "winner": "Marshall Thundering Herd"
   },
   {
+   "date": "2026-11-21",
+   "away": "Hawai'i Rainbow Warriors",
+   "home": "Nevada Wolf Pack",
+   "first": "Nevada Wolf Pack",
+   "first_side": "home",
+   "first_kind": "FG",
+   "first_elapsed_sec": 1264,
+   "winner": "Nevada Wolf Pack",
+   "seq": "0-3>0-6>0-13>0-16>8-16",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "8-16"
+  },
+  {
    "away": "Houston Cougars",
    "date": "2026-11-21",
    "final": "34-31",
@@ -11104,6 +11118,20 @@
    "winner": "Nebraska Cornhuskers"
   },
   {
+   "date": "2026-11-21",
+   "away": "Oklahoma State Cowboys",
+   "home": "Arizona State Sun Devils",
+   "first": "Oklahoma State Cowboys",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 291,
+   "winner": "Oklahoma State Cowboys",
+   "seq": "7-0>7-7>7-14>7-21>7-24>14-24>17-24>24-24>24-27>27-27>30-27",
+   "lead_changes": 2,
+   "ties": 3,
+   "final": "30-27"
+  },
+  {
    "away": "Old Dominion Monarchs",
    "date": "2026-11-21",
    "final": "21-29",
@@ -11172,6 +11200,20 @@
    "seq": "0-7>3-7>3-14>3-21>3-28>3-35>3-42>3-49>3-52>10-52>17-52>17-59",
    "ties": 0,
    "winner": "Auburn Tigers"
+  },
+  {
+   "date": "2026-11-21",
+   "away": "San Diego State Aztecs",
+   "home": "Boise State Broncos",
+   "first": "Boise State Broncos",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 903,
+   "winner": "San Diego State Aztecs",
+   "seq": "0-7>7-7>7-10>10-10>10-17>13-17>13-20>19-20>22-20",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "22-20"
   },
   {
    "away": "South Alabama Jaguars",
@@ -11315,17 +11357,31 @@
   },
   {
    "date": "2026-11-21",
-   "away": "Utah Utes",
-   "home": "TCU Horned Frogs",
-   "first": "Utah Utes",
+   "away": "Utah State Aggies",
+   "home": "Oregon State Beavers",
+   "first": "Utah State Aggies",
    "first_side": "away",
-   "first_kind": "FG",
+   "first_kind": "TD",
+   "first_elapsed_sec": 140,
+   "winner": "Oregon State Beavers",
+   "seq": "7-0>14-0>14-3>14-10>17-10>17-17>24-17>24-24>24-31",
+   "lead_changes": 1,
+   "ties": 2,
+   "final": "24-31"
+  },
+  {
+   "away": "Utah Utes",
+   "date": "2026-11-21",
+   "final": "38-17",
+   "first": "Utah Utes",
    "first_elapsed_sec": 478,
-   "winner": "Utah Utes",
-   "seq": "3-0>10-0>17-0>17-7>17-14>17-17>24-17>31-17>38-17",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "TCU Horned Frogs",
    "lead_changes": 0,
+   "seq": "3-0>10-0>17-0>17-7>17-14>17-17>24-17>31-17>38-17",
    "ties": 1,
-   "final": "38-17"
+   "winner": "Utah Utes"
   },
   {
    "away": "Vanderbilt Commodores",
@@ -11428,7 +11484,7 @@
  ],
  "tally": {
   "Hawai'i Rainbow Warriors": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 5,
    "kinds": {
     "FG": 2,
@@ -11438,7 +11494,7 @@
    "won_when_first": 3,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -12404,20 +12460,20 @@
    "won_by_one_when_first_pct": 25.0
   },
   "Boise State Broncos": {
-   "gp": 10,
-   "scored_first": 7,
+   "gp": 11,
+   "scored_first": 8,
    "kinds": {
     "FG": 1,
-    "TD": 6,
+    "TD": 7,
     "Safety": 0
    },
    "won_when_first": 6,
    "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 70.0,
-   "win_pct_when_first": 85.7,
+   "scored_first_pct": 72.7,
+   "win_pct_when_first": 75.0,
    "win_pct_when_not_first": 100.0,
-   "won_by_one_when_first_pct": 14.3
+   "won_by_one_when_first_pct": 12.5
   },
   "Oregon Ducks": {
    "gp": 11,
@@ -12900,18 +12956,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Utah State Aggies": {
-   "gp": 10,
-   "scored_first": 5,
+   "gp": 11,
+   "scored_first": 6,
    "kinds": {
     "FG": 1,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
    "won_when_first": 3,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 60.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13220,7 +13276,7 @@
    "won_by_one_when_first_pct": null
   },
   "Arizona State Sun Devils": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 5,
    "kinds": {
     "FG": 3,
@@ -13230,9 +13286,9 @@
    "won_when_first": 4,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 80.0,
-   "win_pct_when_not_first": 40.0,
+   "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
   "Murray State Racers": {
@@ -13556,18 +13612,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Oklahoma State Cowboys": {
-   "gp": 10,
-   "scored_first": 5,
+   "gp": 11,
+   "scored_first": 6,
    "kinds": {
     "FG": 2,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 4,
+   "won_when_first": 5,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 80.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 83.3,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13588,7 +13644,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Oregon State Beavers": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 7,
    "kinds": {
     "FG": 1,
@@ -13596,11 +13652,11 @@
     "Safety": 0
    },
    "won_when_first": 5,
-   "won_when_not_first": 0,
+   "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
+   "scored_first_pct": 63.6,
    "win_pct_when_first": 71.4,
-   "win_pct_when_not_first": 0.0,
+   "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Houston Cougars": {
@@ -13636,7 +13692,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "San Diego State Aztecs": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 3,
    "kinds": {
     "FG": 2,
@@ -13644,11 +13700,11 @@
     "Safety": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 30.0,
+   "scored_first_pct": 27.3,
    "win_pct_when_first": 66.7,
-   "win_pct_when_not_first": 42.9,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Rhode Island Rams": {
@@ -14180,18 +14236,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Nevada Wolf Pack": {
-   "gp": 10,
-   "scored_first": 7,
+   "gp": 11,
+   "scored_first": 8,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 6,
     "Safety": 0
    },
-   "won_when_first": 4,
+   "won_when_first": 5,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
-   "win_pct_when_first": 57.1,
+   "scored_first_pct": 72.7,
+   "win_pct_when_first": 62.5,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -15237,26 +15293,26 @@
   }
  },
  "league": {
-  "games": 816,
-  "home_scored_first": 484,
-  "first_team_won": 573,
+  "games": 820,
+  "home_scored_first": 486,
+  "first_team_won": 575,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.5,
   "kinds": {
-   "FG": 227,
-   "TD": 587,
+   "FG": 228,
+   "TD": 590,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
   "median_first_score_sec": 341,
   "home_scored_first_pct": 59.3,
-  "first_team_win_pct": 70.2
+  "first_team_win_pct": 70.1
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 6,
-   "avg_per_game": 0.6
+   "avg_per_game": 0.55
   },
   "Stanford Cardinal": {
    "games": 10,
@@ -15559,8 +15615,8 @@
    "avg_per_game": 0.45
   },
   "Boise State Broncos": {
-   "games": 10,
-   "lead_changes": 10,
+   "games": 11,
+   "lead_changes": 11,
    "avg_per_game": 1.0
   },
   "Oregon Ducks": {
@@ -15714,9 +15770,9 @@
    "avg_per_game": 4.0
   },
   "Utah State Aggies": {
-   "games": 10,
-   "lead_changes": 13,
-   "avg_per_game": 1.3
+   "games": 11,
+   "lead_changes": 14,
+   "avg_per_game": 1.27
   },
   "Kent State Golden Flashes": {
    "games": 11,
@@ -15814,9 +15870,9 @@
    "avg_per_game": 0.0
   },
   "Arizona State Sun Devils": {
-   "games": 10,
-   "lead_changes": 7,
-   "avg_per_game": 0.7
+   "games": 11,
+   "lead_changes": 9,
+   "avg_per_game": 0.82
   },
   "Murray State Racers": {
    "games": 2,
@@ -15919,9 +15975,9 @@
    "avg_per_game": 0.91
   },
   "Oklahoma State Cowboys": {
-   "games": 10,
-   "lead_changes": 15,
-   "avg_per_game": 1.5
+   "games": 11,
+   "lead_changes": 17,
+   "avg_per_game": 1.55
   },
   "Tulsa Golden Hurricane": {
    "games": 11,
@@ -15929,9 +15985,9 @@
    "avg_per_game": 1.0
   },
   "Oregon State Beavers": {
-   "games": 10,
-   "lead_changes": 6,
-   "avg_per_game": 0.6
+   "games": 11,
+   "lead_changes": 7,
+   "avg_per_game": 0.64
   },
   "Houston Cougars": {
    "games": 11,
@@ -15944,8 +16000,8 @@
    "avg_per_game": 0.5
   },
   "San Diego State Aztecs": {
-   "games": 10,
-   "lead_changes": 10,
+   "games": 11,
+   "lead_changes": 11,
    "avg_per_game": 1.0
   },
   "Rhode Island Rams": {
@@ -16114,9 +16170,9 @@
    "avg_per_game": 0.73
   },
   "Nevada Wolf Pack": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 9,
-   "avg_per_game": 0.9
+   "avg_per_game": 0.82
   },
   "Western Michigan Broncos": {
    "games": 11,
