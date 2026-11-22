@@ -5602,6 +5602,22 @@
    "winner": "Seattle Kraken"
   },
   {
+   "date": "2026-11-21",
+   "away": "Anaheim Ducks",
+   "home": "Utah Mammoth",
+   "first": "Anaheim Ducks",
+   "first_side": "away",
+   "first_strength": "EV",
+   "first_scorer": "Leo Carlsson",
+   "first_elapsed_sec": 814,
+   "winner": "Utah Mammoth",
+   "shootout": false,
+   "seq": "1-0>1-1>1-2>1-3>2-3",
+   "lead_changes": 1,
+   "ties": 1,
+   "final": "2-3"
+  },
+  {
    "away": "Buffalo Sabres",
    "date": "2026-11-21",
    "final": "3-4",
@@ -5634,20 +5650,20 @@
    "winner": "Chicago Blackhawks"
   },
   {
-   "date": "2026-11-21",
    "away": "Columbus Blue Jackets",
-   "home": "Toronto Maple Leafs",
+   "date": "2026-11-21",
+   "final": "4-3",
    "first": "Toronto Maple Leafs",
+   "first_elapsed_sec": 82,
+   "first_scorer": "Auston Matthews",
    "first_side": "home",
    "first_strength": "PP",
-   "first_scorer": "Auston Matthews",
-   "first_elapsed_sec": 82,
-   "winner": "Columbus Blue Jackets",
-   "shootout": false,
-   "seq": "0-1>1-1>1-2>1-3>2-3>3-3>4-3",
+   "home": "Toronto Maple Leafs",
    "lead_changes": 1,
+   "seq": "0-1>1-1>1-2>1-3>2-3>3-3>4-3",
+   "shootout": false,
    "ties": 2,
-   "final": "4-3"
+   "winner": "Columbus Blue Jackets"
   },
   {
    "away": "Edmonton Oilers",
@@ -5666,68 +5682,68 @@
    "winner": "Carolina Hurricanes"
   },
   {
-   "date": "2026-11-21",
    "away": "Los Angeles Kings",
-   "home": "Ottawa Senators",
+   "date": "2026-11-21",
+   "final": "2-4",
    "first": "Los Angeles Kings",
-   "first_side": "away",
-   "first_strength": "EV",
-   "first_scorer": "Mats Zuccarello",
    "first_elapsed_sec": 942,
-   "winner": "Ottawa Senators",
-   "shootout": false,
-   "seq": "1-0>1-1>1-2>1-3>1-4>2-4",
-   "lead_changes": 1,
-   "ties": 1,
-   "final": "2-4"
-  },
-  {
-   "date": "2026-11-21",
-   "away": "New Jersey Devils",
-   "home": "St. Louis Blues",
-   "first": "St. Louis Blues",
-   "first_side": "home",
-   "first_strength": "EV",
-   "first_scorer": "Brandon Carlo",
-   "first_elapsed_sec": 1089,
-   "winner": "St. Louis Blues",
-   "shootout": false,
-   "seq": "0-1>0-2>0-3>1-3>1-4>2-4>3-4>3-5>4-5>4-6>4-7>4-8>5-8>6-8>6-9",
-   "lead_changes": 0,
-   "ties": 0,
-   "final": "6-9"
-  },
-  {
-   "date": "2026-11-21",
-   "away": "New York Islanders",
-   "home": "Detroit Red Wings",
-   "first": "Detroit Red Wings",
-   "first_side": "home",
-   "first_strength": "EV",
-   "first_scorer": "Emmitt Finnie",
-   "first_elapsed_sec": 681,
-   "winner": "New York Islanders",
-   "shootout": false,
-   "seq": "0-1>1-1>2-1>3-1>3-2",
-   "lead_changes": 1,
-   "ties": 1,
-   "final": "3-2"
-  },
-  {
-   "date": "2026-11-21",
-   "away": "Philadelphia Flyers",
-   "home": "Montreal Canadiens",
-   "first": "Philadelphia Flyers",
+   "first_scorer": "Mats Zuccarello",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Christian Dvorak",
-   "first_elapsed_sec": 591,
-   "winner": "Philadelphia Flyers",
+   "home": "Ottawa Senators",
+   "lead_changes": 1,
+   "seq": "1-0>1-1>1-2>1-3>1-4>2-4",
    "shootout": false,
-   "seq": "1-0>1-1>2-1>3-1>3-2>3-3>4-3",
+   "ties": 1,
+   "winner": "Ottawa Senators"
+  },
+  {
+   "away": "New Jersey Devils",
+   "date": "2026-11-21",
+   "final": "6-9",
+   "first": "St. Louis Blues",
+   "first_elapsed_sec": 1089,
+   "first_scorer": "Brandon Carlo",
+   "first_side": "home",
+   "first_strength": "EV",
+   "home": "St. Louis Blues",
    "lead_changes": 0,
+   "seq": "0-1>0-2>0-3>1-3>1-4>2-4>3-4>3-5>4-5>4-6>4-7>4-8>5-8>6-8>6-9",
+   "shootout": false,
+   "ties": 0,
+   "winner": "St. Louis Blues"
+  },
+  {
+   "away": "New York Islanders",
+   "date": "2026-11-21",
+   "final": "3-2",
+   "first": "Detroit Red Wings",
+   "first_elapsed_sec": 681,
+   "first_scorer": "Emmitt Finnie",
+   "first_side": "home",
+   "first_strength": "EV",
+   "home": "Detroit Red Wings",
+   "lead_changes": 1,
+   "seq": "0-1>1-1>2-1>3-1>3-2",
+   "shootout": false,
+   "ties": 1,
+   "winner": "New York Islanders"
+  },
+  {
+   "away": "Philadelphia Flyers",
+   "date": "2026-11-21",
+   "final": "4-3",
+   "first": "Philadelphia Flyers",
+   "first_elapsed_sec": 591,
+   "first_scorer": "Christian Dvorak",
+   "first_side": "away",
+   "first_strength": "EV",
+   "home": "Montreal Canadiens",
+   "lead_changes": 0,
+   "seq": "1-0>1-1>2-1>3-1>3-2>3-3>4-3",
+   "shootout": false,
    "ties": 2,
-   "final": "4-3"
+   "winner": "Philadelphia Flyers"
   },
   {
    "away": "Pittsburgh Penguins",
@@ -5746,36 +5762,36 @@
    "winner": "Nashville Predators"
   },
   {
-   "date": "2026-11-21",
    "away": "Vegas Golden Knights",
-   "home": "Winnipeg Jets",
+   "date": "2026-11-21",
+   "final": "5-4",
    "first": "Winnipeg Jets",
+   "first_elapsed_sec": 1171,
+   "first_scorer": "Adam Lowry",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Adam Lowry",
-   "first_elapsed_sec": 1171,
-   "winner": "Vegas Golden Knights",
-   "shootout": true,
-   "seq": "0-1>1-1>2-1>2-2>3-2>3-3>3-4>4-4",
+   "home": "Winnipeg Jets",
    "lead_changes": 2,
+   "seq": "0-1>1-1>2-1>2-2>3-2>3-3>3-4>4-4",
+   "shootout": true,
    "ties": 4,
-   "final": "5-4"
+   "winner": "Vegas Golden Knights"
   },
   {
-   "date": "2026-11-21",
    "away": "Washington Capitals",
-   "home": "Boston Bruins",
+   "date": "2026-11-21",
+   "final": "5-7",
    "first": "Washington Capitals",
+   "first_elapsed_sec": 717,
+   "first_scorer": "Tom Wilson",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Tom Wilson",
-   "first_elapsed_sec": 717,
-   "winner": "Boston Bruins",
-   "shootout": false,
-   "seq": "1-0>1-1>2-1>2-2>2-3>2-4>3-4>4-4>4-5>4-6>5-6>5-7",
+   "home": "Boston Bruins",
    "lead_changes": 1,
+   "seq": "1-0>1-1>2-1>2-2>2-3>2-4>3-4>4-4>4-5>4-6>5-6>5-7",
+   "shootout": false,
    "ties": 3,
-   "final": "5-7"
+   "winner": "Boston Bruins"
   }
  ],
  "tally": {
@@ -5828,7 +5844,7 @@
    "won_by_one_when_first_pct": 11.1
   },
   "Utah Mammoth": {
-   "gp": 23,
+   "gp": 24,
    "scored_first": 10,
    "strengths": {
     "EV": 5,
@@ -5836,11 +5852,11 @@
     "SH": 0
    },
    "won_when_first": 8,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 43.5,
+   "scored_first_pct": 41.7,
    "win_pct_when_first": 80.0,
-   "win_pct_when_not_first": 23.1,
+   "win_pct_when_not_first": 28.6,
    "won_by_one_when_first_pct": 30.0
   },
   "Edmonton Oilers": {
@@ -6036,20 +6052,20 @@
    "won_by_one_when_first_pct": 16.7
   },
   "Anaheim Ducks": {
-   "gp": 23,
-   "scored_first": 13,
+   "gp": 24,
+   "scored_first": 14,
    "strengths": {
-    "EV": 6,
+    "EV": 7,
     "PP": 7,
     "SH": 0
    },
    "won_when_first": 8,
    "won_when_not_first": 3,
    "won_by_one_when_first": 4,
-   "scored_first_pct": 56.5,
-   "win_pct_when_first": 61.5,
+   "scored_first_pct": 58.3,
+   "win_pct_when_first": 57.1,
    "win_pct_when_not_first": 30.0,
-   "won_by_one_when_first_pct": 30.8
+   "won_by_one_when_first_pct": 28.6
   },
   "Vegas Golden Knights": {
    "gp": 24,
@@ -6293,22 +6309,22 @@
   }
  },
  "league": {
-  "games": 361,
-  "games_with_goal": 359,
+  "games": 362,
+  "games_with_goal": 360,
   "shootouts": 28,
   "home_scored_first": 173,
   "first_team_won": 232,
   "first_team_won_by_one": 69,
   "first_team_won_by_one_pct": 19.2,
   "strengths": {
-   "EV": 276,
+   "EV": 277,
    "PP": 78,
    "SH": 5
   },
-  "avg_lead_changes": 0.48,
-  "median_first_goal_sec": 874,
-  "home_scored_first_pct": 48.2,
-  "first_team_win_pct": 64.6
+  "avg_lead_changes": 0.49,
+  "median_first_goal_sec": 873,
+  "home_scored_first_pct": 48.1,
+  "first_team_win_pct": 64.4
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6327,9 +6343,9 @@
    "avg_per_game": 0.5
   },
   "Utah Mammoth": {
-   "games": 23,
-   "lead_changes": 7,
-   "avg_per_game": 0.3
+   "games": 24,
+   "lead_changes": 8,
+   "avg_per_game": 0.33
   },
   "Edmonton Oilers": {
    "games": 24,
@@ -6392,9 +6408,9 @@
    "avg_per_game": 0.33
   },
   "Anaheim Ducks": {
-   "games": 23,
-   "lead_changes": 12,
-   "avg_per_game": 0.52
+   "games": 24,
+   "lead_changes": 13,
+   "avg_per_game": 0.54
   },
   "Vegas Golden Knights": {
    "games": 24,
