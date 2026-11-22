@@ -34,3 +34,19 @@
 - 2026-11-21: St. Thomas Tommies @ Milwaukee Panthers — first: St. Thomas Tommies (2PT, 0:28 in); lead changes 6; final 98-70
 - 2026-11-21: Middle Tennessee Blue Raiders @ Indiana State Sycamores — first: Middle Tennessee Blue Raiders (3PT, 0:49 in); lead changes 10; final 69-59
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T19:16:21-05:00 -- NCAAB FIRST SCORE (PC): 14 new final(s) tallied; season 971 games through 2026-11-21
+- 2026-11-21: Winthrop Eagles @ Wofford Terriers — first: Wofford Terriers (2PT, 0:20 in); lead changes 2; final 86-91
+- 2026-11-21: Southern Miss Golden Eagles @ Nicholls Colonels — first: Southern Miss Golden Eagles (2PT, 0:29 in); lead changes 10; final 80-69
+- 2026-11-21: UT Rio Grande Valley Vaqueros @ Austin Peay Governors — first: Austin Peay Governors (3PT, 0:40 in); lead changes 3; final 79-73
+- 2026-11-21: Army Black Knights @ Binghamton Bearcats — first: Army Black Knights (2PT, 1:15 in); lead changes 1; final 46-67
+- 2026-11-21: Clinton Golden Bears @ Furman Paladins — first: Furman Paladins (FT, 0:33 in); lead changes 0; final 69-108
+- 2026-11-21: Justice Lions @ Northern Colorado Bears — first: Northern Colorado Bears (2PT, 1:06 in); lead changes 0; final 66-89
+- 2026-11-21: UAlbany Great Danes @ Canisius Golden Griffins — first: Canisius Golden Griffins (FT, 0:53 in); lead changes 6; final 81-91
+- 2026-11-21: Longwood Lancers @ East Tennessee State Buccaneers — first: East Tennessee State Buccaneers (2PT, 0:49 in); lead changes 4; final 68-74
+- 2026-11-21: Pennsylvania Quakers @ La Salle Explorers — first: Pennsylvania Quakers (2PT, 1:21 in); lead changes 0; final 83-73
+- 2026-11-21: South Florida Bulls @ George Mason Patriots — first: George Mason Patriots (FT, 0:47 in); lead changes 0; final 62-73
+- 2026-11-21: Central Arkansas Bears @ Jacksonville Dolphins — first: Central Arkansas Bears (2PT, 0:16 in); lead changes 2; final 82-67
+- 2026-11-21: San Diego Toreros @ UC Irvine Anteaters — first: San Diego Toreros (2PT, 0:45 in); lead changes 10; final 67-64
+- 2026-11-21: Northeastern Huskies @ Stonehill Skyhawks — first: Northeastern Huskies (2PT, 0:05 in); lead changes 5; final 82-95
+- 2026-11-21: Air Force Falcons @ UTSA Roadrunners — first: UTSA Roadrunners (3PT, 0:36 in); lead changes 2; final 68-90
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
