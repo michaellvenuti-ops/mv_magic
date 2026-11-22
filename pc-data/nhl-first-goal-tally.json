@@ -5603,19 +5603,35 @@
   },
   {
    "date": "2026-11-21",
-   "away": "Edmonton Oilers",
-   "home": "Carolina Hurricanes",
-   "first": "Edmonton Oilers",
-   "first_side": "away",
+   "away": "Chicago Blackhawks",
+   "home": "Calgary Flames",
+   "first": "Calgary Flames",
+   "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Owen Michaels",
-   "first_elapsed_sec": 562,
-   "winner": "Carolina Hurricanes",
+   "first_scorer": "Ryan Strome",
+   "first_elapsed_sec": 555,
+   "winner": "Chicago Blackhawks",
    "shootout": false,
-   "seq": "1-0>2-0>2-1>3-1>3-2>3-3>3-4>4-4>4-5>4-6>4-7",
+   "seq": "0-1>1-1>2-1>3-1>3-2>3-3>4-3",
    "lead_changes": 1,
    "ties": 2,
-   "final": "4-7"
+   "final": "4-3"
+  },
+  {
+   "away": "Edmonton Oilers",
+   "date": "2026-11-21",
+   "final": "4-7",
+   "first": "Edmonton Oilers",
+   "first_elapsed_sec": 562,
+   "first_scorer": "Owen Michaels",
+   "first_side": "away",
+   "first_strength": "EV",
+   "home": "Carolina Hurricanes",
+   "lead_changes": 1,
+   "seq": "1-0>2-0>2-1>3-1>3-2>3-3>3-4>4-4>4-5>4-6>4-7",
+   "shootout": false,
+   "ties": 2,
+   "winner": "Carolina Hurricanes"
   }
  ],
  "tally": {
@@ -5652,7 +5668,7 @@
    "won_by_one_when_first_pct": 40.0
   },
   "Chicago Blackhawks": {
-   "gp": 21,
+   "gp": 22,
    "scored_first": 9,
    "strengths": {
     "EV": 7,
@@ -5660,11 +5676,11 @@
     "SH": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 4,
+   "won_when_not_first": 5,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 42.9,
+   "scored_first_pct": 40.9,
    "win_pct_when_first": 22.2,
-   "win_pct_when_not_first": 33.3,
+   "win_pct_when_not_first": 38.5,
    "won_by_one_when_first_pct": 11.1
   },
   "Utah Mammoth": {
@@ -5828,20 +5844,20 @@
    "won_by_one_when_first_pct": 33.3
   },
   "Calgary Flames": {
-   "gp": 23,
-   "scored_first": 10,
+   "gp": 24,
+   "scored_first": 11,
    "strengths": {
-    "EV": 7,
+    "EV": 8,
     "PP": 3,
     "SH": 0
    },
    "won_when_first": 7,
    "won_when_not_first": 3,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 43.5,
-   "win_pct_when_first": 70.0,
+   "scored_first_pct": 45.8,
+   "win_pct_when_first": 63.6,
    "win_pct_when_not_first": 23.1,
-   "won_by_one_when_first_pct": 30.0
+   "won_by_one_when_first_pct": 27.3
   },
   "Tampa Bay Lightning": {
    "gp": 22,
@@ -6133,22 +6149,22 @@
   }
  },
  "league": {
-  "games": 351,
-  "games_with_goal": 349,
+  "games": 352,
+  "games_with_goal": 350,
   "shootouts": 27,
-  "home_scored_first": 167,
+  "home_scored_first": 168,
   "first_team_won": 229,
   "first_team_won_by_one": 67,
-  "first_team_won_by_one_pct": 19.2,
+  "first_team_won_by_one_pct": 19.1,
   "strengths": {
-   "EV": 267,
+   "EV": 268,
    "PP": 77,
    "SH": 5
   },
   "avg_lead_changes": 0.47,
-  "median_first_goal_sec": 874,
-  "home_scored_first_pct": 47.9,
-  "first_team_win_pct": 65.6
+  "median_first_goal_sec": 873,
+  "home_scored_first_pct": 48.0,
+  "first_team_win_pct": 65.4
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6162,9 +6178,9 @@
    "avg_per_game": 0.25
   },
   "Chicago Blackhawks": {
-   "games": 21,
-   "lead_changes": 10,
-   "avg_per_game": 0.48
+   "games": 22,
+   "lead_changes": 11,
+   "avg_per_game": 0.5
   },
   "Utah Mammoth": {
    "games": 23,
@@ -6217,9 +6233,9 @@
    "avg_per_game": 0.26
   },
   "Calgary Flames": {
-   "games": 23,
-   "lead_changes": 8,
-   "avg_per_game": 0.35
+   "games": 24,
+   "lead_changes": 9,
+   "avg_per_game": 0.38
   },
   "Tampa Bay Lightning": {
    "games": 22,
