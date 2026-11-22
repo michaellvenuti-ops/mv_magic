@@ -10596,3 +10596,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-21 23:45:12 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
 [2026-11-21 23:45:14 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-21 23:45:14 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 00:15:29 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 00:33:18 ET] odds_recorder.py: OK in 1021s — SUMMARY: recorded 224 events (12 with odds), db total 311748 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-22 00:33:32 ET] wide_builds.py: OK in 12s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 00:46:07 ET] dh_game_middles.py: FAILED (exit 1) in 754s —   - <launched> pid=18448
+[2026-11-22 00:50:51 ET] dh_key_number_middles.py: FAILED (exit 1) in 279s —   - <launched> pid=16900
+[2026-11-22 00:54:25 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 213s —   - <launched> pid=14916
+[2026-11-22 01:00:42 ET] hung_number.py: FAILED (exit 2) in 376s — state. Re-run with --dump and send the dump file.
+[2026-11-22 01:00:58 ET] rlm.py: OK in 13s
+[2026-11-22 01:01:04 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-22 01:01:07 ET] steam_side.py: OK in 3s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 01:04:45 ET] dh_prop_middles.py: FAILED (exit 1) in 218s —   - <launched> pid=19800
+[2026-11-22 01:08:43 ET] dh_sog_middles.py: FAILED (exit 1) in 237s —   - <launched> pid=1300
+[2026-11-22 01:09:05 ET] dh_team_total_middles.py: OK in 20s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-22 01:09:06 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-22 01:09:09 ET] nba_first_score.py: OK in 2s — nba-first-score: 1 new, 1 unverified, 229 total tallied.
+[2026-11-22 01:09:10 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 2 new, 0 unverified, 364 total tallied.
+[2026-11-22 01:09:13 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 1 unverified, 989 total tallied.
+[2026-11-22 01:09:14 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 1 new, 1 unverified, 816 total tallied.
+[2026-11-22 01:09:18 ET] pace_board.py: OK in 4s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-22 01:09:20 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-22 01:09:21 ET] syncing to GitHub (regular 10-minute sync)
