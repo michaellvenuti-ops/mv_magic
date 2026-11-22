@@ -10598,3 +10598,26 @@
 [2026-11-22 02:39:42 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=45
 [2026-11-22 02:39:43 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=45, limit=5)
 [2026-11-22 02:39:43 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 03:10:04 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 03:41:27 ET] odds_recorder.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 03:55:25 ET] dh_arbitrage.py: FAILED (exit 1) in 826s —   - <launched> pid=16640
+[2026-11-22 04:07:50 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 736s —   - <launched> pid=9136
+[2026-11-22 04:08:35 ET] wide_builds.py: OK in 30s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 04:19:44 ET] dh_game_middles.py: FAILED (exit 1) in 669s —   - <launched> pid=7948
+[2026-11-22 04:32:25 ET] dh_key_number_middles.py: FAILED (exit 1) in 753s —   - <launched> pid=12532
+[2026-11-22 04:44:49 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 730s —   - <launched> pid=18624
+[2026-11-22 04:55:48 ET] hung_number.py: FAILED (exit 1) in 649s —   - <launched> pid=9944
+[2026-11-22 04:58:25 ET] rlm.py: OK in 141s
+[2026-11-22 05:01:40 ET] leader_follower.py: OK in 185s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-22 05:02:07 ET] steam_side.py: OK in 26s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 05:16:55 ET] dh_prop_middles.py: FAILED (exit 1) in 887s —   - <launched> pid=11464
+[2026-11-22 05:37:46 ET] dh_sog_middles.py: FAILED (exit 1) in 1221s —   - <launched> pid=1112
+[2026-11-22 05:45:01 ET] dh_team_total_middles.py: FAILED (exit 2) in 403s — team-total-middles: Kalshi fetch failed (HTTPSConnectionPool(host='api.elections.kalshi.com', port=443): Max retries exceeded with url: /trade-api/v2/markets?se
+[2026-11-22 05:46:02 ET] nfl_first_score.py: OK in 39s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-22 05:46:19 ET] nba_first_score.py: OK in 16s — nba-first-score: 0 new, 1 unverified, 229 total tallied.
+[2026-11-22 05:46:23 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 0 new, 0 unverified, 364 total tallied.
+[2026-11-22 05:46:29 ET] ncaab_first_score.py: OK in 6s — ncaab-first-score: 1 new, 0 unverified, 991 total tallied.
+[2026-11-22 05:46:31 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-22 05:46:35 ET] pace_board.py: OK in 4s — pace: already built for 2026-11-22; skipping.
+[2026-11-22 05:46:59 ET] nba_overs_pregame.py: OK in 23s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-22 05:47:02 ET] syncing to GitHub (regular 10-minute sync)
