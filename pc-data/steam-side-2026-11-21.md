@@ -38,3 +38,7 @@ NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — FanDuel still de
 ## 2026-11-21T16:56:54-05:00 — 70 games, 8 steam events, 2 NEW flags, 41 started games skipped
 NEW FLAG: FBS Florida International @ Kennesaw State | 2026-11-21 — Kalshi still dealing spread 1.5 on Kennesaw State (pre-move median -2.5, now -8.5)
 NEW FLAG: FBS Georgia Southern @ Troy | 2026-11-21 — Kalshi still dealing spread 8.5 on Georgia Southern (pre-move median 9.5, now 20.5)
+## 2026-11-21T18:53:14-05:00 — 70 games, 9 steam events, 3 NEW flags, 43 started games skipped
+NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — Kalshi still dealing spread -19.5 on Florida Atlantic (pre-move median -19.5, now -21.5)
+NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — Kalshi still dealing total 48.5 on Over (pre-move median 48.5, now 58.5)
+NEW FLAG: FBS Northern Illinois @ North Dakota State | 2026-11-21 — Kalshi still dealing spread -30.5 on Northern Illinois (pre-move median -30.0, now -20.5)
