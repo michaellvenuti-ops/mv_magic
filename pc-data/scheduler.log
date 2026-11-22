@@ -10489,3 +10489,24 @@
 [2026-11-21 19:16:30 ET] pace_board.py: OK in 3s — pace: already built for 2026-11-21; skipping.
 [2026-11-21 19:16:39 ET] nba_overs_pregame.py: OK in 9s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
 [2026-11-21 19:16:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 19:47:17 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-21 20:03:42 ET] odds_recorder.py: OK in 932s — SUMMARY: recorded 224 events (32 with odds), db total 311076 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-21 20:08:37 ET] dh_arbitrage.py: FAILED (exit 1) in 292s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-21 20:11:28 ET] dh_kalshi_poly_arb.py: OK in 170s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-21 20:11:37 ET] wide_builds.py: OK in 6s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 20:13:16 ET] dh_low_holds.py: OK in 99s — LOW-HOLDS: NFL ARI Cardinals KC Chiefs Nov-22 1:00 PM / Nov-22 1:00 PM / table bar_chart / First TD Scorer C. Allen NO / First TD Scorer C. Allen YES / table ba
+[2026-11-21 20:16:47 ET] dh_game_middles.py: OK in 211s — GAME MIDDLE: NFL PIT Steelers PHI Eagles Nov-22 1:00 PM / Nov-22 1:00 PM / table / Rush Yards R. Dowdle Under 40.5 / Alt Rush Yards R. Dowdle 40+ / table | FanD
+[2026-11-21 20:21:47 ET] dh_key_number_middles.py: OK in 297s — key-number-middles: 141 basketball rows excluded (football-only rule).
+[2026-11-21 20:29:30 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 462s —   - waiting for locator("body")
+[2026-11-21 20:30:20 ET] steam_side.py: OK in 47s — steam-side: 70 games, no new flags (silent).
+[2026-11-21 20:35:40 ET] dh_prop_middles.py: FAILED (exit 1) in 320s —   - <launched> pid=8888
+[2026-11-21 20:39:34 ET] dh_sog_middles.py: FAILED (exit 1) in 230s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-21 20:40:28 ET] dh_team_total_middles.py: OK in 53s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-21 20:40:33 ET] nfl_first_score.py: OK in 6s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 20:40:40 ET] nba_first_score.py: OK in 7s — nba-first-score: 0 new, 2 unverified, 224 total tallied.
+[2026-11-21 20:40:43 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 2 new, 0 unverified, 354 total tallied.
+[2026-11-21 20:40:47 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 4 new, 2 unverified, 975 total tallied.
+[2026-11-21 20:40:52 ET] ncaaf_first_score.py: OK in 5s — ncaaf-first-score: 6 new, 0 unverified, 803 total tallied.
+[2026-11-21 20:40:54 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 20:40:57 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-21 20:40:57 ET] syncing to GitHub (regular 10-minute sync)
