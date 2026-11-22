@@ -43,3 +43,5 @@ NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — Kalshi still dea
 NEW FLAG: FBS South Florida @ Florida Atlantic | 2026-11-21 — Kalshi still dealing total 48.5 on Over (pre-move median 48.5, now 58.5)
 NEW FLAG: FBS Northern Illinois @ North Dakota State | 2026-11-21 — Kalshi still dealing spread -30.5 on Northern Illinois (pre-move median -30.0, now -20.5)
 ## 2026-11-21T20:30:20-05:00 — 70 games, 4 steam events, 0 NEW flags, 53 started games skipped
+## 2026-11-21T22:31:46-05:00 — 70 games, 2 steam events, 1 NEW flags, 58 started games skipped
+NEW FLAG: FBS UNLV @ San Jose State | 2026-11-21 — Kalshi still dealing total 56.5 on Under (pre-move median 56.5, now 48.5)
