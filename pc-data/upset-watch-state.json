@@ -73,7 +73,7 @@
    "date": "2026-11-22",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.0,
    "fav_team": "Panthers",
    "dog_team": "Ravens"
   },
@@ -591,17 +591,28 @@
    "fav": "away",
    "spread": 9.5,
    "fav_team": "Utah",
-   "dog_team": "TCU"
+   "dog_team": "TCU",
+   "final": true
   },
   "401860925": {
    "sport": "CFB",
    "matchup": "San Diego St at Boise St",
    "date": "2026-11-22",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 20.5,
    "fav_team": "Boise St",
-   "dog_team": "San Diego St"
+   "dog_team": "San Diego St",
+   "live_ml": 167,
+   "ml_bucket": "bettor",
+   "alerted_at": "2026-11-22T01:10:05",
+   "board_read_at": "2026-11-22T01:10:03",
+   "alert_expires_at": "2026-11-22T01:15:05",
+   "alert_detail": "End of 4th Quarter",
+   "alert_fav_score": 20,
+   "alert_dog_score": 22,
+   "alert_ml": 167,
+   "ml_read_at": "2026-11-22T01:10:04"
   },
   "401856870": {
    "sport": "CFB",
@@ -1237,7 +1248,8 @@
    "alert_detail": "2:58 - 3rd Quarter",
    "alert_fav_score": 63,
    "alert_dog_score": 66,
-   "alert_ml": -175
+   "alert_ml": -175,
+   "final": true
   },
   "401920569": {
    "sport": "NCAAB",
