@@ -10533,3 +10533,24 @@
 [2026-11-21 22:43:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
 [2026-11-21 22:43:46 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-21 22:43:46 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 23:13:59 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-21 23:21:15 ET] odds_recorder.py: OK in 393s — SUMMARY: recorded 224 events (12 with odds), db total 311524 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-21 23:25:32 ET] dh_arbitrage.py: OK in 257s — ARBITRAGE: NFL JAX Jaguars NY Giants Nov-22 4:25 PM / Nov-22 4:25 PM / table / Receptions T. Johnson Under 1.5 / Alt Receptions T. Johnson 2+ / table | BetParx 
+[2026-11-21 23:27:22 ET] dh_kalshi_poly_arb.py: OK in 108s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-21 23:27:31 ET] wide_builds.py: OK in 7s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 23:28:48 ET] dh_low_holds.py: OK in 77s — LOW-HOLDS: NCAAB Southern Miss Valparaiso Nov-22 6:00 PM / Nov-22 6:00 PM / table / Moneyline Valparaiso / Moneyline Southern Miss / table | FanDuel | Bet365
+[2026-11-21 23:30:58 ET] dh_game_middles.py: OK in 130s — GAME MIDDLE: NFL TB Buccaneers DET Lions Nov-22 1:00 PM / Nov-22 1:00 PM / table / Rush Yards B. Irving Under 71.5 / Alt Rush Yards B. Irving 70+ / table | BetR
+[2026-11-21 23:34:49 ET] dh_key_number_middles.py: OK in 230s — key-number-middles: 842 basketball rows excluded (football-only rule).
+[2026-11-21 23:38:45 ET] dh_basketball_key_middles.py: OK in 234s — basketball-key-middles: no new basketball middles.
+[2026-11-21 23:38:57 ET] steam_side.py: OK in 11s — steam-side: 70 games, no new flags (silent).
+[2026-11-21 23:41:14 ET] dh_prop_middles.py: OK in 138s — PROP MIDDLE CLEAN : NFL CIN Bengals WAS Commanders Nov-23 8:15 PM / Nov-23 8:15 PM / table / Receiving Yards T. Burks Under 30.5 / Alt Recv Yards T. Burks 30+ /
+[2026-11-21 23:44:40 ET] dh_sog_middles.py: OK in 206s — - 0 deliverables this run
+[2026-11-21 23:44:54 ET] dh_team_total_middles.py: OK in 12s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-21 23:44:56 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 23:44:58 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 2 unverified, 228 total tallied.
+[2026-11-21 23:45:01 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 1 new, 0 unverified, 362 total tallied.
+[2026-11-21 23:45:08 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 1 new, 2 unverified, 988 total tallied.
+[2026-11-21 23:45:11 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 7 new, 1 unverified, 815 total tallied.
+[2026-11-21 23:45:12 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 23:45:14 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-21 23:45:14 ET] syncing to GitHub (regular 10-minute sync)
