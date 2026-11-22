@@ -10663,3 +10663,53 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-22 05:46:35 ET] pace_board.py: OK in 4s — pace: already built for 2026-11-22; skipping.
 [2026-11-22 05:46:59 ET] nba_overs_pregame.py: OK in 23s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-22 05:47:02 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 06:17:29 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 06:49:03 ET] odds_recorder.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 07:05:38 ET] dh_arbitrage.py: FAILED (exit 1) in 972s —   - <launched> pid=12312
+[2026-11-22 07:20:41 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 883s —   - <launched> pid=15944
+[2026-11-22 07:21:56 ET] wide_builds.py: OK in 41s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 07:39:03 ET] dh_low_holds.py: FAILED (exit 1) in 1026s —   - <launched> pid=18896
+[2026-11-22 07:58:07 ET] dh_game_middles.py: FAILED (exit 1) in 1123s —   - <launched> pid=12028
+[2026-11-22 08:14:24 ET] dh_key_number_middles.py: FAILED (exit 1) in 965s —   - <launched> pid=1960
+[2026-11-22 08:28:57 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 859s —   - <launched> pid=14508
+[2026-11-22 08:44:47 ET] hung_number.py: FAILED (exit 1) in 936s —   - <launched> pid=2704
+[2026-11-22 08:47:30 ET] rlm.py: OK in 136s
+[2026-11-22 08:47:35 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-22 08:47:40 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 09:02:17 ET] dh_prop_middles.py: FAILED (exit 1) in 875s —   - <launched> pid=1336
+[2026-11-22 09:18:21 ET] dh_sog_middles.py: FAILED (exit 1) in 946s —   - <launched> pid=1076
+[2026-11-22 09:21:56 ET] dh_team_total_middles.py: FAILED (exit 2) in 205s — team-total-middles: Kalshi fetch failed (HTTPSConnectionPool(host='api.elections.kalshi.com', port=443): Max retries exceeded with url: /trade-api/v2/markets?se
+[2026-11-22 09:24:36 ET] nfl_first_score.py: OK in 154s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-22 09:25:05 ET] nba_first_score.py: OK in 24s — nba-first-score: 0 new, 1 unverified, 229 total tallied.
+[2026-11-22 09:25:13 ET] nhl_first_goal.py: OK in 6s — nhl-first-goal: 0 new, 0 unverified, 364 total tallied.
+[2026-11-22 09:25:16 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 0 new, 0 unverified, 991 total tallied.
+[2026-11-22 09:25:18 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-22 09:25:22 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-22; skipping.
+[2026-11-22 09:26:22 ET] nba_overs_pregame.py: OK in 60s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-22 09:26:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 09:29:34 ET] sync_to_github.py: FAILED (exit 1) in 190s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-22 10:00:43 ET] odds_recorder.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 10:15:24 ET] dh_arbitrage.py: FAILED (exit 1) in 847s —   - <launched> pid=2184
+[2026-11-22 10:32:06 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 987s —   - <launched> pid=18280
+[2026-11-22 10:33:09 ET] wide_builds.py: OK in 41s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 10:49:04 ET] dh_low_holds.py: FAILED (exit 1) in 954s —   - <launched> pid=13408
+[2026-11-22 11:03:53 ET] dh_game_middles.py: FAILED (exit 1) in 876s —   - <launched> pid=14620
+[2026-11-22 11:11:44 ET] dh_key_number_middles.py: FAILED (exit 1) in 465s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-22 11:18:04 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 371s —   - <launched> pid=18204
+[2026-11-22 11:18:44 ET] steam_side.py: OK in 39s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 11:18:58 ET] fetch_nba_snapshot.py: OK in 13s — snapshot: 30 teams, 7 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-22.json
+[2026-11-22 11:24:46 ET] dh_sleeping_book_sweep.py: FAILED (exit 1) in 348s —   - <launched> pid=15636
+[2026-11-22 11:24:55 ET] nba_overs_daily.py: OK in 7s — }
+[2026-11-22 11:25:24 ET] nhl_totals_scan.py: OK in 29s — nhl-totals: 5 games, no flags.
+[2026-11-22 11:25:30 ET] total_projectors_scan.py: OK in 5s — }
+[2026-11-22 11:25:35 ET] spread_cover_daily.py: OK in 5s — spread-cover: games {'NBA': 7, 'NCAAB': 37}, new 0, moved 0, baselines 44.
+[2026-11-22 11:25:36 ET] nba_overs_grade_run.py: OK in 2s — }
+[2026-11-22 11:25:38 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 5-4-0, $+129.29 (inverse money only where an opposite price was recorded)
+[2026-11-22 11:25:39 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-22 11:25:46 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-22.json (5 markets).
+[2026-11-22 11:30:40 ET] yahoo_brief.py: FAILED (exit 2) in 294s —   - <launched> pid=20192
+[2026-11-22 11:31:54 ET] half_percent.py: OK in 70s — half-percent: weekend — no run.
+[2026-11-22 11:31:55 ET] half_percent.py: OK in 1s — half-percent recheck: 11:31 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-22 11:32:02 ET] futures_pairs.py: OK in 7s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-22 11:32:15 ET] score_pred.py: FAILED (exit 1) in 13s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
+[2026-11-22 11:32:16 ET] syncing to GitHub (regular 10-minute sync)
