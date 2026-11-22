@@ -10703,3 +10703,29 @@
 [2026-11-22 15:57:00 ET] dh_positive_ev.py: FAILED (exit 1) in 766s —   - <launched> pid=10708
 [2026-11-22 15:59:02 ET] first_half.py: FAILED (exit 1) in 104s — ImportError: cannot import name 'parse_table_grid' from 'hung_number' (C:\Users\venut\pc-scans\hung_number.py)
 [2026-11-22 15:59:03 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 16:29:16 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 16:38:57 ET] odds_recorder.py: OK in 504s — SUMMARY: recorded 201 events (28 with odds), db total 313033 snapshots / 1545 events, feeds ok 6 fail 0
+[2026-11-22 16:44:51 ET] dh_arbitrage.py: FAILED (exit 1) in 352s —   - <launched> pid=14752
+[2026-11-22 16:49:51 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 295s —   - <launched> pid=1232
+[2026-11-22 16:50:45 ET] wide_builds.py: OK in 32s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 16:57:42 ET] dh_low_holds.py: FAILED (exit 1) in 417s —   - <launched> pid=17728
+[2026-11-22 17:01:57 ET] dh_game_middles.py: FAILED (exit 1) in 251s —   - <launched> pid=9516
+[2026-11-22 17:06:36 ET] dh_key_number_middles.py: FAILED (exit 1) in 276s —   - <launched> pid=10940
+[2026-11-22 17:10:37 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 240s —   - <launched> pid=16076
+[2026-11-22 17:15:57 ET] hung_number.py: FAILED (exit 2) in 316s — state. Re-run with --dump and send the dump file.
+[2026-11-22 17:16:22 ET] rlm.py: OK in 23s
+[2026-11-22 17:16:27 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-22 17:16:32 ET] steam_side.py: OK in 4s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 17:21:24 ET] dh_prop_middles.py: FAILED (exit 1) in 291s —   - <launched> pid=11192
+[2026-11-22 17:26:04 ET] dh_sog_middles.py: FAILED (exit 1) in 278s —   - <launched> pid=16672
+[2026-11-22 17:26:28 ET] dh_team_total_middles.py: OK in 22s — team-total-middles: 10 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles C 17.5/21.5 sits at -3.2c vs
+[2026-11-22 17:26:33 ET] nfl_first_score.py: OK in 6s — nfl-first-score: 7 new, 0 unverified, 157 total tallied.
+[2026-11-22 17:26:36 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 229 total tallied.
+[2026-11-22 17:26:38 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 1 new, 0 unverified, 365 total tallied.
+[2026-11-22 17:26:43 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 14 new, 0 unverified, 1010 total tallied.
+[2026-11-22 17:26:45 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-22 17:26:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-22; skipping.
+[2026-11-22 17:26:49 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-22 17:26:54 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=44
+[2026-11-22 17:26:55 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=44, limit=1)
+[2026-11-22 17:26:55 ET] syncing to GitHub (regular 10-minute sync)
