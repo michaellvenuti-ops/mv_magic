@@ -52,3 +52,12 @@
 - 2026-11-21: Washington State Cougars @ Texas State Bobcats — first: Washington State Cougars (TD, 3:20 in); lead changes 1; final 14-42
 - 2026-11-21: UNLV Rebels @ San José State Spartans — first: UNLV Rebels (TD, 7:33 in); lead changes 2; final 24-22
 - 2026-11-21: Arkansas State Red Wolves @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (TD, 9:29 in); lead changes 0; final 3-48
+## 2026-11-21T23:45:11-05:00 -- NCAAF FIRST SCORE (PC): 7 new final(s) tallied; season 815 games through 2026-11-21
+- 2026-11-21: Georgia Bulldogs @ South Carolina Gamecocks — first: South Carolina Gamecocks (FG, 5:37 in); lead changes 1; final 34-6
+- 2026-11-21: SMU Mustangs @ Notre Dame Fighting Irish — first: Notre Dame Fighting Irish (TD, 13:11 in); lead changes 0; final 3-24
+- 2026-11-21: Kentucky Wildcats @ Missouri Tigers — first: Kentucky Wildcats (FG, 6:00 in); lead changes 1; final 14-28
+- 2026-11-21: Arizona Wildcats @ Kansas State Wildcats — first: Arizona Wildcats (TD, 16:31 in); lead changes 2; final 35-28
+- 2026-11-21: Pittsburgh Panthers @ Louisville Cardinals — first: Louisville Cardinals (TD, 13:57 in); lead changes 0; final 10-42
+- 2026-11-21: Colorado State Rams @ Fresno State Bulldogs — first: Fresno State Bulldogs (TD, 1:08 in); lead changes 0; final 42-49
+- 2026-11-21: UTSA Roadrunners @ UAB Blazers — first: UTSA Roadrunners (TD, 16:01 in); lead changes 0; final 19-17
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
