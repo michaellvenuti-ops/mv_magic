@@ -45,3 +45,4 @@ NEW FLAG: FBS Northern Illinois @ North Dakota State | 2026-11-21 — Kalshi sti
 ## 2026-11-21T20:30:20-05:00 — 70 games, 4 steam events, 0 NEW flags, 53 started games skipped
 ## 2026-11-21T22:31:46-05:00 — 70 games, 2 steam events, 1 NEW flags, 58 started games skipped
 NEW FLAG: FBS UNLV @ San Jose State | 2026-11-21 — Kalshi still dealing total 56.5 on Under (pre-move median 56.5, now 48.5)
+## 2026-11-21T23:38:57-05:00 — 70 games, 0 steam events, 0 NEW flags, 58 started games skipped
