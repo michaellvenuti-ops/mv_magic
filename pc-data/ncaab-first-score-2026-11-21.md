@@ -56,3 +56,17 @@
 - 2026-11-21: Maine Black Bears @ Massachusetts Minutemen — first: Massachusetts Minutemen (2PT, 0:28 in); lead changes 0; final 44-76
 - 2026-11-21: Coppin State Eagles @ Georgetown Hoyas — first: Coppin State Eagles (2PT, 0:14 in); lead changes 5; final 60-84
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T22:43:39-05:00 -- NCAAB FIRST SCORE (PC): 12 new final(s) tallied; season 987 games through 2026-11-21
+- 2026-11-21: Texas A&M-Corpus Christi Islanders @ Oral Roberts Golden Eagles — first: Oral Roberts Golden Eagles (2PT, 1:22 in); lead changes 2; final 74-78
+- 2026-11-21: Michigan Wolverines @ Villanova Wildcats — first: Michigan Wolverines (3PT, 0:18 in); lead changes 5; final 73-79
+- 2026-11-21: Radford Highlanders @ Chattanooga Mocs — first: Chattanooga Mocs (2PT, 1:21 in); lead changes 1; final 73-65
+- 2026-11-21: Morehead State Eagles @ Elon Phoenix — first: Morehead State Eagles (2PT, 1:24 in); lead changes 3; final 61-84
+- 2026-11-21: Northern Arizona Lumberjacks @ Cal Poly Mustangs — first: Cal Poly Mustangs (2PT, 0:32 in); lead changes 4; final 88-89
+- 2026-11-21: Loyola Marymount Lions @ California Baptist Lancers — first: California Baptist Lancers (3PT, 0:26 in); lead changes 13; final 80-73
+- 2026-11-21: Gardner-Webb Runnin' Bulldogs @ VMI Keydets — first: VMI Keydets (2PT, 0:24 in); lead changes 4; final 68-71
+- 2026-11-21: Charleston Southern Buccaneers @ Mercer Bears — first: Charleston Southern Buccaneers (2PT, 0:29 in); lead changes 1; final 64-69
+- 2026-11-21: Brown Bears @ Vermont Catamounts — first: Brown Bears (2PT, 0:34 in); lead changes 7; final 71-84
+- 2026-11-21: Presbyterian Blue Hose @ Tennessee Tech Golden Eagles — first: Tennessee Tech Golden Eagles (3PT, 0:11 in); lead changes 0; final 69-97
+- 2026-11-21: Southwestern Adventist Knights @ Abilene Christian Wildcats — first: Abilene Christian Wildcats (2PT, 0:01 in); lead changes 0; final 68-87
+- 2026-11-21: LSU New Orleans Privateers @ Texas Southern Tigers — first: LSU New Orleans Privateers (3PT, 0:49 in); lead changes 0; final 75-70
+- note: 3 final(s) UNVERIFIED this run — left out, retried next run.
