@@ -13,3 +13,5 @@
 - 2026-11-21: New York Islanders @ Detroit Red Wings — first goal: Detroit Red Wings (EV, Emmitt Finnie, 11:21 in); lead changes 1; final 3-2
 - 2026-11-21: New Jersey Devils @ St. Louis Blues — first goal: St. Louis Blues (EV, Brandon Carlo, 18:09 in); lead changes 0; final 6-9
 - 2026-11-21: Vegas Golden Knights @ Winnipeg Jets — first goal: Winnipeg Jets (EV, Adam Lowry, 19:31 in); lead changes 2; final 5-4 (SO)
+## 2026-11-21T23:44:59-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 362 games through 2026-11-21
+- 2026-11-21: Anaheim Ducks @ Utah Mammoth — first goal: Anaheim Ducks (EV, Leo Carlsson, 13:34 in); lead changes 1; final 2-3
