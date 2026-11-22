@@ -10575,3 +10575,26 @@
 [2026-11-22 01:09:18 ET] pace_board.py: OK in 4s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-22 01:09:20 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-22 01:09:21 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 01:39:31 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-22 01:49:12 ET] odds_recorder.py: OK in 544s — SUMMARY: recorded 224 events (12 with odds), db total 311972 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-22 01:53:50 ET] dh_arbitrage.py: FAILED (exit 1) in 277s —   - [pid=12028][err] [12028:12532:1122/015246.550:ERROR:content\browser\network_service_instance_impl.cc:652] Network service crashed or was terminated, restart
+[2026-11-22 01:57:27 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 215s —   - <launched> pid=6508
+[2026-11-22 01:59:04 ET] wide_builds.py: OK in 91s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 02:15:19 ET] dh_low_holds.py: FAILED (exit 1) in 974s —   - <launched> pid=11396
+[2026-11-22 02:20:42 ET] dh_game_middles.py: FAILED (exit 1) in 319s —   - <launched> pid=10216
+[2026-11-22 02:24:48 ET] dh_key_number_middles.py: FAILED (exit 1) in 245s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-22 02:26:47 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 119s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-22 02:26:58 ET] steam_side.py: OK in 11s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 02:34:49 ET] dh_prop_middles.py: OK in 471s — PROP MIDDLE CLEAN : NFL TB Buccaneers DET Lions Today 1:00 PM / Today 1:00 PM / table / Rush Yards B. Irving Under 70.5 / Alt Rush Yards B. Irving 70+ / table |
+[2026-11-22 02:38:57 ET] dh_sog_middles.py: OK in 245s — - 0 deliverables this run
+[2026-11-22 02:39:12 ET] dh_team_total_middles.py: OK in 14s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-22 02:39:20 ET] nfl_first_score.py: OK in 8s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-22 02:39:25 ET] nba_first_score.py: OK in 5s — nba-first-score: 0 new, 1 unverified, 229 total tallied.
+[2026-11-22 02:39:27 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 364 total tallied.
+[2026-11-22 02:39:30 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 1 new, 1 unverified, 990 total tallied.
+[2026-11-22 02:39:33 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 4 new, 1 unverified, 820 total tallied.
+[2026-11-22 02:39:34 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-22; skipping.
+[2026-11-22 02:39:36 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-22 02:39:42 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=0 queued_total=45
+[2026-11-22 02:39:43 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=45, limit=5)
+[2026-11-22 02:39:43 ET] syncing to GitHub (regular 10-minute sync)
