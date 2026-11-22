@@ -24,3 +24,18 @@
 - 2026-11-21: Western Kentucky Hilltoppers @ Liberty Flames — first: Liberty Flames (TD, 2:27 in); lead changes 0; final 14-45
 - 2026-11-21: Missouri State Bears @ Jacksonville State Gamecocks — first: Missouri State Bears (FG, 9:13 in); lead changes 1; final 20-25
 - 2026-11-21: Middle Tennessee Blue Raiders @ Sam Houston Bearkats — first: Middle Tennessee Blue Raiders (TD, 0:10 in); lead changes 2; final 31-28
+## 2026-11-21T19:16:27-05:00 -- NCAAF FIRST SCORE (PC): 14 new final(s) tallied; season 797 games through 2026-11-21
+- 2026-11-21: Indiana Hoosiers @ Washington Huskies — first: Washington Huskies (TD, 1:34 in); lead changes 2; final 24-27
+- 2026-11-21: Rutgers Scarlet Knights @ Penn State Nittany Lions — first: Penn State Nittany Lions (TD, 4:38 in); lead changes 1; final 25-24
+- 2026-11-21: Texas A&M Aggies @ Oklahoma Sooners — first: Texas A&M Aggies (TD, 18:00 in); lead changes 1; final 7-28
+- 2026-11-21: Arkansas Razorbacks @ Texas Longhorns — first: Texas Longhorns (TD, 4:36 in); lead changes 0; final 3-45
+- 2026-11-21: Texas Tech Red Raiders @ Baylor Bears — first: Texas Tech Red Raiders (TD, 10:29 in); lead changes 0; final 20-10
+- 2026-11-21: Iowa Hawkeyes @ Illinois Fighting Illini — first: Iowa Hawkeyes (FG, 4:11 in); lead changes 0; final 34-17
+- 2026-11-21: UL Monroe Warhawks @ App State Mountaineers — first: UL Monroe Warhawks (FG, 21:17 in); lead changes 3; final 16-17
+- 2026-11-21: Coastal Carolina Chanticleers @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (TD, 0:44 in); lead changes 0; final 24-38
+- 2026-11-21: Delaware Blue Hens @ New Mexico State Aggies — first: New Mexico State Aggies (FG, 3:56 in); lead changes 3; final 42-30
+- 2026-11-21: Florida International Panthers @ Kennesaw State Owls — first: Kennesaw State Owls (TD, 6:32 in); lead changes 2; final 24-35
+- 2026-11-21: Samford Bulldogs @ Auburn Tigers — first: Auburn Tigers (TD, 0:12 in); lead changes 0; final 17-59
+- 2026-11-21: NC State Wolfpack @ Florida State Seminoles — first: Florida State Seminoles (TD, 2:09 in); lead changes 1; final 28-10
+- 2026-11-21: Old Dominion Monarchs @ UConn Huskies — first: UConn Huskies (TD, 6:28 in); lead changes 0; final 21-29
+- 2026-11-21: Georgia Southern Eagles @ Troy Trojans — first: Georgia Southern Eagles (TD, 1:14 in); lead changes 0; final 45-7
