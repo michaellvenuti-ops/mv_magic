@@ -5,3 +5,5 @@
 ## 2026-11-22T14:28:33-05:00 — pack move, never credited: Jets @ Chargers | 2026-11-22 total (DraftKings, Fanatics)
 ## 2026-11-22T14:28:34-05:00 — pack move, never credited: Jaguars @ Giants | 2026-11-22 spread (Kalshi, bet365)
 ## 2026-11-22T14:28:34-05:00 — 83 games, 0 leads credited, 66 started games skipped
+## 2026-11-22T17:16:26-05:00 — kickoff passed, dropped 1 pending candidate(s) uncredited: Raiders @ Broncos | 2026-11-22
+## 2026-11-22T17:16:27-05:00 — 83 games, 0 leads credited, 69 started games skipped
