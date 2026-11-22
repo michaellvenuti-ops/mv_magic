@@ -10507,3 +10507,27 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-21 17:31:03 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-21; skipping.
 [2026-11-21 17:31:07 ET] nba_overs_pregame.py: OK in 4s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-21 17:31:17 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-21 18:01:27 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-21 18:09:59 ET] odds_recorder.py: OK in 474s — SUMMARY: recorded 224 events (66 with odds), db total 310852 snapshots / 1491 events, feeds ok 6 fail 0
+[2026-11-21 18:15:26 ET] dh_arbitrage.py: FAILED (exit 1) in 323s —   - <launched> pid=5760
+[2026-11-21 18:20:49 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 320s —   - <launched> pid=18168
+[2026-11-21 18:21:03 ET] wide_builds.py: OK in 9s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-21.md)
+[2026-11-21 18:26:07 ET] dh_low_holds.py: FAILED (exit 1) in 303s —   - <launched> pid=17648
+[2026-11-21 18:31:50 ET] dh_game_middles.py: FAILED (exit 1) in 340s —   - <launched> pid=8800
+[2026-11-21 18:37:50 ET] dh_key_number_middles.py: FAILED (exit 1) in 357s —   - <launched> pid=3408
+[2026-11-21 18:44:17 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 384s —   - <launched> pid=10628
+[2026-11-21 18:52:36 ET] hung_number.py: FAILED (exit 2) in 493s — state. Re-run with --dump and send the dump file.
+[2026-11-21 18:53:01 ET] rlm.py: OK in 22s
+[2026-11-21 18:53:09 ET] leader_follower.py: OK in 8s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
+[2026-11-21 18:53:14 ET] steam_side.py: OK in 4s — STEAM-SIDE FLAG: FBS Northern Illinois @ North Dakota State | 2026-11-21 | Kalshi | Northern Illinois spread -30.5 (median -30.0 -> -20.5)
+[2026-11-21 18:57:33 ET] dh_prop_middles.py: FAILED (exit 1) in 258s —   - <launched> pid=11660
+[2026-11-21 19:14:51 ET] dh_sog_middles.py: FAILED (exit 1) in 1036s —   - <launched> pid=16440
+[2026-11-21 19:16:04 ET] dh_team_total_middles.py: OK in 60s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -1.5c vs +E
+[2026-11-21 19:16:10 ET] nfl_first_score.py: OK in 6s — nfl-first-score: 0 new, 0 unverified, 150 total tallied.
+[2026-11-21 19:16:14 ET] nba_first_score.py: OK in 4s — nba-first-score: 0 new, 2 unverified, 224 total tallied.
+[2026-11-21 19:16:17 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 1 new, 0 unverified, 352 total tallied.
+[2026-11-21 19:16:23 ET] ncaab_first_score.py: OK in 6s — ncaab-first-score: 14 new, 2 unverified, 971 total tallied.
+[2026-11-21 19:16:27 ET] ncaaf_first_score.py: OK in 4s — ncaaf-first-score: 14 new, 0 unverified, 797 total tallied.
+[2026-11-21 19:16:30 ET] pace_board.py: OK in 3s — pace: already built for 2026-11-21; skipping.
+[2026-11-21 19:16:39 ET] nba_overs_pregame.py: OK in 9s — nba-overs-pregame: 4 game(s) refreshed, 0 deliverable change(s).
+[2026-11-21 19:16:45 ET] syncing to GitHub (regular 10-minute sync)
