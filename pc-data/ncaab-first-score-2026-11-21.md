@@ -70,3 +70,6 @@
 - 2026-11-21: Southwestern Adventist Knights @ Abilene Christian Wildcats — first: Abilene Christian Wildcats (2PT, 0:01 in); lead changes 0; final 68-87
 - 2026-11-21: LSU New Orleans Privateers @ Texas Southern Tigers — first: LSU New Orleans Privateers (3PT, 0:49 in); lead changes 0; final 75-70
 - note: 3 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-21T23:45:08-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 988 games through 2026-11-21
+- 2026-11-21: Valparaiso Beacons @ Troy Trojans — first: Troy Trojans (2PT, 0:44 in); lead changes 3; final 77-72
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
