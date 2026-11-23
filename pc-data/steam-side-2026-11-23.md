@@ -17,3 +17,4 @@ NEW FLAG: FBS Nevada @ UNLV | 2026-11-23 — Fanatics still dealing spread -4.5 
 NEW FLAG: FBS Baylor @ Houston | 2026-11-23 — Fanatics still dealing spread -6.5 on Baylor (pre-move median -6.5, now -5.5)
 ## 2026-11-23T12:07:42-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-23T12:57:12-05:00 — 69 games, 0 steam events, 0 NEW flags
+## 2026-11-23T14:11:52-05:00 — 69 games, 1 steam events, 0 NEW flags
