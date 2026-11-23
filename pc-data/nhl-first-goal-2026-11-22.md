@@ -8,3 +8,5 @@
 ## 2026-11-22T22:27:41-05:00 -- NHL FIRST GOAL (PC): 2 new final(s) tallied; season 368 games through 2026-11-22
 - 2026-11-22: Edmonton Oilers @ St. Louis Blues — first goal: Edmonton Oilers (EV, Kasperi Kapanen, 14:04 in); lead changes 0; final 4-5 (SO)
 - 2026-11-22: Pittsburgh Penguins @ Dallas Stars — first goal: Dallas Stars (EV, Joel Kiviranta, 27:16 in); lead changes 0; final 0-1
+## 2026-11-22T23:32:43-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 369 games through 2026-11-22
+- 2026-11-22: Chicago Blackhawks @ Vancouver Canucks — first goal: Chicago Blackhawks (EV, Frank Nazar, 19:25 in); lead changes 0; final 6-3
