@@ -8,3 +8,10 @@
 - 2026-11-23: St. Bonaventure Bonnies @ App State Mountaineers — first: App State Mountaineers (2PT, 0:25 in); lead changes 5; final 71-65
 - 2026-11-23: Northern Iowa Panthers @ Davidson Wildcats — first: Davidson Wildcats (2PT, 0:34 in); lead changes 0; final 48-79
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T15:43:00-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1039 games through 2026-11-23
+- 2026-11-23: Indiana State Sycamores @ East Carolina Pirates — first: East Carolina Pirates (2PT, 0:23 in); lead changes 13; final 77-76
+- 2026-11-23: IU South Bend Titans @ Eastern Illinois Panthers — first: Eastern Illinois Panthers (2PT, 1:50 in); lead changes 0; final 66-83
+- 2026-11-23: Long Beach State Beach @ Florida International Panthers — first: Florida International Panthers (3PT, 0:13 in); lead changes 2; final 75-79
+- 2026-11-23: Akron Zips @ Wright State Raiders — first: Akron Zips (2PT, 0:55 in); lead changes 9; final 64-66
+- 2026-11-23: Charlotte 49ers @ Florida Gulf Coast Eagles — first: Charlotte 49ers (3PT, 1:21 in); lead changes 0; final 71-58
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
