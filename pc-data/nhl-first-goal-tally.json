@@ -5859,35 +5859,51 @@
   },
   {
    "date": "2026-11-22",
-   "away": "Edmonton Oilers",
-   "home": "St. Louis Blues",
-   "first": "Edmonton Oilers",
+   "away": "Chicago Blackhawks",
+   "home": "Vancouver Canucks",
+   "first": "Chicago Blackhawks",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Kasperi Kapanen",
-   "first_elapsed_sec": 844,
-   "winner": "St. Louis Blues",
-   "shootout": true,
-   "seq": "1-0>2-0>2-1>3-1>4-1>4-2>4-3>4-4",
-   "lead_changes": 0,
-   "ties": 1,
-   "final": "4-5"
-  },
-  {
-   "date": "2026-11-22",
-   "away": "Pittsburgh Penguins",
-   "home": "Dallas Stars",
-   "first": "Dallas Stars",
-   "first_side": "home",
-   "first_strength": "EV",
-   "first_scorer": "Joel Kiviranta",
-   "first_elapsed_sec": 1636,
-   "winner": "Dallas Stars",
+   "first_scorer": "Frank Nazar",
+   "first_elapsed_sec": 1165,
+   "winner": "Chicago Blackhawks",
    "shootout": false,
-   "seq": "0-1",
+   "seq": "1-0>2-0>3-0>4-0>4-1>4-2>5-2>5-3>6-3",
    "lead_changes": 0,
    "ties": 0,
-   "final": "0-1"
+   "final": "6-3"
+  },
+  {
+   "away": "Edmonton Oilers",
+   "date": "2026-11-22",
+   "final": "4-5",
+   "first": "Edmonton Oilers",
+   "first_elapsed_sec": 844,
+   "first_scorer": "Kasperi Kapanen",
+   "first_side": "away",
+   "first_strength": "EV",
+   "home": "St. Louis Blues",
+   "lead_changes": 0,
+   "seq": "1-0>2-0>2-1>3-1>4-1>4-2>4-3>4-4",
+   "shootout": true,
+   "ties": 1,
+   "winner": "St. Louis Blues"
+  },
+  {
+   "away": "Pittsburgh Penguins",
+   "date": "2026-11-22",
+   "final": "0-1",
+   "first": "Dallas Stars",
+   "first_elapsed_sec": 1636,
+   "first_scorer": "Joel Kiviranta",
+   "first_side": "home",
+   "first_strength": "EV",
+   "home": "Dallas Stars",
+   "lead_changes": 0,
+   "seq": "0-1",
+   "shootout": false,
+   "ties": 0,
+   "winner": "Dallas Stars"
   }
  ],
  "tally": {
@@ -5924,20 +5940,20 @@
    "won_by_one_when_first_pct": 40.0
   },
   "Chicago Blackhawks": {
-   "gp": 22,
-   "scored_first": 9,
+   "gp": 23,
+   "scored_first": 10,
    "strengths": {
-    "EV": 7,
+    "EV": 8,
     "PP": 2,
     "SH": 0
    },
-   "won_when_first": 2,
+   "won_when_first": 3,
    "won_when_not_first": 5,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 40.9,
-   "win_pct_when_first": 22.2,
+   "scored_first_pct": 43.5,
+   "win_pct_when_first": 30.0,
    "win_pct_when_not_first": 38.5,
-   "won_by_one_when_first_pct": 11.1
+   "won_by_one_when_first_pct": 10.0
   },
   "Utah Mammoth": {
    "gp": 24,
@@ -5972,7 +5988,7 @@
    "won_by_one_when_first_pct": 15.8
   },
   "Vancouver Canucks": {
-   "gp": 24,
+   "gp": 25,
    "scored_first": 8,
    "strengths": {
     "EV": 4,
@@ -5982,9 +5998,9 @@
    "won_when_first": 2,
    "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 33.3,
+   "scored_first_pct": 32.0,
    "win_pct_when_first": 25.0,
-   "win_pct_when_not_first": 18.8,
+   "win_pct_when_not_first": 17.6,
    "won_by_one_when_first_pct": 12.5
   },
   "Florida Panthers": {
@@ -6405,22 +6421,22 @@
   }
  },
  "league": {
-  "games": 368,
-  "games_with_goal": 366,
+  "games": 369,
+  "games_with_goal": 367,
   "shootouts": 30,
   "home_scored_first": 174,
-  "first_team_won": 235,
+  "first_team_won": 236,
   "first_team_won_by_one": 70,
   "first_team_won_by_one_pct": 19.1,
   "strengths": {
-   "EV": 281,
+   "EV": 282,
    "PP": 79,
    "SH": 6
   },
   "avg_lead_changes": 0.48,
-  "median_first_goal_sec": 873,
-  "home_scored_first_pct": 47.5,
-  "first_team_win_pct": 64.2
+  "median_first_goal_sec": 874,
+  "home_scored_first_pct": 47.4,
+  "first_team_win_pct": 64.3
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6434,9 +6450,9 @@
    "avg_per_game": 0.29
   },
   "Chicago Blackhawks": {
-   "games": 22,
+   "games": 23,
    "lead_changes": 11,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.48
   },
   "Utah Mammoth": {
    "games": 24,
@@ -6449,9 +6465,9 @@
    "avg_per_game": 0.28
   },
   "Vancouver Canucks": {
-   "games": 24,
+   "games": 25,
    "lead_changes": 8,
-   "avg_per_game": 0.33
+   "avg_per_game": 0.32
   },
   "Florida Panthers": {
    "games": 23,
