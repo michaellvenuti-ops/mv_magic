@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Push-Rate Charts</title><style>body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:20px;margin:28px 0 6px}h3{font-size:16px;margin:18px 0 4px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:680px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.flag{color:#f778ba;font-weight:700}.qual{color:#3fb950;font-weight:700}
+.win{color:#3fb950;font-weight:700}.loss{color:#f85149;font-weight:700}
+.tag{background:#f7ecd9;color:#9a5b00;border-radius:4px;padding:0 6px;font-size:12px;font-weight:700}
+.box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin:16px 0}
+</style></head><body>
+<h1>Push-Rate Charts</h1>
+<div class="sub">Logic L5 — how often games land on each margin, by league. Reference only, no bets. Updated 2026-11-23 06:30 PM ET.</div>
+<div class="box"><b>How it works (Logic L5 — push-rate charts).</b>
+Miller &amp; Davidow price related markets from a strong market using a chart of
+how often games land on each margin. This page is that chart, built from
+~10 calendar years of ESPN final scores (2016&ndash;2025), one scoreboard call per
+league per year. <b>Margin</b> is home minus away (a push lands when the final
+margin equals the spread). <b>Segment shares</b> are the average share of total
+scoring in each period (from ESPN linescores) — the derivative model scales a
+full-game total/spread by these shares to price 1Q/1H/1P lines, and the
+synthetic-hold scanner and xG model use the margin chart to price alt lines
+without pretending a push is impossible. This is a reference build, not a
+betting model: no flags, no record, no grading. Refresh weekly (Sundays);
+the data file <code>push_rate_data.json</code> is what the other models import
+(<code>push_rates.py</code>: <code>p_cover</code>, <code>fair_alt_total</code>,
+<code>segment_shares</code>). <i>v1 caveat, stated plainly: ESPN caps a
+<code>dates=YYYY</code> call at 1,000 events and ignores <code>page</code>, so
+each capped year contributes its first 1,000 events only (NBA/NHL years run
+roughly Jan&ndash;Nov; NCAAB years are January-heavy; NCAAF 2017&ndash;18 failed with
+504s and are absent). Year-month slicing (<code>dates=YYYYMM</code>) is proven
+to work and is the v2 fix for full-season coverage — the charts below are
+usable at n&asymp;38k games but are not a complete 10-season census.</i></div>
+<p>Source: ESPN public scoreboard API, calendar years 2016–2025. Built 2026-11-23.</p>
+<h2>NFL — 3270 games (2016–2025)</h2><h3>Most common final margins (home − away)</h3><div class="wrap"><table><tr><th>Margin</th><th>Games</th><th>Share</th></tr><tr><td>+3</td><td>231</td><td>7.06%</td></tr><tr><td>-3</td><td>207</td><td>6.33%</td></tr><tr><td>+7</td><td>149</td><td>4.56%</td></tr><tr><td>-7</td><td>130</td><td>3.98%</td></tr><tr><td>+6</td><td>114</td><td>3.49%</td></tr><tr><td>-6</td><td>97</td><td>2.97%</td></tr><tr><td>+10</td><td>94</td><td>2.87%</td></tr><tr><td>-4</td><td>90</td><td>2.75%</td></tr></table></div><h3>Segment shares of scoring</h3><div class="wrap"><table><tr><th>Segment</th><th>Share</th></tr><tr><td>P1</td><td>0.1965</td></tr><tr><td>P2</td><td>0.3125</td></tr><tr><td>P3</td><td>0.2036</td></tr><tr><td>P4</td><td>0.2824</td></tr><tr><td>P5</td><td>0.005</td></tr><tr><td>1H</td><td>0.509</td></tr><tr><td>1Q</td><td>0.1965</td></tr><tr><td>half_margin_share</td><td>0.779</td></tr><tr><td>games_with_linescores</td><td>3267</td></tr></table></div>
+<h2>NBA — 9711 games (2016–2025)</h2><h3>Most common final margins (home − away)</h3><div class="wrap"><table><tr><th>Margin</th><th>Games</th><th>Share</th></tr><tr><td>+8</td><td>318</td><td>3.27%</td></tr><tr><td>+5</td><td>312</td><td>3.21%</td></tr><tr><td>+6</td><td>306</td><td>3.15%</td></tr><tr><td>+9</td><td>304</td><td>3.13%</td></tr><tr><td>+7</td><td>304</td><td>3.13%</td></tr><tr><td>-5</td><td>280</td><td>2.88%</td></tr><tr><td>-4</td><td>280</td><td>2.88%</td></tr><tr><td>+3</td><td>277</td><td>2.85%</td></tr></table></div><h3>Segment shares of scoring</h3><div class="wrap"><table><tr><th>Segment</th><th>Share</th></tr><tr><td>P1</td><td>0.2513</td></tr><tr><td>P2</td><td>0.2515</td></tr><tr><td>P3</td><td>0.2495</td></tr><tr><td>P4</td><td>0.2416</td></tr><tr><td>P5</td><td>0.0054</td></tr><tr><td>P6</td><td>0.0006</td></tr><tr><td>P7</td><td>0.0</td></tr><tr><td>P8</td><td>0.0</td></tr><tr><td>1H</td><td>0.5028</td></tr><tr><td>1Q</td><td>0.2513</td></tr><tr><td>half_margin_share</td><td>0.757</td></tr><tr><td>games_with_linescores</td><td>9711</td></tr></table></div>
+<h2>NHL — 9491 games (2016–2025)</h2><h3>Most common final margins (home − away)</h3><div class="wrap"><table><tr><th>Margin</th><th>Games</th><th>Share</th></tr><tr><td>+1</td><td>2012</td><td>21.20%</td></tr><tr><td>-1</td><td>1916</td><td>20.19%</td></tr><tr><td>+3</td><td>1201</td><td>12.65%</td></tr><tr><td>+2</td><td>1029</td><td>10.84%</td></tr><tr><td>-3</td><td>940</td><td>9.90%</td></tr><tr><td>-2</td><td>919</td><td>9.68%</td></tr><tr><td>+4</td><td>534</td><td>5.63%</td></tr><tr><td>-4</td><td>399</td><td>4.20%</td></tr></table></div><h3>Segment shares of scoring</h3><div class="wrap"><table><tr><th>Segment</th><th>Share</th></tr><tr><td>P1</td><td>0.2868</td></tr><tr><td>P2</td><td>0.338</td></tr><tr><td>P3</td><td>0.339</td></tr><tr><td>P4</td><td>0.0248</td></tr><tr><td>P5</td><td>0.0113</td></tr><tr><td>P6</td><td>0.0001</td></tr><tr><td>P7</td><td>0.0</td></tr><tr><td>P8</td><td>0.0</td></tr><tr><td>1H</td><td>0.6248</td></tr><tr><td>1Q</td><td>0.2868</td></tr><tr><td>half_margin_share</td><td>0.669</td></tr><tr><td>games_with_linescores</td><td>9491</td></tr></table></div>
+<h2>NCAAB — 10000 games (2016–2025)</h2><h3>Most common final margins (home − away)</h3><div class="wrap"><table><tr><th>Margin</th><th>Games</th><th>Share</th></tr><tr><td>+3</td><td>400</td><td>4.00%</td></tr><tr><td>+7</td><td>338</td><td>3.38%</td></tr><tr><td>+5</td><td>336</td><td>3.36%</td></tr><tr><td>+4</td><td>334</td><td>3.34%</td></tr><tr><td>+2</td><td>328</td><td>3.28%</td></tr><tr><td>-4</td><td>319</td><td>3.19%</td></tr><tr><td>+6</td><td>304</td><td>3.04%</td></tr><tr><td>-3</td><td>290</td><td>2.90%</td></tr></table></div><h3>Segment shares of scoring</h3><div class="wrap"><table><tr><th>Segment</th><th>Share</th></tr><tr><td>P1</td><td>0.4679</td></tr><tr><td>P2</td><td>0.5218</td></tr><tr><td>P3</td><td>0.0088</td></tr><tr><td>P4</td><td>0.0011</td></tr><tr><td>P5</td><td>0.0003</td></tr><tr><td>P6</td><td>0.0</td></tr><tr><td>1H</td><td>0.9897</td></tr><tr><td>1Q</td><td>0.4679</td></tr><tr><td>half_margin_share</td><td>0.975</td></tr><tr><td>games_with_linescores</td><td>9992</td></tr></table></div>
+<h2>NCAAF — 5531 games (2016–2025)</h2><h3>Most common final margins (home − away)</h3><div class="wrap"><table><tr><th>Margin</th><th>Games</th><th>Share</th></tr><tr><td>+3</td><td>282</td><td>5.10%</td></tr><tr><td>-3</td><td>240</td><td>4.34%</td></tr><tr><td>+7</td><td>237</td><td>4.28%</td></tr><tr><td>-7</td><td>205</td><td>3.71%</td></tr><tr><td>+21</td><td>146</td><td>2.64%</td></tr><tr><td>+14</td><td>141</td><td>2.55%</td></tr><tr><td>+10</td><td>129</td><td>2.33%</td></tr><tr><td>+17</td><td>124</td><td>2.24%</td></tr></table></div><h3>Segment shares of scoring</h3><div class="wrap"><table><tr><th>Segment</th><th>Share</th></tr><tr><td>P1</td><td>0.2238</td></tr><tr><td>P2</td><td>0.2955</td></tr><tr><td>P3</td><td>0.2258</td></tr><tr><td>P4</td><td>0.2452</td></tr><tr><td>P5</td><td>0.0065</td></tr><tr><td>P6</td><td>0.0025</td></tr><tr><td>P7</td><td>0.0005</td></tr><tr><td>P8</td><td>0.0002</td></tr><tr><td>P9</td><td>0.0</td></tr><tr><td>P10</td><td>0.0</td></tr><tr><td>P11</td><td>0.0</td></tr><tr><td>P12</td><td>0.0</td></tr><tr><td>P13</td><td>0.0</td></tr><tr><td>1H</td><td>0.5193</td></tr><tr><td>1Q</td><td>0.2238</td></tr><tr><td>half_margin_share</td><td>0.681</td></tr><tr><td>games_with_linescores</td><td>5531</td></tr></table></div>
+<div class="foot">Margin is home minus away. A spread pushes when the final margin equals the spread number; the tables above give the empirical frequency of each landing spot. Segment shares come from ESPN linescores (games with linescores only). Data file: push_rate_data.json — imported by push_rates.py.</div></body></html>
