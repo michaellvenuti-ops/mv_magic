@@ -10,3 +10,7 @@
 - 2026-11-22: Denver Nuggets @ Chicago Bulls — first: Chicago Bulls (3PT, 0:19 in); lead changes 13; final 151-145
 - 2026-11-22: Dallas Mavericks @ Utah Jazz — first: Utah Jazz (2PT, 0:29 in); lead changes 11; final 116-114
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-22T23:32:42-05:00 -- NBA FIRST SCORE (PC): 2 new final(s) tallied; season 236 games through 2026-11-22
+- 2026-11-22: Indiana Pacers @ New York Knicks — first: Indiana Pacers (2PT, 0:21 in); lead changes 11; final 106-113
+- 2026-11-22: Boston Celtics @ Golden State Warriors — first: Golden State Warriors (3PT, 0:15 in); lead changes 4; final 87-88
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
