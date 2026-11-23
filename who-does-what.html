@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Who Does What</title>
+<style>
+  :root{
+    --bg:#f4f5f2;
+    --surface:#ffffff;
+    --surface-2:#eceee9;
+    --ink:#1a1d1a;
+    --ink-2:#4b504b;
+    --ink-3:#6b716b;
+    --line:#d8dbd4;
+    --chet:#0e6b5e;
+    --chet-bg:#e3f0ec;
+    --pc:#9a5b00;
+    --pc-bg:#f7ecd9;
+    --mac:#3d5a73;
+    --mac-bg:#e4ebf1;
+    --warn-bg:#fdecec;
+    --warn-ink:#8f1d1d;
+    --warn-line:#e5b4b4;
+    --focus:#0e6b5e;
+    --radius:10px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#141614;
+      --surface:#1e211e;
+      --surface-2:#262926;
+      --ink:#eceee9;
+      --ink-2:#b9beba;
+      --ink-3:#939a93;
+      --line:#363a36;
+      --chet:#4fc3ae;
+      --chet-bg:#1c3330;
+      --pc:#e5a83c;
+      --pc-bg:#38300f;
+      --mac:#8fb4d1;
+      --mac-bg:#233140;
+      --warn-bg:#3d1e1e;
+      --warn-ink:#f2b8b8;
+      --warn-line:#6b3a3a;
+      --focus:#4fc3ae;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.45;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:20px 16px 48px}
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:2rem;line-height:1.15;font-weight:700;
+    margin:4px 0 8px;letter-spacing:-0.01em;
+  }
+  .lede{color:var(--ink-2);font-size:1.02rem;margin:0 0 6px;max-width:62ch}
+  .lede strong{color:var(--ink)}
+  .built{color:var(--ink-3);font-size:.85rem;margin:0 0 18px}
+
+  /* Flow strip */
+  .flow{
+    display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch;
+    margin:0 0 20px;
+  }
+  .flow-step{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:10px 12px;
+  }
+  .flow-step .who{font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+  .flow-step .does{font-size:.9rem;color:var(--ink-2);margin-top:2px}
+  .flow-step.chet .who{color:var(--chet)}
+  .flow-step.pc .who{color:var(--pc)}
+  .flow-step.mac .who{color:var(--mac)}
+  .flow-arrow{align-self:center;color:var(--ink-3);font-size:1.1rem}
+  @media (max-width:560px){
+    .flow{grid-template-columns:1fr}
+    .flow-arrow{justify-self:center;transform:rotate(90deg)}
+  }
+
+  /* Search + filters */
+  .tools{
+    position:sticky;top:0;z-index:5;
+    background:var(--bg);
+    padding:12px 0 10px;margin:0 0 6px;
+  }
+  .search-row{display:flex;gap:8px}
+  .search-box{position:relative;flex:1}
+  .search-box svg{
+    position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    width:18px;height:18px;color:var(--ink-3);pointer-events:none;
+  }
+  #search{
+    width:100%;min-height:44px;
+    padding:10px 40px 10px 38px;
+    font-size:1rem;color:var(--ink);
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  }
+  #search:focus{outline:2px solid var(--focus);outline-offset:1px;border-color:transparent}
+  #clearSearch{
+    position:absolute;right:4px;top:50%;transform:translateY(-50%);
+    min-width:36px;min-height:36px;border:0;background:transparent;color:var(--ink-3);
+    font-size:1.25rem;line-height:1;cursor:pointer;border-radius:8px;display:none;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+  .chip{
+    min-height:40px;padding:8px 16px;border-radius:999px;cursor:pointer;
+    border:1px solid var(--line);background:var(--surface);color:var(--ink);
+    font-size:.92rem;font-weight:600;
+  }
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .chip:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .result-count{color:var(--ink-3);font-size:.88rem;margin-left:auto}
+
+  /* Sections */
+  section.system{margin-top:26px}
+  section.system[hidden]{display:none}
+  .sys-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+  .sys-name{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:1.45rem;font-weight:700;margin:0;
+  }
+  .sys-tag{
+    font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    padding:3px 9px;border-radius:999px;
+  }
+  .chet .sys-tag{background:var(--chet-bg);color:var(--chet)}
+  .pc .sys-tag{background:var(--pc-bg);color:var(--pc)}
+  .mac .sys-tag{background:var(--mac-bg);color:var(--mac)}
+  .sys-sub{color:var(--ink-2);font-size:.94rem;margin:0 0 12px}
+  .sys-count{color:var(--ink-3);font-size:.85rem}
+
+  .rows{
+    background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  }
+  .row{
+    display:flex;gap:12px;align-items:flex-start;justify-content:space-between;
+    padding:12px 14px;border-top:1px solid var(--line);
+  }
+  .row:first-child{border-top:0}
+  .row[hidden]{display:none}
+  .row-main{min-width:0}
+  .task{font-weight:650;font-size:.98rem}
+  .detail{color:var(--ink-2);font-size:.88rem;margin-top:2px}
+  .when{
+    flex:0 0 auto;text-align:right;
+    font-size:.82rem;font-weight:600;color:var(--ink-2);
+    background:var(--surface-2);border-radius:8px;padding:5px 9px;white-space:nowrap;
+    margin-top:1px;
+  }
+  .when:empty{display:none}
+  @media (max-width:520px){
+    .row{flex-direction:column;gap:6px}
+    .when{text-align:left;white-space:normal}
+  }
+  .badge-notlive{
+    display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--warn-ink);background:var(--warn-bg);border:1px solid var(--warn-line);
+    border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:2px;white-space:nowrap;
+  }
+  .empty{
+    display:none;text-align:center;color:var(--ink-2);
+    padding:36px 16px;background:var(--surface);border:1px dashed var(--line);border-radius:12px;margin-top:22px;
+  }
+  .empty.show{display:block}
+  .empty button{
+    margin-top:10px;min-height:40px;padding:8px 16px;border-radius:8px;cursor:pointer;
+    border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font-weight:600;font-size:.92rem;
+  }
+  footer{margin-top:34px;color:var(--ink-3);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+  footer p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Who does what</h1>
+  <p class="lede">Three systems work together on the same operation. <strong>The PC scans</strong> the books, <strong>the Mac computes and builds</strong> the boards, and <strong>Chet delivers, grades, and publishes</strong> everything back to you. If you&rsquo;re wondering where a job lives, it&rsquo;s on this page.</p>
+  <p class="built">Built November 23, 2026 &middot; All times Eastern unless noted</p>
+
+  <div class="flow" aria-label="How the three systems fit together">
+    <div class="flow-step pc">
+      <div class="who">PC &mdash; scans</div>
+      <div class="does">DarkHorse browser scans, scheduler, GitHub sync</div>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+    <div class="flow-step mac">
+      <div class="who">Mac &mdash; computes</div>
+      <div class="does">Board builds, transcription, media server</div>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+    <div class="flow-step chet">
+      <div class="who">Chet &mdash; delivers</div>
+      <div class="does">Briefs, grading, alerts, voice notes, publishing</div>
+    </div>
+  </div>
+
+  <div class="tools">
+    <div class="search-row">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Search a job &mdash; try &ldquo;middles&rdquo;, &ldquo;podcast&rdquo;, &ldquo;Costco&rdquo;&hellip;" aria-label="Search tasks" autocomplete="off" />
+        <button id="clearSearch" type="button" aria-label="Clear search">&times;</button>
+      </div>
+    </div>
+    <div class="chips" role="group" aria-label="Filter by system">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All systems</button>
+      <button class="chip" type="button" data-filter="chet" aria-pressed="false">Chet</button>
+      <button class="chip" type="button" data-filter="pc" aria-pressed="false">PC</button>
+      <button class="chip" type="button" data-filter="mac" aria-pressed="false">Mac</button>
+      <span class="result-count" id="resultCount" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <!-- ============ CHET ============ -->
+  <section class="system chet" id="sec-chet" data-system="chet">
+    <div class="sys-head">
+      <h2 class="sys-name">Chet</h2>
+      <span class="sys-tag">Muse &middot; this VM</span>
+      <span class="sys-count" data-count></span>
+    </div>
+    <p class="sys-sub">Delivery, verify, publish. Everything you read or hear in chat comes from here &mdash; briefs, grading, alerts, and voice notes.</p>
+    <div class="rows">
+      <div class="row"><div class="row-main"><div class="task">Combined noon slate brief</div><div class="detail">Opens with a SHORT LIST grouped by book &mdash; only verified best prices.</div></div><span class="when">Daily 12:00 PM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Closing-lines tables</div><div class="detail">NFL / NHL / NBA plus player props, in the Football Closing Lines workbook.</div></div><span class="when">Mornings ~7:10 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">&ldquo;Close to the Number&rdquo; podcast</div><div class="detail">Closing-lines podcast with Alex and Jordan voices.</div></div><span class="when">Daily ~9:58 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Podcast picks tracker &mdash; grading</div><div class="detail">Grades yesterday&rsquo;s podcast picks.</div></div><span class="when">~9:00 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Podcast picks tracker &mdash; new-picks scan</div><div class="detail">Picks up the day&rsquo;s new podcast plays.</div></div><span class="when">~5:00 PM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Podcast picks tracker &mdash; Circa Invitational fill</div><div class="detail">Weekly Circa Invitational standings fill.</div></div><span class="when">Tuesdays 10:00 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Positive EV tracker &mdash; grading</div></div><span class="when">~9:44 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Positive EV tracker &mdash; daily scan</div></div><span class="when">~11:44 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Positive EV tracker &mdash; derivative scan</div><div class="detail">Derivative markets off the main +EV scan.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Positive EV tracker &mdash; sleeping-book sweep</div><div class="detail">Checks slow books for stale prices.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Line-moves grading</div></div><span class="when">~9:44 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Steam alerts</div><div class="detail">With cheapest-old-number ladders for both teams. NJ books only.</div></div><span class="when">As lines move</span></div>
+      <div class="row"><div class="row-main"><div class="task">Gameday line-move + QB + weather watch</div><div class="detail">Browser checks through the day on game days.</div></div><span class="when">Through the day</span></div>
+      <div class="row"><div class="row-main"><div class="task">Weather alerts + grading</div><div class="detail">Outdoor-game weather alerts, graded on the under.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Pre-kickoff weather watch</div><div class="detail">Re-checks weather in the run-up to kickoff.</div></div><span class="when">Every 5 min pre-kickoff</span></div>
+      <div class="row"><div class="row-main"><div class="task">Weather heads-up for tomorrow</div><div class="detail">Nightly look at tomorrow&rsquo;s outdoor games.</div></div><span class="when">Nightly ~9:44 PM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Frank criteria hits</div><div class="detail">Sent as standalone messages, never bundled into a scan delivery.</div></div><span class="when">As they hit</span></div>
+      <div class="row"><div class="row-main"><div class="task">Frank picks watch + grading</div><div class="detail">Watches Frank Civittolo&rsquo;s picks and grades them.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Total Projectors flags + grading</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">NHL Totals flags + grading</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Wide-builds grading + board</div><div class="detail">Grades the wide middle builds and keeps the wide-builds board.</div></div><span class="when">~9:44 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Scan-boards grading</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Public fade grading</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Spread-cover grading</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Futures board + futures pairs</div><div class="detail">Futures pairs are arbitrage against prediction markets.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Meta stock brief</div></div><span class="when">Daily ~10:00 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Costco stock brief</div></div><span class="when">Daily ~10:00 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Costco gold bar brief</div><div class="detail">In-inventory gold bars near you.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Money-moves watch</div><div class="detail">New bonuses, gift-card deals, and expiring money deadlines.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Gmail summary</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Thanksgiving / deals watch</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Promo converter</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Half Percent Club grading</div><div class="detail">The PC banks the pick; Chet grades it.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">My Bets sheet grading</div><div class="detail">Only from bet slips you send &mdash; nothing is added from any other source.</div></div><span class="when">After games finish</span></div>
+      <div class="row"><div class="row-main"><div class="task">All chat delivery + voice notes</div><div class="detail">Every message and voice note you get comes from Chet.</div></div><span class="when">Always</span></div>
+    </div>
+  </section>
+
+  <!-- ============ PC ============ -->
+  <section class="system pc" id="sec-pc" data-system="pc">
+    <div class="sys-head">
+      <h2 class="sys-name">PC</h2>
+      <span class="sys-tag">Windows desktop &middot; DESKTOP-PA0JFOB</span>
+      <span class="sys-count" data-count></span>
+    </div>
+    <p class="sys-sub">The scanning engine. Runs the DarkHorse browser scans on a schedule and syncs everything to GitHub.</p>
+    <div class="rows">
+      <div class="row"><div class="row-main"><div class="task">Game middles scan</div></div><span class="when">Every 30 min</span></div>
+      <div class="row"><div class="row-main"><div class="task">Prop middles scan</div></div><span class="when">Every 2 hours</span></div>
+      <div class="row"><div class="row-main"><div class="task">SOG middles scan</div><div class="detail">Shots-on-goal middles.</div></div><span class="when">Hourly</span></div>
+      <div class="row"><div class="row-main"><div class="task">Arbitrage scan</div><div class="detail">Only pairs with profit over 3% are delivered.</div></div><span class="when">Hourly</span></div>
+      <div class="row"><div class="row-main"><div class="task">Kalshi&ndash;Poly arbitrage scan</div><div class="detail">Kalshi vs. Polymarket pairs, profit over 3% only.</div></div><span class="when">Hourly ~:44</span></div>
+      <div class="row"><div class="row-main"><div class="task">Low holds scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Hung numbers scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Key-number middles</div><div class="detail">NFL / NCAAF key numbers: 3, 4, 6, 7, 10, 14, 17.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Basketball-key middles</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Wong teasers scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Wide-builds miner</div><div class="detail">Assembles wide middle builds out of the middles and arbitrage deliveries.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Steam-side scan</div></div><span class="when">Every 30 min</span></div>
+      <div class="row"><div class="row-main"><div class="task">RLM scan</div><div class="detail">Reverse line movement.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Public-fade scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Spread cover scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">NHL totals scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">NBA Overs scan</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Pace-and-defense board</div><div class="detail">Top-quartile pace + total leans over; bottom-quartile leans under.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">RB rushing projections</div><div class="detail">Running-back attempts &times; opponent rushing yards-per-attempt allowed, vs. the FanDuel line.</div></div><span class="when">Thursdays ~11:24 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">First-score scans</div><div class="detail">NBA, NHL, NCAAB, NCAAF on the regular scan; NFL weekly.</div></div><span class="when">NFL Tuesdays</span></div>
+      <div class="row"><div class="row-main"><div class="task">Upset watch</div><div class="detail">Polls ESPN scoreboards. Alerts when a pregame favorite laying 10.5+ is trailing <em>and</em> the live moneyline is longer than &minus;200; warns once per game when it&rsquo;s &minus;200 or shorter.</div></div><span class="when">Every 2 min</span></div>
+      <div class="row"><div class="row-main"><div class="task">Todd Discord watcher<span class="badge-notlive">Not live yet</span></div><div class="detail">Watches Todd&rsquo;s in-play CBB plays in #todd-picks. Built and in place &mdash; waiting on your Discord sign-in at the PC keyboard.</div></div><span class="when">Once signed in</span></div>
+      <div class="row"><div class="row-main"><div class="task">Half Percent Club daily pick</div><div class="detail">One stock, one trade, +0.5% target. Chet grades it the next morning.</div></div><span class="when">~9:00 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Yahoo email brief</div><div class="detail">Runs in the PC&rsquo;s own Yahoo browser profile.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">Costco gold / gift-card check</div><div class="detail">Checks Costco for gold bars and gift cards on sale.</div></div><span class="when"></span></div>
+      <div class="row"><div class="row-main"><div class="task">GitHub sync + board publishing</div><div class="detail">Syncs all scan data to GitHub <code>pc-data/</code> and publishes the <code>-pc.html</code> boards.</div></div><span class="when">About every 10 min</span></div>
+    </div>
+  </section>
+
+  <!-- ============ MAC ============ -->
+  <section class="system mac" id="sec-mac" data-system="mac">
+    <div class="sys-head">
+      <h2 class="sys-name">Mac</h2>
+      <span class="sys-tag">MacBook Pro 15&Prime; Mid 2015 &middot; mike-macbook</span>
+      <span class="sys-count" data-count></span>
+    </div>
+    <p class="sys-sub">The second compute box. Heavier jobs the PC is slow at, plus your media server and your Notes.</p>
+    <div class="rows">
+      <div class="row"><div class="row-main"><div class="task">Jellyfin media server</div><div class="detail">Your movie and show library, served from the external Elements drive.</div></div><span class="when">Running</span></div>
+      <div class="row"><div class="row-main"><div class="task">Transcription (faster-whisper)</div><div class="detail">About 7&times; realtime &mdash; the PC manages only 0.37&times;, so transcription lives here.</div></div><span class="when">On demand</span></div>
+      <div class="row"><div class="row-main"><div class="task">Daily board builds</div><div class="detail">Builds 20 boards. Chet pulls them back over Tailscale and publishes them &mdash; the Mac never publishes directly.</div></div><span class="when">~10:44 AM</span></div>
+      <div class="row"><div class="row-main"><div class="task">Notes app</div><div class="detail">Home of your Apple Notes &mdash; the source of the Instagram links page now being built.</div></div><span class="when"></span></div>
+    </div>
+  </section>
+
+  <div class="empty" id="emptyState">
+    <div>No jobs match that search.</div>
+    <button type="button" id="resetFilters">Show everything</button>
+  </div>
+
+  <footer>
+    <p><strong>Quick way to remember it:</strong> if it involves scanning a book, it&rsquo;s the PC. If it&rsquo;s a heavy build or transcription, it&rsquo;s the Mac. If it lands in your chat &mdash; a brief, a grade, an alert, a voice note &mdash; it&rsquo;s Chet.</p>
+    <p>Schedules are the ones in the inventory this page was built from, November 23, 2026. A job marked &ldquo;Not live yet&rdquo; is built but waiting on a step from you.</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var search = document.getElementById('search');
+  var clearBtn = document.getElementById('clearSearch');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section.system'));
+  var emptyState = document.getElementById('emptyState');
+  var resultCount = document.getElementById('resultCount');
+  var activeSystem = 'all';
+
+  var total = 0;
+  sections.forEach(function(sec){
+    var n = sec.querySelectorAll('.row').length;
+    total += n;
+    var c = sec.querySelector('[data-count]');
+    if (c) c.textContent = n + (n === 1 ? ' job' : ' jobs');
+  });
+
+  function apply(){
+    var q = search.value.trim().toLowerCase();
+    clearBtn.style.display = q ? 'block' : 'none';
+    var visibleTotal = 0;
+    sections.forEach(function(sec){
+      var systemMatch = (activeSystem === 'all' || sec.getAttribute('data-system') === activeSystem);
+      var visibleHere = 0;
+      sec.querySelectorAll('.row').forEach(function(row){
+        var textMatch = !q || row.textContent.toLowerCase().indexOf(q) !== -1;
+        var show = systemMatch && textMatch;
+        row.hidden = !show;
+        if (show) visibleHere++;
+      });
+      sec.hidden = !systemMatch || visibleHere === 0;
+      visibleTotal += visibleHere;
+    });
+    emptyState.classList.toggle('show', visibleTotal === 0);
+    if (q || activeSystem !== 'all') {
+      resultCount.textContent = 'Showing ' + visibleTotal + ' of ' + total + ' jobs';
+    } else {
+      resultCount.textContent = total + ' jobs total';
+    }
+  }
+
+  search.addEventListener('input', apply);
+  clearBtn.addEventListener('click', function(){
+    search.value = '';
+    apply();
+    search.focus();
+  });
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      activeSystem = chip.getAttribute('data-filter');
+      chips.forEach(function(c){ c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      apply();
+    });
+  });
+  document.getElementById('resetFilters').addEventListener('click', function(){
+    search.value = '';
+    activeSystem = 'all';
+    chips.forEach(function(c){ c.setAttribute('aria-pressed', c.getAttribute('data-filter') === 'all' ? 'true' : 'false'); });
+    apply();
+  });
+
+  apply();
+})();
+</script>
+</body>
+</html>
