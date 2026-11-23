@@ -10842,3 +10842,17 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-22 23:02:27 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 201 events (2 with odds), db total 314226 snapshots / 1545 events, feeds ok 6 fail 0
 [2026-11-22 23:02:28 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL CIN Bengals WAS Commanders Nov-23 8:15 PM — Total — Over 57 ProphetX +130 ($85) / Under 57.5 Fanatics-NJ -140 ($115) — win+push at 57 — push +$82
 [2026-11-22 23:02:28 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-22 23:27:35 ET] sync_to_github.py: FAILED (exit 1) in 1507s —   FAILED: pc-data/half-percent-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 79822da2699e97d2f1db0041a7c9b39ed820ec3f but expected a8d299c172d131fac955a
+[2026-11-22 23:29:37 ET] dh_game_middles.py: OK in 122s — GAME MIDDLE: NCAAB Loyola Chicago San José St. Today 11:59 PM / Today 11:59 PM / table / Alt Total Under 152.5 / Alt Total Over 151.5 / table | HardRock | Bet36
+[2026-11-22 23:29:43 ET] steam_side.py: OK in 6s — steam-side: 70 games, no new flags (silent).
+[2026-11-22 23:30:56 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NBA POR Trail Blazers PHI 76ers Nov-23 7:15 PM / Nov-23 7:15 PM / table / Points S. Cissoko Under 7.5 / Alt Points S. Cissoko 7+ / table | B
+[2026-11-22 23:32:36 ET] dh_sog_middles.py: OK in 100s — - 0 deliverables this run
+[2026-11-22 23:32:39 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 6 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -3.5c vs 
+[2026-11-22 23:32:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 161 total tallied.
+[2026-11-22 23:32:42 ET] nba_first_score.py: OK in 2s — nba-first-score: 2 new, 1 unverified, 236 total tallied.
+[2026-11-22 23:32:43 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 1 new, 0 unverified, 369 total tallied.
+[2026-11-22 23:32:45 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 1 unverified, 1030 total tallied.
+[2026-11-22 23:32:47 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-22 23:32:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-22; skipping.
+[2026-11-22 23:32:48 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-22 23:32:48 ET] syncing to GitHub (regular 10-minute sync)
