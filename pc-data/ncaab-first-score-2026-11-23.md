@@ -15,3 +15,8 @@
 - 2026-11-23: Akron Zips @ Wright State Raiders — first: Akron Zips (2PT, 0:55 in); lead changes 9; final 64-66
 - 2026-11-23: Charlotte 49ers @ Florida Gulf Coast Eagles — first: Charlotte 49ers (3PT, 1:21 in); lead changes 0; final 71-58
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T17:38:30-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1042 games through 2026-11-23
+- 2026-11-23: Tulsa Golden Hurricane @ Oregon State Beavers — first: Oregon State Beavers (2PT, 0:14 in); lead changes 14; final 66-69
+- 2026-11-23: Ole Miss Rebels @ Clemson Tigers — first: Ole Miss Rebels (2PT, 0:33 in); lead changes 0; final 82-62
+- 2026-11-23: Ecclesia Royals @ Grambling Tigers — first: Grambling Tigers (2PT, 0:20 in); lead changes 4; final 45-126
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
