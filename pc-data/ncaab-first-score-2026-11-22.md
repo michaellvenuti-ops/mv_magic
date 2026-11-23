@@ -50,3 +50,6 @@
 - 2026-11-22: Rhode Island Rams @ UAB Blazers — first: UAB Blazers (2PT, 1:07 in); lead changes 1; final 79-64
 - 2026-11-22: Menlo Oaks @ Saint Mary's Gaels — first: Menlo Oaks (2PT, 0:26 in); lead changes 15; final 78-94
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-22T23:32:45-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1030 games through 2026-11-22
+- 2026-11-22: UT Martin Skyhawks @ Utah Valley Wolverines — first: Utah Valley Wolverines (FT, 0:21 in); lead changes 8; final 76-78
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
