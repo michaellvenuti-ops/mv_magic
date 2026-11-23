@@ -22,3 +22,4 @@ NEW FLAG: FBS Baylor @ Houston | 2026-11-23 — Fanatics still dealing spread -6
 NEW FLAG: FBS Louisiana Tech @ Georgia Southern | 2026-11-23 — Kalshi still dealing total 52.5 on Over (pre-move median 52.5, now 54.0)
 NEW FLAG: FBS UTEP @ Northern Illinois | 2026-11-23 — Fanatics still dealing total 48.5 on Over (pre-move median 48.5, now 50.5)
 NEW FLAG: FBS UTEP @ Northern Illinois | 2026-11-23 — Kalshi still dealing total 48.5 on Over (pre-move median 48.5, now 50.5)
+## 2026-11-23T16:52:26-05:00 — 69 games, 0 steam events, 0 NEW flags
