@@ -11157,3 +11157,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 15:01:18 ET] sync_to_github.py: FAILED (exit 1) in 1698s —   FAILED: ncaaf-first-score-board-pc.html (HTTP 409: {'error': '{"message":"is at 081ea4ad5b27668cdd71945e481181f318371853 but expected 3b0598c63fb46695e8a759ad
 [2026-11-23 15:01:40 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NCAAB VCU Providence Today 9:00 PM / Today 9:00 PM / table / Alt Spread VCU +4.5 / Alt Spread Providence -4.5 / table | BetMGM | Bally Bet
 [2026-11-23 15:01:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 15:30:49 ET] sync_to_github.py: FAILED (exit 1) in 1749s —   FAILED: pc-data/leader-follower-2026-11-06.md (HTTP 409: {'error': '{"message":"is at 8268b1514d5b2a410a082f07714917652988e39a but expected 366fd5fde5ceddfc9b
+[2026-11-23 15:32:32 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 155 events (112 with odds), db total 316808 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 15:32:33 ET] wide_builds.py: OK in 1s — wide_builds: 18 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 15:33:35 ET] dh_game_middles.py: OK in 62s — GAME MIDDLE: NBA SA Spurs SAC Kings Today 10:15 PM / Today 10:15 PM / table / Points S. Castle Under 20.5 / Alt Points S. Castle 20+ / table | HardRock | FanDue
+[2026-11-23 15:36:10 ET] dh_key_number_middles.py: OK in 156s — key-number-middles: 364 basketball rows excluded (football-only rule).
+[2026-11-23 15:38:42 ET] dh_basketball_key_middles.py: OK in 152s — basketball-key-middles: no new basketball middles.
+[2026-11-23 15:39:57 ET] hung_number.py: OK in 75s — HUNG NUMBER: UTEP vs Northern Illinois — Fanatics total value Under (48.5 vs median 50.5)
+[2026-11-23 15:40:09 ET] rlm.py: OK in 12s
+[2026-11-23 15:40:13 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-23 15:40:16 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS UTEP @ Northern Illinois | 2026-11-23 | Kalshi | Over total 48.5 (median 48.5 -> 50.5)
+[2026-11-23 15:41:14 ET] dh_prop_middles.py: OK in 58s — PROP MIDDLE CLEAN : NFL CIN Bengals WAS Commanders Today 8:15 PM / Today 8:15 PM / table / Passing Yards J. Daniels Under 233.5 / Alt Pass Yards J. Daniels 230+
+[2026-11-23 15:42:53 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-23 15:42:55 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-23 15:42:56 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 161 total tallied.
+[2026-11-23 15:42:57 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 236 total tallied.
+[2026-11-23 15:42:58 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 369 total tallied.
+[2026-11-23 15:43:01 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 5 new, 1 unverified, 1039 total tallied.
+[2026-11-23 15:43:02 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-23 15:43:02 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
+[2026-11-23 15:43:03 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-23 15:43:04 ET] syncing to GitHub (regular 10-minute sync)
