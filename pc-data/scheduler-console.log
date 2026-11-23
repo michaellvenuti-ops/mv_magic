@@ -11015,3 +11015,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 08:15:30 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 08:15:31 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-23 08:15:31 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 08:43:38 ET] sync_to_github.py: FAILED (exit 1) in 1688s —   FAILED: pc-data/low-holds-2026-11-11.md (HTTP 409: {'error': '{"message":"is at b42845ec9a41d090ee8a2403e8db522e4798c715 but expected 9f62cb3643833592016bc754
+[2026-11-23 08:45:25 ET] odds_recorder.py: OK in 76s — SUMMARY: recorded 146 events (70 with odds), db total 315887 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 08:45:56 ET] dh_arbitrage.py: OK in 31s — ARBITRAGE: NCAAB Alabama St. California Today 10:00 PM / Today 10:00 PM / table / Alt Total Over 138.5 / Alt Total Under 138.5 / table | DraftKings | Bet365
+[2026-11-23 08:46:16 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 08:46:18 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Middle Tennessee Southern Illinois Today 3:00 PM — Total — Over 144.5 DraftKings -166 ($122) / Under 145 Bet365 +150 ($78) — win+push at 145 — 
+[2026-11-23 08:46:18 ET] syncing to GitHub (wide-builds banked new builds)
