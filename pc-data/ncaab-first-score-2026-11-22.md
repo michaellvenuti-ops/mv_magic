@@ -45,3 +45,8 @@
 - 2026-11-22: Temple Owls @ Stephen F. Austin Lumberjacks — first: Temple Owls (3PT, 0:14 in); lead changes 13; final 70-72
 - 2026-11-22: Utah Utes @ Minnesota Golden Gophers — first: Minnesota Golden Gophers (3PT, 1:19 in); lead changes 6; final 62-77
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-22T22:27:43-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1029 games through 2026-11-22
+- 2026-11-22: Louisiana Ragin' Cajuns @ USC Trojans — first: USC Trojans (FT, 0:28 in); lead changes 0; final 56-82
+- 2026-11-22: Rhode Island Rams @ UAB Blazers — first: UAB Blazers (2PT, 1:07 in); lead changes 1; final 79-64
+- 2026-11-22: Menlo Oaks @ Saint Mary's Gaels — first: Menlo Oaks (2PT, 0:26 in); lead changes 15; final 78-94
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
