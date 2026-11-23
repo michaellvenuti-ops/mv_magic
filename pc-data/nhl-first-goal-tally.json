@@ -5827,37 +5827,53 @@
   },
   {
    "date": "2026-11-22",
-   "away": "Carolina Hurricanes",
-   "home": "New York Rangers",
-   "first": "Carolina Hurricanes",
+   "away": "Buffalo Sabres",
+   "home": "Tampa Bay Lightning",
+   "first": "Buffalo Sabres",
    "first_side": "away",
-   "first_strength": "SH",
-   "first_scorer": "Eric Robinson",
-   "first_elapsed_sec": 420,
-   "winner": "Carolina Hurricanes",
+   "first_strength": "EV",
+   "first_scorer": "Jiri Kulich",
+   "first_elapsed_sec": 985,
+   "winner": "Buffalo Sabres",
    "shootout": false,
-   "seq": "1-0>1-1>2-1>3-1>4-1>4-2>5-2",
+   "seq": "1-0>1-1>2-1>3-1>4-1>4-2>5-2>6-2",
    "lead_changes": 0,
    "ties": 1,
-   "final": "5-2"
+   "final": "6-2"
+  },
+  {
+   "away": "Carolina Hurricanes",
+   "date": "2026-11-22",
+   "final": "5-2",
+   "first": "Carolina Hurricanes",
+   "first_elapsed_sec": 420,
+   "first_scorer": "Eric Robinson",
+   "first_side": "away",
+   "first_strength": "SH",
+   "home": "New York Rangers",
+   "lead_changes": 0,
+   "seq": "1-0>1-1>2-1>3-1>4-1>4-2>5-2",
+   "shootout": false,
+   "ties": 1,
+   "winner": "Carolina Hurricanes"
   }
  ],
  "tally": {
   "Buffalo Sabres": {
-   "gp": 23,
-   "scored_first": 13,
+   "gp": 24,
+   "scored_first": 14,
    "strengths": {
-    "EV": 11,
+    "EV": 12,
     "PP": 2,
     "SH": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 4,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 56.5,
-   "win_pct_when_first": 38.5,
+   "scored_first_pct": 58.3,
+   "win_pct_when_first": 42.9,
    "win_pct_when_not_first": 40.0,
-   "won_by_one_when_first_pct": 7.7
+   "won_by_one_when_first_pct": 7.1
   },
   "Columbus Blue Jackets": {
    "gp": 21,
@@ -6068,7 +6084,7 @@
    "won_by_one_when_first_pct": 27.3
   },
   "Tampa Bay Lightning": {
-   "gp": 22,
+   "gp": 23,
    "scored_first": 13,
    "strengths": {
     "EV": 9,
@@ -6078,9 +6094,9 @@
    "won_when_first": 12,
    "won_when_not_first": 3,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 59.1,
+   "scored_first_pct": 56.5,
    "win_pct_when_first": 92.3,
-   "win_pct_when_not_first": 33.3,
+   "win_pct_when_not_first": 30.0,
    "won_by_one_when_first_pct": 7.7
   },
   "New York Rangers": {
@@ -6357,28 +6373,28 @@
   }
  },
  "league": {
-  "games": 365,
-  "games_with_goal": 363,
+  "games": 366,
+  "games_with_goal": 364,
   "shootouts": 29,
   "home_scored_first": 173,
-  "first_team_won": 233,
+  "first_team_won": 234,
   "first_team_won_by_one": 69,
   "first_team_won_by_one_pct": 19.0,
   "strengths": {
-   "EV": 278,
+   "EV": 279,
    "PP": 79,
    "SH": 6
   },
   "avg_lead_changes": 0.48,
   "median_first_goal_sec": 873,
-  "home_scored_first_pct": 47.7,
-  "first_team_win_pct": 64.2
+  "home_scored_first_pct": 47.5,
+  "first_team_win_pct": 64.3
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
-   "games": 23,
+   "games": 24,
    "lead_changes": 14,
-   "avg_per_game": 0.61
+   "avg_per_game": 0.58
   },
   "Columbus Blue Jackets": {
    "games": 21,
@@ -6446,9 +6462,9 @@
    "avg_per_game": 0.38
   },
   "Tampa Bay Lightning": {
-   "games": 22,
+   "games": 23,
    "lead_changes": 5,
-   "avg_per_game": 0.23
+   "avg_per_game": 0.22
   },
   "New York Rangers": {
    "games": 22,
