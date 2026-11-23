@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Sports Betting Book Models — Mack &amp; The Logic of Sports Betting</title>
+<style>
+:root{
+  --bg:#f4f3ef; --surface:#ffffff; --surface2:#eef0ea; --ink:#171a17; --muted:#5b625b; --line:#dddcd4;
+  --green:#0f5132; --green2:#146c43; --amber:#b45309; --rust:#9a3412; --teal:#0f766e; --slate:#334155;
+  --easy:#dcfce7; --easy-ink:#166534; --med:#fef3c7; --med-ink:#92400e; --hard:#fee2e2; --hard-ink:#991b1b;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111311; --surface:#1a1e1a; --surface2:#222722; --ink:#eef0ea; --muted:#a8b0a6; --line:#2e332e; --easy:#14301f; --easy-ink:#86efac; --med:#33270e; --med-ink:#fcd34d; --hard:#3a1717; --hard-ink:#fca5a5; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+a{color:var(--green2);text-underline-offset:3px}
+@media (prefers-color-scheme: dark){ a{color:#7dd3a8} }
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px 56px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style",Palatino,serif;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.4rem);margin:0}
+h2{font-size:1.65rem;margin:0 0 8px}
+h3{font-size:1.08rem;margin:0}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+.hero{padding:28px 0 18px;border-bottom:2px solid var(--ink)}
+.hero-top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.pill{display:inline-flex;align-items:center;min-height:32px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.82rem;font-weight:700;letter-spacing:.02em}
+.lede{font-size:1.08rem;max-width:760px;margin-top:12px;color:var(--muted)}
+.lede strong{color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{font-size:1.55rem;display:block;line-height:1;font-family:Georgia,serif}
+.stat span{font-size:.82rem;color:var(--muted);font-weight:600}
+.books{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.bookbox{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--surface)}
+.bookbox h3{font-size:1rem}
+.bookbox p{font-size:.92rem;color:var(--muted);margin-top:6px}
+.verdict{margin-top:22px;background:var(--green);color:#fff;border-radius:16px;padding:20px}
+.verdict h2{color:#fff}
+.verdict .sub{color:#cfe8d8;font-size:.95rem;max-width:720px}
+.verdict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.vcard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:14px}
+.vcard .num{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.vcard h3{color:#fff;margin:6px 0 6px;font-family:system-ui,sans-serif;font-size:1rem}
+.vcard p{font-size:.9rem;color:#e6f2e9}
+.controls{position:sticky;top:0;z-index:20;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
+.controls-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter-btn{min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-weight:700;cursor:pointer;font-size:.9rem}
+.filter-btn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{flex:1;min-width:200px;min-height:40px;padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:.95rem}
+select{min-height:40px;padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-weight:600}
+.section{margin-top:28px}
+.section-head{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:10px}
+.section-head p{color:var(--muted);font-size:.92rem;max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px}
+.card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.id{font-size:.75rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:var(--surface2);white-space:nowrap}
+.badge{font-size:.75rem;font-weight:800;padding:5px 8px;border-radius:999px;white-space:nowrap}
+.badge.easy{background:var(--easy);color:var(--easy-ink)} .badge.med{background:var(--med);color:var(--med-ink)} .badge.hard{background:var(--hard);color:var(--hard-ink)}
+.card h3{font-family:system-ui,sans-serif;font-size:1.02rem;line-height:1.25}
+.desc{font-size:.93rem;color:var(--muted)}
+.dl{display:grid;grid-template-columns:86px 1fr;gap:4px 10px;font-size:.88rem;border-top:1px dashed var(--line);padding-top:10px}
+.dl dt{font-weight:800;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;padding-top:1px}
+.dl dd{margin:0}
+.caveat{font-size:.85rem;background:var(--surface2);border-radius:8px;padding:9px 10px}
+.caveat strong{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase}
+.queue{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:14px}
+.qrow{display:grid;grid-template-columns:44px 1fr auto;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);align-items:start}
+.qrow:last-child{border-bottom:0}
+.qnum{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:800}
+.qrow h3{font-family:system-ui,sans-serif;font-size:.98rem}
+.qrow p{font-size:.9rem;color:var(--muted);margin-top:2px}
+.tag{font-size:.78rem;font-weight:700;border:1px solid var(--line);padding:6px 8px;border-radius:999px;white-space:nowrap;background:var(--surface2)}
+.warnbox{margin-top:22px;border:1px solid #f59e0b;background:#fffbeb;border-radius:14px;padding:16px}
+@media (prefers-color-scheme: dark){ .warnbox{background:#2a210c;border-color:#92400e} }
+.warnbox h2{font-size:1.15rem}
+.warnbox ul{margin:10px 0 0 18px;padding:0;font-size:.92rem;color:var(--muted)}
+.warnbox li{margin:6px 0}
+.sources{margin-top:22px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.sources ul{margin:10px 0 0 18px;padding:0;font-size:.9rem}
+.sources li{margin:6px 0;word-break:break-word}
+.hidden{display:none !important}
+.empty{padding:18px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px;margin-top:12px}
+.footer{margin-top:22px;font-size:.85rem;color:var(--muted);text-align:center}
+@media(max-width:760px){ .stats{grid-template-columns:1fr 1fr} .books,.verdict-grid,.grid{grid-template-columns:1fr} .qrow{grid-template-columns:40px 1fr} .tag{grid-column:2} .dl{grid-template-columns:78px 1fr} }
+button,select,input{min-height:40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-top">
+      <span class="pill">ANDREW MACK × MILLER &amp; DAVIDOW</span>
+      <span class="pill">Research read 23 Nov 2026</span>
+    </div>
+    <h1>Cool models from the books —<br>and what to paper-trade next</h1>
+    <p class="lede">You asked for <strong>other buildable models</strong> beyond the Sixers player-prop build. This page inventories every concrete model in Mack’s <em>Statistical Sports Models in Excel</em> Vols. 1–2 and <em>Bayesian Sports Models in R</em>, plus every systematic rule in <em>The Logic of Sports Betting</em> — with inputs, math, bet type, and how hard each one is to build. <strong>Nothing here is a pick yet.</strong> It’s a menu for paper trading.</p>
+    <div class="stats">
+      <div class="stat"><b>30</b><span>models &amp; frameworks total</span></div>
+      <div class="stat"><b>15</b><span>from Mack (Vols. 1–2 + Bayesian)</span></div>
+      <div class="stat"><b>15</b><span>from The Logic of Sports Betting</span></div>
+      <div class="stat"><b>3</b><span>best next builds — see green box</span></div>
+    </div>
+    <div class="books">
+      <div class="bookbox">
+        <h3>📗 Mack — Statistical Sports Models in Excel</h3>
+        <p><strong>Vol. 1</strong> (9 July 2019, 162 pp., ISBN 9781079013450) — team-level, generalised modelling for NFL, NBA, NHL, AFL &amp; EPL, with downloadable spreadsheets. <strong>Vol. 2</strong> (29 Feb 2020, ~148 pp. paperback / 158 pp. Kindle) — assumes Vol. 1, moves to player-based, bottom-up models, derivatives &amp; props. <strong>Bayesian Sports Models in R</strong> (2024, 355 pp.) — Bayesian models in R/Stan with downloadable R code.</p>
+      </div>
+      <div class="bookbox">
+        <h3>📘 Miller &amp; Davidow — The Logic of Sports Betting</h3>
+        <p>(17 May 2019, ~230 pp., ISBN 978-1-0968-0572-4) — Three parts: Bets and Books, The Logic, Winning. <strong>Important caveat from the authors themselves:</strong> it contains <em>no ready-made predictive model and no Kelly chapter</em> — modelling is the one key area they say they do not cover. What it does give you is market rules you can systematise.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="verdict" aria-label="Recommended next paper trades">
+    <h2>If we paper-trade three next, start here</h2>
+    <p class="sub">Chosen for buildability + fit with what you already run. Your Sixers Tracker already covers the spirit of Mack 2.2 / 2.4 (BPM + player-prop simulation), so these three add something new instead of duplicating it.</p>
+    <div class="verdict-grid">
+      <div class="vcard"><div class="num">01 — Easiest win</div><h3>Elo team ratings (Mack 2.1)</h3><p>Results only, one K-factor per sport. Gives you a clean moneyline / spread probability for any league — even low-data ones — to compare against the book every morning.</p></div>
+      <div class="vcard"><div class="num">02 — Fits your arb scans</div><h3>Synthetic hold — “chopping the hold” (Logic L2)</h3><p>Build a near-0% market from the best price on each side across books. Only bet when synthetic hold is ~0% or negative — then a tiny real edge is enough. Direct extension of your arbitrage work.</p></div>
+      <div class="vcard"><div class="num">03 — Validates everything</div><h3>Closing-line value tracker (Logic L3 + L15)</h3><p>Log price taken vs. closing price for every paper bet. Average CLV of at least half the hold over hundreds of bets is the book’s “promising” test. Without this, win % alone tells you almost nothing.</p></div>
+    </div>
+  </section>
+
+  <div class="controls" role="search">
+    <div class="controls-row">
+      <button class="filter-btn" data-filter="all" aria-pressed="true">All 30</button>
+      <button class="filter-btn" data-filter="vol1" aria-pressed="false">Mack Vol. 1</button>
+      <button class="filter-btn" data-filter="vol2" aria-pressed="false">Mack Vol. 2</button>
+      <button class="filter-btn" data-filter="bayes" aria-pressed="false">Bayesian in R</button>
+      <button class="filter-btn" data-filter="logic" aria-pressed="false">Logic</button>
+      <select id="diffSel" aria-label="Filter by buildability"><option value="all">Any difficulty</option><option value="easy">Easy</option><option value="med">Medium</option><option value="hard">Hard</option></select>
+      <input class="search" id="q" type="search" placeholder="Search: Poisson, props, CLV, Elo, middles…" aria-label="Search models">
+    </div>
+    <p class="small muted" style="margin-top:8px"><span id="count">30</span> shown • Confidence: Logic = high (full TOC + chapter text skimmed). Mack = medium — no public table of contents was found; names come from the author’s podcast interview, publisher blurbs, and reviewers, cross-checked.</p>
+  </div>
+
+  <!-- VOL 1 -->
+  <section class="section" data-section>
+    <div class="section-head"><div><h2>Mack Vol. 1 — Team-level, generalised models</h2><p>The toolkit book: ratings, regression, simulation, backtesting. Mack’s own warning runs through it — a model is only a tool to find an <em>effect</em>; the effect, not the model, is the edge. Beware the “generalised model” trap of one model for all sports.</p></div><span class="pill">6 models</span></div>
+    <div class="grid">
+      <article class="card" data-book="vol1" data-diff="easy" data-text="bradley terry rating win probability moneyline icelandic womens basketball low limit">
+        <div class="card-top"><span class="id">Mack 1.1 • Vol. 1</span><span class="badge easy">Easy</span></div>
+        <h3>Bradley–Terry team-rating model</h3><p class="desc">The author’s own example of a Vol. 1 model. Each team gets a latent strength; win probability comes from the strength ratio.</p>
+        <dl class="dl"><dt>Sport</dt><dd>Any team sport — author recommends low-limit, data-poor leagues, e.g. Icelandic women’s basketball</dd><dt>Predicts</dt><dd>Win probability for a match-up</dd><dt>Inputs</dt><dd>Historical head-to-head / win–loss results only, plus home advantage</dd><dt>Math</dt><dd>P(i beats j) = strength<sub>i</sub> / (strength<sub>i</sub> + strength<sub>j</sub>), fitted by maximum likelihood / iterative solving in Excel</dd><dt>Bet</dt><dd>Moneyline (spread/total derived from it)</dd></dl>
+        <div class="caveat"><strong>Watch out</strong> — Author warns it loses badly in major leagues (NBA) where player data matters. Data needed: results only.</div>
+      </article>
+
+      <article class="card" data-book="vol1" data-diff="med" data-text="regression correlation r squared p value points margin team stats spread total">
+        <div class="card-top"><span class="id">Mack 1.2 • Vol. 1</span><span class="badge med">Easy–Medium</span></div>
+        <h3>Regression / correlation models</h3><p class="desc">The book’s stats core — correlations, distributions, regressions, R², p-values — with templates for each sport in the final section.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NFL, NBA, NHL, AFL, EPL</dd><dt>Predicts</dt><dd>Points/goals scored or margin, from team stats</dd><dt>Inputs</dt><dd>Public team stats (author’s early work: goal differential; Basketball-Reference / Hockey-Reference-style sources)</dd><dt>Math</dt><dd>Ordinary least-squares regression in Excel (LINEST / Analysis ToolPak); check correlation &amp; R² before trusting a variable</dd><dt>Bet</dt><dd>Spread / total / moneyline</dd></dl>
+        <div class="caveat"><strong>Watch out</strong> — Easy to replicate; hard to find an effect the market hasn’t already priced — Mack’s own warning. Needs several seasons of team stats.</div>
+      </article>
+
+      <article class="card" data-book="vol1" data-diff="easy" data-text="monte carlo simulation nba three point contest outright all star">
+        <div class="card-top"><span class="id">Mack 1.3 • Vol. 1</span><span class="badge easy">Easy</span></div>
+        <h3>Monte Carlo — NBA three-point contest</h3><p class="desc">A small, self-contained simulation the author says has been successful for a number of years.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NBA (All-Star weekend)</dd><dt>Predicts</dt><dd>Probability each contestant wins the 3-point contest</dd><dt>Inputs</dt><dd>Each shooter’s historical 3-point % / rack-by-rack success rates</dd><dt>Math</dt><dd>Repeated random simulation (Excel RAND / Data Tables) of the contest format, thousands of runs, tally win frequencies</dd><dt>Bet</dt><dd>Outright / contest winner (multiway)</dd></dl>
+        <div class="caveat"><strong>Data</strong> — Only shooter shooting stats needed.</div>
+      </article>
+
+      <article class="card" data-book="vol1" data-diff="med" data-text="college basketball totals angle ncaab over under effect">
+        <div class="card-top"><span class="id">Mack 1.4 • Vol. 1</span><span class="badge med">Medium</span></div>
+        <h3>College-basketball totals angle</h3><p class="desc">Effect-first, not a full model — a specific, repeatable mispricing template: find the effect, quantify it, then model it.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NCAA basketball</dd><dt>Predicts</dt><dd>Game total (over/under)</dd><dt>Inputs</dt><dd>Game totals and the underlying effect</dd><dt>Math</dt><dd>Quantify effect size vs. market total; bet only where the effect clears the hold</dd><dt>Bet</dt><dd>Total</dd></dl>
+        <div class="caveat"><strong>Open question</strong> — Mack describes it as a real, quantifiable effect, but the exact variable is <em>not named in public sources</em>. Buildable only after you identify/measure it yourself. Author says attacking it will likely get you limited.</div>
+      </article>
+
+      <article class="card" data-book="vol1" data-diff="med" data-text="benter boost blend model market probability logit kelly ev">
+        <div class="card-top"><span class="id">Mack 1.5 • Vol. 1</span><span class="badge med">Medium</span></div>
+        <h3>Benter boost — blend model + market probability</h3><p class="desc">A probability-combination layer, not a bet type. Named for horse-racing originator Bill Benter.</p>
+        <dl class="dl"><dt>Sport</dt><dd>Any sport</dd><dt>Predicts</dt><dd>Improved win probability</dd><dt>Inputs</dt><dd>Your model’s probability + the market’s implied probability (from odds)</dd><dt>Math</dt><dd>Second-stage combination (in Benter’s original work, a logit combining model &amp; public probabilities); use combined figure for EV/Kelly decisions, and as a test of whether your model adds anything</dd><dt>Bet</dt><dd>Any — it improves the probability you feed into every other model</dd></dl>
+        <div class="caveat"><strong>Not verified</strong> — The blend concept is verified as Benter’s method in wider literature; Mack’s exact Excel implementation (weight/formula) was not verified. Hard to calibrate without out-of-sample data.</div>
+      </article>
+
+      <article class="card" data-book="vol1" data-diff="easy" data-text="backtesting walk forward validation kelly discard model roi closing line">
+        <div class="card-top"><span class="id">Mack 1.6 • Vol. 1</span><span class="badge easy">Easy to run</span></div>
+        <h3>Backtesting + walk-forward validation</h3><p class="desc">A method, not a bet — the layer that decides whether any model above deserves paper money, let alone real money.</p>
+        <dl class="dl"><dt>Sport</dt><dd>All</dd><dt>Predicts</dt><dd>Whether a model/angle actually beats the vig</dd><dt>Inputs</dt><dd>Historical results + historical (or closing) odds</dd><dt>Math</dt><dd>Backtest ROI vs. closing line; Mack prefers walk-forward (fit, then test on new in-season data as it arrives) and a Bayesian-updated Kelly test — start with a Kelly stake prior, shrink it as results arrive, discard the model when it hits zero</dd><dt>Bet</dt><dd>Validation layer for all models</dd></dl>
+        <div class="caveat"><strong>Watch out</strong> — Backtests assume a static market; Mack warns markets adapt and edges erode. Segment tests by month / season phase (e.g. NHL pre- vs. post-trade-deadline).</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- VOL 2 -->
+  <section class="section" data-section>
+    <div class="section-head"><div><h2>Mack Vol. 2 — Player-based, bottom-up models</h2><p>Build the line from the players who will actually be on the floor/ice/field. That’s why it handles injuries and lineup changes that team models can’t — and why your Sixers build lives in this family.</p></div><span class="pill">7 models</span></div>
+    <div class="grid">
+      <article class="card" data-book="vol2" data-diff="easy" data-text="elo rating team win probability k factor margin home advantage">
+        <div class="card-top"><span class="id">Mack 2.1 • Vol. 2</span><span class="badge easy">Easy</span></div>
+        <h3>Elo team-rating model</h3><p class="desc">Author: “an Elo model for teams, like we did in Vol. 2.” The simplest rating system that still produces a usable price.</p>
+        <dl class="dl"><dt>Sport</dt><dd>Any team sport</dd><dt>Predicts</dt><dd>Win probability</dd><dt>Inputs</dt><dd>Game results, margin of victory, home advantage</dd><dt>Math</dt><dd>Rating += K × (actual − expected), expected from rating gap; K is sport-specific — basketball high (ratings move fast), soccer/hockey lower</dd><dt>Bet</dt><dd>Moneyline / spread</dd></dl>
+        <div class="caveat"><strong>Data</strong> — Results only; tune K per sport by backtest. ⭐ Top paper-trade candidate.</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="med" data-text="bpm box plus minus nba player model sixers spread total minutes lineup">
+        <div class="card-top"><span class="id">Mack 2.2 • Vol. 2</span><span class="badge med">Medium</span></div>
+        <h3>NBA BPM (Box Plus/Minus) player model</h3><p class="desc">Basis for a bottom-up team model. A reviewer adapted it to NCAA basketball.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NBA</dd><dt>Predicts</dt><dd>Team strength / game line from player ratings</dd><dt>Inputs</dt><dd>Player box-score stats, minutes/lineups</dd><dt>Math</dt><dd>Player BPM ratings aggregated by expected minutes/rotation into a team rating; convert rating gap to spread/total</dd><dt>Bet</dt><dd>Spread / total; also a starting point for player props</dd></dl>
+        <div class="caveat"><strong>Link to your build</strong> — This is the family your Sixers Tracker belongs to. Hard part is injuries/late lineup changes — which is also the point. Needs Basketball-Reference player data + minutes projection.</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="hard" data-text="nhl expected goals xg poisson moneyline total shot location">
+        <div class="card-top"><span class="id">Mack 2.3 • Vol. 2</span><span class="badge hard">Medium–Hard</span></div>
+        <h3>NHL expected-goals (xG) model</h3><p class="desc">Singled out by a reviewer as “worth the price of the book on its own.”</p>
+        <dl class="dl"><dt>Sport</dt><dd>NHL</dd><dt>Predicts</dt><dd>Goal expectancy per team, hence win/total probabilities</dd><dt>Inputs</dt><dd>Shot-level data (shot location/type, presumably)</dd><dt>Math</dt><dd>Expected-goals value per shot, summed by team/situation; goal expectancy fed into Poisson/simulation for scorelines</dd><dt>Bet</dt><dd>Moneyline / total (goals)</dd></dl>
+        <div class="caveat"><strong>Not verified</strong> — Needs shot-location data (MoneyPuck / Natural Stat Trick-style feeds are the kind required — the book lists data-mining resource outlets, but the specific sources were not verified).</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="hard" data-text="player prop simulation monte carlo points yards strikeouts over under sixers">
+        <div class="card-top"><span class="id">Mack 2.4 • Vol. 2</span><span class="badge hard">Medium–Hard</span></div>
+        <h3>Player-prop simulation models</h3><p class="desc">Simulate the distribution, don’t just project a single number — then compare the whole distribution to the prop line.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NBA / NFL / MLB</dd><dt>Predicts</dt><dd>Distribution of a player’s stat line (points, yards, strikeouts, etc.)</dd><dt>Inputs</dt><dd>Player per-game/per-minute rates, minutes or usage projection, opponent, team totals</dd><dt>Math</dt><dd>Monte Carlo simulation of the player’s stat distribution; compare simulated distribution to prop line/price for over/under probability</dd><dt>Bet</dt><dd>Player props (over/under)</dd></dl>
+        <div class="caveat"><strong>Link to your build</strong> — The other half of the Sixers Tracker idea. Excel works for a handful of props; scanning a full slate needs R/Python — Mack’s own point.</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="med" data-text="derivative pricing first half first quarter first period alternate spread total lineup">
+        <div class="card-top"><span class="id">Mack 2.5 • Vol. 2</span><span class="badge med">Medium</span></div>
+        <h3>Derivative pricing from player/team models</h3><p class="desc">Don’t scale the full-game line — build the segment line from the players actually in that segment.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NBA / NFL / MLB / NHL</dd><dt>Predicts</dt><dd>First-half / first-quarter / first-period lines, alternative spreads/totals</dd><dt>Inputs</dt><dd>Lineup/rotation data (who plays when), team totals</dd><dt>Math</dt><dd>Bottom-up construction from segment minutes/rotations</dd><dt>Bet</dt><dd>Derivatives (1H/1Q/1P, alt lines)</dd></dl>
+        <div class="caveat"><strong>Data</strong> — Same data as 2.2/2.4, plus segment-level minutes.</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="easy" data-text="how predictive is stat x feature selection correlation screening filter">
+        <div class="card-top"><span class="id">Mack 2.6 • Vol. 2</span><span class="badge easy">Easy</span></div>
+        <h3>“How Predictive is Stat X?” — feature selection</h3><p class="desc">A screening layer for every other model: keep only stats with real predictive power.</p>
+        <dl class="dl"><dt>Sport</dt><dd>Any</dd><dt>Predicts</dt><dd>Which stats actually predict outcomes (and which do not)</dd><dt>Inputs</dt><dd>Candidate stat vs. future results/outcomes</dd><dt>Math</dt><dd>Correlation / predictive testing of each stat against out-of-sample results</dd><dt>Bet</dt><dd>Screening layer — directly usable as a paper-trading filter</dd></dl>
+        <div class="caveat"><strong>Data</strong> — Historical stat + results data.</div>
+      </article>
+
+      <article class="card" data-book="vol2" data-diff="med" data-text="bayesian applications shrinkage updating prior rating probability">
+        <div class="card-top"><span class="id">Mack 2.7 • Vol. 2</span><span class="badge med">Medium</span></div>
+        <h3>Basic Bayesian applications</h3><p class="desc">A light introduction in Vol. 2; the full treatment is the 2024 book below.</p>
+        <dl class="dl"><dt>Sport</dt><dd>Any</dd><dt>Predicts</dt><dd>Shrinkage / updating of ratings and probabilities</dd><dt>Inputs</dt><dd>Prior rating + new results</dd><dt>Math</dt><dd>Bayesian updating of a prior with new evidence</dd><dt>Bet</dt><dd>Improves 2.1 / 2.2</dd></dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- BAYESIAN -->
+  <section class="section" data-section>
+    <div class="section-head"><div><h2>Bayesian Sports Models in R (2024) — The distribution, not just the median</h2><p>355 pp., R/Stan with MCMC and Approximate Bayesian Computation for NHL/NBA/NFL/MLB. Its distinctive value is a full posterior — median + spread/SD — so you can attack volatility, middles, and alternate lines, not just the main line.</p></div><span class="pill">2 models</span></div>
+    <div class="grid">
+      <article class="card" data-book="bayes" data-diff="hard" data-text="bayesian game simulation r stan mcmc posterior nhl nba nfl mlb spread total middles">
+        <div class="card-top"><span class="id">Mack 3.1 • Bayesian</span><span class="badge hard">Hard</span></div>
+        <h3>Bayesian game-simulation models in R/Stan</h3><p class="desc">One model per league, with downloadable R code supplied by the book.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NHL, NBA, NFL, MLB</dd><dt>Predicts</dt><dd>Full posterior distribution of game outcomes (score/margin/total)</dd><dt>Inputs</dt><dd>Team/player data, priors on team strength</dd><dt>Math</dt><dd>Bayesian inference via Markov Chain Monte Carlo (MCMC) in Stan (rstan); Approximate Bayesian Computation (ABC) also covered</dd><dt>Bet</dt><dd>Spread / total / moneyline, plus middles &amp; alternate lines</dd></dl>
+        <div class="caveat"><strong>Build note</strong> — Needs R + Stan and comfort with Bayesian concepts.</div>
+      </article>
+      <article class="card" data-book="bayes" data-diff="hard" data-text="volatility distribution shape attack standard deviation alternate lines middles sell points">
+        <div class="card-top"><span class="id">Mack 3.2 • Bayesian</span><span class="badge hard">Hard</span></div>
+        <h3>Volatility / distribution-shape attack</h3><p class="desc">The book’s distinctive edge over Vols. 1–2: attack the <em>shape</em> of the distribution, not just its median.</p>
+        <dl class="dl"><dt>Sport</dt><dd>NBA / NFL (author’s examples: basketball total, margin of victory)</dd><dt>Predicts</dt><dd>Whether the market’s implied standard deviation is too wide or too narrow</dd><dt>Inputs</dt><dd>Your posterior SD vs. SD implied by market prices on total/spread</dd><dt>Math</dt><dd>If yours is wider → sell points / take alternate lines; if narrower → build a middle by betting both sides of a range</dd><dt>Bet</dt><dd>Alternate totals/spreads, middles</dd></dl>
+        <div class="caveat"><strong>Build note</strong> — Needs the full posterior from 3.1 first. Directly relevant to your existing middles work, but it’s a later build, not a starter.</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- LOGIC -->
+  <section class="section" data-section>
+    <div class="section-head"><div><h2>The Logic of Sports Betting — Market rules you can systematise</h2><p>No predictive model in here — and the authors are explicit about that. Instead: how to price, where books are weak, and how to know if you’re actually winning. Market-maker books post openers and move on action; most retail books copy them. That gap is where L3 / L4 / L12 live — and why they decay as books improve.</p></div><span class="pill">15 frameworks</span></div>
+    <div class="grid">
+      <article class="card" data-book="logic" data-diff="easy" data-text="break even ev expected value pricing odds edge logic l1">
+        <div class="card-top"><span class="id">Logic L1</span><span class="badge easy">Easy</span></div><h3>Break-even % and EV</h3><p class="desc">Convert every price to the win % needed to profit; judge bets by % edge, not points.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Odds from any book</dd><dt>Rule</dt><dd>EV = (your true probability × decimal odds) − 1; bet only if positive. −110 ⇒ 52.4% break-even. A 12/1 shot moving to 7/1 is a 4% edge; an even-money shot moving to 8/11 is an 8% edge — the latter is better despite fewer “points” gained.</dd><dt>Bet</dt><dd>All markets</dd></dl>
+        <div class="caveat"><strong>Hard part</strong> — The spreadsheet is easy; the hard input is your true probability.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="synthetic hold chopping hold zero hold arbitrage best price logic l2">
+        <div class="card-top"><span class="id">Logic L2</span><span class="badge med">Easy–Medium</span></div><h3>Synthetic hold / “chopping the hold” to ~0%</h3><p class="desc">Build a market from the best price on each side across books — and across related markets.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Live odds from many books (market-maker + retail), plus push-rate charts to convert between spreads/totals/derivatives</dd><dt>Rule</dt><dd>Synthetic hold = sum of implied probabilities of best prices − 1. Book example: Dolphins/Bills −5.5 at −110/−110 (4.5% hold) vs. best prices +100/−110 (2.3% hold). Paper rule: only bet when synthetic hold is near 0% (negative = arbitrage). Extend shopping to related markets (−6.5 vs −6 vs moneyline) and derivatives to chop further.</dd><dt>Bet</dt><dd>Spread / total / moneyline + derivatives</dd></dl>
+        <div class="caveat"><strong>⭐ Top candidate</strong> — Odds comparison is easy; push-rate charts need 10 years of historical final scores by league.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="easy" data-text="closing line value clv market agreement resistance validation logic l3">
+        <div class="card-top"><span class="id">Logic L3</span><span class="badge easy">Easy</span></div><h3>Closing-line value (CLV) + market agreement / resistance</h3><p class="desc">The book’s validation metric — more trustworthy than short-run win %.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Your bet price + closing price at market-maker books, over hundreds of bets</dd><dt>Rule</dt><dd>Move in your favour = agreement (good); move against you = resistance (red flag — stop, diagnose, do <strong>not</strong> double down / top up, or your biggest positions land on your worst bets). Average CLV of at least <strong>half the hold</strong> over hundreds of bets is promising (e.g. bet at 42% break-even, closes at 45% in a 4%-hold market = 3% CLV).</dd><dt>Bet</dt><dd>Major markets (validation); log CLV per paper bet</dd></dl>
+        <div class="caveat"><strong>Scope</strong> — Applies only in liquid, true markets (NFL spread, MLB moneyline, NBA total) — not in un-bet retail props.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="easy" data-text="strong weak markets attack surface derivatives props multiway logic l4">
+        <div class="card-top"><span class="id">Logic L4</span><span class="badge easy">Easy as filter</span></div><h3>Strong vs. weak markets + attack surface</h3><p class="desc">Bet where books are weakest, not where they are sharpest.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Knowledge of which books are market makers vs. retail copiers; line-movement data</dd><dt>Rule</dt><dd><strong>Strong:</strong> full-game spread/moneyline/total and (NFL/NBA) first halves — price-discovered, heavily picked-over, avoid. <strong>Weak:</strong> derivatives, props, multiway markets — books expand the menu faster than they can price it; openers are guessed or copied from stale charts and often never updated. Allocate paper trading to weak markets only.</dd><dt>Bet</dt><dd>Derivatives, props, multiways</dd></dl>
+        <div class="caveat"><strong>Build note</strong> — Easy as a filter; Medium to execute (requires watching specific books’ menus daily).</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="push rate charts related markets pricing key numbers alternate spread total logic l5">
+        <div class="card-top"><span class="id">Logic L5</span><span class="badge med">Medium</span></div><h3>Pricing related markets (push-rate charts)</h3><p class="desc">Derive a fair price for one market from a strong market.</p>
+        <dl class="dl"><dt>Needs</dt><dd>10 years of historical game results (final scores/margins) by league</dd><dt>Rule</dt><dd>Build a chart of how often games land on each margin (NFL key numbers: 3, 7, etc.). From a strong spread/total, estimate the five probabilities needed to price another spread (e.g. −28: dog wins, tie, fav wins by &lt;28, exactly 28, &gt;28) and hence its fair price. Same method prices alt spreads/totals and full-game → 1H/1Q conversions.</dd><dt>Bet</dt><dd>Alt spreads/totals, 1H/1Q/1P derivatives</dd></dl>
+        <div class="caveat"><strong>Data</strong> — Historical scores are public (e.g. Pro-Football-Reference); the chart is a one-off build.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="derivatives six step process first inning first quarter opener logic l6">
+        <div class="card-top"><span class="id">Logic L6</span><span class="badge med">Medium</span></div><h3>Derivatives — 6-step process</h3><p class="desc">A checklist for hunting mispriced segment markets, no model required for the qualitative version.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Derivative openers + posting times per book, market spread/total, hold, news (lineups, weather, opener pitchers, platoon splits)</dd><dt>Rule</dt><dd>1) Find a derivative at a retail book. 2) Watch it: posting time, opener system (ideally a simple function of game total). 3) Judge pick-through (fewer books / no movement = better). 4) Check hold (4% workable; 6%+ needs real math). 5) Find outlier situations where the book’s method fails — worked example: MLB 1st-inning “score?” where opener pitcher is weak, Yankees stack lefties, best hitters now bat 1-2-3-4, chart is 6 years old. 6) Track &amp; refine. Example price: Yes +140 / No −160 (≈3% hold).</dd><dt>Bet</dt><dd>Derivatives (1Q/1P/1st-inning, alt lines)</dd></dl>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="props five step process player props game props stale not updated logic l7">
+        <div class="card-top"><span class="id">Logic L7</span><span class="badge med">Medium</span></div><h3>Props — 5-step process</h3><p class="desc">Player props + game props. Core insight: props are priced off the main line at posting and <em>not updated</em>.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Prop openers vs. main-market moves, injury/lineup/weather news, spread/total per game</dd><dt>Rule</dt><dd>1) Find a prop whose fair price should vary a lot with spread/total. 2) Reverse-engineer its pricing over many games. 3) Compare across books. 4) Watch whether others bet it / how the book moves it. 5) Bet when price ignores spread/total. Examples: pitcher K under still available after two high-K hitters are benched; receiver yards prop unchanged after his shadowing CB is ruled out. Game-prop fair values from author’s NFL model: “score three consecutive times” 61% (pick’em) to 76% (17-pt favourite, low total) vs 4–5% hold; “odd/even final score” only 52–54% — too small to beat hold.</dd><dt>Bet</dt><dd>Player props, game/team props</dd></dl>
+        <div class="caveat"><strong>Bottleneck</strong> — News monitoring. The game-prop version is fully systematizable with a spread/total → fair-price table.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="angles three tests predictable quantifiable not in line first quarter under logic l8">
+        <div class="card-top"><span class="id">Logic L8</span><span class="badge med">Medium</span></div><h3>Angles — 3 tests</h3><p class="desc">Before any angle is bettable, it must pass all three.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Historical data grouped by closing total/spread; recent vs. old seasons</dd><dt>Rule</dt><dd>(a) Predictable (applies to most games), (b) Quantifiable (measure its size in %), (c) <strong>Not accounted for in the line</strong> — check by reverse-engineering how the book builds its opener (usually a backward-looking league-average chart). Worked example: NFL 1st-quarter unders — 2nd-half scoring efficiency has risen since ~2017, so a given total now means less 1Q scoring than a 2005–2014 chart implies. Bet the angle in obscure derivatives, not 1H markets where discovery has absorbed it.</dd><dt>Bet</dt><dd>Derivatives (esp. 1Q/1P totals)</dd></dl>
+        <div class="caveat"><strong>Dated example</strong> — The specific 1Q-under angle is from 2019 — re-quantify, do not blindly bet it.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="easy" data-text="parlays compound edge circumvent limits round robin logic l9">
+        <div class="card-top"><span class="id">Logic L9</span><span class="badge easy">Easy</span></div><h3>Parlays — uses for winners</h3><p class="desc">Two uses verified in detail; a third is in the chapter but was not verified — see Open Questions.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Your +EV straight bets; book limits per market</dd><dt>Rule</dt><dd>(i) <strong>Compound edge:</strong> at 55% at −110, straight ROI 5%, 2-leg parlay ROI 10.1% (but −EV compounds identically: 50% ⇒ −4.6% straight, −9% parlayed). (ii) <strong>Circumvent limits:</strong> round-robin-by-3s turns a $50/game limit into ~$600 volume (book’s Korean-baseball example: 4 games × $50 straights = $200; four 3-leg $50 parlays ≈ $600).</dd><dt>Bet</dt><dd>Parlays / round robins</dd></dl>
+        <div class="caveat"><strong>Build note</strong> — Pure staking arithmetic once you have +EV legs; needs books that don’t slash parlay limits.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="hard" data-text="multiway futures champion rolling moneyline parlay logic l10">
+        <div class="card-top"><span class="id">Logic L10</span><span class="badge hard">Medium–Hard</span></div><h3>Multiway markets &amp; futures</h3><p class="desc">Much larger holds, harder to price — opportunity and trap in equal measure.</p>
+        <dl class="dl"><dt>Needs</dt><dd>All prices in the multiway/futures market; equivalent rolling moneyline parlay prices</dd><dt>Rule</dt><dd>Only bet when you can show the futures price is better than the equivalent series of moneyline bets rolled forward, or when public foolishness creates a clear misprice.</dd><dt>Bet</dt><dd>Futures, multiways</dd></dl>
+        <div class="caveat"><strong>Not verified in detail</strong> — Chapter-level rule only; specifics were not verified. Requires a full-field probability model.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="hard" data-text="in play live betting timeouts halftime discontinuity vendor feed logic l11">
+        <div class="card-top"><span class="id">Logic L11</span><span class="badge hard">Hard to automate</span></div><h3>In-play / live betting</h3><p class="desc">Vendor-feed errors, timeouts-only, and the halftime discontinuity.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Live odds feed, game state, pace/foul/lineup observations; TV-delay awareness</dd><dt>Rule</dt><dd>(a) <strong>Bet only during timeouts</strong> — TV is ~18s delayed and books add 4–8s bet delay, so live betting is betting a stale price into ~6.5% hold. (b) <strong>Bet the vendor model’s mistakes:</strong> in-play prices use league-average assumptions — e.g. NHL 2nd-period scoring is higher (long change), goalie-pull habits vary by team, NBA 4th-quarter pace skews when lopsided, key players in early foul trouble in CBB. (c) <strong>Halftime discontinuity:</strong> halftime lines are price-discovered, then the in-play feed restarts ignoring that action — if the in-play total pops back near the halftime opener, that is a free under (per the book). (d) Don’t “wait for a better price” on a favourite in-game.</dd><dt>Bet</dt><dd>Live spread/total/derivatives</dd></dl>
+        <div class="caveat"><strong>Build note</strong> — Medium as a manual checklist; Hard to automate. Timeout/halftime rules are directly paper-tradable.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="med" data-text="steam chasing market maker move retail derivative slow book logic l12">
+        <div class="card-top"><span class="id">Logic L12</span><span class="badge med">Easy to spot</span></div><h3>Steam chasing (part of “chopping the hold”)</h3><p class="desc">Use a sharp move as evidence for your derivative bet — when the slow book hasn’t moved yet.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Market-maker line moves in real time; retail derivative prices</dd><dt>Rule</dt><dd>When a market-maker total/spread moves (“steam”) but a retail book hasn’t moved its related derivative, count it as ~0.5% of hold-chopping in the book’s worked example.</dd><dt>Bet</dt><dd>Derivatives at slow retail books</dd></dl>
+        <div class="caveat"><strong>Secondary claim</strong> — Secondary sources quote the book as warning steam chasing is also the fastest way to get limited/banned — treat as secondary, not verified in the text read. Hard in practice (speed + account longevity).</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="hard" data-text="sportsbook marketing bonuses promotions logic l13 not verified">
+        <div class="card-top"><span class="id">Logic L13</span><span class="badge hard">Unknown</span></div><h3>Taking advantage of sportsbook marketing</h3><p class="desc">Chapter at p. 212 — title verified from the table of contents only.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Bonus / free-bet / promotion terms per book</dd><dt>Rule</dt><dd><em>Not verified in detail.</em> The research did not read this chapter’s tactics, so no specific rule is listed here.</dd><dt>Bet</dt><dd>Promotions</dd></dl>
+        <div class="caveat"><strong>Do not fill in</strong> — Do not present generic bonus advice as this book’s content.</div>
+      </article>
+      <article class="card" data-book="logic" data-diff="easy" data-text="win rate volume 60 percent 54 percent bet every plus ev logic l14">
+        <div class="card-top"><span class="id">Logic L14</span><span class="badge easy">Easy</span></div><h3>“60% or 54%?” — volume over win rate</h3><p class="desc">A mindset/staking rule, not a model.</p>
+        <dl class="dl"><dt>Needs</dt><dd>Your edge estimates across candidate bets</dd><dt>Rule</dt><dd>Bet every bet you believe is +EV, even small-edge ones; don’t chase a high win % by passing 55% bets while waiting for 67% ones — the many small-edge bets earn more in total. Paper rule: log every +EV candidate and bet (on paper) all of them; judge by total profit and CLV, not win %.</dd><dt>Bet</dt><dd>All</dd></dl>
+      </article>
+      <article class="card" data-book="logic" data-diff="easy" data-text="how do i know if im winning validation records 1000 bets clv logic l15">
+        <div class="card-top"><span class="id">Logic L15</span><span class="badge easy">Easy</span></div><h3>How do I know if I’m winning? — validation</h3><p class="desc">The closing discipline that ties back to CLV (L3).</p>
+        <dl class="dl"><dt>Needs</dt><dd>Full bet record (price taken, stake, result, closing price)</dd><dt>Rule</dt><dd>Keep records; after ~1,000 settled bets the record starts to speak; but the decisive test is CLV plus being able to name <em>why</em> you are right and the book is wrong (more information, or better use of available information). Paper rule: paper-trade at least hundreds of bets and require average CLV &gt; half the hold before staking real money.</dd><dt>Bet</dt><dd>All (validation)</dd></dl>
+      </article>
+    </div>
+  </section>
+  <div id="empty" class="empty hidden">No models match that search / filter. Try clearing the search.</div>
+
+  <section class="section">
+    <h2>Suggested paper-trade queue</h2>
+    <p class="muted" style="max-width:720px">In build order — easiest, most reusable first. All paper, $100 flat, graded like your other paper systems, with CLV logged from day one (L3/L15).</p>
+    <div class="queue">
+      <div class="qrow"><div class="qnum">1</div><div><h3>Elo ratings (2.1) + “How Predictive is Stat X?” (2.6)</h3><p>One results feed builds both. Elo gives you a daily price to beat; Stat X tells you which extra stats are worth adding — and which are noise.</p></div><span class="tag">Easy • Results only</span></div>
+      <div class="qrow"><div class="qnum">2</div><div><h3>CLV tracker for everything (L3 + L15)</h3><p>Add closing price to every existing paper system (Sixers Tracker, Total Projectors, middles). Hundreds of bets needed before it means anything — so start logging now.</p></div><span class="tag">Easy • Odds logging</span></div>
+      <div class="qrow"><div class="qnum">3</div><div><h3>Synthetic hold scanner (L2) + push-rate charts (L5)</h3><p>Extends your arb scans: flag near-0% synthetic holds, then let L5 price the related derivative. Needs the 10-year scores chart built once.</p></div><span class="tag">Easy–Medium</span></div>
+      <div class="qrow"><div class="qnum">4</div><div><h3>Benter boost on top of Sixers / Elo (1.5)</h3><p>Blend your model probability with the market’s and test — out-of-sample — whether the blend beats either alone. If it doesn’t add anything, that itself is the answer.</p></div><span class="tag">Medium • Calibration</span></div>
+      <div class="qrow"><div class="qnum">5</div><div><h3>Derivative hunter — Mack 2.5 + Logic L6/L7/L8</h3><p>Use segment lineups (2.5) to price 1Q/1H/1P, then run the Logic checklists: hold ≤ ~4%, pick-through, stale prop that ignored spread/total or lineup news.</p></div><span class="tag">Medium</span></div>
+      <div class="qrow"><div class="qnum">6</div><div><h3>NHL xG (2.3) — later, bigger build</h3><p>Reviewer-favourite model, but it needs a shot-location feed first. Worth it if NHL becomes a focus; not a starter build.</p></div><span class="tag">Medium–Hard • Shot data</span></div>
+    </div>
+    <p class="small muted" style="margin-top:10px">Not in the queue yet: Bayesian volatility attack (3.2) — powerful for your middles, but it needs the full R/Stan posterior (3.1) built first. Bradley–Terry (1.1) is Easy but the author himself steers it to low-limit, data-poor leagues, not the majors you follow.</p>
+  </section>
+
+  <section class="warnbox">
+    <h2>⚠ Open questions — what the research could not verify</h2>
+    <ul>
+      <li><strong>Vol. 1’s five spreadsheet chapters by name</strong> — no public table of contents was found for either Mack volume. Models 1.1–1.6 are the models attested by the author and reviewers, not a verbatim chapter list.</li>
+      <li><strong>Mack’s exact Benter-boost formula</strong> and the exact variable behind the college-basketball totals angle — concepts verified, formulas not.</li>
+      <li><strong>Vol. 2’s exact data sources</strong> for the NHL xG and BPM models — the book lists “resource outlets” per reviewers; names not verified.</li>
+      <li><strong>Bayesian book details</strong> — only the overall method (R/Stan, MCMC, ABC, NHL/NBA/NFL/MLB simulations, posterior) is verified. One secondary source mentions hierarchical models — not verified from the book itself. Publication day also conflicts (14 July vs 3 Oct 2024 listings); year 2024 is certain.</li>
+      <li><strong>Logic chapters not read in full:</strong> “Taking Advantage of Sportsbook Marketing” (p. 212), “Multiway Markets and Futures” (p. 171) specifics, the third parlay use-case, “Public Money” (p. 63), and Appendix A (p. 234). Titles verified from TOC; contents not.</li>
+      <li><strong>No Kelly in Logic</strong> — there is no Kelly chapter in its TOC and the book says bankroll/risk is not covered in depth. Any Kelly system must come from Mack’s Bayesian-updated Kelly test (1.6) or another source, not Miller &amp; Davidow.</li>
+    </ul>
+  </section>
+
+  <section class="sources">
+    <h2 style="font-size:1.15rem">Sources</h2>
+    <p class="small muted">Every model above traces to one of these. Summaries are in the researcher’s own words; no copyrighted text is reproduced at length.</p>
+    <ul>
+      <li>Mack Vol. 1 — Goodreads: <a href="https://www.goodreads.com/book/show/50192810" target="_blank" rel="noopener">goodreads.com/book/show/50192810</a></li>
+      <li>Mack Vol. 1 — TradeOnSports review: <a href="https://tradeonsports.co.uk/statistical-sports-models-in-excel/" target="_blank" rel="noopener">tradeonsports.co.uk/statistical-sports-models-in-excel</a></li>
+      <li>Mack Vols. 1–2 + Bayesian — Betstamp, Circles Off Ep. 185 (author interview): <a href="https://www.betstamp.com/education/circles-off-episode-185-how-to-build-a-successful-sports-betting" target="_blank" rel="noopener">betstamp.com — Circles Off Ep. 185</a></li>
+      <li>Mack Vol. 2 — Goodreads: <a href="https://goodreads.com/book/show/53531054-statistical-sports-models-in-excel-volume-2" target="_blank" rel="noopener">goodreads.com/book/show/53531054</a></li>
+      <li>Mack Vol. 2 — Desertcart / Amazon reviews: <a href="https://www.desertcart.fi:443/products/208586348-statistical-sports-models-in-excel-volume-2-paperback-february-26" target="_blank" rel="noopener">desertcart.fi — Vol. 2</a></li>
+      <li>Mack, general — Unabated “Hit The Books”: <a href="https://unabated.com/post/build-your-library-sports-betting-books-for-every-bettor" target="_blank" rel="noopener">unabated.com/post/build-your-library</a></li>
+      <li>Bayesian book — BookAuthority: <a href="https://bookauthority.org/books/new-bayesian-statistics-books?t=78u6mc&s=award&book=1668052601" target="_blank" rel="noopener">bookauthority.org</a></li>
+      <li>Bayesian book — SolutionInn: <a href="https://www.solutioninn.com/textbooks/bayesian-sports-models-in-r-1st-edition-979-8333143105-394755" target="_blank" rel="noopener">solutioninn.com — Bayesian Sports Models in R</a></li>
+      <li>Benter method (background only) — OddsPapi: <a href="https://oddspapi.io/blog/combine-betting-model-market-odds/" target="_blank" rel="noopener">oddspapi.io/blog/combine-betting-model-market-odds</a></li>
+      <li>Logic — Scribd full text (TOC + chapters skimmed): <a href="https://www.scribd.com/document/558620857/The-Logic-of-Sports-Betting" target="_blank" rel="noopener">scribd.com/document/558620857</a></li>
+      <li>Logic — Legal Sports Report excerpt, Market Agreement and Resistance: <a href="https://www.legalsportsreport.com/33079/the-logic-of-sports-betting-market-agreement-and-resistance/" target="_blank" rel="noopener">legalsportsreport.com/33079</a></li>
+      <li>Logic — SportsTradingNetwork review: <a href="https://www.sportstradingnetwork.com/article/book-review-the-logic-of-sports-betting/" target="_blank" rel="noopener">sportstradingnetwork.com — book review</a></li>
+      <li>Logic — Geegeez review: <a href="https://www.geegeez.co.uk/the-logic-of-sports-betting-book-review/" target="_blank" rel="noopener">geegeez.co.uk — book review</a></li>
+      <li>Logic — author site: <a href="https://www.thelogicofsportsbetting.com/" target="_blank" rel="noopener">thelogicofsportsbetting.com</a></li>
+    </ul>
+  </section>
+
+  <p class="footer">Paper trading only on this page — no live prices, no picks. Tell Chet which queue number you want built next and it becomes the next tracker.</p>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.filter-btn');
+  var diffSel=document.getElementById('diffSel');
+  var q=document.getElementById('q');
+  var cards=document.querySelectorAll('.card');
+  var countEl=document.getElementById('count');
+  var empty=document.getElementById('empty');
+  var active='all';
+  function normDiff(card){
+    var d=card.getAttribute('data-diff')||'';
+    if(d.indexOf('easy')===0) return 'easy';
+    if(d==='med') return 'med';
+    if(d==='hard') return 'hard';
+    return d;
+  }
+  function apply(){
+    var diff=diffSel.value;
+    var term=(q.value||'').toLowerCase().trim();
+    var shown=0;
+    cards.forEach(function(c){
+      var okBook=(active==='all'||c.getAttribute('data-book')===active);
+      var okDiff=true;
+      if(diff!=='all'){
+        var raw=(c.getAttribute('data-diff')||'');
+        // Easy-Medium counts for both easy and med filters loosely: match if raw contains the label start
+        if(diff==='easy') okDiff=(raw.indexOf('easy')===0);
+        else if(diff==='med') okDiff=(raw==='med'||raw==='hard'||raw.indexOf('easy')===0 ? (raw==='med'||raw.indexOf('med')>-1) : false);
+        else if(diff==='hard') okDiff=(raw==='hard');
+        if(c.querySelector('.badge') && c.querySelector('.badge').textContent.toLowerCase().indexOf('medium')>-1 && diff==='med') okDiff=true;
+        if(c.querySelector('.badge') && c.querySelector('.badge').textContent.toLowerCase().indexOf('hard')>-1 && diff==='hard') okDiff=true;
+      }
+      var text=(c.textContent+' '+(c.getAttribute('data-text')||'')).toLowerCase();
+      var okQ=(!term||text.indexOf(term)>-1);
+      var show=okBook&&okDiff&&okQ;
+      c.classList.toggle('hidden',!show);
+      if(show) shown++;
+    });
+    document.querySelectorAll('[data-section]').forEach(function(s){
+      var any=s.querySelector('.card:not(.hidden)');
+      s.classList.toggle('hidden',!any);
+    });
+    countEl.textContent=shown;
+    if(empty) empty.classList.toggle('hidden',shown!==0);
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      active=b.getAttribute('data-filter');
+      apply();
+    });
+  });
+  diffSel.addEventListener('change',apply);
+  q.addEventListener('input',apply);
+  apply();
+})();
+</script>
+</body>
+</html>
