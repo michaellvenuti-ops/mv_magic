@@ -2336,7 +2336,8 @@
    "sport": "NCAAB",
    "matchup": "Ecclesia at Grambling",
    "date": "2026-11-23",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921207": {
    "sport": "NCAAB",
@@ -2406,7 +2407,18 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "BYU",
-   "dog_team": "Washington"
+   "dog_team": "Washington",
+   "live_ml": -475,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-23T17:04:03",
+   "warn_board_read_at": "2026-11-23T17:04:02",
+   "warn_expires_at": "2026-11-23T17:07:03",
+   "warn_detail": "19:15 - 1st Half",
+   "warn_fav_score": 2,
+   "warn_dog_score": 3,
+   "warn_ml": -625,
+   "ml_read_at": "2026-11-23T17:04:03"
   },
   "401921210": {
    "sport": "NCAAB",
@@ -2474,7 +2486,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.5,
    "fav_team": "N Kentucky",
    "dog_team": "GA Southern"
   },
@@ -2704,7 +2716,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 10.5,
    "fav_team": "Timberwolves",
    "dog_team": "Nets"
   },
