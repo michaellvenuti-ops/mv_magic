@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stale-Prop Tracker</title><style>body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:20px;margin:28px 0 6px}h3{font-size:16px;margin:18px 0 4px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:680px;margin:8px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.flag{color:#f778ba;font-weight:700}.qual{color:#3fb950;font-weight:700}
+.win{color:#3fb950;font-weight:700}.loss{color:#f85149;font-weight:700}
+.tag{background:#f7ecd9;color:#9a5b00;border-radius:4px;padding:0 6px;font-size:12px;font-weight:700}
+.box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin:16px 0}
+</style></head><body>
+<h1>Stale-Prop Tracker</h1>
+<div class="sub">Logic L7 — 5-step stale-prop watch (day-over-day v1). Paper only, $100 flat. Updated 2026-11-23 06:37 PM ET.</div>
+<div class="box"><b>How it works (Logic L7 — stale props, 5-step process).</b>
+Props are priced off the main line at posting and often never updated after
+news moves the main line. v1 is <b>day-over-day only</b>: today's NBA PTS/REB/AST
+prop lines (HaterPicks, best price per side) are compared with yesterday's
+stored baseline. A prop <b>flags</b> when the game total moved &ge; 2.0 points
+(or the spread &ge; 1.5) since yesterday while the prop line is UNCHANGED, and
+the stale side's edge clears <b>5%</b> — edge from a Normal model whose mean is
+shifted by the expected prop move (main-line move &times; the player's share of
+his team's scoring), sigma PTS 6 / REB 3.5 / AST 3 (documented assumptions).
+Paper only — $100 flat, graded the next morning from the ESPN boxscore.
+<i>Intraday staleness is invisible to v1 (one snapshot/day); phase-2 30-min
+pulls would be needed to catch a prop going stale mid-day. The first run of
+the watch seeds the baseline and flags nothing.</i></div>
+<h2>Paper record</h2><p><b>0-0-0</b> (0 void) &nbsp;·&nbsp; <b>$0.00</b> over 0 settled &nbsp;·&nbsp; ROI +0.0%</p>
+<h2>Latest day — 2026-11-23</h2>
+<p class="sub">Lines: HaterPicks NBA prop pages (best price per side, placeable books)</p>
+<p>Baseline seeded — comparison starts tomorrow.</p>
+<p>No flags today.</p>
+<h2>History</h2><div class="wrap"><table><tr><th>Date</th><th>Flags</th><th>Lines source</th></tr>
+<tr><td>2026-11-23</td><td>0</td><td>HaterPicks NBA prop pages (best price per side, placeable books)</td></tr>
+</table></div>
+<div class="foot">Paper trade only — $100 flat per flag at the posted price, graded the next morning. Edge bar 5% unless the board says otherwise. Lines are labelled with their source on every flag; a flag is never priced from a made-up or stale line.</div></body></html>
