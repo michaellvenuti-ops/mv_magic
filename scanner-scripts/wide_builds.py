@@ -201,7 +201,26 @@ def entries_to_groups(items):
             if len(segs) < 2:
                 continue
             event = segs[0]
-            markets = [s for s in segs[1:] if s != "table"]
+            if any(s == "table" or s.startswith("table ")
+                    for s in segs):
+                # Banked middles lines carry the date twice:
+                # "<head> / <date> / table / seg1 / seg2 / table ...".
+                # The old segs[1:]-minus-table kept [date, seg1, seg2]
+                # (3 elements), so EVERY .md line was dropped at the
+                # len(markets) != 2 gate below (found 2026-11-22:
+                # 0 of 123 Nov 22 + 0 of 394 Nov 21 lines survived).
+                # Take the two segments right after the table marker
+                # (which also appears as "table bar_chart"); if fewer
+                # than two follow it, fall back to the old extraction
+                # so no previously-kept shape is lost.
+                ti = next(i for i, s in enumerate(segs)
+                          if s == "table" or s.startswith("table "))
+                markets = [s for s in segs[ti + 1:ti + 3]
+                           if s != "table"]
+                if len(markets) != 2:
+                    markets = [s for s in segs[1:] if s != "table"]
+            else:
+                markets = [s for s in segs[1:] if s != "table"]
             if len(markets) != 2:
                 continue
             for idx, seg in enumerate(markets):
@@ -372,6 +391,14 @@ def assemble(groups, now):
             cands = []
             for a in overs:
                 for b in unders:
+                    # Guard (2026-11-22): skip inverted totals — an
+                    # Under line below the Over line leaves a dead
+                    # zone (totals between them lose BOTH stakes, or
+                    # a single push-loss) that balanced()'s quoted
+                    # miss never mentions. Equality is the degenerate
+                    # both-push case, already handled by push_profits.
+                    if b["line"] < a["line"]:
+                        continue
                     window = window_ints(a["line"], b["line"])
                     push = push_numbers(a["line"], b["line"])
                     if kind == "total":
