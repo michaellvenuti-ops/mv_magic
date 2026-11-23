@@ -1,8 +1,9 @@
-# Hung numbers — 2026-11-22 (scan 2026-11-22 21:13)
+# Hung numbers — 2026-11-22 (scan 2026-11-22 22:23)
 
-- Vikings vs 49ers | Caesars | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
-- Vikings vs 49ers | Hard Rock | moneyline 49ers | value: 49ers | book 77.8 vs median 71.4 | div 6.3 
-- Vikings vs 49ers | Hard Rock | moneyline Vikings | value: Vikings | book 28.6 vs median 34.5 | div 5.9 
+- Vikings vs 49ers | BetMGM | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
+- Vikings vs 49ers | FanDuel | spread | value: favorite | book 16.5 vs median 17.5 | div 1.0 
+- Vikings vs 49ers | BetMGM | total | value: Under | book 57.5 vs median 59.5 | div 2.0 
+- Vikings vs 49ers | FanDuel | total | value: Over | book 61.5 vs median 59.5 | div 2.0 
 - Buccaneers vs Lions | DraftKings | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
 - Titans vs Cowboys | Fanatics | spread | value: dog | book 9.5 vs median 7.5 | div 2.0 
 - Cardinals vs Chiefs | DraftKings | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
