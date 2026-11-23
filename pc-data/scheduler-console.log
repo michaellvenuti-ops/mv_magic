@@ -10943,3 +10943,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 03:47:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 03:47:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-23 03:47:05 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 04:13:42 ET] sync_to_github.py: FAILED (exit 1) in 1597s —   FAILED: pc-data/total-projectors-2026-11-10.md (HTTP 409: {'error': '{"message":"is at c32a9c0e5bb3dbad0b50ea51a15b59cb2f6de3c1 but expected 0f77142170b3756d5
+[2026-11-23 04:15:45 ET] odds_recorder.py: OK in 94s — SUMMARY: recorded 146 events (69 with odds), db total 315303 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 04:16:14 ET] dh_arbitrage.py: OK in 28s — ARBITRAGE: NBA POR Trail Blazers PHI 76ers Today 7:15 PM / Today 7:15 PM / table / Points D. Avdija Under 24.5 / Alt Points D. Avdija 25+ / table | Bet365 | Fan
+[2026-11-23 04:16:29 ET] dh_kalshi_poly_arb.py: OK in 15s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 04:16:30 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHO Suns NO Pelicans Today 8:15 PM — Total — Over 232.5 Bally Bet -110 ($102) / Under 233 ProphetX +100 ($98) — win+push at 233 — push +$92.73, m
+[2026-11-23 04:16:30 ET] syncing to GitHub (wide-builds banked new builds)
