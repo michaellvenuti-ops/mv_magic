@@ -10856,3 +10856,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-22 23:32:47 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-22; skipping.
 [2026-11-22 23:32:48 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-22 23:32:48 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 23:58:21 ET] sync_to_github.py: FAILED (exit 1) in 1533s —   FAILED: pc-data/voice-sample-andrew.mp3 (HTTP 409: {'error': '{"message":"is at 00740b357fa8ba6d659f9897e60981289cdeee5f but expected 17c3e5ed2a97a7707a541a02
+[2026-11-23 00:00:24 ET] odds_recorder.py: OK in 93s — SUMMARY: recorded 201 events (2 with odds), db total 314427 snapshots / 1545 events, feeds ok 6 fail 0
+[2026-11-23 00:00:56 ET] dh_arbitrage.py: OK in 32s — arbitrage: no new qualifying pairs (silent).
+[2026-11-23 00:01:10 ET] dh_kalshi_poly_arb.py: OK in 14s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 00:01:12 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL GB Packers LA Rams Nov-25 8:00 PM — Total — Over 46 ProphetX +119 ($89) / Under 46.5 Bally Bet -130 ($111) — win+push at 46 — push +$85.38, miss 
+[2026-11-23 00:01:12 ET] syncing to GitHub (wide-builds banked new builds)
