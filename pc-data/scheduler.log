@@ -11136,3 +11136,9 @@
 [2026-11-23 15:43:02 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 15:43:03 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-23 15:43:04 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 16:11:29 ET] sync_to_github.py: FAILED (exit 1) in 1705s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-12-hour-3.json (HTTP 409: {'error': '{"message":"is at 8df7c17c09ff6b8a41a0e12374e114359c912004 but expe
+[2026-11-23 16:13:22 ET] odds_recorder.py: OK in 83s — SUMMARY: recorded 155 events (108 with odds), db total 316963 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 16:13:43 ET] dh_arbitrage.py: OK in 22s — ARBITRAGE: NBA UTA Jazz LA Lakers Today 10:15 PM / Today 10:15 PM / table / Points A. Bailey Under 14.5 / Alt Points A. Bailey 15+ / table | Bet365 | FanDuel
+[2026-11-23 16:14:07 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 16:14:09 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL GB Packers LA Rams Nov-25 8:00 PM — Total — Over 45 ProphetX +113 ($91) / Under 46 Bally Bet -127 ($109) — win+push at 45 and 46 — push +$85.83 /
+[2026-11-23 16:14:09 ET] syncing to GitHub (wide-builds banked new builds)
