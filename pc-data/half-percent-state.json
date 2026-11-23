@@ -194,7 +194,14 @@
    }
   },
   "2026-11-20": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 41.790000915527344,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 44.0,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-19, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -207,6 +214,21 @@
     "ticker": "BSP",
     "vol": 1814624
    }
+  },
+  "2026-11-23": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-23, after hours) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Zoom Communications, Inc. Class A Common Stock",
+    "entry": 85.41,
+    "mcap": 23710345200.0,
+    "pct": 5.11,
+    "stop": 84.98,
+    "target": 85.84,
+    "ticker": "ZM",
+    "vol": 885104
+   }
   }
  },
  "meta": {
@@ -214,7 +236,7 @@
    "losses": 1,
    "modeled_pl": 50.0,
    "no_data": 0,
-   "no_trades": 5,
+   "no_trades": 6,
    "time_exits": 0,
    "wins": 2
   }
