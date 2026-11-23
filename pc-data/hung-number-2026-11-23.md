@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-23 (scan 2026-11-23 00:32)
+# Hung numbers — 2026-11-23 (scan 2026-11-23 02:34)
 
 - Dolphins vs Bills | Fanatics | spread | value: dog | book 18.5 vs median 17.0 | div 1.5 
 - Dolphins vs Bills | Fanatics | total | value: Over | book 46.5 vs median 44.5 | div 2.0 
