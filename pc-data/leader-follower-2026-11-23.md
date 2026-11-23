@@ -34,3 +34,10 @@
 LEAD: DraftKings on TCU @ Texas Tech | 2026-11-23 (spread)
 LEAD: Kalshi on San Diego State @ Washington State | 2026-11-23 (spread)
 LEAD: Kalshi on Baylor @ Houston | 2026-11-23 (spread)
+## 2026-11-23T14:11:48-05:00 — pack move, never credited: Temple @ Memphis | 2026-11-23 total (BetMGM, Caesars, DraftKings, FanDuel, Fanatics)
+## 2026-11-23T14:11:48-05:00 — no-follow: Kalshi Louisville @ Kentucky | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T14:11:48-05:00 — no-follow: FanDuel Tulane @ South Florida | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T14:11:48-05:00 — no-follow: Kalshi UTEP @ Northern Illinois | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T14:11:48-05:00 — no-follow: Kalshi Sacramento State @ Hawai'i | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T14:11:49-05:00 — 82 games, 1 leads credited, 12 started games skipped
+LEAD: Caesars on Notre Dame @ Syracuse | 2026-11-23 (spread)
