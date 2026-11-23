@@ -8,3 +8,7 @@
 ## 2026-11-23T08:46:14-05:00 — kalshi-poly-arb: 100 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-23T09:59:05-05:00 — kalshi-poly-arb: 99 complete pairs read, 0 NEW/CHANGED delivered
 ## 2026-11-23T11:30:25-05:00 — kalshi-poly-arb: 100 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-23T12:48:51-05:00 — kalshi-poly-arb: 100 complete pairs read, 1 NEW/CHANGED delivered — 1 NEW/CHANGED pairs
+NEW PAIR: Challenger Playford 379 C. Langmo T. Sach Today 6:30 PM / Today 6:30 PM / table / Moneyline C. Langmo / Moneyline T. Sach / table bar_chart | Bet365 | Polymarket US :: {'leg1': {'side': '-333 $1,000 Bet365', 'price': '-333', 'book': 'Bet365', 'stake': 1000.0}, 'leg2': {'side': '+455.6 [18%] $252.23 Polymarket US', 'price': '+455.6', 'book': 'Polymarket US', 'stake': 252.23}, 'arb_risk': False, 'first_reported': '2026-11-23T12:48:51-05:00', 'last_seen': '2026-11-23', 'profit_pct': 3.81}
+(end of new/changed pairs — deliverable list below)
+Challenger Playford 379 C. Langmo T. Sach Today 6:30 PM / Today 6:30 PM / table / Moneyline C. Langmo / Moneyline T. Sach / table bar_chart | Bet365 | Polymarket US :: {'leg1': {'side': '-333 $1,000 Bet365', 'price': '-333', 'book': 'Bet365', 'stake': 1000.0}, 'leg2': {'side': '+455.6 [18%] $252.23 Polymarket US', 'price': '+455.6', 'book': 'Polymarket US', 'stake': 252.23}, 'arb_risk': False, 'first_reported': '2026-11-23T12:48:51-05:00', 'last_seen': '2026-11-23', 'profit_pct': 3.81}
