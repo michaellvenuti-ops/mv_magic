@@ -10838,3 +10838,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-22 22:32:17 ET] dh_key_number_middles.py: OK in 163s — key-number-middles: 330 basketball rows excluded (football-only rule).
 [2026-11-22 22:35:01 ET] dh_basketball_key_middles.py: OK in 164s — basketball-key-middles: no new basketball middles.
 [2026-11-22 22:35:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 23:00:43 ET] sync_to_github.py: FAILED (exit 1) in 1543s —   FAILED: pc-data/spread-cover-2026-11-20.md (HTTP 409: {'error': '{"message":"is at caf1f893c0bd636904b9611180f3e52e8e37837d but expected 579165fb7525eb453551a
+[2026-11-22 23:02:27 ET] odds_recorder.py: OK in 74s — SUMMARY: recorded 201 events (2 with odds), db total 314226 snapshots / 1545 events, feeds ok 6 fail 0
+[2026-11-22 23:02:28 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL CIN Bengals WAS Commanders Nov-23 8:15 PM — Total — Over 57 ProphetX +130 ($85) / Under 57.5 Fanatics-NJ -140 ($115) — win+push at 57 — push +$82
+[2026-11-22 23:02:28 ET] syncing to GitHub (wide-builds banked new builds)
