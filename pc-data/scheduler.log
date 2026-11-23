@@ -11142,3 +11142,11 @@
 [2026-11-23 16:14:07 ET] dh_kalshi_poly_arb.py: OK in 24s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-23 16:14:09 ET] wide_builds.py: OK in 1s — NEW BUILD: NFL GB Packers LA Rams Nov-25 8:00 PM — Total — Over 45 ProphetX +113 ($91) / Under 46 Bally Bet -127 ($109) — win+push at 45 and 46 — push +$85.83 /
 [2026-11-23 16:14:09 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-23 16:43:15 ET] sync_to_github.py: FAILED (exit 1) in 1746s —   FAILED: pc-data/costco-gold/costco-gold-2026-11-21.md (HTTP 409: {'error': '{"message":"is at 2fd9cd6bf6727fed92892a185d5c32fcaac9b106 but expected d201be8abf
+[2026-11-23 16:44:39 ET] dh_low_holds.py: FAILED (exit 2) in 85s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-23 16:45:56 ET] dh_game_middles.py: FAILED (exit 2) in 76s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-23 16:49:08 ET] dh_key_number_middles.py: FAILED (exit 2) in 192s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 16:52:21 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 193s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 16:52:26 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 16:53:20 ET] dh_prop_middles.py: OK in 54s — DarkHorse check unavailable (signed out) — prop-middles skipped, no prices invented.
+[2026-11-23 16:53:20 ET] syncing to GitHub (regular 10-minute sync)
