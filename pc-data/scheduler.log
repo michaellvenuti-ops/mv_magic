@@ -10996,3 +10996,9 @@
 [2026-11-23 09:25:50 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 10, 'NCAAB': 33}, new 0, moved 0, baselines 43.
 [2026-11-23 09:25:57 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-23.json (5 markets).
 [2026-11-23 09:25:57 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 09:54:48 ET] sync_to_github.py: FAILED (exit 1) in 1732s —   FAILED: rlm-board-pc.html (HTTP 409: {'error': '{"message":"is at 4e00f23bfaa35420965b760aac85fc23fda8ef11 but expected c79ea20726a0fa7f91352dd3be72dcc97f25ec
+[2026-11-23 09:56:33 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 146 events (70 with odds), db total 316033 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 09:57:43 ET] dh_arbitrage.py: OK in 70s — ARBITRAGE: NBA UTA Jazz LA Lakers Today 10:15 PM / Today 10:15 PM / table / 1st Quarter Alt Total Under 58.5 / 1st Quarter Alt Total Over 58.5 / table | Bally B
+[2026-11-23 09:59:25 ET] dh_kalshi_poly_arb.py: OK in 102s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 09:59:31 ET] wide_builds.py: OK in 5s — NEW BUILD: NCAAB St. Bonaventure Appalachian St. Today 11:00 AM — Total — Over 133.5 Fanatics-NJ -130 ($111) / Under 134 ProphetX +122 ($89) — win+push at 134 —
+[2026-11-23 09:59:31 ET] syncing to GitHub (wide-builds banked new builds)
