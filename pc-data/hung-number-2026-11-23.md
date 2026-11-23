@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-23 (scan 2026-11-23 12:06)
+# Hung numbers — 2026-11-23 (scan 2026-11-23 14:10)
 
 - Dolphins vs Bills | Fanatics | spread | value: dog | book 18.5 vs median 17.0 | div 1.5 
 - Dolphins vs Bills | Fanatics | total | value: Over | book 46.5 vs median 44.5 | div 2.0 
@@ -12,19 +12,23 @@
 - Raiders vs Broncos | Fanatics | total | value: Under | book 38.5 vs median 41.5 | div 3.0 
 - Vikings vs 49ers | DraftKings | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Florida vs Florida State | Hard Rock | spread | value: dog | book -4.5 vs median -6.0 | div 1.5 
+- Notre Dame vs Syracuse | DraftKings | spread | value: dog | book -24.5 vs median -25.5 | div 1.0 
 - Michigan vs Ohio State | Hard Rock | spread | value: dog | book 13.5 vs median 10.5 | div 3.0 
 - Michigan vs Ohio State | Hard Rock | total | value: Over | book 46.5 vs median 38.5 | div 8.0 
+- Michigan vs Ohio State | Hard Rock | moneyline Michigan | value: Michigan | book 19.0 vs median 24.4 | div 5.3 
 - Michigan vs Ohio State | Hard Rock | moneyline Ohio State | value: Ohio State | book 85.7 vs median 80.0 | div 5.7 
 - LSU vs Arkansas | FanDuel | spread | value: dog | book -13.5 vs median -14.5 | div 1.0 
 - South Carolina vs Clemson | Hard Rock | spread | value: dog | book 2.5 vs median -5.5 | div 8.0 
 - South Carolina vs Clemson | Hard Rock | moneyline Clemson | value: Clemson | book 43.5 vs median 36.4 | div 7.1 
 - South Carolina vs Clemson | Hard Rock | moneyline South Carolina | value: South Carolina | book 43.5 vs median 67.7 | div 24.3 
 - Tulane vs South Florida | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
+- Cincinnati vs BYU | FanDuel | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
 - Georgia Tech vs Georgia | DraftKings | spread | value: dog | book 55.5 vs median 35.5 | div 20.0 
+- Georgia Tech vs Georgia | Fanatics | spread | value: dog | book 55.5 vs median 35.5 | div 20.0 
+- Georgia Tech vs Georgia | Fanatics | moneyline Georgia | value: Georgia | book 26.5 vs median 99.0 | div 72.5 
+- Georgia Tech vs Georgia | Fanatics | moneyline Georgia Tech | value: Georgia Tech | book 73.5 vs median 5.0 | div 68.5 
 - Oklahoma vs Missouri | BetMGM | spread | value: dog | book 41.5 vs median 1.75 | div 39.75 middle pairing spans key number 7
 - Oklahoma vs Missouri | BetMGM | moneyline Oklahoma | value: Oklahoma | book 98.0 vs median 49.4 | div 48.7 
 - Purdue vs Indiana | FanDuel | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
 - Auburn vs Alabama | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
-- Arizona State vs Arizona | DraftKings | spread | value: dog | book 54.5 vs median 8.5 | div 46.0 
-- Arizona State vs Arizona | FanDuel | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
-- Arizona State vs Arizona | Fanatics | spread | value: favorite | book 7.5 vs median 8.5 | div 1.0 
+- Arizona State vs Arizona | DraftKings | spread | value: dog | book 54.5 vs median 8.75 | div 45.75 
