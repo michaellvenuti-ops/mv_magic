@@ -11087,3 +11087,28 @@
 [2026-11-23 13:33:54 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 155 events (115 with odds), db total 316498 snapshots / 1687 events, feeds ok 6 fail 0
 [2026-11-23 13:33:56 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA PHO Suns NO Pelicans Today 8:15 PM — Total — Over 235 ProphetX +114 ($92) / Under 235.5 Bally Bet -120 ($108) — win+push at 235 — push +$90.00, m
 [2026-11-23 13:33:56 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-23 14:01:50 ET] sync_to_github.py: FAILED (exit 1) in 1675s —   FAILED: pc-data/sog-filter-dump-switch-on-20261114-1611.json (HTTP 500: {'error': ''})
+[2026-11-23 14:04:11 ET] dh_game_middles.py: OK in 141s — GAME MIDDLE: NCAAF Temple Memphis Nov-27 3:30 PM / Nov-27 3:30 PM / table / Alt Total Under 70.5 / Alt Total Over 70 / table | Fanatics-NJ | Bet365 — window 305
+[2026-11-23 14:07:19 ET] dh_key_number_middles.py: OK in 188s — key-number-middles: 271 basketball rows excluded (football-only rule).
+[2026-11-23 14:10:23 ET] dh_basketball_key_middles.py: OK in 183s — basketball-key-middles: no new basketball middles.
+[2026-11-23 14:11:39 ET] hung_number.py: OK in 76s — HUNG NUMBER: Cincinnati vs BYU — FanDuel spread value favorite (14.5 vs median 15.5)
+[2026-11-23 14:11:44 ET] rlm.py: OK in 5s
+[2026-11-23 14:11:49 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 1 new leads, no book at 3 yet).
+[2026-11-23 14:11:52 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 14:13:04 ET] dh_prop_middles.py: OK in 72s — prop-middles: no new/changed qualifying middles.
+[2026-11-23 14:14:52 ET] dh_sog_middles.py: OK in 108s — - 0 deliverables this run
+[2026-11-23 14:14:54 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Washington 23.5/24.5 sits at -2.5c vs +E
+[2026-11-23 14:14:56 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 161 total tallied.
+[2026-11-23 14:14:57 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 236 total tallied.
+[2026-11-23 14:14:58 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 369 total tallied.
+[2026-11-23 14:14:59 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 1 unverified, 1034 total tallied.
+[2026-11-23 14:15:00 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-23 14:15:01 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
+[2026-11-23 14:15:02 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-23 14:15:02 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 14:30:40 ET] sync_to_github.py: FAILED (exit 1) in 938s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-23 14:32:23 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 155 events (114 with odds), db total 316653 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 14:32:43 ET] dh_arbitrage.py: OK in 21s — arbitrage: no new qualifying pairs (silent).
+[2026-11-23 14:32:59 ET] dh_kalshi_poly_arb.py: OK in 15s — KALSHI-POLY-ARB: NBA OKC Thunder IND Pacers Today 7:45 PM / Today 7:45 PM / table / Alt Total Over 223.5 / Total Under 223.5 / table bar_chart | Bet365 | Polyma
+[2026-11-23 14:33:00 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Michigan 25 Ohio St. Nov-28 12:00 PM — Total — Over 39.5 HardRock +115 ($91) / Under 40 Fanatics-NJ -125 ($109) — win+push at 40 — push +$104.6
+[2026-11-23 14:33:00 ET] syncing to GitHub (wide-builds banked new builds)
