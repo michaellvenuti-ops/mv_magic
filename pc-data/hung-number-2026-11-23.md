@@ -1,0 +1,69 @@
+# Hung numbers — 2026-11-23 (scan 2026-11-23 00:32)
+
+- Dolphins vs Bills | Fanatics | spread | value: dog | book 18.5 vs median 17.0 | div 1.5 
+- Dolphins vs Bills | Fanatics | total | value: Over | book 46.5 vs median 44.5 | div 2.0 
+- Buccaneers vs Lions | DraftKings | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
+- Titans vs Cowboys | Fanatics | spread | value: dog | book 9.5 vs median 7.5 | div 2.0 
+- Cardinals vs Chiefs | DraftKings | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
+- Saints vs Bears | Fanatics | spread | value: dog | book 14.5 vs median 12.0 | div 2.5 
+- Jaguars vs Giants | FanDuel | spread | value: dog | book -5.5 vs median -6.5 | div 1.0 
+- Raiders vs Broncos | Hard Rock | spread | value: dog | book 12.5 vs median 11.5 | div 1.0 
+- Raiders vs Broncos | Fanatics | spread | value: favorite | book 10.5 vs median 11.5 | div 1.0 
+- Raiders vs Broncos | Fanatics | total | value: Under | book 38.5 vs median 41.5 | div 3.0 
+- Vikings vs 49ers | DraftKings | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
+- Eastern Michigan vs Western Michigan | DraftKings | spread | value: dog | book 18.5 vs median 17.5 | div 1.0 
+- Iowa State vs UCF | BetMGM | moneyline UCF | value: UCF | book 98.0 vs median 49.5 | div 48.5 
+- Oregon vs Michigan State | Caesars | spread | value: favorite | book -19.5 vs median -18.5 | div 1.0 
+- UTEP vs Air Force | DraftKings | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
+- UTEP vs Air Force | Fanatics | spread | value: favorite | book 21.5 vs median 22.5 | div 1.0 
+- Memphis vs Navy | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Wisconsin vs Purdue | Fanatics | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
+- BYU vs Kansas | Fanatics | spread | value: favorite | book -6.5 vs median -4.5 | div 2.0 
+- BYU vs Kansas | Fanatics | total | value: Under | book 43.5 vs median 46.5 | div 3.0 
+- Wofford vs Ole Miss | BetMGM | spread | value: dog | book 59.5 vs median 49.0 | div 10.5 
+- Wofford vs Ole Miss | Fanatics | spread | value: dog | book 59.5 vs median 49.0 | div 10.5 
+- Tennessee Tech vs Mississippi State | DraftKings | spread | value: favorite | book 28.5 vs median 29.5 | div 1.0 
+- Charlotte vs Tulsa | BetMGM | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
+- Chattanooga vs Alabama | bet365 | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
+- Chattanooga vs Alabama | BetMGM | spread | value: dog | book 56.5 vs median 47.5 | div 9.0 
+- Chattanooga vs Alabama | DraftKings | spread | value: favorite | book 46.5 vs median 47.5 | div 1.0 
+- Missouri State vs Jacksonville State | FanDuel | spread | value: favorite | book 11.5 vs median 12.5 | div 1.0 
+- Missouri State vs Jacksonville State | Fanatics | spread | value: favorite | book 11.0 vs median 12.5 | div 1.5 
+- Middle Tennessee vs Sam Houston | FanDuel | spread | value: favorite | book -6.5 vs median -5.5 | div 1.0 
+- Iowa vs Illinois | DraftKings | total | value: Under | book 40.5 vs median 42.5 | div 2.0 
+- Iowa vs Illinois | Fanatics | total | value: Under | book 41.0 vs median 42.5 | div 1.5 
+- Florida International vs Kennesaw State | DraftKings | spread | value: favorite | book 1.5 vs median 2.5 | div 1.0 
+- Rutgers vs Penn State | Fanatics | spread | value: dog | book 25.5 vs median 24.5 | div 1.0 
+- Texas Tech vs Baylor | Fanatics | spread | value: favorite | book -5.5 vs median -4.5 | div 1.0 
+- LSU vs Tennessee | bet365 | spread | value: dog | book -1.5 vs median -2.5 | div 1.0 
+- LSU vs Tennessee | Fanatics | spread | value: favorite | book -3.5 vs median -2.5 | div 1.0 
+- LSU vs Tennessee | Fanatics | total | value: Under | book 43.5 vs median 45.5 | div 2.0 
+- LSU vs Tennessee | Fanatics | moneyline LSU | value: LSU | book 63.6 vs median 56.5 | div 7.1 
+- LSU vs Tennessee | Fanatics | moneyline Tennessee | value: Tennessee | book 42.6 vs median 47.7 | div 5.2 
+- Indiana vs Washington | bet365 | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
+- Samford vs Auburn | BetMGM | spread | value: dog | book 59.5 vs median 48.5 | div 11.0 
+- South Alabama vs Southern Miss | DraftKings | spread | value: dog | book -4.5 vs median -5.5 | div 1.0 
+- Northern Illinois vs North Dakota State | Fanatics | spread | value: favorite | book 24.5 vs median 25.5 | div 1.0 
+- Georgia Southern vs Troy | Fanatics | spread | value: favorite | book -16.5 vs median -7.75 | div 8.75 
+- Georgia Southern vs Troy | Fanatics | total | value: Over | book 54.5 vs median 47.5 | div 7.0 
+- Georgia Southern vs Troy | Fanatics | moneyline Georgia Southern | value: Georgia Southern | book 90.9 vs median 75.9 | div 15.0 
+- Georgia Southern vs Troy | Fanatics | moneyline Troy | value: Troy | book 14.8 vs median 28.2 | div 13.4 
+- Georgia State vs Marshall | Fanatics | spread | value: favorite | book -2.5 vs median 2.75 | div 5.25 
+- Georgia State vs Marshall | Fanatics | moneyline Georgia State | value: Georgia State | book 55.6 vs median 43.6 | div 12.0 
+- Georgia State vs Marshall | Fanatics | moneyline Marshall | value: Marshall | book 51.2 vs median 60.5 | div 9.3 
+- Maryland vs USC | BetMGM | spread | value: dog | book 19.5 vs median 18.5 | div 1.0 
+- Maryland vs USC | Fanatics | spread | value: favorite | book 17.5 vs median 18.5 | div 1.0 
+- Maryland vs USC | Fanatics | total | value: Under | book 55.5 vs median 57.5 | div 2.0 
+- Virginia Tech vs Miami (FL) | Fanatics | spread | value: favorite | book 16.5 vs median 21.5 | div 5.0 
+- Virginia Tech vs Miami (FL) | Fanatics | total | value: Under | book 60.5 vs median 62.5 | div 2.0 
+- UNLV vs San Jose State | Fanatics | spread | value: favorite | book -7.5 vs median -6.5 | div 1.0 
+- UNLV vs San Jose State | Fanatics | total | value: Under | book 44.5 vs median 48.5 | div 4.0 
+- UNLV vs San Jose State | Fanatics | moneyline UNLV | value: UNLV | book 75.6 vs median 70.1 | div 5.5 
+- Arkansas State vs Louisiana Tech | Caesars | spread | value: dog | book 16.5 vs median 14.75 | div 1.75 
+- Arkansas State vs Louisiana Tech | Caesars | total | value: Under | book 49.5 vs median 54.5 | div 5.0 
+- Arkansas State vs Louisiana Tech | Caesars | moneyline Louisiana Tech | value: Louisiana Tech | book 92.3 vs median 86.4 | div 5.9 
+- Georgia vs South Carolina | bet365 | spread | value: dog | book -15.5 vs median -16.5 | div 1.0 
+- Colorado State vs Fresno State | FanDuel | spread | value: favorite | book 19.5 vs median 20.5 | div 1.0 
+- UTSA vs UAB | Fanatics | total | value: Under | book 42.5 vs median 49.5 | div 7.0 
+- UTSA vs UAB | Fanatics | moneyline UTSA | value: UTSA | book 71.8 vs median 65.2 | div 6.7 
+- Utah vs TCU | FanDuel | spread | value: dog | book -8.5 vs median -9.5 | div 1.0 
