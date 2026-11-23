@@ -14044,6 +14044,20 @@
    "winner": "USC Trojans"
   },
   {
+   "date": "2026-11-22",
+   "away": "Loyola Chicago Ramblers",
+   "home": "San Jos\u00e9 State Spartans",
+   "first": "San Jos\u00e9 State Spartans",
+   "first_side": "home",
+   "first_kind": "3PT",
+   "first_elapsed_sec": 105,
+   "winner": "Loyola Chicago Ramblers",
+   "seq": "0-3>3-3>3-5>3-7>4-7>6-7>7-7>9-7>9-8>9-9>9-10>9-11>10-11>11-11>11-13>14-13>15-13>16-13>16-14>16-15>19-15>19-18>20-18>21-18>21-20>23-20>23-21>25-21>25-22>25-23>26-23>29-23>31-23>31-25>31-27>31-28>33-28>33-29>35-29>35-30>35-31>35-32>35-33>35-34>37-34>39-34>40-34>40-36>40-37>40-38>40-39>41-39>42-39>42-40>42-41>44-41>47-41>47-43>49-43>49-45>51-45>53-45>53-48>53-49>53-50>55-50>57-50>57-51>60-51>62-51>62-52>62-53>62-54>62-56>63-56>64-56>64-57>64-58>66-58>66-59>66-61>66-63>67-63>68-63>69-63>70-63>71-63>72-63",
+   "lead_changes": 3,
+   "ties": 4,
+   "final": "72-63"
+  },
+  {
    "away": "Loyola Marymount Lions",
    "date": "2026-11-22",
    "final": "72-68",
@@ -14296,18 +14310,18 @@
    "winner": "Troy Trojans"
   },
   {
-   "date": "2026-11-22",
    "away": "UC San Diego Tritons",
-   "home": "Seattle U Redhawks",
+   "date": "2026-11-22",
+   "final": "64-90",
    "first": "Seattle U Redhawks",
-   "first_side": "home",
-   "first_kind": "2PT",
    "first_elapsed_sec": 24,
-   "winner": "Seattle U Redhawks",
-   "seq": "0-2>0-4>0-6>2-6>2-8>2-9>4-9>4-12>6-12>6-14>6-17>7-17>7-19>7-21>8-21>9-21>9-24>12-24>12-27>12-28>12-29>15-29>15-32>15-34>18-34>18-37>18-38>21-38>21-41>21-42>21-43>21-44>21-46>23-46>23-48>25-48>25-50>25-51>25-52>28-52>28-54>30-54>30-55>33-55>33-56>33-59>35-59>37-59>39-59>39-60>39-61>39-64>39-65>39-66>41-66>41-68>41-69>41-70>41-71>42-71>43-71>43-72>45-72>45-73>45-74>48-74>48-77>49-77>50-77>50-79>53-79>53-81>54-81>55-81>55-83>57-83>57-85>59-85>61-85>61-87>61-90>64-90",
+   "first_kind": "2PT",
+   "first_side": "home",
+   "home": "Seattle U Redhawks",
    "lead_changes": 0,
+   "seq": "0-2>0-4>0-6>2-6>2-8>2-9>4-9>4-12>6-12>6-14>6-17>7-17>7-19>7-21>8-21>9-21>9-24>12-24>12-27>12-28>12-29>15-29>15-32>15-34>18-34>18-37>18-38>21-38>21-41>21-42>21-43>21-44>21-46>23-46>23-48>25-48>25-50>25-51>25-52>28-52>28-54>30-54>30-55>33-55>33-56>33-59>35-59>37-59>39-59>39-60>39-61>39-64>39-65>39-66>41-66>41-68>41-69>41-70>41-71>42-71>43-71>43-72>45-72>45-73>45-74>48-74>48-77>49-77>50-77>50-79>53-79>53-81>54-81>55-81>55-83>57-83>57-85>59-85>61-85>61-87>61-90>64-90",
    "ties": 0,
-   "final": "64-90"
+   "winner": "Seattle U Redhawks"
   },
   {
    "away": "UMass Lowell River Hawks",
@@ -18134,7 +18148,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Loyola Chicago Ramblers": {
-   "gp": 4,
+   "gp": 5,
    "scored_first": 2,
    "kinds": {
     "3PT": 0,
@@ -18142,11 +18156,11 @@
     "FT": 0
    },
    "won_when_first": 2,
-   "won_when_not_first": 0,
+   "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 0.0,
+   "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
   "Alma Scots": {
@@ -20790,17 +20804,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "San Jos\u00e9 State Spartans": {
-   "gp": 4,
-   "scored_first": 1,
+   "gp": 5,
+   "scored_first": 2,
    "kinds": {
-    "3PT": 0,
+    "3PT": 1,
     "2PT": 1,
     "FT": 0
    },
    "won_when_first": 0,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 25.0,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 0.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
@@ -23015,13 +23029,13 @@
   }
  },
  "league": {
-  "games": 1031,
-  "home_scored_first": 629,
+  "games": 1032,
+  "home_scored_first": 630,
   "first_team_won": 660,
   "first_team_won_by_one": 7,
   "first_team_won_by_one_pct": 0.7,
   "kinds": {
-   "3PT": 309,
+   "3PT": 310,
    "2PT": 608,
    "FT": 114
   },
@@ -24187,9 +24201,9 @@
    "avg_per_game": 2.2
   },
   "Loyola Chicago Ramblers": {
-   "games": 4,
-   "lead_changes": 16,
-   "avg_per_game": 4.0
+   "games": 5,
+   "lead_changes": 19,
+   "avg_per_game": 3.8
   },
   "Alma Scots": {
    "games": 1,
@@ -25017,9 +25031,9 @@
    "avg_per_game": 1.75
   },
   "San Jos\u00e9 State Spartans": {
-   "games": 4,
-   "lead_changes": 23,
-   "avg_per_game": 5.75
+   "games": 5,
+   "lead_changes": 26,
+   "avg_per_game": 5.2
   },
   "Evansville Purple Aces": {
    "games": 5,
