@@ -4,3 +4,7 @@
 ## 2026-11-23T02:38:48-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1032 games through 2026-11-22
 - 2026-11-22: Loyola Chicago Ramblers @ San José State Spartans — first: San José State Spartans (3PT, 1:45 in); lead changes 3; final 72-63
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T13:01:41-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1034 games through 2026-11-23
+- 2026-11-23: St. Bonaventure Bonnies @ App State Mountaineers — first: App State Mountaineers (2PT, 0:25 in); lead changes 5; final 71-65
+- 2026-11-23: Northern Iowa Panthers @ Davidson Wildcats — first: Davidson Wildcats (2PT, 0:34 in); lead changes 0; final 48-79
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
