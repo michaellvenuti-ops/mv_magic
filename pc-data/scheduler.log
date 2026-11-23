@@ -11173,3 +11173,13 @@
 [2026-11-23 17:38:31 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 17:38:33 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-23 17:38:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 18:06:32 ET] sync_to_github.py: FAILED (exit 1) in 1679s —   FAILED: pc-data/nhl-first-goal-state.json (HTTP 409: {'error': '{"message":"is at 4a8b37ad672b8e313fb5a430179db6ac5628ed75 but expected 0b53eb3e47c8178868f37c
+[2026-11-23 18:09:04 ET] odds_recorder.py: OK in 121s — SUMMARY: recorded 155 events (106 with odds), db total 317273 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 18:09:05 ET] wide_builds.py: OK in 1s — wide_builds: 12 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 18:10:05 ET] dh_low_holds.py: OK in 60s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-23 18:11:23 ET] dh_game_middles.py: FAILED (exit 2) in 79s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-23 18:14:41 ET] dh_key_number_middles.py: FAILED (exit 2) in 197s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 18:17:56 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 196s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 18:18:05 ET] steam_side.py: OK in 9s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 18:19:17 ET] dh_prop_middles.py: FAILED (exit 2) in 72s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-23 18:19:17 ET] syncing to GitHub (regular 10-minute sync)
