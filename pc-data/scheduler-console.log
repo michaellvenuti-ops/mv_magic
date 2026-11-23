@@ -10958,3 +10958,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 04:55:19 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
 [2026-11-23 04:55:22 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
 [2026-11-23 04:55:22 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 05:22:25 ET] sync_to_github.py: FAILED (exit 1) in 1624s —   FAILED: pc-data/yahoo-brief/yahoo-brief-2026-11-10.md (HTTP 422: {'error': '{"message":"Invalid request.\\n\\n\\"sha\\" wasn\'t supplied.","documentation_url"
+[2026-11-23 05:24:12 ET] odds_recorder.py: OK in 77s — SUMMARY: recorded 146 events (69 with odds), db total 315449 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 05:25:50 ET] dh_arbitrage.py: OK in 98s — ARBITRAGE: NHL ANA Ducks SEA Kraken Today 9:40 PM / Today 9:40 PM / table / Assists T. Terry Under 0.5 / Assists T. Terry 1+ / table | Bally Bet | DraftKings
+[2026-11-23 05:26:22 ET] dh_kalshi_poly_arb.py: OK in 31s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 05:26:23 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA UTA Jazz LA Lakers Today 10:15 PM — Total — Over 225 ProphetX -130 ($110) / Under 225.5 FanDuel +118 ($90) — win+push at 225 — push +$106.20, mis
+[2026-11-23 05:26:24 ET] syncing to GitHub (wide-builds banked new builds)
