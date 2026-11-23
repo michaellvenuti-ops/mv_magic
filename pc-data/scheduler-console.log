@@ -10979,3 +10979,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 06:03:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 06:03:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-23 06:03:23 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 06:29:27 ET] sync_to_github.py: FAILED (exit 1) in 1565s —   FAILED: pc-data/costco-gold/dump-2026-11-21.txt (HTTP 409: {'error': '{"message":"is at 4ba9b460be32eb8890088789b432fbf0d689a315 but expected 8578c6f5cd2a60d3
+[2026-11-23 06:31:12 ET] odds_recorder.py: OK in 75s — SUMMARY: recorded 146 events (69 with odds), db total 315595 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 06:31:35 ET] dh_arbitrage.py: OK in 22s — ARBITRAGE: NBA OKC Thunder IND Pacers Today 7:45 PM / Today 7:45 PM / table / Points A. Mara Under 11.5 / Alt Points A. Mara 12+ / table | Bet365 | DraftKings
+[2026-11-23 06:31:52 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 06:31:54 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA MEM Grizzlies CHA Hornets Today 7:15 PM — Total — Over 213.5 DraftKings -120 ($101) / Under 216.5 ProphetX -117 ($99) — both win 214, 215, 216 — 
+[2026-11-23 06:31:54 ET] syncing to GitHub (wide-builds banked new builds)
