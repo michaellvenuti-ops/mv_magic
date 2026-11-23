@@ -10,3 +10,5 @@
 - 2026-11-22: New York Jets @ Los Angeles Chargers — first: New York Jets; lead changes 0; final 27-24
 - 2026-11-22: Las Vegas Raiders @ Denver Broncos — first: Denver Broncos; lead changes 0; final 24-38
 - 2026-11-22: Jacksonville Jaguars @ New York Giants — first: Jacksonville Jaguars; lead changes 1; final 18-23
+## 2026-11-22T23:32:40-05:00 -- NFL FIRST SCORE (PC): 1 new final(s) tallied; season 161 games through 2026-11-22
+- 2026-11-22: Minnesota Vikings @ San Francisco 49ers — first: San Francisco 49ers; lead changes 0; final 10-35
