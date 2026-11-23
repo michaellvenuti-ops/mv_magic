@@ -11027,3 +11027,9 @@
 [2026-11-23 10:52:06 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-23 10:54:13 ET] promo_watch.py: OK in 127s — promo-watch: 11 listed, 1 new, 1 converter attempt(s).
 [2026-11-23 10:54:13 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 11:24:03 ET] sync_to_github.py: FAILED (exit 1) in 1790s —   FAILED: pc-data/sog-filter-dump-switch-on-20261116-2310.json (HTTP 409: {'error': '{"message":"is at 464988a4b9d047218b9bd3ce1f83c03eff2f917a but expected dd6
+[2026-11-23 11:26:53 ET] odds_recorder.py: OK in 139s — SUMMARY: recorded 155 events (119 with odds), db total 316188 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 11:29:14 ET] dh_arbitrage.py: OK in 142s — ARBITRAGE: NCAAF Florida Atlantic East Carolina Nov-28 1:00 PM / Nov-28 1:00 PM / table / Alt Spread Florida Atlantic +5.5 / Alt Spread East Carolina -5.5 / tab
+[2026-11-23 11:30:27 ET] dh_kalshi_poly_arb.py: OK in 72s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 11:30:29 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Indiana St. East Carolina Today 12:30 PM — Total — Over 154 Bet365 +150 ($79) / Under 154.5 FanDuel -158 ($121) — win+push at 154 — push +$76.5
+[2026-11-23 11:30:29 ET] syncing to GitHub (wide-builds banked new builds)
