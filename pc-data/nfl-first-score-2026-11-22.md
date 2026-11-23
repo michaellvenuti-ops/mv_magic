@@ -6,3 +6,7 @@
 - 2026-11-22: Arizona Cardinals @ Kansas City Chiefs — first: Kansas City Chiefs; lead changes 0; final 7-34
 - 2026-11-22: Pittsburgh Steelers @ Philadelphia Eagles — first: Philadelphia Eagles; lead changes 0; final 16-19
 - 2026-11-22: Baltimore Ravens @ Carolina Panthers — first: Baltimore Ravens; lead changes 7; final 33-35
+## 2026-11-22T21:17:36-05:00 -- NFL FIRST SCORE (PC): 3 new final(s) tallied; season 160 games through 2026-11-22
+- 2026-11-22: New York Jets @ Los Angeles Chargers — first: New York Jets; lead changes 0; final 27-24
+- 2026-11-22: Las Vegas Raiders @ Denver Broncos — first: Denver Broncos; lead changes 0; final 24-38
+- 2026-11-22: Jacksonville Jaguars @ New York Giants — first: Jacksonville Jaguars; lead changes 1; final 18-23
