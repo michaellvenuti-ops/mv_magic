@@ -15,3 +15,4 @@ NEW FLAG: FBS Tennessee @ Vanderbilt | 2026-11-23 — Fanatics still dealing spr
 NEW FLAG: FBS Arizona State @ Arizona | 2026-11-23 — Fanatics still dealing spread -7.5 on Arizona (pre-move median -7.5, now -8.5)
 NEW FLAG: FBS Nevada @ UNLV | 2026-11-23 — Fanatics still dealing spread -4.5 on UNLV (pre-move median -4.5, now -5.5)
 NEW FLAG: FBS Baylor @ Houston | 2026-11-23 — Fanatics still dealing spread -6.5 on Baylor (pre-move median -6.5, now -5.5)
+## 2026-11-23T12:07:42-05:00 — 69 games, 0 steam events, 0 NEW flags
