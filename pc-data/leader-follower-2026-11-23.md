@@ -47,3 +47,8 @@ LEAD: Caesars on Notre Dame @ Syracuse | 2026-11-23 (spread)
 ## 2026-11-23T15:40:12-05:00 — pack move, never credited: UTEP @ Northern Illinois | 2026-11-23 total (BetMGM, Caesars, DraftKings, FanDuel, bet365)
 ## 2026-11-23T15:40:12-05:00 — pack move, never credited: UAB @ North Texas | 2026-11-23 spread (FanDuel, Kalshi)
 ## 2026-11-23T15:40:13-05:00 — 82 games, 0 leads credited, 12 started games skipped
+## 2026-11-23T17:36:02-05:00 — no-follow: FanDuel Liberty @ Missouri State | 2026-11-23 spread (only 1 followed)
+## 2026-11-23T17:36:02-05:00 — pack move, never credited: Sam Houston @ Florida International | 2026-11-23 spread (FanDuel, Kalshi)
+## 2026-11-23T17:36:02-05:00 — pack move, never credited: Virginia @ Virginia Tech | 2026-11-23 spread (Kalshi, bet365)
+## 2026-11-23T17:36:02-05:00 — no-follow: Kalshi Georgia Tech @ Georgia | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T17:36:02-05:00 — 82 games, 0 leads credited, 12 started games skipped
