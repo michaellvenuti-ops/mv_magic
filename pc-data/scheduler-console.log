@@ -10805,3 +10805,10 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-22 21:17:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-22; skipping.
 [2026-11-22 21:17:46 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-22 21:17:46 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-22 21:44:07 ET] sync_to_github.py: FAILED (exit 1) in 1581s —   FAILED: pc-data/transcripts/vsin-by-the-books-2026-11-10-hour-1.json (HTTP 409: {'error': '{"message":"is at c69845300be01adabeb1ade95204c07ec7a3e265 but expe
+[2026-11-22 21:45:51 ET] odds_recorder.py: OK in 73s — SUMMARY: recorded 201 events (3 with odds), db total 313623 snapshots / 1545 events, feeds ok 6 fail 0
+[2026-11-22 21:45:52 ET] wide_builds.py: OK in 1s — wide_builds: 0 qualifying builds, 0 NEW (banked wide-builds-2026-11-22.md)
+[2026-11-22 21:47:11 ET] dh_game_middles.py: OK in 79s — GAME MIDDLE: NBA MEM Grizzlies CHA Hornets Nov-23 7:15 PM / Nov-23 7:15 PM / table / Alt Total Under 217 / Alt Total Over 216.5 / table bar_chart | Fanatics-NJ 
+[2026-11-22 21:49:53 ET] dh_key_number_middles.py: OK in 162s — key-number-middles: 178 basketball rows excluded (football-only rule).
+[2026-11-22 21:52:31 ET] dh_basketball_key_middles.py: OK in 158s — basketball-key-middles: no new basketball middles.
+[2026-11-22 21:52:31 ET] syncing to GitHub (regular 10-minute sync)
