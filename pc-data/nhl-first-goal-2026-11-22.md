@@ -3,3 +3,5 @@
 - 2026-11-21: Seattle Kraken @ San Jose Sharks — first goal: Seattle Kraken (PP, Kaapo Kakko, 14:03 in); lead changes 1; final 3-4
 ## 2026-11-22T17:26:38-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 365 games through 2026-11-22
 - 2026-11-22: Carolina Hurricanes @ New York Rangers — first goal: Carolina Hurricanes (SH, Eric Robinson, 7:00 in); lead changes 0; final 5-2
+## 2026-11-22T21:17:39-05:00 -- NHL FIRST GOAL (PC): 1 new final(s) tallied; season 366 games through 2026-11-22
+- 2026-11-22: Buffalo Sabres @ Tampa Bay Lightning — first goal: Buffalo Sabres (EV, Jiri Kulich, 16:25 in); lead changes 0; final 6-2
