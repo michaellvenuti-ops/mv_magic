@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-23 (scan 2026-11-23 15:38)
+# Hung numbers — 2026-11-23 (scan 2026-11-23 17:34)
 
 - Dolphins vs Bills | Fanatics | spread | value: dog | book 18.5 vs median 17.0 | div 1.5 
 - Dolphins vs Bills | Fanatics | total | value: Over | book 46.5 vs median 44.5 | div 2.0 
@@ -12,12 +12,13 @@
 - Raiders vs Broncos | Fanatics | total | value: Under | book 38.5 vs median 41.5 | div 3.0 
 - Vikings vs 49ers | DraftKings | spread | value: favorite | book 3.5 vs median 4.5 | div 1.0 
 - Florida vs Florida State | Hard Rock | spread | value: dog | book -4.5 vs median -6.0 | div 1.5 
-- Central Michigan vs Ball State | FanDuel | spread | value: favorite | book -5.5 vs median -4.0 | div 1.5 
+- Texas vs Texas A&M | BetMGM | spread | value: favorite | book -12.5 vs median -11.5 | div 1.0 
 - Notre Dame vs Syracuse | DraftKings | spread | value: dog | book -24.5 vs median -25.5 | div 1.0 
 - Boston College vs Miami (FL) | Fanatics | spread | value: dog | book 26.5 vs median 25.5 | div 1.0 
 - Michigan vs Ohio State | Hard Rock | spread | value: dog | book 13.5 vs median 10.5 | div 3.0 
 - Michigan vs Ohio State | Hard Rock | total | value: Over | book 46.5 vs median 38.5 | div 8.0 
 - Michigan vs Ohio State | Hard Rock | moneyline Ohio State | value: Ohio State | book 85.7 vs median 80.0 | div 5.7 
+- Southern Miss vs Old Dominion | Fanatics | spread | value: dog | book 6.5 vs median 5.5 | div 1.0 
 - Liberty vs Missouri State | FanDuel | spread | value: favorite | book -16.5 vs median -15.5 | div 1.0 
 - South Carolina vs Clemson | Hard Rock | spread | value: dog | book 2.5 vs median -5.5 | div 8.0 
 - South Carolina vs Clemson | Hard Rock | moneyline Clemson | value: Clemson | book 43.5 vs median 36.4 | div 7.1 
@@ -25,9 +26,7 @@
 - Tulane vs South Florida | FanDuel | spread | value: favorite | book 5.5 vs median 6.5 | div 1.0 
 - Cincinnati vs BYU | FanDuel | spread | value: favorite | book 14.5 vs median 15.5 | div 1.0 
 - Georgia Tech vs Georgia | DraftKings | spread | value: dog | book 55.5 vs median 35.5 | div 20.0 
-- UTEP vs Northern Illinois | Fanatics | total | value: Under | book 48.5 vs median 50.5 | div 2.0 
-- Oklahoma vs Missouri | BetMGM | spread | value: dog | book 41.5 vs median 1.75 | div 39.75 middle pairing spans key number 7
-- Oklahoma vs Missouri | BetMGM | moneyline Oklahoma | value: Oklahoma | book 98.0 vs median 49.4 | div 48.7 
+- UTEP vs Northern Illinois | DraftKings | spread | value: dog | book 4.5 vs median 3.5 | div 1.0 
 - Purdue vs Indiana | FanDuel | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
 - Auburn vs Alabama | FanDuel | spread | value: favorite | book 15.5 vs median 16.5 | div 1.0 
 - Arizona State vs Arizona | DraftKings | spread | value: dog | book 54.5 vs median 8.75 | div 45.75 
