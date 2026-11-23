@@ -10828,3 +10828,19 @@
 [2026-11-23 00:33:28 ET] rlm.py: OK in 4s
 [2026-11-23 00:33:31 ET] leader_follower.py: OK in 3s — leader-follower: logging phase (83 games, 0 new leads, no book at 3 yet).
 [2026-11-23 00:33:31 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 00:58:27 ET] sync_to_github.py: FAILED (exit 1) in 1496s —   FAILED: pc-data/wong-teasers-2026-11-14.md (HTTP 409: {'error': '{"message":"is at e42f5237749838abf9d0443433decd52648b2a6c but expected ac4a3f8262c93832badc9
+[2026-11-23 01:00:19 ET] odds_recorder.py: OK in 82s — SUMMARY: recorded 146 events (69 with odds), db total 314573 snapshots / 1624 events, feeds ok 6 fail 0
+[2026-11-23 01:00:20 ET] wide_builds.py: OK in 1s — wide_builds: 7 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 01:01:41 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NBA MEM Grizzlies CHA Hornets Today 7:15 PM / Today 7:15 PM / table / Alt Total Over 212.5 / Alt Total Under 213 / table bar_chart | HardRock | Pro
+[2026-11-23 01:01:46 ET] steam_side.py: OK in 5s — steam-side: 70 games, no new flags (silent).
+[2026-11-23 01:02:54 ET] dh_prop_middles.py: OK in 68s — PROP MIDDLE CLEAN : NFL CIN Bengals WAS Commanders Today 8:15 PM / Today 8:15 PM / table / Rec + Rush Yards C. Brown 74+ / Rec + Rush Yards C. Brown Under 74.5 
+[2026-11-23 01:04:36 ET] dh_sog_middles.py: OK in 102s — - 0 deliverables this run
+[2026-11-23 01:04:38 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 10 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -3.5c vs
+[2026-11-23 01:04:39 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 161 total tallied.
+[2026-11-23 01:04:41 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 236 total tallied.
+[2026-11-23 01:04:42 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 369 total tallied.
+[2026-11-23 01:04:43 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 1 unverified, 1031 total tallied.
+[2026-11-23 01:04:45 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-23 01:04:47 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-23 01:04:48 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-23 01:04:48 ET] syncing to GitHub (regular 10-minute sync)
