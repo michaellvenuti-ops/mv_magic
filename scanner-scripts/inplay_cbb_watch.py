@@ -228,12 +228,22 @@ def sao_live_totals(html):
             continue
         vals = re.findall(r'<span class="data-value">\s*([^<]+?)\s*</span>',
                           td.group(1))
+        # The price rides in a SEPARATE element, not in the data-value
+        # span: <span class="data-value"> o124.5 </span><small
+        # class="data-odds">-115</small> (found 2026-11-24 -- INP-001
+        # banked price=null because only the span was read). Pair each
+        # value with the data-odds small in document order; a price
+        # inside the span itself (pregame cells) still works.
+        odds = re.findall(r'<small class="data-odds">\s*([^<]+?)\s*</small>',
+                          td.group(1))
         total, over_p, under_p = None, None, None
-        for v in vals:
+        for i, v in enumerate(vals):
             t, p = parse_total(v)
             if t is None:
                 continue
             total = t
+            if p is None and i < len(odds):
+                p = parse_price(odds[i])
             if v.strip().lower().startswith("o"):
                 over_p = p
             elif v.strip().lower().startswith("u"):
