@@ -140,7 +140,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-24T16:00:02",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: Tennessee at Maryland | Full Total (at half) Under 149.5 | pace proj 140.0 (H1 70 x 2) vs live total 149.5 (gap -9.5, bar 5) | H1 70 | as of 16:00:02 ET"
+   "alert_detail": "PACE: Tennessee at Maryland | Full Total (at half) Under 149.5 | pace proj 140.0 (H1 70 x 2) vs live total 149.5 (gap -9.5, bar 5) | H1 70 | as of 16:00:02 ET",
+   "final": true
   },
   "401915941": {
    "matchup": "Miami at TCU",
@@ -212,12 +213,15 @@
   "401921666": {
    "matchup": "Tulsa at Illinois St",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Tulsa",
    "dog_team": "Illinois St",
-   "pregame_total": 143.5
+   "pregame_total": 143.5,
+   "alerted_at": "2026-11-24T17:26:02",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "TRAILING FAVE: Illinois St at Tulsa | Full Total (at half) Over 146.5 -110 | pregame favorite Tulsa trails at half (Illinois St leads); pace proj 144.0 vs live total 146.5 (gap -2.5) -- comeback-fave Over anyway | H1 72 | as of 17:26:01 ET"
   },
   "401921223": {
    "matchup": "PSU Berks at Navy",
