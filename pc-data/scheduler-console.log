@@ -11248,3 +11248,13 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 19:07:41 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 19:07:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 6 game(s) refreshed, 0 deliverable change(s).
 [2026-11-23 19:07:43 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 19:35:39 ET] sync_to_github.py: FAILED (exit 1) in 1676s —   FAILED: wide-builds-board-pc.html (HTTP 409: {'error': '{"message":"is at a89a96892154aa0c29d70f63c43453a8f362035c but expected 605eb2eddf411fe71bd1f27170bec0
+[2026-11-23 19:39:30 ET] odds_recorder.py: OK in 201s — SUMMARY: recorded 155 events (95 with odds), db total 317583 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 19:39:32 ET] wide_builds.py: OK in 2s — wide_builds: 8 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 19:42:08 ET] dh_low_holds.py: FAILED (exit 2) in 156s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-23 19:43:46 ET] dh_game_middles.py: OK in 97s — DarkHorse check unavailable (signed out) — game-middles skipped, no prices invented.
+[2026-11-23 19:47:46 ET] dh_key_number_middles.py: FAILED (exit 2) in 240s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 19:51:22 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 216s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 19:51:28 ET] steam_side.py: OK in 7s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 19:53:00 ET] dh_prop_middles.py: FAILED (exit 2) in 91s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-23 19:53:00 ET] syncing to GitHub (regular 10-minute sync)
