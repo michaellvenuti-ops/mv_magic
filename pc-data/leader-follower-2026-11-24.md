@@ -7,3 +7,11 @@
 ## 2026-11-24T11:08:18-05:00 — no-follow: FanDuel Coastal Carolina @ James Madison | 2026-11-24 spread (only 2 followed)
 ## 2026-11-24T11:08:18-05:00 — pack move, never credited: Baylor @ Houston | 2026-11-24 spread (Caesars, DraftKings, bet365)
 ## 2026-11-24T11:08:18-05:00 — 85 games, 0 leads credited
+## 2026-11-24T13:53:40-05:00 — pack move, never credited: Miami (OH) @ Western Michigan | 2026-11-24 spread (Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-24T13:53:40-05:00 — pack move, never credited: Toledo @ Ohio | 2026-11-24 total (BetMGM, Caesars, DraftKings, FanDuel, Kalshi, bet365)
+## 2026-11-24T13:53:40-05:00 — no-follow: DraftKings Texas @ Texas A&M | 2026-11-24 spread (only 0 followed)
+## 2026-11-24T13:53:40-05:00 — no-follow: Kalshi UTEP @ Northern Illinois | 2026-11-24 spread (only 0 followed)
+## 2026-11-24T13:53:40-05:00 — no-follow: Kalshi Oklahoma @ Missouri | 2026-11-24 spread (only 1 followed)
+## 2026-11-24T13:53:40-05:00 — no-follow: Kalshi Kansas @ Oklahoma State | 2026-11-24 spread (only 0 followed)
+## 2026-11-24T13:53:40-05:00 — pack move, never credited: Auburn @ Alabama | 2026-11-24 spread (Caesars, DraftKings, Fanatics, Kalshi, bet365)
+## 2026-11-24T13:53:40-05:00 — 85 games, 0 leads credited
