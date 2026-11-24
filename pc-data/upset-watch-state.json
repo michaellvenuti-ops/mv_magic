@@ -1502,7 +1502,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 7.0,
    "fav_team": "E Michigan",
    "dog_team": "Kent State"
   },
@@ -1632,7 +1632,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 10.5,
+   "spread": 11.5,
    "fav_team": "Texas",
    "dog_team": "Texas A&M"
   },
@@ -1652,7 +1652,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 24.5,
+   "spread": 25.5,
    "fav_team": "Utah",
    "dog_team": "West Virginia"
   },
@@ -3083,7 +3083,8 @@
    "fav": "away",
    "spread": 5.5,
    "fav_team": "Arkansas St",
-   "dog_team": "Long Beach St"
+   "dog_team": "Long Beach St",
+   "final": true
   },
   "401929035": {
    "sport": "NCAAB",
@@ -3093,7 +3094,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Lindenwood",
-   "dog_team": "New Haven"
+   "dog_team": "New Haven",
+   "final": true
   },
   "401921666": {
    "sport": "NCAAB",
@@ -3171,7 +3173,18 @@
    "fav": "home",
    "spread": 22.5,
    "fav_team": "Rutgers",
-   "dog_team": "Sacred Heart"
+   "dog_team": "Sacred Heart",
+   "live_ml": -4800,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-24T18:04:03",
+   "warn_board_read_at": "2026-11-24T18:04:02",
+   "warn_expires_at": "2026-11-24T18:07:03",
+   "warn_detail": "17:58 - 1st Half",
+   "warn_fav_score": 3,
+   "warn_dog_score": 5,
+   "warn_ml": -4800,
+   "ml_read_at": "2026-11-24T18:04:03"
   },
   "401923395": {
    "sport": "NCAAB",
@@ -3209,7 +3222,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Kennesaw St",
    "dog_team": "E Michigan"
   },
@@ -3259,7 +3272,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Vanderbilt",
    "dog_team": "Ohio State"
   },
@@ -3315,7 +3328,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 34.5,
+   "spread": 33.5,
    "fav_team": "Villanova",
    "dog_team": "Coppin St"
   },
@@ -3395,7 +3408,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Siena",
    "dog_team": "Vermont"
   },
@@ -3440,7 +3453,7 @@
    "matchup": "Nevada at Santa Clara",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 1.5,
    "fav_team": "Santa Clara",
    "dog_team": "Nevada"
@@ -3506,7 +3519,7 @@
    "matchup": "High Point at Duquesne",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 10.5,
    "fav_team": "High Point",
    "dog_team": "Duquesne"
@@ -3658,7 +3671,7 @@
    "matchup": "Charleston at UTEP",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
    "fav_team": "Charleston",
    "dog_team": "UTEP"
@@ -3779,7 +3792,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Pistons",
    "dog_team": "Magic"
   },
@@ -3789,7 +3802,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "away",
-   "spread": 11.5,
+   "spread": 10.5,
    "fav_team": "Celtics",
    "dog_team": "Wizards"
   },
