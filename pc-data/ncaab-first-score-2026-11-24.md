@@ -15,3 +15,9 @@
 ## 2026-11-24T12:29:41-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1078 games through 2026-11-24
 - 2026-11-24: Wright State Raiders @ St. Bonaventure Bonnies — first: Wright State Raiders (3PT, 1:09 in); lead changes 13; final 70-72
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T15:25:37-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 1082 games through 2026-11-24
+- 2026-11-24: Belmont Bruins @ Akron Zips — first: Belmont Bruins (2PT, 0:52 in); lead changes 1; final 64-87
+- 2026-11-24: SE Louisiana Lions @ Northern Colorado Bears — first: SE Louisiana Lions (2PT, 0:31 in); lead changes 6; final 70-60
+- 2026-11-24: Southern Utah Thunderbirds @ Florida International Panthers — first: Florida International Panthers (2PT, 0:15 in); lead changes 10; final 66-81
+- 2026-11-24: Vermont State Randolph Knights @ Stonehill Skyhawks — first: Stonehill Skyhawks (2PT, 0:06 in); lead changes 0; final 64-112
+- note: 3 final(s) UNVERIFIED this run — left out, retried next run.
