@@ -11280,3 +11280,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-23 20:48:29 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
 [2026-11-23 20:48:31 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-23 20:48:31 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 21:18:25 ET] sync_to_github.py: FAILED (exit 1) in 1793s —   FAILED: pc-data/sog-filter-dump-switch-on-20261123-1259.json (HTTP 409: {'error': '{"message":"is at 7e18957d2ab4d70111dd283b02e6bfdbf5906cba but expected 724
+[2026-11-23 21:20:27 ET] odds_recorder.py: OK in 92s — SUMMARY: recorded 155 events (79 with odds), db total 317893 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 21:20:29 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Buffalo Akron Nov-27 12:00 PM — Spread — Buffalo -7.5 DraftKings -110 ($95) / Akron +11.5 HardRock -135 ($105) — both win 8, 9, 10, 11 — land +
+[2026-11-23 21:20:29 ET] syncing to GitHub (wide-builds banked new builds)
