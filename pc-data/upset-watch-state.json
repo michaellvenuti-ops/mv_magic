@@ -108,7 +108,8 @@
    "fav": "away",
    "spread": 6.0,
    "fav_team": "Bengals",
-   "dog_team": "Commanders"
+   "dog_team": "Commanders",
+   "final": true
   },
   "401866465": {
    "sport": "CFB",
@@ -1521,7 +1522,7 @@
    "date": "2026-11-27",
    "alerted": false,
    "fav": "home",
-   "spread": 13.5,
+   "spread": 14.0,
    "fav_team": "Texas Tech",
    "dog_team": "TCU"
   },
@@ -2590,7 +2591,8 @@
    "fav": "home",
    "spread": 42.5,
    "fav_team": "Illinois",
-   "dog_team": "Winthrop"
+   "dog_team": "Winthrop",
+   "final": true
   },
   "401909788": {
    "sport": "NCAAB",
@@ -2600,13 +2602,15 @@
    "fav": "home",
    "spread": 31.5,
    "fav_team": "Kansas",
-   "dog_team": "Denver"
+   "dog_team": "Denver",
+   "final": true
   },
   "401929392": {
    "sport": "NCAAB",
    "matchup": "UW-Stout at N Dakota St",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921208": {
    "sport": "NCAAB",
@@ -2616,7 +2620,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Utah Valley",
-   "dog_team": "SF Austin"
+   "dog_team": "SF Austin",
+   "final": true
   },
   "401913102": {
    "sport": "NCAAB",
@@ -2626,19 +2631,22 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "North Carolina",
-   "dog_team": "Monmouth"
+   "dog_team": "Monmouth",
+   "final": true
   },
   "401922263": {
    "sport": "NCAAB",
    "matchup": "Dickinson St at Idaho",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401922032": {
    "sport": "NCAAB",
    "matchup": "Carroll (MT) at Montana",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401909536": {
    "sport": "NCAAB",
@@ -2648,7 +2656,8 @@
    "fav": "home",
    "spread": 2.5,
    "fav_team": "Providence",
-   "dog_team": "VCU"
+   "dog_team": "VCU",
+   "final": true
   },
   "401926183": {
    "sport": "NCAAB",
@@ -2659,7 +2668,7 @@
    "spread": 10.5,
    "fav_team": "Pepperdine",
    "dog_team": "UNC Greensboro",
-   "live_ml": -298,
+   "live_ml": -375,
    "ml_bucket": "strong",
    "warned": true,
    "warned_at": "2026-11-23T21:36:05",
@@ -2669,7 +2678,8 @@
    "warn_fav_score": 6,
    "warn_dog_score": 7,
    "warn_ml": -810,
-   "ml_read_at": "2026-11-23T21:36:05"
+   "ml_read_at": "2026-11-23T21:36:05",
+   "final": true
   },
   "401921663": {
    "sport": "NCAAB",
@@ -2697,7 +2707,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 18.5,
+   "spread": 17.5,
    "fav_team": "California",
    "dog_team": "Alabama St"
   },
@@ -2707,7 +2717,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Arizona",
    "dog_team": "Colorado St"
   },
@@ -2751,7 +2761,8 @@
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Thunder",
-   "dog_team": "Pacers"
+   "dog_team": "Pacers",
+   "final": true
   },
   "401910039": {
    "sport": "NBA",
@@ -2779,7 +2790,8 @@
    "alert_detail": "2:11 - 3rd Quarter",
    "alert_fav_score": 77,
    "alert_dog_score": 79,
-   "alert_ml": -170
+   "alert_ml": -170,
+   "final": true
   },
   "401910040": {
    "sport": "NBA",
@@ -2789,7 +2801,8 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Timberwolves",
-   "dog_team": "Nets"
+   "dog_team": "Nets",
+   "final": true
   },
   "401910041": {
    "sport": "NBA",
@@ -2799,7 +2812,8 @@
    "fav": "away",
    "spread": 8.5,
    "fav_team": "Cavaliers",
-   "dog_team": "Bulls"
+   "dog_team": "Bulls",
+   "final": true
   },
   "401910042": {
    "sport": "NBA",
@@ -2809,7 +2823,8 @@
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Suns",
-   "dog_team": "Pelicans"
+   "dog_team": "Pelicans",
+   "final": true
   },
   "401910043": {
    "sport": "NBA",
@@ -2819,7 +2834,19 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Rockets",
-   "dog_team": "Clippers"
+   "dog_team": "Clippers",
+   "live_ml": -1000,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-23T21:54:37",
+   "warn_board_read_at": "2026-11-23T21:54:37",
+   "warn_expires_at": "2026-11-23T21:57:37",
+   "warn_detail": "10:00 - 3rd Quarter",
+   "warn_fav_score": 51,
+   "warn_dog_score": 52,
+   "warn_ml": -1000,
+   "ml_read_at": "2026-11-23T21:54:37",
+   "final": true
   },
   "401910044": {
    "sport": "NBA",
@@ -2827,9 +2854,20 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 12.5,
+   "spread": 13.5,
    "fav_team": "Lakers",
-   "dog_team": "Jazz"
+   "dog_team": "Jazz",
+   "live_ml": -390,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-23T23:38:08",
+   "warn_board_read_at": "2026-11-23T23:38:07",
+   "warn_expires_at": "2026-11-23T23:41:08",
+   "warn_detail": "8:10 - 3rd Quarter",
+   "warn_fav_score": 56,
+   "warn_dog_score": 57,
+   "warn_ml": -390,
+   "ml_read_at": "2026-11-23T23:38:08"
   },
   "401910045": {
    "sport": "NBA",
