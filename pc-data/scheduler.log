@@ -11346,3 +11346,32 @@
 [2026-11-24 08:31:45 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=7 queued_total=46
 [2026-11-24 08:31:45 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=46, limit=5)
 [2026-11-24 08:31:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 09:01:51 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 09:03:46 ET] odds_recorder.py: OK in 83s — SUMMARY: recorded 155 events (69 with odds), db total 318668 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-24 09:03:48 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Wright St. St. Bonaventure Today 10:00 AM — Total — Over 148 ProphetX +122 ($89) / Under 148.5 HardRock -130 ($111) — win+push at 148 — push +$
+[2026-11-24 09:03:48 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 09:13:47 ET] sync_to_github.py: FAILED (exit 1) in 599s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-24 09:22:06 ET] dh_game_middles.py: OK in 499s — GAME MIDDLE: NCAAB Oregon 13 St. John's Today 10:30 PM / Today 10:30 PM / table / Total Over 152.5 / Alt Total Under 153 / table | theScore | Bet365 — window 23
+[2026-11-24 09:25:42 ET] dh_key_number_middles.py: OK in 215s — key-number-middles: 563 basketball rows excluded (football-only rule).
+[2026-11-24 09:28:32 ET] dh_basketball_key_middles.py: OK in 169s — basketball-key-middles: no new basketball middles.
+[2026-11-24 09:28:43 ET] steam_side.py: OK in 11s — STEAM-SIDE FLAG: FBS Baylor @ Houston | 2026-11-24 | Kalshi | Baylor spread -5.5 (median -5.5 -> -4.5)
+[2026-11-24 09:30:09 ET] dh_prop_middles.py: OK in 86s — PROP MIDDLE CLEAN : NFL KC Chiefs BUF Bills Nov-26 8:20 PM / Nov-26 8:20 PM / table / Receiving Yards K. Shakir Under 42.5 / Alt Recv Yards K. Shakir 40+ / tabl
+[2026-11-24 09:33:13 ET] dh_sog_middles.py: OK in 183s — - 0 deliverables this run
+[2026-11-24 09:33:36 ET] dh_team_total_middles.py: OK in 23s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Philadelphia 19.5/21.5 sits at -2.4c vs 
+[2026-11-24 09:33:37 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 09:33:39 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 09:33:41 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 09:33:43 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 1077 total tallied.
+[2026-11-24 09:33:44 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 09:33:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 09:33:47 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 3 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-24.json
+[2026-11-24 09:35:21 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 94s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-24.txt. No 
+[2026-11-24 09:35:23 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-24 09:35:25 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-24 09:35:30 ET] nhl_totals_scan.py: OK in 5s — nhl-totals: 1 games, no flags.
+[2026-11-24 09:35:36 ET] total_projectors_scan.py: OK in 6s — }
+[2026-11-24 09:35:40 ET] spread_cover_daily.py: OK in 5s — spread-cover: games {'NBA': 3, 'NCAAB': 77}, new 0, moved 0, baselines 80.
+[2026-11-24 09:35:48 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-24.json (5 markets).
+[2026-11-24 09:51:57 ET] yahoo_brief.py: OK in 969s — SUMMARY: signed_in=True, rows=140, matched=46, lanes={'miles_earn_and_burn': 3, 'doctor_of_credit': 3, 'gift_cards': 27, 'sportsbook': 13}, errors=46
+[2026-11-24 09:52:33 ET] half_percent.py: OK in 35s — half-percent: PICK DLTR ref $153.81 target $154.58 stop $153.04
+[2026-11-24 09:52:33 ET] syncing to GitHub (regular 10-minute sync)
