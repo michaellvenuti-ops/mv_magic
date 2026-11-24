@@ -13,4 +13,6 @@ NEW TODD PLAY: Total 135.5 -132 :: raw: "@everyone un135.5 -132 Akron" :: msg 15
 NEW TODD PLAY: Total 73.5 -115 :: raw: "@everyone ov73.5 -115 Pitt team tot" :: msg 1574863572734058517 :: posted 2026-11-24T19:05:35.290Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 14:06:04 ET — 1 NEW Todd play
 ## 2026-11-24 14:36:40 ET — 1 NEW Todd play
-NEW TODD PLAY: 1st Half Total 42.5 -115 :: raw: "@everyone ov42.5 tt oreg st team tot-115 1h" :: msg 1574871342661238787 :: posted 2026-11-24T19:36:27.785Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Oregon State vs San Francisco - 1st Half Total 42.5 -115 :: raw: "@everyone ov42.5 tt oreg st team tot-115 1h" :: msg 1574871342661238787 :: posted 2026-11-24T19:36:27.785Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-24 15:29:47 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 138.5 -110 :: raw: "@everyone Un138.5 -110 rice late" :: msg 1574884728396456058 :: posted 2026-11-24T20:29:39.193Z :: Novig: https://app.novig.us/AppEntry
