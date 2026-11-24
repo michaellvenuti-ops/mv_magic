@@ -11433,3 +11433,9 @@
 [2026-11-24 12:33:49 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-24 12:35:31 ET] dh_derivative_ev.py: FAILED (exit 2) in 102s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-24.txt. No prices i
 [2026-11-24 12:35:32 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 13:05:32 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 13:07:29 ET] odds_recorder.py: OK in 87s — SUMMARY: recorded 183 events (145 with odds), db total 319189 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 13:09:45 ET] dh_arbitrage.py: FAILED (exit 2) in 136s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 13:11:03 ET] dh_kalshi_poly_arb.py: OK in 78s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 13:11:06 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB DePaul Purdue Today 6:00 PM — Total — Over 132 Caesars -110 ($103) / Under 132.5 Bally Bet +102 ($97) — win+push at 132 — push +$98.94, miss -4
+[2026-11-24 13:11:06 ET] syncing to GitHub (wide-builds banked new builds)
