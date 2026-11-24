@@ -1,3 +1,6 @@
 ## 2026-11-24T00:09:30-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-24T01:49:18-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-24T08:28:53-05:00 — 69 games, 0 steam events, 0 NEW flags
+## 2026-11-24T09:28:43-05:00 — 69 games, 1 steam events, 2 NEW flags
+NEW FLAG: FBS Baylor @ Houston | 2026-11-24 — FanDuel still dealing spread -5.5 on Baylor (pre-move median -5.5, now -4.5)
+NEW FLAG: FBS Baylor @ Houston | 2026-11-24 — Kalshi still dealing spread -5.5 on Baylor (pre-move median -5.5, now -4.5)
