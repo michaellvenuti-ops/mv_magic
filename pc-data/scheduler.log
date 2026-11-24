@@ -11216,3 +11216,25 @@
 [2026-11-23 19:51:28 ET] steam_side.py: OK in 7s — steam-side: 69 games, no new flags (silent).
 [2026-11-23 19:53:00 ET] dh_prop_middles.py: FAILED (exit 2) in 91s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
 [2026-11-23 19:53:00 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 20:21:50 ET] sync_to_github.py: FAILED (exit 1) in 1730s —   FAILED: pc-data/sog-filter-dump-switch-on-20261117-0830.json (HTTP 409: {'error': '{"message":"is at 37148a94d2f6751860eaa48713ae060892985b4b but expected 565
+[2026-11-23 20:23:39 ET] odds_recorder.py: OK in 79s — SUMMARY: recorded 155 events (80 with odds), db total 317738 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 20:25:28 ET] dh_arbitrage.py: OK in 109s — ARBITRAGE: NBA SA Spurs SAC Kings Today 10:15 PM / Today 10:15 PM / table / Points P. Achiuwa Under 6.5 / Alt Points P. Achiuwa 7+ / table | Bet365 | Fanatics-N
+[2026-11-23 20:26:35 ET] dh_kalshi_poly_arb.py: OK in 67s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-23 20:26:37 ET] wide_builds.py: OK in 1s — wide_builds: 7 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 20:29:42 ET] dh_game_middles.py: OK in 185s — GAME MIDDLE: NBA SA Spurs SAC Kings Today 10:15 PM / Today 10:15 PM / table / Spread SAC Kings +12.5 / Alt Spread SA Spurs -11.5 / table | Bet365 | FanDuel — wi
+[2026-11-23 20:33:59 ET] dh_key_number_middles.py: OK in 256s — key-number-middles: 194 basketball rows excluded (football-only rule).
+[2026-11-23 20:39:49 ET] dh_basketball_key_middles.py: OK in 350s — DarkHorse check unavailable (signed out) — basketball-key-middles skipped, no prices invented.
+[2026-11-23 20:44:14 ET] hung_number.py: OK in 263s — HUNG NUMBER: UCF vs Colorado — Fanatics spread value favorite (1.5 vs median 2.5)
+[2026-11-23 20:44:24 ET] rlm.py: OK in 8s
+[2026-11-23 20:44:29 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-23 20:44:33 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 20:48:13 ET] dh_sog_middles.py: FAILED (exit 1) in 220s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-23 20:48:17 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -2.5c vs
+[2026-11-23 20:48:19 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 161 total tallied.
+[2026-11-23 20:48:20 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 236 total tallied.
+[2026-11-23 20:48:22 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 369 total tallied.
+[2026-11-23 20:48:25 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 6 new, 1 unverified, 1053 total tallied.
+[2026-11-23 20:48:28 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-23 20:48:29 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
+[2026-11-23 20:48:31 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-23 20:48:31 ET] syncing to GitHub (regular 10-minute sync)
