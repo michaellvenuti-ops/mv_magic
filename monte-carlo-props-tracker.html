@@ -14,7 +14,7 @@ th{background:#161b22;color:#9da7b3}
 .box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin:16px 0}
 </style></head><body>
 <h1>Monte Carlo Props Tracker</h1>
-<div class="sub">Mack player-prop Monte Carlo sims — NBA live, NFL blocked, MLB out of season. Paper only, $100 flat. Updated 2026-11-23 05:31 PM ET.</div>
+<div class="sub">Mack player-prop Monte Carlo sims — NBA live, NFL blocked, MLB out of season. Paper only, $100 flat. Updated 2026-11-24 09:55 AM ET.</div>
 <div class="box"><b>How it works (Mack, Vol. 2 — player-prop Monte Carlo sims, in Python).</b>
 A SECOND OPINION on props, not a copy of the Sixers Normal model. For each player and each of
 points / rebounds / assists (plus PRA where posted), the sim draws 10,000 versions of tonight:
@@ -35,7 +35,7 @@ DNP grades as a void. <i>Stability note: the sim is deliberately simpler than a 
 hierarchical model — no regression of rate on usage. A per-player OLS regression on 13–17
 games was rejected in the Sixers build (it projected Embiid at 15.8 vs a 20.0 last-10 mean);
 the same rejection applies here — the last-10 rate is the flagger.</i></div>
-<h2>Paper record</h2><p><b>0-0-0</b> (0 void) &nbsp;·&nbsp; <b>$0.00</b> over 0 settled &nbsp;·&nbsp; ROI +0.0%</p>
+<h2>Paper record</h2><p><b>32-26-0</b> (2 void) &nbsp;·&nbsp; <b>$+114.98</b> over 58 settled &nbsp;·&nbsp; ROI +2.0%</p>
 <h2>Coverage</h2><div class="wrap"><table><tr><th>Sport</th><th>Status</th></tr>
 <tr><td>NBA</td><td class="qual">Live — BRef game logs + HaterPicks lines</td></tr>
 <tr><td>NFL</td><td>PFR 403 / ESPN gamelog API 404 / ESPN HTML gamelog empty — no proven game-log source (2026-11-23)</td></tr>
@@ -307,6 +307,68 @@ the same rejection applies here — the last-10 rate is the flagger.</i></div>
 <tr><td>De'Andre Hunter</td><td>REB</td><td>4.2</td><td>1.8</td><td>4.2</td><td>4.5</td><td>Over 118 FanDuel / Under -158 FanDuel</td><td>41.8%</td><td>-4.1% / -3.0%</td><td>&mdash;</td></tr>
 <tr><td>De'Andre Hunter</td><td>AST</td><td>1.8</td><td>1.0</td><td>1.8</td><td>1.5</td><td>Over -119 BetRivers / Under -123 Sleeper</td><td>60.0%</td><td>+5.7% / -15.2%</td><td><span class="flag">Over</span></td></tr>
 <tr><td>De'Andre Hunter</td><td>PRA</td><td>21.7</td><td>7.2</td><td>23.3</td><td>20.5</td><td>Over -112 FanDuel / Under -118 FanDuel</td><td>55.5%</td><td>+2.7% / -9.6%</td><td>&mdash;</td></tr>
+</table></div>
+<h2>Graded flags</h2><div class="wrap"><table><tr><th>Date</th><th>Player</th><th>Prop</th><th>Side</th><th>Line</th><th>Price</th><th>Actual</th><th>Result</th><th>Money</th></tr>
+<tr><td>2026-11-23</td><td>Walker Kessler</td><td>PRA</td><td>Over</td><td>26.5</td><td>-114 FanDuel</td><td>22.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Walker Kessler</td><td>AST</td><td>Over</td><td>1.5</td><td>-123 BetRivers</td><td>0.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Walker Kessler</td><td>REB</td><td>Over</td><td>10.5</td><td>-125 BetRivers</td><td>12.0</td><td class="win">W</td><td>$+80.00</td></tr>
+<tr><td>2026-11-23</td><td>Walker Kessler</td><td>PTS</td><td>Over</td><td>13.5</td><td>-114 BetRivers</td><td>10.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Luka Dončić</td><td>PRA</td><td>Over</td><td>50.5</td><td>-119 Sleeper</td><td>40.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Amen Thompson</td><td>AST</td><td>Under</td><td>2.5</td><td>134 FanDuel</td><td>5.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Kevin Durant</td><td>AST</td><td>Over</td><td>3.5</td><td>-146 FanDuel</td><td>4.0</td><td class="win">W</td><td>$+68.49</td></tr>
+<tr><td>2026-11-23</td><td>Rui Hachimura</td><td>PRA</td><td>Over</td><td>17.5</td><td>-120 FanDuel</td><td>25.0</td><td class="win">W</td><td>$+83.33</td></tr>
+<tr><td>2026-11-23</td><td>Rui Hachimura</td><td>REB</td><td>Over</td><td>4.5</td><td>116 FanDuel</td><td>3.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Rui Hachimura</td><td>PTS</td><td>Over</td><td>12.5</td><td>-102 FanDuel</td><td>19.0</td><td class="win">W</td><td>$+98.04</td></tr>
+<tr><td>2026-11-23</td><td>Brook Lopez</td><td>REB</td><td>Over</td><td>4.5</td><td>-106 FanDuel</td><td>4.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Brook Lopez</td><td>PTS</td><td>Over</td><td>11.5</td><td>-115 FanDuel</td><td>3.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Darius Garland</td><td>PTS</td><td>Over</td><td>18.5</td><td>-102 FanDuel</td><td>26.0</td><td class="win">W</td><td>$+98.04</td></tr>
+<tr><td>2026-11-23</td><td>Saddiq Bey</td><td>AST</td><td>Over</td><td>2.5</td><td>103 Sleeper</td><td>3.0</td><td class="win">W</td><td>$+103.00</td></tr>
+<tr><td>2026-11-23</td><td>Jeremiah Fears</td><td>PRA</td><td>Over</td><td>28.5</td><td>-113 FanDuel</td><td>25.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Jeremiah Fears</td><td>REB</td><td>Over</td><td>4.5</td><td>-130 FanDuel</td><td>7.0</td><td class="win">W</td><td>$+76.92</td></tr>
+<tr><td>2026-11-23</td><td>Jeremiah Fears</td><td>PTS</td><td>Over</td><td>17.5</td><td>-118 FanDuel</td><td>7.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Zion Williamson</td><td>PRA</td><td>Over</td><td>30.5</td><td>-111 FanDuel</td><td>29.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Zion Williamson</td><td>REB</td><td>Over</td><td>5.5</td><td>-122 FanDuel</td><td>4.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Zion Williamson</td><td>PTS</td><td>Over</td><td>21.5</td><td>-113 FanDuel</td><td>25.0</td><td class="win">W</td><td>$+88.50</td></tr>
+<tr><td>2026-11-23</td><td>Miles Bridges</td><td>PRA</td><td>Over</td><td>23.5</td><td>-106 FanDuel</td><td>30.0</td><td class="win">W</td><td>$+94.34</td></tr>
+<tr><td>2026-11-23</td><td>Miles Bridges</td><td>AST</td><td>Over</td><td>2.5</td><td>-136 FanDuel</td><td>5.0</td><td class="win">W</td><td>$+73.53</td></tr>
+<tr><td>2026-11-23</td><td>Miles Bridges</td><td>REB</td><td>Over</td><td>6.5</td><td>116 FanDuel</td><td>11.0</td><td class="win">W</td><td>$+116.00</td></tr>
+<tr><td>2026-11-23</td><td>Devin Booker</td><td>REB</td><td>Under</td><td>3.5</td><td>-146 FanDuel</td><td>5.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Matas Buzelis</td><td>PRA</td><td>Under</td><td>24.5</td><td>-113 FanDuel</td><td>21.0</td><td class="win">W</td><td>$+88.50</td></tr>
+<tr><td>2026-11-23</td><td>Matas Buzelis</td><td>AST</td><td>Over</td><td>1.5</td><td>-160 FanDuel</td><td>0.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Matas Buzelis</td><td>PTS</td><td>Under</td><td>17.5</td><td>-128 FanDuel</td><td>15.0</td><td class="win">W</td><td>$+78.12</td></tr>
+<tr><td>2026-11-23</td><td>James Harden</td><td>AST</td><td>Under</td><td>7.5</td><td>-125 FanDuel</td><td>5.0</td><td class="win">W</td><td>$+80.00</td></tr>
+<tr><td>2026-11-23</td><td>James Harden</td><td>PTS</td><td>Over</td><td>17.5</td><td>-118 FanDuel</td><td>21.0</td><td class="win">W</td><td>$+84.75</td></tr>
+<tr><td>2026-11-23</td><td>Donovan Mitchell</td><td>AST</td><td>Over</td><td>4.5</td><td>-160 FanDuel</td><td>5.0</td><td class="win">W</td><td>$+62.50</td></tr>
+<tr><td>2026-11-23</td><td>Jaden McDaniels</td><td>PRA</td><td>Over</td><td>26.5</td><td>-128 Sleeper</td><td>50.0</td><td class="win">W</td><td>$+78.12</td></tr>
+<tr><td>2026-11-23</td><td>Jaden McDaniels</td><td>REB</td><td>Over</td><td>5.5</td><td>-106 FanDuel</td><td>10.0</td><td class="win">W</td><td>$+94.34</td></tr>
+<tr><td>2026-11-23</td><td>Ayo Dosunmu</td><td>PRA</td><td>Over</td><td>25.5</td><td>-125 FanDuel</td><td>31.0</td><td class="win">W</td><td>$+80.00</td></tr>
+<tr><td>2026-11-23</td><td>Ayo Dosunmu</td><td>AST</td><td>Under</td><td>3.5</td><td>103 Sleeper</td><td>5.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Ayo Dosunmu</td><td>PTS</td><td>Over</td><td>17.5</td><td>-111 FanDuel</td><td>23.0</td><td class="win">W</td><td>$+90.09</td></tr>
+<tr><td>2026-11-23</td><td>Michael Porter Jr.</td><td>PRA</td><td>Under</td><td>28.5</td><td>-113 FanDuel</td><td>19.0</td><td class="win">W</td><td>$+88.50</td></tr>
+<tr><td>2026-11-23</td><td>Michael Porter Jr.</td><td>PTS</td><td>Under</td><td>19.5</td><td>-108 FanDuel</td><td>11.0</td><td class="win">W</td><td>$+92.59</td></tr>
+<tr><td>2026-11-23</td><td>Julius Randle</td><td>PRA</td><td>Under</td><td>31.5</td><td>-120 FanDuel</td><td>37.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Julius Randle</td><td>REB</td><td>Under</td><td>5.5</td><td>101 Sleeper</td><td>4.0</td><td class="win">W</td><td>$+101.00</td></tr>
+<tr><td>2026-11-23</td><td>Kyle Kuzma</td><td>REB</td><td>Under</td><td>4.5</td><td>-132 FanDuel</td><td>5.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Jaime Jaquez Jr.</td><td>REB</td><td>Under</td><td>3.5</td><td>118 FanDuel</td><td>4.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Andrew Nembhard</td><td>PRA</td><td>Over</td><td>24.5</td><td>-120 FanDuel</td><td>23.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Andrew Nembhard</td><td>AST</td><td>Over</td><td>7.5</td><td>116 FanDuel</td><td>6.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Andrew Nembhard</td><td>PTS</td><td>Over</td><td>14.5</td><td>-113 FanDuel</td><td>15.0</td><td class="win">W</td><td>$+88.50</td></tr>
+<tr><td>2026-11-23</td><td>Pascal Siakam</td><td>REB</td><td>Under</td><td>5.5</td><td>116 FanDuel</td><td>8.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Pascal Siakam</td><td>PTS</td><td>Over</td><td>21.5</td><td>-114 BetRivers</td><td>20.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Jared McCain</td><td>PTS</td><td>Over</td><td>15.5</td><td>-108 FanDuel</td><td>13.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Shai Gilgeous-Alexander</td><td>PRA</td><td>Over</td><td>41.5</td><td>-127 Sleeper</td><td>50.0</td><td class="win">W</td><td>$+78.74</td></tr>
+<tr><td>2026-11-23</td><td>Shai Gilgeous-Alexander</td><td>PTS</td><td>Over</td><td>31.5</td><td>-119 BetRivers</td><td>38.0</td><td class="win">W</td><td>$+84.03</td></tr>
+<tr><td>2026-11-23</td><td>Joel Embiid</td><td>PRA</td><td>Under</td><td>33.5</td><td>-111 FanDuel</td><td>&mdash;</td><td class="">VOID</td><td>$0.00</td></tr>
+<tr><td>2026-11-23</td><td>Joel Embiid</td><td>PTS</td><td>Under</td><td>21.5</td><td>-115 FanDuel</td><td>&mdash;</td><td class="">VOID</td><td>$0.00</td></tr>
+<tr><td>2026-11-23</td><td>Jaylen Brown</td><td>REB</td><td>Over</td><td>5.5</td><td>-125 FanDuel</td><td>2.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Tyrese Maxey</td><td>AST</td><td>Over</td><td>4.5</td><td>-150 FanDuel</td><td>5.0</td><td class="win">W</td><td>$+66.67</td></tr>
+<tr><td>2026-11-23</td><td>Tyrese Maxey</td><td>REB</td><td>Under</td><td>3.5</td><td>-130 FanDuel</td><td>2.0</td><td class="win">W</td><td>$+76.92</td></tr>
+<tr><td>2026-11-23</td><td>Naz Reid</td><td>PRA</td><td>Under</td><td>29.5</td><td>-111 FanDuel</td><td>33.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Naz Reid</td><td>PTS</td><td>Under</td><td>18.5</td><td>-111 FanDuel</td><td>24.0</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-23</td><td>Brandon Miller</td><td>PRA</td><td>Under</td><td>29.5</td><td>-113 FanDuel</td><td>28.0</td><td class="win">W</td><td>$+88.50</td></tr>
+<tr><td>2026-11-23</td><td>Brandon Miller</td><td>PTS</td><td>Under</td><td>21.5</td><td>-115 FanDuel</td><td>20.0</td><td class="win">W</td><td>$+86.96</td></tr>
+<tr><td>2026-11-23</td><td>Cedric Coward</td><td>PRA</td><td>Over</td><td>25.5</td><td>-111 FanDuel</td><td>28.0</td><td class="win">W</td><td>$+90.09</td></tr>
+<tr><td>2026-11-23</td><td>Cedric Coward</td><td>AST</td><td>Over</td><td>2.5</td><td>-179 BetRivers</td><td>3.0</td><td class="win">W</td><td>$+55.87</td></tr>
 </table></div>
 <div class="foot">Monte Carlo Props Tracker — Mack Vol. 2 prop sims. Paper trading only; nothing here is a bet recommendation. A morning price is never the placing price — verify live before placing. Game logs via Basketball-Reference; team ratings via the NBA Overs snapshot; injuries via ESPN; lines via HaterPicks public pages.</div>
 </body></html>
