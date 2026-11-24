@@ -224,7 +224,8 @@
    "pregame_total": 143.5,
    "alerted_at": "2026-11-24T17:26:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "TRAILING FAVE: Illinois St at Tulsa | Full Total (at half) Over 146.5 -110 | pregame favorite Tulsa trails at half (Illinois St leads); pace proj 144.0 vs live total 146.5 (gap -2.5) -- comeback-fave Over anyway | H1 72 | as of 17:26:01 ET"
+   "alert_detail": "TRAILING FAVE: Illinois St at Tulsa | Full Total (at half) Over 146.5 -110 | pregame favorite Tulsa trails at half (Illinois St leads); pace proj 144.0 vs live total 146.5 (gap -2.5) -- comeback-fave Over anyway | H1 72 | as of 17:26:01 ET",
+   "final": true
   },
   "401921223": {
    "matchup": "PSU Berks at Navy",
@@ -248,7 +249,8 @@
   "401926061": {
    "matchup": "Bloomsburg at Wagner",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401924859": {
    "matchup": "Emerson at Quinnipiac",
@@ -321,12 +323,15 @@
   "401922231": {
    "matchup": "Queens at Wofford",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Queens",
    "dog_team": "Wofford",
-   "pregame_total": 173.5
+   "pregame_total": 173.5,
+   "alerted_at": "2026-11-24T18:48:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "TRAILING FAVE: Queens at Wofford | Full Total (at half) Over 166.5 | pregame favorite Queens trails at half (Wofford leads); pace proj 148.0 vs live total 166.5 (gap -18.5) -- comeback-fave Over anyway | H1 74 | as of 18:48:02 ET"
   },
   "401920949": {
    "matchup": "E Michigan at Kennesaw St",
@@ -373,7 +378,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 34.5,
+   "spread": 35.5,
    "fav_team": "Florida",
    "dog_team": "Milwaukee",
    "pregame_total": 153.5
@@ -576,7 +581,7 @@
    "spread": 13.5,
    "fav_team": "James Madison",
    "dog_team": "Charleston So",
-   "pregame_total": 156.5
+   "pregame_total": 157.5
   },
   "401911279": {
    "matchup": "Binghamton at Lehigh",
@@ -839,8 +844,8 @@
    "alerted": false,
    "fav": "away",
    "spread": 1.5,
-   "fav_team": "Grand Canyon",
-   "dog_team": "Saint Louis",
+   "fav_team": "Saint Louis",
+   "dog_team": "Grand Canyon",
    "pregame_total": 163.5
   },
   "401906762": {
