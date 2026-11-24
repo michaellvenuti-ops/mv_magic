@@ -11504,3 +11504,21 @@
 [2026-11-24 16:21:52 ET] odds_recorder.py: OK in 88s — SUMMARY: recorded 183 events (144 with odds), db total 319921 snapshots / 1778 events, feeds ok 6 fail 0
 [2026-11-24 16:21:53 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Tarleton State Weber St. Today 7:00 PM — Total — Over 160 Bet365 +150 ($79) / Under 160.5 ProphetX -158 ($121) — win+push at 160 — push +$76.58
 [2026-11-24 16:21:53 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 16:51:53 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 16:52:47 ET] dh_low_holds.py: OK in 54s — LOW-HOLDS: NBA DAL Mavericks DEN Nuggets Today 10:15 PM / Today 10:15 PM / table / Points C. Flagg Under 25.5 / Alt Points C. Flagg 26+ / table | BetParx | Fana
+[2026-11-24 16:54:01 ET] dh_game_middles.py: OK in 74s — GAME MIDDLE: NFL PHI Eagles DAL Cowboys Nov-26 4:30 PM / Nov-26 4:30 PM / table / 1st Quarter Alt Total Over 7.5 / 1st Quarter Total Under 9.5 / table | BetMGM 
+[2026-11-24 16:54:49 ET] dh_nhl_totals_middles.py: OK in 48s — NHL TOTAL MIDDLE: NHL CGY Flames PIT Penguins Nov-25 7:00 PM / Nov-25 7:00 PM / table / Total Over 5.5 / Total Under 6 / table | Bet365 | Caesars — window 0.5 p
+[2026-11-24 16:57:51 ET] dh_key_number_middles.py: OK in 182s — key-number-middles: 260 basketball rows excluded (football-only rule).
+[2026-11-24 17:01:19 ET] dh_basketball_key_middles.py: OK in 208s — basketball-key-middles: no new basketball middles.
+[2026-11-24 17:01:35 ET] steam_side.py: OK in 16s — STEAM-SIDE FLAG: FBS Auburn @ Alabama | 2026-11-24 | FanDuel | Auburn spread -15.5 (median -15.5 -> -14.5)
+[2026-11-24 17:03:37 ET] dh_prop_middles.py: OK in 122s — PROP MIDDLE CLEAN : NFL DEN Broncos PIT Steelers Nov-27 3:00 PM / Nov-27 3:00 PM / table / Receiving Yards J. Coleman Under 25.5 / Alt Recv Yards J. Coleman 25+
+[2026-11-24 17:05:41 ET] dh_sog_middles.py: OK in 124s — - 0 deliverables this run
+[2026-11-24 17:05:44 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 17:05:46 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 17:05:47 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 17:05:48 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 17:05:51 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 6 new, 2 unverified, 1088 total tallied.
+[2026-11-24 17:05:53 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 17:05:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 17:05:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-24 17:05:55 ET] syncing to GitHub (regular 10-minute sync)
