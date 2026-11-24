@@ -12,3 +12,6 @@
 - 2026-11-23: San José State Spartans @ UC San Diego Tritons — first: San José State Spartans (2PT, 0:29 in); lead changes 4; final 88-79
 - 2026-11-23: Colorado State Rams @ Arizona Wildcats — first: Colorado State Rams (FT, 0:33 in); lead changes 1; final 83-96
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T12:29:41-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1078 games through 2026-11-24
+- 2026-11-24: Wright State Raiders @ St. Bonaventure Bonnies — first: Wright State Raiders (3PT, 1:09 in); lead changes 13; final 70-72
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
