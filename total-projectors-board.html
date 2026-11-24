@@ -20,6 +20,278 @@ a{color:#58a6ff}
 <p>From Frank's Oct 21, 2026 reel "Easiest way to predict NCAAF total!": the same shape with per-play rates — per team, <b>own plays/game x (own points per play + points per play the opponent allows) / 2</b>. His whiteboard example (Tennessee @ Alabama): Alabama (0.656 scored + 0.251 Tennessee allows) / 2 x 67.3 plays = 30.5; Tennessee (0.427 + 0.318 allowed by Alabama) / 2 x 71.2 plays = 26.5; projected total ~57. Inputs are <b>TeamRankings'</b> public season-to-date points per play, opponent points per play, and plays per game — the named public equivalents of Frank's inputs.</p>
 <p class='flag'>Flag thresholds are CHET'S DISPLAY CHOICES, NOT Frank's claims — neither reel states a threshold or a win-rate claim, and none is claimed here; the grading below is the honest record. NCAAB: flag OVER when the projected total sits at least 5.0 points ABOVE the book total, UNDER when at least 5.0 BELOW. NCAAF: the same at a 3.0-point gap. Games inside the band are shown but never flagged.</p>
 <p><b>Not the Football Totals board:</b> this page is a pure formula-projection system. The Football Totals board (totals-board.html) is a separate signal system — elite defenses by points allowed per play, line movement from the open, and splits divergence — with its own scorecard. The two systems are deliberately kept separate and are never merged.</p>
+<h2>2026-11-24 — NCAAB Totals Projector</h2>
+<h3>Over flags (projected >= book + 5.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away exp</th><th>Home exp</th><th>Projected</th><th>Book total</th><th>Gap</th><th>Over juice</th><th>Source</th></tr>
+<tr><td class='qual'>Lindenwood Lions @ New Haven Chargers</td><td>4:00 PM</td><td>75.5</td><td>66.31</td><td>141.8</td><td>133.5</td><td>8.3</td><td>-105</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Southern Indiana Screaming Eagles @ VMI Keydets</td><td>6:00 PM</td><td>73.19</td><td>74.31</td><td>147.5</td><td>142.5</td><td>5.0</td><td>-112</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>DePaul Blue Demons @ Purdue Boilermakers</td><td>6:00 PM</td><td>72.23</td><td>70.37</td><td>142.6</td><td>134.5</td><td>8.1</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Hampton Pirates @ Old Dominion Monarchs</td><td>7:00 PM</td><td>72.06</td><td>72.51</td><td>144.6</td><td>130.5</td><td>14.1</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Bryant Bulldogs @ Marist Red Foxes</td><td>7:00 PM</td><td>68.48</td><td>70.87</td><td>139.4</td><td>133.5</td><td>5.9</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>New Hampshire Wildcats @ Seton Hall Pirates</td><td>7:00 PM</td><td>67.24</td><td>72.4</td><td>139.6</td><td>129.5</td><td>10.1</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Boston University Terriers @ Harvard Crimson</td><td>7:00 PM</td><td>70.63</td><td>71.85</td><td>142.5</td><td>134.5</td><td>8.0</td><td>-112</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Gardner-Webb Runnin&#x27; Bulldogs @ Bowling Green Falcons</td><td>7:00 PM</td><td>73.18</td><td>78.34</td><td>151.5</td><td>146.5</td><td>5.0</td><td>-105</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>High Point Panthers @ Duquesne Dukes</td><td>7:30 PM</td><td>76.96</td><td>70.39</td><td>147.3</td><td>140.5</td><td>6.8</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>Under flags (projected <= book - 5.0)</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away exp</th><th>Home exp</th><th>Projected</th><th>Book total</th><th>Gap</th><th>Under juice</th><th>Source</th></tr>
+<tr><td class='qual'>Ole Miss Rebels @ BYU Cougars</td><td>2:30 PM</td><td>75.53</td><td>77.61</td><td>153.1</td><td>159.5</td><td>-6.4</td><td>-112</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Long Beach State Beach @ Arkansas State Red Wolves</td><td>3:30 PM</td><td>73.16</td><td>80.08</td><td>153.2</td><td>158.5</td><td>-5.3</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Creighton Bluejays @ Michigan Wolverines</td><td>5:30 PM</td><td>74.76</td><td>80.26</td><td>155.0</td><td>162.5</td><td>-7.5</td><td>-115</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Sacred Heart Pioneers @ Rutgers Scarlet Knights</td><td>6:00 PM</td><td>72.42</td><td>81.0</td><td>153.4</td><td>158.5</td><td>-5.1</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Mercer Bears @ Florida Atlantic Owls</td><td>6:00 PM</td><td>75.51</td><td>77.88</td><td>153.4</td><td>160.5</td><td>-7.1</td><td>-112</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Vanderbilt Commodores @ Ohio State Buckeyes</td><td>7:00 PM</td><td>76.27</td><td>74.16</td><td>150.4</td><td>156.5</td><td>-6.1</td><td>-105</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Samford Bulldogs @ Georgia Tech Yellow Jackets</td><td>7:00 PM</td><td>73.14</td><td>80.36</td><td>153.5</td><td>161.5</td><td>-8.0</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Nevada Wolf Pack @ Santa Clara Broncos</td><td>7:00 PM</td><td>73.65</td><td>79.45</td><td>153.1</td><td>158.5</td><td>-5.4</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>West Georgia Wolves @ Tennessee Tech Golden Eagles</td><td>7:30 PM</td><td>74.62</td><td>81.02</td><td>155.6</td><td>163.5</td><td>-7.9</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Bucknell Bison @ Cornell Big Red</td><td>8:00 PM</td><td>70.72</td><td>78.26</td><td>149.0</td><td>155.5</td><td>-6.5</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Lipscomb Bisons @ Auburn Tigers</td><td>8:00 PM</td><td>73.77</td><td>78.43</td><td>152.2</td><td>157.5</td><td>-5.3</td><td>-110</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Idaho State Bengals @ Boise State Broncos</td><td>9:00 PM</td><td>69.97</td><td>80.6</td><td>150.6</td><td>164.5</td><td>-13.9</td><td>-112</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>UNC Asheville Bulldogs @ Florida State Seminoles</td><td>9:00 PM</td><td>70.61</td><td>82.52</td><td>153.1</td><td>159.5</td><td>-6.4</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Grand Canyon Lopes @ Saint Louis Billikens</td><td>9:30 PM</td><td>78.41</td><td>77.18</td><td>155.6</td><td>165.5</td><td>-9.9</td><td>-105</td><td>ESPN / DraftKings</td></tr>
+<tr><td class='qual'>Baylor Bears @ Alabama Crimson Tide</td><td>10:00 PM</td><td>77.15</td><td>83.84</td><td>161.0</td><td>174.5</td><td>-13.5</td><td>-108</td><td>ESPN / DraftKings</td></tr>
+</table></div>
+<h3>All games — inputs and projected totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away AdjOE / AdjDE / AdjT (G)</th><th>Home AdjOE / AdjDE / AdjT (G)</th><th>Away exp</th><th>Home exp</th><th>Projected</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Hampton Pirates @ Old Dominion Monarchs</td><td>7:00 PM</td><td>104.1 / 109.5 / 67.6 (4)</td><td>107.6 / 109.1 / 66.8 (6)</td><td>72.06</td><td>72.51</td><td><b>144.6</b></td><td>130.5</td><td>14.1</td><td>over</td></tr>
+<tr><td>Idaho State Bengals @ Boise State Broncos</td><td>9:00 PM</td><td>101.7 / 113.5 / 68.4 (5)</td><td>110.7 / 102.9 / 71.9 (5)</td><td>69.97</td><td>80.6</td><td><b>150.6</b></td><td>164.5</td><td>-13.9</td><td>under</td></tr>
+<tr><td>Baylor Bears @ Alabama Crimson Tide</td><td>10:00 PM</td><td>119.4 / 100.6 / 70.3 (5)</td><td>121.8 / 100.1 / 75.4 (5)</td><td>77.15</td><td>83.84</td><td><b>161.0</b></td><td>174.5</td><td>-13.5</td><td>under</td></tr>
+<tr><td>New Hampshire Wildcats @ Seton Hall Pirates</td><td>7:00 PM</td><td>96.3 / 106.4 / 69.0 (7)</td><td>112.0 / 98.6 / 66.3 (6)</td><td>67.24</td><td>72.4</td><td><b>139.6</b></td><td>129.5</td><td>10.1</td><td>over</td></tr>
+<tr><td>Grand Canyon Lopes @ Saint Louis Billikens</td><td>9:30 PM</td><td>115.9 / 99.4 / 71.8 (4)</td><td>116.5 / 102.5 / 71.5 (5)</td><td>78.41</td><td>77.18</td><td><b>155.6</b></td><td>165.5</td><td>-9.9</td><td>under</td></tr>
+<tr><td>Lindenwood Lions @ New Haven Chargers</td><td>4:00 PM</td><td>98.9 / 110.1 / 71.9 (6)</td><td>95.5 / 111.1 / 64.5 (6)</td><td>75.5</td><td>66.31</td><td><b>141.8</b></td><td>133.5</td><td>8.3</td><td>over</td></tr>
+<tr><td>DePaul Blue Demons @ Purdue Boilermakers</td><td>6:00 PM</td><td>112.3 / 97.3 / 68.3 (5)</td><td>118.9 / 99.2 / 65.1 (6)</td><td>72.23</td><td>70.37</td><td><b>142.6</b></td><td>134.5</td><td>8.1</td><td>over</td></tr>
+<tr><td>Boston University Terriers @ Harvard Crimson</td><td>7:00 PM</td><td>103.9 / 112.1 / 67.2 (7)</td><td>106.3 / 106.3 / 65.8 (7)</td><td>70.63</td><td>71.85</td><td><b>142.5</b></td><td>134.5</td><td>8.0</td><td>over</td></tr>
+<tr><td>Samford Bulldogs @ Georgia Tech Yellow Jackets</td><td>7:00 PM</td><td>106.2 / 113.0 / 68.9 (5)</td><td>109.9 / 106.1 / 72.1 (6)</td><td>73.14</td><td>80.36</td><td><b>153.5</b></td><td>161.5</td><td>-8.0</td><td>under</td></tr>
+<tr><td>West Georgia Wolves @ Tennessee Tech Golden Eagles</td><td>7:30 PM</td><td>98.7 / 112.4 / 71.2 (6)</td><td>110.5 / 110.9 / 72.7 (7)</td><td>74.62</td><td>81.02</td><td><b>155.6</b></td><td>163.5</td><td>-7.9</td><td>under</td></tr>
+<tr><td>Creighton Bluejays @ Michigan Wolverines</td><td>5:30 PM</td><td>116.4 / 100.7 / 70.1 (5)</td><td>119.2 / 96.9 / 73.0 (5)</td><td>74.76</td><td>80.26</td><td><b>155.0</b></td><td>162.5</td><td>-7.5</td><td>under</td></tr>
+<tr><td>Mercer Bears @ Florida Atlantic Owls</td><td>6:00 PM</td><td>105.0 / 111.6 / 70.7 (7)</td><td>110.6 / 108.6 / 70.1 (5)</td><td>75.51</td><td>77.88</td><td><b>153.4</b></td><td>160.5</td><td>-7.1</td><td>under</td></tr>
+<tr><td>High Point Panthers @ Duquesne Dukes</td><td>7:30 PM</td><td>114.3 / 100.1 / 69.4 (6)</td><td>109.4 / 107.5 / 67.2 (6)</td><td>76.96</td><td>70.39</td><td><b>147.3</b></td><td>140.5</td><td>6.8</td><td>over</td></tr>
+<tr><td>Bucknell Bison @ Cornell Big Red</td><td>8:00 PM</td><td>97.3 / 113.2 / 68.0 (6)</td><td>105.7 / 110.7 / 71.5 (6)</td><td>70.72</td><td>78.26</td><td><b>149.0</b></td><td>155.5</td><td>-6.5</td><td>under</td></tr>
+<tr><td>Ole Miss Rebels @ BYU Cougars</td><td>2:30 PM</td><td>115.8 / 96.7 / 69.9 (5)</td><td>121.6 / 100.3 / 71.1 (6)</td><td>75.53</td><td>77.61</td><td><b>153.1</b></td><td>159.5</td><td>-6.4</td><td>under</td></tr>
+<tr><td>UNC Asheville Bulldogs @ Florida State Seminoles</td><td>9:00 PM</td><td>102.0 / 112.8 / 69.7 (7)</td><td>115.8 / 100.6 / 72.2 (6)</td><td>70.61</td><td>82.52</td><td><b>153.1</b></td><td>159.5</td><td>-6.4</td><td>under</td></tr>
+<tr><td>Vanderbilt Commodores @ Ohio State Buckeyes</td><td>7:00 PM</td><td>119.1 / 95.8 / 69.4 (6)</td><td>120.1 / 100.7 / 68.7 (6)</td><td>76.27</td><td>74.16</td><td><b>150.4</b></td><td>156.5</td><td>-6.1</td><td>under</td></tr>
+<tr><td>Bryant Bulldogs @ Marist Red Foxes</td><td>7:00 PM</td><td>96.8 / 110.5 / 67.3 (7)</td><td>99.8 / 106.7 / 67.4 (5)</td><td>68.48</td><td>70.87</td><td><b>139.4</b></td><td>133.5</td><td>5.9</td><td>over</td></tr>
+<tr><td>Nevada Wolf Pack @ Santa Clara Broncos</td><td>7:00 PM</td><td>110.8 / 101.5 / 68.7 (6)</td><td>114.7 / 103.6 / 73.5 (7)</td><td>73.65</td><td>79.45</td><td><b>153.1</b></td><td>158.5</td><td>-5.4</td><td>under</td></tr>
+<tr><td>Long Beach State Beach @ Arkansas State Red Wolves</td><td>3:30 PM</td><td>104.8 / 112.0 / 68.5 (5)</td><td>106.2 / 108.8 / 73.4 (6)</td><td>73.16</td><td>80.08</td><td><b>153.2</b></td><td>158.5</td><td>-5.3</td><td>under</td></tr>
+<tr><td>Lipscomb Bisons @ Auburn Tigers</td><td>8:00 PM</td><td>104.7 / 110.4 / 71.9 (8)</td><td>117.6 / 100.5 / 68.8 (6)</td><td>73.77</td><td>78.43</td><td><b>152.2</b></td><td>157.5</td><td>-5.3</td><td>under</td></tr>
+<tr><td>Sacred Heart Pioneers @ Rutgers Scarlet Knights</td><td>6:00 PM</td><td>103.3 / 116.0 / 69.9 (5)</td><td>117.1 / 103.9 / 69.5 (6)</td><td>72.42</td><td>81.0</td><td><b>153.4</b></td><td>158.5</td><td>-5.1</td><td>under</td></tr>
+<tr><td>Southern Indiana Screaming Eagles @ VMI Keydets</td><td>6:00 PM</td><td>97.6 / 112.2 / 70.0 (7)</td><td>99.2 / 111.5 / 70.3 (7)</td><td>73.19</td><td>74.31</td><td><b>147.5</b></td><td>142.5</td><td>5.0</td><td>over</td></tr>
+<tr><td>Gardner-Webb Runnin&#x27; Bulldogs @ Bowling Green Falcons</td><td>7:00 PM</td><td>98.9 / 117.0 / 69.2 (6)</td><td>110.4 / 112.6 / 68.9 (5)</td><td>73.18</td><td>78.34</td><td><b>151.5</b></td><td>146.5</td><td>5.0</td><td>over</td></tr>
+<tr><td>Bellarmine Knights @ Georgia Southern Eagles</td><td>7:00 PM</td><td>105.8 / 118.0 / 65.7 (7)</td><td>101.2 / 109.0 / 72.2 (7)</td><td>70.56</td><td>79.13</td><td><b>149.7</b></td><td>154.5</td><td>-4.8</td><td>—</td></tr>
+<tr><td>Vermont Catamounts @ Siena Saints</td><td>7:00 PM</td><td>109.0 / 111.4 / 64.9 (6)</td><td>105.7 / 110.4 / 78.3 (6)</td><td>71.2</td><td>84.99</td><td><b>156.2</b></td><td>160.5</td><td>-4.3</td><td>—</td></tr>
+<tr><td>Binghamton Bearcats @ Lehigh Mountain Hawks</td><td>7:00 PM</td><td>100.7 / 115.2 / 65.6 (7)</td><td>103.2 / 108.0 / 68.1 (6)</td><td>68.45</td><td>74.37</td><td><b>142.8</b></td><td>138.5</td><td>4.3</td><td>—</td></tr>
+<tr><td>Alabama A&amp;M Bulldogs @ North Alabama Lions</td><td>8:00 PM</td><td>103.1 / 112.2 / 67.6 (6)</td><td>102.0 / 114.1 / 68.5 (6)</td><td>73.41</td><td>73.36</td><td><b>146.8</b></td><td>142.5</td><td>4.3</td><td>—</td></tr>
+<tr><td>San Diego State Aztecs @ Iowa State Cyclones</td><td>5:30 PM</td><td>115.7 / 100.1 / 69.1 (5)</td><td>115.7 / 93.4 / 69.0 (4)</td><td>72.24</td><td>74.45</td><td><b>146.7</b></td><td>142.5</td><td>4.2</td><td>—</td></tr>
+<tr><td>Robert Morris Colonials @ Lamar Cardinals</td><td>6:30 PM</td><td>103.2 / 108.0 / 68.0 (6)</td><td>105.9 / 109.8 / 76.7 (5)</td><td>72.42</td><td>82.03</td><td><b>154.4</b></td><td>158.5</td><td>-4.1</td><td>—</td></tr>
+<tr><td>Charleston Southern Buccaneers @ James Madison Dukes</td><td>7:00 PM</td><td>99.1 / 112.3 / 71.4 (6)</td><td>110.3 / 107.6 / 68.8 (6)</td><td>73.79</td><td>76.57</td><td><b>150.4</b></td><td>154.5</td><td>-4.1</td><td>—</td></tr>
+<tr><td>Sam Houston Bearkats @ Washington State Cougars</td><td>9:00 PM</td><td>108.9 / 105.4 / 72.3 (6)</td><td>110.1 / 108.7 / 67.7 (6)</td><td>78.66</td><td>72.95</td><td><b>151.6</b></td><td>155.5</td><td>-3.9</td><td>—</td></tr>
+<tr><td>Providence Friars @ Arizona Wildcats</td><td>5:00 PM</td><td>111.6 / 96.6 / 70.3 (6)</td><td>122.2 / 95.7 / 72.1 (6)</td><td>72.87</td><td>78.88</td><td><b>151.8</b></td><td>155.5</td><td>-3.7</td><td>—</td></tr>
+<tr><td>Florida A&amp;M Rattlers @ South Alabama Jaguars</td><td>8:00 PM</td><td>96.1 / 114.9 / 71.4 (6)</td><td>108.7 / 113.0 / 63.8 (8)</td><td>74.65</td><td>71.33</td><td><b>146.0</b></td><td>142.5</td><td>3.5</td><td>—</td></tr>
+<tr><td>Tulsa Golden Hurricane @ Illinois State Redbirds</td><td>4:30 PM</td><td>110.3 / 102.1 / 68.7 (6)</td><td>113.9 / 107.2 / 66.4 (7)</td><td>74.71</td><td>71.71</td><td><b>146.4</b></td><td>143.5</td><td>2.9</td><td>—</td></tr>
+<tr><td>Gonzaga Bulldogs @ Kansas State Wildcats</td><td>12:30 AM</td><td>123.2 / 98.3 / 70.2 (4)</td><td>112.9 / 102.9 / 71.4 (5)</td><td>79.36</td><td>75.4</td><td><b>154.8</b></td><td>157.5</td><td>-2.7</td><td>—</td></tr>
+<tr><td>Charleston Cougars @ UTEP Miners</td><td>8:30 PM</td><td>111.7 / 110.6 / 70.4 (5)</td><td>107.0 / 105.9 / 67.5 (5)</td><td>76.6</td><td>73.44</td><td><b>150.0</b></td><td>147.5</td><td>2.5</td><td>—</td></tr>
+<tr><td>Jacksonville Dolphins @ Indiana Hoosiers</td><td>7:00 PM</td><td>106.4 / 113.6 / 66.7 (6)</td><td>121.2 / 100.9 / 68.7 (6)</td><td>69.13</td><td>80.65</td><td><b>149.8</b></td><td>147.5</td><td>2.3</td><td>—</td></tr>
+<tr><td>Coppin State Eagles @ Villanova Wildcats</td><td>7:00 PM</td><td>95.1 / 113.6 / 68.9 (7)</td><td>117.3 / 99.6 / 69.1 (6)</td><td>67.07</td><td>79.78</td><td><b>146.8</b></td><td>144.5</td><td>2.3</td><td>—</td></tr>
+<tr><td>Belmont Bruins @ Akron Zips</td><td>12:30 PM</td><td>109.2 / 105.2 / 68.0 (6)</td><td>108.0 / 101.7 / 65.3 (6)</td><td>71.71</td><td>69.61</td><td><b>141.3</b></td><td>143.5</td><td>-2.2</td><td>—</td></tr>
+<tr><td>Oregon State Beavers @ San Francisco Dons</td><td>2:00 PM</td><td>116.1 / 104.8 / 72.3 (7)</td><td>102.3 / 103.8 / 68.8 (6)</td><td>79.49</td><td>71.24</td><td><b>150.7</b></td><td>148.5</td><td>2.2</td><td>—</td></tr>
+<tr><td>Stanford Cardinal @ Colorado Buffaloes</td><td>11:59 PM</td><td>109.9 / 102.1 / 67.3 (6)</td><td>109.2 / 102.5 / 70.3 (5)</td><td>71.47</td><td>74.27</td><td><b>145.7</b></td><td>143.5</td><td>2.2</td><td>—</td></tr>
+<tr><td>Purdue Fort Wayne Mastodons @ Southeast Missouri State Redhawks</td><td>7:30 PM</td><td>104.7 / 113.3 / 69.6 (6)</td><td>102.1 / 110.7 / 71.0 (6)</td><td>74.96</td><td>76.47</td><td><b>151.4</b></td><td>149.5</td><td>1.9</td><td>—</td></tr>
+<tr><td>Wright State Raiders @ St. Bonaventure Bonnies</td><td>10:00 AM</td><td>112.2 / 105.2 / 68.6 (6)</td><td>111.2 / 104.0 / 67.6 (6)</td><td>74.16</td><td>73.14</td><td><b>147.3</b></td><td>145.5</td><td>1.8</td><td>—</td></tr>
+<tr><td>Alcorn State Braves @ Louisiana Tech Bulldogs</td><td>7:30 PM</td><td>98.3 / 117.4 / 71.2 (6)</td><td>99.7 / 107.2 / 67.4 (6)</td><td>73.16</td><td>73.16</td><td><b>146.3</b></td><td>144.5</td><td>1.8</td><td>—</td></tr>
+<tr><td>Texas Tech Red Raiders @ Louisville Cardinals</td><td>8:00 PM</td><td>120.7 / 95.7 / 68.3 (5)</td><td>119.8 / 98.5 / 70.5 (4)</td><td>74.86</td><td>75.96</td><td><b>150.8</b></td><td>152.5</td><td>-1.7</td><td>—</td></tr>
+<tr><td>UNC Greensboro Spartans @ UC Santa Barbara Gauchos</td><td>9:00 PM</td><td>102.3 / 115.4 / 68.2 (7)</td><td>115.3 / 106.1 / 66.7 (5)</td><td>71.06</td><td>76.94</td><td><b>148.0</b></td><td>146.5</td><td>1.5</td><td>—</td></tr>
+<tr><td>UMBC Retrievers @ Iowa Hawkeyes</td><td>7:00 PM</td><td>98.5 / 110.3 / 72.8 (8)</td><td>118.9 / 100.8 / 64.0 (5)</td><td>72.55</td><td>73.34</td><td><b>145.9</b></td><td>144.5</td><td>1.4</td><td>—</td></tr>
+<tr><td>VCU Rams @ Colorado State Rams</td><td>10:30 PM</td><td>114.6 / 100.5 / 68.3 (5)</td><td>111.7 / 104.4 / 69.1 (6)</td><td>74.79</td><td>73.32</td><td><b>148.1</b></td><td>149.5</td><td>-1.4</td><td>—</td></tr>
+<tr><td>Eastern Michigan Eagles @ Kennesaw State Owls</td><td>6:00 PM</td><td>106.8 / 106.8 / 66.3 (5)</td><td>107.2 / 104.6 / 73.6 (6)</td><td>70.08</td><td>78.75</td><td><b>148.8</b></td><td>147.5</td><td>1.3</td><td>—</td></tr>
+<tr><td>Oklahoma Sooners @ Pittsburgh Panthers</td><td>1:30 PM</td><td>117.8 / 104.6 / 67.7 (5)</td><td>113.5 / 100.8 / 69.4 (6)</td><td>74.0</td><td>75.68</td><td><b>149.7</b></td><td>148.5</td><td>1.2</td><td>—</td></tr>
+<tr><td>Elon Phoenix @ Furman Paladins</td><td>6:30 PM</td><td>106.1 / 109.8 / 67.8 (6)</td><td>108.7 / 106.4 / 68.9 (7)</td><td>72.04</td><td>75.27</td><td><b>147.3</b></td><td>148.5</td><td>-1.2</td><td>—</td></tr>
+<tr><td>Milwaukee Panthers @ Florida Gators</td><td>7:00 PM</td><td>103.6 / 111.4 / 71.3 (6)</td><td>124.8 / 96.4 / 68.6 (7)</td><td>71.3</td><td>81.02</td><td><b>152.3</b></td><td>153.5</td><td>-1.2</td><td>—</td></tr>
+<tr><td>Mount St. Mary&#x27;s Mountaineers @ Morgan State Bears</td><td>7:00 PM</td><td>98.6 / 113.0 / 69.4 (5)</td><td>96.6 / 114.9 / 71.2 (7)</td><td>74.08</td><td>74.62</td><td><b>148.7</b></td><td>147.5</td><td>1.2</td><td>—</td></tr>
+<tr><td>Wyoming Cowboys @ Kent State Golden Flashes</td><td>5:30 PM</td><td>112.4 / 104.3 / 67.1 (6)</td><td>104.9 / 108.5 / 69.3 (5)</td><td>74.11</td><td>72.49</td><td><b>146.6</b></td><td>145.5</td><td>1.1</td><td>—</td></tr>
+<tr><td>Stetson Hatters @ South Florida Bulls</td><td>7:00 PM</td><td>104.7 / 113.9 / 67.4 (6)</td><td>112.5 / 105.0 / 71.3 (6)</td><td>70.67</td><td>80.71</td><td><b>151.4</b></td><td>152.5</td><td>-1.1</td><td>—</td></tr>
+<tr><td>Clemson Tigers @ Washington Huskies</td><td>8:00 PM</td><td>116.9 / 105.1 / 67.0 (6)</td><td>115.0 / 105.1 / 68.2 (5)</td><td>74.37</td><td>75.05</td><td><b>149.4</b></td><td>150.5</td><td>-1.1</td><td>—</td></tr>
+<tr><td>Army Black Knights @ Air Force Falcons</td><td>8:00 PM</td><td>96.4 / 116.4 / 66.8 (6)</td><td>104.9 / 115.8 / 75.5 (6)</td><td>70.87</td><td>83.54</td><td><b>154.4</b></td><td>155.5</td><td>-1.1</td><td>—</td></tr>
+<tr><td>Tennessee Volunteers @ Maryland Terrapins</td><td>3:00 PM</td><td>117.4 / 95.7 / 68.0 (5)</td><td>118.5 / 101.9 / 69.0 (5)</td><td>74.56</td><td>73.9</td><td><b>148.5</b></td><td>147.5</td><td>1.0</td><td>—</td></tr>
+<tr><td>Miami Hurricanes @ TCU Horned Frogs</td><td>3:00 PM</td><td>119.5 / 96.4 / 72.0 (6)</td><td>114.4 / 100.4 / 69.6 (5)</td><td>79.16</td><td>73.36</td><td><b>152.5</b></td><td>153.5</td><td>-1.0</td><td>—</td></tr>
+<tr><td>North Dakota Fighting Hawks @ Detroit Mercy Titans</td><td>3:00 PM</td><td>103.0 / 115.2 / 69.3 (6)</td><td>104.3 / 116.1 / 69.8 (5)</td><td>75.92</td><td>76.61</td><td><b>152.5</b></td><td>151.5</td><td>1.0</td><td>—</td></tr>
+<tr><td>Evansville Purple Aces @ Missouri Tigers</td><td>9:00 PM</td><td>101.8 / 111.1 / 68.1 (6)</td><td>120.0 / 98.9 / 69.4 (6)</td><td>68.34</td><td>80.19</td><td><b>148.5</b></td><td>149.5</td><td>-1.0</td><td>—</td></tr>
+<tr><td>Ohio Bobcats @ New Mexico State Aggies</td><td>11:00 AM</td><td>108.4 / 111.1 / 71.1 (4)</td><td>105.7 / 109.2 / 67.4 (6)</td><td>77.36</td><td>73.06</td><td><b>150.4</b></td><td>149.5</td><td>0.9</td><td>—</td></tr>
+<tr><td>Oral Roberts Golden Eagles @ UT Arlington Mavericks</td><td>8:00 PM</td><td>105.7 / 111.9 / 69.3 (6)</td><td>103.2 / 106.1 / 70.7 (7)</td><td>73.39</td><td>76.04</td><td><b>149.4</b></td><td>148.5</td><td>0.9</td><td>—</td></tr>
+<tr><td>Oregon Ducks @ St. John&#x27;s Red Storm</td><td>10:30 PM</td><td>119.5 / 103.1 / 68.8 (4)</td><td>119.6 / 95.8 / 72.2 (5)</td><td>74.06</td><td>80.39</td><td><b>154.4</b></td><td>153.5</td><td>0.9</td><td>—</td></tr>
+<tr><td>Central Michigan Chippewas @ Notre Dame Fighting Irish</td><td>8:00 PM</td><td>106.0 / 111.7 / 69.3 (6)</td><td>118.3 / 103.4 / 69.0 (7)</td><td>72.56</td><td>79.35</td><td><b>151.9</b></td><td>152.5</td><td>-0.6</td><td>—</td></tr>
+<tr><td>Delaware State Hornets @ Chattanooga Mocs</td><td>7:00 PM</td><td>98.5 / 114.3 / 69.0 (6)</td><td>108.9 / 112.9 / 68.2 (6)</td><td>72.93</td><td>76.11</td><td><b>149.0</b></td><td>149.5</td><td>-0.5</td><td>—</td></tr>
+<tr><td>Campbell Fighting Camels @ Coastal Carolina Chanticleers</td><td>7:00 PM</td><td>109.4 / 112.7 / 66.0 (6)</td><td>103.8 / 109.6 / 70.0 (6)</td><td>72.27</td><td>75.78</td><td><b>148.1</b></td><td>148.5</td><td>-0.4</td><td>—</td></tr>
+<tr><td>Tarleton State Texans @ Weber State Wildcats</td><td>7:00 PM</td><td>105.9 / 108.3 / 71.6 (6)</td><td>101.7 / 114.3 / 73.2 (5)</td><td>78.83</td><td>76.86</td><td><b>155.7</b></td><td>155.5</td><td>0.2</td><td>—</td></tr>
+<tr><td>SE Louisiana Lions @ Northern Colorado Bears</td><td>12:30 PM</td><td colspan='6'>no stats for SE Louisiana Lions</td><td>145.5</td><td>None</td><td>—</td></tr>
+<tr><td>Southern Utah Thunderbirds @ Florida International Panthers</td><td>1:00 PM</td><td colspan='6'>no stats for Florida International Panthers</td><td>167.5</td><td>None</td><td>—</td></tr>
+<tr><td>Vermont State Randolph Knights @ Stonehill Skyhawks</td><td>1:00 PM</td><td colspan='6'>no stats for Vermont State Randolph Knights</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Rice Owls @ UIC Flames</td><td>1:30 PM</td><td colspan='6'>no stats for UIC Flames</td><td>142.5</td><td>None</td><td>—</td></tr>
+<tr><td>App State Mountaineers @ Yale Bulldogs</td><td>3:00 PM</td><td colspan='6'>no stats for App State Mountaineers</td><td>134.5</td><td>None</td><td>—</td></tr>
+<tr><td>Penn State Berks Nittany Lions @ Navy Midshipmen</td><td>4:30 PM</td><td colspan='6'>no stats for Penn State Berks Nittany Lions</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Bloomsburg Huskies @ Wagner Seahawks</td><td>5:00 PM</td><td colspan='6'>no stats for Bloomsburg Huskies</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Emerson Lions @ Quinnipiac Bobcats</td><td>5:30 PM</td><td colspan='6'>no stats for Emerson Lions</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Queens University Royals @ Wofford Terriers</td><td>6:00 PM</td><td colspan='6'>no stats for Queens University Royals</td><td>173.5</td><td>None</td><td>—</td></tr>
+<tr><td>Carolina Christian Centurions @ Presbyterian Blue Hose</td><td>7:00 PM</td><td colspan='6'>no stats for Carolina Christian Centurions</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Rider Broncs @ Loyola Maryland Greyhounds</td><td>7:00 PM</td><td colspan='6'>no stats for Loyola Maryland Greyhounds</td><td>138.5</td><td>None</td><td>—</td></tr>
+<tr><td>SUNY Fredonia Blue Devils @ Mercyhurst Lakers</td><td>7:00 PM</td><td colspan='6'>no stats for SUNY Fredonia Blue Devils</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Arlington Baptist Patriots @ East Texas A&amp;M Lions</td><td>7:30 PM</td><td colspan='6'>no stats for Arlington Baptist Patriots</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Houston Christian Huskies @ UL Monroe Warhawks</td><td>7:30 PM</td><td colspan='6'>no stats for UL Monroe Warhawks</td><td>151.5</td><td>None</td><td>—</td></tr>
+<tr><td>Arkansas Baptist Buffaloes @ Little Rock Trojans</td><td>8:00 PM</td><td colspan='6'>no stats for Arkansas Baptist Buffaloes</td><td>None</td><td>None</td><td>—</td></tr>
+<tr><td>Drexel Dragons @ Pennsylvania Quakers</td><td>8:00 PM</td><td colspan='6'>no stats for Pennsylvania Quakers</td><td>142.5</td><td>None</td><td>—</td></tr>
+<tr><td>Green Bay Phoenix @ Kansas City Roos</td><td>8:00 PM</td><td colspan='6'>no stats for Kansas City Roos</td><td>145.5</td><td>None</td><td>—</td></tr>
+<tr><td>Louisiana Christian Wildcats @ Louisiana Ragin&#x27; Cajuns</td><td>8:30 PM</td><td colspan='6'>no stats for Louisiana Christian Wildcats</td><td>None</td><td>None</td><td>—</td></tr>
+</table></div>
+<h3>Team stats (season-to-date)</h3>
+<div class='wrap'><table><tr><th>Team</th><th>Games</th><th>AdjOE</th><th>AdjDE</th><th>AdjT</th></tr>
+<tr><td>Air Force Falcons</td><td>6</td><td>104.9</td><td>115.8</td><td>75.5</td></tr>
+<tr><td>Akron Zips</td><td>6</td><td>108.0</td><td>101.7</td><td>65.3</td></tr>
+<tr><td>Alabama A&amp;M Bulldogs</td><td>6</td><td>103.1</td><td>112.2</td><td>67.6</td></tr>
+<tr><td>Alabama Crimson Tide</td><td>5</td><td>121.8</td><td>100.1</td><td>75.4</td></tr>
+<tr><td>Alcorn State Braves</td><td>6</td><td>98.3</td><td>117.4</td><td>71.2</td></tr>
+<tr><td>Arizona Wildcats</td><td>6</td><td>122.2</td><td>95.7</td><td>72.1</td></tr>
+<tr><td>Arkansas State Red Wolves</td><td>6</td><td>106.2</td><td>108.8</td><td>73.4</td></tr>
+<tr><td>Army Black Knights</td><td>6</td><td>96.4</td><td>116.4</td><td>66.8</td></tr>
+<tr><td>Auburn Tigers</td><td>6</td><td>117.6</td><td>100.5</td><td>68.8</td></tr>
+<tr><td>BYU Cougars</td><td>6</td><td>121.6</td><td>100.3</td><td>71.1</td></tr>
+<tr><td>Baylor Bears</td><td>5</td><td>119.4</td><td>100.6</td><td>70.3</td></tr>
+<tr><td>Bellarmine Knights</td><td>7</td><td>105.8</td><td>118.0</td><td>65.7</td></tr>
+<tr><td>Belmont Bruins</td><td>6</td><td>109.2</td><td>105.2</td><td>68.0</td></tr>
+<tr><td>Binghamton Bearcats</td><td>7</td><td>100.7</td><td>115.2</td><td>65.6</td></tr>
+<tr><td>Boise State Broncos</td><td>5</td><td>110.7</td><td>102.9</td><td>71.9</td></tr>
+<tr><td>Boston University Terriers</td><td>7</td><td>103.9</td><td>112.1</td><td>67.2</td></tr>
+<tr><td>Bowling Green Falcons</td><td>5</td><td>110.4</td><td>112.6</td><td>68.9</td></tr>
+<tr><td>Bryant Bulldogs</td><td>7</td><td>96.8</td><td>110.5</td><td>67.3</td></tr>
+<tr><td>Bucknell Bison</td><td>6</td><td>97.3</td><td>113.2</td><td>68.0</td></tr>
+<tr><td>Campbell Fighting Camels</td><td>6</td><td>109.4</td><td>112.7</td><td>66.0</td></tr>
+<tr><td>Central Michigan Chippewas</td><td>6</td><td>106.0</td><td>111.7</td><td>69.3</td></tr>
+<tr><td>Charleston Cougars</td><td>5</td><td>111.7</td><td>110.6</td><td>70.4</td></tr>
+<tr><td>Charleston Southern Buccaneers</td><td>6</td><td>99.1</td><td>112.3</td><td>71.4</td></tr>
+<tr><td>Chattanooga Mocs</td><td>6</td><td>108.9</td><td>112.9</td><td>68.2</td></tr>
+<tr><td>Clemson Tigers</td><td>6</td><td>116.9</td><td>105.1</td><td>67.0</td></tr>
+<tr><td>Coastal Carolina Chanticleers</td><td>6</td><td>103.8</td><td>109.6</td><td>70.0</td></tr>
+<tr><td>Colorado Buffaloes</td><td>5</td><td>109.2</td><td>102.5</td><td>70.3</td></tr>
+<tr><td>Colorado State Rams</td><td>6</td><td>111.7</td><td>104.4</td><td>69.1</td></tr>
+<tr><td>Coppin State Eagles</td><td>7</td><td>95.1</td><td>113.6</td><td>68.9</td></tr>
+<tr><td>Cornell Big Red</td><td>6</td><td>105.7</td><td>110.7</td><td>71.5</td></tr>
+<tr><td>Creighton Bluejays</td><td>5</td><td>116.4</td><td>100.7</td><td>70.1</td></tr>
+<tr><td>DePaul Blue Demons</td><td>5</td><td>112.3</td><td>97.3</td><td>68.3</td></tr>
+<tr><td>Delaware State Hornets</td><td>6</td><td>98.5</td><td>114.3</td><td>69.0</td></tr>
+<tr><td>Detroit Mercy Titans</td><td>5</td><td>104.3</td><td>116.1</td><td>69.8</td></tr>
+<tr><td>Duquesne Dukes</td><td>6</td><td>109.4</td><td>107.5</td><td>67.2</td></tr>
+<tr><td>Eastern Michigan Eagles</td><td>5</td><td>106.8</td><td>106.8</td><td>66.3</td></tr>
+<tr><td>Elon Phoenix</td><td>6</td><td>106.1</td><td>109.8</td><td>67.8</td></tr>
+<tr><td>Evansville Purple Aces</td><td>6</td><td>101.8</td><td>111.1</td><td>68.1</td></tr>
+<tr><td>Florida A&amp;M Rattlers</td><td>6</td><td>96.1</td><td>114.9</td><td>71.4</td></tr>
+<tr><td>Florida Atlantic Owls</td><td>5</td><td>110.6</td><td>108.6</td><td>70.1</td></tr>
+<tr><td>Florida Gators</td><td>7</td><td>124.8</td><td>96.4</td><td>68.6</td></tr>
+<tr><td>Florida State Seminoles</td><td>6</td><td>115.8</td><td>100.6</td><td>72.2</td></tr>
+<tr><td>Furman Paladins</td><td>7</td><td>108.7</td><td>106.4</td><td>68.9</td></tr>
+<tr><td>Gardner-Webb Runnin&#x27; Bulldogs</td><td>6</td><td>98.9</td><td>117.0</td><td>69.2</td></tr>
+<tr><td>Georgia Southern Eagles</td><td>7</td><td>101.2</td><td>109.0</td><td>72.2</td></tr>
+<tr><td>Georgia Tech Yellow Jackets</td><td>6</td><td>109.9</td><td>106.1</td><td>72.1</td></tr>
+<tr><td>Gonzaga Bulldogs</td><td>4</td><td>123.2</td><td>98.3</td><td>70.2</td></tr>
+<tr><td>Grand Canyon Lopes</td><td>4</td><td>115.9</td><td>99.4</td><td>71.8</td></tr>
+<tr><td>Hampton Pirates</td><td>4</td><td>104.1</td><td>109.5</td><td>67.6</td></tr>
+<tr><td>Harvard Crimson</td><td>7</td><td>106.3</td><td>106.3</td><td>65.8</td></tr>
+<tr><td>High Point Panthers</td><td>6</td><td>114.3</td><td>100.1</td><td>69.4</td></tr>
+<tr><td>Idaho State Bengals</td><td>5</td><td>101.7</td><td>113.5</td><td>68.4</td></tr>
+<tr><td>Illinois State Redbirds</td><td>7</td><td>113.9</td><td>107.2</td><td>66.4</td></tr>
+<tr><td>Indiana Hoosiers</td><td>6</td><td>121.2</td><td>100.9</td><td>68.7</td></tr>
+<tr><td>Iowa Hawkeyes</td><td>5</td><td>118.9</td><td>100.8</td><td>64.0</td></tr>
+<tr><td>Iowa State Cyclones</td><td>4</td><td>115.7</td><td>93.4</td><td>69.0</td></tr>
+<tr><td>Jacksonville Dolphins</td><td>6</td><td>106.4</td><td>113.6</td><td>66.7</td></tr>
+<tr><td>James Madison Dukes</td><td>6</td><td>110.3</td><td>107.6</td><td>68.8</td></tr>
+<tr><td>Kansas State Wildcats</td><td>5</td><td>112.9</td><td>102.9</td><td>71.4</td></tr>
+<tr><td>Kennesaw State Owls</td><td>6</td><td>107.2</td><td>104.6</td><td>73.6</td></tr>
+<tr><td>Kent State Golden Flashes</td><td>5</td><td>104.9</td><td>108.5</td><td>69.3</td></tr>
+<tr><td>Lamar Cardinals</td><td>5</td><td>105.9</td><td>109.8</td><td>76.7</td></tr>
+<tr><td>Lehigh Mountain Hawks</td><td>6</td><td>103.2</td><td>108.0</td><td>68.1</td></tr>
+<tr><td>Lindenwood Lions</td><td>6</td><td>98.9</td><td>110.1</td><td>71.9</td></tr>
+<tr><td>Lipscomb Bisons</td><td>8</td><td>104.7</td><td>110.4</td><td>71.9</td></tr>
+<tr><td>Long Beach State Beach</td><td>5</td><td>104.8</td><td>112.0</td><td>68.5</td></tr>
+<tr><td>Louisiana Tech Bulldogs</td><td>6</td><td>99.7</td><td>107.2</td><td>67.4</td></tr>
+<tr><td>Louisville Cardinals</td><td>4</td><td>119.8</td><td>98.5</td><td>70.5</td></tr>
+<tr><td>Marist Red Foxes</td><td>5</td><td>99.8</td><td>106.7</td><td>67.4</td></tr>
+<tr><td>Maryland Terrapins</td><td>5</td><td>118.5</td><td>101.9</td><td>69.0</td></tr>
+<tr><td>Mercer Bears</td><td>7</td><td>105.0</td><td>111.6</td><td>70.7</td></tr>
+<tr><td>Miami Hurricanes</td><td>6</td><td>119.5</td><td>96.4</td><td>72.0</td></tr>
+<tr><td>Michigan Wolverines</td><td>5</td><td>119.2</td><td>96.9</td><td>73.0</td></tr>
+<tr><td>Milwaukee Panthers</td><td>6</td><td>103.6</td><td>111.4</td><td>71.3</td></tr>
+<tr><td>Missouri Tigers</td><td>6</td><td>120.0</td><td>98.9</td><td>69.4</td></tr>
+<tr><td>Morgan State Bears</td><td>7</td><td>96.6</td><td>114.9</td><td>71.2</td></tr>
+<tr><td>Mount St. Mary&#x27;s Mountaineers</td><td>5</td><td>98.6</td><td>113.0</td><td>69.4</td></tr>
+<tr><td>Nevada Wolf Pack</td><td>6</td><td>110.8</td><td>101.5</td><td>68.7</td></tr>
+<tr><td>New Hampshire Wildcats</td><td>7</td><td>96.3</td><td>106.4</td><td>69.0</td></tr>
+<tr><td>New Haven Chargers</td><td>6</td><td>95.5</td><td>111.1</td><td>64.5</td></tr>
+<tr><td>New Mexico State Aggies</td><td>6</td><td>105.7</td><td>109.2</td><td>67.4</td></tr>
+<tr><td>North Alabama Lions</td><td>6</td><td>102.0</td><td>114.1</td><td>68.5</td></tr>
+<tr><td>North Dakota Fighting Hawks</td><td>6</td><td>103.0</td><td>115.2</td><td>69.3</td></tr>
+<tr><td>Notre Dame Fighting Irish</td><td>7</td><td>118.3</td><td>103.4</td><td>69.0</td></tr>
+<tr><td>Ohio Bobcats</td><td>4</td><td>108.4</td><td>111.1</td><td>71.1</td></tr>
+<tr><td>Ohio State Buckeyes</td><td>6</td><td>120.1</td><td>100.7</td><td>68.7</td></tr>
+<tr><td>Oklahoma Sooners</td><td>5</td><td>117.8</td><td>104.6</td><td>67.7</td></tr>
+<tr><td>Old Dominion Monarchs</td><td>6</td><td>107.6</td><td>109.1</td><td>66.8</td></tr>
+<tr><td>Ole Miss Rebels</td><td>5</td><td>115.8</td><td>96.7</td><td>69.9</td></tr>
+<tr><td>Oral Roberts Golden Eagles</td><td>6</td><td>105.7</td><td>111.9</td><td>69.3</td></tr>
+<tr><td>Oregon Ducks</td><td>4</td><td>119.5</td><td>103.1</td><td>68.8</td></tr>
+<tr><td>Oregon State Beavers</td><td>7</td><td>116.1</td><td>104.8</td><td>72.3</td></tr>
+<tr><td>Pittsburgh Panthers</td><td>6</td><td>113.5</td><td>100.8</td><td>69.4</td></tr>
+<tr><td>Providence Friars</td><td>6</td><td>111.6</td><td>96.6</td><td>70.3</td></tr>
+<tr><td>Purdue Boilermakers</td><td>6</td><td>118.9</td><td>99.2</td><td>65.1</td></tr>
+<tr><td>Purdue Fort Wayne Mastodons</td><td>6</td><td>104.7</td><td>113.3</td><td>69.6</td></tr>
+<tr><td>Robert Morris Colonials</td><td>6</td><td>103.2</td><td>108.0</td><td>68.0</td></tr>
+<tr><td>Rutgers Scarlet Knights</td><td>6</td><td>117.1</td><td>103.9</td><td>69.5</td></tr>
+<tr><td>Sacred Heart Pioneers</td><td>5</td><td>103.3</td><td>116.0</td><td>69.9</td></tr>
+<tr><td>Saint Louis Billikens</td><td>5</td><td>116.5</td><td>102.5</td><td>71.5</td></tr>
+<tr><td>Sam Houston Bearkats</td><td>6</td><td>108.9</td><td>105.4</td><td>72.3</td></tr>
+<tr><td>Samford Bulldogs</td><td>5</td><td>106.2</td><td>113.0</td><td>68.9</td></tr>
+<tr><td>San Diego State Aztecs</td><td>5</td><td>115.7</td><td>100.1</td><td>69.1</td></tr>
+<tr><td>San Francisco Dons</td><td>6</td><td>102.3</td><td>103.8</td><td>68.8</td></tr>
+<tr><td>Santa Clara Broncos</td><td>7</td><td>114.7</td><td>103.6</td><td>73.5</td></tr>
+<tr><td>Seton Hall Pirates</td><td>6</td><td>112.0</td><td>98.6</td><td>66.3</td></tr>
+<tr><td>Siena Saints</td><td>6</td><td>105.7</td><td>110.4</td><td>78.3</td></tr>
+<tr><td>South Alabama Jaguars</td><td>8</td><td>108.7</td><td>113.0</td><td>63.8</td></tr>
+<tr><td>South Florida Bulls</td><td>6</td><td>112.5</td><td>105.0</td><td>71.3</td></tr>
+<tr><td>Southeast Missouri State Redhawks</td><td>6</td><td>102.1</td><td>110.7</td><td>71.0</td></tr>
+<tr><td>Southern Indiana Screaming Eagles</td><td>7</td><td>97.6</td><td>112.2</td><td>70.0</td></tr>
+<tr><td>St. Bonaventure Bonnies</td><td>6</td><td>111.2</td><td>104.0</td><td>67.6</td></tr>
+<tr><td>St. John&#x27;s Red Storm</td><td>5</td><td>119.6</td><td>95.8</td><td>72.2</td></tr>
+<tr><td>Stanford Cardinal</td><td>6</td><td>109.9</td><td>102.1</td><td>67.3</td></tr>
+<tr><td>Stetson Hatters</td><td>6</td><td>104.7</td><td>113.9</td><td>67.4</td></tr>
+<tr><td>TCU Horned Frogs</td><td>5</td><td>114.4</td><td>100.4</td><td>69.6</td></tr>
+<tr><td>Tarleton State Texans</td><td>6</td><td>105.9</td><td>108.3</td><td>71.6</td></tr>
+<tr><td>Tennessee Tech Golden Eagles</td><td>7</td><td>110.5</td><td>110.9</td><td>72.7</td></tr>
+<tr><td>Tennessee Volunteers</td><td>5</td><td>117.4</td><td>95.7</td><td>68.0</td></tr>
+<tr><td>Texas Tech Red Raiders</td><td>5</td><td>120.7</td><td>95.7</td><td>68.3</td></tr>
+<tr><td>Tulsa Golden Hurricane</td><td>6</td><td>110.3</td><td>102.1</td><td>68.7</td></tr>
+<tr><td>UC Santa Barbara Gauchos</td><td>5</td><td>115.3</td><td>106.1</td><td>66.7</td></tr>
+<tr><td>UMBC Retrievers</td><td>8</td><td>98.5</td><td>110.3</td><td>72.8</td></tr>
+<tr><td>UNC Asheville Bulldogs</td><td>7</td><td>102.0</td><td>112.8</td><td>69.7</td></tr>
+<tr><td>UNC Greensboro Spartans</td><td>7</td><td>102.3</td><td>115.4</td><td>68.2</td></tr>
+<tr><td>UT Arlington Mavericks</td><td>7</td><td>103.2</td><td>106.1</td><td>70.7</td></tr>
+<tr><td>UTEP Miners</td><td>5</td><td>107.0</td><td>105.9</td><td>67.5</td></tr>
+<tr><td>VCU Rams</td><td>5</td><td>114.6</td><td>100.5</td><td>68.3</td></tr>
+<tr><td>VMI Keydets</td><td>7</td><td>99.2</td><td>111.5</td><td>70.3</td></tr>
+<tr><td>Vanderbilt Commodores</td><td>6</td><td>119.1</td><td>95.8</td><td>69.4</td></tr>
+<tr><td>Vermont Catamounts</td><td>6</td><td>109.0</td><td>111.4</td><td>64.9</td></tr>
+<tr><td>Villanova Wildcats</td><td>6</td><td>117.3</td><td>99.6</td><td>69.1</td></tr>
+<tr><td>Washington Huskies</td><td>5</td><td>115.0</td><td>105.1</td><td>68.2</td></tr>
+<tr><td>Washington State Cougars</td><td>6</td><td>110.1</td><td>108.7</td><td>67.7</td></tr>
+<tr><td>Weber State Wildcats</td><td>5</td><td>101.7</td><td>114.3</td><td>73.2</td></tr>
+<tr><td>West Georgia Wolves</td><td>6</td><td>98.7</td><td>112.4</td><td>71.2</td></tr>
+<tr><td>Wright State Raiders</td><td>6</td><td>112.2</td><td>105.2</td><td>68.6</td></tr>
+<tr><td>Wyoming Cowboys</td><td>6</td><td>112.4</td><td>104.3</td><td>67.1</td></tr>
+</table></div>
+<h2>2026-11-24 — NCAAF Totals Projector</h2>
+<h3>Over flags (projected >= book + 3.0)</h3>
+<p>No Over flags this day.</p>
+<h3>Under flags (projected <= book - 3.0)</h3>
+<p>No Under flags this day.</p>
+<h3>All games — inputs and projected totals</h3>
+<div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away PPP off / allowed / plays</th><th>Home PPP off / allowed / plays</th><th>Away exp</th><th>Home exp</th><th>Projected</th><th>Book total</th><th>Gap</th><th>Flag</th></tr>
+<tr><td>Kent State Golden Flashes @ Eastern Michigan Eagles</td><td>7:00 PM</td><td colspan='6'>no stats for Eastern Michigan Eagles</td><td>46.5</td><td>None</td><td>—</td></tr>
+<tr><td>Miami (OH) RedHawks @ Western Michigan Broncos</td><td>7:00 PM</td><td colspan='6'>no stats for Western Michigan Broncos</td><td>45.5</td><td>None</td><td>—</td></tr>
+</table></div>
 <h2>2026-11-23 — NCAAB Totals Projector</h2>
 <h3>Over flags (projected >= book + 5.0)</h3>
 <div class='wrap'><table><tr><th>Matchup</th><th>Tipoff ET</th><th>Away exp</th><th>Home exp</th><th>Projected</th><th>Book total</th><th>Gap</th><th>Over juice</th><th>Source</th></tr>
@@ -3974,5 +4246,5 @@ a{color:#58a6ff}
 <tr><td>2026-11-06</td><td>New Mexico Lobos @ Nevada Wolf Pack | Over 38.5</td><td>L</td><td>$-100.00</td></tr>
 <tr><td>2026-11-03</td><td>Buffalo Bulls @ Miami (OH) RedHawks | Over 45.5</td><td>W</td><td>$92.59</td></tr>
 </table></div>
-<p>Last scan: 2026-11-23; sources: ESPN scoreboard (DraftKings totals), BartTorvik (NCAAB efficiency/tempo), TeamRankings (NCAAF points per play).</p>
+<p>Last scan: 2026-11-24; sources: ESPN scoreboard (DraftKings totals), BartTorvik (NCAAB efficiency/tempo), TeamRankings (NCAAF points per play).</p>
 <div class='foot'>Snapshot only — verify in the book app before placing. You place every bet yourself; nothing here places a bet. Sources are public only; no DarkHorse data is used in this system. The 5.0-point (NCAAB) and 3.0-point (NCAAF) flag gaps are Chet's display choices, not Frank's claims.</div></body></html>
