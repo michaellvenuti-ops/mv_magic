@@ -84,7 +84,8 @@
    "pregame_total": 143.5,
    "alerted_at": "2026-11-24T14:28:02",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: UIC at Rice | Full Total (at half) Under 138.5 -110 | pace proj 126.0 (H1 63 x 2) vs live total 138.5 (gap -12.5, bar 5) | H1 63 | as of 14:28:02 ET"
+   "alert_detail": "PACE: UIC at Rice | Full Total (at half) Under 138.5 -110 | pace proj 126.0 (H1 63 x 2) vs live total 138.5 (gap -12.5, bar 5) | H1 63 | as of 14:28:02 ET",
+   "final": true
   },
   "401906806": {
    "matchup": "Oklahoma at Pitt",
@@ -97,7 +98,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-24T14:30:07",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: Oklahoma at Pitt | Full Total (at half) Under 139.5 -120 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 14:30:06 ET"
+   "alert_detail": "PACE: Oklahoma at Pitt | Full Total (at half) Under 139.5 -120 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 14:30:06 ET",
+   "final": true
   },
   "401917676": {
    "matchup": "Oregon St at San Francisco",
@@ -161,12 +163,15 @@
   "401920546": {
    "matchup": "North Dakota at Detroit Mercy",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 4.5,
    "fav_team": "North Dakota",
    "dog_team": "Detroit Mercy",
-   "pregame_total": 151.5
+   "pregame_total": 151.5,
+   "alerted_at": "2026-11-24T15:56:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PACE: North Dakota at Detroit Mercy | Full Total (at half) Under 157.5 -115 | pace proj 148.0 (H1 74 x 2) vs live total 157.5 (gap -9.5, bar 5) | H1 74 | as of 15:56:02 ET"
   },
   "401924267": {
    "matchup": "Long Beach St at Arkansas St",
@@ -183,7 +188,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 1.5,
    "fav_team": "Lindenwood",
    "dog_team": "New Haven",
    "pregame_total": 133.5
@@ -483,7 +488,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Siena",
    "dog_team": "Vermont",
    "pregame_total": 159.5
@@ -633,7 +638,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 18.5,
+   "spread": 17.5,
    "fav_team": "South Alabama",
    "dog_team": "Florida A&M",
    "pregame_total": 141.5
