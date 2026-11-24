@@ -33,3 +33,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: Illinois St at Tulsa | Full Total (at half) Over
 NEW IN-PLAY CBB: PACE: Providence at Arizona | Full Total (at half) Under 157.5 | pace proj 148.0 (H1 74 x 2) vs live total 157.5 (gap -9.5, bar 5) | H1 74 | as of 18:10:02 ET
 ## 2026-11-24 18:26:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: Kent State at Wyoming | Full Total (at half) Under 145.5 -120 | pace proj 140.0 (H1 70 x 2) vs live total 145.5 (gap -5.5, bar 5) | H1 70 | as of 18:26:02 ET
+## 2026-11-24 18:48:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: TRAILING FAVE: Queens at Wofford | Full Total (at half) Over 166.5 | pregame favorite Queens trails at half (Wofford leads); pace proj 148.0 vs live total 166.5 (gap -18.5) -- comeback-fave Over anyway | H1 74 | as of 18:48:02 ET
