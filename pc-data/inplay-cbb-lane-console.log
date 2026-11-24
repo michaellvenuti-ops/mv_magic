@@ -615,3 +615,84 @@ SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
 NO TRIGGER
 SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
 [2026-11-24 16:30:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:32:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:34:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:36:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:38:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:40:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NEW FLAG INP-013: PACE: New Haven at Lindenwood | Full Total (at half) Under 127.5 -115 | pace proj 116.0 (H1 58 x 2) vs live total 127.5 (gap -11.5, bar 5) | H1 58 | as of 16:42:01 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (fb5ea960fb7f)
+github: pushed pc-data/inplay-cbb-log.json (7cddefe32f7a)
+TRIGGER: PACE: New Haven at Lindenwood | Full Total (at half) Under 127.5 -115 | pace proj 116.0 (H1 58 x 2) vs live total 127.5 (gap -11.5, bar 5) | H1 58 | as of 16:42:01 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 16:42:05 ET] lane run: inplay_cbb_watch exit 0 in 5s -- 1 new alert(s) (Lindenwood at New Haven)
+[2026-11-24 16:42:06 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at a9c6e3e4ae8c5047ad32c52ffb192478e313711c but expected 7cddefe32f7afb28d97c78e4a0fbb4d74d027faa","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 16:42:11 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at 8527f0ea065ab71c405c1fb9fc2ddee09c4393a9 but expected 626ba7187953e9b73e2ea317d05054ab863b9650","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 16:42:11 ET] fast push gave up -- the regular 10-min sync is the backstop
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:44:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NEW FLAG INP-014: 2ND BITE: Arkansas St at Long Beach St | Full Total (at half) Over 186.5 | 1H total 99 cleared implied 1H line 79.75 by +19.2; pace proj 198.0 vs live total 186.5 -- take the Over again at the half | H1 99 | as of 16:46:01 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 1daee48da3d9bf424decba4dc9f4d394171c79c9 but expected 5f7ec17d3e05ac0e594c269b79d3c29c3e42dd32","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at 4a7b17dffe6344a167fcd3d793806e48b9d2632e but expected 6500c7904190263e8949c9ceb4aeaaf07e405330","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: pushed pc-data/inplay-cbb-log.json (2a064b8544c0)
+TRIGGER: 2ND BITE: Arkansas St at Long Beach St | Full Total (at half) Over 186.5 | 1H total 99 cleared implied 1H line 79.75 by +19.2; pace proj 198.0 vs live total 186.5 -- take the Over again at the half | H1 99 | as of 16:46:01 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 16:46:21 ET] lane run: inplay_cbb_watch exit 0 in 20s -- 1 new alert(s) (Long Beach St at Arkansas St)
+[2026-11-24 16:46:22 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at b26c0310c9ea53ca18af93646f7602d1b1af09c1 but expected 2a064b8544c0b79751aa31541bb6169898de70e2","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 16:46:26 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at 469159cd1c1cd0961f37ab99ca86f0bece7ae2ab but expected 402660023efb26382c0bdc0b4fbc1c0069ad785e","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 16:46:26 ET] fast push gave up -- the regular 10-min sync is the backstop
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:48:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:50:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:52:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:54:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:56:37 ET] lane run: inplay_cbb_watch exit 0 in 15s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 16:58:04 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:00:24 ET] lane run: inplay_cbb_watch exit 0 in 3s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:02:06 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:04:05 ET] lane run: inplay_cbb_watch exit 0 in 3s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:06:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:08:04 ET] lane run: inplay_cbb_watch exit 0 in 4s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:10:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP PSU Berks at Navy | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:12:01 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP PSU Berks at Navy | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 17:14:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
