@@ -21,3 +21,11 @@
 - 2026-11-24: Southern Utah Thunderbirds @ Florida International Panthers — first: Florida International Panthers (2PT, 0:15 in); lead changes 10; final 66-81
 - 2026-11-24: Vermont State Randolph Knights @ Stonehill Skyhawks — first: Stonehill Skyhawks (2PT, 0:06 in); lead changes 0; final 64-112
 - note: 3 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T17:05:51-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 1088 games through 2026-11-24
+- 2026-11-23: North Carolina A&T Aggies @ South Carolina State Bulldogs — first: North Carolina A&T Aggies (2PT, 0:46 in); lead changes 4; final 62-60
+- 2026-11-24: Ole Miss Rebels @ BYU Cougars — first: BYU Cougars (3PT, 0:11 in); lead changes 7; final 73-63
+- 2026-11-24: UIC Flames @ Rice Owls — first: UIC Flames (2PT, 1:37 in); lead changes 19; final 67-68
+- 2026-11-24: Oklahoma Sooners @ Pittsburgh Panthers — first: Oklahoma Sooners (2PT, 0:28 in); lead changes 3; final 68-79
+- 2026-11-24: San Francisco Dons @ Oregon State Beavers — first: Oregon State Beavers (2PT, 0:16 in); lead changes 0; final 73-87
+- 2026-11-24: App State Mountaineers @ Yale Bulldogs — first: App State Mountaineers (2PT, 0:57 in); lead changes 5; final 50-57
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
