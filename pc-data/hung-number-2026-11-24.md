@@ -1,4 +1,4 @@
-# Hung numbers — 2026-11-24 (scan 2026-11-24 13:52)
+# Hung numbers — 2026-11-24 (scan 2026-11-24 15:18)
 
 - Eagles vs Cowboys | Hard Rock | spread | value: dog | book 9.5 vs median 8.5 | div 1.0 
 - Mississippi State vs Ole Miss | FanDuel | spread | value: dog | book 19.5 vs median 18.5 | div 1.0 
