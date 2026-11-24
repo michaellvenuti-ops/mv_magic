@@ -64,7 +64,8 @@
    "pregame_total": 167.5,
    "alerted_at": "2026-11-24T13:50:23",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "TRAILING FAVE: Southern Utah at FIU | Full Total (at half) Over 166.5 -115 | pregame favorite FIU trails at half (Southern Utah leads); pace proj 158.0 vs live total 166.5 (gap -8.5) -- comeback-fave Over anyway | H1 79 | as of 13:50:22 ET"
+   "alert_detail": "TRAILING FAVE: Southern Utah at FIU | Full Total (at half) Over 166.5 -115 | pregame favorite FIU trails at half (Southern Utah leads); pace proj 158.0 vs live total 166.5 (gap -8.5) -- comeback-fave Over anyway | H1 79 | as of 13:50:22 ET",
+   "final": true
   },
   "401919850": {
    "matchup": "VTSU Randolph at Stonehill",
@@ -114,12 +115,15 @@
   "401921709": {
    "matchup": "Ole Miss at BYU",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Ole Miss",
    "dog_team": "BYU",
-   "pregame_total": 158.5
+   "pregame_total": 158.5,
+   "alerted_at": "2026-11-24T15:30:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "TRAILING FAVE: Ole Miss at BYU | Full Total (at half) Over 150.5 -115 | pregame favorite Ole Miss trails at half (BYU leads); pace proj 132.0 vs live total 150.5 (gap -18.5) -- comeback-fave Over anyway | H1 66 | as of 15:30:02 ET"
   },
   "401906853": {
    "matchup": "Tennessee at Maryland",
@@ -166,16 +170,16 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Arkansas St",
    "dog_team": "Long Beach St",
-   "pregame_total": 158.5
+   "pregame_total": 159.5
   },
   "401929035": {
    "matchup": "Lindenwood at New Haven",
    "date": "2026-11-24",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 2.5,
    "fav_team": "Lindenwood",
    "dog_team": "New Haven",
@@ -185,7 +189,7 @@
    "matchup": "Tulsa at Illinois St",
    "date": "2026-11-24",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
    "fav_team": "Tulsa",
    "dog_team": "Illinois St",
@@ -220,7 +224,7 @@
    "matchup": "Wyoming at Kent State",
    "date": "2026-11-24",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 9.5,
    "fav_team": "Wyoming",
    "dog_team": "Kent State",
@@ -261,7 +265,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "VMI",
    "dog_team": "S Indiana",
    "pregame_total": 142.5
@@ -386,7 +390,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.5,
    "fav_team": "Marist",
    "dog_team": "Bryant",
    "pregame_total": 130.5
@@ -429,7 +433,7 @@
    "spread": 16.5,
    "fav_team": "Chattanooga",
    "dog_team": "Delaware St",
-   "pregame_total": 145.5
+   "pregame_total": 144.5
   },
   "401920923": {
    "matchup": "Mount St Marys at Morgan St",
@@ -704,7 +708,7 @@
    "spread": 24.5,
    "fav_team": "Auburn",
    "dog_team": "Lipscomb",
-   "pregame_total": 157.5
+   "pregame_total": 158.5
   },
   "401911338": {
    "matchup": "Army at Air Force",
