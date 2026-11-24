@@ -11407,3 +11407,9 @@
 [2026-11-24 11:12:15 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-24 11:13:25 ET] promo_watch.py: OK in 70s — promo-watch: 11 listed, 0 new, 0 converter attempt(s).
 [2026-11-24 11:13:25 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 11:43:26 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 11:45:16 ET] odds_recorder.py: OK in 80s — SUMMARY: recorded 183 events (149 with odds), db total 319006 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 11:47:04 ET] dh_arbitrage.py: FAILED (exit 2) in 108s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 11:47:22 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 11:47:24 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Long Beach St. Arkansas St. Today 3:30 PM — Total — Over 157.5 Bet365 -115 ($105) / Under 158 ProphetX +108 ($95) — win+push at 158 — push +$91
+[2026-11-24 11:47:25 ET] syncing to GitHub (wide-builds banked new builds)
