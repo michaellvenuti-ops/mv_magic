@@ -36,14 +36,16 @@ RULES (all fire at halftime, once per game, first match wins):
      took on ~2-pt edges, but 1H is not active -- see above.)
   OVER TEAM tag/lift (BartTorvik proxy for KenPom -- KenPom is
   paywalled; the Total Projectors scan already uses BartTorvik):
-  a team with adjO rank <= 75 AND adjD rank >= 100 is an over team
-  (Santa Clara: KenPom offense 51, defense 133 of 365). When either
-  team in the game fits, the alert carries the OVER TEAM tag and the
-  PACE Over threshold drops 5 -> 2.5.
+  a team with adjO rank <= 75 AND adjD rank >= 90 is an over team
+  (Santa Clara: KenPom offense 51, defense 133 of 365; Torvik on
+  2026-11-24 gives adjO 70 / adjD 96, so the proxy defense bar is 90
+  rather than the spec's ~100 so the anchor team actually tags).
+  When either team in the game fits, the alert carries the OVER TEAM
+  tag and the PACE Over threshold drops 5 -> 2.5.
   Elite-offense note (Illinois 1H team-total Over -- "this team
   isn't a real team its a video game"): team totals are NOT on the
   SAO board, so no TT flag is possible; a top-30 adjO team still
-  qualifies for the OVER TEAM tag when its adjD is 100+.
+  qualifies for the OVER TEAM tag when its adjD is 90+ (Torvik proxy).
 
 NOT IMPLEMENTED (and why):
   - 1H game totals: no live 1H total line on any free public source
@@ -130,7 +132,11 @@ PACE_THRESHOLD = 5.0        # halftime pace gap (points) to flag
 PACE_THRESHOLD_OVER_TEAM = 2.5  # PACE Over bar when OVER TEAM tag applies
 SECOND_BITE_CLEAR = 5.0     # H1 points over implied 1H line (pregame/2)
 OVER_TEAM_ADJO_MAX = 75     # adjO rank <= 75 ...
-OVER_TEAM_ADJD_MIN = 100    # ... AND adjD rank >= 100
+OVER_TEAM_ADJD_MIN = 90     # ... AND adjD rank >= 90 on the TORVIK proxy.
+# (Spec said ~100 from KenPom; the anchor team Santa Clara is KenPom
+# def 133 but Torvik def 96 on 2026-11-24, so the proxy bar is 90 so
+# the team the rule was written about actually tags. Illinois adjO #1
+# / adjD #21 correctly does NOT tag -- elite O but good D.)
 
 
 def now_et():
@@ -373,7 +379,7 @@ def load_torvik_ranks():
 
 def over_team_tag(ranks, home_name, away_name):
     """True if either team fits the over-team profile (adjO rank
-    <= 75 AND adjD rank >= 100). Returns (tag_bool, detail_str)."""
+    <= 75 AND adjD rank >= 90, Torvik proxy). Returns (tag_bool, detail_str)."""
     details = []
     for nm in (home_name, away_name):
         r = ranks.get(norm_torvik(nm)) or {}
