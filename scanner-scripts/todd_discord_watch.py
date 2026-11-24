@@ -195,7 +195,7 @@ def _clean_team(s):
     return _LEADING_MARKET_WORDS_RE.sub("", s).strip()
 
 
-def is_records_update(text):
+def is_records_update(text, parsed=None):
     """True for Todd's season-records updates ('Cfb goes 0-0 for
     0.00 to move to 234-234 for -29.49 ...'), which are NOT plays:
     they name no game and no side, but parse_play() fabricates a
@@ -207,7 +207,99 @@ def is_records_update(text):
     t = " ".join(text.split())
     if not re.search(r"\bgoes\b.*\bto move to\b", t, re.I):
         return False
-    return parse_play(t).get("game") is None
+    if parsed is None:
+        parsed = parse_play(t)
+    return parsed.get("game") is None
+
+
+# ------------------------------------------------------------------ recap
+# guard (added 2026-11-24, after the watcher banked 5 commentary /
+# recap messages as fake plays in one morning -- all 5 cleaned by
+# hand afterwards). A no-game check alone does NOT catch recaps:
+# the BYU morning recap parsed a garbage game ('everyone byu vs the
+# half was exactly how u want') and a line (+11.5). So the guard is
+# three independent checks; ANY one skips the message (fail-safe:
+# when in doubt, alert -- a skipped real play is worse than one
+# false phone alert).
+#
+# (a) RECAP MARKERS -- positive matches on recap/commentary idiom.
+#     Measured on the 210-message history (Nov 20-23) + the 5 fakes:
+#     every marker below hits ZERO of the 56 gradeable back-derived
+#     real picks, so none of them can skip a real play on this corpus.
+# (b) MULTI-PICK + LENGTH -- a message that names 3+ distinct
+#     bet-like mentions AND runs 300+ chars is a recap/rant, not a
+#     play. Real plays max out at 2 mentions (two-piece splits and
+#     parlays) and 209 chars on this corpus; the BYU recap is 16
+#     mentions / 1,790 chars. The length gate is load-bearing: a
+#     real 3-team teaser ('Broncos -1.5, Dolphins +26.5, Ov34.5
+#     ravens, -130') has 4 mentions but is only 219 chars, so it
+#     still alerts. A short recap with 3 mentions and no markers
+#     would still alert -- accepted, fail-safe toward alerting.
+# (c) NO LINE AND NO PRICE -- after parsing, a message with neither
+#     a line nor a price carries nothing actionable to bet. Measured:
+#     0 of the 56 gradeable picks hit this (one back-derived pick,
+#     the Va Tech 1h team-total follow-up 'Oh I forgot to say risk
+#     .50 for .50 on the Va tech tt 1h over', has neither -- it is
+#     ungradeable by the model itself ('NO LINE STATED - cannot
+#     grade/fit') and is the one documented exception). A hard PRICE
+#     requirement was measured and REJECTED: 2 of the 57 back-derived
+#     picks lack a stated price (the Va Tech follow-up and a split
+#     second piece, 'ov155.5/157.5 n texas'), so price alone can
+#     never be the gate.
+
+_MENTION_RE = re.compile(
+    r"\b(?:ov|over|un|under)\s*\d+(?:\.\d+)?(?![hHqQ]\b)"
+    r"|\b(?:ov|over|un|under)\s+(?:1h|2h|tt|total)\b"
+    r"|\b(?:1h|2h|tt)\s+(?:ov|over|un|under)\b"
+    r"|\b(?:ml|moneyline)\b"
+    r"|\b[a-z][a-z .&'-]{1,20}?\s+[+-]\d+(?:\.\d+)?\b", re.I)
+
+_RECAP_MARKERS = [re.compile(p, re.I) for p in [
+    r"\b\d+-\d+\s+run\b",              # "26-1 run"
+    r"unit swing",
+    r"\bbad beats?\b",
+    r"gut wrenching",
+    r"\brecap\b",
+    r"that'?s \d+(?:\.\d+)?\b",        # tally counting: "that's 3/4/4.5"
+    r"\bshoulda\b",
+    r"deserved to lose",
+    r"\be+a+sy\s+W\b",                 # "easy W" / "eaaaasy W"
+    r"\bwe (?:lose|lost|win|won)\b",
+    r"\bwinners were\b",
+    r"\bi (?:lose|lost)\b",
+    r"\b(?:made the mistake|mistake by me|my mistake)\b",
+    r"let'?s hope",
+    r"\blast y(?:ea)?r\b",
+    r"\btally\b",
+    r"\bfor newbies\b",
+    r"mark this one down",             # result-talk complaint
+]]
+
+
+def mention_count(text):
+    """How many distinct bet-like mentions (a total, a team total,
+    a moneyline, a spread line) a message carries. A real play has
+    1, a two-piece split or parlay has 2; a recap lists many."""
+    return len(_MENTION_RE.findall(" ".join(text.split())))
+
+
+def is_recap_or_commentary(text, parsed=None):
+    """True when a Todd message is a recap / commentary / rant rather
+    than a new play. Returns (True, reason) or (False, ''). The
+    caller logs the reason. parsed is the parse_play() result for
+    the same text (parsed again here if not supplied)."""
+    t = " ".join(text.split())
+    if parsed is None:
+        parsed = parse_play(t)
+    for rx in _RECAP_MARKERS:
+        if rx.search(t):
+            return True, f"recap marker {rx.pattern!r}"
+    if mention_count(t) >= 3 and len(t) >= 300:
+        return True, (f"multi-pick recap: {mention_count(t)} mentions, "
+                      f"{len(t)} chars")
+    if parsed.get("line") is None and parsed.get("price") is None:
+        return True, "no line and no price"
+    return False, ""
 
 
 def parse_play(text):
@@ -222,7 +314,17 @@ def parse_play(text):
         half = "1st Half"
     elif "2nd half" in low or re.search(r"\b2h\b", low):
         half = "2nd Half"
-    is_total = bool(re.search(r"\b(over|under|total)\b", low))
+    # Attached total numbers: Todd writes "ov78.5", "un146.5", "Ov70.5"
+    # with no space, which the word-boundary total check below misses
+    # (added 2026-11-24: without this, most real plays parsed with
+    # line=None, and "@everyone un146.5 even Utah valley" parsed with
+    # NEITHER line nor price, so the recap guard would skip a real
+    # play). The (?![hHqQ]\b) keeps "ov 1h" from reading the "1" of
+    # "1h" as a total, and "un 3q" from reading the "3" of "3q".
+    attached_total = re.search(
+        r"\b(?:ov|over|un|under)\s*(\d+(?:\.\d+)?)(?![hHqQ]\b)", low)
+    is_total = bool(re.search(r"\b(over|under|total)\b", low)) \
+        or attached_total is not None
     is_ml = bool(re.search(r"\b(ml|moneyline)\b", low))
     if is_total:
         out["market"] = (half + " Total") if half else "Total"
@@ -252,11 +354,22 @@ def parse_play(text):
                 continue
             if 100 <= abs(v) <= 500:
                 price = v
-    # bare total: "Over 145.5" / "Under 78.5" (no sign on the number)
+    # bare total: "Over 145.5" / "Under 78.5" (no sign on the number),
+    # or attached: "ov78.5" / "un146.5" (see attached_total above).
     if line is None and is_total:
         m = re.search(r"\b(?:over|under)\s+(\d+(?:\.\d+)?)", t, re.I)
         if m:
             line = m.group(1)
+        elif attached_total is not None:
+            line = attached_total.group(1)
+    # "even" money: "@everyone un146.5 even Utah valley" states no
+    # numeric price; "even" right after the total line is even money
+    # (price 100). Narrow on purpose: a bare "even though" elsewhere
+    # in the message must not become a price.
+    if price is None and line is not None and is_total:
+        if re.search(r"\b(?:ov|over|un|under)\s*\d+(?:\.\d+)?\s+even\b",
+                     t, re.I):
+            price = 100
     # a signed line with no other market word is a spread
     if line is not None and out["market"] is None:
         out["market"] = "Spread"
@@ -267,9 +380,11 @@ def parse_play(text):
     # line. Moneyline: the team named before "ML".
     side = None
     if out["market"] and "Total" in out["market"]:
-        if re.search(r"\bover\b", low):
+        # "ov"/"un" attach to the number ("ov78.5", "un146.5") as well
+        # as standing alone as words.
+        if re.search(r"\b(?:ov|over)\b|\bov\d", low):
             side = "Over"
-        elif re.search(r"\bunder\b", low):
+        elif re.search(r"\b(?:un|under)\b|\bun\d", low):
             side = "Under"
     elif out["market"] == "Moneyline":
         m = re.search(r"([A-Za-z][A-Za-z .&'-]{2,30}?)\s+"
@@ -700,10 +815,15 @@ def handle_session_lost(state):
 
 def handle_new_play(msg, state):
     text = msg.get("text", "")
-    if is_records_update(text):
+    parsed = parse_play(text)
+    if is_records_update(text, parsed):
         log(f"skipped records update (not a play): {text[:100]}")
         return
-    parsed = parse_play(text)
+    skip, reason = is_recap_or_commentary(text, parsed)
+    if skip:
+        log(f"skipped recap/commentary (not a play) [{reason}]: "
+            f"{text[:100]}")
+        return
     play, md_path = bank_play(parsed, msg["message_id"],
                               msg.get("posted"))
     state["plays_logged"] = state.get("plays_logged", 0) + 1
