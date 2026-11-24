@@ -112,7 +112,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-24T14:56:03",
    "alert_rule": "2ND BITE",
-   "alert_detail": "2ND BITE: San Francisco at Oregon St | Full Total (at half) Over 160.5 -110 | 1H total 83 cleared implied 1H line 74.25 by +8.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 14:56:02 ET"
+   "alert_detail": "2ND BITE: San Francisco at Oregon St | Full Total (at half) Over 160.5 -110 | 1H total 83 cleared implied 1H line 74.25 by +8.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 14:56:02 ET",
+   "final": true
   },
   "401921709": {
    "matchup": "Ole Miss at BYU",
@@ -130,22 +131,28 @@
   "401906853": {
    "matchup": "Tennessee at Maryland",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Tennessee",
    "dog_team": "Maryland",
-   "pregame_total": 148.5
+   "pregame_total": 148.5,
+   "alerted_at": "2026-11-24T16:00:02",
+   "alert_rule": "PACE",
+   "alert_detail": "PACE: Tennessee at Maryland | Full Total (at half) Under 149.5 | pace proj 140.0 (H1 70 x 2) vs live total 149.5 (gap -9.5, bar 5) | H1 70 | as of 16:00:02 ET"
   },
   "401915941": {
    "matchup": "Miami at TCU",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 5.5,
    "fav_team": "Miami",
    "dog_team": "TCU",
-   "pregame_total": 153.5
+   "pregame_total": 153.5,
+   "alerted_at": "2026-11-24T16:06:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PACE: Miami at TCU | Full Total (at half) Under 154.5 | pace proj 148.0 (H1 74 x 2) vs live total 154.5 (gap -6.5, bar 5) | H1 74 | as of 16:06:02 ET"
   },
   "401929285": {
    "matchup": "App State at Yale",
