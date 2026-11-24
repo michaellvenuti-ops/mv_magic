@@ -55,3 +55,13 @@ LEAD: Caesars on Notre Dame @ Syracuse | 2026-11-23 (spread)
 ## 2026-11-23T19:04:32-05:00 — pack move, never credited: UTEP @ Northern Illinois | 2026-11-23 spread (FanDuel, bet365)
 ## 2026-11-23T19:04:32-05:00 — no-follow: bet365 Washington @ Oregon | 2026-11-23 spread (only 1 followed)
 ## 2026-11-23T19:04:32-05:00 — 82 games, 0 leads credited, 12 started games skipped
+## 2026-11-23T20:44:28-05:00 — no-follow: DraftKings North Dakota State @ San Jose State | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T20:44:28-05:00 — pack move, never credited: Texas @ Texas A&M | 2026-11-23 spread (Caesars, DraftKings)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi Marshall @ Louisiana-Monroe | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi Coastal Carolina @ James Madison | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi Army @ Rice | 2026-11-23 spread (only 1 followed)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi Kansas State @ Iowa State | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T20:44:28-05:00 — pack move, never credited: Liberty @ Missouri State | 2026-11-23 spread (DraftKings, Fanatics)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi UCF @ Colorado | 2026-11-23 spread (only 1 followed)
+## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi South Carolina @ Clemson | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T20:44:29-05:00 — 82 games, 0 leads credited, 13 started games skipped
