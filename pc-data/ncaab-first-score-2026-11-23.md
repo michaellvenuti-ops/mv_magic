@@ -20,3 +20,10 @@
 - 2026-11-23: Ole Miss Rebels @ Clemson Tigers — first: Ole Miss Rebels (2PT, 0:33 in); lead changes 0; final 82-62
 - 2026-11-23: Ecclesia Royals @ Grambling Tigers — first: Grambling Tigers (2PT, 0:20 in); lead changes 4; final 45-126
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T19:07:39-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1047 games through 2026-11-23
+- 2026-11-23: Middle Tennessee Blue Raiders @ Southern Illinois Salukis — first: Southern Illinois Salukis (2PT, 0:13 in); lead changes 9; final 77-76
+- 2026-11-23: William & Mary Tribe @ IU Indianapolis Jaguars — first: IU Indianapolis Jaguars (2PT, 0:34 in); lead changes 7; final 87-82
+- 2026-11-23: Tulane Green Wave @ Georgia State Panthers — first: Georgia State Panthers (2PT, 2:21 in); lead changes 0; final 63-73
+- 2026-11-23: Yale Bulldogs @ Belmont Bruins — first: Belmont Bruins (3PT, 1:35 in); lead changes 2; final 60-68
+- 2026-11-23: San Francisco Dons @ Nevada Wolf Pack — first: San Francisco Dons (2PT, 0:52 in); lead changes 3; final 62-71
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
