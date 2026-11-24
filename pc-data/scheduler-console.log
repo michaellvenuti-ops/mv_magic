@@ -11570,3 +11570,23 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-24 17:40:57 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 79s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
 [2026-11-24 17:40:59 ET] wide_builds.py: OK in 1s — NEW BUILD: NHL VAN Canucks DET Red Wings Nov-25 7:30 PM — Total — Over 6 Caesars -125 ($101) / Under 6.5 DraftKings -120 ($99) — win+push at 6 — push +$82.50, m
 [2026-11-24 17:40:59 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 18:10:59 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 18:12:49 ET] dh_game_middles.py: OK in 109s — GAME MIDDLE: NCAAB Florida A&M South Alabama Today 8:00 PM / Today 8:00 PM / table / Alt Total Under 144.5 / Alt Total Over 144 / table | BetRivers | Bet365 — w
+[2026-11-24 18:13:53 ET] dh_nhl_totals_middles.py: OK in 64s — NHL TOTAL MIDDLE: NHL NY Rangers BUF Sabres Nov-25 7:00 PM / Nov-25 7:00 PM / table / Total Under 6.5 / Total Over 6 / table | DraftKings | BetMGM — window 0.5 
+[2026-11-24 18:16:55 ET] dh_key_number_middles.py: OK in 183s — key-number-middles: 339 basketball rows excluded (football-only rule).
+[2026-11-24 18:19:59 ET] dh_basketball_key_middles.py: OK in 184s — basketball-key-middles: no new basketball middles.
+[2026-11-24 18:20:42 ET] hung_number.py: OK in 42s — HUNG NUMBER: South Carolina vs Clemson — Hard Rock moneyline South Carolina value South Carolina (43.5 vs median 70.1)
+[2026-11-24 18:20:47 ET] rlm.py: OK in 6s
+[2026-11-24 18:20:52 ET] leader_follower.py: OK in 5s — LEADER ALERT: bet365 reached 3 leads in 14 days. Honesty note: board display timing is not proof of who truly moved first.
+[2026-11-24 18:20:56 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 18:22:02 ET] dh_prop_middles.py: OK in 67s — prop-middles: no new/changed qualifying middles.
+[2026-11-24 18:23:58 ET] dh_sog_middles.py: OK in 115s — - 0 deliverables this run
+[2026-11-24 18:24:09 ET] dh_team_total_middles.py: OK in 12s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 18:24:11 ET] nfl_first_score.py: OK in 2s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 18:24:12 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 18:24:14 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 18:24:19 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 6 new, 2 unverified, 1094 total tallied.
+[2026-11-24 18:24:20 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 18:24:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 18:24:23 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-24 18:24:23 ET] syncing to GitHub (regular 10-minute sync)
