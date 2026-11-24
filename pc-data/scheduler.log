@@ -11183,3 +11183,26 @@
 [2026-11-23 18:18:05 ET] steam_side.py: OK in 9s — steam-side: 69 games, no new flags (silent).
 [2026-11-23 18:19:17 ET] dh_prop_middles.py: FAILED (exit 2) in 72s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
 [2026-11-23 18:19:17 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-23 18:49:20 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-23 18:51:12 ET] odds_recorder.py: OK in 80s — SUMMARY: recorded 155 events (104 with odds), db total 317428 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-23 18:52:39 ET] dh_arbitrage.py: FAILED (exit 2) in 87s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-23 18:53:55 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 76s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-23 18:54:00 ET] wide_builds.py: OK in 4s — wide_builds: 12 qualifying builds, 0 NEW (banked wide-builds-2026-11-23.md)
+[2026-11-23 18:56:40 ET] dh_game_middles.py: FAILED (exit 2) in 160s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-23 19:00:22 ET] dh_key_number_middles.py: FAILED (exit 2) in 222s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 19:03:44 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 202s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-23 19:04:23 ET] hung_number.py: OK in 39s — HUNG NUMBER: South Carolina vs Clemson — Hard Rock moneyline South Carolina value South Carolina (43.5 vs median 68.3)
+[2026-11-23 19:04:28 ET] rlm.py: OK in 5s
+[2026-11-23 19:04:32 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-23 19:04:36 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-23 19:05:53 ET] dh_prop_middles.py: FAILED (exit 2) in 78s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-23 19:07:33 ET] dh_sog_middles.py: FAILED (exit 2) in 99s — sog-middles: Market Type switch did not flip — relying on the in-code market check.
+[2026-11-23 19:07:34 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Green Bay 20.5/24.5 sits at -2.6c vs +EV
+[2026-11-23 19:07:35 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 161 total tallied.
+[2026-11-23 19:07:36 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 236 total tallied.
+[2026-11-23 19:07:37 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 369 total tallied.
+[2026-11-23 19:07:39 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 5 new, 2 unverified, 1047 total tallied.
+[2026-11-23 19:07:40 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 1 unverified, 820 total tallied.
+[2026-11-23 19:07:41 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-23; skipping.
+[2026-11-23 19:07:43 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 6 game(s) refreshed, 0 deliverable change(s).
+[2026-11-23 19:07:43 ET] syncing to GitHub (regular 10-minute sync)
