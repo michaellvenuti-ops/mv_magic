@@ -11522,3 +11522,9 @@
 [2026-11-24 17:05:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
 [2026-11-24 17:05:55 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-24 17:05:55 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 17:35:55 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 17:38:10 ET] odds_recorder.py: OK in 105s — SUMMARY: recorded 183 events (140 with odds), db total 320104 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 17:39:38 ET] dh_arbitrage.py: FAILED (exit 2) in 88s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 17:40:57 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 79s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 17:40:59 ET] wide_builds.py: OK in 1s — NEW BUILD: NHL VAN Canucks DET Red Wings Nov-25 7:30 PM — Total — Over 6 Caesars -125 ($101) / Under 6.5 DraftKings -120 ($99) — win+push at 6 — push +$82.50, m
+[2026-11-24 17:40:59 ET] syncing to GitHub (wide-builds banked new builds)
