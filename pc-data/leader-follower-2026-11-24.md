@@ -15,3 +15,7 @@
 ## 2026-11-24T13:53:40-05:00 — no-follow: Kalshi Kansas @ Oklahoma State | 2026-11-24 spread (only 0 followed)
 ## 2026-11-24T13:53:40-05:00 — pack move, never credited: Auburn @ Alabama | 2026-11-24 spread (Caesars, DraftKings, Fanatics, Kalshi, bet365)
 ## 2026-11-24T13:53:40-05:00 — 85 games, 0 leads credited
+## 2026-11-24T15:20:57-05:00 — pack move, never credited: Miami (OH) @ Western Michigan | 2026-11-24 spread (Caesars, DraftKings)
+## 2026-11-24T15:20:57-05:00 — no-follow: Kalshi Tulsa @ UTSA | 2026-11-24 total (only 0 followed)
+## 2026-11-24T15:20:57-05:00 — no-follow: Kalshi Louisiana @ Georgia State | 2026-11-24 spread (only 0 followed)
+## 2026-11-24T15:20:59-05:00 — 85 games, 0 leads credited
