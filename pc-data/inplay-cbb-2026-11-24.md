@@ -9,3 +9,5 @@ NEW IN-PLAY CBB: PACE: Belmont at Akron | Full Total (at half) Under 138.5 -105 
 NEW IN-PLAY CBB: TRAILING FAVE: Southern Utah at FIU | Full Total (at half) Over 166.5 -115 | pregame favorite FIU trails at half (Southern Utah leads); pace proj 158.0 vs live total 166.5 (gap -8.5) -- comeback-fave Over anyway | H1 79 | as of 13:50:22 ET
 ## 2026-11-24 14:28:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: UIC at Rice | Full Total (at half) Under 138.5 -110 | pace proj 126.0 (H1 63 x 2) vs live total 138.5 (gap -12.5, bar 5) | H1 63 | as of 14:28:02 ET
+## 2026-11-24 14:30:07 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Oklahoma at Pitt | Full Total (at half) Under 139.5 -120 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 14:30:06 ET
