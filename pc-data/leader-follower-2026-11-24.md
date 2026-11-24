@@ -19,3 +19,14 @@
 ## 2026-11-24T15:20:57-05:00 — no-follow: Kalshi Tulsa @ UTSA | 2026-11-24 total (only 0 followed)
 ## 2026-11-24T15:20:57-05:00 — no-follow: Kalshi Louisiana @ Georgia State | 2026-11-24 spread (only 0 followed)
 ## 2026-11-24T15:20:59-05:00 — 85 games, 0 leads credited
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Miami (OH) @ Western Michigan | 2026-11-24 spread (FanDuel, Kalshi, bet365)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Kent State @ Eastern Michigan | 2026-11-24 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: West Virginia @ Utah | 2026-11-24 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Kalshi, bet365)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Central Michigan @ Ball State | 2026-11-24 total (BetMGM, Kalshi)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Florida Atlantic @ East Carolina | 2026-11-24 total (Fanatics, Kalshi)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Marshall @ Louisiana-Monroe | 2026-11-24 spread (FanDuel, bet365)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Liberty @ Missouri State | 2026-11-24 spread (FanDuel, bet365)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: South Carolina @ Clemson | 2026-11-24 spread (Fanatics, bet365)
+## 2026-11-24T18:20:51-05:00 — pack move, never credited: Auburn @ Alabama | 2026-11-24 spread (DraftKings, bet365)
+## 2026-11-24T18:20:52-05:00 — 85 games, 1 leads credited
+LEAD: bet365 on Kent State @ Eastern Michigan | 2026-11-24 (spread)
