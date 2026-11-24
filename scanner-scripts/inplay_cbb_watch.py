@@ -78,7 +78,12 @@ $100-flat paper, graded next morning by grade_inplay_cbb.py), written
 to the dated delivery file data/inplay-cbb-YYYY-MM-DD.md (pushed to
 GitHub immediately, one retry), and pushed to ntfy instantly (Title
 + Click headers; _latin1_safe on the Title -- the em-dash bug that
-killed every Todd push until 2026-11-24). Runs as a single poll per
+killed every Todd push until 2026-11-24). The LOG is also pushed to
+GitHub immediately on every new play (push_log_file) -- the regular
+sync cannot be relied on for it: it pushes ~1,146 files per run at
+~1.5s each (~29 min) and the scheduler kills it at 30 min, so
+tier-3 tail files starve; pc-data/todd-picks-log.json 404s on GitHub
+for exactly this reason (found 2026-11-24). Runs as a single poll per
 invocation under its own 2-minute lane task (pc-inplay-cbb-lane ->
 inplay_cbb_lane.py), like the upset watch lane.
 
@@ -471,6 +476,31 @@ def push_delivery_file(md_path):
     return ok
 
 
+def push_log_file():
+    """Push the tracker log to GitHub IMMEDIATELY on every new play.
+    The regular sync CANNOT be relied on for this file (found
+    2026-11-24: pc-data/todd-picks-log.json 404s on GitHub -- the
+    sync pushes ~1,146 files per run at ~1.5s each, ~29 min, and the
+    scheduler kills it at 30 min, so tier-3 tail files like
+    todd-picks-log.json starve whenever a run is slow or dies early;
+    the Todd log was born Nov 24 09:15 and no sync run since has
+    lived long enough to reach it). The morning grader reads the log
+    from GitHub, so without this push it would see nothing. One
+    retry after 15s; failure is quiet -- the sync remains the
+    backstop."""
+    ok, detail = put_file("pc-data/inplay-cbb-log.json", LOG_PATH,
+                          f"In-play CBB log {today_str()}")
+    if ok:
+        log(f"github: pushed pc-data/inplay-cbb-log.json ({detail})")
+        return True
+    log(f"github: log push failed ({detail}), retrying once in 15s")
+    time.sleep(15)
+    ok, detail = put_file("pc-data/inplay-cbb-log.json", LOG_PATH,
+                          f"In-play CBB log {today_str()}")
+    log(f"github: log retry {'ok (' + detail + ')' if ok else 'failed (' + detail + ')'}")
+    return ok
+
+
 # ------------------------------------------------------------------ espn
 
 def parse_game(event):
@@ -732,6 +762,7 @@ def main():
                     f"ntfy={'sent' if ok else 'FAILED'}")
                 triggers.append(f"TRIGGER: {flag['raw_text']}")
                 push_delivery_file(md_path)
+                push_log_file()
     # Prune games from before yesterday (keeps the file small; finals
     # stay out of future checks either way).
     cutoff = (now_et().date().isoformat())
