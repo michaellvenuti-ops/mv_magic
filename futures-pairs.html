@@ -26,50 +26,64 @@ details{border:1px solid #30363d;border-radius:10px;padding:10px 14px;margin-top
 details summary{cursor:pointer;font-weight:700;font-size:16px}
 </style></head><body>
 <h1>Futures Pairs (Arb Watch)</h1>
-<div class="sub">Latest scan list: futures-pairs-2026-11-23.md · page built 2026-11-24 08:50 ET</div>
+<div class="sub">Latest scan list: futures-pairs-2026-11-24.md · page built 2026-11-24 09:50 ET</div>
 
-<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-11-23 (09:24 ET run; No prices read 09:30 ET)</h2>
+<div class='note'>Performance: not graded yet — first grades land the morning after the first delivered items finish.</div><h2>Results</h2><div class='wrap'><table><tr><th>Play</th><th>Result</th><th>$ ($100 unit)</th></tr><tr><td colspan='3'>No results yet — first grades land the morning after the first delivered items finish.</td></tr></table></div><details><summary>Full scan log</summary><h2>Futures pairs scan — 2026-11-24 (09:24 ET run; No prices read 09:28–09:30 ET)</h2>
 <h3>Read times and sources</h3>
 <ul>
-<li>Book prices: FRESH — <code>futures-board-2026-11-23.json</code> (pulled ~09:12 ET). Stale cells were EXCLUDED from all pairing math (Super Bowl: Buccaneers Caesars +9,000, Patriots BetMGM +25,000; MVP: Mahomes Caesars +900, Gibbs Bet365 +2,500, Caleb Williams FanDuel +12,500, Kirk Cousins DraftKings/Caesars +10,000, Stafford Caesars +15,000, Bryce Young BetMGM/Caesars +50,000, Daniels DraftKings +20,000, Bo Nix Caesars +15,000; NBA: Timberwolves Caesars +1,000, Magic Caesars +15,000; Stanley Cup: Avalanche Caesars +1,000, Golden Knights Caesars +1,200, Lightning Caesars +800, Mammoth Caesars +2,500, Capitals DraftKings +1,800 / Hard Rock +1,750, Senators Caesars +5,000, Bruins Caesars +2,500, Sabres Caesars +3,000, Kings BetMGM +12,500 / Caesars +10,000; Heisman: Toney DraftKings +1,250, Chambliss DraftKings +1,300, Maiava DraftKings +1,750, Sellers DraftKings +4,400, Bachmeier DraftKings +5,600, Dampier DraftKings +7,200).</li>
-<li>Exchange No prices: live browser reads Nov 23, 2026, 09:30 ET (1 browser task, 2 prices), no sign-in, quoted No-button prices only, none derived.</li>
+<li>Book prices: FRESH — <code>futures-board-2026-11-24.json</code> (pulled ~09:11 ET). Stale cells were EXCLUDED from all pairing math (Super Bowl: Buccaneers Caesars +9,000, Patriots BetMGM +25,000; MVP: Burrow Caesars +110 / FanDuel +140, Gibbs Bet365 +3,000, Caleb Williams FanDuel +12,500, Daniels DraftKings +10,000, Cousins DraftKings +15,000, Stafford Caesars +20,000, Bryce Young BetMGM/Caesars +50,000, Nix Caesars +15,000; NBA: Timberwolves Caesars +1,000, Magic Caesars +15,000; Stanley Cup: Avalanche Caesars +1,000, Golden Knights Caesars +1,200, Lightning Caesars +800, Mammoth Caesars +2,500, Capitals DraftKings +1,800 / Hard Rock +1,750, Senators Caesars +5,000, Bruins Caesars +2,500, Sabres Caesars +3,000, Kings BetMGM +10,000 / Caesars +10,000, Ducks Caesars +5,000; Heisman: Toney DraftKings +1,250, Chambliss DraftKings +1,300, Maiava DraftKings +1,750, Sellers DraftKings +4,400, Bachmeier DraftKings +5,600, Dampier DraftKings +7,200, Lopez DraftKings +40,000).</li>
+<li>Exchange No prices: live browser reads Nov 24, 2026, 09:28–09:30 ET (1 browser task, 5 prices), no sign-in, quoted No-button prices only, none derived (in each case Yes + No summed to 101, not 100 — the spread).</li>
 </ul>
-<p>  - Wild (Stanley Cup): Kalshi No 88¢ (Yes 13¢) — kalshi.com/markets/kxnhl/stanley-cup; Polymarket US No 87% (Yes 14%) — polymarket.us/event/nhl-champ-2027-06-18-w. NOTE: Polymarket.com showed a different book for the same event (Wild Yes 11.1% / No 89.0%) — figures above are from Polymarket US (.us) as requested. Kalshi live Yes 13¢ vs 14% on the board — board Yes slightly stale; the live No is what decides the pair.</p>
+<p>  - Patrick Mahomes (NFL MVP): Kalshi No 92¢ (Yes 9¢) — kalshi.com/markets/kxnflmvp/ap-pro-football-regular-season-mvp; Polymarket US No 92% (Yes 9%) — polymarket.us/event/nfl-mvp-2027-02-11-w.</p>
+<p>  - Minnesota Wild (Stanley Cup): Kalshi No 88¢ (Yes 13¢) — kalshi.com/markets/kxnhl/stanley-cup; Polymarket US No 88% (Yes 13%) — polymarket.us/event/nhl-champ-2027-06-18-w.</p>
+<p>  - Darian Mensah (Heisman): Kalshi No 95¢ (Yes 6¢, chance shown 5%) — kalshi.com/markets/kxheisman/heisman-trophy-winner.</p>
 <ul>
-<li>Scope note: screened all 5 markets by board Yes% (an arb needs book implied &lt; Yes − 3, since No ≈ 100 − Yes with a ~1pt spread) and read live No prices only for the one team within reach of the bar: Wild (best book BetRivers +1000, 9.09% implied; board Yes 14% both exchanges). No other team was within 2pts of the bar, so no other arb could plausibly exist. Gap flags use board Yes% and need no No read.</li>
-<li>Dedupe: <code>arbitrage-state.json</code> and <code>kalshi-poly-arb-state.json</code> contain no futures outright market/team overlaps (grep for &quot;Wild&quot; returns nothing in either). No pair skipped on that ground.</li>
-<li>Precedent kept: one operative pair per team+exchange (best book). Wild +1000 is BetRivers only (sole best book; Bet365/Caesars/FanDuel all +900).</li>
+<li>Scope note: screened all 5 markets by board Yes% (an arb needs book implied &lt; Yes − 3, since No ≈ 100 − Yes with a ~1pt spread) and read live No prices only for the three teams within reach of the bar: Mahomes, Wild, Mensah. No other team was within 2pts of the bar, so no other arb could plausibly exist. Gap flags use board Yes% and need no No read.</li>
+<li>Dedupe: <code>arbitrage-state.json</code> and <code>kalshi-poly-arb-state.json</code> contain no futures outright market/team overlaps (grep for Mahomes / Wild / Mensah returns nothing in either). No pair skipped on that ground.</li>
+<li>Precedent kept: one operative pair per team+exchange (best book). Burrow&#x27;s best book is BetMGM −105 (Caesars +110 / FanDuel +140 are stale-flagged and excluded).</li>
 </ul>
-<h3>DELIVERABLES — 1 arb pair (re-qualified after going dead); no new price-gap flags</h3>
+<h3>DELIVERABLES — 0 arb pairs; 2 NEW price-gap flags</h3>
 <h4>Arb pairs (sorted by profit % desc)</h4>
-<ol>
-<li><b>Stanley Cup 2026-27 — Minnesota Wild — RE-QUALIFIED (Polymarket US)</b></li>
-</ol>
-<p>   - Leg 1: BetRivers +1000 — $1,000 stake</p>
-<p>   - Leg 2: Polymarket US No 87% — $9,570 stake</p>
-<p>   - Guaranteed profit: <b>$430 (4.07% of $10,570 staked)</b> — identical under both outcomes.</p>
-<p>   - Change: was DEAD Nov 22 (Poly No 89.3%, combined 97.63%); today Poly No 87% and the book leg shortened +1100 → +1000, combined 96.09%. Book leg from this morning&#x27;s board (fresh, pulled ~09:12 ET).</p>
-<p>   - ⚠️ Verify BetRivers +1000 live before placing. The Kalshi side of the same pair is dead today (No 88¢) — see below.</p>
+<p>None qualify.</p>
 <h4>Price gaps — not locks</h4>
-<p>None new. Leavitt/Polymarket +5.25 unchanged — see below.</p>
+<ol>
+<li><b>NFL MVP 2026 — Joe Burrow — NEW (Kalshi)</b></li>
+</ol>
+<p>   - Best book: BetMGM −105 — 51.22% implied</p>
+<p>   - Kalshi Yes: 36% — gap <b>+15.22 points</b> (book much shorter than the exchange)</p>
+<p>   - Price gap — not a lock: one leg alone is not a hedge. Note the books are split on Burrow — the rest of the book field is minus-money, and Caesars +110 / FanDuel +140 are flagged stale/off-market. Michael judges this himself.</p>
+<ol>
+<li><b>NFL MVP 2026 — Joe Burrow — NEW (Polymarket US)</b></li>
+</ol>
+<p>   - Best book: BetMGM −105 — 51.22% implied</p>
+<p>   - Polymarket US Yes: 36% — gap <b>+15.22 points</b></p>
+<p>   - Price gap — not a lock: same caveat as above.</p>
 <h3>Pairs still qualifying but NOT re-delivered (unchanged)</h3>
 <ul>
-<li>Heisman Trophy 2026 — Sam Leavitt — DraftKings / Polymarket US gap +5.25 (unchanged; book +1500, Yes 1%). last_seen updated to 2026-11-23. NOTE: the same DK +1500 cell was flagged stale/off-market on the Nov 15 board; it carries no stale flag on today&#x27;s board — verify live before judging. (Kalshi shows no Leavitt cell today, so the Kalshi-keyed gap entry was not seen this run; last_seen stays 2026-11-21.)</li>
+<li>Heisman Trophy 2026 — Sam Leavitt — DraftKings / Kalshi gap +5.25 (unchanged; book +1500, Yes 1%). last_seen updated to 2026-11-24.</li>
+<li>Heisman Trophy 2026 — Sam Leavitt — DraftKings / Polymarket US gap +5.25 (unchanged; book +1500, Yes 1%). last_seen updated to 2026-11-24. NOTE: the same DK +1500 cell was flagged stale/off-market on the Nov 15 board; it carries no stale flag on today&#x27;s board — verify live before judging.</li>
 </ul>
 <h3>Pairs that NO LONGER QUALIFY (kept in state, last_seen unchanged, not delivered)</h3>
 <ul>
-<li>Stanley Cup 2026-27 — Wild — BetRivers / Kalshi: Kalshi No 85¢ → 88¢ (live Yes 13¢ vs 14% board) → combined 97.09% — below bar. Old figures kept ($800, 7.14%).</li>
-<li>Stanley Cup 2026-27 — Wild — Bet365 / Kalshi: Kalshi No 85¢ → 88¢ → combined 98.00% — below bar. Old figures kept ($500, 5.26%).</li>
-<li>NFL MVP 2026 — Trevor Lawrence — BetMGM / Kalshi gap: best book now Bet365 +4000 (2.44%), Kalshi Yes 3%, gap −0.56 — below the 5pt bar. Old figures kept.</li>
-<li>Heisman Trophy 2026 — Jeremiah Smith — Caesars / Polymarket US and Caesars / Kalshi: book leg now FanDuel −425 (80.95% implied; Caesars −500 yesterday) vs exchange Yes 77% — No would need to be under ~16% to clear the bar. Dead by book leg; no live No read taken this run (Smith not in No-read scope). Old figures kept.</li>
+<li>Stanley Cup 2026-27 — Wild — BetRivers / Polymarket US: Poly No 87% → 88% (live Yes 13%) → combined 97.09%, profit 2.996% — just under the 3% bar. Was re-qualified yesterday at $430, 4.07%. Old figures kept.</li>
+<li>Stanley Cup 2026-27 — Wild — BetRivers / Kalshi: Kalshi No 85¢ → 88¢ (live Yes 13¢) → combined 97.09% — below bar. Old figures kept ($800, 7.14%).</li>
+<li>Stanley Cup 2026-27 — Wild — Bet365 / Kalshi: Kalshi No 88¢ → combined 98.00% — below bar. Old figures kept ($500, 5.26%).</li>
+<li>Heisman Trophy 2026 — Darian Mensah — DraftKings / Polymarket US: best book now FanDuel +2500 (3.85%), DK +600 no longer best; approx combined ~98.85% — below bar. Old figures kept.</li>
+<li>Heisman Trophy 2026 — CJ Carr — BetMGM / Kalshi, BetMGM / Polymarket US, FanDuel / Kalshi, FanDuel / Polymarket US gaps: best book now +5000 (1.96% implied), exchange Yes 1% → gap +0.96 — below the 5pt bar. Old figures kept.</li>
+<li>NFL MVP 2026 — Josh Allen — DraftKings / Kalshi, Caesars / Polymarket US, DraftKings / Polymarket US gaps: best book now +1000 (9.09% implied), exchange Yes 10% → gap −0.91 — below the 5pt bar. Old figures kept.</li>
+<li>NFL MVP 2026 — Brock Purdy — DraftKings / Kalshi, DraftKings / Polymarket US gaps: best book now +120 (45.45% implied), exchange Yes 42%/43% → gaps +3.45/+2.45 — below the 5pt bar. Old figures kept.</li>
+<li>NFL MVP 2026 — Caleb Williams — FanDuel / Kalshi, FanDuel / Polymarket US gaps: best book now +10000 (0.99% implied), exchange Yes 2% → gap −1.01 — below the 5pt bar. Old figures kept.</li>
+<li>Heisman Trophy 2026 — Jeremiah Smith — Caesars / Polymarket US and Caesars / Kalshi: book leg now FanDuel −425 (80.95% implied; Caesars −475) vs exchange Yes 76% — No would need to be under ~16% to clear the bar. Dead by book leg; no live No read taken this run (Smith not in No-read scope). Old figures kept.</li>
 </ul>
 <h3>Arb pairs verified today but NOT delivered (below the 3% bar)</h3>
 <ul>
-<li>Stanley Cup 2026-27 — Wild — Bet365 / Polymarket US No 87% → combined 97.00% exactly — at the bar, not over 3%. Not flagged. (Same No leg as the delivered BetRivers pair at a shorter book price.)</li>
-<li>Stanley Cup 2026-27 — Wild — BetRivers / Kalshi No 88¢ → combined 97.09%; Bet365 / Kalshi No 88¢ → 98.00%. Both below bar (see above).</li>
-<li>All other state pairs: screened below bar via board Yes% (see scope note) or dead by book leg (Smith above). No state pair improved by ≥ 1pt today other than the delivered re-qualification.</li>
+<li>NFL MVP 2026 — Patrick Mahomes — BetMGM / Kalshi No 92¢ → combined 97.88%, profit 2.16%; BetMGM / Polymarket US No 92% → same 97.88%. Both below bar.</li>
+<li>Stanley Cup 2026-27 — Wild — BetRivers / Kalshi No 88¢ → combined 97.09% (profit 2.996%); Bet365 / Kalshi No 88¢ → 98.00%; Bet365 / Polymarket US No 88% → 98.00%. All below bar (see above).</li>
+<li>Heisman Trophy 2026 — Darian Mensah — FanDuel / Kalshi No 95¢ → combined 98.85%, profit 1.17%. Below bar.</li>
+<li>Heisman Trophy 2026 — Malachi Toney — DraftKings / Polymarket US: DK +1250 flagged stale on today&#x27;s board — no operative book price, so no gap computed; last_seen stays 2026-11-19.</li>
+<li>All other state pairs: screened below bar via board Yes% (see scope note) or dead by book leg (Smith above). No state pair improved by ≥ 1pt today.</li>
 </ul>
 <h3>Voice note</h3>
-<p><code>~/workspace/your_files/futures-pairs-2026-11-23.mp3</code> (voice avocado_v2:qvd_00052) — covers the re-qualified Wild/Polymarket arb, the dead Kalshi side, and the verify-live caveat.</p></details>
+<p><code>~/workspace/your_files/futures-pairs-2026-11-24.mp3</code> (voice avocado_v2:qvd_00052) — covers the Wild near-miss (No ticked to 88, just under the bar) and the new Burrow price-gap flags, with the verify-live caveat.</p></details>
 <div class="foot">You place every bet yourself; nothing here places a bet. Lines and prices are snapshots from the scan's last run — verify in the book app before placing, since lines move. Never bet a leg whose book or price is missing.</div>
 </body></html>
