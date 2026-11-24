@@ -1,1 +1,12 @@
 [2026-11-22 20:57:16 ET] FATAL: no channel configured -- run `py -3.12 todd_discord_watch.py --signin` at the PC first.
+[2026-11-23 18:53:08 ET] watch starting: https://discord.com/channels/1446155542145011859/1446155631991062528 (Todd author: wishbbdis) poll 30s, seen 0 messages
+[2026-11-23 18:54:04 ET] channel did not load, retrying in 30s
+[2026-11-23 18:55:34 ET] poll error (Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://discord.com/channels/1446155542145011859/1446155631991062528", waiting until "domcontentloaded"
+), continuing in 30s
+[2026-11-23 18:57:04 ET] poll error (Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://discord.com/channels/1446155542145011859/1446155631991062528", waiting until "domcontentloaded"
+), continuing in 30s
+[2026-11-23 18:57:52 ET] baselined 30 messages already in channel (no alerts for these)
