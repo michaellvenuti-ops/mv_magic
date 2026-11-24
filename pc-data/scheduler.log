@@ -11469,3 +11469,34 @@
 [2026-11-24 14:33:44 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 13s —   - [pid=3304] <gracefully close end>
 [2026-11-24 14:33:49 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAF Kent St. Eastern Michigan Today 7:00 PM — Total — Over 47 ProphetX +108 ($95) / Under 47.5 theScore -115 ($105) — win+push at 47 — push +$91.30
 [2026-11-24 14:33:49 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 15:03:51 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 15:05:15 ET] dh_game_middles.py: FAILED (exit 2) in 84s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-24 15:08:30 ET] dh_key_number_middles.py: FAILED (exit 2) in 194s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-24 15:11:39 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-24 15:13:23 ET] odds_recorder.py: OK in 104s — SUMMARY: recorded 183 events (138 with odds), db total 319555 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 15:13:25 ET] wide_builds.py: OK in 2s — wide_builds: 15 qualifying builds, 0 NEW (banked wide-builds-2026-11-24.md)
+[2026-11-24 15:14:41 ET] dh_low_holds.py: FAILED (exit 2) in 76s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-24 15:14:56 ET] dh_nhl_totals_middles.py: OK in 15s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-24 15:18:19 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 203s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-24 15:20:31 ET] hung_number.py: OK in 132s — No new hung numbers (15 current flags).
+[2026-11-24 15:20:50 ET] rlm.py: OK in 19s
+[2026-11-24 15:20:59 ET] leader_follower.py: OK in 9s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-24 15:21:06 ET] steam_side.py: OK in 6s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 15:22:45 ET] dh_prop_middles.py: OK in 98s — PROP MIDDLE : NFL DEN Broncos PIT Steelers Nov-27 3:00 PM / Nov-27 3:00 PM / table / Sacks N. Bonitto Under 0.5 / Sacks N. Bonitto Over 0.25 / table | theScore 
+[2026-11-24 15:25:09 ET] dh_sog_middles.py: OK in 145s — - 0 deliverables this run
+[2026-11-24 15:25:30 ET] dh_team_total_middles.py: OK in 20s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 15:25:32 ET] nfl_first_score.py: OK in 2s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 15:25:33 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 15:25:34 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 15:25:38 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 4 new, 3 unverified, 1082 total tallied.
+[2026-11-24 15:25:39 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 15:25:40 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 15:25:42 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-24 15:25:42 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 15:42:03 ET] sync_to_github.py: FAILED (exit 1) in 981s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-24 15:43:53 ET] odds_recorder.py: OK in 80s — SUMMARY: recorded 183 events (146 with odds), db total 319738 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 15:44:57 ET] dh_arbitrage.py: OK in 65s — arbitrage: no new qualifying pairs (silent).
+[2026-11-24 15:45:16 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 15:46:39 ET] dh_game_middles.py: OK in 83s — GAME MIDDLE: NBA BOS Celtics WAS Wizards Today 8:15 PM / Today 8:15 PM / table / Alt Spread WAS Wizards +14.5 / Alt Spread BOS Celtics -14 / table | BetMGM | Fa
+[2026-11-24 15:49:54 ET] dh_key_number_middles.py: OK in 195s — key-number-middles: 275 basketball rows excluded (football-only rule).
+[2026-11-24 15:49:54 ET] syncing to GitHub (regular 10-minute sync)
