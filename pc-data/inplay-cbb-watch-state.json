@@ -196,7 +196,8 @@
    "pregame_total": 159.5,
    "alerted_at": "2026-11-24T16:46:02",
    "alert_rule": "2ND BITE",
-   "alert_detail": "2ND BITE: Arkansas St at Long Beach St | Full Total (at half) Over 186.5 | 1H total 99 cleared implied 1H line 79.75 by +19.2; pace proj 198.0 vs live total 186.5 -- take the Over again at the half | H1 99 | as of 16:46:01 ET"
+   "alert_detail": "2ND BITE: Arkansas St at Long Beach St | Full Total (at half) Over 186.5 | 1H total 99 cleared implied 1H line 79.75 by +19.2; pace proj 198.0 vs live total 186.5 -- take the Over again at the half | H1 99 | as of 16:46:01 ET",
+   "final": true
   },
   "401929035": {
    "matchup": "Lindenwood at New Haven",
@@ -209,7 +210,8 @@
    "pregame_total": 133.5,
    "alerted_at": "2026-11-24T16:42:02",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: New Haven at Lindenwood | Full Total (at half) Under 127.5 -115 | pace proj 116.0 (H1 58 x 2) vs live total 127.5 (gap -11.5, bar 5) | H1 58 | as of 16:42:01 ET"
+   "alert_detail": "PACE: New Haven at Lindenwood | Full Total (at half) Under 127.5 -115 | pace proj 116.0 (H1 58 x 2) vs live total 127.5 (gap -11.5, bar 5) | H1 58 | as of 16:42:01 ET",
+   "final": true
   },
   "401921666": {
    "matchup": "Tulsa at Illinois St",
@@ -227,17 +229,21 @@
   "401921223": {
    "matchup": "PSU Berks at Navy",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921710": {
    "matchup": "Providence at Arizona",
    "date": "2026-11-24",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 7.5,
    "fav_team": "Arizona",
    "dog_team": "Providence",
-   "pregame_total": 156.5
+   "pregame_total": 156.5,
+   "alerted_at": "2026-11-24T18:10:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PACE: Providence at Arizona | Full Total (at half) Under 157.5 | pace proj 148.0 (H1 74 x 2) vs live total 157.5 (gap -9.5, bar 5) | H1 74 | as of 18:10:02 ET"
   },
   "401926061": {
    "matchup": "Bloomsburg at Wagner",
@@ -317,14 +323,14 @@
    "spread": 1.5,
    "fav_team": "Queens",
    "dog_team": "Wofford",
-   "pregame_total": 172.5
+   "pregame_total": 173.5
   },
   "401920949": {
    "matchup": "E Michigan at Kennesaw St",
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Kennesaw St",
    "dog_team": "E Michigan",
    "pregame_total": 147.5
@@ -429,7 +435,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 34.5,
+   "spread": 33.5,
    "fav_team": "Villanova",
    "dog_team": "Coppin St",
    "pregame_total": 143.5
@@ -553,7 +559,7 @@
    "matchup": "Nevada at Santa Clara",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 1.5,
    "fav_team": "Santa Clara",
    "dog_team": "Nevada",
@@ -618,7 +624,7 @@
    "matchup": "High Point at Duquesne",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 10.5,
    "fav_team": "High Point",
    "dog_team": "Duquesne",
@@ -697,7 +703,7 @@
    "spread": 11.5,
    "fav_team": "Cornell",
    "dog_team": "Bucknell",
-   "pregame_total": 154.5
+   "pregame_total": 155.5
   },
   "401921711": {
    "matchup": "Clemson at Washington",
@@ -768,7 +774,7 @@
    "matchup": "Charleston at UTEP",
    "date": "2026-11-25",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
    "fav_team": "Charleston",
    "dog_team": "UTEP",
