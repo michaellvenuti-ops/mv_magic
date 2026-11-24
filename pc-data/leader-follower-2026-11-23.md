@@ -65,3 +65,7 @@ LEAD: Caesars on Notre Dame @ Syracuse | 2026-11-23 (spread)
 ## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi UCF @ Colorado | 2026-11-23 spread (only 1 followed)
 ## 2026-11-23T20:44:28-05:00 — no-follow: Kalshi South Carolina @ Clemson | 2026-11-23 spread (only 0 followed)
 ## 2026-11-23T20:44:29-05:00 — 82 games, 0 leads credited, 13 started games skipped
+## 2026-11-23T23:08:58-05:00 — no-follow: Kalshi Kent State @ Eastern Michigan | 2026-11-23 spread (only 0 followed)
+## 2026-11-23T23:08:58-05:00 — pack move, never credited: TCU @ Texas Tech | 2026-11-23 spread (BetMGM, FanDuel, Kalshi, bet365)
+## 2026-11-23T23:08:58-05:00 — pack move, never credited: UAB @ North Texas | 2026-11-23 total (Caesars, Fanatics)
+## 2026-11-23T23:08:59-05:00 — 82 games, 0 leads credited, 13 started games skipped
