@@ -27,3 +27,11 @@
 - 2026-11-23: Yale Bulldogs @ Belmont Bruins — first: Belmont Bruins (3PT, 1:35 in); lead changes 2; final 60-68
 - 2026-11-23: San Francisco Dons @ Nevada Wolf Pack — first: San Francisco Dons (2PT, 0:52 in); lead changes 3; final 62-71
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T20:48:25-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 1053 games through 2026-11-23
+- 2026-11-23: Washington Huskies @ BYU Cougars — first: BYU Cougars (2PT, 0:25 in); lead changes 8; final 77-83
+- 2026-11-23: Southern Utah Thunderbirds @ Arkansas State Red Wolves — first: Arkansas State Red Wolves (3PT, 0:13 in); lead changes 4; final 102-104
+- 2026-11-23: Temple Owls @ UT Martin Skyhawks — first: Temple Owls (2PT, 0:19 in); lead changes 11; final 81-90
+- 2026-11-23: Maryland Eastern Shore Hawks @ Youngstown State Penguins — first: Youngstown State Penguins (2PT, 0:49 in); lead changes 4; final 65-69
+- 2026-11-23: RIT Tigers @ Buffalo Bulls — first: RIT Tigers (2PT, 0:45 in); lead changes 1; final 47-93
+- 2026-11-23: Mansfield Mountaineers @ Le Moyne Dolphins — first: Le Moyne Dolphins (3PT, 0:24 in); lead changes 0; final 58-68
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
