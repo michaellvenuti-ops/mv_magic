@@ -11293,3 +11293,56 @@
 [2026-11-24 00:19:33 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-24 00:19:38 ET] nba_overs_pregame.py: OK in 5s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-24 00:19:38 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 00:49:41 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 00:51:42 ET] odds_recorder.py: OK in 91s — SUMMARY: recorded 155 events (69 with odds), db total 318358 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-24 00:56:17 ET] dh_arbitrage.py: FAILED (exit 1) in 274s —   - <launched> pid=5572
+[2026-11-24 01:07:52 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 680s —   - <launched> pid=1088
+[2026-11-24 01:08:35 ET] wide_builds.py: OK in 38s — NEW BUILD: NBA SA Spurs SAC Kings Today 10:15 PM — Pts+Ast+Rebs S. Castle — Over 34.5 Bet365 +135 ($91) / Under 38.5 FanDuel -106 ($109) — both win 35, 36, 37, 
+[2026-11-24 01:08:36 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 01:16:46 ET] sync_to_github.py: FAILED (exit 1) in 490s — urllib.error.URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:996)>
+[2026-11-24 01:25:36 ET] dh_low_holds.py: OK in 528s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-24 01:32:50 ET] dh_game_middles.py: FAILED (exit 1) in 427s —   - <launched> pid=8956
+[2026-11-24 01:36:39 ET] dh_key_number_middles.py: FAILED (exit 1) in 226s —   - <launched> pid=9516
+[2026-11-24 01:43:12 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 392s —   - <launched> pid=15988
+[2026-11-24 01:48:57 ET] hung_number.py: FAILED (exit 2) in 343s — state. Re-run with --dump and send the dump file.
+[2026-11-24 01:49:07 ET] rlm.py: OK in 10s
+[2026-11-24 01:49:14 ET] leader_follower.py: OK in 7s — leader-follower: logging phase (82 games, 0 new leads, no book at 3 yet).
+[2026-11-24 01:49:18 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 01:57:51 ET] dh_prop_middles.py: OK in 513s — DarkHorse check unavailable (signed out) — prop-middles skipped, no prices invented.
+[2026-11-24 02:10:44 ET] dh_sog_middles.py: FAILED (exit 1) in 772s —   - <launched> pid=15420
+[2026-11-24 02:11:16 ET] dh_team_total_middles.py: OK in 30s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 02:11:20 ET] nfl_first_score.py: OK in 4s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-24 02:11:24 ET] nba_first_score.py: OK in 4s — nba-first-score: 2 new, 1 unverified, 245 total tallied.
+[2026-11-24 02:11:33 ET] nhl_first_goal.py: OK in 9s — nhl-first-goal: 2 new, 0 unverified, 376 total tallied.
+[2026-11-24 02:11:45 ET] ncaab_first_score.py: OK in 11s — ncaab-first-score: 2 new, 2 unverified, 1077 total tallied.
+[2026-11-24 02:11:48 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 02:11:50 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 02:11:57 ET] nba_overs_pregame.py: OK in 7s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-24 02:11:57 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 02:29:18 ET] sync_to_github.py: FAILED (exit 1) in 1039s — urllib.error.URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:2402)>
+[2026-11-24 08:02:24 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-24 08:11:59 ET] odds_recorder.py: OK in 575s — SUMMARY: recorded 155 events (69 with odds), db total 318513 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-24 08:15:57 ET] dh_arbitrage.py: FAILED (exit 1) in 237s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-24 08:19:15 ET] dh_kalshi_poly_arb.py: OK in 198s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 08:19:19 ET] wide_builds.py: OK in 3s — wide_builds: 7 qualifying builds, 0 NEW (banked wide-builds-2026-11-24.md)
+[2026-11-24 08:20:31 ET] dh_low_holds.py: OK in 73s — LOW-HOLDS: NBA DAL Mavericks DEN Nuggets Today 10:15 PM / Today 10:15 PM / table / Pts+Ast+Rebs C. Johnson Under 19.5 / Pts+Ast+Rebs C. Johnson 20+ / table | Be
+[2026-11-24 08:21:59 ET] dh_game_middles.py: OK in 88s — GAME MIDDLE: NCAAB Robert Morris Lamar Today 6:30 PM / Today 6:30 PM / table / Total Under 159 / Alt Total Over 158.5 / table | Caesars | Bet365 — window 220.0 
+[2026-11-24 08:24:48 ET] dh_key_number_middles.py: OK in 169s — key-number-middles: 441 basketball rows excluded (football-only rule).
+[2026-11-24 08:27:36 ET] dh_basketball_key_middles.py: OK in 168s — basketball-key-middles: no new basketball middles.
+[2026-11-24 08:28:40 ET] hung_number.py: OK in 63s — HUNG NUMBER: Kansas State vs Iowa State — FanDuel spread value dog (4.5 vs median 3.5)
+[2026-11-24 08:28:46 ET] rlm.py: OK in 7s
+[2026-11-24 08:28:50 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-24 08:28:53 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 08:30:06 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NFL KC Chiefs BUF Bills Nov-26 8:20 PM / Nov-26 8:20 PM / table / Receiving Yards K. Shakir Under 40.5 / Alt Recv Yards K. Shakir 40+ / tabl
+[2026-11-24 08:31:32 ET] dh_sog_middles.py: FAILED (exit 2) in 86s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-24 08:31:34 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Philadelphia 19.5/21.5 sits at -2.4c vs 
+[2026-11-24 08:31:35 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 08:31:36 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 08:31:37 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 08:31:39 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 2 unverified, 1077 total tallied.
+[2026-11-24 08:31:40 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 08:31:41 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 08:31:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-24 08:31:45 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=7 queued_total=46
+[2026-11-24 08:31:45 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=46, limit=5)
+[2026-11-24 08:31:45 ET] syncing to GitHub (regular 10-minute sync)
