@@ -11417,3 +11417,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-24 09:51:57 ET] yahoo_brief.py: OK in 969s — SUMMARY: signed_in=True, rows=140, matched=46, lanes={'miles_earn_and_burn': 3, 'doctor_of_credit': 3, 'gift_cards': 27, 'sportsbook': 13}, errors=46
 [2026-11-24 09:52:33 ET] half_percent.py: OK in 35s — half-percent: PICK DLTR ref $153.81 target $154.58 stop $153.04
 [2026-11-24 09:52:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 10:22:34 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 10:24:35 ET] odds_recorder.py: OK in 91s — SUMMARY: recorded 155 events (69 with odds), db total 318823 snapshots / 1687 events, feeds ok 6 fail 0
+[2026-11-24 10:25:51 ET] dh_arbitrage.py: OK in 76s — ARBITRAGE: NFL CHI Bears DET Lions Nov-26 1:00 PM / Nov-26 1:00 PM / table / Alt Receptions S. Roush 1+ / Receptions S. Roush Under 0.5 / table | Bet365 | FanDu
+[2026-11-24 10:26:31 ET] dh_kalshi_poly_arb.py: OK in 40s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 10:26:36 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA DAL Mavericks DEN Nuggets Today 10:15 PM — Total — Over 230.5 FanDuel -136 ($113) / Under 231 ProphetX +127 ($87) — win+push at 231 — push +$83.0
+[2026-11-24 10:26:36 ET] syncing to GitHub (wide-builds banked new builds)
