@@ -20,3 +20,5 @@ NEW TODD PLAY: Total 138.5 -110 :: raw: "@everyone Un138.5 -110 rice late" :: ms
 NEW TODD PLAY: Total 150.5 -110 :: raw: "@everyone un150.5 -110 Tennessee game" :: msg 1574894196895256587 :: posted 2026-11-24T21:07:16.659Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 16:09:15 ET — 1 NEW Todd play
 NEW TODD PLAY: Moneyline -113 :: raw: "@everyone ole miss -113 ml" :: msg 1574894641449271297 :: posted 2026-11-24T21:09:02.649Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-24 16:18:44 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 88.5 -125 :: raw: "@everyone ov88.5 -125 ark st 1h" :: msg 1574896980830982219 :: posted 2026-11-24T21:18:20.401Z :: Novig: https://app.novig.us/AppEntry
