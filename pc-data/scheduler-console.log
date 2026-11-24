@@ -11505,3 +11505,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-24 13:57:40 ET] public_fade.py: OK in 4s
 [2026-11-24 13:59:09 ET] dh_positive_ev.py: FAILED (exit 2) in 89s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-24.txt. No prices inven
 [2026-11-24 13:59:09 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 14:29:10 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 14:31:32 ET] odds_recorder.py: OK in 112s — SUMMARY: recorded 183 events (142 with odds), db total 319372 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 14:33:31 ET] dh_arbitrage.py: FAILED (exit 2) in 119s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 14:33:44 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 13s —   - [pid=3304] <gracefully close end>
+[2026-11-24 14:33:49 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAF Kent St. Eastern Michigan Today 7:00 PM — Total — Over 47 ProphetX +108 ($95) / Under 47.5 theScore -115 ($105) — win+push at 47 — push +$91.30
+[2026-11-24 14:33:49 ET] syncing to GitHub (wide-builds banked new builds)
