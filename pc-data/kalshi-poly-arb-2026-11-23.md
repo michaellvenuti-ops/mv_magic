@@ -17,3 +17,4 @@ NEW PAIR: NBA OKC Thunder IND Pacers Today 7:45 PM / Today 7:45 PM / table / Alt
 (end of new/changed pairs — deliverable list below)
 NBA OKC Thunder IND Pacers Today 7:45 PM / Today 7:45 PM / table / Alt Total Over 223.5 / Total Under 223.5 / table bar_chart | Bet365 | Polymarket US :: {'leg1': {'side': '+110 $1,000 Bet365', 'price': '+110', 'book': 'Bet365', 'stake': 1000.0}, 'leg2': {'side': '+112.8 [47%] $1,036.70 Polymarket US', 'price': '+112.8', 'book': 'Polymarket US', 'stake': 1036.7}, 'arb_risk': False, 'first_reported': '2026-11-23T14:32:57-05:00', 'last_seen': '2026-11-23', 'profit_pct': 3.11}
 ## 2026-11-23T16:14:05-05:00 — kalshi-poly-arb: 98 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-23T20:26:33-05:00 — kalshi-poly-arb: 100 complete pairs read, 0 NEW/CHANGED delivered
