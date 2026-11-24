@@ -14,7 +14,7 @@ th{background:#161b22;color:#9da7b3}
 .box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin:16px 0}
 </style></head><body>
 <h1>Elo Ratings Tracker</h1>
-<div class="sub">Mack Elo team ratings — NBA, NFL, NHL, NCAAB, NCAAF. Paper only, $100 flat. Updated 2026-11-24 09:45 AM ET.</div>
+<div class="sub">Mack Elo team ratings — NBA, NFL, NHL, NCAAB, NCAAF. Paper only, $100 flat. Updated 2026-11-24 03:55 PM ET.</div>
 <div class="box"><b>How it works (Mack, Vol. 2 — Elo team ratings, in Python).</b>
 Every team starts at 1500. After each game: rating += K x (actual &minus; expected),
 expected = 1 / (1 + 10<sup>&minus;(gap + home edge)/400</sup>). K is sport-specific and
@@ -42,7 +42,7 @@ inflating favourites) and it was fixed 2026-11-23 before any board publish.</i><
 <tr><td>NBA</td><td>245</td><td>32</td><td>0.2347</td><td>K8=0.2522, K12=0.2481, K16=0.2445, K20=0.2415, K24=0.2389, K28=0.2367, K32=0.2347, K40=0.2317, K48=0.2295</td></tr>
 <tr><td>NFL</td><td>161</td><td>32</td><td>0.2387</td><td>K8=0.2498, K12=0.2473, K16=0.2451, K20=0.2432, K24=0.2415, K28=0.24, K32=0.2387, K40=0.2367, K48=0.2353</td></tr>
 <tr><td>NHL</td><td>325</td><td>20</td><td>0.2491</td><td>K8=0.2503, K12=0.2496, K16=0.2492, K20=0.2491, K24=0.2492, K28=0.2495, K32=0.2499, K40=0.2511, K48=0.2527</td></tr>
-<tr><td>NCAAB</td><td>1052</td><td>32</td><td>0.1849</td><td>K8=0.188, K12=0.1874, K16=0.1868, K20=0.1862, K24=0.1857, K28=0.1853, K32=0.1849, K40=0.1843, K48=0.1838</td></tr>
+<tr><td>NCAAB</td><td>1060</td><td>32</td><td>0.1849</td><td>K8=0.188, K12=0.1874, K16=0.1868, K20=0.1862, K24=0.1857, K28=0.1853, K32=0.1849, K40=0.1843, K48=0.1838</td></tr>
 <tr><td>NCAAF</td><td>822</td><td>32</td><td>0.2161</td><td>K8=0.2252, K12=0.2233, K16=0.2215, K20=0.2199, K24=0.2185, K28=0.2172, K32=0.2161, K40=0.2143, K48=0.2129</td></tr>
 </table></div>
 <h2>NBA — top 10 Elo</h2><div class="wrap"><table><tr><th>#</th><th>Team</th><th>Elo</th></tr>
@@ -83,15 +83,15 @@ inflating favourites) and it was fixed 2026-11-23 before any board publish.</i><
 </table></div>
 <h2>NCAAB — top 10 Elo</h2><div class="wrap"><table><tr><th>#</th><th>Team</th><th>Elo</th></tr>
 <tr><td>1</td><td>Virginia Cavaliers</td><td>1584</td></tr>
-<tr><td>2</td><td>Columbia Lions</td><td>1579</td></tr>
-<tr><td>3</td><td>Texas State Bobcats</td><td>1579</td></tr>
-<tr><td>4</td><td>Western Michigan Broncos</td><td>1577</td></tr>
-<tr><td>5</td><td>Minnesota Golden Gophers</td><td>1577</td></tr>
-<tr><td>6</td><td>Houston Cougars</td><td>1576</td></tr>
-<tr><td>7</td><td>Texas A&amp;M Aggies</td><td>1574</td></tr>
-<tr><td>8</td><td>Wright State Raiders</td><td>1574</td></tr>
-<tr><td>9</td><td>Georgia Bulldogs</td><td>1574</td></tr>
-<tr><td>10</td><td>Boston College Eagles</td><td>1573</td></tr>
+<tr><td>2</td><td>St. Bonaventure Bonnies</td><td>1584</td></tr>
+<tr><td>3</td><td>Pittsburgh Panthers</td><td>1583</td></tr>
+<tr><td>4</td><td>Columbia Lions</td><td>1579</td></tr>
+<tr><td>5</td><td>Texas State Bobcats</td><td>1579</td></tr>
+<tr><td>6</td><td>Western Michigan Broncos</td><td>1577</td></tr>
+<tr><td>7</td><td>Minnesota Golden Gophers</td><td>1577</td></tr>
+<tr><td>8</td><td>Houston Cougars</td><td>1576</td></tr>
+<tr><td>9</td><td>Texas A&amp;M Aggies</td><td>1574</td></tr>
+<tr><td>10</td><td>Georgia Bulldogs</td><td>1574</td></tr>
 </table></div>
 <h2>NCAAF — top 10 Elo</h2><div class="wrap"><table><tr><th>#</th><th>Team</th><th>Elo</th></tr>
 <tr><td>1</td><td>Utah Utes</td><td>1650</td></tr>
@@ -105,83 +105,107 @@ inflating favourites) and it was fixed 2026-11-23 before any board publish.</i><
 <tr><td>9</td><td>UTSA Roadrunners</td><td>1599</td></tr>
 <tr><td>10</td><td>Alabama Crimson Tide</td><td>1597</td></tr>
 </table></div>
-<h2>2026-11-23 — today's games</h2>
+<h2>2026-11-24 — today's games</h2>
 <div class="sub">Lines: HaterPicks NBA fallback; other sports unpriced</div>
 <h2>Flags today</h2><div class="wrap"><table><tr><th>Sport</th><th>Game</th><th>Market</th><th>Side</th><th>Line</th><th>Price / Book</th><th>Model prob</th><th>Edge</th><th>Source</th></tr>
-<tr><td>NBA</td><td>Portland Trail Blazers @ Philadelphia 76ers</td><td>ML</td><td class="flag">home</td><td></td><td>-137 Bally Bet</td><td>70.3%</td><td>+12.5%</td><td>HaterPicks philadelphia-76ers-vs-portland-trail-blazers (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Portland Trail Blazers @ Philadelphia 76ers</td><td>Spread</td><td class="flag">home</td><td>-2.5</td><td>-105 Hard Rock</td><td>58.2%</td><td>+7.0%</td><td>HaterPicks philadelphia-76ers-vs-portland-trail-blazers (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Oklahoma City Thunder @ Indiana Pacers</td><td>ML</td><td class="flag">home</td><td></td><td>200 Bally Bet</td><td>50.5%</td><td>+17.2%</td><td>HaterPicks indiana-pacers-vs-oklahoma-city-thunder (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Oklahoma City Thunder @ Indiana Pacers</td><td>Spread</td><td class="flag">home</td><td>5.5</td><td>-105 BetMGM</td><td>68.0%</td><td>+16.8%</td><td>HaterPicks indiana-pacers-vs-oklahoma-city-thunder (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Milwaukee Bucks @ Toronto Raptors</td><td>Spread</td><td class="flag">away</td><td>10.5</td><td>-110 Caesars</td><td>61.6%</td><td>+9.2%</td><td>HaterPicks milwaukee-bucks-vs-toronto-raptors (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Cleveland Cavaliers @ Chicago Bulls</td><td>ML</td><td class="flag">home</td><td></td><td>282 DraftKings</td><td>52.9%</td><td>+26.7%</td><td>HaterPicks chicago-bulls-vs-cleveland-cavaliers (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Cleveland Cavaliers @ Chicago Bulls</td><td>Spread</td><td class="flag">home</td><td>8.5</td><td>-104 DraftKings</td><td>77.7%</td><td>+26.8%</td><td>HaterPicks chicago-bulls-vs-cleveland-cavaliers (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Phoenix Suns @ New Orleans Pelicans</td><td>Spread</td><td class="flag">home</td><td>3.5</td><td>-110 Caesars</td><td>59.0%</td><td>+6.6%</td><td>HaterPicks new-orleans-pelicans-vs-phoenix-suns (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>LA Clippers @ Houston Rockets</td><td>Spread</td><td class="flag">away</td><td>12.5</td><td>-110 BetMGM</td><td>61.9%</td><td>+9.5%</td><td>HaterPicks houston-rockets-vs-los-angeles-clippers (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>Utah Jazz @ Los Angeles Lakers</td><td>Spread</td><td class="flag">away</td><td>13.5</td><td>-104 BetRivers</td><td>56.7%</td><td>+5.7%</td><td>HaterPicks los-angeles-lakers-vs-utah-jazz (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>San Antonio Spurs @ Sacramento Kings</td><td>ML</td><td class="flag">home</td><td></td><td>480 Bally Bet</td><td>28.2%</td><td>+10.9%</td><td>HaterPicks sacramento-kings-vs-san-antonio-spurs (best price per side, placeable books)</td></tr>
-<tr><td>NBA</td><td>San Antonio Spurs @ Sacramento Kings</td><td>Spread</td><td class="flag">home</td><td>12.5</td><td>-105 FanDuel</td><td>72.2%</td><td>+21.0%</td><td>HaterPicks sacramento-kings-vs-san-antonio-spurs (best price per side, placeable books)</td></tr>
+<tr><td>NBA</td><td>Detroit Pistons @ Orlando Magic</td><td>ML</td><td class="flag">home</td><td></td><td>116 FanDuel</td><td>57.2%</td><td>+10.9%</td><td>HaterPicks detroit-pistons-vs-orlando-magic (best price per side, placeable books)</td></tr>
+<tr><td>NBA</td><td>Detroit Pistons @ Orlando Magic</td><td>Spread</td><td class="flag">home</td><td>2.5</td><td>-113 bet365</td><td>63.6%</td><td>+10.6%</td><td>HaterPicks detroit-pistons-vs-orlando-magic (best price per side, placeable books)</td></tr>
+<tr><td>NBA</td><td>Boston Celtics @ Washington Wizards</td><td>ML</td><td class="flag">home</td><td></td><td>360 Bally Bet</td><td>52.8%</td><td>+31.1%</td><td>HaterPicks boston-celtics-vs-washington-wizards (best price per side, placeable books)</td></tr>
+<tr><td>NBA</td><td>Boston Celtics @ Washington Wizards</td><td>Spread</td><td class="flag">home</td><td>10.5</td><td>-105 BetMGM</td><td>82.4%</td><td>+31.2%</td><td>HaterPicks boston-celtics-vs-washington-wizards (best price per side, placeable books)</td></tr>
+<tr><td>NBA</td><td>Dallas Mavericks @ Denver Nuggets</td><td>Spread</td><td class="flag">away</td><td>8.5</td><td>-115 Fanatics</td><td>62.7%</td><td>+9.2%</td><td>HaterPicks dallas-mavericks-vs-denver-nuggets (best price per side, placeable books)</td></tr>
 </table></div>
 <h2>NBA today</h2><div class="wrap"><table><tr><th>Away</th><th>Home</th><th>Elo A / H</th><th>P(home win)</th><th>Fair ML H / A</th><th>Model margin (H)</th><th>Edges</th></tr>
-<tr><td>Memphis Grizzlies</td><td>Charlotte Hornets</td><td>1574.1 / 1413.6</td><td>41.4%</td><td>142 / -142</td><td>-2.0</td><td>ML home -1.2% / ML away -1.1% / spread home +0.6% / spread away -4.4%</td></tr>
-<tr><td>Portland Trail Blazers</td><td>Philadelphia 76ers</td><td>1560.2 / 1609.5</td><td>70.3%</td><td>-236 / 236</td><td>5.0</td><td>ML home +12.5% / ML away -12.8% / spread home +7.0% / spread away -8.7%</td></tr>
-<tr><td>Oklahoma City Thunder</td><td>Indiana Pacers</td><td>1518.7 / 1422.2</td><td>50.5%</td><td>-102 / 102</td><td>0.1</td><td>ML home +17.2% / ML away -16.6% / spread home +16.8% / spread away -20.4%</td></tr>
-<tr><td>Milwaukee Bucks</td><td>Toronto Raptors</td><td>1334.1 / 1442.9</td><td>76.9%</td><td>-333 / 333</td><td>7.0</td><td>ML home -3.1% / ML away +1.6% / spread home -12.8% / spread away +9.2%</td></tr>
-<tr><td>Brooklyn Nets</td><td>Minnesota Timberwolves</td><td>1394.0 / 1567.7</td><td>82.9%</td><td>-483 / 483</td><td>9.1</td><td>ML home -0.7% / ML away -1.0% / spread home -8.6% / spread away +4.4%</td></tr>
-<tr><td>Cleveland Cavaliers</td><td>Chicago Bulls</td><td>1502.3 / 1422.2</td><td>52.9%</td><td>-112 / 112</td><td>0.7</td><td>ML home +26.7% / ML away -29.9% / spread home +26.8% / spread away -30.1%</td></tr>
-<tr><td>Phoenix Suns</td><td>New Orleans Pelicans</td><td>1518.5 / 1395.2</td><td>46.7%</td><td>114 / -114</td><td>-0.8</td><td>ML home +4.6% / ML away -6.3% / spread home +6.6% / spread away -9.5%</td></tr>
-<tr><td>LA Clippers</td><td>Houston Rockets</td><td>1409.1 / 1574.9</td><td>82.2%</td><td>-462 / 462</td><td>8.9</td><td>ML home -3.5% / ML away +0.6% / spread home -13.4% / spread away +9.5%</td></tr>
-<tr><td>Utah Jazz</td><td>Los Angeles Lakers</td><td>1372.6 / 1616.7</td><td>87.9%</td><td>-725 / 725</td><td>11.5</td><td>ML home +0.1% / ML away -2.7% / spread home -9.1% / spread away +5.7%</td></tr>
-<tr><td>San Antonio Spurs</td><td>Sacramento Kings</td><td>1622.9 / 1360.3</td><td>28.2%</td><td>255 / -255</td><td>-5.4</td><td>ML home +10.9% / ML away -13.7% / spread home +21.0% / spread away -24.4%</td></tr>
-</table></div>
-<h2>NFL today</h2><div class="wrap"><table><tr><th>Away</th><th>Home</th><th>Elo A / H</th><th>P(home win)</th><th>Fair ML H / A</th><th>Model margin (H)</th><th>Edges</th></tr>
-<tr><td>Cincinnati Bengals</td><td>Washington Commanders</td><td>1568.2 / 1466.4</td><td>44.7%</td><td>124 / -124</td><td>-1.3</td><td>&mdash;</td></tr>
+<tr><td>Detroit Pistons</td><td>Orlando Magic</td><td>1543.0 / 1493.3</td><td>57.2%</td><td>-134 / 134</td><td>1.7</td><td>ML home +10.9% / ML away -12.7% / spread home +10.6% / spread away -14.1%</td></tr>
+<tr><td>Boston Celtics</td><td>Washington Wizards</td><td>1549.0 / 1468.7</td><td>52.8%</td><td>-112 / 112</td><td>0.7</td><td>ML home +31.1% / ML away -33.8% / spread home +31.2% / spread away -34.8%</td></tr>
+<tr><td>Dallas Mavericks</td><td>Denver Nuggets</td><td>1530.8 / 1569.6</td><td>69.0%</td><td>-222 / 222</td><td>4.6</td><td>ML home -5.8% / ML away +2.9% / spread home -13.2% / spread away +9.2%</td></tr>
 </table></div>
 <h2>NHL today</h2><div class="wrap"><table><tr><th>Away</th><th>Home</th><th>Elo A / H</th><th>P(home win)</th><th>Fair ML H / A</th><th>Model margin (H)</th><th>Edges</th></tr>
-<tr><td>Columbus Blue Jackets</td><td>New Jersey Devils</td><td>1473.4 / 1560.3</td><td>69.4%</td><td>-226 / 226</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Los Angeles Kings</td><td>Montreal Canadiens</td><td>1467.4 / 1538.6</td><td>67.4%</td><td>-207 / 207</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Calgary Flames</td><td>Ottawa Senators</td><td>1483.8 / 1531.6</td><td>64.4%</td><td>-181 / 181</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Toronto Maple Leafs</td><td>New York Islanders</td><td>1416.8 / 1510.2</td><td>70.1%</td><td>-235 / 235</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Utah Mammoth</td><td>Winnipeg Jets</td><td>1476.9 / 1485.4</td><td>59.0%</td><td>-144 / 144</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Anaheim Ducks</td><td>Seattle Kraken</td><td>1467.5 / 1493.9</td><td>61.5%</td><td>-160 / 160</td><td>&mdash;</td><td>&mdash;</td></tr>
-<tr><td>Minnesota Wild</td><td>San Jose Sharks</td><td>1574.3 / 1470.4</td><td>43.0%</td><td>132 / -132</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>Vegas Golden Knights</td><td>Edmonton Oilers</td><td>1498.6 / 1550.0</td><td>64.9%</td><td>-184 / 184</td><td>&mdash;</td><td>&mdash;</td></tr>
 </table></div>
 <h2>NCAAB today</h2><div class="wrap"><table><tr><th>Away</th><th>Home</th><th>Elo A / H</th><th>P(home win)</th><th>Fair ML H / A</th><th>Model margin (H)</th><th>Edges</th></tr>
-<tr><td>Washington Huskies</td><td>BYU Cougars</td><td>1532.2 / 1543.5</td><td>51.6%</td><td>-107 / 107</td><td>0.4</td><td>&mdash;</td></tr>
-<tr><td>Middle Tennessee Blue Raiders</td><td>Southern Illinois Salukis</td><td>1527.8 / 1489.3</td><td>44.5%</td><td>125 / -125</td><td>-1.3</td><td>&mdash;</td></tr>
-<tr><td>William &amp; Mary Tribe</td><td>IU Indianapolis Jaguars</td><td>1531.3 / 1514.2</td><td>47.5%</td><td>110 / -110</td><td>-0.6</td><td>&mdash;</td></tr>
-<tr><td>Southern Utah Thunderbirds</td><td>Arkansas State Red Wolves</td><td>1488.0 / 1491.4</td><td>50.5%</td><td>-102 / 102</td><td>0.1</td><td>&mdash;</td></tr>
-<tr><td>Tulane Green Wave</td><td>Georgia State Panthers</td><td>1470.0 / 1487.3</td><td>52.5%</td><td>-110 / 110</td><td>0.6</td><td>&mdash;</td></tr>
-<tr><td>Yale Bulldogs</td><td>Belmont Bruins</td><td>1493.2 / 1523.9</td><td>54.4%</td><td>-119 / 119</td><td>1.0</td><td>&mdash;</td></tr>
-<tr><td>San Francisco Dons</td><td>Nevada Wolf Pack</td><td>1511.8 / 1496.2</td><td>47.8%</td><td>109 / -109</td><td>-0.5</td><td>&mdash;</td></tr>
-<tr><td>Temple Owls</td><td>UT Martin Skyhawks</td><td>1490.0 / 1528.4</td><td>55.5%</td><td>-125 / 125</td><td>1.3</td><td>&mdash;</td></tr>
-<tr><td>Maryland Eastern Shore Hawks</td><td>Youngstown State Penguins</td><td>1468.9 / 1459.4</td><td>62.7%</td><td>-168 / 168</td><td>3.0</td><td>&mdash;</td></tr>
-<tr><td>RIT Tigers</td><td>Buffalo Bulls</td><td>1500.0 / 1502.2</td><td>64.3%</td><td>-180 / 180</td><td>3.4</td><td>&mdash;</td></tr>
-<tr><td>Notre Dame (MD) Gators</td><td>Howard Bison</td><td>1500.0 / 1522.8</td><td>67.0%</td><td>-203 / 203</td><td>4.1</td><td>&mdash;</td></tr>
-<tr><td>Spalding Pelicans</td><td>Ball State Cardinals</td><td>1500.0 / 1471.1</td><td>60.1%</td><td>-151 / 151</td><td>2.4</td><td>&mdash;</td></tr>
-<tr><td>Kentucky State Thorobreds</td><td>East Tennessee State Buccaneers</td><td>1488.5 / 1499.3</td><td>65.4%</td><td>-189 / 189</td><td>3.7</td><td>&mdash;</td></tr>
-<tr><td>Penn State Brandywine Lions</td><td>La Salle Explorers</td><td>1500.0 / 1468.2</td><td>59.7%</td><td>-148 / 148</td><td>2.3</td><td>&mdash;</td></tr>
-<tr><td>North Carolina A&amp;T Aggies</td><td>South Carolina State Bulldogs</td><td>1511.2 / 1506.1</td><td>63.3%</td><td>-173 / 173</td><td>3.2</td><td>&mdash;</td></tr>
-<tr><td>Georgia Southern Eagles</td><td>Northern Kentucky Norse</td><td>1465.3 / 1490.5</td><td>67.3%</td><td>-206 / 206</td><td>4.2</td><td>&mdash;</td></tr>
-<tr><td>Mansfield Mountaineers</td><td>Le Moyne Dolphins</td><td>1500.0 / 1488.5</td><td>62.5%</td><td>-166 / 166</td><td>3.0</td><td>&mdash;</td></tr>
-<tr><td>Fairleigh Dickinson Knights</td><td>Iona Gaels</td><td>1520.1 / 1479.4</td><td>58.5%</td><td>-141 / 141</td><td>2.0</td><td>&mdash;</td></tr>
-<tr><td>Central Arkansas Bears</td><td>North Florida Ospreys</td><td>1498.4 / 1501.8</td><td>64.5%</td><td>-181 / 181</td><td>3.4</td><td>&mdash;</td></tr>
-<tr><td>Illinois State Redbirds</td><td>Santa Clara Broncos</td><td>1508.3 / 1530.6</td><td>53.2%</td><td>-114 / 114</td><td>0.7</td><td>&mdash;</td></tr>
-<tr><td>Carolina University Bruins</td><td>North Carolina Central Eagles</td><td>1500.0 / 1466.6</td><td>59.5%</td><td>-147 / 147</td><td>2.2</td><td>&mdash;</td></tr>
-<tr><td>Texas A&amp;M-Corpus Christi Islanders</td><td>Wichita State Shockers</td><td>1493.5 / 1549.0</td><td>71.0%</td><td>-245 / 245</td><td>5.2</td><td>&mdash;</td></tr>
-<tr><td>Winthrop Eagles</td><td>Illinois Fighting Illini</td><td>1424.2 / 1541.0</td><td>77.7%</td><td>-348 / 348</td><td>7.2</td><td>&mdash;</td></tr>
-<tr><td>Denver Pioneers</td><td>Kansas Jayhawks</td><td>1471.5 / 1544.0</td><td>73.0%</td><td>-270 / 270</td><td>5.7</td><td>&mdash;</td></tr>
-<tr><td>Wisconsin Stout Blue Devils</td><td>North Dakota State Bison</td><td>1500.0 / 1452.5</td><td>57.5%</td><td>-135 / 135</td><td>1.7</td><td>&mdash;</td></tr>
-<tr><td>Stephen F. Austin Lumberjacks</td><td>Utah Valley Wolverines</td><td>1540.2 / 1570.1</td><td>54.3%</td><td>-119 / 119</td><td>1.0</td><td>&mdash;</td></tr>
-<tr><td>Monmouth Hawks</td><td>North Carolina Tar Heels</td><td>1484.4 / 1512.8</td><td>67.7%</td><td>-209 / 209</td><td>4.3</td><td>&mdash;</td></tr>
-<tr><td>Dickinson State Blue Hawks</td><td>Idaho Vandals</td><td>1500.0 / 1482.9</td><td>61.7%</td><td>-161 / 161</td><td>2.8</td><td>&mdash;</td></tr>
-<tr><td>Carroll (MT) Fighting Saints</td><td>Montana Grizzlies</td><td>1500.0 / 1508.6</td><td>65.1%</td><td>-187 / 187</td><td>3.6</td><td>&mdash;</td></tr>
-<tr><td>VCU Rams</td><td>Providence Friars</td><td>1522.6 / 1516.9</td><td>49.2%</td><td>103 / -103</td><td>-0.2</td><td>&mdash;</td></tr>
-<tr><td>UNC Greensboro Spartans</td><td>Pepperdine Waves</td><td>1529.2 / 1500.9</td><td>60.2%</td><td>-151 / 151</td><td>2.4</td><td>&mdash;</td></tr>
-<tr><td>Loyola Chicago Ramblers</td><td>Seattle U Redhawks</td><td>1516.9 / 1536.7</td><td>52.9%</td><td>-112 / 112</td><td>0.7</td><td>&mdash;</td></tr>
-<tr><td>Eastern Washington Eagles</td><td>UNLV Rebels</td><td>1512.1 / 1484.3</td><td>60.2%</td><td>-152 / 152</td><td>2.4</td><td>&mdash;</td></tr>
-<tr><td>Alabama State Hornets</td><td>California Golden Bears</td><td>1481.5 / 1500.5</td><td>66.5%</td><td>-198 / 198</td><td>4.0</td><td>&mdash;</td></tr>
-<tr><td>Colorado State Rams</td><td>Arizona Wildcats</td><td>1511.1 / 1553.5</td><td>56.1%</td><td>-128 / 128</td><td>1.4</td><td>&mdash;</td></tr>
-<tr><td>San José State Spartans</td><td>UC San Diego Tritons</td><td>1478.7 / 1496.0</td><td>52.5%</td><td>-110 / 110</td><td>0.6</td><td>&mdash;</td></tr>
+<tr><td>Tennessee Volunteers</td><td>Maryland Terrapins</td><td>1554.9 / 1492.7</td><td>41.1%</td><td>143 / -143</td><td>-2.1</td><td>&mdash;</td></tr>
+<tr><td>Miami Hurricanes</td><td>TCU Horned Frogs</td><td>1550.5 / 1514.5</td><td>44.8%</td><td>123 / -123</td><td>-1.2</td><td>&mdash;</td></tr>
+<tr><td>Ole Miss Rebels</td><td>BYU Cougars</td><td>1548.3 / 1543.5</td><td>49.3%</td><td>103 / -103</td><td>-0.2</td><td>&mdash;</td></tr>
+<tr><td>San Francisco Dons</td><td>Oregon State Beavers</td><td>1511.8 / 1571.0</td><td>58.4%</td><td>-141 / 141</td><td>2.0</td><td>&mdash;</td></tr>
+<tr><td>App State Mountaineers</td><td>Yale Bulldogs</td><td>1516.1 / 1493.2</td><td>46.7%</td><td>114 / -114</td><td>-0.8</td><td>&mdash;</td></tr>
+<tr><td>North Dakota Fighting Hawks</td><td>Detroit Mercy Titans</td><td>1509.9 / 1439.7</td><td>40.0%</td><td>150 / -150</td><td>-2.3</td><td>&mdash;</td></tr>
+<tr><td>Arkansas State Red Wolves</td><td>Long Beach State Beach</td><td>1491.4 / 1480.9</td><td>48.5%</td><td>106 / -106</td><td>-0.4</td><td>&mdash;</td></tr>
+<tr><td>New Haven Chargers</td><td>Lindenwood Lions</td><td>1513.9 / 1485.9</td><td>46.0%</td><td>117 / -117</td><td>-0.9</td><td>&mdash;</td></tr>
+<tr><td>Illinois State Redbirds</td><td>Tulsa Golden Hurricane</td><td>1508.3 / 1503.6</td><td>49.3%</td><td>103 / -103</td><td>-0.2</td><td>&mdash;</td></tr>
+<tr><td>Penn State Berks PENN STATE-LEHIGH VALLEY</td><td>Navy Midshipmen</td><td>1500.0 / 1516.9</td><td>66.2%</td><td>-196 / 196</td><td>3.9</td><td>&mdash;</td></tr>
+<tr><td>Providence Friars</td><td>Arizona Wildcats</td><td>1516.9 / 1553.5</td><td>55.2%</td><td>-123 / 123</td><td>1.2</td><td>&mdash;</td></tr>
+<tr><td>Bloomsburg Huskies</td><td>Wagner Seahawks</td><td>1500.0 / 1460.5</td><td>58.6%</td><td>-142 / 142</td><td>2.0</td><td>&mdash;</td></tr>
+<tr><td>Emerson Lions</td><td>Quinnipiac Bobcats</td><td>1500.0 / 1477.5</td><td>61.0%</td><td>-156 / 156</td><td>2.6</td><td>&mdash;</td></tr>
+<tr><td>Kent State Golden Flashes</td><td>Wyoming Cowboys</td><td>1502.3 / 1557.3</td><td>57.8%</td><td>-137 / 137</td><td>1.8</td><td>&mdash;</td></tr>
+<tr><td>San Diego State Aztecs</td><td>Iowa State Cyclones</td><td>1559.0 / 1531.1</td><td>46.0%</td><td>117 / -117</td><td>-0.9</td><td>&mdash;</td></tr>
+<tr><td>Creighton Bluejays</td><td>Michigan Wolverines</td><td>1525.6 / 1497.4</td><td>46.0%</td><td>118 / -118</td><td>-0.9</td><td>&mdash;</td></tr>
+<tr><td>Sacred Heart Pioneers</td><td>Rutgers Scarlet Knights</td><td>1471.1 / 1515.4</td><td>69.7%</td><td>-230 / 230</td><td>4.8</td><td>&mdash;</td></tr>
+<tr><td>Southern Indiana Screaming Eagles</td><td>VMI Keydets</td><td>1474.3 / 1500.6</td><td>67.4%</td><td>-207 / 207</td><td>4.2</td><td>&mdash;</td></tr>
+<tr><td>Mercer Bears</td><td>Florida Atlantic Owls</td><td>1487.9 / 1523.2</td><td>68.5%</td><td>-218 / 218</td><td>4.5</td><td>&mdash;</td></tr>
+<tr><td>Queens University Royals</td><td>Wofford Terriers</td><td>1499.1 / 1519.9</td><td>66.7%</td><td>-200 / 200</td><td>4.0</td><td>&mdash;</td></tr>
+<tr><td>Eastern Michigan Eagles</td><td>Kennesaw State Owls</td><td>1520.6 / 1531.4</td><td>51.6%</td><td>-106 / 106</td><td>0.4</td><td>&mdash;</td></tr>
+<tr><td>DePaul Blue Demons</td><td>Purdue Boilermakers</td><td>1552.5 / 1526.9</td><td>46.3%</td><td>116 / -116</td><td>-0.9</td><td>&mdash;</td></tr>
+<tr><td>Robert Morris Colonials</td><td>Lamar Cardinals</td><td>1494.0 / 1504.3</td><td>51.5%</td><td>-106 / 106</td><td>0.3</td><td>&mdash;</td></tr>
+<tr><td>Elon Phoenix</td><td>Furman Paladins</td><td>1484.2 / 1556.6</td><td>73.0%</td><td>-270 / 270</td><td>5.7</td><td>&mdash;</td></tr>
+<tr><td>Milwaukee Panthers</td><td>Florida Gators</td><td>1489.5 / 1556.3</td><td>72.3%</td><td>-261 / 261</td><td>5.6</td><td>&mdash;</td></tr>
+<tr><td>Vanderbilt Commodores</td><td>Ohio State Buckeyes</td><td>1552.4 / 1531.7</td><td>61.2%</td><td>-158 / 158</td><td>2.6</td><td>&mdash;</td></tr>
+<tr><td>Jacksonville Dolphins</td><td>Indiana Hoosiers</td><td>1450.2 / 1568.6</td><td>77.9%</td><td>-352 / 352</td><td>7.3</td><td>&mdash;</td></tr>
+<tr><td>Carolina Christian Centurions</td><td>Presbyterian Blue Hose</td><td>1500.0 / 1480.5</td><td>61.4%</td><td>-159 / 159</td><td>2.7</td><td>&mdash;</td></tr>
+<tr><td>Hampton Pirates</td><td>Old Dominion Monarchs</td><td>1480.2 / 1549.2</td><td>72.6%</td><td>-265 / 265</td><td>5.6</td><td>&mdash;</td></tr>
+<tr><td>Tarleton State Texans</td><td>Weber State Wildcats</td><td>1521.0 / 1470.9</td><td>57.1%</td><td>-133 / 133</td><td>1.7</td><td>&mdash;</td></tr>
+<tr><td>Bryant Bulldogs</td><td>Marist Red Foxes</td><td>1483.2 / 1509.8</td><td>67.4%</td><td>-207 / 207</td><td>4.2</td><td>&mdash;</td></tr>
+<tr><td>Coppin State Eagles</td><td>Villanova Wildcats</td><td>1442.7 / 1532.5</td><td>74.9%</td><td>-298 / 298</td><td>6.3</td><td>&mdash;</td></tr>
+<tr><td>Rider Broncs</td><td>Loyola Maryland Greyhounds</td><td>1478.1 / 1466.7</td><td>62.5%</td><td>-167 / 167</td><td>3.0</td><td>&mdash;</td></tr>
+<tr><td>Georgia Southern Eagles</td><td>Bellarmine Knights</td><td>1465.3 / 1483.2</td><td>52.6%</td><td>-111 / 111</td><td>0.6</td><td>&mdash;</td></tr>
+<tr><td>Delaware State Hornets</td><td>Chattanooga Mocs</td><td>1457.2 / 1515.2</td><td>71.3%</td><td>-248 / 248</td><td>5.3</td><td>&mdash;</td></tr>
+<tr><td>Mount St. Mary's Mountaineers</td><td>Morgan State Bears</td><td>1463.7 / 1498.0</td><td>68.4%</td><td>-217 / 217</td><td>4.5</td><td>&mdash;</td></tr>
+<tr><td>New Hampshire Wildcats</td><td>Seton Hall Pirates</td><td>1506.4 / 1549.7</td><td>69.5%</td><td>-228 / 228</td><td>4.8</td><td>&mdash;</td></tr>
+<tr><td>Campbell Fighting Camels</td><td>Coastal Carolina Chanticleers</td><td>1501.4 / 1488.9</td><td>62.3%</td><td>-165 / 165</td><td>2.9</td><td>&mdash;</td></tr>
+<tr><td>UMBC Retrievers</td><td>Iowa Hawkeyes</td><td>1512.5 / 1513.1</td><td>64.1%</td><td>-178 / 178</td><td>3.4</td><td>&mdash;</td></tr>
+<tr><td>Vermont Catamounts</td><td>Siena Saints</td><td>1509.5 / 1546.5</td><td>68.8%</td><td>-220 / 220</td><td>4.6</td><td>&mdash;</td></tr>
+<tr><td>Boston University Terriers</td><td>Harvard Crimson</td><td>1529.6 / 1486.4</td><td>58.1%</td><td>-139 / 139</td><td>1.9</td><td>&mdash;</td></tr>
+<tr><td>Samford Bulldogs</td><td>Georgia Tech Yellow Jackets</td><td>1501.9 / 1532.3</td><td>67.9%</td><td>-212 / 212</td><td>4.3</td><td>&mdash;</td></tr>
+<tr><td>SUNY Fredonia Blue Devils</td><td>Mercyhurst Lakers</td><td>1500.0 / 1499.7</td><td>64.0%</td><td>-177 / 177</td><td>3.3</td><td>&mdash;</td></tr>
+<tr><td>Stetson Hatters</td><td>South Florida Bulls</td><td>1469.4 / 1487.5</td><td>66.4%</td><td>-197 / 197</td><td>3.9</td><td>&mdash;</td></tr>
+<tr><td>Nevada Wolf Pack</td><td>Santa Clara Broncos</td><td>1496.2 / 1530.6</td><td>54.9%</td><td>-122 / 122</td><td>1.1</td><td>&mdash;</td></tr>
+<tr><td>Charleston Southern Buccaneers</td><td>James Madison Dukes</td><td>1475.9 / 1548.3</td><td>72.9%</td><td>-270 / 270</td><td>5.7</td><td>&mdash;</td></tr>
+<tr><td>Binghamton Bearcats</td><td>Lehigh Mountain Hawks</td><td>1534.2 / 1532.7</td><td>63.8%</td><td>-176 / 176</td><td>3.3</td><td>&mdash;</td></tr>
+<tr><td>Gardner-Webb Runnin' Bulldogs</td><td>Bowling Green Falcons</td><td>1458.7 / 1489.0</td><td>67.9%</td><td>-212 / 212</td><td>4.3</td><td>&mdash;</td></tr>
+<tr><td>Arlington Baptist Patriots</td><td>East Texas A&amp;M Lions</td><td>1500.0 / 1497.0</td><td>63.6%</td><td>-175 / 175</td><td>3.2</td><td>&mdash;</td></tr>
+<tr><td>Purdue Fort Wayne Mastodons</td><td>Southeast Missouri State Redhawks</td><td>1532.2 / 1488.1</td><td>58.0%</td><td>-138 / 138</td><td>1.9</td><td>&mdash;</td></tr>
+<tr><td>Alcorn State Braves</td><td>Louisiana Tech Bulldogs</td><td>1439.5 / 1510.3</td><td>72.8%</td><td>-267 / 267</td><td>5.7</td><td>&mdash;</td></tr>
+<tr><td>High Point Panthers</td><td>Duquesne Dukes</td><td>1563.5 / 1543.3</td><td>47.1%</td><td>112 / -112</td><td>-0.7</td><td>&mdash;</td></tr>
+<tr><td>Houston Christian Huskies</td><td>UL Monroe Warhawks</td><td>1528.2 / 1473.2</td><td>56.4%</td><td>-130 / 130</td><td>1.5</td><td>&mdash;</td></tr>
+<tr><td>West Georgia Wolves</td><td>Tennessee Tech Golden Eagles</td><td>1484.0 / 1551.7</td><td>72.4%</td><td>-263 / 263</td><td>5.6</td><td>&mdash;</td></tr>
+<tr><td>Texas Tech Red Raiders</td><td>Louisville Cardinals</td><td>1543.3 / 1510.6</td><td>45.3%</td><td>121 / -121</td><td>-1.1</td><td>&mdash;</td></tr>
+<tr><td>Florida A&amp;M Rattlers</td><td>South Alabama Jaguars</td><td>1436.9 / 1514.4</td><td>73.5%</td><td>-278 / 278</td><td>5.9</td><td>&mdash;</td></tr>
+<tr><td>Arkansas Baptist Buffaloes</td><td>Little Rock Trojans</td><td>1500.0 / 1490.1</td><td>62.7%</td><td>-168 / 168</td><td>3.0</td><td>&mdash;</td></tr>
+<tr><td>Oral Roberts Golden Eagles</td><td>UT Arlington Mavericks</td><td>1512.6 / 1564.2</td><td>70.5%</td><td>-239 / 239</td><td>5.1</td><td>&mdash;</td></tr>
+<tr><td>Alabama A&amp;M Bulldogs</td><td>North Alabama Lions</td><td>1503.6 / 1512.4</td><td>65.2%</td><td>-187 / 187</td><td>3.6</td><td>&mdash;</td></tr>
+<tr><td>Bucknell Bison</td><td>Cornell Big Red</td><td>1449.4 / 1500.3</td><td>70.4%</td><td>-238 / 238</td><td>5.0</td><td>&mdash;</td></tr>
+<tr><td>Clemson Tigers</td><td>Washington Huskies</td><td>1500.8 / 1532.2</td><td>54.5%</td><td>-120 / 120</td><td>1.0</td><td>&mdash;</td></tr>
+<tr><td>Drexel Dragons</td><td>Pennsylvania Quakers</td><td>1514.3 / 1513.7</td><td>63.9%</td><td>-177 / 177</td><td>3.3</td><td>&mdash;</td></tr>
+<tr><td>Green Bay Phoenix</td><td>Kansas City Roos</td><td>1484.9 / 1495.3</td><td>65.4%</td><td>-189 / 189</td><td>3.7</td><td>&mdash;</td></tr>
+<tr><td>Lipscomb Bisons</td><td>Auburn Tigers</td><td>1519.2 / 1490.2</td><td>60.1%</td><td>-150 / 150</td><td>2.4</td><td>&mdash;</td></tr>
+<tr><td>Army Black Knights</td><td>Air Force Falcons</td><td>1478.3 / 1509.5</td><td>54.5%</td><td>-120 / 120</td><td>1.0</td><td>&mdash;</td></tr>
+<tr><td>Central Michigan Chippewas</td><td>Notre Dame Fighting Irish</td><td>1515.3 / 1549.3</td><td>68.4%</td><td>-216 / 216</td><td>4.5</td><td>&mdash;</td></tr>
+<tr><td>Louisiana Christian Wildcats</td><td>Louisiana Ragin' Cajuns</td><td>1475.7 / 1472.2</td><td>63.5%</td><td>-174 / 174</td><td>3.2</td><td>&mdash;</td></tr>
+<tr><td>Charleston Cougars</td><td>UTEP Miners</td><td>1529.3 / 1548.6</td><td>52.8%</td><td>-112 / 112</td><td>0.6</td><td>&mdash;</td></tr>
+<tr><td>Sam Houston Bearkats</td><td>Washington State Cougars</td><td>1511.7 / 1490.7</td><td>61.2%</td><td>-158 / 158</td><td>2.6</td><td>&mdash;</td></tr>
+<tr><td>UNC Greensboro Spartans</td><td>UC Santa Barbara Gauchos</td><td>1529.2 / 1552.8</td><td>67.1%</td><td>-204 / 204</td><td>4.1</td><td>&mdash;</td></tr>
+<tr><td>Idaho State Bengals</td><td>Boise State Broncos</td><td>1483.3 / 1494.6</td><td>65.5%</td><td>-190 / 190</td><td>3.7</td><td>&mdash;</td></tr>
+<tr><td>Evansville Purple Aces</td><td>Missouri Tigers</td><td>1481.7 / 1541.1</td><td>71.5%</td><td>-250 / 250</td><td>5.3</td><td>&mdash;</td></tr>
+<tr><td>UNC Asheville Bulldogs</td><td>Florida State Seminoles</td><td>1469.8 / 1525.6</td><td>71.0%</td><td>-245 / 245</td><td>5.2</td><td>&mdash;</td></tr>
+<tr><td>Grand Canyon Lopes</td><td>Saint Louis Billikens</td><td>1531.4 / 1496.5</td><td>45.0%</td><td>122 / -122</td><td>-1.2</td><td>&mdash;</td></tr>
+<tr><td>Baylor Bears</td><td>Alabama Crimson Tide</td><td>1517.6 / 1554.6</td><td>55.3%</td><td>-124 / 124</td><td>1.2</td><td>&mdash;</td></tr>
+<tr><td>Oregon Ducks</td><td>St. John's Red Storm</td><td>1506.6 / 1544.8</td><td>55.5%</td><td>-125 / 125</td><td>1.3</td><td>&mdash;</td></tr>
+<tr><td>VCU Rams</td><td>Colorado State Rams</td><td>1522.6 / 1511.1</td><td>48.3%</td><td>107 / -107</td><td>-0.4</td><td>&mdash;</td></tr>
+<tr><td>Stanford Cardinal</td><td>Colorado Buffaloes</td><td>1532.1 / 1465.7</td><td>40.6%</td><td>147 / -147</td><td>-2.2</td><td>&mdash;</td></tr>
+<tr><td>Gonzaga Bulldogs</td><td>Kansas State Wildcats</td><td>1504.8 / 1494.1</td><td>48.5%</td><td>106 / -106</td><td>-0.4</td><td>&mdash;</td></tr>
+</table></div>
+<h2>NCAAF today</h2><div class="wrap"><table><tr><th>Away</th><th>Home</th><th>Elo A / H</th><th>P(home win)</th><th>Fair ML H / A</th><th>Model margin (H)</th><th>Edges</th></tr>
+<tr><td>Kent State Golden Flashes</td><td>Eastern Michigan Eagles</td><td>1426.7 / 1464.4</td><td>64.4%</td><td>-181 / 181</td><td>3.7</td><td>&mdash;</td></tr>
+<tr><td>Miami (OH) RedHawks</td><td>Western Michigan Broncos</td><td>1542.3 / 1566.4</td><td>62.6%</td><td>-167 / 167</td><td>3.2</td><td>&mdash;</td></tr>
 </table></div>
 <h2>Graded flags</h2><div class="wrap"><table><tr><th>Date</th><th>Sport</th><th>Game</th><th>Market</th><th>Side</th><th>Line</th><th>Price</th><th>Result</th><th>Money</th></tr>
 <tr><td>2026-11-23</td><td>NBA</td><td>San Antonio Spurs @ Sacramento Kings</td><td>Spread</td><td>home</td><td>12.5</td><td>-105 FanDuel</td><td class="loss">L</td><td>$-100.00</td></tr>
