@@ -2021,7 +2021,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 4.0,
+   "spread": 3.5,
    "fav_team": "North Texas",
    "dog_team": "UAB"
   },
@@ -2478,7 +2478,8 @@
    "sport": "NCAAB",
    "matchup": "Notre Dame MD at Howard",
    "date": "2026-11-24",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928838": {
    "sport": "NCAAB",
@@ -2520,7 +2521,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "N Kentucky",
-   "dog_team": "GA Southern"
+   "dog_team": "GA Southern",
+   "final": true
   },
   "401919785": {
    "sport": "NCAAB",
@@ -2577,7 +2579,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Wichita St",
-   "dog_team": "Texas A&M-CC"
+   "dog_team": "Texas A&M-CC",
+   "final": true
   },
   "401913530": {
    "sport": "NCAAB",
@@ -2655,7 +2658,18 @@
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Pepperdine",
-   "dog_team": "UNC Greensboro"
+   "dog_team": "UNC Greensboro",
+   "live_ml": -298,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-23T21:36:05",
+   "warn_board_read_at": "2026-11-23T21:36:04",
+   "warn_expires_at": "2026-11-23T21:39:05",
+   "warn_detail": "16:31 - 1st Half",
+   "warn_fav_score": 6,
+   "warn_dog_score": 7,
+   "warn_ml": -810,
+   "ml_read_at": "2026-11-23T21:36:05"
   },
   "401921663": {
    "sport": "NCAAB",
@@ -2715,7 +2729,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Grizzlies",
-   "dog_team": "Hornets"
+   "dog_team": "Hornets",
+   "final": true
   },
   "401910037": {
    "sport": "NBA",
@@ -2725,7 +2740,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Trail Blazers",
-   "dog_team": "76ers"
+   "dog_team": "76ers",
+   "final": true
   },
   "401910038": {
    "sport": "NBA",
