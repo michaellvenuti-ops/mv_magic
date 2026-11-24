@@ -12,4 +12,5 @@ NEW TODD PLAY: Total 135.5 -132 :: raw: "@everyone un135.5 -132 Akron" :: msg 15
 ## 2026-11-24 14:06:02 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 73.5 -115 :: raw: "@everyone ov73.5 -115 Pitt team tot" :: msg 1574863572734058517 :: posted 2026-11-24T19:05:35.290Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 14:06:04 ET — 1 NEW Todd play
-NEW TODD PLAY: Todd play (in-play CBB) -125 :: raw: "Coulda had 72.5 -125 but I screwed up" :: msg 1574863615905898619 :: posted 2026-11-24T19:05:45.583Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-24 14:36:40 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 42.5 -115 :: raw: "@everyone ov42.5 tt oreg st team tot-115 1h" :: msg 1574871342661238787 :: posted 2026-11-24T19:36:27.785Z :: Novig: https://app.novig.us/AppEntry
