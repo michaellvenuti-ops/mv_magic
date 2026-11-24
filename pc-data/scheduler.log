@@ -11381,3 +11381,29 @@
 [2026-11-24 10:26:31 ET] dh_kalshi_poly_arb.py: OK in 40s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-24 10:26:36 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA DAL Mavericks DEN Nuggets Today 10:15 PM — Total — Over 230.5 FanDuel -136 ($113) / Under 231 ProphetX +127 ($87) — win+push at 231 — push +$83.0
 [2026-11-24 10:26:36 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 10:56:36 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 10:58:22 ET] dh_low_holds.py: OK in 106s — LOW-HOLDS: NCAAB Nevada Santa Clara Today 7:00 PM / Today 7:00 PM / table / Alt Spread Santa Clara +3.5 / Alt Spread Nevada -3.5 / table | Fanatics-NJ | Bally B
+[2026-11-24 11:01:02 ET] dh_game_middles.py: OK in 159s — GAME MIDDLE: NCAAB San Diego St. 18 Iowa St. Today 5:30 PM / Today 5:30 PM / table / Spread San Diego St. +9.5 / Alt Spread Iowa St. -9 / table | Bally Bet | Be
+[2026-11-24 11:04:21 ET] dh_key_number_middles.py: OK in 199s — key-number-middles: 584 basketball rows excluded (football-only rule).
+[2026-11-24 11:07:34 ET] dh_basketball_key_middles.py: OK in 193s — BASKETBALL MIDDLE (NCAAB spread, SPANKY baseline): NCAAB 9 Tennessee Maryland Today 3:00 PM / Today 3:00 PM / table / Spread Tennessee -2.5 / Alt Spread Marylan
+[2026-11-24 11:08:08 ET] hung_number.py: OK in 34s — HUNG NUMBER: Florida Atlantic vs East Carolina — Fanatics moneyline Florida Atlantic value Florida Atlantic (99.0 vs median 51.3)
+[2026-11-24 11:08:14 ET] rlm.py: OK in 5s
+[2026-11-24 11:08:18 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-24 11:08:22 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 11:09:47 ET] dh_prop_middles.py: FAILED (exit 2) in 86s — prop-middles: zero player-prop middles parsed (981 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state writte
+[2026-11-24 11:11:53 ET] dh_sog_middles.py: OK in 126s — - 0 deliverables this run
+[2026-11-24 11:11:56 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Philadelphia 19.5/21.5 sits at -1.4c vs 
+[2026-11-24 11:11:57 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 11:11:59 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 11:12:00 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 11:12:04 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 0 new, 2 unverified, 1077 total tallied.
+[2026-11-24 11:12:05 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 11:12:06 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 11:12:07 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-24 11:12:09 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-24 11:12:10 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 5-5-0, $+29.29 (inverse money only where an opposite price was recorded)
+[2026-11-24 11:12:11 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-24 11:12:13 ET] half_percent.py: OK in 1s — half-percent recheck: 11:12 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-24 11:12:15 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-24 11:13:25 ET] promo_watch.py: OK in 70s — promo-watch: 11 listed, 0 new, 0 converter attempt(s).
+[2026-11-24 11:13:25 ET] syncing to GitHub (regular 10-minute sync)
