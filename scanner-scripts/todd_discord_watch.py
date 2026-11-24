@@ -146,6 +146,15 @@ def save_state(st):
 
 # ------------------------------------------------------------------ ntfy
 
+def _latin1_safe(s):
+    """HTTP headers must be latin-1; the play titles use an em dash
+    (U+2014), which crashed every ntfy push with a latin-1 codec
+    error (found 2026-11-24: both of the day's pushes failed this
+    way, so no phone alert ever went out)."""
+    return (s.replace("\u2014", "-").replace("\u2013", "-")
+             .encode("latin-1", "replace").decode("latin-1"))
+
+
 def ntfy_todd(title, body):
     """Instant phone alert. Title + Click headers make the notification
     itself the one-tap card: tap it and Novig opens. Returns True if
@@ -158,7 +167,7 @@ def ntfy_todd(title, body):
         req = urllib.request.Request(
             f"https://ntfy.sh/{topic}", data=body.encode("utf-8"),
             method="POST",
-            headers={"Title": title, "Click": NOVIG_LINK,
+            headers={"Title": _latin1_safe(title), "Click": NOVIG_LINK,
                      "Priority": "high", "Tags": "basketball",
                      "Content-Type": "text/plain"})
         with urllib.request.urlopen(req, timeout=20) as resp:
@@ -184,6 +193,21 @@ def _clean_team(s):
         return s
     s = _MARKET_WORDS_RE.sub("", s.strip()).strip()
     return _LEADING_MARKET_WORDS_RE.sub("", s).strip()
+
+
+def is_records_update(text):
+    """True for Todd's season-records updates ('Cfb goes 0-0 for
+    0.00 to move to 234-234 for -29.49 ...'), which are NOT plays:
+    they name no game and no side, but parse_play() fabricates a
+    line/price from the season-unit numbers (added 2026-11-24 after
+    one such update woke the delivery hook as 'Spread -29.49 -148').
+    Guarded so a message that BOTH uses the records idiom AND parses
+    to no game is skipped; anything with a game still alerts
+    (fail-safe toward alerting)."""
+    t = " ".join(text.split())
+    if not re.search(r"\bgoes\b.*\bto move to\b", t, re.I):
+        return False
+    return parse_play(t).get("game") is None
 
 
 def parse_play(text):
@@ -675,7 +699,11 @@ def handle_session_lost(state):
 
 
 def handle_new_play(msg, state):
-    parsed = parse_play(msg.get("text", ""))
+    text = msg.get("text", "")
+    if is_records_update(text):
+        log(f"skipped records update (not a play): {text[:100]}")
+        return
+    parsed = parse_play(text)
     play, md_path = bank_play(parsed, msg["message_id"],
                               msg.get("posted"))
     state["plays_logged"] = state.get("plays_logged", 0) + 1
