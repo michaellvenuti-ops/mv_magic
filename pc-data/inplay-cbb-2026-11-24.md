@@ -41,3 +41,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: Creighton at Michigan | Full Total (at half) Ove
 NEW IN-PLAY CBB: 2ND BITE: Sacred Heart at Rutgers | Full Total (at half) Over 187.5 | 1H total 102 cleared implied 1H line 79.75 by +22.2; pace proj 204.0 vs live total 187.5 -- take the Over again at the half | H1 102 | as of 18:52:03 ET
 ## 2026-11-24 18:56:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: DePaul at Purdue | Full Total (at half) Under 135.5 -110 | pace proj 130.0 (H1 65 x 2) vs live total 135.5 (gap -5.5, bar 5) | H1 65 | as of 18:56:03 ET
+## 2026-11-24 18:58:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: 2ND BITE: Mercer at FAU | Full Total (at half) Over 178.5 -125 | 1H total 93 cleared implied 1H line 79.75 by +13.2; pace proj 186.0 vs live total 178.5 -- take the Over again at the half | H1 93 | as of 18:58:04 ET
