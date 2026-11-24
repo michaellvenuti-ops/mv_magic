@@ -1682,7 +1682,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 10.0,
+   "spread": 10.5,
    "fav_team": "Ohio State",
    "dog_team": "Michigan"
   },
@@ -2689,7 +2689,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Seattle U",
-   "dog_team": "Loyola Chicago"
+   "dog_team": "Loyola Chicago",
+   "final": true
   },
   "401920721": {
    "sport": "NCAAB",
@@ -2699,7 +2700,8 @@
    "fav": "home",
    "spread": 8.5,
    "fav_team": "UNLV",
-   "dog_team": "E Washington"
+   "dog_team": "E Washington",
+   "final": true
   },
   "401918057": {
    "sport": "NCAAB",
@@ -2709,7 +2711,8 @@
    "fav": "home",
    "spread": 17.5,
    "fav_team": "California",
-   "dog_team": "Alabama St"
+   "dog_team": "Alabama St",
+   "final": true
   },
   "401909743": {
    "sport": "NCAAB",
@@ -2719,7 +2722,18 @@
    "fav": "home",
    "spread": 17.5,
    "fav_team": "Arizona",
-   "dog_team": "Colorado St"
+   "dog_team": "Colorado St",
+   "live_ml": -1450,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-24T00:01:14",
+   "warn_board_read_at": "2026-11-24T00:01:14",
+   "warn_expires_at": "2026-11-24T00:04:14",
+   "warn_detail": "16:57 - 1st Half",
+   "warn_fav_score": 5,
+   "warn_dog_score": 6,
+   "warn_ml": -1300,
+   "ml_read_at": "2026-11-24T00:01:14"
   },
   "401921664": {
    "sport": "NCAAB",
@@ -2727,7 +2741,7 @@
    "date": "2026-11-24",
    "alerted": false,
    "fav": "home",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "UC San Diego",
    "dog_team": "San Jos\u00e9 St"
   },
@@ -2857,7 +2871,7 @@
    "spread": 13.5,
    "fav_team": "Lakers",
    "dog_team": "Jazz",
-   "live_ml": -390,
+   "live_ml": -205,
    "ml_bucket": "strong",
    "warned": true,
    "warned_at": "2026-11-23T23:38:08",
@@ -2867,7 +2881,8 @@
    "warn_fav_score": 56,
    "warn_dog_score": 57,
    "warn_ml": -390,
-   "ml_read_at": "2026-11-23T23:38:08"
+   "ml_read_at": "2026-11-23T23:38:08",
+   "final": true
   },
   "401910045": {
    "sport": "NBA",
@@ -2877,7 +2892,8 @@
    "fav": "away",
    "spread": 8.5,
    "fav_team": "Spurs",
-   "dog_team": "Kings"
+   "dog_team": "Kings",
+   "final": true
   }
  }
 }
