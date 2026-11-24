@@ -15,12 +15,12 @@ NEW TODD PLAY: Total 73.5 -115 :: raw: "@everyone ov73.5 -115 Pitt team tot" :: 
 ## 2026-11-24 14:36:40 ET — 1 NEW Todd play
 NEW TODD PLAY: Oregon State vs San Francisco - 1st Half Total 42.5 -115 :: raw: "@everyone ov42.5 tt oreg st team tot-115 1h" :: msg 1574871342661238787 :: posted 2026-11-24T19:36:27.785Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 15:29:47 ET — 1 NEW Todd play
-NEW TODD PLAY: Total 138.5 -110 :: raw: "@everyone Un138.5 -110 rice late" :: msg 1574884728396456058 :: posted 2026-11-24T20:29:39.193Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Rice vs UIC - Total 138.5 -110 :: raw: "@everyone Un138.5 -110 rice late" :: msg 1574884728396456058 :: posted 2026-11-24T20:29:39.193Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 16:07:23 ET — 1 NEW Todd play
-NEW TODD PLAY: Total 150.5 -110 :: raw: "@everyone un150.5 -110 Tennessee game" :: msg 1574894196895256587 :: posted 2026-11-24T21:07:16.659Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Tennessee vs Maryland - Total 150.5 -110 :: raw: "@everyone un150.5 -110 Tennessee game" :: msg 1574894196895256587 :: posted 2026-11-24T21:07:16.659Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 16:09:15 ET — 1 NEW Todd play
-NEW TODD PLAY: Moneyline -113 :: raw: "@everyone ole miss -113 ml" :: msg 1574894641449271297 :: posted 2026-11-24T21:09:02.649Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Ole Miss vs BYU - Moneyline -113 :: raw: "@everyone ole miss -113 ml" :: msg 1574894641449271297 :: posted 2026-11-24T21:09:02.649Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 16:18:44 ET — 1 NEW Todd play
-NEW TODD PLAY: 1st Half Total 88.5 -125 :: raw: "@everyone ov88.5 -125 ark st 1h" :: msg 1574896980830982219 :: posted 2026-11-24T21:18:20.401Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Arkansas State vs Long Beach State - 1st Half Total 88.5 -125 :: raw: "@everyone ov88.5 -125 ark st 1h" :: msg 1574896980830982219 :: posted 2026-11-24T21:18:20.401Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-24 16:45:13 ET — 1 NEW Todd play
-NEW TODD PLAY: Total 96.5 -125 :: raw: "@everyone ov96.5 -125 team tot ark st (at the half" :: msg 1574903664743817347 :: posted 2026-11-24T21:44:53.970Z :: Novig: https://app.novig.us/AppEntry
+NEW TODD PLAY: Arkansas State vs Long Beach State - Team Total 96.5 -125 :: raw: "@everyone ov96.5 -125 team tot ark st (at the half" :: msg 1574903664743817347 :: posted 2026-11-24T21:44:53.970Z :: Novig: https://app.novig.us/AppEntry
