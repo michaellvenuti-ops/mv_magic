@@ -19,3 +19,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: Ole Miss at BYU | Full Total (at half) Over 150.
 NEW IN-PLAY CBB: PACE: App State at Yale | Full Total (at half) Under 116.5 -120 | pace proj 90.0 (H1 45 x 2) vs live total 116.5 (gap -26.5, bar 5) | H1 45 | as of 15:46:27 ET
 ## 2026-11-24 15:56:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: North Dakota at Detroit Mercy | Full Total (at half) Under 157.5 -115 | pace proj 148.0 (H1 74 x 2) vs live total 157.5 (gap -9.5, bar 5) | H1 74 | as of 15:56:02 ET
+## 2026-11-24 16:00:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Tennessee at Maryland | Full Total (at half) Under 149.5 | pace proj 140.0 (H1 70 x 2) vs live total 149.5 (gap -9.5, bar 5) | H1 70 | as of 16:00:02 ET
