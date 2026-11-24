@@ -273,6 +273,13 @@ _RECAP_MARKERS = [re.compile(p, re.I) for p in [
     r"\btally\b",
     r"\bfor newbies\b",
     r"mark this one down",             # result-talk complaint
+    r"coulda had",                     # regret: "Coulda had 72.5 -125
+    r"could have had",                 #   but I screwed up" (TD-007,
+    r"\bscrewed up\b",                 #   Nov 24 14:06 -- carries a
+    r"\bmissed it\b",                  #   price + number, so the other
+                                        #   checks miss it; added 2026-11-24
+                                        #   at his tap. Measured: 0 hits on
+                                        #   the 56 gradeable real picks.
 ]]
 
 
