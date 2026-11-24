@@ -11,3 +11,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: Southern Utah at FIU | Full Total (at half) Over
 NEW IN-PLAY CBB: PACE: UIC at Rice | Full Total (at half) Under 138.5 -110 | pace proj 126.0 (H1 63 x 2) vs live total 138.5 (gap -12.5, bar 5) | H1 63 | as of 14:28:02 ET
 ## 2026-11-24 14:30:07 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: Oklahoma at Pitt | Full Total (at half) Under 139.5 -120 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 14:30:06 ET
+## 2026-11-24 14:56:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: 2ND BITE: San Francisco at Oregon St | Full Total (at half) Over 160.5 -110 | 1H total 83 cleared implied 1H line 74.25 by +8.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 14:56:02 ET
