@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Todd's In-Play CBB Model — Back-Derivation</title>
+<style>
+:root{
+  --bg:#f4f3ef; --surface:#ffffff; --surface2:#eef0ea; --ink:#171a17; --muted:#5b625b; --line:#dddcd4;
+  --green:#0f5132; --green2:#146c43; --amber:#b45309; --rust:#9a3412; --teal:#0f766e;
+  --easy:#dcfce7; --easy-ink:#166534; --med:#fef3c7; --med-ink:#92400e; --hard:#fee2e2; --hard-ink:#991b1b;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111311; --surface:#1a1e1a; --surface2:#222722; --ink:#eef0ea; --muted:#a8b0a6; --line:#2e332e; --easy:#14301f; --easy-ink:#86efac; --med:#33270e; --med-ink:#fcd34d; --hard:#3a1717; --hard-ink:#fca5a5; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+a{color:var(--green2);text-underline-offset:3px}
+@media (prefers-color-scheme: dark){ a{color:#7dd3a8} }
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px 56px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style",Palatino,serif;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.4rem);margin:0}
+h2{font-size:1.65rem;margin:34px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:1.08rem;margin:0}
+p{margin:10px 0}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+.hero{padding:28px 0 18px;border-bottom:2px solid var(--ink)}
+.hero-top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.pill{display:inline-flex;align-items:center;min-height:32px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.82rem;font-weight:700;letter-spacing:.02em}
+.lede{font-size:1.08rem;max-width:780px;margin-top:12px;color:var(--muted)}
+.lede strong{color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{font-size:1.55rem;display:block;line-height:1;font-family:Georgia,serif}
+.stat span{font-size:.82rem;color:var(--muted);font-weight:600}
+.verdict{margin-top:22px;background:var(--green);color:#fff;border-radius:16px;padding:20px}
+.verdict h2{color:#fff;border-top:0;margin-top:0;padding-top:0}
+.verdict p{color:#e6f2e9}
+.verdict strong{color:#fff}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:7px 0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--surface2);border-radius:5px;padding:1px 5px}
+.table-scroll{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--surface2);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.notes,td:last-child{white-space:normal;min-width:220px}
+td.w{font-weight:800;color:var(--easy-ink)}
+td.l{font-weight:800;color:var(--hard-ink)}
+td.u{color:var(--muted)}
+td.m{font-weight:800;color:var(--easy-ink)}
+td.mm{font-weight:800;color:var(--med-ink)}
+.warnbox{margin-top:22px;border:1px solid #f59e0b;background:#fffbeb;border-radius:14px;padding:16px}
+@media (prefers-color-scheme: dark){ .warnbox{background:#2a210c;border-color:#92400e} }
+.warnbox h2{font-size:1.15rem;border-top:0;margin-top:0;padding-top:0}
+.warnbox ul{margin:10px 0 0 18px;padding:0;font-size:.92rem;color:var(--muted)}
+.warnbox li{margin:6px 0}
+.footer{margin-top:28px;font-size:.85rem;color:var(--muted);text-align:center}
+.footer a{color:var(--muted)}
+@media(max-width:760px){ .stats{grid-template-columns:1fr 1fr} th,td{font-size:.82rem} }
+button,select,input{min-height:40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-top">
+      <span class="pill">TODD &middot; #TODD-PICKS &middot; CBB DISCORD</span>
+      <span class="pill">Back-derived 23 Nov 2026</span>
+    </div>
+    <h1>Todd&rsquo;s in-play CBB model, back-derived</h1>
+    <p class="lede">Todd bets <strong>in-game pace</strong> &mdash; but he does not follow it blindly. He matches the pace projection about 3 times in 4, and he overrides it on game situation, and the overrides are where his edge over a pure pace rule lives. The 1st-half Over is the leak: his 1H picks lose money while his full-game and at-halftime picks win. <strong>Small sample, suggestive not proven.</strong></p>
+    <div class="stats">
+      <div class="stat"><b>56</b><span>CBB total picks, Nov 20&ndash;23</span></div>
+      <div class="stat"><b>20&ndash;15</b><span>gradeable record (35 of 56)</span></div>
+      <div class="stat"><b>+$238.90</b><span>at $100 flat, stated prices</span></div>
+      <div class="stat"><b>6/8</b><span>pace-match rate, strict fit</span></div>
+    </div>
+  </header>
+  <main>
+<p><strong>Source:</strong> <code>todd-picks-history-2026-11-23.json</code> — 210 messages, #todd-picks (CBB Discord),
+Fri Nov 20, 2026 4:08 PM ET → Mon Nov 23, 2026 6:34 PM ET.
+<strong>Assumption (recorded):</strong> 75 messages have a blank author (Discord message-grouping DOM).
+A blank-author message is treated as a continuation of the previous non-blank author in
+timestamp order. The file contains only wishbbdis messages, so all 75 blank-author messages
+attribute to Todd. 135 messages are explicitly authored &ldquo;wishbbdis&rdquo;.</p>
+<p><strong>Scope correction:</strong> picks_exact.json idx 108 (TCU Under 24.5 1H, Nov 21 10:03 PM ET) is a
+COLLEGE FOOTBALL pick, not CBB. It is EXCLUDED from this fit. CBB total picks = 56
+(of 57 rows in picks_exact.json).</p>
+<h2>1. The derived rule (plainly)</h2>
+<p><strong>Todd bets in-game pace — but he does not follow it blindly. He matches the pace
+projection about 3 times in 4, and he overrides it on game situation, and the overrides
+are where his edge over a pure pace rule lives.</strong></p>
+<p>Stated as a rule:</p>
+<ol>
+<li><strong>Wait for pace to establish.</strong> He normally does NOT bet at the first (under-16-min)
+   timeout. He waits until the pace is visible, then bets the side the pace points to.
+   (His own words: the Siena Under was &ldquo;a classic mistake&rdquo; for betting too early; he
+   &ldquo;almost def would have been on 1h over at some point later in the half.&rdquo;)</li>
+<li><strong>1st-half totals: bet the OVER when the early pace is hot.</strong> He is heavily over-leaning
+   on 1H (41 Overs vs 16 Unders across all 57 picks; 30 of 57 picks are 1H). He will take a
+   1H over on a thin projected edge — the St Mary&rsquo;s 1H over was taken on a projection only
+   ~2 points above the line.</li>
+<li><strong>Full-game totals at halftime: bet the side the 1st-half pace implies (projection = H1 x 2).</strong>
+   All three full-game-at-halftime Unders matched the pace projection. But he overrides to
+   the OVER when a big favorite trails at half (Boise State, a 12.5-pt favorite trailing at
+   half, H1 63 → proj 126 vs line 151.5 — he bet OVER anyway and won; the 2H scored 89).</li>
+<li><strong>Matchup override on 1H overs.</strong> Miami 1H over 71.5: the early pace pointed UNDER
+   (10-8 at ~6 min elapsed, proj ~60), but he bet OVER on matchup (Miami a big favorite vs
+   overmatched Manhattan) and won by 11.5 (H1 83).</li>
+<li><strong>FT shooting + bonus is a secondary input.</strong> He watches FT-shooting rank and bonus
+   status (Wright State: &ldquo;30th in the nation in FT shooting and in the bonus for the last
+   12 mins of this 1h&rdquo;). Missed FTs / missed one-and-ones repeatedly kill his overs
+   (Idaho State, Delaware, Miami, IU Indy — IU Indy finished 19-of-30 FT).</li>
+</ol>
+<p><strong>Threshold:</strong> No clear minimum margin is visible. He took a 1H over on a ~2-point projected
+edge (St Mary&rsquo;s) and full-game-at-halftime unders on 8.5–18.5-point projected edges. If a
+threshold exists, it is small (≤ ~2 points on 1H overs). Sample too small to pin down.</p>
+<p><strong>1H vs full-game:</strong> The rule differs by period. 1H picks are overwhelmingly Overs and are
+the money-loser (see §3). Full-game picks (pregame + at-halftime) are more balanced and
+profitable. The full-game-at-halftime unders are the most pace-faithful subset (3 of 3
+matched pace; 2 of 3 won).</p>
+<h2>2. The pace test (strict fit — independent post-time state only)</h2>
+<p>Only 8 picks have an independently reconstructable post-time state (exact H1 for the 5
+full-game-at-halftime picks; Todd&rsquo;s own clock/score anchors for 3 first-half picks).
+Every other pick&rsquo;s post-time score would have to be interpolated from the final, which is
+circular, so those are excluded from the fit (see §5).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Date/Time ET</th>
+<th>Game</th>
+<th>Pick</th>
+<th>Line</th>
+<th>Post-time state</th>
+<th>Pace proj</th>
+<th>Pace says</th>
+<th>Todd</th>
+<th>Match?</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nov 20 4:25 PM</td>
+<td>Idaho State</td>
+<td>1H Over</td>
+<td>78.5</td>
+<td>~12 min, total ~53.5</td>
+<td>89.2</td>
+<td>Over</td>
+<td>Over</td>
+<td>MATCH</td>
+<td>L (H1 68)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nov 20 5:17 PM</td>
+<td>Miami</td>
+<td>1H Over</td>
+<td>71.5</td>
+<td>~6 min, total ~18</td>
+<td>60.0</td>
+<td>Under</td>
+<td>Over</td>
+<td>MISMATCH</td>
+<td>W (H1 83)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Nov 20 7:57 PM</td>
+<td>Pittsburgh</td>
+<td>Full Over (@half)</td>
+<td>171.5</td>
+<td>H1 94</td>
+<td>188.0</td>
+<td>Over</td>
+<td>Over</td>
+<td>MATCH</td>
+<td>W (186)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nov 20 10:10 PM</td>
+<td>Boise State</td>
+<td>Full Over (@half)</td>
+<td>151.5</td>
+<td>H1 63</td>
+<td>126.0</td>
+<td>Under</td>
+<td>Over</td>
+<td>MISMATCH</td>
+<td>W (152)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nov 20 11:32 PM</td>
+<td>Saint Mary&rsquo;s</td>
+<td>1H Over</td>
+<td>85.5</td>
+<td>~15.5 min, total 68</td>
+<td>87.7</td>
+<td>Over</td>
+<td>Over</td>
+<td>MATCH</td>
+<td>L (H1 79)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Nov 21 11:48 AM</td>
+<td>UNC Greensboro</td>
+<td>Full Under (@half)</td>
+<td>142.5</td>
+<td>H1 66</td>
+<td>132.0</td>
+<td>Under</td>
+<td>Under</td>
+<td>MATCH</td>
+<td>L (151)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Nov 23 4:47 PM</td>
+<td>Yale</td>
+<td>Full Under (@half)</td>
+<td>136.5</td>
+<td>H1 59</td>
+<td>118.0</td>
+<td>Under</td>
+<td>Under</td>
+<td>MATCH</td>
+<td>W (128)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nov 23 5:31 PM</td>
+<td>San Francisco</td>
+<td>Full Under (@half)</td>
+<td>144.5</td>
+<td>H1 68</td>
+<td>136.0</td>
+<td>Under</td>
+<td>Under</td>
+<td>MATCH</td>
+<td>W (133)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Pace-match rate: 6 of 8 (75%).</strong>
+- Todd on these 8: <strong>5W-3L, +$133.79</strong> at $100 flat (stated prices).
+- Pure pace rule (bet the projection side, at -110) on the same 8: <strong>3W-5L, -$227.27</strong>.
+- Todd beat the pure pace rule by ~$361 on these 8 picks.</p>
+<p><strong>Why Todd beat the rule:</strong> The two pace-match 1H overs (Idaho State, Saint Mary&rsquo;s) both LOST on
+late-half scoring droughts (Idaho State: last 8 min produced only 14.5 pts; Saint Mary&rsquo;s:
+last 4.5 min produced only 11 pts incl. &ldquo;2 mins empty&rdquo;). The pure pace rule lost both. Todd
+also lost both — but he WON the two mismatches (Miami on matchup, Boise on trailing-favorite
+2H scoring), while the pure pace rule lost both. So Todd&rsquo;s edge over pure pace in this sample
+is entirely the two situational overrides.</p>
+<p><strong>Supplementary (not in the strict fit):</strong> Idaho State full Over 151.5, posted in-play late in
+the 2H (Nov 20 5:47 PM, ~4.5 min left, total ~137, needing 14.5; 2H pace ~4.45/min implied
+~20 more). Pace-supported over, WON (157). Post-time total is interpolated, so it is not
+counted in the strict 8.</p>
+<h2>3. Todd&rsquo;s graded record (all CBB total picks)</h2>
+<p>Graded at $100 flat at the stated price. Splits at Todd&rsquo;s stated fractions (Duke 0.20u/0.80u
+= $20/$80; North Texas and Fresno State 50/50 = $50/$50). North Texas 157.5 piece price
+unstated — graded at assumed -110 (flagged).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set</th>
+<th>Picks</th>
+<th>W-L-P</th>
+<th>$ at $100 flat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gradeable CBB totals</td>
+<td>35 of 56</td>
+<td>20W-15L-0P</td>
+<td><strong>+$238.90</strong></td>
+</tr>
+<tr>
+<td>1st-half picks</td>
+<td>21</td>
+<td>9W-12L</td>
+<td>-$421.06</td>
+</tr>
+<tr>
+<td>Full-game picks</td>
+<td>9</td>
+<td>7W-2L</td>
+<td>+$413.13</td>
+</tr>
+<tr>
+<td>Full-game-at-halftime picks</td>
+<td>5</td>
+<td>4W-1L</td>
+<td>+$246.84</td>
+</tr>
+<tr>
+<td>Overs</td>
+<td>24</td>
+<td>13W-11L</td>
+<td>+$17.27</td>
+</tr>
+<tr>
+<td>Unders</td>
+<td>11</td>
+<td>7W-4L</td>
+<td>+$221.63</td>
+</tr>
+<tr>
+<td>Nov 20</td>
+<td>13</td>
+<td>7W-6L</td>
+<td>+$107.48</td>
+</tr>
+<tr>
+<td>Nov 21</td>
+<td>6</td>
+<td>3W-3L</td>
+<td>-$135.52</td>
+</tr>
+<tr>
+<td>Nov 22</td>
+<td>2</td>
+<td>2W-0L</td>
+<td>+$163.33</td>
+</tr>
+<tr>
+<td>Nov 23</td>
+<td>14</td>
+<td>8W-6L</td>
+<td>+$103.59</td>
+</tr>
+</tbody>
+</table></div>
+<p>Including the 4 recap-only Nov 20 picks (W/L by Todd&rsquo;s stated results, no line/price so no $):
+<strong>21W-18L</strong> on CBB totals (plus the Va Tech no-line pick, which Todd counts as a loser).</p>
+<p><strong>The clearest pattern in the money:</strong> His 1st-half picks LOSE money (-$421 on 21 picks) while
+his full-game and full-game-at-halftime picks WIN (+$413 and +$247). His Unders (+$222 on 11)
+outperform his Overs (+$17 on 24). The 1H over is the leak: 9W-10L, and the losses cluster
+on late-half droughts and missed free throws (Idaho State lost by 10.5, Delaware by 8.5,
+Saint Mary&rsquo;s by 6.5, IU Indy by 0.5 on 19-of-30 FT).</p>
+<p><strong>Cross-check vs Todd&rsquo;s own tallies (all CBB bets, totals + spreads/MLs):</strong> Nov 20: 11-15, -5.29u;
+Nov 21: 7-4, +2.50u; Nov 22: 5-5, -0.40u. Season (per Todd): 166-134, +14.27u after Nov 22.
+Our totals-only grade is consistent in direction (roughly break-even to slightly winning).</p>
+<h2>4. Per-pick table (all 56 CBB total picks + 4 recap-only)</h2>
+<p>Prices are American as stated by Todd. &ldquo;$&rdquo; is profit/loss at $100 flat (split-adjusted).
+&ldquo;UNK&rdquo; = outcome not retrievable from public sources (see §5). &ldquo;UNK$&rdquo; = no line stated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Idx</th>
+<th>Posted ET</th>
+<th>Game (opp)</th>
+<th>Period</th>
+<th>Market</th>
+<th>Side</th>
+<th>Line</th>
+<th>Price</th>
+<th>Result</th>
+<th>$</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Nov 20 4:08 PM</td>
+<td>Virginia Tech</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>—</td>
+<td>—</td>
+<td>UNK$</td>
+<td>—</td>
+<td>No line stated; Todd counts it a loser</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Nov 20 4:25 PM</td>
+<td>Idaho State (SDSU)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>78.5</td>
+<td>-115</td>
+<td>L</td>
+<td>-100.00</td>
+<td>Strict fit MATCH; late collapse (H1 68)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Nov 20 5:17 PM</td>
+<td>Miami (Manhattan)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>71.5</td>
+<td>-115</td>
+<td>W</td>
+<td>+86.96</td>
+<td>Strict fit MISMATCH; matchup over (H1 83)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Nov 20 5:47 PM</td>
+<td>Idaho State (SDSU)</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>151.5</td>
+<td>-120</td>
+<td>W</td>
+<td>+83.33</td>
+<td>In-play late 2H; final 157</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Nov 20 6:17 PM</td>
+<td>Southern Illinois (UT Martin)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>78.5</td>
+<td>-120</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final/H1 not retrieved</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Nov 20 6:30 PM</td>
+<td>Delaware (CSUN)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>81.5</td>
+<td>-120</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 73; missed one-and-ones</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Nov 20 7:24 PM</td>
+<td>Princeton</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>142.5</td>
+<td>-120</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Nov 20 7:32 PM</td>
+<td>Pittsburgh (CMU)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>45.5</td>
+<td>-105</td>
+<td>W</td>
+<td>+95.24</td>
+<td>Pitt 1H 54</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Nov 20 7:32 PM</td>
+<td>Pittsburgh (CMU)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>82.5</td>
+<td>-115</td>
+<td>W</td>
+<td>+86.96</td>
+<td>H1 94</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Nov 20 7:57 PM</td>
+<td>Pittsburgh (CMU)</td>
+<td>full@half</td>
+<td>game</td>
+<td>Over</td>
+<td>171.5</td>
+<td>-120</td>
+<td>W</td>
+<td>+83.33</td>
+<td>Strict fit MATCH; final 186</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Nov 20 8:29 PM</td>
+<td>North Texas</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>155.5</td>
+<td>-120</td>
+<td>W</td>
+<td>+41.67</td>
+<td>Split 50/50; piece won per Todd</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Nov 20 8:29 PM</td>
+<td>North Texas</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>157.5</td>
+<td>—</td>
+<td>L</td>
+<td>-50.00</td>
+<td>Split 50/50; piece lost per Todd; price assumed -110</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Nov 20 8:44 PM</td>
+<td>East Carolina (Utah Valley)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>78.5</td>
+<td>-124</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final/H1 not retrieved</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Nov 20 9:04 PM</td>
+<td>Vanderbilt</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>149.5</td>
+<td>-115</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Nov 20 9:04 PM</td>
+<td>Vanderbilt</td>
+<td>full</td>
+<td>tt</td>
+<td>Over</td>
+<td>83.5</td>
+<td>-115</td>
+<td>UNK</td>
+<td>—</td>
+<td>Team final not retrieved</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Nov 20 9:22 PM</td>
+<td>Tulsa</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>133.5</td>
+<td>-110</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Nov 20 9:30 PM</td>
+<td>Campbell</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>151.5</td>
+<td>-104</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Nov 20 10:10 PM</td>
+<td>Boise State (Sam Houston)</td>
+<td>full@half</td>
+<td>game</td>
+<td>Over</td>
+<td>151.5</td>
+<td>-125</td>
+<td>W</td>
+<td>+80.00</td>
+<td>Strict fit MISMATCH; trailing fave, 2H 89; final 152</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Nov 20 10:41 PM</td>
+<td>Fresno State (Alabama St)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>48.5</td>
+<td>-136</td>
+<td>L</td>
+<td>-50.00</td>
+<td>Split 50/50; both pieces lost per Todd</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Nov 20 10:41 PM</td>
+<td>Fresno State (Alabama St)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>44.5</td>
+<td>-136</td>
+<td>L</td>
+<td>-50.00</td>
+<td>Split 50/50; both pieces lost per Todd</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Nov 20 11:32 PM</td>
+<td>Saint Mary&rsquo;s (Saint Louis)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>85.5</td>
+<td>-115</td>
+<td>L</td>
+<td>-100.00</td>
+<td>Strict fit MATCH; &ldquo;2 mins empty&rdquo; (H1 79)</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Nov 21 11:12 AM</td>
+<td>Siena</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>166.5</td>
+<td>-120</td>
+<td>L</td>
+<td>-100.00</td>
+<td>Lost per Todd recap (&ldquo;classic mistake,&rdquo; bet too early)</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Nov 21 11:48 AM</td>
+<td>UNC Greensboro (USC Upstate)</td>
+<td>full@half</td>
+<td>game</td>
+<td>Under</td>
+<td>142.5</td>
+<td>-112</td>
+<td>L</td>
+<td>-100.00</td>
+<td>Strict fit MATCH; 2H accelerated to 85; final 151</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Nov 21 11:54 AM</td>
+<td>Detroit Mercy</td>
+<td>1h</td>
+<td>tt</td>
+<td>Under</td>
+<td>24.0</td>
+<td>-114</td>
+<td>L</td>
+<td>-100.00</td>
+<td>PREGAME pick (6 min before tip) — excluded from pace fit; lost per Todd (&ldquo;pace was a bit too fast&rdquo;)</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Nov 21 4:23 PM</td>
+<td>Austin Peay</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>143.0</td>
+<td>-107</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Nov 21 4:44 PM</td>
+<td>Albany (Canisius)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>67.5</td>
+<td>-120</td>
+<td>UNK</td>
+<td>—</td>
+<td>H1 not retrieved; Todd meant 65.5, got 67.5</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Nov 21 6:18 PM</td>
+<td>Southern Illinois (East Carolina)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>85.0</td>
+<td>-132</td>
+<td>W</td>
+<td>+75.76</td>
+<td>Won per Todd (&ldquo;won easily,&rdquo; late 4-min 1H timeout bet)</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Nov 21 6:32 PM</td>
+<td>Georgetown (Coppin State)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>48.5</td>
+<td>-125</td>
+<td>UNK</td>
+<td>—</td>
+<td>Team 1H not retrieved</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Nov 21 7:33 PM</td>
+<td>Mercer (Charleston Southern)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>71.5</td>
+<td>-105</td>
+<td>UNK</td>
+<td>—</td>
+<td>H1 not retrieved</td>
+</tr>
+<tr>
+<td>108</td>
+<td>Nov 21 10:03 PM</td>
+<td>TCU</td>
+<td>1h</td>
+<td>game</td>
+<td>Under</td>
+<td>24.5</td>
+<td>-125</td>
+<td>EXCLUDED</td>
+<td>—</td>
+<td>College football pick, not CBB</td>
+</tr>
+<tr>
+<td>109</td>
+<td>Nov 21 10:29 PM</td>
+<td>Bradley (Pacific)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>69.5</td>
+<td>-105</td>
+<td>UNK</td>
+<td>—</td>
+<td>H1 not retrieved</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Nov 21 11:27 PM</td>
+<td>Duke (Washington State)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>41.5</td>
+<td>-125</td>
+<td>W</td>
+<td>+16.00</td>
+<td>Split 0.20u ($20); Duke 1H 44</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Nov 21 11:27 PM</td>
+<td>Duke (Washington State)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>42.5</td>
+<td>-110</td>
+<td>W</td>
+<td>+72.73</td>
+<td>Split 0.80u ($80); Duke 1H 44</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Nov 22 12:20 PM</td>
+<td>Nebraska (Butler)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>32.5</td>
+<td>-125</td>
+<td>W</td>
+<td>+80.00</td>
+<td>Nebraska 1H 33; won by 0.5</td>
+</tr>
+<tr>
+<td>146</td>
+<td>Nov 22 4:43 PM</td>
+<td>Texas State</td>
+<td>full</td>
+<td>tt</td>
+<td>Over</td>
+<td>85.5</td>
+<td>-106</td>
+<td>UNK</td>
+<td>—</td>
+<td>Team final not retrieved</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Nov 22 5:07 PM</td>
+<td>IU Indianapolis</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>150.5</td>
+<td>-114</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>152</td>
+<td>Nov 22 5:39 PM</td>
+<td>Loyola Marymount</td>
+<td>full</td>
+<td>game</td>
+<td>Over</td>
+<td>139.5</td>
+<td>-120</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>153</td>
+<td>Nov 22 6:01 PM</td>
+<td>Temple (Stephen F. Austin)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>66.5</td>
+<td>-120</td>
+<td>W</td>
+<td>+83.33</td>
+<td>H1 71</td>
+</tr>
+<tr>
+<td>157</td>
+<td>Nov 22 6:30 PM</td>
+<td>Richmond</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>143.5</td>
+<td>-104</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Nov 22 6:52 PM</td>
+<td>Samford</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>164.5</td>
+<td>-118</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>165</td>
+<td>Nov 22 8:20 PM</td>
+<td>USC (Louisiana)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>45.5</td>
+<td>-125</td>
+<td>UNK</td>
+<td>—</td>
+<td>Team 1H not retrieved</td>
+</tr>
+<tr>
+<td>166</td>
+<td>Nov 22 8:21 PM</td>
+<td>USC (Louisiana)</td>
+<td>full</td>
+<td>tt</td>
+<td>Over</td>
+<td>89.5</td>
+<td>-110</td>
+<td>UNK</td>
+<td>—</td>
+<td>Team final not retrieved</td>
+</tr>
+<tr>
+<td>169</td>
+<td>Nov 22 10:22 PM</td>
+<td>Utah Valley</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>146.5</td>
+<td>+100</td>
+<td>UNK</td>
+<td>—</td>
+<td>Final not retrieved</td>
+</tr>
+<tr>
+<td>179</td>
+<td>Nov 23 11:39 AM</td>
+<td>Davidson (Northern Iowa)</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>134.5</td>
+<td>-120</td>
+<td>W</td>
+<td>+83.33</td>
+<td>Final 127</td>
+</tr>
+<tr>
+<td>180</td>
+<td>Nov 23 1:30 PM</td>
+<td>FIU (Long Beach State)</td>
+<td>1h</td>
+<td>game</td>
+<td>Under</td>
+<td>79.5</td>
+<td>-130</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 87</td>
+</tr>
+<tr>
+<td>182</td>
+<td>Nov 23 1:49 PM</td>
+<td>Wright State (Akron)</td>
+<td>1h</td>
+<td>tt</td>
+<td>Over</td>
+<td>37.5</td>
+<td>-112</td>
+<td>L</td>
+<td>-100.00</td>
+<td>Wright State 1H 35</td>
+</tr>
+<tr>
+<td>186</td>
+<td>Nov 23 2:29 PM</td>
+<td>Tulsa (Oregon State)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>70.5</td>
+<td>-115</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 66</td>
+</tr>
+<tr>
+<td>187</td>
+<td>Nov 23 2:56 PM</td>
+<td>FIU (Long Beach State)</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>166.5</td>
+<td>-128</td>
+<td>W</td>
+<td>+78.12</td>
+<td>Final 154</td>
+</tr>
+<tr>
+<td>188</td>
+<td>Nov 23 3:09 PM</td>
+<td>Wright State (Akron)</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>134.5</td>
+<td>-102</td>
+<td>W</td>
+<td>+98.04</td>
+<td>Final 130</td>
+</tr>
+<tr>
+<td>190</td>
+<td>Nov 23 3:49 PM</td>
+<td>Oregon State (Tulsa)</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>139.5</td>
+<td>-114</td>
+<td>W</td>
+<td>+87.72</td>
+<td>Final 135</td>
+</tr>
+<tr>
+<td>191</td>
+<td>Nov 23 4:00 PM</td>
+<td>IU Indianapolis (W&amp;M)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>90.5</td>
+<td>-130</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 90; lost by 0.5 (19-of-30 FT)</td>
+</tr>
+<tr>
+<td>193</td>
+<td>Nov 23 4:17 PM</td>
+<td>Arkansas State (Southern Utah)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>84.5</td>
+<td>-122</td>
+<td>W</td>
+<td>+81.97</td>
+<td>H1 96</td>
+</tr>
+<tr>
+<td>197</td>
+<td>Nov 23 4:47 PM</td>
+<td>Yale (Belmont)</td>
+<td>full@half</td>
+<td>game</td>
+<td>Under</td>
+<td>136.5</td>
+<td>-110</td>
+<td>W</td>
+<td>+90.91</td>
+<td>Strict fit MATCH; final 128</td>
+</tr>
+<tr>
+<td>199</td>
+<td>Nov 23 4:57 PM</td>
+<td>Nevada (San Francisco)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>72.5</td>
+<td>-125</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 68</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Nov 23 5:20 PM</td>
+<td>IU Indianapolis (W&amp;M)</td>
+<td>full</td>
+<td>game</td>
+<td>Under</td>
+<td>176.5</td>
+<td>-110</td>
+<td>W</td>
+<td>+90.91</td>
+<td>Final 169</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Nov 23 5:31 PM</td>
+<td>San Francisco (Nevada)</td>
+<td>full@half</td>
+<td>game</td>
+<td>Under</td>
+<td>144.5</td>
+<td>-108</td>
+<td>W</td>
+<td>+92.59</td>
+<td>Strict fit MATCH; final 133</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Nov 23 6:34 PM</td>
+<td>Temple (UT Martin)</td>
+<td>1h</td>
+<td>game</td>
+<td>Over</td>
+<td>65.5</td>
+<td>-125</td>
+<td>L</td>
+<td>-100.00</td>
+<td>H1 64; lost by 1.5</td>
+</tr>
+</tbody>
+</table></div>
+<p>Recap-only Nov 20 picks (before the JSON window; W/L per Todd&rsquo;s Nov 21 10:10 AM recap, no line/price):
+- Florida State full Over vs Green Bay — L (FSU won 87-63)
+- Indiana State 1H Over vs Stephen F. Austin — W (&ldquo;very easy W&rdquo;; SFA won 86-76)
+- Albany 1H Over vs Western Illinois — L (&ldquo;wasn&rsquo;t even close just died&rdquo;; Albany won 65-60)
+- George Washington full Under vs UAB — L (lost on a last-second 3; UAB won 81-76)</p>
+<p>Non-total CBB picks (excluded from the totals fit): CSUN -5.5, Wisconsin +10.5 (at half),
+Fresno State -13.5, Vermont ML +112 (at half), Portland State +13.5, BYU -1 (at half),
+East Carolina ML -132.</p>
+<h2>5. What is UNKNOWN and why (20 picks)</h2>
+<p>20 of the 56 CBB total picks could not be graded because the game final (for full-game picks)
+or the halftime total / team halftime points (for 1H picks) was not retrieved from a public
+source in this session. They are excluded from the grading and from the pace fit.</p>
+<ul>
+<li>Nov 20 (7): S Illinois–UT Martin 1H; East Carolina–Utah Valley 1H; Princeton full;
+  Vanderbilt full + Vanderbilt tt full; Tulsa full; Campbell full.</li>
+<li>Nov 21 (5): Austin Peay full; Albany–Canisius 1H; Georgetown tt 1H; Mercer–Charleston
+  Southern 1H; Bradley–Pacific 1H.</li>
+<li>Nov 22 (8): Texas State tt full; IU Indianapolis full; Loyola Marymount full; Richmond
+  full; Samford full; USC tt 1H + USC tt full; Utah Valley full.</li>
+<li>Plus 1 no-line pick (Virginia Tech tt 1H Over, Nov 20 — Todd counts it a loser; no line
+  to grade or project against) and 1 excluded CFB pick (TCU).</li>
+</ul>
+<p>These 20 could be filled by fetching the remaining finals/halftime splits (MatchWiz date
+pages or Sportradar game pages carry them). They would refine Todd&rsquo;s overall W/L and $ but
+would NOT change the pace fit, because none of them has an independently reconstructable
+post-time state (no clock/score anchor in Todd&rsquo;s messages for these games).</p>
+<div class="warnbox"><h2>6. Confidence and limits</h2>
+<ul>
+<li><strong>Sample size is the binding constraint.</strong> The pace hypothesis is tested on 8 picks with a
+  real post-time state. A 6-of-8 match rate (75%) is suggestive, not proof — the 95%
+  confidence interval on 6/8 is roughly 35%–97%. The Todd-vs-rule dollar gap (+$134 vs
+  -$227) is driven by 2 picks (Miami, Boise).</li>
+<li><strong>The grading is partial.</strong> Only 35 of 56 CBB total picks (62.5%) could be graded at $100
+  flat. The 20 UNKNOWN picks are concentrated on Nov 20–22 (when fewer finals were pulled).
+  If the UNKNOWN picks skew one way, Todd&rsquo;s overall +$238.90 could move materially.</li>
+<li><strong>Post-time state is reconstructed, not observed.</strong> No public source gives wall-clock-tagged
+  plays. The 1H anchors rely on Todd&rsquo;s own clock statements (Idaho State&rsquo;s two anchors are
+  mutually inconsistent as literal clock readings — &ldquo;needed 25 in last 8 mins&rdquo; at 4:41 PM vs
+  &ldquo;need 19 last 4 mins&rdquo; at 4:42 PM — so they are treated as approximate) and on a recap&rsquo;s
+  clock mention (Miami). The full-game-at-halftime projections are exact (H1 x 2) and are
+  the strongest evidence.</li>
+<li><strong>The &ldquo;pure pace rule&rdquo; is a strawman in one respect:</strong> it bets the projection side at -110
+  with no threshold and no situational override. A real pace model would use a threshold and
+  would account for the trailing-favorite / matchup effects Todd uses. Todd beating this
+  naive rule does not prove pace is useless — it proves Todd adds value beyond naive pace
+  in this small sample.</li>
+<li><strong>What the data CAN prove:</strong> Todd does read in-game pace (6/8 match, and his own words
+  confirm the process); his 1H overs are the money-loser in this window; his full-game and
+  at-halftime picks are profitable in this window; late-half droughts and missed FTs are the
+  recurring way his 1H overs die.</li>
+<li><strong>What it CANNOT prove:</strong> a precise threshold; whether the pace edge is real or noise;
+  whether the situational overrides (trailing favorite, matchup) are systematically profitable
+  rather than two lucky wins; anything about his long-run edge (his own season tally,
+  166-134 +14.27u, is a separate, larger sample that this 3-day window cannot validate).</li>
+</ul>
+</div><h2>7. Files</h2>
+<ul>
+<li><code>~/workspace/goals/bet-and-clv-tracker/hidden_files/todd-model/picks_exact.json</code> — 57 extracted picks</li>
+<li><code>~/workspace/goals/bet-and-clv-tracker/hidden_files/todd-model/picks.py</code> — pick list + non-total picks</li>
+<li><code>~/workspace/goals/bet-and-clv-tracker/hidden_files/todd-model/analyze.py</code> — grading + pace-fit script</li>
+<li><code>~/workspace/goals/bet-and-clv-tracker/hidden_files/todd-model/analysis_results.json</code> — computed results</li>
+<li><code>~/workspace/goals/bet-and-clv-tracker/hidden_files/todd-model/todd-model-report-2026-11-23.md</code> — this report</li>
+</ul>
+  </main>
+  <footer class="footer">
+    <p>Source: <code>todd-picks-history-2026-11-23.json</code> &mdash; 210 messages, #todd-picks, Fri Nov 20 4:08 PM ET &rarr; Mon Nov 23 6:34 PM ET. Paper only &mdash; $100 flat at Todd&rsquo;s stated prices. <a href="hq/index.html">&larr; Back to the HQ hub</a></p>
+  </footer>
+</div>
+<script>
+// Colour W/L in the per-pick table (Result column) and MATCH/MISMATCH in the pace-fit table.
+document.querySelectorAll('table').forEach(function(t){
+  var headers = Array.prototype.map.call(t.querySelectorAll('th'), function(th){ return th.textContent.trim().toLowerCase(); });
+  var resIdx = headers.indexOf('result');
+  var matchIdx = headers.indexOf('match?');
+  t.querySelectorAll('tbody tr').forEach(function(tr){
+    var cells = tr.querySelectorAll('td');
+    if (resIdx >= 0 && cells[resIdx]) {
+      var v = cells[resIdx].textContent.trim();
+      if (v === 'W') cells[resIdx].classList.add('w');
+      else if (v === 'L') cells[resIdx].classList.add('l');
+      else cells[resIdx].classList.add('u');
+    }
+    if (matchIdx >= 0 && cells[matchIdx]) {
+      var m = cells[matchIdx].textContent.trim();
+      if (m === 'MATCH') cells[matchIdx].classList.add('m');
+      else if (m === 'MISMATCH') cells[matchIdx].classList.add('mm');
+    }
+  });
+});
+</script>
+</body>
+</html>
