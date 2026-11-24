@@ -35,3 +35,19 @@
 - 2026-11-23: RIT Tigers @ Buffalo Bulls — first: RIT Tigers (2PT, 0:45 in); lead changes 1; final 47-93
 - 2026-11-23: Mansfield Mountaineers @ Le Moyne Dolphins — first: Le Moyne Dolphins (3PT, 0:24 in); lead changes 0; final 58-68
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-23T22:14:31-05:00 -- NCAAB FIRST SCORE (PC): 14 new final(s) tallied; season 1067 games through 2026-11-23
+- 2026-11-23: Winthrop Eagles @ Illinois Fighting Illini — first: Illinois Fighting Illini (2PT, 0:16 in); lead changes 2; final 83-133
+- 2026-11-23: Monmouth Hawks @ North Carolina Tar Heels — first: North Carolina Tar Heels (3PT, 2:02 in); lead changes 0; final 45-85
+- 2026-11-23: Denver Pioneers @ Kansas Jayhawks — first: Denver Pioneers (3PT, 0:41 in); lead changes 7; final 67-84
+- 2026-11-23: Notre Dame (MD) Gators @ Howard Bison — first: Notre Dame (MD) Gators (2PT, 1:17 in); lead changes 3; final 73-101
+- 2026-11-23: Spalding Pelicans @ Ball State Cardinals — first: Ball State Cardinals (2PT, 0:25 in); lead changes 0; final 36-94
+- 2026-11-23: Kentucky State Thorobreds @ East Tennessee State Buccaneers — first: East Tennessee State Buccaneers (3PT, 0:14 in); lead changes 2; final 56-108
+- 2026-11-23: Penn State Brandywine Lions @ La Salle Explorers — first: La Salle Explorers (3PT, 0:11 in); lead changes 0; final 42-90
+- 2026-11-23: Georgia Southern Eagles @ Northern Kentucky Norse — first: Georgia Southern Eagles (2PT, 0:24 in); lead changes 14; final 84-79
+- 2026-11-23: Fairleigh Dickinson Knights @ Iona Gaels — first: Fairleigh Dickinson Knights (2PT, 1:47 in); lead changes 12; final 49-46
+- 2026-11-23: Central Arkansas Bears @ North Florida Ospreys — first: North Florida Ospreys (3PT, 0:22 in); lead changes 1; final 80-66
+- 2026-11-23: Santa Clara Broncos @ Illinois State Redbirds — first: Santa Clara Broncos (2PT, 1:09 in); lead changes 22; final 102-99
+- 2026-11-23: Carolina University Bruins @ North Carolina Central Eagles — first: North Carolina Central Eagles (2PT, 0:17 in); lead changes 0; final 46-105
+- 2026-11-23: Texas A&M-Corpus Christi Islanders @ Wichita State Shockers — first: Wichita State Shockers (2PT, 0:25 in); lead changes 4; final 73-91
+- 2026-11-23: Wisconsin Stout Blue Devils @ North Dakota State Bison — first: North Dakota State Bison (3PT, 0:23 in); lead changes 0; final 49-84
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
