@@ -29,3 +29,11 @@
 - 2026-11-24: San Francisco Dons @ Oregon State Beavers — first: Oregon State Beavers (2PT, 0:16 in); lead changes 0; final 73-87
 - 2026-11-24: App State Mountaineers @ Yale Bulldogs — first: App State Mountaineers (2PT, 0:57 in); lead changes 5; final 50-57
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T18:24:18-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 1094 games through 2026-11-24
+- 2026-11-24: Tennessee Volunteers @ Maryland Terrapins — first: Tennessee Volunteers (3PT, 0:38 in); lead changes 6; final 72-64
+- 2026-11-24: Miami Hurricanes @ TCU Horned Frogs — first: TCU Horned Frogs (3PT, 0:14 in); lead changes 6; final 71-84
+- 2026-11-24: North Dakota Fighting Hawks @ Detroit Mercy Titans — first: North Dakota Fighting Hawks (2PT, 0:23 in); lead changes 0; final 77-67
+- 2026-11-24: Arkansas State Red Wolves @ Long Beach State Beach — first: Long Beach State Beach (2PT, 0:23 in); lead changes 7; final 106-81
+- 2026-11-24: New Haven Chargers @ Lindenwood Lions — first: Lindenwood Lions (2PT, 0:41 in); lead changes 11; final 63-60
+- 2026-11-24: Penn State Berks PENN STATE-LEHIGH VALLEY @ Navy Midshipmen — first: Navy Midshipmen (FT, 0:17 in); lead changes 0; final 46-97
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
