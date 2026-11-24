@@ -216,7 +216,14 @@
    }
   },
   "2026-11-23": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 84.94999694824219,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 84.98,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-23, after hours) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -229,6 +236,21 @@
     "ticker": "ZM",
     "vol": 885104
    }
+  },
+  "2026-11-24": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-24, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "Dollar Tree Inc. Common Stock",
+    "entry": 153.81,
+    "mcap": 28858476544,
+    "pct": 10.57,
+    "stop": 153.04,
+    "target": 154.58,
+    "ticker": "DLTR",
+    "vol": 1169298
+   }
   }
  },
  "meta": {
@@ -236,7 +258,7 @@
    "losses": 1,
    "modeled_pl": 50.0,
    "no_data": 0,
-   "no_trades": 6,
+   "no_trades": 7,
    "time_exits": 0,
    "wins": 2
   }
