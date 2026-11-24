@@ -23,3 +23,5 @@ NEW IN-PLAY CBB: PACE: North Dakota at Detroit Mercy | Full Total (at half) Unde
 NEW IN-PLAY CBB: PACE: Tennessee at Maryland | Full Total (at half) Under 149.5 | pace proj 140.0 (H1 70 x 2) vs live total 149.5 (gap -9.5, bar 5) | H1 70 | as of 16:00:02 ET
 ## 2026-11-24 16:06:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: Miami at TCU | Full Total (at half) Under 154.5 | pace proj 148.0 (H1 74 x 2) vs live total 154.5 (gap -6.5, bar 5) | H1 74 | as of 16:06:02 ET
+## 2026-11-24 16:42:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: New Haven at Lindenwood | Full Total (at half) Under 127.5 -115 | pace proj 116.0 (H1 58 x 2) vs live total 127.5 (gap -11.5, bar 5) | H1 58 | as of 16:42:01 ET
