@@ -17,3 +17,5 @@ NEW IN-PLAY CBB: 2ND BITE: San Francisco at Oregon St | Full Total (at half) Ove
 NEW IN-PLAY CBB: TRAILING FAVE: Ole Miss at BYU | Full Total (at half) Over 150.5 -115 | pregame favorite Ole Miss trails at half (BYU leads); pace proj 132.0 vs live total 150.5 (gap -18.5) -- comeback-fave Over anyway | H1 66 | as of 15:30:02 ET
 ## 2026-11-24 15:46:27 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: App State at Yale | Full Total (at half) Under 116.5 -120 | pace proj 90.0 (H1 45 x 2) vs live total 116.5 (gap -26.5, bar 5) | H1 45 | as of 15:46:27 ET
+## 2026-11-24 15:56:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: North Dakota at Detroit Mercy | Full Total (at half) Under 157.5 -115 | pace proj 148.0 (H1 74 x 2) vs live total 157.5 (gap -9.5, bar 5) | H1 74 | as of 15:56:02 ET
