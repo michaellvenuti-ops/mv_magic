@@ -387,7 +387,8 @@
    "spread": 2.5,
    "fav_team": "Lamar",
    "dog_team": "Robert Morris",
-   "pregame_total": 154.5
+   "pregame_total": 154.5,
+   "final": true
   },
   "401921142": {
    "matchup": "Elon at Furman",
@@ -494,7 +495,8 @@
    "pregame_total": 142.5,
    "alerted_at": "2026-11-24T19:44:02",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: Coppin St at Villanova | Full Total (at half) Under 133.5 -125 | pace proj 118.0 (H1 59 x 2) vs live total 133.5 (gap -15.5, bar 5) | H1 59 | as of 19:44:02 ET"
+   "alert_detail": "PACE: Coppin St at Villanova | Full Total (at half) Under 133.5 -125 | pace proj 118.0 (H1 59 x 2) vs live total 133.5 (gap -15.5, bar 5) | H1 59 | as of 19:44:02 ET",
+   "final": true
   },
   "401921266": {
    "matchup": "Rider at Loyola MD",
@@ -585,7 +587,8 @@
    "pregame_total": 144.5,
    "alerted_at": "2026-11-24T19:38:41",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: UMBC at Iowa | Full Total (at half) Under 139.5 -115 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 19:38:40 ET"
+   "alert_detail": "PACE: UMBC at Iowa | Full Total (at half) Under 139.5 -115 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 19:38:40 ET",
+   "final": true
   },
   "401920695": {
    "matchup": "Vermont at Siena",
@@ -770,12 +773,15 @@
   "401929421": {
    "matchup": "Florida A&M at South Alabama",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 17.5,
    "fav_team": "South Alabama",
    "dog_team": "Florida A&M",
-   "pregame_total": 141.5
+   "pregame_total": 141.5,
+   "alerted_at": "2026-11-24T20:46:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 126.5 -115 \u2014 Florida A&M at South Alabama (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 126.5 (gap -18.5, bar 5) | H1 54 | as of 20:46:03 ET"
   },
   "401929380": {
    "matchup": "Ark Baptist at Little Rock",
@@ -795,12 +801,15 @@
   "401925642": {
    "matchup": "Alabama A&M at North Alabama",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 3.5,
    "fav_team": "North Alabama",
    "dog_team": "Alabama A&M",
-   "pregame_total": 142.5
+   "pregame_total": 142.5,
+   "alerted_at": "2026-11-24T20:46:07",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 132.5 -120 \u2014 Alabama A&M at North Alabama (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 20:46:03 ET"
   },
   "401924723": {
    "matchup": "Bucknell at Cornell",
@@ -892,7 +901,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 5.5,
+   "spread": 6.5,
    "fav_team": "Washington St",
    "dog_team": "Sam Houston",
    "pregame_total": 156.5
@@ -912,10 +921,10 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 18.5,
+   "spread": 19.5,
    "fav_team": "Boise St",
    "dog_team": "Idaho St",
-   "pregame_total": 162.5
+   "pregame_total": 163.5
   },
   "401921817": {
    "matchup": "Evansville at Missouri",
