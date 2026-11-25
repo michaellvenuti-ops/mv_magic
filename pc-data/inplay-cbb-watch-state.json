@@ -820,7 +820,8 @@
   "401929380": {
    "matchup": "Ark Baptist at Little Rock",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929359": {
    "matchup": "Oral Roberts at UT Arlington",
@@ -929,7 +930,8 @@
    "spread": 20.5,
    "fav_team": "Notre Dame",
    "dog_team": "C Michigan",
-   "pregame_total": 152.5
+   "pregame_total": 152.5,
+   "final": true
   },
   "401929456": {
    "matchup": "LA Christian at Louisiana",
@@ -952,12 +954,15 @@
   "401928796": {
    "matchup": "Sam Houston at Washington St",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Washington St",
    "dog_team": "Sam Houston",
-   "pregame_total": 155.5
+   "pregame_total": 155.5,
+   "alerted_at": "2026-11-24T22:04:02",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 149.5 -115 \u2014 Sam Houston at Washington St (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 149.5 (gap -13.5, bar 5) | H1 68 | as of 22:04:02 ET"
   },
   "401926184": {
    "matchup": "UNC Greensboro at Santa Barbara",
@@ -1033,7 +1038,7 @@
    "spread": 10.5,
    "fav_team": "St John's",
    "dog_team": "Oregon",
-   "pregame_total": 156.5
+   "pregame_total": 157.5
   },
   "401921712": {
    "matchup": "VCU at Colorado St",
