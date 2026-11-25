@@ -79,3 +79,5 @@ NEW IN-PLAY CBB: PLAY: Over 165.5 — Stetson at South Florida (2ND BITE) | 1H t
 NEW IN-PLAY CBB: PLAY: Over 148.5 — Binghamton at Lehigh (TRAILING FAVE) | pregame favorite Lehigh trails at half (Binghamton leads); pace is slow (proj 152.0 vs live 148.5) but the comeback-fave rule still bets Over | H1 76 | as of 19:52:02 ET
 ## 2026-11-24 19:54:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 160.5 — Jacksonville at Indiana (2ND BITE) | 1H total 83 cleared implied 1H line 73.25 by +9.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 19:54:02 ET
+## 2026-11-24 19:54:06 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 132.5 — Rider at Loyola MD (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 132.5 (gap -16.5, bar 5) | H1 58 | as of 19:54:02 ET
