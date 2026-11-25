@@ -3676,7 +3676,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Texas Tech",
-   "dog_team": "Louisville"
+   "dog_team": "Louisville",
+   "final": true
   },
   "401929421": {
    "sport": "NCAAB",
@@ -3832,7 +3833,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Charleston",
-   "dog_team": "UTEP"
+   "dog_team": "UTEP",
+   "final": true
   },
   "401928796": {
    "sport": "NCAAB",
@@ -3842,7 +3844,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Washington St",
-   "dog_team": "Sam Houston"
+   "dog_team": "Sam Houston",
+   "final": true
   },
   "401926184": {
    "sport": "NCAAB",
@@ -3852,7 +3855,8 @@
    "fav": "home",
    "spread": 18.5,
    "fav_team": "Santa Barbara",
-   "dog_team": "UNC Greensboro"
+   "dog_team": "UNC Greensboro",
+   "final": true
   },
   "401922023": {
    "sport": "NCAAB",
@@ -3862,7 +3866,8 @@
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Boise St",
-   "dog_team": "Idaho St"
+   "dog_team": "Idaho St",
+   "final": true
   },
   "401921817": {
    "sport": "NCAAB",
@@ -3883,7 +3888,8 @@
    "warn_fav_score": 11,
    "warn_dog_score": 15,
    "warn_ml": -15000,
-   "ml_read_at": "2026-11-24T21:22:04"
+   "ml_read_at": "2026-11-24T21:22:04",
+   "final": true
   },
   "401909699": {
    "sport": "NCAAB",
@@ -3904,7 +3910,8 @@
    "warn_fav_score": 5,
    "warn_dog_score": 7,
    "warn_ml": -10000,
-   "ml_read_at": "2026-11-24T21:10:04"
+   "ml_read_at": "2026-11-24T21:10:04",
+   "final": true
   },
   "401911253": {
    "sport": "NCAAB",
@@ -3932,9 +3939,20 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 10.5,
    "fav_team": "St John's",
-   "dog_team": "Oregon"
+   "dog_team": "Oregon",
+   "live_ml": -520,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-24T23:22:03",
+   "warn_board_read_at": "2026-11-24T23:22:03",
+   "warn_expires_at": "2026-11-24T23:25:03",
+   "warn_detail": "17:41 - 1st Half",
+   "warn_fav_score": 0,
+   "warn_dog_score": 2,
+   "warn_ml": -520,
+   "ml_read_at": "2026-11-24T23:22:03"
   },
   "401921712": {
    "sport": "NCAAB",
