@@ -20,3 +20,4 @@ NEW FLAG: FBS Mississippi State @ Ole Miss | 2026-11-24 — Kalshi still dealing
 ## 2026-11-24T21:25:53-05:00 — 69 games, 2 steam events, 1 NEW flags
 NEW FLAG: FBS Miami (OH) @ Western Michigan | 2026-11-24 — Kalshi still dealing spread 4.5 on Miami (OH) (pre-move median 5.5, now 7.5)
 ## 2026-11-24T22:59:10-05:00 — 69 games, 2 steam events, 0 NEW flags
+## 2026-11-24T23:43:52-05:00 — 69 games, 0 steam events, 0 NEW flags
