@@ -59,3 +59,5 @@ NEW IN-PLAY CBB: PACE: Vermont at Siena | Full Total (at half) Under 163.5 -110 
 NEW IN-PLAY CBB: PACE: Tarleton St at Weber St | Full Total (at half) Under 163.5 -120 | pace proj 156.0 (H1 78 x 2) vs live total 163.5 (gap -7.5, bar 5) | H1 78 | as of 19:46:02 ET
 ## 2026-11-24 19:46:05 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: TRAILING FAVE: Campbell at Coastal | Full Total (at half) Over 132.5 -115 | pregame favorite Coastal trails at half (Campbell leads); pace proj 106.0 vs live total 132.5 (gap -26.5) -- comeback-fave Over anyway | H1 53 | as of 19:46:02 ET
+## 2026-11-24 19:48:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Milwaukee at Florida | Full Total (at half) Under 148.5 -110 | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 19:48:02 ET
