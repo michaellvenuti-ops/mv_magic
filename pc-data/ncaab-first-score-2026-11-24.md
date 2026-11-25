@@ -104,3 +104,10 @@
 - 2026-11-24: Bucknell Bison @ Cornell Big Red — first: Cornell Big Red (2PT, 0:30 in); lead changes 8; final 71-92
 - 2026-11-24: Duquesne Dukes @ High Point Panthers — first: High Point Panthers (2PT, 0:17 in); lead changes 4; final 70-75
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T23:47:03-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1158 games through 2026-11-24
+- 2026-11-24: Sam Houston Bearkats @ Washington State Cougars — first: Sam Houston Bearkats (3PT, 0:14 in); lead changes 9; final 73-80
+- 2026-11-24: UNC Greensboro Spartans @ UC Santa Barbara Gauchos — first: UNC Greensboro Spartans (2PT, 0:24 in); lead changes 1; final 65-85
+- 2026-11-24: Evansville Purple Aces @ Missouri Tigers — first: Missouri Tigers (FT, 2:18 in); lead changes 2; final 67-78
+- 2026-11-24: UTEP Miners @ Charleston Cougars — first: Charleston Cougars (2PT, 0:54 in); lead changes 1; final 80-69
+- 2026-11-24: UNC Asheville Bulldogs @ Florida State Seminoles — first: UNC Asheville Bulldogs (2PT, 0:33 in); lead changes 1; final 61-97
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
