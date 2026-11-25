@@ -1862,7 +1862,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Liberty",
    "dog_team": "Missouri St"
   },
@@ -3302,7 +3302,8 @@
    "fav": "away",
    "spread": 2.5,
    "fav_team": "Vanderbilt",
-   "dog_team": "Ohio State"
+   "dog_team": "Ohio State",
+   "final": true
   },
   "401916291": {
    "sport": "NCAAB",
@@ -3429,7 +3430,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Morgan St",
-   "dog_team": "Mount St Marys"
+   "dog_team": "Mount St Marys",
+   "final": true
   },
   "401920889": {
    "sport": "NCAAB",
@@ -3534,7 +3536,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Nevada",
-   "dog_team": "Santa Clara"
+   "dog_team": "Santa Clara",
+   "final": true
   },
   "401911379": {
    "sport": "NCAAB",
@@ -3595,7 +3598,8 @@
    "sport": "NCAAB",
    "matchup": "Arlington Bapt at East Texas A&M",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401926154": {
    "sport": "NCAAB",
@@ -3605,7 +3609,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "SE Missouri",
-   "dog_team": "Purdue FW"
+   "dog_team": "Purdue FW",
+   "final": true
   },
   "401925687": {
    "sport": "NCAAB",
@@ -3615,17 +3620,28 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Louisiana Tech",
-   "dog_team": "Alcorn St"
+   "dog_team": "Alcorn St",
+   "final": true
   },
   "401920414": {
    "sport": "NCAAB",
    "matchup": "High Point at Duquesne",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 10.5,
    "fav_team": "High Point",
-   "dog_team": "Duquesne"
+   "dog_team": "Duquesne",
+   "live_ml": -188,
+   "ml_bucket": "bettor",
+   "alerted_at": "2026-11-24T22:02:03",
+   "board_read_at": "2026-11-24T22:02:03",
+   "alert_expires_at": "2026-11-24T22:05:03",
+   "alert_detail": "11:55 - 2nd Half",
+   "alert_fav_score": 53,
+   "alert_dog_score": 54,
+   "alert_ml": -188,
+   "ml_read_at": "2026-11-24T22:02:03"
   },
   "401917983": {
    "sport": "NCAAB",
@@ -3635,7 +3651,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Hou Christian",
-   "dog_team": "UL Monroe"
+   "dog_team": "UL Monroe",
+   "final": true
   },
   "401917904": {
    "sport": "NCAAB",
@@ -3645,7 +3662,8 @@
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Tennessee Tech",
-   "dog_team": "West Georgia"
+   "dog_team": "West Georgia",
+   "final": true
   },
   "401915942": {
    "sport": "NCAAB",
@@ -3665,13 +3683,15 @@
    "fav": "home",
    "spread": 17.5,
    "fav_team": "South Alabama",
-   "dog_team": "Florida A&M"
+   "dog_team": "Florida A&M",
+   "final": true
   },
   "401929380": {
    "sport": "NCAAB",
    "matchup": "Ark Baptist at Little Rock",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929359": {
    "sport": "NCAAB",
@@ -3681,7 +3701,8 @@
    "fav": "home",
    "spread": 5.5,
    "fav_team": "UT Arlington",
-   "dog_team": "Oral Roberts"
+   "dog_team": "Oral Roberts",
+   "final": true
   },
   "401925642": {
    "sport": "NCAAB",
@@ -3691,7 +3712,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "North Alabama",
-   "dog_team": "Alabama A&M"
+   "dog_team": "Alabama A&M",
+   "final": true
   },
   "401924723": {
    "sport": "NCAAB",
@@ -3722,7 +3744,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Clemson",
-   "dog_team": "Washington"
+   "dog_team": "Washington",
+   "final": true
   },
   "401921184": {
    "sport": "NCAAB",
@@ -3732,7 +3755,8 @@
    "fav": "home",
    "spread": 6.5,
    "fav_team": "Penn",
-   "dog_team": "Drexel"
+   "dog_team": "Drexel",
+   "final": true
   },
   "401921008": {
    "sport": "NCAAB",
@@ -3752,7 +3776,8 @@
    "fav": "home",
    "spread": 24.5,
    "fav_team": "Auburn",
-   "dog_team": "Lipscomb"
+   "dog_team": "Lipscomb",
+   "final": true
   },
   "401911338": {
    "sport": "NCAAB",
@@ -3762,7 +3787,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Air Force",
-   "dog_team": "Army"
+   "dog_team": "Army",
+   "final": true
   },
   "401911026": {
    "sport": "NCAAB",
@@ -3783,7 +3809,8 @@
    "warn_fav_score": 10,
    "warn_dog_score": 11,
    "warn_ml": -4000,
-   "ml_read_at": "2026-11-24T20:08:03"
+   "ml_read_at": "2026-11-24T20:08:03",
+   "final": true
   },
   "401929456": {
    "sport": "NCAAB",
@@ -3839,7 +3866,18 @@
    "fav": "home",
    "spread": 31.5,
    "fav_team": "Missouri",
-   "dog_team": "Evansville"
+   "dog_team": "Evansville",
+   "live_ml": -4000,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-24T21:22:04",
+   "warn_board_read_at": "2026-11-24T21:22:03",
+   "warn_expires_at": "2026-11-24T21:25:04",
+   "warn_detail": "11:09 - 1st Half",
+   "warn_fav_score": 11,
+   "warn_dog_score": 15,
+   "warn_ml": -15000,
+   "ml_read_at": "2026-11-24T21:22:04"
   },
   "401909699": {
    "sport": "NCAAB",
@@ -3849,7 +3887,18 @@
    "fav": "home",
    "spread": 30.5,
    "fav_team": "Florida St",
-   "dog_team": "UNC Asheville"
+   "dog_team": "UNC Asheville",
+   "live_ml": -10000,
+   "ml_bucket": "strong",
+   "warned": true,
+   "warned_at": "2026-11-24T21:10:04",
+   "warn_board_read_at": "2026-11-24T21:10:03",
+   "warn_expires_at": "2026-11-24T21:13:04",
+   "warn_detail": "16:51 - 1st Half",
+   "warn_fav_score": 5,
+   "warn_dog_score": 7,
+   "warn_ml": -10000,
+   "ml_read_at": "2026-11-24T21:10:04"
   },
   "401911253": {
    "sport": "NCAAB",
@@ -3897,7 +3946,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Stanford",
    "dog_team": "Colorado"
   },
@@ -3919,7 +3968,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Magic",
-   "dog_team": "Pistons"
+   "dog_team": "Pistons",
+   "final": true
   },
   "401909315": {
    "sport": "NBA",
@@ -3937,7 +3987,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 7.5,
    "fav_team": "Nuggets",
    "dog_team": "Mavericks"
   }
