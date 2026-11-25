@@ -1,11 +1,11 @@
-# Hung numbers — 2026-11-24 (scan 2026-11-24 22:15)
+# Hung numbers — 2026-11-24 (scan 2026-11-24 23:42)
 
 - Bears vs Lions | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
-- Miami (OH) vs Western Michigan | BetMGM | total | value: Under | book 48.5 vs median 52.5 | div 4.0 
-- Kent State vs Eastern Michigan | BetMGM | moneyline Eastern Michigan | value: Eastern Michigan | book 45.5 vs median 74.4 | div 28.9 
-- Kent State vs Eastern Michigan | DraftKings | moneyline Eastern Michigan | value: Eastern Michigan | book 90.3 vs median 74.4 | div 15.9 
-- Kent State vs Eastern Michigan | BetMGM | moneyline Kent State | value: Kent State | book 60.8 vs median 30.3 | div 30.5 
-- Kent State vs Eastern Michigan | DraftKings | moneyline Kent State | value: Kent State | book 15.7 vs median 30.3 | div 14.6 
+- Broncos vs Steelers | Fanatics | moneyline Broncos | value: Broncos | book 60.8 vs median 66.1 | div 5.3 
+- Broncos vs Steelers | Fanatics | moneyline Steelers | value: Steelers | book 43.5 vs median 37.7 | div 5.7 
+- Miami (OH) vs Western Michigan | BetMGM | total | value: Under | book 48.5 vs median 54.5 | div 6.0 
+- Miami (OH) vs Western Michigan | DraftKings | total | value: Over | book 57.5 vs median 54.5 | div 3.0 
+- Miami (OH) vs Western Michigan | FanDuel | moneyline Western Michigan | value: Western Michigan | book 42.0 vs median 48.3 | div 6.3 
 - Florida vs Florida State | Hard Rock | spread | value: dog | book -4.5 vs median -6.5 | div 2.0 
 - Michigan vs Ohio State | Hard Rock | spread | value: dog | book 13.5 vs median 10.5 | div 3.0 
 - Michigan vs Ohio State | Hard Rock | total | value: Over | book 46.5 vs median 37.5 | div 9.0 
@@ -20,3 +20,7 @@
 - Purdue vs Indiana | FanDuel | spread | value: dog | book 23.5 vs median 22.5 | div 1.0 
 - Arizona State vs Arizona | DraftKings | spread | value: dog | book 53.5 vs median 8.5 | div 45.0 
 - Baylor vs Houston | FanDuel | spread | value: dog | book 5.5 vs median 4.5 | div 1.0 
+- Kent State vs Eastern Michigan | Caesars | spread | value: favorite | book 5.5 vs median 6.75 | div 1.25 
+- Kent State vs Eastern Michigan | Caesars | total | value: Under | book 29.5 vs median 46.5 | div 17.0 
+- Kent State vs Eastern Michigan | Caesars | moneyline Eastern Michigan | value: Eastern Michigan | book 58.5 vs median 72.3 | div 13.8 
+- Kent State vs Eastern Michigan | Caesars | moneyline Kent State | value: Kent State | book 47.4 vs median 32.0 | div 15.4 
