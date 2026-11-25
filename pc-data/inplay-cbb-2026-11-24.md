@@ -123,3 +123,5 @@ NEW IN-PLAY CBB: PLAY: Under 149.5 -115 — Sam Houston at Washington St (PACE) 
 NEW IN-PLAY CBB: PLAY: Under 144.5 -120 — Evansville at Missouri (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 144.5 (gap -12.5, bar 5) | H1 66 | as of 22:06:03 ET
 ## 2026-11-24 22:56:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 163.5 -110 — Saint Louis at Grand Canyon (TRAILING FAVE) | pregame favorite Grand Canyon trails at half (Saint Louis leads); pace is slow (proj 154.0 vs live 163.5) — the comeback-fave rule bets Over anyway | H1 77 | as of 22:56:02 ET
+## 2026-11-24 23:00:11 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 143.5 — Baylor at Alabama (PACE) | pace proj 106.0 (H1 53 x 2) vs live total 143.5 (gap -37.5, bar 5) | H1 53 | as of 23:00:10 ET
