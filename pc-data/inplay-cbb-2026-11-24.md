@@ -73,3 +73,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: Vanderbilt at Ohio State | Full Total (at half) 
 NEW IN-PLAY CBB: PACE: Charleston So at James Madison | Full Total (at half) Under 154.5 -120 | pace proj 144.0 (H1 72 x 2) vs live total 154.5 (gap -10.5, bar 5) | H1 72 | as of 19:50:02 ET
 ## 2026-11-24 19:50:41 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: Gardner-Webb at Bowling Green | Full Total (at half) Under 145.5 -115 | pace proj 140.0 (H1 70 x 2) vs live total 145.5 (gap -5.5, bar 5) | H1 70 | as of 19:50:02 ET
+## 2026-11-24 19:52:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 165.5 — Stetson at South Florida (2ND BITE) | 1H total 83 cleared implied 1H line 77.25 by +5.8; pace proj 166.0 vs live total 165.5 -- take the Over again at the half | H1 83 | as of 19:52:02 ET
