@@ -12010,3 +12010,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 16:57:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 16:57:28 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-25 16:57:28 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 17:27:29 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 17:28:44 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 187 events (142 with odds), db total 323814 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 17:29:47 ET] dh_arbitrage.py: OK in 63s — arbitrage: no new qualifying pairs (silent).
+[2026-11-25 17:30:31 ET] dh_kalshi_poly_arb.py: OK in 44s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 17:30:36 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAF Central Michigan Ball St. Nov-28 12:00 PM — Total — Over 51 Fanatics-NJ +100 ($98) / Under 51.5 Bally Bet -109 ($102) — win+push at 51 — push +
+[2026-11-25 17:30:37 ET] syncing to GitHub (wide-builds banked new builds)
