@@ -787,7 +787,8 @@
    "pregame_total": 163.5,
    "alerted_at": "2026-11-24T20:38:04",
    "alert_rule": "2ND BITE",
-   "alert_detail": "PLAY: Over 180.5 \u2014 West Georgia at Tennessee Tech (2ND BITE) | 1H total 94 cleared implied 1H line 81.75 by +12.2; pace proj 188.0 vs live total 180.5 -- take the Over again at the half | H1 94 | as of 20:38:02 ET"
+   "alert_detail": "PLAY: Over 180.5 \u2014 West Georgia at Tennessee Tech (2ND BITE) | 1H total 94 cleared implied 1H line 81.75 by +12.2; pace proj 188.0 vs live total 180.5 -- take the Over again at the half | H1 94 | as of 20:38:02 ET",
+   "final": true
   },
   "401915942": {
    "matchup": "Texas Tech at Louisville",
@@ -813,7 +814,8 @@
    "pregame_total": 141.5,
    "alerted_at": "2026-11-24T20:46:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 126.5 -115 \u2014 Florida A&M at South Alabama (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 126.5 (gap -18.5, bar 5) | H1 54 | as of 20:46:03 ET"
+   "alert_detail": "PLAY: Under 126.5 -115 \u2014 Florida A&M at South Alabama (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 126.5 (gap -18.5, bar 5) | H1 54 | as of 20:46:03 ET",
+   "final": true
   },
   "401929380": {
    "matchup": "Ark Baptist at Little Rock",
@@ -903,7 +905,8 @@
    "spread": 24.5,
    "fav_team": "Auburn",
    "dog_team": "Lipscomb",
-   "pregame_total": 158.5
+   "pregame_total": 158.5,
+   "final": true
   },
   "401911338": {
    "matchup": "Army at Air Force",
@@ -936,12 +939,15 @@
   "401911535": {
    "matchup": "Charleston at UTEP",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Charleston",
    "dog_team": "UTEP",
-   "pregame_total": 149.5
+   "pregame_total": 149.5,
+   "alerted_at": "2026-11-24T21:48:02",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 149.5 \u2014 UTEP at Charleston (TRAILING FAVE) | pregame favorite Charleston trails at half (UTEP leads); pace is slow (proj 136.0 vs live 149.5) \u2014 the comeback-fave rule bets Over anyway | H1 68 | as of 21:48:01 ET"
   },
   "401928796": {
    "matchup": "Sam Houston at Washington St",
@@ -1038,7 +1044,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "Stanford",
    "dog_team": "Colorado",
    "pregame_total": 140.5
