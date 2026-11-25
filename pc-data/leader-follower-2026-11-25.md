@@ -18,3 +18,6 @@ LEAD: Caesars on TCU @ Texas Tech | 2026-11-25 (spread)
 ## 2026-11-25T15:18:36-05:00 — no-follow: DraftKings Auburn @ Alabama | 2026-11-25 spread (only 1 followed)
 ## 2026-11-25T15:18:36-05:00 — no-follow: Kalshi Baylor @ Houston | 2026-11-25 spread (only 1 followed)
 ## 2026-11-25T15:18:36-05:00 — 85 games, 0 leads credited
+## 2026-11-25T16:54:32-05:00 — pack move, never credited: Jets @ Dolphins | 2026-11-25 spread (Caesars, Hard Rock)
+## 2026-11-25T16:54:32-05:00 — pack move, never credited: Patriots @ Chargers | 2026-11-25 spread (DraftKings, Fanatics, Hard Rock)
+## 2026-11-25T16:54:32-05:00 — 85 games, 0 leads credited
