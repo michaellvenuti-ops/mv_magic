@@ -320,7 +320,8 @@
    "spread": 4.5,
    "fav_team": "VMI",
    "dog_team": "S Indiana",
-   "pregame_total": 143.5
+   "pregame_total": 143.5,
+   "final": true
   },
   "401923262": {
    "matchup": "Mercer at FAU",
@@ -746,12 +747,15 @@
   "401917904": {
    "matchup": "West Georgia at Tennessee Tech",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Tennessee Tech",
    "dog_team": "West Georgia",
-   "pregame_total": 163.5
+   "pregame_total": 163.5,
+   "alerted_at": "2026-11-24T20:38:04",
+   "alert_rule": "2ND BITE",
+   "alert_detail": "PLAY: Over 180.5 \u2014 West Georgia at Tennessee Tech (2ND BITE) | 1H total 94 cleared implied 1H line 81.75 by +12.2; pace proj 188.0 vs live total 180.5 -- take the Over again at the half | H1 94 | as of 20:38:02 ET"
   },
   "401915942": {
    "matchup": "Texas Tech at Louisville",
@@ -928,7 +932,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 29.5,
+   "spread": 30.5,
    "fav_team": "Florida St",
    "dog_team": "UNC Asheville",
    "pregame_total": 159.5
