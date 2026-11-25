@@ -39,3 +39,11 @@ LEAD: bet365 on Kent State @ Eastern Michigan | 2026-11-24 (spread)
 ## 2026-11-24T20:35:55-05:00 — pack move, never credited: Mississippi State @ Ole Miss | 2026-11-24 spread (Caesars, DraftKings, bet365)
 ## 2026-11-24T20:35:55-05:00 — no-follow: FanDuel Boise State @ Colorado State | 2026-11-24 spread (only 0 followed)
 ## 2026-11-24T20:35:56-05:00 — 85 games, 0 leads credited
+## 2026-11-24T22:16:32-05:00 — pack move, never credited: Bears @ Lions | 2026-11-24 spread (Caesars, DraftKings, bet365)
+## 2026-11-24T22:16:32-05:00 — no-follow: Kalshi Miami (OH) @ Western Michigan | 2026-11-24 total (only 2 followed)
+## 2026-11-24T22:16:32-05:00 — pack move, never credited: Miami (OH) @ Western Michigan | 2026-11-24 spread (BetMGM, DraftKings, FanDuel)
+## 2026-11-24T22:16:32-05:00 — pack move, never credited: Miami (OH) @ Western Michigan | 2026-11-24 total (BetMGM, DraftKings, FanDuel)
+## 2026-11-24T22:16:32-05:00 — pack move, never credited: Kent State @ Eastern Michigan | 2026-11-24 total (BetMGM, DraftKings, FanDuel, Kalshi)
+## 2026-11-24T22:16:33-05:00 — 85 games, 2 leads credited
+LEAD: Kalshi on Bears @ Lions | 2026-11-24 (spread)
+LEAD: Kalshi on Kent State @ Eastern Michigan | 2026-11-24 (total)
