@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Risk Takers Ep 181 &mdash; Edges Report (Chet)</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.6;font-size:15px}
+main{max-width:860px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px;line-height:1.3} h2{font-size:20px;margin:28px 0 6px} h3{font-size:17px;margin:22px 0 4px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+p{margin:10px 0}
+ul{margin:8px 0;padding-left:24px}
+li{margin:4px 0}
+table{border-collapse:collapse;font-size:14px;margin:12px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+a{color:#58a6ff}
+code{background:#161b22;padding:1px 5px;border-radius:4px;font-size:13px}
+hr{border:none;border-top:1px solid #30363d;margin:24px 0}
+blockquote{border-left:3px solid #30363d;margin:12px 0;padding:2px 14px;color:#c9d1d9}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.back{font-size:13px}
+</style></head><body><main>
+<p class="back"><a href="hq/">&larr; Back to Broham&rsquo;s Betting HQ</a></p>
+<h1>Risk Takers Ep 181 &mdash; Edges Report (Chet)</h1>
+<p class="hq-updated" style="font-size:.85rem;color:#6b716b;margin:2px 0 12px">Updated Nov 25, 2026 by Chet</p>
+<p><strong>Episode:</strong> The Risk Takers Podcast, Ep 181, "The 20 Year Old's Who Are Crushing You on PMs w/ Apex and Yizzle"
+<strong>Host:</strong> GoldenPants13 / John Shilling (GP) + SportsProjections (SP)
+<strong>Guests:</strong> Apex and Yizzle — 20-year-olds, Kalshi market makers (teamed up March 2026)
+<strong>Published:</strong> Nov 25, 2026 | <strong>Duration:</strong> 110:34 | <strong>Audio:</strong> <code>ep181.mp3</code> | <strong>Transcript:</strong> <code>transcript.md</code>
+<strong>Transcription:</strong> faster-whisper <code>small</code> model on the Mac, 3.61x realtime, 2680 segments, 17,881 words. Full episode read.</p>
+<p><strong>Headline:</strong> this episode contains <strong>no live picks and no actionable prices</strong>. Every edge here is structural — how two 20-year-olds built a market-making/taking operation from $300 to ~$300M/month volume. The value is in the processes, the timing lessons, and the warnings about where the edge is moving — not in a bet to place today.</p>
+<p><strong>Transcription caveats:</strong> Whisper renders names phonetically. "Yisle/Yizil/Gizzle" = Yizzle; "Cal-Shi/Calci/Kaoshi" = Kalshi; "Pauli/Paulie/Poly" = Polymarket; "Pads" = a prior pod guest (nickname as heard). Uncertain renderings are marked [?] below and are NOT silently corrected. Quotes are close paraphrases where Whisper's wording is garbled; timestamps let you check the audio.</p>
+<hr />
+<h2>The story in 60 seconds</h2>
+<ul>
+<li><strong>Apex (20, CS sophomore):</strong> started Kalshi Jan 2026 as a warm-up for an HFT internship; built an algo to farm Kalshi liquidity rewards on AI markets; turned ~$300 into ~$10,000 by March; dropped the internship that summer to trade full time. Wrote the first system by hand; now mostly uses Claude Code.</li>
+<li><strong>Yizzle (math, ~4 yrs betting):</strong> started as a freshman punter, lost ~$10,000; got into advantage play when DraftKings Pick6 launched; learned from Alex Monahan's content; met Apex in their college quant finance club.</li>
+<li><strong>Teamed up March 2026 with a $10,000 bankroll, bootstrapped from there.</strong> First joint market: NASCAR. First big win: ITF tennis in its first month on Kalshi (April–May) — ~5x bankroll that month; a million contracts on a random ITF match at 1 a.m. Now: ~$300M volume last month, ~1/3 pre-match / ~2/3 live, mostly straights, RFQ a smaller part, virtually every sport and market. Team is now 4 (hired a dev in July, Apex's brother in August to monitor fills, another dev starting December — all from the college quant club).</li>
+</ul>
+<hr />
+<h2>Edges mined (timestamped)</h2>
+<h3>E1 — Markouts: the live-CLV audit that tells you when you're the sucker [23:32–33:10] — NEW (as a formal process)</h3>
+<p><strong>Who:</strong> Apex + Yizzle, with GP/SP pressing.
+<strong>What:</strong> A <em>markout</em> is live CLV — you got filled at price X, what is it trading at seconds later, in aggregate. Positive = you're gaining EV. "It's like CLV for live, but like live it's just like, oh, did I get completely fucked here? So you can like tell in like 10 seconds." ([25:55])
+- Their biggest early mistake was <strong>not judging positions this way at all</strong>: "we didn't really know what like markouts were even" ([24:41]). They were slow to notice counterparties getting smarter and "probably lost a bit more money than we should have" ([25:02]).
+- <strong>Signal vs noise:</strong> a fill that clears you for HUGE size + bad markout = adverse selection; small fills = rec volume, noisy ([29:41]).
+- <strong>How they mark:</strong> usually to the exchange mid, aggregating multiple exchanges + sportsbooks + internal pricing ([30:44]). But the practical use is coarse, not fine: "I'm mainly just trying to figure out, should I turn this market off because somebody's sitting next to the bench just fucking me over… I'm not trying to be like, oh yeah, that was like a point one five markout instead of like a point one… I'm more trying to figure out was that like a negative 30 cent markout" ([31:17]).
+- <strong>Post-trade review:</strong> when a market does badly they investigate fills, game state, and why they're getting picked off, then patch the hole ([32:03]).
+- <strong>Status:</strong> NEW as a formal process. He grades picks and tracks CLV-ish outcomes, but he does not run a markout audit on his scans — no log of "flagged price → price 60s later → close" per source/market, and no kill-switch rule for a source whose markouts go negative.
+- <strong>Implementability:</strong> tweak to existing scans (see Proposal P2).</p>
+<h3>E2 — The Polymarket API <em>taker</em> rebate: the sharp-taker era, time-limited [35:11–38:00] — NEW, verify before acting</h3>
+<p><strong>Who:</strong> GP raises it; Apex/Yizzle react.
+<strong>What:</strong> "Poly just gave out like the, a rebate specifically to API takers." ([35:22]) The guests "couldn't believe it": "I just truly, I don't understand like why that would be beneficial as an exchange… How would giving a bigger rebate to API takers be beneficial? I just don't, I don't get it." ([35:44]) "To me, it seems very like… short term pump of numbers." ([36:03]) Time-limited — "It is like till December, right? Or something weird. There's like a time limit on it." ([36:12]) "I'll take the under on it making it to, maybe to the end of December" ([36:16]).
+- Counter-theory offered: onboarding lock-in — takers build the infrastructure, then stay after the rebate ends because "you already have this built out. Maybe you're getting a little less EV, but it's still, you know, worth it." ([36:39]) GP is skeptical: "these people are extremely price sensitive" — early football liquidity rewards had "enormous walls on random derivative type things. And those are entirely gone, obviously now." ([38:45])
+- <strong>Status:</strong> NEW information. He has a Polymarket account and no automated taker. Note the guests' own trajectory: "we've started to do more and more taking on prediction markets rather than making. It's becoming a larger share of our volume and P&amp;L" ([28:23]).
+- <strong>Implementability:</strong> needs an automated taker (see Proposal P3). The rebate is a tailwind, not the thesis — and it may already be gone by the time anything is built. <strong>Verify the rebate is still live before spending a minute on this.</strong></p>
+<h3>E3 — Origination beats top-down now; book prices are no longer gospel [44:18–47:10, 52:47–55:15, 97:01–97:50] — NEW (strategic tension with his current stack)</h3>
+<p><strong>Who:</strong> Apex (live modelling), Yizzle, GP.
+<strong>What:</strong> "As these markets develop and they become more efficient, origination and modeling is going to become more and more important… Everybody can just go look at, you know, what is the sports book saying this is, this price stat? But especially in play and live, the actual fair value of what this, like, what is this team worth right now? Is very much up in the air and often not within the one cent ticks that you see on the exchanges." ([46:34])
+- Apex's hot take: "you can't treat the sportsbook lines as gospel… if your only edge is that you can put up a line you just took off a sportsbook you're going to struggle in the next year… find your niche and specialize and aim to get really good at a couple of things." ([97:03])
+- They've moved away from book prices as the source of truth: "originally… we all thought, you know, the gold standard was like Pinnacle, Circa, bookmaker… But as a lot more liquidity is coming on these exchanges, we've definitely been moving away from what we think, from what sports books think the price is." ([53:57])
+- Why books are beatable as a price source: books have protections — limits, live timers — "so they don't need to have the fastest movement… they don't need to have the best price up" ([54:31]). "If DraftKings is [greyed] out, well, they don't give really like two shits what their price is because they're not going to book at it." ([55:04])
+- Live modelling is sport-by-sport, only a couple of sports: "It takes a lot of effort… to build this thing and, you know, test it and actually see it work… we kind of just do it for a couple of sports." ([44:14]) "Maintaining is sneaky hard" — golf example: a Q-School qualifier, tournament shortened to three days, Monday finish — "blows up on nine spots" ([45:42]).
+- <strong>Status:</strong> NEW as a strategic direction — and in direct tension with his stack. His Kalshi price-gap scanner is <em>purely</em> top-down (Kalshi vs DraftKings-via-ESPN no-vig fair). The episode argues that exact edge decays as exchanges get efficient. He already owns models that could originate (Elo, BPM, Monte Carlo props, NHL xG, Sixers tracker, Total Projectors) — none of them currently price Kalshi markets.
+- <strong>Implementability:</strong> overlay, not rebuild (see Proposal P4).</p>
+<h3>E4 — Taking: learn it from your own fills; paper-log the taker first; cap it like a bomb [33:10–34:25, 40:48–44:09] — NEW (as a build)</h3>
+<p><strong>Who:</strong> Apex (built it), Yizzle.
+<strong>What:</strong> The shift to taking came from reviewing their own fills: "I definitely have found angles just by looking at how other people are playing us… there are stuff that we started to do because they did it to us." ([34:10]) "If you're smart about it, you get beat once, then you can take that and go beat someone else with it. That could be true live, that could be true RFQs." (GP, [33:19]) The rise of the "square maker" — "so many people just, you know, Claude slop making [transcribed 'clod slop']" ([34:53]) — is making taking "more and more incentivizing" ([35:05]).
+- Building a taker from a maker is easy <em>if you already have a price</em>: "we did have an internal price, like you have to have a price to make. And if you have a price to make, then it's very easy to take from that." ([41:19])
+- <strong>Risk discipline (the part that matters):</strong> Apex put off automated taking because he was scared of blow-up risk: "I really put off getting into automated taking because I was so scared of what could happen… initially I just put it all on a sub account, you know, gave it, you know, $10,000 or whatever, you know, if it blows up, you know, oh well." Plus per-game caps and very careful deployment ([42:13]).
+- <strong>Paper-log first:</strong> "I was initially, I was just logging what my taking would do for a long time and kind of just looking at the results like, oh, if I took this here, what would have its markouts been, how would have this realized over the week?" ([43:24])
+- <strong>Adverse selection is real even for takers:</strong> after deploying, "I actually wasn't getting filled in any of the good spots. I was only getting filled when it was bad… somebody was taking the exact same spots as me, but just doing it faster in play. And so the only times I got filled was when my model was basically wrong." ([43:41]) That failure refined the model.
+- Current scale: ~$300M volume last month; taking "only like a couple percent of that" ([40:09]) but "a little bit bigger share of the profits… Oh, for sure. Juicy." ([40:14])
+- <strong>Status:</strong> NEW. He has no automated exchange taker; his taking today is manual, one bet at a time.
+- <strong>Implementability:</strong> the biggest build on the list (see Proposal P3). Paper-first, sub-account, capped — the episode gives the exact deployment playbook.</p>
+<h3>E5 — New-venue / new-market onboarding: the edge is being early, and it decays in weeks [15:20–16:10, 17:00–18:40, 37:55–39:02] — NEW (as a watch)</h3>
+<p><strong>Who:</strong> Apex + Yizzle.
+<strong>What:</strong> Apex's seed capital came from farming a new program: "I found out about the liquidity rewards on Kalshi. And so I made an algorithm to farm specifically those… I started with about 300 bucks… by the time I met [Yizzle] I had made about $10,000 just off of liquidity rewards and those markets." ([15:45])
+- The ITF tennis window: first month ITF was listed, no makers, nobody willing to do live — "If you were just willing to put a number up, you were already ahead of the curve." ([20:20]) They quoted 8–10 cents wide and "still getting almost like all the flow" ([22:42]), ran a million contracts with "zero opinion on that match" ([21:56]), ~5x bankroll that month on ITF alone.
+- The decay is fast: other makers arrived quoting 6 cents wide; "we were slow to lay off the gas pedal and we did donate a lot of the money back" ([26:19]). Polymarket US football liquidity rewards: "extremely generous" at kickoff, "now it's not so much that" ([38:16]); the enormous walls on random derivatives are "entirely gone, obviously now" ([38:56]).
+- GP's summary of the pattern, repeated across guests: "when that early spot came out, they just went all in, did what they could. And then after they had that money, they figured out what to do next. I think that's super key." ([22:32])
+- <strong>Status:</strong> NEW as a standing watch. He has no scan that flags new exchange programs, new market listings, or new venues. The specific programs Apex farmed are over; the <em>pattern</em> is the edge.
+- <strong>Implementability:</strong> cheapest build on the list (see Proposal P1).</p>
+<h3>E6 — One-off / event markets: research = game theory + smart people + live-chat positioning [79:14–83:15] — PARTLY NEW (process), with a warning attached</h3>
+<p><strong>Who:</strong> Apex (Yizzle on midterms).
+<strong>What:</strong> Research process for one-offs: "a mixture of the same game theory I've been using for my sports trading, talking to a lot of people who are smarter than me on the topics and what their opinions are and also just taking a look at live chat and seeing what positions they're holding — the live chat theory." ([79:54])
+- Biggest one-off: the midterms — "my biggest one was on Talarico [?]" ([79:46]), holding a bunch of Democrat positions.
+- The Jensen Huang return market: "live chat Armageddon… a mega retail trade… one of the biggest events that makers lost in Kalshi's history" ([80:28]); "it was like a top 20 worst events for market makers" ([81:18]). They were casualties holding Jensen NO — the earnings call said "no intention of doing that," retail flow made it look +EV at the time, "maybe I should have listened to my gut a little bit more" ([81:52]). Some said fair value was 1–2 cents.
+- The warning: "it's so hard with these one-off events because there's no data points you can really point to… it's very low sample size so it's really hard to make a good estimate of what it's worth… you still have no clue if you like… you don't really know how to feel about that trade and you probably never will." ([82:50])
+- <strong>Status:</strong> PARTLY NEW. He already mined EP179's election edges (Lostzemblan) and has a prediction-middles goal; what he lacks is a standing <em>process</em> for one-offs. But the episode's lesson cuts both ways — the Jensen trade is a case study in losing on a one-off, not winning.
+- <strong>Implementability:</strong> manual process, no build (see Proposal P5).</p>
+<h3>E7 — Court-siding is "copium": most bad fills are a skill issue, not a courtsider [95:16–97:00] — NEW (mindset, directly challenges a standing assumption)</h3>
+<p><strong>Who:</strong> Yizzle (hot take), Apex agrees.
+<strong>What:</strong> "I think the C for court-siding stands for copium. I do not believe that court-siding is as rampant as makers make it out to be… yes in this day and age a majority of games are gonna have court-siders, this is true… but I feel like it's often used as cope. Like if you have a fill that moves negatively for you it's really easy to be like, oh this guy is just court-siding me, but there's infinitely different ways that someone could get an edge on you and adverse select you." ([95:24])
+- Apex: "court-siding is very obvious when it's actually happening, but there's a lot of stuff people are just classifying as court-siding when it's mostly a skill issue… I've had some fills that have looked like court-siding and it turned out to just be someone being really smart, understanding the game state a lot better than me." ([96:27])
+- <strong>Status:</strong> NEW as a stated rule. Relevant because his own in-play systems (Todd-mimic watcher, upset watch, steam watches) all implicitly assume fast money = information. The episode says: check the game-state explanation before the courtsider explanation.
+- <strong>Implementability:</strong> a rule, not a build — fold into the markout audit (P2): when a flagged price moves against him, the review should ask "what did the smarter player know about game state?" before "was I court-sided?"</p>
+<h3>E8 — "Don't overestimate your competition" + the lean-team edge [55:33–57:49, 61:32–64:06] — MINDSET, partially actionable</h3>
+<p><strong>Who:</strong> Yizzle (tweet), Apex, GP.
+<strong>What:</strong> Yizzle's tweet: "if I could go back, I wish I had a little more self-belief… to crush on prediction markets, you had to basically be like Susquehanna, but don't overestimate your competition." ([55:38]) Seeing millions of contracts in an NFL moneyline book made them think competing was impossible — "that's what really held me and Apex back in the beginning" ([56:42]). Reality once they tried: "it's the uptime and the flow that you're getting in isn't as centralized as you would have thought" ([57:32]). They avoided golf (thought GP dominated it) and Love Island (thought SP owned it) out of the same fear.
+- Lean-team advantage: "we're a super lean team… we can actually push things and make a real change" ([61:37]); big firms "could have a silo desk… literally just be the exact same setup as what you guys have" (GP, [62:44]) — plus firms have constraints he doesn't: "you can do whatever you all want with your money, like in terms of risk tolerance… there's a one-off market that only happens once, you can dedicate resources to pricing that" ([63:14]). "The talent discrepancy is not as large as you would think" ([62:29]); "we're constantly getting spammed by firms trying to poach us out" ([64:20]).
+- <strong>Status:</strong> mindset. The actionable slice for him: he is a one-man lean team with the same flexibility advantage — and his fear about competing with big PM desks is the same fear Yizzle describes. Not a build.
+- Also relevant to his open question about automating Kalshi: the guests run fully automated API trading on Kalshi as their business, in the open, on Kalshi's public API with its liquidity programs. That is evidence that API automation is a normal, supported activity on Kalshi — <strong>but</strong> the episode never discusses terms-of-service or whether auto-placing <em>someone else's picks</em> (Todd's) is allowed. It does not answer his question; it only shows the venue tolerates automation in general. Do not over-read it.</p>
+<h3>E9 — Pick6 correlation + game theory: the original edge, now dead in that form [07:27–11:56] — HISTORICAL (do not chase)</h3>
+<p><strong>Who:</strong> Yizzle.
+<strong>What:</strong> Started pen-and-paper: comparing the FanDuel line vs the DK line vs Pick6, manually finding discrepancies; "I didn't even know what an optimizer was" ([08:31]). Learned correlation; early Pick6 had no correlation guardrails [transcribed "no correlation nurse" — uncertain] and was purely peer-to-peer with variable payouts ([08:50]). Then the game-theory layer: "it was the exchange, and your payout depended on other people, so it ended up being really important" ([09:08]). Strategy: build the most UNIQUE lineup possible "to try to make sure the people who did no correlation would lose. And then obviously you beat out all the wrecks just by knowing what correlation even is." ([10:05]) Pick-editing: wait until right before tip-off and edit to "the max COV possible" [COV uncertain — likely correlation/coverage; flagged] ([11:00]). "I think it's the best gambling game ever created" ([10:32]); "it was only on layer two or three of the game and it was like not even close to being solved" ([11:30]). Then Pick6 introduced min payouts and Yizzle was "incessantly tweeting and crying" about the fees ([09:52]) — "RIP that version of Pick6" ([11:56]).
+- <strong>Status:</strong> HISTORICAL. The game as described no longer exists. The transferable lesson — in peer-to-peer pools, uniqueness + correlation beats raw EV, and payout depends on the field — applies to PMs generally, but there is nothing to build from Pick6 itself.</p>
+<hr />
+<h2>What is NOT new (duplicates — do not present as discoveries)</h2>
+<table>
+<thead>
+<tr>
+<th>Episode claim</th>
+<th>He already has it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cross-exchange arbitrage Kalshi vs Polymarket</td>
+<td>Kalshi-Poly arbitrage board, running daily</td>
+</tr>
+<tr>
+<td>Kalshi price gaps vs a fair price</td>
+<td>Kalshi price-gap scanner + dashboard (Kalshi vs DK-via-ESPN no-vig fair, flags ≥3c cheap)</td>
+</tr>
+<tr>
+<td>+EV / steam / slow-book mechanism</td>
+<td>+EV tracker (regular + inverse), steam-side + line-move watches; he named the steam/slow-book mechanism himself and asked for the close check</td>
+</tr>
+<tr>
+<td>Market-making basics (quote wide, collect flow)</td>
+<td>Heard on this same show, Eps 178 and 180, per his own listening</td>
+</tr>
+<tr>
+<td>Election / politics PM edges</td>
+<td>EP179 (Lostzemblan) already transcribed and mined; prediction-middles goal exists</td>
+</tr>
+<tr>
+<td>"Books move, exchanges are the sharp side"</td>
+<td>His whole scan stack is built on this</td>
+</tr>
+</tbody>
+</table>
+<h2>What is NOT implementable for him</h2>
+<ul>
+<li><strong>RFQ market making at scale.</strong> Yizzle runs the RFQ desk; NFL football RFQ "has been pretty rough… our RFQ desk isn't looking too hot" ([84:24]); makers collectively down ~$20M on RFQs by one account, and the pair "lost well over six figures from a couple RFQs" before pivoting ([101:09]). Needs scale, capital, and a team. Reject.</li>
+<li><strong>Full-time market-making desk.</strong> Their operation is 4 people, no days off since January, ~$300M/month volume, 24/7 fill monitoring (they hired Apex's brother just to watch fills). He is one person with a day job's worth of other systems. Reject as a build; take the processes, not the org chart.</li>
+<li><strong>Farming Kalshi liquidity rewards the way Apex did in Jan–Mar 2026.</strong> That window is closed — spreads compressed from 8–10c to ~6c and tighter, programs ended. Historical only.</li>
+<li><strong>Kalshi maker rebates as a retail account.</strong> Maker economics need market-maker status/volume he doesn't have. The accessible version is the Polymarket <em>taker</em> rebate (E2), not a Kalshi maker rebate.</li>
+<li><strong>Live modelling for every sport.</strong> They do it for "a couple of sports" with two full-time quants. He should pick one sport he already models (see P4), not all of them.</li>
+</ul>
+<hr />
+<h2>Ranked implementation proposals (proposals only — nothing built)</h2>
+<p>Ranked by expected value vs effort. All need his tap before any build starts.</p>
+<h3>P1 — New-program / new-market watch (E5) — build a scan + alert</h3>
+<p><strong>Effort: LOW. EV: episodic HIGH.</strong>
+A lightweight watch that flags, early: (a) new liquidity/rewards/rebate programs on Kalshi and Polymarket (US + international), (b) newly listed market categories on either venue (the ITF-tennis pattern), (c) new venues. Sources: exchange announcements/changelogs, X, the show's own community. Alert the moment one lands, with the program's terms and an expiry date — because the edge decays in weeks and the early movers capture it. This is the episode's single most repeatable lesson ("when that early spot came out, they just went all in") and the cheapest thing to build. Needs capital kept ready to deploy; a watch without deployable capital is just a newsletter.
+<strong>First check before building:</strong> verify the Polymarket API taker rebate (E2) is still live — if it is, it's the watch's first catch.</p>
+<h3>P2 — Markout audit on his existing scans (E1 + E7) — tweak, not a build</h3>
+<p><strong>Effort: LOW–MEDIUM. EV: MEDIUM, steady.</strong>
+Add a markout log to the Kalshi gap scanner and the +EV tracker: for every flagged price, record the price 60 seconds later and the closing price, per source/market. Weekly review: which sources/markets have negative average markouts — those get throttled or killed. Add the E7 rule to the review: when a flagged price moves against him, first ask "what did the smarter player know about game state?" before "was I court-sided / was it a trap?" This is the exchange world's version of CLV discipline, applied to systems he already runs. No new data vendor needed; the scans already poll the prices.</p>
+<h3>P3 — Automated Polymarket taker, paper-first, sub-account, capped (E2 + E4) — new build</h3>
+<p><strong>Effort: HIGH. EV: HIGH but unproven, real-money risk.</strong>
+A taker that lifts stale Polymarket quotes when they deviate from his own fair price (his Kalshi scanner already computes fair prices; the taker reuses that pricing, per Apex: "if you have a price to make, it's very easy to take from that"). Deployment exactly as Apex did it: (1) log what it <em>would</em> take for weeks and score the markouts + weekly realized results — deploy nothing until the paper log is positive; (2) deploy on a sub-account with a hard-capped bankroll (Apex used $10,000, "if it blows up, oh well"); (3) per-game caps; (4) kill-switch on negative markouts. The Polymarket API taker rebate, if still live, is a tailwind — not the thesis. Prerequisites: Polymarket API access, a sports fair-price feed he trusts (his own models, not just DK), and his explicit go-ahead on real-money automation — this is the one proposal that touches his "places every bet himself" rule, so it needs a separate, explicit tap, and paper-first is non-negotiable.
+<strong>Do not start this if the rebate is already dead or if he won't run the paper phase.</strong></p>
+<h3>P4 — Origination overlay for ONE sport on the Kalshi scanner (E3) — tweak with strategic weight</h3>
+<p><strong>Effort: MEDIUM. EV: MEDIUM–HIGH, long-term.</strong>
+His Kalshi gap scanner prices everything top-down from DK. The episode's thesis is that this edge decays as exchanges efficientize. Pick ONE sport he already models well (Total Projectors for NCAAB totals, or Elo/BPM for NBA) and price Kalshi markets from his own model alongside the DK fair price; flag where the two disagree, and log which one was right. This is the "find your niche and specialize" advice applied to his own stack. Do not attempt for all sports — they do it for "a couple of sports" with two full-timers.</p>
+<h3>P5 — One-off / event-market desk process (E6) — manual process, no build</h3>
+<p><strong>Effort: LOW. EV: MEDIUM, episodic, high variance.</strong>
+A standing checklist for one-off markets (elections, CEO successions, awards): (1) game-theory framing — who is the marginal buyer and what do they believe? (2) talk to people smarter on the topic; (3) watch live-chat positioning for retail flow; (4) hard rule from the Jensen Huang loss — one-offs have no data points and tiny samples, so size small and never confuse "retail flow made it look +EV" with an edge. No code. The Jensen trade is the cautionary half of this proposal: the process must include a "don't play" outcome.</p>
+<hr />
+<h2>Transcription uncertainty log (things I did not clean up silently)</h2>
+<ul>
+<li>"Yisle / Yizil / Gizzle" = Yizzle (per episode title). "Cal-Shi / Calci / Kaoshi" = Kalshi. "Pauli / Paulie" = Polymarket.</li>
+<li>"forexed our bankroll" [17:42] — almost certainly "4x'd our bankroll." Rendered as 4x'd in this report.</li>
+<li>"no correlation nurse" [08:54] — uncertain; likely "no correlation [rules/guardrails]". Paraphrased as "no correlation guardrails."</li>
+<li>"max COV" [11:03] — uncertain what COV abbreviates (correlation/coverage/coefficient of variation). Left as quoted with a flag.</li>
+<li>"clod slop making" [35:01] — almost certainly "Claude slop making" (AI-assisted market making). Rendered as Claude-slop.</li>
+<li>"count priming" [100:37] — uncertain phrase; not used in this report.</li>
+<li>"Talerico" [79:48] — almost certainly James Talarico (Texas Democrat, 2026 midterms).</li>
+<li>"Lad" [81:16] — tweet author of the "top 20 worst events for market makers" post; name as heard.</li>
+<li>"Pads" — a prior guest of the pod, nickname as heard; not identified further.</li>
+<li>"8 Becks" / "8 Becksy Azul" [102:45] — a nickname as heard; not identified further.</li>
+<li>"Liam Kane" [78:13], "Charco" [67:14], "Ryan G Betts" [78:01], "Shippers" [85:38], "Database bets" [68:08] — questioners / people as heard.</li>
+<li>"SPF/SP" in EP179's transcript = SportsProjections; same here (SP co-hosts).</li>
+<li>Numbers I double-checked in the transcript: $300 start, ~$10,000 by March, $10,000 bankroll at team-up, ~5x bankroll on ITF in a month, a million contracts on one ITF match, 8–10 cents wide early quotes, ~$300M volume last month, taking "a couple percent" of volume, 1/3 pre-match / 2/3 live, "well over six figures" lost on a couple RFQs, makers down ~$20M on RFQs (as stated by Yizzle, second-hand).</li>
+</ul>
+<hr />
+<h2>Files</h2>
+<ul>
+<li><code>ep181.mp3</code> — episode audio (79.6 MB, 110:34)</li>
+<li><code>ep181.json</code> / <code>ep181.txt</code> — raw faster-whisper output from the Mac</li>
+<li><code>transcript.md</code> — timestamped transcript (2680 segments, 17,881 words)</li>
+<li><code>edges-report.md</code> — this report</li>
+</ul>
+<p class="foot">Source: The Risk Takers Podcast, Ep 181, &ldquo;The 20 Year Old&rsquo;s Who Are Crushing You on PMs w/ Apex and Yizzle&rdquo; (Nov 25, 2026). Transcript and audio kept with the report files. Nothing in this report is a live pick.</p>
+</main></body></html>
