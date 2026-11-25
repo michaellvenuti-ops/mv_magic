@@ -1,10 +1,11 @@
-# Hung numbers — 2026-11-24 (scan 2026-11-24 20:34)
+# Hung numbers — 2026-11-24 (scan 2026-11-24 22:15)
 
-- Kent State vs Eastern Michigan | BetMGM | spread | value: favorite | book 2.5 vs median 4.5 | div 2.0 middle pairing spans key number 3
-- Kent State vs Eastern Michigan | BetMGM | total | value: Over | book 51.5 vs median 49.5 | div 2.0 
-- Kent State vs Eastern Michigan | BetMGM | moneyline Eastern Michigan | value: Eastern Michigan | book 62.3 vs median 70.6 | div 8.3 
-- Kent State vs Eastern Michigan | BetMGM | moneyline Kent State | value: Kent State | book 43.5 vs median 36.2 | div 7.2 
-- Mississippi State vs Ole Miss | Fanatics | spread | value: favorite | book 18.5 vs median 19.5 | div 1.0 
+- Bears vs Lions | FanDuel | spread | value: favorite | book -2.5 vs median -1.5 | div 1.0 
+- Miami (OH) vs Western Michigan | BetMGM | total | value: Under | book 48.5 vs median 52.5 | div 4.0 
+- Kent State vs Eastern Michigan | BetMGM | moneyline Eastern Michigan | value: Eastern Michigan | book 45.5 vs median 74.4 | div 28.9 
+- Kent State vs Eastern Michigan | DraftKings | moneyline Eastern Michigan | value: Eastern Michigan | book 90.3 vs median 74.4 | div 15.9 
+- Kent State vs Eastern Michigan | BetMGM | moneyline Kent State | value: Kent State | book 60.8 vs median 30.3 | div 30.5 
+- Kent State vs Eastern Michigan | DraftKings | moneyline Kent State | value: Kent State | book 15.7 vs median 30.3 | div 14.6 
 - Florida vs Florida State | Hard Rock | spread | value: dog | book -4.5 vs median -6.5 | div 2.0 
 - Michigan vs Ohio State | Hard Rock | spread | value: dog | book 13.5 vs median 10.5 | div 3.0 
 - Michigan vs Ohio State | Hard Rock | total | value: Over | book 46.5 vs median 37.5 | div 9.0 
