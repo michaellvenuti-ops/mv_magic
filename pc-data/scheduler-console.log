@@ -11739,3 +11739,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 01:03:44 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-25 01:03:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-25 01:03:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 01:33:45 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 01:35:51 ET] odds_recorder.py: OK in 96s — SUMMARY: recorded 186 events (92 with odds), db total 321574 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 01:36:33 ET] dh_arbitrage.py: OK in 41s — ARBITRAGE: NBA LA Clippers MEM Grizzlies Today 8:15 PM / Today 8:15 PM / table / Points K. Murray Under 5.5 / Alt Points K. Murray 6+ / table | Bet365 | Fanatic
+[2026-11-25 01:37:04 ET] dh_kalshi_poly_arb.py: OK in 32s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 01:37:08 ET] wide_builds.py: OK in 3s — NEW BUILD: NCAAF 22 Boise St. Colorado St. Nov-28 6:00 PM — Total — Over 81.5 FanDuel +146 ($80) / Under 82 Fanatics-NJ -160 ($120) — win+push at 82 — push +$11
+[2026-11-25 01:37:08 ET] syncing to GitHub (wide-builds banked new builds)
