@@ -11,3 +11,5 @@ NEW TODD PLAY: Todd play (in-play CBB) -122 :: raw: "@everyone Mia Ohio -7 -122 
 NEW TODD PLAY: Total 172.5 -115 :: raw: "@everyone ov172.5 -115 ark st (at the half" :: msg 1575264778203439326 :: posted 2026-11-25T21:39:50.128Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 16:46:42 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 134.5 -128 :: raw: "@everyone un134.5 -128 Akron ..risk 1 for .78" :: msg 1575266441328861217 :: posted 2026-11-25T21:46:26.648Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 17:03:45 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 145.5 -110 :: raw: "@everyone ov145.5 -110 geo st" :: msg 1575270713965674497 :: posted 2026-11-25T22:03:25.324Z :: Novig: https://app.novig.us/AppEntry
