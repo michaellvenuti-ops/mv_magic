@@ -35,3 +35,5 @@ NEW IN-PLAY CBB: PLAY: Over 143.5 -120 — Georgia St at FGCU (TRAILING FAVE) | 
 NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Prairie View at Marshall (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 138.5 (gap -20.5, bar 5) | H1 59 | as of 16:49:03 ET
 ## 2026-11-25 17:06:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 177.5 -115 — Texas A&M at Xavier (TRAILING FAVE) | pregame favorite Texas A&M trails at half (Xavier leads); pace is slow (proj 172.0 vs live 177.5) — the comeback-fave rule bets Over anyway | H1 86 | as of 17:06:02 ET
+## 2026-11-25 17:44:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 160.5 — Southern at Nebraska (2ND BITE) | 1H total 84 cleared implied 1H line 74.75 by +9.2; pace proj 168.0 vs live total 160.5 -- take the Over again at the half | H1 84 | as of 17:44:02 ET
