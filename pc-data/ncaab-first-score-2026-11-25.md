@@ -18,3 +18,7 @@
 - 2026-11-25: Northern Iowa Panthers @ Charlotte 49ers — first: Charlotte 49ers (3PT, 1:47 in); lead changes 2; final 72-85
 - 2026-11-25: Mercy Mavericks @ Fordham Rams — first: Fordham Rams (2PT, 0:27 in); lead changes 0; final 56-104
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T14:04:44-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1170 games through 2026-11-25
+- 2026-11-25: Penn State Abington Nittany Lions @ Saint Joseph's Hawks — first: Saint Joseph's Hawks (3PT, 0:12 in); lead changes 0; final 48-104
+- 2026-11-25: Vermont State Randolph Knights @ Fairleigh Dickinson Knights — first: Fairleigh Dickinson Knights (2PT, 0:26 in); lead changes 0; final 48-123
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
