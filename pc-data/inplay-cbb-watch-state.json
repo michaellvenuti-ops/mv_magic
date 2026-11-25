@@ -968,7 +968,8 @@
    "pregame_total": 170.5,
    "alerted_at": "2026-11-25T17:06:03",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 177.5 -115 \u2014 Texas A&M at Xavier (TRAILING FAVE) | pregame favorite Texas A&M trails at half (Xavier leads); pace is slow (proj 172.0 vs live 177.5) \u2014 the comeback-fave rule bets Over anyway | H1 86 | as of 17:06:02 ET"
+   "alert_detail": "PLAY: Over 177.5 -115 \u2014 Texas A&M at Xavier (TRAILING FAVE) | pregame favorite Texas A&M trails at half (Xavier leads); pace is slow (proj 172.0 vs live 177.5) \u2014 the comeback-fave rule bets Over anyway | H1 86 | as of 17:06:02 ET",
+   "final": true
   },
   "401928836": {
    "matchup": "Akron at App State",
@@ -1170,12 +1171,15 @@
   "401922253": {
    "matchup": "West Florida at N'Western St",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "N'Western St",
    "dog_team": "West Florida",
-   "pregame_total": 139.5
+   "pregame_total": 139.5,
+   "alerted_at": "2026-11-25T18:48:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 127.5 \u2014 West Florida at N'Western St (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 127.5 (gap -19.5, bar 5) | H1 54 | as of 18:48:02 ET"
   },
   "401920549": {
    "matchup": "Kennesaw St at Charleston",
@@ -1290,7 +1294,7 @@
    "spread": 3.5,
    "fav_team": "Utah State",
    "dog_team": "SMU",
-   "pregame_total": 162.5
+   "pregame_total": 163.5
   },
   "401918960": {
    "matchup": "Norfolk St at NC State",
@@ -1307,10 +1311,10 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 19.5,
+   "spread": 20.5,
    "fav_team": "Wisconsin",
    "dog_team": "Northeastern",
-   "pregame_total": 154.5
+   "pregame_total": 153.5
   },
   "401929287": {
    "matchup": "Wake Forest at Mississippi St",
@@ -1320,7 +1324,7 @@
    "spread": 3.5,
    "fav_team": "Mississippi St",
    "dog_team": "Wake Forest",
-   "pregame_total": 149.5
+   "pregame_total": 148.5
   },
   "401920138": {
    "matchup": "Bakersfield at Pepperdine",
@@ -1375,7 +1379,7 @@
    "spread": 7.5,
    "fav_team": "LMU",
    "dog_team": "E Washington",
-   "pregame_total": 152.5
+   "pregame_total": 151.5
   },
   "401921671": {
    "matchup": "TBD at TBD",
