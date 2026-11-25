@@ -1,5 +1,5 @@
 {
- "through": "2026-11-23",
+ "through": "2026-11-24",
  "games": [
   {
    "away": "Buffalo Sabres",
@@ -5906,20 +5906,20 @@
    "winner": "Dallas Stars"
   },
   {
-   "date": "2026-11-23",
    "away": "Anaheim Ducks",
-   "home": "Seattle Kraken",
+   "date": "2026-11-23",
+   "final": "2-3",
    "first": "Seattle Kraken",
+   "first_elapsed_sec": 3429,
+   "first_scorer": "Ben Meyers",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Ben Meyers",
-   "first_elapsed_sec": 3429,
-   "winner": "Seattle Kraken",
-   "shootout": false,
-   "seq": "0-1>1-1>1-2>2-2>2-3",
+   "home": "Seattle Kraken",
    "lead_changes": 0,
+   "seq": "0-1>1-1>1-2>2-2>2-3",
+   "shootout": false,
    "ties": 2,
-   "final": "2-3"
+   "winner": "Seattle Kraken"
   },
   {
    "away": "Calgary Flames",
@@ -5970,20 +5970,20 @@
    "winner": "Los Angeles Kings"
   },
   {
-   "date": "2026-11-23",
    "away": "Minnesota Wild",
-   "home": "San Jose Sharks",
+   "date": "2026-11-23",
+   "final": "5-2",
    "first": "Minnesota Wild",
+   "first_elapsed_sec": 743,
+   "first_scorer": "Kirill Kaprizov",
    "first_side": "away",
    "first_strength": "PP",
-   "first_scorer": "Kirill Kaprizov",
-   "first_elapsed_sec": 743,
-   "winner": "Minnesota Wild",
-   "shootout": false,
-   "seq": "1-0>1-1>1-2>2-2>3-2>4-2>5-2",
+   "home": "San Jose Sharks",
    "lead_changes": 2,
+   "seq": "1-0>1-1>1-2>2-2>3-2>4-2>5-2",
+   "shootout": false,
    "ties": 2,
-   "final": "5-2"
+   "winner": "Minnesota Wild"
   },
   {
    "away": "Toronto Maple Leafs",
@@ -6016,6 +6016,22 @@
    "shootout": false,
    "ties": 2,
    "winner": "Winnipeg Jets"
+  },
+  {
+   "date": "2026-11-24",
+   "away": "Vegas Golden Knights",
+   "home": "Edmonton Oilers",
+   "first": "Vegas Golden Knights",
+   "first_side": "away",
+   "first_strength": "PP",
+   "first_scorer": "Jack Eichel",
+   "first_elapsed_sec": 827,
+   "winner": "Vegas Golden Knights",
+   "shootout": false,
+   "seq": "1-0>2-0>2-1>2-2>3-2>4-2>4-3>5-3",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "5-3"
   }
  ],
  "tally": {
@@ -6084,7 +6100,7 @@
    "won_by_one_when_first_pct": 30.0
   },
   "Edmonton Oilers": {
-   "gp": 25,
+   "gp": 26,
    "scored_first": 19,
    "strengths": {
     "EV": 16,
@@ -6094,9 +6110,9 @@
    "won_when_first": 15,
    "won_when_not_first": 2,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 76.0,
+   "scored_first_pct": 73.1,
    "win_pct_when_first": 78.9,
-   "win_pct_when_not_first": 33.3,
+   "win_pct_when_not_first": 28.6,
    "won_by_one_when_first_pct": 15.8
   },
   "Vancouver Canucks": {
@@ -6292,20 +6308,20 @@
    "won_by_one_when_first_pct": 28.6
   },
   "Vegas Golden Knights": {
-   "gp": 24,
-   "scored_first": 9,
+   "gp": 25,
+   "scored_first": 10,
    "strengths": {
     "EV": 4,
-    "PP": 4,
+    "PP": 5,
     "SH": 1
    },
-   "won_when_first": 8,
+   "won_when_first": 9,
    "won_when_not_first": 5,
    "won_by_one_when_first": 2,
-   "scored_first_pct": 37.5,
-   "win_pct_when_first": 88.9,
+   "scored_first_pct": 40.0,
+   "win_pct_when_first": 90.0,
    "win_pct_when_not_first": 33.3,
-   "won_by_one_when_first_pct": 22.2
+   "won_by_one_when_first_pct": 20.0
   },
   "Boston Bruins": {
    "gp": 22,
@@ -6533,22 +6549,22 @@
   }
  },
  "league": {
-  "games": 376,
-  "games_with_goal": 374,
+  "games": 377,
+  "games_with_goal": 375,
   "shootouts": 30,
   "home_scored_first": 179,
-  "first_team_won": 242,
+  "first_team_won": 243,
   "first_team_won_by_one": 74,
-  "first_team_won_by_one_pct": 19.8,
+  "first_team_won_by_one_pct": 19.7,
   "strengths": {
    "EV": 287,
-   "PP": 81,
+   "PP": 82,
    "SH": 6
   },
   "avg_lead_changes": 0.48,
   "median_first_goal_sec": 874,
-  "home_scored_first_pct": 47.9,
-  "first_team_win_pct": 64.7
+  "home_scored_first_pct": 47.7,
+  "first_team_win_pct": 64.8
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6572,9 +6588,9 @@
    "avg_per_game": 0.32
   },
   "Edmonton Oilers": {
-   "games": 25,
+   "games": 26,
    "lead_changes": 7,
-   "avg_per_game": 0.28
+   "avg_per_game": 0.27
   },
   "Vancouver Canucks": {
    "games": 25,
@@ -6637,9 +6653,9 @@
    "avg_per_game": 0.52
   },
   "Vegas Golden Knights": {
-   "games": 24,
+   "games": 25,
    "lead_changes": 12,
-   "avg_per_game": 0.5
+   "avg_per_game": 0.48
   },
   "Boston Bruins": {
    "games": 22,
