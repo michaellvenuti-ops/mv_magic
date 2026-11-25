@@ -17,3 +17,5 @@ NEW TODD PLAY: Total 145.5 -110 :: raw: "@everyone ov145.5 -110 geo st" :: msg 1
 NEW TODD PLAY: Total 88.5 -115 :: raw: "@everyone ov88.5 -115 Texas st team total" :: msg 1575277523758088273 :: posted 2026-11-25T22:30:28.905Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 17:45:27 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 69.5 -110 :: raw: "@everyone ov69.5 -110 1h port st" :: msg 1575281162329395292 :: posted 2026-11-25T22:44:56.408Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 18:05:47 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 153.5 -114 :: raw: "@everyone ov153.5 -114 Portland st (at the half" :: msg 1575286338041684111 :: posted 2026-11-25T23:05:30.394Z :: Novig: https://app.novig.us/AppEntry
