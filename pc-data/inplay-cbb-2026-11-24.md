@@ -47,3 +47,5 @@ NEW IN-PLAY CBB: 2ND BITE: Mercer at FAU | Full Total (at half) Over 178.5 -125 
 NEW IN-PLAY CBB: TRAILING FAVE: E Michigan at Kennesaw St | Full Total (at half) Over 114.5 | pregame favorite Kennesaw St trails at half (E Michigan leads); pace proj 74.0 vs live total 114.5 (gap -40.5) -- comeback-fave Over anyway | H1 37 | as of 18:58:04 ET
 ## 2026-11-24 19:38:40 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: UMBC at Iowa | Full Total (at half) Under 139.5 -115 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 19:38:40 ET
+## 2026-11-24 19:42:27 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Delaware St at Chattanooga | Full Total (at half) Under 144.5 -120 | pace proj 138.0 (H1 69 x 2) vs live total 144.5 (gap -6.5, bar 5) | H1 69 | as of 19:42:26 ET
