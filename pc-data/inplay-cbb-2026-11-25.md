@@ -25,3 +25,5 @@ NEW IN-PLAY CBB: PLAY: Under 144.5 -115 — AR-Pine Bluff at South Dakota (PACE)
 NEW IN-PLAY CBB: PLAY: Over 155.5 -115 — Ole Miss at Arizona (TRAILING FAVE) | pregame favorite Arizona trails at half (Ole Miss leads); pace is slow (proj 146.0 vs live 155.5) — the comeback-fave rule bets Over anyway | H1 73 | as of 15:27:01 ET
 ## 2026-11-25 15:52:04 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 142.5 -115 — Akron at App State (TRAILING FAVE) | pregame favorite Akron trails at half (App State leads); pace is slow (proj 140.0 vs live 142.5) — the comeback-fave rule bets Over anyway | H1 70 | as of 15:52:03 ET
+## 2026-11-25 15:56:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 151.5 -120 — Jackson St at Oklahoma St (PACE) | pace proj 140.0 (H1 70 x 2) vs live total 151.5 (gap -11.5, bar 5) | H1 70 | as of 15:56:02 ET
