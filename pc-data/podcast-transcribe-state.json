@@ -769,7 +769,7 @@
    "date": "2026-11-19",
    "queued_at": "2026-11-19T21:15:29.905991-05:00",
    "show": "Follow the Money",
-   "status": "queued",
+   "status": "transcribing",
    "stem": "follow-the-money-2026-11-19-hour-2",
    "title": "Follow the Money | November 19, 2026 | Hour 2",
    "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/c0e42be4-1606-4724-a6e5-b050770a8876/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=c0e42be4-1606-4724-a6e5-b050770a8876&feed=iXBZFZCf"
@@ -1315,12 +1315,16 @@
   },
   "VSiN By The Books|2026-11-16|VSiN By The Books | November 16, 2026 | Hour 3": {
    "date": "2026-11-16",
+   "done_at": "2026-11-24T18:50:47.678694-05:00",
    "queued_at": "2026-11-17T01:56:13.676312-05:00",
    "show": "VSiN By The Books",
-   "status": "transcribing",
+   "status": "done",
    "stem": "vsin-by-the-books-2026-11-16-hour-3",
    "title": "VSiN By The Books | November 16, 2026 | Hour 3",
-   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/79bf673d-f06e-4a7a-a859-39015a0a084c/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=79bf673d-f06e-4a7a-a859-39015a0a084c&feed=iXBZFZCf"
+   "transcript": "transcripts/vsin-by-the-books-2026-11-16-hour-3.txt",
+   "url": "https://injector.simplecastaudio.com/c311801a-7981-4e6d-a10d-9c0b8105bb2b/episodes/79bf673d-f06e-4a7a-a859-39015a0a084c/audio/128/default.mp3?aid=rss_feed&awCollectionId=c311801a-7981-4e6d-a10d-9c0b8105bb2b&awEpisodeId=79bf673d-f06e-4a7a-a859-39015a0a084c&feed=iXBZFZCf",
+   "wall_s": 8864,
+   "words": 9341
   },
   "VSiN By The Books|2026-11-18|VSiN By The Books | November 18, 2026 | Hour 1": {
    "date": "2026-11-18",
@@ -1432,7 +1436,7 @@
   }
  },
  "worker": {
-  "current": "VSiN By The Books|2026-11-16|VSiN By The Books | November 16, 2026 | Hour 3",
-  "heartbeat": "2026-11-24T16:23:02.731539-05:00"
+  "current": "Follow the Money|2026-11-19|Follow the Money | November 19, 2026 | Hour 2",
+  "heartbeat": "2026-11-24T18:50:58.600703-05:00"
  }
 }
