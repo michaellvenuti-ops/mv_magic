@@ -1,0 +1,37 @@
+{
+  "game": "South Carolina at Clemson",
+  "clicked": null,
+  "states": [
+    {
+      "label": "browse-odds",
+      "url": "https://darkhorseodds.com/dashboard",
+      "body": "menu\nnotifications\nQuick Links\nEarn $3,600\ncampaign\nPromo Dashboard\ntable_view\nBrowse Odds\nmanage_search\nBrowse Odds Table\nnewspaper\nWhat's New\nschool\nGuides\nDiscord\ngroup_add\nWant Help?\nbolt\nDouble Down Live Odds\nBet Finders\ntrending_up\nProfit Boost\nworkspace_premium\nBonus Bet\nlocal_activity\nSite Credit\npayments\nSecond Chance Bet\nauto_graph\nQualifying Bet\nvertical_align_center\nMiddles\ncycle\nLow Holds\nattach_money\nArbitrage\nmonitoring\n+EV Bets",
+      "tables": [],
+      "links": [
+        {
+          "tag": "BUTTON",
+          "text": "menu",
+          "href": "",
+          "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base ng-tns-c1236168633-0 mat"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "notifications",
+          "href": "",
+          "cls": "mdc-icon-button mat-mdc-icon-button mat-mdc-button-base ng-tns-c1236168633-0 mat"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Earn $3,600",
+          "href": "",
+          "cls": "mdc-button mat-mdc-button-base bet-finder-filter-button mdc-button--unelevated m"
+        }
+      ]
+    },
+    {
+      "label": "browse-odds-nav-click-failed",
+      "error": "Locator.click: Timeout 10000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"Browse Odds\").first\n    - locator resolved to <div _ngcontent-ng-c4278329000=\"\" class=\"left-div ng-star-inserted\"> Browse Odds </div>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and sta",
+      "url": "https://darkhorseodds.com/dashboard"
+    }
+  ]
+}
