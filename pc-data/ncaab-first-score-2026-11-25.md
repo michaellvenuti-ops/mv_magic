@@ -22,3 +22,11 @@
 - 2026-11-25: Penn State Abington Nittany Lions @ Saint Joseph's Hawks — first: Saint Joseph's Hawks (3PT, 0:12 in); lead changes 0; final 48-104
 - 2026-11-25: Vermont State Randolph Knights @ Fairleigh Dickinson Knights — first: Fairleigh Dickinson Knights (2PT, 0:26 in); lead changes 0; final 48-123
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T15:21:24-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 1176 games through 2026-11-25
+- 2026-11-25: Northern Colorado Bears @ Detroit Mercy Titans — first: Northern Colorado Bears (3PT, 0:59 in); lead changes 4; final 93-83
+- 2026-11-25: Yale Bulldogs @ Wright State Raiders — first: Yale Bulldogs (2PT, 1:19 in); lead changes 4; final 72-70
+- 2026-11-25: Lindenwood Lions @ Stony Brook Seawolves — first: Lindenwood Lions (2PT, 0:50 in); lead changes 3; final 63-69
+- 2026-11-25: Southern Utah Thunderbirds @ Long Beach State Beach — first: Southern Utah Thunderbirds (2PT, 0:42 in); lead changes 23; final 64-65
+- 2026-11-25: American International Yellow Jackets @ Rhode Island Rams — first: American International Yellow Jackets (FT, 0:49 in); lead changes 1; final 89-98
+- 2026-11-25: Eastern Kentucky Colonels @ Miami (OH) RedHawks — first: Miami (OH) RedHawks (2PT, 0:30 in); lead changes 8; final 72-85
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
