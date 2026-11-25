@@ -849,22 +849,28 @@
   "401921669": {
    "matchup": "Arizona St at LSU",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 3.5,
    "fav_team": "LSU",
    "dog_team": "Arizona St",
-   "pregame_total": 145.5
+   "pregame_total": 145.5,
+   "alerted_at": "2026-11-25T14:50:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 151.5 -120 \u2014 LSU at Arizona St (TRAILING FAVE) | pregame favorite LSU trails at half (Arizona St leads); pace agrees (proj 162.0 vs live 151.5) \u2014 comeback-fave Over | H1 81 | as of 14:50:02 ET"
   },
   "401929406": {
    "matchup": "AR-Pine Bluff at South Dakota",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 20.5,
    "fav_team": "South Dakota",
    "dog_team": "AR-Pine Bluff",
-   "pregame_total": 151.5
+   "pregame_total": 151.5,
+   "alerted_at": "2026-11-25T14:52:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 144.5 -115 \u2014 AR-Pine Bluff at South Dakota (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 144.5 (gap -14.5, bar 5) | H1 65 | as of 14:52:02 ET"
   },
   "401928850": {
    "matchup": "Grace Chrstn at W Michigan",
@@ -897,12 +903,15 @@
   "401920868": {
    "matchup": "Manhattan at NJIT",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "NJIT",
    "dog_team": "Manhattan",
-   "pregame_total": 142.5
+   "pregame_total": 142.5,
+   "alerted_at": "2026-11-25T14:50:06",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 149.5 \u2014 Manhattan at NJIT (TRAILING FAVE) | pregame favorite NJIT trails at half (Manhattan leads); pace is slow (proj 148.0 vs live 149.5) \u2014 the comeback-fave rule bets Over anyway | H1 74 | as of 14:50:02 ET"
   },
   "401917967": {
    "matchup": "Abilene Chrstn at S Dakota St",
@@ -1072,7 +1081,7 @@
    "spread": 26.5,
    "fav_team": "Texas St",
    "dog_team": "Alcorn St",
-   "pregame_total": 147.5
+   "pregame_total": 146.5
   },
   "401920237": {
    "matchup": "Holy Cross at Dartmouth",
