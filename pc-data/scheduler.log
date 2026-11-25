@@ -11673,3 +11673,9 @@
 [2026-11-24 23:47:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
 [2026-11-24 23:47:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-24 23:47:06 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 00:17:06 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 00:18:57 ET] odds_recorder.py: OK in 81s — SUMMARY: recorded 186 events (94 with odds), db total 321388 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 00:19:33 ET] dh_arbitrage.py: OK in 36s — ARBITRAGE: NBA MIN Timberwolves OKC Thunder Today 7:45 PM / Today 7:45 PM / table / 3PT FGs A. Caruso Under 1.5 / Alt 3PT FGs A. Caruso 2+ / table | DraftKings 
+[2026-11-25 00:19:52 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 00:19:55 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL PHI Eagles DAL Cowboys Nov-26 4:30 PM — Total — Over 44.5 HardRock -160 ($122) / Under 45 ProphetX +152 ($78) — win+push at 45 — push +$76.25, mi
+[2026-11-25 00:19:55 ET] syncing to GitHub (wide-builds banked new builds)
