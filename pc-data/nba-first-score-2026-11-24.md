@@ -6,3 +6,6 @@
 - 2026-11-23: Utah Jazz @ Los Angeles Lakers — first: Utah Jazz (2PT, 0:35 in); lead changes 11; final 94-109
 - 2026-11-23: San Antonio Spurs @ Sacramento Kings — first: Sacramento Kings (2PT, 0:53 in); lead changes 5; final 123-107
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T21:26:12-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 246 games through 2026-11-24
+- 2026-11-24: Detroit Pistons @ Orlando Magic — first: Detroit Pistons (2PT, 0:27 in); lead changes 6; final 104-86
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
