@@ -307,7 +307,8 @@
    "pregame_total": 159.5,
    "alerted_at": "2026-11-24T18:52:22",
    "alert_rule": "2ND BITE",
-   "alert_detail": "2ND BITE: Sacred Heart at Rutgers | Full Total (at half) Over 187.5 | 1H total 102 cleared implied 1H line 79.75 by +22.2; pace proj 204.0 vs live total 187.5 -- take the Over again at the half | H1 102 | as of 18:52:03 ET"
+   "alert_detail": "2ND BITE: Sacred Heart at Rutgers | Full Total (at half) Over 187.5 | 1H total 102 cleared implied 1H line 79.75 by +22.2; pace proj 204.0 vs live total 187.5 -- take the Over again at the half | H1 102 | as of 18:52:03 ET",
+   "final": true
   },
   "401923395": {
    "matchup": "S Indiana at VMI",
@@ -503,12 +504,15 @@
   "401921030": {
    "matchup": "Bellarmine at GA Southern",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 2.5,
    "fav_team": "GA Southern",
    "dog_team": "Bellarmine",
-   "pregame_total": 152.5
+   "pregame_total": 152.5,
+   "alerted_at": "2026-11-24T19:56:02",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 145.5 \u2014 GA Southern at Bellarmine (TRAILING FAVE) | pregame favorite GA Southern trails at half (Bellarmine leads); pace is slow (proj 136.0 vs live 145.5) \u2014 the comeback-fave rule bets Over anyway | H1 68 | as of 19:56:02 ET"
   },
   "401920976": {
    "matchup": "Delaware St at Chattanooga",
@@ -601,12 +605,15 @@
   "401920309": {
    "matchup": "Samford at Georgia Tech",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 9.5,
    "fav_team": "Georgia Tech",
    "dog_team": "Samford",
-   "pregame_total": 161.5
+   "pregame_total": 161.5,
+   "alerted_at": "2026-11-24T19:56:22",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 163.5 \u2014 Samford at Georgia Tech (TRAILING FAVE) | pregame favorite Georgia Tech trails at half (Samford leads); pace is slow (proj 156.0 vs live 163.5) \u2014 the comeback-fave rule bets Over anyway | H1 78 | as of 19:56:02 ET"
   },
   "401919829": {
    "matchup": "SUNY Fredonia at Mercyhurst",
@@ -820,7 +827,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 25.5,
+   "spread": 24.5,
    "fav_team": "Auburn",
    "dog_team": "Lipscomb",
    "pregame_total": 158.5
