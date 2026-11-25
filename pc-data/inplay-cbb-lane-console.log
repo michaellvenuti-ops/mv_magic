@@ -1286,3 +1286,135 @@ NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars /
 NO TRIGGER
 SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
 [2026-11-24 20:48:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NEW FLAG INP-050: PLAY: Over 161.5 — Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) — comeback-fave Over | H1 82 | as of 20:50:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 89d7cbaa5de242a359bb77ee09abfe867d400a31 but expected 10ebb4a721eb134721196fc9d80683406c946639","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (69eed4c626d6)
+github: pushed pc-data/inplay-cbb-log.json (8307fa94cd6c)
+NO FLAG Lipscomb at Auburn | H1 84 proj 168.0 vs live 166.5 (inside bars / no H1)
+NEW FLAG INP-051: PLAY: Under 155.5 -110 — Army at Air Force (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 155.5 (gap -11.5, bar 5) | H1 72 | as of 20:50:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (fa68a4f8f1bb)
+github: pushed pc-data/inplay-cbb-log.json (5974912aa0f8)
+NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars / no H1)
+TRIGGER: PLAY: Over 161.5 — Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) — comeback-fave Over | H1 82 | as of 20:50:02 ET
+TRIGGER: PLAY: Under 155.5 -110 — Army at Air Force (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 155.5 (gap -11.5, bar 5) | H1 72 | as of 20:50:02 ET
+SUMMARY: 87 games checked, 4 at halftime, 2 new flag(s)
+[2026-11-24 20:50:24 ET] lane run: inplay_cbb_watch exit 0 in 23s -- 2 new alert(s) (Oral Roberts at UT Arlington; Army at Air Force)
+[2026-11-24 20:50:26 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 838270675e043af72528532daa1001a1fa7e2ef9 but expected 5974912aa0f8c14fbd234e8ffe0008954c567dc3","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:50:30 ET] fast push OK (attempt 2, commit 6cdb5f77cfe2) for 2 new alert(s)
+NO FLAG Lipscomb at Auburn | H1 84 proj 168.0 vs live 166.5 (inside bars / no H1)
+NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:52:05 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO FLAG Lipscomb at Auburn | H1 84 proj 168.0 vs live 166.5 (inside bars / no H1)
+NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:54:04 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-052: PLAY: Over 143.5 — Green Bay at Kansas City (TRAILING FAVE) | pregame favorite Kansas City trails at half (Green Bay leads); pace is slow (proj 132.0 vs live 143.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 20:56:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (70402210811d)
+github: pushed pc-data/inplay-cbb-log.json (1dd6e303b7bc)
+NO FLAG Lipscomb at Auburn | H1 84 proj 168.0 vs live 166.5 (inside bars / no H1)
+NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars / no H1)
+TRIGGER: PLAY: Over 143.5 — Green Bay at Kansas City (TRAILING FAVE) | pregame favorite Kansas City trails at half (Green Bay leads); pace is slow (proj 132.0 vs live 143.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 20:56:02 ET
+SUMMARY: 87 games checked, 3 at halftime, 1 new flag(s)
+[2026-11-24 20:56:06 ET] lane run: inplay_cbb_watch exit 0 in 5s -- 1 new alert(s) (Green Bay at Kansas City)
+[2026-11-24 20:56:07 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 7a8c4f829db8078a75b3037e61761ad84764647b but expected 1dd6e303b7bc46a5844e31d9da93764b464dd253","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:56:12 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at 0eef456c0ed52eae1265d0ee3f7ae2b5cb5f3f34 but expected 39ff92bcff0b389044fa32265bd7803950a38837","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:56:12 ET] fast push gave up -- the regular 10-min sync is the backstop
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-053: PLAY: Over 134.5 -115 — Clemson at Washington (TRAILING FAVE) | pregame favorite Clemson trails at half (Washington leads); pace is slow (proj 112.0 vs live 134.5) — the comeback-fave rule bets Over anyway | H1 56 | as of 20:58:16 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 061c76683a9f6b41f3697403746ac9bffbf4e920 but expected 60a298de1ac1f1e16be50d2f79ad87b659de4e57","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at 3223ba86c982c60083d1032befeb925e485046cb but expected a11d993da2538433b8c3e528f01bb779e6e0eb6e","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: log push failed (HTTP 409: {'error': '{"message":"is at 139b627b936c9a5dfd45145e2cfb786af8066d3c but expected 3223ba86c982c60083d1032befeb925e485046cb","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry ok (d4b61f8f6264)
+NEW FLAG INP-054: PLAY: Over 156.5 — Drexel at Penn (2ND BITE) | 1H total 80 cleared implied 1H line 71.25 by +8.8; pace proj 160.0 vs live total 156.5 -- take the Over again at the half | H1 80 | as of 20:58:16 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 00a272ff16c033ad8be082c2f2c110f6dc959a8a but expected d4b61f8f6264eee901cadf9c36fe779186bb9f99","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (0bba7509002a)
+github: pushed pc-data/inplay-cbb-log.json (7ffb37c2f3d4)
+NO FLAG C Michigan at Notre Dame | H1 77 proj 154.0 vs live 156.5 (inside bars / no H1)
+TRIGGER: PLAY: Over 134.5 -115 — Clemson at Washington (TRAILING FAVE) | pregame favorite Clemson trails at half (Washington leads); pace is slow (proj 112.0 vs live 134.5) — the comeback-fave rule bets Over anyway | H1 56 | as of 20:58:16 ET
+TRIGGER: PLAY: Over 156.5 — Drexel at Penn (2ND BITE) | 1H total 80 cleared implied 1H line 71.25 by +8.8; pace proj 160.0 vs live total 156.5 -- take the Over again at the half | H1 80 | as of 20:58:16 ET
+SUMMARY: 87 games checked, 3 at halftime, 2 new flag(s)
+[2026-11-24 20:59:12 ET] lane run: inplay_cbb_watch exit 0 in 58s -- 2 new alert(s) (Clemson at Washington; Drexel at Penn)
+[2026-11-24 20:59:13 ET] fast push OK (attempt 1, commit 0f75257c7f07) for 2 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:00:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:02:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:04:19 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:06:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Ark Baptist at Little Rock | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:08:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:10:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:12:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:14:20 ET] lane run: inplay_cbb_watch exit 0 in 10s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:16:21 ET] lane run: inplay_cbb_watch exit 0 in 8s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 160.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:18:16 ET] lane run: inplay_cbb_watch exit 0 in 9s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:20:12 ET] lane run: inplay_cbb_watch exit 0 in 9s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:22:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:24:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:26:04 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:28:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 21:30:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO FLAG Bucknell at Cornell | H1 81 proj 162.0 vs live 162.5 (inside bars / no H1)
+NEW FLAG INP-055: PLAY: Over 153.5 — Duquesne at High Point (2ND BITE) | 1H total 78 cleared implied 1H line 70.25 by +7.8; pace proj 156.0 vs live total 153.5 -- take the Over again at the half | H1 78 | as of 21:32:03 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (8a84a3e36d40)
+github: log push failed (HTTP 409: {'error': '{"message":"is at 75ef0089da1eefdf8d944f70dade7db4c31301d6 but expected 8a84a3e36d40f362fe284331244982fdc5844dbe","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry ok (52b95d8cb824)
+TRIGGER: PLAY: Over 153.5 — Duquesne at High Point (2ND BITE) | 1H total 78 cleared implied 1H line 70.25 by +7.8; pace proj 156.0 vs live total 153.5 -- take the Over again at the half | H1 78 | as of 21:32:03 ET
+SUMMARY: 87 games checked, 2 at halftime, 1 new flag(s)
+[2026-11-24 21:32:23 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (High Point at Duquesne)
+[2026-11-24 21:32:24 ET] fast push OK (attempt 1, commit 0a40af2f6d72) for 1 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-056: PLAY: Over 131.5 -120 — Texas Tech at Louisville (TRAILING FAVE) | pregame favorite Texas Tech trails at half (Louisville leads); pace is slow (proj 102.0 vs live 131.5) — the comeback-fave rule bets Over anyway | H1 51 | as of 21:34:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 40de9c8844619b28936f44b5741fb9f4d12dc74f but expected 009f6312e2df0fb1cdbb6936ab0313828f171bb5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (4ec3ce50240c)
+github: pushed pc-data/inplay-cbb-log.json (d0f0d9531e83)
+TRIGGER: PLAY: Over 131.5 -120 — Texas Tech at Louisville (TRAILING FAVE) | pregame favorite Texas Tech trails at half (Louisville leads); pace is slow (proj 102.0 vs live 131.5) — the comeback-fave rule bets Over anyway | H1 51 | as of 21:34:02 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 21:34:22 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (Texas Tech at Louisville)
+[2026-11-24 21:34:24 ET] fast push OK (attempt 1, commit 6afaec0e79f4) for 1 new alert(s)
