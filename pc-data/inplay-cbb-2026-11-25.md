@@ -31,3 +31,5 @@ NEW IN-PLAY CBB: PLAY: Under 151.5 -120 — Jackson St at Oklahoma St (PACE) | p
 NEW IN-PLAY CBB: PLAY: Over 172.5 -120 — Arkansas St at FIU (TRAILING FAVE) | pregame favorite FIU trails at half (Arkansas St leads); pace is slow (proj 158.0 vs live 172.5) — the comeback-fave rule bets Over anyway | H1 79 | as of 16:35:02 ET
 ## 2026-11-25 16:47:04 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 143.5 -120 — Georgia St at FGCU (TRAILING FAVE) | pregame favorite Georgia St trails at half (FGCU leads); pace is slow (proj 138.0 vs live 143.5) — the comeback-fave rule bets Over anyway | H1 69 | as of 16:47:03 ET
+## 2026-11-25 16:49:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Prairie View at Marshall (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 138.5 (gap -20.5, bar 5) | H1 59 | as of 16:49:03 ET
