@@ -91,3 +91,5 @@ NEW IN-PLAY CBB: PLAY: Under 156.5 -110 — Mount St Marys at Morgan St (PACE) |
 NEW IN-PLAY CBB: PLAY: Under 161.5 — Santa Clara at Nevada (PACE) | pace proj 152.0 (H1 76 x 2) vs live total 161.5 (gap -9.5, bar 5) | H1 76 | as of 20:10:05 ET
 ## 2026-11-24 20:22:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Alcorn St at Louisiana Tech (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 20:22:03 ET
+## 2026-11-24 20:38:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 180.5 — West Georgia at Tennessee Tech (2ND BITE) | 1H total 94 cleared implied 1H line 81.75 by +12.2; pace proj 188.0 vs live total 180.5 -- take the Over again at the half | H1 94 | as of 20:38:02 ET
