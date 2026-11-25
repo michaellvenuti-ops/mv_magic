@@ -69,3 +69,7 @@ NEW IN-PLAY CBB: TRAILING FAVE: Bryant at Marist | Full Total (at half) Over 127
 NEW IN-PLAY CBB: TRAILING FAVE: Boston U at Harvard | Full Total (at half) Over 139.5 | pregame favorite Harvard trails at half (Boston U leads); pace proj 140.0 vs live total 139.5 (gap +0.5) -- comeback-fave Over anyway | H1 70 | as of 19:48:02 ET
 ## 2026-11-24 19:50:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: TRAILING FAVE: Vanderbilt at Ohio State | Full Total (at half) Over 142.5 | pregame favorite Vanderbilt trails at half (Ohio State leads); pace proj 120.0 vs live total 142.5 (gap -22.5) -- comeback-fave Over anyway | H1 60 | as of 19:50:02 ET
+## 2026-11-24 19:50:05 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Charleston So at James Madison | Full Total (at half) Under 154.5 -120 | pace proj 144.0 (H1 72 x 2) vs live total 154.5 (gap -10.5, bar 5) | H1 72 | as of 19:50:02 ET
+## 2026-11-24 19:50:41 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Gardner-Webb at Bowling Green | Full Total (at half) Under 145.5 -115 | pace proj 140.0 (H1 70 x 2) vs live total 145.5 (gap -5.5, bar 5) | H1 70 | as of 19:50:02 ET
