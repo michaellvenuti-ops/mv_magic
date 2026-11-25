@@ -53,3 +53,5 @@ NEW IN-PLAY CBB: PLAY: Under 127.5 — West Florida at N'Western St (PACE) | pac
 NEW IN-PLAY CBB: PLAY: Over 154.5 — Bethune at Richmond (TRAILING FAVE) | pregame favorite Richmond trails at half (Bethune leads); pace is slow (proj 150.0 vs live 154.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 18:49:01 ET
 ## 2026-11-25 18:51:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 129.5 -120 — UAlbany at Syracuse (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 129.5 (gap -25.5, bar 5) | H1 52 | as of 18:51:01 ET
+## 2026-11-25 18:55:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 178.5 -115 — CSU Northridge at Weber St (PACE) | pace proj 170.0 (H1 85 x 2) vs live total 178.5 (gap -8.5, bar 5) | H1 85 | as of 18:55:01 ET
