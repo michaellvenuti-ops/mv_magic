@@ -1,0 +1,231 @@
+{
+  "Version": "1.104.7-tfb3b9b296-g0651cc45e",
+  "TUN": true,
+  "BackendState": "Running",
+  "HaveNodeKey": true,
+  "AuthURL": "",
+  "TailscaleIPs": [
+    "100.100.181.7",
+    "fd7a:115c:a1e0::c232:b508"
+  ],
+  "Self": {
+    "ID": "nW82wmfNH511CNTRL",
+    "NodeID": 548404966119175,
+    "PublicKey": "nodekey:d267732d95e9eba2616795692dd12b2bbc636e7af8fcf8cd4291dbd2c224b507",
+    "HostName": "DESKTOP-PA0JFOB",
+    "DNSName": "desktop-pa0jfob.tail5e41b7.ts.net.",
+    "OS": "windows",
+    "UserID": 2750860132207293,
+    "TailscaleIPs": [
+      "100.100.181.7",
+      "fd7a:115c:a1e0::c232:b508"
+    ],
+    "AllowedIPs": [
+      "100.100.181.7/32",
+      "fd7a:115c:a1e0::c232:b508/128",
+      "0.0.0.0/0",
+      "::/0"
+    ],
+    "Addrs": [
+      "108.24.80.142:41643",
+      "[2600:4040:a0b0:ce00:d32:1fc6:7cdd:aee4]:41641",
+      "192.168.1.170:41641",
+      "[2600:4040:a0b0:ce00:a9d6:d32b:f661:5658]:41641"
+    ],
+    "CurAddr": "",
+    "Relay": "nyc",
+    "PeerRelay": "",
+    "RxBytes": 0,
+    "TxBytes": 0,
+    "Created": "2026-11-01T17:40:05.758719906Z",
+    "LastWrite": "0001-01-01T00:00:00Z",
+    "LastSeen": "0001-01-01T00:00:00Z",
+    "LastHandshake": "0001-01-01T00:00:00Z",
+    "Online": true,
+    "ExitNode": false,
+    "ExitNodeOption": true,
+    "Active": false,
+    "PeerAPIURL": [
+      "http://100.100.181.7:62896",
+      "http://[fd7a:115c:a1e0::c232:b508]:47651"
+    ],
+    "TaildropTarget": 0,
+    "NoFileSharingReason": "",
+    "Capabilities": [
+      "HTTPS://TAILSCALE.COM/s/DEPRECATED-NODE-CAPS#see-https://github.com/tailscale/tailscale/issues/11508",
+      "default-auto-update",
+      "https://tailscale.com/cap/file-sharing",
+      "https://tailscale.com/cap/is-admin",
+      "https://tailscale.com/cap/is-owner",
+      "https://tailscale.com/cap/ssh",
+      "https://tailscale.com/cap/tailnet-lock",
+      "probe-udp-lifetime",
+      "ssh-behavior-v1",
+      "ssh-env-vars",
+      "store-appc-routes",
+      "tailnet-display-name"
+    ],
+    "CapMap": {
+      "default-auto-update": [
+        true
+      ],
+      "https://tailscale.com/cap/file-sharing": null,
+      "https://tailscale.com/cap/is-admin": null,
+      "https://tailscale.com/cap/is-owner": null,
+      "https://tailscale.com/cap/ssh": null,
+      "https://tailscale.com/cap/tailnet-lock": null,
+      "probe-udp-lifetime": null,
+      "ssh-behavior-v1": null,
+      "ssh-env-vars": null,
+      "store-appc-routes": null,
+      "tailnet-display-name": [
+        "michael.l.venuti@gmail.com"
+      ]
+    },
+    "InNetworkMap": true,
+    "InMagicSock": false,
+    "InEngine": false,
+    "KeyExpiry": "2027-04-30T17:40:05Z"
+  },
+  "Health": [],
+  "MagicDNSSuffix": "tail5e41b7.ts.net",
+  "CurrentTailnet": {
+    "Name": "michael.l.venuti@gmail.com",
+    "StableID": "TFbH7ipozK11CNTRL",
+    "MagicDNSSuffix": "tail5e41b7.ts.net",
+    "MagicDNSEnabled": true
+  },
+  "CertDomains": null,
+  "ExtraRecords": null,
+  "Peer": {
+    "nodekey:032e3ec6069850fd8e3cd80034e409f49b72f092d5de7c1c84272133dee21c4d": {
+      "ID": "nDdufaEyQU11CNTRL",
+      "NodeID": 3510627602696228,
+      "PublicKey": "nodekey:032e3ec6069850fd8e3cd80034e409f49b72f092d5de7c1c84272133dee21c4d",
+      "HostName": "muse",
+      "DNSName": "muse.tail5e41b7.ts.net.",
+      "OS": "",
+      "UserID": 2750860132207293,
+      "TailscaleIPs": [
+        "100.98.28.77",
+        "fd7a:115c:a1e0::de32:1c4f"
+      ],
+      "AllowedIPs": [
+        "100.98.28.77/32",
+        "fd7a:115c:a1e0::de32:1c4f/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "nyc",
+      "PeerRelay": "",
+      "RxBytes": 38924,
+      "TxBytes": 57036,
+      "Created": "2026-11-01T14:58:15.768341662Z",
+      "LastWrite": "2026-11-25T08:19:49.0705432-05:00",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "2026-11-25T08:18:58.8177513-05:00",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": true,
+      "PeerAPIURL": null,
+      "TaildropTarget": 8,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": true,
+      "KeyExpiry": "2027-04-30T14:58:15Z"
+    },
+    "nodekey:88fa4f091797b371688fff117320da4f2ce4300a7a606f98969eedaa78ddf457": {
+      "ID": "ncj4HV49A221CNTRL",
+      "NodeID": 7575900517477811,
+      "PublicKey": "nodekey:88fa4f091797b371688fff117320da4f2ce4300a7a606f98969eedaa78ddf457",
+      "HostName": "Mike Macbook ",
+      "DNSName": "mike-macbook.tail5e41b7.ts.net.",
+      "OS": "macOS",
+      "UserID": 2750860132207293,
+      "TailscaleIPs": [
+        "100.93.244.87",
+        "fd7a:115c:a1e0::7832:f458"
+      ],
+      "AllowedIPs": [
+        "100.93.244.87/32",
+        "fd7a:115c:a1e0::7832:f458/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "nyc",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-11-18T02:04:31.438021241Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.244.87:33823",
+        "http://[fd7a:115c:a1e0::7832:f458]:38291"
+      ],
+      "TaildropTarget": 1,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2027-05-17T02:04:31Z"
+    },
+    "nodekey:9da572753fccac53303dd46bcaa92e7328de0c5d3c8ed9c8948f173184fe0a77": {
+      "ID": "nA9ku75dZH11CNTRL",
+      "NodeID": 2121037977398501,
+      "PublicKey": "nodekey:9da572753fccac53303dd46bcaa92e7328de0c5d3c8ed9c8948f173184fe0a77",
+      "HostName": "localhost",
+      "DNSName": "iphone-14-pro-max.tail5e41b7.ts.net.",
+      "OS": "iOS",
+      "UserID": 2750860132207293,
+      "TailscaleIPs": [
+        "100.126.10.119",
+        "fd7a:115c:a1e0::8432:a78"
+      ],
+      "AllowedIPs": [
+        "100.126.10.119/32",
+        "fd7a:115c:a1e0::8432:a78/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "nyc",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-11-05T04:59:37.01735695Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.126.10.119:36957",
+        "http://[fd7a:115c:a1e0::8432:a78]:63848"
+      ],
+      "TaildropTarget": 1,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2027-05-04T04:59:37Z"
+    }
+  },
+  "User": {
+    "2750860132207293": {
+      "ID": 2750860132207293,
+      "LoginName": "michael.l.venuti@gmail.com",
+      "DisplayName": "Michael Venuti",
+      "ProfilePicURL": "https://lh3.googleusercontent.com/a/ACg8ocKsJl2oV0AZDrTbCxIaonFSSadqt_Z_QkjnNxOhRRCdnQg-zg=s96-c"
+    }
+  },
+  "ClientVersion": null
+}
