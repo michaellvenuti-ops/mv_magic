@@ -1465,3 +1465,71 @@ TRIGGER: PLAY: Under 148.5 — UNC Greensboro at Santa Barbara (PACE) | pace proj 
 SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
 [2026-11-24 21:54:05 ET] lane run: inplay_cbb_watch exit 0 in 4s -- 1 new alert(s) (UNC Greensboro at Santa Barbara)
 [2026-11-24 21:54:06 ET] fast push OK (attempt 1, commit e1c411daebee) for 1 new alert(s)
+NEW FLAG INP-059: PLAY: Under 166.5 -110 — Idaho St at Boise St (PACE) | pace proj 160.0 (H1 80 x 2) vs live total 166.5 (gap -6.5, bar 5) | H1 80 | as of 21:56:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at c251863c6fdf9acb5c41bb747e660974075252e5 but expected 567ea3f9c9518cde1a3c50597f02c36298266855","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (588c498738da)
+github: log push failed (HTTP 409: {'error': '{"message":"is at 2d320604f451fbe1a003329cd082c74ef9647903 but expected 588c498738da1f9f99c8f14a1c3a3a1173f3c621","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry failed (HTTP 409: {'error': '{"message":"is at 7d87aa31a82202e226de2aaa5cf4aadaabd741c1 but expected d825157afead096d40daa2481c89abec75e55703","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+TRIGGER: PLAY: Under 166.5 -110 — Idaho St at Boise St (PACE) | pace proj 160.0 (H1 80 x 2) vs live total 166.5 (gap -6.5, bar 5) | H1 80 | as of 21:56:02 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 21:56:38 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 1 new alert(s) (Idaho St at Boise St)
+[2026-11-24 21:56:39 ET] fast push OK (attempt 1, commit b45b8e35ef53) for 1 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:58:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 165.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:00:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:02:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NEW FLAG INP-060: PLAY: Under 149.5 -115 — Sam Houston at Washington St (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 149.5 (gap -13.5, bar 5) | H1 68 | as of 22:04:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (a3cdd27099d6)
+github: pushed pc-data/inplay-cbb-log.json (27d2c851dee8)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+TRIGGER: PLAY: Under 149.5 -115 — Sam Houston at Washington St (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 149.5 (gap -13.5, bar 5) | H1 68 | as of 22:04:02 ET
+SUMMARY: 87 games checked, 2 at halftime, 1 new flag(s)
+[2026-11-24 22:04:05 ET] lane run: inplay_cbb_watch exit 0 in 4s -- 1 new alert(s) (Sam Houston at Washington St)
+[2026-11-24 22:04:06 ET] fast push OK (attempt 1, commit 585b15a6f0a3) for 1 new alert(s)
+NEW FLAG INP-061: PLAY: Under 144.5 -120 — Evansville at Missouri (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 144.5 (gap -12.5, bar 5) | H1 66 | as of 22:06:03 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (cb5f5ca1a794)
+github: log push failed (HTTP 409: {'error': '{"message":"is at cf0eec8e75f8f33c1e7fa5161137f006f710376c but expected cb5f5ca1a794e2466a87bea7cb16a007aa65883c","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry ok (abc8ec3f59f8)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+TRIGGER: PLAY: Under 144.5 -120 — Evansville at Missouri (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 144.5 (gap -12.5, bar 5) | H1 66 | as of 22:06:03 ET
+SUMMARY: 87 games checked, 2 at halftime, 1 new flag(s)
+[2026-11-24 22:06:23 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (Evansville at Missouri)
+[2026-11-24 22:06:24 ET] fast push OK (attempt 1, commit 8168c86fabd2) for 1 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:08:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:10:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:12:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO FLAG UNC Asheville at Florida St | H1 82 proj 164.0 vs live 164.5 (inside bars / no H1)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 22:14:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 22:16:04 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 22:18:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 22:20:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 22:22:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 22:24:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
