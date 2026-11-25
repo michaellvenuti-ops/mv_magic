@@ -954,17 +954,21 @@
    "pregame_total": 153.5,
    "alerted_at": "2026-11-25T15:27:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 155.5 -115 \u2014 Ole Miss at Arizona (TRAILING FAVE) | pregame favorite Arizona trails at half (Ole Miss leads); pace is slow (proj 146.0 vs live 155.5) \u2014 the comeback-fave rule bets Over anyway | H1 73 | as of 15:27:01 ET"
+   "alert_detail": "PLAY: Over 155.5 -115 \u2014 Ole Miss at Arizona (TRAILING FAVE) | pregame favorite Arizona trails at half (Ole Miss leads); pace is slow (proj 146.0 vs live 155.5) \u2014 the comeback-fave rule bets Over anyway | H1 73 | as of 15:27:01 ET",
+   "final": true
   },
   "401920809": {
    "matchup": "Texas A&M at Xavier",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 3.5,
    "fav_team": "Texas A&M",
    "dog_team": "Xavier",
-   "pregame_total": 170.5
+   "pregame_total": 170.5,
+   "alerted_at": "2026-11-25T17:06:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 177.5 -115 \u2014 Texas A&M at Xavier (TRAILING FAVE) | pregame favorite Texas A&M trails at half (Xavier leads); pace is slow (proj 172.0 vs live 177.5) \u2014 the comeback-fave rule bets Over anyway | H1 86 | as of 17:06:02 ET"
   },
   "401928836": {
    "matchup": "Akron at App State",
@@ -1000,7 +1004,8 @@
    "pregame_total": 160.5,
    "alerted_at": "2026-11-25T15:56:02",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 151.5 -120 \u2014 Jackson St at Oklahoma St (PACE) | pace proj 140.0 (H1 70 x 2) vs live total 151.5 (gap -11.5, bar 5) | H1 70 | as of 15:56:02 ET"
+   "alert_detail": "PLAY: Under 151.5 -120 \u2014 Jackson St at Oklahoma St (PACE) | pace proj 140.0 (H1 70 x 2) vs live total 151.5 (gap -11.5, bar 5) | H1 70 | as of 15:56:02 ET",
+   "final": true
   },
   "401928359": {
    "matchup": "Arkansas St at FIU",
@@ -1074,7 +1079,7 @@
    "spread": 9.5,
    "fav_team": "USC",
    "dog_team": "South Carolina",
-   "pregame_total": 145.5
+   "pregame_total": 144.5
   },
   "401926065": {
    "matchup": "Southern at Nebraska",
@@ -1091,7 +1096,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Memphis",
    "dog_team": "Penn State",
    "pregame_total": 162.5
@@ -1101,7 +1106,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 2.5,
+   "spread": 3.5,
    "fav_team": "UC Riverside",
    "dog_team": "Portland St",
    "pregame_total": 152.5
@@ -1121,7 +1126,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Dartmouth",
    "dog_team": "Holy Cross",
    "pregame_total": 147.5
