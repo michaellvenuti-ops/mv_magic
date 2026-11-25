@@ -1092,3 +1092,151 @@ SUMMARY: 87 games checked, 3 at halftime, 3 new flag(s)
 [2026-11-24 19:51:01 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 0352d4844064e33ac2b73b63533ad682e639d9f8 but expected 8f21543a48a4a97849cdfeab0982815438c443b7","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
 [2026-11-24 19:51:05 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at d03fb3dcc8cb7f51032458ec6b4ba88f7c003f09 but expected aa08ea9ae6a6770d946c13ca60b09cc28545d7b5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
 [2026-11-24 19:51:05 ET] fast push gave up -- the regular 10-min sync is the backstop
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-038: PLAY: Over 165.5 — Stetson at South Florida (2ND BITE) | 1H total 83 cleared implied 1H line 77.25 by +5.8; pace proj 166.0 vs live total 165.5 -- take the Over again at the half | H1 83 | as of 19:52:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 0070c6c2c9e39020b2fec698ebdfe146bf39a353 but expected cdc7ea92786271a0eb6f278d690e9671525c577a","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (eb5cfba4940f)
+github: log push failed (HTTP 409: {'error': '{"message":"is at 69ce9b616c58f4ca58b6f84fbe5219ad9c9f034d but expected eb5cfba4940f1c9fd7d6c5f7829d8235e79bcd8b","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry failed (HTTP 409: {'error': '{"message":"is at 2ff496357375691d151c876de1edaf115c2a3a0a but expected 31047d62a11df896983ef15d49370dbf8490099b","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+NEW FLAG INP-039: PLAY: Over 148.5 — Binghamton at Lehigh (TRAILING FAVE) | pregame favorite Lehigh trails at half (Binghamton leads); pace is slow (proj 152.0 vs live 148.5) but the comeback-fave rule still bets Over | H1 76 | as of 19:52:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at ca74240881c959df598b8201ad5ce51ade4c6c6b but expected 2ff496357375691d151c876de1edaf115c2a3a0a","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry ok (fdbdc4558f4d)
+github: log push failed (HTTP 409: {'error': '{"message":"is at d5407ba262999530343d677079fb345382b70b54 but expected fdbdc4558f4d05b340b9a71d242795896ae829ed","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry ok (96c9162186aa)
+TRIGGER: PLAY: Over 165.5 — Stetson at South Florida (2ND BITE) | 1H total 83 cleared implied 1H line 77.25 by +5.8; pace proj 166.0 vs live total 165.5 -- take the Over again at the half | H1 83 | as of 19:52:02 ET
+TRIGGER: PLAY: Over 148.5 — Binghamton at Lehigh (TRAILING FAVE) | pregame favorite Lehigh trails at half (Binghamton leads); pace is slow (proj 152.0 vs live 148.5) but the comeback-fave rule still bets Over | H1 76 | as of 19:52:02 ET
+SUMMARY: 87 games checked, 2 at halftime, 2 new flag(s)
+[2026-11-24 19:53:14 ET] lane run: inplay_cbb_watch exit 0 in 72s -- 2 new alert(s) (Stetson at South Florida; Binghamton at Lehigh)
+[2026-11-24 19:53:15 ET] fast push OK (attempt 1, commit ae5328a676ed) for 2 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-040: PLAY: Over 160.5 — Jacksonville at Indiana (2ND BITE) | 1H total 83 cleared implied 1H line 73.25 by +9.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 19:54:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (a8f666b485ce)
+github: pushed pc-data/inplay-cbb-log.json (25bee73fbece)
+NEW FLAG INP-041: PLAY: Under 132.5 — Rider at Loyola MD (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 132.5 (gap -16.5, bar 5) | H1 58 | as of 19:54:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (8eba10ed819f)
+github: pushed pc-data/inplay-cbb-log.json (5a29d12b3bd1)
+TRIGGER: PLAY: Over 160.5 — Jacksonville at Indiana (2ND BITE) | 1H total 83 cleared implied 1H line 73.25 by +9.8; pace proj 166.0 vs live total 160.5 -- take the Over again at the half | H1 83 | as of 19:54:02 ET
+TRIGGER: PLAY: Under 132.5 — Rider at Loyola MD (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 132.5 (gap -16.5, bar 5) | H1 58 | as of 19:54:02 ET
+SUMMARY: 87 games checked, 2 at halftime, 2 new flag(s)
+[2026-11-24 19:54:09 ET] lane run: inplay_cbb_watch exit 0 in 8s -- 2 new alert(s) (Jacksonville at Indiana; Rider at Loyola MD)
+[2026-11-24 19:54:11 ET] fast push OK (attempt 1, commit 280e9a5e5903) for 2 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-042: PLAY: Over 145.5 — GA Southern at Bellarmine (TRAILING FAVE) | pregame favorite GA Southern trails at half (Bellarmine leads); pace is slow (proj 136.0 vs live 145.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 19:56:02 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (323a4999206b)
+github: log push failed (HTTP 409: {'error': '{"message":"is at a087342a3659feafda0f6ab3b8c25a83a40295ba but expected 323a4999206b2141b7502f8a36c01bfbbca47f2c","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry failed (HTTP 409: {'error': '{"message":"is at 5dd2f5fe4edc7568a901929fb326b3344183f562 but expected 6a5e13efa69e6420a30a876d9eef57fcf7cfe6e9","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+NEW FLAG INP-043: PLAY: Over 163.5 — Samford at Georgia Tech (TRAILING FAVE) | pregame favorite Georgia Tech trails at half (Samford leads); pace is slow (proj 156.0 vs live 163.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 19:56:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 7c85869a20d9a12f5c6c3425456dd78eb7dcfa5f but expected 5dd2f5fe4edc7568a901929fb326b3344183f562","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at f0e5d577fe6109eb5cf4541d8a129d1b7714decd but expected c876f986fd09a4960120c6563443941918ce000f","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: log push failed (HTTP 409: {'error': '{"message":"is at 7a81b67999339e724ac040fa282a0b85f52689e9 but expected f0e5d577fe6109eb5cf4541d8a129d1b7714decd","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry failed (HTTP 409: {'error': '{"message":"is at d53138384fcf05e885bd35c201b32b4e22f7fd1e but expected a37065683ce7d759c6cc4df3240110b953ce28b6","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+TRIGGER: PLAY: Over 145.5 — GA Southern at Bellarmine (TRAILING FAVE) | pregame favorite GA Southern trails at half (Bellarmine leads); pace is slow (proj 136.0 vs live 145.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 19:56:02 ET
+TRIGGER: PLAY: Over 163.5 — Samford at Georgia Tech (TRAILING FAVE) | pregame favorite Georgia Tech trails at half (Samford leads); pace is slow (proj 156.0 vs live 163.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 19:56:02 ET
+SUMMARY: 87 games checked, 2 at halftime, 2 new flag(s)
+[2026-11-24 19:56:57 ET] lane run: inplay_cbb_watch exit 0 in 56s -- 2 new alert(s) (Bellarmine at GA Southern; Samford at Georgia Tech)
+[2026-11-24 19:56:59 ET] fast push OK (attempt 1, commit 7e6b109f8f91) for 2 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 19:58:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 20:00:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 20:02:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP SUNY Fredonia at Mercyhurst | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-044: PLAY: Under 156.5 -110 — Mount St Marys at Morgan St (PACE) | pace proj 150.0 (H1 75 x 2) vs live total 156.5 (gap -6.5, bar 5) | H1 75 | as of 20:04:02 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 4a7eb96e0b818ed879282e03e0a7a65a1001d9f0 but expected 8bf9a1773a9bc8939b68f73cf9f1c9819d872936","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at f82bc4298e83ad4553357ce60122e9a992711f56 but expected 2502279962c2d6664d7728769db6aa6dd62f838f","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: log push failed (HTTP 409: {'error': '{"message":"is at a27984b89476957daaa83f11fa12526a53cf1d60 but expected f82bc4298e83ad4553357ce60122e9a992711f56","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry ok (3fd02ef1a4fb)
+TRIGGER: PLAY: Under 156.5 -110 — Mount St Marys at Morgan St (PACE) | pace proj 150.0 (H1 75 x 2) vs live total 156.5 (gap -6.5, bar 5) | H1 75 | as of 20:04:02 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 20:04:38 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 1 new alert(s) (Mount St Marys at Morgan St)
+[2026-11-24 20:04:39 ET] fast push OK (attempt 1, commit af0568bf910a) for 1 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 20:06:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Car Christian at Presbyterian | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 20:08:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-045: PLAY: Under 161.5 — Santa Clara at Nevada (PACE) | pace proj 152.0 (H1 76 x 2) vs live total 161.5 (gap -9.5, bar 5) | H1 76 | as of 20:10:05 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 9d4b43e870ccc1086a3fde021ed749468d363519 but expected 42d82b572bed230c3f707a198f8b179f556bb15a","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at 351ef36406190a2e0fabe25f1c6ee10b2f90f77d but expected 0c24c01912893549f40254d76098c264a65e6d85","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: pushed pc-data/inplay-cbb-log.json (872d0e3b3d44)
+TRIGGER: PLAY: Under 161.5 — Santa Clara at Nevada (PACE) | pace proj 152.0 (H1 76 x 2) vs live total 161.5 (gap -9.5, bar 5) | H1 76 | as of 20:10:05 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 20:10:25 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (Nevada at Santa Clara)
+[2026-11-24 20:10:30 ET] fast push OK (attempt 1, commit 9b523dd4d4a0) for 1 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 20:12:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 20:14:47 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:16:05 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:18:06 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:20:06 ET] lane run: inplay_cbb_watch exit 0 in 5s -- 0 new alert(s)
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+NEW FLAG INP-046: PLAY: Under 137.5 -120 — Alcorn St at Louisiana Tech (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 20:22:03 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (50c010a6edaa)
+github: pushed pc-data/inplay-cbb-log.json (8b630941f3f9)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+TRIGGER: PLAY: Under 137.5 -120 — Alcorn St at Louisiana Tech (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 20:22:03 ET
+SUMMARY: 87 games checked, 3 at halftime, 1 new flag(s)
+[2026-11-24 20:22:07 ET] lane run: inplay_cbb_watch exit 0 in 6s -- 1 new alert(s) (Alcorn St at Louisiana Tech)
+[2026-11-24 20:22:09 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 3323e095db30107749777107c24c4489f111d711 but expected 8b630941f3f9107b7cee64e071076dee0788e794","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:22:13 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at 25ad5c2f608c38b96f0d6d7197376c9784d9e9b2 but expected 05dae9d7f995731f9c7f90cd6ad6b603a59848f8","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:22:13 ET] fast push gave up -- the regular 10-min sync is the backstop
+SKIP Arlington Bapt at East Texas A&M | at half but no pregame snapshot (never judged -- no invented lines)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:24:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:26:02 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+SKIP Hou Christian at UL Monroe | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 2 at halftime, 0 new flag(s)
+[2026-11-24 20:28:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP Purdue FW at SE Missouri | at half but no live total on SAO (never alerted without a line)
+NO TRIGGER
+SUMMARY: 87 games checked, 1 at halftime, 0 new flag(s)
+[2026-11-24 20:30:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
