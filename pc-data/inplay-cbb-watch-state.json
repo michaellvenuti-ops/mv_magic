@@ -333,7 +333,8 @@
    "pregame_total": 159.5,
    "alerted_at": "2026-11-24T18:58:04",
    "alert_rule": "2ND BITE",
-   "alert_detail": "2ND BITE: Mercer at FAU | Full Total (at half) Over 178.5 -125 | 1H total 93 cleared implied 1H line 79.75 by +13.2; pace proj 186.0 vs live total 178.5 -- take the Over again at the half | H1 93 | as of 18:58:04 ET"
+   "alert_detail": "2ND BITE: Mercer at FAU | Full Total (at half) Over 178.5 -125 | 1H total 93 cleared implied 1H line 79.75 by +13.2; pace proj 186.0 vs live total 178.5 -- take the Over again at the half | H1 93 | as of 18:58:04 ET",
+   "final": true
   },
   "401922231": {
    "matchup": "Queens at Wofford",
@@ -360,7 +361,8 @@
    "pregame_total": 147.5,
    "alerted_at": "2026-11-24T18:58:07",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "TRAILING FAVE: E Michigan at Kennesaw St | Full Total (at half) Over 114.5 | pregame favorite Kennesaw St trails at half (E Michigan leads); pace proj 74.0 vs live total 114.5 (gap -40.5) -- comeback-fave Over anyway | H1 37 | as of 18:58:04 ET"
+   "alert_detail": "TRAILING FAVE: E Michigan at Kennesaw St | Full Total (at half) Over 114.5 | pregame favorite Kennesaw St trails at half (E Michigan leads); pace proj 74.0 vs live total 114.5 (gap -40.5) -- comeback-fave Over anyway | H1 37 | as of 18:58:04 ET",
+   "final": true
   },
   "401909505": {
    "matchup": "DePaul at Purdue",
@@ -373,7 +375,8 @@
    "pregame_total": 132.5,
    "alerted_at": "2026-11-24T18:56:03",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: DePaul at Purdue | Full Total (at half) Under 135.5 -110 | pace proj 130.0 (H1 65 x 2) vs live total 135.5 (gap -5.5, bar 5) | H1 65 | as of 18:56:03 ET"
+   "alert_detail": "PACE: DePaul at Purdue | Full Total (at half) Under 135.5 -110 | pace proj 130.0 (H1 65 x 2) vs live total 135.5 (gap -5.5, bar 5) | H1 65 | as of 18:56:03 ET",
+   "final": true
   },
   "401925014": {
    "matchup": "Robert Morris at Lamar",
@@ -393,7 +396,8 @@
    "spread": 7.5,
    "fav_team": "Furman",
    "dog_team": "Elon",
-   "pregame_total": 148.5
+   "pregame_total": 148.5,
+   "final": true
   },
   "401906774": {
    "matchup": "Milwaukee at Florida",
@@ -709,12 +713,15 @@
   "401925687": {
    "matchup": "Alcorn St at Louisiana Tech",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 16.5,
    "fav_team": "Louisiana Tech",
    "dog_team": "Alcorn St",
-   "pregame_total": 144.5
+   "pregame_total": 144.5,
+   "alerted_at": "2026-11-24T20:22:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 137.5 -120 \u2014 Alcorn St at Louisiana Tech (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 20:22:03 ET"
   },
   "401920414": {
    "matchup": "High Point at Duquesne",
