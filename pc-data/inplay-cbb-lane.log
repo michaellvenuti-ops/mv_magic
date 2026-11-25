@@ -322,3 +322,31 @@
 [2026-11-24 19:51:01 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 0352d4844064e33ac2b73b63533ad682e639d9f8 but expected 8f21543a48a4a97849cdfeab0982815438c443b7","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
 [2026-11-24 19:51:05 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at d03fb3dcc8cb7f51032458ec6b4ba88f7c003f09 but expected aa08ea9ae6a6770d946c13ca60b09cc28545d7b5","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
 [2026-11-24 19:51:05 ET] fast push gave up -- the regular 10-min sync is the backstop
+[2026-11-24 19:53:14 ET] lane run: inplay_cbb_watch exit 0 in 72s -- 2 new alert(s) (Stetson at South Florida; Binghamton at Lehigh)
+[2026-11-24 19:53:15 ET] fast push OK (attempt 1, commit ae5328a676ed) for 2 new alert(s)
+[2026-11-24 19:54:09 ET] lane run: inplay_cbb_watch exit 0 in 8s -- 2 new alert(s) (Jacksonville at Indiana; Rider at Loyola MD)
+[2026-11-24 19:54:11 ET] fast push OK (attempt 1, commit 280e9a5e5903) for 2 new alert(s)
+[2026-11-24 19:56:57 ET] lane run: inplay_cbb_watch exit 0 in 56s -- 2 new alert(s) (Bellarmine at GA Southern; Samford at Georgia Tech)
+[2026-11-24 19:56:59 ET] fast push OK (attempt 1, commit 7e6b109f8f91) for 2 new alert(s)
+[2026-11-24 19:58:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+[2026-11-24 20:00:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:02:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+[2026-11-24 20:04:38 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 1 new alert(s) (Mount St Marys at Morgan St)
+[2026-11-24 20:04:39 ET] fast push OK (attempt 1, commit af0568bf910a) for 1 new alert(s)
+[2026-11-24 20:06:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+[2026-11-24 20:08:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+[2026-11-24 20:10:25 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (Nevada at Santa Clara)
+[2026-11-24 20:10:30 ET] fast push OK (attempt 1, commit 9b523dd4d4a0) for 1 new alert(s)
+[2026-11-24 20:12:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:14:47 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 0 new alert(s)
+[2026-11-24 20:16:05 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:18:06 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:20:06 ET] lane run: inplay_cbb_watch exit 0 in 5s -- 0 new alert(s)
+[2026-11-24 20:22:07 ET] lane run: inplay_cbb_watch exit 0 in 6s -- 1 new alert(s) (Alcorn St at Louisiana Tech)
+[2026-11-24 20:22:09 ET] fast push FAILED (attempt 1): HTTP 409: {'error': '{"message":"is at 3323e095db30107749777107c24c4489f111d711 but expected 8b630941f3f9107b7cee64e071076dee0788e794","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:22:13 ET] fast push FAILED (attempt 2): HTTP 409: {'error': '{"message":"is at 25ad5c2f608c38b96f0d6d7197376c9784d9e9b2 but expected 05dae9d7f995731f9c7f90cd6ad6b603a59848f8","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}
+[2026-11-24 20:22:13 ET] fast push gave up -- the regular 10-min sync is the backstop
+[2026-11-24 20:24:03 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:26:02 ET] lane run: inplay_cbb_watch exit 0 in 2s -- 0 new alert(s)
+[2026-11-24 20:28:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+[2026-11-24 20:30:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
