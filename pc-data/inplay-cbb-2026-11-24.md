@@ -95,3 +95,5 @@ NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Alcorn St at Louisiana Tech (PACE) |
 NEW IN-PLAY CBB: PLAY: Over 180.5 — West Georgia at Tennessee Tech (2ND BITE) | 1H total 94 cleared implied 1H line 81.75 by +12.2; pace proj 188.0 vs live total 180.5 -- take the Over again at the half | H1 94 | as of 20:38:02 ET
 ## 2026-11-24 20:46:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 126.5 -115 — Florida A&M at South Alabama (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 126.5 (gap -18.5, bar 5) | H1 54 | as of 20:46:03 ET
+## 2026-11-24 20:46:07 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 132.5 -120 — Alabama A&M at North Alabama (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 20:46:03 ET
