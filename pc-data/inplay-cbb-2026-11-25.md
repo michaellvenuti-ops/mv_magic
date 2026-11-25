@@ -9,3 +9,5 @@ NEW IN-PLAY CBB: PLAY: Under 124.5 — Virginia at Marquette (PACE) | pace proj 
 NEW IN-PLAY CBB: PLAY: Over 135.5 — Yale at Wright St (TRAILING FAVE) | pregame favorite Wright St trails at half (Yale leads); pace is slow (proj 128.0 vs live 135.5) — the comeback-fave rule bets Over anyway | H1 64 | as of 13:17:01 ET
 ## 2026-11-25 13:25:22 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 160.5 — N Colorado at Detroit Mercy (2ND BITE) | 1H total 82 cleared implied 1H line 73.75 by +8.2; pace proj 164.0 vs live total 160.5 -- take the Over again at the half | H1 82 | as of 13:25:21 ET
+## 2026-11-25 13:52:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Lindenwood at Stony Brook (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 13:52:02 ET
