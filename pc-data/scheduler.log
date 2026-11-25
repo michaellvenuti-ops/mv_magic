@@ -11819,3 +11819,9 @@
 [2026-11-25 11:16:42 ET] futures_pairs.py: OK in 2s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-25 11:17:45 ET] promo_watch.py: OK in 62s — promo-watch: 10 listed, 0 new, 0 converter attempt(s).
 [2026-11-25 11:17:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 11:47:45 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 11:48:40 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 187 events (170 with odds), db total 322505 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 11:49:52 ET] dh_arbitrage.py: FAILED (exit 2) in 73s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-25 11:50:10 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 11:50:12 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Duke 8 Wake Forest Nov-28 3:30 PM — Total — Over 57 ProphetX +117 ($91) / Under 57.5 Fanatics-NJ -125 ($109) — win+push at 57 — push +$87.20, m
+[2026-11-25 11:50:14 ET] syncing to GitHub (wide-builds banked new builds)
