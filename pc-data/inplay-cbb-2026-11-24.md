@@ -97,3 +97,5 @@ NEW IN-PLAY CBB: PLAY: Over 180.5 — West Georgia at Tennessee Tech (2ND BITE) 
 NEW IN-PLAY CBB: PLAY: Under 126.5 -115 — Florida A&M at South Alabama (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 126.5 (gap -18.5, bar 5) | H1 54 | as of 20:46:03 ET
 ## 2026-11-24 20:46:07 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 132.5 -120 — Alabama A&M at North Alabama (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 20:46:03 ET
+## 2026-11-24 20:50:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 161.5 — Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) — comeback-fave Over | H1 82 | as of 20:50:02 ET
