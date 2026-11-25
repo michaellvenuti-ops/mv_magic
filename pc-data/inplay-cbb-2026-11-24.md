@@ -83,3 +83,11 @@ NEW IN-PLAY CBB: PLAY: Over 160.5 — Jacksonville at Indiana (2ND BITE) | 1H to
 NEW IN-PLAY CBB: PLAY: Under 132.5 — Rider at Loyola MD (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 132.5 (gap -16.5, bar 5) | H1 58 | as of 19:54:02 ET
 ## 2026-11-24 19:56:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 145.5 — GA Southern at Bellarmine (TRAILING FAVE) | pregame favorite GA Southern trails at half (Bellarmine leads); pace is slow (proj 136.0 vs live 145.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 19:56:02 ET
+## 2026-11-24 19:56:22 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 163.5 — Samford at Georgia Tech (TRAILING FAVE) | pregame favorite Georgia Tech trails at half (Samford leads); pace is slow (proj 156.0 vs live 163.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 19:56:02 ET
+## 2026-11-24 20:04:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 156.5 -110 — Mount St Marys at Morgan St (PACE) | pace proj 150.0 (H1 75 x 2) vs live total 156.5 (gap -6.5, bar 5) | H1 75 | as of 20:04:02 ET
+## 2026-11-24 20:10:05 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 161.5 — Santa Clara at Nevada (PACE) | pace proj 152.0 (H1 76 x 2) vs live total 161.5 (gap -9.5, bar 5) | H1 76 | as of 20:10:05 ET
+## 2026-11-24 20:22:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Alcorn St at Louisiana Tech (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 20:22:03 ET
