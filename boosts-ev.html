@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odds Boosts EV Check (Chet)</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:960px;margin:0 auto;padding:20px;color:#111}
+h1{font-size:1.6em} h2{font-size:1.2em;margin-top:28px}
+.stamp{color:#555;font-size:.9em}
+table{border-collapse:collapse;width:100%;margin:12px 0}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;font-size:.92em}
+th{background:#f2f2f2}
+.flag{color:#0a7a1f;font-weight:700}.fail{color:#a00}.watch{color:#8a6d00;font-weight:700}
+.note{background:#f7f7f7;border-left:4px solid #888;padding:10px 12px;margin:12px 0}
+code{background:#eee;padding:1px 4px}
+</style>
+</head>
+<body>
+<h1>Odds Boosts EV Check (Chet)</h1>
+<p class="stamp">Updated November 25, 2026 by Chet</p>
+<p>Most odds boosts are fake value — the "boosted" price is often still worse than another book's unboosted price. Each boost below is devigged against the no-vig fair price ("perfect line"). <strong>Only EV% &gt; 0 flags, and only when the fair price comes from real devigged prices</strong> (other books on the same market, or leg-by-leg for parlays). A boost whose fair price can only be estimated from the book's own regular price with an assumed hold is <strong>WATCH — unverified</strong>, never a flag. Most boosts fail. That is the point of the check.</p>
+<p><strong>Today (Nov 25, 2026): 9 fixed boosts checked, 0 flagged, 1 watch, 8 failed.</strong> Gmail search found zero boost emails from any NJ book in the last 48 hours — boosts may land on Yahoo, which this scan cannot read. Public source: SportsBettingDime daily boosted odds, Nov 25.</p>
+
+<h2>Flagged boosts (+EV, verified)</h2>
+<p><em>None today. No verified +EV boost on Nov 25, 2026.</em></p>
+<table>
+<tr><th>Date</th><th>Book</th><th>Market</th><th>Boosted</th><th>Fair</th><th>EV%</th><th>Cap</th><th>Capped profit</th><th>Status / grade</th></tr>
+<tr><td colspan="9">No flags yet. Flags land here the day they verify.</td></tr>
+</table>
+
+<h2>Watch — looks +EV but unverified</h2>
+<table>
+<tr><th>Date</th><th>Book</th><th>Market</th><th>Regular</th><th>Boosted</th><th>Fair (est.)</th><th>EV% (est.)</th><th>Why unverified</th></tr>
+<tr><td>Nov 25, 2026</td><td>theScore</td><td>NFL: J. Love &amp; M. Stafford 2+ pass TDs each (GB at LAR, 8:00 PM ET)</td><td>+190</td><td>+300</td><td>+262</td><td class="watch">+10.34%</td><td>Fair price is an estimate (regular +190 ÷ 1.25 hold). Break-even: it is +EV only if P(both throw 2+ TDs) &gt; 25% — true only if theScore's hold on this combo is under ~38%. Needs live 2+ TD prop prices (DarkHorse) to confirm. Cap not published — check the app. Do not bet on the estimate alone.</td></tr>
+</table>
+
+<h2>All boosts checked — Nov 25, 2026</h2>
+<table>
+<tr><th>Book</th><th>Market</th><th>Regular</th><th>Boosted</th><th>Fair</th><th>EV%</th><th>Verdict</th></tr>
+<tr><td>bet365</td><td>NBA: PHI, CHA, NYK &amp; OKC all to win</td><td>+853</td><td>+917</td><td>+931</td><td class="fail">-1.32%</td><td>FAIL — closest of the day. Fair prob 9.70% devigged leg-by-leg from FanDuel morning MLs (PHI -130, CHA -154, NYK -148, OKC -126). Boosted +917 still short of fair +931. Game tipped 5:10 PM ET — likely no longer available.</td></tr>
+<tr><td>bet365</td><td>CBB: LSU, TAMU, USC, CONN, USU, MSST all to win</td><td>+1149</td><td>+1293</td><td>+1336 (est.)</td><td class="fail">-3.02%</td><td>FAIL — 12.5% uplift cannot cover a 6-leg ML parlay hold.</td></tr>
+<tr><td>BetMGM</td><td>NFL GB/LAR: Both teams score 3+ pts in Q1</td><td>+135</td><td>+150</td><td>+194 (est.)</td><td class="fail">-14.89%</td><td>FAIL — 11% uplift vs ~25% SGP hold.</td></tr>
+<tr><td>Caesars</td><td>NFL: K. Williams 100+ rush+rec yds &amp; 1+ TD</td><td>+355</td><td>+400</td><td>+469 (est.)</td><td class="fail">-12.09%</td><td>FAIL</td></tr>
+<tr><td>Caesars</td><td>NFL: C. Watson 100+ rec yds &amp; 1+ TD</td><td>+380</td><td>+450</td><td>+500 (est.)</td><td class="fail">-8.33%</td><td>FAIL</td></tr>
+<tr><td>Caesars</td><td>NBA: Giannis 30+ pts &amp; T. Maxey 2+ 3PM</td><td>+130</td><td>+160</td><td>+187 (est.)</td><td class="fail">-9.57%</td><td>FAIL</td></tr>
+<tr><td>theScore</td><td>NFL: J. Love &amp; M. Stafford 2+ pass TDs each</td><td>+190</td><td>+300</td><td>+262 (est.)</td><td class="watch">+10.34% (est.)</td><td>WATCH — see above. Not a flag.</td></tr>
+<tr><td>theScore</td><td>CBB: LSU, TAMU &amp; USC all to win</td><td>+182</td><td>+210</td><td>+224 (est.)</td><td class="fail">-4.41%</td><td>FAIL</td></tr>
+<tr><td>theScore</td><td>CBB: DUKE to win &amp; 145+ pts in DUKE/CONN</td><td>+220</td><td>+270</td><td>+300 (est.)</td><td class="fail">-7.50%</td><td>FAIL</td></tr>
+</table>
+<p class="note">"(est.)" = fair price estimated as regular price ÷ (1 + hold): 15% hold for ML parlays, 25% for prop/SGP combos. Those are typical NJ-book holds, not measured per market — which is exactly why estimate-based boosts can only ever be WATCH, never flags.</p>
+
+<h2>Flexible profit boosts live today (tokens, not fixed bets)</h2>
+<p>These are only as good as the bet you apply them to. Rule: apply a profit boost only to a leg whose <em>unboosted</em> price is already near-fair — otherwise the boost just subsidises vig. Caps were not published in the public listings; check the token terms in the app before using one.</p>
+<table>
+<tr><th>Book</th><th>Token</th><th>Applies to</th></tr>
+<tr><td>bet365</td><td>50% any-sport SGP boost</td><td>Any-sport same-game parlay, Nov 25</td></tr>
+<tr><td>BetMGM</td><td>Pro Football SGP boost token</td><td>NFL SGP, Nov 25</td></tr>
+<tr><td>DraftKings</td><td>30% college basketball boost</td><td>DUKE/CONN, Nov 25</td></tr>
+<tr><td>FanDuel</td><td>30% NFL SGP boost</td><td>GB/LAR, Nov 25</td></tr>
+<tr><td>FanDuel</td><td>50% profit boost (Thanksgiving NFL — choose-your-reward)</td><td>Any Thursday Nov 26 NFL game</td></tr>
+</table>
+<div class="note"><strong>Worked hedge example (FanDuel 50% profit boost, public prices Nov 25 — example only, cap unverified):</strong> $25 on Packers +120 with a 50% profit boost → boosted profit $25 × 1.20 × 1.50 = $45.00, payout $70.00. Hedge Rams -135 at theScore (best price): hedge stake $70.00 ÷ 1.741 = $40.21. Packers win: +$45.00 − $40.21 = <strong>+$4.79</strong>. Rams win: $40.21 × 0.741 − $25.00 = <strong>+$4.79</strong>. Locked-in ≈ +$4.79 on $65.21 staked — <em>if</em> the token allows a $25 single on this game and the cap covers it. Confirm the cap in the app first; if the max bet or max extra winnings is lower, the locked-in profit shrinks proportionally.</div>
+
+<h2>Method</h2>
+<p>American → decimal: +a → 1 + a/100; −a → 1 + 100/|a|. Implied prob = 1 ÷ decimal. Fair prob (two-way) = (1/oA) ÷ (1/oA + 1/oB); multi-way generalises the same way. ML parlay fair prob = product of devigged leg fair probs. EV% = (boosted decimal × fair prob − 1) × 100. Flag bar: EV% &gt; 0 with a fair price from devigged real prices. Profit-boost hedge: boosted profit = stake × (decimal − 1) × (1 + boost%); hedge stake = boosted payout ÷ hedge decimal. Daily scan 10:00 AM ET. Sources: Gmail boost mail, public boost listings, DarkHorse signed-in NJ view (read-only) for fair/hedge prices. Never a sportsbook sign-in. Michael places every bet himself — no auto-betting, paper-first.</p>
+<p class="stamp">Updated November 25, 2026 by Chet</p>
+</body>
+</html>
