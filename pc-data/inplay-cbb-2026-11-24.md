@@ -53,3 +53,5 @@ NEW IN-PLAY CBB: PACE: Delaware St at Chattanooga | Full Total (at half) Under 1
 NEW IN-PLAY CBB: PACE: Coppin St at Villanova | Full Total (at half) Under 133.5 -125 | pace proj 118.0 (H1 59 x 2) vs live total 133.5 (gap -15.5, bar 5) | H1 59 | as of 19:44:02 ET
 ## 2026-11-24 19:44:05 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: New Hampshire at Seton Hall | Full Total (at half) Under 128.5 -110 | pace proj 106.0 (H1 53 x 2) vs live total 128.5 (gap -22.5, bar 5) | H1 53 | as of 19:44:02 ET
+## 2026-11-24 19:44:25 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Vermont at Siena | Full Total (at half) Under 163.5 -110 | pace proj 156.0 (H1 78 x 2) vs live total 163.5 (gap -7.5, bar 5) | H1 78 | as of 19:44:02 ET
