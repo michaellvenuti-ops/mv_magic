@@ -1,5 +1,5 @@
 {
- "through": "2026-11-21",
+ "through": "2026-11-24",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -10894,18 +10894,18 @@
    "winner": "Marshall Thundering Herd"
   },
   {
-   "date": "2026-11-21",
    "away": "Hawai'i Rainbow Warriors",
-   "home": "Nevada Wolf Pack",
+   "date": "2026-11-21",
+   "final": "8-16",
    "first": "Nevada Wolf Pack",
-   "first_side": "home",
-   "first_kind": "FG",
    "first_elapsed_sec": 1264,
-   "winner": "Nevada Wolf Pack",
-   "seq": "0-3>0-6>0-13>0-16>8-16",
+   "first_kind": "FG",
+   "first_side": "home",
+   "home": "Nevada Wolf Pack",
    "lead_changes": 0,
+   "seq": "0-3>0-6>0-13>0-16>8-16",
    "ties": 0,
-   "final": "8-16"
+   "winner": "Nevada Wolf Pack"
   },
   {
    "away": "Houston Cougars",
@@ -11118,18 +11118,18 @@
    "winner": "Nebraska Cornhuskers"
   },
   {
-   "date": "2026-11-21",
    "away": "Oklahoma State Cowboys",
-   "home": "Arizona State Sun Devils",
+   "date": "2026-11-21",
+   "final": "30-27",
    "first": "Oklahoma State Cowboys",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 291,
-   "winner": "Oklahoma State Cowboys",
-   "seq": "7-0>7-7>7-14>7-21>7-24>14-24>17-24>24-24>24-27>27-27>30-27",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Arizona State Sun Devils",
    "lead_changes": 2,
+   "seq": "7-0>7-7>7-14>7-21>7-24>14-24>17-24>24-24>24-27>27-27>30-27",
    "ties": 3,
-   "final": "30-27"
+   "winner": "Oklahoma State Cowboys"
   },
   {
    "away": "Old Dominion Monarchs",
@@ -11202,18 +11202,18 @@
    "winner": "Auburn Tigers"
   },
   {
-   "date": "2026-11-21",
    "away": "San Diego State Aztecs",
-   "home": "Boise State Broncos",
+   "date": "2026-11-21",
+   "final": "22-20",
    "first": "Boise State Broncos",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 903,
-   "winner": "San Diego State Aztecs",
-   "seq": "0-7>7-7>7-10>10-10>10-17>13-17>13-20>19-20>22-20",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Boise State Broncos",
    "lead_changes": 1,
+   "seq": "0-7>7-7>7-10>10-10>10-17>13-17>13-20>19-20>22-20",
    "ties": 2,
-   "final": "22-20"
+   "winner": "San Diego State Aztecs"
   },
   {
    "away": "South Alabama Jaguars",
@@ -11356,18 +11356,18 @@
    "winner": "UTSA Roadrunners"
   },
   {
-   "date": "2026-11-21",
    "away": "Utah State Aggies",
-   "home": "Oregon State Beavers",
+   "date": "2026-11-21",
+   "final": "24-31",
    "first": "Utah State Aggies",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 140,
-   "winner": "Oregon State Beavers",
-   "seq": "7-0>14-0>14-3>14-10>17-10>17-17>24-17>24-24>24-31",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Oregon State Beavers",
    "lead_changes": 1,
+   "seq": "7-0>14-0>14-3>14-10>17-10>17-17>24-17>24-24>24-31",
    "ties": 2,
-   "final": "24-31"
+   "winner": "Oregon State Beavers"
   },
   {
    "away": "Utah Utes",
@@ -11480,6 +11480,34 @@
    "seq": "0-7>0-14>0-21>0-28>3-28>3-35>3-42>3-49>3-56>10-56>17-56>17-59",
    "ties": 0,
    "winner": "Ole Miss Rebels"
+  },
+  {
+   "date": "2026-11-24",
+   "away": "Kent State Golden Flashes",
+   "home": "Eastern Michigan Eagles",
+   "first": "Eastern Michigan Eagles",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 46,
+   "winner": "Eastern Michigan Eagles",
+   "seq": "0-7>6-7>6-14>12-14>12-17",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "12-17"
+  },
+  {
+   "date": "2026-11-24",
+   "away": "Miami (OH) RedHawks",
+   "home": "Western Michigan Broncos",
+   "first": "Miami (OH) RedHawks",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 145,
+   "winner": "Miami (OH) RedHawks",
+   "seq": "7-0>7-3>14-3>14-10>21-10>21-16>21-24>28-24",
+   "lead_changes": 2,
+   "ties": 0,
+   "final": "28-24"
   }
  ],
  "tally": {
@@ -11692,18 +11720,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Eastern Michigan Eagles": {
-   "gp": 11,
-   "scored_first": 6,
+   "gp": 12,
+   "scored_first": 7,
    "kinds": {
     "FG": 1,
-    "TD": 5,
+    "TD": 6,
     "Safety": 0
    },
-   "won_when_first": 4,
+   "won_when_first": 5,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 54.5,
-   "win_pct_when_first": 66.7,
+   "scored_first_pct": 58.3,
+   "win_pct_when_first": 71.4,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12972,7 +13000,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Kent State Golden Flashes": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 4,
    "kinds": {
     "FG": 0,
@@ -12982,9 +13010,9 @@
    "won_when_first": 2,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 36.4,
+   "scored_first_pct": 33.3,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 14.3,
+   "win_pct_when_not_first": 12.5,
    "won_by_one_when_first_pct": 0.0
   },
   "South Carolina Gamecocks": {
@@ -13180,18 +13208,18 @@
    "won_by_one_when_first_pct": null
   },
   "Miami (OH) RedHawks": {
-   "gp": 11,
-   "scored_first": 4,
+   "gp": 12,
+   "scored_first": 5,
    "kinds": {
     "FG": 1,
-    "TD": 3,
+    "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 2,
+   "won_when_first": 3,
    "won_when_not_first": 5,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 36.4,
-   "win_pct_when_first": 50.0,
+   "scored_first_pct": 41.7,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 71.4,
    "won_by_one_when_first_pct": 0.0
   },
@@ -14252,7 +14280,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Western Michigan Broncos": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 7,
    "kinds": {
     "FG": 0,
@@ -14262,9 +14290,9 @@
    "won_when_first": 7,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 63.6,
+   "scored_first_pct": 58.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Michigan Wolverines": {
@@ -15293,20 +15321,20 @@
   }
  },
  "league": {
-  "games": 820,
-  "home_scored_first": 486,
-  "first_team_won": 575,
+  "games": 822,
+  "home_scored_first": 487,
+  "first_team_won": 577,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.5,
   "kinds": {
    "FG": 228,
-   "TD": 590,
+   "TD": 592,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
-  "median_first_score_sec": 341,
-  "home_scored_first_pct": 59.3,
-  "first_team_win_pct": 70.1
+  "median_first_score_sec": 340,
+  "home_scored_first_pct": 59.2,
+  "first_team_win_pct": 70.2
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -15375,9 +15403,9 @@
    "avg_per_game": 0.64
   },
   "Eastern Michigan Eagles": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 16,
-   "avg_per_game": 1.45
+   "avg_per_game": 1.33
   },
   "San Jos\u00e9 State Spartans": {
    "games": 12,
@@ -15775,9 +15803,9 @@
    "avg_per_game": 1.27
   },
   "Kent State Golden Flashes": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 11,
-   "avg_per_game": 1.0
+   "avg_per_game": 0.92
   },
   "South Carolina Gamecocks": {
    "games": 11,
@@ -15840,9 +15868,9 @@
    "avg_per_game": 0.67
   },
   "Miami (OH) RedHawks": {
-   "games": 11,
-   "lead_changes": 17,
-   "avg_per_game": 1.55
+   "games": 12,
+   "lead_changes": 19,
+   "avg_per_game": 1.58
   },
   "Pittsburgh Panthers": {
    "games": 11,
@@ -16175,9 +16203,9 @@
    "avg_per_game": 0.82
   },
   "Western Michigan Broncos": {
-   "games": 11,
-   "lead_changes": 5,
-   "avg_per_game": 0.45
+   "games": 12,
+   "lead_changes": 7,
+   "avg_per_game": 0.58
   },
   "Michigan Wolverines": {
    "games": 11,
