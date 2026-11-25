@@ -806,7 +806,8 @@
    "pregame_total": 144.5,
    "alerted_at": "2026-11-25T13:52:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 137.5 -120 \u2014 Lindenwood at Stony Brook (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 13:52:02 ET"
+   "alert_detail": "PLAY: Under 137.5 -120 \u2014 Lindenwood at Stony Brook (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 13:52:02 ET",
+   "final": true
   },
   "401924268": {
    "matchup": "Southern Utah at Long Beach St",
@@ -816,12 +817,14 @@
    "spread": 1.5,
    "fav_team": "Southern Utah",
    "dog_team": "Long Beach St",
-   "pregame_total": 149.5
+   "pregame_total": 149.5,
+   "final": true
   },
   "401920067": {
    "matchup": "American Int'l at Rhode Island",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911029": {
    "matchup": "E Kentucky at Miami OH",
@@ -831,7 +834,8 @@
    "spread": 14.5,
    "fav_team": "Miami OH",
    "dog_team": "E Kentucky",
-   "pregame_total": 159.5
+   "pregame_total": 159.5,
+   "final": true
   },
   "401919007": {
    "matchup": "Tulane at Davidson",
@@ -844,7 +848,8 @@
    "pregame_total": 137.5,
    "alerted_at": "2026-11-25T14:27:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 141.5 \u2014 Tulane at Davidson (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 141.5 (gap -5.5, bar 5) | H1 68 | as of 14:27:02 ET"
+   "alert_detail": "PLAY: Under 141.5 \u2014 Tulane at Davidson (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 141.5 (gap -5.5, bar 5) | H1 68 | as of 14:27:02 ET",
+   "final": true
   },
   "401921669": {
    "matchup": "Arizona St at LSU",
@@ -931,12 +936,15 @@
   "401921715": {
    "matchup": "Ole Miss at Arizona",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Arizona",
    "dog_team": "Ole Miss",
-   "pregame_total": 153.5
+   "pregame_total": 153.5,
+   "alerted_at": "2026-11-25T15:27:02",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 155.5 -115 \u2014 Ole Miss at Arizona (TRAILING FAVE) | pregame favorite Arizona trails at half (Ole Miss leads); pace is slow (proj 146.0 vs live 155.5) \u2014 the comeback-fave rule bets Over anyway | H1 73 | as of 15:27:01 ET"
   },
   "401920809": {
    "matchup": "Texas A&M at Xavier",
@@ -973,7 +981,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 35.5,
+   "spread": 34.5,
    "fav_team": "Oklahoma St",
    "dog_team": "Jackson St",
    "pregame_total": 160.5
@@ -986,7 +994,7 @@
    "spread": 1.5,
    "fav_team": "FIU",
    "dog_team": "Arkansas St",
-   "pregame_total": 176.5
+   "pregame_total": 178.5
   },
   "401925943": {
    "matchup": "Bethesda at Utah Tech",
@@ -1011,7 +1019,7 @@
    "spread": 3.5,
    "fav_team": "Liberty",
    "dog_team": "Princeton",
-   "pregame_total": 137.5
+   "pregame_total": 138.5
   },
   "401921703": {
    "matchup": "Georgia St at FGCU",
@@ -1041,7 +1049,7 @@
    "spread": 10.5,
    "fav_team": "USC",
    "dog_team": "South Carolina",
-   "pregame_total": 144.5
+   "pregame_total": 145.5
   },
   "401926065": {
    "matchup": "Southern at Nebraska",
@@ -1081,7 +1089,7 @@
    "spread": 26.5,
    "fav_team": "Texas St",
    "dog_team": "Alcorn St",
-   "pregame_total": 146.5
+   "pregame_total": 147.5
   },
   "401920237": {
    "matchup": "Holy Cross at Dartmouth",
@@ -1098,7 +1106,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "BYU",
    "dog_team": "Providence",
    "pregame_total": 154.5
@@ -1151,7 +1159,7 @@
    "spread": 25.5,
    "fav_team": "Syracuse",
    "dog_team": "UAlbany",
-   "pregame_total": 146.5
+   "pregame_total": 147.5
   },
   "401909568": {
    "matchup": "UConn at Duke",
@@ -1348,7 +1356,7 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 16.5,
+   "spread": 17.5,
    "fav_team": "Hawai'i",
    "dog_team": "Incarnate Word",
    "pregame_total": 139.5
