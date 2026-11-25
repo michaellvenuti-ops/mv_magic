@@ -11572,3 +11572,55 @@
 [2026-11-24 19:43:03 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
 [2026-11-24 19:43:05 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-24 19:43:05 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 20:13:09 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 20:18:21 ET] odds_recorder.py: OK in 280s — SUMMARY: recorded 183 events (92 with odds), db total 320470 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 20:19:19 ET] dh_arbitrage.py: OK in 58s — ARBITRAGE: NBA MIN Timberwolves OKC Thunder Nov-25 7:45 PM / Nov-25 7:45 PM / table / Assists J. McCain Under 2.5 / Alt Assists J. McCain 3+ / table | BetRivers
+[2026-11-24 20:19:53 ET] dh_kalshi_poly_arb.py: OK in 34s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 20:20:03 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAF Illinois Northwestern Nov-28 12:30 PM — Total — Over 46 Fanatics-NJ -170 ($114) / Under 49.5 Bally Bet +110 ($86) — both win 47, 48, 49 — push 
+[2026-11-24 20:20:03 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-24 20:34:30 ET] sync_to_github.py: FAILED (exit 1) in 867s — http.client.RemoteDisconnected: Remote end closed connection without response
+[2026-11-24 20:34:36 ET] dh_game_middles.py: FAILED (exit 1) in 6s —   - [pid=356] <gracefully close end>
+[2026-11-24 20:34:41 ET] dh_nhl_totals_middles.py: FAILED (exit 1) in 5s —   - [pid=12600] <gracefully close end>
+[2026-11-24 20:34:45 ET] dh_key_number_middles.py: FAILED (exit 1) in 4s —   - [pid=5220] <gracefully close end>
+[2026-11-24 20:34:51 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 6s —   - [pid=10136] <gracefully close end>
+[2026-11-24 20:35:44 ET] hung_number.py: OK in 53s — HUNG NUMBER: Florida Atlantic vs East Carolina — Fanatics moneyline Florida Atlantic value Florida Atlantic (99.0 vs median 50.5)
+[2026-11-24 20:35:51 ET] rlm.py: OK in 6s
+[2026-11-24 20:35:56 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-24 20:36:00 ET] steam_side.py: OK in 4s — STEAM-SIDE FLAG: FBS Mississippi State @ Ole Miss | 2026-11-24 | Kalshi | Ole Miss spread -17.5 (median -18.5 -> -19.5)
+[2026-11-24 20:37:13 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NFL GB Packers LA Rams Nov-25 8:00 PM / Nov-25 8:00 PM / table / Passing Yards J. Love Under 275.5 / Alt Pass Yards J. Love 275+ / table | F
+[2026-11-24 20:39:21 ET] dh_sog_middles.py: OK in 128s — - 0 deliverables this run
+[2026-11-24 20:39:25 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 20:39:26 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 20:39:27 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 245 total tallied.
+[2026-11-24 20:39:30 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 20:39:35 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 9 new, 2 unverified, 1108 total tallied.
+[2026-11-24 20:39:36 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 20:39:39 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 20:39:41 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-24 20:39:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 21:09:44 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 21:12:13 ET] odds_recorder.py: OK in 116s — SUMMARY: recorded 183 events (83 with odds), db total 320653 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 21:12:15 ET] wide_builds.py: OK in 2s — wide_builds: 23 qualifying builds, 0 NEW (banked wide-builds-2026-11-24.md)
+[2026-11-24 21:12:52 ET] dh_low_holds.py: OK in 37s — LOW-HOLDS: NCAAB Yale Wright St. Nov-25 12:30 PM / Nov-25 12:30 PM / table / Total Under 138.5 / Alt Total Over 138.5 / table | FanDuel | DraftKings
+[2026-11-24 21:14:56 ET] dh_game_middles.py: OK in 124s — GAME MIDDLE: NCAAF Minnesota Wisconsin Nov-27 7:30 PM / Nov-27 7:30 PM / table / Alt Total Under 39.5 / Alt Total Over 39 / table | theScore | Fanatics-NJ — win
+[2026-11-24 21:16:27 ET] dh_nhl_totals_middles.py: OK in 91s — NHL TOTAL MIDDLE: NHL CAR Hurricanes TB Lightning Nov-25 7:00 PM / Nov-25 7:00 PM / table / Total Over 6 / Total Under 6.5 / table | BetMGM | Fliff — window 0.5
+[2026-11-24 21:21:36 ET] dh_key_number_middles.py: OK in 308s — key-number-middles: 94 basketball rows excluded (football-only rule).
+[2026-11-24 21:25:01 ET] dh_basketball_key_middles.py: OK in 206s — basketball-key-middles: no new basketball middles.
+[2026-11-24 21:25:53 ET] steam_side.py: OK in 51s — STEAM-SIDE FLAG: FBS Miami (OH) @ Western Michigan | 2026-11-24 | Kalshi | Miami (OH) spread 4.5 (median 5.5 -> 7.5)
+[2026-11-24 21:26:01 ET] dh_prop_middles.py: FAILED (exit 1) in 8s —   - [pid=3088] <gracefully close end>
+[2026-11-24 21:26:07 ET] dh_sog_middles.py: FAILED (exit 1) in 6s —   - [pid=2580] <gracefully close end>
+[2026-11-24 21:26:09 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles R 23.5/24.5 sits at -1.5c vs
+[2026-11-24 21:26:10 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 21:26:12 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 1 unverified, 246 total tallied.
+[2026-11-24 21:26:13 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 376 total tallied.
+[2026-11-24 21:26:19 ET] ncaab_first_score.py: OK in 6s — ncaab-first-score: 27 new, 2 unverified, 1135 total tallied.
+[2026-11-24 21:26:20 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 820 total tallied.
+[2026-11-24 21:26:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 21:26:22 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-24 21:26:22 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 21:42:57 ET] sync_to_github.py: FAILED (exit 1) in 994s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-24 21:44:51 ET] odds_recorder.py: OK in 84s — SUMMARY: recorded 183 events (83 with odds), db total 320836 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 21:45:15 ET] dh_arbitrage.py: OK in 25s — ARBITRAGE: NBA PHO Suns HOU Rockets Nov-25 8:45 PM / Nov-25 8:45 PM / table / Assists M. Smart Under 2.5 / Alt Assists M. Smart 3+ / table | BetRivers | Bet365
+[2026-11-24 21:45:32 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-24 21:45:34 ET] wide_builds.py: OK in 2s — NEW BUILD: NFL KC Chiefs BUF Bills Nov-26 8:20 PM — Total — Over 48 ProphetX +114 ($92) / Under 48.5 Bally Bet -121 ($108) — win+push at 48 — push +$89.26, miss
+[2026-11-24 21:45:34 ET] syncing to GitHub (wide-builds banked new builds)
