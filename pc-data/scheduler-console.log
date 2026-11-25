@@ -11963,3 +11963,28 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 15:21:26 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 15:21:27 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-25 15:21:27 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 15:51:27 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 15:52:44 ET] odds_recorder.py: OK in 46s — SUMMARY: recorded 187 events (151 with odds), db total 323253 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 15:52:48 ET] dh_arbitrage.py: FAILED (exit 1) in 4s —   - [pid=1712] <gracefully close end>
+[2026-11-25 15:52:52 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 4s —   - [pid=9188] <gracefully close end>
+[2026-11-25 15:52:54 ET] wide_builds.py: OK in 2s — wide_builds: 35 qualifying builds, 0 NEW (banked wide-builds-2026-11-25.md)
+[2026-11-25 15:53:04 ET] dh_game_middles.py: FAILED (exit 1) in 10s —   - [pid=5908] <gracefully close end>
+[2026-11-25 15:53:07 ET] dh_nhl_totals_middles.py: FAILED (exit 1) in 3s —   - [pid=11324] <gracefully close end>
+[2026-11-25 15:53:11 ET] dh_key_number_middles.py: FAILED (exit 1) in 3s —   - [pid=12944] <gracefully close end>
+[2026-11-25 15:53:14 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 3s —   - [pid=14780] <gracefully close end>
+[2026-11-25 15:53:24 ET] steam_side.py: OK in 10s — steam-side: 69 games, no new flags (silent).
+[2026-11-25 15:53:28 ET] dh_prop_middles.py: FAILED (exit 1) in 4s —   - [pid=16096] <gracefully close end>
+[2026-11-25 15:55:14 ET] dh_sog_middles.py: OK in 106s — - 0 deliverables this run
+[2026-11-25 15:55:16 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -2.3c vs +EV.
+[2026-11-25 15:55:17 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 15:55:18 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 248 total tallied.
+[2026-11-25 15:55:19 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 15:55:21 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 4 new, 1 unverified, 1180 total tallied.
+[2026-11-25 15:55:22 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 15:55:23 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 15:55:25 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
+[2026-11-25 15:55:25 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 16:13:13 ET] sync_to_github.py: FAILED (exit 1) in 1069s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-25 16:14:13 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 187 events (149 with odds), db total 323440 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 16:15:32 ET] dh_low_holds.py: FAILED (exit 2) in 79s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-25 16:15:32 ET] syncing to GitHub (regular 10-minute sync)
