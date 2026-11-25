@@ -111,3 +111,7 @@ NEW IN-PLAY CBB: PLAY: Over 156.5 — Drexel at Penn (2ND BITE) | 1H total 80 cl
 NEW IN-PLAY CBB: PLAY: Over 153.5 — Duquesne at High Point (2ND BITE) | 1H total 78 cleared implied 1H line 70.25 by +7.8; pace proj 156.0 vs live total 153.5 -- take the Over again at the half | H1 78 | as of 21:32:03 ET
 ## 2026-11-24 21:34:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 131.5 -120 — Texas Tech at Louisville (TRAILING FAVE) | pregame favorite Texas Tech trails at half (Louisville leads); pace is slow (proj 102.0 vs live 131.5) — the comeback-fave rule bets Over anyway | H1 51 | as of 21:34:02 ET
+## 2026-11-24 21:48:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 149.5 — UTEP at Charleston (TRAILING FAVE) | pregame favorite Charleston trails at half (UTEP leads); pace is slow (proj 136.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 21:48:01 ET
+## 2026-11-24 21:54:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 148.5 — UNC Greensboro at Santa Barbara (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 21:54:01 ET
