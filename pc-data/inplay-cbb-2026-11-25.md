@@ -43,3 +43,5 @@ NEW IN-PLAY CBB: PLAY: Over 172.5 — Alcorn St at Texas St (2ND BITE) | 1H tota
 NEW IN-PLAY CBB: PLAY: Under 135.5 -110 — Holy Cross at Dartmouth (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 135.5 (gap -17.5, bar 5) | H1 59 | as of 17:55:01 ET
 ## 2026-11-25 17:57:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 154.5 — Portland St at UC Riverside (TRAILING FAVE) | pregame favorite UC Riverside trails at half (Portland St leads); pace is slow (proj 144.0 vs live 154.5) — the comeback-fave rule bets Over anyway | H1 72 | as of 17:57:01 ET
+## 2026-11-25 18:03:11 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 152.5 -110 — South Carolina at USC (TRAILING FAVE) | pregame favorite USC trails at half (South Carolina leads); pace is slow (proj 144.0 vs live 152.5) — the comeback-fave rule bets Over anyway | H1 72 | as of 18:03:10 ET
