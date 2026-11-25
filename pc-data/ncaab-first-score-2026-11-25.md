@@ -30,3 +30,9 @@
 - 2026-11-25: American International Yellow Jackets @ Rhode Island Rams — first: American International Yellow Jackets (FT, 0:49 in); lead changes 1; final 89-98
 - 2026-11-25: Eastern Kentucky Colonels @ Miami (OH) RedHawks — first: Miami (OH) RedHawks (2PT, 0:30 in); lead changes 8; final 72-85
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T15:55:21-05:00 -- NCAAB FIRST SCORE (PC): 4 new final(s) tallied; season 1180 games through 2026-11-25
+- 2026-11-25: Virginia Cavaliers @ Marquette Golden Eagles — first: Marquette Golden Eagles (2PT, 0:28 in); lead changes 5; final 60-54
+- 2026-11-25: Grace Christian Tigers @ Western Michigan Broncos — first: Western Michigan Broncos (3PT, 0:20 in); lead changes 4; final 52-104
+- 2026-11-25: Johnson & Wales Griffins @ Brown Bears — first: Brown Bears (3PT, 0:15 in); lead changes 0; final 52-98
+- 2026-11-25: Tulane Green Wave @ Davidson Wildcats — first: Davidson Wildcats (3PT, 0:58 in); lead changes 0; final 47-74
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
