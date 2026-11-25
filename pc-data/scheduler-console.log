@@ -11799,3 +11799,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 08:32:22 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 9 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-25.json
 [2026-11-25 08:32:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-25 08:32:23 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 09:02:23 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 09:03:39 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 186 events (92 with odds), db total 322132 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 09:03:40 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Prairie View A&M Marshall Today 4:00 PM — Total — Over 153 Bet365 +105 ($88) / Under 156.5 DraftKings -160 ($112) — both win 154, 155, 156 — pu
+[2026-11-25 09:03:40 ET] syncing to GitHub (wide-builds banked new builds)
