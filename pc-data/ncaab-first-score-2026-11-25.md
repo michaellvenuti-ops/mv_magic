@@ -36,3 +36,13 @@
 - 2026-11-25: Johnson & Wales Griffins @ Brown Bears — first: Brown Bears (3PT, 0:15 in); lead changes 0; final 52-98
 - 2026-11-25: Tulane Green Wave @ Davidson Wildcats — first: Davidson Wildcats (3PT, 0:58 in); lead changes 0; final 47-74
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T16:57:25-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 1188 games through 2026-11-25
+- 2026-11-25: Ole Miss Rebels @ Arizona Wildcats — first: Ole Miss Rebels (3PT, 1:39 in); lead changes 7; final 73-84
+- 2026-11-25: LSU Tigers @ Arizona State Sun Devils — first: LSU Tigers (2PT, 0:37 in); lead changes 14; final 94-92
+- 2026-11-25: Arkansas-Pine Bluff Golden Lions @ South Dakota Coyotes — first: South Dakota Coyotes (3PT, 0:28 in); lead changes 0; final 50-86
+- 2026-11-25: Montreat Cavaliers @ Western Carolina Catamounts — first: Western Carolina Catamounts (3PT, 1:15 in); lead changes 0; final 42-100
+- 2026-11-25: Saint Peter's Peacocks @ Columbia Lions — first: Saint Peter's Peacocks (2PT, 0:55 in); lead changes 1; final 44-65
+- 2026-11-25: Warner Royals @ North Florida Ospreys — first: Warner Royals (3PT, 0:18 in); lead changes 3; final 68-100
+- 2026-11-25: Manhattan Jaspers @ NJIT Highlanders — first: NJIT Highlanders (2PT, 0:23 in); lead changes 3; final 81-70
+- 2026-11-25: Abilene Christian Wildcats @ South Dakota State Jackrabbits — first: Abilene Christian Wildcats (2PT, 0:45 in); lead changes 10; final 101-95
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
