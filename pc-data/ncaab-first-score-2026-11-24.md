@@ -55,3 +55,32 @@
 - 2026-11-24: DePaul Blue Demons @ Purdue Boilermakers — first: DePaul Blue Demons (FT, 1:34 in); lead changes 10; final 65-56
 - 2026-11-24: Elon Phoenix @ Furman Paladins — first: Elon Phoenix (3PT, 0:29 in); lead changes 1; final 60-82
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T21:26:19-05:00 -- NCAAB FIRST SCORE (PC): 27 new final(s) tallied; season 1135 games through 2026-11-24
+- 2026-11-24: Santa Clara Broncos @ Nevada Wolf Pack — first: Nevada Wolf Pack (3PT, 0:44 in); lead changes 0; final 66-85
+- 2026-11-24: Purdue Fort Wayne Mastodons @ Southeast Missouri State Redhawks — first: Southeast Missouri State Redhawks (2PT, 0:29 in); lead changes 15; final 80-75
+- 2026-11-24: Houston Christian Huskies @ UL Monroe Warhawks — first: Houston Christian Huskies (3PT, 0:15 in); lead changes 8; final 84-58
+- 2026-11-24: Milwaukee Panthers @ Florida Gators — first: Florida Gators (3PT, 0:53 in); lead changes 4; final 67-76
+- 2026-11-24: Vanderbilt Commodores @ Ohio State Buckeyes — first: Ohio State Buckeyes (3PT, 0:32 in); lead changes 13; final 72-66
+- 2026-11-24: Jacksonville Dolphins @ Indiana Hoosiers — first: Indiana Hoosiers (FT, 0:28 in); lead changes 0; final 64-82
+- 2026-11-24: Robert Morris Colonials @ Lamar Cardinals — first: Lamar Cardinals (2PT, 0:15 in); lead changes 6; final 62-87
+- 2026-11-24: Carolina Christian Centurions @ Presbyterian Blue Hose — first: Presbyterian Blue Hose (3PT, 0:23 in); lead changes 0; final 46-123
+- 2026-11-24: Hampton Pirates @ Old Dominion Monarchs — first: Old Dominion Monarchs (3PT, 1:03 in); lead changes 0; final 59-71
+- 2026-11-24: Tarleton State Texans @ Weber State Wildcats — first: Weber State Wildcats (2PT, 0:37 in); lead changes 12; final 87-89
+- 2026-11-24: Bryant Bulldogs @ Marist Red Foxes — first: Bryant Bulldogs (3PT, 0:47 in); lead changes 11; final 57-58
+- 2026-11-24: Coppin State Eagles @ Villanova Wildcats — first: Coppin State Eagles (2PT, 0:18 in); lead changes 9; final 52-70
+- 2026-11-24: Rider Broncs @ Loyola Maryland Greyhounds — first: Loyola Maryland Greyhounds (2PT, 2:11 in); lead changes 4; final 54-71
+- 2026-11-24: Georgia Southern Eagles @ Bellarmine Knights — first: Bellarmine Knights (2PT, 0:37 in); lead changes 0; final 67-82
+- 2026-11-24: Delaware State Hornets @ Chattanooga Mocs — first: Chattanooga Mocs (2PT, 0:14 in); lead changes 4; final 66-79
+- 2026-11-24: New Hampshire Wildcats @ Seton Hall Pirates — first: Seton Hall Pirates (2PT, 0:13 in); lead changes 0; final 27-73
+- 2026-11-24: Campbell Fighting Camels @ Coastal Carolina Chanticleers — first: Campbell Fighting Camels (2PT, 1:33 in); lead changes 2; final 70-66
+- 2026-11-24: UMBC Retrievers @ Iowa Hawkeyes — first: Iowa Hawkeyes (2PT, 0:59 in); lead changes 0; final 48-87
+- 2026-11-24: Vermont Catamounts @ Siena Saints — first: Vermont Catamounts (3PT, 0:49 in); lead changes 19; final 88-98
+- 2026-11-24: Boston University Terriers @ Harvard Crimson — first: Boston University Terriers (2PT, 1:24 in); lead changes 2; final 81-72
+- 2026-11-24: Samford Bulldogs @ Georgia Tech Yellow Jackets — first: Samford Bulldogs (3PT, 0:33 in); lead changes 0; final 92-81
+- 2026-11-24: SUNY Fredonia Blue Devils @ Mercyhurst Lakers — first: Mercyhurst Lakers (2PT, 1:27 in); lead changes 0; final 56-95
+- 2026-11-24: Stetson Hatters @ South Florida Bulls — first: South Florida Bulls (2PT, 0:10 in); lead changes 4; final 67-100
+- 2026-11-24: Charleston Southern Buccaneers @ James Madison Dukes — first: James Madison Dukes (2PT, 1:08 in); lead changes 6; final 58-82
+- 2026-11-24: Binghamton Bearcats @ Lehigh Mountain Hawks — first: Binghamton Bearcats (2PT, 0:23 in); lead changes 4; final 90-83
+- 2026-11-24: Gardner-Webb Runnin' Bulldogs @ Bowling Green Falcons — first: Bowling Green Falcons (2PT, 0:55 in); lead changes 8; final 65-91
+- 2026-11-24: Arlington Baptist Patriots @ East Texas A&M Lions — first: East Texas A&M Lions (2PT, 2:06 in); lead changes 2; final 51-79
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
