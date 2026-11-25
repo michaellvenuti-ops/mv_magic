@@ -21,3 +21,5 @@ NEW IN-PLAY CBB: PLAY: Over 151.5 -120 — LSU at Arizona St (TRAILING FAVE) | p
 NEW IN-PLAY CBB: PLAY: Over 149.5 — Manhattan at NJIT (TRAILING FAVE) | pregame favorite NJIT trails at half (Manhattan leads); pace is slow (proj 148.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 74 | as of 14:50:02 ET
 ## 2026-11-25 14:52:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 144.5 -115 — AR-Pine Bluff at South Dakota (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 144.5 (gap -14.5, bar 5) | H1 65 | as of 14:52:02 ET
+## 2026-11-25 15:27:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 155.5 -115 — Ole Miss at Arizona (TRAILING FAVE) | pregame favorite Arizona trails at half (Ole Miss leads); pace is slow (proj 146.0 vs live 155.5) — the comeback-fave rule bets Over anyway | H1 73 | as of 15:27:01 ET
