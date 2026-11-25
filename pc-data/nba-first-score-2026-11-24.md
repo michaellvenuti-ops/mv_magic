@@ -9,3 +9,6 @@
 ## 2026-11-24T21:26:12-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 246 games through 2026-11-24
 - 2026-11-24: Detroit Pistons @ Orlando Magic — first: Detroit Pistons (2PT, 0:27 in); lead changes 6; final 104-86
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T23:02:42-05:00 -- NBA FIRST SCORE (PC): 1 new final(s) tallied; season 247 games through 2026-11-24
+- 2026-11-24: Boston Celtics @ Washington Wizards — first: Washington Wizards (2PT, 0:16 in); lead changes 1; final 131-116
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
