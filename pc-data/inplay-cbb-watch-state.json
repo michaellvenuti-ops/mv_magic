@@ -834,7 +834,8 @@
    "pregame_total": 150.5,
    "alerted_at": "2026-11-24T20:50:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 161.5 \u2014 Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) \u2014 comeback-fave Over | H1 82 | as of 20:50:02 ET"
+   "alert_detail": "PLAY: Over 161.5 \u2014 Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) \u2014 comeback-fave Over | H1 82 | as of 20:50:02 ET",
+   "final": true
   },
   "401925642": {
    "matchup": "Alabama A&M at North Alabama",
@@ -883,7 +884,8 @@
    "pregame_total": 142.5,
    "alerted_at": "2026-11-24T20:58:51",
    "alert_rule": "2ND BITE",
-   "alert_detail": "PLAY: Over 156.5 \u2014 Drexel at Penn (2ND BITE) | 1H total 80 cleared implied 1H line 71.25 by +8.8; pace proj 160.0 vs live total 156.5 -- take the Over again at the half | H1 80 | as of 20:58:16 ET"
+   "alert_detail": "PLAY: Over 156.5 \u2014 Drexel at Penn (2ND BITE) | 1H total 80 cleared implied 1H line 71.25 by +8.8; pace proj 160.0 vs live total 156.5 -- take the Over again at the half | H1 80 | as of 20:58:16 ET",
+   "final": true
   },
   "401921008": {
    "matchup": "Green Bay at Kansas City",
@@ -993,12 +995,15 @@
   "401921817": {
    "matchup": "Evansville at Missouri",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 31.5,
    "fav_team": "Missouri",
    "dog_team": "Evansville",
-   "pregame_total": 149.5
+   "pregame_total": 149.5,
+   "alerted_at": "2026-11-24T22:06:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 144.5 -120 \u2014 Evansville at Missouri (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 144.5 (gap -12.5, bar 5) | H1 66 | as of 22:06:03 ET"
   },
   "401909699": {
    "matchup": "UNC Asheville at Florida St",
