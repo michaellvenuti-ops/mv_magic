@@ -10,3 +10,6 @@
 - 2026-11-25: Gonzaga Bulldogs @ Kansas State Wildcats — first: Kansas State Wildcats (2PT, 0:47 in); lead changes 1; final 101-61
 - 2026-11-25: Colorado Buffaloes @ Stanford Cardinal — first: Stanford Cardinal (2PT, 0:19 in); lead changes 1; final 70-65
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T12:30:23-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1165 games through 2026-11-25
+- 2026-11-25: St. Bonaventure Bonnies @ Belmont Bruins — first: Belmont Bruins (3PT, 0:33 in); lead changes 5; final 71-68
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
