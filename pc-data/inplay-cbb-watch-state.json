@@ -778,7 +778,8 @@
    "pregame_total": 137.5,
    "alerted_at": "2026-11-25T13:17:03",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 135.5 \u2014 Yale at Wright St (TRAILING FAVE) | pregame favorite Wright St trails at half (Yale leads); pace is slow (proj 128.0 vs live 135.5) \u2014 the comeback-fave rule bets Over anyway | H1 64 | as of 13:17:01 ET"
+   "alert_detail": "PLAY: Over 135.5 \u2014 Yale at Wright St (TRAILING FAVE) | pregame favorite Wright St trails at half (Yale leads); pace is slow (proj 128.0 vs live 135.5) \u2014 the comeback-fave rule bets Over anyway | H1 64 | as of 13:17:01 ET",
+   "final": true
   },
   "401920547": {
    "matchup": "N Colorado at Detroit Mercy",
@@ -791,7 +792,8 @@
    "pregame_total": 147.5,
    "alerted_at": "2026-11-25T13:25:22",
    "alert_rule": "2ND BITE",
-   "alert_detail": "PLAY: Over 160.5 \u2014 N Colorado at Detroit Mercy (2ND BITE) | 1H total 82 cleared implied 1H line 73.75 by +8.2; pace proj 164.0 vs live total 160.5 -- take the Over again at the half | H1 82 | as of 13:25:21 ET"
+   "alert_detail": "PLAY: Over 160.5 \u2014 N Colorado at Detroit Mercy (2ND BITE) | 1H total 82 cleared implied 1H line 73.75 by +8.2; pace proj 164.0 vs live total 160.5 -- take the Over again at the half | H1 82 | as of 13:25:21 ET",
+   "final": true
   },
   "401926835": {
    "matchup": "Lindenwood at Stony Brook",
@@ -834,12 +836,15 @@
   "401919007": {
    "matchup": "Tulane at Davidson",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 10.5,
    "fav_team": "Davidson",
    "dog_team": "Tulane",
-   "pregame_total": 137.5
+   "pregame_total": 137.5,
+   "alerted_at": "2026-11-25T14:27:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 141.5 \u2014 Tulane at Davidson (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 141.5 (gap -5.5, bar 5) | H1 68 | as of 14:27:02 ET"
   },
   "401921669": {
    "matchup": "Arizona St at LSU",
@@ -874,12 +879,15 @@
   "401924705": {
    "matchup": "Saint Peter's at Columbia",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 12.5,
    "fav_team": "Columbia",
    "dog_team": "Saint Peter's",
-   "pregame_total": 125.5
+   "pregame_total": 125.5,
+   "alerted_at": "2026-11-25T14:43:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 105.5 -110 \u2014 Saint Peter's at Columbia (PACE) | pace proj 76.0 (H1 38 x 2) vs live total 105.5 (gap -29.5, bar 5) | H1 38 | as of 14:43:02 ET"
   },
   "401922223": {
    "matchup": "Warner at North Florida",
@@ -1014,7 +1022,7 @@
    "spread": 13.5,
    "fav_team": "Marshall",
    "dog_team": "Prairie View",
-   "pregame_total": 150.5
+   "pregame_total": 149.5
   },
   "401921670": {
    "matchup": "South Carolina at USC",
@@ -1131,7 +1139,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 26.5,
+   "spread": 25.5,
    "fav_team": "Syracuse",
    "dog_team": "UAlbany",
    "pregame_total": 146.5
@@ -1176,7 +1184,7 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "away",
-   "spread": 3.5,
+   "spread": 2.5,
    "fav_team": "N Illinois",
    "dog_team": "SIUE",
    "pregame_total": 137.5
