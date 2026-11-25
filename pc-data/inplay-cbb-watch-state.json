@@ -763,7 +763,8 @@
    "pregame_total": 140.5,
    "alerted_at": "2026-11-24T21:32:03",
    "alert_rule": "2ND BITE",
-   "alert_detail": "PLAY: Over 153.5 \u2014 Duquesne at High Point (2ND BITE) | 1H total 78 cleared implied 1H line 70.25 by +7.8; pace proj 156.0 vs live total 153.5 -- take the Over again at the half | H1 78 | as of 21:32:03 ET"
+   "alert_detail": "PLAY: Over 153.5 \u2014 Duquesne at High Point (2ND BITE) | 1H total 78 cleared implied 1H line 70.25 by +7.8; pace proj 156.0 vs live total 153.5 -- take the Over again at the half | H1 78 | as of 21:32:03 ET",
+   "final": true
   },
   "401917983": {
    "matchup": "Hou Christian at UL Monroe",
@@ -801,7 +802,8 @@
    "pregame_total": 153.5,
    "alerted_at": "2026-11-24T21:34:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 131.5 -120 \u2014 Texas Tech at Louisville (TRAILING FAVE) | pregame favorite Texas Tech trails at half (Louisville leads); pace is slow (proj 102.0 vs live 131.5) \u2014 the comeback-fave rule bets Over anyway | H1 51 | as of 21:34:02 ET"
+   "alert_detail": "PLAY: Over 131.5 -120 \u2014 Texas Tech at Louisville (TRAILING FAVE) | pregame favorite Texas Tech trails at half (Louisville leads); pace is slow (proj 102.0 vs live 131.5) \u2014 the comeback-fave rule bets Over anyway | H1 51 | as of 21:34:02 ET",
+   "final": true
   },
   "401929421": {
    "matchup": "Florida A&M at South Alabama",
@@ -859,7 +861,8 @@
    "spread": 11.5,
    "fav_team": "Cornell",
    "dog_team": "Bucknell",
-   "pregame_total": 154.5
+   "pregame_total": 154.5,
+   "final": true
   },
   "401921711": {
    "matchup": "Clemson at Washington",
@@ -942,7 +945,8 @@
   "401929456": {
    "matchup": "LA Christian at Louisiana",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401911535": {
    "matchup": "Charleston at UTEP",
@@ -1022,12 +1026,15 @@
   "401911253": {
    "matchup": "Grand Canyon at Saint Louis",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Grand Canyon",
    "dog_team": "Saint Louis",
-   "pregame_total": 163.5
+   "pregame_total": 163.5,
+   "alerted_at": "2026-11-24T22:56:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 163.5 -110 \u2014 Saint Louis at Grand Canyon (TRAILING FAVE) | pregame favorite Grand Canyon trails at half (Saint Louis leads); pace is slow (proj 154.0 vs live 163.5) \u2014 the comeback-fave rule bets Over anyway | H1 77 | as of 22:56:02 ET"
   },
   "401906762": {
    "matchup": "Baylor at Alabama",
@@ -1044,10 +1051,10 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 11.5,
    "fav_team": "St John's",
    "dog_team": "Oregon",
-   "pregame_total": 156.5
+   "pregame_total": 157.5
   },
   "401921712": {
    "matchup": "VCU at Colorado St",
@@ -1057,7 +1064,7 @@
    "spread": 6.5,
    "fav_team": "VCU",
    "dog_team": "Colorado St",
-   "pregame_total": 148.5
+   "pregame_total": 147.5
   },
   "401909763": {
    "matchup": "Stanford at Colorado",
