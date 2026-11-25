@@ -238,7 +238,14 @@
    }
   },
   "2026-11-24": {
-   "grade": null,
+   "grade": {
+    "note": "9:30 AM open printed below the plan stop - v2 no-trade rule (excluded from the record, no modeled position)",
+    "open": 149.99000549316406,
+    "outcome": "NO TRADE",
+    "pl": 0.0,
+    "plan_stop": 153.04,
+    "reason": "open_below_stop"
+   },
    "kind": "pick",
    "pick": {
     "catalyst": "Earnings on Nasdaq's calendar for today (2026-11-24, pre-market) \u2014 reported results / guidance are the catalyst to verify at the book",
@@ -251,6 +258,21 @@
     "ticker": "DLTR",
     "vol": 1169298
    }
+  },
+  "2026-11-25": {
+   "grade": null,
+   "kind": "pick",
+   "pick": {
+    "catalyst": "Earnings on Nasdaq's calendar for yesterday (2026-11-24, time not supplied) \u2014 reported results / guidance are the catalyst to verify at the book",
+    "company": "HP Inc. Common Stock",
+    "entry": 31.07,
+    "mcap": 28023154688,
+    "pct": 11.22,
+    "stop": 30.91,
+    "target": 31.23,
+    "ticker": "HPQ",
+    "vol": 7584782
+   }
   }
  },
  "meta": {
@@ -258,7 +280,7 @@
    "losses": 1,
    "modeled_pl": 50.0,
    "no_data": 0,
-   "no_trades": 7,
+   "no_trades": 8,
    "time_exits": 0,
    "wins": 2
   }
