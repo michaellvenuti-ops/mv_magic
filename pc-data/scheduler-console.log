@@ -11767,3 +11767,35 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 02:20:31 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=11 queued_total=52
 [2026-11-25 02:20:32 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=52, limit=5)
 [2026-11-25 02:20:32 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 02:50:32 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 02:52:21 ET] odds_recorder.py: OK in 79s — SUMMARY: recorded 186 events (92 with odds), db total 321760 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 02:53:15 ET] dh_arbitrage.py: OK in 54s — ARBITRAGE: NBA PHO Suns HOU Rockets Today 8:45 PM / Today 8:45 PM / table / Assists M. Smart Under 2.5 / Alt Assists M. Smart 3+ / table | BetRivers | Bet365
+[2026-11-25 02:53:33 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 02:53:36 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Eastern Kentucky Miami (OH) Today 1:00 PM — Total — Over 158.5 theScore +100 ($98) / Under 159 Bet365 -108 ($102) — win+push at 159 — push +$98
+[2026-11-25 02:53:36 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-25 08:13:01 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-25 08:17:56 ET] odds_recorder.py: OK in 274s — SUMMARY: recorded 186 events (92 with odds), db total 321946 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 08:18:49 ET] dh_arbitrage.py: OK in 53s — ARBITRAGE: NBA PHO Suns HOU Rockets Today 8:45 PM / Today 8:45 PM / table / Assists M. Smart Under 2.5 / Alt Assists M. Smart 3+ / table | BetParx | Bet365
+[2026-11-25 08:19:08 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 08:19:10 ET] wide_builds.py: OK in 1s — wide_builds: 20 qualifying builds, 0 NEW (banked wide-builds-2026-11-25.md)
+[2026-11-25 08:19:29 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM / Nov-28 12:00 PM / table / Alt Spread Louisiana Tech +9 / Alt Spread Georgia Southern -9 / tab
+[2026-11-25 08:20:39 ET] dh_game_middles.py: OK in 70s — GAME MIDDLE: NCAAB Georgia St. Florida Gulf Coast Today 4:00 PM / Today 4:00 PM / table / Alt Total Over 140.5 / Alt Total Under 141 / table | DraftKings | Bet3
+[2026-11-25 08:21:25 ET] dh_nhl_totals_middles.py: OK in 46s — NHL TOTAL MIDDLE: NHL CGY Flames PIT Penguins Today 7:00 PM / Today 7:00 PM / table / Total Under 6.5 / Total Over 6 / table | theScore | BetMGM — window 0.5 pu
+[2026-11-25 08:24:10 ET] dh_key_number_middles.py: OK in 165s — key-number-middles: 347 basketball rows excluded (football-only rule).
+[2026-11-25 08:27:10 ET] dh_basketball_key_middles.py: OK in 180s — basketball-key-middles: no new basketball middles.
+[2026-11-25 08:27:37 ET] hung_number.py: OK in 27s — HUNG NUMBER: Bears vs Lions — BetMGM moneyline Lions value Lions (99.0 vs median 49.3)
+[2026-11-25 08:27:43 ET] rlm.py: OK in 7s
+[2026-11-25 08:27:48 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-25 08:27:51 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Purdue @ Indiana | 2026-11-25 | Fanatics | Indiana spread -22.5 (median -22.5 -> -23.5)
+[2026-11-25 08:29:52 ET] dh_prop_middles.py: OK in 121s — PROP MIDDLE CLEAN : NBA BKN Nets MIL Bucks Today 8:15 PM / Today 8:15 PM / table / Points K. Kuzma Under 15.5 / Alt Points K. Kuzma Over 14.5 / table | Bet365 |
+[2026-11-25 08:32:10 ET] dh_sog_middles.py: OK in 138s — - 0 deliverables this run
+[2026-11-25 08:32:13 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Green Bay 20.5/24.5 sits at -1.6c vs +EV
+[2026-11-25 08:32:14 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 08:32:15 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 248 total tallied.
+[2026-11-25 08:32:16 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 08:32:19 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 1 unverified, 1164 total tallied.
+[2026-11-25 08:32:20 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 08:32:21 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 08:32:22 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 9 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-25.json
+[2026-11-25 08:32:23 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-25 08:32:23 ET] syncing to GitHub (regular 10-minute sync)
