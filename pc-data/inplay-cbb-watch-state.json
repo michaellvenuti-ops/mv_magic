@@ -722,7 +722,8 @@
    "pregame_total": 154.5,
    "alerted_at": "2026-11-25T11:54:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 164.5 -110 \u2014 Rice at Ohio (TRAILING FAVE) | pregame favorite Ohio trails at half (Rice leads); pace is slow (proj 162.0 vs live 164.5) \u2014 the comeback-fave rule bets Over anyway | H1 81 | as of 11:54:01 ET"
+   "alert_detail": "PLAY: Over 164.5 -110 \u2014 Rice at Ohio (TRAILING FAVE) | pregame favorite Ohio trails at half (Rice leads); pace is slow (proj 162.0 vs live 164.5) \u2014 the comeback-fave rule bets Over anyway | H1 81 | as of 11:54:01 ET",
+   "final": true
   },
   "401921702": {
    "matchup": "Northern Iowa at Charlotte",
@@ -732,22 +733,27 @@
    "spread": 8.5,
    "fav_team": "Charlotte",
    "dog_team": "Northern Iowa",
-   "pregame_total": 143.5
+   "pregame_total": 143.5,
+   "final": true
   },
   "401911201": {
    "matchup": "Mercy at Fordham",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401920428": {
    "matchup": "Virginia at Marquette",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 5.5,
    "fav_team": "Virginia",
    "dog_team": "Marquette",
-   "pregame_total": 151.5
+   "pregame_total": 151.5,
+   "alerted_at": "2026-11-25T12:56:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 124.5 \u2014 Virginia at Marquette (PACE) | pace proj 96.0 (H1 48 x 2) vs live total 124.5 (gap -28.5, bar 5) | H1 48 | as of 12:56:02 ET"
   },
   "401920196": {
    "matchup": "PSU Abington at Saint Joseph's",
@@ -762,12 +768,15 @@
   "401928831": {
    "matchup": "Yale at Wright St",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Wright St",
    "dog_team": "Yale",
-   "pregame_total": 137.5
+   "pregame_total": 137.5,
+   "alerted_at": "2026-11-25T13:17:03",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 135.5 \u2014 Yale at Wright St (TRAILING FAVE) | pregame favorite Wright St trails at half (Yale leads); pace is slow (proj 128.0 vs live 135.5) \u2014 the comeback-fave rule bets Over anyway | H1 64 | as of 13:17:01 ET"
   },
   "401920547": {
    "matchup": "N Colorado at Detroit Mercy",
@@ -784,7 +793,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 11.5,
+   "spread": 12.5,
    "fav_team": "Stony Brook",
    "dog_team": "Lindenwood",
    "pregame_total": 144.5
@@ -842,7 +851,7 @@
    "spread": 21.5,
    "fav_team": "South Dakota",
    "dog_team": "AR-Pine Bluff",
-   "pregame_total": 149.5
+   "pregame_total": 150.5
   },
   "401928850": {
    "matchup": "Grace Chrstn at W Michigan",
@@ -884,7 +893,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 7.5,
    "fav_team": "S Dakota St",
    "dog_team": "Abilene Chrstn",
    "pregame_total": 139.5
@@ -942,7 +951,7 @@
    "spread": 35.5,
    "fav_team": "Oklahoma St",
    "dog_team": "Jackson St",
-   "pregame_total": 159.5
+   "pregame_total": 160.5
   },
   "401928359": {
    "matchup": "Arkansas St at FIU",
