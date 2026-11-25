@@ -84,3 +84,23 @@
 - 2026-11-24: Gardner-Webb Runnin' Bulldogs @ Bowling Green Falcons — first: Bowling Green Falcons (2PT, 0:55 in); lead changes 8; final 65-91
 - 2026-11-24: Arlington Baptist Patriots @ East Texas A&M Lions — first: East Texas A&M Lions (2PT, 2:06 in); lead changes 2; final 51-79
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T23:02:49-05:00 -- NCAAB FIRST SCORE (PC): 18 new final(s) tallied; season 1153 games through 2026-11-24
+- 2026-11-24: Idaho State Bengals @ Boise State Broncos — first: Boise State Broncos (FT, 1:00 in); lead changes 0; final 71-88
+- 2026-11-24: Texas Tech Red Raiders @ Louisville Cardinals — first: Texas Tech Red Raiders (3PT, 0:43 in); lead changes 5; final 64-72
+- 2026-11-24: Mount St. Mary's Mountaineers @ Morgan State Bears — first: Mount St. Mary's Mountaineers (3PT, 1:47 in); lead changes 4; final 75-74
+- 2026-11-24: Alcorn State Braves @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (2PT, 0:31 in); lead changes 0; final 41-83
+- 2026-11-24: West Georgia Wolves @ Tennessee Tech Golden Eagles — first: West Georgia Wolves (2PT, 0:30 in); lead changes 1; final 85-124
+- 2026-11-24: Florida A&M Rattlers @ South Alabama Jaguars — first: South Alabama Jaguars (3PT, 0:22 in); lead changes 0; final 49-74
+- 2026-11-24: Arkansas Baptist Buffaloes @ Little Rock Trojans — first: Little Rock Trojans (2PT, 0:21 in); lead changes 0; final 47-82
+- 2026-11-24: Oral Roberts Golden Eagles @ UT Arlington Mavericks — first: UT Arlington Mavericks (2PT, 0:42 in); lead changes 5; final 84-80
+- 2026-11-24: Alabama A&M Bulldogs @ North Alabama Lions — first: North Alabama Lions (2PT, 1:36 in); lead changes 0; final 74-77
+- 2026-11-24: Clemson Tigers @ Washington Huskies — first: Clemson Tigers (2PT, 2:04 in); lead changes 1; final 63-64
+- 2026-11-24: Drexel Dragons @ Pennsylvania Quakers — first: Drexel Dragons (2PT, 0:19 in); lead changes 1; final 74-89
+- 2026-11-24: Green Bay Phoenix @ Kansas City Roos — first: Green Bay Phoenix (2PT, 0:50 in); lead changes 12; final 77-72
+- 2026-11-24: Lipscomb Bisons @ Auburn Tigers — first: Auburn Tigers (FT, 0:28 in); lead changes 2; final 66-101
+- 2026-11-24: Army Black Knights @ Air Force Falcons — first: Air Force Falcons (2PT, 1:21 in); lead changes 6; final 79-88
+- 2026-11-24: Central Michigan Chippewas @ Notre Dame Fighting Irish — first: Central Michigan Chippewas (2PT, 0:20 in); lead changes 11; final 70-88
+- 2026-11-24: Louisiana Christian Wildcats @ Louisiana Ragin' Cajuns — first: Louisiana Ragin' Cajuns (2PT, 0:39 in); lead changes 0; final 24-91
+- 2026-11-24: Bucknell Bison @ Cornell Big Red — first: Cornell Big Red (2PT, 0:30 in); lead changes 8; final 71-92
+- 2026-11-24: Duquesne Dukes @ High Point Panthers — first: High Point Panthers (2PT, 0:17 in); lead changes 4; final 70-75
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
