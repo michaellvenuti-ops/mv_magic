@@ -14,7 +14,7 @@ th{background:#161b22;color:#9da7b3}
 .box{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;margin:16px 0}
 </style></head><body>
 <h1>Elo Ratings Tracker</h1>
-<div class="sub">Mack Elo team ratings — NBA, NFL, NHL, NCAAB, NCAAF. Paper only, $100 flat. Updated 2026-11-24 03:55 PM ET.</div>
+<div class="sub">Mack Elo team ratings — NBA, NFL, NHL, NCAAB, NCAAF. Paper only, $100 flat. Updated 2026-11-25 09:45 AM ET.</div>
 <div class="box"><b>How it works (Mack, Vol. 2 — Elo team ratings, in Python).</b>
 Every team starts at 1500. After each game: rating += K x (actual &minus; expected),
 expected = 1 / (1 + 10<sup>&minus;(gap + home edge)/400</sup>). K is sport-specific and
@@ -37,7 +37,7 @@ only and flag nothing. <i>Not modelled in v1: margin-of-victory scaling of the E
 (win/loss-only Elo); a MOV multiplier is a v2 refinement once the backtest shows it helps.
 The first run shipped the spread cover sign backwards (&Phi;((margin &minus; L)/sigma),
 inflating favourites) and it was fixed 2026-11-23 before any board publish.</i></div>
-<h2>Paper record</h2><p><b>6-6-0</b> (0 void) &nbsp;·&nbsp; <b>$+255.21</b> over 12 settled &nbsp;·&nbsp; ROI +21.3%</p>
+<h2>Paper record</h2><p><b>7-10-0</b> (0 void) &nbsp;·&nbsp; <b>$-57.83</b> over 17 settled &nbsp;·&nbsp; ROI -3.4%</p>
 <h2>Backtest — tuned K per sport (Brier score, season to date)</h2><div class="wrap"><table><tr><th>Sport</th><th>Games</th><th>Tuned K</th><th>Brier</th><th>K grid</th></tr>
 <tr><td>NBA</td><td>245</td><td>32</td><td>0.2347</td><td>K8=0.2522, K12=0.2481, K16=0.2445, K20=0.2415, K24=0.2389, K28=0.2367, K32=0.2347, K40=0.2317, K48=0.2295</td></tr>
 <tr><td>NFL</td><td>161</td><td>32</td><td>0.2387</td><td>K8=0.2498, K12=0.2473, K16=0.2451, K20=0.2432, K24=0.2415, K28=0.24, K32=0.2387, K40=0.2367, K48=0.2353</td></tr>
@@ -208,6 +208,11 @@ inflating favourites) and it was fixed 2026-11-23 before any board publish.</i><
 <tr><td>Miami (OH) RedHawks</td><td>Western Michigan Broncos</td><td>1542.3 / 1566.4</td><td>62.6%</td><td>-167 / 167</td><td>3.2</td><td>&mdash;</td></tr>
 </table></div>
 <h2>Graded flags</h2><div class="wrap"><table><tr><th>Date</th><th>Sport</th><th>Game</th><th>Market</th><th>Side</th><th>Line</th><th>Price</th><th>Result</th><th>Money</th></tr>
+<tr><td>2026-11-24</td><td>NBA</td><td>Dallas Mavericks @ Denver Nuggets</td><td>Spread</td><td>away</td><td>8.5</td><td>-115 Fanatics</td><td class="win">W</td><td>$+86.96</td></tr>
+<tr><td>2026-11-24</td><td>NBA</td><td>Boston Celtics @ Washington Wizards</td><td>Spread</td><td>home</td><td>10.5</td><td>-105 BetMGM</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-24</td><td>NBA</td><td>Boston Celtics @ Washington Wizards</td><td>ML</td><td>home</td><td></td><td>360 Bally Bet</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-24</td><td>NBA</td><td>Detroit Pistons @ Orlando Magic</td><td>Spread</td><td>home</td><td>2.5</td><td>-113 bet365</td><td class="loss">L</td><td>$-100.00</td></tr>
+<tr><td>2026-11-24</td><td>NBA</td><td>Detroit Pistons @ Orlando Magic</td><td>ML</td><td>home</td><td></td><td>116 FanDuel</td><td class="loss">L</td><td>$-100.00</td></tr>
 <tr><td>2026-11-23</td><td>NBA</td><td>San Antonio Spurs @ Sacramento Kings</td><td>Spread</td><td>home</td><td>12.5</td><td>-105 FanDuel</td><td class="loss">L</td><td>$-100.00</td></tr>
 <tr><td>2026-11-23</td><td>NBA</td><td>San Antonio Spurs @ Sacramento Kings</td><td>ML</td><td>home</td><td></td><td>480 Bally Bet</td><td class="loss">L</td><td>$-100.00</td></tr>
 <tr><td>2026-11-23</td><td>NBA</td><td>Utah Jazz @ Los Angeles Lakers</td><td>Spread</td><td>away</td><td>13.5</td><td>-104 BetRivers</td><td class="loss">L</td><td>$-100.00</td></tr>
