@@ -46,3 +46,13 @@
 - 2026-11-25: Manhattan Jaspers @ NJIT Highlanders — first: NJIT Highlanders (2PT, 0:23 in); lead changes 3; final 81-70
 - 2026-11-25: Abilene Christian Wildcats @ South Dakota State Jackrabbits — first: Abilene Christian Wildcats (2PT, 0:45 in); lead changes 10; final 101-95
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T18:12:01-05:00 -- NCAAB FIRST SCORE (PC): 8 new final(s) tallied; season 1196 games through 2026-11-25
+- 2026-11-25: Arkansas State Red Wolves @ Florida International Panthers — first: Florida International Panthers (2PT, 0:38 in); lead changes 3; final 92-88
+- 2026-11-25: Georgia State Panthers @ Florida Gulf Coast Eagles — first: Georgia State Panthers (3PT, 0:32 in); lead changes 3; final 72-77
+- 2026-11-25: Akron Zips @ App State Mountaineers — first: App State Mountaineers (2PT, 1:01 in); lead changes 6; final 66-76
+- 2026-11-25: SE Louisiana Lions @ North Dakota Fighting Hawks — first: SE Louisiana Lions (2PT, 0:45 in); lead changes 16; final 73-72
+- 2026-11-25: Jackson State Tigers @ Oklahoma State Cowboys — first: Jackson State Tigers (2PT, 0:45 in); lead changes 1; final 58-93
+- 2026-11-25: Bethesda Flames @ Utah Tech Trailblazers — first: Utah Tech Trailblazers (3PT, 0:20 in); lead changes 0; final 54-124
+- 2026-11-25: Princeton Tigers @ Liberty Flames — first: Princeton Tigers (2PT, 1:20 in); lead changes 10; final 79-72
+- 2026-11-25: Prairie View A&M Panthers @ Marshall Thundering Herd — first: Marshall Thundering Herd (2PT, 1:09 in); lead changes 2; final 58-64
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
