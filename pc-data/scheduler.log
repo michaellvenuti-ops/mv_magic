@@ -11629,3 +11629,25 @@
 [2026-11-24 22:16:28 ET] rlm.py: OK in 7s
 [2026-11-24 22:16:33 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 2 new leads, no book at 3 yet).
 [2026-11-24 22:16:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 22:46:33 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 22:48:21 ET] odds_recorder.py: OK in 78s — SUMMARY: recorded 183 events (79 with odds), db total 321019 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 22:48:57 ET] dh_arbitrage.py: OK in 36s — ARBITRAGE: NBA MIN Timberwolves OKC Thunder Nov-25 7:45 PM / Nov-25 7:45 PM / table / Assists J. McCain Under 2.5 / Alt Assists J. McCain 3+ / table | BetRivers
+[2026-11-24 22:50:12 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 75s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-24 22:50:17 ET] wide_builds.py: OK in 3s — wide_builds: 10 qualifying builds, 0 NEW (banked wide-builds-2026-11-24.md)
+[2026-11-24 22:51:21 ET] dh_low_holds.py: OK in 64s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-24 22:52:39 ET] dh_game_middles.py: FAILED (exit 2) in 78s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-24 22:53:01 ET] dh_nhl_totals_middles.py: OK in 22s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-24 22:56:15 ET] dh_key_number_middles.py: FAILED (exit 2) in 194s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-24 22:59:02 ET] dh_basketball_key_middles.py: OK in 167s — basketball-key-middles: no new basketball middles.
+[2026-11-24 22:59:10 ET] steam_side.py: OK in 8s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 23:00:41 ET] dh_prop_middles.py: OK in 90s — PROP MIDDLE CLEAN : NFL KC Chiefs BUF Bills Nov-26 8:20 PM / Nov-26 8:20 PM / table / Receiving Yards T. Johnson Under 18.5 / Receiving Yards T. Johnson Over 17
+[2026-11-24 23:02:37 ET] dh_sog_middles.py: OK in 116s — - 0 deliverables this run
+[2026-11-24 23:02:39 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Kansas City 23.5/24.5 sits at -2.5c vs +
+[2026-11-24 23:02:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 23:02:42 ET] nba_first_score.py: OK in 1s — nba-first-score: 1 new, 1 unverified, 247 total tallied.
+[2026-11-24 23:02:44 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 1 new, 0 unverified, 377 total tallied.
+[2026-11-24 23:02:49 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 18 new, 2 unverified, 1153 total tallied.
+[2026-11-24 23:02:52 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 2 new, 0 unverified, 822 total tallied.
+[2026-11-24 23:02:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 23:02:55 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-24 23:02:55 ET] syncing to GitHub (regular 10-minute sync)
