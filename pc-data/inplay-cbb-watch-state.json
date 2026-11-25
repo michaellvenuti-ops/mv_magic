@@ -344,7 +344,8 @@
    "pregame_total": 173.5,
    "alerted_at": "2026-11-24T18:48:03",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "TRAILING FAVE: Queens at Wofford | Full Total (at half) Over 166.5 | pregame favorite Queens trails at half (Wofford leads); pace proj 148.0 vs live total 166.5 (gap -18.5) -- comeback-fave Over anyway | H1 74 | as of 18:48:02 ET"
+   "alert_detail": "TRAILING FAVE: Queens at Wofford | Full Total (at half) Over 166.5 | pregame favorite Queens trails at half (Wofford leads); pace proj 148.0 vs live total 166.5 (gap -18.5) -- comeback-fave Over anyway | H1 74 | as of 18:48:02 ET",
+   "final": true
   },
   "401920949": {
    "matchup": "E Michigan at Kennesaw St",
@@ -530,12 +531,15 @@
   "401920923": {
    "matchup": "Mount St Marys at Morgan St",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Morgan St",
    "dog_team": "Mount St Marys",
-   "pregame_total": 147.5
+   "pregame_total": 147.5,
+   "alerted_at": "2026-11-24T20:04:02",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 156.5 -110 \u2014 Mount St Marys at Morgan St (PACE) | pace proj 150.0 (H1 75 x 2) vs live total 156.5 (gap -6.5, bar 5) | H1 75 | as of 20:04:02 ET"
   },
   "401920889": {
    "matchup": "New Hampshire at Seton Hall",
