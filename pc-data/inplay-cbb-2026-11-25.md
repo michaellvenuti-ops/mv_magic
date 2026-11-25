@@ -11,3 +11,7 @@ NEW IN-PLAY CBB: PLAY: Over 135.5 — Yale at Wright St (TRAILING FAVE) | pregam
 NEW IN-PLAY CBB: PLAY: Over 160.5 — N Colorado at Detroit Mercy (2ND BITE) | 1H total 82 cleared implied 1H line 73.75 by +8.2; pace proj 164.0 vs live total 160.5 -- take the Over again at the half | H1 82 | as of 13:25:21 ET
 ## 2026-11-25 13:52:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Lindenwood at Stony Brook (PACE) | pace proj 118.0 (H1 59 x 2) vs live total 137.5 (gap -19.5, bar 5) | H1 59 | as of 13:52:02 ET
+## 2026-11-25 14:27:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 141.5 — Tulane at Davidson (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 141.5 (gap -5.5, bar 5) | H1 68 | as of 14:27:02 ET
+## 2026-11-25 14:43:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 105.5 -110 — Saint Peter's at Columbia (PACE) | pace proj 76.0 (H1 38 x 2) vs live total 105.5 (gap -29.5, bar 5) | H1 38 | as of 14:43:02 ET
