@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>New Program Watch (Chet)</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.6;font-size:15px}
+main{max-width:860px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px;line-height:1.3} h2{font-size:20px;margin:28px 0 6px} h3{font-size:17px;margin:22px 0 4px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+p{margin:10px 0}
+ul{margin:8px 0;padding-left:24px}
+li{margin:4px 0}
+table{border-collapse:collapse;font-size:14px;margin:12px 0}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+a{color:#58a6ff}
+code{background:#161b22;padding:1px 5px;border-radius:4px;font-size:13px}
+hr{border:none;border-top:1px solid #30363d;margin:24px 0}
+blockquote{border-left:3px solid #30363d;margin:12px 0;padding:2px 14px;color:#c9d1d9}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.back{font-size:13px}
+</style></head><body><main>
+<p class="back"><a href="hq/">&larr; Back to Broham&rsquo;s Betting HQ</a></p>
+<h1>New Program Watch (Chet)</h1>
+<p class="hq-updated" style="font-size:.85rem;color:#6b716b;margin:2px 0 12px">Updated Nov 25, 2026 by Chet</p>
+<p><strong>Status: LIVE.</strong> The watch runs every 2 hours, 24/7, from the Muse side. Last run: <strong>Nov 25, 2026 5:12 PM ET</strong>. Next run about 2 hours after that. When it finds something new, it alerts in the main chat — this page is the record you can check anytime.</p>
+<p>Built from Risk Takers Ep 181, edge E2 (the Polymarket API taker rebate): new programs and markets pay early, and the edge decays in weeks. Apex farmed Kalshi liquidity rewards from $300 to ~$10k; ITF tennis in its first month on Kalshi quoted 8&ndash;10&cent; wide, ~5x bankroll. The watch exists to catch the next one the moment it lands. Full background: <a href="risk-takers-ep181-edges.html">Risk Takers Ep 181 &mdash; Edges Report</a>.</p>
+<hr />
+<h2>Recent runs</h2>
+<table>
+<tr><th>Run (ET)</th><th>Duration</th><th>New candidates</th><th>Errors</th></tr>
+<tr><td>Nov 25, 5:12 PM ET</td><td>29.8s</td><td>1</td><td>none</td></tr>
+<tr><td>Nov 25, 3:46 PM ET</td><td>21.5s</td><td>0</td><td>none</td></tr>
+<tr><td>Nov 25, 3:44 PM ET</td><td>12.5s</td><td>0</td><td>none</td></tr>
+<tr><td>Nov 25, 3:44 PM ET</td><td>29.3s</td><td>0</td><td>none</td></tr>
+</table>
+<h2>Under review</h2>
+<p> candidates the watch found that have not been judged a new program yet — not alerted, no action taken on them.</p>
+<ul>
+<li><a href='https://docs.kalshi.com/changelog#november-27-2026'>Decimal order entry expands to 58 equities markets</a> — Kalshi (changelog, found Nov 25, 2026 5:12 PM ET)</li>
+</ul>
+<hr />
+<h2>What it watches</h2>
+<p>Five public sources, diffed every run, plus an announcement sweep:</p>
+<ul>
+<li><strong>Kalshi API changelog RSS</strong> — docs.kalshi.com/changelog</li>
+<li><strong>Polymarket docs changelog</strong> — docs.polymarket.com/changelog/predictions (59 entries tracked)</li>
+<li><strong>Polymarket US fee schedule</strong> — docs.polymarket.us/fees</li>
+<li><strong>Polymarket Gamma tags</strong> — 2,000 tags (new tags = possible new market categories)</li>
+<li><strong>Kalshi series list</strong> — 17,126 series (incremental poll, full refresh weekly)</li>
+<li><strong>Announcement sweep</strong> — @Kalshi, @Polymarket, @PolymarketUS, the Risk Takers community, Prediction News Network, RG.org</li>
+</ul>
+<p>It flags:</p>
+<ul>
+<li><strong>(a) New liquidity / rewards / rebate programs</strong> on Kalshi or Polymarket (US or international) — with the exact terms and the expiry date.</li>
+<li><strong>(b) Newly listed market categories</strong> — a sport or market with no makers yet (the ITF-tennis pattern). A new tag or series is a candidate only; it is verified as a real category before any alert.</li>
+<li><strong>(c) New venues</strong> — a new exchange, or Polymarket/Kalshi launching in a new market.</li>
+<li><strong>Material changes to a tracked program</strong> — extension, early end, or terms change.</li>
+</ul>
+<p>It does <em>not</em> alert on API deprecations, technical changelog noise, routine listings inside an existing category, fee changes with no program attached, or anything already caught below.</p>
+<hr />
+<h2>Catches so far</h2>
+<h3>Polymarket US 70% API taker-fee rebate (Nov 21 - Dec 31, 2026) — Polymarket US</h3>
+<p><strong>Expires:</strong> 2026-12-31 &nbsp;|&nbsp; <strong>Found:</strong> Nov 25, 2026 3:00 PM ET</p>
+<p><strong>Terms:</strong> 70% of taker fees rebated on straight trades placed through the Polymarket US API. Flat taker fee coefficient 0.0695 regardless of volume (no minimum). Fee = 0.0695 x contracts x price x (1 - price). Combo rebates coming soon. Maker rebates still apply, calculated on gross fee. App/web traders unchanged (volume tiers, 0-30% rebates).</p>
+<p><strong>Watch note:</strong> First catch of the P1 watch (Risk Takers Ep 181 E2). Guests said &#x27;take the under on it making it to end of December&#x27;. Fee schedule says: &#x27;We intend to extend the program based on how it performs.&#x27; Watch must flag any extension, early end, or combo inclusion.</p>
+<p class='sub'>Source: https://docs.polymarket.us/fees (verified live Nov 25, 2026 - page text fetched directly; also The Defiant, CryptoNews, RG.org)</p>
+<h3>Polymarket international fee/rebate overhaul (effective Nov 20, 2026) — Polymarket</h3>
+<p><strong>Expires:</strong> no expiry stated (standing terms) &nbsp;|&nbsp; <strong>Found:</strong> Nov 25, 2026 3:00 PM ET</p>
+<p><strong>Terms:</strong> Taker rebates: Gold 10%, Platinum 25%, Diamond 40%, Obsidian 50%, new Onyx 60%. Bronze and Silver tiers removed, category multipliers and one-time level-up bonuses removed. Taker fee coefficients 0.01 or 0.05 by category; Geopolitics fee-free. Maker rebates move from daily pools to volume tiers: 3%/7%/10%/15% of taker fees from $200k/$1M/$4M/$10M 30-day maker volume. Liquidity rewards unchanged.</p>
+<p><strong>Watch note:</strong> Seeded at build time; effective Nov 20, 2026, 23:59 UTC. Standing terms, no expiry stated.</p>
+<p class='sub'>Source: https://docs.polymarket.com/changelog/predictions (verified live Nov 25, 2026)</p>
+
+<h3>Polymarket US 70% API taker-fee rebate — extra notes</h3>
+<ul>
+<li>At 50&cent;, 100 contracts: ~$1.74 gross fee, ~$1.22 back, ~$0.52 net. App/web traders are excluded — they stay on volume tiers (0&ndash;30% rebates).</li>
+<li>App/web taker fees rose Nov 25, 9:45 PM ET (tiers 1&ndash;3 to 0.11 / 0.10 / 0.09) while the API coefficient stays 0.0695 — the API route gets relatively cheaper.</li>
+<li>Extension is <em>not</em> promised. The schedule says only &ldquo;We intend to extend the program based on how it performs.&rdquo; The watch flags an extension, an early end, or combo rebates the moment one is announced.</li>
+</ul>
+<hr />
+<h2>How alerts work</h2>
+<p>When the watch confirms something new, it sends one standalone message in the main chat leading <strong>&ldquo;NEW PROGRAM WATCH &mdash; &lt;venue&gt;&rdquo;</strong>, with a voice note: what it is, the terms, the expiry date, why it matters, and the primary-source link. Silent when nothing new. Alerts only — no orders, no money, no sign-ins.</p>
+<hr />
+<h2>Sources</h2>
+<ul>
+<li><a href="https://docs.polymarket.us/fees">Polymarket US fee schedule (docs.polymarket.us/fees)</a></li>
+<li><a href="https://docs.polymarket.com/changelog/predictions">Polymarket docs changelog (docs.polymarket.com/changelog/predictions)</a></li>
+<li><a href="https://docs.kalshi.com/changelog">Kalshi API changelog (docs.kalshi.com/changelog)</a></li>
+<li><a href="risk-takers-ep181-edges.html">Risk Takers Ep 181 &mdash; Edges Report (Chet)</a> — P1 came from edge E2 in this episode.</li>
+</ul>
+<p class="foot">New Program Watch (P1) — built Nov 25, 2026 from Risk Takers Ep 181. This page is rebuilt from the watch state after every run, so the catches and run log above are current as of the stamp date. Alerts still go to the main chat first.</p>
+</main></body></html>
