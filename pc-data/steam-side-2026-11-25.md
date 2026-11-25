@@ -10,3 +10,4 @@ NEW FLAG: FBS Purdue @ Indiana | 2026-11-25 — Fanatics still dealing spread -2
 ## 2026-11-25T12:27:38-05:00 — 69 games, 1 steam events, 1 NEW flags
 NEW FLAG: FBS TCU @ Texas Tech | 2026-11-25 — FanDuel still dealing spread -14.5 on Texas Tech (pre-move median -14.5, now -15.5)
 ## 2026-11-25T13:18:39-05:00 — 69 games, 0 steam events, 0 NEW flags
+## 2026-11-25T14:00:48-05:00 — 69 games, 0 steam events, 0 NEW flags
