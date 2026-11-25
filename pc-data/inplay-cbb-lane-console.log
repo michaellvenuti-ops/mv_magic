@@ -1418,3 +1418,50 @@ TRIGGER: PLAY: Over 131.5 -120 — Texas Tech at Louisville (TRAILING FAVE) | preg
 SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
 [2026-11-24 21:34:22 ET] lane run: inplay_cbb_watch exit 0 in 21s -- 1 new alert(s) (Texas Tech at Louisville)
 [2026-11-24 21:34:24 ET] fast push OK (attempt 1, commit 6afaec0e79f4) for 1 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:36:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:38:03 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:40:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:42:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:44:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:46:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+SKIP LA Christian at Louisiana | at half but no pregame snapshot (never judged -- no invented lines)
+NEW FLAG INP-057: PLAY: Over 149.5 — UTEP at Charleston (TRAILING FAVE) | pregame favorite Charleston trails at half (UTEP leads); pace is slow (proj 136.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 21:48:01 ET ntfy=sent
+github: push failed (HTTP 409: {'error': '{"message":"is at 81380c949ba0fbfb93dfbf5d6347624ed45b2277 but expected 72f2d0755aca800e9bec7dfe259085b5d0b9bad2","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: retry failed (HTTP 409: {'error': '{"message":"is at afb1a9b28aea67e43ccdb81ad832d2019977d17a but expected 7c9cb8c56423800ee086eefb18c75bcd3fe67c4d","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+github: log push failed (HTTP 409: {'error': '{"message":"is at e04d301ef60107c669e68873a49a81159b3bfcf7 but expected afb1a9b28aea67e43ccdb81ad832d2019977d17a","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+github: log retry failed (HTTP 409: {'error': '{"message":"is at f08fb718a8bb988962f287a897dc49ea56f42dd5 but expected 3032c804143f64aadd8f8668104e0970027d80e3","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
+TRIGGER: PLAY: Over 149.5 — UTEP at Charleston (TRAILING FAVE) | pregame favorite Charleston trails at half (UTEP leads); pace is slow (proj 136.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 68 | as of 21:48:01 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 21:48:37 ET] lane run: inplay_cbb_watch exit 0 in 37s -- 1 new alert(s) (Charleston at UTEP)
+[2026-11-24 21:48:39 ET] fast push OK (attempt 1, commit aeb761157020) for 1 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:50:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NO TRIGGER
+SUMMARY: 87 games checked, 0 at halftime, 0 new flag(s)
+[2026-11-24 21:52:02 ET] lane run: inplay_cbb_watch exit 0 in 1s -- 0 new alert(s)
+NEW FLAG INP-058: PLAY: Under 148.5 — UNC Greensboro at Santa Barbara (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 21:54:01 ET ntfy=sent
+github: pushed pc-data/inplay-cbb-2026-11-24.md (60a09795aa01)
+github: pushed pc-data/inplay-cbb-log.json (4aee72a2e5ab)
+TRIGGER: PLAY: Under 148.5 — UNC Greensboro at Santa Barbara (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 21:54:01 ET
+SUMMARY: 87 games checked, 1 at halftime, 1 new flag(s)
+[2026-11-24 21:54:05 ET] lane run: inplay_cbb_watch exit 0 in 4s -- 1 new alert(s) (UNC Greensboro at Santa Barbara)
+[2026-11-24 21:54:06 ET] fast push OK (attempt 1, commit e1c411daebee) for 1 new alert(s)
