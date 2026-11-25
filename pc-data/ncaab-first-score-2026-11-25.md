@@ -13,3 +13,8 @@
 ## 2026-11-25T12:30:23-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1165 games through 2026-11-25
 - 2026-11-25: St. Bonaventure Bonnies @ Belmont Bruins — first: Belmont Bruins (3PT, 0:33 in); lead changes 5; final 71-68
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T13:21:35-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1168 games through 2026-11-25
+- 2026-11-25: Rice Owls @ Ohio Bobcats — first: Rice Owls (2PT, 0:15 in); lead changes 4; final 82-74
+- 2026-11-25: Northern Iowa Panthers @ Charlotte 49ers — first: Charlotte 49ers (3PT, 1:47 in); lead changes 2; final 72-85
+- 2026-11-25: Mercy Mavericks @ Fordham Rams — first: Fordham Rams (2PT, 0:27 in); lead changes 0; final 56-104
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
