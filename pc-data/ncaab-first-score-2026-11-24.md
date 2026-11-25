@@ -37,3 +37,10 @@
 - 2026-11-24: New Haven Chargers @ Lindenwood Lions — first: Lindenwood Lions (2PT, 0:41 in); lead changes 11; final 63-60
 - 2026-11-24: Penn State Berks PENN STATE-LEHIGH VALLEY @ Navy Midshipmen — first: Navy Midshipmen (FT, 0:17 in); lead changes 0; final 46-97
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T19:43:01-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1099 games through 2026-11-24
+- 2026-11-24: Providence Friars @ Arizona Wildcats — first: Arizona Wildcats (3PT, 0:43 in); lead changes 0; final 66-84
+- 2026-11-24: Illinois State Redbirds @ Tulsa Golden Hurricane — first: Tulsa Golden Hurricane (3PT, 0:19 in); lead changes 1; final 79-67
+- 2026-11-24: Bloomsburg Huskies @ Wagner Seahawks — first: Wagner Seahawks (2PT, 0:22 in); lead changes 0; final 44-96
+- 2026-11-24: Emerson Lions @ Quinnipiac Bobcats — first: Emerson Lions (3PT, 0:42 in); lead changes 1; final 57-85
+- 2026-11-24: Kent State Golden Flashes @ Wyoming Cowboys — first: Wyoming Cowboys (2PT, 0:11 in); lead changes 17; final 78-75
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
