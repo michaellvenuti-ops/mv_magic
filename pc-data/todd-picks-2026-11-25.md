@@ -13,3 +13,7 @@ NEW TODD PLAY: Total 172.5 -115 :: raw: "@everyone ov172.5 -115 ark st (at the h
 NEW TODD PLAY: Total 134.5 -128 :: raw: "@everyone un134.5 -128 Akron ..risk 1 for .78" :: msg 1575266441328861217 :: posted 2026-11-25T21:46:26.648Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 17:03:45 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 145.5 -110 :: raw: "@everyone ov145.5 -110 geo st" :: msg 1575270713965674497 :: posted 2026-11-25T22:03:25.324Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 17:30:57 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 88.5 -115 :: raw: "@everyone ov88.5 -115 Texas st team total" :: msg 1575277523758088273 :: posted 2026-11-25T22:30:28.905Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 17:45:27 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 69.5 -110 :: raw: "@everyone ov69.5 -110 1h port st" :: msg 1575281162329395292 :: posted 2026-11-25T22:44:56.408Z :: Novig: https://app.novig.us/AppEntry
