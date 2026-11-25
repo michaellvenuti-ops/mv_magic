@@ -103,3 +103,7 @@ NEW IN-PLAY CBB: PLAY: Over 161.5 — Oral Roberts at UT Arlington (TRAILING FAV
 NEW IN-PLAY CBB: PLAY: Under 155.5 -110 — Army at Air Force (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 155.5 (gap -11.5, bar 5) | H1 72 | as of 20:50:02 ET
 ## 2026-11-24 20:56:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 143.5 — Green Bay at Kansas City (TRAILING FAVE) | pregame favorite Kansas City trails at half (Green Bay leads); pace is slow (proj 132.0 vs live 143.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 20:56:02 ET
+## 2026-11-24 20:58:16 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 134.5 -115 — Clemson at Washington (TRAILING FAVE) | pregame favorite Clemson trails at half (Washington leads); pace is slow (proj 112.0 vs live 134.5) — the comeback-fave rule bets Over anyway | H1 56 | as of 20:58:16 ET
+## 2026-11-24 20:58:51 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 156.5 — Drexel at Penn (2ND BITE) | 1H total 80 cleared implied 1H line 71.25 by +8.8; pace proj 160.0 vs live total 156.5 -- take the Over again at the half | H1 80 | as of 20:58:16 ET
