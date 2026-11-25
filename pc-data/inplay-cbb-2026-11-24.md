@@ -49,3 +49,5 @@ NEW IN-PLAY CBB: TRAILING FAVE: E Michigan at Kennesaw St | Full Total (at half)
 NEW IN-PLAY CBB: PACE: UMBC at Iowa | Full Total (at half) Under 139.5 -115 | pace proj 120.0 (H1 60 x 2) vs live total 139.5 (gap -19.5, bar 5) | H1 60 | as of 19:38:40 ET
 ## 2026-11-24 19:42:27 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PACE: Delaware St at Chattanooga | Full Total (at half) Under 144.5 -120 | pace proj 138.0 (H1 69 x 2) vs live total 144.5 (gap -6.5, bar 5) | H1 69 | as of 19:42:26 ET
+## 2026-11-24 19:44:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PACE: Coppin St at Villanova | Full Total (at half) Under 133.5 -125 | pace proj 118.0 (H1 59 x 2) vs live total 133.5 (gap -15.5, bar 5) | H1 59 | as of 19:44:02 ET
