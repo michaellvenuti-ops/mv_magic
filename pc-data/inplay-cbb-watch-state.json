@@ -753,7 +753,8 @@
    "pregame_total": 151.5,
    "alerted_at": "2026-11-25T12:56:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 124.5 \u2014 Virginia at Marquette (PACE) | pace proj 96.0 (H1 48 x 2) vs live total 124.5 (gap -28.5, bar 5) | H1 48 | as of 12:56:02 ET"
+   "alert_detail": "PLAY: Under 124.5 \u2014 Virginia at Marquette (PACE) | pace proj 96.0 (H1 48 x 2) vs live total 124.5 (gap -28.5, bar 5) | H1 48 | as of 12:56:02 ET",
+   "final": true
   },
   "401920196": {
    "matchup": "PSU Abington at Saint Joseph's",
@@ -931,7 +932,8 @@
   "401911311": {
    "matchup": "J&W at Brown",
    "date": "2026-11-25",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401921715": {
    "matchup": "Ole Miss at Arizona",
@@ -959,12 +961,15 @@
   "401928836": {
    "matchup": "Akron at App State",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 5.5,
    "fav_team": "Akron",
    "dog_team": "App State",
-   "pregame_total": 134.5
+   "pregame_total": 134.5,
+   "alerted_at": "2026-11-25T15:52:04",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 142.5 -115 \u2014 Akron at App State (TRAILING FAVE) | pregame favorite Akron trails at half (App State leads); pace is slow (proj 140.0 vs live 142.5) \u2014 the comeback-fave rule bets Over anyway | H1 70 | as of 15:52:03 ET"
   },
   "401920548": {
    "matchup": "SE Louisiana at North Dakota",
@@ -1019,7 +1024,7 @@
    "spread": 3.5,
    "fav_team": "Liberty",
    "dog_team": "Princeton",
-   "pregame_total": 138.5
+   "pregame_total": 139.5
   },
   "401921703": {
    "matchup": "Georgia St at FGCU",
@@ -1036,7 +1041,7 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 14.5,
+   "spread": 15.5,
    "fav_team": "Marshall",
    "dog_team": "Prairie View",
    "pregame_total": 150.5
@@ -1046,10 +1051,10 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 10.5,
+   "spread": 9.5,
    "fav_team": "USC",
    "dog_team": "South Carolina",
-   "pregame_total": 145.5
+   "pregame_total": 144.5
   },
   "401926065": {
    "matchup": "Southern at Nebraska",
@@ -1086,10 +1091,10 @@
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 26.5,
+   "spread": 27.5,
    "fav_team": "Texas St",
    "dog_team": "Alcorn St",
-   "pregame_total": 147.5
+   "pregame_total": 146.5
   },
   "401920237": {
    "matchup": "Holy Cross at Dartmouth",
@@ -1149,17 +1154,17 @@
    "spread": 11.5,
    "fav_team": "Richmond",
    "dog_team": "Bethune",
-   "pregame_total": 146.5
+   "pregame_total": 147.5
   },
   "401909720": {
    "matchup": "UAlbany at Syracuse",
    "date": "2026-11-25",
    "alerted": false,
    "fav": "home",
-   "spread": 25.5,
+   "spread": 24.5,
    "fav_team": "Syracuse",
    "dog_team": "UAlbany",
-   "pregame_total": 147.5
+   "pregame_total": 146.5
   },
   "401909568": {
    "matchup": "UConn at Duke",
@@ -1191,7 +1196,7 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 7.5,
+   "spread": 6.5,
    "fav_team": "N Kentucky",
    "dog_team": "Bellarmine",
    "pregame_total": 146.5
