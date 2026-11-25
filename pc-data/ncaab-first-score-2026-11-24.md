@@ -44,3 +44,14 @@
 - 2026-11-24: Emerson Lions @ Quinnipiac Bobcats — first: Emerson Lions (3PT, 0:42 in); lead changes 1; final 57-85
 - 2026-11-24: Kent State Golden Flashes @ Wyoming Cowboys — first: Wyoming Cowboys (2PT, 0:11 in); lead changes 17; final 78-75
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-24T20:39:35-05:00 -- NCAAB FIRST SCORE (PC): 9 new final(s) tallied; season 1108 games through 2026-11-24
+- 2026-11-24: Southern Indiana Screaming Eagles @ VMI Keydets — first: VMI Keydets (FT, 0:18 in); lead changes 12; final 83-87
+- 2026-11-24: San Diego State Aztecs @ Iowa State Cyclones — first: San Diego State Aztecs (2PT, 0:35 in); lead changes 1; final 68-81
+- 2026-11-24: Creighton Bluejays @ Michigan Wolverines — first: Michigan Wolverines (2PT, 0:28 in); lead changes 7; final 99-73
+- 2026-11-24: Sacred Heart Pioneers @ Rutgers Scarlet Knights — first: Rutgers Scarlet Knights (3PT, 0:20 in); lead changes 10; final 73-106
+- 2026-11-24: Mercer Bears @ Florida Atlantic Owls — first: Mercer Bears (3PT, 1:03 in); lead changes 1; final 84-95
+- 2026-11-24: Queens University Royals @ Wofford Terriers — first: Wofford Terriers (3PT, 0:22 in); lead changes 2; final 77-86
+- 2026-11-24: Eastern Michigan Eagles @ Kennesaw State Owls — first: Kennesaw State Owls (2PT, 0:53 in); lead changes 7; final 60-56
+- 2026-11-24: DePaul Blue Demons @ Purdue Boilermakers — first: DePaul Blue Demons (FT, 1:34 in); lead changes 10; final 65-56
+- 2026-11-24: Elon Phoenix @ Furman Paladins — first: Elon Phoenix (3PT, 0:29 in); lead changes 1; final 60-82
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
