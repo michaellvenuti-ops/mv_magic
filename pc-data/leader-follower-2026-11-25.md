@@ -8,3 +8,8 @@
 ## 2026-11-25T11:13:40-05:00 — no-follow: Kalshi UAB @ North Texas | 2026-11-25 spread (only 0 followed)
 ## 2026-11-25T11:13:41-05:00 — 85 games, 1 leads credited
 LEAD: Caesars on Mississippi State @ Ole Miss | 2026-11-25 (spread)
+## 2026-11-25T13:18:36-05:00 — pack move, never credited: TCU @ Texas Tech | 2026-11-25 spread (DraftKings, bet365)
+## 2026-11-25T13:18:36-05:00 — no-follow: DraftKings Texas @ Texas A&M | 2026-11-25 spread (only 0 followed)
+## 2026-11-25T13:18:36-05:00 — no-follow: bet365 Southern Miss @ Old Dominion | 2026-11-25 spread (only 2 followed)
+## 2026-11-25T13:18:36-05:00 — 85 games, 1 leads credited
+LEAD: Caesars on TCU @ Texas Tech | 2026-11-25 (spread)
