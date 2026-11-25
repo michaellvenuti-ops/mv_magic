@@ -17,3 +17,5 @@ NEW IN-PLAY CBB: PLAY: Under 141.5 — Tulane at Davidson (PACE) | pace proj 136
 NEW IN-PLAY CBB: PLAY: Under 105.5 -110 — Saint Peter's at Columbia (PACE) | pace proj 76.0 (H1 38 x 2) vs live total 105.5 (gap -29.5, bar 5) | H1 38 | as of 14:43:02 ET
 ## 2026-11-25 14:50:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 151.5 -120 — LSU at Arizona St (TRAILING FAVE) | pregame favorite LSU trails at half (Arizona St leads); pace agrees (proj 162.0 vs live 151.5) — comeback-fave Over | H1 81 | as of 14:50:02 ET
+## 2026-11-25 14:50:06 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 149.5 — Manhattan at NJIT (TRAILING FAVE) | pregame favorite NJIT trails at half (Manhattan leads); pace is slow (proj 148.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 74 | as of 14:50:02 ET
