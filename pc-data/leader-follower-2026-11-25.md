@@ -13,3 +13,8 @@ LEAD: Caesars on Mississippi State @ Ole Miss | 2026-11-25 (spread)
 ## 2026-11-25T13:18:36-05:00 — no-follow: bet365 Southern Miss @ Old Dominion | 2026-11-25 spread (only 2 followed)
 ## 2026-11-25T13:18:36-05:00 — 85 games, 1 leads credited
 LEAD: Caesars on TCU @ Texas Tech | 2026-11-25 (spread)
+## 2026-11-25T15:18:36-05:00 — pack move, never credited: Seahawks @ 49ers | 2026-11-25 spread (Hard Rock, bet365)
+## 2026-11-25T15:18:36-05:00 — no-follow: DraftKings Purdue @ Indiana | 2026-11-25 spread (only 0 followed)
+## 2026-11-25T15:18:36-05:00 — no-follow: DraftKings Auburn @ Alabama | 2026-11-25 spread (only 1 followed)
+## 2026-11-25T15:18:36-05:00 — no-follow: Kalshi Baylor @ Houston | 2026-11-25 spread (only 1 followed)
+## 2026-11-25T15:18:36-05:00 — 85 games, 0 leads credited
