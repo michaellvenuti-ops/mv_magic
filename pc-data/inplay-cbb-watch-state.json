@@ -536,7 +536,8 @@
    "pregame_total": 144.5,
    "alerted_at": "2026-11-24T19:42:27",
    "alert_rule": "PACE",
-   "alert_detail": "PACE: Delaware St at Chattanooga | Full Total (at half) Under 144.5 -120 | pace proj 138.0 (H1 69 x 2) vs live total 144.5 (gap -6.5, bar 5) | H1 69 | as of 19:42:26 ET"
+   "alert_detail": "PACE: Delaware St at Chattanooga | Full Total (at half) Under 144.5 -120 | pace proj 138.0 (H1 69 x 2) vs live total 144.5 (gap -6.5, bar 5) | H1 69 | as of 19:42:26 ET",
+   "final": true
   },
   "401920923": {
    "matchup": "Mount St Marys at Morgan St",
@@ -792,12 +793,15 @@
   "401929359": {
    "matchup": "Oral Roberts at UT Arlington",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 5.5,
    "fav_team": "UT Arlington",
    "dog_team": "Oral Roberts",
-   "pregame_total": 150.5
+   "pregame_total": 150.5,
+   "alerted_at": "2026-11-24T20:50:02",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 161.5 \u2014 Oral Roberts at UT Arlington (TRAILING FAVE) | pregame favorite UT Arlington trails at half (Oral Roberts leads); pace agrees (proj 164.0 vs live 161.5) \u2014 comeback-fave Over | H1 82 | as of 20:50:02 ET"
   },
   "401925642": {
    "matchup": "Alabama A&M at North Alabama",
@@ -865,12 +869,15 @@
   "401911338": {
    "matchup": "Army at Air Force",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Air Force",
    "dog_team": "Army",
-   "pregame_total": 155.5
+   "pregame_total": 155.5,
+   "alerted_at": "2026-11-24T20:50:22",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 155.5 -110 \u2014 Army at Air Force (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 155.5 (gap -11.5, bar 5) | H1 72 | as of 20:50:02 ET"
   },
   "401911026": {
    "matchup": "C Michigan at Notre Dame",
