@@ -11761,3 +11761,61 @@
 [2026-11-25 09:03:39 ET] odds_recorder.py: OK in 45s — SUMMARY: recorded 186 events (92 with odds), db total 322132 snapshots / 1794 events, feeds ok 6 fail 0
 [2026-11-25 09:03:40 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAB Prairie View A&M Marshall Today 4:00 PM — Total — Over 153 Bet365 +105 ($88) / Under 156.5 DraftKings -160 ($112) — both win 154, 155, 156 — pu
 [2026-11-25 09:03:40 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-25 09:33:40 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 09:36:11 ET] dh_game_middles.py: OK in 151s — GAME MIDDLE: NCAAB Clemson Colorado St. Nov-26 12:30 AM / Nov-26 12:30 AM / table / Alt Total Over 150.5 / Alt Total Under 151 / table | Fanatics-NJ | Bet365 — 
+[2026-11-25 09:37:07 ET] dh_nhl_totals_middles.py: OK in 56s — NHL TOTAL MIDDLE: NHL NJ Devils CBJ Blue Jackets Today 7:00 PM / Today 7:00 PM / table / Total Under 6.5 / Total Over 6 / table | theScore | BetMGM — window 0.5
+[2026-11-25 09:39:45 ET] dh_key_number_middles.py: OK in 158s — key-number-middles: 682 basketball rows excluded (football-only rule).
+[2026-11-25 09:42:21 ET] dh_basketball_key_middles.py: OK in 156s — basketball-key-middles: no new basketball middles.
+[2026-11-25 09:42:26 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-25 09:43:28 ET] dh_prop_middles.py: OK in 62s — PROP MIDDLE CLEAN : NFL TEN Titans JAX Jaguars Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards J. Cameron Under 24.5 / Alt Recv Yards J. Cameron 20+ /
+[2026-11-25 09:45:05 ET] dh_sog_middles.py: OK in 97s — - 0 deliverables this run
+[2026-11-25 09:45:06 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -2.3c vs +EV.
+[2026-11-25 09:45:08 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 09:45:10 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 1 unverified, 248 total tallied.
+[2026-11-25 09:45:11 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 09:45:13 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 1164 total tallied.
+[2026-11-25 09:45:14 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 09:45:15 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 09:46:31 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 76s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-25.txt. No 
+[2026-11-25 09:46:32 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-25 09:46:33 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-25 09:46:41 ET] nhl_totals_scan.py: OK in 8s — nhl-totals: 14 games, no flags.
+[2026-11-25 09:46:45 ET] total_projectors_scan.py: OK in 4s — }
+[2026-11-25 09:46:49 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 9, 'NCAAB': 57}, new 0, moved 0, baselines 66.
+[2026-11-25 09:46:56 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-25.json (5 markets).
+[2026-11-25 10:00:00 ET] yahoo_brief.py: OK in 785s — SUMMARY: signed_in=True, rows=130, matched=40, lanes={'urgent': 1, 'miles_earn_and_burn': 2, 'doctor_of_credit': 2, 'gift_cards': 23, 'sportsbook': 12}, errors=
+[2026-11-25 10:00:18 ET] half_percent.py: OK in 18s — half-percent: PICK HPQ ref $31.07 target $31.23 stop $30.91
+[2026-11-25 10:00:19 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 10:30:19 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 10:31:14 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 186 events (92 with odds), db total 322318 snapshots / 1794 events, feeds ok 6 fail 0
+[2026-11-25 10:32:29 ET] dh_arbitrage.py: FAILED (exit 2) in 75s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-25 10:33:41 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 72s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-25 10:33:42 ET] wide_builds.py: OK in 1s — NEW BUILD: NHL NY Rangers BUF Sabres Today 7:00 PM — Total — Over 1.5 DraftKings -166 ($115) / Under 6 ProphetX +117 ($85) — both win 2, 3, 4, 5 — push at 6 — l
+[2026-11-25 10:33:42 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-25 11:03:43 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 11:04:16 ET] dh_low_holds.py: OK in 33s — LOW-HOLDS: NCAAB Clemson Colorado St. Nov-26 12:30 AM / Nov-26 12:30 AM / table / Alt Spread Clemson +3.5 / Alt Spread Colorado St. -3.5 / table | Fanatics-NJ |
+[2026-11-25 11:06:14 ET] dh_game_middles.py: OK in 117s — GAME MIDDLE: NCAAB Norfolk St. NC St. Today 7:00 PM / Today 7:00 PM / table / Total Under 152.5 / Alt Total Over 152 / table | BetRivers | Bet365 — window 225.0
+[2026-11-25 11:06:32 ET] dh_nhl_totals_middles.py: OK in 19s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-25 11:09:46 ET] dh_key_number_middles.py: FAILED (exit 2) in 194s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-25 11:12:58 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 192s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-25 11:13:32 ET] hung_number.py: FAILED (exit 2) in 35s — write state. Re-run with --dump and send the dump file.
+[2026-11-25 11:13:37 ET] rlm.py: OK in 4s
+[2026-11-25 11:13:41 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 1 new leads, no book at 3 yet).
+[2026-11-25 11:13:44 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-25 11:14:47 ET] dh_prop_middles.py: OK in 63s — PROP MIDDLE CLEAN : NFL NY Giants IND Colts Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards L. Treadwell Under 21.5 / Alt Recv Yards L. Treadwell 20+ 
+[2026-11-25 11:16:26 ET] dh_sog_middles.py: OK in 99s — - 0 deliverables this run
+[2026-11-25 11:16:29 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -1.3c vs +EV.
+[2026-11-25 11:16:30 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 11:16:31 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 248 total tallied.
+[2026-11-25 11:16:32 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 11:16:33 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 1164 total tallied.
+[2026-11-25 11:16:34 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 11:16:35 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 11:16:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-25 11:16:37 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-25 11:16:38 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 5-5-0, $+29.29 (inverse money only where an opposite price was recorded)
+[2026-11-25 11:16:39 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-25 11:16:40 ET] half_percent.py: OK in 1s — half-percent recheck: 11:16 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-25 11:16:42 ET] futures_pairs.py: OK in 2s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-25 11:17:45 ET] promo_watch.py: OK in 62s — promo-watch: 10 listed, 0 new, 0 converter attempt(s).
+[2026-11-25 11:17:45 ET] syncing to GitHub (regular 10-minute sync)
