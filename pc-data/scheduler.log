@@ -11974,3 +11974,21 @@
 [2026-11-25 17:30:31 ET] dh_kalshi_poly_arb.py: OK in 44s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-25 17:30:36 ET] wide_builds.py: OK in 4s — NEW BUILD: NCAAF Central Michigan Ball St. Nov-28 12:00 PM — Total — Over 51 Fanatics-NJ +100 ($98) / Under 51.5 Bally Bet -109 ($102) — win+push at 51 — push +
 [2026-11-25 17:30:37 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-25 18:00:37 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 18:00:59 ET] dh_low_holds.py: OK in 22s — LOW-HOLDS: NCAAF Navy Charlotte Nov-28 12:00 PM / Nov-28 12:00 PM / table / Alt Spread Charlotte +24.5 / Alt Spread Navy -24.5 / table | Bally Bet | FanDuel
+[2026-11-25 18:02:19 ET] dh_game_middles.py: OK in 80s — GAME MIDDLE: NFL NY Jets MIA Dolphins Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards M. Washington Under 37.5 / Receiving Yards M. Washington Over 35
+[2026-11-25 18:03:18 ET] dh_nhl_totals_middles.py: OK in 59s — NHL TOTAL MIDDLE: NHL STL Blues NY Islanders Today 7:00 PM / Today 7:00 PM / table / Total Under 6.5 / Total Over 6 / table | Fliff | BetMGM — window 0.5 push [
+[2026-11-25 18:06:22 ET] dh_key_number_middles.py: OK in 183s — key-number-middles: 147 basketball rows excluded (football-only rule).
+[2026-11-25 18:09:38 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 196s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-25 18:09:43 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-25 18:10:55 ET] dh_prop_middles.py: FAILED (exit 2) in 73s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-25 18:11:52 ET] dh_sog_middles.py: OK in 56s — DarkHorse check unavailable (signed out) — sog-middles skipped, no prices invented.
+[2026-11-25 18:11:54 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -2.3c vs +EV.
+[2026-11-25 18:11:55 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 18:11:56 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 248 total tallied.
+[2026-11-25 18:11:57 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 18:12:01 ET] ncaab_first_score.py: OK in 4s — ncaab-first-score: 8 new, 1 unverified, 1196 total tallied.
+[2026-11-25 18:12:03 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 18:12:03 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 18:12:06 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: 3 game(s) refreshed, 0 deliverable change(s).
+[2026-11-25 18:12:06 ET] syncing to GitHub (regular 10-minute sync)
