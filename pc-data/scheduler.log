@@ -11651,3 +11651,25 @@
 [2026-11-24 23:02:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
 [2026-11-24 23:02:55 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-24 23:02:55 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-24 23:32:55 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-24 23:34:41 ET] odds_recorder.py: OK in 76s — SUMMARY: recorded 183 events (78 with odds), db total 321202 snapshots / 1778 events, feeds ok 6 fail 0
+[2026-11-24 23:34:43 ET] wide_builds.py: OK in 2s — wide_builds: 10 qualifying builds, 0 NEW (banked wide-builds-2026-11-24.md)
+[2026-11-24 23:36:08 ET] dh_game_middles.py: OK in 85s — GAME MIDDLE: NFL DEN Broncos PIT Steelers Nov-27 3:00 PM / Nov-27 3:00 PM / table / Total Under 38 / Alt Total Over 37.5 / table | Bally Bet | Fanatics-NJ — win
+[2026-11-24 23:37:14 ET] dh_nhl_totals_middles.py: OK in 66s — NHL TOTAL MIDDLE: NHL PHI Flyers WSH Capitals Nov-25 7:00 PM / Nov-25 7:00 PM / table bar_chart / Total Over 5.5 YES / Total Under 6.5 / table | Kalshi | DraftK
+[2026-11-24 23:40:04 ET] dh_key_number_middles.py: OK in 169s — key-number-middles: 73 basketball rows excluded (football-only rule).
+[2026-11-24 23:42:48 ET] dh_basketball_key_middles.py: OK in 164s — basketball-key-middles: no new basketball middles.
+[2026-11-24 23:43:33 ET] hung_number.py: OK in 44s — HUNG NUMBER: Kent State vs Eastern Michigan — Caesars moneyline Kent State value Kent State (47.4 vs median 32.0)
+[2026-11-24 23:43:43 ET] rlm.py: OK in 10s
+[2026-11-24 23:43:48 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-24 23:43:52 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-24 23:45:04 ET] dh_prop_middles.py: OK in 73s — PROP MIDDLE CLEAN : NFL DEN Broncos PIT Steelers Nov-27 3:00 PM / Nov-27 3:00 PM / table / Rush Yards R. Dowdle Under 30.5 / Alt Rush Yards R. Dowdle 30+ / tabl
+[2026-11-24 23:46:53 ET] dh_sog_middles.py: OK in 109s — - 0 deliverables this run
+[2026-11-24 23:46:56 ET] dh_team_total_middles.py: OK in 3s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Kansas City 23.5/24.5 sits at -2.5c vs +
+[2026-11-24 23:46:57 ET] nfl_first_score.py: OK in 1s — nfl-first-score: outside game window, no NFL events today -- gated exit.
+[2026-11-24 23:46:58 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 247 total tallied.
+[2026-11-24 23:46:59 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-24 23:47:03 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 5 new, 2 unverified, 1158 total tallied.
+[2026-11-24 23:47:04 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-24 23:47:04 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-24; skipping.
+[2026-11-24 23:47:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-24 23:47:06 ET] syncing to GitHub (regular 10-minute sync)
