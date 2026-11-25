@@ -67,3 +67,5 @@ NEW IN-PLAY CBB: 2ND BITE: Hampton at Old Dominion | Full Total (at half) Over 1
 NEW IN-PLAY CBB: TRAILING FAVE: Bryant at Marist | Full Total (at half) Over 127.5 | pregame favorite Marist trails at half (Bryant leads); pace proj 120.0 vs live total 127.5 (gap -7.5) -- comeback-fave Over anyway | H1 60 | as of 19:48:02 ET
 ## 2026-11-24 19:48:27 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: TRAILING FAVE: Boston U at Harvard | Full Total (at half) Over 139.5 | pregame favorite Harvard trails at half (Boston U leads); pace proj 140.0 vs live total 139.5 (gap +0.5) -- comeback-fave Over anyway | H1 70 | as of 19:48:02 ET
+## 2026-11-24 19:50:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: TRAILING FAVE: Vanderbilt at Ohio State | Full Total (at half) Over 142.5 | pregame favorite Vanderbilt trails at half (Ohio State leads); pace proj 120.0 vs live total 142.5 (gap -22.5) -- comeback-fave Over anyway | H1 60 | as of 19:50:02 ET
