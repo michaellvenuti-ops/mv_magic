@@ -47,3 +47,5 @@ NEW IN-PLAY CBB: PLAY: Over 154.5 — Portland St at UC Riverside (TRAILING FAVE
 NEW IN-PLAY CBB: PLAY: Over 152.5 -110 — South Carolina at USC (TRAILING FAVE) | pregame favorite USC trails at half (South Carolina leads); pace is slow (proj 144.0 vs live 152.5) — the comeback-fave rule bets Over anyway | H1 72 | as of 18:03:10 ET
 ## 2026-11-25 18:22:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 163.5 -115 — BYU at Providence (2ND BITE) | 1H total 86 cleared implied 1H line 77.25 by +8.8; pace proj 172.0 vs live total 163.5 -- take the Over again at the half | H1 86 | as of 18:22:02 ET
+## 2026-11-25 18:48:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 127.5 — West Florida at N'Western St (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 127.5 (gap -19.5, bar 5) | H1 54 | as of 18:48:02 ET
