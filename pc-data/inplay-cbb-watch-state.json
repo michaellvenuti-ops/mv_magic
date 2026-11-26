@@ -370,7 +370,8 @@
    "pregame_total": 149.5,
    "alerted_at": "2026-11-26T12:44:05",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 155.5 \u2014 Army at UTSA (TRAILING FAVE) | pregame favorite UTSA trails at half (Army leads); pace is slow (proj 148.0 vs live 155.5) \u2014 the comeback-fave rule bets Over anyway | H1 74 | as of 12:44:04 ET"
+   "alert_detail": "PLAY: Over 155.5 \u2014 Army at UTSA (TRAILING FAVE) | pregame favorite UTSA trails at half (Army leads); pace is slow (proj 148.0 vs live 155.5) \u2014 the comeback-fave rule bets Over anyway | H1 74 | as of 12:44:04 ET",
+   "final": true
   },
   "401906807": {
    "matchup": "Oklahoma at Purdue",
@@ -388,12 +389,15 @@
   "401920528": {
    "matchup": "San Diego St at Maryland",
    "date": "2026-11-26",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 5.5,
    "fav_team": "Maryland",
    "dog_team": "San Diego St",
-   "pregame_total": 153.5
+   "pregame_total": 153.5,
+   "alerted_at": "2026-11-26T14:05:05",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 147.5 -115 \u2014 Maryland at San Diego St (TRAILING FAVE) | pregame favorite Maryland trails at half (San Diego St leads); pace is slow (proj 130.0 vs live 147.5) \u2014 the comeback-fave rule bets Over anyway | H1 65 | as of 14:05:04 ET"
   },
   "401929282": {
    "matchup": "Boston College at UCF",
@@ -409,8 +413,8 @@
    "matchup": "South Carolina at Arizona St",
    "date": "2026-11-26",
    "alerted": false,
-   "fav": "home",
-   "spread": 4.5,
+   "fav": "away",
+   "spread": 5.5,
    "fav_team": "Arizona St",
    "dog_team": "South Carolina",
    "pregame_total": 139.5
