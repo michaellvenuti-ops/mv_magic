@@ -19,3 +19,8 @@
 ## 2026-11-26T16:04:12-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1237 games through 2026-11-26
 - 2026-11-26: Maryland Terrapins @ San Diego State Aztecs — first: San Diego State Aztecs (2PT, 0:21 in); lead changes 2; final 71-75
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T17:03:44-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1240 games through 2026-11-26
+- 2026-11-26: Georgetown Hoyas @ Texas Longhorns — first: Texas Longhorns (3PT, 0:48 in); lead changes 8; final 83-92
+- 2026-11-26: Boston College Eagles @ UCF Knights — first: Boston College Eagles (FT, 1:29 in); lead changes 4; final 75-73
+- 2026-11-26: Arizona State Sun Devils @ South Carolina Gamecocks — first: South Carolina Gamecocks (2PT, 0:52 in); lead changes 6; final 73-80
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
