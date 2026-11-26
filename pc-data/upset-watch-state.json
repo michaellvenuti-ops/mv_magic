@@ -4667,7 +4667,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "UC Riverside",
-   "dog_team": "Portland St"
+   "dog_team": "Portland St",
+   "final": true
   },
   "401925688": {
    "sport": "NCAAB",
@@ -4688,7 +4689,8 @@
    "warn_fav_score": 2,
    "warn_dog_score": 4,
    "warn_ml": -20000,
-   "ml_read_at": "2026-11-25T17:04:03"
+   "ml_read_at": "2026-11-25T17:04:03",
+   "final": true
   },
   "401920237": {
    "sport": "NCAAB",
@@ -4708,7 +4710,8 @@
    "alert_fav_score": 63,
    "alert_dog_score": 64,
    "alert_ml": -105,
-   "ml_read_at": "2026-11-25T18:52:02"
+   "ml_read_at": "2026-11-25T18:52:02",
+   "final": true
   },
   "401921716": {
    "sport": "NCAAB",
@@ -4754,13 +4757,21 @@
    "sport": "NCAAB",
    "matchup": "Bethune at Richmond",
    "date": "2026-11-25",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 11.5,
    "fav_team": "Richmond",
    "dog_team": "Bethune",
-   "live_ml": -200,
-   "ml_bucket": "strong"
+   "live_ml": -195,
+   "ml_bucket": "bettor",
+   "alerted_at": "2026-11-25T19:08:03",
+   "board_read_at": "2026-11-25T19:08:02",
+   "alert_expires_at": "2026-11-25T19:11:03",
+   "alert_detail": "19:00 - 2nd Half",
+   "alert_fav_score": 34,
+   "alert_dog_score": 41,
+   "alert_ml": -195,
+   "ml_read_at": "2026-11-25T19:08:03"
   },
   "401909720": {
    "sport": "NCAAB",
@@ -4779,7 +4790,7 @@
    "matchup": "UConn at Duke",
    "date": "2026-11-26",
    "alerted": false,
-   "fav": "away",
+   "fav": "home",
    "spread": 1.5,
    "fav_team": "UConn",
    "dog_team": "Duke"
@@ -4838,7 +4849,9 @@
    "fav": "home",
    "spread": 16.5,
    "fav_team": "George Mason",
-   "dog_team": "Longwood"
+   "dog_team": "Longwood",
+   "live_ml": -950,
+   "ml_bucket": "strong"
   },
   "401918971": {
    "sport": "NCAAB",
@@ -4866,7 +4879,7 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 20.5,
+   "spread": 19.5,
    "fav_team": "Wisconsin",
    "dog_team": "Northeastern"
   },
@@ -4982,7 +4995,7 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 4.5,
+   "spread": 3.5,
    "fav_team": "Saint Louis",
    "dog_team": "Stanford"
   },
