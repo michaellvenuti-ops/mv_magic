@@ -33,3 +33,5 @@ NEW TODD PLAY: Total 160.5 -121 :: raw: "@everyone Ov160.5 -121 st Thomas" :: ms
 NEW TODD PLAY: Todd play (in-play CBB) -132 :: raw: "@everyone unc Wilmington -132 ..risk 1.1 for .83" :: msg 1575324391686799515 :: posted 2026-11-26T01:36:43.090Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 20:40:26 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 37.5 -115 :: raw: "@everyone ov37.5 attempts love -115 packers .risk .58 for .50" :: msg 1575325207907008583 :: posted 2026-11-26T01:39:57.692Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 21:28:12 ET — 1 NEW Todd play
+NEW TODD PLAY: Spread -3.5 -110 :: raw: "@everyone rare pregame play miss state -3.5 -110 cbb (edited) Wednesday, November 25, 2026 at 9:28 PM" :: msg 1575337256363884586 :: posted 2026-11-26T02:27:50.268Z :: Novig: https://app.novig.us/AppEntry
