@@ -41,3 +41,5 @@ NEW TODD PLAY: Todd play (in-play CBB) 270 :: raw: "@everyone mumpfield to catch
 NEW TODD PLAY: Total 150.5 -115 :: raw: "@everyone ov150.5 -115 Vcu" :: msg 1575353006231396463 :: posted 2026-11-26T03:30:25.329Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 22:42:27 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 38.5 -122 :: raw: "@everyone ov38.5 1h tt g canyon -122" :: msg 1575355948183191673 :: posted 2026-11-26T03:42:06.745Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 23:27:17 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 74.5 -130 :: raw: "@everyone ov74.5 -130 pacific 1h" :: msg 1575367224942792774 :: posted 2026-11-26T04:26:55.334Z :: Novig: https://app.novig.us/AppEntry
