@@ -27,3 +27,5 @@ LEAD: Caesars on TCU @ Texas Tech | 2026-11-25 (spread)
 ## 2026-11-25T19:25:28-05:00 — 85 games, 0 leads credited
 ## 2026-11-25T20:51:08-05:00 — pack move, never credited: Temple @ Memphis | 2026-11-25 spread (BetMGM, Caesars, DraftKings, bet365)
 ## 2026-11-25T20:51:08-05:00 — 85 games, 0 leads credited, 1 started games skipped
+## 2026-11-25T23:17:28-05:00 — 85 games, 1 leads credited, 1 started games skipped
+LEAD: DraftKings on Auburn @ Alabama | 2026-11-25 (spread)
