@@ -10,3 +10,4 @@ KEY 4: NFL NY Jets MIA Dolphins Nov-29 1:00 PM / Nov-29 1:00 PM / table bar_char
 ## 2026-11-25T18:06:19-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 995 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-25T20:47:07-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1978 + 0 rows parsed, qualifying only below — 0 NEW middles
 ## 2026-11-25T22:01:44-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1983 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-25T23:56:55-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1979 + 0 rows parsed, qualifying only below — 0 NEW middles
