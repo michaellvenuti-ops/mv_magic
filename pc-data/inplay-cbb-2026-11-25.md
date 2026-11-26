@@ -59,3 +59,5 @@ NEW IN-PLAY CBB: PLAY: Under 178.5 -115 — CSU Northridge at Weber St (PACE) | 
 NEW IN-PLAY CBB: PLAY: Under 171.5 -115 — Kennesaw St at Charleston (PACE) | pace proj 164.0 (H1 82 x 2) vs live total 171.5 (gap -7.5, bar 5) | H1 82 | as of 19:03:02 ET
 ## 2026-11-25 19:43:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 144.5 -115 — Northeastern at Wisconsin (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 144.5 (gap -20.5, bar 5) | H1 62 | as of 19:43:01 ET
+## 2026-11-25 19:51:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 138.5 — Bellarmine at N Kentucky (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 138.5 (gap -14.5, bar 5) | H1 62 | as of 19:51:01 ET
