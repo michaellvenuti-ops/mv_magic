@@ -14,3 +14,4 @@ NEW PAIR: NBA MIA Heat NY Knicks Nov-27 7:15 PM / Nov-27 7:15 PM / table / Assis
 (end of new/changed pairs — deliverable list below)
 NBA MIA Heat NY Knicks Nov-27 7:15 PM / Nov-27 7:15 PM / table / Assists J. Hart Under 5.5 / Alt Assists J. Hart 6+ / table | FanDuel | Bally Bet :: {'leg1': {'side': '-146 $1,000 FanDuel', 'price': '-146', 'book': 'FanDuel', 'stake': 1000.0}, 'leg2': {'side': '+175 $613 Bally Bet', 'price': '+175', 'book': 'Bally Bet', 'stake': 613.0}, 'arb_risk': False, 'first_reported': '2026-11-26T13:24:28-05:00', 'last_seen': '2026-11-26', 'profit_pct': 4.46}
 ## 2026-11-26T14:38:04-05:00 — arbitrage: 96 complete pairs read, 0 NEW/CHANGED delivered
+## 2026-11-26T15:52:29-05:00 — arbitrage: 93 complete pairs read, 0 NEW/CHANGED delivered
