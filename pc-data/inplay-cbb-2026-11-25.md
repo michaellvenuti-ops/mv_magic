@@ -77,3 +77,5 @@ NEW IN-PLAY CBB: PLAY: Under 150.5 -120 — Bakersfield at Pepperdine (PACE) | p
 NEW IN-PLAY CBB: PLAY: Under 117.5 -115 — E Michigan at UTEP (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 117.5 (gap -9.5, bar 5) | H1 54 | as of 21:40:02 ET
 ## 2026-11-25 21:46:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 161.5 — Miss Valley St at New Mexico (2ND BITE) | 1H total 84 cleared implied 1H line 76.25 by +7.8; pace proj 168.0 vs live total 161.5 -- take the Over again at the half | H1 84 | as of 21:46:02 ET
+## 2026-11-25 22:24:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 149.5 — Wake Forest at Mississippi St (TRAILING FAVE) | pregame favorite Mississippi St trails at half (Wake Forest leads); pace is slow (proj 140.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 70 | as of 22:24:02 ET
