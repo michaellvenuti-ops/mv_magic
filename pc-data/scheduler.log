@@ -12257,3 +12257,9 @@
 [2026-11-26 11:32:51 ET] dh_derivative_ev.py: FAILED (exit 2) in 74s — derivative-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-derivative-ev-2026-11-26.txt. No prices i
 [2026-11-26 11:33:12 ET] qb_props.py: FAILED (exit 2) in 20s — 0 starters resolved — refusing to write state. Re-run with --dump and send the dump file.
 [2026-11-26 11:33:12 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 12:03:12 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 12:04:07 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (130 with odds), db total 326200 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 12:04:39 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NFL WAS Commanders ARI Cardinals Nov-29 4:25 PM / Nov-29 4:25 PM / table / Alt Recv Yards Z. Jones 10+ / Receiving Yards Z. Jones Under 12.5 / table 
+[2026-11-26 12:05:02 ET] dh_kalshi_poly_arb.py: OK in 23s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 12:05:05 ET] wide_builds.py: OK in 2s — NEW BUILD: NHL NY Rangers CHI Blackhawks Nov-27 5:30 PM — Total — Over 6 BetMGM -120 ($99) / Under 6.5 Bet365 -125 ($101) — win+push at 6 — push +$80.80, miss -
+[2026-11-26 12:05:05 ET] syncing to GitHub (wide-builds banked new builds)
