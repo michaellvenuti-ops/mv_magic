@@ -16,3 +16,4 @@ NEW FLAG: FBS TCU @ Texas Tech | 2026-11-25 — FanDuel still dealing spread -14
 ## 2026-11-25T16:54:35-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-25T18:09:43-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-25T19:25:32-05:00 — 69 games, 0 steam events, 0 NEW flags
+## 2026-11-25T20:08:57-05:00 — 69 games, 0 steam events, 0 NEW flags
