@@ -12062,3 +12062,9 @@
 [2026-11-25 20:53:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 20:53:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
 [2026-11-25 20:53:55 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 21:23:55 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 21:24:48 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 187 events (103 with odds), db total 324562 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 21:25:11 ET] dh_arbitrage.py: OK in 22s — ARBITRAGE: NFL TEN Titans JAX Jaguars Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receptions G. Helm Under 3.5 / Alt Receptions G. Helm 4+ / table | BetParx | Bet
+[2026-11-25 21:25:28 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 21:25:30 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA SA Spurs POR Trail Blazers Today 10:15 PM — Total — Over 229 ProphetX +117 ($91) / Under 229.5 Fanatics-NJ -125 ($109) — win+push at 229 — push +
+[2026-11-25 21:25:31 ET] syncing to GitHub (wide-builds banked new builds)
