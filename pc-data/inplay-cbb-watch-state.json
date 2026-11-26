@@ -472,12 +472,15 @@
   "401925757": {
    "matchup": "Arkansas at Michigan St",
    "date": "2026-11-26",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Michigan St",
    "dog_team": "Arkansas",
-   "pregame_total": 147.5
+   "pregame_total": 147.5,
+   "alerted_at": "2026-11-26T17:34:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 138.5 -120 \u2014 Arkansas at Michigan St (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 138.5 (gap -22.5, bar 5) | H1 58 | as of 17:34:02 ET"
   },
   "401921673": {
    "matchup": "Utah State at USC",
@@ -493,7 +496,7 @@
    "matchup": "Saint Mary's at UCLA",
    "date": "2026-11-26",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 7.5,
    "fav_team": "UCLA",
    "dog_team": "Saint Mary's",
