@@ -12092,3 +12092,23 @@
 [2026-11-25 22:38:33 ET] dh_kalshi_poly_arb.py: OK in 15s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-25 22:38:34 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Idaho St. North Dakota Nov-28 1:00 PM — Total — Over 53 Fanatics-NJ -115 ($105) / Under 53.5 ProphetX +108 ($95) — win+push at 53 — push +$102.
 [2026-11-25 22:38:34 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-25 23:08:34 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 23:10:04 ET] dh_game_middles.py: FAILED (exit 2) in 89s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-25 23:10:20 ET] dh_nhl_totals_middles.py: OK in 16s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-25 23:13:32 ET] dh_key_number_middles.py: FAILED (exit 2) in 193s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-25 23:16:45 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 192s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-25 23:17:19 ET] hung_number.py: FAILED (exit 2) in 34s — write state. Re-run with --dump and send the dump file.
+[2026-11-25 23:17:24 ET] rlm.py: OK in 5s
+[2026-11-25 23:17:29 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 1 new leads, no book at 3 yet).
+[2026-11-25 23:17:31 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-25 23:18:50 ET] dh_prop_middles.py: OK in 79s — PROP MIDDLE CLEAN : NFL ATL Falcons MIN Vikings Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards J. Jennings Under 30.5 / Alt Recv Yards J. Jennings 30
+[2026-11-25 23:20:31 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-25 23:20:34 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 32 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 22.5/24.5 sits at -2.0c vs +EV.
+[2026-11-25 23:20:35 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 23:20:37 ET] nba_first_score.py: OK in 2s — nba-first-score: 4 new, 1 unverified, 255 total tallied.
+[2026-11-25 23:20:39 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 3 new, 0 unverified, 388 total tallied.
+[2026-11-25 23:20:42 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 5 new, 1 unverified, 1226 total tallied.
+[2026-11-25 23:20:43 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 23:20:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 23:20:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-25 23:20:45 ET] syncing to GitHub (regular 10-minute sync)
