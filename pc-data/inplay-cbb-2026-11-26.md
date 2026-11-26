@@ -7,3 +7,5 @@ NEW IN-PLAY CBB: PLAY: Over 155.5 — Army at UTSA (TRAILING FAVE) | pregame fav
 NEW IN-PLAY CBB: PLAY: Under 140.5 -110 — Oklahoma at Purdue (PACE) | pace proj 134.0 (H1 67 x 2) vs live total 140.5 (gap -6.5, bar 5) | H1 67 | as of 12:53:01 ET
 ## 2026-11-26 14:05:05 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 147.5 -115 — Maryland at San Diego St (TRAILING FAVE) | pregame favorite Maryland trails at half (San Diego St leads); pace is slow (proj 130.0 vs live 147.5) — the comeback-fave rule bets Over anyway | H1 65 | as of 14:05:04 ET
+## 2026-11-26 14:42:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 128.5 -110 — Boston College at UCF (PACE) | pace proj 102.0 (H1 51 x 2) vs live total 128.5 (gap -26.5, bar 5) | H1 51 | as of 14:42:01 ET
