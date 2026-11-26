@@ -426,7 +426,8 @@
    "pregame_total": 139.5,
    "alerted_at": "2026-11-26T14:58:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 143.5 -120 \u2014 Arizona St at South Carolina (TRAILING FAVE) | pregame favorite Arizona St trails at half (South Carolina leads); pace is slow (proj 140.0 vs live 143.5) \u2014 the comeback-fave rule bets Over anyway | H1 70 | as of 14:58:01 ET"
+   "alert_detail": "PLAY: Over 143.5 -120 \u2014 Arizona St at South Carolina (TRAILING FAVE) | pregame favorite Arizona St trails at half (South Carolina leads); pace is slow (proj 140.0 vs live 143.5) \u2014 the comeback-fave rule bets Over anyway | H1 70 | as of 14:58:01 ET",
+   "final": true
   },
   "401906869": {
    "matchup": "Georgetown at Texas",
@@ -454,12 +455,15 @@
   "401920537": {
    "matchup": "Miami at Michigan",
    "date": "2026-11-26",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 1.5,
    "fav_team": "Miami",
    "dog_team": "Michigan",
-   "pregame_total": 161.5
+   "pregame_total": 161.5,
+   "alerted_at": "2026-11-26T16:29:02",
+   "alert_rule": "2ND BITE",
+   "alert_detail": "PLAY: Over 188.5 -110 \u2014 Miami at Michigan (2ND BITE) | 1H total 97 cleared implied 1H line 80.75 by +16.2; pace proj 194.0 vs live total 188.5 -- take the Over again at the half | H1 97 | as of 16:29:01 ET"
   },
   "401925757": {
    "matchup": "Arkansas at Michigan St",
@@ -469,13 +473,13 @@
    "spread": 5.5,
    "fav_team": "Michigan St",
    "dog_team": "Arkansas",
-   "pregame_total": 148.5
+   "pregame_total": 147.5
   },
   "401921673": {
    "matchup": "Utah State at USC",
    "date": "2026-11-26",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 1.5,
    "fav_team": "USC",
    "dog_team": "Utah State",
