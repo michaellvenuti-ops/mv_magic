@@ -8,3 +8,4 @@ NEW MIDDLE: KEY 4: NFL NY Jets MIA Dolphins Nov-29 1:00 PM / Nov-29 1:00 PM / ta
 (end of new middles — full qualifying list below)
 KEY 4: NFL NY Jets MIA Dolphins Nov-29 1:00 PM / Nov-29 1:00 PM / table bar_chart / Alt Spread MIA Dolphins +5 / Alt Spread NY Jets -4 / table | ProphetX | Bally Bet margins [4, 5] :: -106 [51.45%] $1,000 ProphetX, ProphetX, -106 / +100 $962 Bally Bet, Bally Bet, +100
 ## 2026-11-25T18:06:19-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 995 + 0 rows parsed, qualifying only below — 0 NEW middles
+## 2026-11-25T20:47:07-05:00 — key-number-middles (data-based key set 3/7/6/4/10/14/17; NFL/NCAAF only): 1978 + 0 rows parsed, qualifying only below — 0 NEW middles
