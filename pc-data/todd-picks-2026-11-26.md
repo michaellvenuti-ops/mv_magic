@@ -37,3 +37,5 @@ NEW TODD PLAY: 1st Half Spread -17.5 -126 :: raw: "@everyone cowboys -17.5 -126 
 NEW TODD PLAY: Total 138 -130 :: raw: "@everyone ov138 -130 Tenn game cbb" :: msg 1575644792736587858 :: posted 2026-11-26T22:49:52.653Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 18:45:21 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 75.5 -115 :: raw: "@everyone Ov75.5 -115 1h crei" :: msg 1575658708208193610 :: posted 2026-11-26T23:45:10.360Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 18:53:49 ET — 1 NEW Todd play
+NEW TODD PLAY: Moneyline +8.5 -136 :: raw: "@everyone parlay Cowboys ml 3q , Chiefs +8.5 , -136..risk 1 for .74" :: msg 1575660785911201935 :: posted 2026-11-26T23:53:25.723Z :: Novig: https://app.novig.us/AppEntry
