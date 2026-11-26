@@ -25,3 +25,5 @@ NEW TODD PLAY: Total 145.5 100 :: raw: "@everyone un145.5 even San Diego st cbb"
 NEW TODD PLAY: Total 143.5 -112 :: raw: "@everyone ov143.5 s Carolina cbb -112" :: msg 1575606278527385670 :: posted 2026-11-26T20:16:50.150Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 15:40:39 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 131.5 100 :: raw: "@everyone ov131.5 even bc cbb" :: msg 1575612165497430158 :: posted 2026-11-26T20:40:13.713Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 16:02:13 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 84.5 -108 :: raw: "@everyone ov84.5 -108 Mich cbb" :: msg 1575617655002628167 :: posted 2026-11-26T21:02:02.513Z :: Novig: https://app.novig.us/AppEntry
