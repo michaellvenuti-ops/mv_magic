@@ -6067,19 +6067,51 @@
   },
   {
    "date": "2026-11-25",
-   "away": "Nashville Predators",
-   "home": "Dallas Stars",
-   "first": "Nashville Predators",
+   "away": "Chicago Blackhawks",
+   "home": "Seattle Kraken",
+   "first": "Chicago Blackhawks",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Mavrik Bourque",
-   "first_elapsed_sec": 58,
-   "winner": "Nashville Predators",
+   "first_scorer": "Cole Smith",
+   "first_elapsed_sec": 3242,
+   "winner": "Chicago Blackhawks",
    "shootout": false,
    "seq": "1-0>2-0>2-1>3-1",
    "lead_changes": 0,
    "ties": 0,
    "final": "3-1"
+  },
+  {
+   "date": "2026-11-25",
+   "away": "Montreal Canadiens",
+   "home": "Colorado Avalanche",
+   "first": "Colorado Avalanche",
+   "first_side": "home",
+   "first_strength": "EV",
+   "first_scorer": "Logan O'Connor",
+   "first_elapsed_sec": 617,
+   "winner": "Colorado Avalanche",
+   "shootout": false,
+   "seq": "0-1>0-2>0-3>0-4>0-5>0-6",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "0-6"
+  },
+  {
+   "away": "Nashville Predators",
+   "date": "2026-11-25",
+   "final": "3-1",
+   "first": "Nashville Predators",
+   "first_elapsed_sec": 58,
+   "first_scorer": "Mavrik Bourque",
+   "first_side": "away",
+   "first_strength": "EV",
+   "home": "Dallas Stars",
+   "lead_changes": 0,
+   "seq": "1-0>2-0>2-1>3-1",
+   "shootout": false,
+   "ties": 0,
+   "winner": "Nashville Predators"
   },
   {
    "away": "New Jersey Devils",
@@ -6146,6 +6178,22 @@
    "winner": "Washington Capitals"
   },
   {
+   "date": "2026-11-25",
+   "away": "San Jose Sharks",
+   "home": "Anaheim Ducks",
+   "first": "Anaheim Ducks",
+   "first_side": "home",
+   "first_strength": "EV",
+   "first_scorer": "Judd Caulfield",
+   "first_elapsed_sec": 383,
+   "winner": "Anaheim Ducks",
+   "shootout": false,
+   "seq": "0-1>0-2>0-3>0-4>0-5>0-6>0-7",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "0-7"
+  },
+  {
    "away": "St. Louis Blues",
    "date": "2026-11-25",
    "final": "2-3",
@@ -6162,36 +6210,36 @@
    "winner": "New York Islanders"
   },
   {
-   "date": "2026-11-25",
    "away": "Utah Mammoth",
-   "home": "Minnesota Wild",
+   "date": "2026-11-25",
+   "final": "4-3",
    "first": "Utah Mammoth",
+   "first_elapsed_sec": 823,
+   "first_scorer": "Lawson Crouse",
    "first_side": "away",
    "first_strength": "EV",
-   "first_scorer": "Lawson Crouse",
-   "first_elapsed_sec": 823,
-   "winner": "Utah Mammoth",
-   "shootout": false,
-   "seq": "1-0>2-0>2-1>3-1>3-2>4-2>4-3",
+   "home": "Minnesota Wild",
    "lead_changes": 0,
+   "seq": "1-0>2-0>2-1>3-1>3-2>4-2>4-3",
+   "shootout": false,
    "ties": 0,
-   "final": "4-3"
+   "winner": "Utah Mammoth"
   },
   {
-   "date": "2026-11-25",
    "away": "Vancouver Canucks",
-   "home": "Detroit Red Wings",
+   "date": "2026-11-25",
+   "final": "1-5",
    "first": "Detroit Red Wings",
+   "first_elapsed_sec": 1124,
+   "first_scorer": "Emmitt Finnie",
    "first_side": "home",
    "first_strength": "EV",
-   "first_scorer": "Emmitt Finnie",
-   "first_elapsed_sec": 1124,
-   "winner": "Detroit Red Wings",
-   "shootout": false,
-   "seq": "0-1>0-2>0-3>0-4>1-4>1-5",
+   "home": "Detroit Red Wings",
    "lead_changes": 0,
+   "seq": "0-1>0-2>0-3>0-4>1-4>1-5",
+   "shootout": false,
    "ties": 0,
-   "final": "1-5"
+   "winner": "Detroit Red Wings"
   },
   {
    "away": "Winnipeg Jets",
@@ -6244,20 +6292,20 @@
    "won_by_one_when_first_pct": 40.0
   },
   "Chicago Blackhawks": {
-   "gp": 23,
-   "scored_first": 10,
+   "gp": 24,
+   "scored_first": 11,
    "strengths": {
-    "EV": 8,
+    "EV": 9,
     "PP": 2,
     "SH": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 5,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 43.5,
-   "win_pct_when_first": 30.0,
+   "scored_first_pct": 45.8,
+   "win_pct_when_first": 36.4,
    "win_pct_when_not_first": 38.5,
-   "won_by_one_when_first_pct": 10.0
+   "won_by_one_when_first_pct": 9.1
   },
   "Utah Mammoth": {
    "gp": 26,
@@ -6324,7 +6372,7 @@
    "won_by_one_when_first_pct": 18.2
   },
   "San Jose Sharks": {
-   "gp": 26,
+   "gp": 27,
    "scored_first": 7,
    "strengths": {
     "EV": 7,
@@ -6334,9 +6382,9 @@
    "won_when_first": 4,
    "won_when_not_first": 7,
    "won_by_one_when_first": 3,
-   "scored_first_pct": 26.9,
+   "scored_first_pct": 25.9,
    "win_pct_when_first": 57.1,
-   "win_pct_when_not_first": 36.8,
+   "win_pct_when_not_first": 35.0,
    "won_by_one_when_first_pct": 42.9
   },
   "Minnesota Wild": {
@@ -6404,7 +6452,7 @@
    "won_by_one_when_first_pct": 35.7
   },
   "Seattle Kraken": {
-   "gp": 21,
+   "gp": 22,
    "scored_first": 11,
    "strengths": {
     "EV": 7,
@@ -6414,9 +6462,9 @@
    "won_when_first": 9,
    "won_when_not_first": 2,
    "won_by_one_when_first": 4,
-   "scored_first_pct": 52.4,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 81.8,
-   "win_pct_when_not_first": 20.0,
+   "win_pct_when_not_first": 18.2,
    "won_by_one_when_first_pct": 36.4
   },
   "Calgary Flames": {
@@ -6468,20 +6516,20 @@
    "won_by_one_when_first_pct": 16.7
   },
   "Anaheim Ducks": {
-   "gp": 25,
-   "scored_first": 14,
+   "gp": 26,
+   "scored_first": 15,
    "strengths": {
-    "EV": 7,
+    "EV": 8,
     "PP": 7,
     "SH": 0
    },
-   "won_when_first": 8,
+   "won_when_first": 9,
    "won_when_not_first": 3,
    "won_by_one_when_first": 4,
-   "scored_first_pct": 56.0,
-   "win_pct_when_first": 57.1,
+   "scored_first_pct": 57.7,
+   "win_pct_when_first": 60.0,
    "win_pct_when_not_first": 27.3,
-   "won_by_one_when_first_pct": 28.6
+   "won_by_one_when_first_pct": 26.7
   },
   "Vegas Golden Knights": {
    "gp": 25,
@@ -6628,7 +6676,7 @@
    "won_by_one_when_first_pct": 18.2
   },
   "Montreal Canadiens": {
-   "gp": 24,
+   "gp": 25,
    "scored_first": 10,
    "strengths": {
     "EV": 10,
@@ -6638,9 +6686,9 @@
    "won_when_first": 5,
    "won_when_not_first": 8,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 41.7,
+   "scored_first_pct": 40.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 57.1,
+   "win_pct_when_not_first": 53.3,
    "won_by_one_when_first_pct": 10.0
   },
   "Pittsburgh Penguins": {
@@ -6708,39 +6756,39 @@
    "won_by_one_when_first_pct": 10.0
   },
   "Colorado Avalanche": {
-   "gp": 22,
-   "scored_first": 10,
+   "gp": 23,
+   "scored_first": 11,
    "strengths": {
-    "EV": 9,
+    "EV": 10,
     "PP": 1,
     "SH": 0
    },
-   "won_when_first": 8,
+   "won_when_first": 9,
    "won_when_not_first": 4,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 45.5,
-   "win_pct_when_first": 80.0,
+   "scored_first_pct": 47.8,
+   "win_pct_when_first": 81.8,
    "win_pct_when_not_first": 33.3,
-   "won_by_one_when_first_pct": 10.0
+   "won_by_one_when_first_pct": 9.1
   }
  },
  "league": {
-  "games": 388,
-  "games_with_goal": 386,
+  "games": 391,
+  "games_with_goal": 389,
   "shootouts": 32,
-  "home_scored_first": 185,
-  "first_team_won": 251,
+  "home_scored_first": 187,
+  "first_team_won": 254,
   "first_team_won_by_one": 77,
-  "first_team_won_by_one_pct": 19.9,
+  "first_team_won_by_one_pct": 19.8,
   "strengths": {
-   "EV": 297,
+   "EV": 300,
    "PP": 83,
    "SH": 6
   },
   "avg_lead_changes": 0.48,
   "median_first_goal_sec": 874,
-  "home_scored_first_pct": 47.9,
-  "first_team_win_pct": 65.0
+  "home_scored_first_pct": 48.1,
+  "first_team_win_pct": 65.3
  },
  "lead_change_team_avgs": {
   "Buffalo Sabres": {
@@ -6754,9 +6802,9 @@
    "avg_per_game": 0.26
   },
   "Chicago Blackhawks": {
-   "games": 23,
+   "games": 24,
    "lead_changes": 11,
-   "avg_per_game": 0.48
+   "avg_per_game": 0.46
   },
   "Utah Mammoth": {
    "games": 26,
@@ -6779,9 +6827,9 @@
    "avg_per_game": 0.58
   },
   "San Jose Sharks": {
-   "games": 26,
+   "games": 27,
    "lead_changes": 16,
-   "avg_per_game": 0.62
+   "avg_per_game": 0.59
   },
   "Minnesota Wild": {
    "games": 27,
@@ -6804,9 +6852,9 @@
    "avg_per_game": 0.6
   },
   "Seattle Kraken": {
-   "games": 21,
+   "games": 22,
    "lead_changes": 6,
-   "avg_per_game": 0.29
+   "avg_per_game": 0.27
   },
   "Calgary Flames": {
    "games": 26,
@@ -6824,9 +6872,9 @@
    "avg_per_game": 0.3
   },
   "Anaheim Ducks": {
-   "games": 25,
+   "games": 26,
    "lead_changes": 13,
-   "avg_per_game": 0.52
+   "avg_per_game": 0.5
   },
   "Vegas Golden Knights": {
    "games": 25,
@@ -6874,9 +6922,9 @@
    "avg_per_game": 0.38
   },
   "Montreal Canadiens": {
-   "games": 24,
+   "games": 25,
    "lead_changes": 16,
-   "avg_per_game": 0.67
+   "avg_per_game": 0.64
   },
   "Pittsburgh Penguins": {
    "games": 23,
@@ -6899,9 +6947,9 @@
    "avg_per_game": 0.67
   },
   "Colorado Avalanche": {
-   "games": 22,
+   "games": 23,
    "lead_changes": 10,
-   "avg_per_game": 0.45
+   "avg_per_game": 0.43
   }
  }
 }
