@@ -9,3 +9,9 @@
 ## 2026-11-26T12:45:23-05:00 — no-follow: Kalshi NC State @ North Carolina | 2026-11-26 spread (only 0 followed)
 ## 2026-11-26T12:45:23-05:00 — no-follow: FanDuel San Diego State @ Washington State | 2026-11-26 spread (only 0 followed)
 ## 2026-11-26T12:45:24-05:00 — 85 games, 0 leads credited, 1 started games skipped
+## 2026-11-26T15:18:23-05:00 — pack move, never credited: Patriots @ Chargers | 2026-11-26 spread (BetMGM, Caesars, DraftKings, bet365)
+## 2026-11-26T15:18:23-05:00 — pack move, never credited: Nebraska @ Iowa | 2026-11-26 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-26T15:18:23-05:00 — no-follow: DraftKings Tulsa @ UTSA | 2026-11-26 spread (only 2 followed)
+## 2026-11-26T15:18:23-05:00 — pack move, never credited: Tulsa @ UTSA | 2026-11-26 spread (Caesars, Fanatics)
+## 2026-11-26T15:18:23-05:00 — pack move, never credited: Michigan State @ Rutgers | 2026-11-26 spread (FanDuel, Kalshi)
+## 2026-11-26T15:18:23-05:00 — 85 games, 0 leads credited, 2 started games skipped
