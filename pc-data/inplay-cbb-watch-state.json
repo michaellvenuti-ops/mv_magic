@@ -403,12 +403,15 @@
   "401929282": {
    "matchup": "Boston College at UCF",
    "date": "2026-11-26",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "UCF",
    "dog_team": "Boston College",
-   "pregame_total": 147.5
+   "pregame_total": 147.5,
+   "alerted_at": "2026-11-26T14:42:02",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 128.5 -110 \u2014 Boston College at UCF (PACE) | pace proj 102.0 (H1 51 x 2) vs live total 128.5 (gap -26.5, bar 5) | H1 51 | as of 14:42:01 ET"
   },
   "401921674": {
    "matchup": "South Carolina at Arizona St",
@@ -495,7 +498,7 @@
    "date": "2026-11-27",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 7.5,
    "fav_team": "LSU",
    "dog_team": "SMU",
    "pregame_total": 155.5
@@ -504,10 +507,10 @@
    "matchup": "DePaul at Pitt",
    "date": "2026-11-27",
    "alerted": false,
-   "fav": "home",
+   "fav": "away",
    "spread": 1.5,
-   "fav_team": "Pitt",
-   "dog_team": "DePaul",
+   "fav_team": "DePaul",
+   "dog_team": "Pitt",
    "pregame_total": 137.5
   },
   "401911523": {
