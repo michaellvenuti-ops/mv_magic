@@ -61,3 +61,5 @@ NEW IN-PLAY CBB: PLAY: Under 171.5 -115 — Kennesaw St at Charleston (PACE) | p
 NEW IN-PLAY CBB: PLAY: Under 144.5 -115 — Northeastern at Wisconsin (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 144.5 (gap -20.5, bar 5) | H1 62 | as of 19:43:01 ET
 ## 2026-11-25 19:51:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 138.5 — Bellarmine at N Kentucky (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 138.5 (gap -14.5, bar 5) | H1 62 | as of 19:51:01 ET
+## 2026-11-25 19:52:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 162.5 — St Thomas at UNC Wilmington (TRAILING FAVE) | pregame favorite UNC Wilmington trails at half (St Thomas leads); pace is slow (proj 156.0 vs live 162.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 19:52:02 ET
