@@ -12138,3 +12138,23 @@
 [2026-11-26 00:33:33 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 187 events (92 with odds), db total 325123 snapshots / 1886 events, feeds ok 6 fail 0
 [2026-11-26 00:33:34 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Southern Miss Old Dominion Nov-28 1:00 PM — Total — Over 53 ProphetX +130 ($85) / Under 53.5 theScore -140 ($115) — win+push at 53 — push +$82.
 [2026-11-26 00:33:34 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-26 01:03:34 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 01:04:56 ET] dh_game_middles.py: OK in 82s — GAME MIDDLE: NCAAB 25 Louisville 13 St. John's Today 9:00 PM / Today 9:00 PM / table / Total Over 157.5 / Alt Total Under 158.5 / table | Bally Bet | Bet365 — w
+[2026-11-26 01:05:53 ET] dh_nhl_totals_middles.py: OK in 58s — DarkHorse check unavailable (signed out) — nhl-totals-middles skipped, no prices invented.
+[2026-11-26 01:06:46 ET] dh_key_number_middles.py: OK in 53s — DarkHorse check unavailable (signed out) — key-number-middles skipped, no prices invented.
+[2026-11-26 01:09:58 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 192s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-26 01:10:38 ET] hung_number.py: FAILED (exit 2) in 40s — write state. Re-run with --dump and send the dump file.
+[2026-11-26 01:10:43 ET] rlm.py: OK in 5s
+[2026-11-26 01:10:47 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-26 01:10:50 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-26 01:12:03 ET] dh_prop_middles.py: FAILED (exit 2) in 73s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-26 01:13:20 ET] dh_sog_middles.py: FAILED (exit 2) in 77s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-26 01:13:21 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 30 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle New York J 22.5/24.5 sits at -2.0c vs +E
+[2026-11-26 01:13:22 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 163 total tallied.
+[2026-11-26 01:13:23 ET] nba_first_score.py: OK in 2s — nba-first-score: 2 new, 0 unverified, 257 total tallied.
+[2026-11-26 01:13:25 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 3 new, 0 unverified, 391 total tallied.
+[2026-11-26 01:13:27 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 3 new, 1 unverified, 1230 total tallied.
+[2026-11-26 01:13:28 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 01:13:29 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 01:13:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-26 01:13:30 ET] syncing to GitHub (regular 10-minute sync)
