@@ -29,3 +29,5 @@ NEW TODD PLAY: Total 131.5 100 :: raw: "@everyone ov131.5 even bc cbb" :: msg 15
 NEW TODD PLAY: Total 84.5 -108 :: raw: "@everyone ov84.5 -108 Mich cbb" :: msg 1575617655002628167 :: posted 2026-11-26T21:02:02.513Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 16:18:36 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 72.5 -146 :: raw: "@everyone ov72.5 -146 bears game ..risk .50 for .34" :: msg 1575621725817667725 :: posted 2026-11-26T21:18:13.071Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 17:04:30 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 60.5 -120 :: raw: "@everyone ov60.5 -120 1h ark cbb" :: msg 1575633347810562059 :: posted 2026-11-26T22:04:23.970Z :: Novig: https://app.novig.us/AppEntry
