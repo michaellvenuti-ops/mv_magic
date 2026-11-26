@@ -33,3 +33,5 @@ NEW TODD PLAY: Total 72.5 -146 :: raw: "@everyone ov72.5 -146 bears game ..risk 
 NEW TODD PLAY: 1st Half Total 60.5 -120 :: raw: "@everyone ov60.5 -120 1h ark cbb" :: msg 1575633347810562059 :: posted 2026-11-26T22:04:23.970Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 17:36:55 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Spread -17.5 -126 :: raw: "@everyone cowboys -17.5 -126 1h ..risk 1 for .79" :: msg 1575641463960768555 :: posted 2026-11-26T22:36:39.011Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 17:50:05 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 138 -130 :: raw: "@everyone ov138 -130 Tenn game cbb" :: msg 1575644792736587858 :: posted 2026-11-26T22:49:52.653Z :: Novig: https://app.novig.us/AppEntry
