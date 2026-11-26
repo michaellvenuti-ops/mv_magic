@@ -9,3 +9,5 @@ NEW TODD PLAY: Spread +8.5 -118 :: raw: "@everyone utsa +8.5 -118. (At the half"
 NEW TODD PLAY: Spread -4.5 -140 :: raw: "@everyone Purdue -4.5 -140 cbb ..risk 1 for .71" :: msg 1575570912609312940 :: posted 2026-11-26T17:56:18.258Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 13:05:24 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 167 -140 :: raw: "@everyone un167 -140 geo cbb ..risk 1 for .71" :: msg 1575573088974802995 :: posted 2026-11-26T18:04:57.144Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 13:25:42 ET — 1 NEW Todd play
+NEW TODD PLAY: Todd play (in-play CBB) -140 :: raw: "@everyone Bears 2nd drive offensive score -140 ..risk .70 for .50 nfl (edited) Thursday, November 26, 2026 at 1:25 PM" :: msg 1575578196777373828 :: posted 2026-11-26T18:25:14.939Z :: Novig: https://app.novig.us/AppEntry
