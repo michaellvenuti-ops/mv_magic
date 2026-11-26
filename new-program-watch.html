@@ -19,17 +19,17 @@ blockquote{border-left:3px solid #30363d;margin:12px 0;padding:2px 14px;color:#c
 <p class="back"><a href="hq/">&larr; Back to Broham&rsquo;s Betting HQ</a></p>
 <h1>New Program Watch (Chet)</h1>
 <p class="hq-updated" style="font-size:.85rem;color:#6b716b;margin:2px 0 12px">Updated Nov 26, 2026 by Chet</p>
-<p><strong>Status: LIVE.</strong> The watch runs every 2 hours, 24/7, from the Muse side. Last run: <strong>Nov 26, 2026 1:12 PM ET</strong>. Next run about 2 hours after that. When it finds something new, it alerts in the main chat — this page is the record you can check anytime.</p>
+<p><strong>Status: LIVE.</strong> The watch runs every 2 hours, 24/7, from the Muse side. Last run: <strong>Nov 26, 2026 3:12 PM ET</strong>. Next run about 2 hours after that. When it finds something new, it alerts in the main chat — this page is the record you can check anytime.</p>
 <p>Built from Risk Takers Ep 181, edge E2 (the Polymarket API taker rebate): new programs and markets pay early, and the edge decays in weeks. Apex farmed Kalshi liquidity rewards from $300 to ~$10k; ITF tennis in its first month on Kalshi quoted 8&ndash;10&cent; wide, ~5x bankroll. The watch exists to catch the next one the moment it lands. Full background: <a href="risk-takers-ep181-edges.html">Risk Takers Ep 181 &mdash; Edges Report</a>.</p>
 <hr />
 <h2>Recent runs</h2>
 <table>
 <tr><th>Run (ET)</th><th>Duration</th><th>New candidates</th><th>Errors</th></tr>
+<tr><td>Nov 26, 3:12 PM ET</td><td>21.2s</td><td>1</td><td>none</td></tr>
 <tr><td>Nov 26, 1:12 PM ET</td><td>24.5s</td><td>0</td><td>none</td></tr>
 <tr><td>Nov 26, 11:12 AM ET</td><td>21.3s</td><td>0</td><td>none</td></tr>
 <tr><td>Nov 26, 9:12 AM ET</td><td>20.1s</td><td>9</td><td>none</td></tr>
 <tr><td>Nov 26, 7:12 AM ET</td><td>18.5s</td><td>0</td><td>none</td></tr>
-<tr><td>Nov 26, 5:12 AM ET</td><td>21.5s</td><td>0</td><td>none</td></tr>
 </table>
 <hr />
 <h2>What it watches</h2>
@@ -65,7 +65,7 @@ blockquote{border-left:3px solid #30363d;margin:12px 0;padding:2px 14px;color:#c
 <h3>Polymarket US 70% API taker-fee rebate removed from fee schedule (apparent early end) — Polymarket US</h3>
 <p><strong>Expires:</strong> 2026-12-31 &nbsp;|&nbsp; <strong>Found:</strong> Nov 25, 2026 11:20 PM ET</p>
 <p><strong>Terms:</strong> Nov 25 the fee schedule promised 70% of taker fees rebated on straight trades via the Polymarket US API, flat 0.0695 coefficient, no minimum volume, Nov 21-Dec 31, 2026, &#x27;We intend to extend the program based on how it performs.&#x27; Overnight update (page timestamp Nov 26 03:06 UTC) removed all 70% language; full page read finds no &#x27;70%&#x27; anywhere. Flat 0.0695 API coefficient remains; taker rebates now volume tiers only (0-30%). No separate announcement of an end or extension found.</p>
-<p><strong>Watch note:</strong> Apparent early end 5 days in (Ep 181 guests took the under on it reaching Dec 31). Framed as apparent, not confirmed: no standalone announcement; if Polymarket restores the language, flag that as a reinstatement.</p>
+<p><strong>Watch note:</strong> Apparent early end 5 days in (Ep 181 guests took the under on it reaching Dec 31). Framed as apparent, not confirmed: no standalone announcement; if Polymarket restores the language, flag that as a reinstatement. CORRECTION Nov 26 ~15:16 ET: live-browser verification (see poly-us-api-taker-rebate-reinstated-2026-11-26) shows the 70% language IS on the live fee schedule (banner + Tip callout, through Dec 31). The removal read came from the text-fetch crawl path, which still shows no 70% — either a brief removal + restoration or a crawler artifact; cannot distinguish from the evidence. This early-end alert is withdrawn.</p>
 <p class='sub'>Source: https://docs.polymarket.us/fees (verified live Nov 26, 2026 - full 694-line read + find &#x27;70%&#x27; = 0 matches; Nov 25 verbatim text in memory/2026-11-25.md)</p>
 <h3>Polymarket Perps Liquidity Rewards 2.0 live (fixed daily pools, 69 markets) — Polymarket</h3>
 <p><strong>Expires:</strong> 2026-11-30 &nbsp;|&nbsp; <strong>Found:</strong> Nov 25, 2026 11:20 PM ET</p>
@@ -77,6 +77,11 @@ blockquote{border-left:3px solid #30363d;margin:12px 0;padding:2px 14px;color:#c
 <p><strong>Terms:</strong> Dedicated Compute vertical (polymarket.com/tech/compute) launched Nov 25, 2026, announced by CEO Shayne Coplan. Binary markets on Nvidia H100, B200, B300 average hourly rental prices, monthly tenors Dec 2026-Dec 2028, cash-settled against the Ornn Compute Price Index. Polymarket-Implied Rental Price (PIRP) forward curve published on the page. Compute perpetual contracts (24h-averaged rental prices, 24/7, leveraged) also launched this November; docs specs published. Spot Nov 25: H100 ~$3.05/hr, B200 ~$9.80/hr, B300 ~$10.91/hr; PIRP implies H100 ~$2.16 by Dec 2028 (~30% lower). Dec 2026 H100 market ~$503K volume since Nov 22. Polymarket US submitted Compute Index Value Contracts to the CFTC in August.</p>
 <p><strong>Watch note:</strong> Found via announcement sweep, not the script: the script&#x27;s Gamma tag snapshot (2,000 tags) contains no GPU/compute tag, so tag diffing missed it. Honest framing: binary compute markets were tested quietly since Feb 2026 and one institutional H100 block trade printed in June; what is new Nov 25 is the full public launch — dedicated page, forward curve to Dec 2028, and perps. Consider adding polymarket.com/tech/compute to the script&#x27;s sources.</p>
 <p class='sub'>Source: https://polymarket.com/tech/compute (Polymarket&#x27;s own Compute page, verified live Nov 26, 2026) + Shayne Coplan X announcement Nov 25, 2026; corroborated by Crypto Briefing, PANews, KuCoin</p>
+<h3>Polymarket US 70% API taker-fee rebate LIVE on fee schedule (reinstatement / correction of morning early-end alert) — Polymarket US</h3>
+<p><strong>Expires:</strong> 2026-12-31 &nbsp;|&nbsp; <strong>Found:</strong> Nov 26, 2026 3:12 PM ET</p>
+<p><strong>Terms:</strong> Live fee schedule (verified in the real browser Nov 26 ~3:16 PM ET) advertises the 70% API taker-fee rebate: banner &#x27;Polymarket US - 70% API taker rebate through Dec 31&#x27; and Tip callout &#x27;70% taker rebates for API traders&#x27; — API taker trades charged flat 0.0695 coefficient, 70% of the fee rebated on straight trades (combos coming soon), program runs Nov 21-Dec 31, 2026, &#x27;We intend to extend the program based on how it performs.&#x27; App/web taker rebates unchanged (volume tiers 0-30%).</p>
+<p><strong>Watch note:</strong> Reinstatement per the watch rule in poly-us-api-taker-rebate-ended-2026-11-26 (&#x27;if Polymarket restores the language, flag that as a reinstatement&#x27;). Honest limit: cannot prove a removal-then-restoration vs a crawler artifact — the text-fetch path showed no 70% at 04:20, 05:51 and 20:13 UTC while the live browser + raw fetch show it present. Either way the live page advertises the rebate now, so the morning &#x27;ended early&#x27; alert is withdrawn and 70% edge math is back on — verify in-account before trading on it. Maintenance: the script&#x27;s fee hash flipped at 20:12 UTC on a redeploy (leaked docsConfig JSON buildId in the hashed lines) and urllib serves a different copy than the text crawler — fee-change flags need a live-browser confirm before alerting.</p>
+<p class='sub'>Source: https://docs.polymarket.us/fees (verified live in browser Nov 26, 2026 ~15:16-15:18 ET: banner + Tip callout present; full page read. Text-fetch crawl of the same URL still shows no 70% and a Nov 26 03:06 UTC timestamp — the two fetch paths disagree; live browser is authoritative for what a visitor sees.)</p>
 
 <h3>Polymarket US 70% API taker-fee rebate — extra notes</h3>
 <ul>
