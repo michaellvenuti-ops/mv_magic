@@ -12403,3 +12403,28 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 16:04:14 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 16:04:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 16:04:16 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 16:34:16 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 16:35:14 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 142 events (128 with odds), db total 326752 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 16:35:16 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Nevada UNLV Nov-28 9:00 PM — Total — Over 43 ProphetX -123 ($109) / Under 43.5 theScore +115 ($91) — win+push at 43 — push +$104.65, miss -4.35
+[2026-11-26 16:35:16 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-26 16:52:14 ET] sync_to_github.py: FAILED (exit 1) in 1018s — FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\venut\\pc-scans\\data\\podcast-worker.lock'
+[2026-11-26 16:52:38 ET] dh_low_holds.py: OK in 25s — LOW-HOLDS: NCAAF UMass Bowling Green Nov-28 3:30 PM / Nov-28 3:30 PM / table / Alt Total Under 44 / Alt Total Over 44 / table bar_chart | Fanatics-NJ | ProphetX
+[2026-11-26 16:53:43 ET] dh_game_middles.py: OK in 65s — GAME MIDDLE: NCAAB 25 Louisville 13 St. John's Today 9:00 PM / Today 9:00 PM / table / Total Under 161.5 / Alt Total Over 161 / table bar_chart | Bet365 | Proph
+[2026-11-26 16:54:35 ET] dh_nhl_totals_middles.py: OK in 51s — NHL TOTAL MIDDLE: NHL CGY Flames NJ Devils Nov-27 1:00 PM / Nov-27 1:00 PM / table / Total Over 6 / Total Under 6.5 / table | BetMGM | Bally Bet — window 0.5 pu
+[2026-11-26 16:57:06 ET] dh_key_number_middles.py: OK in 152s — key-number-middles: 111 basketball rows excluded (football-only rule).
+[2026-11-26 16:59:42 ET] dh_basketball_key_middles.py: OK in 156s — basketball-key-middles: no new basketball middles.
+[2026-11-26 17:00:16 ET] hung_number.py: FAILED (exit 2) in 34s — write state. Re-run with --dump and send the dump file.
+[2026-11-26 17:00:20 ET] rlm.py: OK in 4s
+[2026-11-26 17:00:24 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-26 17:00:27 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Tulsa @ UTSA | 2026-11-26 | Fanatics | UTSA spread 1.0 (median 1.0 -> 0.0)
+[2026-11-26 17:01:41 ET] dh_prop_middles.py: OK in 74s — prop-middles: no new/changed qualifying middles.
+[2026-11-26 17:03:35 ET] dh_sog_middles.py: OK in 114s — - 0 deliverables this run
+[2026-11-26 17:03:37 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -1.3c vs +EV.
+[2026-11-26 17:03:39 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 1 new, 0 unverified, 164 total tallied.
+[2026-11-26 17:03:41 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-26 17:03:42 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-26 17:03:44 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 3 new, 1 unverified, 1240 total tallied.
+[2026-11-26 17:03:45 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 17:03:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 17:03:47 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-26 17:03:47 ET] syncing to GitHub (regular 10-minute sync)
