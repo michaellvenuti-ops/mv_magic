@@ -12112,3 +12112,25 @@
 [2026-11-25 23:20:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 23:20:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-25 23:20:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 23:50:45 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 23:51:38 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 187 events (94 with odds), db total 324936 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 23:51:56 ET] dh_arbitrage.py: OK in 18s — ARBITRAGE: NFL WAS Commanders ARI Cardinals Nov-29 4:25 PM / Nov-29 4:25 PM / table / Alt Receptions A. Williams 4+ / Receptions A. Williams Under 3.5 / table |
+[2026-11-25 23:52:13 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 23:52:18 ET] wide_builds.py: OK in 3s — wide_builds: 6 qualifying builds, 0 NEW (banked wide-builds-2026-11-25.md)
+[2026-11-25 23:52:37 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NCAAF 22 Boise St. Colorado St. Nov-28 6:00 PM / Nov-28 6:00 PM / table / Alt Total Under 91.5 / Alt Total Over 91.5 / table | Fanatics-NJ | DraftKin
+[2026-11-25 23:53:43 ET] dh_game_middles.py: OK in 66s — GAME MIDDLE: NCAAF West Virginia 2 Utah Nov-27 9:00 PM / Nov-27 9:00 PM / table / Alt Spread West Virginia +31 / Alt Spread Utah -30.5 / table | Bally Bet | Fan
+[2026-11-25 23:54:26 ET] dh_nhl_totals_middles.py: OK in 43s — nhl-totals-middles: no new qualifying middles.
+[2026-11-25 23:56:57 ET] dh_key_number_middles.py: OK in 151s — key-number-middles: 57 basketball rows excluded (football-only rule).
+[2026-11-25 23:59:38 ET] dh_basketball_key_middles.py: OK in 160s — basketball-key-middles: no new basketball middles.
+[2026-11-25 23:59:43 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-26 00:00:51 ET] dh_prop_middles.py: OK in 68s — PROP MIDDLE CLEAN : NFL NY Giants IND Colts Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards T. Warren Under 30.5 / Alt Recv Yards T. Warren 30+ / tabl
+[2026-11-26 00:02:27 ET] dh_sog_middles.py: OK in 96s — - 0 deliverables this run
+[2026-11-26 00:02:29 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 30 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 22.5/24.5 sits at -2.0c vs +EV.
+[2026-11-26 00:02:31 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 163 total tallied.
+[2026-11-26 00:02:32 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 255 total tallied.
+[2026-11-26 00:02:33 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 388 total tallied.
+[2026-11-26 00:02:35 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 1 unverified, 1227 total tallied.
+[2026-11-26 00:02:36 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 00:02:38 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-26 00:02:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-26 00:02:39 ET] syncing to GitHub (regular 10-minute sync)
