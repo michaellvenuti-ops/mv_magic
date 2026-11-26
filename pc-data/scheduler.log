@@ -12288,3 +12288,9 @@
 [2026-11-26 12:52:57 ET] dh_positive_ev.py: OK in 65s — DarkHorse check unavailable (signed out) — positive-ev skipped, no prices invented.
 [2026-11-26 12:53:19 ET] rb_rushing.py: FAILED (exit 2) in 22s — rb-rushing: zero rushers parsed from PFR — run with --dump and send it back for a parser patch. No state written.
 [2026-11-26 12:53:19 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 13:23:19 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 13:24:13 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 142 events (133 with odds), db total 326342 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 13:24:29 ET] dh_arbitrage.py: OK in 16s — ARBITRAGE: NBA MIA Heat NY Knicks Nov-27 7:15 PM / Nov-27 7:15 PM / table / Assists J. Hart Under 5.5 / Alt Assists J. Hart 6+ / table | FanDuel | Bally Bet
+[2026-11-26 13:24:48 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 13:24:49 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF South Carolina Clemson Nov-28 3:00 PM — Total — Over 43 ProphetX +112 ($93) / Under 43.5 theScore -120 ($107) — win+push at 43 — push +$89.17, 
+[2026-11-26 13:24:50 ET] syncing to GitHub (wide-builds banked new builds)
