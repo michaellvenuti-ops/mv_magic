@@ -89,3 +89,10 @@
 - 2026-11-25: Norfolk State Spartans @ NC State Wolfpack — first: Norfolk State Spartans (2PT, 0:36 in); lead changes 1; final 49-80
 - 2026-11-25: SMU Mustangs @ Utah State Aggies — first: Utah State Aggies (3PT, 0:53 in); lead changes 0; final 59-93
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T23:20:42-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1226 games through 2026-11-25
+- 2026-11-25: Omaha Mavericks @ UC Davis Aggies — first: Omaha Mavericks (3PT, 1:35 in); lead changes 7; final 78-80
+- 2026-11-25: Eastern Michigan Eagles @ UTEP Miners — first: UTEP Miners (2PT, 0:51 in); lead changes 4; final 54-72
+- 2026-11-25: Northwest Indian RedHawks @ Montana State Bobcats — first: Montana State Bobcats (2PT, 0:17 in); lead changes 0; final 43-110
+- 2026-11-25: Mississippi Valley State Delta Devils @ New Mexico Lobos — first: New Mexico Lobos (3PT, 0:36 in); lead changes 8; final 77-100
+- 2026-11-25: Eastern Washington Eagles @ Loyola Marymount Lions — first: Eastern Washington Eagles (2PT, 0:22 in); lead changes 9; final 72-81
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
