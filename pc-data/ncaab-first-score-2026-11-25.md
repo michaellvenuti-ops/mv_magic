@@ -72,3 +72,8 @@
 - 2026-11-25: BYU Cougars @ Providence Friars — first: Providence Friars (3PT, 0:18 in); lead changes 9; final 85-82
 - 2026-11-25: Cal State Northridge Matadors @ Weber State Wildcats — first: Cal State Northridge Matadors (2PT, 1:01 in); lead changes 2; final 89-67
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T20:53:51-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1211 games through 2026-11-25
+- 2026-11-25: Case Western Reserve Spartans @ Cleveland State Vikings — first: Cleveland State Vikings (2PT, 0:51 in); lead changes 2; final 46-76
+- 2026-11-25: Kennesaw State Owls @ Charleston Cougars — first: Kennesaw State Owls (2PT, 0:19 in); lead changes 5; final 77-91
+- 2026-11-25: Northeastern Huskies @ Wisconsin Badgers — first: Wisconsin Badgers (FT, 0:53 in); lead changes 2; final 54-91
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
