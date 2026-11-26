@@ -154,6 +154,7 @@ function polyAsk(market, outcomeIdx){
 }
 
 function render(){
+  if (!K || !PMAP) return; // data still loading — typing before load must not throw
   const league = document.getElementById('leagueFilter').value;
   const gapOnly = document.getElementById('gapOnly').checked;
   const q = norm(document.getElementById('searchBox').value);
@@ -185,7 +186,10 @@ function render(){
     html += renderGameRows(g, pm, away, home);
     html += '</table></div></div>';
   }
-  document.getElementById('games').innerHTML = html || '<p class="muted">No games match the filters.</p>';
+  let emptyMsg = '<p class="muted">No games match the filters.</p>';
+  if (gapOnly) emptyMsg += '<p class="muted">The "Kalshi edge ≥ 3¢ only" box is on — right now only ' + Object.keys(gapGames).length + ' game' + (Object.keys(gapGames).length===1?'':'s') + ' have a Kalshi edge that big. A game you searched for may be hidden by it, not missing. Uncheck the box to see every game.</p>';
+  if (q) emptyMsg += '<p class="muted">Search matched no game name — try just the team name (e.g. eagles).</p>';
+  document.getElementById('games').innerHTML = html || emptyMsg;
   document.getElementById('countLine').textContent = shown + ' game' + (shown===1?'':'s');
 }
 
