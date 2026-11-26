@@ -12176,3 +12176,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 00:02:38 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-26 00:02:39 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-26 00:02:39 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 00:32:40 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 00:33:33 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 187 events (92 with odds), db total 325123 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-26 00:33:34 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Southern Miss Old Dominion Nov-28 1:00 PM — Total — Over 53 ProphetX +130 ($85) / Under 53.5 theScore -140 ($115) — win+push at 53 — push +$82.
+[2026-11-26 00:33:34 ET] syncing to GitHub (wide-builds banked new builds)
