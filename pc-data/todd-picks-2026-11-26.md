@@ -15,3 +15,5 @@ NEW TODD PLAY: Todd play (in-play CBB) -140 :: raw: "@everyone Bears 2nd drive o
 NEW TODD PLAY: 1st Half Total 58.5 -125 :: raw: "@everyone ov58.5 -125 1h Maryland" :: msg 1575581683913195552 :: posted 2026-11-26T18:39:06.337Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 14:52:35 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 6.5 165 :: raw: "@everyone un6.5 bears tt 3q +165 ..risk .50 for .83" :: msg 1575600085126094901 :: posted 2026-11-26T19:52:13.528Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 14:53:08 ET — 1 NEW Todd play
+NEW TODD PLAY: Spread +2.5 -108 :: raw: "@everyone lions +2.5 -108 3q ..risk .54 for .50" :: msg 1575600177908027453 :: posted 2026-11-26T19:52:35.649Z :: Novig: https://app.novig.us/AppEntry
