@@ -21,3 +21,5 @@ NEW TODD PLAY: Spread +2.5 -108 :: raw: "@everyone lions +2.5 -108 3q ..risk .54
 NEW TODD PLAY: Total 26.5 -120 :: raw: "@everyone bears tt un26.5 -120 ..risk .60 for .50" :: msg 1575600280282603605 :: posted 2026-11-26T19:53:00.057Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 15:13:44 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 145.5 100 :: raw: "@everyone un145.5 even San Diego st cbb" :: msg 1575605464199340176 :: posted 2026-11-26T20:13:35.999Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 15:16:56 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 143.5 -112 :: raw: "@everyone ov143.5 s Carolina cbb -112" :: msg 1575606278527385670 :: posted 2026-11-26T20:16:50.150Z :: Novig: https://app.novig.us/AppEntry
