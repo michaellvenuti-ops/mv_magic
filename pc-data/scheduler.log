@@ -12231,3 +12231,7 @@
 [2026-11-26 10:18:29 ET] half_percent.py: OK in 1s — half-percent recheck: 10:18 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
 [2026-11-26 10:18:33 ET] futures_pairs.py: OK in 4s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-26 10:18:33 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 10:48:33 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 10:49:27 ET] odds_recorder.py: OK in 23s — SUMMARY: recorded 187 events (91 with odds), db total 326058 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-26 10:49:27 ET] wide_builds.py: OK in 1s — NEW BUILD: NHL CGY Flames NJ Devils Nov-27 1:00 PM — Total — Over 6 BetMGM -120 ($99) / Under 6.5 Bet365 -127 ($101) — win+push at 6 — push +$79.53, miss -19.47
+[2026-11-26 10:49:27 ET] syncing to GitHub (wide-builds banked new builds)
