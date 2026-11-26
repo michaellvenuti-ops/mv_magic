@@ -77,3 +77,15 @@
 - 2026-11-25: Kennesaw State Owls @ Charleston Cougars — first: Kennesaw State Owls (2PT, 0:19 in); lead changes 5; final 77-91
 - 2026-11-25: Northeastern Huskies @ Wisconsin Badgers — first: Wisconsin Badgers (FT, 0:53 in); lead changes 2; final 54-91
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T22:06:49-05:00 -- NCAAB FIRST SCORE (PC): 10 new final(s) tallied; season 1221 games through 2026-11-25
+- 2026-11-25: Cal State Bakersfield Roadrunners @ Pepperdine Waves — first: Pepperdine Waves (2PT, 0:21 in); lead changes 0; final 68-70
+- 2026-11-25: Duke Blue Devils @ UConn Huskies — first: Duke Blue Devils (FT, 1:50 in); lead changes 4; final 77-63
+- 2026-11-25: Memphis Tigers @ Penn State Nittany Lions — first: Penn State Nittany Lions (2PT, 0:37 in); lead changes 3; final 83-70
+- 2026-11-25: South Carolina Upstate Spartans @ The Citadel Bulldogs — first: South Carolina Upstate Spartans (2PT, 0:15 in); lead changes 3; final 54-72
+- 2026-11-25: Bellarmine Knights @ Northern Kentucky Norse — first: Northern Kentucky Norse (3PT, 1:49 in); lead changes 7; final 66-52
+- 2026-11-25: Northern Illinois Huskies @ SIU Edwardsville Cougars — first: SIU Edwardsville Cougars (3PT, 0:25 in); lead changes 1; final 68-65
+- 2026-11-25: St. Thomas Tommies @ UNC Wilmington Seahawks — first: UNC Wilmington Seahawks (2PT, 0:15 in); lead changes 12; final 77-86
+- 2026-11-25: Longwood Lancers @ George Mason Patriots — first: Longwood Lancers (3PT, 0:48 in); lead changes 1; final 58-93
+- 2026-11-25: Norfolk State Spartans @ NC State Wolfpack — first: Norfolk State Spartans (2PT, 0:36 in); lead changes 1; final 49-80
+- 2026-11-25: SMU Mustangs @ Utah State Aggies — first: Utah State Aggies (3PT, 0:53 in); lead changes 0; final 59-93
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
