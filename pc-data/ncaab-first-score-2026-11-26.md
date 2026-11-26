@@ -16,3 +16,6 @@
 - 2026-11-26: Georgia Bulldogs @ Cincinnati Bearcats — first: Georgia Bulldogs (3PT, 0:17 in); lead changes 3; final 81-83
 - 2026-11-26: Army Black Knights @ UTSA Roadrunners — first: Army Black Knights (2PT, 0:23 in); lead changes 0; final 79-61
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T16:04:12-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1237 games through 2026-11-26
+- 2026-11-26: Maryland Terrapins @ San Diego State Aztecs — first: San Diego State Aztecs (2PT, 0:21 in); lead changes 2; final 71-75
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
