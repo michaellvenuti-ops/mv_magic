@@ -12184,3 +12184,50 @@
 [2026-11-26 02:26:21 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=5 queued_total=63
 [2026-11-26 02:26:22 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=63, limit=5)
 [2026-11-26 02:26:22 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 02:56:22 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 02:57:22 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 187 events (91 with odds), db total 325497 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-26 02:57:52 ET] dh_arbitrage.py: OK in 29s — arbitrage: no new qualifying pairs (silent).
+[2026-11-26 02:58:08 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 02:58:10 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Sam Houston Florida International Nov-28 2:00 PM — Total — Over 41.5 theScore +105 ($96) / Under 42 ProphetX -113 ($104) — win+push at 42 — pus
+[2026-11-26 02:58:10 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-26 08:50:36 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-26 09:14:39 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-26 09:44:18 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-26 09:50:28 ET] odds_recorder.py: OK in 370s — SUMMARY: recorded 187 events (91 with odds), db total 325871 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-26 09:50:56 ET] dh_arbitrage.py: FAILED (exit 1) in 28s —   - [pid=10292] <gracefully close end>
+[2026-11-26 09:51:19 ET] dh_kalshi_poly_arb.py: OK in 22s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 09:51:21 ET] wide_builds.py: OK in 2s — wide_builds: 27 qualifying builds, 0 NEW (banked wide-builds-2026-11-26.md)
+[2026-11-26 09:51:39 ET] dh_low_holds.py: OK in 18s — LOW-HOLDS: NCAAB 5 Texas Tech Oregon Today 11:30 PM / Today 11:30 PM / table / Alt Total Over 142.5 / Alt Total Under 142.5 / table | Caesars | Bet365
+[2026-11-26 09:52:49 ET] dh_game_middles.py: OK in 70s — GAME MIDDLE: NCAAB Utah St. 18 USC Today 4:30 PM / Today 4:30 PM / table / Total Under 161.5 / Total Over 160.5 YES / table bar_chart | Fliff | Kalshi — window 
+[2026-11-26 09:53:32 ET] dh_nhl_totals_middles.py: OK in 43s — NHL TOTAL MIDDLE: NHL OTT Senators TB Lightning Nov-27 3:00 PM / Nov-27 3:00 PM / table / Total Over 5.5 / Alt Total Under 6.5 / table bar_chart | Fliff | Polym
+[2026-11-26 09:56:06 ET] dh_key_number_middles.py: OK in 154s — key-number-middles: 222 basketball rows excluded (football-only rule).
+[2026-11-26 09:58:41 ET] dh_basketball_key_middles.py: OK in 155s — basketball-key-middles: no new basketball middles.
+[2026-11-26 09:59:35 ET] hung_number.py: FAILED (exit 2) in 54s — write state. Re-run with --dump and send the dump file.
+[2026-11-26 09:59:41 ET] rlm.py: OK in 6s
+[2026-11-26 09:59:45 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-26 09:59:47 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-26 10:00:51 ET] dh_prop_middles.py: OK in 63s — PROP MIDDLE CLEAN : NFL CHI Bears DET Lions Today 1:00 PM / Today 1:00 PM / table / Longest Recept. I. TeSlaa Under 15.5 / Longest Recept. I. TeSlaa 15+ / table
+[2026-11-26 10:02:36 ET] dh_sog_middles.py: OK in 105s — - 0 deliverables this run
+[2026-11-26 10:02:38 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 30 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Philadelphia 19.5/20.5 sits at -2.0c vs 
+[2026-11-26 10:02:40 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 163 total tallied.
+[2026-11-26 10:02:41 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-26 10:02:42 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-26 10:02:44 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 3 new, 1 unverified, 1233 total tallied.
+[2026-11-26 10:02:45 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 10:02:46 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 10:02:47 ET] fetch_nba_snapshot.py: OK in 1s — snapshot: 30 teams, 0 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-26.json
+[2026-11-26 10:04:03 ET] dh_sleeping_book_sweep.py: FAILED (exit 2) in 76s — positive-ev-sweep: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-sweep-2026-11-26.txt. No 
+[2026-11-26 10:04:04 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-26 10:04:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-26 10:04:13 ET] nhl_totals_scan.py: OK in 8s — nhl-totals: 0 games, no flags.
+[2026-11-26 10:04:15 ET] total_projectors_scan.py: FAILED (exit 2) in 2s — FETCH FAILED: NCAAB stats: BartTorvik table header not found
+[2026-11-26 10:04:18 ET] spread_cover_daily.py: OK in 3s — spread-cover: games {'NBA': 0, 'NCAAB': 24}, new 0, moved 0, baselines 24.
+[2026-11-26 10:04:19 ET] nba_overs_grade_run.py: OK in 1s — }
+[2026-11-26 10:04:20 ET] nhl_totals_grade_run.py: OK in 1s —   Inverse: 5-5-0, $+29.29 (inverse money only where an opposite price was recorded)
+[2026-11-26 10:04:22 ET] total_projectors_grade_run.py: OK in 1s — }
+[2026-11-26 10:04:28 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-26.json (5 markets).
+[2026-11-26 10:18:19 ET] yahoo_brief.py: OK in 830s — SUMMARY: signed_in=True, rows=149, matched=51, lanes={'urgent': 1, 'miles_earn_and_burn': 2, 'doctor_of_credit': 2, 'gift_cards': 29, 'sportsbook': 17}, errors=
+[2026-11-26 10:18:28 ET] half_percent.py: OK in 9s — half-percent: NO PICK — no fresh premarket data this morning (market may be closed)
+[2026-11-26 10:18:29 ET] half_percent.py: OK in 1s — half-percent recheck: 10:18 ET is outside the 09:28-09:35 ET validity window — no-op, nothing touched.
+[2026-11-26 10:18:33 ET] futures_pairs.py: OK in 4s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
+[2026-11-26 10:18:33 ET] syncing to GitHub (regular 10-minute sync)
