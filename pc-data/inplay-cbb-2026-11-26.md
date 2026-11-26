@@ -19,3 +19,5 @@ NEW IN-PLAY CBB: PLAY: Over 188.5 -110 — Miami at Michigan (2ND BITE) | 1H tot
 NEW IN-PLAY CBB: PLAY: Under 124.5 — Tennessee at Iowa State (PACE) | pace proj 100.0 (H1 50 x 2) vs live total 124.5 (gap -24.5, bar 5) | H1 50 | as of 16:50:02 ET
 ## 2026-11-26 17:34:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Arkansas at Michigan St (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 138.5 (gap -22.5, bar 5) | H1 58 | as of 17:34:02 ET
+## 2026-11-26 17:47:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 157.5 -120 — USC at Utah State (TRAILING FAVE) | pregame favorite USC trails at half (Utah State leads); pace is slow (proj 150.0 vs live 157.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 17:47:01 ET
