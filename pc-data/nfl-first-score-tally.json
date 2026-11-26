@@ -1,5 +1,5 @@
 {
- "through": "2026-11-23",
+ "through": "2026-11-25",
  "games": [
   {
    "away": "New England Patriots",
@@ -1612,14 +1612,24 @@
    "ties": 0
   },
   {
-   "date": "2026-11-23",
    "away": "Cincinnati Bengals",
-   "home": "Washington Commanders",
+   "date": "2026-11-23",
+   "final": "20-22",
    "first": "Cincinnati Bengals",
-   "seq": "3-0>10-0>10-7>10-10>17-10>17-13>17-16>17-19>20-19>20-22",
+   "home": "Washington Commanders",
    "lead_changes": 3,
+   "seq": "3-0>10-0>10-7>10-10>17-10>17-13>17-16>17-19>20-19>20-22",
+   "ties": 1
+  },
+  {
+   "date": "2026-11-25",
+   "away": "Green Bay Packers",
+   "home": "Los Angeles Rams",
+   "first": "Los Angeles Rams",
+   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "lead_changes": 0,
    "ties": 1,
-   "final": "20-22"
+   "final": "13-26"
   }
  ],
  "tally": {
@@ -1657,13 +1667,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Los Angeles Rams": {
-   "gp": 10,
-   "scored_first": 5,
-   "won_when_first": 3,
+   "gp": 11,
+   "scored_first": 6,
+   "won_when_first": 4,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 60.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 66.7,
    "win_pct_when_not_first": 60.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1822,14 +1832,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Green Bay Packers": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 7,
    "won_when_first": 5,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
+   "scored_first_pct": 63.6,
    "win_pct_when_first": 71.4,
-   "win_pct_when_not_first": 33.3,
+   "win_pct_when_not_first": 25.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Minnesota Vikings": {
@@ -1977,15 +1987,15 @@
   }
  },
  "league": {
-  "games": 162,
-  "games_with_goal": 162,
-  "home_scored_first": 82,
-  "first_team_won": 103,
+  "games": 163,
+  "games_with_goal": 163,
+  "home_scored_first": 83,
+  "first_team_won": 104,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.2,
-  "avg_lead_changes": 1.25,
-  "home_scored_first_pct": 50.6,
-  "first_team_win_pct": 63.6
+  "avg_lead_changes": 1.24,
+  "home_scored_first_pct": 50.9,
+  "first_team_win_pct": 63.8
  },
  "lead_changes": [
   {
@@ -3599,14 +3609,24 @@
    "ties": 0
   },
   {
-   "date": "2026-11-23",
    "away": "Cincinnati Bengals",
-   "home": "Washington Commanders",
+   "date": "2026-11-23",
+   "final": "20-22",
    "first": "Cincinnati Bengals",
-   "seq": "3-0>10-0>10-7>10-10>17-10>17-13>17-16>17-19>20-19>20-22",
+   "home": "Washington Commanders",
    "lead_changes": 3,
+   "seq": "3-0>10-0>10-7>10-10>17-10>17-13>17-16>17-19>20-19>20-22",
+   "ties": 1
+  },
+  {
+   "date": "2026-11-25",
+   "away": "Green Bay Packers",
+   "home": "Los Angeles Rams",
+   "first": "Los Angeles Rams",
+   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "lead_changes": 0,
    "ties": 1,
-   "final": "20-22"
+   "final": "13-26"
   }
  ],
  "lead_change_team_avgs": {
@@ -3626,9 +3646,9 @@
    "avg_per_game": 1.1
   },
   "Los Angeles Rams": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 21,
-   "avg_per_game": 2.1
+   "avg_per_game": 1.91
   },
   "Arizona Cardinals": {
    "games": 11,
@@ -3701,9 +3721,9 @@
    "avg_per_game": 1.4
   },
   "Green Bay Packers": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 9,
-   "avg_per_game": 0.9
+   "avg_per_game": 0.82
   },
   "Minnesota Vikings": {
    "games": 9,
