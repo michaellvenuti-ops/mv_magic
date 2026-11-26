@@ -12382,3 +12382,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 15:21:16 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 15:21:17 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 15:21:17 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 15:51:17 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 15:52:13 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (129 with odds), db total 326610 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 15:52:32 ET] dh_arbitrage.py: OK in 19s — arbitrage: no new qualifying pairs (silent).
+[2026-11-26 15:52:50 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 15:52:52 ET] wide_builds.py: OK in 1s — wide_builds: 16 qualifying builds, 0 NEW (banked wide-builds-2026-11-26.md)
+[2026-11-26 15:54:07 ET] dh_game_middles.py: OK in 75s — GAME MIDDLE: NCAAF UMass Bowling Green Nov-28 3:30 PM / Nov-28 3:30 PM / table / Alt Total Under 45.5 / Alt Total Over 45 / table bar_chart | Bally Bet | Prophe
+[2026-11-26 15:55:06 ET] dh_nhl_totals_middles.py: OK in 58s — NHL TOTAL MIDDLE: NHL VAN Canucks PHI Flyers Nov-27 3:00 PM / Nov-27 3:00 PM / table / Total Over 6 / Total Under 6.5 / table bar_chart | Caesars | ProphetX — w
+[2026-11-26 15:57:55 ET] dh_key_number_middles.py: OK in 170s — key-number-middles: 96 basketball rows excluded (football-only rule).
+[2026-11-26 16:00:50 ET] dh_basketball_key_middles.py: OK in 175s — basketball-key-middles: no new basketball middles.
+[2026-11-26 16:00:55 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-26 16:02:16 ET] dh_prop_middles.py: OK in 81s — PROP MIDDLE CLEAN : NFL NE Patriots LA Chargers Nov-29 4:05 PM / Nov-29 4:05 PM / table / Rush Yards O. Hampton Under 64.5 / Alt Rush Yards O. Hampton 60+ / tab
+[2026-11-26 16:04:04 ET] dh_sog_middles.py: OK in 109s — - 0 deliverables this run
+[2026-11-26 16:04:07 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 30 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Philadelphia 19.5/20.5 sits at -2.0c vs 
+[2026-11-26 16:04:08 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 163 total tallied.
+[2026-11-26 16:04:09 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-26 16:04:10 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-26 16:04:12 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 1 new, 1 unverified, 1237 total tallied.
+[2026-11-26 16:04:14 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 16:04:14 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 16:04:16 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-26 16:04:16 ET] syncing to GitHub (regular 10-minute sync)
