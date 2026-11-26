@@ -12158,3 +12158,9 @@
 [2026-11-26 01:13:29 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 01:13:30 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-26 01:13:30 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 01:43:30 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 01:44:24 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 187 events (91 with odds), db total 325310 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-26 01:44:43 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NFL BAL Ravens HOU Texans Nov-29 1:00 PM / Nov-29 1:00 PM / table / Alt Passing TDs C. Stroud 2+ / Passing TDs C. Stroud Under 1.5 / table | Bet365 |
+[2026-11-26 01:44:58 ET] dh_kalshi_poly_arb.py: OK in 15s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 01:44:59 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Washington 14 Oregon Nov-28 7:30 PM — Spread — Oregon -12.5 theScore -120 ($101) / Washington +15.5 BetRivers -117 ($99) — both win 13, 14, 15 
+[2026-11-26 01:45:00 ET] syncing to GitHub (wide-builds banked new builds)
