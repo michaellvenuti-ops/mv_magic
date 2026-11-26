@@ -12128,3 +12128,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 22:06:51 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 22:06:52 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-25 22:06:52 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 22:36:52 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 22:37:45 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 187 events (95 with odds), db total 324749 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 22:38:17 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: Challenger Playford T. Schoolkate M. Bouzige Nov-26 6:00 PM / Nov-26 6:00 PM / table / Moneyline T. Schoolkate / Moneyline M. Bouzige / table | Bet36
+[2026-11-25 22:38:33 ET] dh_kalshi_poly_arb.py: OK in 15s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-25 22:38:34 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Idaho St. North Dakota Nov-28 1:00 PM — Total — Over 53 Fanatics-NJ -115 ($105) / Under 53.5 ProphetX +108 ($95) — win+push at 53 — push +$102.
+[2026-11-25 22:38:34 ET] syncing to GitHub (wide-builds banked new builds)
