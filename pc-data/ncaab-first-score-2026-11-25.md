@@ -56,3 +56,12 @@
 - 2026-11-25: Princeton Tigers @ Liberty Flames — first: Princeton Tigers (2PT, 1:20 in); lead changes 10; final 79-72
 - 2026-11-25: Prairie View A&M Panthers @ Marshall Thundering Herd — first: Marshall Thundering Herd (2PT, 1:09 in); lead changes 2; final 58-64
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T19:29:05-05:00 -- NCAAB FIRST SCORE (PC): 7 new final(s) tallied; season 1203 games through 2026-11-25
+- 2026-11-25: South Carolina Gamecocks @ USC Trojans — first: USC Trojans (2PT, 1:25 in); lead changes 8; final 69-71
+- 2026-11-25: Southern Jaguars @ Nebraska Cornhuskers — first: Nebraska Cornhuskers (3PT, 1:03 in); lead changes 0; final 72-101
+- 2026-11-25: Grambling Tigers @ LSU New Orleans Privateers — first: Grambling Tigers (3PT, 0:45 in); lead changes 10; final 81-80
+- 2026-11-25: Texas A&M Aggies @ Xavier Musketeers — first: Texas A&M Aggies (3PT, 0:23 in); lead changes 1; final 83-88
+- 2026-11-25: Portland State Vikings @ UC Riverside Highlanders — first: Portland State Vikings (2PT, 1:18 in); lead changes 0; final 72-65
+- 2026-11-25: Alcorn State Braves @ Texas State Bobcats — first: Alcorn State Braves (2PT, 0:45 in); lead changes 5; final 70-97
+- 2026-11-25: Holy Cross Crusaders @ Dartmouth Big Green — first: Dartmouth Big Green (2PT, 2:06 in); lead changes 3; final 67-65
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
