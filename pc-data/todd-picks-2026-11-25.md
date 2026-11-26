@@ -27,3 +27,5 @@ NEW TODD PLAY: 1st Half Total 78.5 -110 :: raw: "@everyone Ov78.5 -110 Charlesto
 NEW TODD PLAY: 1st Half Total 77.5 -128 :: raw: "@everyone ov77.5 -128 1h Memphis ..risk .72 for .56 prob will add more" :: msg 1575305837650514062 :: posted 2026-11-26T00:22:59.463Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 19:26:16 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 75.5 -125 :: raw: "@everyone ov75.5 1h Memphis -125 ..risk .52 for .41" :: msg 1575306588074283070 :: posted 2026-11-26T00:25:58.378Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 19:36:50 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 160.5 -121 :: raw: "@everyone Ov160.5 -121 st Thomas" :: msg 1575309304259551383 :: posted 2026-11-26T00:36:45.967Z :: Novig: https://app.novig.us/AppEntry
