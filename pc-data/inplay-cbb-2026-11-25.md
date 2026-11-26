@@ -65,3 +65,5 @@ NEW IN-PLAY CBB: PLAY: Under 138.5 — Bellarmine at N Kentucky (PACE) | pace pr
 NEW IN-PLAY CBB: PLAY: Over 162.5 — St Thomas at UNC Wilmington (TRAILING FAVE) | pregame favorite UNC Wilmington trails at half (St Thomas leads); pace is slow (proj 156.0 vs live 162.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 19:52:02 ET
 ## 2026-11-25 19:53:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 145.5 -120 — Norfolk St at NC State (PACE) | pace proj 134.0 (H1 67 x 2) vs live total 145.5 (gap -11.5, bar 5) | H1 67 | as of 19:53:02 ET
+## 2026-11-25 20:06:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 149.5 — Duke at UConn (TRAILING FAVE) | pregame favorite UConn trails at half (Duke leads); pace is slow (proj 140.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 70 | as of 20:06:03 ET
