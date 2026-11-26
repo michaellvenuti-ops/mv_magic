@@ -65,3 +65,10 @@
 - 2026-11-25: Alcorn State Braves @ Texas State Bobcats — first: Alcorn State Braves (2PT, 0:45 in); lead changes 5; final 70-97
 - 2026-11-25: Holy Cross Crusaders @ Dartmouth Big Green — first: Dartmouth Big Green (2PT, 2:06 in); lead changes 3; final 67-65
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-25T20:11:33-05:00 -- NCAAB FIRST SCORE (PC): 5 new final(s) tallied; season 1208 games through 2026-11-25
+- 2026-11-25: West Florida Argonauts @ Northwestern State Demons — first: Northwestern State Demons (2PT, 0:59 in); lead changes 0; final 57-71
+- 2026-11-25: Bethune-Cookman Wildcats @ Richmond Spiders — first: Bethune-Cookman Wildcats (2PT, 0:15 in); lead changes 5; final 79-86
+- 2026-11-25: UAlbany Great Danes @ Syracuse Orange — first: UAlbany Great Danes (2PT, 2:00 in); lead changes 7; final 53-74
+- 2026-11-25: BYU Cougars @ Providence Friars — first: Providence Friars (3PT, 0:18 in); lead changes 9; final 85-82
+- 2026-11-25: Cal State Northridge Matadors @ Weber State Wildcats — first: Cal State Northridge Matadors (2PT, 1:01 in); lead changes 2; final 89-67
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
