@@ -55,3 +55,5 @@ NEW IN-PLAY CBB: PLAY: Over 154.5 — Bethune at Richmond (TRAILING FAVE) | preg
 NEW IN-PLAY CBB: PLAY: Under 129.5 -120 — UAlbany at Syracuse (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 129.5 (gap -25.5, bar 5) | H1 52 | as of 18:51:01 ET
 ## 2026-11-25 18:55:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 178.5 -115 — CSU Northridge at Weber St (PACE) | pace proj 170.0 (H1 85 x 2) vs live total 178.5 (gap -8.5, bar 5) | H1 85 | as of 18:55:01 ET
+## 2026-11-25 19:03:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 171.5 -115 — Kennesaw St at Charleston (PACE) | pace proj 164.0 (H1 82 x 2) vs live total 171.5 (gap -7.5, bar 5) | H1 82 | as of 19:03:02 ET
