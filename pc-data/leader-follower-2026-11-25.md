@@ -21,3 +21,7 @@ LEAD: Caesars on TCU @ Texas Tech | 2026-11-25 (spread)
 ## 2026-11-25T16:54:32-05:00 — pack move, never credited: Jets @ Dolphins | 2026-11-25 spread (Caesars, Hard Rock)
 ## 2026-11-25T16:54:32-05:00 — pack move, never credited: Patriots @ Chargers | 2026-11-25 spread (DraftKings, Fanatics, Hard Rock)
 ## 2026-11-25T16:54:32-05:00 — 85 games, 0 leads credited
+## 2026-11-25T19:25:27-05:00 — pack move, never credited: Jets @ Dolphins | 2026-11-25 spread (FanDuel, Fanatics, bet365)
+## 2026-11-25T19:25:27-05:00 — pack move, never credited: Patriots @ Chargers | 2026-11-25 spread (BetMGM, Caesars, FanDuel, bet365)
+## 2026-11-25T19:25:27-05:00 — no-follow: bet365 West Virginia @ Utah | 2026-11-25 spread (only 0 followed)
+## 2026-11-25T19:25:28-05:00 — 85 games, 0 leads credited
