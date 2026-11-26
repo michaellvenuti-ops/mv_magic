@@ -13,3 +13,4 @@ NEW FLAG: FBS Tulsa @ UTSA | 2026-11-26 — FanDuel still dealing spread -1.5 on
 NEW FLAG: FBS Tulsa @ UTSA | 2026-11-26 — DraftKings still dealing spread 1.5 on UTSA (pre-move median 1.0, now 0.0)
 NEW FLAG: FBS Tulsa @ UTSA | 2026-11-26 — Caesars still dealing spread 1.0 on UTSA (pre-move median 1.0, now 0.0)
 NEW FLAG: FBS Tulsa @ UTSA | 2026-11-26 — Fanatics still dealing spread 1.0 on UTSA (pre-move median 1.0, now 0.0)
+## 2026-11-26T18:13:54-05:00 — 69 games, 1 steam events, 0 NEW flags
