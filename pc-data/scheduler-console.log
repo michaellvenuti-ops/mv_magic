@@ -12082,3 +12082,25 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-25 20:11:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
 [2026-11-25 20:11:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 1 game(s) refreshed, 0 deliverable change(s).
 [2026-11-25 20:11:36 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-25 20:41:36 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-25 20:42:35 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 187 events (106 with odds), db total 324375 snapshots / 1886 events, feeds ok 6 fail 0
+[2026-11-25 20:42:36 ET] wide_builds.py: OK in 1s — wide_builds: 8 qualifying builds, 0 NEW (banked wide-builds-2026-11-25.md)
+[2026-11-25 20:43:52 ET] dh_game_middles.py: OK in 76s — GAME MIDDLE: NFL BAL Ravens HOU Texans Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards Z. Flowers Under 75.5 / Alt Recv Yards Z. Flowers 70+ / table |
+[2026-11-25 20:44:34 ET] dh_nhl_totals_middles.py: OK in 42s — NHL TOTAL MIDDLE: NHL MTL Canadiens COL Avalanche Today 9:30 PM / Today 9:30 PM / table / 1st Period Total Over 1.5 / 1st Period Total Under 2 / table | Fliff |
+[2026-11-25 20:47:14 ET] dh_key_number_middles.py: OK in 160s — key-number-middles: 322 basketball rows excluded (football-only rule).
+[2026-11-25 20:50:20 ET] dh_basketball_key_middles.py: OK in 187s — basketball-key-middles: no new basketball middles.
+[2026-11-25 20:50:59 ET] hung_number.py: FAILED (exit 2) in 38s — write state. Re-run with --dump and send the dump file.
+[2026-11-25 20:51:04 ET] rlm.py: OK in 5s
+[2026-11-25 20:51:08 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-25 20:51:11 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Temple @ Memphis | 2026-11-25 | Kalshi | Memphis spread -17.5 (median -17.5 -> -18.5)
+[2026-11-25 20:52:12 ET] dh_prop_middles.py: OK in 61s — PROP MIDDLE CLEAN : NFL BAL Ravens HOU Texans Nov-29 1:00 PM / Nov-29 1:00 PM / table / Receiving Yards Z. Flowers Under 76.5 / Alt Recv Yards Z. Flowers 70+ / 
+[2026-11-25 20:53:45 ET] dh_sog_middles.py: OK in 93s — - 0 deliverables this run
+[2026-11-25 20:53:46 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 32 team-games with two-sided ladders, 1 qualifying straddles, 1 new, 0 changed.
+[2026-11-25 20:53:47 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 162 total tallied.
+[2026-11-25 20:53:48 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 1 unverified, 249 total tallied.
+[2026-11-25 20:53:49 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 377 total tallied.
+[2026-11-25 20:53:51 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 3 new, 1 unverified, 1211 total tallied.
+[2026-11-25 20:53:52 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-25 20:53:53 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-25; skipping.
+[2026-11-25 20:53:54 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: 2 game(s) refreshed, 0 deliverable change(s).
+[2026-11-25 20:53:55 ET] syncing to GitHub (regular 10-minute sync)
