@@ -17,3 +17,7 @@ NEW FLAG: FBS TCU @ Texas Tech | 2026-11-25 — FanDuel still dealing spread -14
 ## 2026-11-25T18:09:43-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-25T19:25:32-05:00 — 69 games, 0 steam events, 0 NEW flags
 ## 2026-11-25T20:08:57-05:00 — 69 games, 0 steam events, 0 NEW flags
+## 2026-11-25T20:51:11-05:00 — 69 games, 1 steam events, 3 NEW flags
+NEW FLAG: FBS Temple @ Memphis | 2026-11-25 — FanDuel still dealing spread -17.5 on Memphis (pre-move median -17.5, now -18.5)
+NEW FLAG: FBS Temple @ Memphis | 2026-11-25 — Fanatics still dealing spread -17.5 on Memphis (pre-move median -17.5, now -18.5)
+NEW FLAG: FBS Temple @ Memphis | 2026-11-25 — Kalshi still dealing spread -17.5 on Memphis (pre-move median -17.5, now -18.5)
