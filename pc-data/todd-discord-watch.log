@@ -370,3 +370,8 @@ I’ll r
 [2026-11-26 13:05:24 ET] NEW PLAY TD-039: Total 167 price=-140 stake=None ntfy=sent msg=1575573088974802995
 [2026-11-26 13:05:25 ET] github: push failed (HTTP 409: {'error': '{"message":"is at 8b6bf8d86a2b16d18589575e62517a3b934a3ddc but expected 2308ee2e2e43d95a8d6d04e6a8f90094ca1a79c8","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
 [2026-11-26 13:05:42 ET] github: retry ok (89e7e3ca6d3e)
+[2026-11-26 13:25:42 ET] NEW PLAY TD-040: Todd play (in-play CBB) price=-140 stake=None ntfy=sent msg=1575578196777373828
+[2026-11-26 13:25:43 ET] github: pushed pc-data/todd-picks-2026-11-26.md (a4621da48c81)
+[2026-11-26 13:39:23 ET] NEW PLAY TD-041: 1st Half Total 58.5 price=-125 stake=None ntfy=sent msg=1575581683913195552
+[2026-11-26 13:39:25 ET] github: push failed (HTTP 409: {'error': '{"message":"is at a9db85b11984b0a8306d6fcb326da18d330a9147 but expected 3a6b02c7e1da6dff9d8a5a98f2ff7634368ead47","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'}), retrying once in 15s
+[2026-11-26 13:39:41 ET] github: retry failed (HTTP 409: {'error': '{"message":"is at da0ffc85b2db77f9bbff7ea8d75dce8e5a8ff802 but expected 9a8d9d4fe0960683cc5f60a1de163bd551cd054f","documentation_url":"https://docs.github.com/rest/repos/contents#create-or-update-file-contents","status":"409"}'})
