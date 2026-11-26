@@ -81,3 +81,5 @@ NEW IN-PLAY CBB: PLAY: Over 161.5 — Miss Valley St at New Mexico (2ND BITE) | 
 NEW IN-PLAY CBB: PLAY: Over 149.5 — Wake Forest at Mississippi St (TRAILING FAVE) | pregame favorite Mississippi St trails at half (Wake Forest leads); pace is slow (proj 140.0 vs live 149.5) — the comeback-fave rule bets Over anyway | H1 70 | as of 22:24:02 ET
 ## 2026-11-25 22:50:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 156.5 -115 — Washington at VCU (TRAILING FAVE) | pregame favorite VCU trails at half (Washington leads); pace agrees (proj 166.0 vs live 156.5) — comeback-fave Over | H1 83 | as of 22:50:02 ET
+## 2026-11-25 23:44:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 151.5 -110 — Pacific at Jax State (TRAILING FAVE) | pregame favorite Pacific trails at half (Jax State leads); pace agrees (proj 160.0 vs live 151.5) — comeback-fave Over | H1 80 | as of 23:44:01 ET
