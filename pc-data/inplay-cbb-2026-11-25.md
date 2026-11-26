@@ -75,3 +75,5 @@ NEW IN-PLAY CBB: PLAY: Over 141.5 -110 — Omaha at UC Davis (TRAILING FAVE) | p
 NEW IN-PLAY CBB: PLAY: Under 150.5 -120 — Bakersfield at Pepperdine (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 150.5 (gap -18.5, bar 5) | H1 66 | as of 20:49:03 ET
 ## 2026-11-25 21:40:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 117.5 -115 — E Michigan at UTEP (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 117.5 (gap -9.5, bar 5) | H1 54 | as of 21:40:02 ET
+## 2026-11-25 21:46:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 161.5 — Miss Valley St at New Mexico (2ND BITE) | 1H total 84 cleared implied 1H line 76.25 by +7.8; pace proj 168.0 vs live total 161.5 -- take the Over again at the half | H1 84 | as of 21:46:02 ET
