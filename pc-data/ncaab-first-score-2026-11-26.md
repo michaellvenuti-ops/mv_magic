@@ -24,3 +24,7 @@
 - 2026-11-26: Boston College Eagles @ UCF Knights — first: Boston College Eagles (FT, 1:29 in); lead changes 4; final 75-73
 - 2026-11-26: Arizona State Sun Devils @ South Carolina Gamecocks — first: South Carolina Gamecocks (2PT, 0:52 in); lead changes 6; final 73-80
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T18:16:11-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1242 games through 2026-11-26
+- 2026-11-26: Tennessee Volunteers @ Iowa State Cyclones — first: Tennessee Volunteers (3PT, 1:28 in); lead changes 0; final 75-64
+- 2026-11-26: Miami Hurricanes @ Michigan Wolverines — first: Michigan Wolverines (2PT, 0:13 in); lead changes 7; final 97-70
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
