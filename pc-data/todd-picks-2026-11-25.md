@@ -39,3 +39,5 @@ NEW TODD PLAY: Spread -3.5 -110 :: raw: "@everyone rare pregame play miss state 
 NEW TODD PLAY: Todd play (in-play CBB) 270 :: raw: "@everyone mumpfield to catch a pass this drive +270..risk .15 for .41" :: msg 1575352346139955223 :: posted 2026-11-26T03:27:47.951Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 22:30:35 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 150.5 -115 :: raw: "@everyone ov150.5 -115 Vcu" :: msg 1575353006231396463 :: posted 2026-11-26T03:30:25.329Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 22:42:27 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 38.5 -122 :: raw: "@everyone ov38.5 1h tt g canyon -122" :: msg 1575355948183191673 :: posted 2026-11-26T03:42:06.745Z :: Novig: https://app.novig.us/AppEntry
