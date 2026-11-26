@@ -21,3 +21,5 @@ NEW TODD PLAY: 1st Half Total 69.5 -110 :: raw: "@everyone ov69.5 -110 1h port s
 NEW TODD PLAY: Total 153.5 -114 :: raw: "@everyone ov153.5 -114 Portland st (at the half" :: msg 1575286338041684111 :: posted 2026-11-25T23:05:30.394Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 18:22:08 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 39.5 -120 :: raw: "@everyone ov39.5 -120 syr tt 1h" :: msg 1575290429090562169 :: posted 2026-11-25T23:21:45.776Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 18:38:28 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 78.5 -110 :: raw: "@everyone Ov78.5 -110 Charleston cbb 1h" :: msg 1575294562312650916 :: posted 2026-11-25T23:38:11.213Z :: Novig: https://app.novig.us/AppEntry
