@@ -1185,7 +1185,8 @@
    "pregame_total": 139.5,
    "alerted_at": "2026-11-25T18:48:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 127.5 \u2014 West Florida at N'Western St (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 127.5 (gap -19.5, bar 5) | H1 54 | as of 18:48:02 ET"
+   "alert_detail": "PLAY: Under 127.5 \u2014 West Florida at N'Western St (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 127.5 (gap -19.5, bar 5) | H1 54 | as of 18:48:02 ET",
+   "final": true
   },
   "401920549": {
    "matchup": "Kennesaw St at Charleston",
@@ -1211,7 +1212,8 @@
    "pregame_total": 168.5,
    "alerted_at": "2026-11-25T18:55:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 178.5 -115 \u2014 CSU Northridge at Weber St (PACE) | pace proj 170.0 (H1 85 x 2) vs live total 178.5 (gap -8.5, bar 5) | H1 85 | as of 18:55:01 ET"
+   "alert_detail": "PLAY: Under 178.5 -115 \u2014 CSU Northridge at Weber St (PACE) | pace proj 170.0 (H1 85 x 2) vs live total 178.5 (gap -8.5, bar 5) | H1 85 | as of 18:55:01 ET",
+   "final": true
   },
   "401911241": {
    "matchup": "Bethune at Richmond",
@@ -1224,7 +1226,8 @@
    "pregame_total": 149.5,
    "alerted_at": "2026-11-25T18:49:02",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 154.5 \u2014 Bethune at Richmond (TRAILING FAVE) | pregame favorite Richmond trails at half (Bethune leads); pace is slow (proj 150.0 vs live 154.5) \u2014 the comeback-fave rule bets Over anyway | H1 75 | as of 18:49:01 ET"
+   "alert_detail": "PLAY: Over 154.5 \u2014 Bethune at Richmond (TRAILING FAVE) | pregame favorite Richmond trails at half (Bethune leads); pace is slow (proj 150.0 vs live 154.5) \u2014 the comeback-fave rule bets Over anyway | H1 75 | as of 18:49:01 ET",
+   "final": true
   },
   "401909720": {
    "matchup": "UAlbany at Syracuse",
@@ -1237,17 +1240,21 @@
    "pregame_total": 145.5,
    "alerted_at": "2026-11-25T18:51:02",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 129.5 -120 \u2014 UAlbany at Syracuse (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 129.5 (gap -25.5, bar 5) | H1 52 | as of 18:51:01 ET"
+   "alert_detail": "PLAY: Under 129.5 -120 \u2014 UAlbany at Syracuse (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 129.5 (gap -25.5, bar 5) | H1 52 | as of 18:51:01 ET",
+   "final": true
   },
   "401909568": {
    "matchup": "UConn at Duke",
    "date": "2026-11-26",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "UConn",
    "dog_team": "Duke",
-   "pregame_total": 145.5
+   "pregame_total": 145.5,
+   "alerted_at": "2026-11-25T20:06:04",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 149.5 \u2014 Duke at UConn (TRAILING FAVE) | pregame favorite UConn trails at half (Duke leads); pace is slow (proj 140.0 vs live 149.5) \u2014 the comeback-fave rule bets Over anyway | H1 70 | as of 20:06:03 ET"
   },
   "401922285": {
    "matchup": "SC Upstate at The Citadel",
@@ -1426,10 +1433,10 @@
    "date": "2026-11-26",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.5,
    "fav_team": "VCU",
    "dog_team": "Washington",
-   "pregame_total": 145.5
+   "pregame_total": 143.5
   },
   "401917544": {
    "matchup": "Pacific at Jax State",
