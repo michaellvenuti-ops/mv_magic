@@ -1,5 +1,5 @@
 {
- "through": "2026-11-25",
+ "through": "2026-11-26",
  "games": [
   {
    "away": "New England Patriots",
@@ -1622,14 +1622,24 @@
    "ties": 1
   },
   {
-   "date": "2026-11-25",
    "away": "Green Bay Packers",
-   "home": "Los Angeles Rams",
+   "date": "2026-11-25",
+   "final": "13-26",
    "first": "Los Angeles Rams",
-   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "home": "Los Angeles Rams",
    "lead_changes": 0,
+   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "ties": 1
+  },
+  {
+   "date": "2026-11-26",
+   "away": "Chicago Bears",
+   "home": "Detroit Lions",
+   "first": "Detroit Lions",
+   "seq": "0-3>0-10>3-10>10-10>10-12>10-19>17-19>17-26>24-26>24-29>24-35>32-35>39-35",
+   "lead_changes": 1,
    "ties": 1,
-   "final": "13-26"
+   "final": "39-35"
   }
  ],
  "tally": {
@@ -1766,14 +1776,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Chicago Bears": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 7,
    "won_when_first": 7,
-   "won_when_not_first": 1,
+   "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 70.0,
+   "scored_first_pct": 63.6,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 33.3,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Carolina Panthers": {
@@ -1887,15 +1897,15 @@
    "won_by_one_when_first_pct": 100.0
   },
   "Detroit Lions": {
-   "gp": 10,
-   "scored_first": 7,
+   "gp": 11,
+   "scored_first": 8,
    "won_when_first": 6,
    "won_when_not_first": 2,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 70.0,
-   "win_pct_when_first": 85.7,
+   "scored_first_pct": 72.7,
+   "win_pct_when_first": 75.0,
    "win_pct_when_not_first": 66.7,
-   "won_by_one_when_first_pct": 14.3
+   "won_by_one_when_first_pct": 12.5
   },
   "New York Jets": {
    "gp": 11,
@@ -1987,15 +1997,15 @@
   }
  },
  "league": {
-  "games": 163,
-  "games_with_goal": 163,
-  "home_scored_first": 83,
+  "games": 164,
+  "games_with_goal": 164,
+  "home_scored_first": 84,
   "first_team_won": 104,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.2,
   "avg_lead_changes": 1.24,
-  "home_scored_first_pct": 50.9,
-  "first_team_win_pct": 63.8
+  "home_scored_first_pct": 51.2,
+  "first_team_win_pct": 63.4
  },
  "lead_changes": [
   {
@@ -3619,14 +3629,24 @@
    "ties": 1
   },
   {
-   "date": "2026-11-25",
    "away": "Green Bay Packers",
-   "home": "Los Angeles Rams",
+   "date": "2026-11-25",
+   "final": "13-26",
    "first": "Los Angeles Rams",
-   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "home": "Los Angeles Rams",
    "lead_changes": 0,
+   "seq": "0-3>0-6>3-6>3-13>10-13>13-13>13-20>13-23>13-26",
+   "ties": 1
+  },
+  {
+   "date": "2026-11-26",
+   "away": "Chicago Bears",
+   "home": "Detroit Lions",
+   "first": "Detroit Lions",
+   "seq": "0-3>0-10>3-10>10-10>10-12>10-19>17-19>17-26>24-26>24-29>24-35>32-35>39-35",
+   "lead_changes": 1,
    "ties": 1,
-   "final": "13-26"
+   "final": "39-35"
   }
  ],
  "lead_change_team_avgs": {
@@ -3691,9 +3711,9 @@
    "avg_per_game": 2.1
   },
   "Chicago Bears": {
-   "games": 10,
-   "lead_changes": 1,
-   "avg_per_game": 0.1
+   "games": 11,
+   "lead_changes": 2,
+   "avg_per_game": 0.18
   },
   "Carolina Panthers": {
    "games": 10,
@@ -3746,9 +3766,9 @@
    "avg_per_game": 1.4
   },
   "Detroit Lions": {
-   "games": 10,
-   "lead_changes": 11,
-   "avg_per_game": 1.1
+   "games": 11,
+   "lead_changes": 12,
+   "avg_per_game": 1.09
   },
   "New York Jets": {
    "games": 11,
