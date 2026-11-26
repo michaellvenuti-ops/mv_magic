@@ -11,3 +11,8 @@
 - 2026-11-26: Clemson Tigers @ Colorado State Rams — first: Clemson Tigers (2PT, 0:12 in); lead changes 7; final 75-77
 - 2026-11-26: Stanford Cardinal @ Saint Louis Billikens — first: Saint Louis Billikens (3PT, 0:21 in); lead changes 4; final 64-66
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T14:06:36-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1236 games through 2026-11-26
+- 2026-11-26: Oklahoma Sooners @ Purdue Boilermakers — first: Oklahoma Sooners (3PT, 0:28 in); lead changes 12; final 70-63
+- 2026-11-26: Georgia Bulldogs @ Cincinnati Bearcats — first: Georgia Bulldogs (3PT, 0:17 in); lead changes 3; final 81-83
+- 2026-11-26: Army Black Knights @ UTSA Roadrunners — first: Army Black Knights (2PT, 0:23 in); lead changes 0; final 79-61
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
