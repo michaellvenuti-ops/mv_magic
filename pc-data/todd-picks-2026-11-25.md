@@ -31,3 +31,5 @@ NEW TODD PLAY: 1st Half Total 75.5 -125 :: raw: "@everyone ov75.5 1h Memphis -12
 NEW TODD PLAY: Total 160.5 -121 :: raw: "@everyone Ov160.5 -121 st Thomas" :: msg 1575309304259551383 :: posted 2026-11-26T00:36:45.967Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-25 20:36:59 ET — 1 NEW Todd play
 NEW TODD PLAY: Todd play (in-play CBB) -132 :: raw: "@everyone unc Wilmington -132 ..risk 1.1 for .83" :: msg 1575324391686799515 :: posted 2026-11-26T01:36:43.090Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-25 20:40:26 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 37.5 -115 :: raw: "@everyone ov37.5 attempts love -115 packers .risk .58 for .50" :: msg 1575325207907008583 :: posted 2026-11-26T01:39:57.692Z :: Novig: https://app.novig.us/AppEntry
