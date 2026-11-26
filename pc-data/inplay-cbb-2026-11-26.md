@@ -11,3 +11,5 @@ NEW IN-PLAY CBB: PLAY: Over 147.5 -115 — Maryland at San Diego St (TRAILING FA
 NEW IN-PLAY CBB: PLAY: Under 128.5 -110 — Boston College at UCF (PACE) | pace proj 102.0 (H1 51 x 2) vs live total 128.5 (gap -26.5, bar 5) | H1 51 | as of 14:42:01 ET
 ## 2026-11-26 14:58:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 143.5 -120 — Arizona St at South Carolina (TRAILING FAVE) | pregame favorite Arizona St trails at half (South Carolina leads); pace is slow (proj 140.0 vs live 143.5) — the comeback-fave rule bets Over anyway | H1 70 | as of 14:58:01 ET
+## 2026-11-26 15:27:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 153.5 -120 — Georgetown at Texas (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 153.5 (gap -11.5, bar 5) | H1 71 | as of 15:27:01 ET
