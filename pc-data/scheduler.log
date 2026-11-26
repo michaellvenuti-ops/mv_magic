@@ -12313,3 +12313,9 @@
 [2026-11-26 14:06:42 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=6 queued_total=69
 [2026-11-26 14:06:43 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=69, limit=1)
 [2026-11-26 14:06:43 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 14:36:43 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 14:37:38 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 126 events (116 with odds), db total 326468 snapshots / 1933 events, feeds ok 5 fail 1
+[2026-11-26 14:38:07 ET] dh_arbitrage.py: OK in 29s — arbitrage: no new qualifying pairs (silent).
+[2026-11-26 14:38:23 ET] dh_kalshi_poly_arb.py: OK in 16s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 14:38:25 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Penn St. Maryland Nov-28 3:30 PM — Total — Over 45.5 Caesars -135 ($108) / Under 48 ProphetX +104 ($92) — both win 46, 47 — push at 48 — land +
+[2026-11-26 14:38:25 ET] syncing to GitHub (wide-builds banked new builds)
