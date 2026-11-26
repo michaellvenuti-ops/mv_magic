@@ -73,3 +73,5 @@ NEW IN-PLAY CBB: PLAY: Under 157.5 -120 — SMU at Utah State (PACE) | pace proj
 NEW IN-PLAY CBB: PLAY: Over 141.5 -110 — Omaha at UC Davis (TRAILING FAVE) | pregame favorite UC Davis trails at half (Omaha leads); pace is slow (proj 128.0 vs live 141.5) — the comeback-fave rule bets Over anyway | H1 64 | as of 20:46:03 ET
 ## 2026-11-25 20:49:04 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 150.5 -120 — Bakersfield at Pepperdine (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 150.5 (gap -18.5, bar 5) | H1 66 | as of 20:49:03 ET
+## 2026-11-25 21:40:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 117.5 -115 — E Michigan at UTEP (PACE) | pace proj 108.0 (H1 54 x 2) vs live total 117.5 (gap -9.5, bar 5) | H1 54 | as of 21:40:02 ET
