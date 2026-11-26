@@ -12428,3 +12428,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 17:03:45 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 17:03:47 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 17:03:47 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 17:33:47 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 17:34:44 ET] odds_recorder.py: OK in 27s — SUMMARY: recorded 142 events (124 with odds), db total 326894 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 17:35:00 ET] dh_arbitrage.py: OK in 16s — ARBITRAGE: NBA PHI 76ers IND Pacers Nov-27 7:45 PM / Nov-27 7:45 PM / table / Points I. Zubac Under 13.5 / Alt Points I. Zubac 14+ / table | Bet365 | Fanatics-N
+[2026-11-26 17:35:16 ET] dh_kalshi_poly_arb.py: OK in 16s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 17:35:16 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF 20 Florida Florida St. Nov-27 3:30 PM — Total — Over 52.5 Fanatics-NJ -120 ($107) / Under 53 ProphetX +112 ($93) — win+push at 53 — push +$89.1
+[2026-11-26 17:35:16 ET] syncing to GitHub (wide-builds banked new builds)
