@@ -12507,3 +12507,24 @@
 [2026-11-26 22:38:38 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 142 events (115 with odds), db total 327604 snapshots / 1933 events, feeds ok 6 fail 0
 [2026-11-26 22:38:40 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA DEN Nuggets UTA Jazz Nov-27 9:45 PM — Total — Over 229 ProphetX -102 ($99) / Under 229.5 Bally Bet -105 ($101) — win+push at 229 — push +$96.19, 
 [2026-11-26 22:38:40 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-26 23:08:40 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 23:10:18 ET] dh_low_holds.py: FAILED (exit 2) in 98s — A small positive hold is a near-zero-cost hedge for churning volume / clearing qualifying bets — NOT a guaranteed profit.
+[2026-11-26 23:11:37 ET] dh_game_middles.py: FAILED (exit 2) in 79s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-26 23:11:57 ET] dh_nhl_totals_middles.py: OK in 20s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-26 23:15:18 ET] dh_key_number_middles.py: FAILED (exit 2) in 202s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-26 23:18:39 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 201s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-26 23:19:19 ET] hung_number.py: FAILED (exit 2) in 40s — write state. Re-run with --dump and send the dump file.
+[2026-11-26 23:19:23 ET] rlm.py: OK in 5s
+[2026-11-26 23:19:27 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-26 23:19:30 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-26 23:20:44 ET] dh_prop_middles.py: FAILED (exit 2) in 75s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-26 23:22:02 ET] dh_sog_middles.py: FAILED (exit 2) in 78s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-26 23:22:04 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 26 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -1.3c vs +EV.
+[2026-11-26 23:22:05 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 165 total tallied.
+[2026-11-26 23:22:06 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-26 23:22:07 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-26 23:22:08 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 1249 total tallied.
+[2026-11-26 23:22:10 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 23:22:10 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 23:22:11 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-26 23:22:11 ET] syncing to GitHub (regular 10-minute sync)
