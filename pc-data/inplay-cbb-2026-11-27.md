@@ -41,3 +41,5 @@ NEW IN-PLAY CBB: PLAY: Over 128.5 — Cincinnati at Boston College (TRAILING FAV
 NEW IN-PLAY CBB: PLAY: Under 161.5 — Marquette at Texas A&M (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 161.5 (gap -7.5, bar 5) | H1 77 | as of 17:51:02 ET
 ## 2026-11-27 17:51:09 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 134.5 -110 — Old Dominion at Virginia Tech (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 134.5 (gap -12.5, bar 5) | H1 61 | as of 17:51:02 ET
+## 2026-11-27 17:52:07 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 161.5 — Marquette at Texas A&M (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 161.5 (gap -7.5, bar 5) | H1 77 | as of 17:52:06 ET
