@@ -49,3 +49,5 @@ NEW IN-PLAY CBB: PLAY: Under 134.5 -110 — Old Dominion at Virginia Tech (PACE)
 NEW IN-PLAY CBB: PLAY: Under 137.5 -120 — Niagara at Lafayette (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 137.5 (gap -11.5, bar 5) | H1 63 | as of 18:01:16 ET
 ## 2026-11-27 18:02:06 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 136.5 -115 — Villanova at Kansas (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 136.5 (gap -32.5, bar 5) | H1 52 | as of 18:02:05 ET
+## 2026-11-27 18:15:20 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 148.5 -115 — Texas at Saint Mary's (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 148.5 (gap -24.5, bar 5) | H1 62 | as of 18:15:18 ET
