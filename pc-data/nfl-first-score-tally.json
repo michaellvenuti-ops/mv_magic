@@ -1,5 +1,5 @@
 {
- "through": "2026-11-26",
+ "through": "2026-11-27",
  "games": [
   {
    "away": "New England Patriots",
@@ -1642,14 +1642,14 @@
    "ties": 1
   },
   {
-   "date": "2026-11-26",
    "away": "Kansas City Chiefs",
-   "home": "Buffalo Bills",
+   "date": "2026-11-26",
+   "final": "10-13",
    "first": "Buffalo Bills",
-   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "home": "Buffalo Bills",
    "lead_changes": 2,
-   "ties": 1,
-   "final": "10-13"
+   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "ties": 1
   },
   {
    "away": "Philadelphia Eagles",
@@ -1660,6 +1660,16 @@
    "lead_changes": 1,
    "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
    "ties": 0
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Denver Broncos",
+   "home": "Pittsburgh Steelers",
+   "first": "Pittsburgh Steelers",
+   "seq": "0-7>0-14>2-14>5-14>5-17>5-24>5-27",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "5-27"
   }
  ],
  "tally": {
@@ -1741,13 +1751,13 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Pittsburgh Steelers": {
-   "gp": 10,
-   "scored_first": 5,
-   "won_when_first": 4,
+   "gp": 11,
+   "scored_first": 6,
+   "won_when_first": 5,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
-   "win_pct_when_first": 80.0,
+   "scored_first_pct": 54.5,
+   "win_pct_when_first": 83.3,
    "win_pct_when_not_first": 40.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -1994,14 +2004,14 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Denver Broncos": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 6,
    "won_when_first": 5,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 60.0,
+   "scored_first_pct": 54.5,
    "win_pct_when_first": 83.3,
-   "win_pct_when_not_first": 75.0,
+   "win_pct_when_not_first": 60.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Kansas City Chiefs": {
@@ -2017,15 +2027,15 @@
   }
  },
  "league": {
-  "games": 166,
-  "games_with_goal": 166,
-  "home_scored_first": 86,
-  "first_team_won": 105,
+  "games": 167,
+  "games_with_goal": 167,
+  "home_scored_first": 87,
+  "first_team_won": 106,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.2,
-  "avg_lead_changes": 1.24,
-  "home_scored_first_pct": 51.8,
-  "first_team_win_pct": 63.3
+  "avg_lead_changes": 1.23,
+  "home_scored_first_pct": 52.1,
+  "first_team_win_pct": 63.5
  },
  "lead_changes": [
   {
@@ -3669,14 +3679,14 @@
    "ties": 1
   },
   {
-   "date": "2026-11-26",
    "away": "Kansas City Chiefs",
-   "home": "Buffalo Bills",
+   "date": "2026-11-26",
+   "final": "10-13",
    "first": "Buffalo Bills",
-   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "home": "Buffalo Bills",
    "lead_changes": 2,
-   "ties": 1,
-   "final": "10-13"
+   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "ties": 1
   },
   {
    "away": "Philadelphia Eagles",
@@ -3687,6 +3697,16 @@
    "lead_changes": 1,
    "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
    "ties": 0
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Denver Broncos",
+   "home": "Pittsburgh Steelers",
+   "first": "Pittsburgh Steelers",
+   "seq": "0-7>0-14>2-14>5-14>5-17>5-24>5-27",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "5-27"
   }
  ],
  "lead_change_team_avgs": {
@@ -3726,9 +3746,9 @@
    "avg_per_game": 0.7
   },
   "Pittsburgh Steelers": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 9,
-   "avg_per_game": 0.9
+   "avg_per_game": 0.82
   },
   "Baltimore Ravens": {
    "games": 11,
@@ -3841,9 +3861,9 @@
    "avg_per_game": 1.73
   },
   "Denver Broncos": {
-   "games": 10,
+   "games": 11,
    "lead_changes": 12,
-   "avg_per_game": 1.2
+   "avg_per_game": 1.09
   },
   "Kansas City Chiefs": {
    "games": 11,
