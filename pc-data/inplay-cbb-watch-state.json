@@ -437,7 +437,8 @@
   "401919021": {
    "matchup": "AU Montgomery at UAB",
    "date": "2026-11-27",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401902282": {
    "matchup": "Bellarmine at Butler",
@@ -505,12 +506,15 @@
   "401912213": {
    "matchup": "Radford at American",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 6.5,
    "fav_team": "American",
    "dog_team": "Radford",
-   "pregame_total": 141.5
+   "pregame_total": 141.5,
+   "alerted_at": "2026-11-27T17:04:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 142.5 -115 \u2014 Radford at American (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 142.5 (gap -6.5, bar 5) | H1 68 | as of 17:04:02 ET"
   },
   "401911212": {
    "matchup": "UMBC at G Washington",
