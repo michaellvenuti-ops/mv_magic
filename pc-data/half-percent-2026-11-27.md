@@ -1,0 +1,13 @@
+## 2026-11-27T11:11:12-05:00 — Half Percent Club: 1 candidate
+- PICK: AYA (Aya Gold & Silver Inc. Common Shares) — LONG, one trade today, target +0.5%, then done.
+- Catalyst: Premarket momentum — +11.03% this morning on 646,207 premarket shares (no earnings listing found for today/yesterday; underlying news not independently verified) (source: Nasdaq quote info / Yahoo Finance screeners).
+- Premarket: $22.05 (+11.03% vs prior close), 646,207 shares traded premarket, status Open, last trade Nov 27, 2026 11:11 AM ET (source: Nasdaq quote info).
+- Market cap: $3.18B (Nasdaq earnings calendar / Yahoo Finance).
+- Spread at read: bid $22.04 / ask $22.07 (0.14%).
+- ENTRY PLAN: enter at the open / first minutes inside $22.01-$22.09 (reference $22.05). Modeled grading (v3): the actual 9:30 AM open is the entry, with target/stop rebased +0.5%/-0.5% off that open.
+- V3 HEAD-FAKE CHECKS: at 9:28 AM ET the pick is re-checked — if the gap has left the +3%..+12% band or the price is under the plan stop, the pick is CANCELLED before the bell (a cancel note lands here). And the trade only counts if the first two 5-min bars close at/above the rebased stop (open confirmation); otherwise it grades NO TRADE.
+- PLAN TARGET $22.16 (+0.5% off reference) — PLAN STOP $21.94 (-0.5%) — TIME STOP: out by 10:00 AM ET if neither hits. If the 9:30 AM open prints below the plan stop, the day grades NO TRADE (no modeled position).
+- Modeled size: $10,000 flat for the running record. Michael places his own trade at his own small live size — Chet never places trades.
+- Running record: 2W-1L-0T-9NT, modeled P/L $50.00 on $10,000 flat modeled size.
+- Strategy source: The Half Percent Club reel (DfX8wkcxURK). The creator's streak / YTD claims are UNVERIFIED.
+- Also screened, did not clear: KT (premarket move -2.56% under +3%); NAT (price $6.50 outside $10-$500); NVDA (premarket move -0.83% under +3%); BBD (price $2.80 outside $10-$500); SNDK (premarket move +12.61% over the +12% cap (fade territory - v2)).
