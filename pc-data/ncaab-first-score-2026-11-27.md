@@ -17,3 +17,17 @@
 - 2026-11-27: Clarke Pride @ South Dakota Coyotes — first: South Dakota Coyotes (FT, 1:38 in); lead changes 0; final 47-99
 - 2026-11-27: Navy Midshipmen @ Fairfield Stags — first: Fairfield Stags (2PT, 0:17 in); lead changes 0; final 59-75
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-27T18:02:39-05:00 -- NCAAB FIRST SCORE (PC): 12 new final(s) tallied; season 1274 games through 2026-11-27
+- 2026-11-27: Georgetown Hoyas @ UCLA Bruins — first: UCLA Bruins (2PT, 1:46 in); lead changes 0; final 63-75
+- 2026-11-27: Southern Jaguars @ Vanderbilt Commodores — first: Vanderbilt Commodores (2PT, 0:25 in); lead changes 0; final 56-111
+- 2026-11-27: Memphis Tigers @ Wake Forest Demon Deacons — first: Wake Forest Demon Deacons (3PT, 1:07 in); lead changes 1; final 88-85
+- 2026-11-27: Maine Black Bears @ Le Moyne Dolphins — first: Maine Black Bears (FT, 0:46 in); lead changes 14; final 90-86
+- 2026-11-27: Texas State Bobcats @ Louisiana Tech Bulldogs — first: Louisiana Tech Bulldogs (2PT, 0:26 in); lead changes 7; final 78-70
+- 2026-11-27: Princeton Tigers @ UNC Wilmington Seahawks — first: Princeton Tigers (3PT, 0:32 in); lead changes 5; final 66-68
+- 2026-11-27: TCU Horned Frogs @ Baylor Bears — first: Baylor Bears (2PT, 0:29 in); lead changes 7; final 88-69
+- 2026-11-27: Auburn Montgomery Senators @ UAB Blazers — first: UAB Blazers (FT, 0:16 in); lead changes 4; final 62-102
+- 2026-11-27: Bellarmine Knights @ Butler Bulldogs — first: Bellarmine Knights (2PT, 0:48 in); lead changes 1; final 56-92
+- 2026-11-27: Colgate Raiders @ Hofstra Pride — first: Colgate Raiders (3PT, 0:42 in); lead changes 4; final 75-49
+- 2026-11-27: Maryland Terrapins @ Oregon Ducks — first: Oregon Ducks (3PT, 0:16 in); lead changes 2; final 73-88
+- 2026-11-27: UMBC Retrievers @ George Washington Revolutionaries — first: George Washington Revolutionaries (3PT, 0:17 in); lead changes 0; final 51-91
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
