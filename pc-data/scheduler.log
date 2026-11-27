@@ -12752,3 +12752,7 @@
 [2026-11-27 09:14:22 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-27.json (5 markets).
 [2026-11-27 09:27:35 ET] yahoo_brief.py: OK in 793s — SUMMARY: signed_in=True, rows=123, matched=49, lanes={'urgent': 2, 'miles_earn_and_burn': 2, 'doctor_of_credit': 1, 'gift_cards': 32, 'sportsbook': 12}, errors=
 [2026-11-27 09:27:35 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 09:57:38 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 09:58:35 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (113 with odds), db total 329166 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 09:58:37 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Boston College 4 Miami (FL) Nov-28 12:00 PM — Total — Over 52.5 Fanatics-NJ -120 ($107) / Under 53 ProphetX +112 ($93) — win+push at 53 — push 
+[2026-11-27 09:58:37 ET] syncing to GitHub (wide-builds banked new builds)
