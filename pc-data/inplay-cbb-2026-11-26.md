@@ -31,3 +31,5 @@ NEW IN-PLAY CBB: PLAY: Over 155.5 -115 — LSU at SMU (TRAILING FAVE) | pregame 
 NEW IN-PLAY CBB: PLAY: Under 131.5 -110 — UC Davis at Jax State (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 131.5 (gap -9.5, bar 5) | H1 61 | as of 20:53:07 ET
 ## 2026-11-26 21:59:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 180.5 -110 — Louisville at St John's (TRAILING FAVE) | pregame favorite St John's trails at half (Louisville leads); pace agrees (proj 192.0 vs live 180.5) — comeback-fave Over | H1 96 | as of 21:59:01 ET
+## 2026-11-26 23:10:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 130.5 — Pacific at Omaha (PACE) | pace proj 114.0 (H1 57 x 2) vs live total 130.5 (gap -16.5, bar 5) | H1 57 | as of 23:10:04 ET
