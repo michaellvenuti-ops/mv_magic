@@ -12455,3 +12455,9 @@
 [2026-11-26 20:10:08 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 20:10:10 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 20:10:10 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 20:40:10 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 20:41:08 ET] odds_recorder.py: OK in 28s — SUMMARY: recorded 142 events (118 with odds), db total 327320 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 20:41:27 ET] dh_arbitrage.py: OK in 19s — ARBITRAGE: NCAAB Oakland 1 Houston Nov-27 7:30 PM / Nov-27 7:30 PM / table / Total Over 145.5 / Alt Total Under 148 / table | Caesars | Bet365
+[2026-11-26 20:41:45 ET] dh_kalshi_poly_arb.py: OK in 18s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 20:41:47 ET] wide_builds.py: OK in 1s — NEW BUILD: NCAAF Buffalo Akron Nov-27 12:00 PM — Total — Over 50 ProphetX +112 ($93) / Under 50.5 theScore -120 ($107) — win+push at 50 — push +$89.17, miss -3.
+[2026-11-26 20:41:47 ET] syncing to GitHub (wide-builds banked new builds)
