@@ -337,7 +337,8 @@
   "401929407": {
    "matchup": "Clarke at South Dakota",
    "date": "2026-11-27",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401929181": {
    "matchup": "South Alabama at Fresno St",
@@ -350,7 +351,8 @@
    "pregame_total": 144.5,
    "alerted_at": "2026-11-27T15:01:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 151.5 -120 \u2014 Fresno St at South Alabama (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 151.5 (gap -7.5, bar 5) | H1 72 | as of 15:01:02 ET"
+   "alert_detail": "PLAY: Under 151.5 -120 \u2014 Fresno St at South Alabama (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 151.5 (gap -7.5, bar 5) | H1 72 | as of 15:01:02 ET",
+   "final": true
   },
   "401921224": {
    "matchup": "Navy at Fairfield",
@@ -394,22 +396,28 @@
   "401928468": {
    "matchup": "Texas St at Louisiana Tech",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 4.5,
    "fav_team": "Texas St",
    "dog_team": "Louisiana Tech",
-   "pregame_total": 137.5
+   "pregame_total": 137.5,
+   "alerted_at": "2026-11-27T15:55:04",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 147.5 \u2014 Texas St at Louisiana Tech (TRAILING FAVE) | pregame favorite Texas St trails at half (Louisiana Tech leads); pace agrees (proj 152.0 vs live 147.5) \u2014 comeback-fave Over | H1 76 | as of 15:55:03 ET"
   },
   "401924738": {
    "matchup": "Princeton at UNC Wilmington",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 7.5,
    "fav_team": "UNC Wilmington",
    "dog_team": "Princeton",
-   "pregame_total": 150.5
+   "pregame_total": 150.5,
+   "alerted_at": "2026-11-27T15:55:09",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 141.5 -120 \u2014 Princeton at UNC Wilmington (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 141.5 (gap -17.5, bar 5) | H1 62 | as of 15:55:03 ET"
   },
   "401920542": {
    "matchup": "TCU at TBD",
@@ -429,12 +437,15 @@
   "401902282": {
    "matchup": "Bellarmine at Butler",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 19.5,
    "fav_team": "Butler",
    "dog_team": "Bellarmine",
-   "pregame_total": 149.5
+   "pregame_total": 149.5,
+   "alerted_at": "2026-11-27T15:55:12",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 140.5 -115 \u2014 Bellarmine at Butler (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 140.5 (gap -14.5, bar 5) | H1 63 | as of 15:55:03 ET"
   },
   "401921417": {
    "matchup": "La Salle at Bucknell",
@@ -494,7 +505,7 @@
    "spread": 21.5,
    "fav_team": "G Washington",
    "dog_team": "UMBC",
-   "pregame_total": 150.5
+   "pregame_total": 151.5
   },
   "401929283": {
    "matchup": "Cincinnati at Boston College",
@@ -571,10 +582,10 @@
    "date": "2026-11-27",
    "alerted": false,
    "fav": "away",
-   "spread": 9.5,
+   "spread": 10.5,
    "fav_team": "Michigan",
    "dog_team": "Kansas St",
-   "pregame_total": 164.5
+   "pregame_total": 165.5
   },
   "401913531": {
    "matchup": "Western KY at Illinois",
