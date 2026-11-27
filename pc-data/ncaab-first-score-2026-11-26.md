@@ -35,3 +35,6 @@
 - 2026-11-26: UCLA Bruins @ Saint Mary's Gaels — first: Saint Mary's Gaels (3PT, 0:34 in); lead changes 2; final 70-85
 - 2026-11-26: USC Trojans @ Utah State Aggies — first: USC Trojans (2PT, 0:13 in); lead changes 5; final 74-78
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T21:25:24-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1246 games through 2026-11-26
+- 2026-11-26: TCU Horned Frogs @ Creighton Bluejays — first: Creighton Bluejays (3PT, 0:22 in); lead changes 18; final 87-95
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
