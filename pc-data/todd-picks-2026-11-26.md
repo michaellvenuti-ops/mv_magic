@@ -57,3 +57,5 @@ NEW TODD PLAY: Total 6.5 175 :: raw: "And I got greedy and played tie 1q tcu ins
 NEW TODD PLAY: 1st Half Total 91.5 -125 :: raw: "@everyone ov91.5 -125 1h stjohns" :: msg 1575698684140593315 :: posted 2026-11-27T02:24:01.365Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 22:05:14 ET — 1 NEW Todd play
 NEW TODD PLAY: Spread +12.5 -120 :: raw: "@everyone stjohns +12.5 -120 (at the half" :: msg 1575708926387683339 :: posted 2026-11-27T03:04:43.307Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 22:06:21 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 175.5 -114 :: raw: "@everyone ov175.5 -114 Alabama cbb" :: msg 1575709323240275989 :: posted 2026-11-27T03:06:17.924Z :: Novig: https://app.novig.us/AppEntry
