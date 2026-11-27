@@ -18,3 +18,9 @@
 ## 2026-11-26T17:00:24-05:00 — 85 games, 0 leads credited, 3 started games skipped
 ## 2026-11-26T18:55:43-05:00 — pack move, never credited: North Dakota State @ San Jose State | 2026-11-26 spread (DraftKings, bet365)
 ## 2026-11-26T18:55:44-05:00 — 85 games, 0 leads credited, 3 started games skipped
+## 2026-11-26T21:22:43-05:00 — pack move, never credited: Mississippi State @ Ole Miss | 2026-11-26 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-26T21:22:43-05:00 — pack move, never credited: Minnesota @ Wisconsin | 2026-11-26 spread (BetMGM, DraftKings, bet365)
+## 2026-11-26T21:22:43-05:00 — pack move, never credited: West Virginia @ Utah | 2026-11-26 spread (DraftKings, bet365)
+## 2026-11-26T21:22:43-05:00 — pack move, never credited: Louisiana @ Georgia State | 2026-11-26 spread (DraftKings, bet365)
+## 2026-11-26T21:22:43-05:00 — 85 games, 1 leads credited, 5 started games skipped
+LEAD: Caesars on Louisiana @ Georgia State | 2026-11-26 (spread)
