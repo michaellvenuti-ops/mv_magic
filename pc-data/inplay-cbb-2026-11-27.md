@@ -11,3 +11,5 @@ NEW IN-PLAY CBB: PLAY: Under 134.5 — UMass Lowell at Hampton (PACE) | pace pro
 NEW IN-PLAY CBB: PLAY: Over 158.5 -115 — Iowa State at St John's (TRAILING FAVE) | pregame favorite St John's trails at half (Iowa State leads); pace is slow (proj 156.0 vs live 158.5) — the comeback-fave rule bets Over anyway | H1 78 | as of 13:58:11 ET
 ## 2026-11-27 14:44:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 146.5 -120 — Memphis at Wake Forest (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 146.5 (gap -20.5, bar 5) | H1 63 | as of 14:44:02 ET
+## 2026-11-27 14:49:22 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 132.5 -115 — Navy at Fairfield (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 14:49:21 ET
