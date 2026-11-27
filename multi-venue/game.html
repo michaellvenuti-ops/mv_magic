@@ -440,6 +440,14 @@ function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts)
   // not the same bet (BUF/AKR Nov 27: Poly 47.5 prices under a 49.5 label
   // read as a cross-line arb).
   opts = opts || {};
+  // A venue price with no finite prob (e.g. Winner-only games carry
+  // book_price null, so probFromAmerican(null) is null) is absent, not
+  // a price — otherwise Math.min coerces null to 0 and the Best lookup
+  // throws. NOTE: isFinite(null) is true (null coerces to 0), so the
+  // typeof check is load-bearing here.
+  const valid = (p) => (p && typeof p.prob === 'number' && isFinite(p.prob)) ? p : null;
+  book = valid(book); kalshi = valid(kalshi); poly = valid(poly);
+  if (opts.novig) opts.novig = valid(opts.novig);
   const cands = [['DraftKings',book],['Kalshi',kalshi],['Polymarket',poly],['Novig',opts.novig]].filter(x=>x[1]);
   pushDepthRow(label, kalshi, poly ? {mid: polyMarketId, tok: polyTokenIdx, prob: poly.prob} : null);
   const polyMismatch = opts.polyLine!=null && opts.line!=null && opts.polyLine!==opts.line;
