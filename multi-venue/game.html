@@ -38,7 +38,7 @@ label{margin-right:14px;font-size:14px}
 <div id="game"></div>
 
 <div class='foot'>
-<b>How it works.</b> Kalshi prices come from the Mac scanner (public Kalshi API, every 5 min) — Kalshi blocks browser requests, so its prices arrive as a data file in this repo. Novig prices come from Novig's public catalog, refreshed with the dashboard data (every 5 min). Polymarket prices are fetched LIVE in your browser straight from Polymarket's Gamma API (one batched call) — click any Polymarket price to see its live CLOB order book. Book prices are DraftKings via ESPN, as captured by the Kalshi scan. The "Best book" column shows the best price across the books in the dashboard data file. "Best" = lowest cost to buy $1 of payout on that exact outcome at that exact line; when Polymarket doesn't offer the book's exact line, its nearest lines are shown separately and never compared as if they were the same bet. Polymarket prices exclude its trading fee; Kalshi's 7% fee on winnings is not reflected in the ask. The Bet button copies a ticket ("BET — venue: game — market @ price — via Chet") to paste to Chet in chat — it places nothing. This page reads the same live data files as the dashboard, so it stays fresh on the same cadence with no republishing per cycle. One game per page, no heavy assets — built to stay fast with dozens of live games open at once.<br>
+<b>How it works.</b> Kalshi prices come from the Mac scanner (public Kalshi API, every 5 min) — Kalshi blocks browser requests, so its prices arrive as a data file in this repo. Novig prices come from Novig's public catalog, refreshed with the dashboard data (every 5 min). Polymarket prices are fetched LIVE in your browser straight from Polymarket's Gamma API (one batched call) — click any Polymarket price to see its live CLOB order book. Book prices are DraftKings via ESPN, as captured by the Kalshi scan. The "Best book" column shows the best price across the books in the dashboard data file. "Best" = lowest cost to buy $1 of payout on that exact outcome at that exact line; when Polymarket doesn't offer the book's exact line, its nearest lines are shown separately and never compared as if they were the same bet. Polymarket prices exclude its trading fee; Kalshi's 7% fee on winnings is not reflected in the ask. Book limits are n/a — books do not publish limits and limits are account-specific, so no book depth figure is ever invented. The Bet button copies a ticket ("BET — venue: game — market @ price — via Chet") to paste to Chet in chat — it places nothing. This page reads the same live data files as the dashboard, so it stays fresh on the same cadence with no republishing per cycle. One game per page, no heavy assets — built to stay fast with dozens of live games open at once.<br>
 <a href="../multi-venue-dashboard.html">Back to dashboard</a> · <a href="https://michaellvenuti-ops.github.io/mv_magic/">Back to HQ hub</a>
 </div>
 
@@ -47,7 +47,11 @@ const GAMMA = 'https://gamma-api.polymarket.com';
 const CLOB = 'https://clob.polymarket.com';
 let K = null, PMAP = null, POLY = {}, N = null, B = null;   // K: kalshi-prices.json, PMAP: poly-map.json, POLY: marketId -> gamma market, N: novig-prices.json, B: book-prices.json
 let lastPolyAt = null, polyStale = false;
+let PDEPTH_CACHE = new Map(); // CLOB token -> {at, book}; 5-min cache shared by depth fills + popup
+let PDEPTH_INFLIGHT = new Map(); // token -> Promise<book> (dedupe concurrent fetches)
+const PDEPTH_TTL_MS = 5 * 60 * 1000;
 let BET_TICKETS = [];   // ticket strings for Bet buttons; index stored in data-bet
+let DEPTH_ROWS = []; // {label, kLevels, kDollars, polyMid, polyTok, polyProb} — collected during render for the liquidity section
 // Live-game window: a game is treated as in play from kickoff until 5h after
 // kickoff (covers NFL/CFB/CBB game length). Past that, the final score is not
 // tracked by this dashboard, so the page says so instead of claiming LIVE.
@@ -98,7 +102,37 @@ function cellHtml(priceProb, isBest, extra){
   if (!priceProb) return '<td class="num muted">—</td>';
   const am = americanFromProb(priceProb.prob);
   const cls = isBest ? ' class="num best"' : ' class="num"';
-  return '<td'+cls+'>' + cents(priceProb.prob) + ' <span class="muted">(' + fmtAmerican(am) + ')</span>' + (extra||'') + '</td>';
+  return '<td'+cls+'>' + cents(priceProb.prob) + ' <span class="muted">(' + fmtAmerican(am) + ')</span>' + depthSuffix(priceProb) + (extra||'') + '</td>';
+}
+function fmtMoney(d){
+  // Compact dollars: $790 under $1,000; $6.4k / $40.7k above (1 decimal for k).
+  if (d==null || !isFinite(d) || d<=0) return null;
+  if (d < 1000) return '$' + Math.round(d);
+  return '$' + (d/1000).toFixed(1).replace(/\.0$/,'') + 'k';
+}
+function fmtDollarsFull(d){
+  if (d==null || !isFinite(d)) return '—';
+  return '$' + Math.round(d).toLocaleString('en-US');
+}
+function depthSuffix(p){
+  // Compact liquidity figure for an exchange price object carrying
+  // .depth = {contracts, dollars} (Kalshi scan data / Novig, when published).
+  // No depth data -> '' — nothing shown, never a fake number.
+  if (!p || !p.depth) return '';
+  const d = parseFloat(p.depth.dollars);
+  if (!isFinite(d) || d<=0) return '';
+  const m = fmtMoney(d);
+  if (!m) return '';
+  const title = (p.depth.contracts!=null)
+    ? 'At best ask: ' + Number(p.depth.contracts).toLocaleString('en-US') + ' contracts'
+    : 'Available at the best ask';
+  return ' <span class="muted" title="' + title + '">· ' + m + ' avail</span>';
+}
+function kObj(c){
+  // Kalshi comparison -> price object, carrying the optional scan depth
+  // (.depth {contracts, dollars}, .depth_levels [[price, contracts, dollars], ...]).
+  // Absent until the data builder publishes it — then it renders, no code change.
+  return c ? {prob: c.kalshi_ask, depth: c.depth||null, depthLevels: c.depth_levels||null} : null;
 }
 
 async function fetchJSON(url){
@@ -197,10 +231,98 @@ function polyAsk(market, outcomeIdx){
   if (pr!=null) return {prob: parseFloat(pr), live: false};
   return null;
 }
+function bookLevels(book){
+  // CLOB /book returns asks AND bids sorted DESCENDING by price — asks[0] is
+  // the 0.99 stub, NOT the best ask. Verified live Nov 27 on the DEN/PIT total
+  // (market 6937542): asks descend 0.99 -> 0.53 (best), bids ascend
+  // 0.01 -> 0.52 (best). Best ask = LOWEST ask price; best bid = HIGHEST bid
+  // price. Never trust array position — sort every time.
+  const num = (a) => (a||[]).map(x=>({price: parseFloat(x.price), size: parseFloat(x.size)}))
+    .filter(x=> isFinite(x.price) && isFinite(x.size) && x.size>0);
+  const asks = num(book.asks).sort((a,b)=> a.price-b.price);
+  const bids = num(book.bids).sort((a,b)=> b.price-a.price);
+  return {asks: asks, bids: bids};
+}
+function bookBestAsk(book){
+  const lv = bookLevels(book);
+  if (!lv.asks.length) return null;
+  const a = lv.asks[0];
+  return {price: a.price, size: a.size, dollars: a.price*a.size};
+}
+async function fetchPolyBook(token){
+  const now = Date.now();
+  const hit = PDEPTH_CACHE.get(token);
+  if (hit && now - hit.at < PDEPTH_TTL_MS) return hit.book;
+  const inflight = PDEPTH_INFLIGHT.get(token);
+  if (inflight) return inflight;
+  const p = fetchJSON(CLOB + '/book?token_id=' + token).then(b => {
+    PDEPTH_CACHE.set(token, {at: Date.now(), book: b});
+    PDEPTH_INFLIGHT.delete(token);
+    return b;
+  }).catch(e => { PDEPTH_INFLIGHT.delete(token); throw e; });
+  PDEPTH_INFLIGHT.set(token, p);
+  return p;
+}
+function polyTokenFor(mid, tokIdx){
+  const m = POLY[mid];
+  if (!m) return null;
+  let tokens = m.tokens || null;
+  if (!tokens){
+    try { tokens = JSON.parse(m.clobTokenIds||'[]'); } catch(e){ tokens = []; }
+  }
+  return tokens[tokIdx] || null;
+}
+async function fillPolyDepth(){
+  // Fill every <span class="pdepth"> with a compact "· $X avail" from the live
+  // CLOB book. Runs AFTER the price render and never blocks it; on failure,
+  // stale or stub data the cell is left blank — never a fake number.
+  if (typeof document === 'undefined' || !document.querySelectorAll) return;
+  const spans = Array.from(document.querySelectorAll('span.pdepth'));
+  if (!spans.length) return;
+  const byToken = new Map(); // token -> {spans, gammaProb}
+  for (const s of spans){
+    const mid = s.getAttribute('data-mid'), tok = parseInt(s.getAttribute('data-tok'),10);
+    const token = polyTokenFor(mid, tok);
+    if (!token) continue;
+    let job = byToken.get(token);
+    if (!job){
+      const m = POLY[mid];
+      const gp = m ? polyAsk(m, tok) : null;
+      job = {token: token, spans: [], gammaProb: gp ? gp.prob : null};
+      byToken.set(token, job);
+    }
+    job.spans.push(s);
+  }
+  const jobs = Array.from(byToken.values());
+  let next = 0;
+  async function worker(){
+    while (next < jobs.length){
+      const job = jobs[next++];
+      try {
+        const book = await fetchPolyBook(job.token);
+        const best = bookBestAsk(book);
+        if (!best) continue;
+        // Cross-check against Gamma's best ask: if the book's min ask disagrees
+        // by more than ~5c, the depth is untrusted (stale/stub) — show nothing.
+        if (job.gammaProb!=null && Math.abs(best.price - job.gammaProb) > 0.05) continue;
+        // No Gamma anchor at all + a 0.99 best ask is the stub pattern — skip.
+        if (job.gammaProb==null && best.price>=0.99) continue;
+        const m = fmtMoney(best.dollars);
+        if (!m) continue;
+        const txt = '· ' + m + ' avail';
+        job.spans.forEach(sp => { sp.textContent = txt; });
+      } catch(e){ /* leave blank */ }
+    }
+  }
+  const workers = [];
+  for (let i=0;i<Math.min(8, jobs.length);i++) workers.push(worker());
+  await Promise.all(workers);
+}
 
 function render(){
   if (!K || !PMAP) return; // data still loading — typing before load must not throw
   BET_TICKETS = []; // old Bet buttons are discarded with the innerHTML below
+  DEPTH_ROWS = []; // liquidity rows are re-collected on every render
   const g = (K.games||[]).find(x=> x.game===KEY.game && x.date===KEY.date) || null;
   const titleEl = document.getElementById('gameTitle');
   if (!g){
@@ -235,13 +357,74 @@ function render(){
   html += '<div class="wrap"><table><tr><th>Market</th><th>' + bookHeader + '</th><th>Kalshi</th><th>Polymarket (live)</th><th>Novig</th><th>ProphetX</th><th>Best book</th><th>Best</th></tr>';
   html += renderGameRows(g, pm, away, home);
   html += '</table></div>';
+  html += '<h2>Liquidity — top ask levels</h2><div id="liquidity"><p class="muted">Loading order-book depth…</p></div>';
   if (ls.state === 'live'){
     html += '<p class="muted">Book price is the last pregame number — no live book feed (DarkHorse has no live view). Kalshi and Polymarket prices above are live and move with the game.</p>';
   }
   html += '</div>';
   document.getElementById('game').innerHTML = html;
+  fillPolyDepth(); // compact Poly figures in the cells (async, never blocks)
+  renderLiquidity(); // fuller top-ask-levels section below the table
 }
 
+function pushDepthRow(label, kalshi, poly){
+  DEPTH_ROWS.push({label: label,
+    kLevels: (kalshi && kalshi.depthLevels) ? kalshi.depthLevels : null,
+    kDollars: (kalshi && kalshi.depth && isFinite(parseFloat(kalshi.depth.dollars))) ? parseFloat(kalshi.depth.dollars) : null,
+    polyMid: poly ? poly.mid : null, polyTok: poly ? poly.tok : null,
+    polyProb: poly ? poly.prob : null});
+}
+async function renderLiquidity(){
+  const el = document.getElementById('liquidity');
+  if (!el) return;
+  if (!DEPTH_ROWS.length){ el.innerHTML = '<p class="muted">No markets for this game — no depth to show.</p>'; return; }
+  // Fetch each distinct Poly token once (cached 5 min, 8 at a time).
+  const jobs = [];
+  const seen = {};
+  for (const r of DEPTH_ROWS){
+    if (r.polyMid==null || r.polyTok==null) continue;
+    const token = polyTokenFor(r.polyMid, r.polyTok);
+    if (!token || seen[token]) continue;
+    seen[token] = true;
+    jobs.push({token: token, gammaProb: r.polyProb});
+  }
+  const bookByToken = {}, withheld = {};
+  let next = 0;
+  async function worker(){
+    while (next < jobs.length){
+      const job = jobs[next++];
+      try {
+        const b = await fetchPolyBook(job.token);
+        const best = bookBestAsk(b);
+        // Same ~5c Gamma cross-check as the compact figures: untrusted depth is
+        // withheld, never shown as if real.
+        if (best && job.gammaProb!=null && Math.abs(best.price - job.gammaProb) > 0.05){ withheld[job.token] = true; continue; }
+        bookByToken[job.token] = b;
+      } catch(e){ bookByToken[job.token] = null; }
+    }
+  }
+  const workers = [];
+  for (let i=0;i<Math.min(8, jobs.length);i++) workers.push(worker());
+  await Promise.all(workers);
+  let h = '<p class="muted">Top ask levels — dollars = price × shares at that level. Kalshi depth comes from the scan data file (not published yet — shows nothing until it lands); Polymarket depth is live from the CLOB book. Books: n/a — books do not publish limits.</p>';
+  for (const r of DEPTH_ROWS){
+    const kTxt = r.kLevels ? r.kLevels.slice(0,3).map(lv => {
+        const p = parseFloat(lv[0]), c = parseFloat(lv[1]), d = parseFloat(lv[2]);
+        return p + ' × ' + (isFinite(c) ? Math.round(c).toLocaleString('en-US') : c) + ' (' + fmtDollarsFull(isFinite(d) ? d : p*c) + ')';
+      }).join(' · ') : (r.kDollars!=null ? '· ' + fmtMoney(r.kDollars) + ' avail at best ask' : '— not published yet');
+    let pTxt = '— book unavailable';
+    if (r.polyMid!=null && r.polyTok!=null){
+      const token = polyTokenFor(r.polyMid, r.polyTok);
+      if (token && withheld[token]) pTxt = '— depth withheld (book disagrees with live price)';
+      else if (token && bookByToken[token]){
+        const lv = bookLevels(bookByToken[token]);
+        pTxt = lv.asks.length ? lv.asks.slice(0,3).map(x => x.price + ' × ' + Math.round(x.size).toLocaleString('en-US') + ' (' + fmtDollarsFull(x.price*x.size) + ')').join(' · ') : '— empty book';
+      }
+    }
+    h += '<div style="margin:8px 0"><b>' + r.label + '</b><br>Kalshi: ' + kTxt + '<br>Polymarket: ' + pTxt + '<br><span class="muted">Books: n/a</span></div>';
+  }
+  el.innerHTML = h;
+}
 function compFor(g, pred){
   return (g.comparisons||[]).find(pred) || null;
 }
@@ -258,6 +441,7 @@ function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts)
   // read as a cross-line arb).
   opts = opts || {};
   const cands = [['DraftKings',book],['Kalshi',kalshi],['Polymarket',poly],['Novig',opts.novig]].filter(x=>x[1]);
+  pushDepthRow(label, kalshi, poly ? {mid: polyMarketId, tok: polyTokenIdx, prob: poly.prob} : null);
   const polyMismatch = opts.polyLine!=null && opts.line!=null && opts.polyLine!==opts.line;
   const bestCands = polyMismatch ? cands.filter(x=>x[0]!=='Polymarket') : cands;
   let bestName = null;
@@ -274,6 +458,7 @@ function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts)
   const polyCell = poly ? '<td class="num'+(bestName==='Polymarket'?' best':'')+'">' +
     (opts.polyLine!=null ? '<span class="muted">'+opts.polyLine+'</span> ' : '') +
     '<span class="clickable" data-mid="'+polyMarketId+'" data-tok="'+polyTokenIdx+'">' + cents(poly.prob) + ' <span class="muted">(' + fmtAmerican(americanFromProb(poly.prob)) + ')</span></span>' +
+    '<span class="muted pdepth" data-mid="'+polyMarketId+'" data-tok="'+polyTokenIdx+'"></span>' +
     (polyMismatch ? ' <span class="muted" title="Polymarket line differs from the book line — not the same bet">≠ '+opts.line+'</span>' : '') +
     (poly.live?'':' <span class="muted" title="last trade, no live ask">last</span>') + '</td>'
                         : '<td class="num muted">—</td>';
@@ -281,13 +466,19 @@ function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts)
   let bbCell = '<td class="num muted">—</td>';
   if (bb && bb.book){
     const ap = parseFloat(bb.price);
-    bbCell = '<td class="num">' + bb.book + ' ' + (isNaN(ap) ? (bb.price==null?'—':bb.price) : fmtAmerican(ap)) + '</td>';
+    bbCell = '<td class="num">' + bb.book + ' ' + (isNaN(ap) ? (bb.price==null?'—':bb.price) : fmtAmerican(ap)) + ' <span class="muted" title="Books do not publish limits — limits are account-specific">· n/a</span></td>';
   }
+  const novigCellExtra = (()=>{
+    const p = opts.novig;
+    if (!p) return '';
+    const hasDepth = p.depth && isFinite(parseFloat(p.depth.dollars)) && parseFloat(p.depth.dollars)>0;
+    return betBtn('Novig', p) + (hasDepth ? '' : ' <span class="muted" title="Novig depth coming">· n/a</span>');
+  })();
   return '<tr><td>'+label+'</td>' +
-    cellHtml(book, bestName==='DraftKings') +
+    cellHtml(book, bestName==='DraftKings', book ? ' <span class="muted" title="Books do not publish limits — limits are account-specific">· n/a</span>' : '') +
     cellHtml(kalshi, bestName==='Kalshi', betBtn('Kalshi', kalshi)) +
     polyCell +
-    cellHtml(opts.novig||null, bestName==='Novig', betBtn('Novig', opts.novig)) +
+    cellHtml(opts.novig||null, bestName==='Novig', novigCellExtra) +
     '<td class="soon">soon</td>' +
     bbCell +
     '<td class="muted">'+(bestName || '—')+'</td></tr>';
@@ -303,7 +494,7 @@ function renderGameRows(g, pm, away, home){
   // Novig + Best book games, matched by game+date (null until the files publish).
   const Ng = N ? (N.games||[]).find(x=> x.game===g.game && x.date===g.date) || null : null;
   const Bg = B ? (B.games||[]).find(x=> x.game===g.game && x.date===g.date) || null : null;
-  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask} : null; };
+  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask, depth: c.depth||null} : null; };
   const bBest = (pred) => { if (!Bg) return null; const c = compFor(Bg, pred); return c ? {book: c.best_book, price: c.best_price} : null; };
 
   // ---- Winner ----
@@ -324,12 +515,12 @@ function renderGameRows(g, pm, away, home){
   const pa = polyWinAsk(away), ph = polyWinAsk(home);
   h += outcomeRow('ML — ' + away,
     wAway? {prob: probFromAmerican(wAway.book_price)}:null,
-    wAway? {prob: wAway.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+    kObj(wAway), pa, pa?pa.mid:null, pa?pa.tok:null,
     {novig: nAsk(c=> c.market==='Winner' && nameContains(away, c.side)),
      bookBest: bBest(c=> c.market==='Winner' && nameContains(away, c.side)), game: g.game});
   h += outcomeRow('ML — ' + home,
     wHome? {prob: probFromAmerican(wHome.book_price)}:null,
-    wHome? {prob: wHome.kalshi_ask}:null, ph, ph?ph.mid:null, ph?ph.tok:null,
+    kObj(wHome), ph, ph?ph.mid:null, ph?ph.tok:null,
     {novig: nAsk(c=> c.market==='Winner' && nameContains(home, c.side)),
      bookBest: bBest(c=> c.market==='Winner' && nameContains(home, c.side)), game: g.game});
 
@@ -356,13 +547,13 @@ function renderGameRows(g, pm, away, home){
   const spreadPred = (team) => c=> c.market && c.market.indexOf('Spread')===0 && nameContains(team, c.side);
   h += outcomeRow(spreadLabel(fav, favSigned),
     (favIsHome? sHome : sAway) ? {prob: probFromAmerican((favIsHome? sHome : sAway).book_price)} : null,
-    (favIsHome? sHome : sAway) ? {prob: (favIsHome? sHome : sAway).kalshi_ask} : null,
+    kObj(favIsHome? sHome : sAway),
     pf, pf?pf.mid:null, pf?pf.tok:null,
     {novig: nAsk(spreadPred(fav)), bookBest: bBest(spreadPred(fav)), game: g.game,
      polyLine: polySpreadLine, line: favLine});
   h += outcomeRow(spreadLabel(dog, dogSigned),
     (favIsHome? sAway : sHome) ? {prob: probFromAmerican((favIsHome? sAway : sHome).book_price)} : null,
-    (favIsHome? sAway : sHome) ? {prob: (favIsHome? sAway : sHome).kalshi_ask} : null,
+    kObj(favIsHome? sAway : sHome),
     pd, pd?pd.mid:null, pd?pd.tok:null,
     {novig: nAsk(spreadPred(dog)), bookBest: bBest(spreadPred(dog)), game: g.game,
      polyLine: polySpreadLine, line: favLine});
@@ -372,8 +563,9 @@ function renderGameRows(g, pm, away, home){
       if (!m) continue;
       const idx = outcomesOf(m).findIndex(o => nameContains(n.side==='home'?home:away, o));
       const a = idx>=0 ? polyAsk(m, idx) : null;
+      pushDepthRow('Spread ' + (n.side==='home'?home:away) + ' -' + n.line + ' (Poly nearest)', null, a ? {mid: m.id, tok: idx, prob: a.prob} : null);
       h += '<tr><td>Spread ' + (n.side==='home'?home:away) + ' -' + n.line + ' <span class="muted">(Poly nearest — book line is ' + favLine + ', no exact Poly line)</span></td><td class="muted">—</td><td class="muted">—</td>' +
-        (a? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="'+idx+'">'+cents(a.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(a.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        (a? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="'+idx+'">'+cents(a.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(a.prob))+')</span></span><span class="muted pdepth" data-mid="'+m.id+'" data-tok="'+idx+'"></span></td>' : '<td class="muted">—</td>') +
         '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
     }
   } else if (pm && pm.spread && pm.spread.kind==='missing'){
@@ -401,12 +593,12 @@ function renderGameRows(g, pm, away, home){
   const underPred = c=> c.market && c.market.indexOf('Under ')===0 && numAfter(c.market,'Under ')===total;
   h += outcomeRow('Total Over ' + total,
     oComp? {prob: probFromAmerican(oComp.book_price)}:null,
-    oComp? {prob: oComp.kalshi_ask}:null, po, po?po.mid:null, po?po.tok:null,
+    kObj(oComp), po, po?po.mid:null, po?po.tok:null,
     {novig: nAsk(overPred), bookBest: bBest(overPred), game: g.game,
      polyLine: polyTotalLine, line: total});
   h += outcomeRow('Total Under ' + total,
     uComp? {prob: probFromAmerican(uComp.book_price)}:null,
-    uComp? {prob: uComp.kalshi_ask}:null, pu, pu?pu.mid:null, pu?pu.tok:null,
+    kObj(uComp), pu, pu?pu.mid:null, pu?pu.tok:null,
     {novig: nAsk(underPred), bookBest: bBest(underPred), game: g.game,
      polyLine: polyTotalLine, line: total});
   if (pm && pm.total && pm.total.kind==='nearest'){
@@ -414,11 +606,13 @@ function renderGameRows(g, pm, away, home){
       const m = POLY[n.market.id];
       if (!m) continue;
       const ao = polyAsk(m, 0), au = polyAsk(m, 1);
+      pushDepthRow('Total Over ' + n.line + ' (Poly nearest)', null, ao ? {mid: m.id, tok: 0, prob: ao.prob} : null);
+      pushDepthRow('Total Under ' + n.line + ' (Poly nearest)', null, au ? {mid: m.id, tok: 1, prob: au.prob} : null);
       h += '<tr><td>Total Over ' + n.line + ' <span class="muted">(Poly nearest — book total is ' + total + ')</span></td><td class="muted">—</td><td class="muted">—</td>' +
-        (ao? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="0">'+cents(ao.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(ao.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        (ao? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="0">'+cents(ao.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(ao.prob))+')</span></span><span class="muted pdepth" data-mid="'+m.id+'" data-tok="0"></span></td>' : '<td class="muted">—</td>') +
         '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
       h += '<tr><td>Total Under ' + n.line + ' <span class="muted">(Poly nearest — book total is ' + total + ')</span></td><td class="muted">—</td><td class="muted">—</td>' +
-        (au? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="1">'+cents(au.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(au.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        (au? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="1">'+cents(au.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(au.prob))+')</span></span><span class="muted pdepth" data-mid="'+m.id+'" data-tok="1"></span></td>' : '<td class="muted">—</td>') +
         '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
     }
   } else if (pm && pm.total && pm.total.kind==='missing'){
@@ -449,8 +643,8 @@ function pickFrom(comps, pred, sideVal){
 function renderExtraRows(g, pm, away, home, Ng, Bg){
   if (!pm) return '';
   let h = '';
-  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask} : null; };
-  const nPick = (pred, sideVal) => { const c = Ng ? pickFrom(Ng.comparisons, pred, sideVal) : null; return c ? {prob: c.novig_ask} : null; };
+  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask, depth: c.depth||null} : null; };
+  const nPick = (pred, sideVal) => { const c = Ng ? pickFrom(Ng.comparisons, pred, sideVal) : null; return c ? {prob: c.novig_ask, depth: c.depth||null} : null; };
   const bBest = (pred) => { if (!Bg) return null; const c = compFor(Bg, pred); return c ? {book: c.best_book, price: c.best_price} : null; };
   const bPick = (pred, sideVal) => { if (!Bg) return null; const c = pickFrom(Bg.comparisons, pred, sideVal); return c ? {book: c.best_book, price: c.best_price} : null; };
   const polySideAsk = (market, sideName) => {
@@ -472,7 +666,7 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
     const kc = compFor(g, pred);
     const pa = polySideAsk(a.market, team);
     altRows += outcomeRow('Spread ' + team + ' ' + fmtLine(a.line) + ' (alt)',
-      null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+      null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
       {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
   }
   for (const a of (pm.alt_total||[])){
@@ -482,7 +676,7 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
       const kc = compFor(g, pred);
       const pa = polySideAsk(a.market, side);
       altRows += outcomeRow('Total ' + side + ' ' + fmtLine(a.line) + ' (alt)',
-        null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+        null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
         {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
     }
   }
@@ -498,7 +692,7 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
       const kc = pickFrom(g.comparisons, pred, side);
       const pa = polySideAsk(t.market, side);
       ttRows += outcomeRow('Team total ' + t.team + ' ' + side + ' ' + fmtLine(t.line),
-        null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+        null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
         {novig: nPick(pred, side), bookBest: bPick(pred, side), game: g.game});
     }
   }
@@ -514,7 +708,7 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
     const pa = polySideAsk(p.market, p.side||'');
     const label = 'PROP — ' + p.player + ' ' + p.stat + ' ' + fmtLine(p.line) + (p.side ? ' ' + p.side : '');
     propRows += outcomeRow(label,
-      null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+      null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
       {novig: nPick(pred, p.side), bookBest: bPick(pred, p.side), game: g.game});
   }
   if (propRows) h += sectionHead('Player props') + propRows;
@@ -538,15 +732,16 @@ document.addEventListener('click', async (ev)=>{
   tr.innerHTML = '<td colspan="8">Loading live order book…</td>';
   row.after(tr);
   try {
-    const books = await Promise.all(tokens.map(async (t)=>{
-      const b = await fetchJSON(CLOB + '/book?token_id=' + t);
-      return b;
-    }));    let h = '<b>Live CLOB book — ' + (market.question||'') + '</b><br>';
+    const books = await Promise.all(tokens.map(async (t)=> fetchPolyBook(t)));
+    let h = '<b>Live CLOB book — ' + (market.question||'') + '</b><br>';
     books.forEach((b, i)=>{
       const side = outcomesOf(market)[i] || ('outcome '+(i+1));
-      const asks = (b.asks||[]).slice(0,5).map(a=> a.price + ' × ' + a.size).join(' · ');
-      const bids = (b.bids||[]).slice(-5).reverse().map(a=> a.price + ' × ' + a.size).join(' · ');
-      h += '<div style="margin-top:6px"><b>' + side + '</b> — best ask ' + ((b.asks||[])[0]? b.asks[0].price : '—') + ' · best bid ' + ((b.bids||[]).slice(-1)[0]? b.bids.slice(-1)[0].price : '—') + '<br><span class="muted">Asks: ' + (asks||'—') + '<br>Bids: ' + (bids||'—') + '</span></div>';
+      const lv = bookLevels(b); // asks/bids sorted best-first (asks ascending, bids descending)
+      const fmtLevel = (x) => x.price + ' × ' + x.size + ' (' + fmtDollarsFull(x.price*x.size) + ')';
+      const asks = lv.asks.slice(0,5).map(fmtLevel).join(' · ');
+      const bids = lv.bids.slice(0,5).map(fmtLevel).join(' · ');
+      const ba = lv.asks[0], bb = lv.bids[0];
+      h += '<div style="margin-top:6px"><b>' + side + '</b> — best ask ' + (ba ? ba.price + ' × ' + ba.size + ' (' + fmtDollarsFull(ba.price*ba.size) + ' available)' : '—') + ' · best bid ' + (bb ? bb.price + ' × ' + bb.size : '—') + '<br><span class="muted">Asks (best first): ' + (asks||'—') + '<br>Bids (best first): ' + (bids||'—') + '</span></div>';
     });
     tr.innerHTML = '<td colspan="8">' + h + '</td>';
   } catch(e){
