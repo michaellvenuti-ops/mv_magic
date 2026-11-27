@@ -1,5 +1,5 @@
 {
- "through": "2026-11-24",
+ "through": "2026-11-26",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -11482,32 +11482,46 @@
    "winner": "Ole Miss Rebels"
   },
   {
-   "date": "2026-11-24",
    "away": "Kent State Golden Flashes",
-   "home": "Eastern Michigan Eagles",
+   "date": "2026-11-24",
+   "final": "12-17",
    "first": "Eastern Michigan Eagles",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 46,
-   "winner": "Eastern Michigan Eagles",
-   "seq": "0-7>6-7>6-14>12-14>12-17",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Eastern Michigan Eagles",
    "lead_changes": 0,
+   "seq": "0-7>6-7>6-14>12-14>12-17",
    "ties": 0,
-   "final": "12-17"
+   "winner": "Eastern Michigan Eagles"
   },
   {
-   "date": "2026-11-24",
    "away": "Miami (OH) RedHawks",
-   "home": "Western Michigan Broncos",
+   "date": "2026-11-24",
+   "final": "28-24",
    "first": "Miami (OH) RedHawks",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 145,
-   "winner": "Miami (OH) RedHawks",
-   "seq": "7-0>7-3>14-3>14-10>21-10>21-16>21-24>28-24",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Western Michigan Broncos",
    "lead_changes": 2,
+   "seq": "7-0>7-3>14-3>14-10>21-10>21-16>21-24>28-24",
    "ties": 0,
-   "final": "28-24"
+   "winner": "Miami (OH) RedHawks"
+  },
+  {
+   "date": "2026-11-26",
+   "away": "TCU Horned Frogs",
+   "home": "Texas Tech Red Raiders",
+   "first": "TCU Horned Frogs",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 612,
+   "winner": "Texas Tech Red Raiders",
+   "seq": "3-0>10-0>10-3>10-6>10-13>10-20>10-27>10-34>10-41>13-41>13-48>20-48>27-48",
+   "lead_changes": 1,
+   "ties": 0,
+   "final": "27-48"
   }
  ],
  "tally": {
@@ -11688,18 +11702,18 @@
    "won_by_one_when_first_pct": 0.0
   },
   "TCU Horned Frogs": {
-   "gp": 11,
-   "scored_first": 4,
+   "gp": 12,
+   "scored_first": 5,
    "kinds": {
-    "FG": 0,
+    "FG": 1,
     "TD": 4,
     "Safety": 0
    },
    "won_when_first": 4,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 36.4,
-   "win_pct_when_first": 100.0,
+   "scored_first_pct": 41.7,
+   "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 14.3,
    "won_by_one_when_first_pct": 0.0
   },
@@ -12328,7 +12342,7 @@
    "won_by_one_when_first_pct": null
   },
   "Texas Tech Red Raiders": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 7,
    "kinds": {
     "FG": 0,
@@ -12336,11 +12350,11 @@
     "Safety": 0
    },
    "won_when_first": 7,
-   "won_when_not_first": 3,
+   "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 63.6,
+   "scored_first_pct": 58.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 75.0,
+   "win_pct_when_not_first": 80.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Alcorn State Braves": {
@@ -15321,20 +15335,20 @@
   }
  },
  "league": {
-  "games": 822,
+  "games": 823,
   "home_scored_first": 487,
   "first_team_won": 577,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.5,
   "kinds": {
-   "FG": 228,
+   "FG": 229,
    "TD": 592,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
-  "median_first_score_sec": 340,
+  "median_first_score_sec": 341,
   "home_scored_first_pct": 59.2,
-  "first_team_win_pct": 70.2
+  "first_team_win_pct": 70.1
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -15393,9 +15407,9 @@
    "avg_per_game": 1.45
   },
   "TCU Horned Frogs": {
-   "games": 11,
-   "lead_changes": 17,
-   "avg_per_game": 1.55
+   "games": 12,
+   "lead_changes": 18,
+   "avg_per_game": 1.5
   },
   "Sacramento State Hornets": {
    "games": 11,
@@ -15593,9 +15607,9 @@
    "avg_per_game": 0.0
   },
   "Texas Tech Red Raiders": {
-   "games": 11,
-   "lead_changes": 19,
-   "avg_per_game": 1.73
+   "games": 12,
+   "lead_changes": 20,
+   "avg_per_game": 1.67
   },
   "Alcorn State Braves": {
    "games": 1,
