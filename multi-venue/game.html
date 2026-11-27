@@ -434,6 +434,41 @@ async function renderLiquidity(){
 function compFor(g, pred){
   return (g.comparisons||[]).find(pred) || null;
 }
+// Label helpers — market labels are derived from the Polymarket market's own
+// question (live Gamma copy first, the map's cached copy as fallback), never
+// from the map's unsigned `line` alone. The map stores spread lines as a
+// positive magnitude (e.g. line 3.5, side "away" for "Spread: Broncos
+// (-3.5)"); rendering that magnitude with a "+" sign flipped the favorite's
+// alt spreads (DEN/PIT Nov 27: Denver -3.5 prices shown under a "+3.5"
+// label, so a Bet tap would have bought the opposite side of the spread).
+function spreadFromQuestion(q){
+  const m = (q||'').match(/Spread:\s*(.+?)\s*\(([+-]?[\d.]+)\)/);
+  if (!m) return null;
+  return {team: m[1].trim(), line: parseFloat(m[2])};
+}
+function fmtSigned(n){ return (n>0?'+':'') + n; }
+// Period of a team-total market from its question/slug: "Broncos 1H Team
+// Total: O/U 6.5" -> "1H"; "Broncos Team Total: O/U 10.5" -> "Full".
+function teamTotalPeriod(market){
+  const q = ((market && market.question) || '') + ' ' + ((market && market.slug) || '');
+  if (/\b1H\b/i.test(q)) return '1H';
+  if (/\b2H\b/i.test(q)) return '2H';
+  return 'Full';
+}
+function fullTeamName(code, away, home){
+  if (nameContains(away, code)) return away;
+  if (nameContains(home, code)) return home;
+  return (code||'').toUpperCase();
+}
+// Unseeded Polymarket markets quote a 1.00 stub ask (no real order book).
+// A 99c price on a genuinely near-certain outcome is not a stub, so the
+// test is the ask itself: only a literal 1.00 ask means "no market".
+function isStubPolyMarket(m){
+  if (!m) return false;
+  const ba = parseFloat(m.bestAsk);
+  return !isNaN(ba) && ba >= 0.999;
+}
+
 
 function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts){
   // book/kalshi/poly/opts.novig: {prob} or null. Best = lowest prob (cheapest $1 payout).
@@ -575,10 +610,14 @@ function renderGameRows(g, pm, away, home){
     for (const n of (pm.spread.nearest||[])){
       const m = POLY[n.market.id];
       if (!m) continue;
-      const idx = outcomesOf(m).findIndex(o => nameContains(n.side==='home'?home:away, o));
+      const nTeam = n.side==='home'?home:away;
+      const idx = outcomesOf(m).findIndex(o => nameContains(nTeam, o));
       const a = idx>=0 ? polyAsk(m, idx) : null;
-      pushDepthRow('Spread ' + (n.side==='home'?home:away) + ' -' + n.line + ' (Poly nearest)', null, a ? {mid: m.id, tok: idx, prob: a.prob} : null);
-      h += '<tr><td>Spread ' + (n.side==='home'?home:away) + ' -' + n.line + ' <span class="muted">(Poly nearest — book line is ' + favLine + ', no exact Poly line)</span></td><td class="muted">—</td><td class="muted">—</td>' +
+      const nsq = spreadFromQuestion(m.question);
+      const nLine = nsq ? nsq.line : (nTeam===fav ? -Math.abs(n.line) : Math.abs(n.line));
+      const nLabel = 'Spread ' + nTeam + ' ' + fmtSigned(nLine);
+      pushDepthRow(nLabel + ' (Poly nearest)', null, a ? {mid: m.id, tok: idx, prob: a.prob} : null);
+      h += '<tr><td>' + nLabel + ' <span class="muted">(Poly nearest — book line is ' + favLine + ', no exact Poly line)</span></td><td class="muted">—</td><td class="muted">—</td>' +
         (a? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="'+idx+'">'+cents(a.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(a.prob))+')</span></span><span class="muted pdepth" data-mid="'+m.id+'" data-tok="'+idx+'"></span></td>' : '<td class="muted">—</td>') +
         '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
     }
@@ -636,7 +675,7 @@ function renderGameRows(g, pm, away, home){
   if (isNaN(spreadHome) || isNaN(total)) {
     h += '<tr><td colspan="8" class="muted">Book spread/total not listed for this game yet — Winner only.</td></tr>';
   }
-  h += renderExtraRows(g, pm, away, home, Ng, Bg);
+  h += renderExtraRows(g, pm, away, home, Ng, Bg, fav);
   return h;
 }
 
@@ -654,7 +693,7 @@ function pickFrom(comps, pred, sideVal){
 // Rendered defensively — the data side adds `kind` to kalshi comparisons and
 // alt_spread / alt_total / team_totals / props to poly-map; until then, nothing shows.
 // A venue with no price for a row gets "—"; a price is never invented.
-function renderExtraRows(g, pm, away, home, Ng, Bg){
+function renderExtraRows(g, pm, away, home, Ng, Bg, fav){
   if (!pm) return '';
   let h = '';
   const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask, depth: c.depth||null} : null; };
@@ -669,17 +708,35 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
     const a = polyAsk(m, idx);
     return a ? {...a, mid: m.id, tok: idx} : null;
   };
-  const fmtLine = (v) => { const n = parseFloat(v); return isNaN(n) ? v : (n>0?'+':'') + n; };
+
+  // Signed spread line for an alt-spread market, from the market's own
+  // question ("Spread: Broncos (-3.5)" -> -3.5). The map's `line` is the
+  // unsigned magnitude and must never be rendered with a "+": that was the
+  // sign flip. Fallback: the favorite lays points, the dog gets them.
+  const altSpreadSigned = (a, team) => {
+    const live = (a.market && POLY[a.market.id]) || null;
+    const sq = spreadFromQuestion(live ? live.question : (a.market && a.market.question));
+    if (sq){
+      if (!nameContains(team, sq.team)){
+        if (nameContains(away, sq.team)) team = away;
+        else if (nameContains(home, sq.team)) team = home;
+      }
+      return {team: team, line: sq.line};
+    }
+    return {team: team, line: (team===fav) ? -Math.abs(parseFloat(a.line)) : Math.abs(parseFloat(a.line))};
+  };
 
   // ---- Alternate lines (alt spreads + alt totals) ----
   let altRows = '';
   for (const a of (pm.alt_spread||[])){
-    const team = a.side==='home' ? home : a.side==='away' ? away : (a.side||'');
+    let team = a.side==='home' ? home : a.side==='away' ? away : (a.side||'');
     const line = parseFloat(a.line);
+    const sl = altSpreadSigned(a, team);
+    team = sl.team;
     const pred = c=> (c.kind||'main')==='alt_spread' && parseFloat(c.line)===line && nameContains(team, c.side||'');
     const kc = compFor(g, pred);
     const pa = polySideAsk(a.market, team);
-    altRows += outcomeRow('Spread ' + team + ' ' + fmtLine(a.line) + ' (alt)',
+    altRows += outcomeRow('Spread ' + team + ' ' + fmtSigned(sl.line) + ' (alt)',
       null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
       {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
   }
@@ -689,7 +746,8 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
       const pred = c=> (c.kind||'main')==='alt_total' && parseFloat(c.line)===line && (c.side||'')===side;
       const kc = compFor(g, pred);
       const pa = polySideAsk(a.market, side);
-      altRows += outcomeRow('Total ' + side + ' ' + fmtLine(a.line) + ' (alt)',
+      // Totals never take a sign — the "+" was a label bug, prices were right.
+      altRows += outcomeRow('Total ' + side + ' ' + line + ' (alt)',
         null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
         {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
     }
@@ -697,17 +755,36 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
   if (altRows) h += sectionHead('Alternate lines') + altRows;
 
   // ---- Team totals ----
+  // The map lists Full, 1H and 2H team totals for the same team+line as
+  // separate markets; the old label collapsed them into one ("Team total
+  // den Over +6.5" twice). Label each with its period and full team name,
+  // dedupe identical rows, never show a stub Poly price, and never match a
+  // full-game Kalshi/Novig price onto a 1H/2H row.
   let ttRows = '';
+  const seenTT = new Set();
   for (const t of (pm.team_totals||[])){
     const line = parseFloat(t.line);
+    const liveM = (t.market && POLY[t.market.id]) || null;
+    const period = teamTotalPeriod(liveM || t.market);
+    const teamName = fullTeamName(t.team, away, home);
+    const periodTxt = period==='Full' ? '' : ' ' + period;
+    const stub = isStubPolyMarket(liveM);
     const pred = c=> (c.kind||'main')==='team_total' && parseFloat(c.line)===line &&
       (nameContains(t.team, c.team||'') || nameContains(t.team, c.side||''));
     for (const side of ['Over','Under']){
-      const kc = pickFrom(g.comparisons, pred, side);
-      const pa = polySideAsk(t.market, side);
-      ttRows += outcomeRow('Team total ' + t.team + ' ' + side + ' ' + fmtLine(t.line),
+      const key = teamName + '|' + period + '|' + line + '|' + side;
+      if (seenTT.has(key)) continue;
+      seenTT.add(key);
+      // Kalshi/Novig/book feeds are full-game only — never onto a half row.
+      const kc = period==='Full' ? pickFrom(g.comparisons, pred, side) : null;
+      let pa = polySideAsk(t.market, side);
+      if (stub) pa = null; // unseeded market — never display its stub prices
+      const nv = period==='Full' ? nPick(pred, side) : null;
+      const bb = period==='Full' ? bPick(pred, side) : null;
+      if (stub && !kc && !nv && !bb) continue; // stub with nothing real priced
+      ttRows += outcomeRow('Team total ' + teamName + periodTxt + ' ' + side + ' ' + line,
         null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
-        {novig: nPick(pred, side), bookBest: bPick(pred, side), game: g.game});
+        {novig: nv, bookBest: bb, game: g.game});
     }
   }
   if (ttRows) h += sectionHead('Team totals') + ttRows;
@@ -720,7 +797,7 @@ function renderExtraRows(g, pm, away, home, Ng, Bg){
       (nameContains(p.stat, c.stat||'') || (c.stat||'')===p.stat) && parseFloat(c.line)===line;
     const kc = pickFrom(g.comparisons, pred, p.side);
     const pa = polySideAsk(p.market, p.side||'');
-    const label = 'PROP — ' + p.player + ' ' + p.stat + ' ' + fmtLine(p.line) + (p.side ? ' ' + p.side : '');
+    const label = 'PROP — ' + p.player + ' ' + p.stat + ' ' + line + (p.side ? ' ' + p.side : '');
     propRows += outcomeRow(label,
       null, kObj(kc), pa, pa?pa.mid:null, pa?pa.tok:null,
       {novig: nPick(pred, p.side), bookBest: bPick(pred, p.side), game: g.game});
