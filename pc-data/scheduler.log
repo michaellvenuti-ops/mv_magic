@@ -12632,3 +12632,21 @@
 [2026-11-27 04:32:42 ET] dh_kalshi_poly_arb.py: OK in 53s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-27 04:32:45 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Lehigh UC Santa Barbara Today 7:00 PM — Total — Over 137.5 DraftKings -210 ($133) / Under 139.5 Bet365 +190 ($67) — both win 138, 139 — land +$
 [2026-11-27 04:32:45 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-27 05:02:45 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 05:03:30 ET] dh_low_holds.py: OK in 45s — LOW-HOLDS: NCAAF Temple Memphis Today 3:30 PM / Today 3:30 PM / table / 3rd Quarter Moneyline Memphis / 3rd Quarter Moneyline Temple / table | DraftKings | FanD
+[2026-11-27 05:08:10 ET] dh_game_middles.py: FAILED (exit 2) in 280s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-27 05:10:06 ET] dh_nhl_totals_middles.py: OK in 116s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-27 05:11:03 ET] dh_key_number_middles.py: OK in 58s — DarkHorse check unavailable (signed out) — key-number-middles skipped, no prices invented.
+[2026-11-27 05:12:01 ET] dh_basketball_key_middles.py: OK in 57s — DarkHorse check unavailable (signed out) — basketball-key-middles skipped, no prices invented.
+[2026-11-27 05:12:06 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 05:13:19 ET] dh_prop_middles.py: FAILED (exit 2) in 72s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-27 05:14:56 ET] dh_sog_middles.py: FAILED (exit 2) in 97s — sog-middles: Market Type switch did not flip — relying on the in-code market check.
+[2026-11-27 05:14:58 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 05:14:59 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 05:15:00 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 05:15:02 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 05:15:03 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 05:15:04 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 05:15:05 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 05:15:06 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 05:15:06 ET] syncing to GitHub (regular 10-minute sync)
