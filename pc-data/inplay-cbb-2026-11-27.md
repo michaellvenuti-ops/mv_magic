@@ -15,3 +15,5 @@ NEW IN-PLAY CBB: PLAY: Under 146.5 -120 — Memphis at Wake Forest (PACE) | pace
 NEW IN-PLAY CBB: PLAY: Under 132.5 -115 — Navy at Fairfield (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 14:49:21 ET
 ## 2026-11-27 14:54:27 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 138.5 -115 — Maine at Le Moyne (TRAILING FAVE) | pregame favorite Le Moyne trails at half (Maine leads); pace is slow (proj 132.0 vs live 138.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 14:54:22 ET
+## 2026-11-27 15:01:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 151.5 -120 — Fresno St at South Alabama (PACE) | pace proj 144.0 (H1 72 x 2) vs live total 151.5 (gap -7.5, bar 5) | H1 72 | as of 15:01:02 ET
