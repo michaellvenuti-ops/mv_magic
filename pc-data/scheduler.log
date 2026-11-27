@@ -12722,3 +12722,33 @@
 [2026-11-27 08:26:44 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 08:26:45 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 08:26:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 08:56:46 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 08:57:42 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 142 events (113 with odds), db total 329024 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 08:59:05 ET] dh_arbitrage.py: FAILED (exit 2) in 83s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-27 08:59:24 ET] dh_kalshi_poly_arb.py: OK in 19s — KALSHI-POLY-ARB: UEFA-CL R. Madrid Arsenal Dec-09 3:00 PM / Dec-09 3:00 PM / table bar_chart / 3-Way Moneyline R. Madrid NO / 3-Way Moneyline R. Madrid / table 
+[2026-11-27 08:59:26 ET] wide_builds.py: OK in 2s — wide_builds: 28 qualifying builds, 0 NEW (banked wide-builds-2026-11-27.md)
+[2026-11-27 08:59:45 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NCAAB Creighton 22 Gonzaga Today 11:00 PM / Today 11:00 PM / table / Alt Spread Creighton +14.5 / Alt Spread Gonzaga -14.5 / table | DraftKings | Fan
+[2026-11-27 09:00:58 ET] dh_game_middles.py: OK in 73s — GAME MIDDLE: NCAAF Boston College 4 Miami (FL) Nov-28 12:00 PM / Nov-28 12:00 PM / table / Alt Spread Miami (FL) -23 / Alt Spread Boston College +23.5 / table |
+[2026-11-27 09:01:54 ET] dh_nhl_totals_middles.py: OK in 57s — NHL TOTAL MIDDLE: NHL OTT Senators TB Lightning Today 3:00 PM / Today 3:00 PM / table / Total Under 6.5 / Total Over 5.5 / table | theScore | DraftKings — windo
+[2026-11-27 09:04:42 ET] dh_key_number_middles.py: OK in 168s — key-number-middles: 579 basketball rows excluded (football-only rule).
+[2026-11-27 09:05:00 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 18s —   - [pid=1056] <gracefully close end>
+[2026-11-27 09:05:24 ET] steam_side.py: OK in 23s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 09:07:39 ET] dh_prop_middles.py: OK in 135s — PROP MIDDLE CLEAN : NFL DEN Broncos PIT Steelers Today 3:00 PM / Today 3:00 PM / table / Receiving Yards M. Hurleman Under 4.5 / Receiving Yards M. Hurleman Ove
+[2026-11-27 09:12:12 ET] dh_sog_middles.py: OK in 272s — - 0 deliverables this run
+[2026-11-27 09:12:45 ET] dh_team_total_middles.py: OK in 32s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Minnesota 20.5/24.5 sits at -3.6c vs +EV
+[2026-11-27 09:12:47 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 09:12:50 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 09:12:51 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 09:12:53 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 09:12:54 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 09:12:55 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 09:12:57 ET] fetch_nba_snapshot.py: OK in 2s — snapshot: 30 teams, 11 games -> C:\Users\venut\pc-scans\data\nba-overs-snapshot-2026-11-27.json
+[2026-11-27 09:14:03 ET] dh_sleeping_book_sweep.py: OK in 66s — DarkHorse check unavailable (signed out) -- sleeping-book sweep skipped, no prices invented.
+[2026-11-27 09:14:04 ET] nba_overs_daily.py: OK in 1s — }
+[2026-11-27 09:14:05 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 09:14:09 ET] nhl_totals_scan.py: OK in 4s — NHL TOTALS FLAG UNDER: SEA @ EDM — predicted 5.41 vs book 6.5 (-112)
+[2026-11-27 09:14:11 ET] total_projectors_scan.py: FAILED (exit 2) in 2s — FETCH FAILED: NCAAB stats: BartTorvik table header not found
+[2026-11-27 09:14:15 ET] spread_cover_daily.py: OK in 4s — spread-cover: games {'NBA': 11, 'NCAAB': 49}, new 0, moved 0, baselines 60.
+[2026-11-27 09:14:22 ET] futures_board.py: OK in 7s — futures-board: wrote C:\Users\venut\pc-scans\data\futures-board-2026-11-27.json (5 markets).
+[2026-11-27 09:27:35 ET] yahoo_brief.py: OK in 793s — SUMMARY: signed_in=True, rows=123, matched=49, lanes={'urgent': 2, 'miles_earn_and_burn': 2, 'doctor_of_credit': 1, 'gift_cards': 32, 'sportsbook': 12}, errors=
+[2026-11-27 09:27:35 ET] syncing to GitHub (regular 10-minute sync)
