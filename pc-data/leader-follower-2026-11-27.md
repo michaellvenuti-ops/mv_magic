@@ -6,3 +6,11 @@
 ## 2026-11-27T08:23:52-05:00 — pack move, never credited: West Virginia @ Utah | 2026-11-27 spread (Caesars, DraftKings)
 ## 2026-11-27T08:23:52-05:00 — no-follow: bet365 Oklahoma @ Missouri | 2026-11-27 spread (only 1 followed)
 ## 2026-11-27T08:23:52-05:00 — 85 games, 0 leads credited, 5 started games skipped
+## 2026-11-27T11:07:17-05:00 — pack move, never credited: Buffalo @ Akron | 2026-11-27 total (BetMGM, Fanatics)
+## 2026-11-27T11:07:17-05:00 — pack move, never credited: Temple @ Memphis | 2026-11-27 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-27T11:07:17-05:00 — pack move, never credited: West Virginia @ Utah | 2026-11-27 spread (FanDuel, bet365)
+## 2026-11-27T11:07:17-05:00 — pack move, never credited: West Virginia @ Utah | 2026-11-27 total (FanDuel, bet365)
+## 2026-11-27T11:07:18-05:00 — pack move, never credited: USC @ UCLA | 2026-11-27 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-27T11:07:18-05:00 — pack move, never credited: Baylor @ Houston | 2026-11-27 spread (BetMGM, Caesars, DraftKings, FanDuel, bet365)
+## 2026-11-27T11:07:18-05:00 — pack move, never credited: Texas State @ Utah State | 2026-11-27 spread (FanDuel, bet365)
+## 2026-11-27T11:07:18-05:00 — 85 games, 0 leads credited, 5 started games skipped
