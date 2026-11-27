@@ -9,3 +9,11 @@
 ## 2026-11-27T14:17:53-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1256 games through 2026-11-27
 - 2026-11-27: Virginia Cavaliers @ Xavier Musketeers — first: Virginia Cavaliers (3PT, 0:33 in); lead changes 0; final 83-71
 - 2026-11-27: St. Thomas Tommies @ Liberty Flames — first: Liberty Flames (2PT, 1:01 in); lead changes 2; final 67-76
+## 2026-11-27T16:07:17-05:00 -- NCAAB FIRST SCORE (PC): 6 new final(s) tallied; season 1262 games through 2026-11-27
+- 2026-11-27: Iowa State Cyclones @ St. John's Red Storm — first: Iowa State Cyclones (2PT, 0:49 in); lead changes 7; final 75-80
+- 2026-11-27: Merrimack Warriors @ Vermont Catamounts — first: Vermont Catamounts (2PT, 0:11 in); lead changes 1; final 75-57
+- 2026-11-27: UMass Lowell River Hawks @ Hampton Pirates — first: UMass Lowell River Hawks (FT, 0:35 in); lead changes 0; final 72-55
+- 2026-11-27: Bryant & Stratton (OH) Bobcats @ Youngstown State Penguins — first: Bryant & Stratton (OH) Bobcats (3PT, 0:53 in); lead changes 1; final 66-96
+- 2026-11-27: Clarke Pride @ South Dakota Coyotes — first: South Dakota Coyotes (FT, 1:38 in); lead changes 0; final 47-99
+- 2026-11-27: Navy Midshipmen @ Fairfield Stags — first: Fairfield Stags (2PT, 0:17 in); lead changes 0; final 59-75
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
