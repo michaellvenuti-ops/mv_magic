@@ -12616,3 +12616,26 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 01:19:59 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 01:20:01 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 01:20:01 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 01:50:01 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 01:50:55 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 142 events (113 with odds), db total 328030 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 01:51:16 ET] dh_arbitrage.py: OK in 21s — ARBITRAGE: NBA MIL Bucks DET Pistons Today 7:45 PM / Today 7:45 PM / table / Points R. Rollins Under 11.5 / Alt Points R. Rollins 12+ / table | Bet365 | Fanatic
+[2026-11-27 01:51:32 ET] dh_kalshi_poly_arb.py: OK in 16s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-27 01:51:33 ET] wide_builds.py: OK in 1s — wide_builds: 16 qualifying builds, 0 NEW (banked wide-builds-2026-11-27.md)
+[2026-11-27 01:52:41 ET] dh_game_middles.py: OK in 67s — GAME MIDDLE: NFL DEN Broncos PIT Steelers Today 3:00 PM / Today 3:00 PM / table / Passing Yards M. Rudolph Under 178.5 / Alt Pass Yards M. Rudolph 175+ / table 
+[2026-11-27 01:53:27 ET] dh_nhl_totals_middles.py: OK in 46s — NHL TOTAL MIDDLE: NHL DET Red Wings CBJ Blue Jackets Today 3:00 PM / Today 3:00 PM / table / Total Over 5.5 / Total Under 6 / table | Caesars | BetMGM — window 
+[2026-11-27 01:56:06 ET] dh_key_number_middles.py: OK in 159s — key-number-middles: 242 basketball rows excluded (football-only rule).
+[2026-11-27 01:58:48 ET] dh_basketball_key_middles.py: OK in 162s — basketball-key-middles: no new basketball middles.
+[2026-11-27 01:58:54 ET] steam_side.py: OK in 6s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 02:00:00 ET] dh_prop_middles.py: OK in 65s — PROP MIDDLE CLEAN : NBA PHI 76ers IND Pacers Today 7:45 PM / Today 7:45 PM / table / Pts+Ast+Rebs A. Nembhard Under 26.5 / Pts+Ast+Rebs A. Nembhard 25+ / table 
+[2026-11-27 02:01:34 ET] dh_sog_middles.py: OK in 94s — - 0 deliverables this run
+[2026-11-27 02:01:35 ET] dh_team_total_middles.py: OK in 1s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 02:01:36 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 02:01:37 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 02:01:37 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 02:01:39 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 0 unverified, 1254 total tallied.
+[2026-11-27 02:01:40 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 02:01:41 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 02:01:42 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 02:01:44 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=3 queued_total=71
+[2026-11-27 02:01:45 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=71, limit=5)
+[2026-11-27 02:01:45 ET] syncing to GitHub (regular 10-minute sync)
