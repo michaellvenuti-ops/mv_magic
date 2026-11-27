@@ -24,3 +24,9 @@
 ## 2026-11-26T21:22:43-05:00 — pack move, never credited: Louisiana @ Georgia State | 2026-11-26 spread (DraftKings, bet365)
 ## 2026-11-26T21:22:43-05:00 — 85 games, 1 leads credited, 5 started games skipped
 LEAD: Caesars on Louisiana @ Georgia State | 2026-11-26 (spread)
+## 2026-11-26T23:19:26-05:00 — no-follow: bet365 Jets @ Dolphins | 2026-11-26 spread (only 1 followed)
+## 2026-11-26T23:19:26-05:00 — pack move, never credited: Jets @ Dolphins | 2026-11-26 spread (DraftKings, bet365)
+## 2026-11-26T23:19:26-05:00 — no-follow: DraftKings Texas @ Texas A&M | 2026-11-26 spread (only 0 followed)
+## 2026-11-26T23:19:26-05:00 — no-follow: bet365 Kansas State @ Iowa State | 2026-11-26 spread (only 0 followed)
+## 2026-11-26T23:19:26-05:00 — no-follow: DraftKings Liberty @ Missouri State | 2026-11-26 spread (only 0 followed)
+## 2026-11-26T23:19:27-05:00 — 85 games, 0 leads credited, 5 started games skipped
