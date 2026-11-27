@@ -11,3 +11,6 @@
 NEW FLAG: FBS USC @ UCLA | 2026-11-27 — Fanatics still dealing spread 6.5 on UCLA (pre-move median 6.5, now 5.0)
 NEW FLAG: FBS Baylor @ Houston | 2026-11-27 — FanDuel still dealing spread -4.5 on Baylor (pre-move median -4.5, now -3.5)
 NEW FLAG: FBS Baylor @ Houston | 2026-11-27 — Fanatics still dealing spread -4.5 on Baylor (pre-move median -4.5, now -3.5)
+## 2026-11-27T11:55:49-05:00 — 69 games, 1 steam events, 2 NEW flags, 1 started games skipped
+NEW FLAG: FBS Tulsa @ UTSA | 2026-11-27 — DraftKings still dealing total 57.5 on Under (pre-move median 57.5, now 55.75)
+NEW FLAG: FBS Tulsa @ UTSA | 2026-11-27 — Fanatics still dealing total 57.5 on Under (pre-move median 57.5, now 55.75)
