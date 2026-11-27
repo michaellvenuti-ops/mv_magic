@@ -1,5 +1,5 @@
 {
- "through": "2026-11-26",
+ "through": "2026-11-27",
  "games": [
   {
    "away": "Hawai'i Rainbow Warriors",
@@ -11510,18 +11510,88 @@
    "winner": "Miami (OH) RedHawks"
   },
   {
-   "date": "2026-11-26",
    "away": "TCU Horned Frogs",
-   "home": "Texas Tech Red Raiders",
+   "date": "2026-11-26",
+   "final": "27-48",
    "first": "TCU Horned Frogs",
-   "first_side": "away",
-   "first_kind": "FG",
    "first_elapsed_sec": 612,
-   "winner": "Texas Tech Red Raiders",
-   "seq": "3-0>10-0>10-3>10-6>10-13>10-20>10-27>10-34>10-41>13-41>13-48>20-48>27-48",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "Texas Tech Red Raiders",
    "lead_changes": 1,
+   "seq": "3-0>10-0>10-3>10-6>10-13>10-20>10-27>10-34>10-41>13-41>13-48>20-48>27-48",
    "ties": 0,
-   "final": "27-48"
+   "winner": "Texas Tech Red Raiders"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Buffalo Bulls",
+   "home": "Akron Zips",
+   "first": "Buffalo Bulls",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 1298,
+   "winner": "Buffalo Bulls",
+   "seq": "7-0>7-6>7-9>10-9>17-9",
+   "lead_changes": 2,
+   "ties": 0,
+   "final": "17-9"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Mississippi State Bulldogs",
+   "home": "Ole Miss Rebels",
+   "first": "Ole Miss Rebels",
+   "first_side": "home",
+   "first_kind": "FG",
+   "first_elapsed_sec": 414,
+   "winner": "Ole Miss Rebels",
+   "seq": "0-3>7-3>7-6>10-6>10-13>10-20>17-20>17-27>17-34>17-41",
+   "lead_changes": 2,
+   "ties": 0,
+   "final": "17-41"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Nebraska Cornhuskers",
+   "home": "Iowa Hawkeyes",
+   "first": "Iowa Hawkeyes",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 616,
+   "winner": "Iowa Hawkeyes",
+   "seq": "0-7>7-7>7-10>7-17>7-24>7-31",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "7-31"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Toledo Rockets",
+   "home": "Ohio Bobcats",
+   "first": "Toledo Rockets",
+   "first_side": "away",
+   "first_kind": "TD",
+   "first_elapsed_sec": 349,
+   "winner": "Toledo Rockets",
+   "seq": "7-0>14-0>17-0>17-3>17-10>17-17>24-17>24-24>24-31>31-31>34-31",
+   "lead_changes": 2,
+   "ties": 3,
+   "final": "34-31"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Tulsa Golden Hurricane",
+   "home": "UTSA Roadrunners",
+   "first": "UTSA Roadrunners",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 46,
+   "winner": "UTSA Roadrunners",
+   "seq": "0-7>7-7>7-14>7-16>7-18>7-25>15-25>15-28>22-28",
+   "lead_changes": 0,
+   "ties": 1,
+   "final": "22-28"
   }
  ],
  "tally": {
@@ -11782,7 +11852,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Akron Zips": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 6,
    "kinds": {
     "FG": 1,
@@ -11792,9 +11862,9 @@
    "won_when_first": 1,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 54.5,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 16.7,
-   "win_pct_when_not_first": 20.0,
+   "win_pct_when_not_first": 16.7,
    "won_by_one_when_first_pct": 0.0
   },
   "Wake Forest Demon Deacons": {
@@ -12086,17 +12156,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Buffalo Bulls": {
-   "gp": 11,
-   "scored_first": 3,
+   "gp": 12,
+   "scored_first": 4,
    "kinds": {
     "FG": 2,
-    "TD": 1,
+    "TD": 2,
     "Safety": 0
    },
-   "won_when_first": 3,
+   "won_when_first": 4,
    "won_when_not_first": 5,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 27.3,
+   "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 62.5,
    "won_by_one_when_first_pct": 0.0
@@ -12262,17 +12332,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Toledo Rockets": {
-   "gp": 11,
-   "scored_first": 5,
+   "gp": 12,
+   "scored_first": 6,
    "kinds": {
     "FG": 1,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 45.5,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
@@ -13574,17 +13644,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Iowa Hawkeyes": {
-   "gp": 11,
-   "scored_first": 7,
+   "gp": 12,
+   "scored_first": 8,
    "kinds": {
     "FG": 3,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
-   "won_when_first": 7,
+   "won_when_first": 8,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 63.6,
+   "scored_first_pct": 66.7,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
@@ -13622,7 +13692,7 @@
    "won_by_one_when_first_pct": 14.3
   },
   "Ohio Bobcats": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 8,
    "kinds": {
     "FG": 1,
@@ -13632,13 +13702,13 @@
    "won_when_first": 6,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 72.7,
+   "scored_first_pct": 66.7,
    "win_pct_when_first": 75.0,
-   "win_pct_when_not_first": 66.7,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Nebraska Cornhuskers": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 7,
    "kinds": {
     "FG": 1,
@@ -13648,9 +13718,9 @@
    "won_when_first": 3,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 63.6,
+   "scored_first_pct": 58.3,
    "win_pct_when_first": 42.9,
-   "win_pct_when_not_first": 100.0,
+   "win_pct_when_not_first": 80.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Oklahoma State Cowboys": {
@@ -13670,7 +13740,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Tulsa Golden Hurricane": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 4,
    "kinds": {
     "FG": 1,
@@ -13680,9 +13750,9 @@
    "won_when_first": 4,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 36.4,
+   "scored_first_pct": 33.3,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 42.9,
+   "win_pct_when_not_first": 37.5,
    "won_by_one_when_first_pct": 0.0
   },
   "Oregon State Beavers": {
@@ -14150,7 +14220,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Mississippi State Bulldogs": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 3,
    "kinds": {
     "FG": 0,
@@ -14160,9 +14230,9 @@
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 27.3,
+   "scored_first_pct": 25.0,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 25.0,
+   "win_pct_when_not_first": 22.2,
    "won_by_one_when_first_pct": 0.0
   },
   "UT Rio Grande Valley Vaqueros": {
@@ -14182,17 +14252,17 @@
    "won_by_one_when_first_pct": null
   },
   "UTSA Roadrunners": {
-   "gp": 11,
-   "scored_first": 5,
+   "gp": 12,
+   "scored_first": 6,
    "kinds": {
     "FG": 1,
-    "TD": 4,
+    "TD": 5,
     "Safety": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 4,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 45.5,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 66.7,
    "won_by_one_when_first_pct": 0.0
@@ -14406,17 +14476,17 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Ole Miss Rebels": {
-   "gp": 11,
-   "scored_first": 5,
+   "gp": 12,
+   "scored_first": 6,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 4,
     "Safety": 0
    },
-   "won_when_first": 5,
+   "won_when_first": 6,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 45.5,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
@@ -15335,20 +15405,20 @@
   }
  },
  "league": {
-  "games": 823,
-  "home_scored_first": 487,
-  "first_team_won": 577,
+  "games": 828,
+  "home_scored_first": 490,
+  "first_team_won": 582,
   "first_team_won_by_one": 12,
-  "first_team_won_by_one_pct": 1.5,
+  "first_team_won_by_one_pct": 1.4,
   "kinds": {
-   "FG": 229,
-   "TD": 592,
+   "FG": 230,
+   "TD": 596,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
-  "median_first_score_sec": 341,
+  "median_first_score_sec": 342,
   "home_scored_first_pct": 59.2,
-  "first_team_win_pct": 70.1
+  "first_team_win_pct": 70.3
  },
  "lead_change_team_avgs": {
   "Hawai'i Rainbow Warriors": {
@@ -15432,9 +15502,9 @@
    "avg_per_game": 1.18
   },
   "Akron Zips": {
-   "games": 11,
-   "lead_changes": 16,
-   "avg_per_game": 1.45
+   "games": 12,
+   "lead_changes": 18,
+   "avg_per_game": 1.5
   },
   "Wake Forest Demon Deacons": {
    "games": 11,
@@ -15527,9 +15597,9 @@
    "avg_per_game": 3.0
   },
   "Buffalo Bulls": {
-   "games": 11,
-   "lead_changes": 17,
-   "avg_per_game": 1.55
+   "games": 12,
+   "lead_changes": 19,
+   "avg_per_game": 1.58
   },
   "West Georgia Wolves": {
    "games": 2,
@@ -15582,9 +15652,9 @@
    "avg_per_game": 0.91
   },
   "Toledo Rockets": {
-   "games": 11,
-   "lead_changes": 12,
-   "avg_per_game": 1.09
+   "games": 12,
+   "lead_changes": 14,
+   "avg_per_game": 1.17
   },
   "Michigan State Spartans": {
    "games": 11,
@@ -15992,9 +16062,9 @@
    "avg_per_game": 0.45
   },
   "Iowa Hawkeyes": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 4,
-   "avg_per_game": 0.36
+   "avg_per_game": 0.33
   },
   "Northwestern State Demons": {
    "games": 1,
@@ -16007,14 +16077,14 @@
    "avg_per_game": 0.91
   },
   "Ohio Bobcats": {
-   "games": 11,
-   "lead_changes": 14,
-   "avg_per_game": 1.27
+   "games": 12,
+   "lead_changes": 16,
+   "avg_per_game": 1.33
   },
   "Nebraska Cornhuskers": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 10,
-   "avg_per_game": 0.91
+   "avg_per_game": 0.83
   },
   "Oklahoma State Cowboys": {
    "games": 11,
@@ -16022,9 +16092,9 @@
    "avg_per_game": 1.55
   },
   "Tulsa Golden Hurricane": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 11,
-   "avg_per_game": 1.0
+   "avg_per_game": 0.92
   },
   "Oregon State Beavers": {
    "games": 11,
@@ -16172,9 +16242,9 @@
    "avg_per_game": 0.91
   },
   "Mississippi State Bulldogs": {
-   "games": 11,
-   "lead_changes": 6,
-   "avg_per_game": 0.55
+   "games": 12,
+   "lead_changes": 8,
+   "avg_per_game": 0.67
   },
   "UT Rio Grande Valley Vaqueros": {
    "games": 1,
@@ -16182,9 +16252,9 @@
    "avg_per_game": 0.0
   },
   "UTSA Roadrunners": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 16,
-   "avg_per_game": 1.45
+   "avg_per_game": 1.33
   },
   "Utah Tech Trailblazers": {
    "games": 1,
@@ -16252,9 +16322,9 @@
    "avg_per_game": 2.36
   },
   "Ole Miss Rebels": {
-   "games": 11,
-   "lead_changes": 4,
-   "avg_per_game": 0.36
+   "games": 12,
+   "lead_changes": 6,
+   "avg_per_game": 0.5
   },
   "Washington State Cougars": {
    "games": 11,
