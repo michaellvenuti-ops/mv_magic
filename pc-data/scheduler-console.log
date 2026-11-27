@@ -12901,3 +12901,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 14:17:58 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-27 14:17:59 ET] podcast_transcribe.py: OK in 2s — SUMMARY: worker spawned (queued=76, limit=1)
 [2026-11-27 14:17:59 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 14:48:04 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 14:51:25 ET] odds_recorder.py: OK in 169s — SUMMARY: recorded 176 events (142 with odds), db total 329870 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-27 14:54:52 ET] dh_arbitrage.py: FAILED (exit 1) in 207s —   - <launched> pid=11268
+[2026-11-27 15:01:05 ET] dh_kalshi_poly_arb.py: OK in 371s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
+[2026-11-27 15:01:23 ET] wide_builds.py: OK in 13s — NEW BUILD: NFL NY Jets MIA Dolphins Nov-29 1:00 PM — Rec + Rush Yards O. Gordon — Over 89.5 DraftKings +116 ($91) / Under 94.5 BetRivers -122 ($109) — both win 
+[2026-11-27 15:01:24 ET] syncing to GitHub (wide-builds banked new builds)
