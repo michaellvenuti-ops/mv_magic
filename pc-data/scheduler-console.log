@@ -12545,3 +12545,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 22:07:39 ET] pace_board.py: OK in 2s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 22:07:41 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 22:07:41 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 22:37:41 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 22:38:38 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 142 events (115 with odds), db total 327604 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 22:38:40 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA DEN Nuggets UTA Jazz Nov-27 9:45 PM — Total — Over 229 ProphetX -102 ($99) / Under 229.5 Bally Bet -105 ($101) — win+push at 229 — push +$96.19, 
+[2026-11-26 22:38:40 ET] syncing to GitHub (wide-builds banked new builds)
