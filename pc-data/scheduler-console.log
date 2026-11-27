@@ -12591,3 +12591,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 00:03:55 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-27 00:03:56 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 00:03:56 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 00:33:56 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 00:36:24 ET] odds_recorder.py: OK in 117s — SUMMARY: recorded 142 events (113 with odds), db total 327888 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 00:36:24 ET] wide_builds.py: OK in 1s — NEW BUILD: NHL SEA Kraken EDM Oilers Nov-27 8:00 PM — Total — Over 6 BetMGM -130 ($104) / Under 6.5 Bally Bet -107 ($96) — win+push at 6 — push +$89.72, miss -1
+[2026-11-27 00:36:24 ET] syncing to GitHub (wide-builds banked new builds)
