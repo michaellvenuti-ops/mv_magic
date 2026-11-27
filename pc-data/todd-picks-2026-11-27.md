@@ -15,3 +15,5 @@ NEW TODD PLAY: 1st Half Total 72.5 -120 :: raw: "@everyone ov72.5 -120 Memphis 1
 NEW TODD PLAY: Todd play (in-play CBB) -182 :: raw: "@everyone Akron +8 -182..risk 1.2 for .66" :: msg 1575956058000719923 :: posted 2026-11-27T19:26:44.075Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 15:34:32 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 67.5 -110 :: raw: "@everyone ov67.5 -110 1h Baylor and ov69.5 -110 1h Baylor" :: msg 1575972808557731981 :: posted 2026-11-27T20:33:17.719Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 15:55:08 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 42.5 -112 :: raw: "@everyone ov42.5 -112 Broncos game nfl" :: msg 1575977745937211573 :: posted 2026-11-27T20:52:54.882Z :: Novig: https://app.novig.us/AppEntry
