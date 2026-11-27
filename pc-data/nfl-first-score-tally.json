@@ -1643,13 +1643,23 @@
   },
   {
    "date": "2026-11-26",
+   "away": "Kansas City Chiefs",
+   "home": "Buffalo Bills",
+   "first": "Buffalo Bills",
+   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "lead_changes": 2,
+   "ties": 1,
+   "final": "10-13"
+  },
+  {
    "away": "Philadelphia Eagles",
-   "home": "Dallas Cowboys",
+   "date": "2026-11-26",
+   "final": "39-38",
    "first": "Dallas Cowboys",
-   "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
+   "home": "Dallas Cowboys",
    "lead_changes": 1,
-   "ties": 0,
-   "final": "39-38"
+   "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
+   "ties": 0
   }
  ],
  "tally": {
@@ -1764,12 +1774,12 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Buffalo Bills": {
-   "gp": 9,
-   "scored_first": 7,
-   "won_when_first": 7,
+   "gp": 10,
+   "scored_first": 8,
+   "won_when_first": 8,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 77.8,
+   "scored_first_pct": 80.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
@@ -1995,27 +2005,27 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Kansas City Chiefs": {
-   "gp": 10,
+   "gp": 11,
    "scored_first": 5,
    "won_when_first": 5,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 50.0,
+   "scored_first_pct": 45.5,
    "win_pct_when_first": 100.0,
-   "win_pct_when_not_first": 60.0,
+   "win_pct_when_not_first": 50.0,
    "won_by_one_when_first_pct": 0.0
   }
  },
  "league": {
-  "games": 165,
-  "games_with_goal": 165,
-  "home_scored_first": 85,
-  "first_team_won": 104,
+  "games": 166,
+  "games_with_goal": 166,
+  "home_scored_first": 86,
+  "first_team_won": 105,
   "first_team_won_by_one": 2,
   "first_team_won_by_one_pct": 1.2,
   "avg_lead_changes": 1.24,
-  "home_scored_first_pct": 51.5,
-  "first_team_win_pct": 63.0
+  "home_scored_first_pct": 51.8,
+  "first_team_win_pct": 63.3
  },
  "lead_changes": [
   {
@@ -3660,13 +3670,23 @@
   },
   {
    "date": "2026-11-26",
+   "away": "Kansas City Chiefs",
+   "home": "Buffalo Bills",
+   "first": "Buffalo Bills",
+   "seq": "0-7>3-7>10-7>10-10>10-13",
+   "lead_changes": 2,
+   "ties": 1,
+   "final": "10-13"
+  },
+  {
    "away": "Philadelphia Eagles",
-   "home": "Dallas Cowboys",
+   "date": "2026-11-26",
+   "final": "39-38",
    "first": "Dallas Cowboys",
-   "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
+   "home": "Dallas Cowboys",
    "lead_changes": 1,
-   "ties": 0,
-   "final": "39-38"
+   "seq": "0-7>0-14>3-14>3-21>10-21>10-28>10-31>17-31>24-31>24-38>30-38>36-38>39-38",
+   "ties": 0
   }
  ],
  "lead_change_team_avgs": {
@@ -3721,9 +3741,9 @@
    "avg_per_game": 1.55
   },
   "Buffalo Bills": {
-   "games": 9,
-   "lead_changes": 21,
-   "avg_per_game": 2.33
+   "games": 10,
+   "lead_changes": 23,
+   "avg_per_game": 2.3
   },
   "Houston Texans": {
    "games": 10,
@@ -3826,9 +3846,9 @@
    "avg_per_game": 1.2
   },
   "Kansas City Chiefs": {
-   "games": 10,
-   "lead_changes": 13,
-   "avg_per_game": 1.3
+   "games": 11,
+   "lead_changes": 15,
+   "avg_per_game": 1.36
   }
  }
 }
