@@ -29,3 +29,5 @@ NEW IN-PLAY CBB: PLAY: Over 137.5 -120 — DePaul at Pitt (TRAILING FAVE) | preg
 NEW IN-PLAY CBB: PLAY: Over 155.5 -115 — LSU at SMU (TRAILING FAVE) | pregame favorite LSU trails at half (SMU leads); pace is slow (proj 148.0 vs live 155.5) — the comeback-fave rule bets Over anyway | H1 74 | as of 20:25:02 ET
 ## 2026-11-26 20:53:08 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 131.5 -110 — UC Davis at Jax State (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 131.5 (gap -9.5, bar 5) | H1 61 | as of 20:53:07 ET
+## 2026-11-26 21:59:02 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 180.5 -110 — Louisville at St John's (TRAILING FAVE) | pregame favorite St John's trails at half (Louisville leads); pace agrees (proj 192.0 vs live 180.5) — comeback-fave Over | H1 96 | as of 21:59:01 ET
