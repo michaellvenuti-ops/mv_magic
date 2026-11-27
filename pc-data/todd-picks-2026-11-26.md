@@ -53,3 +53,5 @@ NEW TODD PLAY: Total 202.5 -114 :: raw: "@everyone Allen bills un202.5 passing y
 NEW TODD PLAY: Total 223.5 -114 :: raw: "@everyone mahomes un223.5 passing yards -114 ..risk .57 for .50" :: msg 1575686837408890923 :: posted 2026-11-27T01:36:56.884Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 20:38:28 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 6.5 175 :: raw: "And I got greedy and played tie 1q tcu instead of un6.5 cause of the +175" :: msg 1575687015813615858 :: posted 2026-11-27T01:37:39.419Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 21:24:03 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 91.5 -125 :: raw: "@everyone ov91.5 -125 1h stjohns" :: msg 1575698684140593315 :: posted 2026-11-27T02:24:01.365Z :: Novig: https://app.novig.us/AppEntry
