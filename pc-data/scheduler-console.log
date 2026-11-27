@@ -12927,3 +12927,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 16:07:20 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 16:07:23 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-27 16:07:24 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 16:37:29 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 16:43:16 ET] odds_recorder.py: OK in 316s — SUMMARY: recorded 176 events (118 with odds), db total 330046 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-27 16:49:08 ET] dh_arbitrage.py: OK in 351s — ARBITRAGE: NBA DEN Nuggets UTA Jazz Today 9:45 PM / Today 9:45 PM / table / Points B. Sensabaugh Under 11.5 / Alt Points B. Sensabaugh 12+ / table | Bet365 | Ba
+[2026-11-27 16:50:34 ET] dh_kalshi_poly_arb.py: OK in 85s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-27 16:50:44 ET] wide_builds.py: OK in 6s — NEW BUILD: NFL NO Saints CIN Bengals Nov-29 1:00 PM — Receiving Yards D. Vele — Over 26.5 Caesars +105 ($96) / Under 30.5 BetParx -113 ($104) — both win 27, 28,
+[2026-11-27 16:50:44 ET] syncing to GitHub (wide-builds banked new builds)
