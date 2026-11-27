@@ -16,3 +16,5 @@
 ## 2026-11-26T15:18:23-05:00 — pack move, never credited: Michigan State @ Rutgers | 2026-11-26 spread (FanDuel, Kalshi)
 ## 2026-11-26T15:18:23-05:00 — 85 games, 0 leads credited, 2 started games skipped
 ## 2026-11-26T17:00:24-05:00 — 85 games, 0 leads credited, 3 started games skipped
+## 2026-11-26T18:55:43-05:00 — pack move, never credited: North Dakota State @ San Jose State | 2026-11-26 spread (DraftKings, bet365)
+## 2026-11-26T18:55:44-05:00 — 85 games, 0 leads credited, 3 started games skipped
