@@ -29,3 +29,5 @@ NEW TODD PLAY: Total 1.5 -177 :: raw: "@everyone ov1.5 fgs Steelers -177 ..risk 
 NEW TODD PLAY: Total 45.5 -110 :: raw: "@everyone un45.5 -110 Broncos game to go for Middle w ov42.5 from earlier" :: msg 1575991676072231075 :: posted 2026-11-27T21:48:16.085Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 16:54:57 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 47.5 -110 :: raw: "@everyone ov47.5 -110 Air Force cfb" :: msg 1575993221723725846 :: posted 2026-11-27T21:54:24.597Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 17:22:34 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 58.5 -121 :: raw: "@everyone ov58.5 -121 n Dakota state cfb" :: msg 1576000000943464652 :: posted 2026-11-27T22:21:20.889Z :: Novig: https://app.novig.us/AppEntry
