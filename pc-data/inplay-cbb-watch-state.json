@@ -468,7 +468,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-27T16:31:54",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 130.5 \u2014 La Salle at Bucknell (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 130.5 (gap -26.5, bar 5) | H1 52 | as of 16:31:48 ET"
+   "alert_detail": "PLAY: Under 130.5 \u2014 La Salle at Bucknell (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 130.5 (gap -26.5, bar 5) | H1 52 | as of 16:31:48 ET",
+   "final": true
   },
   "401920774": {
    "matchup": "Colgate at Hofstra",
@@ -506,7 +507,8 @@
    "spread": 48.5,
    "fav_team": "Missouri",
    "dog_team": "AR-Pine Bluff",
-   "pregame_total": 154.5
+   "pregame_total": 154.5,
+   "final": true
   },
   "401912213": {
    "matchup": "Radford at American",
@@ -564,12 +566,15 @@
   "401921718": {
    "matchup": "Texas at Saint Mary's",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Texas",
    "dog_team": "Saint Mary's",
-   "pregame_total": 160.5
+   "pregame_total": 160.5,
+   "alerted_at": "2026-11-27T18:15:21",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 148.5 -115 \u2014 Texas at Saint Mary's (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 148.5 (gap -24.5, bar 5) | H1 62 | as of 18:15:18 ET"
   },
   "401909789": {
    "matchup": "Villanova at Kansas",
@@ -783,7 +788,7 @@
    "spread": 6.5,
    "fav_team": "Pacific",
    "dog_team": "UC Davis",
-   "pregame_total": 138.5
+   "pregame_total": 137.5
   },
   "401920543": {
    "matchup": "TBD at TBD",
