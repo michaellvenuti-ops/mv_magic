@@ -18,3 +18,4 @@ NEW FLAG: FBS Tulsa @ UTSA | 2026-11-26 — Fanatics still dealing spread 1.0 on
 ## 2026-11-26T20:07:31-05:00 — 69 games, 1 steam events, 2 NEW flags, 1 started games skipped
 NEW FLAG: FBS Mississippi State @ Ole Miss | 2026-11-26 — bet365 still dealing spread -18.5 on Mississippi State (pre-move median -18.5, now -17.5)
 NEW FLAG: FBS Mississippi State @ Ole Miss | 2026-11-26 — Fanatics still dealing spread -19.0 on Mississippi State (pre-move median -18.5, now -17.5)
+## 2026-11-26T21:22:46-05:00 — 69 games, 0 steam events, 0 NEW flags, 1 started games skipped
