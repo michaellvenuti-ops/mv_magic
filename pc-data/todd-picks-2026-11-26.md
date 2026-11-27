@@ -43,3 +43,5 @@ NEW TODD PLAY: Moneyline +8.5 -136 :: raw: "@everyone parlay Cowboys ml 3q , Chi
 NEW TODD PLAY: 1st Half Total 1 :: raw: "Forgot to type the 1h in the Mich over 1h at approx 4p but I hope ppl realized it was a 1h cause I didn’t write tt" :: msg 1575667432545063053 :: posted 2026-11-27T00:19:50.404Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 19:37:00 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 71.5 -115 :: raw: "@everyone ov71.5 -115 1h Pitt" :: msg 1575671724165435503 :: posted 2026-11-27T00:36:53.606Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 20:01:13 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 185.5 -112 :: raw: "@everyone un185.5 -112 tcu" :: msg 1575677816433942560 :: posted 2026-11-27T01:01:06.116Z :: Novig: https://app.novig.us/AppEntry
