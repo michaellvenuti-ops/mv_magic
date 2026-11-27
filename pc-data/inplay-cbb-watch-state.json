@@ -322,7 +322,8 @@
    "pregame_total": 152.5,
    "alerted_at": "2026-11-27T14:44:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 146.5 -120 \u2014 Memphis at Wake Forest (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 146.5 (gap -20.5, bar 5) | H1 63 | as of 14:44:02 ET"
+   "alert_detail": "PLAY: Under 146.5 -120 \u2014 Memphis at Wake Forest (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 146.5 (gap -20.5, bar 5) | H1 63 | as of 14:44:02 ET",
+   "final": true
   },
   "401921827": {
    "matchup": "Southern at Vanderbilt",
@@ -332,7 +333,8 @@
    "spread": 38.5,
    "fav_team": "Vanderbilt",
    "dog_team": "Southern",
-   "pregame_total": 152.5
+   "pregame_total": 152.5,
+   "final": true
   },
   "401929407": {
    "matchup": "Clarke at South Dakota",
@@ -365,7 +367,8 @@
    "pregame_total": 134.5,
    "alerted_at": "2026-11-27T14:49:22",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 132.5 -115 \u2014 Navy at Fairfield (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 14:49:21 ET"
+   "alert_detail": "PLAY: Under 132.5 -115 \u2014 Navy at Fairfield (PACE) | pace proj 122.0 (H1 61 x 2) vs live total 132.5 (gap -10.5, bar 5) | H1 61 | as of 14:49:21 ET",
+   "final": true
   },
   "401919786": {
    "matchup": "Maine at Le Moyne",
@@ -460,12 +463,15 @@
   "401920774": {
    "matchup": "Colgate at Hofstra",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 1.5,
    "fav_team": "Hofstra",
    "dog_team": "Colgate",
-   "pregame_total": 137.5
+   "pregame_total": 137.5,
+   "alerted_at": "2026-11-27T16:16:41",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 136.5 \u2014 Colgate at Hofstra (TRAILING FAVE) | pregame favorite Hofstra trails at half (Colgate leads); pace is slow (proj 128.0 vs live 136.5) \u2014 the comeback-fave rule bets Over anyway | H1 64 | as of 16:16:40 ET"
   },
   "401920532": {
    "matchup": "TBD at Maryland",
@@ -495,7 +501,7 @@
    "spread": 6.5,
    "fav_team": "American",
    "dog_team": "Radford",
-   "pregame_total": 142.5
+   "pregame_total": 141.5
   },
   "401911212": {
    "matchup": "UMBC at G Washington",
@@ -515,7 +521,7 @@
    "spread": 8.5,
    "fav_team": "Cincinnati",
    "dog_team": "Boston College",
-   "pregame_total": 140.5
+   "pregame_total": 139.5
   },
   "401924845": {
    "matchup": "Niagara at Lafayette",
@@ -630,7 +636,7 @@
    "spread": 5.5,
    "fav_team": "Georgia",
    "dog_team": "UCF",
-   "pregame_total": 162.5
+   "pregame_total": 161.5
   },
   "401926756": {
    "matchup": "Lehigh at Santa Barbara",
