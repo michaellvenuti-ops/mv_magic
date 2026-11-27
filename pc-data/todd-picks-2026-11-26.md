@@ -45,3 +45,5 @@ NEW TODD PLAY: 1st Half Total 1 :: raw: "Forgot to type the 1h in the Mich over 
 NEW TODD PLAY: 1st Half Total 71.5 -115 :: raw: "@everyone ov71.5 -115 1h Pitt" :: msg 1575671724165435503 :: posted 2026-11-27T00:36:53.606Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 20:01:13 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 185.5 -112 :: raw: "@everyone un185.5 -112 tcu" :: msg 1575677816433942560 :: posted 2026-11-27T01:01:06.116Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 20:25:29 ET — 1 NEW Todd play
+NEW TODD PLAY: Todd play (in-play CBB) 175 :: raw: "@everyone tie 1q tcu cfb +175..risk .40 for .70" :: msg 1575683841694113933 :: posted 2026-11-27T01:25:02.650Z :: Novig: https://app.novig.us/AppEntry
