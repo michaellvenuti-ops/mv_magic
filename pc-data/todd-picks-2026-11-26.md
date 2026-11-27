@@ -39,3 +39,5 @@ NEW TODD PLAY: Total 138 -130 :: raw: "@everyone ov138 -130 Tenn game cbb" :: ms
 NEW TODD PLAY: 1st Half Total 75.5 -115 :: raw: "@everyone Ov75.5 -115 1h crei" :: msg 1575658708208193610 :: posted 2026-11-26T23:45:10.360Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-26 18:53:49 ET — 1 NEW Todd play
 NEW TODD PLAY: Moneyline +8.5 -136 :: raw: "@everyone parlay Cowboys ml 3q , Chiefs +8.5 , -136..risk 1 for .74" :: msg 1575660785911201935 :: posted 2026-11-26T23:53:25.723Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-26 19:20:09 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 1 :: raw: "Forgot to type the 1h in the Mich over 1h at approx 4p but I hope ppl realized it was a 1h cause I didn’t write tt" :: msg 1575667432545063053 :: posted 2026-11-27T00:19:50.404Z :: Novig: https://app.novig.us/AppEntry
