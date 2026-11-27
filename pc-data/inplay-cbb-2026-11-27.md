@@ -37,3 +37,5 @@ NEW IN-PLAY CBB: PLAY: Over 153.5 -115 — Maryland at Oregon (TRAILING FAVE) | 
 NEW IN-PLAY CBB: PLAY: Under 142.5 -115 — Radford at American (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 142.5 (gap -6.5, bar 5) | H1 68 | as of 17:04:02 ET
 ## 2026-11-27 17:18:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 128.5 — Cincinnati at Boston College (TRAILING FAVE) | pregame favorite Cincinnati trails at half (Boston College leads); pace is slow (proj 110.0 vs live 128.5) — the comeback-fave rule bets Over anyway | H1 55 | as of 17:18:02 ET
+## 2026-11-27 17:51:04 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 161.5 — Marquette at Texas A&M (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 161.5 (gap -7.5, bar 5) | H1 77 | as of 17:51:02 ET
