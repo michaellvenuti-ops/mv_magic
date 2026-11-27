@@ -1209,3 +1209,129 @@ NCAAF North Carolina St. North Carolina Nov-28 12:00 PM — Total — Over 54 Pr
 NCAAB Baylor 22 Gonzaga Today 11:30 PM — Total — Over 154 ProphetX +103 ($97) / Under 154.5 FanDuel -110 ($103) — win+push at 154 — push +$93.64, miss -3.36 / -3.09 on ~$200 balanced
 NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM — Total — Over 219.5 Fanatics-NJ -120 ($107) / Under 220 Bet365 +110 ($93) — win+push at 220 — push +$89.17, miss -4.70 / -3.83 on ~$200 balanced
 NBA DEN Nuggets UTA Jazz Nov-27 9:45 PM — Total — Over 229 ProphetX -102 ($99) / Under 229.5 Bally Bet -105 ($101) — win+push at 229 — push +$96.19, miss -2.81 / -3.94 on ~$200 balanced
+## 2026-11-26T23:53:44-05:00 — wide-builds: 0 NEW wide builds
+(end of new builds — full list below)
+NBA ATL Hawks BOS Celtics Nov-27 8:15 PM — Total — Over 222.5 Bally Bet +107 ($96) / Under 223 Fanatics-NJ -110 ($104) — win+push at 223 — push +$102.72, miss -1.45 / -1.28 on ~$200 balanced
+NBA DEN Nuggets UTA Jazz Nov-27 9:45 PM — Total — Over 229 ProphetX -102 ($99) / Under 229.5 Bally Bet -105 ($101) — win+push at 229 — push +$96.19, miss -2.81 / -3.94 on ~$200 balanced
+NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM — Total — Over 219.5 Fanatics-NJ -120 ($107) / Under 220 Bet365 +110 ($93) — win+push at 220 — push +$89.17, miss -4.70 / -3.83 on ~$200 balanced
+NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM — Total — Over 220.5 DraftKings -108 ($102) / Under 221 Bet365 +100 ($98) — win+push at 221 — push +$94.44, miss -4.00 / -3.56 on ~$200 balanced
+NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM — Total — Over 223 Bet365 +105 ($96) / Under 223.5 Bally Bet -114 ($104) — win+push at 223 — push +$91.23, miss -4.77 / -3.20 on ~$200 balanced
+NBA MIA Heat NY Knicks Nov-27 7:15 PM — Total — Over 223 ProphetX +102 ($98) / Under 223.5 Bally Bet -108 ($102) — win+push at 223 — push +$94.44, miss -3.56 / -2.04 on ~$200 balanced
+NBA MIL Bucks DET Pistons Nov-27 7:45 PM — Total — Over 213.5 BetMGM -170 ($114) / Under 218 Bet365 +110 ($86) — both win 214, 215, 216, 217 — push at 218 — land +$161.66, miss -19.40 / -18.94 on ~$200 balanced
+NBA MIL Bucks DET Pistons Nov-27 7:45 PM — Total — Over 215.5 BetMGM -170 ($114) / Under 220 Bet365 +110 ($86) — both win 216, 217, 218, 219 — push at 220 — land +$161.66, miss -19.40 / -18.94 on ~$200 balanced
+NBA NO Pelicans LA Clippers Nov-27 9:45 PM — Total — Over 228.5 theScore -135 ($108) / Under 231 Bet365 +106 ($92) — both win 229, 230 — push at 231 — land +$177.52, miss -10.48 / -12.00 on ~$200 balanced
+NBA PHI 76ers IND Pacers Nov-27 7:45 PM — Total — Over 227.5 BetMGM -170 ($114) / Under 232 Bet365 +110 ($86) — both win 228, 229, 230, 231 — push at 232 — land +$161.66, miss -19.40 / -18.94 on ~$200 balanced
+NBA PHI 76ers IND Pacers Nov-27 7:45 PM — Total — Over 229.5 DraftKings -138 ($105) / Under 234.5 Bally Bet -110 ($95) — both win 230, 231, 232, 233, 234 — land +$162.45, miss -18.64 / -18.91 on ~$200 balanced
+NBA PHI 76ers IND Pacers Nov-27 7:45 PM — Total — Over 230.5 ProphetX -122 ($99) / Under 235.5 FanDuel -128 ($101) — both win 231, 232, 233, 234, 235 — land +$160.05, miss -20.09 / -19.85 on ~$200 balanced
+NBA PHI 76ers IND Pacers Nov-27 7:45 PM — Total — Over 234 Fanatics-NJ +105 ($96) / Under 234.5 Bally Bet -110 ($104) — win+push at 234 — push +$94.55, miss -1.45 / -3.20 on ~$200 balanced
+NCAAB 17 Miami Michigan Nov-26 3:30 PM — Total — Over 157.5 theScore -115 ($105) / Under 158 Bet365 +105 ($95) — win+push at 158 — push +$91.30, miss -5.25 / -3.70 on ~$200 balanced
+NCAAB 25 Louisville 13 St. John's Nov-26 9:00 PM — Total — Over 157.5 Bally Bet -125 ($111) / Under 158 Bet365 +125 ($89) — win+push at 158 — push +$88.80, miss +0.25 / -0.20 on ~$200 balanced
+NCAAB 25 Louisville 13 St. John's Today 9:00 PM — Total — Over 160 ProphetX -107 ($102) / Under 160.5 Bet365 +100 ($98) — win+push at 160 — push +$98.00, miss -4.00 / -2.67 on ~$200 balanced
+NCAAB 25 Louisville 13 St. John's Today 9:00 PM — Total — Over 161 ProphetX +103 ($97) / Under 161.5 Bet365 -110 ($103) — win+push at 161 — push +$93.64, miss -3.36 / -3.09 on ~$200 balanced
+NCAAB 5 Texas Tech Oregon Today 11:30 PM — Total — Over 144.5 Caesars -160 ($121) / Under 145 Bet365 +150 ($79) — win+push at 145 — push +$75.62, miss -2.50 / -3.38 on ~$200 balanced
+NCAAB Baylor 22 Gonzaga Today 11:30 PM — Total — Over 150.5 Caesars -160 ($111) / Under 154.5 Bally Bet +102 ($89) — both win 151, 152, 153, 154 — land +$160.15, miss -20.22 / -19.62 on ~$200 balanced
+NCAAB Baylor 22 Gonzaga Today 11:30 PM — Total — Over 154 ProphetX +103 ($97) / Under 154.5 FanDuel -110 ($103) — win+push at 154 — push +$93.64, miss -3.36 / -3.09 on ~$200 balanced
+NCAAB Bowling Green 23 Indiana Nov-27 6:00 PM — Total — Over 149.5 DraftKings -160 ($121) / Under 150 Bet365 +150 ($79) — win+push at 150 — push +$75.62, miss -2.50 / -3.38 on ~$200 balanced
+NCAAB Bowling Green 23 Indiana Nov-27 6:00 PM — Total — Over 153.5 DraftKings +105 ($96) / Under 155.5 FanDuel -110 ($104) — both win 154, 155 — land +$195.35, miss -1.45 / -3.20 on ~$200 balanced
+NCAAB Cincinnati Boston College Nov-27 4:30 PM — Total — Over 141.5 theScore +100 ($99) / Under 143.5 Bally Bet -106 ($101) — both win 142, 143 — land +$194.28, miss -3.72 / -2.00 on ~$200 balanced
+NCAAB DePaul Pittsburgh Today 7:00 PM — Total — Over 139 Bet365 +115 ($86) / Under 141.5 HardRock -160 ($114) — both win 140, 141 — push at 139 — land +$170.15, miss -14.75 / -15.10 on ~$200 balanced
+NCAAB Georgia Cincinnati Today 11:00 AM — Total — Over 154.5 Bally Bet -109 ($103) / Under 155 ProphetX +102 ($97) — win+push at 155 — push +$94.50, miss -4.06 / -2.50 on ~$200 balanced
+NCAAB Incarnate Word Hawai'i Today 11:59 PM — Total — Over 144 Bet365 +155 ($77) / Under 144.5 HardRock -170 ($123) — win+push at 144 — push +$72.35, miss -4.65 / -3.65 on ~$200 balanced
+NCAAB Missouri St. Oral Roberts Nov-27 8:00 PM — Total — Over 141.5 DraftKings -160 ($121) / Under 142 Bet365 +150 ($79) — win+push at 142 — push +$75.62, miss -2.50 / -3.38 on ~$200 balanced
+NCAAB North Dakota St. North Texas Nov-27 8:00 PM — Total — Over 140.5 DraftKings -160 ($121) / Under 141 Bet365 +150 ($79) — win+push at 141 — push +$75.62, miss -2.50 / -3.38 on ~$200 balanced
+NCAAB Northeastern Northwestern Nov-27 8:00 PM — Total — Over 144.5 DraftKings -166 ($115) / Under 148 Bet365 +115 ($85) — both win 145, 146, 147 — push at 148 — land +$167.03, miss -17.25 / -15.72 on ~$200 balanced
+NCAAB Northeastern Northwestern Nov-27 8:00 PM — Total — Over 148.5 theScore -110 ($104) / Under 149 Bet365 +105 ($96) — win+push at 149 — push +$94.55, miss -3.20 / -1.45 on ~$200 balanced
+NCAAB Oakland 1 Houston Nov-27 7:30 PM — Total — Over 145.5 Caesars -115 ($110) / Under 148 Bet365 +130 ($90) — both win 146, 147 — push at 148 — land +$212.65, miss +7.00 / +5.65 on ~$200 balanced
+NCAAB Oakland 1 Houston Nov-27 7:30 PM — Total — Over 145.5 Caesars -115 ($103) / Under 150.5 Bet365 +100 ($97) — both win 146, 147, 148, 149, 150 — land +$186.57, miss -6.00 / -7.43 on ~$200 balanced
+NCAAB Oakland 1 Houston Nov-27 7:30 PM — Total — Over 151 Bet365 +105 ($96) / Under 151.5 FanDuel -110 ($104) — win+push at 151 — push +$94.55, miss -1.45 / -3.20 on ~$200 balanced
+NCAAB Old Dominion Virginia Tech Nov-27 5:00 PM — Total — Over 146.5 theScore +100 ($99) / Under 147 Bet365 -105 ($101) — win+push at 147 — push +$99.00, miss -2.81 / -2.00 on ~$200 balanced
+NCAAB SMU 20 LSU Today 7:00 PM — Total — Over 158 ProphetX +108 ($95) / Under 158.5 Fanatics-NJ -115 ($105) — win+push at 158 — push +$91.30, miss -3.70 / -2.40 on ~$200 balanced
+NCAAB San Diego St. Maryland Nov-26 1:00 PM — Total — Over 150.5 theScore -115 ($105) / Under 151 Bet365 +105 ($95) — win+push at 151 — push +$91.30, miss -5.25 / -3.70 on ~$200 balanced
+NCAAB San Diego St. Maryland Today 1:00 PM — Total — Over 152.5 HardRock -105 ($101) / Under 153 ProphetX -102 ($99) — win+push at 153 — push +$96.19, miss -3.94 / -2.81 on ~$200 balanced
+NCAAB South Alabama Fresno St. Nov-27 2:00 PM — Total — Over 146.5 theScore -105 ($101) / Under 147 Bet365 -101 ($99) — win+push at 147 — push +$96.19, miss -2.98 / -2.81 on ~$200 balanced
+NCAAB South Carolina Arizona St. Today 2:00 PM — Total — Over 141 ProphetX +120 ($91) / Under 141.5 theScore -120 ($109) — win+push at 141 — push +$90.83, miss -0.17 / +0.20 on ~$200 balanced
+NCAAB TCU Creighton Today 6:00 PM — Total — Over 149.5 DraftKings -160 ($121) / Under 150 Bet365 +150 ($79) — win+push at 150 — push +$75.62, miss -2.50 / -3.38 on ~$200 balanced
+NCAAB UCF Georgia Nov-27 7:00 PM — Total — Over 166 Bet365 +150 ($79) / Under 166.5 DraftKings -160 ($121) — win+push at 166 — push +$75.62, miss -3.38 / -2.50 on ~$200 balanced
+NCAAB Utah St. 18 USC Today 4:30 PM — Total — Over 158.5 theScore -120 ($102) / Under 161.5 Bet365 -112 ($98) — both win 159, 160, 161 — land +$172.50, miss -14.50 / -13.00 on ~$200 balanced
+NCAAB Utah St. 18 USC Today 4:30 PM — Total — Over 160 ProphetX +127 ($87) / Under 160.5 Fanatics-NJ -135 ($113) — win+push at 160 — push +$83.70, miss -3.30 / -2.51 on ~$200 balanced
+NCAAF 18 Louisville Kentucky Nov-28 12:00 PM — Total — Over 53 ProphetX -107 ($102) / Under 53.5 theScore +100 ($98) — win+push at 53 — push +$98.00, miss -4.00 / -2.67 on ~$200 balanced
+NCAAF 18 Louisville Kentucky Nov-28 12:00 PM — Total — Over 53 ProphetX -101 ($93) / Under 56 Fanatics-NJ -140 ($107) — both win 54, 55 — push at 53, 56 — land +$168.51, miss -16.57 / -14.92 on ~$200 balanced
+NCAAF 18 Louisville Kentucky Nov-28 12:00 PM — Total — Over 54 ProphetX +109 ($95) / Under 54.5 Bet365 -113 ($105) — win+push at 54 — push +$92.92, miss -2.08 / -1.45 on ~$200 balanced
+NCAAF 18 Louisville Kentucky Nov-28 12:00 PM — Total — Over 54 ProphetX +103 ($91) / Under 57 Fanatics-NJ -145 ($109) — both win 55, 56 — push at 54, 57 — land +$168.90, miss -15.83 / -15.27 on ~$200 balanced
+NCAAF 19 Oklahoma 24 Missouri Nov-28 4:15 PM — Total — Over 41.5 Fanatics-NJ -105 ($102) / Under 42 ProphetX +102 ($98) — win+push at 42 — push +$97.14, miss -2.04 / -0.86 on ~$200 balanced
+NCAAF 20 Florida Florida St. Nov-27 3:30 PM — Total — Over 52.5 Fanatics-NJ -120 ($107) / Under 53 ProphetX +112 ($93) — win+push at 53 — push +$89.17, miss -2.84 / -3.83 on ~$200 balanced
+NCAAF 21 Liberty Missouri St. Nov-28 2:00 PM — Total — Over 54 ProphetX +115 ($93) / Under 54 Fanatics-NJ -115 ($107) — win+push at 54 — push +$0.00, miss +0.04 / -0.05 on ~$200 balanced
+NCAAF 22 Boise St. Colorado St. Nov-28 6:00 PM — Total — Over 17.5 Bally Bet +106 ($96) / Under 19.5 theScore -110 ($104) — both win 18, 19 — land +$196.31, miss -1.45 / -2.24 on ~$200 balanced
+NCAAF 3 Notre Dame Syracuse Nov-28 12:00 PM — Total — Over 50.5 HardRock -145 ($110) / Under 53 ProphetX +106 ($90) — both win 51, 52 — push at 53 — land +$171.26, miss -14.60 / -14.14 on ~$200 balanced
+NCAAF 3 Notre Dame Syracuse Nov-28 12:00 PM — Total — Over 51.5 Bally Bet -136 ($108) / Under 54 ProphetX +104 ($92) — both win 52, 53 — push at 54 — land +$175.09, miss -12.32 / -12.59 on ~$200 balanced
+NCAAF 5 Texas Texas A&M Nov-27 7:30 PM — Total — Over 39.5 Caesars -119 ($107) / Under 40 ProphetX +112 ($93) — win+push at 40 — push +$89.92, miss -2.84 / -3.08 on ~$200 balanced
+NCAAF Air Force New Mexico Nov-27 4:30 PM — Total — Over 40.5 Bally Bet -132 ($112) / Under 41 ProphetX +124 ($88) — win+push at 41 — push +$84.85, miss -2.88 / -3.15 on ~$200 balanced
+NCAAF Air Force New Mexico Nov-27 4:30 PM — Total — Over 41.5 BetMGM -112 ($104) / Under 42 ProphetX +106 ($96) — win+push at 42 — push +$92.86, miss -2.24 / -3.14 on ~$200 balanced
+NCAAF Army Rice Nov-28 2:00 PM — Total — Over 46 ProphetX -115 ($99) / Under 48.5 Bally Bet -120 ($101) — both win 47, 48 — push at 46 — land +$170.25, miss -14.83 / -14.91 on ~$200 balanced
+NCAAF Army Rice Nov-28 2:00 PM — Total — Over 49 ProphetX +127 ($87) / Under 49.5 Bally Bet -132 ($113) — win+push at 49 — push +$85.61, miss -1.39 / -2.51 on ~$200 balanced
+NCAAF Baylor 17 Houston Nov-28 9:30 PM — Total — Over 57 ProphetX +117 ($91) / Under 57.5 Fanatics-NJ -125 ($109) — win+push at 57 — push +$87.20, miss -3.80 / -2.53 on ~$200 balanced
+NCAAF Buffalo Akron Nov-27 12:00 PM — Total — Over 47.5 theScore -110 ($104) / Under 48 ProphetX +105 ($96) — win+push at 48 — push +$94.55, miss -3.20 / -1.45 on ~$200 balanced
+NCAAF Buffalo Akron Nov-27 12:00 PM — Total — Over 50 ProphetX +112 ($93) / Under 50.5 theScore -120 ($107) — win+push at 50 — push +$89.17, miss -3.83 / -2.84 on ~$200 balanced
+NCAAF Florida Atlantic East Carolina Nov-28 1:00 PM — Total — Over 55.5 Bally Bet -130 ($111) / Under 56 ProphetX +122 ($89) — win+push at 56 — push +$85.38, miss -2.42 / -3.62 on ~$200 balanced
+NCAAF Jacksonville St. Delaware Nov-28 3:30 PM — Total — Over 55.5 Bally Bet -134 ($113) / Under 56 ProphetX +127 ($87) — win+push at 56 — push +$84.33, miss -2.51 / -2.67 on ~$200 balanced
+NCAAF Kansas Oklahoma St. Nov-28 6:15 PM — Total — Over 63.5 Fanatics-NJ -120 ($107) / Under 64 ProphetX +112 ($93) — win+push at 64 — push +$89.17, miss -2.84 / -3.83 on ~$200 balanced
+NCAAF Kennesaw St. Western Kentucky Nov-28 1:00 PM — Total — Over 51.5 Bally Bet -129 ($111) / Under 52 ProphetX +120 ($89) — win+push at 52 — push +$86.05, miss -4.20 / -2.95 on ~$200 balanced
+NCAAF Kennesaw St. Western Kentucky Nov-28 1:00 PM — Total — Over 51.5 Bally Bet -129 ($104) / Under 55 Caesars -110 ($96) — both win 52, 53, 54 — push at 55 — land +$167.89, miss -16.73 / -15.38 on ~$200 balanced
+NCAAF Louisiana Georgia St. Nov-28 2:00 PM — Total — Over 55 ProphetX -104 ($96) / Under 57.5 Fanatics-NJ -125 ($104) — both win 56, 57 — push at 55 — land +$175.51, miss -12.80 / -11.69 on ~$200 balanced
+NCAAF Louisiana Georgia St. Nov-28 2:00 PM — Total — Over 56 ProphetX +103 ($97) / Under 56.5 BetRivers -109 ($103) — win+push at 56 — push +$94.50, miss -2.50 / -3.09 on ~$200 balanced
+NCAAF Louisiana Georgia St. Nov-28 2:00 PM — Total — Over 56 ProphetX +101 ($93) / Under 58.5 Bally Bet -137 ($107) — both win 57, 58 — push at 56 — land +$172.03, miss -14.90 / -13.07 on ~$200 balanced
+NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM — Total — Over 52.5 Fanatics-NJ -120 ($103) / Under 54.5 theScore -105 ($97) — both win 53, 54 — land +$178.21, miss -10.62 / -11.17 on ~$200 balanced
+NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM — Total — Over 52.5 ProphetX -106 ($95) / Under 55.5 Bally Bet -130 ($105) — both win 53, 54, 55 — land +$170.39, miss -14.23 / -15.38 on ~$200 balanced
+NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM — Total — Over 53 ProphetX -116 ($99) / Under 55.5 theScore -120 ($101) — both win 54, 55 — push at 53 — land +$169.51, miss -14.83 / -15.66 on ~$200 balanced
+NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM — Total — Over 54 ProphetX -102 ($99) / Under 54.5 theScore -105 ($101) — win+push at 54 — push +$96.19, miss -2.81 / -3.94 on ~$200 balanced
+NCAAF Louisiana Tech Georgia Southern Nov-28 12:00 PM — Total — Over 54 ProphetX +105 ($93) / Under 56.5 theScore -130 ($107) — both win 55, 56 — push at 54 — land +$179.96, miss -10.69 / -9.35 on ~$200 balanced
+NCAAF Michigan St. Rutgers Nov-28 4:15 PM — Total — Over 45.5 Caesars -110 ($103) / Under 46 ProphetX +104 ($97) — win+push at 46 — push +$93.64, miss -2.12 / -3.36 on ~$200 balanced
+NCAAF Navy Charlotte Nov-28 12:00 PM — Total — Over 55 ProphetX +113 ($93) / Under 55.5 Bally Bet -118 ($107) — win+push at 55 — push +$90.68, miss -2.32 / -1.91 on ~$200 balanced
+NCAAF Nevada UNLV Nov-28 9:00 PM — Total — Over 43 ProphetX -123 ($109) / Under 43.5 theScore +115 ($91) — win+push at 43 — push +$104.65, miss -4.35 / -2.38 on ~$200 balanced
+NCAAF New Mexico St. Middle Tennessee Nov-28 2:00 PM — Total — Over 53 ProphetX +124 ($88) / Under 53.5 Bally Bet -132 ($112) — win+push at 53 — push +$84.85, miss -3.15 / -2.88 on ~$200 balanced
+NCAAF North Carolina St. North Carolina Nov-28 12:00 PM — Total — Over 54 ProphetX +108 ($95) / Under 54.5 theScore -115 ($105) — win+push at 54 — push +$91.30, miss -3.70 / -2.40 on ~$200 balanced
+NCAAF North Carolina St. North Carolina Nov-28 12:00 PM — Total — Over 56.5 ProphetX +136 ($83) / Under 57 Fanatics-NJ -145 ($117) — win+push at 57 — push +$112.88, miss -2.31 / -4.12 on ~$200 balanced
+NCAAF North Carolina St. North Carolina Nov-28 12:00 PM — Total — Over 56 ProphetX +127 ($87) / Under 56.5 theScore -135 ($113) — win+push at 56 — push +$83.70, miss -3.30 / -2.51 on ~$200 balanced
+NCAAF North Dakota St. San Jose St. Nov-27 3:30 PM — Total — Over 38.5 Fanatics-NJ -120 ($107) / Under 39 ProphetX +113 ($93) — win+push at 39 — push +$89.17, miss -1.91 / -3.83 on ~$200 balanced
+NCAAF Oregon St. Fresno St. Nov-28 10:00 PM — Total — Over 59.5 FanDuel +114 ($91) / Under 60 Fanatics-NJ -125 ($109) — win+push at 60 — push +$103.74, miss -3.80 / -5.26 on ~$200 balanced
+NCAAF Penn St. Maryland Nov-28 3:30 PM — Total — Over 45.5 Caesars -135 ($108) / Under 48 ProphetX +104 ($92) — both win 46, 47 — push at 48 — land +$175.68, miss -12.32 / -12.00 on ~$200 balanced
+NCAAF Purdue 12 Indiana Nov-28 7:00 PM — Total — Over 53 ProphetX +103 ($97) / Under 53.5 theScore -110 ($103) — win+push at 53 — push +$93.64, miss -3.36 / -3.09 on ~$200 balanced
+NCAAF Purdue 12 Indiana Nov-28 7:00 PM — Total — Over 54 ProphetX +112 ($93) / Under 54.5 theScore -120 ($107) — win+push at 54 — push +$89.17, miss -3.83 / -2.84 on ~$200 balanced
+NCAAF SMU Stanford Nov-28 3:30 PM — Total — Over 62 ProphetX +112 ($93) / Under 62.5 theScore -120 ($107) — win+push at 62 — push +$89.17, miss -3.83 / -2.84 on ~$200 balanced
+NCAAF SMU Stanford Nov-28 3:30 PM — Total — Over 63 ProphetX +126 ($87) / Under 63.5 theScore -135 ($113) — win+push at 63 — push +$83.70, miss -3.30 / -3.38 on ~$200 balanced
+NCAAF Sam Houston Florida International Nov-28 2:00 PM — Total — Over 41.5 theScore +105 ($96) / Under 42 ProphetX -113 ($104) — win+push at 42 — push +$100.80, miss -3.96 / -3.20 on ~$200 balanced
+NCAAF South Carolina Clemson Nov-28 3:00 PM — Total — Over 43 ProphetX +112 ($93) / Under 43.5 theScore -120 ($107) — win+push at 43 — push +$89.17, miss -3.83 / -2.84 on ~$200 balanced
+NCAAF Southern Miss Old Dominion Nov-28 1:00 PM — Total — Over 49 ProphetX -109 ($94) / Under 53.5 theScore -140 ($106) — both win 50, 51, 52, 53 — push at 49 — land +$161.95, miss -18.29 / -19.76 on ~$200 balanced
+NCAAF Southern Miss Old Dominion Nov-28 1:00 PM — Total — Over 53 ProphetX +130 ($85) / Under 53.5 theScore -140 ($115) — win+push at 53 — push +$82.14, miss -2.86 / -4.50 on ~$200 balanced
+NCAAF Toledo Ohio Nov-27 12:00 PM — Total — Over 44.5 Bally Bet -105 ($101) / Under 45 ProphetX -101 ($99) — win+push at 45 — push +$96.19, miss -2.98 / -2.81 on ~$200 balanced
+NCAAF Toledo Ohio Nov-27 12:00 PM — Total — Over 46 ProphetX +113 ($93) / Under 46.5 theScore -120 ($107) — win+push at 46 — push +$89.17, miss -3.83 / -1.91 on ~$200 balanced
+NCAAF Tulane South Florida Nov-28 3:30 PM — Total — Over 40.5 Fanatics-NJ -145 ($108) / Under 44 ProphetX -102 ($92) — both win 41, 42, 43 — push at 44 — land +$164.68, miss -17.80 / -17.52 on ~$200 balanced
+NCAAF Tulane South Florida Nov-28 3:30 PM — Total — Over 41.5 Caesars -130 ($107) / Under 44 ProphetX +102 ($93) — both win 42, 43 — push at 44 — land +$177.17, miss -12.14 / -10.69 on ~$200 balanced
+NCAAF UAB North Texas Nov-28 4:00 PM — Total — Over 7.5 DraftKings -115 ($105) / Under 9.5 Bally Bet +106 ($95) — both win 8, 9 — land +$192.00, miss -4.30 / -3.70 on ~$200 balanced
+NCAAF UMass Bowling Green Nov-28 3:30 PM — Total — Over 42 ProphetX -102 ($91) / Under 45.5 Bally Bet -150 ($109) — both win 43, 44, 45 — push at 42 — land +$161.88, miss -18.33 / -19.78 on ~$200 balanced
+NCAAF UMass Bowling Green Nov-28 3:30 PM — Total — Over 43 ProphetX +115 ($92) / Under 43.5 theScore -120 ($108) — win+push at 43 — push +$90.00, miss -2.00 / -2.20 on ~$200 balanced
+NCAAF UTEP Northern Illinois Nov-28 3:30 PM — Total — Over 50 ProphetX -104 ($101) / Under 50.5 theScore +100 ($99) — win+push at 50 — push +$99.00, miss -2.00 / -1.88 on ~$200 balanced
+NCAAF UTEP Northern Illinois Nov-28 3:30 PM — Total — Over 51 ProphetX +108 ($95) / Under 51.5 theScore -115 ($105) — win+push at 51 — push +$91.30, miss -3.70 / -2.40 on ~$200 balanced
+NCAAF Washington 14 Oregon Nov-28 7:30 PM — Spread — Oregon -12.5 theScore -120 ($101) / Washington +15.5 BetRivers -117 ($99) — both win 13, 14, 15 — land +$168.78, miss -16.38 / -14.83 on ~$200 balanced
+NCAAF West Virginia 2 Utah Nov-27 9:00 PM — Spread — Utah -23 BetMGM -145 ($108) / West Virginia +26.5 HardRock +100 ($92) — both win 24, 25, 26 — push at 23 — land +$166.48, miss -16.00 / -17.52 on ~$200 balanced
+NCAAF West Virginia 2 Utah Nov-27 9:00 PM — Spread — Utah -24.5 Caesars -110 ($95) / West Virginia +29 Bally Bet -137 ($105) — both win 25, 26, 27, 28 — push at 29 — land +$163.01, miss -18.36 / -18.64 on ~$200 balanced
+NCAAF West Virginia 2 Utah Nov-27 9:00 PM — Total — Over 65.5 Caesars -110 ($104) / Under 66 ProphetX +106 ($96) — win+push at 66 — push +$94.55, miss -2.24 / -1.45 on ~$200 balanced
+NCAAF West Virginia 2 Utah Nov-27 9:00 PM — Total — Over 66.5 theScore +100 ($99) / Under 67 ProphetX -106 ($101) — win+push at 67 — push +$99.00, miss -3.72 / -2.00 on ~$200 balanced
+NCAAF West Virginia 2 Utah Nov-27 9:00 PM — Total — Over 68 ProphetX +112 ($93) / Under 68.5 Fanatics-NJ -120 ($107) — win+push at 68 — push +$89.17, miss -3.83 / -2.84 on ~$200 balanced
+NFL ATL Falcons MIN Vikings Nov-29 1:00 PM — Total — Over 43 ProphetX +121 ($89) / Under 43.5 theScore -130 ($111) — win+push at 43 — push +$85.38, miss -3.62 / -3.31 on ~$200 balanced
+NFL KC Chiefs BUF Bills Today 8:20 PM — Total — Over 48 ProphetX +132 ($84) / Under 49 Bally Bet -148 ($116) — win+push at 48 and 49 — push +$78.38 / +$110.88, miss -5.62 / -5.12 on ~$200 balanced
+NFL NE Patriots LA Chargers Nov-29 4:05 PM — Rush Yards O. Hampton — Over 59.5 Bet365 +110 ($94) / Under 64.5 HardRock -115 ($106) — both win 60, 61, 62, 63, 64 — land +$195.57, miss -1.83 / -2.60 on ~$200 balanced
+NFL PHI Eagles DAL Cowboys Nov-26 4:30 PM — Total — Over 46 HardRock -140 ($114) / Under 47 ProphetX +126 ($86) — win+push at 46 and 47 — push +$108.36 / +$81.43, miss -5.64 / -4.57 on ~$200 balanced
+NFL PHI Eagles DAL Cowboys Today 4:30 PM — Total — Over 45.5 Bally Bet -150 ($118) / Under 46 ProphetX +140 ($82) — win+push at 46 — push +$78.67, miss -3.20 / -3.33 on ~$200 balanced
+NFL PHI Eagles DAL Cowboys Today 4:30 PM — Total — Over 46 Bally Bet -152 ($110) / Under 49 ProphetX +103 ($90) — both win 47, 48 — push at 46, 49 — land +$165.07, miss -17.30 / -17.63 on ~$200 balanced
+NFL PHI Eagles DAL Cowboys Today 4:30 PM — Total — Over 49 Bally Bet -105 ($101) / Under 49.5 ProphetX -101 ($99) — win+push at 49 — push +$98.02, miss -2.98 / -2.81 on ~$200 balanced
+NFL SEA Seahawks SF 49ers Nov-29 4:25 PM — Total — Over 43 ProphetX -112 ($104) / Under 43.5 Bally Bet +105 ($96) — win+push at 43 — push +$100.80, miss -3.20 / -3.14 on ~$200 balanced
+NFL SEA Seahawks SF 49ers Nov-29 4:25 PM — Total — Over 46 ProphetX +127 ($87) / Under 46.5 Bally Bet -136 ($113) — win+push at 46 — push +$83.09, miss -3.91 / -2.51 on ~$200 balanced
+NFL TEN Titans JAX Jaguars Nov-29 1:00 PM — Total — Over 50 ProphetX +109 ($94) / Under 50.5 theScore -115 ($106) — win+push at 50 — push +$92.17, miss -1.83 / -3.54 on ~$200 balanced
+NHL CGY Flames NJ Devils Nov-27 1:00 PM — Total — Over 6 BetMGM -120 ($99) / Under 6.5 Bet365 -127 ($101) — win+push at 6 — push +$79.53, miss -19.47 / -18.50 on ~$200 balanced
+NHL COL Avalanche MIN Wild Nov-27 4:00 PM — Total — Over 6 BetMGM -125 ($101) / Under 6.5 DraftKings -118 ($99) — win+push at 6 — push +$83.90, miss -17.10 / -18.20 on ~$200 balanced
+NHL DET Red Wings CBJ Blue Jackets Nov-27 3:00 PM — Total — Over 5.5 Fanatics-NJ -120 ($100) / Under 6 BetMGM -118 ($100) — win+push at 6 — push +$83.33, miss -15.25 / -16.67 on ~$200 balanced
+NHL NY Rangers CHI Blackhawks Nov-27 5:30 PM — Total — Over 6 BetMGM -120 ($99) / Under 6.5 Bet365 -125 ($101) — win+push at 6 — push +$80.80, miss -18.20 / -18.50 on ~$200 balanced
+NHL OTT Senators TB Lightning Nov-27 3:00 PM — Total — Over 6 BetMGM -110 ($100) / Under 6 Caesars -110 ($100) — win+push at 6 — push +$0.00, miss -9.09 / -9.09 on ~$200 balanced
+NHL VAN Canucks PHI Flyers Nov-27 3:00 PM — Total — Over 6 BetMGM -120 ($100) / Under 6.5 Bet365 -121 ($100) — win+push at 6 — push +$82.64, miss -17.36 / -16.67 on ~$200 balanced
+NHL WPG Jets NY Islanders Nov-27 7:30 PM — Total — Over 6 BetMGM -130 ($103) / Under 6.5 DraftKings -115 ($97) — win+push at 6 — push +$84.35, miss -18.65 / -17.77 on ~$200 balanced
