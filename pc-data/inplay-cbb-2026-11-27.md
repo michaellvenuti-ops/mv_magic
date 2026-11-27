@@ -53,3 +53,5 @@ NEW IN-PLAY CBB: PLAY: Under 136.5 -115 — Villanova at Kansas (PACE) | pace pr
 NEW IN-PLAY CBB: PLAY: Under 148.5 -115 — Texas at Saint Mary's (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 148.5 (gap -24.5, bar 5) | H1 62 | as of 18:15:18 ET
 ## 2026-11-27 18:32:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 163.5 — Michigan at Kansas St (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 163.5 (gap -9.5, bar 5) | H1 77 | as of 18:32:02 ET
+## 2026-11-27 18:36:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 148.5 — Drake at Boise St (TRAILING FAVE) | pregame favorite Boise St trails at half (Drake leads); pace is slow (proj 132.0 vs live 148.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 18:36:02 ET
