@@ -12716,3 +12716,7 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 06:00:18 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 06:00:19 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 06:00:19 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 06:30:19 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 06:31:15 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (113 with odds), db total 328740 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 06:31:16 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA DAL Mavericks PHO Suns Today 9:15 PM — Total — Over 224.5 theScore -130 ($111) / Under 225 ProphetX +122 ($89) — win+push at 225 — push +$85.38, 
+[2026-11-27 06:31:16 ET] syncing to GitHub (wide-builds banked new builds)
