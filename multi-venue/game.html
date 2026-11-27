@@ -248,13 +248,22 @@ function compFor(g, pred){
 
 function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts){
   // book/kalshi/poly/opts.novig: {prob} or null. Best = lowest prob (cheapest $1 payout).
-  // opts: {novig, bookBest:{book,price}, game}. Bet buttons only on Kalshi + Novig cells.
+  // opts: {novig, bookBest:{book,price}, game, line, polyLine}.
+  // line = the row's book line (spread/total rows; null on winner rows).
+  // polyLine = the Polymarket market's ACTUAL line. Book/Kalshi/Novig prices
+  // are keyed to the row's line by construction; Poly is resolved by market
+  // ID, so its line is shown explicitly and — when it differs from the row
+  // line — it is never allowed to win "Best": a price at another line is
+  // not the same bet (BUF/AKR Nov 27: Poly 47.5 prices under a 49.5 label
+  // read as a cross-line arb).
   opts = opts || {};
   const cands = [['DraftKings',book],['Kalshi',kalshi],['Polymarket',poly],['Novig',opts.novig]].filter(x=>x[1]);
+  const polyMismatch = opts.polyLine!=null && opts.line!=null && opts.polyLine!==opts.line;
+  const bestCands = polyMismatch ? cands.filter(x=>x[0]!=='Polymarket') : cands;
   let bestName = null;
-  if (cands.length>1){
-    let best = Math.min(...cands.map(x=>x[1].prob));
-    bestName = cands.find(x=>x[1].prob===best)[0];
+  if (bestCands.length>1){
+    let best = Math.min(...bestCands.map(x=>x[1].prob));
+    bestName = bestCands.find(x=>x[1].prob===best)[0];
   }
   const betBtn = (venue, p) => {
     if (!p || !opts.game) return '';
@@ -262,7 +271,11 @@ function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts)
     const idx = BET_TICKETS.push(ticket) - 1;
     return ' <button class="betbtn" data-bet="' + idx + '">Bet</button>';
   };
-  const polyCell = poly ? '<td class="num'+(bestName==='Polymarket'?' best':'')+'"><span class="clickable" data-mid="'+polyMarketId+'" data-tok="'+polyTokenIdx+'">' + cents(poly.prob) + ' <span class="muted">(' + fmtAmerican(americanFromProb(poly.prob)) + ')</span></span>' + (poly.live?'':' <span class="muted" title="last trade, no live ask">last</span>') + '</td>'
+  const polyCell = poly ? '<td class="num'+(bestName==='Polymarket'?' best':'')+'">' +
+    (opts.polyLine!=null ? '<span class="muted">'+opts.polyLine+'</span> ' : '') +
+    '<span class="clickable" data-mid="'+polyMarketId+'" data-tok="'+polyTokenIdx+'">' + cents(poly.prob) + ' <span class="muted">(' + fmtAmerican(americanFromProb(poly.prob)) + ')</span></span>' +
+    (polyMismatch ? ' <span class="muted" title="Polymarket line differs from the book line — not the same bet">≠ '+opts.line+'</span>' : '') +
+    (poly.live?'':' <span class="muted" title="last trade, no live ask">last</span>') + '</td>'
                         : '<td class="num muted">—</td>';
   const bb = opts.bookBest;
   let bbCell = '<td class="num muted">—</td>';
@@ -321,6 +334,8 @@ function renderGameRows(g, pm, away, home){
      bookBest: bBest(c=> c.market==='Winner' && nameContains(home, c.side)), game: g.game});
 
   // ---- Spread (at the book line) ----
+  // No book line yet (new-league Winner-only games) — skip the section.
+  if (!isNaN(spreadHome)) {
   const sAway = compFor(g, c=> c.market && c.market.indexOf('Spread')===0 && nameContains(away, c.side));
   const sHome = compFor(g, c=> c.market && c.market.indexOf('Spread')===0 && nameContains(home, c.side));
   let polySpread = null, polySpreadLine = null;
@@ -343,12 +358,14 @@ function renderGameRows(g, pm, away, home){
     (favIsHome? sHome : sAway) ? {prob: probFromAmerican((favIsHome? sHome : sAway).book_price)} : null,
     (favIsHome? sHome : sAway) ? {prob: (favIsHome? sHome : sAway).kalshi_ask} : null,
     pf, pf?pf.mid:null, pf?pf.tok:null,
-    {novig: nAsk(spreadPred(fav)), bookBest: bBest(spreadPred(fav)), game: g.game});
+    {novig: nAsk(spreadPred(fav)), bookBest: bBest(spreadPred(fav)), game: g.game,
+     polyLine: polySpreadLine, line: favLine});
   h += outcomeRow(spreadLabel(dog, dogSigned),
     (favIsHome? sAway : sHome) ? {prob: probFromAmerican((favIsHome? sAway : sHome).book_price)} : null,
     (favIsHome? sAway : sHome) ? {prob: (favIsHome? sAway : sHome).kalshi_ask} : null,
     pd, pd?pd.mid:null, pd?pd.tok:null,
-    {novig: nAsk(spreadPred(dog)), bookBest: bBest(spreadPred(dog)), game: g.game});
+    {novig: nAsk(spreadPred(dog)), bookBest: bBest(spreadPred(dog)), game: g.game,
+     polyLine: polySpreadLine, line: favLine});
   if (pm && pm.spread && pm.spread.kind==='nearest'){
     for (const n of (pm.spread.nearest||[])){
       const m = POLY[n.market.id];
@@ -362,14 +379,17 @@ function renderGameRows(g, pm, away, home){
   } else if (pm && pm.spread && pm.spread.kind==='missing'){
     h += '<tr><td colspan="8" class="muted">Polymarket has no spread line near ' + favLine + ' for this game.</td></tr>';
   }
+  }
 
   // ---- Total (at the book line) ----
+  if (!isNaN(total)) {
   const numAfter = (s, prefix) => { const v = parseFloat((s||'').slice(prefix.length)); return isNaN(v)? null : v; };
   const oComp = compFor(g, c=> c.market && c.market.indexOf('Over ')===0 && numAfter(c.market,'Over ')===total);
   const uComp = compFor(g, c=> c.market && c.market.indexOf('Under ')===0 && numAfter(c.market,'Under ')===total);
-  let polyTotal = null;
+  let polyTotal = null, polyTotalLine = null;
   if (pm && pm.total && pm.total.market && POLY[pm.total.market.id]){
     polyTotal = POLY[pm.total.market.id];
+    polyTotalLine = pm.total.line;
   }
   const polyTotalAsk = (idx) => {
     if (!polyTotal) return null;
@@ -382,11 +402,13 @@ function renderGameRows(g, pm, away, home){
   h += outcomeRow('Total Over ' + total,
     oComp? {prob: probFromAmerican(oComp.book_price)}:null,
     oComp? {prob: oComp.kalshi_ask}:null, po, po?po.mid:null, po?po.tok:null,
-    {novig: nAsk(overPred), bookBest: bBest(overPred), game: g.game});
+    {novig: nAsk(overPred), bookBest: bBest(overPred), game: g.game,
+     polyLine: polyTotalLine, line: total});
   h += outcomeRow('Total Under ' + total,
     uComp? {prob: probFromAmerican(uComp.book_price)}:null,
     uComp? {prob: uComp.kalshi_ask}:null, pu, pu?pu.mid:null, pu?pu.tok:null,
-    {novig: nAsk(underPred), bookBest: bBest(underPred), game: g.game});
+    {novig: nAsk(underPred), bookBest: bBest(underPred), game: g.game,
+     polyLine: polyTotalLine, line: total});
   if (pm && pm.total && pm.total.kind==='nearest'){
     for (const n of (pm.total.nearest||[])){
       const m = POLY[n.market.id];
@@ -401,6 +423,10 @@ function renderGameRows(g, pm, away, home){
     }
   } else if (pm && pm.total && pm.total.kind==='missing'){
     h += '<tr><td colspan="8" class="muted">Polymarket has no total line near ' + total + ' for this game.</td></tr>';
+  }
+  }
+  if (isNaN(spreadHome) || isNaN(total)) {
+    h += '<tr><td colspan="8" class="muted">Book spread/total not listed for this game yet — Winner only.</td></tr>';
   }
   h += renderExtraRows(g, pm, away, home, Ng, Bg);
   return h;
