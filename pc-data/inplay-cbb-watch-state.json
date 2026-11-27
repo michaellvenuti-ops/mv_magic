@@ -521,7 +521,8 @@
    "pregame_total": 141.5,
    "alerted_at": "2026-11-27T17:04:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 142.5 -115 \u2014 Radford at American (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 142.5 (gap -6.5, bar 5) | H1 68 | as of 17:04:02 ET"
+   "alert_detail": "PLAY: Under 142.5 -115 \u2014 Radford at American (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 142.5 (gap -6.5, bar 5) | H1 68 | as of 17:04:02 ET",
+   "final": true
   },
   "401911212": {
    "matchup": "UMBC at G Washington",
@@ -548,7 +549,8 @@
    "pregame_total": 139.5,
    "alerted_at": "2026-11-27T17:18:06",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 128.5 \u2014 Cincinnati at Boston College (TRAILING FAVE) | pregame favorite Cincinnati trails at half (Boston College leads); pace is slow (proj 110.0 vs live 128.5) \u2014 the comeback-fave rule bets Over anyway | H1 55 | as of 17:18:02 ET"
+   "alert_detail": "PLAY: Over 128.5 \u2014 Cincinnati at Boston College (TRAILING FAVE) | pregame favorite Cincinnati trails at half (Boston College leads); pace is slow (proj 110.0 vs live 128.5) \u2014 the comeback-fave rule bets Over anyway | H1 55 | as of 17:18:02 ET",
+   "final": true
   },
   "401924845": {
    "matchup": "Niagara at Lafayette",
@@ -628,12 +630,15 @@
   "401920541": {
    "matchup": "Michigan at Kansas St",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Michigan",
    "dog_team": "Kansas St",
-   "pregame_total": 165.5
+   "pregame_total": 165.5,
+   "alerted_at": "2026-11-27T18:32:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 163.5 \u2014 Michigan at Kansas St (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 163.5 (gap -9.5, bar 5) | H1 77 | as of 18:32:02 ET"
   },
   "401913531": {
    "matchup": "Western KY at Illinois",
