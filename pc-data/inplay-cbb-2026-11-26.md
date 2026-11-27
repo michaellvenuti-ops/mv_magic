@@ -23,3 +23,5 @@ NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Arkansas at Michigan St (PACE) | pac
 NEW IN-PLAY CBB: PLAY: Over 157.5 -120 — USC at Utah State (TRAILING FAVE) | pregame favorite USC trails at half (Utah State leads); pace is slow (proj 150.0 vs live 157.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 17:47:01 ET
 ## 2026-11-26 18:21:02 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 163.5 -115 — UCLA at Saint Mary's (TRAILING FAVE) | pregame favorite UCLA trails at half (Saint Mary's leads); pace is slow (proj 160.0 vs live 163.5) — the comeback-fave rule bets Over anyway | H1 80 | as of 18:21:01 ET
+## 2026-11-26 20:16:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 137.5 -120 — DePaul at Pitt (TRAILING FAVE) | pregame favorite DePaul trails at half (Pitt leads); pace is slow (proj 130.0 vs live 137.5) — the comeback-fave rule bets Over anyway | H1 65 | as of 20:16:02 ET
