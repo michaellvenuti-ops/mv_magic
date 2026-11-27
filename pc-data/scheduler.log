@@ -12597,3 +12597,7 @@
 [2026-11-27 02:01:44 ET] podcast_transcribe.py: OK in 3s — SUMMARY: discover days=2 added=3 queued_total=71
 [2026-11-27 02:01:45 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=71, limit=5)
 [2026-11-27 02:01:45 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 02:31:45 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 02:32:40 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (113 with odds), db total 328172 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 02:32:42 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA NO Pelicans LA Clippers Today 9:45 PM — Total — Over 228.5 theScore -130 ($111) / Under 229 ProphetX +122 ($89) — win+push at 229 — push +$85.38,
+[2026-11-27 02:32:42 ET] syncing to GitHub (wide-builds banked new builds)
