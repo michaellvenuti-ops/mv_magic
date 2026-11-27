@@ -12480,3 +12480,20 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 19:29:24 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 142 events (121 with odds), db total 327178 snapshots / 1933 events, feeds ok 6 fail 0
 [2026-11-26 19:29:24 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM — Total — Over 220.5 DraftKings -108 ($102) / Under 221 Bet365 +100 ($98) — win+push at 221 — push 
 [2026-11-26 19:29:25 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-26 19:59:25 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 20:00:42 ET] dh_game_middles.py: OK in 77s — GAME MIDDLE: NCAAB Northeastern Northwestern Nov-27 8:00 PM / Nov-27 8:00 PM / table / Alt Total Over 145.5 / Alt Total Under 146 / table | DraftKings | Bet365 
+[2026-11-26 20:01:30 ET] dh_nhl_totals_middles.py: OK in 49s — nhl-totals-middles: no new qualifying middles.
+[2026-11-26 20:04:05 ET] dh_key_number_middles.py: OK in 155s — key-number-middles: 404 basketball rows excluded (football-only rule).
+[2026-11-26 20:07:26 ET] dh_basketball_key_middles.py: OK in 201s — basketball-key-middles: no new basketball middles.
+[2026-11-26 20:07:31 ET] steam_side.py: OK in 4s — STEAM-SIDE FLAG: FBS Mississippi State @ Ole Miss | 2026-11-26 | Fanatics | Mississippi State spread -19.0 (median -18.5 -> -17.5)
+[2026-11-26 20:08:43 ET] dh_prop_middles.py: FAILED (exit 2) in 72s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-26 20:10:00 ET] dh_sog_middles.py: FAILED (exit 2) in 77s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-26 20:10:01 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 28 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 21.5/24.5 sits at -1.3c vs +EV.
+[2026-11-26 20:10:02 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 164 total tallied.
+[2026-11-26 20:10:04 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-26 20:10:05 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-26 20:10:07 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 1 unverified, 1245 total tallied.
+[2026-11-26 20:10:08 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 822 total tallied.
+[2026-11-26 20:10:08 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
+[2026-11-26 20:10:10 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-26 20:10:10 ET] syncing to GitHub (regular 10-minute sync)
