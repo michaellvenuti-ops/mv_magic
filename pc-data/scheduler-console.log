@@ -12570,3 +12570,24 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-26 23:22:10 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-26; skipping.
 [2026-11-26 23:22:11 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
 [2026-11-26 23:22:11 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-26 23:52:11 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-26 23:53:06 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 142 events (115 with odds), db total 327746 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-26 23:53:25 ET] dh_arbitrage.py: OK in 20s — ARBITRAGE: NBA MEM Grizzlies MIN Timberwolves Nov-27 8:45 PM / Nov-27 8:45 PM / table / Points C. Coward Under 17.5 / Alt Points C. Coward 18+ / table | Bet365 
+[2026-11-26 23:53:42 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-26 23:53:45 ET] wide_builds.py: OK in 2s — wide_builds: 22 qualifying builds, 0 NEW (banked wide-builds-2026-11-26.md)
+[2026-11-26 23:54:57 ET] dh_game_middles.py: OK in 72s — GAME MIDDLE: NCAAF Temple Memphis Nov-27 3:30 PM / Nov-27 3:30 PM / table / 1st Half Alt Total Over 31.5 / 1st Half Total Under 32.5 / table | BetMGM | HardRock
+[2026-11-26 23:55:48 ET] dh_nhl_totals_middles.py: OK in 51s — NHL TOTAL MIDDLE: NHL CGY Flames NJ Devils Nov-27 1:00 PM / Nov-27 1:00 PM / table / Total Under 6.5 / Total Over 6 / table bar_chart | Bally Bet | ProphetX — w
+[2026-11-26 23:58:23 ET] dh_key_number_middles.py: OK in 155s — key-number-middles: 234 basketball rows excluded (football-only rule).
+[2026-11-27 00:01:03 ET] dh_basketball_key_middles.py: OK in 160s — basketball-key-middles: no new basketball middles.
+[2026-11-27 00:01:07 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 00:02:10 ET] dh_prop_middles.py: OK in 63s — PROP MIDDLE CLEAN : NBA DEN Nuggets UTA Jazz Today 9:45 PM / Today 9:45 PM / table / Points J. Hayes Under 10.5 / Alt Points J. Hayes 10+ / table | Bet365 | Fan
+[2026-11-27 00:03:44 ET] dh_sog_middles.py: OK in 94s — - 0 deliverables this run
+[2026-11-27 00:03:47 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 00:03:48 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 1 new, 0 unverified, 166 total tallied.
+[2026-11-27 00:03:49 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 00:03:50 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 00:03:52 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 2 new, 0 unverified, 1251 total tallied.
+[2026-11-27 00:03:53 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 1 new, 0 unverified, 823 total tallied.
+[2026-11-27 00:03:55 ET] pace_board.py: OK in 2s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
+[2026-11-27 00:03:56 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 00:03:56 ET] syncing to GitHub (regular 10-minute sync)
