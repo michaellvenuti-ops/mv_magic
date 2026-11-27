@@ -12696,3 +12696,9 @@
 [2026-11-27 07:13:56 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 07:13:58 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 07:13:58 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 07:43:58 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 07:45:00 ET] odds_recorder.py: OK in 32s — SUMMARY: recorded 142 events (113 with odds), db total 328882 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 07:46:21 ET] dh_arbitrage.py: OK in 82s — ARBITRAGE: NBA ATL Hawks BOS Celtics Today 8:15 PM / Today 8:15 PM / table / Pts+Ast A. Wiggins Under 15.5 / Pts+Ast A. Wiggins 15+ / table | DraftKings | Bet36
+[2026-11-27 07:46:48 ET] dh_kalshi_poly_arb.py: OK in 27s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-27 07:46:53 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAF Auburn 6 Alabama Nov-28 7:30 PM — Total — Over 49.5 Caesars -107 ($102) / Under 50 ProphetX +100 ($98) — win+push at 50 — push +$95.33, miss -4
+[2026-11-27 07:46:53 ET] syncing to GitHub (wide-builds banked new builds)
