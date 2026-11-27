@@ -9,3 +9,5 @@ NEW TODD PLAY: Total 41.5 -125 :: raw: "@everyone ov41.5 -125 Iowa game cfb" :: 
 NEW TODD PLAY: Moneyline +11.5 113 :: raw: "@everyone parlay Buffalo cfb 3q ml , Steelers +11.5 , +113.. risk .77 for .86" :: msg 1575935374142873611 :: posted 2026-11-27T18:04:32.659Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 13:11:06 ET — 1 NEW Todd play
 NEW TODD PLAY: Moneyline -160 :: raw: "@everyone I found a -160 on the 3q buff ml which I felt was just a crazy good number so I felt I had to do it" :: msg 1575936849522724897 :: posted 2026-11-27T18:10:24.417Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 14:08:27 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 72.5 -120 :: raw: "@everyone ov72.5 -120 Memphis 1h" :: msg 1575951155731628051 :: posted 2026-11-27T19:07:15.283Z :: Novig: https://app.novig.us/AppEntry
