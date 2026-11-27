@@ -33,3 +33,5 @@ NEW IN-PLAY CBB: PLAY: Under 130.5 — La Salle at Bucknell (PACE) | pace proj 1
 NEW IN-PLAY CBB: PLAY: Under 148.5 — UMBC at G Washington (PACE) | pace proj 140.0 (H1 70 x 2) vs live total 148.5 (gap -8.5, bar 5) | H1 70 | as of 16:41:28 ET
 ## 2026-11-27 16:46:11 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 153.5 -115 — Maryland at Oregon (TRAILING FAVE) | pregame favorite Maryland trails at half (Oregon leads); pace is slow (proj 150.0 vs live 153.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 16:46:04 ET
+## 2026-11-27 17:04:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 142.5 -115 — Radford at American (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 142.5 (gap -6.5, bar 5) | H1 68 | as of 17:04:02 ET
