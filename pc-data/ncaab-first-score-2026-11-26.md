@@ -31,3 +31,7 @@
 ## 2026-11-26T18:58:25-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1243 games through 2026-11-26
 - 2026-11-26: Arkansas Razorbacks @ Michigan State Spartans — first: Michigan State Spartans (FT, 0:42 in); lead changes 6; final 67-70
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T20:10:07-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1245 games through 2026-11-26
+- 2026-11-26: UCLA Bruins @ Saint Mary's Gaels — first: Saint Mary's Gaels (3PT, 0:34 in); lead changes 2; final 70-85
+- 2026-11-26: USC Trojans @ Utah State Aggies — first: USC Trojans (2PT, 0:13 in); lead changes 5; final 74-78
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
