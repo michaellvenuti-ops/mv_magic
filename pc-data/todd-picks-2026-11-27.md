@@ -23,3 +23,5 @@ NEW TODD PLAY: Total 147.5 -115 :: raw: "@everyone ov147.5 -115 Texas st cbb (at
 NEW TODD PLAY: 1st Half Total 23.5 -160 :: raw: "@everyone n Dakota st tt 1h -160 ov23.5 ..risk 1 for .61" :: msg 1575984557356884019 :: posted 2026-11-27T21:19:58.851Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 16:35:22 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 68.5 -115 :: raw: "@everyone ov68.5 -115 1h radford" :: msg 1575988363238973541 :: posted 2026-11-27T21:35:06.244Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 16:42:58 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 1.5 -177 :: raw: "@everyone ov1.5 fgs Steelers -177 ..risk .96 for .55" :: msg 1575990271341236476 :: posted 2026-11-27T21:42:41.171Z :: Novig: https://app.novig.us/AppEntry
