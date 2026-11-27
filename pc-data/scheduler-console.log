@@ -12692,3 +12692,27 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 05:15:05 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 05:15:06 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 05:15:06 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 05:45:06 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 05:46:30 ET] odds_recorder.py: OK in 54s — SUMMARY: recorded 142 events (113 with odds), db total 328598 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 05:47:04 ET] dh_arbitrage.py: OK in 35s — ARBITRAGE: NBA GS Warriors POR Trail Blazers Today 9:45 PM / Today 9:45 PM / table / Points J. Holiday Under 14.5 / Alt Points J. Holiday 15+ / table | Bet365 |
+[2026-11-27 05:47:33 ET] dh_kalshi_poly_arb.py: OK in 28s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-27 05:47:36 ET] wide_builds.py: OK in 2s — wide_builds: 39 qualifying builds, 0 NEW (banked wide-builds-2026-11-27.md)
+[2026-11-27 05:49:21 ET] dh_game_middles.py: OK in 105s — GAME MIDDLE: NCAAB Charleston Southern East Tennessee St. Today 7:00 PM / Today 7:00 PM / table / Total Over 141.5 / Alt Total Under 142 / table | DraftKings | 
+[2026-11-27 05:51:18 ET] dh_nhl_totals_middles.py: OK in 117s — NHL TOTAL MIDDLE: NHL OTT Senators TB Lightning Today 3:00 PM / Today 3:00 PM / table / Total Over 5.5 / Total Under 6.5 / table | Bet365 | DraftKings — window 
+[2026-11-27 05:53:56 ET] dh_key_number_middles.py: OK in 158s — key-number-middles: 387 basketball rows excluded (football-only rule).
+[2026-11-27 05:56:38 ET] dh_basketball_key_middles.py: OK in 162s — basketball-key-middles: no new basketball middles.
+[2026-11-27 05:57:18 ET] hung_number.py: FAILED (exit 2) in 40s — write state. Re-run with --dump and send the dump file.
+[2026-11-27 05:57:22 ET] rlm.py: OK in 4s
+[2026-11-27 05:57:26 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-27 05:57:29 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 05:58:36 ET] dh_prop_middles.py: OK in 67s — PROP MIDDLE CLEAN : NBA DEN Nuggets UTA Jazz Today 9:45 PM / Today 9:45 PM / table / Points J. Hayes Under 10.5 / Alt Points J. Hayes 10+ / table | Bet365 | the
+[2026-11-27 06:00:10 ET] dh_sog_middles.py: OK in 94s — - 0 deliverables this run
+[2026-11-27 06:00:12 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 06:00:13 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 06:00:14 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 06:00:15 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 06:00:17 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 06:00:18 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 06:00:18 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 06:00:19 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 06:00:19 ET] syncing to GitHub (regular 10-minute sync)
