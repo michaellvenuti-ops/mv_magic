@@ -12626,3 +12626,9 @@
 [2026-11-27 03:59:35 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 03:59:36 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 03:59:36 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 04:29:36 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 04:30:31 ET] odds_recorder.py: OK in 24s — SUMMARY: recorded 142 events (113 with odds), db total 328456 snapshots / 1933 events, feeds ok 6 fail 0
+[2026-11-27 04:31:48 ET] dh_arbitrage.py: OK in 77s — ARBITRAGE: NCAAB Lehigh UC Santa Barbara Today 7:00 PM / Today 7:00 PM / table / Alt Total Over 138.5 / Alt Total Under 138.5 / table | DraftKings | Bet365
+[2026-11-27 04:32:42 ET] dh_kalshi_poly_arb.py: OK in 53s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-27 04:32:45 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Lehigh UC Santa Barbara Today 7:00 PM — Total — Over 137.5 DraftKings -210 ($133) / Under 139.5 Bet365 +190 ($67) — both win 138, 139 — land +$
+[2026-11-27 04:32:45 ET] syncing to GitHub (wide-builds banked new builds)
