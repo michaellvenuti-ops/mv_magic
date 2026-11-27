@@ -21,3 +21,5 @@ NEW IN-PLAY CBB: PLAY: Under 151.5 -120 — Fresno St at South Alabama (PACE) | 
 NEW IN-PLAY CBB: PLAY: Under 132.5 -120 — Georgetown at UCLA (PACE) | pace proj 110.0 (H1 55 x 2) vs live total 132.5 (gap -22.5, bar 5) | H1 55 | as of 15:33:06 ET
 ## 2026-11-27 15:55:04 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 147.5 — Texas St at Louisiana Tech (TRAILING FAVE) | pregame favorite Texas St trails at half (Louisiana Tech leads); pace agrees (proj 152.0 vs live 147.5) — comeback-fave Over | H1 76 | as of 15:55:03 ET
+## 2026-11-27 15:55:09 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 141.5 -120 — Princeton at UNC Wilmington (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 141.5 (gap -17.5, bar 5) | H1 62 | as of 15:55:03 ET
