@@ -495,7 +495,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-27T16:46:11",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 153.5 -115 \u2014 Maryland at Oregon (TRAILING FAVE) | pregame favorite Maryland trails at half (Oregon leads); pace is slow (proj 150.0 vs live 153.5) \u2014 the comeback-fave rule bets Over anyway | H1 75 | as of 16:46:04 ET"
+   "alert_detail": "PLAY: Over 153.5 -115 \u2014 Maryland at Oregon (TRAILING FAVE) | pregame favorite Maryland trails at half (Oregon leads); pace is slow (proj 150.0 vs live 153.5) \u2014 the comeback-fave rule bets Over anyway | H1 75 | as of 16:46:04 ET",
+   "final": true
   },
   "401921818": {
    "matchup": "AR-Pine Bluff at Missouri",
@@ -550,12 +551,15 @@
   "401924845": {
    "matchup": "Niagara at Lafayette",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 5.5,
    "fav_team": "Lafayette",
    "dog_team": "Niagara",
-   "pregame_total": 140.5
+   "pregame_total": 140.5,
+   "alerted_at": "2026-11-27T18:01:24",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 137.5 -120 \u2014 Niagara at Lafayette (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 137.5 (gap -11.5, bar 5) | H1 63 | as of 18:01:16 ET"
   },
   "401921718": {
    "matchup": "Texas at Saint Mary's",
@@ -628,10 +632,10 @@
    "date": "2026-11-27",
    "alerted": false,
    "fav": "home",
-   "spread": 27.5,
+   "spread": 26.5,
    "fav_team": "Illinois",
    "dog_team": "Western KY",
-   "pregame_total": 175.5
+   "pregame_total": 176.5
   },
   "401911030": {
    "matchup": "Bowling Green at Indiana",
@@ -813,10 +817,10 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Jax State",
    "dog_team": "Omaha",
-   "pregame_total": 139.5
+   "pregame_total": 138.5
   },
   "401920544": {
    "matchup": "Creighton at TBD",
