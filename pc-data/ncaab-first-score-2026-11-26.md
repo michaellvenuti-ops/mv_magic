@@ -38,3 +38,8 @@
 ## 2026-11-26T21:25:24-05:00 -- NCAAB FIRST SCORE (PC): 1 new final(s) tallied; season 1246 games through 2026-11-26
 - 2026-11-26: TCU Horned Frogs @ Creighton Bluejays — first: Creighton Bluejays (3PT, 0:22 in); lead changes 18; final 87-95
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-26T22:07:32-05:00 -- NCAAB FIRST SCORE (PC): 3 new final(s) tallied; season 1249 games through 2026-11-26
+- 2026-11-26: LSU Tigers @ SMU Mustangs — first: LSU Tigers (2PT, 0:22 in); lead changes 4; final 95-86
+- 2026-11-26: DePaul Blue Demons @ Pittsburgh Panthers — first: DePaul Blue Demons (2PT, 0:23 in); lead changes 15; final 64-71
+- 2026-11-26: UC Davis Aggies @ Jacksonville State Gamecocks — first: UC Davis Aggies (2PT, 0:24 in); lead changes 6; final 68-63
+- note: 1 final(s) UNVERIFIED this run — left out, retried next run.
