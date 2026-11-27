@@ -1,0 +1,20 @@
+dh-ladders: DarkHorse profile busy (attempt 1/10) — waiting 60s for the running scan to finish...
+dh-ladders: DarkHorse profile busy (attempt 2/10) — waiting 60s for the running scan to finish...
+dh-ladders: DarkHorse profile busy (attempt 3/10) — waiting 60s for the running scan to finish...
+dh-ladders: DarkHorse profile busy (attempt 4/10) — waiting 60s for the running scan to finish...
+dh-ladders: DarkHorse profile busy (attempt 5/10) — waiting 60s for the running scan to finish...
+probe: URL: https://darkhorseodds.com/browse-odds
+probe: loaded=True after up to 60s poll
+probe: body_chars=5258 Denver=True Pittsburgh=True
+probe: TREE NODES: ['Basketball', 'Football', 'NCAAF', 'NFL', 'NHL', 'Soccer', 'Tennis', 'UFC']
+probe: tree-ish elements: ['MAT-TREE.mat-tree cdk-tree :: dashboard Home campaign Promo Dashboard ', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: dashboard Home', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: campaign Promo Dashboard', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: table_view Browse Odds', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: manage_search Browse Odds Table', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: search Bet Finders  expand_more', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: trending_up Profit Boost', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: workspace_premium Bonus Bet', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: local_activity Site Credit', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: payments Second Chance Bet', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: auto_graph Qualifying Bet', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: vertical_align_center Middles', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: cycle Low Holds', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: attach_money Arbitrage', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: monitoring +EV Bets', "MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: newspaper What's New", 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: school Guides', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: Discord', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: settings Settings', 'MAT-TREE-NODE.mat-mdc-menu-item mat-focus-indicator mat-mdc-tooltip-trigge :: logout Sign Out']
+probe: BODY HEAD: Traceback (most recent call last):
+  File "C:\Users\venut\pc-scans\dh_nfl_probe.py", line 76, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\venut\pc-scans\dh_nfl_probe.py", line 68, in main
+    print("probe: BODY HEAD:", body[:1500].replace("\n", " | "))
+  File "C:\Users\venut\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u25b2' in position 453: character maps to <undefined>
