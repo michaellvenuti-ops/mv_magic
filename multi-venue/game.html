@@ -1,0 +1,556 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Game — Multi-Venue Price Dashboard (Chet)</title><style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px;line-height:1.5;font-size:15px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:20px;margin:28px 0 6px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:8px}
+.hq-updated{font-size:.85rem;color:#6b716b;margin:2px 0 12px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:14px;min-width:760px;margin:8px 0;width:100%}
+th,td{border:1px solid #30363d;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#161b22;color:#9da7b3}
+a{color:#58a6ff}
+.foot{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+.best{background:#14532d !important;font-weight:700}
+.best::after{content:" ★ BEST";color:#3fb950;font-size:11px}
+.gapbadge{display:inline-block;background:#7c2d12;color:#ffd7c2;border-radius:4px;padding:1px 7px;font-size:12px;font-weight:700;margin-left:8px}
+.livebadge{display:inline-block;background:#b91c1c;color:#fff;border-radius:4px;padding:1px 8px;font-size:13px;font-weight:700;margin-left:8px}
+.stale{opacity:.55}
+.muted{color:#8b949e}
+.soon{color:#6b7280;font-style:italic}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+button{background:#21262d;color:#e6edf3;border:1px solid #30363d;border-radius:6px;padding:6px 12px;font-size:14px;cursor:pointer}
+button:hover{background:#30363d}
+select,input[type=text]{background:#0d1117;color:#e6edf3;border:1px solid #30363d;border-radius:6px;padding:6px 8px;font-size:14px}
+label{margin-right:14px;font-size:14px}
+.statusbar{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px;margin:12px 0;font-size:13px}
+.statusbar b{color:#e6edf3}
+.err{background:#7c2d12;color:#ffd7c2;border-radius:6px;padding:8px 12px;margin:10px 0;font-size:13px}
+.bookdetail{background:#161b22;font-size:13px}
+.bookdetail td{border-color:#21262d}
+.clickable{cursor:pointer;text-decoration:underline dotted}
+</style></head><body>
+<p><a href="../multi-venue-dashboard.html">← Back to dashboard</a></p>
+<h1 id="gameTitle">Loading game…</h1>
+<p class="hq-updated">Updated November 27, 2026 by Chet</p>
+
+<div class="statusbar" id="statusbar">Loading venue data…</div>
+<div id="errbox"></div>
+
+<div id="game"></div>
+
+<div class='foot'>
+<b>How it works.</b> Kalshi prices come from the Mac scanner (public Kalshi API, every 5 min) — Kalshi blocks browser requests, so its prices arrive as a data file in this repo. Novig prices come from Novig's public catalog, refreshed with the dashboard data (every 5 min). Polymarket prices are fetched LIVE in your browser straight from Polymarket's Gamma API (one batched call) — click any Polymarket price to see its live CLOB order book. Book prices are DraftKings via ESPN, as captured by the Kalshi scan. The "Best book" column shows the best price across the books in the dashboard data file. "Best" = lowest cost to buy $1 of payout on that exact outcome at that exact line; when Polymarket doesn't offer the book's exact line, its nearest lines are shown separately and never compared as if they were the same bet. Polymarket prices exclude its trading fee; Kalshi's 7% fee on winnings is not reflected in the ask. The Bet button copies a ticket ("BET — venue: game — market @ price — via Chet") to paste to Chet in chat — it places nothing. This page reads the same live data files as the dashboard, so it stays fresh on the same cadence with no republishing per cycle. One game per page, no heavy assets — built to stay fast with dozens of live games open at once.<br>
+<a href="../multi-venue-dashboard.html">Back to dashboard</a> · <a href="https://michaellvenuti-ops.github.io/mv_magic/">Back to HQ hub</a>
+</div>
+
+<script>
+const GAMMA = 'https://gamma-api.polymarket.com';
+const CLOB = 'https://clob.polymarket.com';
+let K = null, PMAP = null, POLY = {}, N = null, B = null;   // K: kalshi-prices.json, PMAP: poly-map.json, POLY: marketId -> gamma market, N: novig-prices.json, B: book-prices.json
+let lastPolyAt = null, polyStale = false;
+let BET_TICKETS = [];   // ticket strings for Bet buttons; index stored in data-bet
+// Live-game window: a game is treated as in play from kickoff until 5h after
+// kickoff (covers NFL/CFB/CBB game length). Past that, the final score is not
+// tracked by this dashboard, so the page says so instead of claiming LIVE.
+const LIVE_WINDOW_MS = 5 * 60 * 60 * 1000;
+
+// Game key from the URL: ?game=<encodeURIComponent("Away at Home|<date ISO>")>
+function gameKey(){
+  const raw = new URLSearchParams(location.search).get('game');
+  if (!raw) return null;
+  const i = raw.lastIndexOf('|');
+  if (i < 0) return null;
+  return { game: raw.slice(0, i), date: raw.slice(i + 1) };
+}
+const KEY = gameKey();
+
+function norm(s){ return (s||'').toLowerCase().replace(/\([^)]*\)/g,'').replace(/['\u2019\u02bb]/g,'').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim(); }
+function words(s){ return norm(s).split(' ').filter(Boolean); }
+function nameContains(full, short){ // every word of `short` matches a word of `full` (prefix)
+  const f = words(full), s = words(short);
+  return s.length>0 && s.every(w => f.some(x => x.startsWith(w) || w.startsWith(x)));
+}
+function americanFromProb(p){
+  if (p==null || p<=0 || p>=1) return null;
+  if (p >= 0.5) return Math.round(-100*p/(1-p));
+  return Math.round(100*(1-p)/p);
+}
+function probFromAmerican(a){
+  a = parseFloat(a); if (isNaN(a)) return null;
+  if (a < 0) return (-a)/((-a)+100);
+  return 100/(a+100);
+}
+function fmtAmerican(a){
+  if (a==null) return '—';
+  return (a>0 ? '+'+a : ''+a);
+}
+function cents(p){ return p==null ? '—' : (p*100).toFixed(1).replace(/\.0$/,'') + '¢'; }
+function outcomesOf(m){
+  // Gamma returns `outcomes` as a JSON STRING ('["Broncos", "Steelers"]'), not an array.
+  if (!m) return [];
+  const o = m.outcomes;
+  if (typeof o === 'string'){
+    try { const p = JSON.parse(o); return Array.isArray(p) ? p : []; } catch(e){ return []; }
+  }
+  return Array.isArray(o) ? o : [];
+}
+function cellHtml(priceProb, isBest, extra){
+  // priceProb: {prob, label} or null
+  if (!priceProb) return '<td class="num muted">—</td>';
+  const am = americanFromProb(priceProb.prob);
+  const cls = isBest ? ' class="num best"' : ' class="num"';
+  return '<td'+cls+'>' + cents(priceProb.prob) + ' <span class="muted">(' + fmtAmerican(am) + ')</span>' + (extra||'') + '</td>';
+}
+
+async function fetchJSON(url){
+  const r = await fetch(url + (url.includes('?')?'&':'?') + 't=' + Date.now());
+  if (!r.ok) throw new Error(url + ' -> HTTP ' + r.status);
+  return await r.json();
+}
+
+// Live state for a game: 'pre' (kickoff ahead), 'live' (kickoff passed, inside
+// the live window), 'done' (kickoff passed long ago — final not tracked here).
+function liveState(g){
+  const kickoff = new Date(g.date).getTime();
+  const now = Date.now();
+  if (isNaN(kickoff)) return { state: 'pre', kickoff: null };
+  if (now < kickoff) return { state: 'pre', kickoff: kickoff };
+  if (now - kickoff < LIVE_WINDOW_MS) return { state: 'live', kickoff: kickoff, elapsedMin: Math.floor((now - kickoff) / 60000) };
+  return { state: 'done', kickoff: kickoff };
+}
+
+async function loadAll(){
+  const sb = document.getElementById('statusbar');
+  const eb = document.getElementById('errbox');
+  eb.innerHTML = '';
+  if (!KEY){
+    document.getElementById('gameTitle').textContent = 'Game not found';
+    document.getElementById('game').innerHTML = '<p>Game not found — <a href="../multi-venue-dashboard.html">back to dashboard</a></p>';
+    sb.textContent = 'No game selected.';
+    return;
+  }
+  try {
+    [K, PMAP] = await Promise.all([
+      fetchJSON('../multi-venue-data/kalshi-prices.json'),
+      fetchJSON('../multi-venue-data/poly-map.json')
+    ]);
+    // Novig + Best book are newer files — a 404 must not kill the page.
+    N = await fetchJSON('../multi-venue-data/novig-prices.json').catch(()=>null);
+    B = await fetchJSON('../multi-venue-data/book-prices.json').catch(()=>null);
+  } catch(e){
+    eb.innerHTML = '<div class="err">Could not load the Kalshi data file from this repo ('+e.message+'). The 5-minute publisher may be behind — try Refresh in a minute.</div>';
+    return;
+  }
+  // Batched live Polymarket fetch, same pattern as the main board
+  // (one /markets?id=.. call per chunk, limit=100 — Gamma defaults to 20).
+  // Detail page only needs THIS game's markets, so the id list stays tiny
+  // even when the dashboard covers hundreds of games (CBB scale).
+  const pm = (PMAP.games||[]).find(x=> x.game===KEY.game && x.date===KEY.date) || null;
+  const ids = [];
+  const byId = {};
+  if (pm){
+    const push = (m) => { if (m && m.id && !byId[m.id]) { ids.push(m.id); byId[m.id]=m; } };
+    push(pm.winner);
+    if (pm.spread){
+      if (pm.spread.market) push(pm.spread.market);
+      (pm.spread.nearest||[]).forEach(n => push(n.market));
+    }
+    if (pm.total){
+      if (pm.total.market) push(pm.total.market);
+      (pm.total.nearest||[]).forEach(n => push(n.market));
+    }
+    (pm.alt_spread||[]).forEach(a => push(a.market));
+    (pm.alt_total||[]).forEach(a => push(a.market));
+    (pm.team_totals||[]).forEach(t => push(t.market));
+    (pm.props||[]).forEach(p => push(p.market));
+  }
+  POLY = {}; polyStale = false;
+  try {
+    for (let i=0;i<ids.length;i+=100){
+      const chunk = ids.slice(i,i+100);
+      // Gamma defaults to 20 results/call — limit=100 is required for full chunks.
+      const q = 'limit=100&' + chunk.map(id=>'id='+id).join('&');
+      const mkts = await fetchJSON(GAMMA + '/markets?' + q);
+      for (const m of mkts) POLY[m.id] = m;
+    }
+    lastPolyAt = new Date();
+  } catch(e){
+    polyStale = true;
+    eb.innerHTML = '<div class="err">Polymarket live feed failed ('+e.message+'). Showing Kalshi + book prices; Polymarket column will retry on the next refresh.</div>';
+  }
+  sb.innerHTML = '<b>Kalshi data as of ' + (K.updated||'—') + '</b> (Mac scan, every 5 min) &nbsp;·&nbsp; <b>Polymarket ' +
+    (polyStale ? 'last good ' + (lastPolyAt? lastPolyAt.toLocaleTimeString() : '—') + ' (stale)' : 'live as of ' + (lastPolyAt? lastPolyAt.toLocaleTimeString() : '—')) +
+    '</b> &nbsp;·&nbsp; <b>Novig' + (N ? ' as of ' + (N.updated||'—') : ' (not published yet)') + '</b>' +
+    ' &nbsp;·&nbsp; <b>Best book' + (B ? ' as of ' + (B.updated||'—') : ' (not published yet)') + '</b>' +
+    ' &nbsp;·&nbsp; Book prices: DraftKings via ESPN &nbsp;·&nbsp; Auto-refresh every 60s';
+  render();
+}
+
+function polyAsk(market, outcomeIdx){
+  if (!market) return null;
+  const bb = parseFloat(market.bestBid), ba = parseFloat(market.bestAsk);
+  if (outcomeIdx===0){
+    if (!isNaN(ba)) return {prob: ba, live: true};
+  } else {
+    if (!isNaN(bb)) return {prob: 1-bb, live: true};
+  }
+  const pr = (market.outcomePrices||[])[outcomeIdx];
+  if (pr!=null) return {prob: parseFloat(pr), live: false};
+  return null;
+}
+
+function render(){
+  if (!K || !PMAP) return; // data still loading — typing before load must not throw
+  BET_TICKETS = []; // old Bet buttons are discarded with the innerHTML below
+  const g = (K.games||[]).find(x=> x.game===KEY.game && x.date===KEY.date) || null;
+  const titleEl = document.getElementById('gameTitle');
+  if (!g){
+    titleEl.textContent = 'Game not found';
+    document.getElementById('game').innerHTML = '<p>Game not found — <a href="../multi-venue-dashboard.html">back to dashboard</a></p>';
+    return;
+  }
+  const pm = (PMAP.games||[]).find(x=> x.game===KEY.game && x.date===KEY.date) || null;
+  const away = g.game.split(' at ')[0], home = g.game.split(' at ')[1] || '';
+  const kickoff = new Date(g.date);
+  const ls = liveState(g);
+  const gap = (K.gaps||[]).find(x=> x.game===g.game) || null;
+  const gapTxt = gap ? '<span class="gapbadge">Kalshi edge ≥3¢: ' + gap.comparison.market + ' ' + gap.comparison.side + ' — Kalshi ' + cents(gap.comparison.kalshi_ask) + ' vs book fair ' + (gap.comparison.fair_prob*100).toFixed(1) + '%</span>' : '';
+  const polyNote = pm ? '' : ' <span class="muted">(no Polymarket event found)</span>';
+  // LIVE badge + live clock note: kickoff time and minutes since kickoff.
+  // DarkHorse has no live view, so on a live game the book column is the last
+  // pregame price, labeled as such in the header and in the note below.
+  let liveBadge = '';
+  let liveNote = '';
+  if (ls.state === 'live'){
+    liveBadge = '<span class="livebadge">● LIVE</span>';
+    liveNote = '<span class="muted" style="font-size:14px">In play — kicked off ' + ls.elapsedMin + ' min ago · prices refresh every 60s</span>';
+  } else if (ls.state === 'done'){
+    liveNote = '<span class="muted" style="font-size:14px">Kickoff passed — final score is not tracked on this page</span>';
+  }
+  titleEl.innerHTML = g.game + liveBadge;
+  const bookHeader = ls.state === 'live' ? 'DraftKings (pregame)' : 'DraftKings (book)';
+  let html = '<div class="'+(ls.state==='live'?'':'stale')+'"><h2>' + g.game + ' <span class="muted" style="font-size:14px">' + g.league + ' · ' +
+    kickoff.toLocaleString(undefined,{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) + ' ET' +
+    '</span>' + gapTxt + polyNote + '</h2>';
+  if (liveNote) html += '<p>' + liveNote + '</p>';
+  html += '<div class="wrap"><table><tr><th>Market</th><th>' + bookHeader + '</th><th>Kalshi</th><th>Polymarket (live)</th><th>Novig</th><th>ProphetX</th><th>Best book</th><th>Best</th></tr>';
+  html += renderGameRows(g, pm, away, home);
+  html += '</table></div>';
+  if (ls.state === 'live'){
+    html += '<p class="muted">Book price is the last pregame number — no live book feed (DarkHorse has no live view). Kalshi and Polymarket prices above are live and move with the game.</p>';
+  }
+  html += '</div>';
+  document.getElementById('game').innerHTML = html;
+}
+
+function compFor(g, pred){
+  return (g.comparisons||[]).find(pred) || null;
+}
+
+function outcomeRow(label, book, kalshi, poly, polyMarketId, polyTokenIdx, opts){
+  // book/kalshi/poly/opts.novig: {prob} or null. Best = lowest prob (cheapest $1 payout).
+  // opts: {novig, bookBest:{book,price}, game}. Bet buttons only on Kalshi + Novig cells.
+  opts = opts || {};
+  const cands = [['DraftKings',book],['Kalshi',kalshi],['Polymarket',poly],['Novig',opts.novig]].filter(x=>x[1]);
+  let bestName = null;
+  if (cands.length>1){
+    let best = Math.min(...cands.map(x=>x[1].prob));
+    bestName = cands.find(x=>x[1].prob===best)[0];
+  }
+  const betBtn = (venue, p) => {
+    if (!p || !opts.game) return '';
+    const ticket = 'BET — ' + venue + ': ' + opts.game + ' — ' + label.replace(' — ', ' ') + ' @ ' + cents(p.prob) + ' (' + fmtAmerican(americanFromProb(p.prob)) + ') — via Chet';
+    const idx = BET_TICKETS.push(ticket) - 1;
+    return ' <button class="betbtn" data-bet="' + idx + '">Bet</button>';
+  };
+  const polyCell = poly ? '<td class="num'+(bestName==='Polymarket'?' best':'')+'"><span class="clickable" data-mid="'+polyMarketId+'" data-tok="'+polyTokenIdx+'">' + cents(poly.prob) + ' <span class="muted">(' + fmtAmerican(americanFromProb(poly.prob)) + ')</span></span>' + (poly.live?'':' <span class="muted" title="last trade, no live ask">last</span>') + '</td>'
+                        : '<td class="num muted">—</td>';
+  const bb = opts.bookBest;
+  let bbCell = '<td class="num muted">—</td>';
+  if (bb && bb.book){
+    const ap = parseFloat(bb.price);
+    bbCell = '<td class="num">' + bb.book + ' ' + (isNaN(ap) ? (bb.price==null?'—':bb.price) : fmtAmerican(ap)) + '</td>';
+  }
+  return '<tr><td>'+label+'</td>' +
+    cellHtml(book, bestName==='DraftKings') +
+    cellHtml(kalshi, bestName==='Kalshi', betBtn('Kalshi', kalshi)) +
+    polyCell +
+    cellHtml(opts.novig||null, bestName==='Novig', betBtn('Novig', opts.novig)) +
+    '<td class="soon">soon</td>' +
+    bbCell +
+    '<td class="muted">'+(bestName || '—')+'</td></tr>';
+}
+
+function renderGameRows(g, pm, away, home){
+  let h = '';
+  const spreadHome = parseFloat(g.book_spread_home);
+  const total = parseFloat(g.book_total);
+  const favIsHome = spreadHome < 0;
+  const fav = favIsHome ? home : away, dog = favIsHome ? away : home;
+  const favLine = Math.abs(spreadHome), dogLine = -favLine;
+  // Novig + Best book games, matched by game+date (null until the files publish).
+  const Ng = N ? (N.games||[]).find(x=> x.game===g.game && x.date===g.date) || null : null;
+  const Bg = B ? (B.games||[]).find(x=> x.game===g.game && x.date===g.date) || null : null;
+  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask} : null; };
+  const bBest = (pred) => { if (!Bg) return null; const c = compFor(Bg, pred); return c ? {book: c.best_book, price: c.best_price} : null; };
+
+  // ---- Winner ----
+  const wAway = compFor(g, c=> c.market==='Winner' && nameContains(away, c.side));
+  const wHome = compFor(g, c=> c.market==='Winner' && nameContains(home, c.side));
+  let polyWin = null;
+  if (pm && pm.winner && POLY[pm.winner.id]){
+    const m = POLY[pm.winner.id];
+    polyWin = {market: m, outcomes: outcomesOf(m)};
+  }
+  const polyWinAsk = (team) => {
+    if (!polyWin) return null;
+    const idx = polyWin.outcomes.findIndex(o => nameContains(team, o));
+    if (idx<0) return null;
+    const a = polyAsk(polyWin.market, idx);
+    return a ? {...a, mid: polyWin.market.id, tok: idx} : null;
+  };
+  const pa = polyWinAsk(away), ph = polyWinAsk(home);
+  h += outcomeRow('ML — ' + away,
+    wAway? {prob: probFromAmerican(wAway.book_price)}:null,
+    wAway? {prob: wAway.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+    {novig: nAsk(c=> c.market==='Winner' && nameContains(away, c.side)),
+     bookBest: bBest(c=> c.market==='Winner' && nameContains(away, c.side)), game: g.game});
+  h += outcomeRow('ML — ' + home,
+    wHome? {prob: probFromAmerican(wHome.book_price)}:null,
+    wHome? {prob: wHome.kalshi_ask}:null, ph, ph?ph.mid:null, ph?ph.tok:null,
+    {novig: nAsk(c=> c.market==='Winner' && nameContains(home, c.side)),
+     bookBest: bBest(c=> c.market==='Winner' && nameContains(home, c.side)), game: g.game});
+
+  // ---- Spread (at the book line) ----
+  const sAway = compFor(g, c=> c.market && c.market.indexOf('Spread')===0 && nameContains(away, c.side));
+  const sHome = compFor(g, c=> c.market && c.market.indexOf('Spread')===0 && nameContains(home, c.side));
+  let polySpread = null, polySpreadLine = null;
+  if (pm && pm.spread && pm.spread.market && POLY[pm.spread.market.id]){
+    polySpread = POLY[pm.spread.market.id];
+    polySpreadLine = pm.spread.line;
+  }
+  const polySpreadAsk = (team) => {
+    if (!polySpread) return null;
+    const idx = outcomesOf(polySpread).findIndex(o => nameContains(team, o));
+    if (idx<0) return null;
+    const a = polyAsk(polySpread, idx);
+    return a ? {...a, mid: polySpread.id, tok: idx} : null;
+  };
+  const pf = polySpreadAsk(fav), pd = polySpreadAsk(dog);
+  const spreadLabel = (team, line) => 'Spread ' + team + ' ' + (line>0?'+':'') + line;
+  const favSigned = -favLine, dogSigned = favLine;
+  const spreadPred = (team) => c=> c.market && c.market.indexOf('Spread')===0 && nameContains(team, c.side);
+  h += outcomeRow(spreadLabel(fav, favSigned),
+    (favIsHome? sHome : sAway) ? {prob: probFromAmerican((favIsHome? sHome : sAway).book_price)} : null,
+    (favIsHome? sHome : sAway) ? {prob: (favIsHome? sHome : sAway).kalshi_ask} : null,
+    pf, pf?pf.mid:null, pf?pf.tok:null,
+    {novig: nAsk(spreadPred(fav)), bookBest: bBest(spreadPred(fav)), game: g.game});
+  h += outcomeRow(spreadLabel(dog, dogSigned),
+    (favIsHome? sAway : sHome) ? {prob: probFromAmerican((favIsHome? sAway : sHome).book_price)} : null,
+    (favIsHome? sAway : sHome) ? {prob: (favIsHome? sAway : sHome).kalshi_ask} : null,
+    pd, pd?pd.mid:null, pd?pd.tok:null,
+    {novig: nAsk(spreadPred(dog)), bookBest: bBest(spreadPred(dog)), game: g.game});
+  if (pm && pm.spread && pm.spread.kind==='nearest'){
+    for (const n of (pm.spread.nearest||[])){
+      const m = POLY[n.market.id];
+      if (!m) continue;
+      const idx = outcomesOf(m).findIndex(o => nameContains(n.side==='home'?home:away, o));
+      const a = idx>=0 ? polyAsk(m, idx) : null;
+      h += '<tr><td>Spread ' + (n.side==='home'?home:away) + ' -' + n.line + ' <span class="muted">(Poly nearest — book line is ' + favLine + ', no exact Poly line)</span></td><td class="muted">—</td><td class="muted">—</td>' +
+        (a? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="'+idx+'">'+cents(a.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(a.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
+    }
+  } else if (pm && pm.spread && pm.spread.kind==='missing'){
+    h += '<tr><td colspan="8" class="muted">Polymarket has no spread line near ' + favLine + ' for this game.</td></tr>';
+  }
+
+  // ---- Total (at the book line) ----
+  const numAfter = (s, prefix) => { const v = parseFloat((s||'').slice(prefix.length)); return isNaN(v)? null : v; };
+  const oComp = compFor(g, c=> c.market && c.market.indexOf('Over ')===0 && numAfter(c.market,'Over ')===total);
+  const uComp = compFor(g, c=> c.market && c.market.indexOf('Under ')===0 && numAfter(c.market,'Under ')===total);
+  let polyTotal = null;
+  if (pm && pm.total && pm.total.market && POLY[pm.total.market.id]){
+    polyTotal = POLY[pm.total.market.id];
+  }
+  const polyTotalAsk = (idx) => {
+    if (!polyTotal) return null;
+    const a = polyAsk(polyTotal, idx);
+    return a ? {...a, mid: polyTotal.id, tok: idx} : null;
+  };
+  const po = polyTotalAsk(0), pu = polyTotalAsk(1);
+  const overPred = c=> c.market && c.market.indexOf('Over ')===0 && numAfter(c.market,'Over ')===total;
+  const underPred = c=> c.market && c.market.indexOf('Under ')===0 && numAfter(c.market,'Under ')===total;
+  h += outcomeRow('Total Over ' + total,
+    oComp? {prob: probFromAmerican(oComp.book_price)}:null,
+    oComp? {prob: oComp.kalshi_ask}:null, po, po?po.mid:null, po?po.tok:null,
+    {novig: nAsk(overPred), bookBest: bBest(overPred), game: g.game});
+  h += outcomeRow('Total Under ' + total,
+    uComp? {prob: probFromAmerican(uComp.book_price)}:null,
+    uComp? {prob: uComp.kalshi_ask}:null, pu, pu?pu.mid:null, pu?pu.tok:null,
+    {novig: nAsk(underPred), bookBest: bBest(underPred), game: g.game});
+  if (pm && pm.total && pm.total.kind==='nearest'){
+    for (const n of (pm.total.nearest||[])){
+      const m = POLY[n.market.id];
+      if (!m) continue;
+      const ao = polyAsk(m, 0), au = polyAsk(m, 1);
+      h += '<tr><td>Total Over ' + n.line + ' <span class="muted">(Poly nearest — book total is ' + total + ')</span></td><td class="muted">—</td><td class="muted">—</td>' +
+        (ao? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="0">'+cents(ao.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(ao.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
+      h += '<tr><td>Total Under ' + n.line + ' <span class="muted">(Poly nearest — book total is ' + total + ')</span></td><td class="muted">—</td><td class="muted">—</td>' +
+        (au? '<td class="num"><span class="clickable" data-mid="'+m.id+'" data-tok="1">'+cents(au.prob)+' <span class="muted">('+fmtAmerican(americanFromProb(au.prob))+')</span></span></td>' : '<td class="muted">—</td>') +
+        '<td class="soon">soon</td><td class="soon">soon</td><td class="muted">—</td><td class="muted">—</td></tr>';
+    }
+  } else if (pm && pm.total && pm.total.kind==='missing'){
+    h += '<tr><td colspan="8" class="muted">Polymarket has no total line near ' + total + ' for this game.</td></tr>';
+  }
+  h += renderExtraRows(g, pm, away, home, Ng, Bg);
+  return h;
+}
+
+function sectionHead(title){
+  return '<tr><td colspan="8" style="background:#161b22"><b>' + title + '</b></td></tr>';
+}
+// Pick one comparison from a list: prefer an exact side match, else the only match.
+function pickFrom(comps, pred, sideVal){
+  const all = (comps||[]).filter(pred);
+  if (!all.length) return null;
+  return all.find(c=> (c.side||'')===sideVal) || (all.length===1 ? all[0] : null);
+}
+
+// More-markets sections: alternate lines, team totals, player props.
+// Rendered defensively — the data side adds `kind` to kalshi comparisons and
+// alt_spread / alt_total / team_totals / props to poly-map; until then, nothing shows.
+// A venue with no price for a row gets "—"; a price is never invented.
+function renderExtraRows(g, pm, away, home, Ng, Bg){
+  if (!pm) return '';
+  let h = '';
+  const nAsk = (pred) => { const c = Ng ? compFor(Ng, pred) : null; return c ? {prob: c.novig_ask} : null; };
+  const nPick = (pred, sideVal) => { const c = Ng ? pickFrom(Ng.comparisons, pred, sideVal) : null; return c ? {prob: c.novig_ask} : null; };
+  const bBest = (pred) => { if (!Bg) return null; const c = compFor(Bg, pred); return c ? {book: c.best_book, price: c.best_price} : null; };
+  const bPick = (pred, sideVal) => { if (!Bg) return null; const c = pickFrom(Bg.comparisons, pred, sideVal); return c ? {book: c.best_book, price: c.best_price} : null; };
+  const polySideAsk = (market, sideName) => {
+    if (!market || !POLY[market.id]) return null;
+    const m = POLY[market.id];
+    const idx = outcomesOf(m).findIndex(o => nameContains(sideName, o));
+    if (idx<0) return null;
+    const a = polyAsk(m, idx);
+    return a ? {...a, mid: m.id, tok: idx} : null;
+  };
+  const fmtLine = (v) => { const n = parseFloat(v); return isNaN(n) ? v : (n>0?'+':'') + n; };
+
+  // ---- Alternate lines (alt spreads + alt totals) ----
+  let altRows = '';
+  for (const a of (pm.alt_spread||[])){
+    const team = a.side==='home' ? home : a.side==='away' ? away : (a.side||'');
+    const line = parseFloat(a.line);
+    const pred = c=> (c.kind||'main')==='alt_spread' && parseFloat(c.line)===line && nameContains(team, c.side||'');
+    const kc = compFor(g, pred);
+    const pa = polySideAsk(a.market, team);
+    altRows += outcomeRow('Spread ' + team + ' ' + fmtLine(a.line) + ' (alt)',
+      null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+      {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
+  }
+  for (const a of (pm.alt_total||[])){
+    const line = parseFloat(a.line);
+    for (const side of ['Over','Under']){
+      const pred = c=> (c.kind||'main')==='alt_total' && parseFloat(c.line)===line && (c.side||'')===side;
+      const kc = compFor(g, pred);
+      const pa = polySideAsk(a.market, side);
+      altRows += outcomeRow('Total ' + side + ' ' + fmtLine(a.line) + ' (alt)',
+        null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+        {novig: nAsk(pred), bookBest: bBest(pred), game: g.game});
+    }
+  }
+  if (altRows) h += sectionHead('Alternate lines') + altRows;
+
+  // ---- Team totals ----
+  let ttRows = '';
+  for (const t of (pm.team_totals||[])){
+    const line = parseFloat(t.line);
+    const pred = c=> (c.kind||'main')==='team_total' && parseFloat(c.line)===line &&
+      (nameContains(t.team, c.team||'') || nameContains(t.team, c.side||''));
+    for (const side of ['Over','Under']){
+      const kc = pickFrom(g.comparisons, pred, side);
+      const pa = polySideAsk(t.market, side);
+      ttRows += outcomeRow('Team total ' + t.team + ' ' + side + ' ' + fmtLine(t.line),
+        null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+        {novig: nPick(pred, side), bookBest: bPick(pred, side), game: g.game});
+    }
+  }
+  if (ttRows) h += sectionHead('Team totals') + ttRows;
+
+  // ---- Player props ----
+  let propRows = '';
+  for (const p of (pm.props||[])){
+    const line = parseFloat(p.line);
+    const pred = c=> (c.kind||'main')==='prop' && nameContains(p.player, c.player||'') &&
+      (nameContains(p.stat, c.stat||'') || (c.stat||'')===p.stat) && parseFloat(c.line)===line;
+    const kc = pickFrom(g.comparisons, pred, p.side);
+    const pa = polySideAsk(p.market, p.side||'');
+    const label = 'PROP — ' + p.player + ' ' + p.stat + ' ' + fmtLine(p.line) + (p.side ? ' ' + p.side : '');
+    propRows += outcomeRow(label,
+      null, kc?{prob:kc.kalshi_ask}:null, pa, pa?pa.mid:null, pa?pa.tok:null,
+      {novig: nPick(pred, p.side), bookBest: bPick(pred, p.side), game: g.game});
+  }
+  if (propRows) h += sectionHead('Player props') + propRows;
+  return h;
+}
+
+// CLOB order-book detail on click of a Polymarket price.
+document.addEventListener('click', async (ev)=>{
+  const el = ev.target.closest('.clickable');
+  if (!el) return;
+  const mid = el.getAttribute('data-mid'), tok = parseInt(el.getAttribute('data-tok'),10);
+  const row = el.closest('tr');
+  if (row.nextSibling && row.nextSibling.classList && row.nextSibling.classList.contains('bookdetail')){
+    row.nextSibling.remove(); return;
+  }
+  const market = POLY[mid];
+  if (!market) return;
+  const tokens = market.tokens || JSON.parse(market.clobTokenIds||'[]');
+  const tr = document.createElement('tr');
+  tr.className = 'bookdetail';
+  tr.innerHTML = '<td colspan="8">Loading live order book…</td>';
+  row.after(tr);
+  try {
+    const books = await Promise.all(tokens.map(async (t)=>{
+      const b = await fetchJSON(CLOB + '/book?token_id=' + t);
+      return b;
+    }));    let h = '<b>Live CLOB book — ' + (market.question||'') + '</b><br>';
+    books.forEach((b, i)=>{
+      const side = outcomesOf(market)[i] || ('outcome '+(i+1));
+      const asks = (b.asks||[]).slice(0,5).map(a=> a.price + ' × ' + a.size).join(' · ');
+      const bids = (b.bids||[]).slice(-5).reverse().map(a=> a.price + ' × ' + a.size).join(' · ');
+      h += '<div style="margin-top:6px"><b>' + side + '</b> — best ask ' + ((b.asks||[])[0]? b.asks[0].price : '—') + ' · best bid ' + ((b.bids||[]).slice(-1)[0]? b.bids.slice(-1)[0].price : '—') + '<br><span class="muted">Asks: ' + (asks||'—') + '<br>Bids: ' + (bids||'—') + '</span></div>';
+    });
+    tr.innerHTML = '<td colspan="8">' + h + '</td>';
+  } catch(e){
+    tr.innerHTML = '<td colspan="8" class="muted">Order book unavailable right now ('+e.message+').</td>';
+  }
+});
+
+// Bet button: copy a ticket to paste to Chet in chat. No network call, no order.
+document.addEventListener('click', async (ev)=>{
+  const btn = ev.target.closest('.betbtn');
+  if (!btn) return;
+  const ticket = BET_TICKETS[parseInt(btn.getAttribute('data-bet'),10)];
+  if (!ticket) return;
+  let ok = false;
+  try { await navigator.clipboard.writeText(ticket); ok = true; }
+  catch(e){
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = ticket; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+    } catch(e2){ ok = false; }
+  }
+  const orig = btn.textContent;
+  btn.textContent = ok ? 'Copied — paste it to Chet in chat' : 'Copy failed — select the text manually';
+  setTimeout(()=>{ btn.textContent = orig; }, 4000);
+});
+
+loadAll();
+setInterval(loadAll, 60000);
+</script>
+</body></html>
