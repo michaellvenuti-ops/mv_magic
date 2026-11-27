@@ -12783,3 +12783,29 @@
 [2026-11-27 11:11:16 ET] futures_pairs.py: OK in 3s — Footer: futures prices move slowly but stale cells exist — verify both legs live before placing; exchange No legs can partially fill.
 [2026-11-27 11:12:20 ET] promo_watch.py: OK in 64s — promo-watch: 11 listed, 0 new, 0 converter attempt(s).
 [2026-11-27 11:12:20 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 11:42:21 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 11:43:21 ET] odds_recorder.py: OK in 30s — SUMMARY: recorded 176 events (161 with odds), db total 329342 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-27 11:45:19 ET] dh_arbitrage.py: FAILED (exit 2) in 118s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-27 11:46:28 ET] dh_kalshi_poly_arb.py: OK in 70s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
+[2026-11-27 11:46:32 ET] wide_builds.py: OK in 2s — wide_builds: 34 qualifying builds, 0 NEW (banked wide-builds-2026-11-27.md)
+[2026-11-27 11:47:30 ET] dh_low_holds.py: OK in 59s — DarkHorse check unavailable (signed out) — low-holds skipped, no prices invented.
+[2026-11-27 11:48:46 ET] dh_game_middles.py: FAILED (exit 2) in 76s — game-middles: zero middles parsed — send a dump back for a parser patch. No state written.
+[2026-11-27 11:49:07 ET] dh_nhl_totals_middles.py: OK in 20s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-27 11:52:24 ET] dh_key_number_middles.py: FAILED (exit 2) in 198s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-27 11:55:44 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 200s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-27 11:55:49 ET] steam_side.py: OK in 5s — STEAM-SIDE FLAG: FBS Tulsa @ UTSA | 2026-11-27 | Fanatics | Under total 57.5 (median 57.5 -> 55.75)
+[2026-11-27 11:56:47 ET] dh_prop_middles.py: OK in 58s — DarkHorse check unavailable (signed out) — prop-middles skipped, no prices invented.
+[2026-11-27 11:58:09 ET] dh_sog_middles.py: FAILED (exit 2) in 82s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-27 11:58:11 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Cleveland 22.5/24.5 sits at -3.0c vs +EV
+[2026-11-27 11:58:12 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 11:58:13 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 11:58:14 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 11:58:16 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 11:58:17 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 11:58:18 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 11:58:19 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 12:01:50 ET] costco_gold.py: OK in 211s — SUMMARY: 8 items, prices 0/8, in-stock flags: 0, rate_limited: [], errors: 0
+[2026-11-27 12:01:58 ET] totals_scan.py: OK in 8s — totals: no new flags (silent).
+[2026-11-27 12:02:04 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
+[2026-11-27 12:03:06 ET] dh_derivative_ev.py: OK in 62s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
+[2026-11-27 12:03:06 ET] syncing to GitHub (regular 10-minute sync)
