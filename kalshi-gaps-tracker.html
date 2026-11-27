@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalshi Gaps Tracker — paper trades + gap history</title>
+<style>
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:20px}
+h1{font-size:22px;margin:0 0 4px} h2{font-size:17px;margin:26px 0 2px}
+.sub{color:#8b949e;font-size:12px;margin:2px 0 8px}
+.note{color:#d29922;font-size:12px;margin:2px 0 8px}
+.score{font-size:15px;margin:10px 0;line-height:1.7}
+.score b{font-size:17px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:13px;min-width:640px}
+th,td{border:1px solid #30363d;padding:5px 9px;text-align:right;white-space:nowrap}
+th{background:#161b22;color:#c9d1d9}
+td:first-child,th:first-child{text-align:left;font-weight:600}
+tr:nth-child(even) td{background:#11161d}
+td.best{background:#14532d!important;color:#7ee2a0;font-weight:700;border-color:#238636}
+td.stale{color:#d29922}
+.footer{color:#8b949e;font-size:12px;margin-top:28px;line-height:1.5}
+</style></head><body>
+<h1>Kalshi Gaps Tracker — paper trades + gap history</h1>
+<div class="sub">Built Friday, November 27, 2026, 9:32 AM ET · Sources: Kalshi price-gap scanner (Mac loop, every 5 min) + paper taker bot (paper mode only) · Book fair prices are DraftKings via ESPN, devigged. PAPER ONLY — no real money is ever placed by this system.</div>
+
+<div class="score">Paper record: <b>0-0-0</b> · $ P/L: <b>$0.00</b> · Trades graded: <b>0</b> · Open: <b>5</b> · Paper notional at risk (open): <b>$25.49</b> · Gaps flagged all-time: <b>12</b> (avg gap +3.4c)</div>
+<h2>Open paper trades (5)</h2>
+<div class="sub">10 contracts each. Notional includes the Kalshi fee. A win pays $10.00 total, so a win is +$10.00 minus notional, a loss is minus notional, a push is $0. NOT $100 flat.</div>
+<div class="wrap"><table><tr><th>Game</th><th>League</th><th>Market</th><th>Side</th><th>Yes/No</th><th>Price</th><th>Gap</th><th>Fair prob</th><th>Book</th><th>Notional</th><th>Flagged</th><th>Game time</th></tr>
+<tr><td>Boston College Eagles at Miami Hurricanes</td><td>FBS</td><td>Under 53.5</td><td>Under</td><td>no</td><td>47c</td><td>+3.0c</td><td>50.0%</td><td>-110</td><td>$4.88</td><td>Wed Nov 25, 11:08 PM ET</td><td>-</td></tr>
+<tr><td>Brooklyn Nets at Toronto Raptors</td><td>NBA</td><td>Over 220.5</td><td>Over</td><td>yes</td><td>45c</td><td>+5.0c</td><td>50.0%</td><td>-110</td><td>$4.68</td><td>Fri Nov 27, 8:31 AM ET</td><td>-</td></tr>
+<tr><td>Texas Longhorns at Saint Mary&#x27;s Gaels</td><td>CBB</td><td>Spread texas -8.5</td><td>Texas Longhorns</td><td>yes</td><td>45c</td><td>+3.9c</td><td>48.9%</td><td>-105</td><td>$4.68</td><td>Fri Nov 27, 8:31 AM ET</td><td>-</td></tr>
+<tr><td>Seattle Kraken at Edmonton Oilers</td><td>NHL</td><td>Winner</td><td>Edmonton</td><td>yes</td><td>62c</td><td>+3.7c</td><td>65.7%</td><td>-218</td><td>$6.37</td><td>Fri Nov 27, 8:31 AM ET</td><td>-</td></tr>
+<tr><td>Villanova Wildcats at Kansas Jayhawks</td><td>CBB</td><td>Over 159.5</td><td>Over</td><td>yes</td><td>47c</td><td>+3.0c</td><td>50.0%</td><td>-110</td><td>$4.88</td><td>Fri Nov 27, 8:31 AM ET</td><td>-</td></tr>
+</table></div>
+<h2>Settled paper trades (0)</h2>
+<div class="sub">Graded on settlement from verified public finals (ScoresAndOdds / ESPN). Deduped by trade — a trade is graded once, never twice.</div>
+<div class="wrap"><table><tr><th>Game</th><th>League</th><th>Market</th><th>Side</th><th>Price</th><th>Gap</th><th>Notional</th><th>Result</th><th>$ P/L</th><th>Final</th><th>Graded</th></tr>
+<tr><td colspan='11'>0 settled so far — nothing has finished yet. First settlements land the evening of Fri Nov 27 (BKN/TOR, Texas/Saint Mary's, Villanova/Kansas) and Sat Nov 28 (Edmonton, BC/Miami).</td></tr>
+</table></div>
+<h2>Gap history (12)</h2>
+<div class="sub">Every gap the scanner flagged at 3.0c or more below the book's devigged fair price, first-seen time. A gap that persists across scans is ONE flag, not one per scan. History starts Nov 25, 2026, when the scanner + taker went live — gaps before that are not in the logs.</div>
+<div class="wrap"><table><tr><th>Game</th><th>League</th><th>Market</th><th>Side</th><th>Kalshi ask</th><th>Fair prob</th><th>Gap</th><th>First seen</th><th>Game time</th></tr>
+<tr><td>Boston College Eagles at Miami Hurricanes</td><td>FBS</td><td>Under 53.5</td><td>Under</td><td>47c</td><td>50.0%</td><td>+3.0c</td><td>Wed Nov 25, 3:42 PM ET</td><td>Sat Nov 28, 12:00 PM ET</td></tr>
+<tr><td>Wake Forest Demon Deacons at Memphis Tigers</td><td>CBB</td><td>Spread memphis -1.5</td><td>Memphis Tigers</td><td>47c</td><td>51.1%</td><td>+4.1c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 1:30 PM ET</td></tr>
+<tr><td>Brooklyn Nets at Toronto Raptors</td><td>NBA</td><td>Over 220.5</td><td>Over</td><td>46c</td><td>50.0%</td><td>+4.0c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 7:30 PM ET</td></tr>
+<tr><td>Texas Longhorns at Saint Mary&#x27;s Gaels</td><td>CBB</td><td>Spread texas -8.5</td><td>Texas Longhorns</td><td>45c</td><td>48.9%</td><td>+3.9c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 5:00 PM ET</td></tr>
+<tr><td>Seattle Kraken at Edmonton Oilers</td><td>NHL</td><td>Winner</td><td>Edmonton</td><td>62c</td><td>65.7%</td><td>+3.8c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 8:00 PM ET</td></tr>
+<tr><td>Atlanta Hawks at Boston Celtics</td><td>NBA</td><td>Under 221.5</td><td>Under</td><td>47c</td><td>50.0%</td><td>+3.0c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 8:00 PM ET</td></tr>
+<tr><td>Villanova Wildcats at Kansas Jayhawks</td><td>CBB</td><td>Over 159.5</td><td>Over</td><td>47c</td><td>50.0%</td><td>+3.0c</td><td>Fri Nov 27, 8:30 AM ET</td><td>Fri Nov 27, 5:00 PM ET</td></tr>
+<tr><td>Milwaukee Bucks at Detroit Pistons</td><td>NBA</td><td>Spread milwaukee bucks +8.5 (via No)</td><td>Milwaukee Bucks</td><td>46c</td><td>49.6%</td><td>+3.6c</td><td>Fri Nov 27, 8:35 AM ET</td><td>Fri Nov 27, 7:30 PM ET</td></tr>
+<tr><td>Texas Tech Red Raiders at San Diego State Aztecs</td><td>CBB</td><td>Spread texas tech -7.5</td><td>Texas Tech Red Raiders</td><td>47c</td><td>50.0%</td><td>+3.0c</td><td>Fri Nov 27, 8:35 AM ET</td><td>Fri Nov 27, 11:30 PM ET</td></tr>
+<tr><td>Tennessee Volunteers at Louisville Cardinals</td><td>CBB</td><td>Winner</td><td>Tennessee</td><td>49c</td><td>52.6%</td><td>+3.6c</td><td>Fri Nov 27, 8:50 AM ET</td><td>Fri Nov 27, 9:00 PM ET</td></tr>
+<tr><td>Creighton Bluejays at Gonzaga Bulldogs</td><td>CBB</td><td>Spread gonzaga -6.5</td><td>Gonzaga Bulldogs</td><td>47c</td><td>50.0%</td><td>+3.0c</td><td>Fri Nov 27, 9:10 AM ET</td><td>Fri Nov 27, 11:00 PM ET</td></tr>
+<tr><td>Wake Forest Demon Deacons at Memphis Tigers</td><td>CBB</td><td>Winner</td><td>Memphis</td><td>52c</td><td>55.1%</td><td>+3.1c</td><td>Fri Nov 27, 9:20 AM ET</td><td>Fri Nov 27, 1:30 PM ET</td></tr>
+</table></div>
+<h2>Markouts (60-second)</h2>
+<div class="sub">Markout = later ask minus flag ask, in cents. Positive = the price moved in the flagger's favour after the flag (the edge was real; the market corrected toward fair). Negative = adverse selection — the flagged "cheap" price kept getting cheaper, i.e. the book was the stale side, not Kalshi. The paper taker's markout is measured on its own re-checked ask, so it can differ from the scanner's flag by a cent (e.g. BKN/TOR: scanner flagged 46c, taker re-checked 45c).</div>
+<div class="score">Paper trades: avg markout60 <b>+0.0c</b> across 5 trades · All flagged gaps: avg markout60 <b>-0.1c</b> across 12 flags</div>
+<div class="footer"><b>How to read this page.</b> A gap means Kalshi is selling one side at least 3.0c cheaper than the book's devigged fair price. About 1.7c of that is Kalshi's 7% fee, so the net edge is roughly 1.3c. A gap is NOT an arb — the side still has to win. The paper taker logs what it <i>would</i> have bought (10 contracts, $35/trade cap, 5/day, $100/day, pregame only, gap re-checked live at 3.0c or more). Nothing here places a real order; live trading needs a separate tap and a week of positive paper results first.<br><br>
+<b>Data notes.</b> The BC/Miami Under 53.5 paper trade is logged three times in the taker log (Nov 25 23:08, Nov 26 00:00, Nov 27 00:00) — it is counted ONCE here (dedupe by trade, earliest timestamp kept). Its markout60 was likewise recorded three times and is counted once. BKN/TOR Over 220.5: scanner flagged 46c (gap 4.0c); the taker's live re-check got 45c, so the paper trade is logged at 45c / gap 5.0c. The gap history shows the flag; the trade table shows the logged trade.<br><br>
+<b>Coverage.</b> Gap history is built from scanner flag events plus scan snapshots and the latest full scan; if a flag event is ever missing from the logs, that gap will not appear here. Settled grades come only from verified public finals — a game whose final cannot be verified stays open until it can be.</div>
+</body></html>
