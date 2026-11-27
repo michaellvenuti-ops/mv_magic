@@ -12809,3 +12809,28 @@
 [2026-11-27 12:02:04 ET] correlated_parlay.py: OK in 6s — correlated-parlay: 12 candidates banked; no priced flags (SGP pricing unavailable or below fair).
 [2026-11-27 12:03:06 ET] dh_derivative_ev.py: OK in 62s — DarkHorse check unavailable (signed out) -- derivative-ev skipped, no prices invented.
 [2026-11-27 12:03:06 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 12:33:07 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 12:34:06 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 176 events (155 with odds), db total 329518 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-27 12:34:07 ET] wide_builds.py: OK in 1s — wide_builds: 32 qualifying builds, 0 NEW (banked wide-builds-2026-11-27.md)
+[2026-11-27 12:35:48 ET] dh_game_middles.py: OK in 101s — GAME MIDDLE: NFL DEN Broncos PIT Steelers Today 3:00 PM / Today 3:00 PM / table / Receiving Yards M. Hurleman Under 2.5 / Alt Recv Yards M. Hurleman 1+ / table 
+[2026-11-27 12:36:53 ET] dh_nhl_totals_middles.py: OK in 65s — NHL TOTAL MIDDLE: NHL COL Avalanche MIN Wild Today 4:00 PM / Today 4:00 PM / table / Total Under 6.5 / Total Over 6 / table bar_chart | DraftKings | ProphetX — 
+[2026-11-27 12:39:54 ET] dh_key_number_middles.py: OK in 181s — key-number-middles: 1224 basketball rows excluded (football-only rule).
+[2026-11-27 12:42:50 ET] dh_basketball_key_middles.py: OK in 176s — basketball-key-middles: no new basketball middles.
+[2026-11-27 12:43:38 ET] hung_number.py: FAILED (exit 2) in 48s — write state. Re-run with --dump and send the dump file.
+[2026-11-27 12:43:42 ET] rlm.py: OK in 5s
+[2026-11-27 12:43:46 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-27 12:43:49 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Arizona State @ Arizona | 2026-11-27 | Fanatics | Arizona spread -7.5 (median -7.5 -> -8.5)
+[2026-11-27 12:45:18 ET] dh_prop_middles.py: OK in 88s — PROP MIDDLE CLEAN : NFL DEN Broncos PIT Steelers Today 3:00 PM / Today 3:00 PM / table / Pass Attempts M. Rudolph Under 30.5 / Pass Attempts M. Rudolph Over 29.
+[2026-11-27 12:46:38 ET] dh_sog_middles.py: OK in 80s — - 0 deliverables this run
+[2026-11-27 12:46:42 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Cleveland 22.5/24.5 sits at -3.0c vs +EV
+[2026-11-27 12:46:43 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 12:46:45 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 12:46:46 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 12:46:47 ET] ncaab_first_score.py: OK in 1s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 12:46:49 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 12:46:50 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 12:46:51 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-27 12:46:57 ET] podcast_transcribe.py: OK in 6s — SUMMARY: discover days=2 added=5 queued_total=76
+[2026-11-27 12:47:01 ET] public_fade.py: OK in 4s
+[2026-11-27 12:48:27 ET] dh_positive_ev.py: FAILED (exit 2) in 86s — positive-ev: session OK but the +EV finder rendered no table rows — body dumped to C:\Users\venut\pc-scans\data\dump-positive-ev-2026-11-27.txt. No prices inven
+[2026-11-27 12:48:27 ET] syncing to GitHub (regular 10-minute sync)
