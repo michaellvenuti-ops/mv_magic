@@ -381,7 +381,8 @@
    "pregame_total": 138.5,
    "alerted_at": "2026-11-27T14:54:27",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 138.5 -115 \u2014 Maine at Le Moyne (TRAILING FAVE) | pregame favorite Le Moyne trails at half (Maine leads); pace is slow (proj 132.0 vs live 138.5) \u2014 the comeback-fave rule bets Over anyway | H1 66 | as of 14:54:22 ET"
+   "alert_detail": "PLAY: Over 138.5 -115 \u2014 Maine at Le Moyne (TRAILING FAVE) | pregame favorite Le Moyne trails at half (Maine leads); pace is slow (proj 132.0 vs live 138.5) \u2014 the comeback-fave rule bets Over anyway | H1 66 | as of 14:54:22 ET",
+   "final": true
   },
   "401921717": {
    "matchup": "Georgetown at UCLA",
@@ -453,12 +454,15 @@
   "401921417": {
    "matchup": "La Salle at Bucknell",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 9.5,
    "fav_team": "La Salle",
    "dog_team": "Bucknell",
-   "pregame_total": 148.5
+   "pregame_total": 148.5,
+   "alerted_at": "2026-11-27T16:31:54",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 130.5 \u2014 La Salle at Bucknell (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 130.5 (gap -26.5, bar 5) | H1 52 | as of 16:31:48 ET"
   },
   "401920774": {
    "matchup": "Colgate at Hofstra",
@@ -776,7 +780,7 @@
    "spread": 4.5,
    "fav_team": "Kentucky",
    "dog_team": "Wichita St",
-   "pregame_total": 158.5
+   "pregame_total": 157.5
   },
   "401926783": {
    "matchup": "Jax State at Omaha",
