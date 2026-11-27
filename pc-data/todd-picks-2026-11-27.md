@@ -17,3 +17,5 @@ NEW TODD PLAY: Todd play (in-play CBB) -182 :: raw: "@everyone Akron +8 -182..ri
 NEW TODD PLAY: 1st Half Total 67.5 -110 :: raw: "@everyone ov67.5 -110 1h Baylor and ov69.5 -110 1h Baylor" :: msg 1575972808557731981 :: posted 2026-11-27T20:33:17.719Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 15:55:08 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 42.5 -112 :: raw: "@everyone ov42.5 -112 Broncos game nfl" :: msg 1575977745937211573 :: posted 2026-11-27T20:52:54.882Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 16:07:21 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 147.5 -115 :: raw: "@everyone ov147.5 -115 Texas st cbb (at the half" :: msg 1575981194351214654 :: posted 2026-11-27T21:06:37.048Z :: Novig: https://app.novig.us/AppEntry
