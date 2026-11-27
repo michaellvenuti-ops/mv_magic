@@ -12678,3 +12678,21 @@
 [2026-11-27 06:31:15 ET] odds_recorder.py: OK in 25s — SUMMARY: recorded 142 events (113 with odds), db total 328740 snapshots / 1933 events, feeds ok 6 fail 0
 [2026-11-27 06:31:16 ET] wide_builds.py: OK in 1s — NEW BUILD: NBA DAL Mavericks PHO Suns Today 9:15 PM — Total — Over 224.5 theScore -130 ($111) / Under 225 ProphetX +122 ($89) — win+push at 225 — push +$85.38, 
 [2026-11-27 06:31:16 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-27 07:01:16 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 07:02:16 ET] dh_low_holds.py: OK in 60s — low-holds: no new qualifying pairs (silent).
+[2026-11-27 07:03:29 ET] dh_game_middles.py: OK in 73s — GAME MIDDLE: NBA DEN Nuggets UTA Jazz Today 9:45 PM / Today 9:45 PM / table / Points D. DeRozan Under 10.5 / Alt Points D. DeRozan 10+ / table | Bet365 | FanDue
+[2026-11-27 07:04:21 ET] dh_nhl_totals_middles.py: OK in 52s — NHL TOTAL MIDDLE: NHL CGY Flames NJ Devils Today 1:00 PM / Today 1:00 PM / table / Total Under 6.5 / Total Over 6 / table | Bally Bet | BetMGM — window 0.5 push
+[2026-11-27 07:07:36 ET] dh_key_number_middles.py: FAILED (exit 2) in 195s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-27 07:10:48 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 192s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-27 07:10:53 ET] steam_side.py: OK in 4s — steam-side: 69 games, no new flags (silent).
+[2026-11-27 07:12:06 ET] dh_prop_middles.py: FAILED (exit 2) in 73s — prop-middles: zero player-prop middles parsed (0 game-line rows dropped by prop filter) — run with a dump and send it back for a parser patch. No state written.
+[2026-11-27 07:13:44 ET] dh_sog_middles.py: OK in 98s — - 0 deliverables this run
+[2026-11-27 07:13:48 ET] dh_team_total_middles.py: OK in 4s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 07:13:49 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 07:13:51 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 07:13:52 ET] nhl_first_goal.py: OK in 1s — nhl-first-goal: 0 new, 0 unverified, 391 total tallied.
+[2026-11-27 07:13:54 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 0 unverified, 1254 total tallied.
+[2026-11-27 07:13:56 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 823 total tallied.
+[2026-11-27 07:13:56 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 07:13:58 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-27 07:13:58 ET] syncing to GitHub (regular 10-minute sync)
