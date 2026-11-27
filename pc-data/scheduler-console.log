@@ -12907,3 +12907,23 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 15:01:05 ET] dh_kalshi_poly_arb.py: OK in 371s — DarkHorse check unavailable (signed out) — kalshi-poly-arb skipped, no prices invented.
 [2026-11-27 15:01:23 ET] wide_builds.py: OK in 13s — NEW BUILD: NFL NY Jets MIA Dolphins Nov-29 1:00 PM — Rec + Rush Yards O. Gordon — Over 89.5 DraftKings +116 ($91) / Under 94.5 BetRivers -122 ($109) — both win 
 [2026-11-27 15:01:24 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-27 15:31:26 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 15:34:50 ET] dh_game_middles.py: FAILED (exit 1) in 204s —   - <launched> pid=12332
+[2026-11-27 15:38:22 ET] dh_nhl_totals_middles.py: OK in 209s — NHL TOTAL MIDDLE: NHL NY Islanders PHI Flyers Nov-28 7:30 PM / Nov-28 7:30 PM / table / Total Over 5.5 / Total Under 6.5 / table | Fanatics-NJ | theScore — wind
+[2026-11-27 15:42:36 ET] dh_key_number_middles.py: OK in 253s — key-number-middles: 742 basketball rows excluded (football-only rule).
+[2026-11-27 15:53:46 ET] dh_basketball_key_middles.py: OK in 663s — basketball-key-middles: no new basketball middles.
+[2026-11-27 16:00:43 ET] hung_number.py: FAILED (exit 2) in 411s — write state. Re-run with --dump and send the dump file.
+[2026-11-27 16:00:52 ET] rlm.py: OK in 8s
+[2026-11-27 16:00:57 ET] leader_follower.py: OK in 4s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-27 16:01:00 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS Marshall @ Louisiana-Monroe | 2026-11-27 | FanDuel | Marshall spread 5.5 (median 5.5 -> 6.5)
+[2026-11-27 16:03:08 ET] dh_prop_middles.py: OK in 128s — PROP MIDDLE CLEAN : NBA DEN Nuggets UTA Jazz Today 9:45 PM / Today 9:45 PM / table / Pts+Ast J. Murray Under 30.5 / Pts+Ast J. Murray 30+ / table | theScore | B
+[2026-11-27 16:06:40 ET] dh_sog_middles.py: OK in 212s — - 0 deliverables this run
+[2026-11-27 16:07:06 ET] dh_team_total_middles.py: OK in 26s — team-total-middles: 24 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Atlanta 17.5/21.5 sits at -3.2c vs +EV.
+[2026-11-27 16:07:08 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 166 total tallied.
+[2026-11-27 16:07:10 ET] nba_first_score.py: OK in 2s — nba-first-score: 0 new, 0 unverified, 257 total tallied.
+[2026-11-27 16:07:12 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 3 new, 0 unverified, 394 total tallied.
+[2026-11-27 16:07:17 ET] ncaab_first_score.py: OK in 5s — ncaab-first-score: 6 new, 1 unverified, 1262 total tallied.
+[2026-11-27 16:07:19 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 5 new, 0 unverified, 828 total tallied.
+[2026-11-27 16:07:20 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 16:07:23 ET] nba_overs_pregame.py: OK in 3s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-27 16:07:24 ET] syncing to GitHub (regular 10-minute sync)
