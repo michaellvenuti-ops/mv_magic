@@ -1536,7 +1536,8 @@
    "alert_fav_score": 0,
    "alert_dog_score": 10,
    "alert_ml": -188,
-   "ml_read_at": "2026-11-26T20:46:03"
+   "ml_read_at": "2026-11-26T20:46:03",
+   "final": true
   },
   "401858536": {
    "sport": "CFB",
@@ -1644,7 +1645,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 11.5,
+   "spread": 10.5,
    "fav_team": "Texas",
    "dog_team": "Texas A&M"
   },
@@ -1654,7 +1655,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "Wisconsin",
    "dog_team": "Minnesota"
   },
@@ -1684,7 +1685,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 24.5,
+   "spread": 25.5,
    "fav_team": "Miami",
    "dog_team": "Boston College"
   },
@@ -1724,7 +1725,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 3.0,
+   "spread": 3.5,
    "fav_team": "UConn",
    "dog_team": "Wyoming"
   },
@@ -1744,7 +1745,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 4.0,
+   "spread": 3.5,
    "fav_team": "C Michigan",
    "dog_team": "Ball State"
   },
@@ -1834,7 +1835,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 3.5,
+   "spread": 4.0,
    "fav_team": "Iowa State",
    "dog_team": "Kansas St"
   },
@@ -1864,7 +1865,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 5.5,
+   "spread": 4.5,
    "fav_team": "Louisiana",
    "dog_team": "Georgia St"
   },
@@ -1874,7 +1875,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 17.5,
+   "spread": 18.5,
    "fav_team": "Liberty",
    "dog_team": "Missouri St"
   },
@@ -1904,7 +1905,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 6.0,
+   "spread": 6.5,
    "fav_team": "South Carolina",
    "dog_team": "Clemson"
   },
@@ -2034,7 +2035,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 3.0,
+   "spread": 2.5,
    "fav_team": "North Texas",
    "dog_team": "UAB"
   },
@@ -2074,7 +2075,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 6.5,
+   "spread": 6.0,
    "fav_team": "Oklahoma St",
    "dog_team": "Kansas"
   },
@@ -4075,7 +4076,8 @@
    "fav": "home",
    "spread": 3.0,
    "fav_team": "Bills",
-   "dog_team": "Chiefs"
+   "dog_team": "Chiefs",
+   "final": true
   },
   "401873083": {
    "sport": "NFL",
@@ -4113,7 +4115,7 @@
    "date": "2026-11-29",
    "alerted": false,
    "fav": "away",
-   "spread": 4.5,
+   "spread": 5.5,
    "fav_team": "Jets",
    "dog_team": "Dolphins"
   },
@@ -5222,7 +5224,8 @@
    "fav": "away",
    "spread": 6.5,
    "fav_team": "LSU",
-   "dog_team": "SMU"
+   "dog_team": "SMU",
+   "final": true
   },
   "401909506": {
    "sport": "NCAAB",
@@ -5232,7 +5235,8 @@
    "fav": "away",
    "spread": 1.5,
    "fav_team": "DePaul",
-   "dog_team": "Pitt"
+   "dog_team": "Pitt",
+   "final": true
   },
   "401911523": {
    "sport": "NCAAB",
@@ -5242,7 +5246,8 @@
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Jax State",
-   "dog_team": "UC Davis"
+   "dog_team": "UC Davis",
+   "final": true
   },
   "401920530": {
    "sport": "NCAAB",
@@ -5252,7 +5257,8 @@
    "fav": "home",
    "spread": 1.5,
    "fav_team": "St John's",
-   "dog_team": "Louisville"
+   "dog_team": "Louisville",
+   "final": true
   },
   "401920539": {
    "sport": "NCAAB",
@@ -5262,7 +5268,8 @@
    "fav": "away",
    "spread": 13.5,
    "fav_team": "Alabama",
-   "dog_team": "Kansas St"
+   "dog_team": "Kansas St",
+   "final": true
   },
   "401917546": {
    "sport": "NCAAB",
@@ -5272,17 +5279,28 @@
    "fav": "away",
    "spread": 7.5,
    "fav_team": "Pacific",
-   "dog_team": "Omaha"
+   "dog_team": "Omaha",
+   "final": true
   },
   "401920531": {
    "sport": "NCAAB",
    "matchup": "Texas Tech at Oregon",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 10.5,
    "fav_team": "Texas Tech",
-   "dog_team": "Oregon"
+   "dog_team": "Oregon",
+   "live_ml": 124,
+   "ml_bucket": "bettor",
+   "alerted_at": "2026-11-27T01:38:03",
+   "board_read_at": "2026-11-27T01:38:02",
+   "alert_expires_at": "2026-11-27T01:41:03",
+   "alert_detail": "7:22 - 2nd Half",
+   "alert_fav_score": 49,
+   "alert_dog_score": 54,
+   "alert_ml": 124,
+   "ml_read_at": "2026-11-27T01:38:03"
   },
   "401920540": {
    "sport": "NCAAB",
@@ -5310,7 +5328,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 9.5,
+   "spread": 8.5,
    "fav_team": "Pistons",
    "dog_team": "Bucks"
   },
@@ -5320,7 +5338,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 2.5,
+   "spread": 3.5,
    "fav_team": "76ers",
    "dog_team": "Pacers"
   },
@@ -5360,7 +5378,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Suns",
    "dog_team": "Mavericks"
   },
@@ -5380,7 +5398,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 9.5,
+   "spread": 10.5,
    "fav_team": "Nuggets",
    "dog_team": "Jazz"
   },
@@ -5400,7 +5418,7 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "Trail Blazers",
    "dog_team": "Warriors"
   }
