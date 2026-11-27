@@ -406,7 +406,13 @@ async function renderLiquidity(){
   const workers = [];
   for (let i=0;i<Math.min(8, jobs.length);i++) workers.push(worker());
   await Promise.all(workers);
-  let h = '<p class="muted">Top ask levels — dollars = price × shares at that level. Kalshi depth comes from the scan data file (not published yet — shows nothing until it lands); Polymarket depth is live from the CLOB book. Books: n/a — books do not publish limits.</p>';
+  // Kalshi depth label is data-driven: once the published scan file
+  // carries depth, say so (with its timestamp); before that, say it
+  // is not published yet. (Was a static "not published yet" — stale
+  // the moment the Nov 27 14:29 publish carried depth.)
+  const kHasDepth = DEPTH_ROWS.some(r => r.kLevels || r.kDollars!=null);
+  const kNote = kHasDepth ? ('from the scan data file (as of ' + ((K && K.updated) ? K.updated : '—') + ')') : '(not published yet — shows nothing until it lands)';
+  let h = '<p class="muted">Top ask levels — dollars = price × shares at that level. Kalshi depth comes ' + kNote + '; Polymarket depth is live from the CLOB book. Books: n/a — books do not publish limits.</p>';
   for (const r of DEPTH_ROWS){
     const kTxt = r.kLevels ? r.kLevels.slice(0,3).map(lv => {
         const p = parseFloat(lv[0]), c = parseFloat(lv[1]), d = parseFloat(lv[2]);
