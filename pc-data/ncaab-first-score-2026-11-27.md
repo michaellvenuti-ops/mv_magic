@@ -6,3 +6,6 @@
 ## 2026-11-27T02:01:39-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1254 games through 2026-11-26
 - 2026-11-26: Texas Tech Red Raiders @ Oregon Ducks — first: Texas Tech Red Raiders (2PT, 1:28 in); lead changes 4; final 62-59
 - 2026-11-26: Baylor Bears @ Gonzaga Bulldogs — first: Baylor Bears (2PT, 0:14 in); lead changes 3; final 64-72
+## 2026-11-27T14:17:53-05:00 -- NCAAB FIRST SCORE (PC): 2 new final(s) tallied; season 1256 games through 2026-11-27
+- 2026-11-27: Virginia Cavaliers @ Xavier Musketeers — first: Virginia Cavaliers (3PT, 0:33 in); lead changes 0; final 83-71
+- 2026-11-27: St. Thomas Tommies @ Liberty Flames — first: Liberty Flames (2PT, 1:01 in); lead changes 2; final 67-76
