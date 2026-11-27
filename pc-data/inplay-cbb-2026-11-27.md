@@ -27,3 +27,5 @@ NEW IN-PLAY CBB: PLAY: Under 141.5 -120 — Princeton at UNC Wilmington (PACE) |
 NEW IN-PLAY CBB: PLAY: Under 140.5 -115 — Bellarmine at Butler (PACE) | pace proj 126.0 (H1 63 x 2) vs live total 140.5 (gap -14.5, bar 5) | H1 63 | as of 15:55:03 ET
 ## 2026-11-27 16:16:41 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 136.5 — Colgate at Hofstra (TRAILING FAVE) | pregame favorite Hofstra trails at half (Colgate leads); pace is slow (proj 128.0 vs live 136.5) — the comeback-fave rule bets Over anyway | H1 64 | as of 16:16:40 ET
+## 2026-11-27 16:31:51 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 130.5 — La Salle at Bucknell (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 130.5 (gap -26.5, bar 5) | H1 52 | as of 16:31:48 ET
