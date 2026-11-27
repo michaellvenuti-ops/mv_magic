@@ -656,12 +656,15 @@
   "401911030": {
    "matchup": "Bowling Green at Indiana",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 22.5,
    "fav_team": "Indiana",
    "dog_team": "Bowling Green",
-   "pregame_total": 151.5
+   "pregame_total": 151.5,
+   "alerted_at": "2026-11-27T18:48:03",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 146.5 -120 \u2014 Bowling Green at Indiana (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 146.5 (gap -16.5, bar 5) | H1 65 | as of 18:48:02 ET"
   },
   "401933055": {
    "matchup": "S Wesleyan at SC Upstate",
@@ -686,7 +689,7 @@
    "spread": 5.5,
    "fav_team": "Georgia",
    "dog_team": "UCF",
-   "pregame_total": 161.5
+   "pregame_total": 162.5
   },
   "401926756": {
    "matchup": "Lehigh at Santa Barbara",
