@@ -33,3 +33,5 @@ NEW TODD PLAY: Total 47.5 -110 :: raw: "@everyone ov47.5 -110 Air Force cfb" :: 
 NEW TODD PLAY: Total 58.5 -121 :: raw: "@everyone ov58.5 -121 n Dakota state cfb" :: msg 1576000000943464652 :: posted 2026-11-27T22:21:20.889Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 17:35:51 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Total 74.5 -105 :: raw: "@everyone ov74.5 -105 1h Niagara" :: msg 1576002909445820517 :: posted 2026-11-27T22:32:54.330Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 18:05:10 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 58.5 -102 :: raw: "@everyone un58.5 -102 old dominion cbb tt" :: msg 1576009248553443380 :: posted 2026-11-27T22:58:05.691Z :: Novig: https://app.novig.us/AppEntry
