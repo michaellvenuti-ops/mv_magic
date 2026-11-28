@@ -69,3 +69,5 @@ NEW IN-PLAY CBB: PLAY: Under 148.5 -115 — West Virginia at North Carolina (PAC
 NEW IN-PLAY CBB: PLAY: Over 177.5 — UCF at Georgia (TRAILING FAVE) | pregame favorite Georgia trails at half (UCF leads); pace agrees (proj 178.0 vs live 177.5) — comeback-fave Over | H1 89 | as of 19:54:48 ET
 ## 2026-11-27 20:28:04 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 128.5 -105 — Oakland at Houston (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 128.5 (gap -12.5, bar 5) | H1 58 | as of 20:28:03 ET
+## 2026-11-27 20:28:07 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 146.5 -110 — Penn State at Mississippi St (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 146.5 (gap -16.5, bar 5) | H1 65 | as of 20:28:03 ET
