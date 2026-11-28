@@ -11580,18 +11580,18 @@
    "winner": "Florida Gators"
   },
   {
-   "date": "2026-11-27",
    "away": "Minnesota Golden Gophers",
-   "home": "Wisconsin Badgers",
+   "date": "2026-11-27",
+   "final": "5-28",
    "first": "Minnesota Golden Gophers",
-   "first_side": "away",
-   "first_kind": "FG",
    "first_elapsed_sec": 337,
-   "winner": "Wisconsin Badgers",
-   "seq": "3-0>3-7>3-14>3-21>5-21>5-28",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "Wisconsin Badgers",
    "lead_changes": 1,
+   "seq": "3-0>3-7>3-14>3-21>5-21>5-28",
    "ties": 0,
-   "final": "5-28"
+   "winner": "Wisconsin Badgers"
   },
   {
    "away": "Mississippi State Bulldogs",
@@ -11650,18 +11650,18 @@
    "winner": "Temple Owls"
   },
   {
-   "date": "2026-11-27",
    "away": "Texas Longhorns",
-   "home": "Texas A&M Aggies",
+   "date": "2026-11-27",
+   "final": "16-6",
    "first": "Texas Longhorns",
-   "first_side": "away",
-   "first_kind": "FG",
    "first_elapsed_sec": 311,
-   "winner": "Texas Longhorns",
-   "seq": "3-0>10-0>10-3>13-3>13-6>16-6",
+   "first_kind": "FG",
+   "first_side": "away",
+   "home": "Texas A&M Aggies",
    "lead_changes": 0,
+   "seq": "3-0>10-0>10-3>13-3>13-6>16-6",
    "ties": 0,
-   "final": "16-6"
+   "winner": "Texas Longhorns"
   },
   {
    "away": "Toledo Rockets",
@@ -11690,6 +11690,20 @@
    "seq": "0-7>7-7>7-14>7-16>7-18>7-25>15-25>15-28>22-28",
    "ties": 1,
    "winner": "UTSA Roadrunners"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "West Virginia Mountaineers",
+   "home": "Utah Utes",
+   "first": "Utah Utes",
+   "first_side": "home",
+   "first_kind": "TD",
+   "first_elapsed_sec": 241,
+   "winner": "Utah Utes",
+   "seq": "0-7>0-10>0-17>0-24>0-31>0-38>7-38>7-45>7-52>14-52>21-52>28-52",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "28-52"
   }
  ],
  "tally": {
@@ -12126,17 +12140,17 @@
    "won_by_one_when_first_pct": null
   },
   "Utah Utes": {
-   "gp": 11,
-   "scored_first": 8,
+   "gp": 12,
+   "scored_first": 9,
    "kinds": {
     "FG": 1,
-    "TD": 7,
+    "TD": 8,
     "Safety": 0
    },
-   "won_when_first": 8,
+   "won_when_first": 9,
    "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 72.7,
+   "scored_first_pct": 75.0,
    "win_pct_when_first": 100.0,
    "win_pct_when_not_first": 100.0,
    "won_by_one_when_first_pct": 0.0
@@ -12878,7 +12892,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "West Virginia Mountaineers": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 6,
    "kinds": {
     "FG": 2,
@@ -12888,9 +12902,9 @@
    "won_when_first": 3,
    "won_when_not_first": 2,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 54.5,
+   "scored_first_pct": 50.0,
    "win_pct_when_first": 50.0,
-   "win_pct_when_not_first": 40.0,
+   "win_pct_when_not_first": 33.3,
    "won_by_one_when_first_pct": 0.0
   },
   "Duquesne Dukes": {
@@ -15503,19 +15517,19 @@
   }
  },
  "league": {
-  "games": 835,
-  "home_scored_first": 492,
-  "first_team_won": 586,
+  "games": 836,
+  "home_scored_first": 493,
+  "first_team_won": 587,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.4,
   "kinds": {
    "FG": 232,
-   "TD": 601,
+   "TD": 602,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
-  "median_first_score_sec": 342,
-  "home_scored_first_pct": 58.9,
+  "median_first_score_sec": 341,
+  "home_scored_first_pct": 59.0,
   "first_team_win_pct": 70.2
  },
  "lead_change_team_avgs": {
@@ -15655,9 +15669,9 @@
    "avg_per_game": 0.0
   },
   "Utah Utes": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 13,
-   "avg_per_game": 1.18
+   "avg_per_game": 1.08
   },
   "Massachusetts Minutemen": {
    "games": 11,
@@ -15890,9 +15904,9 @@
    "avg_per_game": 0.82
   },
   "West Virginia Mountaineers": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 27,
-   "avg_per_game": 2.45
+   "avg_per_game": 2.25
   },
   "Duquesne Dukes": {
    "games": 2,
