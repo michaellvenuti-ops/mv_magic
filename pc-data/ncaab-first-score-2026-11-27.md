@@ -56,3 +56,12 @@
 - 2026-11-27: West Virginia Mountaineers @ North Carolina Tar Heels — first: West Virginia Mountaineers (2PT, 0:27 in); lead changes 0; final 72-59
 - 2026-11-27: Charleston Southern Buccaneers @ East Tennessee State Buccaneers — first: Charleston Southern Buccaneers (3PT, 0:13 in); lead changes 0; final 76-67
 - note: 2 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-27T23:38:32-05:00 -- NCAAB FIRST SCORE (PC): 7 new final(s) tallied; season 1304 games through 2026-11-27
+- 2026-11-27: Wichita State Shockers @ Kentucky Wildcats — first: Kentucky Wildcats (2PT, 0:37 in); lead changes 7; final 73-71
+- 2026-11-27: Tennessee Volunteers @ Louisville Cardinals — first: Tennessee Volunteers (3PT, 0:26 in); lead changes 5; final 64-84
+- 2026-11-27: Miami Hurricanes @ Alabama Crimson Tide — first: Alabama Crimson Tide (2PT, 2:15 in); lead changes 1; final 87-81
+- 2026-11-27: Missouri State Bears @ Oral Roberts Golden Eagles — first: Missouri State Bears (3PT, 0:38 in); lead changes 7; final 66-72
+- 2026-11-27: North Dakota State Bison @ North Texas Mean Green — first: North Texas Mean Green (2PT, 1:53 in); lead changes 16; final 73-75
+- 2026-11-27: Idaho Vandals @ Washington State Cougars — first: Washington State Cougars (2PT, 1:38 in); lead changes 6; final 61-69
+- 2026-11-27: Northeastern Huskies @ Northwestern Wildcats — first: Northeastern Huskies (2PT, 0:53 in); lead changes 7; final 61-65
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
