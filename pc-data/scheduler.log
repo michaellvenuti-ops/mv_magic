@@ -13111,3 +13111,9 @@
 [2026-11-28 07:14:06 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-28; skipping.
 [2026-11-28 07:14:08 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-28 07:14:08 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 07:44:08 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 07:45:04 ET] odds_recorder.py: OK in 26s — SUMMARY: recorded 176 events (73 with odds), db total 331806 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 07:45:33 ET] dh_arbitrage.py: OK in 28s — ARBITRAGE: NHL SJ Sharks COL Avalanche Today 9:00 PM / Today 9:00 PM / table / Shots T. Hughes Under 2.5 / Shots T. Hughes 3+ / table | DraftKings | Bet365
+[2026-11-28 07:45:52 ET] dh_kalshi_poly_arb.py: OK in 19s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-28 07:45:56 ET] wide_builds.py: OK in 3s — NEW BUILD: NBA BKN Nets CHA Hornets Today 6:15 PM — Total — Over 216 ProphetX +132 ($85) / Under 216.5 theScore -140 ($115) — win+push at 216 — push +$82.14, mi
+[2026-11-28 07:45:58 ET] syncing to GitHub (wide-builds banked new builds)
