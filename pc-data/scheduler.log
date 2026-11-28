@@ -13085,3 +13085,29 @@
 [2026-11-28 06:00:25 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-28; skipping.
 [2026-11-28 06:00:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-28 06:00:26 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 06:30:26 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 06:31:26 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 176 events (73 with odds), db total 331630 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 06:31:58 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NBA PHI 76ers HOU Rockets Today 8:45 PM / Today 8:45 PM / table / Assists K. Caldwell-Pope Under 2.5 / Assists K. Caldwell-Pope Over 2.5 / table | Dr
+[2026-11-28 06:32:18 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-28 06:32:20 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA IND Pacers CHI Bulls Today 8:15 PM — Total — Over 232 ProphetX -125 ($110) / Under 232.5 FanDuel +118 ($90) — win+push at 232 — push +$106.20, mi
+[2026-11-28 06:32:20 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-28 07:02:20 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 07:03:40 ET] dh_game_middles.py: OK in 81s — GAME MIDDLE: NCAAF North Carolina St. North Carolina Today 12:00 PM / Today 12:00 PM / table / Alt Total Under 54.5 / Alt Total Over 54 / table bar_chart | BetR
+[2026-11-28 07:04:49 ET] dh_nhl_totals_middles.py: OK in 69s — NHL TOTAL MIDDLE: NHL CGY Flames NY Rangers Today 7:00 PM / Today 7:00 PM / table / Total Over 5.5 / Total Under 6 / table | FanDuel | Caesars — window 0.5 push
+[2026-11-28 07:07:33 ET] dh_key_number_middles.py: OK in 164s — key-number-middles: 214 basketball rows excluded (football-only rule).
+[2026-11-28 07:10:13 ET] dh_basketball_key_middles.py: OK in 159s — basketball-key-middles: no new basketball middles.
+[2026-11-28 07:10:52 ET] hung_number.py: FAILED (exit 2) in 39s — write state. Re-run with --dump and send the dump file.
+[2026-11-28 07:10:56 ET] rlm.py: OK in 4s
+[2026-11-28 07:11:01 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-28 07:11:04 ET] steam_side.py: OK in 3s — steam-side: 69 games, no new flags (silent).
+[2026-11-28 07:12:14 ET] dh_prop_middles.py: OK in 70s — PROP MIDDLE CLEAN : NBA ORL Magic WAS Wizards Today 5:15 PM / Today 5:15 PM / table / Pts+Ast+Rebs J. Suggs Under 22.5 / Pts+Ast+Rebs J. Suggs 22+ / table | Bet
+[2026-11-28 07:13:56 ET] dh_sog_middles.py: OK in 101s — - 0 deliverables this run
+[2026-11-28 07:13:58 ET] dh_team_total_middles.py: OK in 2s — team-total-middles: 22 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Los Angeles C 20.5/24.5 sits at -0.6c vs
+[2026-11-28 07:13:59 ET] nfl_first_score.py: OK in 1s — nfl-first-score: 0 new, 0 unverified, 167 total tallied.
+[2026-11-28 07:14:01 ET] nba_first_score.py: OK in 1s — nba-first-score: 0 new, 0 unverified, 268 total tallied.
+[2026-11-28 07:14:02 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 406 total tallied.
+[2026-11-28 07:14:05 ET] ncaab_first_score.py: OK in 2s — ncaab-first-score: 0 new, 1 unverified, 1308 total tallied.
+[2026-11-28 07:14:06 ET] ncaaf_first_score.py: OK in 1s — ncaaf-first-score: 0 new, 0 unverified, 836 total tallied.
+[2026-11-28 07:14:06 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-28; skipping.
+[2026-11-28 07:14:08 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-28 07:14:08 ET] syncing to GitHub (regular 10-minute sync)
