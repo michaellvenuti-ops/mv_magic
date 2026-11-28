@@ -77,3 +77,5 @@ NEW IN-PLAY CBB: PLAY: Under 137.5 -110 — Idaho at Washington St (PACE) | pace
 NEW IN-PLAY CBB: PLAY: Over 151.5 — Missouri St at Oral Roberts (TRAILING FAVE) | pregame favorite Oral Roberts trails at half (Missouri St leads); pace is slow (proj 150.0 vs live 151.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 20:54:58 ET
 ## 2026-11-27 20:55:03 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Northeastern at Northwestern (PACE) | pace proj 120.0 (H1 60 x 2) vs live total 138.5 (gap -18.5, bar 5) | H1 60 | as of 20:54:58 ET
+## 2026-11-27 21:24:50 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 182.5 -120 — Miami at Alabama (2ND BITE) | 1H total 92 cleared implied 1H line 84.25 by +7.8; pace proj 184.0 vs live total 182.5 -- take the Over again at the half | H1 92 | as of 21:24:48 ET
