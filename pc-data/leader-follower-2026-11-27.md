@@ -25,3 +25,12 @@
 ## 2026-11-27T16:00:56-05:00 — pack move, never credited: Marshall @ Louisiana-Monroe | 2026-11-27 spread (BetMGM, DraftKings, Fanatics, bet365)
 ## 2026-11-27T16:00:56-05:00 — pack move, never credited: Auburn @ Alabama | 2026-11-27 spread (Caesars, DraftKings)
 ## 2026-11-27T16:00:57-05:00 — 85 games, 0 leads credited, 13 started games skipped
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: Seahawks @ 49ers | 2026-11-27 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, Hard Rock, Kalshi, bet365)
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: Cincinnati @ BYU | 2026-11-27 spread (BetMGM, Caesars, DraftKings, FanDuel, Fanatics, bet365)
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: Oklahoma @ Missouri | 2026-11-27 spread (DraftKings, Kalshi)
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: Arizona State @ Arizona | 2026-11-27 spread (Fanatics, Kalshi)
+## 2026-11-27T19:45:27-05:00 — no-follow: BetMGM Appalachian State @ South Alabama | 2026-11-27 spread (only 0 followed)
+## 2026-11-27T19:45:27-05:00 — no-follow: BetMGM Appalachian State @ South Alabama | 2026-11-27 total (only 1 followed)
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: Appalachian State @ South Alabama | 2026-11-27 spread (BetMGM, Kalshi)
+## 2026-11-27T19:45:27-05:00 — pack move, never credited: North Dakota State @ San Jose State | 2026-11-27 total (BetMGM, DraftKings, FanDuel)
+## 2026-11-27T19:45:28-05:00 — 85 games, 0 leads credited, 16 started games skipped
