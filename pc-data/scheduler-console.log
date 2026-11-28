@@ -13042,3 +13042,39 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-28 01:38:03 ET] pace_board.py: OK in 3s — pace: NBA: 30 teams; NCAAB: 365 teams; NFL: 32 teams; NCAAF: 138 teams
 [2026-11-28 01:38:04 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-28 01:38:05 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 02:08:27 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 02:12:58 ET] odds_recorder.py: OK in 228s — SUMMARY: recorded 176 events (73 with odds), db total 330926 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 02:17:17 ET] dh_arbitrage.py: FAILED (exit 1) in 259s —   - <launched> pid=13040
+[2026-11-28 02:22:29 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 312s —   - navigating to "https://darkhorseodds.com/arbitrage", waiting until "domcontentloaded"
+[2026-11-28 02:23:23 ET] wide_builds.py: OK in 45s — wide_builds: 21 qualifying builds, 0 NEW (banked wide-builds-2026-11-28.md)
+[2026-11-28 02:28:50 ET] dh_game_middles.py: FAILED (exit 1) in 326s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-28 02:34:03 ET] dh_nhl_totals_middles.py: OK in 314s — DarkHorse check unavailable (account in use in another browser) — nhl-totals-middles skipped, no prices invented.
+[2026-11-28 02:40:02 ET] dh_key_number_middles.py: FAILED (exit 2) in 358s — key-number-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-28 02:44:30 ET] dh_basketball_key_middles.py: FAILED (exit 1) in 266s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-28 02:49:22 ET] hung_number.py: FAILED (exit 2) in 292s — write state. Re-run with --dump and send the dump file.
+[2026-11-28 02:49:54 ET] rlm.py: OK in 32s
+[2026-11-28 02:50:01 ET] leader_follower.py: OK in 7s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-28 02:50:06 ET] steam_side.py: OK in 5s — steam-side: 69 games, no new flags (silent).
+[2026-11-28 02:53:11 ET] dh_prop_middles.py: FAILED (exit 1) in 185s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-28 02:56:48 ET] dh_sog_middles.py: FAILED (exit 2) in 216s — sog-middles: Filters panel did not open — relying on the in-code market check.
+[2026-11-28 02:56:57 ET] dh_team_total_middles.py: OK in 9s — team-total-middles: 22 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 22.5/24.5 sits at -2.0c vs +EV.
+[2026-11-28 02:56:59 ET] nfl_first_score.py: OK in 2s — nfl-first-score: 0 new, 0 unverified, 167 total tallied.
+[2026-11-28 02:57:02 ET] nba_first_score.py: OK in 3s — nba-first-score: 0 new, 0 unverified, 268 total tallied.
+[2026-11-28 02:57:04 ET] nhl_first_goal.py: OK in 2s — nhl-first-goal: 0 new, 0 unverified, 406 total tallied.
+[2026-11-28 02:57:07 ET] ncaab_first_score.py: OK in 3s — ncaab-first-score: 2 new, 2 unverified, 1307 total tallied.
+[2026-11-28 02:57:09 ET] ncaaf_first_score.py: OK in 2s — ncaaf-first-score: 0 new, 0 unverified, 836 total tallied.
+[2026-11-28 02:57:10 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-28; skipping.
+[2026-11-28 02:57:11 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
+[2026-11-28 02:57:16 ET] podcast_transcribe.py: OK in 5s — SUMMARY: discover days=2 added=8 queued_total=83
+[2026-11-28 02:57:16 ET] podcast_transcribe.py: OK in 1s — SUMMARY: worker spawned (queued=83, limit=5)
+[2026-11-28 02:57:17 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 03:18:28 ET] scheduler started — mirroring Chet's cadence. Ctrl+C to stop.
+[2026-11-28 03:25:29 ET] odds_recorder.py: OK in 422s — SUMMARY: recorded 176 events (73 with odds), db total 331102 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 03:25:52 ET] dh_arbitrage.py: OK in 23s — ARBITRAGE: NCAAB Morehead St. Charleston Southern Today 7:00 PM / Today 7:00 PM / table / Alt Total Under 155.5 / Alt Total Over 155.5 / table | DraftKings | Be
+[2026-11-28 03:25:54 ET] wide_builds.py: OK in 2s — wide_builds: 21 qualifying builds, 0 NEW (banked wide-builds-2026-11-28.md)
+[2026-11-28 03:26:14 ET] dh_low_holds.py: OK in 19s — LOW-HOLDS: NFL TEN Titans JAX Jaguars Nov-29 1:00 PM / Nov-29 1:00 PM / table / 3rd Quarter Spread JAX Jaguars -2.5 / 3rd Quarter Spread TEN Titans +2.5 / table
+[2026-11-28 03:27:26 ET] dh_game_middles.py: OK in 73s — GAME MIDDLE: NCAAB Morehead St. Charleston Southern Today 7:00 PM / Today 7:00 PM / table / Alt Total Under 152.5 / Alt Total Over 152 / table | DraftKings | Be
+[2026-11-28 03:28:26 ET] dh_nhl_totals_middles.py: OK in 59s — NHL TOTAL MIDDLE: NHL NY Islanders PHI Flyers Today 7:30 PM / Today 7:30 PM / table / Total Over 5.5 / Total Under 6 / table bar_chart | HardRock | ProphetX — w
+[2026-11-28 03:31:19 ET] dh_key_number_middles.py: OK in 173s — key-number-middles: 311 basketball rows excluded (football-only rule).
+[2026-11-28 03:34:23 ET] dh_basketball_key_middles.py: OK in 184s — basketball-key-middles: no new basketball middles.
+[2026-11-28 03:34:23 ET] syncing to GitHub (regular 10-minute sync)
