@@ -34,3 +34,9 @@
 ## 2026-11-27T19:45:27-05:00 — pack move, never credited: Appalachian State @ South Alabama | 2026-11-27 spread (BetMGM, Kalshi)
 ## 2026-11-27T19:45:27-05:00 — pack move, never credited: North Dakota State @ San Jose State | 2026-11-27 total (BetMGM, DraftKings, FanDuel)
 ## 2026-11-27T19:45:28-05:00 — 85 games, 0 leads credited, 16 started games skipped
+## 2026-11-27T23:26:52-05:00 — pack move, never credited: Louisiana Tech @ Georgia Southern | 2026-11-27 spread (BetMGM, Caesars, DraftKings, Fanatics, Kalshi, bet365)
+## 2026-11-27T23:26:53-05:00 — pack move, never credited: Illinois @ Northwestern | 2026-11-27 spread (FanDuel, Kalshi, bet365)
+## 2026-11-27T23:26:53-05:00 — pack move, never credited: Illinois @ Northwestern | 2026-11-27 total (BetMGM, Caesars, DraftKings, Fanatics, Kalshi)
+## 2026-11-27T23:26:53-05:00 — no-follow: bet365 Marshall @ Louisiana-Monroe | 2026-11-27 spread (only 1 followed)
+## 2026-11-27T23:26:53-05:00 — no-follow: Kalshi San Diego State @ Washington State | 2026-11-27 spread (only 1 followed)
+## 2026-11-27T23:26:55-05:00 — 85 games, 0 leads credited, 17 started games skipped
