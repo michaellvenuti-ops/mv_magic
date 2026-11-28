@@ -65,3 +65,5 @@ NEW IN-PLAY CBB: PLAY: Under 140.5 -120 — Towson at Penn (PACE) | pace proj 13
 NEW IN-PLAY CBB: PLAY: Under 132.5 — Lehigh at Santa Barbara (PACE) | pace proj 112.0 (H1 56 x 2) vs live total 132.5 (gap -20.5, bar 5) | H1 56 | as of 19:44:19 ET
 ## 2026-11-27 19:52:20 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 148.5 -115 — West Virginia at North Carolina (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 19:52:19 ET
+## 2026-11-27 19:55:05 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 177.5 — UCF at Georgia (TRAILING FAVE) | pregame favorite Georgia trails at half (UCF leads); pace agrees (proj 178.0 vs live 177.5) — comeback-fave Over | H1 89 | as of 19:54:48 ET
