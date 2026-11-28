@@ -13018,3 +13018,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 23:38:55 ET] pace_board.py: OK in 8s — pace: already built for 2026-11-27; skipping.
 [2026-11-27 23:39:26 ET] nba_overs_pregame.py: OK in 31s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-27 23:39:27 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 00:09:50 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 00:27:17 ET] odds_recorder.py: OK in 1003s — SUMMARY: recorded 176 events (73 with odds), db total 330750 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 00:32:56 ET] dh_arbitrage.py: FAILED (exit 2) in 336s — arbitrage: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-28 00:35:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 2) in 123s — kalshi-poly-arb: zero rows parsed from DarkHorse — raw page dumped to None. Send the dump back for a parser patch. No state written, no prices invented.
+[2026-11-28 00:35:12 ET] wide_builds.py: OK in 9s — NEW BUILD: NCAAB Pacific UC Davis Today 8:00 PM — Total — Over 138 ProphetX +104 ($97) / Under 138.5 Bet365 -110 ($103) — win+push at 138 — push +$93.64, miss -
+[2026-11-28 00:35:13 ET] syncing to GitHub (wide-builds banked new builds)
