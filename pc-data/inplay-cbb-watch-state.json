@@ -813,7 +813,8 @@
    "spread": 5.5,
    "fav_team": "North Texas",
    "dog_team": "N Dakota St",
-   "pregame_total": 142.5
+   "pregame_total": 142.5,
+   "final": true
   },
   "401922264": {
    "matchup": "Idaho at Washington St",
@@ -826,7 +827,8 @@
    "pregame_total": 148.5,
    "alerted_at": "2026-11-27T20:53:02",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 137.5 -110 \u2014 Idaho at Washington St (PACE) | pace proj 120.0 (H1 60 x 2) vs live total 137.5 (gap -17.5, bar 5) | H1 60 | as of 20:53:01 ET"
+   "alert_detail": "PLAY: Under 137.5 -110 \u2014 Idaho at Washington St (PACE) | pace proj 120.0 (H1 60 x 2) vs live total 137.5 (gap -17.5, bar 5) | H1 60 | as of 20:53:01 ET",
+   "final": true
   },
   "401920737": {
    "matchup": "Northeastern at Northwestern",
@@ -864,7 +866,8 @@
    "pregame_total": 168.5,
    "alerted_at": "2026-11-27T21:24:51",
    "alert_rule": "2ND BITE",
-   "alert_detail": "PLAY: Over 182.5 -120 \u2014 Miami at Alabama (2ND BITE) | 1H total 92 cleared implied 1H line 84.25 by +7.8; pace proj 184.0 vs live total 182.5 -- take the Over again at the half | H1 92 | as of 21:24:48 ET"
+   "alert_detail": "PLAY: Over 182.5 -120 \u2014 Miami at Alabama (2ND BITE) | 1H total 92 cleared implied 1H line 84.25 by +7.8; pace proj 184.0 vs live total 182.5 -- take the Over again at the half | H1 92 | as of 21:24:48 ET",
+   "final": true
   },
   "401920534": {
    "matchup": "TBD at TBD",
@@ -877,7 +880,8 @@
    "pregame_total": 149.5,
    "alerted_at": "2026-11-27T21:59:10",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 150.5 \u2014 Tennessee at Louisville (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 150.5 (gap -14.5, bar 5) | H1 68 | as of 21:59:09 ET"
+   "alert_detail": "PLAY: Under 150.5 \u2014 Tennessee at Louisville (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 150.5 (gap -14.5, bar 5) | H1 68 | as of 21:59:09 ET",
+   "final": true
   },
   "401919033": {
    "matchup": "Wichita St at Kentucky",
@@ -895,12 +899,15 @@
   "401926783": {
    "matchup": "Jax State at Omaha",
    "date": "2026-11-28",
-   "alerted": false,
+   "alerted": true,
    "fav": "away",
    "spread": 4.5,
-   "fav_team": "Jax State",
-   "dog_team": "Omaha",
-   "pregame_total": 138.5
+   "fav_team": "Omaha",
+   "dog_team": "Jax State",
+   "pregame_total": 138.5,
+   "alerted_at": "2026-11-27T23:24:08",
+   "alert_rule": "TRAILING FAVE",
+   "alert_detail": "PLAY: Over 140.5 \u2014 Omaha at Jax State (TRAILING FAVE) | pregame favorite Omaha trails at half (Jax State leads); pace is slow (proj 132.0 vs live 140.5) \u2014 the comeback-fave rule bets Over anyway | H1 66 | as of 23:24:05 ET"
   },
   "401920544": {
    "matchup": "Creighton at TBD",
@@ -917,10 +924,10 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 8.5,
+   "spread": 9.5,
    "fav_team": "Texas Tech",
    "dog_team": "San Diego St",
-   "pregame_total": 141.5
+   "pregame_total": 142.5
   }
  }
 }
