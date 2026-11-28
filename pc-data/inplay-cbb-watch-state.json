@@ -768,7 +768,8 @@
    "pregame_total": 144.5,
    "alerted_at": "2026-11-27T20:28:04",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 128.5 -105 \u2014 Oakland at Houston (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 128.5 (gap -12.5, bar 5) | H1 58 | as of 20:28:03 ET"
+   "alert_detail": "PLAY: Under 128.5 -105 \u2014 Oakland at Houston (PACE) | pace proj 116.0 (H1 58 x 2) vs live total 128.5 (gap -12.5, bar 5) | H1 58 | as of 20:28:03 ET",
+   "final": true
   },
   "401929289": {
    "matchup": "Penn State at Mississippi St",
@@ -781,12 +782,14 @@
    "pregame_total": 156.5,
    "alerted_at": "2026-11-27T20:28:07",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 146.5 -110 \u2014 Penn State at Mississippi St (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 146.5 (gap -16.5, bar 5) | H1 65 | as of 20:28:03 ET"
+   "alert_detail": "PLAY: Under 146.5 -110 \u2014 Penn State at Mississippi St (PACE) | pace proj 130.0 (H1 65 x 2) vs live total 146.5 (gap -16.5, bar 5) | H1 65 | as of 20:28:03 ET",
+   "final": true
   },
   "401929381": {
    "matchup": "Lane College at Little Rock",
    "date": "2026-11-28",
-   "alerted": false
+   "alerted": false,
+   "final": true
   },
   "401928624": {
    "matchup": "Missouri St at Oral Roberts",
@@ -845,7 +848,8 @@
    "spread": 6.5,
    "fav_team": "Pacific",
    "dog_team": "UC Davis",
-   "pregame_total": 137.5
+   "pregame_total": 137.5,
+   "final": true
   },
   "401920543": {
    "matchup": "TBD at TBD",
@@ -873,12 +877,15 @@
   "401919033": {
    "matchup": "Wichita St at Kentucky",
    "date": "2026-11-28",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 4.5,
    "fav_team": "Kentucky",
    "dog_team": "Wichita St",
-   "pregame_total": 157.5
+   "pregame_total": 157.5,
+   "alerted_at": "2026-11-27T21:58:06",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 138.5 -115 \u2014 Wichita St at Kentucky (PACE) | pace proj 110.0 (H1 55 x 2) vs live total 138.5 (gap -28.5, bar 5) | H1 55 | as of 21:58:04 ET"
   },
   "401926783": {
    "matchup": "Jax State at Omaha",
