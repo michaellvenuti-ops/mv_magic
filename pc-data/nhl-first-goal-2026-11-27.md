@@ -13,3 +13,7 @@
 - 2026-11-27: Los Angeles Kings @ Anaheim Ducks — first goal: Anaheim Ducks (EV, Stian Solberg, 5:40 in); lead changes 1; final 5-3
 - 2026-11-27: Vegas Golden Knights @ San Jose Sharks — first goal: San Jose Sharks (EV, Michael Misa, 24:09 in); lead changes 0; final 1-4
 - 2026-11-27: New York Rangers @ Chicago Blackhawks — first goal: Chicago Blackhawks (PP, Andrew Mangiapane, 15:37 in); lead changes 0; final 1-2
+## 2026-11-27T23:37:02-05:00 -- NHL FIRST GOAL (PC): 3 new final(s) tallied; season 406 games through 2026-11-27
+- 2026-11-27: Winnipeg Jets @ New York Islanders — first goal: Winnipeg Jets (EV, Kyle Connor, 2:56 in); lead changes 0; final 3-1
+- 2026-11-27: Pittsburgh Penguins @ Buffalo Sabres — first goal: Buffalo Sabres (EV, Jiri Kulich, 19:29 in); lead changes 1; final 6-3
+- 2026-11-27: Seattle Kraken @ Edmonton Oilers — first goal: Seattle Kraken (EV, Jordan Eberle, 8:39 in); lead changes 2; final 4-2
