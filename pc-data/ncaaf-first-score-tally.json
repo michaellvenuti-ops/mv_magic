@@ -11524,32 +11524,32 @@
    "winner": "Texas Tech Red Raiders"
   },
   {
-   "date": "2026-11-27",
    "away": "Air Force Falcons",
-   "home": "New Mexico Lobos",
+   "date": "2026-11-27",
+   "final": "19-42",
    "first": "Air Force Falcons",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 287,
-   "winner": "New Mexico Lobos",
-   "seq": "7-0>7-7>7-14>10-14>10-21>13-21>19-21>19-28>19-35>19-42",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "New Mexico Lobos",
    "lead_changes": 1,
+   "seq": "7-0>7-7>7-14>10-14>10-21>13-21>19-21>19-28>19-35>19-42",
    "ties": 1,
-   "final": "19-42"
+   "winner": "New Mexico Lobos"
   },
   {
-   "date": "2026-11-27",
    "away": "App State Mountaineers",
-   "home": "South Alabama Jaguars",
+   "date": "2026-11-27",
+   "final": "13-20",
    "first": "South Alabama Jaguars",
-   "first_side": "home",
-   "first_kind": "TD",
    "first_elapsed_sec": 412,
-   "winner": "South Alabama Jaguars",
-   "seq": "0-7>0-10>7-10>10-10>13-10>13-13>13-20",
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "South Alabama Jaguars",
    "lead_changes": 2,
+   "seq": "0-7>0-10>7-10>10-10>13-10>13-13>13-20",
    "ties": 2,
-   "final": "13-20"
+   "winner": "South Alabama Jaguars"
   },
   {
    "away": "Buffalo Bulls",
@@ -11566,18 +11566,32 @@
    "winner": "Buffalo Bulls"
   },
   {
-   "date": "2026-11-27",
    "away": "Florida Gators",
-   "home": "Florida State Seminoles",
+   "date": "2026-11-27",
+   "final": "26-10",
    "first": "Florida Gators",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 799,
-   "winner": "Florida Gators",
-   "seq": "7-0>7-3>10-3>17-3>17-10>20-10>23-10>26-10",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "Florida State Seminoles",
    "lead_changes": 0,
+   "seq": "7-0>7-3>10-3>17-3>17-10>20-10>23-10>26-10",
    "ties": 0,
-   "final": "26-10"
+   "winner": "Florida Gators"
+  },
+  {
+   "date": "2026-11-27",
+   "away": "Minnesota Golden Gophers",
+   "home": "Wisconsin Badgers",
+   "first": "Minnesota Golden Gophers",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 337,
+   "winner": "Wisconsin Badgers",
+   "seq": "3-0>3-7>3-14>3-21>5-21>5-28",
+   "lead_changes": 1,
+   "ties": 0,
+   "final": "5-28"
   },
   {
    "away": "Mississippi State Bulldogs",
@@ -11608,32 +11622,46 @@
    "winner": "Iowa Hawkeyes"
   },
   {
-   "date": "2026-11-27",
    "away": "North Dakota State Bison",
-   "home": "San Jos\u00e9 State Spartans",
+   "date": "2026-11-27",
+   "final": "38-31",
    "first": "North Dakota State Bison",
-   "first_side": "away",
-   "first_kind": "TD",
    "first_elapsed_sec": 200,
-   "winner": "North Dakota State Bison",
-   "seq": "7-0>7-7>14-7>21-7>24-7>24-14>31-14>31-17>31-24>38-24>38-31",
+   "first_kind": "TD",
+   "first_side": "away",
+   "home": "San Jos\u00e9 State Spartans",
    "lead_changes": 0,
+   "seq": "7-0>7-7>14-7>21-7>24-7>24-14>31-14>31-17>31-24>38-24>38-31",
    "ties": 1,
-   "final": "38-31"
+   "winner": "North Dakota State Bison"
+  },
+  {
+   "away": "Temple Owls",
+   "date": "2026-11-27",
+   "final": "35-31",
+   "first": "Memphis Tigers",
+   "first_elapsed_sec": 418,
+   "first_kind": "TD",
+   "first_side": "home",
+   "home": "Memphis Tigers",
+   "lead_changes": 1,
+   "seq": "0-7>7-7>7-14>7-17>7-24>14-24>14-31>21-31>28-31>35-31",
+   "ties": 1,
+   "winner": "Temple Owls"
   },
   {
    "date": "2026-11-27",
-   "away": "Temple Owls",
-   "home": "Memphis Tigers",
-   "first": "Memphis Tigers",
-   "first_side": "home",
-   "first_kind": "TD",
-   "first_elapsed_sec": 418,
-   "winner": "Temple Owls",
-   "seq": "0-7>7-7>7-14>7-17>7-24>14-24>14-31>21-31>28-31>35-31",
-   "lead_changes": 1,
-   "ties": 1,
-   "final": "35-31"
+   "away": "Texas Longhorns",
+   "home": "Texas A&M Aggies",
+   "first": "Texas Longhorns",
+   "first_side": "away",
+   "first_kind": "FG",
+   "first_elapsed_sec": 311,
+   "winner": "Texas Longhorns",
+   "seq": "3-0>10-0>10-3>13-3>13-6>16-6",
+   "lead_changes": 0,
+   "ties": 0,
+   "final": "16-6"
   },
   {
    "away": "Toledo Rockets",
@@ -12066,18 +12094,18 @@
    "won_by_one_when_first_pct": null
   },
   "Minnesota Golden Gophers": {
-   "gp": 11,
-   "scored_first": 6,
+   "gp": 12,
+   "scored_first": 7,
    "kinds": {
-    "FG": 2,
+    "FG": 3,
     "TD": 4,
     "Safety": 0
    },
    "won_when_first": 5,
    "won_when_not_first": 1,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 54.5,
-   "win_pct_when_first": 83.3,
+   "scored_first_pct": 58.3,
+   "win_pct_when_first": 71.4,
    "win_pct_when_not_first": 20.0,
    "won_by_one_when_first_pct": 0.0
   },
@@ -13426,7 +13454,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Texas A&M Aggies": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 8,
    "kinds": {
     "FG": 2,
@@ -13436,7 +13464,7 @@
    "won_when_first": 4,
    "won_when_not_first": 0,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 72.7,
+   "scored_first_pct": 66.7,
    "win_pct_when_first": 50.0,
    "win_pct_when_not_first": 0.0,
    "won_by_one_when_first_pct": 0.0
@@ -14130,20 +14158,20 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Texas Longhorns": {
-   "gp": 11,
-   "scored_first": 9,
+   "gp": 12,
+   "scored_first": 10,
    "kinds": {
-    "FG": 1,
+    "FG": 2,
     "TD": 8,
     "Safety": 0
    },
-   "won_when_first": 7,
+   "won_when_first": 8,
    "won_when_not_first": 2,
    "won_by_one_when_first": 1,
-   "scored_first_pct": 81.8,
-   "win_pct_when_first": 77.8,
+   "scored_first_pct": 83.3,
+   "win_pct_when_first": 80.0,
    "win_pct_when_not_first": 100.0,
-   "won_by_one_when_first_pct": 11.1
+   "won_by_one_when_first_pct": 10.0
   },
   "The Citadel Bulldogs": {
    "gp": 2,
@@ -14594,7 +14622,7 @@
    "won_by_one_when_first_pct": 0.0
   },
   "Wisconsin Badgers": {
-   "gp": 11,
+   "gp": 12,
    "scored_first": 7,
    "kinds": {
     "FG": 2,
@@ -14602,11 +14630,11 @@
     "Safety": 0
    },
    "won_when_first": 5,
-   "won_when_not_first": 2,
+   "won_when_not_first": 3,
    "won_by_one_when_first": 0,
-   "scored_first_pct": 63.6,
+   "scored_first_pct": 58.3,
    "win_pct_when_first": 71.4,
-   "win_pct_when_not_first": 50.0,
+   "win_pct_when_not_first": 60.0,
    "won_by_one_when_first_pct": 0.0
   },
   "Notre Dame Fighting Irish": {
@@ -15475,19 +15503,19 @@
   }
  },
  "league": {
-  "games": 833,
+  "games": 835,
   "home_scored_first": 492,
-  "first_team_won": 585,
+  "first_team_won": 586,
   "first_team_won_by_one": 12,
   "first_team_won_by_one_pct": 1.4,
   "kinds": {
-   "FG": 230,
+   "FG": 232,
    "TD": 601,
    "Safety": 2
   },
   "avg_lead_changes": 0.99,
   "median_first_score_sec": 342,
-  "home_scored_first_pct": 59.1,
+  "home_scored_first_pct": 58.9,
   "first_team_win_pct": 70.2
  },
  "lead_change_team_avgs": {
@@ -15617,9 +15645,9 @@
    "avg_per_game": 0.0
   },
   "Minnesota Golden Gophers": {
-   "games": 11,
-   "lead_changes": 6,
-   "avg_per_game": 0.55
+   "games": 12,
+   "lead_changes": 7,
+   "avg_per_game": 0.58
   },
   "Idaho Vandals": {
    "games": 1,
@@ -16042,9 +16070,9 @@
    "avg_per_game": 1.27
   },
   "Texas A&M Aggies": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 12,
-   "avg_per_game": 1.09
+   "avg_per_game": 1.0
   },
   "Morgan State Bears": {
    "games": 1,
@@ -16262,9 +16290,9 @@
    "avg_per_game": 1.36
   },
   "Texas Longhorns": {
-   "games": 11,
+   "games": 12,
    "lead_changes": 6,
-   "avg_per_game": 0.55
+   "avg_per_game": 0.5
   },
   "The Citadel Bulldogs": {
    "games": 2,
@@ -16407,9 +16435,9 @@
    "avg_per_game": 1.0
   },
   "Wisconsin Badgers": {
-   "games": 11,
-   "lead_changes": 8,
-   "avg_per_game": 0.73
+   "games": 12,
+   "lead_changes": 9,
+   "avg_per_game": 0.75
   },
   "Notre Dame Fighting Irish": {
    "games": 11,
