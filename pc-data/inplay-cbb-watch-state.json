@@ -577,7 +577,8 @@
    "pregame_total": 160.5,
    "alerted_at": "2026-11-27T18:15:21",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 148.5 -115 \u2014 Texas at Saint Mary's (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 148.5 (gap -24.5, bar 5) | H1 62 | as of 18:15:18 ET"
+   "alert_detail": "PLAY: Under 148.5 -115 \u2014 Texas at Saint Mary's (PACE) | pace proj 124.0 (H1 62 x 2) vs live total 148.5 (gap -24.5, bar 5) | H1 62 | as of 18:15:18 ET",
+   "final": true
   },
   "401909789": {
    "matchup": "Villanova at Kansas",
@@ -632,7 +633,8 @@
    "pregame_total": 157.5,
    "alerted_at": "2026-11-27T18:36:03",
    "alert_rule": "TRAILING FAVE",
-   "alert_detail": "PLAY: Over 148.5 \u2014 Drake at Boise St (TRAILING FAVE) | pregame favorite Boise St trails at half (Drake leads); pace is slow (proj 132.0 vs live 148.5) \u2014 the comeback-fave rule bets Over anyway | H1 66 | as of 18:36:02 ET"
+   "alert_detail": "PLAY: Over 148.5 \u2014 Drake at Boise St (TRAILING FAVE) | pregame favorite Boise St trails at half (Drake leads); pace is slow (proj 132.0 vs live 148.5) \u2014 the comeback-fave rule bets Over anyway | H1 66 | as of 18:36:02 ET",
+   "final": true
   },
   "401920541": {
    "matchup": "Michigan at Kansas St",
@@ -645,7 +647,8 @@
    "pregame_total": 165.5,
    "alerted_at": "2026-11-27T18:32:03",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 163.5 \u2014 Michigan at Kansas St (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 163.5 (gap -9.5, bar 5) | H1 77 | as of 18:32:02 ET"
+   "alert_detail": "PLAY: Under 163.5 \u2014 Michigan at Kansas St (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 163.5 (gap -9.5, bar 5) | H1 77 | as of 18:32:02 ET",
+   "final": true
   },
   "401913531": {
    "matchup": "Western KY at Illinois",
@@ -704,12 +707,15 @@
   "401926756": {
    "matchup": "Lehigh at Santa Barbara",
    "date": "2026-11-28",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 13.5,
    "fav_team": "Santa Barbara",
    "dog_team": "Lehigh",
-   "pregame_total": 144.5
+   "pregame_total": 144.5,
+   "alerted_at": "2026-11-27T19:44:20",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 132.5 \u2014 Lehigh at Santa Barbara (PACE) | pace proj 112.0 (H1 56 x 2) vs live total 132.5 (gap -20.5, bar 5) | H1 56 | as of 19:44:19 ET"
   },
   "401918980": {
    "matchup": "NC Wesleyan at East Carolina",
@@ -816,10 +822,10 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "away",
-   "spread": 1.5,
+   "spread": 2.5,
    "fav_team": "Miami",
    "dog_team": "Alabama",
-   "pregame_total": 170.5
+   "pregame_total": 168.5
   },
   "401920534": {
    "matchup": "TBD at TBD",
