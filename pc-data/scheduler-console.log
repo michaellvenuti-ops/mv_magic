@@ -12975,3 +12975,21 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 20:44:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 495s —   - <launched> pid=11616
 [2026-11-27 20:44:08 ET] wide_builds.py: OK in 6s — NEW BUILD: NFL NO Saints CIN Bengals Nov-29 1:00 PM — Total — Over 49.5 ProphetX +117 ($91) / Under 50 HardRock -125 ($109) — win+push at 50 — push +$106.47, mi
 [2026-11-27 20:44:08 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-27 21:14:26 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 21:19:30 ET] dh_low_holds.py: FAILED (exit 1) in 298s —   - <launched> pid=12460
+[2026-11-27 21:32:57 ET] dh_game_middles.py: FAILED (exit 1) in 803s —   - navigating to "https://darkhorseodds.com/middles", waiting until "domcontentloaded"
+[2026-11-27 21:37:04 ET] dh_nhl_totals_middles.py: FAILED (exit 1) in 245s —   - <launched> pid=7724
+[2026-11-27 21:41:07 ET] dh_key_number_middles.py: FAILED (exit 1) in 244s —   - <launched> pid=13124
+[2026-11-27 21:46:09 ET] dh_basketball_key_middles.py: FAILED (exit 2) in 301s — basketball-key-middles: zero middles parsed — send a dump back. No state written.
+[2026-11-27 21:46:51 ET] steam_side.py: OK in 42s — STEAM-SIDE FLAG: FBS Louisiana Tech @ Georgia Southern | 2026-11-27 | FanDuel | Louisiana Tech spread -2.5 (median -2.5 -> -1.5)
+[2026-11-27 21:50:46 ET] dh_prop_middles.py: FAILED (exit 1) in 235s —   - <launched> pid=7228
+[2026-11-27 21:54:47 ET] dh_sog_middles.py: FAILED (exit 1) in 240s —   - <launched> pid=12464
+[2026-11-27 21:55:17 ET] dh_team_total_middles.py: OK in 30s — team-total-middles: 22 team-games with two-sided ladders, 0 qualifying straddles, 0 new, 0 changed. Best keyed straddle Seattle 22.5/24.5 sits at -3.0c vs +EV.
+[2026-11-27 21:55:21 ET] nfl_first_score.py: OK in 4s — nfl-first-score: 0 new, 0 unverified, 167 total tallied.
+[2026-11-27 21:55:24 ET] nba_first_score.py: OK in 3s — nba-first-score: 1 new, 0 unverified, 258 total tallied.
+[2026-11-27 21:55:27 ET] nhl_first_goal.py: OK in 3s — nhl-first-goal: 4 new, 0 unverified, 403 total tallied.
+[2026-11-27 21:55:35 ET] ncaab_first_score.py: OK in 7s — ncaab-first-score: 23 new, 2 unverified, 1297 total tallied.
+[2026-11-27 21:55:38 ET] ncaaf_first_score.py: OK in 3s — ncaaf-first-score: 5 new, 0 unverified, 833 total tallied.
+[2026-11-27 21:55:39 ET] pace_board.py: OK in 1s — pace: already built for 2026-11-27; skipping.
+[2026-11-27 21:55:40 ET] nba_overs_pregame.py: OK in 2s — nba-overs-pregame: no games tipping within 90 min -- exit.
+[2026-11-27 21:55:41 ET] syncing to GitHub (regular 10-minute sync)
