@@ -63,3 +63,5 @@ NEW IN-PLAY CBB: PLAY: Over 193.5 — Western KY at Illinois (2ND BITE) | 1H tot
 NEW IN-PLAY CBB: PLAY: Under 140.5 -120 — Towson at Penn (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 140.5 (gap -8.5, bar 5) | H1 66 | as of 19:34:02 ET
 ## 2026-11-27 19:44:20 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 132.5 — Lehigh at Santa Barbara (PACE) | pace proj 112.0 (H1 56 x 2) vs live total 132.5 (gap -20.5, bar 5) | H1 56 | as of 19:44:19 ET
+## 2026-11-27 19:52:20 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 148.5 -115 — West Virginia at North Carolina (PACE) | pace proj 142.0 (H1 71 x 2) vs live total 148.5 (gap -6.5, bar 5) | H1 71 | as of 19:52:19 ET
