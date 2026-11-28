@@ -13078,3 +13078,8 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-28 03:31:19 ET] dh_key_number_middles.py: OK in 173s — key-number-middles: 311 basketball rows excluded (football-only rule).
 [2026-11-28 03:34:23 ET] dh_basketball_key_middles.py: OK in 184s — basketball-key-middles: no new basketball middles.
 [2026-11-28 03:34:23 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 04:04:23 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 04:05:32 ET] odds_recorder.py: OK in 39s — SUMMARY: recorded 176 events (73 with odds), db total 331278 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 04:06:03 ET] dh_kalshi_poly_arb.py: OK in 31s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-28 04:06:06 ET] wide_builds.py: OK in 2s — NEW BUILD: NHL MTL Canadiens VGS Golden Knights Today 4:00 PM — Total — Over 6 BetMGM -130 ($103) / Under 6.5 DraftKings -115 ($97) — win+push at 6 — push +$84.
+[2026-11-28 04:06:06 ET] syncing to GitHub (wide-builds banked new builds)
