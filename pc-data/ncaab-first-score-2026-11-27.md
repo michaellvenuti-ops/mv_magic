@@ -31,3 +31,28 @@
 - 2026-11-27: Maryland Terrapins @ Oregon Ducks — first: Oregon Ducks (3PT, 0:16 in); lead changes 2; final 73-88
 - 2026-11-27: UMBC Retrievers @ George Washington Revolutionaries — first: George Washington Revolutionaries (3PT, 0:17 in); lead changes 0; final 51-91
 - note: 1 final(s) UNVERIFIED this run — left out, retried next run.
+## 2026-11-27T21:55:34-05:00 -- NCAAB FIRST SCORE (PC): 23 new final(s) tallied; season 1297 games through 2026-11-27
+- 2026-11-27: Penn State Nittany Lions @ Mississippi State Bulldogs — first: Penn State Nittany Lions (2PT, 0:58 in); lead changes 6; final 68-63
+- 2026-11-27: Lane College Dragons @ Little Rock Trojans — first: Lane College Dragons (3PT, 0:46 in); lead changes 5; final 58-88
+- 2026-11-27: Pacific Tigers @ UC Davis Aggies — first: UC Davis Aggies (2PT, 0:19 in); lead changes 1; final 78-61
+- 2026-11-27: Oakland Golden Grizzlies @ Houston Cougars — first: Houston Cougars (3PT, 0:24 in); lead changes 0; final 46-77
+- 2026-11-27: Western Kentucky Hilltoppers @ Illinois Fighting Illini — first: Western Kentucky Hilltoppers (3PT, 0:13 in); lead changes 5; final 76-116
+- 2026-11-27: Texas Longhorns @ Saint Mary's Gaels — first: Texas Longhorns (2PT, 0:28 in); lead changes 4; final 76-73
+- 2026-11-27: Villanova Wildcats @ Kansas Jayhawks — first: Kansas Jayhawks (2PT, 0:10 in); lead changes 6; final 50-65
+- 2026-11-27: Bowling Green Falcons @ Indiana Hoosiers — first: Indiana Hoosiers (2PT, 0:16 in); lead changes 4; final 57-93
+- 2026-11-27: Arkansas-Pine Bluff Golden Lions @ Missouri Tigers — first: Missouri Tigers (3PT, 0:20 in); lead changes 0; final 61-97
+- 2026-11-27: Radford Highlanders @ American University Eagles — first: Radford Highlanders (2PT, 1:18 in); lead changes 9; final 62-64
+- 2026-11-27: Cincinnati Bearcats @ Boston College Eagles — first: Cincinnati Bearcats (3PT, 0:38 in); lead changes 10; final 70-59
+- 2026-11-27: Niagara Purple Eagles @ Lafayette Leopards — first: Lafayette Leopards (2PT, 0:38 in); lead changes 0; final 54-82
+- 2026-11-27: Marquette Golden Eagles @ Texas A&M Aggies — first: Marquette Golden Eagles (2PT, 0:32 in); lead changes 3; final 76-78
+- 2026-11-27: Old Dominion Monarchs @ Virginia Tech Hokies — first: Virginia Tech Hokies (2PT, 0:30 in); lead changes 10; final 61-70
+- 2026-11-27: Drake Bulldogs @ Boise State Broncos — first: Drake Bulldogs (2PT, 0:13 in); lead changes 13; final 71-88
+- 2026-11-27: Michigan Wolverines @ Kansas State Wildcats — first: Michigan Wolverines (3PT, 0:34 in); lead changes 0; final 98-69
+- 2026-11-27: Southern Wesleyan Warriors @ South Carolina Upstate Spartans — first: Southern Wesleyan Warriors (3PT, 0:25 in); lead changes 5; final 78-87
+- 2026-11-27: Towson Tigers @ Pennsylvania Quakers — first: Pennsylvania Quakers (2PT, 0:39 in); lead changes 1; final 72-61
+- 2026-11-27: UCF Knights @ Georgia Bulldogs — first: Georgia Bulldogs (2PT, 0:36 in); lead changes 1; final 88-76
+- 2026-11-27: Lehigh Mountain Hawks @ UC Santa Barbara Gauchos — first: UC Santa Barbara Gauchos (3PT, 1:16 in); lead changes 0; final 43-75
+- 2026-11-27: North Carolina Wesleyan Battling Bishops @ East Carolina Pirates — first: East Carolina Pirates (2PT, 0:13 in); lead changes 0; final 43-92
+- 2026-11-27: West Virginia Mountaineers @ North Carolina Tar Heels — first: West Virginia Mountaineers (2PT, 0:27 in); lead changes 0; final 72-59
+- 2026-11-27: Charleston Southern Buccaneers @ East Tennessee State Buccaneers — first: Charleston Southern Buccaneers (3PT, 0:13 in); lead changes 0; final 76-67
+- note: 2 final(s) UNVERIFIED this run — left out, retried next run.
