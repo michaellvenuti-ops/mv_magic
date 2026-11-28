@@ -12969,3 +12969,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-27 19:45:31 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS North Dakota State @ San Jose State | 2026-11-27 | Caesars | Under total 69.5 (median 58.5 -> 40.5)
 [2026-11-27 19:54:38 ET] dh_prop_middles.py: OK in 546s — PROP MIDDLE CLEAN : NFL WAS Commanders ARI Cardinals Nov-29 4:25 PM / Nov-29 4:25 PM / table / Receiving Yards T. McBride Under 60.5 / Alt Recv Yards T. McBride
 [2026-11-27 19:54:40 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-27 20:24:43 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 20:29:41 ET] odds_recorder.py: OK in 266s — SUMMARY: recorded 176 events (86 with odds), db total 330398 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-27 20:35:43 ET] dh_arbitrage.py: FAILED (exit 1) in 361s —   - <launched> pid=13012
+[2026-11-27 20:44:00 ET] dh_kalshi_poly_arb.py: FAILED (exit 1) in 495s —   - <launched> pid=11616
+[2026-11-27 20:44:08 ET] wide_builds.py: OK in 6s — NEW BUILD: NFL NO Saints CIN Bengals Nov-29 1:00 PM — Total — Over 49.5 ProphetX +117 ($91) / Under 50 HardRock -125 ($109) — win+push at 50 — push +$106.47, mi
+[2026-11-27 20:44:08 ET] syncing to GitHub (wide-builds banked new builds)
