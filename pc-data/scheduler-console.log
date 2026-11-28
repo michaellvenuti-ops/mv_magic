@@ -13127,3 +13127,9 @@ zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New
 [2026-11-28 06:00:25 ET] pace_board.py: OK in 0s — pace: already built for 2026-11-28; skipping.
 [2026-11-28 06:00:26 ET] nba_overs_pregame.py: OK in 1s — nba-overs-pregame: outside 12:00-23:30 ET gate -- exit.
 [2026-11-28 06:00:26 ET] syncing to GitHub (regular 10-minute sync)
+[2026-11-28 06:30:26 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-28 06:31:26 ET] odds_recorder.py: OK in 29s — SUMMARY: recorded 176 events (73 with odds), db total 331630 snapshots / 1988 events, feeds ok 6 fail 0
+[2026-11-28 06:31:58 ET] dh_arbitrage.py: OK in 32s — ARBITRAGE: NBA PHI 76ers HOU Rockets Today 8:45 PM / Today 8:45 PM / table / Assists K. Caldwell-Pope Under 2.5 / Assists K. Caldwell-Pope Over 2.5 / table | Dr
+[2026-11-28 06:32:18 ET] dh_kalshi_poly_arb.py: OK in 20s — kalshi-poly-arb: no new qualifying pairs (silent).
+[2026-11-28 06:32:20 ET] wide_builds.py: OK in 2s — NEW BUILD: NBA IND Pacers CHI Bulls Today 8:15 PM — Total — Over 232 ProphetX -125 ($110) / Under 232.5 FanDuel +118 ($90) — win+push at 232 — push +$106.20, mi
+[2026-11-28 06:32:20 ET] syncing to GitHub (wide-builds banked new builds)
