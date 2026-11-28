@@ -83,3 +83,5 @@ NEW IN-PLAY CBB: PLAY: Over 182.5 -120 — Miami at Alabama (2ND BITE) | 1H tota
 NEW IN-PLAY CBB: PLAY: Under 138.5 -115 — Wichita St at Kentucky (PACE) | pace proj 110.0 (H1 55 x 2) vs live total 138.5 (gap -28.5, bar 5) | H1 55 | as of 21:58:04 ET
 ## 2026-11-27 21:59:10 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 150.5 — Tennessee at Louisville (PACE) | pace proj 136.0 (H1 68 x 2) vs live total 150.5 (gap -14.5, bar 5) | H1 68 | as of 21:59:09 ET
+## 2026-11-27 23:24:07 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Over 140.5 — Omaha at Jax State (TRAILING FAVE) | pregame favorite Omaha trails at half (Jax State leads); pace is slow (proj 132.0 vs live 140.5) — the comeback-fave rule bets Over anyway | H1 66 | as of 23:24:05 ET
