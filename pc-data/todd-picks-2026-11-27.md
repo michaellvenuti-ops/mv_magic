@@ -51,3 +51,5 @@ NEW TODD PLAY: Total 146 -110 :: raw: "@everyone ov146 -110 Etsu cbb (at the hal
 NEW TODD PLAY: Spread +5.5 -125 :: raw: "@everyone Georgia +5.5 -125 cbb (at the half" :: msg 1576039282630725855 :: posted 2026-11-28T00:57:26.373Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 20:24:05 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 23 -122 :: raw: "@everyone wisc cfb team tot ov23 -122" :: msg 1576045920930504926 :: posted 2026-11-28T01:23:49.067Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 20:34:24 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 147.5 -120 :: raw: "@everyone un147.5 Penn st -120 cbb (at the half" :: msg 1576048266691346564 :: posted 2026-11-28T01:33:08.340Z :: Novig: https://app.novig.us/AppEntry
