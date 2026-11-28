@@ -47,3 +47,5 @@ NEW TODD PLAY: 1st Half Total 71.5 -115 :: raw: "@everyone ov71.5 -115 1h Penn c
 NEW TODD PLAY: Moneyline -122 :: raw: "@everyone east Tenn state -122 ml cbb" :: msg 1576033954555760712 :: posted 2026-11-28T00:36:16.061Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 19:50:23 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 146 -110 :: raw: "@everyone ov146 -110 Etsu cbb (at the half" :: msg 1576037120479592461 :: posted 2026-11-28T00:48:50.876Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 19:58:31 ET — 1 NEW Todd play
+NEW TODD PLAY: Spread +5.5 -125 :: raw: "@everyone Georgia +5.5 -125 cbb (at the half" :: msg 1576039282630725855 :: posted 2026-11-28T00:57:26.373Z :: Novig: https://app.novig.us/AppEntry
