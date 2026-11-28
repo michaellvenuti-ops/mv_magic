@@ -12,3 +12,6 @@
 - 2026-11-27: Temple Owls @ Memphis Tigers — first: Memphis Tigers (TD, 6:58 in); lead changes 1; final 35-31
 - 2026-11-27: North Dakota State Bison @ San José State Spartans — first: North Dakota State Bison (TD, 3:20 in); lead changes 0; final 38-31
 - 2026-11-27: Air Force Falcons @ New Mexico Lobos — first: Air Force Falcons (TD, 4:47 in); lead changes 1; final 19-42
+## 2026-11-27T23:38:46-05:00 -- NCAAF FIRST SCORE (PC): 2 new final(s) tallied; season 835 games through 2026-11-27
+- 2026-11-27: Texas Longhorns @ Texas A&M Aggies — first: Texas Longhorns (FG, 5:11 in); lead changes 0; final 16-6
+- 2026-11-27: Minnesota Golden Gophers @ Wisconsin Badgers — first: Minnesota Golden Gophers (FG, 5:37 in); lead changes 1; final 5-28
