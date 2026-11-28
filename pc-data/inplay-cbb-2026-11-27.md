@@ -61,3 +61,5 @@ NEW IN-PLAY CBB: PLAY: Under 146.5 -120 — Bowling Green at Indiana (PACE) | pa
 NEW IN-PLAY CBB: PLAY: Over 193.5 — Western KY at Illinois (2ND BITE) | 1H total 99 cleared implied 1H line 88.25 by +10.8; pace proj 198.0 vs live total 193.5 -- take the Over again at the half | H1 99 | as of 19:04:10 ET
 ## 2026-11-27 19:34:27 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Under 140.5 -120 — Towson at Penn (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 140.5 (gap -8.5, bar 5) | H1 66 | as of 19:34:02 ET
+## 2026-11-27 19:44:20 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 132.5 — Lehigh at Santa Barbara (PACE) | pace proj 112.0 (H1 56 x 2) vs live total 132.5 (gap -20.5, bar 5) | H1 56 | as of 19:44:19 ET
