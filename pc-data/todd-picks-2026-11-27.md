@@ -37,3 +37,7 @@ NEW TODD PLAY: 1st Half Total 74.5 -105 :: raw: "@everyone ov74.5 -105 1h Niagar
 NEW TODD PLAY: Total 58.5 -102 :: raw: "@everyone un58.5 -102 old dominion cbb tt" :: msg 1576009248553443380 :: posted 2026-11-27T22:58:05.691Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 18:32:43 ET — 1 NEW Todd play
 NEW TODD PLAY: Total 100.5 -110 :: raw: "@everyone ov100.5 -110 Illinois team tot" :: msg 1576017884579373127 :: posted 2026-11-27T23:32:24.680Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 18:43:16 ET — 1 NEW Todd play
+NEW TODD PLAY: Moneyline -128 :: raw: "@everyone Texas -128 ml cbb" :: msg 1576020515066220696 :: posted 2026-11-27T23:42:51.837Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 19:04:00 ET — 1 NEW Todd play
+NEW TODD PLAY: 1st Half Total 47.5 :: raw: "Illini are insane I was gonna take ov47.5 1h tt but figured I’d be more cautious and go for the whole game..they are a video game" :: msg 1576023010555461664 :: posted 2026-11-27T23:52:46.808Z :: Novig: https://app.novig.us/AppEntry
