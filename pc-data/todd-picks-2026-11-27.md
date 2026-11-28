@@ -57,3 +57,5 @@ NEW TODD PLAY: Total 147.5 -120 :: raw: "@everyone un147.5 Penn st -120 cbb (at 
 NEW TODD PLAY: Total 180.5 -110 :: raw: "@everyone ov180.5 -110 Alabama cbb" :: msg 1576057476024115304 :: posted 2026-11-28T02:09:44.016Z :: Novig: https://app.novig.us/AppEntry
 ## 2026-11-27 21:25:49 ET — 1 NEW Todd play
 NEW TODD PLAY: 1st Half Spread -17.5 -108 :: raw: "@everyone Utah cfb -17.5 -108 1h" :: msg 1576060817458335897 :: posted 2026-11-28T02:23:00.676Z :: Novig: https://app.novig.us/AppEntry
+## 2026-11-27 21:28:17 ET — 1 NEW Todd play
+NEW TODD PLAY: Total 153 -115 :: raw: "@everyone un153 -115 Tennessee Cbb" :: msg 1576061951560388904 :: posted 2026-11-28T02:27:31.067Z :: Novig: https://app.novig.us/AppEntry
