@@ -12915,3 +12915,15 @@
 [2026-11-27 18:31:13 ET] dh_kalshi_poly_arb.py: OK in 17s — kalshi-poly-arb: no new qualifying pairs (silent).
 [2026-11-27 18:31:15 ET] wide_builds.py: OK in 2s — NEW BUILD: NCAAB Oakland 1 Houston Today 7:30 PM — Total — Over 139.5 Caesars -170 ($123) / Under 140 Bet365 +155 ($77) — win+push at 140 — push +$72.35, miss -
 [2026-11-27 18:31:15 ET] syncing to GitHub (wide-builds banked new builds)
+[2026-11-27 19:03:02 ET] sync_to_github.py: TIMEOUT after 30 min — skipped, others continue
+[2026-11-27 19:10:28 ET] dh_low_holds.py: FAILED (exit 1) in 409s —   - navigating to "https://darkhorseodds.com/low-holds", waiting until "domcontentloaded"
+[2026-11-27 19:12:46 ET] dh_game_middles.py: OK in 136s — GAME MIDDLE: NFL NO Saints CIN Bengals Nov-29 1:00 PM / Nov-29 1:00 PM / table / 3rd Quarter Spread CIN Bengals -1.5 / 3rd Quarter Spread NO Saints +2.5 / table
+[2026-11-27 19:16:55 ET] dh_nhl_totals_middles.py: FAILED (exit 1) in 248s —   - <launched> pid=10836
+[2026-11-27 19:28:33 ET] dh_key_number_middles.py: OK in 698s — key-number-middles: 607 basketball rows excluded (football-only rule).
+[2026-11-27 19:36:32 ET] dh_basketball_key_middles.py: OK in 476s — basketball-key-middles: no new basketball middles.
+[2026-11-27 19:45:10 ET] hung_number.py: FAILED (exit 2) in 505s — write state. Re-run with --dump and send the dump file.
+[2026-11-27 19:45:23 ET] rlm.py: OK in 11s
+[2026-11-27 19:45:28 ET] leader_follower.py: OK in 5s — leader-follower: logging phase (85 games, 0 new leads, no book at 3 yet).
+[2026-11-27 19:45:31 ET] steam_side.py: OK in 3s — STEAM-SIDE FLAG: FBS North Dakota State @ San Jose State | 2026-11-27 | Caesars | Under total 69.5 (median 58.5 -> 40.5)
+[2026-11-27 19:54:38 ET] dh_prop_middles.py: OK in 546s — PROP MIDDLE CLEAN : NFL WAS Commanders ARI Cardinals Nov-29 4:25 PM / Nov-29 4:25 PM / table / Receiving Yards T. McBride Under 60.5 / Alt Recv Yards T. McBride
+[2026-11-27 19:54:40 ET] syncing to GitHub (regular 10-minute sync)
