@@ -75,3 +75,5 @@ NEW IN-PLAY CBB: PLAY: Under 146.5 -110 — Penn State at Mississippi St (PACE) 
 NEW IN-PLAY CBB: PLAY: Under 137.5 -110 — Idaho at Washington St (PACE) | pace proj 120.0 (H1 60 x 2) vs live total 137.5 (gap -17.5, bar 5) | H1 60 | as of 20:53:01 ET
 ## 2026-11-27 20:54:59 ET — 1 NEW in-play flag
 NEW IN-PLAY CBB: PLAY: Over 151.5 — Missouri St at Oral Roberts (TRAILING FAVE) | pregame favorite Oral Roberts trails at half (Missouri St leads); pace is slow (proj 150.0 vs live 151.5) — the comeback-fave rule bets Over anyway | H1 75 | as of 20:54:58 ET
+## 2026-11-27 20:55:03 ET — 1 NEW in-play flag
+NEW IN-PLAY CBB: PLAY: Under 138.5 -120 — Northeastern at Northwestern (PACE) | pace proj 120.0 (H1 60 x 2) vs live total 138.5 (gap -18.5, bar 5) | H1 60 | as of 20:54:58 ET
