@@ -590,7 +590,8 @@
    "pregame_total": 159.5,
    "alerted_at": "2026-11-27T18:02:06",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 136.5 -115 \u2014 Villanova at Kansas (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 136.5 (gap -32.5, bar 5) | H1 52 | as of 18:02:05 ET"
+   "alert_detail": "PLAY: Under 136.5 -115 \u2014 Villanova at Kansas (PACE) | pace proj 104.0 (H1 52 x 2) vs live total 136.5 (gap -32.5, bar 5) | H1 52 | as of 18:02:05 ET",
+   "final": true
   },
   "401920810": {
    "matchup": "Marquette at Texas A&M",
@@ -603,7 +604,8 @@
    "pregame_total": 160.5,
    "alerted_at": "2026-11-27T17:52:07",
    "alert_rule": "PACE",
-   "alert_detail": "PLAY: Under 161.5 \u2014 Marquette at Texas A&M (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 161.5 (gap -7.5, bar 5) | H1 77 | as of 17:52:06 ET"
+   "alert_detail": "PLAY: Under 161.5 \u2014 Marquette at Texas A&M (PACE) | pace proj 154.0 (H1 77 x 2) vs live total 161.5 (gap -7.5, bar 5) | H1 77 | as of 17:52:06 ET",
+   "final": true
   },
   "401920382": {
    "matchup": "Old Dominion at Virginia Tech",
@@ -679,12 +681,15 @@
   "401921185": {
    "matchup": "Towson at Penn",
    "date": "2026-11-27",
-   "alerted": false,
+   "alerted": true,
    "fav": "home",
    "spread": 3.5,
    "fav_team": "Penn",
    "dog_team": "Towson",
-   "pregame_total": 143.5
+   "pregame_total": 143.5,
+   "alerted_at": "2026-11-27T19:34:33",
+   "alert_rule": "PACE",
+   "alert_detail": "PLAY: Under 140.5 -120 \u2014 Towson at Penn (PACE) | pace proj 132.0 (H1 66 x 2) vs live total 140.5 (gap -8.5, bar 5) | H1 66 | as of 19:34:02 ET"
   },
   "401929284": {
    "matchup": "UCF at Georgia",
@@ -736,10 +741,10 @@
    "date": "2026-11-28",
    "alerted": false,
    "fav": "home",
-   "spread": 36.5,
+   "spread": 37.5,
    "fav_team": "Houston",
    "dog_team": "Oakland",
-   "pregame_total": 143.5
+   "pregame_total": 144.5
   },
   "401929289": {
    "matchup": "Penn State at Mississippi St",
@@ -774,7 +779,7 @@
    "spread": 5.5,
    "fav_team": "North Texas",
    "dog_team": "N Dakota St",
-   "pregame_total": 142.5
+   "pregame_total": 141.5
   },
   "401922264": {
    "matchup": "Idaho at Washington St",
